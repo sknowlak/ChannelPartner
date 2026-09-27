@@ -1,164 +1,171 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { createMyRegistration } from '../api/client';
-
-const initialForm = {
-  name: '', mobile: '', email: '', alternateMobile: '',
-  projectId: '', requirementType: '', propertyType: '', bhk: '',
-  budgetMin: '', budgetMax: '', preferredLocation: '', possessionTimeline: '', leadSource: '',
-  notes: '', externalReferenceId: ''
-};
-
-const REQUIREMENT_TYPES = ['Buy', 'Rent', 'Sell'];
-const PROPERTY_TYPES = ['Apartment', 'Villa', 'Plot', 'Commercial', 'Office', 'Other'];
-const BHK_OPTIONS = ['Studio', '1 BHK', '2 BHK', '3 BHK', '4+ BHK'];
-const POSSESSION_OPTIONS = ['Immediate', '0-3 Months', '3-6 Months', '6-12 Months', '1 Year+'];
-const LEAD_SOURCES = ['Website', 'Referral', 'Walk-in', 'Property Portal', 'Social Media', 'Cold Call', 'Other'];
+import { createMyRegistration, listLeadFields } from '../api/client';
+import DynamicFieldInput from '../components/DynamicFieldInput';
+import { PERMISSIONS } from '../utils/permissions';
+import { useAuth } from '../context/AuthContext';
+import { sortLeadTabs } from '../utils/leadTabs';
+import { findFieldErrors, focusField } from '../utils/formValidation';
 
 // The authenticated counterpart to PartnerRegistration.jsx (Screen 1) - no
 // partnerId field, since it's implicit from the logged-in session (spec
-// section 31). Only the lead's name and mobile are mandatory - everything
-// else is an optional real-estate requirement detail (section 33).
+// section 31). Rendered entirely from this partner's LeadFieldDefinition
+// list (sections 36, 39) as a tabbed form (Lead Info / Enquiry Info /
+// Additional Info / Others / Notes) - enabling/disabling/requiring a field,
+// or adding a custom one, changes this form immediately with no code change.
 // PartnerRegistration.jsx is kept separately for the unauthenticated
 // simulated-external-CRM demo flow (spec section 19).
 export default function RegisterLead() {
-  const [form, setForm] = useState(initialForm);
+  const { hasPermission, partner } = useAuth();
+  const [fieldDefs, setFieldDefs] = useState(null);
+  const [activeTab, setActiveTab] = useState(null);
+  const [values, setValues] = useState({});
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState(null);
+  const [fieldErrors, setFieldErrors] = useState(new Map());
   const navigate = useNavigate();
 
-  const update = (field) => (e) => setForm((f) => ({ ...f, [field]: e.target.value }));
+  useEffect(() => {
+    listLeadFields()
+      .then(({ data }) => {
+        const enabled = data.definitions.filter((d) => d.isEnabled);
+        setFieldDefs(enabled);
+        setActiveTab((t) => t || sortLeadTabs([...new Set(enabled.map((d) => d.group))])[0]);
+      })
+      .catch((err) => setError(err.response?.data?.reason || err.message));
+  }, []);
+
+  const setValue = (fieldKey, val) => {
+    setValues((v) => ({ ...v, [fieldKey]: val }));
+    setFieldErrors((m) => {
+      if (!m.has(fieldKey)) return m;
+      const next = new Map(m);
+      next.delete(fieldKey);
+      return next;
+    });
+  };
+
+  // Jumps the form to whichever field is the problem - switches to its tab,
+  // marks it invalid, and scrolls/focuses it - instead of leaving the user
+  // to guess which of several tabs holds the field a generic error refers to.
+  const goToField = (fieldKey) => {
+    const def = fieldDefs.find((d) => d.fieldKey === fieldKey);
+    if (def) setActiveTab(def.group);
+    focusField(fieldKey);
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitting(true);
     setError(null);
+
+    const errs = findFieldErrors(fieldDefs, values);
+    if (errs.length > 0) {
+      setFieldErrors(new Map(errs.map((e) => [e.fieldKey, e.message])));
+      setError(`${errs.length === 1 ? 'A field needs' : `${errs.length} fields need`} your attention - see below.`);
+      goToField(errs[0].fieldKey);
+      return;
+    }
+
+    setSubmitting(true);
     try {
-      const { data } = await createMyRegistration({
-        customer: {
-          name: form.name,
-          mobile: form.mobile,
-          email: form.email || undefined,
-          alternateMobile: form.alternateMobile || undefined
-        },
-        projectId: form.projectId || undefined,
-        requirementType: form.requirementType || undefined,
-        propertyType: form.propertyType || undefined,
-        bhk: form.bhk || undefined,
-        budgetMin: form.budgetMin ? Number(form.budgetMin) : undefined,
-        budgetMax: form.budgetMax ? Number(form.budgetMax) : undefined,
-        preferredLocation: form.preferredLocation || undefined,
-        possessionTimeline: form.possessionTimeline || undefined,
-        leadSource: form.leadSource || undefined,
-        notes: form.notes || undefined,
-        externalReferenceId: form.externalReferenceId || undefined
-      });
+      const customer = {};
+      const payload = {};
+      for (const def of fieldDefs) {
+        const val = values[def.fieldKey];
+        if (val === undefined || val === '') continue;
+        if (def.scope === 'customer') customer[def.fieldKey] = val;
+        else payload[def.fieldKey] = (def.dataType === 'NUMBER' || def.dataType === 'CURRENCY') ? Number(val) : val;
+      }
+
+      const { data } = await createMyRegistration({ ...payload, customer });
       navigate(`/registrations/result`, { state: { result: data } });
     } catch (err) {
-      if (err.response && err.response.data) {
-        navigate(`/registrations/result`, { state: { result: err.response.data } });
+      const data = err.response?.data;
+      if (data?.fieldKey) {
+        // Server rejected a field the client thought was fine (e.g. a
+        // second browser tab changed what's required in between) - handle
+        // it exactly like a client-side miss rather than bouncing away.
+        setFieldErrors(new Map([[data.fieldKey, data.reason]]));
+        setError(data.reason);
+        goToField(data.fieldKey);
+      } else if (data?.reasonCode) {
+        // An actual business outcome (duplicate protection etc.), not a
+        // form-validation problem - this is what the Result screen is for.
+        navigate(`/registrations/result`, { state: { result: data } });
       } else {
-        setError(err.message);
+        setError(data?.reason || err.message);
       }
     } finally {
       setSubmitting(false);
     }
   };
 
+  if (!hasPermission(PERMISSIONS.MANAGE_LEADS)) {
+    return (
+      <div className="page page-wide">
+        <div className="error-box">You don't have permission to register leads.</div>
+      </div>
+    );
+  }
+
+  if (error && !fieldDefs) return <div className="page page-wide"><div className="error-box">{error}</div></div>;
+  if (!fieldDefs) return <div className="page page-wide">Loading...</div>;
+
+  const tabs = sortLeadTabs([...new Set(fieldDefs.map((d) => d.group))]);
+
   return (
     <div className="page page-wide">
-      <h1>Register New Lead</h1>
-      <p className="hint">Only Name and Mobile Number are required - fill in whatever else you know about the buyer's requirement.</p>
+      <h1>Add Lead</h1>
       {error && <div className="error-box">{error}</div>}
 
-      <form className="card" onSubmit={handleSubmit}>
-        <h3 style={{ marginTop: 0 }}>Contact Information</h3>
-        <div className="form-grid">
-          <div className="field">
-            <label>Lead Name *</label>
-            <input value={form.name} onChange={update('name')} required />
-          </div>
-          <div className="field">
-            <label>Mobile Number *</label>
-            <input value={form.mobile} onChange={update('mobile')} required placeholder="+91XXXXXXXXXX" />
-          </div>
-          <div className="field">
-            <label>Alternate Mobile</label>
-            <input value={form.alternateMobile} onChange={update('alternateMobile')} />
-          </div>
-          <div className="field">
-            <label>Email</label>
-            <input type="email" value={form.email} onChange={update('email')} />
-          </div>
+      <form className="card" onSubmit={handleSubmit} noValidate>
+        <div className="status-tabs">
+          {tabs.map((tab) => {
+            const tabHasError = fieldDefs.some((d) => d.group === tab && fieldErrors.has(d.fieldKey));
+            return (
+              <button
+                type="button"
+                key={tab}
+                className={`${activeTab === tab ? 'active' : ''} ${tabHasError ? 'has-error' : ''}`}
+                onClick={() => setActiveTab(tab)}
+              >
+                {tabHasError && <span className="dot error-dot" />}
+                {tab}
+              </button>
+            );
+          })}
         </div>
 
-        <h3>Property Requirement</h3>
-        <div className="form-grid">
-          <div className="field">
-            <label>Project / Property Name</label>
-            <input value={form.projectId} onChange={update('projectId')} placeholder="e.g. Skyline Heights" />
-          </div>
-          <div className="field">
-            <label>Requirement Type</label>
-            <select value={form.requirementType} onChange={update('requirementType')}>
-              <option value="">Select...</option>
-              {REQUIREMENT_TYPES.map((o) => <option key={o} value={o}>{o}</option>)}
-            </select>
-          </div>
-          <div className="field">
-            <label>Property Type</label>
-            <select value={form.propertyType} onChange={update('propertyType')}>
-              <option value="">Select...</option>
-              {PROPERTY_TYPES.map((o) => <option key={o} value={o}>{o}</option>)}
-            </select>
-          </div>
-          <div className="field">
-            <label>BHK</label>
-            <select value={form.bhk} onChange={update('bhk')}>
-              <option value="">Select...</option>
-              {BHK_OPTIONS.map((o) => <option key={o} value={o}>{o}</option>)}
-            </select>
-          </div>
-          <div className="field">
-            <label>Budget Min (₹)</label>
-            <input type="number" min="0" value={form.budgetMin} onChange={update('budgetMin')} />
-          </div>
-          <div className="field">
-            <label>Budget Max (₹)</label>
-            <input type="number" min="0" value={form.budgetMax} onChange={update('budgetMax')} />
-          </div>
-          <div className="field">
-            <label>Preferred Location</label>
-            <input value={form.preferredLocation} onChange={update('preferredLocation')} placeholder="e.g. Whitefield, Bengaluru" />
-          </div>
-          <div className="field">
-            <label>Possession Timeline</label>
-            <select value={form.possessionTimeline} onChange={update('possessionTimeline')}>
-              <option value="">Select...</option>
-              {POSSESSION_OPTIONS.map((o) => <option key={o} value={o}>{o}</option>)}
-            </select>
-          </div>
-          <div className="field">
-            <label>Lead Source</label>
-            <select value={form.leadSource} onChange={update('leadSource')}>
-              <option value="">Select...</option>
-              {LEAD_SOURCES.map((o) => <option key={o} value={o}>{o}</option>)}
-            </select>
-          </div>
-          <div className="field">
-            <label>External CRM Reference</label>
-            <input value={form.externalReferenceId} onChange={update('externalReferenceId')} placeholder="CRM-12345" />
+        {tabs.map((tab) => {
+          const tabFields = fieldDefs.filter((d) => d.group === tab);
+          const columns = [];
+          for (let i = 0; i < tabFields.length; i += 4) columns.push(tabFields.slice(i, i + 4));
+          return (
+            <div key={tab} className="edit-form-sections" style={{ display: activeTab === tab ? 'grid' : 'none' }}>
+              {columns.map((col, i) => (
+                <div key={i}>
+                  {col.map((def) => (
+                    <div className={`field ${fieldErrors.has(def.fieldKey) ? 'invalid' : ''}`} key={def.fieldKey} id={`field-${def.fieldKey}`}>
+                      <label>{def.label}{def.isRequired ? ' *' : ''}</label>
+                      <DynamicFieldInput def={def} value={values[def.fieldKey]} onChange={(val) => setValue(def.fieldKey, val)} currency={partner?.currency} />
+                      {fieldErrors.has(def.fieldKey) && <span className="field-error">{fieldErrors.get(def.fieldKey)}</span>}
+                    </div>
+                  ))}
+                </div>
+              ))}
+            </div>
+          );
+        })}
+
+        <div className="edit-form-footer">
+          <div className="meta" />
+          <div className="actions">
+            <button className="secondary" type="button" onClick={() => navigate('/my-leads')}>Cancel</button>
+            <button className="primary" type="submit" disabled={submitting}>
+              {submitting ? 'Saving...' : 'Save'}
+            </button>
           </div>
         </div>
-
-        <div className="field">
-          <label>Notes / Requirement Details</label>
-          <textarea rows={3} value={form.notes} onChange={update('notes')} />
-        </div>
-
-        <button className="primary" type="submit" disabled={submitting}>
-          {submitting ? 'Registering...' : 'Register Lead'}
-        </button>
       </form>
     </div>
   );

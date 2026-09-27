@@ -7,6 +7,9 @@ const { nextId } = require('../src/utils/idGenerator');
 const { hashPassword } = require('../src/services/adminAuthService');
 const { getSettings } = require('../src/services/settingsService');
 const { ensureBaseFields } = require('../src/services/fieldDefinitionService');
+const { ensureDefaultRoles } = require('../src/services/roleService');
+const { ensureBaseFields: ensureBaseLeadFields } = require('../src/services/leadFieldDefinitionService');
+const { ensureBaseFields: ensureBaseUserFields } = require('../src/services/userFieldDefinitionService');
 
 // Seeds the partner used in the mandatory hackathon demo scenario
 // (spec section 19): ABC Realty registering Rahul Kumar for Project A.
@@ -20,6 +23,9 @@ async function seedPartner(partnerId, name, username, contactEmail) {
   }
 
   const partnerCode = await nextId('PCODE');
+  const superAdminRole = await ensureDefaultRoles(partnerId);
+  await ensureBaseLeadFields(partnerId);
+  await ensureBaseUserFields(partnerId);
   await Partner.create({
     partnerId,
     partnerCode,
@@ -31,7 +37,8 @@ async function seedPartner(partnerId, name, username, contactEmail) {
     status: 'ACTIVE',
     kycStatus: 'VERIFIED',
     approvalStatus: 'APPROVED',
-    createdBy: 'SYSTEM_SEED'
+    createdBy: 'SYSTEM_SEED',
+    roleId: superAdminRole.roleId
   });
 }
 

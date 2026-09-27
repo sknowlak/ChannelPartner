@@ -5,6 +5,7 @@ const { nextId } = require('../../utils/idGenerator');
 const { logEvent, getTimeline } = require('../../services/auditService');
 const { hashPassword } = require('../../services/adminAuthService');
 const { buildPartnerFilter } = require('../../utils/partnerFilter');
+const { validateMobile } = require('../../utils/phone');
 
 const STANDARD_FIELDS = [
   'name', 'mobile', 'email', 'username',
@@ -50,6 +51,8 @@ async function createPartner(req, res, next) {
     if (!name || !mobile || !email || !username || !password) {
       return res.status(400).json({ reason: 'name, mobile, email, username and password are required' });
     }
+    const mobileCheck = validateMobile(mobile);
+    if (!mobileCheck.valid) return res.status(400).json({ reason: mobileCheck.reason, fieldKey: 'mobile', code: mobileCheck.code });
 
     const partnerId = await nextId('PARTNER');
     const partnerCode = await nextId('PCODE');
@@ -58,7 +61,7 @@ async function createPartner(req, res, next) {
       partnerId,
       partnerCode,
       name,
-      mobile,
+      mobile: mobileCheck.e164,
       email,
       username: username.toLowerCase(),
       passwordHash: await hashPassword(password),
@@ -125,6 +128,12 @@ async function updatePartner(req, res, next) {
 
     const previousValue = partner.toObject();
     delete previousValue.passwordHash;
+
+    if (req.body.mobile !== undefined) {
+      const mobileCheck = validateMobile(req.body.mobile);
+      if (!mobileCheck.valid) return res.status(400).json({ reason: mobileCheck.reason, fieldKey: 'mobile', code: mobileCheck.code });
+      req.body.mobile = mobileCheck.e164;
+    }
 
     applyStandardFields(partner, req.body);
     for (const field of ADMIN_CONTROLLED_FIELDS) {

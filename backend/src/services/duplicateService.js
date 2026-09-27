@@ -1,6 +1,7 @@
 const Customer = require('../models/Customer');
 const Registration = require('../models/Registration');
 const { getSettings } = require('./settingsService');
+const { normalizeMobile } = require('../utils/phone');
 
 // Finds an ACTIVE (still-protected) registration matching the incoming
 // customer on any configured identity field, scoped to the same project
@@ -12,7 +13,7 @@ async function findDuplicate({ mobile, email, projectId }) {
   const { duplicateMatchFields } = await getSettings();
 
   const identityFilters = [];
-  if (duplicateMatchFields.includes('mobile') && mobile) identityFilters.push({ mobile });
+  if (duplicateMatchFields.includes('mobile') && mobile) identityFilters.push({ mobileNormalized: normalizeMobile(mobile) });
   if (duplicateMatchFields.includes('email') && email) identityFilters.push({ email });
 
   if (identityFilters.length === 0) return null;

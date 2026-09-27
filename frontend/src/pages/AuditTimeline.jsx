@@ -25,7 +25,9 @@ export default function AuditTimeline() {
         <ul className="timeline">
           {events.map((ev) => (
             <li key={ev.auditId}>
-              <div className="ts">{formatDateTime(ev.timestamp, partner?.timezone)} — {ev.actor}</div>
+              <div className="ts">
+                {formatDateTime(ev.timestamp, partner?.timezone)} — {ev.actor === 'SYSTEM' ? 'System' : ev.actor} — {ev.platform || (ev.actor === 'SYSTEM' ? 'System' : '-')}
+              </div>
               <div>{ev.description}</div>
             </li>
           ))}

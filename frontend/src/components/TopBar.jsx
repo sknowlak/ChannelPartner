@@ -3,9 +3,14 @@ import { useAuth } from '../context/AuthContext';
 
 const PAGE_TITLES = {
   '/my-leads': 'My Leads',
-  '/register-lead': 'Register New Lead',
+  '/register-lead': 'Add Lead',
   '/team': 'Manage Team',
-  '/profile': 'My Profile',
+  '/team/roles': 'Roles & Permissions',
+  '/team/profile': 'My Profile',
+  '/settings': 'Settings',
+  '/settings/leads': 'Settings',
+  '/settings/users': 'Settings',
+  '/settings/integrations': 'Settings',
   '/lookup': 'Lookup Registration',
   '/login': 'Sign In',
   '/signup': 'Channel Partner Registration',
@@ -14,8 +19,9 @@ const PAGE_TITLES = {
 
 function titleFor(pathname) {
   if (PAGE_TITLES[pathname]) return PAGE_TITLES[pathname];
-  if (pathname.startsWith('/registrations/')) return 'Registration Detail';
   if (pathname.startsWith('/team/') && pathname.endsWith('/edit')) return 'Edit Team Member';
+  if (pathname.startsWith('/registrations/') && pathname.endsWith('/edit')) return 'Edit Lead';
+  if (pathname.startsWith('/registrations/')) return 'Registration Detail';
   return 'Leadrat';
 }
 

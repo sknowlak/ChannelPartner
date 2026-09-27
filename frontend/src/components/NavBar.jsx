@@ -19,10 +19,10 @@ export default function NavBar() {
         <>
           <NavLink to="/my-leads" className={linkClass}>My Leads</NavLink>
           <NavLink to="/team" className={linkClass}>Manage Team</NavLink>
-          <NavLink to="/profile" className={linkClass}>My Profile</NavLink>
+          <NavLink to="/settings" className={linkClass}>Settings</NavLink>
           <NavLink to="/lookup" className={linkClass}>Lookup Registration</NavLink>
           <span className="spacer" />
-          <span className="who">{partner.name} · {partner.role === 'OWNER' ? 'Owner' : 'Team Member'}</span>
+          <span className="who">{partner.name} · {partner.roleName || (partner.role === 'OWNER' ? 'Owner' : 'Team Member')}</span>
           <button className="link" onClick={handleLogout}>Logout</button>
         </>
       ) : (

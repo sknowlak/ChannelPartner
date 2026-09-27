@@ -1377,3 +1377,384 @@ Applied to:
 - **`admin/`**: Channel Partners list (tabs: All/Active/Inactive) and Registrations list (tabs: All/Pending/Booked), both with CSV export and client-side pagination layered on top of the existing server-side filters.
 
 **Not yet converted** (flagged, not overlooked): the admin Dashboard, Audit feed, Settings, and Partner Fields pages, and the entire mobile app - all still use their original styling. Since the pattern is now just a set of CSS classes plus a small amount of per-page JS (tabs/pagination state), extending it to any of these is mechanical, not a redesign.
+
+---
+
+# 34. Roles & Permissions
+
+Section 32 gave every team member equal rights (add/edit/remove members and manage leads, gated only by OWNER vs MEMBER). This section replaces that binary split with real role-based access control: named roles carrying specific permissions, three built-in roles seeded per partner, and a module for creating custom roles.
+
+## Permissions
+
+Three permissions exist, each tied to an actual gated action - no speculative "everything" list:
+
+```text
+MANAGE_LEADS   create/progress/book leads (viewing the shared pool is never gated - unchanged from section 32)
+MANAGE_TEAM    add/edit/remove/activate team members
+MANAGE_ROLES   create/edit/delete custom roles, assign roles to members
+```
+
+## Roles
+
+Roles are scoped per-partner (`Role.partnerId`) - each organisation has its own set. Three are seeded automatically at registration and are **immutable** (can't edit their permissions, can't be deleted):
+
+```text
+Super Admin  → MANAGE_LEADS, MANAGE_TEAM, MANAGE_ROLES   (always assigned to the account owner)
+Admin        → MANAGE_LEADS, MANAGE_TEAM
+Manager      → MANAGE_LEADS                               (default role for a newly-added team member)
+```
+
+An owner (or anyone holding `MANAGE_ROLES`) can create additional **custom roles** with any combination of the three permissions via the new Roles & Permissions module.
+
+**The account owner's full access is never dependent on a database lookup.** `role === 'OWNER'` short-circuits to every permission unconditionally in `roleService.resolvePermissions` - even if their `Role` record were somehow missing or corrupted, the owner can never be locked out of their own account. `Partner.roleId` is stored and shown for display ("Super Admin") but is not part of the authorization path.
+
+**Permissions are re-derived from the database on every request**, exactly like the OWNER/MEMBER role check in section 32's `partnerAuth` middleware - never trusted from the JWT. Verified live: promoting a team member to a role with `MANAGE_TEAM` took effect immediately on their *already-issued* session token, with no re-login required.
+
+## API
+
+```http
+GET    /api/channel-partner/my/roles                Readable by the whole team (needed for role pickers).
+                                                     Returns { availablePermissions, roles: [...{ ...role, memberCount }] }
+POST   /api/channel-partner/my/roles                 Create a custom role. Requires MANAGE_ROLES.
+PATCH  /api/channel-partner/my/roles/:roleId          Rename / change permissions. Requires MANAGE_ROLES.
+                                                     Rejects system roles ("System roles cannot be edited").
+DELETE /api/channel-partner/my/roles/:roleId          Requires MANAGE_ROLES. Rejects system roles, and rejects
+                                                     a role still assigned to any team member (reassign first).
+```
+
+`POST /my/team` now accepts (and defaults to the org's "Manager" role if omitted) a `roleId`; `PATCH /my/team/:memberId` can reassign it. The previous `requireOwner` gate on team-management routes was replaced with `requirePermission(MANAGE_TEAM)` - the owner's Super Admin role always has it, but so can any custom role an owner chooses to grant it to.
+
+## My Profile Moved Under Manage Team
+
+Per this request, "My Profile" is no longer a separate top-level sidebar item - it's now the third tab alongside "Team Members" and "Roles & Permissions" under Manage Team (`/team`, `/team/roles`, `/team/profile`, sharing a `TeamTabs` component). The old `/profile` URL redirects to `/team/profile` rather than breaking.
+
+## Deliberately Not Built
+
+- No permission granularity beyond the three listed - e.g. no separate "view reports" or per-project permissions, since no such features exist yet to gate.
+- A custom role with zero permissions is allowed (a "read-only" role that can see the shared lead pool and team roster but do nothing else) - this is intentional, not a bug.
+- The mobile app was not updated with role-aware UI in this pass.
+
+---
+
+# 35. UI Consistency Standard: Data-Grid and Edit-Form Patterns
+
+Two layout patterns are now the **standing default** for `frontend/` (and, where applicable, `admin/`) - new screens should reuse them rather than inventing a new layout, so the app doesn't accumulate one-off designs per page.
+
+## Fixed Sidebar
+
+The left sidebar (`.nav-bar`) no longer scrolls with page content. `.app-shell` is locked to `height: 100vh; overflow: hidden`; the sidebar and `.app-content` each independently manage their own height/scroll (`.app-content` has `overflow-y: auto`). A long page (e.g. a big lead list) now scrolls just the content area - the sidebar and top bar stay put.
+
+## Data-Grid Pattern (list screens)
+
+Defined in section 33, applied to My Leads, Manage Team, and the admin Partners/Registrations lists: status tabs with counts → toolbar (search + secondary filters + CSV export + "Show N entries") → dark-header `pro-table` → numbered pagination footer. Any new list screen (e.g. a future admin Roles view, or additional admin tables) should follow this same structure.
+
+## Edit-Form Pattern (create/edit screens)
+
+New shared classes - `.edit-form-sections` (a responsive multi-column grid, one titled section per column), `.form-section-title` (a short underline beneath each section's heading), and `.edit-form-footer` (metadata on the left, Cancel/Save on the right) - standardize every create/edit form in the app:
+
+- **My Profile** (`/team/profile`) - Basic Information / Organisation Information (or Preferences for a team member) / Security & Role
+- **Edit Team Member** (`/team/:memberId/edit`) - Basic Information / Preferences / Role & Permissions (a clickable role picker showing each role's permissions inline, not just a dropdown)
+- **Add Team Member** (inline form on Manage Team) - same three-column split as Edit Team Member
+- **Register New Lead** - Contact Information / Property Requirement / Additional Details
+- **Channel Partner Registration** (signup) - Account Details / Organisation Details
+
+Any future create/edit screen (admin partner edit, a future lead-edit screen, etc.) should be built the same way: `.edit-form-sections` for the fields, `.edit-form-footer` for actions, rather than a single stacked column of fields.
+
+## Deliberately Not Converted
+
+- `PartnerRegistration.jsx` (the unauthenticated "simulate external CRM" demo form, section 19) and `Lookup.jsx` are short, single-purpose forms and were left as simple single-column layouts - the section pattern is for multi-part forms.
+- The admin app's `PartnerForm.jsx` (used for creating/editing a Channel Partner from the Admin Portal) was not migrated to this pattern in this change - it already uses its own dynamic, `FieldDefinition`-driven grouped-section layout (section 30), which serves the same goal (grouped, multi-column sections) but predates and is structurally different from the `.edit-form-sections` component introduced here. Unifying the two is a reasonable future cleanup, not done now to avoid disturbing the working custom-fields system.
+
+---
+
+# 36. Settings — Lead Module Field Configuration
+
+A new **Settings** page (`/settings`) lets each channel partner configure their *own* lead capture form - enable/disable any field, mark it required, or add entirely new custom fields - mirroring the Channel Partner custom-fields system from section 30, but scoped per-partner and living in the partner-facing app rather than the Admin Portal, since each partner's lead form is theirs to customize independently.
+
+## Data Model
+
+`LeadFieldDefinition` is scoped by `partnerId` (unlike section 30's platform-wide `FieldDefinition`) - every partner gets their own copy of the base 15 fields, seeded automatically at registration (and self-healed lazily on first read for any partner that existed before this feature, so nothing needed to be backfilled).
+
+Each definition carries a **`scope`** the backend uses to know where to read/write its value:
+
+```text
+scope: 'customer'      -> stored on Customer.<fieldKey>       (name, mobile, alternateMobile, email)
+scope: 'registration'  -> stored on Registration.<fieldKey>   (projectId, requirementType, budgetMin, ...)
+scope: 'custom'        -> stored in Registration.customFields (anything a partner adds themselves)
+```
+
+`name` and `mobile` are marked `isCore: true` - per the original "only name and number mandatory" requirement (section 33), these can never be disabled or made optional, enforced server-side (`updateFieldDefinition` rejects the attempt) not just hidden in the UI.
+
+## Dynamic Validation ("whatever field I add ... validation also gets created")
+
+`POST /api/channel-partner/my/registrations` no longer hardcodes which fields are required. It loads this partner's field definitions and checks every `isEnabled && isRequired` field against the incoming payload - so marking "Email" required in Settings makes the next lead submission missing an email fail with `400 { reason: "Email is required" }`, with zero code changes. Verified live: toggling `email.isRequired = true` and then submitting a lead without one was correctly rejected; adding it back succeeded.
+
+## Dynamic Filters ("filter ... also get created")
+
+Any **enabled `SELECT`-type field** (standard or custom) automatically becomes a filter dropdown on the My Leads toolbar - `MyLeads.jsx` reads the same field-definition list and renders one `<select>` per such field, reading each registration's value from the right place (`registration[fieldKey]` for `registration`-scope, `registration.customFields[fieldKey]` for `custom`-scope). Adding a custom SELECT field in Settings makes it filterable on My Leads with no additional work.
+
+## Dynamic Form Rendering
+
+`RegisterLead.jsx` no longer hardcodes its fields either - it renders from the same field-definition list via a new shared `DynamicFieldInput.jsx` component (TEXT/TEXTAREA/NUMBER/DATE/SELECT/LIST), grouped into the same three sections from section 35's edit-form pattern (Contact Information / Property Requirement / Additional Details, plus any custom group a partner names). A field with `isRequired` gets the HTML5 `required` attribute automatically, so the browser also enforces it before the request ever leaves the client - the backend check above is the actual authority, this is just faster feedback.
+
+## Permission
+
+A fourth permission, **`MANAGE_SETTINGS`**, gates all lead-field mutations (`POST`/`PATCH`/`DELETE /my/lead-fields`) - reading the list stays open to the whole team (everyone needs it to render the same Register Lead form and My Leads filters). Only the Super Admin role has it by default; Admin and Manager do not, consistent with treating form configuration as an owner-level concern rather than day-to-day lead management. Verified live: a Manager-role member could read field definitions but got a `403` attempting to create one.
+
+## API
+
+```http
+GET    /api/channel-partner/my/lead-fields                Readable by the whole team.
+POST   /api/channel-partner/my/lead-fields                 Create a custom field. Requires MANAGE_SETTINGS.
+PATCH  /api/channel-partner/my/lead-fields/:fieldKey        Rename/toggle/re-require. Requires MANAGE_SETTINGS.
+                                                            Rejects disabling or un-requiring a core field.
+DELETE /api/channel-partner/my/lead-fields/:fieldKey        Requires MANAGE_SETTINGS. Rejects non-custom fields.
+```
+
+## Deliberately Not Built
+
+- No per-field ordering drag-and-drop - custom fields are appended at the end of their group (`sortOrder: 1000`); reordering would need a UI affordance not requested here.
+- Filters are generated only for `SELECT`-type fields, not free-text fields (e.g., a custom `TEXT` field doesn't get its own filter box) - the existing name/mobile/registration-ID search box was judged sufficient for free-text; only enumerable fields make sense as dropdown filters.
+- This Settings page only configures the **lead** form. It's a separate system from section 30's Admin-Portal-managed Channel Partner field configuration - the two are not unified, since one is platform-wide (admin-managed) and this one is per-partner (self-managed).
+
+---
+
+# 37. Settings as a Unified Hub (superseded by section 38)
+
+Section 36 added Lead field configuration as its own page; this section briefly folded it, Manage Team, Roles & Permissions, and My Profile into **one** "Settings" area with category tabs, instead of leaving Settings and Manage Team as two separate top-level nav items.
+
+**This was reverted in section 38.** The instruction that prompted it ("Setting create sub categories for lead, Manage Team, and other module also same wise") turned out to mean something narrower: Settings should only host per-module *custom form configuration* pages (Lead, User, ...), not swallow Manage Team's CRUD/roster/roles/profile screens, which remain their own top-level module. Kept here for history; see section 38 for the current structure.
+
+# 38. Manage Team (separate module) + Settings as a Custom-Form Hub
+
+Manage Team is its own top-level module again, exactly as it was before section 37 - its own sidebar entry, its own tab bar (`TeamTabs.jsx`: Team Members / Roles & Permissions / My Profile), its own `/team...` URLs. Settings is a pure hub of per-module **custom field configuration** pages only - Lead (section 36) and now User - with the explicit rule that any future module's field configuration is added the same way: one more category tab (`SettingsCategories.jsx`), one more route under `/settings`.
+
+## Structure
+
+```text
+/team                  Team member roster + add/edit/remove (section 32)
+/team/roles            Roles & Permissions (section 34)
+/team/profile          My Profile (section 32)
+/team/:memberId/edit   Edit Team Member
+
+/settings              -> redirects to /settings/leads
+/settings/leads        Lead field configuration (section 36)
+/settings/users        User field configuration (new, this section)
+```
+
+The short-lived `/settings/team`, `/settings/team/roles`, `/settings/profile`, `/settings/team/:memberId/edit` URLs from section 37 redirect back to their `/team...` equivalents rather than 404ing.
+
+## User Field Configuration (Settings → User)
+
+The same admin-configurable-fields pattern as Lead fields (section 36), applied to the Add/Edit Team Member form instead of the lead capture form. A new `UserFieldDefinition` model (per-partner, seeded on registration and by `seed.js`) drives:
+
+- **Dynamic form rendering** - the Add Team Member form's "Basic Information"/"Preferences" sections render one `DynamicFieldInput` per enabled field definition instead of a hardcoded list; Edit Team Member does the same (username excluded there - it's immutable, shown read-only in the footer instead).
+- **Dynamic validation** - `createTeamMember` loops the enabled+required field definitions and checks `req.body[fieldKey]` is non-empty, replacing the old hardcoded `if (!name || !username || !password)` check. Required-field validation only applies at create; `updateTeamMember` keeps its existing partial-update semantics.
+- **Custom fields** - a partner can add fields beyond the base set (Name, Username, Password, Mobile, Email, Timezone - the first three are core/locked, matching what a login actually needs), stored on `TeamMember.customFields` (a `Mixed` map), same shape as the lead system's custom fields.
+
+`DynamicFieldInput` (shared with `RegisterLead.jsx`) gained two field-key special cases to support this reuse: `timezone` renders the existing `COMMON_TIMEZONES` dropdown instead of a plain text box, and `password` renders a password input.
+
+## API
+
+```http
+GET    /api/channel-partner/my/user-fields                Readable by the whole team.
+POST   /api/channel-partner/my/user-fields                 Create a custom field. Requires MANAGE_SETTINGS.
+PATCH  /api/channel-partner/my/user-fields/:fieldKey        Rename/toggle/re-require. Requires MANAGE_SETTINGS.
+                                                            Rejects disabling or un-requiring a core field.
+DELETE /api/channel-partner/my/user-fields/:fieldKey        Requires MANAGE_SETTINGS. Rejects non-custom fields.
+```
+
+## What Didn't Change
+
+Manage Team's actual content, permissions, and behavior (sections 32/34) are unchanged from before section 37 - this is a navigation/URL revert, not a functional rewrite of that module. The Roles & Permissions and My Profile pages still independently load their own permission set and react accordingly.
+
+---
+
+# 39. Full Lead Field Catalogue, Edit Lead, and Column Sorting
+
+Expands the Add Lead form's field set to match Leadrat's real "Add Lead" screen (~50 fields across five tabs), adds an Edit Lead capability that didn't exist before, and adds three-state column sorting to the My Leads grid.
+
+## Lead Field Catalogue
+
+`BASE_LEAD_FIELD_DEFINITIONS` (`backend/src/config/leadFieldDefaults.js`) grew from ~15 fields in three groups to ~50 fields in five groups, renamed to match the form's tabs exactly:
+
+- **Lead Info** - Name, Primary Number, Alternate Number, Landline Number, Email, Referral Name/Phone/Email, Source, Sub-Source, Primary/Secondary Owner, Customer Location.
+- **Enquiry Info** - Min/Max Budget, Carpet/Built-up/Saleable/Property/Net Area, Unit Number/Name, Cluster Name, Purpose, Buyer, Payment Plan %, Enquired For, Property Type, Property Sub-Type, Baths, Beds, Preferred Floor(s), Furnish Status, Project(s), Property(s), Offering Type, Agency/Campaign/Channel Partner Name(s), Possession Needed By, Enquired Location.
+- **Additional Info** - Profession, Company Name, Designation, Nationality, Gender, Date of Birth, Marital Status, Anniversary Date.
+- **Others** - Sourcing Manager, Closing Manager, External CRM Reference.
+- **Notes** - Notes (its own tab; required by default, matching the reference screen, but still just a regular field so a partner can make it optional in Settings).
+
+Only `name` and `mobile` stay core (locked required, per section 33 - "only name and number mandatory"). Every other field, including the ~40 new ones, is a normal base field: enabled by default, toggleable via Settings → Lead like any field, and safely deletable-proof (`isCustom: false` means Settings can hide/require it but never delete it, same rule as before). Fields with no natural home in the existing `Registration` schema (areas, beds/baths, payment split, profession, etc.) use `scope: 'custom'`, landing in `Registration.customFields` - this needed no backend schema changes at all, since that path already existed for partner-added custom fields.
+
+Two small correctness fixes that fell out of this:
+- `Registration.requirementType/propertyType/bhk/possessionTimeline/leadSource` changed from hardcoded Mongoose `enum` arrays to plain strings. Their actual allowed values already live in `LeadFieldDefinition.options` (partner-editable); a schema-level enum could reject a value a partner is allowed to pick, once field-option editing is exposed. Existing data is untouched (removing an enum only becomes more permissive).
+- `ensureBaseFields` (`leadFieldDefinitionService.js`) changed from "seed once if the partner has zero fields" to "insert whichever base fieldKeys this partner doesn't have yet." The former meant adding a new base field to the platform would never reach partners who'd already registered; the latter self-heals every partner up to the current base set on their next request, while leaving any field they've already customized untouched. A one-time migration (run once, not part of the codebase) applied the same relabel/regroup to already-existing partners' field rows so the rename took effect immediately instead of only for new signups.
+
+## Edit Lead (new)
+
+Editing a lead's own details didn't exist before - only stage progress (`/progress`) and booking (`/booking`) had update endpoints. Added:
+
+```http
+PATCH /api/channel-partner/my/registrations/:registrationId   Requires MANAGE_LEADS.
+```
+
+`updateMyRegistration` (`myLeadsController.js`) loops the partner's field definitions and, per field's `scope`, writes to the `Customer` document, a `Registration` schema column, or `Registration.customFields` - a partial update (only keys present in the request body change), same semantics as `updateTeamMember`. `EditLead.jsx` is the tabbed-form counterpart to `RegisterLead.jsx`, pre-filled from `GET /my/registrations/:id`, reachable via an Edit icon on the My Leads grid row and an "Edit Lead" button on the lead detail (Partner Journey) page.
+
+## Add/Edit Lead UI: Tabs
+
+Both `RegisterLead.jsx` and `EditLead.jsx` render as a tab bar (Lead Info / Enquiry Info / Additional Info / Others / Notes, `.status-tabs` styling reused from elsewhere in the app) with only the active tab's fields shown, each tab's fields split into columns of four for a denser grid than a single stacked list. The tab set itself is derived from whatever groups exist in the partner's enabled field definitions - not hardcoded - so a partner renaming a group or Settings adding a field to a new group changes the tabs with no code change, consistent with the dynamic-field philosophy from section 36. Save/Cancel stay visible under every tab, matching the reference screen's fixed footer.
+
+## Column Sorting (My Leads grid)
+
+Every sortable column header in the My Leads table (`Lead`, `Project`, `Requirement`, `Stage`, `Booked`, `Protection Until`) now cycles three states on click: normal → ascending → descending → normal, via a small shared pair - `utils/sort.js` (`applySort`, `nextSortDir`) and `components/SortableTh.jsx` - built to be reused by any other data-grid page, not just this one. Sorting is applied after filtering and before pagination/export, so the sorted order is what gets paginated and what CSV export downloads.
+
+## What Didn't Change
+
+Duplicate-protection scoping, ownership transfer, booking, and commission-eligibility logic (sections 20-27) are untouched - none of the new fields are load-bearing for those flows, they're purely descriptive lead detail. `projectId` keeps its existing single-string, schema-column identity (relabeled "Project(s)" for display only) precisely because duplicate-protection and booking/commission records key off it directly.
+
+---
+
+# 40. All Fields Everywhere: Get Lead Detail + Manageable/Reorderable Grid Columns
+
+Two follow-ups to section 39's field catalogue: the lead detail ("Get Lead") view only showed five hardcoded fields, and the My Leads grid only showed six hardcoded columns - neither reflected the ~50-field catalogue that Create and Edit already used. This section makes all three (Create, Update, Get) actually show everything, and adds column management to the grid.
+
+## Get Lead: full field detail
+
+`PartnerJourney.jsx` (the lead detail / "Get Lead" screen) gained a "Lead Details" card below the existing operational summary (owner/stage/protection), with the same tab bar as Add/Edit Lead (Lead Info / Enquiry Info / Additional Info / Others / Notes) - just read-only `<dt>/<dd>` pairs instead of form inputs, driven by the same `GET /my/lead-fields` + per-field `scope` lookup that Add/Edit already use. The tab-sorting logic (`sortLeadTabs`, `LEAD_TAB_ORDER`) was pulled out of `RegisterLead.jsx`/`EditLead.jsx` into `utils/leadTabs.js` so all three screens agree on tab order by construction rather than by copy-pasted arrays staying in sync.
+
+## Backend: customer fields exposed on the list endpoint
+
+`listMyRegistrations` previously only inlined `customerName`/`customerMobile` onto each row - enough for the old 6-column grid, not enough to show `alternateMobile`/`email` (or any future `scope: 'customer'` field) as its own grid column. It now embeds the full `customer` sub-document on each registration; `customerName`/`customerMobile` stay for backward compatibility with existing search/CSV code.
+
+## My Leads grid: every field is a column, by default
+
+The grid went from 6 hardcoded columns to one column per enabled lead field (all ~50, visible by default) plus three system columns that aren't part of the field catalogue (Stage, Booked, Protection Until) and a pinned, non-hideable Registration ID column. Column cells are read via the same `scope`-aware `fieldValue()` helper as the rest of the dynamic-field system, formatted by data type (`LIST` joins with commas, `NUMBER` gets locale formatting, everything else is a plain string, truncated with `text-overflow: ellipsis` and a hover `title` for the full value). The table sits in a `.table-scroll` (`overflow-x: auto`) wrapper since 50+ columns don't fit any viewport.
+
+## Manage Columns: show/hide + drag-reorder
+
+A "Manage Columns" button opens a dropdown panel (`components/ManageColumnsPanel.jsx`) listing every manageable column with a checkbox (show/hide) and a drag handle (native HTML5 drag-and-drop, no library) for reordering - "swapping" per the request. Changes apply live, no separate save step. "Show All" and "Reset to Default" are provided as escape hatches. Column order/visibility is stored in `localStorage` (`utils/columnPrefs.js`), keyed per-partner and per-grid (`columnPrefs:myLeads:<partnerId>`) - a personal display preference, not organisation data, so it isn't sent to the backend or shared across the team. Loading a saved preference reconciles it against the current field list: keys for deleted fields are dropped, keys for newly-added fields are appended, so the preference never goes stale or hides a field the partner has never seen.
+
+Sorting, filtering, and CSV export all read from the same `visibleColumns` array, so whatever the partner currently has shown/hidden/reordered is exactly what gets sorted, exported, and paginated - there's no separate "columns for display" vs "columns for export" list to keep in sync.
+
+## What Didn't Change
+
+Filtering (search box, status tabs, project filter, per-SELECT-field filter dropdowns) and pagination logic are unchanged - they operate on the full registration objects regardless of which columns are currently visible. Sort behavior (section 39) is unchanged; it now simply has more possible `colKey`s to sort by, one per visible column.
+
+---
+
+# 41. Lead History: Who, When, How, and System Actions
+
+A History button on every lead row (Actions column, My Leads grid) opens the full activity trail for that lead - every audit event already logged against its `registrationId` (creation, validation steps, edits, stage changes, booking, ...), not just stage progress. The ask was specifically for four things per entry: who, when, how (platform - Mobile app or Web app), and a system-done label plus description - `AuditEvent` already had actor/timestamp/description; platform was the missing piece.
+
+## Platform, without threading it through 30 call sites
+
+`AuditEvent` gained a `platform` field (Web app / Mobile app / Admin Portal / External / System). Every client we control identifies itself with an `X-Client-Platform` header (`WEB` from `frontend/`, `MOBILE` from `mobile/`, `ADMIN` from `admin/`); a small piece of Express middleware in `server.js` reads that header on every request and resolves it to a human label, then wraps the rest of the request's processing in `AsyncLocalStorage.run()` (`utils/requestContext.js`). `auditService.logEvent()` reads that context to fill in `platform` automatically when the caller doesn't pass one explicitly - which is every existing call site except where `actor === 'SYSTEM'`, where `platform` is hardcoded to `'System'` regardless of which request happened to trigger the system-internal step (duplicate check, ownership transfer, commission eligibility, ...). This was a deliberate choice over editing every one of the ~30 existing `logEvent(...)` calls across 12 controllers to pass `platform` explicitly - AsyncLocalStorage propagates it implicitly through the whole async chain from one middleware, so old and new call sites both get it for free. A request with no `X-Client-Platform` header (raw API caller, true external CRM) resolves to `'External'` rather than being mislabeled as Web or Mobile.
+
+## Who: human names instead of raw IDs
+
+`partnerAuth` middleware's `req.actorLabel` - used by every audit-logging call as the "who" - changed from `partnerId` / `partnerId (username)` to `Name (Owner)` / `Name (username)`, using `Partner.name`/`TeamMember.name` already available in that middleware. This also improves "Added By" on the team roster and any other place `actorLabel` was already surfacing an identifier.
+
+## Where it shows
+
+- **My Leads grid** - a History icon per row opens `components/LeadHistoryModal.jsx`, a centered overlay (`.modal-backdrop`/`.modal-card`, new to the app) listing every event for that lead newest-first: Date & Time, Who, Platform, Description. Actor `'SYSTEM'` always displays as "System".
+- **Lead detail (Partner Journey) "Progress History"** and the older unauthenticated **Audit Timeline** (Screen 6) both got the same actor/platform info appended to their existing timestamp line, at no extra cost since they already fetch the same `AuditEvent` records - only the display changed.
+
+## What Didn't Change
+
+The underlying audit event set and `getTimeline`/`getMyRegistrationAudit` endpoints are unchanged - this is additive (`platform` field, better `actor` label) rather than a new logging pipeline. No new event types were introduced; History surfaces exactly what was already being recorded, just with the "how" dimension it was missing.
+
+---
+
+# 42. History Content: Field-Level Change Breakdown, Grouped by Day
+
+Section 41's History modal listed events with a single generic sentence each ("Updated lead details for X"). This section makes the *content* readable at the level of the reference product's Lead Preview → History tab: one line per field that actually changed, grouped under "done by X" at a point in time, grouped again under calendar-day headers ("Today", "Yesterday", ...).
+
+## Backend: recording what changed, not just that something did
+
+`createMyRegistration` and `updateMyRegistration` (`myLeadsController.js`) now build a `changes` array and store it on the `AuditEvent.newValue` (already a `Mixed` field, no schema change):
+
+- **Create** - one entry per non-empty field the partner submitted: `{ fieldKey, label, value }`, attached to the existing `REGISTRATION_RECEIVED` event. Every field is "added" - there's no prior state to compare against.
+- **Update** - `updateMyRegistration` now reads each field's *current* value (via a new `getCurrentFieldValue()`, scope-aware the same way the rest of the dynamic-field system is) before overwriting it, compares against the incoming value with `valuesEqual()` (normalizes `undefined`/`null`/`''` together, does an array-aware comparison for `LIST` fields), and only pushes `{ fieldKey, label, from, to }` for fields that actually differ. **If nothing changed, no `LEAD_DETAILS_UPDATED` event is logged at all** - a no-op PATCH (re-saving a form with no edits, or a field re-sent with its existing value) no longer pollutes the history with an empty entry.
+
+A change with no meaningful previous value (`from` empty/undefined) renders as "added"; a change that overwrote a real previous value renders as "updated" - both cases are inferred client-side from whether `from`/`value` is present, no separate flag needed.
+
+## Frontend: day groups, actor clusters, change bullets
+
+`LeadHistoryModal.jsx` was restructured around three ideas, matching the reference screenshot's density:
+
+1. **Day grouping** - events (already newest-first) are grouped by calendar day using a new `dayLabel()` helper (`utils/timezone.js`, alongside a new `formatTime()` for the time-only stamp) that resolves to "Today"/"Yesterday"/a plain date in the *viewer's* timezone, not the server's.
+2. **One entry per event, changes as bullets** - each event renders as a timeline dot with a "Done by {actor} · {platform}" header and a timestamp, followed by either its `changes` list (one `<li>` per field: **Label** *added/updated* → **value**) or, for events with no structured changes (system steps like duplicate-check, stage updates, booking), the plain `description` line as before.
+3. **Category filter** - All / Status / Assignment / Notes tabs (reusing `.status-tabs` styling) filter the event list before grouping. Status and Assignment are keyed by `eventType`; Notes is content-based - it matches any event whose `changes` array touched the `notes` field specifically, rather than being its own event type.
+
+## What Didn't Change
+
+The History button's entry point (My Leads grid) and the underlying `GET /my/registrations/:id/audit` endpoint are unchanged. `PartnerJourney.jsx`'s "Progress History" and the older Audit Timeline screen still use the plain description-line rendering from section 41 - they weren't upgraded to the day-grouped/bulleted layout, since that level of detail is most useful in the dedicated History view, not as a secondary section on an already-busy detail page.
+
+---
+
+# 43. Integrations Module: Push Leads Out, Receive Leads In
+
+A new Settings sub-module ("push the lead and I can receive lead or lead progress update... send to a client") for connecting a partner's own systems to Leadrat in both directions - outbound webhooks that push lead/progress events out, and an inbound API key for the partner's own CRM/website to push leads in.
+
+## Outbound: customisable webhooks
+
+`IntegrationWebhook` (per partner) defines a push target: name, target URL, HTTP method (POST/PUT/PATCH), **format** (JSON / Form-urlencoded / Custom template), optional custom headers, which events to fire on (`LEAD_CREATED`, `LEAD_UPDATED`, `STAGE_UPDATED`, `BOOKING_COMPLETED`), and an enabled toggle. "Make it customisable like cURL, JSON, Form and other formats" maps onto `webhookService.js`'s three format handlers:
+
+- **JSON** - the full lead payload (`buildLeadPayload()`: registration fields, `customFields`, and a nested `customer` object) as the raw request body.
+- **FORM** - the same payload flattened to dotted keys (`customer.name`, `customFields.propertySubType`, ...) and sent `application/x-www-form-urlencoded`.
+- **CUSTOM** - the partner supplies their own body template with `{{path.to.value}}` placeholders (e.g. `{"lead_id":"{{registrationId}}","name":"{{customer.name}}"}`) - works like filling in a cURL `--data` body once, and covers any shape (including XML or a provider-specific schema) the format dropdown doesn't explicitly name.
+
+Triggering is fire-and-forget from every caller (`createMyRegistration`, `updateMyRegistration`, `updateMyProgress`, `createMyBooking` in `myLeadsController.js` call `triggerWebhooks(...).catch(() => {})` without awaiting) - a slow or dead external target can never delay or fail the partner's own API response.
+
+## "I should get all updates failed, pass, or where its problem"
+
+Every send attempt writes a `WebhookDelivery` row - request URL/method/headers/body exactly as sent, response status/body, and an error message on failure (including a 10-second request timeout, so a hung target still resolves to a visible failure instead of never completing). The new **Delivery Log** section (Settings → Integrations) lists these with pass/fail badges, filterable by webhook, status, and date range.
+
+## "If by chance it gets failed I can push or fetch based on date range or sync"
+
+Two recovery paths, both in `webhookService.js`:
+
+- **Retry** - re-sends the *exact* stored request (same URL/method/headers/body) for one failed delivery, so a retry reproduces the original attempt rather than re-deriving it from the lead's possibly-since-changed state.
+- **Resync** - picks a webhook and an optional date range (`registeredAt` between `from`/`to`, or everything if both are blank) and pushes every matching lead again, tagged with a `SYNC` event type distinct from organic activity. Resync deliberately bypasses the webhook's own `events` filter - an explicit manual resync should go through regardless of which events that webhook normally fires on.
+
+## Inbound: "I can receive lead[s]"
+
+Every partner gets an `apiKey` (generated at registration; self-healing for partners who existed before this feature, the same pattern as `ensureBaseFields`). A new `apiKeyAuth` middleware authenticates via `X-Api-Key` instead of a login session, setting `req.partnerId`/`req.actorLabel` the same way `partnerAuth` does - so `POST /api/channel-partner/integrations/leads` and `POST /api/channel-partner/integrations/leads/:registrationId/progress` reuse `myLeadsController.createMyRegistration`/`updateMyProgress` completely unchanged; those handlers never cared how identity was established, only that `req.partnerId`/`req.actorLabel` are set. The Integrations settings page shows the key (masked, with show/copy/regenerate) alongside ready-to-copy JSON and Form request examples.
+
+## Where it lives
+
+Settings gained a third tab, **Integrations** (`IntegrationSettings.jsx`), alongside Lead and User - the same "one more category tab" extensibility the Settings hub was built for (section 38). Read access (viewing webhooks/deliveries/the API key) is open to the whole team; creating/editing/deleting webhooks, regenerating the API key, retrying a delivery, and resyncing all require `MANAGE_SETTINGS`, consistent with every other Settings mutation in the app.
+
+## What Didn't Change
+
+The original unauthenticated `/api/channel-partner/registrations` surface (used by the mobile app and the "Simulate External CRM Registration" demo, spec section 6/19) is untouched - the new API-key-authenticated `/integrations/leads` endpoints are an additional, more secure inbound path, not a replacement.
+
+---
+
+# 44. Delivery Detail View: Why "Pass" Doesn't Always Mean Received
+
+A webhook delivery showing "Pass" in the log only means the target server returned an HTTP 2xx status - that's the entire contract of a webhook. It says nothing about whether the receiving system's own business logic actually stored or processed the payload (wrong field names for its API, an internal validation rule this payload doesn't satisfy, a test/echo endpoint that always returns 200, etc.). The delivery log's summary table (name/status/HTTP code/truncated error) has no room to show enough to tell the difference - and every delivery's exact request and response were already being persisted (`WebhookDelivery.requestUrl/requestMethod/requestHeaders/requestBody/responseBody`), just never surfaced.
+
+Added a **View** button (available to the whole team, not just `MANAGE_SETTINGS`, since inspecting a delivery is read-only) on every Delivery Log row, opening `components/DeliveryDetailModal.jsx`: the exact request that was sent (URL, method, headers, body, pretty-printed if JSON) and the exact response that came back (HTTP status, body). No new backend endpoint was needed - `listDeliveries` already returned these fields on every `WebhookDelivery` document, they just weren't rendered.
+
+## What Didn't Change
+
+Delivery status logic (pass = HTTP 2xx, fail otherwise) is unchanged and correct - it's what every webhook system means by "delivered." This section is purely about making the *evidence* behind that status visible, not changing how status is computed.
+
+---
+
+# 45. Explaining and Discovering Webhook Variables
+
+Prompted by "webhook always needs to accept new value like webhook contain variable then only always I will share to client new new values" - confirming and making visible a property the Custom-format template already had: **the same webhook configuration is reused for every lead; only the values change, filled in fresh at send time from that specific lead's current data.** JSON/Form formats already did this automatically (they always serialize the lead's current state); Custom format does it via `{{placeholder}}` substitution. What was missing was making that concept obvious in the UI, and making the placeholder list something to discover rather than memorize.
+
+## Dynamic placeholder discovery
+
+The Body Template field previously showed a static, hand-written comment listing example placeholders. It's now generated from the partner's *actual* enabled `LeadFieldDefinition` list (the same fetch the Add/Edit Lead form uses), grouped by tab (Lead Info / Enquiry Info / Additional Info / Others / Notes) plus a "Lead" group for the handful of structural fields that aren't part of the field catalogue (`registrationId`, `stage`, `isBooked`). Each field renders as a clickable chip showing its exact `{{path}}` (`customer.email` for a `scope: 'customer'` field, `customFields.propertySubType` for a `scope: 'custom'` one, or just the bare field key for a `scope: 'registration'` one) - clicking inserts it into the template. This means the available-variables list can never drift out of sync with what fields the partner has actually configured, including any custom fields they've added.
+
+## Live preview
+
+A read-only "Preview - what will actually be sent" box under the form renders the CURRENT format/template against a fixed, realistic sample lead (`utils/webhookPreview.js`'s `SAMPLE_LEAD_PAYLOAD`), using the same substitution logic as the backend's `renderTemplate`/`flattenForForm` (duplicated client-side deliberately - this is a client-only preview, not a real send, so it doesn't touch the network). It updates on every keystroke, so a partner can see immediately whether their Custom template is well-formed and which parts are still literal text versus substituted values, before ever saving the webhook or firing a real lead through it.
+
+## What Didn't Change
+
+The actual send-time behavior (`webhookService.js`'s `buildLeadPayload`/`buildRequest`/`renderTemplate`) is unchanged - this section is entirely about the setup UI: showing what variables exist, making them easy to insert, and previewing the result before saving.

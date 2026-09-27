@@ -10,21 +10,23 @@ export function AuthProvider({ children }) {
   });
 
   const persist = (data) => {
-    const merged = { ...data.partner, role: data.role };
+    const merged = { ...data.partner, role: data.role, roleName: data.roleName, permissions: data.permissions || [] };
     localStorage.setItem('partnerToken', data.token);
     localStorage.setItem('partnerUser', JSON.stringify(merged));
     setPartner(merged);
     return merged;
   };
 
-  // Self-heals a session cached before `role` existed on the token (or any
-  // other profile drift) by re-pulling the authoritative record from the
-  // server once on load, instead of trusting whatever was cached at login.
+  // Self-heals a session cached before `role`/`permissions` existed on the
+  // token (or any other profile drift) by re-pulling the authoritative
+  // record from the server once on load, instead of trusting whatever was
+  // cached at login. Permissions are always re-derived server-side per
+  // request anyway (section 34) - this just keeps the UI in sync with that.
   useEffect(() => {
     if (!partner) return;
     getMyProfile()
       .then(({ data }) => {
-        const merged = { ...partner, ...data.profile, role: data.role };
+        const merged = { ...partner, ...data.profile, role: data.role, roleName: data.roleName, permissions: data.permissions || [] };
         localStorage.setItem('partnerUser', JSON.stringify(merged));
         setPartner(merged);
       })
@@ -50,6 +52,8 @@ export function AuthProvider({ children }) {
     });
   };
 
+  const hasPermission = (permission) => Boolean(partner?.permissions?.includes(permission));
+
   const logout = () => {
     localStorage.removeItem('partnerToken');
     localStorage.removeItem('partnerUser');
@@ -57,7 +61,7 @@ export function AuthProvider({ children }) {
   };
 
   return (
-    <AuthContext.Provider value={{ partner, login, register, logout, updateLocalPartner }}>
+    <AuthContext.Provider value={{ partner, login, register, logout, updateLocalPartner, hasPermission }}>
       {children}
     </AuthContext.Provider>
   );

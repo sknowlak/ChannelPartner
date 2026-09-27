@@ -9,6 +9,7 @@ const { logEvent } = require('../services/auditService');
 const { withIdempotency } = require('../services/idempotencyService');
 const { buildBuilderView } = require('../services/visibilityService');
 const { getSettings } = require('../services/settingsService');
+const { normalizeMobile, validateMobile } = require('../utils/phone');
 const Booking = require('../models/Booking');
 
 // POST /api/channel-partner/registrations
@@ -19,6 +20,10 @@ async function createRegistration(req, res, next) {
     if (!partnerId || !projectId || !customer || !customer.mobile || !customer.name) {
       return res.status(400).json({ status: 'ERROR', reason: 'partnerId, projectId and customer.name/mobile are required' });
     }
+
+    const mobileCheck = validateMobile(customer.mobile);
+    if (!mobileCheck.valid) return res.status(400).json({ status: 'ERROR', reason: mobileCheck.reason, fieldKey: 'mobile', code: mobileCheck.code });
+    customer.mobile = mobileCheck.e164;
 
     const { result } = await withIdempotency(externalReferenceId, 'createRegistration', async () => {
       const duplicate = await findDuplicate({ mobile: customer.mobile, email: customer.email, projectId });
@@ -47,7 +52,7 @@ async function createRegistration(req, res, next) {
         throw err;
       }
 
-      let customerDoc = await Customer.findOne({ mobile: customer.mobile });
+      let customerDoc = await Customer.findOne({ mobileNormalized: normalizeMobile(customer.mobile) });
       if (!customerDoc) {
         const customerId = await nextId('CUST');
         customerDoc = await Customer.create({

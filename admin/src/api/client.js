@@ -4,7 +4,7 @@ import axios from 'axios';
 // partner/builder-facing API used by frontend/ and mobile/.
 const BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api/admin';
 
-const client = axios.create({ baseURL: BASE_URL });
+const client = axios.create({ baseURL: BASE_URL, headers: { 'X-Client-Platform': 'ADMIN' } });
 
 client.interceptors.request.use((config) => {
   const token = localStorage.getItem('adminToken');

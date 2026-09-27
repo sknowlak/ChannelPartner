@@ -1,19 +1,38 @@
-import { useEffect, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import { createMyBooking, getMyRegistration, getMyRegistrationAudit, updateMyProgress } from '../api/client';
+import { createMyBooking, getMyRegistration, getMyRegistrationAudit, listLeadFields, updateMyProgress } from '../api/client';
 import { useAuth } from '../context/AuthContext';
 import { formatDate, formatDateTime } from '../utils/timezone';
+import { sortLeadTabs } from '../utils/leadTabs';
 
 const STAGES = ['Registered', 'Contacted', 'Qualified', 'Site Visit', 'Negotiation', 'Booking'];
 
+function fieldValue(def, registration, customer) {
+  if (def.scope === 'customer') return customer?.[def.fieldKey];
+  if (def.scope === 'registration') return registration[def.fieldKey];
+  return registration.customFields?.[def.fieldKey];
+}
+
+function formatFieldValue(def, value) {
+  if (value === undefined || value === null || value === '') return '-';
+  if (def.dataType === 'LIST') return Array.isArray(value) ? value.join(', ') : String(value);
+  if (def.dataType === 'NUMBER') return Number(value).toLocaleString();
+  return String(value);
+}
+
 // Ownership-enforced version of the partner journey screen - fetches/updates
 // through /my/registrations/:id, so this only ever works for leads owned by
-// the logged-in partner (spec section 31).
+// the logged-in partner (spec section 31). The "Lead Details" card below the
+// operational summary renders every enabled field the partner has configured
+// (section 40, "get Leads" should show all the fields too) - same tab
+// grouping as Add/Edit Lead, just read-only.
 export default function PartnerJourney() {
   const { registrationId } = useParams();
   const navigate = useNavigate();
   const { partner } = useAuth();
   const [detail, setDetail] = useState(null);
+  const [fieldDefs, setFieldDefs] = useState(null);
+  const [activeTab, setActiveTab] = useState(null);
   const [events, setEvents] = useState([]);
   const [nextStage, setNextStage] = useState('');
   const [error, setError] = useState(null);
@@ -21,13 +40,17 @@ export default function PartnerJourney() {
 
   const load = async () => {
     try {
-      const [{ data: d }, { data: audit }] = await Promise.all([
+      const [{ data: d }, { data: audit }, { data: fieldData }] = await Promise.all([
         getMyRegistration(registrationId),
-        getMyRegistrationAudit(registrationId)
+        getMyRegistrationAudit(registrationId),
+        listLeadFields()
       ]);
       setDetail(d);
       setEvents(audit.events);
       setNextStage(d.registration.currentStage);
+      const enabled = fieldData.definitions.filter((f) => f.isEnabled);
+      setFieldDefs(enabled);
+      setActiveTab((t) => t || sortLeadTabs([...new Set(enabled.map((f) => f.group))])[0]);
     } catch (err) {
       setError(err.response ? err.response.data.reason : err.message);
     }
@@ -65,12 +88,13 @@ export default function PartnerJourney() {
   };
 
   if (error) return <div className="page"><div className="error-box">{error}</div></div>;
-  if (!detail) return <div className="page">Loading...</div>;
+  if (!detail || !fieldDefs) return <div className="page">Loading...</div>;
 
   const { registration, customer, ownership } = detail;
+  const tabs = sortLeadTabs([...new Set(fieldDefs.map((f) => f.group))]);
 
   return (
-    <div className="page">
+    <div className="page page-wide">
       <h1>{registrationId}</h1>
       <div className="card">
         <dl className="kv">
@@ -101,11 +125,34 @@ export default function PartnerJourney() {
       </div>
 
       <div className="card">
+        <h3 style={{ marginTop: 0 }}>Lead Details</h3>
+        <div className="status-tabs">
+          {tabs.map((tab) => (
+            <button key={tab} className={activeTab === tab ? 'active' : ''} onClick={() => setActiveTab(tab)}>
+              {tab}
+            </button>
+          ))}
+        </div>
+        {tabs.map((tab) => (
+          <dl className="kv" key={tab} style={{ display: activeTab === tab ? 'grid' : 'none' }}>
+            {fieldDefs.filter((f) => f.group === tab).map((def) => (
+              <Fragment key={def.fieldKey}>
+                <dt>{def.label}</dt>
+                <dd>{formatFieldValue(def, fieldValue(def, registration, customer))}</dd>
+              </Fragment>
+            ))}
+          </dl>
+        ))}
+      </div>
+
+      <div className="card">
         <h3>Progress History <span className="hint">(times in {partner.timezone})</span></h3>
         <ul className="timeline">
           {events.map((ev) => (
             <li key={ev.auditId}>
-              <div className="ts">{formatDateTime(ev.timestamp, partner.timezone)}</div>
+              <div className="ts">
+                {formatDateTime(ev.timestamp, partner.timezone)} · {ev.actor === 'SYSTEM' ? 'System' : ev.actor} · {ev.platform || (ev.actor === 'SYSTEM' ? 'System' : '-')}
+              </div>
               <div>{ev.description}</div>
             </li>
           ))}
@@ -114,6 +161,7 @@ export default function PartnerJourney() {
 
       <div style={{ display: 'flex', gap: '0.6rem' }}>
         <Link to="/my-leads"><button className="secondary">Back to My Leads</button></Link>
+        <Link to={`/registrations/${registrationId}/edit`}><button className="secondary">Edit Lead</button></Link>
         <Link to={`/registrations/${registrationId}/builder`}><button className="secondary">Builder View</button></Link>
       </div>
     </div>

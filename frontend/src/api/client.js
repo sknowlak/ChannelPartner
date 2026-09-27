@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api/channel-partner';
 
-const client = axios.create({ baseURL: BASE_URL });
+const client = axios.create({ baseURL: BASE_URL, headers: { 'X-Client-Platform': 'WEB' } });
 
 client.interceptors.request.use((config) => {
   const token = localStorage.getItem('partnerToken');
@@ -51,16 +51,54 @@ export const updateMyProfile = (payload) => client.patch('/my/profile', payload)
 export const listMyRegistrations = () => client.get('/my/registrations');
 export const createMyRegistration = (payload) => client.post('/my/registrations', payload);
 export const getMyRegistration = (registrationId) => client.get(`/my/registrations/${registrationId}`);
+export const updateMyRegistration = (registrationId, payload) => client.patch(`/my/registrations/${registrationId}`, payload);
 export const updateMyProgress = (registrationId, payload) => client.post(`/my/registrations/${registrationId}/progress`, payload);
 export const createMyBooking = (registrationId, payload = {}) => client.post(`/my/registrations/${registrationId}/booking`, payload);
 export const getMyRegistrationAudit = (registrationId) => client.get(`/my/registrations/${registrationId}/audit`);
+export const assignRegistration = (registrationId, assignedTo) => client.patch(`/my/registrations/${registrationId}/assign`, { assignedTo });
+
+export const getGridPreferences = (gridKey) => client.get(`/my/grid-preferences/${gridKey}`);
+export const updateGridPreferences = (gridKey, prefs) => client.patch(`/my/grid-preferences/${gridKey}`, prefs);
 
 // Manage Team (spec section 32) - readable by the whole team, mutable only
-// by the account owner (enforced server-side too).
+// by whoever holds the MANAGE_TEAM permission (enforced server-side too).
 export const listTeam = () => client.get('/my/team');
 export const getTeamMember = (memberId) => client.get(`/my/team/${memberId}`);
 export const createTeamMember = (payload) => client.post('/my/team', payload);
 export const updateTeamMember = (memberId, payload) => client.patch(`/my/team/${memberId}`, payload);
 export const deleteTeamMember = (memberId) => client.delete(`/my/team/${memberId}`);
+
+// Roles & Permissions (spec section 34) - readable by the whole team,
+// mutable only by whoever holds MANAGE_ROLES.
+export const listRoles = () => client.get('/my/roles');
+export const createRole = (payload) => client.post('/my/roles', payload);
+export const updateRole = (roleId, payload) => client.patch(`/my/roles/${roleId}`, payload);
+export const deleteRole = (roleId) => client.delete(`/my/roles/${roleId}`);
+
+// Lead Module Settings (spec section 36) - readable by the whole team
+// (drives the Register Lead form + My Leads filters for everyone),
+// mutable only by whoever holds MANAGE_SETTINGS.
+export const listLeadFields = () => client.get('/my/lead-fields');
+export const createLeadField = (payload) => client.post('/my/lead-fields', payload);
+export const updateLeadField = (fieldKey, payload) => client.patch(`/my/lead-fields/${fieldKey}`, payload);
+export const deleteLeadField = (fieldKey) => client.delete(`/my/lead-fields/${fieldKey}`);
+
+export const listUserFields = () => client.get('/my/user-fields');
+export const createUserField = (payload) => client.post('/my/user-fields', payload);
+export const updateUserField = (fieldKey, payload) => client.patch(`/my/user-fields/${fieldKey}`, payload);
+export const deleteUserField = (fieldKey) => client.delete(`/my/user-fields/${fieldKey}`);
+
+// Integrations module (section 43): inbound API key + outbound webhooks.
+export const getIntegrationApiKey = () => client.get('/my/integrations/api-key');
+export const regenerateIntegrationApiKey = () => client.post('/my/integrations/api-key/regenerate');
+
+export const listWebhooks = () => client.get('/my/integrations/webhooks');
+export const createWebhook = (payload) => client.post('/my/integrations/webhooks', payload);
+export const updateWebhook = (webhookId, payload) => client.patch(`/my/integrations/webhooks/${webhookId}`, payload);
+export const deleteWebhook = (webhookId) => client.delete(`/my/integrations/webhooks/${webhookId}`);
+export const resyncWebhook = (webhookId, payload) => client.post(`/my/integrations/webhooks/${webhookId}/resync`, payload);
+
+export const listDeliveries = (params) => client.get('/my/integrations/deliveries', { params });
+export const retryDelivery = (deliveryId) => client.post(`/my/integrations/deliveries/${deliveryId}/retry`);
 
 export default client;

@@ -1,8 +1,14 @@
 const Partner = require('../models/Partner');
 const TeamMember = require('../models/TeamMember');
+const Role = require('../models/Role');
 const { nextId } = require('../utils/idGenerator');
 const { hashPassword, verifyPassword, issueToken } = require('../services/partnerAuthService');
 const { logEvent } = require('../services/auditService');
+const { ensureDefaultRoles, resolvePermissions } = require('../services/roleService');
+const { ensureBaseFields: ensureBaseLeadFields } = require('../services/leadFieldDefinitionService');
+const { ensureBaseFields: ensureBaseUserFields } = require('../services/userFieldDefinitionService');
+const { generateApiKey } = require('../utils/apiKey');
+const { validateMobile } = require('../utils/phone');
 
 // Fields a partner may set about themselves during self-registration or a
 // later profile update. Deliberately excludes admin/builder-controlled
@@ -29,13 +35,15 @@ function toSafeObject(doc) {
 // login or lead management, only Partner.status (admin-controlled) does.
 async function register(req, res, next) {
   try {
-    const { name, mobile, email, username, password, timezone } = req.body;
+    const { name, mobile, email, username, password, timezone, currency } = req.body;
     if (!name || !mobile || !email || !username || !password) {
       return res.status(400).json({ reason: 'name, mobile, email, username and password are required' });
     }
     if (password.length < 8) {
       return res.status(400).json({ reason: 'Password must be at least 8 characters' });
     }
+    const mobileCheck = validateMobile(mobile);
+    if (!mobileCheck.valid) return res.status(400).json({ reason: mobileCheck.reason, fieldKey: 'mobile', code: mobileCheck.code });
 
     const partnerId = await nextId('PARTNER');
     const partnerCode = await nextId('PCODE');
@@ -44,21 +52,27 @@ async function register(req, res, next) {
       partnerId,
       partnerCode,
       name,
-      mobile,
+      mobile: mobileCheck.e164,
       email,
       username: username.toLowerCase(),
       passwordHash: await hashPassword(password),
       timezone: timezone || 'UTC',
+      currency: currency || 'USD',
       createdBy: 'SELF_REGISTERED',
       status: 'ACTIVE',
       kycStatus: 'PENDING',
-      approvalStatus: 'PENDING'
+      approvalStatus: 'PENDING',
+      apiKey: generateApiKey()
     });
 
     for (const field of SELF_SERVICE_FIELDS) {
       if (req.body[field] !== undefined) partner[field] = req.body[field];
     }
 
+    const superAdminRole = await ensureDefaultRoles(partnerId);
+    await ensureBaseLeadFields(partnerId);
+    await ensureBaseUserFields(partnerId);
+    partner.roleId = superAdminRole.roleId;
     await partner.save();
 
     await logEvent({
@@ -70,7 +84,13 @@ async function register(req, res, next) {
     });
 
     const token = issueToken({ partnerId: partner.partnerId, username: partner.username });
-    return res.status(201).json({ token, role: 'OWNER', partner: toSafeObject(partner) });
+    return res.status(201).json({
+      token,
+      role: 'OWNER',
+      roleName: superAdminRole.name,
+      permissions: superAdminRole.permissions,
+      partner: toSafeObject(partner)
+    });
   } catch (err) {
     if (err.code === 11000) {
       const field = Object.keys(err.keyPattern || {})[0] || 'field';
@@ -101,7 +121,9 @@ async function login(req, res, next) {
       await partner.save();
 
       const token = issueToken({ partnerId: partner.partnerId, username: partner.username });
-      return res.json({ token, role: 'OWNER', partner: toSafeObject(partner) });
+      const permissions = await resolvePermissions({ role: 'OWNER' });
+      const superAdminRole = await ensureDefaultRoles(partner.partnerId);
+      return res.json({ token, role: 'OWNER', roleName: superAdminRole.name, permissions, partner: toSafeObject(partner) });
     }
 
     const member = await TeamMember.findOne({ username: lowerUsername });
@@ -119,7 +141,9 @@ async function login(req, res, next) {
       await member.save();
 
       const token = issueToken({ partnerId: member.partnerId, username: member.username });
-      return res.json({ token, role: 'MEMBER', partner: toSafeObject(member) });
+      const permissions = await resolvePermissions({ role: 'MEMBER', partnerId: member.partnerId, roleId: member.roleId });
+      const memberRole = await Role.findOne({ roleId: member.roleId, partnerId: member.partnerId });
+      return res.json({ token, role: 'MEMBER', roleName: memberRole?.name || '', permissions, partner: toSafeObject(member) });
     }
 
     return res.status(401).json({ reason: 'Invalid credentials' });
@@ -129,18 +153,30 @@ async function login(req, res, next) {
 }
 
 // GET /api/channel-partner/my/profile
-// Returns the owner's Partner record, or a team member's own record.
+// Returns the owner's Partner record, or a team member's own record, plus
+// their resolved role name and permissions (section 34).
 async function getMyProfile(req, res, next) {
   try {
     if (req.role === 'MEMBER') {
       const member = await TeamMember.findOne({ memberId: req.memberId });
       if (!member) return res.status(404).json({ reason: 'Team member not found' });
-      return res.json({ role: 'MEMBER', profile: toSafeObject(member) });
+      const role = await Role.findOne({ roleId: member.roleId, partnerId: req.partnerId });
+      // Currency is an org-wide setting (unlike timezone, which each member
+      // picks for themselves) - every member must see the same unit on the
+      // same deal, so it's read from the partner record, not the member's own.
+      const org = await Partner.findOne({ partnerId: req.partnerId });
+      return res.json({
+        role: 'MEMBER',
+        roleName: role?.name || '',
+        permissions: req.permissions,
+        profile: { ...toSafeObject(member), currency: org?.currency || 'USD' }
+      });
     }
 
     const partner = await Partner.findOne({ partnerId: req.partnerId });
     if (!partner) return res.status(404).json({ reason: 'Partner not found' });
-    return res.json({ role: 'OWNER', profile: toSafeObject(partner) });
+    const superAdminRole = await ensureDefaultRoles(req.partnerId);
+    return res.json({ role: 'OWNER', roleName: superAdminRole.name, permissions: req.permissions, profile: toSafeObject(partner) });
   } catch (err) {
     next(err);
   }
@@ -157,7 +193,11 @@ async function updateMyProfile(req, res, next) {
 
       const { name, mobile, email, timezone, password } = req.body;
       if (name !== undefined) member.name = name;
-      if (mobile !== undefined) member.mobile = mobile;
+      if (mobile !== undefined) {
+        const check = validateMobile(mobile);
+        if (!check.valid) return res.status(400).json({ reason: check.reason, fieldKey: 'mobile', code: check.code });
+        member.mobile = check.e164;
+      }
       if (email !== undefined) member.email = email;
       if (timezone !== undefined) member.timezone = timezone;
       if (password) member.passwordHash = await hashPassword(password);
@@ -169,11 +209,16 @@ async function updateMyProfile(req, res, next) {
     const partner = await Partner.findOne({ partnerId: req.partnerId });
     if (!partner) return res.status(404).json({ reason: 'Partner not found' });
 
-    const { name, mobile, email, timezone, password } = req.body;
+    const { name, mobile, email, timezone, currency, password } = req.body;
     if (name !== undefined) partner.name = name;
-    if (mobile !== undefined) partner.mobile = mobile;
+    if (mobile !== undefined) {
+      const check = validateMobile(mobile);
+      if (!check.valid) return res.status(400).json({ reason: check.reason, fieldKey: 'mobile', code: check.code });
+      partner.mobile = check.e164;
+    }
     if (email !== undefined) partner.email = email;
     if (timezone !== undefined) partner.timezone = timezone;
+    if (currency !== undefined) partner.currency = currency;
     if (password) partner.passwordHash = await hashPassword(password);
     for (const field of SELF_SERVICE_FIELDS) {
       if (req.body[field] !== undefined) partner[field] = req.body[field];

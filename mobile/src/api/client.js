@@ -6,7 +6,7 @@ import Constants from 'expo-constants';
 // IP (e.g. http://192.168.1.50:5000/api/channel-partner) when testing off-simulator.
 const BASE_URL = Constants.expoConfig?.extra?.apiBaseUrl || 'http://localhost:5000/api/channel-partner';
 
-const client = axios.create({ baseURL: BASE_URL });
+const client = axios.create({ baseURL: BASE_URL, headers: { 'X-Client-Platform': 'MOBILE' } });
 
 export const registerCustomer = (payload) => client.post('/registrations', payload);
 

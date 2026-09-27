@@ -28,16 +28,32 @@ const registrationSchema = new mongoose.Schema(
     },
     isBooked: { type: Boolean, default: false },
 
-    // Real-estate lead requirement details (section 33) - all optional.
-    requirementType: { type: String, enum: ['Buy', 'Rent', 'Sell', ''], default: '' },
-    propertyType: { type: String, enum: ['Apartment', 'Villa', 'Plot', 'Commercial', 'Office', 'Other', ''], default: '' },
-    bhk: { type: String, enum: ['Studio', '1 BHK', '2 BHK', '3 BHK', '4+ BHK', ''], default: '' },
+    // Which of the partner's own team members is working this lead
+    // day-to-day - independent of partnerId (which never changes once
+    // registered) and of ownershipService's working/operational owner
+    // (which is about partner-vs-builder, not partner-vs-partner's-own-staff).
+    // '' means unassigned. Stores TeamMember.memberId, or '' for the owner
+    // acting themselves (the owner isn't a TeamMember row).
+    assignedTo: { type: String, default: '' },
+
+    // Real-estate lead requirement details (section 33) - all optional. These
+    // stay plain (unconstrained) strings rather than Mongoose enums because
+    // their actual allowed values live in LeadFieldDefinition.options
+    // (section 36/39) and are partner-editable - a hardcoded schema enum
+    // would fight that and risk a save failing on a partner-added option.
+    requirementType: { type: String, default: '' },
+    propertyType: { type: String, default: '' },
+    bhk: { type: String, default: '' },
     budgetMin: Number,
     budgetMax: Number,
     preferredLocation: String,
-    possessionTimeline: { type: String, enum: ['Immediate', '0-3 Months', '3-6 Months', '6-12 Months', '1 Year+', ''], default: '' },
-    leadSource: { type: String, enum: ['Website', 'Referral', 'Walk-in', 'Property Portal', 'Social Media', 'Cold Call', 'Other', ''], default: '' },
-    notes: String
+    possessionTimeline: { type: String, default: '' },
+    leadSource: { type: String, default: '' },
+    notes: String,
+
+    // Values for any partner-added custom lead field (section 36) - keyed
+    // by LeadFieldDefinition.fieldKey, same pattern as Partner.customFields.
+    customFields: { type: mongoose.Schema.Types.Mixed, default: {} }
   },
   { timestamps: true }
 );

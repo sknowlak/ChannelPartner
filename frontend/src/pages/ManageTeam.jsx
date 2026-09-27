@@ -1,11 +1,26 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { createTeamMember, deleteTeamMember, getMyProfile, listTeam, updateTeamMember } from '../api/client';
+import { createTeamMember, deleteTeamMember, getMyProfile, listRoles, listTeam, listUserFields, updateTeamMember } from '../api/client';
 import { useAuth } from '../context/AuthContext';
-import { COMMON_TIMEZONES, formatDateTime } from '../utils/timezone';
+import { formatDateTime } from '../utils/timezone';
+import TeamTabs from '../components/TeamTabs';
+import DynamicFieldInput from '../components/DynamicFieldInput';
+import { PERMISSIONS, PERMISSION_LABELS } from '../utils/permissions';
+import { findFieldErrors, focusField } from '../utils/formValidation';
 
-const initialForm = { name: '', mobile: '', email: '', username: '', password: '', timezone: 'UTC' };
+const GROUP_ORDER = ['Basic Information', 'Preferences'];
 const initialFilters = { search: '', status: '', timezone: '' };
+
+function sortGroups(groups) {
+  return [...groups].sort((a, b) => {
+    const ai = GROUP_ORDER.indexOf(a);
+    const bi = GROUP_ORDER.indexOf(b);
+    if (ai === -1 && bi === -1) return a.localeCompare(b);
+    if (ai === -1) return 1;
+    if (bi === -1) return -1;
+    return ai - bi;
+  });
+}
 
 function EditIcon() {
   return (
@@ -27,30 +42,38 @@ export default function ManageTeam() {
   const { partner } = useAuth();
   const navigate = useNavigate();
   // Sourced fresh from the server rather than the cached session, so a
-  // stale/older login (from before role tracking existed) can't hide the
-  // owner-only controls it's actually entitled to.
-  const [role, setRole] = useState(partner.role || null);
+  // stale/older login (from before permissions existed) can't hide controls
+  // this session is actually entitled to (section 34).
+  const [permissions, setPermissions] = useState(partner.permissions || []);
   const [members, setMembers] = useState(null);
+  const [roles, setRoles] = useState([]);
+  const [fieldDefs, setFieldDefs] = useState(null);
   const [error, setError] = useState(null);
   const [showForm, setShowForm] = useState(false);
-  const [form, setForm] = useState(initialForm);
+  const [values, setValues] = useState({});
+  const [roleId, setRoleId] = useState('');
   const [busy, setBusy] = useState(false);
+  const [fieldErrors, setFieldErrors] = useState(new Map());
   const [filters, setFilters] = useState(initialFilters);
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(10);
 
   const load = () => {
-    Promise.all([listTeam(), getMyProfile()])
-      .then(([{ data }, { data: me }]) => {
+    Promise.all([listTeam(), getMyProfile(), listRoles(), listUserFields()])
+      .then(([{ data }, { data: me }, { data: roleData }, { data: fieldData }]) => {
         setMembers(data.members);
-        setRole(me.role);
+        setPermissions(me.permissions || []);
+        setRoles(roleData.roles);
+        setFieldDefs(fieldData.definitions.filter((d) => d.isEnabled));
+        setRoleId((r) => (r ? r : roleData.roles.find((r2) => r2.name === 'Manager')?.roleId || ''));
+        setValues((v) => (v.timezone ? v : { ...v, timezone: 'UTC' }));
       })
       .catch((err) => setError(err.response?.data?.reason || err.message));
   };
 
   useEffect(load, []);
 
-  const isOwner = role === 'OWNER';
+  const canManageTeam = permissions.includes(PERMISSIONS.MANAGE_TEAM);
 
   const activeCount = (members || []).filter((m) => m.status === 'ACTIVE').length;
   const inactiveCount = (members || []).filter((m) => m.status === 'INACTIVE').length;
@@ -73,17 +96,50 @@ export default function ManageTeam() {
     setPage(1);
   };
 
+  const setValue = (fieldKey, val) => {
+    setValues((v) => ({ ...v, [fieldKey]: val }));
+    setFieldErrors((m) => {
+      if (!m.has(fieldKey)) return m;
+      const next = new Map(m);
+      next.delete(fieldKey);
+      return next;
+    });
+  };
+
   const handleCreate = async (e) => {
     e.preventDefault();
-    setBusy(true);
     setError(null);
+
+    const errs = findFieldErrors(fieldDefs, values);
+    if (errs.length > 0) {
+      setFieldErrors(new Map(errs.map((er) => [er.fieldKey, er.message])));
+      setError(`${errs.length === 1 ? 'A field needs' : `${errs.length} fields need`} your attention - see below.`);
+      focusField(errs[0].fieldKey);
+      return;
+    }
+
+    setBusy(true);
     try {
-      await createTeamMember(form);
-      setForm(initialForm);
+      const payload = { roleId };
+      for (const def of fieldDefs) {
+        const val = values[def.fieldKey];
+        if (val === undefined || val === '') continue;
+        payload[def.fieldKey] = def.dataType === 'NUMBER' ? Number(val) : val;
+      }
+      await createTeamMember(payload);
+      setValues({ timezone: 'UTC' });
+      setFieldErrors(new Map());
       setShowForm(false);
       load();
     } catch (err) {
-      setError(err.response?.data?.reason || err.message);
+      const data = err.response?.data;
+      if (data?.fieldKey) {
+        setFieldErrors(new Map([[data.fieldKey, data.reason]]));
+        setError(data.reason);
+        focusField(data.fieldKey);
+      } else {
+        setError(data?.reason || err.message);
+      }
     } finally {
       setBusy(false);
     }
@@ -108,9 +164,9 @@ export default function ManageTeam() {
   };
 
   const exportCsv = () => {
-    const header = ['Name', 'Username', 'Mobile', 'Email', 'Timezone', 'Status', 'Added'];
+    const header = ['Name', 'Username', 'Mobile', 'Email', 'Role', 'Timezone', 'Status', 'Added'];
     const rows = filteredMembers.map((m) => [
-      m.name, m.username, m.mobile || '', m.email || '', m.timezone, m.status, formatDateTime(m.createdAt, partner.timezone)
+      m.name, m.username, m.mobile || '', m.email || '', m.roleName || '', m.timezone, m.status, formatDateTime(m.createdAt, partner.timezone)
     ]);
     const csv = [header, ...rows].map((r) => r.map((v) => `"${String(v).replace(/"/g, '""')}"`).join(',')).join('\n');
     const blob = new Blob([csv], { type: 'text/csv' });
@@ -128,49 +184,69 @@ export default function ManageTeam() {
         <div>
           <h1 style={{ marginBottom: '0.2rem' }}>Manage Team</h1>
           <p className="hint" style={{ margin: 0 }}>
-            {isOwner
+            {canManageTeam
               ? 'Add, edit, deactivate, or remove people on your team - they share access to the same leads.'
-              : 'Only the account owner can add, edit, or remove team members.'}
+              : "You don't have permission to add, edit, or remove team members."}
           </p>
         </div>
-        {isOwner && (
+        {canManageTeam && (
           <button className="pill-primary" onClick={() => setShowForm((s) => !s)}>
             {showForm ? 'Cancel' : '+ Add New User'}
           </button>
         )}
       </div>
 
+      <TeamTabs />
+
       {error && <div className="error-box">{error}</div>}
 
-      {showForm && isOwner && (
-        <form className="card" onSubmit={handleCreate}>
-          <div className="field">
-            <label>Name</label>
-            <input value={form.name} onChange={(e) => setForm((f) => ({ ...f, name: e.target.value }))} required />
+      {showForm && canManageTeam && fieldDefs && (
+        <form className="card" onSubmit={handleCreate} noValidate>
+          <div className="edit-form-sections">
+            {sortGroups([...new Set(fieldDefs.map((d) => d.group))]).map((group) => (
+              <div key={group}>
+                <h3 className="form-section-title"><span>{group}</span></h3>
+                {fieldDefs.filter((d) => d.group === group).map((def) => (
+                  <div className={`field ${fieldErrors.has(def.fieldKey) ? 'invalid' : ''}`} key={def.fieldKey} id={`field-${def.fieldKey}`}>
+                    <label>
+                      {def.label}{def.isRequired ? ' *' : ''}{def.fieldKey === 'password' ? ' (min 8 characters)' : ''}
+                    </label>
+                    <DynamicFieldInput def={def} value={values[def.fieldKey]} onChange={(val) => setValue(def.fieldKey, val)} />
+                    {fieldErrors.has(def.fieldKey) && <span className="field-error">{fieldErrors.get(def.fieldKey)}</span>}
+                  </div>
+                ))}
+              </div>
+            ))}
+
+            <div>
+              <h3 className="form-section-title"><span>Role &amp; Permissions</span></h3>
+              <div className="role-picker">
+                {roles.map((r) => (
+                  <div
+                    key={r.roleId}
+                    className={`role-picker-item ${roleId === r.roleId ? 'selected' : ''}`}
+                    onClick={() => setRoleId(r.roleId)}
+                  >
+                    <div className="role-name">
+                      <input type="radio" checked={roleId === r.roleId} onChange={() => setRoleId(r.roleId)} />
+                      {r.name}
+                    </div>
+                    <div className="role-perms">
+                      {r.permissions.length ? r.permissions.map((p) => PERMISSION_LABELS[p]).join(' · ') : 'No permissions'}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
-          <div className="field">
-            <label>Mobile</label>
-            <input value={form.mobile} onChange={(e) => setForm((f) => ({ ...f, mobile: e.target.value }))} />
+
+          <div className="edit-form-footer">
+            <div className="meta" />
+            <div className="actions">
+              <button className="secondary" type="button" onClick={() => setShowForm(false)}>Cancel</button>
+              <button className="primary" type="submit" disabled={busy}>{busy ? 'Adding...' : 'Add Team Member'}</button>
+            </div>
           </div>
-          <div className="field">
-            <label>Email</label>
-            <input type="email" value={form.email} onChange={(e) => setForm((f) => ({ ...f, email: e.target.value }))} />
-          </div>
-          <div className="field">
-            <label>Username</label>
-            <input value={form.username} onChange={(e) => setForm((f) => ({ ...f, username: e.target.value }))} required />
-          </div>
-          <div className="field">
-            <label>Password (min 8 characters)</label>
-            <input type="password" value={form.password} onChange={(e) => setForm((f) => ({ ...f, password: e.target.value }))} required minLength={8} />
-          </div>
-          <div className="field">
-            <label>Timezone</label>
-            <select value={form.timezone} onChange={(e) => setForm((f) => ({ ...f, timezone: e.target.value }))}>
-              {COMMON_TIMEZONES.map((tz) => <option key={tz} value={tz}>{tz}</option>)}
-            </select>
-          </div>
-          <button className="primary" type="submit" disabled={busy}>{busy ? 'Adding...' : 'Add Team Member'}</button>
         </form>
       )}
 
@@ -221,10 +297,11 @@ export default function ManageTeam() {
             <tr>
               <th>Name</th>
               <th>Contact</th>
+              <th>Role</th>
               <th>Timezone</th>
               <th>Status</th>
               <th>Added</th>
-              {isOwner && <th>Actions</th>}
+              {canManageTeam && <th>Actions</th>}
             </tr>
           </thead>
           <tbody>
@@ -235,15 +312,16 @@ export default function ManageTeam() {
                   <div className="secondary-cell">{m.username}</div>
                 </td>
                 <td>{m.mobile || m.email || '-'}</td>
+                <td>{m.roleName || '-'}</td>
                 <td>{m.timezone}</td>
                 <td>
                   <label className="toggle-switch" title={m.status === 'ACTIVE' ? 'Active - click to deactivate' : 'Inactive - click to activate'}>
-                    <input type="checkbox" checked={m.status === 'ACTIVE'} disabled={!isOwner} onChange={() => isOwner && toggleStatus(m)} />
+                    <input type="checkbox" checked={m.status === 'ACTIVE'} disabled={!canManageTeam} onChange={() => canManageTeam && toggleStatus(m)} />
                     <span className="slider" />
                   </label>
                 </td>
                 <td className="secondary-cell">{formatDateTime(m.createdAt, partner.timezone)}</td>
-                {isOwner && (
+                {canManageTeam && (
                   <td>
                     <button className="icon-btn edit" title="Edit" onClick={() => navigate(`/team/${m.memberId}/edit`)}><EditIcon /></button>
                     <button className="icon-btn remove" title="Remove" onClick={() => remove(m)}><TrashIcon /></button>
@@ -252,10 +330,10 @@ export default function ManageTeam() {
               </tr>
             ))}
             {members && members.length === 0 && (
-              <tr><td colSpan={isOwner ? 6 : 5} className="hint">No team members yet.</td></tr>
+              <tr><td colSpan={canManageTeam ? 7 : 6} className="hint">No team members yet.</td></tr>
             )}
             {members && members.length > 0 && filteredMembers.length === 0 && (
-              <tr><td colSpan={isOwner ? 6 : 5} className="hint">No team members match these filters.</td></tr>
+              <tr><td colSpan={canManageTeam ? 7 : 6} className="hint">No team members match these filters.</td></tr>
             )}
           </tbody>
         </table>

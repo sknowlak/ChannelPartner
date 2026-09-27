@@ -1,4 +1,5 @@
 const { findDuplicate } = require('../services/duplicateService');
+const { validateMobile } = require('../utils/phone');
 
 // POST /api/channel-partner/duplicate-check
 // Standalone check - does not create a registration, used to pre-validate
@@ -10,7 +11,13 @@ async function checkDuplicate(req, res, next) {
       return res.status(400).json({ reason: 'customer.mobile and projectId are required' });
     }
 
-    const duplicate = await findDuplicate({ mobile: customer.mobile, email: customer.email, projectId });
+    // Stored numbers all carry a country code now, so a bare number here
+    // can't be matched against them reliably - reject rather than silently
+    // answering "not a duplicate" when it might well be one.
+    const mobileCheck = validateMobile(customer.mobile);
+    if (!mobileCheck.valid) return res.status(400).json({ reason: mobileCheck.reason, fieldKey: 'mobile', code: mobileCheck.code });
+
+    const duplicate = await findDuplicate({ mobile: mobileCheck.e164, email: customer.email, projectId });
 
     if (!duplicate) {
       return res.json({ isDuplicate: false });

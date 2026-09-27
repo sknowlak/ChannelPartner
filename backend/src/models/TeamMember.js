@@ -15,8 +15,20 @@ const teamMemberSchema = new mongoose.Schema(
     username: { type: String, required: true, unique: true, lowercase: true, trim: true },
     passwordHash: { type: String, required: true },
     status: { type: String, enum: ['ACTIVE', 'INACTIVE'], default: 'ACTIVE' },
+    // References Role.roleId (section 34) - determines what this member can
+    // do beyond viewing the shared lead pool, which is never gated.
+    roleId: { type: String, required: true },
     timezone: { type: String, default: 'UTC' },
-    createdBy: String
+    createdBy: String,
+
+    // Values for any partner-added custom user field (section 38) - keyed
+    // by UserFieldDefinition.fieldKey, same pattern as Registration.customFields.
+    customFields: { type: mongoose.Schema.Types.Mixed, default: {} },
+
+    // Per-grid column layout ({ [gridKey]: { order: [...], hidden: [...] } }) -
+    // this member's own "Manage Columns" choice, so it follows their account
+    // to any device/browser instead of living in that browser's localStorage.
+    gridPreferences: { type: mongoose.Schema.Types.Mixed, default: {} }
   },
   { timestamps: true }
 );
