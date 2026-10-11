@@ -14,6 +14,8 @@ const teamMemberSchema = new mongoose.Schema(
     email: String,
     username: { type: String, required: true, unique: true, lowercase: true, trim: true },
     passwordHash: { type: String, required: true },
+    // Tokens issued before this instant are rejected (see partnerAuth).
+    passwordChangedAt: Date,
     status: { type: String, enum: ['ACTIVE', 'INACTIVE'], default: 'ACTIVE' },
     // References Role.roleId (section 34) - determines what this member can
     // do beyond viewing the shared lead pool, which is never gated.

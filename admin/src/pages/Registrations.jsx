@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { listRegistrations } from '../api/client';
+import { csvCell } from '../utils/csv';
 
 const initialFilters = { partnerId: '', projectId: '', status: '', isBooked: '' };
 
@@ -30,7 +31,7 @@ export default function Registrations() {
   const exportCsv = () => {
     const header = ['Registration ID', 'Partner', 'Project', 'Status', 'Stage', 'Booked'];
     const rows = registrations.map((r) => [r.registrationId, r.partnerId, r.projectId, r.status, r.currentStage, r.isBooked ? 'Yes' : 'No']);
-    const csv = [header, ...rows].map((r) => r.map((v) => `"${String(v).replace(/"/g, '""')}"`).join(',')).join('\n');
+    const csv = [header, ...rows].map((r) => r.map(csvCell).join(',')).join('\n');
     const blob = new Blob([csv], { type: 'text/csv' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');

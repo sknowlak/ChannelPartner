@@ -18,6 +18,7 @@ const partnerAuth = require('../middleware/partnerAuth');
 const apiKeyAuth = require('../middleware/apiKeyAuth');
 const { requirePermission } = partnerAuth;
 const { PERMISSIONS } = require('../config/permissions');
+const { loginRateLimit } = require('../middleware/rateLimit');
 
 const router = express.Router();
 
@@ -45,7 +46,7 @@ router.post('/integrations/leads/:registrationId/progress', apiKeyAuth, myLeadsC
 // Channel partner self-service: register/login, then manage only your own
 // leads. See spec section 31.
 router.post('/partners/register', partnerAuthController.register);
-router.post('/partners/login', partnerAuthController.login);
+router.post('/partners/login', loginRateLimit, partnerAuthController.login);
 
 router.get('/my/profile', partnerAuth, partnerAuthController.getMyProfile);
 router.patch('/my/profile', partnerAuth, partnerAuthController.updateMyProfile);
@@ -112,10 +113,11 @@ router.patch('/my/user-fields/:fieldKey', partnerAuth, requirePermission(PERMISS
 router.delete('/my/user-fields/:fieldKey', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), userFieldController.remove);
 
 // Integrations module outbound/admin surface (section 43): push-lead
-// webhooks, their delivery log, and the inbound API key - readable by the
-// whole team (so anyone can see what's configured), mutable only by
-// whoever holds MANAGE_SETTINGS, same rule as Lead/User field settings.
-router.get('/my/integrations/api-key', partnerAuth, integrationController.getApiKey);
+// webhooks and their delivery log are readable by the whole team (header
+// values masked unless you hold MANAGE_SETTINGS), mutable only by whoever
+// holds MANAGE_SETTINGS. The inbound API key acts as the whole organisation
+// (it skips per-member permissions), so even reading it needs MANAGE_SETTINGS.
+router.get('/my/integrations/api-key', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), integrationController.getApiKey);
 router.post('/my/integrations/api-key/regenerate', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), integrationController.regenerateApiKey);
 
 router.get('/my/integrations/webhooks', partnerAuth, integrationController.listWebhooks);

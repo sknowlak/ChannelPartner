@@ -21,7 +21,7 @@ export default function MyProfile() {
   useEffect(() => {
     getMyProfile()
       .then(({ data }) => {
-        setForm({ ...data.profile, password: '' });
+        setForm({ ...data.profile, password: '', currentPassword: '' });
         setRole(data.role); // sourced fresh, not the cached session (see ManageTeam.jsx)
         setRoleName(data.roleName);
       })
@@ -49,10 +49,14 @@ export default function MyProfile() {
     setBusy(true);
     try {
       const payload = { ...form };
-      if (!payload.password) delete payload.password;
+      if (!payload.password) {
+        delete payload.password;
+        delete payload.currentPassword;
+      }
       const { data } = await updateMyProfile(payload);
-      updateLocalPartner(data.profile);
-      setForm({ ...data.profile, password: '' });
+      // A password change returns a new session token (older ones are revoked).
+      updateLocalPartner(data.profile, data.token);
+      setForm({ ...data.profile, password: '', currentPassword: '' });
       setRole(data.role);
       setSaved(true);
     } catch (err) {
@@ -61,6 +65,9 @@ export default function MyProfile() {
         setMobileError(data.reason);
         setError(data.reason);
         focusField('mobile');
+      } else if (data?.fieldKey === 'currentPassword' || data?.fieldKey === 'password') {
+        setError(data.reason);
+        focusField(data.fieldKey);
       } else {
         setError(data?.reason || err.message);
       }
@@ -154,10 +161,16 @@ export default function MyProfile() {
               <label>Role</label>
               <input value={roleName || (isOwner ? 'Owner' : 'Team Member')} disabled />
             </div>
-            <div className="field">
+            <div className="field" id="field-password">
               <label>New Password (leave blank to keep unchanged)</label>
-              <input type="password" value={form.password} onChange={update('password')} minLength={8} />
+              <input type="password" name="password" autoComplete="new-password" value={form.password} onChange={update('password')} minLength={8} />
             </div>
+            {form.password && (
+              <div className="field" id="field-currentPassword">
+                <label>Current Password *</label>
+                <input type="password" name="currentPassword" autoComplete="current-password" value={form.currentPassword} onChange={update('currentPassword')} required />
+              </div>
+            )}
           </div>
         </div>
 

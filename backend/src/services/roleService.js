@@ -30,27 +30,51 @@ async function listRoles(partnerId) {
   return Role.find({ partnerId }).sort({ isSystem: -1, name: 1 });
 }
 
-async function createCustomRole(partnerId, { name, permissions }) {
-  const roleId = await nextId('ROLE');
-  const validPermissions = (permissions || []).filter((p) => ALL_PERMISSIONS.includes(p));
-  return Role.create({ roleId, partnerId, name, isSystem: false, permissions: validPermissions });
+// MANAGE_ROLES is not a master key: `actor` ({ roleId, permissions } of
+// the caller) may only hand out permissions it already holds, and may never
+// edit the role it is itself assigned - otherwise a member whose custom role
+// has just MANAGE_ROLES could grant that role every permission.
+function permissionsBeyond(actor, permissions) {
+  return (permissions || []).filter((p) => !actor.permissions.includes(p));
 }
 
-async function updateCustomRole(partnerId, roleId, { name, permissions }) {
+async function createCustomRole(partnerId, { name, permissions }, actor) {
+  const validPermissions = (Array.isArray(permissions) ? permissions : []).filter((p) => ALL_PERMISSIONS.includes(p));
+  const beyond = permissionsBeyond(actor, validPermissions);
+  if (beyond.length) return { error: `You can't grant permissions you don't have: ${beyond.join(', ')}` };
+
+  const roleId = await nextId('ROLE');
+  const role = await Role.create({ roleId, partnerId, name, isSystem: false, permissions: validPermissions });
+  return { role };
+}
+
+async function updateCustomRole(partnerId, roleId, { name, permissions }, actor) {
   const role = await Role.findOne({ roleId, partnerId });
   if (!role) return { error: 'Role not found' };
   if (role.isSystem) return { error: 'System roles cannot be edited' };
+  if (actor.roleId && actor.roleId === roleId) return { error: "You can't edit your own role" };
+  if (permissionsBeyond(actor, role.permissions).length) {
+    return { error: "You can't edit a role that has permissions you don't have" };
+  }
 
   if (name !== undefined) role.name = name;
-  if (permissions !== undefined) role.permissions = permissions.filter((p) => ALL_PERMISSIONS.includes(p));
+  if (permissions !== undefined) {
+    const validPermissions = (Array.isArray(permissions) ? permissions : []).filter((p) => ALL_PERMISSIONS.includes(p));
+    const beyond = permissionsBeyond(actor, validPermissions);
+    if (beyond.length) return { error: `You can't grant permissions you don't have: ${beyond.join(', ')}` };
+    role.permissions = validPermissions;
+  }
   await role.save();
   return { role };
 }
 
-async function deleteCustomRole(partnerId, roleId) {
+async function deleteCustomRole(partnerId, roleId, actor) {
   const role = await Role.findOne({ roleId, partnerId });
   if (!role) return { error: 'Role not found' };
   if (role.isSystem) return { error: 'System roles cannot be deleted' };
+  if (permissionsBeyond(actor, role.permissions).length) {
+    return { error: "You can't delete a role that has permissions you don't have" };
+  }
 
   const inUse = await TeamMember.countDocuments({ partnerId, roleId });
   if (inUse > 0) return { error: `${inUse} team member(s) currently have this role - reassign them first` };

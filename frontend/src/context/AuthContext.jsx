@@ -3,14 +3,35 @@ import { getMyProfile, loginPartner, registerPartner } from '../api/client';
 
 const AuthContext = createContext(null);
 
+// Only what the UI shows about the signed-in user is cached in
+// localStorage - never the full profile, which for an owner includes bank
+// account, PAN and similar details that anything able to read localStorage
+// (an XSS bug, a browser extension, a shared computer) could otherwise take.
+const CACHED_FIELDS = ['partnerId', 'memberId', 'username', 'name', 'email', 'mobile', 'companyName', 'timezone', 'currency'];
+
+function toCached(profile, extra) {
+  const cached = {};
+  for (const key of CACHED_FIELDS) if (profile?.[key] !== undefined) cached[key] = profile[key];
+  return { ...cached, ...extra };
+}
+
 export function AuthProvider({ children }) {
   const [partner, setPartner] = useState(() => {
-    const stored = localStorage.getItem('partnerUser');
-    return stored ? JSON.parse(stored) : null;
+    try {
+      const stored = localStorage.getItem('partnerUser');
+      if (!stored) return null;
+      const parsed = JSON.parse(stored);
+      // Also rewrites caches written by older versions that stored everything.
+      const trimmed = toCached(parsed, { role: parsed.role, roleName: parsed.roleName, permissions: parsed.permissions || [] });
+      localStorage.setItem('partnerUser', JSON.stringify(trimmed));
+      return trimmed;
+    } catch {
+      return null;
+    }
   });
 
   const persist = (data) => {
-    const merged = { ...data.partner, role: data.role, roleName: data.roleName, permissions: data.permissions || [] };
+    const merged = toCached(data.partner, { role: data.role, roleName: data.roleName, permissions: data.permissions || [] });
     localStorage.setItem('partnerToken', data.token);
     localStorage.setItem('partnerUser', JSON.stringify(merged));
     setPartner(merged);
@@ -26,7 +47,7 @@ export function AuthProvider({ children }) {
     if (!partner) return;
     getMyProfile()
       .then(({ data }) => {
-        const merged = { ...partner, ...data.profile, role: data.role, roleName: data.roleName, permissions: data.permissions || [] };
+        const merged = toCached({ ...partner, ...data.profile }, { role: data.role, roleName: data.roleName, permissions: data.permissions || [] });
         localStorage.setItem('partnerUser', JSON.stringify(merged));
         setPartner(merged);
       })
@@ -44,9 +65,12 @@ export function AuthProvider({ children }) {
     return persist(data);
   };
 
-  const updateLocalPartner = (profile) => {
+  // `token` is passed after a password change: the server revokes every
+  // token issued before it, so the session continues on the new one.
+  const updateLocalPartner = (profile, token) => {
+    if (token) localStorage.setItem('partnerToken', token);
     setPartner((p) => {
-      const merged = { ...p, ...profile };
+      const merged = toCached({ ...p, ...profile }, { role: p?.role, roleName: p?.roleName, permissions: p?.permissions || [] });
       localStorage.setItem('partnerUser', JSON.stringify(merged));
       return merged;
     });

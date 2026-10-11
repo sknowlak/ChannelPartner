@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const { normalizeMobile, validatePhoneNumber } = require('../utils/phone');
+const { normalizeEmail } = require('../utils/email');
 
 const customerSchema = new mongoose.Schema(
   {
@@ -27,7 +28,14 @@ const customerSchema = new mongoose.Schema(
     // even against a race, not just "whatever the last read happened to see".
     mobileNormalized: { type: String, index: true, unique: true, sparse: true },
     email: { type: String, index: true },
-    alternateMobile: String
+    // Match key for duplicate detection (utils/email.js): trimmed,
+    // lowercased, "+tag" removed - so `Victim@Gmail.com ` and
+    // `victim+1@gmail.com` are recognised as the same customer.
+    emailNormalized: { type: String, index: true },
+    alternateMobile: String,
+    // Digits-only key for the alternate number, so a customer can't be
+    // registered again by a second partner using their other phone.
+    alternateMobileNormalized: { type: String, index: true }
   },
   { timestamps: true, toJSON: { virtuals: true }, toObject: { virtuals: true } }
 );
@@ -53,6 +61,13 @@ customerSchema.pre('validate', function computeMobileFields(next) {
       this.mobileNationalNumber = parsed.nationalNumber;
     }
     this.mobileNormalized = normalizeMobile(this.mobile);
+  }
+  if (this.isModified('email') || (this.email && !this.emailNormalized)) {
+    this.email = this.email ? String(this.email).trim() : this.email;
+    this.emailNormalized = this.email ? normalizeEmail(this.email) : undefined;
+  }
+  if (this.isModified('alternateMobile') || (this.alternateMobile && !this.alternateMobileNormalized)) {
+    this.alternateMobileNormalized = this.alternateMobile ? normalizeMobile(this.alternateMobile) : undefined;
   }
   next();
 });

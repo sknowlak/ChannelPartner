@@ -5,10 +5,19 @@ const { nextId } = require('../utils/idGenerator');
 const { generateApiKey } = require('../utils/apiKey');
 const { retryDelivery, resyncRange } = require('../services/webhookService');
 const { logEvent } = require('../services/auditService');
+const { outboundUrlProblem } = require('../utils/outboundUrl');
+const { maskHeaders, headersProblem } = require('../utils/secretHeaders');
+const { PERMISSIONS } = require('../config/permissions');
 
 const VALID_METHODS = ['POST', 'PUT', 'PATCH'];
 const VALID_FORMATS = ['JSON', 'FORM', 'CUSTOM'];
 const VALID_EVENTS = ['LEAD_CREATED', 'LEAD_UPDATED', 'STAGE_UPDATED', 'BOOKING_COMPLETED'];
+// Header values often hold a client CRM's credentials. Only someone who can
+// edit webhooks (MANAGE_SETTINGS) sees them in full - they need the real
+// values to edit the form; everyone else sees them masked.
+function canSeeSecrets(req) {
+  return (req.permissions || []).includes(PERMISSIONS.MANAGE_SETTINGS);
+}
 
 // GET /api/channel-partner/my/integrations/api-key
 async function getApiKey(req, res, next) {
@@ -54,7 +63,10 @@ async function regenerateApiKey(req, res, next) {
 async function listWebhooks(req, res, next) {
   try {
     const webhooks = await IntegrationWebhook.find({ partnerId: req.partnerId }).sort({ createdAt: -1 });
-    return res.json({ count: webhooks.length, webhooks });
+    const visible = canSeeSecrets(req)
+      ? webhooks
+      : webhooks.map((w) => ({ ...w.toObject(), headers: maskHeaders(w.headers) }));
+    return res.json({ count: visible.length, webhooks: visible });
   } catch (err) {
     next(err);
   }
@@ -65,6 +77,10 @@ async function createWebhook(req, res, next) {
   try {
     const { name, targetUrl, method, format, headers, bodyTemplate, events } = req.body;
     if (!name || !targetUrl) return res.status(400).json({ reason: 'name and targetUrl are required' });
+    const urlProblem = await outboundUrlProblem(targetUrl);
+    if (urlProblem) return res.status(400).json({ reason: urlProblem, fieldKey: 'targetUrl' });
+    const badHeaders = headersProblem(headers);
+    if (badHeaders) return res.status(400).json({ reason: badHeaders, fieldKey: 'headers' });
     if (method && !VALID_METHODS.includes(method)) return res.status(400).json({ reason: `method must be one of ${VALID_METHODS.join(', ')}` });
     if (format && !VALID_FORMATS.includes(format)) return res.status(400).json({ reason: `format must be one of ${VALID_FORMATS.join(', ')}` });
     if (events && events.some((e) => !VALID_EVENTS.includes(e))) return res.status(400).json({ reason: `events must be a subset of ${VALID_EVENTS.join(', ')}` });
@@ -104,6 +120,12 @@ async function updateWebhook(req, res, next) {
     if (!webhook) return res.status(404).json({ reason: 'Webhook not found' });
 
     const { name, targetUrl, method, format, headers, bodyTemplate, events, isEnabled } = req.body;
+    if (targetUrl !== undefined) {
+      const urlProblem = await outboundUrlProblem(targetUrl);
+      if (urlProblem) return res.status(400).json({ reason: urlProblem, fieldKey: 'targetUrl' });
+    }
+    const badHeaders = headersProblem(headers);
+    if (badHeaders) return res.status(400).json({ reason: badHeaders, fieldKey: 'headers' });
     if (method && !VALID_METHODS.includes(method)) return res.status(400).json({ reason: `method must be one of ${VALID_METHODS.join(', ')}` });
     if (format && !VALID_FORMATS.includes(format)) return res.status(400).json({ reason: `format must be one of ${VALID_FORMATS.join(', ')}` });
     if (events && events.some((e) => !VALID_EVENTS.includes(e))) return res.status(400).json({ reason: `events must be a subset of ${VALID_EVENTS.join(', ')}` });
@@ -140,8 +162,8 @@ async function listDeliveries(req, res, next) {
   try {
     const { webhookId, status, from, to } = req.query;
     const filter = { partnerId: req.partnerId };
-    if (webhookId) filter.webhookId = webhookId;
-    if (status) filter.status = status;
+    if (webhookId) filter.webhookId = String(webhookId);
+    if (status) filter.status = String(status);
     if (from || to) {
       filter.createdAt = {};
       if (from) filter.createdAt.$gte = new Date(from);
@@ -154,7 +176,10 @@ async function listDeliveries(req, res, next) {
       success: deliveries.filter((d) => d.status === 'SUCCESS').length,
       failed: deliveries.filter((d) => d.status === 'FAILED').length
     };
-    return res.json({ ...summary, deliveries });
+    // New rows are stored with credentials redacted already; rows logged
+    // before that change still hold them, so mask on the way out as well.
+    const visible = deliveries.map((d) => ({ ...d.toObject(), requestHeaders: maskHeaders(d.requestHeaders) }));
+    return res.json({ ...summary, deliveries: visible });
   } catch (err) {
     next(err);
   }
@@ -177,7 +202,7 @@ async function resyncHandler(req, res, next) {
   try {
     const { from, to } = req.body;
     const result = await resyncRange(req.partnerId, req.params.webhookId, from, to);
-    if (result.error) return res.status(404).json({ reason: result.error });
+    if (result.error) return res.status(result.status || 404).json({ reason: result.error });
 
     await logEvent({
       registrationId: `PARTNER:${req.partnerId}`,

@@ -2,7 +2,9 @@ const TeamMember = require('../models/TeamMember');
 const Partner = require('../models/Partner');
 const Role = require('../models/Role');
 const { nextId } = require('../utils/idGenerator');
-const { hashPassword } = require('../services/partnerAuthService');
+const { hashPassword, passwordProblem } = require('../services/partnerAuthService');
+const { PERMISSIONS } = require('../config/permissions');
+const { isValidEmail } = require('../utils/email');
 const { logEvent } = require('../services/auditService');
 const { listFieldDefinitions } = require('../services/userFieldDefinitionService');
 const { validateMobile } = require('../utils/phone');
@@ -10,7 +12,18 @@ const { validateMobile } = require('../utils/phone');
 function toSafeObject(doc) {
   const obj = doc.toObject();
   delete obj.passwordHash;
+  delete obj.passwordChangedAt;
   return obj;
+}
+
+// MANAGE_TEAM lets you manage people at or below your own level, never
+// above it: a role is "within reach" only if every permission it carries is
+// one the caller already holds. Without this, an Admin (MANAGE_LEADS +
+// MANAGE_TEAM) could assign themselves Super Admin, or reset a Super Admin
+// member's password and log in as them. The account owner holds everything,
+// so this never restricts them.
+function roleWithinReach(req, role) {
+  return (role?.permissions || []).every((p) => req.permissions.includes(p));
 }
 
 async function defaultRoleId(partnerId) {
@@ -66,7 +79,11 @@ async function createTeamMember(req, res, next) {
         return res.status(400).json({ reason: `${def.label} is required`, fieldKey: def.fieldKey });
       }
     }
-    if (password.length < 8) return res.status(400).json({ reason: 'Password must be at least 8 characters', fieldKey: 'password' });
+    const problem = passwordProblem(password);
+    if (problem) return res.status(400).json({ reason: problem, fieldKey: 'password' });
+    if (req.body.email && !isValidEmail(req.body.email)) {
+      return res.status(400).json({ reason: 'Enter a valid email address', fieldKey: 'email' });
+    }
 
     if (req.body.mobile) {
       const mobileCheck = validateMobile(req.body.mobile);
@@ -74,15 +91,17 @@ async function createTeamMember(req, res, next) {
       req.body.mobile = mobileCheck.e164;
     }
 
-    if (roleId) {
-      const role = await Role.findOne({ roleId, partnerId: req.partnerId });
-      if (!role) return res.status(400).json({ reason: 'Unknown roleId for this organisation' });
-    } else {
+    if (!roleId) {
       roleId = await defaultRoleId(req.partnerId);
       if (!roleId) return res.status(500).json({ reason: 'No default role configured for this organisation' });
     }
+    const role = await Role.findOne({ roleId, partnerId: req.partnerId });
+    if (!role) return res.status(400).json({ reason: 'Unknown roleId for this organisation' });
+    if (!roleWithinReach(req, role)) {
+      return res.status(403).json({ reason: "You can't assign a role with permissions you don't have", fieldKey: 'roleId' });
+    }
 
-    const lowerUsername = username.toLowerCase();
+    const lowerUsername = String(username).toLowerCase();
     const [existingPartner, existingMember] = await Promise.all([
       Partner.findOne({ username: lowerUsername }),
       TeamMember.findOne({ username: lowerUsername })
@@ -137,10 +156,37 @@ async function updateTeamMember(req, res, next) {
     const { name, mobile, email, status, timezone, password, roleId } = req.body;
     const previousValue = { name: member.name, status: member.status, roleId: member.roleId };
 
-    if (roleId !== undefined) {
+    const currentRole = await Role.findOne({ roleId: member.roleId, partnerId: req.partnerId });
+    if (!roleWithinReach(req, currentRole)) {
+      return res.status(403).json({ reason: "You can't edit a team member whose role has more permissions than yours" });
+    }
+
+    const isSelf = member.memberId === req.memberId;
+    if (roleId !== undefined && roleId !== member.roleId) {
+      if (isSelf) return res.status(403).json({ reason: "You can't change your own role", fieldKey: 'roleId' });
+      if (!req.permissions.includes(PERMISSIONS.MANAGE_ROLES)) {
+        return res.status(403).json({ reason: `Changing a member's role needs the "${PERMISSIONS.MANAGE_ROLES}" permission`, fieldKey: 'roleId' });
+      }
       const role = await Role.findOne({ roleId, partnerId: req.partnerId });
       if (!role) return res.status(400).json({ reason: 'Unknown roleId for this organisation' });
+      if (!roleWithinReach(req, role)) {
+        return res.status(403).json({ reason: "You can't assign a role with permissions you don't have", fieldKey: 'roleId' });
+      }
       member.roleId = roleId;
+    }
+    if (status !== undefined && status !== member.status) {
+      if (isSelf) return res.status(403).json({ reason: "You can't change your own status", fieldKey: 'status' });
+      if (!['ACTIVE', 'INACTIVE'].includes(status)) return res.status(400).json({ reason: 'status must be ACTIVE or INACTIVE', fieldKey: 'status' });
+      member.status = status;
+    }
+    if (email !== undefined && email !== '' && !isValidEmail(email)) {
+      return res.status(400).json({ reason: 'Enter a valid email address', fieldKey: 'email' });
+    }
+    if (password) {
+      const problem = passwordProblem(password);
+      if (problem) return res.status(400).json({ reason: problem, fieldKey: 'password' });
+      member.passwordHash = await hashPassword(password);
+      member.passwordChangedAt = new Date(); // logs the member out everywhere
     }
     if (name !== undefined) member.name = name;
     if (mobile !== undefined) {
@@ -153,9 +199,7 @@ async function updateTeamMember(req, res, next) {
       }
     }
     if (email !== undefined) member.email = email;
-    if (status !== undefined) member.status = status;
     if (timezone !== undefined) member.timezone = timezone;
-    if (password) member.passwordHash = await hashPassword(password);
 
     const fieldDefs = await listFieldDefinitions(req.partnerId);
     for (const def of fieldDefs) {
@@ -197,6 +241,14 @@ async function updateTeamMember(req, res, next) {
 async function deleteTeamMember(req, res, next) {
   try {
     const { memberId } = req.params;
+    if (memberId === req.memberId) return res.status(403).json({ reason: "You can't remove yourself" });
+    const target = await TeamMember.findOne({ memberId, partnerId: req.partnerId });
+    if (!target) return res.status(404).json({ reason: 'Team member not found' });
+    const targetRole = await Role.findOne({ roleId: target.roleId, partnerId: req.partnerId });
+    if (!roleWithinReach(req, targetRole)) {
+      return res.status(403).json({ reason: "You can't remove a team member whose role has more permissions than yours" });
+    }
+
     const member = await TeamMember.findOneAndDelete({ memberId, partnerId: req.partnerId });
     if (!member) return res.status(404).json({ reason: 'Team member not found' });
 

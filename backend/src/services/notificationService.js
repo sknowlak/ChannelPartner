@@ -6,10 +6,16 @@ const Customer = require('../models/Customer');
 const Partner = require('../models/Partner');
 const { nextId } = require('../utils/idGenerator');
 const { loadOrgUsers } = require('./userDirectoryService');
-const { buildLeadPayload, renderTemplate } = require('./webhookService');
+const { buildLeadPayload, renderTemplate, performSend } = require('./webhookService');
 
 const SCHEDULER_INTERVAL_MS = 30 * 1000;
-const SEND_TIMEOUT_MS = 10000;
+const SMTP_TIMEOUT_MS = 10000;
+// Jobs are sent a few at a time, so one organisation's slow webhook or
+// mail server can't hold up everyone else's reminders.
+const DELIVERY_CONCURRENCY = 10;
+const MAX_JOBS_PER_RUN = 200;
+// A job still PROCESSING after this long was abandoned by a crashed run.
+const STALE_PROCESSING_MS = 5 * 60 * 1000;
 
 // --- Timing ---------------------------------------------------------------
 
@@ -151,7 +157,10 @@ function getMailer() {
     host: process.env.SMTP_HOST,
     port: Number(process.env.SMTP_PORT) || 587,
     secure: process.env.SMTP_SECURE === 'true',
-    auth: process.env.SMTP_USER ? { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS } : undefined
+    auth: process.env.SMTP_USER ? { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS } : undefined,
+    connectionTimeout: SMTP_TIMEOUT_MS,
+    greetingTimeout: SMTP_TIMEOUT_MS,
+    socketTimeout: SMTP_TIMEOUT_MS
   });
   return mailer;
 }
@@ -170,21 +179,16 @@ async function sendEmail(to, subject, text) {
 
 async function sendWebhook(rule, body) {
   if (!rule.webhook?.url) return { status: 'SKIPPED', detail: 'No webhook URL configured' };
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), SEND_TIMEOUT_MS);
-  try {
-    const res = await fetch(rule.webhook.url, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', ...(rule.webhook.headers || {}) },
-      body: JSON.stringify(body),
-      signal: controller.signal
-    });
-    return res.ok ? { status: 'SENT', detail: `HTTP ${res.status}` } : { status: 'FAILED', detail: `HTTP ${res.status}` };
-  } catch (err) {
-    return { status: 'FAILED', detail: err.name === 'AbortError' ? 'Request timed out' : err.message };
-  } finally {
-    clearTimeout(timer);
-  }
+  // Same guarded sender as integration webhooks: public addresses only,
+  // redirects not followed, bounded timeout and response size.
+  const out = await performSend(
+    rule.webhook.url,
+    'POST',
+    { 'Content-Type': 'application/json', ...(rule.webhook.headers || {}) },
+    JSON.stringify(body)
+  );
+  if (out.status === 'SUCCESS') return { status: 'SENT', detail: `HTTP ${out.httpStatus}` };
+  return { status: 'FAILED', detail: out.errorMessage || `HTTP ${out.httpStatus}` };
 }
 
 // --- Delivery -------------------------------------------------------------
@@ -260,35 +264,48 @@ async function deliverJob(job) {
   return { status: anySent || !anyFailed ? 'SENT' : 'FAILED', deliveries };
 }
 
+// Only jobs abandoned for a while go back to the queue - not ones another
+// backend instance is sending right now (updatedAt moves on every claim).
+function requeueStaleJobs() {
+  return NotificationJob.updateMany(
+    { status: 'PROCESSING', updatedAt: { $lt: new Date(Date.now() - STALE_PROCESSING_MS) } },
+    { status: 'PENDING' }
+  );
+}
+
 let running = false;
 async function processDueJobs() {
   if (running) return;
   running = true;
   try {
-    for (let i = 0; i < 200; i += 1) {
-      // Claim atomically so two overlapping runs can't double-send a job.
-      const job = await NotificationJob.findOneAndUpdate(
-        { status: 'PENDING', fireAt: { $lte: new Date() } },
-        { status: 'PROCESSING' },
-        { sort: { fireAt: 1 }, new: true }
-      );
-      if (!job) break;
-      try {
-        const outcome = await deliverJob(job);
-        Object.assign(job, outcome, { processedAt: new Date() });
-      } catch (err) {
-        Object.assign(job, { status: 'FAILED', note: err.message, processedAt: new Date() });
+    await requeueStaleJobs();
+    let claimed = 0;
+    const worker = async () => {
+      while (claimed < MAX_JOBS_PER_RUN) {
+        claimed += 1;
+        // Claim atomically so overlapping runs/workers can't double-send a job.
+        const job = await NotificationJob.findOneAndUpdate(
+          { status: 'PENDING', fireAt: { $lte: new Date() } },
+          { status: 'PROCESSING' },
+          { sort: { fireAt: 1 }, new: true }
+        );
+        if (!job) return;
+        try {
+          const outcome = await deliverJob(job);
+          Object.assign(job, outcome, { processedAt: new Date() });
+        } catch (err) {
+          Object.assign(job, { status: 'FAILED', note: err.message, processedAt: new Date() });
+        }
+        await job.save();
       }
-      await job.save();
-    }
+    };
+    await Promise.all(Array.from({ length: DELIVERY_CONCURRENCY }, worker));
   } finally {
     running = false;
   }
 }
 
 function startScheduler() {
-  // Jobs left PROCESSING by a crash mid-send go back to the queue.
-  NotificationJob.updateMany({ status: 'PROCESSING' }, { status: 'PENDING' }).catch(() => {});
   const tick = () => processDueJobs().catch((err) => console.error('[notifications] scheduler run failed', err));
   tick();
   return setInterval(tick, SCHEDULER_INTERVAL_MS);

@@ -4,8 +4,16 @@ const Registration = require('../models/Registration');
 const Customer = require('../models/Customer');
 const Partner = require('../models/Partner');
 const { nextId } = require('../utils/idGenerator');
+const { outboundUrlProblem } = require('../utils/outboundUrl');
+const { redactHeaders, restoreRedacted } = require('../utils/secretHeaders');
 
 const SEND_TIMEOUT_MS = 10000;
+const MAX_RESPONSE_CHARS = 2000;
+// Resync is a manual, synchronous action - bounded so one click can't send
+// for hours or flood the target. Narrow the date range to push more.
+const RESYNC_MAX_LEADS = 500;
+const RESYNC_CONCURRENCY = 5;
+const resyncsInProgress = new Set();
 
 // The shape sent to every external client, regardless of format (section
 // 43) - a flat, self-describing snapshot of the lead at the moment of the
@@ -73,15 +81,33 @@ function lookupPath(payload, path) {
   return Array.isArray(value) ? value.join(',') : String(value);
 }
 
-function renderTemplate(template, payload, { json = false } = {}) {
+// `escape` covers the other body types a template can be: 'form'
+// URL-encodes each value and 'xml' escapes markup, so lead text like
+// `x&stage=Booked` or `</Name><Status>Booked` can't inject extra fields or
+// elements into the client CRM's request.
+const XML_ENTITIES = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' };
+const ESCAPERS = {
+  form: (v) => encodeURIComponent(v),
+  xml: (v) => v.replace(/[&<>"']/g, (c) => XML_ENTITIES[c])
+};
+
+function renderTemplate(template, payload, { json = false, escape } = {}) {
   let out = template;
   if (json) {
     out = out.replace(/"\{\{\s*([\w.]+)\s*\}\}"/g, (_, path) => JSON.stringify(lookupPath(payload, path)));
   }
   return out.replace(/\{\{\s*([\w.]+)\s*\}\}/g, (_, path) => {
     const value = lookupPath(payload, path) ?? '';
-    return json ? JSON.stringify(value).slice(1, -1) : value;
+    if (json) return JSON.stringify(value).slice(1, -1);
+    return ESCAPERS[escape] ? ESCAPERS[escape](value) : value;
   });
+}
+
+function escapeModeFor(contentType) {
+  if (/json/i.test(contentType)) return { json: true };
+  if (/x-www-form-urlencoded/i.test(contentType)) return { escape: 'form' };
+  if (/xml/i.test(contentType)) return { escape: 'xml' };
+  return {};
 }
 
 function buildRequest(webhook, payload) {
@@ -97,7 +123,7 @@ function buildRequest(webhook, payload) {
     const contentTypeKey = Object.keys(headers).find((k) => k.toLowerCase() === 'content-type');
     if (!contentTypeKey) headers['Content-Type'] = 'application/json';
     const contentType = contentTypeKey ? String(headers[contentTypeKey]) : 'application/json';
-    body = renderTemplate(webhook.bodyTemplate, payload, { json: /json/i.test(contentType) });
+    body = renderTemplate(webhook.bodyTemplate, payload, escapeModeFor(contentType));
   } else {
     if (!headers['Content-Type']) headers['Content-Type'] = 'application/json';
     body = JSON.stringify(payload);
@@ -106,14 +132,45 @@ function buildRequest(webhook, payload) {
   return { headers, body };
 }
 
+// Reads at most `limit` characters and then stops, so a target streaming a
+// huge response can't balloon the server's memory.
+async function readCapped(res, limit) {
+  if (!res.body) return '';
+  const reader = res.body.getReader();
+  const decoder = new TextDecoder();
+  let text = '';
+  while (text.length < limit) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    text += decoder.decode(value, { stream: true });
+  }
+  reader.cancel().catch(() => {});
+  return text.slice(0, limit);
+}
+
+// Shared with notificationService for rule webhooks. The URL is re-checked
+// right before every send (see utils/outboundUrl.js) and redirects are not
+// followed: a 3xx is reported as a failure instead of being chased to
+// wherever it points (e.g. an internal address).
 async function performSend(url, method, headers, body) {
+  const result = { status: 'FAILED', httpStatus: null, responseBody: '', errorMessage: '' };
+  const problem = await outboundUrlProblem(url);
+  if (problem) {
+    result.errorMessage = `Blocked: ${problem}`;
+    return result;
+  }
+
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), SEND_TIMEOUT_MS);
-  const result = { status: 'FAILED', httpStatus: null, responseBody: '', errorMessage: '' };
   try {
-    const res = await fetch(url, { method, headers, body, signal: controller.signal });
+    const res = await fetch(url, { method, headers, body, signal: controller.signal, redirect: 'manual' });
     result.httpStatus = res.status;
-    result.responseBody = (await res.text()).slice(0, 2000);
+    if (res.status >= 300 && res.status < 400) {
+      result.errorMessage = `Server responded with a redirect (HTTP ${res.status}) - redirects are not followed; use the final URL`;
+      res.body?.cancel().catch(() => {});
+      return result;
+    }
+    result.responseBody = await readCapped(res, MAX_RESPONSE_CHARS);
     result.status = res.ok ? 'SUCCESS' : 'FAILED';
     if (!res.ok) result.errorMessage = `Server responded with HTTP ${res.status}`;
   } catch (err) {
@@ -141,7 +198,9 @@ async function sendWebhook(webhook, payload, eventType, registrationId, partnerI
     eventType,
     requestUrl: webhook.targetUrl,
     requestMethod: webhook.method || 'POST',
-    requestHeaders: headers,
+    // Credentials are not kept in the log every team member can read;
+    // retryDelivery takes them from the live webhook config instead.
+    requestHeaders: redactHeaders(headers),
     requestBody: body,
     ...outcome
   });
@@ -170,7 +229,9 @@ async function retryDelivery(partnerId, deliveryId) {
   const delivery = await WebhookDelivery.findOne({ deliveryId, partnerId });
   if (!delivery) return { error: 'Delivery not found' };
 
-  const outcome = await performSend(delivery.requestUrl, delivery.requestMethod, delivery.requestHeaders, delivery.requestBody);
+  const webhook = await IntegrationWebhook.findOne({ webhookId: delivery.webhookId, partnerId });
+  const headers = restoreRedacted(delivery.requestHeaders, webhook?.headers);
+  const outcome = await performSend(delivery.requestUrl, delivery.requestMethod, headers, delivery.requestBody);
   delivery.status = outcome.status;
   delivery.httpStatus = outcome.httpStatus;
   delivery.responseBody = outcome.responseBody;
@@ -195,17 +256,31 @@ async function resyncRange(partnerId, webhookId, fromDate, toDate) {
     if (toDate) query.registeredAt.$lte = new Date(`${toDate}T23:59:59.999Z`);
   }
 
-  const registrations = await Registration.find(query);
-  const customers = await Customer.find({ customerId: { $in: registrations.map((r) => r.customerId) } });
-  const customerById = new Map(customers.map((c) => [c.customerId, c]));
-  const partner = await Partner.findOne({ partnerId });
+  const lockKey = `${partnerId}:${webhookId}`;
+  if (resyncsInProgress.has(lockKey)) return { error: 'A resync for this webhook is already running', status: 409 };
+  resyncsInProgress.add(lockKey);
 
-  for (const reg of registrations) {
-    const payload = buildLeadPayload(reg, customerById.get(reg.customerId), 'SYNC', partner);
-    await sendWebhook(webhook, payload, 'SYNC', reg.registrationId, partnerId);
+  try {
+    const matching = await Registration.countDocuments(query);
+    const registrations = await Registration.find(query).sort({ registeredAt: 1 }).limit(RESYNC_MAX_LEADS);
+    const customers = await Customer.find({ customerId: { $in: registrations.map((r) => r.customerId) } });
+    const customerById = new Map(customers.map((c) => [c.customerId, c]));
+    const partner = await Partner.findOne({ partnerId });
+
+    const queue = [...registrations];
+    const worker = async () => {
+      while (queue.length) {
+        const reg = queue.shift();
+        const payload = buildLeadPayload(reg, customerById.get(reg.customerId), 'SYNC', partner);
+        await sendWebhook(webhook, payload, 'SYNC', reg.registrationId, partnerId).catch(() => {});
+      }
+    };
+    await Promise.all(Array.from({ length: RESYNC_CONCURRENCY }, worker));
+
+    return { total: registrations.length, matching, truncated: matching > registrations.length, limit: RESYNC_MAX_LEADS };
+  } finally {
+    resyncsInProgress.delete(lockKey);
   }
-
-  return { total: registrations.length };
 }
 
-module.exports = { buildLeadPayload, renderTemplate, triggerWebhooks, retryDelivery, resyncRange };
+module.exports = { buildLeadPayload, renderTemplate, triggerWebhooks, retryDelivery, resyncRange, performSend };

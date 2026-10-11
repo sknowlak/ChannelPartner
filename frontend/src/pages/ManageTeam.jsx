@@ -7,6 +7,7 @@ import TeamTabs from '../components/TeamTabs';
 import DynamicFieldInput from '../components/DynamicFieldInput';
 import { PERMISSIONS, PERMISSION_LABELS } from '../utils/permissions';
 import { findFieldErrors, focusField } from '../utils/formValidation';
+import { csvCell } from '../utils/csv';
 
 const GROUP_ORDER = ['Basic Information', 'Preferences'];
 const initialFilters = { search: '', status: '', timezone: '' };
@@ -168,7 +169,7 @@ export default function ManageTeam() {
     const rows = filteredMembers.map((m) => [
       m.name, m.username, m.mobile || '', m.email || '', m.roleName || '', m.timezone, m.status, formatDateTime(m.createdAt, partner.timezone)
     ]);
-    const csv = [header, ...rows].map((r) => r.map((v) => `"${String(v).replace(/"/g, '""')}"`).join(',')).join('\n');
+    const csv = [header, ...rows].map((r) => r.map(csvCell).join(',')).join('\n');
     const blob = new Blob([csv], { type: 'text/csv' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');

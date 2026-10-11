@@ -14,6 +14,7 @@ import { AssignSelect, useLeadWorkflowOptions } from '../components/LeadQuickUpd
 import { applySort, nextSortDir } from '../utils/sort';
 import { loadColumnPrefs, saveColumnPrefs } from '../utils/columnPrefs';
 import { sortLeadTabs } from '../utils/leadTabs';
+import { csvCell } from '../utils/csv';
 
 const initialFilters = { search: '', status: '', projectId: '' };
 const GRID_KEY = 'myLeads';
@@ -356,7 +357,7 @@ export default function MyLeads() {
   const exportCsv = () => {
     const header = ['Registration ID', ...visibleColumns.map((c) => c.label)];
     const rows = sortedRegistrations.map((r) => [r.registrationId, ...visibleColumns.map((c) => c.text(r))]);
-    const csv = [header, ...rows].map((row) => row.map((v) => `"${String(v).replace(/"/g, '""')}"`).join(',')).join('\n');
+    const csv = [header, ...rows].map((row) => row.map(csvCell).join(',')).join('\n');
     const blob = new Blob([csv], { type: 'text/csv' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');

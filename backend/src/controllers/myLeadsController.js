@@ -4,15 +4,18 @@ const ProgressEvent = require('../models/ProgressEvent');
 const Booking = require('../models/Booking');
 const CommissionEligibility = require('../models/CommissionEligibility');
 const { nextId } = require('../utils/idGenerator');
-const { findDuplicate } = require('../services/duplicateService');
-const { createInitialOwnership, getOwnership, transferOperationalOwnershipToBuilder } = require('../services/ownershipService');
+const { findDuplicate, findOrCreateCustomer, claimProtection } = require('../services/duplicateService');
+const { createInitialOwnership, getOwnership } = require('../services/ownershipService');
+const { completeBooking } = require('../services/bookingService');
+const { leadEditProblem } = require('../services/leadEditGuards');
+const { fieldValueProblem } = require('../utils/fieldValues');
 const { logEvent, getTimeline } = require('../services/auditService');
 const { withIdempotency } = require('../services/idempotencyService');
 const { getSettings } = require('../services/settingsService');
 const { listFieldDefinitions } = require('../services/leadFieldDefinitionService');
 const { triggerWebhooks } = require('../services/webhookService');
-const { normalizeMobile, validateMobileField } = require('../utils/phone');
-const { listStatuses, getDefaultStatusName, getBookingStatusName, resolveStatus } = require('../services/leadStatusService');
+const { validateMobileField } = require('../utils/phone');
+const { listStatuses, getDefaultStatusName, resolveStatus } = require('../services/leadStatusService');
 const { planForStatusChange } = require('../services/notificationService');
 const { loadOrgUsers, publicUser } = require('../services/userDirectoryService');
 
@@ -39,7 +42,7 @@ function planNotifications(req, registration) {
 // safeguard (spec section 21) for the self-service portal.
 
 async function assertOwnedRegistration(registrationId, partnerId) {
-  const registration = await Registration.findOne({ registrationId });
+  const registration = await Registration.findOne({ registrationId: String(registrationId) });
   if (!registration) return { error: { status: 404, reason: 'Registration not found' } };
   if (registration.partnerId !== partnerId) return { error: { status: 403, reason: 'This registration does not belong to your account' } };
   return { registration };
@@ -87,14 +90,14 @@ const REQUIREMENT_FIELDS = [
 async function createMyRegistration(req, res, next) {
   try {
     const { customer, source, externalReferenceId } = req.body;
-    const projectId = req.body.projectId || '';
+    const projectId = String(req.body.projectId || '');
     const partnerId = req.partnerId;
 
     // Only the lead's name and mobile number are mandatory by default
     // (section 33) - project and every requirement detail below are
     // optional, UNLESS the partner has marked additional fields required
     // in their own lead-form Settings (section 36), checked dynamically below.
-    if (!customer || !customer.mobile) {
+    if (!customer || typeof customer !== 'object' || !customer.mobile) {
       return res.status(400).json({ status: 'ERROR', reason: 'customer.mobile is required', fieldKey: 'mobile' });
     }
     if (!customer.name) {
@@ -127,6 +130,11 @@ async function createMyRegistration(req, res, next) {
       }
     }
 
+    for (const def of fieldDefs) {
+      const valueProblem = fieldValueProblem(def, getIncomingValue(def));
+      if (valueProblem) return res.status(400).json({ status: 'ERROR', reason: valueProblem, fieldKey: def.fieldKey });
+    }
+
     const customFieldValues = {};
     for (const def of fieldDefs) {
       if (def.scope === 'custom' && def.isEnabled && req.body[def.fieldKey] !== undefined && req.body[def.fieldKey] !== '') {
@@ -146,36 +154,32 @@ async function createMyRegistration(req, res, next) {
     }
 
     const { result } = await withIdempotency(externalReferenceId, 'createMyRegistration', async () => {
-      const duplicate = await findDuplicate({ mobile: customer.mobile, email: customer.email, projectId });
-
-      if (duplicate) {
+      const rejectDuplicate = async (existingRegistrationId, protectedUntil) => {
         await logEvent({
-          registrationId: duplicate.registrationId,
+          registrationId: existingRegistrationId,
           eventType: 'REGISTRATION_ATTEMPT_REJECTED',
           actor: req.actorLabel,
           source: source || 'PARTNER_CRM',
           description: `Duplicate registration attempt by ${partnerId} rejected`
         });
-
         return {
           status: 'REJECTED',
           reasonCode: 'DUPLICATE_PROTECTED',
           reason: 'Customer is already registered by another partner.',
-          protectedUntil: duplicate.protectionExpiry
+          protectedUntil
         };
-      }
+      };
 
-      let customerDoc = await Customer.findOne({ mobileNormalized: normalizeMobile(customer.mobile) });
-      if (!customerDoc) {
-        const customerId = await nextId('CUST');
-        customerDoc = await Customer.create({
-          customerId,
-          name: customer.name,
-          mobile: customer.mobile,
-          email: customer.email,
-          alternateMobile: customer.alternateMobile
-        });
-      } else if (customer.alternateMobile && !customerDoc.alternateMobile) {
+      const duplicate = await findDuplicate({ mobile: customer.mobile, email: customer.email, alternateMobile: customer.alternateMobile, projectId });
+      if (duplicate) return rejectDuplicate(duplicate.registrationId, duplicate.protectionExpiry);
+
+      const customerDoc = await findOrCreateCustomer({
+        name: customer.name,
+        mobile: customer.mobile,
+        email: customer.email,
+        alternateMobile: customer.alternateMobile
+      });
+      if (customer.alternateMobile && !customerDoc.alternateMobile) {
         customerDoc.alternateMobile = customer.alternateMobile;
         await customerDoc.save();
       }
@@ -184,6 +188,11 @@ async function createMyRegistration(req, res, next) {
       const registrationId = await nextId('REG');
       const registeredAt = new Date();
       const protectionExpiry = new Date(registeredAt.getTime() + duplicateProtectionDays * 24 * 60 * 60 * 1000);
+
+      // The check above can race with a simultaneous registration of the same
+      // customer; the claim is the atomic tie-breaker - only one wins.
+      const claim = await claimProtection({ customerId: customerDoc.customerId, projectId, registrationId, partnerId, expiresAt: protectionExpiry });
+      if (!claim.claimed) return rejectDuplicate(claim.holder.registrationId, claim.holder.expiresAt);
 
       const requirementDetails = {};
       for (const field of REQUIREMENT_FIELDS) {
@@ -206,6 +215,7 @@ async function createMyRegistration(req, res, next) {
         ...requirementDetails,
         customFields: customFieldValues
       });
+
 
       await createInitialOwnership(registrationId, partnerId);
 
@@ -247,7 +257,7 @@ async function createMyRegistration(req, res, next) {
         protectionDays: duplicateProtectionDays,
         expiryDate: protectionExpiry
       };
-    });
+    }, partnerId);
 
     const httpStatus = result.status === 'REJECTED' ? 409 : 201;
     return res.status(httpStatus).json(result);
@@ -331,20 +341,35 @@ async function updateMyRegistration(req, res, next) {
       req.body[fieldKey] = check.e164;
     }
 
+    // Only fields switched on in Settings can be written (a disabled field
+    // is hidden on the form, so it must not be editable through the API).
+    const editableDefs = fieldDefs.filter((def) => def.isEnabled && req.body[def.fieldKey] !== undefined);
+    for (const def of editableDefs) {
+      const valueProblem = fieldValueProblem(def, req.body[def.fieldKey]);
+      if (valueProblem) return res.status(400).json({ status: 'ERROR', reason: valueProblem, fieldKey: def.fieldKey });
+    }
+
     // Per-field diff for the History view (section 42) - rendered as
     // "Field  old -> new" bullets, so only fields that actually changed are
     // recorded (a no-op PATCH, or re-sending an unchanged value, logs nothing).
     const changes = [];
-    for (const def of fieldDefs) {
+    const pending = {};
+    for (const def of editableDefs) {
       const value = req.body[def.fieldKey];
-      if (value === undefined) continue;
-
-      const normalized = def.dataType === 'NUMBER' && value !== '' ? Number(value) : value;
+      const normalized = (def.dataType === 'NUMBER' || def.dataType === 'CURRENCY') && value !== '' ? Number(value) : value;
       const previous = getCurrentFieldValue(def, registration, customer);
-      if (!valuesEqual(previous, normalized)) {
-        changes.push({ fieldKey: def.fieldKey, label: def.label, from: previous, to: normalized });
-      }
+      if (valuesEqual(previous, normalized)) continue;
+      changes.push({ fieldKey: def.fieldKey, label: def.label, from: previous, to: normalized });
+      pending[def.fieldKey] = normalized;
+    }
 
+    const defsByKey = Object.fromEntries(fieldDefs.map((d) => [d.fieldKey, d]));
+    const editProblem = await leadEditProblem({ registration, customer, pending, defsByKey });
+    if (editProblem) return res.status(editProblem.statusCode).json({ status: 'ERROR', reason: editProblem.reason, fieldKey: editProblem.fieldKey });
+
+    for (const [fieldKey, normalized] of Object.entries(pending)) {
+      const def = defsByKey[fieldKey];
+      const value = req.body[fieldKey];
       if (def.scope === 'customer') {
         if (customer) customer[def.fieldKey] = value;
       } else if (def.scope === 'registration') {
@@ -394,6 +419,12 @@ async function updateMyProgress(req, res, next) {
     if (req.body.subStatus !== undefined) subStatus = String(req.body.subStatus || '');
     else subStatus = stageChanged ? '' : registration.subStatus || '';
 
+    // After booking the builder is the operational owner (section 13) - the
+    // partner keeps attribution but can no longer move the lead's status.
+    if (registration.isBooked && (stageChanged || subStatus !== (registration.subStatus || ''))) {
+      return res.status(409).json({ reason: 'This lead is booked - its status is now managed by the builder', fieldKey: 'stage' });
+    }
+
     const resolved = await resolveStatus(req.partnerId, stage, subStatus);
     if (resolved.error) return res.status(400).json({ reason: resolved.error, fieldKey: resolved.status ? 'subStatus' : 'stage' });
     if (stageChanged && (!resolved.status.isActive || resolved.status.isBooking)) {
@@ -441,6 +472,10 @@ async function updateMyProgress(req, res, next) {
       if (!check.valid) return res.status(400).json({ reason: check.reason, fieldKey, code: check.code });
       incoming[fieldKey] = check.e164;
     }
+    for (const f of formDefs) {
+      const valueProblem = fieldValueProblem(f.def, incoming[f.fieldKey]);
+      if (valueProblem) return res.status(400).json({ reason: valueProblem, fieldKey: f.fieldKey });
+    }
 
     const changes = [];
     if (stageChanged) changes.push({ fieldKey: 'stage', label: 'Status', from: registration.currentStage, to: stage });
@@ -458,14 +493,25 @@ async function updateMyProgress(req, res, next) {
       changes.push({ fieldKey: 'notes', label: 'Notes', from: registration.notes || '', to: notes });
     }
     // Lead fields shown on this status's form (section 49) - same scope-
-    // aware write + per-field diff as Edit Lead.
+    // aware write + per-field diff + edit guard as Edit Lead.
+    const pending = {};
     for (const f of formDefs) {
       if (incoming[f.fieldKey] === undefined || f.fieldKey === 'notes') continue;
       const { def } = f;
       const value = incoming[f.fieldKey];
       const normalized = (def.dataType === 'NUMBER' || def.dataType === 'CURRENCY') && value !== '' ? Number(value) : value;
+      if (!valuesEqual(getCurrentFieldValue(def, registration, customer), normalized)) pending[def.fieldKey] = normalized;
+    }
+    const defsByKey = Object.fromEntries(formDefs.map((f) => [f.fieldKey, f.def]));
+    const editProblem = await leadEditProblem({ registration, customer, pending, defsByKey });
+    if (editProblem) return res.status(editProblem.statusCode).json({ reason: editProblem.reason, fieldKey: editProblem.fieldKey });
+
+    for (const f of formDefs) {
+      if (pending[f.fieldKey] === undefined) continue;
+      const { def } = f;
+      const value = incoming[f.fieldKey];
+      const normalized = pending[f.fieldKey];
       const previous = getCurrentFieldValue(def, registration, customer);
-      if (valuesEqual(previous, normalized)) continue;
       changes.push({ fieldKey: def.fieldKey, label: def.label, from: previous, to: normalized });
       if (def.scope === 'customer') {
         if (customer) customer[def.fieldKey] = value;
@@ -521,57 +567,15 @@ async function createMyBooking(req, res, next) {
     const { registration, error } = await assertOwnedRegistration(registrationId, req.partnerId);
     if (error) return res.status(error.status).json({ reason: error.reason });
 
-    const { externalEventId } = req.body;
-
-    const { replayed, result } = await withIdempotency(externalEventId, 'createMyBooking', async () => {
-      const bookingId = await nextId('BOOK');
-      await Booking.create({ bookingId, registrationId, projectId: registration.projectId, externalEventId });
-
-      await logEvent({ registrationId, eventType: 'BOOKING_COMPLETED', actor: req.actorLabel, description: 'Booking completed' });
-
-      await transferOperationalOwnershipToBuilder(registrationId);
-      registration.isBooked = true;
-      registration.currentStage = await getBookingStatusName(registration.partnerId);
-      registration.subStatus = '';
-      registration.scheduledAt = null;
-      await registration.save();
-      planNotifications(req, registration);
-
-      await logEvent({
-        registrationId,
-        eventType: 'OPERATIONAL_OWNERSHIP_TRANSFERRED',
-        actor: 'SYSTEM',
-        previousValue: registration.partnerId,
-        newValue: 'BUILDER',
-        description: 'Operational ownership transferred to Builder'
-      });
-      await logEvent({ registrationId, eventType: 'PARTNER_ATTRIBUTION_PRESERVED', actor: 'SYSTEM', newValue: registration.partnerId, description: 'Partner attribution preserved' });
-
-      const commissionId = await nextId('COMM');
-      const commission = await CommissionEligibility.create({
-        commissionId,
-        registrationId,
-        partnerId: registration.partnerId,
-        bookingId,
-        projectId: registration.projectId,
-        attributionStatus: 'ATTRIBUTED',
-        eligibilityStatus: 'ELIGIBLE'
-      });
-
-      await logEvent({ registrationId, eventType: 'COMMISSION_ELIGIBILITY_CREATED', actor: 'SYSTEM', newValue: commission.commissionId, description: 'Commission eligibility created' });
-      await logEvent({ registrationId, eventType: 'HANDOVER_COMPLETED', actor: 'SYSTEM', description: 'Handover completed' });
-
-      const customer = await Customer.findOne({ customerId: registration.customerId });
-      triggerWebhooks(registration.partnerId, 'BOOKING_COMPLETED', registration, customer).catch(() => {});
-
-      return {
-        bookingId,
-        registrationId,
-        operationalOwner: 'BUILDER',
-        partnerAttribution: registration.partnerId,
-        commissionEligibility: commission.eligibilityStatus,
-        handover: 'Completed'
-      };
+    const { replayed, result } = await completeBooking({
+      registration,
+      actorLabel: req.actorLabel,
+      externalEventId: req.body.externalEventId,
+      afterBooked: async (booked) => {
+        planNotifications(req, booked);
+        const customer = await Customer.findOne({ customerId: booked.customerId });
+        triggerWebhooks(booked.partnerId, 'BOOKING_COMPLETED', booked, customer).catch(() => {});
+      }
     });
 
     return res.status(replayed ? 200 : 201).json(result);

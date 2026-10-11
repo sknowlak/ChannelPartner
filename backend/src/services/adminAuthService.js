@@ -1,7 +1,9 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
-const JWT_SECRET = process.env.JWT_SECRET || 'change-this-in-production';
+const { getJwtSecret } = require('../config/jwtSecret');
+
+const JWT_SECRET = getJwtSecret();
 const TOKEN_TTL = process.env.ADMIN_TOKEN_TTL || '8h';
 
 async function hashPassword(plainText) {

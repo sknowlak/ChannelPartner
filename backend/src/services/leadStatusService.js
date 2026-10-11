@@ -1,5 +1,6 @@
 const LeadStatus = require('../models/LeadStatus');
 const Registration = require('../models/Registration');
+const NotificationRule = require('../models/NotificationRule');
 const { DEFAULT_LEAD_STATUSES } = require('../config/leadStatuses');
 const { nextId } = require('../utils/idGenerator');
 
@@ -156,6 +157,17 @@ async function updateStatus(partnerId, statusId, body) {
       const prev = status.subStatuses.find((s) => s.subStatusId === next.subStatusId);
       if (prev && prev.name !== next.name) renames.push({ from: prev.name, to: next.name });
     }
+    // Removing a sub-status that leads still sit in would leave them pointing
+    // at a name that no longer exists - and every later progress update that
+    // re-sends it would be rejected. Same rule as deleting a whole status.
+    const keptIds = new Set(subStatuses.map((sub) => sub.subStatusId));
+    for (const prev of status.subStatuses) {
+      if (keptIds.has(prev.subStatusId)) continue;
+      const inUse = await Registration.countDocuments({ partnerId, currentStage: oldName, subStatus: prev.name });
+      if (inUse > 0) {
+        return { error: `${inUse} lead${inUse === 1 ? ' is' : 's are'} in "${oldName} / ${prev.name}" - move ${inUse === 1 ? 'it' : 'them'} to another sub-status first` };
+      }
+    }
     status.subStatuses = subStatuses;
   }
   for (const key of ['color', 'sortOrder', 'scheduleLabel']) if (body[key] !== undefined) status[key] = body[key];
@@ -165,12 +177,18 @@ async function updateStatus(partnerId, statusId, body) {
   await applyExclusiveFlags(partnerId, statusId, body);
   await status.save();
 
-  // Leads store names, so a rename is carried onto every lead using it.
+  // Leads and notification-rule triggers store names, so a rename is
+  // carried onto both - otherwise rules on the old name silently stop firing.
   if (status.name !== oldName) {
     await Registration.updateMany({ partnerId, currentStage: oldName }, { currentStage: status.name });
+    await NotificationRule.updateMany({ partnerId, 'trigger.statusName': oldName }, { 'trigger.statusName': status.name });
   }
   for (const r of renames) {
     await Registration.updateMany({ partnerId, currentStage: status.name, subStatus: r.from }, { subStatus: r.to });
+    await NotificationRule.updateMany(
+      { partnerId, 'trigger.statusName': status.name, 'trigger.subStatusName': r.from },
+      { 'trigger.subStatusName': r.to }
+    );
   }
   return { status };
 }
@@ -182,6 +200,10 @@ async function deleteStatus(partnerId, statusId) {
   const inUse = await Registration.countDocuments({ partnerId, currentStage: status.name });
   if (inUse > 0) {
     return { error: `${inUse} lead${inUse === 1 ? ' is' : 's are'} in "${status.name}" - move ${inUse === 1 ? 'it' : 'them'} to another status, or deactivate this status instead` };
+  }
+  const rules = await NotificationRule.countDocuments({ partnerId, 'trigger.statusName': status.name });
+  if (rules > 0) {
+    return { error: `${rules} notification rule${rules === 1 ? ' is' : 's are'} triggered by "${status.name}" - change or delete ${rules === 1 ? 'it' : 'them'} first` };
   }
   await status.deleteOne();
   return { ok: true };
