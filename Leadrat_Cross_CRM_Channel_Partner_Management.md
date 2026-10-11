@@ -1694,7 +1694,7 @@ The History button's entry point (My Leads grid) and the underlying `GET /my/reg
 
 # 43. Integrations Module: Push Leads Out, Receive Leads In
 
-A new Settings sub-module ("push the lead and I can receive lead or lead progress update... send to a client") for connecting a partner's own systems to Leadrat in both directions - outbound webhooks that push lead/progress events out, and an inbound API key for the partner's own CRM/website to push leads in.
+A new Settings sub-module ("push the lead and I can receive lead or lead progress update... send to a client") for connecting a partner's own systems to Leadrat in both directions. **Section 51 extends this to work with any system** (any auth, any payload format, create-then-update, scheduled pulls, an open read/write API); this section describes the original design - outbound webhooks that push lead/progress events out, and an inbound API key for the partner's own CRM/website to push leads in.
 
 ## Outbound: customisable webhooks
 
@@ -1959,7 +1959,7 @@ A full review of backend, web, admin and mobile code found ways to bypass permis
 - **Operator stripping** (`middleware/stripOperators.js`): keys starting with `$` (and `__proto__`/`constructor`/`prototype`) are removed from every body, query and params, so `{"email":{"$regex":"^a"}}` or `?status[$ne]=x` can't become a Mongo operator.
 - Admin list filters escape regex input (no ReDoS) and coerce values to strings.
 - Unexpected (500) errors return a generic message instead of raw Mongo/stack text; `apiKeyAuth` errors are passed to the error handler; unhandled promise rejections are logged instead of crashing the process.
-- `CORS_ORIGINS` (comma-separated) restricts browser origins; `TRUST_PROXY` makes rate limiting see real client IPs behind a proxy. Request bodies are capped at 200 KB.
+- `CORS_ORIGINS` (comma-separated) restricts browser origins; `TRUST_PROXY` makes rate limiting see real client IPs behind a proxy. Request bodies are capped at 1 MB (raised from 200 KB in section 51 so receive sources can accept batches).
 - CSV exports in the web and admin apps neutralise values starting with `= + - @` (formula injection).
 
 ## New settings in `backend/.env`
@@ -1979,3 +1979,100 @@ ALLOW_PRIVATE_WEBHOOK_TARGETS=false local development only
 - A partner can re-register their own customer the moment protection expires (no cooldown).
 
 Covered by `backend/tests/securityGuards.test.js` (email normalization, SSRF address checks, operator stripping, field validation, template escaping, header masking/redaction, regex escaping, password rules and token revocation).
+
+---
+
+# 51. Universal Integrations: Any System, Both Directions
+
+Prompted by "set up my integration for universal type - last implementation not working for all types of integration. I can consume any integration API to receive and push data. My API also anyone can use, 2-way communication." Section 43 assumed one shape for everything: push = one POST/PUT/PATCH URL with static headers; receive = the sender must use Leadrat's own JSON field names and an `X-Api-Key` header; nothing could be fetched, and other systems couldn't read anything back. Those assumptions are why many integrations failed - most of all **authentication** (APIs needing OAuth2, Basic auth, a key in the URL, or signed requests). Settings → Integrations now has four tabs (`components/IntegrationTabs.jsx`): **Push**, **Receive**, **Pull** and **Your API**.
+
+## Authentication for any API (`services/httpAuthService.js`, `components/AuthEditor.jsx`)
+
+One auth block, used by push webhooks and pull sources (and, HMAC only, to verify what receive sources are sent):
+
+```text
+NONE | API_KEY (header or query string) | BEARER | BASIC
+OAUTH2  client credentials: token URL, client ID/secret, scope, audience; credentials in body or Basic header.
+        Token cached until it expires; a 401 fetches a fresh token and retries once.
+HMAC    signs the request body (sha1/sha256/sha512, hex/base64, optional "sha256=" prefix) into a chosen header.
+```
+
+Auth is applied **after** the request is logged, so tokens, keys and signatures never appear in the delivery log, and retries re-apply it fresh. Secrets are never returned by the API, not even to `MANAGE_SETTINGS` holders - lists show `••••abcd`, and sending that mask back on save means "keep the stored secret". The OAuth2 token URL goes through the same SSRF guard as every other outbound call (section 50).
+
+## Push: create once, then update the same record (`webhookService.js`, `IntegrationWebhook`)
+
+- **Methods**: POST, PUT, PATCH, GET, DELETE (GET sends no body).
+- **URL variables**: `{{placeholders}}` work in the URL too, URL-encoded (e.g. `.../leads/{{external.id}}`).
+- **Create + update mode** (`mode: CREATE_UPDATE`): the first push of a lead uses the create request; Leadrat reads the target's new record ID from the response (`responseIdPath`, e.g. `data.id`) and stores it in `IntegrationLink`. Every later event for that lead uses the **update** request (`updateUrl`, `updateMethod`, optional `updateBodyTemplate`) with `{{external.id}}` available - so updates change the same record on the other side instead of creating duplicates (the reason section 46's webhook had to be limited to `LEAD_CREATED`). In the default `SAME` mode the ID is still recorded when `responseIdPath` is set.
+- **Automatic retries**: timeouts, network errors, HTTP 429 and 5xx are retried after 1 min, 5 min, 30 min, 2 h, 6 h (`maxRetries` 0-5, default 3). A scheduler (`startRetryScheduler`, every 30 s) claims due deliveries atomically. The delivery log shows the operation (create/update) and the next retry time.
+- **Test** button per webhook: pushes the newest lead now and shows the HTTP result and the record ID read back.
+
+## Receive: any sender, any format (`IntegrationSource` kind `RECEIVE`, `integrationSourceController.js`)
+
+- Each source has its own URL, `POST /api/channel-partner/hooks/<sourceKey>`. The 40-hex-character key in the URL is the credential, so senders that can't set headers (form tools, many SaaS webhooks) work. The URL is shown only to `MANAGE_SETTINGS` holders, and **New URL** replaces it.
+- Accepts JSON, form-encoded (nested `a[b][c]=` keys) and JSON sent as `text/plain`, a single record or a batch (up to 200 per request).
+- **Sample first**: until a mapping is saved, a request is only captured as a sample (HTTP 202). The form then previews the sample, lists every field path in it, auto-maps obvious matches (name/full_name → Name, phone/phone_number → Primary Number, email, message → Notes, ...) and shows what each record would become.
+- **Optional security**: HMAC signature check on the raw body (e.g. Meta's `X-Hub-Signature-256: sha256=...`), and `GET` answers `hub.challenge` when `hub.verify_token` matches (Facebook/Meta subscription handshake).
+- Rate limit: 300 requests per minute per source.
+
+## Pull: fetch from any API on a schedule (`IntegrationSource` kind `PULL`, `pullService.js`)
+
+- GET or POST, any headers, any auth, JSON response. URL/body variables: `{{since}}` (start of the last successful run, ISO; empty the first time), `{{sinceEpoch}}`, `{{page}}`, `{{offset}}`, `{{limit}}`, `{{cursor}}`.
+- Paging: none, page number, offset, cursor read from each response (`cursorPath`), or a full next-page URL read from each response (`nextUrlPath`); `maxPages` per run (≤ 50).
+- Runs every 5 minutes to 24 hours (`startPullScheduler`, checked every minute; a lease on `nextRunAt` stops two backend instances running the same source). **Fetch sample & preview** calls the API once and imports nothing; **Run now** imports immediately. The list shows the last run's counts or error.
+
+## One mapping engine for Receive and Pull (`leadImportService.js`)
+
+- `recordsPath` - where the list of records is (`data`, `items`, `entry.0.changes`); blank = the body itself.
+- `mapping` - one row per Leadrat field: **their field** (a path like `field_data.phone_number`, dots or `[0]` for arrays) or a **fixed value**. Status and Sub-Status can be mapped too, with `statusMap` translating their values (`qualified` → `Site Visit`, case-insensitive).
+- `externalIdPath` - their record ID. Seen before (via `IntegrationLink`) → the lead is **updated** (fields through the Edit Lead handler, status through the status handler); new → **created**. Their ID also becomes the idempotency key, so the same record arriving twice at once still creates one lead.
+- `defaultCountry` - country for phone numbers sent without a code (e.g. `IN` makes `9876543210` valid).
+- Dropdown values are matched to the field's options ignoring case and spacing (`social_media` → `Social Media`); a value with no matching option is left empty with a warning, rather than failing the whole lead.
+- Imported leads only need the core fields (name, mobile): the partner's own form-only required fields are skipped (`req.integrationImport`), since a sender can't fill them in.
+- Every record goes through the same handlers the web app uses (`utils/invokeHandler.js` calls `createMyRegistration` / `updateMyRegistration` / `updateMyProgress` in-process), so duplicate protection (section 50), audit history, push webhooks and notifications all apply.
+- Every record is logged in `InboundEvent` (CREATED / UPDATED / UNCHANGED / DUPLICATE / REJECTED / FAILED, with the reason; kept 90 days) and shown as **Received Records** on the Receive and Pull tabs.
+
+## Your API: two-way access for any system (`openApiController.js`, `apiKeyAuth.js`)
+
+The API key now works as `X-Api-Key`, `Authorization: Bearer <key>`, or `?api_key=<key>` for tools that can't set headers. Requests made with it act as the account owner, since only `MANAGE_SETTINGS` holders can see the key (section 50). Limit: 600 requests per minute.
+
+```http
+POST   /api/channel-partner/integrations/leads                          create (externalReferenceId = your ID, never duplicates)
+GET    /api/channel-partner/integrations/leads?updatedSince=&stage=&externalReferenceId=&page=&limit=
+                                                                         list, oldest change first - for incremental sync
+GET    /api/channel-partner/integrations/leads/:registrationId          one lead
+PATCH  /api/channel-partner/integrations/leads/:registrationId          update fields
+POST   /api/channel-partner/integrations/leads/:registrationId/progress status / sub-status / schedule / note
+POST   /api/channel-partner/integrations/leads/:registrationId/booking  complete booking
+GET    /api/channel-partner/integrations/lead-statuses                  the partner's pipeline
+GET    /api/channel-partner/integrations/lead-fields                    fields, types, options, where each goes in a request
+GET    /api/channel-partner/integrations/subscriptions                  REST-hook subscriptions (Zapier/Make style)
+POST   /api/channel-partner/integrations/subscriptions                  {"targetUrl", "events"} - stored as a push webhook (createdVia: API)
+DELETE /api/channel-partner/integrations/subscriptions/:subscriptionId
+GET    /api/channel-partner/integrations/openapi.json                   public OpenAPI 3 document for Postman, Zapier, Make, n8n
+```
+
+The **Your API** tab shows the key, the base URL, every endpoint and copy-paste examples built from the partner's own required fields.
+
+## Settings API (logged-in partner)
+
+```http
+POST   /my/integrations/webhooks/:webhookId/test            MANAGE_SETTINGS
+GET    /my/integrations/sources                             whole team (URL, verify token and header values only with MANAGE_SETTINGS)
+POST   /my/integrations/sources                             MANAGE_SETTINGS   { kind: RECEIVE | PULL, ... }
+PATCH  /my/integrations/sources/:sourceId                   MANAGE_SETTINGS
+DELETE /my/integrations/sources/:sourceId                   MANAGE_SETTINGS   (imported leads stay; their links are removed)
+POST   /my/integrations/sources/:sourceId/regenerate-key    MANAGE_SETTINGS   (receive only)
+POST   /my/integrations/sources/:sourceId/test              MANAGE_SETTINGS   { draft?, sample? } -> { sample, records, preview, paths }
+POST   /my/integrations/sources/:sourceId/run               MANAGE_SETTINGS   (pull only)
+GET    /my/integrations/inbound-events?sourceId=&outcome=   whole team
+```
+
+## Limits
+
+- Pull and push accept JSON responses only; XML APIs can be pushed to (custom XML bodies are escaped, section 50) but not pulled from.
+- OAuth2 supports the client-credentials grant only (machine-to-machine); flows that need a person to sign in (authorization code) are not supported.
+- Pull reads up to 5 MB per page; push reads up to 64 KB of a create response to find the record ID.
+- For local development against a receiver on your own machine, set `ALLOW_PRIVATE_WEBHOOK_TARGETS=true` (section 50); webhooks, pulls and OAuth2 token URLs otherwise must be public addresses.
+
+Covered by `backend/tests/universalIntegrations.test.js` (path reading, auth application and secret masking, HMAC sign/verify, record mapping incl. dropdown matching and status maps, URL templates).

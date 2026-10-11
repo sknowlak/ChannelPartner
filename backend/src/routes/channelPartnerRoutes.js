@@ -14,6 +14,8 @@ const notificationController = require('../controllers/notificationController');
 const userFieldController = require('../controllers/userFieldController');
 const integrationController = require('../controllers/integrationController');
 const gridPreferencesController = require('../controllers/gridPreferencesController');
+const integrationSourceController = require('../controllers/integrationSourceController');
+const openApiController = require('../controllers/openApiController');
 const partnerAuth = require('../middleware/partnerAuth');
 const apiKeyAuth = require('../middleware/apiKeyAuth');
 const { requirePermission } = partnerAuth;
@@ -42,6 +44,26 @@ router.post('/duplicate-check', checkDuplicate);
 // partnerAuth does.
 router.post('/integrations/leads', apiKeyAuth, myLeadsController.createMyRegistration);
 router.post('/integrations/leads/:registrationId/progress', apiKeyAuth, myLeadsController.updateMyProgress);
+
+// The partner's open, two-way API (section 51): read leads/statuses/fields,
+// update and book leads, and subscribe other systems to lead events - all
+// with the API key. The OpenAPI document itself is public.
+router.get('/integrations/openapi.json', openApiController.openApiSpec);
+router.get('/integrations/leads', apiKeyAuth, openApiController.listLeads);
+router.get('/integrations/leads/:registrationId', apiKeyAuth, openApiController.getLead);
+router.patch('/integrations/leads/:registrationId', apiKeyAuth, myLeadsController.updateMyRegistration);
+router.post('/integrations/leads/:registrationId/booking', apiKeyAuth, myLeadsController.createMyBooking);
+router.get('/integrations/lead-statuses', apiKeyAuth, openApiController.listLeadStatusesPublic);
+router.get('/integrations/lead-fields', apiKeyAuth, openApiController.listLeadFieldsPublic);
+router.get('/integrations/subscriptions', apiKeyAuth, openApiController.listSubscriptions);
+router.post('/integrations/subscriptions', apiKeyAuth, openApiController.createSubscription);
+router.delete('/integrations/subscriptions/:subscriptionId', apiKeyAuth, openApiController.deleteSubscription);
+
+// Receive sources (section 51): any system posts leads in ITS OWN format to
+// its source URL; the secret key in the URL is the credential. GET answers
+// subscription handshakes (e.g. Facebook's hub.challenge).
+router.post('/hooks/:sourceKey', integrationSourceController.receive);
+router.get('/hooks/:sourceKey', integrationSourceController.verifyChallenge);
 
 // Channel partner self-service: register/login, then manage only your own
 // leads. See spec section 31.
@@ -125,6 +147,18 @@ router.post('/my/integrations/webhooks', partnerAuth, requirePermission(PERMISSI
 router.patch('/my/integrations/webhooks/:webhookId', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), integrationController.updateWebhook);
 router.delete('/my/integrations/webhooks/:webhookId', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), integrationController.deleteWebhook);
 router.post('/my/integrations/webhooks/:webhookId/resync', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), integrationController.resyncHandler);
+
+router.post('/my/integrations/webhooks/:webhookId/test', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), integrationController.testWebhook);
+
+// Receive & Pull sources (section 51) - same visibility rule as webhooks.
+router.get('/my/integrations/sources', partnerAuth, integrationSourceController.listSources);
+router.post('/my/integrations/sources', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), integrationSourceController.createSource);
+router.patch('/my/integrations/sources/:sourceId', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), integrationSourceController.updateSource);
+router.delete('/my/integrations/sources/:sourceId', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), integrationSourceController.deleteSource);
+router.post('/my/integrations/sources/:sourceId/regenerate-key', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), integrationSourceController.regenerateSourceKey);
+router.post('/my/integrations/sources/:sourceId/test', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), integrationSourceController.testSource);
+router.post('/my/integrations/sources/:sourceId/run', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), integrationSourceController.runSourceNow);
+router.get('/my/integrations/inbound-events', partnerAuth, integrationSourceController.listInboundEvents);
 
 router.get('/my/integrations/deliveries', partnerAuth, integrationController.listDeliveries);
 router.post('/my/integrations/deliveries/:deliveryId/retry', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), integrationController.retryDeliveryHandler);

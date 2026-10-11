@@ -1,10 +1,12 @@
 import { useEffect, useMemo, useState } from 'react';
 import {
-  createWebhook, deleteWebhook, getIntegrationApiKey, getMyProfile, listDeliveries, listLeadFields, listWebhooks,
-  regenerateIntegrationApiKey, resyncWebhook, retryDelivery, updateWebhook
+  createWebhook, deleteWebhook, getMyProfile, listDeliveries, listLeadFields, listWebhooks,
+  resyncWebhook, retryDelivery, testWebhook, updateWebhook
 } from '../api/client';
 import { PERMISSIONS } from '../utils/permissions';
 import SettingsCategories from '../components/SettingsCategories';
+import IntegrationTabs from '../components/IntegrationTabs';
+import AuthEditor from '../components/AuthEditor';
 import DeliveryDetailModal from '../components/DeliveryDetailModal';
 import FieldMappingTable from '../components/FieldMappingTable';
 import { formatDateTime } from '../utils/timezone';
@@ -18,17 +20,23 @@ const EVENT_OPTIONS = [
   { key: 'BOOKING_COMPLETED', label: 'Booking Completed' }
 ];
 const FORMATS = ['JSON', 'FORM', 'CUSTOM'];
-const METHODS = ['POST', 'PUT', 'PATCH'];
+const METHODS = ['POST', 'PUT', 'PATCH', 'GET', 'DELETE'];
+const UPDATE_METHODS = ['PUT', 'PATCH', 'POST', 'DELETE'];
 const CURL_PLACEHOLDER = [
   "curl --location 'https://client-crm.example.com/api/leads' \\",
   "--header 'API-Key: ...' \\",
   "--header 'Content-Type: application/json' \\",
   `--data-raw '{"Name": "...", "Mobile": "..."}'`
 ].join('\n');
-const initialForm = { name: '', targetUrl: '', method: 'POST', format: 'JSON', headersText: '{}', bodyTemplate: '', events: ['LEAD_CREATED'] };
+const initialForm = {
+  name: '', targetUrl: '', method: 'POST', format: 'JSON', headersText: '{}', bodyTemplate: '', events: ['LEAD_CREATED'],
+  auth: { type: 'NONE' }, mode: 'SAME', responseIdPath: '', updateUrl: '', updateMethod: 'PUT', updateBodyTemplate: '', maxRetries: 3
+};
+const AUTH_LABELS = { NONE: '', API_KEY: 'API key', BEARER: 'Bearer', BASIC: 'Basic auth', OAUTH2: 'OAuth 2.0', HMAC: 'HMAC signed' };
 
 const SYSTEM_PLACEHOLDERS = [
   { path: 'registrationId', label: 'Registration ID' },
+  { path: 'external.id', label: "Their record ID (create + update mode)" },
   { path: 'stage', label: 'Stage' },
   { path: 'isBooked', label: 'Is Booked' },
   { path: 'customer.countryCode', label: 'Country Dial Code' },
@@ -54,47 +62,9 @@ function placeholderPathFor(def) {
   return def.fieldKey;
 }
 
-// The example calls below must actually succeed when copy-pasted, for
-// whatever this partner has configured - not just the name/mobile default.
-// So the payload is built from their real required-field list (Settings >
-// Lead) rather than a hardcoded guess that only matches the out-of-the-box
-// config.
-function sampleValueFor(def) {
-  if (def.fieldKey === 'name') return 'Jane Doe';
-  if (def.fieldKey === 'mobile') return '9876543210';
-  switch (def.dataType) {
-    case 'SELECT':
-      return (def.options && def.options[0]) || 'Option';
-    case 'NUMBER':
-    case 'CURRENCY':
-      return 1000;
-    case 'DATE':
-      return new Date().toISOString().slice(0, 10);
-    case 'TEXTAREA':
-      return 'Interested in 2BHK';
-    default:
-      return `Sample ${def.label}`;
-  }
-}
-
-function buildExamplePayload(fieldDefs) {
-  const customer = { name: 'Jane Doe', mobile: '9876543210' };
-  const rest = {};
-  for (const def of fieldDefs) {
-    if (!def.isRequired || def.fieldKey === 'name' || def.fieldKey === 'mobile') continue;
-    const value = sampleValueFor(def);
-    if (def.scope === 'customer') customer[def.fieldKey] = value;
-    else rest[def.fieldKey] = value;
-  }
-  return { customer, ...rest };
-}
-
 export default function IntegrationSettings() {
   const [permissions, setPermissions] = useState([]);
   const [error, setError] = useState(null);
-
-  const [apiKeyInfo, setApiKeyInfo] = useState(null);
-  const [showKey, setShowKey] = useState(false);
 
   const [webhooks, setWebhooks] = useState(null);
   const [showForm, setShowForm] = useState(false);
@@ -115,18 +85,11 @@ export default function IntegrationSettings() {
   const canManageSettings = permissions.includes(PERMISSIONS.MANAGE_SETTINGS);
 
   const load = () => {
-    // The inbound API key acts as the whole organisation, so the server only
-    // hands it to people with MANAGE_SETTINGS - don't ask for it otherwise.
     Promise.all([getMyProfile(), listWebhooks(), listLeadFields()])
-      .then(async ([{ data: me }, { data: webhookData }, { data: fieldData }]) => {
-        const perms = me.permissions || [];
-        setPermissions(perms);
+      .then(([{ data: me }, { data: webhookData }, { data: fieldData }]) => {
+        setPermissions(me.permissions || []);
         setWebhooks(webhookData.webhooks);
         setFieldDefs(fieldData.definitions.filter((d) => d.isEnabled));
-        if (perms.includes(PERMISSIONS.MANAGE_SETTINGS)) {
-          const { data: keyData } = await getIntegrationApiKey();
-          setApiKeyInfo(keyData);
-        }
       })
       .catch((err) => setError(err.response?.data?.reason || err.message));
   };
@@ -160,20 +123,6 @@ export default function IntegrationSettings() {
   useEffect(load, []);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(loadDeliveries, [deliveryFilters]);
-
-  const copyToClipboard = (text) => {
-    navigator.clipboard?.writeText(text).catch(() => {});
-  };
-
-  const regenerateKey = async () => {
-    if (!window.confirm('Regenerate the API key? Anything using the old key will stop working immediately.')) return;
-    try {
-      const { data } = await regenerateIntegrationApiKey();
-      setApiKeyInfo((k) => ({ ...k, apiKey: data.apiKey }));
-    } catch (err) {
-      setError(err.response?.data?.reason || err.message);
-    }
-  };
 
   const startCreate = ({ fromCurl = false } = {}) => {
     setEditingId(null);
@@ -215,8 +164,12 @@ export default function IntegrationSettings() {
     setEditingId(wh.webhookId);
     setShowCurlImport(false);
     setForm({
+      ...initialForm,
       name: wh.name, targetUrl: wh.targetUrl, method: wh.method, format: wh.format,
-      headersText: JSON.stringify(wh.headers || {}, null, 2), bodyTemplate: wh.bodyTemplate || '', events: wh.events
+      headersText: JSON.stringify(wh.headers || {}, null, 2), bodyTemplate: wh.bodyTemplate || '', events: wh.events,
+      auth: wh.auth || { type: 'NONE' }, mode: wh.mode || 'SAME', responseIdPath: wh.responseIdPath || '',
+      updateUrl: wh.updateUrl || '', updateMethod: wh.updateMethod || 'PUT', updateBodyTemplate: wh.updateBodyTemplate || '',
+      maxRetries: wh.maxRetries ?? 3
     });
     setShowForm(true);
   };
@@ -244,7 +197,9 @@ export default function IntegrationSettings() {
       }
       const payload = {
         name: form.name, targetUrl: form.targetUrl, method: form.method, format: form.format,
-        headers, bodyTemplate: form.bodyTemplate, events: form.events
+        headers, bodyTemplate: form.bodyTemplate, events: form.events,
+        auth: form.auth, mode: form.mode, responseIdPath: form.responseIdPath, updateUrl: form.updateUrl,
+        updateMethod: form.updateMethod, updateBodyTemplate: form.updateBodyTemplate, maxRetries: Number(form.maxRetries)
       };
       if (editingId) await updateWebhook(editingId, payload);
       else await createWebhook(payload);
@@ -276,6 +231,18 @@ export default function IntegrationSettings() {
     }
   };
 
+  // Pushes the newest lead through this webhook right now and reports back.
+  const handleTest = async (wh) => {
+    try {
+      const { data } = await testWebhook(wh.webhookId);
+      const idNote = data.externalId ? `\nTheir record ID: ${data.externalId}` : '';
+      window.alert(`${data.status === 'SUCCESS' ? 'Success' : 'Failed'} - lead ${data.registrationId}, HTTP ${data.httpStatus ?? '-'}${data.errorMessage ? `\n${data.errorMessage}` : ''}${idNote}`);
+      loadDeliveries();
+    } catch (err) {
+      setError(err.response?.data?.reason || err.message);
+    }
+  };
+
   const handleRetry = async (deliveryId) => {
     try {
       await retryDelivery(deliveryId);
@@ -298,78 +265,19 @@ export default function IntegrationSettings() {
     }
   };
 
-  const inboundUrl = apiKeyInfo?.inboundLeadUrl || '';
-  const maskedKey = apiKeyInfo ? (showKey ? apiKeyInfo.apiKey : `${apiKeyInfo.apiKey.slice(0, 7)}${'•'.repeat(20)}`) : '';
-  // The example commands are copy-pasted as-is, so they must show whatever
-  // the key field above is currently showing - never the raw key underneath
-  // a "Hide"d mask.
-  const exampleKey = apiKeyInfo ? (showKey ? apiKeyInfo.apiKey : maskedKey) : 'YOUR_API_KEY';
-
-  const examplePayload = useMemo(() => buildExamplePayload(fieldDefs), [fieldDefs]);
-
-  const curlExample = `curl -X POST ${inboundUrl} \\\n  -H "X-Api-Key: ${exampleKey}" \\\n  -H "Content-Type: application/json" \\\n  -d '${JSON.stringify(examplePayload)}'`;
-  const formExample = (() => {
-    const parts = [];
-    for (const [k, v] of Object.entries(examplePayload.customer)) parts.push(`customer[${k}]=${encodeURIComponent(v)}`);
-    for (const [k, v] of Object.entries(examplePayload)) {
-      if (k === 'customer') continue;
-      parts.push(`${k}=${encodeURIComponent(v)}`);
-    }
-    return `curl -X POST ${inboundUrl} \\\n  -H "X-Api-Key: ${exampleKey}" \\\n  -d "${parts.join('&')}"`;
-  })();
-
   return (
     <div className="page page-wide">
       <div>
         <h1 style={{ marginBottom: '0.2rem' }}>Settings</h1>
         <p className="hint" style={{ margin: 0 }}>
-          Push leads and lead-progress updates to your own systems, or let your own systems push leads into Leadrat.
+          Connect any system: push leads out, receive or pull them in, and let other systems use your API.
         </p>
       </div>
 
       <SettingsCategories />
+      <IntegrationTabs />
 
       {error && <div className="error-box">{error}</div>}
-
-      {/* --- Inbound --- */}
-      <div className="card">
-        <h3 className="form-section-title" style={{ marginTop: 0 }}><span>Inbound - Receive Leads</span></h3>
-        <p className="hint">Give this URL and API key to your own CRM/website to push leads (and progress updates) into Leadrat.</p>
-        {webhooks && !canManageSettings && (
-          <p className="hint">Only someone with the Manage Settings permission can view the API key.</p>
-        )}
-        {apiKeyInfo && (
-          <>
-            <div className="field">
-              <label>API Key</label>
-              <div style={{ display: 'flex', gap: '0.5rem' }}>
-                <input value={maskedKey} readOnly style={{ fontFamily: 'monospace' }} />
-                <button type="button" className="secondary" onClick={() => setShowKey((s) => !s)}>{showKey ? 'Hide' : 'Show'}</button>
-                <button type="button" className="secondary" onClick={() => copyToClipboard(apiKeyInfo.apiKey)}>Copy</button>
-                {canManageSettings && <button type="button" className="danger" onClick={regenerateKey}>Regenerate</button>}
-              </div>
-            </div>
-            <div className="field">
-              <label>Inbound Lead URL</label>
-              <div style={{ display: 'flex', gap: '0.5rem' }}>
-                <input value={inboundUrl} readOnly />
-                <button type="button" className="secondary" onClick={() => copyToClipboard(inboundUrl)}>Copy</button>
-              </div>
-            </div>
-            <div className="field">
-              <label>Example - JSON (cURL)</label>
-              <textarea readOnly rows={4} value={curlExample} style={{ fontFamily: 'monospace', fontSize: '0.8rem' }} />
-            </div>
-            <div className="field">
-              <label>Example - Form fields</label>
-              <textarea readOnly rows={3} value={formExample} style={{ fontFamily: 'monospace', fontSize: '0.8rem' }} />
-            </div>
-            <p className="hint">
-              Progress updates: <code>POST {inboundUrl}/:registrationId/progress</code> with <code>{'{"stage":"Contacted"}'}</code> and the same <code>X-Api-Key</code> header.
-            </p>
-          </>
-        )}
-      </div>
 
       {/* --- Outbound Webhooks --- */}
       <div className="card">
@@ -440,9 +348,61 @@ export default function IntegrationSettings() {
               </div>
             </div>
 
+            <p className="hint" style={{ marginTop: 0 }}>
+              The URL can contain variables too, e.g. <code>{'https://crm.example.com/leads/{{external.id}}'}</code>.
+            </p>
+
             <div className="field">
               <label>Headers (JSON object)</label>
               <textarea rows={3} value={form.headersText} onChange={(e) => setForm((f) => ({ ...f, headersText: e.target.value }))} style={{ fontFamily: 'monospace', fontSize: '0.85rem' }} />
+            </div>
+
+            <AuthEditor value={form.auth} onChange={(auth) => setForm((f) => ({ ...f, auth }))} title="Authentication (how Leadrat signs in to their API)" />
+
+            <div className="card" style={{ background: '#fff', padding: '0.9rem 1rem' }}>
+              <h4 style={{ margin: '0 0 0.4rem' }}>New leads vs. updates</h4>
+              <label style={{ display: 'flex', gap: '0.4rem', alignItems: 'center', fontWeight: 400 }}>
+                <input type="radio" checked={form.mode === 'SAME'} onChange={() => setForm((f) => ({ ...f, mode: 'SAME' }))} />
+                Send every event to the same URL
+              </label>
+              <label style={{ display: 'flex', gap: '0.4rem', alignItems: 'center', fontWeight: 400 }}>
+                <input type="radio" checked={form.mode === 'CREATE_UPDATE'} onChange={() => setForm((f) => ({ ...f, mode: 'CREATE_UPDATE' }))} />
+                Create the record once, then update that same record (no duplicates on their side)
+              </label>
+              <div className="form-grid" style={{ marginTop: '0.6rem' }}>
+                <div className="field">
+                  <label>Their record ID in the response {form.mode === 'CREATE_UPDATE' ? '*' : '(optional)'}</label>
+                  <input value={form.responseIdPath} onChange={(e) => setForm((f) => ({ ...f, responseIdPath: e.target.value }))} placeholder="e.g. id, data.id, result.leadId" />
+                  <span className="hint" style={{ fontSize: '0.78rem' }}>Where the ID is in their JSON reply to the create request. Saved per lead as <code>{'{{external.id}}'}</code>.</span>
+                </div>
+                <div className="field">
+                  <label>Automatic retries</label>
+                  <select value={form.maxRetries} onChange={(e) => setForm((f) => ({ ...f, maxRetries: e.target.value }))}>
+                    {[0, 1, 2, 3, 4, 5].map((n) => <option key={n} value={n}>{n === 0 ? 'Off' : `${n} ${n === 1 ? 'retry' : 'retries'}`}</option>)}
+                  </select>
+                  <span className="hint" style={{ fontSize: '0.78rem' }}>For timeouts, HTTP 429 and 5xx errors - after 1 min, 5 min, 30 min, 2 h, 6 h.</span>
+                </div>
+              </div>
+              {form.mode === 'CREATE_UPDATE' && (
+                <div className="form-grid">
+                  <div className="field">
+                    <label>Update URL *</label>
+                    <input value={form.updateUrl} onChange={(e) => setForm((f) => ({ ...f, updateUrl: e.target.value }))} placeholder="https://crm.example.com/leads/{{external.id}}" />
+                  </div>
+                  <div className="field">
+                    <label>Update method</label>
+                    <select value={form.updateMethod} onChange={(e) => setForm((f) => ({ ...f, updateMethod: e.target.value }))}>
+                      {UPDATE_METHODS.map((m) => <option key={m} value={m}>{m}</option>)}
+                    </select>
+                  </div>
+                  {form.format === 'CUSTOM' && (
+                    <div className="field" style={{ gridColumn: '1 / -1' }}>
+                      <label>Update body (blank = same as create)</label>
+                      <textarea rows={4} value={form.updateBodyTemplate} onChange={(e) => setForm((f) => ({ ...f, updateBodyTemplate: e.target.value }))} style={{ fontFamily: 'monospace', fontSize: '0.85rem' }} />
+                    </div>
+                  )}
+                </div>
+              )}
             </div>
 
             <div className="info-box">
@@ -517,7 +477,14 @@ export default function IntegrationSettings() {
             {webhooks && webhooks.map((wh) => (
               <tr key={wh.webhookId}>
                 <td className="primary-cell">{wh.name}</td>
-                <td className="secondary-cell">{wh.method} {wh.targetUrl}</td>
+                <td className="secondary-cell">
+                  {wh.method} {wh.targetUrl}
+                  {(AUTH_LABELS[wh.auth?.type] || wh.mode === 'CREATE_UPDATE' || wh.createdVia === 'API') && (
+                    <div style={{ fontSize: '0.75rem', marginTop: '0.2rem' }}>
+                      {[AUTH_LABELS[wh.auth?.type], wh.mode === 'CREATE_UPDATE' && 'create + update', wh.createdVia === 'API' && 'subscribed via API'].filter(Boolean).join(' · ')}
+                    </div>
+                  )}
+                </td>
                 <td>{wh.format}</td>
                 <td className="secondary-cell">{wh.events.join(', ')}</td>
                 <td>
@@ -529,6 +496,7 @@ export default function IntegrationSettings() {
                 {canManageSettings && (
                   <td>
                     <button className="secondary" style={{ marginRight: '0.4rem' }} onClick={() => startEdit(wh)}>Edit</button>
+                    <button className="secondary" style={{ marginRight: '0.4rem' }} onClick={() => handleTest(wh)}>Test</button>
                     <button className="secondary" style={{ marginRight: '0.4rem' }} onClick={() => { setResyncTarget(wh); setResyncRangeState({ from: '', to: '' }); }}>Sync</button>
                     <button className="danger" onClick={() => remove(wh)}>Delete</button>
                   </td>
@@ -609,11 +577,14 @@ export default function IntegrationSettings() {
                   <tr key={d.deliveryId}>
                     <td className="secondary-cell">{formatDateTime(d.createdAt)}</td>
                     <td>{wh ? wh.name : d.webhookId}</td>
-                    <td>{d.eventType}</td>
+                    <td>{d.eventType}{d.operation && d.operation !== 'SEND' ? ` (${d.operation.toLowerCase()})` : ''}</td>
                     <td className="secondary-cell">{d.registrationId}</td>
                     <td><span className={`badge ${d.status === 'SUCCESS' ? 'accepted' : 'rejected'}`}>{d.status === 'SUCCESS' ? 'Pass' : 'Fail'}</span></td>
                     <td>{d.httpStatus || '-'}</td>
-                    <td className="secondary-cell" title={d.errorMessage}>{d.errorMessage ? d.errorMessage.slice(0, 40) : '-'}</td>
+                    <td className="secondary-cell" title={d.errorMessage}>
+                      {d.errorMessage ? d.errorMessage.slice(0, 40) : '-'}
+                      {d.nextRetryAt && <div style={{ fontSize: '0.75rem' }}>Retrying {formatDateTime(d.nextRetryAt)}</div>}
+                    </td>
                     <td>
                       <button className="secondary" style={{ marginRight: '0.4rem' }} onClick={() => setViewingDelivery(d)}>View</button>
                       {canManageSettings && d.status === 'FAILED' && (
