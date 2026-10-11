@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { createPartner, listFieldDefinitions, listPartners } from '../api/client';
 import PartnerForm from '../components/PartnerForm';
+import { csvCell } from '../utils/csv';
 
 const EMPTY_FORM = { customFields: {} };
 const initialFilters = { name: '', city: '', status: '', kycStatus: '', createdFrom: '', createdTo: '' };
@@ -56,7 +57,7 @@ export default function Partners() {
   const exportCsv = () => {
     const header = ['Partner ID', 'Name', 'Status', 'KYC', 'City', 'Email'];
     const rows = partners.map((p) => [p.partnerId, p.name, p.status, p.kycStatus, p.city || '', p.email]);
-    const csv = [header, ...rows].map((r) => r.map((v) => `"${String(v).replace(/"/g, '""')}"`).join(',')).join('\n');
+    const csv = [header, ...rows].map((r) => r.map(csvCell).join(',')).join('\n');
     const blob = new Blob([csv], { type: 'text/csv' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');

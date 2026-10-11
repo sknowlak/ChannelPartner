@@ -82,7 +82,11 @@ export default function EditTeamMember() {
 
     setBusy(true);
     try {
-      const payload = { roleId, status };
+      // Only send role/status when they actually changed - the server refuses
+      // role changes without MANAGE_ROLES and any change to your own role/status.
+      const payload = {};
+      if (roleId !== member.roleId) payload.roleId = roleId;
+      if (status !== member.status) payload.status = status;
       for (const def of fieldDefs) {
         const val = values[def.fieldKey];
         if (def.fieldKey === 'password') {
@@ -120,6 +124,16 @@ export default function EditTeamMember() {
     );
   }
 
+  // Mirrors the server rules (teamController): you can't change your own
+  // role or status, changing a role needs MANAGE_ROLES, and you can only
+  // hand out a role whose permissions you hold yourself.
+  const isSelf = partner?.memberId === memberId;
+  const canAssignRoles = permissions.includes(PERMISSIONS.MANAGE_ROLES) && !isSelf;
+  const withinReach = (r) => r.permissions.every((p) => permissions.includes(p));
+  const pickRole = (r) => {
+    if (canAssignRoles && withinReach(r)) setRoleId(r.roleId);
+  };
+
   return (
     <div className="page page-wide">
       <h1>Edit User</h1>
@@ -146,7 +160,7 @@ export default function EditTeamMember() {
               {group === 'Preferences' && (
                 <div className="field">
                   <label>Status</label>
-                  <select value={status} onChange={(e) => setStatus(e.target.value)}>
+                  <select value={status} onChange={(e) => setStatus(e.target.value)} disabled={isSelf}>
                     <option value="ACTIVE">ACTIVE</option>
                     <option value="INACTIVE">INACTIVE</option>
                   </select>
@@ -157,15 +171,20 @@ export default function EditTeamMember() {
 
           <div>
             <h3 className="form-section-title"><span>Role &amp; Permissions</span></h3>
+            {isSelf && <p className="hint">You can't change your own role or status.</p>}
+            {!isSelf && !permissions.includes(PERMISSIONS.MANAGE_ROLES) && (
+              <p className="hint">Changing a member's role needs the Manage Roles permission.</p>
+            )}
             <div className="role-picker">
               {roles.map((r) => (
                 <div
                   key={r.roleId}
                   className={`role-picker-item ${roleId === r.roleId ? 'selected' : ''}`}
-                  onClick={() => setRoleId(r.roleId)}
+                  style={canAssignRoles && withinReach(r) ? undefined : { opacity: roleId === r.roleId ? 1 : 0.5, cursor: 'not-allowed' }}
+                  onClick={() => pickRole(r)}
                 >
                   <div className="role-name">
-                    <input type="radio" checked={roleId === r.roleId} onChange={() => setRoleId(r.roleId)} />
+                    <input type="radio" checked={roleId === r.roleId} onChange={() => pickRole(r)} disabled={!canAssignRoles || !withinReach(r)} />
                     {r.name}
                   </div>
                   <div className="role-perms">

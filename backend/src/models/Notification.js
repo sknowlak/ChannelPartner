@@ -19,5 +19,7 @@ const notificationSchema = new mongoose.Schema(
 );
 
 notificationSchema.index({ partnerId: 1, userId: 1, createdAt: -1 });
+// Bell items older than 180 days are removed automatically.
+notificationSchema.index({ createdAt: 1 }, { expireAfterSeconds: 180 * 24 * 60 * 60 });
 
 module.exports = mongoose.model('Notification', notificationSchema);

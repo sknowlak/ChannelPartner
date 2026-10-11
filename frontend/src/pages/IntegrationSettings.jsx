@@ -115,12 +115,18 @@ export default function IntegrationSettings() {
   const canManageSettings = permissions.includes(PERMISSIONS.MANAGE_SETTINGS);
 
   const load = () => {
-    Promise.all([getMyProfile(), getIntegrationApiKey(), listWebhooks(), listLeadFields()])
-      .then(([{ data: me }, { data: keyData }, { data: webhookData }, { data: fieldData }]) => {
-        setPermissions(me.permissions || []);
-        setApiKeyInfo(keyData);
+    // The inbound API key acts as the whole organisation, so the server only
+    // hands it to people with MANAGE_SETTINGS - don't ask for it otherwise.
+    Promise.all([getMyProfile(), listWebhooks(), listLeadFields()])
+      .then(async ([{ data: me }, { data: webhookData }, { data: fieldData }]) => {
+        const perms = me.permissions || [];
+        setPermissions(perms);
         setWebhooks(webhookData.webhooks);
         setFieldDefs(fieldData.definitions.filter((d) => d.isEnabled));
+        if (perms.includes(PERMISSIONS.MANAGE_SETTINGS)) {
+          const { data: keyData } = await getIntegrationApiKey();
+          setApiKeyInfo(keyData);
+        }
       })
       .catch((err) => setError(err.response?.data?.reason || err.message));
   };
@@ -282,7 +288,9 @@ export default function IntegrationSettings() {
   const handleResync = async () => {
     try {
       const { data } = await resyncWebhook(resyncTarget.webhookId, resyncRange);
-      window.alert(`Resync complete: ${data.total} lead(s) pushed.`);
+      window.alert(data.truncated
+        ? `Resync pushed the first ${data.total} of ${data.matching} lead(s) (limit ${data.limit} per run). Narrow the date range to push the rest.`
+        : `Resync complete: ${data.total} lead(s) pushed.`);
       setResyncTarget(null);
       loadDeliveries();
     } catch (err) {
@@ -327,6 +335,9 @@ export default function IntegrationSettings() {
       <div className="card">
         <h3 className="form-section-title" style={{ marginTop: 0 }}><span>Inbound - Receive Leads</span></h3>
         <p className="hint">Give this URL and API key to your own CRM/website to push leads (and progress updates) into Leadrat.</p>
+        {webhooks && !canManageSettings && (
+          <p className="hint">Only someone with the Manage Settings permission can view the API key.</p>
+        )}
         {apiKeyInfo && (
           <>
             <div className="field">

@@ -1719,11 +1719,11 @@ Two recovery paths, both in `webhookService.js`:
 
 ## Inbound: "I can receive lead[s]"
 
-Every partner gets an `apiKey` (generated at registration; self-healing for partners who existed before this feature, the same pattern as `ensureBaseFields`). A new `apiKeyAuth` middleware authenticates via `X-Api-Key` instead of a login session, setting `req.partnerId`/`req.actorLabel` the same way `partnerAuth` does - so `POST /api/channel-partner/integrations/leads` and `POST /api/channel-partner/integrations/leads/:registrationId/progress` reuse `myLeadsController.createMyRegistration`/`updateMyProgress` completely unchanged; those handlers never cared how identity was established, only that `req.partnerId`/`req.actorLabel` are set. The Integrations settings page shows the key (masked, with show/copy/regenerate) alongside ready-to-copy JSON and Form request examples.
+Every partner gets an `apiKey` (generated at registration; self-healing for partners who existed before this feature, the same pattern as `ensureBaseFields`). A new `apiKeyAuth` middleware authenticates via `X-Api-Key` instead of a login session, setting `req.partnerId`/`req.actorLabel` the same way `partnerAuth` does - so `POST /api/channel-partner/integrations/leads` and `POST /api/channel-partner/integrations/leads/:registrationId/progress` reuse `myLeadsController.createMyRegistration`/`updateMyProgress` completely unchanged; those handlers never cared how identity was established, only that `req.partnerId`/`req.actorLabel` are set. The Integrations settings page shows the key (masked, with show/copy/regenerate) alongside ready-to-copy JSON and Form request examples - only to holders of `MANAGE_SETTINGS`, since the key acts as the whole organisation (section 50).
 
 ## Where it lives
 
-Settings gained a third tab, **Integrations** (`IntegrationSettings.jsx`), alongside Lead and User - the same "one more category tab" extensibility the Settings hub was built for (section 38). Read access (viewing webhooks/deliveries/the API key) is open to the whole team; creating/editing/deleting webhooks, regenerating the API key, retrying a delivery, and resyncing all require `MANAGE_SETTINGS`, consistent with every other Settings mutation in the app.
+Settings gained a third tab, **Integrations** (`IntegrationSettings.jsx`), alongside Lead and User - the same "one more category tab" extensibility the Settings hub was built for (section 38). Read access to webhooks and deliveries is open to the whole team, with credential-like header values masked for anyone without `MANAGE_SETTINGS`; viewing the API key, creating/editing/deleting webhooks, regenerating the API key, retrying a delivery, and resyncing all require `MANAGE_SETTINGS` (section 50).
 
 ## What Didn't Change
 
@@ -1882,7 +1882,7 @@ The date & time input is interpreted in the user's **profile timezone** (`toZone
 
 - **Rule**: trigger (status, optional sub-status; blank = any), timing (`IMMEDIATE` / `BEFORE` / `AT` / `AFTER` + amount + unit MINUTES to YEARS), recipients (`assignedUser`, `owner`, `updatedBy`, `roleIds[]`, `userIds[]`, any combination; the owner counts as holding the Super Admin role), channels (`inApp`, `email`, `webhook` + URL/headers), content (`title`, `message` templates).
 - **Planning** (`planForStatusChange`, called after every status/schedule change, lead creation and booking): cancels the lead's still-PENDING jobs (they belonged to the old status/time) and creates a `NotificationJob` per matching rule with its `fireAt`. Schedule-based rules on a lead with no schedule aren't planned; a before/at reminder whose scheduled time has already passed is recorded as SKIPPED rather than fired late. The job snapshots who made the change, so "person who updated it" means the person at trigger time.
-- **Scheduler**: `startScheduler()` (from `server.js`) runs every 30 s. Jobs are claimed atomically (`PENDING` to `PROCESSING`) so overlapping runs can't double-send; jobs left PROCESSING by a crash are re-queued on start. Jobs due immediately are processed right away instead of waiting for a tick.
+- **Scheduler**: `startScheduler()` (from `server.js`) runs every 30 s. Jobs are claimed atomically (`PENDING` to `PROCESSING`) so overlapping runs can't double-send; jobs left PROCESSING for over 5 minutes (a crashed run) are re-queued. Up to 10 jobs are delivered in parallel so one organisation's slow webhook can't hold up everyone else's reminders (section 50). Jobs due immediately are processed right away instead of waiting for a tick.
 - **Delivery**: recipients are resolved at fire time (current assignee), and **inactive users never receive anything**. In-app creates a `Notification` per recipient. Email uses `nodemailer` to each recipient's address, only when `SMTP_*` is set in `backend/.env` (otherwise logged as SKIPPED with the reason). Webhook sends one JSON POST per job (`event: LEAD_NOTIFICATION`, title, message, recipients with name/email/mobile, full lead payload) for a WhatsApp/SMS provider to fan out. Every channel/recipient outcome is stored on the job.
 - **Content variables**: everything a webhook template can use (`{{customer.name}}`, `{{budgetMax}}`, `{{customFields.x}}`, ...) plus `{{status}}`, `{{subStatus}}`, `{{schedule.at}}` (in the recipient's timezone), `{{assignedTo.name}}`, `{{updatedBy.name}}`, `{{recipient.name}}`. The editor has insert-variable chips and a live preview.
 - **Settings UI** (`NotificationSettings.jsx`): rule list with enable toggle, Edit, **Test** (renders against a real lead and sends to your own bell only), Delete (cancels its pending jobs), and a **Scheduled & Sent** log of jobs with per-channel results. It warns when a before/at/after rule targets a status that never asks for a date & time.
@@ -1895,7 +1895,7 @@ GET    /my/lead-statuses                       whole team
 POST   /my/lead-statuses                       MANAGE_SETTINGS
 PATCH  /my/lead-statuses/:statusId             MANAGE_SETTINGS (rename cascades to leads)
 DELETE /my/lead-statuses/:statusId             MANAGE_SETTINGS (refused while leads use it)
-GET    /my/notification-rules                  whole team
+GET    /my/notification-rules                  whole team (webhook header values masked without MANAGE_SETTINGS)
 POST   /my/notification-rules                  MANAGE_SETTINGS
 PATCH  /my/notification-rules/:ruleId          MANAGE_SETTINGS
 DELETE /my/notification-rules/:ruleId          MANAGE_SETTINGS
@@ -1908,8 +1908,74 @@ GET    /registrations/:id/statuses             public (mobile app)
 
 ## Limits
 
-- Removing a sub-status doesn't rewrite leads already in it (the lead keeps the old name until its status next changes).
+- Removing a sub-status that leads are still in is refused (move them first), the same as deleting a status. Renaming a status or sub-status also renames it in notification-rule triggers; deleting a status that a rule triggers on is refused (section 50).
 - The unauthenticated `/registrations/:id/progress` (mobile, demo) validates the status name but doesn't enforce schedule/mandatory fields; those apply to the authenticated status form.
 - Reminders fire within about 30 s of their time (scheduler interval).
 
 Covered by `backend/tests/notificationRules.test.js` (fire-time maths incl. months/years; recipient combinations; inactive exclusion) and `frontend/src/utils/timezone.test.js`.
+
+---
+
+# 50. Security Hardening: Closing the Loopholes Found in Review
+
+A full review of backend, web, admin and mobile code found ways to bypass permissions, take over another partner's protected customers, double-book leads, and make the server call internal addresses. This section records what was fixed and the rules the code now enforces. Everything below is server-side; the UI only mirrors it.
+
+## Accounts, sessions and roles
+
+- **JWT secret is mandatory** (`src/config/jwtSecret.js`): the server refuses to start if `JWT_SECRET` is missing, a known default, or under 32 characters. The old `'change-this-in-production'` fallback let anyone forge admin or partner tokens on a misconfigured deployment.
+- **No privilege escalation through Manage Team** (`teamController.js`): a manager can only create, edit, reset the password of, deactivate or remove members whose role has no permissions the manager lacks, and can only assign such roles. Changing an existing member's role needs `MANAGE_ROLES` (as section 34 always said). Nobody can change their own role or status, or remove themselves. Previously an Admin (Leads + Team) could make themselves Super Admin.
+- **No self-granting through Manage Roles** (`roleService.js`): you can't edit the role you hold, edit or delete a role with permissions you lack, or grant permissions you don't have.
+- **Passwords**: one rule (8+ characters) everywhere a password is set. Changing your own password requires the current password. Every password change (yours, or a reset by a manager) sets `passwordChangedAt`, and `partnerAuth` rejects tokens issued before it - the response carries a fresh token so the current session continues.
+- **Login**: failed attempts are rate-limited per IP (20) and per username (8) per 15 minutes (`middleware/rateLimit.js`, in-memory). The password is checked before account status, so "deactivated" no longer reveals which usernames exist. Self-signup also checks team-member usernames, so a stranger can't take an existing member's username and lock them out.
+- **Admins**: `adminAuth` re-reads the admin on every request, so deactivation takes effect immediately. Creating partners, editing field definitions and changing business-rule settings now need `SUPER_ADMIN`.
+
+## Duplicate protection and ownership
+
+- **Atomic protection** (`RegistrationClaim`, `duplicateService.claimProtection`): the duplicate check was check-then-insert, so two simultaneous registrations of the same customer + project could both be accepted. A unique claim per customer + project is now taken before the registration is saved; only one request wins.
+- **Better matching**: emails match on a normalized key (trimmed, lowercased, `+tag` removed, Gmail dots ignored), and a customer's alternate number is matched against both primary and alternate numbers.
+- **Edits can't steal customers** (`services/leadEditGuards.js`): contact details on a customer that another partner also has a lead for are locked (they live on the shared Customer record, so editing them rewrote the other partner's lead). Changing a lead's mobile/email to another protected customer, or moving a lead into a project where someone else holds protection, is refused. Disabled fields can't be written through the API.
+- **Field values are validated** (`utils/fieldValues.js`): type (number, date, list, ...), SELECT options, and size limits. Nested objects are refused.
+- **Admin overrides stay consistent**: releasing protection also releases the claim; reassigning a lead checks the new partner exists and is active, and moves working ownership, commission attribution and the claim with it.
+- **Settings are validated**: protection days must be 1-3650 and match fields a non-empty subset of mobile/email (an empty list used to switch protection off).
+
+## Booking and commission
+
+- **One booking per lead** (`services/bookingService.js`, shared by both booking routes): an atomic `isBooked` gate plus unique indexes on `Booking.registrationId` and `CommissionEligibility.registrationId`. Rejected leads can't be booked, and neither can a lead whose protection expired after another partner registered the same customer.
+- **After booking** the partner can't change the lead's status, contact details or project (the builder is the operational owner, section 13).
+- **Idempotency claims the key first** (`idempotencyService.js`): two copies of the same event arriving together no longer both run. Keys are scoped per partner, so one partner can't pre-submit another's predictable reference ID.
+- Leads with no project can now be booked (`projectId` was wrongly required on Booking/Commission).
+
+## Integrations and notifications
+
+- **SSRF guard** (`utils/outboundUrl.js`): webhook and notification-rule URLs must be http(s) and resolve only to public addresses (no localhost, private ranges, link-local/cloud metadata). Checked when saved and again before every send; redirects are not followed. `ALLOW_PRIVATE_WEBHOOK_TARGETS=true` relaxes this for local development only.
+- **Secrets**: viewing the inbound API key needs `MANAGE_SETTINGS` (it acts as the whole organisation and bypasses per-member permissions). Credential-like header values (`Authorization`, `*key*`, `*token*`, ...) are masked in webhook/rule lists for anyone without `MANAGE_SETTINGS`, and are stored redacted in the delivery log (a retry fills them back in from the live webhook). Login responses no longer include the API key, and the web app caches only display fields in `localStorage` (not bank/KYC details).
+- **Header validation**: names must be valid, values single-line (no header injection), at most 30.
+- **Template escaping**: CUSTOM bodies with a form-urlencoded or XML content type now URL-encode / XML-escape values, so lead text can't inject extra fields.
+- **Bounded work**: webhook responses are read up to 2 KB; resync is capped at 500 leads per run, 5 at a time, one run per webhook; notification rules capped at 50 per partner; SMTP has 10 s timeouts.
+- **Housekeeping**: compound index for the scheduler's polling query; TTL clean-up of webhook deliveries (90 days), processed notification jobs (90 days) and bell notifications (180 days).
+
+## Request handling
+
+- **Operator stripping** (`middleware/stripOperators.js`): keys starting with `$` (and `__proto__`/`constructor`/`prototype`) are removed from every body, query and params, so `{"email":{"$regex":"^a"}}` or `?status[$ne]=x` can't become a Mongo operator.
+- Admin list filters escape regex input (no ReDoS) and coerce values to strings.
+- Unexpected (500) errors return a generic message instead of raw Mongo/stack text; `apiKeyAuth` errors are passed to the error handler; unhandled promise rejections are logged instead of crashing the process.
+- `CORS_ORIGINS` (comma-separated) restricts browser origins; `TRUST_PROXY` makes rate limiting see real client IPs behind a proxy. Request bodies are capped at 200 KB.
+- CSV exports in the web and admin apps neutralise values starting with `= + - @` (formula injection).
+
+## New settings in `backend/.env`
+
+```text
+JWT_SECRET=                         required, 32+ random characters
+CORS_ORIGINS=                       optional allowlist for browsers
+TRUST_PROXY=                        optional, set behind a reverse proxy
+ALLOW_PRIVATE_WEBHOOK_TARGETS=false local development only
+```
+
+## Still open
+
+- The original `/api/channel-partner/registrations*` and `/duplicate-check` routes (sections 6 and 17) are still unauthenticated by design - the mobile app, the simulated-CRM demo and the builder pages (which have no login) use them. Anyone can read customer details by registration ID, register as any partner, change stages and book leads through them. The rules above now apply there too (no double booking, no booking a superseded lead, inactive partners refused, no setting the booking status as a plain stage), but the routes themselves still need a credential.
+- Customer contact details are still stored once per phone number and shared across partners: a partner who registers an existing number sees the name/email the first partner saved.
+- The mobile app talks to a plain `http://` LAN address set in `mobile/app.json`.
+- A partner can re-register their own customer the moment protection expires (no cooldown).
+
+Covered by `backend/tests/securityGuards.test.js` (email normalization, SSRF address checks, operator stripping, field validation, template escaping, header masking/redaction, regex escaping, password rules and token revocation).

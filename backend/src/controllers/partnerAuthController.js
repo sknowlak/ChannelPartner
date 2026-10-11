@@ -2,13 +2,14 @@ const Partner = require('../models/Partner');
 const TeamMember = require('../models/TeamMember');
 const Role = require('../models/Role');
 const { nextId } = require('../utils/idGenerator');
-const { hashPassword, verifyPassword, issueToken } = require('../services/partnerAuthService');
+const { hashPassword, verifyPassword, issueToken, passwordProblem } = require('../services/partnerAuthService');
 const { logEvent } = require('../services/auditService');
 const { ensureDefaultRoles, resolvePermissions } = require('../services/roleService');
 const { ensureBaseFields: ensureBaseLeadFields } = require('../services/leadFieldDefinitionService');
 const { ensureBaseFields: ensureBaseUserFields } = require('../services/userFieldDefinitionService');
 const { generateApiKey } = require('../utils/apiKey');
 const { validateMobile } = require('../utils/phone');
+const { isValidEmail } = require('../utils/email');
 
 // Fields a partner may set about themselves during self-registration or a
 // later profile update. Deliberately excludes admin/builder-controlled
@@ -22,10 +23,29 @@ const SELF_SERVICE_FIELDS = [
   'partnerCategory', 'operatingCities', 'operatingStates', 'yearsOfExperience', 'numberOfSalesAgents'
 ];
 
+// What a login/profile response may carry back to the browser - which
+// keeps it in localStorage. The Integrations API key is excluded (it has its
+// own MANAGE_SETTINGS-gated endpoint), as is the password-change timestamp.
 function toSafeObject(doc) {
   const obj = doc.toObject();
   delete obj.passwordHash;
+  delete obj.passwordChangedAt;
+  delete obj.apiKey;
   return obj;
+}
+
+// Every password change after signup must prove the current password, so a
+// stolen session token alone can't be turned into a permanent lockout.
+async function applyPasswordChange(account, { password, currentPassword }) {
+  if (!currentPassword || !(await verifyPassword(currentPassword, account.passwordHash))) {
+    return { status: 400, body: { reason: 'Current password is incorrect', fieldKey: 'currentPassword' } };
+  }
+  const problem = passwordProblem(password);
+  if (problem) return { status: 400, body: { reason: problem, fieldKey: 'password' } };
+
+  account.passwordHash = await hashPassword(password);
+  account.passwordChangedAt = new Date();
+  return null;
 }
 
 // POST /api/channel-partner/partners/register
@@ -39,9 +59,22 @@ async function register(req, res, next) {
     if (!name || !mobile || !email || !username || !password) {
       return res.status(400).json({ reason: 'name, mobile, email, username and password are required' });
     }
-    if (password.length < 8) {
-      return res.status(400).json({ reason: 'Password must be at least 8 characters' });
+    const problem = passwordProblem(password);
+    if (problem) return res.status(400).json({ reason: problem, fieldKey: 'password' });
+    if (!isValidEmail(email)) return res.status(400).json({ reason: 'Enter a valid email address', fieldKey: 'email' });
+
+    // Usernames share one login namespace across owners and team members
+    // (login tries Partner first) - a signup reusing a member's username
+    // would silently lock that member out of their account.
+    const lowerUsername = String(username).toLowerCase();
+    const [existingPartner, existingMember] = await Promise.all([
+      Partner.findOne({ username: lowerUsername }),
+      TeamMember.findOne({ username: lowerUsername })
+    ]);
+    if (existingPartner || existingMember) {
+      return res.status(409).json({ reason: 'That username is already taken', fieldKey: 'username' });
     }
+
     const mobileCheck = validateMobile(mobile);
     if (!mobileCheck.valid) return res.status(400).json({ reason: mobileCheck.reason, fieldKey: 'mobile', code: mobileCheck.code });
 
@@ -53,8 +86,8 @@ async function register(req, res, next) {
       partnerCode,
       name,
       mobile: mobileCheck.e164,
-      email,
-      username: username.toLowerCase(),
+      email: email.trim(),
+      username: lowerUsername,
       passwordHash: await hashPassword(password),
       timezone: timezone || 'UTC',
       currency: currency || 'USD',
@@ -109,13 +142,15 @@ async function login(req, res, next) {
     const { username, password } = req.body;
     if (!username || !password) return res.status(400).json({ reason: 'username and password are required' });
 
-    const lowerUsername = username.toLowerCase();
+    // Password is always checked before account status, so the
+    // "deactivated" message can't be used to probe which usernames exist.
+    const lowerUsername = String(username).toLowerCase();
     const partner = await Partner.findOne({ username: lowerUsername });
 
     if (partner) {
-      if (partner.status !== 'ACTIVE') return res.status(403).json({ reason: 'This partner account is deactivated' });
-      const valid = await verifyPassword(password, partner.passwordHash);
+      const valid = await verifyPassword(String(password), partner.passwordHash);
       if (!valid) return res.status(401).json({ reason: 'Invalid credentials' });
+      if (partner.status !== 'ACTIVE') return res.status(403).json({ reason: 'This partner account is deactivated' });
 
       partner.lastLoginAt = new Date();
       await partner.save();
@@ -128,9 +163,9 @@ async function login(req, res, next) {
 
     const member = await TeamMember.findOne({ username: lowerUsername });
     if (member) {
-      if (member.status !== 'ACTIVE') return res.status(403).json({ reason: 'This team member account is deactivated' });
-      const valid = await verifyPassword(password, member.passwordHash);
+      const valid = await verifyPassword(String(password), member.passwordHash);
       if (!valid) return res.status(401).json({ reason: 'Invalid credentials' });
+      if (member.status !== 'ACTIVE') return res.status(403).json({ reason: 'This team member account is deactivated' });
 
       const ownerPartner = await Partner.findOne({ partnerId: member.partnerId });
       if (!ownerPartner || ownerPartner.status !== 'ACTIVE') {
@@ -192,6 +227,13 @@ async function updateMyProfile(req, res, next) {
       if (!member) return res.status(404).json({ reason: 'Team member not found' });
 
       const { name, mobile, email, timezone, password } = req.body;
+      if (password) {
+        const failure = await applyPasswordChange(member, req.body);
+        if (failure) return res.status(failure.status).json(failure.body);
+      }
+      if (email !== undefined && email !== '' && !isValidEmail(email)) {
+        return res.status(400).json({ reason: 'Enter a valid email address', fieldKey: 'email' });
+      }
       if (name !== undefined) member.name = name;
       if (mobile !== undefined) {
         const check = validateMobile(mobile);
@@ -200,16 +242,25 @@ async function updateMyProfile(req, res, next) {
       }
       if (email !== undefined) member.email = email;
       if (timezone !== undefined) member.timezone = timezone;
-      if (password) member.passwordHash = await hashPassword(password);
 
       await member.save();
-      return res.json({ role: 'MEMBER', profile: toSafeObject(member) });
+      // A password change revokes every older token, including the one this
+      // request came in on - hand back a fresh one so this session continues.
+      const token = password ? issueToken({ partnerId: member.partnerId, username: member.username }) : undefined;
+      return res.json({ role: 'MEMBER', profile: toSafeObject(member), token });
     }
 
     const partner = await Partner.findOne({ partnerId: req.partnerId });
     if (!partner) return res.status(404).json({ reason: 'Partner not found' });
 
     const { name, mobile, email, timezone, currency, password } = req.body;
+    if (password) {
+      const failure = await applyPasswordChange(partner, req.body);
+      if (failure) return res.status(failure.status).json(failure.body);
+    }
+    if (email !== undefined && !isValidEmail(email)) {
+      return res.status(400).json({ reason: 'Enter a valid email address', fieldKey: 'email' });
+    }
     if (name !== undefined) partner.name = name;
     if (mobile !== undefined) {
       const check = validateMobile(mobile);
@@ -219,7 +270,6 @@ async function updateMyProfile(req, res, next) {
     if (email !== undefined) partner.email = email;
     if (timezone !== undefined) partner.timezone = timezone;
     if (currency !== undefined) partner.currency = currency;
-    if (password) partner.passwordHash = await hashPassword(password);
     for (const field of SELF_SERVICE_FIELDS) {
       if (req.body[field] !== undefined) partner[field] = req.body[field];
     }
@@ -233,7 +283,8 @@ async function updateMyProfile(req, res, next) {
       description: 'Partner updated their own profile'
     });
 
-    return res.json({ role: 'OWNER', profile: toSafeObject(partner) });
+    const token = password ? issueToken({ partnerId: partner.partnerId, username: partner.username }) : undefined;
+    return res.json({ role: 'OWNER', profile: toSafeObject(partner), token });
   } catch (err) {
     if (err.code === 11000) {
       const field = Object.keys(err.keyPattern || {})[0] || 'field';

@@ -24,4 +24,8 @@ const webhookDeliverySchema = new mongoose.Schema(
   { timestamps: true }
 );
 
+// The log holds full lead payloads (customer personal data) - kept 90
+// days for troubleshooting and retries, then removed automatically.
+webhookDeliverySchema.index({ createdAt: 1 }, { expireAfterSeconds: 90 * 24 * 60 * 60 });
+
 module.exports = mongoose.model('WebhookDelivery', webhookDeliverySchema);

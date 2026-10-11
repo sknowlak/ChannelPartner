@@ -33,11 +33,36 @@ async function getSettings() {
   return cache;
 }
 
+const MATCH_FIELDS = ['mobile', 'email'];
+
+// Business rules drive every duplicate decision, so nonsense values are
+// refused: a negative/zero window would grant no protection, and an empty
+// match-field list would switch duplicate protection off altogether.
+function settingsProblem(partial) {
+  if (partial.duplicateProtectionDays !== undefined) {
+    const days = Number(partial.duplicateProtectionDays);
+    if (!Number.isInteger(days) || days < 1 || days > 3650) return 'duplicateProtectionDays must be a whole number from 1 to 3650';
+  }
+  if (partial.duplicateMatchFields !== undefined) {
+    const fields = partial.duplicateMatchFields;
+    if (!Array.isArray(fields) || fields.length === 0 || fields.some((f) => !MATCH_FIELDS.includes(f))) {
+      return `duplicateMatchFields must be a non-empty list from: ${MATCH_FIELDS.join(', ')}`;
+    }
+  }
+  return null;
+}
+
 async function updateSettings(partial, actor) {
+  const problem = settingsProblem(partial);
+  if (problem) {
+    const err = new Error(problem);
+    err.statusCode = 400;
+    throw err;
+  }
   const doc = await ensureSettings();
 
-  if (partial.duplicateProtectionDays !== undefined) doc.duplicateProtectionDays = partial.duplicateProtectionDays;
-  if (partial.duplicateMatchFields !== undefined) doc.duplicateMatchFields = partial.duplicateMatchFields;
+  if (partial.duplicateProtectionDays !== undefined) doc.duplicateProtectionDays = Number(partial.duplicateProtectionDays);
+  if (partial.duplicateMatchFields !== undefined) doc.duplicateMatchFields = [...new Set(partial.duplicateMatchFields)];
   if (partial.fieldVisibility !== undefined) doc.fieldVisibility = { ...doc.fieldVisibility, ...partial.fieldVisibility };
   doc.updatedBy = actor || 'ADMIN';
 

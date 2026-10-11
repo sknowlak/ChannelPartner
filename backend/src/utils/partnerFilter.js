@@ -19,13 +19,20 @@ const EXACT_MATCH_FIELDS = new Set(['partnerId', 'partnerCode', 'status', 'kycSt
 // enum-like fields, case-insensitive partial match on free text, a
 // createdFrom/createdTo/updatedFrom/updatedTo date range, and cf_<key>
 // exact-match lookups against customFields.
+// Free text is matched literally: regex metacharacters are escaped so a
+// search like `(a+)+$` is a plain string, not a catastrophic-backtracking
+// pattern that pins the database CPU (ReDoS).
+function escapeRegex(text) {
+  return text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
 function buildPartnerFilter(query) {
   const filter = {};
 
   for (const field of TEXT_FIELDS) {
-    const value = query[field];
-    if (value === undefined || value === '') continue;
-    filter[field] = EXACT_MATCH_FIELDS.has(field) ? value : { $regex: value, $options: 'i' };
+    if (query[field] === undefined || query[field] === '') continue;
+    const value = String(query[field]).slice(0, 200);
+    filter[field] = EXACT_MATCH_FIELDS.has(field) ? value : { $regex: escapeRegex(value), $options: 'i' };
   }
 
   if (query.createdFrom || query.createdTo) {
@@ -42,11 +49,11 @@ function buildPartnerFilter(query) {
 
   for (const [key, value] of Object.entries(query)) {
     if (key.startsWith('cf_') && value !== '') {
-      filter[`customFields.${key.slice(3)}`] = value;
+      filter[`customFields.${key.slice(3)}`] = String(value);
     }
   }
 
   return filter;
 }
 
-module.exports = { buildPartnerFilter, TEXT_FIELDS };
+module.exports = { buildPartnerFilter, escapeRegex, TEXT_FIELDS };

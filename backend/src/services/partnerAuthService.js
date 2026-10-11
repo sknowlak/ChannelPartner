@@ -1,7 +1,9 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
-const JWT_SECRET = process.env.JWT_SECRET || 'change-this-in-production';
+const { getJwtSecret } = require('../config/jwtSecret');
+
+const JWT_SECRET = getJwtSecret();
 const TOKEN_TTL = process.env.PARTNER_TOKEN_TTL || '30d';
 
 async function hashPassword(plainText) {
@@ -33,4 +35,32 @@ function verifyToken(token) {
   return decoded;
 }
 
-module.exports = { hashPassword, verifyPassword, issueToken, verifyToken };
+// One password rule for every place a partner/member password is set
+// (signup, member create, member edit, own profile) - previously only
+// signup and member create checked it, so `PATCH /my/profile {password:"a"}`
+// went through.
+const MIN_PASSWORD_LENGTH = 8;
+function passwordProblem(password) {
+  if (typeof password !== 'string' || password.length < MIN_PASSWORD_LENGTH) {
+    return `Password must be at least ${MIN_PASSWORD_LENGTH} characters`;
+  }
+  return null;
+}
+
+// A token issued before the account's last password change is dead - so a
+// password change (or reset by a team manager) actually locks out anyone
+// holding an old token, instead of leaving it valid for the full 30 days.
+// `iat` is whole seconds, hence the floor on passwordChangedAt.
+function issuedBeforePasswordChange(decoded, account) {
+  if (!account.passwordChangedAt) return false;
+  return decoded.iat < Math.floor(account.passwordChangedAt.getTime() / 1000);
+}
+
+module.exports = {
+  hashPassword,
+  verifyPassword,
+  issueToken,
+  verifyToken,
+  passwordProblem,
+  issuedBeforePasswordChange
+};

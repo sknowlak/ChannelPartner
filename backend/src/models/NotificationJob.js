@@ -36,4 +36,11 @@ const notificationJobSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
+// The scheduler's polling query: PENDING jobs due by now, oldest first.
+notificationJobSchema.index({ status: 1, fireAt: 1 });
+// Finished jobs are kept 90 days for the "Scheduled & Sent" log, then
+// dropped. Keyed on processedAt, so PENDING jobs (which may be planned
+// months ahead and have no processedAt yet) are never removed.
+notificationJobSchema.index({ processedAt: 1 }, { expireAfterSeconds: 90 * 24 * 60 * 60 });
+
 module.exports = mongoose.model('NotificationJob', notificationJobSchema);

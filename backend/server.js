@@ -8,11 +8,24 @@ const errorHandler = require('./src/middleware/errorHandler');
 const { runWithContext } = require('./src/utils/requestContext');
 const { startScheduler } = require('./src/services/notificationService');
 
+const stripOperators = require('./src/middleware/stripOperators');
+
 const app = express();
 
-app.use(cors());
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+// Behind a reverse proxy (nginx, a load balancer), set TRUST_PROXY=1 so
+// req.ip is the real client - the login rate limiter keys on it.
+if (process.env.TRUST_PROXY) app.set('trust proxy', Number(process.env.TRUST_PROXY) || process.env.TRUST_PROXY);
+app.disable('x-powered-by');
+
+// CORS_ORIGINS (comma-separated) limits which web origins may call the API
+// from a browser. Unset = any origin, which is fine for local development
+// but should be set in production. The mobile app is unaffected (native
+// requests carry no Origin).
+const allowedOrigins = (process.env.CORS_ORIGINS || '').split(',').map((o) => o.trim()).filter(Boolean);
+app.use(cors(allowedOrigins.length ? { origin: allowedOrigins } : undefined));
+app.use(express.json({ limit: '200kb' }));
+app.use(express.urlencoded({ extended: true, limit: '200kb' }));
+app.use(stripOperators);
 
 // Every client we control (web partner portal, mobile app, admin portal)
 // identifies itself with X-Client-Platform - this is what lets the lead
@@ -27,8 +40,9 @@ app.use((req, res, next) => {
 
 app.get('/health', (req, res) => res.json({ status: 'ok' }));
 
-// Two entirely separate API surfaces: partner/builder-facing (no auth layer
-// of its own) and admin-facing (JWT-protected, see src/middleware/adminAuth.js).
+// Two entirely separate API surfaces: partner/builder-facing (see
+// channelPartnerRoutes.js for which routes need which credential) and
+// admin-facing (JWT-protected, see src/middleware/adminAuth.js).
 app.use('/api/channel-partner', channelPartnerRoutes);
 app.use('/api/admin', adminRoutes);
 
@@ -40,6 +54,10 @@ app.use((req, res) => res.status(404).json({ reason: 'Not found' }));
 app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
+
+// Last line of defence: a stray rejected promise is logged instead of
+// taking the whole API down (Node's default for unhandled rejections).
+process.on('unhandledRejection', (err) => console.error('[unhandledRejection]', err));
 
 connectDB()
   .then(() => {

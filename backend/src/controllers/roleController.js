@@ -3,6 +3,10 @@ const { listRoles, createCustomRole, updateCustomRole, deleteCustomRole } = requ
 const { ALL_PERMISSIONS } = require('../config/permissions');
 const { logEvent } = require('../services/auditService');
 
+function actorOf(req) {
+  return { roleId: req.roleId, permissions: req.permissions };
+}
+
 // GET /api/channel-partner/my/roles
 // Readable by the whole team (needed to populate role pickers and to show
 // "who has what role"), same visibility as the team roster itself.
@@ -30,7 +34,8 @@ async function create(req, res, next) {
     const { name, permissions } = req.body;
     if (!name) return res.status(400).json({ reason: 'name is required' });
 
-    const role = await createCustomRole(req.partnerId, { name, permissions });
+    const { role, error } = await createCustomRole(req.partnerId, { name, permissions }, actorOf(req));
+    if (error) return res.status(403).json({ reason: error });
 
     await logEvent({
       registrationId: `PARTNER:${req.partnerId}`,
@@ -52,7 +57,7 @@ async function update(req, res, next) {
   try {
     const { roleId } = req.params;
     const { name, permissions } = req.body;
-    const { role, error } = await updateCustomRole(req.partnerId, roleId, { name, permissions });
+    const { role, error } = await updateCustomRole(req.partnerId, roleId, { name, permissions }, actorOf(req));
     if (error) return res.status(400).json({ reason: error });
 
     await logEvent({
@@ -73,7 +78,7 @@ async function update(req, res, next) {
 async function remove(req, res, next) {
   try {
     const { roleId } = req.params;
-    const result = await deleteCustomRole(req.partnerId, roleId);
+    const result = await deleteCustomRole(req.partnerId, roleId, actorOf(req));
     if (result.error) return res.status(400).json({ reason: result.error });
 
     await logEvent({

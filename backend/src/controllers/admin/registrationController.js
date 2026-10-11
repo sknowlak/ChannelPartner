@@ -4,18 +4,21 @@ const Booking = require('../../models/Booking');
 const CommissionEligibility = require('../../models/CommissionEligibility');
 const { getOwnership } = require('../../services/ownershipService');
 const { getTimeline, logEvent } = require('../../services/auditService');
+const Partner = require('../../models/Partner');
+const Ownership = require('../../models/Ownership');
+const { releaseClaim, reassignClaim } = require('../../services/duplicateService');
 
 // GET /api/admin/registrations?partnerId=&projectId=&status=&isBooked=
 async function listRegistrations(req, res, next) {
   try {
     const { partnerId, projectId, status, isBooked } = req.query;
     const filter = {};
-    if (partnerId) filter.partnerId = partnerId;
-    if (projectId) filter.projectId = projectId;
-    if (status) filter.status = status;
+    if (partnerId) filter.partnerId = String(partnerId);
+    if (projectId) filter.projectId = String(projectId);
+    if (status) filter.status = String(status);
     if (isBooked !== undefined) filter.isBooked = isBooked === 'true';
 
-    const registrations = await Registration.find(filter).sort({ registeredAt: -1 });
+    const registrations = await Registration.find(filter).sort({ registeredAt: -1 }).limit(2000);
     return res.json({ count: registrations.length, registrations });
   } catch (err) {
     next(err);
@@ -72,6 +75,7 @@ async function overrideRegistration(req, res, next) {
       const previous = registration.protectionExpiry;
       registration.protectionExpiry = new Date();
       await registration.save();
+      await releaseClaim(registrationId);
       await logEvent({
         registrationId,
         eventType: 'ADMIN_PROTECTION_RELEASED',
@@ -85,9 +89,20 @@ async function overrideRegistration(req, res, next) {
 
     if (action === 'REASSIGN_PARTNER') {
       if (!newPartnerId) return res.status(400).json({ reason: 'newPartnerId is required for REASSIGN_PARTNER' });
+      const target = await Partner.findOne({ partnerId: String(newPartnerId) });
+      if (!target || target.status !== 'ACTIVE') return res.status(400).json({ reason: 'newPartnerId must be an existing, active partner' });
       const previous = registration.partnerId;
-      registration.partnerId = newPartnerId;
+      registration.partnerId = target.partnerId;
+      // The team member it was assigned to belongs to the old partner.
+      registration.assignedTo = '';
       await registration.save();
+      // Ownership, commission attribution and the protection claim all follow
+      // the lead - otherwise the old partner kept the working ownership and
+      // any commission even after the admin moved the lead away from them.
+      await Ownership.updateMany({ registrationId, workingOwner: previous }, { $set: { workingOwner: target.partnerId } });
+      await Ownership.updateMany({ registrationId, operationalOwner: previous }, { $set: { operationalOwner: target.partnerId } });
+      await CommissionEligibility.updateMany({ registrationId }, { $set: { partnerId: target.partnerId } });
+      await reassignClaim(registrationId, target.partnerId);
       await logEvent({
         registrationId,
         eventType: 'ADMIN_PARTNER_REASSIGNED',

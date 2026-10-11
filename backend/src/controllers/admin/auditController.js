@@ -10,9 +10,9 @@ async function listAudit(req, res, next) {
     const limit = Math.min(200, Number(req.query.limit) || 50);
 
     const filter = {};
-    if (registrationId) filter.registrationId = registrationId;
-    if (eventType) filter.eventType = eventType;
-    if (actor) filter.actor = actor;
+    if (registrationId) filter.registrationId = String(registrationId);
+    if (eventType) filter.eventType = String(eventType);
+    if (actor) filter.actor = String(actor);
     if (from || to) {
       filter.timestamp = {};
       if (from) filter.timestamp.$gte = new Date(from);

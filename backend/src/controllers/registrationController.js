@@ -3,71 +3,71 @@ const Registration = require('../models/Registration');
 const ProgressEvent = require('../models/ProgressEvent');
 const Partner = require('../models/Partner');
 const { nextId } = require('../utils/idGenerator');
-const { findDuplicate } = require('../services/duplicateService');
+const { findDuplicate, findOrCreateCustomer, claimProtection } = require('../services/duplicateService');
 const { createInitialOwnership, getOwnership } = require('../services/ownershipService');
 const { logEvent } = require('../services/auditService');
 const { withIdempotency } = require('../services/idempotencyService');
 const { getDefaultStatusName, listStatuses, resolveStatus } = require('../services/leadStatusService');
 const { buildBuilderView } = require('../services/visibilityService');
 const { getSettings } = require('../services/settingsService');
-const { normalizeMobile, validateMobile } = require('../utils/phone');
+const { validateMobile } = require('../utils/phone');
 const Booking = require('../models/Booking');
+const { isValidEmail } = require('../utils/email');
 
 // POST /api/channel-partner/registrations
 async function createRegistration(req, res, next) {
   try {
-    const { partnerId, projectId, customer, source, externalReferenceId } = req.body;
+    const { customer, source, externalReferenceId } = req.body;
+    const partnerId = req.body.partnerId ? String(req.body.partnerId) : '';
+    const projectId = req.body.projectId ? String(req.body.projectId) : '';
 
-    if (!partnerId || !projectId || !customer || !customer.mobile || !customer.name) {
+    if (!partnerId || !projectId || !customer || typeof customer !== 'object' || !customer.mobile || !customer.name) {
       return res.status(400).json({ status: 'ERROR', reason: 'partnerId, projectId and customer.name/mobile are required' });
     }
 
     const mobileCheck = validateMobile(customer.mobile);
     if (!mobileCheck.valid) return res.status(400).json({ status: 'ERROR', reason: mobileCheck.reason, fieldKey: 'mobile', code: mobileCheck.code });
     customer.mobile = mobileCheck.e164;
+    if (customer.email && !isValidEmail(String(customer.email))) {
+      return res.status(400).json({ status: 'ERROR', reason: 'Enter a valid email address', fieldKey: 'email' });
+    }
+
+    // A deactivated partner can't register leads through any route - they
+    // could otherwise still lock customers away from active partners.
+    const partner = await Partner.findOne({ partnerId });
+    if (!partner || partner.status !== 'ACTIVE') {
+      return res.status(400).json({ status: 'ERROR', reason: `Unknown or inactive partnerId: ${partnerId}` });
+    }
 
     const { result } = await withIdempotency(externalReferenceId, 'createRegistration', async () => {
-      const duplicate = await findDuplicate({ mobile: customer.mobile, email: customer.email, projectId });
-
-      if (duplicate) {
+      const rejectDuplicate = async (existingRegistrationId, protectedUntil) => {
         await logEvent({
-          registrationId: duplicate.registrationId,
+          registrationId: existingRegistrationId,
           eventType: 'REGISTRATION_ATTEMPT_REJECTED',
           actor: partnerId,
           source: source || 'PARTNER_CRM',
           description: `Duplicate registration attempt by ${partnerId} rejected`
         });
-
         return {
           status: 'REJECTED',
           reasonCode: 'DUPLICATE_PROTECTED',
           reason: 'Customer is already registered by another partner.',
-          protectedUntil: duplicate.protectionExpiry
+          protectedUntil
         };
-      }
+      };
 
-      const partner = await Partner.findOne({ partnerId });
-      if (!partner) {
-        const err = new Error(`Unknown partnerId: ${partnerId}`);
-        err.statusCode = 400;
-        throw err;
-      }
+      const duplicate = await findDuplicate({ mobile: customer.mobile, email: customer.email, projectId });
+      if (duplicate) return rejectDuplicate(duplicate.registrationId, duplicate.protectionExpiry);
 
-      let customerDoc = await Customer.findOne({ mobileNormalized: normalizeMobile(customer.mobile) });
-      if (!customerDoc) {
-        const customerId = await nextId('CUST');
-        customerDoc = await Customer.create({
-          customerId,
-          name: customer.name,
-          mobile: customer.mobile,
-          email: customer.email
-        });
-      }
+      const customerDoc = await findOrCreateCustomer({ name: customer.name, mobile: customer.mobile, email: customer.email });
 
       const { duplicateProtectionDays } = await getSettings();
       const registrationId = await nextId('REG');
       const registeredAt = new Date();
       const protectionExpiry = new Date(registeredAt.getTime() + duplicateProtectionDays * 24 * 60 * 60 * 1000);
+
+      const claim = await claimProtection({ customerId: customerDoc.customerId, projectId, registrationId, partnerId, expiresAt: protectionExpiry });
+      if (!claim.claimed) return rejectDuplicate(claim.holder.registrationId, claim.holder.expiresAt);
 
       const registration = await Registration.create({
         registrationId,
@@ -128,7 +128,7 @@ async function createRegistration(req, res, next) {
         protectionDays: duplicateProtectionDays,
         expiryDate: protectionExpiry
       };
-    });
+    }, partnerId);
 
     const httpStatus = result.status === 'REJECTED' ? 409 : 201;
     return res.status(httpStatus).json(result);
@@ -174,17 +174,27 @@ async function getRegistration(req, res, next) {
 async function updateProgress(req, res, next) {
   try {
     const { registrationId } = req.params;
-    const { stage, eventType, source, actor } = req.body;
+    const { eventType, source, actor } = req.body;
+    const stage = String(req.body.stage || '');
 
     if (actor === 'BUILDER') {
       return res.status(403).json({ reason: 'Builder cannot modify partner-owned progress before booking' });
     }
 
-    const registration = await Registration.findOne({ registrationId });
+    const registration = await Registration.findOne({ registrationId: String(registrationId) });
     if (!registration) return res.status(404).json({ reason: 'Registration not found' });
 
+    // Same rules as the logged-in status update: a booked lead belongs to the
+    // builder, and the booking status is only reachable through the booking
+    // event (which creates the Booking + commission records) - setting it as
+    // a plain stage would mark a lead "booked" with neither.
+    if (registration.isBooked) {
+      return res.status(409).json({ reason: 'This lead is booked - its status is now managed by the builder' });
+    }
     const resolved = await resolveStatus(registration.partnerId, stage, '');
     if (resolved.error) return res.status(400).json({ reason: resolved.error });
+    if (resolved.status.isBooking) return res.status(400).json({ reason: 'Use the booking endpoint to book a lead' });
+    if (!resolved.status.isActive) return res.status(400).json({ reason: `"${stage}" is inactive` });
 
     const previousStage = registration.currentStage;
     registration.currentStage = stage;
@@ -203,7 +213,7 @@ async function updateProgress(req, res, next) {
     await logEvent({
       registrationId,
       eventType: 'STAGE_UPDATED',
-      actor: actor || registration.partnerId,
+      actor: registration.partnerId,
       source: source || 'PARTNER_CRM',
       previousValue: previousStage,
       newValue: stage,

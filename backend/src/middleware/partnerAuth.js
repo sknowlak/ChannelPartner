@@ -1,4 +1,4 @@
-const { verifyToken } = require('../services/partnerAuthService');
+const { verifyToken, issuedBeforePasswordChange } = require('../services/partnerAuthService');
 const Partner = require('../models/Partner');
 const TeamMember = require('../models/TeamMember');
 const { resolvePermissions } = require('../services/roleService');
@@ -37,10 +37,17 @@ async function partnerAuth(req, res, next) {
     let roleId = null;
     let actorName = partner.name;
 
+    if (decoded.username === partner.username && issuedBeforePasswordChange(decoded, partner)) {
+      return res.status(401).json({ reason: 'Password was changed - please log in again' });
+    }
+
     if (decoded.username !== partner.username) {
       const member = await TeamMember.findOne({ partnerId: decoded.partnerId, username: decoded.username });
       if (!member || member.status !== 'ACTIVE') {
         return res.status(401).json({ reason: 'Team member account is not active' });
+      }
+      if (issuedBeforePasswordChange(decoded, member)) {
+        return res.status(401).json({ reason: 'Password was changed - please log in again' });
       }
       role = 'MEMBER';
       memberId = member.memberId;

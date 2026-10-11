@@ -3,9 +3,17 @@ const NotificationJob = require('../models/NotificationJob');
 const Notification = require('../models/Notification');
 const { nextId } = require('../utils/idGenerator');
 const { sendTest } = require('../services/notificationService');
+const { outboundUrlProblem } = require('../utils/outboundUrl');
+const { maskHeaders, headersProblem } = require('../utils/secretHeaders');
+const { PERMISSIONS } = require('../config/permissions');
 
 const MODES = ['IMMEDIATE', 'BEFORE', 'AT', 'AFTER'];
 const UNITS = ['MINUTES', 'HOURS', 'DAYS', 'WEEKS', 'MONTHS', 'YEARS'];
+// Caps that keep one organisation from turning a single status change into
+// thousands of emails/in-app rows (and getting the SMTP account blacklisted).
+const MAX_RULES_PER_PARTNER = 50;
+const MAX_EXPLICIT_RECIPIENTS = 100;
+const MAX_TEMPLATE_LENGTH = 4000;
 
 // The logged-in user's id in the Notification/assignedTo id space.
 function currentUserId(req) {
@@ -30,26 +38,34 @@ function sanitizeRule(body) {
       assignedUser: !!r.assignedUser,
       owner: !!r.owner,
       updatedBy: !!r.updatedBy,
-      roleIds: Array.isArray(r.roleIds) ? r.roleIds.map(String) : [],
-      userIds: Array.isArray(r.userIds) ? r.userIds.map(String) : []
+      roleIds: Array.isArray(r.roleIds) ? r.roleIds.map(String).slice(0, MAX_EXPLICIT_RECIPIENTS) : [],
+      userIds: Array.isArray(r.userIds) ? r.userIds.map(String).slice(0, MAX_EXPLICIT_RECIPIENTS) : []
     },
     channels: { inApp: !!c.inApp, email: !!c.email, webhook: !!c.webhook },
     webhook: {
       url: String(body.webhook?.url || '').trim(),
       headers: body.webhook?.headers && typeof body.webhook.headers === 'object' ? body.webhook.headers : {}
     },
-    content: { title: String(body.content?.title || ''), message: String(body.content?.message || '') }
+    content: {
+      title: String(body.content?.title || '').slice(0, 300),
+      message: String(body.content?.message || '').slice(0, MAX_TEMPLATE_LENGTH)
+    }
   };
 }
 
-function validateRule(rule) {
+async function validateRule(rule) {
   if (!rule.name) return 'Rule name is required';
   if (!rule.channels.inApp && !rule.channels.email && !rule.channels.webhook) return 'Pick at least one channel (In-app, Email or Webhook)';
   const r = rule.recipients;
   if (!rule.channels.webhook && !r.assignedUser && !r.owner && !r.updatedBy && r.roleIds.length === 0 && r.userIds.length === 0) {
     return 'Pick at least one recipient';
   }
-  if (rule.channels.webhook && !/^https?:\/\//i.test(rule.webhook.url)) return 'Webhook channel needs a valid http(s) URL';
+  if (rule.channels.webhook) {
+    const urlProblem = await outboundUrlProblem(rule.webhook.url);
+    if (urlProblem) return `Webhook URL: ${urlProblem}`;
+    const badHeaders = headersProblem(rule.webhook.headers);
+    if (badHeaders) return `Webhook ${badHeaders}`;
+  }
   if ((rule.timing.mode === 'BEFORE' || rule.timing.mode === 'AFTER') && !(rule.timing.amount > 0)) return 'Enter how long before/after the scheduled time';
   return null;
 }
@@ -59,7 +75,15 @@ function validateRule(rule) {
 async function listRules(req, res, next) {
   try {
     const rules = await NotificationRule.find({ partnerId: req.partnerId }).sort({ createdAt: 1 });
-    return res.json({ rules });
+    // Webhook header values (provider credentials) only in full for people
+    // who can edit rules; everyone else gets them masked.
+    if ((req.permissions || []).includes(PERMISSIONS.MANAGE_SETTINGS)) return res.json({ rules });
+    const masked = rules.map((r) => {
+      const obj = r.toObject();
+      if (obj.webhook) obj.webhook.headers = maskHeaders(obj.webhook.headers);
+      return obj;
+    });
+    return res.json({ rules: masked });
   } catch (err) {
     next(err);
   }
@@ -68,8 +92,12 @@ async function listRules(req, res, next) {
 async function createRule(req, res, next) {
   try {
     const rule = sanitizeRule(req.body);
-    const error = validateRule(rule);
+    const error = await validateRule(rule);
     if (error) return res.status(400).json({ reason: error });
+    const existingCount = await NotificationRule.countDocuments({ partnerId: req.partnerId });
+    if (existingCount >= MAX_RULES_PER_PARTNER) {
+      return res.status(400).json({ reason: `You can have at most ${MAX_RULES_PER_PARTNER} notification rules` });
+    }
     const created = await NotificationRule.create({ ...rule, ruleId: await nextId('NRULE'), partnerId: req.partnerId });
     return res.status(201).json({ rule: created });
   } catch (err) {
@@ -86,7 +114,7 @@ async function updateRule(req, res, next) {
       ? { ...existing.toObject(), isEnabled: !!req.body.isEnabled }
       : req.body;
     const rule = sanitizeRule(merged);
-    const error = validateRule(rule);
+    const error = await validateRule(rule);
     if (error) return res.status(400).json({ reason: error });
     Object.assign(existing, rule);
     await existing.save();
@@ -121,8 +149,8 @@ async function testRule(req, res, next) {
 async function listJobs(req, res, next) {
   try {
     const filter = { partnerId: req.partnerId };
-    if (req.query.ruleId) filter.ruleId = req.query.ruleId;
-    if (req.query.status) filter.status = req.query.status;
+    if (req.query.ruleId) filter.ruleId = String(req.query.ruleId);
+    if (req.query.status) filter.status = String(req.query.status);
     const jobs = await NotificationJob.find(filter).sort({ fireAt: -1 }).limit(200);
     return res.json({ jobs });
   } catch (err) {
@@ -148,7 +176,7 @@ async function listMine(req, res, next) {
 async function markRead(req, res, next) {
   try {
     const filter = { partnerId: req.partnerId, userId: currentUserId(req), readAt: null };
-    if (req.params.notificationId !== 'all') filter.notificationId = req.params.notificationId;
+    if (req.params.notificationId !== 'all') filter.notificationId = String(req.params.notificationId);
     await Notification.updateMany(filter, { readAt: new Date() });
     return res.json({ ok: true });
   } catch (err) {

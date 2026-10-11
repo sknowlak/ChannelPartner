@@ -11,14 +11,20 @@ async function apiKeyAuth(req, res, next) {
   const key = req.headers['x-api-key'];
   if (!key) return res.status(401).json({ reason: 'Missing X-Api-Key header' });
 
-  const partner = await Partner.findOne({ apiKey: key });
-  if (!partner || partner.status !== 'ACTIVE') {
-    return res.status(401).json({ reason: 'Invalid API key' });
-  }
+  try {
+    const partner = await Partner.findOne({ apiKey: String(key) });
+    if (!partner || partner.status !== 'ACTIVE') {
+      return res.status(401).json({ reason: 'Invalid API key' });
+    }
 
-  req.partnerId = partner.partnerId;
-  req.actorLabel = `${partner.name} (Integration)`;
-  return next();
+    req.partnerId = partner.partnerId;
+    req.actorLabel = `${partner.name} (Integration)`;
+    return next();
+  } catch (err) {
+    // Express 4 doesn't catch rejected async middleware - without this a DB
+    // error left the request hanging and surfaced as an unhandled rejection.
+    return next(err);
+  }
 }
 
 module.exports = apiKeyAuth;
