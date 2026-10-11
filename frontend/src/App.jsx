@@ -12,6 +12,8 @@ import MyProfile from './pages/MyProfile';
 import ManageTeam from './pages/ManageTeam';
 import RolesPermissions from './pages/RolesPermissions';
 import LeadSettings from './pages/LeadSettings';
+import LeadStatusSettings from './pages/LeadStatusSettings';
+import NotificationSettings from './pages/NotificationSettings';
 import UserSettings from './pages/UserSettings';
 import IntegrationSettings from './pages/IntegrationSettings';
 import EditTeamMember from './pages/EditTeamMember';
@@ -57,6 +59,8 @@ export default function App() {
 
           <Route path="/settings" element={<Navigate to="/settings/leads" replace />} />
           <Route path="/settings/leads" element={<ProtectedRoute><LeadSettings /></ProtectedRoute>} />
+          <Route path="/settings/leads/statuses" element={<ProtectedRoute><LeadStatusSettings /></ProtectedRoute>} />
+          <Route path="/settings/leads/notifications" element={<ProtectedRoute><NotificationSettings /></ProtectedRoute>} />
           <Route path="/settings/users" element={<ProtectedRoute><UserSettings /></ProtectedRoute>} />
           <Route path="/settings/integrations" element={<ProtectedRoute><IntegrationSettings /></ProtectedRoute>} />
 

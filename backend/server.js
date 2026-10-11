@@ -6,6 +6,7 @@ const channelPartnerRoutes = require('./src/routes/channelPartnerRoutes');
 const adminRoutes = require('./src/routes/adminRoutes');
 const errorHandler = require('./src/middleware/errorHandler');
 const { runWithContext } = require('./src/utils/requestContext');
+const { startScheduler } = require('./src/services/notificationService');
 
 const app = express();
 
@@ -43,6 +44,8 @@ const PORT = process.env.PORT || 5000;
 connectDB()
   .then(() => {
     app.listen(PORT, () => console.log(`Backend listening on port ${PORT}`));
+    // Fires scheduled lead notifications (section 49) every 30 seconds.
+    if (process.env.NODE_ENV !== 'test') startScheduler();
   })
   .catch((err) => {
     console.error('Failed to connect to MongoDB', err);

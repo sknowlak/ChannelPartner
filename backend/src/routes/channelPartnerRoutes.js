@@ -1,5 +1,5 @@
 const express = require('express');
-const { createRegistration, getRegistration, updateProgress } = require('../controllers/registrationController');
+const { createRegistration, getRegistration, listRegistrationStatuses, updateProgress } = require('../controllers/registrationController');
 const { checkDuplicate } = require('../controllers/duplicateController');
 const { createBooking } = require('../controllers/bookingController');
 const { getAuditTimeline } = require('../controllers/auditController');
@@ -9,6 +9,8 @@ const myLeadsController = require('../controllers/myLeadsController');
 const teamController = require('../controllers/teamController');
 const roleController = require('../controllers/roleController');
 const leadFieldController = require('../controllers/leadFieldController');
+const leadStatusController = require('../controllers/leadStatusController');
+const notificationController = require('../controllers/notificationController');
 const userFieldController = require('../controllers/userFieldController');
 const integrationController = require('../controllers/integrationController');
 const gridPreferencesController = require('../controllers/gridPreferencesController');
@@ -24,6 +26,7 @@ const router = express.Router();
 // compatibility; identity is asserted by the caller, not by a login session.
 router.post('/registrations', createRegistration);
 router.get('/registrations/:registrationId', getRegistration);
+router.get('/registrations/:registrationId/statuses', listRegistrationStatuses);
 router.post('/registrations/:registrationId/progress', updateProgress);
 router.post('/registrations/:registrationId/booking', createBooking);
 router.get('/registrations/:registrationId/audit', getAuditTimeline);
@@ -57,6 +60,8 @@ router.post('/my/registrations/:registrationId/progress', partnerAuth, requirePe
 router.post('/my/registrations/:registrationId/booking', partnerAuth, requirePermission(PERMISSIONS.MANAGE_LEADS), myLeadsController.createMyBooking);
 router.get('/my/registrations/:registrationId/audit', partnerAuth, myLeadsController.getMyRegistrationAudit);
 router.patch('/my/registrations/:registrationId/assign', partnerAuth, requirePermission(PERMISSIONS.MANAGE_LEADS), myLeadsController.assignRegistration);
+router.get('/my/assignable-users', partnerAuth, myLeadsController.listAssignableUsers);
+router.get('/my/lead-statuses', partnerAuth, myLeadsController.listLeadStatuses);
 
 router.get('/my/grid-preferences/:gridKey', partnerAuth, gridPreferencesController.getGridPreferences);
 router.patch('/my/grid-preferences/:gridKey', partnerAuth, gridPreferencesController.updateGridPreferences);
@@ -79,6 +84,20 @@ router.delete('/my/roles/:roleId', partnerAuth, requirePermission(PERMISSIONS.MA
 // Lead Module Settings (section 36): readable by the whole team (needed to
 // render the Register Lead form and My Leads filters identically for
 // everyone), mutable only by whoever holds MANAGE_SETTINGS.
+// Lead statuses + notification rules (section 49) - read by the whole team,
+// changed only with MANAGE_SETTINGS; the bell inbox is per user.
+router.post('/my/lead-statuses', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), leadStatusController.create);
+router.patch('/my/lead-statuses/:statusId', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), leadStatusController.update);
+router.delete('/my/lead-statuses/:statusId', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), leadStatusController.remove);
+router.get('/my/notification-rules', partnerAuth, notificationController.listRules);
+router.post('/my/notification-rules', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), notificationController.createRule);
+router.patch('/my/notification-rules/:ruleId', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), notificationController.updateRule);
+router.delete('/my/notification-rules/:ruleId', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), notificationController.deleteRule);
+router.post('/my/notification-rules/:ruleId/test', partnerAuth, notificationController.testRule);
+router.get('/my/notification-jobs', partnerAuth, notificationController.listJobs);
+router.get('/my/notifications', partnerAuth, notificationController.listMine);
+router.post('/my/notifications/:notificationId/read', partnerAuth, notificationController.markRead);
+
 router.get('/my/lead-fields', partnerAuth, leadFieldController.list);
 router.post('/my/lead-fields', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), leadFieldController.create);
 router.patch('/my/lead-fields/:fieldKey', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), leadFieldController.update);

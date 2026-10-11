@@ -72,3 +72,41 @@ export function dayLabel(value, timezone) {
     return formatDate(value, tz);
   }
 }
+
+// --- <input type="datetime-local"> in a chosen zone (section 49) ---------
+// The browser's datetime-local input has no timezone of its own; these map
+// it to/from the user's PROFILE timezone, so a time typed in matches the
+// times the rest of the app shows (which are all rendered in that zone).
+
+function zoneOffsetMs(date, timeZone) {
+  const parts = new Intl.DateTimeFormat('en-US', {
+    timeZone, hourCycle: 'h23', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit'
+  }).formatToParts(date);
+  const get = (type) => Number(parts.find((p) => p.type === type).value);
+  const asUtc = Date.UTC(get('year'), get('month') - 1, get('day'), get('hour'), get('minute'), get('second'));
+  return asUtc - Math.floor(date.getTime() / 1000) * 1000;
+}
+
+export function toZonedInputValue(value, timezone) {
+  if (!value) return '';
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return '';
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    timeZone: timezone || detectBrowserTimezone(), hourCycle: 'h23', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit'
+  }).formatToParts(date);
+  const get = (type) => parts.find((p) => p.type === type).value;
+  return `${get('year')}-${get('month')}-${get('day')}T${get('hour')}:${get('minute')}`;
+}
+
+export function fromZonedInputValue(input, timezone) {
+  const match = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/.exec(input || '');
+  if (!match) return '';
+  const tz = timezone || detectBrowserTimezone();
+  const [, y, mo, d, h, mi] = match.map(Number);
+  const wallAsUtc = Date.UTC(y, mo - 1, d, h, mi);
+  let ts = wallAsUtc - zoneOffsetMs(new Date(wallAsUtc), tz);
+  // Re-check once in case the guess crossed a DST boundary.
+  const corrected = wallAsUtc - zoneOffsetMs(new Date(ts), tz);
+  if (corrected !== ts) ts = corrected;
+  return new Date(ts).toISOString();
+}

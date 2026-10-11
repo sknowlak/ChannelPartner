@@ -6,8 +6,10 @@ import {
 import { PERMISSIONS } from '../utils/permissions';
 import SettingsCategories from '../components/SettingsCategories';
 import DeliveryDetailModal from '../components/DeliveryDetailModal';
+import FieldMappingTable from '../components/FieldMappingTable';
 import { formatDateTime } from '../utils/timezone';
 import { buildPreviewBody } from '../utils/webhookPreview';
+import { bodyFromRows, parseCurl, parseTemplateObject, suggestRows } from '../utils/curlMapping';
 
 const EVENT_OPTIONS = [
   { key: 'LEAD_CREATED', label: 'Lead Created' },
@@ -17,12 +19,29 @@ const EVENT_OPTIONS = [
 ];
 const FORMATS = ['JSON', 'FORM', 'CUSTOM'];
 const METHODS = ['POST', 'PUT', 'PATCH'];
+const CURL_PLACEHOLDER = [
+  "curl --location 'https://client-crm.example.com/api/leads' \\",
+  "--header 'API-Key: ...' \\",
+  "--header 'Content-Type: application/json' \\",
+  `--data-raw '{"Name": "...", "Mobile": "..."}'`
+].join('\n');
 const initialForm = { name: '', targetUrl: '', method: 'POST', format: 'JSON', headersText: '{}', bodyTemplate: '', events: ['LEAD_CREATED'] };
 
 const SYSTEM_PLACEHOLDERS = [
   { path: 'registrationId', label: 'Registration ID' },
   { path: 'stage', label: 'Stage' },
-  { path: 'isBooked', label: 'Is Booked' }
+  { path: 'isBooked', label: 'Is Booked' },
+  { path: 'customer.countryCode', label: 'Country Dial Code' },
+  { path: 'customer.nationalNumber', label: 'Mobile (without code)' }
+];
+
+// The channel partner sending the lead - for client CRMs that record which
+// partner a lead came from (e.g. Leadrat's ChannelPartnerName/Mobile/Email).
+const PARTNER_PLACEHOLDERS = [
+  { path: 'partner.name', label: 'Partner Name' },
+  { path: 'partner.mobile', label: 'Partner Mobile' },
+  { path: 'partner.email', label: 'Partner Email' },
+  { path: 'partner.companyName', label: 'Partner Company' }
 ];
 
 // Placeholder paths mirror how updateMyRegistration/buildLeadPayload read a
@@ -83,6 +102,9 @@ export default function IntegrationSettings() {
   const [form, setForm] = useState(initialForm);
   const [busy, setBusy] = useState(false);
   const [fieldDefs, setFieldDefs] = useState([]);
+  const [showCurlImport, setShowCurlImport] = useState(false);
+  const [curlText, setCurlText] = useState('');
+  const [curlError, setCurlError] = useState(null);
 
   const [deliveries, setDeliveries] = useState(null);
   const [deliveryFilters, setDeliveryFilters] = useState({ webhookId: '', status: '', from: '', to: '' });
@@ -107,7 +129,7 @@ export default function IntegrationSettings() {
   // leading "Lead" group for fields that aren't part of the configurable
   // catalogue at all (registrationId, stage, isBooked).
   const placeholderGroups = useMemo(() => {
-    const groups = [{ label: 'Lead', items: SYSTEM_PLACEHOLDERS }];
+    const groups = [{ label: 'Lead', items: SYSTEM_PLACEHOLDERS }, { label: 'Channel Partner', items: PARTNER_PLACEHOLDERS }];
     const byGroup = new Map();
     for (const def of fieldDefs) {
       const items = byGroup.get(def.group) || [];
@@ -147,14 +169,45 @@ export default function IntegrationSettings() {
     }
   };
 
-  const startCreate = () => {
+  const startCreate = ({ fromCurl = false } = {}) => {
     setEditingId(null);
     setForm(initialForm);
+    setShowCurlImport(fromCurl);
+    setCurlText('');
+    setCurlError(null);
     setShowForm(true);
+  };
+
+  // "Paste the client CRM's cURL" (section 47) - URL, method and headers are
+  // taken as-is; a JSON body becomes a Custom template with each key
+  // auto-mapped to the closest CRM field, ready to review in the mapping table.
+  const importCurl = () => {
+    setCurlError(null);
+    try {
+      const parsed = parseCurl(curlText);
+      const bodyObject = parseTemplateObject(parsed.body);
+      const fieldOptions = placeholderGroups.flatMap((g) => g.items);
+      const bodyTemplate = bodyObject
+        ? JSON.stringify(bodyFromRows(bodyObject, suggestRows(bodyObject, fieldOptions)), null, 4)
+        : parsed.body;
+      setForm((f) => ({
+        ...f,
+        name: f.name || parsed.name,
+        targetUrl: parsed.url,
+        method: parsed.method,
+        format: 'CUSTOM',
+        headersText: JSON.stringify(parsed.headers, null, 2),
+        bodyTemplate
+      }));
+      setShowCurlImport(false);
+    } catch (err) {
+      setCurlError(err.message);
+    }
   };
 
   const startEdit = (wh) => {
     setEditingId(wh.webhookId);
+    setShowCurlImport(false);
     setForm({
       name: wh.name, targetUrl: wh.targetUrl, method: wh.method, format: wh.format,
       headersText: JSON.stringify(wh.headers || {}, null, 2), bodyTemplate: wh.bodyTemplate || '', events: wh.events
@@ -312,9 +365,12 @@ export default function IntegrationSettings() {
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <h3 className="form-section-title" style={{ marginTop: 0 }}><span>Outbound Webhooks - Push Leads &amp; Updates</span></h3>
           {canManageSettings && (
-            <button className="pill-primary" onClick={showForm ? () => setShowForm(false) : startCreate}>
-              {showForm ? 'Cancel' : '+ Add Webhook'}
-            </button>
+            <div style={{ display: 'flex', gap: '0.5rem' }}>
+              {!showForm && <button className="secondary" onClick={() => startCreate({ fromCurl: true })}>Import from cURL</button>}
+              <button className="pill-primary" onClick={showForm ? () => setShowForm(false) : () => startCreate()}>
+                {showForm ? 'Cancel' : '+ Add Webhook'}
+              </button>
+            </div>
           )}
         </div>
         <p className="hint">
@@ -324,6 +380,32 @@ export default function IntegrationSettings() {
 
         {showForm && canManageSettings && (
           <form className="card" onSubmit={handleSubmit} style={{ background: '#f8f9fb' }}>
+            {showCurlImport ? (
+              <div className="field">
+                <label>Paste your client CRM's cURL</label>
+                <p className="hint" style={{ marginTop: 0 }}>
+                  Paste the example request their API docs or Postman gives you (with real or sample data). The URL, method and
+                  headers are copied as-is, and every key in the body is listed below so you can choose which CRM field fills it for each lead.
+                </p>
+                <textarea
+                  rows={8}
+                  value={curlText}
+                  onChange={(e) => setCurlText(e.target.value)}
+                  placeholder={CURL_PLACEHOLDER}
+                  style={{ fontFamily: 'monospace', fontSize: '0.8rem' }}
+                />
+                {curlError && <div className="error-box" style={{ marginTop: '0.5rem' }}>{curlError}</div>}
+                <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.5rem' }}>
+                  <button type="button" className="primary" onClick={importCurl} disabled={!curlText.trim()}>Parse &amp; Map Fields</button>
+                  <button type="button" className="secondary" onClick={() => setShowCurlImport(false)}>Set up manually instead</button>
+                </div>
+              </div>
+            ) : (
+              <p className="hint" style={{ marginTop: 0 }}>
+                Have the client's cURL? <button type="button" className="link-button" onClick={() => setShowCurlImport(true)}>Import from cURL</button> to fill this in and map fields automatically.
+              </p>
+            )}
+
             <div className="form-grid">
               <div className="field">
                 <label>Name</label>
@@ -363,34 +445,43 @@ export default function IntegrationSettings() {
             </div>
 
             {form.format === 'CUSTOM' && (
-              <div className="field">
-                <label>Body Template</label>
-                <textarea
-                  rows={4}
-                  value={form.bodyTemplate}
-                  onChange={(e) => setForm((f) => ({ ...f, bodyTemplate: e.target.value }))}
-                  placeholder='{"lead_id":"{{registrationId}}","name":"{{customer.name}}","mobile":"{{customer.mobile}}"}'
-                  style={{ fontFamily: 'monospace', fontSize: '0.85rem' }}
-                />
+              <>
+                {parseTemplateObject(form.bodyTemplate) && (
+                  <FieldMappingTable
+                    template={form.bodyTemplate}
+                    groups={placeholderGroups}
+                    onChange={(bodyTemplate) => setForm((f) => ({ ...f, bodyTemplate }))}
+                  />
+                )}
+                <details className="field" open={!parseTemplateObject(form.bodyTemplate)}>
+                  <summary style={{ cursor: 'pointer', fontSize: '0.85rem', fontWeight: 600, color: '#444' }}>Body Template (raw) - edit directly or insert variables</summary>
+                  <textarea
+                    rows={8}
+                    value={form.bodyTemplate}
+                    onChange={(e) => setForm((f) => ({ ...f, bodyTemplate: e.target.value }))}
+                    placeholder='{"lead_id":"{{registrationId}}","name":"{{customer.name}}","mobile":"{{customer.mobile}}"}'
+                    style={{ fontFamily: 'monospace', fontSize: '0.85rem', marginTop: '0.5rem' }}
+                  />
 
-                {placeholderGroups.map((group) => (
-                  <div key={group.label}>
-                    <div className="placeholder-group-label">{group.label}</div>
-                    <div className="placeholder-chips">
-                      {group.items.map((item) => (
-                        <button type="button" key={item.path} className="placeholder-chip" onClick={() => insertPlaceholder(item.path)} title={item.label}>
-                          {'{{'}{item.path}{'}}'}
-                        </button>
-                      ))}
+                  {placeholderGroups.map((group) => (
+                    <div key={group.label}>
+                      <div className="placeholder-group-label">{group.label}</div>
+                      <div className="placeholder-chips">
+                        {group.items.map((item) => (
+                          <button type="button" key={item.path} className="placeholder-chip" onClick={() => insertPlaceholder(item.path)} title={item.label}>
+                            {'{{'}{item.path}{'}}'}
+                          </button>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </details>
+              </>
             )}
 
             <div className="field">
               <label>Preview - what will actually be sent (sample lead)</label>
-              <textarea readOnly rows={6} value={buildPreviewBody(form.format, form.bodyTemplate)} style={{ fontFamily: 'monospace', fontSize: '0.8rem', background: '#f3f4f7' }} />
+              <textarea readOnly rows={6} value={buildPreviewBody(form.format, form.bodyTemplate, form.headersText)} style={{ fontFamily: 'monospace', fontSize: '0.8rem', background: '#f3f4f7' }} />
             </div>
 
             <label style={{ fontSize: '0.85rem', fontWeight: 600, color: '#444' }}>Send on</label>

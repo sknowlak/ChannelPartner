@@ -11,11 +11,16 @@ const registrationSchema = new mongoose.Schema(
     // scoping (by project) stays consistent for "no project" leads too.
     projectId: { type: String, default: '' },
     status: { type: String, enum: ['ACCEPTED', 'REJECTED'], required: true },
-    currentStage: {
-      type: String,
-      enum: ['Registered', 'Contacted', 'Qualified', 'Site Visit', 'Negotiation', 'Booking'],
-      default: 'Registered'
-    },
+    // The NAME of one of the partner's own LeadStatus documents (section 49 -
+    // statuses are fully custom, so no fixed enum; validated against the
+    // partner's catalogue by leadStatusService.resolveStatus instead).
+    currentStage: { type: String, default: 'Registered' },
+    // Second-level status within currentStage (section 48), e.g. Contacted ->
+    // "Not Answered" - a LeadStatus.subStatuses[].name.
+    subStatus: { type: String, default: '' },
+    // Date & time attached to a status that asks for one (a callback, a site
+    // visit) - what "N minutes before" notification rules count back from.
+    scheduledAt: { type: Date, default: null },
     registeredAt: { type: Date, default: Date.now },
     protectionStart: Date,
     protectionExpiry: Date,
@@ -32,8 +37,9 @@ const registrationSchema = new mongoose.Schema(
     // day-to-day - independent of partnerId (which never changes once
     // registered) and of ownershipService's working/operational owner
     // (which is about partner-vs-builder, not partner-vs-partner's-own-staff).
-    // '' means unassigned. Stores TeamMember.memberId, or '' for the owner
-    // acting themselves (the owner isn't a TeamMember row).
+    // '' means unassigned. Stores TeamMember.memberId, or the partnerId
+    // itself when assigned to the account owner (the owner isn't a
+    // TeamMember row) - section 48.
     assignedTo: { type: String, default: '' },
 
     // Real-estate lead requirement details (section 33) - all optional. These

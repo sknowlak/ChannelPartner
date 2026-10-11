@@ -81,7 +81,12 @@ function validatePhoneNumber(rawInput, selectedCountry, options = {}) {
     return fail('COUNTRY_MISMATCH');
   }
 
-  if (!parsed.isValid()) return fail('INVALID_FOR_COUNTRY', selectedCountry);
+  if (!parsed.isValid()) {
+    // No country selected: name the one the "+" prefix implies, or fall
+    // back to the generic message rather than "not valid for undefined".
+    const country = selectedCountry || parsed.country;
+    return country ? fail('INVALID_FOR_COUNTRY', country) : fail('INVALID');
+  }
 
   if (options.requireMobile) {
     const type = parsed.getType(); // needs the /max bundle - MOBILE | FIXED_LINE | FIXED_LINE_OR_MOBILE | ... | undefined

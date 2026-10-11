@@ -1,11 +1,11 @@
 import { Fragment, useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import { createMyBooking, getMyRegistration, getMyRegistrationAudit, listLeadFields, updateMyProgress } from '../api/client';
+import { createMyBooking, getMyRegistration, getMyRegistrationAudit, listLeadFields } from '../api/client';
 import { useAuth } from '../context/AuthContext';
 import { formatDate, formatDateTime } from '../utils/timezone';
 import { sortLeadTabs } from '../utils/leadTabs';
-
-const STAGES = ['Registered', 'Contacted', 'Qualified', 'Site Visit', 'Negotiation', 'Booking'];
+import { PERMISSIONS } from '../utils/permissions';
+import LeadQuickUpdate, { useLeadWorkflowOptions } from '../components/LeadQuickUpdate';
 
 function fieldValue(def, registration, customer) {
   if (def.scope === 'customer') return customer?.[def.fieldKey];
@@ -29,12 +29,13 @@ function formatFieldValue(def, value) {
 export default function PartnerJourney() {
   const { registrationId } = useParams();
   const navigate = useNavigate();
-  const { partner } = useAuth();
+  const { partner, hasPermission } = useAuth();
+  const workflowOptions = useLeadWorkflowOptions();
+  const canEdit = hasPermission(PERMISSIONS.MANAGE_LEADS);
   const [detail, setDetail] = useState(null);
   const [fieldDefs, setFieldDefs] = useState(null);
   const [activeTab, setActiveTab] = useState(null);
   const [events, setEvents] = useState([]);
-  const [nextStage, setNextStage] = useState('');
   const [error, setError] = useState(null);
   const [busy, setBusy] = useState(false);
 
@@ -47,7 +48,6 @@ export default function PartnerJourney() {
       ]);
       setDetail(d);
       setEvents(audit.events);
-      setNextStage(d.registration.currentStage);
       const enabled = fieldData.definitions.filter((f) => f.isEnabled);
       setFieldDefs(enabled);
       setActiveTab((t) => t || sortLeadTabs([...new Set(enabled.map((f) => f.group))])[0]);
@@ -61,18 +61,6 @@ export default function PartnerJourney() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [registrationId]);
 
-  const handleProgress = async () => {
-    setBusy(true);
-    setError(null);
-    try {
-      await updateMyProgress(registrationId, { stage: nextStage });
-      await load();
-    } catch (err) {
-      setError(err.response ? err.response.data.reason : err.message);
-    } finally {
-      setBusy(false);
-    }
-  };
 
   const handleBooking = async () => {
     setBusy(true);
@@ -106,22 +94,40 @@ export default function PartnerJourney() {
           <dd>{ownership ? ownership.workingOwner : registration.partnerId}</dd>
           <dt>Protection Expiry</dt>
           <dd>{formatDate(registration.protectionExpiry, partner.timezone)}</dd>
-          <dt>Lead Stage</dt>
-          <dd>{registration.currentStage}</dd>
+          <dt>Lead Status</dt>
+          <dd>{registration.currentStage}{registration.subStatus ? ` - ${registration.subStatus}` : ''}</dd>
+          {registration.scheduledAt && (
+            <>
+              <dt>Scheduled</dt>
+              <dd>{formatDateTime(registration.scheduledAt, partner.timezone)}</dd>
+            </>
+          )}
+          <dt>Assigned To</dt>
+          <dd>{detail.assignedToName || 'Unassigned'}</dd>
         </dl>
 
-        {!registration.isBooked && (
-          <div style={{ marginTop: '1rem', display: 'flex', gap: '0.6rem', alignItems: 'center' }}>
-            <select value={nextStage} onChange={(e) => setNextStage(e.target.value)}>
-              {STAGES.filter((s) => s !== 'Booking').map((s) => (
-                <option key={s} value={s}>{s}</option>
-              ))}
-            </select>
-            <button className="secondary" disabled={busy} onClick={handleProgress}>Add Progress</button>
+        {!registration.isBooked && canEdit && (
+          <div style={{ marginTop: '1rem' }}>
             <button className="primary" disabled={busy} onClick={handleBooking}>Complete Booking</button>
           </div>
         )}
         {registration.isBooked && <p className="hint">This registration has already been booked and handed over.</p>}
+      </div>
+
+      <div className="card">
+        <h3 style={{ marginTop: 0 }}>Quick Update</h3>
+        {workflowOptions.loaded ? (
+          <LeadQuickUpdate
+            lead={{ ...registration }}
+            customer={customer}
+            fieldDefs={workflowOptions.fieldDefs}
+            timezone={partner.timezone}
+            users={workflowOptions.users}
+            statuses={workflowOptions.statuses}
+            canEdit={canEdit}
+            onUpdated={() => load()}
+          />
+        ) : <p className="hint">Loading...</p>}
       </div>
 
       <div className="card">
