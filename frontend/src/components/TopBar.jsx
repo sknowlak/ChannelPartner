@@ -1,5 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import NotificationBell from './NotificationBell';
 
 const PAGE_TITLES = {
   '/my-leads': 'My Leads',
@@ -9,6 +10,8 @@ const PAGE_TITLES = {
   '/team/profile': 'My Profile',
   '/settings': 'Settings',
   '/settings/leads': 'Settings',
+  '/settings/leads/statuses': 'Settings',
+  '/settings/leads/notifications': 'Settings',
   '/settings/users': 'Settings',
   '/settings/integrations': 'Settings',
   '/lookup': 'Lookup Registration',
@@ -34,6 +37,7 @@ export default function TopBar() {
       <h2>{titleFor(pathname)}</h2>
       {partner && (
         <div className="top-bar-user">
+          <NotificationBell timezone={partner.timezone} />
           <span className="avatar">{partner.name.charAt(0).toUpperCase()}</span>
           <span>{partner.name}</span>
         </div>

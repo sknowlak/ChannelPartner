@@ -1758,3 +1758,158 @@ A read-only "Preview - what will actually be sent" box under the form renders th
 ## What Didn't Change
 
 The actual send-time behavior (`webhookService.js`'s `buildLeadPayload`/`buildRequest`/`renderTemplate`) is unchanged - this section is entirely about the setup UI: showing what variables exist, making them easy to insert, and previewing the result before saving.
+
+---
+
+# 46. Client CRM cURL -> Variable-Mapped Webhook (Leadrat)
+
+Prompted by "this is my client CRM cURL... I have given real data, instead of that I can push my leads by this webhook API by variable mapping." The client's cURL (Leadrat's `connect.leadrat.com/api/v1/integration/Webhook/...` endpoint, `API-Key` header, a flat JSON body of ~60 keys) is set up as a **Custom-format webhook** (section 43): the URL and headers are copied as-is, and every hard-coded value in the body is replaced with a `{{placeholder}}`, so each new lead is pushed with its own data.
+
+## Mapping
+
+| Leadrat key | Variable |
+|---|---|
+| Name / Email / Mobile / AlternateContactNo | `customer.name` / `customer.email` / `customer.mobile` (E.164, e.g. `+915671162648`) / `customer.alternateMobile` |
+| ChannelPartnerName / Mobile / Email | `partner.name` / `partner.mobile` / `partner.email` (new - see below) |
+| Location / Project / Notes / BhkType / PropertyType | `preferredLocation` / `projectId` / `notes` / `bhk` / `propertyType` |
+| Budget / LeadExpectedBudget | `budgetMax` / `budgetMin` |
+| Property / PropertySubType / Subsource / CampaignName / AgencyName | `customFields.propertyNames` / `.propertySubType` / `.subSource` / `.campaignNames` / `.agencyNames` |
+| PrimaryUser / SecondaryUser / Designation / Profession | `customFields.primaryOwner` / `.secondaryOwner` / `.designation` / `.profession` |
+| Utm* / CallRecordingUrl | `customFields.utmSource` ... `.utmId` / `customFields.callRecordingUrl` |
+| ReferenceId / RefrenceNo | `registrationId` - lets the client trace a lead back to this system |
+| LeadSource / AccountId | kept literal (`41`, the all-zero GUID) exactly as the client's cURL sends them |
+
+Keys with no matching field (State, City, Country, CountryCode, schedule/booking dates, etc.) stay literal `null`. Fires on `LEAD_CREATED` only - the Leadrat endpoint creates a lead per call, so `LEAD_UPDATED`/`STAGE_UPDATED` would create duplicates on the client side.
+
+## Send-time changes (`webhookService.js`)
+
+- **JSON-safe substitution.** Previously `renderTemplate` inserted raw strings, so a lead whose notes contained a `"` or a line break produced invalid JSON that the receiver would reject. When the request Content-Type is JSON (the default for Custom), values are now JSON-escaped, and a placeholder that is the entire quoted value (`"Email": "{{customer.email}}"`) renders as `null` when the lead has no value - matching the client's own "not provided" convention instead of `""`. Non-JSON custom bodies (XML, form text) keep the old raw substitution. Numbers stay as strings (the placeholder sits inside quotes); lists are comma-joined as before.
+- **Partner in the payload.** `buildLeadPayload` now includes `partner: { name, mobile, email, companyName }` (the lead's owning channel partner, loaded in `triggerWebhooks`/`resyncRange`), and `customer` gains `countryCode` (dial code, e.g. `+91`) and `nationalNumber`. Existing JSON/FORM webhooks just get these extra keys.
+
+The frontend preview (`utils/webhookPreview.js`) mirrors the same rules, and the variable picker gains a **Channel Partner** group plus the two new customer phone variables. Covered by `backend/tests/webhookTemplate.test.js`.
+
+---
+
+# 47. Import a Client CRM's cURL and Map Its Keys to CRM Fields
+
+Prompted by "these are all my lead fields which need to be made variables to map with the webhook - give UI to add a cURL-mapped webhook to CRM fields." Section 46 hand-built one Custom template from a client's cURL; this makes that a self-serve flow in Settings → Integrations, for any client CRM.
+
+## Flow
+
+1. **Import from cURL** (button next to "+ Add Webhook", or a link at the top of the webhook form) - paste the example request a client's API docs/Postman gives, real sample data and all.
+2. **Parse & Map Fields** - `utils/curlMapping.js`'s `parseCurl` reads the URL, method (`-X`; anything other than POST/PUT/PATCH falls back to POST, the only body-carrying methods the webhook model supports), headers (`-H`/`--header`) and body (`-d`/`--data`/`--data-raw`/`--data-binary`/`--json`), with shell quoting and `\` line continuations handled. Name defaults to the URL's host; format becomes **CUSTOM**.
+3. **Field Mapping table** (`components/FieldMappingTable.jsx`) - one row per key in the client's body (nested objects walked to their leaves, shown as dotted paths), each with a dropdown: **Not mapped (send null)**, **Fixed value...** (same value for every lead), or any CRM field grouped exactly as the variable chips are (Lead, Channel Partner, and the partner's own enabled lead-field tabs - so custom fields they've added appear automatically). A "Sample result" column shows what each key would carry for the sample lead.
+4. Save as normal. The table is also shown when **editing** any Custom webhook whose template is a JSON object (including the WHK-1 Leadrat webhook from section 46).
+
+## Auto-suggest
+
+`suggestRows` pre-fills every key whose example value is a string or `null`: a synonym table for common CRM names (`Mobile`/`Phone`/`ContactNo` → `customer.mobile`, `Budget` → `budgetMax`, `LeadExpectedBudget` → `budgetMin`, `ChannelPartnerName` → `partner.name`, `ReferenceId`/`RefrenceNo` → `registrationId`, ...), then an exact normalized match on the field key or label (so `UtmSource`, `Designation`, `CallRecordingUrl` etc. match the catalogue directly). Keys whose example is a number/boolean - typically the client's own constants, e.g. Leadrat's `"LeadSource": 41` - and string keys that match nothing stay **Fixed** with the example value, for the partner to review rather than being silently dropped. On the Leadrat cURL, 35 of 46 keys map automatically.
+
+## Design notes
+
+- **The body template stays the single source of truth.** The table parses `form.bodyTemplate` on every render and writes it back (pretty-printed) on every change; it holds no state of its own, so the raw template editor (now a collapsible "Body Template (raw)" section with the variable chips) and the table can never disagree. Non-JSON bodies (XML, form text) skip the table and open the raw editor.
+- **Fixed values keep their JSON type** - typing `41` stays a number, `true` a boolean; anything else is a string.
+- No backend change: the saved webhook is an ordinary CUSTOM template, sent through section 46's JSON-safe `renderTemplate` (escaping, `null` for empty whole-value placeholders).
+- `utils/webhookPreview.js`'s `SAMPLE_LEAD_PAYLOAD` now fills every default lead field (areas, purpose, buyer type, referral, owners, UTM, ...) so the Sample result column and preview show a realistic value for each mapping instead of `null`.
+
+Covered by `frontend/src/utils/curlMapping.test.js` (cURL parsing incl. quoting, auto-suggest on the Leadrat body, template round-trip, nested bodies).
+
+---
+
+# 48. Quick Lead Updates: Assign to Active Users, Status + Sub-Status + Note, Lead Preview
+
+Prompted by "update user assignment on every lead from the list of active users - when I open any lead or lead preview I can update users available in Manage Team, only active users. Same for status: when someone connects with a lead they can quickly update lead status, sub-status and notes."
+
+## Assignment: active users only, owner included
+
+`Registration.assignedTo` (the team member working the lead) and its grid dropdown already existed, but with gaps this section closes:
+
+- **Only ACTIVE users can be assigned** - `assignRegistration` previously accepted any team member, including INACTIVE ones. It now rejects them with "X is inactive - only active users can be assigned leads". Unassigning is always allowed.
+- **The account owner is assignable** - the owner isn't a `TeamMember` row, so `assignedTo` could never point at them. It now also accepts the `partnerId` itself (shown as "Name (Owner)").
+- **A deactivated assignee stays visible** - a lead assigned to someone later deactivated used to render "Unassigned" (the dropdown only listed active members, so the value had no matching option). `AssignSelect` now keeps the current assignee as a disabled "Name (inactive)" option, while still only *offering* active users.
+- `GET /my/assignable-users` (whole team can read) returns the owner + every team member with `status`, the single source both the grid and the quick-update panel use; `listMyRegistrations`/`getMyRegistration` resolve `assignedToName` from the same list (owner included).
+- `LEAD_ASSIGNED` audit events now carry a `changes` entry (`Assigned To: from → to`, by name), and `LEAD_ASSIGNED` was added to the History modal's **Assignment** tab - it was missing, so the tab never showed in-team reassignments.
+
+## Status + Sub-Status + Note
+
+- `config/leadStatuses.js` - the stage → sub-status catalogue (e.g. Contacted → Follow Up / Callback Requested / Not Answered / Busy / Not Reachable / Need More Info / Plan Postponed / Not Interested; Site Visit → Scheduled / Rescheduled / Done / Cancelled). Stages remain the fixed `currentStage` enum that duplicate protection, booking and commission key off; sub-statuses are descriptive only, so the list can grow freely. Served by `GET /my/lead-statuses`.
+- `Registration.subStatus` (new, default `''`).
+- `POST /my/registrations/:id/progress` now accepts `{ stage, subStatus, notes }`:
+  - `subStatus` must belong to `stage` (400 otherwise); omitted on a stage change, it's cleared (it belonged to the old stage). Unknown stages now get a 400 instead of a Mongoose 500.
+  - `notes` replaces the lead's Notes field with the latest note; the previous note is preserved in History as the `from` of the change.
+  - One `STAGE_UPDATED` audit event with a `changes` array (Status / Sub-Status / Notes), so History shows each as a bullet and the Notes tab picks up quick-update notes. A note-only update logs `LEAD_DETAILS_UPDATED` ("Added a note") and fires `LEAD_UPDATED` webhooks instead of `STAGE_UPDATED`. A request that changes nothing logs nothing.
+  - Backward compatible: callers sending only `{ stage }` (mobile app, inbound API) behave as before.
+- Webhook payload gains `subStatus`.
+
+## Where it shows
+
+- **`components/LeadQuickUpdate.jsx`** - shared panel: Assigned To (saves on change), Status, Sub-Status (options follow the chosen status), Note, **Update Status**. Read-only with a hint for roles without `MANAGE_LEADS`; booked leads show the assignment but no status form.
+- **Lead Preview** (`components/LeadPreviewDrawer.jsx`) - new preview icon on every My Leads row opens a right-side drawer: status badge, assignee, click-to-call mobile, email, project, source, location, latest note, the quick-update panel, and Full Details / Edit Lead / History buttons. Saving updates the grid row in place (no reload).
+- **Lead detail page** (`PartnerJourney.jsx`) - the old stage dropdown + "Add Progress" is replaced by the same Quick Update card; the summary shows Lead Status (with sub-status) and Assigned To.
+- **My Leads grid** - Status column shows the sub-status under the stage; the Assign To column uses `AssignSelect`.
+
+## What Didn't Change
+
+Stage values, booking (`Complete Booking`), ownership/protection, and the admin-level partner reassignment (section 29) are untouched. Assignment is still within one partner's own team only.
+
+
+---
+
+# 49. Custom Statuses, Status-Form Fields, Schedulers & Notifications
+
+Prompted by "under Lead I want to create status and sub-status and schedulers and notification and notification content... when updating a lead status, show any active lead fields, mandatory or not." Settings → Lead now has three sub-tabs (`LeadSettingsTabs.jsx`): **Fields** (section 36), **Statuses & Sub-Statuses**, **Notifications & Schedulers**.
+
+Decisions confirmed with the user: statuses are **fully custom**; timing offers immediately / 15 min / 30 min / 1 h / 1 day / 1 week / 1 month / 1 year before, at, or after the scheduled time, plus fully custom; recipients are **any combination** of assigned user, account owner, person who updated it, roles, and specific users; channels are **in-app first**, with Email and Webhook also available.
+
+## Statuses (`LeadStatus` model, `leadStatusService.js`)
+
+- Per-partner documents: name, colour, order, active, sub-statuses (each with id, name, active), and two flags that replace the old hardcoded stage names - **`isDefault`** (the status new leads start in, was `'Registered'`) and **`isBooking`** (the status Complete Booking sets, was `'Booking'`; never offered in the status picker). Exactly one default and at most one booking status per partner (setting the flag clears it elsewhere); the default can't be deactivated or deleted.
+- **Seeded once** from `config/leadStatuses.js` (the old six stages + sub-statuses). Unlike lead fields' additive `ensureBaseFields`, a default the partner deletes stays deleted.
+- `Registration.currentStage` lost its Mongoose enum and stores the status **name** (as does `subStatus`), so existing leads, History, webhooks and reports keep working unchanged. **Renaming a status or sub-status cascades** to every lead using it. Deleting a status that leads are in is refused with the count ("move them, or deactivate it instead"). Deactivated statuses/sub-statuses stop being offered but stay valid on leads already in them.
+- Lead creation (`createMyRegistration`, the public `createRegistration`) uses the default status; bookings (`createMyBooking`, `bookingController`) use the booking status and clear sub-status/schedule. The public `/registrations/:id/progress` validates the stage against the partner's catalogue; new public `GET /registrations/:id/statuses` lets the mobile app follow the partner's own order for "advance to next status" (previously a hardcoded list).
+
+## Status form: scheduler + lead fields
+
+Each status **and** each sub-status can:
+- **Ask for a date & time** (`requiresSchedule` + `scheduleLabel`, e.g. "Call back at", "Visit at"), stored on the new `Registration.scheduledAt` and cleared when the lead moves to a status that doesn't ask for one.
+- **Show chosen lead fields**, each optional or **mandatory** (`fields: [{ fieldKey, isRequired }]`), picked from every *enabled* lead field (`StatusFieldsPicker.jsx`, grouped by tab, searchable).
+
+The effective form is status + sub-status merged (a field is mandatory if either level says so): `resolveStatus()` on the server, mirrored by `resolveStatusForm()` in `LeadQuickUpdate.jsx`. `POST /my/registrations/:id/progress` now also accepts `scheduledAt` and `fields`. It rejects a missing schedule or an empty mandatory field (a mandatory field already filled on the lead counts as filled), writes field values with the same scope-aware logic and per-field diff as Edit Lead, and records Status / Sub-Status / schedule / field / note changes in one History entry (schedule values are ISO timestamps, rendered in the viewer's timezone by `LeadHistoryModal`). The Notes field is fed from the form's own Note box.
+
+The date & time input is interpreted in the user's **profile timezone** (`toZonedInputValue` / `fromZonedInputValue` in `utils/timezone.js`, tested), not the browser's. Otherwise a time typed on a machine in IST by a user whose profile is UTC showed back shifted by 5:30 everywhere else in the app.
+
+## Notifications (`NotificationRule`, `NotificationJob`, `Notification`, `notificationService.js`)
+
+- **Rule**: trigger (status, optional sub-status; blank = any), timing (`IMMEDIATE` / `BEFORE` / `AT` / `AFTER` + amount + unit MINUTES to YEARS), recipients (`assignedUser`, `owner`, `updatedBy`, `roleIds[]`, `userIds[]`, any combination; the owner counts as holding the Super Admin role), channels (`inApp`, `email`, `webhook` + URL/headers), content (`title`, `message` templates).
+- **Planning** (`planForStatusChange`, called after every status/schedule change, lead creation and booking): cancels the lead's still-PENDING jobs (they belonged to the old status/time) and creates a `NotificationJob` per matching rule with its `fireAt`. Schedule-based rules on a lead with no schedule aren't planned; a before/at reminder whose scheduled time has already passed is recorded as SKIPPED rather than fired late. The job snapshots who made the change, so "person who updated it" means the person at trigger time.
+- **Scheduler**: `startScheduler()` (from `server.js`) runs every 30 s. Jobs are claimed atomically (`PENDING` to `PROCESSING`) so overlapping runs can't double-send; jobs left PROCESSING by a crash are re-queued on start. Jobs due immediately are processed right away instead of waiting for a tick.
+- **Delivery**: recipients are resolved at fire time (current assignee), and **inactive users never receive anything**. In-app creates a `Notification` per recipient. Email uses `nodemailer` to each recipient's address, only when `SMTP_*` is set in `backend/.env` (otherwise logged as SKIPPED with the reason). Webhook sends one JSON POST per job (`event: LEAD_NOTIFICATION`, title, message, recipients with name/email/mobile, full lead payload) for a WhatsApp/SMS provider to fan out. Every channel/recipient outcome is stored on the job.
+- **Content variables**: everything a webhook template can use (`{{customer.name}}`, `{{budgetMax}}`, `{{customFields.x}}`, ...) plus `{{status}}`, `{{subStatus}}`, `{{schedule.at}}` (in the recipient's timezone), `{{assignedTo.name}}`, `{{updatedBy.name}}`, `{{recipient.name}}`. The editor has insert-variable chips and a live preview.
+- **Settings UI** (`NotificationSettings.jsx`): rule list with enable toggle, Edit, **Test** (renders against a real lead and sends to your own bell only), Delete (cancels its pending jobs), and a **Scheduled & Sent** log of jobs with per-channel results. It warns when a before/at/after rule targets a status that never asks for a date & time.
+- **Bell** (`NotificationBell.jsx` in the top bar): unread count, latest 50, click to mark read and open the lead, Mark all read; polls every 30 s.
+
+## API
+
+```http
+GET    /my/lead-statuses                       whole team
+POST   /my/lead-statuses                       MANAGE_SETTINGS
+PATCH  /my/lead-statuses/:statusId             MANAGE_SETTINGS (rename cascades to leads)
+DELETE /my/lead-statuses/:statusId             MANAGE_SETTINGS (refused while leads use it)
+GET    /my/notification-rules                  whole team
+POST   /my/notification-rules                  MANAGE_SETTINGS
+PATCH  /my/notification-rules/:ruleId          MANAGE_SETTINGS
+DELETE /my/notification-rules/:ruleId          MANAGE_SETTINGS
+POST   /my/notification-rules/:ruleId/test     whole team (sends to self, in-app)
+GET    /my/notification-jobs                   whole team
+GET    /my/notifications                       own inbox + unreadCount
+POST   /my/notifications/:id|all/read          own inbox
+GET    /registrations/:id/statuses             public (mobile app)
+```
+
+## Limits
+
+- Removing a sub-status doesn't rewrite leads already in it (the lead keeps the old name until its status next changes).
+- The unauthenticated `/registrations/:id/progress` (mobile, demo) validates the status name but doesn't enforce schedule/mandatory fields; those apply to the authenticated status form.
+- Reminders fire within about 30 s of their time (scheduler interval).
+
+Covered by `backend/tests/notificationRules.test.js` (fire-time maths incl. months/years; recipient combinations; inactive exclusion) and `frontend/src/utils/timezone.test.js`.

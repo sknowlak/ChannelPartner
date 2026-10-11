@@ -1,6 +1,5 @@
 const Customer = require('../models/Customer');
 const Registration = require('../models/Registration');
-const TeamMember = require('../models/TeamMember');
 const ProgressEvent = require('../models/ProgressEvent');
 const Booking = require('../models/Booking');
 const CommissionEligibility = require('../models/CommissionEligibility');
@@ -13,6 +12,25 @@ const { getSettings } = require('../services/settingsService');
 const { listFieldDefinitions } = require('../services/leadFieldDefinitionService');
 const { triggerWebhooks } = require('../services/webhookService');
 const { normalizeMobile, validateMobileField } = require('../utils/phone');
+const { listStatuses, getDefaultStatusName, getBookingStatusName, resolveStatus } = require('../services/leadStatusService');
+const { planForStatusChange } = require('../services/notificationService');
+const { loadOrgUsers, publicUser } = require('../services/userDirectoryService');
+
+// Everyone a lead can be assigned to (section 48): the account owner plus
+// every team member, inactive ones flagged - see userDirectoryService.
+async function loadAssignableUsers(partnerId) {
+  return (await loadOrgUsers(partnerId)).map(publicUser);
+}
+
+// Who did it, in the assignedTo/Notification id space (owner = partnerId).
+function actorOf(req) {
+  return { userId: req.memberId || req.partnerId, label: req.actorLabel };
+}
+
+function planNotifications(req, registration) {
+  planForStatusChange({ partnerId: registration.partnerId, registration, actor: actorOf(req) })
+    .catch((err) => console.error('[notifications] planning failed', err));
+}
 
 // The authenticated, ownership-enforced counterpart to registrationController
 // / bookingController - every operation here is scoped to req.partnerId (set
@@ -38,8 +56,8 @@ async function listMyRegistrations(req, res, next) {
     const registrations = await Registration.find({ partnerId: req.partnerId }).sort({ registeredAt: -1 });
     const customers = await Customer.find({ customerId: { $in: registrations.map((r) => r.customerId) } });
     const customerById = new Map(customers.map((c) => [c.customerId, c]));
-    const members = await TeamMember.find({ partnerId: req.partnerId });
-    const memberNameById = new Map(members.map((m) => [m.memberId, m.name]));
+    const users = await loadAssignableUsers(req.partnerId);
+    const userNameById = new Map(users.map((u) => [u.userId, u.name]));
 
     const enriched = registrations.map((r) => {
       const customer = customerById.get(r.customerId);
@@ -48,7 +66,7 @@ async function listMyRegistrations(req, res, next) {
         customerName: customer?.name || '',
         customerMobile: customer?.mobile || '',
         customer: customer ? customer.toObject() : null,
-        assignedToName: r.assignedTo ? memberNameById.get(r.assignedTo) || '' : ''
+        assignedToName: r.assignedTo ? userNameById.get(r.assignedTo) || '' : ''
       };
     });
 
@@ -172,13 +190,14 @@ async function createMyRegistration(req, res, next) {
         if (req.body[field] !== undefined && req.body[field] !== '') requirementDetails[field] = req.body[field];
       }
 
+      const initialStage = await getDefaultStatusName(partnerId);
       const registrationDoc = await Registration.create({
         registrationId,
         customerId: customerDoc.customerId,
         partnerId,
         projectId,
         status: 'ACCEPTED',
-        currentStage: 'Registered',
+        currentStage: initialStage,
         registeredAt,
         protectionStart: registeredAt,
         protectionExpiry,
@@ -194,7 +213,7 @@ async function createMyRegistration(req, res, next) {
       await ProgressEvent.create({
         eventId,
         registrationId,
-        stage: 'Registered',
+        stage: initialStage,
         eventType: 'REGISTRATION_CREATED',
         source: source || 'PARTNER_CRM'
       });
@@ -219,6 +238,7 @@ async function createMyRegistration(req, res, next) {
       // Fire-and-forget (section 43) - an external target being slow or
       // down must never delay or fail this response.
       triggerWebhooks(partnerId, 'LEAD_CREATED', registrationDoc, customerDoc).catch(() => {});
+      planNotifications(req, registrationDoc);
 
       return {
         status: 'ACCEPTED',
@@ -249,7 +269,13 @@ async function getMyRegistration(req, res, next) {
       CommissionEligibility.findOne({ registrationId: registration.registrationId })
     ]);
 
-    return res.json({ registration, customer, ownership, booking, commission });
+    let assignedToName = '';
+    if (registration.assignedTo) {
+      const users = await loadAssignableUsers(req.partnerId);
+      assignedToName = users.find((u) => u.userId === registration.assignedTo)?.name || '';
+    }
+
+    return res.json({ registration, customer, ownership, booking, commission, assignedToName });
   } catch (err) {
     next(err);
   }
@@ -355,28 +381,134 @@ async function updateMyProgress(req, res, next) {
     const { registration, error } = await assertOwnedRegistration(registrationId, req.partnerId);
     if (error) return res.status(error.status).json({ reason: error.reason });
 
-    const { stage, eventType, source } = req.body;
+    // Status update (sections 48/49): status, sub-status, an optional note,
+    // the schedule date & time when the chosen status asks for one, and the
+    // lead fields that status is configured to show (required ones must end
+    // up filled - either sent now or already on the lead). `subStatus`/
+    // `notes`/`fields` absent from the body leave things alone, so callers
+    // sending just { stage } (mobile app, inbound API) behave as before.
+    const { eventType, source } = req.body;
+    const stage = req.body.stage || registration.currentStage;
+    const stageChanged = stage !== registration.currentStage;
+    let subStatus;
+    if (req.body.subStatus !== undefined) subStatus = String(req.body.subStatus || '');
+    else subStatus = stageChanged ? '' : registration.subStatus || '';
+
+    const resolved = await resolveStatus(req.partnerId, stage, subStatus);
+    if (resolved.error) return res.status(400).json({ reason: resolved.error, fieldKey: resolved.status ? 'subStatus' : 'stage' });
+    if (stageChanged && (!resolved.status.isActive || resolved.status.isBooking)) {
+      return res.status(400).json({
+        reason: resolved.status.isBooking ? 'Use Complete Booking to book a lead' : `"${stage}" is inactive`,
+        fieldKey: 'stage'
+      });
+    }
+    if (resolved.subStatus && !resolved.subStatus.isActive && subStatus !== (registration.subStatus || '')) {
+      return res.status(400).json({ reason: `"${subStatus}" is inactive`, fieldKey: 'subStatus' });
+    }
+
+    // Schedule: required by the status -> must be a valid date; not asked
+    // for -> cleared (it belonged to the previous status).
+    let scheduledAt = null;
+    if (resolved.requiresSchedule) {
+      const raw = req.body.scheduledAt !== undefined ? req.body.scheduledAt : registration.scheduledAt;
+      const parsed = raw ? new Date(raw) : null;
+      if (!parsed || Number.isNaN(parsed.getTime())) {
+        return res.status(400).json({ reason: `${resolved.scheduleLabel} is required for ${subStatus || stage}`, fieldKey: 'scheduledAt' });
+      }
+      scheduledAt = parsed;
+    }
+
+    const fieldDefs = await listFieldDefinitions(req.partnerId);
+    const customer = await Customer.findOne({ customerId: registration.customerId });
+    const incoming = req.body.fields && typeof req.body.fields === 'object' ? req.body.fields : {};
+    const formDefs = resolved.fields
+      .map((f) => ({ ...f, def: fieldDefs.find((d) => d.fieldKey === f.fieldKey && d.isEnabled) }))
+      .filter((f) => f.def);
+
+    // The Notes field is filled from the update's own note box.
+    const notes = req.body.notes !== undefined ? String(req.body.notes || '').trim() : '';
+    for (const f of formDefs) {
+      let value = incoming[f.fieldKey] !== undefined ? incoming[f.fieldKey] : getCurrentFieldValue(f.def, registration, customer);
+      if (f.fieldKey === 'notes' && notes) value = notes;
+      const empty = value === undefined || value === null || value === '' || (Array.isArray(value) && value.length === 0);
+      if (f.isRequired && empty) {
+        return res.status(400).json({ reason: `${f.def.label} is required for ${subStatus || stage}`, fieldKey: f.fieldKey });
+      }
+    }
+    for (const fieldKey of ['mobile', 'alternateMobile']) {
+      if (!incoming[fieldKey] || !formDefs.some((f) => f.fieldKey === fieldKey)) continue;
+      const check = validateMobileField(incoming[fieldKey], incoming[`${fieldKey}Country`]);
+      if (!check.valid) return res.status(400).json({ reason: check.reason, fieldKey, code: check.code });
+      incoming[fieldKey] = check.e164;
+    }
+
+    const changes = [];
+    if (stageChanged) changes.push({ fieldKey: 'stage', label: 'Status', from: registration.currentStage, to: stage });
+    if (subStatus !== (registration.subStatus || '')) {
+      changes.push({ fieldKey: 'subStatus', label: 'Sub-Status', from: registration.subStatus || '', to: subStatus });
+    }
+    const prevSchedule = registration.scheduledAt ? new Date(registration.scheduledAt).toISOString() : '';
+    const nextSchedule = scheduledAt ? scheduledAt.toISOString() : '';
+    if (prevSchedule !== nextSchedule) {
+      changes.push({ fieldKey: 'scheduledAt', label: resolved.requiresSchedule ? resolved.scheduleLabel : 'Schedule', from: prevSchedule, to: nextSchedule });
+    }
+    // A note replaces the lead's Notes field (the latest note); every
+    // earlier note stays readable in History through this change entry.
+    if (notes && notes !== (registration.notes || '')) {
+      changes.push({ fieldKey: 'notes', label: 'Notes', from: registration.notes || '', to: notes });
+    }
+    // Lead fields shown on this status's form (section 49) - same scope-
+    // aware write + per-field diff as Edit Lead.
+    for (const f of formDefs) {
+      if (incoming[f.fieldKey] === undefined || f.fieldKey === 'notes') continue;
+      const { def } = f;
+      const value = incoming[f.fieldKey];
+      const normalized = (def.dataType === 'NUMBER' || def.dataType === 'CURRENCY') && value !== '' ? Number(value) : value;
+      const previous = getCurrentFieldValue(def, registration, customer);
+      if (valuesEqual(previous, normalized)) continue;
+      changes.push({ fieldKey: def.fieldKey, label: def.label, from: previous, to: normalized });
+      if (def.scope === 'customer') {
+        if (customer) customer[def.fieldKey] = value;
+      } else if (def.scope === 'registration') {
+        registration[def.fieldKey] = normalized;
+      } else {
+        registration.customFields = { ...registration.customFields, [def.fieldKey]: value };
+      }
+    }
+
+    if (changes.length === 0) {
+      return res.json({ registrationId, currentStage: registration.currentStage, subStatus: registration.subStatus || '', notes: registration.notes || '', scheduledAt: registration.scheduledAt || null });
+    }
+
     const previousStage = registration.currentStage;
+    const statusChanged = changes.some((c) => ['stage', 'subStatus', 'scheduledAt'].includes(c.fieldKey));
     registration.currentStage = stage;
+    registration.subStatus = subStatus;
+    registration.scheduledAt = scheduledAt;
+    if (notes) registration.notes = notes;
+    if (customer && changes.some((c) => formDefs.find((f) => f.fieldKey === c.fieldKey)?.def.scope === 'customer')) await customer.save();
     await registration.save();
 
-    const eventId = await nextId('PROG');
-    await ProgressEvent.create({ eventId, registrationId, stage, eventType: eventType || 'STAGE_UPDATED', source: source || 'PARTNER_CRM' });
+    if (statusChanged) {
+      const eventId = await nextId('PROG');
+      await ProgressEvent.create({ eventId, registrationId, stage, eventType: eventType || 'STAGE_UPDATED', source: source || 'PARTNER_CRM' });
+    }
 
+    const statusLabel = subStatus ? `${stage} (${subStatus})` : stage;
     await logEvent({
       registrationId,
-      eventType: 'STAGE_UPDATED',
+      eventType: statusChanged ? 'STAGE_UPDATED' : 'LEAD_DETAILS_UPDATED',
       actor: req.actorLabel,
       source: source || 'PARTNER_CRM',
-      previousValue: previousStage,
-      newValue: stage,
-      description: `Partner updated stage to ${stage}`
+      previousValue: statusChanged ? previousStage : undefined,
+      newValue: { stage, subStatus, changes },
+      description: statusChanged ? `Status updated to ${statusLabel}` : `Updated ${changes.length} field${changes.length === 1 ? '' : 's'}`
     });
 
-    const customer = await Customer.findOne({ customerId: registration.customerId });
-    triggerWebhooks(req.partnerId, 'STAGE_UPDATED', registration, customer).catch(() => {});
+    triggerWebhooks(req.partnerId, statusChanged ? 'STAGE_UPDATED' : 'LEAD_UPDATED', registration, customer).catch(() => {});
+    if (statusChanged) planNotifications(req, registration);
 
-    return res.json({ registrationId, currentStage: stage });
+    return res.json({ registrationId, currentStage: stage, subStatus, notes: registration.notes || '', scheduledAt: registration.scheduledAt || null });
   } catch (err) {
     next(err);
   }
@@ -399,8 +531,11 @@ async function createMyBooking(req, res, next) {
 
       await transferOperationalOwnershipToBuilder(registrationId);
       registration.isBooked = true;
-      registration.currentStage = 'Booking';
+      registration.currentStage = await getBookingStatusName(registration.partnerId);
+      registration.subStatus = '';
+      registration.scheduledAt = null;
       await registration.save();
+      planNotifications(req, registration);
 
       await logEvent({
         registrationId,
@@ -468,15 +603,22 @@ async function assignRegistration(req, res, next) {
     const { registration, error } = await assertOwnedRegistration(req.params.registrationId, req.partnerId);
     if (error) return res.status(error.status).json({ reason: error.reason });
 
+    // Only ACTIVE users (the owner, or a team member whose status is
+    // ACTIVE) can receive a lead - section 48. Unassigning ('') is always allowed.
     const { assignedTo } = req.body;
+    const users = await loadAssignableUsers(req.partnerId);
     let assignedToName = '';
     if (assignedTo) {
-      const member = await TeamMember.findOne({ memberId: assignedTo, partnerId: req.partnerId });
-      if (!member) return res.status(400).json({ reason: 'Unknown team member for this organisation', fieldKey: 'assignedTo' });
-      assignedToName = member.name;
+      const user = users.find((u) => u.userId === assignedTo);
+      if (!user) return res.status(400).json({ reason: 'Unknown user for this organisation', fieldKey: 'assignedTo' });
+      if (user.status !== 'ACTIVE') {
+        return res.status(400).json({ reason: `${user.name} is inactive - only active users can be assigned leads`, fieldKey: 'assignedTo' });
+      }
+      assignedToName = user.name;
     }
 
     const previousValue = registration.assignedTo;
+    const previousName = previousValue ? users.find((u) => u.userId === previousValue)?.name || previousValue : '';
     registration.assignedTo = assignedTo || '';
     await registration.save();
 
@@ -486,7 +628,10 @@ async function assignRegistration(req, res, next) {
         eventType: 'LEAD_ASSIGNED',
         actor: req.actorLabel,
         previousValue,
-        newValue: registration.assignedTo,
+        newValue: {
+          assignedTo: registration.assignedTo,
+          changes: [{ fieldKey: 'assignedTo', label: 'Assigned To', from: previousName, to: assignedToName || 'Unassigned' }]
+        },
         description: assignedToName ? `Assigned to ${assignedToName}` : 'Unassigned'
       });
     }
@@ -497,7 +642,29 @@ async function assignRegistration(req, res, next) {
   }
 }
 
+// GET /api/channel-partner/my/assignable-users - owner + team members with
+// status; readable by the whole team (anyone working leads needs the names).
+async function listAssignableUsers(req, res, next) {
+  try {
+    return res.json({ users: await loadAssignableUsers(req.partnerId) });
+  } catch (err) {
+    next(err);
+  }
+}
+
+// GET /api/channel-partner/my/lead-statuses - the partner's own status
+// catalogue (section 49), readable by the whole team.
+async function listLeadStatuses(req, res, next) {
+  try {
+    return res.json({ statuses: await listStatuses(req.partnerId) });
+  } catch (err) {
+    next(err);
+  }
+}
+
 module.exports = {
+  listAssignableUsers,
+  listLeadStatuses,
   listMyRegistrations,
   createMyRegistration,
   getMyRegistration,

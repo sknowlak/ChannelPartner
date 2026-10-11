@@ -1,14 +1,16 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { assignRegistration, listLeadFields, listMyRegistrations, listTeam } from '../api/client';
+import { assignRegistration, listLeadFields, listMyRegistrations } from '../api/client';
 import { useAuth } from '../context/AuthContext';
-import { formatDate } from '../utils/timezone';
+import { formatDate, formatDateTime } from '../utils/timezone';
 import { formatCurrency } from '../utils/currency';
 import { PERMISSIONS } from '../utils/permissions';
 import SortableTh from '../components/SortableTh';
 import ManageColumnsPanel from '../components/ManageColumnsPanel';
 import FilterPanel from '../components/FilterPanel';
 import LeadHistoryModal from '../components/LeadHistoryModal';
+import LeadPreviewDrawer from '../components/LeadPreviewDrawer';
+import { AssignSelect, useLeadWorkflowOptions } from '../components/LeadQuickUpdate';
 import { applySort, nextSortDir } from '../utils/sort';
 import { loadColumnPrefs, saveColumnPrefs } from '../utils/columnPrefs';
 import { sortLeadTabs } from '../utils/leadTabs';
@@ -53,6 +55,14 @@ function EditIcon() {
   return (
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
       <path d="M12 20h9M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function PreviewIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+      <path d="M4 4h16v16H4V4ZM14 4v16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }
@@ -129,7 +139,7 @@ function sortFieldDefsForGrid(defs) {
   return [...defs].sort((a, b) => rank.get(a.group) - rank.get(b.group));
 }
 
-function buildColumns(fieldDefs, partnerTimezone, currency, members, canAssign, onAssign) {
+function buildColumns(fieldDefs, partnerTimezone, currency, users, canAssign, onAssign) {
   const fieldColumns = fieldDefs.map((def) => {
     // The lead's name is the row's primary identity, so it gets the same
     // avatar-circle + name/mobile treatment a CRM lead grid uses everywhere -
@@ -164,21 +174,31 @@ function buildColumns(fieldDefs, partnerTimezone, currency, members, canAssign, 
   });
 
   const systemColumns = [
-    { key: 'stage', label: 'Status', sortValue: (r) => r.currentStage, render: (r) => r.currentStage, text: (r) => r.currentStage },
+    {
+      key: 'stage',
+      label: 'Status',
+      sortValue: (r) => `${r.currentStage} ${r.subStatus || ''}`,
+      render: (r) => (
+        <span>
+          {r.currentStage}
+          {r.subStatus && <span className="sub-status">{r.subStatus}</span>}
+          {r.scheduledAt && <span className="sub-status">🕒 {formatDateTime(r.scheduledAt, partnerTimezone)}</span>}
+        </span>
+      ),
+      text: (r) => (r.subStatus ? `${r.currentStage} - ${r.subStatus}` : r.currentStage)
+    },
     {
       key: 'assignedTo',
       label: 'Assign To',
       sortValue: (r) => r.assignedToName || '',
       render: (r) => (
-        <select
-          value={r.assignedTo || ''}
+        <AssignSelect
+          users={users}
+          value={r.assignedTo}
           disabled={!canAssign}
-          onChange={(e) => onAssign(r.registrationId, e.target.value)}
+          onChange={(userId) => onAssign(r.registrationId, userId)}
           style={{ padding: '0.35rem 0.5rem', fontSize: '0.82rem', minWidth: '9rem' }}
-        >
-          <option value="">Unassigned</option>
-          {members.map((m) => <option key={m.memberId} value={m.memberId}>{m.name}</option>)}
-        </select>
+        />
       ),
       text: (r) => r.assignedToName || 'Unassigned'
     },
@@ -210,7 +230,6 @@ function buildDefaultColumnState(fieldDefs) {
 export default function MyLeads() {
   const [registrations, setRegistrations] = useState(null);
   const [fieldDefs, setFieldDefs] = useState([]);
-  const [members, setMembers] = useState([]);
   const [fieldFilters, setFieldFilters] = useState({});
   const [error, setError] = useState(null);
   const [filters, setFilters] = useState(initialFilters);
@@ -221,6 +240,8 @@ export default function MyLeads() {
   const [showColumnPanel, setShowColumnPanel] = useState(false);
   const [showFilterPanel, setShowFilterPanel] = useState(false);
   const [historyFor, setHistoryFor] = useState(null);
+  const [previewFor, setPreviewFor] = useState(null);
+  const workflowOptions = useLeadWorkflowOptions();
   const [refreshing, setRefreshing] = useState(false);
   const { partner, hasPermission } = useAuth();
   const navigate = useNavigate();
@@ -251,13 +272,18 @@ export default function MyLeads() {
     }
   };
 
+  // Keeps the grid row in step with whatever the Lead Preview drawer saved.
+  const handlePreviewUpdate = (registrationId, patch, { fieldsChanged } = {}) => {
+    setRegistrations((regs) => regs.map((r) => (r.registrationId === registrationId ? { ...r, ...patch } : r)));
+    if (fieldsChanged) refresh();
+  };
+
   useEffect(() => {
-    Promise.all([listMyRegistrations(), listLeadFields(), listTeam()])
-      .then(async ([{ data }, { data: fieldData }, { data: teamData }]) => {
+    Promise.all([listMyRegistrations(), listLeadFields()])
+      .then(async ([{ data }, { data: fieldData }]) => {
         setRegistrations(data.registrations);
         const enabled = sortFieldDefsForGrid(fieldData.definitions.filter((d) => d.isEnabled));
         setFieldDefs(enabled);
-        setMembers(teamData.members.filter((m) => m.status === 'ACTIVE'));
         const { order, hidden } = buildDefaultColumnState(enabled);
         setColumnPrefs(await loadColumnPrefs(GRID_KEY, order, hidden));
       })
@@ -266,9 +292,9 @@ export default function MyLeads() {
   }, []);
 
   const allColumns = useMemo(
-    () => buildColumns(fieldDefs, partner.timezone, partner.currency, members, canAssign, handleAssign),
+    () => buildColumns(fieldDefs, partner.timezone, partner.currency, workflowOptions.users, canAssign, handleAssign),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [fieldDefs, partner.timezone, partner.currency, members, canAssign]
+    [fieldDefs, partner.timezone, partner.currency, workflowOptions.users, canAssign]
   );
   const columnByKey = useMemo(() => new Map(allColumns.map((c) => [c.key, c])), [allColumns]);
   const selectFieldDefs = useMemo(() => fieldDefs.filter((d) => d.dataType === 'SELECT'), [fieldDefs]);
@@ -441,6 +467,7 @@ export default function MyLeads() {
                     <td key={col.key} title={col.text(r)}>{col.render(r)}</td>
                   ))}
                   <td style={{ whiteSpace: 'nowrap' }}>
+                    <button className="icon-btn preview" title="Preview &amp; quick update" onClick={() => setPreviewFor(r.registrationId)}><PreviewIcon /></button>
                     <button className="icon-btn view" title="View" onClick={() => navigate(`/registrations/${r.registrationId}`)}><ViewIcon /></button>
                     <button className="icon-btn edit" title="Edit" onClick={() => navigate(`/registrations/${r.registrationId}/edit`)}><EditIcon /></button>
                     <button className="icon-btn history" title="History" onClick={() => setHistoryFor(r.registrationId)}><HistoryIcon /></button>
@@ -490,6 +517,18 @@ export default function MyLeads() {
           </div>
         )}
       </div>
+
+      {previewFor && (
+        <LeadPreviewDrawer
+          registrationId={previewFor}
+          timezone={partner.timezone}
+          options={workflowOptions}
+          canEdit={canAssign}
+          onClose={() => setPreviewFor(null)}
+          onUpdated={handlePreviewUpdate}
+          onShowHistory={(id) => setHistoryFor(id)}
+        />
+      )}
 
       {historyFor && (
         <LeadHistoryModal registrationId={historyFor} timezone={partner.timezone} onClose={() => setHistoryFor(null)} />

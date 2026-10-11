@@ -2,6 +2,7 @@ const IntegrationWebhook = require('../models/IntegrationWebhook');
 const WebhookDelivery = require('../models/WebhookDelivery');
 const Registration = require('../models/Registration');
 const Customer = require('../models/Customer');
+const Partner = require('../models/Partner');
 const { nextId } = require('../utils/idGenerator');
 
 const SEND_TIMEOUT_MS = 10000;
@@ -10,7 +11,9 @@ const SEND_TIMEOUT_MS = 10000;
 // 43) - a flat, self-describing snapshot of the lead at the moment of the
 // event. `customFields` is passed through as-is (JSON/CUSTOM formats keep
 // it nested; FORM flattens it like everything else, see flattenForForm).
-function buildLeadPayload(registration, customer, eventType) {
+// `partner` is the channel partner who owns the lead - a receiving CRM
+// usually wants to know which partner sent it (ChannelPartnerName etc.).
+function buildLeadPayload(registration, customer, eventType, partner) {
   const reg = registration.toObject ? registration.toObject() : registration;
   return {
     event: eventType,
@@ -18,6 +21,7 @@ function buildLeadPayload(registration, customer, eventType) {
     registrationId: reg.registrationId,
     projectId: reg.projectId || '',
     stage: reg.currentStage,
+    subStatus: reg.subStatus || '',
     isBooked: !!reg.isBooked,
     requirementType: reg.requirementType || '',
     propertyType: reg.propertyType || '',
@@ -29,7 +33,15 @@ function buildLeadPayload(registration, customer, eventType) {
     leadSource: reg.leadSource || '',
     notes: reg.notes || '',
     customFields: reg.customFields || {},
-    customer: customer ? { name: customer.name, mobile: customer.mobile, email: customer.email, alternateMobile: customer.alternateMobile } : null
+    customer: customer ? {
+      name: customer.name,
+      mobile: customer.mobile,
+      countryCode: customer.mobileDialCode || '',
+      nationalNumber: customer.mobileNationalNumber || '',
+      email: customer.email,
+      alternateMobile: customer.alternateMobile
+    } : null,
+    partner: partner ? { name: partner.name, mobile: partner.mobile, email: partner.email, companyName: partner.companyName || '' } : null
   };
 }
 
@@ -49,11 +61,26 @@ function flattenForForm(obj, prefix = '') {
 // {{path.to.value}} substitution against the payload object - deliberately
 // simple (no logic/loops) so a partner can paste in exactly the JSON/XML/
 // form body their system expects, "like a cURL --data body you fill in once".
-function renderTemplate(template, payload) {
-  return template.replace(/\{\{\s*([\w.]+)\s*\}\}/g, (_, path) => {
-    const value = path.split('.').reduce((acc, key) => (acc === null || acc === undefined ? undefined : acc[key]), payload);
-    if (value === undefined || value === null) return '';
-    return Array.isArray(value) ? value.join(',') : String(value);
+//
+// With `json: true` (the body is sent as JSON) values are JSON-escaped, so a
+// quote or line break in e.g. notes can't break the body, and a placeholder
+// that IS the whole string value ("Email": "{{customer.email}}") becomes
+// `null` when the lead has no value - matching how most CRM APIs (e.g.
+// Leadrat's webhook) expect "not provided" to look, rather than "".
+function lookupPath(payload, path) {
+  const value = path.split('.').reduce((acc, key) => (acc === null || acc === undefined ? undefined : acc[key]), payload);
+  if (value === undefined || value === null || value === '') return null;
+  return Array.isArray(value) ? value.join(',') : String(value);
+}
+
+function renderTemplate(template, payload, { json = false } = {}) {
+  let out = template;
+  if (json) {
+    out = out.replace(/"\{\{\s*([\w.]+)\s*\}\}"/g, (_, path) => JSON.stringify(lookupPath(payload, path)));
+  }
+  return out.replace(/\{\{\s*([\w.]+)\s*\}\}/g, (_, path) => {
+    const value = lookupPath(payload, path) ?? '';
+    return json ? JSON.stringify(value).slice(1, -1) : value;
   });
 }
 
@@ -67,8 +94,10 @@ function buildRequest(webhook, payload) {
     for (const [key, value] of flattenForForm(payload)) params.append(key, value);
     body = params.toString();
   } else if (webhook.format === 'CUSTOM' && webhook.bodyTemplate) {
-    if (!headers['Content-Type']) headers['Content-Type'] = 'application/json';
-    body = renderTemplate(webhook.bodyTemplate, payload);
+    const contentTypeKey = Object.keys(headers).find((k) => k.toLowerCase() === 'content-type');
+    if (!contentTypeKey) headers['Content-Type'] = 'application/json';
+    const contentType = contentTypeKey ? String(headers[contentTypeKey]) : 'application/json';
+    body = renderTemplate(webhook.bodyTemplate, payload, { json: /json/i.test(contentType) });
   } else {
     if (!headers['Content-Type']) headers['Content-Type'] = 'application/json';
     body = JSON.stringify(payload);
@@ -126,7 +155,8 @@ async function sendWebhook(webhook, payload, eventType, registrationId, partnerI
 async function triggerWebhooks(partnerId, eventType, registration, customer) {
   const webhooks = await IntegrationWebhook.find({ partnerId, isEnabled: true, events: eventType });
   if (webhooks.length === 0) return;
-  const payload = buildLeadPayload(registration, customer, eventType);
+  const partner = await Partner.findOne({ partnerId });
+  const payload = buildLeadPayload(registration, customer, eventType, partner);
   await Promise.all(webhooks.map((wh) =>
     sendWebhook(wh, payload, eventType, registration.registrationId, partnerId).catch(() => {})
   ));
@@ -168,13 +198,14 @@ async function resyncRange(partnerId, webhookId, fromDate, toDate) {
   const registrations = await Registration.find(query);
   const customers = await Customer.find({ customerId: { $in: registrations.map((r) => r.customerId) } });
   const customerById = new Map(customers.map((c) => [c.customerId, c]));
+  const partner = await Partner.findOne({ partnerId });
 
   for (const reg of registrations) {
-    const payload = buildLeadPayload(reg, customerById.get(reg.customerId), 'SYNC');
+    const payload = buildLeadPayload(reg, customerById.get(reg.customerId), 'SYNC', partner);
     await sendWebhook(webhook, payload, 'SYNC', reg.registrationId, partnerId);
   }
 
   return { total: registrations.length };
 }
 
-module.exports = { buildLeadPayload, triggerWebhooks, retryDelivery, resyncRange };
+module.exports = { buildLeadPayload, renderTemplate, triggerWebhooks, retryDelivery, resyncRange };

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { getMyRegistrationAudit } from '../api/client';
-import { dayLabel, formatTime } from '../utils/timezone';
+import { dayLabel, formatDateTime, formatTime } from '../utils/timezone';
 
 const CATEGORY_TABS = [
   { key: 'all', label: 'All' },
@@ -12,7 +12,7 @@ const CATEGORY_TABS = [
 const STATUS_EVENT_TYPES = new Set([
   'STAGE_UPDATED', 'REGISTRATION_ACCEPTED', 'REGISTRATION_ATTEMPT_REJECTED', 'BOOKING_COMPLETED', 'HANDOVER_COMPLETED'
 ]);
-const ASSIGNMENT_EVENT_TYPES = new Set(['OPERATIONAL_OWNERSHIP_TRANSFERRED', 'PARTNER_ATTRIBUTION_PRESERVED']);
+const ASSIGNMENT_EVENT_TYPES = new Set(['LEAD_ASSIGNED', 'OPERATIONAL_OWNERSHIP_TRANSFERRED', 'PARTNER_ATTRIBUTION_PRESERVED']);
 
 function matchesCategory(ev, category) {
   if (category === 'all') return true;
@@ -22,8 +22,12 @@ function matchesCategory(ev, category) {
   return true;
 }
 
-function formatChangeValue(value) {
+// Schedule changes (section 49) are stored as ISO timestamps.
+const ISO_DATE_TIME = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}/;
+
+function formatChangeValue(value, timezone) {
   if (value === undefined || value === null || value === '') return '(empty)';
+  if (typeof value === 'string' && ISO_DATE_TIME.test(value)) return formatDateTime(value, timezone);
   if (Array.isArray(value)) return value.join(', ') || '(empty)';
   return String(value);
 }
@@ -31,13 +35,13 @@ function formatChangeValue(value) {
 // A change entry is either {fieldKey,label,value} (set at creation - always
 // "added") or {fieldKey,label,from,to} (an edit - "added" if it had no
 // previous value, "updated" otherwise).
-function ChangeLine({ change }) {
+function ChangeLine({ change, timezone }) {
   if (change.value !== undefined) {
     return (
       <li>
         <strong>{change.label}</strong> <span className="history-verb">added</span>
         <span className="history-arrow">→</span>
-        <span className="history-value">{formatChangeValue(change.value)}</span>
+        <span className="history-value">{formatChangeValue(change.value, timezone)}</span>
       </li>
     );
   }
@@ -46,7 +50,7 @@ function ChangeLine({ change }) {
     <li>
       <strong>{change.label}</strong> <span className="history-verb">{hadPrevious ? 'updated' : 'added'}</span>
       <span className="history-arrow">→</span>
-      <span className="history-value">{formatChangeValue(change.to)}</span>
+      <span className="history-value">{formatChangeValue(change.to, timezone)}</span>
     </li>
   );
 }
@@ -119,7 +123,7 @@ export default function LeadHistoryModal({ registrationId, timezone, onClose }) 
                         </div>
                         {ev.newValue?.changes?.length > 0 ? (
                           <ul className="history-changes">
-                            {ev.newValue.changes.map((c, i) => <ChangeLine change={c} key={i} />)}
+                            {ev.newValue.changes.map((c, i) => <ChangeLine change={c} timezone={timezone} key={i} />)}
                           </ul>
                         ) : (
                           <div className="history-description">{ev.description}</div>

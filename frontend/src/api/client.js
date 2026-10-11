@@ -63,6 +63,19 @@ export const updateGridPreferences = (gridKey, prefs) => client.patch(`/my/grid-
 // Manage Team (spec section 32) - readable by the whole team, mutable only
 // by whoever holds the MANAGE_TEAM permission (enforced server-side too).
 export const listTeam = () => client.get('/my/team');
+export const listAssignableUsers = () => client.get('/my/assignable-users');
+export const listLeadStatuses = () => client.get('/my/lead-statuses');
+export const createLeadStatus = (payload) => client.post('/my/lead-statuses', payload);
+export const updateLeadStatus = (statusId, payload) => client.patch(`/my/lead-statuses/${statusId}`, payload);
+export const deleteLeadStatus = (statusId) => client.delete(`/my/lead-statuses/${statusId}`);
+export const listNotificationRules = () => client.get('/my/notification-rules');
+export const createNotificationRule = (payload) => client.post('/my/notification-rules', payload);
+export const updateNotificationRule = (ruleId, payload) => client.patch(`/my/notification-rules/${ruleId}`, payload);
+export const deleteNotificationRule = (ruleId) => client.delete(`/my/notification-rules/${ruleId}`);
+export const testNotificationRule = (ruleId, registrationId) => client.post(`/my/notification-rules/${ruleId}/test`, { registrationId });
+export const listNotificationJobs = (params) => client.get('/my/notification-jobs', { params });
+export const listMyNotifications = () => client.get('/my/notifications');
+export const markNotificationRead = (notificationId) => client.post(`/my/notifications/${notificationId}/read`);
 export const getTeamMember = (memberId) => client.get(`/my/team/${memberId}`);
 export const createTeamMember = (payload) => client.post('/my/team', payload);
 export const updateTeamMember = (memberId, payload) => client.patch(`/my/team/${memberId}`, payload);

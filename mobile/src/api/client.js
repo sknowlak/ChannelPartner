@@ -13,6 +13,7 @@ export const registerCustomer = (payload) => client.post('/registrations', paylo
 export const getRegistration = (registrationId, view = 'partner') =>
   client.get(`/registrations/${registrationId}`, { params: { view } });
 
+export const getStatuses = (registrationId) => client.get(`/registrations/${registrationId}/statuses`);
 export const updateProgress = (registrationId, payload) =>
   client.post(`/registrations/${registrationId}/progress`, payload);
 

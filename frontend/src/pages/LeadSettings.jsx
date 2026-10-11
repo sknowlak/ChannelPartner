@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { createLeadField, deleteLeadField, getMyProfile, listLeadFields, updateLeadField } from '../api/client';
 import { PERMISSIONS } from '../utils/permissions';
 import SettingsCategories from '../components/SettingsCategories';
+import LeadSettingsTabs from '../components/LeadSettingsTabs';
 
 const DATA_TYPES = ['TEXT', 'TEXTAREA', 'NUMBER', 'CURRENCY', 'DATE', 'SELECT', 'LIST'];
 const initialForm = { label: '', group: 'Additional Info', dataType: 'TEXT', options: '', isRequired: false };
@@ -84,6 +85,7 @@ export default function LeadSettings() {
       </div>
 
       <SettingsCategories />
+      <LeadSettingsTabs />
 
       {error && <div className="error-box">{error}</div>}
 

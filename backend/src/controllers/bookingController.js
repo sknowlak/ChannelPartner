@@ -5,6 +5,7 @@ const { nextId } = require('../utils/idGenerator');
 const { transferOperationalOwnershipToBuilder } = require('../services/ownershipService');
 const { logEvent } = require('../services/auditService');
 const { withIdempotency } = require('../services/idempotencyService');
+const { getBookingStatusName } = require('../services/leadStatusService');
 
 // POST /api/channel-partner/registrations/:registrationId/booking
 // The responsibility-transfer event (spec section 13): creates the booking,
@@ -31,7 +32,9 @@ async function createBooking(req, res, next) {
 
       await transferOperationalOwnershipToBuilder(registrationId);
       registration.isBooked = true;
-      registration.currentStage = 'Booking';
+      registration.currentStage = await getBookingStatusName(registration.partnerId);
+      registration.subStatus = '';
+      registration.scheduledAt = null;
       await registration.save();
 
       await logEvent({

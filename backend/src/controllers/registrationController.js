@@ -7,6 +7,7 @@ const { findDuplicate } = require('../services/duplicateService');
 const { createInitialOwnership, getOwnership } = require('../services/ownershipService');
 const { logEvent } = require('../services/auditService');
 const { withIdempotency } = require('../services/idempotencyService');
+const { getDefaultStatusName, listStatuses, resolveStatus } = require('../services/leadStatusService');
 const { buildBuilderView } = require('../services/visibilityService');
 const { getSettings } = require('../services/settingsService');
 const { normalizeMobile, validateMobile } = require('../utils/phone');
@@ -74,7 +75,7 @@ async function createRegistration(req, res, next) {
         partnerId,
         projectId,
         status: 'ACCEPTED',
-        currentStage: 'Registered',
+        currentStage: await getDefaultStatusName(partnerId),
         registeredAt,
         protectionStart: registeredAt,
         protectionExpiry,
@@ -88,7 +89,7 @@ async function createRegistration(req, res, next) {
       await ProgressEvent.create({
         eventId,
         registrationId,
-        stage: 'Registered',
+        stage: registration.currentStage,
         eventType: 'REGISTRATION_CREATED',
         source: source || 'PARTNER_CRM'
       });
@@ -182,8 +183,12 @@ async function updateProgress(req, res, next) {
     const registration = await Registration.findOne({ registrationId });
     if (!registration) return res.status(404).json({ reason: 'Registration not found' });
 
+    const resolved = await resolveStatus(registration.partnerId, stage, '');
+    if (resolved.error) return res.status(400).json({ reason: resolved.error });
+
     const previousStage = registration.currentStage;
     registration.currentStage = stage;
+    registration.subStatus = '';
     await registration.save();
 
     const eventId = await nextId('PROG');
@@ -211,4 +216,19 @@ async function updateProgress(req, res, next) {
   }
 }
 
-module.exports = { createRegistration, getRegistration, updateProgress };
+// GET /registrations/:registrationId/statuses - the owning partner's active
+// status names in their configured order (section 49), so the mobile app's
+// "advance to next status" follows the partner's own custom pipeline.
+async function listRegistrationStatuses(req, res, next) {
+  try {
+    const registration = await Registration.findOne({ registrationId: req.params.registrationId });
+    if (!registration) return res.status(404).json({ reason: 'Registration not found' });
+    const statuses = await listStatuses(registration.partnerId);
+    return res.json({ statuses: statuses.filter((s) => s.isActive && !s.isBooking).map((s) => s.name) });
+  } catch (err) {
+    next(err);
+  }
+}
+
+module.exports = {
+  listRegistrationStatuses, createRegistration, getRegistration, updateProgress };

@@ -1,14 +1,17 @@
 import { useCallback, useState } from 'react';
 import { useFocusEffect } from '@react-navigation/native';
 import { ActivityIndicator, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import { createBooking, getAuditTimeline, getRegistration, updateProgress } from '../api/client';
+import { createBooking, getAuditTimeline, getRegistration, getStatuses, updateProgress } from '../api/client';
 
-const STAGES = ['Registered', 'Contacted', 'Qualified', 'Site Visit', 'Negotiation'];
+// Fallback only - the real order is the partner's own (custom) status list,
+// fetched per lead (section 49).
+const DEFAULT_STAGES = ['Registered', 'Contacted', 'Qualified', 'Site Visit', 'Negotiation'];
 
 export default function PartnerJourneyScreen({ route, navigation }) {
   const { registrationId } = route.params;
   const [registration, setRegistration] = useState(null);
   const [events, setEvents] = useState([]);
+  const [stages, setStages] = useState(DEFAULT_STAGES);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState(null);
 
@@ -20,6 +23,7 @@ export default function PartnerJourneyScreen({ route, navigation }) {
       ]);
       setRegistration(reg);
       setEvents(audit.events);
+      getStatuses(registrationId).then(({ data }) => data.statuses.length && setStages(data.statuses)).catch(() => {});
     } catch (err) {
       setError(err.response?.data?.reason || err.message);
     }
@@ -32,8 +36,8 @@ export default function PartnerJourneyScreen({ route, navigation }) {
   );
 
   const advanceStage = async () => {
-    const currentIndex = STAGES.indexOf(registration.currentStage);
-    const next = STAGES[currentIndex + 1] || STAGES[STAGES.length - 1];
+    const currentIndex = stages.indexOf(registration.currentStage);
+    const next = stages[currentIndex + 1] || stages[stages.length - 1];
     setBusy(true);
     try {
       await updateProgress(registrationId, { stage: next, actor: registration.partnerId, source: 'PARTNER_CRM' });
