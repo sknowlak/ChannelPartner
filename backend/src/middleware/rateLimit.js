@@ -46,10 +46,29 @@ function loginRateLimit(req, res, next) {
   return next();
 }
 
+// Self-signup creates whole accounts, so every attempt counts (not just
+// failures): at most 10 per IP per hour.
+const SIGNUP_WINDOW_MS = 60 * 60 * 1000;
+const MAX_SIGNUPS_PER_IP = 10;
+const signups = new Map();
+
+function signupRateLimit(req, res, next) {
+  const now = Date.now();
+  const key = req.ip;
+  const list = (signups.get(key) || []).filter((t) => now - t < SIGNUP_WINDOW_MS);
+  if (list.length >= MAX_SIGNUPS_PER_IP) {
+    res.set('Retry-After', String(Math.ceil(SIGNUP_WINDOW_MS / 1000)));
+    return res.status(429).json({ reason: 'Too many sign-ups from this network - please try again later' });
+  }
+  signups.set(key, [...list, now]);
+  return next();
+}
+
 // Drop stale keys now and then so the map can't grow without bound.
 setInterval(() => {
   const now = Date.now();
   for (const key of failures.keys()) recent(key, now);
+  for (const [key, list] of signups) if (!list.some((t) => now - t < SIGNUP_WINDOW_MS)) signups.delete(key);
 }, WINDOW_MS).unref();
 
-module.exports = { loginRateLimit };
+module.exports = { loginRateLimit, signupRateLimit };

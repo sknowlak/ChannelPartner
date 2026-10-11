@@ -14,13 +14,12 @@ export default function RegistrationResultScreen({ route, navigation }) {
       {isAccepted ? (
         <View style={styles.card}>
           <Row label="Registration ID" value={result.registrationId} />
-          <Row label="Ownership" value={result.owner} />
           <Row label="Protection Window" value={`${result.protectionDays} Days`} />
           <Row label="Protected Until" value={new Date(result.expiryDate).toLocaleDateString()} />
         </View>
       ) : (
         <View style={styles.card}>
-          <Row label="Reason" value={result.reasonCode} />
+          <Row label="Reason" value={result.reason || result.reasonCode} />
           <Row label="Protected Until" value={result.protectedUntil ? new Date(result.protectedUntil).toLocaleDateString() : '-'} />
         </View>
       )}
@@ -28,9 +27,9 @@ export default function RegistrationResultScreen({ route, navigation }) {
       {isAccepted && (
         <TouchableOpacity
           style={styles.button}
-          onPress={() => navigation.navigate('PartnerJourney', { registrationId: result.registrationId })}
+          onPress={() => navigation.replace('PartnerJourney', { registrationId: result.registrationId })}
         >
-          <Text style={styles.buttonText}>Open Partner Journey</Text>
+          <Text style={styles.buttonText}>Open Lead</Text>
         </TouchableOpacity>
       )}
     </View>
@@ -47,7 +46,7 @@ function Row({ label, value }) {
 }
 
 const styles = StyleSheet.create({
-  container: { padding: 20, paddingTop: 60 },
+  container: { padding: 20 },
   title: { fontSize: 22, fontWeight: '700', marginBottom: 16, color: '#14213d' },
   badge: { alignSelf: 'flex-start', paddingHorizontal: 12, paddingVertical: 4, borderRadius: 999, marginBottom: 16 },
   accepted: { backgroundColor: '#e1f5e5' },

@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useState } from 'react';
-import { Link, useNavigate, useParams } from 'react-router-dom';
-import { createMyBooking, getMyRegistration, getMyRegistrationAudit, listLeadFields } from '../api/client';
+import { Link, useParams } from 'react-router-dom';
+import { getMyRegistration, getMyRegistrationAudit, listLeadFields } from '../api/client';
 import { useAuth } from '../context/AuthContext';
 import { formatDate, formatDateTime } from '../utils/timezone';
 import { sortLeadTabs } from '../utils/leadTabs';
@@ -12,6 +12,15 @@ function fieldValue(def, registration, customer) {
   if (def.scope === 'registration') return registration[def.fieldKey];
   return registration.customFields?.[def.fieldKey];
 }
+
+// Where the referral stands with the builder (section 52).
+const REFERRAL_LABEL = {
+  NOT_REFERRED: 'Not referred (no project)',
+  PENDING_BUILDER: 'Waiting for builder',
+  ACCEPTED: 'Accepted by builder',
+  REJECTED: 'Rejected by builder'
+};
+const REFERRAL_BADGE = { NOT_REFERRED: 'pending', PENDING_BUILDER: 'pending', ACCEPTED: 'accepted', REJECTED: 'rejected' };
 
 function formatFieldValue(def, value) {
   if (value === undefined || value === null || value === '') return '-';
@@ -28,7 +37,6 @@ function formatFieldValue(def, value) {
 // grouping as Add/Edit Lead, just read-only.
 export default function PartnerJourney() {
   const { registrationId } = useParams();
-  const navigate = useNavigate();
   const { partner, hasPermission } = useAuth();
   const workflowOptions = useLeadWorkflowOptions();
   const canEdit = hasPermission(PERMISSIONS.MANAGE_LEADS);
@@ -37,7 +45,6 @@ export default function PartnerJourney() {
   const [activeTab, setActiveTab] = useState(null);
   const [events, setEvents] = useState([]);
   const [error, setError] = useState(null);
-  const [busy, setBusy] = useState(false);
 
   const load = async () => {
     try {
@@ -61,19 +68,6 @@ export default function PartnerJourney() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [registrationId]);
 
-
-  const handleBooking = async () => {
-    setBusy(true);
-    setError(null);
-    try {
-      const { data } = await createMyBooking(registrationId, {});
-      navigate(`/registrations/${registrationId}/booking`, { state: { booking: data } });
-    } catch (err) {
-      setError(err.response ? err.response.data.reason : err.message);
-    } finally {
-      setBusy(false);
-    }
-  };
 
   if (error) return <div className="page"><div className="error-box">{error}</div></div>;
   if (!detail || !fieldDefs) return <div className="page">Loading...</div>;
@@ -104,14 +98,16 @@ export default function PartnerJourney() {
           )}
           <dt>Assigned To</dt>
           <dd>{detail.assignedToName || 'Unassigned'}</dd>
+          <dt>Referral</dt>
+          <dd>
+            <span className={`badge ${REFERRAL_BADGE[registration.referralStatus] || 'pending'}`}>{REFERRAL_LABEL[registration.referralStatus] || registration.referralStatus}</span>
+            {registration.referralDecision?.reason && <div className="hint" style={{ marginTop: '0.3rem' }}>Builder's reason: {registration.referralDecision.reason}</div>}
+          </dd>
         </dl>
 
-        {!registration.isBooked && canEdit && (
-          <div style={{ marginTop: '1rem' }}>
-            <button className="primary" disabled={busy} onClick={handleBooking}>Complete Booking</button>
-          </div>
-        )}
-        {registration.isBooked && <p className="hint">This registration has already been booked and handed over.</p>}
+        {registration.isBooked
+          ? <p className="hint">Booked by the builder - operational ownership has moved to the builder; your attribution and commission eligibility are kept.</p>
+          : <p className="hint">Bookings are confirmed by the builder once they accept the referral.</p>}
       </div>
 
       <div className="card">
@@ -168,7 +164,6 @@ export default function PartnerJourney() {
       <div style={{ display: 'flex', gap: '0.6rem' }}>
         <Link to="/my-leads"><button className="secondary">Back to My Leads</button></Link>
         <Link to={`/registrations/${registrationId}/edit`}><button className="secondary">Edit Lead</button></Link>
-        <Link to={`/registrations/${registrationId}/builder`}><button className="secondary">Builder View</button></Link>
       </div>
     </div>
   );

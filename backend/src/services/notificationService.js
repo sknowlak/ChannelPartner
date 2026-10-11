@@ -2,7 +2,6 @@ const NotificationRule = require('../models/NotificationRule');
 const NotificationJob = require('../models/NotificationJob');
 const Notification = require('../models/Notification');
 const Registration = require('../models/Registration');
-const Customer = require('../models/Customer');
 const Partner = require('../models/Partner');
 const { nextId } = require('../utils/idGenerator');
 const { loadOrgUsers } = require('./userDirectoryService');
@@ -200,8 +199,8 @@ async function deliverJob(job) {
   const registration = await Registration.findOne({ registrationId: job.registrationId, partnerId: job.partnerId });
   if (!registration) return { status: 'CANCELLED', note: 'Lead no longer exists' };
 
-  const [customer, partner, users] = await Promise.all([
-    Customer.findOne({ customerId: registration.customerId }),
+  const customer = null; // contact details come from the registration itself (section 52)
+  const [partner, users] = await Promise.all([
     Partner.findOne({ partnerId: job.partnerId }),
     loadOrgUsers(job.partnerId)
   ]);
@@ -318,8 +317,8 @@ async function sendTest(partnerId, ruleId, registrationId, user) {
   if (!rule) return { error: 'Rule not found' };
   const registration = await Registration.findOne({ partnerId, registrationId });
   if (!registration) return { error: 'Lead not found' };
-  const [customer, partner, users] = await Promise.all([
-    Customer.findOne({ customerId: registration.customerId }),
+  const customer = null; // contact details come from the registration itself (section 52)
+  const [partner, users] = await Promise.all([
     Partner.findOne({ partnerId }),
     loadOrgUsers(partnerId)
   ]);

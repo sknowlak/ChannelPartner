@@ -20,7 +20,6 @@ export default function NavBar() {
           <NavLink to="/my-leads" className={linkClass}>My Leads</NavLink>
           <NavLink to="/team" className={linkClass}>Manage Team</NavLink>
           <NavLink to="/settings" className={linkClass}>Settings</NavLink>
-          <NavLink to="/lookup" className={linkClass}>Lookup Registration</NavLink>
           <span className="spacer" />
           <span className="who">{partner.name} · {partner.roleName || (partner.role === 'OWNER' ? 'Owner' : 'Team Member')}</span>
           <button className="link" onClick={handleLogout}>Logout</button>
@@ -30,8 +29,7 @@ export default function NavBar() {
           <NavLink to="/login" className={linkClass}>Login</NavLink>
           <NavLink to="/signup" className={linkClass}>Register as Partner</NavLink>
           <span className="spacer" />
-          <NavLink to="/simulate-registration" className={linkClass}>Simulate External CRM Registration</NavLink>
-          <NavLink to="/lookup" className={linkClass}>Lookup Registration</NavLink>
+          <NavLink to="/builder/login" className={linkClass}>Builder Login</NavLink>
         </>
       )}
     </nav>

@@ -19,13 +19,8 @@ import IntegrationSettings from './pages/IntegrationSettings';
 import IntegrationSources from './pages/IntegrationSources';
 import IntegrationApi from './pages/IntegrationApi';
 import EditTeamMember from './pages/EditTeamMember';
-import PartnerRegistration from './pages/PartnerRegistration';
-import RegistrationResult from './pages/RegistrationResult';
 import PartnerJourney from './pages/PartnerJourney';
-import BuilderView from './pages/BuilderView';
-import BookingHandover from './pages/BookingHandover';
-import AuditTimeline from './pages/AuditTimeline';
-import Lookup from './pages/Lookup';
+import BuilderApp from './builder/BuilderApp';
 
 function Home() {
   const { partner } = useAuth();
@@ -37,7 +32,18 @@ function RedirectToEditTeamMember() {
   return <Navigate to={`/team/${memberId}/edit`} replace />;
 }
 
+// The builder portal (section 52) has its own shell, login and session,
+// separate from the partner portal below.
 export default function App() {
+  return (
+    <Routes>
+      <Route path="/builder/*" element={<BuilderApp />} />
+      <Route path="*" element={<PartnerApp />} />
+    </Routes>
+  );
+}
+
+function PartnerApp() {
   return (
     <div className="app-shell">
       <NavBar />
@@ -76,13 +82,6 @@ export default function App() {
           <Route path="/settings/profile" element={<Navigate to="/team/profile" replace />} />
           <Route path="/settings/team/:memberId/edit" element={<RedirectToEditTeamMember />} />
           <Route path="/registrations/:registrationId" element={<ProtectedRoute><PartnerJourney /></ProtectedRoute>} />
-
-          <Route path="/simulate-registration" element={<PartnerRegistration />} />
-          <Route path="/registrations/result" element={<RegistrationResult />} />
-          <Route path="/lookup" element={<Lookup />} />
-          <Route path="/registrations/:registrationId/builder" element={<BuilderView />} />
-          <Route path="/registrations/:registrationId/booking" element={<BookingHandover />} />
-          <Route path="/registrations/:registrationId/audit" element={<AuditTimeline />} />
         </Routes>
       </main>
     </div>

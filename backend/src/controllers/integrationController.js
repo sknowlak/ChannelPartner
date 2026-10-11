@@ -2,7 +2,7 @@ const IntegrationWebhook = require('../models/IntegrationWebhook');
 const WebhookDelivery = require('../models/WebhookDelivery');
 const Partner = require('../models/Partner');
 const { nextId } = require('../utils/idGenerator');
-const { generateApiKey } = require('../utils/apiKey');
+const { generateApiKey, apiKeyFields } = require('../utils/apiKey');
 const { retryDelivery, resyncRange, sendTestPush } = require('../services/webhookService');
 const { sanitizeAuth, authProblem, maskAuth } = require('../services/httpAuthService');
 const { urlShapeProblem } = require('../utils/outboundUrl');
@@ -84,14 +84,12 @@ async function readAdvancedOptions(body, existing) {
 async function getApiKey(req, res, next) {
   try {
     const partner = await Partner.findOne({ partnerId: req.partnerId });
-    // Self-heals partners who registered before this module existed
-    // (section 43), the same way ensureBaseFields does for lead/user fields.
-    if (!partner.apiKey) {
-      partner.apiKey = generateApiKey();
-      await partner.save();
-    }
+    // Only the key's prefix is known after creation (section 52) - the full
+    // key is shown once, by regenerate.
     return res.json({
-      apiKey: partner.apiKey,
+      hasKey: !!partner.apiKeyHash,
+      apiKeyPrefix: partner.apiKeyPrefix || '',
+      apiKeyCreatedAt: partner.apiKeyCreatedAt || null,
       inboundLeadUrl: `${req.protocol}://${req.get('host')}/api/channel-partner/integrations/leads`,
       inboundProgressUrl: `${req.protocol}://${req.get('host')}/api/channel-partner/integrations/leads/:registrationId/progress`
     });
@@ -101,20 +99,24 @@ async function getApiKey(req, res, next) {
 }
 
 // POST /api/channel-partner/my/integrations/api-key/regenerate  (requires MANAGE_SETTINGS)
+// Issues a new key and revokes the old one immediately. The response is the
+// only time the full key is ever shown.
 async function regenerateApiKey(req, res, next) {
   try {
     const partner = await Partner.findOne({ partnerId: req.partnerId });
-    partner.apiKey = generateApiKey();
+    const apiKey = generateApiKey();
+    Object.assign(partner, apiKeyFields(apiKey));
+    partner.apiKey = undefined;
     await partner.save();
 
     await logEvent({
       registrationId: `PARTNER:${req.partnerId}`,
       eventType: 'INTEGRATION_API_KEY_REGENERATED',
       actor: req.actorLabel,
-      description: 'Integration API key regenerated'
+      description: 'Integration API key regenerated (previous key revoked)'
     });
 
-    return res.json({ apiKey: partner.apiKey });
+    return res.json({ apiKey, apiKeyPrefix: partner.apiKeyPrefix, apiKeyCreatedAt: partner.apiKeyCreatedAt, shownOnce: true });
   } catch (err) {
     next(err);
   }

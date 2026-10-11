@@ -1,33 +1,32 @@
 const { findDuplicate } = require('../services/duplicateService');
-const { validateMobile } = require('../utils/phone');
+const { validateMobileField } = require('../utils/phone');
 
-// POST /api/channel-partner/duplicate-check
-// Standalone check - does not create a registration, used to pre-validate
-// before a partner submits (spec section 17).
+// POST /api/channel-partner/my/duplicate-check (logged-in partner)
+// Pre-checks a customer before registering (spec section 17). Used to be
+// public and returned the protecting partner's ID - letting anyone map which
+// partner holds which customer. Now it needs a session, and the answer is
+// only "protected or not, and until when" (section 52).
 async function checkDuplicate(req, res, next) {
   try {
-    const { customer, projectId } = req.body;
-    if (!customer || !customer.mobile || !projectId) {
-      return res.status(400).json({ reason: 'customer.mobile and projectId are required' });
+    const { customer } = req.body;
+    if (!customer || typeof customer !== 'object' || !customer.mobile) {
+      return res.status(400).json({ reason: 'customer.mobile is required', fieldKey: 'mobile' });
     }
-
-    // Stored numbers all carry a country code now, so a bare number here
-    // can't be matched against them reliably - reject rather than silently
-    // answering "not a duplicate" when it might well be one.
-    const mobileCheck = validateMobile(customer.mobile);
+    const mobileCheck = validateMobileField(customer.mobile, customer.mobileCountry);
     if (!mobileCheck.valid) return res.status(400).json({ reason: mobileCheck.reason, fieldKey: 'mobile', code: mobileCheck.code });
 
-    const duplicate = await findDuplicate({ mobile: mobileCheck.e164, email: customer.email, projectId });
-
-    if (!duplicate) {
-      return res.json({ isDuplicate: false });
-    }
-
+    const duplicate = await findDuplicate({
+      mobile: mobileCheck.e164,
+      email: customer.email,
+      alternateMobile: customer.alternateMobile,
+      projectId: req.body.projectId
+    });
+    if (!duplicate) return res.json({ isDuplicate: false });
     return res.json({
       isDuplicate: true,
       reasonCode: 'DUPLICATE_PROTECTED',
-      existingPartnerId: duplicate.partnerId,
-      protectedUntil: duplicate.protectionExpiry
+      protectedUntil: duplicate.protectionExpiry,
+      ownedByYou: duplicate.partnerId === req.partnerId
     });
   } catch (err) {
     next(err);

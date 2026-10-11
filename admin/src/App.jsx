@@ -10,6 +10,8 @@ import Registrations from './pages/Registrations';
 import RegistrationDetail from './pages/RegistrationDetail';
 import Audit from './pages/Audit';
 import Settings from './pages/Settings';
+import Builders from './pages/Builders';
+import BuilderDetail from './pages/BuilderDetail';
 
 export default function App() {
   return (
@@ -25,6 +27,8 @@ export default function App() {
         <Route path="/registrations/:registrationId" element={<ProtectedRoute><RegistrationDetail /></ProtectedRoute>} />
         <Route path="/audit" element={<ProtectedRoute><Audit /></ProtectedRoute>} />
         <Route path="/settings" element={<ProtectedRoute><Settings /></ProtectedRoute>} />
+        <Route path="/builders" element={<ProtectedRoute><Builders /></ProtectedRoute>} />
+        <Route path="/builders/:builderId" element={<ProtectedRoute><BuilderDetail /></ProtectedRoute>} />
       </Routes>
     </div>
   );

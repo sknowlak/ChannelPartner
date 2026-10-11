@@ -50,7 +50,9 @@ const ENDPOINTS = [
 export default function IntegrationApi() {
   const [permissions, setPermissions] = useState(null);
   const [info, setInfo] = useState(null);
-  const [showKey, setShowKey] = useState(false);
+  // The full key exists only in this response (section 52) - it is never
+  // retrievable again, so it lives in memory until the page is left.
+  const [newKey, setNewKey] = useState('');
   const [fieldDefs, setFieldDefs] = useState([]);
   const [error, setError] = useState(null);
 
@@ -69,15 +71,19 @@ export default function IntegrationApi() {
   }, []);
 
   const base = info ? info.inboundLeadUrl.replace(/\/integrations\/leads$/, '') : `${window.location.origin}/api/channel-partner`;
-  const shownKey = info ? (showKey ? info.apiKey : `${info.apiKey.slice(0, 7)}${'•'.repeat(20)}`) : 'YOUR_API_KEY';
+  const shownKey = newKey || 'YOUR_API_KEY';
   const example = useMemo(() => buildExamplePayload(fieldDefs), [fieldDefs]);
   const copy = (text) => navigator.clipboard?.writeText(text).catch(() => {});
 
   const regenerate = async () => {
-    if (!window.confirm('Regenerate the API key? Every system using the old key stops working immediately.')) return;
+    const warning = info?.hasKey
+      ? 'Generate a new API key? The current key stops working immediately for every system using it.'
+      : 'Generate an API key?';
+    if (!window.confirm(warning)) return;
     try {
       const { data } = await regenerateIntegrationApiKey();
-      setInfo((i) => ({ ...i, apiKey: data.apiKey }));
+      setNewKey(data.apiKey);
+      setInfo((i) => ({ ...i, hasKey: true, apiKeyPrefix: data.apiKeyPrefix, apiKeyCreatedAt: data.apiKeyCreatedAt }));
     } catch (err) {
       setError(err.response?.data?.reason || err.message);
     }
@@ -108,12 +114,23 @@ export default function IntegrationApi() {
         {info && (
           <div className="field">
             <label>API Key</label>
-            <div style={{ display: 'flex', gap: '0.5rem' }}>
-              <input value={shownKey} readOnly style={{ flex: 1, fontFamily: 'monospace' }} />
-              <button type="button" className="secondary" onClick={() => setShowKey((s) => !s)}>{showKey ? 'Hide' : 'Show'}</button>
-              <button type="button" className="secondary" onClick={() => copy(info.apiKey)}>Copy</button>
-              <button type="button" className="danger" onClick={regenerate}>Regenerate</button>
-            </div>
+            {newKey ? (
+              <>
+                <div style={{ display: 'flex', gap: '0.5rem' }}>
+                  <input value={newKey} readOnly style={{ flex: 1, fontFamily: 'monospace' }} />
+                  <button type="button" className="secondary" onClick={() => copy(newKey)}>Copy</button>
+                </div>
+                <div className="info-box" style={{ marginTop: '0.5rem' }}>
+                  Copy this key now and store it somewhere safe - for security it is only shown once. If it's lost, generate a new one.
+                </div>
+              </>
+            ) : (
+              <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+                <input readOnly style={{ flex: 1, fontFamily: 'monospace' }}
+                  value={info.hasKey ? `${info.apiKeyPrefix}${'•'.repeat(20)}  (created ${info.apiKeyCreatedAt ? new Date(info.apiKeyCreatedAt).toLocaleDateString() : '-'})` : 'No key yet'} />
+                <button type="button" className={info.hasKey ? 'danger' : 'primary'} onClick={regenerate}>{info.hasKey ? 'Generate New Key' : 'Generate Key'}</button>
+              </div>
+            )}
           </div>
         )}
         <div className="field">

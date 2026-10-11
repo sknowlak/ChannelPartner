@@ -1251,7 +1251,7 @@ Section 30 noted that `username`/`password` were captured but nothing checked th
 
 ## What Changed vs. Sections 6-17
 
-The **original** `/api/channel-partner/registrations*` endpoints are untouched and still work exactly as before - they remain the unauthenticated surface for server-to-server / simulated-external-CRM integrations (section 6) and for the builder persona (which still has no login concept). Nothing that already worked was broken.
+The **original** `/api/channel-partner/registrations*` endpoints are untouched and still work exactly as before - they remain the unauthenticated surface for server-to-server / simulated-external-CRM integrations (section 6) and for the builder persona (which still has no login concept). Nothing that already worked was broken. *(Superseded by section 52: the original unauthenticated routes were removed.)*
 
 **Added alongside them**: a `/api/channel-partner/partners/*` (public) and `/api/channel-partner/my/*` (JWT-protected) surface for a human channel partner using the web app directly.
 
@@ -1287,7 +1287,7 @@ GET    /api/channel-partner/my/registrations/:id/audit
 - `RegisterLead.jsx` - the authenticated register-a-customer form (no partner ID field - implicit from session), reachable from My Leads.
 - `PartnerJourney.jsx` was rewired to call the `/my/*` endpoints instead of the old public ones, so it's now ownership-enforced end to end.
 - The original `PartnerRegistration.jsx` (Screen 1) is kept, moved to `/simulate-registration`, for the unauthenticated simulated-external-CRM demo flow from section 19 - it still requires typing a `partnerId` by hand, matching that scenario.
-- `BuilderView.jsx`, `AuditTimeline.jsx`, `BookingHandover.jsx`, `Lookup.jsx` are unchanged (still public) - the builder persona has no login system in this MVP.
+- `BuilderView.jsx`, `AuditTimeline.jsx`, `BookingHandover.jsx`, `Lookup.jsx` are unchanged (still public) - the builder persona has no login system in this MVP. *(Superseded by section 52: these pages were removed; builders use the authenticated builder portal at `/builder`.)*
 
 ## Deliberately Not Built
 
@@ -1365,7 +1365,7 @@ Two changes: the self-service "Register New Lead" form became a proper real-esta
 
 - `Registration.projectId` is no longer a required field - a lead with no project attached defaults to `''`, and duplicate-protection matching (section 7) scopes "no project" leads to that same `''` bucket so protection still works consistently for them.
 - New optional fields (`requirementType`, `propertyType`, `bhk`, `budgetMin`, `budgetMax`, `preferredLocation`, `possessionTimeline`, `leadSource`, `notes`) live on `Registration`, since they describe *this particular inquiry*, not the customer's permanent identity. `Customer` gained one new optional field, `alternateMobile`.
-- This only applies to the **authenticated self-service flow** (`POST /api/channel-partner/my/registrations`, backing `RegisterLead.jsx`). The original unauthenticated `POST /api/channel-partner/registrations` (the "simulate external CRM" demo endpoint from section 19) is untouched and still requires `projectId` at the controller level, even though the underlying schema no longer enforces it - kept as-is so the original hackathon demo scenario doesn't change behavior.
+- This only applies to the **authenticated self-service flow** (`POST /api/channel-partner/my/registrations`, backing `RegisterLead.jsx`). The original unauthenticated `POST /api/channel-partner/registrations` (the "simulate external CRM" demo endpoint from section 19) is untouched and still requires `projectId` at the controller level, even though the underlying schema no longer enforces it - kept as-is so the original hackathon demo scenario doesn't change behavior. *(Superseded by section 52: the original unauthenticated routes were removed.)*
 - `GET /api/channel-partner/my/registrations` now returns each registration enriched with `customerName`/`customerMobile` (previously the list only showed registration IDs with no indication of who the lead was - a real usability gap, fixed alongside this).
 
 ## Shared Data-Grid UI Pattern
@@ -1719,7 +1719,7 @@ Two recovery paths, both in `webhookService.js`:
 
 ## Inbound: "I can receive lead[s]"
 
-Every partner gets an `apiKey` (generated at registration; self-healing for partners who existed before this feature, the same pattern as `ensureBaseFields`). A new `apiKeyAuth` middleware authenticates via `X-Api-Key` instead of a login session, setting `req.partnerId`/`req.actorLabel` the same way `partnerAuth` does - so `POST /api/channel-partner/integrations/leads` and `POST /api/channel-partner/integrations/leads/:registrationId/progress` reuse `myLeadsController.createMyRegistration`/`updateMyProgress` completely unchanged; those handlers never cared how identity was established, only that `req.partnerId`/`req.actorLabel` are set. The Integrations settings page shows the key (masked, with show/copy/regenerate) alongside ready-to-copy JSON and Form request examples - only to holders of `MANAGE_SETTINGS`, since the key acts as the whole organisation (section 50).
+Every partner gets an `apiKey` (generated at registration; self-healing for partners who existed before this feature, the same pattern as `ensureBaseFields`). A new `apiKeyAuth` middleware authenticates via `X-Api-Key` instead of a login session, setting `req.partnerId`/`req.actorLabel` the same way `partnerAuth` does - so `POST /api/channel-partner/integrations/leads` and `POST /api/channel-partner/integrations/leads/:registrationId/progress` reuse `myLeadsController.createMyRegistration`/`updateMyProgress` completely unchanged; those handlers never cared how identity was established, only that `req.partnerId`/`req.actorLabel` are set. The Integrations settings page shows the key (masked, with show/copy/regenerate) alongside ready-to-copy JSON and Form request examples - only to holders of `MANAGE_SETTINGS`, since the key acts as the whole organisation (section 50). *(Section 52: only a hash of the key is stored; the full key is shown once, when generated.)*
 
 ## Where it lives
 
@@ -1727,7 +1727,7 @@ Settings gained a third tab, **Integrations** (`IntegrationSettings.jsx`), along
 
 ## What Didn't Change
 
-The original unauthenticated `/api/channel-partner/registrations` surface (used by the mobile app and the "Simulate External CRM Registration" demo, spec section 6/19) is untouched - the new API-key-authenticated `/integrations/leads` endpoints are an additional, more secure inbound path, not a replacement.
+The original unauthenticated `/api/channel-partner/registrations` surface (used by the mobile app and the "Simulate External CRM Registration" demo, spec section 6/19) is untouched - the new API-key-authenticated `/integrations/leads` endpoints are an additional, more secure inbound path, not a replacement. *(Superseded by section 52: the original unauthenticated routes were removed.)*
 
 ---
 
@@ -1850,7 +1850,7 @@ Prompted by "update user assignment on every lead from the list of active users 
 
 ## What Didn't Change
 
-Stage values, booking (`Complete Booking`), ownership/protection, and the admin-level partner reassignment (section 29) are untouched. Assignment is still within one partner's own team only.
+Stage values, booking (`Complete Booking` - moved to the builder portal in section 52), ownership/protection, and the admin-level partner reassignment (section 29) are untouched. Assignment is still within one partner's own team only.
 
 
 ---
@@ -1903,13 +1903,11 @@ POST   /my/notification-rules/:ruleId/test     whole team (sends to self, in-app
 GET    /my/notification-jobs                   whole team
 GET    /my/notifications                       own inbox + unreadCount
 POST   /my/notifications/:id|all/read          own inbox
-GET    /registrations/:id/statuses             public (mobile app)
 ```
 
 ## Limits
 
 - Removing a sub-status that leads are still in is refused (move them first), the same as deleting a status. Renaming a status or sub-status also renames it in notification-rule triggers; deleting a status that a rule triggers on is refused (section 50).
-- The unauthenticated `/registrations/:id/progress` (mobile, demo) validates the status name but doesn't enforce schedule/mandatory fields; those apply to the authenticated status form.
 - Reminders fire within about 30 s of their time (scheduler interval).
 
 Covered by `backend/tests/notificationRules.test.js` (fire-time maths incl. months/years; recipient combinations; inactive exclusion) and `frontend/src/utils/timezone.test.js`.
@@ -1971,7 +1969,7 @@ TRUST_PROXY=                        optional, set behind a reverse proxy
 ALLOW_PRIVATE_WEBHOOK_TARGETS=false local development only
 ```
 
-## Still open
+## Still open (as of this section - see section 52 for what was closed next)
 
 - The original `/api/channel-partner/registrations*` and `/duplicate-check` routes (sections 6 and 17) are still unauthenticated by design - the mobile app, the simulated-CRM demo and the builder pages (which have no login) use them. Anyone can read customer details by registration ID, register as any partner, change stages and book leads through them. The rules above now apply there too (no double booking, no booking a superseded lead, inactive partners refused, no setting the booking status as a plain stage), but the routes themselves still need a credential.
 - Customer contact details are still stored once per phone number and shared across partners: a partner who registers an existing number sees the name/email the first partner saved.
@@ -2076,3 +2074,156 @@ GET    /my/integrations/inbound-events?sourceId=&outcome=   whole team
 - For local development against a receiver on your own machine, set `ALLOW_PRIVATE_WEBHOOK_TARGETS=true` (section 50); webhooks, pulls and OAuth2 token URLs otherwise must be public addresses.
 
 Covered by `backend/tests/universalIntegrations.test.js` (path reading, auth application and secret masking, HMAC sign/verify, record mapping incl. dropdown matching and status maps, URL templates).
+
+---
+
+# 52. Access Control Pass: Builder Portal, Private Contact Details, No Public Lead Routes
+
+The P0 items of the product-gap review (its remaining P1/P2 items are in section 53): every route that reads or changes lead data now needs a verified identity scoped to the right organization, partners' customer details are no longer shared through the Customer record, and builders log in to their own portal.
+
+## Product decisions taken (change here if the business disagrees)
+
+1. **Builders are created by an admin** (Admin Portal → Builders & Projects): the organization, its portal users, its projects. No builder self-signup.
+2. **Each project belongs to exactly one builder.** A lead's `projectId` must be blank (not referred yet) or an active project of an active builder - free text is refused, because no builder could ever be scoped to it. Moving a project to another builder is refused.
+3. **The recipient of a referral is always the builder that owns the project.** Partner → partner referrals are not part of this model.
+4. **The public demo surface was removed, not hidden behind a flag.** The demo is now: partner registers a lead for a project → the builder logs in, accepts it and confirms the booking (seeded in development: `builder@prestige.example`, projects `PROJECT-A`/`PROJECT-B`).
+5. **A duplicate answer says only "protected until <date>"** - never which partner, never any contact detail.
+6. **Only the builder confirms a booking**, and only after accepting the referral. A partner can no longer mark its own lead booked (which created its own commission record).
+
+## Endpoint / access matrix
+
+| Surface | Identity | Scope | Notes |
+|---|---|---|---|
+| `POST /api/channel-partner/partners/register`, `/partners/login` | none | - | signup 10/hour/IP; login failures rate-limited (section 50) |
+| `/api/channel-partner/my/*` | partner JWT (`type: PARTNER`) | `req.partnerId` from the token; another partner's record answers **404** (not 403), so IDs can't be probed | role permissions per section 34 |
+| `/api/channel-partner/my/registrations/:id/booking` | partner JWT | - | always **403** "confirmed by the builder" |
+| `/api/channel-partner/my/duplicate-check` | partner JWT | - | `{ isDuplicate, protectedUntil, ownedByYou }` only |
+| `/api/channel-partner/my/projects` | partner JWT | - | active projects of active builders |
+| `/api/channel-partner/integrations/*` | organisation API key (hash-stored) | the key's partner | no booking route; the key can be revoked by generating a new one |
+| `/api/channel-partner/hooks/:sourceKey` | secret receive URL (+ optional HMAC) | the source's partner | section 51 |
+| `/api/channel-partner/integrations/openapi.json` | none | - | the API description only, no data |
+| `/api/builder/auth/login` | none | - | failures rate-limited; same answer for unknown email and wrong password |
+| `/api/builder/*` | builder JWT (`type: BUILDER`) | referrals whose project belongs to the user's builder; anything else **404** | user + organization re-checked every request |
+| `/api/admin/*` | admin JWT (`type: ADMIN`) | all | builder/project changes need `SUPER_ADMIN` |
+| ~~`/api/channel-partner/registrations*`, `/duplicate-check`~~ | - | - | **removed** (404) |
+
+Token types are not interchangeable (a partner token on `/api/builder` or `/api/admin` → 401, etc.). Deactivating a builder user or organization, or resetting a builder password, takes effect on the next request.
+
+## Each lead keeps its own contact details
+
+`Registration.contact` (`name`, `mobile`, `email`, `alternateMobile`, plus the phone breakdown) is now the only place partner-visible contact details are read from or written to - My Leads, lead detail, Edit Lead, the status form, push webhooks, notifications and the public API all use it (`utils/contact.js`; responses keep the `customer` key so clients didn't change). `Registration.match` holds the normalized duplicate keys, and duplicate detection queries those (`duplicateService.findDuplicate`) instead of the shared Customer record. Customer remains the identity record (one per phone number) that the protection claim is keyed on; it is no longer edited through a lead.
+
+Consequences:
+- Partner B registering a number Partner A already registered (for another project) sees only what B typed - not A's name or email.
+- Editing contact details changes only the editor's own lead. Changing the **primary number** re-links the lead to that number's identity record, re-runs the duplicate check and moves the protection claim, so a lead can't be edited into a customer someone else holds (`services/leadEditGuards.js`).
+- After booking, contact details and project are frozen (unchanged from section 50).
+
+## Referrals and the builder portal
+
+`Registration.referralStatus`: `NOT_REFERRED` (no project) → `PENDING_BUILDER` → `ACCEPTED` / `REJECTED` (reason required, shown to the partner). Changing a lead's project re-refers it (`PENDING_BUILDER` for the new builder; the old builder loses access). Decisions are atomic and audited (`REFERRAL_ACCEPTED` / `REFERRAL_REJECTED`) and fire the partner's `STAGE_UPDATED` webhooks.
+
+Builder portal (`frontend/src/builder`, route `/builder`): referral list filtered by project/status, detail with the field-sharing rules of section 10 (e.g. mobile/email appear only after booking), Accept / Reject / Confirm Booking, and a history that shows events and organization-level actors only - never the partner's field values or staff names. Booking (`bookingService.completeBooking`) now also requires an accepted referral, enforced in the same atomic update as the double-booking guard, so a rejection and a booking racing each other can't both win.
+
+## Other P0 fixes
+
+- **API keys**: stored as SHA-256 hash + 7-character prefix; `GET /my/integrations/api-key` returns only the prefix; **Generate New Key** returns the full key once and revokes the old one immediately. Existing keys were migrated and keep working.
+- **Security headers** on every API response (`nosniff`, `X-Frame-Options: DENY`, `Referrer-Policy: no-referrer`, a deny-all CSP; HSTS in production).
+- **Production configuration**: `ALLOW_PRIVATE_WEBHOOK_TARGETS` is ignored when `NODE_ENV=production`; the seed script refuses the documented default admin password in production (generates a random one if none is set) and creates demo partners/builders only outside production.
+- **Mobile app**: partner login (token in the OS secure store via `expo-secure-store`), My Leads, register lead (project from the catalogue, plus whatever fields the partner's form requires), lead detail with status updates; no booking. The API address comes from `EXPO_PUBLIC_API_BASE_URL`; release builds refuse a non-`https://` address. The hard-coded LAN IP was removed from `app.json`.
+
+## Migration (runs automatically at startup - `src/migrations/p0AccessControl.js`)
+
+Idempotent; each step only touches records that still need it:
+1. Plaintext `Partner.apiKey` → `apiKeyHash` + `apiKeyPrefix` (the plaintext field is removed).
+2. `referralStatus` for existing leads: booked → `ACCEPTED`; a project code that exists in the catalogue → `PENDING_BUILDER`; otherwise `NOT_REFERRED`. Creating a project later picks up existing leads with that code (`PENDING_BUILDER`).
+3. `Registration.contact` backfill: the partner who created a Customer record gets a full copy; any other partner gets the phone number plus whatever its own registration history shows it typed - never the first partner's name or email. (Contact details those partners could already see before this change were not retroactively un-shown in old webhook deliveries or exports.)
+
+## Configuration
+
+```text
+backend/.env       JWT_SECRET (32+ chars, required), BUILDER_TOKEN_TTL (default 12h), DEFAULT_ADMIN_PASSWORD (12+ chars in production)
+mobile/.env        EXPO_PUBLIC_API_BASE_URL (https:// for release builds)
+```
+
+## Tests
+
+- `backend/tests/p0Config.test.js` - JWT secret rules, production ignoring the private-target switch, API key hashing, referral/contact helpers.
+- `backend/tests/e2e/accessControl.e2e.mjs` (`npm run test:e2e`, against a running dev backend) - 61 checks: removed routes, unauthenticated access, partner ↔ partner isolation and forged body fields (`partnerId`, `referralStatus`, `isBooked`, `status`), duplicate responses leaking nothing, contact copies independent per partner, builder ↔ builder isolation, field sharing before/after booking, accept/reject/booking rules, concurrent bookings, token-type separation, API key revocation, builder password reset and organization deactivation.
+- `backend/tests/e2e/securityRegression.e2e.mjs` (section 50 checks, updated for builder booking) and `integrations.e2e.mjs` + `mockCrm.mjs` (section 51; needs the mock and `ALLOW_PRIVATE_WEBHOOK_TARGETS=true`).
+
+## Still open (next passes - full list in section 53)
+
+- **P1**: per-project/builder duplicate-protection rules and an expiry cooldown; dispute handling for ownership disagreements; recipient types other than the project's builder; builder API keys for builder-CRM integrations.
+- **P1.4**: echo-loop prevention and per-field source of truth for two-way sync; treating business errors inside 2xx responses as failures.
+- **P2**: correlation IDs across API calls, audit and deliveries; a consistent error shape everywhere; pagination on My Leads; simplified default grid columns.
+- Partner sessions are stateless JWTs: logout clears the device but doesn't revoke the token server-side (password change and deactivation do).
+- The mobile app was compile-checked (Babel/Expo preset) but not run on a device or emulator in this pass.
+- No lint configuration exists in any of the four apps.
+
+---
+
+# 53. Product-Gap Backlog (P1 / P2)
+
+What remains from the product-gap review (the separate review prompt was retired once its P0 items were done in section 52; its open requirements live here). Items are grouped by the review's priorities; each says what "done" means.
+
+## P1.1 Referrals and recipients
+
+- Decide whether a recipient can be anything other than the project's builder (e.g. another channel partner). If yes: a separate Referral record per recipient, each with its own status and permissions, while the original partner's attribution stays immutable.
+- A recipient must never be able to rewrite the source partner or claim the referral as its own.
+- Record the source CRM alongside source partner, external reference, target builder/project, recipient, state and timestamps.
+
+## P1.2 Duplicate protection and ownership
+
+- Duplicate-protection rules configurable per builder/project (window length, match fields), not only globally.
+- Decide what happens when protection expires: whether the same partner may re-register immediately, or after a configurable cooldown (document the choice either way).
+- Dispute handling for legitimate ownership disagreements (a `DISPUTED` state, who can raise and resolve it, audit of the outcome), keeping original attribution and history whatever the result.
+
+## P1.3 Booking handover
+
+- Done in sections 50 and 52 (builder-only, after acceptance, atomic, idempotent, one booking and one commission). Remaining: a `CANCELLED` booking path and what it does to commission eligibility.
+
+## P1.4 Two-way CRM synchronization
+
+- **Echo-loop prevention**: tag every change with its source system/event and skip pushing a change back to the system it came from, so an update can't bounce between two CRMs.
+- **Field-level source of truth**: per connection, which system wins for each synchronized field, and which fields a connection may change at all.
+- **Business errors inside 2xx**: per-connection rules (e.g. `success: false` or an error path in the body) so a "200 OK" that actually failed is shown and retried as a failure.
+- **Dead-letter view**: deliveries that exhausted their retries listed separately, with manual retry.
+- **PII-minimal logging**: an option to store delivery request/response bodies redacted or not at all.
+- **Builder-side integrations**: builder API keys (scoped to the builder's projects) so a builder's CRM can receive referrals and report bookings.
+
+## P1.5 Audit history
+
+- Every audit entry carries actor type (partner / member / builder / admin / integration / system), organization, target IDs and a correlation/event ID - not only a display label.
+- Record access-denied attempts on sensitive records where useful.
+- Audit entries are append-only from normal application paths; visibility enforced by role and organization (the builder view already filters, section 52).
+- Never store secrets or unnecessary customer PII in audit metadata (some current "changes" entries hold entered values - review).
+
+## P2.1 Usability
+
+- Default lead grid shows essential columns only; others opt-in.
+- Consistent naming in UI and API for Lead, Referral, Registration, Booking, Operational Owner and Source Partner.
+- Explicit referral states visible everywhere (including `CANCELLED` / `DISPUTED` once they exist), with duplicate outcomes and protection expiry explained without private data.
+- Only show actions the user can actually perform; responsive layouts for desktop, tablet and phone browsers.
+
+## P2.2 Configurable fields and rules
+
+- Changing status configuration must never rewrite booking or commission history.
+- Scheduled reminders recalculated or cancelled when the assignee or referral changes (status and schedule changes already do this, section 49).
+- Timestamps stored in UTC everywhere and rendered in each user's timezone (verify all screens).
+
+## P2.3 Errors and observability
+
+- One consistent API error shape (`{ reason, fieldKey?, code? }`) on every route.
+- Request/correlation IDs carried through API calls, audit entries and integration deliveries.
+- Pagination and limits on every list, search and export (My Leads still returns everything).
+- Cleanup, retry and resync jobs safe under repeated execution (largely done in sections 50-51; re-verify when adding new jobs).
+
+## Other known gaps
+
+- Partner logout doesn't revoke the token server-side (password change and deactivation do).
+- The mobile app has been compile-checked but not run on a device/emulator since section 52.
+- No lint configuration exists in any of the four apps.
+
+## Test matrix still to add
+
+Builder ↔ builder and partner ↔ partner isolation, forged body fields, concurrent duplicates and bookings, token-type separation, key revocation and deactivation are covered (`backend/tests/e2e`, section 52). Still to add with the items above: echo-loop prevention, field-level update permissions for integrations, oversized and redirecting remote responses in the integration suite, dispute/cancellation flows, and production start-up with an insecure mobile API URL.
