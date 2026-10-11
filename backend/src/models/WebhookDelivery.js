@@ -19,13 +19,19 @@ const webhookDeliverySchema = new mongoose.Schema(
     httpStatus: Number,
     responseBody: String,
     errorMessage: String,
-    attempt: { type: Number, default: 1 }
+    attempt: { type: Number, default: 1 },
+    // Which request this was in CREATE_UPDATE mode (section 51).
+    operation: { type: String, enum: ['CREATE', 'UPDATE', 'SEND'], default: 'SEND' },
+    // Automatic retry with backoff (section 51): set while another attempt is
+    // scheduled, cleared when the retry scheduler claims it.
+    nextRetryAt: { type: Date, default: null }
   },
   { timestamps: true }
 );
 
 // The log holds full lead payloads (customer personal data) - kept 90
 // days for troubleshooting and retries, then removed automatically.
+webhookDeliverySchema.index({ nextRetryAt: 1 }, { sparse: true });
 webhookDeliverySchema.index({ createdAt: 1 }, { expireAfterSeconds: 90 * 24 * 60 * 60 });
 
 module.exports = mongoose.model('WebhookDelivery', webhookDeliverySchema);

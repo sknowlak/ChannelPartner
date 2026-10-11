@@ -124,6 +124,10 @@ async function createMyRegistration(req, res, next) {
     const getIncomingValue = (def) => (def.scope === 'customer' ? customer?.[def.fieldKey] : req.body[def.fieldKey]);
     for (const def of fieldDefs) {
       if (!def.isEnabled || !def.isRequired) continue;
+      // Leads imported from another system (section 51) only need the core
+      // fields (name, mobile) - the sender can't fill in this partner's own
+      // form-specific required fields, and rejecting would lose the lead.
+      if (req.integrationImport && !def.isCore) continue;
       const value = getIncomingValue(def);
       if (value === undefined || value === null || value === '') {
         return res.status(400).json({ status: 'ERROR', reason: `${def.label} is required`, fieldKey: def.fieldKey });
@@ -327,6 +331,7 @@ async function updateMyRegistration(req, res, next) {
     // as createMyRegistration, not just on the client.
     for (const def of fieldDefs) {
       if (!def.isEnabled || !def.isRequired) continue;
+      if (req.integrationImport && !def.isCore) continue; // see createMyRegistration
       const incoming = req.body[def.fieldKey];
       const resolved = incoming !== undefined ? incoming : getCurrentFieldValue(def, registration, customer);
       if (resolved === undefined || resolved === null || resolved === '') {

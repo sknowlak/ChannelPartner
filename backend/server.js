@@ -7,6 +7,8 @@ const adminRoutes = require('./src/routes/adminRoutes');
 const errorHandler = require('./src/middleware/errorHandler');
 const { runWithContext } = require('./src/utils/requestContext');
 const { startScheduler } = require('./src/services/notificationService');
+const { startRetryScheduler } = require('./src/services/webhookService');
+const { startPullScheduler } = require('./src/services/pullService');
 
 const stripOperators = require('./src/middleware/stripOperators');
 
@@ -23,8 +25,12 @@ app.disable('x-powered-by');
 // requests carry no Origin).
 const allowedOrigins = (process.env.CORS_ORIGINS || '').split(',').map((o) => o.trim()).filter(Boolean);
 app.use(cors(allowedOrigins.length ? { origin: allowedOrigins } : undefined));
-app.use(express.json({ limit: '200kb' }));
-app.use(express.urlencoded({ extended: true, limit: '200kb' }));
+// The raw bytes are kept so incoming signed webhooks (section 51) can be
+// verified against exactly what was sent.
+const keepRawBody = (req, res, buf) => { req.rawBody = buf; };
+app.use(express.json({ limit: '1mb', verify: keepRawBody, type: ['application/json', 'application/*+json'] }));
+app.use(express.urlencoded({ extended: true, limit: '1mb', verify: keepRawBody }));
+app.use(express.text({ limit: '1mb', verify: keepRawBody, type: ['text/plain'] }));
 app.use(stripOperators);
 
 // Every client we control (web partner portal, mobile app, admin portal)
@@ -63,7 +69,12 @@ connectDB()
   .then(() => {
     app.listen(PORT, () => console.log(`Backend listening on port ${PORT}`));
     // Fires scheduled lead notifications (section 49) every 30 seconds.
-    if (process.env.NODE_ENV !== 'test') startScheduler();
+    if (process.env.NODE_ENV !== 'test') {
+      startScheduler();
+      // Automatic webhook retries and scheduled API pulls (section 51).
+      startRetryScheduler();
+      startPullScheduler();
+    }
   })
   .catch((err) => {
     console.error('Failed to connect to MongoDB', err);

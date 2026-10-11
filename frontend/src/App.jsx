@@ -16,6 +16,8 @@ import LeadStatusSettings from './pages/LeadStatusSettings';
 import NotificationSettings from './pages/NotificationSettings';
 import UserSettings from './pages/UserSettings';
 import IntegrationSettings from './pages/IntegrationSettings';
+import IntegrationSources from './pages/IntegrationSources';
+import IntegrationApi from './pages/IntegrationApi';
 import EditTeamMember from './pages/EditTeamMember';
 import PartnerRegistration from './pages/PartnerRegistration';
 import RegistrationResult from './pages/RegistrationResult';
@@ -63,6 +65,9 @@ export default function App() {
           <Route path="/settings/leads/notifications" element={<ProtectedRoute><NotificationSettings /></ProtectedRoute>} />
           <Route path="/settings/users" element={<ProtectedRoute><UserSettings /></ProtectedRoute>} />
           <Route path="/settings/integrations" element={<ProtectedRoute><IntegrationSettings /></ProtectedRoute>} />
+          <Route path="/settings/integrations/receive" element={<ProtectedRoute><IntegrationSources kind="RECEIVE" key="RECEIVE" /></ProtectedRoute>} />
+          <Route path="/settings/integrations/pull" element={<ProtectedRoute><IntegrationSources kind="PULL" key="PULL" /></ProtectedRoute>} />
+          <Route path="/settings/integrations/api" element={<ProtectedRoute><IntegrationApi /></ProtectedRoute>} />
 
           {/* Backward-compat redirects for the short-lived /settings/team* URLs */}
           <Route path="/profile" element={<Navigate to="/team/profile" replace />} />

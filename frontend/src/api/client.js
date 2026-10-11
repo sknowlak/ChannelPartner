@@ -113,5 +113,16 @@ export const resyncWebhook = (webhookId, payload) => client.post(`/my/integratio
 
 export const listDeliveries = (params) => client.get('/my/integrations/deliveries', { params });
 export const retryDelivery = (deliveryId) => client.post(`/my/integrations/deliveries/${deliveryId}/retry`);
+export const testWebhook = (webhookId, payload = {}) => client.post(`/my/integrations/webhooks/${webhookId}/test`, payload);
+
+// Receive & Pull sources (section 51): leads in from any system, in its own format.
+export const listIntegrationSources = () => client.get('/my/integrations/sources');
+export const createIntegrationSource = (payload) => client.post('/my/integrations/sources', payload);
+export const updateIntegrationSource = (sourceId, payload) => client.patch(`/my/integrations/sources/${sourceId}`, payload);
+export const deleteIntegrationSource = (sourceId) => client.delete(`/my/integrations/sources/${sourceId}`);
+export const regenerateSourceKey = (sourceId) => client.post(`/my/integrations/sources/${sourceId}/regenerate-key`);
+export const testIntegrationSource = (sourceId, payload = {}) => client.post(`/my/integrations/sources/${sourceId}/test`, payload);
+export const runIntegrationSource = (sourceId) => client.post(`/my/integrations/sources/${sourceId}/run`);
+export const listInboundEvents = (params) => client.get('/my/integrations/inbound-events', { params });
 
 export default client;
