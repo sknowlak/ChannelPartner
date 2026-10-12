@@ -2321,3 +2321,24 @@ About 42,000 characters per language: roughly USD 110 for ~130 languages on Goog
 Run result (2026-10-12): 249 languages; 21 of them keep 1-3 integration/list-count strings in English where Google altered a placeholder. Typical machine errors to expect: words translated out of context (e.g. "Mobile" as "moving" in Arabic).
 
 Machine translations are not reviewed. They are labelled as such in the selector, follow the protected-term rules above, and can be corrected by editing the JSON - edits survive later runs. Business terms in the glossary (`frontend/src/i18n/glossary.md`) are only guaranteed for en/hi/bn.
+
+# 56. Show / Hide Password on Every Password Field
+
+Prompted by "whenever I enter password give show password button also everywhere". Every password box in every app has an eye button that switches it between hidden and visible text. It starts hidden each time the screen opens.
+
+- **Partner web + builder portal** (`frontend/src/components/PasswordInput.jsx`): partner login, builder login, partner sign-up, My Profile (new password and current password), team-member password fields (`DynamicFieldInput`), and integration secrets (`AuthEditor`: client secret, API key, HMAC secret, Basic password).
+- **Admin** (`admin/src/components/PasswordInput.jsx`): admin login, partner create/edit form, builder user initial password.
+- **Mobile** (`mobile/src/components/PasswordInput.js`): login screen (Ionicons eye / eye-off).
+- `PasswordInput` takes the same props as the input it wraps (`id`, `name`, `autoComplete`, `required`, `minLength`, `placeholder`, ...) and controls only `type` / `secureTextEntry`. Use it for any new password or secret field instead of `<input type="password">`.
+- The button is a real `<button type="button">` (never submits the form), keyboard-focusable, with `aria-pressed` and a translated label `common:actions.showPassword` / `common:actions.hidePassword` (hand-written in en/hi/bn, machine-translated for the other languages by `tools/i18n/translate.mjs --update`). It sits on the end side of the box, so it mirrors in right-to-left languages.
+- Stored integration secrets come back masked (`••••`) from the API (section 51); revealing them shows the mask, never the real secret.
+
+# 57. Partner Login Page: Brand Logo and Product Overview
+
+Prompted by "make this UI more informative and colourful, show some business logo" (partner login, `/login`).
+
+- **Logo** (`frontend/src/components/BrandLogo.jsx`): Leadrat mark (rounded gradient square with an "L" and a rising line) plus wordmark. Shown in the sidebar brand on every partner-app page and on the login panel. The artwork is a placeholder until the official logo file is supplied - swap the `<svg>` in that one component for `<img src="/logo.svg">` (file in `frontend/public/`) and every place updates.
+- **Layout** (`frontend/src/pages/PartnerLogin.jsx`): two columns. On the left, a colourful panel (navy → indigo → teal) with the headline, a one-line description of the portal and four features, each with its own coloured icon: register leads, duplicate protection (the period is configurable, so no number is shown), stage tracking, and credit at booking (source partner). On the right are the title, a welcome line, the language selector and the sign-in card (accent top border, gradient Sign In button, "secure sign-in" note), plus links to partner registration and the builder portal. Below 860px wide it is one column with the form first.
+- The page only describes features that exist today; commission is not mentioned, because partners can't see it yet.
+- Text: `auth:login.*` (`portalName`, `welcome`, `heroTitle`, `heroIntro`, `features.<key>.title|text`, `secure`, `builderPrompt`, `builderLink`). Hand-written in en/hi/bn using the glossary terms; machine-translated for the other languages (section 55).
+- Known gap (not new): the app shell's sidebar is fixed-width and does not collapse on phones, so below ~600px it covers part of every page, including this one.

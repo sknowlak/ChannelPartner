@@ -8,6 +8,7 @@ import PhoneInput from '../components/PhoneInput';
 import { validateMobile } from '../utils/phone';
 import { focusField } from '../utils/formValidation';
 import LanguageSelect from '../components/LanguageSelect';
+import PasswordInput from '../components/PasswordInput';
 
 const initialForm = {
   name: '', mobile: '', email: '', username: '', password: '',
@@ -93,7 +94,7 @@ export default function PartnerSignup() {
             </div>
             <div className="field">
               <label>{t('auth:signup.password')}</label>
-              <input type="password" value={form.password} onChange={update('password')} required minLength={8} />
+              <PasswordInput value={form.password} onChange={update('password')} required minLength={8} />
             </div>
           </div>
 

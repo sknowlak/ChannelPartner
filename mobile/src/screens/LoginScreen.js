@@ -3,6 +3,7 @@ import { ActivityIndicator, StyleSheet, Text, TextInput, TouchableOpacity, View 
 import { useTranslation } from 'react-i18next';
 import { API_CONFIG_ERROR, login, saveSession } from '../api/client';
 import LanguagePicker from '../components/LanguagePicker';
+import PasswordInput from '../components/PasswordInput';
 import { configErrorMessage, errorMessage } from '../i18n/errors';
 import { applyAccountLanguage, setDeviceLanguage } from '../i18n/language';
 
@@ -41,7 +42,7 @@ export default function LoginScreen({ onSignedIn }) {
       <Text style={styles.label}>{t('common:fields.username')}</Text>
       <TextInput style={styles.input} value={username} onChangeText={setUsername} autoCapitalize="none" autoCorrect={false} accessibilityLabel={t('common:fields.username')} />
       <Text style={styles.label}>{t('common:fields.password')}</Text>
-      <TextInput style={styles.input} value={password} onChangeText={setPassword} secureTextEntry accessibilityLabel={t('common:fields.password')} />
+      <PasswordInput style={styles.input} value={password} onChangeText={setPassword} accessibilityLabel={t('common:fields.password')} />
       <TouchableOpacity
         style={styles.button}
         onPress={submit}

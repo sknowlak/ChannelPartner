@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
 import LanguageSelect from '../components/LanguageSelect';
 import { errorMessage } from '../utils/errors';
+import PasswordInput from '../components/PasswordInput';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -43,7 +44,7 @@ export default function Login() {
         </div>
         <div className="field">
           <label htmlFor="admin-login-password">{t('common:fields.password')}</label>
-          <input id="admin-login-password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+          <PasswordInput id="admin-login-password" value={password} onChange={(e) => setPassword(e.target.value)} required />
         </div>
         <button className="primary" type="submit" disabled={busy} style={{ width: '100%' }}>
           {busy ? t('common:actions.signingIn') : t('common:actions.signIn')}

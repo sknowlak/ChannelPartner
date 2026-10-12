@@ -2,6 +2,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
 import { roleLabel } from '../i18n/dataLabels';
+import BrandLogo from './BrandLogo';
 
 export default function NavBar() {
   const { t } = useTranslation(['shell', 'team', 'common', 'data']);
@@ -22,7 +23,7 @@ export default function NavBar() {
 
   return (
     <nav className="nav-bar" aria-label={t('shell:nav.mainNav')}>
-      <span className="brand">{t('shell:nav.brandName')}<br />{t('shell:nav.brandSub')}</span>
+      <span className="brand"><BrandLogo size={34} showName={false} /><span>{t('shell:nav.brandName')}<br />{t('shell:nav.brandSub')}</span></span>
       {partner ? (
         <>
           <NavLink to="/my-leads" className={linkClass}>{t('shell:nav.myLeads')}</NavLink>

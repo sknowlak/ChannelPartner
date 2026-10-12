@@ -3,6 +3,7 @@ import { useDataLabels } from '../i18n/dataLabels';
 import { COMMON_TIMEZONES } from '../utils/timezone';
 import PhoneInput from './PhoneInput';
 import ProjectSelect from './ProjectSelect';
+import PasswordInput from './PasswordInput';
 
 // Renders a single form control from a LeadFieldDefinition/UserFieldDefinition
 // (sections 36, 38) - shared by RegisterLead.jsx and the team member forms so
@@ -33,8 +34,7 @@ export default function DynamicFieldInput({ def, value, onChange, currency }) {
 
   if (def.fieldKey === 'password') {
     return (
-      <input
-        type="password"
+      <PasswordInput
         value={v}
         onChange={(e) => onChange(e.target.value)}
         required={def.isRequired}
