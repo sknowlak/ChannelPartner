@@ -5,6 +5,7 @@ import LanguageSelect from '../components/LanguageSelect';
 import { rememberLanguage } from '../i18n/language';
 import { isSupportedLocale } from '../i18n/locales';
 import { builderLogin, setBuilderSession } from './builderClient';
+import PasswordInput from '../components/PasswordInput';
 
 export default function BuilderLogin() {
   const { t, i18n } = useTranslation(['builder', 'common']);
@@ -57,7 +58,7 @@ export default function BuilderLogin() {
         </div>
         <div className="field">
           <label htmlFor="builder-login-password">{t('common:fields.password')}</label>
-          <input id="builder-login-password" type="password" autoComplete="current-password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+          <PasswordInput id="builder-login-password" autoComplete="current-password" value={password} onChange={(e) => setPassword(e.target.value)} required />
         </div>
         <button className="primary" type="submit" disabled={busy} style={{ width: '100%' }}>{busy ? t('common:actions.signingIn') : t('common:actions.signIn')}</button>
       </form>

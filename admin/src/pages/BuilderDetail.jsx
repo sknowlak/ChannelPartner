@@ -6,6 +6,7 @@ import { useAuth } from '../context/AuthContext';
 import { errorMessage } from '../utils/errors';
 import { formatDateTime } from '../utils/timezone';
 import { enumLabel } from '../i18n/enumLabels';
+import PasswordInput from '../components/PasswordInput';
 
 // One builder: its status, its portal users and its projects (section 52).
 export default function BuilderDetail() {
@@ -87,7 +88,7 @@ export default function BuilderDetail() {
         >
           <input placeholder={t('builders:detail.userForm.name')} aria-label={t('builders:detail.userForm.name')} value={user.name} onChange={(e) => setUser((u) => ({ ...u, name: e.target.value }))} required />
           <input type="email" placeholder={t('builders:detail.userForm.email')} aria-label={t('builders:detail.userForm.email')} value={user.email} onChange={(e) => setUser((u) => ({ ...u, email: e.target.value }))} required />
-          <input type="password" placeholder={t('builders:detail.userForm.initialPassword')} aria-label={t('builders:detail.userForm.initialPassword')} autoComplete="new-password" value={user.password} onChange={(e) => setUser((u) => ({ ...u, password: e.target.value }))} required minLength={8} />
+          <PasswordInput placeholder={t('builders:detail.userForm.initialPassword')} aria-label={t('builders:detail.userForm.initialPassword')} autoComplete="new-password" value={user.password} onChange={(e) => setUser((u) => ({ ...u, password: e.target.value }))} required minLength={8} />
           <button className="primary" type="submit">{t('builders:detail.userForm.add')}</button>
         </form>
       </div>

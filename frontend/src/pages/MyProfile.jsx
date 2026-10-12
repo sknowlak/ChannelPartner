@@ -10,6 +10,7 @@ import { validateMobile } from '../utils/phone';
 import { focusField } from '../utils/formValidation';
 import LanguageSelect from '../components/LanguageSelect';
 import { roleLabel } from '../i18n/dataLabels';
+import PasswordInput from '../components/PasswordInput';
 
 export default function MyProfile() {
   const { t } = useTranslation(['team', 'common']);
@@ -185,12 +186,12 @@ export default function MyProfile() {
             </div>
             <div className="field" id="field-password">
               <label>{t('team:profile.newPassword')}</label>
-              <input type="password" name="password" autoComplete="new-password" value={form.password} onChange={update('password')} minLength={8} />
+              <PasswordInput name="password" autoComplete="new-password" value={form.password} onChange={update('password')} minLength={8} />
             </div>
             {form.password && (
               <div className="field" id="field-currentPassword">
                 <label>{t('team:profile.currentPassword')} *</label>
-                <input type="password" name="currentPassword" autoComplete="current-password" value={form.currentPassword} onChange={update('currentPassword')} required />
+                <PasswordInput name="currentPassword" autoComplete="current-password" value={form.currentPassword} onChange={update('currentPassword')} required />
               </div>
             )}
           </div>

@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useDataLabels } from '../i18n/dataLabels';
+import PasswordInput from './PasswordInput';
 
 const GROUP_ORDER = [
   'Core', 'Profile', 'Address', 'KYC', 'Documents', 'Banking',
@@ -43,8 +44,7 @@ export default function PartnerForm({ fieldDefinitions, values, onChange, mode }
 
     if (def.fieldKey === 'password') {
       return (
-        <input
-          type="password"
+        <PasswordInput
           value={value}
           onChange={(e) => setValue(def, e.target.value)}
           required={mode === 'create' && def.isRequired}

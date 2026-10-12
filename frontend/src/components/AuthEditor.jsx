@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import PasswordInput from './PasswordInput';
 
 // How Leadrat signs in to another system's API (section 51) - shared by
 // push webhooks and pull sources, and (HMAC only) by receive sources to
@@ -25,7 +26,7 @@ export default function AuthEditor({ value, onChange, allowedTypes, title, direc
   const types = allowedTypes ? TYPES.filter((type) => allowedTypes.includes(type)) : TYPES;
   const secret = (key, label, hint) => (
     <Field label={label} hint={hint}>
-      <input type="password" autoComplete="new-password" value={auth[key] || ''} onChange={(e) => set({ [key]: e.target.value })} />
+      <PasswordInput autoComplete="new-password" value={auth[key] || ''} onChange={(e) => set({ [key]: e.target.value })} />
     </Field>
   );
 
