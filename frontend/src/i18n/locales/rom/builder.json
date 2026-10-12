@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portalo e vazdipnasko",
+    "referrals": "Referèncie",
+    "builderLogin": "Builder Login",
+    "partnerLogin": "Login e partneresqo e kanàlosqo"
+  },
+  "login": {
+    "title": "O xramosaripen e xramosaripnasqo",
+    "hint": "Le kontura le vazdipnaske si kerde katar Leadrat . Phuč tire administratores te na si tut."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Aźukerav tumari decìzia",
+    "ACCEPTED": "Akceptirime",
+    "REJECTED": "Refuzime"
+  },
+  "list": {
+    "title": "Referèncie",
+    "allProjects": "Sa le projektură",
+    "allStatuses": "Sa le statusura",
+    "count_one": "{{count}} referenca",
+    "count_other": "{{count}} referèncie",
+    "columns": {
+      "referral": "Referènca",
+      "customer": "Kliènto",
+      "project": "Projèkto",
+      "sourcePartner": "Partneri katar o źanglipe",
+      "status": "Stàtuso",
+      "booking": "Rezervàcia",
+      "registered": "Registrime"
+    },
+    "booked": "Rezervirime",
+    "empty": "Akana naj referencie."
+  },
+  "detail": {
+    "customer": "Kliènto",
+    "sourcePartner": "Partneri katar o źanglipe",
+    "attributionNote": "(atribucia - nashti te paruvel pes)",
+    "leadStatus": "Statuso e śerutnesqo",
+    "protectedUntil": "Protektirime źi ko",
+    "referral": "Referènca",
+    "reason": "Motivo: {{reason}}",
+    "booking": "Rezervàcia",
+    "bookedOwner": "Rezervirime - tu san o operativno gazda",
+    "notBooked": "Na si rezervirime",
+    "sharedAfterBooking": "Dino palal o rezervàcia",
+    "accept": "Akceptisar o bićhaldipen",
+    "confirmBooking": "Konfirmisaren i Rezervàcia",
+    "reject": "Naśti te bićhalel pes",
+    "rejectReasonLabel": "Motivo vaś o naśtipen (sikado e partneresqe) *",
+    "rejectConfirm": "Na akceptisarel",
+    "confirmBookingPrompt": "Konfirmisaren i rezervàcia? O operativno barvalipe džal pe tumende thaj o partneri ka ovel eligibilno vash komisia.",
+    "notice": {
+      "booked": "O rezervàcia si konfirmime.",
+      "accepted": "O bićhaldipen si akceptisardo.",
+      "rejected": "O bićhaldipen si naśardo."
+    },
+    "backToReferrals": "Iriv man k-e referencură"
+  },
+  "history": {
+    "title": "Història",
+    "actor": {
+      "system": "Sistèmo",
+      "partner": "Partneri e kanalosqo",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Registracia e partneresqi resli",
+      "DUPLICATE_CHECK_COMPLETED": "Duplikàto kontrolo kerdo - na sas arakhlo aktivo duplikàto",
+      "REGISTRATION_ACCEPTED": "Registracia si akceptirime",
+      "PROTECTION_GRANTED_one": "{{count}} -divesutni protekcia dino",
+      "PROTECTION_GRANTED_other": "{{count}} -divesutni protekcia dino",
+      "STAGE_UPDATED": "Statuso si kerdo upral o {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} fieldo kerdo nevo",
+      "LEAD_DETAILS_UPDATED_other": "Aktualizime {{count}} thana",
+      "LEAD_ASSIGNED": "Dino ka-o {{name}}",
+      "LEAD_UNASSIGNED": "Bi-dino",
+      "REFERRAL_ACCEPTED": "O xramosaripen akceptisardas o referenso",
+      "REFERRAL_REJECTED": "O Builder naśti te lel o bićhaldipen. Motivo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "O zumavipen te kerel pes dujto registracia katar {{partner}} sas naśardo",
+      "BOOKING_COMPLETED": "Rezervàcia agorisardi",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "O operativno barvalipe si dino ko Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribucia e partneresqi garavdi",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komisiako eligibiliteto kerdo",
+      "HANDOVER_COMPLETED": "O pherdo pherdo",
+      "ADMIN_PROTECTION_RELEASED": "O Admin mukhlja avri protekcia e duplikàturenqi maj anglal. Motivo: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "O Admin paruvel i registracia katar {{from}} ko {{to}} . Motivo: {{reason}}"
+    }
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Okutebekanisa",
+    "noPermission": "Toine rusa rw'okutegyeka eby'okutebeekanisa."
+  },
+  "categories": {
+    "lead": "Kwebembera",
+    "user": "Omukozesa",
+    "integrations": "Okugaita"
+  },
+  "leadTabs": {
+    "fields": "Emisiri",
+    "statuses": "Embeera n'embeera nkye",
+    "notifications": "Ebimanyiso & Abatebekanisa"
+  },
+  "fields": {
+    "leadIntro": "Tebeekanisa foomu y‘okukwaata abarikwebembera: ikiriza/okuremesa emisiri, giteho akamanyiso nk‘oku kirikwetengyesa, nari yongyeraho emisiri yaawe ey‘omutaano.",
+    "userIntro": "Tebeekanisa foomu ya Add/Edit Team Member: ikiriza/okuremesa emyanya, giteho akamanyiso ngu neeyetengyesa, nari yongyeraho emyanya yaawe ey’omutaano.",
+    "addCustomField": "+ Yongyeraho omusiri gw'omuntu",
+    "fieldLabel": "Akabonero k'omusiri",
+    "group": "Ekigombe",
+    "groupPlaceholderLead": "nk'eky'okureeberaho amakuru g'okubuuza",
+    "groupPlaceholderUser": "nk'eky'okureeberaho Ebindi ebirikukiraho",
+    "dataType": "Ekika kya Data",
+    "options": "Ebyokutooranamu (ebitaanisiibweho akabonero)",
+    "requiredLead": "Nikyetengyesa - abanywani baawe aha tiimu baine kwijuza eki kuhandikisa omwebembezi",
+    "requiredUser": "Nikyetengyesa - kiine kwijuzibwa waaba nooyongyeraho omukibiina",
+    "creating": "Okukora...",
+    "createField": "Taho omusiri",
+    "columns": {
+      "field": "Ahamurimo",
+      "group": "Ekigombe",
+      "type": "Omuringo",
+      "required": "Kiretagisa",
+      "enabled": "Kishobooroirwe",
+      "kind": "Omuringo"
+    },
+    "kind": {
+      "custom": "Eyomuntu omwe",
+      "core": "Omusingi (ekikingire)",
+      "standard": "Ekihikire"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Ekihandiiko",
+    "TEXTAREA": "Ekihandiiko kiraingwa",
+    "NUMBER": "Enyuguta",
+    "CURRENCY": "Esente",
+    "DATE": "Ebiro",
+    "SELECT": "Okugwa ahansi",
+    "LIST": "Orukarara"
+  },
+  "picker": {
+    "searchPlaceholder": "Ronda emyanya erikwebembera...",
+    "summary": "{{shown}} kworekwa · {{mandatory}} eky'obujunaanizibwa",
+    "mandatory": "Eitekwa",
+    "noMatch": "Tihariho emisiri erikushushana."
+  },
+  "statuses": {
+    "intro": "Embeera zaawe z‘okwebembera n‘embeera z‘ahansi - eki buri omwe arikushaba (ekiro & obwire, emyanya y‘okwebembera) omuntu ku arikugaruzaho okwebembera ahariyo.",
+    "add": "+ Yongyera aha mbeera",
+    "columns": {
+      "order": "Engyenderwaho",
+      "status": "Okoyemerire",
+      "subStatuses": "Embeera nkye",
+      "asksFor": "Nashaba",
+      "active": "Kuba orakora"
+    },
+    "moveUp": "Tambura ahaiguru",
+    "moveDown": "Tambura ahansi",
+    "defaultBadge": "Ekirikubaho ahabw'abeebembezi basya",
+    "bookingBadge": "Embeera y'okubuuka",
+    "asksForLabel": "Yebuuze {{label}}",
+    "asksForDateTime": "Buuza ekiro n'obwire",
+    "none": "Tikirimu",
+    "dateTime": "Ekiro n'obwire",
+    "scheduledOn": "aha {{names}}",
+    "fieldsSummary_one": "{{count}} omusiri ( {{mandatory}} ekiragiro)",
+    "fieldsSummary_other": "{{count}} emisiri ( {{mandatory}} ekiragiro)",
+    "deleteConfirm": "Ihaho embeera \" {{name}} \"? Eki tikirikubaasa kugarurwaho.",
+    "editTitle": "Tebeekanisa embeera - {{name}}",
+    "newTitle": "Embeera ensya",
+    "name": "Eiziina ry'embeera",
+    "colour": "Erangi",
+    "active": "Kuba orakora",
+    "isDefault": "Embeera y'okubanza ahabw'abeebembezi basya",
+    "isBooking": "Embeera y'okubuuka (etairweho okubuuka okuhikire)",
+    "whenMoved": "Okwebembera kwaba nikutwarwa omu mwanya ogu .",
+    "askSchedule": "Buuza ekiro n'obwire (omutebekanisa)",
+    "scheduleLabelPlaceholder": "Label, nk'eky'okureeberaho Taayayira aha",
+    "fieldsToShow": "Yebembere emisiri kworeka aha foomu y'okugaruzaho",
+    "subStatusesTitle": "Embeera nkye",
+    "subStatusesHint": "Buri sub-status neebaasa kushaba ekiro & obwire bwayo kandi eyongyereho emyanya yaayo - erikworekwa ahaiguru y'emisiri ya status eri ahaiguru.",
+    "subStatusName": "Eiziina ry'omutindo",
+    "subFields": "Emisiri ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Ekiro n'obwire ebihandiikirweho, nk'eky'okureeberaho Garuka teera esimu aha",
+    "addSubStatus": "+ Yongyera aha mbeera y'ahansi",
+    "saveStatus": "Biika embeera",
+    "createStatus": "Taho embeera"
+  },
+  "notifications": {
+    "intro": "Manya abantu abahikire omwebembezi yaahika aha rurengo - ahonaaho, nari obwire obutebeekanisiibwe butakahikire/bwanyima y‘ekiro & obwire obutebeekanisiibwe ahariwe.",
+    "add": "+ Yongyeraho okumanyisibwa",
+    "columns": {
+      "notification": "Okumanyisibwa",
+      "whenStatusIs": "Obu Embeera Eri",
+      "sends": "Okwohereza",
+      "to": "Ahari",
+      "via": "Kuraba",
+      "enabled": "Kishobooroirwe"
+    },
+    "anyStatus": "Embeera yoona",
+    "anySubStatus": "Embeera yoona",
+    "inactiveOption": "{{name}} (etarikukorera)",
+    "emptyRules": "Tihariho kimanyiso hati - yongyeraho kimwe kumanyisa tiimu yaawe omwebembezi yaahika aha rurengo.",
+    "jobs": {
+      "title": "Ekitebekanisiibwe & Kyohereziibwe",
+      "firesAt": "Omuriro Aha",
+      "notification": "Okumanyisibwa",
+      "lead": "Kwebembera",
+      "status": "Okoyemerire",
+      "details": "Obwijwiire",
+      "empty": "Tihariho ekitebeekanisiibwe nari ekiyohereziibwe hati.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Tikikabire",
+      "PROCESSING": "Okukora",
+      "SENT": "Kwohereza",
+      "FAILED": "Kikaremwa",
+      "SKIPPED": "Akarugaho",
+      "CANCELLED": "Esaziibwemu"
+    },
+    "deliveryStatus": {
+      "SENT": "kwohereza",
+      "FAILED": "kikaremwa",
+      "SKIPPED": "akajumbura"
+    },
+    "deliveryChannel": {
+      "IN_APP": "omu-app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Omukozesa owaheebwa",
+      "owner": "Mukama wakyo",
+      "updatedBy": "Ebihindwirwemu na",
+      "role": "Omurimo: {{name}}"
+    },
+    "channels": {
+      "inApp": "Omu-app",
+      "email": "Emeyiru",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Ihaho ekimanyiso \" {{name}} \"? Ebiijutsyo ebitegyereziibwe kuruga aharibyo nibishazibwamu.",
+    "testPrompt": "Yohereza ekigyezo ky'okumanyisibwa oku ahariiwe (omu app) orikukoresa ID ki ey'okwebembera ?",
+    "testSent": "Eyohereziibwe aha kide kyawe: {{title}} {{message}}",
+    "headersInvalid": "Emitwe Webhook eine kuba eri JSON ehikire , nk'eky'okureeberaho {\"Okwikirizibwa\": \"Omukwatsi xyz\"}",
+    "editTitle": "Tebeekanisa ekimanyiso",
+    "newTitle": "Ekimanyiso ekisya",
+    "name": "Eizina",
+    "namePlaceholder": "nk'eky'okureeberaho, okwijutsya okutaayaayira omwanya",
+    "whenStatus": "Embeera y’omwebembezi ku eri .",
+    "subStatus": "Embeera y'ahansi",
+    "send": "Yohereza (omutebekanisa)",
+    "custom": "Eyomuntu omwe...",
+    "modeBefore": "obwire butakatebeekanisiibwe",
+    "modeAfter": "bwanyima y'obwire obutebeekanisiibwe",
+    "noScheduleWarning": "Embeera egi terikushaba ekiro n'obwire, n'ahabw'ekyo ekimanyiso \"etakatandikire/aha/bwanyima y'obwire obutebeekanisiibwe\" tikikaabaireho.",
+    "noScheduleFix": "Taho <strong>Shaba ekiro n’obwire</strong> bwakyo ahansi y’embeera n’embeera nkye, nari osindikye Ahonaaho.",
+    "sendTo": "Yohereza ahari (omugaati gwona)",
+    "recipientAssigned": "Omukozesa owaheebwa (mukama orikwebembera)",
+    "recipientOwner": "Mukama wa akawunti / omutegyeki",
+    "recipientUpdatedBy": "Omuntu owagarukiremu embeera",
+    "everyoneWithRole": "Buri omwe aine obujunaanizibwa",
+    "specificUsers": "Abakozesa abatari bamwe na bamwe (abarikukora)",
+    "inactiveNever": "Abatarikukora tibarikutunga okumanyisibwa, n’obu baakuba batoorainwe.",
+    "deliverVia": "Okuhitsya kurabira",
+    "channelInApp": "Omu-app (ekidongo)",
+    "channelEmail": "Emeyiru",
+    "channelWebhook": "Webhook (Omuheereza wa WhatsApp / SMS )",
+    "emailHint": "Email neeza aha ndagiriro ya buri muntu orikugitunga kandi neeyetenga SMTP etebekanisiibwe aha saava (backend/.env); okuhitsya obwo email ezirikwohereza nizihandiikwa nk’ezijukire.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Emitwe ( JSON )",
+    "content": "Ebirimu okumanyisibwa",
+    "title": "Eizina",
+    "message": "Amakuru",
+    "insertIntoTitle": "Tamu omu mutwe",
+    "insertIntoMessage": "Tamu omu butumwa",
+    "anyLeadField": "Omusiri gwona ogw'okwebembera nigukora, nk'eky'okureeberaho <code1>{{example1}}</code1> nari <code2>{{example2}}</code2> .",
+    "preview": "Okubanza kureeba (eky'okureeberaho ky'okwebembera)",
+    "enabled": "Kishobooroirwe",
+    "saveRule": "Biika ekimanyiso",
+    "createRule": "Taho ekimanyiso",
+    "variables": {
+      "customerName": "Eiziina ry'okwebembera",
+      "customerMobile": "Yebembeire esimu",
+      "customerEmail": "Yebembere email",
+      "registrationId": "ID y'okwebembera",
+      "status": "Okoyemerire",
+      "subStatus": "Embeera y'ahansi",
+      "scheduleAt": "Ekiro n'obwire ebitebeekanisiibwe",
+      "assignedTo": "Omukozesa owaheebwa",
+      "updatedBy": "Ebihindwirwemu na",
+      "recipient": "Eiziina ry'orikutunga",
+      "project": "Purokekiti",
+      "notes": "Ekihandiiko ekihererukireyo",
+      "partner": "Eiziina ry'omukundwa"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Ahonaaho embeera ku erikuba etebekanisiibwe .",
+      "AT": "Omu bwire obutebeekanisiibwe .",
+      "A1D": "Ekiro 1 bwanyima y‘obwire obutebeekanisiibwe (okukuratirira okukyebera)"
+    },
+    "immediately": "Ahonaho",
+    "atScheduled": "Omu bwire obutebeekanisiibwe",
+    "before": {
+      "MINUTES_one": "{{count}} edakiika obwire obutebeekanisiibwe butakahikire",
+      "MINUTES_other": "{{count}} edakiika obwire obutebeekanisiibwe butakahikire",
+      "HOURS_one": "{{count}} eshaaha emwe obwire obutebeekanisiibwe butakahikire",
+      "HOURS_other": "{{count}} eshaaha zitakahikire obwire obutebeekanisiibwe",
+      "DAYS_one": "{{count}} eizooba ritakahikire obwire obutebeekanisiibwe",
+      "DAYS_other": "{{count}} ebiro bitakahikire obwire obutebekanisiibwe",
+      "WEEKS_one": "{{count}} wiiki obwire obutebeekanisiibwe butakahikire",
+      "WEEKS_other": "{{count}} wiiki obwire obutebeekanisiibwe butakahikire",
+      "MONTHS_one": "{{count}} okwezi obwire obutebeekanisiibwe butakahikire",
+      "MONTHS_other": "{{count}} ameezi obwire obutebeekanisiibwe butakahikire",
+      "YEARS_one": "{{count}} omwaka obwire obutebeekanisiibwe butakahikire",
+      "YEARS_other": "{{count}} emyaka obwire obutebeekanisiibwe butakahikire"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} edakiika bwanyima y'obwire obutebeekanisiibwe",
+      "MINUTES_other": "{{count}} edakiika bwanyima y'obwire obutebeekanisiibwe",
+      "HOURS_one": "{{count}} eshaaha bwanyima y'obwire obutebeekanisiibwe",
+      "HOURS_other": "{{count}} eshaaha bwanyima y'obwire obutebeekanisiibwe",
+      "DAYS_one": "{{count}} eizooba bwanyima y'obwire obutebeekanisiibwe",
+      "DAYS_other": "{{count}} ebiro bwanyima y'obwire obutebeekanisiibwe",
+      "WEEKS_one": "{{count}} wiiki bwanyima y'obwire obutebeekanisiibwe",
+      "WEEKS_other": "{{count}} wiiki bwanyima y'obwire obutebeekanisiibwe",
+      "MONTHS_one": "{{count}} okwezi bwanyima y'obwire obutebeekanisiibwe",
+      "MONTHS_other": "{{count}} ameezi bwanyima y'obwire obutebeekanisiibwe",
+      "YEARS_one": "{{count}} omwaka bwanyima y'obwire obutebeekanisiibwe",
+      "YEARS_other": "{{count}} emyaka bwanyima y'obwire obutebeekanisiibwe"
+    },
+    "units": {
+      "MINUTES_one": "edakiika",
+      "MINUTES_other": "edakiika",
+      "HOURS_one": "eshaaha",
+      "HOURS_other": "eshaaha",
+      "DAYS_one": "ekiro",
+      "DAYS_other": "Ebiro 10",
+      "WEEKS_one": "esande",
+      "WEEKS_other": "wiiki ishatu",
+      "MONTHS_one": "omwezi",
+      "MONTHS_other": "ameezi",
+      "YEARS_one": "omwaka",
+      "YEARS_other": "emyaaka"
+    }
+  }
+}

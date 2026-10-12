@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Ayarlar",
+    "noPermission": "Ayarları yönetme izniniz yok."
+  },
+  "categories": {
+    "lead": "Yol göstermek",
+    "user": "Kullanıcı",
+    "integrations": "Entegrasyonlar"
+  },
+  "leadTabs": {
+    "fields": "Alanlar",
+    "statuses": "Durumlar ve Alt Durumlar",
+    "notifications": "Bildirimler ve Planlayıcılar"
+  },
+  "fields": {
+    "leadIntro": "Potansiyel müşteri yakalama formunu yapılandırın: alanları etkinleştirin/devre dışı bırakın, gerekli olarak işaretleyin veya kendi özel alanlarınızı ekleyin.",
+    "userIntro": "Ekip Üyesi Ekle/Düzenle formunu yapılandırın: alanları etkinleştirin/devre dışı bırakın, gerekli olarak işaretleyin veya kendi özel alanlarınızı ekleyin.",
+    "addCustomField": "+ Özel Alan Ekle",
+    "fieldLabel": "Alan Etiketi",
+    "group": "Grup",
+    "groupPlaceholderLead": "örneğin Sorgulama Bilgileri",
+    "groupPlaceholderUser": "örneğin Ek Ayrıntılar",
+    "dataType": "Veri Türü",
+    "options": "Seçenekler (virgülle ayrılmış)",
+    "requiredLead": "Gerekli - ekibinizdeki ortakların bir müşteri adayını kaydetmek için bunu doldurması gerekir",
+    "requiredUser": "Gerekli - bir ekip üyesi eklenirken doldurulmalıdır",
+    "creating": "Oluşturuluyor...",
+    "createField": "Alan Oluştur",
+    "columns": {
+      "field": "Alan",
+      "group": "Grup",
+      "type": "Tip",
+      "required": "Gerekli",
+      "enabled": "Etkinleştirilmiş",
+      "kind": "Tür"
+    },
+    "kind": {
+      "custom": "Gelenek",
+      "core": "Çekirdek (kilitli)",
+      "standard": "Standart"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Metin",
+    "TEXTAREA": "Uzun metin",
+    "NUMBER": "Sayı",
+    "CURRENCY": "Para birimi",
+    "DATE": "Tarih",
+    "SELECT": "Yıkılmak",
+    "LIST": "Liste"
+  },
+  "picker": {
+    "searchPlaceholder": "Potansiyel müşteri alanlarında ara...",
+    "summary": "{{shown}} gösteriliyor · {{mandatory}} zorunlu",
+    "mandatory": "Zorunlu",
+    "noMatch": "Hiçbir alan eşleşmiyor."
+  },
+  "statuses": {
+    "intro": "Müşteri adayı durumları ve alt durumları - birisi bir müşteri adayını güncellediğinde her birinin istediği şeyler (tarih ve saat, müşteri adayı alanları).",
+    "add": "+ Durum Ekle",
+    "columns": {
+      "order": "Emir",
+      "status": "Durum",
+      "subStatuses": "Alt Durumlar",
+      "asksFor": "İstedi",
+      "active": "Aktif"
+    },
+    "moveUp": "Yukarı taşı",
+    "moveDown": "Aşağı taşı",
+    "defaultBadge": "Yeni potansiyel müşteriler için varsayılan",
+    "bookingBadge": "Rezervasyon durumu",
+    "asksForLabel": "{{label}} ister",
+    "asksForDateTime": "Tarih ve saati sorar",
+    "none": "Hiçbiri",
+    "dateTime": "Tarih ve saat",
+    "scheduledOn": "{{names}} üzerinde",
+    "fieldsSummary_one": "{{count}} alanı ( {{mandatory}} zorunlu)",
+    "fieldsSummary_other": "{{count}} alan ( {{mandatory}} zorunlu)",
+    "deleteConfirm": "\" {{name}} \" durumu silinsin mi? Bu geri alınamaz.",
+    "editTitle": "Durumu Düzenle - {{name}}",
+    "newTitle": "Yeni Durum",
+    "name": "Durum Adı",
+    "colour": "Renk",
+    "active": "Aktif",
+    "isDefault": "Yeni potansiyel müşteriler için varsayılan durum",
+    "isBooking": "Rezervasyon durumu (Rezervasyonu Tamamla tarafından belirlenir)",
+    "whenMoved": "Bir müşteri adayı bu duruma taşındığında",
+    "askSchedule": "Tarih ve saat isteyin (zamanlayıcı)",
+    "scheduleLabelPlaceholder": "Etiket, örneğin Ziyaret tarihi:",
+    "fieldsToShow": "Güncelleme formunda gösterilecek potansiyel müşteri alanları",
+    "subStatusesTitle": "Alt Durumlar",
+    "subStatusesHint": "Her alt durum kendi tarihini ve saatini isteyebilir ve yukarıdaki durum alanlarının üstünde gösterilen kendi alanlarını ekleyebilir.",
+    "subStatusName": "Alt durum adı",
+    "subFields": "Alanlar ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Tarih ve saat etiketi, ör. Geri arama saati",
+    "addSubStatus": "+ Alt Durum Ekle",
+    "saveStatus": "Durumu Kaydet",
+    "createStatus": "Durum Oluştur"
+  },
+  "notifications": {
+    "intro": "Bir müşteri adayı belirli bir duruma ulaştığında, hemen veya planlanan tarih ve saatten belirli bir süre önce/sonra, doğru kişileri bilgilendirin.",
+    "add": "+ Bildirim Ekle",
+    "columns": {
+      "notification": "Bildiri",
+      "whenStatusIs": "Durum Ne Zaman",
+      "sends": "Gönderimler",
+      "to": "İle",
+      "via": "Aracılığıyla",
+      "enabled": "Etkinleştirilmiş"
+    },
+    "anyStatus": "Herhangi bir durum",
+    "anySubStatus": "Herhangi bir alt durum",
+    "inactiveOption": "{{name}} (etkin değil)",
+    "emptyRules": "Henüz bildirim yok; bir müşteri adayı bir duruma ulaştığında ekibinizi uyarmak için bir bildirim ekleyin.",
+    "jobs": {
+      "title": "Planlandı ve Gönderildi",
+      "firesAt": "Yangınlar",
+      "notification": "Bildiri",
+      "lead": "Yol göstermek",
+      "status": "Durum",
+      "details": "Detaylar",
+      "empty": "Henüz planlanmış veya gönderilmiş bir şey yok.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Askıda olması",
+      "PROCESSING": "İşleme",
+      "SENT": "Gönderilmiş",
+      "FAILED": "Arızalı",
+      "SKIPPED": "Atlandı",
+      "CANCELLED": "İptal edildi"
+    },
+    "deliveryStatus": {
+      "SENT": "gönderilmiş",
+      "FAILED": "arızalı",
+      "SKIPPED": "atlandı"
+    },
+    "deliveryChannel": {
+      "IN_APP": "uygulama içi",
+      "EMAIL": "e-posta",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Atanan kullanıcı",
+      "owner": "Mal sahibi",
+      "updatedBy": "Tarafından güncellendi",
+      "role": "Rol: {{name}}"
+    },
+    "channels": {
+      "inApp": "Uygulama içi",
+      "email": "E-posta",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "\" {{name}} \" bildirimi silinsin mi? Bekleyen hatırlatıcılar iptal edildi.",
+    "testPrompt": "Hangi müşteri ID kullanarak kendinize (uygulama içi) bu bildirimin bir testini gönderin?",
+    "testSent": "Zilinize gönderildi: {{title}} {{message}}",
+    "headersInvalid": "Webhook başlıkları geçerli JSON olmalıdır; örneğin {\"Yetkilendirme\": \"Taşıyıcı xyz\"}",
+    "editTitle": "Bildirimi Düzenle",
+    "newTitle": "Yeni Bildirim",
+    "name": "İsim",
+    "namePlaceholder": "ör. Site ziyareti hatırlatıcısı",
+    "whenStatus": "Bir potansiyel müşterinin durumu şu olduğunda:",
+    "subStatus": "Alt durum",
+    "send": "Gönder (zamanlayıcı)",
+    "custom": "Gelenek...",
+    "modeBefore": "planlanan saatten önce",
+    "modeAfter": "planlanan saatten sonra",
+    "noScheduleWarning": "Bu durum bir tarih ve saat sormaz, dolayısıyla \"planlanan saatten önce/saatte/sonra\" bildirimi hiçbir zaman tetiklenmez.",
+    "noScheduleFix": "Durumlar ve Alt Durumlar altında bunun için <strong>tarih ve saat sor seçeneğini</strong> açın veya Hemen gönderin.",
+    "sendTo": "Gönder (herhangi bir kombinasyon)",
+    "recipientAssigned": "Atanan kullanıcı (olası müşteri sahibi)",
+    "recipientOwner": "Hesap sahibi / yöneticisi",
+    "recipientUpdatedBy": "Durumu güncelleyen kişi",
+    "everyoneWithRole": "Rolü olan herkes",
+    "specificUsers": "Belirli kullanıcılar (aktif)",
+    "inactiveNever": "Etkin olmayan kullanıcılar, seçilseler bile hiçbir zaman bildirim almazlar.",
+    "deliverVia": "Şununla teslim et:",
+    "channelInApp": "Uygulama içi (zil)",
+    "channelEmail": "E-posta",
+    "channelWebhook": "Webhook ( WhatsApp / SMS sağlayıcısı)",
+    "emailHint": "E-posta her alıcının e-posta adresine gider ve sunucuda SMTP'nin kurulması gerekir (arka uç/.env); o zamana kadar e-posta gönderimleri atlanmış olarak günlüğe kaydedilir.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Başlıklar ( JSON )",
+    "content": "Bildirim içeriği",
+    "title": "Başlık",
+    "message": "Mesaj",
+    "insertIntoTitle": "Başlığa Ekle",
+    "insertIntoMessage": "Mesaja Ekle",
+    "anyLeadField": "Herhangi bir öncü alan da işe yarar, örneğin <code1>{{example1}}</code1> veya <code2>{{example2}}</code2> .",
+    "preview": "Önizleme (örnek potansiyel müşteri)",
+    "enabled": "Etkinleştirilmiş",
+    "saveRule": "Bildirimi Kaydet",
+    "createRule": "Bildirim Oluştur",
+    "variables": {
+      "customerName": "Potansiyel müşteri adı",
+      "customerMobile": "Mobil müşteri adayı",
+      "customerEmail": "Potansiyel müşteri e-postası",
+      "registrationId": "Müşteri ID",
+      "status": "Durum",
+      "subStatus": "Alt durum",
+      "scheduleAt": "Planlanan tarih ve saat",
+      "assignedTo": "Atanan kullanıcı",
+      "updatedBy": "Tarafından güncellendi",
+      "recipient": "Alıcı adı",
+      "project": "Proje",
+      "notes": "Son not",
+      "partner": "İş ortağı adı"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Durum ayarlandığında hemen",
+      "AT": "Planlanan zamanda",
+      "A1D": "Planlanan saatten 1 gün sonra (takip kontrolü)"
+    },
+    "immediately": "Hemen",
+    "atScheduled": "Planlanan zamanda",
+    "before": {
+      "MINUTES_one": "Planlanan saatten {{count}} dakika önce",
+      "MINUTES_other": "Planlanan saatten {{count}} dakika önce",
+      "HOURS_one": "Planlanan saatten {{count}} saat önce",
+      "HOURS_other": "Planlanan saatten {{count}} saat önce",
+      "DAYS_one": "Planlanan saatten {{count}} gün önce",
+      "DAYS_other": "Planlanan zamandan {{count}} gün önce",
+      "WEEKS_one": "Planlanan zamandan {{count}} hafta önce",
+      "WEEKS_other": "planlanan saatten {{count}} hafta önce",
+      "MONTHS_one": "Planlanan zamandan {{count}} ay önce",
+      "MONTHS_other": "planlanan saatten {{count}} ay önce",
+      "YEARS_one": "planlanan saatten {{count}} yıl önce",
+      "YEARS_other": "planlanan saatten {{count}} yıl önce"
+    },
+    "after": {
+      "MINUTES_one": "Planlanan saatten {{count}} dakika sonra",
+      "MINUTES_other": "Planlanan saatten {{count}} dakika sonra",
+      "HOURS_one": "Planlanan saatten {{count}} saat sonra",
+      "HOURS_other": "Planlanan saatten {{count}} saat sonra",
+      "DAYS_one": "Planlanan saatten {{count}} gün sonra",
+      "DAYS_other": "Planlanan saatten {{count}} gün sonra",
+      "WEEKS_one": "Planlanan zamandan {{count}} hafta sonra",
+      "WEEKS_other": "Planlanan saatten {{count}} hafta sonra",
+      "MONTHS_one": "Planlanan zamandan {{count}} ay sonra",
+      "MONTHS_other": "Planlanan zamandan {{count}} ay sonra",
+      "YEARS_one": "Planlanan saatten {{count}} yıl sonra",
+      "YEARS_other": "Planlanan zamandan {{count}} yıl sonra"
+    },
+    "units": {
+      "MINUTES_one": "dakika",
+      "MINUTES_other": "dakika",
+      "HOURS_one": "saat",
+      "HOURS_other": "saat",
+      "DAYS_one": "gün",
+      "DAYS_other": "günler",
+      "WEEKS_one": "hafta",
+      "WEEKS_other": "haftalar",
+      "MONTHS_one": "ay",
+      "MONTHS_other": "aylar",
+      "YEARS_one": "yıl",
+      "YEARS_other": "yıllar"
+    }
+  }
+}

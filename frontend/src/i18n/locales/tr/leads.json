@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Potansiyel Müşterilerim",
+    "signedInAs": "{{name}} ( {{partnerId}} ) olarak oturum açıldı · {{timezone}} saat diliminde gösterildi",
+    "addLead": "+ Potansiyel Müşteri Ekle",
+    "tabs": {
+      "all": "Hepsi ( {{count}} )",
+      "pending": "Beklemede ( {{count}} )",
+      "booked": "Rezervasyon yapıldı ( {{count}} )"
+    },
+    "searchPlaceholder": "Ada, cep telefonuna veya kayıt ID göre arayın...",
+    "manageColumns": "Sütunları Yönet",
+    "rowsPerPage": "Sayfa başına satır",
+    "registrationId": "Kayıt ID",
+    "emptyState": "Henüz potansiyel müşteri yok; ilk müşterinizi kaydedin.",
+    "noMatch": "Bu filtrelerle eşleşen potansiyel müşteri yok.",
+    "showing": "{ {{total}} girişten {{from}} - {{to}} arası gösteriliyor",
+    "actions": {
+      "preview": "Önizleme ve hızlı güncelleme",
+      "history": "Tarih",
+      "email": "E-posta",
+      "whatsapp": "WhatsApp",
+      "call": "Arama"
+    },
+    "pagination": {
+      "first": "İlk sayfa",
+      "previous": "Önceki sayfa",
+      "next": "Sonraki sayfa",
+      "last": "Son sayfa"
+    }
+  },
+  "columns": {
+    "status": "Durum",
+    "assignTo": "Ata",
+    "booked": "Rezerve edildi",
+    "protectionUntil": "Koruma Süresi"
+  },
+  "booking": {
+    "booked": "Rezerve edildi",
+    "pending": "Askıda olması"
+  },
+  "assign": {
+    "unassigned": "Atanmamış",
+    "owner": "{{name}} (Sahip)",
+    "inactive": "{{name}} (etkin değil)",
+    "unknownUser": "Bilinmeyen kullanıcı",
+    "assignedTo": "{{name}} adlı kişiye atandı"
+  },
+  "form": {
+    "addTitle": "Potansiyel Müşteri Ekle",
+    "editTitle": "Potansiyel Müşteriyi Düzenle",
+    "noPermissionAdd": "Potansiyel müşteri kaydetme izniniz yok.",
+    "noPermissionEdit": "Potansiyel müşterileri düzenleme izniniz yok.",
+    "selectPlaceholder": "Seçme...",
+    "commaSeparated": "Virgülle ayrılmış",
+    "phonePlaceholder": "Telefon numarası",
+    "countryCode": "Ülke kodu"
+  },
+  "project": {
+    "none": "Henüz proje yok (yönlendirilmedi)",
+    "notInList": "{{project}} (proje listesinde değil)"
+  },
+  "journey": {
+    "customer": "Müşteri",
+    "currentOwner": "Şimdiki Sahip",
+    "protectionExpiry": "Korumanın Sona Ermesi",
+    "leadStatus": "Müşteri Adayı Durumu",
+    "scheduled": "planlanmış",
+    "assignedTo": "Atanan Kişi",
+    "referral": "Yönlendirme",
+    "builderReason": "İnşaatçının nedeni: {{reason}}",
+    "bookedHint": "İnşaatçı tarafından rezerve edildi - operasyonel mülkiyet inşaatçıya geçti; Atıf ve komisyon uygunluğunuz korunur.",
+    "notBookedHint": "Rezervasyonlar, yönlendirmeyi kabul ettikten sonra inşaatçı tarafından onaylanır.",
+    "quickUpdate": "Hızlı Güncelleme",
+    "leadDetails": "Potansiyel Müşteri Ayrıntıları",
+    "progressHistory": "İlerleme Geçmişi",
+    "timesIn": "( {{timezone}} cinsinden zamanlar)",
+    "backToMyLeads": "Potansiyel Müşterilerime Geri Dön",
+    "editLead": "Potansiyel Müşteriyi Düzenle"
+  },
+  "referral": {
+    "NOT_REFERRED": "Yönlendirilmedi (proje yok)",
+    "PENDING_BUILDER": "İnşaatçıyı bekliyorum",
+    "ACCEPTED": "İnşaatçı tarafından kabul edildi",
+    "REJECTED": "İnşaatçı tarafından reddedildi"
+  },
+  "preview": {
+    "ariaLabel": "Potansiyel müşteri önizlemesi",
+    "title": "Potansiyel Müşteri Önizlemesi",
+    "source": "Kaynak",
+    "location": "Konum",
+    "scheduled": "planlanmış",
+    "registered": "Kayıtlı",
+    "latestNote": "Son Not",
+    "quickUpdate": "Hızlı Güncelleme",
+    "fullDetails": "Tüm Ayrıntılar",
+    "editLead": "Potansiyel Müşteriyi Düzenle",
+    "history": "Tarih"
+  },
+  "quick": {
+    "assignedTo": "Atanan Kişi",
+    "status": "Durum",
+    "subStatus": "Alt Durum",
+    "selectSubStatus": "Alt durumu seç...",
+    "none": "Hiçbiri",
+    "scheduledAt": "Planlandı:",
+    "localTime": "yerel saat",
+    "note": "Not",
+    "notePlaceholder": "Bu görüşmede/ziyarette neler yaşandı? (isteğe bağlı)",
+    "updateStatus": "Durumu Güncelle",
+    "statusUpdated": "Durum güncellendi",
+    "bookedLocked": "Bu potansiyel müşteri rezerve edildi; durumu artık değiştirilemez.",
+    "viewOnly": "Bu müşteri adayını görüntüleyebilirsiniz ancak rolünüz bunu güncelleyemez."
+  },
+  "history": {
+    "title": "Geçmiş - {{registrationId}}",
+    "tabs": {
+      "all": "Tüm",
+      "status": "Durum",
+      "assignment": "Atama",
+      "notes": "Notlar"
+    },
+    "doneBy": "{{actor}} tarafından yapıldı",
+    "system": "Sistem",
+    "platforms": {
+      "System": "Sistem",
+      "External": "Harici",
+      "Web": "ağ",
+      "Mobile": "Mobil"
+    },
+    "added": "eklendi",
+    "updated": "güncellendi",
+    "empty": "(boş)",
+    "noHistory": "Bu kategoride henüz geçmiş yok.",
+    "fieldLabels": {
+      "stage": "Durum",
+      "subStatus": "Alt Durum",
+      "scheduledAt": "Takvim",
+      "notes": "Notlar",
+      "assignedTo": "Atanan Kişi"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "İş ortağı kaydı alındı",
+      "DUPLICATE_CHECK_COMPLETED": "Yinelenen kontrol tamamlandı - etkin bir kopya bulunamadı",
+      "REGISTRATION_ACCEPTED": "Kayıt kabul edildi",
+      "PROTECTION_GRANTED_one": "{{count}} günlük koruma verildi",
+      "PROTECTION_GRANTED_other": "{{count}} günlük koruma verildi",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partnerId}} tarafından yapılan yinelenen kayıt girişimi reddedildi",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} alanı güncellendi",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} alan güncellendi",
+      "STAGE_UPDATED": "Durum {{status}} olarak güncellendi",
+      "LEAD_ASSIGNED": "{{name}} adlı kişiye atandı",
+      "LEAD_UNASSIGNED": "Atanmamış",
+      "BOOKING_COMPLETED": "Rezervasyon tamamlandı",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operasyonel mülkiyet Builder'a devredildi",
+      "PARTNER_ATTRIBUTION_PRESERVED": "İş ortağı ilişkilendirmesi korundu",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komisyon uygunluğu oluşturuldu",
+      "HANDOVER_COMPLETED": "Devir teslim tamamlandı",
+      "REFERRAL_ACCEPTED": "İnşaatçı tavsiyeyi kabul etti",
+      "REFERRAL_REJECTED": "İnşaatçı yönlendirmeyi reddetti. Sebep: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Yönetici yinelenen korumayı erken yayınladı. Sebep: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Yönetici, kaydı {{from}} yerine {{to}} olarak yeniden atadı. Sebep: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Sütunları Yönet",
+    "hint": "Yeniden sıralamak için sürükleyin · göstermek için işaretleyin",
+    "showAll": "Tümünü Göster",
+    "resetDefault": "Varsayılana Sıfırla"
+  },
+  "filters": {
+    "title": "Filtreler",
+    "allProjects": "Tüm projeler",
+    "any": "Herhangi",
+    "noFields": "Henüz filtrelenebilir başka alan etkinleştirilmedi (Ayarlar > Potansiyel Müşteri).",
+    "clearAll": "Tümünü Temizle"
+  },
+  "phone": {
+    "MISSING": "Telefon numarası gerekli.",
+    "INVALID": "Lütfen geçerli bir telefon numarası girin.",
+    "TOO_SHORT": "Telefon numarası çok kısa.",
+    "TOO_LONG": "Telefon numarası çok uzun.",
+    "INVALID_FOR_COUNTRY": "Bu telefon numarası {{country}} için geçerli değil.",
+    "COUNTRY_MISMATCH": "Lütfen doğru ülke kodunu seçin.",
+    "NOT_MOBILE": "Lütfen sabit hat değil cep telefonu numarası giriniz."
+  }
+}

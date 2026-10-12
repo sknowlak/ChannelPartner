@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Seaded",
+    "noPermission": "Teil pole seadete haldamiseks luba."
+  },
+  "categories": {
+    "lead": "Plii",
+    "user": "Kasutaja",
+    "integrations": "Integratsioonid"
+  },
+  "leadTabs": {
+    "fields": "Väljad",
+    "statuses": "Olekud ja alamolekud",
+    "notifications": "Märguanded ja ajastajad"
+  },
+  "fields": {
+    "leadIntro": "Konfigureerige müügivihje püüdmise vorm: lubage/keela väljad, märkige need nõutavaks või lisage oma kohandatud väljad.",
+    "userIntro": "Konfigureerige meeskonnaliikme lisamise/redigeerimise vorm: lubage/keela väljad, märkige need kohustuslikuks või lisage oma kohandatud väljad.",
+    "addCustomField": "+ Lisa kohandatud väli",
+    "fieldLabel": "Välja silt",
+    "group": "Grupp",
+    "groupPlaceholderLead": "nt Päringuinfo",
+    "groupPlaceholderUser": "nt Täiendavad üksikasjad",
+    "dataType": "Andmetüüp",
+    "options": "Valikud (komadega eraldatud)",
+    "requiredLead": "Nõutav – teie meeskonna partnerid peavad müügivihje registreerimiseks selle täitma",
+    "requiredUser": "Nõutav - tuleb täita meeskonnaliikme lisamisel",
+    "creating": "Loomine...",
+    "createField": "Loo väli",
+    "columns": {
+      "field": "Väli",
+      "group": "Grupp",
+      "type": "Tüüp",
+      "required": "Nõutav",
+      "enabled": "Lubatud",
+      "kind": "Lahke"
+    },
+    "kind": {
+      "custom": "Kohandatud",
+      "core": "Tuum (lukustatud)",
+      "standard": "Standardne"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Tekst",
+    "TEXTAREA": "Pikk tekst",
+    "NUMBER": "Number",
+    "CURRENCY": "Valuuta",
+    "DATE": "Kuupäev",
+    "SELECT": "Rippmenüü",
+    "LIST": "Nimekiri"
+  },
+  "picker": {
+    "searchPlaceholder": "Otsi müügivihje väljasid...",
+    "summary": "{{shown}} näidatud · {{mandatory}} kohustuslik",
+    "mandatory": "Kohustuslik",
+    "noMatch": "Ükski välja ei vasta."
+  },
+  "statuses": {
+    "intro": "Teie müügivihje olekud ja alamolekud – mida igaüks küsib (kuupäev ja kellaaeg, müügivihje väljad), kui keegi sellele müügivihjet värskendab.",
+    "add": "+ Lisa olek",
+    "columns": {
+      "order": "Telli",
+      "status": "Olek",
+      "subStatuses": "Alamolekud",
+      "asksFor": "Küsib",
+      "active": "Aktiivne"
+    },
+    "moveUp": "Liigu üles",
+    "moveDown": "Liigu alla",
+    "defaultBadge": "Vaikimisi uute müügivihjete jaoks",
+    "bookingBadge": "Broneeringu olek",
+    "asksForLabel": "Küsib {{label}}",
+    "asksForDateTime": "Küsib kuupäeva ja kellaaega",
+    "none": "Mitte ühtegi",
+    "dateTime": "Kuupäev ja kellaaeg",
+    "scheduledOn": "kuupäeval {{names}}",
+    "fieldsSummary_one": "{{count}} väli ( {{mandatory}} kohustuslik)",
+    "fieldsSummary_other": "{{count}} välja ( {{mandatory}} kohustuslik)",
+    "deleteConfirm": "Kas kustutada olek \" {{name}} \"? Seda ei saa tagasi võtta.",
+    "editTitle": "Muuda olekut – {{name}}",
+    "newTitle": "Uus olek",
+    "name": "Oleku nimi",
+    "colour": "Värv",
+    "active": "Aktiivne",
+    "isDefault": "Uute müügivihjete vaikeolek",
+    "isBooking": "Broneeringu olek (määrab Täielik broneerimine)",
+    "whenMoved": "Kui müügivihje viiakse sellesse olekusse",
+    "askSchedule": "Küsi kuupäeva ja kellaaega (plaanija)",
+    "scheduleLabelPlaceholder": "Silt, nt Külasta aadressil",
+    "fieldsToShow": "Värskendusvormil kuvatavad müügivihje väljad",
+    "subStatusesTitle": "Alamolekud",
+    "subStatusesHint": "Iga alamolek võib küsida oma kuupäeva ja kellaaega ning lisada oma väljad – kuvatakse ülalolevate olekuväljade kohal.",
+    "subStatusName": "Alamoleku nimi",
+    "subFields": "Väljad ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Kuupäeva ja kellaaja silt, nt Helista tagasi kell",
+    "addSubStatus": "+ Lisa alamolek",
+    "saveStatus": "Salvesta olek",
+    "createStatus": "Loo olek"
+  },
+  "notifications": {
+    "intro": "Teavitage õigeid inimesi, kui müügivihje jõuab olekusse – kohe või määratud kellaajal enne/pärast sellel kavandatud kuupäeva ja kellaaega.",
+    "add": "+ Lisa märguanne",
+    "columns": {
+      "notification": "Teavitus",
+      "whenStatusIs": "Kui staatus on",
+      "sends": "Saadab",
+      "to": "To",
+      "via": "Via",
+      "enabled": "Lubatud"
+    },
+    "anyStatus": "Igasugune olek",
+    "anySubStatus": "Mis tahes alamolek",
+    "inactiveOption": "{{name}} (mitteaktiivne)",
+    "emptyRules": "Märguandeid pole veel – lisage teade, et teavitada oma meeskonda, kui müügivihje jõuab olekusse.",
+    "jobs": {
+      "title": "Ajastatud ja saadetud",
+      "firesAt": "Tulekahjud kl",
+      "notification": "Teavitus",
+      "lead": "Plii",
+      "status": "Olek",
+      "details": "Üksikasjad",
+      "empty": "Midagi pole veel plaanitud ega saadetud.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Ootel",
+      "PROCESSING": "Töötlemine",
+      "SENT": "Saadetud",
+      "FAILED": "Ebaõnnestunud",
+      "SKIPPED": "Vahele jäetud",
+      "CANCELLED": "Tühistatud"
+    },
+    "deliveryStatus": {
+      "SENT": "saadetud",
+      "FAILED": "ebaõnnestunud",
+      "SKIPPED": "vahele jäetud"
+    },
+    "deliveryChannel": {
+      "IN_APP": "rakendusesisene",
+      "EMAIL": "meili",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Määratud kasutaja",
+      "owner": "Omanik",
+      "updatedBy": "Värskendanud",
+      "role": "Roll: {{name}}"
+    },
+    "channels": {
+      "inApp": "Rakendusesisene",
+      "email": "Meil",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Kas kustutada teatis „ {{name}} ”? Selle ootel meeldetuletused tühistatakse.",
+    "testPrompt": "Millist müügivihje ID kasutades saata selle märguande test endale (rakendusesisene)?",
+    "testSent": "Teie kellale saadetud: {{title}} {{message}}",
+    "headersInvalid": "Webhook päised peavad olema kehtivad JSON , nt {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Redigeeri teatist",
+    "newTitle": "Uus teatis",
+    "name": "Nimi",
+    "namePlaceholder": "nt saidi külastuse meeldetuletus",
+    "whenStatus": "Kui müügivihje olek on",
+    "subStatus": "Alamolek",
+    "send": "Saada (ajakavandaja)",
+    "custom": "Kohandatud...",
+    "modeBefore": "enne määratud aega",
+    "modeAfter": "pärast ettenähtud aega",
+    "noScheduleWarning": "See olek ei küsi kuupäeva ja kellaaega, seega ei käivituks märguanne „enne/at/pärast määratud aega”.",
+    "noScheduleFix": "Lülitage jaotises Olekud ja alamolekud <strong>sisse Küsi selle jaoks kuupäeva ja kellaaega</strong> või saatke kohe.",
+    "sendTo": "Saada (ükskõik milline kombinatsioon)",
+    "recipientAssigned": "Määratud kasutaja (juhtomanik)",
+    "recipientOwner": "Konto omanik/administraator",
+    "recipientUpdatedBy": "Isik, kes olekut värskendas",
+    "everyoneWithRole": "Kõik, kellel on roll",
+    "specificUsers": "Konkreetsed kasutajad (aktiivsed)",
+    "inactiveNever": "Mitteaktiivsed kasutajad ei saa kunagi märguandeid, isegi kui need on valitud.",
+    "deliverVia": "Tarne kaudu",
+    "channelInApp": "Rakendusesisene (kell)",
+    "channelEmail": "Meil",
+    "channelWebhook": "Webhook ( WhatsApp / SMS i pakkuja)",
+    "emailHint": "E-post läheb iga adressaadi meiliaadressile ja vajab serveris SMTP seadistamist (backend/.env); kuni selle ajani logitakse meili saatmised vahele jäetuna.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Päised ( JSON )",
+    "content": "Teavituse sisu",
+    "title": "Pealkiri",
+    "message": "Sõnum",
+    "insertIntoTitle": "Sisesta pealkirjasse",
+    "insertIntoMessage": "Sisestage sõnumisse",
+    "anyLeadField": "Töötab ka mis tahes müügivihje väli, nt <code1>{{example1}}</code1> või <code2>{{example2}}</code2> .",
+    "preview": "Eelvaade (vihje näidis)",
+    "enabled": "Lubatud",
+    "saveRule": "Salvesta teatis",
+    "createRule": "Loo märguanne",
+    "variables": {
+      "customerName": "Juhtimise nimi",
+      "customerMobile": "Plii mobiil",
+      "customerEmail": "Juhtmeil",
+      "registrationId": "Müügivihje ID",
+      "status": "Olek",
+      "subStatus": "Alamolek",
+      "scheduleAt": "Plaanitud kuupäev ja kellaaeg",
+      "assignedTo": "Määratud kasutaja",
+      "updatedBy": "Värskendanud",
+      "recipient": "Saaja nimi",
+      "project": "Projekt",
+      "notes": "Viimane märkus",
+      "partner": "Partneri nimi"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Kohe, kui olek on seatud",
+      "AT": "Ettenähtud ajal",
+      "A1D": "1 päev pärast planeeritud aega (järelkontroll)"
+    },
+    "immediately": "Kohe",
+    "atScheduled": "Planeeritud ajal",
+    "before": {
+      "MINUTES_one": "{{count}} minutit enne määratud aega",
+      "MINUTES_other": "{{count}} minutit enne määratud aega",
+      "HOURS_one": "{{count}} tundi enne määratud aega",
+      "HOURS_other": "{{count}} tundi enne määratud aega",
+      "DAYS_one": "{{count}} päev enne määratud aega",
+      "DAYS_other": "{{count}} päeva enne määratud aega",
+      "WEEKS_one": "{{count}} nädalat enne määratud aega",
+      "WEEKS_other": "{{count}} nädalat enne määratud aega",
+      "MONTHS_one": "{{count}} kuud enne määratud aega",
+      "MONTHS_other": "{{count}} kuud enne määratud aega",
+      "YEARS_one": "{{count}} aastat enne kavandatud aega",
+      "YEARS_other": "{{count}} aastat enne kavandatud aega"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minutit pärast planeeritud aega",
+      "MINUTES_other": "{{count}} minutit pärast planeeritud aega",
+      "HOURS_one": "{{count}} tundi pärast planeeritud aega",
+      "HOURS_other": "{{count}} tundi pärast planeeritud aega",
+      "DAYS_one": "{{count}} päeva pärast planeeritud aega",
+      "DAYS_other": "{{count}} päeva pärast planeeritud aega",
+      "WEEKS_one": "{{count}} nädalat pärast planeeritud aega",
+      "WEEKS_other": "{{count}} nädalat pärast planeeritud aega",
+      "MONTHS_one": "{{count}} kuu pärast kavandatud aega",
+      "MONTHS_other": "{{count}} kuud pärast kavandatud aega",
+      "YEARS_one": "{{count}} aastat pärast kavandatud aega",
+      "YEARS_other": "{{count}} aastat pärast kavandatud aega"
+    },
+    "units": {
+      "MINUTES_one": "minut",
+      "MINUTES_other": "minutit",
+      "HOURS_one": "tund",
+      "HOURS_other": "tundi",
+      "DAYS_one": "päeval",
+      "DAYS_other": "päevadel",
+      "WEEKS_one": "nädal",
+      "WEEKS_other": "nädalaid",
+      "MONTHS_one": "kuu",
+      "MONTHS_other": "kuud",
+      "YEARS_one": "aastal",
+      "YEARS_other": "aastat"
+    }
+  }
+}

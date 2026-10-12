@@ -1,0 +1,83 @@
+{
+  "title": "Hantera team",
+  "tabs": {
+    "members": "Teammedlemmar",
+    "roles": "Roller och behörigheter",
+    "profile": "Min profil"
+  },
+  "roles": {
+    "owner": "Ägare",
+    "member": "Teammedlem"
+  },
+  "profile": {
+    "updated": "Profilen uppdaterad.",
+    "basicInfo": "Grundläggande information",
+    "organisationInfo": "Organisationsinformation",
+    "preferences": "Inställningar",
+    "companyName": "Företagets/organisationens namn",
+    "city": "Stad",
+    "state": "Ange",
+    "currencyHelp": "Används för att visa budgetar och bokningsvärden i hela ditt team.",
+    "useDeviceTimezone": "Använd enhetens tidszon ( {{timezone}} )",
+    "securityRole": "Säkerhet & Roll",
+    "newPassword": "Nytt lösenord (lämna tomt för att förbli oförändrat)",
+    "currentPassword": "Aktuellt lösenord",
+    "memberSince": "Medlem sedan",
+    "languageSaved": "Språket sparat på ditt konto – det kommer att användas på alla enheter du loggar in på."
+  },
+  "members": {
+    "intro": "Lägg till, redigera, inaktivera eller ta bort personer i ditt team – de delar åtkomst till samma potentiella kunder.",
+    "noPermission": "Du har inte behörighet att lägga till, redigera eller ta bort teammedlemmar.",
+    "addNew": "+ Lägg till ny användare",
+    "passwordLabel": "{{label}} (minst 8 tecken)",
+    "rolePermissions": "Roll och behörigheter",
+    "adding": "Lägger till...",
+    "addMember": "Lägg till teammedlem",
+    "tabAll": "Alla ( {{count}} )",
+    "tabActive": "Aktiv ( {{count}} )",
+    "tabInactive": "Inaktiv ( {{count}} )",
+    "searchPlaceholder": "Sök efter namn eller användarnamn...",
+    "allTimezones": "Alla tidszoner",
+    "perPage": "Inlägg per sida",
+    "contact": "Kontakta",
+    "added": "Tillagd",
+    "toggleActive": "Aktiv - klicka för att avaktivera",
+    "toggleInactive": "Inaktiv - klicka för att aktivera",
+    "empty": "Inga lagmedlemmar ännu.",
+    "noMatch": "Inga lagmedlemmar matchar dessa filter.",
+    "showing": "Visar {{from}} - {{to}} av {{total}} poster",
+    "firstPage": "Första sidan",
+    "previousPage": "Föregående sida",
+    "nextPage": "Nästa sida",
+    "lastPage": "Sista sidan"
+  },
+  "editMember": {
+    "title": "Redigera användare",
+    "noPermission": "Du har inte behörighet att redigera teammedlemmar.",
+    "backToTeam": "Tillbaka till Team",
+    "cantChangeOwn": "Du kan inte ändra din egen roll eller status.",
+    "needsManageRoles": "För att ändra en medlems roll krävs behörigheten Hantera roller.",
+    "addedBy": "Tillagd av",
+    "addedOn": "Tillagd på"
+  },
+  "rolesPage": {
+    "intro": "Super Admin, Admin och Manager är inbyggda och kan inte ändras – skapa en anpassad roll för något annat.",
+    "noPermission": "Du har inte behörighet att hantera roller.",
+    "createCustom": "+ Skapa anpassad roll",
+    "roleName": "Rollnamn",
+    "permissions": "Behörigheter",
+    "members": "Medlemmar",
+    "creating": "Skapande...",
+    "createRole": "Skapa roll",
+    "systemRole": "Systemroll",
+    "builtIn": "Inbyggt",
+    "empty": "Inga roller än."
+  },
+  "permissions": {
+    "MANAGE_LEADS": "Hantera potentiella kunder (skapa, framsteg, boka)",
+    "MANAGE_TEAM": "Hantera team (lägg till, redigera, ta bort medlemmar)",
+    "MANAGE_ROLES": "Hantera roller och behörigheter",
+    "MANAGE_SETTINGS": "Hantera inställningar (fält för potentiella kunder)",
+    "none": "Inga behörigheter"
+  }
+}

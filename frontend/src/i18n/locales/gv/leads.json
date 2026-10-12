@@ -1,0 +1,194 @@
+{
+  "list": {
+    "title": "My Leads",
+    "signedInAs": "Loggyrt stiagh myr {{name}} ( {{partnerId}} ) · ny traaghyn taishbynit ayns {{timezone}}",
+    "addLead": "+ Cur Lead rish",
+    "tabs": {
+      "all": "Ooilley ( {{count}} )",
+      "pending": "Er-gerrey ( {{count}} )",
+      "booked": "Kiartit ( {{count}} )"
+    },
+    "searchPlaceholder": "Clasht liorish ennym, phone, ny ID cláryssey ...",
+    "manageColumns": "Riaghlagh Columnyn",
+    "rowsPerPage": "Roishtyn dagh duillag",
+    "registrationId": "ID cláshtaghey",
+    "emptyState": "Cha nel leads erbee foast - cliaghtey yn chiad red.",
+    "noMatch": "Nish cha nel leadsyn co-chosney rish ny filteryn shoh.",
+    "showing": "Soilshaghey {{from}} - {{to}} jeh {{total}}",
+    "actions": {
+      "preview": "Roish-scrutaght & ymmyd s'lesh",
+      "history": "Shennaghys",
+      "email": "E-mail",
+      "whatsapp": "WhatsApp",
+      "call": "Eie"
+    },
+    "pagination": {
+      "first": "Yn chied duillag",
+      "previous": "Duillag roish",
+      "next": "Yn duillag eisht",
+      "last": "Duillag s'jerree"
+    }
+  },
+  "columns": {
+    "status": "Keimeeaght",
+    "assignTo": "Cur da",
+    "booked": "Reserved",
+    "protectionUntil": "Coadey gys"
+  },
+  "booking": {
+    "booked": "Reserved",
+    "pending": "Derrey"
+  },
+  "assign": {
+    "unassigned": "Cha nel eh er ny choyrt",
+    "owner": "{{name}} (Eighder)",
+    "inactive": "{{name}} (nagh vel glan)",
+    "unknownUser": "Cleayneyder neu-ennoil",
+    "assignedTo": "Currit da {{name}}"
+  },
+  "form": {
+    "addTitle": "Cur Lead rish",
+    "editTitle": "Reih Lead",
+    "noPermissionAdd": "Cha nel cead ayd dy chlashtyn leads.",
+    "noPermissionEdit": "Cha nel cead ayd dy ghra leads.",
+    "selectPlaceholder": "Reih...",
+    "commaSeparated": "Comma er ny scarrey",
+    "phonePlaceholder": "Uimmir phone",
+    "countryCode": "Cood y çheer"
+  },
+  "project": {
+    "none": "Cha nel projet erbee foast (cha nel eh er ny choyrt)",
+    "notInList": "{{project}} (cha nel eh 'sy liosta y phrojekt)"
+  },
+  "journey": {
+    "customer": "Custymeyr",
+    "currentOwner": "Owner nish",
+    "protectionExpiry": "Cur-my-ner Coadey",
+    "leadStatus": "Stayd Lead",
+    "scheduled": "Screeuit",
+    "assignedTo": "Er ny choyrt gys",
+    "referral": "Reihys",
+    "builderReason": "Reesht y thooill: {{reason}}",
+    "bookedHint": "Booked by the builder - ta'n eiraght obbreeagh er ghluaisey gys y towshan; t'ad er nyn goadey dy vel dty attribution as dty chommishaghyn er nyn goadey.",
+    "notBookedHint": "Ta ny bookingyn cadjinit ec y towshan tra t'ad jannoo rish y referral.",
+    "quickUpdate": "Cur-my-ner",
+    "leadDetails": "Mion-ghoo Lead",
+    "progressHistory": "Taghyr Aarloo",
+    "timesIn": "(ammyn ayns {{timezone}} )",
+    "backToMyLeads": "Arraght gys my Leads",
+    "editLead": "Reih Lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "Cha nel eh er ny choyrt (cha nel projekt)",
+    "PENDING_BUILDER": "Ta mee erreish da'n towshan",
+    "ACCEPTED": "Ghow eh stiagh liorish y thooill",
+    "REJECTED": "Rejectit liorish y thooill"
+  },
+  "preview": {
+    "ariaLabel": "Roish-akin",
+    "title": "Roish-akin Lead",
+    "source": "Bun",
+    "location": "Jalloo",
+    "scheduled": "Screeuit",
+    "registered": "Clàrait",
+    "latestNote": "Note s'jerree",
+    "quickUpdate": "Cur-my-ner",
+    "fullDetails": "Mion-ghooishyn",
+    "editLead": "Reih Lead",
+    "history": "Shennaghys"
+  },
+  "quick": {
+    "assignedTo": "Er ny choyrt gys",
+    "status": "Keimeeaght",
+    "subStatus": "Fo-stayd",
+    "selectSubStatus": "Taght fo-stayd...",
+    "none": "Veg",
+    "scheduledAt": "Screeuit ec",
+    "localTime": "Oor ynnydagh;",
+    "note": "Baghtag",
+    "notePlaceholder": "Cre'n red haink er y ghlare / y chur-my-ner shoh? (reihyssagh)",
+    "updateStatus": "Stayd Ushtaghey",
+    "statusUpdated": "Stayd currit ry-cheilley",
+    "bookedLocked": "Ta'n lead shoh booked - cha nel e stayd ry-chaghlaa.",
+    "viewOnly": "Ta'n lead shoh ry-akin, agh cha nel y rol ayd ry-akin."
+  },
+  "history": {
+    "title": "Eash - {{registrationId}}",
+    "tabs": {
+      "all": "People",
+      "status": "Keimeeaght",
+      "assignment": "Currym",
+      "notes": "Noteyn"
+    },
+    "doneBy": "Jeh jeant liorish {{actor}}",
+    "system": "Aght",
+    "platforms": {
+      "System": "Aght",
+      "External": "Mooie",
+      "Web": "Web",
+      "Mobile": "Gáire"
+    },
+    "added": "Cur rish.",
+    "updated": "currit er-ash;",
+    "empty": "(endearment)",
+    "noHistory": "Cha nel shennaghys 'sy ronney shoh foast.",
+    "fieldLabels": {
+      "stage": "Keimeeaght",
+      "subStatus": "Fo-stayd",
+      "scheduledAt": "Skedjal",
+      "notes": "Noteyn",
+      "assignedTo": "Er ny choyrt gys"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Classaghey co-obbree er ny gheddyn",
+      "DUPLICATE_CHECK_COMPLETED": "Sheck daa-heshaght cliaghtey - cha nel daa-heshaght glan er ny gheddyn",
+      "REGISTRATION_ACCEPTED": "Gheiney clárys",
+      "PROTECTION_GRANTED_one": "{{count}} -coadey laa er ny choyrt",
+      "PROTECTION_GRANTED_two": "{{count}} -coadey laa er ny choyrt",
+      "PROTECTION_GRANTED_few": "{{count}} -coadey laa er ny choyrt",
+      "PROTECTION_GRANTED_many": "{{count}} -coadey laa er ny choyrt",
+      "PROTECTION_GRANTED_other": "{{count}} -coadey laa er ny choyrt",
+      "REGISTRATION_ATTEMPT_REJECTED": "Ta'n oirr cláshtaghey daa-heuagh ec {{partnerId}} er ny dhieeney",
+      "LEAD_DETAILS_UPDATED_one": "Yn field {{count}} er ny chur ry-cheilley",
+      "LEAD_DETAILS_UPDATED_two": "{{count}} fieldyn ry-hickyraghey",
+      "LEAD_DETAILS_UPDATED_few": "{{count}} fieldyn ry-hickyraghey",
+      "LEAD_DETAILS_UPDATED_many": "{{count}} fieldyn ry-hickyraghey",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} fieldyn ry-hickyraghey",
+      "STAGE_UPDATED": "Stayd currit er-ash gys {{status}}",
+      "LEAD_ASSIGNED": "Currit da {{name}}",
+      "LEAD_UNASSIGNED": "Cha nel eh er ny choyrt",
+      "BOOKING_COMPLETED": "Booking cliaghtey",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Ta'n eiraght obbreeagh er ny chur gys Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Ta'n obbyr-partner er ny choadey",
+      "COMMISSION_ELIGIBILITY_CREATED": "Creeaght y Chommishoon",
+      "HANDOVER_COMPLETED": "Cur-my-ner",
+      "REFERRAL_ACCEPTED": "Ghow y towshan rish y chur-my-ner",
+      "REFERRAL_REJECTED": "Builder y rheynn. Oyr: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Va'n stiureyder er chur magh coadey duplicate t'er n'gholl shaghey. Oyr: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Ta'n stiureyder er n'aashagh cláryssey veih {{from}} gys {{to}} . Oyr: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Riaghlagh Columnyn",
+    "hint": "Tarroogh dy ath-order · scansh dy hoilshaghey",
+    "showAll": "Show Ooilley",
+    "resetDefault": "Reset gys stayd"
+  },
+  "filters": {
+    "title": "Screeuyn",
+    "allProjects": "Ooilley prôjektyn",
+    "any": "Ennagh",
+    "noFields": "Cha nel fieldyn filteragh elley er nyn goyrt stiagh foast (Soilshaghyn > Lead).",
+    "clearAll": "Soilshee Ooilley"
+  },
+  "phone": {
+    "MISSING": "Ta feme er uimhir phone.",
+    "INVALID": "Cur stiagh uimhir phone ymmyrchagh.",
+    "TOO_SHORT": "Ta'n earroo phone ro-ghooie.",
+    "TOO_LONG": "Ta'n earroo phone ro ard.",
+    "INVALID_FOR_COUNTRY": "Cha nel yn earroo çhellvane shoh kiart son {{country}} .",
+    "COUNTRY_MISMATCH": "Taght yn code t'ayn cheart.",
+    "NOT_MOBILE": "Cur stiagh uimhir phone, cha nee lieh-thallooin."
+  }
+}

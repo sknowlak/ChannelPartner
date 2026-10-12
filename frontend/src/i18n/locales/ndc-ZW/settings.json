@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Zvirongwa",
+    "noPermission": "Iwe hauna mvumo yekutarisira zvirongwa."
+  },
+  "categories": {
+    "lead": "Verenga",
+    "user": "Mushandisi",
+    "integrations": "Kubatanidzwa"
+  },
+  "leadTabs": {
+    "fields": "Minda",
+    "statuses": "Mamiriro & Sub-Mamiriro",
+    "notifications": "Zviziviso & Varongi"
+  },
+  "fields": {
+    "leadIntro": "Nasira fomu rekubata rinotungamira: ita kuti minda ikwanise / dzime, zviise chiratidzo chezvinodiwa, kana kuwedzera minda yako yetsika.",
+    "userIntro": "Nasira fomu re Add/Edit Team Member: ita kuti minda ikwanise/dzime, zviise chiratidzo chezvinodiwa, kana wedzera minda yako yetsika.",
+    "addCustomField": "+ Wedzera Munda Wetsika",
+    "fieldLabel": "Munda Label",
+    "group": "Chikwata",
+    "groupPlaceholderLead": "muenzaniso Kubvunza ruzivo",
+    "groupPlaceholderUser": "eg Zvimwe Zvinowedzera .",
+    "dataType": "Mhando yeDhata",
+    "options": "Zvingasarudzwa (koma yakaparadzaniswa)",
+    "requiredLead": "Zvinodiwa - vashandi vechikwata chako vanofanira kuzadza izvi kuti vanyorese kutungamira",
+    "requiredUser": "Zvinodiwa - zvinofanira kuzadzwa kana uchiwedzera nhengo yechikwata",
+    "creating": "Kugadzira...",
+    "createField": "Kugadzira Munda .",
+    "columns": {
+      "field": "Munda",
+      "group": "Chikwata",
+      "type": "Rudzi",
+      "required": "Kudikana",
+      "enabled": "Yakabvumirwa",
+      "kind": "Mushovo"
+    },
+    "kind": {
+      "custom": "Muthetho",
+      "core": "Pakati (yakavharwa)",
+      "standard": "Mwero"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Samba",
+    "TEXTAREA": "Mazwi akareba",
+    "NUMBER": "Namba",
+    "CURRENCY": "Mare",
+    "DATE": "Njiku",
+    "SELECT": "Kudonha",
+    "LIST": "Ndharihwa"
+  },
+  "picker": {
+    "searchPlaceholder": "Tsvaka minda inotungamira...",
+    "summary": "{{shown}} yakaratidzwa · {{mandatory}} inomanikidzwa",
+    "mandatory": "Mutumwi",
+    "noMatch": "Hapana minda inoenderana."
+  },
+  "statuses": {
+    "intro": "Mamiriro ako ekutungamira uye ma sub-mamiriro - izvo umwe neumwe anokumbira (zuva & nguva, minda yekutungamira) apo munhu anogadzirisa kutungamira kwairi.",
+    "add": "+ Wedzera Chimiro",
+    "columns": {
+      "order": "Zvokutumira",
+      "status": "Chithado",
+      "subStatuses": "Sub-Mamiriro",
+      "asksFor": "Anokumbira kuti",
+      "active": "Kungwarira"
+    },
+    "moveUp": "Famba kuenda mudenga .",
+    "moveDown": "Famba pasi .",
+    "defaultBadge": "Default yezvinotungamira zvitsva",
+    "bookingBadge": "Kubhuka mamiriro",
+    "asksForLabel": "Inokumbira kuti {{label}}",
+    "asksForDateTime": "Bvunza zuwa & nguwa",
+    "none": "Apana",
+    "dateTime": "Zuwa & nguwa",
+    "scheduledOn": "pa {{names}}",
+    "fieldsSummary_one": "{{count}} munda ( {{mandatory}} unomanikidzwa)",
+    "fieldsSummary_other": "{{count}} minda ( {{mandatory}} inomanikidzwa)",
+    "deleteConfirm": "Dzima chimiro \" {{name}} \"? Izvi azvingakoni kupetudzwa.",
+    "editTitle": "Nasira chimiro - {{name}}",
+    "newTitle": "Chimiro chitsva",
+    "name": "Zita rechimiro",
+    "colour": "Mushovo",
+    "active": "Kungwarira",
+    "isDefault": "Default mamiriro ezvinhu kune matsva anotungamira",
+    "isBooking": "Kubhuka mamiriro (akaiswa ngeKubhuka Kwakakwana)",
+    "whenMoved": "Kana mutungamiri akaendeswa kune iyi mamiriro .",
+    "askSchedule": "Bvunza zuwa & nguwa (murongeri)",
+    "scheduleLabelPlaceholder": "Label, semuenzaniso Kushanyira pa .",
+    "fieldsToShow": "Tungamira minda kuratidza pane fomu yekugadzirisa .",
+    "subStatusesTitle": "Sub-Mamiriro",
+    "subStatusesHint": "Sub-status imwe neimwe inokona kubvunza zuwa rayo & nguwa uye inowedzera minda yayo - inokombidzwa pamusoro peminda ye status iri pamusoro.",
+    "subStatusName": "Zita rechimiro chidiki",
+    "subFields": "Minda ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Zuva & nguwa yakanyorwa, semuenzaniso Fonera zvakare pa",
+    "addSubStatus": "+ Wedzera Sub-Mamiriro",
+    "saveStatus": "Chengetedza chimiro",
+    "createStatus": "Kugadzira Chimiro"
+  },
+  "notifications": {
+    "intro": "Zivisa anhu akafanira kana mutungamiri akaguma pane chigaro - ngekukasira, kana nguwa yakasarudzwa isati yasvika/shure kwezuwa & nguwa yakarongwa pairi.",
+    "add": "+ Wedzera Chiziviso",
+    "columns": {
+      "notification": "Chiziviso",
+      "whenStatusIs": "Apo Chimiro Chiri .",
+      "sends": "Anotuma .",
+      "to": "Ku",
+      "via": "Gwaja",
+      "enabled": "Yakabvumirwa"
+    },
+    "anyStatus": "Chero mamiriro .",
+    "anySubStatus": "Chero chimiro chiduku",
+    "inactiveOption": "{{name}} (asingashandi)",
+    "emptyRules": "Apana zviziviso zvisati zvaitika - wedzera imwe kuti uzivise chikwata chako kana mutungamiri akasvika pachimiro.",
+    "jobs": {
+      "title": "Yakarongwa uye yakatumirwa",
+      "firesAt": "Mwoto Pa .",
+      "notification": "Chiziviso",
+      "lead": "Verenga",
+      "status": "Chithado",
+      "details": "Kupha gwanja",
+      "empty": "Hapana chakarongwa kana kutumirwa parizvino.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Zvakayima",
+      "PROCESSING": "Kugadzirisa",
+      "SENT": "Tumihwa",
+      "FAILED": "Kuphosa",
+      "SKIPPED": "Yakarumbidzwa",
+      "CANCELLED": "Zvakakanzurwa"
+    },
+    "deliveryStatus": {
+      "SENT": "-tumihwa",
+      "FAILED": "kuphosa",
+      "SKIPPED": "akarumbire"
+    },
+    "deliveryChannel": {
+      "IN_APP": "mu-app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Mushandisi akagoverwa",
+      "owner": "Muno",
+      "updatedBy": "Yakagadziridzwa nge .",
+      "role": "Mushando: {{name}}"
+    },
+    "channels": {
+      "inApp": "Mu-app",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Dzima chiziviso \" {{name}} \"? Kumirira kuyeuchidzwa kubva kwairi kunokanzurwa.",
+    "testPrompt": "Tumira bvunzo yechiziviso ichi kwauri (mu-app) uchishandisa ID inotungamira ipi ?",
+    "testSent": "Yakatumirwa kubhero rako: {{title}} {{message}}",
+    "headersInvalid": "Misoro Webhook inofanira kunge iri JSON inoshanda , semuenzaniso {\"Mvumo\": \"Mutakuri xyz\"}",
+    "editTitle": "Kugadzirisa Chiziviso",
+    "newTitle": "Chiziviso chitsva",
+    "name": "Zina",
+    "namePlaceholder": "muenzaniso Kuyeuchidzwa kwekushanyira saiti .",
+    "whenStatus": "Kana chimiro chemutungamiri chiri .",
+    "subStatus": "Sub-mamiriro",
+    "send": "Tumira (murongeri)",
+    "custom": "Muthetho...",
+    "modeBefore": "nguva isati yarongwa",
+    "modeAfter": "mushure menguva yakarongwa .",
+    "noScheduleWarning": "Chimiro ichi hachikumbire zuwa & nguwa, saka \"pamberi / pa / mushure menguva yakarongwa\" chiziviso hachizombopisa.",
+    "noScheduleFix": "Tutsira <strong>Bvunza zuwa & nguwa</strong> yaro pashi peZviro & Zviro Zvidoko, kana kutumira Ngekukasira.",
+    "sendTo": "Tumira kune (chero musanganiswa)",
+    "recipientAssigned": "Mushandisi akagoverwa (muridzi anotungamira)",
+    "recipientOwner": "Muridzi weakaundi / admin",
+    "recipientUpdatedBy": "Munthu akagadzirisa mamiriro",
+    "everyoneWithRole": "Munthu weshe une basa .",
+    "specificUsers": "Vashandisi vakananga (vanoshanda)",
+    "inactiveNever": "Vashandisi vasingashandi havambogamuchiri zviziviso, kunyange vakasarudzwa.",
+    "deliverVia": "Kuendesa kuburikidza",
+    "channelInApp": "Mu-app (bhero)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS inopa)",
+    "emailHint": "Email inoenda kune imwe neimwe inogamuchira kero ye email uye inoda SMTP yakaiswa pane server (backend / .env); kusvikira ipapo email inotumira inonyorwa seyakarekeredzwa.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Misoro ( JSON )",
+    "content": "Zviziviso zviripo",
+    "title": "Musoro o mapatahwa",
+    "message": "Sambha",
+    "insertIntoTitle": "Isa mukati meMusoro .",
+    "insertIntoMessage": "Isa mukati meMharidzo",
+    "anyLeadField": "Munda weshe unotungamira unoshandawo, semuenzaniso <code1>{{example1}}</code1> kana <code2>{{example2}}</code2> .",
+    "preview": "Kuongorora (muenzaniso unotungamira)",
+    "enabled": "Yakabvumirwa",
+    "saveRule": "Chengetedza Chiziviso",
+    "createRule": "Gadzira Chiziviso",
+    "variables": {
+      "customerName": "Zita rekutungamira",
+      "customerMobile": "Kutungamira nharembozha",
+      "customerEmail": "Kutungamira email",
+      "registrationId": "ID yekutungamira",
+      "status": "Chithado",
+      "subStatus": "Sub-mamiriro",
+      "scheduleAt": "Zuwa rakarongwa uye nguwa",
+      "assignedTo": "Mushandisi akagoverwa",
+      "updatedBy": "Yakagadziridzwa nge .",
+      "recipient": "Zina remugamuchiri",
+      "project": "Chirongwa",
+      "notes": "Chinyorwa chemazuva ano",
+      "partner": "Zina remudiwa"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Pakarepo kana mamiriro akaiswa .",
+      "AT": "Panguwa yakarongwa .",
+      "A1D": "1 zuva mushure menguva yakarongwa (kutevera-kuongorora)"
+    },
+    "immediately": "Kasikira",
+    "atScheduled": "Nguwa yakarongwa .",
+    "before": {
+      "MINUTES_one": "{{count}} miniti nguva isati yarongwa",
+      "MINUTES_other": "{{count}} maminitsi nguva yakarongwa isati yasvika",
+      "HOURS_one": "{{count}} awa nguva isati yarongwa",
+      "HOURS_other": "{{count}} maawa nguva isati yarongwa",
+      "DAYS_one": "{{count}} zuwa risati rasvika nguwa yakarongwa",
+      "DAYS_other": "{{count}} mazuwa asati asvika nguwa yakarongwa",
+      "WEEKS_one": "{{count}} vhiki nguva isati yarongwa",
+      "WEEKS_other": "{{count}} mavhiki nguva isati yarongwa",
+      "MONTHS_one": "{{count}} mwedzi nguva isati yarongwa",
+      "MONTHS_other": "{{count}} mwedzi nguva isati yarongwa",
+      "YEARS_one": "{{count}} gore nguva isati yarongwa",
+      "YEARS_other": "{{count}} makore nguva yakarongwa isati yasvika"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} miniti mushure menguva yakarongwa",
+      "MINUTES_other": "{{count}} maminitsi mushure menguva yakarongwa",
+      "HOURS_one": "{{count}} awa mushure menguva yakarongwa",
+      "HOURS_other": "{{count}} maawa mushure menguva yakarongwa",
+      "DAYS_one": "{{count}} zuva mushure menguva yakarongwa",
+      "DAYS_other": "{{count}} mazuva mushure menguva yakarongwa",
+      "WEEKS_one": "{{count}} vhiki mushure menguva yakarongwa",
+      "WEEKS_other": "{{count}} mavhiki mushure menguva yakarongwa",
+      "MONTHS_one": "{{count}} mwedzi mushure menguva yakarongwa",
+      "MONTHS_other": "{{count}} mwedzi mushure menguva yakarongwa",
+      "YEARS_one": "{{count}} gore mushure menguva yakarongwa",
+      "YEARS_other": "{{count}} makore mushure menguva yakarongwa"
+    },
+    "units": {
+      "MINUTES_one": "museswa",
+      "MINUTES_other": "musesuwa",
+      "HOURS_one": "nguva",
+      "HOURS_other": "nguva",
+      "DAYS_one": "njiku",
+      "DAYS_other": "mazuwa 30",
+      "WEEKS_one": "vhiki",
+      "WEEKS_other": "mavhiki maviri",
+      "MONTHS_one": "mwedzi",
+      "MONTHS_other": "mwedzi",
+      "YEARS_one": "gore",
+      "YEARS_other": "makore"
+    }
+  }
+}

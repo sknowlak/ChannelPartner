@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "My leidrade",
+    "signedInAs": "Aangemeld as {{name}} ( {{partnerId}} ) · tye gewys in {{timezone}}",
+    "addLead": "+ Voeg lood by",
+    "tabs": {
+      "all": "Almal ( {{count}} )",
+      "pending": "Hangende ( {{count}} )",
+      "booked": "Bespreek ( {{count}} )"
+    },
+    "searchPlaceholder": "Soek volgens naam, selfoon of registrasie- ID ...",
+    "manageColumns": "Bestuur kolomme",
+    "rowsPerPage": "Rye per bladsy",
+    "registrationId": "Registrasie ID",
+    "emptyState": "Nog geen leidrade nie - registreer jou eerste een.",
+    "noMatch": "Geen leidrade pas by hierdie filters nie.",
+    "showing": "Wys tans {{from}} - {{to}} van {{total}} inskrywings",
+    "actions": {
+      "preview": "Voorskou en vinnige opdatering",
+      "history": "Geskiedenis",
+      "email": "E-pos",
+      "whatsapp": "WhatsApp",
+      "call": "Bel"
+    },
+    "pagination": {
+      "first": "Eerste bladsy",
+      "previous": "Vorige bladsy",
+      "next": "Volgende bladsy",
+      "last": "Laaste bladsy"
+    }
+  },
+  "columns": {
+    "status": "Status",
+    "assignTo": "Ken toe aan",
+    "booked": "Bespreek",
+    "protectionUntil": "Beskerming Tot"
+  },
+  "booking": {
+    "booked": "Bespreek",
+    "pending": "Hangende"
+  },
+  "assign": {
+    "unassigned": "Ontoegewys",
+    "owner": "{{name}} (Eienaar)",
+    "inactive": "{{name}} (onaktief)",
+    "unknownUser": "Onbekende gebruiker",
+    "assignedTo": "Toegewys aan {{name}}"
+  },
+  "form": {
+    "addTitle": "Voeg lood by",
+    "editTitle": "Wysig lood",
+    "noPermissionAdd": "Jy het nie toestemming om leidrade te registreer nie.",
+    "noPermissionEdit": "Jy het nie toestemming om leidrade te wysig nie.",
+    "selectPlaceholder": "Kies...",
+    "commaSeparated": "Komma geskei",
+    "phonePlaceholder": "Telefoonnommer",
+    "countryCode": "Landkode"
+  },
+  "project": {
+    "none": "Nog geen projek nie (nie verwys nie)",
+    "notInList": "{{project}} (nie in die projeklys nie)"
+  },
+  "journey": {
+    "customer": "Kliënt",
+    "currentOwner": "Huidige Eienaar",
+    "protectionExpiry": "Verval van beskerming",
+    "leadStatus": "Loodstatus",
+    "scheduled": "Geskeduleer",
+    "assignedTo": "Toegewys aan",
+    "referral": "Verwysing",
+    "builderReason": "Bouer se rede: {{reason}}",
+    "bookedHint": "Bespreek deur die bouer - operasionele eienaarskap het na die bouer verskuif; jou erkenning en kommissie-kwalifikasie word behou.",
+    "notBookedHint": "Besprekings word deur die bouer bevestig sodra hulle die verwysing aanvaar.",
+    "quickUpdate": "Vinnige opdatering",
+    "leadDetails": "Lood Besonderhede",
+    "progressHistory": "Vorderingsgeskiedenis",
+    "timesIn": "(tye in {{timezone}} )",
+    "backToMyLeads": "Terug na My Leads",
+    "editLead": "Wysig lood"
+  },
+  "referral": {
+    "NOT_REFERRED": "Nie verwys nie (geen projek)",
+    "PENDING_BUILDER": "Wag vir bouer",
+    "ACCEPTED": "Aanvaar deur bouer",
+    "REJECTED": "Verwerp deur bouer"
+  },
+  "preview": {
+    "ariaLabel": "Loodvoorskou",
+    "title": "Loodvoorskou",
+    "source": "Bron",
+    "location": "Ligging",
+    "scheduled": "Geskeduleer",
+    "registered": "Geregistreer",
+    "latestNote": "Jongste nota",
+    "quickUpdate": "Vinnige opdatering",
+    "fullDetails": "Volledige besonderhede",
+    "editLead": "Wysig lood",
+    "history": "Geskiedenis"
+  },
+  "quick": {
+    "assignedTo": "Toegewys aan",
+    "status": "Status",
+    "subStatus": "Sub-status",
+    "selectSubStatus": "Kies substatus...",
+    "none": "Geen",
+    "scheduledAt": "Geskeduleer om",
+    "localTime": "plaaslike tyd",
+    "note": "Let wel",
+    "notePlaceholder": "Wat het op hierdie oproep/besoek gebeur? (opsioneel)",
+    "updateStatus": "Dateer status op",
+    "statusUpdated": "Status opgedateer",
+    "bookedLocked": "Hierdie lood is bespreek - sy status kan nie meer verander word nie.",
+    "viewOnly": "Jy kan hierdie lood bekyk, maar jou rol kan dit nie opdateer nie."
+  },
+  "history": {
+    "title": "Geskiedenis - {{registrationId}}",
+    "tabs": {
+      "all": "Almal",
+      "status": "Status",
+      "assignment": "Opdrag",
+      "notes": "Notas"
+    },
+    "doneBy": "Gedoen deur {{actor}}",
+    "system": "Stelsel",
+    "platforms": {
+      "System": "Stelsel",
+      "External": "Ekstern",
+      "Web": "Web",
+      "Mobile": "Selfoon"
+    },
+    "added": "bygevoeg",
+    "updated": "opgedateer",
+    "empty": "(leeg)",
+    "noHistory": "Nog geen geskiedenis in hierdie kategorie nie.",
+    "fieldLabels": {
+      "stage": "Status",
+      "subStatus": "Sub-status",
+      "scheduledAt": "Skedule",
+      "notes": "Notas",
+      "assignedTo": "Toegewys aan"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Vennootregistrasie ontvang",
+      "DUPLICATE_CHECK_COMPLETED": "Duplikaatkontrole voltooi - geen aktiewe duplikaat gevind nie",
+      "REGISTRATION_ACCEPTED": "Registrasie aanvaar",
+      "PROTECTION_GRANTED_one": "{{count}} dae beskerming toegestaan",
+      "PROTECTION_GRANTED_other": "{{count}} dae beskerming toegestaan",
+      "REGISTRATION_ATTEMPT_REJECTED": "Duplikaatregistrasiepoging deur {{partnerId}} is afgekeur",
+      "LEAD_DETAILS_UPDATED_one": "Opgedateer {{count}} veld",
+      "LEAD_DETAILS_UPDATED_other": "Opgedateer {{count}} velde",
+      "STAGE_UPDATED": "Status opgedateer na {{status}}",
+      "LEAD_ASSIGNED": "Toegewys aan {{name}}",
+      "LEAD_UNASSIGNED": "Ontoegewys",
+      "BOOKING_COMPLETED": "Bespreking voltooi",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operasionele eienaarskap oorgedra aan Bouwer",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Vennoot-toeskrywing het behoue ​​gebly",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kommissie-kwalifikasie geskep",
+      "HANDOVER_COMPLETED": "Oorhandiging voltooi",
+      "REFERRAL_ACCEPTED": "Bouer het die verwysing aanvaar",
+      "REFERRAL_REJECTED": "Bouer het die verwysing verwerp. Rede: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin het vroegtydig duplikaatbeskerming vrygestel. Rede: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin het registrasie van {{from}} na {{to}} hertoegewys. Rede: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Bestuur kolomme",
+    "hint": "Sleep om te herrangskik · merk om te wys",
+    "showAll": "Wys alles",
+    "resetDefault": "Stel terug na verstek"
+  },
+  "filters": {
+    "title": "Filters",
+    "allProjects": "Alle projekte",
+    "any": "Enige",
+    "noFields": "Geen ander filtreerbare velde is nog geaktiveer nie (Instellings > Lood).",
+    "clearAll": "Vee alles uit"
+  },
+  "phone": {
+    "MISSING": "Telefoonnommer word vereis.",
+    "INVALID": "Voer asseblief 'n geldige telefoonnommer in.",
+    "TOO_SHORT": "Telefoonnommer is te kort.",
+    "TOO_LONG": "Foonnommer is te lank.",
+    "INVALID_FOR_COUNTRY": "Hierdie foonnommer is nie geldig vir {{country}} .",
+    "COUNTRY_MISMATCH": "Kies asseblief die korrekte landkode.",
+    "NOT_MOBILE": "Voer asseblief 'n selfoonnommer in, nie 'n landlyn nie."
+  }
+}

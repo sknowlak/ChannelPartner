@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Builder Portal a ni",
+    "referrals": "Referral te pawh a awm",
+    "builderLogin": "Builder Login a ni",
+    "partnerLogin": "Channel Partner Login a ni"
+  },
+  "login": {
+    "title": "Builder chuan a sign in a",
+    "hint": "Builder account hi Leadrat siam a ni . I neih loh chuan i administrator zawt rawh."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "I thutlukna nghak reng",
+    "ACCEPTED": "A pawm a ni",
+    "REJECTED": "Hnawl a ni"
+  },
+  "list": {
+    "title": "Referral te pawh a awm",
+    "allProjects": "Project zawng zawng",
+    "allStatuses": "Status zawng zawng",
+    "count_one": "{{count}} referral a ni",
+    "count_other": "{{count}} referral te hi a ni",
+    "columns": {
+      "referral": "Referral a ni",
+      "customer": "Dawrtu",
+      "project": "Ruahmanna",
+      "sourcePartner": "Source Partner a ni",
+      "status": "Nihna",
+      "booking": "Booking tih a ni",
+      "registered": "Registered a ni tawh"
+    },
+    "booked": "Book a ni tawh",
+    "empty": "Referral a la awm lo."
+  },
+  "detail": {
+    "customer": "Dawrtu",
+    "sourcePartner": "Source Partner a ni",
+    "attributionNote": "(attribution - tihdanglam theih a ni lo)",
+    "leadStatus": "Lead Status a ni",
+    "protectedUntil": "Protected Until a ni",
+    "referral": "Referral a ni",
+    "reason": "A chhan: {{reason}}",
+    "booking": "Booking tih a ni",
+    "bookedOwner": "Booked - nangmah hi operational neitu i ni",
+    "notBooked": "Book a ni lo",
+    "sharedAfterBooking": "Booking zawhah share a ni",
+    "accept": "Referral chu pawm rawh",
+    "confirmBooking": "Booking tih chu nemnghet rawh",
+    "reject": "Referral chu hnawl rawh",
+    "rejectReasonLabel": "Hnawl chhan (partner hnenah entir) * .",
+    "rejectConfirm": "Hnawl",
+    "confirmBookingPrompt": "Booking chu i confirm tawh em? Operational ownership chu nangmah ah a kal a, partner chu commission dawng thei a ni ta.",
+    "notice": {
+      "booked": "Booking a awm tih a chiang.",
+      "accepted": "Referral pawh pawm a ni.",
+      "rejected": "Referral chu hnawl a ni."
+    },
+    "backToReferrals": "Referrals ah kir leh rawh"
+  },
+  "history": {
+    "title": "Hmanlai hun zirna",
+    "actor": {
+      "system": "Tihdan",
+      "partner": "Channel partner a ni",
+      "admin": "Leadrat admin a ni"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Partner registration a dawng tawh bawk",
+      "DUPLICATE_CHECK_COMPLETED": "Duplicate check zawh tawh - active duplicate hmuh tur a awm lo",
+      "REGISTRATION_ACCEPTED": "Registration pawm a ni",
+      "PROTECTION_GRANTED_one": "{{count}} -ni humhalhna pek a ni",
+      "PROTECTION_GRANTED_other": "{{count}} -ni humhalhna pek a ni",
+      "STAGE_UPDATED": "Status chu {{stage}} ah update a ni.",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} field tihchangtlun a ni",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} fields te chu update a ni",
+      "LEAD_ASSIGNED": "{{name}} ah dah a ni.",
+      "LEAD_UNASSIGNED": "Unassigned a ni lo",
+      "REFERRAL_ACCEPTED": "Builder chuan referral chu a pawm ta a ni",
+      "REFERRAL_REJECTED": "Builder chuan referral chu a hnawl ta a ni. A chhan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} in duplicate registration a tum chu hnawl a ni",
+      "BOOKING_COMPLETED": "Booking tih zawh tawh a ni",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operational ownership chu Builder hnenah hlan a ni",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partner attribution chu vawnhim a ni",
+      "COMMISSION_ELIGIBILITY_CREATED": "Commission eligibility siam a ni",
+      "HANDOVER_COMPLETED": "Handover zawh fel a ni tawh",
+      "ADMIN_PROTECTION_RELEASED": "Admin chuan duplicate protection a tichhuak hma hle. A chhan: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin chuan registration chu {{from}} atanga {{to}} ah a dah leh a. A chhan: {{reason}}"
+    }
+  }
+}

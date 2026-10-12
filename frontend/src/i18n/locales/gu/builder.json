@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "બિલ્ડર પોર્ટલ",
+    "referrals": "રેફરલ્સ",
+    "builderLogin": "બિલ્ડર લૉગિન",
+    "partnerLogin": "ચેનલ પાર્ટનર લોગિન"
+  },
+  "login": {
+    "title": "બિલ્ડર સાઇન ઇન",
+    "hint": "બિલ્ડર એકાઉન્ટ Leadrat દ્વારા બનાવવામાં આવે છે. જો તમારી પાસે ન હોય તો તમારા વ્યવસ્થાપકને પૂછો."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "તમારા નિર્ણયની રાહ જોઈ રહ્યા છીએ",
+    "ACCEPTED": "સ્વીકાર્યું",
+    "REJECTED": "ફગાવી દીધી"
+  },
+  "list": {
+    "title": "રેફરલ્સ",
+    "allProjects": "બધા પ્રોજેક્ટ",
+    "allStatuses": "બધી સ્થિતિઓ",
+    "count_one": "{{count}} રેફરલ",
+    "count_other": "{{count}} રેફરલ્સ",
+    "columns": {
+      "referral": "રેફરલ",
+      "customer": "ગ્રાહક",
+      "project": "પ્રોજેક્ટ",
+      "sourcePartner": "સ્ત્રોત ભાગીદાર",
+      "status": "સ્થિતિ",
+      "booking": "બુકિંગ",
+      "registered": "નોંધાયેલ"
+    },
+    "booked": "બુક કરાવ્યું",
+    "empty": "હજુ સુધી કોઈ રેફરલ્સ નથી."
+  },
+  "detail": {
+    "customer": "ગ્રાહક",
+    "sourcePartner": "સ્ત્રોત ભાગીદાર",
+    "attributionNote": "(એટ્રિબ્યુશન - બદલી શકાતું નથી)",
+    "leadStatus": "લીડ સ્થિતિ",
+    "protectedUntil": "સુધી સુરક્ષિત",
+    "referral": "રેફરલ",
+    "reason": "કારણ: {{reason}}",
+    "booking": "બુકિંગ",
+    "bookedOwner": "બુક કરેલ - તમે ઓપરેશનલ માલિક છો",
+    "notBooked": "બુક નથી",
+    "sharedAfterBooking": "બુકિંગ પછી શેર કર્યું",
+    "accept": "રેફરલ સ્વીકારો",
+    "confirmBooking": "બુકિંગની પુષ્ટિ કરો",
+    "reject": "રેફરલ નકારો",
+    "rejectReasonLabel": "નકારવાનું કારણ (પાર્ટનરને બતાવ્યું) *",
+    "rejectConfirm": "અસ્વીકાર કરો",
+    "confirmBookingPrompt": "બુકિંગ કન્ફર્મ કરશો? ઓપરેશનલ માલિકી તમારી પાસે જાય છે અને ભાગીદાર કમિશન માટે પાત્ર બને છે.",
+    "notice": {
+      "booked": "બુકિંગ કન્ફર્મ.",
+      "accepted": "રેફરલ સ્વીકાર્યું.",
+      "rejected": "રેફરલ નકારવામાં આવ્યો."
+    },
+    "backToReferrals": "રેફરલ્સ પર પાછા જાઓ"
+  },
+  "history": {
+    "title": "ઈતિહાસ",
+    "actor": {
+      "system": "સિસ્ટમ",
+      "partner": "ચેનલ પાર્ટનર",
+      "admin": "Leadrat એડમિન"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "ભાગીદાર નોંધણી પ્રાપ્ત થઈ",
+      "DUPLICATE_CHECK_COMPLETED": "ડુપ્લિકેટ ચેક પૂર્ણ થયું - કોઈ સક્રિય ડુપ્લિકેટ મળ્યું નથી",
+      "REGISTRATION_ACCEPTED": "નોંધણી સ્વીકારી",
+      "PROTECTION_GRANTED_one": "{{count}} - દિવસની સુરક્ષા આપવામાં આવી",
+      "PROTECTION_GRANTED_other": "{{count}} - દિવસની સુરક્ષા આપવામાં આવી",
+      "STAGE_UPDATED": "સ્થિતિ {{stage}} પર અપડેટ થઈ",
+      "LEAD_DETAILS_UPDATED_one": "અપડેટ કરેલ {{count}} ફીલ્ડ",
+      "LEAD_DETAILS_UPDATED_other": "અપડેટ કરેલ {{count}} ફીલ્ડ",
+      "LEAD_ASSIGNED": "{{name}} ને સોંપેલ",
+      "LEAD_UNASSIGNED": "અસાઇન કરેલ",
+      "REFERRAL_ACCEPTED": "બિલ્ડરે રેફરલ સ્વીકાર્યો",
+      "REFERRAL_REJECTED": "બિલ્ડરે રેફરલ નકારી કાઢ્યો. કારણ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} દ્વારા ડુપ્લિકેટ નોંધણીનો પ્રયાસ નકારવામાં આવ્યો",
+      "BOOKING_COMPLETED": "બુકિંગ પૂર્ણ",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "ઓપરેશનલ માલિકી બિલ્ડરને ટ્રાન્સફર કરવામાં આવી",
+      "PARTNER_ATTRIBUTION_PRESERVED": "ભાગીદાર એટ્રિબ્યુશન સાચવેલ",
+      "COMMISSION_ELIGIBILITY_CREATED": "કમિશન પાત્રતા બનાવી",
+      "HANDOVER_COMPLETED": "હેન્ડઓવર પૂર્ણ",
+      "ADMIN_PROTECTION_RELEASED": "એડમિને ડુપ્લિકેટ સંરક્ષણ વહેલું બહાર પાડ્યું. કારણ: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "એડમિને {{from}} થી {{to}} સુધી નોંધણી ફરીથી સોંપી. કારણ: {{reason}}"
+    }
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Zibikkidwe",
+    "noPermission": "Tokwe nguzu zyakweendelezya mabambe."
+  },
+  "categories": {
+    "lead": "Zulula",
+    "user": "Mubelesyi",
+    "integrations": "Kuswaanganya"
+  },
+  "leadTabs": {
+    "fields": "Myuunda",
+    "statuses": "Ziimo & Ziimo Zisyoonto",
+    "notifications": "Zizibisyo abasikubamba mabambe"
+  },
+  "fields": {
+    "leadIntro": "Bikka foomu yakujata bantu: zumizya/lesya masena, kobikka zyina lyakuti ziyandika, naakuti ubike masena aako omwini.",
+    "userIntro": "Bikka foomu yakuyungizya/kuchincha umwi wabaabo bali mukabunga: zumizya/lesya zibeela, kozibikka kuti ziyandika, naakuti ubike zibeela zyako.",
+    "addCustomField": "+ Koyungizya busena bwako",
+    "fieldLabel": "Ilebula yamuunda",
+    "group": "Kabunga",
+    "groupPlaceholderLead": "mbuli makani aakubuzya",
+    "groupPlaceholderUser": "mbuli makani aambi",
+    "dataType": "Musyobo wa data",
+    "options": "Zyakusala (zyaandaanizyidwe akkoma)",
+    "requiredLead": "Chiyandikana - beenzinyokwe mukabunga kako beelede kuzuzya eechi kuti balembesye muntu uukonzya kusololela",
+    "requiredUser": "Ziyandika - zyeelede kuzuzyigwa aawo notuyungizya umwi wamukabunga",
+    "creating": "Kupanga...",
+    "createField": "Panga muunda",
+    "columns": {
+      "field": "Muunda",
+      "group": "Kabunga",
+      "type": "Musyobo",
+      "required": "Chiyandikana",
+      "enabled": "Zyakazumizigwa",
+      "kind": "Moyo mubotu"
+    },
+    "kind": {
+      "custom": "Chiyanza",
+      "core": "Mukati (ujalidwe)",
+      "standard": "Mbukubede"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Mulumbe",
+    "TEXTAREA": "Malembe malamfu",
+    "NUMBER": "Mweelwe",
+    "CURRENCY": "Musyobo wamali",
+    "DATE": "Izuba",
+    "SELECT": "Kudonkola ansi",
+    "LIST": "Zintu zilembedwe"
+  },
+  "picker": {
+    "searchPlaceholder": "Yanduula masena aasololela...",
+    "summary": "{{shown}} kutondezyedwe · {{mandatory}} kuyandikana",
+    "mandatory": "Cheelede",
+    "noMatch": "Taakwe myuunda iikozyenye."
+  },
+  "statuses": {
+    "intro": "Ziimo zyako zyakusololela aziimo zili munsi-munsi - eezyo umwi awumwi nzyakumbila (buzuba achiindi, masena aakusololela) aawo umwi nabambulula kusololela kuli ncico.",
+    "add": "+ Bikka chiimo",
+    "columns": {
+      "order": "Kubambika",
+      "status": "Chiimo",
+      "subStatuses": "Zibeela Ziniini",
+      "asksFor": "Kulomba",
+      "active": "Chilabeleka"
+    },
+    "moveUp": "Koya kujulu",
+    "moveDown": "Koya ansi",
+    "defaultBadge": "Zyakusaanguna zyabasololi bapya",
+    "bookingBadge": "Chiimo chakubbukula",
+    "asksForLabel": "Kulomba {{label}}",
+    "asksForDateTime": "Ubuzya buzuba achiindi",
+    "none": "Taakwe",
+    "dateTime": "Buzuba achiindi",
+    "scheduledOn": "a {{names}}",
+    "fieldsSummary_one": "{{count}} muunda ( {{mandatory}} kuyandika)",
+    "fieldsSummary_other": "{{count}} myuunda ( {{mandatory}} kuyandika)",
+    "deleteConfirm": "Kuzima chiimo \" {{name}} \"? Eezi tazikonzyi kujokolosyegwa pe.",
+    "editTitle": "Bambulula chiimo - {{name}}",
+    "newTitle": "Chiimo chipya",
+    "name": "Zina lyaChiimo",
+    "colour": "Mubala",
+    "active": "Chilabeleka",
+    "isDefault": "Chiimo chakusaanguna chabasikusololela bapya",
+    "isBooking": "Chiimo chakubbukula (chibikkidwe akumanizya kubbukula)",
+    "whenMoved": "Eelyo sikusololela nasunkwa kuchiimo eechi",
+    "askSchedule": "buzya buzuba achiindi (sikubamba chiindi)",
+    "scheduleLabelPlaceholder": "Lebula, mbuli Swaya a",
+    "fieldsToShow": "Zibeela zyakusololela zitondezyegwe afoomu yakucinca",
+    "subStatusesTitle": "Zibeela Ziniini",
+    "subStatusesHint": "Chiimo chimwi achimwi chilakonzya kubuzya buzuba bwacho achiindi mpawo chiyungizye zibeela zyacho - zitondezyedwe atala azibeela zyachiimo eechi atala aawa.",
+    "subStatusName": "Izina lyachiimo",
+    "subFields": "Miunda ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Mazuba achiindi, mbuli kuti kofoona a",
+    "addSubStatus": "+ Bikka Chiimo Chaansi",
+    "saveStatus": "bamba chiimo",
+    "createStatus": "Panga chiimo"
+  },
+  "notifications": {
+    "intro": "Zibisya bantu beelede aawo muntu uusololela nasika achiimo - ndilyona, naakuti chiindi chibikkidwe kakutanaba/kainda buzuba achiindi zyakabikkidwe.",
+    "add": "+ Bikka zizibisyo",
+    "columns": {
+      "notification": "Kuzibisya",
+      "whenStatusIs": "Ciindi Ciimo Nocili",
+      "sends": "Kutuma",
+      "to": "Ku",
+      "via": "Kwiinda",
+      "enabled": "Zyakazumizigwa"
+    },
+    "anyStatus": "Chiimo chilichose",
+    "anySubStatus": "Chiimo chili coonse",
+    "inactiveOption": "{{name}} (itabeleki)",
+    "emptyRules": "Kunyina zizibisyo pe - koyungizya chimwi kuti uchenjezye kabunga kako aawo sikusololela nasika achiimo.",
+    "jobs": {
+      "title": "Zyakabambilwa akutuminwa",
+      "firesAt": "Mulilo Ku",
+      "notification": "Kuzibisya",
+      "lead": "Zulula",
+      "status": "Chiimo",
+      "details": "Zimbi zyiingi",
+      "empty": "Kunyina chakabambwa naakuti chakatuminwa pe.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Zichilindidwe",
+      "PROCESSING": "Kubamba",
+      "SENT": "Chakatumizigwa",
+      "FAILED": "Wakachilwa",
+      "SKIPPED": "Zyakasotoka",
+      "CANCELLED": "Kwakachilwa"
+    },
+    "deliveryStatus": {
+      "SENT": "chakatumizigwa",
+      "FAILED": "wakachilwa",
+      "SKIPPED": "wakazuza"
+    },
+    "deliveryChannel": {
+      "IN_APP": "mukati ka-app",
+      "EMAIL": "imeyili",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Mubelesi wakapegwa",
+      "owner": "Mwani",
+      "updatedBy": "Yakacincwa a",
+      "role": "Mulimu: {{name}}"
+    },
+    "channels": {
+      "inApp": "Mu-app",
+      "email": "Imeyili",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Kuzima chizibisyo \" {{name}} \"? Ziyeezyo zilindila kuzwa kuli ncico zilagwisigwa.",
+    "testPrompt": "Tumina musunko wakuzibisya ooku kuli nduwe (mu-app) kobelesya ID nzi?",
+    "testSent": "Tuminwa kubbelo lyako: {{title}} {{message}}",
+    "headersInvalid": "Mitwe ya Webhook yeelede kuba JSON iili kabotu, mbuli {\"Kuzumizigwa\": \"Sikunyamuna xyz\"}",
+    "editTitle": "Bambulula zizibisyo",
+    "newTitle": "Chizibisyo chipya",
+    "name": "Izina",
+    "namePlaceholder": "mbuli chiyeezyo chakuswaya busena",
+    "whenStatus": "Chiimo chamuntu uusololela nichili",
+    "subStatus": "Chiimo chili munsi",
+    "send": "Tuma (sikubamba chiindi)",
+    "custom": "Chiyanza...",
+    "modeBefore": "kachitanasika chiindi cheelede",
+    "modeAfter": "nikwakainda chiindi chakabikkidwe",
+    "noScheduleWarning": "Eechi chiimo tachibuzyi buzuba achiindi, aboobo \"kakutanaba/a/kuzwa muchiindi chakabikkidwe\" chizibisyo tachikonzyi pe.",
+    "noScheduleFix": "Jula <strong>Kubuzya buzuba achiindi chakuchita</strong> oobo kunsi aa Ziimo a Ziimo Ziniini, naakuti kutumina Ndilyona.",
+    "sendTo": "Tuma kuli (kusanganya kuli koonse)",
+    "recipientAssigned": "Mubelesi wakapegwa (mukamwini mupati)",
+    "recipientOwner": "Mukamwini akaunti / mweendelezi",
+    "recipientUpdatedBy": "Muntu wakabambulula chiimo",
+    "everyoneWithRole": "Muntu woonse ulaamulimu",
+    "specificUsers": "Babelesyi bamwi (babeleka)",
+    "inactiveNever": "Babelesyi batabeleki tabatambula zizibisyo, nikuba kuti basalidwe.",
+    "deliverVia": "Kotola kwiinda",
+    "channelInApp": "Mu-app (bbelo)",
+    "channelEmail": "Imeyili",
+    "channelWebhook": "Webhook ( WhatsApp / SMS provider)",
+    "emailHint": "Imeyili ilaunka kukkeyala ya imeyili yamuntu umwi awumwi mpawo iyandika SMTP kuti ibikkwe a seva (backend/.env); kusikila aawo imeyili zituminwa zilalembelwa kuti zyakalebwa.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Mitwe ( JSON )",
+    "content": "Makani aakuzibisya",
+    "title": "Chuuno",
+    "message": "Mulumbe",
+    "insertIntoTitle": "Bika mumutwe wamakani",
+    "insertIntoMessage": "Bika mumulumbe",
+    "anyLeadField": "Kufwumbwa busena bwakusololela bulabeleka awalo, mbuli <code1>{{example1}}</code1> naa <code2>{{example2}}</code2> .",
+    "preview": "Kulanga-langa (chikozyano chakusololela)",
+    "enabled": "Zyakazumizigwa",
+    "saveRule": "bamba zizibisyo",
+    "createRule": "Panga chizibisyo",
+    "variables": {
+      "customerName": "Izina lyamusololi",
+      "customerMobile": "Kusololela luwaile",
+      "customerEmail": "Imeyili yakusololela",
+      "registrationId": "ID yakusololela",
+      "status": "Chiimo",
+      "subStatus": "Chiimo chili munsi",
+      "scheduleAt": "Buzuba achiindi zyakabikkidwe",
+      "assignedTo": "Mubelesi wakapegwa",
+      "updatedBy": "Yakacincwa a",
+      "recipient": "Izina lyasikutambula",
+      "project": "Mabambe",
+      "notes": "Noti yamamanino",
+      "partner": "Izina lyamweenzinyina"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Mpawo-mpawo aawo chiimo nichibikkidwe",
+      "AT": "Aachiindi cheelede",
+      "A1D": "buzuba bomwe kuzwa muchiindi chakabikkidwe (kulanga lubo)"
+    },
+    "immediately": "Mpawaawo",
+    "atScheduled": "Muchiindi cheelede",
+    "before": {
+      "MINUTES_one": "{{count}} miniti kaitanasika chiindi chakabikkidwe",
+      "MINUTES_other": "{{count}} maminiti kaitanasika chiindi cheelede",
+      "HOURS_one": "{{count}} woola kakutanaba chiindi chakabikkidwe",
+      "HOURS_other": "{{count}} mawoola kaatanasika chiindi chakabikkidwe",
+      "DAYS_one": "{{count}} buzuba kakutanaba chiindi chakabikkidwe",
+      "DAYS_other": "{{count}} mazuba kaatanasika chiindi cheelede",
+      "WEEKS_one": "{{count}} mvwiki kaitanasika chiindi cheelede",
+      "WEEKS_other": "{{count}} nsondo kaitanasika chiindi chakabikkidwe",
+      "MONTHS_one": "{{count}} mwezi kakutanasika chiindi chakabikkidwe",
+      "MONTHS_other": "{{count}} myezi kaitanasika chiindi chakabikkidwe",
+      "YEARS_one": "{{count}} mwaka kakutanaba chiindi chakabikkidwe",
+      "YEARS_other": "{{count}} myaaka kaitanasika chiindi chakabikkidwe"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} miniti kuzwa muchiindi chakabikkidwe",
+      "MINUTES_other": "{{count}} maminiti kuzwa muchiindi cheelede",
+      "HOURS_one": "{{count}} woola kuzwa muchiindi chakabikkidwe",
+      "HOURS_other": "{{count}} mawoola musule lyachiindi chakabikkidwe",
+      "DAYS_one": "{{count}} buzuba kuzwa muchiindi chakabikkidwe",
+      "DAYS_other": "{{count}} mazuba kuzwa muchiindi chakabikkidwe",
+      "WEEKS_one": "{{count}} mvwiki kuzwa muchiindi chakabikkidwe",
+      "WEEKS_other": "{{count}} mvwiki kuzwa muchiindi chakabikkidwe",
+      "MONTHS_one": "{{count}} mwezi musule lyachiindi chakabikkidwe",
+      "MONTHS_other": "{{count}} myeezi kuzwa muchiindi chakabikkidwe",
+      "YEARS_one": "{{count}} mwaka kuzwa muchiindi chakabikkidwe",
+      "YEARS_other": "{{count}} myaaka kuzwa muchiindi chakabikkidwe"
+    },
+    "units": {
+      "MINUTES_one": "miniti",
+      "MINUTES_other": "maminiti",
+      "HOURS_one": "wola",
+      "HOURS_other": "mawola",
+      "DAYS_one": "zuba",
+      "DAYS_other": "mazuba",
+      "WEEKS_one": "imviki",
+      "WEEKS_other": "mvwiki",
+      "MONTHS_one": "mweezi",
+      "MONTHS_other": "myezi",
+      "YEARS_one": "munyaka",
+      "YEARS_other": "minyaka"
+    }
+  }
+}

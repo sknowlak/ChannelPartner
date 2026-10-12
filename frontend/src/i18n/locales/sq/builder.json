@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portali i Ndërtuesit",
+    "referrals": "Referimet",
+    "builderLogin": "Identifikimi i Ndërtuesit",
+    "partnerLogin": "Hyrja e partnerit të kanalit"
+  },
+  "login": {
+    "title": "Hyni në ndërtues",
+    "hint": "Llogaritë e ndërtuesit krijohen nga Leadrat . Pyesni administratorin tuaj nëse nuk keni një të tillë."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Në pritje të vendimit tuaj",
+    "ACCEPTED": "Pranuar",
+    "REJECTED": "Refuzuar"
+  },
+  "list": {
+    "title": "Referimet",
+    "allProjects": "Të gjitha projektet",
+    "allStatuses": "Të gjitha statuset",
+    "count_one": "{{count}} referim",
+    "count_other": "{{count}} referime",
+    "columns": {
+      "referral": "Referimi",
+      "customer": "Klienti",
+      "project": "Projekti",
+      "sourcePartner": "Partner burim",
+      "status": "Statusi",
+      "booking": "Rezervimi",
+      "registered": "I regjistruar"
+    },
+    "booked": "Rezervuar",
+    "empty": "Nuk ka ende referime."
+  },
+  "detail": {
+    "customer": "Klienti",
+    "sourcePartner": "Partner burim",
+    "attributionNote": "(atributi - nuk mund të ndryshohet)",
+    "leadStatus": "Statusi i drejtuesit",
+    "protectedUntil": "Mbrojtur deri në",
+    "referral": "Referimi",
+    "reason": "Arsyeja: {{reason}}",
+    "booking": "Rezervimi",
+    "bookedOwner": "Rezervuar - ju jeni pronari operacional",
+    "notBooked": "I pa rezervuar",
+    "sharedAfterBooking": "Shpërndarë pas rezervimit",
+    "accept": "Prano Referimin",
+    "confirmBooking": "Konfirmo rezervimin",
+    "reject": "Refuzo kërkesën",
+    "rejectReasonLabel": "Arsyeja e refuzimit (i tregohet partnerit) *",
+    "rejectConfirm": "Refuzo",
+    "confirmBookingPrompt": "Të konfirmohet rezervimi? Pronësia operacionale kalon te ju dhe partneri kualifikohet për komision.",
+    "notice": {
+      "booked": "Rezervimi u konfirmua.",
+      "accepted": "Referimi u pranua.",
+      "rejected": "Referimi u refuzua."
+    },
+    "backToReferrals": "Kthehu te Referimet"
+  },
+  "history": {
+    "title": "Historia",
+    "actor": {
+      "system": "Sistemi",
+      "partner": "Partner kanali",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Regjistrimi i partnerit u mor",
+      "DUPLICATE_CHECK_COMPLETED": "Kontrolli i kopjimit përfundoi - nuk u gjet asnjë kopje aktive",
+      "REGISTRATION_ACCEPTED": "Regjistrimi pranohet",
+      "PROTECTION_GRANTED_one": "{{count}} -mbrojtje ditore e dhënë",
+      "PROTECTION_GRANTED_other": "{{count}} -mbrojtje ditore e dhënë",
+      "STAGE_UPDATED": "Statusi u përditësua në {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Fusha {{count}} u përditësua",
+      "LEAD_DETAILS_UPDATED_other": "U përditësuan {{count}} fusha",
+      "LEAD_ASSIGNED": "Caktuar për {{name}}",
+      "LEAD_UNASSIGNED": "E pacaktuar",
+      "REFERRAL_ACCEPTED": "Ndërtuesi pranoi referimin",
+      "REFERRAL_REJECTED": "Ndërtuesi e refuzoi referimin. Arsyeja: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Përpjekja dublikatë për regjistrim nga {{partner}} u refuzua",
+      "BOOKING_COMPLETED": "Rezervimi përfundoi",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Pronësia operative i transferohet Ndërtuesit",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atributi i partnerit është ruajtur",
+      "COMMISSION_ELIGIBILITY_CREATED": "Përshtatshmëria e komisionit u krijua",
+      "HANDOVER_COMPLETED": "Dorëzimi përfundoi",
+      "ADMIN_PROTECTION_RELEASED": "Administratori lëshoi ​​herët mbrojtjen e dyfishtë. Arsyeja: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Administratori ricaktoi regjistrimin nga {{from}} në {{to}} . Arsyeja: {{reason}}"
+    }
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "ቅንብሮች",
+    "noPermission": "ቅንብሮችን ለማስተዳደር ፍቃድ የለዎትም።"
+  },
+  "categories": {
+    "lead": "መራ",
+    "user": "ተጠቃሚ",
+    "integrations": "ውህደቶች"
+  },
+  "leadTabs": {
+    "fields": "መስኮች",
+    "statuses": "ሁኔታዎች እና ንዑስ-ሁኔታዎች",
+    "notifications": "ማሳወቂያዎች እና መርሐግብር አውጪዎች"
+  },
+  "fields": {
+    "leadIntro": "የእርሳስ ቀረጻ ቅጹን ያዋቅሩ፡ መስኮችን አንቃ/አቦዝን፣ የሚፈለጉትን ምልክት ያድርጉባቸው ወይም የራስዎን ብጁ መስኮች ያክሉ።",
+    "userIntro": "የቡድን አባል ቅጹን አክል/አርትዕ ያዋቅሩ፡ መስኮችን አንቃ/አቦዝን፣ የሚፈለጉትን ምልክት ያድርጉባቸው ወይም የራስዎን ብጁ መስኮች ያክሉ።",
+    "addCustomField": "+ ብጁ መስክ ያክሉ",
+    "fieldLabel": "የመስክ መለያ",
+    "group": "ቡድን",
+    "groupPlaceholderLead": "ለምሳሌ የጥያቄ መረጃ",
+    "groupPlaceholderUser": "ለምሳሌ ተጨማሪ ዝርዝሮች",
+    "dataType": "የውሂብ አይነት",
+    "options": "አማራጮች (በነጠላ ሰረዝ ተለያይተዋል)",
+    "requiredLead": "የሚያስፈልግ - በቡድንዎ ውስጥ ያሉ አጋሮች መሪን ለመመዝገብ ይህንን መሙላት አለባቸው",
+    "requiredUser": "የሚያስፈልግ - የቡድን አባል ሲጨመር መሞላት አለበት",
+    "creating": "በመፍጠር ላይ...",
+    "createField": "መስክ ይፍጠሩ",
+    "columns": {
+      "field": "መስክ",
+      "group": "ቡድን",
+      "type": "ዓይነት",
+      "required": "ያስፈልጋል",
+      "enabled": "ነቅቷል",
+      "kind": "ደግ"
+    },
+    "kind": {
+      "custom": "ብጁ",
+      "core": "ኮር (የተቆለፈ)",
+      "standard": "መደበኛ"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "ጽሑፍ",
+    "TEXTAREA": "ረጅም ጽሑፍ",
+    "NUMBER": "ቁጥር",
+    "CURRENCY": "ምንዛሪ",
+    "DATE": "ቀን",
+    "SELECT": "መውረድ",
+    "LIST": "ዝርዝር"
+  },
+  "picker": {
+    "searchPlaceholder": "የእርሳስ መስኮችን ፈልግ...",
+    "summary": "{{shown}} የሚታየው · {{mandatory}} አስገዳጅ",
+    "mandatory": "የግዴታ",
+    "noMatch": "ምንም ሜዳዎች አይዛመዱም።"
+  },
+  "statuses": {
+    "intro": "የመሪነት ሁኔታዎችዎ እና ንዑስ-ሁኔታዎች - አንድ ሰው ወደ እሱ መሪ ሲያዘምን እያንዳንዱ ሰው የሚጠይቀውን (ቀን እና ሰዓት፣ የመሪ መስኮች)።",
+    "add": "+ ሁኔታን ያክሉ",
+    "columns": {
+      "order": "እዘዝ",
+      "status": "ሁኔታ",
+      "subStatuses": "ንዑስ-ሁኔታዎች",
+      "asksFor": "ይጠይቃል",
+      "active": "ንቁ"
+    },
+    "moveUp": "ወደ ላይ ተንቀሳቀስ",
+    "moveDown": "ወደ ታች ውሰድ",
+    "defaultBadge": "ለአዲስ እርሳሶች ነባሪ",
+    "bookingBadge": "የቦታ ማስያዝ ሁኔታ",
+    "asksForLabel": "{{label}} ን ይጠይቃል",
+    "asksForDateTime": "ቀን እና ሰዓት ይጠይቃል",
+    "none": "ምንም",
+    "dateTime": "ቀን እና ሰዓት",
+    "scheduledOn": "{{names}} ላይ",
+    "fieldsSummary_one": "{{count}} መስክ ( {{mandatory}} አስገዳጅ)",
+    "fieldsSummary_other": "{{count}} መስኮች ( {{mandatory}} አስገዳጅ)",
+    "deleteConfirm": "ሁኔታ \" {{name}} \" ይሰረዝ? ይህ ሊቀለበስ አይችልም።",
+    "editTitle": "ሁኔታን ያርትዑ - {{name}}",
+    "newTitle": "አዲስ ሁኔታ",
+    "name": "የሁኔታ ስም",
+    "colour": "ቀለም",
+    "active": "ንቁ",
+    "isDefault": "ለአዲስ መሪዎች ነባሪ ሁኔታ",
+    "isBooking": "የቦታ ማስያዝ ሁኔታ (በሙሉ ቦታ ማስያዝ የተዘጋጀ)",
+    "whenMoved": "መሪ ወደዚህ ደረጃ ሲንቀሳቀስ",
+    "askSchedule": "ቀን እና ሰዓት ይጠይቁ (መርሃግብር አዘጋጅ)",
+    "scheduleLabelPlaceholder": "መለያ፣ ለምሳሌ በ ላይ ይጎብኙ",
+    "fieldsToShow": "በማዘመን ቅጹ ላይ እንዲታዩ የሊድ መስኮች",
+    "subStatusesTitle": "ንዑስ-ሁኔታዎች",
+    "subStatusesHint": "እያንዳንዱ ንዑስ-ሁኔታ የራሱን ቀን እና ሰዓት መጠየቅ እና የራሱን መስኮች ማከል ይችላል - ከላይ ባለው የሁኔታ መስኮች ላይ ይታያል።",
+    "subStatusName": "የንዑስ ሁኔታ ስም",
+    "subFields": "መስኮች ( {{count}} )",
+    "subScheduleLabelPlaceholder": "ቀን እና ሰዓት መለያ፣ ለምሳሌ መልሰው ይደውሉ",
+    "addSubStatus": "+ ንዑስ ሁኔታን ያክሉ",
+    "saveStatus": "ሁኔታን አስቀምጥ",
+    "createStatus": "ሁኔታ ፍጠር"
+  },
+  "notifications": {
+    "intro": "መሪው ደረጃ ላይ ሲደርስ ለትክክለኛዎቹ ሰዎች ያሳውቁ - ወዲያውኑ ወይም በእሱ ላይ ከተያዘው ቀን እና ሰዓት በፊት/በኋላ የተወሰነ ጊዜ።",
+    "add": "+ ማሳወቂያ ያክሉ",
+    "columns": {
+      "notification": "ማስታወቂያ",
+      "whenStatusIs": "ሁኔታ ሲሆን",
+      "sends": "ይልካል",
+      "to": "ለ",
+      "via": "በ",
+      "enabled": "ነቅቷል"
+    },
+    "anyStatus": "ማንኛውም ሁኔታ",
+    "anySubStatus": "ማንኛውም ንዑስ-ሁኔታ",
+    "inactiveOption": "{{name}} (የቦዘነ)",
+    "emptyRules": "እስካሁን ምንም ማሳወቂያዎች የሉም - አመራር ደረጃ ላይ ሲደርስ ቡድንዎን ለማስጠንቀቅ አንድ ያክሉ።",
+    "jobs": {
+      "title": "መርሐግብር ተይዞ ተልኳል።",
+      "firesAt": "እሳቶች በ",
+      "notification": "ማስታወቂያ",
+      "lead": "መራ",
+      "status": "ሁኔታ",
+      "details": "ዝርዝሮች",
+      "empty": "እስካሁን ምንም የታቀደ ወይም የተላከ ነገር የለም።",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "በመጠባበቅ ላይ",
+      "PROCESSING": "በማቀነባበር ላይ",
+      "SENT": "ተልኳል።",
+      "FAILED": "አልተሳካም።",
+      "SKIPPED": "ተዘለለ",
+      "CANCELLED": "ተሰርዟል።"
+    },
+    "deliveryStatus": {
+      "SENT": "ተልኳል።",
+      "FAILED": "አልተሳካም።",
+      "SKIPPED": "ተዘለለ"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ውስጠ-መተግበሪያ",
+      "EMAIL": "ኢሜይል",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "የተመደበ ተጠቃሚ",
+      "owner": "ባለቤት",
+      "updatedBy": "የዘመነው በ",
+      "role": "ሚና {{name}}"
+    },
+    "channels": {
+      "inApp": "የውስጠ-መተግበሪያ",
+      "email": "ኢሜይል",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "\" {{name}} \" ማሳወቂያ ይሰረዝ? ከእሱ በመጠባበቅ ላይ ያሉ አስታዋሾች ተሰርዘዋል።",
+    "testPrompt": "የትኛውን የመሪ ID በመጠቀም የዚህ ማሳወቂያ ሙከራ ለራስህ (በውስጠ-መተግበሪያ) ላክ?",
+    "testSent": "ወደ ደወልህ ተልኳል {{title}} {{message}}",
+    "headersInvalid": "Webhook ራስጌዎች ልክ የሆኑ JSON መሆን አለባቸው፣ ለምሳሌ {\"ፈቃድ\"፡ \"Bearer xyz\"}",
+    "editTitle": "ማሳወቂያን ያርትዑ",
+    "newTitle": "አዲስ ማስታወቂያ",
+    "name": "ስም",
+    "namePlaceholder": "ለምሳሌ የጣቢያ ጉብኝት አስታዋሽ",
+    "whenStatus": "የመሪነት ደረጃ ሲሆን",
+    "subStatus": "ንዑስ ሁኔታ",
+    "send": "ላክ (መርሐግብር አዘጋጅ)",
+    "custom": "ብጁ...",
+    "modeBefore": "ከተያዘለት ጊዜ በፊት",
+    "modeAfter": "ከተያዘለት ጊዜ በኋላ",
+    "noScheduleWarning": "ይህ ሁኔታ ቀን እና ሰዓት አይጠይቅም፣ ስለዚህ “ከታቀደለት ጊዜ በፊት/በ/በኋላ” ማስታወቂያ በጭራሽ አይነሳም።",
+    "noScheduleFix": "በሁኔታዎች እና ንዑስ ሁኔታዎች ስር <strong>ቀን እና ሰዓት ጠይቅለት</strong> ያብሩት ወይም ወዲያውኑ ይላኩ።",
+    "sendTo": "ወደ (ማንኛውም ጥምረት) ላክ",
+    "recipientAssigned": "የተመደበ ተጠቃሚ (መሪ ባለቤት)",
+    "recipientOwner": "የመለያ ባለቤት/አስተዳዳሪ",
+    "recipientUpdatedBy": "ሁኔታውን ያዘመነ ሰው",
+    "everyoneWithRole": "ሚና ያለው ሁሉ",
+    "specificUsers": "የተወሰኑ ተጠቃሚዎች (ንቁ)",
+    "inactiveNever": "የቦዘኑ ተጠቃሚዎች ቢመረጡም ማሳወቂያዎችን በጭራሽ አይቀበሉም።",
+    "deliverVia": "በኩል ማድረስ",
+    "channelInApp": "የውስጠ-መተግበሪያ (ደወል)",
+    "channelEmail": "ኢሜይል",
+    "channelWebhook": "Webhook ( WhatsApp / SMS አቅራቢ)",
+    "emailHint": "ኢሜል ወደ እያንዳንዱ ተቀባይ ኢሜይል አድራሻ ይሄዳል እና SMTP በአገልጋዩ ላይ ማዋቀር ያስፈልገዋል (backend/.env); እስከዚያ ድረስ የኢሜል መልእክቶች እንደተዘለሉ ይመዘገባሉ.",
+    "webhookUrl": "Webhook URL ( POST ፣ JSON )",
+    "headers": "ራስጌዎች ( JSON )",
+    "content": "የማሳወቂያ ይዘት",
+    "title": "ርዕስ",
+    "message": "መልእክት",
+    "insertIntoTitle": "ወደ ርዕስ አስገባ",
+    "insertIntoMessage": "መልእክት ውስጥ አስገባ",
+    "anyLeadField": "ማንኛውም የእርሳስ መስክ እንዲሁ ይሰራል፣ ለምሳሌ <code1>{{example1}}</code1> ወይም <code2>{{example2}}</code2> ።",
+    "preview": "ቅድመ እይታ (ናሙና መሪ)",
+    "enabled": "ነቅቷል",
+    "saveRule": "ማሳወቂያ አስቀምጥ",
+    "createRule": "ማሳወቂያ ይፍጠሩ",
+    "variables": {
+      "customerName": "መሪ ስም",
+      "customerMobile": "መሪ ሞባይል",
+      "customerEmail": "መሪ ኢሜይል",
+      "registrationId": "መሪ ID",
+      "status": "ሁኔታ",
+      "subStatus": "ንዑስ ሁኔታ",
+      "scheduleAt": "የታቀደ ቀን እና ሰዓት",
+      "assignedTo": "የተመደበ ተጠቃሚ",
+      "updatedBy": "የዘመነው በ",
+      "recipient": "የተቀባይ ስም",
+      "project": "ፕሮጀክት",
+      "notes": "የቅርብ ጊዜ ማስታወሻ",
+      "partner": "የአጋር ስም"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "ሁኔታው ሲዘጋጅ ወዲያውኑ",
+      "AT": "በተያዘለት ጊዜ",
+      "A1D": "ከተያዘለት ጊዜ 1 ቀን በኋላ (የክትትል ፍተሻ)"
+    },
+    "immediately": "ወድያው",
+    "atScheduled": "በተያዘለት ጊዜ",
+    "before": {
+      "MINUTES_one": "ከተያዘለት ጊዜ በፊት {{count}} ደቂቃ",
+      "MINUTES_other": "ከተያዘለት ጊዜ በፊት {{count}} ደቂቃዎች",
+      "HOURS_one": "ከተያዘለት ሰዓት በፊት {{count}} ሰዓት",
+      "HOURS_other": "ከተያዘለት ጊዜ በፊት {{count}} ሰዓቶች",
+      "DAYS_one": "ከተያዘለት ጊዜ በፊት {{count}} ቀን",
+      "DAYS_other": "ከተያዘለት ጊዜ በፊት {{count}} ቀናት",
+      "WEEKS_one": "ከተያዘለት ጊዜ በፊት {{count}} ሳምንት",
+      "WEEKS_other": "ከተያዘለት ጊዜ በፊት {{count}} ሳምንታት",
+      "MONTHS_one": "ከታቀደለት ጊዜ በፊት {{count}} ወር",
+      "MONTHS_other": "ከታቀደለት ጊዜ በፊት {{count}} ወራት",
+      "YEARS_one": "ከተያዘለት ጊዜ በፊት {{count}} አመት",
+      "YEARS_other": "ከተያዘለት ጊዜ በፊት {{count}} ዓመታት"
+    },
+    "after": {
+      "MINUTES_one": "ከተያዘለት ጊዜ በኋላ {{count}} ደቂቃ",
+      "MINUTES_other": "ከተያዘለት ጊዜ በኋላ {{count}} ደቂቃዎች",
+      "HOURS_one": "ከተያዘለት ሰዓት በኋላ {{count}} ሰዓት",
+      "HOURS_other": "ከተያዘለት ጊዜ በኋላ {{count}} ሰዓቶች",
+      "DAYS_one": "ከተያዘለት ጊዜ በኋላ {{count}} ቀን",
+      "DAYS_other": "ከተያዘለት ጊዜ በኋላ {{count}} ቀናት",
+      "WEEKS_one": "ከተያዘለት ጊዜ በኋላ {{count}} ሳምንት",
+      "WEEKS_other": "ከተያዘለት ጊዜ በኋላ {{count}} ሳምንታት",
+      "MONTHS_one": "ከተያዘለት ጊዜ በኋላ {{count}} ወር",
+      "MONTHS_other": "ከተያዘለት ጊዜ በኋላ {{count}} ወራት",
+      "YEARS_one": "ከተያዘለት ጊዜ በኋላ {{count}} አመት",
+      "YEARS_other": "ከተያዘለት ጊዜ በኋላ {{count}} አመታት"
+    },
+    "units": {
+      "MINUTES_one": "ደቂቃ",
+      "MINUTES_other": "ደቂቃዎች",
+      "HOURS_one": "ሰአት",
+      "HOURS_other": "ሰዓታት",
+      "DAYS_one": "ቀን",
+      "DAYS_other": "ቀናት",
+      "WEEKS_one": "ሳምንት",
+      "WEEKS_other": "ሳምንታት",
+      "MONTHS_one": "ወር",
+      "MONTHS_other": "ወራት",
+      "YEARS_one": "አመት",
+      "YEARS_other": "ዓመታት"
+    }
+  }
+}

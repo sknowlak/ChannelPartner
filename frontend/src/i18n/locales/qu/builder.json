@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal de Constructor nisqa",
+    "referrals": "Referencias nisqakuna",
+    "builderLogin": "Wasi ruwaq Yaykuna",
+    "partnerLogin": "Kanal Socio Yaykuna"
+  },
+  "login": {
+    "title": "Wasi ruwaq haykuy",
+    "hint": "Wasi ruwaq yupaykunataqa Leadrat nisqap kamasqanmi. Kamachiqniykita tapuy sichus mana kanchu."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Decidisqaykita suyaspa",
+    "ACCEPTED": "Chaskisqa",
+    "REJECTED": "Rechazasqa"
+  },
+  "list": {
+    "title": "Referencias nisqakuna",
+    "allProjects": "Tukuy proyectokuna",
+    "allStatuses": "Tukuy estatuskuna",
+    "count_one": "{{count}} apachiy",
+    "count_other": "{{count}} kachasqakuna",
+    "columns": {
+      "referral": "Referencia nisqa",
+      "customer": "Rantiq",
+      "project": "Ruwana",
+      "sourcePartner": "Pukyu Socio",
+      "status": "Imayna kaynin",
+      "booking": "Reservacion",
+      "registered": "Qillqasqa"
+    },
+    "booked": "Reservado",
+    "empty": "Manaraqmi referenciakuna kanchu."
+  },
+  "detail": {
+    "customer": "Rantiq",
+    "sourcePartner": "Pukyu Socio",
+    "attributionNote": "(atribución - mana tikray atikunmanchu)",
+    "leadStatus": "Estado de Plomo nisqa",
+    "protectedUntil": "Amachasqa Hasta",
+    "referral": "Referencia nisqa",
+    "reason": "Razón: {{reason}}",
+    "booking": "Reservacion",
+    "bookedOwner": "Reservado - qam kanki operativo dueño",
+    "notBooked": "Mana reservasqachu",
+    "sharedAfterBooking": "Reservacion ruwasqamanta qhipaman rakisqa",
+    "accept": "Referenciata chaskiy",
+    "confirmBooking": "Reservacionta takyachiy",
+    "reject": "Rechazar Referencia nisqa",
+    "rejectReasonLabel": "Razón de rechazado (compañeroman rikuchisqa) * .",
+    "rejectConfirm": "Kutichipuy",
+    "confirmBookingPrompt": "¿Reservasqaykita takyachinkichu? Propiedad operativa qamman kuyukun chaymanta socio comisiónpaq atikuqman tukun.",
+    "notice": {
+      "booked": "Reservacionta takyachirqa.",
+      "accepted": "Referencia nisqa chaskisqa.",
+      "rejected": "Referencia nisqa mana chaskisqachu."
+    },
+    "backToReferrals": "Referencias nisqaman kutiy"
+  },
+  "history": {
+    "title": "Willarina",
+    "actor": {
+      "system": "Sistema",
+      "partner": "Kanal socio",
+      "admin": "Leadrat kamachiq"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Socio registro chaskisqa",
+      "DUPLICATE_CHECK_COMPLETED": "Iskay kuti qhaway tukusqa - mana llamk'aq iskay kuti tarisqachu",
+      "REGISTRATION_ACCEPTED": "Inscripción chaskisqa",
+      "PROTECTION_GRANTED_one": "{{count}} -p'unchaw amachay qusqa",
+      "PROTECTION_GRANTED_other": "{{count}} -p'unchaw amachay qusqa",
+      "STAGE_UPDATED": "{{stage}} nisqaman musuqchasqa kaynin.",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} pampata musuqchasqa",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} pampakuna musuqchasqa",
+      "LEAD_ASSIGNED": "{{name}} nisqaman churasqa.",
+      "LEAD_UNASSIGNED": "Mana asignasqa",
+      "REFERRAL_ACCEPTED": "Constructorqa chay referenciata chaskirqa",
+      "REFERRAL_REJECTED": "Builder mana chaskirqachu chay referenciata. Razón: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} nisqap iskay kuti qillqay munaynin mana chaskisqachu",
+      "BOOKING_COMPLETED": "Reserva tukusqa",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Dueño operativo nisqa Constructor nisqaman t’ikrasqa",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Socio atribución waqaychasqa",
+      "COMMISSION_ELIGIBILITY_CREATED": "Comisión nisqapaq eligibilidad nisqa kamasqa",
+      "HANDOVER_COMPLETED": "Entrega tukusqaña",
+      "ADMIN_PROTECTION_RELEASED": "Admin iskay kuti hark'ayta ñawpaqmanta lluqsichirqan. Razón: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin qillqakuyta {{from}} kaqmanta {{to}} kaqman wakmanta churarqa. Razón: {{reason}}"
+    }
+  }
+}

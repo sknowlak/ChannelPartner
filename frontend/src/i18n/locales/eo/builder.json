@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Konstruisto Portalo",
+    "referrals": "Referencoj",
+    "builderLogin": "Konstruisto Ensalutu",
+    "partnerLogin": "Kanala Partnero Ensaluto"
+  },
+  "login": {
+    "title": "Konstruisto ensalutu",
+    "hint": "Konstruaj kontoj estas kreitaj de Leadrat . Demandu vian administranton se vi ne havas."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Atendante vian decidon",
+    "ACCEPTED": "Akceptita",
+    "REJECTED": "Malakceptita"
+  },
+  "list": {
+    "title": "Referencoj",
+    "allProjects": "Ĉiuj projektoj",
+    "allStatuses": "Ĉiuj statusoj",
+    "count_one": "{{count}} referenco",
+    "count_other": "{{count}} referencoj",
+    "columns": {
+      "referral": "Referenco",
+      "customer": "Kliento",
+      "project": "Projekto",
+      "sourcePartner": "Fonta Partnero",
+      "status": "Statuso",
+      "booking": "Rezervado",
+      "registered": "Registrita"
+    },
+    "booked": "Rezervita",
+    "empty": "Ankoraŭ neniuj referencoj."
+  },
+  "detail": {
+    "customer": "Kliento",
+    "sourcePartner": "Fonta Partnero",
+    "attributionNote": "(atribuo - ne ŝanĝeblas)",
+    "leadStatus": "Ĉefa Statuso",
+    "protectedUntil": "Protektita Ĝis",
+    "referral": "Referenco",
+    "reason": "Kialo: {{reason}}",
+    "booking": "Rezervado",
+    "bookedOwner": "Rezervita - vi estas la funkcianta posedanto",
+    "notBooked": "Ne mendita",
+    "sharedAfterBooking": "Kunhavita post rezervado",
+    "accept": "Akceptu Referencon",
+    "confirmBooking": "Konfirmu Rezervon",
+    "reject": "Malakcepti Referencon",
+    "rejectReasonLabel": "Kialo por malakcepto (montrita al la partnero) *",
+    "rejectConfirm": "Malakcepti",
+    "confirmBookingPrompt": "Ĉu konfirmi la rezervon? Funkcia proprieto translokiĝas al vi kaj la partnero fariĝas elektebla por komisiono.",
+    "notice": {
+      "booked": "Rezervo konfirmita.",
+      "accepted": "Referenco akceptita.",
+      "rejected": "Referenco malakceptita."
+    },
+    "backToReferrals": "Reen al Referencoj"
+  },
+  "history": {
+    "title": "Historio",
+    "actor": {
+      "system": "Sistemo",
+      "partner": "Kanala partnero",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Partnerregistriĝo ricevita",
+      "DUPLICATE_CHECK_COMPLETED": "Duplikata kontrolo finiĝis - neniu aktiva duplikato trovita",
+      "REGISTRATION_ACCEPTED": "Registrado akceptita",
+      "PROTECTION_GRANTED_one": "{{count}} -taga protekto donita",
+      "PROTECTION_GRANTED_other": "{{count}} -taga protekto donita",
+      "STAGE_UPDATED": "Statuso ĝisdatigita al {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Ĝisdatigita {{count}} kampo",
+      "LEAD_DETAILS_UPDATED_other": "Ĝisdatigitaj {{count}} kampoj",
+      "LEAD_ASSIGNED": "Asignite al {{name}}",
+      "LEAD_UNASSIGNED": "Neasignita",
+      "REFERRAL_ACCEPTED": "Konstruisto akceptis la referencon",
+      "REFERRAL_REJECTED": "Konstruisto malakceptis la referencon. Kialo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Duobla registra provo de {{partner}} malakceptita",
+      "BOOKING_COMPLETED": "Rezervado finiĝis",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Funkcia proprieto transdonita al Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partnera atribuo konservita",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komisiona kvalifiko kreita",
+      "HANDOVER_COMPLETED": "Transdono finiĝis",
+      "ADMIN_PROTECTION_RELEASED": "Administranto liberigis duplikatan protekton frue. Kialo: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Administranto reasignis registradon de {{from}} al {{to}} . Kialo: {{reason}}"
+    }
+  }
+}

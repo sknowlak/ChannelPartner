@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Градител портал",
+    "referrals": "Препораки",
+    "builderLogin": "Најава за градител",
+    "partnerLogin": "Најава за партнер на каналот"
+  },
+  "login": {
+    "title": "Најавете се на Builder",
+    "hint": "Сметките на Builder се креирани од Leadrat . Прашајте го вашиот администратор ако немате."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Чекајќи ја вашата одлука",
+    "ACCEPTED": "Прифатено",
+    "REJECTED": "Одбиено"
+  },
+  "list": {
+    "title": "Препораки",
+    "allProjects": "Сите проекти",
+    "allStatuses": "Сите статуси",
+    "count_one": "{{count}} упатување",
+    "count_other": "{{count}} препораки",
+    "columns": {
+      "referral": "Упатување",
+      "customer": "Клиент",
+      "project": "Проект",
+      "sourcePartner": "Изворен партнер",
+      "status": "Статус",
+      "booking": "Резервација",
+      "registered": "Регистриран"
+    },
+    "booked": "Резервирано",
+    "empty": "Сè уште нема препораки."
+  },
+  "detail": {
+    "customer": "Клиент",
+    "sourcePartner": "Изворен партнер",
+    "attributionNote": "(наведување - не може да се промени)",
+    "leadStatus": "Статус на олово",
+    "protectedUntil": "Заштитено до",
+    "referral": "Упатување",
+    "reason": "Причина: {{reason}}",
+    "booking": "Резервација",
+    "bookedOwner": "Резервирано - вие сте оперативниот сопственик",
+    "notBooked": "Не е резервирано",
+    "sharedAfterBooking": "Споделено по резервацијата",
+    "accept": "Прифатете го упатувањето",
+    "confirmBooking": "Потврдете ја резервацијата",
+    "reject": "Одбијте го упатувањето",
+    "rejectReasonLabel": "Причина за одбивање (прикажано на партнерот) *",
+    "rejectConfirm": "Отфрли",
+    "confirmBookingPrompt": "Да се ​​потврди резервацијата? Оперативната сопственост се префрла кај вас и партнерот се квалификува за провизија.",
+    "notice": {
+      "booked": "Резервацијата е потврдена.",
+      "accepted": "Упатувањето е прифатено.",
+      "rejected": "Упатувањето е одбиено."
+    },
+    "backToReferrals": "Назад на Реферали"
+  },
+  "history": {
+    "title": "Историја",
+    "actor": {
+      "system": "Систем",
+      "partner": "Партнер на каналот",
+      "admin": "Leadrat админ"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Примена на регистрација на партнер",
+      "DUPLICATE_CHECK_COMPLETED": "Проверката на дупликат е завршена - не е пронајден активен дупликат",
+      "REGISTRATION_ACCEPTED": "Регистрацијата е прифатена",
+      "PROTECTION_GRANTED_one": "Доделена е {{count}} -дневна заштита",
+      "PROTECTION_GRANTED_other": "Доделена е {{count}} -дневна заштита",
+      "STAGE_UPDATED": "Статусот е ажуриран на {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Ажурирано поле {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "Ажурирани {{count}} полиња",
+      "LEAD_ASSIGNED": "Доделено на {{name}}",
+      "LEAD_UNASSIGNED": "Недоделени",
+      "REFERRAL_ACCEPTED": "Градителот го прифати упатувањето",
+      "REFERRAL_REJECTED": "Градител го одбил упатувањето. Причина: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Обидот за дупликат за регистрација од {{partner}} е одбиен",
+      "BOOKING_COMPLETED": "Резервирањето е завршено",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Оперативната сопственост е пренесена на Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Атрибуцијата на партнерот е зачувана",
+      "COMMISSION_ELIGIBILITY_CREATED": "Создадена подобност на Комисијата",
+      "HANDOVER_COMPLETED": "Примопредавањето е завршено",
+      "ADMIN_PROTECTION_RELEASED": "Администраторот рано објави дупликат заштита. Причина: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Администраторот повторно ја додели регистрацијата од {{from}} на {{to}} . Причина: {{reason}}"
+    }
+  }
+}

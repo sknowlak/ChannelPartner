@@ -1,0 +1,244 @@
+{
+  "page": {
+    "title": "Setélan",
+    "noPermission": "Anjeun teu boga idin pikeun ngatur setelan."
+  },
+  "categories": {
+    "lead": "Timbel",
+    "user": "Pamaké",
+    "integrations": "Integrasi"
+  },
+  "leadTabs": {
+    "fields": "Sawah",
+    "statuses": "Status & Substatus",
+    "notifications": "Bewara & Schedulers"
+  },
+  "fields": {
+    "leadIntro": "Konpigurasikeun formulir newak kalungguhan: aktipkeun/nonaktipkeun widang, cirian eta diperlukeun, atawa tambahkeun widang custom anjeun sorangan.",
+    "userIntro": "Konpigurasikeun formulir Tambah / Édit Anggota Tim: aktipkeun / mareuman widang, cirian aranjeunna diperlukeun, atawa tambahkeun widang custom anjeun sorangan.",
+    "addCustomField": "+ Tambahkeun Lapang Adat",
+    "fieldLabel": "Label widang",
+    "group": "Grup",
+    "groupPlaceholderLead": "misalna Inquiry Info",
+    "groupPlaceholderUser": "contona Rincian Tambahan",
+    "dataType": "Tipe Data",
+    "options": "Pilihan (dipisahkeun koma)",
+    "requiredLead": "Diperlukeun - mitra dina tim anjeun kedah ngeusian ieu pikeun ngadaptar kalungguhan",
+    "requiredUser": "Diperlukeun - kudu dieusian nalika nambahkeun hiji anggota tim",
+    "creating": "Nyieun...",
+    "createField": "Jieun Widang",
+    "columns": {
+      "field": "Sawah",
+      "group": "Grup",
+      "type": "Tipe",
+      "required": "Dibutuhkeun",
+      "enabled": "Diaktipkeun",
+      "kind": "Jenis"
+    },
+    "kind": {
+      "custom": "Adat",
+      "core": "Inti (dikonci)",
+      "standard": "Standar"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Téks",
+    "TEXTAREA": "Tulisan panjang",
+    "NUMBER": "Jumlah",
+    "CURRENCY": "Mata uang",
+    "DATE": "titimangsa",
+    "SELECT": "Puragkeun",
+    "LIST": "Daptar"
+  },
+  "picker": {
+    "searchPlaceholder": "Milarian widang kalungguhan...",
+    "summary": "{{shown}} ditémbongkeun · {{mandatory}} wajib",
+    "mandatory": "Wajib",
+    "noMatch": "Taya widang cocog."
+  },
+  "statuses": {
+    "intro": "Status kalungguhan sareng substatus anjeun - naon anu ditaroskeun ku masing-masing (tanggal & waktos, kolom kalungguhan) nalika aya anu ngamutahirkeun kalungguhanana.",
+    "add": "+ Tambahkeun Status",
+    "columns": {
+      "order": "pesenan",
+      "status": "Status",
+      "subStatuses": "Sub-Status",
+      "asksFor": "Nyuhunkeun",
+      "active": "Aktif"
+    },
+    "moveUp": "Pindah ka luhur",
+    "moveDown": "Pindah ka handap",
+    "defaultBadge": "Default pikeun kalungguhan anyar",
+    "bookingBadge": "Status booking",
+    "asksForLabel": "Nyuhunkeun {{label}}",
+    "asksForDateTime": "Nanyakeun tanggal & waktos",
+    "none": "Euweuh",
+    "dateTime": "Tanggal & waktos",
+    "scheduledOn": "dina {{names}}",
+    "fieldsSummary_other": "{{count}} widang ( {{mandatory}} wajib)",
+    "deleteConfirm": "Hapus status \" {{name}} \"? Ieu teu bisa dibolaykeun.",
+    "editTitle": "Édit Status - {{name}}",
+    "newTitle": "Status Anyar",
+    "name": "Ngaran Status",
+    "colour": "Warna",
+    "active": "Aktif",
+    "isDefault": "Status standar pikeun kalungguhan anyar",
+    "isBooking": "Status booking (disetel ku Booking Lengkep)",
+    "whenMoved": "Nalika kalungguhan dipindahkeun ka status ieu",
+    "askSchedule": "Tanya tanggal sareng waktos (penjadwal)",
+    "scheduleLabelPlaceholder": "Label, misalna Visit at",
+    "fieldsToShow": "Widang kalungguhan pikeun ditingalikeun dina bentuk pembaruan",
+    "subStatusesTitle": "Sub-Status",
+    "subStatusesHint": "Unggal sub-status tiasa naroskeun tanggal & waktosna nyalira sareng nambihan kolom nyalira - dipidangkeun di luhur kolom status di luhur.",
+    "subStatusName": "Ngaran sub-status",
+    "subFields": "Widang ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Label tanggal & waktos, contona Telepon deui di",
+    "addSubStatus": "+ Tambahkeun Sub-Status",
+    "saveStatus": "Simpen Status",
+    "createStatus": "Jieun Status"
+  },
+  "notifications": {
+    "intro": "Béjakeun ka jalma anu leres nalika kalungguhan ngahontal status - langsung, atanapi waktos anu disetél sateuacan/sanggeus tanggal & waktos anu dijadwalkeun.",
+    "add": "+ Tambihkeun Bewara",
+    "columns": {
+      "notification": "Bewara",
+      "whenStatusIs": "Nalika Status Dupi",
+      "sends": "Ngirimkeun",
+      "to": "Ka",
+      "via": "Liwat",
+      "enabled": "Diaktipkeun"
+    },
+    "anyStatus": "Status naon wae",
+    "anySubStatus": "Sub-status naon waé",
+    "inactiveOption": "{{name}} (henteu aktif)",
+    "emptyRules": "Henteu aya béwara - tambahkeun hiji pikeun ngingetkeun tim anjeun nalika kalungguhan ngahontal status.",
+    "jobs": {
+      "title": "Dijadwalkeun & Dikirim",
+      "firesAt": "Seuneu Di",
+      "notification": "Bewara",
+      "lead": "Timbel",
+      "status": "Status",
+      "details": "Rincian",
+      "empty": "Henteu aya anu dijadwalkeun atanapi dikirim.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Ditunggu",
+      "PROCESSING": "Ngolah",
+      "SENT": "Dikirim",
+      "FAILED": "Gagal",
+      "SKIPPED": "Dileupas",
+      "CANCELLED": "Dibolaykeun"
+    },
+    "deliveryStatus": {
+      "SENT": "dikirim",
+      "FAILED": "gagal",
+      "SKIPPED": "dilewatan"
+    },
+    "deliveryChannel": {
+      "IN_APP": "dina-aplikasi",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "pamaké ditugaskeun",
+      "owner": "Nu boga",
+      "updatedBy": "Diropéa ku",
+      "role": "Kalungguhan: {{name}}"
+    },
+    "channels": {
+      "inApp": "Dina-aplikasi",
+      "email": "Surélék",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Hapus béwara \" {{name}} \"? Panginget anu ditangguhkeun ti éta dibatalkeun.",
+    "testPrompt": "Kirim tés béwara ieu ka diri anjeun (di-aplikasi) nganggo ID kalungguhan mana?",
+    "testSent": "Dikirim ka lonceng anjeun: {{title}} {{message}}",
+    "headersInvalid": "Header Webhook kudu JSON valid, misalna {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Édit Bewara",
+    "newTitle": "Bewara Anyar",
+    "name": "Ngaran",
+    "namePlaceholder": "misalna panginget kunjungan loka",
+    "whenStatus": "Nalika status kalungguhan hiji",
+    "subStatus": "Sub-status",
+    "send": "Kirim (Jadual)",
+    "custom": "Adat...",
+    "modeBefore": "sateuacan waktos anu dijadwalkeun",
+    "modeAfter": "sanggeus waktu dijadwalkeun",
+    "noScheduleWarning": "Status ieu henteu naroskeun tanggal & waktos, janten bewara \"saméméh / jam / saatos waktos anu dijadwalkeun\" moal pernah seuneu.",
+    "noScheduleFix": "Hurungkeun <strong>Tanya tanggal & waktos</strong> kanggo éta dina Status & Sub-Status, atanapi kirimkeun Langsung.",
+    "sendTo": "Kirim ka (kombinasi naon waé)",
+    "recipientAssigned": "Pamaké anu ditugaskeun (pamilik utama)",
+    "recipientOwner": "Pamilik akun / admin",
+    "recipientUpdatedBy": "Jalma anu ngamutahirkeun status",
+    "everyoneWithRole": "Sarerea boga peran",
+    "specificUsers": "Pamaké husus (aktif)",
+    "inactiveNever": "Pamaké anu teu aktip henteu kantos nampi béwara, sanaos dipilih.",
+    "deliverVia": "Ngirimkeun via",
+    "channelInApp": "Dina-aplikasi (bel)",
+    "channelEmail": "Surélék",
+    "channelWebhook": "Webhook (panyadia WhatsApp / SMS )",
+    "emailHint": "Surélék mana kana alamat surélék unggal panarima tur perlu SMTP nyetél dina server (backend / .env); dugi ka kiriman email dilebetkeun salaku skipped.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Header ( JSON )",
+    "content": "Eusi béwara",
+    "title": "Judul",
+    "message": "talatah",
+    "insertIntoTitle": "Selapkeun kana Judul",
+    "insertIntoMessage": "Selapkeun kana Pesen",
+    "anyLeadField": "Sakur widang kalungguhan ogé dianggo, misalna <code1>{{example1}}</code1> atawa <code2>{{example2}}</code2> .",
+    "preview": "Sawangan (sampel kalungguhan)",
+    "enabled": "Diaktipkeun",
+    "saveRule": "Simpen Bewara",
+    "createRule": "Jieun Bewara",
+    "variables": {
+      "customerName": "Ngaran kalungguhan",
+      "customerMobile": "Anjog mobile",
+      "customerEmail": "Email kalungguhan",
+      "registrationId": "ID kalungguhan",
+      "status": "Status",
+      "subStatus": "Sub-status",
+      "scheduleAt": "Tanggal & waktos dijadwalkeun",
+      "assignedTo": "pamaké ditugaskeun",
+      "updatedBy": "Diropéa ku",
+      "recipient": "Ngaran panarima",
+      "project": "Proyék",
+      "notes": "catetan panganyarna",
+      "partner": "Ngaran mitra"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Langsung nalika status disetel",
+      "AT": "Dina waktos anu dijadwalkeun",
+      "A1D": "1 dinten saatos waktos anu dijadwalkeun (pariksa susulan)"
+    },
+    "immediately": "Geuwat",
+    "atScheduled": "Dina waktos anu dijadwalkeun",
+    "before": {
+      "MINUTES_other": "{{count}} menit sateuacan waktos anu dijadwalkeun",
+      "HOURS_other": "{{count}} jam saméméh waktu nu dijadwalkeun",
+      "DAYS_other": "{{count}} dinten sateuacan waktos anu dijadwalkeun",
+      "WEEKS_other": "{{count}} minggu sateuacan waktos anu dijadwalkeun",
+      "MONTHS_other": "{{count}} sasih sateuacan waktos anu dijadwalkeun",
+      "YEARS_other": "{{count}} taun sateuacan waktos anu dijadwalkeun"
+    },
+    "after": {
+      "MINUTES_other": "{{count}} menit saatos waktos anu dijadwalkeun",
+      "HOURS_other": "{{count}} jam saatos waktos anu dijadwalkeun",
+      "DAYS_other": "{{count}} poé sanggeus waktu nu dijadwalkeun",
+      "WEEKS_other": "{{count}} minggu saatos waktos anu dijadwalkeun",
+      "MONTHS_other": "{{count}} bulan sanggeus waktu nu dijadwalkeun",
+      "YEARS_other": "{{count}} taun saatos waktos anu dijadwalkeun"
+    },
+    "units": {
+      "MINUTES_other": "menit",
+      "HOURS_other": "jam",
+      "DAYS_other": "poé",
+      "WEEKS_other": "minggu",
+      "MONTHS_other": "bulan",
+      "YEARS_other": "taun"
+    }
+  }
+}

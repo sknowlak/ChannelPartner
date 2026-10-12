@@ -1,0 +1,87 @@
+{
+  "shell": {
+    "portal": "建造者门户",
+    "referrals": "推荐人",
+    "builderLogin": "建造者登录",
+    "partnerLogin": "渠道合作伙伴登录"
+  },
+  "login": {
+    "title": "建造者登录",
+    "hint": "Builder 帐户由Leadrat创建。如果您没有，请询​​问您的管理员。"
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "等待你的决定",
+    "ACCEPTED": "公认",
+    "REJECTED": "被拒绝"
+  },
+  "list": {
+    "title": "推荐人",
+    "allProjects": "所有项目",
+    "allStatuses": "所有状态",
+    "count_other": "{{count}}次推荐",
+    "columns": {
+      "referral": "推荐",
+      "customer": "顾客",
+      "project": "项目",
+      "sourcePartner": "源合作伙伴",
+      "status": "地位",
+      "booking": "预订",
+      "registered": "挂号的"
+    },
+    "booked": "已预订",
+    "empty": "还没有推荐。"
+  },
+  "detail": {
+    "customer": "顾客",
+    "sourcePartner": "源合作伙伴",
+    "attributionNote": "（归属 - 无法更改）",
+    "leadStatus": "潜在客户状态",
+    "protectedUntil": "受保护直至",
+    "referral": "推荐",
+    "reason": "原因： {{reason}}",
+    "booking": "预订",
+    "bookedOwner": "已预订 - 您是运营所有者",
+    "notBooked": "未预订",
+    "sharedAfterBooking": "预订后分享",
+    "accept": "接受推荐",
+    "confirmBooking": "确认预订",
+    "reject": "拒绝推荐",
+    "rejectReasonLabel": "拒绝原因（向合作伙伴展示）*",
+    "rejectConfirm": "拒绝",
+    "confirmBookingPrompt": "确认预订？运营所有权转移给您，合作伙伴有资格获得佣金。",
+    "notice": {
+      "booked": "预订已确认。",
+      "accepted": "接受推荐。",
+      "rejected": "推荐被拒绝。"
+    },
+    "backToReferrals": "返回推荐"
+  },
+  "history": {
+    "title": "历史",
+    "actor": {
+      "system": "系统",
+      "partner": "渠道合作伙伴",
+      "admin": "Leadrat管理员"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "合作伙伴注册已收到",
+      "DUPLICATE_CHECK_COMPLETED": "重复检查已完成 - 未发现有效的重复项",
+      "REGISTRATION_ACCEPTED": "接受报名",
+      "PROTECTION_GRANTED_other": "已授予{{count}}天保护",
+      "STAGE_UPDATED": "状态更新为{{stage}}",
+      "LEAD_DETAILS_UPDATED_other": "更新了{{count}}字段",
+      "LEAD_ASSIGNED": "分配给{{name}}",
+      "LEAD_UNASSIGNED": "未分配",
+      "REFERRAL_ACCEPTED": "建造商接受了推荐",
+      "REFERRAL_REJECTED": "建造者拒绝了推荐。原因： {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}}的重复注册尝试被拒绝",
+      "BOOKING_COMPLETED": "预订完成",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "运营所有权转移给建造商",
+      "PARTNER_ATTRIBUTION_PRESERVED": "保留合作伙伴归属",
+      "COMMISSION_ELIGIBILITY_CREATED": "创建佣金资格",
+      "HANDOVER_COMPLETED": "交接完成",
+      "ADMIN_PROTECTION_RELEASED": "管理员提前发布了重复保护。原因： {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "管理员将注册从{{from}}重新分配到{{to}} 。原因： {{reason}}"
+    }
+  }
+}

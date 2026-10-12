@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Mínir leiðarar",
+    "signedInAs": "Ritað inn sum {{name}} ( {{partnerId}} ) · tíðir vístar í {{timezone}}",
+    "addLead": "+ Legg leiðslu til",
+    "tabs": {
+      "all": "Øll ( {{count}} )",
+      "pending": "Bíðandi ( {{count}} )",
+      "booked": "Bílagt ( {{count}} )"
+    },
+    "searchPlaceholder": "Leita eftir navni, fartelefon ella skrásetingar ID ...",
+    "manageColumns": "Umsita súlur",
+    "rowsPerPage": "Røðir á síðu",
+    "registrationId": "Skrásetingar- ID",
+    "emptyState": "Ongar leiðarar enn - melda tín fyrsta.",
+    "noMatch": "Ongar leiðslur passa til hesi filtur.",
+    "showing": "Vísir {{from}} - {{to}} av {{total}} upplýsingum",
+    "actions": {
+      "preview": "Forskoðan & skjót dagføring",
+      "history": "Søga",
+      "email": "Teldupostur",
+      "whatsapp": "WhatsApp",
+      "call": "Uppkall"
+    },
+    "pagination": {
+      "first": "Fyrsta síða",
+      "previous": "Fyrra síða",
+      "next": "Næsta síða",
+      "last": "Seinasta síða"
+    }
+  },
+  "columns": {
+    "status": "Støða",
+    "assignTo": "Tilnevna til",
+    "booked": "Bílagt",
+    "protectionUntil": "Vernd Til 2020."
+  },
+  "booking": {
+    "booked": "Bílagt",
+    "pending": "Sum liggur í óvissu"
+  },
+  "assign": {
+    "unassigned": "Ótilskilað",
+    "owner": "{{name}} (Eigari)",
+    "inactive": "{{name}} (óvirkin)",
+    "unknownUser": "Ókendur brúkari",
+    "assignedTo": "Tilnevnt til {{name}}"
+  },
+  "form": {
+    "addTitle": "Legg leiðslu til",
+    "editTitle": "Rætta leiðslu",
+    "noPermissionAdd": "Tú hevur ikki loyvi at skráseta leiðarar.",
+    "noPermissionEdit": "Tú hevur ikki loyvi til at broyta leiðarar.",
+    "selectPlaceholder": "Velja...",
+    "commaSeparated": "Komma skilt",
+    "phonePlaceholder": "Telefonnummar",
+    "countryCode": "Landsnót"
+  },
+  "project": {
+    "none": "Eingin verkætlan enn (ikki víst)",
+    "notInList": "{{project}} (ikki í verkætlanarlistanum)"
+  },
+  "journey": {
+    "customer": "Viðskiftafólk",
+    "currentOwner": "Núverandi eigari",
+    "protectionExpiry": "Vernd útgingin",
+    "leadStatus": "Leiðsstøða",
+    "scheduled": "Skrásett",
+    "assignedTo": "Tilnevnt til",
+    "referral": "Tilvísing",
+    "builderReason": "Orsøkin hjá byggiharranum: {{reason}}",
+    "bookedHint": "Bílagt av byggiharranum - rakstrarligi ognarrætturin er fluttur til byggiharran; tín tilskriving og provisjónsrættur eru hildin.",
+    "notBookedHint": "Bíleggingar verða váttaðar av byggiharranum, tá teir hava góðtikið tilvísingina.",
+    "quickUpdate": "Snardagføring",
+    "leadDetails": "Blýsmálutir",
+    "progressHistory": "Framgongdarsøga",
+    "timesIn": "(tíðir í {{timezone}} )",
+    "backToMyLeads": "Aftur til mínar leiðarar",
+    "editLead": "Rætta leiðslu"
+  },
+  "referral": {
+    "NOT_REFERRED": "Ikki víst (eingin verkætlan)",
+    "PENDING_BUILDER": "Bíða eftir byggiharra",
+    "ACCEPTED": "Góðtikið av byggiharra",
+    "REJECTED": "Vrakað av byggiharra"
+  },
+  "preview": {
+    "ariaLabel": "Lead forskoðan",
+    "title": "Lead Forskoðan",
+    "source": "Kelda",
+    "location": "Staður",
+    "scheduled": "Skrásett",
+    "registered": "Skrásett",
+    "latestNote": "Nýggjasta viðmerking",
+    "quickUpdate": "Snardagføring",
+    "fullDetails": "Allar smálutir",
+    "editLead": "Rætta leiðslu",
+    "history": "Søga"
+  },
+  "quick": {
+    "assignedTo": "Tilnevnt til",
+    "status": "Støða",
+    "subStatus": "Undirstøða",
+    "selectSubStatus": "Vel undirstøðu...",
+    "none": "Eingin",
+    "scheduledAt": "Skrásett kl.",
+    "localTime": "lokala tíð",
+    "note": "Upprit",
+    "notePlaceholder": "Hvat hendi á hesum uppringinum / vitjanini? (valfríur)",
+    "updateStatus": "Dagfør støðu",
+    "statusUpdated": "Støðan dagførd",
+    "bookedLocked": "Hendan leiðslan er bíløgd - status hennara kann ikki broytast longur.",
+    "viewOnly": "Tú kanst síggja hesa leiðsluna, men tín leiklutur kann ikki dagføra hana."
+  },
+  "history": {
+    "title": "Søga - {{registrationId}}",
+    "tabs": {
+      "all": "Altíð",
+      "status": "Støða",
+      "assignment": "Avhending",
+      "notes": "Viðmerkingar"
+    },
+    "doneBy": "Gjørt av {{actor}}",
+    "system": "Skipan",
+    "platforms": {
+      "System": "Skipan",
+      "External": "Ytri",
+      "Web": "Vev",
+      "Mobile": "Flytførur"
+    },
+    "added": "lagt afturat",
+    "updated": "dagført",
+    "empty": "(tøma)",
+    "noHistory": "Eingin søga í hesum flokki enn.",
+    "fieldLabels": {
+      "stage": "Støða",
+      "subStatus": "Undirstøða",
+      "scheduledAt": "Skrá",
+      "notes": "Viðmerkingar",
+      "assignedTo": "Tilnevnt til"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Samstarvsfelagaskráseting móttikin",
+      "DUPLICATE_CHECK_COMPLETED": "Tvítøkukanning liðug - einki virkið tvítøk funnið",
+      "REGISTRATION_ACCEPTED": "Tilmelding er góðtikin",
+      "PROTECTION_GRANTED_one": "{{count}} -dagsvernd veitt",
+      "PROTECTION_GRANTED_other": "{{count}} -dagsvernd veitt",
+      "REGISTRATION_ATTEMPT_REJECTED": "Tvítøk av skrásetingarroynd hjá {{partnerId}} vrakað",
+      "LEAD_DETAILS_UPDATED_one": "Dagførdur {{count}} teigurin",
+      "LEAD_DETAILS_UPDATED_other": "Dagførdir {{count}} teigar",
+      "STAGE_UPDATED": "Støða dagførd til {{status}}",
+      "LEAD_ASSIGNED": "Tilnevnt til {{name}}",
+      "LEAD_UNASSIGNED": "Ótilskilað",
+      "BOOKING_COMPLETED": "Bílegging er liðug",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Rakstrarligi ognarrætturin fluttur til Byggiharra",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Samstarvsfelagatilskriving varðveitt",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kommissiónsrættur er stovnaður",
+      "HANDOVER_COMPLETED": "Handanin liðug",
+      "REFERRAL_ACCEPTED": "Byggiharri tók undir við tilvísingini",
+      "REFERRAL_REJECTED": "Builder noktaði tilvísingini. Orsøk: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin gav út dupultverju tíðliga. Orsøk: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin hevur umskipað tilmeldingina frá {{from}} til {{to}} . Orsøk: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Umsita súlur",
+    "hint": "Drag fyri at umskipa · kanna fyri at vísa",
+    "showAll": "Vís øll",
+    "resetDefault": "Nullstilla til forsett"
+  },
+  "filters": {
+    "title": "Filtur",
+    "allProjects": "Allar verkætlanir",
+    "any": "Nakar",
+    "noFields": "Ongin annar filtrerandi teigur er virkin enn (Innstillingar > Lead).",
+    "clearAll": "Rudda alt"
+  },
+  "phone": {
+    "MISSING": "Telefonnummar krevst.",
+    "INVALID": "Vinarliga skriva eitt gyldugt telefonnummar.",
+    "TOO_SHORT": "Telefonnummarið er ov stutt.",
+    "TOO_LONG": "Telefonnummarið er ov langt.",
+    "INVALID_FOR_COUNTRY": "Hetta telefonnummarið er ikki galdandi fyri {{country}} .",
+    "COUNTRY_MISMATCH": "Vinarliga vel rætta landakotuna.",
+    "NOT_MOBILE": "Vinarliga skriva eitt fartelefonnummar, ikki eitt fastnet."
+  }
+}

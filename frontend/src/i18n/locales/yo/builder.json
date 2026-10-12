@@ -1,0 +1,87 @@
+{
+  "shell": {
+    "portal": "Portal Akole",
+    "referrals": "Awọn itọkasi",
+    "builderLogin": "Wiwọle Akole",
+    "partnerLogin": "Wiwọle Alabaṣepọ ikanni"
+  },
+  "login": {
+    "title": "Akole wole",
+    "hint": "Awọn akọọlẹ olupilẹṣẹ ti ṣẹda nipasẹ Leadrat . Beere lọwọ alakoso rẹ ti o ko ba ni ọkan."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Nduro fun ipinnu rẹ",
+    "ACCEPTED": "Ti gba",
+    "REJECTED": "Ti kọ"
+  },
+  "list": {
+    "title": "Awọn itọkasi",
+    "allProjects": "Gbogbo ise agbese",
+    "allStatuses": "Gbogbo awọn ipo",
+    "count_other": "Awọn itọkasi {{count}}",
+    "columns": {
+      "referral": "Ifiranṣẹ",
+      "customer": "Onibara",
+      "project": "Ise agbese",
+      "sourcePartner": "Orisun Ẹnìkejì",
+      "status": "Ipo",
+      "booking": "Fowo si",
+      "registered": "Iforukọsilẹ"
+    },
+    "booked": "fowo si",
+    "empty": "Ko si awọn itọkasi sibẹsibẹ."
+  },
+  "detail": {
+    "customer": "Onibara",
+    "sourcePartner": "Orisun Ẹnìkejì",
+    "attributionNote": "(ipinnu - ko le yipada)",
+    "leadStatus": "Ipo asiwaju",
+    "protectedUntil": "Ni idaabobo Titi",
+    "referral": "Ifiranṣẹ",
+    "reason": "Idi: {{reason}}",
+    "booking": "Fowo si",
+    "bookedOwner": "Ti fowo si - iwọ ni oniwun iṣiṣẹ",
+    "notBooked": "Ko fowo si",
+    "sharedAfterBooking": "Pipin lẹhin fowo si",
+    "accept": "Gba Ifiranṣẹ",
+    "confirmBooking": "Jẹrisi Fowo si",
+    "reject": "Kọ Ififunni",
+    "rejectReasonLabel": "Idi fun kọ (ti o han si alabaṣepọ) *",
+    "rejectConfirm": "Kọ",
+    "confirmBookingPrompt": "Jẹrisi ifiṣura naa? Nini iṣiṣẹ n gbe si ọdọ rẹ ati pe alabaṣepọ di ẹtọ fun igbimọ.",
+    "notice": {
+      "booked": "Fowo si timo.",
+      "accepted": "Ifiranṣẹ ti gba.",
+      "rejected": "Itọkasi kọ."
+    },
+    "backToReferrals": "Pada si Awọn Itọkasi"
+  },
+  "history": {
+    "title": "Itan",
+    "actor": {
+      "system": "Eto",
+      "partner": "Alabaṣepọ ikanni",
+      "admin": "Alakoso Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Iforukọsilẹ alabaṣepọ ti gba",
+      "DUPLICATE_CHECK_COMPLETED": "Ayẹwo ẹda-ẹda ti pari - ko si ẹda ti nṣiṣe lọwọ ti a rii",
+      "REGISTRATION_ACCEPTED": "Iforukọsilẹ gba",
+      "PROTECTION_GRANTED_other": "{{count}} -ọjọ aabo funni",
+      "STAGE_UPDATED": "Ipo ti ni imudojuiwọn si {{stage}}",
+      "LEAD_DETAILS_UPDATED_other": "Ti ṣe imudojuiwọn awọn aaye {{count}}",
+      "LEAD_ASSIGNED": "Ti a yàn si {{name}}",
+      "LEAD_UNASSIGNED": "Ti ko ni ipin",
+      "REFERRAL_ACCEPTED": "Akole gba itọkasi naa",
+      "REFERRAL_REJECTED": "Akole kọ itọkasi naa. Idi: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Igbiyanju iforukọsilẹ ẹda ẹda nipasẹ {{partner}} kọ",
+      "BOOKING_COMPLETED": "Ifiweranṣẹ ti pari",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Nini iṣiṣẹ gbe lọ si Akole",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Ipinsi alabaṣepọ ni ipamọ",
+      "COMMISSION_ELIGIBILITY_CREATED": "Yiyẹ ni Commission da",
+      "HANDOVER_COMPLETED": "Ifiweranṣẹ ti pari",
+      "ADMIN_PROTECTION_RELEASED": "Admin tu idabobo ẹda-ẹda silẹ ni kutukutu. Idi: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Abojuto tun yan iforukọsilẹ lati {{from}} si {{to}} . Idi: {{reason}}"
+    }
+  }
+}

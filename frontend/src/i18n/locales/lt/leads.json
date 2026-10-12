@@ -1,0 +1,192 @@
+{
+  "list": {
+    "title": "Mano vedėjai",
+    "signedInAs": "Prisijungta kaip {{name}} ( {{partnerId}} ) · kartų rodoma {{timezone}}",
+    "addLead": "+ Pridėti švino",
+    "tabs": {
+      "all": "Visi ( {{count}} )",
+      "pending": "Laukiama ( {{count}} )",
+      "booked": "Užsakyta ( {{count}} )"
+    },
+    "searchPlaceholder": "Ieškokite pagal vardą, mobilųjį telefoną arba registracijos ID ...",
+    "manageColumns": "Tvarkyti stulpelius",
+    "rowsPerPage": "Eilučių puslapyje",
+    "registrationId": "Registracijos ID",
+    "emptyState": "Dar nėra potencialių klientų – užregistruokite pirmąjį.",
+    "noMatch": "Šiuos filtrus atitinkančių klientų nėra.",
+    "showing": "Rodoma {{from}} - {{to}} iš {{total}} įrašų",
+    "actions": {
+      "preview": "Peržiūra ir greitas atnaujinimas",
+      "history": "Istorija",
+      "email": "El. paštas",
+      "whatsapp": "WhatsApp",
+      "call": "Skambinti"
+    },
+    "pagination": {
+      "first": "Pirmas puslapis",
+      "previous": "Ankstesnis puslapis",
+      "next": "Kitas puslapis",
+      "last": "Paskutinis puslapis"
+    }
+  },
+  "columns": {
+    "status": "Būsena",
+    "assignTo": "Priskirti",
+    "booked": "Užsakyta",
+    "protectionUntil": "Apsauga Iki"
+  },
+  "booking": {
+    "booked": "Užsakyta",
+    "pending": "Laukiama"
+  },
+  "assign": {
+    "unassigned": "Nepriskirta",
+    "owner": "{{name}} (savininkas)",
+    "inactive": "{{name}} (neaktyvus)",
+    "unknownUser": "Nežinomas vartotojas",
+    "assignedTo": "Priskirta {{name}}"
+  },
+  "form": {
+    "addTitle": "Pridėti švino",
+    "editTitle": "Redaguoti pagrindinį klientą",
+    "noPermissionAdd": "Neturite leidimo registruoti potencialių klientų.",
+    "noPermissionEdit": "Neturite leidimo redaguoti potencialių klientų.",
+    "selectPlaceholder": "Pasirinkite...",
+    "commaSeparated": "Atskirtas kableliu",
+    "phonePlaceholder": "Telefono numeris",
+    "countryCode": "Šalies kodas"
+  },
+  "project": {
+    "none": "Projekto dar nėra (nereikalaujama)",
+    "notInList": "{{project}} (projektų sąraše nėra)"
+  },
+  "journey": {
+    "customer": "Klientas",
+    "currentOwner": "Dabartinis savininkas",
+    "protectionExpiry": "Apsaugos galiojimo laikas",
+    "leadStatus": "Vadovo būsena",
+    "scheduled": "Suplanuota",
+    "assignedTo": "Priskirta",
+    "referral": "Rekomendacija",
+    "builderReason": "Kūrėjo priežastis: {{reason}}",
+    "bookedHint": "Užsakyta statytojo – eksploatacinė nuosavybė perėjo statytojui; Jūsų priskyrimo ir komisinių teisės išsaugomos.",
+    "notBookedHint": "Užsakymus patvirtina statytojas, priėmęs siuntimą.",
+    "quickUpdate": "Greitas atnaujinimas",
+    "leadDetails": "Švino detalės",
+    "progressHistory": "Pažangos istorija",
+    "timesIn": "(laikai {{timezone}} )",
+    "backToMyLeads": "Grįžti į „Mano lyderiai“.",
+    "editLead": "Redaguoti pagrindinį klientą"
+  },
+  "referral": {
+    "NOT_REFERRED": "Nenurodyta (nėra projekto)",
+    "PENDING_BUILDER": "Laukiam statybininko",
+    "ACCEPTED": "Priimta statybininko",
+    "REJECTED": "Atmetė statybininkas"
+  },
+  "preview": {
+    "ariaLabel": "Potencialo peržiūra",
+    "title": "Galimybės peržiūra",
+    "source": "Šaltinis",
+    "location": "Vieta",
+    "scheduled": "Suplanuota",
+    "registered": "Registruotas",
+    "latestNote": "Naujausia pastaba",
+    "quickUpdate": "Greitas atnaujinimas",
+    "fullDetails": "Išsami informacija",
+    "editLead": "Redaguoti pagrindinį klientą",
+    "history": "Istorija"
+  },
+  "quick": {
+    "assignedTo": "Priskirta",
+    "status": "Būsena",
+    "subStatus": "Substatusas",
+    "selectSubStatus": "Pasirinkite antrinę būseną...",
+    "none": "Nėra",
+    "scheduledAt": "Planuojama val",
+    "localTime": "vietos laiku",
+    "note": "Pastaba",
+    "notePlaceholder": "Kas nutiko šio skambučio / apsilankymo metu? (neprivaloma)",
+    "updateStatus": "Atnaujinti būseną",
+    "statusUpdated": "Būsena atnaujinta",
+    "bookedLocked": "Šis potencialus klientas yra rezervuotas – jo būsenos keisti nebegalima.",
+    "viewOnly": "Galite peržiūrėti šį potencialų klientą, bet jūsų vaidmuo negali jo atnaujinti."
+  },
+  "history": {
+    "title": "Istorija – {{registrationId}}",
+    "tabs": {
+      "all": "Visi",
+      "status": "Būsena",
+      "assignment": "Užduotis",
+      "notes": "Pastabos"
+    },
+    "doneBy": "Padarė {{actor}}",
+    "system": "Sistema",
+    "platforms": {
+      "System": "Sistema",
+      "External": "Išorinis",
+      "Web": "Žiniatinklis",
+      "Mobile": "Mobilusis"
+    },
+    "added": "pridėta",
+    "updated": "atnaujinta",
+    "empty": "(tuščia)",
+    "noHistory": "Šioje kategorijoje dar nėra istorijos.",
+    "fieldLabels": {
+      "stage": "Būsena",
+      "subStatus": "Substatusas",
+      "scheduledAt": "Tvarkaraštis",
+      "notes": "Pastabos",
+      "assignedTo": "Priskirta"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Gauta partnerio registracija",
+      "DUPLICATE_CHECK_COMPLETED": "Pasikartojimo patikrinimas baigtas – aktyvaus dublikato nerasta",
+      "REGISTRATION_ACCEPTED": "Registracija priimta",
+      "PROTECTION_GRANTED_one": "Suteikta {{count}} d. apsauga",
+      "PROTECTION_GRANTED_few": "Suteikta {{count}} d. apsauga",
+      "PROTECTION_GRANTED_many": "Suteikta {{count}} d. apsauga",
+      "PROTECTION_GRANTED_other": "Suteikta {{count}} d. apsauga",
+      "REGISTRATION_ATTEMPT_REJECTED": "Pasikartojantis {{partnerId}} bandymas registruotis atmestas",
+      "LEAD_DETAILS_UPDATED_one": "Atnaujintas {{count}} laukas",
+      "LEAD_DETAILS_UPDATED_few": "Atnaujinti laukai: {{count}}",
+      "LEAD_DETAILS_UPDATED_many": "Atnaujinti laukai: {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "Atnaujinti laukai: {{count}}",
+      "STAGE_UPDATED": "Būsena atnaujinta į {{status}}",
+      "LEAD_ASSIGNED": "Priskirta {{name}}",
+      "LEAD_UNASSIGNED": "Nepriskirta",
+      "BOOKING_COMPLETED": "Užsakymas baigtas",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Eksploatacinė nuosavybė perduota „Builder“.",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partnerio priskyrimas išsaugotas",
+      "COMMISSION_ELIGIBILITY_CREATED": "Sukurtas Komisijos tinkamumas",
+      "HANDOVER_COMPLETED": "Perdavimas baigtas",
+      "REFERRAL_ACCEPTED": "Statybininkas priėmė siuntimą",
+      "REFERRAL_REJECTED": "Statybininkas atmetė kreipimąsi. Priežastis: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Administratorius anksti išleido pasikartojančią apsaugą. Priežastis: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Administratorius perskyrė registraciją iš {{from}} į {{to}} . Priežastis: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Tvarkyti stulpelius",
+    "hint": "Vilkite, kad pertvarkytumėte · pažymėkite, kad būtų rodomas",
+    "showAll": "Rodyti viską",
+    "resetDefault": "Atstatyti į numatytuosius"
+  },
+  "filters": {
+    "title": "Filtrai",
+    "allProjects": "Visi projektai",
+    "any": "Bet koks",
+    "noFields": "Kiti filtruojami laukai dar neįjungti (Nustatymai > Potencialus klientas).",
+    "clearAll": "Išvalyti viską"
+  },
+  "phone": {
+    "MISSING": "Reikalingas telefono numeris.",
+    "INVALID": "Įveskite galiojantį telefono numerį.",
+    "TOO_SHORT": "Telefono numeris per trumpas.",
+    "TOO_LONG": "Telefono numeris per ilgas.",
+    "INVALID_FOR_COUNTRY": "Šis telefono numeris negalioja {{country}} .",
+    "COUNTRY_MISMATCH": "Pasirinkite teisingą šalies kodą.",
+    "NOT_MOBILE": "Įveskite ne fiksuotojo, o mobiliojo telefono numerį."
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Aking Mga Lead",
+    "signedInAs": "Naka-sign in bilang {{name}} ( {{partnerId}} ) · mga beses na ipinakita sa {{timezone}}",
+    "addLead": "+ Magdagdag ng Lead",
+    "tabs": {
+      "all": "Lahat ( {{count}} )",
+      "pending": "Nakabinbin ( {{count}} )",
+      "booked": "Na-book ( {{count}} )"
+    },
+    "searchPlaceholder": "Maghanap ayon sa pangalan, mobile, o registration ID ...",
+    "manageColumns": "Pamahalaan ang Mga Column",
+    "rowsPerPage": "Mga hilera bawat pahina",
+    "registrationId": "Registration ID",
+    "emptyState": "Wala pang mga lead - irehistro ang iyong una.",
+    "noMatch": "Walang mga lead na tumutugma sa mga filter na ito.",
+    "showing": "Ipinapakita ang {{from}} - {{to}} ng {{total}} na mga entry",
+    "actions": {
+      "preview": "I-preview at mabilis na pag-update",
+      "history": "Kasaysayan",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Tumawag"
+    },
+    "pagination": {
+      "first": "Unang pahina",
+      "previous": "Nakaraang pahina",
+      "next": "Susunod na pahina",
+      "last": "Huling pahina"
+    }
+  },
+  "columns": {
+    "status": "Katayuan",
+    "assignTo": "Italaga Kay",
+    "booked": "Naka-book",
+    "protectionUntil": "Proteksyon Hanggang"
+  },
+  "booking": {
+    "booked": "Naka-book",
+    "pending": "Nakabinbin"
+  },
+  "assign": {
+    "unassigned": "Hindi nakatalaga",
+    "owner": "{{name}} (May-ari)",
+    "inactive": "{{name}} (hindi aktibo)",
+    "unknownUser": "Hindi kilalang user",
+    "assignedTo": "Nakatalaga kay {{name}}"
+  },
+  "form": {
+    "addTitle": "Magdagdag ng Lead",
+    "editTitle": "I-edit ang Lead",
+    "noPermissionAdd": "Wala kang pahintulot na magrehistro ng mga lead.",
+    "noPermissionEdit": "Wala kang pahintulot na mag-edit ng mga lead.",
+    "selectPlaceholder": "Pumili...",
+    "commaSeparated": "Pinaghiwalay ng kuwit",
+    "phonePlaceholder": "Numero ng telepono",
+    "countryCode": "Code ng bansa"
+  },
+  "project": {
+    "none": "Wala pang proyekto (hindi tinutukoy)",
+    "notInList": "{{project}} (wala sa listahan ng proyekto)"
+  },
+  "journey": {
+    "customer": "Customer",
+    "currentOwner": "Kasalukuyang May-ari",
+    "protectionExpiry": "Pag-expire ng Proteksyon",
+    "leadStatus": "Katayuan ng lead",
+    "scheduled": "Naka-iskedyul",
+    "assignedTo": "Nakatalaga kay",
+    "referral": "Referral",
+    "builderReason": "Dahilan ng Builder: {{reason}}",
+    "bookedHint": "Na-book ng tagabuo - ang pagmamay-ari ng pagpapatakbo ay inilipat sa tagabuo; ang iyong pagpapatungkol at pagiging karapat-dapat sa komisyon ay pinananatili.",
+    "notBookedHint": "Ang mga booking ay kinumpirma ng tagabuo kapag tinanggap nila ang referral.",
+    "quickUpdate": "Mabilis na Update",
+    "leadDetails": "Mga Detalye ng Lead",
+    "progressHistory": "Kasaysayan ng Pag-unlad",
+    "timesIn": "(mga oras sa {{timezone}} )",
+    "backToMyLeads": "Bumalik sa Aking Mga Lead",
+    "editLead": "I-edit ang Lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "Hindi isinangguni (walang proyekto)",
+    "PENDING_BUILDER": "Naghihintay para sa builder",
+    "ACCEPTED": "Tinanggap ng tagabuo",
+    "REJECTED": "Tinanggihan ng tagabuo"
+  },
+  "preview": {
+    "ariaLabel": "Preview ng lead",
+    "title": "Preview ng lead",
+    "source": "Pinagmulan",
+    "location": "Lokasyon",
+    "scheduled": "Naka-iskedyul",
+    "registered": "Nakarehistro",
+    "latestNote": "Pinakabagong Tala",
+    "quickUpdate": "Mabilis na Update",
+    "fullDetails": "Buong Detalye",
+    "editLead": "I-edit ang Lead",
+    "history": "Kasaysayan"
+  },
+  "quick": {
+    "assignedTo": "Nakatalaga kay",
+    "status": "Katayuan",
+    "subStatus": "Sub-Status",
+    "selectSubStatus": "Pumili ng sub-status...",
+    "none": "wala",
+    "scheduledAt": "Naka-iskedyul sa",
+    "localTime": "lokal na oras",
+    "note": "Tandaan",
+    "notePlaceholder": "Ano ang nangyari sa tawag / pagbisita na ito? (opsyonal)",
+    "updateStatus": "I-update ang Katayuan",
+    "statusUpdated": "Na-update ang status",
+    "bookedLocked": "Naka-book ang lead na ito - hindi na mababago ang status nito.",
+    "viewOnly": "Maaari mong tingnan ang lead na ito, ngunit hindi ito maa-update ng iyong tungkulin."
+  },
+  "history": {
+    "title": "Kasaysayan - {{registrationId}}",
+    "tabs": {
+      "all": "Lahat",
+      "status": "Katayuan",
+      "assignment": "Takdang-aralin",
+      "notes": "Mga Tala"
+    },
+    "doneBy": "Ginawa ni {{actor}}",
+    "system": "Sistema",
+    "platforms": {
+      "System": "Sistema",
+      "External": "Panlabas",
+      "Web": "Web",
+      "Mobile": "Mobile"
+    },
+    "added": "idinagdag",
+    "updated": "na-update",
+    "empty": "(walang laman)",
+    "noHistory": "Wala pang kasaysayan sa kategoryang ito.",
+    "fieldLabels": {
+      "stage": "Katayuan",
+      "subStatus": "Sub-Status",
+      "scheduledAt": "Iskedyul",
+      "notes": "Mga Tala",
+      "assignedTo": "Nakatalaga kay"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Natanggap ang pagpaparehistro ng kasosyo",
+      "DUPLICATE_CHECK_COMPLETED": "Nakumpleto ang duplicate na pagsusuri - walang nakitang aktibong duplicate",
+      "REGISTRATION_ACCEPTED": "Tinanggap ang pagpaparehistro",
+      "PROTECTION_GRANTED_one": "{{count}} -araw na proteksyon ang ibinigay",
+      "PROTECTION_GRANTED_other": "{{count}} -araw na proteksyon ang ibinigay",
+      "REGISTRATION_ATTEMPT_REJECTED": "Tinanggihan ang dobleng pagtatangka sa pagpaparehistro ng {{partnerId}}",
+      "LEAD_DETAILS_UPDATED_one": "Na-update ang {{count}} na field",
+      "LEAD_DETAILS_UPDATED_other": "Na-update {{count}} na mga field",
+      "STAGE_UPDATED": "Na-update ang status sa {{status}}",
+      "LEAD_ASSIGNED": "Nakatalaga kay {{name}}",
+      "LEAD_UNASSIGNED": "Hindi nakatalaga",
+      "BOOKING_COMPLETED": "Nakumpleto ang booking",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Ang pagmamay-ari ng pagpapatakbo ay inilipat sa Tagabuo",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Napanatili ang pagpapatungkol ng kasosyo",
+      "COMMISSION_ELIGIBILITY_CREATED": "Nalikha ang pagiging karapat-dapat sa komisyon",
+      "HANDOVER_COMPLETED": "Nakumpleto ang handover",
+      "REFERRAL_ACCEPTED": "Tinanggap ng Builder ang referral",
+      "REFERRAL_REJECTED": "Tinanggihan ng Builder ang referral. Dahilan: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Maagang naglabas ng duplicate na proteksyon ang admin. Dahilan: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Muling itinalaga ng admin ang pagpaparehistro mula {{from}} hanggang {{to}} . Dahilan: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Pamahalaan ang Mga Column",
+    "hint": "I-drag upang muling ayusin · lagyan ng check upang ipakita",
+    "showAll": "Ipakita ang Lahat",
+    "resetDefault": "I-reset sa Default"
+  },
+  "filters": {
+    "title": "Mga filter",
+    "allProjects": "Lahat ng proyekto",
+    "any": "Anuman",
+    "noFields": "Wala pang ibang na-filter na field ang naka-enable (Mga Setting > Lead).",
+    "clearAll": "I-clear ang Lahat"
+  },
+  "phone": {
+    "MISSING": "Kinakailangan ang numero ng telepono.",
+    "INVALID": "Mangyaring magpasok ng wastong numero ng telepono.",
+    "TOO_SHORT": "Masyadong maikli ang numero ng telepono.",
+    "TOO_LONG": "Masyadong mahaba ang numero ng telepono.",
+    "INVALID_FOR_COUNTRY": "Ang numero ng teleponong ito ay hindi wasto para sa {{country}} .",
+    "COUNTRY_MISMATCH": "Pakipili ang tamang country code.",
+    "NOT_MOBILE": "Mangyaring maglagay ng mobile number, hindi landline."
+  }
+}

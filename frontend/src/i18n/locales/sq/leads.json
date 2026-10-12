@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Drejtimet e mia",
+    "signedInAs": "Identifikuar si {{name}} ( {{partnerId}} ) · herë të shfaqura në {{timezone}}",
+    "addLead": "+ Shto plumb",
+    "tabs": {
+      "all": "Të gjitha ( {{count}} )",
+      "pending": "Në pritje ( {{count}} )",
+      "booked": "Rezervuar ( {{count}} )"
+    },
+    "searchPlaceholder": "Kërko sipas emrit, celularit ose ID së së regjistrimit...",
+    "manageColumns": "Menaxho kolonat",
+    "rowsPerPage": "Rreshtat për faqe",
+    "registrationId": "ID e regjistrimit",
+    "emptyState": "Nuk ka ende të dhëna - regjistrojeni të parën.",
+    "noMatch": "Asnjë lidhje nuk përputhet me këto filtra.",
+    "showing": "Po shfaqen {{from}} - {{to}} nga {{total}} hyrje",
+    "actions": {
+      "preview": "Parapamje dhe përditësim i shpejtë",
+      "history": "Historia",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Thirrni"
+    },
+    "pagination": {
+      "first": "Faqja e parë",
+      "previous": "Faqja e mëparshme",
+      "next": "Faqja tjetër",
+      "last": "Faqja e fundit"
+    }
+  },
+  "columns": {
+    "status": "Statusi",
+    "assignTo": "Cakto Për",
+    "booked": "Rezervuar",
+    "protectionUntil": "Mbrojtja Deri në"
+  },
+  "booking": {
+    "booked": "Rezervuar",
+    "pending": "Në pritje"
+  },
+  "assign": {
+    "unassigned": "E pacaktuar",
+    "owner": "{{name}} (Pronar)",
+    "inactive": "{{name}} (joaktive)",
+    "unknownUser": "Përdorues i panjohur",
+    "assignedTo": "Caktuar për {{name}}"
+  },
+  "form": {
+    "addTitle": "Shto plumb",
+    "editTitle": "Edit Lead",
+    "noPermissionAdd": "Ju nuk keni leje për të regjistruar drejtuesit.",
+    "noPermissionEdit": "Ju nuk keni leje për të modifikuar drejtimet.",
+    "selectPlaceholder": "Zgjidh...",
+    "commaSeparated": "Presja e ndarë",
+    "phonePlaceholder": "Numri i telefonit",
+    "countryCode": "Kodi i shtetit"
+  },
+  "project": {
+    "none": "Asnjë projekt ende (nuk është referuar)",
+    "notInList": "{{project}} (jo në listën e projekteve)"
+  },
+  "journey": {
+    "customer": "Klienti",
+    "currentOwner": "Pronari aktual",
+    "protectionExpiry": "Skadimi i mbrojtjes",
+    "leadStatus": "Statusi i drejtuesit",
+    "scheduled": "I planifikuar",
+    "assignedTo": "Caktuar për",
+    "referral": "Referimi",
+    "builderReason": "Arsyeja e ndërtuesit: {{reason}}",
+    "bookedHint": "Rezervuar nga ndërtuesi - pronësia operative ka kaluar te ndërtuesi; atribuimi juaj dhe kualifikimi i komisionit mbahen.",
+    "notBookedHint": "Rezervimet konfirmohen nga ndërtuesi pasi të pranojnë referimin.",
+    "quickUpdate": "Përditësim i shpejtë",
+    "leadDetails": "Detajet e Plumbit",
+    "progressHistory": "Historia e Progresit",
+    "timesIn": "(herë në {{timezone}} )",
+    "backToMyLeads": "Kthehu te Klientët e Mi",
+    "editLead": "Edit Lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "Nuk është referuar (pa projekt)",
+    "PENDING_BUILDER": "Në pritje të ndërtuesit",
+    "ACCEPTED": "Pranuar nga ndërtuesi",
+    "REJECTED": "Refuzuar nga ndërtuesi"
+  },
+  "preview": {
+    "ariaLabel": "Pamja paraprake e drejtimit",
+    "title": "Pamja paraprake e plumbit",
+    "source": "Burimi",
+    "location": "Vendndodhja",
+    "scheduled": "I planifikuar",
+    "registered": "I regjistruar",
+    "latestNote": "Shënimi i fundit",
+    "quickUpdate": "Përditësim i shpejtë",
+    "fullDetails": "Detajet e plota",
+    "editLead": "Edit Lead",
+    "history": "Historia"
+  },
+  "quick": {
+    "assignedTo": "Caktuar për",
+    "status": "Statusi",
+    "subStatus": "Nën-Statusi",
+    "selectSubStatus": "Zgjidh nënstatusin...",
+    "none": "Asnjë",
+    "scheduledAt": "Planifikuar në",
+    "localTime": "koha lokale",
+    "note": "Shënim",
+    "notePlaceholder": "Çfarë ndodhi në këtë telefonatë/vizitë? (opsionale)",
+    "updateStatus": "Përditëso statusin",
+    "statusUpdated": "Statusi u përditësua",
+    "bookedLocked": "Ky drejtim është i rezervuar - statusi i tij nuk mund të ndryshohet më.",
+    "viewOnly": "Mund ta shikosh këtë drejtim, por roli yt nuk mund ta përditësojë atë."
+  },
+  "history": {
+    "title": "Historia - {{registrationId}}",
+    "tabs": {
+      "all": "Të gjitha",
+      "status": "Statusi",
+      "assignment": "Detyrë",
+      "notes": "Shënime"
+    },
+    "doneBy": "Bërë nga {{actor}}",
+    "system": "Sistemi",
+    "platforms": {
+      "System": "Sistemi",
+      "External": "E jashtme",
+      "Web": "Web",
+      "Mobile": "Celular"
+    },
+    "added": "shtuar",
+    "updated": "përditësuar",
+    "empty": "(bosh)",
+    "noHistory": "Ende nuk ka histori në këtë kategori.",
+    "fieldLabels": {
+      "stage": "Statusi",
+      "subStatus": "Nën-Statusi",
+      "scheduledAt": "Orari",
+      "notes": "Shënime",
+      "assignedTo": "Caktuar për"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Regjistrimi i partnerit u mor",
+      "DUPLICATE_CHECK_COMPLETED": "Kontrolli i kopjimit përfundoi - nuk u gjet asnjë kopje aktive",
+      "REGISTRATION_ACCEPTED": "Regjistrimi pranohet",
+      "PROTECTION_GRANTED_one": "{{count}} -mbrojtje ditore e dhënë",
+      "PROTECTION_GRANTED_other": "{{count}} -mbrojtje ditore e dhënë",
+      "REGISTRATION_ATTEMPT_REJECTED": "Përpjekja e dyfishtë e regjistrimit nga {{partnerId}} u refuzua",
+      "LEAD_DETAILS_UPDATED_one": "Fusha {{count}} u përditësua",
+      "LEAD_DETAILS_UPDATED_other": "U përditësuan {{count}} fusha",
+      "STAGE_UPDATED": "Statusi u përditësua në {{status}}",
+      "LEAD_ASSIGNED": "Caktuar për {{name}}",
+      "LEAD_UNASSIGNED": "E pacaktuar",
+      "BOOKING_COMPLETED": "Rezervimi përfundoi",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Pronësia operative i transferohet Ndërtuesit",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atributi i partnerit është ruajtur",
+      "COMMISSION_ELIGIBILITY_CREATED": "Përshtatshmëria e komisionit u krijua",
+      "HANDOVER_COMPLETED": "Dorëzimi përfundoi",
+      "REFERRAL_ACCEPTED": "Ndërtuesi pranoi referimin",
+      "REFERRAL_REJECTED": "Ndërtuesi e refuzoi referimin. Arsyeja: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Administratori lëshoi ​​herët mbrojtjen e dyfishtë. Arsyeja: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Administratori ricaktoi regjistrimin nga {{from}} në {{to}} . Arsyeja: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Menaxho kolonat",
+    "hint": "Zvarrit për ta rirenditur · kontrollo për të shfaqur",
+    "showAll": "Shfaq të gjitha",
+    "resetDefault": "Rivendos në Parazgjedhje"
+  },
+  "filters": {
+    "title": "Filtrat",
+    "allProjects": "Të gjitha projektet",
+    "any": "Çdo",
+    "noFields": "Nuk janë aktivizuar ende fusha të tjera të filtrueshme (Cilësimet > Lead).",
+    "clearAll": "Pastro të gjitha"
+  },
+  "phone": {
+    "MISSING": "Kërkohet numri i telefonit.",
+    "INVALID": "Fut një numër telefoni të vlefshëm.",
+    "TOO_SHORT": "Numri i telefonit është shumë i shkurtër.",
+    "TOO_LONG": "Numri i telefonit është shumë i gjatë.",
+    "INVALID_FOR_COUNTRY": "Ky numër telefoni nuk është i vlefshëm për {{country}} .",
+    "COUNTRY_MISMATCH": "Ju lutemi zgjidhni kodin e duhur të shtetit.",
+    "NOT_MOBILE": "Ju lutemi shkruani një numër celular, jo një telefon fiks."
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Builder Portal",
+    "referrals": "Παραπομπές",
+    "builderLogin": "Είσοδος οικοδόμου",
+    "partnerLogin": "Είσοδος συνεργάτη καναλιού"
+  },
+  "login": {
+    "title": "Είσοδος οικοδόμου",
+    "hint": "Οι λογαριασμοί Builder δημιουργούνται από Leadrat . Ρωτήστε τον διαχειριστή σας εάν δεν έχετε."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Περιμένοντας την απόφασή σας",
+    "ACCEPTED": "Δεκτός",
+    "REJECTED": "Απορρίφθηκε"
+  },
+  "list": {
+    "title": "Παραπομπές",
+    "allProjects": "Όλα τα έργα",
+    "allStatuses": "Όλες οι καταστάσεις",
+    "count_one": "{{count}} παραπομπή",
+    "count_other": "{{count}} παραπομπές",
+    "columns": {
+      "referral": "Παραπομπή",
+      "customer": "Πελάτης",
+      "project": "Σχέδιο",
+      "sourcePartner": "Πηγή Συνεργάτης",
+      "status": "Κατάσταση",
+      "booking": "Εγγραφή",
+      "registered": "Εγγεγραμμένος"
+    },
+    "booked": "Κράτηση",
+    "empty": "Δεν υπάρχουν ακόμη παραπομπές."
+  },
+  "detail": {
+    "customer": "Πελάτης",
+    "sourcePartner": "Πηγή Συνεργάτης",
+    "attributionNote": "(αναφορά - δεν μπορεί να αλλάξει)",
+    "leadStatus": "Κατάσταση δυνητικού πελάτη",
+    "protectedUntil": "Προστατεύεται μέχρι",
+    "referral": "Παραπομπή",
+    "reason": "Αιτία: {{reason}}",
+    "booking": "Εγγραφή",
+    "bookedOwner": "Έγινε κράτηση - είστε ο επιχειρησιακός ιδιοκτήτης",
+    "notBooked": "Δεν έχει γίνει κράτηση",
+    "sharedAfterBooking": "Κοινή χρήση μετά την κράτηση",
+    "accept": "Αποδοχή παραπομπής",
+    "confirmBooking": "Επιβεβαίωση κράτησης",
+    "reject": "Απόρριψη παραπομπής",
+    "rejectReasonLabel": "Λόγος απόρριψης (εμφανίζεται στον συνεργάτη) *",
+    "rejectConfirm": "Απορρίπτω",
+    "confirmBookingPrompt": "Επιβεβαίωση της κράτησης; Η λειτουργική ιδιοκτησία μεταφέρεται σε εσάς και ο συνεργάτης γίνεται κατάλληλος για προμήθεια.",
+    "notice": {
+      "booked": "Η κράτηση επιβεβαιώθηκε.",
+      "accepted": "Η παραπομπή έγινε δεκτή.",
+      "rejected": "Η παραπομπή απορρίφθηκε."
+    },
+    "backToReferrals": "Επιστροφή στις Παραπομπές"
+  },
+  "history": {
+    "title": "Ιστορία",
+    "actor": {
+      "system": "Σύστημα",
+      "partner": "Συνεργάτης καναλιού",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Η εγγραφή συνεργάτη ελήφθη",
+      "DUPLICATE_CHECK_COMPLETED": "Ο διπλότυπος έλεγχος ολοκληρώθηκε - δεν βρέθηκε ενεργό αντίγραφο",
+      "REGISTRATION_ACCEPTED": "Εγγραφή δεκτή",
+      "PROTECTION_GRANTED_one": "{{count}} -χορηγήθηκε προστασία ημέρας",
+      "PROTECTION_GRANTED_other": "{{count}} -χορηγήθηκε προστασία ημέρας",
+      "STAGE_UPDATED": "Η κατάσταση ενημερώθηκε σε {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Ενημερώθηκε το πεδίο {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "Ενημερώθηκαν {{count}} πεδία",
+      "LEAD_ASSIGNED": "Ανατέθηκε σε {{name}}",
+      "LEAD_UNASSIGNED": "Χωρίς ανάθεση",
+      "REFERRAL_ACCEPTED": "Ο οικοδόμος αποδέχτηκε την παραπομπή",
+      "REFERRAL_REJECTED": "Ο οικοδόμος απέρριψε την παραπομπή. Αιτία: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Απορρίφθηκε διπλή προσπάθεια εγγραφής από τον {{partner}}",
+      "BOOKING_COMPLETED": "Η κράτηση ολοκληρώθηκε",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Η επιχειρησιακή ιδιοκτησία μεταβιβάστηκε στον Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Η απόδοση συνεργάτη διατηρήθηκε",
+      "COMMISSION_ELIGIBILITY_CREATED": "Δημιουργήθηκε η επιλεξιμότητα της Επιτροπής",
+      "HANDOVER_COMPLETED": "Ολοκληρώθηκε η παράδοση",
+      "ADMIN_PROTECTION_RELEASED": "Ο διαχειριστής κυκλοφόρησε νωρίς την διπλή προστασία. Αιτία: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Ο διαχειριστής έκανε εκ νέου εγγραφή από {{from}} σε {{to}} . Αιτία: {{reason}}"
+    }
+  }
+}

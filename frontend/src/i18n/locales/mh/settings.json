@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Jekjek ko",
+    "noPermission": "Ejelok am maroñ ñan lale men ko."
+  },
+  "categories": {
+    "lead": "Tōl",
+    "user": "Rijerbal",
+    "integrations": "Kobaik"
+  },
+  "leadTabs": {
+    "fields": "Jikin kallib ko",
+    "statuses": "Jekjek ko & Jekjek ko reddik",
+    "notifications": "Kōjjelā ko im Rikōllaajrak ko"
+  },
+  "fields": {
+    "leadIntro": "Kōmmane lead capture form eo: kōtlok/kōtlok field ko, kakōlkōl er bwe rej aikuj, ak kobaik field ko am make.",
+    "userIntro": "Kōmmane Add/Edit Team Member form eo: kōtlok/kōtlok field ko, kakōl er rej aikuj, ak kobaik field ko am make.",
+    "addCustomField": "+ Kobaik Custom Field",
+    "fieldLabel": "Field Label",
+    "group": "Kumi",
+    "groupPlaceholderLead": "eg Inquiry Info",
+    "groupPlaceholderUser": "eg Meļeļe ko jet",
+    "dataType": "Kain melele",
+    "options": "Kālet ko (comma kōjepel)",
+    "requiredLead": "Ej aikuj - ro mōttam ilo tiim eo am rej aikuj kadedelok men in ñan register juon lead",
+    "requiredUser": "Aikuj - aikuj in kobrak ñe kwoj kobaik juon uwaan tiim eo",
+    "creating": "Kōmmane...",
+    "createField": "Kōmmane Field",
+    "columns": {
+      "field": "Jikin",
+      "group": "Kumi",
+      "type": "Kain",
+      "required": "Mennin aikuj",
+      "enabled": "Emōj kōmmane",
+      "kind": "Kain"
+    },
+    "kind": {
+      "custom": "Kōjejjet",
+      "core": "Core (locked)",
+      "standard": "Joñan aikuj"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Taakij",
+    "TEXTAREA": "Text eo elap",
+    "NUMBER": "Nomba",
+    "CURRENCY": "Jāān",
+    "DATE": "Raan",
+    "SELECT": "Dropdown",
+    "LIST": "Laajrak"
+  },
+  "picker": {
+    "searchPlaceholder": "Kappukot jikin ko...",
+    "summary": "{{shown}} shown · {{mandatory}} mandatory",
+    "mandatory": "Mennin aikuj",
+    "noMatch": "Ejelok jikin ko rej errā."
+  },
+  "statuses": {
+    "intro": "Lead ko am im sub-status ko - ta eo kajjojo rej kajjitōk kake (juon raan im awa, lead field ko) ñe juon ej kōkāāl juon lead ñan e.",
+    "add": "+ Kobaik jekjek",
+    "columns": {
+      "order": "Kakien",
+      "status": "Jōñan",
+      "subStatuses": "Sub-Status ko",
+      "asksFor": "Kajjitōk kin",
+      "active": "Ejejjet kutien"
+    },
+    "moveUp": "Etal ñan lañ",
+    "moveDown": "Etal ñan laḷ",
+    "defaultBadge": "Default ñan lead ko rekãl",
+    "bookingBadge": "Jekjek in booking",
+    "asksForLabel": "Ej kajjitōk kin {{label}}",
+    "asksForDateTime": "Kajjitōk kin raan im awa",
+    "none": "Ejellok",
+    "dateTime": "Ran im awa",
+    "scheduledOn": "ilo {{names}}",
+    "fieldsSummary_one": "{{count}} field ( {{mandatory}} mandatory)",
+    "fieldsSummary_other": "{{count}} fields ( {{mandatory}} mandatory)",
+    "deleteConfirm": "Jolok joñan \" {{name}} \"? Men in ejjab maroñ in bar kōmmane.",
+    "editTitle": "Edit Status - {{name}}",
+    "newTitle": "Jekjek eo ekãl",
+    "name": "Etan jekjek",
+    "colour": "Kalor",
+    "active": "Ejejjet kutien",
+    "isDefault": "Jekjek eo ejimwe ñan lead ko rekãl",
+    "isBooking": "Jekjek in booking (kar kōmmane jen Complete Booking)",
+    "whenMoved": "Ñe juon lead ej etal ñan jekjek in",
+    "askSchedule": "Kajjitōk kin juon raan im awa (scheduler)",
+    "scheduleLabelPlaceholder": "Label, eg Visit at",
+    "fieldsToShow": "Lead field ko ñan kwalok ilo update form eo",
+    "subStatusesTitle": "Sub-Status ko",
+    "subStatusesHint": "Kajjojo sub-status emaron kajitok kin raan im ien eo an make im kobaik field ko an make - ej walok ion field ko an status eo ilõñ.",
+    "subStatusName": "Etan sub-status",
+    "subFields": "Fields ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Ran im awa, einwot Call bar ilo",
+    "addSubStatus": "+ Kobaik Sub-Status",
+    "saveStatus": "Kōjparok jekjek eo",
+    "createStatus": "Kōmmane Status"
+  },
+  "notifications": {
+    "intro": "Kōjjeļāik armej ro rejim̧we n̄e juon lead ej tōpar juon jekjek - m̧ōkaj, ak juon iien kar kōjjeļļā kake m̧okta/ālkin raan eo & iien eo kar kōjjeļļā kake.",
+    "add": "+ Kobaik Kōjjelā",
+    "columns": {
+      "notification": "Kōjjeļā",
+      "whenStatusIs": "Ñe Status ej",
+      "sends": "Ej jilkintok",
+      "to": "Ñan",
+      "via": "Ilo",
+      "enabled": "Emōj kōmmane"
+    },
+    "anyStatus": "Jabdewōt jekjek",
+    "anySubStatus": "Jabdewōt sub-status",
+    "inactiveOption": "{{name}} (jab jerbal)",
+    "emptyRules": "Ejelok kōjjelā ko kiõ - kobaik juon ñan kakkōl tiim eo am ñe juon lead ej tōpar juon joñan.",
+    "jobs": {
+      "title": "Kar kōllaajrake im jilkintok",
+      "firesAt": "Kijeek ilo",
+      "notification": "Kōjjeļā",
+      "lead": "Tōl",
+      "status": "Jōñan",
+      "details": "Tibdikin kōmelele ko",
+      "empty": "Ejelok men ko kar kōjjeļļā kaki ak jilkintok kiiō.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Kattar",
+      "PROCESSING": "Kōmman",
+      "SENT": "Jilkinlok",
+      "FAILED": "Emōj likjab",
+      "SKIPPED": "Kar jolok",
+      "CANCELLED": "Kar kanne"
+    },
+    "deliveryStatus": {
+      "SENT": "jilkinlok",
+      "FAILED": "emōj likjab",
+      "SKIPPED": "kar jolok"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ilo-app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Rijerbal eo kar lewoj",
+      "owner": "Oner",
+      "updatedBy": "Kar kōkāāl jen",
+      "role": "Jerbal: {{name}}"
+    },
+    "channels": {
+      "inApp": "Ilo-app",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Jolok melele \" {{name}} \"? Kakememej ko rej kōttar jen e rej kansela.",
+    "testPrompt": "Jilkintok juon mālijjon in kōjjelā in ñan kwe make (ilo app) ilo am kajerbal ta lead ID eo?",
+    "testSent": "Kar jilkintok ñan am bell: {{title}} {{message}}",
+    "headersInvalid": "Webhook header ko rej aikuj in jejjet JSON , einwot {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Kōkōmman kōjjela",
+    "newTitle": "Kōjjelā eo ekãl",
+    "name": "Etan",
+    "namePlaceholder": "eg Kakememej in loļo̧k jikin eo",
+    "whenStatus": "Ñe juon lead ej",
+    "subStatus": "Sub-status",
+    "send": "Jilkinlok (scheduler)",
+    "custom": "Kōjejjet...",
+    "modeBefore": "mokta jen ien eo kar karõke",
+    "modeAfter": "elikin ien eo emoj karõke",
+    "noScheduleWarning": "Status in ejjab kajjitōk kin juon raan im ien, innem juon \"mokta/ilo/elikin ien eo kar kōjjeļļā kake\" kōjjelā ejamin jerbal.",
+    "noScheduleFix": "Kōjerbal <strong>Kajjitōk kin juon raan im awa</strong> ñane iumin Status & Sub-Status ko, ak jilkintok Immediately.",
+    "sendTo": "Jilkinlok ñan (jabdewōt koba)",
+    "recipientAssigned": "Rijerbal eo kar jitōñ e (ri-lead eo)",
+    "recipientOwner": "Ri-kōmman akaun eo / ri-lale",
+    "recipientUpdatedBy": "Armej eo ear kōkāāl jekjek eo",
+    "everyoneWithRole": "Aolep armij ewōr aer jerbal",
+    "specificUsers": "Ro rej kajerbale (ej jerbal)",
+    "inactiveNever": "Rijerbal ro rejjab jerbal rejjab bōk melele ko, meñe kar kãlet ir.",
+    "deliverVia": "Lelok ikijen",
+    "channelInApp": "Ilo-app (bell)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS provider)",
+    "emailHint": "Email ej etal ñan email address eo an kajjojo ri bōk im ej aikuj SMTP eo ej bed ilo server eo (backend/.env); mae ien eo email ko rej jilkinlok rej bed einwot kar jolok.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Headers ( JSON )",
+    "content": "Men ko ilo kōjjelā",
+    "title": "Taitol",
+    "message": "Majej",
+    "insertIntoTitle": "Likūt ilo Taitōl",
+    "insertIntoMessage": "Likūt ilo ennaan",
+    "anyLeadField": "Jabdewōt lead field ej jerbal barāinwōt, āinwōt <code1>{{example1}}</code1> ak <code2>{{example2}}</code2> .",
+    "preview": "Preview (sample lead)",
+    "enabled": "Emōj kōmmane",
+    "saveRule": "Kōjparok kōjjeḷā eo",
+    "createRule": "Kōmman Kōjjela",
+    "variables": {
+      "customerName": "Etan lead",
+      "customerMobile": "Lead mobile",
+      "customerEmail": "Email eo ej tellok",
+      "registrationId": "Lead ID",
+      "status": "Jōñan",
+      "subStatus": "Sub-status",
+      "scheduleAt": "Ran eo im awa eo emoj karõke",
+      "assignedTo": "Rijerbal eo kar lewoj",
+      "updatedBy": "Kar kōkāāl jen",
+      "recipient": "Etan ri-bōk",
+      "project": "Burojeek",
+      "notes": "Noot eo ekãl tata",
+      "partner": "Etan ripālele eo"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Ilo ien eo wot ke ej bed ilo jekjek eo",
+      "AT": "Ilo ien eo emoj karõke",
+      "A1D": "1 raan elikin ien eo kar karõke (lale bar juon)"
+    },
+    "immediately": "Ien eo wōt",
+    "atScheduled": "Ilo ien eo emoj karõke",
+    "before": {
+      "MINUTES_one": "{{count}} minute mokta jen ien eo kar karõke",
+      "MINUTES_other": "{{count}} minit ko mokta jen ien eo kar karõke",
+      "HOURS_one": "{{count}} awa mokta jen ien eo kar karõke",
+      "HOURS_other": "{{count}} awa ko mokta jen ien eo kar karõke",
+      "DAYS_one": "{{count}} raan mokta jen ien eo kar karõke",
+      "DAYS_other": "{{count}} raan ko mokta jen ien eo kar karõke",
+      "WEEKS_one": "{{count}} week mokta jen ien eo kar karõke",
+      "WEEKS_other": "{{count}} wiik ko mokta jen ien eo kar karõke",
+      "MONTHS_one": "{{count}} allōñ mokta jen ien eo kar karõke",
+      "MONTHS_other": "{{count}} allōñ ko mokta jen ien eo kar karõke",
+      "YEARS_one": "{{count}} yio mokta jen ien eo kar karõke",
+      "YEARS_other": "{{count}} yio ko mokta jen ien eo kar karõke"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minute elikin ien eo kar karõke",
+      "MINUTES_other": "{{count}} minit ko elikin ien eo kar karõke",
+      "HOURS_one": "{{count}} awa elikin ien eo kar karõke",
+      "HOURS_other": "{{count}} awa ko elikin ien eo kar karõke",
+      "DAYS_one": "{{count}} raan elikin ien eo kar karõke",
+      "DAYS_other": "{{count}} raan ko elikin ien eo kar karõke",
+      "WEEKS_one": "{{count}} week elikin ien eo kar karõke",
+      "WEEKS_other": "{{count}} wiik ko elikin ien eo kar karõke",
+      "MONTHS_one": "{{count}} allōñ elikin ien eo kar karõke",
+      "MONTHS_other": "{{count}} allōñ ko elikin ien eo kar karõke",
+      "YEARS_one": "{{count}} yio elikin ien eo kar karõke",
+      "YEARS_other": "{{count}} yio ko elikin ien eo kar karõke"
+    },
+    "units": {
+      "MINUTES_one": "minit",
+      "MINUTES_other": "minit ko",
+      "HOURS_one": "awa",
+      "HOURS_other": "awa ko",
+      "DAYS_one": "raan",
+      "DAYS_other": "raan",
+      "WEEKS_one": "wiik",
+      "WEEKS_other": "wiik ko",
+      "MONTHS_one": "allōñ",
+      "MONTHS_other": "allōñ ko",
+      "YEARS_one": "iiō",
+      "YEARS_other": "iiō ko"
+    }
+  }
+}

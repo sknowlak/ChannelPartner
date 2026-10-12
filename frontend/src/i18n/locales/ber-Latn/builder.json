@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Tawwurt n Ubennay",
+    "referrals": "Tiwlafin",
+    "builderLogin": "Akeccum n Ubennay",
+    "partnerLogin": "Akeccum n Ucrik n Uẓeḍḍa"
+  },
+  "login": {
+    "title": "Yekcem ubennay",
+    "hint": "Imiḍanen n lebni ttwaxelqen sɣur Leadrat . Steqsi anemhal-ik ma yella ur tesɛiḍ ara."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Ttraǧuɣ ṛṛay-ik",
+    "ACCEPTED": "Yettwaqbel",
+    "REJECTED": "Tugi"
+  },
+  "list": {
+    "title": "Tiwlafin",
+    "allProjects": "Akk isenfaren",
+    "allStatuses": "Akk tignatin",
+    "count_one": "{{count}} asenqed",
+    "count_other": "{{count}} tiwlafin",
+    "columns": {
+      "referral": "Asiweḍ",
+      "customer": "Amsaɣ",
+      "project": "Asenfaṛ",
+      "sourcePartner": "Amcarek Aɣbalu",
+      "status": "Talɣa",
+      "booking": "Asekles",
+      "registered": "Yettwasekles"
+    },
+    "booked": "Yettwajerred",
+    "empty": "Ulac tikciwin ar tura."
+  },
+  "detail": {
+    "customer": "Amsaɣ",
+    "sourcePartner": "Amcarek Aɣbalu",
+    "attributionNote": "(Asnefli - ur yezmir ara ad yettwabeddel)",
+    "leadStatus": "Adeg n uselway",
+    "protectedUntil": "Yettwaḥrez alamma",
+    "referral": "Asiweḍ",
+    "reason": "Ssebba: {{reason}}",
+    "booking": "Asekles",
+    "bookedOwner": "Yettwaḥrez - d kečč i d bab n uxeddim",
+    "notBooked": "Ur yettwaɛzel ara",
+    "sharedAfterBooking": "Yettwabḍa deffir n usmel",
+    "accept": "Qbel asiweḍ",
+    "confirmBooking": "Wekked n usmel",
+    "reject": "Ugi asenqed",
+    "rejectReasonLabel": "Ssebba n tugi (yettwasken-d i ucrik) *",
+    "rejectConfirm": "Ur tt-yeqbil ara",
+    "confirmBookingPrompt": "Ssekneḍ-d asekles? Tabaɣurt n uxeddim tettmuqul ɣur-k yerna amcic yettuɣal d win izemren ad yettwaqbel s tmeṣkiwt.",
+    "notice": {
+      "booked": "Yettwawekked usmel.",
+      "accepted": "Asenqed yettwaqbel.",
+      "rejected": "Asenqed yettwagi."
+    },
+    "backToReferrals": "Tuɣalin ɣer Tiwlafin"
+  },
+  "history": {
+    "title": "Amezruy",
+    "actor": {
+      "system": "Anagraw",
+      "partner": "Amcarek n uẓeṭṭa",
+      "admin": "Admin Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Yewweḍ-d usekles n ucrik",
+      "DUPLICATE_CHECK_COMPLETED": "Asefqed n usnulfu yekfa - ur yettwaf ara usnulfu asertan",
+      "REGISTRATION_ACCEPTED": "Asekles yettwaqbel",
+      "PROTECTION_GRANTED_one": "{{count}} -aḥareb n wass yettunefk",
+      "PROTECTION_GRANTED_other": "{{count}} -aḥareb n wass yettunefk",
+      "STAGE_UPDATED": "Addud yettwasnefli ɣer {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Annar {{count}} yettwasnefli",
+      "LEAD_DETAILS_UPDATED_other": "Igzumen {{count}} yettwasneflin",
+      "LEAD_ASSIGNED": "Yettwanefk i {{name}}",
+      "LEAD_UNASSIGNED": "Ur yettunefk ara",
+      "REFERRAL_ACCEPTED": "Builder yeqbel asenqed-nni.",
+      "REFERRAL_REJECTED": "Builder yugi asenqed-nni. Ssebba: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Aɛraḍ n usekles n tis snat sɣur {{partner}} yettwagi",
+      "BOOKING_COMPLETED": "Yekfa usekles",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Tabaɣurt n uxeddim tettwasnefli i Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Asenqed n ucrik yettwaḥrez",
+      "COMMISSION_ELIGIBILITY_CREATED": "Yettwaxleq-d uzref n tesmilt",
+      "HANDOVER_COMPLETED": "Aselkem yekfa",
+      "ADMIN_PROTECTION_RELEASED": "Admin yessufeɣ-d aḥareb n tneqqiḍt zik. Ssebba: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin yerra-d asekles seg {{from}} ɣer {{to}} . Ssebba: {{reason}}"
+    }
+  }
+}

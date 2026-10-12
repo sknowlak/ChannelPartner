@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Atur",
+    "noPermission": "Nuan nadai pemendar ngatur setting."
+  },
+  "categories": {
+    "lead": "Nunjuk",
+    "user": "Penguna",
+    "integrations": "Penyerakup"
+  },
+  "leadTabs": {
+    "fields": "Bidang",
+    "statuses": "Status enggau Sub-Status",
+    "notifications": "Pemadah & Penjadual"
+  },
+  "fields": {
+    "leadIntro": "Konfigurasyen pom penangkap timbal: ngasuh/enda ngasuh bidang, tanda iya diguna, tauka nambahka bidang adat nuan empu.",
+    "userIntro": "Konfigurasyen pom Tambah/Edit Kaban Tim: ngasuh/enda ngasuh bidang, tanda iya diguna, tauka nambahka bidang adat nuan empu.",
+    "addCustomField": "+ Nambahka Bidang Adat",
+    "fieldLabel": "Label Bidang",
+    "group": "Kumpulan",
+    "groupPlaceholderLead": "chunto Info Tanya",
+    "groupPlaceholderUser": "chunto Penerang Tambah",
+    "dataType": "Jenis Data",
+    "options": "Pilihan (diserara ngena koma)",
+    "requiredLead": "Diguna - kaling dalam tim nuan mesti ngisi tu dikena ngerejista lead .",
+    "requiredUser": "Diguna - mesti diisi lebuh nambahka kaban tim .",
+    "creating": "Ngaga...",
+    "createField": "Ngaga Bidang",
+    "columns": {
+      "field": "Padang",
+      "group": "Kumpulan",
+      "type": "Naip",
+      "required": "Ka",
+      "enabled": "Diaktifka",
+      "kind": "Mana"
+    },
+    "kind": {
+      "custom": "Adat",
+      "core": "Inti (dikunchi)",
+      "standard": "Piawai"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Ayat",
+    "TEXTAREA": "Teks ti panjai",
+    "NUMBER": "Numur",
+    "CURRENCY": "Mata wang",
+    "DATE": "Haribulan",
+    "SELECT": "Ti nurun",
+    "LIST": "Lis"
+  },
+  "picker": {
+    "searchPlaceholder": "Ngiga bidang timbal...",
+    "summary": "{{shown}} dipandangka · {{mandatory}} wajib",
+    "mandatory": "Wajib",
+    "noMatch": "Nadai bidang ti setipak."
+  },
+  "statuses": {
+    "intro": "Status enggau sub-status lead nuan - nama utai ti dipinta tiap iku sida (haribulan & jam, bidang lead) lebuh bisi orang ngemaruka lead ngagai iya.",
+    "add": "+ Nambahka Status",
+    "columns": {
+      "order": "Ngambika ulih",
+      "status": "Pangkat",
+      "subStatuses": "Sub-Status",
+      "asksFor": "Minta Ngambika",
+      "active": "Aktif"
+    },
+    "moveUp": "Mindah ke atas",
+    "moveDown": "Mindah ke baruh",
+    "defaultBadge": "Lalai ungkup timbal baru",
+    "bookingBadge": "Status tempahan",
+    "asksForLabel": "Minta {{label}}",
+    "asksForDateTime": "Minta haribulan & jam",
+    "none": "Nadai",
+    "dateTime": "Haribulan enggau jam",
+    "scheduledOn": "ba {{names}}",
+    "fieldsSummary_one": "{{count}} bidang ( {{mandatory}} wajib)",
+    "fieldsSummary_other": "{{count}} bidang ( {{mandatory}} wajib)",
+    "deleteConfirm": "Padamka status \" {{name}} \"? Pekara tu enda ulih diputarka.",
+    "editTitle": "Ngedit Status - {{name}}",
+    "newTitle": "Status Baru",
+    "name": "Nama Status",
+    "colour": "Chura",
+    "active": "Aktif",
+    "isDefault": "Status lalai ungkup timbal baru",
+    "isBooking": "Status Tempahan (ditetapka enggau Tempahan Lengkap)",
+    "whenMoved": "Lebuh timbal dipindahka ngagai status tu .",
+    "askSchedule": "Minta haribulan & jam (penjadual)",
+    "scheduleLabelPlaceholder": "Label, chunto Nemuai ba",
+    "fieldsToShow": "Bidang timbal ti deka dipandangka ba pom pemadah",
+    "subStatusesTitle": "Sub-Status",
+    "subStatusesHint": "Tiap-tiap sub-status tau minta haribulan & jam kediri empu lalu nambahka bidang kediri empu - dipandangka ba atas bidang status ba atas.",
+    "subStatusName": "Nama sub-status",
+    "subFields": "Bidang ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Label haribulan & jam, chunto Telpon baru ba pukul 10.00.",
+    "addSubStatus": "+ Nambahka Sub-Status",
+    "saveStatus": "Simpan Status",
+    "createStatus": "Ngaga Status"
+  },
+  "notifications": {
+    "intro": "Padah ngagai orang ti betul lebuh lead datai ba status - tekala nya, tauka jam ti ditetapka sebedau/pengudah haribulan & jam ti udah ditetapka ba atas nya.",
+    "add": "+ Nambahka Pemadah",
+    "columns": {
+      "notification": "Pemadah",
+      "whenStatusIs": "Lebuh Status Iya",
+      "sends": "Nganjung",
+      "to": "Ngagai",
+      "via": "Ari",
+      "enabled": "Diaktifka"
+    },
+    "anyStatus": "Sebarang status",
+    "anySubStatus": "Sebarang sub-status",
+    "inactiveOption": "{{name}} (enda aktif)",
+    "emptyRules": "Nadai notifikasyen agi - tambahka siti dikena ngelalau tim nuan lebuh lead datai ba status.",
+    "jobs": {
+      "title": "Dijadual & Dianjung",
+      "firesAt": "Api Ba",
+      "notification": "Pemadah",
+      "lead": "Nunjuk",
+      "status": "Pangkat",
+      "details": "Penerang",
+      "empty": "Nadai utai udah dijadwal tauka dikirum agi.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Lubah",
+      "PROCESSING": "Pengawa memproses",
+      "SENT": "Anjung",
+      "FAILED": "Gagal",
+      "SKIPPED": "Dilengka",
+      "CANCELLED": "Dikinsil"
+    },
+    "deliveryStatus": {
+      "SENT": "anjung",
+      "FAILED": "gagal",
+      "SKIPPED": "dilengka"
+    },
+    "deliveryChannel": {
+      "IN_APP": "dalam app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Penguna ti diberi",
+      "owner": "Bempu",
+      "updatedBy": "Dikemaskini ulih",
+      "role": "Peranan: {{name}}"
+    },
+    "channels": {
+      "inApp": "Dalam app",
+      "email": "Emel",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Padamka notis \" {{name}} \"? Pengingat ti benung nganti ari nya dikinsil.",
+    "testPrompt": "Anjung uji notifikasyen tu ngagai diri empu (dalam app) ngena ID lead ni bagi ?",
+    "testSent": "Dikirum ngagai loceng nuan: {{title}} {{message}}",
+    "headersInvalid": "Header Webhook mesti sah JSON , chunto {\"Pemendar\": \"Pembawa xyz\"}",
+    "editTitle": "Ngedit Pemadah",
+    "newTitle": "Pemadah Baru",
+    "name": "Nama",
+    "namePlaceholder": "chunto Pengingat nemuai ngagai palan .",
+    "whenStatus": "Lebuh status siku-siku timbal iya nya .",
+    "subStatus": "Sub-status",
+    "send": "Nganjung (pengatur jadual)",
+    "custom": "Adat...",
+    "modeBefore": "sebedau jam ti udah ditetapka",
+    "modeAfter": "pengudah jam ti udah ditetapka",
+    "noScheduleWarning": "Status tu nadai minta haribulan & jam, nya alai notifikasyen \"sebedau/ba/pengudah jam ti udah ditetapka\" enda kala deka berapi.",
+    "noScheduleFix": "Hidupka <strong>Minta haribulan & jam</strong> ke iya ba baruh Status & Sub-Status, tauka kirum Tekala nya.",
+    "sendTo": "Anjung ngagai (sebarang gabungan)",
+    "recipientAssigned": "Penguna ti diberi pengawa (pengempu ketuai)",
+    "recipientOwner": "Pengempu akaun / admin",
+    "recipientUpdatedBy": "Orang ti ngemaruka status .",
+    "everyoneWithRole": "Semua orang bisi peranan .",
+    "specificUsers": "Penguna ti spesifik (aktif)",
+    "inactiveNever": "Penguna ti enda aktif enda kala nerima notifikasyen, taja pan dipilih.",
+    "deliverVia": "Nganjung nengah",
+    "channelInApp": "Dalam app (loceng)",
+    "channelEmail": "Emel",
+    "channelWebhook": "Webhook ( Penyedia WhatsApp / SMS )",
+    "emailHint": "Email nuju alamat email tiap iku penerima lalu begunaka SMTP ti diatur ba pelayan (backend/.env); sampai maya nya email ngirum dilog baka ke dilengka.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Tajuk ( JSON )",
+    "content": "Isi pemadah",
+    "title": "Tajuk",
+    "message": "Surat",
+    "insertIntoTitle": "Selitka ngagai Tajuk .",
+    "insertIntoMessage": "Masukka ngagai Pesan",
+    "anyLeadField": "Sebarang bidang timbal mega bekereja, chunto <code1>{{example1}}</code1> tauka <code2>{{example2}}</code2> .",
+    "preview": "Pratonton (chunto timbal)",
+    "enabled": "Diaktifka",
+    "saveRule": "Simpan Pemadah",
+    "createRule": "Ngaga Pemadah",
+    "variables": {
+      "customerName": "Nama timbal",
+      "customerMobile": "Timbal mobile",
+      "customerEmail": "Emel timbal",
+      "registrationId": "ID timbal",
+      "status": "Pangkat",
+      "subStatus": "Sub-status",
+      "scheduleAt": "Haribulan & jam ti udah ditetapka",
+      "assignedTo": "Penguna ti diberi",
+      "updatedBy": "Dikemaskini ulih",
+      "recipient": "Nama penerima",
+      "project": "Projek",
+      "notes": "Nota pemadu baru",
+      "partner": "Nama kaling"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Tekala nya lebuh status udah ditetapka .",
+      "AT": "Ba jam ti udah ditetapka .",
+      "A1D": "1 hari pengudah jam ti udah ditetapka (peresa ti nangkanka nya)"
+    },
+    "immediately": "Jampat",
+    "atScheduled": "Ba jam ti udah ditetapka",
+    "before": {
+      "MINUTES_one": "{{count}} minit sebedau jam ti udah ditetapka",
+      "MINUTES_other": "{{count}} minit sebedau jam ti udah ditetapka",
+      "HOURS_one": "{{count}} jam sebedau jam ti udah ditetapka",
+      "HOURS_other": "{{count}} jam sebedau jam ti udah ditetapka",
+      "DAYS_one": "{{count}} hari sebedau jam ti udah ditetapka",
+      "DAYS_other": "{{count}} hari sebedau jam ti udah ditetapka",
+      "WEEKS_one": "{{count}} seminggu sebedau jam ti udah ditetapka",
+      "WEEKS_other": "{{count}} minggu sebedau jam ti udah ditetapka",
+      "MONTHS_one": "{{count}} bulan sebedau jam ti udah ditetapka",
+      "MONTHS_other": "{{count}} bulan sebedau jam ti udah ditetapka",
+      "YEARS_one": "{{count}} taun sebedau jam ti udah ditetapka",
+      "YEARS_other": "{{count}} taun sebedau jam ti udah ditetapka"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minit pengudah jam ti udah ditetapka",
+      "MINUTES_other": "{{count}} minit pengudah jam ti udah ditetapka",
+      "HOURS_one": "{{count}} jam pengudah jam ti udah ditetapka",
+      "HOURS_other": "{{count}} jam pengudah jam ti udah ditetapka",
+      "DAYS_one": "{{count}} hari pengudah jam ti udah ditetapka",
+      "DAYS_other": "{{count}} hari pengudah jam ti udah ditetapka",
+      "WEEKS_one": "{{count}} minggu pengudah jam ti udah ditetapka",
+      "WEEKS_other": "{{count}} minggu pengudah jam ti udah ditetapka",
+      "MONTHS_one": "{{count}} bulan pengudah jam ti udah ditetapka",
+      "MONTHS_other": "{{count}} bulan pengudah jam ti udah ditetapka",
+      "YEARS_one": "{{count}} taun pengudah jam ti udah ditetapka",
+      "YEARS_other": "{{count}} taun pengudah jam ti udah ditetapka"
+    },
+    "units": {
+      "MINUTES_one": "minit",
+      "MINUTES_other": "minit",
+      "HOURS_one": "jam",
+      "HOURS_other": "jam",
+      "DAYS_one": "saritu",
+      "DAYS_other": "hari",
+      "WEEKS_one": "lemi",
+      "WEEKS_other": "minggu",
+      "MONTHS_one": "bulan",
+      "MONTHS_other": "bulan",
+      "YEARS_one": "taun",
+      "YEARS_other": "taun"
+    }
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Dottaaɗe",
+    "noPermission": "A alaa yamiroore ƴellitde dottaaɗe."
+  },
+  "categories": {
+    "lead": "Yeeso",
+    "user": "Huutortooɗo",
+    "integrations": "Naatgol"
+  },
+  "leadTabs": {
+    "fields": "Gese",
+    "statuses": "Status & Sub-Status",
+    "notifications": "Notifikaaji & Jaɓɓugol"
+  },
+  "fields": {
+    "leadIntro": "Moƴƴin ɓataake nanngugol ardorde : softinde/softinde fannuuji, maande ɗi ina ɗaɓɓiree, walla ɓeydu fannuuji maa keertiiɗi.",
+    "userIntro": "Moƴƴin mbaydi Ɓeydu/Waylu Tergal Goomu : softinde/softinde fannuuji, maande ɗi njiɗaa, walla ɓeydu fannuuji maa keertiiɗi.",
+    "addCustomField": "+ Ɓeydu Fannu keeriiɗo",
+    "fieldLabel": "Label ladde",
+    "group": "Geeɓe",
+    "groupPlaceholderLead": "eg Info naamne",
+    "groupPlaceholderUser": "eg. Ɓeydagol Detaayuuji",
+    "dataType": "Sifaa Dowlaaji",
+    "options": "Cuɓe (komma seerndi)",
+    "requiredLead": "Eɓɓoore - gollodiiɓe e nder ekipaaji maa ina poti heblude ɗum ngam winnditaade ardorde",
+    "requiredUser": "Eɓɓaaɗe - ina poti hebbineede so ɓeydiima tergal e fedde",
+    "creating": "Sosde...",
+    "createField": "Sosde Ladde",
+    "columns": {
+      "field": "Ngeesa",
+      "group": "Geeɓe",
+      "type": "Irin",
+      "required": "Emmi",
+      "enabled": "Softinaama",
+      "kind": "Irin"
+    },
+    "kind": {
+      "custom": "Asli",
+      "core": "Core (udditaama)",
+      "standard": "Je aandin"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Wolde",
+    "TEXTAREA": "Binndol juutngol",
+    "NUMBER": "Lamba",
+    "CURRENCY": "Ceede",
+    "DATE": "Nyalade",
+    "SELECT": "Jipporde",
+    "LIST": "Limte"
+  },
+  "picker": {
+    "searchPlaceholder": "Yiylo fannuuji ardiiɓe...",
+    "summary": "{{shown}} hollitaama · {{mandatory}} waɗɗii",
+    "mandatory": "Dole",
+    "noMatch": "Alaa gese nannduɗe."
+  },
+  "statuses": {
+    "intro": "Statusuuji maa ardorde e sub-status - ko gooto fof naamnotoo (ñalngu & waktu, fannuuji ardorde) so neɗɗo hesɗitinii ardorde e mum.",
+    "add": "+ Ɓeydu ngonka",
+    "columns": {
+      "order": "Tawreta",
+      "status": "Jonde",
+      "subStatuses": "Dowlaaji lesɗi",
+      "asksFor": "Naamni Ngam",
+      "active": "Ɗon huwa"
+    },
+    "moveUp": "Moƴƴin dow",
+    "moveDown": "Moƴƴin les",
+    "defaultBadge": "Default ngam ardaade kesi",
+    "bookingBadge": "Ngonka deftere",
+    "asksForLabel": "Ɗaɓɓu {{label}}",
+    "asksForDateTime": "Naamndo ñalngu & waktu",
+    "none": "Wala",
+    "dateTime": "Ñalngu e waktu",
+    "scheduledOn": "dow {{names}}",
+    "fieldsSummary_one": "{{count}} fannu ( {{mandatory}} doosgal)",
+    "fieldsSummary_other": "{{count}} fannuuji ( {{mandatory}} doosgal)",
+    "deleteConfirm": "Mumtu ngonka \" {{name}} \"? Ɗuum waawaa ustaade.",
+    "editTitle": "Waylu ngonka - {{name}}",
+    "newTitle": "Darnde hesere",
+    "name": "Innde ngonka",
+    "colour": "Didol",
+    "active": "Ɗon huwa",
+    "isDefault": "Darnde teskinnde wonande ardiiɓe kesi",
+    "isBooking": "Ngonka deftere (toɗɗaa ko deftere timmunde)",
+    "whenMoved": "So ardorde yahraama e ooɗoo darnde",
+    "askSchedule": "Naamndo ñalngu e waktu (jokkondiral)",
+    "scheduleLabelPlaceholder": "Label, yeru Njillu to",
+    "fieldsToShow": "Ardo fannuuji ngam hollirde e ɓataake kesɗitingol",
+    "subStatusesTitle": "Dowlaaji lesɗi",
+    "subStatusesHint": "Kala sub-status ina waawi naamnaade ñalngu & waktu mum e ɓeydude fannuuji mum - kollitooji dow fannuuji status ɗii dow.",
+    "subStatusName": "Innde ngonka les",
+    "subFields": "Fannuuji ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Ñalngu & waktu, yeru Noddu caggal e",
+    "addSubStatus": "+ Ɓeydude ngonka les",
+    "saveStatus": "Hisnu ngonka",
+    "createStatus": "Sosde ngonka"
+  },
+  "notifications": {
+    "intro": "Habrirde yimɓe fotɓe so ardorde yettiima darnde - ɗoon e ɗoon, walla waktu toɗɗaaɗo hade/caggal ñalngu & waktu toɗɗaaɗo e dow mum.",
+    "add": "+ Ɓeydude humpito",
+    "columns": {
+      "notification": "Noddaango",
+      "whenStatusIs": "Nde Status Ko",
+      "sends": "Neldata",
+      "to": "Ha",
+      "via": "Gal",
+      "enabled": "Softinaama"
+    },
+    "anyStatus": "Kala ngonka",
+    "anySubStatus": "Kala darnde leslesre",
+    "inactiveOption": "{{name}} (ina golla)",
+    "emptyRules": "Alaa humpito tawo - ɓeydu heen gooto ngam jeertinde fedde maa so ardorde yettiima darnde.",
+    "jobs": {
+      "title": "Jaɓɓaade & Neldeede",
+      "firesAt": "Yiiteeji At",
+      "notification": "Noddaango",
+      "lead": "Yeeso",
+      "status": "Jonde",
+      "details": "Matinolji",
+      "empty": "Alaa ko limtaa walla neldaa tawo.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Joddi",
+      "PROCESSING": "Laɓɓingol",
+      "SENT": "Neldi",
+      "FAILED": "Sallay",
+      "SKIPPED": "Dippitaama",
+      "CANCELLED": "Woppitaama"
+    },
+    "deliveryStatus": {
+      "SENT": "neldi",
+      "FAILED": "sallay",
+      "SKIPPED": "ƴakkitii"
+    },
+    "deliveryChannel": {
+      "IN_APP": "nder app",
+      "EMAIL": "iimeel",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Huutortooɗo toɗɗaaɗo",
+      "owner": "Mardo",
+      "updatedBy": "Hesɗitinaama e",
+      "role": "Darnde: {{name}}"
+    },
+    "channels": {
+      "inApp": "Nder-app",
+      "email": "Imeel",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Mumtu humpito \" {{name}} \"? Siftordeeji jogorɗi ummoraade e maggal ina ndartinee.",
+    "testPrompt": "Neldu jarribo ngoo humpito to hoore maa (in-app) huutoraade hol ID lead ?",
+    "testSent": "Neldaama e beldital maa: {{title}} {{message}}",
+    "headersInvalid": "Hoore Webhook ina foti wonde JSON moƴƴo , yeru {\"Jaɓde\": \"Joom xyz\"}",
+    "editTitle": "Waylu humpito",
+    "newTitle": "Notifikaasiyoŋ keso",
+    "name": "Inde",
+    "namePlaceholder": "eg Siftorde njillu lowre",
+    "whenStatus": "Nde darnde ardorde woni",
+    "subStatus": "Leydi ngonka",
+    "send": "Neldu (taƴoowo)",
+    "custom": "Asli...",
+    "modeBefore": "ko adii waktuuji potɗi",
+    "modeAfter": "caggal waktuuji cakkitiiɗi",
+    "noScheduleWarning": "Ooɗoo darnde naamndaaki ñalngu & waktu, ko ɗum waɗi humpito \"ko adii/e/caggal waktu toɗɗaaɗo\" meeɗaani fiyde.",
+    "noScheduleFix": "Uddit <strong>Ɗaɓɓu ñalngu & waktu</strong> ngam ɗum les Status & Sub-Status, walla neldu Ɗoon e ɗoon.",
+    "sendTo": "Neldu to (kala jillondiral)",
+    "recipientAssigned": "Huutortooɗo toɗɗaaɗo (jom hooreejo)",
+    "recipientOwner": "Joom konte / admin",
+    "recipientUpdatedBy": "Neɗɗo kesɗitinɗo ngonka kaa",
+    "everyoneWithRole": "Kala jogiiɗo darnde",
+    "specificUsers": "Huutortooɓe keeriiɓe (gollooɓe)",
+    "inactiveNever": "Huutortooɓe ɓe ngonaa gollooɓe ɓee meeɗaa heɓde humpitooji, hay so cuɓaama.",
+    "deliverVia": "Yettinde via",
+    "channelInApp": "E nder app (bellel)",
+    "channelEmail": "Imeel",
+    "channelWebhook": "Webhook ( Dokkoowo WhatsApp / SMS )",
+    "emailHint": "Imeel ina yaha e adrees imeel keɓoowo kala, ina sokli SMTP toɗɗaaɗo e serveer (backend/.env); haa ndeen neldugol iimeel ina winndee no skipped nii.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Hoore ( JSON )",
+    "content": "Loowdi humpito",
+    "title": "Hoore",
+    "message": "Wolde",
+    "insertIntoTitle": "Naatde e Tiitoonde",
+    "insertIntoMessage": "Naatnu e nder Mesaas",
+    "anyLeadField": "Kala fannu ardorde ina golla kadi, yeru <code1>{{example1}}</code1> walla <code2>{{example2}}</code2> .",
+    "preview": "Yiyngo (yeru ardaade)",
+    "enabled": "Softinaama",
+    "saveRule": "Hisnu humpito",
+    "createRule": "Sos Notifikaasiyoŋ",
+    "variables": {
+      "customerName": "Innde ardaade",
+      "customerMobile": "Ardo mobaayiil",
+      "customerEmail": "Ardo imeel",
+      "registrationId": "ID ardaade",
+      "status": "Jonde",
+      "subStatus": "Leydi ngonka",
+      "scheduleAt": "Ñalngu & waktu toɗɗaaɗo",
+      "assignedTo": "Huutortooɗo toɗɗaaɗo",
+      "updatedBy": "Hesɗitinaama e",
+      "recipient": "Innde keɓoowo",
+      "project": "Kugal",
+      "notes": "Teskorde cakkitiinde",
+      "partner": "Innde gollodiiɗo"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Ɗoon e ɗoon nde ngonka kaa setti",
+      "AT": "E waktu mo ɓe ciifi oo",
+      "A1D": "Ñalawma 1 caggal waktuuji cakkitiiɗi (ƴeewndo jokkondire)"
+    },
+    "immediately": "Jonta",
+    "atScheduled": "E sahaa mo ɓe ciifi",
+    "before": {
+      "MINUTES_one": "{{count}} hojom ko adii waktu mo njiɗ-ɗen",
+      "MINUTES_other": "{{count}} hojomaaji ko adii waktuuji potɗi reweede ɗii",
+      "HOURS_one": "{{count}} waktu ko adii waktu mo njiɗ-ɗaa",
+      "HOURS_other": "{{count}} waktuuji ko adii waktuuji potɗi reweede ɗii",
+      "DAYS_one": "{{count}} ñalawma ko adii waktu toɗɗaaɗo oo",
+      "DAYS_other": "{{count}} balɗe ko adii waktuuji potɗi reweede ɗii",
+      "WEEKS_one": "{{count}} yontere ko adii waktu toɗɗaaɗo oo",
+      "WEEKS_other": "{{count}} jonte ko adii waktu potɗo",
+      "MONTHS_one": "{{count}} lewru ko adii waktu mo njiɗɗaa",
+      "MONTHS_other": "{{count}} lebbi ko adii waktuuji potɗi reweede ɗii",
+      "YEARS_one": "{{count}} hitaande ko adii waktu mo njiɗɗaa",
+      "YEARS_other": "{{count}} duuɓi ko adii waktuuji potɗi"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} hojomaaji caggal waktu toɗɗaaɗo oo",
+      "MINUTES_other": "{{count}} hojomaaji caggal waktu toɗɗaaɗo oo",
+      "HOURS_one": "{{count}} waktu caggal waktu toɗɗaaɗo oo",
+      "HOURS_other": "{{count}} waktuuji caggal waktuuji toɗɗaaɗi ɗii",
+      "DAYS_one": "{{count}} ñalawma caggal waktu toɗɗaaɗo oo",
+      "DAYS_other": "{{count}} balɗe caggal waktu toɗɗaaɗo oo",
+      "WEEKS_one": "{{count}} yontere caggal waktu toɗɗaaɗo",
+      "WEEKS_other": "{{count}} yontereeji caggal waktu toɗɗaaɗo",
+      "MONTHS_one": "{{count}} lewru caggal waktu toɗɗaaɗo",
+      "MONTHS_other": "{{count}} lebbi caggal waktuuji cakkitiiɗi ɗii",
+      "YEARS_one": "{{count}} hitaande caggal waktuuji cakkitiiɗi ɗii",
+      "YEARS_other": "{{count}} duuɓi caggal waktuuji cakkitiiɗi ɗii"
+    },
+    "units": {
+      "MINUTES_one": "ta'ugo",
+      "MINUTES_other": "minti",
+      "HOURS_one": "njamdi",
+      "HOURS_other": "njamɗe",
+      "DAYS_one": "nyalade",
+      "DAYS_other": "balɗe",
+      "WEEKS_one": "asawere",
+      "WEEKS_other": "yontereeji",
+      "MONTHS_one": "lewru",
+      "MONTHS_other": "lebbi",
+      "YEARS_one": "hittande",
+      "YEARS_other": "duɓɓi"
+    }
+  }
+}

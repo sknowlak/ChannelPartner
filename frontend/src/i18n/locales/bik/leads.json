@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "An Sakong mga Lead",
+    "signedInAs": "Nag-sign in bilang {{name}} ( {{partnerId}} ) · mga oras na ipinapahiling sa {{timezone}}",
+    "addLead": "+ Magdagdag nin Tingga",
+    "tabs": {
+      "all": "Gabos ( {{count}} )",
+      "pending": "Pending ( {{count}} )",
+      "booked": "Nakapareserba ( {{count}} )"
+    },
+    "searchPlaceholder": "Hanapon sa pangaran, mobile, o registration ID ...",
+    "manageColumns": "Pamahalaan an mga Kolum",
+    "rowsPerPage": "Mga hilera kada pahina",
+    "registrationId": "ID sa Pagrehistro",
+    "emptyState": "Mayo pang mga lead - irehistro an saimong enot.",
+    "noMatch": "Mayo nin mga lead na nakakatugma sa mga filter na ini.",
+    "showing": "Nagpapahiling {{from}} - {{to}} kan {{total}} na mga entry",
+    "actions": {
+      "preview": "Preview asin marikas na pag-update",
+      "history": "Kasaysayan",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Apod"
+    },
+    "pagination": {
+      "first": "Enot na pahina",
+      "previous": "Naenot na pahina",
+      "next": "Sunod na pahina",
+      "last": "Huring pahina"
+    }
+  },
+  "columns": {
+    "status": "Estado",
+    "assignTo": "Italaga Sa",
+    "booked": "Naka-book na",
+    "protectionUntil": "Proteksyon Sagkod"
+  },
+  "booking": {
+    "booked": "Naka-book na",
+    "pending": "Dai pa tapos"
+  },
+  "assign": {
+    "unassigned": "Dai Nakaasignar",
+    "owner": "{{name}} (Kagsadiri)",
+    "inactive": "{{name}} (bakong aktibo)",
+    "unknownUser": "Dai midbid na paragamit",
+    "assignedTo": "Itinao sa {{name}}"
+  },
+  "form": {
+    "addTitle": "Magdagdag nin Tingga",
+    "editTitle": "I-edit an Lead",
+    "noPermissionAdd": "Mayo kang permiso na magrehistro nin mga lead.",
+    "noPermissionEdit": "Mayo kang permiso na mag-edit nin mga lead.",
+    "selectPlaceholder": "Magpili...",
+    "commaSeparated": "Pigbubulag nin koma",
+    "phonePlaceholder": "Numero nin telepono",
+    "countryCode": "Kodigo kan nasyon"
+  },
+  "project": {
+    "none": "Mayo pang proyekto (dai pigrerefer)",
+    "notInList": "{{project}} (bakong yaon sa listahan kan proyekto)"
+  },
+  "journey": {
+    "customer": "Kustomer",
+    "currentOwner": "Kasadiri Kasadiri",
+    "protectionExpiry": "Pag-expire kan Proteksyon",
+    "leadStatus": "Kamugtakan nin Pangenot",
+    "scheduled": "Nakaiskedyul",
+    "assignedTo": "Itinao sa",
+    "referral": "Referral",
+    "builderReason": "Rason kan paratogdok: {{reason}}",
+    "bookedHint": "Ipinareserba kan paratogdok - an pagsasadiri sa operasyon nagbalyo na sa paratogdok; an saimong atribusyon asin kwalipikasyon sa komisyon pinapagdanay.",
+    "notBookedHint": "An mga booking kinumpirmar kan paratogdok oras na akoon ninda an referral.",
+    "quickUpdate": "Marikas na Pag-update",
+    "leadDetails": "Mga Detalye kan Pangenot",
+    "progressHistory": "Kasaysayan nin Pag-uswag",
+    "timesIn": "(mga oras sa {{timezone}} )",
+    "backToMyLeads": "Balik sa Sakuyang mga Lead",
+    "editLead": "I-edit an Lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "Dai ipinadara (mayo nin proyekto)",
+    "PENDING_BUILDER": "Naghahalat nin paratogdok",
+    "ACCEPTED": "Inako kan paratogdok",
+    "REJECTED": "Isinikwal kan paratogdok"
+  },
+  "preview": {
+    "ariaLabel": "Lead preview",
+    "title": "Lead Preview",
+    "source": "Pinaghalean",
+    "location": "Lokasyon",
+    "scheduled": "Nakaiskedyul",
+    "registered": "Rehistrado",
+    "latestNote": "Pinakabagong Nota",
+    "quickUpdate": "Marikas na Pag-update",
+    "fullDetails": "Bilog na Detalye",
+    "editLead": "I-edit an Lead",
+    "history": "Kasaysayan"
+  },
+  "quick": {
+    "assignedTo": "Itinao sa",
+    "status": "Estado",
+    "subStatus": "Sub-Status",
+    "selectSubStatus": "Pilion an sub-status...",
+    "none": "Mayo",
+    "scheduledAt": "Nakatalaan sa",
+    "localTime": "lokal na oras",
+    "note": "Tandaan",
+    "notePlaceholder": "Ano an nangyari sa pag-apod / pagbisita na ini? (opsyunal)",
+    "updateStatus": "I-update an Estado",
+    "statusUpdated": "Na-update an estado",
+    "bookedLocked": "An lead na ini naka-book na - an estado kaini dai na pwedeng baguhon.",
+    "viewOnly": "Pwede mong hilingon an lead na ini, alagad dai ini pwedeng i-update kan saimong papel."
+  },
+  "history": {
+    "title": "Kasaysayan - {{registrationId}}",
+    "tabs": {
+      "all": "Gabos",
+      "status": "Estado",
+      "assignment": "Asignasyon",
+      "notes": "Mga Tala"
+    },
+    "doneBy": "Ginibo ni {{actor}}",
+    "system": "Sistema",
+    "platforms": {
+      "System": "Sistema",
+      "External": "Panluwas",
+      "Web": "Web",
+      "Mobile": "Nahihiro"
+    },
+    "added": "idinagdag",
+    "updated": "na-update",
+    "empty": "(mayong laog)",
+    "noHistory": "Mayo pang kasaysayan sa kategoryang ini.",
+    "fieldLabels": {
+      "stage": "Estado",
+      "subStatus": "Sub-Status",
+      "scheduledAt": "Iskedyul",
+      "notes": "Mga Tala",
+      "assignedTo": "Itinao sa"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Naresibe an rehistrasyon kan kasosyo",
+      "DUPLICATE_CHECK_COMPLETED": "Natapos na an duplikadong tsek - mayo nin aktibong duplikado na nakua",
+      "REGISTRATION_ACCEPTED": "Inaako an rehistrasyon",
+      "PROTECTION_GRANTED_one": "{{count}} -aldaw na proteksyon itinao",
+      "PROTECTION_GRANTED_other": "{{count}} -aldaw na proteksyon itinao",
+      "REGISTRATION_ATTEMPT_REJECTED": "An dobleng pagprobar sa pagrehistro kan {{partnerId}} isinikwal",
+      "LEAD_DETAILS_UPDATED_one": "Na-update an {{count}} na larangan",
+      "LEAD_DETAILS_UPDATED_other": "Pinakarhay na {{count}} na mga larangan",
+      "STAGE_UPDATED": "An estado pig-update sa {{status}}",
+      "LEAD_ASSIGNED": "Itinao sa {{name}}",
+      "LEAD_UNASSIGNED": "Dai Nakaasignar",
+      "BOOKING_COMPLETED": "Natapos na an pagpareserba",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "An pagsasadiri sa operasyon ibinalyo sa Paratogdok",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Napreserbar an atribusyon kan kapadis",
+      "COMMISSION_ELIGIBILITY_CREATED": "An kwalipikasyon sa komisyon ginibo",
+      "HANDOVER_COMPLETED": "Natapos an pag-abot",
+      "REFERRAL_ACCEPTED": "Inako kan paratogdok an referral",
+      "REFERRAL_REJECTED": "Sinayumahan kan paratogdok an referral. Rason: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Amay na pinaluwas kan admin an duplicate na proteksyon. Rason: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Ibinalik kan Admin an rehistrasyon gikan sa {{from}} pasiring sa {{to}} . Rason: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Pamahalaan an mga Kolum",
+    "hint": "Iguyod tanganing i-reorder · tsekan tanganing maipahiling",
+    "showAll": "Ipahiling an Gabos",
+    "resetDefault": "Ibalik sa Default"
+  },
+  "filters": {
+    "title": "Mga Filter",
+    "allProjects": "Gabos na proyekto",
+    "any": "Maski arin",
+    "noFields": "Mayo pang ibang mga filterable field na pig-enable (Mga Setting > Lead).",
+    "clearAll": "Linigon an Gabos"
+  },
+  "phone": {
+    "MISSING": "Kaipuhan an numero nin telepono.",
+    "INVALID": "Maglaag nin balidong numero nin telepono.",
+    "TOO_SHORT": "Halipot na marhay an numero kan telepono.",
+    "TOO_LONG": "Halawig na marhay an numero kan telepono.",
+    "INVALID_FOR_COUNTRY": "An numerong ini nin telepono bakong balido para sa {{country}} .",
+    "COUNTRY_MISMATCH": "Pilion tabi an tamang kodigo kan nasyon.",
+    "NOT_MOBILE": "Maglaag nin numero nin cellphone, bakong landline."
+  }
+}

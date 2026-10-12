@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "निर्माता पोर्टल",
+    "referrals": "सन्दर्भाः",
+    "builderLogin": "बिल्डर लॉगिन",
+    "partnerLogin": "चैनल पार्टनर लॉगिन"
+  },
+  "login": {
+    "title": "निर्माता प्रवेशं कुर्वन्तु",
+    "hint": "बिल्डर् खातानि Leadrat द्वारा निर्मिताः भवन्ति . भवतः प्रशासकं पृच्छन्तु यत् भवतः समीपे एतादृशः नास्ति वा।"
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "भवतः निर्णयस्य प्रतीक्षां कुर्वन्",
+    "ACCEPTED": "स्वीकृतम्",
+    "REJECTED": "निराकृतः"
+  },
+  "list": {
+    "title": "सन्दर्भाः",
+    "allProjects": "सर्वाणि परियोजनानि",
+    "allStatuses": "सर्वाणि स्थितिः",
+    "count_one": "{{count}} सन्दर्भ",
+    "count_other": "{{count}} सन्दर्भ",
+    "columns": {
+      "referral": "सन्दर्भः",
+      "customer": "ग्राहकः",
+      "project": "प्रकल्प",
+      "sourcePartner": "स्रोत भागीदार",
+      "status": "स्थितिः",
+      "booking": "बुकिंग",
+      "registered": "पञ्जीकृत"
+    },
+    "booked": "बुक किया गया",
+    "empty": "अद्यापि कोऽपि रेफरल् नास्ति।"
+  },
+  "detail": {
+    "customer": "ग्राहकः",
+    "sourcePartner": "स्रोत भागीदार",
+    "attributionNote": "(विशेषणम् - परिवर्तनं कर्तुं न शक्यते)",
+    "leadStatus": "सीसा स्थिति",
+    "protectedUntil": "संरक्षितः यावत्",
+    "referral": "सन्दर्भः",
+    "reason": "कारणम् : {{reason}}",
+    "booking": "बुकिंग",
+    "bookedOwner": "बुक् कृतः - भवान् परिचालनस्वामिः अस्ति",
+    "notBooked": "बुकिंगं न कृतम्",
+    "sharedAfterBooking": "बुकिंग् कृत्वा साझां कृतम्",
+    "accept": "सन्दर्भं स्वीकुरुत",
+    "confirmBooking": "बुकिंगस्य पुष्टिं कुर्वन्तु",
+    "reject": "सन्दर्भं अङ्गीकुर्वन्तु",
+    "rejectReasonLabel": "प्रत्याख्यानकारणम् (सहभागिने दर्शितम्) * .",
+    "rejectConfirm": "अस्वीकार",
+    "confirmBookingPrompt": "बुकिंगस्य पुष्टिं कुर्वन्तु? परिचालनस्वामित्वं भवतः समीपं गच्छति तथा च भागीदारः आयोगस्य योग्यः भवति।",
+    "notice": {
+      "booked": "बुकिंग् पुष्टिः अभवत्।",
+      "accepted": "सन्दर्भः स्वीकृतः।",
+      "rejected": "सन्दर्भः अङ्गीकृतः।"
+    },
+    "backToReferrals": "पुनः सन्दर्भं प्रति"
+  },
+  "history": {
+    "title": "इतिहास",
+    "actor": {
+      "system": "व्यवस्था",
+      "partner": "चैनल भागीदार",
+      "admin": "Leadrat एडमिन"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "भागीदार पञ्जीकरणं प्राप्तम्",
+      "DUPLICATE_CHECK_COMPLETED": "डुप्लिकेट् चेक् सम्पन्नम् - सक्रिय डुप्लिकेट् न प्राप्तम्",
+      "REGISTRATION_ACCEPTED": "पञ्जीकरणं स्वीकृतम्",
+      "PROTECTION_GRANTED_one": "{{count}} -दिन रक्षण प्रदान",
+      "PROTECTION_GRANTED_other": "{{count}} -दिन रक्षण प्रदान",
+      "STAGE_UPDATED": "{{stage}} इति स्थितिः अद्यतनः ।",
+      "LEAD_DETAILS_UPDATED_one": "अद्यतनं {{count}} क्षेत्रम्",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} क्षेत्राणि अद्यतनं कृतवन्तः",
+      "LEAD_ASSIGNED": "{{name}} इति नियुक्तम् ।",
+      "LEAD_UNASSIGNED": "अनिर्दिष्टः",
+      "REFERRAL_ACCEPTED": "बिल्डरः रेफरल् स्वीकृतवान्",
+      "REFERRAL_REJECTED": "बिल्डरः रेफरल् अङ्गीकृतवान्। कारणम् : {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} द्वारा द्वितीयकपञ्जीकरणप्रयासः अङ्गीकृतः",
+      "BOOKING_COMPLETED": "बुकिंग् सम्पन्नम्",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "परिचालनस्वामित्वं बिल्डरं प्रति स्थानान्तरितम्",
+      "PARTNER_ATTRIBUTION_PRESERVED": "भागीदार विशेषण संरक्षित",
+      "COMMISSION_ELIGIBILITY_CREATED": "आयोग पात्रता निर्मित",
+      "HANDOVER_COMPLETED": "हस्तान्तरणं सम्पन्नम्",
+      "ADMIN_PROTECTION_RELEASED": "एड्मिन् डुप्लिकेट् प्रोटेक्शन् पूर्वमेव मुक्तवान्। कारणम् : {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "व्यवस्थापकेन {{from}} तः {{to}} यावत् पञ्जीकरणं पुनः नियुक्तम् । कारणम् : {{reason}}"
+    }
+  }
+}

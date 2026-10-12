@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "बिल्डर पोर्टल",
+    "referrals": "रेफरल",
+    "builderLogin": "बिल्डर लॉगिन",
+    "partnerLogin": "चैनल पार्टनर लॉगिन"
+  },
+  "login": {
+    "title": "बिल्डर साइन इन",
+    "hint": "बिल्डर खाता Leadrat द्वारा बनावा जात है। अगर आपके पास नाहीं है तौ अपने प्रशासक से पूछौ।"
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "अपने फैसले का इंतजार है",
+    "ACCEPTED": "स्वीकार कीन गा",
+    "REJECTED": "अस्वीकार कीन गा"
+  },
+  "list": {
+    "title": "रेफरल",
+    "allProjects": "सब परियोजना",
+    "allStatuses": "सब स्टेटस",
+    "count_one": "{{count}} रेफरल",
+    "count_other": "{{count}} रेफरल",
+    "columns": {
+      "referral": "रेफरल",
+      "customer": "गंहकी",
+      "project": "योजना",
+      "sourcePartner": "स्रोत साथी",
+      "status": "हइसियत",
+      "booking": "बुकिंग",
+      "registered": "पंजीकृत"
+    },
+    "booked": "बुक कीन गा है",
+    "empty": "अबहीं तक कौनो रेफरल नाहीं।"
+  },
+  "detail": {
+    "customer": "गंहकी",
+    "sourcePartner": "स्रोत साथी",
+    "attributionNote": "(एट्रिब्यूशन - बदला नाहीं जा सकत है)",
+    "leadStatus": "लीड स्टेटस",
+    "protectedUntil": "जब तक संरक्षित",
+    "referral": "रेफरल",
+    "reason": "कारण: {{reason}}",
+    "booking": "बुकिंग",
+    "bookedOwner": "बुक कीन गा - आप परिचालन मालिक हैं",
+    "notBooked": "बुक नाहीं कीन गा है",
+    "sharedAfterBooking": "बुकिंग के बाद साझा कीन गा",
+    "accept": "रेफरल स्वीकार करा",
+    "confirmBooking": "बुकिंग के पुष्टि करा",
+    "reject": "रेफरल अस्वीकार करा",
+    "rejectReasonLabel": "अस्वीकार करै का कारण (साथी का देखावा गा) *",
+    "rejectConfirm": "अस्वीकार करब",
+    "confirmBookingPrompt": "बुकिंग के पुष्टि करा? परिचालन स्वामित्व आपके पास जात है अऊर साथी कमीशन के पात्र हो जात है।",
+    "notice": {
+      "booked": "बुकिंग पुष्टि होइ गै।",
+      "accepted": "रेफरल स्वीकार कीन गा है।",
+      "rejected": "रेफरल खारिज होइ गवा।"
+    },
+    "backToReferrals": "रेफरल पर वापस जावा"
+  },
+  "history": {
+    "title": "पुरानि कथा",
+    "actor": {
+      "system": "ब्यवस्था",
+      "partner": "चैनल साथी",
+      "admin": "Leadrat एडमिन"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "साथी पंजीकरण प्राप्त होइ गवा",
+      "DUPLICATE_CHECK_COMPLETED": "डुप्लिकेट चेक पूरा होइ गवा - कौनो सक्रिय डुप्लिकेट नाहीं मिला",
+      "REGISTRATION_ACCEPTED": "पंजीकरण स्वीकार कीन गा है",
+      "PROTECTION_GRANTED_one": "{{count}} -दिन संरक्षण प्रदान कीन गा",
+      "PROTECTION_GRANTED_other": "{{count}} -दिन संरक्षण प्रदान कीन गा",
+      "STAGE_UPDATED": "स्थिति {{stage}} मा अपडेट कीन गा है",
+      "LEAD_DETAILS_UPDATED_one": "अपडेट कीन गा {{count}} फ़ील्ड",
+      "LEAD_DETAILS_UPDATED_other": "अपडेट कीन गा {{count}} फ़ील्ड",
+      "LEAD_ASSIGNED": "{{name}} का सौंपा गा है",
+      "LEAD_UNASSIGNED": "असाइन कीन गा",
+      "REFERRAL_ACCEPTED": "बिल्डर ने रेफरल स्वीकार कर लिहिस",
+      "REFERRAL_REJECTED": "बिल्डर रेफरल का खारिज कइ दिहिस। कारण: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} द्वारा डुप्लिकेट पंजीकरण प्रयास अस्वीकार कर दीन गा",
+      "BOOKING_COMPLETED": "बुकिंग पूरा होइ गवा",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "बिल्डर का परिचालन स्वामित्व स्थानांतरित कीन गा",
+      "PARTNER_ATTRIBUTION_PRESERVED": "साथी एट्रिब्यूशन संरक्षित",
+      "COMMISSION_ELIGIBILITY_CREATED": "कमीशन पात्रता बनाई गई",
+      "HANDOVER_COMPLETED": "हैंडओवर पूरा होइगा",
+      "ADMIN_PROTECTION_RELEASED": "व्यवस्थापक ने डुप्लिकेट सुरक्षा जल्दी जारी किहिन। कारण: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "व्यवस्थापक ने {{from}} से {{to}} मा पंजीकरण फिर से सौंपा है। कारण: {{reason}}"
+    }
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Paramet",
+    "noPermission": "Ou pena permision pou zer bann konfigirasion."
+  },
+  "categories": {
+    "lead": "Mene",
+    "user": "Itilizater",
+    "integrations": "Bann initegrasion"
+  },
+  "leadTabs": {
+    "fields": "Bann domenn",
+    "statuses": "Stati & Sou-Stati",
+    "notifications": "Notifikasyon & Programer"
+  },
+  "fields": {
+    "leadIntro": "Konfigir form kaptir lead: aktiv/dezaktiv bann domenn, mark zot neseser, ou azout ou prop domenn personalize.",
+    "userIntro": "Konfigir form Azout/Modifie Manb Lekip: aktiv/dezaktiv bann domenn, mark zot neseser, ouswa azout ou prop domenn personalize.",
+    "addCustomField": "+ Azout enn domenn personalize",
+    "fieldLabel": "Etiket domenn",
+    "group": "Group",
+    "groupPlaceholderLead": "ex. Linformasion lor lanket",
+    "groupPlaceholderUser": "ex. Bann Detay Adisyonel",
+    "dataType": "Tip done",
+    "options": "Opsion (separe par virgil)",
+    "requiredLead": "Obligater - bann partener dan ou lekip bizin ranpli sa pou anrezistre enn lead",
+    "requiredUser": "Obligater - bizin ranpli kan azout enn manb lekip",
+    "creating": "Pe kree...",
+    "createField": "Kree domenn",
+    "columns": {
+      "field": "Terin",
+      "group": "Group",
+      "type": "Tip",
+      "required": "Neseser",
+      "enabled": "Aktive",
+      "kind": "Bonte"
+    },
+    "kind": {
+      "custom": "Kostim",
+      "core": "Nwayo (verouye)",
+      "standard": "Standar"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Tex",
+    "TEXTAREA": "Long text",
+    "NUMBER": "Nimero",
+    "CURRENCY": "Lamone",
+    "DATE": "Dat",
+    "SELECT": "Deroulant",
+    "LIST": "Lalis"
+  },
+  "picker": {
+    "searchPlaceholder": "Rod bann domenn lead...",
+    "summary": "{{shown}} montre · {{mandatory}} obligatwar",
+    "mandatory": "Obligatwar",
+    "noMatch": "Pena domenn ki koresponn."
+  },
+  "statuses": {
+    "intro": "Ou bann stati ek sou-stati lead - seki sakenn demande (enn dat ek ler, bann domenn lead) kan kikenn met enn lead azour.",
+    "add": "+ Azout Stati",
+    "columns": {
+      "order": "Lord",
+      "status": "Stati",
+      "subStatuses": "Bann sou-stati",
+      "asksFor": "Demann pou",
+      "active": "Aktif"
+    },
+    "moveUp": "Bouz lao",
+    "moveDown": "Bouz anba",
+    "defaultBadge": "Par defo pou bann nouvo lead",
+    "bookingBadge": "Stati rezervasion",
+    "asksForLabel": "Demann {{label}}",
+    "asksForDateTime": "Demann dat ek ler",
+    "none": "Okenn",
+    "dateTime": "Dat ek ler",
+    "scheduledOn": "lor {{names}}",
+    "fieldsSummary_one": "{{count}} field ( {{mandatory}} obligatory)",
+    "fieldsSummary_other": "{{count}} fields ( {{mandatory}} obligatory)",
+    "deleteConfirm": "Efas stati \" {{name}} \"? Sa pa kapav defer.",
+    "editTitle": "Modifie Stati - {{name}}",
+    "newTitle": "Nouvo stati",
+    "name": "Nom stati",
+    "colour": "Kouler",
+    "active": "Aktif",
+    "isDefault": "Stati par defo pou bann nouvo lead",
+    "isBooking": "Stati rezervasion (finn par Rezervasion Konple)",
+    "whenMoved": "Kan enn lead bouz dan sa stati-la",
+    "askSchedule": "Demann enn dat ek enn ler (programer)",
+    "scheduleLabelPlaceholder": "Etiket, ex. Vizit lor",
+    "fieldsToShow": "Bann domenn plon pou montre lor form azour",
+    "subStatusesTitle": "Bann sou-stati",
+    "subStatusesHint": "Sak sou-stati kapav demann so prop dat ek ler e azout so prop domenn - ki montre lao bann domenn stati-la lao.",
+    "subStatusName": "Nom sou-stati",
+    "subFields": "Bann domenn ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Etiket dat ek ler, ex. Re-telefone lor",
+    "addSubStatus": "+ Azout sou-stati",
+    "saveStatus": "Anrezistre stati",
+    "createStatus": "Kree stati"
+  },
+  "notifications": {
+    "intro": "Notifie bann bon dimounn kan enn lead ariv enn stati - toutswit, ouswa enn ler fixe avan/apre dat ek ler ki finn programe lor la.",
+    "add": "+ Azout Notifikasyon",
+    "columns": {
+      "notification": "Notifikasyon",
+      "whenStatusIs": "Kan Stati Li",
+      "sends": "Avoye",
+      "to": "Ziska",
+      "via": "Par",
+      "enabled": "Aktive"
+    },
+    "anyStatus": "Ninport ki stati",
+    "anySubStatus": "Ninport ki sou-stati",
+    "inactiveOption": "{{name}} (inaktif)",
+    "emptyRules": "Pena okenn notifikasyon ankor - azout enn pou alert ou lekip kan enn lead ariv enn stati.",
+    "jobs": {
+      "title": "Programe & Avoye",
+      "firesAt": "Tir lor",
+      "notification": "Notifikasyon",
+      "lead": "Mene",
+      "status": "Stati",
+      "details": "Detay",
+      "empty": "Nanye pa finn programe ouswa avoye ankor.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "An atant",
+      "PROCESSING": "Transformasion",
+      "SENT": "Avoye",
+      "FAILED": "Fel",
+      "SKIPPED": "Finn sote",
+      "CANCELLED": "Finn anile"
+    },
+    "deliveryStatus": {
+      "SENT": "avoye",
+      "FAILED": "fel",
+      "SKIPPED": "finn sote"
+    },
+    "deliveryChannel": {
+      "IN_APP": "dan-app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Itilizater ki finn atribie",
+      "owner": "Proprieter",
+      "updatedBy": "Finn met-a-zour par",
+      "role": "Rol: {{name}}"
+    },
+    "channels": {
+      "inApp": "Dan aplikasion",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Efas notifikasyon \" {{name}} \"? Bann rapel an atant depi ladan finn anile.",
+    "testPrompt": "Avoy enn tes sa notifikasyon-la a oumem (dan aplikasion) an itilizan ki ID lead ?",
+    "testSent": "Finn avoy ou laklos: {{title}} {{message}}",
+    "headersInvalid": "Bann header Webhook bizin JSON valid, ex. {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Modifie Notifikasyon",
+    "newTitle": "Nouvo notifikasyon",
+    "name": "Nom",
+    "namePlaceholder": "ex. Rapel pou vizit sit",
+    "whenStatus": "Kan stati enn lead li",
+    "subStatus": "Sou-stati",
+    "send": "Avoy (programer)",
+    "custom": "Kostim...",
+    "modeBefore": "avan ler ki finn programe",
+    "modeAfter": "apre ler ki finn programe",
+    "noScheduleWarning": "Sa stati-la pa demann enn dat ek ler, alor enn notifikasyon \"avan/a/apre ler ki finn programe\" zame pa pou deklanse.",
+    "noScheduleFix": "Alim <strong>Demann enn dat ek enn ler</strong> pou li anba bann Stati ek bann Sou-Stati, ouswa avoy Deswit.",
+    "sendTo": "Avoy a (ninport ki konbinezon)",
+    "recipientAssigned": "Itilizater ki finn atribie (proprieter prinsipal)",
+    "recipientOwner": "Proprieter kont / admin",
+    "recipientUpdatedBy": "Dimounn ki finn met stati-la azour",
+    "everyoneWithRole": "Tou dimounn avek enn rol",
+    "specificUsers": "Bann itilizater spesifik (aktif)",
+    "inactiveNever": "Bann itilizater inaktif zame resevwar bann notifikasyon, mem si finn swazir.",
+    "deliverVia": "Livre par",
+    "channelInApp": "Dan aplikasion (laklos)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / fourniser SMS )",
+    "emailHint": "Email al ver ladres email sak destinater e bizin konfigir SMTP lor server (backend/.env); ziska ler bann email ki finn anvoye pou anrezistre kouma finn sote.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Bann header ( JSON )",
+    "content": "Konteni notifikasyon",
+    "title": "Tit",
+    "message": "Mesaz",
+    "insertIntoTitle": "Met dan Tit",
+    "insertIntoMessage": "Met dan mesaz",
+    "anyLeadField": "Ninport ki lead field marse osi, par exanp <code1>{{example1}}</code1> ou <code2>{{example2}}</code2> .",
+    "preview": "Apersi (exanp lead)",
+    "enabled": "Aktive",
+    "saveRule": "Anrezistre Notifikasyon",
+    "createRule": "Kree Notifikasyon",
+    "variables": {
+      "customerName": "Nom prinsipal",
+      "customerMobile": "Mobil plon",
+      "customerEmail": "Email prinsipal",
+      "registrationId": "ID prinsipal",
+      "status": "Stati",
+      "subStatus": "Sou-stati",
+      "scheduleAt": "Dat ek ler ki finn programe",
+      "assignedTo": "Itilizater ki finn atribie",
+      "updatedBy": "Finn met-a-zour par",
+      "recipient": "Nom destinater",
+      "project": "Proze",
+      "notes": "Dernie not",
+      "partner": "Nom partener"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Deswit kan stati-la finn fixe",
+      "AT": "Dan ler ki finn programe",
+      "A1D": "1 zour apre ler ki finn programe (verifikasion swivi)"
+    },
+    "immediately": "Toutswit",
+    "atScheduled": "Dan ler ki finn programe",
+    "before": {
+      "MINUTES_one": "{{count}} minit avan ler ki finn programe",
+      "MINUTES_other": "{{count}} minit avan ler ki finn programe",
+      "HOURS_one": "{{count}} er-tan avan ler ki finn programe",
+      "HOURS_other": "{{count}} lertan avan ler ki finn programe",
+      "DAYS_one": "{{count}} enn zour avan ler ki finn programe",
+      "DAYS_other": "{{count}} zour avan ler ki finn programe",
+      "WEEKS_one": "{{count}} semenn avan ler ki finn programe",
+      "WEEKS_other": "{{count}} semenn avan ler ki finn programe",
+      "MONTHS_one": "{{count}} mwa avan ler ki finn programe",
+      "MONTHS_other": "{{count}} mwa avan ler ki finn programe",
+      "YEARS_one": "{{count}} an avan ler ki finn programe",
+      "YEARS_other": "{{count}} lane avan ler ki finn programe"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minit apre ler ki finn programe",
+      "MINUTES_other": "{{count}} minit apre ler ki finn programe",
+      "HOURS_one": "{{count}} er-tan apre ler ki finn programe",
+      "HOURS_other": "{{count}} lertan apre ler ki finn programe",
+      "DAYS_one": "{{count}} zour apre ler ki finn programe",
+      "DAYS_other": "{{count}} zour apre ler ki finn programe",
+      "WEEKS_one": "{{count}} semenn apre ler ki finn programe",
+      "WEEKS_other": "{{count}} semenn apre ler ki finn programe",
+      "MONTHS_one": "{{count}} mwa apre ler ki finn programe",
+      "MONTHS_other": "{{count}} mwa apre ler ki finn programe",
+      "YEARS_one": "{{count}} lane apre ler ki finn programe",
+      "YEARS_other": "{{count}} lane apre ler ki finn programe"
+    },
+    "units": {
+      "MINUTES_one": "minit",
+      "MINUTES_other": "minit",
+      "HOURS_one": "ler",
+      "HOURS_other": "ler",
+      "DAYS_one": "zour",
+      "DAYS_other": "zour",
+      "WEEKS_one": "semenn",
+      "WEEKS_other": "semenn",
+      "MONTHS_one": "mwa",
+      "MONTHS_other": "mwa",
+      "YEARS_one": "lane",
+      "YEARS_other": "lane"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "shell": {
+    "portal": "Pangwangun Portal",
+    "referrals": "Rujukan",
+    "builderLogin": "Pangwangun Login",
+    "partnerLogin": "Saluran Mitra Login"
+  },
+  "login": {
+    "title": "Pangwangun asup",
+    "hint": "Akun pembina dijieun ku Leadrat . Tanya administrator Anjeun upami Anjeun teu boga."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Ngantosan kaputusan anjeun",
+    "ACCEPTED": "Ditarima",
+    "REJECTED": "Ditampik"
+  },
+  "list": {
+    "title": "Rujukan",
+    "allProjects": "Sadaya proyék",
+    "allStatuses": "Sadaya status",
+    "count_other": "{{count}} rujukan",
+    "columns": {
+      "referral": "Rujukan",
+      "customer": "Palanggan",
+      "project": "Proyék",
+      "sourcePartner": "Mitra Sumber",
+      "status": "Status",
+      "booking": "Pesenan",
+      "registered": "Kadaptar"
+    },
+    "booked": "dipesen",
+    "empty": "Teu acan aya rujukan."
+  },
+  "detail": {
+    "customer": "Palanggan",
+    "sourcePartner": "Mitra Sumber",
+    "attributionNote": "(atribusi - teu bisa dirobah)",
+    "leadStatus": "Status kalungguhan",
+    "protectedUntil": "Ditangtayungan Nepi",
+    "referral": "Rujukan",
+    "reason": "Alesan: {{reason}}",
+    "booking": "Pesenan",
+    "bookedOwner": "Dipesen - anjeun nu boga operasional",
+    "notBooked": "Teu dipesen",
+    "sharedAfterBooking": "Dibagikeun sanggeus booking",
+    "accept": "Tampa Rujukan",
+    "confirmBooking": "Konfirmasi Booking",
+    "reject": "Nolak Rujukan",
+    "rejectReasonLabel": "Alesan pikeun nolak (ditémbongkeun ka pasangan) *",
+    "rejectConfirm": "Nolak",
+    "confirmBookingPrompt": "Konfirmasi booking? Kapamilikan operasional pindah ka anjeun sareng pasangan janten layak pikeun komisi.",
+    "notice": {
+      "booked": "Booking dikonfirmasi.",
+      "accepted": "Rujukan ditarima.",
+      "rejected": "Rujukan ditolak."
+    },
+    "backToReferrals": "Balik deui ka Rujukan"
+  },
+  "history": {
+    "title": "Sajarah",
+    "actor": {
+      "system": "Sistim",
+      "partner": "Mitra saluran",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "pendaptaran mitra narima",
+      "DUPLICATE_CHECK_COMPLETED": "Duplikat dipariksa réngsé - teu kapanggih duplikat aktip",
+      "REGISTRATION_ACCEPTED": "Pendaptaran ditarima",
+      "PROTECTION_GRANTED_other": "{{count}} panyalindungan -day dibérékeun",
+      "STAGE_UPDATED": "Status diropéa ka {{stage}}",
+      "LEAD_DETAILS_UPDATED_other": "Widang {{count}} diropéa",
+      "LEAD_ASSIGNED": "Ditugaskeun ka {{name}}",
+      "LEAD_UNASSIGNED": "Teu ditugaskeun",
+      "REFERRAL_ACCEPTED": "Pangwangun nampi rujukan",
+      "REFERRAL_REJECTED": "Pangwangun nampik rujukan. Alesan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Usaha pendaptaran duplikat ku {{partner}} ditolak",
+      "BOOKING_COMPLETED": "Booking réngsé",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Kapamilikan operasional ditransferkeun ka Pangwangun",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Attribution mitra dilestarikan",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komisi eligibility dijieun",
+      "HANDOVER_COMPLETED": "Handover réngsé",
+      "ADMIN_PROTECTION_RELEASED": "Admin ngaluarkeun panyalindungan duplikat awal. Alesan: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin ngalihkeun pendaptaran ti {{from}} ka {{to}} . Alesan: {{reason}}"
+    }
+  }
+}

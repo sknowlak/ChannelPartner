@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal ti' le constructor",
+    "referrals": "Referencias",
+    "builderLogin": "Chúunul xoknáalo'obo' ti' le constructor",
+    "partnerLogin": "Chúunul xoknáalo'obo' u socio le beel"
+  },
+  "login": {
+    "title": "Chúunul xoknáalo'obo' ti' le constructor",
+    "hint": "Le ba'ax menta'abij ti' le constructoro' ku beeta'al tumen Leadrat . k'áat ti' a administrador wa mina'an teech."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Táan in páa'tik a k'alt'aan",
+    "ACCEPTED": "k'a'am",
+    "REJECTED": "Rechazado"
+  },
+  "list": {
+    "title": "Referencias",
+    "allProjects": "tuláakal le meyajo'obo'",
+    "allStatuses": "Tuláakal le noj",
+    "count_one": "{{count}} referencia",
+    "count_other": "{{count}} referencias",
+    "columns": {
+      "referral": "Referencia",
+      "customer": "Cliyeente",
+      "project": "Nojmeyajil",
+      "sourcePartner": "Socio u fuente",
+      "status": "Estaado",
+      "booking": "Reservación",
+      "registered": "Ts'íibta'an"
+    },
+    "booked": "ts'o'ok u reservado",
+    "empty": "Mina'an referencias láayli'."
+  },
+  "detail": {
+    "customer": "Cliyeente",
+    "sourcePartner": "Socio u fuente",
+    "attributionNote": "(atribución - ma' je'el u páajtal u k'e'exel)",
+    "leadStatus": "Estado de plomo",
+    "protectedUntil": "Kanáanta'an Tak",
+    "referral": "Referencia",
+    "reason": "O'olal: {{reason}}",
+    "booking": "Reservación",
+    "bookedOwner": "Reservado - teech le propietario operativo",
+    "notBooked": "Ma' ts'o'ok u reservarta'al",
+    "sharedAfterBooking": "Ts'a'abal ka' ts'o'ok u reservarta'al",
+    "accept": "K'aam le referencia",
+    "confirmBooking": "Confirme u reserva",
+    "reject": "Rechazar le referencia",
+    "rejectReasonLabel": "O'olal u p'atik (ku ye'esa'al ti' le núup) *",
+    "rejectConfirm": "Jal óol",
+    "confirmBookingPrompt": "¿A confirmar le reserva? Le propiedad operacional ku péek ti' tech yéetel le socio ku p'áatal ti' elegible utia'al u Comisión.",
+    "notice": {
+      "booked": "Ts'o'ok u jaajkúunta'al u reserva.",
+      "accepted": "K'a'amal u túuxta'al.",
+      "rejected": "Referencia rechazada."
+    },
+    "backToReferrals": "Ka'a suut ti' le referencias"
+  },
+  "history": {
+    "title": "K'ajlay",
+    "actor": {
+      "system": "Sisteema",
+      "partner": "Socio ti' le beel",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "K'a'am u registro le socio",
+      "DUPLICATE_CHECK_COMPLETED": "Ts'o'ok u yila'al u duplicado - ma' kaxta'ab mix jump'éel duplicado activo",
+      "REGISTRATION_ACCEPTED": "K'a'amal u ts'íibta'al",
+      "PROTECTION_GRANTED_one": "{{count}} -k'iin kanáanil ts'a'an",
+      "PROTECTION_GRANTED_other": "{{count}} -k'iin kanáanil ts'a'an",
+      "STAGE_UPDATED": "Estado actualizado ti {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} ts'o'ok u túumbenkuunsa'al",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} ts'o'ok u túumbenkuunsa'al",
+      "LEAD_ASSIGNED": "Ts'a'an ti' {{name}}",
+      "LEAD_UNASSIGNED": "Ma' asignado",
+      "REFERRAL_ACCEPTED": "Builder tu k'amaj le referencia",
+      "REFERRAL_REJECTED": "Builder tu p'ataj le referencia. O'olal: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "U ka'ap'éel intento u registro tumen {{partner}} rechazado",
+      "BOOKING_COMPLETED": "Ts'o'ok u ts'o'okol u reserva",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "U yuumil meyaj ts'a'ab ti' Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribución socio conservada",
+      "COMMISSION_ELIGIBILITY_CREATED": "Creada u elegibilidad le comisión",
+      "HANDOVER_COMPLETED": "Ts'o'ok u k'u'ubul",
+      "ADMIN_PROTECTION_RELEASED": "Admin tu jóok'saj protección duplicada temprano. O'olal: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin tu k'exaj u registro u {{from}} u {{to}} . O'olal: {{reason}}"
+    }
+  }
+}

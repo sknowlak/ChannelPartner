@@ -1,0 +1,190 @@
+{
+  "list": {
+    "title": "Les meves pistes",
+    "signedInAs": "S'ha iniciat la sessió com a {{name}} ( {{partnerId}} ) · les hores es mostren a {{timezone}}",
+    "addLead": "+ Afegeix plom",
+    "tabs": {
+      "all": "Tots ( {{count}} )",
+      "pending": "Pendent ( {{count}} )",
+      "booked": "Reservat ( {{count}} )"
+    },
+    "searchPlaceholder": "Cerca per nom, mòbil o ID de registre...",
+    "manageColumns": "Gestiona les columnes",
+    "rowsPerPage": "Files per pàgina",
+    "registrationId": "ID de registre",
+    "emptyState": "Encara no hi ha contactes: registreu el vostre primer.",
+    "noMatch": "No hi ha cap oportunitat que coincideixi amb aquests filtres.",
+    "showing": "Es mostren {{from}} - {{to}} de {{total}} entrades",
+    "actions": {
+      "preview": "Vista prèvia i actualització ràpida",
+      "history": "Història",
+      "email": "Correu electrònic",
+      "whatsapp": "WhatsApp",
+      "call": "Truca"
+    },
+    "pagination": {
+      "first": "Primera pàgina",
+      "previous": "Pàgina anterior",
+      "next": "Pàgina següent",
+      "last": "Última pàgina"
+    }
+  },
+  "columns": {
+    "status": "Estat",
+    "assignTo": "Assigna a",
+    "booked": "Reservat",
+    "protectionUntil": "Protecció Fins"
+  },
+  "booking": {
+    "booked": "Reservat",
+    "pending": "Pendent"
+  },
+  "assign": {
+    "unassigned": "Sense assignar",
+    "owner": "{{name}} (propietari)",
+    "inactive": "{{name}} (inactiu)",
+    "unknownUser": "Usuari desconegut",
+    "assignedTo": "Assignat a {{name}}"
+  },
+  "form": {
+    "addTitle": "Afegeix plom",
+    "editTitle": "Edita el plom",
+    "noPermissionAdd": "No teniu permís per registrar clients potencials.",
+    "noPermissionEdit": "No teniu permís per editar contactes.",
+    "selectPlaceholder": "Selecciona...",
+    "commaSeparated": "Separat per comes",
+    "phonePlaceholder": "Número de telèfon",
+    "countryCode": "Codi de país"
+  },
+  "project": {
+    "none": "Encara no hi ha projecte (no referit)",
+    "notInList": "{{project}} (no a la llista de projectes)"
+  },
+  "journey": {
+    "customer": "Client",
+    "currentOwner": "Propietari actual",
+    "protectionExpiry": "Caducitat de la protecció",
+    "leadStatus": "Estat de plom",
+    "scheduled": "Programat",
+    "assignedTo": "Assignat a",
+    "referral": "Referència",
+    "builderReason": "Motiu del constructor: {{reason}}",
+    "bookedHint": "Reservat pel constructor: la propietat operativa s'ha traslladat al constructor; es conserven les teves atribucions i comissions elegibles.",
+    "notBookedHint": "Les reserves són confirmades pel constructor un cop accepta la referència.",
+    "quickUpdate": "Actualització ràpida",
+    "leadDetails": "Detalls de plom",
+    "progressHistory": "Història de progrés",
+    "timesIn": "(temps a {{timezone}} )",
+    "backToMyLeads": "Torna a My Leads",
+    "editLead": "Edita el plom"
+  },
+  "referral": {
+    "NOT_REFERRED": "No referit (sense projecte)",
+    "PENDING_BUILDER": "Esperant el constructor",
+    "ACCEPTED": "Acceptat pel constructor",
+    "REJECTED": "Rebutjat pel constructor"
+  },
+  "preview": {
+    "ariaLabel": "Vista prèvia del lead",
+    "title": "Vista prèvia del lead",
+    "source": "Font",
+    "location": "Ubicació",
+    "scheduled": "Programat",
+    "registered": "Registrat",
+    "latestNote": "Última nota",
+    "quickUpdate": "Actualització ràpida",
+    "fullDetails": "Detalls complets",
+    "editLead": "Edita el plom",
+    "history": "Història"
+  },
+  "quick": {
+    "assignedTo": "Assignat a",
+    "status": "Estat",
+    "subStatus": "Subestatus",
+    "selectSubStatus": "Seleccioneu el subestat...",
+    "none": "Cap",
+    "scheduledAt": "Programat a les",
+    "localTime": "hora local",
+    "note": "Nota",
+    "notePlaceholder": "Què va passar en aquesta trucada/visita? (opcional)",
+    "updateStatus": "Actualitzar l'estat",
+    "statusUpdated": "Estat actualitzat",
+    "bookedLocked": "Aquest client potencial està reservat; el seu estat ja no es pot canviar.",
+    "viewOnly": "Pots veure aquest client potencial, però el teu rol no el pot actualitzar."
+  },
+  "history": {
+    "title": "Historial: {{registrationId}}",
+    "tabs": {
+      "all": "Tots",
+      "status": "Estat",
+      "assignment": "Encàrrec",
+      "notes": "Notes"
+    },
+    "doneBy": "Fet per {{actor}}",
+    "system": "Sistema",
+    "platforms": {
+      "System": "Sistema",
+      "External": "Extern",
+      "Web": "Web",
+      "Mobile": "Mòbil"
+    },
+    "added": "afegit",
+    "updated": "actualitzat",
+    "empty": "(buit)",
+    "noHistory": "Encara no hi ha cap historial en aquesta categoria.",
+    "fieldLabels": {
+      "stage": "Estat",
+      "subStatus": "Subestatus",
+      "scheduledAt": "Horari",
+      "notes": "Notes",
+      "assignedTo": "Assignat a"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "S'ha rebut el registre de soci",
+      "DUPLICATE_CHECK_COMPLETED": "Comprovació de duplicats completada: no s'ha trobat cap duplicat actiu",
+      "REGISTRATION_ACCEPTED": "Inscripció acceptada",
+      "PROTECTION_GRANTED_one": "Protecció de {{count}} dies concedida",
+      "PROTECTION_GRANTED_many": "Protecció de {{count}} dies concedida",
+      "PROTECTION_GRANTED_other": "Protecció de {{count}} dies concedida",
+      "REGISTRATION_ATTEMPT_REJECTED": "S'ha rebutjat l'intent de registre duplicat de {{partnerId}}",
+      "LEAD_DETAILS_UPDATED_one": "Camp {{count}} actualitzat",
+      "LEAD_DETAILS_UPDATED_many": "S'han actualitzat {{count}} camps",
+      "LEAD_DETAILS_UPDATED_other": "S'han actualitzat {{count}} camps",
+      "STAGE_UPDATED": "Estat actualitzat a {{status}}",
+      "LEAD_ASSIGNED": "Assignat a {{name}}",
+      "LEAD_UNASSIGNED": "Sense assignar",
+      "BOOKING_COMPLETED": "Reserva completada",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Propietat operativa transferida a Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "S'ha conservat l'atribució del soci",
+      "COMMISSION_ELIGIBILITY_CREATED": "S'ha creat l'elegibilitat de la comissió",
+      "HANDOVER_COMPLETED": "Lliurament finalitzat",
+      "REFERRAL_ACCEPTED": "El constructor va acceptar la referència",
+      "REFERRAL_REJECTED": "El constructor va rebutjar la referència. Motiu: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "L'administrador va llançar la protecció duplicada abans. Motiu: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "L'administrador ha reassignat el registre de {{from}} a {{to}} . Motiu: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Gestiona les columnes",
+    "hint": "Arrossegueu per reordenar · marqueu per mostrar",
+    "showAll": "Mostra-ho tot",
+    "resetDefault": "Restableix al valor predeterminat"
+  },
+  "filters": {
+    "title": "Filtres",
+    "allProjects": "Tots els projectes",
+    "any": "Qualsevol",
+    "noFields": "Encara no s'ha habilitat cap altre camp filtrable (Configuració > Client potencial).",
+    "clearAll": "Esborra-ho tot"
+  },
+  "phone": {
+    "MISSING": "El número de telèfon és obligatori.",
+    "INVALID": "Introduïu un número de telèfon vàlid.",
+    "TOO_SHORT": "El número de telèfon és massa curt.",
+    "TOO_LONG": "El número de telèfon és massa llarg.",
+    "INVALID_FOR_COUNTRY": "Aquest número de telèfon no és vàlid per a {{country}} .",
+    "COUNTRY_MISMATCH": "Seleccioneu el codi de país correcte.",
+    "NOT_MOBILE": "Introduïu un número de mòbil, no un telèfon fix."
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "سيٽنگون",
+    "noPermission": "توهان کي سيٽنگون منظم ڪرڻ جي اجازت نه آهي."
+  },
+  "categories": {
+    "lead": "ليڊ",
+    "user": "استعمال ڪندڙ",
+    "integrations": "انضمام"
+  },
+  "leadTabs": {
+    "fields": "ميدان",
+    "statuses": "اسٽيٽس ۽ ذيلي اسٽيٽس",
+    "notifications": "نوٽيفڪيشن ۽ شيڊيولر"
+  },
+  "fields": {
+    "leadIntro": "ليڊ ڪيپچر فارم کي ترتيب ڏيو: فيلڊز کي فعال/بند ڪريو، انهن کي گهربل نشان لڳايو، يا پنهنجا پنهنجا ڪسٽم فيلڊ شامل ڪريو.",
+    "userIntro": "جوڙيو/تدوين ٽيم ميمبر فارم کي ترتيب ڏيو: فيلڊز کي فعال/ناجائز ڪريو، انھن کي گهربل نشان لڳايو، يا پنھنجون ذاتيون شامل ڪريو.",
+    "addCustomField": "+ ڪسٽم فيلڊ شامل ڪريو",
+    "fieldLabel": "فيلڊ ليبل",
+    "group": "ميڙ",
+    "groupPlaceholderLead": "مثال طور انڪوائري ڄاڻ",
+    "groupPlaceholderUser": "مثال طور اضافي تفصيل",
+    "dataType": "ڊيٽا جو قسم",
+    "options": "اختيارات (ڪاما کان الڳ ٿيل)",
+    "requiredLead": "گهربل - توهان جي ٽيم تي ڀائيوارن کي لازمي طور تي ڀرڻ گهرجي هڪ ليڊ رجسٽر ڪرڻ لاءِ",
+    "requiredUser": "گهربل - ٽيم جي ميمبر کي شامل ڪرڻ وقت ڀريو وڃي",
+    "creating": "ٺاهيندي...",
+    "createField": "فيلڊ ٺاهيو",
+    "columns": {
+      "field": "ميدان",
+      "group": "ميڙ",
+      "type": "قسم",
+      "required": "گھربل",
+      "enabled": "چالو ڪيو",
+      "kind": "قسم"
+    },
+    "kind": {
+      "custom": "حسب ضرورت",
+      "core": "ڪور (بند ٿيل)",
+      "standard": "معياري"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "متن",
+    "TEXTAREA": "ڊگهو متن",
+    "NUMBER": "نمبر",
+    "CURRENCY": "ڪرنسي",
+    "DATE": "تاريخ",
+    "SELECT": "ڊراپ ڊائون",
+    "LIST": "فهرست"
+  },
+  "picker": {
+    "searchPlaceholder": "ليڊ فيلڊز ڳولھيو...",
+    "summary": "{{shown}} ڏيکاريو ويو · {{mandatory}} لازمي",
+    "mandatory": "لازمي",
+    "noMatch": "ڪو به ميدان ملندو."
+  },
+  "statuses": {
+    "intro": "توهان جي ليڊ اسٽيٽس ۽ ذيلي اسٽيٽس - جيڪي هر هڪ لاءِ پڇي ٿو (تاريخ ۽ وقت، ليڊ فيلڊز) جڏهن ڪو ان جي ليڊ کي اپڊيٽ ڪري ٿو.",
+    "add": "+ اسٽيٽس شامل ڪريو",
+    "columns": {
+      "order": "آرڊر",
+      "status": "حيثيت",
+      "subStatuses": "ذيلي اسٽيٽس",
+      "asksFor": "لاءِ پڇي ٿو",
+      "active": "چالو"
+    },
+    "moveUp": "مٿي چڙهڻ",
+    "moveDown": "ھيٺ لھي وڃو",
+    "defaultBadge": "نئين ليڊز لاءِ ڊفالٽ",
+    "bookingBadge": "بکنگ جي حالت",
+    "asksForLabel": "پڇي ٿو {{label}}",
+    "asksForDateTime": "تاريخ ۽ وقت لاء پڇي ٿو",
+    "none": "ڪو به",
+    "dateTime": "تاريخ ۽ وقت",
+    "scheduledOn": "{{names}} تي",
+    "fieldsSummary_one": "{{count}} فيلڊ ( {{mandatory}} لازمي)",
+    "fieldsSummary_other": "{{count}} شعبا ( {{mandatory}} لازمي)",
+    "deleteConfirm": "\" {{name}} \" اسٽيٽس کي ختم ڪريو؟ هن کي رد نٿو ڪري سگهجي.",
+    "editTitle": "تبديلي جي حالت - {{name}}",
+    "newTitle": "نئون اسٽيٽس",
+    "name": "حيثيت جو نالو",
+    "colour": "رنگ",
+    "active": "چالو",
+    "isDefault": "نئين ليڊز لاءِ ڊفالٽ اسٽيٽس",
+    "isBooking": "بکنگ جي حالت (مڪمل بکنگ طرفان مقرر)",
+    "whenMoved": "جڏهن هڪ ليڊ هن حيثيت ڏانهن منتقل ڪيو ويو آهي",
+    "askSchedule": "تاريخ ۽ وقت لاءِ پڇو (شيڊيولر)",
+    "scheduleLabelPlaceholder": "ليبل، مثال طور تي وڃو",
+    "fieldsToShow": "تازه ڪاري فارم تي ڏيکارڻ لاءِ ليڊ فيلڊز",
+    "subStatusesTitle": "ذيلي اسٽيٽس",
+    "subStatusesHint": "ھر ذيلي اسٽيٽس پنھنجي تاريخ ۽ وقت لاءِ پڇي سگھي ٿو ۽ پنھنجا پنهنجا فيلڊ شامل ڪري سگھي ٿو - مٿي ڏنل اسٽيٽس جي شعبن جي مٿان ڏيکاريل آھي.",
+    "subStatusName": "ذيلي حيثيت جو نالو",
+    "subFields": "ميدان ( {{count}} )",
+    "subScheduleLabelPlaceholder": "تاريخ ۽ وقت جو ليبل، مثال طور ڪال واپس تي",
+    "addSubStatus": "+ ذيلي اسٽيٽس شامل ڪريو",
+    "saveStatus": "اسٽيٽس محفوظ ڪريو",
+    "createStatus": "اسٽيٽس ٺاهيو"
+  },
+  "notifications": {
+    "intro": "صحيح ماڻهن کي اطلاع ڏيو جڏهن هڪ ليڊ هڪ اسٽيٽس تي پهچي - فوري طور تي، يا ان تي مقرر ڪيل تاريخ ۽ وقت کان اڳ / بعد ۾ هڪ مقرر وقت.",
+    "add": "+ نوٽيفڪيشن شامل ڪريو",
+    "columns": {
+      "notification": "اطلاع",
+      "whenStatusIs": "جڏهن حالت آهي",
+      "sends": "موڪلي ٿو",
+      "to": "جي طرف",
+      "via": "ذريعي",
+      "enabled": "چالو ڪيو"
+    },
+    "anyStatus": "ڪا به حيثيت",
+    "anySubStatus": "ڪا به ذيلي حيثيت",
+    "inactiveOption": "{{name}} (غير فعال)",
+    "emptyRules": "اڃان تائين ڪوبه اطلاع نه آهي - هڪ شامل ڪريو پنهنجي ٽيم کي خبردار ڪرڻ لاءِ جڏهن هڪ ليڊ اسٽيج تي پهچي.",
+    "jobs": {
+      "title": "شيڊول ٿيل ۽ موڪليو ويو",
+      "firesAt": "باهه تي",
+      "notification": "اطلاع",
+      "lead": "ليڊ",
+      "status": "حيثيت",
+      "details": "تفصيل",
+      "empty": "اڃان ڪجھ به مقرر يا موڪليو ويو ناهي.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "باقي رهيو",
+      "PROCESSING": "پروسيسنگ",
+      "SENT": "موڪليو ويو",
+      "FAILED": "ناڪام ٿيو",
+      "SKIPPED": "ڇڏي ويو",
+      "CANCELLED": "منسوخ ٿيل"
+    },
+    "deliveryStatus": {
+      "SENT": "موڪليو ويو",
+      "FAILED": "ناڪام",
+      "SKIPPED": "ڇڏي ويو"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ايپ ۾",
+      "EMAIL": "اي ميل",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "مقرر ٿيل صارف",
+      "owner": "مالڪ",
+      "updatedBy": "پاران اپڊيٽ ڪيو ويو",
+      "role": "ڪردار: {{name}}"
+    },
+    "channels": {
+      "inApp": "ايپ ۾",
+      "email": "اي ميل",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "نوٽيفڪيشن حذف ڪريو \" {{name}} \"؟ ان کان التوا ۾ ياد ڏياريندڙ منسوخ ڪيا ويا آهن.",
+    "testPrompt": "ھن نوٽيفڪيشن جي ٽيسٽ موڪليو پاڻ ڏانھن (ان-ايپ) ڪھڙي ليڊ ID استعمال ڪندي؟",
+    "testSent": "توھان جي گھنٽي ڏانھن موڪليو ويو: {{title}} {{message}}",
+    "headersInvalid": "Webhook هيڊر صحيح هجڻ گهرجن JSON ، مثال طور {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "نوٽيفڪيشن ۾ ترميم ڪريو",
+    "newTitle": "نئون نوٽيفڪيشن",
+    "name": "نالو",
+    "namePlaceholder": "مثال طور سائيٽ جو دورو ياد ڏياريندڙ",
+    "whenStatus": "جڏهن هڪ ليڊ جي حيثيت آهي",
+    "subStatus": "ذيلي حيثيت",
+    "send": "موڪليو (شيڊيولر)",
+    "custom": "حسب ضرورت...",
+    "modeBefore": "مقرر وقت کان اڳ",
+    "modeAfter": "مقرر وقت کان پوء",
+    "noScheduleWarning": "هي اسٽيٽس ڪنهن تاريخ ۽ وقت لاءِ نه ٿو پڇي، تنهن ڪري ”مقرر ڪيل وقت کان اڳ/تي/بعد ۾“ نوٽيفڪيشن ڪڏهن به فائر نه ٿيندو.",
+    "noScheduleFix": "آن ڪريو <strong>Ask for a date and time</strong> ان لاءِ Statuses & Sub-Statuses تحت، يا فوري طور موڪليو.",
+    "sendTo": "ڏانهن موڪليو (ڪنهن به ميلاپ)",
+    "recipientAssigned": "مقرر ٿيل صارف (ليڊ مالڪ)",
+    "recipientOwner": "اڪائونٽ مالڪ / منتظم",
+    "recipientUpdatedBy": "شخص جيڪو اسٽيٽس اپڊيٽ ڪيو",
+    "everyoneWithRole": "هرڪو ڪردار سان",
+    "specificUsers": "مخصوص استعمال ڪندڙ (فعال)",
+    "inactiveNever": "غير فعال استعمال ڪندڙ ڪڏهن به نوٽيفڪيشن حاصل نه ڪندا، جيتوڻيڪ چونڊيل هجي.",
+    "deliverVia": "ذريعي پهچائڻ",
+    "channelInApp": "ايپ اندر (گھنٽي)",
+    "channelEmail": "اي ميل",
+    "channelWebhook": "Webhook ( WhatsApp / SMS فراهم ڪندڙ)",
+    "emailHint": "اي ميل هر وصول ڪندڙ جي اي ميل پتي تي وڃي ٿي ۽ سرور تي SMTP سيٽ اپ جي ضرورت آهي (backend/.env)؛ تيستائين اي ميل موڪليا ويندا لاگ ان طور تي skipped.",
+    "webhookUrl": "Webhook URL ( POST ، JSON )",
+    "headers": "مٿو ( JSON )",
+    "content": "نوٽيفڪيشن مواد",
+    "title": "عنوان",
+    "message": "نياپو",
+    "insertIntoTitle": "عنوان ۾ داخل ڪريو",
+    "insertIntoMessage": "پيغام ۾ داخل ڪريو",
+    "anyLeadField": "ڪو به ليڊ فيلڊ ڪم ڪري ٿو، مثال طور <code1>{{example1}}</code1> يا <code2>{{example2}}</code2> .",
+    "preview": "ڏيک (نمو ليڊ)",
+    "enabled": "چالو ڪيو",
+    "saveRule": "نوٽيفڪيشن محفوظ ڪريو",
+    "createRule": "نوٽيفڪيشن ٺاهيو",
+    "variables": {
+      "customerName": "ليڊ جو نالو",
+      "customerMobile": "ليڊ موبائل",
+      "customerEmail": "ليڊ اي ميل",
+      "registrationId": "ليڊ ID",
+      "status": "حيثيت",
+      "subStatus": "ذيلي حيثيت",
+      "scheduleAt": "مقرر ڪيل تاريخ ۽ وقت",
+      "assignedTo": "مقرر ٿيل صارف",
+      "updatedBy": "پاران اپڊيٽ ڪيو ويو",
+      "recipient": "وصول ڪندڙ جو نالو",
+      "project": "پروجيڪٽ",
+      "notes": "تازو نوٽ",
+      "partner": "ساٿي جو نالو"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "فوري طور تي جڏهن حالت مقرر ڪئي وئي آهي",
+      "AT": "مقرر وقت تي",
+      "A1D": "1 ڏينهن مقرر وقت کان پوء (فالو اپ چيڪ)"
+    },
+    "immediately": "فوري طور تي",
+    "atScheduled": "مقرر وقت تي",
+    "before": {
+      "MINUTES_one": "مقرر وقت کان اڳ {{count}} منٽ",
+      "MINUTES_other": "مقرر وقت کان اڳ {{count}} منٽ",
+      "HOURS_one": "مقرر وقت کان اڳ {{count}} ڪلاڪ",
+      "HOURS_other": "مقرر وقت کان اڳ {{count}} ڪلاڪ",
+      "DAYS_one": "مقرر وقت کان اڳ {{count}} ڏينهن",
+      "DAYS_other": "مقرر وقت کان اڳ {{count}} ڏينهن",
+      "WEEKS_one": "مقرر وقت کان اڳ {{count}} هفتو",
+      "WEEKS_other": "مقرر وقت کان اڳ {{count}} هفتا",
+      "MONTHS_one": "مقرر وقت کان اڳ {{count}} مهينو",
+      "MONTHS_other": "مقرر وقت کان اڳ {{count}} مهينا",
+      "YEARS_one": "مقرر وقت کان اڳ {{count}} سال",
+      "YEARS_other": "مقرر وقت کان اڳ {{count}} سال"
+    },
+    "after": {
+      "MINUTES_one": "مقرر وقت کان پوءِ {{count}} منٽ",
+      "MINUTES_other": "مقرر وقت کان پوءِ {{count}} منٽ",
+      "HOURS_one": "مقرر وقت کان پوءِ {{count}} ڪلاڪ",
+      "HOURS_other": "مقرر وقت کان پوءِ {{count}} ڪلاڪ",
+      "DAYS_one": "مقرر وقت کان پوءِ {{count}} ڏينهن",
+      "DAYS_other": "مقرر وقت کان پوءِ {{count}} ڏينهن",
+      "WEEKS_one": "مقرر وقت کان پوءِ {{count}} هفتو",
+      "WEEKS_other": "مقرر وقت کان پوءِ {{count}} هفتا",
+      "MONTHS_one": "مقرر وقت کان پوءِ {{count}} مهينو",
+      "MONTHS_other": "مقرر وقت کان پوءِ {{count}} مهينا",
+      "YEARS_one": "مقرر وقت کان پوءِ {{count}} سال",
+      "YEARS_other": "مقرر وقت کان پوءِ {{count}} سال"
+    },
+    "units": {
+      "MINUTES_one": "منٽ",
+      "MINUTES_other": "منٽ",
+      "HOURS_one": "ڪلاڪ",
+      "HOURS_other": "ڪلاڪ",
+      "DAYS_one": "ڏينهن",
+      "DAYS_other": "ڏينهن",
+      "WEEKS_one": "هفتو",
+      "WEEKS_other": "هفتا",
+      "MONTHS_one": "مهينو",
+      "MONTHS_other": "مهينا",
+      "YEARS_one": "سال",
+      "YEARS_other": "سال"
+    }
+  }
+}

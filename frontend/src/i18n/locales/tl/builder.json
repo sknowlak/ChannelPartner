@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal ng Tagabuo",
+    "referrals": "Mga referral",
+    "builderLogin": "Pag-login ng Tagabuo",
+    "partnerLogin": "Login ng Kasosyo sa Channel"
+  },
+  "login": {
+    "title": "Nag-sign in ang Builder",
+    "hint": "Ang mga Builder account ay ginawa ni Leadrat . Tanungin ang iyong administrator kung wala ka nito."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Naghihintay sa iyong desisyon",
+    "ACCEPTED": "Tinanggap",
+    "REJECTED": "Tinanggihan"
+  },
+  "list": {
+    "title": "Mga referral",
+    "allProjects": "Lahat ng proyekto",
+    "allStatuses": "Lahat ng status",
+    "count_one": "{{count}} referral",
+    "count_other": "{{count}} na mga referral",
+    "columns": {
+      "referral": "Referral",
+      "customer": "Customer",
+      "project": "Proyekto",
+      "sourcePartner": "Source Partner",
+      "status": "Katayuan",
+      "booking": "Pagbu-book",
+      "registered": "Nakarehistro"
+    },
+    "booked": "Naka-book",
+    "empty": "Wala pang referral."
+  },
+  "detail": {
+    "customer": "Customer",
+    "sourcePartner": "Source Partner",
+    "attributionNote": "(attribution - hindi mababago)",
+    "leadStatus": "Katayuan ng lead",
+    "protectedUntil": "Pinoprotektahan Hanggang",
+    "referral": "Referral",
+    "reason": "Dahilan: {{reason}}",
+    "booking": "Pagbu-book",
+    "bookedOwner": "Na-book - ikaw ang may-ari ng pagpapatakbo",
+    "notBooked": "Hindi naka-book",
+    "sharedAfterBooking": "Ibinahagi pagkatapos mag-book",
+    "accept": "Tanggapin ang Referral",
+    "confirmBooking": "Kumpirmahin ang Pag-book",
+    "reject": "Tanggihan ang Referral",
+    "rejectReasonLabel": "Dahilan ng pagtanggi (ipinakita sa kapareha) *",
+    "rejectConfirm": "Tanggihan",
+    "confirmBookingPrompt": "Kumpirmahin ang booking? Ang pagpapatakbo ng pagmamay-ari ay lilipat sa iyo at ang kasosyo ay magiging karapat-dapat para sa komisyon.",
+    "notice": {
+      "booked": "Nakumpirma ang booking.",
+      "accepted": "Tinanggap ang referral.",
+      "rejected": "Tinanggihan ang referral."
+    },
+    "backToReferrals": "Bumalik sa Mga Referral"
+  },
+  "history": {
+    "title": "Kasaysayan",
+    "actor": {
+      "system": "Sistema",
+      "partner": "Kasosyo sa channel",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Natanggap ang pagpaparehistro ng kasosyo",
+      "DUPLICATE_CHECK_COMPLETED": "Nakumpleto ang duplicate na pagsusuri - walang nakitang aktibong duplicate",
+      "REGISTRATION_ACCEPTED": "Tinanggap ang pagpaparehistro",
+      "PROTECTION_GRANTED_one": "{{count}} -araw na proteksyon ang ibinigay",
+      "PROTECTION_GRANTED_other": "{{count}} -araw na proteksyon ang ibinigay",
+      "STAGE_UPDATED": "Na-update ang katayuan sa {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Na-update ang {{count}} na field",
+      "LEAD_DETAILS_UPDATED_other": "Na-update {{count}} na mga field",
+      "LEAD_ASSIGNED": "Nakatalaga kay {{name}}",
+      "LEAD_UNASSIGNED": "Hindi nakatalaga",
+      "REFERRAL_ACCEPTED": "Tinanggap ng Builder ang referral",
+      "REFERRAL_REJECTED": "Tinanggihan ng Builder ang referral. Dahilan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Tinanggihan ang dobleng pagtatangka sa pagpaparehistro ng {{partner}}",
+      "BOOKING_COMPLETED": "Nakumpleto ang booking",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Ang pagmamay-ari ng pagpapatakbo ay inilipat sa Tagabuo",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Napanatili ang pagpapatungkol ng kasosyo",
+      "COMMISSION_ELIGIBILITY_CREATED": "Nalikha ang pagiging karapat-dapat sa komisyon",
+      "HANDOVER_COMPLETED": "Nakumpleto ang handover",
+      "ADMIN_PROTECTION_RELEASED": "Maagang naglabas ng duplicate na proteksyon ang admin. Dahilan: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Muling itinalaga ng admin ang pagpaparehistro mula {{from}} hanggang {{to}} . Dahilan: {{reason}}"
+    }
+  }
+}

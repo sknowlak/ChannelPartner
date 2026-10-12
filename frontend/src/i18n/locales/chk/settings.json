@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Setin",
+    "noPermission": "Ese wor om mumuta ne nemeni ekkewe setting."
+  },
+  "categories": {
+    "lead": "Emweni",
+    "user": "User",
+    "integrations": "Ekkewe ririfengen"
+  },
+  "leadTabs": {
+    "fields": "Feil",
+    "statuses": "Ekkewe napanap & ekkewe kinikinin napanap",
+    "notifications": "Ekkewe Esinesin & Ekkewe Pworaus"
+  },
+  "fields": {
+    "leadIntro": "Kopwe fori ewe taropwen katon lead: tongeni/awesi ekkewe neni, makkei pwe mi namwot, ika apachanong om pwisin neni.",
+    "userIntro": "Kopwe fori ewe taropwen Apachenong/Ekkesiwini Chon ewe Team: tongeni/awesi ekkewe neni, makkei pwe mi namwot, ika apachanong om pwisin neni.",
+    "addCustomField": "+ Apacha ngeni ewe Filikin Kustom .",
+    "fieldLabel": "Label",
+    "group": "Mwichen aramas",
+    "groupPlaceholderLead": "eg Info ren kapas eis",
+    "groupPlaceholderUser": "eg Ekkewe Pworaus mi Tichik .",
+    "dataType": "Ewe sokkun Data",
+    "options": "Ekkewe kefil (mi aimufesen ren comma)",
+    "requiredLead": "Mi namwot - chon angang non omw ewe team repwe amasoua ei pwe repwe makketiw ew lead .",
+    "requiredUser": "Mi namwot - epwe makketiw nupwen ka apachanong emon chon ewe team .",
+    "creating": "Forata...",
+    "createField": "Kopwe fori ewe Field .",
+    "columns": {
+      "field": "Aan",
+      "group": "Mwichen aramas",
+      "type": "Makkei",
+      "required": "Mei namwot",
+      "enabled": "A tongeni",
+      "kind": "Aramaseoch"
+    },
+    "kind": {
+      "custom": "Nonnomwun",
+      "core": "Kore (a suk)",
+      "standard": "Keukun"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Foun mak",
+    "TEXTAREA": "Teks mi langattam",
+    "NUMBER": "Nampa",
+    "CURRENCY": "Mwonien",
+    "DATE": "Pwinin maram",
+    "SELECT": "Kopwe tonong",
+    "LIST": "Tettenin mak"
+  },
+  "picker": {
+    "searchPlaceholder": "Kutta ekkewe nenien lead...",
+    "summary": "{{shown}} a pwarata · {{mandatory}} mi namwot",
+    "mandatory": "Namwot",
+    "noMatch": "Ese wor föfförün älleäsochis."
+  },
+  "statuses": {
+    "intro": "Omw kewe napanapen lead me sub-napanapen - met emon me emon epwe tingor (ew ran & fansoun, nenien lead) nupwen emon a update ew lead ngeni.",
+    "add": "+ Apacha ngeni ewe napanap",
+    "columns": {
+      "order": "Tettenin",
+      "status": "Nonnomwun",
+      "subStatuses": "Ekkewe Kinikinin Napanapen",
+      "asksFor": "A Tingor Ren .",
+      "active": "Achocho angang"
+    },
+    "moveUp": "Mokut ngeni .",
+    "moveDown": "Mokutukut ngeni .",
+    "defaultBadge": "Default ren ekkewe minefoon chon emwen .",
+    "bookingBadge": "Napanapen booking",
+    "asksForLabel": "A tingor ren {{label}}",
+    "asksForDateTime": "A tingor ren ran & fansoun",
+    "none": "Ese wor",
+    "dateTime": "Ranin & fansoun",
+    "scheduledOn": "won {{names}}",
+    "fieldsSummary_one": "{{count}} neni ( {{mandatory}} mi mumuta)",
+    "fieldsSummary_other": "{{count}} ekkewe neni ( {{mandatory}} mi mumuta)",
+    "deleteConfirm": "Kopwe amoielo ewe napanap \" {{name}} \"? Ei esap tongeni fis.",
+    "editTitle": "Siwini ewe napanap - {{name}}",
+    "newTitle": "Niwinin Napanap",
+    "name": "Iten ewe napanap",
+    "colour": "Enuwan",
+    "active": "Achocho angang",
+    "isDefault": "Ewe napanap mi fis fan iten ekkewe minefoon chon emwen .",
+    "isBooking": "Napanapen booking (a fis ren ewe booking mi unus)",
+    "whenMoved": "Nupwen emon lead a mwokut ngeni ei napanap .",
+    "askSchedule": "Kopwe tingor ew ran & fansoun (chon kokkot)",
+    "scheduleLabelPlaceholder": "Label, awewe chok, Fiti ngeni .",
+    "fieldsToShow": "Ekkewe nenien lead repwe pwarata won ewe taropwen siwin .",
+    "subStatusesTitle": "Ekkewe Kinikinin Napanapen",
+    "subStatusesHint": "Ew me ew ekkewe sub-status mei tongeni tingor an pwisin ran & fansoun me apachanong an pwisin kinikin - mei pwa won ekkewe kinikinin ewe status mei nomw asan.",
+    "subStatusName": "Iten ewe nenien angang",
+    "subFields": "Ekkewe neni ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Ranin & fansoun makketiw, awewe chok Kopwe kokori sefan non 100.000.",
+    "addSubStatus": "+ Apacha ngeni ewe Kinikin",
+    "saveStatus": "Save ewe napanap",
+    "createStatus": "Kopwe fori ewe napanap"
+  },
+  "notifications": {
+    "intro": "Kopwe esinesin ngeni ekkewe aramas mei pung nupwen emon lead a tori ew napanap - mwitir chok, ika ew fansoun mei affat me mwen/mwirin ewe ran & fansoun mei affat won.",
+    "add": "+ Apacha ngeni ewe Notifika",
+    "columns": {
+      "notification": "Esinesin",
+      "whenStatusIs": "Nupwen ewe Status A .",
+      "sends": "A tinato",
+      "to": "Ngeni",
+      "via": "Non",
+      "enabled": "A tongeni"
+    },
+    "anyStatus": "Epwe wor status .",
+    "anySubStatus": "Ew me ew ekkewe sub-status",
+    "inactiveOption": "{{name}} (ese angang)",
+    "emptyRules": "Ese wor esinesin iei - apachanong ew epwe esinesin ngeni noumw we team nupwen emon chon emwen a tori ew neni.",
+    "jobs": {
+      "title": "A fen akkota & a tinalo",
+      "firesAt": "Ekkei At",
+      "notification": "Esinesin",
+      "lead": "Emweni",
+      "status": "Nonnomwun",
+      "details": "Tichikkin porous",
+      "empty": "Ese wor met a schedule are tinato iei.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Utiwit",
+      "PROCESSING": "Pworous",
+      "SENT": "Tiini",
+      "FAILED": "Kkuf",
+      "SKIPPED": "A fis",
+      "CANCELLED": "A kansel"
+    },
+    "deliveryStatus": {
+      "SENT": "tiini",
+      "FAILED": "kkuf",
+      "SKIPPED": "a skip"
+    },
+    "deliveryChannel": {
+      "IN_APP": "non-app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Ewe chon aea mi kefinita",
+      "owner": "Minneka aan",
+      "updatedBy": "A siwin ren .",
+      "role": "Wisen: {{name}}"
+    },
+    "channels": {
+      "inApp": "Non-app",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Kopwe amoielo ewe esinesin \" {{name}} \"? Ekkewe achechem mi peni seni ena ra kansel.",
+    "testPrompt": "Kopwe tinato ew tes ren ei esinesin ngeni pwisin en (non-app) ren omw kopwe aea menni ID ren lead ?",
+    "testSent": "A tinalo ngeni noum we bel: {{title}} {{message}}",
+    "headersInvalid": "Ekkewe itelap Webhook repwe chok JSON mi pung , awewe chok {\"Mumutan\": \"Ewe chon uwei xyz\"}",
+    "editTitle": "Ekkesiwin ewe Notifika",
+    "newTitle": "Notis",
+    "name": "Itei",
+    "namePlaceholder": "eg Site achechem .",
+    "whenStatus": "Nupwen emon chon emwen a nom non .",
+    "subStatus": "Ewe napanap",
+    "send": "Tinato (chon akkota)",
+    "custom": "Nonnomwun...",
+    "modeBefore": "mwen ewe fansoun mi kefilita .",
+    "modeAfter": "mwirin ewe fansoun mi kefilita .",
+    "noScheduleWarning": "Ei status ese tingor ew ran & fansoun, ina minne ew \"me mwen/non/mwirin fansoun mi affat\" esapw tongeni fis.",
+    "noScheduleFix": "Kopwe suki <strong>ewe Tingorei ew ran & fansoun</strong> ren ena fan ekkewe Napanapen & Ekkewe Kinikinin Napanapen, ika tinato Mwitir chok.",
+    "sendTo": "Kopwe tinalo ngeni (emon me emon)",
+    "recipientAssigned": "Ewe chon aea mi kefinita (ewe chon emwen)",
+    "recipientOwner": "Ewe chon tumunu ewe akaunt",
+    "recipientUpdatedBy": "Emon mi awenewena ewe napanap .",
+    "everyoneWithRole": "Meinisin mi wor wiser .",
+    "specificUsers": "Ekkewe chon aea mi affat (achocho)",
+    "inactiveNever": "Ekkewe chon aea rese kan angei ekkewe esinesin, ina mwo ika ra kefinita.",
+    "deliverVia": "Kopwe uwei ren",
+    "channelInApp": "Non-ap (belo)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook (ewe chon awora WhatsApp / SMS )",
+    "emailHint": "Email a feino ngeni emon me emon chon angei me a namwot SMTP epwe foruta won ewe nenien angang (backend/.env); tori ena fansoun ekkewe email ra makketiw usun ra skip.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Ekkewe itelap ( JSON )",
+    "content": "Masouen esinesin",
+    "title": "Iten wisan",
+    "message": "Emwirimwir",
+    "insertIntoTitle": "Kopwe makkei non Tit .",
+    "insertIntoMessage": "Kopwe makkei non ewe porous .",
+    "anyLeadField": "Ew me ew nenien lead a pwan angang, awewe chok <code1>{{example1}}</code1> ika <code2>{{example2}}</code2> .",
+    "preview": "Nengeni (sample lead)",
+    "enabled": "A tongeni",
+    "saveRule": "Safei ewe Esinesin",
+    "createRule": "Kopwe fori ewe esinesin",
+    "variables": {
+      "customerName": "Iten Lead",
+      "customerMobile": "Mobil mi emweni",
+      "customerEmail": "Ewe email mi emmweni",
+      "registrationId": "ID mi emwen",
+      "status": "Nonnomwun",
+      "subStatus": "Ewe napanap",
+      "scheduleAt": "Ranin me fansoun mi kefilita",
+      "assignedTo": "Ewe chon aea mi kefinita",
+      "updatedBy": "A siwin ren .",
+      "recipient": "Iten ewe chon angei",
+      "project": "Prokram",
+      "notes": "Noun noun",
+      "partner": "Iten chon angang"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Iwe, lupwen ewe status a fis .",
+      "AT": "Lon ewe fansoun mi kefilita .",
+      "A1D": "1 ran mwirin ewe fansoun mi kefinita (cheki mwirin)"
+    },
+    "immediately": "Iei check",
+    "atScheduled": "Lon ewe fansoun mi kefilita .",
+    "before": {
+      "MINUTES_one": "{{count}} minich me mwen ewe fansoun mi kefinita",
+      "MINUTES_other": "{{count}} minich me mwen ewe fansoun mi kefinita",
+      "HOURS_one": "{{count}} awa me mwen ewe fansoun mi kefinita",
+      "HOURS_other": "{{count}} awa me mwen ewe fansoun mi kefinita",
+      "DAYS_one": "{{count}} ran me mwen ewe fansoun mi kefinita",
+      "DAYS_other": "{{count}} ran me mwen ewe fansoun mi kefinita",
+      "WEEKS_one": "{{count}} wiik me mwen ewe fansoun mi kefinita",
+      "WEEKS_other": "{{count}} wiik me mwen ewe fansoun mi kefinita",
+      "MONTHS_one": "{{count}} maram me mwen ewe fansoun mi kefinita",
+      "MONTHS_other": "{{count}} maram me mwen ewe fansoun mi kefinita",
+      "YEARS_one": "{{count}} ier me mwen ewe fansoun mi kefinita",
+      "YEARS_other": "{{count}} ier me mwen ewe fansoun mi kefinita"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minich mwirin ewe fansoun mi kefinita",
+      "MINUTES_other": "{{count}} minich mwirin ewe fansoun mi kefinita",
+      "HOURS_one": "{{count}} awa mwirin ewe fansoun mi kefinita",
+      "HOURS_other": "{{count}} awa mwirin ewe fansoun mi kefinita",
+      "DAYS_one": "{{count}} ran mwirin ewe fansoun mi kefinita",
+      "DAYS_other": "{{count}} ran mwirin ewe fansoun mi kefinita",
+      "WEEKS_one": "{{count}} wiik mwirin ewe fansoun mi kefinita",
+      "WEEKS_other": "{{count}} wiik mwirin ewe fansoun mi kefinita",
+      "MONTHS_one": "{{count}} maram mwirin ewe fansoun mi kefinita",
+      "MONTHS_other": "{{count}} maram mwirin ewe fansoun mi kefilita",
+      "YEARS_one": "{{count}} ier mwirin ewe fansoun mi kefinita",
+      "YEARS_other": "{{count}} ier mwirin ewe fansoun mi kefinita"
+    },
+    "units": {
+      "MINUTES_one": "minich",
+      "MINUTES_other": "minich",
+      "HOURS_one": "awa",
+      "HOURS_other": "awa",
+      "DAYS_one": "ran",
+      "DAYS_other": "ran",
+      "WEEKS_one": "wik",
+      "WEEKS_other": "wiik",
+      "MONTHS_one": "maram",
+      "MONTHS_other": "maram",
+      "YEARS_one": "ier",
+      "YEARS_other": "ier"
+    }
+  }
+}

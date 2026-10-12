@@ -1,0 +1,83 @@
+{
+  "title": "Quản lý nhóm",
+  "tabs": {
+    "members": "Thành viên nhóm",
+    "roles": "Vai trò & Quyền",
+    "profile": "Hồ sơ của tôi"
+  },
+  "roles": {
+    "owner": "Người sở hữu",
+    "member": "Thành viên nhóm"
+  },
+  "profile": {
+    "updated": "Đã cập nhật hồ sơ.",
+    "basicInfo": "Thông tin cơ bản",
+    "organisationInfo": "Thông tin tổ chức",
+    "preferences": "Tùy chọn",
+    "companyName": "Tên công ty / tổ chức",
+    "city": "Thành phố",
+    "state": "Tình trạng",
+    "currencyHelp": "Được sử dụng để hiển thị ngân sách và giá trị đặt chỗ trong nhóm của bạn.",
+    "useDeviceTimezone": "Sử dụng múi giờ của thiết bị ( {{timezone}} )",
+    "securityRole": "Bảo mật & Vai trò",
+    "newPassword": "Mật khẩu mới (để trống nếu không thay đổi)",
+    "currentPassword": "Mật khẩu hiện tại",
+    "memberSince": "Thành viên kể từ",
+    "languageSaved": "Ngôn ngữ được lưu vào tài khoản của bạn - ngôn ngữ này sẽ được sử dụng trên mọi thiết bị bạn đăng nhập."
+  },
+  "members": {
+    "intro": "Thêm, chỉnh sửa, hủy kích hoạt hoặc xóa mọi người trong nhóm của bạn - họ chia sẻ quyền truy cập vào cùng các khách hàng tiềm năng.",
+    "noPermission": "Bạn không có quyền thêm, chỉnh sửa hoặc xóa thành viên nhóm.",
+    "addNew": "+ Thêm người dùng mới",
+    "passwordLabel": "{{label}} (tối thiểu 8 ký tự)",
+    "rolePermissions": "Vai trò & Quyền",
+    "adding": "Đang thêm...",
+    "addMember": "Thêm thành viên nhóm",
+    "tabAll": "Tất cả ( {{count}} )",
+    "tabActive": "Đang hoạt động ( {{count}} )",
+    "tabInactive": "Không hoạt động ( {{count}} )",
+    "searchPlaceholder": "Tìm kiếm tên hoặc tên người dùng...",
+    "allTimezones": "Tất cả các múi giờ",
+    "perPage": "Mục nhập trên mỗi trang",
+    "contact": "Liên hệ",
+    "added": "Đã thêm",
+    "toggleActive": "Đang hoạt động - nhấp để hủy kích hoạt",
+    "toggleInactive": "Không hoạt động - nhấp để kích hoạt",
+    "empty": "Chưa có thành viên nào trong nhóm.",
+    "noMatch": "Không có thành viên nào trong nhóm phù hợp với các bộ lọc này.",
+    "showing": "Đang hiển thị {{from}} - {{to}} trong tổng {{total}} mục",
+    "firstPage": "Trang đầu tiên",
+    "previousPage": "Trang trước",
+    "nextPage": "Trang tiếp theo",
+    "lastPage": "Trang cuối cùng"
+  },
+  "editMember": {
+    "title": "Chỉnh sửa người dùng",
+    "noPermission": "Bạn không có quyền chỉnh sửa thành viên nhóm.",
+    "backToTeam": "Quay lại đội",
+    "cantChangeOwn": "Bạn không thể thay đổi vai trò hoặc trạng thái của chính mình.",
+    "needsManageRoles": "Việc thay đổi vai trò của thành viên cần có quyền Quản lý vai trò.",
+    "addedBy": "Đã thêm bởi",
+    "addedOn": "Đã thêm vào"
+  },
+  "rolesPage": {
+    "intro": "Quản trị viên cấp cao, Quản trị viên và Người quản lý được tích hợp sẵn và không thể thay đổi - hãy tạo vai trò tùy chỉnh cho bất kỳ điều gì khác.",
+    "noPermission": "Bạn không có quyền quản lý vai trò.",
+    "createCustom": "+ Tạo vai trò tùy chỉnh",
+    "roleName": "Tên vai trò",
+    "permissions": "Quyền",
+    "members": "Thành viên",
+    "creating": "Đang tạo...",
+    "createRole": "Tạo vai trò",
+    "systemRole": "Vai trò hệ thống",
+    "builtIn": "Tích hợp sẵn",
+    "empty": "Chưa có vai trò nào."
+  },
+  "permissions": {
+    "MANAGE_LEADS": "Quản lý khách hàng tiềm năng (tạo, tiến độ, đặt chỗ)",
+    "MANAGE_TEAM": "Quản lý nhóm (thêm, chỉnh sửa, xóa thành viên)",
+    "MANAGE_ROLES": "Quản lý vai trò và quyền",
+    "MANAGE_SETTINGS": "Quản lý cài đặt (trường biểu mẫu khách hàng tiềm năng)",
+    "none": "Không có quyền"
+  }
+}

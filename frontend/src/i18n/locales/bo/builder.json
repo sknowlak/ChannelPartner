@@ -1,0 +1,87 @@
+{
+  "shell": {
+    "portal": "བཟོ་མཁན་དྲ་ཚིགས།",
+    "referrals": "ངོ་སྤྲོད།",
+    "builderLogin": "བཟོ་མཁན་ནང་འཛུལ།",
+    "partnerLogin": "རྒྱུད་ལམ་མཉམ་ལས་ནང་འཛུལ།"
+  },
+  "login": {
+    "title": "བཟོ་མཁན་ཐོ་འགོད།",
+    "hint": "བཟོ་མཁན་གྱི་རྩིས་ཁྲ་དེ་ Leadrat ཡིས་བཟོས་ཡོད། ཁྱེད་རང་ལ་མེད་ན་ཁྱེད་རང་གི་འཛིན་སྐྱོང་པ་ལ་དྲིས་དང་།"
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "ཁྱེད་ཀྱི་ཐག་གཅོད་ལ་སྒུག་ཡོད།",
+    "ACCEPTED": "ངོས་ལེན་བྱས།",
+    "REJECTED": "དགག་བྱ།"
+  },
+  "list": {
+    "title": "ངོ་སྤྲོད།",
+    "allProjects": "ལས་གཞི་ཚང་མ།",
+    "allStatuses": "གནས་ཚུལ་ཚང་མ།",
+    "count_other": "{{count}} ངོ་སྤྲོད།",
+    "columns": {
+      "referral": "ངོ་སྤྲོད།",
+      "customer": "མགྲོན་པོ",
+      "project": "ལས་གཞི",
+      "sourcePartner": "ཡོང་ཁུངས་རོགས་ཟླ།",
+      "status": "གོ་གནས",
+      "booking": "མངགས་ཉོ་བྱེད་པ།",
+      "registered": "ཐོ་འགོད་བྱས།"
+    },
+    "booked": "བཀོད་སྒྲིག་བྱས་ཟིན།",
+    "empty": "ད་དུང་བསྐྱར་གཏོང་བྱས་མེད།"
+  },
+  "detail": {
+    "customer": "མགྲོན་པོ",
+    "sourcePartner": "ཡོང་ཁུངས་རོགས་ཟླ།",
+    "attributionNote": "(ཁྱད་ཆོས་ - བསྒྱུར་མི་ཐུབ།)",
+    "leadStatus": "འགོ་ཁྲིད་ཀྱི་གནས་བབ།",
+    "protectedUntil": "2016 བར་སྲུང་སྐྱོབ་བྱས་ཡོད།",
+    "referral": "ངོ་སྤྲོད།",
+    "reason": "རྒྱུ་མཚན {{reason}}",
+    "booking": "མངགས་ཉོ་བྱེད་པ།",
+    "bookedOwner": "བཀོད་སྒྲིག་བྱས་ཟིན། ཁྱེད་རང་བཀོལ་སྤྱོད་ཀྱི་བདག་པོ་ཡིན།",
+    "notBooked": "བཀོད་སྒྲིག་བྱས་མེད།",
+    "sharedAfterBooking": "མངགས་ཉོ་བྱས་རྗེས་མཉམ་སྤྱོད།",
+    "accept": "ངོ་སྤྲོད་དང་ལེན་བྱེད་པ།",
+    "confirmBooking": "མངགས་ཉོ་གཏན་འཁེལ་བྱས།",
+    "reject": "ངོ་སྤྲོད་ཁས་མི་ལེན།",
+    "rejectReasonLabel": "ཁས་མི་ལེན་པའི་རྒྱུ་མཚན།",
+    "rejectConfirm": "དང་ལེན་མི་བྱེད",
+    "confirmBookingPrompt": "མངགས་ཉོ་གཏན་འཁེལ་བྱས་ཡོད་དམ། བཀོལ་སྤྱོད་ཀྱི་བདག་དབང་ཁྱེད་ལ་སྤོ་བ་དང་མཉམ་ལས་རོགས་ཟླ་དེ་ལས་འགན་ཐོབ་ཐང་ལྡན་པར་འགྱུར།",
+    "notice": {
+      "booked": "མངགས་ཉོ་གཏན་འཁེལ་བྱུང་ཡོད།",
+      "accepted": "བསྐྱར་གཏོང་དང་ལེན་བྱས།",
+      "rejected": "བསྐྱར་གཏོང་ཁས་མ་བླངས་པ་རེད།"
+    },
+    "backToReferrals": "ཕྱིར་གཏོང་ལ་ལོག"
+  },
+  "history": {
+    "title": "ལོ་རྒྱུས",
+    "actor": {
+      "system": "མ་ལག",
+      "partner": "རྒྱུད་ལམ་གྱི་རོགས་ཟླ།",
+      "admin": "Leadrat འཛིན་སྐྱོང་པ།"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "རོགས་ཟླའི་ཐོ་འགོད་འབྱོར་བྱུང་།",
+      "DUPLICATE_CHECK_COMPLETED": "འདྲ་བཤུས་ཞིབ་བཤེར་མཇུག་སྒྲིལ་ཟིན། དངོས་ཡོད་འདྲ་བཤུས་རྙེད་མེད།",
+      "REGISTRATION_ACCEPTED": "ཐོ་འགོད་དང་ལེན་བྱས་ཟིན།",
+      "PROTECTION_GRANTED_other": "{{count}} -ཉིན་སྲུང་སྐྱོང་གནང་ཡོད།",
+      "STAGE_UPDATED": "གནས་ཚུལ་ {{stage}} ལ་གསར་བཅོས་བྱས།",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} ཡིག་དུམ་གསར་བཅོས་བྱས།",
+      "LEAD_ASSIGNED": "{{name}} ལ་སྤྲད་ཡོད།",
+      "LEAD_UNASSIGNED": "ལས་འགན་མ་སྤྲད་པ།",
+      "REFERRAL_ACCEPTED": "བཟོ་བས་ངོ་སྤྲོད་དང་ལེན་བྱས།",
+      "REFERRAL_REJECTED": "བཟོ་བས་ངོ་སྤྲོད་ཁས་མ་བླངས་པ་རེད། རྒྱུ་མཚན {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} གིས་འདྲ་བཤུས་ཐོ་འགོད་ཚོད་ལྟ་བྱས་པ་ཁས་མ་བླངས།",
+      "BOOKING_COMPLETED": "མངགས་ཉོ་ལེགས་འགྲུབ་བྱུང་།",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "གཉེར་སྐྱོང་བདག་དབང་འཛུགས་སྐྲུན་མཁན་ལ་སྤྲད་པ།",
+      "PARTNER_ATTRIBUTION_PRESERVED": "རོགས་ཟླའི་ཐོབ་ཐང་ཉར་ཚགས་བྱས།",
+      "COMMISSION_ELIGIBILITY_CREATED": "ལྷན་ཚོགས་ཀྱི་ཐོབ་ཐང་བསྐྲུན་ཡོད།",
+      "HANDOVER_COMPLETED": "རྩིས་སྤྲོད་ལེགས་འགྲུབ་བྱུང་།",
+      "ADMIN_PROTECTION_RELEASED": "འཛིན་སྐྱོང་གིས་འདྲ་བཤུས་སྲུང་སྐྱོབ་སྔ་མོ་ནས་གློད་འདུག། རྒྱུ་མཚན {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "འཛིན་སྐྱོང་པས་ {{from}} ནས་ {{to}} ལ་ཐོ་འགོད་བསྐྱར་དུ་སྤྲད་ཡོད། རྒྱུ་མཚན {{reason}}"
+    }
+  }
+}

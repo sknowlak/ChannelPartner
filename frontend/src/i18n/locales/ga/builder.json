@@ -1,0 +1,99 @@
+{
+  "shell": {
+    "portal": "Tairseach Tógálaí",
+    "referrals": "Atreoruithe",
+    "builderLogin": "Logáil isteach Tógálaí",
+    "partnerLogin": "Logáil isteach Comhpháirtí Cainéal"
+  },
+  "login": {
+    "title": "Sínigh isteach tógálaí",
+    "hint": "Cruthaíonn Leadrat cuntais tógálaí . Iarr ar do riarthóir mura bhfuil ceann agat."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Ag fanacht le do chinneadh",
+    "ACCEPTED": "Glactar leis",
+    "REJECTED": "Diúltaithe"
+  },
+  "list": {
+    "title": "Atreoruithe",
+    "allProjects": "Gach tionscadal",
+    "allStatuses": "Gach stádas",
+    "count_one": "{{count}} atreorú",
+    "count_two": "{{count}} atreorú",
+    "count_few": "{{count}} atreorú",
+    "count_many": "{{count}} atreorú",
+    "count_other": "{{count}} atreorú",
+    "columns": {
+      "referral": "Atreorú",
+      "customer": "Custaiméir",
+      "project": "Tionscadal",
+      "sourcePartner": "Comhpháirtí Foinse",
+      "status": "Stádas",
+      "booking": "Áirithint",
+      "registered": "Cláraithe"
+    },
+    "booked": "Curtha in áirithe",
+    "empty": "Níl aon atreoruithe fós."
+  },
+  "detail": {
+    "customer": "Custaiméir",
+    "sourcePartner": "Comhpháirtí Foinse",
+    "attributionNote": "(cion - ní féidir é a athrú)",
+    "leadStatus": "Stádas Luaidhe",
+    "protectedUntil": "Cosanta Go dtí",
+    "referral": "Atreorú",
+    "reason": "Cúis: {{reason}}",
+    "booking": "Áirithint",
+    "bookedOwner": "Curtha in áirithe - is tusa an t-úinéir oibriúcháin",
+    "notBooked": "Gan áirithint",
+    "sharedAfterBooking": "Roinnte tar éis áirithinte",
+    "accept": "Glac le Atreorú",
+    "confirmBooking": "Deimhnigh Áirithint",
+    "reject": "Diúltaigh Atreorú",
+    "rejectReasonLabel": "An chúis leis an diúltú (léirithe don chomhpháirtí) *",
+    "rejectConfirm": "Diúltaigh",
+    "confirmBookingPrompt": "Deimhnigh an áirithint? Aistrítear úinéireacht oibriúcháin chugat agus éiríonn an comhpháirtí incháilithe le haghaidh coimisiúin.",
+    "notice": {
+      "booked": "Áirithint deimhnithe.",
+      "accepted": "Glacadh leis an tarchur.",
+      "rejected": "Diúltaíodh don tarchur."
+    },
+    "backToReferrals": "Ar Ais go Atreoruithe"
+  },
+  "history": {
+    "title": "Stair",
+    "actor": {
+      "system": "Córas",
+      "partner": "Comhpháirtí cainéal",
+      "admin": "Leadrat riarachán"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Clárú comhpháirtí faighte",
+      "DUPLICATE_CHECK_COMPLETED": "Seiceáil dhúblach críochnaithe - níor aimsíodh aon dúblach gníomhach",
+      "REGISTRATION_ACCEPTED": "Glacadh le clárú",
+      "PROTECTION_GRANTED_one": "{{count}} -deonaíodh cosaint lae",
+      "PROTECTION_GRANTED_two": "{{count}} -deonaíodh cosaint lae",
+      "PROTECTION_GRANTED_few": "{{count}} -deonaíodh cosaint lae",
+      "PROTECTION_GRANTED_many": "{{count}} -deonaíodh cosaint lae",
+      "PROTECTION_GRANTED_other": "{{count}} -deonaíodh cosaint lae",
+      "STAGE_UPDATED": "Nuashonraíodh an stádas go {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Réimse {{count}} nuashonraithe",
+      "LEAD_DETAILS_UPDATED_two": "{{count}} réimse nuashonraithe",
+      "LEAD_DETAILS_UPDATED_few": "{{count}} réimse nuashonraithe",
+      "LEAD_DETAILS_UPDATED_many": "{{count}} réimse nuashonraithe",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} réimse nuashonraithe",
+      "LEAD_ASSIGNED": "Sannta do {{name}}",
+      "LEAD_UNASSIGNED": "Neamhshannta",
+      "REFERRAL_ACCEPTED": "Ghlac Tógálaí leis an tarchur",
+      "REFERRAL_REJECTED": "Dhiúltaigh Tógálaí an tarchur. Cúis: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Iarracht clárúcháin dhúblach ó {{partner}} diúltaithe",
+      "BOOKING_COMPLETED": "Cuireadh an áirithint i gcrích",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Aistríodh úinéireacht oibríochtúil chuig Tógálaí",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Leithdháileadh comhpháirtí caomhnaithe",
+      "COMMISSION_ELIGIBILITY_CREATED": "Cruthaíodh incháilitheacht an Choimisiúin",
+      "HANDOVER_COMPLETED": "An t-aistriú críochnaithe",
+      "ADMIN_PROTECTION_RELEASED": "Scaoileadh admin cosaint dhúbailt go luath. Cúis: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Rinne an riarthóir an clárú a athshannadh ó {{from}} go {{to}} . Cúis: {{reason}}"
+    }
+  }
+}

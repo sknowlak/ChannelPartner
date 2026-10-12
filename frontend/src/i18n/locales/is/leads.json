@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Leiðbeiningar mínar",
+    "signedInAs": "Skráður inn sem {{name}} ( {{partnerId}} ) · sinnum sýnd í {{timezone}}",
+    "addLead": "+ Bæta við blýi",
+    "tabs": {
+      "all": "Allir ( {{count}} )",
+      "pending": "Í bið ( {{count}} )",
+      "booked": "Bókað ( {{count}} )"
+    },
+    "searchPlaceholder": "Leitaðu eftir nafni, farsíma eða ID ...",
+    "manageColumns": "Stjórna dálkum",
+    "rowsPerPage": "Raðir á síðu",
+    "registrationId": "ID",
+    "emptyState": "Engar vísbendingar ennþá - skráðu þig fyrsta.",
+    "noMatch": "Engar leiðir passa við þessar síur.",
+    "showing": "Sýnir {{from}} - {{to}} af {{total}} færslum",
+    "actions": {
+      "preview": "Forskoðun og fljótleg uppfærsla",
+      "history": "Saga",
+      "email": "Tölvupóstur",
+      "whatsapp": "WhatsApp",
+      "call": "Hringdu"
+    },
+    "pagination": {
+      "first": "Fyrsta síða",
+      "previous": "Fyrri síða",
+      "next": "Næsta síða",
+      "last": "Síðasta síða"
+    }
+  },
+  "columns": {
+    "status": "Staða",
+    "assignTo": "Úthluta til",
+    "booked": "Bókað",
+    "protectionUntil": "Vernd Til"
+  },
+  "booking": {
+    "booked": "Bókað",
+    "pending": "Í bið"
+  },
+  "assign": {
+    "unassigned": "Óúthlutað",
+    "owner": "{{name}} (eigandi)",
+    "inactive": "{{name}} (óvirkt)",
+    "unknownUser": "Óþekktur notandi",
+    "assignedTo": "Úthlutað til {{name}}"
+  },
+  "form": {
+    "addTitle": "Bæta við blýi",
+    "editTitle": "Breyta forystu",
+    "noPermissionAdd": "Þú hefur ekki leyfi til að skrá kynningar.",
+    "noPermissionEdit": "Þú hefur ekki leyfi til að breyta sölum.",
+    "selectPlaceholder": "Veldu...",
+    "commaSeparated": "Kommu aðskilin",
+    "phonePlaceholder": "Símanúmer",
+    "countryCode": "Landskóði"
+  },
+  "project": {
+    "none": "Ekkert verkefni ennþá (ekki vísað til)",
+    "notInList": "{{project}} (ekki á verkefnalistanum)"
+  },
+  "journey": {
+    "customer": "Viðskiptavinur",
+    "currentOwner": "Núverandi eigandi",
+    "protectionExpiry": "Vörn rennur út",
+    "leadStatus": "Leiðtogastaða",
+    "scheduled": "Á dagskrá",
+    "assignedTo": "Úthlutað til",
+    "referral": "Tilvísun",
+    "builderReason": "Ástæða byggingaraðila: {{reason}}",
+    "bookedHint": "Bókað af byggingaraðila - rekstrareign hefur færst til byggingaraðila; hæfi þinni til eignar og þóknunar er haldið.",
+    "notBookedHint": "Bókanir eru staðfestar af byggingaraðila þegar hann hefur samþykkt tilvísunina.",
+    "quickUpdate": "Fljótleg uppfærsla",
+    "leadDetails": "Upplýsingar um forystu",
+    "progressHistory": "Framfarasaga",
+    "timesIn": "(tímar í {{timezone}} )",
+    "backToMyLeads": "Aftur í Leads My",
+    "editLead": "Breyta forystu"
+  },
+  "referral": {
+    "NOT_REFERRED": "Ekki vísað (ekkert verkefni)",
+    "PENDING_BUILDER": "Bíður eftir byggingaraðila",
+    "ACCEPTED": "Samþykkt af byggingaraðila",
+    "REJECTED": "Hafnað af byggingaraðila"
+  },
+  "preview": {
+    "ariaLabel": "Forskoðun blý",
+    "title": "Forskoðun blý",
+    "source": "Heimild",
+    "location": "Staðsetning",
+    "scheduled": "Á dagskrá",
+    "registered": "Skráður",
+    "latestNote": "Nýjasta athugasemd",
+    "quickUpdate": "Fljótleg uppfærsla",
+    "fullDetails": "Allar upplýsingar",
+    "editLead": "Breyta forystu",
+    "history": "Saga"
+  },
+  "quick": {
+    "assignedTo": "Úthlutað til",
+    "status": "Staða",
+    "subStatus": "Undirstaða",
+    "selectSubStatus": "Veldu undirstöðu...",
+    "none": "Engin",
+    "scheduledAt": "Á dagskrá kl",
+    "localTime": "staðartíma",
+    "note": "Athugið",
+    "notePlaceholder": "Hvað gerðist í þessu símtali / heimsókn? (valfrjálst)",
+    "updateStatus": "Uppfæra stöðu",
+    "statusUpdated": "Staða uppfærð",
+    "bookedLocked": "Þessi leið er bókuð - ekki er lengur hægt að breyta stöðu þess.",
+    "viewOnly": "Þú getur skoðað þessa forystu en hlutverk þitt getur ekki uppfært það."
+  },
+  "history": {
+    "title": "Saga - {{registrationId}}",
+    "tabs": {
+      "all": "Allt",
+      "status": "Staða",
+      "assignment": "Verkefni",
+      "notes": "Skýringar"
+    },
+    "doneBy": "Gert af {{actor}}",
+    "system": "Kerfi",
+    "platforms": {
+      "System": "Kerfi",
+      "External": "Ytri",
+      "Web": "Vefur",
+      "Mobile": "Farsími"
+    },
+    "added": "bætt við",
+    "updated": "uppfært",
+    "empty": "(tómt)",
+    "noHistory": "Engin saga í þessum flokki ennþá.",
+    "fieldLabels": {
+      "stage": "Staða",
+      "subStatus": "Undirstaða",
+      "scheduledAt": "Dagskrá",
+      "notes": "Skýringar",
+      "assignedTo": "Úthlutað til"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Félagsskráning móttekin",
+      "DUPLICATE_CHECK_COMPLETED": "Tvítekningu lokið - engin virk tvítekning fannst",
+      "REGISTRATION_ACCEPTED": "Tekið er við skráningu",
+      "PROTECTION_GRANTED_one": "{{count}} daga vernd veitt",
+      "PROTECTION_GRANTED_other": "{{count}} daga vernd veitt",
+      "REGISTRATION_ATTEMPT_REJECTED": "Tvítekinni skráningartilraun {{partnerId}} hafnað",
+      "LEAD_DETAILS_UPDATED_one": "Uppfærður {{count}} reitur",
+      "LEAD_DETAILS_UPDATED_other": "Uppfærðir {{count}} reitir",
+      "STAGE_UPDATED": "Staða uppfærð í {{status}}",
+      "LEAD_ASSIGNED": "Úthlutað til {{name}}",
+      "LEAD_UNASSIGNED": "Óúthlutað",
+      "BOOKING_COMPLETED": "Bókun lokið",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Rekstrareign færð til Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Eign maka varðveitt",
+      "COMMISSION_ELIGIBILITY_CREATED": "Framkvæmdastjórnarhæfi skapað",
+      "HANDOVER_COMPLETED": "Afhending lokið",
+      "REFERRAL_ACCEPTED": "Byggingaraðili samþykkti tilvísunina",
+      "REFERRAL_REJECTED": "Byggingaraðili hafnaði tilvísuninni. Ástæða: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Stjórnandi gaf út tvítekna vernd snemma. Ástæða: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Stjórnandi endurúthlutaði skráningu frá {{from}} í {{to}} . Ástæða: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Stjórna dálkum",
+    "hint": "Dragðu til að endurraða · hakaðu til að sýna",
+    "showAll": "Sýna allt",
+    "resetDefault": "Endurstilla í sjálfgefið"
+  },
+  "filters": {
+    "title": "Síur",
+    "allProjects": "Öll verkefni",
+    "any": "Hvaða sem er",
+    "noFields": "Engir aðrir reitir sem hægt er að sía eru virkir ennþá (Stillingar > Leið).",
+    "clearAll": "Hreinsa allt"
+  },
+  "phone": {
+    "MISSING": "Símanúmer er áskilið.",
+    "INVALID": "Vinsamlegast sláðu inn gilt símanúmer.",
+    "TOO_SHORT": "Símanúmerið er of stutt.",
+    "TOO_LONG": "Símanúmerið er of langt.",
+    "INVALID_FOR_COUNTRY": "Þetta símanúmer er ekki gilt fyrir {{country}} .",
+    "COUNTRY_MISMATCH": "Vinsamlegast veldu réttan landskóða.",
+    "NOT_MOBILE": "Vinsamlegast sláðu inn farsímanúmer, ekki jarðlína."
+  }
+}

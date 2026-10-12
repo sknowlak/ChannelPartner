@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Zokonda",
+    "noPermission": "Mulibe chilolezo chowongolera makonda."
+  },
+  "categories": {
+    "lead": "Kutsogolera",
+    "user": "Wogwiritsa",
+    "integrations": "Kuphatikiza"
+  },
+  "leadTabs": {
+    "fields": "Minda",
+    "statuses": "Ma Status & Sub-Status",
+    "notifications": "Zidziwitso & Okonza"
+  },
+  "fields": {
+    "leadIntro": "Konzani mawonekedwe otsogolera: yambitsani / zimitsani minda, ikani chizindikiro pakufunika, kapena onjezani makonda anu.",
+    "userIntro": "Konzani Onjezani/Sinthani mawonekedwe a membala wa Gulu: yambitsani / zimitsani minda, ikani chizindikiro pakufunika, kapena onjezani minda yanu.",
+    "addCustomField": "+ Onjezani Custom Field",
+    "fieldLabel": "Field Label",
+    "group": "Gulu",
+    "groupPlaceholderLead": "mwachitsanzo Inquiry Info",
+    "groupPlaceholderUser": "mwachitsanzo Tsatanetsatane Wowonjezera",
+    "dataType": "Mtundu wa Data",
+    "options": "Zosankha (zopatulidwa koma)",
+    "requiredLead": "Zofunikira - ogwirizana nawo pagulu lanu ayenera kulemba izi kuti alembetse otsogolera",
+    "requiredUser": "Zofunikira - ziyenera kudzazidwa powonjezera membala wa gulu",
+    "creating": "Kupanga...",
+    "createField": "Pangani Munda",
+    "columns": {
+      "field": "Munda",
+      "group": "Gulu",
+      "type": "Mtundu",
+      "required": "Chofunikira",
+      "enabled": "Yayatsidwa",
+      "kind": "Zokoma"
+    },
+    "kind": {
+      "custom": "Mwambo",
+      "core": "Kore (chotsekedwa)",
+      "standard": "Standard"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Mawu",
+    "TEXTAREA": "Mawu aatali",
+    "NUMBER": "Nambala",
+    "CURRENCY": "Ndalama",
+    "DATE": "Tsiku",
+    "SELECT": "Tsitsa m'munsi",
+    "LIST": "Mndandanda"
+  },
+  "picker": {
+    "searchPlaceholder": "Sakani minda yotsogolera...",
+    "summary": "{{shown}} awonetsedwa · {{mandatory}} zovomerezeka",
+    "mandatory": "Zovomerezeka",
+    "noMatch": "Palibe minda yofanana."
+  },
+  "statuses": {
+    "intro": "Maudindo anu otsogola ndi magawo ang'onoang'ono - zomwe aliyense amafunsa (tsiku ndi nthawi, magawo otsogola) wina akasintha chiwongolero chake.",
+    "add": "+ Onjezani Status",
+    "columns": {
+      "order": "Order",
+      "status": "Mkhalidwe",
+      "subStatuses": "Ma Sub-Status",
+      "asksFor": "Amafunsa",
+      "active": "Yogwira"
+    },
+    "moveUp": "Kwerani mmwamba",
+    "moveDown": "Yendani pansi",
+    "defaultBadge": "Zofikira zatsopano",
+    "bookingBadge": "Kusungitsa malo",
+    "asksForLabel": "Amafunsa {{label}}",
+    "asksForDateTime": "Amafunsa tsiku ndi nthawi",
+    "none": "Palibe",
+    "dateTime": "Tsiku & nthawi",
+    "scheduledOn": "pa {{names}}",
+    "fieldsSummary_one": "{{count}} malo ( {{mandatory}} ovomerezeka)",
+    "fieldsSummary_other": "{{count}} minda ( {{mandatory}} yovomerezeka)",
+    "deleteConfirm": "Chotsani mawonekedwe \" {{name}} \"? Izi sizingasinthidwe.",
+    "editTitle": "Sinthani Makhalidwe - {{name}}",
+    "newTitle": "Udindo Watsopano",
+    "name": "Dzina la Status",
+    "colour": "Mtundu",
+    "active": "Yogwira",
+    "isDefault": "Chisinthiko cha otsogolera atsopano",
+    "isBooking": "Mkhalidwe wosungitsa (wokhazikitsidwa ndi Kusungitsa Kwathunthu)",
+    "whenMoved": "Pamene otsogolera asunthidwa ku izi",
+    "askSchedule": "Funsani tsiku ndi nthawi (mndandanda)",
+    "scheduleLabelPlaceholder": "Lemberani, mwachitsanzo Pitani ku",
+    "fieldsToShow": "Magawo otsogolera kuti awonekere pa fomu yosinthira",
+    "subStatusesTitle": "Ma Sub-Status",
+    "subStatusesHint": "Chigawo chilichonse chikhoza kufunsa tsiku ndi nthawi yake ndikuwonjezera magawo ake - omwe akuwonetsedwa pamwamba pa magawo omwe ali pamwambapa.",
+    "subStatusName": "Dzina laling'ono",
+    "subFields": "Minda ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Tsiku ndi nthawi, mwachitsanzo Imbaninso pa",
+    "addSubStatus": "+ Onjezani Sub-Status",
+    "saveStatus": "Sungani Status",
+    "createStatus": "Pangani Status"
+  },
+  "notifications": {
+    "intro": "Dziwitsani anthu oyenerera pamene otsogolera afika pamalo ake - mwamsanga, kapena nthawi yoikidwiratu lisanafike/litatha tsiku ndi nthawi yomwe yakonzedwa.",
+    "add": "+ Onjezani Zidziwitso",
+    "columns": {
+      "notification": "Chidziwitso",
+      "whenStatusIs": "Pamene Mkhalidwe Uli",
+      "sends": "Amatumiza",
+      "to": "Ku",
+      "via": "Kudzera",
+      "enabled": "Yayatsidwa"
+    },
+    "anyStatus": "Udindo uliwonse",
+    "anySubStatus": "Mtundu uliwonse",
+    "inactiveOption": "{{name}} (osagwira ntchito)",
+    "emptyRules": "Palibe zidziwitso pano - onjezani imodzi kuti muchenjeze gulu lanu mtsogoleri akafika paudindo.",
+    "jobs": {
+      "title": "Zokonzedwa & Zotumizidwa",
+      "firesAt": "Moto Pa",
+      "notification": "Chidziwitso",
+      "lead": "Kutsogolera",
+      "status": "Mkhalidwe",
+      "details": "Tsatanetsatane",
+      "empty": "Palibe chomwe chakonzedwa kapena kutumizidwa.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Ikuyembekezera",
+      "PROCESSING": "Kukonza",
+      "SENT": "Watumizidwa",
+      "FAILED": "Zalephera",
+      "SKIPPED": "Alumpha",
+      "CANCELLED": "Walephereka"
+    },
+    "deliveryStatus": {
+      "SENT": "kutumiza",
+      "FAILED": "analephera",
+      "SKIPPED": "kulumpha"
+    },
+    "deliveryChannel": {
+      "IN_APP": "mu-app",
+      "EMAIL": "imelo",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Wogwiritsa ntchito",
+      "owner": "Mwini",
+      "updatedBy": "Zasinthidwa ndi",
+      "role": "Udindo: {{name}}"
+    },
+    "channels": {
+      "inApp": "Mu-app",
+      "email": "Imelo",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Chotsani chidziwitso \" {{name}} \"? Zikumbutso zomwe zikuyembekezera zachotsedwa.",
+    "testPrompt": "Tumizani mayeso a chidziwitsochi kwa inu nokha (mu-pulogalamu) pogwiritsa ntchito ID yotsogolera ?",
+    "testSent": "Zatumizidwa ku belu lanu: {{title}} {{message}}",
+    "headersInvalid": "Mitu Webhook iyenera kukhala yovomerezeka JSON , mwachitsanzo {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Sinthani Chidziwitso",
+    "newTitle": "Chidziwitso Chatsopano",
+    "name": "Dzina",
+    "namePlaceholder": "mwachitsanzo, chikumbutso chochezera",
+    "whenStatus": "Pamene udindo wa mtsogoleri uli",
+    "subStatus": "Gawo laling'ono",
+    "send": "Tumizani (mndandanda)",
+    "custom": "Mwamakonda...",
+    "modeBefore": "nthawi isanakwane",
+    "modeAfter": "pambuyo pa nthawi yoikika",
+    "noScheduleWarning": "Izi sizimafunsa tsiku ndi nthawi, chifukwa chake chidziwitso cha \"nthawi isanachitike/pa/pambuyo pake\" sichingawombe.",
+    "noScheduleFix": "Yatsani <strong>Funsani tsiku ndi nthawi</strong> yake pansi pa Status & Sub-Status, kapena tumizani Pompopompo.",
+    "sendTo": "Tumizani ku (zophatikiza zilizonse)",
+    "recipientAssigned": "Wogwiritsa ntchito (mwini wamkulu)",
+    "recipientOwner": "Mwini akaunti / admin",
+    "recipientUpdatedBy": "Munthu yemwe adasintha mawonekedwe",
+    "everyoneWithRole": "Aliyense amene ali ndi udindo",
+    "specificUsers": "Ogwiritsa ntchito (ogwira)",
+    "inactiveNever": "Osagwiritsa ntchito salandira zidziwitso, ngakhale atasankhidwa.",
+    "deliverVia": "Tulutsani kudzera",
+    "channelInApp": "Mu-app (belu)",
+    "channelEmail": "Imelo",
+    "channelWebhook": "Webhook (wapa WhatsApp / SMS )",
+    "emailHint": "Imelo imapita ku adilesi ya imelo ya wolandira aliyense ndipo imafunikira SMTP kukhazikitsidwa pa seva (backend/.env); mpaka ma imelo omwe amatumizidwa amalowetsedwa ngati kudumpha.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Mitu ( JSON )",
+    "content": "Zolemba zidziwitso",
+    "title": "Mutu",
+    "message": "Uthenga",
+    "insertIntoTitle": "Lowetsani mu Mutu",
+    "insertIntoMessage": "Lowetsani mu Uthenga",
+    "anyLeadField": "Gawo lililonse lotsogolera limagwiranso ntchito, mwachitsanzo <code1>{{example1}}</code1> kapena <code2>{{example2}}</code2> .",
+    "preview": "Kuwoneratu (chitsanzo chotsogolera)",
+    "enabled": "Yayatsidwa",
+    "saveRule": "Sungani Chidziwitso",
+    "createRule": "Pangani Chidziwitso",
+    "variables": {
+      "customerName": "Dzina lotsogolera",
+      "customerMobile": "Kutsogolera mafoni",
+      "customerEmail": "Imelo yotsogolera",
+      "registrationId": "ID yotsogolera",
+      "status": "Mkhalidwe",
+      "subStatus": "Gawo laling'ono",
+      "scheduleAt": "Tsiku ndi nthawi yokonzekera",
+      "assignedTo": "Wogwiritsa ntchito",
+      "updatedBy": "Zasinthidwa ndi",
+      "recipient": "Dzina la wolandira",
+      "project": "Ntchito",
+      "notes": "Ndemanga zaposachedwa",
+      "partner": "Dzina lothandizira"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Nthawi yomweyo pomwe mawonekedwe akhazikitsidwa",
+      "AT": "Pa nthawi yokonzedwa",
+      "A1D": "Tsiku la 1 pambuyo pa nthawi yoikidwiratu (cheke chotsatira)"
+    },
+    "immediately": "Nthawi yomweyo",
+    "atScheduled": "Pa nthawi yoikika",
+    "before": {
+      "MINUTES_one": "Mphindi {{count}} nthawi yokonzedwa isanakwane",
+      "MINUTES_other": "Mphindi {{count}} nthawi yokonzedwa isanakwane",
+      "HOURS_one": "Ola {{count}} nthawi yokonzedwa isanakwane",
+      "HOURS_other": "{{count}} maola nthawi yokonzedwa isanakwane",
+      "DAYS_one": "{{count}} tsiku lisanafike nthawi yoikidwiratu",
+      "DAYS_other": "Masiku {{count}} nthawi yokonzedwa isanakwane",
+      "WEEKS_one": "{{count}} sabata isanakwane nthawi yoikika",
+      "WEEKS_other": "{{count}} milungu isanakwane nthawi yoikika",
+      "MONTHS_one": "{{count}} mwezi umodzi isanakwane nthawi yokonzedwa",
+      "MONTHS_other": "{{count}} miyezi isanakwane nthawi yoikidwiratu",
+      "YEARS_one": "{{count}} chaka nthawi yoikika isanakwane",
+      "YEARS_other": "{{count}} nthawi yoikika isanakwane"
+    },
+    "after": {
+      "MINUTES_one": "Mphindi {{count}} pambuyo pa nthawi yomwe idakonzedwa",
+      "MINUTES_other": "{{count}} mphindi pambuyo pa nthawi yomwe idakonzedwa",
+      "HOURS_one": "Ola {{count}} pambuyo pa nthawi yomwe idakonzedwa",
+      "HOURS_other": "{{count}} maola pambuyo pa nthawi yomwe idakonzedwa",
+      "DAYS_one": "{{count}} tsiku pambuyo pa nthawi yomwe idakonzedwa",
+      "DAYS_other": "{{count}} masiku pambuyo pa nthawi yomwe idakonzedwa",
+      "WEEKS_one": "{{count}} sabata pambuyo pa nthawi yomwe idakonzedwa",
+      "WEEKS_other": "{{count}} masabata pambuyo pa nthawi yomwe idakonzedwa",
+      "MONTHS_one": "{{count}} mwezi pambuyo pa nthawi yomwe idakonzedwa",
+      "MONTHS_other": "{{count}} miyezi pambuyo pa nthawi yomwe idakonzedwa",
+      "YEARS_one": "{{count}} chaka pambuyo pa nthawi yomwe idakonzedwa",
+      "YEARS_other": "{{count}} zaka pambuyo pa nthawi yomwe idakonzedwa"
+    },
+    "units": {
+      "MINUTES_one": "miniti",
+      "MINUTES_other": "mphindi",
+      "HOURS_one": "ola",
+      "HOURS_other": "maola",
+      "DAYS_one": "tsiku",
+      "DAYS_other": "masiku",
+      "WEEKS_one": "sabata",
+      "WEEKS_other": "masabata",
+      "MONTHS_one": "mwezi",
+      "MONTHS_other": "miyezi",
+      "YEARS_one": "chaka",
+      "YEARS_other": "zaka"
+    }
+  }
+}

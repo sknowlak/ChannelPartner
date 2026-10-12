@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal nin Paratogdok",
+    "referrals": "Mga Referral",
+    "builderLogin": "Pag-login kan Paratogdok",
+    "partnerLogin": "Pag-login kan Kasosyo sa Channel"
+  },
+  "login": {
+    "title": "Maglaog an paratogdok",
+    "hint": "An mga account nin paratogdok ginibo kan Leadrat . Haputon an saimong administrador kun mayo ka."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Naghahalat kan saimong desisyon",
+    "ACCEPTED": "Inako",
+    "REJECTED": "Sinayumahan"
+  },
+  "list": {
+    "title": "Mga Referral",
+    "allProjects": "Gabos na proyekto",
+    "allStatuses": "Gabos na estado",
+    "count_one": "{{count}} referral",
+    "count_other": "{{count}} mga referral",
+    "columns": {
+      "referral": "Referral",
+      "customer": "Kustomer",
+      "project": "Proyekto",
+      "sourcePartner": "Source Partner",
+      "status": "Estado",
+      "booking": "Pagpareserba",
+      "registered": "Rehistrado"
+    },
+    "booked": "Naka-book na",
+    "empty": "Mayo pang mga referral."
+  },
+  "detail": {
+    "customer": "Kustomer",
+    "sourcePartner": "Source Partner",
+    "attributionNote": "(attribution - dai pwedeng baguhon)",
+    "leadStatus": "Kamugtakan nin Pangenot",
+    "protectedUntil": "Protektado Sagkod",
+    "referral": "Referral",
+    "reason": "Rason: {{reason}}",
+    "booking": "Pagpareserba",
+    "bookedOwner": "Nakapareserba na - ika an kagsadiri kan operasyon",
+    "notBooked": "Dai pa naka-book",
+    "sharedAfterBooking": "Ipinaabot pagkatapos mag-book",
+    "accept": "Akoon an Referral",
+    "confirmBooking": "Kumpirmaron an Pag-book",
+    "reject": "Isikwal an Referral",
+    "rejectReasonLabel": "Rason sa pagsikwal (ipinahiling sa kapadis) *",
+    "rejectConfirm": "Sikwal",
+    "confirmBookingPrompt": "Kumpirmaron an pagpareserba? An pagsasadiri sa operasyon minabalyo saimo asin an kapadis nagigin kwalipikado para sa komisyon.",
+    "notice": {
+      "booked": "Kumpirmado an pagpareserba.",
+      "accepted": "Inako an referral.",
+      "rejected": "Sinayumahan an pagrefer."
+    },
+    "backToReferrals": "Balik sa mga Referral"
+  },
+  "history": {
+    "title": "Kasaysayan",
+    "actor": {
+      "system": "Sistema",
+      "partner": "Kapartner sa channel",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Naresibe an rehistrasyon kan kasosyo",
+      "DUPLICATE_CHECK_COMPLETED": "Natapos na an duplikadong tsek - mayo nin aktibong duplikado na nakua",
+      "REGISTRATION_ACCEPTED": "Inaako an rehistrasyon",
+      "PROTECTION_GRANTED_one": "{{count}} -aldaw na proteksyon itinao",
+      "PROTECTION_GRANTED_other": "{{count}} -aldaw na proteksyon itinao",
+      "STAGE_UPDATED": "An estado na-update sa {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Na-update an {{count}} na larangan",
+      "LEAD_DETAILS_UPDATED_other": "Pinakarhay na {{count}} na mga larangan",
+      "LEAD_ASSIGNED": "Itinao sa {{name}}",
+      "LEAD_UNASSIGNED": "Dai Nakaasignar",
+      "REFERRAL_ACCEPTED": "Inako kan paratogdok an referral",
+      "REFERRAL_REJECTED": "Sinayumahan kan paratogdok an referral. Rason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "An dobleng pagprobar sa pagrehistro kan {{partner}} isinikwal",
+      "BOOKING_COMPLETED": "Natapos na an pagpareserba",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "An pagsasadiri sa operasyon ibinalyo sa Paratogdok",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Napreserbar an atribusyon kan kapadis",
+      "COMMISSION_ELIGIBILITY_CREATED": "An kwalipikasyon sa komisyon ginibo",
+      "HANDOVER_COMPLETED": "Natapos an pag-abot",
+      "ADMIN_PROTECTION_RELEASED": "Amay na pinaluwas kan admin an duplicate na proteksyon. Rason: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Ibinalik kan Admin an rehistrasyon gikan sa {{from}} pasiring sa {{to}} . Rason: {{reason}}"
+    }
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Konfigurasaun sira",
+    "noPermission": "Ita-boot laiha lisensa atu jere konfigurasaun sira."
+  },
+  "categories": {
+    "lead": "Lidera",
+    "user": "Uzuáriu",
+    "integrations": "Integrasaun sira"
+  },
+  "leadTabs": {
+    "fields": "Kampu sira",
+    "statuses": "Estatutu sira & Sub-Estatutu sira",
+    "notifications": "Notifikasaun sira & Ajendadór sira"
+  },
+  "fields": {
+    "leadIntro": "Konfigura formuláriu kaptura lead nian: ativa/dezativa kampu sira, marka sira ne'ebé maka presiza, ka aumenta ita-boot nia kampu personalizadu rasik.",
+    "userIntro": "Konfigura formuláriu Hatama/Edit Membru Ekipa nian: ativa/dezativa kampu sira, marka sira ne'ebé maka presiza, ka aumenta ita-boot nia kampu personalizadu rasik.",
+    "addCustomField": "+ Hatama Kampu Personalizadu",
+    "fieldLabel": "Label Kampu nian",
+    "group": "Grupu",
+    "groupPlaceholderLead": "ezemplu, Informasaun kona-ba Inkéritu",
+    "groupPlaceholderUser": "ezemplu Detallu Adisionál sira",
+    "dataType": "Tipu Dadus",
+    "options": "Opsaun sira (haketak ho vírgula)",
+    "requiredLead": "Presiza - parseiru sira iha ita-boot nia ekipa tenke prenxe ida-ne'e atu rejista lead ida",
+    "requiredUser": "Presiza - tenke prenxe bainhira aumenta membru ekipa ida",
+    "creating": "Kria hela...",
+    "createField": "Kria Kampu",
+    "columns": {
+      "field": "Kampu",
+      "group": "Grupu",
+      "type": "Tipu",
+      "required": "Presija",
+      "enabled": "Ativadu",
+      "kind": "Hanesan"
+    },
+    "kind": {
+      "custom": "Kostume",
+      "core": "Núkleu (travadu)",
+      "standard": "Padraun"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Testu",
+    "TEXTAREA": "Testu naruk",
+    "NUMBER": "Númeru",
+    "CURRENCY": "Moeda",
+    "DATE": "Data",
+    "SELECT": "Dropdown",
+    "LIST": "Lista"
+  },
+  "picker": {
+    "searchPlaceholder": "Buka kampu lead sira...",
+    "summary": "{{shown}} hatudu · {{mandatory}} obrigatóriu",
+    "mandatory": "Obrigatóriu",
+    "noMatch": "Laiha kampu sira ne'ebé hanesan."
+  },
+  "statuses": {
+    "intro": "Ita-boot nia estatutu sira no sub-estatutu sira - saida maka ida-idak husu (data & oras, kampu sira lead nian) bainhira ema ida atualiza lead ida ba ida-ne'e.",
+    "add": "+ Hatama Estatutu",
+    "columns": {
+      "order": "Orden",
+      "status": "Estadu",
+      "subStatuses": "Sub-Estatutu sira",
+      "asksFor": "Husu ba",
+      "active": "Ativu"
+    },
+    "moveUp": "Hakat ba leten",
+    "moveDown": "Hakat ba kraik",
+    "defaultBadge": "Padraun ba lead foun sira",
+    "bookingBadge": "Estatutu rezervasaun nian",
+    "asksForLabel": "Husu ba {{label}}",
+    "asksForDateTime": "Husu data & oras",
+    "none": "La iha",
+    "dateTime": "Data & oras",
+    "scheduledOn": "iha {{names}}",
+    "fieldsSummary_one": "{{count}} kampu ( {{mandatory}} obrigatóriu)",
+    "fieldsSummary_other": "{{count}} kampu sira ( {{mandatory}} obrigatóriu)",
+    "deleteConfirm": "Apaga estatutu \" {{name}} \"? Ida-ne'e labele halo fali.",
+    "editTitle": "Edita Estatutu - {{name}}",
+    "newTitle": "Estatutu Foun",
+    "name": "Naran Estatutu",
+    "colour": "Kor",
+    "active": "Ativu",
+    "isDefault": "Estatutu padraun ba lead foun sira",
+    "isBooking": "Estatutu rezervasaun nian (hatur tuir Rezervasaun Kompletu)",
+    "whenMoved": "Bainhira lead ida muda ba estatutu ida-ne'e",
+    "askSchedule": "Husu data & oras (ajendadór)",
+    "scheduleLabelPlaceholder": "Label, ezemplu Vizita iha",
+    "fieldsToShow": "Kampu sira atu hatudu iha formuláriu atualizasaun nian",
+    "subStatusesTitle": "Sub-Estatutu sira",
+    "subStatusesHint": "Sub-estatutu ida-idak bele husu nia data & oras rasik no aumenta nia kampu rasik - hatudu iha estatutu nia kampu sira iha leten.",
+    "subStatusName": "Naran sub-estatutu",
+    "subFields": "Kampu sira ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Label data & oras, n.e. Liga fali iha",
+    "addSubStatus": "+ Hatama Sub-Estatutu",
+    "saveStatus": "Salva Estatutu",
+    "createStatus": "Kria Estatutu"
+  },
+  "notifications": {
+    "intro": "Fó hatene ba ema sira ne'ebé loos bainhira lead ida atinji estatutu ida - kedas, ka tempu ne'ebé determinadu antes/depois data & oras ne'ebé ajenda ona.",
+    "add": "+ Hatama Notifikasaun",
+    "columns": {
+      "notification": "Notifikasaun",
+      "whenStatusIs": "Bainhira Estatutu",
+      "sends": "Haruka",
+      "to": "Ba",
+      "via": "Liu husi",
+      "enabled": "Ativadu"
+    },
+    "anyStatus": "Estatutu ruma",
+    "anySubStatus": "Sub-estatutu ruma",
+    "inactiveOption": "{{name}} (la ativu)",
+    "emptyRules": "Seidauk iha notifikasaun - aumenta ida atu alerta ita-boot nia ekipa bainhira lead ida atinji estatutu ida.",
+    "jobs": {
+      "title": "Ajendadu & Haruka",
+      "firesAt": "Ahi iha",
+      "notification": "Notifikasaun",
+      "lead": "Lidera",
+      "status": "Estadu",
+      "details": "Detallus",
+      "empty": "Seidauk iha buat ida ne'ebé maka ajenda ka haruka.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Pendente",
+      "PROCESSING": "Prosesamentu",
+      "SENT": "Manda ona",
+      "FAILED": "Falla",
+      "SKIPPED": "Salta tiha ona",
+      "CANCELLED": "Kanseladu"
+    },
+    "deliveryStatus": {
+      "SENT": "manda ona",
+      "FAILED": "falla",
+      "SKIPPED": "la liu"
+    },
+    "deliveryChannel": {
+      "IN_APP": "iha-aplikasaun",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Utilizadór ne'ebé atribui ona",
+      "owner": "Na'in",
+      "updatedBy": "Atualizadu hosi",
+      "role": "Papél: {{name}}"
+    },
+    "channels": {
+      "inApp": "Iha aplikasaun",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Apaga notifikasaun \" {{name}} \"? Lembransa sira ne'ebé pendente hosi ida-ne'e kansela ona.",
+    "testPrompt": "Haruka teste ida ba notifikasaun ida-ne'e ba ita-boot nia an rasik (iha aplikasaun) uza ID lead ne'ebé?",
+    "testSent": "Haruka ba ita-boot nia sinál: {{title}} {{message}}",
+    "headersInvalid": "Webhook nia ulun sira tenke sai JSON ne'ebé válidu, ezemplu {\"Autorizasaun\": \"Portadór xyz\"}",
+    "editTitle": "Edita Notifikasaun",
+    "newTitle": "Notifikasaun Foun",
+    "name": "Naran",
+    "namePlaceholder": "ezemplu Lembransa vizita ba fatin",
+    "whenStatus": "Bainhira lideransa ida nia estatutu maka",
+    "subStatus": "Sub-estatutu",
+    "send": "Haruka (ajendadór)",
+    "custom": "Kostume...",
+    "modeBefore": "antes oras ne'ebé marka ona",
+    "modeAfter": "hafoin tempu ne'ebé marka ona",
+    "noScheduleWarning": "Estatutu ida-ne'e la husu data & oras, nune'e notifikasaun \"antes/iha/depois oras ne'ebé marka ona\" sei nunka mosu.",
+    "noScheduleFix": "Ativa <strong>Husu data & oras</strong> ba ida-ne'e iha Estatutu sira & Sub-Estatutu sira, ka haruka kedas.",
+    "sendTo": "Haruka ba (kombinasaun ruma)",
+    "recipientAssigned": "Utilizadór atribuidu (na'in prinsipál)",
+    "recipientOwner": "Na'in ba konta / admin",
+    "recipientUpdatedBy": "Ema ne'ebé atualiza estatutu",
+    "everyoneWithRole": "Ema hotu ho papél",
+    "specificUsers": "Utilizadór espesífiku sira (ativu)",
+    "inactiveNever": "Utilizadór inativu sira nunka simu notifikasaun sira, maski hili ona.",
+    "deliverVia": "Entrega liuhosi",
+    "channelInApp": "Iha aplikasaun (sino)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook (fornesedór WhatsApp / SMS )",
+    "emailHint": "Email ba iha destinatáriu ida-idak nia enderesu email no presiza SMTP ne'ebé maka konfigura iha servidór (backend/.env); to'o entaun email sira ne'ebé haruka sei rejista hanesan la liu.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Headers ( JSON )",
+    "content": "Konteúdu notifikasaun nian",
+    "title": "Titulu",
+    "message": "Mensajen",
+    "insertIntoTitle": "Hatama iha Títulu",
+    "insertIntoMessage": "Hatama iha Mensajen",
+    "anyLeadField": "Kualkér kampu prinsipál funsiona mós, ezemplu <code1>{{example1}}</code1> ka <code2>{{example2}}</code2> .",
+    "preview": "Previzaun (amostra lead)",
+    "enabled": "Ativadu",
+    "saveRule": "Rai Notifikasaun",
+    "createRule": "Kria Notifikasaun",
+    "variables": {
+      "customerName": "Naran prinsipál",
+      "customerMobile": "Telemóvel prinsipál",
+      "customerEmail": "Email prinsipál",
+      "registrationId": "ID lideransa",
+      "status": "Estadu",
+      "subStatus": "Sub-estatutu",
+      "scheduleAt": "Data & oras ne'ebé ajenda ona",
+      "assignedTo": "Utilizadór ne'ebé atribui ona",
+      "updatedBy": "Atualizadu hosi",
+      "recipient": "Naran destinatáriu",
+      "project": "Projetu",
+      "notes": "Nota ikus liu",
+      "partner": "Parseiru nia naran"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Imediatamente bainhira estatutu ne'e tau ona",
+      "AT": "Iha tempu ne'ebé maka marka ona",
+      "A1D": "Loron 1 hafoin tempu ne'ebé maka marka ona (verifikasaun akompañamentu)"
+    },
+    "immediately": "Kedas",
+    "atScheduled": "Iha tempu ne'ebé maka marka ona",
+    "before": {
+      "MINUTES_one": "{{count}} minutu antes oras ne'ebé maka marka ona",
+      "MINUTES_other": "{{count}} minutu antes oras ne'ebé maka marka ona",
+      "HOURS_one": "{{count}} oras antes oras ne'ebé maka marka ona",
+      "HOURS_other": "{{count}} oras antes oras ne'ebé maka marka ona",
+      "DAYS_one": "{{count}} loron antes oras ne'ebé maka marka ona",
+      "DAYS_other": "{{count}} loron antes oras ne'ebé maka marka ona",
+      "WEEKS_one": "{{count}} semana antes oras ne'ebé maka marka ona",
+      "WEEKS_other": "{{count}} semana sira antes oras ne'ebé maka marka ona",
+      "MONTHS_one": "{{count}} fulan antes tempu ne'ebé maka marka ona",
+      "MONTHS_other": "{{count}} fulan sira antes tempu ne'ebé maka marka ona",
+      "YEARS_one": "{{count}} tinan antes tempu ne'ebé maka marka ona",
+      "YEARS_other": "{{count}} tinan antes tempu ne'ebé maka marka ona"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minutu hafoin oras ne'ebé maka marka ona",
+      "MINUTES_other": "{{count}} minutu sira hafoin oras ne'ebé maka marka ona",
+      "HOURS_one": "{{count}} oras hafoin oras ne'ebé maka marka ona",
+      "HOURS_other": "{{count}} oras sira hafoin oras ne'ebé maka marka ona",
+      "DAYS_one": "{{count}} loron hafoin oras ne'ebé maka marka ona",
+      "DAYS_other": "{{count}} loron sira hafoin tempu ne'ebé maka marka ona",
+      "WEEKS_one": "{{count}} semana hafoin tempu ne'ebé maka marka ona",
+      "WEEKS_other": "{{count}} semana sira hafoin tempu ne'ebé maka marka ona",
+      "MONTHS_one": "{{count}} fulan hafoin tempu ne'ebé maka marka ona",
+      "MONTHS_other": "{{count}} fulan sira hafoin tempu ne'ebé maka marka ona",
+      "YEARS_one": "{{count}} tinan hafoin tempu ne'ebé maka marka ona",
+      "YEARS_other": "{{count}} tinan sira hafoin tempu ne'ebé maka marka ona"
+    },
+    "units": {
+      "MINUTES_one": "minutu",
+      "MINUTES_other": "minutu",
+      "HOURS_one": "oras",
+      "HOURS_other": "oras",
+      "DAYS_one": "loron",
+      "DAYS_other": "loron",
+      "WEEKS_one": "semana",
+      "WEEKS_other": "semana sira",
+      "MONTHS_one": "fulan",
+      "MONTHS_other": "fulan",
+      "YEARS_one": "tinan",
+      "YEARS_other": "tinan"
+    }
+  }
+}

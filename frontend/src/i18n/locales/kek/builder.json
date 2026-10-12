@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal re laj kab’lanel",
+    "referrals": "Xtaqlankil",
+    "builderLogin": "Xk’ulub’il laj kab’lanel",
+    "partnerLogin": "Xk’ulub’il li Socio re li Canal"
+  },
+  "login": {
+    "title": "Xk’ab’a’ laj kab’lanel",
+    "hint": "Eb’ li k’ulub’ej re kab’lak yiib’anb’ileb’ xb’aan Leadrat . Patz’ re laj k’amol b’e wi maak’a’ aawe."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Naqoyb’eni laa k’a’uxl .",
+    "ACCEPTED": "K’ulub’anb’il",
+    "REJECTED": "Xtz'eqtaanaak"
+  },
+  "list": {
+    "title": "Xtaqlankil",
+    "allProjects": "Chixjunil li k’anjel .",
+    "allStatuses": "Chixjunil li estatus",
+    "count_one": "{{count}} xtaqlankil",
+    "count_other": "{{count}} li taqlanb’il k’anjel",
+    "columns": {
+      "referral": "Xtaqlankil",
+      "customer": "At komon",
+      "project": "Kanjel",
+      "sourcePartner": "Xk’ulub’il li rochb’een",
+      "status": "Wanjik",
+      "booking": "Xk'uub'ankil li hu",
+      "registered": "Tz'iib'anb'il xk'ab'a'"
+    },
+    "booked": "Reservado",
+    "empty": "Maak’a’eb’ li referencia toj anajwan."
+  },
+  "detail": {
+    "customer": "At komon",
+    "sourcePartner": "Xk’ulub’il li komon",
+    "attributionNote": "(atribución - ink’a’ naru xjalb’al)",
+    "leadStatus": "Xwanjik li jolomink",
+    "protectedUntil": "Kolb’il rix toj reetal naq .",
+    "referral": "Xtaqlankil",
+    "reason": "Xyaalal: {{reason}}",
+    "booking": "Xk'uub'ankil li hu",
+    "bookedOwner": "Reservado - laa’at laj eechal re li k’anjel .",
+    "notBooked": "Ink'a' b'ak'b'o",
+    "sharedAfterBooking": "Xwotzman chirix naq ak x’uxmank li reservación .",
+    "accept": "K’ulub’a li taqlank",
+    "confirmBooking": "Xk’ojob’ankil li reservación",
+    "reject": "Xtz'eqtaanankil li taqlank",
+    "rejectReasonLabel": "Xyaalal li xtz’eqtaanankil (k’utb’il chiru li komon) * .",
+    "rejectConfirm": "Inka xsumenkil",
+    "confirmBookingPrompt": "K’ulub’anb’il li reservación? Li eechanihom re li k’anjelak naxik aawik’in ut li komon na’ok chi k’ulub’ej re li comision.",
+    "notice": {
+      "booked": "Xk’ojob’aman li reservación.",
+      "accepted": "K’ulub’anb’il li taqlank.",
+      "rejected": "Li taqlank tz’eqtaananb’il."
+    },
+    "backToReferrals": "Sutq’iik sa’eb’ li taqlanb’il k’anjel ."
+  },
+  "history": {
+    "title": "Esilal",
+    "actor": {
+      "system": "Rulul kaxmu",
+      "partner": "Xkomon li kanaal",
+      "admin": "Admin Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Xk’ulub’a li tz’iib’anb’il k’ab’a’ej re li komon .",
+      "DUPLICATE_CHECK_COMPLETED": "Xtz’aqlok ru li tz’ilok-ix - maajun li wiib’ chi k’anjel natawman",
+      "REGISTRATION_ACCEPTED": "K’ulub’anb’il li tz’iib’ank",
+      "PROTECTION_GRANTED_one": "{{count}} -kutan re kolok k’eeb’il",
+      "PROTECTION_GRANTED_other": "{{count}} -kutan re kolok k’eeb’il",
+      "STAGE_UPDATED": "Ak’ob’resinb’il li xwanjik sa’ {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Ak’ob’resinb’il li ch’och’ {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "Ak’ob’resinb’il li ch’och’ {{count}}",
+      "LEAD_ASSIGNED": "K’eeb’il re {{name}}",
+      "LEAD_UNASSIGNED": "Ink'a' k'eeb'il",
+      "REFERRAL_ACCEPTED": "Laj kab’lanel kixk’ulub’a li taqlank .",
+      "REFERRAL_REJECTED": "Laj Builder kixtz’eqtaana li taqlank. Xyaalal: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Xyalb’al xtz’iib’ankil wiib’ sut xb’aan {{partner}} tz’eqtaananb’il",
+      "BOOKING_COMPLETED": "Xtz’aqlok ru li reservación",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Li eechanihom re li k’anjelak q’axtesinb’il re laj Kab’lanel .",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Li atribución re li komon kolb’il rix",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kiyiib’aman li k’ulub’ej re li comisión .",
+      "HANDOVER_COMPLETED": "Xtz’aqlok ru li q’axtesink",
+      "ADMIN_PROTECTION_RELEASED": "Li Admin kixk’e chi elk li kolok-ib’ chi ka’pak’al chi junpaat. Xyaalal: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Li awa’b’ej kixk’e wi’chik li tz’iib’ank chalen chaq {{from}} toj {{to}} . Xyaalal: {{reason}}"
+    }
+  }
+}

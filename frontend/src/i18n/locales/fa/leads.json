@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "سرنخ های من",
+    "signedInAs": "وارد شده به عنوان {{name}} ( {{partnerId}} ) · زمان نشان داده شده در {{timezone}}",
+    "addLead": "+ سرب را اضافه کنید",
+    "tabs": {
+      "all": "همه ( {{count}} )",
+      "pending": "در انتظار ( {{count}} )",
+      "booked": "رزرو شده ( {{count}} )"
+    },
+    "searchPlaceholder": "جستجو بر اساس نام، تلفن همراه یا ID ثبت نام ...",
+    "manageColumns": "مدیریت ستون ها",
+    "rowsPerPage": "ردیف در هر صفحه",
+    "registrationId": "ID ثبت نام",
+    "emptyState": "هنوز سرنخ وجود ندارد - اولین مورد خود را ثبت کنید.",
+    "noMatch": "هیچ سرنخ با این فیلترها مطابقت ندارد.",
+    "showing": "نمایش {{from}} - {{to}} از {{total}} ورودی",
+    "actions": {
+      "preview": "پیش نمایش و به روز رسانی سریع",
+      "history": "تاریخچه",
+      "email": "ایمیل",
+      "whatsapp": "WhatsApp",
+      "call": "تماس بگیرید"
+    },
+    "pagination": {
+      "first": "صفحه اول",
+      "previous": "صفحه قبلی",
+      "next": "صفحه بعدی",
+      "last": "صفحه آخر"
+    }
+  },
+  "columns": {
+    "status": "وضعیت",
+    "assignTo": "اختصاص دادن به",
+    "booked": "رزرو شده است",
+    "protectionUntil": "حفاظت تا"
+  },
+  "booking": {
+    "booked": "رزرو شده است",
+    "pending": "در انتظار"
+  },
+  "assign": {
+    "unassigned": "واگذار نشده است",
+    "owner": "{{name}} (مالک)",
+    "inactive": "{{name}} (غیرفعال)",
+    "unknownUser": "کاربر ناشناس",
+    "assignedTo": "اختصاص داده شده به {{name}}"
+  },
+  "form": {
+    "addTitle": "سرب را اضافه کنید",
+    "editTitle": "ویرایش سرنخ",
+    "noPermissionAdd": "شما اجازه ثبت سرنخ ها را ندارید.",
+    "noPermissionEdit": "شما اجازه ویرایش سرنخ ها را ندارید.",
+    "selectPlaceholder": "انتخاب کنید...",
+    "commaSeparated": "کاما جدا شد",
+    "phonePlaceholder": "شماره تلفن",
+    "countryCode": "کد کشور"
+  },
+  "project": {
+    "none": "هنوز پروژه ای وجود ندارد (ارجاع نشده است)",
+    "notInList": "{{project}} (در لیست پروژه نیست)"
+  },
+  "journey": {
+    "customer": "مشتری",
+    "currentOwner": "مالک فعلی",
+    "protectionExpiry": "انقضای حفاظت",
+    "leadStatus": "وضعیت سرنخ",
+    "scheduled": "برنامه ریزی شده است",
+    "assignedTo": "اختصاص داده شده به",
+    "referral": "ارجاع",
+    "builderReason": "دلیل سازنده: {{reason}}",
+    "bookedHint": "رزرو شده توسط سازنده - مالکیت عملیاتی به سازنده منتقل شده است. صلاحیت اسناد و کمیسیون شما حفظ می شود.",
+    "notBookedHint": "پس از پذیرش ارجاع، رزرو توسط سازنده تایید می شود.",
+    "quickUpdate": "به روز رسانی سریع",
+    "leadDetails": "جزئیات سرب",
+    "progressHistory": "تاریخچه پیشرفت",
+    "timesIn": "(زمان در {{timezone}} )",
+    "backToMyLeads": "بازگشت به سرنخ های من",
+    "editLead": "ویرایش سرنخ"
+  },
+  "referral": {
+    "NOT_REFERRED": "ارجاع نشده (بدون پروژه)",
+    "PENDING_BUILDER": "منتظر سازنده",
+    "ACCEPTED": "پذیرفته شده توسط سازنده",
+    "REJECTED": "توسط سازنده رد شد"
+  },
+  "preview": {
+    "ariaLabel": "پیش نمایش سرنخ",
+    "title": "پیش نمایش سرنخ",
+    "source": "منبع",
+    "location": "مکان",
+    "scheduled": "برنامه ریزی شده است",
+    "registered": "ثبت شده است",
+    "latestNote": "آخرین یادداشت",
+    "quickUpdate": "به روز رسانی سریع",
+    "fullDetails": "جزئیات کامل",
+    "editLead": "ویرایش سرنخ",
+    "history": "تاریخچه"
+  },
+  "quick": {
+    "assignedTo": "اختصاص داده شده به",
+    "status": "وضعیت",
+    "subStatus": "وضعیت فرعی",
+    "selectSubStatus": "انتخاب وضعیت فرعی...",
+    "none": "هیچ کدام",
+    "scheduledAt": "برنامه ریزی شده در",
+    "localTime": "به وقت محلی",
+    "note": "توجه داشته باشید",
+    "notePlaceholder": "در این تماس/بازدید چه اتفاقی افتاد؟ (اختیاری)",
+    "updateStatus": "به روز رسانی وضعیت",
+    "statusUpdated": "وضعیت به روز شد",
+    "bookedLocked": "این سرنخ رزرو شده است - وضعیت آن دیگر قابل تغییر نیست.",
+    "viewOnly": "شما می توانید این سرنخ را مشاهده کنید، اما نقش شما نمی تواند آن را به روز کند."
+  },
+  "history": {
+    "title": "سابقه - {{registrationId}}",
+    "tabs": {
+      "all": "همه",
+      "status": "وضعیت",
+      "assignment": "تکلیف",
+      "notes": "یادداشت ها"
+    },
+    "doneBy": "انجام شده توسط {{actor}}",
+    "system": "سیستم",
+    "platforms": {
+      "System": "سیستم",
+      "External": "خارجی",
+      "Web": "وب",
+      "Mobile": "موبایل"
+    },
+    "added": "اضافه شده است",
+    "updated": "به روز شد",
+    "empty": "(خالی)",
+    "noHistory": "هنوز سابقه ای در این دسته وجود ندارد.",
+    "fieldLabels": {
+      "stage": "وضعیت",
+      "subStatus": "وضعیت فرعی",
+      "scheduledAt": "برنامه ریزی کنید",
+      "notes": "یادداشت ها",
+      "assignedTo": "اختصاص داده شده به"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "ثبت نام شریک دریافت شد",
+      "DUPLICATE_CHECK_COMPLETED": "بررسی تکراری تکمیل شد - هیچ مورد تکراری فعالی یافت نشد",
+      "REGISTRATION_ACCEPTED": "ثبت نام پذیرفته شد",
+      "PROTECTION_GRANTED_one": "{{count}} روز حفاظت داده شد",
+      "PROTECTION_GRANTED_other": "{{count}} روز حفاظت داده شد",
+      "REGISTRATION_ATTEMPT_REJECTED": "تلاش تکراری برای ثبت نام توسط {{partnerId}} رد شد",
+      "LEAD_DETAILS_UPDATED_one": "فیلد {{count}} به روز شد",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} فیلد به روز شد",
+      "STAGE_UPDATED": "وضعیت به {{status}} به روز شد",
+      "LEAD_ASSIGNED": "اختصاص داده شده به {{name}}",
+      "LEAD_UNASSIGNED": "واگذار نشده است",
+      "BOOKING_COMPLETED": "رزرو تکمیل شد",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "مالکیت عملیاتی به بیلدر منتقل شد",
+      "PARTNER_ATTRIBUTION_PRESERVED": "اسناد شریک حفظ شد",
+      "COMMISSION_ELIGIBILITY_CREATED": "واجد شرایط بودن کمیسیون ایجاد شد",
+      "HANDOVER_COMPLETED": "تحویل تکمیل شد",
+      "REFERRAL_ACCEPTED": "سازنده ارجاع را پذیرفت",
+      "REFERRAL_REJECTED": "سازنده ارجاع را رد کرد. دلیل: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "ادمین حفاظت تکراری را زودتر منتشر کرد. دلیل: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "ادمین ثبت نام را از {{from}} به {{to}} واگذار کرد. دلیل: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "مدیریت ستون ها",
+    "hint": "برای مرتب کردن مجدد بکشید · برای نمایش علامت بزنید",
+    "showAll": "نمایش همه",
+    "resetDefault": "به حالت پیش فرض بازنشانی کنید"
+  },
+  "filters": {
+    "title": "فیلترها",
+    "allProjects": "همه پروژه ها",
+    "any": "هر",
+    "noFields": "هیچ فیلد قابل فیلتر دیگری هنوز فعال نشده است (تنظیمات > سرب).",
+    "clearAll": "پاک کردن همه"
+  },
+  "phone": {
+    "MISSING": "شماره تلفن الزامی است.",
+    "INVALID": "لطفا یک شماره تلفن معتبر وارد کنید.",
+    "TOO_SHORT": "شماره تلفن خیلی کوتاه است.",
+    "TOO_LONG": "شماره تلفن خیلی طولانی است.",
+    "INVALID_FOR_COUNTRY": "این شماره تلفن برای {{country}} معتبر نیست.",
+    "COUNTRY_MISMATCH": "لطفا کد کشور صحیح را انتخاب کنید.",
+    "NOT_MOBILE": "لطفا شماره موبایل را وارد کنید نه تلفن ثابت."
+  }
+}

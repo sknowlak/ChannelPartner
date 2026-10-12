@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal Pembangun",
+    "referrals": "Rujukan",
+    "builderLogin": "Login Pembangun",
+    "partnerLogin": "Login Mitra Saluran"
+  },
+  "login": {
+    "title": "Maso'aghi pembangun",
+    "hint": "Akun pembangun ècèptaaghi sareng Leadrat . Tanya'agi ka administrator mon be'na ta' andhi'."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "anante' kapotosanna be'na",
+    "ACCEPTED": "ètarèma",
+    "REJECTED": "ètolak"
+  },
+  "list": {
+    "title": "Rujukan",
+    "allProjects": "sakabbhina proyek",
+    "allStatuses": "Kabbhi status",
+    "count_one": "{{count}} rujukan",
+    "count_other": "{{count}} rujukan",
+    "columns": {
+      "referral": "Rujukan",
+      "customer": "Oreng se eladin",
+      "project": "Proyek",
+      "sourcePartner": "Mitra Sumber",
+      "status": "Kabede'en",
+      "booking": "Pemesanan",
+      "registered": "èdaftaraghi"
+    },
+    "booked": "èpesen",
+    "empty": "ghi' tadâ' rujukan."
+  },
+  "detail": {
+    "customer": "Oreng se eladin",
+    "sourcePartner": "Mitra Sumber",
+    "attributionNote": "(atribusi - ta' bisa èobâ)",
+    "leadStatus": "Status Pimpinan",
+    "protectedUntil": "èlindungi kantos",
+    "referral": "Rujukan",
+    "reason": "Alasan: {{reason}}",
+    "booking": "Pemesanan",
+    "bookedOwner": "èpesan - be'na sè andhi' operasional",
+    "notBooked": "ta' èpesen",
+    "sharedAfterBooking": "èbâgi saellana èpesan",
+    "accept": "Narèma Rujukan",
+    "confirmBooking": "Konfirmasi Pemesanan",
+    "reject": "Tolak Rujukan",
+    "rejectReasonLabel": "Alasan nolak (ètonjhuaghi ka pasangan) *",
+    "rejectConfirm": "Nola",
+    "confirmBookingPrompt": "Konfirmasi pemesanan? Kepemilikan operasional èpindahaghi ka panjhennengngan bân mitra dhâddhi layak ghâbây komisi.",
+    "notice": {
+      "booked": "Pemesanan èkonfirmasi.",
+      "accepted": "Rujukan ètarèma.",
+      "rejected": "Rujukan ètolak."
+    },
+    "backToReferrals": "abali ka rujukan"
+  },
+  "history": {
+    "title": "Sejarah",
+    "actor": {
+      "system": "Cara",
+      "partner": "Mitra saluran",
+      "admin": "Admin Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Pendaftaran mitra ètarèma",
+      "DUPLICATE_CHECK_COMPLETED": "Cek duplikat ampon lastare - tadha' duplikat aktif sè ètemmoè",
+      "REGISTRATION_ACCEPTED": "Pendaftaran ètarèma",
+      "PROTECTION_GRANTED_one": "{{count}} -are perlindungan èberri'",
+      "PROTECTION_GRANTED_other": "{{count}} -are perlindungan èberri'",
+      "STAGE_UPDATED": "Status èperbarui dâ' {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Bidang {{count}} sè èperbarui",
+      "LEAD_DETAILS_UPDATED_other": "Bidang {{count}} sè èperbarui",
+      "LEAD_ASSIGNED": "èparèngaghi ka {{name}}",
+      "LEAD_UNASSIGNED": "ta' ètugasaghi",
+      "REFERRAL_ACCEPTED": "Tukang bangunan narèma rujukan",
+      "REFERRAL_REJECTED": "Tukang bangunan nolak rujukan. Alasan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Usaha pendaftaran duplikat sareng {{partner}} ètolak",
+      "BOOKING_COMPLETED": "Pemesanan ampon lastare",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Kepemilikan operasional èpindahaghi ka Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribusi mitra èpèyara",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisi ècèptaaghi",
+      "HANDOVER_COMPLETED": "Penyerahan ampon lastare",
+      "ADMIN_PROTECTION_RELEASED": "Admin makalowar perlindungan duplikat awal. Alasan: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin aghâbây polè pendaftaran dâri {{from}} ka {{to}} . Alasan: {{reason}}"
+    }
+  }
+}

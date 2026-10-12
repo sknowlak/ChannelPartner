@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Indstillinger",
+    "noPermission": "Du har ikke tilladelse til at administrere indstillinger."
+  },
+  "categories": {
+    "lead": "Føre",
+    "user": "Bruger",
+    "integrations": "Integrationer"
+  },
+  "leadTabs": {
+    "fields": "Felter",
+    "statuses": "Status og understatus",
+    "notifications": "Notifikationer og skemalæggere"
+  },
+  "fields": {
+    "leadIntro": "Konfigurer lead capture-formularen: aktiver/deaktiver felter, markér dem som obligatoriske, eller tilføj dine egne tilpassede felter.",
+    "userIntro": "Konfigurer formularen Tilføj/rediger teammedlem: aktiver/deaktiver felter, marker dem som obligatoriske, eller tilføj dine egne brugerdefinerede felter.",
+    "addCustomField": "+ Tilføj brugerdefineret felt",
+    "fieldLabel": "Feltmærke",
+    "group": "Gruppe",
+    "groupPlaceholderLead": "fx Forespørgselsinfo",
+    "groupPlaceholderUser": "f.eks. Yderligere detaljer",
+    "dataType": "Datatype",
+    "options": "Indstillinger (kommasepareret)",
+    "requiredLead": "Påkrævet - partnere på dit team skal udfylde dette for at registrere et kundeemne",
+    "requiredUser": "Påkrævet - skal udfyldes ved tilføjelse af et teammedlem",
+    "creating": "Opretter...",
+    "createField": "Opret felt",
+    "columns": {
+      "field": "Felt",
+      "group": "Gruppe",
+      "type": "Type",
+      "required": "Påkrævet",
+      "enabled": "Aktiveret",
+      "kind": "Slags"
+    },
+    "kind": {
+      "custom": "Skik",
+      "core": "Kerne (låst)",
+      "standard": "Standard"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Tekst",
+    "TEXTAREA": "Lang tekst",
+    "NUMBER": "Antal",
+    "CURRENCY": "Valuta",
+    "DATE": "Dato",
+    "SELECT": "Dropdown",
+    "LIST": "Liste"
+  },
+  "picker": {
+    "searchPlaceholder": "Søg emnefelter...",
+    "summary": "{{shown}} vist · {{mandatory}} obligatorisk",
+    "mandatory": "Obligatorisk",
+    "noMatch": "Ingen felter matcher."
+  },
+  "statuses": {
+    "intro": "Dine kundeemnestatusser og understatusser - hvad hver enkelt beder om (en dato og tid, kundeemnefelter), når nogen opdaterer et kundeemne til det.",
+    "add": "+ Tilføj status",
+    "columns": {
+      "order": "Bestille",
+      "status": "Status",
+      "subStatuses": "Understatus",
+      "asksFor": "Spørger efter",
+      "active": "Aktiv"
+    },
+    "moveUp": "Flyt op",
+    "moveDown": "Flyt ned",
+    "defaultBadge": "Standard for nye kundeemner",
+    "bookingBadge": "Booking status",
+    "asksForLabel": "Spørger om {{label}}",
+    "asksForDateTime": "Spørger om dato og tid",
+    "none": "Ingen",
+    "dateTime": "Dato & tid",
+    "scheduledOn": "på {{names}}",
+    "fieldsSummary_one": "{{count}} felt ( {{mandatory}} obligatorisk)",
+    "fieldsSummary_other": "{{count}} felter ( {{mandatory}} obligatoriske)",
+    "deleteConfirm": "Vil du slette status \" {{name}} \"? Dette kan ikke fortrydes.",
+    "editTitle": "Rediger status - {{name}}",
+    "newTitle": "Ny status",
+    "name": "Status navn",
+    "colour": "Farve",
+    "active": "Aktiv",
+    "isDefault": "Standardstatus for nye kundeemner",
+    "isBooking": "Bookingstatus (indstillet af Fuldstændig reservation)",
+    "whenMoved": "Når et kundeemne flyttes til denne status",
+    "askSchedule": "Spørg om en dato og tid (planlægger)",
+    "scheduleLabelPlaceholder": "Etiket, fx Besøg kl",
+    "fieldsToShow": "Emnefelter, der skal vises på opdateringsformularen",
+    "subStatusesTitle": "Understatus",
+    "subStatusesHint": "Hver understatus kan bede om sin egen dato og klokkeslæt og tilføje sine egne felter - vist oven på statusfelterne ovenfor.",
+    "subStatusName": "Sub-status navn",
+    "subFields": "Felter ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Dato- og tidslabel, fx Ring tilbage kl",
+    "addSubStatus": "+ Tilføj understatus",
+    "saveStatus": "Gem status",
+    "createStatus": "Opret status"
+  },
+  "notifications": {
+    "intro": "Giv de rigtige personer besked, når et kundeemne når en status - med det samme eller et fastsat tidspunkt før/efter den planlagte dato og tid.",
+    "add": "+ Tilføj meddelelse",
+    "columns": {
+      "notification": "Notifikation",
+      "whenStatusIs": "Når status er",
+      "sends": "Sender",
+      "to": "Til",
+      "via": "Via",
+      "enabled": "Aktiveret"
+    },
+    "anyStatus": "Enhver status",
+    "anySubStatus": "Enhver understatus",
+    "inactiveOption": "{{name}} (inaktiv)",
+    "emptyRules": "Ingen notifikationer endnu - tilføj en for at advare dit team, når et kundeemne når en status.",
+    "jobs": {
+      "title": "Planlagt og sendt",
+      "firesAt": "Brander kl",
+      "notification": "Notifikation",
+      "lead": "Føre",
+      "status": "Status",
+      "details": "Detaljer",
+      "empty": "Intet planlagt eller sendt endnu.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Indtil",
+      "PROCESSING": "Forarbejdning",
+      "SENT": "Sendt",
+      "FAILED": "Mislykkedes",
+      "SKIPPED": "Sprang over",
+      "CANCELLED": "Annulleret"
+    },
+    "deliveryStatus": {
+      "SENT": "sendt",
+      "FAILED": "mislykkedes",
+      "SKIPPED": "sprunget over"
+    },
+    "deliveryChannel": {
+      "IN_APP": "i appen",
+      "EMAIL": "e-mail",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Tildelt bruger",
+      "owner": "Ejer",
+      "updatedBy": "Opdateret af",
+      "role": "Rolle: {{name}}"
+    },
+    "channels": {
+      "inApp": "In-app",
+      "email": "E-mail",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Vil du slette meddelelsen \" {{name}} \"? Afventende påmindelser fra den er annulleret.",
+    "testPrompt": "Send en test af denne notifikation til dig selv (i appen) ved hjælp af hvilket lead- ID ?",
+    "testSent": "Sendt til din klokke: {{title}} {{message}}",
+    "headersInvalid": "Webhook headere skal være gyldige JSON , f.eks. {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Rediger meddelelse",
+    "newTitle": "Ny meddelelse",
+    "name": "Navn",
+    "namePlaceholder": "f.eks. påmindelse om webstedsbesøg",
+    "whenStatus": "Når en kundeemnes status er",
+    "subStatus": "Understatus",
+    "send": "Send (planlægger)",
+    "custom": "Skik...",
+    "modeBefore": "før planlagt tid",
+    "modeAfter": "efter aftalt tid",
+    "noScheduleWarning": "Denne status beder ikke om en dato og et klokkeslæt, så en \"før/på/efter planlagt tid\"-meddelelse vil aldrig blive udløst.",
+    "noScheduleFix": "Aktiver <strong>Spørg om en dato og tid</strong> for det under Statuss & Sub-Statuses, eller send med det samme.",
+    "sendTo": "Send til (enhver kombination)",
+    "recipientAssigned": "Tildelt bruger (hovedejer)",
+    "recipientOwner": "Kontoejer/admin",
+    "recipientUpdatedBy": "Person, der har opdateret status",
+    "everyoneWithRole": "Alle med rolle",
+    "specificUsers": "Specifikke brugere (aktive)",
+    "inactiveNever": "Inaktive brugere modtager aldrig notifikationer, selvom de er valgt.",
+    "deliverVia": "Leveres via",
+    "channelInApp": "In-app (klokke)",
+    "channelEmail": "E-mail",
+    "channelWebhook": "Webhook ( WhatsApp / SMS udbyder)",
+    "emailHint": "E-mail går til hver modtagers e-mailadresse og skal have SMTP opsat på serveren (backend/.env); indtil da logges e-mail-afsendelser som sprunget over.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Overskrifter ( JSON )",
+    "content": "Meddelelsesindhold",
+    "title": "Titel",
+    "message": "Besked",
+    "insertIntoTitle": "Indsæt i titel",
+    "insertIntoMessage": "Indsæt i besked",
+    "anyLeadField": "Ethvert kundeemnefelt fungerer også, f.eks. <code1>{{example1}}</code1> eller <code2>{{example2}}</code2> .",
+    "preview": "Forhåndsvisning (prøveemne)",
+    "enabled": "Aktiveret",
+    "saveRule": "Gem notifikation",
+    "createRule": "Opret meddelelse",
+    "variables": {
+      "customerName": "Navn på hovedemne",
+      "customerMobile": "Bly mobil",
+      "customerEmail": "Lead email",
+      "registrationId": "Lead ID",
+      "status": "Status",
+      "subStatus": "Understatus",
+      "scheduleAt": "Planlagt dato og tid",
+      "assignedTo": "Tildelt bruger",
+      "updatedBy": "Opdateret af",
+      "recipient": "Modtagerens navn",
+      "project": "Projekt",
+      "notes": "Seneste note",
+      "partner": "Partnernavn"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Straks når status er sat",
+      "AT": "Til det aftalte tidspunkt",
+      "A1D": "1 dag efter planlagt tid (opfølgningstjek)"
+    },
+    "immediately": "Straks",
+    "atScheduled": "Til aftalt tid",
+    "before": {
+      "MINUTES_one": "{{count}} minut før planlagt tid",
+      "MINUTES_other": "{{count}} minutter før planlagt tid",
+      "HOURS_one": "{{count}} time før planlagt tid",
+      "HOURS_other": "{{count}} timer før planlagt tid",
+      "DAYS_one": "{{count}} dag før planlagt tid",
+      "DAYS_other": "{{count}} dage før planlagt tid",
+      "WEEKS_one": "{{count}} uge før planlagt tid",
+      "WEEKS_other": "{{count}} uger før planlagt tid",
+      "MONTHS_one": "{{count}} måned før planlagt tid",
+      "MONTHS_other": "{{count}} måneder før planlagt tid",
+      "YEARS_one": "{{count}} år før planlagt tid",
+      "YEARS_other": "{{count}} år før planlagt tid"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minut efter planlagt tid",
+      "MINUTES_other": "{{count}} minutter efter planlagt tid",
+      "HOURS_one": "{{count}} time efter planlagt tid",
+      "HOURS_other": "{{count}} timer efter planlagt tid",
+      "DAYS_one": "{{count}} dag efter planlagt tid",
+      "DAYS_other": "{{count}} dage efter planlagt tid",
+      "WEEKS_one": "{{count}} uge efter planlagt tid",
+      "WEEKS_other": "{{count}} uger efter planlagt tid",
+      "MONTHS_one": "{{count}} måned efter planlagt tid",
+      "MONTHS_other": "{{count}} måneder efter planlagt tid",
+      "YEARS_one": "{{count}} år efter planlagt tid",
+      "YEARS_other": "{{count}} år efter planlagt tid"
+    },
+    "units": {
+      "MINUTES_one": "minut",
+      "MINUTES_other": "minutter",
+      "HOURS_one": "time",
+      "HOURS_other": "timer",
+      "DAYS_one": "dag",
+      "DAYS_other": "dage",
+      "WEEKS_one": "uge",
+      "WEEKS_other": "uger",
+      "MONTHS_one": "måned",
+      "MONTHS_other": "måneder",
+      "YEARS_one": "år",
+      "YEARS_other": "år"
+    }
+  }
+}

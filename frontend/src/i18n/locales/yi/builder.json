@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "בילדער טויער",
+    "referrals": "רעפערראַלס",
+    "builderLogin": "בילדער לאָגין",
+    "partnerLogin": "קאַנאַל פּאַרטנער לאָגין"
+  },
+  "login": {
+    "title": "בילדער צייכן אין",
+    "hint": "בילדער אַקאַונץ זענען באשאפן דורך Leadrat . פרעגן דיין אַדמיניסטראַטאָר אויב איר טאָן ניט האָבן איין."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "ווארטן פֿאַר דיין באַשלוס",
+    "ACCEPTED": "אנגענומען",
+    "REJECTED": "אפגעווארפן"
+  },
+  "list": {
+    "title": "רעפערראַלס",
+    "allProjects": "אַלע פּראַדזשעקס",
+    "allStatuses": "אַלע סטאַטוסעס",
+    "count_one": "{{count}} רעפערראַל",
+    "count_other": "{{count}} רעפערראַלס",
+    "columns": {
+      "referral": "רעפערראַל",
+      "customer": "קונה",
+      "project": "פּראָיעקט",
+      "sourcePartner": "מקור פּאַרטנער",
+      "status": "סטאַטוס",
+      "booking": "בוקינג",
+      "registered": "רעגיסטרירט"
+    },
+    "booked": "בוקט",
+    "empty": "נאָך קיין רעפערראַלס."
+  },
+  "detail": {
+    "customer": "קונה",
+    "sourcePartner": "מקור פּאַרטנער",
+    "attributionNote": "(אַטריביאַטיאָן - קענען ניט זיין געביטן)",
+    "leadStatus": "פירן סטאַטוס",
+    "protectedUntil": "פּראָטעקטעד ביז",
+    "referral": "רעפערראַל",
+    "reason": "סיבה: {{reason}}",
+    "booking": "בוקינג",
+    "bookedOwner": "בוקט - איר זענט די אַפּעריישאַנאַל באַזיצער",
+    "notBooked": "ניט בוקט",
+    "sharedAfterBooking": "שערד נאָך בוקינג",
+    "accept": "אָננעמען רעפערראַל",
+    "confirmBooking": "באַשטעטיקן בוקינג",
+    "reject": "אָפּוואַרפן רעפערראַל",
+    "rejectReasonLabel": "סיבה פֿאַר רידזשעקטינג (געוויזן צו די שוטעף) *",
+    "rejectConfirm": "אָפּוואַרפן",
+    "confirmBookingPrompt": "באַשטעטיקן די בוקינג? אַפּעריישאַנאַל אָונערשיפּ באוועגט צו איר און דער שוטעף ווערט בארעכטיגט פֿאַר קאָמיסיע.",
+    "notice": {
+      "booked": "בוקינג באשטעטיקט.",
+      "accepted": "רעפערראַל אנגענומען.",
+      "rejected": "רעפערראַל פארווארפן."
+    },
+    "backToReferrals": "צוריק צו רעפערראַלס"
+  },
+  "history": {
+    "title": "געשיכטע",
+    "actor": {
+      "system": "סיסטעם",
+      "partner": "קאַנאַל שוטעף",
+      "admin": "Leadrat אַדמיניסטראַטאָר"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "פּאַרטנער רעגיסטראַציע באקומען",
+      "DUPLICATE_CHECK_COMPLETED": "דופּליקאַט טשעק געענדיקט - קיין אַקטיוו דופּליקאַט געפֿונען",
+      "REGISTRATION_ACCEPTED": "רעגיסטראַציע אנגענומען",
+      "PROTECTION_GRANTED_one": "{{count}} טאָג שוץ געגעבן",
+      "PROTECTION_GRANTED_other": "{{count}} טאָג שוץ געגעבן",
+      "STAGE_UPDATED": "סטאַטוס דערהייַנטיקט צו {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "דערהייַנטיקט {{count}} פעלד",
+      "LEAD_DETAILS_UPDATED_other": "דערהייַנטיקט {{count}} פעלדער",
+      "LEAD_ASSIGNED": "אַסיינד צו {{name}}",
+      "LEAD_UNASSIGNED": "ניט אַסיינד",
+      "REFERRAL_ACCEPTED": "בילדער האט אנגענומען דעם רעפעראל",
+      "REFERRAL_REJECTED": "דער בויער האָט אָפּגעוואָרפן דעם רעפערראַל. סיבה: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "דופּליקאַט רעגיסטראַציע פּרווון דורך {{partner}} פארווארפן",
+      "BOOKING_COMPLETED": "בוקינג געענדיקט",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "אַפּעריישאַנאַל אָונערשיפּ טראַנספערד צו בילדער",
+      "PARTNER_ATTRIBUTION_PRESERVED": "פּאַרטנער אַטריבוטיאָן אפגעהיט",
+      "COMMISSION_ELIGIBILITY_CREATED": "קאָמיסיע בארעכטיגונג באשאפן",
+      "HANDOVER_COMPLETED": "כאַנדאָווער געענדיקט",
+      "ADMIN_PROTECTION_RELEASED": "אַדמין באפרייט דופּליקאַט שוץ פרי. סיבה: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "אַדמין ריאַסיינד רעגיסטראַציע פון {{from}} צו {{to}} . סיבה: {{reason}}"
+    }
+  }
+}

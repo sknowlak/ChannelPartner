@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Byggingargátt",
+    "referrals": "Tilvísanir",
+    "builderLogin": "Innskráning byggingaraðila",
+    "partnerLogin": "Innskráning rásarfélaga"
+  },
+  "login": {
+    "title": "Byggingaraðili skráir sig inn",
+    "hint": "Byggingarreikningar eru búnir til af Leadrat . Spyrðu stjórnanda þinn ef þú ert ekki með einn."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Bíð eftir ákvörðun þinni",
+    "ACCEPTED": "Samþykkt",
+    "REJECTED": "Hafnað"
+  },
+  "list": {
+    "title": "Tilvísanir",
+    "allProjects": "Öll verkefni",
+    "allStatuses": "Allar stöður",
+    "count_one": "{{count}} tilvísun",
+    "count_other": "{{count}} tilvísanir",
+    "columns": {
+      "referral": "Tilvísun",
+      "customer": "Viðskiptavinur",
+      "project": "Verkefni",
+      "sourcePartner": "Heimildarfélagi",
+      "status": "Staða",
+      "booking": "Bókun",
+      "registered": "Skráður"
+    },
+    "booked": "Bókað",
+    "empty": "Engar tilvísanir ennþá."
+  },
+  "detail": {
+    "customer": "Viðskiptavinur",
+    "sourcePartner": "Heimildarfélagi",
+    "attributionNote": "(aðild - ekki hægt að breyta)",
+    "leadStatus": "Leiðtogastaða",
+    "protectedUntil": "Friðlýst til",
+    "referral": "Tilvísun",
+    "reason": "Ástæða: {{reason}}",
+    "booking": "Bókun",
+    "bookedOwner": "Bókað - þú ert rekstrareigandi",
+    "notBooked": "Ekki bókað",
+    "sharedAfterBooking": "Sameiginlegt eftir bókun",
+    "accept": "Samþykkja tilvísun",
+    "confirmBooking": "Staðfestu bókun",
+    "reject": "Hafna tilvísun",
+    "rejectReasonLabel": "Ástæða fyrir höfnun (sýnt maka) *",
+    "rejectConfirm": "Hafna",
+    "confirmBookingPrompt": "Staðfesta bókunina? Rekstrareignarhald færist til þín og samstarfsaðilinn verður gjaldgengur fyrir þóknun.",
+    "notice": {
+      "booked": "Bókun staðfest.",
+      "accepted": "Tilvísun samþykkt.",
+      "rejected": "Tilvísun hafnað."
+    },
+    "backToReferrals": "Aftur í Tilvísanir"
+  },
+  "history": {
+    "title": "Saga",
+    "actor": {
+      "system": "Kerfi",
+      "partner": "Rásarfélagi",
+      "admin": "Leadrat stjórnandi"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Félagsskráning móttekin",
+      "DUPLICATE_CHECK_COMPLETED": "Tvítekningu lokið - engin virk tvítekning fannst",
+      "REGISTRATION_ACCEPTED": "Tekið er við skráningu",
+      "PROTECTION_GRANTED_one": "{{count}} daga vernd veitt",
+      "PROTECTION_GRANTED_other": "{{count}} daga vernd veitt",
+      "STAGE_UPDATED": "Staða uppfærð í {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Uppfærður {{count}} reitur",
+      "LEAD_DETAILS_UPDATED_other": "Uppfærðir {{count}} reitir",
+      "LEAD_ASSIGNED": "Úthlutað til {{name}}",
+      "LEAD_UNASSIGNED": "Óúthlutað",
+      "REFERRAL_ACCEPTED": "Byggingaraðili samþykkti tilvísunina",
+      "REFERRAL_REJECTED": "Byggingaraðili hafnaði tilvísuninni. Ástæða: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Tvítekinni skráningartilraun {{partner}} hafnað",
+      "BOOKING_COMPLETED": "Bókun lokið",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Rekstrareign færð til Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Eign maka varðveitt",
+      "COMMISSION_ELIGIBILITY_CREATED": "Framkvæmdastjórnarhæfi skapað",
+      "HANDOVER_COMPLETED": "Afhending lokið",
+      "ADMIN_PROTECTION_RELEASED": "Stjórnandi gaf út tvítekna vernd snemma. Ástæða: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Stjórnandi endurúthlutaði skráningu frá {{from}} í {{to}} . Ástæða: {{reason}}"
+    }
+  }
+}

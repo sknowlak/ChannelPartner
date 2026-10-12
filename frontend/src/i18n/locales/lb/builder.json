@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Builder Portal",
+    "referrals": "Referenzen",
+    "builderLogin": "Builder Login",
+    "partnerLogin": "Channel Partner Login"
+  },
+  "login": {
+    "title": "Builder umellen",
+    "hint": "Builder Konte gi vum Leadrat erstallt. Frot Ären Administrateur wann Dir keen hutt."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Waart op Är Entscheedung",
+    "ACCEPTED": "Akzeptéiert",
+    "REJECTED": "Refuséiert"
+  },
+  "list": {
+    "title": "Referenzen",
+    "allProjects": "All Projeten",
+    "allStatuses": "All Status",
+    "count_one": "{{count}} Referenz",
+    "count_other": "{{count}} Referenzen",
+    "columns": {
+      "referral": "Referenz",
+      "customer": "Client",
+      "project": "Projet",
+      "sourcePartner": "Quelle Partner",
+      "status": "Status",
+      "booking": "Buchung",
+      "registered": "Registréiert"
+    },
+    "booked": "Reservéiert",
+    "empty": "Nach keng Referenzen."
+  },
+  "detail": {
+    "customer": "Client",
+    "sourcePartner": "Quelle Partner",
+    "attributionNote": "(Attributioun - kann net geännert ginn)",
+    "leadStatus": "Lead Status",
+    "protectedUntil": "Geschützt bis",
+    "referral": "Referenz",
+    "reason": "Grond: {{reason}}",
+    "booking": "Buchung",
+    "bookedOwner": "Reservéiert - Dir sidd den operationelle Besëtzer",
+    "notBooked": "Net gebucht",
+    "sharedAfterBooking": "Gedeelt no Buchung",
+    "accept": "Akzeptéieren Referenz",
+    "confirmBooking": "Confirméieren Buchung",
+    "reject": "Refus Referenz",
+    "rejectReasonLabel": "Grond fir Oflehnung (dem Partner gewisen) *",
+    "rejectConfirm": "Refuséieren",
+    "confirmBookingPrompt": "Confirméieren der Buchung? Operationell Eegentum plënnert op Iech an de Partner gëtt berechtegt fir Kommissioun.",
+    "notice": {
+      "booked": "Buchung confirméiert.",
+      "accepted": "Referenz ugeholl.",
+      "rejected": "Referenz refuséiert."
+    },
+    "backToReferrals": "Zréck op Referrals"
+  },
+  "history": {
+    "title": "Geschicht",
+    "actor": {
+      "system": "System",
+      "partner": "Kanalpartner",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Partner Aschreiwung kritt",
+      "DUPLICATE_CHECK_COMPLETED": "Duplikatkontrolle fäerdeg - keen aktive Duplikat fonnt",
+      "REGISTRATION_ACCEPTED": "Aschreiwung akzeptéiert",
+      "PROTECTION_GRANTED_one": "{{count}} -Dag Schutz ausgezeechent",
+      "PROTECTION_GRANTED_other": "{{count}} -Dag Schutz ausgezeechent",
+      "STAGE_UPDATED": "Status aktualiséiert op {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Aktualiséiert {{count}} Feld",
+      "LEAD_DETAILS_UPDATED_other": "Aktualiséiert {{count}} Felder",
+      "LEAD_ASSIGNED": "{{name}} zougewisen",
+      "LEAD_UNASSIGNED": "Net zougewisen",
+      "REFERRAL_ACCEPTED": "Builder huet d'Referenz ugeholl",
+      "REFERRAL_REJECTED": "Builder huet d'Referenz refuséiert. Grond: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Duplizéiert Umeldungsversuch vum {{partner}} refuséiert",
+      "BOOKING_COMPLETED": "Buchung fäerdeg",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operationell Besëtzer op Builder transferéiert",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partner Attributioun konservéiert",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kommissioun Zoulag geschaf",
+      "HANDOVER_COMPLETED": "Handover fäerdeg",
+      "ADMIN_PROTECTION_RELEASED": "Den Admin huet duplizéiert Schutz fréi fräigelooss. Grond: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Den Administrateur huet d'Aschreiwung vun {{from}} op {{to}} ëmgezeechent. Grond: {{reason}}"
+    }
+  }
+}

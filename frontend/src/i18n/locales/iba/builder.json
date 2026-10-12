@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal Pengatur",
+    "referrals": "Rujukan",
+    "builderLogin": "Login Pengatur",
+    "partnerLogin": "Login Rakan Saluran"
+  },
+  "login": {
+    "title": "Tukang ngaga tanda tama",
+    "hint": "Akaun tukang ngaga digaga ulih Leadrat . Tanya ngagai pentadbir nuan enti nuan nadai."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Nganti pemutus nuan .",
+    "ACCEPTED": "Diterima",
+    "REJECTED": "Ditulak"
+  },
+  "list": {
+    "title": "Rujukan",
+    "allProjects": "Semua projek",
+    "allStatuses": "Semua status",
+    "count_one": "{{count}} rujukan",
+    "count_other": "{{count}} rujukan",
+    "columns": {
+      "referral": "Rujukan",
+      "customer": "Pelangan",
+      "project": "Projek",
+      "sourcePartner": "Rakan Sumber",
+      "status": "Pangkat",
+      "booking": "Tempahan",
+      "registered": "Udah direjista"
+    },
+    "booked": "Ditempah",
+    "empty": "Nadai rujukan agi."
+  },
+  "detail": {
+    "customer": "Pelangan",
+    "sourcePartner": "Rakan Sumber",
+    "attributionNote": "(atribusyen - enda ulih diubah)",
+    "leadStatus": "Status Timbal",
+    "protectedUntil": "Dijaga Sampai 2019.",
+    "referral": "Rujukan",
+    "reason": "Kebuah: {{reason}}",
+    "booking": "Tempahan",
+    "bookedOwner": "Dipesan - nuan nyadi pengempu operasyen .",
+    "notBooked": "Enda dibuking",
+    "sharedAfterBooking": "Dikunsi pengudah booking .",
+    "accept": "Nerima Rujukan",
+    "confirmBooking": "Ngesahka Tempahan",
+    "reject": "Nulak Rujukan",
+    "rejectReasonLabel": "Kebuah nulak (ditunjukka ngagai kaling) *",
+    "rejectConfirm": "Tulak",
+    "confirmBookingPrompt": "Ngesahka booking? Pengempu operasyen mindah ngagai nuan lalu kaling nya nyadi layak nerima komisyen.",
+    "notice": {
+      "booked": "Booking udah disah.",
+      "accepted": "Rujukan udah diterima.",
+      "rejected": "Rujukan ditulak."
+    },
+    "backToReferrals": "Pulai ngagai Rujukan"
+  },
+  "history": {
+    "title": "Sejarah",
+    "actor": {
+      "system": "Sistem",
+      "partner": "Kaling saluran",
+      "admin": "Leadrat pentadbir"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Pengawa ngerejista kaling udah diterima",
+      "DUPLICATE_CHECK_COMPLETED": "Duplikat peresa udah tembu - nadai duplikat aktif ditemu",
+      "REGISTRATION_ACCEPTED": "Pengawa ngerejista udah diterima",
+      "PROTECTION_GRANTED_one": "{{count}} -hari lindung diberi",
+      "PROTECTION_GRANTED_other": "{{count}} -hari lindung diberi",
+      "STAGE_UPDATED": "Status dikemaru ngagai {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Bidang {{count}} ti udah dikemaru",
+      "LEAD_DETAILS_UPDATED_other": "Bidang {{count}} ti udah dikemaru",
+      "LEAD_ASSIGNED": "Diberi ngagai {{name}}",
+      "LEAD_UNASSIGNED": "Enda diberi",
+      "REFERRAL_ACCEPTED": "Tukang ngaga nerima rujukan nya",
+      "REFERRAL_REJECTED": "Builder nulak rujukan nya. Kebuah: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Duplikat nguji ngerejista ulih {{partner}} ditulak",
+      "BOOKING_COMPLETED": "Booking udah tembu",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Pengempu operasyen dipindahka ngagai Pengatur .",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribusyen kaling dijaga",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisyen digaga",
+      "HANDOVER_COMPLETED": "Pengawa nyerah udah tembu",
+      "ADMIN_PROTECTION_RELEASED": "Admin ngeluarka duplikat pelindung tumu. Kebuah: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin ngagihka baru pengawa ngerejista ari {{from}} ngagai {{to}} . Kebuah: {{reason}}"
+    }
+  }
+}

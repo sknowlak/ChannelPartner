@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Cilësimet",
+    "noPermission": "Nuk ke leje për të menaxhuar cilësimet."
+  },
+  "categories": {
+    "lead": "Plumbi",
+    "user": "Përdoruesi",
+    "integrations": "Integrimet"
+  },
+  "leadTabs": {
+    "fields": "Fushat",
+    "statuses": "Statuset & Nënstatuset",
+    "notifications": "Njoftimet dhe programuesit"
+  },
+  "fields": {
+    "leadIntro": "Konfiguro formularin e kapjes së plumbit: aktivizoni/çaktivizoni fushat, shënojini ato të kërkuara ose shtoni fushat tuaja të personalizuara.",
+    "userIntro": "Konfiguro formularin Shto/Modifiko Anëtarin e Ekipit: aktivizoni/çaktivizoni fushat, shënojini ato të kërkuara ose shtoni fushat tuaja të personalizuara.",
+    "addCustomField": "+ Shto një fushë të personalizuar",
+    "fieldLabel": "Etiketa e fushës",
+    "group": "Grupi",
+    "groupPlaceholderLead": "p.sh. Informacioni i Kërkimit",
+    "groupPlaceholderUser": "p.sh. Detaje shtesë",
+    "dataType": "Lloji i të dhënave",
+    "options": "Opsionet (të ndara me presje)",
+    "requiredLead": "Kërkohet - partnerët në ekipin tuaj duhet ta plotësojnë këtë për të regjistruar një drejtues",
+    "requiredUser": "E detyrueshme - duhet të plotësohet kur shtoni një anëtar të ekipit",
+    "creating": "Po krijohet...",
+    "createField": "Krijo Fushë",
+    "columns": {
+      "field": "Fusha",
+      "group": "Grupi",
+      "type": "Lloji",
+      "required": "E detyrueshme",
+      "enabled": "Aktivizuar",
+      "kind": "E sjellshme"
+    },
+    "kind": {
+      "custom": "Me porosi",
+      "core": "Bërthama (i kyçur)",
+      "standard": "Standard"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Teksti",
+    "TEXTAREA": "Tekst i gjatë",
+    "NUMBER": "Numri",
+    "CURRENCY": "Monedha",
+    "DATE": "Data",
+    "SELECT": "Dropdown",
+    "LIST": "Lista"
+  },
+  "picker": {
+    "searchPlaceholder": "Kërko fushat e plumbit...",
+    "summary": "{{shown}} shfaqet · {{mandatory}} i detyrueshëm",
+    "mandatory": "E detyrueshme",
+    "noMatch": "Asnjë fushë nuk përputhet."
+  },
+  "statuses": {
+    "intro": "Statuset dhe nën-statuset tuaja të klientit - çfarë kërkon secili prej tyre (datë dhe orë, fushat kryesore) kur dikush përditëson një titull në të.",
+    "add": "+ Shto statusin",
+    "columns": {
+      "order": "Rendit",
+      "status": "Statusi",
+      "subStatuses": "Nënstatuset",
+      "asksFor": "Kërkon",
+      "active": "Aktiv"
+    },
+    "moveUp": "Lëvizni lart",
+    "moveDown": "Lëvizni poshtë",
+    "defaultBadge": "Parazgjedhja për drejtimet e reja",
+    "bookingBadge": "Statusi i rezervimit",
+    "asksForLabel": "kërkon {{label}}",
+    "asksForDateTime": "Kërkon datën dhe orën",
+    "none": "Asnjë",
+    "dateTime": "Data dhe ora",
+    "scheduledOn": "në {{names}}",
+    "fieldsSummary_one": "Fusha {{count}} ( {{mandatory}} e detyrueshme)",
+    "fieldsSummary_other": "{{count}} fusha ( {{mandatory}} e detyrueshme)",
+    "deleteConfirm": "Të fshihet statusi \" {{name}} \"? Kjo nuk mund të zhbëhet.",
+    "editTitle": "Redakto statusin - {{name}}",
+    "newTitle": "Statusi i ri",
+    "name": "Emri i statusit",
+    "colour": "Ngjyra",
+    "active": "Aktiv",
+    "isDefault": "Statusi i parazgjedhur për klientët e rinj",
+    "isBooking": "Statusi i rezervimit (i caktuar nga Rezervimi i plotë)",
+    "whenMoved": "Kur një plumb zhvendoset në këtë status",
+    "askSchedule": "Kërkoni një datë dhe orë (planifikues)",
+    "scheduleLabelPlaceholder": "Etiketa, p.sh. Vizitoni në",
+    "fieldsToShow": "Fushat kryesore për t'u shfaqur në formularin e përditësimit",
+    "subStatusesTitle": "Nënstatuset",
+    "subStatusesHint": "Çdo nën-status mund të kërkojë datën dhe orën e vet dhe të shtojë fushat e veta - të paraqitura në krye të fushave të statusit më lart.",
+    "subStatusName": "Emri i nën-statusit",
+    "subFields": "Fushat ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Etiketa e datës dhe orës, p.sh. Thirrni përsëri në",
+    "addSubStatus": "+ Shto nën-status",
+    "saveStatus": "Ruaj statusin",
+    "createStatus": "Krijo status"
+  },
+  "notifications": {
+    "intro": "Njoftoni njerëzit e duhur kur një klient arrin një status - menjëherë, ose një kohë të caktuar përpara/pas datës dhe orës së planifikuar në të.",
+    "add": "+ Shto njoftim",
+    "columns": {
+      "notification": "Njoftimi",
+      "whenStatusIs": "Kur është statusi",
+      "sends": "dërgon",
+      "to": "te",
+      "via": "Nëpërmjet",
+      "enabled": "Aktivizuar"
+    },
+    "anyStatus": "Çdo status",
+    "anySubStatus": "Çdo nën-status",
+    "inactiveOption": "{{name}} (joaktive)",
+    "emptyRules": "Ende nuk ka njoftime - shtoni një për të njoftuar ekipin tuaj kur një klient arrin një status.",
+    "jobs": {
+      "title": "Planifikuar & Dërguar",
+      "firesAt": "Zjarret në",
+      "notification": "Njoftimi",
+      "lead": "Plumbi",
+      "status": "Statusi",
+      "details": "Detajet",
+      "empty": "Asgjë e planifikuar apo dërguar ende.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Në pritje",
+      "PROCESSING": "Përpunimi",
+      "SENT": "Dërguar",
+      "FAILED": "Dështoi",
+      "SKIPPED": "U anashkalua",
+      "CANCELLED": "Anuluar"
+    },
+    "deliveryStatus": {
+      "SENT": "dërguar",
+      "FAILED": "dështoi",
+      "SKIPPED": "anashkaluar"
+    },
+    "deliveryChannel": {
+      "IN_APP": "brenda aplikacionit",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Përdorues i caktuar",
+      "owner": "Pronari",
+      "updatedBy": "Përditësuar nga",
+      "role": "Roli: {{name}}"
+    },
+    "channels": {
+      "inApp": "Brenda aplikacionit",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Të fshihet njoftimi \" {{name}} \"? Përkujtuesit në pritje prej tij janë anuluar.",
+    "testPrompt": "Dërgoji vetes një test të këtij njoftimi (në aplikacion) duke përdorur cilin ID të drejtuesit?",
+    "testSent": "Dërguar në zilen tuaj: {{title}} {{message}}",
+    "headersInvalid": "Titujt Webhook duhet të jenë të vlefshëm JSON , p.sh. {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Redakto njoftimin",
+    "newTitle": "Njoftim i ri",
+    "name": "Emri",
+    "namePlaceholder": "p.sh. përkujtues për vizitën në sit",
+    "whenStatus": "Kur statusi i një drejtuesi është",
+    "subStatus": "Nën-statusi",
+    "send": "Dërgo (programuesi)",
+    "custom": "Me porosi...",
+    "modeBefore": "para kohës së planifikuar",
+    "modeAfter": "pas kohës së caktuar",
+    "noScheduleWarning": "Ky status nuk kërkon datë dhe orë, kështu që një njoftim \"para/në/pas orës së planifikuar\" nuk do të lëshohej kurrë.",
+    "noScheduleFix": "Aktivizo <strong>Pyetni një datë dhe orë</strong> për të nën statuset dhe nën-statuset, ose dërgojeni menjëherë.",
+    "sendTo": "Dërgo te (çdo kombinim)",
+    "recipientAssigned": "Përdorues i caktuar (pronari kryesor)",
+    "recipientOwner": "Pronari / administratori i llogarisë",
+    "recipientUpdatedBy": "Personi që përditësoi statusin",
+    "everyoneWithRole": "Të gjithë me rol",
+    "specificUsers": "Përdorues specifikë (aktivë)",
+    "inactiveNever": "Përdoruesit joaktivë nuk marrin kurrë njoftime, edhe nëse janë zgjedhur.",
+    "deliverVia": "Dorëzimi nëpërmjet",
+    "channelInApp": "Brenda aplikacionit (zile)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook (ofruesi i WhatsApp / SMS )",
+    "emailHint": "Email shkon në adresën e emailit të secilit marrës dhe ka nevojë të konfigurohet SMTP në server (backend/.env); deri atëherë dërgimet me email regjistrohen si të anashkaluara.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Titujt ( JSON )",
+    "content": "Përmbajtja e njoftimit",
+    "title": "Titulli",
+    "message": "Mesazh",
+    "insertIntoTitle": "Fut në Titull",
+    "insertIntoMessage": "Futni në Mesazh",
+    "anyLeadField": "Çdo fushë kryesore funksionon gjithashtu, p.sh. <code1>{{example1}}</code1> ose <code2>{{example2}}</code2> .",
+    "preview": "Pamja paraprake (kampioni kryesor)",
+    "enabled": "Aktivizuar",
+    "saveRule": "Ruaj njoftimin",
+    "createRule": "Krijo njoftim",
+    "variables": {
+      "customerName": "Emri i plumbit",
+      "customerMobile": "Lead celular",
+      "customerEmail": "E-mail drejtues",
+      "registrationId": "ID e drejtuesit",
+      "status": "Statusi",
+      "subStatus": "Nën-statusi",
+      "scheduleAt": "Data dhe ora e planifikuar",
+      "assignedTo": "Përdorues i caktuar",
+      "updatedBy": "Përditësuar nga",
+      "recipient": "Emri i marrësit",
+      "project": "Projekti",
+      "notes": "Shënimi i fundit",
+      "partner": "Emri i partnerit"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Menjëherë kur caktohet statusi",
+      "AT": "Në kohën e caktuar",
+      "A1D": "1 ditë pas kohës së planifikuar (kontroll vijues)"
+    },
+    "immediately": "Menjëherë",
+    "atScheduled": "Në kohën e caktuar",
+    "before": {
+      "MINUTES_one": "{{count}} minuta përpara orës së planifikuar",
+      "MINUTES_other": "{{count}} minuta përpara orës së planifikuar",
+      "HOURS_one": "{{count}} orë përpara orës së planifikuar",
+      "HOURS_other": "{{count}} orë përpara orës së planifikuar",
+      "DAYS_one": "{{count}} ditë përpara orës së planifikuar",
+      "DAYS_other": "{{count}} ditë përpara kohës së planifikuar",
+      "WEEKS_one": "{{count}} javë përpara kohës së planifikuar",
+      "WEEKS_other": "{{count}} javë përpara kohës së planifikuar",
+      "MONTHS_one": "{{count}} muaj përpara kohës së planifikuar",
+      "MONTHS_other": "{{count}} muaj përpara kohës së planifikuar",
+      "YEARS_one": "{{count}} vit përpara kohës së planifikuar",
+      "YEARS_other": "{{count}} vjet përpara kohës së planifikuar"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minuta pas orës së planifikuar",
+      "MINUTES_other": "{{count}} minuta pas kohës së planifikuar",
+      "HOURS_one": "{{count}} orë pas orës së planifikuar",
+      "HOURS_other": "{{count}} orë pas kohës së planifikuar",
+      "DAYS_one": "{{count}} ditë pas orës së planifikuar",
+      "DAYS_other": "{{count}} ditë pas kohës së planifikuar",
+      "WEEKS_one": "{{count}} javë pas kohës së planifikuar",
+      "WEEKS_other": "{{count}} javë pas kohës së planifikuar",
+      "MONTHS_one": "{{count}} muaj pas kohës së planifikuar",
+      "MONTHS_other": "{{count}} muaj pas kohës së planifikuar",
+      "YEARS_one": "{{count}} vit pas kohës së planifikuar",
+      "YEARS_other": "{{count}} vite pas kohës së planifikuar"
+    },
+    "units": {
+      "MINUTES_one": "minutë",
+      "MINUTES_other": "minuta",
+      "HOURS_one": "orë",
+      "HOURS_other": "orë",
+      "DAYS_one": "ditë",
+      "DAYS_other": "ditë",
+      "WEEKS_one": "javë",
+      "WEEKS_other": "javë",
+      "MONTHS_one": "muaj",
+      "MONTHS_other": "muaj",
+      "YEARS_one": "vit",
+      "YEARS_other": "vjet"
+    }
+  }
+}

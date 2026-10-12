@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Mon bann Lead",
+    "signedInAs": "sinyen koman {{name}} ( {{partnerId}} ) · letan montre dan {{timezone}}",
+    "addLead": "+ azout diplon",
+    "tabs": {
+      "all": "Tou ( {{count}} )",
+      "pending": "an atant ( {{count}} )",
+      "booked": "Rezerve ( {{count}} )"
+    },
+    "searchPlaceholder": "rod par non, mobil, oubyen ID lanrezistreman ...",
+    "manageColumns": "zer bann kolonn",
+    "rowsPerPage": "bann ranze par paz",
+    "registrationId": "ID lanrezistreman",
+    "emptyState": "napa okenn lendikasyon pour le moman - anrezistre ou premye.",
+    "noMatch": "napa okenn lead ki koresponn avek sa bann filter.",
+    "showing": "pe montre {{from}} - {{to}} of {{total}} lantre",
+    "actions": {
+      "preview": "apersi e met azour rapid",
+      "history": "Listwar",
+      "email": "imel",
+      "whatsapp": "WhatsApp",
+      "call": "Telefonnen"
+    },
+    "pagination": {
+      "first": "Premye paz",
+      "previous": "paz presedan",
+      "next": "paz swivan",
+      "last": "Dernyen paz"
+    }
+  },
+  "columns": {
+    "status": "Stati",
+    "assignTo": "donn",
+    "booked": "Rezerve",
+    "protectionUntil": "Proteksyon Ziska"
+  },
+  "booking": {
+    "booked": "Rezerve",
+    "pending": "An atandan"
+  },
+  "assign": {
+    "unassigned": "pa'n ganny donnen",
+    "owner": "{{name}} (Owner)",
+    "inactive": "{{name}} (inactive)",
+    "unknownUser": "itilizater enkoni",
+    "assignedTo": "in ganny donnen avek {{name}}"
+  },
+  "form": {
+    "addTitle": "azout diplon",
+    "editTitle": "edit lead",
+    "noPermissionAdd": "ou napa permisyon pou anrezistre bann lead.",
+    "noPermissionEdit": "ou napa permisyon pou edit bann lead.",
+    "selectPlaceholder": "Selekte...",
+    "commaSeparated": "virgil separe",
+    "phonePlaceholder": "nimero telefonn",
+    "countryCode": "Kod pei"
+  },
+  "project": {
+    "none": "napa proze ankor (pa refer)",
+    "notInList": "{{project}} (pa dan lalis proze)"
+  },
+  "journey": {
+    "customer": "Konsomater",
+    "currentOwner": "propriyeter aktyel",
+    "protectionExpiry": "Proteksyon i ekspire",
+    "leadStatus": "Stati Lead",
+    "scheduled": "progranmen",
+    "assignedTo": "ganny donnen avek",
+    "referral": "referans",
+    "builderReason": "rezon mason: {{reason}}",
+    "bookedHint": "rezerve par sa mason - propriyete operasyonnel in bouz kot sa mason; ou atribisyon ek kalifikasyon komisyon i ganny garde.",
+    "notBookedHint": "bann rezervasyon i ganny konfirmen par mason enn fwa ki zot aksepte referans.",
+    "quickUpdate": "Miz a zour rapid",
+    "leadDetails": "Detay Lead",
+    "progressHistory": "Listwar Progre",
+    "timesIn": "(bann ler dan {{timezone}} )",
+    "backToMyLeads": "retourn lo mon bann lendikasyon",
+    "editLead": "edit lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "pa'n ganny refer (napa proze)",
+    "PENDING_BUILDER": "pe esper mason",
+    "ACCEPTED": "aksepte par mason",
+    "REJECTED": "Rezete par mason"
+  },
+  "preview": {
+    "ariaLabel": "previ plon",
+    "title": "Apersi Lead",
+    "source": "Sours",
+    "location": "Lokasyon",
+    "scheduled": "progranmen",
+    "registered": "Anrezistre",
+    "latestNote": "Dernyen Not",
+    "quickUpdate": "Miz a zour rapid",
+    "fullDetails": "detay konplet",
+    "editLead": "edit lead",
+    "history": "Listwar"
+  },
+  "quick": {
+    "assignedTo": "ganny donnen avek",
+    "status": "Stati",
+    "subStatus": "Sou-Stati",
+    "selectSubStatus": "selekte sou-stati...",
+    "none": "Okenn",
+    "scheduledAt": "progranmen a",
+    "localTime": "ler lokal",
+    "note": "Not",
+    "notePlaceholder": "ki ti arive lo sa lapel / vizit? (opsyonnel)",
+    "updateStatus": "Miz a zour Stati",
+    "statusUpdated": "Stati in ganny met azour",
+    "bookedLocked": "sa lead in ganny rezerve - son stati nepli kapab ganny sanze.",
+    "viewOnly": "ou kapab vwar sa lead, me ou rol pa kapab met li azour."
+  },
+  "history": {
+    "title": "listwar - {{registrationId}}",
+    "tabs": {
+      "all": "Tou",
+      "status": "Stati",
+      "assignment": "Leson",
+      "notes": "Not"
+    },
+    "doneBy": "fer par {{actor}}",
+    "system": "Sistenm",
+    "platforms": {
+      "System": "Sistenm",
+      "External": "Ekstern",
+      "Web": "Web",
+      "Mobile": "Telefonn portab"
+    },
+    "added": "azoute",
+    "updated": "met azour",
+    "empty": "(vid)",
+    "noHistory": "napa listwar dan sa kategori pour le moman.",
+    "fieldLabels": {
+      "stage": "Stati",
+      "subStatus": "Sou-Stati",
+      "scheduledAt": "Progranm",
+      "notes": "Not",
+      "assignedTo": "ganny donnen avek"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "lanrezistreman partener in resevwar",
+      "DUPLICATE_CHECK_COMPLETED": "tyeke doub in konplete - napa doub aktiv ki'n ganny trouve",
+      "REGISTRATION_ACCEPTED": "lanrezistreman in ganny aksepte",
+      "PROTECTION_GRANTED_one": "{{count}} -zour proteksyon in donnen",
+      "PROTECTION_GRANTED_other": "{{count}} -zour proteksyon in donnen",
+      "REGISTRATION_ATTEMPT_REJECTED": "lesey lanrezistreman doub par {{partnerId}} in ganny rezete",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} field in ganny met azour",
+      "LEAD_DETAILS_UPDATED_other": "bann domenn {{count}} in ganny met azour",
+      "STAGE_UPDATED": "Stati in ganny met azour pour {{status}}",
+      "LEAD_ASSIGNED": "in ganny donnen avek {{name}}",
+      "LEAD_UNASSIGNED": "pa'n ganny donnen",
+      "BOOKING_COMPLETED": "rezervasyon konplete",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "propriyete operasyonnel in ganny transfer avek mason",
+      "PARTNER_ATTRIBUTION_PRESERVED": "atribisyon partener in ganny prezerve",
+      "COMMISSION_ELIGIBILITY_CREATED": "kalifikasyon komisyon in ganny kree",
+      "HANDOVER_COMPLETED": "handover in konplete",
+      "REFERRAL_ACCEPTED": "mason in aksepte referans",
+      "REFERRAL_REJECTED": "mason in rezet sa referans. Rezon: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "admin in lans proteksyon doub boner. Rezon: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin in re-asiyen lanrezistreman sorti {{from}} pou al {{to}} . Rezon: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "zer bann kolonn",
+    "hint": "trenn pou re-ord · tyeke pou montre",
+    "showAll": "montre tou",
+    "resetDefault": "reset lo defo"
+  },
+  "filters": {
+    "title": "bann filter",
+    "allProjects": "Tou bann proze",
+    "any": "Nenport",
+    "noFields": "Napa okenn lezot domenn ki kapab ganny filtre ki'n ganny met an mars (Settings > Lead).",
+    "clearAll": "netway tou"
+  },
+  "phone": {
+    "MISSING": "nimero telefonn i neseser.",
+    "INVALID": "silvouple antre en nimero telefonn valid.",
+    "TOO_SHORT": "nimero telefonn i tro kourt.",
+    "TOO_LONG": "nimero telefonn i tro long.",
+    "INVALID_FOR_COUNTRY": "sa nimero telefonn pa valid pou {{country}} .",
+    "COUNTRY_MISMATCH": "silvouple selekte kod pei korek.",
+    "NOT_MOBILE": "silvouple antre en nimero mobil, pa en telefonn fix."
+  }
+}

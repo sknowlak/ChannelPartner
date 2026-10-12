@@ -1,0 +1,96 @@
+{
+  "shell": {
+    "portal": "Портал застройщика",
+    "referrals": "Рефералы",
+    "builderLogin": "Вход для строителя",
+    "partnerLogin": "Вход для партнеров по каналу продаж"
+  },
+  "login": {
+    "title": "Вход для строителя",
+    "hint": "Аккаунты Builder создаются Leadrat . Если у вас его нет, обратитесь к администратору."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Ждем вашего решения",
+    "ACCEPTED": "Принял",
+    "REJECTED": "Отклоненный"
+  },
+  "list": {
+    "title": "Рефералы",
+    "allProjects": "Все проекты",
+    "allStatuses": "Все статусы",
+    "count_one": "{{count}} реферал",
+    "count_few": "{{count}} рефералов",
+    "count_many": "{{count}} рефералов",
+    "count_other": "{{count}} рефералов",
+    "columns": {
+      "referral": "Направление",
+      "customer": "Клиент",
+      "project": "Проект",
+      "sourcePartner": "Исходный партнер",
+      "status": "Статус",
+      "booking": "Бронирование",
+      "registered": "Зарегистрирован"
+    },
+    "booked": "Забронировано",
+    "empty": "Рефералов пока нет."
+  },
+  "detail": {
+    "customer": "Клиент",
+    "sourcePartner": "Исходный партнер",
+    "attributionNote": "(атрибуция - не может быть изменена)",
+    "leadStatus": "Статус лида",
+    "protectedUntil": "Защищено до",
+    "referral": "Направление",
+    "reason": "Причина: {{reason}}",
+    "booking": "Бронирование",
+    "bookedOwner": "Забронировано – вы действующий владелец",
+    "notBooked": "Не забронировано",
+    "sharedAfterBooking": "Доступно после бронирования",
+    "accept": "Принять рекомендацию",
+    "confirmBooking": "Подтвердить бронирование",
+    "reject": "Отклонить реферал",
+    "rejectReasonLabel": "Причина отказа (указывается партнеру) *",
+    "rejectConfirm": "Отклонять",
+    "confirmBookingPrompt": "Подтвердить бронирование? Оперативное право собственности переходит к вам, и партнер получает право на комиссионное вознаграждение.",
+    "notice": {
+      "booked": "Бронирование подтверждено.",
+      "accepted": "Реферал принят.",
+      "rejected": "Направление отклонено."
+    },
+    "backToReferrals": "Вернуться к рефералам"
+  },
+  "history": {
+    "title": "История",
+    "actor": {
+      "system": "Система",
+      "partner": "Торговый партнер",
+      "admin": "Админ Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Регистрация партнера получена",
+      "DUPLICATE_CHECK_COMPLETED": "Проверка дубликатов завершена: активных дубликатов не обнаружено.",
+      "REGISTRATION_ACCEPTED": "Регистрация принята",
+      "PROTECTION_GRANTED_one": "Предоставлена ​​защита на {{count}} дней",
+      "PROTECTION_GRANTED_few": "Предоставлена ​​защита на {{count}} дней",
+      "PROTECTION_GRANTED_many": "Предоставлена ​​защита на {{count}} дней",
+      "PROTECTION_GRANTED_other": "Предоставлена ​​защита на {{count}} дней",
+      "STAGE_UPDATED": "Статус обновлен до {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Обновлено поле {{count}}",
+      "LEAD_DETAILS_UPDATED_few": "Обновлено полей: {{count}} .",
+      "LEAD_DETAILS_UPDATED_many": "Обновлено полей: {{count}} .",
+      "LEAD_DETAILS_UPDATED_other": "Обновлено полей: {{count}} .",
+      "LEAD_ASSIGNED": "Назначено {{name}}",
+      "LEAD_UNASSIGNED": "Неназначенный",
+      "REFERRAL_ACCEPTED": "Застройщик принял рекомендацию",
+      "REFERRAL_REJECTED": "Застройщик отклонил это предложение. Причина: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Повторная попытка регистрации со стороны {{partner}} отклонена",
+      "BOOKING_COMPLETED": "Бронирование завершено",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Операционная собственность передана застройщику",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Атрибуция партнера сохранена.",
+      "COMMISSION_ELIGIBILITY_CREATED": "Право на участие в комиссии создано",
+      "HANDOVER_COMPLETED": "Передача завершена",
+      "ADMIN_PROTECTION_RELEASED": "Администратор досрочно выпустил защиту от дублирования. Причина: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Администратор переназначил регистрацию с {{from}} на {{to}} . Причина: {{reason}}"
+    }
+  }
+}

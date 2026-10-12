@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Портал за строители",
+    "referrals": "Реферали",
+    "builderLogin": "Вход в Builder",
+    "partnerLogin": "Вход за партньор на канала"
+  },
+  "login": {
+    "title": "Влезте в Builder",
+    "hint": "Builder акаунтите са създадени от Leadrat . Попитайте вашия администратор, ако нямате такъв."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "В очакване на вашето решение",
+    "ACCEPTED": "Прието",
+    "REJECTED": "Отхвърлено"
+  },
+  "list": {
+    "title": "Реферали",
+    "allProjects": "Всички проекти",
+    "allStatuses": "Всички статуси",
+    "count_one": "{{count}} реферал",
+    "count_other": "{{count}} реферали",
+    "columns": {
+      "referral": "Препоръка",
+      "customer": "Клиент",
+      "project": "Проект",
+      "sourcePartner": "Партньор източник",
+      "status": "Статус",
+      "booking": "Резервация",
+      "registered": "Регистриран"
+    },
+    "booked": "Резервирано",
+    "empty": "Все още няма реферали."
+  },
+  "detail": {
+    "customer": "Клиент",
+    "sourcePartner": "Партньор източник",
+    "attributionNote": "(приписване - не може да се променя)",
+    "leadStatus": "Състояние на потенциален клиент",
+    "protectedUntil": "Защитен до",
+    "referral": "Препоръка",
+    "reason": "Причина: {{reason}}",
+    "booking": "Резервация",
+    "bookedOwner": "Резервирано - вие сте оперативен собственик",
+    "notBooked": "Не е резервирано",
+    "sharedAfterBooking": "Споделено след резервация",
+    "accept": "Приеми препоръка",
+    "confirmBooking": "Потвърдете резервацията",
+    "reject": "Отхвърляне на препоръка",
+    "rejectReasonLabel": "Причина за отказ (показва се на партньора) *",
+    "rejectConfirm": "Отхвърляне",
+    "confirmBookingPrompt": "Потвърждаване на резервацията? Оперативната собственост преминава към вас и партньорът става подходящ за комисионна.",
+    "notice": {
+      "booked": "Резервацията е потвърдена.",
+      "accepted": "Препоръка приета.",
+      "rejected": "Препоръката е отхвърлена."
+    },
+    "backToReferrals": "Обратно към препоръките"
+  },
+  "history": {
+    "title": "История",
+    "actor": {
+      "system": "система",
+      "partner": "Партньор в канала",
+      "admin": "Leadrat администратор"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Получена е регистрация на партньор",
+      "DUPLICATE_CHECK_COMPLETED": "Проверката на дубликат е завършена - не е намерен активен дубликат",
+      "REGISTRATION_ACCEPTED": "Регистрацията е приета",
+      "PROTECTION_GRANTED_one": "Предоставена е {{count}} -дневна защита",
+      "PROTECTION_GRANTED_other": "Предоставена е {{count}} -дневна защита",
+      "STAGE_UPDATED": "Състоянието е актуализирано на {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Актуализирано поле {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "Актуализирани {{count}} полета",
+      "LEAD_ASSIGNED": "Възложено на {{name}}",
+      "LEAD_UNASSIGNED": "Неприсвоен",
+      "REFERRAL_ACCEPTED": "Строителят прие препоръката",
+      "REFERRAL_REJECTED": "Строителят отхвърли препоръката. Причина: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Дублиран опит за регистрация от {{partner}} е отхвърлен",
+      "BOOKING_COMPLETED": "Резервацията е завършена",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Оперативната собственост е прехвърлена на Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Приписването на партньора е запазено",
+      "COMMISSION_ELIGIBILITY_CREATED": "Създадена е допустимост на комисията",
+      "HANDOVER_COMPLETED": "Предаването приключи",
+      "ADMIN_PROTECTION_RELEASED": "Администраторът пусна дублиращата защита по-рано. Причина: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Администраторът преназначи регистрацията от {{from}} на {{to}} . Причина: {{reason}}"
+    }
+  }
+}

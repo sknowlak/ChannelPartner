@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Sozlamalar",
+    "noPermission": "Sozlamalarni boshqarishga ruxsatingiz yo‘q."
+  },
+  "categories": {
+    "lead": "Qo'rg'oshin",
+    "user": "Foydalanuvchi",
+    "integrations": "Integratsiyalar"
+  },
+  "leadTabs": {
+    "fields": "Maydonlar",
+    "statuses": "Statuslar va pastki statuslar",
+    "notifications": "Bildirishnomalar va rejalashtiruvchilar"
+  },
+  "fields": {
+    "leadIntro": "Etakchi qo'lga olish shaklini sozlang: maydonlarni yoqish/o'chirish, ularni zarur deb belgilang yoki o'zingizning shaxsiy maydonlaringizni qo'shing.",
+    "userIntro": "Jamoa a'zosini qo'shish/tahrirlash formasini sozlang: maydonlarni yoqish/o'chirish, ularni zarur deb belgilang yoki o'zingizning shaxsiy maydonlaringizni qo'shing.",
+    "addCustomField": "+ Maxsus maydon qo'shing",
+    "fieldLabel": "Maydon yorlig'i",
+    "group": "Guruh",
+    "groupPlaceholderLead": "Masalan, so'rov ma'lumotlari",
+    "groupPlaceholderUser": "Masalan, Qo'shimcha ma'lumotlar",
+    "dataType": "Ma'lumotlar turi",
+    "options": "Variantlar (vergul bilan ajratilgan)",
+    "requiredLead": "Majburiy - jamoangizdagi hamkorlar etakchini ro'yxatdan o'tkazish uchun buni to'ldirishlari kerak",
+    "requiredUser": "Majburiy - jamoa a'zosini qo'shganda to'ldirish kerak",
+    "creating": "Yaratilmoqda...",
+    "createField": "Maydon yaratish",
+    "columns": {
+      "field": "Maydon",
+      "group": "Guruh",
+      "type": "Turi",
+      "required": "Majburiy",
+      "enabled": "Yoqilgan",
+      "kind": "Mehribon"
+    },
+    "kind": {
+      "custom": "Maxsus",
+      "core": "Yadro (qulflangan)",
+      "standard": "Standart"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Matn",
+    "TEXTAREA": "Uzoq matn",
+    "NUMBER": "Raqam",
+    "CURRENCY": "Valyuta",
+    "DATE": "Sana",
+    "SELECT": "Ochiladigan ro'yxat",
+    "LIST": "Roʻyxat"
+  },
+  "picker": {
+    "searchPlaceholder": "Etakchi maydonlarni qidirish...",
+    "summary": "{{shown}} koʻrsatilgan · {{mandatory}} majburiy",
+    "mandatory": "Majburiy",
+    "noMatch": "Hech qanday maydon mos emas."
+  },
+  "statuses": {
+    "intro": "Etakchi maqomlaringiz va pastki maqomlaringiz – kimdir unga taklifni yangilaganida har biri so‘ragan narsa (sana va vaqt, yetakchi maydonlar).",
+    "add": "+ Status qo'shish",
+    "columns": {
+      "order": "Buyurtma",
+      "status": "Status",
+      "subStatuses": "Pastki statuslar",
+      "asksFor": "So'raydi",
+      "active": "Faol"
+    },
+    "moveUp": "Yuqoriga siljiting",
+    "moveDown": "Pastga siljiting",
+    "defaultBadge": "Yangi mijozlar uchun birlamchi",
+    "bookingBadge": "Bronlash holati",
+    "asksForLabel": "{{label}} soʻraydi",
+    "asksForDateTime": "Sana va vaqtni so'raydi",
+    "none": "Yo'q",
+    "dateTime": "Sana va vaqt",
+    "scheduledOn": "{{names}}",
+    "fieldsSummary_one": "{{count}} maydon ( {{mandatory}} majburiy)",
+    "fieldsSummary_other": "{{count}} ta maydon ( {{mandatory}} ta majburiy)",
+    "deleteConfirm": "\" {{name}} \" holati o'chirilsinmi? Buni ortga qaytarib bo‘lmaydi.",
+    "editTitle": "Holatni tahrirlash - {{name}}",
+    "newTitle": "Yangi holat",
+    "name": "Status nomi",
+    "colour": "Rang",
+    "active": "Faol",
+    "isDefault": "Yangi mijozlar uchun standart holat",
+    "isBooking": "Bandlov holati (to'liq bandlov tomonidan o'rnatiladi)",
+    "whenMoved": "Etakchi ushbu holatga ko'chirilganda",
+    "askSchedule": "Sana va vaqtni so'rang (rejalashtiruvchi)",
+    "scheduleLabelPlaceholder": "Yorliq, masalan, tashrif buyuring",
+    "fieldsToShow": "Yangilash formasida ko'rsatiladigan etakchi maydonlar",
+    "subStatusesTitle": "Pastki statuslar",
+    "subStatusesHint": "Har bir pastki status o'z sanasi va vaqtini so'rashi va o'z maydonlarini qo'shishi mumkin - yuqoridagi holat maydonlarining tepasida ko'rsatilgan.",
+    "subStatusName": "Pastki holat nomi",
+    "subFields": "Maydonlar ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Sana va vaqt yorlig'i, masalan: Qayta qo'ng'iroq qilish",
+    "addSubStatus": "+ Sub-status qo'shish",
+    "saveStatus": "Holatni saqlash",
+    "createStatus": "Status yaratish"
+  },
+  "notifications": {
+    "intro": "Etakchi maqomga yetganida to'g'ri odamlarni xabardor qiling - darhol yoki belgilangan vaqt va sana va vaqtdan oldin/keyin.",
+    "add": "+ Bildirishnoma qo'shish",
+    "columns": {
+      "notification": "Bildirishnoma",
+      "whenStatusIs": "Status qachon",
+      "sends": "Yuboradi",
+      "to": "Kimga",
+      "via": "orqali",
+      "enabled": "Yoqilgan"
+    },
+    "anyStatus": "Har qanday holat",
+    "anySubStatus": "Har qanday pastki holat",
+    "inactiveOption": "{{name}} (faol emas)",
+    "emptyRules": "Hali hech qanday bildirishnoma yo‘q – yetakchi statusga yetganda jamoangizni ogohlantirish uchun bitta qo‘shing.",
+    "jobs": {
+      "title": "Rejalashtirilgan va yuborilgan",
+      "firesAt": "Yong'inlar",
+      "notification": "Bildirishnoma",
+      "lead": "Qo'rg'oshin",
+      "status": "Status",
+      "details": "Tafsilotlar",
+      "empty": "Hech narsa rejalashtirilmagan yoki yuborilmagan.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Kutilmoqda",
+      "PROCESSING": "Qayta ishlash",
+      "SENT": "Yuborildi",
+      "FAILED": "Muvaffaqiyatsiz",
+      "SKIPPED": "Oʻtkazib yuborildi",
+      "CANCELLED": "Bekor qilingan"
+    },
+    "deliveryStatus": {
+      "SENT": "yuborilgan",
+      "FAILED": "muvaffaqiyatsiz",
+      "SKIPPED": "o'tkazib yubordi"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ilova ichidagi",
+      "EMAIL": "elektron pochta",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Belgilangan foydalanuvchi",
+      "owner": "Egasi",
+      "updatedBy": "tomonidan yangilangan",
+      "role": "Rol: {{name}}"
+    },
+    "channels": {
+      "inApp": "Ilova ichidagi",
+      "email": "Elektron pochta",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "“ {{name}} ” bildirishnomasi oʻchirilsinmi? Undan kutilayotgan eslatmalar bekor qilinadi.",
+    "testPrompt": "Qaysi yetakchi ID yordamida ushbu bildirishnomaning sinovini o‘zingizga (ilova ichidagi) yuboring?",
+    "testSent": "Qo'ng'iroqqa yuborildi: {{title}} {{message}}",
+    "headersInvalid": "Webhook sarlavhalari haqiqiy JSON bo'lishi kerak, masalan, {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Xabarnomani tahrirlash",
+    "newTitle": "Yangi bildirishnoma",
+    "name": "Ism",
+    "namePlaceholder": "Masalan, saytga tashrif buyurish haqida eslatma",
+    "whenStatus": "Etakchi maqomi qachon",
+    "subStatus": "Pastki holat",
+    "send": "Yuborish (rejalashtiruvchi)",
+    "custom": "Maxsus...",
+    "modeBefore": "rejalashtirilgan vaqtdan oldin",
+    "modeAfter": "rejalashtirilgan vaqtdan keyin",
+    "noScheduleWarning": "Bu holat sana va vaqtni soʻramaydi, shuning uchun “belgilangan vaqtdan oldin/keyin” bildirishnomasi hech qachon yoqilmaydi.",
+    "noScheduleFix": "Statuslar va pastki statuslar ostida <strong>Sana va vaqtni so‘rashni</strong> yoqing yoki Darhol yuboring.",
+    "sendTo": "Yuborish (har qanday kombinatsiya)",
+    "recipientAssigned": "Tayinlangan foydalanuvchi (etakchi egasi)",
+    "recipientOwner": "Hisob egasi / administrator",
+    "recipientUpdatedBy": "Statusni yangilagan shaxs",
+    "everyoneWithRole": "Roli bo'lgan hamma",
+    "specificUsers": "Muayyan foydalanuvchilar (faol)",
+    "inactiveNever": "Nofaol foydalanuvchilar, hatto tanlangan bo'lsa ham, hech qachon bildirishnomalarni olmaydilar.",
+    "deliverVia": "orqali yetkazib berish",
+    "channelInApp": "Ilova ichidagi (qo'ng'iroq)",
+    "channelEmail": "Elektron pochta",
+    "channelWebhook": "Webhook ( WhatsApp / SMS provayderi)",
+    "emailHint": "Elektron pochta har bir qabul qiluvchining elektron pochta manziliga boradi va serverda SMTP o'rnatilishi kerak (backend/.env); shu vaqtgacha elektron pochta xabarlari o'tkazib yuborilgan deb qayd qilinadi.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Sarlavhalar ( JSON )",
+    "content": "Bildirishnomalar tarkibi",
+    "title": "Sarlavha",
+    "message": "Xabar",
+    "insertIntoTitle": "Sarlavhaga kiriting",
+    "insertIntoMessage": "Xabarga kiriting",
+    "anyLeadField": "Har qanday yetakchi maydoni ham ishlaydi, masalan <code1>{{example1}}</code1> yoki <code2>{{example2}}</code2> .",
+    "preview": "Ko‘rib chiqish (namuna namunasi)",
+    "enabled": "Yoqilgan",
+    "saveRule": "Bildirishnomani saqlash",
+    "createRule": "Bildirishnoma yaratish",
+    "variables": {
+      "customerName": "Etakchi nomi",
+      "customerMobile": "Etakchi mobil",
+      "customerEmail": "Etakchi elektron pochta",
+      "registrationId": "Etakchi ID",
+      "status": "Status",
+      "subStatus": "Pastki holat",
+      "scheduleAt": "Rejalashtirilgan sana va vaqt",
+      "assignedTo": "Belgilangan foydalanuvchi",
+      "updatedBy": "tomonidan yangilangan",
+      "recipient": "Qabul qiluvchining ismi",
+      "project": "Loyiha",
+      "notes": "Oxirgi eslatma",
+      "partner": "Hamkor nomi"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Vaziyat o'rnatilganda darhol",
+      "AT": "Belgilangan vaqtda",
+      "A1D": "Belgilangan vaqtdan keyin 1 kun (kuzatuv tekshiruvi)"
+    },
+    "immediately": "Darhol",
+    "atScheduled": "Belgilangan vaqtda",
+    "before": {
+      "MINUTES_one": "Belgilangan vaqtdan {{count}} daqiqa oldin",
+      "MINUTES_other": "Belgilangan vaqtdan {{count}} daqiqa oldin",
+      "HOURS_one": "Belgilangan vaqtdan {{count}} soat oldin",
+      "HOURS_other": "Belgilangan vaqtdan {{count}} soat oldin",
+      "DAYS_one": "Belgilangan vaqtdan {{count}} kun oldin",
+      "DAYS_other": "Belgilangan vaqtdan {{count}} kun oldin",
+      "WEEKS_one": "Belgilangan vaqtdan {{count}} hafta oldin",
+      "WEEKS_other": "Belgilangan vaqtdan {{count}} hafta oldin",
+      "MONTHS_one": "Belgilangan vaqtdan {{count}} oy oldin",
+      "MONTHS_other": "Belgilangan vaqtdan {{count}} oy oldin",
+      "YEARS_one": "Belgilangan vaqtdan {{count}} yil oldin",
+      "YEARS_other": "Belgilangan vaqtdan {{count}} yil oldin"
+    },
+    "after": {
+      "MINUTES_one": "Belgilangan vaqtdan {{count}} daqiqa keyin",
+      "MINUTES_other": "Belgilangan vaqtdan {{count}} daqiqa keyin",
+      "HOURS_one": "Belgilangan vaqtdan {{count}} soat keyin",
+      "HOURS_other": "Belgilangan vaqtdan {{count}} soat keyin",
+      "DAYS_one": "Belgilangan vaqtdan keyin {{count}} kun",
+      "DAYS_other": "Belgilangan vaqtdan {{count}} kun keyin",
+      "WEEKS_one": "Belgilangan vaqtdan {{count}} hafta keyin",
+      "WEEKS_other": "Belgilangan vaqtdan {{count}} hafta keyin",
+      "MONTHS_one": "Belgilangan vaqtdan {{count}} oy keyin",
+      "MONTHS_other": "Belgilangan vaqtdan {{count}} oy keyin",
+      "YEARS_one": "Belgilangan vaqtdan {{count}} yil keyin",
+      "YEARS_other": "Belgilangan vaqtdan {{count}} yil keyin"
+    },
+    "units": {
+      "MINUTES_one": "daqiqa",
+      "MINUTES_other": "daqiqa",
+      "HOURS_one": "soat",
+      "HOURS_other": "soat",
+      "DAYS_one": "kun",
+      "DAYS_other": "kunlar",
+      "WEEKS_one": "hafta",
+      "WEEKS_other": "haftalar",
+      "MONTHS_one": "oy",
+      "MONTHS_other": "oylar",
+      "YEARS_one": "yil",
+      "YEARS_other": "yillar"
+    }
+  }
+}

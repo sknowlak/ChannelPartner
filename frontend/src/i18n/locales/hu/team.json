@@ -1,0 +1,83 @@
+{
+  "title": "Csapat kezelése",
+  "tabs": {
+    "members": "Csapattagok",
+    "roles": "Szerepek és engedélyek",
+    "profile": "Saját profil"
+  },
+  "roles": {
+    "owner": "Tulajdonos",
+    "member": "Csapattag"
+  },
+  "profile": {
+    "updated": "Profil frissítve.",
+    "basicInfo": "Alapvető információk",
+    "organisationInfo": "Szervezeti információ",
+    "preferences": "Preferences",
+    "companyName": "Cég/szervezet neve",
+    "city": "Város",
+    "state": "Állami",
+    "currencyHelp": "Költségkeretek és foglalási értékek megjelenítésére szolgál a csapatban.",
+    "useDeviceTimezone": "Az eszköz időzónájának használata ( {{timezone}} )",
+    "securityRole": "Biztonság és szerepkör",
+    "newPassword": "Új jelszó (ha nem változtat, hagyja üresen)",
+    "currentPassword": "Jelenlegi jelszó",
+    "memberSince": "Tagság óta",
+    "languageSaved": "A fiókjába mentett nyelv – minden olyan eszközön használni fogja, amelyre bejelentkezik."
+  },
+  "members": {
+    "intro": "Adjon hozzá, szerkesszen, inaktiváljon vagy távolítson el embereket a csapatában – ugyanazokhoz a potenciális ügyfelekhez férnek hozzá.",
+    "noPermission": "Nincs engedélye csapattagok hozzáadására, szerkesztésére vagy eltávolítására.",
+    "addNew": "+ Új felhasználó hozzáadása",
+    "passwordLabel": "{{label}} (minimum 8 karakter)",
+    "rolePermissions": "Szerep és engedélyek",
+    "adding": "Hozzáadás...",
+    "addMember": "Csapattag hozzáadása",
+    "tabAll": "Mind ( {{count}} )",
+    "tabActive": "Aktív ( {{count}} )",
+    "tabInactive": "Inaktív ( {{count}} )",
+    "searchPlaceholder": "Név vagy felhasználónév keresése...",
+    "allTimezones": "Minden időzóna",
+    "perPage": "Bejegyzések oldalanként",
+    "contact": "Érintkezés",
+    "added": "Hozzáadva",
+    "toggleActive": "Aktív – kattintson a kikapcsoláshoz",
+    "toggleInactive": "Inaktív – kattintson az aktiváláshoz",
+    "empty": "Még nincsenek csapattagok.",
+    "noMatch": "Egy csapattag sem felel meg ezeknek a szűrőknek.",
+    "showing": "{{from}} - {{to}} / {{total}} bejegyzés megjelenítése",
+    "firstPage": "Első oldal",
+    "previousPage": "Előző oldal",
+    "nextPage": "Következő oldal",
+    "lastPage": "Utolsó oldal"
+  },
+  "editMember": {
+    "title": "Felhasználó szerkesztése",
+    "noPermission": "Nincs engedélye a csapattagok szerkesztésére.",
+    "backToTeam": "Vissza a csapathoz",
+    "cantChangeOwn": "Nem változtathatja meg saját szerepét vagy státuszát.",
+    "needsManageRoles": "Egy tag szerepkörének megváltoztatásához Szerepkörök kezelése engedély szükséges.",
+    "addedBy": "Hozzáadta",
+    "addedOn": "Hozzáadva"
+  },
+  "rolesPage": {
+    "intro": "A kiemelt rendszergazda, az adminisztrátor és a kezelő beépítettek, és nem módosíthatók – minden máshoz hozzon létre egyéni szerepet.",
+    "noPermission": "Nincs engedélye szerepek kezelésére.",
+    "createCustom": "+ Egyéni szerep létrehozása",
+    "roleName": "Szerep neve",
+    "permissions": "Engedélyek",
+    "members": "tagok",
+    "creating": "Létrehozás...",
+    "createRole": "Szerep létrehozása",
+    "systemRole": "Rendszer szerepkör",
+    "builtIn": "Beépített",
+    "empty": "Még nincsenek szerepek."
+  },
+  "permissions": {
+    "MANAGE_LEADS": "Leadek kezelése (létrehozás, előrehaladás, könyvelés)",
+    "MANAGE_TEAM": "Csapat kezelése (tagok hozzáadása, szerkesztése, eltávolítása)",
+    "MANAGE_ROLES": "Szerepek és engedélyek kezelése",
+    "MANAGE_SETTINGS": "Beállítások kezelése (potenciális ügyfelek űrlapmezői)",
+    "none": "Nincs engedély"
+  }
+}

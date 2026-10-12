@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "ਸੈਟਿੰਗਾਂ",
+    "noPermission": "ਤੁਹਾਡੇ ਕੋਲ ਸੈਟਿੰਗਾਂ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਨਹੀਂ ਹੈ।"
+  },
+  "categories": {
+    "lead": "ਲੀਡ",
+    "user": "ਉਪਭੋਗਤਾ",
+    "integrations": "ਏਕੀਕਰਣ"
+  },
+  "leadTabs": {
+    "fields": "ਖੇਤਰ",
+    "statuses": "ਸਥਿਤੀਆਂ ਅਤੇ ਉਪ-ਸਥਿਤੀਆਂ",
+    "notifications": "ਸੂਚਨਾਵਾਂ ਅਤੇ ਸ਼ਡਿਊਲਰ"
+  },
+  "fields": {
+    "leadIntro": "ਲੀਡ ਕੈਪਚਰ ਫਾਰਮ ਨੂੰ ਕੌਂਫਿਗਰ ਕਰੋ: ਖੇਤਰਾਂ ਨੂੰ ਸਮਰੱਥ/ਅਯੋਗ ਕਰੋ, ਉਹਨਾਂ ਨੂੰ ਲੋੜੀਂਦੇ ਚਿੰਨ੍ਹਿਤ ਕਰੋ, ਜਾਂ ਆਪਣੇ ਖੁਦ ਦੇ ਕਸਟਮ ਖੇਤਰ ਸ਼ਾਮਲ ਕਰੋ।",
+    "userIntro": "ਟੀਮ ਮੈਂਬਰ ਨੂੰ ਸ਼ਾਮਲ ਕਰੋ/ਸੋਧੋ ਫਾਰਮ ਨੂੰ ਸੰਰਚਿਤ ਕਰੋ: ਖੇਤਰਾਂ ਨੂੰ ਸਮਰੱਥ/ਅਯੋਗ ਕਰੋ, ਉਹਨਾਂ ਨੂੰ ਲੋੜੀਂਦਾ ਚਿੰਨ੍ਹਿਤ ਕਰੋ, ਜਾਂ ਆਪਣੇ ਖੁਦ ਦੇ ਕਸਟਮ ਖੇਤਰ ਸ਼ਾਮਲ ਕਰੋ।",
+    "addCustomField": "+ ਕਸਟਮ ਫੀਲਡ ਸ਼ਾਮਲ ਕਰੋ",
+    "fieldLabel": "ਫੀਲਡ ਲੇਬਲ",
+    "group": "ਸਮੂਹ",
+    "groupPlaceholderLead": "ਉਦਾਹਰਨ ਲਈ ਪੁੱਛਗਿੱਛ ਜਾਣਕਾਰੀ",
+    "groupPlaceholderUser": "ਉਦਾਹਰਨ ਲਈ ਵਧੀਕ ਵੇਰਵੇ",
+    "dataType": "ਡਾਟਾ ਕਿਸਮ",
+    "options": "ਵਿਕਲਪ (ਕਾਮਾ ਵੱਖ ਕੀਤਾ)",
+    "requiredLead": "ਲੋੜੀਂਦਾ - ਤੁਹਾਡੀ ਟੀਮ ਦੇ ਭਾਈਵਾਲਾਂ ਨੂੰ ਲੀਡ ਰਜਿਸਟਰ ਕਰਨ ਲਈ ਇਸ ਨੂੰ ਭਰਨਾ ਚਾਹੀਦਾ ਹੈ",
+    "requiredUser": "ਲੋੜੀਂਦਾ - ਟੀਮ ਦੇ ਮੈਂਬਰ ਨੂੰ ਸ਼ਾਮਲ ਕਰਨ ਵੇਲੇ ਭਰਨਾ ਲਾਜ਼ਮੀ ਹੈ",
+    "creating": "ਬਣਾਇਆ ਜਾ ਰਿਹਾ ਹੈ...",
+    "createField": "ਫੀਲਡ ਬਣਾਓ",
+    "columns": {
+      "field": "ਖੇਤਰ",
+      "group": "ਸਮੂਹ",
+      "type": "ਟਾਈਪ ਕਰੋ",
+      "required": "ਲੋੜੀਂਦਾ ਹੈ",
+      "enabled": "ਸਮਰਥਿਤ",
+      "kind": "ਕਿਸਮ"
+    },
+    "kind": {
+      "custom": "ਕਸਟਮ",
+      "core": "ਕੋਰ (ਲਾਕ)",
+      "standard": "ਮਿਆਰੀ"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "ਟੈਕਸਟ",
+    "TEXTAREA": "ਲੰਬੀ ਲਿਖਤ",
+    "NUMBER": "ਨੰਬਰ",
+    "CURRENCY": "ਮੁਦਰਾ",
+    "DATE": "ਮਿਤੀ",
+    "SELECT": "ਡਰਾਪ ਡਾਉਨ",
+    "LIST": "ਸੂਚੀ"
+  },
+  "picker": {
+    "searchPlaceholder": "ਲੀਡ ਖੇਤਰ ਖੋਜੋ...",
+    "summary": "{{shown}} ਦਿਖਾਇਆ ਗਿਆ · {{mandatory}} ਲਾਜ਼ਮੀ",
+    "mandatory": "ਲਾਜ਼ਮੀ",
+    "noMatch": "ਕੋਈ ਖੇਤਰ ਮੇਲ ਨਹੀਂ ਖਾਂਦਾ।"
+  },
+  "statuses": {
+    "intro": "ਤੁਹਾਡੀਆਂ ਲੀਡ ਸਥਿਤੀਆਂ ਅਤੇ ਉਪ-ਸਥਿਤੀਆਂ - ਜਦੋਂ ਕੋਈ ਇਸ 'ਤੇ ਲੀਡ ਅੱਪਡੇਟ ਕਰਦਾ ਹੈ ਤਾਂ ਹਰ ਕੋਈ ਕੀ ਮੰਗਦਾ ਹੈ (ਇੱਕ ਤਾਰੀਖ ਅਤੇ ਸਮਾਂ, ਲੀਡ ਖੇਤਰ)।",
+    "add": "+ ਸਥਿਤੀ ਸ਼ਾਮਲ ਕਰੋ",
+    "columns": {
+      "order": "ਆਰਡਰ",
+      "status": "ਸਥਿਤੀ",
+      "subStatuses": "ਉਪ-ਸਥਿਤੀਆਂ",
+      "asksFor": "ਮੰਗਦਾ ਹੈ",
+      "active": "ਕਿਰਿਆਸ਼ੀਲ"
+    },
+    "moveUp": "ਉੱਪਰ ਜਾਓ",
+    "moveDown": "ਹੇਠਾਂ ਚਲੇ ਜਾਓ",
+    "defaultBadge": "ਨਵੀਆਂ ਲੀਡਾਂ ਲਈ ਪੂਰਵ-ਨਿਰਧਾਰਤ",
+    "bookingBadge": "ਬੁਕਿੰਗ ਸਥਿਤੀ",
+    "asksForLabel": "{{label}} ਲਈ ਪੁੱਛਦਾ ਹੈ",
+    "asksForDateTime": "ਮਿਤੀ ਅਤੇ ਸਮਾਂ ਪੁੱਛਦਾ ਹੈ",
+    "none": "ਕੋਈ ਨਹੀਂ",
+    "dateTime": "ਮਿਤੀ ਅਤੇ ਸਮਾਂ",
+    "scheduledOn": "{{names}} ਤੇ",
+    "fieldsSummary_one": "{{count}} ਖੇਤਰ ( {{mandatory}} ਲਾਜ਼ਮੀ)",
+    "fieldsSummary_other": "{{count}} ਖੇਤਰ ( {{mandatory}} ਲਾਜ਼ਮੀ)",
+    "deleteConfirm": "ਕੀ ਸਥਿਤੀ \" {{name}} \" ਨੂੰ ਮਿਟਾਉਣਾ ਹੈ? ਇਸ ਨੂੰ ਅਣਕੀਤਾ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।",
+    "editTitle": "ਸੰਪਾਦਨ ਸਥਿਤੀ - {{name}}",
+    "newTitle": "ਨਵੀਂ ਸਥਿਤੀ",
+    "name": "ਸਥਿਤੀ ਦਾ ਨਾਮ",
+    "colour": "ਰੰਗ",
+    "active": "ਕਿਰਿਆਸ਼ੀਲ",
+    "isDefault": "ਨਵੀਆਂ ਲੀਡਾਂ ਲਈ ਪੂਰਵ-ਨਿਰਧਾਰਤ ਸਥਿਤੀ",
+    "isBooking": "ਬੁਕਿੰਗ ਸਥਿਤੀ (ਪੂਰੀ ਬੁਕਿੰਗ ਦੁਆਰਾ ਸੈੱਟ)",
+    "whenMoved": "ਜਦੋਂ ਇੱਕ ਲੀਡ ਨੂੰ ਇਸ ਸਥਿਤੀ ਵਿੱਚ ਲਿਜਾਇਆ ਜਾਂਦਾ ਹੈ",
+    "askSchedule": "ਇੱਕ ਮਿਤੀ ਅਤੇ ਸਮਾਂ (ਸ਼ਡਿਊਲਰ) ਲਈ ਪੁੱਛੋ",
+    "scheduleLabelPlaceholder": "ਲੇਬਲ, ਜਿਵੇਂ ਕਿ 'ਤੇ ਜਾਓ",
+    "fieldsToShow": "ਅੱਪਡੇਟ ਫਾਰਮ 'ਤੇ ਦਿਖਾਉਣ ਲਈ ਲੀਡ ਖੇਤਰ",
+    "subStatusesTitle": "ਉਪ-ਸਥਿਤੀਆਂ",
+    "subStatusesHint": "ਹਰੇਕ ਉਪ-ਸਥਿਤੀ ਆਪਣੀ ਖੁਦ ਦੀ ਮਿਤੀ ਅਤੇ ਸਮਾਂ ਪੁੱਛ ਸਕਦੀ ਹੈ ਅਤੇ ਇਸਦੇ ਆਪਣੇ ਖੇਤਰ ਸ਼ਾਮਲ ਕਰ ਸਕਦੀ ਹੈ - ਉਪਰੋਕਤ ਸਥਿਤੀ ਦੇ ਖੇਤਰਾਂ ਦੇ ਸਿਖਰ 'ਤੇ ਦਿਖਾਇਆ ਗਿਆ ਹੈ।",
+    "subStatusName": "ਉਪ-ਸਥਿਤੀ ਦਾ ਨਾਮ",
+    "subFields": "ਖੇਤਰ ( {{count}} )",
+    "subScheduleLabelPlaceholder": "ਮਿਤੀ ਅਤੇ ਸਮਾਂ ਲੇਬਲ, ਉਦਾਹਰਨ ਲਈ ਇੱਥੇ ਕਾਲ ਕਰੋ",
+    "addSubStatus": "+ ਉਪ-ਸਥਿਤੀ ਸ਼ਾਮਲ ਕਰੋ",
+    "saveStatus": "ਸਥਿਤੀ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰੋ",
+    "createStatus": "ਸਥਿਤੀ ਬਣਾਓ"
+  },
+  "notifications": {
+    "intro": "ਸਹੀ ਲੋਕਾਂ ਨੂੰ ਸੂਚਿਤ ਕਰੋ ਜਦੋਂ ਕੋਈ ਲੀਡ ਸਥਿਤੀ 'ਤੇ ਪਹੁੰਚ ਜਾਂਦੀ ਹੈ - ਤੁਰੰਤ, ਜਾਂ ਇਸ 'ਤੇ ਨਿਰਧਾਰਤ ਮਿਤੀ ਅਤੇ ਸਮੇਂ ਤੋਂ ਪਹਿਲਾਂ / ਬਾਅਦ ਵਿੱਚ ਇੱਕ ਨਿਰਧਾਰਤ ਸਮਾਂ।",
+    "add": "+ ਸੂਚਨਾ ਸ਼ਾਮਲ ਕਰੋ",
+    "columns": {
+      "notification": "ਸੂਚਨਾ",
+      "whenStatusIs": "ਜਦੋਂ ਸਥਿਤੀ ਹੈ",
+      "sends": "ਭੇਜਦਾ ਹੈ",
+      "to": "ਨੂੰ",
+      "via": "ਰਾਹੀਂ",
+      "enabled": "ਸਮਰਥਿਤ"
+    },
+    "anyStatus": "ਕੋਈ ਵੀ ਸਥਿਤੀ",
+    "anySubStatus": "ਕੋਈ ਵੀ ਉਪ-ਸਥਿਤੀ",
+    "inactiveOption": "{{name}} (ਅਕਿਰਿਆਸ਼ੀਲ)",
+    "emptyRules": "ਅਜੇ ਤੱਕ ਕੋਈ ਸੂਚਨਾਵਾਂ ਨਹੀਂ - ਜਦੋਂ ਕੋਈ ਲੀਡ ਸਥਿਤੀ 'ਤੇ ਪਹੁੰਚ ਜਾਂਦੀ ਹੈ ਤਾਂ ਆਪਣੀ ਟੀਮ ਨੂੰ ਸੁਚੇਤ ਕਰਨ ਲਈ ਇੱਕ ਸ਼ਾਮਲ ਕਰੋ।",
+    "jobs": {
+      "title": "ਨਿਯਤ ਕੀਤਾ ਅਤੇ ਭੇਜਿਆ ਗਿਆ",
+      "firesAt": "ਵਿਖੇ ਅੱਗ ਲੱਗ ਜਾਂਦੀ ਹੈ",
+      "notification": "ਸੂਚਨਾ",
+      "lead": "ਲੀਡ",
+      "status": "ਸਥਿਤੀ",
+      "details": "ਵੇਰਵੇ",
+      "empty": "ਅਜੇ ਤੱਕ ਕੁਝ ਵੀ ਨਿਯਤ ਜਾਂ ਭੇਜਿਆ ਨਹੀਂ ਗਿਆ ਹੈ।",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "ਬਕਾਇਆ",
+      "PROCESSING": "ਪ੍ਰੋਸੈਸਿੰਗ",
+      "SENT": "ਭੇਜਿਆ",
+      "FAILED": "ਅਸਫਲ ਰਿਹਾ",
+      "SKIPPED": "ਛੱਡਿਆ",
+      "CANCELLED": "ਰੱਦ ਕਰ ਦਿੱਤਾ"
+    },
+    "deliveryStatus": {
+      "SENT": "ਭੇਜਿਆ",
+      "FAILED": "ਅਸਫਲ",
+      "SKIPPED": "ਛੱਡਿਆ"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ਇਨ-ਐਪ",
+      "EMAIL": "ਈਮੇਲ",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "ਨਿਰਧਾਰਤ ਉਪਭੋਗਤਾ",
+      "owner": "ਮਾਲਕ",
+      "updatedBy": "ਦੁਆਰਾ ਅਪਡੇਟ ਕੀਤਾ ਗਿਆ",
+      "role": "ਭੂਮਿਕਾ: {{name}}"
+    },
+    "channels": {
+      "inApp": "ਇਨ-ਐਪ",
+      "email": "ਈਮੇਲ",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "ਸੂਚਨਾ \" {{name}} \" ਨੂੰ ਮਿਟਾਉਣਾ ਹੈ? ਇਸ ਤੋਂ ਲੰਬਿਤ ਰੀਮਾਈਂਡਰ ਰੱਦ ਕਰ ਦਿੱਤੇ ਗਏ ਹਨ।",
+    "testPrompt": "ਕਿਹੜੀ ਲੀਡ ID ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋਏ ਇਸ ਸੂਚਨਾ ਦਾ ਟੈਸਟ ਆਪਣੇ ਆਪ ਨੂੰ (ਐਪ ਵਿੱਚ) ਭੇਜੋ?",
+    "testSent": "ਤੁਹਾਡੀ ਘੰਟੀ 'ਤੇ ਭੇਜਿਆ ਗਿਆ: {{title}} {{message}}",
+    "headersInvalid": "Webhook ਹੈਡਰ ਲਾਜ਼ਮੀ ਤੌਰ 'ਤੇ ਵੈਧ JSON ਹੋਣੇ ਚਾਹੀਦੇ ਹਨ, ਜਿਵੇਂ ਕਿ {\"ਪ੍ਰਮਾਣਿਕਤਾ\": \"ਬੇਅਰਰ xyz\"}",
+    "editTitle": "ਸੂਚਨਾ ਦਾ ਸੰਪਾਦਨ ਕਰੋ",
+    "newTitle": "ਨਵੀਂ ਸੂਚਨਾ",
+    "name": "ਨਾਮ",
+    "namePlaceholder": "ਜਿਵੇਂ ਕਿ ਸਾਈਟ ਵਿਜ਼ਿਟ ਰੀਮਾਈਂਡਰ",
+    "whenStatus": "ਜਦੋਂ ਇੱਕ ਲੀਡ ਦੀ ਸਥਿਤੀ ਹੁੰਦੀ ਹੈ",
+    "subStatus": "ਉਪ-ਸਥਿਤੀ",
+    "send": "ਭੇਜੋ (ਸ਼ਡਿਊਲਰ)",
+    "custom": "ਕਸਟਮ...",
+    "modeBefore": "ਨਿਰਧਾਰਤ ਸਮੇਂ ਤੋਂ ਪਹਿਲਾਂ",
+    "modeAfter": "ਨਿਰਧਾਰਤ ਸਮੇਂ ਤੋਂ ਬਾਅਦ",
+    "noScheduleWarning": "ਇਹ ਸਥਿਤੀ ਕੋਈ ਮਿਤੀ ਅਤੇ ਸਮਾਂ ਨਹੀਂ ਪੁੱਛਦੀ, ਇਸਲਈ \"ਨਿਰਧਾਰਤ ਸਮੇਂ ਤੋਂ ਪਹਿਲਾਂ/ਤੇ/ਬਾਅਦ\" ਸੂਚਨਾ ਕਦੇ ਵੀ ਚਾਲੂ ਨਹੀਂ ਹੋਵੇਗੀ।",
+    "noScheduleFix": "ਸਥਿਤੀਆਂ ਅਤੇ ਉਪ-ਸਥਿਤੀਆਂ ਦੇ ਅਧੀਨ ਇਸਦੇ ਲਈ <strong>ਮਿਤੀ ਅਤੇ ਸਮਾਂ ਪੁੱਛੋ ਨੂੰ</strong> ਚਾਲੂ ਕਰੋ, ਜਾਂ ਤੁਰੰਤ ਭੇਜੋ।",
+    "sendTo": "(ਕੋਈ ਵੀ ਸੁਮੇਲ) ਨੂੰ ਭੇਜੋ",
+    "recipientAssigned": "ਨਿਰਧਾਰਤ ਉਪਭੋਗਤਾ (ਲੀਡ ਮਾਲਕ)",
+    "recipientOwner": "ਖਾਤਾ ਮਾਲਕ / ਪ੍ਰਸ਼ਾਸਕ",
+    "recipientUpdatedBy": "ਉਹ ਵਿਅਕਤੀ ਜਿਸਨੇ ਸਥਿਤੀ ਨੂੰ ਅਪਡੇਟ ਕੀਤਾ",
+    "everyoneWithRole": "ਰੋਲ ਵਾਲਾ ਹਰ ਕੋਈ",
+    "specificUsers": "ਖਾਸ ਵਰਤੋਂਕਾਰ (ਕਿਰਿਆਸ਼ੀਲ)",
+    "inactiveNever": "ਅਕਿਰਿਆਸ਼ੀਲ ਉਪਭੋਗਤਾ ਕਦੇ ਵੀ ਸੂਚਨਾਵਾਂ ਪ੍ਰਾਪਤ ਨਹੀਂ ਕਰਦੇ, ਭਾਵੇਂ ਚੁਣੇ ਗਏ ਹੋਣ।",
+    "deliverVia": "ਰਾਹੀਂ ਡਿਲੀਵਰ ਕਰੋ",
+    "channelInApp": "ਇਨ-ਐਪ (ਘੰਟੀ)",
+    "channelEmail": "ਈਮੇਲ",
+    "channelWebhook": "Webhook ( WhatsApp / SMS ਪ੍ਰਦਾਤਾ)",
+    "emailHint": "ਈਮੇਲ ਹਰੇਕ ਪ੍ਰਾਪਤਕਰਤਾ ਦੇ ਈਮੇਲ ਪਤੇ 'ਤੇ ਜਾਂਦੀ ਹੈ ਅਤੇ ਸਰਵਰ (ਬੈਕਐਂਡ/.env) 'ਤੇ SMTP ਸੈੱਟਅੱਪ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ; ਉਦੋਂ ਤੱਕ ਈ-ਮੇਲ ਭੇਜੇ ਜਾਣ ਨੂੰ ਛੱਡ ਦਿੱਤਾ ਜਾਂਦਾ ਹੈ।",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "ਸਿਰਲੇਖ ( JSON )",
+    "content": "ਸੂਚਨਾ ਸਮੱਗਰੀ",
+    "title": "ਸਿਰਲੇਖ",
+    "message": "ਸੁਨੇਹਾ",
+    "insertIntoTitle": "ਸਿਰਲੇਖ ਵਿੱਚ ਪਾਓ",
+    "insertIntoMessage": "ਸੁਨੇਹਾ ਵਿੱਚ ਪਾਓ",
+    "anyLeadField": "ਕੋਈ ਵੀ ਲੀਡ ਖੇਤਰ ਵੀ ਕੰਮ ਕਰਦਾ ਹੈ, ਜਿਵੇਂ ਕਿ <code1>{{example1}}</code1> ਜਾਂ <code2>{{example2}}</code2> ।",
+    "preview": "ਪੂਰਵਦਰਸ਼ਨ (ਨਮੂਨਾ ਲੀਡ)",
+    "enabled": "ਸਮਰਥਿਤ",
+    "saveRule": "ਸੂਚਨਾ ਸੁਰੱਖਿਅਤ ਕਰੋ",
+    "createRule": "ਸੂਚਨਾ ਬਣਾਓ",
+    "variables": {
+      "customerName": "ਲੀਡ ਨਾਮ",
+      "customerMobile": "ਲੀਡ ਮੋਬਾਈਲ",
+      "customerEmail": "ਲੀਡ ਈਮੇਲ",
+      "registrationId": "ਲੀਡ ID",
+      "status": "ਸਥਿਤੀ",
+      "subStatus": "ਉਪ-ਸਥਿਤੀ",
+      "scheduleAt": "ਨਿਯਤ ਮਿਤੀ ਅਤੇ ਸਮਾਂ",
+      "assignedTo": "ਨਿਰਧਾਰਤ ਉਪਭੋਗਤਾ",
+      "updatedBy": "ਦੁਆਰਾ ਅਪਡੇਟ ਕੀਤਾ ਗਿਆ",
+      "recipient": "ਪ੍ਰਾਪਤਕਰਤਾ ਦਾ ਨਾਮ",
+      "project": "ਪ੍ਰੋਜੈਕਟ",
+      "notes": "ਨਵੀਨਤਮ ਨੋਟ",
+      "partner": "ਸਾਥੀ ਦਾ ਨਾਮ"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "ਸਥਿਤੀ ਸੈੱਟ ਹੋਣ 'ਤੇ ਤੁਰੰਤ",
+      "AT": "ਨਿਰਧਾਰਤ ਸਮੇਂ 'ਤੇ",
+      "A1D": "ਨਿਰਧਾਰਤ ਸਮੇਂ ਤੋਂ 1 ਦਿਨ ਬਾਅਦ (ਫਾਲੋ-ਅੱਪ ਜਾਂਚ)"
+    },
+    "immediately": "ਤੁਰੰਤ",
+    "atScheduled": "ਨਿਰਧਾਰਤ ਸਮੇਂ 'ਤੇ",
+    "before": {
+      "MINUTES_one": "ਨਿਰਧਾਰਤ ਸਮੇਂ ਤੋਂ {{count}} ਮਿੰਟ ਪਹਿਲਾਂ",
+      "MINUTES_other": "ਨਿਰਧਾਰਤ ਸਮੇਂ ਤੋਂ {{count}} ਮਿੰਟ ਪਹਿਲਾਂ",
+      "HOURS_one": "ਨਿਰਧਾਰਤ ਸਮੇਂ ਤੋਂ {{count}} ਘੰਟਾ ਪਹਿਲਾਂ",
+      "HOURS_other": "ਨਿਰਧਾਰਤ ਸਮੇਂ ਤੋਂ {{count}} ਘੰਟੇ ਪਹਿਲਾਂ",
+      "DAYS_one": "ਨਿਰਧਾਰਤ ਸਮੇਂ ਤੋਂ {{count}} ਦਿਨ ਪਹਿਲਾਂ",
+      "DAYS_other": "ਨਿਰਧਾਰਤ ਸਮੇਂ ਤੋਂ {{count}} ਦਿਨ ਪਹਿਲਾਂ",
+      "WEEKS_one": "ਨਿਯਤ ਸਮੇਂ ਤੋਂ {{count}} ਹਫ਼ਤਾ ਪਹਿਲਾਂ",
+      "WEEKS_other": "ਨਿਯਤ ਸਮੇਂ ਤੋਂ {{count}} ਹਫ਼ਤੇ ਪਹਿਲਾਂ",
+      "MONTHS_one": "ਨਿਯਤ ਸਮੇਂ ਤੋਂ {{count}} ਮਹੀਨਾ ਪਹਿਲਾਂ",
+      "MONTHS_other": "ਨਿਯਤ ਸਮੇਂ ਤੋਂ {{count}} ਮਹੀਨੇ ਪਹਿਲਾਂ",
+      "YEARS_one": "ਨਿਯਤ ਸਮੇਂ ਤੋਂ {{count}} ਸਾਲ ਪਹਿਲਾਂ",
+      "YEARS_other": "ਨਿਯਤ ਸਮੇਂ ਤੋਂ {{count}} ਸਾਲ ਪਹਿਲਾਂ"
+    },
+    "after": {
+      "MINUTES_one": "ਨਿਰਧਾਰਤ ਸਮੇਂ ਤੋਂ {{count}} ਮਿੰਟ ਬਾਅਦ",
+      "MINUTES_other": "ਨਿਯਤ ਸਮੇਂ ਤੋਂ {{count}} ਮਿੰਟ ਬਾਅਦ",
+      "HOURS_one": "ਨਿਰਧਾਰਤ ਸਮੇਂ ਤੋਂ {{count}} ਘੰਟੇ ਬਾਅਦ",
+      "HOURS_other": "ਨਿਯਤ ਸਮੇਂ ਤੋਂ {{count}} ਘੰਟੇ ਬਾਅਦ",
+      "DAYS_one": "ਨਿਯਤ ਸਮੇਂ ਤੋਂ ਬਾਅਦ {{count}} ਦਿਨ",
+      "DAYS_other": "ਨਿਯਤ ਸਮੇਂ ਤੋਂ ਬਾਅਦ {{count}} ਦਿਨ",
+      "WEEKS_one": "ਨਿਯਤ ਸਮੇਂ ਤੋਂ ਬਾਅਦ {{count}} ਹਫ਼ਤਾ",
+      "WEEKS_other": "ਨਿਯਤ ਸਮੇਂ ਤੋਂ ਬਾਅਦ {{count}} ਹਫ਼ਤੇ",
+      "MONTHS_one": "ਨਿਯਤ ਸਮੇਂ ਤੋਂ ਬਾਅਦ {{count}} ਮਹੀਨਾ",
+      "MONTHS_other": "ਨਿਯਤ ਸਮੇਂ ਤੋਂ ਬਾਅਦ {{count}} ਮਹੀਨੇ",
+      "YEARS_one": "ਨਿਯਤ ਸਮੇਂ ਤੋਂ ਬਾਅਦ {{count}} ਸਾਲ",
+      "YEARS_other": "ਨਿਯਤ ਸਮੇਂ ਤੋਂ ਬਾਅਦ {{count}} ਸਾਲ"
+    },
+    "units": {
+      "MINUTES_one": "ਮਿੰਟ",
+      "MINUTES_other": "ਮਿੰਟ",
+      "HOURS_one": "ਘੰਟਾ",
+      "HOURS_other": "ਘੰਟੇ",
+      "DAYS_one": "ਦਿਨ",
+      "DAYS_other": "ਦਿਨ",
+      "WEEKS_one": "ਹਫ਼ਤਾ",
+      "WEEKS_other": "ਹਫ਼ਤੇ",
+      "MONTHS_one": "ਮਹੀਨਾ",
+      "MONTHS_other": "ਮਹੀਨੇ",
+      "YEARS_one": "ਸਾਲ",
+      "YEARS_other": "ਸਾਲ"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "title": "Xestionar o equipo",
+  "tabs": {
+    "members": "Membros do equipo",
+    "roles": "Roles e permisos",
+    "profile": "O meu perfil"
+  },
+  "roles": {
+    "owner": "Propietario",
+    "member": "Membro do equipo"
+  },
+  "profile": {
+    "updated": "Perfil actualizado.",
+    "basicInfo": "Información básica",
+    "organisationInfo": "Información da organización",
+    "preferences": "Preferencias",
+    "companyName": "Nome da empresa/organización",
+    "city": "Cidade",
+    "state": "Estado",
+    "currencyHelp": "Utilízase para mostrar orzamentos e valores de reservas do teu equipo.",
+    "useDeviceTimezone": "Usar o fuso horario do dispositivo ( {{timezone}} )",
+    "securityRole": "Seguridade e función",
+    "newPassword": "Novo contrasinal (deixe en branco para manter sen cambios)",
+    "currentPassword": "Contrasinal actual",
+    "memberSince": "Membro Desde",
+    "languageSaved": "Idioma gardado na túa conta: utilizarase en todos os dispositivos nos que inicies sesión."
+  },
+  "members": {
+    "intro": "Engade, edita, desactiva ou elimina persoas do teu equipo: comparten acceso aos mesmos clientes potenciales.",
+    "noPermission": "Non tes permiso para engadir, editar ou eliminar membros do equipo.",
+    "addNew": "+ Engadir novo usuario",
+    "passwordLabel": "{{label}} (mínimo 8 caracteres)",
+    "rolePermissions": "Papel e permisos",
+    "adding": "Engadindo...",
+    "addMember": "Engadir membro do equipo",
+    "tabAll": "Todos ( {{count}} )",
+    "tabActive": "Activo ( {{count}} )",
+    "tabInactive": "Inactivo ( {{count}} )",
+    "searchPlaceholder": "Buscar nome ou nome de usuario...",
+    "allTimezones": "Todos os fusos horarios",
+    "perPage": "Entradas por páxina",
+    "contact": "Contacto",
+    "added": "Engadido",
+    "toggleActive": "Activo: fai clic para desactivalo",
+    "toggleInactive": "Inactivo: fai clic para activalo",
+    "empty": "Aínda non hai membros do equipo.",
+    "noMatch": "Ningún membro do equipo coincide con estes filtros.",
+    "showing": "Mostrando {{from}} - {{to}} de {{total}} entradas",
+    "firstPage": "Primeira páxina",
+    "previousPage": "Páxina anterior",
+    "nextPage": "Páxina seguinte",
+    "lastPage": "Última páxina"
+  },
+  "editMember": {
+    "title": "Editar Usuario",
+    "noPermission": "Non tes permiso para editar os membros do equipo.",
+    "backToTeam": "Volver ao equipo",
+    "cantChangeOwn": "Non podes cambiar o teu propio rol ou estado.",
+    "needsManageRoles": "Para cambiar o rol dun membro é necesario o permiso Xestionar roles.",
+    "addedBy": "Engadido por",
+    "addedOn": "Engadido"
+  },
+  "rolesPage": {
+    "intro": "O superadministrador, o administrador e o xestor están integrados e non se poden cambiar; crea un rol personalizado para calquera outra cousa.",
+    "noPermission": "Non tes permiso para xestionar roles.",
+    "createCustom": "+ Crear un rol personalizado",
+    "roleName": "Nome da función",
+    "permissions": "Permisos",
+    "members": "Membros",
+    "creating": "Creando...",
+    "createRole": "Crear rol",
+    "systemRole": "Papel do sistema",
+    "builtIn": "Integrado",
+    "empty": "Aínda non hai papeis."
+  },
+  "permissions": {
+    "MANAGE_LEADS": "Xestionar clientes potenciales (crear, progresar, reservar)",
+    "MANAGE_TEAM": "Xestionar o equipo (engadir, editar, eliminar membros)",
+    "MANAGE_ROLES": "Xestionar roles e permisos",
+    "MANAGE_SETTINGS": "Xestionar configuración (campos do formulario de clientes potenciales)",
+    "none": "Sen permisos"
+  }
+}

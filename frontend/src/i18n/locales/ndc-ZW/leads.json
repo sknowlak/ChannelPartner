@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Vatungamiri vangu",
+    "signedInAs": "Yakanyoreswa se {{name}} ( {{partnerId}} ) · nguva dzinoratidzwa mu {{timezone}}",
+    "addLead": "+ Wedzera Mutungamiriri",
+    "tabs": {
+      "all": "Zveshe ( {{count}} )",
+      "pending": "Zvakamirira ( {{count}} )",
+      "booked": "Yakabhukwa ( {{count}} )"
+    },
+    "searchPlaceholder": "Tsvaka ngezita, nharembozha, kana ID yekunyoresa ...",
+    "manageColumns": "Tarisa mbiru",
+    "rowsPerPage": "Mitsara pa peji",
+    "registrationId": "ID yekunyoresa",
+    "emptyState": "Hapana vanotungamira parizvino - kunyoresa yako yekutanga.",
+    "noMatch": "Hapana zvinotungamirira zvinoenderana nemasefa aya.",
+    "showing": "Kukombidza {{from}} - {{to}} ye {{total}} zvakapinda",
+    "actions": {
+      "preview": "Kuongorora uye kugadzirisa nekukurumidza",
+      "history": "Ngano",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Dana"
+    },
+    "pagination": {
+      "first": "Peji yekutanga .",
+      "previous": "Peji yakapfuura",
+      "next": "Peji inoteera",
+      "last": "Peji yekupeisira ."
+    }
+  },
+  "columns": {
+    "status": "Chithado",
+    "assignTo": "Kugovera Ku",
+    "booked": "Yakabhukwa",
+    "protectionUntil": "Kudzivirirwa Kuguma ."
+  },
+  "booking": {
+    "booked": "Yakabhukwa",
+    "pending": "Zvakayima"
+  },
+  "assign": {
+    "unassigned": "Hazvina kugoverwa",
+    "owner": "{{name}} (Muridzi)",
+    "inactive": "{{name}} (asingashandi)",
+    "unknownUser": "Mushandisi asingazivikanwi",
+    "assignedTo": "Yakagoverwa ku {{name}}"
+  },
+  "form": {
+    "addTitle": "Wedzera Lead",
+    "editTitle": "Kugadzirisa Kutungamira",
+    "noPermissionAdd": "Iwe hauna mvumo yekunyoresa vanotungamira.",
+    "noPermissionEdit": "Iwe hauna mvumo yekunasira vanotungamira.",
+    "selectPlaceholder": "Kheta...",
+    "commaSeparated": "Koma yakaparadzaniswa .",
+    "phonePlaceholder": "Nhamba yefoni .",
+    "countryCode": "Kodhi yenyika"
+  },
+  "project": {
+    "none": "Hapana chirongwa chisati chaitika (chisina kunyorwa)",
+    "notInList": "{{project}} (kwete muchirongwa chechirongwa)"
+  },
+  "journey": {
+    "customer": "Mutengi",
+    "currentOwner": "Muridzi wemazuva ano",
+    "protectionExpiry": "Kudzivirirwa Kupera",
+    "leadStatus": "Kutungamira Chimiro",
+    "scheduled": "Zvakarongwa",
+    "assignedTo": "Wakagoverwa Kuti .",
+    "referral": "Kuendeswa",
+    "builderReason": "Chikonzero chemuvaki: {{reason}}",
+    "bookedHint": "Yakabhukwa nge muvaki - muridzi wekushanda waenda kune muvaki; attribution yako uye kukodzera kwekomisheni zvinochengetedzwa.",
+    "notBookedHint": "Kubhuka kunosimbiswa ngemuvaki kana vagamuchira kutumirwa.",
+    "quickUpdate": "Kugadzirisa ngekukasira",
+    "leadDetails": "Kutungamira Mashoko",
+    "progressHistory": "Nhoroondo yeKubudirira",
+    "timesIn": "(nguwa mu {{timezone}} )",
+    "backToMyLeads": "Kudzokera kune Vanotungamira",
+    "editLead": "Kugadzirisa Kutungamira"
+  },
+  "referral": {
+    "NOT_REFERRED": "Hazvina kunyorwa (hapana chirongwa)",
+    "PENDING_BUILDER": "Kuemera muvaki .",
+    "ACCEPTED": "Zvakaashirwa ngevanoaka .",
+    "REJECTED": "Yakarambwa nemuvaki ."
+  },
+  "preview": {
+    "ariaLabel": "Kutungamira kuongorora",
+    "title": "Kutungamira Kuongorora",
+    "source": "Murambo",
+    "location": "Kwawuri",
+    "scheduled": "Zvakarongwa",
+    "registered": "Yakanyoreswa",
+    "latestNote": "Chinyorwa chemazuva ano",
+    "quickUpdate": "Kugadzirisa ngekukasira",
+    "fullDetails": "Zviro Zveshe",
+    "editLead": "Kugadzirisa Kutungamira",
+    "history": "Ngano"
+  },
+  "quick": {
+    "assignedTo": "Wakagoverwa Kuti .",
+    "status": "Chithado",
+    "subStatus": "Sub-Mamiriro",
+    "selectSubStatus": "Sarudza chimiro chidiki...",
+    "none": "Apana",
+    "scheduledAt": "Zvakarongwa pa .",
+    "localTime": "nguwa dzemunharaunda",
+    "note": "Kouvonesesa",
+    "notePlaceholder": "Chiinyi chakaitika pakudaidzwa / kuvhakachira uku? (kusana)",
+    "updateStatus": "Kuvandudza mamiriro",
+    "statusUpdated": "Chimiro chakagadziriswa",
+    "bookedLocked": "kutungamirira ichi akabhukwa - mamiriro ayo haachakwanisi kuchinjwa.",
+    "viewOnly": "Unokona kuona kutungamira uku, asi basa rako harikwanisi kuigadzirisa."
+  },
+  "history": {
+    "title": "Nhoroondo - {{registrationId}}",
+    "tabs": {
+      "all": "Zveshe",
+      "status": "Chithado",
+      "assignment": "Sinazwi",
+      "notes": "Zvinyorwa"
+    },
+    "doneBy": "Zvakaitwa nge {{actor}}",
+    "system": "Sishitema",
+    "platforms": {
+      "System": "Sishitema",
+      "External": "Zvokunja",
+      "Web": "Webhu",
+      "Mobile": "Mujiyo"
+    },
+    "added": "yakawedzera",
+    "updated": "yakagadziridzwa",
+    "empty": "(pachina chiro)",
+    "noHistory": "Hapana nhoroondo muchikamu ichi parizvino.",
+    "fieldLabels": {
+      "stage": "Chithado",
+      "subStatus": "Sub-Mamiriro",
+      "scheduledAt": "Mudiro",
+      "notes": "Zvinyorwa",
+      "assignedTo": "Wakagoverwa Kuti ."
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Kunyoreswa kwemudiwa kwakagamuchirwa",
+      "DUPLICATE_CHECK_COMPLETED": "Cheki yakadzokororwa yakapedzwa - hapana yakadzokororwa inoshanda yakawanikwa",
+      "REGISTRATION_ACCEPTED": "Kunyoresa kwakaashirwa .",
+      "PROTECTION_GRANTED_one": "{{count}} -zuva rekudzivirirwa rakapiwa",
+      "PROTECTION_GRANTED_other": "{{count}} -zuva rekudzivirirwa rakapiwa",
+      "REGISTRATION_ATTEMPT_REJECTED": "Kudzokorora kunyoreswa kuedza nge {{partnerId}} yakarambwa",
+      "LEAD_DETAILS_UPDATED_one": "Yakagadziridzwa {{count}} munda",
+      "LEAD_DETAILS_UPDATED_other": "Yakagadziridzwa {{count}} minda",
+      "STAGE_UPDATED": "Chimiro chakagadziriswa ku {{status}}",
+      "LEAD_ASSIGNED": "Yakagoverwa ku {{name}}",
+      "LEAD_UNASSIGNED": "Hazvina kugoverwa",
+      "BOOKING_COMPLETED": "Kubhuka kwapera",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Muridzi wekushanda wakaendeswa kune Muvaki .",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Mudiwa wekupa yakachengetedzwa",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kukodzera kweKomishini kwakagadzirwa .",
+      "HANDOVER_COMPLETED": "Kupetudzwa kwapera",
+      "REFERRAL_ACCEPTED": "Muvaki akagamuchira kutumirwa",
+      "REFERRAL_REJECTED": "Muvaki wakaramba kutumirwa. Chikonzero: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin yakabudisa kudzivirira kwakadzokororwa mangwanani. Chikonzero: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin yakagoverwazve kunyoreswa kubva {{from}} kusvika {{to}} . Chikonzero: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Tarisa mbiru",
+    "hint": "Dhonza kuti uronge zvakare · tarisa kuratidza",
+    "showAll": "Kombidze Zvese",
+    "resetDefault": "Reset kune yakajairika"
+  },
+  "filters": {
+    "title": "Zvinosefa",
+    "allProjects": "Zveshe zvirongwa .",
+    "any": "Chese acho",
+    "noFields": "Hapana imwe minda inosefa yakabvumirwa parizvino (Zvirongwa> Kutungamira).",
+    "clearAll": "Bvisa Zvese"
+  },
+  "phone": {
+    "MISSING": "Nhamba yefoni inodiwa.",
+    "INVALID": "Ndapota pinda nhamba yefoni inoshanda.",
+    "TOO_SHORT": "Nhamba yefoni yakapfupika zvikuru.",
+    "TOO_LONG": "Nhamba yefoni yakareba zvikuru.",
+    "INVALID_FOR_COUNTRY": "Nhamba yefoni iyi haishandi kune {{country}} .",
+    "COUNTRY_MISMATCH": "Ndapota sarudza kodhi yenyika yakarurama.",
+    "NOT_MOBILE": "Ndapota pinda nhamba yefoni, kwete nhare yepasi."
+  }
+}

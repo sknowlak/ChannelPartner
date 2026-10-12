@@ -1,0 +1,190 @@
+{
+  "list": {
+    "title": "Os meus leads",
+    "signedInAs": "Ligado como {{name}} ( {{partnerId}} ) · horários apresentados em {{timezone}}",
+    "addLead": "+ Adicionar lead",
+    "tabs": {
+      "all": "All ( {{count}} )",
+      "pending": "Pendente ( {{count}} )",
+      "booked": "Reservado ( {{count}} )"
+    },
+    "searchPlaceholder": "Pesquise por nome, telemóvel ou ID de registo...",
+    "manageColumns": "Gerir colunas",
+    "rowsPerPage": "Linhas por página",
+    "registrationId": "ID de registo",
+    "emptyState": "Ainda não há leads - registe o seu primeiro.",
+    "noMatch": "Nenhum lead corresponde a estes filtros.",
+    "showing": "Mostrando {{from}} - {{to}} de {{total}} entradas",
+    "actions": {
+      "preview": "Visualização e atualização rápida",
+      "history": "História",
+      "email": "E-mail",
+      "whatsapp": "WhatsApp",
+      "call": "Chamada"
+    },
+    "pagination": {
+      "first": "Primeira página",
+      "previous": "Página anterior",
+      "next": "Próxima página",
+      "last": "Última página"
+    }
+  },
+  "columns": {
+    "status": "Estatuto",
+    "assignTo": "Atribuir a",
+    "booked": "Reservado",
+    "protectionUntil": "Proteção até"
+  },
+  "booking": {
+    "booked": "Reservado",
+    "pending": "Pendente"
+  },
+  "assign": {
+    "unassigned": "Não atribuído",
+    "owner": "{{name}} (Proprietário)",
+    "inactive": "{{name}} (inativo)",
+    "unknownUser": "Utilizador desconhecido",
+    "assignedTo": "Atribuído a {{name}}"
+  },
+  "form": {
+    "addTitle": "Adicionar lead",
+    "editTitle": "Editar lead",
+    "noPermissionAdd": "Não tem permissão para registar leads.",
+    "noPermissionEdit": "Não tem permissão para editar leads.",
+    "selectPlaceholder": "Selecionar...",
+    "commaSeparated": "Separados por vírgula",
+    "phonePlaceholder": "Número de telefone",
+    "countryCode": "Código do país"
+  },
+  "project": {
+    "none": "Nenhum projeto ainda (não referido)",
+    "notInList": "{{project}} (não está na lista de projectos)"
+  },
+  "journey": {
+    "customer": "Cliente",
+    "currentOwner": "Proprietário atual",
+    "protectionExpiry": "Expiração da proteção",
+    "leadStatus": "Estado do lead",
+    "scheduled": "Agendado",
+    "assignedTo": "Atribuído a",
+    "referral": "Referência",
+    "builderReason": "Motivo do construtor: {{reason}}",
+    "bookedHint": "Reservado pelo construtor – a propriedade operacional passou para o construtor; a sua atribuição e elegibilidade para comissão são mantidas.",
+    "notBookedHint": "As reservas são confirmadas pelo construtor assim que aceitam a indicação.",
+    "quickUpdate": "Atualização rápida",
+    "leadDetails": "Detalhes do lead",
+    "progressHistory": "Histórico de progresso",
+    "timesIn": "(horários em {{timezone}} )",
+    "backToMyLeads": "Voltar para Os meus leads",
+    "editLead": "Editar lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "Não referido (sem projeto)",
+    "PENDING_BUILDER": "Esperando pelo construtor",
+    "ACCEPTED": "Aceite pelo construtor",
+    "REJECTED": "Rejeitado pelo construtor"
+  },
+  "preview": {
+    "ariaLabel": "Visualização do lead",
+    "title": "Visualização de leads",
+    "source": "Fonte",
+    "location": "Localização",
+    "scheduled": "Agendado",
+    "registered": "Registrado",
+    "latestNote": "Última nota",
+    "quickUpdate": "Atualização rápida",
+    "fullDetails": "Detalhes completos",
+    "editLead": "Editar lead",
+    "history": "História"
+  },
+  "quick": {
+    "assignedTo": "Atribuído a",
+    "status": "Estatuto",
+    "subStatus": "Substatus",
+    "selectSubStatus": "Selecione o sub-estado...",
+    "none": "Nenhum",
+    "scheduledAt": "Agendado em",
+    "localTime": "hora local",
+    "note": "Nota",
+    "notePlaceholder": "O que aconteceu nesta chamada/visita? (opcional)",
+    "updateStatus": "Atualizar estado",
+    "statusUpdated": "Estado atualizado",
+    "bookedLocked": "Este lead está reservado e o seu estado já não pode ser alterado.",
+    "viewOnly": "Pode visualizar esse lead, mas a sua função não pode atualizá-lo."
+  },
+  "history": {
+    "title": "Histórico - {{registrationId}}",
+    "tabs": {
+      "all": "Tudo",
+      "status": "Estatuto",
+      "assignment": "Tarefa",
+      "notes": "Notas"
+    },
+    "doneBy": "Feito por {{actor}}",
+    "system": "Sistema",
+    "platforms": {
+      "System": "Sistema",
+      "External": "Externo",
+      "Web": "Rede",
+      "Mobile": "Móvel"
+    },
+    "added": "adicionado",
+    "updated": "atualizado",
+    "empty": "(vazio)",
+    "noHistory": "Ainda não há histórico nesta categoria.",
+    "fieldLabels": {
+      "stage": "Estatuto",
+      "subStatus": "Substatus",
+      "scheduledAt": "Horário",
+      "notes": "Notas",
+      "assignedTo": "Atribuído a"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Registo de parceiro recebido",
+      "DUPLICATE_CHECK_COMPLETED": "Verificação de duplicados concluída – nenhuma duplicata ativa encontrada",
+      "REGISTRATION_ACCEPTED": "Registo aceito",
+      "PROTECTION_GRANTED_one": "{{count}} dias de proteção concedida",
+      "PROTECTION_GRANTED_many": "{{count}} dias de proteção concedida",
+      "PROTECTION_GRANTED_other": "{{count}} dias de proteção concedida",
+      "REGISTRATION_ATTEMPT_REJECTED": "Tentativa de registo duplicado de {{partnerId}} rejeitada",
+      "LEAD_DETAILS_UPDATED_one": "Campo {{count}} atualizado",
+      "LEAD_DETAILS_UPDATED_many": "Campos {{count}} atualizados",
+      "LEAD_DETAILS_UPDATED_other": "Campos {{count}} atualizados",
+      "STAGE_UPDATED": "Estado atualizado para {{status}}",
+      "LEAD_ASSIGNED": "Atribuído a {{name}}",
+      "LEAD_UNASSIGNED": "Não atribuído",
+      "BOOKING_COMPLETED": "Reserva concluída",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Propriedade operacional transferida para o Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribuição do parceiro preservada",
+      "COMMISSION_ELIGIBILITY_CREATED": "Elegibilidade da comissão criada",
+      "HANDOVER_COMPLETED": "Transferência concluída",
+      "REFERRAL_ACCEPTED": "Builder aceitou a indicação",
+      "REFERRAL_REJECTED": "Builder rejeitou a nomeação. Motivo: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "O administrador libertou a proteção duplicada antecipadamente. Motivo: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "O administrador reatribuiu o registo de {{from}} para {{to}} . Motivo: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Gerir colunas",
+    "hint": "Arrastar para reordenar · marcar para mostrar",
+    "showAll": "Mostrar tudo",
+    "resetDefault": "Repor para o padrão"
+  },
+  "filters": {
+    "title": "Filtros",
+    "allProjects": "Todos os projetos",
+    "any": "Qualquer",
+    "noFields": "Nenhum outro campo filtrável está ainda activado (Definições > Lead).",
+    "clearAll": "Limpar tudo"
+  },
+  "phone": {
+    "MISSING": "O número de telefone é obrigatório.",
+    "INVALID": "Introduza um número de telefone válido.",
+    "TOO_SHORT": "O número de telefone é muito curto.",
+    "TOO_LONG": "O número de telefone é demasiado longo.",
+    "INVALID_FOR_COUNTRY": "Este número de telefone não é válido para {{country}} .",
+    "COUNTRY_MISMATCH": "Selecione o indicativo do país correto.",
+    "NOT_MOBILE": "Introduza um número de telemóvel e não um telefone fixo."
+  }
+}

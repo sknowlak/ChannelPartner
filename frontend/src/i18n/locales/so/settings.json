@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Dejinta",
+    "noPermission": "Ma haysatid oggolaansho aad ku maamusho dejinta"
+  },
+  "categories": {
+    "lead": "Hogaamin",
+    "user": "Isticmaale",
+    "integrations": "Is-dhexgalka"
+  },
+  "leadTabs": {
+    "fields": "Beeraha",
+    "statuses": "Heerarka & Xaalad-hoosaadyada",
+    "notifications": "Ogeysiisyada & Jadwalayaasha"
+  },
+  "fields": {
+    "leadIntro": "Habee foomka qabsashada rasaasta: karti/dami beeraha, calaamadee kuwa loo baahan yahay, ama ku dar meelaha aad adigu leedahay.",
+    "userIntro": "Habee foomka xubinta ku darista/waxka beddelka: karti/dhami meelaha, calaamadee meelaha loo baahan yahay, ama ku dar meelaha aad adigu leedahay.",
+    "addCustomField": "+ Kudar Goobta Gaarka ah",
+    "fieldLabel": "Summada goobta",
+    "group": "Kooxda",
+    "groupPlaceholderLead": "Tusaale ahaan macluumaadka weydiinta",
+    "groupPlaceholderUser": "tusaale Faahfaahin dheeraad ah",
+    "dataType": "Nooca Xogta",
+    "options": "Ikhtiyaarada (comma waa la kala saaray)",
+    "requiredLead": "Loo baahan yahay - lammaanayaasha kooxdaada waa inay buuxiyaan tan si ay u diiwaan geliyaan hogaanka",
+    "requiredUser": "Loo baahan yahay - waa in la buuxiyaa marka lagu daro xubin kooxda",
+    "creating": "Samaynta...",
+    "createField": "Samee Goobta",
+    "columns": {
+      "field": "Garoonka",
+      "group": "Kooxda",
+      "type": "Nooca",
+      "required": "Loo baahan yahay",
+      "enabled": "Hawl gal",
+      "kind": "Naxariis"
+    },
+    "kind": {
+      "custom": "Caadiyan",
+      "core": "Xudunta (xiran)",
+      "standard": "Heerka"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Qoraal",
+    "TEXTAREA": "Qoraal dheer",
+    "NUMBER": "Lambarka",
+    "CURRENCY": "Lacagta",
+    "DATE": "Taariikhda",
+    "SELECT": "Hoos u dhigid",
+    "LIST": "Liiska"
+  },
+  "picker": {
+    "searchPlaceholder": "Ka raadi goobaha rasaasta...",
+    "summary": "{{shown}} tusay · {{mandatory}} qasab ah",
+    "mandatory": "Waa qasab",
+    "noMatch": "Ma jiraan garoomo ku habboon"
+  },
+  "statuses": {
+    "intro": "Heerarka hogaamintaada iyo heer-hoosaadyada - waxa mid kastaa ku weydiiyo (taariikhda iyo wakhtiga, goobaha hogaanka) marka qof u cusboonaysiiyo hogaanka.",
+    "add": "+ Kudar Xaalad",
+    "columns": {
+      "order": "Dalbo",
+      "status": "Xaalada",
+      "subStatuses": "Xaalad-hoosaadyo",
+      "asksFor": "Waydiisaa",
+      "active": "Firfircoon"
+    },
+    "moveUp": "Kor u dhaqaaq",
+    "moveDown": "Hoos u dhaqaaq",
+    "defaultBadge": "Ku-talagalka hogaanka cusub",
+    "bookingBadge": "Xaaladda boos-qabsiga",
+    "asksForLabel": "Weydiiso {{label}}",
+    "asksForDateTime": "Waydiisaa taariikhda iyo wakhtiga",
+    "none": "Midna",
+    "dateTime": "Taariikhda & waqtiga",
+    "scheduledOn": "ku yaal {{names}}",
+    "fieldsSummary_one": "{{count}} garoonka ( {{mandatory}} qasab ah)",
+    "fieldsSummary_other": "{{count}} garoomo ( {{mandatory}} qasab ah)",
+    "deleteConfirm": "Tirtir heerka \" {{name}} \"? Tan lama celin karo.",
+    "editTitle": "Wax ka beddel xaaladda - {{name}}",
+    "newTitle": "Xaalad Cusub",
+    "name": "Magaca heerka",
+    "colour": "Midabka",
+    "active": "Firfircoon",
+    "isDefault": "Heerka asalka ah ee hogaamiyaasha cusub",
+    "isBooking": "Heerka Boos-qabsiga (waxaa dejiyay Boos Buuxin Dhameystiran)",
+    "whenMoved": "Marka hogaanka loo wareejiyo heerkan",
+    "askSchedule": "Weydii taariikhda iyo waqtiga (jadwaleeyaha)",
+    "scheduleLabelPlaceholder": "Summada, tusaale, Booqo at",
+    "fieldsToShow": "Hogaami meelaha ledhka si aad ugu muujiso foomka cusboonaysiinta",
+    "subStatusesTitle": "Xaalad-hoosaadyo",
+    "subStatusesHint": "Xaalad-hoosaad kasta waxay waydiisan kartaa taariikhdeeda iyo wakhtigeeda waxayna ku dari kartaa beeraheeda - oo lagu muujiyay korka goobaha heerka sare.",
+    "subStatusName": "Magaca heerka-hoosaadka",
+    "subFields": "Garoomada ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Calaamadda taariikhda iyo wakhtiga, tusaale ahaan dib ugu soo wac",
+    "addSubStatus": "+ Ku dar xaalad-hoosaad",
+    "saveStatus": "Badbaadiso Xaaladda",
+    "createStatus": "Abuur Xaalad"
+  },
+  "notifications": {
+    "intro": "Ogeysii dadka saxda ah marka hogaanka uu gaaro heer - isla markiiba, ama waqti go'an ka hor/ka dib taariikhda iyo wakhtiga loo qorsheeyay.",
+    "add": "+ Ku dar Ogeysiinta",
+    "columns": {
+      "notification": "Ogeysiinta",
+      "whenStatusIs": "Marka xaalku yahay",
+      "sends": "Diraa",
+      "to": "Ku",
+      "via": "iyada oo loo marayo",
+      "enabled": "Hawl gal"
+    },
+    "anyStatus": "Xaalad kasta",
+    "anySubStatus": "Xaalad-hoosaad kasta",
+    "inactiveOption": "{{name}} (aan firfircoonayn)",
+    "emptyRules": "Weli wax ogeysiis ah ma jiraan - ku dar mid si aad ugu digto kooxdaada marka hogaanka uu gaaro heerka",
+    "jobs": {
+      "title": "La qorsheeyay & Diray",
+      "firesAt": "Dabka",
+      "notification": "Ogeysiinta",
+      "lead": "Hogaamin",
+      "status": "Xaalada",
+      "details": "Faahfaahin",
+      "empty": "Wax la qorsheeyay ama lama dirin wali",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "La sugayo",
+      "PROCESSING": "Habaynta",
+      "SENT": "La diray",
+      "FAILED": "Fashilmay",
+      "SKIPPED": "La booday",
+      "CANCELLED": "La joojiyay"
+    },
+    "deliveryStatus": {
+      "SENT": "diray",
+      "FAILED": "fashilantay",
+      "SKIPPED": "booday"
+    },
+    "deliveryChannel": {
+      "IN_APP": "gudaha-app",
+      "EMAIL": "iimaylka",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Isticmaale loo xilsaaray",
+      "owner": "Mulkiilaha",
+      "updatedBy": "Waxaa cusbooneysiiyey",
+      "role": "Doorka: {{name}}"
+    },
+    "channels": {
+      "inApp": "In-app",
+      "email": "iimaylka",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Ma tirtirtaa wargelinta \" {{name}} \"? Xusuusin la sugayo waa la tirtiray",
+    "testPrompt": "U soo dir tijaabada ogaysiintan naftaada (in-app) adoo isticmaalaya ID hogaanka ?",
+    "testSent": "Loo diray dawankaaga: {{title}} {{message}}",
+    "headersInvalid": "Madaxa Webhook waa inay ahaadaan kuwo sax ah JSON , tusaale ahaan {\"Oggolaanshaha\": \"Xiliyaha xyz\"}",
+    "editTitle": "Wax ka beddel Ogeysiinta",
+    "newTitle": "Ogeysiinta Cusub",
+    "name": "Magaca",
+    "namePlaceholder": "tusaale booqashada goobta xusuusinta",
+    "whenStatus": "Marka heerka hogaanka uu yahay",
+    "subStatus": "Xaalad-hoosaad",
+    "send": "Dir (jadwaleeyaha)",
+    "custom": "Caadiyan...",
+    "modeBefore": "ka hor wakhtiga la qorsheeyay",
+    "modeAfter": "ka dib wakhtiga la qorsheeyay",
+    "noScheduleWarning": "Heerkani ma waydiinayo taariikh iyo wakhti, markaa \"kahor/wakhtiga la qorsheeyay ka dib\" wargelinta waligii ma dabcin doonto.",
+    "noScheduleFix": "Daar <strong>Weydii taariikhda iyo wakhtiga</strong> hoosteeda Statuses & Statuses, ama u soo dir isla markiiba.",
+    "sendTo": "U dir (iskudar kasta)",
+    "recipientAssigned": "Isticmaale loo xilsaaray (milkiilaha hogaanka)",
+    "recipientOwner": "Mulkiilaha akoontiga/maamulka",
+    "recipientUpdatedBy": "Qofka cusbooneysiiyay xaaladda",
+    "everyoneWithRole": "Qof kasta oo door leh",
+    "specificUsers": "Isticmaalayaal gaar ah (firfircoon)",
+    "inactiveNever": "Isticmaalayaasha aan firfircoonayn weligood ma helaan ogeysiisyada, xitaa haddii la doortay.",
+    "deliverVia": "Ku gaarsii",
+    "channelInApp": "In-app (gambaleelka)",
+    "channelEmail": "iimaylka",
+    "channelWebhook": "Webhook (bixiyaha WhatsApp / SMS )",
+    "emailHint": "Iimaylku waxa uu tagayaa ciwaanka emaylka ee qaataha kasta waxana uu u baahan yahay SMTP in lagu rakibo serverka (backend/.env); ilaa markaas soo dirida iimaylka ayaa loo galaa sidii loo booday.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Madaxda ( JSON )",
+    "content": "Nuxurka wargelinta",
+    "title": "Ciwaanka",
+    "message": "Fariinta",
+    "insertIntoTitle": "Geli Ciwaanka",
+    "insertIntoMessage": "Geli Fariinta",
+    "anyLeadField": "Meel kasta oo sunta rasaasta ah ayaa sidoo kale shaqeysa, tusaale ahaan <code1>{{example1}}</code1> ama <code2>{{example2}}</code2> .",
+    "preview": "Horudhac (tusaale hogaanka)",
+    "enabled": "Hawl gal",
+    "saveRule": "Kaydi Ogeysiiska",
+    "createRule": "Abuur Ogeysiinta",
+    "variables": {
+      "customerName": "Magaca hogaanka",
+      "customerMobile": "Mobaylada hogaanka ah",
+      "customerEmail": "iimaylka hogaanka ah",
+      "registrationId": "Aqoonsiga ID",
+      "status": "Xaalada",
+      "subStatus": "Xaalad-hoosaad",
+      "scheduleAt": "Taariikhda iyo waqtiga la qorsheeyay",
+      "assignedTo": "Isticmaale loo xilsaaray",
+      "updatedBy": "Waxaa cusbooneysiiyey",
+      "recipient": "Magaca qaataha",
+      "project": "Mashruuca",
+      "notes": "Qoraalkii ugu dambeeyay",
+      "partner": "Magaca lammaanaha"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Isla markiiba marka xaaladda la dejiyo",
+      "AT": "Waqtigii la qorsheeyay",
+      "A1D": "1 maalin kadib wakhtiga la qorsheeyay (hubinta dabagalka)"
+    },
+    "immediately": "Isla markiiba",
+    "atScheduled": "Waqtiga la qorsheeyay",
+    "before": {
+      "MINUTES_one": "{{count}} daqiiqo kahor wakhtiga la qorsheeyay",
+      "MINUTES_other": "{{count}} daqiiqo kahor wakhtiga la qorsheeyay",
+      "HOURS_one": "{{count}} saac kahor wakhtiga la qorsheeyay",
+      "HOURS_other": "{{count}} saacadood ka hor wakhtiga la qorsheeyay",
+      "DAYS_one": "{{count}} maalin kahor wakhtiga la qorsheeyay",
+      "DAYS_other": "{{count}} maalmood ka hor wakhtiga la qorsheeyay",
+      "WEEKS_one": "{{count}} usbuuc ka hor wakhtiga la qorsheeyay",
+      "WEEKS_other": "{{count}} toddobaadyo ka hor wakhtiga la qorsheeyay",
+      "MONTHS_one": "{{count}} bil kahor wakhtiga la qorsheeyay",
+      "MONTHS_other": "{{count}} bilood ka hor wakhtiga la qorsheeyay",
+      "YEARS_one": "{{count}} sanad ka hor wakhtiga la qorsheeyay",
+      "YEARS_other": "{{count}} sano ka hor wakhtiga la qorsheeyay"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} daqiiqo kadib wakhtiga la qorsheeyay",
+      "MINUTES_other": "{{count}} daqiiqado kadib wakhtiga la qorsheeyay",
+      "HOURS_one": "{{count}} saac kadib wakhtiga la qorsheeyay",
+      "HOURS_other": "{{count}} saacadood kadib wakhtiga la qorsheeyay",
+      "DAYS_one": "{{count}} maalin kadib wakhtiga la qorsheeyay",
+      "DAYS_other": "{{count}} maalmood kadib wakhtiga la qorsheeyay",
+      "WEEKS_one": "{{count}} todobaad kadib wakhtiga la qorsheeyay",
+      "WEEKS_other": "{{count}} todobaadyo kadib wakhtiga la qorsheeyay",
+      "MONTHS_one": "{{count}} bil kadib wakhtiga la qorsheeyay",
+      "MONTHS_other": "{{count}} bilo kadib wakhtiga la qorsheeyay",
+      "YEARS_one": "{{count}} sanad kadib wakhtiga la qorsheeyay",
+      "YEARS_other": "{{count}} sano kadib wakhtiga la qorsheeyay"
+    },
+    "units": {
+      "MINUTES_one": "daqiiqo",
+      "MINUTES_other": "daqiiqado",
+      "HOURS_one": "saac",
+      "HOURS_other": "saacadood",
+      "DAYS_one": "maalin",
+      "DAYS_other": "maalmo",
+      "WEEKS_one": "usbuuca",
+      "WEEKS_other": "toddobaadyo",
+      "MONTHS_one": "bil",
+      "MONTHS_other": "bilo",
+      "YEARS_one": "sanad",
+      "YEARS_other": "sanado"
+    }
+  }
+}

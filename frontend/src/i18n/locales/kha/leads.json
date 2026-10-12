@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Ki jingialam jong nga",
+    "signedInAs": "La pynrung kum {{name}} ( {{partnerId}} ) · ki por ba la pyni ha {{timezone}}",
+    "addLead": "+ Pyndap ia ka Lead",
+    "tabs": {
+      "all": "Baroh ( {{count}} )",
+      "pending": "Ka jingap ( {{count}} )",
+      "booked": "La buh ( {{count}} )"
+    },
+    "searchPlaceholder": "Wad da ka kyrteng, mobile, lane ID jingpynrung kyrteng ...",
+    "manageColumns": "Pyniaid ia ki kolom",
+    "rowsPerPage": "Ki lain ha ka sla",
+    "registrationId": "Ka jingpynrung ID",
+    "emptyState": "Ym pat don ki lead - pynrung kyrteng ia kaba nyngkong jong phi.",
+    "noMatch": "Ki lead ki iadei bad kine ki filter.",
+    "showing": "Ka jingpyni {{from}} - {{to}} jong ki {{total}} ki jingpynrung",
+    "actions": {
+      "preview": "Peit lypa & pynthymmai kloi",
+      "history": "Histori",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Jingkhot"
+    },
+    "pagination": {
+      "first": "Ka sla kaba nyngkong",
+      "previous": "Ka sla ba mynshuwa",
+      "next": "Ka sla kaba bud",
+      "last": "Ka sla kaba khatduh"
+    }
+  },
+  "columns": {
+    "status": "Kyrdan",
+    "assignTo": "Aiti sha",
+    "booked": "La buh",
+    "protectionUntil": "Ka jingiada Haduh 2020."
+  },
+  "booking": {
+    "booked": "La buh",
+    "pending": "Ba dang sah"
+  },
+  "assign": {
+    "unassigned": "Bym shym la aiti",
+    "owner": "{{name}} (U trai)",
+    "inactive": "{{name}} (bym treikam)",
+    "unknownUser": "U nongpyndonkam bym tip",
+    "assignedTo": "La ai sha {{name}}"
+  },
+  "form": {
+    "addTitle": "Pyndap ia u Lead",
+    "editTitle": "Pynbeit ia ka jingialam",
+    "noPermissionAdd": "Ka don ka jingbit ban pynrung kyrteng ia ki lead.",
+    "noPermissionEdit": "Ka don ka jingbit ban pynbeit ia ki lead.",
+    "selectPlaceholder": "Jied...",
+    "commaSeparated": "La pyniakhlad da u comma",
+    "phonePlaceholder": "Nombar phone",
+    "countryCode": "U code jong ka ri"
+  },
+  "project": {
+    "none": "Ym pat don projek (ym pat pynkylla)",
+    "notInList": "{{project}} (ba don ha ka thup jong ka projek)"
+  },
+  "journey": {
+    "customer": "Nongtheid",
+    "currentOwner": "U trai ba mynta",
+    "protectionExpiry": "Ka jingkut por jong ka jingiada",
+    "leadStatus": "Ka jinglong nongialam",
+    "scheduled": "La buh por",
+    "assignedTo": "La aiti sha",
+    "referral": "Ka jingphah",
+    "builderReason": "Ka daw jong u nongtei: {{reason}}",
+    "bookedHint": "La book da u nongtei - ka jinglong trai treikam ka la leit sha u nongtei; la buh ia ka jingai jingmut bad ka jinglong hok jong ka komishon.",
+    "notBookedHint": "Ia ki booking la pynthikna da u nongtei shisien ba ki la pdiang ia ka jingai jingmut.",
+    "quickUpdate": "Ka jingpynthymmai kloi",
+    "leadDetails": "Ki jingtip ba bniah",
+    "progressHistory": "Ka histori jong ka jingkiew",
+    "timesIn": "(ki por ha {{timezone}} )",
+    "backToMyLeads": "Bad sha ki nongialam jong nga",
+    "editLead": "Pynbeit ia ka jingialam"
+  },
+  "referral": {
+    "NOT_REFERRED": "Ym shym la pynkylla (kam don projek)",
+    "PENDING_BUILDER": "Ka jingap ia u nongtei",
+    "ACCEPTED": "La pdiang da u nongtei",
+    "REJECTED": "La kyntait da u nongtei"
+  },
+  "preview": {
+    "ariaLabel": "Ka jingpeit lypa",
+    "title": "Ka jingpeit lypa",
+    "source": "Tyllong",
+    "location": "Ka jaka",
+    "scheduled": "La buh por",
+    "registered": "La pynrung kyrteng",
+    "latestNote": "Jingpynkynmaw ba thymmai",
+    "quickUpdate": "Ka jingpynthymmai kloi",
+    "fullDetails": "Ki jingtip ba pura",
+    "editLead": "Pynbeit ia ka jingialam",
+    "history": "Histori"
+  },
+  "quick": {
+    "assignedTo": "La aiti sha",
+    "status": "Kyrdan",
+    "subStatus": "Ka jinglong ba rit",
+    "selectSubStatus": "Jied ia ka jinglong ba rit...",
+    "none": "Ym napdeng kine",
+    "scheduledAt": "La buh por ha ka por 10.00.",
+    "localTime": "ka por jong ka thain",
+    "note": "Ban buh jingthoh",
+    "notePlaceholder": "Kaei kaba la jia ha kane ka jingkhot / jingleit jngoh? (ba lah ban jied)",
+    "updateStatus": "Pynthymmai ia ka jinglong",
+    "statusUpdated": "La pynthymmai ia ka jinglong",
+    "bookedLocked": "Ia kane ka lead la book - ia ka kyrdan jong ka ym lah shuh ban pynkylla.",
+    "viewOnly": "Phi lah ban peit ia kane ka lead, hynrei ka role jong phi kam lah ban pynthymmai ia ka."
+  },
+  "history": {
+    "title": "Ka histori - {{registrationId}}",
+    "tabs": {
+      "all": "Baroh-ar",
+      "status": "Kyrdan",
+      "assignment": "Ka jingai jingthoh",
+      "notes": "Ki jingthoh"
+    },
+    "doneBy": "La leh da u {{actor}}",
+    "system": "Ka rukom pyniaid",
+    "platforms": {
+      "System": "Ka rukom pyniaid",
+      "External": "Ba shabar",
+      "Web": "Web",
+      "Mobile": "Ka mobile"
+    },
+    "added": "la pyndap",
+    "updated": "la pynthymmai",
+    "empty": "(thylli)",
+    "noHistory": "Ym pat don histori ha kane ka kyrdan haduh mynta.",
+    "fieldLabels": {
+      "stage": "Kyrdan",
+      "subStatus": "Ka jinglong ba rit",
+      "scheduledAt": "Ka jingpyniaid ia ki kam",
+      "notes": "Ki jingthoh",
+      "assignedTo": "La aiti sha"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "La pdiang ia ka jingpynrung kyrteng paralok",
+      "DUPLICATE_CHECK_COMPLETED": "La pyndep ia ka jingpeit bniah - ym shym la lap ia ka jingpynkylla kaba treikam",
+      "REGISTRATION_ACCEPTED": "La pdiang ia ka jingpynrung kyrteng",
+      "PROTECTION_GRANTED_one": "{{count}} -sngi iada la ai",
+      "PROTECTION_GRANTED_other": "{{count}} -sngi iada la ai",
+      "REGISTRATION_ATTEMPT_REJECTED": "Ka jingpyrshang ban pynrung kyrteng arsien da u {{partnerId}} la kyntait",
+      "LEAD_DETAILS_UPDATED_one": "La pynthymmai ia ka {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "La pynthymmai {{count}} ki jaka",
+      "STAGE_UPDATED": "La pynthymmai ia ka jinglong sha {{status}}",
+      "LEAD_ASSIGNED": "La ai sha {{name}}",
+      "LEAD_UNASSIGNED": "Bym shym la aiti",
+      "BOOKING_COMPLETED": "La pyndep ia ka jingbuh jaka",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Ka jinglong trai ba treikam la pynkylla sha u Nongtei",
+      "PARTNER_ATTRIBUTION_PRESERVED": "La pynneh pynsah ia ka jingai jingmut jong u paralok",
+      "COMMISSION_ELIGIBILITY_CREATED": "La thaw ia ka jingbit ban ioh ia ka komishon",
+      "HANDOVER_COMPLETED": "La pyndep ia ka jingaiti",
+      "REFERRAL_ACCEPTED": "U nongtei u la pdiang ia ka jingai jingmut",
+      "REFERRAL_REJECTED": "U nongtei u la kyntait ia ka jingpynkylla. Ka daw: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "U Admin u la pyllait kloi ia ka jingiada kaba arsien. Ka daw: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "U Admin u la pynkylla ia ka jingpynrung kyrteng na {{from}} sha {{to}} . Ka daw: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Pyniaid ia ki kolom",
+    "hint": "Drag ban pynbeit biang · peit ban pyni",
+    "showAll": "Pyni Baroh",
+    "resetDefault": "Pyni biang sha ka jinglong tynrai"
+  },
+  "filters": {
+    "title": "Ki jingpynkhuid",
+    "allProjects": "Baroh ki projek",
+    "any": "Kano kano",
+    "noFields": "Ym pat lah ban pyntreikam ia kiwei pat ki jaka ba lah ban pynkhuid (Ki jingpynbeit > Lead).",
+    "clearAll": "Pynkhuid lut"
+  },
+  "phone": {
+    "MISSING": "Donkam ia u number phone.",
+    "INVALID": "Sngewbha pynrung ia u nombar phone uba biang.",
+    "TOO_SHORT": "Phone number la lyngkot palat.",
+    "TOO_LONG": "Phone number la jrong palat.",
+    "INVALID_FOR_COUNTRY": "Kane ka number phone kam long kaba biang na ka bynta {{country}} .",
+    "COUNTRY_MISMATCH": "Sngewbha jied ia u code jong ka ri uba dei.",
+    "NOT_MOBILE": "Sngewbha pynrung da u mobile number, ym da u landline."
+  }
+}

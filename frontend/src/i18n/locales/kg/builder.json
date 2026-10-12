@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal ya muntu ya ke tungaka",
+    "referrals": "Bantu ya bo me tindila",
+    "builderLogin": "Kukota ya muntu ya ke tungaka",
+    "partnerLogin": "Kukota na nduku ya chaîne"
+  },
+  "login": {
+    "title": "Kota ya muntu ya ke tungaka",
+    "hint": "Ba konti ya ba ntuidi me salama na Leadrat . Yula mfumu na nge kana nge kele ve ti yo."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Kuvingila lukanu na nge",
+    "ACCEPTED": "Ndimamaka",
+    "REJECTED": "Bo me buyaka yo"
+  },
+  "list": {
+    "title": "Bantu ya bo me tindila",
+    "allProjects": "Bisalu yonso",
+    "allStatuses": "Ba status yonso",
+    "count_one": "{{count}} nsangu",
+    "count_other": "{{count}} bantu ya bo me tinda",
+    "columns": {
+      "referral": "Kufidisa",
+      "customer": "Kiliya",
+      "project": "Kisalu",
+      "sourcePartner": "Nkundi ya kisina",
+      "status": "Statut",
+      "booking": "Kusala kisika",
+      "registered": "Kusonikisa zina"
+    },
+    "booked": "Bo me bumba yo",
+    "empty": "Ata referral mosi ve tii ntangu yai."
+  },
+  "detail": {
+    "customer": "Kiliya",
+    "sourcePartner": "Nkundi ya kisina",
+    "attributionNote": "(kupesa - lenda soba ve)",
+    "leadStatus": "Statut ya ntuadisi",
+    "protectedUntil": "Kutanina Tii",
+    "referral": "Kufidisa",
+    "reason": "Kikuma: {{reason}}",
+    "booking": "Kusala kisika",
+    "bookedOwner": "Bo me bumba - nge kele mfumu ya kisalu",
+    "notBooked": "Bo me bumba yo ve",
+    "sharedAfterBooking": "Bo kabulaka yo na nima ya kusala reservation",
+    "accept": "Ndima muntu yina bo me tindila nge",
+    "confirmBooking": "Ndimisa Reservation",
+    "reject": "Buya Kufidisa",
+    "rejectReasonLabel": "Kikuma ya kubuya (bo me songa nduku) * .",
+    "rejectConfirm": "Kulosa",
+    "confirmBookingPrompt": "Ndimisa reservation? Kimfumu ya kisalu ke kwenda na nge mpi nduku ke kuma muntu ya me fwana na kubaka kisalu.",
+    "notice": {
+      "booked": "Reservation me ndimama.",
+      "accepted": "Bo me ndima kutinda.",
+      "rejected": "Bo me buyaka kutindila yandi."
+    },
+    "backToReferrals": "Kuvutuka na Bantu ya Bo Tindaka"
+  },
+  "history": {
+    "title": "Disolo",
+    "actor": {
+      "system": "Ngidika",
+      "partner": "Nduku ya chaîne",
+      "admin": "Mfumu Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Kusonikisa zina ya nduku me bakama",
+      "DUPLICATE_CHECK_COMPLETED": "Kutala mbala zole me manisa - bo me mona ve mbala zole ya ke sala",
+      "REGISTRATION_ACCEPTED": "Bo me ndima kusonikisa zina",
+      "PROTECTION_GRANTED_one": "{{count}} -kilumbu ya lutaninu me pesama",
+      "PROTECTION_GRANTED_other": "{{count}} -kilumbu ya lutaninu me pesama",
+      "STAGE_UPDATED": "Bo me yidika kisika na yo na {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Kisika {{count}} ya bo me yidika",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} ya bo me yidika",
+      "LEAD_ASSIGNED": "Bo me pesa yo na {{name}}",
+      "LEAD_UNASSIGNED": "Bo me pesa yo ve",
+      "REFERRAL_ACCEPTED": "Muntu ya ke tungaka ndimaka nsangu yina",
+      "REFERRAL_REJECTED": "Builder buyaka nsangu yina bo tindaka yandi. Kikuma: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Kumeka ya kusonikisa zina ya {{partner}} me buya",
+      "BOOKING_COMPLETED": "Kubumba kisika me mana",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Kimfumu ya kisalu me pesamaka na muntu ya ke tungaka",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Bo me bumbaka kiyeka ya nduku",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kufwana ya komite me salama",
+      "HANDOVER_COMPLETED": "Kupesa me mana",
+      "ADMIN_PROTECTION_RELEASED": "Admin basisaka lutaninu ya zole na ntwala. Kikuma: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Ntwadisi me pesa zina ya nkaka katuka na {{from}} tii na {{to}} . Kikuma: {{reason}}"
+    }
+  }
+}

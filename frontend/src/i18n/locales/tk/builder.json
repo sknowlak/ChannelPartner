@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Gurluşyk portaly",
+    "referrals": "Salgylar",
+    "builderLogin": "Gurluşykçy",
+    "partnerLogin": "Kanal hyzmatdaşyň girişi"
+  },
+  "login": {
+    "title": "Gurluşykçy giriň",
+    "hint": "Gurluşyk hasaplary Leadrat tarapyndan döredilýär. Eger ýok bolsa, administratoryňyzdan soraň."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Kararyňyza garaşýaryn",
+    "ACCEPTED": "Kabul edildi",
+    "REJECTED": "Ret edildi"
+  },
+  "list": {
+    "title": "Salgylar",
+    "allProjects": "Allhli taslamalar",
+    "allStatuses": "Allhli statuslar",
+    "count_one": "{{count}} ugrukdyrma",
+    "count_other": "{{count}} salgylanmalar",
+    "columns": {
+      "referral": "Ralollama",
+      "customer": "Müşderi",
+      "project": "Taslama",
+      "sourcePartner": "Çeşme hyzmatdaş",
+      "status": ".Agdaý",
+      "booking": "Zakaz bermek",
+      "registered": "Bellige alyndy"
+    },
+    "booked": "Zakaz edildi",
+    "empty": "Entek salgylanma ýok."
+  },
+  "detail": {
+    "customer": "Müşderi",
+    "sourcePartner": "Çeşme hyzmatdaş",
+    "attributionNote": "(atributiýa - üýtgedip bolmaz)",
+    "leadStatus": "Gurşun ýagdaýy",
+    "protectedUntil": "Şu wagta çenli goralýar",
+    "referral": "Ralollama",
+    "reason": "Sebäp: {{reason}}",
+    "booking": "Zakaz bermek",
+    "bookedOwner": "Zakaz edilen - operasiýa eýesi",
+    "notBooked": "Zakaz edilmedi",
+    "sharedAfterBooking": "Zakazdan soň paýlaşylýar",
+    "accept": "Ibermegi kabul ediň",
+    "confirmBooking": "Zakaz etmegi tassyklaň",
+    "reject": "Referüz tutmagy ret ediň",
+    "rejectReasonLabel": "Ret etmegiň sebäbi (hyzmatdaşyňyza görkezilýär) *",
+    "rejectConfirm": "Ret et",
+    "confirmBookingPrompt": "Sargydy tassyklaýarsyňyzmy? Amal eýeçiligi size geçýär we hyzmatdaş işe girip biler.",
+    "notice": {
+      "booked": "Zakaz etmek tassyklandy",
+      "accepted": "Ibermek kabul edildi.",
+      "rejected": "Ibermek ret edildi."
+    },
+    "backToReferrals": "Ferollamalara dolan"
+  },
+  "history": {
+    "title": "Taryh",
+    "actor": {
+      "system": "Ulgam",
+      "partner": "Kanal hyzmatdaşy",
+      "admin": "Leadrat administrator"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Hyzmatdaş hasaba alyndy",
+      "DUPLICATE_CHECK_COMPLETED": "Dublikat barlag tamamlandy - işjeň dublikat tapylmady",
+      "REGISTRATION_ACCEPTED": "Registrasiýa kabul edildi",
+      "PROTECTION_GRANTED_one": "{{count}} day-günlük gorag berilýär",
+      "PROTECTION_GRANTED_other": "{{count}} day-günlük gorag berilýär",
+      "STAGE_UPDATED": "Status {{stage}} to täzelendi",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} meýdançasy täzelendi",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} meýdanlary täzelendi",
+      "LEAD_ASSIGNED": "{{name}} to bellendi",
+      "LEAD_UNASSIGNED": "Bellenmedik",
+      "REFERRAL_ACCEPTED": "Gurluşykçy ugrukdyrmany kabul etdi",
+      "REFERRAL_REJECTED": "Gurluşykçy ugrukdyrmany ret etdi. Sebäp: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} by tarapyndan hasaba alynmak synanyşygy ret edildi",
+      "BOOKING_COMPLETED": "Zakaz bermek tamamlandy",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Amal eýeçiligi Gurluşa geçirildi",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Hyzmatdaş atributiýasy saklandy",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komissiýanyň hukugy döredildi",
+      "HANDOVER_COMPLETED": "Geçiriş tamamlandy",
+      "ADMIN_PROTECTION_RELEASED": "Admin dublikat goragy ir goýberdi. Sebäp: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin bellige alnyşy {{from}} dan {{to}} çenli belledi. Sebäp: {{reason}}"
+    }
+  }
+}

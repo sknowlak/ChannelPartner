@@ -1,0 +1,83 @@
+{
+  "title": "Hallitse tiimiä",
+  "tabs": {
+    "members": "Joukkueen jäsenet",
+    "roles": "Roolit ja käyttöoikeudet",
+    "profile": "Oma profiili"
+  },
+  "roles": {
+    "owner": "Omistaja",
+    "member": "Joukkueen jäsen"
+  },
+  "profile": {
+    "updated": "Profiili päivitetty.",
+    "basicInfo": "Perustiedot",
+    "organisationInfo": "Organisaation tiedot",
+    "preferences": "Asetukset",
+    "companyName": "Yrityksen/organisaation nimi",
+    "city": "Kaupunki",
+    "state": "Osavaltio",
+    "currencyHelp": "Käytetään budjettien ja varausarvojen näyttämiseen koko tiimissäsi.",
+    "useDeviceTimezone": "Käytä laitteen aikavyöhykettä ( {{timezone}} )",
+    "securityRole": "Turvallisuus ja rooli",
+    "newPassword": "Uusi salasana (jätä tyhjäksi pysyäksesi muuttumattomana)",
+    "currentPassword": "Nykyinen salasana",
+    "memberSince": "Jäsen vuodesta",
+    "languageSaved": "Kieli tallennettu tilillesi – sitä käytetään kaikilla laitteilla, joihin kirjaudut."
+  },
+  "members": {
+    "intro": "Lisää, muokkaa, poista käytöstä tai poista ihmisiä tiimistäsi – he jakavat pääsyn samoihin liideihin.",
+    "noPermission": "Sinulla ei ole lupaa lisätä, muokata tai poistaa tiimin jäseniä.",
+    "addNew": "+ Lisää uusi käyttäjä",
+    "passwordLabel": "{{label}} (vähintään 8 merkkiä)",
+    "rolePermissions": "Rooli ja käyttöoikeudet",
+    "adding": "Lisätään...",
+    "addMember": "Lisää tiimin jäsen",
+    "tabAll": "Kaikki ( {{count}} )",
+    "tabActive": "Aktiivinen ( {{count}} )",
+    "tabInactive": "Ei-aktiivinen ( {{count}} )",
+    "searchPlaceholder": "Hae nimi tai käyttäjätunnus...",
+    "allTimezones": "Kaikki aikavyöhykkeet",
+    "perPage": "Merkinnät per sivu",
+    "contact": "Ota yhteyttä",
+    "added": "Lisätty",
+    "toggleActive": "Aktiivinen - poista käytöstä napsauttamalla",
+    "toggleInactive": "Ei-aktiivinen - napsauta aktivoidaksesi",
+    "empty": "Ei vielä tiimin jäseniä.",
+    "noMatch": "Yksikään tiimin jäsen ei vastaa näitä suodattimia.",
+    "showing": "Näytetään {{from}} - {{to}} / {{total}} merkintää",
+    "firstPage": "Ensimmäinen sivu",
+    "previousPage": "Edellinen sivu",
+    "nextPage": "Seuraava sivu",
+    "lastPage": "Viimeinen sivu"
+  },
+  "editMember": {
+    "title": "Muokkaa käyttäjää",
+    "noPermission": "Sinulla ei ole lupaa muokata tiimin jäseniä.",
+    "backToTeam": "Takaisin tiimiin",
+    "cantChangeOwn": "Et voi muuttaa omaa rooliasi tai asemaasi.",
+    "needsManageRoles": "Jäsenen roolin muuttaminen edellyttää Roolien hallinta -oikeutta.",
+    "addedBy": "Lisäänyt",
+    "addedOn": "Lisätty"
+  },
+  "rolesPage": {
+    "intro": "Pääkäyttäjä, Admin ja Manager ovat sisäänrakennettuja, eikä niitä voi muuttaa – luo mukautettu rooli mille tahansa muulle.",
+    "noPermission": "Sinulla ei ole lupaa hallita rooleja.",
+    "createCustom": "+ Luo mukautettu rooli",
+    "roleName": "Roolin nimi",
+    "permissions": "Käyttöoikeudet",
+    "members": "jäsenet",
+    "creating": "Luodaan...",
+    "createRole": "Luo rooli",
+    "systemRole": "Järjestelmän rooli",
+    "builtIn": "Sisäänrakennettu",
+    "empty": "Ei vielä rooleja."
+  },
+  "permissions": {
+    "MANAGE_LEADS": "Hallitse liidejä (luo, etene, varaa)",
+    "MANAGE_TEAM": "Hallitse tiimiä (lisää, muokkaa, poista jäseniä)",
+    "MANAGE_ROLES": "Hallitse rooleja ja käyttöoikeuksia",
+    "MANAGE_SETTINGS": "Hallinnoi asetuksia (liidilomakkeen kentät)",
+    "none": "Ei käyttöoikeuksia"
+  }
+}

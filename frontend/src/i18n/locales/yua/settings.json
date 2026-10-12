@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Configuración",
+    "noPermission": "mina'an teech permiso uti'al a nu'uktik le configuración."
+  },
+  "categories": {
+    "lead": "Il",
+    "user": "Usuario",
+    "integrations": "Integraciones"
+  },
+  "leadTabs": {
+    "fields": "Koolo'ob",
+    "statuses": "Estatutos yéetel sub-estatutos",
+    "notifications": "Notificaciones yéetel programadores"
+  },
+  "fields": {
+    "leadIntro": "Configurar le formulario captura lead: habilitar/desactivar sikte, marcar le k'a'abeto'ob, wa añadir u kajnáalo'ob sikte personalizados.",
+    "userIntro": "Configurar le formulario Añadir leti' Editar miembro le nu'ukulil: habilitar leti' desactivar sikte, marcar le k'a'abeto'ob, wa añadir u kajnáalo'ob sikte personalizados.",
+    "addCustomField": "+ Añadir u sikte personalizado",
+    "fieldLabel": "Etiqueta ti' le sikte",
+    "group": "Múuch",
+    "groupPlaceholderLead": "je'ebix, a'almaj t'aan ti' le k'áat chi'o'",
+    "groupPlaceholderUser": "je'ebix, uláak' ba'alo'ob",
+    "dataType": "Bin yano'ob datos",
+    "options": "Opciones (separadas tumen comas)",
+    "requiredLead": "K'a'abéet - le socios ti' u nu'ukulil k'a'abéet llenar le ba'ala' utia'al u registrar jump'éel pista",
+    "requiredUser": "K'a'abéet - k'a'abéet u chu'upul ken u ts'áabal juntúul miembro le nu'ukulil",
+    "creating": "Táan in beetik...",
+    "createField": "Beet u kúuchil",
+    "columns": {
+      "field": "Kúuchil meyaj",
+      "group": "Múuch",
+      "type": "Tiipo",
+      "required": "K'a'ana'an",
+      "enabled": "Habilitado",
+      "kind": "Máak"
+    },
+    "kind": {
+      "custom": "Diisfras",
+      "core": "Núcleo (bloqueado)",
+      "standard": "Estandáar"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Xookil",
+    "TEXTAREA": "Chowak ts'íib",
+    "NUMBER": "Xookil",
+    "CURRENCY": "Táak'in",
+    "DATE": "K'iinil",
+    "SELECT": "Desplegable",
+    "LIST": "Tsoolil"
+  },
+  "picker": {
+    "searchPlaceholder": "Kaxant le sikte'ob...",
+    "summary": "{{shown}} shown · {{mandatory}} obligatorio",
+    "mandatory": "Óobligatorio",
+    "noMatch": "Mix jump'éel kúuchil ku nup'ik."
+  },
+  "statuses": {
+    "intro": "A estados yéetel subestatutos lead - ba'ax ku k'áatik jujuntúulal (jump'éel k'iinil yéetel p'isib, sikte lead) ken Yaan máax actualiza jump'éel lead ti' leti'.",
+    "add": "+ Añadir Estado",
+    "columns": {
+      "order": "Oorden",
+      "status": "Estaado",
+      "subStatuses": "Sub-Estatus",
+      "asksFor": "ku k'áatik",
+      "active": "Aktivóo"
+    },
+    "moveUp": "Péek ka'anal",
+    "moveDown": "péek tak kaambal",
+    "defaultBadge": "tumen defecto uti'al túumben pistas",
+    "bookingBadge": "Estado u reserva",
+    "asksForLabel": "ku k'áatik {{label}}",
+    "asksForDateTime": "ku k'áatik k'iinil yéetel p'isib",
+    "none": "Mina'an",
+    "dateTime": "K'iinil yéetel p'isib",
+    "scheduledOn": "ti' {{names}}",
+    "fieldsSummary_one": "{{count}} field ( {{mandatory}} obligatorio)",
+    "fieldsSummary_other": "{{count}} sikte ( {{mandatory}} obligatorio)",
+    "deleteConfirm": "Tselik u noj \" {{name}} \"? Le je'ela' ma' tu páajtal u su'utul.",
+    "editTitle": "Editar Estado - {{name}}",
+    "newTitle": "Túumben noj",
+    "name": "K'aaba' noj",
+    "colour": "Boon",
+    "active": "Aktivóo",
+    "isDefault": "Noj tumen defecto uti'al túumben pistas",
+    "isBooking": "Estado u reserva (establecido tumen Reserva Completa)",
+    "whenMoved": "Le ken u péeksa'al jump'éel plomo ti' le noj",
+    "askSchedule": "k'áatik jump'éel k'iinil yéetel p'isib (programador)",
+    "scheduleLabelPlaceholder": "Etiqueta, je'ebix, xíimbal tu",
+    "fieldsToShow": "Le sikte plomo utia'al u ye'esik ti' le formulario actualización",
+    "subStatusesTitle": "Sub-Estatus",
+    "subStatusesHint": "Amal sub-estado je'el u páajtal u k'áatik u kajnáalo'ob k'iinil yéetel p'isib ka añadir u kajnáalo'ob sikte - ku ye'esik tu superior le sikte le noj ka'anal.",
+    "subStatusName": "K'aaba' sub-estatus",
+    "subFields": "Campos ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Etiqueta u k'iinil yéetel u p'isib, je'ebix, t'anik ka'a ti'",
+    "addSubStatus": "+ Añadir sub-estado",
+    "saveStatus": "Ta'akikubáa noj",
+    "createStatus": "Beet noj"
+  },
+  "notifications": {
+    "intro": "A'al ti' le máako'ob k'a'abéet ken u k'uchul jump'éel lead jump'éel noj - inmediatamente, wa jump'éel k'iin establecido bey ma' leti' ka' le k'iinil & k'iin programado ti' leti'.",
+    "add": "+ Ts'áa Notificación",
+    "columns": {
+      "notification": "Notificación",
+      "whenStatusIs": "Le ken u noj",
+      "sends": "ku túuxtik",
+      "to": "Ti",
+      "via": "Ichil",
+      "enabled": "Habilitado"
+    },
+    "anyStatus": "Je'el ba'alak noj",
+    "anySubStatus": "Je'el sub-estatus",
+    "inactiveOption": "{{name}} (ma' meyaj)",
+    "emptyRules": "Mina'an notificaciones láayli' - añadir juntúule' utia'al alertar u nu'ukulil ken juntúul lead k'uchul jump'éel noj.",
+    "jobs": {
+      "title": "Programado yéetel túuxta'an",
+      "firesAt": "K'áak'o'ob ti'",
+      "notification": "Notificación",
+      "lead": "Il",
+      "status": "Estaado",
+      "details": "Detaaye",
+      "empty": "Mina'an mixba'al programado wa túuxta'an láayli'.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Ma' ts'oka'ani",
+      "PROCESSING": "Procesamiento",
+      "SENT": "Tuxk'aja'an",
+      "FAILED": "K'aschajij",
+      "SKIPPED": "Saltado",
+      "CANCELLED": "Cancelado"
+    },
+    "deliveryStatus": {
+      "SENT": "tuxk'aja'an",
+      "FAILED": "k'aschajij",
+      "SKIPPED": "saltado"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ichil le ka'anatako'ob",
+      "EMAIL": "correo electrónico",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Usuario asignado",
+      "owner": "Yuumil",
+      "updatedBy": "Actualizado tumen",
+      "role": "Meyaj: {{name}}"
+    },
+    "channels": {
+      "inApp": "ichil le ka'anatako'ob",
+      "email": "Correo electrónico",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Tselik le notificación \" {{name}} \"? Le recordatorios pendientes ti' leti'e' ku cancelan.",
+    "testPrompt": "Túuxtik jump'éel prueba ti' le notificación ti' teech wéet (in-app) usando ba'ax ID plomo ?",
+    "testSent": "Túuxta'an ti' a campana: {{title}} {{message}}",
+    "headersInvalid": "Le cabeceras Webhook k'a'abéet u validos JSON , je'ebix {\"Autorización\": \"Portador xyz\"}",
+    "editTitle": "Editar le notificación",
+    "newTitle": "Túumben Notificación",
+    "name": "K'aaba",
+    "namePlaceholder": "je'ebix, k'a'ajsajil u xíimbal le ts'ono'oto'",
+    "whenStatus": "Le ken u noj jump'éel plomo jach",
+    "subStatus": "Sub-estatus",
+    "send": "Túuxtik (programador)",
+    "custom": "Diisfras...",
+    "modeBefore": "bey ma' u k'iinil",
+    "modeAfter": "ka' u k'iinil ts'a'an",
+    "noScheduleWarning": "Le noj je'ela' ma' u k'áatik jump'éel k'iinil yéetel p'isib, bey u jump'éel notificación \"bey ma'/ti'/ka' k'iin programado\" Ma'atech u dispararía.",
+    "noScheduleFix": "T'abik <strong>K'áatik jump'éel k'iinil yéetel p'isib</strong> uti'al leti' yáanal Estatutos yéetel Sub-Estatos, wa túuxtik inmediatamente.",
+    "sendTo": "Túuxtik ti' (je'el ba'alak combinación)",
+    "recipientAssigned": "Usuario asignado (u yuumil noj bejo')",
+    "recipientOwner": "U yuumil le yilaje' / admin",
+    "recipientUpdatedBy": "Máax tu túumbenkuunsaj le noj",
+    "everyoneWithRole": "tuláakal máak yéetel u meyaj",
+    "specificUsers": "Usuarios específicos (activos)",
+    "inactiveNever": "Le usuarios inactivos Ma'atech u k'amik notificaciones, páajtal wa seleccionados.",
+    "deliverVia": "k'ubik yo'osal",
+    "channelInApp": "ichil le ka'anatako'ob (campana)",
+    "channelEmail": "Correo electrónico",
+    "channelWebhook": "Webhook ( WhatsApp / SMS provider)",
+    "emailHint": "Le correo electrónico ku bin u dirección correo electrónico Amal destinatario yéetel k'a'abet SMTP configurado ti' le servidor (backend leti'.env); tak túun le correo electrónico ku túuxtik ku registrar bey saltado.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Encabezados ( JSON )",
+    "content": "Contenido ti' le notificación",
+    "title": "Jo'olts'íib",
+    "message": "K'ubent'aan",
+    "insertIntoTitle": "Ts'áa ichil u título",
+    "insertIntoMessage": "Insertar ti' le k'uuben t'aano'",
+    "anyLeadField": "Je'el ba'ax sikte plomo meyaj xan, je'ebix <code1>{{example1}}</code1> wa <code2>{{example2}}</code2> .",
+    "preview": "sáasil previa (muestra de plomo)",
+    "enabled": "Habilitado",
+    "saveRule": "ooks le notificación",
+    "createRule": "Beet Notificación",
+    "variables": {
+      "customerName": "K'aaba' le plomo",
+      "customerMobile": "Plomo móvil",
+      "customerEmail": "Correo electrónico u plomo",
+      "registrationId": "ID u plomo",
+      "status": "Estaado",
+      "subStatus": "Sub-estatus",
+      "scheduleAt": "K'iinil yéetel p'isib ts'o'ok u ts'a'abal",
+      "assignedTo": "Usuario asignado",
+      "updatedBy": "Actualizado tumen",
+      "recipient": "K'aaba' máax k'amik",
+      "project": "Nojmeyajil",
+      "notes": "u ts'ook nota",
+      "partner": "K'aaba' u núup"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "tu séeba'anil ken u jets'ik le noj",
+      "AT": "Te' k'iin ts'o'ok u ya'ala'al",
+      "A1D": "1 k'iin ka' u k'iinil ts'a'an (chequeo seguimiento)"
+    },
+    "immediately": "Íinmediatamente",
+    "atScheduled": "Tu k'iinil ts'a'an",
+    "before": {
+      "MINUTES_one": "{{count}} minuto bey ma' u k'iinil",
+      "MINUTES_other": "{{count}} minutos táanil ti' u k'iinil",
+      "HOURS_one": "{{count}} jump'éel p'isib bey ma' u k'iinil",
+      "HOURS_other": "{{count}} horas bey ma' u k'iinil",
+      "DAYS_one": "{{count}} k'iin táanil ti' u k'iinil",
+      "DAYS_other": "{{count}} k'iino'ob táanil ti' u k'iinil",
+      "WEEKS_one": "{{count}} semana bey ma' u k'iinil",
+      "WEEKS_other": "{{count}} semanas bey ma' u k'iinil",
+      "MONTHS_one": "{{count}} wi'inal táanil ti' u k'iinil",
+      "MONTHS_other": "{{count}} wi'inal táanil ti' u k'iinil",
+      "YEARS_one": "{{count}} ja'ab táanil ti' u k'iinil",
+      "YEARS_other": "{{count}} ja'abo'ob táanil ti' u k'iinil"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minuto ka' u k'iinil ts'a'an",
+      "MINUTES_other": "{{count}} minutos ka' u k'iinil ts'a'an",
+      "HOURS_one": "{{count}} p'isib ka' u k'iinil ts'a'an",
+      "HOURS_other": "{{count}} horas ka' u k'iinil ts'a'an",
+      "DAYS_one": "{{count}} k'iin ka' u k'iinil ts'a'an",
+      "DAYS_other": "{{count}} k'iino'ob ka' u k'iinil ts'a'an",
+      "WEEKS_one": "{{count}} semana ka' u k'iinil ts'a'an",
+      "WEEKS_other": "{{count}} semanas ka' u k'iinil ts'a'an",
+      "MONTHS_one": "{{count}} wi'inal ka' u k'iinil ts'a'an",
+      "MONTHS_other": "{{count}} wi'inal ka' u k'iinil ts'a'an",
+      "YEARS_one": "{{count}} ja'ab ka' u k'iinil ts'a'an",
+      "YEARS_other": "{{count}} ja'abo'ob ka' u k'iinil ts'a'an"
+    },
+    "units": {
+      "MINUTES_one": "minuto",
+      "MINUTES_other": "minuto'ob",
+      "HOURS_one": "p'íik'iin",
+      "HOURS_other": "oora'ob",
+      "DAYS_one": "k'iin",
+      "DAYS_other": "k'iino'ob",
+      "WEEKS_one": "semaana",
+      "WEEKS_other": "semanas",
+      "MONTHS_one": "wi'inal",
+      "MONTHS_other": "wi'inal",
+      "YEARS_one": "ja'ab",
+      "YEARS_other": "ja'abo'ob"
+    }
+  }
+}

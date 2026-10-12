@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal han Magtutukod",
+    "referrals": "Mga pagrefer",
+    "builderLogin": "Pagsulod han Magtutukod",
+    "partnerLogin": "Pagsulod han Kasosyo han Kanal"
+  },
+  "login": {
+    "title": "Pagsulod han paragtukod",
+    "hint": "An mga kuwenta han mga magtutukod ginhimo han Leadrat . Pakianhi an imo administrador kon waray ka."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Naghuhulat han imo desisyon .",
+    "ACCEPTED": "Ginkarawat",
+    "REJECTED": "Ginsalikway"
+  },
+  "list": {
+    "title": "Mga pagrefer",
+    "allProjects": "Tanan nga proyekto .",
+    "allStatuses": "Tanan nga kahimtang",
+    "count_one": "{{count}} pagrefer",
+    "count_other": "{{count}} mga pagrefer",
+    "columns": {
+      "referral": "Pagrefer",
+      "customer": "Kustomer",
+      "project": "Proyekto",
+      "sourcePartner": "Kasosyo han Gintikangan",
+      "status": "Kahimtang",
+      "booking": "Pag-book",
+      "registered": "Narehistro"
+    },
+    "booked": "Gin-book",
+    "empty": "Waray pa mga referral."
+  },
+  "detail": {
+    "customer": "Kustomer",
+    "sourcePartner": "Kasosyo han Gintikangan",
+    "attributionNote": "(pag-atribwir - diri mababag-o)",
+    "leadStatus": "Kahimtang han Panguna",
+    "protectedUntil": "Ginpanalipdan Tubtob 2019.",
+    "referral": "Pagrefer",
+    "reason": "Rason: {{reason}}",
+    "booking": "Pag-book",
+    "bookedOwner": "Gin-book - ikaw an tag-iya han operasyon .",
+    "notBooked": "Waray pa ma-book",
+    "sharedAfterBooking": "Ginpaangbit katapos han pag-book .",
+    "accept": "Karawata an Pagpasa",
+    "confirmBooking": "Kumpirma an Pag-book",
+    "reject": "Isalikway an Pagpadara",
+    "rejectReasonLabel": "Rason han pagsalikway (iginpapakita ha kapadis) * .",
+    "rejectConfirm": "Igsalikway",
+    "confirmBookingPrompt": "Kumpirmahon an pag-book? An pagtag-iya han operasyon in nabalhin ha imo ngan an kapadis in nagigin kwalipikado para han komisyon.",
+    "notice": {
+      "booked": "Kumpirmado an pag-book.",
+      "accepted": "Ginkarawat an pagrefer.",
+      "rejected": "Ginsalikway an pagrefer."
+    },
+    "backToReferrals": "Balik ha mga Refer"
+  },
+  "history": {
+    "title": "Kasaysayan",
+    "actor": {
+      "system": "Sistema",
+      "partner": "Kasosyo han kanal",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Nakarawat an rehistro han kapadis",
+      "DUPLICATE_CHECK_COMPLETED": "Natapos an duplikado nga pag-usisa - waray aktibo nga duplikado nga nakit-an",
+      "REGISTRATION_ACCEPTED": "Ginkarawat na an pagparehistro",
+      "PROTECTION_GRANTED_one": "{{count}} -adlaw nga panalipod nga iginhatag",
+      "PROTECTION_GRANTED_other": "{{count}} -adlaw nga panalipod nga iginhatag",
+      "STAGE_UPDATED": "Ginbag-o an kahimtang ngadto ha {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Ginbag-o nga {{count}} nga uma",
+      "LEAD_DETAILS_UPDATED_other": "Ginbag-o nga {{count}} nga mga uma",
+      "LEAD_ASSIGNED": "Gintokahan ha {{name}}",
+      "LEAD_UNASSIGNED": "Waray igtoka",
+      "REFERRAL_ACCEPTED": "Ginkarawat han magturukod an pagrefer .",
+      "REFERRAL_REJECTED": "Ginsalikway han magturukod an pagrefer. Rason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Ginsalikway an duplikado nga pagsari hin pagparehistro han {{partner}}",
+      "BOOKING_COMPLETED": "Natapos na an pag-book",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "An pagtag-iya han operasyon iginbalhin ngadto ha Magtutukod .",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Gintipigan an pag-atribwir han kapadis",
+      "COMMISSION_ELIGIBILITY_CREATED": "Ginhimo an pagkakwalipikado ha komisyon .",
+      "HANDOVER_COMPLETED": "Natapos an paghatag",
+      "ADMIN_PROTECTION_RELEASED": "Admin nagpagawas hin doble nga panalipod hin temprano. Rason: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Gin-utro han Admin an pagrehistro tikang ha {{from}} ngadto ha {{to}} . Rason: {{reason}}"
+    }
+  }
+}

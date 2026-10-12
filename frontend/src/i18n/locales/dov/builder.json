@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Mulyango wabasikuyaka",
+    "referrals": "Kutumwa",
+    "builderLogin": "Kunjila kwasikuyaka",
+    "partnerLogin": "Kunjila kwamweenzinyina"
+  },
+  "login": {
+    "title": "Sikuyaka kunjila",
+    "hint": "Maakaunti aabasikuyaka akapangwa Leadrat . buzya mweendelezi wako kuti kotakwe."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Kulindila kusala kwako",
+    "ACCEPTED": "Zyakazuminwa",
+    "REJECTED": "Twakakakwa"
+  },
+  "list": {
+    "title": "Kutumwa",
+    "allProjects": "milimu yoonse",
+    "allStatuses": "Ziimo zyoonse",
+    "count_one": "{{count}} kutuminwa",
+    "count_other": "{{count}} batuminwa",
+    "columns": {
+      "referral": "Kutuminwa",
+      "customer": "Sikuula",
+      "project": "Mabambe",
+      "sourcePartner": "Mweenzinyina",
+      "status": "Chiimo",
+      "booking": "Kubhuka",
+      "registered": "wakalembwa"
+    },
+    "booked": "wakabbuku",
+    "empty": "Kunyina bantu bakatuminwa pe."
+  },
+  "detail": {
+    "customer": "Sikuula",
+    "sourcePartner": "Mweenzinyina",
+    "attributionNote": "(kupegwa - takukonzyi kuchincha)",
+    "leadStatus": "Chiimo chakusololela",
+    "protectedUntil": "Kukwabililwa Kusikila",
+    "referral": "Kutuminwa",
+    "reason": "Kaambo: {{reason}}",
+    "booking": "Kubhuka",
+    "bookedOwner": "wakabbukulwa - nduwe mukamwini uubeleka",
+    "notBooked": "Tazina bbuku",
+    "sharedAfterBooking": "Zyakaabwa nikwakamana kubbukula",
+    "accept": "Kotambula kutuminwa",
+    "confirmBooking": "sinizya kuti wabikka",
+    "reject": "Kukaka kutuminwa",
+    "rejectReasonLabel": "Kaambo kakukaka (katondezyegwa kuli yooyo ngomukwetene limwi) *",
+    "rejectConfirm": "Kukaka",
+    "confirmBookingPrompt": "Kusinizya kubhuka? Bulelo bwakubeleka bulaunka kuli nduwe mpawo mweenzinyokwe ulakonzya kupegwa mali.",
+    "notice": {
+      "booked": "Kubhuka kwasinizyigwa.",
+      "accepted": "Kutuminwa kwatambulwa.",
+      "rejected": "Kutuminwa kwakakilwa."
+    },
+    "backToReferrals": "Kujokela kulibaabo bakatumwa"
+  },
+  "history": {
+    "title": "Lwaano",
+    "actor": {
+      "system": "Nzila yakuchita zintu",
+      "partner": "Mweenzinyina",
+      "admin": "Mweendelezi Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Kulembesya mweenzinyokwe kwatambulwa",
+      "DUPLICATE_CHECK_COMPLETED": "Kulangisisya kwakachitwa - taakwe kwakajanwa",
+      "REGISTRATION_ACCEPTED": "Kulembesya kwatambulwa",
+      "PROTECTION_GRANTED_one": "{{count}} -buzuba bwakukwabililwa bwakapegwa",
+      "PROTECTION_GRANTED_other": "{{count}} -buzuba bwakukwabililwa bwakapegwa",
+      "STAGE_UPDATED": "Chiimo chakacincwa kusika ku {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Yakacincwa {{count}} muunda",
+      "LEAD_DETAILS_UPDATED_other": "Zyakabambululwa {{count}}",
+      "LEAD_ASSIGNED": "Yakapegwa kuli {{name}}",
+      "LEAD_UNASSIGNED": "Kakwiina kupegwa",
+      "REFERRAL_ACCEPTED": "Muyaki wakazumina kutuminwa",
+      "REFERRAL_REJECTED": "Muyaki wakakaka kutuminwa. Kaambo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Kusoleka kulilembya kwa {{partner}} kwakakilwa",
+      "BOOKING_COMPLETED": "Kubhuka kwamana",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Bulelo bwakubeleka bwakapegwa kuli Sikuyaka",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Kuzyibwa kwa mweenzinyina kwakakwabililwa",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kweelela kwakutambula lugwasyo kwakachitwa",
+      "HANDOVER_COMPLETED": "Kupa kwakamanizyigwa",
+      "ADMIN_PROTECTION_RELEASED": "Mweendelezi wakagwisya lukwabililo lwazintu zyobile kakuchili chiindi. Kaambo: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Mweendelezi wakabikka kulembwa kuzwa ku {{from}} kuya ku {{to}} . Kaambo: {{reason}}"
+    }
+  }
+}

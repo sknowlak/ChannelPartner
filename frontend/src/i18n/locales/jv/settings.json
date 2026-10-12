@@ -1,0 +1,244 @@
+{
+  "page": {
+    "title": "Setelan",
+    "noPermission": "Sampeyan ora duwe idin kanggo ngatur setelan."
+  },
+  "categories": {
+    "lead": "timbal",
+    "user": "panganggo",
+    "integrations": "Integrasi"
+  },
+  "leadTabs": {
+    "fields": "Sawah",
+    "statuses": "Status & Sub-Status",
+    "notifications": "Kabar & Penjadwal"
+  },
+  "fields": {
+    "leadIntro": "Konfigurasi formulir panangkepan timbal: aktifake / mateni kolom, tandhani yen dibutuhake, utawa tambahake kolom khusus sampeyan dhewe.",
+    "userIntro": "Konfigurasi formulir Tambah / Sunting Anggota Tim: aktifake / mateni kolom, tandhani sing dibutuhake, utawa tambahake kolom khusus sampeyan.",
+    "addCustomField": "+ Tambah Lapangan Khusus",
+    "fieldLabel": "Label Lapangan",
+    "group": "Kelompok",
+    "groupPlaceholderLead": "eg Inquiry Info",
+    "groupPlaceholderUser": "contone, Rincian Tambahan",
+    "dataType": "Jinis data",
+    "options": "Pilihan (dipisahake koma)",
+    "requiredLead": "Dibutuhake - mitra ing tim sampeyan kudu ngisi iki kanggo ndhaptar timbal",
+    "requiredUser": "Dibutuhake - kudu diisi nalika nambah anggota tim",
+    "creating": "Nggawe...",
+    "createField": "Nggawe Field",
+    "columns": {
+      "field": "lapangan",
+      "group": "Kelompok",
+      "type": "Jinis",
+      "required": "dibutuhake",
+      "enabled": "diaktifake",
+      "kind": "jenis"
+    },
+    "kind": {
+      "custom": "adat",
+      "core": "Inti (dikunci)",
+      "standard": "Standar"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Teks",
+    "TEXTAREA": "Teks dawa",
+    "NUMBER": "Nomer",
+    "CURRENCY": "mata uang",
+    "DATE": "Tanggal",
+    "SELECT": "Dropdown",
+    "LIST": "Dhaptar"
+  },
+  "picker": {
+    "searchPlaceholder": "Telusuri kolom timbal...",
+    "summary": "{{shown}} ditampilake · {{mandatory}} wajib",
+    "mandatory": "wajib",
+    "noMatch": "Ora ana lapangan sing cocog."
+  },
+  "statuses": {
+    "intro": "Status lan substatus timbal sampeyan - apa sing dijaluk saben wong (tanggal & wektu, kolom timbal) nalika ana wong sing nganyari timbal kasebut.",
+    "add": "+ Tambah Status",
+    "columns": {
+      "order": "dhawuh",
+      "status": "Status",
+      "subStatuses": "Sub-Status",
+      "asksFor": "Njaluk Kanggo",
+      "active": "Aktif"
+    },
+    "moveUp": "Ngalih munggah",
+    "moveDown": "Pindhah mudhun",
+    "defaultBadge": "Default kanggo lead anyar",
+    "bookingBadge": "Status pesenan",
+    "asksForLabel": "Njaluk {{label}}",
+    "asksForDateTime": "Njaluk tanggal & wektu",
+    "none": "ora ana",
+    "dateTime": "Tanggal & wektu",
+    "scheduledOn": "ing {{names}}",
+    "fieldsSummary_other": "{{count}} kolom ( {{mandatory}} wajib)",
+    "deleteConfirm": "Busak status \" {{name}} \"? Iki ora bisa dibatalake.",
+    "editTitle": "Sunting Status - {{name}}",
+    "newTitle": "Status anyar",
+    "name": "Jeneng Status",
+    "colour": "warna",
+    "active": "Aktif",
+    "isDefault": "Status standar kanggo lead anyar",
+    "isBooking": "Status pesenan (diset dening Booking Lengkap)",
+    "whenMoved": "Nalika timbal dipindhah menyang status iki",
+    "askSchedule": "Takon tanggal lan wektu (penjadwal)",
+    "scheduleLabelPlaceholder": "Label, contone, Dolan maring ing",
+    "fieldsToShow": "Kolom timbal kanggo ditampilake ing formulir nganyari",
+    "subStatusesTitle": "Sub-Status",
+    "subStatusesHint": "Saben sub-status bisa njaluk tanggal & wektu dhewe lan nambah kolom dhewe - ditampilake ing ndhuwur kolom status ing ndhuwur.",
+    "subStatusName": "Jeneng sub-status",
+    "subFields": "Bidang ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Label tanggal & wektu, contone Telpon bali ing",
+    "addSubStatus": "+ Tambah Sub-Status",
+    "saveStatus": "Simpen Status",
+    "createStatus": "Nggawe Status"
+  },
+  "notifications": {
+    "intro": "Takon wong sing bener nalika pimpinan tekan status - langsung, utawa wektu sing disetel sadurunge / sawise tanggal & wektu sing dijadwalake.",
+    "add": "+ Tambah Notifikasi",
+    "columns": {
+      "notification": "Notifikasi",
+      "whenStatusIs": "Nalika Status",
+      "sends": "Ngirim",
+      "to": "Kanggo",
+      "via": "Liwat",
+      "enabled": "diaktifake"
+    },
+    "anyStatus": "Status apa wae",
+    "anySubStatus": "Sub-status apa wae",
+    "inactiveOption": "{{name}} (ora aktif)",
+    "emptyRules": "Durung ana kabar - tambahake siji kanggo menehi tandha marang tim nalika pimpinan tekan status.",
+    "jobs": {
+      "title": "Dijadwal & Dikirim",
+      "firesAt": "Kebakaran ing",
+      "notification": "Notifikasi",
+      "lead": "timbal",
+      "status": "Status",
+      "details": "Rincian",
+      "empty": "Ora ana sing dijadwal utawa dikirim.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Ditunggu",
+      "PROCESSING": "Ngolah",
+      "SENT": "Dikirim",
+      "FAILED": "Gagal",
+      "SKIPPED": "Dilewati",
+      "CANCELLED": "dibatalake"
+    },
+    "deliveryStatus": {
+      "SENT": "dikirim",
+      "FAILED": "gagal",
+      "SKIPPED": "dilewati"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ing-app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Panganggo sing ditugasake",
+      "owner": "juragan",
+      "updatedBy": "Dianyari dening",
+      "role": "Peran: {{name}}"
+    },
+    "channels": {
+      "inApp": "Ing-app",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Busak kabar \" {{name}} \"? Pangeling sing ditundha dibatalake.",
+    "testPrompt": "Kirim tes kabar iki kanggo sampeyan dhewe (ing-app) nggunakake ID timbal sing endi?",
+    "testSent": "Dikirim menyang lonceng sampeyan: {{title}} {{message}}",
+    "headersInvalid": "Header Webhook kudu JSON sing valid, contone {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Sunting Notifikasi",
+    "newTitle": "Kabar Anyar",
+    "name": "jeneng",
+    "namePlaceholder": "eg Pangeling kunjungan situs",
+    "whenStatus": "Nalika status timbal iku",
+    "subStatus": "Sub status",
+    "send": "Kirim (Jadwal)",
+    "custom": "Adat...",
+    "modeBefore": "sadurunge wektu dijadwal",
+    "modeAfter": "sawise wektu dijadwal",
+    "noScheduleWarning": "Status iki ora njaluk tanggal & wektu, dadi kabar \"sadurunge / ing / sawise wektu dijadwal\" ora bakal murub.",
+    "noScheduleFix": "Aktifake <strong>Takon tanggal & wektu</strong> ing Status & Sub-Status, utawa kirim Langsung.",
+    "sendTo": "Kirim menyang (kombinasi apa wae)",
+    "recipientAssigned": "Panganggo sing ditugasake (pemilik utama)",
+    "recipientOwner": "Pemilik akun / admin",
+    "recipientUpdatedBy": "Wong sing nganyari status",
+    "everyoneWithRole": "Kabeh wong duwe peran",
+    "specificUsers": "Pangguna khusus (aktif)",
+    "inactiveNever": "Pangguna sing ora aktif ora tau nampa kabar, sanajan dipilih.",
+    "deliverVia": "Kirim liwat",
+    "channelInApp": "Ing-app (lonceng)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook (panyedhiya WhatsApp / SMS )",
+    "emailHint": "Email menyang alamat email saben panampa lan perlu SMTP nyiyapake ing server (backend/.env); nganti ngirim email dicathet minangka dilewati.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Header ( JSON )",
+    "content": "Isi kabar",
+    "title": "judhul",
+    "message": "Pesen",
+    "insertIntoTitle": "Lebokake menyang Title",
+    "insertIntoMessage": "Lebokake menyang Pesen",
+    "anyLeadField": "Sembarang kolom timbal uga bisa digunakake, contone <code1>{{example1}}</code1> utawa <code2>{{example2}}</code2> .",
+    "preview": "Pratinjau (sample lead)",
+    "enabled": "diaktifake",
+    "saveRule": "Simpen Notifikasi",
+    "createRule": "Nggawe Notifikasi",
+    "variables": {
+      "customerName": "jeneng timbal",
+      "customerMobile": "Timbal mobile",
+      "customerEmail": "Email timbal",
+      "registrationId": "ID mimpin",
+      "status": "Status",
+      "subStatus": "Sub status",
+      "scheduleAt": "Tanggal & wektu sing dijadwal",
+      "assignedTo": "Panganggo sing ditugasake",
+      "updatedBy": "Dianyari dening",
+      "recipient": "Jeneng panampa",
+      "project": "Proyek",
+      "notes": "Cathetan paling anyar",
+      "partner": "Jeneng mitra"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Sanalika nalika status disetel",
+      "AT": "Ing wektu sing dijadwalake",
+      "A1D": "1 dina sawise wektu sing dijadwalake (pemeriksaan tindak lanjut)"
+    },
+    "immediately": "Langsung wae",
+    "atScheduled": "Ing wektu sing dijadwalake",
+    "before": {
+      "MINUTES_other": "{{count}} menit sadurunge wektu sing dijadwalake",
+      "HOURS_other": "{{count}} jam sadurunge wektu sing dijadwalake",
+      "DAYS_other": "{{count}} dina sadurunge wektu sing dijadwal",
+      "WEEKS_other": "{{count}} minggu sadurunge wektu sing dijadwalake",
+      "MONTHS_other": "{{count}} sasi sadurunge wektu dijadwal",
+      "YEARS_other": "{{count}} taun sadurunge wektu sing dijadwalake"
+    },
+    "after": {
+      "MINUTES_other": "{{count}} menit sawise wektu sing dijadwalake",
+      "HOURS_other": "{{count}} jam sawise wektu sing dijadwalake",
+      "DAYS_other": "{{count}} dina sawise wektu sing dijadwalake",
+      "WEEKS_other": "{{count}} minggu sawise wektu sing dijadwalake",
+      "MONTHS_other": "{{count}} sasi sawise wektu dijadwal",
+      "YEARS_other": "{{count}} taun sawise wektu sing dijadwalake"
+    },
+    "units": {
+      "MINUTES_other": "menit",
+      "HOURS_other": "jam",
+      "DAYS_other": "dina",
+      "WEEKS_other": "minggu",
+      "MONTHS_other": "wulan",
+      "YEARS_other": "taun"
+    }
+  }
+}

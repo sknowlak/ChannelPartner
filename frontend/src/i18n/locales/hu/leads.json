@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Saját vezetőim",
+    "signedInAs": "Bejelentkezve mint {{name}} ( {{partnerId}} ) · idők láthatók itt: {{timezone}}",
+    "addLead": "+ Ólom hozzáadása",
+    "tabs": {
+      "all": "Mind ( {{count}} )",
+      "pending": "Függőben ( {{count}} )",
+      "booked": "Foglalt ( {{count}} )"
+    },
+    "searchPlaceholder": "Keresés név, mobil vagy regisztrációs ID alapján...",
+    "manageColumns": "Oszlopok kezelése",
+    "rowsPerPage": "Sorok oldalanként",
+    "registrationId": "Regisztrációs ID",
+    "emptyState": "Még nincsenek potenciális ügyfelek – regisztrálja az elsőt.",
+    "noMatch": "Egyetlen lead sem felel meg ezeknek a szűrőknek.",
+    "showing": "{{from}} - {{to}} / {{total}} bejegyzés megjelenítése",
+    "actions": {
+      "preview": "Előnézet és gyors frissítés",
+      "history": "Történelem",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Hívás"
+    },
+    "pagination": {
+      "first": "Első oldal",
+      "previous": "Előző oldal",
+      "next": "Következő oldal",
+      "last": "Utolsó oldal"
+    }
+  },
+  "columns": {
+    "status": "Állapot",
+    "assignTo": "Hozzárendelés",
+    "booked": "Lefoglalt",
+    "protectionUntil": "Védelem -ig"
+  },
+  "booking": {
+    "booked": "Lefoglalt",
+    "pending": "Függőben levő"
+  },
+  "assign": {
+    "unassigned": "Nincs hozzárendelve",
+    "owner": "{{name}} (Tulajdonos)",
+    "inactive": "{{name}} (inaktív)",
+    "unknownUser": "Ismeretlen felhasználó",
+    "assignedTo": "Hozzárendelve: {{name}}"
+  },
+  "form": {
+    "addTitle": "Ólom hozzáadása",
+    "editTitle": "Lead szerkesztése",
+    "noPermissionAdd": "Nincs engedélye leadek regisztrálására.",
+    "noPermissionEdit": "Nincs jogosultsága potenciális ügyfelek szerkesztésére.",
+    "selectPlaceholder": "Válassz...",
+    "commaSeparated": "Vesszővel elválasztva",
+    "phonePlaceholder": "Telefonszám",
+    "countryCode": "Országkód"
+  },
+  "project": {
+    "none": "Még nincs projekt (nem hivatkozott)",
+    "notInList": "{{project}} (nincs a projektlistában)"
+  },
+  "journey": {
+    "customer": "Vevő",
+    "currentOwner": "Jelenlegi tulajdonos",
+    "protectionExpiry": "Védelem lejárta",
+    "leadStatus": "Vezetési állapot",
+    "scheduled": "Ütemezett",
+    "assignedTo": "Hozzárendelve",
+    "referral": "Beutaló",
+    "builderReason": "Építői indok: {{reason}}",
+    "bookedHint": "Az építtető lefoglalta - az üzemi tulajdonjog az építtetőre költözött; a hozzárendelésed és a jutalékjogosultságod megmarad.",
+    "notBookedHint": "A foglalásokat az építtető visszaigazolja, miután elfogadta az ajánlást.",
+    "quickUpdate": "Gyors frissítés",
+    "leadDetails": "Ólom részletei",
+    "progressHistory": "Haladás története",
+    "timesIn": "(időzóna: {{timezone}} )",
+    "backToMyLeads": "Vissza a saját vezetőimhez",
+    "editLead": "Lead szerkesztése"
+  },
+  "referral": {
+    "NOT_REFERRED": "Nincs utalva (nincs projekt)",
+    "PENDING_BUILDER": "Építőre vár",
+    "ACCEPTED": "Építtető elfogadta",
+    "REJECTED": "Az építtető elutasította"
+  },
+  "preview": {
+    "ariaLabel": "Lead előnézet",
+    "title": "Lead Előnézet",
+    "source": "Forrás",
+    "location": "Elhelyezkedés",
+    "scheduled": "Ütemezett",
+    "registered": "Bejegyzett",
+    "latestNote": "Legújabb megjegyzés",
+    "quickUpdate": "Gyors frissítés",
+    "fullDetails": "Teljes részletek",
+    "editLead": "Lead szerkesztése",
+    "history": "Történelem"
+  },
+  "quick": {
+    "assignedTo": "Hozzárendelve",
+    "status": "Állapot",
+    "subStatus": "Alállapot",
+    "selectSubStatus": "Alállapot kiválasztása...",
+    "none": "Egyik sem",
+    "scheduledAt": "Időpont:",
+    "localTime": "helyi idő",
+    "note": "Jegyzet",
+    "notePlaceholder": "Mi történt ezen a híváson/látogatáson? (választható)",
+    "updateStatus": "Állapot frissítése",
+    "statusUpdated": "Állapot frissítve",
+    "bookedLocked": "Ez a lead le van foglalva – állapota már nem módosítható.",
+    "viewOnly": "Megtekintheti ezt a leadet, de a szerepköre nem frissítheti."
+  },
+  "history": {
+    "title": "Előzmények – {{registrationId}}",
+    "tabs": {
+      "all": "Minden",
+      "status": "Állapot",
+      "assignment": "Kijelölés",
+      "notes": "Megjegyzések"
+    },
+    "doneBy": "Készítette: {{actor}}",
+    "system": "Rendszer",
+    "platforms": {
+      "System": "Rendszer",
+      "External": "Külső",
+      "Web": "Web",
+      "Mobile": "Mozgó"
+    },
+    "added": "tette hozzá",
+    "updated": "frissítve",
+    "empty": "(üres)",
+    "noHistory": "Ebben a kategóriában még nincs előzmény.",
+    "fieldLabels": {
+      "stage": "Állapot",
+      "subStatus": "Alállapot",
+      "scheduledAt": "Menetrend",
+      "notes": "Megjegyzések",
+      "assignedTo": "Hozzárendelve"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Partner regisztráció megérkezett",
+      "DUPLICATE_CHECK_COMPLETED": "Az ismétlődés ellenőrzése befejeződött – nem található aktív ismétlődés",
+      "REGISTRATION_ACCEPTED": "Regisztráció elfogadva",
+      "PROTECTION_GRANTED_one": "{{count}} napos védelem biztosított",
+      "PROTECTION_GRANTED_other": "{{count}} napos védelem biztosított",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partnerId}} ismétlődő regisztrációs kísérlete elutasítva",
+      "LEAD_DETAILS_UPDATED_one": "Frissített {{count}} mező",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} mező frissítve",
+      "STAGE_UPDATED": "Az állapot frissítve a következőre: {{status}}",
+      "LEAD_ASSIGNED": "Hozzárendelve: {{name}}",
+      "LEAD_UNASSIGNED": "Nincs hozzárendelve",
+      "BOOKING_COMPLETED": "A foglalás befejeződött",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "A működési tulajdonjog átkerült a Builderre",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partner-hozzárendelés megőrizve",
+      "COMMISSION_ELIGIBILITY_CREATED": "Jutalékjogosultság létrejött",
+      "HANDOVER_COMPLETED": "Az átadás befejeződött",
+      "REFERRAL_ACCEPTED": "A Builder elfogadta az ajánlást",
+      "REFERRAL_REJECTED": "Builder elutasította az ajánlást. Ok: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "A rendszergazda korán kiadta a duplikált védelmet. Ok: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Az adminisztrátor átadta a regisztrációt a következőről: {{from}} a következőre: {{to}} . Ok: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Oszlopok kezelése",
+    "hint": "Húzza át az átrendezéshez · jelölje be a megjelenítéshez",
+    "showAll": "Összes megjelenítése",
+    "resetDefault": "Visszaállítás alapértelmezettre"
+  },
+  "filters": {
+    "title": "Szűrők",
+    "allProjects": "Minden projekt",
+    "any": "Bármilyen",
+    "noFields": "Más szűrhető mezők még nincsenek engedélyezve (Beállítások > Lead).",
+    "clearAll": "Összes törlése"
+  },
+  "phone": {
+    "MISSING": "Telefonszám megadása kötelező.",
+    "INVALID": "Kérjük, adjon meg egy érvényes telefonszámot.",
+    "TOO_SHORT": "A telefonszám túl rövid.",
+    "TOO_LONG": "A telefonszám túl hosszú.",
+    "INVALID_FOR_COUNTRY": "Ez a telefonszám nem érvényes a következő országban: {{country}} .",
+    "COUNTRY_MISMATCH": "Kérjük, válassza ki a megfelelő országkódot.",
+    "NOT_MOBILE": "Kérjük, mobiltelefonszámot adjon meg, ne vezetékes számot."
+  }
+}

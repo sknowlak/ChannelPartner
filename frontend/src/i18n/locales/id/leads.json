@@ -1,0 +1,186 @@
+{
+  "list": {
+    "title": "Petunjuk Saya",
+    "signedInAs": "Masuk sebagai {{name}} ( {{partnerId}} ) · waktu yang ditampilkan di {{timezone}}",
+    "addLead": "+ Tambahkan Timbal",
+    "tabs": {
+      "all": "Semua ( {{count}} )",
+      "pending": "Tertunda ( {{count}} )",
+      "booked": "Dipesan ( {{count}} )"
+    },
+    "searchPlaceholder": "Cari berdasarkan nama, ponsel, atau ID pendaftaran ...",
+    "manageColumns": "Kelola Kolom",
+    "rowsPerPage": "Baris per halaman",
+    "registrationId": "ID Pendaftaran",
+    "emptyState": "Belum ada prospek - daftarkan prospek pertama Anda.",
+    "noMatch": "Tidak ada prospek yang cocok dengan filter ini.",
+    "showing": "Menampilkan {{from}} - {{to}} dari {{total}} entri",
+    "actions": {
+      "preview": "Pratinjau & pembaruan cepat",
+      "history": "Sejarah",
+      "email": "E-mail",
+      "whatsapp": "WhatsApp",
+      "call": "Panggilan"
+    },
+    "pagination": {
+      "first": "Halaman pertama",
+      "previous": "Halaman sebelumnya",
+      "next": "Halaman selanjutnya",
+      "last": "Halaman terakhir"
+    }
+  },
+  "columns": {
+    "status": "Status",
+    "assignTo": "Tetapkan Ke",
+    "booked": "Dipesan",
+    "protectionUntil": "Perlindungan Sampai"
+  },
+  "booking": {
+    "booked": "Dipesan",
+    "pending": "Tertunda"
+  },
+  "assign": {
+    "unassigned": "Belum ditetapkan",
+    "owner": "{{name}} (Pemilik)",
+    "inactive": "{{name}} (tidak aktif)",
+    "unknownUser": "Pengguna tidak dikenal",
+    "assignedTo": "Ditugaskan ke {{name}}"
+  },
+  "form": {
+    "addTitle": "Tambahkan Timbal",
+    "editTitle": "Sunting Pimpinan",
+    "noPermissionAdd": "Anda tidak memiliki izin untuk mendaftarkan prospek.",
+    "noPermissionEdit": "Anda tidak memiliki izin untuk mengedit prospek.",
+    "selectPlaceholder": "Memilih...",
+    "commaSeparated": "Dipisahkan koma",
+    "phonePlaceholder": "Nomor telepon",
+    "countryCode": "Kode negara"
+  },
+  "project": {
+    "none": "Belum ada proyek (belum dirujuk)",
+    "notInList": "{{project}} (tidak ada dalam daftar proyek)"
+  },
+  "journey": {
+    "customer": "Pelanggan",
+    "currentOwner": "Pemilik Saat Ini",
+    "protectionExpiry": "Kedaluwarsa Perlindungan",
+    "leadStatus": "Status Pemimpin",
+    "scheduled": "Dijadwalkan",
+    "assignedTo": "Ditugaskan Ke",
+    "referral": "Rujukan",
+    "builderReason": "Alasan pembangun: {{reason}}",
+    "bookedHint": "Dipesan oleh pembangun - kepemilikan operasional telah berpindah ke pembangun; kelayakan atribusi dan komisi Anda tetap dipertahankan.",
+    "notBookedHint": "Pemesanan dikonfirmasi oleh pembangun setelah mereka menerima rujukan.",
+    "quickUpdate": "Pembaruan Cepat",
+    "leadDetails": "Detail Prospek",
+    "progressHistory": "Sejarah Kemajuan",
+    "timesIn": "(waktu dalam {{timezone}} )",
+    "backToMyLeads": "Kembali ke Petunjuk Saya",
+    "editLead": "Sunting Pimpinan"
+  },
+  "referral": {
+    "NOT_REFERRED": "Tidak dirujuk (tidak ada proyek)",
+    "PENDING_BUILDER": "Menunggu pembangun",
+    "ACCEPTED": "Diterima oleh pembangun",
+    "REJECTED": "Ditolak oleh pembangun"
+  },
+  "preview": {
+    "ariaLabel": "Pratinjau prospek",
+    "title": "Pratinjau Prospek",
+    "source": "Sumber",
+    "location": "Lokasi",
+    "scheduled": "Dijadwalkan",
+    "registered": "Terdaftar",
+    "latestNote": "Catatan Terbaru",
+    "quickUpdate": "Pembaruan Cepat",
+    "fullDetails": "Detail Lengkap",
+    "editLead": "Sunting Pimpinan",
+    "history": "Sejarah"
+  },
+  "quick": {
+    "assignedTo": "Ditugaskan Ke",
+    "status": "Status",
+    "subStatus": "Sub-Status",
+    "selectSubStatus": "Pilih sub-status...",
+    "none": "Tidak ada",
+    "scheduledAt": "Dijadwalkan pada",
+    "localTime": "waktu setempat",
+    "note": "Catatan",
+    "notePlaceholder": "Apa yang terjadi pada panggilan/kunjungan ini? (opsional)",
+    "updateStatus": "Perbarui Status",
+    "statusUpdated": "Status diperbarui",
+    "bookedLocked": "Prospek ini sudah dipesan - statusnya tidak dapat diubah lagi.",
+    "viewOnly": "Anda dapat melihat prospek ini, namun peran Anda tidak dapat memperbaruinya."
+  },
+  "history": {
+    "title": "Riwayat - {{registrationId}}",
+    "tabs": {
+      "all": "Semua",
+      "status": "Status",
+      "assignment": "Penugasan",
+      "notes": "Catatan"
+    },
+    "doneBy": "Dilakukan oleh {{actor}}",
+    "system": "Sistem",
+    "platforms": {
+      "System": "Sistem",
+      "External": "Luar",
+      "Web": "jaring",
+      "Mobile": "Seluler"
+    },
+    "added": "ditambahkan",
+    "updated": "diperbarui",
+    "empty": "(kosong)",
+    "noHistory": "Belum ada riwayat dalam kategori ini.",
+    "fieldLabels": {
+      "stage": "Status",
+      "subStatus": "Sub-Status",
+      "scheduledAt": "Jadwal",
+      "notes": "Catatan",
+      "assignedTo": "Ditugaskan Ke"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Pendaftaran mitra diterima",
+      "DUPLICATE_CHECK_COMPLETED": "Pemeriksaan duplikat selesai - tidak ditemukan duplikat aktif",
+      "REGISTRATION_ACCEPTED": "Pendaftaran diterima",
+      "PROTECTION_GRANTED_other": "{{count}} perlindungan -hari diberikan",
+      "REGISTRATION_ATTEMPT_REJECTED": "Upaya pendaftaran duplikat oleh {{partnerId}} ditolak",
+      "LEAD_DETAILS_UPDATED_other": "Bidang {{count}} diperbarui",
+      "STAGE_UPDATED": "Status diperbarui menjadi {{status}}",
+      "LEAD_ASSIGNED": "Ditugaskan ke {{name}}",
+      "LEAD_UNASSIGNED": "Belum ditetapkan",
+      "BOOKING_COMPLETED": "Pemesanan selesai",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Kepemilikan operasional dialihkan ke Pembangun",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribusi mitra dipertahankan",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisi dibuat",
+      "HANDOVER_COMPLETED": "Serah terima selesai",
+      "REFERRAL_ACCEPTED": "Pembangun menerima rujukan tersebut",
+      "REFERRAL_REJECTED": "Pembangun menolak rujukan. Alasan: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin merilis perlindungan duplikat lebih awal. Alasan: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin menugaskan ulang pendaftaran dari {{from}} ke {{to}} . Alasan: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Kelola Kolom",
+    "hint": "Seret untuk menyusun ulang · centang untuk menampilkan",
+    "showAll": "Tampilkan Semua",
+    "resetDefault": "Atur Ulang ke Default"
+  },
+  "filters": {
+    "title": "Filter",
+    "allProjects": "Semua proyek",
+    "any": "Setiap",
+    "noFields": "Belum ada kolom lain yang dapat difilter yang diaktifkan (Pengaturan > Prospek).",
+    "clearAll": "Hapus Semua"
+  },
+  "phone": {
+    "MISSING": "Nomor telepon diperlukan.",
+    "INVALID": "Silakan masukkan nomor telepon yang valid.",
+    "TOO_SHORT": "Nomor telepon terlalu pendek.",
+    "TOO_LONG": "Nomor telepon terlalu panjang.",
+    "INVALID_FOR_COUNTRY": "Nomor telepon ini tidak valid untuk {{country}} .",
+    "COUNTRY_MISMATCH": "Silakan pilih kode negara yang benar.",
+    "NOT_MOBILE": "Silakan masukkan nomor ponsel, bukan telepon rumah."
+  }
+}

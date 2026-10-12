@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Chaw",
+    "noPermission": "Koj tsis muaj kev tso cai los tswj kev teeb tsa."
+  },
+  "categories": {
+    "lead": "Coj",
+    "user": "Cov neeg siv",
+    "integrations": "Kev koom ua ke"
+  },
+  "leadTabs": {
+    "fields": "Teb",
+    "statuses": "Statuses & Sub-Statuses",
+    "notifications": "Cov Ntawv Ceeb Toom & Cov Txheej Txheem"
+  },
+  "fields": {
+    "leadIntro": "Configure the lead capture form: enable/disable fields, mark them them, or add your own custom fields.",
+    "userIntro": "Configure the Add/Edit Team Member form: enable/disable fields, mark them them, or add your own custom fields.",
+    "addCustomField": "+ Ntxiv Custom Field",
+    "fieldLabel": "Daim ntawv lo",
+    "group": "Pab pawg",
+    "groupPlaceholderLead": "Piv txwv li Inquiry Info",
+    "groupPlaceholderUser": "Piv txwv li Cov Lus Qhia Ntxiv",
+    "dataType": "Hom ntaub ntawv",
+    "options": "Options (comma cais)",
+    "requiredLead": "Yuav tsum tau - cov neeg koom tes hauv koj pab neeg yuav tsum ua qhov no txhawm rau sau npe ua tus coj",
+    "requiredUser": "Yuav tsum tau - yuav tsum tau sau rau thaum ntxiv ib pab neeg",
+    "creating": "Tsim...",
+    "createField": "Tsim teb",
+    "columns": {
+      "field": "Teb",
+      "group": "Pab pawg",
+      "type": "Hom",
+      "required": "Yuav tsum tau",
+      "enabled": "Pab tau",
+      "kind": "Hom"
+    },
+    "kind": {
+      "custom": "Kev cai",
+      "core": "Core (locked)",
+      "standard": "Txuj"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Ntawv nyeem",
+    "TEXTAREA": "Cov ntawv ntev",
+    "NUMBER": "Tus lej",
+    "CURRENCY": "txiaj",
+    "DATE": "Hnub tim",
+    "SELECT": "poob",
+    "LIST": "Sau npe"
+  },
+  "picker": {
+    "searchPlaceholder": "Nrhiav cov thawj coj...",
+    "summary": "{{shown}} qhia · {{mandatory}} yuav tsum tau",
+    "mandatory": "Yuav tsum tau",
+    "noMatch": "Tsis muaj kev sib tw."
+  },
+  "statuses": {
+    "intro": "Koj cov xwm txheej thiab cov xwm txheej hauv qab - dab tsi txhua tus thov rau (hnub hnub & sijhawm, cov chaw ua haujlwm) thaum ib tus neeg hloov kho cov coj mus rau nws.",
+    "add": "+ Ntxiv xwm txheej",
+    "columns": {
+      "order": "Kev txiav txim",
+      "status": "xwm txheej",
+      "subStatuses": "Cov xwm txheej sub",
+      "asksFor": "Nug Rau",
+      "active": "Active"
+    },
+    "moveUp": "Txav mus",
+    "moveDown": "Txav mus",
+    "defaultBadge": "Default rau cov thawj coj tshiab",
+    "bookingBadge": "Booking xwm txheej",
+    "asksForLabel": "Nug rau {{label}}",
+    "asksForDateTime": "Nug rau hnub & sijhawm",
+    "none": "Tsis muaj",
+    "dateTime": "Hnub & sijhawm",
+    "scheduledOn": "ntawm {{names}}",
+    "fieldsSummary_one": "{{count}} teb ( {{mandatory}} yuav tsum tau)",
+    "fieldsSummary_other": "{{count}} teb ( {{mandatory}} yuav tsum tau)",
+    "deleteConfirm": "Rho tawm xwm txheej \" {{name}} \"? Qhov no tsis tuaj yeem thim rov qab.",
+    "editTitle": "Kho kom raug xwm txheej - {{name}}",
+    "newTitle": "Tshiab xwm txheej",
+    "name": "Lub npe xwm txheej",
+    "colour": "Xim",
+    "active": "Active",
+    "isDefault": "Default status rau cov thawj coj tshiab",
+    "isBooking": "Booking xwm txheej (teev los ntawm Tiav Booking)",
+    "whenMoved": "Thaum ib tug txhuas raug txav mus rau qhov xwm txheej no",
+    "askSchedule": "Nug rau hnub & sijhawm (tshwj xeeb)",
+    "scheduleLabelPlaceholder": "Label, eg Mus saib ntawm",
+    "fieldsToShow": "Ua cov teb kom pom ntawm daim ntawv hloov tshiab",
+    "subStatusesTitle": "Cov xwm txheej sub",
+    "subStatusesHint": "Txhua sub-status tuaj yeem thov rau nws tus kheej hnub & sijhawm thiab ntxiv nws cov teb - pom nyob rau sab saum toj ntawm cov xwm txheej cov teb saum toj no.",
+    "subStatusName": "Sub-status npe",
+    "subFields": "Teb ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Hnub & sijhawm daim ntawv lo, xws li Hu rov qab ntawm",
+    "addSubStatus": "+ Ntxiv Sub-Status",
+    "saveStatus": "Txuag xwm txheej",
+    "createStatus": "Tsim xwm txheej"
+  },
+  "notifications": {
+    "intro": "Qhia rau cov neeg uas yog thaum tus thawj coj mus txog qhov xwm txheej - tam sim ntawd, lossis lub sijhawm teem ua ntej / tom qab hnub & sijhawm teem rau nws.",
+    "add": "+ Ntxiv Kev Ceeb Toom",
+    "columns": {
+      "notification": "Kev ceeb toom",
+      "whenStatusIs": "Thaum Status Yog",
+      "sends": "Xa",
+      "to": "Rau",
+      "via": "Ntawm",
+      "enabled": "Pab tau"
+    },
+    "anyStatus": "Txhua yam xwm txheej",
+    "anySubStatus": "Ib qho sub-status",
+    "inactiveOption": "{{name}} (tsis ua haujlwm)",
+    "emptyRules": "Tsis muaj ntawv ceeb toom - ntxiv ib qho los ceeb toom koj pab neeg thaum tus thawj coj mus txog qhov xwm txheej.",
+    "jobs": {
+      "title": "Teem sijhawm & Xa",
+      "firesAt": "Hluav Taws At",
+      "notification": "Kev ceeb toom",
+      "lead": "Coj",
+      "status": "xwm txheej",
+      "details": "Paub meej",
+      "empty": "Tsis muaj dab tsi teem caij lossis xa tuaj.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Tseem tos",
+      "PROCESSING": "Kev ua haujlwm",
+      "SENT": "Xa",
+      "FAILED": "Ua tsis tiav",
+      "SKIPPED": "Hla",
+      "CANCELLED": "Tso tseg"
+    },
+    "deliveryStatus": {
+      "SENT": "xa",
+      "FAILED": "ua tsis tiav",
+      "SKIPPED": "hla"
+    },
+    "deliveryChannel": {
+      "IN_APP": "hauv-app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Cov neeg siv tau raug xaiv",
+      "owner": "Tus tswv",
+      "updatedBy": "Hloov kho los ntawm",
+      "role": "Lub luag haujlwm: {{name}}"
+    },
+    "channels": {
+      "inApp": "Hauv app",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Rho tawm ceeb toom \" {{name}} \"? Cov lus ceeb toom tseem tos los ntawm nws raug muab tso tseg.",
+    "testPrompt": "Xa ib qho kev ntsuam xyuas ntawm qhov kev ceeb toom no rau koj tus kheej (hauv-app) siv tus lej ID twg?",
+    "testSent": "Xa rau koj lub tswb: {{title}} {{message}}",
+    "headersInvalid": "Webhook headers yuav tsum siv tau JSON , xws li {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Kho kom raug ceeb toom",
+    "newTitle": "Kev Ceeb Toom Tshiab",
+    "name": "Lub npe",
+    "namePlaceholder": "Piv txwv li ceeb toom rau qhov chaw mus ntsib",
+    "whenStatus": "Thaum tus thawj coj txoj cai yog",
+    "subStatus": "Sub-status",
+    "send": "Xa (seem)",
+    "custom": "Kev cai...",
+    "modeBefore": "ua ntej lub sijhawm teem tseg",
+    "modeAfter": "tom qab lub sijhawm teem tseg",
+    "noScheduleWarning": "Cov xwm txheej no tsis nug txog hnub & sijhawm, yog li kev ceeb toom \"ua ntej / tom / tom qab lub sijhawm\" yuav tsis tua hluav taws.",
+    "noScheduleFix": "Qhib <strong>Nug rau hnub & sijhawm</strong> rau nws raws li Statuses & Sub-Statuses, lossis xa tam sim ntawd.",
+    "sendTo": "Xa mus rau (txhua qhov sib xyaw)",
+    "recipientAssigned": "Tus neeg siv khoom (tus tswv tus thawj coj)",
+    "recipientOwner": "Tus tswv / admin",
+    "recipientUpdatedBy": "Tus neeg uas kho cov xwm txheej",
+    "everyoneWithRole": "Txhua tus nrog lub luag haujlwm",
+    "specificUsers": "Cov neeg siv tshwj xeeb (active)",
+    "inactiveNever": "Cov neeg siv tsis ua haujlwm yeej tsis tau txais kev ceeb toom, txawm tias xaiv.",
+    "deliverVia": "Xa ntawm",
+    "channelInApp": "Hauv app (tswb)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS tus muab kev pabcuam)",
+    "emailHint": "Email mus rau txhua tus neeg tau txais email chaw nyob thiab xav tau SMTP teeb tsa ntawm lub server (backend/.env); kom txog rau thaum ces email xa yog nkag raws li hla.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Headers ( JSON )",
+    "content": "Cov ntsiab lus ceeb toom",
+    "title": "Title",
+    "message": "Xov xwm",
+    "insertIntoTitle": "Nkag mus rau hauv lub npe",
+    "insertIntoMessage": "Ntxig rau hauv Message",
+    "anyLeadField": "Txhua qhov chaw ua haujlwm ib yam nkaus, xws li <code1>{{example1}}</code1> lossis <code2>{{example2}}</code2> .",
+    "preview": "Saib ua ntej (sample lead)",
+    "enabled": "Pab tau",
+    "saveRule": "Txuag ceeb toom",
+    "createRule": "Tsim Kev Ceeb Toom",
+    "variables": {
+      "customerName": "Lead npe",
+      "customerMobile": "Lead mobile",
+      "customerEmail": "Coj email",
+      "registrationId": "Lead ID",
+      "status": "xwm txheej",
+      "subStatus": "Sub-status",
+      "scheduleAt": "Teem sijhawm hnub & sijhawm",
+      "assignedTo": "Cov neeg siv tau raug xaiv",
+      "updatedBy": "Hloov kho los ntawm",
+      "recipient": "Tus neeg txais lub npe",
+      "project": "Qhov project",
+      "notes": "Nco tseg kawg",
+      "partner": "Tus khub npe"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Tam sim ntawd thaum cov xwm txheej tau teeb tsa",
+      "AT": "Thaum lub sijhawm teem tseg",
+      "A1D": "1 hnub tom qab lub sijhawm teem tseg (kev soj ntsuam xyuas)"
+    },
+    "immediately": "Tam sim ntawd",
+    "atScheduled": "Thaum lub sijhawm teem tseg",
+    "before": {
+      "MINUTES_one": "{{count}} feeb ua ntej lub sijhawm teem tseg",
+      "MINUTES_other": "{{count}} feeb ua ntej lub sijhawm teem tseg",
+      "HOURS_one": "{{count}} teev ua ntej lub sijhawm teem tseg",
+      "HOURS_other": "{{count}} teev ua ntej lub sijhawm teem tseg",
+      "DAYS_one": "{{count}} hnub ua ntej lub sijhawm teem tseg",
+      "DAYS_other": "{{count}} hnub ua ntej lub sijhawm teem tseg",
+      "WEEKS_one": "{{count}} lub lim tiam ua ntej lub sijhawm teem tseg",
+      "WEEKS_other": "{{count}} lub lis piam ua ntej lub sijhawm teem tseg",
+      "MONTHS_one": "{{count}} hli ua ntej lub sijhawm teem tseg",
+      "MONTHS_other": "{{count}} lub hlis ua ntej lub sijhawm teem tseg",
+      "YEARS_one": "{{count}} xyoo ua ntej lub sijhawm teem tseg",
+      "YEARS_other": "{{count}} xyoo ua ntej lub sijhawm teem tseg"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} feeb tom qab lub sijhawm teem tseg",
+      "MINUTES_other": "{{count}} feeb tom qab lub sijhawm teem tseg",
+      "HOURS_one": "{{count}} teev tom qab lub sijhawm teem tseg",
+      "HOURS_other": "{{count}} teev tom qab lub sijhawm teem tseg",
+      "DAYS_one": "{{count}} hnub tom qab lub sijhawm teem tseg",
+      "DAYS_other": "{{count}} hnub tom qab lub sijhawm teem tseg",
+      "WEEKS_one": "{{count}} lub lis piam tom qab lub sijhawm teem tseg",
+      "WEEKS_other": "{{count}} lub lis piam tom qab lub sijhawm teem tseg",
+      "MONTHS_one": "{{count}} hli tom qab lub sijhawm teem tseg",
+      "MONTHS_other": "{{count}} lub hlis tom qab lub sijhawm teem tseg",
+      "YEARS_one": "{{count}} xyoo tom qab lub sijhawm teem tseg",
+      "YEARS_other": "{{count}} xyoo tom qab lub sijhawm teem tseg"
+    },
+    "units": {
+      "MINUTES_one": "feeb",
+      "MINUTES_other": "feeb",
+      "HOURS_one": "teev",
+      "HOURS_other": "teev",
+      "DAYS_one": "hnub",
+      "DAYS_other": "hnub",
+      "WEEKS_one": "lub lim tiam",
+      "WEEKS_other": "lub lis piam",
+      "MONTHS_one": "hli",
+      "MONTHS_other": "hli",
+      "YEARS_one": "xyoo",
+      "YEARS_other": "xyoo"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Builder Portal",
+    "referrals": "Henvisninger",
+    "builderLogin": "Builder login",
+    "partnerLogin": "Kanalpartner login"
+  },
+  "login": {
+    "title": "Bygherre logge ind",
+    "hint": "Builder-konti oprettes af Leadrat . Spørg din administrator, hvis du ikke har en."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Venter på din beslutning",
+    "ACCEPTED": "Accepteret",
+    "REJECTED": "Afvist"
+  },
+  "list": {
+    "title": "Henvisninger",
+    "allProjects": "Alle projekter",
+    "allStatuses": "Alle statusser",
+    "count_one": "{{count}} henvisning",
+    "count_other": "{{count}} henvisninger",
+    "columns": {
+      "referral": "Henvisning",
+      "customer": "Kunde",
+      "project": "Projekt",
+      "sourcePartner": "Kildepartner",
+      "status": "Status",
+      "booking": "Booking",
+      "registered": "Registreret"
+    },
+    "booked": "Booket",
+    "empty": "Ingen henvisninger endnu."
+  },
+  "detail": {
+    "customer": "Kunde",
+    "sourcePartner": "Kildepartner",
+    "attributionNote": "(tilskrivning - kan ikke ændres)",
+    "leadStatus": "Lead Status",
+    "protectedUntil": "Beskyttet indtil",
+    "referral": "Henvisning",
+    "reason": "Årsag: {{reason}}",
+    "booking": "Booking",
+    "bookedOwner": "Booket - du er den operative ejer",
+    "notBooked": "Ikke booket",
+    "sharedAfterBooking": "Deles efter booking",
+    "accept": "Accepter henvisning",
+    "confirmBooking": "Bekræft reservation",
+    "reject": "Afvis henvisning",
+    "rejectReasonLabel": "Årsag til afvisning (vist til partneren) *",
+    "rejectConfirm": "Afvise",
+    "confirmBookingPrompt": "Bekræfte reservationen? Operationelt ejerskab flytter til dig, og partneren bliver berettiget til provision.",
+    "notice": {
+      "booked": "Booking bekræftet.",
+      "accepted": "Henvisning accepteret.",
+      "rejected": "Henvisning afvist."
+    },
+    "backToReferrals": "Tilbage til henvisninger"
+  },
+  "history": {
+    "title": "Historie",
+    "actor": {
+      "system": "System",
+      "partner": "Kanalpartner",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Partnerregistrering modtaget",
+      "DUPLICATE_CHECK_COMPLETED": "Dubletkontrol gennemført - ingen aktiv dublet fundet",
+      "REGISTRATION_ACCEPTED": "Tilmelding accepteret",
+      "PROTECTION_GRANTED_one": "{{count}} dages beskyttelse ydet",
+      "PROTECTION_GRANTED_other": "{{count}} dages beskyttelse ydet",
+      "STAGE_UPDATED": "Status opdateret til {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Opdateret {{count}} felt",
+      "LEAD_DETAILS_UPDATED_other": "Opdaterede {{count}} felter",
+      "LEAD_ASSIGNED": "Tildelt til {{name}}",
+      "LEAD_UNASSIGNED": "Ikke tildelt",
+      "REFERRAL_ACCEPTED": "Builder accepterede henvisningen",
+      "REFERRAL_REJECTED": "Builder afviste henvisningen. Årsag: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Dublet registreringsforsøg af {{partner}} blev afvist",
+      "BOOKING_COMPLETED": "Booking gennemført",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Driftsmæssigt ejerskab overdraget til Bygmester",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partnertilskrivning bevares",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kommissionsstøtteberettigelse oprettet",
+      "HANDOVER_COMPLETED": "Overdragelse gennemført",
+      "ADMIN_PROTECTION_RELEASED": "Admin frigav dubletbeskyttelse tidligt. Årsag: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Administrator omfordelte registreringen fra {{from}} til {{to}} . Årsag: {{reason}}"
+    }
+  }
+}

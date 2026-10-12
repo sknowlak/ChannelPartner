@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "बिल्डर पोर्टल",
+    "referrals": "रेफरल देना",
+    "builderLogin": "बिल्डर लॉगिन करो",
+    "partnerLogin": "चैनल पार्टनर लॉगिन करो"
+  },
+  "login": {
+    "title": "बिल्डर साइन इन करो",
+    "hint": "बिल्डर खाते Leadrat द्वारा बनाये जंदे न . अपने प्रशासक कोला पुच्छो जे तुंदे कोल कोई नेईं ऐ।"
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "तुहाडे फैसले दा इंतजार",
+    "ACCEPTED": "स्वीकार कर दित्ता",
+    "REJECTED": "खारिज कर दित्ता"
+  },
+  "list": {
+    "title": "रेफरल देना",
+    "allProjects": "सारे प्रोजेक्ट",
+    "allStatuses": "सारे स्टेटस",
+    "count_one": "{{count}} रेफरल करना",
+    "count_other": "{{count}} रेफरल करदे न",
+    "columns": {
+      "referral": "रेफरल करना",
+      "customer": "गाह्क",
+      "project": "प्रोजैक्ट",
+      "sourcePartner": "स्रोत साथी",
+      "status": "रुतबा",
+      "booking": "बुकिंग करना",
+      "registered": "पंजीकृत कीता गेआ"
+    },
+    "booked": "बुक हो गया",
+    "empty": "अजे तक कोई रेफरल नहीं।"
+  },
+  "detail": {
+    "customer": "गाह्क",
+    "sourcePartner": "स्रोत साथी",
+    "attributionNote": "(एट्रिब्यूशन - बदलया नहीं जा सकदा)",
+    "leadStatus": "लीड स्टेटस",
+    "protectedUntil": "संरक्षित जब तक",
+    "referral": "रेफरल करना",
+    "reason": "कारण: {{reason}}",
+    "booking": "बुकिंग करना",
+    "bookedOwner": "बुक कीता गेदा - तुस ऑपरेशनल मालिक ओ",
+    "notBooked": "बुकिंग नहीं कीती",
+    "sharedAfterBooking": "बुकिंग दे बाद शेयर कीता",
+    "accept": "रेफरल स्वीकार करो",
+    "confirmBooking": "बुकिंग दी पुष्टि करो",
+    "reject": "रेफरल गी खारिज करो",
+    "rejectReasonLabel": "खारिज करने दा कारण (साथी गी दस्सेआ गेआ) *",
+    "rejectConfirm": "रद्द करना",
+    "confirmBookingPrompt": "बुकिंग दी पुष्टि करो? परिचालन स्वामित्व तुंदे कोल चली जंदा ऐ ते साझेदार कमीशन लेई पात्र होई जंदा ऐ।",
+    "notice": {
+      "booked": "बुकिंग दी पुष्टि होई।",
+      "accepted": "रेफरल स्वीकार कीता गेआ।",
+      "rejected": "रेफरल खारिज कर दित्ता गेआ।"
+    },
+    "backToReferrals": "वापस रेफरल पर"
+  },
+  "history": {
+    "title": "इतेहास",
+    "actor": {
+      "system": "करीना",
+      "partner": "चैनल पार्टनर",
+      "admin": "Leadrat एडमिन"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "पार्टनर रजिस्ट्रेशन मिल गया",
+      "DUPLICATE_CHECK_COMPLETED": "डुप्लिकेट जांच पूरी होई गेई - कोई सक्रिय डुप्लिकेट नेईं मिली",
+      "REGISTRATION_ACCEPTED": "पंजीकरण स्वीकार कीता गेआ",
+      "PROTECTION_GRANTED_one": "{{count}} -दिन दी सुरक्षा दित्ती गेई",
+      "PROTECTION_GRANTED_other": "{{count}} -दिन दी सुरक्षा दित्ती गेई",
+      "STAGE_UPDATED": "स्थिति गी {{stage}} च अपडेट कीता गेआ।",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} फील्ड गी अपडेट कीता गेआ",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} फील्डें गी अपडेट कीता गेआ",
+      "LEAD_ASSIGNED": "{{name}} गी असाइन कीता गेदा ऐ।",
+      "LEAD_UNASSIGNED": "अनसाइन कीता गेदा",
+      "REFERRAL_ACCEPTED": "बिल्डर ने रेफरल स्वीकार कर लिया",
+      "REFERRAL_REJECTED": "बिल्डर ने रेफरल गी खारिज करी दित्ता। कारण: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} द्वारा डुप्लिकेट पंजीकरण दी कोशश खारिज करी दित्ती गेई",
+      "BOOKING_COMPLETED": "बुकिंग पूरी होई",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "परिचालन स्वामित्व बिल्डर गी हस्तांतरित कीता गेआ",
+      "PARTNER_ATTRIBUTION_PRESERVED": "साथी एट्रिब्यूशन संरक्षित कीता गेआ",
+      "COMMISSION_ELIGIBILITY_CREATED": "आयोग दी पात्रता पैदा कीती",
+      "HANDOVER_COMPLETED": "हैंडओवर पूरा हो गया",
+      "ADMIN_PROTECTION_RELEASED": "एडमिन ने डुप्लीकेट प्रोटेक्शन जल्दी जारी कर दित्ता। कारण: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "एडमिन ने रजिस्ट्रेशन गी {{from}} थमां {{to}} च दुबारा असाइन कीता। कारण: {{reason}}"
+    }
+  }
+}

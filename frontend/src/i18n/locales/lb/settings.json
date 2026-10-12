@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Astellungen",
+    "noPermission": "Dir hutt keng Erlaabnis fir Astellungen ze managen."
+  },
+  "categories": {
+    "lead": "Féierung",
+    "user": "Benotzer",
+    "integrations": "Integratiounen"
+  },
+  "leadTabs": {
+    "fields": "Felder",
+    "statuses": "Statusen & Ënner-Statusen",
+    "notifications": "Notifikatiounen & Scheduler"
+  },
+  "fields": {
+    "leadIntro": "Konfiguréiert de Lead Capture Form: aktivéiert / deaktivéiert Felder, markéiert se erfuerderlech oder füügt Är eege personaliséiert Felder un.",
+    "userIntro": "Konfiguréiert d'Add/Edit Team Member Form: aktivéiert / deaktivéiert Felder, markéiert se erfuerderlech oder füügt Är eege personaliséiert Felder derbäi.",
+    "addCustomField": "+ Benotzerdefinéiert Feld derbäi",
+    "fieldLabel": "Feld Label",
+    "group": "Grupp",
+    "groupPlaceholderLead": "zB Ufro Info",
+    "groupPlaceholderUser": "zB Zousätzlech Detailer",
+    "dataType": "Daten Typ",
+    "options": "Optiounen (komma getrennt)",
+    "requiredLead": "Obligatoresch - Partner an Ärem Team mussen dëst ausfëllen fir e Lead anzeschreiwen",
+    "requiredUser": "Obligatoresch - muss ausgefëllt ginn wann Dir en Teammember bäidréit",
+    "creating": "Erstellt ...",
+    "createField": "Feld erstellen",
+    "columns": {
+      "field": "Feld",
+      "group": "Grupp",
+      "type": "Typ",
+      "required": "Néideg",
+      "enabled": "Aktivéiert",
+      "kind": "Aart"
+    },
+    "kind": {
+      "custom": "Benotzerdefinéiert",
+      "core": "Kär (gespaart)",
+      "standard": "Standard"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Text",
+    "TEXTAREA": "Laangen Text",
+    "NUMBER": "Zuel",
+    "CURRENCY": "Währung",
+    "DATE": "Datum",
+    "SELECT": "Dropdown",
+    "LIST": "Lëscht"
+  },
+  "picker": {
+    "searchPlaceholder": "Sich Lead Felder ...",
+    "summary": "{{shown}} gewisen · {{mandatory}} obligatoresch",
+    "mandatory": "Obligatoresch",
+    "noMatch": "Nee Felder Match."
+  },
+  "statuses": {
+    "intro": "Är Leadstatusen an Ënner-Statusen - wat jidderee freet (en Datum & Zäit, Leadfelder) wann iergendeen e Lead dorun aktualiséiert.",
+    "add": "+ Status addéieren",
+    "columns": {
+      "order": "Uerdnung",
+      "status": "Status",
+      "subStatuses": "Ënner-Statusen",
+      "asksFor": "Freet no",
+      "active": "Aktiv"
+    },
+    "moveUp": "Beweegt erop",
+    "moveDown": "Beweegt erof",
+    "defaultBadge": "Standard fir nei Leads",
+    "bookingBadge": "Reservatioun Status",
+    "asksForLabel": "Freet no {{label}}",
+    "asksForDateTime": "Frot fir Datum & Zäit",
+    "none": "Keen",
+    "dateTime": "Datum & Zäit",
+    "scheduledOn": "op {{names}}",
+    "fieldsSummary_one": "{{count}} Feld ( {{mandatory}} obligatoresch)",
+    "fieldsSummary_other": "{{count}} Felder ( {{mandatory}} obligatoresch)",
+    "deleteConfirm": "Status \" {{name}} \" läschen? Dëst kann net réckgängeg gemaach ginn.",
+    "editTitle": "Status änneren - {{name}}",
+    "newTitle": "Neie Status",
+    "name": "Status Numm",
+    "colour": "Faarf",
+    "active": "Aktiv",
+    "isDefault": "Standardstatus fir nei Leads",
+    "isBooking": "Reservéierungsstatus (Set duerch Komplett Buchung)",
+    "whenMoved": "Wann e Virsprong op dëse Status geplënnert ass",
+    "askSchedule": "Ufro fir en Datum an Zäit (Scheduler)",
+    "scheduleLabelPlaceholder": "Label, zB Besuch bei",
+    "fieldsToShow": "Lead Felder fir um Update Form ze weisen",
+    "subStatusesTitle": "Ënner-Statusen",
+    "subStatusesHint": "All Ënner-Status kann fir säin eegenen Datum & Zäit froen an seng eege Felder derbäi - uewen op de Status Felder uewen gewisen.",
+    "subStatusName": "Ënner-Status Numm",
+    "subFields": "Felder ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Datum & Zäit Label, zB Rufft zréck um",
+    "addSubStatus": "+ Sub-Status addéieren",
+    "saveStatus": "Späicheren Status",
+    "createStatus": "Schafen Status"
+  },
+  "notifications": {
+    "intro": "Notéiert déi richteg Leit wann e Lead e Status erreecht - direkt, oder eng festgeluegt Zäit virum / nom Datum & Zäit geplangt drop.",
+    "add": "+ Notifikatioun addéieren",
+    "columns": {
+      "notification": "Notifikatioun",
+      "whenStatusIs": "Wann de Status ass",
+      "sends": "Schéckt",
+      "to": "Zu",
+      "via": "Via",
+      "enabled": "Aktivéiert"
+    },
+    "anyStatus": "All Status",
+    "anySubStatus": "All Ënner-Status",
+    "inactiveOption": "{{name}} (inaktiv)",
+    "emptyRules": "Nach keng Notifikatiounen - füügt eng fir Äert Team ze alarméieren wann e Lead e Status erreecht.",
+    "jobs": {
+      "title": "Geplangt & Geschéckt",
+      "firesAt": "Feieren op",
+      "notification": "Notifikatioun",
+      "lead": "Féierung",
+      "status": "Status",
+      "details": "Detailer",
+      "empty": "Näischt geplangt oder geschéckt nach.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Erwaardung",
+      "PROCESSING": "Veraarbechtung",
+      "SENT": "Geschéckt",
+      "FAILED": "Ausgefall",
+      "SKIPPED": "Iwwersprongen",
+      "CANCELLED": "Annuléiert"
+    },
+    "deliveryStatus": {
+      "SENT": "geschéckt",
+      "FAILED": "gescheitert",
+      "SKIPPED": "iwwersprongen"
+    },
+    "deliveryChannel": {
+      "IN_APP": "an-App",
+      "EMAIL": "Email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Zougewisen Benotzer",
+      "owner": "Besëtzer",
+      "updatedBy": "Aktualiséiert vum",
+      "role": "Roll: {{name}}"
+    },
+    "channels": {
+      "inApp": "An-App",
+      "email": "E-Mail",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Notifikatioun \" {{name}} \" läschen? Erwaardung Erënnerungen aus et ginn annuléiert.",
+    "testPrompt": "Schéckt en Test vun dëser Notifikatioun un Iech selwer (an-App) mat wéi enger Lead ID ?",
+    "testSent": "Op Är Klack geschéckt: {{title}} {{message}}",
+    "headersInvalid": "Webhook Header mussen valabel JSON sinn, zB {\"Autorisatioun\": \"Bearer xyz\"}",
+    "editTitle": "Notifikatioun änneren",
+    "newTitle": "Nei Notifikatioun",
+    "name": "Numm",
+    "namePlaceholder": "zB Site Visit Erënnerung",
+    "whenStatus": "Wann de Status vun engem Lead ass",
+    "subStatus": "Ënner-Status",
+    "send": "Schécken (Scheduler)",
+    "custom": "Benotzerdefinéiert ...",
+    "modeBefore": "virun geplangten Zäit",
+    "modeAfter": "no geplangten Zäit",
+    "noScheduleWarning": "Dëse Status freet net fir en Datum an Zäit, sou datt eng \"virun / um / no geplangten Zäit\" Notifikatioun ni géif brennen.",
+    "noScheduleFix": "Aktivéiert <strong>Ufro fir en Datum an Zäit</strong> dofir ënner Statusen & Ënner-Statusen, oder schéckt direkt.",
+    "sendTo": "Schéckt op (all Kombinatioun)",
+    "recipientAssigned": "Assignéiert Benotzer (Lead Owner)",
+    "recipientOwner": "Kont Besëtzer / Admin",
+    "recipientUpdatedBy": "Persoun déi de Status aktualiséiert",
+    "everyoneWithRole": "Jiddereen mat Roll",
+    "specificUsers": "Spezifesch Benotzer (aktiv)",
+    "inactiveNever": "Inaktiv Benotzer kréien ni Notifikatiounen, och wa se gewielt ginn.",
+    "deliverVia": "Liwweren iwwer",
+    "channelInApp": "In-App (Klack)",
+    "channelEmail": "E-Mail",
+    "channelWebhook": "Webhook ( WhatsApp / SMS Provider)",
+    "emailHint": "E-Mail geet un d'E-Mailadress vun all Empfänger a brauch SMTP op de Server ageriicht (Backend/.env); bis dann E-Mail Sendungen als iwwersprangen protokolléiert ginn.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Header ( JSON )",
+    "content": "Notifikatioun Inhalt",
+    "title": "Titel",
+    "message": "Message",
+    "insertIntoTitle": "Gitt an den Titel",
+    "insertIntoMessage": "Gitt an de Message",
+    "anyLeadField": "All Leadfeld funktionnéiert och, zB <code1>{{example1}}</code1> oder <code2>{{example2}}</code2> .",
+    "preview": "Virschau (Probe Lead)",
+    "enabled": "Aktivéiert",
+    "saveRule": "Notifikatioun späicheren",
+    "createRule": "Erstellt Notifikatioun",
+    "variables": {
+      "customerName": "Lead Numm",
+      "customerMobile": "Lead Handy",
+      "customerEmail": "Lead Email",
+      "registrationId": "Lead ID",
+      "status": "Status",
+      "subStatus": "Ënner-Status",
+      "scheduleAt": "Geplangten Datum & Zäit",
+      "assignedTo": "Zougewisen Benotzer",
+      "updatedBy": "Aktualiséiert vum",
+      "recipient": "Numm vum Empfänger",
+      "project": "Projet",
+      "notes": "Läscht Notiz",
+      "partner": "Partner Numm"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Direkt wann de Status agestallt ass",
+      "AT": "Zu der geplangter Zäit",
+      "A1D": "1 Dag no geplangten Zäit (Suivicheck)"
+    },
+    "immediately": "Direkt",
+    "atScheduled": "Zu geplangten Zäit",
+    "before": {
+      "MINUTES_one": "{{count}} Minutt virum geplangten Zäit",
+      "MINUTES_other": "{{count}} Minutte virum geplangten Zäit",
+      "HOURS_one": "{{count}} Stonn virum geplangten Zäit",
+      "HOURS_other": "{{count}} Stonnen virum geplangten Zäit",
+      "DAYS_one": "{{count}} Dag virum geplangten Zäit",
+      "DAYS_other": "{{count}} Deeg virum geplangten Zäit",
+      "WEEKS_one": "{{count}} Woch virum geplangten Zäit",
+      "WEEKS_other": "{{count}} Woche virum geplangten Zäit",
+      "MONTHS_one": "{{count}} Mount virum geplangten Zäit",
+      "MONTHS_other": "{{count}} Méint virum geplangten Zäit",
+      "YEARS_one": "{{count}} Joer virum geplangten Zäit",
+      "YEARS_other": "{{count}} Joer virum geplangten Zäit"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} Minutt no der geplangter Zäit",
+      "MINUTES_other": "{{count}} Minutten no der geplangter Zäit",
+      "HOURS_one": "{{count}} Stonn no der geplangter Zäit",
+      "HOURS_other": "{{count}} Stonnen no der geplangter Zäit",
+      "DAYS_one": "{{count}} Dag no der geplangter Zäit",
+      "DAYS_other": "{{count}} Deeg no der geplangter Zäit",
+      "WEEKS_one": "{{count}} Woch no der geplangter Zäit",
+      "WEEKS_other": "{{count}} Wochen no der geplangter Zäit",
+      "MONTHS_one": "{{count}} Mount no der geplangter Zäit",
+      "MONTHS_other": "{{count}} Méint no der geplangter Zäit",
+      "YEARS_one": "{{count}} Joer no der geplangter Zäit",
+      "YEARS_other": "{{count}} Joer no der geplangter Zäit"
+    },
+    "units": {
+      "MINUTES_one": "Minutt",
+      "MINUTES_other": "Minutten",
+      "HOURS_one": "Stonn",
+      "HOURS_other": "Stonnen",
+      "DAYS_one": "Dag",
+      "DAYS_other": "Deeg",
+      "WEEKS_one": "Woch",
+      "WEEKS_other": "Wochen",
+      "MONTHS_one": "Mount",
+      "MONTHS_other": "Méint",
+      "YEARS_one": "Joer",
+      "YEARS_other": "Joer"
+    }
+  }
+}

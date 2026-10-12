@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Baetapele ba ka",
+    "signedInAs": "O kene joalo ka {{name}} ( {{partnerId}} ) · linako tse hlahang {{timezone}}",
+    "addLead": "+ Eketsa Moetapele",
+    "tabs": {
+      "all": "Kaofela ( {{count}} )",
+      "pending": "E emetse ( {{count}} )",
+      "booked": "E khethiloe ( {{count}} )"
+    },
+    "searchPlaceholder": "Batla ka lebitso, mohala, kapa ID ea ngoliso ...",
+    "manageColumns": "Laola Likholomo",
+    "rowsPerPage": "Mela ka leqephe",
+    "registrationId": "Ngoliso ID",
+    "emptyState": "Ha ho na moeta-pele - ngolisa ea hau ea pele.",
+    "noMatch": "Ha ho baetapele ba tšoanang le lihloela tsena.",
+    "showing": "E hlahisa {{from}} - {{to}} ea {{total}} tse kentsoeng",
+    "actions": {
+      "preview": "Sheba le ho ntlafatsa kapele",
+      "history": "Histori",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Letsa"
+    },
+    "pagination": {
+      "first": "Leqephe la pele",
+      "previous": "Leqephe le fetileng",
+      "next": "Leqephe le latelang",
+      "last": "Leqephe la ho qetela"
+    }
+  },
+  "columns": {
+    "status": "Boemo",
+    "assignTo": "Abela Ho",
+    "booked": "E ngolisitsoe",
+    "protectionUntil": "Tshireletso Ho fihlela"
+  },
+  "booking": {
+    "booked": "E ngolisitsoe",
+    "pending": "E emetse"
+  },
+  "assign": {
+    "unassigned": "Ha ea ajoa",
+    "owner": "{{name}} (Mong'a)",
+    "inactive": "{{name}} (ha e sebetse)",
+    "unknownUser": "Mosebelisi ea sa tsejoeng",
+    "assignedTo": "E abetsoe {{name}}"
+  },
+  "form": {
+    "addTitle": "Eketsa Moetapele",
+    "editTitle": "Fetola Ketapele",
+    "noPermissionAdd": "Ha u na tumello ea ho ngodisa baetapele.",
+    "noPermissionEdit": "Ha u na tumello ea ho fetola litebele.",
+    "selectPlaceholder": "Khetha...",
+    "commaSeparated": "Phegelwana e arohane",
+    "phonePlaceholder": "Nomoro ea mohala",
+    "countryCode": "Khoutu ea naha"
+  },
+  "project": {
+    "none": "Ha ho na projeke (ha e so boleloe)",
+    "notInList": "{{project}} (ha e lenaneng la merero)"
+  },
+  "journey": {
+    "customer": "Moreki",
+    "currentOwner": "Mong'a Hona Joale",
+    "protectionExpiry": "Phello ea Tšireletso",
+    "leadStatus": "Boemo ba ho etella pele",
+    "scheduled": "E hlophisitsoeng",
+    "assignedTo": "E abetsoe Ho",
+    "referral": "Phetisetso",
+    "builderReason": "Lebaka la sehahi: {{reason}}",
+    "bookedHint": "E ngolisitsoe ke sehahi - beng ba ts'ebetso ba falletse ho sehahi; semelo sa hau le tokelo ea khomishene li bolokiloe.",
+    "notBookedHint": "Lipehelo li netefatsoa ke sehahi hang ha se amohela ho fetisetsoa.",
+    "quickUpdate": "Phetoho e potlakileng",
+    "leadDetails": "Keta Lintlha",
+    "progressHistory": "Histori ea Tsoelo-pele",
+    "timesIn": "(linako tsa {{timezone}} )",
+    "backToMyLeads": "Khutlela ho Meeta-pele ea Ka",
+    "editLead": "Fetola Ketapele"
+  },
+  "referral": {
+    "NOT_REFERRED": "Ha e boleletsoe (ha ho projeke)",
+    "PENDING_BUILDER": "E emetse sehahi",
+    "ACCEPTED": "E amohetsoe ke sehahi",
+    "REJECTED": "E hanoeng ke sehahi"
+  },
+  "preview": {
+    "ariaLabel": "Ketapele pele",
+    "title": "Ketapele Preview",
+    "source": "Mohloli",
+    "location": "Sebaka",
+    "scheduled": "E hlophisitsoeng",
+    "registered": "Ngodisitsoe",
+    "latestNote": "Tsebiso ea morao-rao",
+    "quickUpdate": "Phetoho e potlakileng",
+    "fullDetails": "Lintlha Tse Feletseng",
+    "editLead": "Fetola Ketapele",
+    "history": "Histori"
+  },
+  "quick": {
+    "assignedTo": "E abetsoe Ho",
+    "status": "Boemo",
+    "subStatus": "Sub-State",
+    "selectSubStatus": "Khetha boemo bo tlase...",
+    "none": "Ha ho letho",
+    "scheduledAt": "E hlophisitsoeng ho",
+    "localTime": "nako ea lehae",
+    "note": "Hlokomela",
+    "notePlaceholder": "Ho etsahetse'ng ka mohala / ketelo ee? (ka boikhethelo)",
+    "updateStatus": "Boemo ba Nchafatso",
+    "statusUpdated": "Boemo bo ntlafalitsoe",
+    "bookedLocked": "Ketapele ena e bhukisitsoe - boemo ba eona bo ke ke ba hlola bo fetoloa.",
+    "viewOnly": "O ka sheba moetapele ona, empa karolo ea hau ha e khone ho e ntlafatsa."
+  },
+  "history": {
+    "title": "Nalane - {{registrationId}}",
+    "tabs": {
+      "all": "Tsohle",
+      "status": "Boemo",
+      "assignment": "Mosebetsi",
+      "notes": "Lintlha"
+    },
+    "doneBy": "E entsoe ke {{actor}}",
+    "system": "Tsamaiso",
+    "platforms": {
+      "System": "Tsamaiso",
+      "External": "Kantle",
+      "Web": "Web",
+      "Mobile": "Mobile"
+    },
+    "added": "eketsoe",
+    "updated": "nchafalitsoe",
+    "empty": "(ha ho letho)",
+    "noHistory": "Ha ho na nalane sehlopheng sena hajoale.",
+    "fieldLabels": {
+      "stage": "Boemo",
+      "subStatus": "Sub-State",
+      "scheduledAt": "Kemiso",
+      "notes": "Lintlha",
+      "assignedTo": "E abetsoe Ho"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Ngoliso ea balekane e amohetse",
+      "DUPLICATE_CHECK_COMPLETED": "Ho phethiloe ho hlahlobisisa - ha ho se kopitsoang se sebetsang",
+      "REGISTRATION_ACCEPTED": "Ngoliso e amohetsoe",
+      "PROTECTION_GRANTED_one": "{{count}} -tšireletseho ea letsatsi e fanoe",
+      "PROTECTION_GRANTED_other": "{{count}} -tšireletseho ea letsatsi e fanoe",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partnerId}} e qheletsoeng ka thoko ho leka ho ingolisa",
+      "LEAD_DETAILS_UPDATED_one": "Sebaka sa {{count}} se ntlafalitsoe",
+      "LEAD_DETAILS_UPDATED_other": "Libaka tse {{count}} tse ntlafalitsoeng",
+      "STAGE_UPDATED": "Boemo bo ntlafalitsoe ho {{status}}",
+      "LEAD_ASSIGNED": "E abetsoe {{name}}",
+      "LEAD_UNASSIGNED": "Ha ea ajoa",
+      "BOOKING_COMPLETED": "Peeletso e phethiloe",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Botho ba ts'ebetso bo fetiselitsoe ho Sehahi",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Botumo ba balekane bo bolokiloe",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komisi ea ho tšoaneleha e entsoe",
+      "HANDOVER_COMPLETED": "Ho fana ho phethiloe",
+      "REFERRAL_ACCEPTED": "Sehahi se amohetse phetisetso",
+      "REFERRAL_REJECTED": "Sehahi se hanne phetisetso. Lebaka: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin o lokolotse ts'ireletso ea bobeli pele. Lebaka: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Mookameli o fane ka boingoliso bocha ho tloha {{from}} ho ea ho {{to}} . Lebaka: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Laola Likholomo",
+    "hint": "Hula ho hlophisa bocha · hlahloba ho bontša",
+    "showAll": "Bontša Tsohle",
+    "resetDefault": "Khutlisa ho Default"
+  },
+  "filters": {
+    "title": "Lisefe",
+    "allProjects": "Merero eohle",
+    "any": "Leha e le efe",
+    "noFields": "Ha ho likarolo tse ling tse sefang tse lumelletsoeng (Litlhophiso > Ketapele).",
+    "clearAll": "Hlakola Tsohle"
+  },
+  "phone": {
+    "MISSING": "Nomoro ea mohala ea hlokahala.",
+    "INVALID": "Ka kopo, kenya nomoro ea mohala e nepahetseng.",
+    "TOO_SHORT": "Nomoro ea mohala e khuts'oane haholo.",
+    "TOO_LONG": "Nomoro ea mohala e telele haholo.",
+    "INVALID_FOR_COUNTRY": "Nomoro ena ea mohala ha e sebetse {{country}} .",
+    "COUNTRY_MISMATCH": "Ka kopo, khetha khoutu e nepahetseng ea naha.",
+    "NOT_MOBILE": "Ka kopo, kenya nomoro ea mohala, eseng mohala oa mohala."
+  }
+}

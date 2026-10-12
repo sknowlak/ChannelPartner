@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal Pembangun",
+    "referrals": "Rujukan",
+    "builderLogin": "Masuk Pembangun",
+    "partnerLogin": "Masuk Mitra Saluran"
+  },
+  "login": {
+    "title": "Masuk tukang bangunan",
+    "hint": "Akun pembangun dibuat oleh Leadrat . Tanya ke administrator lu kalo lu kagak punya."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Nunggu keputusan lu",
+    "ACCEPTED": "Diterima",
+    "REJECTED": "Ditolak"
+  },
+  "list": {
+    "title": "Rujukan",
+    "allProjects": "Semua proyek",
+    "allStatuses": "Semua status",
+    "count_one": "{{count}} rujukan",
+    "count_other": "{{count}} rujukan",
+    "columns": {
+      "referral": "Rujukan",
+      "customer": "Langganan",
+      "project": "Proyek",
+      "sourcePartner": "Mitra Sumber",
+      "status": "Kondisi",
+      "booking": "Pemesanan",
+      "registered": "Udah terdaftar"
+    },
+    "booked": "Udah dipesen",
+    "empty": "Belom ada rujukan."
+  },
+  "detail": {
+    "customer": "Langganan",
+    "sourcePartner": "Mitra Sumber",
+    "attributionNote": "(atribusi - kagak bisa diubah)",
+    "leadStatus": "Status Pimpinan",
+    "protectedUntil": "Dilindungin Sampe",
+    "referral": "Rujukan",
+    "reason": "Alasan: {{reason}}",
+    "booking": "Pemesanan",
+    "bookedOwner": "Udah dipesen - lu adalah pemilik operasional",
+    "notBooked": "Belom dipesen",
+    "sharedAfterBooking": "Dibagiin abis pesen",
+    "accept": "Terima Rujukan",
+    "confirmBooking": "Konfirmasi Pemesanan",
+    "reject": "Tolak Rujukan",
+    "rejectReasonLabel": "Alasan nolak (ditunjukin ke pasangan) *",
+    "rejectConfirm": "Nolak",
+    "confirmBookingPrompt": "Konfirmasi pemesanannye? Kepemilikan operasional pindah ke lu dan mitra menjadi memenuhi syarat untuk komisi.",
+    "notice": {
+      "booked": "Pemesanan udah dikonfirmasi.",
+      "accepted": "Rujukan diterima.",
+      "rejected": "Rujukan ditolak."
+    },
+    "backToReferrals": "Balik ke Rujukan"
+  },
+  "history": {
+    "title": "Sejarah",
+    "actor": {
+      "system": "Sistem",
+      "partner": "Mitra saluran",
+      "admin": "Admin Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Pendaftaran mitra udah diterima",
+      "DUPLICATE_CHECK_COMPLETED": "Cek duplikat selesai - kagak ada duplikat aktif yang ditemuin",
+      "REGISTRATION_ACCEPTED": "Pendaftaran diterima",
+      "PROTECTION_GRANTED_one": "{{count}} -hari perlindungan diberikan",
+      "PROTECTION_GRANTED_other": "{{count}} -hari perlindungan diberikan",
+      "STAGE_UPDATED": "Status diperbarui ke {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Bidang {{count}} yang diperbarui",
+      "LEAD_DETAILS_UPDATED_other": "Bidang {{count}} yang diperbarui",
+      "LEAD_ASSIGNED": "Ditugasin ke {{name}}",
+      "LEAD_UNASSIGNED": "Kagak ditugasin",
+      "REFERRAL_ACCEPTED": "Tukang bangunan nerima rujukan",
+      "REFERRAL_REJECTED": "Tukang bangunan menolak rujukan. Alasan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Percobaan pendaftaran duplikat oleh {{partner}} ditolak",
+      "BOOKING_COMPLETED": "Pemesanan udah selesai",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Kepemilikan operasional dipindahkan ke Pembangun",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribusi mitra dilestarikan",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisi dibuat",
+      "HANDOVER_COMPLETED": "Penyerahan udah selesai",
+      "ADMIN_PROTECTION_RELEASED": "Admin ngeluarin perlindungan duplikat lebih awal. Alasan: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin ngatur ulang pendaftaran dari {{from}} ke {{to}} . Alasan: {{reason}}"
+    }
+  }
+}

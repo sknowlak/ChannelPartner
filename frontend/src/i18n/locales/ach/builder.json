@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Kabedo pa lugedo",
+    "referrals": "Dano ma ki cwalo gi",
+    "builderLogin": "Donyo pa lagedo",
+    "partnerLogin": "Donyo i dul pa larem"
+  },
+  "login": {
+    "title": "Lagedo odonyo",
+    "hint": "Builder accounts ki yubu ki Leadrat . Peny ladit tic ni ka in pe itye ki acel."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Atye ka kuro tam ni",
+    "ACCEPTED": "Ki jolo",
+    "REJECTED": "ki kwero"
+  },
+  "list": {
+    "title": "Dano ma ki cwalo gi",
+    "allProjects": "Yub weng",
+    "allStatuses": "Kit ma tye kwede weng",
+    "count_one": "{{count}} cwalo",
+    "count_other": "{{count}} dano ma ki cwalo",
+    "columns": {
+      "referral": "Cwalo dano",
+      "customer": "Kactoma",
+      "project": "Purujek",
+      "sourcePartner": "Latic ma oa ki iye",
+      "status": "Kit ma tye kwede",
+      "booking": "Buto",
+      "registered": "Ki coyo"
+    },
+    "booked": "Ki coyo",
+    "empty": "Pe tye ngat mo ma ki cwalo."
+  },
+  "detail": {
+    "customer": "Kactoma",
+    "sourcePartner": "Latic ma oa ki iye",
+    "attributionNote": "(kit ma ki keto kwede - pe kitwero loko ne)",
+    "leadStatus": "Kit ma latela tye kwede",
+    "protectedUntil": "Ki gwoko nio wa",
+    "referral": "Cwalo dano",
+    "reason": "Tyen lok: {{reason}}",
+    "booking": "Buto",
+    "bookedOwner": "Ki coyo - in aye rwod tic ni",
+    "notBooked": "Pe ki coyo",
+    "sharedAfterBooking": "Ki poko ingee buk",
+    "accept": "Yee lok ma ki cwalo boti",
+    "confirmBooking": "Mok ni iketo kabedo ni",
+    "reject": "kwero cwalo ngat mukene",
+    "rejectReasonLabel": "Tyen lok me kwero (ki nyutu bot ngat ma itye kwede) *",
+    "rejectConfirm": "Deg",
+    "confirmBookingPrompt": "Moko buk ni? Bedo ki twero me tic cito bot in ki ngat ma itye ka tic kwede ni doko ngat ma twero nongo cul.",
+    "notice": {
+      "booked": "Kimoko ni ki keto kabedo ni.",
+      "accepted": "Ki jolo lok me cwalo dano.",
+      "rejected": "Ki kwero lok me cwalo dano."
+    },
+    "backToReferrals": "Dok cen bot dano ma ki cwalo bot gi"
+  },
+  "history": {
+    "title": "Istori",
+    "actor": {
+      "system": "Cictim",
+      "partner": "Latic me yoo me lok ni",
+      "admin": "Leadrat ma loyo"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Coyo nying lutic luwot dong ki nongo",
+      "DUPLICATE_CHECK_COMPLETED": "Kwedo jami ma ki coyo ni otum - pe ki nongo gin ma ki coyo ni ma tye ka tic",
+      "REGISTRATION_ACCEPTED": "Coyi nying ki jolo",
+      "PROTECTION_GRANTED_one": "{{count}} -gwok me nino ma kimiyo",
+      "PROTECTION_GRANTED_other": "{{count}} -gwok me nino ma kimiyo",
+      "STAGE_UPDATED": "Kit ma ki loko kwede odoko {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Ki medo {{count}} kabedo",
+      "LEAD_DETAILS_UPDATED_other": "Ki medo {{count}} kabedo",
+      "LEAD_ASSIGNED": "Ki miyo bot {{name}}",
+      "LEAD_UNASSIGNED": "Pe ki miiyo",
+      "REFERRAL_ACCEPTED": "Lagedo oye lok ma ki cwalo ni",
+      "REFERRAL_REJECTED": "Lagedo okwero lok ma ki cwalo ni. Tyen lok: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Tem me coyo nying pa {{partner}} ki kwero",
+      "BOOKING_COMPLETED": "Yub dong otum",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "twero me tic ki jami ma ki keto bot lagedo",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Ki gwoko rwom pa ngat ma itye kwede",
+      "COMMISSION_ELIGIBILITY_CREATED": "Ki yubu twero me nongo kony",
+      "HANDOVER_COMPLETED": "Tic me miyo tic dong otum",
+      "ADMIN_PROTECTION_RELEASED": "Latela okati ki jami ma ki gwoko ma rwate con. Tyen lok: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Latela oloko rwom me coyo nying ki {{from}} me doko {{to}} . Tyen lok: {{reason}}"
+    }
+  }
+}

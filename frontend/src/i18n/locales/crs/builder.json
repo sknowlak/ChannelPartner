@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal Mason",
+    "referrals": "bann referans",
+    "builderLogin": "Builder Login",
+    "partnerLogin": "konekte partener kanal"
+  },
+  "login": {
+    "title": "sinyen mason",
+    "hint": "bann kont mason i ganny kree par Leadrat . demann ou ladministrater si ou napa enn."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "pe esper ou desizyon",
+    "ACCEPTED": "Aksepte",
+    "REJECTED": "Rezete"
+  },
+  "list": {
+    "title": "bann referans",
+    "allProjects": "Tou bann proze",
+    "allStatuses": "tou bann stati",
+    "count_one": "{{count}} referral",
+    "count_other": "{{count}} referans",
+    "columns": {
+      "referral": "referans",
+      "customer": "Konsomater",
+      "project": "Proze",
+      "sourcePartner": "partener sours",
+      "status": "Stati",
+      "booking": "Rezervasyon",
+      "registered": "Anrezistre"
+    },
+    "booked": "Rezerve",
+    "empty": "napa referans pour le moman."
+  },
+  "detail": {
+    "customer": "Konsomater",
+    "sourcePartner": "partener sours",
+    "attributionNote": "(atribisyon - pa kapab ganny sanze)",
+    "leadStatus": "Stati Lead",
+    "protectedUntil": "Proteze Ziska",
+    "referral": "referans",
+    "reason": "Rezon: {{reason}}",
+    "booking": "Rezervasyon",
+    "bookedOwner": "in ganny rezerve - ou propriyeter operasyonnel",
+    "notBooked": "pa'n ganny rezerve",
+    "sharedAfterBooking": "partaze apre rezervasyon",
+    "accept": "aksepte referans",
+    "confirmBooking": "konfirm rezervasyon",
+    "reject": "rezet referans",
+    "rejectReasonLabel": "rezon pour rezet (montre avek sa partener) *",
+    "rejectConfirm": "Rezete",
+    "confirmBookingPrompt": "konfirm ou rezervasyon? propriyete operasyonnel i bouz pour ou e sa partener i vin kalifye pour komisyon.",
+    "notice": {
+      "booked": "rezervasyon in ganny konfirmen.",
+      "accepted": "referans in ganny aksepte.",
+      "rejected": "referans in ganny rezete."
+    },
+    "backToReferrals": "Retourn lo bann referans"
+  },
+  "history": {
+    "title": "Listwar",
+    "actor": {
+      "system": "Sistenm",
+      "partner": "partener channel",
+      "admin": "admin Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "lanrezistreman partener in resevwar",
+      "DUPLICATE_CHECK_COMPLETED": "tyeke doub in konplete - napa doub aktiv ki'n ganny trouve",
+      "REGISTRATION_ACCEPTED": "lanrezistreman in ganny aksepte",
+      "PROTECTION_GRANTED_one": "{{count}} -zour proteksyon in donnen",
+      "PROTECTION_GRANTED_other": "{{count}} -zour proteksyon in donnen",
+      "STAGE_UPDATED": "Stati in ganny met azour pour {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} field in ganny met azour",
+      "LEAD_DETAILS_UPDATED_other": "bann domenn {{count}} in ganny met azour",
+      "LEAD_ASSIGNED": "in ganny donnen avek {{name}}",
+      "LEAD_UNASSIGNED": "pa'n ganny donnen",
+      "REFERRAL_ACCEPTED": "mason in aksepte referans",
+      "REFERRAL_REJECTED": "mason in rezet sa referans. Rezon: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "lesey lanrezistreman doub par {{partner}} in ganny rezete",
+      "BOOKING_COMPLETED": "rezervasyon konplete",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "propriyete operasyonnel in ganny transfer avek mason",
+      "PARTNER_ATTRIBUTION_PRESERVED": "atribisyon partener in ganny prezerve",
+      "COMMISSION_ELIGIBILITY_CREATED": "kalifikasyon komisyon in ganny kree",
+      "HANDOVER_COMPLETED": "handover in konplete",
+      "ADMIN_PROTECTION_RELEASED": "admin in lans proteksyon doub boner. Rezon: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin in re-asiyen lanrezistreman sorti {{from}} pou al {{to}} . Rezon: {{reason}}"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "title": "管理團隊",
+  "tabs": {
+    "members": "團隊成員",
+    "roles": "角色同權限",
+    "profile": "我嘅個人檔案"
+  },
+  "roles": {
+    "owner": "主人",
+    "member": "團隊成員"
+  },
+  "profile": {
+    "updated": "個人檔案更新咗。",
+    "basicInfo": "基本資料",
+    "organisationInfo": "組織資訊",
+    "preferences": "偏好設定",
+    "companyName": "公司/組織名稱",
+    "city": "城市",
+    "state": "陳述",
+    "currencyHelp": "用嚟顯示你團隊嘅預算同預訂價值。",
+    "useDeviceTimezone": "使用裝置時區（ {{timezone}} ）",
+    "securityRole": "安全性同角色",
+    "newPassword": "新密碼（留空以保持不變）",
+    "currentPassword": "目前嘅密碼",
+    "memberSince": "會員自從",
+    "languageSaved": "儲存到帳戶嘅語言 - 呢個語言會喺你登入嘅每部裝置上面使用。"
+  },
+  "members": {
+    "intro": "新增、編輯、停用或者移除團隊入面嘅人 - 佢哋會共用同一個潛在客戶嘅存取權。",
+    "noPermission": "你冇權限新增、編輯或者移除團隊成員。",
+    "addNew": "+ 加入新用戶",
+    "passwordLabel": "{{label}} （最少8個字元）",
+    "rolePermissions": "角色同權限",
+    "adding": "加緊 ...",
+    "addMember": "加入團隊成員",
+    "tabAll": "全部（ {{count}} ）",
+    "tabActive": "活躍（ {{count}} ）",
+    "tabInactive": "閒置（ {{count}} ）",
+    "searchPlaceholder": "搜尋名或者用戶名 ...",
+    "allTimezones": "所有時區",
+    "perPage": "每頁嘅條目",
+    "contact": "聯絡",
+    "added": "加咗",
+    "toggleActive": "有效 - 撳一下就可以停用",
+    "toggleInactive": "閒置 - 撳一下就可以啟動",
+    "empty": "仲未有團隊成員。",
+    "noMatch": "冇團隊成員符合呢啲篩選器。",
+    "showing": "顯示 { {{total}}條目嘅{{from}} - {{to}}",
+    "firstPage": "第一頁",
+    "previousPage": "上一頁",
+    "nextPage": "下一頁",
+    "lastPage": "最後一頁"
+  },
+  "editMember": {
+    "title": "編輯用戶",
+    "noPermission": "你冇權限編輯團隊成員。",
+    "backToTeam": "返去隊伍",
+    "cantChangeOwn": "你改變唔到你自己嘅角色或者狀態。",
+    "needsManageRoles": "更改成員角色需要「管理角色」權限。",
+    "addedBy": "由",
+    "addedOn": "加咗"
+  },
+  "rolesPage": {
+    "intro": "超級管理員、管理員同管理員係內置嘅，唔可以改 - 為其他任何嘢建立自訂角色。",
+    "noPermission": "你冇權限去管理角色。",
+    "createCustom": "+ 建立自訂角色",
+    "roleName": "角色名稱",
+    "permissions": "權限",
+    "members": "成員",
+    "creating": "創造緊 ...",
+    "createRole": "創造角色",
+    "systemRole": "系統角色",
+    "builtIn": "內置",
+    "empty": "仲未有角色。"
+  },
+  "permissions": {
+    "MANAGE_LEADS": "管理潛在客戶（建立、進度、預訂）",
+    "MANAGE_TEAM": "管理團隊（新增、編輯、移除成員）",
+    "MANAGE_ROLES": "管理角色同權限",
+    "MANAGE_SETTINGS": "管理設定（潛在客戶表格欄位）",
+    "none": "冇權限"
+  }
+}

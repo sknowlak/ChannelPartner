@@ -1,0 +1,83 @@
+{
+  "title": "Kelola Tim",
+  "tabs": {
+    "members": "Anggota Tim",
+    "roles": "Peran & Izin",
+    "profile": "Profil Saya"
+  },
+  "roles": {
+    "owner": "Pemilik",
+    "member": "Anggota Tim"
+  },
+  "profile": {
+    "updated": "Profil diperbarui.",
+    "basicInfo": "Informasi Dasar",
+    "organisationInfo": "Informasi Organisasi",
+    "preferences": "Preferensi",
+    "companyName": "Nama Perusahaan/Organisasi",
+    "city": "Kota",
+    "state": "Negara",
+    "currencyHelp": "Digunakan untuk menampilkan anggaran dan nilai pemesanan di seluruh tim Anda.",
+    "useDeviceTimezone": "Gunakan zona waktu perangkat ( {{timezone}} )",
+    "securityRole": "Keamanan & Peran",
+    "newPassword": "Kata Sandi Baru (biarkan kosong agar tidak berubah)",
+    "currentPassword": "Kata Sandi Saat Ini",
+    "memberSince": "Anggota Sejak",
+    "languageSaved": "Bahasa disimpan ke akun Anda - bahasa tersebut akan digunakan di setiap perangkat yang Anda masuki."
+  },
+  "members": {
+    "intro": "Tambahkan, edit, nonaktifkan, atau hapus orang di tim Anda - mereka berbagi akses ke prospek yang sama.",
+    "noPermission": "Anda tidak memiliki izin untuk menambah, mengedit, atau menghapus anggota tim.",
+    "addNew": "+ Tambahkan Pengguna Baru",
+    "passwordLabel": "{{label}} (minimal 8 karakter)",
+    "rolePermissions": "Peran & Izin",
+    "adding": "Menambahkan...",
+    "addMember": "Tambahkan Anggota Tim",
+    "tabAll": "Semua ( {{count}} )",
+    "tabActive": "Aktif ( {{count}} )",
+    "tabInactive": "Tidak aktif ( {{count}} )",
+    "searchPlaceholder": "Cari nama atau nama pengguna...",
+    "allTimezones": "Semua zona waktu",
+    "perPage": "Entri per halaman",
+    "contact": "Kontak",
+    "added": "Ditambahkan",
+    "toggleActive": "Aktif - klik untuk menonaktifkan",
+    "toggleInactive": "Tidak aktif - klik untuk mengaktifkan",
+    "empty": "Belum ada anggota tim.",
+    "noMatch": "Tidak ada anggota tim yang cocok dengan filter ini.",
+    "showing": "Menampilkan {{from}} - {{to}} dari {{total}} entri",
+    "firstPage": "Halaman pertama",
+    "previousPage": "Halaman sebelumnya",
+    "nextPage": "Halaman selanjutnya",
+    "lastPage": "Halaman terakhir"
+  },
+  "editMember": {
+    "title": "Sunting Pengguna",
+    "noPermission": "Anda tidak memiliki izin untuk mengedit anggota tim.",
+    "backToTeam": "Kembali ke Tim",
+    "cantChangeOwn": "Anda tidak dapat mengubah peran atau status Anda sendiri.",
+    "needsManageRoles": "Mengubah peran anggota memerlukan izin Kelola Peran.",
+    "addedBy": "Ditambahkan Oleh",
+    "addedOn": "Ditambahkan"
+  },
+  "rolesPage": {
+    "intro": "Admin Super, Admin, dan Manajer sudah ada di dalamnya dan tidak dapat diubah - buat peran khusus untuk hal lain.",
+    "noPermission": "Anda tidak memiliki izin untuk mengelola peran.",
+    "createCustom": "+ Buat Peran Khusus",
+    "roleName": "Nama Peran",
+    "permissions": "Izin",
+    "members": "Anggota",
+    "creating": "Membuat...",
+    "createRole": "Buat Peran",
+    "systemRole": "Peran sistem",
+    "builtIn": "Bawaan",
+    "empty": "Belum ada peran."
+  },
+  "permissions": {
+    "MANAGE_LEADS": "Kelola Prospek (buat, kemajuan, pesan)",
+    "MANAGE_TEAM": "Kelola Tim (menambah, mengedit, menghapus anggota)",
+    "MANAGE_ROLES": "Kelola Peran & Izin",
+    "MANAGE_SETTINGS": "Kelola Pengaturan (bidang formulir prospek)",
+    "none": "Tidak ada izin"
+  }
+}

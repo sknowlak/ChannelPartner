@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "ترتیبات",
+    "noPermission": "تاسو د ترتیباتو اداره کولو اجازه نلرئ."
+  },
+  "categories": {
+    "lead": "لیډ",
+    "user": "کارن",
+    "integrations": "ادغامونه"
+  },
+  "leadTabs": {
+    "fields": "ساحې",
+    "statuses": "حالتونه او فرعي حالتونه",
+    "notifications": "خبرتیاوې او مهالویشونه"
+  },
+  "fields": {
+    "leadIntro": "د لیډ کیپچر فورمه تنظیم کړئ: ساحې فعال/غیر فعال کړئ، دوی اړین نښه کړئ، یا خپل دودیز ساحې اضافه کړئ.",
+    "userIntro": "د ټیم غړي اضافه کول / ایډیټ کړئ فورمه تنظیم کړئ: ساحې فعال / غیر فعال کړئ، دوی اړین نښه کړئ، یا خپل دودیز ساحې اضافه کړئ.",
+    "addCustomField": "+ د ګمرک ساحه اضافه کړئ",
+    "fieldLabel": "د ساحې لیبل",
+    "group": "ګروپ",
+    "groupPlaceholderLead": "د بیلګې په توګه د پلټنې معلومات",
+    "groupPlaceholderUser": "د بیلګې په توګه اضافي توضیحات",
+    "dataType": "د معلوماتو ډول",
+    "options": "اختیارونه (د کوما جلا شوي)",
+    "requiredLead": "اړین دی - ستاسو په ټیم کې شریکان باید د مخکښ راجستر کولو لپاره دا ډک کړي",
+    "requiredUser": "اړین دی - د ټیم غړی اضافه کولو په وخت کې باید ډک شي",
+    "creating": "جوړول...",
+    "createField": "ساحه جوړه کړئ",
+    "columns": {
+      "field": "ډګر",
+      "group": "ګروپ",
+      "type": "ډول",
+      "required": "اړین دی",
+      "enabled": "فعال شوی",
+      "kind": "ډول"
+    },
+    "kind": {
+      "custom": "ګمرک",
+      "core": "کور (بند شوی)",
+      "standard": "معیاري"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "متن",
+    "TEXTAREA": "اوږد متن",
+    "NUMBER": "شمیره",
+    "CURRENCY": "اسعارو",
+    "DATE": "نیټه",
+    "SELECT": "ښکته کول",
+    "LIST": "لیست"
+  },
+  "picker": {
+    "searchPlaceholder": "د مخکښ ساحې لټون...",
+    "summary": "{{shown}} ښودل شوی · {{mandatory}} لازمي",
+    "mandatory": "لازمي",
+    "noMatch": "هیڅ ساحه میچ نه کوي."
+  },
+  "statuses": {
+    "intro": "ستاسو د مخکښ حالتونه او فرعي حالتونه - هغه څه چې هر یو یې غوښتنه کوي (نیټه او وخت، مخکښې ساحې) کله چې یو څوک ورته لیډ تازه کوي.",
+    "add": "+ وضعیت اضافه کړئ",
+    "columns": {
+      "order": "امر",
+      "status": "حالت",
+      "subStatuses": "فرعي حالتونه",
+      "asksFor": "غوښتنه کوي",
+      "active": "فعاله"
+    },
+    "moveUp": "پورته لاړ شه",
+    "moveDown": "لاندې حرکت وکړئ",
+    "defaultBadge": "د نوي لیډونو لپاره ډیفالټ",
+    "bookingBadge": "د بک کولو حالت",
+    "asksForLabel": "د {{label}} غوښتنه کوي",
+    "asksForDateTime": "د نیټې او وخت غوښتنه کوي",
+    "none": "هیڅ نه",
+    "dateTime": "نېټه او وخت",
+    "scheduledOn": "په {{names}}",
+    "fieldsSummary_one": "{{count}} ساحه ( {{mandatory}} لازمي)",
+    "fieldsSummary_other": "{{count}} ساحې ( {{mandatory}} لازمي)",
+    "deleteConfirm": "حالت ړنګ کړئ \" {{name}} \"؟ دا نشي رد کیدی.",
+    "editTitle": "د وضعیت سمون - {{name}}",
+    "newTitle": "نوی حالت",
+    "name": "د حالت نوم",
+    "colour": "رنګ",
+    "active": "فعاله",
+    "isDefault": "د نوي لیډونو لپاره ډیفالټ حالت",
+    "isBooking": "د بکینګ حالت (د بشپړ بکینګ لخوا ټاکل شوی)",
+    "whenMoved": "کله چې لیډ دې حالت ته لیږدول کیږي",
+    "askSchedule": "د نیټې او وخت غوښتنه وکړئ ( مهال ویش)",
+    "scheduleLabelPlaceholder": "لیبل، د بیلګې په توګه لیدنه وکړئ",
+    "fieldsToShow": "د اوسمهال په فورمه کې د ښودلو لپاره لیډ ساحې",
+    "subStatusesTitle": "فرعي حالتونه",
+    "subStatusesHint": "هر فرعي حالت کولی شي د خپل نیټې او وخت غوښتنه وکړي او خپل ساحې اضافه کړي - د پورته حالت ساحو په سر کې ښودل شوي.",
+    "subStatusName": "د فرعي حالت نوم",
+    "subFields": "ساحې ( {{count}} )",
+    "subScheduleLabelPlaceholder": "د نیټې او وخت لیبل، د بیلګې په توګه بیرته زنګ ووهئ",
+    "addSubStatus": "+ فرعي حالت اضافه کړئ",
+    "saveStatus": "د وضعیت خوندي کول",
+    "createStatus": "حالت جوړ کړئ"
+  },
+  "notifications": {
+    "intro": "سم خلکو ته خبر ورکړئ کله چې لیډ یو حالت ته ورسیږي - سمدلاسه، یا د ټاکل شوي نیټې او وخت څخه مخکې / وروسته یو ټاکلی وخت.",
+    "add": "+ خبرتیا اضافه کړئ",
+    "columns": {
+      "notification": "خبرتیا",
+      "whenStatusIs": "کله چې حالت وي",
+      "sends": "لیږي",
+      "to": "ته",
+      "via": "له لارې",
+      "enabled": "فعال شوی"
+    },
+    "anyStatus": "هر حالت",
+    "anySubStatus": "هر فرعي حالت",
+    "inactiveOption": "{{name}} (غیر فعال)",
+    "emptyRules": "تراوسه هیڅ خبرتیا نشته - یو اضافه کړئ ترڅو خپل ټیم ​​ته خبرتیا ورکړي کله چې لیډ حالت ته ورسیږي.",
+    "jobs": {
+      "title": "مهالویش شوی او لیږل شوی",
+      "firesAt": "اور په",
+      "notification": "خبرتیا",
+      "lead": "لیډ",
+      "status": "حالت",
+      "details": "جزیات",
+      "empty": "تراوسه هیڅ شی نه دی ټاکل شوی یا لیږل شوی.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "پاتې",
+      "PROCESSING": "پروسس کول",
+      "SENT": "لیږل شوی",
+      "FAILED": "ناکام شو",
+      "SKIPPED": "پریښودل",
+      "CANCELLED": "لغوه شو"
+    },
+    "deliveryStatus": {
+      "SENT": "لیږل",
+      "FAILED": "ناکام",
+      "SKIPPED": "پریښودل"
+    },
+    "deliveryChannel": {
+      "IN_APP": "په اپلیکیشن کې",
+      "EMAIL": "بریښنالیک",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "ګمارل شوی کارن",
+      "owner": "خاوند",
+      "updatedBy": "لخوا تازه شوی",
+      "role": "رول: {{name}}"
+    },
+    "channels": {
+      "inApp": "په اپلیکیشن کې",
+      "email": "ایمیل",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "خبرتیا \" {{name}} \" ړنګ کړئ؟ له دې څخه پاتې یادداشتونه لغوه شوي.",
+    "testPrompt": "د دې خبرتیا ازموینه خپل ځان ته واستوئ (ان-ایپ) د کوم لیډ ID په کارولو سره؟",
+    "testSent": "ستاسو بیل ته لیږل شوی: {{title}} {{message}}",
+    "headersInvalid": "Webhook سرلیکونه باید د اعتبار وړ JSON وي، د بیلګې په توګه {\"اجازت\": \"بیرر xyz\"}",
+    "editTitle": "د خبرتیا ترمیم",
+    "newTitle": "نوی خبرتیا",
+    "name": "نوم",
+    "namePlaceholder": "د مثال په توګه د سایټ لیدنې یادونه",
+    "whenStatus": "کله چې د لیډ حالت وي",
+    "subStatus": "فرعي حالت",
+    "send": "لیږل ( مهالویش ورکوونکی)",
+    "custom": "دودیز...",
+    "modeBefore": "له ټاکلي وخت مخکې",
+    "modeAfter": "له ټاکلي وخت وروسته",
+    "noScheduleWarning": "دا حالت د نیټې او وخت غوښتنه نه کوي، نو \"د ټاکل شوي وخت څخه مخکې / وروسته / وروسته\" خبرتیا به هیڅکله اور نه شي.",
+    "noScheduleFix": "د حالتونو او فرعي حالتونو لاندې د دې لپاره <strong>د نیټې او وخت غوښتنه کول</strong> فعال کړئ ، یا سمدلاسه واستوئ.",
+    "sendTo": "ته واستوئ (هر ترکیب)",
+    "recipientAssigned": "ګمارل شوی کارن (مشر مالک)",
+    "recipientOwner": "د حساب مالک / مدیر",
+    "recipientUpdatedBy": "هغه کس چې وضعیت یې تازه کړ",
+    "everyoneWithRole": "هرڅوک د رول سره",
+    "specificUsers": "ځانګړي کارونکي (فعال)",
+    "inactiveNever": "غیر فعال کاروونکي هیڅکله خبرتیاوې نه ترلاسه کوي، حتی که غوره شوی وي.",
+    "deliverVia": "له لارې سپارل",
+    "channelInApp": "په اپلیکیشن کې (بیل)",
+    "channelEmail": "ایمیل",
+    "channelWebhook": "Webhook ( WhatsApp / SMS چمتو کونکی)",
+    "emailHint": "بریښنالیک د هر ترلاسه کونکي بریښنالیک آدرس ته ځي او په سرور کې د SMTP ترتیب ته اړتیا لري (backend/.env)؛ تر هغه وخته پورې د بریښنالیک لیږل د پریښودل شوي په توګه ننوتل کیږي.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "سرلیکونه ( JSON )",
+    "content": "د خبرتیا منځپانګه",
+    "title": "عنوان",
+    "message": "پیغام",
+    "insertIntoTitle": "په سرلیک کې دننه کړئ",
+    "insertIntoMessage": "په پیغام کې دننه کړئ",
+    "anyLeadField": "هر مخکښ ساحه هم کار کوي، د بیلګې په توګه <code1>{{example1}}</code1> یا <code2>{{example2}}</code2> .",
+    "preview": "مخکتنه (د نمونې مخکښ)",
+    "enabled": "فعال شوی",
+    "saveRule": "خبرتیا خوندي کړئ",
+    "createRule": "خبرتیا جوړه کړئ",
+    "variables": {
+      "customerName": "د مشر نوم",
+      "customerMobile": "لیډ موبایل",
+      "customerEmail": "د بریښنالیک مشر",
+      "registrationId": "لیډ ID",
+      "status": "حالت",
+      "subStatus": "فرعي حالت",
+      "scheduleAt": "ټاکل شوې نیټه او وخت",
+      "assignedTo": "ګمارل شوی کارن",
+      "updatedBy": "لخوا تازه شوی",
+      "recipient": "د ترلاسه کوونکي نوم",
+      "project": "پروژه",
+      "notes": "وروستی یادښت",
+      "partner": "د شریک نوم"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "سمدلاسه کله چې وضعیت تنظیم شوی وي",
+      "AT": "په ټاکلي وخت",
+      "A1D": "د ټاکل شوي وخت څخه 1 ورځ وروسته (د تعقیب چیک)"
+    },
+    "immediately": "سمدستي",
+    "atScheduled": "په ټاکلي وخت",
+    "before": {
+      "MINUTES_one": "د ټاکل شوي وخت څخه {{count}} دقیقې مخکې",
+      "MINUTES_other": "د ټاکل شوي وخت څخه {{count}} دقیقې مخکې",
+      "HOURS_one": "له ټاکل شوي وخت څخه {{count}} ساعت مخکې",
+      "HOURS_other": "د ټاکل شوي وخت څخه {{count}} ساعته مخکې",
+      "DAYS_one": "د ټاکل شوي وخت څخه {{count}} ورځ مخکې",
+      "DAYS_other": "د ټاکل شوي وخت څخه {{count}} ورځې مخکې",
+      "WEEKS_one": "{{count}} اونۍ مخکې له ټاکل شوي وخت",
+      "WEEKS_other": "{{count}} اونۍ مخکې له ټاکل شوي وخت څخه",
+      "MONTHS_one": "د ټاکل شوي وخت څخه {{count}} میاشت مخکې",
+      "MONTHS_other": "{{count}} میاشتې مخکې له ټاکل شوي وخت",
+      "YEARS_one": "{{count}} کال له ټاکل شوي وخت مخکې",
+      "YEARS_other": "{{count}} کاله مخکې له ټاکل شوي وخت څخه"
+    },
+    "after": {
+      "MINUTES_one": "له ټاکل شوي وخت وروسته {{count}} دقیقې",
+      "MINUTES_other": "له ټاکلي وخت وروسته {{count}} دقیقې",
+      "HOURS_one": "له ټاکلي وخت وروسته {{count}} ساعت",
+      "HOURS_other": "له ټاکلي وخت وروسته {{count}} ساعتونه",
+      "DAYS_one": "له ټاکلي وخت وروسته {{count}} ورځ",
+      "DAYS_other": "له ټاکلي وخت وروسته {{count}} ورځې",
+      "WEEKS_one": "له ټاکلي وخت وروسته {{count}} اونۍ",
+      "WEEKS_other": "له ټاکلي وخت وروسته {{count}} اونۍ",
+      "MONTHS_one": "له ټاکل شوي وخت وروسته {{count}} میاشت",
+      "MONTHS_other": "له ټاکل شوي وخت وروسته {{count}} میاشتې",
+      "YEARS_one": "له ټاکلي وخت وروسته {{count}} کال",
+      "YEARS_other": "له ټاکلي وخت وروسته {{count}} کاله"
+    },
+    "units": {
+      "MINUTES_one": "دقیقه",
+      "MINUTES_other": "دقیقې",
+      "HOURS_one": "ساعت",
+      "HOURS_other": "ساعتونه",
+      "DAYS_one": "ورځ",
+      "DAYS_other": "ورځې",
+      "WEEKS_one": "اونۍ",
+      "WEEKS_other": "اونۍ",
+      "MONTHS_one": "میاشت",
+      "MONTHS_other": "میاشتې",
+      "YEARS_one": "کال",
+      "YEARS_other": "کلونه"
+    }
+  }
+}

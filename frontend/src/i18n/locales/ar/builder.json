@@ -1,0 +1,102 @@
+{
+  "shell": {
+    "portal": "بوابة البناء",
+    "referrals": "الإحالات",
+    "builderLogin": "تسجيل الدخول منشئ",
+    "partnerLogin": "تسجيل دخول شريك القناة"
+  },
+  "login": {
+    "title": "تسجيل الدخول منشئ",
+    "hint": "يتم إنشاء حسابات البناء بواسطة Leadrat . اسأل المسؤول إذا لم يكن لديك واحد."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "في انتظار قرارك",
+    "ACCEPTED": "مقبول",
+    "REJECTED": "مرفوض"
+  },
+  "list": {
+    "title": "الإحالات",
+    "allProjects": "جميع المشاريع",
+    "allStatuses": "جميع الحالات",
+    "count_zero": "{{count}} الإحالات",
+    "count_one": "{{count}} إحالة",
+    "count_two": "{{count}} الإحالات",
+    "count_few": "{{count}} الإحالات",
+    "count_many": "{{count}} الإحالات",
+    "count_other": "{{count}} الإحالات",
+    "columns": {
+      "referral": "الإحالة",
+      "customer": "عميل",
+      "project": "مشروع",
+      "sourcePartner": "شريك المصدر",
+      "status": "حالة",
+      "booking": "الحجز",
+      "registered": "مسجل"
+    },
+    "booked": "حجزت",
+    "empty": "لا الإحالات حتى الآن."
+  },
+  "detail": {
+    "customer": "عميل",
+    "sourcePartner": "شريك المصدر",
+    "attributionNote": "(الإسناد - لا يمكن تغييره)",
+    "leadStatus": "حالة الرصاص",
+    "protectedUntil": "محمي حتى",
+    "referral": "الإحالة",
+    "reason": "السبب: {{reason}}",
+    "booking": "الحجز",
+    "bookedOwner": "تم الحجز - أنت المالك التشغيلي",
+    "notBooked": "لم يتم حجزها",
+    "sharedAfterBooking": "تمت المشاركة بعد الحجز",
+    "accept": "قبول الإحالة",
+    "confirmBooking": "تأكيد الحجز",
+    "reject": "رفض الإحالة",
+    "rejectReasonLabel": "سبب الرفض (موضح للشريك) *",
+    "rejectConfirm": "يرفض",
+    "confirmBookingPrompt": "تأكيد الحجز؟ تنتقل الملكية التشغيلية إليك ويصبح الشريك مؤهلاً للحصول على العمولة.",
+    "notice": {
+      "booked": "تم تأكيد الحجز.",
+      "accepted": "تم قبول الإحالة.",
+      "rejected": "تم رفض الإحالة."
+    },
+    "backToReferrals": "العودة إلى الإحالات"
+  },
+  "history": {
+    "title": "تاريخ",
+    "actor": {
+      "system": "نظام",
+      "partner": "شريك القناة",
+      "admin": "Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "تم استلام تسجيل الشريك",
+      "DUPLICATE_CHECK_COMPLETED": "اكتمل التحقق من التكرارات - لم يتم العثور على تكرار نشط",
+      "REGISTRATION_ACCEPTED": "تم قبول التسجيل",
+      "PROTECTION_GRANTED_zero": "{{count}} تم منح الحماية لمدة يوم",
+      "PROTECTION_GRANTED_one": "{{count}} تم منح الحماية لمدة يوم",
+      "PROTECTION_GRANTED_two": "{{count}} تم منح الحماية لمدة يوم",
+      "PROTECTION_GRANTED_few": "{{count}} تم منح الحماية لمدة يوم",
+      "PROTECTION_GRANTED_many": "{{count}} تم منح الحماية لمدة يوم",
+      "PROTECTION_GRANTED_other": "{{count}} تم منح الحماية لمدة يوم",
+      "STAGE_UPDATED": "تم تحديث الحالة إلى {{stage}}",
+      "LEAD_DETAILS_UPDATED_zero": "تم تحديث {{count}} من الحقول",
+      "LEAD_DETAILS_UPDATED_one": "تم تحديث الحقل {{count}}",
+      "LEAD_DETAILS_UPDATED_two": "تم تحديث {{count}} من الحقول",
+      "LEAD_DETAILS_UPDATED_few": "تم تحديث {{count}} من الحقول",
+      "LEAD_DETAILS_UPDATED_many": "تم تحديث {{count}} من الحقول",
+      "LEAD_DETAILS_UPDATED_other": "تم تحديث {{count}} من الحقول",
+      "LEAD_ASSIGNED": "تم التعيين إلى {{name}}",
+      "LEAD_UNASSIGNED": "غير معين",
+      "REFERRAL_ACCEPTED": "قبل البناء الإحالة",
+      "REFERRAL_REJECTED": "رفض البناء الإحالة. السبب: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "تم رفض محاولة التسجيل المكررة بواسطة {{partner}}",
+      "BOOKING_COMPLETED": "اكتمل الحجز",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "تم نقل الملكية التشغيلية إلى Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "تم الحفاظ على إسناد الشريك",
+      "COMMISSION_ELIGIBILITY_CREATED": "تم إنشاء أهلية العمولة",
+      "HANDOVER_COMPLETED": "اكتمل التسليم",
+      "ADMIN_PROTECTION_RELEASED": "أصدر المسؤول الحماية المكررة في وقت مبكر. السبب: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "قام المشرف بإعادة تعيين التسجيل من {{from}} إلى {{to}} . السبب: {{reason}}"
+    }
+  }
+}

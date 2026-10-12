@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Mi Leads",
+    "signedInAs": "Signed in as {{name}} ( {{partnerId}} ) · times shown in {{timezone}}",
+    "addLead": "+ Add Lead",
+    "tabs": {
+      "all": "All ( {{count}} )",
+      "pending": "Pending ( {{count}} )",
+      "booked": "Booked ( {{count}} )"
+    },
+    "searchPlaceholder": "Search by name, mobile, or registration ID ...",
+    "manageColumns": "Manage Columns",
+    "rowsPerPage": "Rows per page",
+    "registrationId": "Registration ID",
+    "emptyState": "No leads yet - register yuh first one.",
+    "noMatch": "No leads match dem filters yah.",
+    "showing": "Showing {{from}} - {{to}} of {{total}} entries",
+    "actions": {
+      "preview": "Preview & quick update",
+      "history": "Histry",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Cawl"
+    },
+    "pagination": {
+      "first": "Fos piej",
+      "previous": "Previous page",
+      "next": "Next page",
+      "last": "Laas piej"
+    }
+  },
+  "columns": {
+    "status": "Place",
+    "assignTo": "Assign To",
+    "booked": "Booked",
+    "protectionUntil": "Protection Until"
+  },
+  "booking": {
+    "booked": "Booked",
+    "pending": "A wait"
+  },
+  "assign": {
+    "unassigned": "No assigned",
+    "owner": "{{name}} (Owner)",
+    "inactive": "{{name}} (inactive)",
+    "unknownUser": "Unknown user",
+    "assignedTo": "Assigned to {{name}}"
+  },
+  "form": {
+    "addTitle": "Add Lead",
+    "editTitle": "Edit Lead",
+    "noPermissionAdd": "Yuh no have no permission fi register leads.",
+    "noPermissionEdit": "Yuh no have no permission fi edit leads.",
+    "selectPlaceholder": "Chuze...",
+    "commaSeparated": "Comma separated",
+    "phonePlaceholder": "Phone numba",
+    "countryCode": "Country code"
+  },
+  "project": {
+    "none": "No project yet (not referred)",
+    "notInList": "{{project}} (not inna di project list)"
+  },
+  "journey": {
+    "customer": "Custama",
+    "currentOwner": "Current Owner",
+    "protectionExpiry": "Protection Expiry",
+    "leadStatus": "Lead Status",
+    "scheduled": "Scheduled",
+    "assignedTo": "Assigned to",
+    "referral": "Referral",
+    "builderReason": "Builder's reason: {{reason}}",
+    "bookedHint": "Booked by di builder - operational ownership move to di builder; yuh attribution an commission eligibility dem keep.",
+    "notBookedHint": "Bookings are confirmed by di builder once dem accept di referral.",
+    "quickUpdate": "Quick Update",
+    "leadDetails": "Lead Details",
+    "progressHistory": "Progress History",
+    "timesIn": "(times in {{timezone}} )",
+    "backToMyLeads": "Back to My Leads",
+    "editLead": "Edit Lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "Not referred (no project)",
+    "PENDING_BUILDER": "Waiting fi builder",
+    "ACCEPTED": "Accepted by builder",
+    "REJECTED": "Rejected by builder"
+  },
+  "preview": {
+    "ariaLabel": "Lead preview",
+    "title": "Lead Preview",
+    "source": "Source",
+    "location": "Location",
+    "scheduled": "Scheduled",
+    "registered": "Registered",
+    "latestNote": "Latest Note",
+    "quickUpdate": "Quick Update",
+    "fullDetails": "Full Details",
+    "editLead": "Edit Lead",
+    "history": "Histry"
+  },
+  "quick": {
+    "assignedTo": "Assigned to",
+    "status": "Place",
+    "subStatus": "Sub-Status",
+    "selectSubStatus": "Select sub-status...",
+    "none": "Nun",
+    "scheduledAt": "Scheduled at",
+    "localTime": "local time",
+    "note": "Note",
+    "notePlaceholder": "Weh happen pan dis call / visit? (aptional)",
+    "updateStatus": "Update Status",
+    "statusUpdated": "Status updated",
+    "bookedLocked": "Dis lead is booked - it status cyaan no longer be changed.",
+    "viewOnly": "Yuh can view dis lead, but yuh role cyaan update it."
+  },
+  "history": {
+    "title": "History - {{registrationId}}",
+    "tabs": {
+      "all": "All",
+      "status": "Place",
+      "assignment": "Work",
+      "notes": "Notes"
+    },
+    "doneBy": "Done by {{actor}}",
+    "system": "Systim",
+    "platforms": {
+      "System": "Systim",
+      "External": "Outside",
+      "Web": "Web",
+      "Mobile": "Deh wan place"
+    },
+    "added": "added",
+    "updated": "updated",
+    "empty": "(empty)",
+    "noHistory": "No history inna dis category yet.",
+    "fieldLabels": {
+      "stage": "Place",
+      "subStatus": "Sub-Status",
+      "scheduledAt": "Skejule",
+      "notes": "Notes",
+      "assignedTo": "Assigned to"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Partner registration received",
+      "DUPLICATE_CHECK_COMPLETED": "Duplicate check don - no active duplicate find",
+      "REGISTRATION_ACCEPTED": "Registration accepted",
+      "PROTECTION_GRANTED_one": "{{count}} -day protection granted",
+      "PROTECTION_GRANTED_other": "{{count}} -day protection granted",
+      "REGISTRATION_ATTEMPT_REJECTED": "Duplicate registration attempt by {{partnerId}} rejected",
+      "LEAD_DETAILS_UPDATED_one": "Updated {{count}} field",
+      "LEAD_DETAILS_UPDATED_other": "Updated {{count}} fields",
+      "STAGE_UPDATED": "Status updated to {{status}}",
+      "LEAD_ASSIGNED": "Assigned to {{name}}",
+      "LEAD_UNASSIGNED": "No assigned",
+      "BOOKING_COMPLETED": "Booking don",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operational ownership transfer to Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partner attribution preserved",
+      "COMMISSION_ELIGIBILITY_CREATED": "Commission eligibility created",
+      "HANDOVER_COMPLETED": "Handover completed",
+      "REFERRAL_ACCEPTED": "Builder accept di referral",
+      "REFERRAL_REJECTED": "Builder did reject di referral. Reason: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin did release duplicate protection early. Reason: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin reassign registration fram {{from}} to {{to}} . Reason: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Manage Columns",
+    "hint": "Drag fi reorder · check fi show",
+    "showAll": "Show All",
+    "resetDefault": "Reset to Default"
+  },
+  "filters": {
+    "title": "Filters",
+    "allProjects": "All projects",
+    "any": "Eny",
+    "noFields": "No ada filterable fields dem enable yet (Settings > Lead).",
+    "clearAll": "Clear All"
+  },
+  "phone": {
+    "MISSING": "Phone numba is required.",
+    "INVALID": "Please put a valid phone numba.",
+    "TOO_SHORT": "Phone numba too shaat.",
+    "TOO_LONG": "Phone numba too long.",
+    "INVALID_FOR_COUNTRY": "Dis fuonomba no valid fi {{country}} .",
+    "COUNTRY_MISMATCH": "Please select di right country code.",
+    "NOT_MOBILE": "Please put in a mobile numba, not a landline."
+  }
+}

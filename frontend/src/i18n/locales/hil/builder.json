@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal sang Builder",
+    "referrals": "Mga Referral",
+    "builderLogin": "Builder Login",
+    "partnerLogin": "Pag-login sang Channel Partner"
+  },
+  "login": {
+    "title": "Mag-sign in sang manunukod",
+    "hint": "Ang mga account sang builder ginhimo sang Leadrat . Pamangkuta ang imo administrador kon wala ka."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Nagahulat sang imo desisyon",
+    "ACCEPTED": "Ginbaton",
+    "REJECTED": "Ginsikway"
+  },
+  "list": {
+    "title": "Mga Referral",
+    "allProjects": "Tanan nga mga proyekto",
+    "allStatuses": "Tanan nga mga status",
+    "count_one": "{{count}} referral",
+    "count_other": "{{count}} nga mga referral",
+    "columns": {
+      "referral": "Referral",
+      "customer": "Kustomer",
+      "project": "Proyekto",
+      "sourcePartner": "Source Partner",
+      "status": "Estado",
+      "booking": "Pag-book",
+      "registered": "Narehistro"
+    },
+    "booked": "Gin-book",
+    "empty": "Wala pa sang mga referral."
+  },
+  "detail": {
+    "customer": "Kustomer",
+    "sourcePartner": "Source Partner",
+    "attributionNote": "(attribution - indi mabag-o)",
+    "leadStatus": "Kahimtangan sang Panguna",
+    "protectedUntil": "Ginaamligan Tubtob",
+    "referral": "Referral",
+    "reason": "Rason: {{reason}}",
+    "booking": "Pag-book",
+    "bookedOwner": "Gin-book - ikaw ang tag-iya sang operasyon",
+    "notBooked": "Wala pa na-book",
+    "sharedAfterBooking": "Ginpaambit pagkatapos sang pag-book",
+    "accept": "Batuna ang Referral",
+    "confirmBooking": "Kumpirmahi ang Pag-book",
+    "reject": "Isikway ang Referral",
+    "rejectReasonLabel": "Rason sa pagsikway (ginpakita sa kaupod) *",
+    "rejectConfirm": "Wala nabaton",
+    "confirmBookingPrompt": "Kumpirmahon ang booking? Ang pagpanag-iya sang operasyon nagasaylo sa imo kag ang kaupod mangin kwalipikado para sa komisyon.",
+    "notice": {
+      "booked": "Nakumpirma ang booking.",
+      "accepted": "Ginbaton ang referral.",
+      "rejected": "Ginsikway ang referral."
+    },
+    "backToReferrals": "Balik sa mga Referral"
+  },
+  "history": {
+    "title": "Historya",
+    "actor": {
+      "system": "Sistema",
+      "partner": "Kaupod sa channel",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Nabaton ang rehistrasyon sang kaupod",
+      "DUPLICATE_CHECK_COMPLETED": "Natapos ang doble nga tseke - wala sing nakita nga aktibo nga doble",
+      "REGISTRATION_ACCEPTED": "Ginbaton ang pagparehistro",
+      "PROTECTION_GRANTED_one": "{{count}} -adlaw nga proteksyon nga ginhatag",
+      "PROTECTION_GRANTED_other": "{{count}} -adlaw nga proteksyon nga ginhatag",
+      "STAGE_UPDATED": "Ang kahimtangan gin-update sa {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Gin-update ang {{count}} nga field",
+      "LEAD_DETAILS_UPDATED_other": "Gin-update ang {{count}} nga mga field",
+      "LEAD_ASSIGNED": "Gin-assign sa {{name}}",
+      "LEAD_UNASSIGNED": "Wala gintangdo",
+      "REFERRAL_ACCEPTED": "Ginbaton sang manunukod ang referral",
+      "REFERRAL_REJECTED": "Ginsikway sang Builder ang referral. Rason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Ang doble nga pagtinguha sa pagparehistro sang {{partner}} ginsikway",
+      "BOOKING_COMPLETED": "Natapos na ang booking",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Ang pagpanag-iya sa operasyon ginsaylo sa Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Ang pag-atribwir sang kaupod gintipigan",
+      "COMMISSION_ELIGIBILITY_CREATED": "Ang kwalipikasyon sa komisyon ginhimo",
+      "HANDOVER_COMPLETED": "Natapos ang paghatag",
+      "ADMIN_PROTECTION_RELEASED": "Ang admin nagpagawas sa duplicate nga proteksyon sayo. Rason: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Gin-assign liwat sang admin ang rehistrasyon halin sa {{from}} pakadto sa {{to}} . Rason: {{reason}}"
+    }
+  }
+}

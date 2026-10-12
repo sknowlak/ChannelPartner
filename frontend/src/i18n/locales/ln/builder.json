@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal ya Batongi",
+    "referrals": "Ba références",
+    "builderLogin": "Kokota na Motongi",
+    "partnerLogin": "Bokoti ya Mosangani ya Chaîne"
+  },
+  "login": {
+    "title": "Motongi akɔta na site",
+    "hint": "Ba comptes ya ba constructeurs esalemi na Leadrat . Tuna administrateur na yo soki ozali na yango te."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Kozela ekateli na yo",
+    "ACCEPTED": "Endimisami",
+    "REJECTED": "Baboyaki yango"
+  },
+  "list": {
+    "title": "Ba références",
+    "allProjects": "Ba projets nionso",
+    "allStatuses": "Ba statuts nionso",
+    "count_one": "{{count}} botindiki",
+    "count_other": "{{count}} ba références",
+    "columns": {
+      "referral": "Botindiki",
+      "customer": "Kiliya",
+      "project": "Mosala",
+      "sourcePartner": "Mosangani ya Liziba",
+      "status": "Statut",
+      "booking": "Kosala réservation",
+      "registered": "Bakomisamaki nkombo"
+    },
+    "booked": "Ba réservé",
+    "empty": "Ba références moko te nanu."
+  },
+  "detail": {
+    "customer": "Kiliya",
+    "sourcePartner": "Mosangani ya Liziba",
+    "attributionNote": "(attribution - ekoki kobongwana te)",
+    "leadStatus": "Ezalela ya Plomb",
+    "protectedUntil": "Ebatelami Kino",
+    "referral": "Botindiki",
+    "reason": "Ntina: {{reason}}",
+    "booking": "Kosala réservation",
+    "bookedOwner": "Réservé - ozali propriétaire opérationnel",
+    "notBooked": "Ba réservé te",
+    "sharedAfterBooking": "Bakabolaki nsima ya kosala réservation",
+    "accept": "Ndima Botindiki",
+    "confirmBooking": "Confirmer Réservation",
+    "reject": "Boboya Botindiki",
+    "rejectReasonLabel": "Ntina ya koboya (elakisami na molongani) *",
+    "rejectConfirm": "Koboya",
+    "confirmBookingPrompt": "Confirmer réservation? Bozwi ya misala ekendeke epai na yo mpe mosangani akomi na makoki ya kozwa commission.",
+    "notice": {
+      "booked": "Réservation e confirmé.",
+      "accepted": "Botindiki endimami.",
+      "rejected": "Botindiki eboyamaki."
+    },
+    "backToReferrals": "Kozonga na ba Références"
+  },
+  "history": {
+    "title": "Lisolo",
+    "actor": {
+      "system": "Ebongiseli",
+      "partner": "Partenaire ya chaîne",
+      "admin": "Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Enregistrement ya partenaire ezuami",
+      "DUPLICATE_CHECK_COMPLETED": "Vérification ya double esili - doublon active ezwami te",
+      "REGISTRATION_ACCEPTED": "Kokomisa nkombo endimami",
+      "PROTECTION_GRANTED_one": "{{count}} -bobateli ya mokolo epesami",
+      "PROTECTION_GRANTED_other": "{{count}} -bobateli ya mokolo epesami",
+      "STAGE_UPDATED": "Ezalela ebongwani na {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Esika ya {{count}} ebongwani",
+      "LEAD_DETAILS_UPDATED_other": "Ba champs {{count}} oyo ebongwani",
+      "LEAD_ASSIGNED": "Epesameli na {{name}}",
+      "LEAD_UNASSIGNED": "Epesameli mosala te",
+      "REFERRAL_ACCEPTED": "Builder andimaki référence wana",
+      "REFERRAL_REJECTED": "Builder aboyaki botindiki yango. Ntina: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Bomeki ya bokomisi nkombo ya mbala mibale na {{partner}} eboyami",
+      "BOOKING_COMPLETED": "Réservation esili",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Propriété opérationnelle e transféré na Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Attribution ya partenaire ebatelami",
+      "COMMISSION_ELIGIBILITY_CREATED": "Eligibilité ya Commission esalemi",
+      "HANDOVER_COMPLETED": "Bopesi mosala esili",
+      "ADMIN_PROTECTION_RELEASED": "Admin abimisi protection ya doublon tôt. Ntina: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin apesaki lisusu bokomisi nkombo uta {{from}} kino na {{to}} . Ntina: {{reason}}"
+    }
+  }
+}

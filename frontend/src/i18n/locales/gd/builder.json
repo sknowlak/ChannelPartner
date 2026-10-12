@@ -1,0 +1,96 @@
+{
+  "shell": {
+    "portal": "Portal neach-togail",
+    "referrals": "Atharrachaidhean",
+    "builderLogin": "Log a-steach neach-togail",
+    "partnerLogin": "Log a-steach com-pàirtiche sianal"
+  },
+  "login": {
+    "title": "Clàraich a-steach neach-togail",
+    "hint": "Tha cunntasan neach-togail air an cruthachadh le Leadrat . Faighnich don rianaire agad mura h-eil fear agad."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "A’ feitheamh ri do cho-dhùnadh",
+    "ACCEPTED": "Air gabhail ris",
+    "REJECTED": "Air a dhiùltadh"
+  },
+  "list": {
+    "title": "Atharrachaidhean",
+    "allProjects": "A h-uile pròiseact",
+    "allStatuses": "A h-uile inbhe",
+    "count_one": "{{count}} iomradh",
+    "count_two": "{{count}} iomradh",
+    "count_few": "{{count}} iomradh",
+    "count_other": "{{count}} iomradh",
+    "columns": {
+      "referral": "Iomradh",
+      "customer": "Neach-ceannach",
+      "project": "Pròiseact",
+      "sourcePartner": "Com-pàirtiche Stòr",
+      "status": "Inbhe",
+      "booking": "Clàradh",
+      "registered": "Clàraichte"
+    },
+    "booked": "Glèidhte",
+    "empty": "Gun iomradh fhathast."
+  },
+  "detail": {
+    "customer": "Neach-ceannach",
+    "sourcePartner": "Com-pàirtiche Stòr",
+    "attributionNote": "(buaidh - cha ghabh atharrachadh)",
+    "leadStatus": "Inbhe luaidhe",
+    "protectedUntil": "Air a dhìon gu ruige seo",
+    "referral": "Iomradh",
+    "reason": "Adhbhar: {{reason}}",
+    "booking": "Clàradh",
+    "bookedOwner": "Glèidhte - is tusa an sealbhadair obrachaidh",
+    "notBooked": "Gun chlàradh",
+    "sharedAfterBooking": "Air a cho-roinn às deidh òrdachadh",
+    "accept": "Gabh ris an iomradh",
+    "confirmBooking": "Dearbhaich Clàradh",
+    "reject": "Tiomnadh a dhiùltadh",
+    "rejectReasonLabel": "Adhbhar airson a dhiùltadh (air a shealltainn don chom-pàirtiche) *",
+    "rejectConfirm": "diùltadh",
+    "confirmBookingPrompt": "Dearbhaich an clàradh? Bidh seilbh obrachaidh a’ gluasad thugad agus bidh an com-pàirtiche airidh air coimisean.",
+    "notice": {
+      "booked": "Clàradh air a dhearbhadh.",
+      "accepted": "Chaidh gabhail ri tar-chur.",
+      "rejected": "An t-iomradh air a dhiùltadh."
+    },
+    "backToReferrals": "Air ais gu Iomraidhean"
+  },
+  "history": {
+    "title": "Eachdraidh",
+    "actor": {
+      "system": "Siostam",
+      "partner": "Com-pàirtiche sianal",
+      "admin": "Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Clàradh com-pàirtiche air fhaighinn",
+      "DUPLICATE_CHECK_COMPLETED": "Sgrùdadh dùblaichte crìochnaichte - cha deach lethbhreac gnìomhach a lorg",
+      "REGISTRATION_ACCEPTED": "Chaidh gabhail ri clàradh",
+      "PROTECTION_GRANTED_one": "{{count}} -latha dìon air a thoirt seachad",
+      "PROTECTION_GRANTED_two": "{{count}} -latha dìon air a thoirt seachad",
+      "PROTECTION_GRANTED_few": "{{count}} -latha dìon air a thoirt seachad",
+      "PROTECTION_GRANTED_other": "{{count}} -latha dìon air a thoirt seachad",
+      "STAGE_UPDATED": "Inbhe air ùrachadh gu {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Chaidh raon {{count}} ùrachadh",
+      "LEAD_DETAILS_UPDATED_two": "{{count}} raointean air an ùrachadh",
+      "LEAD_DETAILS_UPDATED_few": "{{count}} raointean air an ùrachadh",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} raointean air an ùrachadh",
+      "LEAD_ASSIGNED": "Air a shònrachadh do {{name}}",
+      "LEAD_UNASSIGNED": "Neo-ainmichte",
+      "REFERRAL_ACCEPTED": "Ghabh an neach-togail ris an iomradh",
+      "REFERRAL_REJECTED": "Dhiùlt an neach-togail an iomradh. Adhbhar: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Dhiùlt oidhirp clàraidh dhùblaichte le {{partner}}",
+      "BOOKING_COMPLETED": "Clàradh crìochnaichte",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Chaidh seilbh obrachaidh a ghluasad gu Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Buadh com-pàirtiche air a ghleidheadh",
+      "COMMISSION_ELIGIBILITY_CREATED": "ion-roghnachd Coimisean air a chruthachadh",
+      "HANDOVER_COMPLETED": "Gluasad crìochnaichte",
+      "ADMIN_PROTECTION_RELEASED": "Sgaoil an rianaire dìon dùblaichte tràth. Adhbhar: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Dh'ath-ainmich an rianaire an clàradh o {{from}} gu {{to}} . Adhbhar: {{reason}}"
+    }
+  }
+}

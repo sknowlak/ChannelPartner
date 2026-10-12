@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Swiletelo Swa Mina",
+    "signedInAs": "U nghenile tanihi {{name}} ( {{partnerId}} ) · minkarhi leyi kombisiweke eka {{timezone}}",
+    "addLead": "+ Engetela Ntsopfu",
+    "tabs": {
+      "all": "Hinkwaswo ( {{count}} ) .",
+      "pending": "Ku yimerile ( {{count}} ) .",
+      "booked": "Ku bukuteriwile ( {{count}} ) ."
+    },
+    "searchPlaceholder": "Secha hi vito, mobile, kumbe ID yo tsarisa ...",
+    "manageColumns": "Lawula Tikholomu",
+    "rowsPerPage": "Tilayini hi tluka",
+    "registrationId": "ID ya ku tsarisa",
+    "emptyState": "No leads yet - tsarisa ya wena yo sungula.",
+    "noMatch": "Ku hava ti leads leti fambelanaka na ti filters leti.",
+    "showing": "Ku kombisa {{from}} - {{to}} ya {{total}} leyi nghenisiweke",
+    "actions": {
+      "preview": "Preview & ku pfuxetiwa hi ku hatlisa",
+      "history": "Matimu",
+      "email": "Imeyili",
+      "whatsapp": "WhatsApp",
+      "call": "Vitana"
+    },
+    "pagination": {
+      "first": "Tluka ro sungula",
+      "previous": "Tluka leri hundzeke",
+      "next": "Tluka leri landzelaka",
+      "last": "Tluka ro hetelela"
+    }
+  },
+  "columns": {
+    "status": "Xiyimo",
+    "assignTo": "Avela Eka",
+    "booked": "Ku bukuteriwile",
+    "protectionUntil": "Nsirhelelo Ku fikela"
+  },
+  "booking": {
+    "booked": "Ku bukuteriwile",
+    "pending": "Rindzerile"
+  },
+  "assign": {
+    "unassigned": "A swi averiwe",
+    "owner": "{{name}} (N’wini) .",
+    "inactive": "{{name}} (a nga tirhi) .",
+    "unknownUser": "Mutirhisi loyi a nga tiviwiki",
+    "assignedTo": "Yi averiwe {{name}}"
+  },
+  "form": {
+    "addTitle": "Engeta Ntsopfu",
+    "editTitle": "Hlela Lead",
+    "noPermissionAdd": "A wu na mpfumelelo wo tsarisa ti lead.",
+    "noPermissionEdit": "A wu na mpfumelelo wo hlela swiletelo.",
+    "selectPlaceholder": "Hlawula...",
+    "commaSeparated": "Khoma yi hambanisiwile",
+    "phonePlaceholder": "Nomboro ya riqingho",
+    "countryCode": "Khodi ya tiko"
+  },
+  "project": {
+    "none": "Ku hava phurojeke ku fikela sweswi (a yi kongomisiwanga) .",
+    "notInList": "{{project}} (a hi eka nxaxamelo wa phurojeke)"
+  },
+  "journey": {
+    "customer": "Khasimende",
+    "currentOwner": "N’wini wa sweswi",
+    "protectionExpiry": "Ku hela ka nkarhi wa nsirhelelo",
+    "leadStatus": "Xiyimo xa Ntsopfu",
+    "scheduled": "Ku hleriwe",
+    "assignedTo": "Ku Averiwa Eka",
+    "referral": "Ku hundziseriwa",
+    "builderReason": "Xivangelo xa muaki: {{reason}}",
+    "bookedHint": "Ku bukuteriwile hi muaki - vun’wini bya matirhelo byi rhurhele eka muaki; ku faneleka ka wena ka attribution na khomixini swi hlayisiwa.",
+    "notBookedHint": "Ku bukuta ku tiyisisiwa hi muaki loko se a amukerile ku rhumeriwa.",
+    "quickUpdate": "Ndzulamiso wa Xihatla",
+    "leadDetails": "Vuxokoxoko bya Murhangeri",
+    "progressHistory": "Matimu ya Nhluvuko",
+    "timesIn": "(minkarhi eka {{timezone}} )",
+    "backToMyLeads": "Ku Vuyela Eka Swiletelo Swa Mina",
+    "editLead": "Hlela Lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "A swi rhumeriwi (ku hava phurojeke) .",
+    "PENDING_BUILDER": "Ku yimele muaki",
+    "ACCEPTED": "Ku amukeriwa hi muaki",
+    "REJECTED": "Ku ariwa hi muaki"
+  },
+  "preview": {
+    "ariaLabel": "Ku rhangela xikombiso xa le mahlweni",
+    "title": "Ndzavisiso wa le mahlweni wa Rhange",
+    "source": "Xihlovo",
+    "location": "Ndhawu",
+    "scheduled": "Ku hleriwe",
+    "registered": "Ku tsarisiwile",
+    "latestNote": "Xitsundzuxo xa sweswinyana",
+    "quickUpdate": "Ndzulamiso wa Xihatla",
+    "fullDetails": "Vuxokoxoko lebyi heleleke",
+    "editLead": "Hlela Lead",
+    "history": "Matimu"
+  },
+  "quick": {
+    "assignedTo": "Ku Averiwa Eka",
+    "status": "Xiyimo",
+    "subStatus": "Xiyimo xa le hansi",
+    "selectSubStatus": "Hlawula xiyimo xa le hansi...",
+    "none": "Hava",
+    "scheduledAt": "Ku hleriwe hi",
+    "localTime": "hi nkarhi wa kwalaho",
+    "note": "Lemuka",
+    "notePlaceholder": "Xana ku humelele yini eka riqingho / riendzo leri? (hlawula)",
+    "updateStatus": "Ntshunxeko Xiyimo",
+    "statusUpdated": "Xiyimo xi pfuxetiwile",
+    "bookedLocked": "Lead leyi yi bukuteriwile - xiyimo xa yona a xa ha cinciwi.",
+    "viewOnly": "U nga languta lead leyi, kambe role ya wena a yi nge swi koti ku yi update."
+  },
+  "history": {
+    "title": "Matimu - {{registrationId}}",
+    "tabs": {
+      "all": "Hinkwaswo",
+      "status": "Xiyimo",
+      "assignment": "Asayimente",
+      "notes": "Tinhlamuselo"
+    },
+    "doneBy": "Swi endliwe hi {{actor}}",
+    "system": "Sisitimi",
+    "platforms": {
+      "System": "Sisitimi",
+      "External": "Swale handle",
+      "Web": "Webu",
+      "Mobile": "Famba-famba"
+    },
+    "added": "ku engeterile",
+    "updated": "yi pfuxetiwile",
+    "empty": "(halata)",
+    "noHistory": "Ku hava matimu eka xiyenge lexi ku fikela sweswi.",
+    "fieldLabels": {
+      "stage": "Xiyimo",
+      "subStatus": "Xiyimo xa le hansi",
+      "scheduledAt": "Xedulu",
+      "notes": "Tinhlamuselo",
+      "assignedTo": "Ku Averiwa Eka"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} ) .",
+    "events": {
+      "REGISTRATION_RECEIVED": "Ku tsarisiwa ka mutirhisani ku amukeriwile",
+      "DUPLICATE_CHECK_COMPLETED": "Ku kamberiwa ka ku phindha-phindha ku hetisiwile - ku hava ku phindha-phindha loku tirhaka loku kumiweke",
+      "REGISTRATION_ACCEPTED": "Ku tsarisiwa ka amukeriwile",
+      "PROTECTION_GRANTED_one": "{{count}} -nsirhelelo wa siku wu nyikiwile",
+      "PROTECTION_GRANTED_other": "{{count}} -nsirhelelo wa siku wu nyikiwile",
+      "REGISTRATION_ATTEMPT_REJECTED": "Ku ringeta ku tsarisa loku phindhiweke hi {{partnerId}} ku ariwile",
+      "LEAD_DETAILS_UPDATED_one": "Nsimu ya {{count}} leyi pfuxetiweke",
+      "LEAD_DETAILS_UPDATED_other": "Tinsimu ta {{count}} leti pfuxetiweke",
+      "STAGE_UPDATED": "Xiyimo xi pfuxetiwile eka {{status}}",
+      "LEAD_ASSIGNED": "Yi averiwe {{name}}",
+      "LEAD_UNASSIGNED": "A swi averiwe",
+      "BOOKING_COMPLETED": "Ku bukuta ku hetisiwile",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Vun’wini bya ntirho byi hundziseriwe eka Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Ku boxiwa ka mutirhisani ku hlayisiwile",
+      "COMMISSION_ELIGIBILITY_CREATED": "Ku faneleka ka khomixini ku tumbuluxiwile",
+      "HANDOVER_COMPLETED": "Ku nyiketiwa ka swilo ku hetisiwile",
+      "REFERRAL_ACCEPTED": "Muaki u amukele ku rhumeriwa",
+      "REFERRAL_REJECTED": "Builder u arile ku rhumeriwa. Xivangelo: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin u humesile nsirhelelo wa ti duplicate ka ha ri na nkarhi. Xivangelo: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin u avele nakambe ku tsarisa ku suka eka {{from}} ku ya eka {{to}} . Xivangelo: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Lawula Tikholomu",
+    "hint": "Koka ku oda nakambe · kambela ku kombisa",
+    "showAll": "Kombisa Hinkwaswo",
+    "resetDefault": "Seta eka Default"
+  },
+  "filters": {
+    "title": "Swisefo",
+    "allProjects": "Tiphurojeke hinkwato",
+    "any": "Xihi na xihi",
+    "noFields": "Ku hava tinsimu tin’wana leti sefiwaka leti pfuriweke ku fikela sweswi (Swiyimiso > Rhangeli).",
+    "clearAll": "Hlawula Hinkwaswo"
+  },
+  "phone": {
+    "MISSING": "Nomboro ya riqingho ya laveka.",
+    "INVALID": "Hi kombela u nghenisa nomboro ya riqingho leyi tirhaka.",
+    "TOO_SHORT": "Nomboro ya riqingho yi komile ngopfu.",
+    "TOO_LONG": "Nomboro ya riqingho yi lehe ngopfu.",
+    "INVALID_FOR_COUNTRY": "Nomboro leyi ya riqingho a yi tirhi eka {{country}} .",
+    "COUNTRY_MISMATCH": "Hi kombela u hlawula khodi ya tiko leyi faneleke.",
+    "NOT_MOBILE": "Hi kombela u nghenisa nomboro ya mobile, hayi landline."
+  }
+}

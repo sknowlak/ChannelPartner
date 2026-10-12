@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Mənim Rəhbərlərim",
+    "signedInAs": "{{name}} ( {{partnerId}} ) kimi daxil olub · {{timezone}} ilə göstərilən vaxtlar",
+    "addLead": "+ Rəhbər əlavə edin",
+    "tabs": {
+      "all": "Hamısı ( {{count}} )",
+      "pending": "Gözlənir ( {{count}} )",
+      "booked": "Rezerv edildi ( {{count}} )"
+    },
+    "searchPlaceholder": "Ad, mobil və ya qeydiyyat ID ilə axtarın...",
+    "manageColumns": "Sütunları idarə edin",
+    "rowsPerPage": "Səhifə başına satırlar",
+    "registrationId": "Qeydiyyat ID",
+    "emptyState": "Hələ potensial potensial yoxdur - birincinizi qeydiyyatdan keçirin.",
+    "noMatch": "Bu filtrlərə uyğun gələn aparıcılar yoxdur.",
+    "showing": "{ {{total}} yazıdan {{from}} - {{to}} ədədi göstərilir",
+    "actions": {
+      "preview": "Önizləmə və sürətli yeniləmə",
+      "history": "Tarix",
+      "email": "E-poçt",
+      "whatsapp": "WhatsApp",
+      "call": "Zəng edin"
+    },
+    "pagination": {
+      "first": "Birinci səhifə",
+      "previous": "Əvvəlki səhifə",
+      "next": "Növbəti səhifə",
+      "last": "Son səhifə"
+    }
+  },
+  "columns": {
+    "status": "Vəziyyət",
+    "assignTo": "Təyin et",
+    "booked": "bron edildi",
+    "protectionUntil": "Qoruma qədər"
+  },
+  "booking": {
+    "booked": "bron edildi",
+    "pending": "Gözlənir"
+  },
+  "assign": {
+    "unassigned": "Təyin edilmədi",
+    "owner": "{{name}} (Sahibi)",
+    "inactive": "{{name}} (qeyri-aktiv)",
+    "unknownUser": "Naməlum istifadəçi",
+    "assignedTo": "{{name}} adlı şəxsə təyin edildi"
+  },
+  "form": {
+    "addTitle": "Rəhbər əlavə edin",
+    "editTitle": "Rəhbəri Redaktə et",
+    "noPermissionAdd": "Potensialları qeydiyyatdan keçirmək icazəniz yoxdur.",
+    "noPermissionEdit": "Potensialları redaktə etmək icazəniz yoxdur.",
+    "selectPlaceholder": "Seçin...",
+    "commaSeparated": "Vergül ayrıldı",
+    "phonePlaceholder": "Telefon nömrəsi",
+    "countryCode": "Ölkə kodu"
+  },
+  "project": {
+    "none": "Hələ layihə yoxdur (istinad edilməyib)",
+    "notInList": "{{project}} (layihə siyahısında deyil)"
+  },
+  "journey": {
+    "customer": "Müştəri",
+    "currentOwner": "Hazırkı Sahibi",
+    "protectionExpiry": "Qoruma müddəti",
+    "leadStatus": "Aparıcı Vəziyyəti",
+    "scheduled": "Planlaşdırılıb",
+    "assignedTo": "Təyin edilmişdir",
+    "referral": "İstinad",
+    "builderReason": "İnşaatçının səbəbi: {{reason}}",
+    "bookedHint": "İnşaatçı tərəfindən sifariş edildi - əməliyyat mülkiyyəti inşaatçıya keçdi; atribut və komissiya uyğunluğunuz saxlanılır.",
+    "notBookedHint": "Rezervasyonlar sifarişi qəbul etdikdən sonra inşaatçı tərəfindən təsdiqlənir.",
+    "quickUpdate": "Tez Yeniləmə",
+    "leadDetails": "Rəhbər təfərrüatları",
+    "progressHistory": "Tərəqqi Tarixi",
+    "timesIn": "( {{timezone}} vaxt)",
+    "backToMyLeads": "Rəhbərlərim səhifəsinə qayıt",
+    "editLead": "Rəhbəri Redaktə et"
+  },
+  "referral": {
+    "NOT_REFERRED": "İstinad edilməyib (layihə yoxdur)",
+    "PENDING_BUILDER": "İnşaatçı gözləyir",
+    "ACCEPTED": "İnşaatçı tərəfindən qəbul olunur",
+    "REJECTED": "İnşaatçı tərəfindən rədd edildi"
+  },
+  "preview": {
+    "ariaLabel": "Aparıcı önizləmə",
+    "title": "Aparıcı Ön Baxış",
+    "source": "Mənbə",
+    "location": "Məkan",
+    "scheduled": "Planlaşdırılıb",
+    "registered": "Qeydiyyatdan keçib",
+    "latestNote": "Son Qeyd",
+    "quickUpdate": "Tez Yeniləmə",
+    "fullDetails": "Tam Təfərrüatlar",
+    "editLead": "Rəhbəri Redaktə et",
+    "history": "Tarix"
+  },
+  "quick": {
+    "assignedTo": "Təyin edilmişdir",
+    "status": "Vəziyyət",
+    "subStatus": "Alt status",
+    "selectSubStatus": "Alt status seçin...",
+    "none": "Heç biri",
+    "scheduledAt": "Planlaşdırılıb",
+    "localTime": "yerli vaxt",
+    "note": "Qeyd",
+    "notePlaceholder": "Bu zəngdə/ziyarətdə nə baş verdi? (isteğe bağlı)",
+    "updateStatus": "Statusu yeniləyin",
+    "statusUpdated": "Status yeniləndi",
+    "bookedLocked": "Bu potensial sifariş edilib - onun statusu artıq dəyişdirilə bilməz.",
+    "viewOnly": "Siz bu potensiala baxa bilərsiniz, lakin rolunuz onu yeniləyə bilməz."
+  },
+  "history": {
+    "title": "Tarixçə - {{registrationId}}",
+    "tabs": {
+      "all": "Hamısı",
+      "status": "Vəziyyət",
+      "assignment": "Tapşırıq",
+      "notes": "Qeydlər"
+    },
+    "doneBy": "{{actor}} tərəfindən edildi",
+    "system": "Sistem",
+    "platforms": {
+      "System": "Sistem",
+      "External": "Xarici",
+      "Web": "Veb",
+      "Mobile": "Mobil"
+    },
+    "added": "əlavə etdi",
+    "updated": "yeniləndi",
+    "empty": "(boş)",
+    "noHistory": "Bu kateqoriyada hələ tarix yoxdur.",
+    "fieldLabels": {
+      "stage": "Vəziyyət",
+      "subStatus": "Alt status",
+      "scheduledAt": "Cədvəl",
+      "notes": "Qeydlər",
+      "assignedTo": "Təyin edilmişdir"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Tərəfdaş qeydiyyatı alındı",
+      "DUPLICATE_CHECK_COMPLETED": "Dublikat yoxlanışı tamamlandı - aktiv dublikat tapılmadı",
+      "REGISTRATION_ACCEPTED": "Qeydiyyat qəbul edildi",
+      "PROTECTION_GRANTED_one": "{{count}} -günlük qoruma verilir",
+      "PROTECTION_GRANTED_other": "{{count}} -günlük qoruma verilir",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partnerId}} tərəfindən dublikat qeydiyyat cəhdi rədd edildi",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} sahəsi yeniləndi",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} sahə yeniləndi",
+      "STAGE_UPDATED": "Status {{status}} olaraq yeniləndi",
+      "LEAD_ASSIGNED": "{{name}} adlı şəxsə təyin edildi",
+      "LEAD_UNASSIGNED": "Təyin edilmədi",
+      "BOOKING_COMPLETED": "Rezervasiya tamamlandı",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Əməliyyat mülkiyyəti İnşaatçıya keçdi",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partnyor atributu qorunub",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komissiya uyğunluğu yaradıldı",
+      "HANDOVER_COMPLETED": "Təhvil-təslim tamamlandı",
+      "REFERRAL_ACCEPTED": "İnşaatçı müraciəti qəbul etdi",
+      "REFERRAL_REJECTED": "İnşaatçı təklifi rədd etdi. Səbəb: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin dublikat qorumasını erkən buraxdı. Səbəb: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin qeydiyyatı {{from}} dən {{to}} a təyin etdi. Səbəb: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Sütunları idarə edin",
+    "hint": "Yenidən sıralamaq üçün sürüşdürün · göstərmək üçün işarələyin",
+    "showAll": "Hamısını göstər",
+    "resetDefault": "Default olaraq sıfırlayın"
+  },
+  "filters": {
+    "title": "Filtrlər",
+    "allProjects": "Bütün layihələr",
+    "any": "İstənilən",
+    "noFields": "Başqa heç bir süzülə bilən sahə hələ aktiv edilməyib (Parametrlər > Tələb).",
+    "clearAll": "Hamısını Sil"
+  },
+  "phone": {
+    "MISSING": "Telefon nömrəsi tələb olunur.",
+    "INVALID": "Zəhmət olmasa etibarlı telefon nömrəsi daxil edin.",
+    "TOO_SHORT": "Telefon nömrəsi çox qısadır.",
+    "TOO_LONG": "Telefon nömrəsi çox uzundur.",
+    "INVALID_FOR_COUNTRY": "Bu telefon nömrəsi {{country}} üçün keçərli deyil.",
+    "COUNTRY_MISMATCH": "Zəhmət olmasa düzgün ölkə kodunu seçin.",
+    "NOT_MOBILE": "Zəhmət olmasa, stasionar deyil, mobil nömrə daxil edin."
+  }
+}

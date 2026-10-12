@@ -1,0 +1,186 @@
+{
+  "list": {
+    "title": "Ndị ndu m",
+    "signedInAs": "Banyere dị ka {{name}} ( {{partnerId}} ) · oge egosiri na {{timezone}}",
+    "addLead": "+ Tinye ndu",
+    "tabs": {
+      "all": "Ha niile ( {{count}} )",
+      "pending": "Na-echere ( {{count}} )",
+      "booked": "Edere akwụkwọ ( {{count}} )"
+    },
+    "searchPlaceholder": "Chọọ n'aha, mkpanaka, ma ọ bụ NJ ndebanye ID ...",
+    "manageColumns": "Jikwaa kọlụm",
+    "rowsPerPage": "Ahịrị kwa ibe",
+    "registrationId": "NJ ndebanye ID",
+    "emptyState": "Enweghị ụzọ ọzọ - debanye aha nke mbụ gị.",
+    "noMatch": "Ọ nweghị ụzọ ọ bụla dabara na nzacha ndị a.",
+    "showing": "Na-egosi {{from}} - {{to}} nke ndenye {{total}}",
+    "actions": {
+      "preview": "Nhụchalụ & mmelite ngwa ngwa",
+      "history": "Akụkọ ihe mere eme",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Kpọọ"
+    },
+    "pagination": {
+      "first": "Ibe mbụ",
+      "previous": "Ibe gara aga",
+      "next": "Ibe na-esote",
+      "last": "Ibe ikpeazụ"
+    }
+  },
+  "columns": {
+    "status": "Ọnọdụ",
+    "assignTo": "Kenye Nye",
+    "booked": "Edere akwụkwọ",
+    "protectionUntil": "Nchedo Ruo"
+  },
+  "booking": {
+    "booked": "Edere akwụkwọ",
+    "pending": "Na-echere"
+  },
+  "assign": {
+    "unassigned": "Ekenyeghi ya",
+    "owner": "{{name}} (Onye nwe ya)",
+    "inactive": "{{name}} (anaghị arụ ọrụ)",
+    "unknownUser": "Onye ọrụ amaghị",
+    "assignedTo": "Enyere ya {{name}}"
+  },
+  "form": {
+    "addTitle": "Tinye ndu",
+    "editTitle": "Dezie ndu",
+    "noPermissionAdd": "Ịnweghị ikike ịdebanye aha ndị ndu.",
+    "noPermissionEdit": "Ịnweghị ikike idezi ụzọ.",
+    "selectPlaceholder": "Họrọ...",
+    "commaSeparated": "Rikoma kewara",
+    "phonePlaceholder": "Nọmba ekwentị",
+    "countryCode": "Koodu obodo"
+  },
+  "project": {
+    "none": "Enweghị oru ngo (anaghị ezo aka)",
+    "notInList": "{{project}} (ọ bụghị na ndepụta oru ngo)"
+  },
+  "journey": {
+    "customer": "Onye ahịa",
+    "currentOwner": "Onye nwe ugbu a",
+    "protectionExpiry": "Mkpebi nchedo",
+    "leadStatus": "Ọnọdụ ndu",
+    "scheduled": "Haziri ya",
+    "assignedTo": "Enyere ya",
+    "referral": "Ntugharị",
+    "builderReason": "Ihe kpatara onye nrụpụta: {{reason}}",
+    "bookedHint": "Onye na-ewu ụlọ debere ya - ikike ịrụ ọrụ ebufela onye na-ewu ụlọ; A na-edobe njirimara na ntozu ọrụ gị.",
+    "notBookedHint": "Onye na-ewu ụlọ na-akwado ntinye akwụkwọ ozugbo ha nabatara ntinye aka.",
+    "quickUpdate": "Mmelite ngwa ngwa",
+    "leadDetails": "Nkọwapụta",
+    "progressHistory": "Akụkọ ọganihu",
+    "timesIn": "(oge na {{timezone}} )",
+    "backToMyLeads": "Laghachi na ndu m",
+    "editLead": "Dezie ndu"
+  },
+  "referral": {
+    "NOT_REFERRED": "A naghị ezo aka (enweghị ọrụ)",
+    "PENDING_BUILDER": "Na-eche onye nrụpụta",
+    "ACCEPTED": "Onye nrụpụta nabatara ya",
+    "REJECTED": "Onye nrụpụta jụrụ ya"
+  },
+  "preview": {
+    "ariaLabel": "Nhụchalụ ndu",
+    "title": "Nhụchalụ ndu",
+    "source": "Isi mmalite",
+    "location": "Ebe",
+    "scheduled": "Haziri ya",
+    "registered": "Edebara aha",
+    "latestNote": "Ihe ndetu kacha ọhụrụ",
+    "quickUpdate": "Mmelite ngwa ngwa",
+    "fullDetails": "Nkọwa zuru oke",
+    "editLead": "Dezie ndu",
+    "history": "Akụkọ ihe mere eme"
+  },
+  "quick": {
+    "assignedTo": "Enyere ya",
+    "status": "Ọnọdụ",
+    "subStatus": "Obere ọnọdụ",
+    "selectSubStatus": "Họrọ obere ọnọdụ...",
+    "none": "Ọ dịghị",
+    "scheduledAt": "Ahaziri na",
+    "localTime": "oge ime obodo",
+    "note": "Rịba ama",
+    "notePlaceholder": "Kedu ihe mere na oku/nleta a? (nhọrọ)",
+    "updateStatus": "Melite ọnọdụ",
+    "statusUpdated": "Emelitere ọnọdụ",
+    "bookedLocked": "Edebere ụzọ a - enweghị ike ịgbanwe ọnọdụ ya ọzọ.",
+    "viewOnly": "Ị nwere ike ịlele ụzọ a, mana ọrụ gị enweghị ike imelite ya."
+  },
+  "history": {
+    "title": "Akụkọ ihe mere eme - {{registrationId}}",
+    "tabs": {
+      "all": "Ha niile",
+      "status": "Ọnọdụ",
+      "assignment": "Ihe omume",
+      "notes": "Ihe ndetu"
+    },
+    "doneBy": "Emere ya site na {{actor}}",
+    "system": "Sistemu",
+    "platforms": {
+      "System": "Sistemu",
+      "External": "Mpụga",
+      "Web": "Weebụ",
+      "Mobile": "Mobile"
+    },
+    "added": "agbakwunyere",
+    "updated": "emelitere",
+    "empty": "(efu)",
+    "noHistory": "Enweghị akụkọ ihe mere eme n'ụdị a.",
+    "fieldLabels": {
+      "stage": "Ọnọdụ",
+      "subStatus": "Obere ọnọdụ",
+      "scheduledAt": "Nhazi oge",
+      "notes": "Ihe ndetu",
+      "assignedTo": "Enyere ya"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Enwetara ndebanye aha onye mmekọ",
+      "DUPLICATE_CHECK_COMPLETED": "Nlele oyiri emechara - ọnweghị oyiri na-arụ ọrụ ahụrụ",
+      "REGISTRATION_ACCEPTED": "nabatara ndebanye aha",
+      "PROTECTION_GRANTED_other": "Enyere nchebe ụbọchị {{count}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Mgbalị ndebanye nke abụọ nke {{partnerId}} jụrụ",
+      "LEAD_DETAILS_UPDATED_other": "Emelitere {{count}} ubi",
+      "STAGE_UPDATED": "Emelitere ọnọdụ ka ọ bụrụ {{status}}",
+      "LEAD_ASSIGNED": "Enyere ya {{name}}",
+      "LEAD_UNASSIGNED": "Ekenyeghi ya",
+      "BOOKING_COMPLETED": "Etinye akwụkwọ agwụla",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Ebufere onye nrụpụta ọrụ n'aka Onye nrụpụta",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Echekwara njirimara onye mmekọ",
+      "COMMISSION_ELIGIBILITY_CREATED": "Emepụtara ntozu nke kọmitii",
+      "HANDOVER_COMPLETED": "Emechaala inyefe",
+      "REFERRAL_ACCEPTED": "Onye nrụpụta nabatara ntụnye aka",
+      "REFERRAL_REJECTED": "Onye nrụpụta jụrụ ntụnye aka. Ihe kpatara ya: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin weputara nchedo oyiri n'oge. Ihe kpatara ya: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin ekenyegharịrị ndebanye aha site na {{from}} gaa na {{to}} . Ihe kpatara ya: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Jikwaa kọlụm",
+    "hint": "Dọrọ ka ị hazie · lelee ka igosi",
+    "showAll": "Gosi ihe niile",
+    "resetDefault": "Tọgharịa ka ọ bụrụ nke an-kpọ"
+  },
+  "filters": {
+    "title": "Ihe nzacha",
+    "allProjects": "Ọrụ niile",
+    "any": "Nke ọ bụla",
+    "noFields": "Ọnweghị mpaghara ọzọ enwere ike nzacha enyere aka (Ntọala> Ndu).",
+    "clearAll": "Kpochapụ ihe niile"
+  },
+  "phone": {
+    "MISSING": "Achọrọ nọmba ekwentị.",
+    "INVALID": "Biko tinye nọmba ekwentị bara uru.",
+    "TOO_SHORT": "Nọmba ekwentị dị mkpụmkpụ.",
+    "TOO_LONG": "Nọmba ekwentị dị ogologo.",
+    "INVALID_FOR_COUNTRY": "Nọmba ekwentị a abaghị uru maka {{country}} .",
+    "COUNTRY_MISMATCH": "Biko họrọ koodu obodo ziri ezi.",
+    "NOT_MOBILE": "Biko tinye nọmba ekwentị mkpanaaka, ọ bụghị akara ala."
+  }
+}

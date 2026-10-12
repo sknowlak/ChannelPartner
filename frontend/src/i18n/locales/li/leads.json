@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Mien leads",
+    "signedInAs": "Aangelogd es {{name}} ( {{partnerId}} ) · tieden getoend in {{timezone}}",
+    "addLead": "+ Lead toevoege",
+    "tabs": {
+      "all": "Alle ( {{count}} )",
+      "pending": "In afwachting ( {{count}} )",
+      "booked": "Gebook ( {{count}} )"
+    },
+    "searchPlaceholder": "Zoek op naam, mobiel of registratie- ID ...",
+    "manageColumns": "Kolomme behere",
+    "rowsPerPage": "Rieje per pagina",
+    "registrationId": "Registratie- ID",
+    "emptyState": "Nog gein lead - registreer eur ierste.",
+    "noMatch": "Gein leads euvereinkomme mit dees filters.",
+    "showing": "{{from}} - {{to}} vaan {{total}} invoere toene",
+    "actions": {
+      "preview": "Veurbeeld & snel update",
+      "history": "Histoorie",
+      "email": "E-mail",
+      "whatsapp": "WhatsApp",
+      "call": "Belle"
+    },
+    "pagination": {
+      "first": "Ierste pagina",
+      "previous": "Vorige pagina",
+      "next": "Volgende pagina",
+      "last": "Lètste pagina"
+    }
+  },
+  "columns": {
+    "status": "Sjtatus",
+    "assignTo": "Toewieze aan",
+    "booked": "Gebook",
+    "protectionUntil": "Besjerming tot"
+  },
+  "booking": {
+    "booked": "Gebook",
+    "pending": "In aafwachting"
+  },
+  "assign": {
+    "unassigned": "Neet toegeweze",
+    "owner": "{{name}} (Eigenaar)",
+    "inactive": "{{name}} (inactief)",
+    "unknownUser": "Onbekende gebruker",
+    "assignedTo": "Toegeweze aan {{name}}"
+  },
+  "form": {
+    "addTitle": "Lead toevoege",
+    "editTitle": "Lead bewerke",
+    "noPermissionAdd": "Geer heet gein toestumming um leads te registrere.",
+    "noPermissionEdit": "Geer höb gein toestemming um leads te bewirke.",
+    "selectPlaceholder": "Selectere...",
+    "commaSeparated": "Komma gesjeije",
+    "phonePlaceholder": "Telefoonnummer",
+    "countryCode": "Landcode"
+  },
+  "project": {
+    "none": "Nog gein projek (neet verweze)",
+    "notInList": "{{project}} (neet in de projeklies)"
+  },
+  "journey": {
+    "customer": "Klant",
+    "currentOwner": "Huidige eigenaar",
+    "protectionExpiry": "Vervaldatum vaan besjerming",
+    "leadStatus": "Leadstatus",
+    "scheduled": "Gepland",
+    "assignedTo": "Toegeweze aan",
+    "referral": "Verwiezing",
+    "builderReason": "Reie vaan de bouwer: {{reason}}",
+    "bookedHint": "Gebookt door de bouwer - de operationele eigendom is nao de bouwer geplaats; eur touwsjrijving en commissie-kwalificatie weure behawwe.",
+    "notBookedHint": "Reserveringe weure bevestig door de bouwer zodra ze de verwiezing acceptere.",
+    "quickUpdate": "Snel update",
+    "leadDetails": "Details vaan lead",
+    "progressHistory": "Vooruitgangsgesjiedenis",
+    "timesIn": "(tieden in {{timezone}} )",
+    "backToMyLeads": "Terug nao mien leiding",
+    "editLead": "Lead bewerke"
+  },
+  "referral": {
+    "NOT_REFERRED": "Neet verweze (geen projek)",
+    "PENDING_BUILDER": "Wachte op de bouwer",
+    "ACCEPTED": "Geaccepteerd door de bouwer",
+    "REJECTED": "Aafgeweze door de bouwer"
+  },
+  "preview": {
+    "ariaLabel": "Voorbeeld vaan lead",
+    "title": "Voorbeeld vaan lead",
+    "source": "Bron",
+    "location": "Lokasie",
+    "scheduled": "Gepland",
+    "registered": "Geregistreerd",
+    "latestNote": "Nieuwste opmerking",
+    "quickUpdate": "Snel update",
+    "fullDetails": "Volledige details",
+    "editLead": "Lead bewerke",
+    "history": "Histoorie"
+  },
+  "quick": {
+    "assignedTo": "Toegeweze aan",
+    "status": "Sjtatus",
+    "subStatus": "Substatus",
+    "selectSubStatus": "Selecteer substatus...",
+    "none": "Gein",
+    "scheduledAt": "Gepland um",
+    "localTime": "lokaal tied",
+    "note": "Nootiesie",
+    "notePlaceholder": "Wat is d’r gebeurd bij deze oproep/bezeuk? (opsjoneel)",
+    "updateStatus": "Status bijwerke",
+    "statusUpdated": "Status bijgewerk",
+    "bookedLocked": "Deze lead is gebook - de status kin neet langer weure veranderd.",
+    "viewOnly": "Geer kin deze lead bekieke, mer eur rol kin ‘m neet bijwerke."
+  },
+  "history": {
+    "title": "Gesjiedenis - {{registrationId}}",
+    "tabs": {
+      "all": "Àlle",
+      "status": "Sjtatus",
+      "assignment": "Opdrach",
+      "notes": "Opmerkinge"
+    },
+    "doneBy": "Gedaon door {{actor}}",
+    "system": "Siesteem",
+    "platforms": {
+      "System": "Siesteem",
+      "External": "Van boetenaaf",
+      "Web": "Web",
+      "Mobile": "Mobiel"
+    },
+    "added": "touwgevoog",
+    "updated": "bijgewerk",
+    "empty": "(lêg)",
+    "noHistory": "Nog gein gesjiedenis in deze categorie.",
+    "fieldLabels": {
+      "stage": "Sjtatus",
+      "subStatus": "Substatus",
+      "scheduledAt": "Kàlènder",
+      "notes": "Opmerkinge",
+      "assignedTo": "Toegeweze aan"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Partnerregistratie ontvange",
+      "DUPLICATE_CHECK_COMPLETED": "Dubbele controle voltooid - gein actief dubbele gevoonde",
+      "REGISTRATION_ACCEPTED": "Registratie geaccepteerd",
+      "PROTECTION_GRANTED_one": "{{count}} -daag besjerming verliend",
+      "PROTECTION_GRANTED_other": "{{count}} -daag besjerming verliend",
+      "REGISTRATION_ATTEMPT_REJECTED": "Dubbele registratiepoging door {{partnerId}} is aafgeweze",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} veld geüpdate",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} velde bijgewerk",
+      "STAGE_UPDATED": "Status bijgewerk nao {{status}}",
+      "LEAD_ASSIGNED": "Toegeweze aan {{name}}",
+      "LEAD_UNASSIGNED": "Neet toegeweze",
+      "BOOKING_COMPLETED": "Reservering voltooid",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operationeel eigenaarsjap euvergedrage aon Bouwer",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partnertoewijzing bewaord",
+      "COMMISSION_ELIGIBILITY_CREATED": "Insjakelbaarheid veur commissie is opgeriech",
+      "HANDOVER_COMPLETED": "Overdrach voltooid",
+      "REFERRAL_ACCEPTED": "Bouwer heet de verwiezing geaccepteerd",
+      "REFERRAL_REJECTED": "Builder heet de verwiezing aafgeweze. Reie: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin heet dubbele besjerming vreug oetgebrach. Reie: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin heet de registratie hertoegeweze vaan {{from}} nao {{to}} . Reie: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Kolomme behere",
+    "hint": "Sleep um te hersjtèlle · controleer um te toene",
+    "showAll": "Alle toene",
+    "resetDefault": "Reset op standaard"
+  },
+  "filters": {
+    "title": "Filters",
+    "allProjects": "Alle projekte",
+    "any": "Einige",
+    "noFields": "Nog gein aandere filterbare velde zien ingeschakeld (Instellinge > Lead).",
+    "clearAll": "Alles wies"
+  },
+  "phone": {
+    "MISSING": "Telefoonnummer is vereis.",
+    "INVALID": "Voer un geldig tillefoonnummer in.",
+    "TOO_SHORT": "‘t Telefoonnummer is te kort.",
+    "TOO_LONG": "‘t Telefoonnummer is te lank.",
+    "INVALID_FOR_COUNTRY": "Dit tillefoonnummer is neet geldig veur {{country}} .",
+    "COUNTRY_MISMATCH": "Selecteer de juiste landcode.",
+    "NOT_MOBILE": "Voer un mobielnummer in, gein vaste telefoon."
+  }
+}

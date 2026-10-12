@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Plon mwen yo",
+    "signedInAs": "Siyen an kòm {{name}} ( {{partnerId}} ) · fwa yo montre nan {{timezone}}",
+    "addLead": "+ Ajoute plon",
+    "tabs": {
+      "all": "Tout ( {{count}} )",
+      "pending": "Antant ( {{count}} )",
+      "booked": "Anrezève ( {{count}} )"
+    },
+    "searchPlaceholder": "Chèche pa non, mobil, oswa ID anrejistreman ...",
+    "manageColumns": "Jere Kolòn",
+    "rowsPerPage": "Ranje pou chak paj",
+    "registrationId": "ID anrejistreman",
+    "emptyState": "Pa gen okenn kondwi ankò - anrejistre premye youn ou a.",
+    "noMatch": "Pa gen okenn plon ki matche ak filtè sa yo.",
+    "showing": "Montre {{from}} - {{to}} nan {{total}} antre",
+    "actions": {
+      "preview": "Preview ak aktyalizasyon rapid",
+      "history": "Istwa",
+      "email": "Imèl",
+      "whatsapp": "WhatsApp",
+      "call": "Rele"
+    },
+    "pagination": {
+      "first": "Premye paj",
+      "previous": "Paj anvan",
+      "next": "Paj kap vini an",
+      "last": "Dènye paj"
+    }
+  },
+  "columns": {
+    "status": "Estati",
+    "assignTo": "Asiyen Pou",
+    "booked": "Anrezève",
+    "protectionUntil": "Pwoteksyon Jiskaske"
+  },
+  "booking": {
+    "booked": "Anrezève",
+    "pending": "annatant"
+  },
+  "assign": {
+    "unassigned": "Unassigned",
+    "owner": "{{name}} (pwopriyetè)",
+    "inactive": "{{name}} (inaktif)",
+    "unknownUser": "Itilizatè enkoni",
+    "assignedTo": "Bay {{name}}"
+  },
+  "form": {
+    "addTitle": "Ajoute plon",
+    "editTitle": "Edit plon",
+    "noPermissionAdd": "Ou pa gen pèmisyon pou w anrejistre leads.",
+    "noPermissionEdit": "Ou pa gen pèmisyon pou modifye leads.",
+    "selectPlaceholder": "Chwazi...",
+    "commaSeparated": "vigil separe",
+    "phonePlaceholder": "Nimewo telefòn",
+    "countryCode": "Kòd peyi"
+  },
+  "project": {
+    "none": "Pa gen pwojè ankò (pa refere)",
+    "notInList": "{{project}} (pa nan lis pwojè a)"
+  },
+  "journey": {
+    "customer": "Kliyan",
+    "currentOwner": "Pwopriyetè aktyèl la",
+    "protectionExpiry": "Pwoteksyon ekspirasyon",
+    "leadStatus": "Estati Plon",
+    "scheduled": "Pwograme",
+    "assignedTo": "Asiyen Pou",
+    "referral": "Referans",
+    "builderReason": "Rezon ki fè mason an: {{reason}}",
+    "bookedHint": "Li te rezerve pa mason an - gen an komen operasyon demenaje ale rete nan mason an; yo kenbe atribisyon w ak kalifikasyon komisyon w.",
+    "notBookedHint": "Rezèvasyon yo konfime pa mason an yon fwa yo aksepte referans la.",
+    "quickUpdate": "Mizajou rapid",
+    "leadDetails": "Plon Detay",
+    "progressHistory": "Istwa Pwogrè",
+    "timesIn": "(fwa nan {{timezone}} )",
+    "backToMyLeads": "Retounen nan Lead mwen yo",
+    "editLead": "Edit plon"
+  },
+  "referral": {
+    "NOT_REFERRED": "Pa refere (pa gen pwojè)",
+    "PENDING_BUILDER": "Ap tann pou mason",
+    "ACCEPTED": "Aksepte pa mason",
+    "REJECTED": "Rejte pa mason"
+  },
+  "preview": {
+    "ariaLabel": "Aperçu plon",
+    "title": "Preview plon",
+    "source": "Sous",
+    "location": "Kote",
+    "scheduled": "Pwograme",
+    "registered": "Anrejistre",
+    "latestNote": "Dènye Nòt",
+    "quickUpdate": "Mizajou rapid",
+    "fullDetails": "Detay konplè",
+    "editLead": "Edit plon",
+    "history": "Istwa"
+  },
+  "quick": {
+    "assignedTo": "Asiyen Pou",
+    "status": "Estati",
+    "subStatus": "Sou-Estati",
+    "selectSubStatus": "Chwazi sous-estati...",
+    "none": "Okenn",
+    "scheduledAt": "Pwograme nan",
+    "localTime": "lè lokal",
+    "note": "Remak",
+    "notePlaceholder": "Kisa ki te pase nan apèl / vizit sa a? (opsyonèl)",
+    "updateStatus": "Mizajou Estati",
+    "statusUpdated": "Estati mete ajou",
+    "bookedLocked": "Plon sa a se rezève - estati li yo pa ka chanje ankò.",
+    "viewOnly": "Ou ka wè plon sa a, men wòl ou pa ka mete l ajou."
+  },
+  "history": {
+    "title": "Istwa - {{registrationId}}",
+    "tabs": {
+      "all": "Tout",
+      "status": "Estati",
+      "assignment": "Plasman",
+      "notes": "Nòt"
+    },
+    "doneBy": "Fèt pa {{actor}}",
+    "system": "Sistèm",
+    "platforms": {
+      "System": "Sistèm",
+      "External": "Eksteryè",
+      "Web": "Web",
+      "Mobile": "Mobile"
+    },
+    "added": "te ajoute",
+    "updated": "mete ajou",
+    "empty": "(vid)",
+    "noHistory": "Pa gen istwa nan kategori sa a ankò.",
+    "fieldLabels": {
+      "stage": "Estati",
+      "subStatus": "Sou-Estati",
+      "scheduledAt": "Orè",
+      "notes": "Nòt",
+      "assignedTo": "Asiyen Pou"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Enskripsyon patnè yo te resevwa",
+      "DUPLICATE_CHECK_COMPLETED": "Tèks kopi ranpli - pa jwenn okenn kopi aktif",
+      "REGISTRATION_ACCEPTED": "Enskripsyon aksepte",
+      "PROTECTION_GRANTED_one": "{{count}} jou pwoteksyon akòde",
+      "PROTECTION_GRANTED_other": "{{count}} jou pwoteksyon akòde",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partnerId}} te rejte tantativ enskripsyon kopi",
+      "LEAD_DETAILS_UPDATED_one": "Mete ajou {{count}} jaden",
+      "LEAD_DETAILS_UPDATED_other": "Mete ajou {{count}} jaden yo",
+      "STAGE_UPDATED": "Estati mete ajou a {{status}}",
+      "LEAD_ASSIGNED": "Bay {{name}}",
+      "LEAD_UNASSIGNED": "Unassigned",
+      "BOOKING_COMPLETED": "Anrjistreman fini",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Pwopriyetè operasyonèl transfere bay Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribisyon patnè konsève",
+      "COMMISSION_ELIGIBILITY_CREATED": "Elijiblite komisyon kreye",
+      "HANDOVER_COMPLETED": "Transmisyon fini",
+      "REFERRAL_ACCEPTED": "Builder aksepte rekòmandasyon an",
+      "REFERRAL_REJECTED": "Builder rejte rekòmandasyon an. Rezon ki fè: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin lage pwoteksyon kopi bonè. Rezon ki fè: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin reassigne enskripsyon soti nan {{from}} a {{to}} . Rezon ki fè: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Jere Kolòn",
+    "hint": "Trennen pou rekòmande · tcheke pou montre",
+    "showAll": "Montre tout",
+    "resetDefault": "Reyajiste nan Default"
+  },
+  "filters": {
+    "title": "Filtè",
+    "allProjects": "Tout pwojè yo",
+    "any": "Nenpòt",
+    "noFields": "Pa gen lòt jaden filtraj yo aktive ankò (Anviwònman> Plon).",
+    "clearAll": "Efase tout"
+  },
+  "phone": {
+    "MISSING": "Nimewo telefòn obligatwa.",
+    "INVALID": "Tanpri antre yon nimewo telefòn valab.",
+    "TOO_SHORT": "Nimewo telefòn twò kout.",
+    "TOO_LONG": "Nimewo telefòn la twò long.",
+    "INVALID_FOR_COUNTRY": "Nimewo telefòn sa a pa valab pou {{country}} .",
+    "COUNTRY_MISMATCH": "Tanpri chwazi kòd peyi ki kòrèk la.",
+    "NOT_MOBILE": "Tanpri antre yon nimewo mobil, pa yon liy fiks."
+  }
+}

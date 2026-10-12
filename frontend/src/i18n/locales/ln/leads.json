@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Ba Leads na Ngai",
+    "signedInAs": "Ekoti lokola {{name}} ( {{partnerId}} ) · mbala oyo elakisami na {{timezone}}",
+    "addLead": "+ Bakisa Plomb",
+    "tabs": {
+      "all": "Nyonso ( {{count}} ) .",
+      "pending": "Ezali kozela ( {{count}} ) .",
+      "booked": "Ezwami na réservation ( {{count}} ) ."
+    },
+    "searchPlaceholder": "Luka na kombo, na telefone ya maboko, to ID ya inscription ...",
+    "manageColumns": "Gérer ba colonnes",
+    "rowsPerPage": "Milɔngɔ́ na lokasa moko",
+    "registrationId": "ID ya bokomisi nkombo",
+    "emptyState": "Pas de leads encore - enregistrer oyo ya liboso na yo.",
+    "noMatch": "Ba leads moko te ekokani na ba filtres oyo.",
+    "showing": "Kolakisa {{from}} - {{to}} ya {{total}} bokoti",
+    "actions": {
+      "preview": "Aperçu & mise à jour ya mbangu",
+      "history": "Lisolo",
+      "email": "Email na nzela ya email",
+      "whatsapp": "WhatsApp",
+      "call": "Kobenga"
+    },
+    "pagination": {
+      "first": "Lokasa ya liboso",
+      "previous": "Lokasa ya liboso",
+      "next": "Lokasa oyo elandi",
+      "last": "Lokasa ya nsuka"
+    }
+  },
+  "columns": {
+    "status": "Statut",
+    "assignTo": "Assign To",
+    "booked": "Ba réservé",
+    "protectionUntil": "Bobateli Kino"
+  },
+  "booking": {
+    "booked": "Ba réservé",
+    "pending": "Kozelisa"
+  },
+  "assign": {
+    "unassigned": "Epesameli mosala te",
+    "owner": "{{name}} (Nkolo)",
+    "inactive": "{{name}} (ezali kosala te)",
+    "unknownUser": "Mosaleli oyo ayebani te",
+    "assignedTo": "Epesameli na {{name}}"
+  },
+  "form": {
+    "addTitle": "Bakisa Plomb",
+    "editTitle": "Bobongisi Lead",
+    "noPermissionAdd": "Ozali na ndingisa te ya kokomisa ba leads.",
+    "noPermissionEdit": "Ozali na ndingisa te ya kobongisa ba leads.",
+    "selectPlaceholder": "Kopona...",
+    "commaSeparated": "Comma ekabwani",
+    "phonePlaceholder": "Nimero ya telefone",
+    "countryCode": "Code ya mboka"
+  },
+  "project": {
+    "none": "Projet moko te nanu (refere te)",
+    "notInList": "{{project}} (na liste ya projet te)"
+  },
+  "journey": {
+    "customer": "Kiliya",
+    "currentOwner": "Nkolo ya lelo",
+    "protectionExpiry": "Bobateli Esili",
+    "leadStatus": "Ezalela ya Plomb",
+    "scheduled": "Ebongisami na manaka",
+    "assignedTo": "Bapesami Na",
+    "referral": "Botindiki",
+    "builderReason": "Ntina ya motongi: {{reason}}",
+    "bookedHint": "Réservé par le constructeur - propriété opérationnelle ekendeki na motongi; attribution na yo mpe eligibilité na yo ya commission ebatelami.",
+    "notBookedHint": "Ba réservations e confirmer na constructeur une fois que ba ndimi référence.",
+    "quickUpdate": "Mikolo oyo ya Noki",
+    "leadDetails": "Ba Détails ya Plomb",
+    "progressHistory": "Lisolo ya bokoli",
+    "timesIn": "(ntango na {{timezone}} )",
+    "backToMyLeads": "Zongela Ba Leads Na Ngai",
+    "editLead": "Bobongisi Lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "Ba référer te (projet te) .",
+    "PENDING_BUILDER": "Kozela motongi",
+    "ACCEPTED": "Endimami na motongi",
+    "REJECTED": "Eboyami na motongi"
+  },
+  "preview": {
+    "ariaLabel": "Aperçu ya liboso",
+    "title": "Aperçu ya Plomb",
+    "source": "Esika",
+    "location": "Esika",
+    "scheduled": "Ebongisami na manaka",
+    "registered": "Bakomisamaki nkombo",
+    "latestNote": "Note ya sika",
+    "quickUpdate": "Mikolo oyo ya Noki",
+    "fullDetails": "Makambo Mobimba",
+    "editLead": "Bobongisi Lead",
+    "history": "Lisolo"
+  },
+  "quick": {
+    "assignedTo": "Bapesami Na",
+    "status": "Statut",
+    "subStatus": "Etat ya moke",
+    "selectSubStatus": "Pona sous-état...",
+    "none": "Moko te",
+    "scheduledAt": "Ebongisami na ngonga ya",
+    "localTime": "ngonga ya mboka",
+    "note": "Likebisi",
+    "notePlaceholder": "Nini esalemaki na appel / visite oyo? (soki olingi)",
+    "updateStatus": "Mikolo oyo Etat ya sika",
+    "statusUpdated": "Ezalela ebongwani",
+    "bookedLocked": "Lead oyo ezali réservé - statut na yango ekoki lisusu ko changer te.",
+    "viewOnly": "Okoki kotala lead oyo, kasi rôle na yo ekoki ko mettre à jour yango te."
+  },
+  "history": {
+    "title": "Lisolo ya kala - {{registrationId}}",
+    "tabs": {
+      "all": "Nyonso",
+      "status": "Statut",
+      "assignment": "Mosala",
+      "notes": "Maloba ya ntina"
+    },
+    "doneBy": "Esalemi na {{actor}}",
+    "system": "Ebongiseli",
+    "platforms": {
+      "System": "Ebongiseli",
+      "External": "Ya libanda",
+      "Web": "Web",
+      "Mobile": "Ya maboko"
+    },
+    "added": "abakisi",
+    "updated": "ezongisami na mikolo",
+    "empty": "(mpamba)",
+    "noHistory": "Histoire moko te na catégorie oyo nanu.",
+    "fieldLabels": {
+      "stage": "Statut",
+      "subStatus": "Etat ya moke",
+      "scheduledAt": "Manaka",
+      "notes": "Maloba ya ntina",
+      "assignedTo": "Bapesami Na"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Enregistrement ya partenaire ezuami",
+      "DUPLICATE_CHECK_COMPLETED": "Vérification ya double esili - doublon active ezwami te",
+      "REGISTRATION_ACCEPTED": "Kokomisa nkombo endimami",
+      "PROTECTION_GRANTED_one": "{{count}} -bobateli ya mokolo epesami",
+      "PROTECTION_GRANTED_other": "{{count}} -bobateli ya mokolo epesami",
+      "REGISTRATION_ATTEMPT_REJECTED": "Bomeki ya bokomisi nkombo ya mbala mibale na {{partnerId}} eboyami",
+      "LEAD_DETAILS_UPDATED_one": "Esika ya {{count}} ebongwani",
+      "LEAD_DETAILS_UPDATED_other": "Ba champs {{count}} oyo ebongwani",
+      "STAGE_UPDATED": "Ezalela ebongwani na {{status}}",
+      "LEAD_ASSIGNED": "Epesameli na {{name}}",
+      "LEAD_UNASSIGNED": "Epesameli mosala te",
+      "BOOKING_COMPLETED": "Réservation esili",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Propriété opérationnelle e transféré na Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Attribution ya partenaire ebatelami",
+      "COMMISSION_ELIGIBILITY_CREATED": "Eligibilité ya Commission esalemi",
+      "HANDOVER_COMPLETED": "Bopesi mosala esili",
+      "REFERRAL_ACCEPTED": "Builder andimaki référence wana",
+      "REFERRAL_REJECTED": "Builder aboyaki botindiki yango. Ntina: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin abimisi protection ya doublon tôt. Ntina: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin apesaki lisusu bokomisi nkombo uta {{from}} kino na {{to}} . Ntina: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Gérer ba colonnes",
+    "hint": "Bendá mpo na kozongisa na molɔngɔ · vérifier mpo na kolakisa",
+    "showAll": "Lakisa Nyonso",
+    "resetDefault": "Réinitialiser na Default"
+  },
+  "filters": {
+    "title": "Ba filtres",
+    "allProjects": "Ba projets nionso",
+    "any": "Nyonso",
+    "noFields": "Ba champs mosusu oyo ekoki ko filtrer e activé nanu te (Paramètres > Lead).",
+    "clearAll": "Effacer Nionso"
+  },
+  "phone": {
+    "MISSING": "Esengeli nimero ya telefone.",
+    "INVALID": "Tosɛngi yo otya nimero ya telefone oyo ezali na ntina.",
+    "TOO_SHORT": "Nimero ya telefone ezali mokuse mingi.",
+    "TOO_LONG": "Nimero ya telefone ezali molai mingi.",
+    "INVALID_FOR_COUNTRY": "Nimero oyo ya telefone ezali na ntina te mpo na {{country}} .",
+    "COUNTRY_MISMATCH": "Svp pona code ya mboka oyo ebongi.",
+    "NOT_MOBILE": "Svp botia numéro ya téléphone portable, kasi téléphone fixe te."
+  }
+}

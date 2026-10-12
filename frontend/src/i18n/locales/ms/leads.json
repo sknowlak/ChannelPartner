@@ -1,0 +1,186 @@
+{
+  "list": {
+    "title": "Pemimpin Saya",
+    "signedInAs": "Log masuk sebagai {{name}} ( {{partnerId}} ) · masa ditunjukkan dalam {{timezone}}",
+    "addLead": "+ Tambah Plumbum",
+    "tabs": {
+      "all": "Semua ( {{count}} )",
+      "pending": "Belum selesai ( {{count}} )",
+      "booked": "Tempah ( {{count}} )"
+    },
+    "searchPlaceholder": "Cari mengikut nama, mudah alih atau ID pendaftaran ...",
+    "manageColumns": "Urus Lajur",
+    "rowsPerPage": "Baris setiap halaman",
+    "registrationId": "ID Pendaftaran",
+    "emptyState": "Tiada petunjuk lagi - daftarkan yang pertama anda.",
+    "noMatch": "Tiada petunjuk yang sepadan dengan penapis ini.",
+    "showing": "Menunjukkan {{from}} - {{to}} daripada {{total}} entri",
+    "actions": {
+      "preview": "Pratonton & kemas kini pantas",
+      "history": "Sejarah",
+      "email": "E-mel",
+      "whatsapp": "WhatsApp",
+      "call": "Panggil"
+    },
+    "pagination": {
+      "first": "Muka surat pertama",
+      "previous": "Halaman sebelumnya",
+      "next": "Halaman seterusnya",
+      "last": "Muka surat terakhir"
+    }
+  },
+  "columns": {
+    "status": "Status",
+    "assignTo": "Tugaskan Kepada",
+    "booked": "Tempah",
+    "protectionUntil": "Perlindungan Sehingga"
+  },
+  "booking": {
+    "booked": "Tempah",
+    "pending": "Belum selesai"
+  },
+  "assign": {
+    "unassigned": "Tidak ditugaskan",
+    "owner": "{{name}} (Pemilik)",
+    "inactive": "{{name}} (tidak aktif)",
+    "unknownUser": "Pengguna tidak dikenali",
+    "assignedTo": "Ditugaskan kepada {{name}}"
+  },
+  "form": {
+    "addTitle": "Tambah Plumbum",
+    "editTitle": "Edit Lead",
+    "noPermissionAdd": "Anda tidak mempunyai kebenaran untuk mendaftarkan petunjuk.",
+    "noPermissionEdit": "Anda tidak mempunyai kebenaran untuk mengedit petunjuk.",
+    "selectPlaceholder": "Pilih...",
+    "commaSeparated": "Koma dipisahkan",
+    "phonePlaceholder": "Nombor telefon",
+    "countryCode": "Kod negara"
+  },
+  "project": {
+    "none": "Belum ada projek (belum dirujuk)",
+    "notInList": "{{project}} (tiada dalam senarai projek)"
+  },
+  "journey": {
+    "customer": "Pelanggan",
+    "currentOwner": "Pemilik Semasa",
+    "protectionExpiry": "Perlindungan Tamat",
+    "leadStatus": "Status Pemimpin",
+    "scheduled": "Dijadualkan",
+    "assignedTo": "Ditugaskan Kepada",
+    "referral": "Rujukan",
+    "builderReason": "Alasan pembina: {{reason}}",
+    "bookedHint": "Ditempah oleh pembina - pemilikan operasi telah berpindah kepada pembina; atribusi dan kelayakan komisen anda disimpan.",
+    "notBookedHint": "Tempahan disahkan oleh pembina sebaik sahaja mereka menerima rujukan.",
+    "quickUpdate": "Kemas Kini Pantas",
+    "leadDetails": "Butiran Utama",
+    "progressHistory": "Sejarah Kemajuan",
+    "timesIn": "(masa dalam {{timezone}} )",
+    "backToMyLeads": "Kembali ke Petunjuk Saya",
+    "editLead": "Edit Lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "Tidak dirujuk (tiada projek)",
+    "PENDING_BUILDER": "Menunggu pembina",
+    "ACCEPTED": "Diterima oleh pembina",
+    "REJECTED": "Ditolak oleh pembina"
+  },
+  "preview": {
+    "ariaLabel": "Pratonton utama",
+    "title": "Pratonton Utama",
+    "source": "Sumber",
+    "location": "Lokasi",
+    "scheduled": "Dijadualkan",
+    "registered": "Berdaftar",
+    "latestNote": "Nota Terkini",
+    "quickUpdate": "Kemas Kini Pantas",
+    "fullDetails": "Butiran Penuh",
+    "editLead": "Edit Lead",
+    "history": "Sejarah"
+  },
+  "quick": {
+    "assignedTo": "Ditugaskan Kepada",
+    "status": "Status",
+    "subStatus": "Sub-Status",
+    "selectSubStatus": "Pilih substatus...",
+    "none": "tiada",
+    "scheduledAt": "Dijadualkan pada",
+    "localTime": "waktu tempatan",
+    "note": "Nota",
+    "notePlaceholder": "Apa yang berlaku pada panggilan / lawatan ini? (pilihan)",
+    "updateStatus": "Kemas kini Status",
+    "statusUpdated": "Status dikemas kini",
+    "bookedLocked": "Petunjuk ini telah ditempah - statusnya tidak boleh diubah lagi.",
+    "viewOnly": "Anda boleh melihat petunjuk ini, tetapi peranan anda tidak boleh mengemas kininya."
+  },
+  "history": {
+    "title": "Sejarah - {{registrationId}}",
+    "tabs": {
+      "all": "Semua",
+      "status": "Status",
+      "assignment": "Tugasan",
+      "notes": "Nota"
+    },
+    "doneBy": "Dilakukan oleh {{actor}}",
+    "system": "Sistem",
+    "platforms": {
+      "System": "Sistem",
+      "External": "Luaran",
+      "Web": "Web",
+      "Mobile": "Mudah alih"
+    },
+    "added": "tambah",
+    "updated": "dikemas kini",
+    "empty": "(kosong)",
+    "noHistory": "Tiada sejarah dalam kategori ini lagi.",
+    "fieldLabels": {
+      "stage": "Status",
+      "subStatus": "Sub-Status",
+      "scheduledAt": "Jadual",
+      "notes": "Nota",
+      "assignedTo": "Ditugaskan Kepada"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Pendaftaran rakan kongsi diterima",
+      "DUPLICATE_CHECK_COMPLETED": "Semakan pendua selesai - tiada pendua aktif ditemui",
+      "REGISTRATION_ACCEPTED": "Pendaftaran diterima",
+      "PROTECTION_GRANTED_other": "{{count}} perlindungan -hari diberikan",
+      "REGISTRATION_ATTEMPT_REJECTED": "Percubaan pendaftaran pendua oleh {{partnerId}} ditolak",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} medan dikemas kini",
+      "STAGE_UPDATED": "Status dikemas kini kepada {{status}}",
+      "LEAD_ASSIGNED": "Ditugaskan kepada {{name}}",
+      "LEAD_UNASSIGNED": "Tidak ditugaskan",
+      "BOOKING_COMPLETED": "Tempahan selesai",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Pemilikan operasi dipindahkan kepada Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribusi rakan kongsi dipelihara",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisen diwujudkan",
+      "HANDOVER_COMPLETED": "Penyerahan selesai",
+      "REFERRAL_ACCEPTED": "Builder menerima rujukan",
+      "REFERRAL_REJECTED": "Builder menolak rujukan. Sebab: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin mengeluarkan perlindungan pendua awal. Sebab: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Pentadbir menugaskan semula pendaftaran daripada {{from}} kepada {{to}} . Sebab: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Urus Lajur",
+    "hint": "Seret untuk menyusun semula · tandakan untuk menunjukkan",
+    "showAll": "Tunjukkan Semua",
+    "resetDefault": "Tetapkan semula kepada Lalai"
+  },
+  "filters": {
+    "title": "Penapis",
+    "allProjects": "Semua projek",
+    "any": "mana-mana",
+    "noFields": "Tiada medan boleh ditapis lain didayakan lagi (Tetapan > Plumbum).",
+    "clearAll": "Kosongkan Semua"
+  },
+  "phone": {
+    "MISSING": "Nombor telefon diperlukan.",
+    "INVALID": "Sila masukkan nombor telefon yang sah.",
+    "TOO_SHORT": "Nombor telefon terlalu pendek.",
+    "TOO_LONG": "Nombor telefon terlalu panjang.",
+    "INVALID_FOR_COUNTRY": "Nombor telefon ini tidak sah untuk {{country}} .",
+    "COUNTRY_MISMATCH": "Sila pilih kod negara yang betul.",
+    "NOT_MOBILE": "Sila masukkan nombor telefon bimbit, bukan talian tetap."
+  }
+}

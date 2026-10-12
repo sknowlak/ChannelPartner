@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "აღმაშენებლის პორტალი",
+    "referrals": "რეფერალები",
+    "builderLogin": "აღმაშენებლის შესვლა",
+    "partnerLogin": "არხის პარტნიორის შესვლა"
+  },
+  "login": {
+    "title": "აღმაშენებლის შესვლა",
+    "hint": "Builder ანგარიშები შექმნილია Leadrat მიერ. ჰკითხეთ თქვენს ადმინისტრატორს, თუ არ გაქვთ."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "ველი თქვენს გადაწყვეტილებას",
+    "ACCEPTED": "მიღებულია",
+    "REJECTED": "უარყოფილია"
+  },
+  "list": {
+    "title": "რეფერალები",
+    "allProjects": "ყველა პროექტი",
+    "allStatuses": "ყველა სტატუსი",
+    "count_one": "{{count}} რეფერალი",
+    "count_other": "{{count}} მიმართვები",
+    "columns": {
+      "referral": "რეფერალი",
+      "customer": "დამკვეთი",
+      "project": "პროექტი",
+      "sourcePartner": "წყარო პარტნიორი",
+      "status": "სტატუსი",
+      "booking": "დაჯავშნა",
+      "registered": "დარეგისტრირდა"
+    },
+    "booked": "დაჯავშნილი",
+    "empty": "ჯერ არ არის მიმართვები."
+  },
+  "detail": {
+    "customer": "დამკვეთი",
+    "sourcePartner": "წყარო პარტნიორი",
+    "attributionNote": "(მიკუთვნება - შეუძლებელია შეიცვალოს)",
+    "leadStatus": "ლიდერის სტატუსი",
+    "protectedUntil": "დაცული სანამ",
+    "referral": "რეფერალი",
+    "reason": "მიზეზი: {{reason}}",
+    "booking": "დაჯავშნა",
+    "bookedOwner": "დაჯავშნილი - თქვენ ხართ ოპერატიული მფლობელი",
+    "notBooked": "არ არის დაჯავშნილი",
+    "sharedAfterBooking": "გაზიარებული დაჯავშნის შემდეგ",
+    "accept": "მიიღე რეფერალი",
+    "confirmBooking": "დაადასტურეთ დაჯავშნა",
+    "reject": "რეფერალზე უარის თქმა",
+    "rejectReasonLabel": "უარის მიზეზი (აჩვენა პარტნიორს) *",
+    "rejectConfirm": "უარყოფა",
+    "confirmBookingPrompt": "დაადასტურეთ ჯავშანი? ოპერატიული საკუთრება გადადის თქვენზე და პარტნიორი ხდება საკომისიოს მიღების უფლება.",
+    "notice": {
+      "booked": "დაჯავშნა დადასტურებულია.",
+      "accepted": "რეფერალი მიღებულია.",
+      "rejected": "მიმართვა უარყოფილია."
+    },
+    "backToReferrals": "დაბრუნება რეფერალებზე"
+  },
+  "history": {
+    "title": "ისტორია",
+    "actor": {
+      "system": "სისტემა",
+      "partner": "არხის პარტნიორი",
+      "admin": "Leadrat ადმინი"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "მიღებულია პარტნიორის რეგისტრაცია",
+      "DUPLICATE_CHECK_COMPLETED": "დუბლიკატის შემოწმება დასრულდა - აქტიური დუბლიკატი ვერ მოიძებნა",
+      "REGISTRATION_ACCEPTED": "რეგისტრაცია მიღებულია",
+      "PROTECTION_GRANTED_one": "{{count}} - დღის დაცვა მინიჭებულია",
+      "PROTECTION_GRANTED_other": "{{count}} - დღის დაცვა მინიჭებულია",
+      "STAGE_UPDATED": "სტატუსი განახლდა {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "განახლებულია {{count}} ველი",
+      "LEAD_DETAILS_UPDATED_other": "განახლებულია {{count}} ველი",
+      "LEAD_ASSIGNED": "მინიჭებული აქვს {{name}}",
+      "LEAD_UNASSIGNED": "მინიჭებული არ არის",
+      "REFERRAL_ACCEPTED": "აღმაშენებელმა მიიღო რეფერალი",
+      "REFERRAL_REJECTED": "აღმაშენებელმა მითითება უარყო. მიზეზი: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} ის მიერ რეგისტრაციის დუბლიკატი მცდელობა უარყოფილია",
+      "BOOKING_COMPLETED": "დაჯავშნა დასრულდა",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "საოპერაციო საკუთრება გადაეცა აღმაშენებელს",
+      "PARTNER_ATTRIBUTION_PRESERVED": "პარტნიორის ატრიბუტი შენარჩუნებულია",
+      "COMMISSION_ELIGIBILITY_CREATED": "შეიქმნა კომისიის უფლებამოსილება",
+      "HANDOVER_COMPLETED": "ჩაბარება დასრულდა",
+      "ADMIN_PROTECTION_RELEASED": "ადმინისტრატორმა ადრე გამოუშვა დუბლიკატი დაცვა. მიზეზი: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "ადმინისტრატორმა ხელახლა დაავალა რეგისტრაცია {{from}} -დან {{to}} . მიზეზი: {{reason}}"
+    }
+  }
+}

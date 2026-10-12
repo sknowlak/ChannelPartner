@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Paramɛtri",
+    "noPermission": "A leman atin nianman ninnge’m be su."
+  },
+  "categories": {
+    "lead": "Kle ati'n",
+    "user": "User",
+    "integrations": "Intégrations"
+  },
+  "leadTabs": {
+    "fields": "Fie mun",
+    "statuses": "Status & Status kanngan mun",
+    "notifications": "Notifikasiɔn mun nin blɛ siesiefuɛ mun"
+  },
+  "fields": {
+    "leadIntro": "Configurer lead capture formulaire : activer/désactiver les champs, marqué les nécessaires, ou ajouter vos propres champs personnalisés.",
+    "userIntro": "Fa fluwa nga be flɛ i kɛ Add/Edit Team Member’n: fa lika’m be nun ninnge’m be nun, sie be nzɔliɛ kɛ be mian be sa, annzɛ fa ɔ bɔbɔ ɔ lika’m be nun ninnge’m be sie i su.",
+    "addCustomField": "+ Fa lika kun gua su",
+    "fieldLabel": "Fie Etikɛti",
+    "group": "Be sran kaka",
+    "groupPlaceholderLead": "eg Info n'ga be usa",
+    "groupPlaceholderUser": "eg. Ndɛ uflɛ wie mun ekun",
+    "dataType": "Data wafa",
+    "options": "Options (be ti nun virgule)",
+    "requiredLead": "Ɔ fata kɛ - be nga be o ɔ junman difuɛ’m be nun’n, ɔ fata kɛ be klɛ ndɛ nga naan b’a klɛ be dunman .",
+    "requiredUser": "Ɔ fata kɛ be klɛ su kɛ be fa sran kun be wlɛ i junman difuɛ’m be nun’n",
+    "creating": "Be su yi...",
+    "createField": "Kplɛ fie’n",
+    "columns": {
+      "field": "Issɔ like nu",
+      "group": "Be sran kaka",
+      "type": "I wafa",
+      "required": "Efata kɛ",
+      "enabled": "Be yoli",
+      "kind": "Wafa"
+    },
+    "kind": {
+      "custom": "Ye m'la",
+      "core": "Core (be jrannin)",
+      "standard": "Iti ti like"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Klɛwa",
+    "TEXTAREA": "Ndɛ tinnin",
+    "NUMBER": "Inuan",
+    "CURRENCY": "Sika n'ga be fa i minh kun nu",
+    "DATE": "Tchin",
+    "SELECT": "Like ng’ɔ tɔ’n",
+    "LIST": "I bobo lɛ"
+  },
+  "picker": {
+    "searchPlaceholder": "Kunndɛ lika nga be dun mmua...",
+    "summary": "{{shown}} kleli · {{mandatory}} ɔ fata kɛ be yo",
+    "mandatory": "N'ga ti su kɛ be yo",
+    "noMatch": "Fie fi nin i wiengu’m be kɔman likawlɛ."
+  },
+  "statuses": {
+    "intro": "Ɔ lead status nin ɔ sub-status - like nga be tinuntinun be srɛ’n (date & dɔ, lead fie mun) kɛ sran kun fa lead kun sie i su’n.",
+    "add": "+ Fa Status gua su",
+    "columns": {
+      "order": "Suman",
+      "status": "Wakasran",
+      "subStatuses": "Statut kanngan",
+      "asksFor": "Ɔ usa kɛ",
+      "active": "Tike"
+    },
+    "moveUp": "Amun tu amun bo",
+    "moveDown": "Amun tu amun bo",
+    "defaultBadge": "Default man sran uflɛ mun",
+    "bookingBadge": "Status de réservation",
+    "asksForLabel": "Srɛ {{label}}",
+    "asksForDateTime": "Usa cɛn nin dɔ",
+    "none": "Like fi",
+    "dateTime": "Cɛn nin dɔ",
+    "scheduledOn": "{{names}} su",
+    "fieldsSummary_one": "{{count}} fie ( {{mandatory}} ɔ fata)",
+    "fieldsSummary_other": "{{count}} fie’m be nun ( {{mandatory}} ɔ fata kɛ be yo)",
+    "deleteConfirm": "Supprimer l'état \" {{name}} \"? Be kwlá kaciman ndɛ sɔ’n.",
+    "editTitle": "Kaci lika'n - {{name}}",
+    "newTitle": "Status uflɛ",
+    "name": "Dunman",
+    "colour": "Kpajalɛ",
+    "active": "Tike",
+    "isDefault": "Status de défaut pour les nouveaux leads",
+    "isBooking": "Statut de réservation (réservation complète par)",
+    "whenMoved": "Kɛ be fa sran kun be sie i lika sɔ’n nun’n .",
+    "askSchedule": "Usa cɛn nin dɔ (be siesiefuɛ)",
+    "scheduleLabelPlaceholder": "Etikɛti, p.e. Visitez à .",
+    "fieldsToShow": "Lead fie’m be su klelɛ fluwa’n i su ndɛ’n su",
+    "subStatusesTitle": "Statut kanngan",
+    "subStatusesHint": "Status kaan kwlaa kwla srɛ i bɔbɔ i cɛn & i dɔ’n, kpɛkun ɔ fɛ i fie’m be gua su - be kle i status’n i fie’m be su nglo lɔ.",
+    "subStatusName": "Dunman n'ga kan",
+    "subFields": "Fie'm ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Date & dɔ étiquette, p.ex. Flɛ ekun .",
+    "addSubStatus": "+ Fa Statut kan kun gua su",
+    "saveStatus": "Sauvegarder le statut",
+    "createStatus": "Kle Status"
+  },
+  "notifications": {
+    "intro": "Kɛ sran kun ju lika kun’n, amun bo su kle sran ng’ɔ nin i fata’n - ndɛndɛ kpa, annzɛ dɔ kun ka naan cɛn nin dɔ nga be sieli i su’n w’a ju.",
+    "add": "+ Fa ndɛ’n wla nun",
+    "columns": {
+      "notification": "Notifikasiɔn",
+      "whenStatusIs": "Kɛ Status ti .",
+      "sends": "Ɔ sunmannin",
+      "to": "I",
+      "via": "I afi'in",
+      "enabled": "Be yoli"
+    },
+    "anyStatus": "Statut kwlaa",
+    "anySubStatus": "Statut kaan kwlaa",
+    "inactiveOption": "{{name}} (ɔ diman junman)",
+    "emptyRules": "Be nin a boman su - fa kun gua su naan kɛ sran kun ju lika kun’n, w’a bo ɔ junman difuɛ’m be su.",
+    "jobs": {
+      "title": "Be siesieli i & be sunmannin",
+      "firesAt": "Sin’m be su",
+      "notification": "Notifikasiɔn",
+      "lead": "Kle ati'n",
+      "status": "Wakasran",
+      "details": "I n'ma",
+      "empty": "Be nin a siesieman like fi annzɛ be nin a sunmɛnmɛn i.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "N'ga be nan yoman",
+      "PROCESSING": "Be yolɛ",
+      "SENT": "Fawɔli",
+      "FAILED": "Wa kwla man",
+      "SKIPPED": "Be tuli",
+      "CANCELLED": "Be kannin"
+    },
+    "deliveryStatus": {
+      "SENT": "fawɔli",
+      "FAILED": "wa kwla man",
+      "SKIPPED": "be kpɛli"
+    },
+    "deliveryChannel": {
+      "IN_APP": "appli nu",
+      "EMAIL": "e-mail",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Be nga be fa di junman’n",
+      "owner": "Sran n'ga liɛ",
+      "updatedBy": "Be fali .",
+      "role": "Juman: {{name}}"
+    },
+    "channels": {
+      "inApp": "App nun",
+      "email": "Imeli",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Supprimer la notification \" {{name}} \"? Be nunnun ndɛ nga be su minndɛ naan b’a kpɛn be wla’n.",
+    "testPrompt": "?Amun fa ndɛ sɔ’n i su testi be ko man amun bɔbɔ amun wun (in-app) ID lead ?",
+    "testSent": "Be sunmannin ɔ klolɛ’n su: {{title}} {{message}}",
+    "headersInvalid": "Ɔ fata kɛ Webhook ti ndɛ’m be yo JSON kpa , kɛ {\"Amun manlɛ\": \"Sran ng’ɔ fa xyz\"}",
+    "editTitle": "Kaci ndɛ’n",
+    "newTitle": "Ndɛ uflɛ",
+    "name": "Dun'man",
+    "namePlaceholder": "eg. Site visite rappel .",
+    "whenStatus": "Kɛ sran kun i su kpɛn’n i lika’n ti .",
+    "subStatus": "Statut kan",
+    "send": "Suman (be siesiefuɛ)",
+    "custom": "Ye m'la...",
+    "modeBefore": "ka naan blɛ nga be sieli’n w’a ju",
+    "modeAfter": "kɛ blɛ nga be sieli’n sin’n",
+    "noScheduleWarning": "I sɔ’n ti’n, kɛ be se kɛ be klɛ cɛn kun nin dɔ kun’n, ɔ maan sɛ be bo su kle sran kun kɛ “ka naan dɔ nga be sieli’n w’a ju’n w’a ju’n, ɔ su tuman le.",
+    "noScheduleFix": "Kpɛkun, <strong>ɔ fata kɛ a kpɛ ndɛ nga be flɛ</strong> i kɛ Status & Sub-Status i bo lɛ’n, annzɛ a fa ko man ndɛndɛ.",
+    "sendTo": "Fa ko man (be kwlaa nga be o nun’n)",
+    "recipientAssigned": "Be fali sran n'ga be dili junman'n (i min'n)",
+    "recipientOwner": "Kɔnti min'n / admin",
+    "recipientUpdatedBy": "Sran ng’ɔ kacili i lika’n",
+    "everyoneWithRole": "Sran kwlaa ng’ɔ le junman’n .",
+    "specificUsers": "Be nga be fa di junman’n (be di junman)",
+    "inactiveNever": "Be nga be diman junman’n, be ɲanman ndɛ le, kannzɛ bɔbɔ be fali be’n.",
+    "deliverVia": "Fa man sran mun",
+    "channelInApp": "App nun (cloche)",
+    "channelEmail": "Imeli",
+    "channelWebhook": "Webhook ( WhatsApp / SMS manfuɛ)",
+    "emailHint": "Imeli’n kɔ sran kwlaa ng’ɔ sɔ nun’n i imeli adrɛsi’n su yɛ ɔ fata kɛ be siesie SMTP serveur’n su (backend/.env); lele m’ɔ́ fá jú lɛ’n, be klɛ e-mail nga be sunmannin’n be su kɛ be kpɛli be nun sa.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Titi ( JSON )",
+    "content": "I nun ndɛ’n",
+    "title": "Iti",
+    "message": "Suman",
+    "insertIntoTitle": "Fa sie Titre nun .",
+    "insertIntoMessage": "Fa sie ndɛ’n nun",
+    "anyLeadField": "Lead field kwlaa di junman wie, kɛ <code1>{{example1}}</code1> annzɛ <code2>{{example2}}</code2> .",
+    "preview": "Preview (exemple lead)",
+    "enabled": "Be yoli",
+    "saveRule": "Save Notification",
+    "createRule": "Kplɛ ndɛ’n",
+    "variables": {
+      "customerName": "Dunman dan",
+      "customerMobile": "Mobile plomb",
+      "customerEmail": "Imeli n'ga be fa kɔ",
+      "registrationId": "ID lead",
+      "status": "Wakasran",
+      "subStatus": "Statut kan",
+      "scheduleAt": "Cɛn nin dɔ nga be siesieli’n",
+      "assignedTo": "Be nga be fa di junman’n",
+      "updatedBy": "Be fali .",
+      "recipient": "Sran ng'ɔ sɔ nun'n i dunman",
+      "project": "Nin'gue n'ga a won yo",
+      "notes": "Note kasiɛn",
+      "partner": "Sran kun i dunman"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Kɛ be ko sie status’n, ndɛndɛ kpa .",
+      "AT": "Blɛ nga be sieli’n su .",
+      "A1D": "Cɛn kun kɛ dɔ nga be sieli’n sin’n (be nian nun)"
+    },
+    "immediately": "Itchra",
+    "atScheduled": "Dɔ nga be sieli’n su .",
+    "before": {
+      "MINUTES_one": "{{count}} miniti ka naan dɔ nga be sieli’n w’a ju",
+      "MINUTES_other": "{{count}} miniti ka naan dɔ nga be sieli’n w’a ju",
+      "HOURS_one": "{{count}} dɔ kun ka naan dɔ nga be sieli’n w’a ju",
+      "HOURS_other": "{{count}} dɔ ka naan dɔ nga be sieli’n w’a ju",
+      "DAYS_one": "{{count}} cɛn kun ka naan dɔ nga be sieli’n w’a ju",
+      "DAYS_other": "{{count}} cɛn ka naan dɔ nga be sieli’n w’a ju",
+      "WEEKS_one": "{{count}} le mɔcuɛ kun ka naan dɔ nga be sieli’n w’a ju",
+      "WEEKS_other": "{{count}} le mɔcuɛ ka naan dɔ nga be sieli’n w’a ju",
+      "MONTHS_one": "{{count}} anglo kun ka naan dɔ nga be sieli’n w’a ju",
+      "MONTHS_other": "{{count}} anglo ka naan dɔ nga be sieli’n w’a ju",
+      "YEARS_one": "{{count}} afuɛ kun ka naan blɛ nga be sieli’n w’a ju",
+      "YEARS_other": "{{count}} afuɛ ka naan blɛ nga be sieli’n w’a ju"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} miniti dɔ nga be sieli’n i sin",
+      "MINUTES_other": "{{count}} miniti nga be sieli’n i sin",
+      "HOURS_one": "{{count}} dɔ ng’ɔ sinnin dɔ nga be sieli’n i sin’n",
+      "HOURS_other": "{{count}} dɔ nga be sieli’n i sin",
+      "DAYS_one": "{{count}} cɛn nga be sieli’n i sin",
+      "DAYS_other": "{{count}} cɛn nga be sieli’n i sin",
+      "WEEKS_one": "{{count}} le mɔcuɛ kun sin dɔ nga be sieli’n i sin",
+      "WEEKS_other": "{{count}} le mɔcuɛ’m be sin dɔ nga be sieli’n i sin",
+      "MONTHS_one": "{{count}} anglo ng’ɔ sinnin dɔ nga be sieli’n i sin’n",
+      "MONTHS_other": "{{count}} anglo nga be sieli’n i sin",
+      "YEARS_one": "{{count}} afuɛ nga be sieli’n i sin",
+      "YEARS_other": "{{count}} afuɛ nga be sieli’n i sin"
+    },
+    "units": {
+      "MINUTES_one": "miniti",
+      "MINUTES_other": "miniti",
+      "HOURS_one": "dɔ",
+      "HOURS_other": "dɔ'mu",
+      "DAYS_one": "an'dɛ",
+      "DAYS_other": "tʃin ba n'san",
+      "WEEKS_one": "le mɔkuɛ",
+      "WEEKS_other": "le mɔcuɛ",
+      "MONTHS_one": "nuan",
+      "MONTHS_other": "anglo",
+      "YEARS_one": "afuɛ",
+      "YEARS_other": "afuɛ mu"
+    }
+  }
+}

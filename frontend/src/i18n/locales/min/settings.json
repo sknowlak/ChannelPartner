@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Pangaturan",
+    "noPermission": "Sanak indak punyo izin untuak mangalola pangaturan."
+  },
+  "categories": {
+    "lead": "Pimpin",
+    "user": "Pangguno",
+    "integrations": "Panggabungan"
+  },
+  "leadTabs": {
+    "fields": "Ladang",
+    "statuses": "Kaadaan jo Sub-kaadaan",
+    "notifications": "Pamberitahuan & Panjadwalan"
+  },
+  "fields": {
+    "leadIntro": "Konfigurasikan formulir panangkapan timbal balik: aktifkan/nonaktifkan bidang, tandoi diparalukan, atau tambahkan bidang kustom Sanak surang.",
+    "userIntro": "Konfigurasikan formulir Tambah/Suntiang Anggota Tim: aktifkan/nonaktifkan bidang, tandoi diparalukan, atau tambahkan bidang custom Sanak surang.",
+    "addCustomField": "+ Tambahkan Bidang Adat",
+    "fieldLabel": "Label Lapangan",
+    "group": "Rombongan",
+    "groupPlaceholderLead": "misalnyo Info Tanyo",
+    "groupPlaceholderUser": "misalnyo Rincian Tambahan",
+    "dataType": "Jinih Data",
+    "options": "Pilihan (dipisahkan jo koma)",
+    "requiredLead": "Diparalukan - mitra dalam tim Sanak harus maisi iko untuak mandaftarkan timbal balik",
+    "requiredUser": "Diparalukan - harus diisi katiko manambah anggota tim",
+    "creating": "Mambuek...",
+    "createField": "Buek Bidang",
+    "columns": {
+      "field": "Bidang",
+      "group": "Rombongan",
+      "type": "Tipe",
+      "required": "Diparaluan",
+      "enabled": "Diaktifkan",
+      "kind": "Elok"
+    },
+    "kind": {
+      "custom": "Budayo",
+      "core": "Inti (takunci)",
+      "standard": "Standar"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Teks",
+    "TEXTAREA": "Teks panjang",
+    "NUMBER": "Angko",
+    "CURRENCY": "Mato uang",
+    "DATE": "Tanggal",
+    "SELECT": "Jatuah",
+    "LIST": "Daftar"
+  },
+  "picker": {
+    "searchPlaceholder": "Cari bidang timbal balik...",
+    "summary": "{{shown}} ditunjuakkan · {{mandatory}} wajib",
+    "mandatory": "Harus",
+    "noMatch": "Indak ado ladang nan cocok."
+  },
+  "statuses": {
+    "intro": "Status jo sub-status timbal balik Sanak - apo nan dimintak masiang-masiang (tanggal & wakatu, bidang timbal balik) katiko ado urang nan mampabarui timbal balik ka itu.",
+    "add": "+ Tambah status",
+    "columns": {
+      "order": "Pasan",
+      "status": "Kaadaan",
+      "subStatuses": "Sub-Kaadaan",
+      "asksFor": "Mintak Untuak",
+      "active": "Aktif"
+    },
+    "moveUp": "Pindah ka ateh",
+    "moveDown": "Pindah ka bawah",
+    "defaultBadge": "Lalai untuak prospek baru",
+    "bookingBadge": "Status pamasanan",
+    "asksForLabel": "Mintak untuak {{label}}",
+    "asksForDateTime": "Mintak tanggal & wakatu",
+    "none": "Indak ado",
+    "dateTime": "Tanggal & wakatu",
+    "scheduledOn": "pado {{names}}",
+    "fieldsSummary_one": "Bidang {{count}} ( {{mandatory}} wajib)",
+    "fieldsSummary_other": "{{count}} bidang ( {{mandatory}} wajib)",
+    "deleteConfirm": "Hapuih status \" {{name}} \"? Iko indak bisa dibatalkan.",
+    "editTitle": "Suntiang kaadaan - {{name}}",
+    "newTitle": "Status Baru",
+    "name": "Namo Kaadaan",
+    "colour": "Warna",
+    "active": "Aktif",
+    "isDefault": "Status lalai untuak prospek baru",
+    "isBooking": "Status pamasanan (diatur dek Pamasanan Langkok)",
+    "whenMoved": "Katiko timbal balik dipindahan ka status iko",
+    "askSchedule": "Mintak tanggal & wakatu (panjadwalan)",
+    "scheduleLabelPlaceholder": "Label, misalnyo Kunjungi di",
+    "fieldsToShow": "Bidang timah untuak ditunjukkan pado formulir pabaruan",
+    "subStatusesTitle": "Sub-Kaadaan",
+    "subStatusesHint": "Satiok sub-status dapek mamintak tanggal & wakatunyo surang-surang dan manambahkan bidangnyo surang - nan ditunjukkan di ateh bidang status di ateh.",
+    "subStatusName": "Namo sub-status",
+    "subFields": "Bidang ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Label tanggal & wakatu, misalnyo Talipon baliak di",
+    "addSubStatus": "+ Tambahkan Sub-Status",
+    "saveStatus": "Simpan status",
+    "createStatus": "Buek status"
+  },
+  "notifications": {
+    "intro": "Maagiah tahu urang nan tapek katiko suatu lead mancapai suatu status - sacaro langsuang, atau wakatu nan ditetapkan sabalun/sasudah tanggal & wakatu nan dijadwalkan di atehnyo.",
+    "add": "+ Tambahkan Pemberitahuan",
+    "columns": {
+      "notification": "Pamberitahuan",
+      "whenStatusIs": "Katiko Status Ado",
+      "sends": "Mangirim",
+      "to": "Ka",
+      "via": "Malalui",
+      "enabled": "Diaktifkan"
+    },
+    "anyStatus": "Status apo sajo",
+    "anySubStatus": "Sub-status apo sajo",
+    "inactiveOption": "{{name}} (indak aktif)",
+    "emptyRules": "Alun ado pamberitahuan - tambahkan ciek untuak maagiah tahu tim Sanak katiko timbal balik mancapai status.",
+    "jobs": {
+      "title": "Dijadwalkan & Dikirim",
+      "firesAt": "Api Pado",
+      "notification": "Pamberitahuan",
+      "lead": "Pimpin",
+      "status": "Kaadaan",
+      "details": "Detail",
+      "empty": "Alun ado nan dijadwalkan atau dikirim lai.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Tatundo",
+      "PROCESSING": "Pangolahan",
+      "SENT": "Dikirim",
+      "FAILED": "Gagal",
+      "SKIPPED": "Dilewakan",
+      "CANCELLED": "Dibatalkan"
+    },
+    "deliveryStatus": {
+      "SENT": "dikirim",
+      "FAILED": "gagal",
+      "SKIPPED": "dilewakan"
+    },
+    "deliveryChannel": {
+      "IN_APP": "dalam aplikasi",
+      "EMAIL": "surel",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Pangguno nan ditugaskan",
+      "owner": "Pemilik",
+      "updatedBy": "Diperbarui dek",
+      "role": "Peran: {{name}}"
+    },
+    "channels": {
+      "inApp": "Dalam aplikasi",
+      "email": "Surek",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Hapuih pamberitahuan \" {{name}} \"? Pangingek nan masih tatunggu dari itu dibatalkan.",
+    "testPrompt": "Kirim tes pamberitahuan ko ka diri Sanak surang (dalam aplikasi) manggunoan ID lead mano ?",
+    "testSent": "Dikirim ka lonceng Sanak: {{title}} {{message}}",
+    "headersInvalid": "Kapalo Webhook harus JSON nan sah , misalnyo {\"Otorisasi\": \"Pambaok xyz\"}",
+    "editTitle": "Suntiang Pamberitahuan",
+    "newTitle": "Pamberitahuan Baru",
+    "name": "Namo",
+    "namePlaceholder": "misalnyo pangingat kunjungan situs",
+    "whenStatus": "Katiko status saurang timbal balik adolah",
+    "subStatus": "Sub-kaadaan",
+    "send": "Kirim (panjadwalan)",
+    "custom": "Budayo...",
+    "modeBefore": "sabalun wakatu nan dijadwalkan",
+    "modeAfter": "sasudah wakatu nan dijadwalkan",
+    "noScheduleWarning": "Status ko indak mamintak tanggal & wakatu, jadi pemberitahuan \"sabalun/pado/sasudah wakatu nan dijadwalkan\" indak akan pernah manembak.",
+    "noScheduleFix": "Hiduikkan <strong>Mintak tanggal & wakatu</strong> untuak itu di bawah Status & Sub-Status, atau kirim Langsuang.",
+    "sendTo": "Kirim ka (kombinasi apo sajo)",
+    "recipientAssigned": "Pangguno nan ditugaskan (pamiliak utamo)",
+    "recipientOwner": "Nan punyo akun / admin",
+    "recipientUpdatedBy": "Urang nan mampabarui status",
+    "everyoneWithRole": "Sadonyo jo peran .",
+    "specificUsers": "Pangguno tatantu (aktif)",
+    "inactiveNever": "Pangguno nan indak aktif indak pernah manarimo pamberitahuan, walaupun dipiliah.",
+    "deliverVia": "Antar malalui",
+    "channelInApp": "Dalam aplikasi (lonceng)",
+    "channelEmail": "Surek",
+    "channelWebhook": "Webhook ( WhatsApp SMS )",
+    "emailHint": "Surek pai ka alamaik surel satiok panarimo dan paralu SMTP nan diatur pado server (backend/.env); sampai kini kiriman email dicatat sabagai nan dilewakan.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Kapalo ( JSON )",
+    "content": "Isi pamberitahuan",
+    "title": "Judul",
+    "message": "Pasan",
+    "insertIntoTitle": "Masuakkan ka dalam Judul",
+    "insertIntoMessage": "Masuakkan ka dalam Pasan",
+    "anyLeadField": "Bidang timbal balik apo sajo bakarajo juo, misalnyo <code1>{{example1}}</code1> atau <code2>{{example2}}</code2> .",
+    "preview": "Pratinjau (contoh timah)",
+    "enabled": "Diaktifkan",
+    "saveRule": "Simpan Pamberitahuan",
+    "createRule": "Buek Pemberitahuan",
+    "variables": {
+      "customerName": "Namo timah",
+      "customerMobile": "Timah ponsel",
+      "customerEmail": "Surek timbal balik",
+      "registrationId": "ID timbal balik",
+      "status": "Kaadaan",
+      "subStatus": "Sub-kaadaan",
+      "scheduleAt": "Tanggal & wakatu nan dijadwalkan",
+      "assignedTo": "Pangguno nan ditugaskan",
+      "updatedBy": "Diperbarui dek",
+      "recipient": "Namo panarimo",
+      "project": "Proyek",
+      "notes": "Catatan tarakhia",
+      "partner": "Namo pasangan"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Langsuang katiko status lah diatur .",
+      "AT": "Pado wakatu nan dijadwalkan",
+      "A1D": "1 hari sasudah wakatu nan dijadwalkan (pamariksaan tindak lanjut)"
+    },
+    "immediately": "Sakatiko",
+    "atScheduled": "Pado wakatu nan dijadwalkan",
+    "before": {
+      "MINUTES_one": "{{count}} minik sabalun wakatu nan dijadwalkan",
+      "MINUTES_other": "{{count}} minik sabalun wakatu nan dijadwalkan",
+      "HOURS_one": "{{count}} jam sabalun wakatu nan dijadwalkan",
+      "HOURS_other": "{{count}} jam sabalun wakatu nan dijadwalkan",
+      "DAYS_one": "{{count}} hari sabalun wakatu nan dijadwalkan",
+      "DAYS_other": "{{count}} hari sabalun wakatu nan dijadwalkan",
+      "WEEKS_one": "{{count}} saminggu sabalun wakatu nan dijadwalkan",
+      "WEEKS_other": "{{count}} minggu sabalun wakatu nan dijadwalkan",
+      "MONTHS_one": "{{count}} sabulan sabalun wakatu nan dijadwalkan",
+      "MONTHS_other": "{{count}} bulan sabalun wakatu nan dijadwalkan",
+      "YEARS_one": "{{count}} satahun sabalun wakatu nan dijadwalkan",
+      "YEARS_other": "{{count}} tahun sabalun wakatu nan dijadwalkan"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minik sasudah wakatu nan dijadwalkan",
+      "MINUTES_other": "{{count}} minik sasudah wakatu nan dijadwalkan",
+      "HOURS_one": "{{count}} jam sasudah wakatu nan dijadwalkan",
+      "HOURS_other": "{{count}} jam sasudah wakatu nan dijadwalkan",
+      "DAYS_one": "{{count}} hari sasudah wakatu nan dijadwalkan",
+      "DAYS_other": "{{count}} hari sasudah wakatu nan dijadwalkan",
+      "WEEKS_one": "{{count}} saminggu sasudah wakatu nan dijadwalkan",
+      "WEEKS_other": "{{count}} minggu sasudah wakatu nan dijadwalkan",
+      "MONTHS_one": "{{count}} bulan sasudah wakatu nan dijadwalkan",
+      "MONTHS_other": "{{count}} bulan sasudah wakatu nan dijadwalkan",
+      "YEARS_one": "{{count}} satahun sasudah wakatu nan dijadwalkan",
+      "YEARS_other": "{{count}} tahun sasudah wakatu nan dijadwalkan"
+    },
+    "units": {
+      "MINUTES_one": "minik",
+      "MINUTES_other": "minik",
+      "HOURS_one": "wakatu",
+      "HOURS_other": "jam",
+      "DAYS_one": "ari",
+      "DAYS_other": "hari",
+      "WEEKS_one": "pakan",
+      "WEEKS_other": "minggu",
+      "MONTHS_one": "bulan",
+      "MONTHS_other": "bulan",
+      "YEARS_one": "tahun",
+      "YEARS_other": "tahun-tahun"
+    }
+  }
+}

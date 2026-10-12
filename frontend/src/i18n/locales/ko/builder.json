@@ -1,0 +1,87 @@
+{
+  "shell": {
+    "portal": "빌더 포털",
+    "referrals": "추천",
+    "builderLogin": "빌더 로그인",
+    "partnerLogin": "채널 파트너 로그인"
+  },
+  "login": {
+    "title": "빌더 로그인",
+    "hint": "빌더 계정은 Leadrat 에 의해 생성됩니다. 없는 경우 관리자에게 문의하세요."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "당신의 결정을 기다리고 있습니다",
+    "ACCEPTED": "수락됨",
+    "REJECTED": "거부됨"
+  },
+  "list": {
+    "title": "추천",
+    "allProjects": "모든 프로젝트",
+    "allStatuses": "모든 상태",
+    "count_other": "{{count}} 추천",
+    "columns": {
+      "referral": "추천",
+      "customer": "고객",
+      "project": "프로젝트",
+      "sourcePartner": "소스 파트너",
+      "status": "상태",
+      "booking": "예약",
+      "registered": "등기"
+    },
+    "booked": "예약됨",
+    "empty": "아직 추천이 없습니다."
+  },
+  "detail": {
+    "customer": "고객",
+    "sourcePartner": "소스 파트너",
+    "attributionNote": "(속성 - 변경할 수 없음)",
+    "leadStatus": "리드 상태",
+    "protectedUntil": "보호 기간:",
+    "referral": "추천",
+    "reason": "이유: {{reason}}",
+    "booking": "예약",
+    "bookedOwner": "예약됨 - 귀하가 운영 소유자입니다",
+    "notBooked": "예약되지 않음",
+    "sharedAfterBooking": "예약 후 공유됨",
+    "accept": "추천 수락",
+    "confirmBooking": "예약 확인",
+    "reject": "추천 거부",
+    "rejectReasonLabel": "거부 이유(파트너에게 표시됨) *",
+    "rejectConfirm": "거부하다",
+    "confirmBookingPrompt": "예약을 확인하시겠습니까? 운영 소유권이 귀하에게 이전되고 파트너는 커미션을 받을 수 있게 됩니다.",
+    "notice": {
+      "booked": "예약이 확인되었습니다.",
+      "accepted": "추천이 승인되었습니다.",
+      "rejected": "추천이 거부되었습니다."
+    },
+    "backToReferrals": "추천으로 돌아가기"
+  },
+  "history": {
+    "title": "역사",
+    "actor": {
+      "system": "체계",
+      "partner": "채널 파트너",
+      "admin": "Leadrat 관리자"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "파트너 등록 접수됨",
+      "DUPLICATE_CHECK_COMPLETED": "중복 확인 완료 - 활성 중복 항목이 발견되지 않음",
+      "REGISTRATION_ACCEPTED": "등록이 승인되었습니다",
+      "PROTECTION_GRANTED_other": "{{count}} 일 보호 부여됨",
+      "STAGE_UPDATED": "상태가 {{stage}} 으로 업데이트되었습니다.",
+      "LEAD_DETAILS_UPDATED_other": "업데이트된 {{count}} 필드",
+      "LEAD_ASSIGNED": "{{name}} 에게 할당됨",
+      "LEAD_UNASSIGNED": "할당되지 않음",
+      "REFERRAL_ACCEPTED": "빌더가 추천을 수락했습니다.",
+      "REFERRAL_REJECTED": "빌더가 추천을 거부했습니다. 이유: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} 의 중복 등록 시도가 거부되었습니다.",
+      "BOOKING_COMPLETED": "예약 완료",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "운영 소유권이 Builder로 이전됨",
+      "PARTNER_ATTRIBUTION_PRESERVED": "파트너 속성이 보존됩니다.",
+      "COMMISSION_ELIGIBILITY_CREATED": "커미션 자격이 생성되었습니다.",
+      "HANDOVER_COMPLETED": "핸드오버 완료",
+      "ADMIN_PROTECTION_RELEASED": "관리자가 중복 보호를 조기에 출시했습니다. 이유: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "관리자가 {{from}} 에서 {{to}} 로 등록을 재할당했습니다. 이유: {{reason}}"
+    }
+  }
+}

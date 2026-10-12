@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "بلڈر پورٹل",
+    "referrals": "حوالہ جات",
+    "builderLogin": "بلڈر لاگ ان",
+    "partnerLogin": "چینل پارٹنر لاگ ان"
+  },
+  "login": {
+    "title": "بلڈر سائن ان کریں۔",
+    "hint": "بلڈر اکاؤنٹس Leadrat کے ذریعہ بنائے گئے ہیں۔ اگر آپ کے پاس نہیں ہے تو اپنے منتظم سے پوچھیں۔"
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "آپ کے فیصلے کا انتظار ہے۔",
+    "ACCEPTED": "قبول کر لیا",
+    "REJECTED": "مسترد"
+  },
+  "list": {
+    "title": "حوالہ جات",
+    "allProjects": "تمام منصوبے",
+    "allStatuses": "تمام سٹیٹس",
+    "count_one": "{{count}} حوالہ",
+    "count_other": "{{count}} حوالہ جات",
+    "columns": {
+      "referral": "حوالہ",
+      "customer": "گاہک",
+      "project": "پروجیکٹ",
+      "sourcePartner": "سورس پارٹنر",
+      "status": "حیثیت",
+      "booking": "بکنگ",
+      "registered": "رجسٹرڈ"
+    },
+    "booked": "بک کروایا",
+    "empty": "ابھی تک کوئی حوالہ نہیں ہے۔"
+  },
+  "detail": {
+    "customer": "گاہک",
+    "sourcePartner": "سورس پارٹنر",
+    "attributionNote": "(انتساب - تبدیل نہیں کیا جا سکتا)",
+    "leadStatus": "لیڈ اسٹیٹس",
+    "protectedUntil": "تک محفوظ رکھا",
+    "referral": "حوالہ",
+    "reason": "وجہ: {{reason}}",
+    "booking": "بکنگ",
+    "bookedOwner": "بک کیا گیا - آپ آپریشنل مالک ہیں۔",
+    "notBooked": "بک نہیں کیا گیا۔",
+    "sharedAfterBooking": "بکنگ کے بعد شیئر کیا گیا۔",
+    "accept": "حوالہ قبول کریں۔",
+    "confirmBooking": "بکنگ کی تصدیق کریں۔",
+    "reject": "ریفرل کو مسترد کریں۔",
+    "rejectReasonLabel": "مسترد کرنے کی وجہ (پارٹنر کو دکھائی گئی) *",
+    "rejectConfirm": "رد کرنا",
+    "confirmBookingPrompt": "بکنگ کی تصدیق کریں؟ آپریشنل ملکیت آپ کے پاس منتقل ہو جاتی ہے اور پارٹنر کمیشن کے لیے اہل ہو جاتا ہے۔",
+    "notice": {
+      "booked": "بکنگ کی تصدیق ہوگئی۔",
+      "accepted": "حوالہ قبول کر لیا گیا۔",
+      "rejected": "حوالہ مسترد کر دیا گیا۔"
+    },
+    "backToReferrals": "حوالہ جات پر واپس جائیں۔"
+  },
+  "history": {
+    "title": "تاریخ",
+    "actor": {
+      "system": "سسٹم",
+      "partner": "چینل پارٹنر",
+      "admin": "Leadrat ایڈمن"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "پارٹنر کی رجسٹریشن موصول ہو گئی۔",
+      "DUPLICATE_CHECK_COMPLETED": "ڈپلیکیٹ چیک مکمل ہوا - کوئی فعال ڈپلیکیٹ نہیں ملا",
+      "REGISTRATION_ACCEPTED": "رجسٹریشن قبول کر لی گئی۔",
+      "PROTECTION_GRANTED_one": "{{count}} دن کا تحفظ دیا گیا۔",
+      "PROTECTION_GRANTED_other": "{{count}} دن کا تحفظ دیا گیا۔",
+      "STAGE_UPDATED": "اسٹیٹس کو {{stage}} میں اپ ڈیٹ کیا گیا",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} فیلڈ کو اپ ڈیٹ کیا گیا۔",
+      "LEAD_DETAILS_UPDATED_other": "اپ ڈیٹ کردہ {{count}} فیلڈز",
+      "LEAD_ASSIGNED": "{{name}} کو تفویض کیا گیا",
+      "LEAD_UNASSIGNED": "غیر تفویض کردہ",
+      "REFERRAL_ACCEPTED": "بلڈر نے حوالہ قبول کیا۔",
+      "REFERRAL_REJECTED": "بلڈر نے حوالہ مسترد کر دیا۔ وجہ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} کی طرف سے نقل کی رجسٹریشن کی کوشش مسترد کر دی گئی۔",
+      "BOOKING_COMPLETED": "بکنگ مکمل ہو گئی۔",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "آپریشنل ملکیت بلڈر کو منتقل کر دی گئی۔",
+      "PARTNER_ATTRIBUTION_PRESERVED": "پارٹنر کا انتساب محفوظ ہے۔",
+      "COMMISSION_ELIGIBILITY_CREATED": "کمیشن کی اہلیت پیدا ہوئی۔",
+      "HANDOVER_COMPLETED": "حوالگی مکمل",
+      "ADMIN_PROTECTION_RELEASED": "ایڈمن نے ڈپلیکیٹ تحفظ جلد جاری کیا۔ وجہ: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "ایڈمن نے {{from}} سے {{to}} تک رجسٹریشن دوبارہ تفویض کی ہے۔ وجہ: {{reason}}"
+    }
+  }
+}

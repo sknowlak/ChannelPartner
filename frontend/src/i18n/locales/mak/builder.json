@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal tukang bangunang",
+    "referrals": "Rujukan",
+    "builderLogin": "Login tukang bangunang",
+    "partnerLogin": "Login Mitra Saluran"
+  },
+  "login": {
+    "title": "Tukang bangunang antama",
+    "hint": "Akun pembangun ni paenteng ri Leadrat . Akkuta'nang mako ri administratornu punna tena."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "antayangi kaputusangnu",
+    "ACCEPTED": "Nitarimai",
+    "REJECTED": "Ni tolak"
+  },
+  "list": {
+    "title": "Rujukan",
+    "allProjects": "Sikontu proyek",
+    "allStatuses": "Sikontu status",
+    "count_one": "{{count}} rujukan",
+    "count_other": "{{count}} rujukan",
+    "columns": {
+      "referral": "Rujukan",
+      "customer": "Paballi",
+      "project": "Proyek",
+      "sourcePartner": "Mitra Sumber",
+      "status": "Status",
+      "booking": "Pemesanan",
+      "registered": "Terdaftar"
+    },
+    "booked": "Ni booking",
+    "empty": "Tena rujukan ija."
+  },
+  "detail": {
+    "customer": "Paballi",
+    "sourcePartner": "Mitra Sumber",
+    "attributionNote": "(atribusi - takkulleai nipinra)",
+    "leadStatus": "Status Pimpinang",
+    "protectedUntil": "Nilindungi sa'genna",
+    "referral": "Rujukan",
+    "reason": "Alasang: {{reason}}",
+    "booking": "Pemesanan",
+    "bookedOwner": "Ni booking - ikatte iami antu patanna operasional",
+    "notBooked": "Tena ni booking",
+    "sharedAfterBooking": "Ni bage-bage ribokoangna ni booking",
+    "accept": "Tarima Rujukan",
+    "confirmBooking": "Konfirmasi Pemesanan",
+    "reject": "tolak rujukan",
+    "rejectReasonLabel": "Alasang na tolak (ni pa'piitteang mange ri pa'samaturukang) *",
+    "rejectConfirm": "Annolak",
+    "confirmBookingPrompt": "Konfirmasi pemesanan? Kepemilikan operasional aletteki mange ri kau siagang pa'samaturukang a'jari layak untu' komisi.",
+    "notice": {
+      "booked": "Pemesanan ni konfirmasi.",
+      "accepted": "Rujukan ni tarima.",
+      "rejected": "Rujukan ni tolak."
+    },
+    "backToReferrals": "ammotere mange ri rujukan"
+  },
+  "history": {
+    "title": "Sejarah",
+    "actor": {
+      "system": "Sistem",
+      "partner": "Mitra saluran",
+      "admin": "Admin Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Pendaftaran mitra nitarima",
+      "DUPLICATE_CHECK_COMPLETED": "Pa'paressa duplikat lebaki - tena duplikat aktif ni gappa",
+      "REGISTRATION_ACCEPTED": "Pendaftaran ni tarima",
+      "PROTECTION_GRANTED_one": "{{count}} -hari perlindungan diberikan",
+      "PROTECTION_GRANTED_other": "{{count}} -hari perlindungan diberikan",
+      "STAGE_UPDATED": "Status ni update mange ri {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Bidang {{count}} ni update",
+      "LEAD_DETAILS_UPDATED_other": "Bidang {{count}} ni update",
+      "LEAD_ASSIGNED": "Nisareangi mange ri {{name}}",
+      "LEAD_UNASSIGNED": "Tena ni tugaskangi",
+      "REFERRAL_ACCEPTED": "Tukang bangunang antarimai rujukan",
+      "REFERRAL_REJECTED": "Tukang bangunang anre' natarimai anjo rujukanga. Alasang: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Usaha pendaftaran duplikat ri {{partner}} ni tolak",
+      "BOOKING_COMPLETED": "Pemesanan lebaki",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Kepemilikan operasional nipalette mange ri tukang bangunang",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribusi mitra nilestarikan",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisi ni paenteng",
+      "HANDOVER_COMPLETED": "Penyerahan lebaki",
+      "ADMIN_PROTECTION_RELEASED": "Admin napasulu perlindungan duplikat riolo. Alasang: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin na tugaskangi ammotere pendaftaran battu ri {{from}} mange ri {{to}} . Alasang: {{reason}}"
+    }
+  }
+}

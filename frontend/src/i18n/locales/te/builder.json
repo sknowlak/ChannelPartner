@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "బిల్డర్ పోర్టల్",
+    "referrals": "రెఫరల్స్",
+    "builderLogin": "బిల్డర్ లాగిన్",
+    "partnerLogin": "ఛానెల్ భాగస్వామి లాగిన్"
+  },
+  "login": {
+    "title": "బిల్డర్ సైన్ ఇన్",
+    "hint": "బిల్డర్ ఖాతాలు Leadrat ద్వారా సృష్టించబడ్డాయి. మీకు ఒకటి లేకుంటే మీ నిర్వాహకుడిని అడగండి."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "నీ నిర్ణయం కోసం ఎదురు చూస్తున్నాను",
+    "ACCEPTED": "అంగీకరించబడింది",
+    "REJECTED": "తిరస్కరించబడింది"
+  },
+  "list": {
+    "title": "రెఫరల్స్",
+    "allProjects": "అన్ని ప్రాజెక్టులు",
+    "allStatuses": "అన్ని హోదాలు",
+    "count_one": "{{count}} రెఫరల్",
+    "count_other": "{{count}} సిఫార్సులు",
+    "columns": {
+      "referral": "రెఫరల్",
+      "customer": "కస్టమర్",
+      "project": "ప్రాజెక్ట్",
+      "sourcePartner": "మూల భాగస్వామి",
+      "status": "స్థితి",
+      "booking": "బుకింగ్",
+      "registered": "నమోదైంది"
+    },
+    "booked": "బుక్ చేసుకున్నారు",
+    "empty": "ఇంకా సిఫార్సులు లేవు."
+  },
+  "detail": {
+    "customer": "కస్టమర్",
+    "sourcePartner": "మూల భాగస్వామి",
+    "attributionNote": "(లక్షణం - మార్చడం సాధ్యం కాదు)",
+    "leadStatus": "లీడ్ స్థితి",
+    "protectedUntil": "వరకు రక్షించబడింది",
+    "referral": "రెఫరల్",
+    "reason": "కారణం: {{reason}}",
+    "booking": "బుకింగ్",
+    "bookedOwner": "బుక్ చేయబడింది - మీరు కార్యాచరణ యజమాని",
+    "notBooked": "బుక్ చేయలేదు",
+    "sharedAfterBooking": "బుకింగ్ తర్వాత షేర్ చేయబడింది",
+    "accept": "రెఫరల్‌ని అంగీకరించండి",
+    "confirmBooking": "బుకింగ్‌ని నిర్ధారించండి",
+    "reject": "రెఫరల్‌ని తిరస్కరించండి",
+    "rejectReasonLabel": "తిరస్కరించడానికి కారణం (భాగస్వామికి చూపబడింది) *",
+    "rejectConfirm": "తిరస్కరించు",
+    "confirmBookingPrompt": "బుకింగ్‌ని నిర్ధారించాలా? కార్యనిర్వాహక యాజమాన్యం మీ వద్దకు తరలించబడుతుంది మరియు భాగస్వామి కమీషన్‌కు అర్హులు అవుతారు.",
+    "notice": {
+      "booked": "బుకింగ్ నిర్ధారించబడింది.",
+      "accepted": "రెఫరల్ ఆమోదించబడింది.",
+      "rejected": "రెఫరల్ తిరస్కరించబడింది."
+    },
+    "backToReferrals": "తిరిగి రెఫరల్స్కి"
+  },
+  "history": {
+    "title": "చరిత్ర",
+    "actor": {
+      "system": "వ్యవస్థ",
+      "partner": "ఛానెల్ భాగస్వామి",
+      "admin": "Leadrat అడ్మిన్"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "భాగస్వామి నమోదు స్వీకరించబడింది",
+      "DUPLICATE_CHECK_COMPLETED": "నకిలీ తనిఖీ పూర్తయింది - యాక్టివ్ డూప్లికేట్ కనుగొనబడలేదు",
+      "REGISTRATION_ACCEPTED": "నమోదు ఆమోదించబడింది",
+      "PROTECTION_GRANTED_one": "{{count}} -రోజు రక్షణ మంజూరు చేయబడింది",
+      "PROTECTION_GRANTED_other": "{{count}} -రోజు రక్షణ మంజూరు చేయబడింది",
+      "STAGE_UPDATED": "స్థితి {{stage}} కి నవీకరించబడింది",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} ఫీల్డ్ నవీకరించబడింది",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} ఫీల్డ్‌లు నవీకరించబడ్డాయి",
+      "LEAD_ASSIGNED": "{{name}} కి కేటాయించబడింది",
+      "LEAD_UNASSIGNED": "కేటాయించబడలేదు",
+      "REFERRAL_ACCEPTED": "బిల్డర్ సిఫార్సును అంగీకరించారు",
+      "REFERRAL_REJECTED": "బిల్డర్ సిఫార్సును తిరస్కరించారు. కారణం: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} ద్వారా నకిలీ నమోదు ప్రయత్నం తిరస్కరించబడింది",
+      "BOOKING_COMPLETED": "బుకింగ్ పూర్తయింది",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "కార్యాచరణ యాజమాన్యం బిల్డర్‌కు బదిలీ చేయబడింది",
+      "PARTNER_ATTRIBUTION_PRESERVED": "భాగస్వామి అట్రిబ్యూషన్ భద్రపరచబడింది",
+      "COMMISSION_ELIGIBILITY_CREATED": "కమిషన్ అర్హత సృష్టించబడింది",
+      "HANDOVER_COMPLETED": "అప్పగింత పూర్తయింది",
+      "ADMIN_PROTECTION_RELEASED": "అడ్మిన్ ముందుగానే నకిలీ రక్షణను విడుదల చేసారు. కారణం: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "నిర్వాహకుడు రిజిస్ట్రేషన్‌ని {{from}} నుండి {{to}} కి తిరిగి కేటాయించారు. కారణం: {{reason}}"
+    }
+  }
+}

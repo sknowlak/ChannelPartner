@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Laranzman",
+    "noPermission": "ou napa permisyon pou zer bann laranzman."
+  },
+  "categories": {
+    "lead": "Dirize",
+    "user": "Itilizater",
+    "integrations": "lentegrasyon"
+  },
+  "leadTabs": {
+    "fields": "bann domenn",
+    "statuses": "bann stati ek sou-stati",
+    "notifications": "Notifikasyon ek progranmer"
+  },
+  "fields": {
+    "leadIntro": "konfigir form kaptir lead: aktiv/dezaktiv bann domenn, mark zot neseser, oubyen azout ou prop domenn personnaliz.",
+    "userIntro": "konfigir form Azout/Edit Manm Lekip: aktiv/dezabilit bann domenn, mark zot neseser, oubyen azout ou prop domenn personnaliz.",
+    "addCustomField": "+ azout domenn personnalize",
+    "fieldLabel": "Label Laplenn",
+    "group": "Group",
+    "groupPlaceholderLead": "par egzanp Lenformasyon Lanket",
+    "groupPlaceholderUser": "par egzanp bann detay adisyonnel",
+    "dataType": "Kalite Lenformasyon",
+    "options": "bann opsyon (separe avek virgil)",
+    "requiredLead": "obligatwar - bann partener dan ou lekip i bezwen ranpli sa pou anrezistre en lead",
+    "requiredUser": "obligatwar - fodre ganny ranpli ler pe azout en manm lekip",
+    "creating": "pe kree...",
+    "createField": "kree domenn",
+    "columns": {
+      "field": "Laplenn",
+      "group": "Group",
+      "type": "Kalite",
+      "required": "Neseser",
+      "enabled": "aktivize",
+      "kind": "Zantiy"
+    },
+    "kind": {
+      "custom": "Koutim",
+      "core": "Nwayo (bloke)",
+      "standard": "Standar"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Teks",
+    "TEXTAREA": "long teks",
+    "NUMBER": "Nimero",
+    "CURRENCY": "Larzan",
+    "DATE": "Dat",
+    "SELECT": "desann",
+    "LIST": "Lalis"
+  },
+  "picker": {
+    "searchPlaceholder": "rod bann domenn lead...",
+    "summary": "{{shown}} shown · {{mandatory}} obligatory",
+    "mandatory": "Mandatwar",
+    "noMatch": "napa domenn ki koresponn."
+  },
+  "statuses": {
+    "intro": "ou bann stati ek sou-stati lead - sa ki sakenn i demande (en dat ek ler, bann lead field) ler en dimoun i met en lead azour lo la.",
+    "add": "+ azout stati",
+    "columns": {
+      "order": "Lord",
+      "status": "Stati",
+      "subStatuses": "bann sou-stati",
+      "asksFor": "Demann pour",
+      "active": "Aktiv"
+    },
+    "moveUp": "bouz anler",
+    "moveDown": "bouz anba",
+    "defaultBadge": "par defo pou bann nouvo lead",
+    "bookingBadge": "Stati rezervasyon",
+    "asksForLabel": "demann {{label}}",
+    "asksForDateTime": "demann dat ek ler",
+    "none": "Okenn",
+    "dateTime": "dat ek ler",
+    "scheduledOn": "lo {{names}}",
+    "fieldsSummary_one": "{{count}} field ( {{mandatory}} obligatory)",
+    "fieldsSummary_other": "{{count}} fields ( {{mandatory}} obligatory)",
+    "deleteConfirm": "efas stati \" {{name}} \"? sa pa kapab ganny defer.",
+    "editTitle": "edit stati - {{name}}",
+    "newTitle": "Nouvo Stati",
+    "name": "Non Stati",
+    "colour": "Kouler",
+    "active": "Aktiv",
+    "isDefault": "stati par defo pou bann nouvo lead",
+    "isBooking": "Stati rezervasyon (set par Rezervasyon Konplet)",
+    "whenMoved": "ler en lead i ganny bouze dan sa stati",
+    "askSchedule": "demann en dat ek ler (progranm)",
+    "scheduleLabelPlaceholder": "Label, par egzanp vizit kot",
+    "fieldsToShow": "bann domenn prensipal pou montre lo form azour",
+    "subStatusesTitle": "bann sou-stati",
+    "subStatusesHint": "sak sou-stati i kapab demann son prop dat ek ler e azout son prop domenn - montre anler lo bann domenn sa stati anler.",
+    "subStatusName": "non sou-stati",
+    "subFields": "bann domenn ( {{count}} )",
+    "subScheduleLabelPlaceholder": "dat ek ler, par egzanp telefonn ankor lo",
+    "addSubStatus": "+ azout sou-stati",
+    "saveStatus": "prezerv stati",
+    "createStatus": "kree stati"
+  },
+  "notifications": {
+    "intro": "notifye bann dimoun apropriye ler en lead i ariv en stati - imedyatman, oubyen en ler fikse avan/apre dat ek ler progranmen lo la.",
+    "add": "+ azout notifikasyon",
+    "columns": {
+      "notification": "Notifikasyon",
+      "whenStatusIs": "ler stati i",
+      "sends": "anvoye",
+      "to": "Kot",
+      "via": "Via",
+      "enabled": "aktivize"
+    },
+    "anyStatus": "nenport stati",
+    "anySubStatus": "nenport sou-stati",
+    "inactiveOption": "{{name}} (inactive)",
+    "emptyRules": "napa notifikasyon pour le moman - azout enn pour alert ou lekip ler en lead i ariv en stati.",
+    "jobs": {
+      "title": "progranmen e anvoye",
+      "firesAt": "Dife kot",
+      "notification": "Notifikasyon",
+      "lead": "Dirize",
+      "status": "Stati",
+      "details": "Detay",
+      "empty": "Napa nanryen ki'n ganny progranmen ou anvoye pour le moman.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "An atandan",
+      "PROCESSING": "Prosesis",
+      "SENT": "Anvoye",
+      "FAILED": "Esoue",
+      "SKIPPED": "sote",
+      "CANCELLED": "kennsel"
+    },
+    "deliveryStatus": {
+      "SENT": "anvoye",
+      "FAILED": "esoue",
+      "SKIPPED": "sote"
+    },
+    "deliveryChannel": {
+      "IN_APP": "dan-app",
+      "EMAIL": "imel",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Itilizater ki'n ganny donnen",
+      "owner": "Propriyeter",
+      "updatedBy": "in ganny met azour par",
+      "role": "Rol: {{name}}"
+    },
+    "channels": {
+      "inApp": "dan laplikasyon",
+      "email": "imel",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "efas notifikasyon \" {{name}} \"? bann rapel an atant i ganny kennsel.",
+    "testPrompt": "anvoy en tes sa notifikasyon pour ou lekor (dan app) an servan ki lead ID ?",
+    "testSent": "anvoye kot ou laklos: {{title}} {{message}}",
+    "headersInvalid": "bann header Webhook i bezwen valid JSON , par egzanp {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Notifikasyon edit",
+    "newTitle": "Nouvo Notifikasyon",
+    "name": "Non",
+    "namePlaceholder": "par egzanp rapel vizit sit",
+    "whenStatus": "ler stati en lead i",
+    "subStatus": "sou-stati",
+    "send": "Anvoy (progranm)",
+    "custom": "Koutim...",
+    "modeBefore": "avan ler progranmen",
+    "modeAfter": "apre ler progranmen",
+    "noScheduleWarning": "sa stati pa demann en dat ek ler, alor en notifikasyon \"avan/a/apre ler progranmen\" pa pou zanmen marse.",
+    "noScheduleFix": "alim <strong>Demann en dat ek ler</strong> pour li anba Stati ek Sou-Stati, oubyen anvoy Imedyatman.",
+    "sendTo": "anvoy kot (nenport konbinezon)",
+    "recipientAssigned": "Itilizater ki'n ganny donnen (propriyeter prensipal)",
+    "recipientOwner": "propriyeter kont / admin",
+    "recipientUpdatedBy": "dimoun ki'n met stati azour",
+    "everyoneWithRole": "tou dimoun avek rol",
+    "specificUsers": "bann itilizater spesifik (aktiv)",
+    "inactiveNever": "bann itilizater inaktif pa zanmen resevwar notifikasyon, menm si in ganny selekte.",
+    "deliverVia": "delivre atraver",
+    "channelInApp": "dan laplikasyon (laklos)",
+    "channelEmail": "imel",
+    "channelWebhook": "Webhook ( WhatsApp / fourniser SMS )",
+    "emailHint": "imel i al kot ladres imel sak resever e i bezwen SMTP set up lo server (backend/.env); ziska ler bann anvoy imel i ganny anrezistre koman sote.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Headers ( JSON )",
+    "content": "konteni notifikasyon",
+    "title": "Tit",
+    "message": "Mesaz",
+    "insertIntoTitle": "met dan tit",
+    "insertIntoMessage": "met dan mesaz",
+    "anyLeadField": "nenport ki lead field i marse osi, par egzanp <code1>{{example1}}</code1> oubyen <code2>{{example2}}</code2> .",
+    "preview": "Apersi (lesanp lead)",
+    "enabled": "aktivize",
+    "saveRule": "prezerv notifikasyon",
+    "createRule": "kree notifikasyon",
+    "variables": {
+      "customerName": "non prensipal",
+      "customerMobile": "mobil prensipal",
+      "customerEmail": "imel prensipal",
+      "registrationId": "ID prensipal",
+      "status": "Stati",
+      "subStatus": "sou-stati",
+      "scheduleAt": "dat ek ler progranmen",
+      "assignedTo": "Itilizater ki'n ganny donnen",
+      "updatedBy": "in ganny met azour par",
+      "recipient": "Non resever",
+      "project": "Proze",
+      "notes": "Dernyen not",
+      "partner": "non partener"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "imedyatman ler stati in ganny mete",
+      "AT": "a ler progranmen",
+      "A1D": "1 zour apre ler progranmen (tyek swivi)"
+    },
+    "immediately": "Imedyatman",
+    "atScheduled": "a ler progranmen",
+    "before": {
+      "MINUTES_one": "{{count}} minit avan ler progranmen",
+      "MINUTES_other": "{{count}} minit avan ler progranmen",
+      "HOURS_one": "{{count}} erdtan avan ler progranmen",
+      "HOURS_other": "{{count}} erdtan avan ler progranmen",
+      "DAYS_one": "{{count}} zour avan ler progranmen",
+      "DAYS_other": "{{count}} zour avan ler progranmen",
+      "WEEKS_one": "{{count}} semenn avan ler progranmen",
+      "WEEKS_other": "{{count}} semenn avan ler progranmen",
+      "MONTHS_one": "{{count}} mwan avan ler progranmen",
+      "MONTHS_other": "{{count}} mwan avan ler progranmen",
+      "YEARS_one": "{{count}} lannen avan ler progranmen",
+      "YEARS_other": "{{count}} lannen avan ler progranmen"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minit apre ler progranmen",
+      "MINUTES_other": "{{count}} minit apre ler progranmen",
+      "HOURS_one": "{{count}} erdtan apre ler progranmen",
+      "HOURS_other": "{{count}} erdtan apre ler progranmen",
+      "DAYS_one": "{{count}} zour apre ler progranmen",
+      "DAYS_other": "{{count}} zour apre ler progranmen",
+      "WEEKS_one": "{{count}} semenn apre ler progranmen",
+      "WEEKS_other": "{{count}} semenn apre ler progranmen",
+      "MONTHS_one": "{{count}} mwan apre ler progranmen",
+      "MONTHS_other": "{{count}} mwan apre ler progranmen",
+      "YEARS_one": "{{count}} lannen apre letan progranmen",
+      "YEARS_other": "{{count}} lannen apre letan progranmen"
+    },
+    "units": {
+      "MINUTES_one": "minit",
+      "MINUTES_other": "minit",
+      "HOURS_one": "erdtan",
+      "HOURS_other": "erdtan",
+      "DAYS_one": "zour",
+      "DAYS_other": "zour",
+      "WEEKS_one": "lasemenn",
+      "WEEKS_other": "semenn",
+      "MONTHS_one": "mwan",
+      "MONTHS_other": "mwan",
+      "YEARS_one": "lannen",
+      "YEARS_other": "lannen"
+    }
+  }
+}

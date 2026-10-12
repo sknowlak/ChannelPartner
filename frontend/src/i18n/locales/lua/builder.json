@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Tshiibi tshia muibaki",
+    "referrals": "Bantu batuma",
+    "builderLogin": "Builder Login",
+    "partnerLogin": "Kubuela mu tshisanji"
+  },
+  "login": {
+    "title": "Muibaki udi ubuela",
+    "hint": "Makonte a muenji adi menza kudi Leadrat . Ebeje mulombodi weba shi kuyi nayi."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Ndi muindile dipangadika diebe",
+    "ACCEPTED": "Bitabijibua",
+    "REJECTED": "Babenga"
+  },
+  "list": {
+    "title": "Bantu batuma",
+    "allProjects": "Midimu yonso",
+    "allStatuses": "Malu onso",
+    "count_one": "{{count}} dituma",
+    "count_other": "{{count}} bantu badi batuma",
+    "columns": {
+      "referral": "Dituma",
+      "customer": "Kiliya",
+      "project": "Mudimu",
+      "sourcePartner": "Muena mudimu",
+      "status": "Mushindu",
+      "booking": "Difunda",
+      "registered": "Mufundisha"
+    },
+    "booked": "Mufunda",
+    "empty": "Kakuena bantu badi batuma to."
+  },
+  "detail": {
+    "customer": "Kiliya",
+    "sourcePartner": "Muena mudimu",
+    "attributionNote": "(difila - kadiena mua kushintuluka)",
+    "leadStatus": "Nsombelu wa mulombodi",
+    "protectedUntil": "Kulama too ne",
+    "referral": "Dituma",
+    "reason": "Bualu: {{reason}}",
+    "booking": "Difunda",
+    "bookedOwner": "Mufunda - udi muena mudimu",
+    "notBooked": "Ki mbafunda to",
+    "sharedAfterBooking": "Kuabanya kunyima kua difunda",
+    "accept": "Itaba dituma",
+    "confirmBooking": "Ikala mujadike dilomba dia muaba",
+    "reject": "Kubenga dituma",
+    "rejectReasonLabel": "Bualu bua kubenga (buleja kudi muena dibaka) *",
+    "rejectConfirm": "Kubenga",
+    "confirmBookingPrompt": "Kujadika difunda anyi? Bumfumu bua mudimu budi buenda bufumina kuudi ne muena mudimu nebe udi ulua mukumbane bua kupeta makuta.",
+    "notice": {
+      "booked": "Difunda diakajadikibua.",
+      "accepted": "Dituma didi ditabibua.",
+      "rejected": "Dituma dia bantu dibenga."
+    },
+    "backToReferrals": "Kupingana ku bantu badi batuma"
+  },
+  "history": {
+    "title": "Muanu",
+    "actor": {
+      "system": "Bulongolodi",
+      "partner": "Muena mudimu wa tshisanji",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Difundisha dia muena dibaka dipeta",
+      "DUPLICATE_CHECK_COMPLETED": "Dikonkonona dia bintu bibidi dijika - kakuena tshintu tshibidi tshidi tshienza mudimu tshipeta to",
+      "REGISTRATION_ACCEPTED": "Difundisha ditabijibua",
+      "PROTECTION_GRANTED_one": "{{count}} -dituku dia bukubi difila",
+      "PROTECTION_GRANTED_other": "{{count}} -dituku dia bukubi difila",
+      "STAGE_UPDATED": "Nsombelu mushintuluke ku {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Tshitupa tshia {{count}} tshilongolola",
+      "LEAD_DETAILS_UPDATED_other": "Bitupa bia {{count}} bipiabipia",
+      "LEAD_ASSIGNED": "Bifila kudi {{name}}",
+      "LEAD_UNASSIGNED": "Kayi mupeshibue",
+      "REFERRAL_ACCEPTED": "Muibaki wakitaba dituma",
+      "REFERRAL_REJECTED": "Muibaki wakabenga dituma. Bualu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Diteta dia difunda dia misangu ibidi dia {{partner}} dibenga",
+      "BOOKING_COMPLETED": "Difunda dijika",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Bumfumu bua mudimu budi bufila kudi muibaki",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Dimanyisha dia muena dibaka didi dilama",
+      "COMMISSION_ELIGIBILITY_CREATED": "Dikumbana dia mudimu diakafukibua",
+      "HANDOVER_COMPLETED": "Difila dia bintu dijika",
+      "ADMIN_PROTECTION_RELEASED": "Mulombodi wakapatula bukubi bua misangu ibidi kumpala kua dîba. Bualu: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Mulombodi wakashintulula difunda dia {{from}} to {{to}} . Bualu: {{reason}}"
+    }
+  }
+}

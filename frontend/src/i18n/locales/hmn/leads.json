@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Kuv Leads",
+    "signedInAs": "Kos npe rau hauv li {{name}} ( {{partnerId}} ) · lub sij hawm qhia hauv {{timezone}}",
+    "addLead": "+ Ntxiv Lead",
+    "tabs": {
+      "all": "Tag nrho ( {{count}} )",
+      "pending": "Pending ( {{count}} )",
+      "booked": "Booked ( {{count}} )"
+    },
+    "searchPlaceholder": "Nrhiav los ntawm lub npe, txawb, lossis sau npe ID ...",
+    "manageColumns": "Tswj cov kab",
+    "rowsPerPage": "Kab ib nplooj",
+    "registrationId": "Kev sau npe ID",
+    "emptyState": "Tsis muaj cov thawj coj tseem - sau npe koj thawj tus.",
+    "noMatch": "Tsis muaj leads phim cov lim dej no.",
+    "showing": "Qhia {{from}} - {{to}} ntawm {{total}} nkag",
+    "actions": {
+      "preview": "Saib ua ntej & hloov tshiab sai",
+      "history": "Keeb kwm",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Hu rau"
+    },
+    "pagination": {
+      "first": "Thawj nplooj ntawv",
+      "previous": "Nplooj ntawv dhau los",
+      "next": "Nplooj ntawv tom ntej",
+      "last": "Nplooj ntawv kawg"
+    }
+  },
+  "columns": {
+    "status": "xwm txheej",
+    "assignTo": "Muab rau",
+    "booked": "Booked",
+    "protectionUntil": "Tiv thaiv kom txog thaum"
+  },
+  "booking": {
+    "booked": "Booked",
+    "pending": "Tseem tos"
+  },
+  "assign": {
+    "unassigned": "Unassigned",
+    "owner": "{{name}} (Tus tswv)",
+    "inactive": "{{name}} (tsis ua haujlwm)",
+    "unknownUser": "Tsis paub siv",
+    "assignedTo": "Muab rau {{name}}"
+  },
+  "form": {
+    "addTitle": "Ntxiv Lead",
+    "editTitle": "Kho kom raug Lead",
+    "noPermissionAdd": "Koj tsis muaj kev tso cai los sau npe cov thawj coj.",
+    "noPermissionEdit": "Koj tsis muaj kev tso cai los kho cov thawj coj.",
+    "selectPlaceholder": "Xaiv...",
+    "commaSeparated": "Kev sib cais",
+    "phonePlaceholder": "Xov tooj",
+    "countryCode": "Lub teb chaws chaws"
+  },
+  "project": {
+    "none": "Tseem tsis tau muaj qhov project (tsis xa mus)",
+    "notInList": "{{project}} (tsis nyob hauv daim ntawv teev npe)"
+  },
+  "journey": {
+    "customer": "Cov neeg siv khoom",
+    "currentOwner": "Tus tswv tam sim no",
+    "protectionExpiry": "Kev tiv thaiv tas mus li",
+    "leadStatus": "Lead Status",
+    "scheduled": "Teem sijhawm",
+    "assignedTo": "Muab rau",
+    "referral": "Kev xa mus",
+    "builderReason": "Tus tsim lub laj thawj: {{reason}}",
+    "bookedHint": "Booked los ntawm tus builder - kev ua tswv cuab tau tsiv mus rau lub builder; koj qhov kev xam pom thiab kev tsim nyog tau txais kev ua haujlwm raug khaws cia.",
+    "notBookedHint": "Bookings tau lees paub los ntawm tus tsim thaum lawv lees txais kev xa mus.",
+    "quickUpdate": "Hloov tshiab ceev",
+    "leadDetails": "Lead Paub meej",
+    "progressHistory": "Keeb kwm kev vam meej",
+    "timesIn": "(lub sij hawm hauv {{timezone}} )",
+    "backToMyLeads": "Rov qab mus rau Kuv Cov Thawj Coj",
+    "editLead": "Kho kom raug Lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "Tsis xa mus (tsis muaj qhov project)",
+    "PENDING_BUILDER": "Tos tus tsim",
+    "ACCEPTED": "Txais los ntawm builder",
+    "REJECTED": "Tsis lees paub los ntawm builder"
+  },
+  "preview": {
+    "ariaLabel": "Kev saib ua ntej",
+    "title": "Lead Saib ua ntej",
+    "source": "Qhov chaw",
+    "location": "Qhov chaw",
+    "scheduled": "Teem sijhawm",
+    "registered": "Sau npe",
+    "latestNote": "Lus ceeb toom",
+    "quickUpdate": "Hloov tshiab ceev",
+    "fullDetails": "Paub meej",
+    "editLead": "Kho kom raug Lead",
+    "history": "Keeb kwm"
+  },
+  "quick": {
+    "assignedTo": "Muab rau",
+    "status": "xwm txheej",
+    "subStatus": "Sub-Status",
+    "selectSubStatus": "Xaiv sub-status...",
+    "none": "Tsis muaj",
+    "scheduledAt": "Teem sijhawm ntawm",
+    "localTime": "lub sijhawm hauv zos",
+    "note": "Nco tseg",
+    "notePlaceholder": "Yuav ua li cas tshwm sim ntawm no hu / mus ntsib? (yeem)",
+    "updateStatus": "Hloov tshiab xwm txheej",
+    "statusUpdated": "Cov xwm txheej tshiab",
+    "bookedLocked": "Cov hlau lead no tau raug booked - nws cov xwm txheej tsis tuaj yeem hloov pauv.",
+    "viewOnly": "Koj tuaj yeem saib cov thawj coj no, tab sis koj lub luag haujlwm tsis tuaj yeem hloov kho nws."
+  },
+  "history": {
+    "title": "Keeb kwm - {{registrationId}}",
+    "tabs": {
+      "all": "Tag nrho",
+      "status": "xwm txheej",
+      "assignment": "Txoj hauj lwm",
+      "notes": "Sau ntawv"
+    },
+    "doneBy": "Ua los ntawm {{actor}}",
+    "system": "Qhov system",
+    "platforms": {
+      "System": "Qhov system",
+      "External": "Sab nraud",
+      "Web": "Web",
+      "Mobile": "Txawb"
+    },
+    "added": "ntxiv",
+    "updated": "kho tshiab",
+    "empty": "(tsis muaj)",
+    "noHistory": "Tseem tsis tau muaj keeb kwm nyob rau hauv qeb no.",
+    "fieldLabels": {
+      "stage": "xwm txheej",
+      "subStatus": "Sub-Status",
+      "scheduledAt": "Teem caij",
+      "notes": "Sau ntawv",
+      "assignedTo": "Muab rau"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Tau txais tus khub sau npe",
+      "DUPLICATE_CHECK_COMPLETED": "Duplicate check ua tiav - tsis pom muaj cov duplicate",
+      "REGISTRATION_ACCEPTED": "Kev tso npe lees txais",
+      "PROTECTION_GRANTED_one": "{{count}} - hnub tiv thaiv tau tso cai",
+      "PROTECTION_GRANTED_other": "{{count}} - hnub tiv thaiv tau tso cai",
+      "REGISTRATION_ATTEMPT_REJECTED": "Kev sim sau npe dua los ntawm {{partnerId}} tsis lees paub",
+      "LEAD_DETAILS_UPDATED_one": "Hloov tshiab {{count}} teb",
+      "LEAD_DETAILS_UPDATED_other": "Hloov tshiab {{count}} teb",
+      "STAGE_UPDATED": "Cov xwm txheej hloov tshiab rau {{status}}",
+      "LEAD_ASSIGNED": "Muab rau {{name}}",
+      "LEAD_UNASSIGNED": "Unassigned",
+      "BOOKING_COMPLETED": "Booking tiav",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Kev ua tswv cuab tau pauv mus rau Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partner attribution khaws cia",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kev tsim nyog tau txais commission tsim",
+      "HANDOVER_COMPLETED": "Kev ua tiav tiav",
+      "REFERRAL_ACCEPTED": "Builder lees txais kev xa mus",
+      "REFERRAL_REJECTED": "Builder tsis lees paub qhov xa mus. Yog vim li cas: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin tso tawm duplicate tiv thaiv ntxov. Yog vim li cas: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin reassigned sau npe los ntawm {{from}} rau {{to}} . Yog vim li cas: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Tswj cov kab",
+    "hint": "Luag rau reorder · kos kom pom",
+    "showAll": "Qhia tag nrho",
+    "resetDefault": "Rov qab mus rau Default"
+  },
+  "filters": {
+    "title": "Cov lim",
+    "allProjects": "Txhua qhov project",
+    "any": "Ib qho",
+    "noFields": "Tsis muaj lwm qhov chaw lim dej tau qhib tsis tau (Chaw> Lead).",
+    "clearAll": "Clear Txhua"
+  },
+  "phone": {
+    "MISSING": "Xov tooj yuav tsum tau.",
+    "INVALID": "Thov sau tus lej xov tooj siv tau.",
+    "TOO_SHORT": "Tus xov tooj luv dhau lawm.",
+    "TOO_LONG": "Xov tooj ntev dhau lawm.",
+    "INVALID_FOR_COUNTRY": "Tus xov tooj no tsis siv tau rau {{country}} .",
+    "COUNTRY_MISMATCH": "Thov xaiv lub teb chaws raug.",
+    "NOT_MOBILE": "Thov sau tus lej xov tooj ntawm tes, tsis yog xov tooj."
+  }
+}

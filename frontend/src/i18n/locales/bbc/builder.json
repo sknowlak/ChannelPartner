@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal Pembangun",
+    "referrals": "Rujukan",
+    "builderLogin": "Masuk Pembangun",
+    "partnerLogin": "Masuk Mitra Saluran"
+  },
+  "login": {
+    "title": "Masuk tu pembangun",
+    "hint": "Akun pembangun dibahen Leadrat . Sukkun hamu ma tu pangurus muna molo dang adong."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Paimahon haputusanmu .",
+    "ACCEPTED": "Dijalo",
+    "REJECTED": "Ditulak"
+  },
+  "list": {
+    "title": "Rujukan",
+    "allProjects": "Sude proyek .",
+    "allStatuses": "Sude status .",
+    "count_one": "{{count}} rujukan",
+    "count_other": "{{count}} rujukan",
+    "columns": {
+      "referral": "Rujukan",
+      "customer": "Partobo",
+      "project": "Karejo kontrak",
+      "sourcePartner": "Mitra Sumber",
+      "status": "Pangkat",
+      "booking": "Pemesanan",
+      "registered": "Terdaftar"
+    },
+    "booked": "Dipesan",
+    "empty": "Dang adong dope rujukan."
+  },
+  "detail": {
+    "customer": "Partobo",
+    "sourcePartner": "Mitra Sumber",
+    "attributionNote": "(atribusi - ndang boi diuba)",
+    "leadStatus": "Status Memimpin .",
+    "protectedUntil": "Dilinggomi Sahat tu 2019.",
+    "referral": "Rujukan",
+    "reason": "Alasan: {{reason}}",
+    "booking": "Pemesanan",
+    "bookedOwner": "Dipesan - hamu do nampuna operasional .",
+    "notBooked": "Dang dipesan",
+    "sharedAfterBooking": "Dibagihon dung dipesan .",
+    "accept": "Manjalo Rujukan .",
+    "confirmBooking": "Pastihon Pemesanan",
+    "reject": "Tolak Rujukan",
+    "rejectReasonLabel": "Alasan menolak (dipatuduhon tu pasangan) * .",
+    "rejectConfirm": "Manjua",
+    "confirmBookingPrompt": "Dipastihon do pemesanan i? Kepemilikan operasional pindah tu hamu jala mitra gabe talup komisi.",
+    "notice": {
+      "booked": "Pemesanan nunga dikonfirmasi.",
+      "accepted": "Dijalo do rujukan.",
+      "rejected": "Rujukan ditolak."
+    },
+    "backToReferrals": "Mulak tu Rujukan ."
+  },
+  "history": {
+    "title": "Turi turian",
+    "actor": {
+      "system": "Sistim",
+      "partner": "Mitra saluran",
+      "admin": "Admin Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Pendaftaran mitra dijalo .",
+      "DUPLICATE_CHECK_COMPLETED": "Duplikat pemeriksaan selesai - ndang adong duplikat aktif na dapot",
+      "REGISTRATION_ACCEPTED": "Dijalo do pendaftaran .",
+      "PROTECTION_GRANTED_one": "{{count}} -ari perlindungan dilehon",
+      "PROTECTION_GRANTED_other": "{{count}} -ari perlindungan dilehon",
+      "STAGE_UPDATED": "Status diperbarui gabe {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Bidang {{count}} na diperbarui",
+      "LEAD_DETAILS_UPDATED_other": "Bidang {{count}} na diperbarui",
+      "LEAD_ASSIGNED": "Ditugashon tu {{name}}",
+      "LEAD_UNASSIGNED": "Ndang ditugashon",
+      "REFERRAL_ACCEPTED": "Dijalo tukang bangunan do rujukan i .",
+      "REFERRAL_REJECTED": "Ditolak tukang bangunan do rujukan i. Alasan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Usaha pendaftaran duplikat sian {{partner}} ditolak",
+      "BOOKING_COMPLETED": "Pemesanan nunga sae",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Kepemilikan operasional dipindahon tu Pembangun .",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribusi mitra dijaga .",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisi dibahen .",
+      "HANDOVER_COMPLETED": "Selesai penyerahan",
+      "ADMIN_PROTECTION_RELEASED": "Admin mangalehon perlindungan ganda awal. Alasan: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin mambahen pendaftaran sian {{from}} gabe {{to}} . Alasan: {{reason}}"
+    }
+  }
+}

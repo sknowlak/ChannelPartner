@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Pengaturan",
+    "noPermission": "Ndang adong izinmu laho mangatur pengaturan."
+  },
+  "categories": {
+    "lead": "Manguluhon",
+    "user": "Pangguna",
+    "integrations": "Pardomuan"
+  },
+  "leadTabs": {
+    "fields": "Hauma",
+    "statuses": "Situs & Sub-Status .",
+    "notifications": "Pemberitahuan & Penjadwalan ."
+  },
+  "fields": {
+    "leadIntro": "Atur ma formulir penangkapan timbal balik: aktifhon/nonaktifhon bidang, tandai ma i dihaporluhon, manang tambahon ma bidang khususmuna sandiri.",
+    "userIntro": "Atur ma formulir Tambah/Edit Anggota Tim: aktifhon/nonaktifhon bidang, tandai ma i dihaporluhon, manang tambahon ma bidang khususmuna sandiri.",
+    "addCustomField": "+ Tambahon Bidang Khusus .",
+    "fieldLabel": "Label Lapangan",
+    "group": "Parlagutan",
+    "groupPlaceholderLead": "misalna Info Pertanyaan .",
+    "groupPlaceholderUser": "misalna Rincian Tambahan .",
+    "dataType": "Jenis Data",
+    "options": "Opsi (dipisah dohot koma)",
+    "requiredLead": "Dihaporluhon - mitra di timmuna ingkon mangisi on laho mendaftarhon lead .",
+    "requiredUser": "Dihaporluhon - ingkon diisi tingki manambai anggota tim .",
+    "creating": "Mambahen...",
+    "createField": "Mambahen Bidang .",
+    "columns": {
+      "field": "Luat",
+      "group": "Parlagutan",
+      "type": "Ragam",
+      "required": "Dihaporluon",
+      "enabled": "Diaktifhon",
+      "kind": "Denggan roha"
+    },
+    "kind": {
+      "custom": "Hasomalon",
+      "core": "Inti (terkunci)",
+      "standard": "Dihalashon"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Teks",
+    "TEXTAREA": "Teks na ganjang",
+    "NUMBER": "Nomor",
+    "CURRENCY": "Mata ni hepeng",
+    "DATE": "Hala",
+    "SELECT": "Turun",
+    "LIST": "Surat"
+  },
+  "picker": {
+    "searchPlaceholder": "Lului ma bidang timbal balik...",
+    "summary": "{{shown}} dipatuduhon · {{mandatory}} wajib",
+    "mandatory": "Naikhon",
+    "noMatch": "Ndang adong bidang na cocok."
+  },
+  "statuses": {
+    "intro": "Status dohot sub-status ni pimpinanmuna - aha na dipangido ganup (tanggal & jam, bidang pimpinan) molo adong na paimbaruhon pimpinan tu i.",
+    "add": "+ Tambahon Status",
+    "columns": {
+      "order": "Tona",
+      "status": "Pangkat",
+      "subStatuses": "Sub-keadaan",
+      "asksFor": "Mangido Asa .",
+      "active": "Ringgas"
+    },
+    "moveUp": "Pinda tu ginjang",
+    "moveDown": "Pinda tu toru .",
+    "defaultBadge": "Bawaan tu angka na baru .",
+    "bookingBadge": "Status pemesanan",
+    "asksForLabel": "Mangido {{label}}",
+    "asksForDateTime": "Mangido tanggal & jam .",
+    "none": "Nda adong",
+    "dateTime": "Tanggal & jam",
+    "scheduledOn": "on {{names}}",
+    "fieldsSummary_one": "Bidang {{count}} ( {{mandatory}} wajib)",
+    "fieldsSummary_other": "{{count}} bidang ( {{mandatory}} wajib)",
+    "deleteConfirm": "Hapus status \" {{name}} \"? Ndang boi be on diulahon.",
+    "editTitle": "Sunting Status - {{name}}",
+    "newTitle": "Status Baru",
+    "name": "Goar ni status",
+    "colour": "Borna",
+    "active": "Ringgas",
+    "isDefault": "Status bawaan tu angka na baru .",
+    "isBooking": "Status pemesanan (diatur oleh Pemesanan Lengkap)",
+    "whenMoved": "Molo adong timbal balik na dipindahon tu status on .",
+    "askSchedule": "Mangido tanggal & jam (penjadwalan)",
+    "scheduleLabelPlaceholder": "Label, misalna Kunjungi di .",
+    "fieldsToShow": "Bidang timbal balik na laho dipatudu di formulir pembaruan .",
+    "subStatusesTitle": "Sub-keadaan",
+    "subStatusesHint": "Ganup sub status boi do mangido tanggal & jam na be jala manambai bidangna be - na dipatuduhon di ginjang ni bidang ni status na di ginjang i.",
+    "subStatusName": "goar ni sub status",
+    "subFields": "Bidang ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Label tanggal & jam, misalna Telpon balik di 10.00.",
+    "addSubStatus": "+ Tambahon Sub Status .",
+    "saveStatus": "Simpan status",
+    "createStatus": "Mambahen Status ."
+  },
+  "notifications": {
+    "intro": "Pabotohon tu angka halak na tama molo dung sahat sada lead tu sada status - pintor, manang tingki naung ditontuhon andorang so/dung tanggal & tingki na dijadwalhon disi.",
+    "add": "+ Tambahon Pemberitahuan",
+    "columns": {
+      "notification": "Pemberitahuan",
+      "whenStatusIs": "Tingki Status Ni .",
+      "sends": "Mangkirim",
+      "to": "Tu",
+      "via": "Sian",
+      "enabled": "Diaktifhon"
+    },
+    "anyStatus": "Status aha pe .",
+    "anySubStatus": "Adong do sub status .",
+    "inactiveOption": "{{name}} (ndang aktif)",
+    "emptyRules": "Ndang adong dope pemberitahuan - tambahon ma sada laho paingothon timmuna molo adong lead sahat tu sada status.",
+    "jobs": {
+      "title": "Dijadwalhon & Dikirim",
+      "firesAt": "Api Di .",
+      "notification": "Pemberitahuan",
+      "lead": "Manguluhon",
+      "status": "Pangkat",
+      "details": "Manat",
+      "empty": "Dang adong dope na dijadwalhon manang dikirim.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Tarsundat",
+      "PROCESSING": "Pengolahan",
+      "SENT": "Hirim",
+      "FAILED": "Sundat",
+      "SKIPPED": "Dilewati",
+      "CANCELLED": "Dibatalhon"
+    },
+    "deliveryStatus": {
+      "SENT": "hirim",
+      "FAILED": "sundat",
+      "SKIPPED": "dilewati"
+    },
+    "deliveryChannel": {
+      "IN_APP": "di bagasan aplikasi",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Pangguna na ditugashon",
+      "owner": "Nampunasa",
+      "updatedBy": "Diperbarui marhite .",
+      "role": "Peran: {{name}}"
+    },
+    "channels": {
+      "inApp": "Di bagasan aplikasi",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Hapus pabotohon \" {{name}} \"? Dibatalhon do angka sipaingot na tertunda sian i.",
+    "testPrompt": "Kirim tes ni pemberitahuan on tu dirimuna sandiri (di aplikasi) mamangke ID lead na dia ?",
+    "testSent": "Ditongos tu loncengmu: {{title}} {{message}}",
+    "headersInvalid": "Ulu ni Webhook ingkon JSON na sah , misalna {\"Otorisasi\": \"Pembawa xyz\"}",
+    "editTitle": "Sunting Pemberitahuan",
+    "newTitle": "Pemberitahuan Baru",
+    "name": "Goar",
+    "namePlaceholder": "misalna parningotan kunjungan situs .",
+    "whenStatus": "Molo status ni sahalak pimpinan ima .",
+    "subStatus": "Sub status",
+    "send": "Kirim (penjadwalan)",
+    "custom": "Hasomalon...",
+    "modeBefore": "andorang so tingki naung dijadwalhon .",
+    "modeAfter": "dung dijadwalhon tingki .",
+    "noScheduleWarning": "Status on dang mangido tanggal & jam, jadi pemberitahuan \"sebelum/di/dung jam na dijadwalhon\" dang hea marsigorgor.",
+    "noScheduleFix": "Hidupkan <strong>Mangido tanggal & jam</strong> ni i di toru ni Status & Sub-Status, manang kirim Pintor.",
+    "sendTo": "Kirim tu (kombinasi aha pe)",
+    "recipientAssigned": "Pangguna na ditugashon (pemilik utama)",
+    "recipientOwner": "Nampuna akun / admin .",
+    "recipientUpdatedBy": "Halak na memperbarui status .",
+    "everyoneWithRole": "Sude do marperan .",
+    "specificUsers": "Pangguna na khusus (aktif)",
+    "inactiveNever": "Pangguna na so aktif ndang hea manjalo pemberitahuan, nang pe dipillit.",
+    "deliverVia": "Pasahathon marhite .",
+    "channelInApp": "Di bagasan aplikasi (lonceng)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( penyedia WhatsApp / SMS ) .",
+    "emailHint": "Email laho tu alamat email ni ganup sijalo jala porlu SMTP diatur di server (backend/.env); sahat tu tingki i email na dikirim dicatat songon na dilewati.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Uluan ( JSON )",
+    "content": "Isi ni pemberitahuan .",
+    "title": "Titel",
+    "message": "Tona",
+    "insertIntoTitle": "Masukkon tu Judul .",
+    "insertIntoMessage": "Masukkon tu Pesan .",
+    "anyLeadField": "Bidang timbal balik aha pe marfungsi do, misalna <code1>{{example1}}</code1> manang <code2>{{example2}}</code2> .",
+    "preview": "Pratinjau (contoh timbal balik)",
+    "enabled": "Diaktifhon",
+    "saveRule": "Simpan Pemberitahuan",
+    "createRule": "Mambahen Pemberitahuan .",
+    "variables": {
+      "customerName": "Timbal balik nama",
+      "customerMobile": "Timbal ponsel .",
+      "customerEmail": "Email manguluhon",
+      "registrationId": "ID timbal",
+      "status": "Pangkat",
+      "subStatus": "Sub status",
+      "scheduleAt": "Tanggal & jam na dijadwalhon",
+      "assignedTo": "Pangguna na ditugashon",
+      "updatedBy": "Diperbarui marhite .",
+      "recipient": "Goar ni sijalo",
+      "project": "Karejo kontrak",
+      "notes": "Catatan terbaru",
+      "partner": "Goar ni dongan"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Pintor dung diatur status .",
+      "AT": "Di tingki naung ditontuhon .",
+      "A1D": "1 ari dung dijadwalhon (pemeriksaan tindak lanjut)"
+    },
+    "immediately": "Manigor",
+    "atScheduled": "Di tingki naung ditontuhon .",
+    "before": {
+      "MINUTES_one": "{{count}} menit andorang so tingki naung dijadwalhon",
+      "MINUTES_other": "{{count}} menit andorang so jadwal",
+      "HOURS_one": "{{count}} jom andorang so jam na dijadwalhon",
+      "HOURS_other": "{{count}} jom andorang so jam na dijadwalhon",
+      "DAYS_one": "{{count}} ari andorang so tingki naung dijadwalhon",
+      "DAYS_other": "{{count}} ari andorang so tingki naung ditontuhon",
+      "WEEKS_one": "{{count}} minggu andorang so tingki naung dijadwalhon",
+      "WEEKS_other": "{{count}} minggu andorang so tingki na dijadwalhon",
+      "MONTHS_one": "{{count}} bulan andorang so tingki naung dijadwalhon",
+      "MONTHS_other": "{{count}} bulan andorang so tingki naung dijadwalhon",
+      "YEARS_one": "{{count}} taon andorang so tingki naung dijadwalhon",
+      "YEARS_other": "{{count}} taon andorang so tingki naung dijadwalhon"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} menit dung dijadwalhon tingki",
+      "MINUTES_other": "{{count}} menit dung dijadwalhon tingki",
+      "HOURS_one": "{{count}} jom dung dijadwalhon",
+      "HOURS_other": "{{count}} jom dung dijadwalhon",
+      "DAYS_one": "{{count}} ari dungkon tingki naung dijadwalhon",
+      "DAYS_other": "{{count}} ari dungkon tingki naung dijadwalhon",
+      "WEEKS_one": "{{count}} minggu dung dijadwalhon tingki",
+      "WEEKS_other": "{{count}} minggu dung dijadwalhon tingki",
+      "MONTHS_one": "{{count}} bulan dung dijadwalhon tingki",
+      "MONTHS_other": "{{count}} bulan dungkon tingki naung dijadwalhon",
+      "YEARS_one": "{{count}} taon dung dijadwalhon tingki",
+      "YEARS_other": "{{count}} taon dungkon tingki naung dijadwalhon"
+    },
+    "units": {
+      "MINUTES_one": "minut",
+      "MINUTES_other": "minut",
+      "HOURS_one": "jom",
+      "HOURS_other": "jom",
+      "DAYS_one": "ari",
+      "DAYS_other": "ari",
+      "WEEKS_one": "poken",
+      "WEEKS_other": "minggu",
+      "MONTHS_one": "bulan",
+      "MONTHS_other": "bulan",
+      "YEARS_one": "taon",
+      "YEARS_other": "martaon taon"
+    }
+  }
+}

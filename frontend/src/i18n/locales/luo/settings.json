@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Chenro",
+    "noPermission": "Ok in kod ratiro mar rito chenro."
+  },
+  "categories": {
+    "lead": "Telo",
+    "user": "Jatiyo",
+    "integrations": "Riwruok"
+  },
+  "leadTabs": {
+    "fields": "Midhi",
+    "statuses": "Kido kod Kido matindo",
+    "notifications": "Ong’eyo kod Jogo maketo chenro"
+  },
+  "fields": {
+    "leadIntro": "Los fom mar mako jogo ma telo: keto/wek tich, keto ranyisi ni dwarore, kata med tich mari iwuon.",
+    "userIntro": "Oketo fom mar Medo/Lok Jokanyo mag Team: keto/we mondo oket gik ma dwarore, keto ranyisi ni dwarore, kata med gik ma idwaro.",
+    "addCustomField": "+ Med puoth ma idwaro",
+    "fieldLabel": "Lebel mar puoth",
+    "group": "Grup",
+    "groupPlaceholderLead": "ranyisi, weche mag penjo",
+    "groupPlaceholderUser": "ranyisi, weche mathoth",
+    "dataType": "Kido mar Data",
+    "options": "Yiero (ma opogore gi koma)",
+    "requiredLead": "Dwaro - joweteni e grup mari nyaka pong' wachni mondo ondiki nying jatelo",
+    "requiredUser": "Dwaro - nyaka ipong' sama imedo ng'at moro e grup",
+    "creating": "Loso...",
+    "createField": "Los puoth",
+    "columns": {
+      "field": "Pap",
+      "group": "Grup",
+      "type": "Kido",
+      "required": "Madwarore",
+      "enabled": "Oketo",
+      "kind": "Kido"
+    },
+    "kind": {
+      "custom": "Kido",
+      "core": "Core (ma olor)",
+      "standard": "Mar okang"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Ote machuok",
+    "TEXTAREA": "Ndiko mabor",
+    "NUMBER": "Namba",
+    "CURRENCY": "Manyonge ma tiyo e pinje",
+    "DATE": "Tarik",
+    "SELECT": "Dhi piny",
+    "LIST": "Andike"
+  },
+  "picker": {
+    "searchPlaceholder": "Many puothe mag telo...",
+    "summary": "{{shown}} onyis · {{mandatory}} nyaka",
+    "mandatory": "Ma ochuno",
+    "noMatch": "Onge puothe ma chalre."
+  },
+  "statuses": {
+    "intro": "Okang’ mar jotelo kod okang’ matindo - gima ng’ato ka ng’ato penjo (tarik kod saa, kuonde mag jotelo) ka ng’ato oloso ng’at ma otelo kuome.",
+    "add": "+ Med chal",
+    "columns": {
+      "order": "Chano",
+      "status": "Kare",
+      "subStatuses": "Kido matindo",
+      "asksFor": "Kwayo ni",
+      "active": "Matiyo"
+    },
+    "moveUp": "Dhi malo",
+    "moveDown": "Dhi piny",
+    "defaultBadge": "Kaka oket ne jotelo manyien",
+    "bookingBadge": "Kido mar buko",
+    "asksForLabel": "Kwayo {{label}}",
+    "asksForDateTime": "Penjo tarik kod saa",
+    "none": "Onge",
+    "dateTime": "Tarik kod saa",
+    "scheduledOn": "kuom {{names}}",
+    "fieldsSummary_one": "{{count}} puoth ( {{mandatory}} nyaka)",
+    "fieldsSummary_other": "{{count}} puothe ( {{mandatory}} nyaka)",
+    "deleteConfirm": "Ruch chal mar \" {{name}} \"? Gini ok nyal dwoko piny.",
+    "editTitle": "Loki chal - {{name}}",
+    "newTitle": "Kido manyien",
+    "name": "Nying' mar chal",
+    "colour": "Rangi",
+    "active": "Matiyo",
+    "isDefault": "Kido mapile mar jotelo manyien",
+    "isBooking": "Kido mar ng’ado thuolo (oket gi ng’ado thuolo ma opong’)",
+    "whenMoved": "Ka ng’at ma tayo oseter e rang’iny ma kamano",
+    "askSchedule": "Kwaye tarik kod saa (jaket chenro)",
+    "scheduleLabelPlaceholder": "Lebel, kaka limo e",
+    "fieldsToShow": "Kuonde mag telo mondo onyis e fom mar loso",
+    "subStatusesTitle": "Kido matindo",
+    "subStatusesHint": "Oganda moro ka moro ma nigi okang’ matin nyalo penjo tarik kod saa mare owuon kendo omedo kuonde ma en-go - ma onyis e wi kuonde ma oting’o okang’ ma malo.",
+    "subStatusName": "Nying’ mar rang’iny matin",
+    "subFields": "Midhi ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Tarik kod saa, kaka ranyisi, goyo simu kendo e",
+    "addSubStatus": "+ Med kido matin",
+    "saveStatus": "Ket chal",
+    "createStatus": "Los chal"
+  },
+  "notifications": {
+    "intro": "Onyiso ji ma kare ka ng’at ma otelo ochopo e rang’iny moro - mapiyo, kata saa moketi kapok/bang’ tarik & saa ma oket kuome.",
+    "add": "+ Med lendo",
+    "columns": {
+      "notification": "Ong'eyo",
+      "whenStatusIs": "Ka Status En",
+      "sends": "Ooro",
+      "to": "Mondo",
+      "via": "Ka okadho kamoro",
+      "enabled": "Oketo"
+    },
+    "anyStatus": "Kido moro amora",
+    "anySubStatus": "Kido moro amora matin",
+    "inactiveOption": "{{name}} (ok ti)",
+    "emptyRules": "Onge lendo ma pok onyisi - med achiel mondo onyis jokanyo mag riwruok mari ka jatelo ochopo e rang’iny moro.",
+    "jobs": {
+      "title": "Oketo chenro kendo ooro",
+      "firesAt": "Mach E",
+      "notification": "Ong'eyo",
+      "lead": "Telo",
+      "status": "Kare",
+      "details": "Weche ewi gimoro",
+      "empty": "Onge gima oseket kata ooro nyaka sani.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Pok otimore",
+      "PROCESSING": "Prosesa",
+      "SENT": "Oro",
+      "FAILED": "Rem chopo dwaro",
+      "SKIPPED": "Oweyo",
+      "CANCELLED": "Okanhi"
+    },
+    "deliveryStatus": {
+      "SENT": "oro",
+      "FAILED": "rem chopo dwaro",
+      "SKIPPED": "oweyo"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ei program",
+      "EMAIL": "e-mail",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Jatiyo moketi",
+      "owner": "Wuon",
+      "updatedBy": "Otim lokruok gi",
+      "role": "Tich: {{name}}"
+    },
+    "channels": {
+      "inApp": "E program",
+      "email": "Imel",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Ruch lendo \" {{name}} \"? Paro ma pod ochung’ne wuok kuome oket oko.",
+    "testPrompt": "Ooro test mar ng’eyo ni in iwuon (e program) ka itiyo gi ID mar lead mane ?",
+    "testSent": "Ooro ne olang’ mari: {{title}} {{message}}",
+    "headersInvalid": "Oboke mag Webhook nyaka bed JSON ma owinjore, kaka {\"Chik\": \"Jating'o xyz\"}",
+    "editTitle": "Loki lendo",
+    "newTitle": "Oboke manyien",
+    "name": "Nying",
+    "namePlaceholder": "ranyisi, paro mar limo sait",
+    "whenStatus": "Ka rang’iny mar jatelo en",
+    "subStatus": "Kido matin",
+    "send": "Oor (jaket chenro)",
+    "custom": "Kido...",
+    "modeBefore": "kapok ochopo saa moketi",
+    "modeAfter": "bang' saa moketi",
+    "noScheduleWarning": "Status ni ok penj tarik kod saa, omiyo lendo mar \"kapok/e/bang' saa ma oket\" ok bi ng'ado.",
+    "noScheduleFix": "Oketo <strong>Penjo tarik kod saa</strong> mar timo kamano e bwo Kido kod Kido Matin, kata oro Mapiyo.",
+    "sendTo": "Oor ne (riwruok moro amora)",
+    "recipientAssigned": "Jatiyo moketi (wuon wuon ot maduong')",
+    "recipientOwner": "Wuon akaunt / jatend akaunt",
+    "recipientUpdatedBy": "Ng'at mane oloko chal",
+    "everyoneWithRole": "Ng’ato ka ng’ato nigi tich",
+    "specificUsers": "Jotiyo kode makende (matiyo)",
+    "inactiveNever": "Joma ok tiyo ok yud lendo, kata ka oseyiergi.",
+    "deliverVia": "Chiw kokalo kuom",
+    "channelInApp": "E program (bel)",
+    "channelEmail": "Imel",
+    "channelWebhook": "Webhook (jachiw WhatsApp / SMS )",
+    "emailHint": "Email dhi e adres mar email mar ng’ato ka ng’ato ma yudogi kendo dwaro ni SMTP oket e sava (bang’e/.env); nyaka e kindeno, email ma ooro ondiki kaka ma oseket.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Wi weche ( JSON )",
+    "content": "Gik ma inyiso",
+    "title": "Nying",
+    "message": "Ote",
+    "insertIntoTitle": "Ket ei wi wach",
+    "insertIntoMessage": "Ket e ote",
+    "anyLeadField": "Oboke moro amora ma telo bende tiyo, kaka <code1>{{example1}}</code1> kata <code2>{{example2}}</code2> .",
+    "preview": "Neno motelo (sampol mar telo)",
+    "enabled": "Oketo",
+    "saveRule": "Ket lendo",
+    "createRule": "Los lendo",
+    "variables": {
+      "customerName": "Nying jatelo",
+      "customerMobile": "Telo simu",
+      "customerEmail": "Email mar telo",
+      "registrationId": "ID mar jatelo",
+      "status": "Kare",
+      "subStatus": "Kido matin",
+      "scheduleAt": "Tarik kod saa moketi",
+      "assignedTo": "Jatiyo moketi",
+      "updatedBy": "Otim lokruok gi",
+      "recipient": "Nying jayudo",
+      "project": "Gidho",
+      "notes": "Oboke masani",
+      "partner": "Nying jahera"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Mapiyo ka rang’iny oseket",
+      "AT": "E saa ma ne oket",
+      "A1D": "Odiechieng’ achiel bang’ saa ma ne oket (ng’iyo luwo bang’e)"
+    },
+    "immediately": "Gi sano",
+    "atScheduled": "E saa moketi",
+    "before": {
+      "MINUTES_one": "{{count}} dakika kapok saa ma oket",
+      "MINUTES_other": "{{count}} dakika kapok saa ma oket",
+      "HOURS_one": "{{count}} saa kapok saa ma oket",
+      "HOURS_other": "{{count}} seche kapok saa ma oket",
+      "DAYS_one": "{{count}} odiechieng' kapok saa moketi ochopo",
+      "DAYS_other": "{{count}} ndalo kapok saa ma oket",
+      "WEEKS_one": "{{count}} juma kapok saa ma oket",
+      "WEEKS_other": "{{count}} juma moko kapok saa ma oket",
+      "MONTHS_one": "{{count}} dwe achiel kapok saa ma oket",
+      "MONTHS_other": "{{count}} dweche kapok saa ma oket",
+      "YEARS_one": "{{count}} higa kapok saa moketi ochopo",
+      "YEARS_other": "{{count}} higni kapok saa ma oket"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} dakika bang' saa moketi",
+      "MINUTES_other": "{{count}} dakika bang' saa moketi",
+      "HOURS_one": "{{count}} saa bang' saa moketi",
+      "HOURS_other": "{{count}} seche bang' saa moketi",
+      "DAYS_one": "{{count}} odiechieng' bang' saa moketi",
+      "DAYS_other": "{{count}} ndalo bang' saa moketi",
+      "WEEKS_one": "{{count}} juma bang' saa moketi",
+      "WEEKS_other": "{{count}} juma bang' saa moketi",
+      "MONTHS_one": "{{count}} dwe bang' saa moketi",
+      "MONTHS_other": "{{count}} dweche bang' saa ma ne oket",
+      "YEARS_one": "{{count}} higa bang' saa moketi",
+      "YEARS_other": "{{count}} higni bang' kinde moketi"
+    },
+    "units": {
+      "MINUTES_one": "dakika",
+      "MINUTES_other": "dakika",
+      "HOURS_one": "saa",
+      "HOURS_other": "seche",
+      "DAYS_one": "odiochieng'",
+      "DAYS_other": "ndalo",
+      "WEEKS_one": "juma",
+      "WEEKS_other": "juma ariyo",
+      "MONTHS_one": "dwe",
+      "MONTHS_other": "dweche",
+      "YEARS_one": "higa",
+      "YEARS_other": "higni"
+    }
+  }
+}

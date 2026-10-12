@@ -1,0 +1,96 @@
+{
+  "shell": {
+    "portal": "Portál stavitelů",
+    "referrals": "doporučení",
+    "builderLogin": "Přihlášení tvůrce",
+    "partnerLogin": "Přihlášení partnera kanálu"
+  },
+  "login": {
+    "title": "Přihlaste se stavitelem",
+    "hint": "Účty stavitelů vytváří Leadrat . Pokud jej nemáte, zeptejte se správce."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Čekání na vaše rozhodnutí",
+    "ACCEPTED": "Přijato",
+    "REJECTED": "Odmítnuto"
+  },
+  "list": {
+    "title": "doporučení",
+    "allProjects": "Všechny projekty",
+    "allStatuses": "Všechny stavy",
+    "count_one": "{{count}} doporučení",
+    "count_few": "{{count}} doporučení",
+    "count_many": "{{count}} doporučení",
+    "count_other": "{{count}} doporučení",
+    "columns": {
+      "referral": "Doporučení",
+      "customer": "Zákazník",
+      "project": "Projekt",
+      "sourcePartner": "Zdrojový partner",
+      "status": "Postavení",
+      "booking": "Rezervace",
+      "registered": "Registrovaný"
+    },
+    "booked": "Zarezervováno",
+    "empty": "Zatím žádné doporučení."
+  },
+  "detail": {
+    "customer": "Zákazník",
+    "sourcePartner": "Zdrojový partner",
+    "attributionNote": "(atribuce – nelze změnit)",
+    "leadStatus": "Stav potenciálního zákazníka",
+    "protectedUntil": "Chráněno do",
+    "referral": "Doporučení",
+    "reason": "Důvod: {{reason}}",
+    "booking": "Rezervace",
+    "bookedOwner": "Zarezervováno - jste provozním vlastníkem",
+    "notBooked": "Není rezervováno",
+    "sharedAfterBooking": "Sdíleno po rezervaci",
+    "accept": "Přijmout doporučení",
+    "confirmBooking": "Potvrďte rezervaci",
+    "reject": "Odmítnout doporučení",
+    "rejectReasonLabel": "Důvod odmítnutí (ukázán partnerovi) *",
+    "rejectConfirm": "Odmítnout",
+    "confirmBookingPrompt": "Potvrdit rezervaci? Provozní vlastnictví se přesune na vás a partner získá nárok na provizi.",
+    "notice": {
+      "booked": "Rezervace potvrzena.",
+      "accepted": "Doporučení přijato.",
+      "rejected": "Doporučení zamítnuto."
+    },
+    "backToReferrals": "Zpět na doporučení"
+  },
+  "history": {
+    "title": "Dějiny",
+    "actor": {
+      "system": "Systém",
+      "partner": "Kanálový partner",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Registrace partnera přijata",
+      "DUPLICATE_CHECK_COMPLETED": "Kontrola duplikátů dokončena – nenalezen žádný aktivní duplikát",
+      "REGISTRATION_ACCEPTED": "Registrace přijata",
+      "PROTECTION_GRANTED_one": "{{count}} -denní ochrana udělena",
+      "PROTECTION_GRANTED_few": "{{count}} -denní ochrana udělena",
+      "PROTECTION_GRANTED_many": "{{count}} -denní ochrana udělena",
+      "PROTECTION_GRANTED_other": "{{count}} -denní ochrana udělena",
+      "STAGE_UPDATED": "Stav aktualizován na {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Aktualizováno pole {{count}}",
+      "LEAD_DETAILS_UPDATED_few": "Aktualizováno {{count}} polí",
+      "LEAD_DETAILS_UPDATED_many": "Aktualizováno {{count}} polí",
+      "LEAD_DETAILS_UPDATED_other": "Aktualizováno {{count}} polí",
+      "LEAD_ASSIGNED": "Přiděleno uživateli {{name}}",
+      "LEAD_UNASSIGNED": "Nepřiřazeno",
+      "REFERRAL_ACCEPTED": "Stavebník doporučení přijal",
+      "REFERRAL_REJECTED": "Stavebník doporučení odmítl. Důvod: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Duplicitní pokus o registraci od {{partner}} zamítnut",
+      "BOOKING_COMPLETED": "Rezervace dokončena",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Provozní vlastnictví převedeno na Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribuce partnera zachována",
+      "COMMISSION_ELIGIBILITY_CREATED": "Způsobilost provize vytvořena",
+      "HANDOVER_COMPLETED": "Předání dokončeno",
+      "ADMIN_PROTECTION_RELEASED": "Admin předčasně uvolnil ochranu proti duplicitě. Důvod: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Administrátor přeřadil registraci z {{from}} na {{to}} . Důvod: {{reason}}"
+    }
+  }
+}

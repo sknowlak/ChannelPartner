@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "پورتال سازنده",
+    "referrals": "ارجاعات",
+    "builderLogin": "ورود به سیستم سازنده",
+    "partnerLogin": "ورود شریک کانال"
+  },
+  "login": {
+    "title": "ورود سازنده",
+    "hint": "حساب های سازنده توسط Leadrat ایجاد میشوند. اگر شما یکی ندارید از مدیر تان بپرسید."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "منتظر تصمیم تان",
+    "ACCEPTED": "پذیرفته شده",
+    "REJECTED": "رد شد"
+  },
+  "list": {
+    "title": "ارجاعات",
+    "allProjects": "تمام پروژه ها",
+    "allStatuses": "تمام وضعیت ها",
+    "count_one": "{{count}} ارجاع",
+    "count_other": "{{count}} ارجاعات",
+    "columns": {
+      "referral": "ارجاع",
+      "customer": "مشتری",
+      "project": "پروژه",
+      "sourcePartner": "شریک منبع",
+      "status": "حالت",
+      "booking": "ریزرف کردن",
+      "registered": "ثبت شده"
+    },
+    "booked": "رزرو شده",
+    "empty": "هنوز هیچ ارجاعی وجود ندارد."
+  },
+  "detail": {
+    "customer": "مشتری",
+    "sourcePartner": "شریک منبع",
+    "attributionNote": "(انتساب - تغییر کرده نمیتواند)",
+    "leadStatus": "وضعیت پیشتاز",
+    "protectedUntil": "محافظت شده تا",
+    "referral": "ارجاع",
+    "reason": "دلیل: {{reason}}",
+    "booking": "ریزرف کردن",
+    "bookedOwner": "رزرو شده - شما مالک عملیاتی هستید",
+    "notBooked": "رزرو نشده",
+    "sharedAfterBooking": "بعد از رزرو به اشتراک گذاشته شد",
+    "accept": "پذیرش ارجاع",
+    "confirmBooking": "تایید رزرو",
+    "reject": "رد ارجاع",
+    "rejectReasonLabel": "دلیل رد کردن (نشان داده شده به شریک) *",
+    "rejectConfirm": "رد کردن",
+    "confirmBookingPrompt": "ریزرف را تایید کنید؟ مالکیت عملیاتی به شما میرسد و شریک واجد شرایط کمیسیون میشود.",
+    "notice": {
+      "booked": "ریزرف کردن تایید شد.",
+      "accepted": "ارجاع قبول شد.",
+      "rejected": "ارجاع رد شد."
+    },
+    "backToReferrals": "برگشت به ارجاعات"
+  },
+  "history": {
+    "title": "تاریخ",
+    "actor": {
+      "system": "سیستم",
+      "partner": "همکار کانال",
+      "admin": "ادمین Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "ثبت نام شریک دریافت شد",
+      "DUPLICATE_CHECK_COMPLETED": "چک تکراری تکمیل شد - هیچ تکراری فعال یافت نشد",
+      "REGISTRATION_ACCEPTED": "ثبت نام پذیرفته میشود",
+      "PROTECTION_GRANTED_one": "{{count}} -محافظت روزانه اعطا شد",
+      "PROTECTION_GRANTED_other": "{{count}} -محافظت روزانه اعطا شد",
+      "STAGE_UPDATED": "وضعیت به {{stage}} به روز شده است",
+      "LEAD_DETAILS_UPDATED_one": "بخش {{count}} به روز شده",
+      "LEAD_DETAILS_UPDATED_other": "فیلدهای {{count}} به روز شده",
+      "LEAD_ASSIGNED": "به {{name}} اختصاص داده شده است",
+      "LEAD_UNASSIGNED": "بدون اختصاص",
+      "REFERRAL_ACCEPTED": "سازنده ارجاع را قبول کرد",
+      "REFERRAL_REJECTED": "سازنده ارجاع را رد کرد. دلیل: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "تلاش ثبت نام تکراری توسط {{partner}} رد شد",
+      "BOOKING_COMPLETED": "رزرو تکمیل شد",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "مالکیت عملیاتی به سازنده انتقال داده شد",
+      "PARTNER_ATTRIBUTION_PRESERVED": "انتساب شریک حفظ شده است",
+      "COMMISSION_ELIGIBILITY_CREATED": "واجد شرایط بودن کمیسیون ایجاد شد",
+      "HANDOVER_COMPLETED": "تحویل تکمیل شد",
+      "ADMIN_PROTECTION_RELEASED": "مدیر محافظت تکراری را زود منتشر کرد. دلیل: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "مدیر ثبت نام را از {{from}} به {{to}} دوباره اختصاص داد. دلیل: {{reason}}"
+    }
+  }
+}

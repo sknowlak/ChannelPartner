@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "ترتیبات",
+    "noPermission": "ترا سیٹنگانی انتظام کنگ ءِ اجازت نیست۔"
+  },
+  "categories": {
+    "lead": "راہشونی",
+    "user": "کارمرز کنوخ",
+    "integrations": "یکجا کنگ"
+  },
+  "leadTabs": {
+    "fields": "کھیت",
+    "statuses": "حیثیت ءُ ذیلی حیثیت",
+    "notifications": "نوٹیفکیشن ءُ شیڈولر"
+  },
+  "fields": {
+    "leadIntro": "لیڈ کیپچر فارم ءِ ترتیب ءَ بکن اِت: کھیتاں فعال / غیر فعال کن اِت، آھاں لوٹ ءِ نشان ءَ بہ کن اِت، یا وتی مرضی ءِ کھیتاں ھوار کن اِت۔",
+    "userIntro": "ٹیم ءِ باسک ءِ فارم ءَ ھوار / ترمیم کن اِت: کھیتاں فعال / غیر فعال کن اِت، آھاں لوٹ ءِ نشان ءَ بہ کن اِت، یا وتی مرضی ءِ کھیتاں ھوار کن اِت۔",
+    "addCustomField": "+ وتی مرضی ءِ میدان ءَ ھوار کن",
+    "fieldLabel": "فیلڈ لیبل",
+    "group": "بُرّ",
+    "groupPlaceholderLead": "چوناھا جست ءُ پرس ءِ ھال",
+    "groupPlaceholderUser": "چوش کہ گیشیں ھال",
+    "dataType": "ڈیٹا ٹائپ",
+    "options": "آپشن (کوما ءَ جتا کنگ بوتگ)",
+    "requiredLead": "لوٹ اِنت - تئی ٹیم ءِ شریکاں لیڈ رجسٹر کنگ ءِ ھاترا اے پُر کنگی اِنت",
+    "requiredUser": "لوٹ اِنت - ٹیم ءِ باسک ءِ ھوار کنگ ءِ وھد ءَ پُر کنگ المی اِنت",
+    "creating": "جوڑ کنغیں",
+    "createField": "میدان جوڑ کن",
+    "columns": {
+      "field": "پِڈ",
+      "group": "بُرّ",
+      "type": "دروشم",
+      "required": "دَرکار",
+      "enabled": "فعال کنگ بوتگ",
+      "kind": "دروشم"
+    },
+    "kind": {
+      "custom": "وتی مرضی ءَ",
+      "core": "کور (بند)",
+      "standard": "بستاری"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "سیاہگ",
+    "TEXTAREA": "دراجیں نبشتانک",
+    "NUMBER": "لمبر",
+    "CURRENCY": "زَر",
+    "DATE": "تاریخ",
+    "SELECT": "ڈراپ ڈاؤن",
+    "LIST": "لڑ"
+  },
+  "picker": {
+    "searchPlaceholder": "لیڈ فیلڈز ءِ شوھاز ءَ بکن اِت...",
+    "summary": "{{shown}} پیشدارگ بوتگ · {{mandatory}} لازمی",
+    "mandatory": "الّمی",
+    "noMatch": "ہچ کھیت ہمگرنچ نہ انت۔"
+  },
+  "statuses": {
+    "intro": "شمئے لیڈ ءِ جاور ءُ ذیلی جاور - ہر یکے ءَ چے لوٹ ایت (یک تاریخ ءُ وھد، لیڈ ءِ پڑ) وھدے کہ کسے لیڈ ءَ آئی ءِ سرا اپ ڈیٹ کنت۔",
+    "add": "+ جاوراں گیش کن",
+    "columns": {
+      "order": "ھکم",
+      "status": "جاور",
+      "subStatuses": "ذیلی حیثیت",
+      "asksFor": "پہ جُست کنت",
+      "active": "کارءَ"
+    },
+    "moveUp": "بُرز ءَ برو",
+    "moveDown": "جہل ئا برو",
+    "defaultBadge": "نوخیں لیڈز ئا په ڈیفالٹ",
+    "bookingBadge": "بکنگ ئے جاور",
+    "asksForLabel": "{{label}} ءِ واستہ جُست کنت",
+    "asksForDateTime": "تاریخ و وخت جست کنت",
+    "none": "کس نہ ایں",
+    "dateTime": "تاریخ ءُ وھد",
+    "scheduledOn": "{{names}} سرا",
+    "fieldsSummary_one": "{{count}} میدان ( {{mandatory}} المی)",
+    "fieldsSummary_other": "{{count}} ءِ پڑ ( {{mandatory}} المی)",
+    "deleteConfirm": "\" {{name}} \" ءِ جاور ءَ گار کن اِت؟ اے گپ ءَ پدا ھلاس کنگ نہ بیت۔",
+    "editTitle": "جاوراں ترمیم کن - {{name}}",
+    "newTitle": "نوخیں جاور",
+    "name": "وضعیت ئے نام",
+    "colour": "لون",
+    "active": "کارءَ",
+    "isDefault": "نوخیں لیڈز واستہ ڈیفالٹ اسٹیٹس",
+    "isBooking": "بکنگ ئے جاور (سرجمیں بکنگ ئے وسیلہ ئا سیٹ کنگ بیثغیں)",
+    "whenMoved": "وھدے کہ یک لیڈ یے اے جاور ءَ دیم دیگ بیت",
+    "askSchedule": "تاریخ ءُ وھد ءِ لوٹ کن (شیڈولر)",
+    "scheduleLabelPlaceholder": "لیبل، چوشکہ زیارت کن",
+    "fieldsToShow": "اپ ڈیٹ فارم سرا پیشدارغ واستا لیڈ فیلڈز",
+    "subStatusesTitle": "ذیلی حیثیت",
+    "subStatusesHint": "ہر ذیلی حیثیت وتی تاریخ & وھد ءِ لوٹ کت کنت ءُ وتی وتی فیلڈز ءَ ھوار کنت - کہ بُرز ءَ حیثیت ءِ فیلڈز ءِ سر ءَ پیش دارگ بوتگ۔",
+    "subStatusName": "ذیلی حیثیت ئے نام",
+    "subFields": "کھیت ( {{count}} )",
+    "subScheduleLabelPlaceholder": "تاریخ ءُ وھد ءِ لیبل، چوش کہ پدا کال کن",
+    "addSubStatus": "+ ذیلی حیثیت ءَ ھوار کن",
+    "saveStatus": "جاوراں رکّین اِت",
+    "createStatus": "حیثیت جوڑ کن"
+  },
+  "notifications": {
+    "intro": "لیڈ ءِ یک جاورحالے ءَ سر بوھگ ءِ وھد ءَ دُرستیں مردماں سرپد بہ کن اِت - فوراً ، یا چہ ایشی ءِ سر ءَ ٹاک بوتگیں تاریخ ءُ وھد ءَ پیسر / پد ءَ یک سیٹ ءِ وھد ءَ ۔",
+    "add": "+ نوٹیفکیشن ءَ ھوار کن",
+    "columns": {
+      "notification": "نوٹیفکیشن",
+      "whenStatusIs": "حیثیت کدی ایں",
+      "sends": "روان دنت",
+      "to": "ءَ",
+      "via": "چہ",
+      "enabled": "فعال کنگ بوتگ"
+    },
+    "anyStatus": "ہر وڑیں جاور",
+    "anySubStatus": "ہر ذیلی حیثیت",
+    "inactiveOption": "{{name}} (غیر فعال)",
+    "emptyRules": "انگت ءَ ھچ وڑیں نوٹیفکیشن نیست - لیڈ ءِ جاور ھال ءَ سر بوھگ ءَ پد وتی ٹیم ءَ را ھال دیگ ءِ ھاترا یکے ھوار کن اِت۔",
+    "jobs": {
+      "title": "شیڈول کنگ ءُ دیم دیگ بوتگ",
+      "firesAt": "آتشزدگی",
+      "notification": "نوٹیفکیشن",
+      "lead": "راہشونی",
+      "status": "جاور",
+      "details": "سرجمیں",
+      "empty": "انگت ءَ ھچ چیز ءِ شیڈول ءُ دیم دیگ نہ بوتگ۔",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "اوشتاتگیں",
+      "PROCESSING": "پروسیسنگ",
+      "SENT": "دیم دات",
+      "FAILED": "بے سوب",
+      "SKIPPED": "یلہ داتگ",
+      "CANCELLED": "منسوخ کنگ بوتگ"
+    },
+    "deliveryStatus": {
+      "SENT": "دیم دات",
+      "FAILED": "بے سوب",
+      "SKIPPED": "یلہ داتگ"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ایپ ئے تہا",
+      "EMAIL": "ای میل",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "تفویض کثغیں کارمرز کنوخ",
+      "owner": "مالک",
+      "updatedBy": "نوخ کثغیں",
+      "role": "کردار: {{name}}"
+    },
+    "channels": {
+      "inApp": "ایپ ئے تہا",
+      "email": "ای میل",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "\" {{name}} \" ءِ نوٹیفکیشن ءَ گار کن اِت؟ ایشی ئا شہ زیر التواء یاد دہانی منسوخ بیثغنت",
+    "testPrompt": "اے نوٹیفکیشن ءِ ٹیسٹ ءَ وت ءَ (ایپ ءِ تہا) کجام لیڈ ID کارمرز کنگ ءَ روان بدئے ؟",
+    "testSent": "تئی زنگ ءَ دیم داتگ: {{title}} {{message}}",
+    "headersInvalid": "Webhook سرھال JSON رد ءَ بہ بنت ، چوش کہ {\"اجازت\": \"بردار xyz\"}",
+    "editTitle": "نوٹیفکیشن ئا ترمیم کن",
+    "newTitle": "نوکیں نوٹیفکیشن",
+    "name": "نام",
+    "namePlaceholder": "چوش کہ سائٹ ءِ تر ءُ تاب ءِ یاد دہانی",
+    "whenStatus": "وھدے کہ لیڈ ءِ جاور ھال اِنت",
+    "subStatus": "ذیلی حیثیت",
+    "send": "دیم دیئ (شیڈولر)",
+    "custom": "وتی مرضی ءَ...",
+    "modeBefore": "ٹاک کثغیں وخت ئا شه پیش",
+    "modeAfter": "ٹاک کثغیں وخت ئا پذا",
+    "noScheduleWarning": "اے جاور ھال ءَ تاریخ ءُ وھد ءِ لوٹ نہ کنت، پمیشکا \"چہ پیسر / وھد ءَ / رند ءَ ٹاک بوتگیں وھد\" ءِ نوٹیفکیشن ھچبر آتش نہ کنت۔",
+    "noScheduleFix": "اسٹیٹس ءُ ذیلی اسٹیٹس ءِ چیر ءَ ایشی ءِ واستہ <strong>تاریخ ءُ وھد ءِ لوٹ ءَ</strong> چالو کن اِت یا فوراً روان بدئے اِت۔",
+    "sendTo": "(کسے یکجائی) ئا روان دے",
+    "recipientAssigned": "تفویض کثغیں کارمرز کنوخ (سروکیں مالک)",
+    "recipientOwner": "اکاؤنٹ ءِ مالک / ایڈمن",
+    "recipientUpdatedBy": "شخص کہ وضعیت نوخ کثہ",
+    "everyoneWithRole": "ہر کس گوں کردے",
+    "specificUsers": "خاصیں کارمرز کنوخ (فعال)",
+    "inactiveNever": "غیر فعال صارفین ءَ نوٹیفکیشن کدی نہ رسیت، اگاں گچین کنگ بہ بیت۔",
+    "deliverVia": "ذریعہ ئا سر کن",
+    "channelInApp": "ایپ ئے تہا (بیل)",
+    "channelEmail": "ای میل",
+    "channelWebhook": "Webhook ( WhatsApp / SMS داتگیں مردم)",
+    "emailHint": "ای میل ہر رسینوک ءِ ای میل ایڈریس ءَ روت ءُ سرور ءِ سرا SMTP ءِ سیٹ اپ کنگ لوٹیت (backend / .env)؛ داں پدا ای میل ءِ دیم دیگ ءِ رد ءَ لاگ کنگ بیت۔",
+    "webhookUrl": "Webhook URL ( POST ، JSON )",
+    "headers": "سرھال ( JSON )",
+    "content": "نوٹیفکیشن ئے مواد",
+    "title": "سرھال",
+    "message": "کلوہ",
+    "insertIntoTitle": "ٹائٹل نیاما داخل کن",
+    "insertIntoMessage": "پیغام نیاما داخل کن",
+    "anyLeadField": "ہر لیڈ فیلڈ ہم کار کنت، چوشکہ <code1>{{example1}}</code1> یا <code2>{{example2}}</code2> .",
+    "preview": "پیش نظارہ (نمونہ لیڈ)",
+    "enabled": "فعال کنگ بوتگ",
+    "saveRule": "نوٹیفکیشن ءَ رکّین اِت",
+    "createRule": "نوٹیفکیشن جوڑ کن",
+    "variables": {
+      "customerName": "لیڈ نام",
+      "customerMobile": "لیڈ موبائل",
+      "customerEmail": "لیڈ ای میل",
+      "registrationId": "لیڈ ID",
+      "status": "جاور",
+      "subStatus": "ذیلی حیثیت",
+      "scheduleAt": "شیڈول کثغیں تاریخ و وخت",
+      "assignedTo": "تفویض کثغیں کارمرز کنوخ",
+      "updatedBy": "نوخ کثغیں",
+      "recipient": "رسینگ ئے نام",
+      "project": "پروجیکٹ",
+      "notes": "نوخیں نوٹ",
+      "partner": "شریک ئے نام"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "ھما وھد ءَ کہ جاور ھال ٹھینگ بیت",
+      "AT": "ٹاک کثغیں وخت ئا",
+      "A1D": "ٹاک کثغیں وخت ئا پذا یک روشے (پہ رندا چیک)"
+    },
+    "immediately": "زوتیں وڑاں",
+    "atScheduled": "ٹاک کثغیں وخت ئا",
+    "before": {
+      "MINUTES_one": "{{count}} ٹاک کتگیں وھد ءَ چہ یک منٹے پیسر",
+      "MINUTES_other": "{{count}} ٹاک کتگیں وھد ءَ چہ منٹ پیسر",
+      "HOURS_one": "{{count}} ٹاک کتگیں وھد ءَ چہ یک کلاکے پیسر",
+      "HOURS_other": "{{count}} چہ ٹاک بوتگیں وھد ءَ چہ کلاک پیسر",
+      "DAYS_one": "{{count}} چہ ٹاک بوتگیں وھد ءَ یک روچے پیسر",
+      "DAYS_other": "ٹاک کثغیں وخت ئا شه پیشا {{count}} روش",
+      "WEEKS_one": "{{count}} ہفتہ چہ ٹاک بوتگیں وھد ءَ پیسر",
+      "WEEKS_other": "{{count}} ہفتہ چہ ٹاک بوتگیں وھد ءَ پیسر",
+      "MONTHS_one": "{{count}} چہ ٹاک بوتگیں وھد ءَ ماہ پیسر",
+      "MONTHS_other": "{{count}} چہ ٹاک بوتگیں وھد ءَ ماہ پیسر",
+      "YEARS_one": "{{count}} چہ ٹاک بوتگیں وھد ءَ سالے پیسر",
+      "YEARS_other": "{{count}} چہ ٹاک بوتگیں وھد ءَ سال پیسر"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} ٹاک کتگیں وھد ءَ چہ یک منٹ ءَ پد",
+      "MINUTES_other": "{{count}} ٹاک کتگیں وھد ءَ چہ منٹ ءَ پد",
+      "HOURS_one": "{{count}} ٹاک کتگیں وھد ءَ چہ یک کلاکے ءَ پد",
+      "HOURS_other": "{{count}} ٹاک کتگیں وھد ءَ پد کلاک",
+      "DAYS_one": "{{count}} ٹاک کتگیں وھد ءِ پد ءَ یک روچے",
+      "DAYS_other": "ٹاک کثغیں وخت ئا پذا {{count}} روش",
+      "WEEKS_one": "{{count}} ہفتہ ءِ رند ءَ ٹاک بوتگیں وھد ءَ",
+      "WEEKS_other": "{{count}} کثغیں وخت ئا پذا ہفتہ",
+      "MONTHS_one": "{{count}} ٹاک کتگیں وھد ءَ پد ماھے",
+      "MONTHS_other": "ٹاک کتگیں وھد ءَ پد {{count}} ماہ",
+      "YEARS_one": "{{count}} ٹاک بوتگیں وھد ءَ پد سال",
+      "YEARS_other": "{{count}} چہ ٹاک بوتگیں وھد ءَ سالاں پد"
+    },
+    "units": {
+      "MINUTES_one": "دامان",
+      "MINUTES_other": "دامان",
+      "HOURS_one": "ساهت",
+      "HOURS_other": "کلاکاں",
+      "DAYS_one": "روچ",
+      "DAYS_other": "روچ",
+      "WEEKS_one": "هپتگ",
+      "WEEKS_other": "ہفتہ",
+      "MONTHS_one": "ماہ",
+      "MONTHS_other": "ماہ",
+      "YEARS_one": "سال",
+      "YEARS_other": "سال ها"
+    }
+  }
+}

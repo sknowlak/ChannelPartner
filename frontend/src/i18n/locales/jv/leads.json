@@ -1,0 +1,186 @@
+{
+  "list": {
+    "title": "Kula Leads",
+    "signedInAs": "Mlebet minangka {{name}} ( {{partnerId}} ) · kaping ditampilake ing {{timezone}}",
+    "addLead": "+ Tambah Lead",
+    "tabs": {
+      "all": "Kabeh ( {{count}} )",
+      "pending": "Ditundha ( {{count}} )",
+      "booked": "Dipesan ( {{count}} )"
+    },
+    "searchPlaceholder": "Telusuri miturut jeneng, seluler, utawa ID registrasi ...",
+    "manageColumns": "Ngatur Kolom",
+    "rowsPerPage": "Larik saben kaca",
+    "registrationId": "ID registrasi",
+    "emptyState": "Durung ana petunjuk - ndhaptar sing pertama.",
+    "noMatch": "Ora ana petunjuk sing cocog karo saringan kasebut.",
+    "showing": "Nuduhake {{from}} - {{to}} saka {{total}} entri",
+    "actions": {
+      "preview": "Pratinjau & nganyari cepet",
+      "history": "Sajarah",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Telpon"
+    },
+    "pagination": {
+      "first": "kaca pisanan",
+      "previous": "Kaca sadurunge",
+      "next": "Kaca sabanjuré",
+      "last": "Kaca pungkasan"
+    }
+  },
+  "columns": {
+    "status": "Status",
+    "assignTo": "Ditugasake Kanggo",
+    "booked": "dipesen",
+    "protectionUntil": "Perlindhungan Nganti"
+  },
+  "booking": {
+    "booked": "dipesen",
+    "pending": "Ditunggu"
+  },
+  "assign": {
+    "unassigned": "Ora diutus",
+    "owner": "{{name}} (Pamilik)",
+    "inactive": "{{name}} (ora aktif)",
+    "unknownUser": "Pangguna sing ora dingerteni",
+    "assignedTo": "Ditugasake kanggo {{name}}"
+  },
+  "form": {
+    "addTitle": "Tambah Lead",
+    "editTitle": "Sunting Lead",
+    "noPermissionAdd": "Sampeyan ora duwe ijin kanggo ndhaptar lead.",
+    "noPermissionEdit": "Sampeyan ora duwe idin kanggo nyunting lead.",
+    "selectPlaceholder": "Pilih...",
+    "commaSeparated": "Koma dipisahake",
+    "phonePlaceholder": "nomer telpon",
+    "countryCode": "Kode negara"
+  },
+  "project": {
+    "none": "Durung proyek (ora diarani)",
+    "notInList": "{{project}} (ora ana ing dhaptar proyek)"
+  },
+  "journey": {
+    "customer": "Pelanggan",
+    "currentOwner": "Pamilik saiki",
+    "protectionExpiry": "Proteksi Kadaluwarsa",
+    "leadStatus": "Status Lead",
+    "scheduled": "dijadwal",
+    "assignedTo": "Ditugasake Kanggo",
+    "referral": "Rujukan",
+    "builderReason": "Alasan pembangun: {{reason}}",
+    "bookedHint": "Dipesan dening tukang - kepemilikan operasional wis dipindhah menyang tukang; hak atribusi lan komisi sampeyan tetep.",
+    "notBookedHint": "Pesenan dikonfirmasi dening tukang bangunan sawise nampa rujukan.",
+    "quickUpdate": "Update cepet",
+    "leadDetails": "Details timbal",
+    "progressHistory": "Riwayat Kemajuan",
+    "timesIn": "(wektu ing {{timezone}} )",
+    "backToMyLeads": "Bali menyang My Leads",
+    "editLead": "Sunting Lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "Ora diarani (ora ana proyek)",
+    "PENDING_BUILDER": "Nunggu tukang bangunan",
+    "ACCEPTED": "Ditampa dening tukang",
+    "REJECTED": "Ditolak dening tukang bangunan"
+  },
+  "preview": {
+    "ariaLabel": "Pratinjau timbal",
+    "title": "Pratinjau Lead",
+    "source": "Sumber",
+    "location": "lokasi",
+    "scheduled": "dijadwal",
+    "registered": "Kadhaftar",
+    "latestNote": "Cathetan paling anyar",
+    "quickUpdate": "Update cepet",
+    "fullDetails": "Rincian Lengkap",
+    "editLead": "Sunting Lead",
+    "history": "Sajarah"
+  },
+  "quick": {
+    "assignedTo": "Ditugasake Kanggo",
+    "status": "Status",
+    "subStatus": "Sub-Status",
+    "selectSubStatus": "Pilih sub status...",
+    "none": "ora ana",
+    "scheduledAt": "Dijadwal ing",
+    "localTime": "wektu lokal",
+    "note": "Cathetan",
+    "notePlaceholder": "Apa sing kedadeyan ing telpon / kunjungan iki? (opsional)",
+    "updateStatus": "Nganyari Status",
+    "statusUpdated": "Status dianyari",
+    "bookedLocked": "Timbal iki wis dipesen - statuse ora bisa diganti maneh.",
+    "viewOnly": "Sampeyan bisa ndeleng timbal iki, nanging peran sampeyan ora bisa nganyari."
+  },
+  "history": {
+    "title": "Riwayat - {{registrationId}}",
+    "tabs": {
+      "all": "Kabeh",
+      "status": "Status",
+      "assignment": "tugas",
+      "notes": "Cathetan"
+    },
+    "doneBy": "Dirampungake dening {{actor}}",
+    "system": "Sistem",
+    "platforms": {
+      "System": "Sistem",
+      "External": "njaba",
+      "Web": "Web",
+      "Mobile": "Mobile"
+    },
+    "added": "ditambahake",
+    "updated": "dianyari",
+    "empty": "(kosong)",
+    "noHistory": "Durung ana riwayat ing kategori iki.",
+    "fieldLabels": {
+      "stage": "Status",
+      "subStatus": "Sub-Status",
+      "scheduledAt": "Jadwal",
+      "notes": "Cathetan",
+      "assignedTo": "Ditugasake Kanggo"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Registrasi mitra ditampa",
+      "DUPLICATE_CHECK_COMPLETED": "Priksa duplikat rampung - ora ana duplikat aktif sing ditemokake",
+      "REGISTRATION_ACCEPTED": "Registrasi ditampa",
+      "PROTECTION_GRANTED_other": "{{count}} pangayoman -dina diwenehake",
+      "REGISTRATION_ATTEMPT_REJECTED": "Upaya registrasi duplikat dening {{partnerId}} ditolak",
+      "LEAD_DETAILS_UPDATED_other": "Bidang {{count}} sing dianyari",
+      "STAGE_UPDATED": "Status dianyari {{status}}",
+      "LEAD_ASSIGNED": "Ditugasake kanggo {{name}}",
+      "LEAD_UNASSIGNED": "Ora diutus",
+      "BOOKING_COMPLETED": "Booking rampung",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Kepemilikan operasional ditransfer menyang Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribusi partner dilestarekake",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisi digawe",
+      "HANDOVER_COMPLETED": "Handover rampung",
+      "REFERRAL_ACCEPTED": "Pembina nampa rujukan kasebut",
+      "REFERRAL_REJECTED": "Pembina nolak rujukan kasebut. Alesan: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin ngeculake proteksi duplikat luwih awal. Alesan: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin ngganti registrasi saka {{from}} menyang {{to}} . Alesan: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Ngatur Kolom",
+    "hint": "Seret kanggo ngatur maneh · mriksa kanggo nuduhake",
+    "showAll": "Tampilake Kabeh",
+    "resetDefault": "Reset menyang Default"
+  },
+  "filters": {
+    "title": "Filter-filter",
+    "allProjects": "Kabeh proyek",
+    "any": "Sembarang",
+    "noFields": "Durung ana kolom saringan liyane sing diaktifake (Setelan > Timbal).",
+    "clearAll": "Clear Kabeh"
+  },
+  "phone": {
+    "MISSING": "Nomer telpon dibutuhake.",
+    "INVALID": "Mangga ketik nomer telpon sing bener.",
+    "TOO_SHORT": "Nomer telpon cendhak banget.",
+    "TOO_LONG": "Nomer telpon dawa banget.",
+    "INVALID_FOR_COUNTRY": "Nomer telpon iki ora valid kanggo {{country}} .",
+    "COUNTRY_MISMATCH": "Mangga pilih kode negara sing bener.",
+    "NOT_MOBILE": "Mangga ketik nomer seluler, dudu landline."
+  }
+}

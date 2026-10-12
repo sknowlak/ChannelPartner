@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Ewe Portal ren chon kau imw",
+    "referrals": "Ekkewe chon tinalo",
+    "builderLogin": "Login ren chon forata",
+    "partnerLogin": "Ewe chon fiti ewe chanel"
+  },
+  "login": {
+    "title": "Sain chon kau imw",
+    "hint": "Ekkewe chon forata ra foruta me ren Leadrat . Kopwe eisini noumw we chon nemenem ika ese wor noumw."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "A witiwiti om kopwe finata .",
+    "ACCEPTED": "A etiwa",
+    "REJECTED": "A poutalo"
+  },
+  "list": {
+    "title": "Ekkewe chon tinalo",
+    "allProjects": "Meinisin ekkewe prokram .",
+    "allStatuses": "Meinisin ekkewe napanap",
+    "count_one": "{{count}} kopwe tinalo",
+    "count_other": "{{count}} ekkewe chon tinalo",
+    "columns": {
+      "referral": "Refer",
+      "customer": "Kastomer",
+      "project": "Prokram",
+      "sourcePartner": "Chon Pwarata",
+      "status": "Nonnomwun",
+      "booking": "Puk",
+      "registered": "A fen makketiw"
+    },
+    "booked": "A fen puk",
+    "empty": "Ese wor chon refer ngeni."
+  },
+  "detail": {
+    "customer": "Kastomer",
+    "sourcePartner": "Chon Pwarata",
+    "attributionNote": "(apungun - ese tongeni siwin)",
+    "leadStatus": "Napanapen Lead",
+    "protectedUntil": "Pworaus Tori .",
+    "referral": "Refer",
+    "reason": "Popun: {{reason}}",
+    "booking": "Puk",
+    "bookedOwner": "Booked - en ewe chon angang .",
+    "notBooked": "Ese book .",
+    "sharedAfterBooking": "A fis mwirin an a booking .",
+    "accept": "Etiwa ewe Refer",
+    "confirmBooking": "Kopwe annetata om kopwe booking",
+    "reject": "Resin Refer",
+    "rejectReasonLabel": "Popun ka ú ngeni (a pwá ngeni ewe chón fiti) * .",
+    "rejectConfirm": "Eniwini",
+    "confirmBookingPrompt": "Kopwe affata ewe puk? Ewe pisekin angang epwe siwin ngonuk me ewe chon angang epwe tongeni angei ewe commission.",
+    "notice": {
+      "booked": "A fen affat ewe booking.",
+      "accepted": "Refer a etiwa.",
+      "rejected": "Repwe fis."
+    },
+    "backToReferrals": "Niwin ngeni ekkewe Refer ."
+  },
+  "history": {
+    "title": "Uruwon",
+    "actor": {
+      "system": "Urenapan angang",
+      "partner": "Chanel chienen",
+      "admin": "Leadrat chon nemenem"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Rejisterin chon fiti ra angei .",
+      "DUPLICATE_CHECK_COMPLETED": "Chekin ruu taropwe a wes - ese wor ruu taropwe mi angang a kuna",
+      "REGISTRATION_ACCEPTED": "A etiwa ewe register",
+      "PROTECTION_GRANTED_one": "{{count}} -ran tumun a kawor",
+      "PROTECTION_GRANTED_other": "{{count}} -ran tumun a kawor",
+      "STAGE_UPDATED": "Ewe napanap a siwin ngeni {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "A siwin ewe {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "A siwin {{count}} ekkewe kinikin",
+      "LEAD_ASSIGNED": "A kefinita ngeni {{name}}",
+      "LEAD_UNASSIGNED": "Ese kefilita",
+      "REFERRAL_ACCEPTED": "Ewe chon kau imw a etiwa ewe tingor .",
+      "REFERRAL_REJECTED": "Builder a tunalo ewe refer. Popun: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Ewe sossotun register ren {{partner}} ese mumuta",
+      "BOOKING_COMPLETED": "A wes ewe puk",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Ewe pisekin angang a siwin ngeni ewe chon kau imw .",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Ewe tufichin chiechi a fen tumunuoch",
+      "COMMISSION_ELIGIBILITY_CREATED": "Ewe tufichin komiti a foruta .",
+      "HANDOVER_COMPLETED": "A wes ewe angangen fang",
+      "ADMIN_PROTECTION_RELEASED": "Admin a fori ewe tumun mi fitikoko. Popun: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Ewe chon nemenem a siwini ewe taropwen mak seni {{from}} ngeni {{to}} . Popun: {{reason}}"
+    }
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Miaj kondukoj",
+    "signedInAs": "Ensalutite kiel {{name}} ( {{partnerId}} ) · tempoj montritaj en {{timezone}}",
+    "addLead": "+ Aldonu Plumbon",
+    "tabs": {
+      "all": "Ĉiuj ( {{count}} )",
+      "pending": "Pritraktata ( {{count}} )",
+      "booked": "Rezervita ( {{count}} )"
+    },
+    "searchPlaceholder": "Serĉu laŭ nomo, poŝtelefono aŭ registra ID ...",
+    "manageColumns": "Administri Kolumnojn",
+    "rowsPerPage": "Vicoj po paĝo",
+    "registrationId": "Registrado ID",
+    "emptyState": "Ankoraŭ neniuj kondukoj - registri vian unuan.",
+    "noMatch": "Neniuj kondukantoj kongruas kun ĉi tiuj filtriloj.",
+    "showing": "Montrante {{from}} - {{to}} el {{total}} enskriboj",
+    "actions": {
+      "preview": "Antaŭrigardo kaj rapida ĝisdatigo",
+      "history": "Historio",
+      "email": "Retpoŝto",
+      "whatsapp": "WhatsApp",
+      "call": "Voku"
+    },
+    "pagination": {
+      "first": "Unua paĝo",
+      "previous": "Antaŭa paĝo",
+      "next": "Sekva paĝo",
+      "last": "Lasta paĝo"
+    }
+  },
+  "columns": {
+    "status": "Statuso",
+    "assignTo": "Asigni Al",
+    "booked": "Rezervita",
+    "protectionUntil": "Protekto Ĝis"
+  },
+  "booking": {
+    "booked": "Rezervita",
+    "pending": "Pritraktata"
+  },
+  "assign": {
+    "unassigned": "Neasignita",
+    "owner": "{{name}} (posedanto)",
+    "inactive": "{{name}} (neaktiva)",
+    "unknownUser": "Nekonata uzanto",
+    "assignedTo": "Asignite al {{name}}"
+  },
+  "form": {
+    "addTitle": "Aldonu Plumbon",
+    "editTitle": "Redakti Gvidi",
+    "noPermissionAdd": "Vi ne havas permeson registri kondukojn.",
+    "noPermissionEdit": "Vi ne havas permeson redakti kondukojn.",
+    "selectPlaceholder": "Elektu...",
+    "commaSeparated": "Komo apartigita",
+    "phonePlaceholder": "Telefonnumero",
+    "countryCode": "Landkodo"
+  },
+  "project": {
+    "none": "Ankoraŭ neniu projekto (ne referita)",
+    "notInList": "{{project}} (ne en la projektolisto)"
+  },
+  "journey": {
+    "customer": "Kliento",
+    "currentOwner": "Nuna Posedanto",
+    "protectionExpiry": "Protekto Eksvalidiĝo",
+    "leadStatus": "Ĉefa Statuso",
+    "scheduled": "Planita",
+    "assignedTo": "Asignita Al",
+    "referral": "Referenco",
+    "builderReason": "Kialo de konstruanto: {{reason}}",
+    "bookedHint": "Rezervita de la konstruanto - funkcia proprieto translokiĝis al la konstruanto; via atribuo kaj komisiono kvalifiko estas konservitaj.",
+    "notBookedHint": "Rezervoj estas konfirmitaj de la konstruanto post kiam ili akceptas la referencon.",
+    "quickUpdate": "Rapida Ĝisdatigo",
+    "leadDetails": "Plumbo Detaloj",
+    "progressHistory": "Progreshistorio",
+    "timesIn": "(tempoj en {{timezone}} )",
+    "backToMyLeads": "Reen al Miaj gvidiloj",
+    "editLead": "Redakti Gvidi"
+  },
+  "referral": {
+    "NOT_REFERRED": "Ne referencita (neniu projekto)",
+    "PENDING_BUILDER": "Atendante konstruiston",
+    "ACCEPTED": "Akceptita de konstruanto",
+    "REJECTED": "Malakceptita de konstruanto"
+  },
+  "preview": {
+    "ariaLabel": "Ĉefa antaŭrigardo",
+    "title": "Ĉefa Antaŭrigardo",
+    "source": "Fonto",
+    "location": "Loko",
+    "scheduled": "Planita",
+    "registered": "Registrita",
+    "latestNote": "Lasta Noto",
+    "quickUpdate": "Rapida Ĝisdatigo",
+    "fullDetails": "Plenaj Detaloj",
+    "editLead": "Redakti Gvidi",
+    "history": "Historio"
+  },
+  "quick": {
+    "assignedTo": "Asignita Al",
+    "status": "Statuso",
+    "subStatus": "Sub-Stato",
+    "selectSubStatus": "Elektu sub-statuson...",
+    "none": "Neniu",
+    "scheduledAt": "Planita je",
+    "localTime": "loka horo",
+    "note": "Notu",
+    "notePlaceholder": "Kio okazis dum ĉi tiu voko/vizito? (laŭvola)",
+    "updateStatus": "Ĝisdatigu Statuson",
+    "statusUpdated": "Statuso ĝisdatigita",
+    "bookedLocked": "Ĉi tiu plumbo estas rezervita - ĝia stato ne plu povas esti ŝanĝita.",
+    "viewOnly": "Vi povas vidi ĉi tiun kondukon, sed via rolo ne povas ĝisdatigi ĝin."
+  },
+  "history": {
+    "title": "Historio - {{registrationId}}",
+    "tabs": {
+      "all": "Ĉiuj",
+      "status": "Statuso",
+      "assignment": "Tasko",
+      "notes": "Notoj"
+    },
+    "doneBy": "Farite de {{actor}}",
+    "system": "Sistemo",
+    "platforms": {
+      "System": "Sistemo",
+      "External": "Ekstera",
+      "Web": "Retejo",
+      "Mobile": "Poŝtelefono"
+    },
+    "added": "aldonis",
+    "updated": "ĝisdatigita",
+    "empty": "(malplena)",
+    "noHistory": "Ankoraŭ neniu historio en ĉi tiu kategorio.",
+    "fieldLabels": {
+      "stage": "Statuso",
+      "subStatus": "Sub-Stato",
+      "scheduledAt": "Horaro",
+      "notes": "Notoj",
+      "assignedTo": "Asignita Al"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Partnerregistriĝo ricevita",
+      "DUPLICATE_CHECK_COMPLETED": "Duplikata kontrolo finiĝis - neniu aktiva duplikato trovita",
+      "REGISTRATION_ACCEPTED": "Registrado akceptita",
+      "PROTECTION_GRANTED_one": "{{count}} -taga protekto donita",
+      "PROTECTION_GRANTED_other": "{{count}} -taga protekto donita",
+      "REGISTRATION_ATTEMPT_REJECTED": "Duobla registriĝoprovo de {{partnerId}} malakceptita",
+      "LEAD_DETAILS_UPDATED_one": "Ĝisdatigita {{count}} kampo",
+      "LEAD_DETAILS_UPDATED_other": "Ĝisdatigitaj {{count}} kampoj",
+      "STAGE_UPDATED": "Statuso ĝisdatigita al {{status}}",
+      "LEAD_ASSIGNED": "Asignite al {{name}}",
+      "LEAD_UNASSIGNED": "Neasignita",
+      "BOOKING_COMPLETED": "Rezervado finiĝis",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Funkcia proprieto transdonita al Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partnera atribuo konservita",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komisiona kvalifiko kreita",
+      "HANDOVER_COMPLETED": "Transdono finiĝis",
+      "REFERRAL_ACCEPTED": "Konstruisto akceptis la referencon",
+      "REFERRAL_REJECTED": "Konstruisto malakceptis la referencon. Kialo: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Administranto liberigis duplikatan protekton frue. Kialo: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Administranto reasignis registradon de {{from}} al {{to}} . Kialo: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Administri Kolumnojn",
+    "hint": "Trenu por reordigi · kontrolu por montri",
+    "showAll": "Montri Ĉion",
+    "resetDefault": "Restarigi al Defaŭlta"
+  },
+  "filters": {
+    "title": "Filtriloj",
+    "allProjects": "Ĉiuj projektoj",
+    "any": "Ajna",
+    "noFields": "Neniuj aliaj filtrigeblaj kampoj ankoraŭ estas ebligitaj (Agordoj > Plumbo).",
+    "clearAll": "Forigi Ĉion"
+  },
+  "phone": {
+    "MISSING": "Telefonnumero estas postulata.",
+    "INVALID": "Bonvolu enigi validan telefonnumeron.",
+    "TOO_SHORT": "Telefonnumero estas tro mallonga.",
+    "TOO_LONG": "Telefonnumero estas tro longa.",
+    "INVALID_FOR_COUNTRY": "Ĉi tiu telefonnumero ne validas por {{country}} .",
+    "COUNTRY_MISMATCH": "Bonvolu elekti la ĝustan landokodon.",
+    "NOT_MOBILE": "Bonvolu enigi poŝtelefonon, ne fikstelefonon."
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Minun johtoni",
+    "signedInAs": "Kirjautunut sisään käyttäjänä {{name}} ( {{partnerId}} ) · ajat näkyvät {{timezone}}",
+    "addLead": "+ Lisää lyijyä",
+    "tabs": {
+      "all": "Kaikki ( {{count}} )",
+      "pending": "Odottaa ( {{count}} )",
+      "booked": "Varattu ( {{count}} )"
+    },
+    "searchPlaceholder": "Hae nimellä, matkapuhelimella tai ID ...",
+    "manageColumns": "Hallitse sarakkeita",
+    "rowsPerPage": "Rivit per sivu",
+    "registrationId": "ID",
+    "emptyState": "Ei vielä liidejä – rekisteröi ensimmäinen.",
+    "noMatch": "Yksikään liidi ei vastaa näitä suodattimia.",
+    "showing": "Näytetään {{from}} - {{to}} / {{total}} merkintää",
+    "actions": {
+      "preview": "Esikatselu ja nopea päivitys",
+      "history": "Historia",
+      "email": "Sähköposti",
+      "whatsapp": "WhatsApp",
+      "call": "Soittaa"
+    },
+    "pagination": {
+      "first": "Ensimmäinen sivu",
+      "previous": "Edellinen sivu",
+      "next": "Seuraava sivu",
+      "last": "Viimeinen sivu"
+    }
+  },
+  "columns": {
+    "status": "Status",
+    "assignTo": "Määritä",
+    "booked": "Varattu",
+    "protectionUntil": "Suojaus asti"
+  },
+  "booking": {
+    "booked": "Varattu",
+    "pending": "Odottaa"
+  },
+  "assign": {
+    "unassigned": "Ei määritetty",
+    "owner": "{{name}} (omistaja)",
+    "inactive": "{{name}} (ei-aktiivinen)",
+    "unknownUser": "Tuntematon käyttäjä",
+    "assignedTo": "Määrätty käyttäjälle {{name}}"
+  },
+  "form": {
+    "addTitle": "Lisää lyijyä",
+    "editTitle": "Muokkaa liidia",
+    "noPermissionAdd": "Sinulla ei ole lupaa rekisteröidä liidejä.",
+    "noPermissionEdit": "Sinulla ei ole lupaa muokata liidejä.",
+    "selectPlaceholder": "Valitse...",
+    "commaSeparated": "Pilkulla erotettuna",
+    "phonePlaceholder": "Puhelinnumero",
+    "countryCode": "Maakoodi"
+  },
+  "project": {
+    "none": "Ei vielä projektia (ei viitattu)",
+    "notInList": "{{project}} (ei projektiluettelossa)"
+  },
+  "journey": {
+    "customer": "Asiakas",
+    "currentOwner": "Nykyinen omistaja",
+    "protectionExpiry": "Suojauksen päättyminen",
+    "leadStatus": "Liidin tila",
+    "scheduled": "Aikataulutettu",
+    "assignedTo": "Määrätty vastaanottajalle",
+    "referral": "Viittaus",
+    "builderReason": "Rakentajan syy: {{reason}}",
+    "bookedHint": "Rakennuttajan varaama - käyttöomistus on siirtynyt rakentajalle; merkintä- ja provisiokelpoisuutesi säilytetään.",
+    "notBookedHint": "Rakennuttaja vahvistaa varaukset hyväksytyään lähetteen.",
+    "quickUpdate": "Pikapäivitys",
+    "leadDetails": "Lyijyn tiedot",
+    "progressHistory": "Edistyshistoria",
+    "timesIn": "(ajat {{timezone}} )",
+    "backToMyLeads": "Takaisin My Leads -sivulle",
+    "editLead": "Muokkaa liidia"
+  },
+  "referral": {
+    "NOT_REFERRED": "Ei viitattu (ei projektia)",
+    "PENDING_BUILDER": "Rakentajaa odotellessa",
+    "ACCEPTED": "Rakentajan hyväksymä",
+    "REJECTED": "Rakentaja hylkäsi"
+  },
+  "preview": {
+    "ariaLabel": "Johdon esikatselu",
+    "title": "Leadin esikatselu",
+    "source": "Lähde",
+    "location": "Sijainti",
+    "scheduled": "Aikataulutettu",
+    "registered": "Rekisteröity",
+    "latestNote": "Viimeisin huomautus",
+    "quickUpdate": "Pikapäivitys",
+    "fullDetails": "Täydelliset tiedot",
+    "editLead": "Muokkaa liidia",
+    "history": "Historia"
+  },
+  "quick": {
+    "assignedTo": "Määrätty vastaanottajalle",
+    "status": "Status",
+    "subStatus": "Alatila",
+    "selectSubStatus": "Valitse alitila...",
+    "none": "Ei mitään",
+    "scheduledAt": "Aikataulutettu klo",
+    "localTime": "paikallista aikaa",
+    "note": "Huom",
+    "notePlaceholder": "Mitä tapahtui tällä puhelulla/käynnillä? (valinnainen)",
+    "updateStatus": "Päivitä tila",
+    "statusUpdated": "Tila päivitetty",
+    "bookedLocked": "Tämä liidi on varattu – sen tilaa ei voi enää muuttaa.",
+    "viewOnly": "Voit tarkastella tätä liidia, mutta roolisi ei voi päivittää sitä."
+  },
+  "history": {
+    "title": "Historia - {{registrationId}}",
+    "tabs": {
+      "all": "Kaikki",
+      "status": "Status",
+      "assignment": "Tehtävä",
+      "notes": "Huomautuksia"
+    },
+    "doneBy": "Tekijä: {{actor}}",
+    "system": "Järjestelmä",
+    "platforms": {
+      "System": "Järjestelmä",
+      "External": "Ulkoinen",
+      "Web": "Web",
+      "Mobile": "mobiili"
+    },
+    "added": "lisätty",
+    "updated": "päivitetty",
+    "empty": "(tyhjä)",
+    "noHistory": "Tässä kategoriassa ei ole vielä historiaa.",
+    "fieldLabels": {
+      "stage": "Status",
+      "subStatus": "Alatila",
+      "scheduledAt": "Ajoittaa",
+      "notes": "Huomautuksia",
+      "assignedTo": "Määrätty vastaanottajalle"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Yhteistyökumppanin rekisteröinti vastaanotettu",
+      "DUPLICATE_CHECK_COMPLETED": "Kaksoiskappaleen tarkistus suoritettu - aktiivista kaksoiskappaletta ei löytynyt",
+      "REGISTRATION_ACCEPTED": "Ilmoittautuminen hyväksytty",
+      "PROTECTION_GRANTED_one": "{{count}} päivän suojaus myönnetty",
+      "PROTECTION_GRANTED_other": "{{count}} päivän suojaus myönnetty",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partnerId}} :n kaksoisrekisteröintiyritys hylättiin",
+      "LEAD_DETAILS_UPDATED_one": "Päivitetty {{count}} kenttä",
+      "LEAD_DETAILS_UPDATED_other": "Päivitetty {{count}} kenttää",
+      "STAGE_UPDATED": "Tila päivitetty {{status}}",
+      "LEAD_ASSIGNED": "Määrätty käyttäjälle {{name}}",
+      "LEAD_UNASSIGNED": "Ei määritetty",
+      "BOOKING_COMPLETED": "Varaus suoritettu",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Toiminnallinen omistus siirtyi Builderille",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Kumppanin merkintä säilytetty",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komission tukikelpoisuus luotu",
+      "HANDOVER_COMPLETED": "Luovutus suoritettu",
+      "REFERRAL_ACCEPTED": "Rakentaja hyväksyi suosituksen",
+      "REFERRAL_REJECTED": "Builder hylkäsi viittauksen. Syy: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Järjestelmänvalvoja julkaisi kaksoissuojauksen aikaisin. Syy: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Järjestelmänvalvoja määritti rekisteröinnin uudelleen osoitteesta {{from}} henkilölle {{to}} . Syy: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Hallitse sarakkeita",
+    "hint": "Järjestä uudelleen vetämällä · valitse näyttääksesi",
+    "showAll": "Näytä kaikki",
+    "resetDefault": "Palauta oletusarvo"
+  },
+  "filters": {
+    "title": "Suodattimet",
+    "allProjects": "Kaikki projektit",
+    "any": "Mikä tahansa",
+    "noFields": "Muita suodatettavia kenttiä ei ole vielä otettu käyttöön (Asetukset > Liidi).",
+    "clearAll": "Tyhjennä kaikki"
+  },
+  "phone": {
+    "MISSING": "Puhelinnumero vaaditaan.",
+    "INVALID": "Anna kelvollinen puhelinnumero.",
+    "TOO_SHORT": "Puhelinnumero on liian lyhyt.",
+    "TOO_LONG": "Puhelinnumero on liian pitkä.",
+    "INVALID_FOR_COUNTRY": "Tämä puhelinnumero ei kelpaa maassa {{country}} .",
+    "COUNTRY_MISMATCH": "Valitse oikea maakoodi.",
+    "NOT_MOBILE": "Anna matkapuhelinnumero, älä lankapuhelinta."
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "ترتیبات",
+    "noPermission": "آپ کو ترتیبات کا نظم کرنے کی اجازت نہیں ہے۔"
+  },
+  "categories": {
+    "lead": "لیڈ",
+    "user": "صارف",
+    "integrations": "انضمام"
+  },
+  "leadTabs": {
+    "fields": "فیلڈز",
+    "statuses": "سٹیٹس اور ذیلی سٹیٹس",
+    "notifications": "اطلاعات اور نظام الاوقات"
+  },
+  "fields": {
+    "leadIntro": "لیڈ کیپچر فارم کو کنفیگر کریں: فیلڈز کو فعال/غیر فعال کریں، انہیں مطلوبہ نشان زد کریں، یا اپنی مرضی کے فیلڈز شامل کریں۔",
+    "userIntro": "ٹیم ممبر شامل کریں/ترمیم کریں فارم کو ترتیب دیں: فیلڈز کو فعال/غیر فعال کریں، ان پر مطلوبہ نشان لگائیں، یا اپنی مرضی کے فیلڈز شامل کریں۔",
+    "addCustomField": "+ حسب ضرورت فیلڈ شامل کریں۔",
+    "fieldLabel": "فیلڈ لیبل",
+    "group": "گروپ",
+    "groupPlaceholderLead": "مثال کے طور پر انکوائری کی معلومات",
+    "groupPlaceholderUser": "مثال کے طور پر اضافی تفصیلات",
+    "dataType": "ڈیٹا کی قسم",
+    "options": "اختیارات (کوما سے الگ)",
+    "requiredLead": "مطلوبہ - آپ کی ٹیم کے شراکت داروں کو لیڈ رجسٹر کرنے کے لیے اسے پُر کرنا چاہیے۔",
+    "requiredUser": "مطلوبہ - ٹیم ممبر کو شامل کرتے وقت بھرنا ضروری ہے۔",
+    "creating": "تخلیق کر رہا ہے...",
+    "createField": "فیلڈ بنائیں",
+    "columns": {
+      "field": "میدان",
+      "group": "گروپ",
+      "type": "قسم",
+      "required": "درکار ہے۔",
+      "enabled": "فعال",
+      "kind": "قسم"
+    },
+    "kind": {
+      "custom": "حسب ضرورت",
+      "core": "کور (مقفل)",
+      "standard": "معیاری"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "متن",
+    "TEXTAREA": "لمبا متن",
+    "NUMBER": "نمبر",
+    "CURRENCY": "کرنسی",
+    "DATE": "تاریخ",
+    "SELECT": "ڈراپ ڈاؤن",
+    "LIST": "فہرست"
+  },
+  "picker": {
+    "searchPlaceholder": "لیڈ فیلڈز تلاش کریں...",
+    "summary": "{{shown}} دکھایا گیا · {{mandatory}} لازمی",
+    "mandatory": "لازمی",
+    "noMatch": "کوئی فیلڈز مماثل نہیں ہیں۔"
+  },
+  "statuses": {
+    "intro": "آپ کے لیڈ سٹیٹس اور ذیلی سٹیٹس - جب کوئی اس پر لیڈ اپ ڈیٹ کرتا ہے تو ہر ایک کیا پوچھتا ہے (تاریخ اور وقت، لیڈ فیلڈز)۔",
+    "add": "+ اسٹیٹس شامل کریں۔",
+    "columns": {
+      "order": "آرڈر",
+      "status": "حیثیت",
+      "subStatuses": "ذیلی سٹیٹس",
+      "asksFor": "مانگتا ہے۔",
+      "active": "فعال"
+    },
+    "moveUp": "اوپر بڑھیں۔",
+    "moveDown": "نیچے کی طرف بڑھیں۔",
+    "defaultBadge": "نئی لیڈز کے لیے ڈیفالٹ",
+    "bookingBadge": "بکنگ کی حیثیت",
+    "asksForLabel": "{{label}} کے لیے پوچھتا ہے",
+    "asksForDateTime": "تاریخ اور وقت پوچھتا ہے۔",
+    "none": "کوئی نہیں۔",
+    "dateTime": "تاریخ اور وقت",
+    "scheduledOn": "{{names}} پر",
+    "fieldsSummary_one": "{{count}} فیلڈ ( {{mandatory}} لازمی)",
+    "fieldsSummary_other": "{{count}} فیلڈز ( {{mandatory}} لازمی)",
+    "deleteConfirm": "اسٹیٹس \" {{name}} \" کو حذف کریں؟ اسے کالعدم نہیں کیا جا سکتا۔",
+    "editTitle": "حالت میں ترمیم کریں - {{name}}",
+    "newTitle": "نئی حیثیت",
+    "name": "حیثیت کا نام",
+    "colour": "رنگ",
+    "active": "فعال",
+    "isDefault": "نئی لیڈز کے لیے پہلے سے طے شدہ حیثیت",
+    "isBooking": "بکنگ کی حیثیت (مکمل بکنگ کے ذریعے مقرر)",
+    "whenMoved": "جب لیڈ کو اس حیثیت میں منتقل کیا جاتا ہے۔",
+    "askSchedule": "تاریخ اور وقت کے لیے پوچھیں (شیڈیولر)",
+    "scheduleLabelPlaceholder": "لیبل، مثلاً ملاحظہ کریں۔",
+    "fieldsToShow": "اپ ڈیٹ فارم پر دکھانے کے لیے لیڈ فیلڈز",
+    "subStatusesTitle": "ذیلی سٹیٹس",
+    "subStatusesHint": "ہر ذیلی سٹیٹس اپنی تاریخ اور وقت پوچھ سکتا ہے اور اپنے فیلڈز شامل کر سکتا ہے - اوپر اسٹیٹس کے فیلڈز کے اوپر دکھایا گیا ہے۔",
+    "subStatusName": "ذیلی حیثیت کا نام",
+    "subFields": "فیلڈز ( {{count}} )",
+    "subScheduleLabelPlaceholder": "تاریخ اور وقت کا لیبل، مثال کے طور پر واپس کال کریں۔",
+    "addSubStatus": "+ ذیلی حیثیت شامل کریں۔",
+    "saveStatus": "اسٹیٹس کو محفوظ کریں۔",
+    "createStatus": "اسٹیٹس بنائیں"
+  },
+  "notifications": {
+    "intro": "صحیح لوگوں کو مطلع کریں جب کوئی لیڈ اسٹیٹس تک پہنچ جائے - فوری طور پر، یا اس پر طے شدہ تاریخ اور وقت سے پہلے/بعد کا ایک مقررہ وقت۔",
+    "add": "+ اطلاع شامل کریں۔",
+    "columns": {
+      "notification": "اطلاع",
+      "whenStatusIs": "جب اسٹیٹس ہے۔",
+      "sends": "بھیجتا ہے۔",
+      "to": "کو",
+      "via": "کے ذریعے",
+      "enabled": "فعال"
+    },
+    "anyStatus": "کوئی بھی حیثیت",
+    "anySubStatus": "کوئی بھی ذیلی حیثیت",
+    "inactiveOption": "{{name}} (غیر فعال)",
+    "emptyRules": "ابھی تک کوئی اطلاع نہیں ہے - اپنی ٹیم کو الرٹ کرنے کے لیے ایک شامل کریں جب کوئی لیڈ ایک سٹیٹس تک پہنچ جائے۔",
+    "jobs": {
+      "title": "طے شدہ اور بھیج دیا گیا۔",
+      "firesAt": "پر آگ لگتی ہے۔",
+      "notification": "اطلاع",
+      "lead": "لیڈ",
+      "status": "حیثیت",
+      "details": "تفصیلات",
+      "empty": "ابھی تک کچھ بھی طے یا بھیجا نہیں ہے۔",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "زیر التواء",
+      "PROCESSING": "پروسیسنگ",
+      "SENT": "بھیجا",
+      "FAILED": "ناکام",
+      "SKIPPED": "چھوڑ دیا",
+      "CANCELLED": "منسوخ"
+    },
+    "deliveryStatus": {
+      "SENT": "بھیجا",
+      "FAILED": "ناکام",
+      "SKIPPED": "چھوڑ دیا"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ایپ میں",
+      "EMAIL": "ای میل",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "تفویض کردہ صارف",
+      "owner": "مالک",
+      "updatedBy": "کی طرف سے اپ ڈیٹ",
+      "role": "کردار: {{name}}"
+    },
+    "channels": {
+      "inApp": "ایپ میں",
+      "email": "ای میل",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "اطلاع \" {{name}} \" کو حذف کریں؟ اس سے زیر التواء یاد دہانیوں کو منسوخ کر دیا گیا ہے۔",
+    "testPrompt": "کس لیڈ ID استعمال کرتے ہوئے اس نوٹیفکیشن کا ٹیسٹ خود کو (ان ایپ) بھیجیں؟",
+    "testSent": "آپ کی گھنٹی پر بھیجا گیا: {{title}} {{message}}",
+    "headersInvalid": "Webhook ہیڈرز کا درست ہونا ضروری ہے JSON ، جیسے {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "نوٹیفکیشن میں ترمیم کریں۔",
+    "newTitle": "نیا نوٹیفکیشن",
+    "name": "نام",
+    "namePlaceholder": "مثال کے طور پر سائٹ کے دورے کی یاد دہانی",
+    "whenStatus": "جب لیڈ کی حیثیت ہوتی ہے۔",
+    "subStatus": "ذیلی حیثیت",
+    "send": "بھیجیں (شیڈیولر)",
+    "custom": "حسب ضرورت...",
+    "modeBefore": "مقررہ وقت سے پہلے",
+    "modeAfter": "مقررہ وقت کے بعد",
+    "noScheduleWarning": "یہ حیثیت کسی تاریخ اور وقت کے بارے میں نہیں پوچھتی ہے، لہذا \"مقررہ وقت سے پہلے/بعد/بعد\" نوٹیفکیشن کبھی بھی فائر نہیں ہوگا۔",
+    "noScheduleFix": "اسٹیٹسز اور سب سٹیٹس کے تحت اس کے لیے <strong>تاریخ اور وقت کے لیے پوچھیں کو</strong> آن کریں، یا فوری طور پر بھیجیں۔",
+    "sendTo": "بھیجیں (کوئی بھی مجموعہ)",
+    "recipientAssigned": "تفویض کردہ صارف (لیڈ اونر)",
+    "recipientOwner": "اکاؤنٹ کا مالک / منتظم",
+    "recipientUpdatedBy": "وہ شخص جس نے اسٹیٹس کو اپ ڈیٹ کیا۔",
+    "everyoneWithRole": "ہر کوئی کردار کے ساتھ",
+    "specificUsers": "مخصوص صارفین (فعال)",
+    "inactiveNever": "غیر فعال صارفین کو کبھی بھی اطلاعات موصول نہیں ہوتیں، چاہے وہ منتخب ہوں۔",
+    "deliverVia": "کے ذریعے پہنچانا",
+    "channelInApp": "ایپ میں (گھنٹی)",
+    "channelEmail": "ای میل",
+    "channelWebhook": "Webhook ( WhatsApp / SMS فراہم کنندہ)",
+    "emailHint": "ای میل ہر وصول کنندہ کے ای میل ایڈریس پر جاتی ہے اور سرور پر SMTP سیٹ اپ کی ضرورت ہوتی ہے (backend/.env)؛ تب تک ای میل بھیجے گئے لاگ ان ہوتے ہیں جیسا کہ چھوڑ دیا گیا ہے۔",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "ہیڈرز ( JSON )",
+    "content": "اطلاعی مواد",
+    "title": "عنوان",
+    "message": "پیغام",
+    "insertIntoTitle": "عنوان میں داخل کریں۔",
+    "insertIntoMessage": "پیغام میں داخل کریں۔",
+    "anyLeadField": "کوئی لیڈ فیلڈ بھی کام کرتی ہے، جیسے <code1>{{example1}}</code1> یا <code2>{{example2}}</code2> ۔",
+    "preview": "پیش نظارہ (نمونہ لیڈ)",
+    "enabled": "فعال",
+    "saveRule": "اطلاع محفوظ کریں۔",
+    "createRule": "اطلاع بنائیں",
+    "variables": {
+      "customerName": "لیڈ کا نام",
+      "customerMobile": "لیڈ موبائل",
+      "customerEmail": "لیڈ ای میل",
+      "registrationId": "لیڈ ID",
+      "status": "حیثیت",
+      "subStatus": "ذیلی حیثیت",
+      "scheduleAt": "طے شدہ تاریخ اور وقت",
+      "assignedTo": "تفویض کردہ صارف",
+      "updatedBy": "کی طرف سے اپ ڈیٹ",
+      "recipient": "وصول کنندہ کا نام",
+      "project": "پروجیکٹ",
+      "notes": "تازہ ترین نوٹ",
+      "partner": "ساتھی کا نام"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "اسٹیٹس سیٹ ہونے پر فوراً",
+      "AT": "مقررہ وقت پر",
+      "A1D": "مقررہ وقت کے 1 دن بعد (فالو اپ چیک)"
+    },
+    "immediately": "فوراً",
+    "atScheduled": "مقررہ وقت پر",
+    "before": {
+      "MINUTES_one": "مقررہ وقت سے {{count}} منٹ پہلے",
+      "MINUTES_other": "مقررہ وقت سے {{count}} منٹ پہلے",
+      "HOURS_one": "مقررہ وقت سے {{count}} گھنٹہ پہلے",
+      "HOURS_other": "مقررہ وقت سے {{count}} گھنٹے پہلے",
+      "DAYS_one": "مقررہ وقت سے {{count}} دن پہلے",
+      "DAYS_other": "مقررہ وقت سے {{count}} دن پہلے",
+      "WEEKS_one": "مقررہ وقت سے {{count}} ہفتہ پہلے",
+      "WEEKS_other": "مقررہ وقت سے {{count}} ہفتے پہلے",
+      "MONTHS_one": "مقررہ وقت سے {{count}} مہینہ پہلے",
+      "MONTHS_other": "مقررہ وقت سے {{count}} مہینے پہلے",
+      "YEARS_one": "مقررہ وقت سے {{count}} سال پہلے",
+      "YEARS_other": "مقررہ وقت سے {{count}} سال پہلے"
+    },
+    "after": {
+      "MINUTES_one": "مقررہ وقت کے بعد {{count}} منٹ",
+      "MINUTES_other": "مقررہ وقت کے بعد {{count}} منٹ",
+      "HOURS_one": "مقررہ وقت کے بعد {{count}} گھنٹے",
+      "HOURS_other": "مقررہ وقت کے بعد {{count}} گھنٹے",
+      "DAYS_one": "مقررہ وقت کے بعد {{count}} دن",
+      "DAYS_other": "مقررہ وقت کے بعد {{count}} دن",
+      "WEEKS_one": "مقررہ وقت کے بعد {{count}} ہفتہ",
+      "WEEKS_other": "مقررہ وقت کے بعد {{count}} ہفتے",
+      "MONTHS_one": "مقررہ وقت کے بعد {{count}} ماہ",
+      "MONTHS_other": "مقررہ وقت کے بعد {{count}} مہینے",
+      "YEARS_one": "مقررہ وقت کے بعد {{count}} سال",
+      "YEARS_other": "مقررہ وقت کے بعد {{count}} سال"
+    },
+    "units": {
+      "MINUTES_one": "منٹ",
+      "MINUTES_other": "منٹ",
+      "HOURS_one": "گھنٹہ",
+      "HOURS_other": "گھنٹے",
+      "DAYS_one": "دن",
+      "DAYS_other": "دن",
+      "WEEKS_one": "ہفتہ",
+      "WEEKS_other": "ہفتے",
+      "MONTHS_one": "مہینہ",
+      "MONTHS_other": "مہینے",
+      "YEARS_one": "سال",
+      "YEARS_other": "سال"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "ГӀишлошъярхойн портал",
+    "referrals": "Рефералш",
+    "builderLogin": "ГӀишлошъярхочун логин",
+    "partnerLogin": "Каналан накъостийн логин"
+  },
+  "login": {
+    "title": "ГӀишлошъярхо чувогӀу",
+    "hint": "ГӀишлошъярхойн аккаунташ кхоьллина ю Leadrat . Хьайн администраторе хатта, хьайгахь яцахь."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Хьан сацаме сатуьйсуш .",
+    "ACCEPTED": "ТӀеэцна",
+    "REJECTED": "Юхатоьхна"
+  },
+  "list": {
+    "title": "Рефералш",
+    "allProjects": "Дерриге а проекташ",
+    "allStatuses": "Дерриге а статусаш",
+    "count_one": "{{count}} хьажор",
+    "count_other": "{{count}} хьажоргаш",
+    "columns": {
+      "referral": "Реферал",
+      "customer": "Эцархо",
+      "project": "Проект",
+      "sourcePartner": "Хьостан накъост",
+      "status": "Статус",
+      "booking": "Бронирование яр",
+      "registered": "Регистраци йина"
+    },
+    "booked": "Бронировать дина",
+    "empty": "Цкъачунна рефералаш яц."
+  },
+  "detail": {
+    "customer": "Эцархо",
+    "sourcePartner": "Хьостан накъост",
+    "attributionNote": "(атрибуци - хийца йиш яц)",
+    "leadStatus": "Хьалха статус",
+    "protectedUntil": "2020 шо кхаччалц лардина.",
+    "referral": "Реферал",
+    "reason": "Бахьана: {{reason}}",
+    "booking": "Бронирование яр",
+    "bookedOwner": "Бронирован - хьо операционни долахо ву .",
+    "notBooked": "Бронировать ца дина .",
+    "sharedAfterBooking": "Бронировать динчул тӀаьхьа декъа",
+    "accept": "ТӀеэца хьажор",
+    "confirmBooking": "Бронировка тӀечӀагӀъе",
+    "reject": "ДӀахьажор юхатоха",
+    "rejectReasonLabel": "Юхатохаран бахьана (накъостана гойту) *",
+    "rejectConfirm": "Юхататта",
+    "confirmBookingPrompt": "Бронирование тӀечӀагӀйина юй? Оперативни доладар дӀадоьду хьуна, ткъа накъост комисси эца хьакъ хуьлу.",
+    "notice": {
+      "booked": "Бронирование тӀечӀагӀйина.",
+      "accepted": "Направлени тӀеэцна.",
+      "rejected": "Направлени юхатоьхна."
+    },
+    "backToReferrals": "Юха а хьажоргаш тӀе"
+  },
+  "history": {
+    "title": "Истори",
+    "actor": {
+      "system": "Система",
+      "partner": "Каналан накъост",
+      "admin": "Leadrat админ"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Партнерийн регистраци кхаьчна .",
+      "DUPLICATE_CHECK_COMPLETED": "Дубликат теллина - жигара дубликат ца карийна",
+      "REGISTRATION_ACCEPTED": "Регистраци тӀеэцна",
+      "PROTECTION_GRANTED_one": "{{count}} -де лардар дина",
+      "PROTECTION_GRANTED_other": "{{count}} -де лардар дина",
+      "STAGE_UPDATED": "Статус хийцина {{stage}} санна",
+      "LEAD_DETAILS_UPDATED_one": "Карладаьккхина {{count}} меттиг",
+      "LEAD_DETAILS_UPDATED_other": "Карладаьккхина {{count}} меттигаш",
+      "LEAD_ASSIGNED": "{{name}} тӀедиллина",
+      "LEAD_UNASSIGNED": "ТӀедиллина доцуш",
+      "REFERRAL_ACCEPTED": "ГӀишлошъярхочо тӀеийцира хьажор .",
+      "REFERRAL_REJECTED": "ГӀишлошъярхочо юхатоьхна и хьажор. Бахьана: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} шалха регистраци ян гӀортар юхатоьхна",
+      "BOOKING_COMPLETED": "Бронирование чекхъяьлла",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Операционни доладар дӀаделла ГӀишлошъярхочунна .",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Партнерийн атрибуци ларйина",
+      "COMMISSION_ELIGIBILITY_CREATED": "Комиссин хьакъ хилар кхоьллина .",
+      "HANDOVER_COMPLETED": "ДӀадалар чекхдаьлла",
+      "ADMIN_PROTECTION_RELEASED": "Админ хьалхе араяьккхина дубликат ларъяр. Бахьана: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Админа юха дӀаелла регистраци {{from}} тӀера {{to}} тӀе. Бахьана: {{reason}}"
+    }
+  }
+}

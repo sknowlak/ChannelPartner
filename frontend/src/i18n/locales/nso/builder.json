@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Kgoro ya Moagi",
+    "referrals": "Ditšhupetšo",
+    "builderLogin": "Go Tsena ga Moagi",
+    "partnerLogin": "Tsena ya Molekane wa Channel"
+  },
+  "login": {
+    "title": "Moagi saena ka gare",
+    "hint": "Diakhaonto tša moagi di hlolwa ke Leadrat . Botšiša molaodi wa gago ge e ba o se na yona."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Go letela phetho ya gago",
+    "ACCEPTED": "E amogetšwe",
+    "REJECTED": "E gannwe"
+  },
+  "list": {
+    "title": "Ditšhupetšo",
+    "allProjects": "Diprotšeke ka moka",
+    "allStatuses": "Maemo ka moka",
+    "count_one": "{{count}} go fetišetšwa",
+    "count_other": "{{count}} ditšhupetšo",
+    "columns": {
+      "referral": "Go fetišetšwa",
+      "customer": "Modiriši",
+      "project": "Protšeke",
+      "sourcePartner": "Molekane wa Mohlodi",
+      "status": "Maemo",
+      "booking": "Go beakanya",
+      "registered": "E ngwadišitšwe"
+    },
+    "booked": "E beakantšwe",
+    "empty": "Ga go na ditšhupetšo go fihla ga bjale."
+  },
+  "detail": {
+    "customer": "Modiriši",
+    "sourcePartner": "Molekane wa Mohlodi",
+    "attributionNote": "(attribution - e ka se fetolwe)",
+    "leadStatus": "Boemo bja Lead",
+    "protectedUntil": "E šireleditšwe Go fihla",
+    "referral": "Go fetišetšwa",
+    "reason": "Lebaka: {{reason}}",
+    "booking": "Go beakanya",
+    "bookedOwner": "Booked - o mong'a tshebetso",
+    "notBooked": "Ga se ya bewa",
+    "sharedAfterBooking": "Shared ka morago ga go beakanya",
+    "accept": "Amogela Tšhupetšo",
+    "confirmBooking": "Netefatša Peeletšo",
+    "reject": "Gana Tlhagišo",
+    "rejectReasonLabel": "Lebaka la go gana (le bontšhwa molekane) * .",
+    "rejectConfirm": "Gana",
+    "confirmBookingPrompt": "Netefatša go beakanya? Bomong bja tshepedišo bo hudugela go wena gomme molekane o ba yo a swanelegago go hwetša khomišene.",
+    "notice": {
+      "booked": "Booking e netefaditšwe.",
+      "accepted": "Go fetišetšwa go amogetšwe.",
+      "rejected": "Go fetišetšwa go gannwe."
+    },
+    "backToReferrals": "Go boela morago go Ditšhupetšo"
+  },
+  "history": {
+    "title": "Histori",
+    "actor": {
+      "system": "Tshepedišo",
+      "partner": "Molekane wa mokero",
+      "admin": "Molaodi wa Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Boingwadišo bja molekane bo amogetšwe",
+      "DUPLICATE_CHECK_COMPLETED": "Tlhahlobo ya phetolelo e phethilwe - ga go na phetolelo ye e šomago ye e hweditšwego",
+      "REGISTRATION_ACCEPTED": "Boingwadišo bo amogetšwe",
+      "PROTECTION_GRANTED_one": "{{count}} -tšireletso ya letsatsi e filwe",
+      "PROTECTION_GRANTED_other": "{{count}} -tšireletso ya letsatsi e filwe",
+      "STAGE_UPDATED": "Boemo bo ntjhafaditswe ho {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Tšhemo e mpshafaditšwego {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "Mabala {{count}} a mpshafaditšwego",
+      "LEAD_ASSIGNED": "E abetšwe {{name}}",
+      "LEAD_UNASSIGNED": "E sa abelwa",
+      "REFERRAL_ACCEPTED": "Moagi o ile a amogela go fetišetšwa",
+      "REFERRAL_REJECTED": "Builder o ile a gana go fetišetšwa. Lebaka: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Boiteko bja ngwadišo bja go ipoeletša ke {{partner}} bo gannwe",
+      "BOOKING_COMPLETED": "Booking e phethilwe",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Bomong bja tshepedišo bo fetišeditšwe go Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Molekane attribution bolokilwe",
+      "COMMISSION_ELIGIBILITY_CREATED": "Khomišene go swanelega go hlotšwe",
+      "HANDOVER_COMPLETED": "Go fetišetšwa ga dilo go phethilwe",
+      "ADMIN_PROTECTION_RELEASED": "Admin o lokollotše tšhireletšo ya go ipoeletša ka pela. Lebaka: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin o ile a abela gape ngwadišo go tšwa go {{from}} go ya go {{to}} . Lebaka: {{reason}}"
+    }
+  }
+}

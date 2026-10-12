@@ -1,0 +1,244 @@
+{
+  "page": {
+    "title": "Ntọala",
+    "noPermission": "Ịnweghị ikike ijikwa ntọala."
+  },
+  "categories": {
+    "lead": "Ndu",
+    "user": "Onye ọrụ",
+    "integrations": "Mmekọrịta"
+  },
+  "leadTabs": {
+    "fields": "Ubi",
+    "statuses": "Ọkwa & Obere ọnọdụ",
+    "notifications": "Amamọkwa & Ndị nhazi oge"
+  },
+  "fields": {
+    "leadIntro": "Hazie ụdị njide ndu: mee ka/gbanyụọ ubi, kaa akara ha chọrọ, ma ọ bụ tinye ubi omenala nke gị.",
+    "userIntro": "Hazie ụdị Tinye/Dezie Otu Otu: gbanye/gbanyụọ ubi, kaa akara ha chọrọ, ma ọ bụ tinye ubi omenala nke gị.",
+    "addCustomField": "+ Tinye ubi omenala",
+    "fieldLabel": "Akara ala",
+    "group": "Otu",
+    "groupPlaceholderLead": "dịka ozi ajụjụ",
+    "groupPlaceholderUser": "dịka nkọwa ndị ọzọ",
+    "dataType": "Ụdị data",
+    "options": "Nhọrọ (rịkọm kewapụrụ)",
+    "requiredLead": "Achọrọ - ndị mmekọ na otu gị ga-emejupụta nke a iji debanye aha ndu",
+    "requiredUser": "Achọrọ - ga-ejupụta mgbe ị na-agbakwunye onye otu",
+    "creating": "Na-emepe...",
+    "createField": "Mepụta Ubi",
+    "columns": {
+      "field": "Ubi",
+      "group": "Otu",
+      "type": "Ụdị",
+      "required": "Achọrọ",
+      "enabled": "Agbanyere",
+      "kind": "Ụdị"
+    },
+    "kind": {
+      "custom": "Omenala",
+      "core": "Isi (akpọchiri)",
+      "standard": "Ọkọlọtọ"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Ederede",
+    "TEXTAREA": "Ogologo ederede",
+    "NUMBER": "Nọmba",
+    "CURRENCY": "Ego",
+    "DATE": "Ụbọchị",
+    "SELECT": "Wedaa",
+    "LIST": "Ndepụta"
+  },
+  "picker": {
+    "searchPlaceholder": "Chọọ ubi ndu...",
+    "summary": "{{shown}} egosiri · {{mandatory}} iwu",
+    "mandatory": "Amanyere iwu",
+    "noMatch": "Ọnweghị ubi dakọtara."
+  },
+  "statuses": {
+    "intro": "Ọnọdụ ụzọ gị na obere ọkwa - ihe onye ọ bụla na-arịọ (ụbọchị na oge, mpaghara ụzọ) mgbe mmadụ na-emelite ụzọ na ya.",
+    "add": "+ Tinye ọnọdụ",
+    "columns": {
+      "order": "Nye iwu",
+      "status": "Ọnọdụ",
+      "subStatuses": "Obere ọnọdụ",
+      "asksFor": "Na-ajụ maka",
+      "active": "Na-arụ ọrụ"
+    },
+    "moveUp": "Bulie elu",
+    "moveDown": "Budata ala",
+    "defaultBadge": "Ndabara maka ụzọ ọhụrụ",
+    "bookingBadge": "Ọkwa ntinye akwụkwọ",
+    "asksForLabel": "Na-arịọ maka {{label}}",
+    "asksForDateTime": "Na-arịọ maka ụbọchị & oge",
+    "none": "Ọ dịghị",
+    "dateTime": "Ụbọchị & oge",
+    "scheduledOn": "na {{names}}",
+    "fieldsSummary_other": "ubi {{count}} ( {{mandatory}} amanyere iwu)",
+    "deleteConfirm": "Hichapụ ọkwa \" {{name}} \"? Enweghị ike imegharị nke a.",
+    "editTitle": "Dezie ọnọdụ - {{name}}",
+    "newTitle": "Ọnọdụ ọhụrụ",
+    "name": "Aha ọnọdụ",
+    "colour": "Agba",
+    "active": "Na-arụ ọrụ",
+    "isDefault": "Ọkwa ndabara maka ụzọ ọhụrụ",
+    "isBooking": "Ọkwa ntinye akwụkwọ (site na ntinye akwụkwọ zuru ezu setịpụrụ)",
+    "whenMoved": "Mgbe ebugara ndu n'ọkwa a",
+    "askSchedule": "Rịọ ụbọchị na oge (onye nhazi oge)",
+    "scheduleLabelPlaceholder": "Mpempe akwụkwọ, dịka nleta na",
+    "fieldsToShow": "Dua ubi ka igosi na ụdị mmelite",
+    "subStatusesTitle": "Obere ọnọdụ",
+    "subStatusesHint": "Ọkwa ọ bụla nwere ike ịrịọ maka ụbọchị & oge nke ya ma tinye mpaghara nke ya - egosiri n'elu ọkwa ọkwa dị n'elu.",
+    "subStatusName": "Aha sub-ọkwa",
+    "subFields": "Ogige ( {{count}} )",
+    "subScheduleLabelPlaceholder": "akara akara ụbọchị & oge, dịka kpọọ azụ na",
+    "addSubStatus": "+ Tinye Ọkwa Ọkpụkpọ",
+    "saveStatus": "Chekwa ọnọdụ",
+    "createStatus": "Mepụta ọnọdụ"
+  },
+  "notifications": {
+    "intro": "Gwa ndị ziri ezi mgbe ndu ruru ọkwa - ozugbo, ma ọ bụ oge edobere tupu/mgbe ụbọchị & oge akwadoro na ya.",
+    "add": "+ Tinye ọkwa",
+    "columns": {
+      "notification": "ngosi",
+      "whenStatusIs": "Mgbe Ọnọdụ bụ",
+      "sends": "Na-eziga",
+      "to": "Iji",
+      "via": "Site na",
+      "enabled": "Agbanyere"
+    },
+    "anyStatus": "Ọkwa ọ bụla",
+    "anySubStatus": "Ọkwa ọ bụla",
+    "inactiveOption": "{{name}} (anaghị arụ ọrụ)",
+    "emptyRules": "Enweghị ọkwa amamọkwa - tinye otu iji mee ka ndị otu gị mara mgbe onye ndu ruru ọkwa.",
+    "jobs": {
+      "title": "Haziri & Zipụ",
+      "firesAt": "Ọkụ na",
+      "notification": "ngosi",
+      "lead": "Ndu",
+      "status": "Ọnọdụ",
+      "details": "Nkọwa",
+      "empty": "Ọnweghị ihe ahaziri ma ọ bụ ezipubeghị.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Na-echere",
+      "PROCESSING": "Nhazi",
+      "SENT": "E zigara ya",
+      "FAILED": "Okpu",
+      "SKIPPED": "Mafere",
+      "CANCELLED": "Kagbuo"
+    },
+    "deliveryStatus": {
+      "SENT": "zitere",
+      "FAILED": "dara",
+      "SKIPPED": "mafere"
+    },
+    "deliveryChannel": {
+      "IN_APP": "n'ime ngwa",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Onye ọrụ ekenyela",
+      "owner": "Onye nwe",
+      "updatedBy": "Emelitere site na",
+      "role": "Ọrụ: {{name}}"
+    },
+    "channels": {
+      "inApp": "N'ime ngwa",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Hichapụ ọkwa \" {{name}} \"? A kagbuola ihe ncheta na-echere na ya.",
+    "testPrompt": "Jiri NJ ụzọ zigaara onwe gị nnwale nke ID a (in-app)?",
+    "testSent": "Ezitere na mgbịrịgba gị: {{title}} {{message}}",
+    "headersInvalid": "nkụnye eji isi Webhook ga-abụrịrị JSON dị irè, dịka {\"Ikike\": \"Bearer xyz\"}",
+    "editTitle": "Dezie ọkwa",
+    "newTitle": "ọkwa ọhụrụ",
+    "name": "Aha",
+    "namePlaceholder": "dịka ncheta nleta saịtị",
+    "whenStatus": "Mgbe ọkwa onye ndu bụ",
+    "subStatus": "Sub-ọnọdụ",
+    "send": "Ziga (onye nhazi oge)",
+    "custom": "Omenala...",
+    "modeBefore": "tupu oge a kara aka",
+    "modeAfter": "mgbe oge a kara aka",
+    "noScheduleWarning": "Ọkwa a anaghị arịọ maka ụbọchị & oge, yabụ ọkwa \"tupu/na/mgbe emechara oge\" agaghị agba ọkụ.",
+    "noScheduleFix": "Gbanwuo <strong>Rịọ maka ụbọchị & oge</strong> maka ya n'okpuru Ọnọdụ & Ọnọdụ, ma ọ bụ zipu ozugbo.",
+    "sendTo": "Ziga na (Nchikota ọ bụla)",
+    "recipientAssigned": "Onye ọrụ ekenyela (onye ndu)",
+    "recipientOwner": "Onye nwe akaụntụ / onye nchịkwa",
+    "recipientUpdatedBy": "Onye emelitere ọkwa",
+    "everyoneWithRole": "Onye ọ bụla nwere ọrụ",
+    "specificUsers": "Ndị ọrụ akọwapụtara (na-arụsi ọrụ ike)",
+    "inactiveNever": "Ndị ọrụ anaghị arụ ọrụ anaghị anata ọkwa, ọbụlagodi ma ahọpụtara ha.",
+    "deliverVia": "Nyefee site na",
+    "channelInApp": "In-app (mgbịrịgba)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook (onye na-eweta WhatsApp / SMS )",
+    "emailHint": "Email na-aga na adreesị ozi-e nke onye nnata ọ bụla ma chọọ SMTP ka edobere na sava (backend/.env); ruo mgbe ahụ, a na-abanye ozi-e-mail ka awụsara ya.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Ndị isi ( JSON )",
+    "content": "Ọdịnaya ngosi",
+    "title": "Aha",
+    "message": "Ozi",
+    "insertIntoTitle": "Fanye na Mbụ",
+    "insertIntoMessage": "Tinye n'ime ozi",
+    "anyLeadField": "Oghere ndu ọ bụla na-arụkwa ọrụ, dịka <code1>{{example1}}</code1> ma ọ bụ <code2>{{example2}}</code2> .",
+    "preview": "Nhụchalụ (nlegharị anya nlele)",
+    "enabled": "Agbanyere",
+    "saveRule": "Chekwa ọkwa",
+    "createRule": "Mepụta ọkwa",
+    "variables": {
+      "customerName": "Aha ndu",
+      "customerMobile": "Na-edu mkpanaka",
+      "customerEmail": "Izi ozi ndu",
+      "registrationId": "NJ ID",
+      "status": "Ọnọdụ",
+      "subStatus": "Sub-ọnọdụ",
+      "scheduleAt": "Ụbọchị na oge akwadoro",
+      "assignedTo": "Onye ọrụ ekenyela",
+      "updatedBy": "Emelitere site na",
+      "recipient": "Aha nnata",
+      "project": "Ihe oru ngo",
+      "notes": "ndetu kacha ọhụrụ",
+      "partner": "Aha onye mmekọ"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Ozugbo edobere ọkwa",
+      "AT": "N'oge a kara aka",
+      "A1D": "Ụbọchị 1 mgbe oge a kara aka (nlele nleba anya)"
+    },
+    "immediately": "Ngwa ngwa",
+    "atScheduled": "N'oge a kara aka",
+    "before": {
+      "MINUTES_other": "{{count}} nkeji tupu oge a kara aka",
+      "HOURS_other": "{{count}} awa tupu oge akwadoro",
+      "DAYS_other": "{{count}} ụbọchị tupu oge akwadoro",
+      "WEEKS_other": "{{count}} izu tupu oge akwadoro",
+      "MONTHS_other": "{{count}} ọnwa tupu oge akwadoro",
+      "YEARS_other": "{{count}} afọ tupu oge akwadoro"
+    },
+    "after": {
+      "MINUTES_other": "{{count}} nkeji ka emechara oge",
+      "HOURS_other": "{{count}} awa ka emechara oge",
+      "DAYS_other": "{{count}} ụbọchị ka emechara oge",
+      "WEEKS_other": "{{count}} izu ka emechara oge",
+      "MONTHS_other": "{{count}} ọnwa ka emechara oge",
+      "YEARS_other": "{{count}} afọ ka emechara oge"
+    },
+    "units": {
+      "MINUTES_other": "nkeji",
+      "HOURS_other": "awa",
+      "DAYS_other": "ụbọchị",
+      "WEEKS_other": "izu",
+      "MONTHS_other": "ọnwa",
+      "YEARS_other": "afọ"
+    }
+  }
+}

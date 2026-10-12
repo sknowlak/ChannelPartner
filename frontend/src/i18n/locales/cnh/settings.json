@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Settings",
+    "noPermission": "Settings tawlrelnak nawl na ngei lo."
+  },
+  "categories": {
+    "lead": "Hruai",
+    "user": "Hmantu",
+    "integrations": "Fonhnak"
+  },
+  "leadTabs": {
+    "fields": "Loram",
+    "statuses": "Dirhmun le Dirhmun hmete",
+    "notifications": "Theihternak le Caan suaitu"
+  },
+  "fields": {
+    "leadIntro": "Hruaitu tlaihnak form kha remh: field pawl kha on/lo, a herhmi ah hmelchunh, asiloah nangmah pumpak field pawl kha chap.",
+    "userIntro": "Team chungtel chap/remh timi form kha remh: field pawl kha on/lo, a herhmi ah hmelchunh, asiloah nangmah pumpak field pawl kha chap.",
+    "addCustomField": "+ Custom Field chap",
+    "fieldLabel": "Field Label",
+    "group": "Phu",
+    "groupPlaceholderLead": "halnak konglam",
+    "groupPlaceholderUser": "tahchunhnak ah a dang konglam",
+    "dataType": "Data phun",
+    "options": "Thimnak (comma in tthenmi)",
+    "requiredLead": "A herhmi - na team chung i hawikom hna nih hruaitu min cazin khumhnak caah mah hi an phih a hau",
+    "requiredUser": "A herhmi - team chungtel pakhat chap tikah ttial a hau",
+    "creating": "Ser...",
+    "createField": "Field Ser",
+    "columns": {
+      "field": "Rian hmun",
+      "group": "Phu",
+      "type": "Phun",
+      "required": "Hal",
+      "enabled": "On",
+      "kind": "Phun"
+    },
+    "kind": {
+      "custom": "Zulh tawnmi phung",
+      "core": "Core (khar)",
+      "standard": "Tahfung"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Catial",
+    "TEXTAREA": "Cafang sau",
+    "NUMBER": "Nambar",
+    "CURRENCY": "Ram chung hmanmi phaisa",
+    "DATE": "Nithla",
+    "SELECT": "A tlami",
+    "LIST": "Cazin"
+  },
+  "picker": {
+    "searchPlaceholder": "Hruaitu hmun pawl kawl...",
+    "summary": "{{shown}} shown · {{mandatory}} a herhmi",
+    "mandatory": "Pekmi nawlngeihnak",
+    "noMatch": "Field aa tlak lo."
+  },
+  "statuses": {
+    "intro": "Na hruaitu dirhmun le dirhmun hme tete - mi pakhat nih hruaitu pakhatkhat a tharchuah tikah pakhat cio nih an halmi (ni & caan, hruaitu hmun).",
+    "add": "+ Dirhmun chap",
+    "columns": {
+      "order": "Nawlchuahmi",
+      "status": "Tlangtaar",
+      "subStatuses": "Dirhmun hme tete",
+      "asksFor": "A hal",
+      "active": "A cawlcangmi"
+    },
+    "moveUp": "A cunglei ah kai",
+    "moveDown": "A tanglei ah ṭhial",
+    "defaultBadge": "Hruaitu thar caah a hmanmi",
+    "bookingBadge": "Booking dirhmun",
+    "asksForLabel": "{{label}} a hal",
+    "asksForDateTime": "Ni le caan a hal",
+    "none": "Zeihmanh",
+    "dateTime": "Ni le caan",
+    "scheduledOn": "{{names}} cungah",
+    "fieldsSummary_one": "{{count}} field ( {{mandatory}} a herhmi)",
+    "fieldsSummary_other": "{{count}} fields ( {{mandatory}} mandatory)",
+    "deleteConfirm": "\" {{name}} \" dirhmun hloh? Hihi remh khawh a si ti lo.",
+    "editTitle": "Dirhmun remh - {{name}}",
+    "newTitle": "Dirhmun Thar",
+    "name": "Dirhmun Min",
+    "colour": "Muici",
+    "active": "A cawlcangmi",
+    "isDefault": "Hruaitu thar hna caah a hramthawk dirhmun",
+    "isBooking": "Booking dirhmun (Booking Tling tein chiahmi)",
+    "whenMoved": "Hruaitu pakhat cu hi dirhmun ah thlen a si tikah",
+    "askSchedule": "Ni le caan (caan suaitu) hal",
+    "scheduleLabelPlaceholder": "Label, eg ah va zoh",
+    "fieldsToShow": "Update form ah langhter dingmi hruaitu fields",
+    "subStatusesTitle": "Dirhmun hme tete",
+    "subStatusesHint": "Sub-status pakhat cio nih anmah le an ni le caan an hal khawh i anmah le an field pawl an chap khawh - a cunglei dirhmun field cung ah langhter a si.",
+    "subStatusName": "Sub-status min",
+    "subFields": "Fields ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Ni le caan ttialmi, tahchunhnak ah",
+    "addSubStatus": "+ Sub-Status chap",
+    "saveStatus": "Dirhmun kha chiah",
+    "createStatus": "Dirhmun Ser"
+  },
+  "notifications": {
+    "intro": "Hruaitu pakhat nih dirhmun a phak tikah a dikmi minung kha theihter hna - a rannak in, asiloah a ni le caan khiahmi hlan/hnu ah caan khiahmi ah.",
+    "add": "+ Theihternak chap",
+    "columns": {
+      "notification": "Theihternak",
+      "whenStatusIs": "Dirhmun a si tikah",
+      "sends": "A kuat",
+      "to": "Sin ah",
+      "via": "In",
+      "enabled": "On"
+    },
+    "anyStatus": "Dirhmun zeipaoh",
+    "anySubStatus": "Zeibantuk dirhmun hmete hmanh",
+    "inactiveOption": "{{name}} (a cawlcang lo)",
+    "emptyRules": "Theihternak a um rih lo - hruaitu pakhat nih dirhmun a phak tikah na team ralrin peknak caah pakhat chap.",
+    "jobs": {
+      "title": "Caan khiahmi le kuatmi",
+      "firesAt": "Meithal kah",
+      "notification": "Theihternak",
+      "lead": "Hruai",
+      "status": "Tlangtaar",
+      "details": "A dikthlir",
+      "empty": "Zeihmanh timhtuahnak le kuatmi a um rih lo.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Hmai lei ah tuah ding in chiahmi",
+      "PROCESSING": "Riantuannak",
+      "SENT": "Kuat",
+      "FAILED": "Tlak",
+      "SKIPPED": "Hlawtmi",
+      "CANCELLED": "Cancel a si cang"
+    },
+    "deliveryStatus": {
+      "SENT": "kuat",
+      "FAILED": "tlak",
+      "SKIPPED": "hlonh"
+    },
+    "deliveryChannel": {
+      "IN_APP": "app chung",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Rian pekmi hmantu",
+      "owner": "A ngeitu",
+      "updatedBy": "nih a tharchuah",
+      "role": "Rian: {{name}}"
+    },
+    "channels": {
+      "inApp": "App chung",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Theihternak \" {{name}} \" kha hloh? Cu chungin a hngakmi theihternak hna cu hrawh an si.",
+    "testPrompt": "Zei lead ID hmangin nangmah le nangmah (in-app) ah hi theihternak hneksaknak kuat?",
+    "testSent": "Na bell ah kuatmi: {{title}} {{message}}",
+    "headersInvalid": "Webhook lu hna cu a hmaanmi JSON an si a hau, tahchunhnak ah {\"Nawlngeihnak\": \"A phortu xyz\"}",
+    "editTitle": "Theihternak remh",
+    "newTitle": "Theihternak thar",
+    "name": "Min",
+    "namePlaceholder": "tahchunhnak ah, hmun tlawnnak theihternak",
+    "whenStatus": "Hruaitu pakhat dirhmun cu",
+    "subStatus": "Sub-status",
+    "send": "Kuat (caan suaitu)",
+    "custom": "Zulh tawnmi phung...",
+    "modeBefore": "caan khiahmi hlan ah",
+    "modeAfter": "caan khiahmi hnu ah",
+    "noScheduleWarning": "Hi dirhmun nih hin ni le caan a hal lo, cucaah \"caan khiahmi hlan/caan/hnu\" thawngthanhnak cu a chuak bal lai lo.",
+    "noScheduleFix": "Dirhmun le Dirhmun hme tete tangah <strong>ni le caan hal kha</strong> on, asiloah kuat colh.",
+    "sendTo": "(a fonhmi paoh) ah kuat",
+    "recipientAssigned": "Rian pekmi hmantu (hruaitu ngeitu)",
+    "recipientOwner": "Account ngeitu / zohkhenhtu",
+    "recipientUpdatedBy": "Dirhmun a tharchuahtu minung",
+    "everyoneWithRole": "Rian a ngeimi paoh",
+    "specificUsers": "A bik in hmantu (a cawlcangmi)",
+    "inactiveNever": "A cawlcang lomi hmantu hna nih thim an si hmanhah theihternak an hmu bal lo.",
+    "deliverVia": "in kuat",
+    "channelInApp": "App chung (bell)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS a petu)",
+    "emailHint": "Email cu a cohlangtu pakhat cio email address ah a kal i server ah SMTP chiah a hau (backend/.env); cu tiang ahcun email kuatmi cu hlonhmi ah khumh a si lai.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Headers ( JSON )",
+    "content": "Theihternak konglam",
+    "title": "A tlangtaar",
+    "message": "Cakuat",
+    "insertIntoTitle": "A tlangpi ah khumh",
+    "insertIntoMessage": "Message chungah khumh",
+    "anyLeadField": "Zeibantuk lead field paoh nih rian a ttuan ve, eg <code1>{{example1}}</code1> asiloah <code2>{{example2}}</code2> .",
+    "preview": "Hmuh hmasa (hruaitu zohchunh awk)",
+    "enabled": "On",
+    "saveRule": "Theihternak kha chiah",
+    "createRule": "Theihternak ser",
+    "variables": {
+      "customerName": "Hruaitu min",
+      "customerMobile": "Hruaitu mobile",
+      "customerEmail": "Hruaitu email",
+      "registrationId": "Hruaitu ID",
+      "status": "Tlangtaar",
+      "subStatus": "Sub-status",
+      "scheduleAt": "Timhtuahnak ni le caan",
+      "assignedTo": "Rian pekmi hmantu",
+      "updatedBy": "nih a tharchuah",
+      "recipient": "Cotu min",
+      "project": "Rian",
+      "notes": "A donghnak bia",
+      "partner": "Hawikom min"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Dirhmun chiah a si tik ah",
+      "AT": "Caan khiahmi ah",
+      "A1D": "Caan khiahmi hnu ni 1 (zulhnak zohfelnak)"
+    },
+    "immediately": "A tu zok",
+    "atScheduled": "Caan khiahmi ah",
+    "before": {
+      "MINUTES_one": "{{count}} caan khiahmi hlan minute pakhat",
+      "MINUTES_other": "{{count}} caan khiahmi hlan minutes",
+      "HOURS_one": "{{count}} caan khiahmi hlan suimilam pakhat",
+      "HOURS_other": "{{count}} caan khiahmi hlan suimilam",
+      "DAYS_one": "{{count}} caan khiahmi hlan nikhat",
+      "DAYS_other": "{{count}} caan khiahmi hlan ni",
+      "WEEKS_one": "{{count}} caan khiahmi hlan zarh",
+      "WEEKS_other": "{{count}} caan khiahmi hlan zarh",
+      "MONTHS_one": "{{count}} caan khiahmi hlan thla",
+      "MONTHS_other": "{{count}} caan khiahmi hlan thla",
+      "YEARS_one": "{{count}} caan khiahmi hlan kum",
+      "YEARS_other": "{{count}} caan khiahmi hlan kum"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} caan khiahmi minute hnu ah",
+      "MINUTES_other": "{{count}} caan khiahmi hnu minutes",
+      "HOURS_one": "{{count}} caan khiahmi hnu suimilam pakhat",
+      "HOURS_other": "{{count}} caan khiahmi hnu suimilam",
+      "DAYS_one": "{{count}} caan khiahmi hnu nikhat",
+      "DAYS_other": "{{count}} caan khiahmi hnu ni",
+      "WEEKS_one": "{{count}} caan khiahmi hnu zarh",
+      "WEEKS_other": "{{count}} caan khiahmi hnu zarh",
+      "MONTHS_one": "{{count}} caan khiahmi hnu thla",
+      "MONTHS_other": "{{count}} caan khiahmi hnu thla",
+      "YEARS_one": "{{count}} caan khiahmi hnu kum",
+      "YEARS_other": "{{count}} caan khiahmi hnu kum"
+    },
+    "units": {
+      "MINUTES_one": "minute",
+      "MINUTES_other": "minit",
+      "HOURS_one": "suimilam",
+      "HOURS_other": "suimilam",
+      "DAYS_one": "chun",
+      "DAYS_other": "ni",
+      "WEEKS_one": "zerh",
+      "WEEKS_other": "zarh",
+      "MONTHS_one": "thla",
+      "MONTHS_other": "thla",
+      "YEARS_one": "kum",
+      "YEARS_other": "kum"
+    }
+  }
+}

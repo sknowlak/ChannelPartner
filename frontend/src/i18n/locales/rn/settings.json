@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Amagenamiterere",
+    "noPermission": "Nta ruhusha ufise rwo gucunga amagenamiterere."
+  },
+  "categories": {
+    "lead": "Imfuruka",
+    "user": "Ukoresha",
+    "integrations": "Ubufatanye"
+  },
+  "leadTabs": {
+    "fields": "Imirima",
+    "statuses": "Ibibanza n'Ibibanza bitobito",
+    "notifications": "Amatangazo n'Ibitegekanijwe"
+  },
+  "fields": {
+    "leadIntro": "Gutunganya urupapuro rwo gufata abarongozi: gushoboza/guhagarika imirima, uyishireko ikimenyetso ikenewe, canke wongereko imirima yawe bwite.",
+    "userIntro": "Gutunganya urupapuro rwo Kwongera/Guhindura Umunyamuryango w'Ikipe: gushoboza/guhagarika ivyicaro, kubishirako ikimenyetso bisabwa, canke wongereho ivyicaro vyawe bwite.",
+    "addCustomField": "+ Kwongerako umwanya wihariye",
+    "fieldLabel": "Ikimenyetso c'umurima",
+    "group": "Umugwi",
+    "groupPlaceholderLead": "nk'akarorero amakuru y'itohoza",
+    "groupPlaceholderUser": "nk'akarorero Ibindi bisobanuro",
+    "dataType": "Ubwoko bw'amakuru",
+    "options": "Amahitamwo (atandukanijwe n'akarongo)",
+    "requiredLead": "Ibisabwa - abafatanyabikorwa bo mu mugwi wawe bategerezwa kwuzuza ibi kugira ngo bandike umurongozi",
+    "requiredUser": "Ibisabwa - bitegerezwa kwuzuzwa igihe wongeyeko umunyamuryango w'umugwi",
+    "creating": "Gukora...",
+    "createField": "Rema umurima",
+    "columns": {
+      "field": "Umurima",
+      "group": "Umugwi",
+      "type": "Ubwoko",
+      "required": "Bikenewe",
+      "enabled": "Bishobojwe",
+      "kind": "Ubwoko"
+    },
+    "kind": {
+      "custom": "Imigenzo",
+      "core": "Ishingiro (ryugarijwe)",
+      "standard": "Ibisanzwe"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Igisomwa",
+    "TEXTAREA": "Umwandiko muremure",
+    "NUMBER": "Numero",
+    "CURRENCY": "Ifaranga",
+    "DATE": "Itariki",
+    "SELECT": "Gumanuka",
+    "LIST": "Urutonde"
+  },
+  "picker": {
+    "searchPlaceholder": "Gushakisha imirima y'uburongozi...",
+    "summary": "{{shown}} vyerekanwe · {{mandatory}} ngombwa",
+    "mandatory": "Ibwirizwa",
+    "noMatch": "Nta mirima ihuye."
+  },
+  "statuses": {
+    "intro": "Ivyicaro vyawe vy'uburongozi n'ivy'uburongozi bwawe - ivyo umwe wese asaba (itariki n'isaha, ivyicaro vy'uburongozi) iyo umuntu ahinduye uburongozi kuri yo.",
+    "add": "+ Kwongerako ikibazo",
+    "columns": {
+      "order": "Urutonde",
+      "status": "Umwanya",
+      "subStatuses": "Ivyicaro bitobito",
+      "asksFor": "Asaba",
+      "active": "Ibikogwa"
+    },
+    "moveUp": "Kwimukira hejuru",
+    "moveDown": "Kwimukira hasi",
+    "defaultBadge": "Imburabuzi ku barongozi bashasha",
+    "bookingBadge": "Uburyo bwo gusaba",
+    "asksForLabel": "Isaba {{label}}",
+    "asksForDateTime": "Saba itariki n'isaha",
+    "none": "None",
+    "dateTime": "Itariki n'isaha",
+    "scheduledOn": "kuri {{names}}",
+    "fieldsSummary_one": "{{count}} umwanya ( {{mandatory}} ngombwa)",
+    "fieldsSummary_other": "{{count}} imirima ( {{mandatory}} itegeko)",
+    "deleteConfirm": "Gukuraho ikibanza \" {{name}} \"? Ivyo ntibishobora gusubirwamwo.",
+    "editTitle": "Guhindura uko bimeze - {{name}}",
+    "newTitle": "Ikibanza gishasha",
+    "name": "Izina ry'imimerere",
+    "colour": "Ibara",
+    "active": "Ibikogwa",
+    "isDefault": "Ikibanza mburabuzi ku barongozi bashasha",
+    "isBooking": "Uburyo bwo gusaba (bushizweho n'Ugusaba kwose)",
+    "whenMoved": "Iyo umurongozi yimuriwe muri iki kibanza",
+    "askSchedule": "Basabe itariki n'isaha (umuteguzi)",
+    "scheduleLabelPlaceholder": "Ikimenyetso, nk'akarorero Sura kuri",
+    "fieldsToShow": "Ibibanza vy'uburongozi vyerekanywe ku rupapuro rwo kuvugurura",
+    "subStatusesTitle": "Ivyicaro bitobito",
+    "subStatusesHint": "Buri sub-status ishobora gusaba itariki n'isaha yayo yongerako ivyicaro vyayo - vyerekanywe hejuru y'ivyatsi vy'ivya status biri hejuru.",
+    "subStatusName": "Izina ry'ikibanza",
+    "subFields": "Imirima ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Itariki n'isaha, nk'akarorero Hamagara kuri",
+    "addSubStatus": "+ Kwongerako ikibazo gito",
+    "saveStatus": "Bika uko bimeze",
+    "createStatus": "Rema ikibanza"
+  },
+  "notifications": {
+    "intro": "Menyesha abantu babereye iyo umurongozi ashitse ku rugero - ubwo nyene, canke isaha yashinzwe imbere/inyuma y’itariki n’isaha vyategekanijwe kuri yo.",
+    "add": "+ Kwongera Itangazo",
+    "columns": {
+      "notification": "Itangazo",
+      "whenStatusIs": "Igihe ikibanza ari",
+      "sends": "Yohereza",
+      "to": "Ku",
+      "via": "Biciye",
+      "enabled": "Bishobojwe"
+    },
+    "anyStatus": "Ikibanza cose",
+    "anySubStatus": "Ikibanza cose",
+    "inactiveOption": "{{name}} (ntibikora)",
+    "emptyRules": "Nta makuru aramenyekana - wongereko rimwe kugira ngo umenyeshe ikipe yawe iyo umurongozi ashitse ku rugero.",
+    "jobs": {
+      "title": "Vyateguwe & Vyoherejwe",
+      "firesAt": "Umuriro Ku",
+      "notification": "Itangazo",
+      "lead": "Imfuruka",
+      "status": "Umwanya",
+      "details": "Amakuru",
+      "empty": "Nta kintu na kimwe categekanijwe canke coherejwe.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Birarindiriye",
+      "PROCESSING": "Gutunganya",
+      "SENT": "Yarungitswe",
+      "FAILED": "Vyarananiye",
+      "SKIPPED": "Yasimbutse",
+      "CANCELLED": "Vyasubiwemwo"
+    },
+    "deliveryStatus": {
+      "SENT": "yarungitswe",
+      "FAILED": "vyarananiye",
+      "SKIPPED": "yasimbutse"
+    },
+    "deliveryChannel": {
+      "IN_APP": "muri porogaramu",
+      "EMAIL": "imeyili",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Ukoresha yashinzwe",
+      "owner": "Nyirayo",
+      "updatedBy": "Vyavuguruwe na",
+      "role": "Uruhara: {{name}}"
+    },
+    "channels": {
+      "inApp": "Muri porogaramu",
+      "email": "Imeyili",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Gukuraho itangazo \" {{name}} \"? Ivyibutsa bitegerezwa kuva muri ryo birasubirwamwo.",
+    "testPrompt": "Wohereze ikigeragezo c'iri tangazo kuri wewe nyene (mu-app) ukoresheje ID iyihe ?",
+    "testSent": "Yoherejwe ku nkengeri yawe: {{title}} {{message}}",
+    "headersInvalid": "Imitwe Webhook itegerezwa kuba ikora JSON , nk'akarorero {\"Uruhusha\": \"Uwutwara xyz\"}",
+    "editTitle": "Guhindura itangazo",
+    "newTitle": "Itangazo rishasha",
+    "name": "Izina",
+    "namePlaceholder": "nk'akarorero, kwibutsa gusura urubuga",
+    "whenStatus": "Igihe ikibanza c'umurongozi ari",
+    "subStatus": "Ikibanza gito",
+    "send": "Wohereze (umuteguzi)",
+    "custom": "Imigenzo...",
+    "modeBefore": "imbere y'igihe categekanijwe",
+    "modeAfter": "inyuma y'igihe categekanijwe",
+    "noScheduleWarning": "Iyi status ntibisaba itariki n'isaha, rero itangazo ry'\"imbere/ku/inyuma y'isaha yategekanijwe\" ntirizokwigera rikora.",
+    "noScheduleFix": "Hindukiza <strong>Saba itariki n'isaha</strong> kuri vyo munsi y'Ivyabaye n'Ivyabaye, canke wohereze Ubwo nyene.",
+    "sendTo": "Wohereze kuri (ihuriro ryose)",
+    "recipientAssigned": "Uwukoresha yashinzwe (nyene mukuru)",
+    "recipientOwner": "Nyiri konti / umuyobozi",
+    "recipientUpdatedBy": "Umuntu yahinduye ikibazo",
+    "everyoneWithRole": "Umuntu wese afise uruhara",
+    "specificUsers": "Abakoresha bihariye (bakora)",
+    "inactiveNever": "Abakoresha badakora ntibashobora kwigera baronka amatangazo, naho boba batowe.",
+    "deliverVia": "Gutanga biciye ku",
+    "channelInApp": "Muri porogaramu (inkengeri)",
+    "channelEmail": "Imeyili",
+    "channelWebhook": "Webhook (Umutanga SMS WhatsApp )",
+    "emailHint": "Imeli ija kuri aderesi y’imeli y’uwuyironka wese kandi ikeneye SMTP ishizweho kuri server (backend/.env); gushika aho imeyili yoherezwa irandikwa nk'iyasimbutswe.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Imitwe ( JSON )",
+    "content": "Ibirimwo mu itangazo",
+    "title": "Umutwe",
+    "message": "Ubutumwa",
+    "insertIntoTitle": "Injiza mu mutwe",
+    "insertIntoMessage": "Injiza mu butumwa",
+    "anyLeadField": "Ubuhinga bwose burakora, nk'akarorero <code1>{{example1}}</code1> canke <code2>{{example2}}</code2> .",
+    "preview": "Imbere y'igihe (akarorero k'uburongozi)",
+    "enabled": "Bishobojwe",
+    "saveRule": "Bika Itangazo",
+    "createRule": "Rema itangazo",
+    "variables": {
+      "customerName": "Izina ry'umurongozi",
+      "customerMobile": "Kurongora telefone ngendanwa",
+      "customerEmail": "Imeyili",
+      "registrationId": "ID y'uburongozi",
+      "status": "Umwanya",
+      "subStatus": "Ikibanza gito",
+      "scheduleAt": "Itariki n'isaha vyategekanijwe",
+      "assignedTo": "Ukoresha yashinzwe",
+      "updatedBy": "Vyavuguruwe na",
+      "recipient": "Izina ry'uwuronka",
+      "project": "Umugambi",
+      "notes": "Icanditswe ca nyuma",
+      "partner": "Izina ry'umufatanyabikorwa"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Ubwo nyene iyo status ishizweho",
+      "AT": "Ku gihe categekanijwe .",
+      "A1D": "Umusi 1 inyuma y'igihe categekanijwe (igenzura ry'ukurikirana)"
+    },
+    "immediately": "Ubwo nyene",
+    "atScheduled": "Ku gihe categekanijwe",
+    "before": {
+      "MINUTES_one": "{{count}} umunota imbere y'isaha yategekanijwe",
+      "MINUTES_other": "{{count}} iminota imbere y'igihe categekanijwe",
+      "HOURS_one": "{{count}} isaha imbere y'isaha yategekanijwe",
+      "HOURS_other": "{{count}} amasaha imbere y'igihe categekanijwe",
+      "DAYS_one": "{{count}} umusi imbere y'isaha yategekanijwe",
+      "DAYS_other": "{{count}} imisi imbere y'igihe categekanijwe",
+      "WEEKS_one": "{{count}} indwi imbere y'igihe categekanijwe",
+      "WEEKS_other": "{{count}} amayinga imbere y'igihe categekanijwe",
+      "MONTHS_one": "{{count}} ukwezi imbere y'igihe categekanijwe",
+      "MONTHS_other": "{{count}} amezi imbere y'igihe categekanijwe",
+      "YEARS_one": "{{count}} umwaka imbere y'igihe categekanijwe",
+      "YEARS_other": "{{count}} imyaka imbere y'igihe categekanijwe"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} umunota inyuma y'isaha yategekanijwe",
+      "MINUTES_other": "{{count}} iminota inyuma y'igihe categekanijwe",
+      "HOURS_one": "{{count}} isaha inyuma y'isaha yategekanijwe",
+      "HOURS_other": "{{count}} amasaha inyuma y'igihe categekanijwe",
+      "DAYS_one": "{{count}} umusi inyuma y'isaha yategekanijwe",
+      "DAYS_other": "{{count}} imisi inyuma y'igihe categekanijwe",
+      "WEEKS_one": "{{count}} indwi inyuma y'igihe categekanijwe",
+      "WEEKS_other": "{{count}} amayinga inyuma y'igihe categekanijwe",
+      "MONTHS_one": "{{count}} ukwezi inyuma y'igihe categekanijwe",
+      "MONTHS_other": "{{count}} amezi inyuma y'igihe categekanijwe",
+      "YEARS_one": "{{count}} umwaka inyuma y'igihe categekanijwe",
+      "YEARS_other": "{{count}} imyaka inyuma y'igihe categekanijwe"
+    },
+    "units": {
+      "MINUTES_one": "umunota",
+      "MINUTES_other": "iminota",
+      "HOURS_one": "isaha",
+      "HOURS_other": "amasaha",
+      "DAYS_one": "umusi",
+      "DAYS_other": "imisi",
+      "WEEKS_one": "indwi",
+      "WEEKS_other": "indwi",
+      "MONTHS_one": "ukwezi",
+      "MONTHS_other": "amezi",
+      "YEARS_one": "umwaka",
+      "YEARS_other": "imyaka"
+    }
+  }
+}

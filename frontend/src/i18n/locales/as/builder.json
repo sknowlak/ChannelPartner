@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "বিল্ডাৰ পৰ্টেল",
+    "referrals": "ৰেফাৰেল",
+    "builderLogin": "বিল্ডাৰ লগইন",
+    "partnerLogin": "চেনেল অংশীদাৰ প্ৰৱেশ"
+  },
+  "login": {
+    "title": "বিল্ডাৰ চাইন ইন কৰক",
+    "hint": "বিল্ডাৰ একাউণ্টসমূহ Leadrat দ্বাৰা সৃষ্টি কৰা হয়। আপোনাৰ প্ৰশাসকক সুধিব যদি আপোনাৰ নাই।"
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "আপোনাৰ সিদ্ধান্তৰ বাবে অপেক্ষা কৰি আছে",
+    "ACCEPTED": "গ্ৰহণ কৰা হৈছে",
+    "REJECTED": "নাকচ কৰা হৈছে"
+  },
+  "list": {
+    "title": "ৰেফাৰেল",
+    "allProjects": "সকলো প্ৰকল্প",
+    "allStatuses": "সকলো ষ্টেটাছ",
+    "count_one": "{{count}} ৰেফাৰেল",
+    "count_other": "{{count}} ৰেফাৰেলসমূহ",
+    "columns": {
+      "referral": "ৰেফাৰেল",
+      "customer": "গ্ৰাহক",
+      "project": "প্ৰকল্প",
+      "sourcePartner": "উৎস অংশীদাৰ",
+      "status": "স্থিতি",
+      "booking": "বুকিং",
+      "registered": "পঞ্জীয়ন কৰা হৈছে"
+    },
+    "booked": "বুকিং কৰা হৈছে",
+    "empty": "এতিয়াও কোনো ৰেফাৰেল নাই।"
+  },
+  "detail": {
+    "customer": "গ্ৰাহক",
+    "sourcePartner": "উৎস অংশীদাৰ",
+    "attributionNote": "(বৈশিষ্ট্য - সলনি কৰিব নোৱাৰি)",
+    "leadStatus": "সীহৰ অৱস্থা",
+    "protectedUntil": "সুৰক্ষিত যেতিয়ালৈকে",
+    "referral": "ৰেফাৰেল",
+    "reason": "কাৰণ: {{reason}}",
+    "booking": "বুকিং",
+    "bookedOwner": "বুকিং কৰা হৈছে - আপুনি অপাৰেচনেল মালিক",
+    "notBooked": "বুকিং কৰা হোৱা নাই",
+    "sharedAfterBooking": "বুকিং কৰাৰ পিছত শ্বেয়াৰ কৰা হয়",
+    "accept": "ৰেফাৰেল গ্ৰহণ কৰক",
+    "confirmBooking": "বুকিং নিশ্চিত কৰক",
+    "reject": "ৰেফাৰেল নাকচ কৰক",
+    "rejectReasonLabel": "প্ৰত্যাখ্যান কৰাৰ কাৰণ (সঙ্গীক দেখুওৱা হৈছে) *",
+    "rejectConfirm": "প্ৰত্যাখ্যান",
+    "confirmBookingPrompt": "বুকিং নিশ্চিত কৰকনে? কাৰ্য্যকৰী মালিকীস্বত্ব আপোনাৰ ওচৰলৈ যায় আৰু অংশীদাৰজন কমিচনৰ বাবে যোগ্য হৈ পৰে।",
+    "notice": {
+      "booked": "বুকিং নিশ্চিত।",
+      "accepted": "ৰেফাৰেল গ্ৰহণ কৰা হৈছে।",
+      "rejected": "ৰেফাৰেল নাকচ কৰা হৈছে।"
+    },
+    "backToReferrals": "ৰেফাৰেললৈ উভতি যাওক"
+  },
+  "history": {
+    "title": "ইতিহাস",
+    "actor": {
+      "system": "পদ্ধতি",
+      "partner": "চেনেলৰ অংশীদাৰ",
+      "admin": "Leadrat এডমিন"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "অংশীদাৰ পঞ্জীয়ন লাভ কৰা হৈছে",
+      "DUPLICATE_CHECK_COMPLETED": "ডুপ্লিকেট পৰীক্ষা সম্পূৰ্ণ কৰা হৈছে - কোনো সক্ৰিয় ডুপ্লিকেট পোৱা নগ'ল",
+      "REGISTRATION_ACCEPTED": "পঞ্জীয়ন গ্ৰহণ কৰা হৈছে",
+      "PROTECTION_GRANTED_one": "{{count}} -দিনৰ সুৰক্ষা প্ৰদান কৰা হৈছে",
+      "PROTECTION_GRANTED_other": "{{count}} -দিনৰ সুৰক্ষা প্ৰদান কৰা হৈছে",
+      "STAGE_UPDATED": "অৱস্থা {{stage}} লৈ আপডেইট কৰা হৈছে",
+      "LEAD_DETAILS_UPDATED_one": "আপডেইট কৰা হৈছে {{count}} ক্ষেত্ৰ",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} ক্ষেত্ৰসমূহ আপডেইট কৰা হৈছে",
+      "LEAD_ASSIGNED": "{{name}} ত নিযুক্ত কৰা হৈছে",
+      "LEAD_UNASSIGNED": "অনাচাইনড",
+      "REFERRAL_ACCEPTED": "বিল্ডাৰে ৰেফাৰেলটো গ্ৰহণ কৰিলে",
+      "REFERRAL_REJECTED": "বিল্ডাৰে ৰেফাৰেল নাকচ কৰিলে। কাৰণ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} দ্বাৰা নকল পঞ্জীয়নৰ প্ৰচেষ্টা নাকচ কৰা হৈছে",
+      "BOOKING_COMPLETED": "বুকিং সম্পূৰ্ণ হ’ল",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "বিল্ডাৰলৈ হস্তান্তৰ কৰা হৈছে কাৰ্য্যকৰী মালিকীস্বত্ব",
+      "PARTNER_ATTRIBUTION_PRESERVED": "অংশীদাৰ এট্ৰিবিউচন সংৰক্ষিত",
+      "COMMISSION_ELIGIBILITY_CREATED": "আয়োগৰ যোগ্যতা সৃষ্টি",
+      "HANDOVER_COMPLETED": "হেণ্ডঅভাৰ সম্পূৰ্ণ হ’ল",
+      "ADMIN_PROTECTION_RELEASED": "এডমিনে ডুপ্লিকেট প্ৰটেকচন সোনকালে মুকলি কৰি দিলে। কাৰণ: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "প্ৰশাসকে {{from}} ৰ পৰা {{to}} লৈ পঞ্জীয়ন পুনৰ নিযুক্ত কৰিলে। কাৰণ: {{reason}}"
+    }
+  }
+}

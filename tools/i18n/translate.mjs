@@ -5,6 +5,7 @@
 //   node tools/i18n/translate.mjs --provider azure  --langs ta,te,mr
 //   node tools/i18n/translate.mjs --provider google --list          (show available languages)
 //   node tools/i18n/translate.mjs --provider mock   --langs ta --dry-run
+//   node tools/i18n/translate.mjs --provider google-free --langs all   (no key; unofficial endpoint)
 //
 // Reads the English JSON of every app (frontend, admin, mobile, backend
 // notification texts), sends ONLY UI text to the chosen provider (never
@@ -30,6 +31,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import crypto from 'node:crypto';
 
 const TOOL_DIR = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(TOOL_DIR, '../..');
@@ -69,6 +71,12 @@ function loadEnvFile(file) {
 loadEnvFile(path.join(TOOL_DIR, '.env'));
 
 // ---------------------------------------------------------------- helpers
+// The cache keeps short hashes, not text: [hash(English source), hash(machine
+// output)] per key - enough to spot changed English and human edits, at a
+// fraction of the size (249 languages x ~1,750 keys). Old {src, mt} entries
+// are still understood.
+const digest = (s) => (s === undefined ? undefined : crypto.createHash('sha1').update(String(s)).digest('base64url').slice(0, 10));
+const cacheEntry = (c) => (Array.isArray(c) ? c : c && [digest(c.src), digest(c.mt)]);
 const readJson = (f, fallback) => (fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : fallback);
 const writeJson = (f, data) => {
   fs.mkdirSync(path.dirname(f), { recursive: true });
@@ -113,11 +121,24 @@ function mask(text) {
   const tokens = [];
   let html = '';
   let last = 0;
-  for (const m of text.matchAll(TOKEN)) {
+  // Only a matched <x>…</x> pair is markup; a lone "<token>" is literal text.
+  const matches = [...text.matchAll(TOKEN)];
+  const paired = new Set();
+  const openAt = [];
+  matches.forEach((m, i) => {
+    const o = /^<([A-Za-z0-9]+)>$/.exec(m[0]);
+    const c = /^<\/([A-Za-z0-9]+)>$/.exec(m[0]);
+    if (o) openAt.push([o[1], i]);
+    else if (c) {
+      const j = openAt.findLastIndex(([n]) => n === c[1]);
+      if (j >= 0) { paired.add(openAt[j][1]).add(i); openAt.splice(j); }
+    }
+  });
+  for (const [i, m] of matches.entries()) {
     html += escapeHtml(text.slice(last, m.index));
     const tok = m[0];
-    const open = /^<([A-Za-z0-9]+)>$/.exec(tok);
-    const close = /^<\/([A-Za-z0-9]+)>$/.exec(tok);
+    const open = paired.has(i) && /^<([A-Za-z0-9]+)>$/.exec(tok);
+    const close = paired.has(i) && /^<\/([A-Za-z0-9]+)>$/.exec(tok);
     if (open) html += `<b data-k="${open[1]}">`;
     else if (close) html += '</b>';
     else {
@@ -239,6 +260,44 @@ const PROVIDERS = {
       }
     };
   },
+  // Keyless: the public endpoint translate.google.com's own pages use. Same
+  // engine as the paid API, but unofficial and rate-limited - fine for
+  // build-time generation, slower (small batches, pauses, retries).
+  'google-free': () => {
+    const base = 'https://translate.googleapis.com/translate_a';
+    const pause = (ms) => new Promise((r) => setTimeout(r, ms));
+    async function call(batch, lang) {
+      const body = new URLSearchParams();
+      for (const q of batch) body.append('q', q);
+      for (let attempt = 1; ; attempt++) {
+        try {
+          const d = await http(`${base}/t?client=gtx&sl=en&tl=${encodeURIComponent(lang.providerCode)}&format=html`, {
+            method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' }, body
+          });
+          const out = d.map((r) => (Array.isArray(r) ? r[0] : r));
+          if (out.length !== batch.length) throw new Error(`expected ${batch.length} results, got ${out.length}`);
+          return out;
+        } catch (err) {
+          if (attempt >= 6) throw err;
+          await pause(2000 * 2 ** attempt);
+        }
+      }
+    }
+    return {
+      async languages() {
+        const d = await http(`${base}/l?client=gtx&hl=en`);
+        return Object.entries(d.tl).map(([code, englishName]) => ({ code: normalizeCode(code), englishName, providerCode: code }));
+      },
+      async translate(htmls, lang) {
+        const out = [];
+        for (const batch of chunk(htmls, 60, 4000)) {
+          out.push(...await call(batch, lang));
+          await pause(250);
+        }
+        return out;
+      }
+    };
+  },
   // Offline stand-in for testing this script: "translates" by marking each
   // translatable word, keeping all protected parts and markup.
   mock: () => ({
@@ -274,7 +333,7 @@ function plan(app, lang) {
     const ns = file.replace(/\.json$/, '');
     const en = flatten(readJson(path.join(enDir, file)));
     const target = flatten(readJson(path.join(ROOT, APPS[app].locales, lang.code, file), {}));
-    const nsCache = cache[ns] || {};
+    const nsCache = Object.fromEntries(Object.entries(cache[ns] || {}).map(([k, c]) => [k, cacheEntry(c)]));
     files[ns] = { en, target, nsCache };
     const seen = new Set();
     for (const [key, source] of en) {
@@ -287,13 +346,15 @@ function plan(app, lang) {
       seen.add(base);
       const sourcesNeeded = isPlural ? [`${base}_one`, `${base}_other`].filter((k) => en.has(k)) : [key];
       for (const srcKey of sourcesNeeded) {
-        const cached = nsCache[srcKey];
+        const cached = cacheEntry(nsCache[srcKey]);
         // The target key that holds this source's translation (for plurals in
         // languages without a "one" form, _one has no target key of its own).
         const current = target.get(srcKey) ?? (srcKey.endsWith('_other') ? target.get(targetKeys.find((k) => target.has(k)) || '') : undefined);
         if (cached) {
-          if (current !== undefined && current !== cached.mt) continue; // edited by a person - keep
-          if (cached.src === en.get(srcKey) && !args.retranslate) continue; // English unchanged
+          if (cached[1] !== null && current !== undefined && digest(current) !== cached[1]) continue; // edited by a person - keep
+          // English unchanged - skip, unless it was kept in English last time
+          // (placeholders damaged; cached as null), so the next run retries it.
+          if (cached[0] === digest(en.get(srcKey)) && cached[1] !== null && !args.retranslate) continue;
         } else if (current !== undefined && !args.retranslate) {
           continue; // existing text not produced by this tool - keep
         }
@@ -304,7 +365,7 @@ function plan(app, lang) {
   return { files, work, cache, cacheFile };
 }
 
-function write(app, lang, files, translated, cache, cacheFile) {
+function write(app, lang, files, translated, failed, cache, cacheFile) {
   const cats = pluralCategories(lang.code);
   for (const [ns, { en, target, nsCache }] of Object.entries(files)) {
     const out = new Map();
@@ -323,12 +384,16 @@ function write(app, lang, files, translated, cache, cacheFile) {
     }
     for (const [k, mt] of translated) {
       const [tns, ...rest] = k.split(SEP);
-      if (tns === ns) nsCache[rest.join(SEP)] = { src: en.get(rest.join(SEP)), mt };
+      if (tns === ns) nsCache[rest.join(SEP)] = [digest(en.get(rest.join(SEP))), failed.has(k) ? null : digest(mt)];
     }
     cache[ns] = nsCache;
     if (!args['dry-run']) writeJson(path.join(ROOT, APPS[app].locales, lang.code, `${ns}.json`), unflatten(out));
   }
-  if (!args['dry-run']) writeJson(cacheFile, cache);
+  if (!args['dry-run']) {
+    fs.mkdirSync(path.dirname(cacheFile), { recursive: true });
+    fs.writeFileSync(cacheFile, `${JSON.stringify(cache)}
+`);
+  }
 }
 
 function languageEntry(lang) {
@@ -397,7 +462,7 @@ async function main() {
     return;
   }
   const provider = PROVIDERS[args.provider || 'google']?.();
-  if (!provider) throw new Error(`Unknown --provider ${args.provider}. Use google, azure, deepl or mock.`);
+  if (!provider) throw new Error(`Unknown --provider ${args.provider}. Use google, google-free, azure, deepl or mock.`);
   const available = await provider.languages();
   if (args.list) {
     console.log(available.map((l) => `${l.code}\t${l.englishName}`).join('\n'));
@@ -420,18 +485,20 @@ async function main() {
     for (const app of Object.keys(APPS)) {
       const { files, work, cache, cacheFile } = plan(app, lang);
       const translated = new Map();
+      const failed = new Set();
       if (work.length) {
         const masked = work.map((w) => mask(w.source));
         const out = await provider.translate(masked.map((m) => m.html), lang);
         out.forEach((html, i) => {
           const result = unmask(html, masked[i].tokens);
           const ok = result && protectedParts(result) === protectedParts(work[i].source);
+          if (!ok) failed.add(`${work[i].ns}${SEP}${work[i].key}`);
           if (!ok) problems.push(`${app}:${work[i].ns}:${work[i].key.split(SEP).join('.')}`);
           translated.set(`${work[i].ns}${SEP}${work[i].key}`, ok ? result : work[i].source);
         });
         sent += work.length;
       }
-      write(app, lang, files, translated, cache, cacheFile);
+      write(app, lang, files, translated, failed, cache, cacheFile);
     }
     const entry = languageEntry(lang);
     const idx = master.findIndex((l) => l.code === lang.code);

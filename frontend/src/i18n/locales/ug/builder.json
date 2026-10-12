@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "قۇرغۇچىلار پورتى",
+    "referrals": "Referrals",
+    "builderLogin": "قۇرغۇچى كىرىش",
+    "partnerLogin": "قانال ھەمكارلاشقۇچىسى كىرىش"
+  },
+  "login": {
+    "title": "قۇرغۇچى تىزىملىتىڭ",
+    "hint": "قۇرغۇچىلار ھېساباتى Leadrat تەرىپىدىن قۇرۇلغان. باشقۇرغۇچىڭىزدىن سوراپ بېقىڭ."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "قارارىڭىزنى ساقلاۋاتىدۇ",
+    "ACCEPTED": "قوبۇل قىلىندى",
+    "REJECTED": "رەت قىلىندى"
+  },
+  "list": {
+    "title": "Referrals",
+    "allProjects": "بارلىق تۈرلەر",
+    "allStatuses": "بارلىق ھالەت",
+    "count_one": "{{count}} كۆرسەتمە",
+    "count_other": "{{count}} يوللانما",
+    "columns": {
+      "referral": "Referral",
+      "customer": "خېرىدار",
+      "project": "Project",
+      "sourcePartner": "مەنبە ھەمكارلاشقۇچى",
+      "status": "ھالەت",
+      "booking": "زاكاز قىلىش",
+      "registered": "تىزىملاتتى"
+    },
+    "booked": "زاكاز قىلىندى",
+    "empty": "ھازىرچە يوللانما يوق."
+  },
+  "detail": {
+    "customer": "خېرىدار",
+    "sourcePartner": "مەنبە ھەمكارلاشقۇچى",
+    "attributionNote": "(خاسلىق - ئۆزگەرتىشكە بولمايدۇ)",
+    "leadStatus": "قوغۇشۇن ھالىتى",
+    "protectedUntil": "قوغدالدى",
+    "referral": "Referral",
+    "reason": "سەۋەبى: {{reason}}",
+    "booking": "زاكاز قىلىش",
+    "bookedOwner": "زاكاز قىلىندى - سىز مەشغۇلات ئىگىسى",
+    "notBooked": "زاكاز قىلىنمىدى",
+    "sharedAfterBooking": "زاكاز قىلغاندىن كېيىن ئورتاقلاشتى",
+    "accept": "يوللاشنى قوبۇل قىلىڭ",
+    "confirmBooking": "زاكازنى جەزملەشتۈرۈڭ",
+    "reject": "رەت قىلىشنى رەت قىلىڭ",
+    "rejectReasonLabel": "رەت قىلىشنىڭ سەۋەبى (ھەمراھىغا كۆرسىتىلدى) *",
+    "rejectConfirm": "رەت قىلىش",
+    "confirmBookingPrompt": "زاكازنى جەزملەشتۈرەمسىز؟ مەشغۇلات ئىگىدارلىق ھوقۇقى سىزگە يۆتكىلىدۇ ، ھەمراھى ھاۋالە قىلىشقا ئېرىشىدۇ.",
+    "notice": {
+      "booked": "زاكاز جەزملەشتۈرۈلدى.",
+      "accepted": "تەۋسىيە قوبۇل قىلىندى.",
+      "rejected": "رەت قىلىش رەت قىلىندى."
+    },
+    "backToReferrals": "پايدىلانمىلارغا قايتىش"
+  },
+  "history": {
+    "title": "تارىخ",
+    "actor": {
+      "system": "سىستېما",
+      "partner": "قانال ھەمراھى",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "ھەمكارلاشقۇچىلار تىزىملىتىلدى",
+      "DUPLICATE_CHECK_COMPLETED": "تەكرار تەكشۈرۈش تاماملاندى - ئاكتىپ كۆپەيتىلمە تېپىلمىدى",
+      "REGISTRATION_ACCEPTED": "تىزىملىتىش قوبۇل قىلىندى",
+      "PROTECTION_GRANTED_one": "{{count}} كۈنلۈك قوغداش ھوقۇقى بېرىلگەن",
+      "PROTECTION_GRANTED_other": "{{count}} كۈنلۈك قوغداش ھوقۇقى بېرىلگەن",
+      "STAGE_UPDATED": "ھالەت {{stage}} to غا يېڭىلاندى",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} مەيدانى يېڭىلاندى",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} بۆلەكلىرى يېڭىلاندى",
+      "LEAD_ASSIGNED": "{{name}} to غا تەقسىم قىلىندى",
+      "LEAD_UNASSIGNED": "ئىمزاسىز",
+      "REFERRAL_ACCEPTED": "قۇرغۇچى بۇ تەكلىپنى قوبۇل قىلدى",
+      "REFERRAL_REJECTED": "قۇرۇلۇش قىلغۇچى يوللاشنى رەت قىلدى. سەۋەبى: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} by نىڭ كۆپەيتىلگەن تىزىملاش سىنىقى رەت قىلىندى",
+      "BOOKING_COMPLETED": "زاكاز تاماملاندى",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "تىجارەت ئىگىدارلىق ھوقۇقى قۇرغۇچىغا يۆتكەلدى",
+      "PARTNER_ATTRIBUTION_PRESERVED": "ھەمكارلاشقۇچى خاسلىقى ساقلاندى",
+      "COMMISSION_ELIGIBILITY_CREATED": "كومىتېت سالاھىيىتى قۇرۇلدى",
+      "HANDOVER_COMPLETED": "تاپشۇرۇپ بېرىش تاماملاندى",
+      "ADMIN_PROTECTION_RELEASED": "باشقۇرغۇچى كۆپەيتىلگەن قوغداشنى بالدۇر ئېلان قىلدى. سەۋەبى: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "باشقۇرغۇچى تىزىمغا ئالدۇرۇشنى {{from}} دىن {{to}} غا قايتا ئورۇنلاشتۇردى. سەۋەبى: {{reason}}"
+    }
+  }
+}

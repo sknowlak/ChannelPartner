@@ -1,0 +1,83 @@
+{
+  "title": "Zarządzaj zespołem",
+  "tabs": {
+    "members": "Członkowie zespołu",
+    "roles": "Role i uprawnienia",
+    "profile": "Mój profil"
+  },
+  "roles": {
+    "owner": "Właściciel",
+    "member": "Członek zespołu"
+  },
+  "profile": {
+    "updated": "Profil zaktualizowany.",
+    "basicInfo": "Podstawowe informacje",
+    "organisationInfo": "Informacje o organizacji",
+    "preferences": "Preferencje",
+    "companyName": "Nazwa firmy/organizacji",
+    "city": "Miasto",
+    "state": "Państwo",
+    "currencyHelp": "Służy do wyświetlania budżetów i wartości rezerwacji w całym zespole.",
+    "useDeviceTimezone": "Użyj strefy czasowej urządzenia ( {{timezone}} )",
+    "securityRole": "Bezpieczeństwo i rola",
+    "newPassword": "Nowe hasło (pozostaw puste, aby zachować niezmienione)",
+    "currentPassword": "Aktualne hasło",
+    "memberSince": "Członek od",
+    "languageSaved": "Język zapisany na Twoim koncie - będzie używany na każdym urządzeniu, na którym się zalogujesz."
+  },
+  "members": {
+    "intro": "Dodawaj, edytuj, dezaktywuj lub usuwaj osoby w swoim zespole — mają one dostęp do tych samych potencjalnych klientów.",
+    "noPermission": "Nie masz uprawnień do dodawania, edytowania lub usuwania członków zespołu.",
+    "addNew": "+ Dodaj nowego użytkownika",
+    "passwordLabel": "{{label}} (min. 8 znaków)",
+    "rolePermissions": "Rola i uprawnienia",
+    "adding": "Dodawanie...",
+    "addMember": "Dodaj członka zespołu",
+    "tabAll": "Wszyscy ( {{count}} )",
+    "tabActive": "Aktywny ( {{count}} )",
+    "tabInactive": "Nieaktywny ( {{count}} )",
+    "searchPlaceholder": "Wyszukaj nazwę lub nazwę użytkownika...",
+    "allTimezones": "Wszystkie strefy czasowe",
+    "perPage": "Wpisy na stronę",
+    "contact": "Kontakt",
+    "added": "W dodatku",
+    "toggleActive": "Aktywne - kliknij, aby dezaktywować",
+    "toggleInactive": "Nieaktywne - kliknij, aby aktywować",
+    "empty": "Nie ma jeszcze członków zespołu.",
+    "noMatch": "Żaden członek zespołu nie pasuje do tych filtrów.",
+    "showing": "Wyświetlanie {{from}} - {{to}} z {{total}} wpisów",
+    "firstPage": "Pierwsza strona",
+    "previousPage": "Poprzednia strona",
+    "nextPage": "Następna strona",
+    "lastPage": "Ostatnia strona"
+  },
+  "editMember": {
+    "title": "Edytuj użytkownika",
+    "noPermission": "Nie masz uprawnień do edytowania członków zespołu.",
+    "backToTeam": "Powrót do Zespołu",
+    "cantChangeOwn": "Nie możesz zmienić swojej roli ani statusu.",
+    "needsManageRoles": "Zmiana roli członka wymaga uprawnienia Zarządzanie rolami.",
+    "addedBy": "Dodane przez",
+    "addedOn": "Dodano"
+  },
+  "rolesPage": {
+    "intro": "Superadministrator, administrator i menedżer są wbudowane i nie można ich zmienić — utwórz niestandardową rolę dla czegokolwiek innego.",
+    "noPermission": "Nie masz uprawnień do zarządzania rolami.",
+    "createCustom": "+ Utwórz rolę niestandardową",
+    "roleName": "Nazwa roli",
+    "permissions": "Uprawnienia",
+    "members": "Członkowie",
+    "creating": "Tworzenie...",
+    "createRole": "Utwórz rolę",
+    "systemRole": "Rola systemowa",
+    "builtIn": "Wbudowany",
+    "empty": "Nie ma jeszcze żadnych ról."
+  },
+  "permissions": {
+    "MANAGE_LEADS": "Zarządzaj leadami (twórz, postępuj, rezerwuj)",
+    "MANAGE_TEAM": "Zarządzaj zespołem (dodawaj, edytuj, usuwaj członków)",
+    "MANAGE_ROLES": "Zarządzaj rolami i uprawnieniami",
+    "MANAGE_SETTINGS": "Zarządzaj ustawieniami (pola formularza kontaktowego)",
+    "none": "Brak uprawnień"
+  }
+}

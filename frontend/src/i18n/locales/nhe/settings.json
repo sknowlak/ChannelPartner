@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Tlasenkaualistli",
+    "noPermission": "Ax tijpiya tlanauatili para tijnauatis tlen tijtlalijtok."
+  },
+  "categories": {
+    "lead": "Melankauiya",
+    "user": "Tlatekipanojketl",
+    "integrations": "Integraciones"
+  },
+  "leadTabs": {
+    "fields": "Tlali",
+    "statuses": "Estatutos & Sub-Estatos",
+    "notifications": "Tlayolmelahuali uan tlen kiyekanas"
+  },
+  "fields": {
+    "leadIntro": "Xijchijchiua nopa amatl tlen ika tijpixtos nopa tlatemolistli: xijchiua/xijtsakuili nopa tlali, xijtlali se marca tlen moneki, o xijtlali tlen ta tijneki.",
+    "userIntro": "Xijchijchiua nopa amatl tlen itoka Add/Edit Team Member: xijchiua/xijtsontekontlali nopa tlali, xijtlali se marca tlen moneki, o xijtlali tlen ta tijneki.",
+    "addCustomField": "+ Xijtlali se tlali tlen ta tijneki",
+    "fieldLabel": "Tlaixnextilis tlen tlali",
+    "group": "Ololi",
+    "groupPlaceholderLead": "kej nopa tlajtlanili",
+    "groupPlaceholderUser": "kej sekinok tlamantli",
+    "dataType": "Tlamantli tlen tlajtoli",
+    "options": "Tlapejpenalmej (ika se coma)",
+    "requiredLead": "Moneki - tlen mouampoyouaj ipan mo equipo moneki ki temitisej ni para ki ijkuilosej se lead",
+    "requiredUser": "Monequi - moneki tij temitis kemaj tijtlalis se tlen nopa equipo",
+    "creating": "Kichijchiua...",
+    "createField": "Xijchijchiua tlali",
+    "columns": {
+      "field": "Teotlali",
+      "group": "Ololi",
+      "type": "Ajkaya",
+      "required": "Tlatlani",
+      "enabled": "Kichijtok",
+      "kind": "Keya"
+    },
+    "kind": {
+      "custom": "Tlamanatilistli",
+      "core": "Core (tlatsakuiltik)",
+      "standard": "Estándar"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Tlajkuiloli",
+    "TEXTAREA": "Tlajkuiloli uejkapantik",
+    "NUMBER": "Tlapoali",
+    "CURRENCY": "Tepostomi",
+    "DATE": "Tonali tistoke",
+    "SELECT": "Tlatemolistli",
+    "LIST": "Poaltlakuiloli"
+  },
+  "picker": {
+    "searchPlaceholder": "Xijtemo nopa tlali...",
+    "summary": "{{shown}} shown · {{mandatory}} mandatory",
+    "mandatory": "Tlatenkuilili",
+    "noMatch": "Ax onka tlali tlen moajsi."
+  },
+  "statuses": {
+    "intro": "Nopa estados uan subestatutos tlen mo lead - tlen sejse mitstlajtlania (se tonali uan hora, lead camps) kema se akajya kiyankuilia se lead.",
+    "add": "+ Xijtlali Estado",
+    "columns": {
+      "order": "Tlapamitl",
+      "status": "Tlaltokayotl",
+      "subStatuses": "Sub-Estatos",
+      "asksFor": "Tlajtlanili",
+      "active": "Aini"
+    },
+    "moveUp": "Xitlejko",
+    "moveDown": "Xitemo",
+    "defaultBadge": "Tlayejyekoli tlen yankuik tlayekapan",
+    "bookingBadge": "Estado de reservación",
+    "asksForLabel": "Kitlajtlania {{label}}",
+    "asksForDateTime": "Kitlajtlania tonali uan hora",
+    "none": "Amaka",
+    "dateTime": "tonali uan hora",
+    "scheduledOn": "ipan {{names}}",
+    "fieldsSummary_one": "{{count}} field ( {{mandatory}} mandatory)",
+    "fieldsSummary_other": "{{count}} fields ( {{mandatory}} mandatory)",
+    "deleteConfirm": "¿Xikixpolo nopa estado \" {{name}} \"? Ni amo uelis mokuepas.",
+    "editTitle": "Xijpatla tlen eltok - {{name}}",
+    "newTitle": "Yankuik estado",
+    "name": "Itoka tlen eltok",
+    "colour": "Tlapaktli",
+    "active": "Aini",
+    "isDefault": "Estado tlen achtoui eltok para yankuik tlayekanke",
+    "isBooking": "Estado de reservación (kitlalia ika Reserva Completa)",
+    "whenMoved": "Kema se tlayacanalistli mopatla ipan ni estado",
+    "askSchedule": "Xijtlajtlani se tonali uan hora (programador)",
+    "scheduleLabelPlaceholder": "Xikijkuilo, kej ni Xikita ipan",
+    "fieldsToShow": "Xikin tlali tlen nesi ipan nopa amatl tlen ika tijpatlas",
+    "subStatusesTitle": "Sub-Estatos",
+    "subStatusesHint": "Sesen sub-estado uelis kitlajtlanis i tonali uan hora uan kitlalis i tlali - tlen nesi ipan nopa tlali tlen eltok tlakpak.",
+    "subStatusName": "itoka tlen tlatsintla",
+    "subFields": "Tlali ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Tlajkuiloli tlen tonali uan hora, kej ni: Xijnojnotsa ipan",
+    "addSubStatus": "+ Xijtlali sub-estado",
+    "saveStatus": "Xij tlaati Estado",
+    "createStatus": "Xijchijchiua Estado"
+  },
+  "notifications": {
+    "intro": "Xikin ilhui nopa maseualmej tlen kinamiki kema se tlanemakalistli ajsis ipan se estado - nimantsi, o se hora tlen kitlalijtokej achtoui/teipa tlen nopa tonali uan hora tlen kitlalijtokej.",
+    "add": "+ Xijtlali tlajtoli",
+    "columns": {
+      "notification": "Tlayolmelahuali",
+      "whenStatusIs": "Kemaj eltok",
+      "sends": "Kititlani",
+      "to": "A",
+      "via": "Tepots oktli",
+      "enabled": "Kichijtok"
+    },
+    "anyStatus": "Nochi estado",
+    "anySubStatus": "Nochi sub-estatus",
+    "inactiveOption": "{{name}} (amo tekiti)",
+    "emptyRules": "Ayokmo onka tlajtoli - xijtlali se tlen mitsyolmelauas mo equipo kema se tlayekanki ajsis ipan se estado.",
+    "jobs": {
+      "title": "Kitlalijtokej uan kititlankej",
+      "firesAt": "Tlatla ipan",
+      "notification": "Tlayolmelahuali",
+      "lead": "Melankauiya",
+      "status": "Tlaltokayotl",
+      "details": "Kenijatsa",
+      "empty": "Ax tleno mosentlalijtok o ax tleno kititlanij.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Tlenpoliui",
+      "PROCESSING": "Tlayejyekoli",
+      "SENT": "Makajki",
+      "FAILED": "Fallé",
+      "SKIPPED": "Kiixpolojkej",
+      "CANCELLED": "Kiixpolojkej"
+    },
+    "deliveryStatus": {
+      "SENT": "makajki",
+      "FAILED": "fallé",
+      "SKIPPED": "kiixpolok"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ipan-app",
+      "EMAIL": "correo electrónico",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Ueyi tlen motemaka",
+      "owner": "Axka",
+      "updatedBy": "Ki yankuikijtok ika",
+      "role": "Tlatekipanolistli: {{name}}"
+    },
+    "channels": {
+      "inApp": "Ipan aplicación",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "¿Xikixpolo nopa tlajtoli \" {{name}} \"? Nopa tlalnamikilistli tlen nojua poliui tlen nopaya tlami.",
+    "testPrompt": "Xijtitlanili se tlayejyekoli tlen ni tlajtoli moselti (ipan aplicación) ika tlen lead ID ?",
+    "testSent": "Tititlanilijtok ipan mo tlatsotsonali: {{title}} {{message}}",
+    "headersInvalid": "Nopa tlajtoli Webhook moneki elis kuali JSON , kej ni {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Xijpatla tlajtoli",
+    "newTitle": "Yankuik tlajtoli",
+    "name": "Toka",
+    "namePlaceholder": "kej ni, tlalnamikilistli tlen paxalojketl",
+    "whenStatus": "Kema se tlayekanki iestatus eli",
+    "subStatus": "Sub-estatus",
+    "send": "Xititlani (tlayejyekojketl)",
+    "custom": "Tlamanatilistli...",
+    "modeBefore": "achtoui tlen nopa tonali tlen mosentlalijtok",
+    "modeAfter": "teipa tlen nopa tonali tlen mosentlalijtok",
+    "noScheduleWarning": "Ni estado ax kitlajtlania se tonali uan hora, yeka se tlajtoli \"ayemo/ipan/teipa tlen nopa hora tlen mosentlalijtok\" axkema kisas.",
+    "noScheduleFix": "Xij tlalili <strong>Xijtlajtlani se tonali uan hora</strong> ipan Estatutos uan Sub-Estatos, o xiktitlani nimantsi.",
+    "sendTo": "Xititlani ipan (nochi tlasentilistli)",
+    "recipientAssigned": "Tlatekipanojketl tlen kitlalijkej (tlayakanki tlen iaxka)",
+    "recipientOwner": "Tlanauatijketl tlen iaxka nopa cuenta",
+    "recipientUpdatedBy": "Se maseuali tlen ki yankuikijtok nopa estado",
+    "everyoneWithRole": "Nochi ika tekitl",
+    "specificUsers": "Tlatekipanojketl tlen tlatekipanoua (tlatekipanoua)",
+    "inactiveNever": "Nopa maseualmej tlen ax tekitij axkema kiseliaj tlajtoli, maske kintlapejpenijkej.",
+    "deliverVia": "Xijtitlani ika",
+    "channelInApp": "Ipan aplicación (campana)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS provider)",
+    "emailHint": "Nopa correo yaui ipan sejse tlen kiselia uan moneki SMTP tlen kitlalijtokej ipan nopa servidor (backend/.env); hasta nopa tonali tlen tijtitlani ipan correo ijkuilijtok kej amo.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Tlayekapan ( JSON )",
+    "content": "Tlajtoli tlen tlajtoli",
+    "title": "Tlatokayotl",
+    "message": "Amatlakuiloli",
+    "insertIntoTitle": "Xijtlali ipan itoka",
+    "insertIntoMessage": "Xijtlali ipan tlajtoli",
+    "anyLeadField": "Nochi tlali tlen tlayacana nojkia tekiti, kej <code1>{{example1}}</code1> o <code2>{{example2}}</code2> .",
+    "preview": "Xikita (semple de plomo)",
+    "enabled": "Kichijtok",
+    "saveRule": "Xij tlaati tlajtoli",
+    "createRule": "Xijchijchiua se tlajtoli",
+    "variables": {
+      "customerName": "itoka tlen tlayacana",
+      "customerMobile": "Lead mobil",
+      "customerEmail": "Tlajkuilol correo",
+      "registrationId": "ID tlen tlayacana",
+      "status": "Tlaltokayotl",
+      "subStatus": "Sub-estatus",
+      "scheduleAt": "tonali uan hora tlen mosentlalijtok",
+      "assignedTo": "Ueyi tlen motemaka",
+      "updatedBy": "Ki yankuikijtok ika",
+      "recipient": "itoka tlen kiselis",
+      "project": "Nextiltekitlchiualistli",
+      "notes": "Nopa yankuik tlajtoli",
+      "partner": "itoka nopa tlapaleuijketl"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "San nima kemaj nopa estado mosentlalijtok",
+      "AT": "Ipan nopa hora tlen mosentlalijtok",
+      "A1D": "1 tonali teipa tlen nopa tonali tlen mosentlalijtok (tlayejyekoli tlen teipa)"
+    },
+    "immediately": "Amantsi",
+    "atScheduled": "Ipan nopa hora tlen mosentlalijtok",
+    "before": {
+      "MINUTES_one": "{{count}} minuto achtoui tlen nopa hora tlen mosentlalijtok",
+      "MINUTES_other": "{{count}} minutos achtoui tlen nopa hora tlen mosentlalijtok",
+      "HOURS_one": "{{count}} hora achtoui tlen nopa hora tlen mosentlalijtok",
+      "HOURS_other": "{{count}} horas achtoui tlen nopa hora tlen mosentlalijtok",
+      "DAYS_one": "{{count}} tonali achtoui tlen nopa hora tlen mosentlalijtok",
+      "DAYS_other": "{{count}} tonali achtoui tlen nopa tonali tlen mosentlalijtok",
+      "WEEKS_one": "{{count}} semana achtoui tlen nopa tonali tlen mosentlalijtok",
+      "WEEKS_other": "{{count}} semanas achtoui tlen nopa tonali tlen mosentlalijtok",
+      "MONTHS_one": "{{count}} metstli achtoui tlen nopa tonali tlen mosentlalijtok",
+      "MONTHS_other": "{{count}} metstli achtoui tlen nopa tonali tlen mosentlalijtok",
+      "YEARS_one": "{{count}} xiuitl achtoui tlen nopa tonali tlen mosentlalijtok",
+      "YEARS_other": "{{count}} xiuitl achtoui tlen nopa tonali tlen mosentlalijtok"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minuto teipa tlen nopa hora tlen mosentlalijtok",
+      "MINUTES_other": "{{count}} minutos teipa tlen nopa hora tlen mosentlalijtok",
+      "HOURS_one": "{{count}} hora teipa tlen nopa hora tlen mosentlalijtok",
+      "HOURS_other": "{{count}} horas teipa tlen nopa hora tlen mosentlalijtok",
+      "DAYS_one": "{{count}} tonali teipa tlen nopa tonali tlen mosentlalijtok",
+      "DAYS_other": "{{count}} tonali teipa tlen nopa tonali tlen mosentlalijtok",
+      "WEEKS_one": "{{count}} semana teipa tlen nopa tonali tlen mosentlalijtok",
+      "WEEKS_other": "{{count}} semanas teipa tlen nopa tonali tlen mosentlalijtok",
+      "MONTHS_one": "{{count}} metstli teipa tlen nopa tonali tlen mosentlalijtok",
+      "MONTHS_other": "{{count}} metstli teipa tlen nopa tonali tlen mosentlalijtok",
+      "YEARS_one": "{{count}} xiuitl teipa tlen nopa tonali tlen mosentlalijtok",
+      "YEARS_other": "{{count}} xiuitl teipa tlen nopa tonali tlen mosentlalijtok"
+    },
+    "units": {
+      "MINUTES_one": "amatsinya",
+      "MINUTES_other": "achikentsi",
+      "HOURS_one": "imani",
+      "HOURS_other": "imamin",
+      "DAYS_one": "tonal",
+      "DAYS_other": "tonali",
+      "WEEKS_one": "semano",
+      "WEEKS_other": "semanas",
+      "MONTHS_one": "metstli",
+      "MONTHS_other": "metstli",
+      "YEARS_one": "xiutl",
+      "YEARS_other": "xiuitl"
+    }
+  }
+}

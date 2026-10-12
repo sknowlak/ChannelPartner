@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Аразæджы портал",
+    "referrals": "Æрвитæнтæ",
+    "builderLogin": "Аразæджы бацæуæн",
+    "partnerLogin": "Къаналы партнеры бацыд"
+  },
+  "login": {
+    "title": "Аразæг бацыд",
+    "hint": "Арæзтадон хыгъдтæ арæзт цæуынц Leadrat руаджы. Бафæрсут уæ администраторы, кæд уæм нæй."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Æнхъæлмæ кæсын дæ уынаффæмæ",
+    "ACCEPTED": "Райст",
+    "REJECTED": "Нæ райстой"
+  },
+  "list": {
+    "title": "Æрвитæнтæ",
+    "allProjects": "Æппæт проекттæ",
+    "allStatuses": "Æппæт статустæ",
+    "count_one": "{{count}} æрвитæггаг",
+    "count_other": "{{count}} æрвитæнтæ",
+    "columns": {
+      "referral": "Æрвыст",
+      "customer": "Клиент",
+      "project": "Проект",
+      "sourcePartner": "Æмбал",
+      "status": "Уавæр",
+      "booking": "Брон кæнын",
+      "registered": "Регистрацигонд"
+    },
+    "booked": "Бронгонд",
+    "empty": "Нырма æрвыст нæй."
+  },
+  "detail": {
+    "customer": "Клиент",
+    "sourcePartner": "Æмбал",
+    "attributionNote": "(атрибуци - ивæн нæй)",
+    "leadStatus": "Сæйраг уавæр",
+    "protectedUntil": "Хъахъхъæд у",
+    "referral": "Æрвыст",
+    "reason": "Аххосаг: {{reason}}",
+    "booking": "Брон кæнын",
+    "bookedOwner": "Бронгонд - ды дæ оперативон хицау",
+    "notBooked": "Нæй бронгонд",
+    "sharedAfterBooking": "Брон кæныны фæстæ дихгонд æрцыд",
+    "accept": "Райсут æрвитæггаг",
+    "confirmBooking": "Сбæлвырд кæнут бронь",
+    "reject": "Нæ райсут æрвитæггаг",
+    "rejectReasonLabel": "Нæ райсыны аххосаг (æвдыст цæуы æмбалæн) *",
+    "rejectConfirm": "Аздахын",
+    "confirmBookingPrompt": "Сбæлвырд кæнут бронь? Операцион хицаудзинад æрцæуы дæумæ æмæ партнер райсы бар къамисæн.",
+    "notice": {
+      "booked": "Брон кæнын сбæлвырд.",
+      "accepted": "Æрвыст æрцыд райст.",
+      "rejected": "Æрвитæггаг нæ райстой."
+    },
+    "backToReferrals": "Фæстæмæ æрвитæнтæм"
+  },
+  "history": {
+    "title": "Истори",
+    "actor": {
+      "system": "Системæ",
+      "partner": "Къаналы партнер",
+      "admin": "Leadrat админ"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Партнеры регистраци райст æрцыд",
+      "DUPLICATE_CHECK_COMPLETED": "Дубликаты сбæрæг кæнын фæцис - активон дубликат нæ ссардтой",
+      "REGISTRATION_ACCEPTED": "Регистраци райст æрцыд",
+      "PROTECTION_GRANTED_one": "{{count}} -боны хъахъхъæд лæвæрд æрцыд",
+      "PROTECTION_GRANTED_other": "{{count}} -боны хъахъхъæд лæвæрд æрцыд",
+      "STAGE_UPDATED": "Уавæр ноггонд æрцыд {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Ноггонд {{count}} быдыр",
+      "LEAD_DETAILS_UPDATED_other": "Ноггонд {{count}} быдыртæ",
+      "LEAD_ASSIGNED": "Æвæрд у {{name}}",
+      "LEAD_UNASSIGNED": "Æнæснысангонд",
+      "REFERRAL_ACCEPTED": "Аразæг райста æрвыст",
+      "REFERRAL_REJECTED": "Аразæг нæ райста æрвыст. Аххосаг: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} йы дывæр регистрацийы бафæлвæрд нæ райстой",
+      "BOOKING_COMPLETED": "Брон кæнын фæцис",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Операцион хицаудзинад лæвæрд æрцыд аразæгмæ",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Партнеры атрибуци хъахъхъæд у",
+      "COMMISSION_ELIGIBILITY_CREATED": "Къамисы бартæ арæзт æрцыдысты",
+      "HANDOVER_COMPLETED": "Æххæстгонд æрцыд",
+      "ADMIN_PROTECTION_RELEASED": "Админ рагацау рауагъта дубликаты хъахъхъæнынад. Аххосаг: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Админ ногæй снысан кодта регистраци {{from}} -æй {{to}} . Аххосаг: {{reason}}"
+    }
+  }
+}

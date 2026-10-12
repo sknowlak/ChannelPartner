@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal Konstrikter",
+    "referrals": "Bann referans",
+    "builderLogin": "Builder Login",
+    "partnerLogin": "Koneksion Partner Kanal"
+  },
+  "login": {
+    "title": "Kontrer konstrikter",
+    "hint": "Bann kont konstrikter finn kree par Leadrat . Demann ou administrater si ou pena enn."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Pe atann ou desizion",
+    "ACCEPTED": "Finn aksepte",
+    "REJECTED": "Finn rezete"
+  },
+  "list": {
+    "title": "Bann referans",
+    "allProjects": "Tou bann proze",
+    "allStatuses": "Tou bann stati",
+    "count_one": "{{count}} referans",
+    "count_other": "{{count}} bann referans",
+    "columns": {
+      "referral": "Referans",
+      "customer": "Klian",
+      "project": "Proze",
+      "sourcePartner": "Sours Partner",
+      "status": "Stati",
+      "booking": "Rezervasion",
+      "registered": "Anrezistre"
+    },
+    "booked": "Finn rezerve",
+    "empty": "Pena okenn referans ankor."
+  },
+  "detail": {
+    "customer": "Klian",
+    "sourcePartner": "Sours Partner",
+    "attributionNote": "(atribision - pa kapav sanze)",
+    "leadStatus": "Stati Lead",
+    "protectedUntil": "Proteze ziska",
+    "referral": "Referans",
+    "reason": "Rezon: {{reason}}",
+    "booking": "Rezervasion",
+    "bookedOwner": "Finn rezerve - ou proprieter operasionel",
+    "notBooked": "Pa finn rezerve",
+    "sharedAfterBooking": "Finn partaze apre rezervasion",
+    "accept": "Aksepte referans",
+    "confirmBooking": "Konfirm Rezervasion",
+    "reject": "Rezet referans",
+    "rejectReasonLabel": "Rezon pou rezet (montre partner-la) *",
+    "rejectConfirm": "Rezete",
+    "confirmBookingPrompt": "Konfirm rezervasion-la? Propriete operasionel vinn pou ou e partner-la vinn elizib pou komision.",
+    "notice": {
+      "booked": "Rezervasion finn konfirme.",
+      "accepted": "Referans finn aksepte.",
+      "rejected": "Referans finn rezete."
+    },
+    "backToReferrals": "Retourn lor bann referans"
+  },
+  "history": {
+    "title": "Zistwar",
+    "actor": {
+      "system": "Sistem",
+      "partner": "Partener kanal",
+      "admin": "Admin Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Finn resevwar lanrezistreman partener",
+      "DUPLICATE_CHECK_COMPLETED": "Verifikasion doub finn konplete - pa finn trouv okenn doub aktiv",
+      "REGISTRATION_ACCEPTED": "Finn aksepte lanrezistreman",
+      "PROTECTION_GRANTED_one": "{{count}} -zour proteksion finn done",
+      "PROTECTION_GRANTED_other": "{{count}} -zour proteksion finn done",
+      "STAGE_UPDATED": "Stati finn met azour pou {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Finn met azour domenn {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "Finn met azour bann domenn {{count}}",
+      "LEAD_ASSIGNED": "Finn atribie a {{name}}",
+      "LEAD_UNASSIGNED": "Pa finn atribie",
+      "REFERRAL_ACCEPTED": "Konstrikter finn aksepte referans-la",
+      "REFERRAL_REJECTED": "Konstrikter finn rezet referans-la. Rezon: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Tantativ lanrezistreman doub par {{partner}} finn rezete",
+      "BOOKING_COMPLETED": "Rezervasion finn konplete",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Propriete operasionel finn transfer a Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribision partener finn prezerve",
+      "COMMISSION_ELIGIBILITY_CREATED": "Finn kree elizibilite pou komision",
+      "HANDOVER_COMPLETED": "Remet finn konplete",
+      "ADMIN_PROTECTION_RELEASED": "Admin finn pibliye proteksion doub boner. Rezon: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin finn re-asign lanrezistreman depi {{from}} ziska {{to}} . Rezon: {{reason}}"
+    }
+  }
+}

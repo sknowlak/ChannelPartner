@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Pouaka Kaihanga",
+    "referrals": "Tohutoro",
+    "builderLogin": "Takiuru Kaihanga",
+    "partnerLogin": "Takiuru hoa hongere"
+  },
+  "login": {
+    "title": "Waitohu Kaihanga",
+    "hint": "Na Leadrat i hanga nga kaute Kaihanga. Patai atu ki to kaiwhakahaere mena karekau he."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "E tatari ana mo to whakatau",
+    "ACCEPTED": "Whakaaetia",
+    "REJECTED": "Kua whakakorehia"
+  },
+  "list": {
+    "title": "Tohutoro",
+    "allProjects": "Nga kaupapa katoa",
+    "allStatuses": "Nga mana katoa",
+    "count_one": "{{count}} tohutoro",
+    "count_other": "{{count}} tohutoro",
+    "columns": {
+      "referral": "Tohutoro",
+      "customer": "Kiritaki",
+      "project": "Kaupapa",
+      "sourcePartner": "Hoa Puna",
+      "status": "Tūnga",
+      "booking": "Rahui",
+      "registered": "Kua rehitatia"
+    },
+    "booked": "Kua tohua",
+    "empty": "Karekau he tohutoro."
+  },
+  "detail": {
+    "customer": "Kiritaki",
+    "sourcePartner": "Hoa Puna",
+    "attributionNote": "(whakaaro - kaore e taea te whakarereke)",
+    "leadStatus": "Tūnga Arataki",
+    "protectedUntil": "Tiaki Tae noa",
+    "referral": "Tohutoro",
+    "reason": "Take: {{reason}}",
+    "booking": "Rahui",
+    "bookedOwner": "Kua tuhia - ko koe te rangatira whakahaere",
+    "notBooked": "Kaore i tuhia",
+    "sharedAfterBooking": "Ka tohatohahia i muri i te toha",
+    "accept": "Whakaaetia te Tohutoro",
+    "confirmBooking": "Whakaūhia te Rahui",
+    "reject": "Whakakahoretia te Tohutoro",
+    "rejectReasonLabel": "Te take mo te whakakore (whakaatu ki te hoa) *",
+    "rejectConfirm": "Whakakahore",
+    "confirmBookingPrompt": "Whakaūhia te tāpui? Ka nuku te mana whakahaere ki a koe, ka uru te hoa ki te komihana.",
+    "notice": {
+      "booked": "Whakapumautia te rahui.",
+      "accepted": "I whakaaetia te tuku.",
+      "rejected": "I whakakahoretia te tuku."
+    },
+    "backToReferrals": "Hoki ki nga Tohutoro"
+  },
+  "history": {
+    "title": "Hītori",
+    "actor": {
+      "system": "Pūnaha",
+      "partner": "hoa hongere",
+      "admin": "Leadrat rangatira"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Kua whiwhi rehitatanga hoa",
+      "DUPLICATE_CHECK_COMPLETED": "Kua oti te taki taarua - kaore i kitea he taarua hohe",
+      "REGISTRATION_ACCEPTED": "Kua whakaaetia te rehitatanga",
+      "PROTECTION_GRANTED_one": "{{count}} -ra te tiaki i tukuna",
+      "PROTECTION_GRANTED_other": "{{count}} -ra te tiaki i tukuna",
+      "STAGE_UPDATED": "I whakahōungia te tūnga ki {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Kua whakahōuhia te āpure {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} āpure kua whakahoutia",
+      "LEAD_ASSIGNED": "Kua tohua ki a {{name}}",
+      "LEAD_UNASSIGNED": "Kore i tohua",
+      "REFERRAL_ACCEPTED": "I whakaaetia e te Kaihanga te tuku",
+      "REFERRAL_REJECTED": "I whakakorehia e te Kaihanga te tuku. Take: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Ko te nganatanga rehitatanga takirua na {{partner}} i paopao",
+      "BOOKING_COMPLETED": "Kua oti te tono",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Ka tukuna te mana whakahaere ki te Kaihanga Kaihanga",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Ka tiakina te tohu a te hoa",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kua waihangahia te mana o te Komihana",
+      "HANDOVER_COMPLETED": "Kua oti te tuku",
+      "ADMIN_PROTECTION_RELEASED": "I tukuna wawe e te Kaiwhakahaere te whakamarumaru takirua. Take: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "I tukuna ano e te Kaiwhakahaere te rehitatanga mai i {{from}} ki {{to}} . Take: {{reason}}"
+    }
+  }
+}

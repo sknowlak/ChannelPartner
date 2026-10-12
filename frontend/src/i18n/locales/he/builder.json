@@ -1,0 +1,93 @@
+{
+  "shell": {
+    "portal": "פורטל Builder",
+    "referrals": "הפניות",
+    "builderLogin": "התחברות בונה",
+    "partnerLogin": "כניסה לשותף ערוץ"
+  },
+  "login": {
+    "title": "כניסה של בנאי",
+    "hint": "חשבונות Builder נוצרים על ידי Leadrat . שאל את מנהל המערכת שלך אם אין לך אחד."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "מחכה להחלטה שלך",
+    "ACCEPTED": "מְקוּבָּל",
+    "REJECTED": "נִדחֶה"
+  },
+  "list": {
+    "title": "הפניות",
+    "allProjects": "כל הפרויקטים",
+    "allStatuses": "כל הסטטוסים",
+    "count_one": "הפניה {{count}}",
+    "count_two": "{{count}} הפניות",
+    "count_other": "{{count}} הפניות",
+    "columns": {
+      "referral": "הפניה",
+      "customer": "לָקוּחַ",
+      "project": "פּרוֹיֶקט",
+      "sourcePartner": "שותף מקור",
+      "status": "סטָטוּס",
+      "booking": "הזמנה",
+      "registered": "רָשׁוּם"
+    },
+    "booked": "הוזמן",
+    "empty": "אין עדיין הפניות."
+  },
+  "detail": {
+    "customer": "לָקוּחַ",
+    "sourcePartner": "שותף מקור",
+    "attributionNote": "(ייחוס - לא ניתן לשנות)",
+    "leadStatus": "סטטוס לידים",
+    "protectedUntil": "מוגן עד",
+    "referral": "הפניה",
+    "reason": "סיבה: {{reason}}",
+    "booking": "הזמנה",
+    "bookedOwner": "הוזמן - אתה הבעלים התפעולי",
+    "notBooked": "לא הוזמן",
+    "sharedAfterBooking": "משותף לאחר ההזמנה",
+    "accept": "קבל הפניה",
+    "confirmBooking": "אשר את ההזמנה",
+    "reject": "דחה הפניה",
+    "rejectReasonLabel": "סיבת הדחייה (מוצגת לבן הזוג) *",
+    "rejectConfirm": "לִדחוֹת",
+    "confirmBookingPrompt": "לאשר את ההזמנה? הבעלות התפעולית עוברת אליכם והשותף הופך זכאי לעמלה.",
+    "notice": {
+      "booked": "ההזמנה אושרה.",
+      "accepted": "הפנייה התקבלה.",
+      "rejected": "הפניה נדחתה."
+    },
+    "backToReferrals": "חזרה להפניות"
+  },
+  "history": {
+    "title": "הִיסטוֹרִיָה",
+    "actor": {
+      "system": "מַעֲרֶכֶת",
+      "partner": "שותף לערוץ",
+      "admin": "מנהל Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "התקבלה רישום שותף",
+      "DUPLICATE_CHECK_COMPLETED": "בדיקת כפילות הושלמה - לא נמצא כפיל פעיל",
+      "REGISTRATION_ACCEPTED": "ההרשמה התקבלה",
+      "PROTECTION_GRANTED_one": "ניתנה הגנה של {{count}} ימים",
+      "PROTECTION_GRANTED_two": "ניתנה הגנה של {{count}} ימים",
+      "PROTECTION_GRANTED_other": "ניתנה הגנה של {{count}} ימים",
+      "STAGE_UPDATED": "הסטטוס עודכן ל {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "שדה {{count}} עודכן",
+      "LEAD_DETAILS_UPDATED_two": "עודכנו {{count}} שדות",
+      "LEAD_DETAILS_UPDATED_other": "עודכנו {{count}} שדות",
+      "LEAD_ASSIGNED": "הוקצה ל {{name}}",
+      "LEAD_UNASSIGNED": "לא הוקצה",
+      "REFERRAL_ACCEPTED": "בונה קיבל את ההפניה",
+      "REFERRAL_REJECTED": "בונה דחה את הפניה. סיבה: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "ניסיון רישום כפול על ידי {{partner}} נדחה",
+      "BOOKING_COMPLETED": "ההזמנה הושלמה",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "הבעלות התפעולית הועברה לבונה",
+      "PARTNER_ATTRIBUTION_PRESERVED": "ייחוס השותף נשמר",
+      "COMMISSION_ELIGIBILITY_CREATED": "נוצרה זכאות לנציבות",
+      "HANDOVER_COMPLETED": "המסירה הושלמה",
+      "ADMIN_PROTECTION_RELEASED": "מנהל מערכת שחרר הגנה כפולה מוקדם. סיבה: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "מנהל המערכת הקצה מחדש את הרישום מ {{from}} ל- {{to}} . סיבה: {{reason}}"
+    }
+  }
+}

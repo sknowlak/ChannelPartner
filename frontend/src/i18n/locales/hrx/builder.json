@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Bauer Portal",
+    "referrals": "Referënse",
+    "builderLogin": "Bauer Login",
+    "partnerLogin": "Kanal Partner inlog"
+  },
+  "login": {
+    "title": "Bauer sign in",
+    "hint": "Bauer konte sin fon Leadrat kemacht kep . Froo tayn rechiirente wëns tuu khee host."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Warte uf tayn ëntxlus .",
+    "ACCEPTED": "Aksepteyert",
+    "REJECTED": "Ferwort"
+  },
+  "list": {
+    "title": "Referënse",
+    "allProjects": "Al projëkte",
+    "allStatuses": "Al ti statuse",
+    "count_one": "{{count}} referëns",
+    "count_other": "{{count}} referënse",
+    "columns": {
+      "referral": "Referëns",
+      "customer": "Khuner",
+      "project": "Projëkt",
+      "sourcePartner": "Quelle Partner",
+      "status": "Petingung",
+      "booking": "Reserwierung",
+      "registered": "Registriert"
+    },
+    "booked": "Reserwiirt",
+    "empty": "Noch khee referënse."
+  },
+  "detail": {
+    "customer": "Khuner",
+    "sourcePartner": "Quelle Partner",
+    "attributionNote": "(atrës - khan nët keënert wëre)",
+    "leadStatus": "Leet Status",
+    "protectedUntil": "Protektsioon Bis",
+    "referral": "Referëns",
+    "reason": "Ursaach: {{reason}}",
+    "booking": "Reserwierung",
+    "bookedOwner": "Reserwiirt - tuu pist te operatsioons eigentümer .",
+    "notBooked": "Nicht gebookt",
+    "sharedAfterBooking": "Teelt noo te reserwiirung",
+    "accept": "Referëns aksepteere",
+    "confirmBooking": "Konfirmiire ti reserwiirung",
+    "reject": "Referëns wech xafe",
+    "rejectReasonLabel": "Ursaach fer tas ap lënke (ketsaycht fer te partner) *",
+    "rejectConfirm": "Ap xtoose",
+    "confirmBookingPrompt": "Konfirmiire ti reserwiirung? Operatsioons ërepxaft khomt fer tich un te partnerxaft wërt fer ti komisioon kwalifitsiert.",
+    "notice": {
+      "booked": "Reserweerung is konfirmiert.",
+      "accepted": "Referëns is akseptiert.",
+      "rejected": "Referëns ferwort."
+    },
+    "backToReferrals": "Zurück fer ti Referënse"
+  },
+  "history": {
+    "title": "Kexichte",
+    "actor": {
+      "system": "Sisteem",
+      "partner": "Kanal partnerxaft",
+      "admin": "Leadrat Admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Partner registratsioon kriit",
+      "DUPLICATE_CHECK_COMPLETED": "Duplikaat kontrol komplët - khee aktiif duplikat kefun",
+      "REGISTRATION_ACCEPTED": "Ti inxkriptsioon is akseptiirt",
+      "PROTECTION_GRANTED_one": "{{count}} -taach xitsung kept",
+      "PROTECTION_GRANTED_other": "{{count}} -taach xitsung kept",
+      "STAGE_UPDATED": "Status aktualisiirt uf {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Aktualisiirt {{count}} felt",
+      "LEAD_DETAILS_UPDATED_other": "Aktualisiirt {{count}} fëlder",
+      "LEAD_ASSIGNED": "Tas is fer {{name}} kexrip kep",
+      "LEAD_UNASSIGNED": "Unkeweenlich",
+      "REFERRAL_ACCEPTED": "Builder hot ti referëns aan kenom .",
+      "REFERRAL_REJECTED": "Builder hot ti referëns ferwort. Ursaach: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Duplikat fersuuchung fon registratsioon fon {{partner}} is ferwort",
+      "BOOKING_COMPLETED": "Reserweerung is komplët",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operatsioons eigentum is fer te Bauer .",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partner atrës kexitst",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komisioons kwalifikatsioon kemacht kep",
+      "HANDOVER_COMPLETED": "Ti iwersetsung is fërtich",
+      "ADMIN_PROTECTION_RELEASED": "Admin hot friier duplikaat xitsung aus keprung. Ursaach: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin hot ti registratsioon fon {{from}} tsu {{to}} noch mool kexrip . Ursaach: {{reason}}"
+    }
+  }
+}

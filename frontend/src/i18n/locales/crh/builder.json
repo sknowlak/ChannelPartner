@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Къуруджылар порталы",
+    "referrals": "Ёлланмалар",
+    "builderLogin": "Къуруджынынъ кириш",
+    "partnerLogin": "Каналнынъ шерикчиси кириш"
+  },
+  "login": {
+    "title": "Къуруджы кирди",
+    "hint": "Къуруджыларнынъ эсаплары Leadrat тарафындан яратыла . Эгер сизде ёкъ олса, администраторынъыздан соранъ."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Сизинъ къарарынъызны беклейим .",
+    "ACCEPTED": "Къабул этильди .",
+    "REJECTED": "Ред этильди"
+  },
+  "list": {
+    "title": "Ёлланмалар",
+    "allProjects": "Бутюн лейхалар .",
+    "allStatuses": "Бутюн статуслар .",
+    "count_one": "{{count}} ёлланма",
+    "count_other": "{{count}} ёлланмалар",
+    "columns": {
+      "referral": "Ёлланма",
+      "customer": "Муштери",
+      "project": "Лейха",
+      "sourcePartner": "Менба Ортак",
+      "status": "Вазиет",
+      "booking": "Бронирование",
+      "registered": "Къайд этильген"
+    },
+    "booked": "Бронланды",
+    "empty": "Аля даа ёлланмалар ёкъ."
+  },
+  "detail": {
+    "customer": "Муштери",
+    "sourcePartner": "Менба Ортак",
+    "attributionNote": "(атрибуция - денъиштирильмез)",
+    "leadStatus": "Къуршун статусы",
+    "protectedUntil": "2014 сенесине къадар къорчалангъан.",
+    "referral": "Ёлланма",
+    "reason": "Себеп: {{reason}}",
+    "booking": "Бронирование",
+    "bookedOwner": "Бронировать этильди - сиз оператив саибисинъиз .",
+    "notBooked": "Бронланмады .",
+    "sharedAfterBooking": "Бронированиеден сонъ пайлашылды",
+    "accept": "Рефералны къабул этинъиз",
+    "confirmBooking": "Бронированиени тасдыкъла",
+    "reject": "Ёлланманы ред этмек",
+    "rejectReasonLabel": "Ред этмекнинъ себеби (ортакъкъа косьтериле) * .",
+    "rejectConfirm": "Ред этмек",
+    "confirmBookingPrompt": "Бронированиени тасдыкъламакъ керекми? Оператив саиплик сизге кече ве шерик комиссиягъа ляйыкъ ола.",
+    "notice": {
+      "booked": "Бронирование тасдыкъланды.",
+      "accepted": "Реферат къабул этильди.",
+      "rejected": "Реферат ред этильди."
+    },
+    "backToReferrals": "Рефералларгъа къайтмакъ ."
+  },
+  "history": {
+    "title": "Тарих",
+    "actor": {
+      "system": "Тертибат",
+      "partner": "Канал шерикчиси .",
+      "admin": "Leadrat админ ."
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Ортак язылувы кельди .",
+      "DUPLICATE_CHECK_COMPLETED": "Дубликат тешкерюв битти - фааль дубликат тапылмады",
+      "REGISTRATION_ACCEPTED": "Къайд къабул этиле .",
+      "PROTECTION_GRANTED_one": "{{count}} -куньдюзки къорчалав берильди",
+      "PROTECTION_GRANTED_other": "{{count}} -куньдюзки къорчалав берильди",
+      "STAGE_UPDATED": "Статус {{stage}} шекилинде янъыланды",
+      "LEAD_DETAILS_UPDATED_one": "Янъылангъан {{count}} мейданчыгъы",
+      "LEAD_DETAILS_UPDATED_other": "Янъылангъан {{count}} мейданлары",
+      "LEAD_ASSIGNED": "{{name}} -ге тайинленди",
+      "LEAD_UNASSIGNED": "Тайинленмеген",
+      "REFERRAL_ACCEPTED": "Къуруджы ёлланманы къабул этти .",
+      "REFERRAL_REJECTED": "Къуруджы ёлланманы ред этти. Себеп: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} тарафындан текрарлангъан язылув тырышмасы ред этильди",
+      "BOOKING_COMPLETED": "Бронирование битти .",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Оператив саиплик Къуруджыгъа берильди .",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Ортак атрибуциясы сакъланды",
+      "COMMISSION_ELIGIBILITY_CREATED": "Комиссиянынъ акъкъы яратылды .",
+      "HANDOVER_COMPLETED": "Тапшырув битти",
+      "ADMIN_PROTECTION_RELEASED": "Админ дубликаты къорчалавыны эрте чыкъарды. Себеп: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Админ язылувны {{from}} дан {{to}} ерине янъыдан тайинледи. Себеп: {{reason}}"
+    }
+  }
+}

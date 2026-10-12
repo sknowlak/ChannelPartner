@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "ቅጥዕታት",
+    "noPermission": "ቅጥዕታት ከተመሓድር ፍቓድ የብልካን።"
+  },
+  "categories": {
+    "lead": "ምራሕ",
+    "user": "ተጠቃሚ",
+    "integrations": "ውህደታት"
+  },
+  "leadTabs": {
+    "fields": "ግራውቲ",
+    "statuses": "ደረጃታትን ንኡሳን ኩነታትን",
+    "notifications": "መፍለጢታትን መደብ ምውጻእን"
+  },
+  "fields": {
+    "leadIntro": "ነቲ ናይ መሪሕነት ምሓዝ ቅጥዒ ኣወሃህቦ: ዓውድታት ኣንቅሕ/ኣሰናኽል፣ ከም ዘድልዩ ምልክት ግበር፣ ወይ ናይ ገዛእ ርእስኻ ብሕታዊ ዓውድታት ምውሳኽ።",
+    "userIntro": "ቅጥዒ ኣባል ጋንታ ምውሳኽ/ምእራም ኣወሃህቦ: ዓውድታት ኣንቅሕ/ኣሰናኽል፣ ከም ዘድልዩ ምልክት ግበር፣ ወይ ናይ ገዛእ ርእስኻ ብሕታዊ ዓውድታት ምውሳኽ።",
+    "addCustomField": "+ ብሕታዊ ዓውዲ ምውሳኽ",
+    "fieldLabel": "ናይ ሜዳ ስያመ",
+    "group": "ጉጅለ",
+    "groupPlaceholderLead": "ንኣብነት Inquiry Info",
+    "groupPlaceholderUser": "ንኣብነት ተወሳኺ ዝርዝር",
+    "dataType": "ዓይነት ዳታ",
+    "options": "ኣማራጺታት (ብኮማ ዝተፈልየ)",
+    "requiredLead": "ኣድላዪ - ኣብ ጋንታኻ ዘለዉ መሻርኽቲ መሪሕነት ንምምዝጋብ ነዚ ክመልእዎ ኣለዎም።",
+    "requiredUser": "ዘድሊ - ኣባል ጋንታ ኣብ ዝውስኸሉ እዋን ክምላእ ኣለዎ።",
+    "creating": "ምፍጣር...",
+    "createField": "ሜዳ ምፍጣር",
+    "columns": {
+      "field": "ሜዳ",
+      "group": "ጉጅለ",
+      "type": "ዓይነት",
+      "required": "ዘድሊ",
+      "enabled": "ተኸፊቱ",
+      "kind": "ርህሩህ"
+    },
+    "kind": {
+      "custom": "ቅቡል ልምዲ",
+      "core": "ኮር (ተዓጽዩ) .",
+      "standard": "መለክዒ"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "ጽሑፍ",
+    "TEXTAREA": "ነዊሕ ጽሑፍ",
+    "NUMBER": "ቑጽሪ",
+    "CURRENCY": "ገንዘብ",
+    "DATE": "ዕለት",
+    "SELECT": "ምውራድ",
+    "LIST": "ዝርዝር"
+  },
+  "picker": {
+    "searchPlaceholder": "ናይ መሪሕ ዓውድታት ድለዩ...",
+    "summary": "{{shown}} ተራእዩ · {{mandatory}} ግዴታ እዩ።",
+    "mandatory": "ወሳኒ",
+    "noMatch": "ዝኾነ ሜዳታት ዝሰማማዕ የለን።"
+  },
+  "statuses": {
+    "intro": "ናትካ ናይ መሪሕ ኩነታትን ንኡሳን ኩነታትን - ሓደ ሰብ ንሓደ መሪሕነት ናብኡ ክሕድሶ ከሎ ነፍሲ ወከፍ ዝሓቶ (ዕለት & ሰዓት፡ ናይ መሪሕ ዓውድታት)።",
+    "add": "+ Status ምውሳኽ",
+    "columns": {
+      "order": "ስርዓት",
+      "status": "ኩነታት",
+      "subStatuses": "ንኡሳን ደረጃታት",
+      "asksFor": "ይሓትት።",
+      "active": "ንቑሕ"
+    },
+    "moveUp": "ንላዕሊ ስጉም",
+    "moveDown": "ንታሕቲ ስጉም",
+    "defaultBadge": "ንሓደስቲ መሪሕነት ነባሪ",
+    "bookingBadge": "ኩነታት ምዝገባ",
+    "asksForLabel": "{{label}} ዝብል ይሓትት።",
+    "asksForDateTime": "ዕለት & ሰዓት ይሓትት።",
+    "none": "ዋላ ሓደ",
+    "dateTime": "ዕለት & ሰዓት",
+    "scheduledOn": "ኣብ {{names}}",
+    "fieldsSummary_one": "{{count}} field ( {{mandatory}} ግዴታ)",
+    "fieldsSummary_other": "{{count}} fields ( {{mandatory}} ግዴታ)",
+    "deleteConfirm": "ኩነታት ምድምሳስ \" {{name}} \"? እዚ ክምለስ ኣይክእልን እዩ።",
+    "editTitle": "ኩነታት ኣርትዖት - {{name}}",
+    "newTitle": "ሓድሽ ኩነታት",
+    "name": "ስም ኩነታት",
+    "colour": "ሕብሪ",
+    "active": "ንቑሕ",
+    "isDefault": "ነባሪ ኩነታት ንሓደስቲ መሪሕነት",
+    "isBooking": "ኩነታት ምዝገባ (ብምሉእ ምዝገባ ዝተቐመጠ)",
+    "whenMoved": "ሓደ መሪሕነት ናብዚ ደረጃ ክግዕዝ ከሎ",
+    "askSchedule": "ዕለትን ሰዓትን (መደብ ዝገብር) ሕተት",
+    "scheduleLabelPlaceholder": "ስያመ፣ ንኣብነት Visit at",
+    "fieldsToShow": "ኣብቲ ናይ ምዕባለ ቅጥዒ ንምርኣይ ዓውድታት መሪሕ",
+    "subStatusesTitle": "ንኡሳን ደረጃታት",
+    "subStatusesHint": "ነፍሲ ወከፍ ንኡስ ኩነታት ናይ ገዛእ ርእሱ ዕለትን ሰዓትን ክሓትትን ናይ ገዛእ ርእሱ ዓውድታት ክውስኽን ይኽእል - ኣብ ልዕሊ እቲ ኣብ ላዕሊ ዘሎ ዓውድታት ናይቲ ኩነታት ተገሊጹ ኣሎ።",
+    "subStatusName": "ንኡስ ኩነታት ስም",
+    "subFields": "ዓውድታት ( {{count}} )",
+    "subScheduleLabelPlaceholder": "ዕለትን ሰዓትን ምልክት፣ ንኣብነት Call back at",
+    "addSubStatus": "+ ንኡስ ኩነታት ምውሳኽ",
+    "saveStatus": "ኩነታት ምዕቃብ",
+    "createStatus": "Status ምፍጣር"
+  },
+  "notifications": {
+    "intro": "ሓደ መሪሕነት ኣብ ሓደ ኩነታት ምስ በጽሐ ንዝግባእ ሰባት ኣፍልጥ - ብቕጽበት፣ ወይ ቅድሚ/ድሕሪ እቲ ኣብኡ ዝተመደበሉ ዕለትን ሰዓትን ዝተወሰነ ሰዓት።",
+    "add": "+ መተሓሳሰቢ ምውሳኽ",
+    "columns": {
+      "notification": "መፍለጢ",
+      "whenStatusIs": "ኩነታት ምስ ዝኸውን",
+      "sends": "ይልእኽ",
+      "to": "ናብ",
+      "via": "ብመልክዕ",
+      "enabled": "ተኸፊቱ"
+    },
+    "anyStatus": "ዝኾነ ይኹን ደረጃ",
+    "anySubStatus": "ዝኾነ ንኡስ ኩነታት",
+    "inactiveOption": "{{name}} (ዘይንጡፍ)",
+    "emptyRules": "ገና ዝኾነ መፍለጢ የለን - ሓደ መሪሕነት ኣብ ሓደ ኩነታት ምስ በጽሐ ንጋንታኻ ንምጥንቃቕ ሓደ ወስኸሉ።",
+    "jobs": {
+      "title": "መደብ ዝተገብረሉን ዝተላእከን።",
+      "firesAt": "ሓዊ ኣብ...",
+      "notification": "መፍለጢ",
+      "lead": "ምራሕ",
+      "status": "ኩነታት",
+      "details": "ዝርዝራት",
+      "empty": "ገና መደብ ዝተገብረሉን ዝተላእከን የለን።",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "ኣብ ከይዲ",
+      "PROCESSING": "መስርሕ ምግባር",
+      "SENT": "ተላኢኹ",
+      "FAILED": "ወዲቑ",
+      "SKIPPED": "ዘሊሉ።",
+      "CANCELLED": "ተሰሪዙ"
+    },
+    "deliveryStatus": {
+      "SENT": "ተላኢኹ",
+      "FAILED": "ወዲቑ",
+      "SKIPPED": "ዘሊሉ።"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ኣብ ውሽጢ ኣፕ",
+      "EMAIL": "ኢመይል",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "ዝተመደበ ተጠቃሚ",
+      "owner": "በዓል ዋና",
+      "updatedBy": "ብ...",
+      "role": "ተራ {{name}}"
+    },
+    "channels": {
+      "inApp": "ኣብ ውሽጢ ኣፕ",
+      "email": "ኢመይል",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "መፍለጢ ምድምሳስ \" {{name}} \"? ካብኡ ዝመጽእ መዘኻኸሪታት ክሳብ ሕጂ ይስረዝ።",
+    "testPrompt": "ናይዚ መተሓሳሰቢ ፈተና ናብ ነብስኻ (in-app) ኣየናይ lead ID ተጠቂምካ ስደድ ?",
+    "testSent": "ናብ ደወልኩም ተላኢኹ {{title}} {{message}}",
+    "headersInvalid": "ርእስታት Webhook ቅኑዓት JSON ክኾኑ ኣለዎም , ንኣብነት {\"ፍቓድ\": \"ተሰካሚ xyz\"}",
+    "editTitle": "መተሓሳሰቢ ኣርትዖት።",
+    "newTitle": "ሓድሽ መፍለጢ",
+    "name": "ሽም",
+    "namePlaceholder": "ንኣብነት ናይ ሳይት ምብጻሕ መዘኻኸሪ",
+    "whenStatus": "ናይ ሓደ መሪሕነት ኩነታት ምስ ዝኸውን",
+    "subStatus": "ንኡስ ኩነታት",
+    "send": "ስደድ (መደብ ዝገብር)",
+    "custom": "ቅቡል ልምዲ...",
+    "modeBefore": "ቅድሚ ዝተመደበ ሰዓት",
+    "modeAfter": "ድሕሪ ዝተመደበ ሰዓት",
+    "noScheduleWarning": "እዚ ኩነታት ዕለት & ሰዓት ኣይሓትትን እዩ፣ ስለዚ \"ቅድሚ/ኣብ/ድሕሪ ዝተመደበ ሰዓት\" ዝብል መፍለጢ ፈጺሙ ኣይምተኮሰን።",
+    "noScheduleFix": "ኣብ ትሕቲ Statuses & Sub-Statuses ንዕኡ <strong>ዝኸውን ዕለትን ሰዓትን ሕተት</strong> ፣ ወይ ድማ ብቕልጡፍ ስደድ።",
+    "sendTo": "ናብ (ዝኾነ ውህደት) ስደዱ",
+    "recipientAssigned": "ዝተመደበ ተጠቃሚ (መሪሕ ወናኒ)",
+    "recipientOwner": "ወናኒ ኣካውንት / ኣድሚን",
+    "recipientUpdatedBy": "ነቲ ስቴታስ ዘመሓየሸ ሰብ",
+    "everyoneWithRole": "ኩሉ ሰብ ተራ ዘለዎ",
+    "specificUsers": "ፍሉያት ተጠቀምቲ (ንጡፋት)",
+    "inactiveNever": "ዘይንጡፋት ተጠቀምቲ ዋላ እንተተመርጹ መፍለጢታት ፈጺሞም ኣይረኽቡን።",
+    "deliverVia": "ብመንገዲ...",
+    "channelInApp": "ኣብ ውሽጢ ኣፕ (ደወል)",
+    "channelEmail": "ኢመይል",
+    "channelWebhook": "Webhook ( WhatsApp / SMS ኣቕራቢ)",
+    "emailHint": "ኢመይል ናብ ናይ ነፍሲ ወከፍ ተቐባሊ ኢመይል ኣድራሻ ይኸይድ እሞ ኣብቲ ሰርቨር (backend/.env) ዝተዳለወ SMTP የድልዮ፤ ክሳብ ሽዑ ዝለኣኽ ኢመይል ከም ዝተዘለለ ይምዝገብ።",
+    "webhookUrl": "Webhook URL ( POST , JSON ) .",
+    "headers": "ርእሲ ( JSON ) .",
+    "content": "ትሕዝቶ መፍለጢ",
+    "title": "ርእሲ",
+    "message": "መልእኽቲ",
+    "insertIntoTitle": "ኣብ ኣርእስቲ ኣእትዉ",
+    "insertIntoMessage": "ኣብ መልእኽቲ ምእታው",
+    "anyLeadField": "ዝኾነ ናይ መሪሕ ዓውዲ እውን ይሰርሕ እዩ፣ ንኣብነት <code1>{{example1}}</code1> ወይ <code2>{{example2}}</code2> ።",
+    "preview": "ቅድመ ምርኢት (ናሙና መሪሕነት)",
+    "enabled": "ተኸፊቱ",
+    "saveRule": "መፍለጢ ምዕቃብ",
+    "createRule": "መተሓሳሰቢ ምፍጣር",
+    "variables": {
+      "customerName": "መሪሕ ስም",
+      "customerMobile": "ሞባይል መሪሕ",
+      "customerEmail": "ኢመይል መሪሕካ",
+      "registrationId": "መሪሕ ID",
+      "status": "ኩነታት",
+      "subStatus": "ንኡስ ኩነታት",
+      "scheduleAt": "መደብ ዝተገብረሉ ዕለት & ሰዓት",
+      "assignedTo": "ዝተመደበ ተጠቃሚ",
+      "updatedBy": "ብ...",
+      "recipient": "ስም ተቐባሊ",
+      "project": "ፕሮጀክት",
+      "notes": "ናይ መወዳእታ መዘኻኸሪ",
+      "partner": "ስም መሻርኽቲ"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "ብኡንብኡ እቲ ኩነታት ምስ ተቐመጠ",
+      "AT": "ኣብቲ ዝተመደበ ሰዓት",
+      "A1D": "ድሕሪ ዝተመደበ ሰዓት 1 መዓልቲ (ምክትታል ምፍታሽ)"
+    },
+    "immediately": "ብቀጥታ",
+    "atScheduled": "ኣብ ዝተመደበሉ ሰዓት",
+    "before": {
+      "MINUTES_one": "{{count}} ደቒቕ ቅድሚ ዝተመደበ ሰዓት",
+      "MINUTES_other": "{{count}} ደቓይቕ ቅድሚ ዝተመደበ ሰዓት",
+      "HOURS_one": "{{count}} ሰዓት ቅድሚ ዝተመደበ ሰዓት",
+      "HOURS_other": "{{count}} ሰዓታት ቅድሚ ዝተመደበ ሰዓት",
+      "DAYS_one": "{{count}} መዓልቲ ቅድሚ ዝተመደበ ሰዓት",
+      "DAYS_other": "{{count}} መዓልታት ቅድሚ ዝተመደበ ሰዓት",
+      "WEEKS_one": "{{count}} ሰሙን ቅድሚ ዝተመደበ ሰዓት",
+      "WEEKS_other": "{{count}} ቅድሚ ዝተመደበ ሰዓት ሰሙናት",
+      "MONTHS_one": "{{count}} ወርሒ ቅድሚ ዝተመደበ ሰዓት",
+      "MONTHS_other": "{{count}} ኣዋርሕ ቅድሚ ዝተመደበ ሰዓት",
+      "YEARS_one": "{{count}} ዓመት ቅድሚ ዝተመደበ ሰዓት",
+      "YEARS_other": "{{count}} ዓመታት ቅድሚ ዝተመደበ ሰዓት"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} ድሕሪ ዝተመደበ ሰዓት ደቒቕ",
+      "MINUTES_other": "{{count}} ድሕሪ ዝተመደበ ሰዓት ደቓይቕ",
+      "HOURS_one": "{{count}} ድሕሪ ዝተመደበ ሰዓት ሰዓት",
+      "HOURS_other": "{{count}} ሰዓታት ድሕሪ ዝተመደበ ሰዓት",
+      "DAYS_one": "{{count}} መዓልቲ ድሕሪ ዝተመደበ ሰዓት",
+      "DAYS_other": "{{count}} መዓልታት ድሕሪ ዝተመደበ ሰዓት",
+      "WEEKS_one": "{{count}} ሰሙን ድሕሪ ዝተመደበ ሰዓት",
+      "WEEKS_other": "{{count}} ድሕሪ ዝተመደበ ሰዓት ሰሙናት",
+      "MONTHS_one": "{{count}} ወርሒ ድሕሪ ዝተመደበ ሰዓት",
+      "MONTHS_other": "{{count}} ኣዋርሕ ድሕሪ ዝተመደበ ሰዓት",
+      "YEARS_one": "{{count}} ዓመት ድሕሪ ዝተመደበ ሰዓት",
+      "YEARS_other": "{{count}} ዓመታት ድሕሪ ዝተመደበ ግዜ"
+    },
+    "units": {
+      "MINUTES_one": "ደቒቓ",
+      "MINUTES_other": "ደቒቓታት",
+      "HOURS_one": "ሰዓት",
+      "HOURS_other": "ሰዓታት",
+      "DAYS_one": "መዓልቲ",
+      "DAYS_other": "መዓልታት",
+      "WEEKS_one": "ሰሙን",
+      "WEEKS_other": "ሰሙናት",
+      "MONTHS_one": "ወርሒ",
+      "MONTHS_other": "ኣዋርሕ",
+      "YEARS_one": "ዓመት",
+      "YEARS_other": "ዓመታት"
+    }
+  }
+}

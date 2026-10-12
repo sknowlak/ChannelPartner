@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Omuryango gw'okwombeka",
+    "referrals": "Okwoherezibwa",
+    "builderLogin": "Okwombeka okutaaha",
+    "partnerLogin": "Omukutu gw'omunywani"
+  },
+  "login": {
+    "title": "Omwombeki akahandiika",
+    "hint": "Akawunti z'okwombeka nizikorwa Leadrat . Buuza omutegyeki waawe waaba otaine."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Okutegyereza okusharamu kwawe",
+    "ACCEPTED": "Kyikiriziibwe",
+    "REJECTED": "Okwangwa"
+  },
+  "list": {
+    "title": "Okwoherezibwa",
+    "allProjects": "Purojekiti zoona",
+    "allStatuses": "Embeera zoona",
+    "count_one": "{{count}} okutwarwa",
+    "count_other": "{{count}} okutwarwa",
+    "columns": {
+      "referral": "Okwohereza",
+      "customer": "Omuhagizi",
+      "project": "Purokekiti",
+      "sourcePartner": "Oburugo bw'omunywani",
+      "status": "Okoyemerire",
+      "booking": "Okubiika",
+      "registered": "Okwehandikisa"
+    },
+    "booked": "Kihandiikirwe",
+    "empty": "Tihariho okutwarwa omu irwariro hati."
+  },
+  "detail": {
+    "customer": "Omuhagizi",
+    "sourcePartner": "Oburugo bw'omunywani",
+    "attributionNote": "(okuha - tikurikubaasa kuhindurwa)",
+    "leadStatus": "Embeera y'okwebembera",
+    "protectedUntil": "Okurindwa Kuhisya 2019.",
+    "referral": "Okwohereza",
+    "reason": "Enshonga: {{reason}}",
+    "booking": "Okubiika",
+    "bookedOwner": "Booked - iwe ori mukama w'emirimo",
+    "notBooked": "Tikihandiikirwe",
+    "sharedAfterBooking": "Okugabwa bwanyima y'okuhandiika",
+    "accept": "Yikiriza okutwarwa",
+    "confirmBooking": "Hamya okushaba",
+    "reject": "Oyanga okutwarwa",
+    "rejectReasonLabel": "Enshonga y‘okwanga (kworekwa omukundwa) *",
+    "rejectConfirm": "Okwanga",
+    "confirmBookingPrompt": "Hamya okushaba? Obugabe bw‘okukora nibuza ahariiwe kandi omukundwa naaba aine obugabe bw‘okutunga akakiiko.",
+    "notice": {
+      "booked": "Okushaba kwahamibwa.",
+      "accepted": "Okutwarwa omu irwariro kwaikirizibwa.",
+      "rejected": "Okutwarwa omu irwariro kwayangibwa."
+    },
+    "backToReferrals": "Garuka aha kuhabura"
+  },
+  "history": {
+    "title": "Ebyafayo",
+    "actor": {
+      "system": "Enkora",
+      "partner": "Omunywani w'omukutu",
+      "admin": "Leadrat w'omutegyeki"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Okwehandikisa kw'abanywani kwatunga",
+      "DUPLICATE_CHECK_COMPLETED": "Okukyebera okugarukamu kwahwa - tihaine okugarukamu okuriho okushangirwe",
+      "REGISTRATION_ACCEPTED": "Okwehandikisa kwikiriziibwe",
+      "PROTECTION_GRANTED_one": "{{count}} -obukuumi bw'ekiro obuheirwe",
+      "PROTECTION_GRANTED_other": "{{count}} -obukuumi bw'ekiro obuheirwe",
+      "STAGE_UPDATED": "Embeera ehindwirwemu kuhika ahari {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Ekigarukiremu {{count}} omumwanya",
+      "LEAD_DETAILS_UPDATED_other": "Ebigarukiremu {{count}} emisiri",
+      "LEAD_ASSIGNED": "Kihairwe {{name}}",
+      "LEAD_UNASSIGNED": "Tihariho",
+      "REFERRAL_ACCEPTED": "Omwombeki yaikiriize okutwarwa",
+      "REFERRAL_REJECTED": "Builder akanga okutwarwa omu irwariro. Enshonga: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Okugyezaho kwehandikisa kwa {{partner}} kwangwa",
+      "BOOKING_COMPLETED": "Okugura kwahwa",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Obugabe bw'okukora bwaheebwa omwombeki",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Okushaba kw'omunywani kwarindwa",
+      "COMMISSION_ELIGIBILITY_CREATED": "Okwikirizibwa kwa akakiiko kukakorwa",
+      "HANDOVER_COMPLETED": "Okuhayo kwahwa",
+      "ADMIN_PROTECTION_RELEASED": "Admin akashohoza oburinzi bwa kabiri kare. Enshonga: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Omutegyeki akagaruka yaaha okwehandikisa kuruga ahari {{from}} kuza ahari {{to}} . Enshonga: {{reason}}"
+    }
+  }
+}

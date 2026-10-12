@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Bouwer Portal",
+    "referrals": "Ferwizings",
+    "builderLogin": "Bouwer Login",
+    "partnerLogin": "Channel Partner Login"
+  },
+  "login": {
+    "title": "Bouwer oanmelde",
+    "hint": "Bouwerakkounts wurde makke troch Leadrat . Freegje jo behearder as jo gjin ien hawwe."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Wachtsje op jo beslút",
+    "ACCEPTED": "Akseptearre",
+    "REJECTED": "Ofwiisd"
+  },
+  "list": {
+    "title": "Ferwizings",
+    "allProjects": "Alle projekten",
+    "allStatuses": "Alle statusen",
+    "count_one": "{{count}} ferwizing",
+    "count_other": "{{count}} ferwizings",
+    "columns": {
+      "referral": "Ferwizing",
+      "customer": "Klant",
+      "project": "Projekt",
+      "sourcePartner": "Boarne Partner",
+      "status": "Status",
+      "booking": "Booking",
+      "registered": "Registrearre"
+    },
+    "booked": "Boeke",
+    "empty": "Noch gjin ferwizings."
+  },
+  "detail": {
+    "customer": "Klant",
+    "sourcePartner": "Boarne Partner",
+    "attributionNote": "(atskriuwing - kin net feroare wurde)",
+    "leadStatus": "Lead Status",
+    "protectedUntil": "Beskerme oant",
+    "referral": "Ferwizing",
+    "reason": "Reden: {{reason}}",
+    "booking": "Booking",
+    "bookedOwner": "Boekt - do bist de operasjonele eigner",
+    "notBooked": "Net boekt",
+    "sharedAfterBooking": "Dielde neidat boeking",
+    "accept": "Akseptearje ferwizing",
+    "confirmBooking": "Befêstigje Booking",
+    "reject": "Reject Ferwizing",
+    "rejectReasonLabel": "Reden foar ôfwizen (oan de partner toand) *",
+    "rejectConfirm": "Reject",
+    "confirmBookingPrompt": "Befêstigje de boeking? Operasjoneel eigendom ferhuzet nei jo en de partner komt yn oanmerking foar kommisje.",
+    "notice": {
+      "booked": "Booking befêstige.",
+      "accepted": "Ferwizing akseptearre.",
+      "rejected": "Ferwizing ôfwiisd."
+    },
+    "backToReferrals": "Werom nei Ferwizings"
+  },
+  "history": {
+    "title": "Skiednis",
+    "actor": {
+      "system": "Systeem",
+      "partner": "Kanaalpartner",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Partnerregistraasje ûntfongen",
+      "DUPLICATE_CHECK_COMPLETED": "Duplikaatkontrôle foltôge - gjin aktyf duplikaat fûn",
+      "REGISTRATION_ACCEPTED": "Registraasje akseptearre",
+      "PROTECTION_GRANTED_one": "{{count}} -dagen beskerming ferliend",
+      "PROTECTION_GRANTED_other": "{{count}} -dagen beskerming ferliend",
+      "STAGE_UPDATED": "Status bywurke nei {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Bywurke {{count}} fjild",
+      "LEAD_DETAILS_UPDATED_other": "Bywurke {{count}} fjilden",
+      "LEAD_ASSIGNED": "Tawiisd oan {{name}}",
+      "LEAD_UNASSIGNED": "Net tawiisd",
+      "REFERRAL_ACCEPTED": "Bouwer akseptearre de ferwizing",
+      "REFERRAL_REJECTED": "Bouwer hat de ferwizing ôfwiisd. Reden: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Dûbele registraasjepoging troch {{partner}} ôfwiisd",
+      "BOOKING_COMPLETED": "Reservearring klear",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operasjoneel eigendom oerdroegen oan Bouwer",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partner taskriuwing bewarre bleaun",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kommisje eligibility makke",
+      "HANDOVER_COMPLETED": "Oerdracht klear",
+      "ADMIN_PROTECTION_RELEASED": "Admin hat dûbele beskerming betiid frijlitten. Reden: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Behearder hat registraasje fan {{from}} opnij tawiisd oan {{to}} . Reden: {{reason}}"
+    }
+  }
+}

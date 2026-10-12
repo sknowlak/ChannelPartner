@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Īstatejumi",
+    "noPermission": "Tev nav atļuovis puorvaļdeit īstatejumus."
+  },
+  "categories": {
+    "lead": "Vadeit",
+    "user": "Lītuotuojs",
+    "integrations": "Integracejis"
+  },
+  "leadTabs": {
+    "fields": "Lauki",
+    "statuses": "Statusi i apakšstatusi",
+    "notifications": "Paziņuojumi i plānuotuoji"
+  },
+  "fields": {
+    "leadIntro": "Konfigurēt līdu uztveršonys veidlapu: īspējuot/atspējuot laukus, atzeimuot tūs kai vajadzeigus voi pīvīnuot sovus pīlāguotūs laukus.",
+    "userIntro": "Konfigurēt veidlapu Pīvīnuot/Rediģēt komandys bīdru: īspējuot/atspējuot laukus, atzeimuot tūs kai vajadzeigus voi pīvīnuot sovus pīlāguotūs laukus.",
+    "addCustomField": "+ Pīvīnuot pīlāguotu lauku",
+    "fieldLabel": "Lauka uzleimis",
+    "group": "Grupa",
+    "groupPlaceholderLead": "pīm., izvaicuojuma info",
+    "groupPlaceholderUser": "pīm., Papyldu detaļas .",
+    "dataType": "Datu tips",
+    "options": "Varianti (atdaleiti ar komatim)",
+    "requiredLead": "100 doc#1159 Vajadzeigs - partnerim jūs komandā ir juoaizpylda tys , lai registrātu līdu .",
+    "requiredUser": "100 doc#1159 Vajadzeigs - juoaizpylda , pīvīnojūt komandys bīdru .",
+    "creating": "Radeišona...",
+    "createField": "Izveiduot lauku",
+    "columns": {
+      "field": "Lauks",
+      "group": "Grupa",
+      "type": "Tips",
+      "required": "Vajadzeigs",
+      "enabled": "Īspējuots",
+      "kind": "Jauks"
+    },
+    "kind": {
+      "custom": "Īrodums",
+      "core": "Kūduls (slāgts)",
+      "standard": "Standarta"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Teksts",
+    "TEXTAREA": "Gars teksts .",
+    "NUMBER": "Cypars",
+    "CURRENCY": "Valuta",
+    "DATE": "Datums",
+    "SELECT": "Izlaižamajā lūgā",
+    "LIST": "Saroksts"
+  },
+  "picker": {
+    "searchPlaceholder": "Meklēt svyna laukus...",
+    "summary": "{{shown}} paruodeits · {{mandatory}} obligats",
+    "mandatory": "Obligats",
+    "noMatch": "Nivīns lauks nasakreit."
+  },
+  "statuses": {
+    "intro": "Jūs līdu statusi i apakšstatusi - kū kotrs prosa (datums & laiks, līdu laukumi), kod kaids atjaunoj līdu iz tū.",
+    "add": "+ Pīvīnuot statusu",
+    "columns": {
+      "order": "Pasyutēt",
+      "status": "Statuss",
+      "subStatuses": "Apakšstatusi",
+      "asksFor": "Prosa Par .",
+      "active": "Aktivs"
+    },
+    "moveUp": "Pīsaceļt iz augšu .",
+    "moveDown": "Pīkustynuot iz leju .",
+    "defaultBadge": "Nuklusātais jaunim īdūmim .",
+    "bookingBadge": "Rezerviešonys statuss",
+    "asksForLabel": "Vaicoj {{label}}",
+    "asksForDateTime": "Vaicoj datumu i laiku .",
+    "none": "Nivīns",
+    "dateTime": "Datums i laiks",
+    "scheduledOn": "par {{names}}",
+    "fieldsSummary_one": "{{count}} lauks ( {{mandatory}} obligats)",
+    "fieldsSummary_other": "{{count}} laukumi ( {{mandatory}} obligats)",
+    "deleteConfirm": "Izdzēst statusu \" {{name}} \"? Tū navar atgrīzt.",
+    "editTitle": "Rediģēt statusu - {{name}}",
+    "newTitle": "Jaunais statuss .",
+    "name": "Statusa nūsaukums",
+    "colour": "Kruosa",
+    "active": "Aktivs",
+    "isDefault": "Jaunu klientu nūklusātais statuss .",
+    "isBooking": "Rezerviešonys statuss (nūteikts ar Piļneigu rezerviešonu)",
+    "whenMoved": "100 doc#1159 Kod līds teik puorvītuots iz itū statusu .",
+    "askSchedule": "Vaicoj datumu i laiku (plānuotuojs)",
+    "scheduleLabelPlaceholder": "Uzleimis, pīm., Apmeklej pi",
+    "fieldsToShow": "100 doc#1281 Svyna laukumi , kū paruodeit atjaunuošonys veidlapā .",
+    "subStatusesTitle": "Apakšstatusi",
+    "subStatusesHint": "Kotrs apakšstatuss var praseit sovu datumu & laiku i pīvīnuot sovus laukus - paruodeits viersā statusa laukim augšuok.",
+    "subStatusName": "Apakšstatusa nūsaukums",
+    "subFields": "Lauki ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Datuma & laika īzeime, pīm., Zvani atgrīzt p.",
+    "addSubStatus": "+ Pīvīnuot apakšstatusu",
+    "saveStatus": "Saglobuot statusu",
+    "createStatus": "Izveiduot statusu"
+  },
+  "notifications": {
+    "intro": "Paziņuot eistajim cylvākim, kod līds sasnādz statusu - izreiz, voi nūteiktā laikā pyrma/piec iz juo paradzātuo datuma & laika.",
+    "add": "+ Pīvīnuot paziņuojumu",
+    "columns": {
+      "notification": "Paziņuojums",
+      "whenStatusIs": "Kod statuss ir .",
+      "sends": "Syuta .",
+      "to": "Iz",
+      "via": "Caur",
+      "enabled": "Īspējuots"
+    },
+    "anyStatus": "Jebkurš statuss .",
+    "anySubStatus": "Jebkurš apakšstatuss .",
+    "inactiveOption": "{{name}} (naaktivais)",
+    "emptyRules": "Vēļ nav paziņuojumu - pīvīnoj vīnu, kab breidynuotu sovu komandu, kod līds sasnādz statusu.",
+    "jobs": {
+      "title": "Plānuots i nūsyuteits",
+      "firesAt": "Guņsgrāki Pi .",
+      "notification": "Paziņuojums",
+      "lead": "Vadeit",
+      "status": "Statuss",
+      "details": "Detalis",
+      "empty": "Nikas vēļ nav paradzāts voi syuteits.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Gaidūšs",
+      "PROCESSING": "Apstruode .",
+      "SENT": "Nūsyuteits",
+      "FAILED": "Naizadevīs",
+      "SKIPPED": "Izlaists",
+      "CANCELLED": "Atcalts"
+    },
+    "deliveryStatus": {
+      "SENT": "nūsyuteits",
+      "FAILED": "naizadevīs",
+      "SKIPPED": "izlaists"
+    },
+    "deliveryChannel": {
+      "IN_APP": "lītuotnē",
+      "EMAIL": "e-posts",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Pīškierts lītuotuojs",
+      "owner": "Saiminīks",
+      "updatedBy": "Atjaunuots ar .",
+      "role": "Lūma: {{name}}"
+    },
+    "channels": {
+      "inApp": "Lītuotnē",
+      "email": "E-posts",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Izdzēst paziņōjumu \" {{name}} \"? Gaideitī atguodynuojumi nu tuo teik atcalti.",
+    "testPrompt": "Syutit ituo paziņuojuma testu sev (in-app), izmontojūt kuru lead ID ?",
+    "testSent": "Nūsyuteits iz jūs zvonu: {{title}} {{message}}",
+    "headersInvalid": "Webhook golvonūs ir juobyut dereigom JSON , pīmāram, {\"Autorizaceja\": \"Nesējs xyz\"}",
+    "editTitle": "Rediģēt paziņuojumu",
+    "newTitle": "Jauns paziņuojums",
+    "name": "Vuords",
+    "namePlaceholder": "pīm., Saīta apmekliejuma atguodynuojums .",
+    "whenStatus": "Kod vadeituoja statuss ir .",
+    "subStatus": "Apakšstatuss",
+    "send": "Syuteit (plānuotuojs)",
+    "custom": "Īrodums...",
+    "modeBefore": "pyrms paradzātuo laika .",
+    "modeAfter": "piec paradzātuo laika .",
+    "noScheduleWarning": "Itys statuss naprosa datumu & laiku, partū \"pyrms/pi/piec paradzātuo laika\" paziņuojums nikod naizšautu.",
+    "noScheduleFix": "Īslēdz <strong>Vaicoj datumu & laiku</strong> tam zam Statusi & Apakšstatusi, voi syuti Izreiz.",
+    "sendTo": "Sūtīt iz (jebkuru kombinaceju)",
+    "recipientAssigned": "Pīškierts lītuotuojs (golvonais eipašnīks)",
+    "recipientOwner": "Konta eipašnīks / admins .",
+    "recipientUpdatedBy": "100 doc#1159 Cylvāks , kas atjaunuoja statusu .",
+    "everyoneWithRole": "Kotram ar lūmu .",
+    "specificUsers": "Konkretī lītuotuoji (aktivi)",
+    "inactiveNever": "Naaktivī lītuotuoji nikod nasajam paziņuojumus, pat ja ir atlaseiti.",
+    "deliverVia": "Pīguoduot caur",
+    "channelInApp": "Lītuotnē (zvans)",
+    "channelEmail": "E-posts",
+    "channelWebhook": "Webhook ( WhatsApp / SMS snīdziejs)",
+    "emailHint": "E-posts īt iz kotra sajiemieja e-posta adresu i vajag SMTP īkuortuot serverī (backend/.env); leidz tam e-postu syutejumi teik īraksteiti kai izlaisti.",
+    "webhookUrl": "100 doc#1163 Webhook URL ( POST , JSON ) .",
+    "headers": "Viersroksti ( JSON ) .",
+    "content": "Paziņuojumu saturs",
+    "title": "Nūsaukums",
+    "message": "Ziņa",
+    "insertIntoTitle": "Īlikt nūsaukumā .",
+    "insertIntoMessage": "Īlikt ziņuojumā",
+    "anyLeadField": "Dorbojās ari sevkurs vodūšais lauks, pīmāram <code1>{{example1}}</code1> voi <code2>{{example2}}</code2> .",
+    "preview": "Prīškskots (parauga svyna)",
+    "enabled": "Īspējuots",
+    "saveRule": "Saglobuot paziņuojumu",
+    "createRule": "Izveiduot paziņuojumu",
+    "variables": {
+      "customerName": "Svyna vuords",
+      "customerMobile": "Svyna mobilais",
+      "customerEmail": "Vadeituoja e-posts",
+      "registrationId": "Svyna ID",
+      "status": "Statuss",
+      "subStatus": "Apakšstatuss",
+      "scheduleAt": "Plānuotais datums i laiks",
+      "assignedTo": "Pīškierts lītuotuojs",
+      "updatedBy": "Atjaunuots ar .",
+      "recipient": "Sajiemieja vuords",
+      "project": "Projekts",
+      "notes": "Jaunuokuo pīzeime",
+      "partner": "Partnera vuords"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "100 doc#1159 Izreiz , kod statuss ir īstateits .",
+      "AT": "Paradzātajā laikā .",
+      "A1D": "1 dīna piec paradzātuo laika (turpmuokuo puorbaude)"
+    },
+    "immediately": "Izreiz",
+    "atScheduled": "Paradzātajā laikā .",
+    "before": {
+      "MINUTES_one": "{{count}} minotu pyrms paradzātuo laika",
+      "MINUTES_other": "{{count}} minotys pyrma paradzātuo laika",
+      "HOURS_one": "{{count}} stuņdi pyrms paradzātuo laika",
+      "HOURS_other": "{{count}} stuņdis pyrms paradzātuo laika",
+      "DAYS_one": "{{count}} dīnu pyrms paradzātuo laika",
+      "DAYS_other": "{{count}} dīnys pyrms paradzātuo laika",
+      "WEEKS_one": "{{count}} nedeļu pyrms paradzātuo laika",
+      "WEEKS_other": "{{count}} nedelis pyrms paradzātuo laika",
+      "MONTHS_one": "{{count}} mienesi pyrms paradzātuo laika",
+      "MONTHS_other": "{{count}} mienešus pyrms paradzātuo laika",
+      "YEARS_one": "{{count}} godu pyrms paradzātuo laika .",
+      "YEARS_other": "{{count}} godus pyrms paradzātuo laika ."
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minotu piec paradzātuo laika",
+      "MINUTES_other": "{{count}} minotys piec paradzātuo laika",
+      "HOURS_one": "{{count}} stuņdi piec paradzātuo laika",
+      "HOURS_other": "{{count}} stuņdis piec paradzātuo laika",
+      "DAYS_one": "{{count}} dīnu piec paradzātuo laika",
+      "DAYS_other": "{{count}} dīnys piec paradzātuo laika",
+      "WEEKS_one": "{{count}} nedeļu piec paradzātuo laika",
+      "WEEKS_other": "{{count}} nedelis piec paradzātuo laika",
+      "MONTHS_one": "{{count}} mienesi piec paradzātuo laika",
+      "MONTHS_other": "{{count}} mienešus piec paradzātuo laika",
+      "YEARS_one": "{{count}} godu piec paradzātuo laika .",
+      "YEARS_other": "{{count}} godus piec paradzātuo laika ."
+    },
+    "units": {
+      "MINUTES_one": "minota",
+      "MINUTES_other": "minotys",
+      "HOURS_one": "stuņde",
+      "HOURS_other": "stuņdis",
+      "DAYS_one": "dīna",
+      "DAYS_other": "dīnys",
+      "WEEKS_one": "sluobs",
+      "WEEKS_other": "nedelis",
+      "MONTHS_one": "mieness",
+      "MONTHS_other": "mieneši",
+      "YEARS_one": "gods",
+      "YEARS_other": "godi"
+    }
+  }
+}

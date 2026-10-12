@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Pangaturan",
+    "noPermission": "Sampèyan ta' andi' ijin kaangghuy ngator pangaturan."
+  },
+  "categories": {
+    "lead": "Mimpin",
+    "user": "Pangangghuy",
+    "integrations": "Integrasi"
+  },
+  "leadTabs": {
+    "fields": "Lapangan",
+    "statuses": "Status & Sub-Status",
+    "notifications": "Pemberitahuan & Penjadwalan"
+  },
+  "fields": {
+    "leadIntro": "Konfigurasi formulir penangkapan lead: aktifaghi/non-aktifaghi bidang, tandhai sè èparloaghi, otabâ tamba'aghi bidang khusus dhibi'.",
+    "userIntro": "Konfigurasi formulir Tambah/Edit Anggota Tim: aktifaghi/nonaktifaghi bidang, tandhai sè parlo, otabâ tamba'aghi bidang khusus dhibi'.",
+    "addCustomField": "+ Tambah Bidang Khusus",
+    "fieldLabel": "Label Lapangan",
+    "group": "Kalompok",
+    "groupPlaceholderLead": "contona Info Pertanyaan",
+    "groupPlaceholderUser": "contona Rincian Tambahan",
+    "dataType": "Jenis Data",
+    "options": "Pilihan (èpèsah koma)",
+    "requiredLead": "èparloaghi - mitra è tim kodhu ngisi rèya kaangghuy èdaftaraghi prospek",
+    "requiredUser": "parlo - kodhu èisi bâkto nambah anggota tim",
+    "creating": "aghâbây...",
+    "createField": "Ghâbây Bidang",
+    "columns": {
+      "field": "Kennengan",
+      "group": "Kalompok",
+      "type": "Jenis",
+      "required": "Ebutoagi",
+      "enabled": "èaktifaghi",
+      "kind": "Bhâgus"
+    },
+    "kind": {
+      "custom": "Adat",
+      "core": "Inti (èkunci)",
+      "standard": "Standar"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Becaan",
+    "TEXTAREA": "Teks panjhâghân",
+    "NUMBER": "Nomer",
+    "CURRENCY": "Pèssè",
+    "DATE": "Tanggel",
+    "SELECT": "Dropdown",
+    "LIST": "Catetan"
+  },
+  "picker": {
+    "searchPlaceholder": "Nyarèh bidang pimpinan...",
+    "summary": "{{shown}} shown · {{mandatory}} wajib",
+    "mandatory": "Wejib",
+    "noMatch": "Tadha' lapangan sè cocok."
+  },
+  "statuses": {
+    "intro": "Status bân sub-status lead - apa sè èpènta (tanggal bân bâkto, bidang lead) bâkto bâdâ orèng sè mabâru lead.",
+    "add": "+ Tambah Status",
+    "columns": {
+      "order": "Messen",
+      "status": "Kabede'en",
+      "subStatuses": "Sub-Status",
+      "asksFor": "Nyo'on",
+      "active": "Aktif"
+    },
+    "moveUp": "Ngalle ka attas",
+    "moveDown": "Abâli ka bâbâ",
+    "defaultBadge": "Default ghâbây prospek anyar",
+    "bookingBadge": "Status pemesanan",
+    "asksForLabel": "èsoro {{label}}",
+    "asksForDateTime": "ètanya'aghi tanggal bân bekto",
+    "none": "Tadâ",
+    "dateTime": "Tanggal & bekto",
+    "scheduledOn": "è {{names}}",
+    "fieldsSummary_one": "{{count}} bidang ( {{mandatory}} wajib)",
+    "fieldsSummary_other": "{{count}} bidang ( {{mandatory}} wajib)",
+    "deleteConfirm": "Ngapus status \" {{name}} \"? panèka ta' bisa èbâliaghi.",
+    "editTitle": "Edit Status - {{name}}",
+    "newTitle": "Status Anyar",
+    "name": "nyamana status",
+    "colour": "Barnah",
+    "active": "Aktif",
+    "isDefault": "Status bawaan ghâbây prospek anyar",
+    "isBooking": "Status pemesanan (ètet sareng Pemesanan Lengkap)",
+    "whenMoved": "Bâkto lead èpindahaghi ka status panèka",
+    "askSchedule": "Minta tanggal & bekto (penjadwal)",
+    "scheduleLabelPlaceholder": "Label, contona Dhateng ka",
+    "fieldsToShow": "Bidang-bidang sè bhâkal ètonjhuaghi è formulir pembaruan",
+    "subStatusesTitle": "Sub-Status",
+    "subStatusesHint": "Bâng-sèbâng sub-status bisa èminta tanggal & bâktona dhibi' bân nambahaghi bidangna dhibi' - ètonjhuaghi è attas bidang status è attas.",
+    "subStatusName": "nyamana sub-status",
+    "subFields": "Bidang ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Label tanggal bân bâkto, contona, telpon polè è",
+    "addSubStatus": "+ Tambah Sub-Status",
+    "saveStatus": "Simpen Status",
+    "createStatus": "Ghâbây Status"
+  },
+  "notifications": {
+    "intro": "Kabari orèng sè teppa' mon lead napa' ka status - langsung, otabâ bekto sè ètentukan sabellunna/saellana tanggal & bekto sè èjadwalaghi.",
+    "add": "+ Tambah Pemberitahuan",
+    "columns": {
+      "notification": "Pemberitahuan",
+      "whenStatusIs": "Bila Status",
+      "sends": "Ngirem",
+      "to": "Ka",
+      "via": "Lebhâd",
+      "enabled": "èaktifaghi"
+    },
+    "anyStatus": "Status ponapa bisaos",
+    "anySubStatus": "Sub-status ponapa bisaos",
+    "inactiveOption": "{{name}} (ta' aktif)",
+    "emptyRules": "ghi' ta' bâdâ pemberitahuan - tamba'aghi sèttong kaangghuy maènga' tim panjennengan manabi prospek ampon napa' ka status.",
+    "jobs": {
+      "title": "èjadwalaghi bân èkirim",
+      "firesAt": "Kebakaran è",
+      "notification": "Pemberitahuan",
+      "lead": "Mimpin",
+      "status": "Kabede'en",
+      "details": "Rinci",
+      "empty": "ghi' ta' bâdâ sè èjadwalaghi otabâ èkirim.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Terjeda",
+      "PROCESSING": "ngolah",
+      "SENT": "Ekèrèm",
+      "FAILED": "Tak deddi",
+      "SKIPPED": "èlang",
+      "CANCELLED": "èbatallaghi"
+    },
+    "deliveryStatus": {
+      "SENT": "ekèrèm",
+      "FAILED": "tak deddi",
+      "SKIPPED": "èlang"
+    },
+    "deliveryChannel": {
+      "IN_APP": "è dâlem aplikasi",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Pangghuna sè ètugasaghi",
+      "owner": "Se andi",
+      "updatedBy": "èperbarui sareng",
+      "role": "Peran: {{name}}"
+    },
+    "channels": {
+      "inApp": "è dâlem aplikasi",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Ngapus pemberitahuan \" {{name}} \"? Pèngetan sè ghi' èantos dâri jârèya èbatallaghi.",
+    "testPrompt": "Kirim tes pemberitahuan panèka ka dhibi' (è dâlem aplikasi) ngangghuy ID lead sè kemma?",
+    "testSent": "èkirim ka lonceng: {{title}} {{message}}",
+    "headersInvalid": "Header Webhook kodhu JSON sè sah, contona {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Edit Pemberitahuan",
+    "newTitle": "Pemberitahuan Anyar",
+    "name": "Asma",
+    "namePlaceholder": "contona, pènget kunjungan situs",
+    "whenStatus": "Bâkto statusna pimpinan",
+    "subStatus": "Sub-status",
+    "send": "Kirim (penjadwal)",
+    "custom": "Adat...",
+    "modeBefore": "sabellunna bekto sè èjadwalaghi",
+    "modeAfter": "saellana bekto sè èjadwalaghi",
+    "noScheduleWarning": "Status panèka ta' èparloaghi tanggal bân bâkto, dâddhi pemberitahuan \"sabellunna/è/saellana bâkto sè èjadwalaghi\" ta' bhâkal èpaèla'.",
+    "noScheduleFix": "Nyalaaghi <strong>Tanya'aghi tanggal bân bekto</strong> è bâbâna Status & Sub-Status, otabâ kirim Langsung.",
+    "sendTo": "Kirim ka (kombinasi apa bhâi)",
+    "recipientAssigned": "Pangghuna sè ètugasaghi (pemilik utama)",
+    "recipientOwner": "Pemilik akun / admin",
+    "recipientUpdatedBy": "Orèng sè mabâru status",
+    "everyoneWithRole": "sadhâjâna orèng kalabân peran",
+    "specificUsers": "Pangangghuy khusus (aktif)",
+    "inactiveNever": "Pangangghuy sè ta' aktif ta' perna narèma notifikasi, sanajân èpilih.",
+    "deliverVia": "Antar lebat",
+    "channelInApp": "è dâlem aplikasi (lonceng)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS provider)",
+    "emailHint": "Email èghâbây ka alamat email bhân-sabbhân orèng sè narèma bân parlo SMTP sè èpasang è server (backend/.env); kantos jârèya email sè èkirim ècatat mènangka èlang.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Headers ( JSON )",
+    "content": "Kontèna pemberitahuan",
+    "title": "Judul",
+    "message": "Pessen",
+    "insertIntoTitle": "Maso'aghi dâ' Judul",
+    "insertIntoMessage": "Maso'aghi ka Pessen",
+    "anyLeadField": "Bidang lead apa bhâi jhughân abâdâh, contona <code1>{{example1}}</code1> otabâ <code2>{{example2}}</code2> .",
+    "preview": "Pratinjau (sampel lead)",
+    "enabled": "èaktifaghi",
+    "saveRule": "Simpen Pemberitahuan",
+    "createRule": "Ghâbây Pemberitahuan",
+    "variables": {
+      "customerName": "nyamana",
+      "customerMobile": "Ponsel pimpinan",
+      "customerEmail": "Email sè èghâdhui",
+      "registrationId": "ID pimpinan",
+      "status": "Kabede'en",
+      "subStatus": "Sub-status",
+      "scheduleAt": "Tanggal bân bâkto sè èjadwalaghi",
+      "assignedTo": "Pangghuna sè ètugasaghi",
+      "updatedBy": "èperbarui sareng",
+      "recipient": "nyamana sè narèma",
+      "project": "Proyek",
+      "notes": "cathetan anyar",
+      "partner": "nyamana pasangan"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Langsung pas statusna la eset",
+      "AT": "è bâkto sè èjadwalaghi",
+      "A1D": "1 arè saamponna bâkto sè èjadwalaghi (pèrèksa'an susulan)"
+    },
+    "immediately": "Dhulih",
+    "atScheduled": "è bekto sè èjadwalaghi",
+    "before": {
+      "MINUTES_one": "{{count}} mènit sabellunna bâkto sè èjadwalaghi",
+      "MINUTES_other": "{{count}} mènit sabellunna bâkto sè èjadwalaghi",
+      "HOURS_one": "{{count}} jhâm sabellunna bâkto sè èjadwalaghi",
+      "HOURS_other": "{{count}} jhâm sabellunna bâkto sè èjadwalaghi",
+      "DAYS_one": "{{count}} arè sabellunna bekto sè èjadwalaghi",
+      "DAYS_other": "{{count}} arè sabellunna bekto sè èjadwalaghi",
+      "WEEKS_one": "{{count}} minggu sabellunna bekto sè èjadwalaghi",
+      "WEEKS_other": "{{count}} minggu sabellunna bâkto sè èjadwalaghi",
+      "MONTHS_one": "{{count}} bulân sabellunna bâkto sè èjadwalaghi",
+      "MONTHS_other": "{{count}} bulân sabellunna bâkto sè èjadwalaghi",
+      "YEARS_one": "{{count}} taon sabellunna bekto sè èjadwalaghi",
+      "YEARS_other": "{{count}} taon sabellunna bekto sè èjadwalaghi"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} mènit saamponna bâkto sè èjadwalaghi",
+      "MINUTES_other": "{{count}} mènit saamponna bâkto sè èjadwalaghi",
+      "HOURS_one": "{{count}} jhâm saellana bâkto sè èjadwalaghi",
+      "HOURS_other": "{{count}} jhâm saellana bâkto sè èjadwalaghi",
+      "DAYS_one": "{{count}} arè saamponna bekto sè èjadwalaghi",
+      "DAYS_other": "{{count}} arè saamponna bekto sè èjadwalaghi",
+      "WEEKS_one": "{{count}} minggu saamponna bekto sè èjadwalaghi",
+      "WEEKS_other": "{{count}} minggu saamponna bekto sè èjadwalaghi",
+      "MONTHS_one": "{{count}} bulân saamponna bâkto sè èjadwalaghi",
+      "MONTHS_other": "{{count}} bulân saamponna bâkto sè èjadwalaghi",
+      "YEARS_one": "{{count}} taon saamponna bekto sè èjadwalaghi",
+      "YEARS_other": "{{count}} taon saamponna bekto sè èjadwalaghi"
+    },
+    "units": {
+      "MINUTES_one": "menit",
+      "MINUTES_other": "menit",
+      "HOURS_one": "pokol",
+      "HOURS_other": "jem",
+      "DAYS_one": "areh",
+      "DAYS_other": "are",
+      "WEEKS_one": "minggu",
+      "WEEKS_other": "minggu",
+      "MONTHS_one": "bulen",
+      "MONTHS_other": "bulân",
+      "YEARS_one": "taon",
+      "YEARS_other": "a on-taon"
+    }
+  }
+}

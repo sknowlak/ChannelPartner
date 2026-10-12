@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "सेटिंग्ज",
+    "noPermission": "तुमकां मांडावळी वेवस्थापन करपाची परवानगी ना."
+  },
+  "categories": {
+    "lead": "फुडाकार",
+    "user": "वापरपी",
+    "integrations": "एकठांय करप"
+  },
+  "leadTabs": {
+    "fields": "शेतां",
+    "statuses": "स्थिती आनी उपस्थिती",
+    "notifications": "अधिसुचोवण्यो आनी वेळापत्रक"
+  },
+  "fields": {
+    "leadIntro": "लीड कॅप्चर फॉर्म संरचीत करात: क्षेत्रां सक्षम/अक्षम करात, तांकां गरजेचीं चिन्न करात, वा तुमचीं स्वताचीं सानुकूल क्षेत्रां जोडात.",
+    "userIntro": "पंगड वांगडी जोडचो/संपादीत करचो फॉर्म संरचीत करचो: क्षेत्रां सक्षम/अक्षम करात, तांकां गरजेचीं चिन्न करात, वा तुमचीं स्वताचीं सानुकूल क्षेत्रां जोडात.",
+    "addCustomField": "+ सानुकूल क्षेत्र जोडचें",
+    "fieldLabel": "क्षेत्र लेबल",
+    "group": "गट",
+    "groupPlaceholderLead": "देखीक चवकशीची म्हायती",
+    "groupPlaceholderUser": "देखीक- अतिरिक्त तपशील",
+    "dataType": "डेटा प्रकार",
+    "options": "पर्याय (स्वल्पविराम वेगळे) 1.1.",
+    "requiredLead": "गरज आसा - तुमच्या पंगडांतल्या भागीदारांनी लीड नोंद करपा खातीर हें भरचें पडटलें",
+    "requiredUser": "गरज आसा - पंगड वांगडी जोडटना भरपाक जाय",
+    "creating": "तयार करप...",
+    "createField": "क्षेत्र तयार करचें",
+    "columns": {
+      "field": "शेत",
+      "group": "गट",
+      "type": "प्रकार",
+      "required": "गरजेचें",
+      "enabled": "सक्षम केलां",
+      "kind": "प्रकार"
+    },
+    "kind": {
+      "custom": "कस्टम",
+      "core": "कोर (लॉक) 1.1.",
+      "standard": "प्रमाणित"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "लिखीत",
+    "TEXTAREA": "लांब मजकूर",
+    "NUMBER": "आंकडो",
+    "CURRENCY": "चलन",
+    "DATE": "तारीख",
+    "SELECT": "ड्रॉपडावन करप",
+    "LIST": "सूची"
+  },
+  "picker": {
+    "searchPlaceholder": "लीड क्षेत्रां सोदचीं...",
+    "summary": "{{shown}} दाखयलां · {{mandatory}} सक्तीचें",
+    "mandatory": "सक्तीचें",
+    "noMatch": "खंयचींच शेतां जुळनात."
+  },
+  "statuses": {
+    "intro": "तुमचीं लीड स्थिती आनी उप-स्थिती - जेन्ना कोण तरी ताका लीड अद्ययावत करता तेन्ना दरेकलो कितें मागता (तारीख & वेळ, लीड क्षेत्रां).",
+    "add": "+ स्थिती जोडची",
+    "columns": {
+      "order": "क्रम",
+      "status": "स्थिती",
+      "subStatuses": "उप-स्थिती",
+      "asksFor": "मागता तें",
+      "active": "सक्रीय"
+    },
+    "moveUp": "वयर सरप",
+    "moveDown": "सकयल वचप",
+    "defaultBadge": "नव्या लीड्स खातीर डिफॉल्ट",
+    "bookingBadge": "बुकींग स्थिती",
+    "asksForLabel": "{{label}} खातीर विचारता.",
+    "asksForDateTime": "तारीख & वेळ विचारता",
+    "none": "कांयच ना",
+    "dateTime": "तारीख & वेळ",
+    "scheduledOn": "{{names}} चेर.",
+    "fieldsSummary_one": "{{count}} क्षेत्र ( {{mandatory}} सक्तीचें)",
+    "fieldsSummary_other": "{{count}} क्षेत्रां ( {{mandatory}} सक्तीचें)",
+    "deleteConfirm": "स्थिती काडून उडोवप \" {{name}} \"? हें फाटीं घेवंक मेळना.",
+    "editTitle": "संपादन स्थिती - {{name}}",
+    "newTitle": "नवो दर्जो",
+    "name": "स्थितीचें नांव",
+    "colour": "रंग",
+    "active": "सक्रीय",
+    "isDefault": "नव्या लीड्स खातीर मुलभूत स्थिती",
+    "isBooking": "बुकींग स्थिती (संपूर्ण बुकींग करून थारायल्या)",
+    "whenMoved": "जेन्ना एक लीड ह्या दर्ज्याक व्हरतात",
+    "askSchedule": "तारीख & वेळ विचारात (शेड्यूलर)",
+    "scheduleLabelPlaceholder": "लेबल, देखीक भेट दिवप",
+    "fieldsToShow": "अद्ययावत फॉर्माचेर दाखोवपाक शिंशें क्षेत्रां",
+    "subStatusesTitle": "उप-स्थिती",
+    "subStatusesHint": "दरेक उप-स्थिती आपली स्वताची तारीख & वेळ विचारूंक शकता आनी आपलीं स्वताचीं क्षेत्रां जोडूंक शकता - वयर स्थितीच्या क्षेत्रांचेर दाखयल्या.",
+    "subStatusName": "उप-स्थितीचें नांव",
+    "subFields": "शेतां ( {{count}} ) .",
+    "subScheduleLabelPlaceholder": "तारीख & वेळ लेबल, देखीक परतून कॉल करात",
+    "addSubStatus": "+ उप-स्थिती जोडची",
+    "saveStatus": "स्थिती जतनाय घेयात",
+    "createStatus": "स्थिती तयार करात"
+  },
+  "notifications": {
+    "intro": "जेन्ना लीड स्थितींत पावता तेन्ना योग्य लोकांक कळोवचें - रोखडेंच, वा ताचेर नियोजीत केल्ल्या तारखे पयलीं/उपरांत थारायिल्लो वेळ.",
+    "add": "+ अधिसुचोवणी जोडची",
+    "columns": {
+      "notification": "अधिसुचोवणी दिवप",
+      "whenStatusIs": "जेन्ना स्थिती आसता",
+      "sends": "धाडटा",
+      "to": "प्रती",
+      "via": "वरवीं",
+      "enabled": "सक्षम केलां"
+    },
+    "anyStatus": "खंयचोय दर्जो",
+    "anySubStatus": "खंयचीय उप-स्थिती",
+    "inactiveOption": "{{name}} (निष्क्रिय) 1.1.",
+    "emptyRules": "अजून अधिसुचोवण्यो नात - जेन्ना लीड स्थितींत पावता तेन्ना तुमच्या पंगडाक सावधान करपाक एक जोडात.",
+    "jobs": {
+      "title": "नियोजीत & धाडलेले",
+      "firesAt": "फायर्स अॅट",
+      "notification": "अधिसुचोवणी दिवप",
+      "lead": "फुडाकार",
+      "status": "स्थिती",
+      "details": "तपशील",
+      "empty": "अजून कांयच वेळापत्रक वा धाडिल्लें ना.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "अनिर्णित",
+      "PROCESSING": "प्रक्रिया करप",
+      "SENT": "धाडलें",
+      "FAILED": "अपेशी",
+      "SKIPPED": "वगळ्ळें",
+      "CANCELLED": "रद्द केलां"
+    },
+    "deliveryStatus": {
+      "SENT": "धाडलें",
+      "FAILED": "अपेशी",
+      "SKIPPED": "वगडायलें"
+    },
+    "deliveryChannel": {
+      "IN_APP": "इन-एप",
+      "EMAIL": "ईमेल करचें",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "नेमिल्लो वापरपी",
+      "owner": "धनी",
+      "updatedBy": "अद्ययावत केल्लें",
+      "role": "भुमिका: {{name}}"
+    },
+    "channels": {
+      "inApp": "इन-एप",
+      "email": "ईमेल करचें",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "अधिसुचोवणी काडून उडोवप \" {{name}} \"? ताचे कडल्यान प्रलंबीत आशिल्लीं स्मरणपत्रां रद्द करतात.",
+    "testPrompt": "खंयचो लीड ID वापरून ह्या अधिसुचोवणेक चांचणी स्वताक (इन-ऍप्लिकेशनांत) धाडची ?",
+    "testSent": "तुमच्या घंट्याक धाडला: {{title}} {{message}}",
+    "headersInvalid": "Webhook शीर्षक वैध आसपाक जाय JSON , देखीक {\"अधिकृतीकरण\": \"वाहक xyz\"}",
+    "editTitle": "अधिसुचोवणी संपादीत करप",
+    "newTitle": "नवी अधिसुचोवणी",
+    "name": "नांव",
+    "namePlaceholder": "देखीक साइट भेट दिवपाची याद करून दिवप",
+    "whenStatus": "जेन्ना एका लीडाचो दर्जो आसता",
+    "subStatus": "उप-स्थिती",
+    "send": "धाडप (शेड्यूलर) 1.1.",
+    "custom": "कस्टम...",
+    "modeBefore": "नियोजीत वेळा पयलीं",
+    "modeAfter": "नियोजीत वेळा उपरांत",
+    "noScheduleWarning": "ही स्थिती तारीख & वेळ विचारना, देखून \"नियोजीत वेळा पयलीं/वेळा उपरांत/उपरांत\" अधिसुचोवणी केन्नाच फायर करची ना.",
+    "noScheduleFix": "चालू करात स्थिती & उपस्थिती खाला ताचे खातीर <strong>तारीख & वेळ विचारात</strong> , वा रोखडीच धाडात.",
+    "sendTo": "(खंयचेंय संयोजन) कडेन धाडचें",
+    "recipientAssigned": "नेमिल्लो वापरपी (मुखेल मालकीदार)",
+    "recipientOwner": "खातें मालक / प्रशासक",
+    "recipientUpdatedBy": "स्थिती अद्ययावत केल्ली व्यक्ती",
+    "everyoneWithRole": "सगळ्यांची भुमिका आसता",
+    "specificUsers": "विशिश्ट वापरपी (सक्रीय) .",
+    "inactiveNever": "निश्क्रीय वापरप्यांक केन्नाच अधिसुचोवण्यो मेळनात, जरी निवडल्या तरी.",
+    "deliverVia": "वरवीं वितरीत करप",
+    "channelInApp": "इन-एप (घंटी) 1.1.",
+    "channelEmail": "ईमेल करचें",
+    "channelWebhook": "Webhook ( WhatsApp / SMS प्रदाता)",
+    "emailHint": "ईमेल दरेका मेळोवप्याच्या ईमेल पत्त्याचेर वता आनी सर्वराचेर SMTP सेट करपाची गरज आसता (backend/.env); तो मेरेन ईमेल धाडप वगळिल्ले प्रमाण लॉग जाता.",
+    "webhookUrl": "Webhook URL ( POST , JSON ) 1.1.",
+    "headers": "शीर्षक ( JSON ) 1.1.",
+    "content": "अधिसुचोवणी आशय",
+    "title": "शीर्षक",
+    "message": "संदेश",
+    "insertIntoTitle": "शीर्षकात घालचें",
+    "insertIntoMessage": "संदेशांत घालचें",
+    "anyLeadField": "खंयचेंय लीड क्षेत्रूय काम करता, देखीक <code1>{{example1}}</code1> वा <code2>{{example2}}</code2> .",
+    "preview": "पूर्वावलोकन (नमुनो लीड) 1.1.",
+    "enabled": "सक्षम केलां",
+    "saveRule": "अधिसुचोवणी जतनाय घेयात",
+    "createRule": "अधिसुचोवणी तयार करप",
+    "variables": {
+      "customerName": "शिंशें नांव",
+      "customerMobile": "लीड मोबायल",
+      "customerEmail": "ईमेलाचे मुखेलीपण",
+      "registrationId": "लीड ID",
+      "status": "स्थिती",
+      "subStatus": "उप-स्थिती",
+      "scheduleAt": "नियोजीत तारीख & वेळ",
+      "assignedTo": "नेमिल्लो वापरपी",
+      "updatedBy": "अद्ययावत केल्लें",
+      "recipient": "मेळोवप्याचें नांव",
+      "project": "प्रकल्प",
+      "notes": "ताजी टिप",
+      "partner": "भागीदाराचें नांव"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "स्थिती सेट जातकच रोखडीच",
+      "AT": "थारायिल्ल्या वेळार",
+      "A1D": "नियोजीत वेळा उपरांत 1 दीस (फालो-अप तपासणी)"
+    },
+    "immediately": "तत्काळ",
+    "atScheduled": "थारायिल्ल्या वेळार",
+    "before": {
+      "MINUTES_one": "{{count}} नियोजीत वेळा पयलीं मिनटां",
+      "MINUTES_other": "{{count}} नियोजीत वेळा पयलीं मिनटां",
+      "HOURS_one": "{{count}} नियोजीत वेळा पयलीं वर",
+      "HOURS_other": "{{count}} नियोजीत वेळा पयलीं वरां",
+      "DAYS_one": "{{count}} नियोजीत वेळा पयलीं दीस",
+      "DAYS_other": "{{count}} नियोजीत वेळा पयलीं दीस",
+      "WEEKS_one": "{{count}} नियोजीत वेळा पयलीं सप्तक",
+      "WEEKS_other": "{{count}} नियोजीत वेळा पयलीं सप्तकां आदीं",
+      "MONTHS_one": "{{count}} नियोजीत वेळा पयलीं म्हयनो",
+      "MONTHS_other": "{{count}} नियोजीत वेळा पयलीं म्हयने",
+      "YEARS_one": "{{count}} नियोजीत वेळा पयलीं वर्स",
+      "YEARS_other": "{{count}} नियोजीत वेळा पयलीं वर्सां"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} नियोजीत वेळा उपरांत मिनटा उपरांत",
+      "MINUTES_other": "{{count}} नियोजीत वेळा उपरांत मिनटां",
+      "HOURS_one": "{{count}} नियोजीत वेळा उपरांत वर",
+      "HOURS_other": "{{count}} नियोजीत वेळा उपरांत वरां",
+      "DAYS_one": "{{count}} नियोजीत वेळा उपरांत दीस",
+      "DAYS_other": "{{count}} नियोजीत वेळा उपरांत दीस",
+      "WEEKS_one": "{{count}} नियोजीत वेळा उपरांत सप्तक",
+      "WEEKS_other": "{{count}} नियोजीत वेळा उपरांत सप्तकां उपरांत",
+      "MONTHS_one": "{{count}} नियोजीत वेळा उपरांत म्हयनो",
+      "MONTHS_other": "{{count}} नियोजीत वेळा उपरांत म्हयने",
+      "YEARS_one": "{{count}} नियोजीत वेळा उपरांत वर्स",
+      "YEARS_other": "{{count}} नियोजीत वेळा उपरांत वर्सां"
+    },
+    "units": {
+      "MINUTES_one": "मिनीट",
+      "MINUTES_other": "मिण्टां",
+      "HOURS_one": "वर",
+      "HOURS_other": "वरां",
+      "DAYS_one": "दीस",
+      "DAYS_other": "दीस",
+      "WEEKS_one": "सप्तक",
+      "WEEKS_other": "सप्तकां",
+      "MONTHS_one": "म्हयनो",
+      "MONTHS_other": "म्हयने जाले",
+      "YEARS_one": "वर्स",
+      "YEARS_other": "वर्सां"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "shell": {
+    "portal": "ビルダーポータル",
+    "referrals": "紹介",
+    "builderLogin": "ビルダーログイン",
+    "partnerLogin": "チャネルパートナーのログイン"
+  },
+  "login": {
+    "title": "ビルダーのサインイン",
+    "hint": "Builder アカウントはLeadratによって作成されます。お持ちでない場合は、管理者に問い合わせてください。"
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "あなたの決断を待っています",
+    "ACCEPTED": "承認されました",
+    "REJECTED": "拒否されました"
+  },
+  "list": {
+    "title": "紹介",
+    "allProjects": "すべてのプロジェクト",
+    "allStatuses": "すべてのステータス",
+    "count_other": "{{count}}件の紹介",
+    "columns": {
+      "referral": "紹介",
+      "customer": "お客様",
+      "project": "プロジェクト",
+      "sourcePartner": "ソースパートナー",
+      "status": "状態",
+      "booking": "予約",
+      "registered": "登録済み"
+    },
+    "booked": "予約済み",
+    "empty": "まだ紹介はありません。"
+  },
+  "detail": {
+    "customer": "お客様",
+    "sourcePartner": "ソースパートナー",
+    "attributionNote": "(帰属 - 変更できません)",
+    "leadStatus": "リードステータス",
+    "protectedUntil": "まで保護されます",
+    "referral": "紹介",
+    "reason": "理由: {{reason}}",
+    "booking": "予約",
+    "bookedOwner": "予約済み - あなたが運営所有者です",
+    "notBooked": "予約されていません",
+    "sharedAfterBooking": "予約後に共有",
+    "accept": "紹介を受け入れる",
+    "confirmBooking": "予約を確認する",
+    "reject": "紹介を拒否する",
+    "rejectReasonLabel": "拒否理由（相手に提示）※",
+    "rejectConfirm": "拒否する",
+    "confirmBookingPrompt": "予約を確認しますか?運営の所有権はあなたに移り、パートナーは手数料を受け取る資格を得ることができます。",
+    "notice": {
+      "booked": "予約が確認されました。",
+      "accepted": "紹介を受け付けました。",
+      "rejected": "紹介が拒否されました。"
+    },
+    "backToReferrals": "紹介に戻る"
+  },
+  "history": {
+    "title": "歴史",
+    "actor": {
+      "system": "システム",
+      "partner": "チャネルパートナー",
+      "admin": "Leadrat管理者"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "パートナー登録を受け付けました",
+      "DUPLICATE_CHECK_COMPLETED": "重複チェックが完了しました - アクティブな重複は見つかりませんでした",
+      "REGISTRATION_ACCEPTED": "登録受付中",
+      "PROTECTION_GRANTED_other": "{{count}}日間の保護が付与されました",
+      "STAGE_UPDATED": "ステータスが{{stage}}に更新されました",
+      "LEAD_DETAILS_UPDATED_other": "{{count}}フィールドを更新しました",
+      "LEAD_ASSIGNED": "{{name}}に割り当てられました",
+      "LEAD_UNASSIGNED": "未割り当て",
+      "REFERRAL_ACCEPTED": "ビルダーは紹介を受け入れました",
+      "REFERRAL_REJECTED": "ビルダーは紹介を拒否しました。理由: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}}による重複登録の試行が拒否されました",
+      "BOOKING_COMPLETED": "予約完了",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "運営上の所有権が Builder に譲渡される",
+      "PARTNER_ATTRIBUTION_PRESERVED": "パートナーの帰属が保持される",
+      "COMMISSION_ELIGIBILITY_CREATED": "コミッション資格が作成されました",
+      "HANDOVER_COMPLETED": "引き継ぎ完了",
+      "ADMIN_PROTECTION_RELEASED": "管理者は重複保護を早期に解除しました。理由: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "管理者は登録を{{from}}から{{to}}に再割り当てしました。理由: {{reason}}"
+    }
+  }
+}

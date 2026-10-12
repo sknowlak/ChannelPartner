@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "ገንቢ ፖርታል",
+    "referrals": "ማጣቀሻዎች",
+    "builderLogin": "የገንቢ መግቢያ",
+    "partnerLogin": "የሰርጥ አጋር መግቢያ"
+  },
+  "login": {
+    "title": "ግንበኛ ይግቡ",
+    "hint": "የገንቢ መለያዎች የተፈጠሩት Leadrat ነው። ከሌለህ አስተዳዳሪህን ጠይቅ።"
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "ውሳኔዎን በመጠባበቅ ላይ",
+    "ACCEPTED": "ተቀባይነት አግኝቷል",
+    "REJECTED": "ውድቅ ተደርጓል"
+  },
+  "list": {
+    "title": "ማጣቀሻዎች",
+    "allProjects": "ሁሉም ፕሮጀክቶች",
+    "allStatuses": "ሁሉም ሁኔታዎች",
+    "count_one": "{{count}} ሪፈራል",
+    "count_other": "{{count}} ሪፈራሎች",
+    "columns": {
+      "referral": "ሪፈራል",
+      "customer": "ደንበኛ",
+      "project": "ፕሮጀክት",
+      "sourcePartner": "ምንጭ አጋር",
+      "status": "ሁኔታ",
+      "booking": "ቦታ ማስያዝ",
+      "registered": "ተመዝግቧል"
+    },
+    "booked": "ተይዟል።",
+    "empty": "እስካሁን ምንም ሪፈራል የለም።"
+  },
+  "detail": {
+    "customer": "ደንበኛ",
+    "sourcePartner": "ምንጭ አጋር",
+    "attributionNote": "(ባህሪ - ሊለወጥ አይችልም)",
+    "leadStatus": "የመሪነት ሁኔታ",
+    "protectedUntil": "ድረስ የተጠበቀ",
+    "referral": "ሪፈራል",
+    "reason": "ምክንያት {{reason}}",
+    "booking": "ቦታ ማስያዝ",
+    "bookedOwner": "ተይዟል - እርስዎ የተግባር ባለቤት ነዎት",
+    "notBooked": "አልተያዘም።",
+    "sharedAfterBooking": "ቦታ ካስያዙ በኋላ ተጋርቷል።",
+    "accept": "ሪፈራልን ተቀበል",
+    "confirmBooking": "ቦታ ማስያዝን ያረጋግጡ",
+    "reject": "ሪፈራልን ውድቅ አድርግ",
+    "rejectReasonLabel": "ውድቅ የተደረገበት ምክንያት (ለባልደረባው ይታያል) *",
+    "rejectConfirm": "እምቢ",
+    "confirmBookingPrompt": "ቦታ ማስያዝ ይረጋገጥ? የክዋኔ ባለቤትነት ወደ እርስዎ ይንቀሳቀሳል እና አጋር ለኮሚሽን ብቁ ይሆናል።",
+    "notice": {
+      "booked": "ቦታ ማስያዝ ተረጋግጧል።",
+      "accepted": "ሪፈራል ተቀባይነት አግኝቷል።",
+      "rejected": "ሪፈራል ተቀባይነት አላገኘም።"
+    },
+    "backToReferrals": "ወደ ሪፈራሎች ተመለስ"
+  },
+  "history": {
+    "title": "ታሪክ",
+    "actor": {
+      "system": "ስርዓት",
+      "partner": "የሰርጥ አጋር",
+      "admin": "Leadrat አስተዳዳሪ"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "የአጋር ምዝገባ ደረሰ",
+      "DUPLICATE_CHECK_COMPLETED": "የተባዛ ቼክ ተጠናቅቋል - ምንም ገቢር ቅጂ አልተገኘም።",
+      "REGISTRATION_ACCEPTED": "ምዝገባ ተቀባይነት አግኝቷል",
+      "PROTECTION_GRANTED_one": "{{count}} ቀን ጥበቃ ተሰጥቷል።",
+      "PROTECTION_GRANTED_other": "{{count}} ቀን ጥበቃ ተሰጥቷል።",
+      "STAGE_UPDATED": "ሁኔታ ወደ {{stage}} ተዘምኗል",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} መስክ ተዘምኗል",
+      "LEAD_DETAILS_UPDATED_other": "የዘመኑ {{count}} መስኮች",
+      "LEAD_ASSIGNED": "ለ {{name}} ተመድቧል",
+      "LEAD_UNASSIGNED": "ያልተመደበ",
+      "REFERRAL_ACCEPTED": "ግንበኛ ሪፈራሉን ተቀብሏል።",
+      "REFERRAL_REJECTED": "ግንበኛ ሪፈራሉን አልተቀበለውም። ምክንያት {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "የተባዛ የምዝገባ ሙከራ በ {{partner}} ውድቅ ተደርጓል",
+      "BOOKING_COMPLETED": "ቦታ ማስያዝ ተጠናቅቋል",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "ተግባራዊ ባለቤትነት ወደ ግንበኛ ተላልፏል",
+      "PARTNER_ATTRIBUTION_PRESERVED": "የአጋር ባህሪ ተጠብቆ ቆይቷል",
+      "COMMISSION_ELIGIBILITY_CREATED": "የኮሚሽኑ ብቁነት ተፈጥሯል።",
+      "HANDOVER_COMPLETED": "ርክክብ ተጠናቅቋል",
+      "ADMIN_PROTECTION_RELEASED": "አስተዳዳሪ ቀደም ብሎ የተባዛ ጥበቃን ለቋል። ምክንያት {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "አስተዳዳሪ ምዝገባን ከ {{from}} ወደ {{to}} መድቧል። ምክንያት {{reason}}"
+    }
+  }
+}

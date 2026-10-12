@@ -1,0 +1,186 @@
+{
+  "list": {
+    "title": "ลูกค้าเป้าหมายของฉัน",
+    "signedInAs": "ลงชื่อเข้าใช้ด้วย {{name}} ( {{partnerId}} ) · เวลาที่แสดงใน {{timezone}}",
+    "addLead": "+ เพิ่มตะกั่ว",
+    "tabs": {
+      "all": "ทั้งหมด ( {{count}} )",
+      "pending": "รอดำเนินการ ( {{count}} )",
+      "booked": "จองแล้ว ( {{count}} )"
+    },
+    "searchPlaceholder": "ค้นหาตามชื่อ มือถือ หรือ ID ทะเบียน ...",
+    "manageColumns": "จัดการคอลัมน์",
+    "rowsPerPage": "แถวต่อหน้า",
+    "registrationId": "ID ลงทะเบียน",
+    "emptyState": "ยังไม่มีโอกาสในการขาย - ลงทะเบียนคนแรกของคุณ",
+    "noMatch": "ไม่มีโอกาสในการขายที่ตรงกับตัวกรองเหล่านี้",
+    "showing": "กำลังแสดง {{from}} - {{to}} จาก {{total}} รายการ",
+    "actions": {
+      "preview": "ดูตัวอย่างและอัปเดตอย่างรวดเร็ว",
+      "history": "ประวัติศาสตร์",
+      "email": "อีเมล",
+      "whatsapp": "WhatsApp",
+      "call": "เรียก"
+    },
+    "pagination": {
+      "first": "หน้าแรก",
+      "previous": "หน้าก่อนหน้า",
+      "next": "หน้าถัดไป",
+      "last": "หน้าสุดท้าย"
+    }
+  },
+  "columns": {
+    "status": "สถานะ",
+    "assignTo": "มอบหมายให้",
+    "booked": "จองแล้ว",
+    "protectionUntil": "คุ้มครองจนถึง"
+  },
+  "booking": {
+    "booked": "จองแล้ว",
+    "pending": "รอดำเนินการ"
+  },
+  "assign": {
+    "unassigned": "ยังไม่ได้มอบหมาย",
+    "owner": "{{name}} (เจ้าของ)",
+    "inactive": "{{name}} (ไม่ได้ใช้งาน)",
+    "unknownUser": "ผู้ใช้ที่ไม่รู้จัก",
+    "assignedTo": "มอบหมายให้ {{name}}"
+  },
+  "form": {
+    "addTitle": "เพิ่มตะกั่ว",
+    "editTitle": "แก้ไขลูกค้าเป้าหมาย",
+    "noPermissionAdd": "คุณไม่ได้รับอนุญาตให้ลงทะเบียนโอกาสในการขาย",
+    "noPermissionEdit": "คุณไม่ได้รับอนุญาตให้แก้ไขโอกาสในการขาย",
+    "selectPlaceholder": "เลือก...",
+    "commaSeparated": "คั่นด้วยเครื่องหมายจุลภาค",
+    "phonePlaceholder": "หมายเลขโทรศัพท์",
+    "countryCode": "รหัสประเทศ"
+  },
+  "project": {
+    "none": "ยังไม่มีโครงการ (ยังไม่ได้อ้างอิง)",
+    "notInList": "{{project}} (ไม่อยู่ในรายชื่อโครงการ)"
+  },
+  "journey": {
+    "customer": "ลูกค้า",
+    "currentOwner": "เจ้าของปัจจุบัน",
+    "protectionExpiry": "ความคุ้มครองหมดอายุ",
+    "leadStatus": "สถานะลูกค้าเป้าหมาย",
+    "scheduled": "กำหนดเวลาแล้ว",
+    "assignedTo": "มอบหมายให้",
+    "referral": "การอ้างอิง",
+    "builderReason": "เหตุผลของผู้สร้าง: {{reason}}",
+    "bookedHint": "จองโดยผู้สร้าง - กรรมสิทธิ์ในการดำเนินงานได้ย้ายไปยังผู้สร้างแล้ว คุณสมบัติการระบุแหล่งที่มาและค่าคอมมิชชันของคุณจะถูกเก็บไว้",
+    "notBookedHint": "การจองจะได้รับการยืนยันจากผู้สร้างเมื่อยอมรับการแนะนำแล้ว",
+    "quickUpdate": "อัปเดตด่วน",
+    "leadDetails": "รายละเอียดตะกั่ว",
+    "progressHistory": "ประวัติความก้าวหน้า",
+    "timesIn": "(เวลาใน {{timezone}} )",
+    "backToMyLeads": "กลับไปที่โอกาสในการขายของฉัน",
+    "editLead": "แก้ไขลูกค้าเป้าหมาย"
+  },
+  "referral": {
+    "NOT_REFERRED": "ไม่อ้างอิง (ไม่มีโครงการ)",
+    "PENDING_BUILDER": "รอคนสร้าง.",
+    "ACCEPTED": "ได้รับการยอมรับจากผู้สร้าง",
+    "REJECTED": "ถูกปฏิเสธโดยผู้สร้าง"
+  },
+  "preview": {
+    "ariaLabel": "การแสดงตัวอย่างลูกค้าเป้าหมาย",
+    "title": "ตัวอย่างลูกค้าเป้าหมาย",
+    "source": "แหล่งที่มา",
+    "location": "ที่ตั้ง",
+    "scheduled": "กำหนดเวลาแล้ว",
+    "registered": "ลงทะเบียนแล้ว",
+    "latestNote": "หมายเหตุล่าสุด",
+    "quickUpdate": "อัปเดตด่วน",
+    "fullDetails": "รายละเอียดทั้งหมด",
+    "editLead": "แก้ไขลูกค้าเป้าหมาย",
+    "history": "ประวัติศาสตร์"
+  },
+  "quick": {
+    "assignedTo": "มอบหมายให้",
+    "status": "สถานะ",
+    "subStatus": "สถานะย่อย",
+    "selectSubStatus": "เลือกสถานะย่อย...",
+    "none": "ไม่มี",
+    "scheduledAt": "กำหนดไว้ที่",
+    "localTime": "เวลาท้องถิ่น",
+    "note": "บันทึก",
+    "notePlaceholder": "เกิดอะไรขึ้นกับการโทร / เยี่ยมชมครั้งนี้? (ไม่จำเป็น)",
+    "updateStatus": "อัพเดตสถานะ",
+    "statusUpdated": "อัปเดตสถานะแล้ว",
+    "bookedLocked": "จองโอกาสในการขายนี้แล้ว - สถานะไม่สามารถเปลี่ยนแปลงได้อีกต่อไป",
+    "viewOnly": "คุณสามารถดูโอกาสในการขายนี้ได้ แต่บทบาทของคุณไม่สามารถอัปเดตได้"
+  },
+  "history": {
+    "title": "ประวัติ - {{registrationId}}",
+    "tabs": {
+      "all": "ทั้งหมด",
+      "status": "สถานะ",
+      "assignment": "งานที่มอบหมาย",
+      "notes": "หมายเหตุ"
+    },
+    "doneBy": "เสร็จสิ้นโดย {{actor}}",
+    "system": "ระบบ",
+    "platforms": {
+      "System": "ระบบ",
+      "External": "ภายนอก",
+      "Web": "เว็บ",
+      "Mobile": "มือถือ"
+    },
+    "added": "เพิ่ม",
+    "updated": "ปรับปรุงแล้ว",
+    "empty": "(ว่างเปล่า)",
+    "noHistory": "ยังไม่มีประวัติในหมวดหมู่นี้",
+    "fieldLabels": {
+      "stage": "สถานะ",
+      "subStatus": "สถานะย่อย",
+      "scheduledAt": "กำหนดการ",
+      "notes": "หมายเหตุ",
+      "assignedTo": "มอบหมายให้"
+    },
+    "statusWithSub": "{{status}} ​​( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "ได้รับการลงทะเบียนพันธมิตรแล้ว",
+      "DUPLICATE_CHECK_COMPLETED": "ตรวจสอบซ้ำเสร็จสมบูรณ์ - ไม่พบรายการซ้ำที่ใช้งานอยู่",
+      "REGISTRATION_ACCEPTED": "ยอมรับการลงทะเบียนแล้ว",
+      "PROTECTION_GRANTED_other": "ได้รับความคุ้มครอง {{count}} วัน",
+      "REGISTRATION_ATTEMPT_REJECTED": "ความพยายามในการลงทะเบียนซ้ำโดย {{partnerId}} ถูกปฏิเสธ",
+      "LEAD_DETAILS_UPDATED_other": "อัปเดต {{count}} ช่องแล้ว",
+      "STAGE_UPDATED": "สถานะอัปเดตเป็น {{status}}",
+      "LEAD_ASSIGNED": "มอบหมายให้ {{name}}",
+      "LEAD_UNASSIGNED": "ยังไม่ได้มอบหมาย",
+      "BOOKING_COMPLETED": "การจองเสร็จสมบูรณ์",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "กรรมสิทธิ์ในการดำเนินงานโอนไปยัง Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "การระบุแหล่งที่มาของพันธมิตรยังคงอยู่",
+      "COMMISSION_ELIGIBILITY_CREATED": "สร้างสิทธิ์คอมมิชชั่นแล้ว",
+      "HANDOVER_COMPLETED": "การส่งมอบเสร็จสมบูรณ์",
+      "REFERRAL_ACCEPTED": "ผู้สร้างยอมรับการอ้างอิงแล้ว",
+      "REFERRAL_REJECTED": "ตัวสร้างปฏิเสธการอ้างอิง เหตุผล: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "ผู้ดูแลระบบเผยแพร่การป้องกันซ้ำล่วงหน้า เหตุผล: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "ผู้ดูแลระบบมอบหมายการลงทะเบียนใหม่จาก {{from}} เป็น {{to}} เหตุผล: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "จัดการคอลัมน์",
+    "hint": "ลากเพื่อเรียงลำดับใหม่ · เลือกเพื่อแสดง",
+    "showAll": "แสดงทั้งหมด",
+    "resetDefault": "รีเซ็ตเป็นค่าเริ่มต้น"
+  },
+  "filters": {
+    "title": "ตัวกรอง",
+    "allProjects": "ทุกโครงการ",
+    "any": "ใดๆ",
+    "noFields": "ยังไม่มีการเปิดใช้งานฟิลด์ที่สามารถกรองได้อื่นๆ (การตั้งค่า > ลูกค้าเป้าหมาย)",
+    "clearAll": "ล้างทั้งหมด"
+  },
+  "phone": {
+    "MISSING": "ต้องระบุหมายเลขโทรศัพท์",
+    "INVALID": "กรุณากรอกหมายเลขโทรศัพท์ที่ถูกต้อง",
+    "TOO_SHORT": "หมายเลขโทรศัพท์สั้นเกินไป",
+    "TOO_LONG": "หมายเลขโทรศัพท์ยาวเกินไป",
+    "INVALID_FOR_COUNTRY": "หมายเลขโทรศัพท์นี้ไม่ถูกต้องสำหรับ {{country}}",
+    "COUNTRY_MISMATCH": "โปรดเลือกรหัสประเทศที่ถูกต้อง",
+    "NOT_MOBILE": "โปรดป้อนหมายเลขโทรศัพท์มือถือ ไม่ใช่โทรศัพท์บ้าน"
+  }
+}

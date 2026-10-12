@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Mpanorina Portal",
+    "referrals": "anarana",
+    "builderLogin": "Builder Login",
+    "partnerLogin": "Fidirana mpiara-miasa amin'ny Channel"
+  },
+  "login": {
+    "title": "Midira ny mpanamboatra",
+    "hint": "Ny kaonty Builder dia noforonin'i Leadrat . Anontanio ny mpitantana anao raha tsy manana iray ianao."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Miandry ny fanapahan-kevitrao",
+    "ACCEPTED": "nanaiky",
+    "REJECTED": "TSY"
+  },
+  "list": {
+    "title": "anarana",
+    "allProjects": "Tetikasa rehetra",
+    "allStatuses": "Sata rehetra",
+    "count_one": "{{count}} referral",
+    "count_other": "{{count}} referrals",
+    "columns": {
+      "referral": "anarana",
+      "customer": "mpanjifa",
+      "project": "TETIKASA",
+      "sourcePartner": "Source Partner",
+      "status": "sata",
+      "booking": "Famandrihana",
+      "registered": "voasoratra anarana"
+    },
+    "booked": "namandrika",
+    "empty": "Tsy mbola misy referral."
+  },
+  "detail": {
+    "customer": "mpanjifa",
+    "sourcePartner": "Source Partner",
+    "attributionNote": "(attribution - tsy azo ovaina)",
+    "leadStatus": "Sata mitarika",
+    "protectedUntil": "Arovana Mandra-pahatongan'ny",
+    "referral": "anarana",
+    "reason": "Antony: {{reason}}",
+    "booking": "Famandrihana",
+    "bookedOwner": "Namandrika - ianao no tompon'andraikitra",
+    "notBooked": "Tsy namandrika",
+    "sharedAfterBooking": "Nozaraina taorian'ny famandrihana",
+    "accept": "Manaiky Referral",
+    "confirmBooking": "Hamafiso famandrihana",
+    "reject": "Mandà referral",
+    "rejectReasonLabel": "Antony nandavana (naseho ny mpiara-miasa) *",
+    "rejectConfirm": "mandà",
+    "confirmBookingPrompt": "Hamafiso ny famandrihana? Mifindra any aminao ny fananan-draharaham-piasa ary ny mpiara-miombon'antoka dia mahazo komisiona.",
+    "notice": {
+      "booked": "Nohamafisina ny famandrihana.",
+      "accepted": "Nekena ny fanondroana.",
+      "rejected": "Nolavina ny fanondroana."
+    },
+    "backToReferrals": "Hiverina any amin'ny referrals"
+  },
+  "history": {
+    "title": "FIAINANY TALOHA",
+    "actor": {
+      "system": "RAFITRA",
+      "partner": "mpiara-miasa amin'ny fantsona",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Voaray ny fisoratana anarana mpiara-miasa",
+      "DUPLICATE_CHECK_COMPLETED": "Vita ny fisavana dika mitovy - tsy hita ny dika mitovy",
+      "REGISTRATION_ACCEPTED": "Nekena ny fisoratana anarana",
+      "PROTECTION_GRANTED_one": "{{count}} -andro fiarovana nomena",
+      "PROTECTION_GRANTED_other": "{{count}} -andro fiarovana nomena",
+      "STAGE_UPDATED": "Ny sata nohavaozina ho {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "saha {{count}} nohavaozina",
+      "LEAD_DETAILS_UPDATED_other": "saha {{count}} nohavaozina",
+      "LEAD_ASSIGNED": "Voatendry ho an'i {{name}}",
+      "LEAD_UNASSIGNED": "notendrena",
+      "REFERRAL_ACCEPTED": "Nanaiky ny fanondroana ny Builder",
+      "REFERRAL_REJECTED": "Nolavin'ny Builder ny fanondroana. Antony: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Nolavina ny andrana fisoratana anarana dika mitovy nataon'i {{partner}}",
+      "BOOKING_COMPLETED": "Vita ny famandrihana",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Nafindra tany amin'ny Mpamorona ny fananana miasa",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Voatahiry ny fanondroana mpiara-miasa",
+      "COMMISSION_ELIGIBILITY_CREATED": "Natsangana ny fahazoan-dàlana ho an'ny komisiona",
+      "HANDOVER_COMPLETED": "Vita ny fanomezana",
+      "ADMIN_PROTECTION_RELEASED": "Namoaka fiarovana dika mitovy aloha ny Admin. Antony: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Nafindran'ny mpitantana ny fisoratana anarana manomboka amin'ny {{from}} mankany {{to}} . Antony: {{reason}}"
+    }
+  }
+}

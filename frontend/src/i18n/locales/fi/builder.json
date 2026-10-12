@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Rakentajan portaali",
+    "referrals": "Viittaukset",
+    "builderLogin": "Rakentajan kirjautuminen",
+    "partnerLogin": "Kanavakumppanin kirjautuminen"
+  },
+  "login": {
+    "title": "Builder kirjaudu sisään",
+    "hint": "Leadrat luo Builder-tilit. Kysy järjestelmänvalvojaltasi, jos sinulla ei ole sellaista."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Odotan päätöstäsi",
+    "ACCEPTED": "Hyväksytty",
+    "REJECTED": "Hylätty"
+  },
+  "list": {
+    "title": "Viittaukset",
+    "allProjects": "Kaikki projektit",
+    "allStatuses": "Kaikki tilat",
+    "count_one": "{{count}} viittausta",
+    "count_other": "{{count}} viittausta",
+    "columns": {
+      "referral": "Viittaus",
+      "customer": "Asiakas",
+      "project": "Projekti",
+      "sourcePartner": "Lähdekumppani",
+      "status": "Status",
+      "booking": "Varaus",
+      "registered": "Rekisteröity"
+    },
+    "booked": "Varattu",
+    "empty": "Ei vielä viittauksia."
+  },
+  "detail": {
+    "customer": "Asiakas",
+    "sourcePartner": "Lähdekumppani",
+    "attributionNote": "(määrite - ei voi muuttaa)",
+    "leadStatus": "Liidin tila",
+    "protectedUntil": "Suojattu asti",
+    "referral": "Viittaus",
+    "reason": "Syy: {{reason}}",
+    "booking": "Varaus",
+    "bookedOwner": "Varattu - olet operatiivinen omistaja",
+    "notBooked": "Ei varattu",
+    "sharedAfterBooking": "Jaettu varauksen jälkeen",
+    "accept": "Hyväksy suositus",
+    "confirmBooking": "Vahvista varaus",
+    "reject": "Hylkää suositus",
+    "rejectReasonLabel": "Hylkäämisen syy (näytetään kumppanille) *",
+    "rejectConfirm": "Hylätä",
+    "confirmBookingPrompt": "Vahvista varaus? Operatiivinen omistusoikeus siirtyy sinulle ja kumppanista tulee oikeutettu provisioon.",
+    "notice": {
+      "booked": "Varaus vahvistettu.",
+      "accepted": "Suositus hyväksytty.",
+      "rejected": "Suositus hylätty."
+    },
+    "backToReferrals": "Takaisin viittauksiin"
+  },
+  "history": {
+    "title": "Historia",
+    "actor": {
+      "system": "Järjestelmä",
+      "partner": "Kanavakumppani",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Yhteistyökumppanin rekisteröinti vastaanotettu",
+      "DUPLICATE_CHECK_COMPLETED": "Kaksoiskappaleen tarkistus suoritettu - aktiivista kaksoiskappaletta ei löytynyt",
+      "REGISTRATION_ACCEPTED": "Ilmoittautuminen hyväksytty",
+      "PROTECTION_GRANTED_one": "{{count}} päivän suojaus myönnetty",
+      "PROTECTION_GRANTED_other": "{{count}} päivän suojaus myönnetty",
+      "STAGE_UPDATED": "Tila päivitetty {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Päivitetty {{count}} kenttä",
+      "LEAD_DETAILS_UPDATED_other": "Päivitetty {{count}} kenttää",
+      "LEAD_ASSIGNED": "Määrätty käyttäjälle {{name}}",
+      "LEAD_UNASSIGNED": "Ei määritetty",
+      "REFERRAL_ACCEPTED": "Rakentaja hyväksyi suosituksen",
+      "REFERRAL_REJECTED": "Builder hylkäsi viittauksen. Syy: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} n kaksoisrekisteröintiyritys hylättiin",
+      "BOOKING_COMPLETED": "Varaus suoritettu",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Toiminnallinen omistus siirtyi Builderille",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Kumppanin merkintä säilytetty",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komission tukikelpoisuus luotu",
+      "HANDOVER_COMPLETED": "Luovutus suoritettu",
+      "ADMIN_PROTECTION_RELEASED": "Järjestelmänvalvoja julkaisi kaksoissuojauksen aikaisin. Syy: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Järjestelmänvalvoja määritti rekisteröinnin uudelleen osoitteesta {{from}} henkilölle {{to}} . Syy: {{reason}}"
+    }
+  }
+}

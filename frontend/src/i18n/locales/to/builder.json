@@ -1,0 +1,87 @@
+{
+  "shell": {
+    "portal": "Portal 'o e Kau Langa",
+    "referrals": "Ngaahi fakahinohino",
+    "builderLogin": "Login 'a e Kauta Langa",
+    "partnerLogin": "Hu ki he hoa ngaue 'o e Channel"
+  },
+  "login": {
+    "title": "Fakamo'oni 'a e tokotaha langa",
+    "hint": "'Oku fa'u 'e he Leadrat 'a e ngaahi 'akauni 'o e kau langa . Fehuʻi ki hoʻo pule ngāué pe ʻoku ʻikai ke ke maʻu ha taha."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Tatali ki ho'o tu'utu'uni .",
+    "ACCEPTED": "Kuo tali",
+    "REJECTED": "Fakafisinga'i"
+  },
+  "list": {
+    "title": "Ngaahi fakahinohino",
+    "allProjects": "Ngaahi poloseki kotoa pe .",
+    "allStatuses": "Ngaahi tu'unga kotoa pe",
+    "count_other": "{{count}} ngaahi fakahinohino",
+    "columns": {
+      "referral": "Fakahinohino",
+      "customer": "Kasitomā",
+      "project": "Fo'i ngaue",
+      "sourcePartner": "Hoa Ma'u'anga fakamatala",
+      "status": "Tu'unga",
+      "booking": "Puke",
+      "registered": "Lesisita"
+    },
+    "booked": "Puke",
+    "empty": "'Oku te'eki ke 'iai ha referral."
+  },
+  "detail": {
+    "customer": "Kasitomā",
+    "sourcePartner": "Hoa Ma'u'anga fakamatala",
+    "attributionNote": "(faka'uhinga - 'oku 'ikai lava ke liliu)",
+    "leadStatus": "Tu'unga Taki",
+    "protectedUntil": "Maluʻi ʻo aʻu ki he 2020.",
+    "referral": "Fakahinohino",
+    "reason": "'Uhinga: {{reason}}",
+    "booking": "Puke",
+    "bookedOwner": "Booked - ko koe 'a e tokotaha 'oku 'a'ana 'a e ngaue .",
+    "notBooked": "'Oku te'eki ke puke",
+    "sharedAfterBooking": "Vahevahe hili hono puke",
+    "accept": "Tali 'a e Fakahinohino",
+    "confirmBooking": "Fakapapau'i 'a e Puke",
+    "reject": "Fakafisinga'i 'a e Fakahinohino",
+    "rejectReasonLabel": "ʻUhinga ʻo e fakafisingaʻí (fakahaaʻi ki he hoá) * .",
+    "rejectConfirm": "Ta'etali",
+    "confirmBookingPrompt": "Fakapapau'i 'a e puke? 'Oku hiki 'a e 'ea fakangaue kiate koe pea 'oku hoko 'a e hoa ngaue 'o taau ke ma'u 'a e komisoni.",
+    "notice": {
+      "booked": "Kuo fakapapau'i 'a e booking.",
+      "accepted": "Kuo tali 'a e fakahinohino.",
+      "rejected": "Naʻe fakafisingaʻi ʻa e fakahinohinó."
+    },
+    "backToReferrals": "Foki ki he Ngaahi Fakahinohino"
+  },
+  "history": {
+    "title": "Hisitōlia",
+    "actor": {
+      "system": "Fa'unga",
+      "partner": "Hoa ngaue 'o e channel",
+      "admin": "Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Kuo ma'u 'a e lesisita 'o e hoa ngaue",
+      "DUPLICATE_CHECK_COMPLETED": "Kuo fakakakato 'a e sivi 'o e tatau - 'oku 'ikai ke ma'u ha tatau 'oku lolotonga ngaue",
+      "REGISTRATION_ACCEPTED": "'Oku tali 'a e lesisita",
+      "PROTECTION_GRANTED_other": "{{count}} -'aho malu'i kuo foaki",
+      "STAGE_UPDATED": "Fakafo'ou 'a e tu'unga ki he {{stage}}",
+      "LEAD_DETAILS_UPDATED_other": "Fakafo'ou 'a e ngaahi mala'e {{count}}",
+      "LEAD_ASSIGNED": "Vahe ki he {{name}}",
+      "LEAD_UNASSIGNED": "Te'eki vahe",
+      "REFERRAL_ACCEPTED": "Naʻe tali ʻe he Builder ʻa e fakahinohino .",
+      "REFERRAL_REJECTED": "Naʻe fakafisingaʻi ʻe Builder ʻa e fakahinohinó. 'Uhinga: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Naʻe ʻikai tali ʻa e feinga lesisita ʻe {{partner}}",
+      "BOOKING_COMPLETED": "Kuo 'osi 'a e booking",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Kuo hiki 'a e 'ea 'o e ngaue ki he Builder .",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Kuo tauhi 'a e attribution 'o e hoa ngaue",
+      "COMMISSION_ELIGIBILITY_CREATED": "Na'e fa'u 'a e taau ki he Komisoni",
+      "HANDOVER_COMPLETED": "Kuo fakakakato hono tu'uaki",
+      "ADMIN_PROTECTION_RELEASED": "Na'e tukuange vave 'e he Admin 'a e malu'i 'o e duplicate. 'Uhinga: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Na'e toe vahevahe 'e he pule 'a e lesisita mei he {{from}} ki he {{to}} . 'Uhinga: {{reason}}"
+    }
+  }
+}

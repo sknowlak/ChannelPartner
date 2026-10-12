@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Ahustonan",
+    "noPermission": "Bo no tin pèrmit pa manehá settingnan."
+  },
+  "categories": {
+    "lead": "Guia",
+    "user": "Usuario",
+    "integrations": "Integrashonnan"
+  },
+  "leadTabs": {
+    "fields": "Kamponan",
+    "statuses": "Status & Sub-Status",
+    "notifications": "Notifikashonnan i Programadónan"
+  },
+  "fields": {
+    "leadIntro": "Konfigurá e formulario di kaptura di lead: aktivá/deshabilitá terenonan, marka nan nesesario, òf agregá bo propio terenonan personalisá.",
+    "userIntro": "Konfigurá e formulario di Agregá/Editá Miembro di Tim: aktivá/deshabilitá veldnan, marka nan nesesario, òf agregá bo propio veldnan personalisá.",
+    "addCustomField": "+ Agregá Kampo Personalisa",
+    "fieldLabel": "Label di tereno",
+    "group": "Grupo",
+    "groupPlaceholderLead": "p.e. Informashon di Konsulta",
+    "groupPlaceholderUser": "p.e. Detayenan Adishonal",
+    "dataType": "Tipo di dato",
+    "options": "Opshonnan (separá ku kòma)",
+    "requiredLead": "Rekerí - partnernan den bo tim mester yena esaki pa registrá un lead",
+    "requiredUser": "Rekerí - mester wòrdu yená ora di agregá un miembro di tim",
+    "creating": "Kreando...",
+    "createField": "Krea Kampo",
+    "columns": {
+      "field": "Kunuku",
+      "group": "Grupo",
+      "type": "Tipo",
+      "required": "Rekerí",
+      "enabled": "Habilitá",
+      "kind": "Amabel"
+    },
+    "kind": {
+      "custom": "Na midí",
+      "core": "Núkleo (tranca)",
+      "standard": "Standart"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Teksto",
+    "TEXTAREA": "Teksto largu",
+    "NUMBER": "Number",
+    "CURRENCY": "Moneda",
+    "DATE": "Fecha",
+    "SELECT": "Dropdown",
+    "LIST": "Lista"
+  },
+  "picker": {
+    "searchPlaceholder": "Buska terenonan di lead...",
+    "summary": "{{shown}} mustra · {{mandatory}} obligatorio",
+    "mandatory": "Obligatorio",
+    "noMatch": "No tin terenonan ta kuadra."
+  },
+  "statuses": {
+    "intro": "Bo statusnan i sub-statusnan di lead - kiko kada un ta pidi (un fecha i ora, kamponan di lead) ora un hende ta aktualisá un lead na dje.",
+    "add": "+ Agregá Status",
+    "columns": {
+      "order": "Pidi",
+      "status": "Estado",
+      "subStatuses": "Sub-Statusnan",
+      "asksFor": "Ta pidi pa",
+      "active": "Aktivo"
+    },
+    "moveUp": "Move bai ariba",
+    "moveDown": "Move abou",
+    "defaultBadge": "Predeterminá pa leadnan nobo",
+    "bookingBadge": "Status di reservashon",
+    "asksForLabel": "Ta pidi pa {{label}}",
+    "asksForDateTime": "Ta puntra pa fecha i ora",
+    "none": "Niun",
+    "dateTime": "Fecha & ora",
+    "scheduledOn": "riba {{names}}",
+    "fieldsSummary_one": "{{count}} kampo ( {{mandatory}} obligatorio)",
+    "fieldsSummary_other": "{{count}} terenonan ( {{mandatory}} obligatorio)",
+    "deleteConfirm": "Elimina status \" {{name}} \"? Esaki no por wòrdu deshací.",
+    "editTitle": "Editá Status - {{name}}",
+    "newTitle": "Status Nobo",
+    "name": "Nòmber di Status",
+    "colour": "Koló",
+    "active": "Aktivo",
+    "isDefault": "Status predeterminá pa klientenan nobo",
+    "isBooking": "Status di reservashon (fihá pa Reservashon Kompleto)",
+    "whenMoved": "Ora un lead ta wòrdu move pa e status aki",
+    "askSchedule": "Pidi pa un fecha i ora (programadó)",
+    "scheduleLabelPlaceholder": "Label, p.e. Bishitá na",
+    "fieldsToShow": "Kamponan di plomo pa mustra riba e formulario di aktualisashon",
+    "subStatusesTitle": "Sub-Statusnan",
+    "subStatusesHint": "Kada sub-status por pidi su mes fecha i ora i agregá su mes kamponan - mustra riba e kamponan di e status ariba.",
+    "subStatusName": "Nòmber di sub-status",
+    "subFields": "Kamponan ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Etikèt di fecha i ora, p.e. Yama bèk na",
+    "addSubStatus": "+ Agregá Sub-Status",
+    "saveStatus": "Warda Status",
+    "createStatus": "Krea Status"
+  },
+  "notifications": {
+    "intro": "Notifiká e hendenan korekto ora un lead yega na un status - mesora, òf un ora fihá promé/despues di e fecha i ora programá riba dje.",
+    "add": "+ Agregá Notifikashon",
+    "columns": {
+      "notification": "Notifikashon",
+      "whenStatusIs": "Ora Status Ta",
+      "sends": "Manda",
+      "to": "Pa",
+      "via": "Via",
+      "enabled": "Habilitá"
+    },
+    "anyStatus": "Kualke status",
+    "anySubStatus": "Kualke sub-status",
+    "inactiveOption": "{{name}} (inaktivo)",
+    "emptyRules": "No tin notifikashon ainda - agregá un pa alertá bo tim ora un lead yega na un status.",
+    "jobs": {
+      "title": "Programá i Mandá",
+      "firesAt": "Kandela na",
+      "notification": "Notifikashon",
+      "lead": "Guia",
+      "status": "Estado",
+      "details": "Detayenan",
+      "empty": "Nada programá òf mandá ainda.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Na espera di",
+      "PROCESSING": "Prosesamentu",
+      "SENT": "A manda",
+      "FAILED": "A faya",
+      "SKIPPED": "Saltá",
+      "CANCELLED": "Kanselá"
+    },
+    "deliveryStatus": {
+      "SENT": "a manda",
+      "FAILED": "a faya",
+      "SKIPPED": "saltá"
+    },
+    "deliveryChannel": {
+      "IN_APP": "den-app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Usuario asigná",
+      "owner": "Doño",
+      "updatedBy": "Aktualisa pa",
+      "role": "Rol: {{name}}"
+    },
+    "channels": {
+      "inApp": "Den app",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Elimina notifikashon \" {{name}} \"? Rekordatorionan pendiente di dje ta wòrdu kanselá.",
+    "testPrompt": "Manda un tèst di e notifikashon aki pa bo mes (den app) usando kua lead ID ?",
+    "testSent": "Manda pa bo bel: {{title}} {{message}}",
+    "headersInvalid": "Kabesnan Webhook mester ta JSON bálido , p.e. {\"Outorisashon\": \"Portadó xyz\"}",
+    "editTitle": "Editá Notifikashon",
+    "newTitle": "Notifikashon Nobo",
+    "name": "Nòmber",
+    "namePlaceholder": "p.e. Rekordatorio di bishita na e sitio",
+    "whenStatus": "Ora e status di un lead ta",
+    "subStatus": "Sub-status",
+    "send": "Manda (programadó)",
+    "custom": "Na midí...",
+    "modeBefore": "promé ku ora programá",
+    "modeAfter": "despues di ora programá",
+    "noScheduleWarning": "E status aki no ta pidi un fecha i ora, pues un notifikashon di “promé/na/despues di ora programá” lo no sali nunka.",
+    "noScheduleFix": "Abilitá <strong>Pidi un fecha i ora</strong> p’e bou di Status & Sub-Status, òf manda mesora.",
+    "sendTo": "Manda pa (kualke kombinashon)",
+    "recipientAssigned": "Usuario asigná (doño prinsipal)",
+    "recipientOwner": "Doño di kuenta / atministradó",
+    "recipientUpdatedBy": "Persona ku a aktualisá e status",
+    "everyoneWithRole": "Tur hende ku ròl",
+    "specificUsers": "Usuarionan spesífiko (aktivo)",
+    "inactiveNever": "Usuarionan inaktivo nunka no ta risibí notifikashon, asta si nan ta selektá.",
+    "deliverVia": "Entregá via",
+    "channelInApp": "Den-app (bel)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook (proveedó WhatsApp / SMS )",
+    "emailHint": "Email ta bai na e adrès di email di kada destinatario i mester di SMTP set up riba e servidor (backend/.env); te e ora ei e mandamentunan di email ta wòrdu registrá komo saltá.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Kabesnan ( JSON )",
+    "content": "Kontenido di notifikashon",
+    "title": "Titulo",
+    "message": "Mensahe",
+    "insertIntoTitle": "Insertá den Título",
+    "insertIntoMessage": "Insertá den Mensahe",
+    "anyLeadField": "Kualke kampo di lead tambe ta funshoná, p.e. <code1>{{example1}}</code1> òf <code2>{{example2}}</code2> .",
+    "preview": "Previsualisashon (muestra di lead)",
+    "enabled": "Habilitá",
+    "saveRule": "Warda Notifikashon",
+    "createRule": "Krea Notifikashon",
+    "variables": {
+      "customerName": "Nomber prinsipal",
+      "customerMobile": "Plomo di telefòn selular",
+      "customerEmail": "Email prinsipal",
+      "registrationId": "ID di lider",
+      "status": "Estado",
+      "subStatus": "Sub-status",
+      "scheduleAt": "Fecha i ora programá",
+      "assignedTo": "Usuario asigná",
+      "updatedBy": "Aktualisa pa",
+      "recipient": "Nomber di destinatario",
+      "project": "Proyekto",
+      "notes": "Ultimo nota",
+      "partner": "Nomber di partner"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Mesora ora e status ta fihá",
+      "AT": "Na e ora programá",
+      "A1D": "1 dia despues di e ora programá (kontrol di siguimentu)"
+    },
+    "immediately": "Mésora",
+    "atScheduled": "Na ora programá",
+    "before": {
+      "MINUTES_one": "{{count}} minüt promé ku ora programá",
+      "MINUTES_other": "{{count}} minüt promé ku orario programá",
+      "HOURS_one": "{{count}} ora promé ku ora programá",
+      "HOURS_other": "{{count}} oranan promé ku orario programá",
+      "DAYS_one": "{{count}} dia promé ku orario programá",
+      "DAYS_other": "{{count}} dia promé ku e orario programá",
+      "WEEKS_one": "{{count}} siman promé ku orario programá",
+      "WEEKS_other": "{{count}} simannan promé ku e orario programá",
+      "MONTHS_one": "{{count}} luna promé ku e orario programá",
+      "MONTHS_other": "{{count}} lunanan promé ku e orario programá",
+      "YEARS_one": "{{count}} aña promé ku e tempu programá",
+      "YEARS_other": "{{count}} aña promé ku e tempu programá"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minüt despues di e ora programá",
+      "MINUTES_other": "{{count}} minüt despues di e orario programá",
+      "HOURS_one": "{{count}} ora despues di ora programá",
+      "HOURS_other": "{{count}} ora despues di e orario programá",
+      "DAYS_one": "{{count}} dia despues di ora programá",
+      "DAYS_other": "{{count}} dia despues di e ora programá",
+      "WEEKS_one": "{{count}} siman despues di e orario programá",
+      "WEEKS_other": "{{count}} simannan despues di e tempu programá",
+      "MONTHS_one": "{{count}} luna despues di e tempu programá",
+      "MONTHS_other": "{{count}} lunanan despues di e tempu programá",
+      "YEARS_one": "{{count}} aña despues di e tempu programá",
+      "YEARS_other": "{{count}} aña despues di e tempu programá"
+    },
+    "units": {
+      "MINUTES_one": "minüt",
+      "MINUTES_other": "minütnan",
+      "HOURS_one": "ora",
+      "HOURS_other": "oranan",
+      "DAYS_one": "dia",
+      "DAYS_other": "dianan",
+      "WEEKS_one": "siman",
+      "WEEKS_other": "simannan",
+      "MONTHS_one": "luna",
+      "MONTHS_other": "lunanan",
+      "YEARS_one": "aña",
+      "YEARS_other": "añanan"
+    }
+  }
+}

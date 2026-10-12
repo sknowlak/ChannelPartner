@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Parametrler",
+    "noPermission": "Parametrlerni idare etmege ruhsetiñiz yoq."
+  },
+  "categories": {
+    "lead": "Alıp barmaq",
+    "user": "Qullanıcı",
+    "integrations": "İntegratsiyalar"
+  },
+  "leadTabs": {
+    "fields": "Tarlalar",
+    "statuses": "Statuslar ve yardımcı statuslar",
+    "notifications": "Haberdarlıqlar ve planlaştırıcılar"
+  },
+  "fields": {
+    "leadIntro": "Lidni tutmaq formasını konfiguratsiya etiñiz: meydançıqlarnı çalıştırıñız/çalıştırmañ, olarnı kerekli dep belgileñiz ya da öz mahsus meydançıqlarıñıznı qoşıñız.",
+    "userIntro": "«Komanda azasını qoşmaq/deñiştirmek» formasını konfiguratsiya etiñiz: meydançıqlarnı çalıştırıñız/çalıştırmañ, olarnı kerekli dep belgileñiz ya da öz mahsus meydançıqlarıñıznı qoşıñız.",
+    "addCustomField": "+ Qollanılğan meydannı qoşmaq",
+    "fieldLabel": "Alan yarlığı",
+    "group": "Taqım",
+    "groupPlaceholderLead": "meselâ, sorğu aqqında malümat",
+    "groupPlaceholderUser": "meselâ, qoşma malümat",
+    "dataType": "Malümatnıñ çeşiti",
+    "options": "Variantlar (virgülnen ayırılğan)",
+    "requiredLead": "Kerekli - siziñ komandadaki şerikler lidni cedvelge almaq içün bunı toldurmaq kerekler",
+    "requiredUser": "Kerekli - komanda azasını qoşqanda toldurmaq kerek",
+    "creating": "Yaratmaq...",
+    "createField": "Alannı yaratıñız",
+    "columns": {
+      "field": "Tarla",
+      "group": "Taqım",
+      "type": "Tür",
+      "required": "Kerekli",
+      "enabled": "İşletildi",
+      "kind": "Çeşit"
+    },
+    "kind": {
+      "custom": "Adet",
+      "core": "Özyek (kilitlengen)",
+      "standard": "Standart"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Metin",
+    "TEXTAREA": "Üzün metin",
+    "NUMBER": "Nomera",
+    "CURRENCY": "Para birimi",
+    "DATE": "Vasıl",
+    "SELECT": "Açılğan cedvel",
+    "LIST": "Cedvel"
+  },
+  "picker": {
+    "searchPlaceholder": "Qurşun meydanlarını qıdırıñız...",
+    "summary": "{{shown}} kösterildi · {{mandatory}} farz",
+    "mandatory": "Lâzim",
+    "noMatch": "İç bir tarla kelişmey."
+  },
+  "statuses": {
+    "intro": "Siziñ lid statuslarıñız ve alt statuslarıñız - kimdir lidni oña yañılandırğanda, er biri ne soray (tarih & vaqıt, lid meydanları).",
+    "add": "+ Status qoşmaq",
+    "columns": {
+      "order": "Sımarış",
+      "status": "Vaziyet",
+      "subStatuses": "Alt statuslar",
+      "asksFor": "Soray",
+      "active": "Faal"
+    },
+    "moveUp": "Yuqarığa köçiñiz",
+    "moveDown": "Aşağı avuştırıñız",
+    "defaultBadge": "Yañı lidler içün standart",
+    "bookingBadge": "Bronirovaniye statusı",
+    "asksForLabel": "{{label}} soray",
+    "asksForDateTime": "Tarih ve vaqıt soray",
+    "none": "Kimse",
+    "dateTime": "Tarih ve vaqıt",
+    "scheduledOn": "{{names}} üstünde",
+    "fieldsSummary_one": "{{count}} meydançığı ( {{mandatory}} farz)",
+    "fieldsSummary_other": "{{count}} meydançıqları ( {{mandatory}} farz)",
+    "deleteConfirm": "\" {{name}} \" statusını yoq etmek? Bunı keri qaytarmaq mümkün degil.",
+    "editTitle": "Deñiştirüv statusı - {{name}}",
+    "newTitle": "Yañı statusı",
+    "name": "Statusnıñ adı",
+    "colour": "Renk",
+    "active": "Faal",
+    "isDefault": "Yañı lidler içün standart statusı",
+    "isBooking": "Bronirovaniye statusı (Tolu bronirovaniye tarafından belgilengen)",
+    "whenMoved": "Bu statusqa bir de bir yolbaşçılıq avuştırılğanda",
+    "askSchedule": "Kün ve vaqıtnı sora (planlaştırıcı)",
+    "scheduleLabelPlaceholder": "Yarlıq, meselâ, ziyaret etiñiz",
+    "fieldsToShow": "Yañılanma formasında kösterilmek içün yolbaşçı meydançıqlar",
+    "subStatusesTitle": "Alt statuslar",
+    "subStatusesHint": "Er bir alt status öz tarihını & vaqtını soray bile ve öz meydanlarını qoşa bile - yuqarıdaki status meydanlarınıñ üstünde kösterile.",
+    "subStatusName": "Alt statusınıñ adı",
+    "subFields": "Alanlar ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Tarih ve vaqıt yarlığı, meselâ, 100 nomerde qaytarıp çağırıñız",
+    "addSubStatus": "+ Ast statusnı qoşmaq",
+    "saveStatus": "Statusnı saqlamaq",
+    "createStatus": "Statusnı yaratıñız"
+  },
+  "notifications": {
+    "intro": "Lid statusına yetse, doğru adamlarğa haber etiñiz - deral, ya da onıñ üstünde planlaştırılğan tarih ve vaqıttan evel/soñ belli bir vaqıtta.",
+    "add": "+ Haberdarlıq qoşmaq",
+    "columns": {
+      "notification": "Haberdarlıq",
+      "whenStatusIs": "Status olğanda",
+      "sends": "Yollay",
+      "to": "Daa",
+      "via": "Vastasınen",
+      "enabled": "İşletildi"
+    },
+    "anyStatus": "Er angi statusı",
+    "anySubStatus": "Er angi alt statusı",
+    "inactiveOption": "{{name}} (faal olmağan)",
+    "emptyRules": "Alâ daa haberdarlıq yoq - lider statusqa yetse, komandañnı haberdar etmek içün birini qoş.",
+    "jobs": {
+      "title": "Planlaştırılğan ve yollanılğan",
+      "firesAt": "Yanğınlar",
+      "notification": "Haberdarlıq",
+      "lead": "Alıp barmaq",
+      "status": "Vaziyet",
+      "details": "Tafsilâtlar",
+      "empty": "Daa planlaştırılğan ve yollanılğan bir şey yoq.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Beklegen",
+      "PROCESSING": "İşlev",
+      "SENT": "Yiberildi",
+      "FAILED": "Hayırsız",
+      "SKIPPED": "Atlandı",
+      "CANCELLED": "Lâğu etildi"
+    },
+    "deliveryStatus": {
+      "SENT": "yiberildi",
+      "FAILED": "hayırsız",
+      "SKIPPED": "atıldı"
+    },
+    "deliveryChannel": {
+      "IN_APP": "qullanma içinde",
+      "EMAIL": "poçta",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Tayinlengen qullanıcı",
+      "owner": "Şorbacı",
+      "updatedBy": "2019 senesi yañılandı",
+      "role": "Rol: {{name}}"
+    },
+    "channels": {
+      "inApp": "Qollanma içinde",
+      "email": "Elektron poçta",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "\" {{name}} \" haberini yoq etmek? Ondan beklenilgen hatırlatmalar lâğu etile.",
+    "testPrompt": "Bu haberniñ testini özüñizge (ilâve içinde) nasıl lid ID qullanıp yollamaq ?",
+    "testSent": "Siziñ çañıñızğa yollanıldı: {{title}} {{message}}",
+    "headersInvalid": "Webhook başlıqları doğru JSON olmaq kerek , meselâ {\"Avtorizatsiya\": \"Taşıyıcısı xyz\"}",
+    "editTitle": "Haberdarlıqnı deñiştirmek",
+    "newTitle": "Yañı haberdarlıq",
+    "name": "Ad",
+    "namePlaceholder": "meselâ, Saytqa kirmek aqqında hatırlatma",
+    "whenStatus": "Qurşunnıñ statusı 1 olğanda",
+    "subStatus": "Alt statusı",
+    "send": "Yollamaq (planlaştırıcı)",
+    "custom": "Adet...",
+    "modeBefore": "planlaştırılğan vaqıttan evel",
+    "modeAfter": "planlaştırılğan vaqıttan soñ",
+    "noScheduleWarning": "Bu statusta tarih ve vaqıt soramay, şunıñ içün \"planlaştırılğan vaqıttan evel/vaqıtta/soñ\" haberi iç bir vaqıt atılmaz edi.",
+    "noScheduleFix": "Statuslar ve yardımcı statuslar yerine onıñ içün <strong>tarih ve vaqıtnı soramaqnı</strong> yaqıñız ya da Deral yollamaq kereksiñiz.",
+    "sendTo": "(Er angi kombinatsiyağa) yollamaq",
+    "recipientAssigned": "Tayinlengen qullanıcı (baş saibi)",
+    "recipientOwner": "Esap saibi / admin",
+    "recipientUpdatedBy": "Statusnı yañılandırğan adam",
+    "everyoneWithRole": "Rolü olğan er kes",
+    "specificUsers": "Konkret qullanıcılar (faal)",
+    "inactiveNever": "Faal olmağan qullanıcılar, saylanğan olsalar bile, iç bir vaqıt haberdarlıq almaylar.",
+    "deliverVia": "yardımınen yetkizmek",
+    "channelInApp": "Qoşma içinde (çañ)",
+    "channelEmail": "Elektron poçta",
+    "channelWebhook": "Webhook ( WhatsApp / SMS provayderi)",
+    "emailHint": "Elektron poçta er bir alğan adamnıñ elektron poçta adresine kete ve serverde SMTP yerleştirilgeni kerek (backend/.env); o vaqıtqace poçta yollanmaları atılğan kibi yazıla.",
+    "webhookUrl": "Webhook URL ( POST , JSON ).",
+    "headers": "Başlıqlar ( JSON ) .",
+    "content": "Haberdarlıqnıñ mündericesi",
+    "title": "Başlıq",
+    "message": "Beyanat",
+    "insertIntoTitle": "Serlevağa kirsetmek",
+    "insertIntoMessage": "Haberge qoymaq",
+    "anyLeadField": "Er bir yolbaşçı meydan da çalışır, meselâ <code1>{{example1}}</code1> ya da <code2>{{example2}}</code2> .",
+    "preview": "Ögrenüv (nümüneviy yolbaşçılıq)",
+    "enabled": "İşletildi",
+    "saveRule": "Haberdarlıqnı saqlamaq",
+    "createRule": "Haberdarlıqnı yaratıñız",
+    "variables": {
+      "customerName": "Qurşun adı",
+      "customerMobile": "Qurşunlı mobil",
+      "customerEmail": "Qarşılıqlı poçta",
+      "registrationId": "Qurşun ID",
+      "status": "Vaziyet",
+      "subStatus": "Alt statusı",
+      "scheduleAt": "Planlaştırılğan kün ve vaqıt",
+      "assignedTo": "Tayinlengen qullanıcı",
+      "updatedBy": "2019 senesi yañılandı",
+      "recipient": "Alğan adamnıñ adı",
+      "project": "Leyha",
+      "notes": "Soñki qayd",
+      "partner": "Ortaknıñ adı"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Status qoyulğan soñ deral",
+      "AT": "Planlaştırılğan vaqıtta",
+      "A1D": "Planlaştırılğan vaqıttan 1 kün soñ (nevbetteki teşkerüv)"
+    },
+    "immediately": "Deral",
+    "atScheduled": "Planlaştırılğan vaqıtta",
+    "before": {
+      "MINUTES_one": "{{count}} planlaştırılğan vaqıttan bir daqqa evel",
+      "MINUTES_other": "{{count}} planlaştırılğan vaqıttan bir qaç daqqa evel",
+      "HOURS_one": "{{count}} planlaştırılğan vaqıttan bir saat evel",
+      "HOURS_other": "{{count}} planlaştırılğan vaqıttan bir qaç saat evel",
+      "DAYS_one": "{{count}} planlaştırılğan vaqıttan bir kün evel",
+      "DAYS_other": "{{count}} planlaştırılğan vaqıttan 10 kün evel",
+      "WEEKS_one": "{{count}} planlaştırılğan vaqıttan bir afta evel",
+      "WEEKS_other": "{{count}} planlaştırılğan vaqıttan bir qaç afta evel",
+      "MONTHS_one": "{{count}} planlaştırılğan vaqıttan bir ay evel",
+      "MONTHS_other": "{{count}} planlaştırılğan vaqıttan bir qaç ay evel",
+      "YEARS_one": "{{count}} planlaştırılğan vaqıttan bir yıl evel",
+      "YEARS_other": "{{count}} planlaştırılğan vaqıttan yıllar evel"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} planlaştırılğan vaqıttan daqqa soñ",
+      "MINUTES_other": "{{count}} planlaştırılğan vaqıttan daqqa soñra",
+      "HOURS_one": "{{count}} planlaştırılğan vaqıttan bir saat soñra",
+      "HOURS_other": "{{count}} planlaştırılğan vaqıttan soñ saat",
+      "DAYS_one": "{{count}} planlaştırılğan vaqıttan soñ bir kün",
+      "DAYS_other": "{{count}} planlaştırılğan vaqıttan 10 kün soñ",
+      "WEEKS_one": "{{count}} planlaştırılğan vaqıttan afta soñra",
+      "WEEKS_other": "{{count}} planlaştırılğan vaqıttan soñ afta",
+      "MONTHS_one": "{{count}} planlaştırılğan vaqıttan soñ ay",
+      "MONTHS_other": "{{count}} planlaştırılğan vaqıttan soñ ay",
+      "YEARS_one": "{{count}} planlaştırılğan vaqıttan soñ yıl",
+      "YEARS_other": "{{count}} planlaştırılğan vaqıttan soñ yıl"
+    },
+    "units": {
+      "MINUTES_one": "daqqa",
+      "MINUTES_other": "daqqalar",
+      "HOURS_one": "saat",
+      "HOURS_other": "saatlar",
+      "DAYS_one": "kün",
+      "DAYS_other": "kün",
+      "WEEKS_one": "afta",
+      "WEEKS_other": "afta",
+      "MONTHS_one": "ay",
+      "MONTHS_other": "aylar",
+      "YEARS_one": "yıl",
+      "YEARS_other": "yıllar"
+    }
+  }
+}

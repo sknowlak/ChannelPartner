@@ -1,0 +1,60 @@
+{
+  "list": {
+    "title": "Byggare & projekt",
+    "hint": "Byggare loggar in på byggarportalen för att acceptera remisser för sina projekt och bekräfta bokningar.",
+    "newOrg": "Ny byggarorganisation",
+    "namePlaceholder": "t.ex. Prestige Group",
+    "add": "Lägg till Builder",
+    "columns": {
+      "builder": "Byggmästare",
+      "status": "Status",
+      "users": "Användare",
+      "projects": "Projekt"
+    },
+    "empty": "Inga byggare än."
+  },
+  "detail": {
+    "deactivateHint": "Genom att avaktivera loggas alla användare av denna byggare ut omedelbart.",
+    "deactivate": "Avaktivera",
+    "activate": "Aktivera",
+    "usersTitle": "Portalanvändare",
+    "userColumns": {
+      "name": "Namn",
+      "email": "E-post",
+      "status": "Status",
+      "lastLogin": "Senaste inloggning",
+      "actions": "Åtgärder"
+    },
+    "resetPassword": "Återställ lösenord",
+    "resetPrompt": "Nytt lösenord för {{name}} (minst 8 tecken). De kommer att loggas ut överallt.",
+    "passwordReset": "Lösenordsåterställning för {{name}} .",
+    "noUsers": "Inga användare ännu.",
+    "userForm": {
+      "name": "Namn",
+      "email": "E-post",
+      "initialPassword": "Initialt lösenord (8+)",
+      "add": "Lägg till användare",
+      "added": "Lade till {{name}} ."
+    },
+    "projectsTitle": "Projekt",
+    "projectsHint": "Partners väljer från aktiva projekt när de registrerar en lead; remissen går till denna byggare.",
+    "projectColumns": {
+      "code": "Koda",
+      "name": "Namn",
+      "city": "Stad",
+      "status": "Status",
+      "actions": "Åtgärder"
+    },
+    "closeReferrals": "Stäng för remisser",
+    "reopen": "Öppna igen",
+    "noProjects": "Inga projekt ännu.",
+    "projectForm": {
+      "code": "Kod, t.ex. PROJEKT-A",
+      "name": "Namn",
+      "city": "Stad (valfritt)",
+      "add": "Lägg till projekt",
+      "created": "Skapade {{name}} ."
+    },
+    "back": "Tillbaka till Builders"
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Islugnan",
+    "noPermission": "Ur tesɛiḍ ara ttesriḥ akken ad tesselḥuḍ isefka."
+  },
+  "categories": {
+    "lead": "Asfelazaglu",
+    "user": "Aseqdac",
+    "integrations": "Asdukkel"
+  },
+  "leadTabs": {
+    "fields": "Igran",
+    "statuses": "Tignatin & Tignatin n ddaw",
+    "notifications": "Iberdan d Imseḍruyen"
+  },
+  "fields": {
+    "leadIntro": "Sbedd tafelwit n tuṭṭfa n usmel: sbedd/sbedd iḥricen, sbedd-iten d iḥwaǧen, neɣ rnu iḥricen-ik n usmel.",
+    "userIntro": "Sbedd tafelwit Rnu/Beddel Aɛeggal n Teɣlamt: sbedd/sbedd iḥricen, sbedd-iten d iḥwaǧen, neɣ rnu iḥricen-ik n usmel.",
+    "addCustomField": "+ Rnu Aḥric n Useqdec",
+    "fieldLabel": "Asekkil n unnar",
+    "group": "Agraw",
+    "groupPlaceholderLead": "Md. Isalan n Useqsi",
+    "groupPlaceholderUser": "Md. Ifassen n zyada",
+    "dataType": "Ṣṣenf n Isefka",
+    "options": "Iḍrisen (bḍan s tiddit)",
+    "requiredLead": "Ilaq - icriken n terbaɛt-ik yessefk ad ččaren aya iwakken ad sseknen aselway",
+    "requiredUser": "Ilaq - yessefk ad yettwaččar mi ara yernu yiwen seg yiɛeggalen n terbaɛt",
+    "creating": "Asnulfu...",
+    "createField": "Snulfu-d Annar",
+    "columns": {
+      "field": "Amkan",
+      "group": "Agraw",
+      "type": "Aru",
+      "required": "Yettwaḥwaǧ",
+      "enabled": "Yettwasekles",
+      "kind": "D tin n lεali"
+    },
+    "kind": {
+      "custom": "Asmel",
+      "core": "Uẓar (yeqqen)",
+      "standard": "Amslugan"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Aḍris",
+    "TEXTAREA": "Aḍris ɣezzifen",
+    "NUMBER": "Uṭṭun",
+    "CURRENCY": "Tadrimt",
+    "DATE": "Azmez",
+    "SELECT": "Aḍris i d-yeɣlin",
+    "LIST": "Umuɣ"
+  },
+  "picker": {
+    "searchPlaceholder": "Anadi ɣef yiḥricen n usmel...",
+    "summary": "{{shown}} yettwasken · {{mandatory}} iḥezziben",
+    "mandatory": "Awalen",
+    "noMatch": "Ulac igran yettemcabin."
+  },
+  "statuses": {
+    "intro": "Iḍrisen-ik n tmeẓla d yiḍrisen n tmeẓla - ayen yettsuttur yal yiwen (azemz & akud, iḥricen n tmeẓla) mi ara yesnefli yiwen n tmeẓla ɣur-s.",
+    "add": "+ Rnu Adeg",
+    "columns": {
+      "order": "Lwṣaya",
+      "status": "Talɣa",
+      "subStatuses": "Tignatin n ddaw",
+      "asksFor": "Yessuter",
+      "active": "Yezwer"
+    },
+    "moveUp": "Ssufeɣ-d s afella",
+    "moveDown": "Ssuqel ɣer wadda",
+    "defaultBadge": "Amsawal i yimdanen imaynuten",
+    "bookingBadge": "Adeg n usmel",
+    "asksForLabel": "Yessuter {{label}}",
+    "asksForDateTime": "Yessuter azemz d wakud",
+    "none": "Ulac",
+    "dateTime": "Azemz d wakud",
+    "scheduledOn": "ɣef {{names}}",
+    "fieldsSummary_one": "{{count}} aḥric ( {{mandatory}} ilzem)",
+    "fieldsSummary_other": "{{count}} igran ( {{mandatory}} ilzem)",
+    "deleteConfirm": "Kkes addad \" {{name}} \"? Aya ur yezmir ara ad yettwabeddel.",
+    "editTitle": "Beddel Adeg - {{name}}",
+    "newTitle": "Adeg Amaynut",
+    "name": "Isem n waddad",
+    "colour": "Ini",
+    "active": "Yezwer",
+    "isDefault": "Adeg amenzu i yimdanen imaynuten",
+    "isBooking": "Adeg n usmel (yettwasbedd s usmel akemmali)",
+    "whenMoved": "Mi ara yettwasnefli umsawal ɣer tegnit-a",
+    "askSchedule": "Seqsi azemz d wakud (aheggi)",
+    "scheduleLabelPlaceholder": "Label, amedya Rzu ɣer",
+    "fieldsToShow": "Igran n usmel ad d-ttwaseknen deg uḍris n useɣnew",
+    "subStatusesTitle": "Tignatin n ddaw",
+    "subStatusesHint": "Yal aḍris n tfelwit yezmer ad yessuter azemz & akud-is yerna ad yernu iḥricen-is - yettwasbegnen s ufella n yiḥricen n uḍris s ufella.",
+    "subStatusName": "Isem n ddaw n tegnit",
+    "subFields": "Igran ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Asekkil n wass d wakud, amedya Ssiwlet-d s",
+    "addSubStatus": "+ Rnu Adeg n Ddaw",
+    "saveStatus": "Ḥrez Adeg",
+    "createStatus": "Snulfu-d Adeg"
+  },
+  "notifications": {
+    "intro": "Ssiweḍ-d i yemdanen iwulmen mi ara yaweḍ yiwen n umsalay ɣer yiwen n lḥal - srid, neɣ ɣer yiwen n wakud yettwasbedden uqbel/deffir n wass & akud yettwasbedden fell-as.",
+    "add": "+ Rnu Aberreḥ",
+    "columns": {
+      "notification": "Abeggen",
+      "whenStatusIs": "Melmi ara yili lḥal",
+      "sends": "Yettazen",
+      "to": "I",
+      "via": "Seg",
+      "enabled": "Yettwasekles"
+    },
+    "anyStatus": "Kra n tegnit",
+    "anySubStatus": "Yal adeg n ddaw",
+    "inactiveOption": "{{name}} (ur yettwaxdam ara)",
+    "emptyRules": "Ur llan ara yisalan - rnu-d yiwen akken ad tesnefliḍ tarbaɛt-ik mi ara yaweḍ umḍebber ɣer yiwen n lḥal.",
+    "jobs": {
+      "title": "Yettwahegga & Yettwazen",
+      "firesAt": "Times deg",
+      "notification": "Abeggen",
+      "lead": "Asfelazaglu",
+      "status": "Talɣa",
+      "details": "Ttfaṣil",
+      "empty": "Ulac ayen yettwaheggan neɣ yettwazen.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Ar mara",
+      "PROCESSING": "Aseqdec",
+      "SENT": "Ceggeε",
+      "FAILED": "Yexṣer",
+      "SKIPPED": "Yettwaɛzel",
+      "CANCELLED": "Yettwabṭel"
+    },
+    "deliveryStatus": {
+      "SENT": "ceggeε",
+      "FAILED": "yexṣer",
+      "SKIPPED": "Yettwaɛzel"
+    },
+    "deliveryChannel": {
+      "IN_APP": "deg useɣzan",
+      "EMAIL": "imayl",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Aseqdac yettunefken",
+      "owner": "Bab-is",
+      "updatedBy": "Yettwasnefli sɣur",
+      "role": "Tamlilt: {{name}}"
+    },
+    "channels": {
+      "inApp": "Deg useɣzan",
+      "email": "Imayl",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Kkes alɣu \" {{name}} \"? Asmekti yettwaɛelqen seg-s yettwabṭel.",
+    "testPrompt": "Azneḍ-d akayad n usmel-a i yiman-ik (deg tesgilt) s useqdec n wacu n lead ID ?",
+    "testSent": "Yettwazen ɣer uẓeṭṭa-inek: {{title}} {{message}}",
+    "headersInvalid": "Iqeddacen Webhook yessefk ad ilin JSON iwatan , amedya {\"Asnefli\": \"Asmel xyz\"}",
+    "editTitle": "Beddel Aberreḥ",
+    "newTitle": "Abeggen Amaynut",
+    "name": "Isem",
+    "namePlaceholder": "Md. Asmekti n tirza n usmel",
+    "whenStatus": "Mi ara yili lḥal n umḍebber",
+    "subStatus": "Tagnit n ddaw",
+    "send": "Azen (aheggi)",
+    "custom": "Asmel...",
+    "modeBefore": "send akud yettwaheggan",
+    "modeAfter": "Deffir n wakud yettwaheggan",
+    "noScheduleWarning": "Addud-a ur yessutur ara azemz & akud, ihi aɣtas \"uqbel/deg/deffir akud yettwasbedden\" ur yettbeddil ara.",
+    "noScheduleFix": "Ssexdem <strong>Suter ass & akud</strong> fell-as ddaw n Yilugan & Ilugan n tfelwit, neɣ azneḍ Imiren kan.",
+    "sendTo": "Azen i (kra asdukkel)",
+    "recipientAssigned": "Aseqdac yettwafernen (bab n tmezwarut)",
+    "recipientOwner": "Bab n umiḍan / anemhal",
+    "recipientUpdatedBy": "Amdan i d-yesbedden adeg",
+    "everyoneWithRole": "Yal yiwen s dduṛ-is",
+    "specificUsers": "Iseqdacen usligen (iqeddacen)",
+    "inactiveNever": "Iseqdacen ur nexdim ara ur ttawin ara isalan, ula ma ttwafernen.",
+    "deliverVia": "Ssiweḍ sɣur",
+    "channelInApp": "Deg-asnas (aẓeṭṭa)",
+    "channelEmail": "Imayl",
+    "channelWebhook": "Webhook (Amsefrak WhatsApp / SMS )",
+    "emailHint": "Email yettṛuḥ ɣer tansa n email n yal amsaɣ yerna yessefk SMTP yettwasbedden deg uqeddac (backend/.env); alamma d asmi ara ttwasekkren yizen n yimel amzun ttwaɛezlen.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Iqeddacen ( JSON )",
+    "content": "Agbur n Ubeggen",
+    "title": "Azwel",
+    "message": "Awal",
+    "insertIntoTitle": "Ssekcem deg uzwel",
+    "insertIntoMessage": "Ssekcem deg yizen",
+    "anyLeadField": "Yal aḥric n tmeẓdit ixeddem daɣen, amedya <code1>{{example1}}</code1> neɣ <code2>{{example2}}</code2> .",
+    "preview": "Asekcem n tmuɣli (amzun n uselway)",
+    "enabled": "Yettwasekles",
+    "saveRule": "Ḥrez Aberreḥ",
+    "createRule": "Snulfu-d Aberreḥ",
+    "variables": {
+      "customerName": "Isem n uselway",
+      "customerMobile": "Aselway n tilifun",
+      "customerEmail": "Imayl n uselway",
+      "registrationId": "ID n uselway",
+      "status": "Talɣa",
+      "subStatus": "Tagnit n ddaw",
+      "scheduleAt": "Azemz d wakud yettwaheggan",
+      "assignedTo": "Aseqdac yettunefken",
+      "updatedBy": "Yettwasnefli sɣur",
+      "recipient": "Isem n umsaɣ",
+      "project": "Asenfaṛ",
+      "notes": "Tamawt taneggarut",
+      "partner": "Isem n ucrik"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Imiren kan mi ara yettwasbedd lḥala",
+      "AT": "Deg wakud yettwaheggan",
+      "A1D": "1 wass deffir n wakud yettwaheggan (asefqed n uḍfar)"
+    },
+    "immediately": "Imiren kan",
+    "atScheduled": "Deg wakud yettwaheggan",
+    "before": {
+      "MINUTES_one": "{{count}} dqiqa send akud yettwaheggan",
+      "MINUTES_other": "{{count}} n tedqiqin send akud yettwaheggan",
+      "HOURS_one": "{{count}} ssaɛa send akud yettwaheggan",
+      "HOURS_other": "{{count}} n tsaɛtin send akud yettwaheggan",
+      "DAYS_one": "{{count}} ass send akud yettwaheggan",
+      "DAYS_other": "{{count}} ussan send akud yettwaheggan",
+      "WEEKS_one": "{{count}} ddurt send akud yettwaheggan",
+      "WEEKS_other": "{{count}} dduṛt send akud yettwaheggan",
+      "MONTHS_one": "{{count}} ayyur send akud yettwaheggan",
+      "MONTHS_other": "{{count}} ayyuren send akud yettwaheggan",
+      "YEARS_one": "{{count}} aseggas send akud yettwaheggan",
+      "YEARS_other": "{{count}} iseggasen send akud yettwaheggan"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} dqiqa send akud yettwaheggan",
+      "MINUTES_other": "{{count}} n tedqiqin send akud yettwaheggan",
+      "HOURS_one": "{{count}} ssaɛa send akud yettwaheggan",
+      "HOURS_other": "{{count}} n tsaɛtin send akud yettwaheggan",
+      "DAYS_one": "{{count}} ass send akud yettwaheggan",
+      "DAYS_other": "{{count}} ussan deffir n wakud yettwaheggan",
+      "WEEKS_one": "{{count}} ddurt deffir n wakud yettwaheggan",
+      "WEEKS_other": "{{count}} dduṛt send akud yettwaheggan",
+      "MONTHS_one": "{{count}} ayyur send akud yettwaheggan",
+      "MONTHS_other": "{{count}} ayyuren send akud yettwaheggan",
+      "YEARS_one": "{{count}} aseggas deffir n wakud yettwaheggan",
+      "YEARS_other": "{{count}} iseggasen send akud yettwaheggan"
+    },
+    "units": {
+      "MINUTES_one": "dqiqa",
+      "MINUTES_other": "Dqayeq",
+      "HOURS_one": "ssaεa",
+      "HOURS_other": "tisaɛtin",
+      "DAYS_one": "ass",
+      "DAYS_other": "ussan",
+      "WEEKS_one": "ddurt",
+      "WEEKS_other": "smanat",
+      "MONTHS_one": "aggur",
+      "MONTHS_other": "n wayyuren",
+      "YEARS_one": "Aseggas",
+      "YEARS_other": "iseggasen"
+    }
+  }
+}

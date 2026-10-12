@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "İnşaatçı Portalı",
+    "referrals": "İstinadlar",
+    "builderLogin": "İnşaatçı Girişi",
+    "partnerLogin": "Kanal Partnyoruna Giriş"
+  },
+  "login": {
+    "title": "İnşaatçı daxil olun",
+    "hint": "İnşaatçı hesabları Leadrat tərəfindən yaradılır. Əgər sizdə yoxdursa, administratorunuzdan soruşun."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Qərarınızı gözləyirik",
+    "ACCEPTED": "Qəbul edildi",
+    "REJECTED": "Rədd edildi"
+  },
+  "list": {
+    "title": "İstinadlar",
+    "allProjects": "Bütün layihələr",
+    "allStatuses": "Bütün statuslar",
+    "count_one": "{{count}} müraciət",
+    "count_other": "{{count}} referal",
+    "columns": {
+      "referral": "İstinad",
+      "customer": "Müştəri",
+      "project": "Layihə",
+      "sourcePartner": "Mənbə Tərəfdaş",
+      "status": "Vəziyyət",
+      "booking": "Rezervasyon",
+      "registered": "Qeydiyyatdan keçib"
+    },
+    "booked": "bron edildi",
+    "empty": "Hələ referal yoxdur."
+  },
+  "detail": {
+    "customer": "Müştəri",
+    "sourcePartner": "Mənbə Tərəfdaş",
+    "attributionNote": "(atribusiya - dəyişdirilə bilməz)",
+    "leadStatus": "Aparıcı Vəziyyəti",
+    "protectedUntil": "qədər qorunur",
+    "referral": "İstinad",
+    "reason": "Səbəb: {{reason}}",
+    "booking": "Rezervasyon",
+    "bookedOwner": "Rezervasiya edildi - siz əməliyyat sahibisiniz",
+    "notBooked": "rezervasiya edilməyib",
+    "sharedAfterBooking": "Rezervasyondan sonra paylaşıldı",
+    "accept": "Referal qəbul edin",
+    "confirmBooking": "Rezervasyonu təsdiqləyin",
+    "reject": "İstinaddan imtina edin",
+    "rejectReasonLabel": "Rədd etmə səbəbi (şərikə göstərilir) *",
+    "rejectConfirm": "Rədd edin",
+    "confirmBookingPrompt": "Rezervasiya təsdiq edilsin? Əməliyyat mülkiyyəti sizə keçir və tərəfdaş komissiya üçün uyğun olur.",
+    "notice": {
+      "booked": "Rezervasiya təsdiqləndi.",
+      "accepted": "Referans qəbul edildi.",
+      "rejected": "İstinad rədd edildi."
+    },
+    "backToReferrals": "İstinadlar səhifəsinə qayıt"
+  },
+  "history": {
+    "title": "Tarix",
+    "actor": {
+      "system": "Sistem",
+      "partner": "Kanal tərəfdaşı",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Tərəfdaş qeydiyyatı alındı",
+      "DUPLICATE_CHECK_COMPLETED": "Dublikat yoxlanışı tamamlandı - aktiv dublikat tapılmadı",
+      "REGISTRATION_ACCEPTED": "Qeydiyyat qəbul edildi",
+      "PROTECTION_GRANTED_one": "{{count}} -günlük qoruma verilir",
+      "PROTECTION_GRANTED_other": "{{count}} -günlük qoruma verilir",
+      "STAGE_UPDATED": "Status {{stage}} olaraq yeniləndi",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} sahəsi yeniləndi",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} sahə yeniləndi",
+      "LEAD_ASSIGNED": "{{name}} adlı şəxsə təyin edildi",
+      "LEAD_UNASSIGNED": "Təyin edilmədi",
+      "REFERRAL_ACCEPTED": "İnşaatçı müraciəti qəbul etdi",
+      "REFERRAL_REJECTED": "İnşaatçı təklifi rədd etdi. Səbəb: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} tərəfindən dublikat qeydiyyat cəhdi rədd edildi",
+      "BOOKING_COMPLETED": "Rezervasiya tamamlandı",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Əməliyyat mülkiyyəti İnşaatçıya keçdi",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partnyor atributu qorunub",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komissiya uyğunluğu yaradıldı",
+      "HANDOVER_COMPLETED": "Təhvil-təslim tamamlandı",
+      "ADMIN_PROTECTION_RELEASED": "Admin dublikat qorumasını erkən buraxdı. Səbəb: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin qeydiyyatı {{from}} dən {{to}} a təyin etdi. Səbəb: {{reason}}"
+    }
+  }
+}

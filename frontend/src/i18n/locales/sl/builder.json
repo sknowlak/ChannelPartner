@@ -1,0 +1,96 @@
+{
+  "shell": {
+    "portal": "Graditeljski portal",
+    "referrals": "Napotitve",
+    "builderLogin": "Prijava graditelja",
+    "partnerLogin": "Prijava partnerja kanala"
+  },
+  "login": {
+    "title": "Graditelj se prijavi",
+    "hint": "Račune Builder ustvari Leadrat . Vprašajte skrbnika, če ga nimate."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Čakam na vašo odločitev",
+    "ACCEPTED": "Sprejeto",
+    "REJECTED": "Zavrnjeno"
+  },
+  "list": {
+    "title": "Napotitve",
+    "allProjects": "Vsi projekti",
+    "allStatuses": "Vsi statusi",
+    "count_one": "{{count}} napotitev",
+    "count_two": "{{count}} priporočil",
+    "count_few": "{{count}} priporočil",
+    "count_other": "{{count}} priporočil",
+    "columns": {
+      "referral": "Napotitev",
+      "customer": "Stranka",
+      "project": "Projekt",
+      "sourcePartner": "Izvorni partner",
+      "status": "Stanje",
+      "booking": "Rezervacija",
+      "registered": "Registriran"
+    },
+    "booked": "Rezervirano",
+    "empty": "Še ni priporočil."
+  },
+  "detail": {
+    "customer": "Stranka",
+    "sourcePartner": "Izvorni partner",
+    "attributionNote": "(pripis – ni mogoče spremeniti)",
+    "leadStatus": "Stanje potencialne stranke",
+    "protectedUntil": "Zaščiteno do",
+    "referral": "Napotitev",
+    "reason": "Razlog: {{reason}}",
+    "booking": "Rezervacija",
+    "bookedOwner": "Rezervirano - ste operativni lastnik",
+    "notBooked": "Ni rezervirano",
+    "sharedAfterBooking": "Deljeno po rezervaciji",
+    "accept": "Sprejmi priporočilo",
+    "confirmBooking": "Potrdite rezervacijo",
+    "reject": "Zavrni napotitev",
+    "rejectReasonLabel": "Razlog za zavrnitev (prikazano partnerju) *",
+    "rejectConfirm": "Zavrni",
+    "confirmBookingPrompt": "Potrjujem rezervacijo? Operativno lastništvo se preseli na vas in partner postane upravičen do provizije.",
+    "notice": {
+      "booked": "Rezervacija potrjena.",
+      "accepted": "Napotnica sprejeta.",
+      "rejected": "Napotitev zavrnjena."
+    },
+    "backToReferrals": "Nazaj na priporočila"
+  },
+  "history": {
+    "title": "Zgodovina",
+    "actor": {
+      "system": "Sistem",
+      "partner": "Kanalski partner",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Prejeta registracija partnerja",
+      "DUPLICATE_CHECK_COMPLETED": "Preverjanje dvojnikov je končano – aktivni dvojnik ni bil najden",
+      "REGISTRATION_ACCEPTED": "Registracija sprejeta",
+      "PROTECTION_GRANTED_one": "{{count}} -dnevna zaščita odobrena",
+      "PROTECTION_GRANTED_two": "{{count}} -dnevna zaščita odobrena",
+      "PROTECTION_GRANTED_few": "{{count}} -dnevna zaščita odobrena",
+      "PROTECTION_GRANTED_other": "{{count}} -dnevna zaščita odobrena",
+      "STAGE_UPDATED": "Status posodobljen na {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Posodobljeno polje {{count}}",
+      "LEAD_DETAILS_UPDATED_two": "Posodobljenih {{count}} polj",
+      "LEAD_DETAILS_UPDATED_few": "Posodobljenih {{count}} polj",
+      "LEAD_DETAILS_UPDATED_other": "Posodobljenih {{count}} polj",
+      "LEAD_ASSIGNED": "Dodeljeno {{name}}",
+      "LEAD_UNASSIGNED": "Nedodeljen",
+      "REFERRAL_ACCEPTED": "Graditelj je priporočilo sprejel",
+      "REFERRAL_REJECTED": "Graditelj je napotnico zavrnil. Razlog: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Poskus podvojene registracije s strani {{partner}} zavrnjen",
+      "BOOKING_COMPLETED": "Rezervacija zaključena",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operativno lastništvo preneseno na Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Pripis partnerja ohranjen",
+      "COMMISSION_ELIGIBILITY_CREATED": "Upravičenost do provizije je ustvarjena",
+      "HANDOVER_COMPLETED": "Primopredaja opravljena",
+      "ADMIN_PROTECTION_RELEASED": "Skrbnik je predčasno izdal zaščito pred dvojniki. Razlog: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Skrbnik je predodelil registracijo iz {{from}} v {{to}} . Razlog: {{reason}}"
+    }
+  }
+}

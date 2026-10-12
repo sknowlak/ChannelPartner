@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Миний тэргүүлэгчид",
+    "signedInAs": "{{name}} ( {{partnerId}} ) нэрээр нэвтэрсэн · {{timezone}} цагийг харуулсан",
+    "addLead": "+ Тэргүүлэх",
+    "tabs": {
+      "all": "Бүгд ( {{count}} )",
+      "pending": "Хүлээгдэж байна ( {{count}} )",
+      "booked": "Захиалсан ( {{count}} )"
+    },
+    "searchPlaceholder": "Нэр, гар утас эсвэл бүртгэлийн ID хайх ...",
+    "manageColumns": "Багануудыг удирдах",
+    "rowsPerPage": "Хуудас бүрийн мөр",
+    "registrationId": "Бүртгэлийн ID",
+    "emptyState": "Одоохондоо тэргүүлэгч байхгүй - эхнийхээ бүртгүүлээрэй.",
+    "noMatch": "Эдгээр шүүлтүүртэй таарах хар тугалга байхгүй байна.",
+    "showing": "{ {{total}} бичлэгээс {{from}} - {{to}} г харуулж байна",
+    "actions": {
+      "preview": "Урьдчилан үзэх, хурдан шинэчлэх",
+      "history": "Түүх",
+      "email": "Имэйл",
+      "whatsapp": "WhatsApp",
+      "call": "Дуудлага хийх"
+    },
+    "pagination": {
+      "first": "Эхний хуудас",
+      "previous": "Өмнөх хуудас",
+      "next": "Дараагийн хуудас",
+      "last": "Сүүлийн хуудас"
+    }
+  },
+  "columns": {
+    "status": "Статус",
+    "assignTo": "Даалгах",
+    "booked": "Захиалагдсан",
+    "protectionUntil": "хүртэл хамгаалалт"
+  },
+  "booking": {
+    "booked": "Захиалагдсан",
+    "pending": "Хүлээгдэж байна"
+  },
+  "assign": {
+    "unassigned": "Оноогоогүй",
+    "owner": "{{name}} (Эзэмшигч)",
+    "inactive": "{{name}} (идэвхгүй)",
+    "unknownUser": "Үл мэдэгдэх хэрэглэгч",
+    "assignedTo": "{{name}} -д томилогдсон"
+  },
+  "form": {
+    "addTitle": "Тэргүүлэх",
+    "editTitle": "Удирдагчийг засах",
+    "noPermissionAdd": "Танд тэргүүлэгчдийг бүртгэх зөвшөөрөл байхгүй байна.",
+    "noPermissionEdit": "Танд удирдамжийг засах зөвшөөрөл байхгүй.",
+    "selectPlaceholder": "Сонго...",
+    "commaSeparated": "Таслалаар тусгаарласан",
+    "phonePlaceholder": "Утасны дугаар",
+    "countryCode": "Улсын код"
+  },
+  "project": {
+    "none": "Одоогоор төсөл байхгүй (дурдсан)",
+    "notInList": "{{project}} (төслийн жагсаалтад байхгүй)"
+  },
+  "journey": {
+    "customer": "Хэрэглэгч",
+    "currentOwner": "Одоогийн эзэмшигч",
+    "protectionExpiry": "Хамгаалалтын хугацаа дуусах",
+    "leadStatus": "Тэргүүлэх статус",
+    "scheduled": "Төлөвлөсөн",
+    "assignedTo": "Томилогдсон",
+    "referral": "Лавлагаа",
+    "builderReason": "Барилгачдын шалтгаан: {{reason}}",
+    "bookedHint": "Барилгачин захиалсан - ашиглалтын эзэмшил барилгачин руу шилжсэн; таны аттрибут болон комиссын эрх хадгалагдана.",
+    "notBookedHint": "Барилгачин лавлагааг хүлээн авсны дараа захиалгыг баталгаажуулна.",
+    "quickUpdate": "Шуурхай шинэчлэлт",
+    "leadDetails": "Тэргүүлэх дэлгэрэнгүй мэдээлэл",
+    "progressHistory": "Хөгжил дэвшлийн түүх",
+    "timesIn": "(цаг {{timezone}} )",
+    "backToMyLeads": "Миний тэргүүлэгчид рүү буцах",
+    "editLead": "Удирдагчийг засах"
+  },
+  "referral": {
+    "NOT_REFERRED": "Заавраагүй (төсөл байхгүй)",
+    "PENDING_BUILDER": "Барилгачин хүлээж байна",
+    "ACCEPTED": "Барилгачин хүлээн зөвшөөрсөн",
+    "REJECTED": "Барилгачин татгалзсан"
+  },
+  "preview": {
+    "ariaLabel": "Урьдчилан харах",
+    "title": "Урьдчилан харах",
+    "source": "Эх сурвалж",
+    "location": "Байршил",
+    "scheduled": "Төлөвлөсөн",
+    "registered": "Бүртгүүлсэн",
+    "latestNote": "Хамгийн сүүлийн тэмдэглэл",
+    "quickUpdate": "Шуурхай шинэчлэлт",
+    "fullDetails": "Бүрэн дэлгэрэнгүй мэдээлэл",
+    "editLead": "Удирдагчийг засах",
+    "history": "Түүх"
+  },
+  "quick": {
+    "assignedTo": "Томилогдсон",
+    "status": "Статус",
+    "subStatus": "Дэд статус",
+    "selectSubStatus": "Дэд статусыг сонгох...",
+    "none": "Байхгүй",
+    "scheduledAt": "Цагийн хуваарьтай",
+    "localTime": "орон нутгийн цагаар",
+    "note": "Анхаарна уу",
+    "notePlaceholder": "Энэ дуудлага / айлчлалын үеэр юу болсон бэ? (заавал биш)",
+    "updateStatus": "Статусыг шинэчлэх",
+    "statusUpdated": "Статус шинэчлэгдсэн",
+    "bookedLocked": "Энэ хар тугалга захиалагдсан - түүний статусыг цаашид өөрчлөх боломжгүй.",
+    "viewOnly": "Та энэ удирдамжийг харах боломжтой, гэхдээ таны үүрэг үүнийг шинэчлэх боломжгүй."
+  },
+  "history": {
+    "title": "Түүх - {{registrationId}}",
+    "tabs": {
+      "all": "Бүгд",
+      "status": "Статус",
+      "assignment": "Даалгавар",
+      "notes": "Тэмдэглэл"
+    },
+    "doneBy": "{{actor}} хийсэн",
+    "system": "Систем",
+    "platforms": {
+      "System": "Систем",
+      "External": "Гадаад",
+      "Web": "Вэб",
+      "Mobile": "Гар утас"
+    },
+    "added": "нэмсэн",
+    "updated": "шинэчлэгдсэн",
+    "empty": "(хоосон)",
+    "noHistory": "Энэ ангилалд одоогоор түүх байхгүй.",
+    "fieldLabels": {
+      "stage": "Статус",
+      "subStatus": "Дэд статус",
+      "scheduledAt": "Хуваарь",
+      "notes": "Тэмдэглэл",
+      "assignedTo": "Томилогдсон"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Түншийн бүртгэлийг хүлээн авлаа",
+      "DUPLICATE_CHECK_COMPLETED": "Давхардсан шалгалт дууссан - идэвхтэй хуулбар олдсонгүй",
+      "REGISTRATION_ACCEPTED": "Бүртгэлийг хүлээн авлаа",
+      "PROTECTION_GRANTED_one": "{{count}} өдрийн хамгаалалт олгосон",
+      "PROTECTION_GRANTED_other": "{{count}} өдрийн хамгаалалт олгосон",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partnerId}} н давхардсан бүртгэлийн оролдлогыг татгалзсан",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} талбарыг шинэчилсэн",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} талбарыг шинэчилсэн",
+      "STAGE_UPDATED": "Статус {{status}} болж шинэчлэгдсэн",
+      "LEAD_ASSIGNED": "{{name}} -д томилогдсон",
+      "LEAD_UNASSIGNED": "Оноогоогүй",
+      "BOOKING_COMPLETED": "Захиалга дууссан",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Үйл ажиллагааны өмчлөлийг Барилгачинд шилжүүлсэн",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Түншийн хамаарлыг хадгалсан",
+      "COMMISSION_ELIGIBILITY_CREATED": "Комиссын эрх бий болсон",
+      "HANDOVER_COMPLETED": "Хүлээн авалт дууссан",
+      "REFERRAL_ACCEPTED": "Барилгачин уг хүсэлтийг хүлээн авлаа",
+      "REFERRAL_REJECTED": "Барилгачин уг хүсэлтээс татгалзсан. Шалтгаан: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Админ давхардсан хамгаалалтыг эрт гаргасан. Шалтгаан: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Админ бүртгэлийг {{from}} -с {{to}} болгон өөрчилсөн. Шалтгаан: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Багануудыг удирдах",
+    "hint": "Дахин эрэмбэлэхийн тулд чирнэ үү · харуулахын тулд тэмдэглэнэ үү",
+    "showAll": "Бүгдийг харуулах",
+    "resetDefault": "Өгөгдмөл рүү дахин тохируулах"
+  },
+  "filters": {
+    "title": "Шүүлтүүр",
+    "allProjects": "Бүх төслүүд",
+    "any": "Ямар ч",
+    "noFields": "Өөр шүүж болох талбарыг хараахан идэвхжүүлээгүй байна (Тохиргоо > Харуул).",
+    "clearAll": "Бүгдийг арилгах"
+  },
+  "phone": {
+    "MISSING": "Утасны дугаар шаардлагатай.",
+    "INVALID": "Хүчинтэй утасны дугаар оруулна уу.",
+    "TOO_SHORT": "Утасны дугаар хэтэрхий богино байна.",
+    "TOO_LONG": "Утасны дугаар хэтэрхий урт байна.",
+    "INVALID_FOR_COUNTRY": "Энэ утасны дугаар {{country}} буруу байна.",
+    "COUNTRY_MISMATCH": "Зөв улсын кодыг сонгоно уу.",
+    "NOT_MOBILE": "Суурин утас биш гар утасны дугаараа оруулна уу."
+  }
+}

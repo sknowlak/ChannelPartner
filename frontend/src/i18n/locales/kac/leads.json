@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Ngai woi awn ai ni",
+    "signedInAs": "{{name}} ( {{partnerId}} ) hku nna shang wa sai · {{timezone}} hta madun da ai aten ni",
+    "addLead": "+ Lead hpe jat bang u",
+    "tabs": {
+      "all": "Yawng ( {{count}} )",
+      "pending": "La nga ai ( {{count}} )",
+      "booked": "Book galaw da sai ( {{count}} )"
+    },
+    "searchPlaceholder": "Mying, mobile, shing nrai mying jahpan ID hku nna tam u ...",
+    "manageColumns": "Column ni hpe hparan u",
+    "rowsPerPage": "Laika man langai hta rows",
+    "registrationId": "Mying jahpan ID",
+    "emptyState": "Leads n nga ai - shawng nnan na hpe register galaw u.",
+    "noMatch": "Ndai filter ni hte n htap htuk ai lead n nga ai.",
+    "showing": "{{from}} - {{to}} {{total}} shanglawm ai lam ni hpe madun dan ai",
+    "actions": {
+      "preview": "Shawng yu ai & lawan ai hku gram lajang ai",
+      "history": "Labau",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Shaga ai"
+    },
+    "pagination": {
+      "first": "Shawng na laika man",
+      "previous": "Shawng na laika man",
+      "next": "Hpang na laika man",
+      "last": "Hpang jahtum laika man"
+    }
+  },
+  "columns": {
+    "status": "Madang",
+    "assignTo": "Assign galaw na",
+    "booked": "Book galaw da sai",
+    "protectionUntil": "2020 du hkra makawp maga ai lam."
+  },
+  "booking": {
+    "booked": "Book galaw da sai",
+    "pending": "Jahkring da ai"
+  },
+  "assign": {
+    "unassigned": "Magam bungli n jaw ai",
+    "owner": "{{name}} (Madu)",
+    "inactive": "{{name}} (n shamu shamawt ai)",
+    "unknownUser": "N chye ai lang ai wa",
+    "assignedTo": "{{name}} hpe ap ya ai"
+  },
+  "form": {
+    "addTitle": "Lead hpe jat bang u",
+    "editTitle": "Ningbaw hpe gram lajang",
+    "noPermissionAdd": "Nang gaw lead ni hpe register galaw na ahkang n lu ai.",
+    "noPermissionEdit": "Lead ni hpe edit galaw na ahkang n nga ai.",
+    "selectPlaceholder": "Lata san ai...",
+    "commaSeparated": "Comma hte garan da ai",
+    "phonePlaceholder": "Phone nambat",
+    "countryCode": "Mungdan code"
+  },
+  "project": {
+    "none": "Project n nga shi ai (n tsun dan ai)",
+    "notInList": "{{project}} (project jahpan hta n lawm ai)"
+  },
+  "journey": {
+    "customer": "Gunrai mari ai wa",
+    "currentOwner": "Ya na madu",
+    "protectionExpiry": "Makawp maga ai aten htum mat sai",
+    "leadStatus": "Ningbaw Masa",
+    "scheduled": "Jahpan masat da ai",
+    "assignedTo": "Lit ap ya ai",
+    "referral": "Hkrang shagun ai",
+    "builderReason": "Gawgap ai wa a lam: {{reason}}",
+    "bookedHint": "Gawgap ai wa kaw nna booking galaw da ai - bungli galaw ai madu gaw gap ai wa hpang de htawt sit mat sai; na a attribution hte komishin lu na ahkaw ahkang hpe tawn da ai.",
+    "notBookedHint": "Booking ni hpe nta gap ai wa gaw, shanhte referral hpe hkap la ngut ai hpang, confirm galaw ya ai.",
+    "quickUpdate": "Lawan ai hku gram lajang ai",
+    "leadDetails": "Lead a lam",
+    "progressHistory": "Rawt jat galu kaba wa ai labau",
+    "timesIn": "( {{timezone}} hta aten ni )",
+    "backToMyLeads": "Ngai woi awn ai de bai wa u",
+    "editLead": "Ningbaw hpe gram lajang"
+  },
+  "referral": {
+    "NOT_REFERRED": "N tsun ai (project n nga ai)",
+    "PENDING_BUILDER": "Gawgap ai wa hpe la nga ai",
+    "ACCEPTED": "Gawgap ai wa hkap la ai",
+    "REJECTED": "Gawgap ai wa ningdang kau ai"
+  },
+  "preview": {
+    "ariaLabel": "Ningbaw ningla shawng yu ai",
+    "title": "Ningbaw ningla shawng yu ai",
+    "source": "Daju",
+    "location": "Nga shara",
+    "scheduled": "Jahpan masat da ai",
+    "registered": "Mying jahpan bang da sai",
+    "latestNote": "Hpang jahtum na Note",
+    "quickUpdate": "Lawan ai hku gram lajang ai",
+    "fullDetails": "Hkum tsup ai lam",
+    "editLead": "Ningbaw hpe gram lajang",
+    "history": "Labau"
+  },
+  "quick": {
+    "assignedTo": "Lit ap ya ai",
+    "status": "Madang",
+    "subStatus": "Sub-Madang",
+    "selectSubStatus": "Sub-status hpe lata la u...",
+    "none": "Hpa n re ai",
+    "scheduledAt": "2019 hta aten masat da ai.",
+    "localTime": "buga aten",
+    "note": "Matsing ai",
+    "notePlaceholder": "Ndai shaga / sa du gawan ai hta hpa byin wa ai kun? (mai lata la hpa)",
+    "updateStatus": "Masa hpe gram lajang u",
+    "statusUpdated": "Masa hpe gram lajang da ai",
+    "bookedLocked": "Ndai lead hpe book galaw da sai - shi a status hpe n mai galai sai.",
+    "viewOnly": "Ndai lead hpe nang yu mai ai, raitim na a role gaw update n mai galaw ai."
+  },
+  "history": {
+    "title": "Labau - {{registrationId}}",
+    "tabs": {
+      "all": "Yawng",
+      "status": "Madang",
+      "assignment": "Lit",
+      "notes": "Notes"
+    },
+    "doneBy": "{{actor}} galaw ai",
+    "system": "Lai len",
+    "platforms": {
+      "System": "Lai len",
+      "External": "Shinggan na",
+      "Web": "Web",
+      "Mobile": "Htawt hkawm mai ai"
+    },
+    "added": "jat bang da ai",
+    "updated": "gram lajang da ai",
+    "empty": "(kaman)",
+    "noHistory": "Ndai daw hta labau n nga ai.",
+    "fieldLabels": {
+      "stage": "Madang",
+      "subStatus": "Sub-Madang",
+      "scheduledAt": "Aten mahkyen",
+      "notes": "Notes",
+      "assignedTo": "Lit ap ya ai"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Partner mying jahpan hpe lu la sai",
+      "DUPLICATE_CHECK_COMPLETED": "Duplicate hpe jep yu ngut sai - active duplicate n mu ai",
+      "REGISTRATION_ACCEPTED": "Mying jahpan hkap la sai",
+      "PROTECTION_GRANTED_one": "{{count}} -nhtoi makawp maga lam jaw da sai",
+      "PROTECTION_GRANTED_other": "{{count}} -nhtoi makawp maga lam jaw da sai",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partnerId}} hku nna mying jahpan bang na matu shakut ai hpe ningdang kau sai",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} hpe gram lajang da ai",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} lamu ga ni hpe gram lajang da ai",
+      "STAGE_UPDATED": "Masa hpe {{status}} de gram lajang da ai",
+      "LEAD_ASSIGNED": "{{name}} hpe ap ya ai",
+      "LEAD_UNASSIGNED": "Magam bungli n jaw ai",
+      "BOOKING_COMPLETED": "Booking galaw ngut sai",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Bungli galaw ai madu hpe Builder de htawt sit kau sai.",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partner masat masa hpe makawp maga da ai",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komishin hkam la mai ai lam hpe hpaw da sai",
+      "HANDOVER_COMPLETED": "Ap ya ngut sai",
+      "REFERRAL_ACCEPTED": "Gawgap ai wa gaw referral hpe hkap la sai",
+      "REFERRAL_REJECTED": "Builder gaw dai referral hpe ningdang kau ai. Hpa majaw: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin gaw duplicate makawp maga lam hpe shawng shapraw kau sai. Hpa majaw: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin gaw {{from}} kaw nna {{to}} de bai masat da ai. Hpa majaw: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Column ni hpe hparan u",
+    "hint": "Reorder galaw na matu drag galaw u · madun na matu jep yu u",
+    "showAll": "Yawng hpe madun u",
+    "resetDefault": "Default de bai gram lajang u"
+  },
+  "filters": {
+    "title": "Hka ja ai ni",
+    "allProjects": "Project yawng",
+    "any": "Gara tim",
+    "noFields": "Kaga filter galaw mai ai shara ni hpe n hpaw shi ai (Settings > Lead).",
+    "clearAll": "Yawng hpe yeng seng kau u"
+  },
+  "phone": {
+    "MISSING": "Phone number ra ai.",
+    "INVALID": "Tengman ai phone nambat hpe bang ya marit.",
+    "TOO_SHORT": "Phone nambat grai kadun ai.",
+    "TOO_LONG": "Phone nambat grai galu ai.",
+    "INVALID_FOR_COUNTRY": "Ndai phone nambat gaw {{country}} a matu n mai lang ai.",
+    "COUNTRY_MISMATCH": "Teng man ai mungdan code hpe lata la u.",
+    "NOT_MOBILE": "Landline n re ai sha, mobile nambat hpe bang u."
+  }
+}

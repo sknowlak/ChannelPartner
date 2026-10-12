@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal ya Muaki",
+    "referrals": "Ku rhumeriwa ka swilo",
+    "builderLogin": "Ku Nghena ka Muaki",
+    "partnerLogin": "Ku Nghena ka Mutirhisani wa Channel"
+  },
+  "login": {
+    "title": "Muaki u nghena",
+    "hint": "Tiakhawunti ta vaaki ti endliwa hi Leadrat . Vutisa mulawuri wa wena loko u nga ri na yona."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Ku rindza xiboho xa wena",
+    "ACCEPTED": "Ku amukeriwile",
+    "REJECTED": "Ku ariwile"
+  },
+  "list": {
+    "title": "Ku rhumeriwa ka swilo",
+    "allProjects": "Tiphurojeke hinkwato",
+    "allStatuses": "Swiyimo hinkwaswo",
+    "count_one": "{{count}} ku rhumeriwa",
+    "count_other": "{{count}} swirhumeriwa",
+    "columns": {
+      "referral": "Ku hundziseriwa",
+      "customer": "Khasimende",
+      "project": "Phurojeke",
+      "sourcePartner": "Mutirhisani wa Xihlovo",
+      "status": "Xiyimo",
+      "booking": "Ku bukuta",
+      "registered": "Ku tsarisiwile"
+    },
+    "booked": "Ku bukuteriwile",
+    "empty": "Ku hava ti referrals ku fikela sweswi."
+  },
+  "detail": {
+    "customer": "Khasimende",
+    "sourcePartner": "Mutirhisani wa Xihlovo",
+    "attributionNote": "(xihlawulekisi - a xi nge cinciwi)",
+    "leadStatus": "Xiyimo xa Ntsopfu",
+    "protectedUntil": "Ku Sirheleriwa Ku fikela",
+    "referral": "Ku hundziseriwa",
+    "reason": "Xivangelo: {{reason}}",
+    "booking": "Ku bukuta",
+    "bookedOwner": "Booked - u n'wini wa matirhelo",
+    "notBooked": "A swi bukuteriwanga",
+    "sharedAfterBooking": "Ku averiwa endzhaku ko bukuta",
+    "accept": "Amukela Ku Rhumeriwa",
+    "confirmBooking": "Tiyisisa Ku Buku",
+    "reject": "Ala Ku Rhumela",
+    "rejectReasonLabel": "Xivangelo xo ala (xi kombisiwile eka munghana) * .",
+    "rejectConfirm": "Ariwa",
+    "confirmBookingPrompt": "Tiyisisa ku bukuteriwa? Vun’wini bya ntirho byi rhurhela eka wena naswona mutirhisani u va a faneleka ku kuma khomixini.",
+    "notice": {
+      "booked": "Ku bukuta ku tiyisisiwile.",
+      "accepted": "Ku rhumeriwa ku amukeriwile.",
+      "rejected": "Ku rhumeriwa ku ariwile."
+    },
+    "backToReferrals": "Ku Vuyela eka Swirhumeriwa"
+  },
+  "history": {
+    "title": "Matimu",
+    "actor": {
+      "system": "Sisitimi",
+      "partner": "Mutirhisani wa xitichi",
+      "admin": "Mufambisi wa Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Ku tsarisiwa ka mutirhisani ku amukeriwile",
+      "DUPLICATE_CHECK_COMPLETED": "Ku kamberiwa ka ku phindha-phindha ku hetisiwile - ku hava ku phindha-phindha loku tirhaka loku kumiweke",
+      "REGISTRATION_ACCEPTED": "Ku tsarisiwa ka amukeriwile",
+      "PROTECTION_GRANTED_one": "{{count}} -nsirhelelo wa siku wu nyikiwile",
+      "PROTECTION_GRANTED_other": "{{count}} -nsirhelelo wa siku wu nyikiwile",
+      "STAGE_UPDATED": "Xiyimo xi pfuxetiwile eka {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Nsimu ya {{count}} leyi pfuxetiweke",
+      "LEAD_DETAILS_UPDATED_other": "Tinsimu ta {{count}} leti pfuxetiweke",
+      "LEAD_ASSIGNED": "Yi averiwe {{name}}",
+      "LEAD_UNASSIGNED": "A swi averiwe",
+      "REFERRAL_ACCEPTED": "Muaki u amukele ku rhumeriwa",
+      "REFERRAL_REJECTED": "Builder u arile ku rhumeriwa. Xivangelo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Ku ringeta ku tsarisa loku phindhiweke hi {{partner}} ku ariwile",
+      "BOOKING_COMPLETED": "Ku bukuta ku hetisiwile",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Vun’wini bya ntirho byi hundziseriwe eka Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Ku boxiwa ka mutirhisani ku hlayisiwile",
+      "COMMISSION_ELIGIBILITY_CREATED": "Ku faneleka ka khomixini ku tumbuluxiwile",
+      "HANDOVER_COMPLETED": "Ku nyiketiwa ka swilo ku hetisiwile",
+      "ADMIN_PROTECTION_RELEASED": "Admin u humesile nsirhelelo wa ti duplicate ka ha ri na nkarhi. Xivangelo: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin u avele nakambe ku tsarisa ku suka eka {{from}} ku ya eka {{to}} . Xivangelo: {{reason}}"
+    }
+  }
+}

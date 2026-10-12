@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Tilungiselelo",
+    "noPermission": "Awunayo imvume yekulawula emasethingi."
+  },
+  "categories": {
+    "lead": "Kuhola",
+    "user": "Umsebentisi",
+    "integrations": "Kuhlanganiswa"
+  },
+  "leadTabs": {
+    "fields": "Emasimu",
+    "statuses": "Timo & Timo letincane",
+    "notifications": "Titfunywa & Bahleli"
+  },
+  "fields": {
+    "leadIntro": "Lungisa lifomu lekubamba umholi: nika emandla/cisha emasimu, umake kutsi ayadzingeka, noma wengete emasimu akho lakhetsiwe.",
+    "userIntro": "Lungisa lifomu le-Add/Edit Team Member: nika emandla/cisha emasimu, umake kutsi ayadzingeka, nobe wengete emasimu akho lakhetsiwe.",
+    "addCustomField": "+ Ngeta Insimu Lekhetsekile",
+    "fieldLabel": "Ilebuli yensimu",
+    "group": "Licembu",
+    "groupPlaceholderLead": "sib. Lwati lwekubuta",
+    "groupPlaceholderUser": "sib. Imininingwane Leyengetiwe",
+    "dataType": "Luhlobo Lwemininingwane",
+    "options": "Tintfo letingakhetfwa (tehlukaniswe ngekhefana)",
+    "requiredLead": "Kuyadzingeka - balingani ecenjini lakho kumele bagcwalise loku kute babhalise umholi",
+    "requiredUser": "Kuyadzingeka - kumele kugcwaliswe uma kwengetwa lilunga lelicembu",
+    "creating": "Kudala...",
+    "createField": "Dala Insimu",
+    "columns": {
+      "field": "Insimi",
+      "group": "Licembu",
+      "type": "Luhlobo",
+      "required": "Funile",
+      "enabled": "Kunikwe emandla",
+      "kind": "Luhlobo"
+    },
+    "kind": {
+      "custom": "Umkhuba",
+      "core": "Umgogodla (ukhiyiwe)",
+      "standard": "Indzinganiso"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Umbhalo",
+    "TEXTAREA": "Umbhalo lomudze",
+    "NUMBER": "Nombolo",
+    "CURRENCY": "Imali",
+    "DATE": "Lilanga",
+    "SELECT": "Kuwela phansi",
+    "LIST": "Luhlu"
+  },
+  "picker": {
+    "searchPlaceholder": "Sesha tindzawo letiholako...",
+    "summary": "{{shown}} kukhonjisiwe · {{mandatory}} kuphocelelekile",
+    "mandatory": "Phocako",
+    "noMatch": "Kute emasimu lahambisanako."
+  },
+  "statuses": {
+    "intro": "Timo takho tekuhola kanye netigaba letincane - loko ngamunye lakucelako (lusuku & sikhatsi, emasimu ekuhola) uma umuntfu avuselela umholi kuyo.",
+    "add": "+ Ngeta Simo",
+    "columns": {
+      "order": "Luhlelo",
+      "status": "Sikhundla",
+      "subStatuses": "Timo letincane",
+      "asksFor": "Ucela",
+      "active": "Kusebenta"
+    },
+    "moveUp": "Tfutsela etulu",
+    "moveDown": "Hamba phansi",
+    "defaultBadge": "Lokujwayelekile kwemikhondo lemisha",
+    "bookingBadge": "Simo sekubhukha",
+    "asksForLabel": "Ucela {{label}}",
+    "asksForDateTime": "Ubuta lusuku nesikhatsi",
+    "none": "Kute",
+    "dateTime": "Lusuku nesikhatsi",
+    "scheduledOn": "ku {{names}}",
+    "fieldsSummary_one": "{{count}} insimu ( {{mandatory}} kuphocelelekile)",
+    "fieldsSummary_other": "{{count}} emasimu ( {{mandatory}} kuphocelelekile)",
+    "deleteConfirm": "Cisha simo \" {{name}} \"? Loku angeke kuhlehliswe.",
+    "editTitle": "Hlela Simo - {{name}}",
+    "newTitle": "Simo Lesisha",
+    "name": "Ligama Lesimo",
+    "colour": "Umbala",
+    "active": "Kusebenta",
+    "isDefault": "Simo lesijwayelekile semikhondo lemisha",
+    "isBooking": "Simo sekubhuka (sibekwe ngekutsi Kubhukha Lokuphelele)",
+    "whenMoved": "Uma umholi udluliselwa kulesi simo",
+    "askSchedule": "Cela lusuku nesikhatsi (umhleli)",
+    "scheduleLabelPlaceholder": "Lebuli, sibonelo Vakashela ku",
+    "fieldsToShow": "Tinsimu letiholako letitawukhonjiswa efomini lekuvuselela",
+    "subStatusesTitle": "Timo letincane",
+    "subStatusesHint": "Simo ngasinye lesincane singacela lusuku lwaso & sikhatsi bese sengeta emasimu aso - lakhonjiswe ngetulu kwemasimu esimo langetulu.",
+    "subStatusName": "Ligama lesimo lesincane",
+    "subFields": "Emasimu ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Lusuku nelebuli yesikhatsi, sib. Shayela emuva ku",
+    "addSubStatus": "+ Ngeta Simo Lesincane",
+    "saveStatus": "Gcina Simo",
+    "createStatus": "Dala Simo"
+  },
+  "notifications": {
+    "intro": "Yatisa bantfu labafanele uma umholi afinyelela esimeni - ngekushesha, noma sikhatsi lesibekiwe ngaphambi/ngemuva kwelusuku & sikhatsi lesihleliwe kuso.",
+    "add": "+ Ngeta Satiso",
+    "columns": {
+      "notification": "Satiso",
+      "whenStatusIs": "Lapho Simo Si",
+      "sends": "Utfumela",
+      "to": "Ku",
+      "via": "Nga",
+      "enabled": "Kunikwe emandla"
+    },
+    "anyStatus": "Noma ngusiphi simo",
+    "anySubStatus": "Noma ngusiphi simo lesincane",
+    "inactiveOption": "{{name}} (alisebenti)",
+    "emptyRules": "Kute tatiso - faka sinye kute ucwayise licembu lakho uma umholi afinyelela esimeni.",
+    "jobs": {
+      "title": "Kuhleliwe & Kutfunyelwe",
+      "firesAt": "Imililo Ku",
+      "notification": "Satiso",
+      "lead": "Kuhola",
+      "status": "Sikhundla",
+      "details": "Mininingwane",
+      "empty": "Kute lokuhleliwe nobe lokutfunyelwe.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Lokulindzelwe",
+      "PROCESSING": "Kucubungula",
+      "SENT": "Tfumele",
+      "FAILED": "Hlulekile",
+      "SKIPPED": "Kweqiwe",
+      "CANCELLED": "Kukhanseliwe"
+    },
+    "deliveryStatus": {
+      "SENT": "tfumele",
+      "FAILED": "hlulekile",
+      "SKIPPED": "kweqiwe"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ku-app",
+      "EMAIL": "imeyili",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Umsebentisi lowabelwe",
+      "owner": "Umnikati",
+      "updatedBy": "Kubuyeketwe ngu",
+      "role": "Indzima: {{name}}"
+    },
+    "channels": {
+      "inApp": "Ku-app",
+      "email": "Imeyili",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Cisha satiso \" {{name}} \"? Tikhumbuto letilindzelwe letivela kuyo tiyakhanselwa.",
+    "testPrompt": "Tfumela sivivinyo salesatiso kuwe (ku-app) usebentisa nguyiphi ID leholako ?",
+    "testSent": "Kutfunyelwe ensimbini yakho: {{title}} {{message}}",
+    "headersInvalid": "Tinhloko Webhook kumele tibe JSON lesemtsetfweni , sibonelo {\"Kugunyatwa\": \"Umphatsi xyz\"}",
+    "editTitle": "Hlela Satiso",
+    "newTitle": "Satiso lesisha",
+    "name": "Libito",
+    "namePlaceholder": "sib. Sikhumbuto sekuvakashela isayithi",
+    "whenStatus": "Uma simo semholi si",
+    "subStatus": "Simo lesincane",
+    "send": "Tfumela (umhleli)",
+    "custom": "Umkhuba...",
+    "modeBefore": "ngaphambi kwesikhatsi lesihleliwe",
+    "modeAfter": "ngemuva kwesikhatsi lesihleliwe",
+    "noScheduleWarning": "Lesimo asiceli lusuku & sikhatsi, ngako-ke satiso \"ngaphambi/ngesikhatsi/ngemuva kwesikhatsi lesihleliwe\" besingeke sivutse.",
+    "noScheduleFix": "Vula <strong>Cela lusuku & sikhatsi</strong> sayo ngaphansi kweTimo & Timo Letincane, noma utfumele Ngekushesha.",
+    "sendTo": "Tfumela ku (noma nguyiphi inhlanganisela)",
+    "recipientAssigned": "Umsebentisi lowabelwe (umnikati loholako)",
+    "recipientOwner": "Umnikati we-akhawunti / umphatsi",
+    "recipientUpdatedBy": "Umuntfu lovuselele simo",
+    "everyoneWithRole": "Wonkhe umuntfu lonendzima",
+    "specificUsers": "Basebentisi labakhetsekile (labasebentako)",
+    "inactiveNever": "Basebentisi labangasebenti abaze batfole tatiso, noma ngabe bakhetsiwe.",
+    "deliverVia": "Letsa ngekusebentisa",
+    "channelInApp": "Ku-app (insimbi)",
+    "channelEmail": "Imeyili",
+    "channelWebhook": "Webhook ( Umhlinzeki WhatsApp / SMS )",
+    "emailHint": "I-imeyili iya ekhelini le-imeyili yemukeli ngamunye futsi idzinga i-SMTP lesethwe kuseva (backend / .env); kuze kube ngulapho i-imeyili itfumela ibhalwe njengaleyo yeqa.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Tinhloko ( JSON )",
+    "content": "Lokucuketfwe kwesatiso",
+    "title": "Sihloko",
+    "message": "Umyaleto",
+    "insertIntoTitle": "Faka kuSihloko",
+    "insertIntoMessage": "Faka kuMlayeto",
+    "anyLeadField": "Noma nguyiphi insimu leholako iyasebenta futsi, sibonelo <code1>{{example1}}</code1> noma <code2>{{example2}}</code2> .",
+    "preview": "Kubuka ngaphambilini (kuhola kwesampula)",
+    "enabled": "Kunikwe emandla",
+    "saveRule": "Gcina Satiso",
+    "createRule": "Dala Satiso",
+    "variables": {
+      "customerName": "Ligama leliholako",
+      "customerMobile": "Iselula leholako",
+      "customerEmail": "I-imeyili leholako",
+      "registrationId": "ID yekuhola",
+      "status": "Sikhundla",
+      "subStatus": "Simo lesincane",
+      "scheduleAt": "Lusuku nesikhatsi lesihleliwe",
+      "assignedTo": "Umsebentisi lowabelwe",
+      "updatedBy": "Kubuyeketwe ngu",
+      "recipient": "Ligama lemukeli",
+      "project": "Liphrojekthi",
+      "notes": "Inothi yakamuva",
+      "partner": "Ligama lemlingani"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Ngekushesha uma simo sisethwe .",
+      "AT": "Ngesikhatsi lesibekiwe .",
+      "A1D": "Lilanga linye ngemuva kwesikhatsi lesihleliwe (kuhlola kwekulandzelela)"
+    },
+    "immediately": "Ngekushesha",
+    "atScheduled": "Ngesikhatsi lesibekiwe",
+    "before": {
+      "MINUTES_one": "{{count}} umzuzu ngaphambi kwesikhatsi lesihleliwe",
+      "MINUTES_other": "{{count}} imizuzu ngaphambi kwesikhatsi lesihleliwe",
+      "HOURS_one": "{{count}} lihora ngaphambi kwesikhatsi lesihleliwe",
+      "HOURS_other": "{{count}} emahora ngaphambi kwesikhatsi lesihleliwe",
+      "DAYS_one": "{{count}} lilanga ngaphambi kwesikhatsi lesihleliwe",
+      "DAYS_other": "{{count}} emalanga ngaphambi kwesikhatsi lesihleliwe",
+      "WEEKS_one": "{{count}} liviki ngaphambi kwesikhatsi lesihleliwe",
+      "WEEKS_other": "{{count}} emaviki ngaphambi kwesikhatsi lesihleliwe",
+      "MONTHS_one": "{{count}} inyanga ngaphambi kwesikhatsi lesihleliwe",
+      "MONTHS_other": "{{count}} tinyanga ngaphambi kwesikhatsi lesihleliwe",
+      "YEARS_one": "{{count}} umnyaka ngaphambi kwesikhatsi lesihleliwe",
+      "YEARS_other": "{{count}} iminyaka ngaphambi kwesikhatsi lesihleliwe"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} umzuzu ngemuva kwesikhatsi lesihleliwe",
+      "MINUTES_other": "{{count}} imizuzu ngemuva kwesikhatsi lesihleliwe",
+      "HOURS_one": "{{count}} lihora ngemuva kwesikhatsi lesihleliwe",
+      "HOURS_other": "{{count}} emahora ngemuva kwesikhatsi lesihleliwe",
+      "DAYS_one": "{{count}} lilanga ngemuva kwesikhatsi lesihleliwe",
+      "DAYS_other": "{{count}} emalanga ngemuva kwesikhatsi lesihleliwe",
+      "WEEKS_one": "{{count}} liviki ngemuva kwesikhatsi lesihleliwe",
+      "WEEKS_other": "{{count}} emaviki ngemuva kwesikhatsi lesihleliwe",
+      "MONTHS_one": "{{count}} inyanga ngemuva kwesikhatsi lesihleliwe",
+      "MONTHS_other": "{{count}} tinyanga ngemuva kwesikhatsi lesihleliwe",
+      "YEARS_one": "{{count}} umnyaka ngemuva kwesikhatsi lesihleliwe",
+      "YEARS_other": "{{count}} iminyaka ngemuva kwesikhatsi lesihleliwe"
+    },
+    "units": {
+      "MINUTES_one": "umzuzu",
+      "MINUTES_other": "imizuzu",
+      "HOURS_one": "li-awa",
+      "HOURS_other": "ema-awa",
+      "DAYS_one": "lilanga",
+      "DAYS_other": "emalanga langu 10",
+      "WEEKS_one": "lisontfo",
+      "WEEKS_other": "emaviki",
+      "MONTHS_one": "inyanga",
+      "MONTHS_other": "tinyanga",
+      "YEARS_one": "mnyaka",
+      "YEARS_other": "minyaka"
+    }
+  }
+}

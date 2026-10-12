@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Inställningar",
+    "noPermission": "Du har inte behörighet att hantera inställningar."
+  },
+  "categories": {
+    "lead": "Leda",
+    "user": "Användare",
+    "integrations": "Integrationer"
+  },
+  "leadTabs": {
+    "fields": "Fält",
+    "statuses": "Status och understatus",
+    "notifications": "Aviseringar och schemaläggare"
+  },
+  "fields": {
+    "leadIntro": "Konfigurera lead capture-formuläret: aktivera/avaktivera fält, markera dem som obligatoriska eller lägg till dina egna anpassade fält.",
+    "userIntro": "Konfigurera formuläret Lägg till/redigera teammedlem: aktivera/avaktivera fält, markera dem som obligatoriska eller lägg till dina egna anpassade fält.",
+    "addCustomField": "+ Lägg till anpassat fält",
+    "fieldLabel": "Fältetikett",
+    "group": "Grupp",
+    "groupPlaceholderLead": "t.ex. Förfrågningsinformation",
+    "groupPlaceholderUser": "t.ex. Ytterligare detaljer",
+    "dataType": "Datatyp",
+    "options": "Alternativ (kommaseparerade)",
+    "requiredLead": "Obligatoriskt – partners i ditt team måste fylla i detta för att registrera en lead",
+    "requiredUser": "Obligatoriskt - måste fyllas i när du lägger till en gruppmedlem",
+    "creating": "Skapande...",
+    "createField": "Skapa fält",
+    "columns": {
+      "field": "Fält",
+      "group": "Grupp",
+      "type": "Typ",
+      "required": "Nödvändig",
+      "enabled": "Aktiverad",
+      "kind": "Slag"
+    },
+    "kind": {
+      "custom": "Beställnings",
+      "core": "Kärna (låst)",
+      "standard": "Standard"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Text",
+    "TEXTAREA": "Lång text",
+    "NUMBER": "Antal",
+    "CURRENCY": "Valuta",
+    "DATE": "Datum",
+    "SELECT": "Dropdown",
+    "LIST": "Lista"
+  },
+  "picker": {
+    "searchPlaceholder": "Sök i fält för potentiella kunder...",
+    "summary": "{{shown}} visas · {{mandatory}} obligatorisk",
+    "mandatory": "Obligatorisk",
+    "noMatch": "Inga fält matchar."
+  },
+  "statuses": {
+    "intro": "Dina leadsstatusar och understatusar – vad var och en frågar efter (ett datum och tid, leadfält) när någon uppdaterar en lead till den.",
+    "add": "+ Lägg till status",
+    "columns": {
+      "order": "Beställa",
+      "status": "Status",
+      "subStatuses": "Understatus",
+      "asksFor": "frågar efter",
+      "active": "Aktiv"
+    },
+    "moveUp": "Flytta upp",
+    "moveDown": "Flytta ner",
+    "defaultBadge": "Standard för nya potentiella kunder",
+    "bookingBadge": "Bokningsstatus",
+    "asksForLabel": "Ber om {{label}}",
+    "asksForDateTime": "Frågar efter datum & tid",
+    "none": "Ingen",
+    "dateTime": "Datum & tid",
+    "scheduledOn": "på {{names}}",
+    "fieldsSummary_one": "{{count}} fält ( {{mandatory}} obligatoriskt)",
+    "fieldsSummary_other": "{{count}} fält ( {{mandatory}} obligatoriska)",
+    "deleteConfirm": "Ta bort status \" {{name}} \"? Detta kan inte ångras.",
+    "editTitle": "Redigera status - {{name}}",
+    "newTitle": "Ny status",
+    "name": "Status Namn",
+    "colour": "Färg",
+    "active": "Aktiv",
+    "isDefault": "Standardstatus för nya potentiella kunder",
+    "isBooking": "Bokningsstatus (ställs in av Fullständig bokning)",
+    "whenMoved": "När en lead flyttas till denna status",
+    "askSchedule": "Be om datum och tid (schemaläggare)",
+    "scheduleLabelPlaceholder": "Etikett, t.ex. Besök på",
+    "fieldsToShow": "Lead-fält som ska visas på uppdateringsformuläret",
+    "subStatusesTitle": "Understatus",
+    "subStatusesHint": "Varje understatus kan be om sitt eget datum och tid och lägga till sina egna fält - visas ovanpå statusens fält ovan.",
+    "subStatusName": "Understatusnamn",
+    "subFields": "Fält ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Datum & tidetikett, t.ex. Ring tillbaka kl",
+    "addSubStatus": "+ Lägg till understatus",
+    "saveStatus": "Spara status",
+    "createStatus": "Skapa status"
+  },
+  "notifications": {
+    "intro": "Meddela rätt personer när en lead når en status - omedelbart, eller en bestämd tid före/efter det datum och tid som schemalagts på den.",
+    "add": "+ Lägg till avisering",
+    "columns": {
+      "notification": "Underrättelse",
+      "whenStatusIs": "När status är",
+      "sends": "Skickar",
+      "to": "Till",
+      "via": "Via",
+      "enabled": "Aktiverad"
+    },
+    "anyStatus": "Vilken status som helst",
+    "anySubStatus": "Eventuell understatus",
+    "inactiveOption": "{{name}} (inaktiv)",
+    "emptyRules": "Inga aviseringar än - lägg till en för att varna ditt team när en lead når en status.",
+    "jobs": {
+      "title": "Schemalagt & skickat",
+      "firesAt": "Bränder vid",
+      "notification": "Underrättelse",
+      "lead": "Leda",
+      "status": "Status",
+      "details": "Detaljer",
+      "empty": "Inget schemalagt eller skickat ännu.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "I avvaktan på",
+      "PROCESSING": "Bearbetning",
+      "SENT": "Skickat",
+      "FAILED": "Misslyckades",
+      "SKIPPED": "Hoppade över",
+      "CANCELLED": "Avbruten"
+    },
+    "deliveryStatus": {
+      "SENT": "skickas",
+      "FAILED": "misslyckades",
+      "SKIPPED": "hoppade över"
+    },
+    "deliveryChannel": {
+      "IN_APP": "i appen",
+      "EMAIL": "e-post",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Tilldelad användare",
+      "owner": "Ägare",
+      "updatedBy": "Uppdaterad av",
+      "role": "Roll: {{name}}"
+    },
+    "channels": {
+      "inApp": "I appen",
+      "email": "E-post",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Ta bort meddelande \" {{name}} \"? Väntande påminnelser från den avbryts.",
+    "testPrompt": "Skicka ett test av detta meddelande till dig själv (i appen) med vilket lead- ID ?",
+    "testSent": "Skickat till din klocka: {{title}} {{message}}",
+    "headersInvalid": "Webhook rubriker måste vara giltiga JSON , t.ex. {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Redigera meddelande",
+    "newTitle": "Ny anmälan",
+    "name": "Namn",
+    "namePlaceholder": "t.ex. påminnelse om webbplatsbesök",
+    "whenStatus": "När en leads status är",
+    "subStatus": "Understatus",
+    "send": "Skicka (schemaläggare)",
+    "custom": "Beställnings...",
+    "modeBefore": "före schemalagd tid",
+    "modeAfter": "efter schemalagd tid",
+    "noScheduleWarning": "Den här statusen kräver inte något datum och tid, så en \"före/vid/efter schemalagd tid\"-meddelande skulle aldrig avfyras.",
+    "noScheduleFix": "Aktivera <strong>Be om ett datum och en tid</strong> för det under Status och understatus, eller skicka omedelbart.",
+    "sendTo": "Skicka till (valfri kombination)",
+    "recipientAssigned": "Tilldelad användare (huvudägare)",
+    "recipientOwner": "Kontoägare/admin",
+    "recipientUpdatedBy": "Person som uppdaterade statusen",
+    "everyoneWithRole": "Alla med roll",
+    "specificUsers": "Specifika användare (aktiva)",
+    "inactiveNever": "Inaktiva användare får aldrig aviseringar, även om de är valda.",
+    "deliverVia": "Leverera via",
+    "channelInApp": "I appen (klocka)",
+    "channelEmail": "E-post",
+    "channelWebhook": "Webhook ( WhatsApp / SMS leverantör)",
+    "emailHint": "E-post går till varje mottagares e-postadress och behöver SMTP-konfigureras på servern (backend/.env); tills dess loggas e-postsändningar som överhoppade.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Rubriker ( JSON )",
+    "content": "Aviseringsinnehåll",
+    "title": "Titel",
+    "message": "Meddelande",
+    "insertIntoTitle": "Infoga i rubriken",
+    "insertIntoMessage": "Infoga i meddelande",
+    "anyLeadField": "Alla potentiella kunder fungerar också, t.ex. <code1>{{example1}}</code1> eller <code2>{{example2}}</code2> .",
+    "preview": "Förhandsgranskning (exempel på lead)",
+    "enabled": "Aktiverad",
+    "saveRule": "Spara meddelande",
+    "createRule": "Skapa meddelande",
+    "variables": {
+      "customerName": "Huvudnamn",
+      "customerMobile": "Bly mobil",
+      "customerEmail": "Ledande e-post",
+      "registrationId": "Ledar- ID",
+      "status": "Status",
+      "subStatus": "Understatus",
+      "scheduleAt": "Schemalagt datum och tid",
+      "assignedTo": "Tilldelad användare",
+      "updatedBy": "Uppdaterad av",
+      "recipient": "Mottagarens namn",
+      "project": "Projekt",
+      "notes": "Senaste anteckningen",
+      "partner": "Partners namn"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Omedelbart när status är inställd",
+      "AT": "På utsatt tid",
+      "A1D": "1 dag efter schemalagd tid (uppföljningskontroll)"
+    },
+    "immediately": "Omedelbart",
+    "atScheduled": "På schemalagd tid",
+    "before": {
+      "MINUTES_one": "{{count}} minut före schemalagd tid",
+      "MINUTES_other": "{{count}} minuter före schemalagd tid",
+      "HOURS_one": "{{count}} timme före schemalagd tid",
+      "HOURS_other": "{{count}} timmar före schemalagd tid",
+      "DAYS_one": "{{count}} dag före schemalagd tid",
+      "DAYS_other": "{{count}} dagar före schemalagd tid",
+      "WEEKS_one": "{{count}} vecka före schemalagd tid",
+      "WEEKS_other": "{{count}} veckor före schemalagd tid",
+      "MONTHS_one": "{{count}} månad före schemalagd tid",
+      "MONTHS_other": "{{count}} månader före schemalagd tid",
+      "YEARS_one": "{{count}} år före schemalagd tid",
+      "YEARS_other": "{{count}} år före schemalagd tid"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minut efter schemalagd tid",
+      "MINUTES_other": "{{count}} minuter efter schemalagd tid",
+      "HOURS_one": "{{count}} timme efter schemalagd tid",
+      "HOURS_other": "{{count}} timmar efter schemalagd tid",
+      "DAYS_one": "{{count}} dag efter schemalagd tid",
+      "DAYS_other": "{{count}} dagar efter schemalagd tid",
+      "WEEKS_one": "{{count}} vecka efter schemalagd tid",
+      "WEEKS_other": "{{count}} veckor efter schemalagd tid",
+      "MONTHS_one": "{{count}} månad efter schemalagd tid",
+      "MONTHS_other": "{{count}} månader efter schemalagd tid",
+      "YEARS_one": "{{count}} år efter schemalagd tid",
+      "YEARS_other": "{{count}} år efter schemalagd tid"
+    },
+    "units": {
+      "MINUTES_one": "minut",
+      "MINUTES_other": "minuter",
+      "HOURS_one": "timme",
+      "HOURS_other": "timmar",
+      "DAYS_one": "dag",
+      "DAYS_other": "dagar",
+      "WEEKS_one": "vecka",
+      "WEEKS_other": "veckor",
+      "MONTHS_one": "månad",
+      "MONTHS_other": "månader",
+      "YEARS_one": "år",
+      "YEARS_other": "år"
+    }
+  }
+}

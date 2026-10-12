@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal Baumajstra",
+    "referrals": "Przekozania",
+    "builderLogin": "Logowanie ôd budownika",
+    "partnerLogin": "Zalogowanie Partnera Kanału"
+  },
+  "login": {
+    "title": "Zalogowanie sie ôd budownika",
+    "hint": "Konta budowniczkōw sōm tworzōne bez Leadrat . Zapytaj swojigo administratora, eli go niy masz."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Czekajōm na twoja decyzyjo",
+    "ACCEPTED": "Zaakceptowane",
+    "REJECTED": "Ôdciepniynte"
+  },
+  "list": {
+    "title": "Przekozania",
+    "allProjects": "wszyske projekty",
+    "allStatuses": "wszyske statusy",
+    "count_one": "{{count}} ôdesłanie",
+    "count_other": "{{count}} ôdesłań",
+    "columns": {
+      "referral": "Przekozanie",
+      "customer": "Klijynt",
+      "project": "Projekt",
+      "sourcePartner": "Partner zdrzōdłowy",
+      "status": "Status",
+      "booking": "Rezerwacyjo",
+      "registered": "Zaregistrowany"
+    },
+    "booked": "Zarezerwowane",
+    "empty": "Jeszcze brak ôdesłań."
+  },
+  "detail": {
+    "customer": "Klijynt",
+    "sourcePartner": "Partner zdrzōdłowy",
+    "attributionNote": "(atrybucyjo - niy może być zmiyniōno)",
+    "leadStatus": "Status prowadzōncego",
+    "protectedUntil": "Chrōniōne Do",
+    "referral": "Przekozanie",
+    "reason": "Powōd: {{reason}}",
+    "booking": "Rezerwacyjo",
+    "bookedOwner": "Rezerwowane - jesteś ôperacyjnym posiedzicielym",
+    "notBooked": "Niy zarezerwowane",
+    "sharedAfterBooking": "Udostępniōne po rezerwacyji",
+    "accept": "Zaakceptuj ôdesłanie",
+    "confirmBooking": "Potwierdź rezerwacyjo",
+    "reject": "Ôdciepniyńcie ôdesłanio",
+    "rejectReasonLabel": "Powōd ôdciepniyńcio (pokazany partnerowi) *",
+    "rejectConfirm": "Ôdciepnōńć",
+    "confirmBookingPrompt": "Potwierdź rezerwacyjo? Włosność ôperacyjno przechodzi do Ciebie, a partnyr stowo sie kwalifikowany do kōmisyje.",
+    "notice": {
+      "booked": "Rezerwacyjo potwierdzōno.",
+      "accepted": "Przekozanie zaakceptowane.",
+      "rejected": "Przekozanie ôdciepniynte."
+    },
+    "backToReferrals": "Nazod do ôdesłań"
+  },
+  "history": {
+    "title": "Historyjo",
+    "actor": {
+      "system": "Systym",
+      "partner": "Partner kanału",
+      "admin": "Admin Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Dostano registracyjo partnyra",
+      "DUPLICATE_CHECK_COMPLETED": "Kōntrola duplikatu zakōńczōno - niy znojdziōno aktywnego duplikatu",
+      "REGISTRATION_ACCEPTED": "Registracyjo je przijynto",
+      "PROTECTION_GRANTED_one": "{{count}} -dziynno ôchrōna prziznano",
+      "PROTECTION_GRANTED_other": "{{count}} -dziynno ôchrōna prziznano",
+      "STAGE_UPDATED": "Status zaktualizowany na {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Zaktualizowane pole {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "Zaktualizowane pola {{count}}",
+      "LEAD_ASSIGNED": "Przipisany do {{name}}",
+      "LEAD_UNASSIGNED": "Niyprzipisany",
+      "REFERRAL_ACCEPTED": "Baumajster zaakceptowoł ôdesłanie",
+      "REFERRAL_REJECTED": "Builder ôdciepnōł ôdesłanie. Powōd: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Prōba registracyje duplikacyje ôd {{partner}} ôdciepniynto",
+      "BOOKING_COMPLETED": "Rezerwacyjo zakōńczōno",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Włosność ôperacyjno przeniesiōno do Baumajstra",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atrybucyjo partnera zachowano",
+      "COMMISSION_ELIGIBILITY_CREATED": "Utworzōno kwalifikacyjo do kōmisyje",
+      "HANDOVER_COMPLETED": "Przekazanie zakōńczōne",
+      "ADMIN_PROTECTION_RELEASED": "Admin wczasnij uwolniōł duplikatowo ôchrōna. Powōd: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin zmiyniōł przipisany registracyjo z {{from}} na {{to}} . Powōd: {{reason}}"
+    }
+  }
+}

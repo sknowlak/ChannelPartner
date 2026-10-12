@@ -1,0 +1,87 @@
+{
+  "shell": {
+    "portal": "Portal Pembina",
+    "referrals": "Rujukan",
+    "builderLogin": "Log Masuk Pembina",
+    "partnerLogin": "Log Masuk Rakan Kongsi Saluran"
+  },
+  "login": {
+    "title": "Log masuk pembina",
+    "hint": "Akaun Builder dicipta oleh Leadrat . Tanya pentadbir anda jika anda tidak mempunyainya."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Menunggu keputusan anda",
+    "ACCEPTED": "Diterima",
+    "REJECTED": "ditolak"
+  },
+  "list": {
+    "title": "Rujukan",
+    "allProjects": "Semua projek",
+    "allStatuses": "Semua status",
+    "count_other": "{{count}} rujukan",
+    "columns": {
+      "referral": "Rujukan",
+      "customer": "Pelanggan",
+      "project": "Projek",
+      "sourcePartner": "Rakan Kongsi Sumber",
+      "status": "Status",
+      "booking": "Tempahan",
+      "registered": "Berdaftar"
+    },
+    "booked": "Tempah",
+    "empty": "Tiada rujukan lagi."
+  },
+  "detail": {
+    "customer": "Pelanggan",
+    "sourcePartner": "Rakan Kongsi Sumber",
+    "attributionNote": "(atribusi - tidak boleh diubah)",
+    "leadStatus": "Status Pemimpin",
+    "protectedUntil": "Dilindungi Sehingga",
+    "referral": "Rujukan",
+    "reason": "Sebab: {{reason}}",
+    "booking": "Tempahan",
+    "bookedOwner": "Tempah - anda adalah pemilik operasi",
+    "notBooked": "Tidak ditempah",
+    "sharedAfterBooking": "Dikongsi selepas membuat tempahan",
+    "accept": "Terima Rujukan",
+    "confirmBooking": "Sahkan Tempahan",
+    "reject": "Tolak Rujukan",
+    "rejectReasonLabel": "Sebab menolak (ditunjukkan kepada pasangan) *",
+    "rejectConfirm": "Tolak",
+    "confirmBookingPrompt": "Sahkan tempahan? Pemilikan operasi berpindah kepada anda dan rakan kongsi menjadi layak untuk komisen.",
+    "notice": {
+      "booked": "Tempahan disahkan.",
+      "accepted": "Rujukan diterima.",
+      "rejected": "Rujukan ditolak."
+    },
+    "backToReferrals": "Kembali ke Rujukan"
+  },
+  "history": {
+    "title": "Sejarah",
+    "actor": {
+      "system": "Sistem",
+      "partner": "Rakan kongsi saluran",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Pendaftaran rakan kongsi diterima",
+      "DUPLICATE_CHECK_COMPLETED": "Semakan pendua selesai - tiada pendua aktif ditemui",
+      "REGISTRATION_ACCEPTED": "Pendaftaran diterima",
+      "PROTECTION_GRANTED_other": "{{count}} perlindungan -hari diberikan",
+      "STAGE_UPDATED": "Status dikemas kini kepada {{stage}}",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} medan dikemas kini",
+      "LEAD_ASSIGNED": "Ditugaskan kepada {{name}}",
+      "LEAD_UNASSIGNED": "Tidak ditugaskan",
+      "REFERRAL_ACCEPTED": "Builder menerima rujukan",
+      "REFERRAL_REJECTED": "Builder menolak rujukan. Sebab: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Percubaan pendaftaran pendua oleh {{partner}} ditolak",
+      "BOOKING_COMPLETED": "Tempahan selesai",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Pemilikan operasi dipindahkan kepada Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribusi rakan kongsi dipelihara",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisen diwujudkan",
+      "HANDOVER_COMPLETED": "Penyerahan selesai",
+      "ADMIN_PROTECTION_RELEASED": "Admin mengeluarkan perlindungan pendua awal. Sebab: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Pentadbir menugaskan semula pendaftaran daripada {{from}} kepada {{to}} . Sebab: {{reason}}"
+    }
+  }
+}

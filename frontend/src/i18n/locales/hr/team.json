@@ -1,0 +1,83 @@
+{
+  "title": "Upravljanje timom",
+  "tabs": {
+    "members": "Članovi tima",
+    "roles": "Uloge i dopuštenja",
+    "profile": "Moj profil"
+  },
+  "roles": {
+    "owner": "Vlasnik",
+    "member": "Član tima"
+  },
+  "profile": {
+    "updated": "Profil ažuriran.",
+    "basicInfo": "Osnovne informacije",
+    "organisationInfo": "Informacije o organizaciji",
+    "preferences": "Postavke",
+    "companyName": "Naziv tvrtke/organizacije",
+    "city": "Grad",
+    "state": "Stanje",
+    "currencyHelp": "Koristi se za prikaz proračuna i vrijednosti rezervacija u vašem timu.",
+    "useDeviceTimezone": "Koristi vremensku zonu uređaja ( {{timezone}} )",
+    "securityRole": "Sigurnost i uloga",
+    "newPassword": "Nova lozinka (ostavite prazno da ostane nepromijenjena)",
+    "currentPassword": "Trenutna lozinka",
+    "memberSince": "Član od",
+    "languageSaved": "Jezik spremljen na vaš račun - koristit će se na svakom uređaju na koji se prijavite."
+  },
+  "members": {
+    "intro": "Dodajte, uredite, deaktivirajte ili uklonite osobe u svom timu - oni dijele pristup istim potencijalnim klijentima.",
+    "noPermission": "Nemate dopuštenje za dodavanje, uređivanje ili uklanjanje članova tima.",
+    "addNew": "+ Dodaj novog korisnika",
+    "passwordLabel": "{{label}} (najmanje 8 znakova)",
+    "rolePermissions": "Uloga i dopuštenja",
+    "adding": "Dodavanje...",
+    "addMember": "Dodajte člana tima",
+    "tabAll": "Svi ( {{count}} )",
+    "tabActive": "Aktivno ( {{count}} )",
+    "tabInactive": "Neaktivno ( {{count}} )",
+    "searchPlaceholder": "Traži ime ili korisničko ime...",
+    "allTimezones": "Sve vremenske zone",
+    "perPage": "Unosi po stranici",
+    "contact": "Kontakt",
+    "added": "Dodano",
+    "toggleActive": "Aktivno - kliknite za deaktivaciju",
+    "toggleInactive": "Neaktivno - kliknite za aktivaciju",
+    "empty": "Još nema članova tima.",
+    "noMatch": "Nijedan član tima ne odgovara ovim filtrima.",
+    "showing": "Prikazuje se {{from}} - {{to}} od {{total}} unosa",
+    "firstPage": "Prva stranica",
+    "previousPage": "Prethodna stranica",
+    "nextPage": "Sljedeća stranica",
+    "lastPage": "Zadnja stranica"
+  },
+  "editMember": {
+    "title": "Uredi korisnika",
+    "noPermission": "Nemate dopuštenje za uređivanje članova tima.",
+    "backToTeam": "Natrag u tim",
+    "cantChangeOwn": "Ne možete promijeniti vlastitu ulogu ili status.",
+    "needsManageRoles": "Za promjenu uloge člana potrebno je dopuštenje za upravljanje ulogama.",
+    "addedBy": "Dodao",
+    "addedOn": "Dodano"
+  },
+  "rolesPage": {
+    "intro": "Super administrator, administrator i upravitelj ugrađeni su i ne mogu se mijenjati - stvorite prilagođenu ulogu za bilo što drugo.",
+    "noPermission": "Nemate dopuštenje za upravljanje ulogama.",
+    "createCustom": "+ Stvorite prilagođenu ulogu",
+    "roleName": "Naziv uloge",
+    "permissions": "Dozvole",
+    "members": "članovi",
+    "creating": "Izrada...",
+    "createRole": "Stvori ulogu",
+    "systemRole": "Uloga sustava",
+    "builtIn": "Ugrađeni",
+    "empty": "Još nema uloga."
+  },
+  "permissions": {
+    "MANAGE_LEADS": "Upravljajte potencijalnim klijentima (stvarajte, napredujte, rezervirajte)",
+    "MANAGE_TEAM": "Upravljanje timom (dodavanje, uređivanje, uklanjanje članova)",
+    "MANAGE_ROLES": "Upravljanje ulogama i dopuštenjima",
+    "MANAGE_SETTINGS": "Upravljanje postavkama (polja obrasca za potencijalne klijente)",
+    "none": "Nema dopuštenja"
+  }
+}

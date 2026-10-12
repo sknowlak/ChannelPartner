@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Tuvatuva",
+    "noPermission": "E sega ni tu vei iko na veivakadonui mo vakatulewataka na ituvatuva."
+  },
+  "categories": {
+    "lead": "Ulu",
+    "user": "Vakayagataki",
+    "integrations": "Veivakaduavatataki"
+  },
+  "leadTabs": {
+    "fields": "Vanua",
+    "statuses": "iTuvaki & iTuvaki Lalai",
+    "notifications": "Veivakatakila kei na ituvatuva"
+  },
+  "fields": {
+    "leadIntro": "Vakarautaka na fomu ni vesuki ni iliuliu: vakatara/vakacacana na vanua, vakatakilakilataka ni gadrevi, se vakuria na nomu vanua vakaitaukei.",
+    "userIntro": "Vakarautaka na fomu ni Lewe ni Timi ni Vakacuruma/Vakadodonutaka: vakatara/vakacacana na vanua, vakatakilakilataka ni gadrevi, se vakacuruma na nomu vanua vakaitaukei.",
+    "addCustomField": "+ Vakacuruma na vanua vakaitaukei",
+    "fieldLabel": "Vakatakilakila ni Vanua",
+    "group": "Ilawalawa",
+    "groupPlaceholderLead": "me vaka na itukutuku ni vakatataro",
+    "groupPlaceholderUser": "eg ikuri ni itukutuku matailalai",
+    "dataType": "Mataqali itukutuku",
+    "options": "Digidigi (vakatikitikitaki ena koma)",
+    "requiredLead": "E gadrevi - na itokani ena nomu timi e dodonu me vakacuruma oqo me rejisita e dua na iliuliu .",
+    "requiredUser": "E gadrevi - e dodonu me vakacurumi ena gauna e vakacurumi kina e dua na lewe ni timi .",
+    "creating": "Bulia...",
+    "createField": "Cakava na Vanua",
+    "columns": {
+      "field": "Iteitei",
+      "group": "Ilawalawa",
+      "type": "Mataqali",
+      "required": "Gadrevi",
+      "enabled": "Vakatara",
+      "kind": "Yalo vinaka"
+    },
+    "kind": {
+      "custom": "Ivakarau",
+      "core": "Uto (lokataki)",
+      "standard": "Ivakatagedegede"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Itukutuku",
+    "TEXTAREA": "Vosa balavu",
+    "NUMBER": "Naba",
+    "CURRENCY": "Ilavo",
+    "DATE": "Tikinisiga",
+    "SELECT": "Drodro sobu",
+    "LIST": "Lisi"
+  },
+  "picker": {
+    "searchPlaceholder": "Vakasaqara na vanua ni veiliutaki...",
+    "summary": "{{shown}} vakaraitaki · {{mandatory}} vakaroti",
+    "mandatory": "Gadrevi",
+    "noMatch": "E sega ni dua na vanua e veiganiti."
+  },
+  "statuses": {
+    "intro": "Na nomu ituvaki ni veiliutaki kei na ituvaki lalai - na cava e kerea e dua (e dua na siga & gauna, vanua ni veiliutaki) ni dua e vakavoutaka e dua na veiliutaki ki na kena.",
+    "add": "+ Vakacuruma na ituvaki",
+    "columns": {
+      "order": "Ituvatuva",
+      "status": "ITuvatuva",
+      "subStatuses": "iTuvaki Lalai",
+      "asksFor": "Kerea na",
+      "active": "Yavala"
+    },
+    "moveUp": "Toso cake",
+    "moveDown": "Toso sobu",
+    "defaultBadge": "Vakatautauvatataki me baleta na iliuliu vou",
+    "bookingBadge": "Tuvaki ni buking",
+    "asksForLabel": "Kerea na {{label}}",
+    "asksForDateTime": "Kerea na siga kei na gauna",
+    "none": "Sega",
+    "dateTime": "Siga kei na gauna",
+    "scheduledOn": "ena {{names}}",
+    "fieldsSummary_one": "{{count}} vanua ( {{mandatory}} vakaroti)",
+    "fieldsSummary_other": "{{count}} vanua ( {{mandatory}} vakaroti)",
+    "deleteConfirm": "Bokoca na ituvaki \" {{name}} \"? E sega ni rawa ni vakasukai oqo.",
+    "editTitle": "Vakadodonutaka na ituvaki - {{name}}",
+    "newTitle": "iTuvaki Vou",
+    "name": "Yaca ni ituvaki",
+    "colour": "Roka",
+    "active": "Yavala",
+    "isDefault": "Na ituvaki taumada me baleta na iliuliu vou",
+    "isBooking": "Na ituvaki ni buking (vakarautaka na Buking Taucoko)",
+    "whenMoved": "Ni sa toso e dua na iliuliu ki na ituvaki oqo .",
+    "askSchedule": "Kerea e dua na siga & gauna (ituvatuva)",
+    "scheduleLabelPlaceholder": "Label, eg Sikova ena",
+    "fieldsToShow": "Na vanua ni veiliutaki me vakaraitaki ena fomu ni vakavoui",
+    "subStatusesTitle": "iTuvaki Lalai",
+    "subStatusesHint": "Na ituvaki lalai yadua e rawa ni kerea na kena siga & gauna ka kuria na kena vanua - vakaraitaki ena dela ni vanua ni ituvaki e cake.",
+    "subStatusName": "Yaca ni ituvaki lailai",
+    "subFields": "Vanua ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Siga & ivakatakilakila ni gauna, eg Kacivi tale ena",
+    "addSubStatus": "+ Vakacuruma na ituvaki lailai",
+    "saveStatus": "Maroroya na ituvaki",
+    "createStatus": "Cakava na ituvaki"
+  },
+  "notifications": {
+    "intro": "Vakaraitaka vei ira na tamata dodonu ni sa yaco e dua na iliuliu ki na dua na ituvaki - ena gauna sara ga oqo, se dua na gauna vakarautaki ni bera/ni oti na siga & gauna sa tuvanaki tu kina.",
+    "add": "+ Vakacuruma na itukutuku",
+    "columns": {
+      "notification": "Vakaraitaki",
+      "whenStatusIs": "Ni sa ituvaki",
+      "sends": "Vakauta",
+      "to": "Me",
+      "via": "Via",
+      "enabled": "Vakatara"
+    },
+    "anyStatus": "Na ituvaki cava ga",
+    "anySubStatus": "Na ituvaki lailai cava ga",
+    "inactiveOption": "{{name}} (sega ni cakacaka)",
+    "emptyRules": "Se bera ni dua na veivakadeitaki - kuria e dua me vakaroti kina na nomu timi ni sa yaco e dua na iliuliu ki na dua na ituvaki.",
+    "jobs": {
+      "title": "Tuvanaki & Vakau",
+      "firesAt": "Bukawaqa ena",
+      "notification": "Vakaraitaki",
+      "lead": "Ulu",
+      "status": "ITuvatuva",
+      "details": "Itukutuku matailalai",
+      "empty": "Sega ni dua na ka e tuvanaki se vakau yani.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Lala tu",
+      "PROCESSING": "Vakarautaki",
+      "SENT": "Vakauta",
+      "FAILED": "Cala",
+      "SKIPPED": "Sa sivi",
+      "CANCELLED": "Sa bokoci"
+    },
+    "deliveryStatus": {
+      "SENT": "vakauta",
+      "FAILED": "cala",
+      "SKIPPED": "sa sivi"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ena app",
+      "EMAIL": "imeli",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Vakayagataki lesi",
+      "owner": "Itaukei",
+      "updatedBy": "Vakavoutaki mai vei",
+      "role": "iTavi: {{name}}"
+    },
+    "channels": {
+      "inApp": "Ena app",
+      "email": "Imeli",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Bokoca na itukutuku \" {{name}} \"? Na veivakananumi e waraki tiko mai kina e sa bokoci.",
+    "testPrompt": "Vakauta e dua na veivakatovolei ni itukutuku oqo vei iko (ena-app) vakayagataka ID ni veiliutaki cava ?",
+    "testSent": "Vakau ki na nomu beleti: {{title}} {{message}}",
+    "headersInvalid": "Na ulutaga Webhook e dodonu me dodonu JSON , me vaka na {\"Vakadonui\": \"Kauta xyz\"}",
+    "editTitle": "Edita na itukutuku",
+    "newTitle": "iTukutuku Vou",
+    "name": "Yaca",
+    "namePlaceholder": "eg Vakananumi ni veisiko ki na vanua",
+    "whenStatus": "Ni sa ituvaki ni dua na iliuliu .",
+    "subStatus": "iTuvaki lailai",
+    "send": "Vakauta (ituvatuva)",
+    "custom": "Ivakarau...",
+    "modeBefore": "ni bera na gauna lokuci",
+    "modeAfter": "ni oti na gauna sa tuvanaki",
+    "noScheduleWarning": "Na ituvaki oqo e sega ni kerea e dua na siga & gauna, o koya gona e dua na \"ni bera/ena/ni oti na gauna tuvanaki\" itukutuku ena sega vakadua ni kama.",
+    "noScheduleFix": "Vukica <strong>na Kerea e dua na siga & gauna</strong> me baleta na kena ena ruku ni ituvaki & ituvaki lalai, se vakauta sara ga.",
+    "sendTo": "Vakauta ki na (dua na isoqoni)",
+    "recipientAssigned": "Vakayagataki lesi (itaukei liu)",
+    "recipientOwner": "Taukei ni akaude / admin",
+    "recipientUpdatedBy": "Na tamata e vakavoutaka na ituvaki",
+    "everyoneWithRole": "Na tamata kecega e tiko na nona itavi",
+    "specificUsers": "Vakayagataki vakatabakidua (cakacaka)",
+    "inactiveNever": "Na vakayagataki ni inactive e sega vakadua ni ciqoma na veivakadeitaki, kevaka mada ga e digitaki.",
+    "deliverVia": "Veisoliyaki ena",
+    "channelInApp": "Ena-app (belu)",
+    "channelEmail": "Imeli",
+    "channelWebhook": "Webhook ( Vakarautaka WhatsApp / SMS )",
+    "emailHint": "Na imeli e lako ki na itikotiko ni imeli ni tamata yadua e ciqoma ka gadreva na SMTP vakarautaki ena veiqaravi (backend / .env); me yacova ni sa vakau na imeli era sa volai tu me vaka e sa skipped.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Ulutaga ( JSON )",
+    "content": "Na itukutuku ni veivakadeitaki",
+    "title": "Ulutaga",
+    "message": "Itukutuku",
+    "insertIntoTitle": "Vakacuruma ki na Ulutaga",
+    "insertIntoMessage": "Vakacuruma ki na itukutuku",
+    "anyLeadField": "Na vanua ni veiliutaki cava ga e cakacaka talega, me vaka na <code1>{{example1}}</code1> se <code2>{{example2}}</code2> .",
+    "preview": "Raica taumada (ivakaraitaki ni iliuliu)",
+    "enabled": "Vakatara",
+    "saveRule": "Maroroya na itukutuku",
+    "createRule": "Cakava na itukutuku",
+    "variables": {
+      "customerName": "Yaca ni iliuliu",
+      "customerMobile": "Liutaka na talevoni veikauyaki",
+      "customerEmail": "Imeli ni veiliutaki",
+      "registrationId": "ID ni veiliutaki",
+      "status": "ITuvatuva",
+      "subStatus": "iTuvaki lailai",
+      "scheduleAt": "Na siga kei na gauna sa tuvanaki",
+      "assignedTo": "Vakayagataki lesi",
+      "updatedBy": "Vakavoutaki mai vei",
+      "recipient": "Yaca i koya e ciqoma",
+      "project": "Itavi",
+      "notes": "Na itukutuku vou duadua",
+      "partner": "Yaca ni itokani"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Ena gauna sara ga e sa vakarautaki kina na ituvaki .",
+      "AT": "Ena gauna sa lokuci .",
+      "A1D": "1 siga ni oti na gauna sa tuvanaki (vakamuria na jeke)"
+    },
+    "immediately": "Totolo",
+    "atScheduled": "Ena gauna lokuci",
+    "before": {
+      "MINUTES_one": "{{count}} miniti ni bera na gauna lokuci",
+      "MINUTES_other": "{{count}} na miniti ni bera na gauna lokuci",
+      "HOURS_one": "{{count}} auwa ni bera na gauna lokuci",
+      "HOURS_other": "{{count}} auwa ni bera na gauna lokuci",
+      "DAYS_one": "{{count}} siga ni bera na gauna lokuci",
+      "DAYS_other": "{{count}} siga ni bera na gauna lokuci",
+      "WEEKS_one": "{{count}} macawa ni bera na gauna lokuci",
+      "WEEKS_other": "{{count}} macawa ni bera na gauna lokuci",
+      "MONTHS_one": "{{count}} vula ni bera na gauna lokuci",
+      "MONTHS_other": "{{count}} vula ni bera na gauna lokuci",
+      "YEARS_one": "{{count}} yabaki ni bera na gauna lokuci",
+      "YEARS_other": "{{count}} na yabaki ni bera na gauna lokuci"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} miniti ni oti na gauna sa tuvanaki",
+      "MINUTES_other": "{{count}} miniti ni oti na gauna lokuci",
+      "HOURS_one": "{{count}} auwa ni oti na gauna sa tuvanaki",
+      "HOURS_other": "{{count}} auwa ni oti na gauna sa tuvanaki",
+      "DAYS_one": "{{count}} siga ni oti na gauna lokuci",
+      "DAYS_other": "{{count}} siga ni oti na gauna lokuci",
+      "WEEKS_one": "{{count}} macawa ni oti na gauna lokuci",
+      "WEEKS_other": "{{count}} macawa ni oti na gauna lokuci",
+      "MONTHS_one": "{{count}} vula ni oti na gauna sa tuvanaki",
+      "MONTHS_other": "{{count}} vula ni oti na gauna lokuci",
+      "YEARS_one": "{{count}} yabaki ni oti na gauna sa tuvanaki",
+      "YEARS_other": "{{count}} yabaki ni oti na gauna lokuci"
+    },
+    "units": {
+      "MINUTES_one": "miniti",
+      "MINUTES_other": "miniti",
+      "HOURS_one": "auwa",
+      "HOURS_other": "aua",
+      "DAYS_one": "siga",
+      "DAYS_other": "siga",
+      "WEEKS_one": "macawa",
+      "WEEKS_other": "macawa",
+      "MONTHS_one": "vula",
+      "MONTHS_other": "vula",
+      "YEARS_one": "yabaki",
+      "YEARS_other": "yabaki"
+    }
+  }
+}

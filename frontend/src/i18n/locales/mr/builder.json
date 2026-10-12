@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "बिल्डर पोर्टल",
+    "referrals": "रेफरल्स",
+    "builderLogin": "बिल्डर लॉगिन",
+    "partnerLogin": "चॅनल भागीदार लॉगिन"
+  },
+  "login": {
+    "title": "बिल्डर साइन इन",
+    "hint": "बिल्डर खाती Leadrat तयार केली आहेत. तुमच्याकडे नसेल तर तुमच्या ॲडमिनिस्ट्रेटरला विचारा."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "तुमच्या निर्णयाची वाट पाहत आहे",
+    "ACCEPTED": "स्वीकारले",
+    "REJECTED": "नाकारले"
+  },
+  "list": {
+    "title": "रेफरल्स",
+    "allProjects": "सर्व प्रकल्प",
+    "allStatuses": "सर्व स्थिती",
+    "count_one": "{{count}} संदर्भ",
+    "count_other": "{{count}} संदर्भ",
+    "columns": {
+      "referral": "रेफरल",
+      "customer": "ग्राहक",
+      "project": "प्रकल्प",
+      "sourcePartner": "स्रोत भागीदार",
+      "status": "स्थिती",
+      "booking": "बुकिंग",
+      "registered": "नोंदणीकृत"
+    },
+    "booked": "बुक केले",
+    "empty": "अद्याप कोणतेही संदर्भ नाहीत."
+  },
+  "detail": {
+    "customer": "ग्राहक",
+    "sourcePartner": "स्रोत भागीदार",
+    "attributionNote": "(विशेषता - बदलता येत नाही)",
+    "leadStatus": "लीड स्थिती",
+    "protectedUntil": "पर्यंत संरक्षित",
+    "referral": "रेफरल",
+    "reason": "कारण: {{reason}}",
+    "booking": "बुकिंग",
+    "bookedOwner": "बुक केलेले - तुम्ही ऑपरेशनल मालक आहात",
+    "notBooked": "बुक केलेले नाही",
+    "sharedAfterBooking": "बुकिंग केल्यानंतर शेअर केले",
+    "accept": "रेफरल स्वीकारा",
+    "confirmBooking": "बुकिंगची पुष्टी करा",
+    "reject": "रेफरल नाकारणे",
+    "rejectReasonLabel": "नाकारण्याचे कारण (भागीदाराला दाखवले आहे) *",
+    "rejectConfirm": "नकार द्या",
+    "confirmBookingPrompt": "बुकिंगची पुष्टी करायची? ऑपरेशनल मालकी तुमच्याकडे जाते आणि भागीदार कमिशनसाठी पात्र होतो.",
+    "notice": {
+      "booked": "बुकिंग निश्चित झाले.",
+      "accepted": "रेफरल स्वीकारले.",
+      "rejected": "रेफरल नाकारले."
+    },
+    "backToReferrals": "संदर्भांकडे परत"
+  },
+  "history": {
+    "title": "इतिहास",
+    "actor": {
+      "system": "प्रणाली",
+      "partner": "चॅनल भागीदार",
+      "admin": "Leadrat ॲडमिन"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "भागीदार नोंदणी प्राप्त झाली",
+      "DUPLICATE_CHECK_COMPLETED": "डुप्लिकेट चेक पूर्ण झाले - सक्रिय डुप्लिकेट आढळले नाही",
+      "REGISTRATION_ACCEPTED": "नोंदणी स्वीकारली",
+      "PROTECTION_GRANTED_one": "{{count}} -दिवसाचे संरक्षण दिले",
+      "PROTECTION_GRANTED_other": "{{count}} -दिवसाचे संरक्षण दिले",
+      "STAGE_UPDATED": "स्थिती {{stage}} वर अपडेट केली",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} फील्ड अपडेट केले",
+      "LEAD_DETAILS_UPDATED_other": "अपडेट केलेले {{count}} फील्ड",
+      "LEAD_ASSIGNED": "{{name}} यांना नियुक्त केले",
+      "LEAD_UNASSIGNED": "असाइन केलेले नाही",
+      "REFERRAL_ACCEPTED": "बिल्डरने रेफरल स्वीकारले",
+      "REFERRAL_REJECTED": "बिल्डरने रेफरल नाकारले. कारण: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} चा डुप्लिकेट नोंदणीचा ​​प्रयत्न नाकारला",
+      "BOOKING_COMPLETED": "बुकिंग पूर्ण झाले",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "ऑपरेशनल मालकी बिल्डरकडे हस्तांतरित केली",
+      "PARTNER_ATTRIBUTION_PRESERVED": "भागीदार विशेषता जतन",
+      "COMMISSION_ELIGIBILITY_CREATED": "आयोगाची पात्रता निर्माण केली",
+      "HANDOVER_COMPLETED": "हस्तांतर पूर्ण झाले",
+      "ADMIN_PROTECTION_RELEASED": "प्रशासकाने डुप्लिकेट संरक्षण लवकर सोडले. कारण: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "प्रशासकाने {{from}} पासून {{to}} पर्यंत नोंदणी पुन्हा नियुक्त केली. कारण: {{reason}}"
+    }
+  }
+}

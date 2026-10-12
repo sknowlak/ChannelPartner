@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Akong mga Lead",
+    "signedInAs": "Gipirmahan isip {{name}} ( {{partnerId}} ) · mga panahon nga gipakita sa {{timezone}}",
+    "addLead": "+ Idugang ang Tingga",
+    "tabs": {
+      "all": "Tanan ( {{count}} )",
+      "pending": "Naghulat ( {{count}} )",
+      "booked": "Gi-book ( {{count}} )"
+    },
+    "searchPlaceholder": "Pangita pinaagi sa ngalan, mobile, o registration ID ...",
+    "manageColumns": "Pagdumala sa mga Kolum",
+    "rowsPerPage": "Mga laray kada panid",
+    "registrationId": "Registration ID",
+    "emptyState": "Wala pay lead - irehistro ang imong una.",
+    "noMatch": "Walay mga lead nga motakdo niini nga mga filter.",
+    "showing": "Nagpakita {{from}} - {{to}} sa {{total}} nga mga entry",
+    "actions": {
+      "preview": "Preview ug dali nga update",
+      "history": "Kasaysayan",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Tawag"
+    },
+    "pagination": {
+      "first": "Unang panid",
+      "previous": "Nauna nga panid",
+      "next": "Sunod nga panid",
+      "last": "Katapusan nga panid"
+    }
+  },
+  "columns": {
+    "status": "Status",
+    "assignTo": "I-assign Sa",
+    "booked": "Gi-book",
+    "protectionUntil": "Proteksyon Hangtod"
+  },
+  "booking": {
+    "booked": "Gi-book",
+    "pending": "Naghulat"
+  },
+  "assign": {
+    "unassigned": "Wala ma-assign",
+    "owner": "{{name}} (Tag-iya)",
+    "inactive": "{{name}} (dili aktibo)",
+    "unknownUser": "Wala mailhi nga tiggamit",
+    "assignedTo": "Gi-assign sa {{name}}"
+  },
+  "form": {
+    "addTitle": "Idugang ang Lead",
+    "editTitle": "I-edit ang Lead",
+    "noPermissionAdd": "Wala kay permiso sa pagrehistro sa mga lead.",
+    "noPermissionEdit": "Wala kay permiso sa pag-edit sa mga lead.",
+    "selectPlaceholder": "Pilia...",
+    "commaSeparated": "Gibulag ang comma",
+    "phonePlaceholder": "Numero sa telepono",
+    "countryCode": "Kodigo sa nasod"
+  },
+  "project": {
+    "none": "Wala pay proyekto (wala gi-refer)",
+    "notInList": "{{project}} (wala sa listahan sa proyekto)"
+  },
+  "journey": {
+    "customer": "Kustomer",
+    "currentOwner": "Kasamtangang Tag-iya",
+    "protectionExpiry": "Pag-expire sa Proteksyon",
+    "leadStatus": "Nanguna nga kahimtang",
+    "scheduled": "Gi-iskedyul",
+    "assignedTo": "Gi-assign Sa",
+    "referral": "Referral",
+    "builderReason": "Rason sa magtutukod: {{reason}}",
+    "bookedHint": "Gi-book sa magtutukod - ang pagpanag-iya sa operasyon mibalhin sa magtutukod; ang imong attribution ug commission eligibility gitipigan.",
+    "notBookedHint": "Ang mga pag-book gikumpirma sa nagtukod kung gidawat nila ang referral.",
+    "quickUpdate": "Dali nga Update",
+    "leadDetails": "Mga Detalye sa Lead",
+    "progressHistory": "Kasaysayan sa Pag-uswag",
+    "timesIn": "(mga oras sa {{timezone}} )",
+    "backToMyLeads": "Balik sa Akong mga Lead",
+    "editLead": "I-edit ang Lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "Wala gi-refer (walay proyekto)",
+    "PENDING_BUILDER": "Naghulat sa magtutukod",
+    "ACCEPTED": "Gidawat sa magtutukod",
+    "REJECTED": "Gisalikway sa magtutukod"
+  },
+  "preview": {
+    "ariaLabel": "Panguna nga preview",
+    "title": "Pag-preview sa lead",
+    "source": "Tinubdan",
+    "location": "Lokasyon",
+    "scheduled": "Gi-iskedyul",
+    "registered": "Narehistro",
+    "latestNote": "Pinakabag-o nga Nota",
+    "quickUpdate": "Dali nga Update",
+    "fullDetails": "Bug-os nga Detalye",
+    "editLead": "I-edit ang Lead",
+    "history": "Kasaysayan"
+  },
+  "quick": {
+    "assignedTo": "Gi-assign Sa",
+    "status": "Status",
+    "subStatus": "Sub-Status",
+    "selectSubStatus": "Pilia ang sub-status...",
+    "none": "Wala",
+    "scheduledAt": "Gitakda sa",
+    "localTime": "lokal nga oras",
+    "note": "Nota",
+    "notePlaceholder": "Unsa ang nahitabo niini nga tawag / pagbisita? (opsyonal)",
+    "updateStatus": "Update Status",
+    "statusUpdated": "Gi-update ang status",
+    "bookedLocked": "Kini nga lead gi-book - ang kahimtang niini dili na mausab.",
+    "viewOnly": "Mahimo nimong tan-awon kini nga lead, apan ang imong papel dili maka-update niini."
+  },
+  "history": {
+    "title": "Kasaysayan - {{registrationId}}",
+    "tabs": {
+      "all": "Tanan",
+      "status": "Status",
+      "assignment": "Assignment",
+      "notes": "Mga nota"
+    },
+    "doneBy": "Gihimo ni {{actor}}",
+    "system": "Sistema",
+    "platforms": {
+      "System": "Sistema",
+      "External": "Sa gawas",
+      "Web": "Web",
+      "Mobile": "Mobile"
+    },
+    "added": "gidugang",
+    "updated": "updated",
+    "empty": "(walay sulod)",
+    "noHistory": "Wala pa’y kasaysayan sa kini nga kategorya.",
+    "fieldLabels": {
+      "stage": "Status",
+      "subStatus": "Sub-Status",
+      "scheduledAt": "Eskedyul",
+      "notes": "Mga nota",
+      "assignedTo": "Gi-assign Sa"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Nadawat ang pagparehistro sa kauban",
+      "DUPLICATE_CHECK_COMPLETED": "Nakompleto ang duplicate check - walay nakit-an nga aktibong duplicate",
+      "REGISTRATION_ACCEPTED": "Gidawat ang pagparehistro",
+      "PROTECTION_GRANTED_one": "{{count}} -adlaw nga proteksyon gihatag",
+      "PROTECTION_GRANTED_other": "{{count}} -adlaw nga proteksyon gihatag",
+      "REGISTRATION_ATTEMPT_REJECTED": "Ang doble nga pagsulay sa pagparehistro ni {{partnerId}} gisalikway",
+      "LEAD_DETAILS_UPDATED_one": "Gi-update nga {{count}} field",
+      "LEAD_DETAILS_UPDATED_other": "Gi-update {{count}} nga mga uma",
+      "STAGE_UPDATED": "Gi-update ang status sa {{status}}",
+      "LEAD_ASSIGNED": "Gi-assign sa {{name}}",
+      "LEAD_UNASSIGNED": "Wala ma-assign",
+      "BOOKING_COMPLETED": "Nakompleto ang pag-book",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Ang pagpanag-iya sa operasyon gibalhin sa Magtutukod",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Gipreserbar ang pag-ila sa kauban",
+      "COMMISSION_ELIGIBILITY_CREATED": "Gihimo ang kwalipikasyon sa komisyon",
+      "HANDOVER_COMPLETED": "Nakompleto ang handover",
+      "REFERRAL_ACCEPTED": "Gidawat sa Builder ang referral",
+      "REFERRAL_REJECTED": "Gisalikway sa Builder ang referral. Rason: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Sayo nga gipagawas sa admin ang duplicate nga proteksyon. Rason: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Gi-assign sa Admin ang rehistrasyon gikan sa {{from}} ngadto sa {{to}} . Rason: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Pagdumala sa mga Kolum",
+    "hint": "I-drag aron mahan-ay pag-usab · susiha aron ipakita",
+    "showAll": "Ipakita ang Tanan",
+    "resetDefault": "I-reset sa Default"
+  },
+  "filters": {
+    "title": "Mga filter",
+    "allProjects": "Tanang proyekto",
+    "any": "Bisan unsa",
+    "noFields": "Wala pa'y laing nasala nga mga natad nga gipagana (Mga Setting > Panguna).",
+    "clearAll": "Klaro ang Tanan"
+  },
+  "phone": {
+    "MISSING": "Numero sa telepono gikinahanglan.",
+    "INVALID": "Palihug pagsulod ug balido nga numero sa telepono.",
+    "TOO_SHORT": "Mubo ra kaayo ang numero sa telepono.",
+    "TOO_LONG": "Taas kaayo ang numero sa telepono.",
+    "INVALID_FOR_COUNTRY": "Kini nga numero sa telepono dili balido para sa {{country}} .",
+    "COUNTRY_MISMATCH": "Palihug pilia ang husto nga code sa nasud.",
+    "NOT_MOBILE": "Palihug pagsulod ug mobile number, dili landline."
+  }
+}

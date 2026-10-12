@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Uputa o te taata patu fare",
+    "referrals": "Te mau faahororaa",
+    "builderLogin": "Taata patu fare",
+    "partnerLogin": "Tomo i roto i te hoê hoa"
+  },
+  "login": {
+    "title": "Te taata patu fare",
+    "hint": "Na Leadrat i papa'i i te mau moni no te feia patu fare. A ui i to outou faatere mai te mea e, aita ta outou e hoê."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Te tiai noa ra outou i ta outou faaotiraa",
+    "ACCEPTED": "Ua fariihia",
+    "REJECTED": "Ua patoihia"
+  },
+  "list": {
+    "title": "Te mau faahororaa",
+    "allProjects": "Te mau opuaraa atoa",
+    "allStatuses": "Te mau ti'araa atoa",
+    "count_one": "{{count}}",
+    "count_other": "{{count}}",
+    "columns": {
+      "referral": "Faatoro'araa",
+      "customer": "Fanaua",
+      "project": "Prohe",
+      "sourcePartner": "Hoa puna",
+      "status": "Tātāra'a",
+      "booking": "Te buka",
+      "registered": "Ua papa'ihia"
+    },
+    "booked": "Ua papa'ihia",
+    "empty": "Aita â e faahororaa."
+  },
+  "detail": {
+    "customer": "Fanaua",
+    "sourcePartner": "Hoa puna",
+    "attributionNote": "(Eita e nehenehe e taui i te horo'araa)",
+    "leadStatus": "Ti'araa faatere",
+    "protectedUntil": "Paruruhia e tae roa'tu i te",
+    "referral": "Faatoro'araa",
+    "reason": "Te tumu: {{reason}}",
+    "booking": "Te buka",
+    "bookedOwner": "Booked - o outou te fatu o te ohipa",
+    "notBooked": "Aita i buka",
+    "sharedAfterBooking": "Ua faaitehia i muri a'e i te bukaraa",
+    "accept": "A farii i te tonoraa",
+    "confirmBooking": "Haapa'o i te buka",
+    "reject": "Patoi i te faahororaa",
+    "rejectReasonLabel": "Te tumu no te pato'iraa (a faaitehia i te hoa) *",
+    "rejectConfirm": "Fa'a'ōhara",
+    "confirmBookingPrompt": "Haapapu i te buka? E haere te ti'araa faatere i ni'a ia outou, e e nehenehe te hoa faaipoipo e farii i te ohipa.",
+    "notice": {
+      "booked": "Ua haapapuhia te buka.",
+      "accepted": "Ua fariihia te tonoraa.",
+      "rejected": "Ua patoihia te faahororaa."
+    },
+    "backToReferrals": "Ho'i i te mau faahororaa"
+  },
+  "history": {
+    "title": "Ōna'ō",
+    "actor": {
+      "system": "Pūnaha",
+      "partner": "Hoa faaipoipo",
+      "admin": "Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Ua fariihia te i'oa o te hoa",
+      "DUPLICATE_CHECK_COMPLETED": "Ua oti te hi'opo'araa piti - aita i itehia",
+      "REGISTRATION_ACCEPTED": "Ua fariihia te faanahoraa",
+      "PROTECTION_GRANTED_one": "{{count}} -mahana parururaa",
+      "PROTECTION_GRANTED_other": "{{count}} -mahana parururaa",
+      "STAGE_UPDATED": "Ua faaapîhia te ti'araa i {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Te vahi {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "Te mau vahi {{count}}",
+      "LEAD_ASSIGNED": "Ua horo'ahia ia {{name}}",
+      "LEAD_UNASSIGNED": "Aita i faataahia",
+      "REFERRAL_ACCEPTED": "Ua farii te taata patu i te tonoraa",
+      "REFERRAL_REJECTED": "Ua patoi te taata patu i te reira. Te tumu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Ua pato'ihia te tamataraa no te faaî i te i'oa a {{partner}}",
+      "BOOKING_COMPLETED": "Ua oti te buka",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Ua afa'ihia te ti'araa faatere i te taata patu",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Ua faahereherehia te ti'araa o te hoa",
+      "COMMISSION_ELIGIBILITY_CREATED": "Ua hamanihia mai te ti'araa tomite",
+      "HANDOVER_COMPLETED": "Ua oti te horo'araa",
+      "ADMIN_PROTECTION_RELEASED": "Ua faaite oioi o Admin i na parururaa taa ê. Te tumu: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Ua faaho'i-faahou-hia mai {{from}} e tae atu i {{to}} . Te tumu: {{reason}}"
+    }
+  }
+}

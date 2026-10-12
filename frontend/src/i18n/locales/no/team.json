@@ -1,0 +1,83 @@
+{
+  "title": "Administrer team",
+  "tabs": {
+    "members": "Teammedlemmer",
+    "roles": "Roller og tillatelser",
+    "profile": "Min profil"
+  },
+  "roles": {
+    "owner": "Eier",
+    "member": "Teammedlem"
+  },
+  "profile": {
+    "updated": "Profilen er oppdatert.",
+    "basicInfo": "Grunnleggende informasjon",
+    "organisationInfo": "Organisasjonsinformasjon",
+    "preferences": "Preferanser",
+    "companyName": "Firma / organisasjonsnavn",
+    "city": "By",
+    "state": "Tilstand",
+    "currencyHelp": "Brukes til å vise budsjetter og bookingverdier på tvers av teamet ditt.",
+    "useDeviceTimezone": "Bruk enhetens tidssone ( {{timezone}} )",
+    "securityRole": "Sikkerhet og rolle",
+    "newPassword": "Nytt passord (la det stå tomt for å beholde det uendret)",
+    "currentPassword": "Gjeldende passord",
+    "memberSince": "Medlem siden",
+    "languageSaved": "Språket er lagret på kontoen din – det vil bli brukt på hver enhet du logger på."
+  },
+  "members": {
+    "intro": "Legg til, rediger, deaktiver eller fjern personer i teamet ditt – de deler tilgang til de samme potensielle kundene.",
+    "noPermission": "Du har ikke tillatelse til å legge til, redigere eller fjerne teammedlemmer.",
+    "addNew": "+ Legg til ny bruker",
+    "passwordLabel": "{{label}} (min. 8 tegn)",
+    "rolePermissions": "Rolle og tillatelser",
+    "adding": "Legger til...",
+    "addMember": "Legg til et teammedlem",
+    "tabAll": "Alle ( {{count}} )",
+    "tabActive": "Aktiv ( {{count}} )",
+    "tabInactive": "Inaktiv ( {{count}} )",
+    "searchPlaceholder": "Søk etter navn eller brukernavn...",
+    "allTimezones": "Alle tidssoner",
+    "perPage": "Oppføringer per side",
+    "contact": "Kontakt",
+    "added": "Lagt til",
+    "toggleActive": "Aktiv – klikk for å deaktivere",
+    "toggleInactive": "Inaktiv – klikk for å aktivere",
+    "empty": "Ingen teammedlemmer ennå.",
+    "noMatch": "Ingen teammedlemmer samsvarer med disse filtrene.",
+    "showing": "Viser {{from}} - {{to}} av {{total}} oppføringer",
+    "firstPage": "Første side",
+    "previousPage": "Forrige side",
+    "nextPage": "Neste side",
+    "lastPage": "Siste side"
+  },
+  "editMember": {
+    "title": "Rediger bruker",
+    "noPermission": "Du har ikke tillatelse til å redigere teammedlemmer.",
+    "backToTeam": "Tilbake til Team",
+    "cantChangeOwn": "Du kan ikke endre din egen rolle eller status.",
+    "needsManageRoles": "For å endre et medlems rolle må du ha tillatelse til å administrere roller.",
+    "addedBy": "Lagt til av",
+    "addedOn": "Lagt til"
+  },
+  "rolesPage": {
+    "intro": "Super Admin, Admin og Manager er innebygd og kan ikke endres – lag en egendefinert rolle for noe annet.",
+    "noPermission": "Du har ikke tillatelse til å administrere roller.",
+    "createCustom": "+ Opprett egendefinert rolle",
+    "roleName": "Rollenavn",
+    "permissions": "Tillatelser",
+    "members": "Medlemmer",
+    "creating": "Oppretter ...",
+    "createRole": "Opprett rolle",
+    "systemRole": "Systemrolle",
+    "builtIn": "Innebygd",
+    "empty": "Ingen roller ennå."
+  },
+  "permissions": {
+    "MANAGE_LEADS": "Administrer potensielle kunder (opprett, fremdrift, bok)",
+    "MANAGE_TEAM": "Administrer team (legg til, rediger, fjern medlemmer)",
+    "MANAGE_ROLES": "Administrer roller og tillatelser",
+    "MANAGE_SETTINGS": "Administrer innstillinger (emneskjemafelt)",
+    "none": "Ingen tillatelser"
+  }
+}

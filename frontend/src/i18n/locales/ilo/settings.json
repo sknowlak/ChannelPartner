@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Dagiti Setting",
+    "noPermission": "Awan ti pammalubosmo a mangimaton kadagiti setting."
+  },
+  "categories": {
+    "lead": "Idaulo",
+    "user": "Agus-usar",
+    "integrations": "Dagiti panagtipon"
+  },
+  "leadTabs": {
+    "fields": "Dagiti Talon",
+    "statuses": "Kasasaad & Sub-Kasasaad",
+    "notifications": "Dagiti Pakaammo & Dagiti Eskediul"
+  },
+  "fields": {
+    "leadIntro": "Ikonfigura ti porma ti panangtiliw ti lead: pagbalinen/pasardengen dagiti tay-ak, markaan dagitoy a kasapulan, wenno manginayon kadagiti bukodmo a kostumbre a tay-ak.",
+    "userIntro": "Ikonfigura ti porma ti Add/Edit Team Member: pagbalinen/pasardengen dagiti tay-ak, markaan dagitoy a kasapulan, wenno manginayon kadagiti bukodmo a kostumbre a tay-ak.",
+    "addCustomField": "+ Manginayon ti Kostumbre a Talon",
+    "fieldLabel": "Etiketa ti Talon",
+    "group": "Grupo",
+    "groupPlaceholderLead": "kas pagarigan Impormasion ti Panagsaludsod",
+    "groupPlaceholderUser": "kas pagarigan Dagiti Kanayonan a Detalye",
+    "dataType": "Kita ti Datos",
+    "options": "Dagiti pagpilian (naisina babaen ti koma) .",
+    "requiredLead": "Masapul - dagiti partners iti team-yo ket masapul a punnuanda daytoy tapno makapagrehistro iti lead",
+    "requiredUser": "Masapul - masapul a mapunno no mangnayon iti kameng ti team",
+    "creating": "Panagparnuay...",
+    "createField": "Mangparnuay iti Talon",
+    "columns": {
+      "field": "Talun",
+      "group": "Grupo",
+      "type": "Tipo",
+      "required": "Kasapulan",
+      "enabled": "Na-enable",
+      "kind": "Kita"
+    },
+    "kind": {
+      "custom": "Naibagay",
+      "core": "Core (nakandado) .",
+      "standard": "Kadawyan"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Teksto",
+    "TEXTAREA": "Atiddog ​​a teksto",
+    "NUMBER": "Bilang",
+    "CURRENCY": "Kita ti kuarta",
+    "DATE": "Petsa",
+    "SELECT": "Dropdown ti panagbaba",
+    "LIST": "Listaan"
+  },
+  "picker": {
+    "searchPlaceholder": "Agbirok kadagiti lead fields...",
+    "summary": "{{shown}} naipakita · {{mandatory}} mandatory",
+    "mandatory": "Mandatorio",
+    "noMatch": "Awan ti agpapada a talon."
+  },
+  "statuses": {
+    "intro": "Dagiti kasasaad ti lead ken sub-status-mo - no ania ti kidkiddawen ti tunggal maysa (maysa a petsa & oras, dagiti tay-ak ti lead) no adda mang-update iti lead iti dayta.",
+    "add": "+ Inayon ti Kasasaad",
+    "columns": {
+      "order": "Ipaipaw-it",
+      "status": "Estado",
+      "subStatuses": "Dagiti Sub-Estatus",
+      "asksFor": "Kiddawen Para",
+      "active": "Aktibo"
+    },
+    "moveUp": "Umakar nga agpangato",
+    "moveDown": "Umakarka nga agpababa",
+    "defaultBadge": "Default para kadagiti baro a lead",
+    "bookingBadge": "Kasasaad ti panag-book",
+    "asksForLabel": "Dumawat iti {{label}}",
+    "asksForDateTime": "Dumawat ti petsa & oras",
+    "none": "Awan",
+    "dateTime": "Petsa & oras",
+    "scheduledOn": "iti {{names}}",
+    "fieldsSummary_one": "{{count}} field ( {{mandatory}} mandatory) .",
+    "fieldsSummary_other": "{{count}} fields ( {{mandatory}} mandatory) .",
+    "deleteConfirm": "Buraken ti kasasaad \" {{name}} \"? Saan a mabalin nga ibabawi daytoy.",
+    "editTitle": "Kasasaad ti Urnosen - {{name}}",
+    "newTitle": "Baro a Kasasaad",
+    "name": "Nagan ti Kasasaad",
+    "colour": "Maris",
+    "active": "Aktibo",
+    "isDefault": "Default a kasasaad para kadagiti baro a lead",
+    "isBooking": "Kasasaad ti panag-book (naikeddeng babaen ti Kompleto a Panag-book) .",
+    "whenMoved": "No ti maysa a lead ket mayakar iti daytoy a kasasaad",
+    "askSchedule": "Dumawat iti petsa & oras (scheduler) .",
+    "scheduleLabelPlaceholder": "Etiketa, kas pagarigan Bisitaen iti",
+    "fieldsToShow": "Mangidaulo kadagiti tay-ak a maipakita iti porma ti panag-update",
+    "subStatusesTitle": "Dagiti Sub-Estatus",
+    "subStatusesHint": "Tunggal sub-estado ket mabalinna ti agkiddaw ti bukodna a petsa & oras ken manginayon kadagiti bukodna a tay-ak - naipakita iti rabaw dagiti tay-ak ti kasasaad iti ngato.",
+    "subStatusName": "Nagan ti sub-estatus",
+    "subFields": "Dagiti tay-ak ( {{count}} ) .",
+    "subScheduleLabelPlaceholder": "Date & time label, kas pagarigan Tawagan manen iti",
+    "addSubStatus": "+ Inayon ti Sub-Status",
+    "saveStatus": "Idulin ti Kasasaad",
+    "createStatus": "Mangaramid iti Kasasaad"
+  },
+  "notifications": {
+    "intro": "Ipakaammo kadagiti umno a tattao no makadanon ti maysa a lead iti kasasaad - dagus, wenno naikeddeng nga oras sakbay/kalpasan ti petsa & oras a naikeddeng iti dayta.",
+    "add": "+ Manginayon iti Pakaammo",
+    "columns": {
+      "notification": "Pakaammo",
+      "whenStatusIs": "No Kasasaad Isu",
+      "sends": "Mangipatulod",
+      "to": "Tapno",
+      "via": "Babaen",
+      "enabled": "Na-enable"
+    },
+    "anyStatus": "Aniaman a kasasaad",
+    "anySubStatus": "Aniaman a sub-status",
+    "inactiveOption": "{{name}} (saan nga aktibo) .",
+    "emptyRules": "Awan pay dagiti pakaammo - inayon ti maysa tapno mapakdaaran ti grupom no ti maysa a lead ket makadanon iti maysa a kasasaad.",
+    "jobs": {
+      "title": "Naiskediul & Naipatulod",
+      "firesAt": "Fires At",
+      "notification": "Pakaammo",
+      "lead": "Idaulo",
+      "status": "Estado",
+      "details": "Dagiti detalye",
+      "empty": "Awan pay ti naiskediul wenno naipatulod.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Naisardeng biit",
+      "PROCESSING": "Panagproseso",
+      "SENT": "Naipatulod",
+      "FAILED": "Nagbabak",
+      "SKIPPED": "Nalaktawan",
+      "CANCELLED": "Nakansela"
+    },
+    "deliveryStatus": {
+      "SENT": "naipatulod",
+      "FAILED": "nagbabak",
+      "SKIPPED": "naglaktaw"
+    },
+    "deliveryChannel": {
+      "IN_APP": "in-app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Naituding nga agus-usar",
+      "owner": "Akin-kua",
+      "updatedBy": "Na-update ni",
+      "role": "Akem: {{name}}"
+    },
+    "channels": {
+      "inApp": "Iti uneg ti app",
+      "email": "I-email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Buraken ti pakaammo \" {{name}} \"? Makansela dagiti pending reminders manipud iti dayta.",
+    "testPrompt": "Mangipatulod ti pagsubok iti daytoy a pakaammo iti bagim (in-app) nga agus-usar iti ania a lead ID ?",
+    "testSent": "Naipatulod iti kampana: {{title}} {{message}}",
+    "headersInvalid": "Dagiti ulo Webhook ket masapul a balido a JSON , kas pagarigan {\"Autorisasion\": \"Bearer xyz\"} .",
+    "editTitle": "Urnosen ti Pakaammo",
+    "newTitle": "Baro a Pakaammo",
+    "name": "Nagan",
+    "namePlaceholder": "kas pagarigan Palagip ti panagbisita iti site",
+    "whenStatus": "No ti kasasaad ti maysa a lead ket",
+    "subStatus": "Sub-kasasaad",
+    "send": "Ipatulod (mangiskediul) .",
+    "custom": "Naibagay...",
+    "modeBefore": "sakbay ti naikeddeng nga oras",
+    "modeAfter": "kalpasan ti naikeddeng nga oras",
+    "noScheduleWarning": "Daytoy a kasasaad ket saan a dumawat ti petsa & oras, isu a ti \"sakbay/iti/kalpasan ti naikeddeng nga oras\" a pakaammo ket saan a pulos a makaputok.",
+    "noScheduleFix": "I-on ti <strong>Agkiddaw iti petsa & oras</strong> para iti dayta iti baba ti Status & Sub-Statuses, wenno ipatulod a Dagus.",
+    "sendTo": "Ipatulod iti (aniaman a kombinasion) .",
+    "recipientAssigned": "Naituding nga agar-aramat (mangidaulo a makinkukua) .",
+    "recipientOwner": "Ti makinkukua iti kuenta / admin",
+    "recipientUpdatedBy": "Tao nga nag-update ti status",
+    "everyoneWithRole": "Tunggal maysa nga addaan akem",
+    "specificUsers": "Dagiti espesipiko nga agar-aramat (aktibo) .",
+    "inactiveNever": "Dagiti saan nga aktibo nga agar-aramat ket pulos a di makaawat kadagiti pakaammo, urayno napili.",
+    "deliverVia": "Itulod babaen ti",
+    "channelInApp": "In-app (kampana) .",
+    "channelEmail": "I-email",
+    "channelWebhook": "Webhook ( Ipapaay ti WhatsApp / SMS ) .",
+    "emailHint": "Mapan ti email iti email address ti tunggal umawat ken kasapulan ti SMTP a naipasdek iti server (backend/.env); agingga idin dagiti email sends ket nai-log kas nalaktawan.",
+    "webhookUrl": "URL Webhook ( POST , JSON ) .",
+    "headers": "Dagiti ulo ( JSON ) .",
+    "content": "Linaon ti pakaammo",
+    "title": "Titulo",
+    "message": "Mensahe",
+    "insertIntoTitle": "Ikabil iti Paulo",
+    "insertIntoMessage": "Iserrek iti Mensahe",
+    "anyLeadField": "Ania man a tay-ak ti lead ket agtrabaho met, kas pagarigan ti <code1>{{example1}}</code1> wenno <code2>{{example2}}</code2> .",
+    "preview": "Preview (pagarigan a mangidaulo) .",
+    "enabled": "Na-enable",
+    "saveRule": "Idulin ti Pakaammo",
+    "createRule": "Mangaramid iti Pakaammo",
+    "variables": {
+      "customerName": "Nagan ti lead",
+      "customerMobile": "Lead ti mobile",
+      "customerEmail": "Mangidaulo iti email",
+      "registrationId": "ID ti lead",
+      "status": "Estado",
+      "subStatus": "Sub-kasasaad",
+      "scheduleAt": "Naituding a petsa & oras",
+      "assignedTo": "Naituding nga agus-usar",
+      "updatedBy": "Na-update ni",
+      "recipient": "Nagan ti umawat",
+      "project": "Proyekto",
+      "notes": "Kaudian a nota",
+      "partner": "Nagan ti partner"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Dagus no naikeddeng ti kasasaad",
+      "AT": "Iti naikeddeng nga oras",
+      "A1D": "1 nga aldaw kalpasan ti naikeddeng nga oras (follow-up check) ."
+    },
+    "immediately": "Dagus",
+    "atScheduled": "Iti naikeddeng nga oras",
+    "before": {
+      "MINUTES_one": "{{count}} minuto sakbay ti naikeddeng nga oras",
+      "MINUTES_other": "{{count}} minutos sakbay ti naikeddeng nga oras",
+      "HOURS_one": "{{count}} oras sakbay ti naikeddeng nga oras",
+      "HOURS_other": "{{count}} oras sakbay ti naikeddeng nga oras",
+      "DAYS_one": "{{count}} aldaw sakbay ti naikeddeng nga oras",
+      "DAYS_other": "{{count}} nga aldaw sakbay ti naikeddeng nga oras",
+      "WEEKS_one": "{{count}} lawas sakbay ti naikeddeng nga oras",
+      "WEEKS_other": "{{count}} lawas sakbay ti naikeddeng nga oras",
+      "MONTHS_one": "{{count}} bulan sakbay ti naikeddeng nga oras",
+      "MONTHS_other": "{{count}} bulan sakbay ti naikeddeng nga oras",
+      "YEARS_one": "{{count}} tawen sakbay ti naikeddeng nga oras",
+      "YEARS_other": "{{count}} tawen sakbay ti naikeddeng nga oras"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minuto kalpasan ti naikeddeng nga oras",
+      "MINUTES_other": "{{count}} minuto kalpasan ti naikeddeng nga oras",
+      "HOURS_one": "{{count}} oras kalpasan ti naikeddeng nga oras",
+      "HOURS_other": "{{count}} oras kalpasan ti naikeddeng nga oras",
+      "DAYS_one": "{{count}} aldaw kalpasan ti naikeddeng nga oras",
+      "DAYS_other": "{{count}} nga aldaw kalpasan ti naikeddeng nga oras",
+      "WEEKS_one": "{{count}} lawas kalpasan ti naikeddeng nga oras",
+      "WEEKS_other": "{{count}} lawas kalpasan ti naikeddeng nga oras",
+      "MONTHS_one": "{{count}} bulan kalpasan ti naikeddeng nga oras",
+      "MONTHS_other": "{{count}} bulan kalpasan ti naikeddeng nga oras",
+      "YEARS_one": "{{count}} tawen kalpasan ti naikeddeng nga oras",
+      "YEARS_other": "{{count}} tawen kalpasan ti naikeddeng nga oras"
+    },
+    "units": {
+      "MINUTES_one": "minuto",
+      "MINUTES_other": "minutos",
+      "HOURS_one": "oras",
+      "HOURS_other": "dagiti oras",
+      "DAYS_one": "aldaw",
+      "DAYS_other": "aldaw",
+      "WEEKS_one": "lawas",
+      "WEEKS_other": "lawas",
+      "MONTHS_one": "bulan",
+      "MONTHS_other": "bulan",
+      "YEARS_one": "tawen",
+      "YEARS_other": "dagiti tawen"
+    }
+  }
+}

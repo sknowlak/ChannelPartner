@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Builder Portal",
+    "referrals": "Kev xa mus",
+    "builderLogin": "Builder ID nkag mus",
+    "partnerLogin": "Channel Partner ID nkag mus"
+  },
+  "login": {
+    "title": "Builder sign in",
+    "hint": "Builder accounts yog tsim los ntawm Leadrat . Nug koj tus thawj tswj hwm yog tias koj tsis muaj."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Tos koj qhov kev txiav txim",
+    "ACCEPTED": "Txais",
+    "REJECTED": "Tsis lees paub"
+  },
+  "list": {
+    "title": "Kev xa mus",
+    "allProjects": "Txhua qhov project",
+    "allStatuses": "Txhua yam xwm txheej",
+    "count_one": "{{count}} xa mus",
+    "count_other": "{{count}} xa mus",
+    "columns": {
+      "referral": "Kev xa mus",
+      "customer": "Cov neeg siv khoom",
+      "project": "Qhov project",
+      "sourcePartner": "Tau qhov twg los Partner",
+      "status": "xwm txheej",
+      "booking": "Booking",
+      "registered": "Sau npe"
+    },
+    "booked": "Booked",
+    "empty": "Tseem tsis tau xa mus."
+  },
+  "detail": {
+    "customer": "Cov neeg siv khoom",
+    "sourcePartner": "Tau qhov twg los Partner",
+    "attributionNote": "(attribution - hloov tsis tau)",
+    "leadStatus": "Lead Status",
+    "protectedUntil": "Tiv thaiv kom txog thaum",
+    "referral": "Kev xa mus",
+    "reason": "Yog vim li cas: {{reason}}",
+    "booking": "Booking",
+    "bookedOwner": "Booked - koj yog tus tswv lag luam",
+    "notBooked": "Tsis booked",
+    "sharedAfterBooking": "Qhia tawm tom qab booking",
+    "accept": "Txais Kev xa mus",
+    "confirmBooking": "Confirm Booking",
+    "reject": "Tsis lees paub",
+    "rejectReasonLabel": "Yog vim li cas tsis kam lees (ua rau tus khub) *",
+    "rejectConfirm": "Tsis lees paub",
+    "confirmBookingPrompt": "Paub qhov booking? Kev ua tswv cuab txav mus rau koj thiab tus khub tau tsim nyog rau commission.",
+    "notice": {
+      "booked": "Booking paub tseeb.",
+      "accepted": "Kev xa mus lees txais.",
+      "rejected": "Kev xa mus tsis lees paub."
+    },
+    "backToReferrals": "Rov qab mus rau Cov Lus Qhia"
+  },
+  "history": {
+    "title": "Keeb kwm",
+    "actor": {
+      "system": "Qhov system",
+      "partner": "Channel tus khub",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Tau txais tus khub sau npe",
+      "DUPLICATE_CHECK_COMPLETED": "Duplicate check ua tiav - tsis pom muaj cov duplicate",
+      "REGISTRATION_ACCEPTED": "Kev tso npe lees txais",
+      "PROTECTION_GRANTED_one": "{{count}} - hnub tiv thaiv tau tso cai",
+      "PROTECTION_GRANTED_other": "{{count}} - hnub tiv thaiv tau tso cai",
+      "STAGE_UPDATED": "Cov xwm txheej hloov tshiab rau {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Hloov tshiab {{count}} teb",
+      "LEAD_DETAILS_UPDATED_other": "Hloov tshiab {{count}} teb",
+      "LEAD_ASSIGNED": "Muab rau {{name}}",
+      "LEAD_UNASSIGNED": "Unassigned",
+      "REFERRAL_ACCEPTED": "Builder lees txais kev xa mus",
+      "REFERRAL_REJECTED": "Builder tsis lees paub qhov xa mus. Yog vim li cas: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Kev sim sau npe dua los ntawm {{partner}} tsis lees paub",
+      "BOOKING_COMPLETED": "Booking tiav",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Kev ua tswv cuab tau pauv mus rau Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partner attribution khaws cia",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kev tsim nyog tau txais commission tsim",
+      "HANDOVER_COMPLETED": "Kev ua tiav tiav",
+      "ADMIN_PROTECTION_RELEASED": "Admin tso tawm duplicate tiv thaiv ntxov. Yog vim li cas: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin reassigned sau npe los ntawm {{from}} rau {{to}} . Yog vim li cas: {{reason}}"
+    }
+  }
+}

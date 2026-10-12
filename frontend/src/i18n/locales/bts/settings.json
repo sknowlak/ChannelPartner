@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Pangaturan",
+    "noPermission": "Lang dong ijinmu laho mangatur pengaturan."
+  },
+  "categories": {
+    "lead": "Katua",
+    "user": "Pangguna",
+    "integrations": "Integrasi"
+  },
+  "leadTabs": {
+    "fields": "Bidang",
+    "statuses": "Status & Sub-Status",
+    "notifications": "Pemberitahuan & Penjadwalan"
+  },
+  "fields": {
+    "leadIntro": "Atur ma formulir penangkapan prospek: aktifkon/nonaktifkon bidang, tandai ma ai porlu, atap tambahkon bidang khusus nasiam sandiri.",
+    "userIntro": "Atur ma formulir Tambah/Edit Anggota Tim: aktifkon/nonaktifkon bidang, tandai ma ai porlu, atap tambahkon bidang khusus nasiam sandiri.",
+    "addCustomField": "+ Tambahkon Bidang Khusus",
+    "fieldLabel": "Label Bidang",
+    "group": "Kalompok",
+    "groupPlaceholderLead": "misalni Info Panungkunan",
+    "groupPlaceholderUser": "misalni Rincian Tambahan",
+    "dataType": "Jenis Data",
+    "options": "Pilihan (ipisahkan koma)",
+    "requiredLead": "Ihaporluhon - mitra bani tim nassiam maningon mangisi on laho mandaftarhon prospek",
+    "requiredUser": "Ihaporluhon - maningon iisi sanggah manambahkon anggota tim",
+    "creating": "Mambahen...",
+    "createField": "Mambahen Bidang",
+    "columns": {
+      "field": "Juma",
+      "group": "Kalompok",
+      "type": "Jenis",
+      "required": "Mamorluhon",
+      "enabled": "Iaktifkon",
+      "kind": "Bujur"
+    },
+    "kind": {
+      "custom": "Hasomalon",
+      "core": "Inti (terkunci)",
+      "standard": "Na biasa"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Teks",
+    "TEXTAREA": "Teks na ganjang",
+    "NUMBER": "Nomor",
+    "CURRENCY": "Duit",
+    "DATE": "Tanggal",
+    "SELECT": "Dropdown",
+    "LIST": "Bilangan"
+  },
+  "picker": {
+    "searchPlaceholder": "Pindahi ma bidang pimpinan...",
+    "summary": "{{shown}} ipatuduh · {{mandatory}} wajib",
+    "mandatory": "Paningon",
+    "noMatch": "Lang dong bidang na sosok."
+  },
+  "statuses": {
+    "intro": "Status pakon sub-status prospek nassiam - aha na ipangindo ganupan (tanggal & panorang, bidang prospek) sanggah dong na paimbaruhon prospek hujai.",
+    "add": "+ Tambahkon Status",
+    "columns": {
+      "order": "Parentah",
+      "status": "Parhundul",
+      "subStatuses": "Sub-Status",
+      "asksFor": "Mangindo",
+      "active": "Kes kas"
+    },
+    "moveUp": "Pindah hu atas",
+    "moveDown": "Pindah hu toruh",
+    "defaultBadge": "Default bani lead na baru",
+    "bookingBadge": "Status pemesanan",
+    "asksForLabel": "Mangindo {{label}}",
+    "asksForDateTime": "Mangindo tanggal & panorang",
+    "none": "Sada pe lang",
+    "dateTime": "Tanggal & panorang",
+    "scheduledOn": "bani {{names}}",
+    "fieldsSummary_one": "{{count}} bidang ( {{mandatory}} wajib)",
+    "fieldsSummary_other": "{{count}} bidang ( {{mandatory}} wajib)",
+    "deleteConfirm": "Hapus status \" {{name}} \"? On lang boi iulakkon.",
+    "editTitle": "Sunting Status - {{name}}",
+    "newTitle": "Status na Baru",
+    "name": "Goran Status",
+    "colour": "Warna",
+    "active": "Kes kas",
+    "isDefault": "Status bawaan bani prospek na baru",
+    "isBooking": "Status Pemesanan (iatur oleh Pemesanan Lengkap)",
+    "whenMoved": "Sanggah sada lead ipindahi hubani status on",
+    "askSchedule": "Pindo ma tanggal & panorang (penjadwal)",
+    "scheduleLabelPlaceholder": "Label, misalni Kunjungi i",
+    "fieldsToShow": "Bidang-bidang na laho ipatuduh bani formulir pembaruan",
+    "subStatusesTitle": "Sub-Status",
+    "subStatusesHint": "Ganup sub-status boi mangindo tanggal & panorangni bei pakon manambahkon bidangni bei - na ipatuduh i atas bidang status na i atas.",
+    "subStatusName": "Goran sub-status",
+    "subFields": "Bidang ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Label tanggal & panorang, misalni Telepon use i",
+    "addSubStatus": "+ Tambahkon Sub-Status",
+    "saveStatus": "Simpan Status",
+    "createStatus": "Mambahen Status"
+  },
+  "notifications": {
+    "intro": "Pabotohkon hubani halak na sintong anggo sada lead das bani sada status - mintor, atap panorang na dob itontuhon paima/dob tanggal & panorang na dob itontuhon.",
+    "add": "+ Tambahkon Pemberitahuan",
+    "columns": {
+      "notification": "Pemberitahuan",
+      "whenStatusIs": "Sanggah Status ai",
+      "sends": "Mangirim",
+      "to": "Hu",
+      "via": "Lewat",
+      "enabled": "Iaktifkon"
+    },
+    "anyStatus": "Status aha pe",
+    "anySubStatus": "Sub-status aha pe",
+    "inactiveOption": "{{name}} (lang aktif)",
+    "emptyRules": "Lang dong ope pemberitahuan - tambahkon ma sada laho pasingatkon tim nassiam sanggah sada lead das bani sada status.",
+    "jobs": {
+      "title": "Ijadwalhon & Itongos",
+      "firesAt": "Api i",
+      "notification": "Pemberitahuan",
+      "lead": "Katua",
+      "status": "Parhundul",
+      "details": "Panjelasan",
+      "empty": "Lang dong ope na ijadwalhon atap na itongos.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Lang saud",
+      "PROCESSING": "Mamproses",
+      "SENT": "Mangirim",
+      "FAILED": "Sambang",
+      "SKIPPED": "Ilewati",
+      "CANCELLED": "Ibatalhon"
+    },
+    "deliveryStatus": {
+      "SENT": "mangirim",
+      "FAILED": "sambang",
+      "SKIPPED": "ilewati"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ibagas aplikasi",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Pangguna na dob itontuhon",
+      "owner": "Simada",
+      "updatedBy": "Iperbarui oleh",
+      "role": "Peran: {{name}}"
+    },
+    "channels": {
+      "inApp": "Ibagas aplikasi",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Hapus pemberitahuan \" {{name}} \"? Pardingatan na paimahon hunjai ibatasi.",
+    "testPrompt": "Kirim ma tes ni pemberitahuan on hubani dirimu sandiri (ibagas aplikasi) mamakei lead ID na ija?",
+    "testSent": "Itongos hubani lonceng nassiam: {{title}} {{message}}",
+    "headersInvalid": "Header Webhook maningon JSON na sah, misalni {\"Otorisasi\": \"Pembawa xyz\"}",
+    "editTitle": "Sunting Pemberitahuan",
+    "newTitle": "Pemberitahuan na Baru",
+    "name": "Goran",
+    "namePlaceholder": "misalni pardingatan laho manrohi situs",
+    "whenStatus": "Sanggah status ni sada pemimpin aima",
+    "subStatus": "Sub-status",
+    "send": "Kirim (penjadwal)",
+    "custom": "Hasomalon...",
+    "modeBefore": "paima panorang na dob itontuhon",
+    "modeAfter": "dobkonsi panorang na dob itontuhon",
+    "noScheduleWarning": "Status on lang mangindo tanggal & panorang, jadi pemberitahuan \"paima/bani/dobkonsi panorang na dob itontuhon\" lang ongga ibere.",
+    "noScheduleFix": "Aktifkon <strong>Pindo tanggal & panorangni</strong> i toruh ni Status & Sub-Status, atap kirim ma mintor.",
+    "sendTo": "Kirim hubani (kombinasi aha pe)",
+    "recipientAssigned": "Pangguna na dob itontuhon (pemilik utama)",
+    "recipientOwner": "Simada akun / admin",
+    "recipientUpdatedBy": "Halak na paimbaruhon status",
+    "everyoneWithRole": "Ganup halak na marperan",
+    "specificUsers": "Pangguna na khusus (aktif)",
+    "inactiveNever": "Pangguna na lang aktif lang ongga manjalo pemberitahuan, pori pe domma ipilih.",
+    "deliverVia": "Padas marhiteihon",
+    "channelInApp": "Ibagas aplikasi (lonceng)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS provider)",
+    "emailHint": "Email laho hubani alamat email ni ganup penerima janah porlu SMTP na iatur bani server (backend/.env); paima ai email na itongos isuratkon songon na dob ilewati.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Headers ( JSON )",
+    "content": "Isi pemberitahuan",
+    "title": "Golar",
+    "message": "Tonah",
+    "insertIntoTitle": "Masukkon hu Judul",
+    "insertIntoMessage": "Masukkon hu Pesan",
+    "anyLeadField": "Sagala bidang lead marhorja do homa, misalni <code1>{{example1}}</code1> atap <code2>{{example2}}</code2> .",
+    "preview": "Pratinjau (contoh)",
+    "enabled": "Iaktifkon",
+    "saveRule": "Simpan Pemberitahuan",
+    "createRule": "Mambahen Pemberitahuan",
+    "variables": {
+      "customerName": "Goran utama",
+      "customerMobile": "Ponsel utama",
+      "customerEmail": "Email utama",
+      "registrationId": "ID Utama",
+      "status": "Parhundul",
+      "subStatus": "Sub-status",
+      "scheduleAt": "Tanggal pakon panorang na dob itontuhon",
+      "assignedTo": "Pangguna na dob itontuhon",
+      "updatedBy": "Iperbarui oleh",
+      "recipient": "Goran ni na manjalo",
+      "project": "Proyek",
+      "notes": "Catatan terbaru",
+      "partner": "Goran ni hasoman"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Mintor dob iatur status ai",
+      "AT": "Bani panorang na dob itontuhon",
+      "A1D": "1 ari dobkonsi panorang na dob itontuhon (pareksa tindak lanjut)"
+    },
+    "immediately": "Soppong",
+    "atScheduled": "Bani panorang na dob itontuhon",
+    "before": {
+      "MINUTES_one": "{{count}} menit paima panorang na dob itontuhon",
+      "MINUTES_other": "{{count}} menit paima panorang na dob itontuhon",
+      "HOURS_one": "{{count}} jam paima panorang na dob itontuhon",
+      "HOURS_other": "{{count}} jam paima panorang na dob itontuhon",
+      "DAYS_one": "{{count}} sadari paima panorang na dob itontuhon",
+      "DAYS_other": "{{count}} ari paima panorang na dob itontuhon",
+      "WEEKS_one": "{{count}} minggu paima panorang na dob itontuhon",
+      "WEEKS_other": "{{count}} minggu paima panorang na dob itontuhon",
+      "MONTHS_one": "{{count}} bulan paima panorang na dob itontuhon",
+      "MONTHS_other": "{{count}} bulan paima panorang na dob itontuhon",
+      "YEARS_one": "{{count}} tahun paima panorang na dob itontuhon",
+      "YEARS_other": "{{count}} tahun paima panorang na dob itontuhon"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} menit dobkonsi panorang na dob itontuhon",
+      "MINUTES_other": "{{count}} menit dob ​​panorang na dob itontuhon",
+      "HOURS_one": "{{count}} jam dob panorang na dob itontuhon",
+      "HOURS_other": "{{count}} jam dob panorang na dob itontuhon",
+      "DAYS_one": "{{count}} ari dobkonsi panorang na dob itontuhon",
+      "DAYS_other": "{{count}} ari dobkonsi panorang na dob itontuhon",
+      "WEEKS_one": "{{count}} minggu dobkonsi panorang na dob itontuhon",
+      "WEEKS_other": "{{count}} minggu dob panorang na dob itontuhon",
+      "MONTHS_one": "{{count}} bulan dobkonsi panorang na dob itontuhon",
+      "MONTHS_other": "{{count}} bulan dob panorang na dob itontuhon",
+      "YEARS_one": "{{count}} tahun dobkonsi panorang na dob itontuhon",
+      "YEARS_other": "{{count}} tahun dobkonsi panorang na dob itontuhon"
+    },
+    "units": {
+      "MINUTES_one": "menit",
+      "MINUTES_other": "menit",
+      "HOURS_one": "jam",
+      "HOURS_other": "jam",
+      "DAYS_one": "ari",
+      "DAYS_other": "ari",
+      "WEEKS_one": "minggu",
+      "WEEKS_other": "minggu",
+      "MONTHS_one": "bulan",
+      "MONTHS_other": "bulan",
+      "YEARS_one": "tahun",
+      "YEARS_other": "tahun"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal Peugot",
+    "referrals": "Rujukan",
+    "builderLogin": "Peugot Login",
+    "partnerLogin": "Login Mitra Saluran"
+  },
+  "login": {
+    "title": "Peugot tanda tamong",
+    "hint": "Akun pembangun geupeugot le Leadrat . Tanyoeng bak administrator droeneuh meunyo hana."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Teungoh preh keputusan droeneuh .",
+    "ACCEPTED": "Teurimong",
+    "REJECTED": "Ditulak"
+  },
+  "list": {
+    "title": "Rujukan",
+    "allProjects": "Mandum proyek",
+    "allStatuses": "Mandum status",
+    "count_one": "{{count}} rujukan",
+    "count_other": "{{count}} rujukan",
+    "columns": {
+      "referral": "Rujukan",
+      "customer": "Peulanggan",
+      "project": "Proyek",
+      "sourcePartner": "Mitra Sumber",
+      "status": "Statuh",
+      "booking": "Peumesanan",
+      "registered": "Teudaftar"
+    },
+    "booked": "Ka geupeusapat",
+    "empty": "Hana rujukan lom."
+  },
+  "detail": {
+    "customer": "Peulanggan",
+    "sourcePartner": "Mitra Sumber",
+    "attributionNote": "(atribusi - hana jeuet geu ubah)",
+    "leadStatus": "Status Memimpin",
+    "protectedUntil": "Dilindong Sampoe 2019.",
+    "referral": "Rujukan",
+    "reason": "Alasan: {{reason}}",
+    "booking": "Peumesanan",
+    "bookedOwner": "Dipeusapat - droeneuh nakeuh pemilik operasional .",
+    "notBooked": "Hana dipeusapat",
+    "sharedAfterBooking": "Dibagi lheuh booking .",
+    "accept": "Teurimong Rujukan",
+    "confirmBooking": "Konfirmasi Peumeusanan",
+    "reject": "Tulak Rujukan",
+    "rejectReasonLabel": "Alasan ditulak (ditunjukkan kepada pasangan) *",
+    "rejectConfirm": "Hanjitrimeng",
+    "confirmBookingPrompt": "Konfirmasi pemesanan? Peumilek operasional meugrak keu droeneuh dan mitra jeut keu layak untuk komisi.",
+    "notice": {
+      "booked": "Pemesanan ka dikonfirmasi.",
+      "accepted": "Rujukan ka geuterimong.",
+      "rejected": "Rujukan ditulak."
+    },
+    "backToReferrals": "Kembali keu Rujukan ."
+  },
+  "history": {
+    "title": "Seujarah",
+    "actor": {
+      "system": "Sistem",
+      "partner": "Mitra saluran",
+      "admin": "Admin Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Pendaftaran mitra ka teurimong .",
+      "DUPLICATE_CHECK_COMPLETED": "Peumeuriksan duplikat ka seuleusoe - hana duplikat aktif nyang meuteumeung",
+      "REGISTRATION_ACCEPTED": "Pendaftaran ka teurimong .",
+      "PROTECTION_GRANTED_one": "{{count}} -uroe peulindong geubri",
+      "PROTECTION_GRANTED_other": "{{count}} -uroe peulindong geubri",
+      "STAGE_UPDATED": "Status geupeubarô keu {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Bidang {{count}} nyang ka geupeubarô",
+      "LEAD_DETAILS_UPDATED_other": "Bidang {{count}} nyang ka geupeubarô",
+      "LEAD_ASSIGNED": "Geubri tugaih keu {{name}}",
+      "LEAD_UNASSIGNED": "Hana geubri tugaih",
+      "REFERRAL_ACCEPTED": "Pembangunan ka geuterimong rujukan nyan",
+      "REFERRAL_REJECTED": "Builder geutulak rujukan nyan. Alasan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Duplikat usaha pendaftaran le {{partner}} ditulak",
+      "BOOKING_COMPLETED": "Pemesanan ka seuleusoe",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Peumiléhan operasional geupinah u Builder .",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribusi mitra geupeutheun",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisi dipeugot .",
+      "HANDOVER_COMPLETED": "Seurah seuleusoe",
+      "ADMIN_PROTECTION_RELEASED": "Admin geupeuteubiet perlindungan duplikat awai. Alasan: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin geubri lom pendaftaran dari {{from}} keu {{to}} . Alasan: {{reason}}"
+    }
+  }
+}

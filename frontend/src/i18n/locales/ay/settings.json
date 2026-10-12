@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Ukax mä juk’a pachanakanwa",
+    "noPermission": "Janiw permiso ukax utjkiti configuración apnaqañataki."
+  },
+  "categories": {
+    "lead": "Chiqachaña",
+    "user": "Usuario",
+    "integrations": "Integraciones ukanaka"
+  },
+  "leadTabs": {
+    "fields": "Yapunaka",
+    "statuses": "Estadonaka & Subestatus ukanaka",
+    "notifications": "Yatiyawinaka & Horarios ukanaka"
+  },
+  "fields": {
+    "leadIntro": "Formulario de captura de plomo ukar wakicht’aña: yapunak ch’amanchaña/jan ch’amanchaña, wakiskir chimpunak uñt’ayaña, jan ukax juma pachpaw yapunak uñt’ayañama.",
+    "userIntro": "Formulario Agregar/Editar Miembro de Equipo ukar wakicht’aña: yapunak ch’amanchaña/jan ch’amanchaña, wakiskir chimpunak uñt’ayaña, jan ukax juma pachpaw yapunak uñt’ayañama.",
+    "addCustomField": "+ Campo Custom ukar yapxataña",
+    "fieldLabel": "Yapu Etiqueta",
+    "group": "Tama",
+    "groupPlaceholderLead": "sañäni Jiskt’awi Info",
+    "groupPlaceholderUser": "sañäni Yaqha Detalles ukanaka",
+    "dataType": "Datos Tipo",
+    "options": "Amtawinaka (coma ukamp jaljata) .",
+    "requiredLead": "Wakisiwa - equipomankir masinakax aka phuqhachapxañapawa mä p’iqinchir qillqantañataki",
+    "requiredUser": "Wakisiwa - mä equipo ukankir jaqir yapxatasax phuqhachañapawa",
+    "creating": "Uñstayaña...",
+    "createField": "Yapu luraña",
+    "columns": {
+      "field": "Pata",
+      "group": "Tama",
+      "type": "Kasta",
+      "required": "Mayita",
+      "enabled": "Ukax ch’amanchatawa",
+      "kind": "Kasta"
+    },
+    "kind": {
+      "custom": "Isinaka",
+      "core": "Núcleo (llawintat) 1.1.",
+      "standard": "Jach'a"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Panka",
+    "TEXTAREA": "Jaya qillqata",
+    "NUMBER": "Jakhu",
+    "CURRENCY": "Sinsillu",
+    "DATE": "Uru",
+    "SELECT": "Ukax mä juk’a pachanakanwa",
+    "LIST": "Lista"
+  },
+  "picker": {
+    "searchPlaceholder": "Uñakipt’añatakix plomo yapunakax...",
+    "summary": "{{shown}} uñacht’ayata · {{mandatory}} kamachi",
+    "mandatory": "Munas jan munasa",
+    "noMatch": "Janiwa yapunakaxa kikipakiti."
+  },
+  "statuses": {
+    "intro": "Juman estados de plomo ukat sub-estatus - kuntix sapa maynix mayipki (mä uru & pacha, campos de plomo) kunapachatix maynix mä lead ukar machaqar tukuyki ukhaxa.",
+    "add": "+ Estado ukar yapxataña",
+    "columns": {
+      "order": "Mayachthapiña",
+      "status": "Istaru",
+      "subStatuses": "Subestatus ukanaka",
+      "asksFor": "Mayt’asiñapawa",
+      "active": "Aktiwu"
+    },
+    "moveUp": "Uka patat sartañani",
+    "moveDown": "Ukax akham sañ muni",
+    "defaultBadge": "Machaq irpirinakatakix default ukhamawa",
+    "bookingBadge": "Reservacionan utjki uka estado",
+    "asksForLabel": "{{label}} ukaruw mayi.",
+    "asksForDateTime": "Uka uru & pacha jiskt’asi",
+    "none": "Janiwkhitisa",
+    "dateTime": "Uraqi & pacha",
+    "scheduledOn": "ukax {{names}} ukankiwa.",
+    "fieldsSummary_one": "{{count}} yapu ( {{mandatory}} obligatorio)",
+    "fieldsSummary_other": "{{count}} yapunaka ( {{mandatory}} obligatorio)",
+    "deleteConfirm": "Estado \" {{name}} \" chhaqtayaña? Ukajj janiw mayjtʼayatäkaspati.",
+    "editTitle": "Estado de Editar - {{name}}",
+    "newTitle": "Machaq Estado",
+    "name": "Estado Suti",
+    "colour": "Sami",
+    "active": "Aktiwu",
+    "isDefault": "Machaq irpirinakatakix estado predeterminado ukawa",
+    "isBooking": "Estado de reserva (Reserva Completa ukan utt’ayata) .",
+    "whenMoved": "Kunawsatix mä p’iqinchawix aka estado ukar apayatäki ukhaxa",
+    "askSchedule": "Mä uru & pacha (programador) mayiñamawa .",
+    "scheduleLabelPlaceholder": "Etiqueta, sañäni Visita at",
+    "fieldsToShow": "P’iqinchawi yapunaka uñacht’ayañataki formulario de actualización ukanxa",
+    "subStatusesTitle": "Subestatus ukanaka",
+    "subStatusesHint": "Sapa sub-estatus ukax sapa uru & pacha mayispawa ukatx jupanakan yapunakap yapxataspa - estado ukan yapunakap patat uñacht’ayata.",
+    "subStatusName": "Sub-estatus sutimpi uñt’atawa",
+    "subFields": "Yapunaka ( {{count}} ) .",
+    "subScheduleLabelPlaceholder": "Uraqi & pacha etiqueta, sañäni, jawst’aña aka",
+    "addSubStatus": "+ Sub-Estado ukar yapxataña",
+    "saveStatus": "Estado de Salvar ukax mä jach’a uñacht’äwiwa",
+    "createStatus": "Estado uñstayaña"
+  },
+  "notifications": {
+    "intro": "Chiqa jaqinakar yatiyaña kunapachatix mä p’iqinchirix mä estado ukar purinxi - jank’aki, jan ukax mä pacha utt’ayat nayraqat/qhipa uru & pachax ukan wakicht’ata.",
+    "add": "+ Yatiyawi yapxataña",
+    "columns": {
+      "notification": "Yatiyawi",
+      "whenStatusIs": "Kunapachatixa Estado ukaxa",
+      "sends": "Ukax khithatawa",
+      "to": "A",
+      "via": "Ukatuqi",
+      "enabled": "Ukax ch’amanchatawa"
+    },
+    "anyStatus": "Kuna estados ukanakas utji",
+    "anySubStatus": "Kuna sub-estatus ukanakas utji",
+    "inactiveOption": "{{name}} (janiw irnaqkiti) .",
+    "emptyRules": "Janiw kuna yatiyawinakas utjkiti - mä yapxatañamawa, kunapachatix mä p’iqinchirix mä estado ukar purinxi ukhax equipo ukar yatiyañataki.",
+    "jobs": {
+      "title": "Programado & Khithata",
+      "firesAt": "Nina naktäwinak At",
+      "notification": "Yatiyawi",
+      "lead": "Chiqachaña",
+      "status": "Istaru",
+      "details": "Qhananchanaka",
+      "empty": "Janiw kunas wakicht’atäkiti ni khithatäkisa.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} ) Ukax mä jach’a uñacht’äwiwa."
+    },
+    "jobStatus": {
+      "PENDING": "Manqha",
+      "PROCESSING": "Ukaxa lurawiwa",
+      "SENT": "Apayata",
+      "FAILED": "Pantjata",
+      "SKIPPED": "Ukax mä juk’a pachanakanwa",
+      "CANCELLED": "Cancelatäxiwa"
+    },
+    "deliveryStatus": {
+      "SENT": "apayata",
+      "FAILED": "pantjata",
+      "SKIPPED": "ukatsti"
+    },
+    "deliveryChannel": {
+      "IN_APP": "in-app ukax mä juk’a pachanakanwa",
+      "EMAIL": "correo electrónico tuqi",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Uñt’ayata apnaqiri",
+      "owner": "Jaqipa",
+      "updatedBy": "Ukax mä juk’a pachanakanwa",
+      "role": "Papel: {{name}}"
+    },
+    "channels": {
+      "inApp": "Ukax mä app ukankiwa",
+      "email": "Correo electrónico tuqi",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Yatiyawi chhaqtayaña \" {{name}} \"? Ukat amtañanak suyt’añax cancelatawa.",
+    "testPrompt": "Aka yatiyawix mä yant’aw juma pachparuw apayanisma (in-app) kawkir ID lead apnaqasa ?",
+    "testSent": "Ukax campana ukar apayatawa: {{title}} {{message}}",
+    "headersInvalid": "Webhook p’iqinchanakax JSON chiqapawa , sañäni {\"Autorizacion\": \"Aportador xyz\"}",
+    "editTitle": "Yatiyawi chiqanchaña",
+    "newTitle": "Machaq Yatiyawi",
+    "name": "Chacha",
+    "namePlaceholder": "sañäni Sitio ukar visitt’añ amtayaña",
+    "whenStatus": "Kunapachatixa mä p’iqinchirin estadopaxa",
+    "subStatus": "Sub-estatus ukaxa",
+    "send": "Uñt’ayaña (programador) .",
+    "custom": "Isinaka...",
+    "modeBefore": "janïr horasa wakichtʼatäkipanwa",
+    "modeAfter": "horasa wakichtʼatäki uka qhepatjja",
+    "noScheduleWarning": "Aka estadox janiw mä uru & pacha mayikiti, ukhamax mä \"janïr/janïr/qhipa pacha\" yatiyawix janipuniw phichhantkaspati.",
+    "noScheduleFix": "Uñstayaña <strong>Jiskt’aña mä uru & pacha</strong> ukataki Estatus & Subestatus ukanxa, jan ukaxa jank’aki apayaniña.",
+    "sendTo": "Ukar apayanipxam (kuna combinación) .",
+    "recipientAssigned": "Asignado usuario (p’iqinchiri) .",
+    "recipientOwner": "Cuenta ukankirinaka / admin",
+    "recipientUpdatedBy": "Jaqix khititix estado ukar machaqar tukuyki",
+    "everyoneWithRole": "Taqinipuniw rol ukanipxi",
+    "specificUsers": "Usuario específicos (activo) ukax 1.1.",
+    "inactiveNever": "Inactivo apnaqirinakax janipuniw yatiyawinak katuqapkiti, ajllitäkchisa.",
+    "deliverVia": "Ukax via",
+    "channelInApp": "In-app (campana) ukax 1.1.",
+    "channelEmail": "Correo electrónico tuqi",
+    "channelWebhook": "Webhook ( WhatsApp / SMS ukan uñt'ayata)",
+    "emailHint": "Correo electrónico ukax sapa katuqirin correo electrónico ukar saraski ukatx SMTP ukax servidor ukan utt’ayatawa (backend/.env); ukakamax correo electrónico apayatanakax qillqt’atawa kunjamatix saltatäki ukhama.",
+    "webhookUrl": "URL Webhook ( POST , JSON ) ukax mä juk’a pachanakanwa.",
+    "headers": "P’iqinchirinaka ( JSON ) .",
+    "content": "Yatiyawi yatiyawi",
+    "title": "Titulu",
+    "message": "Yatiya",
+    "insertIntoTitle": "Título ukar mantañamawa",
+    "insertIntoMessage": "Yatiyawi ukar mantañamawa",
+    "anyLeadField": "Kawkïr p’iqinchir yapunakax irnaqarakispawa, sañäni <code1>{{example1}}</code1> jan ukax <code2>{{example2}}</code2> .",
+    "preview": "Nayraqata uñakipaña (muestra de plomo) .",
+    "enabled": "Ukax ch’amanchatawa",
+    "saveRule": "Yatiyawi imaña",
+    "createRule": "Yatiyawi luraña",
+    "variables": {
+      "customerName": "Jilïr irpirin sutipa",
+      "customerMobile": "Plomo móvil ukax mä jach’a uñacht’äwiwa",
+      "customerEmail": "Correo electrónico ukax p’iqinchatawa",
+      "registrationId": "Ukax mä ID ukhamawa",
+      "status": "Istaru",
+      "subStatus": "Sub-estatus ukaxa",
+      "scheduleAt": "Uka uru & pacha wakicht’ata",
+      "assignedTo": "Uñt’ayata apnaqiri",
+      "updatedBy": "Ukax mä juk’a pachanakanwa",
+      "recipient": "Katuqiri sutipa",
+      "project": "Amta",
+      "notes": "Qhipa yatiyawi",
+      "partner": "Socio sutini"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Jank’akiw kunawsatix estado ukax utt’ayatäki ukhaxa",
+      "AT": "Kuna horasatï amtatäki ukarjama",
+      "A1D": "1 uruw amtat pachat qhiparux (arknaqañ uñakipaña) ."
+    },
+    "immediately": "Jank'akipuni",
+    "atScheduled": "Mä horarioparjama",
+    "before": {
+      "MINUTES_one": "{{count}} minuto janïr amtatäki uka pachana",
+      "MINUTES_other": "{{count}} minutos janïr amtatäki uka pachana",
+      "HOURS_one": "{{count}} hora janïr amtatäki uka pachana",
+      "HOURS_other": "{{count}} pachanak janïr amtatäki uka pachana",
+      "DAYS_one": "{{count}} uru janïr amtatäki uka pachana",
+      "DAYS_other": "{{count}} urunak janïr amtatäki uka pachana",
+      "WEEKS_one": "{{count}} semana janïr amtatäki uka pachana",
+      "WEEKS_other": "{{count}} semananak janïr amtatäki uka pachana",
+      "MONTHS_one": "{{count}} phaxsi janïr amtatäki uka pachana",
+      "MONTHS_other": "{{count}} phaxsinakax janïr amtatäki uka pacharuw puri",
+      "YEARS_one": "{{count}} mara janïr amtatäki uka pachana",
+      "YEARS_other": "{{count}} maranakax janïr amtatäki uka pacharuw puri"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minuto ukat horasa",
+      "MINUTES_other": "{{count}} minutos ukjax wakicht’at pachat qhiparux",
+      "HOURS_one": "{{count}} horanak wakicht’at pachat qhiparux",
+      "HOURS_other": "{{count}} pachanak wakicht’at pachat qhiparux",
+      "DAYS_one": "{{count}} urux wakicht’at pachat qhiparux",
+      "DAYS_other": "{{count}} urunak amtat pachat qhiparux",
+      "WEEKS_one": "{{count}} semana ukat amtat pachat qhiparux",
+      "WEEKS_other": "{{count}} semananakax wakicht’at pachat qhiparux",
+      "MONTHS_one": "{{count}} phaxsi amtatäki uka pachat qhiparux",
+      "MONTHS_other": "{{count}} phaxsinakax wakicht’at pachat qhiparux",
+      "YEARS_one": "{{count}} maraw amtat pachat qhiparux",
+      "YEARS_other": "{{count}} maranakax wakicht’at pachat qhiparux"
+    },
+    "units": {
+      "MINUTES_one": "k'atha",
+      "MINUTES_other": "k'athanaka",
+      "HOURS_one": "pacha",
+      "HOURS_other": "pachanaka",
+      "DAYS_one": "uru",
+      "DAYS_other": "urunaka",
+      "WEEKS_one": "simana",
+      "WEEKS_other": "semananaka",
+      "MONTHS_one": "phaxsi",
+      "MONTHS_other": "phaxsinakawa",
+      "YEARS_one": "mara",
+      "YEARS_other": "maranaka"
+    }
+  }
+}

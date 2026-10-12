@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "I-Builder Portal",
+    "referrals": "Ukuthunyelwa",
+    "builderLogin": "Ngena ngemvumo yomakhi",
+    "partnerLogin": "Ukungena komlingani wetjhaneli"
+  },
+  "login": {
+    "title": "Ngena ngemvumo yomakhi",
+    "hint": "Ama-akhawunti womakhi enziwa yi Leadrat . Buza umlawuli wakho nangabe awunayo."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Ngilindele isiqunto sakho",
+    "ACCEPTED": "Yamukelwe",
+    "REJECTED": "Kwaliwe"
+  },
+  "list": {
+    "title": "Ukuthunyelwa",
+    "allProjects": "Woke amaphrojekthi",
+    "allStatuses": "Boke ubujamo",
+    "count_one": "{{count}} ukudluliselwa",
+    "count_other": "{{count}} ukuthunyelwa",
+    "columns": {
+      "referral": "Ukudluliselwa",
+      "customer": "Umthengi",
+      "project": "Iphrojekthi",
+      "sourcePartner": "Umlingani womthombo",
+      "status": "Ubujamo",
+      "booking": "Ukubhukha",
+      "registered": "Irejista"
+    },
+    "booked": "Ibhukiwe",
+    "empty": "Akukho ukuthunyelwa okwanje."
+  },
+  "detail": {
+    "customer": "Umthengi",
+    "sourcePartner": "Umlingani womthombo",
+    "attributionNote": "(ukuvezwa - angeze kwatjhugululwa)",
+    "leadStatus": "Isimo sokudosa phambili",
+    "protectedUntil": "Ivikelwe Bekube",
+    "referral": "Ukudluliselwa",
+    "reason": "Isizathu: {{reason}}",
+    "booking": "Ukubhukha",
+    "bookedOwner": "Ibhukiwe - ungumnikazi osebenzako",
+    "notBooked": "Akubhukwanga",
+    "sharedAfterBooking": "Kwabelwana ngemva kokubhukha",
+    "accept": "Yamukela ukudluliselwa",
+    "confirmBooking": "Qinisekisa ukubhukha",
+    "reject": "Yala ukuthunyelwa",
+    "rejectReasonLabel": "Isizathu sokwala (kutjengiswa kumlingani) *",
+    "rejectConfirm": "Yala",
+    "confirmBookingPrompt": "Qinisekisa ukubhukha? Ubunikazi bokusebenza buya kuwe begodu umlingani uyafaneleka ukuthola ikhomishini.",
+    "notice": {
+      "booked": "Ukubhukha kuqinisekisiwe.",
+      "accepted": "Ukudluliselwa kwamukelwe.",
+      "rejected": "Ukudluliselwa kwaliwe."
+    },
+    "backToReferrals": "Buyela emuva ekudluliseleni"
+  },
+  "history": {
+    "title": "Umlando",
+    "actor": {
+      "system": "Ihlelo",
+      "partner": "Umlingani wetjhaneli",
+      "admin": "Umlawuli Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Ukutloliswa kwabalingani kutholiwe",
+      "DUPLICATE_CHECK_COMPLETED": "Ukuhlolwa okuphindwe kabili kuqediwe - akukho kuphindaphinda okusebenzayo okutholakele",
+      "REGISTRATION_ACCEPTED": "Ukutlolisa kwamukelwe",
+      "PROTECTION_GRANTED_one": "{{count}} -ukuvikelwa kwelanga kunikelwe",
+      "PROTECTION_GRANTED_other": "{{count}} -ukuvikelwa kwelanga kunikelwe",
+      "STAGE_UPDATED": "Isimo sivuselelwe saba {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Insimu ye {{count}} evuselelweko",
+      "LEAD_DETAILS_UPDATED_other": "Amasimu we {{count}} avuselelweko",
+      "LEAD_ASSIGNED": "Yabelwe ku- {{name}}",
+      "LEAD_UNASSIGNED": "Akukabelwa",
+      "REFERRAL_ACCEPTED": "Umakhi wamukele ukudluliselwa",
+      "REFERRAL_REJECTED": "Umakhi wala ukudluliselwa. Isizathu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Umzamo wokubhalisa okuphindwe kabili ngu {{partner}} wala",
+      "BOOKING_COMPLETED": "Ukubhukha kuphelile",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Ubunikazi bokusebenza budluliselwe kuMakhi",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Ukuvezwa komlingani kulondoloziwe",
+      "COMMISSION_ELIGIBILITY_CREATED": "Ukufaneleka kwekhomitjhini kwadalwa",
+      "HANDOVER_COMPLETED": "Ukudluliselwa kuqediwe",
+      "ADMIN_PROTECTION_RELEASED": "Umlawuli ukhuphe ukuvikelwa okuphindaphindiweko kusesenesikhathi. Isizathu: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Umphathi wabela kabutjha ukutloliswa ukusuka ku {{from}} ukuya ku {{to}} . Isizathu: {{reason}}"
+    }
+  }
+}

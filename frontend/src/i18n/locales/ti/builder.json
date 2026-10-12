@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "ፖርታል ሃናጺ",
+    "referrals": "ሪፈራል ምግባር",
+    "builderLogin": "ሃናጺ መእተዊ",
+    "partnerLogin": "ቻነል መሻርኽቲ መእተዊ"
+  },
+  "login": {
+    "title": "ሃናጺ ይኣቱ",
+    "hint": "ናይ ሃናጺ ኣካውንት ብ Leadrat ይፍጠር ። ኣመሓዳሪኻ እንተዘይብልካ ሕተቶ።"
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "ውሳነኻ ምጽባይ",
+    "ACCEPTED": "ተቐባልነት ኣለዎ።",
+    "REJECTED": "ተነጺጉ"
+  },
+  "list": {
+    "title": "ሪፈራል ምግባር",
+    "allProjects": "ኩሎም ፕሮጀክትታት",
+    "allStatuses": "ኩሉ ደረጃታት",
+    "count_one": "{{count}} ሪፈራል ምግባር",
+    "count_other": "{{count}} ሪፈራላት",
+    "columns": {
+      "referral": "ሪፈራል ምግባር",
+      "customer": "ዓሚል",
+      "project": "ፕሮጀክት",
+      "sourcePartner": "ምንጪ መሻርኽቲ",
+      "status": "ኩነታት",
+      "booking": "ምዝገባ",
+      "registered": "ተመዝጊቡ ኣሎ።"
+    },
+    "booked": "ተሓዚኡ",
+    "empty": "ገና ሪፈራል የለን።"
+  },
+  "detail": {
+    "customer": "ዓሚል",
+    "sourcePartner": "ምንጪ መሻርኽቲ",
+    "attributionNote": "(attribution - ክቕየር ኣይክእልን እዩ)",
+    "leadStatus": "ናይ መሪሕነት ኩነታት",
+    "protectedUntil": "ዝተሓለወ ክሳብ...",
+    "referral": "ሪፈራል ምግባር",
+    "reason": "ምኽንያት {{reason}}",
+    "booking": "ምዝገባ",
+    "bookedOwner": "ተሓዚኡ - ንስኻ ኢኻ እቲ ስርሒታዊ ወናኒ",
+    "notBooked": "ኣይተሓዙን።",
+    "sharedAfterBooking": "ድሕሪ ምዝገባ ሼር ይግበር",
+    "accept": "ሪፈራል ተቐበል",
+    "confirmBooking": "ምዝገባ ኣረጋግጽ",
+    "reject": "ሪፈራል ምንጻግ",
+    "rejectReasonLabel": "ምኽንያት ምንጻግ (ንመጻምድቲ ተራእዩ) *",
+    "rejectConfirm": "ምንጻግ",
+    "confirmBookingPrompt": "ምዝገባ ምርግጋጽ? ስርሒታዊ ዋንነት ናባኻ ይሰጋገር እሞ እቲ መሻርኽቲ ንኮሚሽን ብቑዕ ይኸውን።",
+    "notice": {
+      "booked": "ምዝገባ ተረጋጊጹ።",
+      "accepted": "ሪፈራል ተቐባልነት ኣለዎ።",
+      "rejected": "ሪፈራል ተነጺጉ።"
+    },
+    "backToReferrals": "ናብ ሪፈራል ንመለስ"
+  },
+  "history": {
+    "title": "ታሪኽ",
+    "actor": {
+      "system": "ስርዓት",
+      "partner": "መሻርኽቲ ቻነል",
+      "admin": "Leadrat ኣድሚን"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "ምዝገባ መሻርኽቲ ተቐቢሉ።",
+      "DUPLICATE_CHECK_COMPLETED": "ተደጋጋሚ ምፍታሽ ተዛዚሙ - ንጡፍ ምድግጋም ኣይተረኽበን።",
+      "REGISTRATION_ACCEPTED": "ምዝገባ ተቐባልነት ኣለዎ።",
+      "PROTECTION_GRANTED_one": "{{count}} -ናይ መዓልቲ ሓለዋ ተዋሂቡ።",
+      "PROTECTION_GRANTED_other": "{{count}} -ናይ መዓልቲ ሓለዋ ተዋሂቡ።",
+      "STAGE_UPDATED": "ኩነታት ናብ {{stage}} ተሓዲሱ።",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} ዝብል ዓውዲ ዝተመሓየሸ",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} ዓውድታት ዝተመሓየሹ",
+      "LEAD_ASSIGNED": "ናብ {{name}} ተመዲቡ።",
+      "LEAD_UNASSIGNED": "ዘይተመደበ",
+      "REFERRAL_ACCEPTED": "ሃናጺ ነቲ ሪፈራል ተቐቢልዎ።",
+      "REFERRAL_REJECTED": "ሃናጺ ነቲ ሪፈራል ነጺግዎ። ምኽንያት {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "ብ {{partner}} ዝተገብረ ምድግጋም ናይ ምዝገባ ፈተነ ተነጺጉ",
+      "BOOKING_COMPLETED": "ምዝገባ ተዛዚሙ",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "ስርሒታዊ ዋንነት ናብ ሃናጺ ተሰጋጊሩ",
+      "PARTNER_ATTRIBUTION_PRESERVED": "መሻርኽቲ ኣትሪብዩሽን ተዓቂቡ።",
+      "COMMISSION_ELIGIBILITY_CREATED": "ብቕዓት ኮሚሽን ተፈጢሩ",
+      "HANDOVER_COMPLETED": "ምትሕልላፍ ተዛዚሙ",
+      "ADMIN_PROTECTION_RELEASED": "ኣድሚን ብኣግኡ ድፕሊኬት መከላኸሊ ኣውጺኡ። ምኽንያት {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "ኣድሚን ምዝገባ ካብ {{from}} ናብ {{to}} ዳግማይ መደቦ። ምኽንያት {{reason}}"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Poortaala Ijaarsitootaa",
+    "referrals": "Rifaralaa",
+    "builderLogin": "Galmee Ijaarsa",
+    "partnerLogin": "Galmee Michuu Chaanaalii"
+  },
+  "login": {
+    "title": "Ijaarsa galmaa'i",
+    "hint": "Akkaawuntii ijaarsaa kan uumamu Leadrat . Yoo hin qabne bulchaa kee gaafadhu."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Murtee kee eeguu",
+    "ACCEPTED": "Fudhatama qaba",
+    "REJECTED": "Dide"
+  },
+  "list": {
+    "title": "Rifaralaa",
+    "allProjects": "Pirojektoota hunda",
+    "allStatuses": "Haala hunda",
+    "count_one": "{{count}} rifaralaa",
+    "count_other": "{{count}} rifaralaa",
+    "columns": {
+      "referral": "Rifaralaa",
+      "customer": "Maamila",
+      "project": "Pirojektii",
+      "sourcePartner": "Madda Michuu",
+      "status": "Sadarkaa",
+      "booking": "Booking gochuu",
+      "registered": "Galmaa'ee jira"
+    },
+    "booked": "Booked ta'eera",
+    "empty": "Hanga ammaatti rifaralaa hin jiru."
+  },
+  "detail": {
+    "customer": "Maamila",
+    "sourcePartner": "Madda Michuu",
+    "attributionNote": "(attribution - jijjiiramuu hin danda'u)",
+    "leadStatus": "Haala Dursaa",
+    "protectedUntil": "Eegamaa Hanga",
+    "referral": "Rifaralaa",
+    "reason": "Sababni: {{reason}}",
+    "booking": "Booking gochuu",
+    "bookedOwner": "Booked - ati abbaa qabeenyaa hojiiti",
+    "notBooked": "Booked hin taane",
+    "sharedAfterBooking": "Erga booking godhanii booda share godhame",
+    "accept": "Rifaralaa Fudhachuu",
+    "confirmBooking": "Booking Mirkaneessi",
+    "reject": "Rifaralaa Diduu",
+    "rejectReasonLabel": "Sababni diduu (hiriyaa gaa’elaatti agarsiifame) * .",
+    "rejectConfirm": "Fudhachuu dhiisuu",
+    "confirmBookingPrompt": "Booking mirkaneessuu? Abbummaan hojii gara keetti ce’ee michuu komishinii argachuuf ulaagaa guuta.",
+    "notice": {
+      "booked": "Booking gochuun mirkanaa'eera.",
+      "accepted": "Rifaralli fudhatama qaba.",
+      "rejected": "Rifaralli dide."
+    },
+    "backToReferrals": "Gara Rifaralaa Deebi'aa"
+  },
+  "history": {
+    "title": "Seenaa",
+    "actor": {
+      "system": "Sirna",
+      "partner": "Michuu chaanaalii",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Galmeen michuu argame",
+      "DUPLICATE_CHECK_COMPLETED": "Sakatta'iinsi dachaa xumurame - dachaan socho'aa hin argamne",
+      "REGISTRATION_ACCEPTED": "Galmeen fudhatama qaba",
+      "PROTECTION_GRANTED_one": "{{count}} -eegumsi guyyaa kenname",
+      "PROTECTION_GRANTED_other": "{{count}} -eegumsi guyyaa kenname",
+      "STAGE_UPDATED": "Haalli gara {{stage}} tti fooyya'eera.",
+      "LEAD_DETAILS_UPDATED_one": "Dirree {{count}} haaromfame",
+      "LEAD_DETAILS_UPDATED_other": "Dirreewwan {{count}} fooyya'an",
+      "LEAD_ASSIGNED": "{{name}} tti ramadame.",
+      "LEAD_UNASSIGNED": "Kan hin ramadamne",
+      "REFERRAL_ACCEPTED": "Ijaarsichi rifaralaa fudhate",
+      "REFERRAL_REJECTED": "Builder rifaralaa kana dide. Sababni: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Yaaliin galmee dachaa {{partner}} tiin godhame fudhatama dhabe",
+      "BOOKING_COMPLETED": "Booking xumurameera",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Abbummaan hojii gara Builder tti darbe",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Amalli hiriyaa eegameera",
+      "COMMISSION_ELIGIBILITY_CREATED": "Ulaagaa komishinii uumame",
+      "HANDOVER_COMPLETED": "Walharkaa fuudhinsi xumurame",
+      "ADMIN_PROTECTION_RELEASED": "Admin eegumsa dachaa dafee gadhiise. Sababni: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Bulchaan galmee {{from}} irraa gara {{to}} tti irra deebi'ee ramade. Sababni: {{reason}}"
+    }
+  }
+}

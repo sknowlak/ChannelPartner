@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Setting ni",
+    "noPermission": "Setting ni hpe hparan na ahkang n lu ai."
+  },
+  "categories": {
+    "lead": "Woi awn ai",
+    "user": "lang ai wa",
+    "integrations": "Kahkyin gumdin ai lam ni"
+  },
+  "leadTabs": {
+    "fields": "Hkai sun ni",
+    "statuses": "Madang ni hte Madang kaji ni",
+    "notifications": "Hkrang ni hte aten masat da ai ni"
+  },
+  "fields": {
+    "leadIntro": "Lead capture form hpe configure galaw u: field ni hpe hpaw/n galaw u, ra ai ngu masat da u, shing nrai, tinang ra sharawng ai field ni hpe jat bang u.",
+    "userIntro": "Add/Edit Team Member form hpe gram lajang u: field ni hpe hpaw/n mai galaw ai, ra ai ngu masat da ai, shing nrai, tinang ra sharawng ai field ni hpe bang u.",
+    "addCustomField": "+ Laksan shara hpe bang u",
+    "fieldLabel": "Hkai sun masat kumla",
+    "group": "Hpung",
+    "groupPlaceholderLead": "ga shadawn, san sagawn ai shiga",
+    "groupPlaceholderUser": "eg Jaw bang ai lam ni",
+    "dataType": "Data amyu",
+    "options": "Lata na lam ni (comma hte garan da ai)",
+    "requiredLead": "Ra ai - na a team kaw na partner ni gaw ningbaw langai hpe mying jahpan bang na matu ndai hpe ka jahpring ra ai",
+    "requiredUser": "Ra ai - team member langai hpe jat bang ai shaloi bang ra ai",
+    "creating": "Hpan da ai...",
+    "createField": "Field hpe hpaw u",
+    "columns": {
+      "field": "Sun",
+      "group": "Hpung",
+      "type": "Hpan",
+      "required": "Ra ai",
+      "enabled": "Hpaw ya sai",
+      "kind": "Amyu hpan"
+    },
+    "kind": {
+      "custom": "Lai",
+      "core": "Core (pat da ai)",
+      "standard": "Madang"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Ga madung",
+    "TEXTAREA": "Laika galu",
+    "NUMBER": "Hti hkum",
+    "CURRENCY": "Gumhpraw",
+    "DATE": "Nhtoi",
+    "SELECT": "Lawu hkrat wa ai",
+    "LIST": "Jahpan"
+  },
+  "picker": {
+    "searchPlaceholder": "Lead field ni hpe tam u...",
+    "summary": "{{shown}} madun da ai · {{mandatory}} ra ai",
+    "mandatory": "Shadik shatup ra ai",
+    "noMatch": "Hkai sun n bung ai."
+  },
+  "statuses": {
+    "intro": "Na a lead status hte sub-status ni - marai langai ngai lead langai hpe update galaw ai shaloi langai hte langai hpa hpyi shawn ai (date & time, lead fields) ni hpe tsun dan ai.",
+    "add": "+ Masa hpe jat bang na",
+    "columns": {
+      "order": "Matsun",
+      "status": "Madang",
+      "subStatuses": "Madang kaji ni",
+      "asksFor": "Hpyi ai",
+      "active": "Kasang kalang re ai"
+    },
+    "moveUp": "Lawu de htawt wa",
+    "moveDown": "Lawu de htawt wa",
+    "defaultBadge": "Lead nnan ni a matu Default",
+    "bookingBadge": "Booking galaw ai masa",
+    "asksForLabel": "{{label}} hpe san ai",
+    "asksForDateTime": "Nhtoi hte aten hpe san ai",
+    "none": "Hpa n re ai",
+    "dateTime": "Nhtoi & aten",
+    "scheduledOn": "{{names}} hta",
+    "fieldsSummary_one": "{{count}} ginra ( {{mandatory}} ra ai)",
+    "fieldsSummary_other": "{{count}} lamu ga ( {{mandatory}} ra ai)",
+    "deleteConfirm": "\" {{name}} \" ngu ai masa hpe yeng seng kau na kun? Ndai hpe n mai gram lajang ai.",
+    "editTitle": "Masa hpe gram lajang - {{name}}",
+    "newTitle": "Masa Nnan",
+    "name": "Masa Mying",
+    "colour": "Nsam",
+    "active": "Kasang kalang re ai",
+    "isDefault": "Lead nnan ni a matu default masa",
+    "isBooking": "Booking masa (Booking hkum tsup ai hku nna masat da ai)",
+    "whenMoved": "Lead langai hpe ndai status de htawt ai shaloi",
+    "askSchedule": "Nhtoi hte aten hpe san yu u (scheduler)",
+    "scheduleLabelPlaceholder": "Label, ga shadawn, 100 kaw sa yu u.",
+    "fieldsToShow": "Update form hta madun na matu ningbaw ningla ni",
+    "subStatusesTitle": "Madang kaji ni",
+    "subStatusesHint": "Sub-status shagu gaw tinang a date & time hpe san nna tinang a field ni hpe bang mai ai - lawu na status a field ni a ntsa kaw madun da ai.",
+    "subStatusName": "Sub-status mying",
+    "subFields": "Hkai sun ni ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Nhtoi & aten masat da ai, ga shadawn, 10.00 hta bai shaga u.",
+    "addSubStatus": "+ Sub-Masa hpe jat bang u",
+    "saveStatus": "Masa hpe hkye la na",
+    "createStatus": "Status hpe galaw u"
+  },
+  "notifications": {
+    "intro": "Lead langai mi status langai mi de du wa ai shaloi, jaw ai masha ni hpe tsun dan u - kalang ta, shing nrai, dai hta masat da ai date & time a shawng/hpang hta masat da ai aten hpe tsun dan u.",
+    "add": "+ Ndau shana ai lam hpe jat bang na",
+    "columns": {
+      "notification": "Shana shana ai lam",
+      "whenStatusIs": "Status gaw gara aten hta",
+      "sends": "Shagun dat ai",
+      "to": "De",
+      "via": "Lai nna",
+      "enabled": "Hpaw ya sai"
+    },
+    "anyStatus": "Gara masa raitim",
+    "anySubStatus": "Gara sub-status raitim",
+    "inactiveOption": "{{name}} (n shamu shamawt ai)",
+    "emptyRules": "Notifications n nga shi ai - lead langai mi status de du wa ai shaloi na a team hpe sadi jaw na matu langai mi hpe jat bang u.",
+    "jobs": {
+      "title": "Jahpan masat da ai & sa dat ai",
+      "firesAt": "Wan hkru ai",
+      "notification": "Shana shana ai lam",
+      "lead": "Woi awn ai",
+      "status": "Madang",
+      "details": "Akri akrai",
+      "empty": "Hpa mung schedule n galaw shi ai, n sa dat shi ai.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Jahkring da ai",
+      "PROCESSING": "Hpaji galaw ai",
+      "SENT": "Shagun dat ai",
+      "FAILED": "Hkrat sum mat ai",
+      "SKIPPED": "Lai mat sai",
+      "CANCELLED": "Jam kau sai"
+    },
+    "deliveryStatus": {
+      "SENT": "shagun dat ai",
+      "FAILED": "hkrat sum mat ai",
+      "SKIPPED": "skip kau ai"
+    },
+    "deliveryChannel": {
+      "IN_APP": "App kata",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Laksan lit jaw da ai lang ai wa",
+      "owner": "Madu",
+      "updatedBy": "bai gram lajang ai",
+      "role": "Lit: {{name}}"
+    },
+    "channels": {
+      "inApp": "App kata",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "\" {{name}} \" ngu ai ndau shana ai lam hpe yeng seng kau na kun? Dai kaw na pending shadum ai lam ni hpe jahkring kau ai.",
+    "testPrompt": "Ndai ndau shana ai lam hpe gara lead ID lang nna tinang hkum hpe (in-app) test galaw na matu sa dat u ?",
+    "testSent": "Na a nsen hpe sa dat ai: {{title}} {{message}}",
+    "headersInvalid": "Webhook baw ni gaw kaja ai JSON rai ra ai , ga shadawn {\"Ahkaw ahkang\": \"Bearer xyz\"}",
+    "editTitle": "Shana shana ai lam hpe gram lajang",
+    "newTitle": "Ndau shana ai lam nnan",
+    "name": "Mying",
+    "namePlaceholder": "eg Site de sa yu na matu shadum ai",
+    "whenStatus": "Lead langai a status gaw .",
+    "subStatus": "Sub-madang",
+    "send": "Shagun dat ai (ten masat ai wa)",
+    "custom": "Lai...",
+    "modeBefore": "masat da ai aten garai n du shi yang",
+    "modeAfter": "masat da ai aten ngut ai hpang",
+    "noScheduleWarning": "Ndai status gaw date & time hpe n san ai majaw, \"shadawn shadang tawn da ai aten garai n du shi yang/at/hpang\" ngu ai notification gaw galoi mung n pru na re.",
+    "noScheduleFix": "Statuses & Sub-Statuses ngu ai kaw na <strong>Ask ngu ai nhtoi & aten hpe</strong> hpaw nna, shing nrai, Kalang ta sa dat u.",
+    "sendTo": "(Gara hpawng de ai) de sa dat u",
+    "recipientAssigned": "Laksan lit jaw da ai lang ai wa (ningbaw madu)",
+    "recipientOwner": "Account madu/admin",
+    "recipientUpdatedBy": "Status hpe update galaw ai wa",
+    "everyoneWithRole": "Masha shagu lit nga ai",
+    "specificUsers": "Laksan lang ai ni (active)",
+    "inactiveNever": "Inactive user ni gaw lata la ai rai yang pyi, notification galoi mung n lu la ai.",
+    "deliverVia": "hku nna sa ya ai",
+    "channelInApp": "App kata (nsen)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS jaw ai wa )",
+    "emailHint": "Email gaw hkap la ai wa langai hte langai a email address de sa nna, server (backend/.env) kaw SMTP hpe hpaw da ra ai; dai aten du hkra email sa ai ni hpe skip galaw ai hku log galaw da ai.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Baw ni ( JSON )",
+    "content": "Shana shana ai lam",
+    "title": "Gabaw",
+    "message": "Matsun maroi laika",
+    "insertIntoTitle": "Title kaw bang u",
+    "insertIntoMessage": "Message kata de bang u",
+    "anyLeadField": "Gara lead field mung bungli galaw ai, ga shadawn <code1>{{example1}}</code1> shing nrai <code2>{{example2}}</code2> .",
+    "preview": "Shawng yu ai (kasi ningli woi awn ai)",
+    "enabled": "Hpaw ya sai",
+    "saveRule": "Shana shana ai lam hpe mahkawng da ai",
+    "createRule": "Hkrang hpe galaw u",
+    "variables": {
+      "customerName": "Ningbaw mying",
+      "customerMobile": "Mobile hpe woi awn",
+      "customerEmail": "Email woi awn",
+      "registrationId": "Ningbaw ID",
+      "status": "Madang",
+      "subStatus": "Sub-madang",
+      "scheduleAt": "Lajang da ai nhtoi hte aten",
+      "assignedTo": "Laksan lit jaw da ai lang ai wa",
+      "updatedBy": "bai gram lajang ai",
+      "recipient": "Hkap la ai wa a mying",
+      "project": "Sawn hpajang magam",
+      "notes": "Hpang jahtum na laika",
+      "partner": "Hpung manang mying"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Kalang ta status hpe set galaw ngut ai hpang .",
+      "AT": "Lajang da ai aten hta .",
+      "A1D": "Lajang da ai aten ngut ai hpang 1 ya (hpang hkan jep joi ai lam)"
+    },
+    "immediately": "Ya jang jang",
+    "atScheduled": "Lajang da ai aten hta",
+    "before": {
+      "MINUTES_one": "{{count}} masat da ai aten minit garai n du shi yang",
+      "MINUTES_other": "{{count}} masat da ai aten garai n du shi ai minit",
+      "HOURS_one": "{{count}} masat da ai aten garai n du shi ai hkying hkum",
+      "HOURS_other": "{{count}} masat da ai aten garai n du shi ai hkying hkum",
+      "DAYS_one": "{{count}} masat da ai aten garai n du shi yang",
+      "DAYS_other": "{{count}} nhtoi garai n du shi yang",
+      "WEEKS_one": "{{count}} masat da ai aten garai n du shi ai bat",
+      "WEEKS_other": "{{count}} masat da ai aten garai n du shi ai bat ni",
+      "MONTHS_one": "{{count}} masat da ai aten garai n du shi ai shata",
+      "MONTHS_other": "{{count}} masat da ai aten garai n du shi ai shata",
+      "YEARS_one": "{{count}} masat da ai aten garai n du shi ai shaning",
+      "YEARS_other": "{{count}} masat da ai aten garai n du shi ai shaning"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} masat da ai aten ngut ai hpang minit",
+      "MINUTES_other": "{{count}} masat da ai aten ngut ai hpang minit",
+      "HOURS_one": "{{count}} masat da ai aten na ai hpang hkying hkum",
+      "HOURS_other": "{{count}} aten masat da ai hpang hkying hkum",
+      "DAYS_one": "{{count}} masat da ai aten ngut ai hpang lani mi",
+      "DAYS_other": "{{count}} masat da ai aten ngut ai hpang nhtoi",
+      "WEEKS_one": "{{count}} masat da ai aten ngut ai hpang bat",
+      "WEEKS_other": "{{count}} masat da ai aten ngut ai hpang bat",
+      "MONTHS_one": "{{count}} masat da ai aten ngut ai hpang shata",
+      "MONTHS_other": "{{count}} masat da ai aten ngut ai hpang shata",
+      "YEARS_one": "{{count}} masat da ai aten ngut ai hpang shaning",
+      "YEARS_other": "{{count}} masat da ai aten ngut ai hpang shaning"
+    },
+    "units": {
+      "MINUTES_one": "minit",
+      "MINUTES_other": "minit",
+      "HOURS_one": "hkying mum",
+      "HOURS_other": "ahkying",
+      "DAYS_one": "shani",
+      "DAYS_other": "nhtoi",
+      "WEEKS_one": "bat",
+      "WEEKS_other": "Bat 2",
+      "MONTHS_one": "shata",
+      "MONTHS_other": "shata",
+      "YEARS_one": "shaning",
+      "YEARS_other": "shaning ni"
+    }
+  }
+}

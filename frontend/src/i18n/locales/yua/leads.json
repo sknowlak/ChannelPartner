@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "in noj bejo'ob",
+    "signedInAs": "wokol bey {{name}} ( {{partnerId}} ) · Óoxten ku ye'esik ti {{timezone}}",
+    "addLead": "+ Ts'áa plomo",
+    "tabs": {
+      "all": "tuláakal ( {{count}} )",
+      "pending": "Táan u páa'ta'al ( {{count}} )",
+      "booked": "Reservado ( {{count}} )"
+    },
+    "searchPlaceholder": "Kaxant tumen k'aaba', móvil, wa ID u registro ...",
+    "manageColumns": "Gestionar le columnas",
+    "rowsPerPage": "Filas tumen linki abas kaambal",
+    "registrationId": "ID u registro",
+    "emptyState": "Mina'an mix jump'éel pista láayli' - registrar u yáax.",
+    "noMatch": "Mix jump'éel pista ku bin yéetel le k'iino'oba' filtros.",
+    "showing": "Ku ye'esik {{from}} - {{to}} ti' {{total}} entradas",
+    "actions": {
+      "preview": "Sáasil previa yéetel séeba'an túumbenkuunsa'al",
+      "history": "K'ajlay",
+      "email": "Correo electrónico",
+      "whatsapp": "WhatsApp",
+      "call": "T'aanil"
+    },
+    "pagination": {
+      "first": "yáax linki abas kaambal",
+      "previous": "U yáax linki abas kaambal",
+      "next": "U láak' linki abas kaambal",
+      "last": "u ts'ook linki abas kaambal"
+    }
+  },
+  "columns": {
+    "status": "Estaado",
+    "assignTo": "Asignar ti'",
+    "booked": "ts'o'ok u reservado",
+    "protectionUntil": "Kanáanil Tak"
+  },
+  "booking": {
+    "booked": "ts'o'ok u reservado",
+    "pending": "Ma' ts'oka'ani"
+  },
+  "assign": {
+    "unassigned": "Ma' asignado",
+    "owner": "{{name}} (U yuumil)",
+    "inactive": "{{name}} (ma' meyaj)",
+    "unknownUser": "Ma' k'ajóolta'an máak",
+    "assignedTo": "Ts'a'an ti' {{name}}"
+  },
+  "form": {
+    "addTitle": "Ts'áa plomo",
+    "editTitle": "Editar le plomo",
+    "noPermissionAdd": "mina'an teech permiso uti'al a registrar le clientes potenciales.",
+    "noPermissionEdit": "mina'an teech permiso uti'al a editar le pistas.",
+    "selectPlaceholder": "Yéey...",
+    "commaSeparated": "Coma separada",
+    "phonePlaceholder": "Meyaj ku nu'ukul t'aan",
+    "countryCode": "Código lu'uma'"
+  },
+  "project": {
+    "none": "Mina'an mix jump'éel meyaj láayli' (ma' u ya'ala'al)",
+    "notInList": "{{project}} (ma' ti' le tsoolol proyecto)"
+  },
+  "journey": {
+    "customer": "Cliyeente",
+    "currentOwner": "U yuumil bejla'e'",
+    "protectionExpiry": "U k'iinil u kanáanta'al",
+    "leadStatus": "Estado de plomo",
+    "scheduled": "Programado",
+    "assignedTo": "Asignado ti'",
+    "referral": "Referencia",
+    "builderReason": "U o'olal le máax beetiko': {{reason}}",
+    "bookedHint": "Reservado tumen le constructor - propiedad operacional u péek ti' le constructor; u atribución yéetel u elegibilidad le comisión ku mantienen.",
+    "notBookedHint": "Le reservas ku confirman tumen le constructor una pakteche' kin k'aam le referencia.",
+    "quickUpdate": "séeba'an túumbenkuunsa'al",
+    "leadDetails": "Detalles u plomo",
+    "progressHistory": "K'ajláayo' u progreso",
+    "timesIn": "(k'iin ti' {{timezone}} )",
+    "backToMyLeads": "Ka'a suut ti' in pistas",
+    "editLead": "Editar le plomo"
+  },
+  "referral": {
+    "NOT_REFERRED": "Ma' túuxta'an (mina'an proyecto)",
+    "PENDING_BUILDER": "Táan in páa'tik u beetik",
+    "ACCEPTED": "k'a'am tumen le máax beetiko'",
+    "REJECTED": "Rechazado tumen le constructor"
+  },
+  "preview": {
+    "ariaLabel": "Sáasil previa ti' le plomo",
+    "title": "Previsualización le plomo",
+    "source": "Chíikul",
+    "location": "Úubikasion",
+    "scheduled": "Programado",
+    "registered": "Ts'íibta'an",
+    "latestNote": "Ts'ook nota",
+    "quickUpdate": "séeba'an túumbenkuunsa'al",
+    "fullDetails": "tuláakal u tsoolil",
+    "editLead": "Editar le plomo",
+    "history": "K'ajlay"
+  },
+  "quick": {
+    "assignedTo": "Asignado ti'",
+    "status": "Estaado",
+    "subStatus": "Sub-Status",
+    "selectSubStatus": "Yéey sub-estado...",
+    "none": "Mina'an",
+    "scheduledAt": "Programado ti'",
+    "localTime": "u k'iinil le kaajo'",
+    "note": "Ch'a' ts'íib",
+    "notePlaceholder": "Ba'ax úuch ti' le t'aan / xíimbala'? (chen wa a k'áat)",
+    "updateStatus": "Actualizar le noj",
+    "statusUpdated": "Estado actualizado",
+    "bookedLocked": "Le lead ts'o'ok u reservado - u noj ts'o'ok ma' u páajtal k'ex.",
+    "viewOnly": "Je'el u páajtal a wilik le plomo, ba'ale' a ju'un ma' je'el u páajtal u actualizar."
+  },
+  "history": {
+    "title": "K'ajláayo' - {{registrationId}}",
+    "tabs": {
+      "all": "Tuláakal",
+      "status": "Estaado",
+      "assignment": "Áasignasion",
+      "notes": "Notas"
+    },
+    "doneBy": "Meentik tumen {{actor}}",
+    "system": "Sisteema",
+    "platforms": {
+      "System": "Sisteema",
+      "External": "Táanxelil",
+      "Web": "Web",
+      "Mobile": "Séelular"
+    },
+    "added": "ku ts'áabal",
+    "updated": "ts'o'ok u túumbenkuunsa'al",
+    "empty": "(báasiyo)",
+    "noHistory": "Mina'an mix jump'éel k'ajláayo' ti' le categoría láayli'.",
+    "fieldLabels": {
+      "stage": "Estaado",
+      "subStatus": "Sub-Status",
+      "scheduledAt": "Tsoolil",
+      "notes": "Notas",
+      "assignedTo": "Asignado ti'"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "K'a'am u registro le socio",
+      "DUPLICATE_CHECK_COMPLETED": "Ts'o'ok u yila'al u duplicado - ma' kaxta'ab mix jump'éel duplicado activo",
+      "REGISTRATION_ACCEPTED": "K'a'amal u ts'íibta'al",
+      "PROTECTION_GRANTED_one": "{{count}} -k'iin kanáanil ts'a'an",
+      "PROTECTION_GRANTED_other": "{{count}} -k'iin kanáanil ts'a'an",
+      "REGISTRATION_ATTEMPT_REJECTED": "U ka'ap'éel intento u registro tumen {{partnerId}} rechazado",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} ts'o'ok u túumbenkuunsa'al",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} ts'o'ok u túumbenkuunsa'al",
+      "STAGE_UPDATED": "Estado actualizado ti {{status}}",
+      "LEAD_ASSIGNED": "Ts'a'an ti' {{name}}",
+      "LEAD_UNASSIGNED": "Ma' asignado",
+      "BOOKING_COMPLETED": "Ts'o'ok u ts'o'okol u reserva",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "U yuumil meyaj ts'a'ab ti' Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribución socio conservada",
+      "COMMISSION_ELIGIBILITY_CREATED": "Creada u elegibilidad le comisión",
+      "HANDOVER_COMPLETED": "Ts'o'ok u k'u'ubul",
+      "REFERRAL_ACCEPTED": "Builder tu k'amaj le referencia",
+      "REFERRAL_REJECTED": "Builder tu p'ataj le referencia. O'olal: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin tu jóok'saj protección duplicada temprano. O'olal: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin tu k'exaj u registro u {{from}} u {{to}} . O'olal: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Gestionar le columnas",
+    "hint": "jíilankilo'ob uti'al u ka'a ordenar · wilik uti'al u ye'esa'al",
+    "showAll": "E'es tuláakal",
+    "resetDefault": "K'a'ajsik ti' le predeterminado"
+  },
+  "filters": {
+    "title": "Filtros",
+    "allProjects": "tuláakal le meyajo'obo'",
+    "any": "Je'el",
+    "noFields": "Mix uláak' sikte filtrables táan habilitados láayli' (Configuración > Plomo).",
+    "clearAll": "Tselik tuláakal"
+  },
+  "phone": {
+    "MISSING": "K'a'abéet u meyaj ku nu'ukul t'aan.",
+    "INVALID": "Béet ts'íibt jump'éel meyaj ku nu'ukul t'aan válido.",
+    "TOO_SHORT": "u meyaj ku nu'ukul t'aan jach kóom.",
+    "TOO_LONG": "jach chowak u meyaj ku nu'ukul t'aan.",
+    "INVALID_FOR_COUNTRY": "Le meyaj ku nu'ukul t'aana' ma' jach jaaj uti'al {{country}} .",
+    "COUNTRY_MISMATCH": "Béet yéey le código lu'uma' ma'alob.",
+    "NOT_MOBILE": "Béet ts'íibt jump'éel meyaj ku móvil, ma' jump'éel nu'ukul t'aan fijo."
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Saituna",
+    "noPermission": "Ba ku da izini don sarrafa saituna."
+  },
+  "categories": {
+    "lead": "Jagoranci",
+    "user": "Mai amfani",
+    "integrations": "Haɗin kai"
+  },
+  "leadTabs": {
+    "fields": "Filaye",
+    "statuses": "Matsayi & Karamin Matsayi",
+    "notifications": "Fadakarwa & Masu tsara jadawalin"
+  },
+  "fields": {
+    "leadIntro": "Saita hanyar kama gubar: kunna/ kashe filayen, yi musu alama da ake buƙata, ko ƙara filayen al'ada naku.",
+    "userIntro": "Saita form ɗin Ƙara/gyara Ƙungiya: kunna/ kashe filayen, yi musu alama da ake buƙata, ko ƙara filayen al'ada na ku.",
+    "addCustomField": "+ Ƙara Filin Musamman",
+    "fieldLabel": "Lakabin filin",
+    "group": "Rukuni",
+    "groupPlaceholderLead": "misali Bayanin Tambaya",
+    "groupPlaceholderUser": "misali Karin Bayani",
+    "dataType": "Nau'in Bayanai",
+    "options": "Zaɓuɓɓuka (rabu waƙafi)",
+    "requiredLead": "Da ake buƙata - abokan hulɗa a ƙungiyar ku dole ne su cika wannan don yin rijistar jagora",
+    "requiredUser": "Da ake buƙata - dole ne a cika lokacin ƙara ɗan ƙungiyar",
+    "creating": "Ƙirƙirar...",
+    "createField": "Ƙirƙiri Filin",
+    "columns": {
+      "field": "Filin",
+      "group": "Rukuni",
+      "type": "Nau'in",
+      "required": "Da ake bukata",
+      "enabled": "An kunna",
+      "kind": "Irin"
+    },
+    "kind": {
+      "custom": "Custom",
+      "core": "Core (kulle)",
+      "standard": "Daidaitawa"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Rubutu",
+    "TEXTAREA": "Dogon rubutu",
+    "NUMBER": "Lamba",
+    "CURRENCY": "Kudi",
+    "DATE": "Kwanan wata",
+    "SELECT": "Zazzagewa",
+    "LIST": "Jerin"
+  },
+  "picker": {
+    "searchPlaceholder": "Bincika filayen jagora...",
+    "summary": "{{shown}} an nuna · {{mandatory}} na wajibi",
+    "mandatory": "Wajibi",
+    "noMatch": "Babu filayen da suka dace."
+  },
+  "statuses": {
+    "intro": "Matsayin jagorar ku da ƙananan halaye - abin da kowannensu ke nema (kwanaki da lokaci, filayen jagora) lokacin da wani ya sabunta jagora zuwa gare ta.",
+    "add": "+ Ƙara Matsayi",
+    "columns": {
+      "order": "Oda",
+      "status": "Matsayi",
+      "subStatuses": "Karamin Matsayi",
+      "asksFor": "Tambayi Don",
+      "active": "Mai aiki"
+    },
+    "moveUp": "Matsa sama",
+    "moveDown": "Matsa ƙasa",
+    "defaultBadge": "Default don sababbin jagora",
+    "bookingBadge": "Matsayin yin rajista",
+    "asksForLabel": "Tambayi {{label}}",
+    "asksForDateTime": "Neman kwanan wata & lokaci",
+    "none": "Babu",
+    "dateTime": "Kwanan wata & lokaci",
+    "scheduledOn": "akan {{names}}",
+    "fieldsSummary_one": "filin {{count}} ( {{mandatory}} wajibi)",
+    "fieldsSummary_other": "Filayen {{count}} ( {{mandatory}} na wajibi)",
+    "deleteConfirm": "Share hali \" {{name}} \"? Ba za a iya soke wannan ba.",
+    "editTitle": "Gyara Hali - {{name}}",
+    "newTitle": "Sabon Matsayi",
+    "name": "Matsayi Suna",
+    "colour": "Launi",
+    "active": "Mai aiki",
+    "isDefault": "Matsayi na asali don sababbin jagora",
+    "isBooking": "Matsayin yin ajiyar kuɗi (wanda aka saita ta Cikakkiyar Booking)",
+    "whenMoved": "Lokacin da aka motsa gubar zuwa wannan matsayi",
+    "askSchedule": "Nemi kwanan wata & lokaci (mai tsarawa)",
+    "scheduleLabelPlaceholder": "Lakabi, misali Ziyarci a",
+    "fieldsToShow": "Jagorar filayen don nunawa akan sigar sabuntawa",
+    "subStatusesTitle": "Karamin Matsayi",
+    "subStatusesHint": "Kowane ƙaramin matsayi na iya neman kwanan wata & lokacinsa kuma ya ƙara filayensa - wanda aka nuna a saman filayen matsayin da ke sama.",
+    "subStatusName": "Sunan ƙasa",
+    "subFields": "Filaye ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Kwanan wata & alamar lokaci, misali Kira baya a",
+    "addSubStatus": "+ Ƙara Matsayin Matsayi",
+    "saveStatus": "Ajiye Matsayi",
+    "createStatus": "Ƙirƙiri Matsayi"
+  },
+  "notifications": {
+    "intro": "Sanar da mutanen da suka dace lokacin da gubar ta kai matsayi - kai tsaye, ko ƙayyadadden lokaci kafin/bayan kwanan wata & lokacin da aka tsara akansa.",
+    "add": "+ Ƙara Sanarwa",
+    "columns": {
+      "notification": "Sanarwa",
+      "whenStatusIs": "Lokacin da Matsayi yake",
+      "sends": "Aika",
+      "to": "Zuwa",
+      "via": "Ta hanyar",
+      "enabled": "An kunna"
+    },
+    "anyStatus": "Duk wani matsayi",
+    "anySubStatus": "Duk wani matsayi",
+    "inactiveOption": "{{name}} (ba aiki)",
+    "emptyRules": "Babu sanarwa tukuna - ƙara ɗaya don faɗakar da ƙungiyar ku lokacin da jagora ta kai matsayi.",
+    "jobs": {
+      "title": "An tsara & An aika",
+      "firesAt": "Wuta A",
+      "notification": "Sanarwa",
+      "lead": "Jagoranci",
+      "status": "Matsayi",
+      "details": "Cikakkun bayanai",
+      "empty": "Babu wani abu da aka shirya ko aika tukuna.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Ana jiran",
+      "PROCESSING": "Gudanarwa",
+      "SENT": "An aika",
+      "FAILED": "Ba a yi nasara ba",
+      "SKIPPED": "An tsallake",
+      "CANCELLED": "An soke"
+    },
+    "deliveryStatus": {
+      "SENT": "aika",
+      "FAILED": "kasa",
+      "SKIPPED": "tsallake"
+    },
+    "deliveryChannel": {
+      "IN_APP": "in-app",
+      "EMAIL": "imel",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Mai amfani da aka sanyawa",
+      "owner": "Mai shi",
+      "updatedBy": "An sabunta ta",
+      "role": "Matsayi: {{name}}"
+    },
+    "channels": {
+      "inApp": "In-app",
+      "email": "Imel",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "A goge sanarwar \" {{name}} \"? An soke masu tuni tunasarwa daga gare ta.",
+    "testPrompt": "Aika gwajin wannan sanarwar zuwa kanku (in-app) ta amfani da wane ID jagora?",
+    "testSent": "An aika zuwa kararrawa: {{title}} {{message}}",
+    "headersInvalid": "Dole ne maƙallan Webhook su kasance masu aiki da JSON , misali {\"Izinin\": \"Mai ɗauka xyz\"}",
+    "editTitle": "Gyara Sanarwa",
+    "newTitle": "Sabuwar Sanarwa",
+    "name": "Suna",
+    "namePlaceholder": "misali tunasarwar ziyartan rukunin yanar gizo",
+    "whenStatus": "Lokacin da matsayin jagora ya kasance",
+    "subStatus": "Karamin matsayi",
+    "send": "Aika (mai tsara jadawalin)",
+    "custom": "Custom...",
+    "modeBefore": "kafin lokacin da aka tsara",
+    "modeAfter": "bayan lokacin da aka tsara",
+    "noScheduleWarning": "Wannan matsayin baya neman kwanan wata & lokaci, don haka sanarwar \"kafin/a/bayan lokacin da aka tsara\" ba zai taɓa yin wuta ba.",
+    "noScheduleFix": "Kunna <strong>Nemi kwanan wata & lokaci</strong> don shi a ƙarƙashin Hali & Matsayi, ko aika Nan take.",
+    "sendTo": "Aika zuwa (kowane haɗuwa)",
+    "recipientAssigned": "Mai amfani da aka sanya (mai jagora)",
+    "recipientOwner": "Mai asusun / admin",
+    "recipientUpdatedBy": "Mutumin da ya sabunta halin",
+    "everyoneWithRole": "Kowa da rawar",
+    "specificUsers": "Musamman masu amfani (aiki)",
+    "inactiveNever": "Masu amfani marasa aiki ba su taɓa karɓar sanarwa ba, koda kuwa an zaɓa.",
+    "deliverVia": "Bayarwa ta hanyar",
+    "channelInApp": "In-app (ƙararawa)",
+    "channelEmail": "Imel",
+    "channelWebhook": "Webhook (mai ba da WhatsApp / SMS )",
+    "emailHint": "Imel yana zuwa adireshin imel na kowane mai karɓa kuma yana buƙatar saita SMTP akan sabar (baya/.env); har sai ana shigar da imel kamar yadda aka tsallake.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Shugabanni ( JSON )",
+    "content": "Abubuwan sanarwa",
+    "title": "Take",
+    "message": "Sako",
+    "insertIntoTitle": "Saka cikin Take",
+    "insertIntoMessage": "Saka cikin Saƙo",
+    "anyLeadField": "Kowane filin gubar yana aiki kuma, misali <code1>{{example1}}</code1> ko <code2>{{example2}}</code2> .",
+    "preview": "Preview (misali jagora)",
+    "enabled": "An kunna",
+    "saveRule": "Ajiye Sanarwa",
+    "createRule": "Ƙirƙiri Sanarwa",
+    "variables": {
+      "customerName": "Sunan jagora",
+      "customerMobile": "Jagorar wayar hannu",
+      "customerEmail": "Jagorar imel",
+      "registrationId": "ID na jagora",
+      "status": "Matsayi",
+      "subStatus": "Karamin matsayi",
+      "scheduleAt": "Kwanan wata & lokaci da aka tsara",
+      "assignedTo": "Mai amfani da aka sanyawa",
+      "updatedBy": "An sabunta ta",
+      "recipient": "Sunan mai karɓa",
+      "project": "Aikin",
+      "notes": "Sabon bayanin kula",
+      "partner": "Sunan abokin tarayya"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Nan da nan lokacin da aka saita matsayi",
+      "AT": "A lokacin da aka tsara",
+      "A1D": "Kwana 1 bayan lokacin da aka tsara (duba na gaba)"
+    },
+    "immediately": "Nan take",
+    "atScheduled": "A lokacin da aka tsara",
+    "before": {
+      "MINUTES_one": "Minti {{count}} kafin lokacin da aka tsara",
+      "MINUTES_other": "Mintuna {{count}} kafin lokacin da aka tsara",
+      "HOURS_one": "{{count}} awa kafin lokacin da aka tsara",
+      "HOURS_other": "Awanni {{count}} kafin lokacin da aka tsara",
+      "DAYS_one": "{{count}} kwana kafin lokacin da aka tsara",
+      "DAYS_other": "{{count}} kwanaki kafin lokacin da aka tsara",
+      "WEEKS_one": "{{count}} mako kafin lokacin da aka tsara",
+      "WEEKS_other": "{{count}} makonni kafin lokacin da aka tsara",
+      "MONTHS_one": "{{count}} wata kafin lokacin da aka tsara",
+      "MONTHS_other": "{{count}} watanni kafin lokacin da aka tsara",
+      "YEARS_one": "{{count}} shekara kafin lokacin da aka tsara",
+      "YEARS_other": "{{count}} shekaru kafin lokacin da aka tsara"
+    },
+    "after": {
+      "MINUTES_one": "Minti {{count}} bayan lokacin da aka tsara",
+      "MINUTES_other": "{{count}} mintuna bayan lokacin da aka tsara",
+      "HOURS_one": "{{count}} awa bayan lokacin da aka tsara",
+      "HOURS_other": "Awanni {{count}} bayan lokacin da aka tsara",
+      "DAYS_one": "{{count}} kwana bayan lokacin da aka tsara",
+      "DAYS_other": "{{count}} kwanaki bayan lokacin da aka tsara",
+      "WEEKS_one": "{{count}} mako bayan lokacin da aka tsara",
+      "WEEKS_other": "{{count}} makonni bayan lokacin da aka tsara",
+      "MONTHS_one": "{{count}} wata bayan lokacin da aka tsara",
+      "MONTHS_other": "{{count}} watanni bayan lokacin da aka tsara",
+      "YEARS_one": "{{count}} shekara bayan lokacin da aka tsara",
+      "YEARS_other": "{{count}} shekaru bayan lokacin da aka tsara"
+    },
+    "units": {
+      "MINUTES_one": "minti",
+      "MINUTES_other": "mintuna",
+      "HOURS_one": "awa",
+      "HOURS_other": "hours",
+      "DAYS_one": "rana",
+      "DAYS_other": "kwanaki",
+      "WEEKS_one": "mako",
+      "WEEKS_other": "makonni",
+      "MONTHS_one": "wata",
+      "MONTHS_other": "watanni",
+      "YEARS_one": "shekara",
+      "YEARS_other": "shekaru"
+    }
+  }
+}

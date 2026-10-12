@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Mga setting",
+    "noPermission": "Wala kang pahintulot na pamahalaan ang mga setting."
+  },
+  "categories": {
+    "lead": "Nangunguna",
+    "user": "Gumagamit",
+    "integrations": "Mga pagsasama"
+  },
+  "leadTabs": {
+    "fields": "Mga patlang",
+    "statuses": "Mga Status at Sub-Status",
+    "notifications": "Mga Notification at Scheduler"
+  },
+  "fields": {
+    "leadIntro": "I-configure ang form ng pagkuha ng lead: i-enable/i-disable ang mga field, markahan ang mga ito na kinakailangan, o idagdag ang sarili mong mga custom na field.",
+    "userIntro": "I-configure ang form na Magdagdag/Mag-edit ng Miyembro ng Koponan: paganahin/huwag paganahin ang mga field, markahan ang mga ito na kinakailangan, o idagdag ang iyong sariling mga custom na field.",
+    "addCustomField": "+ Magdagdag ng Custom na Field",
+    "fieldLabel": "Field Label",
+    "group": "Grupo",
+    "groupPlaceholderLead": "hal. Impormasyon sa Pagtatanong",
+    "groupPlaceholderUser": "hal. Mga Karagdagang Detalye",
+    "dataType": "Uri ng Data",
+    "options": "Mga Opsyon (pinaghihiwalay ng kuwit)",
+    "requiredLead": "Kinakailangan - dapat punan ito ng mga kasosyo sa iyong koponan para makapagrehistro ng lead",
+    "requiredUser": "Kinakailangan - dapat mapunan kapag nagdadagdag ng miyembro ng koponan",
+    "creating": "Ginagawa...",
+    "createField": "Lumikha ng Field",
+    "columns": {
+      "field": "Patlang",
+      "group": "Grupo",
+      "type": "Uri",
+      "required": "Kinakailangan",
+      "enabled": "Pinagana",
+      "kind": "Mabait"
+    },
+    "kind": {
+      "custom": "Custom",
+      "core": "Core (naka-lock)",
+      "standard": "Pamantayan"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Text",
+    "TEXTAREA": "Mahabang text",
+    "NUMBER": "Numero",
+    "CURRENCY": "Pera",
+    "DATE": "Petsa",
+    "SELECT": "Dropdown",
+    "LIST": "Listahan"
+  },
+  "picker": {
+    "searchPlaceholder": "Maghanap sa mga lead field...",
+    "summary": "{{shown}} ipinapakita · {{mandatory}} mandatory",
+    "mandatory": "Sapilitan",
+    "noMatch": "Walang tugmang field."
+  },
+  "statuses": {
+    "intro": "Ang iyong mga status ng lead at sub-status - kung ano ang hinihiling ng bawat isa (isang petsa at oras, mga field ng lead) kapag may nag-update ng lead dito.",
+    "add": "+ Magdagdag ng Katayuan",
+    "columns": {
+      "order": "Umorder",
+      "status": "Katayuan",
+      "subStatuses": "Mga Sub-Status",
+      "asksFor": "Humihingi ng",
+      "active": "Aktibo"
+    },
+    "moveUp": "Umakyat",
+    "moveDown": "Ilipat pababa",
+    "defaultBadge": "Default para sa mga bagong lead",
+    "bookingBadge": "Katayuan ng booking",
+    "asksForLabel": "Humihingi ng {{label}}",
+    "asksForDateTime": "Humihingi ng petsa at oras",
+    "none": "wala",
+    "dateTime": "Petsa at oras",
+    "scheduledOn": "sa {{names}}",
+    "fieldsSummary_one": "{{count}} field ( {{mandatory}} mandatory)",
+    "fieldsSummary_other": "{{count}} na mga field ( {{mandatory}} mandatory)",
+    "deleteConfirm": "Tanggalin ang status na \" {{name}} \"? Hindi na ito maaaring bawiin.",
+    "editTitle": "I-edit ang Katayuan - {{name}}",
+    "newTitle": "Bagong Katayuan",
+    "name": "Pangalan ng Katayuan",
+    "colour": "Kulay",
+    "active": "Aktibo",
+    "isDefault": "Default na status para sa mga bagong lead",
+    "isBooking": "Katayuan ng booking (itinakda ng Kumpletong Pag-book)",
+    "whenMoved": "Kapag ang isang lead ay inilipat sa katayuang ito",
+    "askSchedule": "Humingi ng petsa at oras (scheduler)",
+    "scheduleLabelPlaceholder": "Label, hal Bisitahin sa",
+    "fieldsToShow": "Mga lead na field na ipapakita sa form ng pag-update",
+    "subStatusesTitle": "Mga Sub-Status",
+    "subStatusesHint": "Ang bawat sub-status ay maaaring humingi ng sarili nitong petsa at oras at magdagdag ng sarili nitong mga field - ipinapakita sa itaas ng mga field ng status sa itaas.",
+    "subStatusName": "Pangalan ng sub-status",
+    "subFields": "Mga Patlang ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Label ng petsa at oras, hal. Tumawag muli sa",
+    "addSubStatus": "+ Magdagdag ng Sub-Status",
+    "saveStatus": "I-save ang Katayuan",
+    "createStatus": "Lumikha ng Katayuan"
+  },
+  "notifications": {
+    "intro": "Abisuhan ang mga tamang tao kapag naabot ng lead ang isang status - kaagad, o isang nakatakdang oras bago/pagkatapos ng petsa at oras na naka-iskedyul dito.",
+    "add": "+ Magdagdag ng Notification",
+    "columns": {
+      "notification": "Abiso",
+      "whenStatusIs": "Kapag ang Status ay",
+      "sends": "Nagpapadala",
+      "to": "Upang",
+      "via": "Sa pamamagitan ng",
+      "enabled": "Pinagana"
+    },
+    "anyStatus": "Kahit anong status",
+    "anySubStatus": "Anumang sub-status",
+    "inactiveOption": "{{name}} (hindi aktibo)",
+    "emptyRules": "Wala pang mga notification - magdagdag ng isa para alertuhan ang iyong team kapag naabot ng lead ang isang status.",
+    "jobs": {
+      "title": "Naka-iskedyul at Ipinadala",
+      "firesAt": "Sunog Sa",
+      "notification": "Abiso",
+      "lead": "Nangunguna",
+      "status": "Katayuan",
+      "details": "Mga Detalye",
+      "empty": "Wala pang nakaiskedyul o naipadala.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Nakabinbin",
+      "PROCESSING": "Pinoproseso",
+      "SENT": "Ipinadala",
+      "FAILED": "Nabigo",
+      "SKIPPED": "Nilaktawan",
+      "CANCELLED": "Kinansela"
+    },
+    "deliveryStatus": {
+      "SENT": "ipinadala",
+      "FAILED": "nabigo",
+      "SKIPPED": "nilaktawan"
+    },
+    "deliveryChannel": {
+      "IN_APP": "in-app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Nakatalagang user",
+      "owner": "May-ari",
+      "updatedBy": "Na-update ni",
+      "role": "Tungkulin: {{name}}"
+    },
+    "channels": {
+      "inApp": "In-app",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Tanggalin ang notification na \" {{name}} \"? Kinansela ang mga nakabinbing paalala mula rito.",
+    "testPrompt": "Magpadala ng pagsubok sa notification na ito sa iyong sarili (in-app) gamit ang aling lead ID ?",
+    "testSent": "Ipinadala sa iyong kampana: {{title}} {{message}}",
+    "headersInvalid": "Ang mga header Webhook ay dapat na wastong JSON , hal. {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "I-edit ang Notification",
+    "newTitle": "Bagong Notification",
+    "name": "Pangalan",
+    "namePlaceholder": "hal. Paalala sa pagbisita sa site",
+    "whenStatus": "Kapag ang katayuan ng lead ay",
+    "subStatus": "Sub-status",
+    "send": "Ipadala (taga-iskedyul)",
+    "custom": "Custom...",
+    "modeBefore": "bago ang nakatakdang oras",
+    "modeAfter": "pagkatapos ng nakatakdang oras",
+    "noScheduleWarning": "Hindi humihingi ng petsa at oras ang status na ito, kaya hindi kailanman gagana ang notification na \"bago/sa/pagkatapos ng naka-iskedyul na oras.\"",
+    "noScheduleFix": "I-on <strong>ang Humingi ng petsa at oras</strong> para dito sa ilalim ng Mga Status at Sub-Status, o ipadala Kaagad.",
+    "sendTo": "Ipadala sa (anumang kumbinasyon)",
+    "recipientAssigned": "Nakatalagang user (may-ari ng lead)",
+    "recipientOwner": "May-ari / admin ng account",
+    "recipientUpdatedBy": "Taong nag-update ng status",
+    "everyoneWithRole": "Lahat ng may papel",
+    "specificUsers": "Mga partikular na user (aktibo)",
+    "inactiveNever": "Ang mga hindi aktibong user ay hindi kailanman makakatanggap ng mga notification, kahit na pinili.",
+    "deliverVia": "Ihatid sa pamamagitan ng",
+    "channelInApp": "In-app (kampana)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS provider)",
+    "emailHint": "Napupunta ang email sa email address ng bawat tatanggap at nangangailangan ng SMTP set up sa server (backend/.env); hanggang pagkatapos ay ang mga pagpapadala ng email ay naka-log bilang nilaktawan.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Mga Header ( JSON )",
+    "content": "Nilalaman ng notification",
+    "title": "Pamagat",
+    "message": "Mensahe",
+    "insertIntoTitle": "Ipasok sa Pamagat",
+    "insertIntoMessage": "Ipasok sa Mensahe",
+    "anyLeadField": "Gumagana rin ang anumang field ng lead, hal <code1>{{example1}}</code1> o <code2>{{example2}}</code2> .",
+    "preview": "Preview (sample lead)",
+    "enabled": "Pinagana",
+    "saveRule": "I-save ang Notification",
+    "createRule": "Lumikha ng Notification",
+    "variables": {
+      "customerName": "Pangalan ng lead",
+      "customerMobile": "Pangunahing mobile",
+      "customerEmail": "Pangunahing email",
+      "registrationId": "Lead ID",
+      "status": "Katayuan",
+      "subStatus": "Sub-status",
+      "scheduleAt": "Naka-iskedyul na petsa at oras",
+      "assignedTo": "Nakatalagang user",
+      "updatedBy": "Na-update ni",
+      "recipient": "Pangalan ng tatanggap",
+      "project": "Proyekto",
+      "notes": "Pinakabagong tala",
+      "partner": "Pangalan ng kasosyo"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Kaagad kapag naitakda ang katayuan",
+      "AT": "Sa nakatakdang oras",
+      "A1D": "1 araw pagkatapos ng nakatakdang oras (follow-up check)"
+    },
+    "immediately": "Kaagad",
+    "atScheduled": "Sa nakatakdang oras",
+    "before": {
+      "MINUTES_one": "{{count}} minuto bago ang nakatakdang oras",
+      "MINUTES_other": "{{count}} minuto bago ang nakatakdang oras",
+      "HOURS_one": "{{count}} oras bago ang nakaiskedyul na oras",
+      "HOURS_other": "{{count}} na oras bago ang nakaiskedyul na oras",
+      "DAYS_one": "{{count}} araw bago ang nakatakdang oras",
+      "DAYS_other": "{{count}} araw bago ang nakaiskedyul na oras",
+      "WEEKS_one": "{{count}} linggo bago ang nakatakdang oras",
+      "WEEKS_other": "{{count}} na linggo bago ang nakatakdang oras",
+      "MONTHS_one": "{{count}} buwan bago ang nakaiskedyul na oras",
+      "MONTHS_other": "{{count}} na buwan bago ang nakaiskedyul na oras",
+      "YEARS_one": "{{count}} taon bago ang nakatakdang oras",
+      "YEARS_other": "{{count}} taon bago ang nakatakdang oras"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minuto pagkatapos ng nakatakdang oras",
+      "MINUTES_other": "{{count}} minuto pagkatapos ng nakatakdang oras",
+      "HOURS_one": "{{count}} oras pagkatapos ng nakatakdang oras",
+      "HOURS_other": "{{count}} na oras pagkatapos ng naka-iskedyul na oras",
+      "DAYS_one": "{{count}} araw pagkatapos ng nakatakdang oras",
+      "DAYS_other": "{{count}} araw pagkatapos ng nakatakdang oras",
+      "WEEKS_one": "{{count}} linggo pagkatapos ng nakatakdang oras",
+      "WEEKS_other": "{{count}} na linggo pagkatapos ng nakatakdang oras",
+      "MONTHS_one": "{{count}} buwan pagkatapos ng nakatakdang oras",
+      "MONTHS_other": "{{count}} na buwan pagkatapos ng nakaiskedyul na oras",
+      "YEARS_one": "{{count}} taon pagkatapos ng nakatakdang oras",
+      "YEARS_other": "{{count}} taon pagkatapos ng naka-iskedyul na oras"
+    },
+    "units": {
+      "MINUTES_one": "minuto",
+      "MINUTES_other": "minuto",
+      "HOURS_one": "oras",
+      "HOURS_other": "oras",
+      "DAYS_one": "araw",
+      "DAYS_other": "araw",
+      "WEEKS_one": "linggo",
+      "WEEKS_other": "linggo",
+      "MONTHS_one": "buwan",
+      "MONTHS_other": "buwan",
+      "YEARS_one": "taon",
+      "YEARS_other": "taon"
+    }
+  }
+}

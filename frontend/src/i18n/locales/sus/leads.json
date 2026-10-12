@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "N ma yarerati",
+    "signedInAs": "Wo soxi {{name}} ( {{partnerId}} ) · waxati naxan ma senxi {{timezone}}",
+    "addLead": "+ Plomb sa a fari",
+    "tabs": {
+      "all": "birin ( {{count}} )",
+      "pending": "Pending ( {{count}} )",
+      "booked": "Booked ( {{count}} )"
+    },
+    "searchPlaceholder": "Wo xili fen, wo xa telefone, xa na mu wo ID sEbE ...",
+    "manageColumns": "Kolonee ra yamarife",
+    "rowsPerPage": "sEti keren keren ma",
+    "registrationId": "Wo ID sEbE fe",
+    "emptyState": "Mixi yo mu na sinden - wo xa wo xa singe xili sEbE.",
+    "noMatch": "Mixi yo mu na naxan na yi filtree ra.",
+    "showing": "{{from}} - {{to}} of {{total}} masen gni",
+    "actions": {
+      "preview": "Wo xa a mato a nun wo xa a rafala mafuren",
+      "history": "Féfori",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Khili"
+    },
+    "pagination": {
+      "first": "Yi pirinti singe",
+      "previous": "yi pirinti singe",
+      "next": "Yi pirinti naxan fama",
+      "last": "yi pirinti dOnxE"
+    }
+  },
+  "columns": {
+    "status": "Tonyi ya yèrèki",
+    "assignTo": "A fi",
+    "booked": "Booked",
+    "protectionUntil": "makanta han"
+  },
+  "booking": {
+    "booked": "Booked",
+    "pending": "Ana mamètifé"
+  },
+  "assign": {
+    "unassigned": "Unassigned",
+    "owner": "{{name}} (Owner)",
+    "inactive": "{{name}} (a mu walima)",
+    "unknownUser": "Mixi kolon xi",
+    "assignedTo": "A fixi {{name}} nan ma"
+  },
+  "form": {
+    "addTitle": "Plomb sa a fari",
+    "editTitle": "Edit Lead",
+    "noPermissionAdd": "Wo mu lan ma wo xa wo xili sEbE.",
+    "noPermissionEdit": "Wo mu nOma wo xa yabi raso de.",
+    "selectPlaceholder": "Sougandi fé...",
+    "commaSeparated": "Comma itaxunxi",
+    "phonePlaceholder": "Telefoni kOde",
+    "countryCode": "Bɔxi kode"
+  },
+  "project": {
+    "none": "Projet yo mu na sinden (a mu falaxi)",
+    "notInList": "{{project}} (naxan mu na projet lisi kui)"
+  },
+  "journey": {
+    "customer": "I magnakhoun",
+    "currentOwner": "Kanyi naxan na yi waxati",
+    "protectionExpiry": "makanta tEmui",
+    "leadStatus": "yarerati ki",
+    "scheduled": "A rafala xi",
+    "assignedTo": "A fixi",
+    "referral": "Rasife",
+    "builderReason": "Banxi tife xa fe ra: {{reason}}",
+    "bookedHint": "A sEbExi banxi ti nan ma - wali sare bara siga banxi ti ma; wo xa attribution nun wo xa komisEri sOtOxi nan na.",
+    "notBookedHint": "Bookings na lan ma banxi ti nan ma e to tin na referansi ra.",
+    "quickUpdate": "Fe nEnE mafuren",
+    "leadDetails": "Lead Details",
+    "progressHistory": "Taruxui naxan sigaxi yare",
+    "timesIn": "(waxati {{timezone}} )",
+    "backToMyLeads": "Wo gbilen n ma kirayae ma",
+    "editLead": "Edit Lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "A mu rasanbaxi (projet yo mu na)",
+    "PENDING_BUILDER": "banxi ti mamE ti",
+    "ACCEPTED": "A tinxi banxi ti ra",
+    "REJECTED": "Banxi tife bara tondi"
+  },
+  "preview": {
+    "ariaLabel": "Lead preview",
+    "title": "Lead Preview",
+    "source": "Abili",
+    "location": "Asadé",
+    "scheduled": "A rafala xi",
+    "registered": "A xili sEbExi",
+    "latestNote": "Note dOnxE",
+    "quickUpdate": "Fe nEnE mafuren",
+    "fullDetails": "A birin",
+    "editLead": "Edit Lead",
+    "history": "Féfori"
+  },
+  "quick": {
+    "assignedTo": "A fixi",
+    "status": "Tonyi ya yèrèki",
+    "subStatus": "Sub-Status",
+    "selectSubStatus": "Sub-status sugandi...",
+    "none": "Mikhi yo",
+    "scheduledAt": "A rafala xi",
+    "localTime": "yire waxati",
+    "note": "Sèbè",
+    "notePlaceholder": "Munse rabaxi yi xili ra / yi sigafe ra? (Tékou mou Nakhan na)",
+    "updateStatus": "Status xunmasafe",
+    "statusUpdated": "A xa fe masarama",
+    "bookedLocked": "Yi buki bara sEbE - a xa fe mu nOma masarade sOnOn.",
+    "viewOnly": "Wo nOma yi sEbEli tode, kOnO wo xa wali mu nOma a rawalide."
+  },
+  "history": {
+    "title": "Taruxui - {{registrationId}}",
+    "tabs": {
+      "all": "Ebirin",
+      "status": "Tonyi ya yèrèki",
+      "assignment": "Siguè",
+      "notes": "Note"
+    },
+    "doneBy": "A rabaxi {{actor}} nan na",
+    "system": "Arabaki",
+    "platforms": {
+      "System": "Arabaki",
+      "External": "A fari",
+      "Web": "Web",
+      "Mobile": "Cé nakhan na makha"
+    },
+    "added": "a saxi",
+    "updated": "a nEnE",
+    "empty": "(cemakoui)",
+    "noHistory": "Taruxui yo mu na yi buki kui sinden.",
+    "fieldLabels": {
+      "stage": "Tonyi ya yèrèki",
+      "subStatus": "Sub-Status",
+      "scheduledAt": "Temoui konticé",
+      "notes": "Note",
+      "assignedTo": "A fixi"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Wo bore xili sEbExi sOtOxi",
+      "DUPLICATE_CHECK_COMPLETED": "Duplicate check bara ɲɔn - duplicate active yo mu toxi",
+      "REGISTRATION_ACCEPTED": "Wo xa wo xili sEbE",
+      "PROTECTION_GRANTED_one": "{{count}} lOxE makantafe fixi",
+      "PROTECTION_GRANTED_other": "{{count}} lOxE makantafe fixi",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partnerId}} xa sEbEli firin nde tondixi",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} yire ra yabuxi",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} yire nEnE",
+      "STAGE_UPDATED": "A xa fe masarama han {{status}}",
+      "LEAD_ASSIGNED": "A fixi {{name}} nan ma",
+      "LEAD_UNASSIGNED": "Unassigned",
+      "BOOKING_COMPLETED": "Booking bara kamali",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Na wali sare bara masara banxi ti ma",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partner attribution preserved",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komisiyon lanma a xa raba",
+      "HANDOVER_COMPLETED": "Handover bara kamali",
+      "REFERRAL_ACCEPTED": "Builder bara tin na referansi ra",
+      "REFERRAL_REJECTED": "Builder naxa na referansi tondi. Xaxili: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin bara duplicate protection ra mini a singe ra. Xaxili: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin bara xili sa {{from}} ma sigafe {{to}} . Xaxili: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Kolonee ra yamarife",
+    "hint": "Wo a ra goro ala ko wo xa a rawali · wo xa a mato ala ko wo xa a masen",
+    "showAll": "birin masen",
+    "resetDefault": "Wo xa gbilen a singe ma"
+  },
+  "filters": {
+    "title": "Filtre",
+    "allProjects": "Projet birin",
+    "any": "Afindi cécéra",
+    "noFields": "Yire gbEtE yo mu na naxan nOma lande (Settings > Lead).",
+    "clearAll": "Wo birin kana"
+  },
+  "phone": {
+    "MISSING": "Telefone kEdi nan lan ma.",
+    "INVALID": "Wo xa telefone kEdi sEbE.",
+    "TOO_SHORT": "Telefoni kOde xurun.",
+    "TOO_LONG": "Telefoni kOde xungbe nan a ra.",
+    "INVALID_FOR_COUNTRY": "Yi telefone kEdi mu lanma {{country}} bE.",
+    "COUNTRY_MISMATCH": "Wo xa bOxi kOde sugandi.",
+    "NOT_MOBILE": "Wo xa wo xa telefone kEdi sa, wo naxa kObiri sa."
+  }
+}

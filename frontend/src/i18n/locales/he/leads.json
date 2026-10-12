@@ -1,0 +1,190 @@
+{
+  "list": {
+    "title": "הלידים שלי",
+    "signedInAs": "מחובר בתור {{name}} ( {{partnerId}} ) · פעמים מוצגות ב {{timezone}}",
+    "addLead": "+ הוסף לידים",
+    "tabs": {
+      "all": "הכל ( {{count}} )",
+      "pending": "בהמתנה ( {{count}} )",
+      "booked": "הוזמן ( {{count}} )"
+    },
+    "searchPlaceholder": "חפש לפי שם, נייד או ID רישום...",
+    "manageColumns": "נהל עמודות",
+    "rowsPerPage": "שורות בעמוד",
+    "registrationId": "מזהה ID",
+    "emptyState": "עדיין אין לידים - רשם את הראשון שלך.",
+    "noMatch": "אין לידים התואמים את המסננים האלה.",
+    "showing": "מציג {{from}} - {{to}} מתוך {{total}} ערכים",
+    "actions": {
+      "preview": "תצוגה מקדימה ועדכון מהיר",
+      "history": "הִיסטוֹרִיָה",
+      "email": "אֶלֶקטרוֹנִי",
+      "whatsapp": "WhatsApp",
+      "call": "שִׂיחָה"
+    },
+    "pagination": {
+      "first": "עמוד ראשון",
+      "previous": "העמוד הקודם",
+      "next": "העמוד הבא",
+      "last": "עמוד אחרון"
+    }
+  },
+  "columns": {
+    "status": "סטָטוּס",
+    "assignTo": "הקצה ל",
+    "booked": "הוזמן",
+    "protectionUntil": "הגנה עד"
+  },
+  "booking": {
+    "booked": "הוזמן",
+    "pending": "תָלוּי וְעוֹמֵד"
+  },
+  "assign": {
+    "unassigned": "לא הוקצה",
+    "owner": "{{name}} (בעלים)",
+    "inactive": "{{name}} (לא פעיל)",
+    "unknownUser": "משתמש לא ידוע",
+    "assignedTo": "הוקצה ל {{name}}"
+  },
+  "form": {
+    "addTitle": "הוסף לידים",
+    "editTitle": "ערוך ליד",
+    "noPermissionAdd": "אין לך הרשאה לרשום לידים.",
+    "noPermissionEdit": "אין לך הרשאה לערוך לידים.",
+    "selectPlaceholder": "לִבחוֹר...",
+    "commaSeparated": "פסיק מופרד",
+    "phonePlaceholder": "מספר טלפון",
+    "countryCode": "קוד מדינה"
+  },
+  "project": {
+    "none": "אין עדיין פרויקט (לא התייחס)",
+    "notInList": "{{project}} (לא ברשימת הפרויקטים)"
+  },
+  "journey": {
+    "customer": "לָקוּחַ",
+    "currentOwner": "בעלים נוכחי",
+    "protectionExpiry": "תפוגת הגנה",
+    "leadStatus": "סטטוס לידים",
+    "scheduled": "מתוזמן",
+    "assignedTo": "הוקצה ל",
+    "referral": "הפניה",
+    "builderReason": "הסיבה של בונה: {{reason}}",
+    "bookedHint": "הוזמן על ידי הקבלן - הבעלות התפעולית עברה לבונה; הזכאות שלך לשיוך ולעמלה נשמרת.",
+    "notBookedHint": "ההזמנות מאושרות על ידי הקבלן ברגע שהוא מקבל את ההפניה.",
+    "quickUpdate": "עדכון מהיר",
+    "leadDetails": "פרטי לידים",
+    "progressHistory": "היסטוריית התקדמות",
+    "timesIn": "(זמנים ב {{timezone}} )",
+    "backToMyLeads": "חזרה ללידים שלי",
+    "editLead": "ערוך ליד"
+  },
+  "referral": {
+    "NOT_REFERRED": "לא מופנה (ללא פרויקט)",
+    "PENDING_BUILDER": "מחכה לבנאי",
+    "ACCEPTED": "מקובל על ידי הקבלן",
+    "REJECTED": "נדחה על ידי הקבלן"
+  },
+  "preview": {
+    "ariaLabel": "תצוגה מקדימה של לידים",
+    "title": "תצוגה מקדימה של לידים",
+    "source": "מָקוֹר",
+    "location": "מִקוּם",
+    "scheduled": "מתוזמן",
+    "registered": "רָשׁוּם",
+    "latestNote": "הערה אחרונה",
+    "quickUpdate": "עדכון מהיר",
+    "fullDetails": "פרטים מלאים",
+    "editLead": "ערוך ליד",
+    "history": "הִיסטוֹרִיָה"
+  },
+  "quick": {
+    "assignedTo": "הוקצה ל",
+    "status": "סטָטוּס",
+    "subStatus": "תת-סטטוס",
+    "selectSubStatus": "בחר סטטוס משנה...",
+    "none": "אַף לֹא אֶחָד",
+    "scheduledAt": "מתוכנן בשעה",
+    "localTime": "זמן מקומי",
+    "note": "פֶּתֶק",
+    "notePlaceholder": "מה קרה בשיחה/ביקור הזה? (אופציונלי)",
+    "updateStatus": "עדכון סטטוס",
+    "statusUpdated": "הסטטוס עודכן",
+    "bookedLocked": "ליד זה הוזמן - לא ניתן עוד לשנות את הסטטוס שלו.",
+    "viewOnly": "אתה יכול לראות ליד זה, אבל התפקיד שלך לא יכול לעדכן אותו."
+  },
+  "history": {
+    "title": "היסטוריה - {{registrationId}}",
+    "tabs": {
+      "all": "כֹּל",
+      "status": "סטָטוּס",
+      "assignment": "מְשִׁימָה",
+      "notes": "הערות"
+    },
+    "doneBy": "נעשה על ידי {{actor}}",
+    "system": "מַעֲרֶכֶת",
+    "platforms": {
+      "System": "מַעֲרֶכֶת",
+      "External": "חִיצוֹנִי",
+      "Web": "אינטרנט",
+      "Mobile": "נייד"
+    },
+    "added": "הוסיף",
+    "updated": "מְעוּדכָּן",
+    "empty": "(רֵיק)",
+    "noHistory": "אין עדיין היסטוריה בקטגוריה זו.",
+    "fieldLabels": {
+      "stage": "סטָטוּס",
+      "subStatus": "תת-סטטוס",
+      "scheduledAt": "לוּחַ זְמַנִים",
+      "notes": "הערות",
+      "assignedTo": "הוקצה ל"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "התקבלה רישום שותף",
+      "DUPLICATE_CHECK_COMPLETED": "בדיקת כפילות הושלמה - לא נמצא כפיל פעיל",
+      "REGISTRATION_ACCEPTED": "ההרשמה התקבלה",
+      "PROTECTION_GRANTED_one": "ניתנה הגנה של {{count}} ימים",
+      "PROTECTION_GRANTED_two": "ניתנה הגנה של {{count}} ימים",
+      "PROTECTION_GRANTED_other": "ניתנה הגנה של {{count}} ימים",
+      "REGISTRATION_ATTEMPT_REJECTED": "ניסיון רישום כפול על ידי {{partnerId}} נדחה",
+      "LEAD_DETAILS_UPDATED_one": "שדה {{count}} עודכן",
+      "LEAD_DETAILS_UPDATED_two": "עודכנו {{count}} שדות",
+      "LEAD_DETAILS_UPDATED_other": "עודכנו {{count}} שדות",
+      "STAGE_UPDATED": "הסטטוס עודכן ל {{status}}",
+      "LEAD_ASSIGNED": "הוקצה ל {{name}}",
+      "LEAD_UNASSIGNED": "לא הוקצה",
+      "BOOKING_COMPLETED": "ההזמנה הושלמה",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "הבעלות התפעולית הועברה לבונה",
+      "PARTNER_ATTRIBUTION_PRESERVED": "ייחוס השותף נשמר",
+      "COMMISSION_ELIGIBILITY_CREATED": "נוצרה זכאות לנציבות",
+      "HANDOVER_COMPLETED": "המסירה הושלמה",
+      "REFERRAL_ACCEPTED": "בונה קיבל את ההפניה",
+      "REFERRAL_REJECTED": "בונה דחה את הפניה. סיבה: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "מנהל מערכת שחרר הגנה כפולה מוקדם. סיבה: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "מנהל המערכת הקצה מחדש את הרישום מ {{from}} ל- {{to}} . סיבה: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "נהל עמודות",
+    "hint": "גרור לסדר מחדש · סמן כדי להציג",
+    "showAll": "הצג הכל",
+    "resetDefault": "אפס לברירת מחדל"
+  },
+  "filters": {
+    "title": "מסננים",
+    "allProjects": "כל הפרויקטים",
+    "any": "כֹּל",
+    "noFields": "עדיין לא מופעלים שדות אחרים שניתנים לסינון (הגדרות > ליד).",
+    "clearAll": "נקה הכל"
+  },
+  "phone": {
+    "MISSING": "נדרש מספר טלפון.",
+    "INVALID": "נא להזין מספר טלפון חוקי.",
+    "TOO_SHORT": "מספר הטלפון קצר מדי.",
+    "TOO_LONG": "מספר הטלפון ארוך מדי.",
+    "INVALID_FOR_COUNTRY": "מספר הטלפון הזה אינו תקף עבור {{country}} .",
+    "COUNTRY_MISMATCH": "אנא בחר את קוד המדינה הנכון.",
+    "NOT_MOBILE": "נא להזין מספר נייד, לא טלפון קווי."
+  }
+}

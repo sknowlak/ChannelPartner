@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Byggiportalur",
+    "referrals": "Tilvísingar",
+    "builderLogin": "Innritan av byggiharra",
+    "partnerLogin": "Innritan av rásarsamstarvsfelaga"
+  },
+  "login": {
+    "title": "Byggiharri skriva inn",
+    "hint": "Byggikontur eru stovnaðar av Leadrat . Spyr tín umsitaran, um tú ikki hevur ein."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Bíða eftir tínari avgerð",
+    "ACCEPTED": "Viðtikið",
+    "REJECTED": "Vrakað"
+  },
+  "list": {
+    "title": "Tilvísingar",
+    "allProjects": "Allar verkætlanir",
+    "allStatuses": "Allar støður",
+    "count_one": "{{count}} tilvísing",
+    "count_other": "{{count}} tilvísingar",
+    "columns": {
+      "referral": "Tilvísing",
+      "customer": "Viðskiftafólk",
+      "project": "Verkætlan",
+      "sourcePartner": "Keldasamstarvsfelagi",
+      "status": "Støða",
+      "booking": "Bílegging",
+      "registered": "Skrásett"
+    },
+    "booked": "Bílagt",
+    "empty": "Ongar tilvísingar enn."
+  },
+  "detail": {
+    "customer": "Viðskiftafólk",
+    "sourcePartner": "Keldasamstarvsfelagi",
+    "attributionNote": "(attributión - kann ikki broytast)",
+    "leadStatus": "Leiðsstøða",
+    "protectedUntil": "Vard til 2019.",
+    "referral": "Tilvísing",
+    "reason": "Orsøk: {{reason}}",
+    "booking": "Bílegging",
+    "bookedOwner": "Bílagt - tú ert rakstrareigarin",
+    "notBooked": "Ikki bílagt",
+    "sharedAfterBooking": "Deilt eftir bílegging",
+    "accept": "Góðtaka tilvísing",
+    "confirmBooking": "Vátta bílegging",
+    "reject": "Vraka tilvísing",
+    "rejectReasonLabel": "Orsøk til at vraka (víst samstarvsfelaganum) *",
+    "rejectConfirm": "Kveistra burtur",
+    "confirmBookingPrompt": "Vátta bíleggingina? Rakstrarligi ognarrætturin flytur til tín og samstarvsfelagin gerst rættur til provisjón.",
+    "notice": {
+      "booked": "Bílegging váttað.",
+      "accepted": "Tilvísing góðtikin.",
+      "rejected": "Tilvísing vrakað."
+    },
+    "backToReferrals": "Aftur til tilvísingar"
+  },
+  "history": {
+    "title": "Søga",
+    "actor": {
+      "system": "Skipan",
+      "partner": "Rásarsamstarvsfelagi",
+      "admin": "Leadrat umsitari"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Samstarvsfelagaskráseting móttikin",
+      "DUPLICATE_CHECK_COMPLETED": "Tvítøkukanning liðug - einki virkið tvítøk funnið",
+      "REGISTRATION_ACCEPTED": "Tilmelding er góðtikin",
+      "PROTECTION_GRANTED_one": "{{count}} -dagsvernd veitt",
+      "PROTECTION_GRANTED_other": "{{count}} -dagsvernd veitt",
+      "STAGE_UPDATED": "Støða dagførd til {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Dagførdur {{count}} teigurin",
+      "LEAD_DETAILS_UPDATED_other": "Dagførdir {{count}} teigar",
+      "LEAD_ASSIGNED": "Tilnevnt til {{name}}",
+      "LEAD_UNASSIGNED": "Ótilskilað",
+      "REFERRAL_ACCEPTED": "Byggiharri tók undir við tilvísingini",
+      "REFERRAL_REJECTED": "Builder noktaði tilvísingini. Orsøk: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Tvítøk av skrásetingarroynd hjá {{partner}} vrakað",
+      "BOOKING_COMPLETED": "Bílegging er liðug",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Rakstrarligi ognarrætturin fluttur til Byggiharra",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Samstarvsfelagatilskriving varðveitt",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kommissiónsrættur er stovnaður",
+      "HANDOVER_COMPLETED": "Handanin liðug",
+      "ADMIN_PROTECTION_RELEASED": "Admin gav út dupultverju tíðliga. Orsøk: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin hevur umskipað tilmeldingina frá {{from}} til {{to}} . Orsøk: {{reason}}"
+    }
+  }
+}

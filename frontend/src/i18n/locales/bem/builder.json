@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Icifulo ca Mukuuli",
+    "referrals": "Ukutuma",
+    "builderLogin": "Ukwingila kwa Mukuuli",
+    "partnerLogin": "Ukwingila kwa Mubomfi wa Cishilano"
+  },
+  "login": {
+    "title": "Ukuingila kwakwa kapanga",
+    "hint": "Ama akaunti ya bashimapepo yapangilwe na Leadrat . Busheni umukalamba wenu nga tamukwete."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Ukulolela ifyo mwapingulapo",
+    "ACCEPTED": "Casuminishiwa",
+    "REJECTED": "Cakanishiwa"
+  },
+  "list": {
+    "title": "Ukutuma",
+    "allProjects": "Imilimo yonse",
+    "allStatuses": "Imibele yonse",
+    "count_one": "{{count}} ukutuma",
+    "count_other": "{{count}} ukutuma",
+    "columns": {
+      "referral": "Ukutuma",
+      "customer": "Kashita",
+      "project": "Icakucita",
+      "sourcePartner": "Umubomfi wa ntulo",
+      "status": "Imibele",
+      "booking": "Ukupekanya",
+      "registered": "Ukulembeshiwa"
+    },
+    "booked": "Icalembelwe",
+    "empty": "Tapali abatumwa nomba."
+  },
+  "detail": {
+    "customer": "Kashita",
+    "sourcePartner": "Umubomfi wa ntulo",
+    "attributionNote": "(ukupeelwa - tekuti kwalulwe)",
+    "leadStatus": "Umusango wa Kutungulula",
+    "protectedUntil": "Ukucingililwa Ukufika",
+    "referral": "Ukutuma",
+    "reason": "Umulandu: {{reason}}",
+    "booking": "Ukupekanya",
+    "bookedOwner": "Ukulembesha - ni mwe umwine wa mibombele",
+    "notBooked": "Tacilembelwe",
+    "sharedAfterBooking": "Ukupeelwa panuma ya kupekanya",
+    "accept": "Pokeleleni Ukutuma",
+    "confirmBooking": "Shininkisheni ukusuminisha",
+    "reject": "Kaana Ukutuma",
+    "rejectReasonLabel": "Icilengele ukukaana (icalangishiwa ku munankwe) *",
+    "rejectConfirm": "Ukukana",
+    "confirmBookingPrompt": "Bushe kuti mwashininkisha ukubuuka? Ubunini bwa mulimo bulaya kuli imwe kabili uo mulebomba nankwe aba uwalinga ukupeelwa umulimo.",
+    "notice": {
+      "booked": "Ukubuka kwashininkishiwa.",
+      "accepted": "Ukutuma kwasuminishiwa.",
+      "rejected": "Ukutuma kwakanishiwa."
+    },
+    "backToReferrals": "Ukubwelela ku fyakutuma"
+  },
+  "history": {
+    "title": "Ilyashi lyakale",
+    "actor": {
+      "system": "Imibombele",
+      "partner": "Umubomfi wa pa musebo",
+      "admin": "Katungulula Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Ukulembesha kwa bacibusa kwapokelelwe",
+      "DUPLICATE_CHECK_COMPLETED": "Ukuceeceeta ukwabwekeshiwapo kwapwishiwa - tapali ukwabwekeshiwapo ukwasangwa",
+      "REGISTRATION_ACCEPTED": "Ukulembesha kwasuminishiwa",
+      "PROTECTION_GRANTED_one": "{{count}} -ubucingililo bwa bushiku bwapeelwa",
+      "PROTECTION_GRANTED_other": "{{count}} -ubucingililo bwa bushiku bwapeelwa",
+      "STAGE_UPDATED": "Icifulo calungishiwa ukufika kuli {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Iciputulwa icalungishiwa {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "Ifiputulwa ifyapya {{count}}",
+      "LEAD_ASSIGNED": "Ukupeelwa kuli {{name}}",
+      "LEAD_UNASSIGNED": "Tacipeelwe",
+      "REFERRAL_ACCEPTED": "Kakuuli asumine ukutuma",
+      "REFERRAL_REJECTED": "Umukuuli alikene ukutuma. Umulandu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Ukubwekeshapo ukuesha ukulembesha ukwa {{partner}} kwakanishiwa",
+      "BOOKING_COMPLETED": "Ukupekanya kwapwa",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Ubuni bwa mibombele bwasendelwe kuli Kakuula",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Ukupeelwa kwa cibusa kwasungwa",
+      "COMMISSION_ELIGIBILITY_CREATED": "Ukulinga kwa Komishini kwapangwa",
+      "HANDOVER_COMPLETED": "Ukupeela kwapwishiwa",
+      "ADMIN_PROTECTION_RELEASED": "Admin alifumishe ubucingililo bwapalana bwangu. Umulandu: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Katungulula alibwekeshepo ukulembesha ukufuma kuli {{from}} ukufika kuli {{to}} . Umulandu: {{reason}}"
+    }
+  }
+}

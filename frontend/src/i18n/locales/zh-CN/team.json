@@ -1,0 +1,83 @@
+{
+  "title": "管理团队",
+  "tabs": {
+    "members": "团队成员",
+    "roles": "角色和权限",
+    "profile": "我的个人资料"
+  },
+  "roles": {
+    "owner": "所有者",
+    "member": "队员"
+  },
+  "profile": {
+    "updated": "个人资料已更新。",
+    "basicInfo": "基本信息",
+    "organisationInfo": "组织信息",
+    "preferences": "偏好设置",
+    "companyName": "公司/组织名称",
+    "city": "城市",
+    "state": "状态",
+    "currencyHelp": "用于显示整个团队的预算和预订价值。",
+    "useDeviceTimezone": "使用设备时区 ( {{timezone}} )",
+    "securityRole": "安全与角色",
+    "newPassword": "新密码（留空保持不变）",
+    "currentPassword": "当前密码",
+    "memberSince": "会员自",
+    "languageSaved": "保存到您帐户的语言 - 它将在您登录的每台设备上使用。"
+  },
+  "members": {
+    "intro": "添加、编辑、停用或删除团队中的人员 - 他们共享对相同潜在客户的访问权限。",
+    "noPermission": "您无权添加、编辑或删除团队成员。",
+    "addNew": "+ 添加新用户",
+    "passwordLabel": "{{label}} （最少 8 个字符）",
+    "rolePermissions": "角色和权限",
+    "adding": "添加...",
+    "addMember": "添加团队成员",
+    "tabAll": "全部 ( {{count}} )",
+    "tabActive": "活跃 ( {{count}} )",
+    "tabInactive": "不活动 ( {{count}} )",
+    "searchPlaceholder": "搜索名称或用户名...",
+    "allTimezones": "所有时区",
+    "perPage": "每页条目数",
+    "contact": "接触",
+    "added": "额外",
+    "toggleActive": "活动 - 单击以停用",
+    "toggleInactive": "未激活 - 单击以激活",
+    "empty": "还没有团队成员。",
+    "noMatch": "没有团队成员符合这些过滤器。",
+    "showing": "显示{{from}} - {{to}}共{{total}}个条目",
+    "firstPage": "第一页",
+    "previousPage": "上一页",
+    "nextPage": "下一页",
+    "lastPage": "最后一页"
+  },
+  "editMember": {
+    "title": "编辑用户",
+    "noPermission": "您无权编辑团队成员。",
+    "backToTeam": "返回团队",
+    "cantChangeOwn": "你无法改变自己的角色或地位。",
+    "needsManageRoles": "更改成员的角色需要管理角色权限。",
+    "addedBy": "添加者",
+    "addedOn": "已添加"
+  },
+  "rolesPage": {
+    "intro": "超级管理员、管理员和经理是内置的，无法更改 - 为其他角色创建自定义角色。",
+    "noPermission": "您无权管理角色。",
+    "createCustom": "+ 创建自定义角色",
+    "roleName": "角色名称",
+    "permissions": "权限",
+    "members": "会员",
+    "creating": "创造...",
+    "createRole": "创建角色",
+    "systemRole": "系统角色",
+    "builtIn": "内置",
+    "empty": "还没有角色。"
+  },
+  "permissions": {
+    "MANAGE_LEADS": "管理潜在客户（创建、进展、预订）",
+    "MANAGE_TEAM": "管理团队（添加、编辑、删除成员）",
+    "MANAGE_ROLES": "管理角色和权限",
+    "MANAGE_SETTINGS": "管理设置（潜在客户表单字段）",
+    "none": "无权限"
+  }
+}

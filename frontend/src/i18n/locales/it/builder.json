@@ -1,0 +1,93 @@
+{
+  "shell": {
+    "portal": "Portale del costruttore",
+    "referrals": "Referral",
+    "builderLogin": "Accesso al costruttore",
+    "partnerLogin": "Accesso al partner di canale"
+  },
+  "login": {
+    "title": "Accedi al costruttore",
+    "hint": "Gli account costruttore sono creati da Leadrat . Chiedi al tuo amministratore se non ne hai uno."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Aspetto la tua decisione",
+    "ACCEPTED": "Accettato",
+    "REJECTED": "Respinto"
+  },
+  "list": {
+    "title": "Referral",
+    "allProjects": "Tutti i progetti",
+    "allStatuses": "Tutti gli stati",
+    "count_one": "{{count}} riferimento",
+    "count_many": "{{count}} referral",
+    "count_other": "{{count}} referral",
+    "columns": {
+      "referral": "Rinvio",
+      "customer": "Cliente",
+      "project": "Progetto",
+      "sourcePartner": "Partner di origine",
+      "status": "Stato",
+      "booking": "Prenotazione",
+      "registered": "Registrato"
+    },
+    "booked": "Prenotato",
+    "empty": "Nessun riferimento ancora."
+  },
+  "detail": {
+    "customer": "Cliente",
+    "sourcePartner": "Partner di origine",
+    "attributionNote": "(attribuzione - non può essere modificata)",
+    "leadStatus": "Stato principale",
+    "protectedUntil": "Protetto fino al",
+    "referral": "Rinvio",
+    "reason": "Motivo: {{reason}}",
+    "booking": "Prenotazione",
+    "bookedOwner": "Prenotato: sei il proprietario operativo",
+    "notBooked": "Non prenotato",
+    "sharedAfterBooking": "Condiviso dopo la prenotazione",
+    "accept": "Accetta rinvio",
+    "confirmBooking": "Conferma prenotazione",
+    "reject": "Rifiutare il rinvio",
+    "rejectReasonLabel": "Motivo del rifiuto (mostrato al partner) *",
+    "rejectConfirm": "Rifiutare",
+    "confirmBookingPrompt": "Confermi la prenotazione? La proprietà operativa passa a te e il partner diventa idoneo alla commissione.",
+    "notice": {
+      "booked": "Prenotazione confermata.",
+      "accepted": "Rinvio accettato.",
+      "rejected": "Rinvio rifiutato."
+    },
+    "backToReferrals": "Torniamo ai Referral"
+  },
+  "history": {
+    "title": "Storia",
+    "actor": {
+      "system": "Sistema",
+      "partner": "Partner di canale",
+      "admin": "Amministratore Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Registrazione partner ricevuta",
+      "DUPLICATE_CHECK_COMPLETED": "Controllo duplicati completato: nessun duplicato attivo trovato",
+      "REGISTRATION_ACCEPTED": "Registrazione accettata",
+      "PROTECTION_GRANTED_one": "Protezione {{count}} giorni concessa",
+      "PROTECTION_GRANTED_many": "Protezione {{count}} giorni concessa",
+      "PROTECTION_GRANTED_other": "Protezione {{count}} giorni concessa",
+      "STAGE_UPDATED": "Stato aggiornato a {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Campo {{count}} aggiornato",
+      "LEAD_DETAILS_UPDATED_many": "{{count}} campi aggiornati",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} campi aggiornati",
+      "LEAD_ASSIGNED": "Assegnato a {{name}}",
+      "LEAD_UNASSIGNED": "Non assegnato",
+      "REFERRAL_ACCEPTED": "Il costruttore ha accettato il rinvio",
+      "REFERRAL_REJECTED": "Il costruttore ha rifiutato il rinvio. Motivo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Tentativo di registrazione duplicato da parte di {{partner}} rifiutato",
+      "BOOKING_COMPLETED": "Prenotazione completata",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "La proprietà operativa è stata trasferita a Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Attribuzione partner conservata",
+      "COMMISSION_ELIGIBILITY_CREATED": "Idoneità alla Commissione creata",
+      "HANDOVER_COMPLETED": "Consegna completata",
+      "ADMIN_PROTECTION_RELEASED": "L'amministratore ha rilasciato in anticipo la protezione duplicata. Motivo: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "L'amministratore ha riassegnato la registrazione da {{from}} a {{to}} . Motivo: {{reason}}"
+    }
+  }
+}

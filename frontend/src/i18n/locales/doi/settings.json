@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "सेटिंग्स",
+    "noPermission": "तुंदे कोल सेटिंग्स प्रबंधत करने दी इजाजत नेईं ऐ।"
+  },
+  "categories": {
+    "lead": "सेध",
+    "user": "उपयोगकर्ता",
+    "integrations": "एकीकरण करना"
+  },
+  "leadTabs": {
+    "fields": "खेतां दा",
+    "statuses": "स्थितियां ते उप-स्थितियां",
+    "notifications": "सूचनाएं ते शेड्यूलर"
+  },
+  "fields": {
+    "leadIntro": "लीड कैप्चर फार्म गी कॉन्फ़िगर करो: फील्डें गी सक्षम/अक्षम करो, उनेंगी जरूरी चिऱन्नत करो, जां अपने खुद दे कस्टम फील्ड जोड़ो.",
+    "userIntro": "टीम सदस्य जोड़ो/संपादत करो फार्म गी कॉन्फ़िगर करो: फील्डें गी सक्षम/अक्षम करो, उनेंगी जरूरी चिऱन्नत करो, जां अपने खुद दे कस्टम फील्ड जोड़ो.",
+    "addCustomField": "+ कस्टम फील्ड जोड़ो",
+    "fieldLabel": "फील्ड लेबल",
+    "group": "जत्था",
+    "groupPlaceholderLead": "उदाहरण दे तौर पर पूछताछ दी जानकारी",
+    "groupPlaceholderUser": "उदाहरण दे तौर पर अतिरिक्त विवरण",
+    "dataType": "डेटा प्रकार",
+    "options": "विकल्प (अल्पविराम कन्नै बक्ख कीता गेदा)",
+    "requiredLead": "जरूरी - तुंदी टीम दे साझेदारें गी लीड रजिस्टर करने लेई इसगी भरना होग",
+    "requiredUser": "जरूरी - टीम दे सदस्य गी जोड़दे बेल्लै भरना जरूरी ऐ",
+    "creating": "बनांदे होई...",
+    "createField": "फील्ड बनाओ",
+    "columns": {
+      "field": "खेत्तर",
+      "group": "जत्था",
+      "type": "किसम",
+      "required": "लोड़चदा",
+      "enabled": "सक्षम कीता गेआ",
+      "kind": "किरपालू"
+    },
+    "kind": {
+      "custom": "रवाज",
+      "core": "कोर (लॉक) ऐ",
+      "standard": "मानक"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "पाठ",
+    "TEXTAREA": "लंबा पाठ",
+    "NUMBER": "नंबर",
+    "CURRENCY": "करैंसी",
+    "DATE": "तरीक",
+    "SELECT": "ड्रॉपडाउन करना",
+    "LIST": "लिस्ट"
+  },
+  "picker": {
+    "searchPlaceholder": "लीड फील्ड्स दी खोज करो...",
+    "summary": "{{shown}} दिखाया · {{mandatory}} अनिवार्य",
+    "mandatory": "लाजमीं",
+    "noMatch": "कोई खेत मिलान नहीं।"
+  },
+  "statuses": {
+    "intro": "तुंदी लीड स्टेटस ते उप-स्टेटस - जेह् ड़ी हर इक मंगदा ऐ (इक तारीख & समें, लीड फील्ड) जिसलै कोई इस च इक लीड अपडेट करदा ऐ।",
+    "add": "+ स्टेटस जोड़ना",
+    "columns": {
+      "order": "तरतीब",
+      "status": "रुतबा",
+      "subStatuses": "उप-स्थिति",
+      "asksFor": "मंगदा ऐ",
+      "active": "सरगर्म"
+    },
+    "moveUp": "ऊपर चली जाओ",
+    "moveDown": "नीचे चले जाओ",
+    "defaultBadge": "नमें लीड्स लेई डिफ़ॉल्ट",
+    "bookingBadge": "बुकिंग दी स्थिति",
+    "asksForLabel": "{{label}} लेई पुच्छदा ऐ।",
+    "asksForDateTime": "तारीख & टाइम पुच्छदा ऐ",
+    "none": "कोई नेईं",
+    "dateTime": "तारीख & समय",
+    "scheduledOn": "{{names}} पर।",
+    "fieldsSummary_one": "{{count}} फील्ड ( {{mandatory}} अनिवार्य)",
+    "fieldsSummary_other": "{{count}} फील्ड्स ( {{mandatory}} अनिवार्य)",
+    "deleteConfirm": "स्थिति \" {{name}} \" हटाओ? इसगी वापस नेईं कीता जाई सकदा।",
+    "editTitle": "स्थिति संपादित करो - {{name}}",
+    "newTitle": "नई स्टेटस",
+    "name": "स्टेटस दा नाम",
+    "colour": "रंग",
+    "active": "सरगर्म",
+    "isDefault": "नमें लीड्स लेई डिफ़ॉल्ट स्थिति",
+    "isBooking": "बुकिंग दी स्थिति (पूर्ण बुकिंग द्वारा सेट कीती गेई)",
+    "whenMoved": "जदूं कोई लीड इस स्टेटस च लेई जंदा ऐ",
+    "askSchedule": "तारीख & समय (शेड्यूलर) दे बारे च पुच्छो",
+    "scheduleLabelPlaceholder": "लेबल, उदाहरण दे तौर पर Visit at",
+    "fieldsToShow": "अपडेट फार्म पर दस्सने आस्तै लीड फील्ड",
+    "subStatusesTitle": "उप-स्थिति",
+    "subStatusesHint": "हर उप-स्थिति अपनी तारीख & समें पुच्छी सकदी ऐ ते अपने-अपने फील्ड जोड़ी सकदी ऐ - जेह् ड़ी उप्पर दित्ती गेदी स्थिति दे फील्डें दे उप्पर दिक्खेआ गेदा ऐ।",
+    "subStatusName": "उप-स्थिति दा नाम",
+    "subFields": "फील्ड्स ( {{count}} ) ऐ।",
+    "subScheduleLabelPlaceholder": "तारीख & समय लेबल, उदाहरण दे तौर पर वापस कॉल करो",
+    "addSubStatus": "+ उप-स्थिति जोड़ना",
+    "saveStatus": "स्टेटस बचाओ",
+    "createStatus": "स्टेटस बनाओ"
+  },
+  "notifications": {
+    "intro": "जदूं कोई लीड कुसै स्टेटस च पुज्जदा ऐ तां सही लोकें गी सूचित करो - तुरत, जां उस पर निर्धारत तारीख & समें थमां पैह् ले/बाद च इक सेट समें।",
+    "add": "+ अधिसूचना जोड़ना",
+    "columns": {
+      "notification": "अधिसूचना",
+      "whenStatusIs": "जदूं स्टेटस ऐ",
+      "sends": "भेजता है",
+      "to": "गी",
+      "via": "दे राहें",
+      "enabled": "सक्षम कीता गेआ"
+    },
+    "anyStatus": "कोई स्टेटस",
+    "anySubStatus": "कोई उप-स्थिति",
+    "inactiveOption": "{{name}} (निष्क्रिय) ऐ।",
+    "emptyRules": "अजें तगर कोई सूचना नेईं - जदूं कोई लीड कुसै स्टेटस पर पुज्जदा ऐ तां अपनी टीम गी अलर्ट करने आस्तै इक जोड़ो।",
+    "jobs": {
+      "title": "अनुसूचित & भेजा गया",
+      "firesAt": "फायर्स एट",
+      "notification": "अधिसूचना",
+      "lead": "सेध",
+      "status": "रुतबा",
+      "details": "तफसील",
+      "empty": "अजें तगर कुसै बी चीजै दा शेड्यूल नेईं कीता गेआ ते ना गै भेजेआ गेआ।",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "बकाया",
+      "PROCESSING": "प्रसंस्करण करना",
+      "SENT": "भेजेआ गेदा",
+      "FAILED": "नकाम",
+      "SKIPPED": "छोड़ दिया",
+      "CANCELLED": "रद्द कर दी गई"
+    },
+    "deliveryStatus": {
+      "SENT": "भेजेआ गेदा",
+      "FAILED": "नकाम",
+      "SKIPPED": "छोड़ दिया"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ऐप च",
+      "EMAIL": "ईमेल करो",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "असाइन कीता गेदा यूजर",
+      "owner": "मालक",
+      "updatedBy": "द्वारा अपडेट कीता गेदा",
+      "role": "भूमिका: {{name}} ।"
+    },
+    "channels": {
+      "inApp": "ऐप च",
+      "email": "ईमेल करो",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "सूचना \" {{name}} \" हटाओ? इसदे थमां लंबित याददाश्त रद्द करी दित्ता जंदा ऐ।",
+    "testPrompt": "इस सूचना दा परीक्षण अपने आप गी (एप च) कुस लीड ID उपयोग करदे होई भेजो ?",
+    "testSent": "अपनी घंटी पर भेजा: {{title}} {{message}}",
+    "headersInvalid": "Webhook हेडर मान्य JSON होन चाहिदे न , उदाहरण दे तौर पर {\"प्राधिकरण\": \"वाहक xyz\"}",
+    "editTitle": "अधिसूचना संपादत करो",
+    "newTitle": "नई अधिसूचना",
+    "name": "नां",
+    "namePlaceholder": "उदाहरण दे तौर पर साइट दा दौरा याद दिलाना",
+    "whenStatus": "जदूं किसी लीड दा स्टेटस होंदा ऐ",
+    "subStatus": "उप-स्थिति",
+    "send": "भेजना (शेड्यूलर)",
+    "custom": "रवाज...",
+    "modeBefore": "निर्धारित समें कोला पैह्ले",
+    "modeAfter": "निर्धारित समें दे बाद",
+    "noScheduleWarning": "एह् स्थिति तारीख & समें नेईं पुच्छदी ऐ, इसलेई \"निर्धारित समें थमां पैह् ले/पर/बाद\" सूचना कदें बी फायर नेईं करग.",
+    "noScheduleFix": "चालू करो स्थिति ते उप-स्थिति दे अंतर्गत इसदे लेई <strong>तारीख ते समें पुच्छो</strong> , जां तुरत भेजो।",
+    "sendTo": "(कोई बी संयोजन) गी भेजना",
+    "recipientAssigned": "असाइन कीता गेदा उपयोगकर्ता (लीड मालिक)",
+    "recipientOwner": "खाता मालिक / एडमिन",
+    "recipientUpdatedBy": "जिस व्यक्ति ने स्टेटस अपडेट कीता",
+    "everyoneWithRole": "हर कोई रोल दे नाल",
+    "specificUsers": "विशिष्ट उपयोगकर्ता (सक्रिय)",
+    "inactiveNever": "निष्क्रिय बरतूनी कदें बी सूचनां नेईं हासल करदे न, चाहे ओह् चुने गेदे होन।",
+    "deliverVia": "के माध्यम से डिलीवर करो",
+    "channelInApp": "ऐप च (घंटी)",
+    "channelEmail": "ईमेल करो",
+    "channelWebhook": "Webhook ( WhatsApp / SMS प्रदाता)",
+    "emailHint": "ईमेल हर इक प्राप्तकर्ता दे ईमेल पते पर जंदा ऐ ते सर्वर (बैकएंड/.env) पर सेटअप एसएमटीपी दी लोड़ होंदी ऐ; उस बेल्लै तकर ईमेल भेजने गी छोड़े गेदे रूप च लॉग कीता जंदा ऐ।",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "हेडर ( JSON )",
+    "content": "अधिसूचना सामग्री",
+    "title": "शीर्शक",
+    "message": "सनेहा",
+    "insertIntoTitle": "टाइटल च डालें",
+    "insertIntoMessage": "संदेश च सम्मिलित करो",
+    "anyLeadField": "कोई बी लीड फील्ड बी कम्म करदा ऐ, जि'यां <code1>{{example1}}</code1> जां <code2>{{example2}}</code2> .",
+    "preview": "पूर्वावलोकन (नमूना सीसा)",
+    "enabled": "सक्षम कीता गेआ",
+    "saveRule": "सूचना बचाओ",
+    "createRule": "सूचना बनाओ",
+    "variables": {
+      "customerName": "सीसा दा नाम",
+      "customerMobile": "लीड मोबाइल",
+      "customerEmail": "ईमेल दा नेतृत्व करो",
+      "registrationId": "सीसा ID",
+      "status": "रुतबा",
+      "subStatus": "उप-स्थिति",
+      "scheduleAt": "निर्धारित तारीख & समय",
+      "assignedTo": "असाइन कीता गेदा यूजर",
+      "updatedBy": "द्वारा अपडेट कीता गेदा",
+      "recipient": "प्राप्तकर्ता दा नाम",
+      "project": "प्रोजैक्ट",
+      "notes": "नवीनतम नोट",
+      "partner": "साथी दा नाम"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "तुरंत जदूं स्टेटस सेट होई जंदा ऐ",
+      "AT": "निर्धारित समय पर",
+      "A1D": "निर्धारित समें दे 1 दिन बाद (फॉलो-अप जांच)"
+    },
+    "immediately": "फौरन",
+    "atScheduled": "निर्धारित समय पर",
+    "before": {
+      "MINUTES_one": "{{count}} निर्धारित समें कोला पैह् ले मिनट",
+      "MINUTES_other": "{{count}} निर्धारित समें कोला पैह् ले मिनट",
+      "HOURS_one": "{{count}} निर्धारित समें कोला घैंटे पैह् ले",
+      "HOURS_other": "{{count}} निर्धारित समें कोला घैंटे पैह् ले",
+      "DAYS_one": "{{count}} निर्धारित समें कोला पैह् ले दिन",
+      "DAYS_other": "{{count}} निर्धारित समें कोला पैह् ले दिन",
+      "WEEKS_one": "{{count}} निर्धारित समें कोला हफ्ते पैह्ले",
+      "WEEKS_other": "{{count}} निर्धारित समें कोला हफ्ते पैह्ले",
+      "MONTHS_one": "{{count}} निर्धारित समें कोला पैह् ले महीना",
+      "MONTHS_other": "{{count}} निर्धारित समें कोला महीने पैह् ले",
+      "YEARS_one": "{{count}} निर्धारित समें कोला पैह्ले साल",
+      "YEARS_other": "{{count}} निर्धारित समें कोला पैह्ले साल"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} निर्धारित समें दे बाद मिनट",
+      "MINUTES_other": "{{count}} निर्धारित समें दे बाद मिनट",
+      "HOURS_one": "{{count}} निर्धारित समें दे बाद",
+      "HOURS_other": "{{count}} निर्धारित समें दे बाद घंटे",
+      "DAYS_one": "{{count}} निर्धारित समें दे बाद दिन",
+      "DAYS_other": "{{count}} निर्धारित समें दे बाद दिन",
+      "WEEKS_one": "{{count}} निर्धारित समें दे बाद हफ्ते",
+      "WEEKS_other": "{{count}} निर्धारित समें दे हफ्ते बाद",
+      "MONTHS_one": "{{count}} निर्धारित समें दे बाद महीने",
+      "MONTHS_other": "{{count}} निर्धारित समें दे बाद महीने",
+      "YEARS_one": "{{count}} निर्धारित समें दे बाद साल",
+      "YEARS_other": "{{count}} निर्धारित समें दे बाद"
+    },
+    "units": {
+      "MINUTES_one": "मिंट्‌ट",
+      "MINUTES_other": "मिंट्ट",
+      "HOURS_one": "घैंटा",
+      "HOURS_other": "घैंटे",
+      "DAYS_one": "दिन",
+      "DAYS_other": "दिन",
+      "WEEKS_one": "हफ्ता",
+      "WEEKS_other": "हफ्तें दा",
+      "MONTHS_one": "म्हीना",
+      "MONTHS_other": "महीने",
+      "YEARS_one": "ब'रा",
+      "YEARS_other": "ब'रे"
+    }
+  }
+}

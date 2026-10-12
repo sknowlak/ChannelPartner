@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Ba paramètres",
+    "noPermission": "Ozali na ndingisa te ya kotambwisa ba paramètres."
+  },
+  "categories": {
+    "lead": "Plomb",
+    "user": "Mosaleli",
+    "integrations": "Ba intégrations"
+  },
+  "leadTabs": {
+    "fields": "Bilanga ya bilanga",
+    "statuses": "Ba Status & Ba Sous-Etat",
+    "notifications": "Mayebisi & Ba Programmeurs"
+  },
+  "fields": {
+    "leadIntro": "Configurer formulaire ya capture ya lead: activer/désactiver ba champs, marquer yango esengeli, to bakisa ba champs personnalisés na yo moko.",
+    "userIntro": "Bongisa formulaire ya Bakisa/Bobongola Membre ya Equipe: activer/désactiver ba champs, marquer yango esengeli, to bakisa ba champs personnalisés na yo moko.",
+    "addCustomField": "+ Bakisa Esika ya Momeseno",
+    "fieldLabel": "Étiquette ya bilanga",
+    "group": "Etuluku",
+    "groupPlaceholderLead": "ndakisa Info ya mituna",
+    "groupPlaceholderUser": "ndakisa Makambo mosusu oyo ebakisami",
+    "dataType": "Lolenge ya ba données",
+    "options": "Ba options (ekabolami na virgule) .",
+    "requiredLead": "Esengeli - ba partenaires na équipe na yo basengeli kotondisa oyo pona ko enregistrer lead",
+    "requiredUser": "Esengeli - esengeli kotondisama tango ya kobakisa mosangani ya ekipi",
+    "creating": "Kosala...",
+    "createField": "Bosala Esika ya Kosala",
+    "columns": {
+      "field": "Elanga",
+      "group": "Etuluku",
+      "type": "Lolenge",
+      "required": "Esengami",
+      "enabled": "Efungolami",
+      "kind": "Malamu"
+    },
+    "kind": {
+      "custom": "Momeseno",
+      "core": "Core (ekangamaki) .",
+      "standard": "Ya malamu"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Nkoma",
+    "TEXTAREA": "Mokanda ya molai",
+    "NUMBER": "Nimero",
+    "CURRENCY": "Mbongo",
+    "DATE": "Dati",
+    "SELECT": "Kokita na nse",
+    "LIST": "Liste"
+  },
+  "picker": {
+    "searchPlaceholder": "Boluka bisika ya plomb...",
+    "summary": "{{shown}} elakisami · {{mandatory}} esengeli",
+    "mandatory": "Esengami",
+    "noMatch": "Bitando moko te ekokani."
+  },
+  "statuses": {
+    "intro": "Ba états ya lead na yo na ba sous-status - oyo moko na moko asengaka (date & heure, ba champs ya lead) tango mutu a mettre à jour lead na yango.",
+    "add": "+ Bakisa Ezalela",
+    "columns": {
+      "order": "Etinda",
+      "status": "Statut",
+      "subStatuses": "Ba Sous-Status ya moke",
+      "asksFor": "Asengi Pona",
+      "active": "Esalaka"
+    },
+    "moveUp": "Bomata likolo",
+    "moveDown": "Bokita na nse",
+    "defaultBadge": "Default mpo na ba leads ya sika",
+    "bookingBadge": "Etat ya réservation",
+    "asksForLabel": "Esengi {{label}}",
+    "asksForDateTime": "Asengi date & heure",
+    "none": "Moko te",
+    "dateTime": "Date & ngonga",
+    "scheduledOn": "na {{names}}",
+    "fieldsSummary_one": "{{count}} field ( {{mandatory}} esengeli)",
+    "fieldsSummary_other": "{{count}} fields ( {{mandatory}} esengeli)",
+    "deleteConfirm": "Bolongola ezalela \" {{name}} \"? Yango ekoki kozongisama nsima te.",
+    "editTitle": "Bobongisi Ezalela - {{name}}",
+    "newTitle": "Ezalela ya Sika",
+    "name": "Kombo ya Ezalela",
+    "colour": "Langi",
+    "active": "Esalaka",
+    "isDefault": "Ezalela ya liboso mpo na ba leads ya sika",
+    "isBooking": "Ezalela ya réservation (ebongisami na Réservation Complète)",
+    "whenMoved": "Tango plomb moko e déplacé na statut oyo",
+    "askSchedule": "Senga date & heure (programmateur) .",
+    "scheduleLabelPlaceholder": "Etiquette, ndakisa Kotala na",
+    "fieldsToShow": "Ba champs ya plomb mpo na kolakisa na formulaire ya mise à jour",
+    "subStatusesTitle": "Ba Sous-Status ya moke",
+    "subStatusesHint": "Sous-état moko na moko ekoki kosenga date & heure na yango moko pe kobakisa ba champs na yango moko - elakisami likolo ya ba champs ya état likolo.",
+    "subStatusName": "Nkombo ya sous-état",
+    "subFields": "Bitando ( {{count}} ) .",
+    "subScheduleLabelPlaceholder": "Date & heure étiquette, par exemple Benga lisusu na",
+    "addSubStatus": "+ Bakisa Sous-Etat",
+    "saveStatus": "Bomba Etat",
+    "createStatus": "Bosala Etat"
+  },
+  "notifications": {
+    "intro": "Yebisa bato oyo babongi tango lead moko ekomi na statut - mbala moko, to heure oyo etiamaki liboso/nsima ya date & heure oyo etiamaki na yango.",
+    "add": "+ Bakisa Liyebisi",
+    "columns": {
+      "notification": "Liyebisi",
+      "whenStatusIs": "Tango Status Ezali",
+      "sends": "Atindi",
+      "to": "Na",
+      "via": "Na nzela ya",
+      "enabled": "Efungolami"
+    },
+    "anyStatus": "Statut nionso",
+    "anySubStatus": "Sous-état nionso",
+    "inactiveOption": "{{name}} (ezali kosala te)",
+    "emptyRules": "Nanu ba notifications te - bakisa moko pona ko alerter équipe na yo tango lead moko ekomi na statut.",
+    "jobs": {
+      "title": "Programmé & Envoyé",
+      "firesAt": "Moto Na",
+      "notification": "Liyebisi",
+      "lead": "Plomb",
+      "status": "Statut",
+      "details": "Makambo ya mike",
+      "empty": "Eloko moko te oyo ebongisami to etindami naino.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Kozelisa",
+      "PROCESSING": "Kosala mosala",
+      "SENT": "Kotinda",
+      "FAILED": "Kolonga te",
+      "SKIPPED": "Basili koleka",
+      "CANCELLED": "Elongolami"
+    },
+    "deliveryStatus": {
+      "SENT": "kotinda",
+      "FAILED": "kolonga te",
+      "SKIPPED": "esili koleka"
+    },
+    "deliveryChannel": {
+      "IN_APP": "na kati ya app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Mosaleli oyo apesameli",
+      "owner": "Nkolo",
+      "updatedBy": "Mikolo oyo na",
+      "role": "Mosala: {{name}}"
+    },
+    "channels": {
+      "inApp": "Na kati ya app",
+      "email": "Email na nzela ya email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Bolongola liyebisi \" {{name}} \"? Makundoli oyo ezali kozela uta na yango elongolami.",
+    "testPrompt": "Tinda test ya notification oyo na yo moko (in-app) na kosalelaka ID nini ya lead ?",
+    "testSent": "Etindami na ngonga na yo: {{title}} {{message}}",
+    "headersInvalid": "Mitó Webhook esengeli kozala JSON ya malamu , ndakisa {\"Ndingisa\": \"Momemi xyz\"}",
+    "editTitle": "Bobongisi Liyebisi",
+    "newTitle": "Liyebisi ya Sika",
+    "name": "Nkombo",
+    "namePlaceholder": "ndakisa Rappel ya visite ya site",
+    "whenStatus": "Tango statut ya lead moko eza",
+    "subStatus": "Ezalela ya moke",
+    "send": "Tinda (mobongisi ya manaka) .",
+    "custom": "Momeseno...",
+    "modeBefore": "liboso ya ngonga oyo etyamaki",
+    "modeAfter": "nsima ya ngonga oyo etyamaki",
+    "noScheduleWarning": "Statut oyo esengaka date & heure te, yango wana notification \"avant/na/après heure programmé\" elingaki jamais ko tirer.",
+    "noScheduleFix": "Bofungola <strong>Senga date & heure</strong> pona yango na se ya Status & Sous-Status, to tinda Mbala moko.",
+    "sendTo": "Tinda na (combinaison nionso) .",
+    "recipientAssigned": "Mosaleli oyo apesameli (nkolo ya liboso) .",
+    "recipientOwner": "Nkolo compte / admin",
+    "recipientUpdatedBy": "Moto oyo a mettre à jour statut",
+    "everyoneWithRole": "Mutu nionso na rôle",
+    "specificUsers": "Ba usagers spécifiques (active) .",
+    "inactiveNever": "Ba usagers inactives bazuaka jamais ba notifications, ata soki ba ponami.",
+    "deliverVia": "Kopesa na nzela ya",
+    "channelInApp": "Na kati ya app (ngonga) .",
+    "channelEmail": "Email na nzela ya email",
+    "channelWebhook": "Webhook ( Mopesi WhatsApp / SMS )",
+    "emailHint": "Email ekendaka na adresse email ya moyambi moko na moko mpe esengeli SMTP oyo ebongisami na serveur (backend/.env); tii tango wana ba envois ya email ezo enregistrer lokola skipped.",
+    "webhookUrl": "URL Webhook ( POST , JSON ) .",
+    "headers": "Mitó ya makambo ( JSON ) .",
+    "content": "Makambo oyo ezali na kati ya mayebisi",
+    "title": "Titre",
+    "message": "Nsango",
+    "insertIntoTitle": "Kotisa na kati ya Titre",
+    "insertIntoMessage": "Kotisa na kati ya Message",
+    "anyLeadField": "Esika nyonso ya plomb esalaka mpe, ndakisa <code1>{{example1}}</code1> to <code2>{{example2}}</code2> .",
+    "preview": "Aperçu (plomb ya échantillon) .",
+    "enabled": "Efungolami",
+    "saveRule": "Bomba Liyebisi",
+    "createRule": "Bosala Notification",
+    "variables": {
+      "customerName": "Nkombo ya plomb",
+      "customerMobile": "Plomb mobile",
+      "customerEmail": "Kokamba email",
+      "registrationId": "ID ya plomb",
+      "status": "Statut",
+      "subStatus": "Ezalela ya moke",
+      "scheduleAt": "Date & heure oyo ebongisami",
+      "assignedTo": "Mosaleli oyo apesameli",
+      "updatedBy": "Mikolo oyo na",
+      "recipient": "Nkombo ya moto oyo azwi yango",
+      "project": "Mosala",
+      "notes": "Note ya sika",
+      "partner": "Nkombo ya mosangani"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Mbala moko ntango ezalela esili kotyama",
+      "AT": "Na ngonga oyo etyamaki",
+      "A1D": "Mokolo 1 sima ya ngonga oyo esengelaki (vérification ya bolandi) ."
+    },
+    "immediately": "Mbala moko",
+    "atScheduled": "Na ngonga oyo etyami",
+    "before": {
+      "MINUTES_one": "{{count}} miniti liboso ya ngonga oyo esengelaki",
+      "MINUTES_other": "{{count}} miniti liboso ya ngonga oyo esengelaki",
+      "HOURS_one": "{{count}} ngonga liboso ya ngonga oyo esengelaki",
+      "HOURS_other": "{{count}} ngonga liboso ya ngonga oyo esengelaki",
+      "DAYS_one": "{{count}} mokolo liboso ya ngonga oyo esengelaki",
+      "DAYS_other": "{{count}} mikolo liboso ya ngonga oyo esengelaki",
+      "WEEKS_one": "{{count}} poso liboso ya ngonga oyo esengelaki",
+      "WEEKS_other": "{{count}} baposo liboso ya ngonga oyo esengelaki",
+      "MONTHS_one": "{{count}} sanza liboso ya ngonga oyo esengelaki",
+      "MONTHS_other": "{{count}} basanza liboso ya ngonga oyo esengelaki",
+      "YEARS_one": "{{count}} mbula liboso ya ngonga oyo esengelaki",
+      "YEARS_other": "{{count}} mibu liboso ya ngonga oyo esengelaki"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} miniti nsima ya ngonga oyo ebongisami",
+      "MINUTES_other": "{{count}} miniti nsima ya ngonga oyo ebongisami",
+      "HOURS_one": "{{count}} ngonga sima ya ngonga oyo esengelaki",
+      "HOURS_other": "{{count}} bangonga sima ya ngonga oyo esengelaki",
+      "DAYS_one": "{{count}} mokolo sima ya ngonga oyo esengelaki",
+      "DAYS_other": "{{count}} mikolo sima ya ngonga oyo esengelaki",
+      "WEEKS_one": "{{count}} poso sima ya ngonga oyo esengelaki",
+      "WEEKS_other": "{{count}} baposo sima ya ngonga oyo esengelaki",
+      "MONTHS_one": "{{count}} sanza sima ya ngonga oyo esengelaki",
+      "MONTHS_other": "{{count}} basanza sima ya ngonga oyo esengelaki",
+      "YEARS_one": "{{count}} mbula sima ya ngonga oyo esengelaki",
+      "YEARS_other": "{{count}} mibu sima ya ngonga oyo esengelaki"
+    },
+    "units": {
+      "MINUTES_one": "miniti",
+      "MINUTES_other": "miniti",
+      "HOURS_one": "ngonga",
+      "HOURS_other": "bangonga",
+      "DAYS_one": "mokolo",
+      "DAYS_other": "mikolo",
+      "WEEKS_one": "mposo",
+      "WEEKS_other": "bapɔsɔ mingi",
+      "MONTHS_one": "sanza",
+      "MONTHS_other": "basanza",
+      "YEARS_one": "mbula",
+      "YEARS_other": "bambula"
+    }
+  }
+}

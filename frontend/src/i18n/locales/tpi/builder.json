@@ -1,0 +1,87 @@
+{
+  "shell": {
+    "portal": "Builder Portal",
+    "referrals": "Ol riferal",
+    "builderLogin": "Builder Login",
+    "partnerLogin": "Senel Patna Login"
+  },
+  "login": {
+    "title": "Bilda i sainim",
+    "hint": "Ol bilda akaun em Leadrat i save wokim. Askim edministreta bilong yu sapos yu no gat wanpela."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Wetim disisen bilong yu",
+    "ACCEPTED": "Ol i kisim",
+    "REJECTED": "Ol i sakim"
+  },
+  "list": {
+    "title": "Ol riferal",
+    "allProjects": "Olgeta projek",
+    "allStatuses": "Olgeta status",
+    "count_other": "{{count}} ol riferal",
+    "columns": {
+      "referral": "Riferal",
+      "customer": "Kastoma",
+      "project": "Wok",
+      "sourcePartner": "Sos Patna",
+      "status": "Stetes",
+      "booking": "Buking",
+      "registered": "Rejistret"
+    },
+    "booked": "Buk pinis",
+    "empty": "Nogat riferal yet."
+  },
+  "detail": {
+    "customer": "Kastoma",
+    "sourcePartner": "Sos Patna",
+    "attributionNote": "(attribution - yu no inap senisim)",
+    "leadStatus": "Status bilong lida",
+    "protectedUntil": "Lukautim Inap",
+    "referral": "Riferal",
+    "reason": "As: {{reason}}",
+    "booking": "Buking",
+    "bookedOwner": "Buk pinis - yu operesenel ona",
+    "notBooked": "No bin bukim",
+    "sharedAfterBooking": "Ol i serim bihain long bukim",
+    "accept": "Kisim Riferal",
+    "confirmBooking": "Konfemim Buking",
+    "reject": "Sakim Riferal",
+    "rejectReasonLabel": "As bilong sakim (soim long poroman) *",
+    "rejectConfirm": "Les",
+    "confirmBookingPrompt": "Konfemim buking? Operesenel onasip i go long yu na patna i ken kisim komisen.",
+    "notice": {
+      "booked": "Buking i konfem.",
+      "accepted": "Ol i kisim riferal.",
+      "rejected": "Ol i sakim riferal."
+    },
+    "backToReferrals": "Go bek long ol 'referrals'"
+  },
+  "history": {
+    "title": "Histori",
+    "actor": {
+      "system": "Sistem",
+      "partner": "Patna bilong senel",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Rejistresen bilong patna i kisim pinis",
+      "DUPLICATE_CHECK_COMPLETED": "Dupliket sekim i pinis - nogat wanpela ektiv dupliket i stap",
+      "REGISTRATION_ACCEPTED": "Rejistresen i orait",
+      "PROTECTION_GRANTED_other": "{{count}} -de proteksen i kamap",
+      "STAGE_UPDATED": "Status i go long {{stage}}",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} fil i kamap nupela",
+      "LEAD_ASSIGNED": "Ol i makim long {{name}}",
+      "LEAD_UNASSIGNED": "Nogat wok",
+      "REFERRAL_ACCEPTED": "Bilda i kisim riferal",
+      "REFERRAL_REJECTED": "Builder i sakim dispela riferal. As: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} i no laik rejistaim tupela taim",
+      "BOOKING_COMPLETED": "Buking i pinis",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operesenel onasip i go long Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Patna attribusen i stap yet",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komisin eligibiliti i kamap",
+      "HANDOVER_COMPLETED": "Hanover i pinis",
+      "ADMIN_PROTECTION_RELEASED": "Edmin i bin rilisim 'duplicate protection' pastaim. As: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Edmin i senisim rejistresen long {{from}} i go long {{to}} . As: {{reason}}"
+    }
+  }
+}

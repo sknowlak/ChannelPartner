@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Sazlamalar",
+    "noPermission": "Sazlamalary dolandyrmaga rugsadyňyz ýok."
+  },
+  "categories": {
+    "lead": "Gurşun",
+    "user": "Ulanyjy",
+    "integrations": "Integrasiýa"
+  },
+  "leadTabs": {
+    "fields": "Meýdanlar",
+    "statuses": "Statuslar we kiçi ýagdaýlar",
+    "notifications": "Duýduryşlar we meýilnamaçylar"
+  },
+  "fields": {
+    "leadIntro": "Gurluşy ele alma görnüşini sazlaň: meýdanlary işletmek / öçürmek, zerur bellik etmek ýa-da öz aýratyn meýdanlaryňyzy goşmak.",
+    "userIntro": "Toparyň agza goşmak / redaktirleme görnüşini sazlaň: meýdanlary işletmek / öçürmek, zerur bellikleri bellemek ýa-da öz aýratyn meýdanlaryňyzy goşmak.",
+    "addCustomField": "+ Custörite meýdan goşuň",
+    "fieldLabel": "Meýdanyň belligi",
+    "group": "Topar",
+    "groupPlaceholderLead": "meselem Sorag maglumatlary",
+    "groupPlaceholderUser": "mysal üçin goşmaça maglumatlar",
+    "dataType": "Maglumatlaryň görnüşi",
+    "options": "Görnüşler (vergul bölünýär)",
+    "requiredLead": "Gerekli - toparyňyzdaky hyzmatdaşlar öňdebaryjy hasaba almak üçin muny doldurmaly",
+    "requiredUser": "Gerek - toparyň agzasyny goşanyňyzda doldurylmaly",
+    "creating": "Döretmek ...",
+    "createField": "Meýdan dörediň",
+    "columns": {
+      "field": "Meýdan",
+      "group": "Topar",
+      "type": "Görnüşi",
+      "required": "Gerekli",
+      "enabled": "Işledildi",
+      "kind": "Hoşniýetlilik"
+    },
+    "kind": {
+      "custom": "Omörite",
+      "core": "Esasy (gulplanan)",
+      "standard": "Standart"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Tekst",
+    "TEXTAREA": "Uzyn tekst",
+    "NUMBER": "San",
+    "CURRENCY": "Walýuta",
+    "DATE": "Sene",
+    "SELECT": "Aşak",
+    "LIST": "Sanaw"
+  },
+  "picker": {
+    "searchPlaceholder": "Gurşun meýdanlaryny gözläň ...",
+    "summary": "{{shown}} görkezildi · {{mandatory}} hökmany",
+    "mandatory": "Hökmany",
+    "noMatch": "Hiç bir meýdan gabat gelenok."
+  },
+  "statuses": {
+    "intro": "Gurluş ýagdaýlaryňyz we kiçi statuslaryňyz - kimdir biri gurşuny täzeläninde her kimiň soraýan zady (senesi we wagty, gurşun meýdanlary).",
+    "add": "+ Status goşuň",
+    "columns": {
+      "order": "Sargyt",
+      "status": ".Agdaý",
+      "subStatuses": "Aşakdaky ýagdaýlar",
+      "asksFor": "Soraýar",
+      "active": "Işjeň"
+    },
+    "moveUp": "Göçüriň",
+    "moveDown": "Aşak süýşüriň",
+    "defaultBadge": "Täze netijeler üçin başlangyç",
+    "bookingBadge": "Zakaz etmegiň ýagdaýy",
+    "asksForLabel": "{{label}} for soraýar",
+    "asksForDateTime": "Sene we wagt soraýar",
+    "none": "Hiç",
+    "dateTime": "Sene we wagt",
+    "scheduledOn": "{{names}} on",
+    "fieldsSummary_one": "{{count}} meýdany ( {{mandatory}} hökmany)",
+    "fieldsSummary_other": "{{count}} meýdanlary ( {{mandatory}} hökmany)",
+    "deleteConfirm": "\" {{name}} \" statusyny pozuň? Muny yzyna gaýtaryp bolmaz.",
+    "editTitle": "Edagdaýy üýtgetmek - {{name}}",
+    "newTitle": "Täze ýagdaý",
+    "name": "Usagdaýyň ady",
+    "colour": "Reňk",
+    "active": "Işjeň",
+    "isDefault": "Täze netijeler üçin deslapky ýagdaý",
+    "isBooking": "Zakaz etmegiň ýagdaýy (Doly bron etmek)",
+    "whenMoved": "Gurşun bu ýagdaýa geçirilende",
+    "askSchedule": "Sene we wagt soraň (meýilnamaçy)",
+    "scheduleLabelPlaceholder": "Bellik, mysal üçin baryp görüň",
+    "fieldsToShow": "Täzelenme görnüşinde görkezmek üçin meýdançalar",
+    "subStatusesTitle": "Aşakdaky ýagdaýlar",
+    "subStatusesHint": "Her kiçi status, öz senesini we wagtyny sorap biler we ýokardaky status meýdanlarynyň üstünde görkezilen öz meýdanlaryny goşup biler.",
+    "subStatusName": "Aşakdaky ady",
+    "subFields": "Meýdanlar ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Sene we wagt belligi, meselem, yzyna jaň ediň",
+    "addSubStatus": "+ Sub-status goşuň",
+    "saveStatus": "Status saklaň",
+    "createStatus": "Status dörediň"
+  },
+  "notifications": {
+    "intro": "Gurşun bir statusa ýetende dogry adamlara habar beriň - derrew ýa-da bellenen seneden we wagtdan öň / soň belli bir wagt.",
+    "add": "+ Duýduryş goşuň",
+    "columns": {
+      "notification": "Duýduryş",
+      "whenStatusIs": "Haçan-da ýagdaý",
+      "sends": "Iberýär",
+      "to": "To",
+      "via": "Bilen",
+      "enabled": "Işledildi"
+    },
+    "anyStatus": "Islendik status",
+    "anySubStatus": "Islendik kiçi status",
+    "inactiveOption": "{{name}} (hereketsiz)",
+    "emptyRules": "Entek duýduryş ýok - gurşun statusyna ýetende toparyňyza duýduryş bermek üçin birini goşuň.",
+    "jobs": {
+      "title": "Meýilleşdirilen we iberilen",
+      "firesAt": "Esangyn",
+      "notification": "Duýduryş",
+      "lead": "Gurşun",
+      "status": ".Agdaý",
+      "details": "Jikme-jiklikler",
+      "empty": "Entek meýilleşdirilen ýa-da iberilen zat ýok.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Garaşylýar",
+      "PROCESSING": "Gaýtadan işlemek",
+      "SENT": "Iberildi",
+      "FAILED": "Şowsuz",
+      "SKIPPED": "Geçdi",
+      "CANCELLED": "Atyryldy"
+    },
+    "deliveryStatus": {
+      "SENT": "iberildi",
+      "FAILED": "şowsuz",
+      "SKIPPED": "bökdi"
+    },
+    "deliveryChannel": {
+      "IN_APP": "programma",
+      "EMAIL": "e-poçta iberiň",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Bellenen ulanyjy",
+      "owner": "Eýesi",
+      "updatedBy": "Täzelendi",
+      "role": "Rol: {{name}}"
+    },
+    "channels": {
+      "inApp": "Programma",
+      "email": "E-poçta iberiň",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "\" {{name}} \" habarnamany pozuň? Ondan garaşylýan ýatlatmalar ýatyrylýar.",
+    "testPrompt": "Haýsy ID ulanyp, bu habarnamanyň synagyny özüňize (programmada) iberiň?",
+    "testSent": "Jaňyňyza iberildi: {{title}} {{message}}",
+    "headersInvalid": "Webhook sözbaşylary JSON bolmaly, meselem {\"Awtorizasiýa\": \"Bearer xyz\"}",
+    "editTitle": "Duýduryşy redaktirläň",
+    "newTitle": "Täze bildiriş",
+    "name": "Ady",
+    "namePlaceholder": "mysal üçin Saýtda ýatlatma",
+    "whenStatus": "Gurşun statusy bolanda",
+    "subStatus": "Sub-status",
+    "send": "Iberiň (meýilleşdiriji)",
+    "custom": "Omörite ...",
+    "modeBefore": "bellenen wagtdan öň",
+    "modeAfter": "bellenen wagtdan soň",
+    "noScheduleWarning": "Bu ýagdaý senäni we wagty soramaýar, şonuň üçin \"bellenen wagtdan öň / soň / soň\" habarnamasy hiç wagt ýanmaz.",
+    "noScheduleFix": "Işlediň Statagdaýlar we kiçi ýagdaýlar üçin <strong>sene we wagt soraň</strong> ýa-da derrew iberiň.",
+    "sendTo": "Iberiň (islendik kombinasiýa)",
+    "recipientAssigned": "Bellenen ulanyjy (baş eýesi)",
+    "recipientOwner": "Hasap eýesi / administrator",
+    "recipientUpdatedBy": "Statusagdaýy täzelän adam",
+    "everyoneWithRole": "Her kim roly bilen",
+    "specificUsers": "Usersörite ulanyjylar (işjeň)",
+    "inactiveNever": "Işlemeýän ulanyjylar, saýlanan hem bolsa, hiç wagt habarnamalary almaýarlar.",
+    "deliverVia": "Gowşuryň",
+    "channelInApp": "Programma (jaň)",
+    "channelEmail": "E-poçta iberiň",
+    "channelWebhook": "Webhook ( WhatsApp / SMS üpjün ediji)",
+    "emailHint": "E-poçta her bir alyjynyň e-poçta salgysyna gidýär we serwerde gurlan SMTP zerur (backend / .env); şoňa çenli e-poçta iberişleri atylan ýaly ýazylýar.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Sözbaşylar ( JSON )",
+    "content": "Duýduryş mazmuny",
+    "title": "Ady",
+    "message": "Habar",
+    "insertIntoTitle": "Adyna salyň",
+    "insertIntoMessage": "Habara salyň",
+    "anyLeadField": "Islendik gurşun meýdany hem işleýär, mysal üçin <code1>{{example1}}</code1> ýa-da <code2>{{example2}}</code2> .",
+    "preview": "Öňünden syn (gurşun nusgasy)",
+    "enabled": "Işledildi",
+    "saveRule": "Duýduryşy ýazdyryň",
+    "createRule": "Duýduryş dörediň",
+    "variables": {
+      "customerName": "Gurşun ady",
+      "customerMobile": "Öňdebaryjy ykjam",
+      "customerEmail": "E-poçta iberiň",
+      "registrationId": "Gurluş ID",
+      "status": ".Agdaý",
+      "subStatus": "Sub-status",
+      "scheduleAt": "Meýilleşdirilen sene we wagt",
+      "assignedTo": "Bellenen ulanyjy",
+      "updatedBy": "Täzelendi",
+      "recipient": "Alyjynyň ady",
+      "project": "Taslama",
+      "notes": "Iň soňky bellik",
+      "partner": "Hyzmatdaşyň ady"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Theagdaý kesgitlenende derrew",
+      "AT": "Bellenen wagtda",
+      "A1D": "Bellenen wagtdan 1 gün soň (dowamy barlamak)"
+    },
+    "immediately": "Derrew",
+    "atScheduled": "Bellenen wagtda",
+    "before": {
+      "MINUTES_one": "scheduled {{count}} bellenen wagtdan bir minut öň",
+      "MINUTES_other": "scheduled {{count}} bellenen wagtdan birnäçe minut öň",
+      "HOURS_one": "scheduled {{count}} bellenen wagtdan bir sagat öň",
+      "HOURS_other": "scheduled {{count}} bellenen wagtdan birnäçe sagat öň",
+      "DAYS_one": "scheduled {{count}} bellenen wagtdan bir gün öň",
+      "DAYS_other": "scheduled {{count}} bellenen wagtdan birnäçe gün öň",
+      "WEEKS_one": "scheduled {{count}} bellenen wagtdan bir hepde öň",
+      "WEEKS_other": "scheduled {{count}} bellenen wagtdan birnäçe hepde öň",
+      "MONTHS_one": "scheduled {{count}} bellenen wagtdan bir aý öň",
+      "MONTHS_other": "scheduled {{count}} bellenen wagtdan birnäçe aý öň",
+      "YEARS_one": "scheduled {{count}} bellenen wagtdan bir ýyl öň",
+      "YEARS_other": "scheduled {{count}} bellenen wagtdan birnäçe ýyl öň"
+    },
+    "after": {
+      "MINUTES_one": "scheduled {{count}} bellenen wagtdan soň",
+      "MINUTES_other": "scheduled {{count}} bellenen wagtdan birnäçe minut soň",
+      "HOURS_one": "scheduled {{count}} bellenen wagtdan bir sagat soň",
+      "HOURS_other": "scheduled {{count}} bellenen wagtdan birnäçe sagat soň",
+      "DAYS_one": "scheduled {{count}} bellenen wagtdan bir gün soň",
+      "DAYS_other": "scheduled {{count}} bellenen wagtdan soň",
+      "WEEKS_one": "scheduled {{count}} bellenen wagtdan bir hepde soň",
+      "WEEKS_other": "scheduled {{count}} bellenen wagtdan soň",
+      "MONTHS_one": "scheduled {{count}} bellenen wagtdan bir aý soň",
+      "MONTHS_other": "scheduled {{count}} bellenen wagtdan soň",
+      "YEARS_one": "scheduled {{count}} bellenen wagtdan soň",
+      "YEARS_other": "scheduled {{count}} bellenen wagtdan soň"
+    },
+    "units": {
+      "MINUTES_one": "minut",
+      "MINUTES_other": "minut",
+      "HOURS_one": "sagat",
+      "HOURS_other": "sagat",
+      "DAYS_one": "gün",
+      "DAYS_other": "günler",
+      "WEEKS_one": "hepde",
+      "WEEKS_other": "hepdeler",
+      "MONTHS_one": "aý",
+      "MONTHS_other": "aýlar",
+      "YEARS_one": "ýyl",
+      "YEARS_other": "ýyllar"
+    }
+  }
+}

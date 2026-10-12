@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "ඉදිකිරීම් ද්වාරය",
+    "referrals": "යොමු කිරීම්",
+    "builderLogin": "බිල්ඩර් ලොගින්",
+    "partnerLogin": "නාලිකා සහකරු පිවිසුම"
+  },
+  "login": {
+    "title": "ඉදිකිරීම්කරු පුරනය වීම",
+    "hint": "සාදන්නන්ගේ ගිණුම් Leadrat විසින් සාදනු ලැබේ. ඔබට එකක් නොමැති නම් ඔබේ පරිපාලකගෙන් විමසන්න."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "ඔබේ තීරණය එනතෙක් බලා සිටිමි",
+    "ACCEPTED": "පිළිගත්තා",
+    "REJECTED": "ප්‍රතික්ෂේප කළා"
+  },
+  "list": {
+    "title": "යොමු කිරීම්",
+    "allProjects": "සියලුම ව්යාපෘති",
+    "allStatuses": "සියලුම තත්ව",
+    "count_one": "{{count}} යොමු කිරීම",
+    "count_other": "{{count}} යොමු කිරීම්",
+    "columns": {
+      "referral": "යොමු කිරීම",
+      "customer": "පාරිභෝගිකයා",
+      "project": "ව්යාපෘතිය",
+      "sourcePartner": "මූලාශ්ර සහකරු",
+      "status": "තත්ත්වය",
+      "booking": "වෙන්කරවා ගැනීම",
+      "registered": "ලියාපදිංචි කර ඇත"
+    },
+    "booked": "වෙන්කර ඇත",
+    "empty": "තවමත් යොමු කිරීම් නොමැත."
+  },
+  "detail": {
+    "customer": "පාරිභෝගිකයා",
+    "sourcePartner": "මූලාශ්ර සහකරු",
+    "attributionNote": "(ආරෝපණය - වෙනස් කළ නොහැක)",
+    "leadStatus": "ඊයම් තත්ත්වය",
+    "protectedUntil": "දක්වා ආරක්ෂා කර ඇත",
+    "referral": "යොමු කිරීම",
+    "reason": "හේතුව: {{reason}}",
+    "booking": "වෙන්කරවා ගැනීම",
+    "bookedOwner": "වෙන් කර ඇත - ඔබ මෙහෙයුම් හිමිකරු වේ",
+    "notBooked": "වෙන්කර නැත",
+    "sharedAfterBooking": "වෙන්කරවා ගැනීමෙන් පසු බෙදා ගන්නා ලදී",
+    "accept": "යොමු කිරීම පිළිගන්න",
+    "confirmBooking": "වෙන්කරවා ගැනීම තහවුරු කරන්න",
+    "reject": "යොමු කිරීම ප්‍රතික්ෂේප කරන්න",
+    "rejectReasonLabel": "ප්‍රතික්ෂේප කිරීමට හේතුව (සහකරුට පෙන්වා ඇත) *",
+    "rejectConfirm": "ප්රතික්ෂේප කරන්න",
+    "confirmBookingPrompt": "වෙන්කරවා ගැනීම තහවුරු කරන්නද? මෙහෙයුම් හිමිකම ඔබ වෙත ගෙන යන අතර හවුල්කරු කොමිස් සඳහා සුදුසුකම් ලබයි.",
+    "notice": {
+      "booked": "වෙන්කරවා ගැනීම තහවුරු කර ඇත.",
+      "accepted": "යොමු කිරීම පිළිගනු ලැබේ.",
+      "rejected": "යොමු කිරීම ප්‍රතික්ෂේප විය."
+    },
+    "backToReferrals": "Referrals වෙත නැවත යන්න"
+  },
+  "history": {
+    "title": "ඉතිහාසය",
+    "actor": {
+      "system": "පද්ධතිය",
+      "partner": "නාලිකා සහකරු",
+      "admin": "Leadrat පරිපාලක"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "හවුල්කරු ලියාපදිංචිය ලැබී ඇත",
+      "DUPLICATE_CHECK_COMPLETED": "අනුපිටපත් පරීක්ෂාව සම්පූර්ණ කරන ලදී - සක්‍රිය අනුපිටපතක් හමු නොවීය",
+      "REGISTRATION_ACCEPTED": "ලියාපදිංචිය පිළිගනු ලැබේ",
+      "PROTECTION_GRANTED_one": "{{count}} -දින ආරක්ෂාව ලබා දී ඇත",
+      "PROTECTION_GRANTED_other": "{{count}} -දින ආරක්ෂාව ලබා දී ඇත",
+      "STAGE_UPDATED": "තත්ත්වය {{stage}} වෙත යාවත්කාලීන කරන ලදී",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} ක්ෂේත්‍රය යාවත්කාලීන කරන ලදී",
+      "LEAD_DETAILS_UPDATED_other": "ක්ෂේත්‍ර {{count}} යාවත්කාලීන කරන ලදී",
+      "LEAD_ASSIGNED": "{{name}} වෙත පවරා ඇත",
+      "LEAD_UNASSIGNED": "පැවරීම නොකළ",
+      "REFERRAL_ACCEPTED": "ඉදිකිරීම්කරු යොමු කිරීම පිළිගත්තේය",
+      "REFERRAL_REJECTED": "ඉදිකිරීම්කරු යොමු කිරීම ප්‍රතික්ෂේප කළේය. හේතුව: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} විසින් අනුපිටපත් ලියාපදිංචි කිරීමේ උත්සාහය ප්‍රතික්ෂේප කරන ලදී",
+      "BOOKING_COMPLETED": "වෙන්කරවා ගැනීම අවසන්",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "මෙහෙයුම් හිමිකාරිත්වය බිල්ඩර් වෙත පවරා ඇත",
+      "PARTNER_ATTRIBUTION_PRESERVED": "හවුල්කාර ආරෝපණය සංරක්ෂණය කර ඇත",
+      "COMMISSION_ELIGIBILITY_CREATED": "කොමිෂන් සභා සුදුසුකම් නිර්මාණය කර ඇත",
+      "HANDOVER_COMPLETED": "භාරදීම අවසන්",
+      "ADMIN_PROTECTION_RELEASED": "පරිපාලක අනුපිටපත් ආරක්ෂාව කලින් නිකුත් කළේය. හේතුව: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "පරිපාලක විසින් {{from}} සිට {{to}} දක්වා ලියාපදිංචිය නැවත පවරා ඇත. හේතුව: {{reason}}"
+    }
+  }
+}

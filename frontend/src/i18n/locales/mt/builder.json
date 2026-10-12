@@ -1,0 +1,99 @@
+{
+  "shell": {
+    "portal": "Portal tal-bennej",
+    "referrals": "Riferimenti",
+    "builderLogin": "Il-login tal-bennej",
+    "partnerLogin": "Login tal-Imsieħeb tal-Kanal"
+  },
+  "login": {
+    "title": "Sign in bennej",
+    "hint": "Il-kontijiet tal-bennej huma maħluqa minn Leadrat . Staqsi lill-amministratur tiegħek jekk m'għandekx waħda."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Stennija għad-deċiżjoni tiegħek",
+    "ACCEPTED": "Aċċettati",
+    "REJECTED": "Miċħuda"
+  },
+  "list": {
+    "title": "Riferimenti",
+    "allProjects": "Il-proġetti kollha",
+    "allStatuses": "L-istatus kollu",
+    "count_one": "{{count}} referenza",
+    "count_two": "{{count}} riferimenti",
+    "count_few": "{{count}} riferimenti",
+    "count_many": "{{count}} riferimenti",
+    "count_other": "{{count}} riferimenti",
+    "columns": {
+      "referral": "Riferiment",
+      "customer": "Klijent",
+      "project": "Proġett",
+      "sourcePartner": "Sors Imsieħeb",
+      "status": "Status",
+      "booking": "Booking",
+      "registered": "Reġistrat"
+    },
+    "booked": "Ibbukkjat",
+    "empty": "S'issa l-ebda referenza."
+  },
+  "detail": {
+    "customer": "Klijent",
+    "sourcePartner": "Sors Imsieħeb",
+    "attributionNote": "(attribuzzjoni - ma tistax tinbidel)",
+    "leadStatus": "Status ta' Ċomb",
+    "protectedUntil": "Protetti Sakemm",
+    "referral": "Riferiment",
+    "reason": "Raġuni: {{reason}}",
+    "booking": "Booking",
+    "bookedOwner": "Ibbukkjat - int is-sid operattiv",
+    "notBooked": "Mhux ibbukkjat",
+    "sharedAfterBooking": "Maqsuma wara l-ibbukkjar",
+    "accept": "Aċċetta Riferiment",
+    "confirmBooking": "Ikkonferma Booking",
+    "reject": "Tiċħad Riferiment",
+    "rejectReasonLabel": "Raġuni għar-rifjut (muri lis-sieħeb) *",
+    "rejectConfirm": "Tiċħad",
+    "confirmBookingPrompt": "Ikkonferma l-prenotazzjoni? Is-sjieda operattiva tgħaddi lilek u s-sieħeb isir eliġibbli għall-kummissjoni.",
+    "notice": {
+      "booked": "Booking ikkonfermat.",
+      "accepted": "Referenza aċċettata.",
+      "rejected": "Riferiment miċħud."
+    },
+    "backToReferrals": "Lura għar-Riferimenti"
+  },
+  "history": {
+    "title": "Storja",
+    "actor": {
+      "system": "Sistema",
+      "partner": "Imsieħeb fil-kanal",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Ir-reġistrazzjoni tal-imsieħba riċevuta",
+      "DUPLICATE_CHECK_COMPLETED": "Kontroll duplikat komplut - ma nstab l-ebda duplikat attiv",
+      "REGISTRATION_ACCEPTED": "Reġistrazzjoni aċċettata",
+      "PROTECTION_GRANTED_one": "{{count}} -jum protezzjoni mogħtija",
+      "PROTECTION_GRANTED_two": "{{count}} -jum protezzjoni mogħtija",
+      "PROTECTION_GRANTED_few": "{{count}} -jum protezzjoni mogħtija",
+      "PROTECTION_GRANTED_many": "{{count}} -jum protezzjoni mogħtija",
+      "PROTECTION_GRANTED_other": "{{count}} -jum protezzjoni mogħtija",
+      "STAGE_UPDATED": "Status aġġornat għal {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Qasam aġġornat ta' {{count}}",
+      "LEAD_DETAILS_UPDATED_two": "{{count}} oqsma aġġornati",
+      "LEAD_DETAILS_UPDATED_few": "{{count}} oqsma aġġornati",
+      "LEAD_DETAILS_UPDATED_many": "{{count}} oqsma aġġornati",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} oqsma aġġornati",
+      "LEAD_ASSIGNED": "Assenjat lil {{name}}",
+      "LEAD_UNASSIGNED": "Mhux assenjat",
+      "REFERRAL_ACCEPTED": "Il-bennej aċċetta r-referenza",
+      "REFERRAL_REJECTED": "Il-bennej ċaħad ir-riferiment. Raġuni: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Attentat ta' reġistrazzjoni doppja minn {{partner}} miċħud",
+      "BOOKING_COMPLETED": "Booking lest",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Sjieda operattiva trasferita lil Bennej",
+      "PARTNER_ATTRIBUTION_PRESERVED": "L-attribuzzjoni tas-sieħeb ippreservata",
+      "COMMISSION_ELIGIBILITY_CREATED": "Eliġibilità tal-Kummissjoni maħluqa",
+      "HANDOVER_COMPLETED": "Trasferiment tlesta",
+      "ADMIN_PROTECTION_RELEASED": "L-amministratur ħareġ protezzjoni duplikata kmieni. Raġuni: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "L-amministratur ta reġistrazzjoni mill-ġdid minn {{from}} għal {{to}} . Raġuni: {{reason}}"
+    }
+  }
+}

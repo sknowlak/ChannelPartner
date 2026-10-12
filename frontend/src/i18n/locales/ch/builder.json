@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal i Manma'titinas",
+    "referrals": "Manma'ayek",
+    "builderLogin": "Login i Manma'titinas",
+    "partnerLogin": "Login i Sosio gi i Kanål"
+  },
+  "login": {
+    "title": "Siña i manma'titinas guma'",
+    "hint": "I kuenta siha ni' ma fa'tinas ni Leadrat . faisen i administradot-mu yanggen taya' unu-mu."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Hu hasso i disision-mu",
+    "ACCEPTED": "Ma aksepta",
+    "REJECTED": "Ma na'suha"
+  },
+  "list": {
+    "title": "Manma'ayek",
+    "allProjects": "Todu i prohektos",
+    "allStatuses": "Todu estao",
+    "count_one": "{{count}} referral",
+    "count_other": "{{count}} na manma'ayek",
+    "columns": {
+      "referral": "Riferi",
+      "customer": "Kustomer",
+      "project": "Proyecto",
+      "sourcePartner": "Sosio ni' ginen i fuetsan-ña",
+      "status": "Estadu",
+      "booking": "Manma'ayek",
+      "registered": "Ma rehistra"
+    },
+    "booked": "Ma'apåsi",
+    "empty": "Taya' referral på'go."
+  },
+  "detail": {
+    "customer": "Kustomer",
+    "sourcePartner": "Sosio ni' ginen i fuetsan-ña",
+    "attributionNote": "(attribution - ti siña ma na'lå'la')",
+    "leadStatus": "Estao i Lider",
+    "protectedUntil": "Maprotehi asta",
+    "referral": "Riferi",
+    "reason": "Rason: {{reason}}",
+    "booking": "Manma'ayek",
+    "bookedOwner": "Ma'ayek - hagu i ga'ga' i operasion",
+    "notBooked": "Ti ma'apåsi",
+    "sharedAfterBooking": "Ma nå'i despues di ma boka",
+    "accept": "Acepta i Manma'agang",
+    "confirmBooking": "Konfitma i Booking",
+    "reject": "Na'suha i Manma'agang",
+    "rejectReasonLabel": "Rason para u ma'abandona (ma'a'atan i asagua-ña) *",
+    "rejectConfirm": "Diroga",
+    "confirmBookingPrompt": "Un konfitma i inayek? I propiedåt operasion para hagu ya i sosio siña ha risibi kumision.",
+    "notice": {
+      "booked": "Ma konfitma i inayek.",
+      "accepted": "Ma aksepta i riniferi.",
+      "rejected": "Ma na'suha i riniferi."
+    },
+    "backToReferrals": "Tåtte gi i Manma'ayek"
+  },
+  "history": {
+    "title": "Ma'pos na tiempo",
+    "actor": {
+      "system": "Sistema",
+      "partner": "Sosio gi i kanål",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Ma risibi i rehistrasion i sosio",
+      "DUPLICATE_CHECK_COMPLETED": "Ma kumple i che'cho' duplikao - taya' duplikao ni' ma sodda'",
+      "REGISTRATION_ACCEPTED": "Ma aksepta i rehistrasion",
+      "PROTECTION_GRANTED_one": "{{count}} -diha na pruteksion ma nå'i",
+      "PROTECTION_GRANTED_other": "{{count}} -diha na pruteksion ma nå'i",
+      "STAGE_UPDATED": "Estao ma'aprueba para {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Ma'aprueba {{count}} na lugåt",
+      "LEAD_DETAILS_UPDATED_other": "Ma'aprueba {{count}} na lugåt siha",
+      "LEAD_ASSIGNED": "Ma asigna para {{name}}",
+      "LEAD_UNASSIGNED": "Ti ma'ayek",
+      "REFERRAL_ACCEPTED": "Ha ayek i manma'titinas i guma'",
+      "REFERRAL_REJECTED": "Ha na'suha i konstruksion i referensia. Rason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Ma na'suha i dos na intension rehistrasion ni' {{partner}}",
+      "BOOKING_COMPLETED": "Ma kumple i reservasion",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "I propiedåt operasionåt ma transfåra para i Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Ma na'setbe i atribusion i asagua",
+      "COMMISSION_ELIGIBILITY_CREATED": "Ma na'huyong i kualifikåsion para i kumision",
+      "HANDOVER_COMPLETED": "Ma kumple i inayek",
+      "ADMIN_PROTECTION_RELEASED": "Ha na'huyong i admin i pruteksion ni' duplikao gi i tutuhon. Rason: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "I Admin ha na'lå'la' i rehistrasion ginen {{from}} asta {{to}} . Rason: {{reason}}"
+    }
+  }
+}

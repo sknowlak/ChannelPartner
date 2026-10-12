@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Ehitajate portaal",
+    "referrals": "Soovitused",
+    "builderLogin": "Ehitaja sisselogimine",
+    "partnerLogin": "Kanali partneri sisselogimine"
+  },
+  "login": {
+    "title": "Ehitaja sisselogimine",
+    "hint": "Builderi kontod loob Leadrat . Küsige oma administraatorilt, kui teil seda pole."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Ootan teie otsust",
+    "ACCEPTED": "Vastu võetud",
+    "REJECTED": "Tagasi lükatud"
+  },
+  "list": {
+    "title": "Soovitused",
+    "allProjects": "Kõik projektid",
+    "allStatuses": "Kõik olekud",
+    "count_one": "{{count}} viide",
+    "count_other": "{{count}} soovitust",
+    "columns": {
+      "referral": "Suunamine",
+      "customer": "Klient",
+      "project": "Projekt",
+      "sourcePartner": "Allikas partner",
+      "status": "Olek",
+      "booking": "Broneerimine",
+      "registered": "Registreeritud"
+    },
+    "booked": "Broneeritud",
+    "empty": "Soovitusi veel pole."
+  },
+  "detail": {
+    "customer": "Klient",
+    "sourcePartner": "Allikas partner",
+    "attributionNote": "(omistus – ei saa muuta)",
+    "leadStatus": "Juhti olek",
+    "protectedUntil": "Kaitstud kuni",
+    "referral": "Suunamine",
+    "reason": "Põhjus: {{reason}}",
+    "booking": "Broneerimine",
+    "bookedOwner": "Broneeritud – olete tegevomanik",
+    "notBooked": "Pole broneeritud",
+    "sharedAfterBooking": "Jagatud pärast broneerimist",
+    "accept": "Nõustuge suunamisega",
+    "confirmBooking": "Kinnitage broneering",
+    "reject": "Keeldu suunamisest",
+    "rejectReasonLabel": "Tagasilükkamise põhjus (näitatakse partnerile) *",
+    "rejectConfirm": "Keeldu",
+    "confirmBookingPrompt": "Kas broneering kinnitada? Tegevusomandiõigus liigub teile ja partneril on õigus saada vahendustasu.",
+    "notice": {
+      "booked": "Broneering kinnitatud.",
+      "accepted": "Saatekiri vastu võetud.",
+      "rejected": "Suunamine lükati tagasi."
+    },
+    "backToReferrals": "Tagasi viidete juurde"
+  },
+  "history": {
+    "title": "Ajalugu",
+    "actor": {
+      "system": "Süsteem",
+      "partner": "Kanali partner",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Partneri registreerimine on kätte saadud",
+      "DUPLICATE_CHECK_COMPLETED": "Duplikaadi kontroll lõpetatud – aktiivset duplikaati ei leitud",
+      "REGISTRATION_ACCEPTED": "Registreerimine vastu võetud",
+      "PROTECTION_GRANTED_one": "{{count}} päevane kaitse on antud",
+      "PROTECTION_GRANTED_other": "{{count}} päevane kaitse on antud",
+      "STAGE_UPDATED": "Olek värskendati {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Värskendatud {{count}} väli",
+      "LEAD_DETAILS_UPDATED_other": "Värskendatud {{count}} välja",
+      "LEAD_ASSIGNED": "Määratud kasutajale {{name}}",
+      "LEAD_UNASSIGNED": "Määramata",
+      "REFERRAL_ACCEPTED": "Ehitaja võttis soovituse vastu",
+      "REFERRAL_REJECTED": "Builder lükkas suunamise tagasi. Põhjus: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Partneri {{partner}} duplikaat registreerimiskatse lükati tagasi",
+      "BOOKING_COMPLETED": "Broneerimine lõpetatud",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Tegevusomandiõigus läks üle Builderile",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partneri omistamine on säilinud",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komisjoni abikõlblikkus on loodud",
+      "HANDOVER_COMPLETED": "Üleandmine lõpetatud",
+      "ADMIN_PROTECTION_RELEASED": "Administraator vabastas duplikaatkaitse varakult. Põhjus: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Administraator määras registreerimise ümber asukohalt {{from}} kasutajaks {{to}} . Põhjus: {{reason}}"
+    }
+  }
+}

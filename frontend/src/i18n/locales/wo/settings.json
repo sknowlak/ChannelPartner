@@ -1,0 +1,244 @@
+{
+  "page": {
+    "title": "Jekkal",
+    "noPermission": "Amul sañ-sañu yoriinu jekkal yi."
+  },
+  "categories": {
+    "lead": "Jiite",
+    "user": "Jëfandikukat",
+    "integrations": "boole"
+  },
+  "leadTabs": {
+    "fields": "Tool",
+    "statuses": "Status yi ak sous-status yi",
+    "notifications": "yëgle yi ak waajalkat yi"
+  },
+  "fields": {
+    "leadIntro": "Taxawal formileeru jàpp prospekt bi: may/def barab yi, màrkal leen ni dañu leen soxla, wala nga yokk barab yi nga bëgg.",
+    "userIntro": "Taxawal formileeru Yokk/Soppi Ndawu Ekip bi: may/def barab yi, màrkal leen ni dañu soxla, wala nga yokk say barab yu la mëna tànn.",
+    "addCustomField": "+ Yokk barab buñ jagleel",
+    "fieldLabel": "Etiketu barab",
+    "group": "Mbooloo",
+    "groupPlaceholderLead": "lu melni leeral ci laaj",
+    "groupPlaceholderUser": "misaal yeneen leeral",
+    "dataType": "Xeetu done",
+    "options": "Tànneef yi (ñu tàqale ci virgule)",
+    "requiredLead": "Dafay laaj - say naataango ci sa ekip dañu wara joxe lii ngir mëna am prospekt",
+    "requiredUser": "Dafay laaj - dañu ko wara joxe sooy yokk benn waa ekip",
+    "creating": "Defar...",
+    "createField": "Sosal barab",
+    "columns": {
+      "field": "Tool yar",
+      "group": "Mbooloo",
+      "type": "Xeet tàppe",
+      "required": "Sant",
+      "enabled": "Aktiwise",
+      "kind": "Xeet"
+    },
+    "kind": {
+      "custom": "Tàmm",
+      "core": "Core (ñu tëju)",
+      "standard": "Tolluwaay bu jaar yoon"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Juddoowaale",
+    "TEXTAREA": "Bind bu gudd",
+    "NUMBER": "Lijjanti",
+    "CURRENCY": "Xaalis",
+    "DATE": "Jamono jii",
+    "SELECT": "Dropdown",
+    "LIST": "Kayitu firnde"
+  },
+  "picker": {
+    "searchPlaceholder": "Seetal barabi njiit...",
+    "summary": "{{shown}} ñu wane · {{mandatory}} fàww",
+    "mandatory": "Mënul",
+    "noMatch": "Amul benn barab bu méngoo."
+  },
+  "statuses": {
+    "intro": "Sa statut prospect ak sub-status - li ku nekk ci ñoom laaj (bis & waxtu, barabi prospect) su amee ku yeesal prospect ci moom.",
+    "add": "+ Yokk Status",
+    "columns": {
+      "order": "Sant",
+      "status": "Tolluwaay nekkin",
+      "subStatuses": "Sous-status",
+      "asksFor": "Laaj ngir",
+      "active": "Sawar"
+    },
+    "moveUp": "Toxu ci kaw",
+    "moveDown": "Wàcci",
+    "defaultBadge": "Default ngir prospect yu bees",
+    "bookingBadge": "Tolluwaayu reservation",
+    "asksForLabel": "Laaj {{label}}",
+    "asksForDateTime": "Laajte bis bi ak waxtu wi",
+    "none": "Darra",
+    "dateTime": "Bis ak waxtu",
+    "scheduledOn": "ci {{names}}",
+    "fieldsSummary_other": "{{count}} barab yi ( {{mandatory}} fàww)",
+    "deleteConfirm": "efaase tolluwaayu \" {{name}} \"? Loolu mënu ñu ko delloo.",
+    "editTitle": "Soppi tolluwaayu - {{name}}",
+    "newTitle": "Status bu bees",
+    "name": "Tur Status",
+    "colour": "Melni",
+    "active": "Sawar",
+    "isDefault": "Status biñ jagleel prospect yu bees yi",
+    "isBooking": "Status reservation (def ko ci Reservation bu mat)",
+    "whenMoved": "Suñu toxalee ab prospect ci anam wii",
+    "askSchedule": "Laajteel bis bi ak waxtu wi (programer bi)",
+    "scheduleLabelPlaceholder": "Etiketu, lu melni Seeti ci",
+    "fieldsToShow": "Barabi njiit yi nga wara wane ci formileeru yeesal bi",
+    "subStatusesTitle": "Sous-status",
+    "subStatusesHint": "Bépp sous-status mën na laaj bis & waxtu boppam ba noppi yokk ay barabam - ñu ko wane ci kaw barabi statut yi ci kaw.",
+    "subStatusName": "Turu sous-status",
+    "subFields": "Barab yi ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Bis & waxtu etiketu, lu melni woowaat ci",
+    "addSubStatus": "+ Yokk sous-status",
+    "saveStatus": "Sanc Status",
+    "createStatus": "Sosal Status"
+  },
+  "notifications": {
+    "intro": "Yegal nit ñi war su prospect bi yeggee ci staas - ci saasi, wala waxtu buñ tëral balaa / ginaaw bis bi ak waxtu wiñ ko tëral.",
+    "add": "+ Yokk yëgle",
+    "columns": {
+      "notification": "yëgle",
+      "whenStatusIs": "Bi Status bi",
+      "sends": "Yonnee",
+      "to": "Ngir",
+      "via": "Bu jaar ci",
+      "enabled": "Aktiwise"
+    },
+    "anyStatus": "Bépp statut",
+    "anySubStatus": "Bépp sous-status",
+    "inactiveOption": "{{name}} (amul benn dox)",
+    "emptyRules": "Ba leegi amagul benn yëgle - yokkal benn ngir yëgal sa ekip su lead bi yeggee ci status.",
+    "jobs": {
+      "title": "Ñu ngi ko waajal & yónnee",
+      "firesAt": "lakk ci",
+      "notification": "yëgle",
+      "lead": "Jiite",
+      "status": "Tolluwaay nekkin",
+      "details": "Yu sew",
+      "empty": "Ba leegi amagul dara luñu nara def wala luñu ko yónnee.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Xaarandi",
+      "PROCESSING": "Liggéeyukaay",
+      "SENT": "Yónniwoon",
+      "FAILED": "Lajj lajjal",
+      "SKIPPED": "Dañu sànni",
+      "CANCELLED": "fomm"
+    },
+    "deliveryStatus": {
+      "SENT": "yónniwoon",
+      "FAILED": "lajj lajjal",
+      "SKIPPED": "salte"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ci biir aplikaasioŋ",
+      "EMAIL": "imeel",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Jëfandikukat biñ jox",
+      "owner": "Borom",
+      "updatedBy": "yeesal ko",
+      "role": "Rol: {{name}}"
+    },
+    "channels": {
+      "inApp": "Ci biir aplikaasioŋ",
+      "email": "Imeel",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "efaase yëgle bi \" {{name}} \"? Dañu fomm fàttaliku yi ciy xaar.",
+    "testPrompt": "Yonnee sa bopp ab test ci yëgle bii (ci biir aplikaasioŋ bi) nga jëfandikoo ban ID prospect ?",
+    "testSent": "Yonnee nañu ko ci sa kolone: {{title}} {{message}}",
+    "headersInvalid": "Boppu Webhook dañu wara am JSON bu baax, lu ci melni {\"Ndigal\": \"Porteur xyz\"}",
+    "editTitle": "Soppi yëgle bi",
+    "newTitle": "yëgle bu bees",
+    "name": "Tur",
+    "namePlaceholder": "lu melni fàttaliku dem ci sit bi",
+    "whenStatus": "Sudee statutu prospekt bi",
+    "subStatus": "Sous-status",
+    "send": "Yonnee (programer)",
+    "custom": "Tàmm...",
+    "modeBefore": "balaa waxtu biñ nara def",
+    "modeAfter": "ginaaw waxtu biñ jàpp",
+    "noScheduleWarning": "Status bii laajul bis & waxtu, kon yëgle \"balaa/ci/ganaw waxtu biñ jàpp\" du musa génn.",
+    "noScheduleFix": "Taalal <strong>Laaj bis ak waxtu</strong> ci suufu Status & Sub-Status, wala nga yónnee ko ci saasi.",
+    "sendTo": "Yonnee ci (bépp boole)",
+    "recipientAssigned": "Jëfandikukat biñ jox (boroom bi jiite)",
+    "recipientOwner": "Boroom kontu bi / admin",
+    "recipientUpdatedBy": "Nit ku yeesal tolluwaayu mbir mi",
+    "everyoneWithRole": "Ku nekk ci ñoom am cër",
+    "specificUsers": "Jëfandikukat yuñ tànn (aktif)",
+    "inactiveNever": "Jëfandikukat yi deful dara duñu musa am yëgle doonte dañu leen tànn.",
+    "deliverVia": "Yobbu jaaraleko ci",
+    "channelInApp": "Ci biir aplikaasioŋ (cloche)",
+    "channelEmail": "Imeel",
+    "channelWebhook": "Webhook (joxekatu WhatsApp / SMS )",
+    "emailHint": "Imeel dafay dem ci adres imeel bu jotkat bu nekk te fàww ñu defar SMTP ci serwër bi (backend/.env); ba keroog ñuy dugal imeel yi ñuy sànni.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Boppu ( JSON )",
+    "content": "ëmbiitu yëgle",
+    "title": "Boppu",
+    "message": "Bataaxal",
+    "insertIntoTitle": "Dugalal ci Titre bi",
+    "insertIntoMessage": "Dugalal ci mesaas bi",
+    "anyLeadField": "Bépp barabu njiit dafay dox itam, lu melni <code1>{{example1}}</code1> wala <code2>{{example2}}</code2> .",
+    "preview": "Preview (misal prospect)",
+    "enabled": "Aktiwise",
+    "saveRule": "Sanc yëgle",
+    "createRule": "Sosal yëgle",
+    "variables": {
+      "customerName": "Tur prospect",
+      "customerMobile": "Lead mobile",
+      "customerEmail": "Imeel",
+      "registrationId": "ID",
+      "status": "Tolluwaay nekkin",
+      "subStatus": "Sous-status",
+      "scheduleAt": "Bis ak waxtu biñ nara def",
+      "assignedTo": "Jëfandikukat biñ jox",
+      "updatedBy": "yeesal ko",
+      "recipient": "Tur ki koy jot",
+      "project": "Mbebët",
+      "notes": "Notu mujjee",
+      "partner": "Tur naataango"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Suñu defaree statut bi ci saasi",
+      "AT": "Ci waxtu wiñ jàpp",
+      "A1D": "1 bis ginaaw waxtu biñ jàpp (xool topp)"
+    },
+    "immediately": "Ci saasi",
+    "atScheduled": "Ci waxtu wiñ jàpp",
+    "before": {
+      "MINUTES_other": "{{count}} simili balaa waxtu biñ jàpp",
+      "HOURS_other": "{{count}} waxtu laata waxtu biñ jàpp",
+      "DAYS_other": "{{count}} ay fan laataa waxtu wiñ jàpp",
+      "WEEKS_other": "{{count}} ayu-bis laata waxtu biñ nara def",
+      "MONTHS_other": "{{count}} ay weer balaa waxtu biñ jàpp",
+      "YEARS_other": "{{count}} at yi laataa waxtu wiñ jàpp"
+    },
+    "after": {
+      "MINUTES_other": "{{count}} simili ginaaw waxtu biñ jàpp",
+      "HOURS_other": "{{count}} waxtu ginaaw waxtu biñ jàpp",
+      "DAYS_other": "{{count}} fan ginaaw waxtu biñ jàpp",
+      "WEEKS_other": "{{count}} ayu-bis ginaaw waxtu biñ jàpp",
+      "MONTHS_other": "{{count}} weer ginaaw waxtu biñ jàpp",
+      "YEARS_other": "{{count}} at ginaaw waxtu biñ jàpp"
+    },
+    "units": {
+      "MINUTES_other": "ay simili",
+      "HOURS_other": "ay waxtu",
+      "DAYS_other": "fan",
+      "WEEKS_other": "ayu-bis",
+      "MONTHS_other": "weer",
+      "YEARS_other": "ay at"
+    }
+  }
+}

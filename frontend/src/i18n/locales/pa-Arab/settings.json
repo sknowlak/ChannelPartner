@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "ترتیبات",
+    "noPermission": "تہاڈے کول ترتیبات دا انتظام کرن دی اجازت نئیں اے۔"
+  },
+  "categories": {
+    "lead": "لیڈ",
+    "user": "ورتن آلا",
+    "integrations": "انضمام"
+  },
+  "leadTabs": {
+    "fields": "کھیت",
+    "statuses": "حیثیتاں تے ذیلی حیثیتاں",
+    "notifications": "نوٹیفکیشنز تے شیڈولر"
+  },
+  "fields": {
+    "leadIntro": "لیڈ کیپچر فارم دی تشکیل کرو: فیلڈز نو فعال / غیر فعال کرو، انہاں نو مطلوبہ طور تے نشان زد کرو، یا اپنی مرضی دے مطابق فیلڈز شامل کرو۔",
+    "userIntro": "ٹیم دے رکن نو شامل کرن/ترمیم کرن دے فارم نو تشکیل دیو: فیلڈز نو فعال/غیر فعال کرو، انہاں نو مطلوبہ طور تے نشان زد کرو، یا اپنی مرضی دے مطابق فیلڈز شامل کرو۔",
+    "addCustomField": "+ اپنی مرضی دے مطابق فیلڈ شامل کرو",
+    "fieldLabel": "فیلڈ لیبل",
+    "group": "گروپ",
+    "groupPlaceholderLead": "مثال دے طور تے انکوائری دی معلومات",
+    "groupPlaceholderUser": "مثلاً اضافی تفصیلات",
+    "dataType": "ڈیٹا دی قسم",
+    "options": "اختیارات (کوما توں وکھرا)",
+    "requiredLead": "ضروری اے - تہاڈی ٹیم دے شراکت داراں نو لیڈ رجسٹر کرن دے لیی ایہ بھرنا ہووے گا",
+    "requiredUser": "ضروری اے - ٹیم دے ممبر نوں شامل کردے ویلے بھرنا ضروری اے",
+    "creating": "بنا رہیا اے...",
+    "createField": "فیلڈ بناؤ",
+    "columns": {
+      "field": "میدان",
+      "group": "گروپ",
+      "type": "ٹائپ کرو",
+      "required": "ضرورت اے",
+      "enabled": "فعال کیتا گیا",
+      "kind": "قسم"
+    },
+    "kind": {
+      "custom": "مخصوص",
+      "core": "کور (بند)",
+      "standard": "معیار"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "متن",
+    "TEXTAREA": "لمبا متن",
+    "NUMBER": "نمر",
+    "CURRENCY": "کرنسی",
+    "DATE": "تریخ",
+    "SELECT": "ڈراپ ڈاؤن",
+    "LIST": "فہرست"
+  },
+  "picker": {
+    "searchPlaceholder": "لیڈ فیلڈز لبھو...",
+    "summary": "{{shown}} وکھایا گیا · {{mandatory}} لازمی",
+    "mandatory": "لازمی",
+    "noMatch": "کوئی کھیت نئیں میل کھاندا۔"
+  },
+  "statuses": {
+    "intro": "تہاڈی لیڈ دی حیثیت تے ذیلی حیثیت - جدوں کوئی لیڈ نو اپ ڈیٹ کردا اے تے ہر اک کی منگدا اے (تاریخ تے ویلہ، لیڈ فیلڈز)۔",
+    "add": "+ حیثیت شامل کرو",
+    "columns": {
+      "order": "حکم",
+      "status": "حالت",
+      "subStatuses": "ذیلی حیثیتاں",
+      "asksFor": "منگدا اے",
+      "active": "ترکھا"
+    },
+    "moveUp": "اگے ودھو",
+    "moveDown": "تھلے جاؤ",
+    "defaultBadge": "نویں لیڈز لئی ڈیفالٹ",
+    "bookingBadge": "بکنگ دی حیثیت",
+    "asksForLabel": "{{label}} منگدا اے",
+    "asksForDateTime": "تاریخ تے ویلہ پچھدا اے",
+    "none": "کوئی نئی",
+    "dateTime": "تاریخ تے ویلہ",
+    "scheduledOn": "{{names}} تے",
+    "fieldsSummary_one": "{{count}} فیلڈ ( {{mandatory}} لازمی)",
+    "fieldsSummary_other": "{{count}} فیلڈز ( {{mandatory}} لازمی)",
+    "deleteConfirm": "\" {{name}} \" دی حیثیت نوں مٹا دیو؟ ایہہ واپس نئیں کیتا جا سکدا۔",
+    "editTitle": "حیثیت وچ ترمیم کرو - {{name}}",
+    "newTitle": "نویں حیثیت",
+    "name": "حیثیت دا ناں",
+    "colour": "رنگ",
+    "active": "ترکھا",
+    "isDefault": "نویں لیڈز لئی ڈیفالٹ حیثیت",
+    "isBooking": "بکنگ دی حیثیت (مکمل بکنگ دے ذریعہ مقرر کیتی گئی)",
+    "whenMoved": "جدوں کوئی لیڈ اس حیثیت تے منتقل ہو جاندا اے",
+    "askSchedule": "تاریخ تے ویلہ پچھو (شیڈولر)",
+    "scheduleLabelPlaceholder": "لیبل، مثال دے طور تے ملاحظہ کرو",
+    "fieldsToShow": "اپ ڈیٹ فارم تے وکھان لئی لیڈ فیلڈز",
+    "subStatusesTitle": "ذیلی حیثیتاں",
+    "subStatusesHint": "ہر ذیلی حیثیت اپنی تاریخ تے ویلہ منگ سکدی اے تے اپنے فیلڈز شامل کر سکدی اے - جو اوپر دتے گئے حیثیت دے فیلڈز دے اوپر وکھایا گیا اے۔",
+    "subStatusName": "ذیلی حیثیت دا ناں",
+    "subFields": "فیلڈز ( {{count}} )",
+    "subScheduleLabelPlaceholder": "تاریخ تے ویلے دا لیبل، مثال دے طور تے واپس کال کرو",
+    "addSubStatus": "+ ذیلی حیثیت شامل کرو",
+    "saveStatus": "حیثیت محفوظ کرو",
+    "createStatus": "حیثیت بناؤ"
+  },
+  "notifications": {
+    "intro": "جدوں کوئی لیڈ کسی حیثیت تک پہنچ جاندا اے تے صحیح لوکاں نو مطلع کرو - فوری طور تے، یا اس تے شیڈول کردہ تاریخ تے ویلے توں پہلے / بعد چ اک مقررہ ویلہ۔",
+    "add": "+ نوٹیفکیشن شامل کرو",
+    "columns": {
+      "notification": "نوٹیفکیشن",
+      "whenStatusIs": "جدوں حیثیت ہوندی اے",
+      "sends": "بھیجدا اے",
+      "to": "نوں",
+      "via": "ولوں",
+      "enabled": "فعال کیتا گیا"
+    },
+    "anyStatus": "کوئی وی حیثیت",
+    "anySubStatus": "کوئی ذیلی حیثیت",
+    "inactiveOption": "{{name}} (غیر فعال)",
+    "emptyRules": "ہلے تیکر کوئی نوٹیفکیشن نئیں - جدوں کوئی لیڈ کسی حیثیت تک پہنچ جاندا اے تے اپنی ٹیم نو الرٹ کرن لئی اک شامل کرو۔",
+    "jobs": {
+      "title": "شیڈول کیتا گیا تے گھلیا گیا",
+      "firesAt": "فائرنگ اے",
+      "notification": "نوٹیفکیشن",
+      "lead": "لیڈ",
+      "status": "حالت",
+      "details": "تفصیلاں",
+      "empty": "ہلے تیکر کجھ وی شیڈول نئیں کیتا گیا یا گھلیا نئیں گیا۔",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "التواء اچ",
+      "PROCESSING": "پروسیسنگ",
+      "SENT": "گھلیا",
+      "FAILED": "ناکام ہویا",
+      "SKIPPED": "چھڈ دتا گیا",
+      "CANCELLED": "منسوخ کر دتا گیا"
+    },
+    "deliveryStatus": {
+      "SENT": "گھلیا",
+      "FAILED": "ناکام ہویا",
+      "SKIPPED": "چھڈ دتا گیا"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ان ایپ",
+      "EMAIL": "ای میل",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "تفویض شدہ صارف",
+      "owner": "مالک",
+      "updatedBy": "اپ ڈیٹ کیتا گیا",
+      "role": "کردار: {{name}}"
+    },
+    "channels": {
+      "inApp": "ان ایپ",
+      "email": "ای میل",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "\" {{name}} \" نوٹیفکیشن مٹاؤ؟ اس توں زیر التواء یاد دہانیاں منسوخ کر دتیاں گئیاں ہن۔",
+    "testPrompt": "کیڑی لیڈ ID استعمال کردے ہوئے اپنے آپ نوں (ان ایپ) اس نوٹیفکیشن دا ٹیسٹ بھیجو؟",
+    "testSent": "تہاڈی گھنٹی تے گھلیا گیا: {{title}} {{message}}",
+    "headersInvalid": "Webhook ہیڈرز درست JSON ہونے چاہیدے نیں، مثلاً {\"اختیار\": \"بیئرر xyz\"}",
+    "editTitle": "نوٹیفکیشن چ ترمیم کرو",
+    "newTitle": "نویں نوٹیفکیشن",
+    "name": "ناں دینا",
+    "namePlaceholder": "مثال دے طور تے سائٹ دا دورہ کرن دی یاد دہانی",
+    "whenStatus": "جدوں لیڈ دی حیثیت ہوندی اے",
+    "subStatus": "ذیلی حیثیت",
+    "send": "بھیجو (شیڈولر)",
+    "custom": "مخصوص...",
+    "modeBefore": "طے شدہ ویلے توں پہلاں",
+    "modeAfter": "طے شدہ ویلے دے بعد",
+    "noScheduleWarning": "ایہ حیثیت تاریخ تے ویلہ نئیں منگدی، اس لیی \"مقررہ شدہ ویلے توں پہلاں/وچ/بعد\" دا نوٹیفکیشن کدی وی فائر نئیں ہووے گا۔",
+    "noScheduleFix": "حیثیتاں تے ذیلی حیثیتاں دے تحت اس لئی <strong>تاریخ تے ویلہ پچھو</strong> آن کرو، یا فوری طور تے بھیجو۔",
+    "sendTo": "(کسے وی مجموعہ) نوں بھیجو",
+    "recipientAssigned": "تفویض شدہ صارف (مکھ مالک)",
+    "recipientOwner": "اکاؤنٹ دا مالک / ایڈمن",
+    "recipientUpdatedBy": "اوہ بندہ جس نے حیثیت اپ ڈیٹ کیتی",
+    "everyoneWithRole": "ہر کوئی کردار دے نال",
+    "specificUsers": "مخصوص ورتن آلے (فعال)",
+    "inactiveNever": "غیر فعال صارفین نو کدی وی نوٹیفکیشن نئیں ملدی، بھاویں اوہ منتخب ہون۔",
+    "deliverVia": "دے ذریعے پہنچاؤ",
+    "channelInApp": "ان ایپ (گھنٹی)",
+    "channelEmail": "ای میل",
+    "channelWebhook": "Webhook ( WhatsApp / SMS فراہم کرن آلا)",
+    "emailHint": "ای میل ہر وصول کنندہ دے ای میل ایڈریس تے جاندی اے تے سرور تے SMTP سیٹ اپ کرن دی لوڑ اے (backend/.env); اودوں تیکر ای میل گھلن نوں چھڈن دے طور تے لاگ ان کیتا جاندا اے۔",
+    "webhookUrl": "Webhook URL ( POST ، JSON )",
+    "headers": "ہیڈرز ( JSON )",
+    "content": "نوٹیفکیشن دا مواد",
+    "title": "سرنانواں",
+    "message": "سنیہہ",
+    "insertIntoTitle": "عنوان وچ داخل کرو",
+    "insertIntoMessage": "پیغام وچ داخل کرو",
+    "anyLeadField": "کوئی وی لیڈ فیلڈ وی کم کردا اے، مثلاً <code1>{{example1}}</code1> یا <code2>{{example2}}</code2> ۔",
+    "preview": "پیش نظارہ (نمونہ لیڈ)",
+    "enabled": "فعال کیتا گیا",
+    "saveRule": "نوٹیفکیشن محفوظ کرو",
+    "createRule": "نوٹیفکیشن بناؤ",
+    "variables": {
+      "customerName": "لیڈ دا ناں",
+      "customerMobile": "لیڈ موبائل",
+      "customerEmail": "لیڈ ای میل",
+      "registrationId": "لیڈ ID",
+      "status": "حالت",
+      "subStatus": "ذیلی حیثیت",
+      "scheduleAt": "طے شدہ تاریخ تے ویلہ",
+      "assignedTo": "تفویض شدہ صارف",
+      "updatedBy": "اپ ڈیٹ کیتا گیا",
+      "recipient": "وصول کرن آلے دا ناں",
+      "project": "پروجیکٹ",
+      "notes": "تازہ ترین نوٹ",
+      "partner": "ساتھی دا ناں"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "فوری طور تے جدوں حیثیت مقرر ہو جاندی اے",
+      "AT": "طے شدہ ویلے تے",
+      "A1D": "مقررہ ویلے دے 1 دن بعد (فالو اپ چیک)"
+    },
+    "immediately": "فوری طور تے",
+    "atScheduled": "طے شدہ ویلے تے",
+    "before": {
+      "MINUTES_one": "{{count}} طے شدہ ویلے توں منٹ پہلاں",
+      "MINUTES_other": "{{count}} طے شدہ ویلے توں منٹ پہلے",
+      "HOURS_one": "{{count}} طے شدہ ویلے توں اک گھنٹہ پہلاں",
+      "HOURS_other": "طے شدہ ویلے توں {{count}} گھنٹے پہلاں",
+      "DAYS_one": "{{count}} شیڈول ویلے توں اک دن پہلاں",
+      "DAYS_other": "طے شدہ ویلے توں {{count}} دن پہلے",
+      "WEEKS_one": "{{count}} طے شدہ ویلے توں ہفتہ پہلاں",
+      "WEEKS_other": "طے شدہ ویلے توں {{count}} ہفتے پہلاں",
+      "MONTHS_one": "{{count}} طے شدہ ویلے توں اک مہینہ پہلاں",
+      "MONTHS_other": "{{count}} شیڈول ویلے توں مہینے پہلاں",
+      "YEARS_one": "{{count}} طے شدہ ویلے توں سال پہلاں",
+      "YEARS_other": "طے شدہ ویلے توں {{count}} سال پہلاں"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} طے شدہ ویلے دے منٹ بعد",
+      "MINUTES_other": "طے شدہ ویلے دے بعد {{count}} منٹ",
+      "HOURS_one": "{{count}} شیڈول ویلے توں گھنٹہ بعد",
+      "HOURS_other": "طے شدہ ویلے دے بعد {{count}} گھنٹے",
+      "DAYS_one": "{{count}} شیڈول ویلے توں بعد دا دن",
+      "DAYS_other": "طے شدہ ویلے {{count}} دن بعد",
+      "WEEKS_one": "{{count}} شیڈول ویلے توں ہفتہ بعد",
+      "WEEKS_other": "طے شدہ ویلے دے بعد {{count}} ہفتے",
+      "MONTHS_one": "{{count}} طے شدہ ویلے دے بعد مہینہ",
+      "MONTHS_other": "طے شدہ ویلے {{count}} مہینے بعد",
+      "YEARS_one": "{{count}} طے شدہ ویلے دے سال بعد",
+      "YEARS_other": "طے شدہ ویلے {{count}} سال بعد"
+    },
+    "units": {
+      "MINUTES_one": "منٹ",
+      "MINUTES_other": "منٹ",
+      "HOURS_one": "گھنٹہ",
+      "HOURS_other": "گھنٹے",
+      "DAYS_one": "دن",
+      "DAYS_other": "دن",
+      "WEEKS_one": "ہفتہ",
+      "WEEKS_other": "ہفتے",
+      "MONTHS_one": "ماہ",
+      "MONTHS_other": "مہینے",
+      "YEARS_one": "سال",
+      "YEARS_other": "ورھے"
+    }
+  }
+}

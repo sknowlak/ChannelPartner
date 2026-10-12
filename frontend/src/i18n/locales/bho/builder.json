@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "बिल्डर पोर्टल के बा",
+    "referrals": "रेफरल के बारे में बतावल गइल बा",
+    "builderLogin": "बिल्डर लॉगिन के बा",
+    "partnerLogin": "चैनल पार्टनर लॉगिन के बा"
+  },
+  "login": {
+    "title": "बिल्डर साइन इन करे के बा",
+    "hint": "बिल्डर खाता Leadrat के बनावल बा . अपना प्रशासक से पूछीं कि रउरा लगे नइखे कि ना."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "राउर फैसला के इंतजार बा",
+    "ACCEPTED": "स्वीकार कइल गइल",
+    "REJECTED": "खारिज कर दिहल गइल"
+  },
+  "list": {
+    "title": "रेफरल के बारे में बतावल गइल बा",
+    "allProjects": "सभे परियोजना के बारे में बतावल गईल बा",
+    "allStatuses": "सब स्टेटस के बा",
+    "count_one": "{{count}} रेफरल कइल जाला",
+    "count_other": "{{count}} रेफरल के बा",
+    "columns": {
+      "referral": "रेफर कइल गइल",
+      "customer": "गहकी",
+      "project": "परियोजना",
+      "sourcePartner": "स्रोत साझेदार के बा",
+      "status": "ओहदा",
+      "booking": "बुकिंग हो रहल बा",
+      "registered": "पंजीकृत हो गइल बा"
+    },
+    "booked": "बुकिंग हो गइल बा",
+    "empty": "अबहीं ले कवनो रेफरल नइखे भइल."
+  },
+  "detail": {
+    "customer": "गहकी",
+    "sourcePartner": "स्रोत साझेदार के बा",
+    "attributionNote": "(एट्रिब्यूशन - बदलल नइखे जा सकत)",
+    "leadStatus": "सीसा के स्थिति बा",
+    "protectedUntil": "संरक्षित बा जब तक",
+    "referral": "रेफर कइल गइल",
+    "reason": "कारण: {{reason}} बा।",
+    "booking": "बुकिंग हो रहल बा",
+    "bookedOwner": "बुक भइल - रउआ परिचालन मालिक बानी",
+    "notBooked": "बुकिंग नइखे भइल",
+    "sharedAfterBooking": "बुकिंग के बाद साझा कईल गईल",
+    "accept": "रेफरल के स्वीकार करीं",
+    "confirmBooking": "बुकिंग के पुष्टि करीं",
+    "reject": "रेफरल के अस्वीकार कर दिहल जाव",
+    "rejectReasonLabel": "अस्वीकार करे के कारण (साथी के देखावल गइल) *",
+    "rejectConfirm": "नामंजूर कईल",
+    "confirmBookingPrompt": "बुकिंग के पुष्टि करीं? परिचालन स्वामित्व रउरा लगे चल जाला आ साझेदार कमीशन के पात्र हो जाला.",
+    "notice": {
+      "booked": "बुकिंग के पुष्टि हो गईल।",
+      "accepted": "रेफरल स्वीकार कइल गइल.",
+      "rejected": "रेफरल खारिज कर दिहल गइल."
+    },
+    "backToReferrals": "रेफरल पर वापस आ जाईं"
+  },
+  "history": {
+    "title": "इतिहास",
+    "actor": {
+      "system": "प्रणाली",
+      "partner": "चैनल के साझेदार बा",
+      "admin": "Leadrat एडमिन के बा"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "साझीदार के रजिस्ट्रेशन मिल गइल",
+      "DUPLICATE_CHECK_COMPLETED": "डुप्लिकेट जांच पूरा हो गइल - कवनो सक्रिय डुप्लिकेट ना मिलल",
+      "REGISTRATION_ACCEPTED": "रजिस्ट्रेशन स्वीकार कइल गइल",
+      "PROTECTION_GRANTED_one": "{{count}} -दिन के सुरक्षा दिहल गइल",
+      "PROTECTION_GRANTED_other": "{{count}} -दिन के सुरक्षा दिहल गइल",
+      "STAGE_UPDATED": "स्थिति {{stage}} में अपडेट कइल गइल बा।",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} फील्ड के अपडेट कइल गइल बा",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} फील्ड के अपडेट कइल गइल",
+      "LEAD_ASSIGNED": "{{name}} के सौंपल गइल बा।",
+      "LEAD_UNASSIGNED": "बिना असाइन कइल गइल बा",
+      "REFERRAL_ACCEPTED": "बिल्डर रेफरल के स्वीकार क लेले",
+      "REFERRAL_REJECTED": "बिल्डर रेफरल के खारिज क दिहले। कारण: {{reason}} बा।",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} द्वारा डुप्लिकेट रजिस्ट्रेशन के कोसिस खारिज हो गइल",
+      "BOOKING_COMPLETED": "बुकिंग पूरा हो गइल",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "परिचालन स्वामित्व बिल्डर के हस्तांतरित कर दिहल गइल",
+      "PARTNER_ATTRIBUTION_PRESERVED": "साथी के एट्रिब्यूशन संरक्षित बा",
+      "COMMISSION_ELIGIBILITY_CREATED": "आयोग के पात्रता पैदा भइल",
+      "HANDOVER_COMPLETED": "हस्तान्तरण पूरा हो गइल",
+      "ADMIN_PROTECTION_RELEASED": "एडमिन डुप्लिकेट प्रोटेक्शन जल्दी जारी कर दिहले. कारण: {{reason}} बा।",
+      "ADMIN_PARTNER_REASSIGNED": "एडमिन रजिस्ट्रेशन के {{from}} से {{to}} में फिर से सौंप दिहले। कारण: {{reason}} बा।"
+    }
+  }
+}

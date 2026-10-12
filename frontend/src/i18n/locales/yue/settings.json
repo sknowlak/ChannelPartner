@@ -1,0 +1,244 @@
+{
+  "page": {
+    "title": "設定",
+    "noPermission": "你冇權限去管理設定。"
+  },
+  "categories": {
+    "lead": "帶領住",
+    "user": "用戶",
+    "integrations": "整合"
+  },
+  "leadTabs": {
+    "fields": "田野",
+    "statuses": "狀態同子狀態",
+    "notifications": "通知同調度程式"
+  },
+  "fields": {
+    "leadIntro": "設定潛在客戶捕捉表格：啟用/停用欄位、標記佢哋係必填欄位，或者加入你自己嘅自訂欄位。",
+    "userIntro": "設定新增/編輯團隊成員表格：啟用/停用欄位、標記佢哋係必填欄位，或者加入你自己嘅自訂欄位。",
+    "addCustomField": "+ 加入自訂欄位",
+    "fieldLabel": "欄位標籤",
+    "group": "小組",
+    "groupPlaceholderLead": "例如查詢資料",
+    "groupPlaceholderUser": "例如額外嘅詳情",
+    "dataType": "數據類型",
+    "options": "選項（逗號分隔）",
+    "requiredLead": "必須 - 你團隊嘅合作夥伴必須填寫呢份資料先可以註冊潛在客戶",
+    "requiredUser": "必須 - 喺加入團隊成員嗰陣必須填寫",
+    "creating": "創造緊 ...",
+    "createField": "建立欄位",
+    "columns": {
+      "field": "場地",
+      "group": "小組",
+      "type": "種類",
+      "required": "需要",
+      "enabled": "啟用咗",
+      "kind": "和藹"
+    },
+    "kind": {
+      "custom": "習俗",
+      "core": "核心（鎖定）",
+      "standard": "標準"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "文字",
+    "TEXTAREA": "長文字",
+    "NUMBER": "號碼",
+    "CURRENCY": "貨幣",
+    "DATE": "日期",
+    "SELECT": "下拉式選單",
+    "LIST": "清單"
+  },
+  "picker": {
+    "searchPlaceholder": "搜尋潛在客戶欄位 ...",
+    "summary": "{{shown}}顯示 · {{mandatory}}強制",
+    "mandatory": "強制",
+    "noMatch": "冇任何欄位匹配。"
+  },
+  "statuses": {
+    "intro": "你嘅潛在客戶狀態同子狀態 - 當有人更新潛在客戶嗰陣，每個人會要求啲咩（日期同時間、潛在客戶欄位）。",
+    "add": "+ 加入狀態",
+    "columns": {
+      "order": "命令",
+      "status": "地位",
+      "subStatuses": "子狀態",
+      "asksFor": "問緊",
+      "active": "活躍"
+    },
+    "moveUp": "向上移動",
+    "moveDown": "向下移動",
+    "defaultBadge": "新潛在客戶嘅預設",
+    "bookingBadge": "預訂狀態",
+    "asksForLabel": "要求{{label}}",
+    "asksForDateTime": "問日期同時間",
+    "none": "冇",
+    "dateTime": "日期同時間",
+    "scheduledOn": "喺{{names}}上面",
+    "fieldsSummary_other": "{{count}}欄位（ {{mandatory}}強制）",
+    "deleteConfirm": "刪除狀態「 {{name}} 」？呢個係復原唔到嘅。",
+    "editTitle": "編輯狀態 - {{name}}",
+    "newTitle": "新狀態",
+    "name": "狀態名稱",
+    "colour": "顏色",
+    "active": "活躍",
+    "isDefault": "新潛在客戶嘅預設狀態",
+    "isBooking": "預訂狀態（由完成預訂設定）",
+    "whenMoved": "當潛在客戶移至呢個狀態嗰陣",
+    "askSchedule": "問下日期同時間（安排員）",
+    "scheduleLabelPlaceholder": "標籤，例如訪問地點",
+    "fieldsToShow": "喺更新表格上面顯示嘅潛在客戶欄位",
+    "subStatusesTitle": "子狀態",
+    "subStatusesHint": "每個子狀態都可以要求自己嘅日期同時間，同埋加入自己嘅欄位 - 會顯示喺上面狀態嘅欄位頂部。",
+    "subStatusName": "子狀態名稱",
+    "subFields": "欄位（ {{count}} ）",
+    "subScheduleLabelPlaceholder": "日期同時間標籤，例如打返電話去",
+    "addSubStatus": "+ 加入子狀態",
+    "saveStatus": "儲存狀態",
+    "createStatus": "建立狀態"
+  },
+  "notifications": {
+    "intro": "當潛在客戶達到某個狀態嗰陣通知合適嘅人 - 即刻，或者喺預定嘅日期同時間之前/之後嘅一個設定時間。",
+    "add": "+ 加入通知",
+    "columns": {
+      "notification": "通知",
+      "whenStatusIs": "當狀態係",
+      "sends": "發送",
+      "to": "去",
+      "via": "經由",
+      "enabled": "啟用咗"
+    },
+    "anyStatus": "任何狀態",
+    "anySubStatus": "任何子狀態",
+    "inactiveOption": "{{name}} ( 閒置 )",
+    "emptyRules": "仲未有通知 - 加一個通知，喺潛在客戶達到某個狀態嗰陣提醒你嘅團隊。",
+    "jobs": {
+      "title": "預定同發送",
+      "firesAt": "火災喺",
+      "notification": "通知",
+      "lead": "帶領住",
+      "status": "地位",
+      "details": "詳情",
+      "empty": "仲未有任何安排或者發送嘅嘢。",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "待定",
+      "PROCESSING": "處理緊",
+      "SENT": "已發送",
+      "FAILED": "失敗咗",
+      "SKIPPED": "跳過咗",
+      "CANCELLED": "取消咗"
+    },
+    "deliveryStatus": {
+      "SENT": "已發送",
+      "FAILED": "失敗咗",
+      "SKIPPED": "跳過咗"
+    },
+    "deliveryChannel": {
+      "IN_APP": "應用程式內",
+      "EMAIL": "電郵",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "指派咗嘅用戶",
+      "owner": "主人",
+      "updatedBy": "由",
+      "role": "角色： {{name}}"
+    },
+    "channels": {
+      "inApp": "應用程式內",
+      "email": "電郵",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "刪除通知「 {{name}} 」？佢嘅待處理提醒已經取消。",
+    "testPrompt": "用邊個潛在客戶ID將呢個通知嘅測試發送畀你自己（應用程式內）？",
+    "testSent": "傳送到你嘅鐘： {{title}} {{message}}",
+    "headersInvalid": "Webhook標題必須係有效嘅JSON ，例如 { 「授權」：「承載者 xyz 」 }",
+    "editTitle": "編輯通知",
+    "newTitle": "新通知",
+    "name": "名字",
+    "namePlaceholder": "例如現場參觀提醒",
+    "whenStatus": "當潛在客戶嘅狀態係",
+    "subStatus": "子狀態",
+    "send": "發送（調度員）",
+    "custom": "習俗...",
+    "modeBefore": "喺預定時間之前",
+    "modeAfter": "喺預定時間之後",
+    "noScheduleWarning": "呢個狀態唔會要求提供日期同時間，所以「預定時間之前 / 喺 / 之後」通知永遠唔會觸發。",
+    "noScheduleFix": "開啟喺「狀態同子狀態」下面<strong>要求日期同時間</strong>，或者立即發送。",
+    "sendTo": "傳送去（任何組合）",
+    "recipientAssigned": "指派用戶（主要擁有者）",
+    "recipientOwner": "帳戶擁有者/管理員",
+    "recipientUpdatedBy": "更新咗個狀態嘅人",
+    "everyoneWithRole": "每個人都有角色",
+    "specificUsers": "特定用戶（活躍）",
+    "inactiveNever": "就算揀咗，閒置嘅使用者都永遠唔會收到通知。",
+    "deliverVia": "透過送貨",
+    "channelInApp": "應用程式內（鐘聲）",
+    "channelEmail": "電郵",
+    "channelWebhook": "Webhook （ WhatsApp / SMS供應商）",
+    "emailHint": "電郵會去到每個收件人嘅電郵地址，而且需要喺伺服器上面設定 SMTP （後端 / . env ）；喺嗰時之前，電郵發送會被記錄為略過。",
+    "webhookUrl": "Webhook URL （ POST ， JSON ）",
+    "headers": "標題（ JSON ）",
+    "content": "通知內容",
+    "title": "題目",
+    "message": "訊息",
+    "insertIntoTitle": "插入標題",
+    "insertIntoMessage": "插入訊息入面",
+    "anyLeadField": "任何潛在客戶欄位都可以，例如<code1>{{example1}}</code1>或者<code2>{{example2}}</code2> 。",
+    "preview": "預覽（潛在客戶樣本）",
+    "enabled": "啟用咗",
+    "saveRule": "儲存通知",
+    "createRule": "建立通知",
+    "variables": {
+      "customerName": "主要名稱",
+      "customerMobile": "領先手機",
+      "customerEmail": "潛在客戶電郵",
+      "registrationId": "潛在客戶ID",
+      "status": "地位",
+      "subStatus": "子狀態",
+      "scheduleAt": "預定嘅日期同時間",
+      "assignedTo": "指派咗嘅用戶",
+      "updatedBy": "由",
+      "recipient": "收件人姓名",
+      "project": "計劃",
+      "notes": "最新嘅筆記",
+      "partner": "合作夥伴名稱"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "當狀態設定好嗰陣即刻",
+      "AT": "喺預定嘅時間",
+      "A1D": "預定時間後1天（跟進檢查）"
+    },
+    "immediately": "即刻",
+    "atScheduled": "喺預定時間",
+    "before": {
+      "MINUTES_other": "喺預定時間前{{count}}分鐘",
+      "HOURS_other": "喺預定時間前{{count}}個鐘",
+      "DAYS_other": "喺預定時間前{{count}}日",
+      "WEEKS_other": "喺預定時間前{{count}}星期",
+      "MONTHS_other": "喺預定時間前嘅{{count}}個月",
+      "YEARS_other": "喺預定時間前{{count}}年"
+    },
+    "after": {
+      "MINUTES_other": "喺預定時間之後{{count}}分鐘",
+      "HOURS_other": "喺預定時間之後{{count}}個鐘",
+      "DAYS_other": "{{count}}預定時間之後嘅日子",
+      "WEEKS_other": "{{count}}預定時間後幾個星期",
+      "MONTHS_other": "{{count}}個月後預定時間",
+      "YEARS_other": "喺預定時間之後嘅{{count}}年"
+    },
+    "units": {
+      "MINUTES_other": "分鐘",
+      "HOURS_other": "鐘頭",
+      "DAYS_other": "日",
+      "WEEKS_other": "幾個星期",
+      "MONTHS_other": "個月",
+      "YEARS_other": "年"
+    }
+  }
+}

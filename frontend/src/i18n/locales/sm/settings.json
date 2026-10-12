@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Fa'atonu",
+    "noPermission": "E leai sau fa'atagaga e pulea ai fa'atulagaga."
+  },
+  "categories": {
+    "lead": "Ta'ita'i",
+    "user": "Tagata fa'aoga",
+    "integrations": "Tuufaatasiga"
+  },
+  "leadTabs": {
+    "fields": "fanua",
+    "statuses": "Tulaga & La'ititi",
+    "notifications": "Fa'asilasilaga & Fa'atonu"
+  },
+  "fields": {
+    "leadIntro": "Fa'apena le fomu e pu'e ta'imua: fa'aaga/fa'amalo fanua, fa'ailoga mana'omia, pe fa'aopoopo i au lava fanua fa'aleaganu'u.",
+    "userIntro": "Fa'atulaga le Fa'aopoopo/Fa'asa'o le sui o le Vaega: fa'aaga/fa'amalo fanua, fa'ailoga mana'omia, po'o le fa'aopoopoina o au lava fanua fa'aleaganu'u.",
+    "addCustomField": "+ Faʻaopoopo Faʻailoga Faʻapitoa",
+    "fieldLabel": "Fa'ailoga fanua",
+    "group": "Vaega",
+    "groupPlaceholderLead": "fa'ata'ita'iga Fa'amatalaga Fa'amatalaga",
+    "groupPlaceholderUser": "eg Fa'amatalaga Faaopoopo",
+    "dataType": "Ituaiga Fa'amatalaga",
+    "options": "Filifiliga (vavae koma)",
+    "requiredLead": "Mana'omia - e tatau i paaga o lau 'au ona fa'atumu lenei mea e lesitala ai se ta'imua",
+    "requiredUser": "Manaomia - e tatau ona faʻatumu pe a faʻaopoopo se sui o le 'au",
+    "creating": "Fausia...",
+    "createField": "Fausia Field",
+    "columns": {
+      "field": "fanua",
+      "group": "Vaega",
+      "type": "Ituaiga",
+      "required": "Manaomia",
+      "enabled": "Ua mafai",
+      "kind": "Agalelei"
+    },
+    "kind": {
+      "custom": "Aganuu",
+      "core": "Autu (loka)",
+      "standard": "Tulaga"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Tusitusi",
+    "TEXTAREA": "Uumi tusitusiga",
+    "NUMBER": "Numera",
+    "CURRENCY": "Tupe",
+    "DATE": "Aso",
+    "SELECT": "Pa'u i lalo",
+    "LIST": "Lisi"
+  },
+  "picker": {
+    "searchPlaceholder": "Su'e fanua ta'i...",
+    "summary": "{{shown}} fa'aalia · {{mandatory}} fa'atulafonoina",
+    "mandatory": "Fa'atulafonoina",
+    "noMatch": "Leai ni fanua e fetaui."
+  },
+  "statuses": {
+    "intro": "O ou tulaga ta'ita'i ma sub-status - mea e fesili ai tagata ta'ito'atasi (se aso & taimi, ta'ita'i fanua) pe a fa'afouina e se tasi se ta'ita'i i ai.",
+    "add": "+ Faaopoopo Tulaga",
+    "columns": {
+      "order": "Poloaiga",
+      "status": "Tulaga",
+      "subStatuses": "La'asaga Tulaga",
+      "asksFor": "Fesili Mo",
+      "active": "Toaga"
+    },
+    "moveUp": "Sii i luga",
+    "moveDown": "Alu i lalo",
+    "defaultBadge": "Fa'atonu mo ta'ita'i fou",
+    "bookingBadge": "Tulaga tusi",
+    "asksForLabel": "Fesili mo {{label}}",
+    "asksForDateTime": "Fesili mo le aso ma le taimi",
+    "none": "Leai",
+    "dateTime": "Aso & taimi",
+    "scheduledOn": "i {{names}}",
+    "fieldsSummary_one": "{{count}} fanua ( {{mandatory}} fa'atulafonoina)",
+    "fieldsSummary_other": "{{count}} fanua ( {{mandatory}} fa'atulafonoina)",
+    "deleteConfirm": "Ave'ese le tulaga \" {{name}} \"? E le mafai ona faaleaogaina lenei mea.",
+    "editTitle": "Fa'atonu tulaga - {{name}}",
+    "newTitle": "Tulaga Fou",
+    "name": "Tulaga Igoa",
+    "colour": "Lanu",
+    "active": "Toaga",
+    "isDefault": "Tulaga masani mo ta'ita'i fou",
+    "isBooking": "Tulaga o tusi (fa'atulaga e le Fa'auma atoa)",
+    "whenMoved": "Pe a siitia se taʻitaʻi i lenei tulaga",
+    "askSchedule": "Fesili mo se aso & taimi (fa'atonu)",
+    "scheduleLabelPlaceholder": "Fa'ailoga, eg Asiasi i",
+    "fieldsToShow": "Ta'ita'i fanua e fa'aalia ile fomu fa'afouga",
+    "subStatusesTitle": "La'asaga Tulaga",
+    "subStatusesHint": "E mafai e tulaga ta'itasi ta'itasi ona fesili mo lona aso ma le taimi ma fa'aopoopo i ai ona fanua - fa'aalia i luga o fa'atūlaga o lo'o i luga.",
+    "subStatusName": "Su-tulaga igoa",
+    "subFields": "Field ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Fa'ailoga aso & taimi, fa'ata'ita'iga Valaau i tua i",
+    "addSubStatus": "+ Faaopoopo le Tulaga Tulaga",
+    "saveStatus": "Faasaoina Tulaga",
+    "createStatus": "Fausia Tulaga"
+  },
+  "notifications": {
+    "intro": "Fa'ailoa tagata sa'o pe a o'o le ta'ita'i i se tulaga - vave, po'o se taimi fa'atulaga a'o le'i/ina ua uma le aso & taimi ua fa'atulaga i ai.",
+    "add": "+ Faaopoopo le Faasilasilaga",
+    "columns": {
+      "notification": "Faasilasilaga",
+      "whenStatusIs": "Pe a Tulaga",
+      "sends": "Auina atu",
+      "to": "I",
+      "via": "Via",
+      "enabled": "Ua mafai"
+    },
+    "anyStatus": "Soo se tulaga",
+    "anySubStatus": "Soo se tulaga maualalo",
+    "inactiveOption": "{{name}} (le toaga)",
+    "emptyRules": "Leai se fa'amatalaga - fa'aopoopo se tasi e fa'ailoa ai lau 'au pe a o'o le ta'ita'i i se tulaga.",
+    "jobs": {
+      "title": "Fa'atulagaina & Auina",
+      "firesAt": "Afi I",
+      "notification": "Faasilasilaga",
+      "lead": "Ta'ita'i",
+      "status": "Tulaga",
+      "details": "Fa'amatalaga",
+      "empty": "E leai se mea na fa'atulaga pe auina atu.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Faatalitali",
+      "PROCESSING": "Fa'agasologa",
+      "SENT": "Auina atu",
+      "FAILED": "Ua le manuia",
+      "SKIPPED": "Faamisi",
+      "CANCELLED": "Fa'aleaogaina"
+    },
+    "deliveryStatus": {
+      "SENT": "auina atu",
+      "FAILED": "toilalo",
+      "SKIPPED": "faamisi"
+    },
+    "deliveryChannel": {
+      "IN_APP": "i-app",
+      "EMAIL": "imeli",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Tagata fa'aoga tofia",
+      "owner": "Pule",
+      "updatedBy": "Fa'afouina e",
+      "role": "Matafaioi: {{name}}"
+    },
+    "channels": {
+      "inApp": "In-app",
+      "email": "imeli",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Ave'ese fa'amatalaga \" {{name}} \"? O fa'amanatu fa'atali mai ai ua fa'aleaogaina.",
+    "testPrompt": "Auina atu se su'ega o lenei fa'asilasilaga ia te oe (in-app) e fa'aaoga ai ID ta'ita'i?",
+    "testSent": "Auina atu i lou logo: {{title}} {{message}}",
+    "headersInvalid": "O ulutala Webhook e tatau ona aoga JSON , fa'ata'ita'iga {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Fa'atonu Fa'asilasilaga",
+    "newTitle": "Faasilasilaga Fou",
+    "name": "Igoa",
+    "namePlaceholder": "Fa'ata'ita'iga Fa'amanatu ile asiasiga ile nofoaga",
+    "whenStatus": "A o le tulaga o se taitai",
+    "subStatus": "Tulaga maualalo",
+    "send": "Auina atu (fa'atonu)",
+    "custom": "Aganuu...",
+    "modeBefore": "a o lei oo i le taimi faatulagaina",
+    "modeAfter": "pe a uma le taimi faatulagaina",
+    "noScheduleWarning": "O lenei tulaga e le fesili mo se aso & taimi, o lea o se faʻamatalaga \"aʻo leʻi / i / pe a uma le taimi faʻatulagaina\" e le mafai ona mu.",
+    "noScheduleFix": "Fa'aola <strong>Fesili mo se aso & taimi</strong> mo lea mea i lalo o Statuses & Sub-Statuses, pe lafo loa.",
+    "sendTo": "Auina atu i (so'o se tuufaatasiga)",
+    "recipientAssigned": "Tagata fa'aoga tofia (pule pule)",
+    "recipientOwner": "Pule/pule",
+    "recipientUpdatedBy": "Tagata na fa'afou le tulaga",
+    "everyoneWithRole": "O tagata uma e iai le matafaioi",
+    "specificUsers": "Tagata fa'apitoa (gaoioiga)",
+    "inactiveNever": "O tagata le toaga e le maua ni fa'amatalaga, tusa lava pe filifilia.",
+    "deliverVia": "Tiliva e ala",
+    "channelInApp": "In-app (logo)",
+    "channelEmail": "imeli",
+    "channelWebhook": "Webhook ( WhatsApp / SMS kamupani)",
+    "emailHint": "E alu le imeli i tuatusi imeli a tagata taʻitasi ma manaʻomia le seti SMTP i luga o le server (backend/.env); se'ia o'o i le taimi lena e fa'amauina ai fa'amatalaga imeli e pei ua misi.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Ulutala ( JSON )",
+    "content": "Fa'amatalaga fa'amatalaga",
+    "title": "Ulutala",
+    "message": "Savali",
+    "insertIntoTitle": "Faaofi i totonu o le Igoa",
+    "insertIntoMessage": "Faaofi i totonu o le Savali",
+    "anyLeadField": "So'o se fanua ta'ita'i e aoga fo'i, fa'ata'ita'iga <code1>{{example1}}</code1> po'o <code2>{{example2}}</code2> .",
+    "preview": "Fa'ailo (fa'ata'ita'iga ta'ita'i)",
+    "enabled": "Ua mafai",
+    "saveRule": "Faasao Faasilasilaga",
+    "createRule": "Fausia Fa'asilasilaga",
+    "variables": {
+      "customerName": "igoa ta'ita'i",
+      "customerMobile": "Ta'ita'i feavea'i",
+      "customerEmail": "Ta'ita'i imeli",
+      "registrationId": "Ta'ita'i ID",
+      "status": "Tulaga",
+      "subStatus": "Tulaga maualalo",
+      "scheduleAt": "Aso & taimi faatulagaina",
+      "assignedTo": "Tagata fa'aoga tofia",
+      "updatedBy": "Fa'afouina e",
+      "recipient": "Igoa o le tagata e mauaina",
+      "project": "Poloketi",
+      "notes": "Fa'amatalaga lata mai",
+      "partner": "Igoa paaga"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "O le taimi lava e seti ai le tulaga",
+      "AT": "I le taimi faatulagaina",
+      "A1D": "1 le aso pe a uma le taimi faatulagaina (siaki tulitatao)"
+    },
+    "immediately": "vave",
+    "atScheduled": "I le taimi faatulagaina",
+    "before": {
+      "MINUTES_one": "{{count}} minute a'o lumana'i le taimi faatulagaina",
+      "MINUTES_other": "{{count}} minute a'o lumana'i le taimi faatulagaina",
+      "HOURS_one": "{{count}} itula a'o lumana'i le taimi faatulagaina",
+      "HOURS_other": "{{count}} itula a'o lumana'i le taimi faatulagaina",
+      "DAYS_one": "{{count}} aso a'o lumana'i le taimi faatulagaina",
+      "DAYS_other": "{{count}} aso a'o lumana'i le taimi faatulagaina",
+      "WEEKS_one": "{{count}} vaiaso a'o lumana'i le taimi faatulagaina",
+      "WEEKS_other": "{{count}} vaiaso a'o lumana'i le taimi faatulagaina",
+      "MONTHS_one": "{{count}} masina a'o lumana'i le taimi faatulagaina",
+      "MONTHS_other": "{{count}} masina a'o lumana'i le taimi faatulagaina",
+      "YEARS_one": "{{count}} tausaga a'o lumana'i le taimi faatulagaina",
+      "YEARS_other": "{{count}} tausaga a'o lumana'i le taimi faatulagaina"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minute pe a uma le taimi faatulagaina",
+      "MINUTES_other": "{{count}} minute pe a uma le taimi faatulagaina",
+      "HOURS_one": "{{count}} itula pe a uma le taimi faatulagaina",
+      "HOURS_other": "{{count}} itula pe a uma le taimi faatulagaina",
+      "DAYS_one": "{{count}} aso pe a uma le taimi faatulagaina",
+      "DAYS_other": "{{count}} aso pe a uma le taimi faatulagaina",
+      "WEEKS_one": "{{count}} vaiaso pe a uma le taimi faatulagaina",
+      "WEEKS_other": "{{count}} vaiaso pe a uma le taimi faatulagaina",
+      "MONTHS_one": "{{count}} masina pe a uma le taimi faatulagaina",
+      "MONTHS_other": "{{count}} masina pe a uma le taimi faatulagaina",
+      "YEARS_one": "{{count}} tausaga pe a uma le taimi faatulagaina",
+      "YEARS_other": "{{count}} tausaga talu ona uma le taimi faatulagaina"
+    },
+    "units": {
+      "MINUTES_one": "minute",
+      "MINUTES_other": "minute",
+      "HOURS_one": "itula",
+      "HOURS_other": "itula",
+      "DAYS_one": "aso",
+      "DAYS_other": "aso",
+      "WEEKS_one": "vaiaso",
+      "WEEKS_other": "vaiaso",
+      "MONTHS_one": "masina",
+      "MONTHS_other": "masina",
+      "YEARS_one": "tausaga",
+      "YEARS_other": "tausaga"
+    }
+  }
+}

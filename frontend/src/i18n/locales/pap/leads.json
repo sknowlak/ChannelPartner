@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Mi Leadnan",
+    "signedInAs": "A drenta komo {{name}} ( {{partnerId}} ) · oranan mustra den {{timezone}}",
+    "addLead": "+ Agregá Plomo",
+    "tabs": {
+      "all": "Tur ( {{count}} )",
+      "pending": "Pendiente ( {{count}} )",
+      "booked": "Reservá ( {{count}} )"
+    },
+    "searchPlaceholder": "Buska pa nòmber, telefòn selular òf ID di registrashon ...",
+    "manageColumns": "Manehá Kolumnanan",
+    "rowsPerPage": "Filanan pa página",
+    "registrationId": "ID di Registrashon",
+    "emptyState": "No tin pista ainda - registrá bo promé.",
+    "noMatch": "Ningun lead ta kuadra ku e filternan aki.",
+    "showing": "Mustrando {{from}} - {{to}} di {{total}} entradanan",
+    "actions": {
+      "preview": "Previsualisashon i aktualisashon rápido",
+      "history": "Historia",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Bèl"
+    },
+    "pagination": {
+      "first": "Promé página",
+      "previous": "Pagina anterior",
+      "next": "Siguiente página",
+      "last": "Ultimo página"
+    }
+  },
+  "columns": {
+    "status": "Estado",
+    "assignTo": "Asigná Na",
+    "booked": "Reservá",
+    "protectionUntil": "Protekshon Te ku"
+  },
+  "booking": {
+    "booked": "Reservá",
+    "pending": "Na espera di"
+  },
+  "assign": {
+    "unassigned": "No asigná",
+    "owner": "{{name}} (Doño)",
+    "inactive": "{{name}} (inaktivo)",
+    "unknownUser": "Usuario deskonosí",
+    "assignedTo": "Asigná na {{name}}"
+  },
+  "form": {
+    "addTitle": "Agregá Plomo",
+    "editTitle": "Editá Lead",
+    "noPermissionAdd": "Bo no tin pèrmit pa registrá leadnan.",
+    "noPermissionEdit": "Bo no tin pèrmit pa editá leadnan.",
+    "selectPlaceholder": "Selekshoná...",
+    "commaSeparated": "Separá ku kòma",
+    "phonePlaceholder": "Number di telefon",
+    "countryCode": "Kódigo di pais"
+  },
+  "project": {
+    "none": "No tin proyekto ainda (no a referí)",
+    "notInList": "{{project}} (no ta den e lista di proyekto)"
+  },
+  "journey": {
+    "customer": "Kliente",
+    "currentOwner": "Doño aktual",
+    "protectionExpiry": "Kaduká di Protekshon",
+    "leadStatus": "Status di Lider",
+    "scheduled": "Programá",
+    "assignedTo": "Asigná na",
+    "referral": "Referensia",
+    "builderReason": "Motibu di konstruktor: {{reason}}",
+    "bookedHint": "Reservá pa e konstruktor - propiedat operashonal a pasa pa e konstruktor; bo atribushon i eligibilidat pa komishon ta keda.",
+    "notBookedHint": "Reservashonnan ta wòrdu konfirmá dor di e konstruktor unabes ku nan aseptá e referensia.",
+    "quickUpdate": "Aktualisashon Rápido",
+    "leadDetails": "Detayenan di Lead",
+    "progressHistory": "Historia di Progreso",
+    "timesIn": "(ora den {{timezone}} )",
+    "backToMyLeads": "Bek na Mi Leadnan",
+    "editLead": "Editá Lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "No a referí (no tin proyekto)",
+    "PENDING_BUILDER": "Wardando riba konstruktor",
+    "ACCEPTED": "Aseptá pa konstruktor",
+    "REJECTED": "Rechasá pa konstruktor"
+  },
+  "preview": {
+    "ariaLabel": "Previsualisashon di lead",
+    "title": "Previsualisashon di Lead",
+    "source": "Rekurso",
+    "location": "Lugá",
+    "scheduled": "Programá",
+    "registered": "Registrá",
+    "latestNote": "Ultimo Nota",
+    "quickUpdate": "Aktualisashon Rápido",
+    "fullDetails": "Detayenan Kompleto",
+    "editLead": "Editá Lead",
+    "history": "Historia"
+  },
+  "quick": {
+    "assignedTo": "Asigná na",
+    "status": "Estado",
+    "subStatus": "Sub-Status",
+    "selectSubStatus": "Selektá sub-status...",
+    "none": "Niun",
+    "scheduledAt": "Programá pa",
+    "localTime": "ora lokal",
+    "note": "Nota",
+    "notePlaceholder": "Kiko a pasa riba e yamada/bishita aki? (opshonal)",
+    "updateStatus": "Status di Aktualisashon",
+    "statusUpdated": "Status aktualisá",
+    "bookedLocked": "E lead aki ta reservá - su status no por wòrdu kambia mas.",
+    "viewOnly": "Bo por wak e lead aki, pero bo ròl no por aktualisá esaki."
+  },
+  "history": {
+    "title": "Historia - {{registrationId}}",
+    "tabs": {
+      "all": "Tur",
+      "status": "Estado",
+      "assignment": "Ehresisio",
+      "notes": "Notanan"
+    },
+    "doneBy": "Hasi pa {{actor}}",
+    "system": "Sistema",
+    "platforms": {
+      "System": "Sistema",
+      "External": "Eksterno",
+      "Web": "Web",
+      "Mobile": "Selular"
+    },
+    "added": "a agregá",
+    "updated": "aktualisá",
+    "empty": "(bashí)",
+    "noHistory": "No tin historia den e kategoria aki ainda.",
+    "fieldLabels": {
+      "stage": "Estado",
+      "subStatus": "Sub-Status",
+      "scheduledAt": "Orario",
+      "notes": "Notanan",
+      "assignedTo": "Asigná na"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Registrashon di partner a risibí",
+      "DUPLICATE_CHECK_COMPLETED": "Kòntròl di duplikado kompletá - no a haña duplikado aktivo",
+      "REGISTRATION_ACCEPTED": "Inskripshon ta wòrdu aseptá",
+      "PROTECTION_GRANTED_one": "{{count}} -protekshon di dia otorgá",
+      "PROTECTION_GRANTED_other": "{{count}} -protekshon di dia otorgá",
+      "REGISTRATION_ATTEMPT_REJECTED": "Intento di registrashon dupliká di {{partnerId}} a wòrdu rechasá",
+      "LEAD_DETAILS_UPDATED_one": "Kampo {{count}} aktualisá",
+      "LEAD_DETAILS_UPDATED_other": "Kamponan di {{count}} aktualisá",
+      "STAGE_UPDATED": "Status aktualisá na {{status}}",
+      "LEAD_ASSIGNED": "Asigná na {{name}}",
+      "LEAD_UNASSIGNED": "No asigná",
+      "BOOKING_COMPLETED": "Reservashon kompletá",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Propiedat operashonal a wòrdu transferí pa Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribushon di partner konserbá",
+      "COMMISSION_ELIGIBILITY_CREATED": "Eligibilidat pa komishon a wòrdu kreá",
+      "HANDOVER_COMPLETED": "Entrega kompletá",
+      "REFERRAL_ACCEPTED": "Konstruktor a aseptá e referensia",
+      "REFERRAL_REJECTED": "Konstruktor a rechasá e referensia. Motibu: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Atministradó a lansa protekshon di duplikado trempan. Motibu: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin a reasigná registrashon di {{from}} pa {{to}} . Motibu: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Manehá Kolumnanan",
+    "hint": "Hala pa reordená · kontrolá pa mustra",
+    "showAll": "Mustra Tur",
+    "resetDefault": "Reset na Predeterminá"
+  },
+  "filters": {
+    "title": "Filternan",
+    "allProjects": "Tur proyekto",
+    "any": "Kualke",
+    "noFields": "No tin otro terenonan filtrabel aktivá ainda (Konfigurashon > Lead).",
+    "clearAll": "Limpiá Tur"
+  },
+  "phone": {
+    "MISSING": "Number di telefon ta nesesario.",
+    "INVALID": "Por fabor introdusí un number di telefon bálido.",
+    "TOO_SHORT": "Number di telefon ta muchu kòrtiku.",
+    "TOO_LONG": "Number di telefon ta muchu largu.",
+    "INVALID_FOR_COUNTRY": "E number di telefon aki no ta bálido pa {{country}} .",
+    "COUNTRY_MISMATCH": "Por fabor selektá e kódigo di pais korekto.",
+    "NOT_MOBILE": "Por fabor introdusí un number di telefòn selular, no un telefon fiho."
+  }
+}

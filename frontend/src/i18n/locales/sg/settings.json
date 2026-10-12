@@ -1,0 +1,244 @@
+{
+  "page": {
+    "title": "Paramètres",
+    "noPermission": "E yeke na droit ti sara kua na a-paramètre ni ape."
+  },
+  "categories": {
+    "lead": "Yo",
+    "user": "User",
+    "integrations": "Abungbingo ye"
+  },
+  "leadTabs": {
+    "fields": "Ayaka",
+    "statuses": "A-Status & a-Sous-Status",
+    "notifications": "Asango nga na aprogramme"
+  },
+  "fields": {
+    "leadIntro": "Configuré formulaire ti gbungo azo: zi/zi lege na ayanga ti kodoro, marqué ala so a hunda, wala zia ambeni ndo ti mo wani na ndo ni.",
+    "userIntro": "Configuré formulaire ti Ajouter/Editer le membre de l’équipe: zi/zi lege pëpe na ambeni ndo, zia marque na ndo ni so a hunda, wala zia ambeni ndo ti mo wani.",
+    "addCustomField": "+ A zia mbeni ndo na ndo ni",
+    "fieldLabel": "Label ti yaka",
+    "group": "Kundu ti azo",
+    "groupPlaceholderLead": "pn Info ti hundango tënë",
+    "groupPlaceholderUser": "pn Ambeni ye nde .",
+    "dataType": "Mara ti asango",
+    "options": "Options (a kangbi popo ti ala na virgule)",
+    "requiredLead": "A hunda - a lingbi amba ti mo na yâ ti équipe ti mo asigigi na mbeti so ti sû iri ti mbeni zo so ayeke gue na li ni .",
+    "requiredUser": "A hunda - a lingbi a sû iri ti zo na ndo ni na ngoi so a yeke zia mbeni membre ti équipe na ndo ni .",
+    "creating": "Ti leke...",
+    "createField": "Créer champ .",
+    "columns": {
+      "field": "Ndikua ti kusala",
+      "group": "Kundu ti azo",
+      "type": "Mara",
+      "required": "Ahunda ni",
+      "enabled": "A zi lege na ni",
+      "kind": "Nzobe"
+    },
+    "kind": {
+      "custom": "Klient",
+      "core": "Core (a kanga ni)",
+      "standard": "Ngbere ye"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Sungo mbeti",
+    "TEXTAREA": "A yeke yongoro tënë",
+    "NUMBER": "Wungo",
+    "CURRENCY": "Nginza",
+    "DATE": "Lango",
+    "SELECT": "Liste ti descendant",
+    "LIST": "Iri ti aye"
+  },
+  "picker": {
+    "searchPlaceholder": "Gi ti wara akota ndo...",
+    "summary": "{{shown}} a fa · {{mandatory}} a hunda",
+    "mandatory": "Alingbi ti sara ya ni",
+    "noMatch": "Mbeni yaka oko alingbi pëpe."
+  },
+  "statuses": {
+    "intro": "A-statut ti mo ti li nga na akete statut ti mo - ye so zo oko oko ayeke hunda (mbeni lango & l’heure, a-lead ti ndo ni) tongana mbeni zo asara si mbeni lead aga fini na ndo ni.",
+    "add": "+ A zia na ndo ni statut",
+    "columns": {
+      "order": "Hunda",
+      "status": "Dutingo ti zo",
+      "subStatuses": "Akete statut",
+      "asksFor": "Hunda ti tene .",
+      "active": "A sara kua lakuelakue"
+    },
+    "moveUp": "Mo gue na nduzu .",
+    "moveDown": "Mo gue na gbe ni .",
+    "defaultBadge": "Defaut ti afini lead .",
+    "bookingBadge": "Statut ti réservation",
+    "asksForLabel": "Hunda ti wara {{label}}",
+    "asksForDateTime": "Hunda ti hinga lango ni nga na l’heure ni",
+    "none": "Ye oko pepe",
+    "dateTime": "Date & l'heure",
+    "scheduledOn": "na ndo ti {{names}}",
+    "fieldsSummary_other": "{{count}} ayanga ti kodoro ( {{mandatory}} a lingbi)",
+    "deleteConfirm": "Effacé statut \" {{name}} \"? A lingbi ti zi ye so pëpe.",
+    "editTitle": "Modifier statut - {{name}}",
+    "newTitle": "Fini Statut",
+    "name": "Iri ti statut",
+    "colour": "Nzoroko",
+    "active": "A sara kua lakuelakue",
+    "isDefault": "Statut ti defaut ti afini lead .",
+    "isBooking": "Statut ti réservation (a leke ni na lege ti Réservation complète)",
+    "whenMoved": "Tongana a gue na mbeni zo ti gue na lo na statut so .",
+    "askSchedule": "Hunda mbeni lango na l’heure (programme)",
+    "scheduleLabelPlaceholder": "Label, pn Vizite na .",
+    "fieldsToShow": "Akota ndo ti fa na ndo ti formulaire ti mise à jour .",
+    "subStatusesTitle": "Akete statut",
+    "subStatusesHint": "A-sub-status oko oko alingbi ti hunda lango & l’heure ti lo wani na ti zia ambeni ye na ndo ni - so a fa ni na ndo ti ambeni ye ti statut so ayeke na nduzu ge.",
+    "subStatusName": "Iri ti kete statut",
+    "subFields": "Azo ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Date & étiquette ti l’heure, pn. Hiri na 10.00.",
+    "addSubStatus": "+ A zia na ndo ni mbeni kete statut",
+    "saveStatus": "Bata statut",
+    "createStatus": "Créer statut"
+  },
+  "notifications": {
+    "intro": "Fa na azo so alingbi tongana mbeni zo ti fango lege asi na mbeni statut - hio, wala mbeni ngoi so a fa kozoni/na peko ti lango & l’heure so a fa na ndo ni.",
+    "add": "+ A zia mbeni fango tënë na ndo ni",
+    "columns": {
+      "notification": "Fango tënë",
+      "whenStatusIs": "Na ngoi so Statut ni ayeke .",
+      "sends": "A tokua",
+      "to": "Na",
+      "via": "Na lege ti",
+      "enabled": "A zi lege na ni"
+    },
+    "anyStatus": "Statut kue .",
+    "anySubStatus": "Mbeni kete statut kue .",
+    "inactiveOption": "{{name}} (a yeke sala kusala pepe)",
+    "emptyRules": "A yeke wara pëpe a-avis - mo zia mbeni ti gboto mê ti équipe ti mo tongana mbeni zo so ayeke gue na li ni asi na mbeni statut.",
+    "jobs": {
+      "title": "A leke ni & a tokua ni",
+      "firesAt": "Azo ti .",
+      "notification": "Fango tënë",
+      "lead": "Yo",
+      "status": "Dutingo ti zo",
+      "details": "Akete tene",
+      "empty": "A leke mbeni ye wala a tokua ni pëpe.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Angba ti ku",
+      "PROCESSING": "Sarango kua na ni",
+      "SENT": "Atoka ni",
+      "FAILED": "Ati",
+      "SKIPPED": "A hon",
+      "CANCELLED": "A annulé ni"
+    },
+    "deliveryStatus": {
+      "SENT": "atoka ni",
+      "FAILED": "ati",
+      "SKIPPED": "ahon"
+    },
+    "deliveryChannel": {
+      "IN_APP": "na yâ ti application",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "A mû na lo kua",
+      "owner": "Kotazo ti",
+      "updatedBy": "A sara ni na .",
+      "role": "Kusala: {{name}}"
+    },
+    "channels": {
+      "inApp": "Na yâ ti application",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Supprimé asango \" {{name}} \"? A yeke annulé adango bê so ayeke ku ti wara ni.",
+    "testPrompt": "Tokua mbeni test ti notification so na mo wani (na yâ ti appli) na lege ti ID ti lead wa ?",
+    "testSent": "A tokua ni na cloche ti mo: {{title}} {{message}}",
+    "headersInvalid": "A lingbi a-en-tête Webhook aduti JSON so ayeke na lege ni , na tapande {\"Mungo lege\": \"Wafango ye xyz\"}",
+    "editTitle": "Modifié asango",
+    "newTitle": "Fini fango tënë",
+    "name": "Iri",
+    "namePlaceholder": "pn. Rappel ti vizite ti site .",
+    "whenStatus": "Tongana statut ti mbeni mokonzi ayeke .",
+    "subStatus": "Sous-état",
+    "send": "Tokua (programme)",
+    "custom": "Klient...",
+    "modeBefore": "kozoni na ngoi so a fa .",
+    "modeAfter": "na peko ti ngoi so a fa .",
+    "noScheduleWarning": "Statut so ahunda pëpe ti tene a zia mbeni lango na l’heure, tongaso mbeni notification so atene “kozoni/na/na peko ti l’heure so a fa” ayeke za lâ oko pëpe.",
+    "noScheduleFix": "Zia <strong>Hunda mbeni lango & l’heure</strong> ndali ni na gbe ti Status & Sous-Status, wala tokua ni hio.",
+    "sendTo": "Tokua ni na (bungbingo ye kue)",
+    "recipientAssigned": "A mû na lo kua (propriétaire ti li)",
+    "recipientOwner": "Wa ti compte ni / zo ti bango ndo na ndo ni",
+    "recipientUpdatedBy": "Zo so asara si statut ni aga fini .",
+    "everyoneWithRole": "Azo kue so ayeke na kua .",
+    "specificUsers": "Azo so ayeke sara kua na ni (actif)",
+    "inactiveNever": "Azo so ayeke sara kua pëpe ayeke wara lâ oko pëpe asango, même tongana a soro ala.",
+    "deliverVia": "Livrer na lege ti",
+    "channelInApp": "Na yâ ti appli (cloche)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( Zo ti mungo SMS WhatsApp",
+    "emailHint": "Email ayeke gue na adresse e-mail ti zo oko oko so awara ni na a hunda ti tene a leke SMTP na ndo ti serveur ni (backend/.env); juska na ngoi ni so, a yeke sû na mbeti a-email so a tokua ni.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Akota tënë ( JSON )",
+    "content": "Tënë ti fango tënë",
+    "title": "Mama tene",
+    "message": "Mbeti",
+    "insertIntoTitle": "Zia na yâ ti Titre .",
+    "insertIntoMessage": "Zia na yâ ti Message .",
+    "anyLeadField": "Azo kue so ayeke na yâ ti da ni ayeke sara kua nga, na tapande <code1>{{example1}}</code1> wala <code2>{{example2}}</code2> .",
+    "preview": "Aperçu (tapande ti plomb)",
+    "enabled": "A zi lege na ni",
+    "saveRule": "Bata asango",
+    "createRule": "Sara mbeni notification",
+    "variables": {
+      "customerName": "Iri ti plomb",
+      "customerMobile": "Plomb mobile",
+      "customerEmail": "Email ti plomb",
+      "registrationId": "ID ti plomb",
+      "status": "Dutingo ti zo",
+      "subStatus": "Sous-état",
+      "scheduleAt": "Date & l'heure so a leke",
+      "assignedTo": "A mû na lo kua",
+      "updatedBy": "A sara ni na .",
+      "recipient": "Iri ti zo so awara ni",
+      "project": "Kapa",
+      "notes": "Afini note",
+      "partner": "Iri ti mba ti lo"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Hio tongana a leke statut ni .",
+      "AT": "Na ngoi so a fa .",
+      "A1D": "Lango 1 na peko ti ngoi so a fa (bâ ndo na pekoni)"
+    },
+    "immediately": "Hio",
+    "atScheduled": "Na ngoi so a fa .",
+    "before": {
+      "MINUTES_other": "{{count}} penze-ngbonga kozoni na ngoi so a fa",
+      "HOURS_other": "{{count}} angbonga kozoni na ngoi so a fa",
+      "DAYS_other": "{{count}} lango kozoni na ngoi so a fa",
+      "WEEKS_other": "{{count}} ayenga kozoni na ngoi so a fa",
+      "MONTHS_other": "{{count}} nze kozoni na ngoi so a fa",
+      "YEARS_other": "{{count}} angu kozoni na ngoi so a fa"
+    },
+    "after": {
+      "MINUTES_other": "{{count}} penze-ngbonga na peko ti ngoi so a fa",
+      "HOURS_other": "{{count}} angbonga na peko ti ngoi so a fa",
+      "DAYS_other": "{{count}} lango na peko ti ngoi so a fa",
+      "WEEKS_other": "{{count}} ayenga na peko ti ngoi so a fa",
+      "MONTHS_other": "{{count}} nze na peko ti ngoi so a fa",
+      "YEARS_other": "{{count}} ngu na peko ti ngoi so a fa"
+    },
+    "units": {
+      "MINUTES_other": "angbonga",
+      "HOURS_other": "angbonga",
+      "DAYS_other": "alango",
+      "WEEKS_other": "ayenga",
+      "MONTHS_other": "nze",
+      "YEARS_other": "angu"
+    }
+  }
+}
