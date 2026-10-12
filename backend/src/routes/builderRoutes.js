@@ -12,6 +12,7 @@ router.post('/auth/login', loginRateLimit, builderController.login);
 
 router.use(builderAuth);
 router.get('/me', builderController.me);
+router.patch('/me', builderController.updateMe);
 router.patch('/me/password', builderController.changePassword);
 router.get('/projects', builderController.listProjects);
 router.get('/referrals', builderController.listReferrals);

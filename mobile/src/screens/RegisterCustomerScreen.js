@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 import { ActivityIndicator, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { useTranslation } from 'react-i18next';
 import { createLead, listLeadFields, listProjects } from '../api/client';
+import { useDataLabels } from '../i18n/dataLabels';
+import { errorMessage } from '../i18n/errors';
 
 // Registers a lead for the signed-in partner (the server takes the partner
 // from the session - there is no partner field). The project is picked
@@ -13,7 +16,13 @@ function Chips({ options, value, onChange }) {
   return (
     <View style={styles.chips}>
       {options.map((o) => (
-        <TouchableOpacity key={o.value} style={[styles.chip, value === o.value && styles.chipOn]} onPress={() => onChange(o.value)}>
+        <TouchableOpacity
+          key={o.value}
+          style={[styles.chip, value === o.value && styles.chipOn]}
+          onPress={() => onChange(o.value)}
+          accessibilityRole="radio"
+          accessibilityState={{ checked: value === o.value }}
+        >
           <Text style={value === o.value ? styles.chipTextOn : null}>{o.label}</Text>
         </TouchableOpacity>
       ))}
@@ -22,6 +31,8 @@ function Chips({ options, value, onChange }) {
 }
 
 export default function RegisterCustomerScreen({ navigation }) {
+  const { t } = useTranslation(['leads', 'common']);
+  const { fieldLabel, optionLabel } = useDataLabels();
   const [form, setForm] = useState({ name: '', mobile: '', email: '', projectId: '', externalReferenceId: '' });
   const [extra, setExtra] = useState({});
   const [projects, setProjects] = useState([]);
@@ -35,7 +46,7 @@ export default function RegisterCustomerScreen({ navigation }) {
         setProjects(p.projects);
         setRequiredDefs(f.definitions.filter((d) => d.isEnabled && d.isRequired && !BASE_KEYS.includes(d.fieldKey)));
       })
-      .catch((err) => setError(err.response?.data?.reason || err.message));
+      .catch((err) => setError(errorMessage(err)));
   }, []);
 
   const set = (field, value) => setForm((f) => ({ ...f, [field]: value }));
@@ -54,7 +65,7 @@ export default function RegisterCustomerScreen({ navigation }) {
       navigation.replace('RegistrationResult', { result: data });
     } catch (err) {
       if (err.response?.status === 409 && err.response.data) navigation.replace('RegistrationResult', { result: err.response.data });
-      else setError(err.response?.data?.reason || err.message);
+      else setError(errorMessage(err));
     } finally {
       setSubmitting(false);
     }
@@ -64,27 +75,27 @@ export default function RegisterCustomerScreen({ navigation }) {
     <ScrollView contentContainerStyle={styles.container}>
       {error && <Text style={styles.error}>{error}</Text>}
 
-      <Text style={styles.label}>Customer Name *</Text>
+      <Text style={styles.label}>{t('leads:form.customerName')}</Text>
       <TextInput style={styles.input} value={form.name} onChangeText={(v) => set('name', v)} />
 
-      <Text style={styles.label}>Mobile *</Text>
-      <TextInput style={styles.input} value={form.mobile} onChangeText={(v) => set('mobile', v)} keyboardType="phone-pad" placeholder="+91XXXXXXXXXX or 10 digits" />
+      <Text style={styles.label}>{t('leads:form.mobile')}</Text>
+      <TextInput style={styles.input} value={form.mobile} onChangeText={(v) => set('mobile', v)} keyboardType="phone-pad" placeholder={t('leads:form.mobilePlaceholder')} />
 
-      <Text style={styles.label}>Email</Text>
+      <Text style={styles.label}>{t('common:fields.email')}</Text>
       <TextInput style={styles.input} value={form.email} onChangeText={(v) => set('email', v)} keyboardType="email-address" autoCapitalize="none" />
 
-      <Text style={styles.label}>Project (refers the lead to its builder)</Text>
+      <Text style={styles.label}>{t('leads:form.project')}</Text>
       <Chips
-        options={[{ value: '', label: 'No project yet' }, ...projects.map((p) => ({ value: p.projectId, label: `${p.name} - ${p.builderName}` }))]}
+        options={[{ value: '', label: t('leads:form.noProject') }, ...projects.map((p) => ({ value: p.projectId, label: `${p.name} - ${p.builderName}` }))]}
         value={form.projectId}
         onChange={(v) => set('projectId', v)}
       />
 
       {requiredDefs.map((def) => (
         <View key={def.fieldKey}>
-          <Text style={styles.label}>{def.label} *</Text>
+          <Text style={styles.label}>{t('leads:form.requiredLabel', { label: fieldLabel(def) })}</Text>
           {def.dataType === 'SELECT' && def.options?.length ? (
-            <Chips options={def.options.map((o) => ({ value: o, label: o }))} value={extra[def.fieldKey]} onChange={(v) => setExtra((x) => ({ ...x, [def.fieldKey]: v }))} />
+            <Chips options={def.options.map((o) => ({ value: o, label: optionLabel(o) }))} value={extra[def.fieldKey]} onChange={(v) => setExtra((x) => ({ ...x, [def.fieldKey]: v }))} />
           ) : (
             <TextInput
               style={styles.input}
@@ -97,11 +108,11 @@ export default function RegisterCustomerScreen({ navigation }) {
         </View>
       ))}
 
-      <Text style={styles.label}>Your CRM reference (optional)</Text>
+      <Text style={styles.label}>{t('leads:form.crmReference')}</Text>
       <TextInput style={styles.input} value={form.externalReferenceId} onChangeText={(v) => set('externalReferenceId', v)} placeholder="CRM-12345" />
 
       <TouchableOpacity style={styles.button} onPress={submit} disabled={submitting}>
-        {submitting ? <ActivityIndicator color="#fff" /> : <Text style={styles.buttonText}>Register Lead</Text>}
+        {submitting ? <ActivityIndicator color="#fff" accessibilityLabel={t('common:states.loading')} /> : <Text style={styles.buttonText}>{t('leads:form.submit')}</Text>}
       </TouchableOpacity>
     </ScrollView>
   );

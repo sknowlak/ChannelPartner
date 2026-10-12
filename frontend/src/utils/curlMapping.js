@@ -6,6 +6,16 @@
 
 // --- cURL parsing -------------------------------------------------------
 
+// Parse errors keep an English message (tests, logs) and carry an
+// `i18nKey` (integrations namespace) + params so the page can show them in
+// the user's language.
+function parseError(message, i18nKey, i18nParams) {
+  const err = new Error(message);
+  err.i18nKey = i18nKey;
+  err.i18nParams = i18nParams;
+  return err;
+}
+
 // Shell-style tokenizer for the subset of syntax a copied cURL uses:
 // single quotes (literal), double quotes (backslash escapes), and
 // backslash-newline line continuations.
@@ -19,7 +29,7 @@ function tokenize(input) {
     const ch = src[i];
     if (ch === "'") {
       const end = src.indexOf("'", i + 1);
-      if (end === -1) throw new Error('Unclosed single quote in cURL command');
+      if (end === -1) throw parseError('Unclosed single quote in cURL command', 'curl.errors.unclosedSingle');
       current += src.slice(i + 1, end);
       inToken = true;
       i = end + 1;
@@ -30,7 +40,7 @@ function tokenize(input) {
         current += src[i];
         i += 1;
       }
-      if (i >= src.length) throw new Error('Unclosed double quote in cURL command');
+      if (i >= src.length) throw parseError('Unclosed double quote in cURL command', 'curl.errors.unclosedDouble');
       inToken = true;
       i += 1;
     } else if (/\s/.test(ch)) {
@@ -54,7 +64,7 @@ const FLAGS_WITH_VALUE = ['-u', '--user', '-A', '--user-agent', '-e', '--referer
 
 export function parseCurl(input) {
   const tokens = tokenize(String(input || '').trim());
-  if (tokens[0] !== 'curl') throw new Error('Paste a command that starts with "curl"');
+  if (tokens[0] !== 'curl') throw parseError('Paste a command that starts with "curl"', 'curl.errors.notCurl');
 
   let url = '';
   let method = '';
@@ -65,7 +75,7 @@ export function parseCurl(input) {
     const tok = tokens[i];
     const next = () => {
       i += 1;
-      if (i >= tokens.length) throw new Error(`Missing value after ${tok}`);
+      if (i >= tokens.length) throw parseError(`Missing value after ${tok}`, 'curl.errors.missingValue', { flag: tok });
       return tokens[i];
     };
     if (tok === '-X' || tok === '--request') method = next().toUpperCase();
@@ -81,7 +91,7 @@ export function parseCurl(input) {
     else if (!tok.startsWith('-') && !url) url = tok;
   }
 
-  if (!url) throw new Error('No URL found in the cURL command');
+  if (!url) throw parseError('No URL found in the cURL command', 'curl.errors.noUrl');
   // The webhook model only supports body-carrying methods.
   if (!['POST', 'PUT', 'PATCH'].includes(method)) method = 'POST';
 
@@ -89,7 +99,7 @@ export function parseCurl(input) {
   try {
     name = new URL(url).hostname;
   } catch {
-    throw new Error(`"${url}" is not a valid URL`);
+    throw parseError(`"${url}" is not a valid URL`, 'curl.errors.invalidUrl', { url });
   }
 
   return { name, url, method, headers, body };

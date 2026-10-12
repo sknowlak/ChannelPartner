@@ -12,6 +12,7 @@ const { logEvent, getTimeline } = require('../services/auditService');
 const { triggerWebhooks } = require('../services/webhookService');
 const { projectIdsForBuilder } = require('../services/projectService');
 const { contactView } = require('../utils/contact');
+const { isSupportedLanguage } = require('../config/languages');
 
 // The builder portal (section 52). A builder sees and acts on referrals for
 // its OWN projects only; anything else answers 404, exactly like a missing
@@ -63,7 +64,7 @@ async function login(req, res, next) {
     if (user.status !== 'ACTIVE') return res.status(403).json({ reason: 'This builder account is deactivated' });
     user.lastLoginAt = new Date();
     await user.save();
-    return res.json({ token: issueToken(user), user: { builderUserId: user.builderUserId, builderId: user.builderId, name: user.name, email: user.email } });
+    return res.json({ token: issueToken(user), user: { builderUserId: user.builderUserId, builderId: user.builderId, name: user.name, email: user.email, language: user.language || '' } });
   } catch (err) {
     next(err);
   }
@@ -72,7 +73,22 @@ async function login(req, res, next) {
 // GET /api/builder/me
 async function me(req, res) {
   const u = req.builderUser;
-  return res.json({ builder: req.builder, user: { builderUserId: u.builderUserId, name: u.name, email: u.email } });
+  return res.json({ builder: req.builder, user: { builderUserId: u.builderUserId, name: u.name, email: u.email, language: u.language || '' } });
+}
+
+// PATCH /api/builder/me { language } - the builder user's preferred UI language (section 54).
+async function updateMe(req, res, next) {
+  try {
+    const { language } = req.body;
+    if (language === undefined || (language !== '' && !isSupportedLanguage(language))) {
+      return res.status(400).json({ reason: 'Unsupported language', fieldKey: 'language' });
+    }
+    req.builderUser.language = language;
+    await req.builderUser.save();
+    return res.json({ language: req.builderUser.language });
+  } catch (err) {
+    next(err);
+  }
 }
 
 // PATCH /api/builder/me/password { currentPassword, password }
@@ -217,4 +233,4 @@ async function getReferralAudit(req, res, next) {
   }
 }
 
-module.exports = { login, me, changePassword, listProjects, listReferrals, getReferral, decideReferral, bookReferral, getReferralAudit };
+module.exports = { login, me, updateMe, changePassword, listProjects, listReferrals, getReferral, decideReferral, bookReferral, getReferralAudit };

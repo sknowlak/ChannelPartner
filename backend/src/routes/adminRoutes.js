@@ -2,7 +2,7 @@ const express = require('express');
 const adminAuth = require('../middleware/adminAuth');
 const { requireSuperAdmin } = require('../middleware/adminAuth');
 const { loginRateLimit } = require('../middleware/rateLimit');
-const { login, me } = require('../controllers/admin/authController');
+const { login, me, updateMe } = require('../controllers/admin/authController');
 const {
   listPartners,
   createPartner,
@@ -31,6 +31,7 @@ router.post('/auth/login', loginRateLimit, login);
 router.use(adminAuth);
 
 router.get('/auth/me', me);
+router.patch('/auth/me', updateMe);
 
 router.get('/dashboard', getDashboardSummary);
 

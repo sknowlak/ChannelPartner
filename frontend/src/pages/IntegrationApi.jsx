@@ -1,8 +1,10 @@
 import { useEffect, useMemo, useState } from 'react';
+import { Trans, useTranslation } from 'react-i18next';
 import { getIntegrationApiKey, getMyProfile, listLeadFields, regenerateIntegrationApiKey } from '../api/client';
 import SettingsCategories from '../components/SettingsCategories';
 import IntegrationTabs from '../components/IntegrationTabs';
 import { PERMISSIONS } from '../utils/permissions';
+import { formatDate } from '../utils/timezone';
 
 // Settings -> Integrations -> Your API (section 51): everything another
 // system needs to talk to this account both ways - the key, every endpoint,
@@ -32,22 +34,31 @@ function buildExamplePayload(fieldDefs) {
   return { customer, ...rest, externalReferenceId: 'YOUR-ID-123' };
 }
 
+// [method, path, description key under integrations:api.endpoints]
 const ENDPOINTS = [
-  ['POST', '/integrations/leads', 'Create a lead (send your own ID as externalReferenceId - repeats never duplicate)'],
-  ['GET', '/integrations/leads?updatedSince=2026-01-01T00:00:00Z&page=1&limit=50', 'List leads changed since a time, oldest first - for incremental sync'],
-  ['GET', '/integrations/leads?externalReferenceId=YOUR-ID-123', 'Find a lead by your own ID'],
-  ['GET', '/integrations/leads/:registrationId', 'Get one lead'],
-  ['PATCH', '/integrations/leads/:registrationId', 'Update lead fields'],
-  ['POST', '/integrations/leads/:registrationId/progress', 'Change status / sub-status / schedule / note'],
-  ['POST', '/integrations/leads/:registrationId/booking', 'Complete the booking'],
-  ['GET', '/integrations/lead-statuses', 'Your status pipeline'],
-  ['GET', '/integrations/lead-fields', 'Every field a lead can carry, and where it goes in the request'],
-  ['POST', '/integrations/subscriptions', 'Subscribe a URL to lead events: {"targetUrl": "...", "events": ["LEAD_CREATED", "STAGE_UPDATED"]}'],
-  ['GET', '/integrations/subscriptions', 'List event subscriptions'],
-  ['DELETE', '/integrations/subscriptions/:subscriptionId', 'Unsubscribe']
+  ['POST', '/integrations/leads', 'createLead'],
+  ['GET', '/integrations/leads?updatedSince=2026-01-01T00:00:00Z&page=1&limit=50', 'listLeads'],
+  ['GET', '/integrations/leads?externalReferenceId=YOUR-ID-123', 'findLead'],
+  ['GET', '/integrations/leads/:registrationId', 'getLead'],
+  ['PATCH', '/integrations/leads/:registrationId', 'updateLead'],
+  ['POST', '/integrations/leads/:registrationId/progress', 'progress'],
+  ['POST', '/integrations/leads/:registrationId/booking', 'booking'],
+  ['GET', '/integrations/lead-statuses', 'statuses'],
+  ['GET', '/integrations/lead-fields', 'fields'],
+  ['POST', '/integrations/subscriptions', 'subscribe'],
+  ['GET', '/integrations/subscriptions', 'listSubscriptions'],
+  ['DELETE', '/integrations/subscriptions/:subscriptionId', 'unsubscribe']
 ];
+// Elements for react-i18next <Trans>; code snippets carry their own literal text.
+const KEY_FORMS = {
+  hdr: <code>{'X-Api-Key'}</code>,
+  bearer: <code>{'Authorization: Bearer <key>'}</code>,
+  query: <code>{'?api_key=<key>'}</code>
+};
+const SUBSCRIBE_EXAMPLE = '{"targetUrl": "...", "events": ["LEAD_CREATED", "STAGE_UPDATED"]}';
 
 export default function IntegrationApi() {
+  const { t } = useTranslation(['integrations', 'common']);
   const [permissions, setPermissions] = useState(null);
   const [info, setInfo] = useState(null);
   // The full key exists only in this response (section 52) - it is never
@@ -76,9 +87,7 @@ export default function IntegrationApi() {
   const copy = (text) => navigator.clipboard?.writeText(text).catch(() => {});
 
   const regenerate = async () => {
-    const warning = info?.hasKey
-      ? 'Generate a new API key? The current key stops working immediately for every system using it.'
-      : 'Generate an API key?';
+    const warning = info?.hasKey ? t('api.regenerateConfirm') : t('api.generateConfirm');
     if (!window.confirm(warning)) return;
     try {
       const { data } = await regenerateIntegrationApiKey();
@@ -96,65 +105,65 @@ export default function IntegrationApi() {
   return (
     <div className="page page-wide">
       <div>
-        <h1 style={{ marginBottom: '0.2rem' }}>Settings</h1>
-        <p className="hint" style={{ margin: 0 }}>Connect any system: push leads out, receive or pull them in, and let other systems use your API.</p>
+        <h1 style={{ marginBottom: '0.2rem' }}>{t('page.title')}</h1>
+        <p className="hint" style={{ margin: 0 }}>{t('page.subtitle')}</p>
       </div>
       <SettingsCategories />
       <IntegrationTabs />
       {error && <div className="error-box">{error}</div>}
 
       <div className="card">
-        <h3 className="form-section-title" style={{ marginTop: 0 }}><span>Your API - Two-Way Access for Any System</span></h3>
+        <h3 className="form-section-title" style={{ marginTop: 0 }}><span>{t('api.title')}</span></h3>
         <p className="hint">
-          Any system with your API key can create, read and update leads and subscribe to lead events. Send the key in the{' '}
-          <code>X-Api-Key</code> header, as <code>Authorization: Bearer &lt;key&gt;</code>, or (if the tool can't set headers) as{' '}
-          <code>?api_key=&lt;key&gt;</code>. Limit: 600 requests per minute.
+          <Trans t={t} i18nKey="api.intro" values={{ limit: 600 }} components={KEY_FORMS} />
         </p>
-        {permissions && !canManage && <p className="hint">Only someone with the Manage Settings permission can view the API key.</p>}
+        {permissions && !canManage && <p className="hint">{t('api.noPermission')}</p>}
         {info && (
           <div className="field">
-            <label>API Key</label>
+            <label>{t('api.key')}</label>
             {newKey ? (
               <>
                 <div style={{ display: 'flex', gap: '0.5rem' }}>
                   <input value={newKey} readOnly style={{ flex: 1, fontFamily: 'monospace' }} />
-                  <button type="button" className="secondary" onClick={() => copy(newKey)}>Copy</button>
+                  <button type="button" className="secondary" onClick={() => copy(newKey)}>{t('common:actions.copy')}</button>
                 </div>
                 <div className="info-box" style={{ marginTop: '0.5rem' }}>
-                  Copy this key now and store it somewhere safe - for security it is only shown once. If it's lost, generate a new one.
+                  {t('api.shownOnce')}
                 </div>
               </>
             ) : (
               <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
                 <input readOnly style={{ flex: 1, fontFamily: 'monospace' }}
-                  value={info.hasKey ? `${info.apiKeyPrefix}${'•'.repeat(20)}  (created ${info.apiKeyCreatedAt ? new Date(info.apiKeyCreatedAt).toLocaleDateString() : '-'})` : 'No key yet'} />
-                <button type="button" className={info.hasKey ? 'danger' : 'primary'} onClick={regenerate}>{info.hasKey ? 'Generate New Key' : 'Generate Key'}</button>
+                  value={info.hasKey
+                    ? `${info.apiKeyPrefix}${'•'.repeat(20)}  ${t('api.created', { date: info.apiKeyCreatedAt ? formatDate(info.apiKeyCreatedAt) : '-' })}`
+                    : t('api.noKey')} />
+                <button type="button" className={info.hasKey ? 'danger' : 'primary'} onClick={regenerate}>{info.hasKey ? t('api.generateNew') : t('api.generate')}</button>
               </div>
             )}
           </div>
         )}
         <div className="field">
-          <label>Base URL</label>
+          <label>{t('api.baseUrl')}</label>
           <div style={{ display: 'flex', gap: '0.5rem' }}>
             <input value={base} readOnly style={{ flex: 1 }} />
-            <button type="button" className="secondary" onClick={() => copy(base)}>Copy</button>
-            <a className="secondary" href={`${base}/integrations/openapi.json`} target="_blank" rel="noreferrer" style={{ alignSelf: 'center' }}>OpenAPI spec</a>
+            <button type="button" className="secondary" onClick={() => copy(base)}>{t('common:actions.copy')}</button>
+            <a className="secondary" href={`${base}/integrations/openapi.json`} target="_blank" rel="noreferrer" style={{ alignSelf: 'center' }}>{t('api.openApi')}</a>
           </div>
-          <span className="hint" style={{ fontSize: '0.78rem' }}>Import the OpenAPI spec into Postman, Zapier, Make or n8n to get every endpoint ready to use.</span>
+          <span className="hint" style={{ fontSize: '0.78rem' }}>{t('api.openApiHint')}</span>
         </div>
       </div>
 
       <div className="card">
-        <h3 className="form-section-title" style={{ marginTop: 0 }}><span>Endpoints</span></h3>
+        <h3 className="form-section-title" style={{ marginTop: 0 }}><span>{t('api.endpointsTitle')}</span></h3>
         <div className="table-scroll">
           <table className="pro-table">
-            <thead><tr><th>Method</th><th>Path</th><th>What it does</th></tr></thead>
+            <thead><tr><th>{t('api.colMethod')}</th><th>{t('api.colPath')}</th><th>{t('api.colWhat')}</th></tr></thead>
             <tbody>
               {ENDPOINTS.map(([method, path, what]) => (
                 <tr key={`${method} ${path}`}>
                   <td><span className="badge pending">{method}</span></td>
                   <td style={{ fontFamily: 'monospace', fontSize: '0.8rem' }}>{path}</td>
-                  <td className="secondary-cell">{what}</td>
+                  <td className="secondary-cell">{t(`api.endpoints.${what}`, { example: SUBSCRIBE_EXAMPLE })}</td>
                 </tr>
               ))}
             </tbody>
@@ -163,23 +172,20 @@ export default function IntegrationApi() {
       </div>
 
       <div className="card">
-        <h3 className="form-section-title" style={{ marginTop: 0 }}><span>Examples</span></h3>
+        <h3 className="form-section-title" style={{ marginTop: 0 }}><span>{t('api.examplesTitle')}</span></h3>
         <div className="field">
-          <label>Create a lead</label>
+          <label>{t('api.exampleCreate')}</label>
           <textarea readOnly rows={5} value={createCurl} style={{ fontFamily: 'monospace', fontSize: '0.8rem' }} />
         </div>
         <div className="field">
-          <label>Read leads changed since a time (incremental sync)</label>
+          <label>{t('api.exampleList')}</label>
           <textarea readOnly rows={2} value={listCurl} style={{ fontFamily: 'monospace', fontSize: '0.8rem' }} />
         </div>
         <div className="field">
-          <label>Get notified of lead events (your system receives a POST with the lead as JSON)</label>
+          <label>{t('api.exampleSubscribe')}</label>
           <textarea readOnly rows={4} value={subscribeCurl} style={{ fontFamily: 'monospace', fontSize: '0.8rem' }} />
         </div>
-        <p className="hint">
-          Subscriptions appear on the Push tab, where you can add authentication or a custom body. If the other system
-          sends leads in its own format instead of this one, use the Receive tab.
-        </p>
+        <p className="hint">{t('api.examplesFooter')}</p>
       </div>
     </div>
   );

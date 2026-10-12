@@ -3,6 +3,9 @@
 // `currencyDisplay: 'code'` renders the ISO 4217 abbreviation ("USD 50,000")
 // instead of a symbol - a $ alone doesn't say whether it's USD, CAD, AUD or
 // SGD, but the code always does. Native Intl API, no extra dependency.
+// Number grouping follows the UI language (section 54); the currency code
+// and amount never change with it.
+import { intlLocale } from '../i18n/format';
 
 export const COMMON_CURRENCIES = [
   'USD', 'INR', 'AED', 'GBP', 'EUR', 'SGD', 'AUD', 'CAD',
@@ -15,7 +18,7 @@ export function formatCurrency(value, currencyCode) {
   if (Number.isNaN(amount)) return String(value);
   const code = currencyCode || 'USD';
   try {
-    return new Intl.NumberFormat(undefined, {
+    return new Intl.NumberFormat(intlLocale(), {
       style: 'currency',
       currency: code,
       currencyDisplay: 'code',

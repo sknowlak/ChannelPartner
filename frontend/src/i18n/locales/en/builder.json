@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Builder Portal",
+    "referrals": "Referrals",
+    "builderLogin": "Builder Login",
+    "partnerLogin": "Channel Partner Login"
+  },
+  "login": {
+    "title": "Builder sign in",
+    "hint": "Builder accounts are created by Leadrat. Ask your administrator if you don't have one."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Waiting for your decision",
+    "ACCEPTED": "Accepted",
+    "REJECTED": "Rejected"
+  },
+  "list": {
+    "title": "Referrals",
+    "allProjects": "All projects",
+    "allStatuses": "All statuses",
+    "count_one": "{{count}} referral",
+    "count_other": "{{count}} referrals",
+    "columns": {
+      "referral": "Referral",
+      "customer": "Customer",
+      "project": "Project",
+      "sourcePartner": "Source Partner",
+      "status": "Status",
+      "booking": "Booking",
+      "registered": "Registered"
+    },
+    "booked": "Booked",
+    "empty": "No referrals yet."
+  },
+  "detail": {
+    "customer": "Customer",
+    "sourcePartner": "Source Partner",
+    "attributionNote": "(attribution - cannot be changed)",
+    "leadStatus": "Lead Status",
+    "protectedUntil": "Protected Until",
+    "referral": "Referral",
+    "reason": "Reason: {{reason}}",
+    "booking": "Booking",
+    "bookedOwner": "Booked - you are the operational owner",
+    "notBooked": "Not booked",
+    "sharedAfterBooking": "Shared after booking",
+    "accept": "Accept Referral",
+    "confirmBooking": "Confirm Booking",
+    "reject": "Reject Referral",
+    "rejectReasonLabel": "Reason for rejecting (shown to the partner) *",
+    "rejectConfirm": "Reject",
+    "confirmBookingPrompt": "Confirm the booking? Operational ownership moves to you and the partner becomes eligible for commission.",
+    "notice": {
+      "booked": "Booking confirmed.",
+      "accepted": "Referral accepted.",
+      "rejected": "Referral rejected."
+    },
+    "backToReferrals": "Back to Referrals"
+  },
+  "history": {
+    "title": "History",
+    "actor": {
+      "system": "System",
+      "partner": "Channel partner",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Partner registration received",
+      "DUPLICATE_CHECK_COMPLETED": "Duplicate check completed - no active duplicate found",
+      "REGISTRATION_ACCEPTED": "Registration accepted",
+      "PROTECTION_GRANTED_one": "{{count}}-day protection granted",
+      "PROTECTION_GRANTED_other": "{{count}}-day protection granted",
+      "STAGE_UPDATED": "Status updated to {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Updated {{count}} field",
+      "LEAD_DETAILS_UPDATED_other": "Updated {{count}} fields",
+      "LEAD_ASSIGNED": "Assigned to {{name}}",
+      "LEAD_UNASSIGNED": "Unassigned",
+      "REFERRAL_ACCEPTED": "Builder accepted the referral",
+      "REFERRAL_REJECTED": "Builder rejected the referral. Reason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Duplicate registration attempt by {{partner}} rejected",
+      "BOOKING_COMPLETED": "Booking completed",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operational ownership transferred to Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partner attribution preserved",
+      "COMMISSION_ELIGIBILITY_CREATED": "Commission eligibility created",
+      "HANDOVER_COMPLETED": "Handover completed",
+      "ADMIN_PROTECTION_RELEASED": "Admin released duplicate protection early. Reason: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin reassigned registration from {{from}} to {{to}}. Reason: {{reason}}"
+    }
+  }
+}

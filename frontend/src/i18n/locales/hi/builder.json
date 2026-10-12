@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "बिल्डर पोर्टल",
+    "referrals": "रेफ़रल",
+    "builderLogin": "बिल्डर लॉगिन",
+    "partnerLogin": "चैनल पार्टनर लॉगिन"
+  },
+  "login": {
+    "title": "बिल्डर साइन इन",
+    "hint": "बिल्डर खाते Leadrat द्वारा बनाए जाते हैं। यदि आपके पास खाता नहीं है, तो अपने एडमिन से संपर्क करें।"
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "आपके निर्णय की प्रतीक्षा में",
+    "ACCEPTED": "स्वीकृत",
+    "REJECTED": "अस्वीकृत"
+  },
+  "list": {
+    "title": "रेफ़रल",
+    "allProjects": "सभी प्रोजेक्ट",
+    "allStatuses": "सभी स्थितियाँ",
+    "count_one": "{{count}} रेफ़रल",
+    "count_other": "{{count}} रेफ़रल",
+    "columns": {
+      "referral": "रेफ़रल",
+      "customer": "ग्राहक",
+      "project": "प्रोजेक्ट",
+      "sourcePartner": "स्रोत पार्टनर",
+      "status": "स्थिति",
+      "booking": "बुकिंग",
+      "registered": "पंजीकरण तिथि"
+    },
+    "booked": "बुक हो गया",
+    "empty": "अभी तक कोई रेफ़रल नहीं है।"
+  },
+  "detail": {
+    "customer": "ग्राहक",
+    "sourcePartner": "स्रोत पार्टनर",
+    "attributionNote": "(श्रेय - बदला नहीं जा सकता)",
+    "leadStatus": "लीड की स्थिति",
+    "protectedUntil": "सुरक्षा की अंतिम तिथि",
+    "referral": "रेफ़रल",
+    "reason": "कारण: {{reason}}",
+    "booking": "बुकिंग",
+    "bookedOwner": "बुक हो गया - अब आप परिचालन स्वामी हैं",
+    "notBooked": "बुक नहीं हुआ",
+    "sharedAfterBooking": "बुकिंग के बाद साझा किया जाएगा",
+    "accept": "रेफ़रल स्वीकार करें",
+    "confirmBooking": "बुकिंग की पुष्टि करें",
+    "reject": "रेफ़रल अस्वीकार करें",
+    "rejectReasonLabel": "अस्वीकार करने का कारण (पार्टनर को दिखाया जाएगा) *",
+    "rejectConfirm": "अस्वीकार करें",
+    "confirmBookingPrompt": "क्या आप बुकिंग की पुष्टि करना चाहते हैं? परिचालन स्वामित्व आपको मिल जाएगा और पार्टनर कमीशन के लिए पात्र हो जाएगा।",
+    "notice": {
+      "booked": "बुकिंग की पुष्टि हो गई।",
+      "accepted": "रेफ़रल स्वीकार कर लिया गया।",
+      "rejected": "रेफ़रल अस्वीकार कर दिया गया।"
+    },
+    "backToReferrals": "रेफ़रल पर वापस जाएँ"
+  },
+  "history": {
+    "title": "इतिहास",
+    "actor": {
+      "system": "सिस्टम",
+      "partner": "चैनल पार्टनर",
+      "admin": "Leadrat एडमिन"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "पार्टनर का पंजीकरण प्राप्त हुआ",
+      "DUPLICATE_CHECK_COMPLETED": "डुप्लिकेट जाँच पूरी हुई - कोई सक्रिय डुप्लिकेट नहीं मिला",
+      "REGISTRATION_ACCEPTED": "पंजीकरण स्वीकृत हुआ",
+      "PROTECTION_GRANTED_one": "{{count}} दिन की सुरक्षा दी गई",
+      "PROTECTION_GRANTED_other": "{{count}} दिन की सुरक्षा दी गई",
+      "STAGE_UPDATED": "स्थिति बदलकर {{stage}} की गई",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} फ़ील्ड अपडेट किया गया",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} फ़ील्ड अपडेट किए गए",
+      "LEAD_ASSIGNED": "{{name}} को सौंपा गया",
+      "LEAD_UNASSIGNED": "किसी को नहीं सौंपा गया",
+      "REFERRAL_ACCEPTED": "बिल्डर ने रेफ़रल स्वीकार किया",
+      "REFERRAL_REJECTED": "बिल्डर ने रेफ़रल अस्वीकार किया। कारण: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} द्वारा डुप्लिकेट पंजीकरण का प्रयास अस्वीकार किया गया",
+      "BOOKING_COMPLETED": "बुकिंग पूरी हुई",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "परिचालन स्वामित्व बिल्डर को हस्तांतरित किया गया",
+      "PARTNER_ATTRIBUTION_PRESERVED": "पार्टनर का श्रेय सुरक्षित रखा गया",
+      "COMMISSION_ELIGIBILITY_CREATED": "कमीशन पात्रता बनाई गई",
+      "HANDOVER_COMPLETED": "हस्तांतरण पूरा हुआ",
+      "ADMIN_PROTECTION_RELEASED": "एडमिन ने डुप्लिकेट सुरक्षा समय से पहले समाप्त की। कारण: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "एडमिन ने पंजीकरण {{from}} से {{to}} को पुनः सौंपा। कारण: {{reason}}"
+    }
+  }
+}

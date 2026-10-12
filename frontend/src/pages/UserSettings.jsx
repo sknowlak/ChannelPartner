@@ -1,12 +1,16 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { createUserField, deleteUserField, getMyProfile, listUserFields, updateUserField } from '../api/client';
 import { PERMISSIONS } from '../utils/permissions';
+import { useDataLabels } from '../i18n/dataLabels';
 import SettingsCategories from '../components/SettingsCategories';
 
 const DATA_TYPES = ['TEXT', 'TEXTAREA', 'NUMBER', 'DATE', 'SELECT', 'LIST'];
 const initialForm = { label: '', group: 'Additional Details', dataType: 'TEXT', options: '', isRequired: false };
 
 export default function UserSettings() {
+  const { t } = useTranslation(['settings', 'common']);
+  const { userFieldLabel, groupLabel } = useDataLabels();
   const [definitions, setDefinitions] = useState(null);
   const [permissions, setPermissions] = useState([]);
   const [error, setError] = useState(null);
@@ -69,16 +73,16 @@ export default function UserSettings() {
     <div className="page page-wide">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div>
-          <h1 style={{ marginBottom: '0.2rem' }}>Settings</h1>
+          <h1 style={{ marginBottom: '0.2rem' }}>{t('settings:page.title')}</h1>
           <p className="hint" style={{ margin: 0 }}>
             {canManageSettings
-              ? 'Configure the Add/Edit Team Member form: enable/disable fields, mark them required, or add your own custom fields.'
-              : "You don't have permission to manage settings."}
+              ? t('settings:fields.userIntro')
+              : t('settings:page.noPermission')}
           </p>
         </div>
         {canManageSettings && (
           <button className="pill-primary" onClick={() => setShowForm((s) => !s)}>
-            {showForm ? 'Cancel' : '+ Add Custom Field'}
+            {showForm ? t('common:actions.cancel') : t('settings:fields.addCustomField')}
           </button>
         )}
       </div>
@@ -91,48 +95,52 @@ export default function UserSettings() {
         <form className="card" onSubmit={handleCreate}>
           <div className="form-grid">
             <div className="field">
-              <label>Field Label</label>
+              <label>{t('settings:fields.fieldLabel')}</label>
               <input value={form.label} onChange={(e) => setForm((f) => ({ ...f, label: e.target.value }))} required />
             </div>
             <div className="field">
-              <label>Group</label>
-              <input value={form.group} onChange={(e) => setForm((f) => ({ ...f, group: e.target.value }))} placeholder="e.g. Additional Details" />
+              <label>{t('settings:fields.group')}</label>
+              <input value={form.group} onChange={(e) => setForm((f) => ({ ...f, group: e.target.value }))} placeholder={t('settings:fields.groupPlaceholderUser')} />
             </div>
             <div className="field">
-              <label>Data Type</label>
+              <label>{t('settings:fields.dataType')}</label>
               <select value={form.dataType} onChange={(e) => setForm((f) => ({ ...f, dataType: e.target.value }))}>
-                {DATA_TYPES.map((t) => <option key={t} value={t}>{t}</option>)}
+                {DATA_TYPES.map((type) => <option key={type} value={type}>{t(`settings:dataTypes.${type}`)}</option>)}
               </select>
             </div>
             {form.dataType === 'SELECT' && (
               <div className="field">
-                <label>Options (comma separated)</label>
+                <label>{t('settings:fields.options')}</label>
                 <input value={form.options} onChange={(e) => setForm((f) => ({ ...f, options: e.target.value }))} />
               </div>
             )}
           </div>
           <label style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', marginBottom: '1rem' }}>
             <input type="checkbox" checked={form.isRequired} onChange={(e) => setForm((f) => ({ ...f, isRequired: e.target.checked }))} />
-            Required - must be filled in when adding a team member
+            {t('settings:fields.requiredUser')}
           </label>
-          <button className="primary" type="submit" disabled={busy}>{busy ? 'Creating...' : 'Create Field'}</button>
+          <button className="primary" type="submit" disabled={busy}>{busy ? t('settings:fields.creating') : t('settings:fields.createField')}</button>
         </form>
       )}
 
       <div className="card">
         <table className="pro-table">
           <thead>
-            <tr><th>Field</th><th>Group</th><th>Type</th><th>Required</th><th>Enabled</th><th>Kind</th>{canManageSettings && <th>Actions</th>}</tr>
+            <tr>
+              <th>{t('settings:fields.columns.field')}</th><th>{t('settings:fields.columns.group')}</th><th>{t('settings:fields.columns.type')}</th>
+              <th>{t('settings:fields.columns.required')}</th><th>{t('settings:fields.columns.enabled')}</th><th>{t('settings:fields.columns.kind')}</th>
+              {canManageSettings && <th>{t('common:fields.actions')}</th>}
+            </tr>
           </thead>
           <tbody>
             {definitions && definitions.map((def) => (
               <tr key={def.fieldKey}>
                 <td>
-                  <div className="primary-cell">{def.label}</div>
+                  <div className="primary-cell">{userFieldLabel(def)}</div>
                   <div className="secondary-cell">{def.fieldKey}</div>
                 </td>
-                <td>{def.group}</td>
-                <td>{def.dataType}</td>
+                <td>{groupLabel(def.group)}</td>
+                <td>{t(`settings:dataTypes.${def.dataType}`, { defaultValue: def.dataType })}</td>
                 <td>
                   <input
                     type="checkbox"
@@ -149,15 +157,15 @@ export default function UserSettings() {
                     onChange={() => toggle(def, 'isEnabled')}
                   />
                 </td>
-                <td>{def.isCustom ? 'Custom' : def.isCore ? 'Core (locked)' : 'Standard'}</td>
+                <td>{def.isCustom ? t('settings:fields.kind.custom') : def.isCore ? t('settings:fields.kind.core') : t('settings:fields.kind.standard')}</td>
                 {canManageSettings && (
-                  <td>{def.isCustom && <button className="danger" onClick={() => handleDelete(def.fieldKey)}>Delete</button>}</td>
+                  <td>{def.isCustom && <button className="danger" onClick={() => handleDelete(def.fieldKey)}>{t('common:actions.delete')}</button>}</td>
                 )}
               </tr>
             ))}
           </tbody>
         </table>
-        {!definitions && !error && <p className="hint">Loading...</p>}
+        {!definitions && !error && <p className="hint">{t('common:states.loading')}</p>}
       </div>
     </div>
   );

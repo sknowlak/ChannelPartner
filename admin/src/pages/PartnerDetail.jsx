@@ -1,13 +1,20 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { getPartner, getPartnerActivity, listFieldDefinitions, updatePartner } from '../api/client';
 import PartnerForm from '../components/PartnerForm';
 import { useAuth } from '../context/AuthContext';
 import { formatDateTime } from '../utils/timezone';
+import { errorMessage } from '../utils/errors';
+import { formatNumber } from '../i18n/format';
+import { enumLabel } from '../i18n/enumLabels';
+
+const KYC_STATUSES = ['PENDING', 'VERIFIED', 'REJECTED'];
 
 export default function PartnerDetail() {
   const { partnerId } = useParams();
   const { timezone } = useAuth();
+  const { t } = useTranslation(['partners', 'common', 'enums']);
   const [data, setData] = useState(null);
   const [fieldDefinitions, setFieldDefinitions] = useState([]);
   const [activity, setActivity] = useState([]);
@@ -25,7 +32,7 @@ export default function PartnerDetail() {
         setActivity(act.events);
         setForm({ ...d.partner, customFields: d.partner.customFields || {} });
       })
-      .catch((err) => setError(err.response?.data?.reason || err.message));
+      .catch((err) => setError(errorMessage(err)));
   };
 
   useEffect(load, [partnerId]);
@@ -37,7 +44,7 @@ export default function PartnerDetail() {
       await updatePartner(partnerId, { status: nextStatus });
       load();
     } catch (err) {
-      setError(err.response?.data?.reason || err.message);
+      setError(errorMessage(err));
     } finally {
       setBusy(false);
     }
@@ -52,14 +59,14 @@ export default function PartnerDetail() {
       setEditing(false);
       load();
     } catch (err) {
-      setError(err.response?.data?.reason || err.message);
+      setError(errorMessage(err));
     } finally {
       setBusy(false);
     }
   };
 
   if (error) return <div className="page"><div className="error-box">{error}</div></div>;
-  if (!data || !form) return <div className="page">Loading...</div>;
+  if (!data || !form) return <div className="page">{t('common:states.loading')}</div>;
 
   const { partner, registrations, commissionSummary } = data;
 
@@ -68,20 +75,20 @@ export default function PartnerDetail() {
       <h1>{partner.name}</h1>
       <div className="card">
         <dl className="kv">
-          <dt>Partner ID</dt><dd>{partner.partnerId}</dd>
-          <dt>Partner Code</dt><dd>{partner.partnerCode}</dd>
-          <dt>Status</dt><dd><span className={`badge ${partner.status.toLowerCase()}`}>{partner.status}</span></dd>
-          <dt>KYC Status</dt><dd>{partner.kycStatus}</dd>
-          <dt>Approval Status</dt><dd>{partner.approvalStatus}</dd>
-          <dt>Created By</dt><dd>{partner.createdBy || '-'}</dd>
-          <dt>Total Registrations</dt><dd>{registrations.length}</dd>
-          <dt>Commission Eligible</dt><dd>{commissionSummary.eligible} / {commissionSummary.total}</dd>
+          <dt>{t('partners:detail.partnerId')}</dt><dd>{partner.partnerId}</dd>
+          <dt>{t('partners:detail.partnerCode')}</dt><dd>{partner.partnerCode}</dd>
+          <dt>{t('partners:detail.status')}</dt><dd><span className={`badge ${partner.status.toLowerCase()}`}>{enumLabel('status', partner.status)}</span></dd>
+          <dt>{t('partners:detail.kycStatus')}</dt><dd>{enumLabel('kycStatus', partner.kycStatus)}</dd>
+          <dt>{t('partners:detail.approvalStatus')}</dt><dd>{enumLabel('approvalStatus', partner.approvalStatus)}</dd>
+          <dt>{t('partners:detail.createdBy')}</dt><dd>{partner.createdBy || '-'}</dd>
+          <dt>{t('partners:detail.totalRegistrations')}</dt><dd>{formatNumber(registrations.length)}</dd>
+          <dt>{t('partners:detail.commissionEligible')}</dt><dd>{t('partners:detail.commissionEligibleValue', { eligible: formatNumber(commissionSummary.eligible), total: formatNumber(commissionSummary.total) })}</dd>
         </dl>
         <div style={{ display: 'flex', gap: '0.6rem', marginTop: '1rem' }}>
           <button className={partner.status === 'ACTIVE' ? 'danger' : 'primary'} disabled={busy} onClick={toggleStatus}>
-            {partner.status === 'ACTIVE' ? 'Deactivate Partner' : 'Activate Partner'}
+            {partner.status === 'ACTIVE' ? t('partners:detail.deactivate') : t('partners:detail.activate')}
           </button>
-          <button className="secondary" onClick={() => setEditing((e) => !e)}>{editing ? 'Cancel Edit' : 'Edit Details'}</button>
+          <button className="secondary" onClick={() => setEditing((e) => !e)}>{editing ? t('partners:detail.cancelEdit') : t('partners:detail.editDetails')}</button>
         </div>
       </div>
 
@@ -89,38 +96,36 @@ export default function PartnerDetail() {
         <form className="card" onSubmit={handleSave}>
           <PartnerForm fieldDefinitions={fieldDefinitions} values={form} onChange={setForm} mode="edit" />
           <div className="field">
-            <label>KYC Status</label>
-            <select value={form.kycStatus} onChange={(e) => setForm((f) => ({ ...f, kycStatus: e.target.value }))}>
-              <option value="PENDING">PENDING</option>
-              <option value="VERIFIED">VERIFIED</option>
-              <option value="REJECTED">REJECTED</option>
+            <label htmlFor="partner-kyc-status">{t('partners:detail.kycStatus')}</label>
+            <select id="partner-kyc-status" value={form.kycStatus} onChange={(e) => setForm((f) => ({ ...f, kycStatus: e.target.value }))}>
+              {KYC_STATUSES.map((s) => <option key={s} value={s}>{enumLabel('kycStatus', s)}</option>)}
             </select>
           </div>
-          <button className="primary" type="submit" disabled={busy}>{busy ? 'Saving...' : 'Save Changes'}</button>
+          <button className="primary" type="submit" disabled={busy}>{busy ? t('common:actions.saving') : t('common:actions.saveChanges')}</button>
         </form>
       )}
 
       <div className="card">
-        <h3>Registrations</h3>
+        <h3>{t('partners:detail.registrationsTitle')}</h3>
         <table>
-          <thead><tr><th>Registration ID</th><th>Project</th><th>Status</th><th>Stage</th><th>Booked</th></tr></thead>
+          <thead><tr>{['registrationId', 'project', 'status', 'stage', 'booked'].map((k) => <th key={k}>{t(`partners:detail.columns.${k}`)}</th>)}</tr></thead>
           <tbody>
             {registrations.map((r) => (
               <tr key={r.registrationId} className="clickable" onClick={() => navigate(`/registrations/${r.registrationId}`)}>
                 <td>{r.registrationId}</td>
                 <td>{r.projectId}</td>
-                <td><span className={`badge ${r.status.toLowerCase()}`}>{r.status}</span></td>
+                <td><span className={`badge ${r.status.toLowerCase()}`}>{enumLabel('registrationStatus', r.status)}</span></td>
                 <td>{r.currentStage}</td>
-                <td>{r.isBooked ? 'Yes' : 'No'}</td>
+                <td>{r.isBooked ? t('common:status.yes') : t('common:status.no')}</td>
               </tr>
             ))}
-            {registrations.length === 0 && <tr><td colSpan={5} className="hint">No registrations yet.</td></tr>}
+            {registrations.length === 0 && <tr><td colSpan={5} className="hint">{t('partners:detail.noRegistrations')}</td></tr>}
           </tbody>
         </table>
       </div>
 
       <div className="card">
-        <h3>Activity History</h3>
+        <h3>{t('partners:detail.activityTitle')}</h3>
         <ul className="timeline">
           {activity.map((ev) => (
             <li key={ev.auditId}>
@@ -128,11 +133,11 @@ export default function PartnerDetail() {
               <div>{ev.description}</div>
             </li>
           ))}
-          {activity.length === 0 && <p className="hint">No activity recorded yet.</p>}
+          {activity.length === 0 && <p className="hint">{t('partners:detail.noActivity')}</p>}
         </ul>
       </div>
 
-      <Link to="/partners"><button className="secondary">Back to Partners</button></Link>
+      <Link to="/partners"><button className="secondary">{t('partners:detail.back')}</button></Link>
     </div>
   );
 }

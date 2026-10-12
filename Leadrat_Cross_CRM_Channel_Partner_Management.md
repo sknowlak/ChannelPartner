@@ -2227,3 +2227,92 @@ What remains from the product-gap review (the separate review prompt was retired
 ## Test matrix still to add
 
 Builder ↔ builder and partner ↔ partner isolation, forged body fields, concurrent duplicates and bookings, token-type separation, key revocation and deactivation are covered (`backend/tests/e2e`, section 52). Still to add with the items above: echo-loop prevention, field-level update permissions for integrations, oversized and redirecting remote responses in the integration suite, dispute/cancellation flows, and production start-up with an insecure mobile API URL.
+
+---
+
+# 54. Multilingual UI: English, Hindi, Bengali (My Profile → Language)
+
+Every app - partner web app, builder portal, admin portal and mobile app - can be used in English (`en`, default and fallback), Hindi (`hi`) and Bengali (`bn`). Each user picks a preferred language in **Manage Team → My Profile** (partners and team members); it applies instantly and is saved to their account.
+
+## Choosing the language
+
+- **My Profile → Language** (partner/member): switches the whole app immediately (no reload - the current page, form input and filters stay) and saves `language` on the account (`PATCH /my/profile`). A compact selector next to the notification bell does the same.
+- **Before signing in**: a selector on the login and signup pages (the signup choice becomes the new account's preference).
+- **Builder portal**: selector on the builder login and in the portal menu (saved with `PATCH /api/builder/me`). **Admin portal**: selector on the admin login and in the nav bar (`PATCH /api/admin/auth/me`). **Mobile**: on the sign-in screen and My Leads (saved to the account like the web app).
+- Precedence: the account's saved language (applied at login and whenever the profile loads, so it follows the user to any device) → the language last chosen on this device → the browser/phone language if supported → English. Only the language code is stored on the device (`localStorage` / secure store key `uiLanguage`), never credentials.
+- Selectors are labelled "Language" in each language, show each language in its own script (English / हिन्दी / বাংলা), and are keyboard- and screen-reader-accessible.
+
+## How it is built
+
+- `i18next` + `react-i18next` in each app (`frontend/src/i18n`, `admin/src/i18n`, `mobile/src/i18n`); one locale registry (`locales.js` - code, display name, `Intl` locale en-IN / hi-IN / bn-IN, text direction). Translations are JSON files per feature area (`locales/<lang>/<namespace>.json`): partner app 9 namespaces / ~1,080 keys, admin 13 / ~400, mobile 4 / ~260, each in three languages.
+- Text uses semantic keys (`leads:list.empty`), whole sentences with `{{variables}}` and proper plural forms - never stitched fragments, never rendered as HTML.
+- A key missing in Hindi/Bengali falls back to English (and warns in development) - users never see a raw key.
+- Dates, times and numbers are formatted with `Intl` in the chosen language (respecting each user's timezone); currency amounts and codes never change, only their display grouping.
+- **Configured data stays as configured.** Field labels, tab names, dropdown options, lead statuses/sub-statuses and system role names are translated for display **only while they still equal the built-in English default** (`i18n/dataLabels.js`, catalogue generated from the backend defaults); anything a partner renamed or added shows exactly as typed. Stored values, API payloads, enum values (`ACTIVE`, `PENDING_BUILDER`, `LEAD_CREATED`, ...), webhook payloads and IDs are never localized.
+- History: event descriptions are stored in English by the server; the partner, builder and admin screens re-render known event types in the user's language (with the stored values - names, reasons, statuses - inserted unchanged) and fall back to the stored text otherwise.
+- Terminology: `frontend/src/i18n/glossary.md` (Lead, Referral, Booking, Attribution, Commission eligibility, ... in Hindi and Bengali) is used by every app and by the notification templates.
+
+## Backend
+
+- `language` (`'' | en | hi | bn`) on Partner, TeamMember, BuilderUser and Admin; only supported codes are accepted (`config/languages.js`).
+- Notifications: a rule's **default** title/message is rendered in each recipient's language (`i18n/notificationTemplates.js`), so one reminder reaches a Hindi and an English speaker correctly; a rule's own custom text is sent as written.
+- API error `reason` texts stay English (machine-readable `fieldKey`/`code` unchanged); the apps translate their own messages, phone-validation errors (by code) and generic fallbacks.
+
+## Checks
+
+- `frontend`: `npx vitest run` - key/placeholder/plural parity across en/hi/bn, fallback, switching, pluralisation, browser detection, locale formatting, data-label rules. `admin`: `npm test`. `mobile`: `npm run test:i18n`. Backend: `tests/i18nBackend.test.js`.
+- `node scripts/find-untranslated.mjs` (frontend and admin) lists hard-coded UI text in JSX; both report none.
+
+## Adding a fourth language (e.g. Tamil `ta`) *(superseded by section 55 - languages are now added with tools/i18n/translate.mjs)*
+
+1. Add `{ code: 'ta', name: 'தமிழ்', intl: 'ta-IN', dir: 'ltr' }` to `locales.js` in frontend, admin and mobile (for a right-to-left language set `dir: 'rtl'`; the `<html dir>` attribute follows it).
+2. Copy `locales/en/` to `locales/ta/` in each app and translate every value (the parity tests fail until all keys exist with the same placeholders). Mobile: also register the files in `mobile/src/i18n/resources.js`.
+3. Add `'ta'` to `backend/src/config/languages.js`, the `language` enums in the four user models, and a `ta` entry in `backend/src/i18n/notificationTemplates.js`.
+
+## Not translated (by design) and open review
+
+- Product name (Leadrat), customer/partner/builder/project names, IDs, phone numbers, emails, URLs, API keys, cURL/JSON examples, `{{variables}}`, anything a user typed; server error reasons; CSV file names (column headers are translated, cell values raw).
+- No legal/compliance text exists in the app; any added later keeps English authoritative until an approved translation exists.
+- **Native-speaker review recommended** for: "Protected until" / "Protection Until" headers (सुरक्षा की अंतिम तिथि / सुरक्षा समाप्ति, সুরক্ষার শেষ তারিখ), "Unassigned" (किसी को नहीं सौंपा गया / কাউকে নিয়োজিত নয়), "Working Owner" (कार्यकारी स्वामी / কার্যকরী মালিক), "Enquired For" and "Possession Needed By" field labels, timing sentences such as "1 घंटे बाद", Bengali digit use in counts, and Username (यूज़रनेम / ইউজারনেম).
+- The mobile app was compile-checked and its translation logic tested in Node, but not yet run on a device (Hermes `Intl` output for hi-IN/bn-IN unverified).
+
+---
+
+# 55. Every Language: Build-Time Machine Translation
+
+Prompted by "here I want all the languages instead only 3" (the My Profile language dropdown). Decision: offer every language a machine-translation provider supports (~130), generated **at build time** - never at runtime, never with customer data - and rolled out **in batches**. English, Hindi and Bengali stay the reviewed, hand-written translations.
+
+## How languages are produced (`tools/i18n/translate.mjs`)
+
+```text
+node tools/i18n/translate.mjs --provider google --list                 # what the provider offers
+node tools/i18n/translate.mjs --provider google --langs all --max 10    # next 10 languages not yet done
+node tools/i18n/translate.mjs --provider azure  --langs ta,te,mr        # specific languages
+node tools/i18n/translate.mjs --provider google --langs all --max 200 --update   # refresh after English changes
+node tools/i18n/translate.mjs --remove ta,te                            # withdraw languages
+node tools/i18n/translate.mjs --manifest-only                           # rebuild the language lists
+node --test tools/i18n/translate.test.mjs                               # pipeline tests
+```
+
+- Providers: Google Cloud Translation v2 (`GOOGLE_TRANSLATE_API_KEY`), Azure AI Translator v3 (`AZURE_TRANSLATOR_KEY` + `AZURE_TRANSLATOR_REGION`), DeepL (`DEEPL_API_KEY`, ~30 languages), and an offline `mock` for testing. Keys live in `tools/i18n/.env` (gitignored; template `.env.example`), never in the repo.
+- Input: the English JSON of every app (partner web + builder portal, admin, mobile) and the backend notification texts - about 1,750 strings / 42,000 characters per language. Only UI text is sent to the provider.
+- Protected from translation: `{{placeholders}}`, `<Trans>` markup (numbered `<0>` and named `<action>` tags; empty/self-closing tags kept whole), and product/technical terms (Leadrat, API, JSON, cURL, OAuth, HMAC, CSV, BHK, UTM, CRM, webhook, ...). Any result that loses or alters one of them is replaced by the English text for that key and reported - nothing can break a screen at runtime.
+- Plural forms follow each language's CLDR rules (Arabic six forms, Japanese one, Russian four), built from the English one/other texts.
+- Never overwritten: reviewed languages (en, hi, bn); any machine translation a person edited (the cache in `tools/i18n/cache/` records what the machine produced - a different value in the file is a human edit and is kept). Re-runs only send keys that are new or whose English changed.
+- Output: `locales/<code>/*.json` in each app, `backend/src/i18n/locales/<code>/notifications.json`, the regenerated mobile import list (`mobile/src/i18n/resources.js`), and the language manifest `tools/i18n/languages.json`, copied to each app (`src/i18n/languages.json`) and the backend (`src/config/languages.json`). A language appears in the dropdowns - and is accepted by the API - only once every app has all of its files.
+
+## In the apps
+
+- Each app's language list comes from its `languages.json` (code, native name, English name, Intl locale, text direction, quality `reviewed` | `machine`). The backend accepts exactly those codes for `language` (validated against the manifest; no hard-coded enum).
+- The selector shows each language in its own script with its English name ("தமிழ் - Tamil") in two groups: **Reviewed translations** and **Machine translated (may contain errors)**. With only reviewed languages it is a plain list, as before.
+- Web apps load a language's files only when it is chosen (each namespace file is a separate ~1-2 kB chunk), so 100+ languages don't grow the initial download; English is always loaded as the fallback. The first render waits for the starting language.
+- Right-to-left languages (Arabic, Urdu, Persian, Hebrew, ...) set `<html dir="rtl">`; the layout mirrors (verified with Arabic). Fine RTL polish (icons, some spacing) may need review per screen.
+- Browser/device language matching covers regional tags (`pt-BR`, `zh-TW`, `ta-IN`).
+
+## Cost and batches
+
+About 42,000 characters per language: roughly USD 110 for ~130 languages on Google (USD 20 per million characters; 500,000 free per month = ~11 languages), roughly USD 55 on Azure (Free tier 2 million characters per month = ~47 languages). Running in batches (`--max`) keeps each run within a monthly free tier or budget, and every batch is complete and tested before the next.
+
+## Quality
+
+Machine translations are not reviewed. They are labelled as such in the selector, follow the protected-term rules above, and can be corrected by editing the JSON - edits survive later runs. Business terms in the glossary (`frontend/src/i18n/glossary.md`) are only guaranteed for en/hi/bn.

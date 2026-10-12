@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "सेटिंग्स",
+    "noPermission": "आपके पास सेटिंग्स प्रबंधित करने की अनुमति नहीं है।"
+  },
+  "categories": {
+    "lead": "लीड",
+    "user": "उपयोगकर्ता",
+    "integrations": "इंटीग्रेशन"
+  },
+  "leadTabs": {
+    "fields": "फ़ील्ड",
+    "statuses": "स्थितियाँ और उप-स्थितियाँ",
+    "notifications": "सूचनाएँ और शेड्यूलर"
+  },
+  "fields": {
+    "leadIntro": "लीड दर्ज करने का फ़ॉर्म कॉन्फ़िगर करें: फ़ील्ड चालू/बंद करें, उन्हें आवश्यक चिह्नित करें, या अपने स्वयं के कस्टम फ़ील्ड जोड़ें।",
+    "userIntro": "टीम सदस्य जोड़ें/संपादित करें फ़ॉर्म कॉन्फ़िगर करें: फ़ील्ड चालू/बंद करें, उन्हें आवश्यक चिह्नित करें, या अपने स्वयं के कस्टम फ़ील्ड जोड़ें।",
+    "addCustomField": "+ कस्टम फ़ील्ड जोड़ें",
+    "fieldLabel": "फ़ील्ड का लेबल",
+    "group": "समूह",
+    "groupPlaceholderLead": "जैसे पूछताछ की जानकारी",
+    "groupPlaceholderUser": "जैसे अतिरिक्त विवरण",
+    "dataType": "डेटा प्रकार",
+    "options": "विकल्प (अल्पविराम से अलग करें)",
+    "requiredLead": "आवश्यक - लीड पंजीकृत करने के लिए आपकी टीम के पार्टनर को यह भरना होगा",
+    "requiredUser": "आवश्यक - टीम सदस्य जोड़ते समय यह भरना होगा",
+    "creating": "बनाया जा रहा है...",
+    "createField": "फ़ील्ड बनाएँ",
+    "columns": {
+      "field": "फ़ील्ड",
+      "group": "समूह",
+      "type": "प्रकार",
+      "required": "आवश्यक",
+      "enabled": "सक्षम",
+      "kind": "श्रेणी"
+    },
+    "kind": {
+      "custom": "कस्टम",
+      "core": "मुख्य (लॉक)",
+      "standard": "मानक"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "टेक्स्ट",
+    "TEXTAREA": "लंबा टेक्स्ट",
+    "NUMBER": "संख्या",
+    "CURRENCY": "मुद्रा",
+    "DATE": "तारीख",
+    "SELECT": "ड्रॉपडाउन",
+    "LIST": "सूची"
+  },
+  "picker": {
+    "searchPlaceholder": "लीड फ़ील्ड खोजें...",
+    "summary": "{{shown}} दिखाए गए · {{mandatory}} अनिवार्य",
+    "mandatory": "अनिवार्य",
+    "noMatch": "कोई फ़ील्ड मेल नहीं खाता।"
+  },
+  "statuses": {
+    "intro": "आपकी लीड की स्थितियाँ और उप-स्थितियाँ - जब कोई लीड को किसी स्थिति में अपडेट करता है, तो वह क्या माँगती है (तारीख और समय, लीड फ़ील्ड)।",
+    "add": "+ स्थिति जोड़ें",
+    "columns": {
+      "order": "क्रम",
+      "status": "स्थिति",
+      "subStatuses": "उप-स्थितियाँ",
+      "asksFor": "क्या माँगती है",
+      "active": "सक्रिय"
+    },
+    "moveUp": "ऊपर ले जाएँ",
+    "moveDown": "नीचे ले जाएँ",
+    "defaultBadge": "नई लीड के लिए डिफ़ॉल्ट",
+    "bookingBadge": "बुकिंग स्थिति",
+    "asksForLabel": "{{label}} माँगती है",
+    "asksForDateTime": "तारीख और समय माँगती है",
+    "none": "कोई नहीं",
+    "dateTime": "तारीख और समय",
+    "scheduledOn": "{{names}} पर",
+    "fieldsSummary_one": "{{count}} फ़ील्ड ({{mandatory}} अनिवार्य)",
+    "fieldsSummary_other": "{{count}} फ़ील्ड ({{mandatory}} अनिवार्य)",
+    "deleteConfirm": "स्थिति \"{{name}}\" हटाएँ? इसे पूर्ववत नहीं किया जा सकता।",
+    "editTitle": "स्थिति संपादित करें - {{name}}",
+    "newTitle": "नई स्थिति",
+    "name": "स्थिति का नाम",
+    "colour": "रंग",
+    "active": "सक्रिय",
+    "isDefault": "नई लीड के लिए डिफ़ॉल्ट स्थिति",
+    "isBooking": "बुकिंग स्थिति (बुकिंग पूरी करने पर लागू होती है)",
+    "whenMoved": "जब लीड को इस स्थिति में ले जाया जाए",
+    "askSchedule": "तारीख और समय माँगें (शेड्यूलर)",
+    "scheduleLabelPlaceholder": "लेबल, जैसे विज़िट का समय",
+    "fieldsToShow": "अपडेट फ़ॉर्म पर दिखाए जाने वाले लीड फ़ील्ड",
+    "subStatusesTitle": "उप-स्थितियाँ",
+    "subStatusesHint": "हर उप-स्थिति अपनी तारीख और समय माँग सकती है और अपने फ़ील्ड जोड़ सकती है - ये ऊपर दिए गए स्थिति के फ़ील्ड के अतिरिक्त दिखाए जाते हैं।",
+    "subStatusName": "उप-स्थिति का नाम",
+    "subFields": "फ़ील्ड ({{count}})",
+    "subScheduleLabelPlaceholder": "तारीख और समय का लेबल, जैसे वापस कॉल करने का समय",
+    "addSubStatus": "+ उप-स्थिति जोड़ें",
+    "saveStatus": "स्थिति सहेजें",
+    "createStatus": "स्थिति बनाएँ"
+  },
+  "notifications": {
+    "intro": "जब कोई लीड किसी स्थिति में पहुँचे, तो सही लोगों को सूचित करें - तुरंत, या उस पर निर्धारित तारीख और समय से एक तय समय पहले/बाद।",
+    "add": "+ सूचना जोड़ें",
+    "columns": {
+      "notification": "सूचना",
+      "whenStatusIs": "जब स्थिति हो",
+      "sends": "कब भेजी जाती है",
+      "to": "किसे",
+      "via": "माध्यम",
+      "enabled": "सक्षम"
+    },
+    "anyStatus": "कोई भी स्थिति",
+    "anySubStatus": "कोई भी उप-स्थिति",
+    "inactiveOption": "{{name}} (निष्क्रिय)",
+    "emptyRules": "अभी तक कोई सूचना नहीं है - जब कोई लीड किसी स्थिति में पहुँचे तो अपनी टीम को सूचित करने के लिए एक सूचना जोड़ें।",
+    "jobs": {
+      "title": "निर्धारित और भेजी गई",
+      "firesAt": "भेजने का समय",
+      "notification": "सूचना",
+      "lead": "लीड",
+      "status": "स्थिति",
+      "details": "विवरण",
+      "empty": "अभी तक कुछ भी निर्धारित या भेजा नहीं गया है।",
+      "delivery": "{{channel}} → {{recipient}}: {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}}: {{status}} ({{detail}})"
+    },
+    "jobStatus": {
+      "PENDING": "लंबित",
+      "PROCESSING": "प्रोसेस हो रही है",
+      "SENT": "भेजी गई",
+      "FAILED": "विफल",
+      "SKIPPED": "छोड़ी गई",
+      "CANCELLED": "रद्द"
+    },
+    "deliveryStatus": {
+      "SENT": "भेजी गई",
+      "FAILED": "विफल",
+      "SKIPPED": "छोड़ी गई"
+    },
+    "deliveryChannel": {
+      "IN_APP": "इन-ऐप",
+      "EMAIL": "ईमेल",
+      "WEBHOOK": "वेबहुक"
+    },
+    "recipients": {
+      "assignedUser": "सौंपा गया उपयोगकर्ता",
+      "owner": "मालिक",
+      "updatedBy": "अपडेट करने वाला",
+      "role": "भूमिका: {{name}}"
+    },
+    "channels": {
+      "inApp": "इन-ऐप",
+      "email": "ईमेल",
+      "webhook": "वेबहुक"
+    },
+    "deleteConfirm": "सूचना \"{{name}}\" हटाएँ? इससे लंबित रिमाइंडर रद्द हो जाएँगे।",
+    "testPrompt": "इस सूचना का परीक्षण स्वयं को (इन-ऐप) किस लीड ID के साथ भेजें?",
+    "testSent": "आपकी घंटी पर भेजी गई:\n\n{{title}}\n{{message}}",
+    "headersInvalid": "वेबहुक हेडर मान्य JSON होने चाहिए, जैसे {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "सूचना संपादित करें",
+    "newTitle": "नई सूचना",
+    "name": "नाम",
+    "namePlaceholder": "जैसे साइट विज़िट रिमाइंडर",
+    "whenStatus": "जब लीड की स्थिति हो",
+    "subStatus": "उप-स्थिति",
+    "send": "कब भेजें (शेड्यूलर)",
+    "custom": "कस्टम...",
+    "modeBefore": "निर्धारित समय से पहले",
+    "modeAfter": "निर्धारित समय के बाद",
+    "noScheduleWarning": "यह स्थिति तारीख और समय नहीं माँगती, इसलिए \"निर्धारित समय से पहले/पर/बाद\" वाली सूचना कभी नहीं भेजी जाएगी।",
+    "noScheduleFix": "स्थितियाँ और उप-स्थितियाँ में इसके लिए <strong>तारीख और समय माँगें</strong> चालू करें, या इसे तुरंत भेजें।",
+    "sendTo": "किसे भेजें (कोई भी संयोजन)",
+    "recipientAssigned": "सौंपा गया उपयोगकर्ता (लीड मालिक)",
+    "recipientOwner": "खाते का मालिक / एडमिन",
+    "recipientUpdatedBy": "स्थिति अपडेट करने वाला व्यक्ति",
+    "everyoneWithRole": "इस भूमिका वाले सभी लोग",
+    "specificUsers": "विशिष्ट उपयोगकर्ता (सक्रिय)",
+    "inactiveNever": "निष्क्रिय उपयोगकर्ताओं को कभी सूचनाएँ नहीं मिलतीं, भले ही उन्हें चुना गया हो।",
+    "deliverVia": "भेजने का माध्यम",
+    "channelInApp": "इन-ऐप (घंटी)",
+    "channelEmail": "ईमेल",
+    "channelWebhook": "वेबहुक (WhatsApp / SMS प्रदाता)",
+    "emailHint": "ईमेल हर प्राप्तकर्ता के ईमेल पते पर जाता है और इसके लिए सर्वर पर SMTP सेट होना चाहिए (backend/.env); तब तक ईमेल भेजना छोड़ा गया के रूप में दर्ज होता है।",
+    "webhookUrl": "वेबहुक URL (POST, JSON)",
+    "headers": "हेडर (JSON)",
+    "content": "सूचना की सामग्री",
+    "title": "शीर्षक",
+    "message": "संदेश",
+    "insertIntoTitle": "शीर्षक में डालें",
+    "insertIntoMessage": "संदेश में डालें",
+    "anyLeadField": "कोई भी लीड फ़ील्ड भी काम करता है, जैसे <code1>{{example1}}</code1> या <code2>{{example2}}</code2>।",
+    "preview": "पूर्वावलोकन (नमूना लीड)",
+    "enabled": "सक्षम",
+    "saveRule": "सूचना सहेजें",
+    "createRule": "सूचना बनाएँ",
+    "variables": {
+      "customerName": "लीड का नाम",
+      "customerMobile": "लीड का मोबाइल",
+      "customerEmail": "लीड का ईमेल",
+      "registrationId": "लीड ID",
+      "status": "स्थिति",
+      "subStatus": "उप-स्थिति",
+      "scheduleAt": "निर्धारित तारीख और समय",
+      "assignedTo": "सौंपा गया उपयोगकर्ता",
+      "updatedBy": "अपडेट करने वाला",
+      "recipient": "प्राप्तकर्ता का नाम",
+      "project": "प्रोजेक्ट",
+      "notes": "नवीनतम नोट",
+      "partner": "पार्टनर का नाम"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "स्थिति सेट होते ही तुरंत",
+      "AT": "निर्धारित समय पर",
+      "A1D": "निर्धारित समय के 1 दिन बाद (फ़ॉलो-अप जाँच)"
+    },
+    "immediately": "तुरंत",
+    "atScheduled": "निर्धारित समय पर",
+    "before": {
+      "MINUTES_one": "निर्धारित समय से {{count}} मिनट पहले",
+      "MINUTES_other": "निर्धारित समय से {{count}} मिनट पहले",
+      "HOURS_one": "निर्धारित समय से {{count}} घंटा पहले",
+      "HOURS_other": "निर्धारित समय से {{count}} घंटे पहले",
+      "DAYS_one": "निर्धारित समय से {{count}} दिन पहले",
+      "DAYS_other": "निर्धारित समय से {{count}} दिन पहले",
+      "WEEKS_one": "निर्धारित समय से {{count}} सप्ताह पहले",
+      "WEEKS_other": "निर्धारित समय से {{count}} सप्ताह पहले",
+      "MONTHS_one": "निर्धारित समय से {{count}} महीना पहले",
+      "MONTHS_other": "निर्धारित समय से {{count}} महीने पहले",
+      "YEARS_one": "निर्धारित समय से {{count}} वर्ष पहले",
+      "YEARS_other": "निर्धारित समय से {{count}} वर्ष पहले"
+    },
+    "after": {
+      "MINUTES_one": "निर्धारित समय के {{count}} मिनट बाद",
+      "MINUTES_other": "निर्धारित समय के {{count}} मिनट बाद",
+      "HOURS_one": "निर्धारित समय के {{count}} घंटे बाद",
+      "HOURS_other": "निर्धारित समय के {{count}} घंटे बाद",
+      "DAYS_one": "निर्धारित समय के {{count}} दिन बाद",
+      "DAYS_other": "निर्धारित समय के {{count}} दिन बाद",
+      "WEEKS_one": "निर्धारित समय के {{count}} सप्ताह बाद",
+      "WEEKS_other": "निर्धारित समय के {{count}} सप्ताह बाद",
+      "MONTHS_one": "निर्धारित समय के {{count}} महीने बाद",
+      "MONTHS_other": "निर्धारित समय के {{count}} महीने बाद",
+      "YEARS_one": "निर्धारित समय के {{count}} वर्ष बाद",
+      "YEARS_other": "निर्धारित समय के {{count}} वर्ष बाद"
+    },
+    "units": {
+      "MINUTES_one": "मिनट",
+      "MINUTES_other": "मिनट",
+      "HOURS_one": "घंटा",
+      "HOURS_other": "घंटे",
+      "DAYS_one": "दिन",
+      "DAYS_other": "दिन",
+      "WEEKS_one": "सप्ताह",
+      "WEEKS_other": "सप्ताह",
+      "MONTHS_one": "महीना",
+      "MONTHS_other": "महीने",
+      "YEARS_one": "वर्ष",
+      "YEARS_other": "वर्ष"
+    }
+  }
+}

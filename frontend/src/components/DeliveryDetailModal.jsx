@@ -1,5 +1,7 @@
-function prettyPrint(text) {
-  if (!text) return '(empty)';
+import { useTranslation } from 'react-i18next';
+
+function prettyPrint(text, emptyText) {
+  if (!text) return emptyText;
   try {
     return JSON.stringify(JSON.parse(text), null, 2);
   } catch {
@@ -15,51 +17,47 @@ function prettyPrint(text) {
 // difference is to read what was actually sent and what it actually replied
 // with, which the delivery log's summary table doesn't have room for.
 export default function DeliveryDetailModal({ delivery, onClose }) {
+  const { t } = useTranslation(['integrations', 'common']);
+  const empty = t('delivery.empty');
   return (
     <div className="modal-backdrop" onClick={onClose}>
       <div className="modal-card card" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
-          <h3 style={{ margin: 0 }}>Delivery Detail - {delivery.deliveryId}</h3>
-          <button className="link" onClick={onClose}>Close</button>
+          <h3 style={{ margin: 0 }}>{t('delivery.title', { id: delivery.deliveryId })}</h3>
+          <button className="link" onClick={onClose}>{t('common:actions.close')}</button>
         </div>
 
         <div style={{ display: 'flex', gap: '0.6rem', marginBottom: '1rem' }}>
           <span className={`badge ${delivery.status === 'SUCCESS' ? 'accepted' : 'rejected'}`}>
-            {delivery.status === 'SUCCESS' ? 'Pass' : 'Fail'}
+            {delivery.status === 'SUCCESS' ? t('delivery.pass') : t('delivery.fail')}
           </span>
-          <span className="hint">HTTP {delivery.httpStatus ?? '(no response)'}</span>
-          <span className="hint">Attempt {delivery.attempt}</span>
+          <span className="hint">{t('delivery.http', { status: delivery.httpStatus ?? t('delivery.noResponse') })}</span>
+          <span className="hint">{t('delivery.attempt', { attempt: delivery.attempt })}</span>
         </div>
 
         {delivery.errorMessage && <div className="error-box">{delivery.errorMessage}</div>}
 
-        <h3 className="form-section-title"><span>Request Sent</span></h3>
+        <h3 className="form-section-title"><span>{t('delivery.requestSent')}</span></h3>
         <div className="field">
-          <label>URL</label>
+          <label>{t('delivery.url')}</label>
           <input readOnly value={`${delivery.requestMethod} ${delivery.requestUrl}`} />
         </div>
         <div className="field">
-          <label>Headers</label>
-          <textarea readOnly rows={4} style={{ fontFamily: 'monospace', fontSize: '0.8rem' }} value={prettyPrint(JSON.stringify(delivery.requestHeaders))} />
+          <label>{t('delivery.headers')}</label>
+          <textarea readOnly rows={4} style={{ fontFamily: 'monospace', fontSize: '0.8rem' }} value={prettyPrint(JSON.stringify(delivery.requestHeaders), empty)} />
         </div>
         <div className="field">
-          <label>Body</label>
-          <textarea readOnly rows={6} style={{ fontFamily: 'monospace', fontSize: '0.8rem' }} value={prettyPrint(delivery.requestBody)} />
+          <label>{t('delivery.body')}</label>
+          <textarea readOnly rows={6} style={{ fontFamily: 'monospace', fontSize: '0.8rem' }} value={prettyPrint(delivery.requestBody, empty)} />
         </div>
 
-        <h3 className="form-section-title"><span>Response Received</span></h3>
+        <h3 className="form-section-title"><span>{t('delivery.responseReceived')}</span></h3>
         <div className="field">
-          <label>Body</label>
-          <textarea readOnly rows={6} style={{ fontFamily: 'monospace', fontSize: '0.8rem' }} value={prettyPrint(delivery.responseBody)} />
+          <label>{t('delivery.body')}</label>
+          <textarea readOnly rows={6} style={{ fontFamily: 'monospace', fontSize: '0.8rem' }} value={prettyPrint(delivery.responseBody, empty)} />
         </div>
 
-        <p className="hint">
-          A "Pass" here only means the target server returned an HTTP 2xx status - it does not confirm the
-          receiving system actually stored or processed the lead. Check the response body above for what it
-          actually said; if it's blank or just an acknowledgement, that system may be receiving the request
-          but rejecting or ignoring the payload internally (wrong field names/format for its API, a
-          required field on its side that this payload doesn't include, etc).
-        </p>
+        <p className="hint">{t('delivery.passExplainer')}</p>
       </div>
     </div>
   );

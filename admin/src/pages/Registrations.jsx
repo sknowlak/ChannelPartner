@@ -1,11 +1,17 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { listRegistrations } from '../api/client';
 import { csvCell } from '../utils/csv';
+import { errorMessage } from '../utils/errors';
+import { enumLabel } from '../i18n/enumLabels';
+import Pagination, { PageSizeSelect } from '../components/Pagination';
 
 const initialFilters = { partnerId: '', projectId: '', status: '', isBooked: '' };
+const REGISTRATION_STATUSES = ['ACCEPTED', 'REJECTED'];
 
 export default function Registrations() {
+  const { t } = useTranslation(['registrations', 'common', 'enums']);
   const [registrations, setRegistrations] = useState([]);
   const [filters, setFilters] = useState(initialFilters);
   const [error, setError] = useState(null);
@@ -18,7 +24,7 @@ export default function Registrations() {
     const params = Object.fromEntries(Object.entries(effective).filter(([, v]) => v));
     listRegistrations(params)
       .then(({ data }) => { setRegistrations(data.registrations); setPage(1); })
-      .catch((err) => setError(err.response?.data?.reason || err.message));
+      .catch((err) => setError(errorMessage(err)));
   };
 
   useEffect(load, []);
@@ -29,7 +35,8 @@ export default function Registrations() {
   };
 
   const exportCsv = () => {
-    const header = ['Registration ID', 'Partner', 'Project', 'Status', 'Stage', 'Booked'];
+    // Headers follow the UI language; cell values stay raw (Yes/No, enum values) for spreadsheets.
+    const header = ['registrationId', 'partner', 'project', 'status', 'stage', 'booked'].map((k) => t(`registrations:list.csv.${k}`));
     const rows = registrations.map((r) => [r.registrationId, r.partnerId, r.projectId, r.status, r.currentStage, r.isBooked ? 'Yes' : 'No']);
     const csv = [header, ...rows].map((r) => r.map(csvCell).join(',')).join('\n');
     const blob = new Blob([csv], { type: 'text/csv' });
@@ -50,18 +57,18 @@ export default function Registrations() {
 
   return (
     <div className="page page-wide">
-      <h1>Registrations</h1>
+      <h1>{t('registrations:list.title')}</h1>
       {error && <div className="error-box">{error}</div>}
 
       <div className="status-tabs">
         <button className={filters.isBooked === '' ? 'active' : ''} onClick={() => setBookedTab('')}>
-          <span className="dot all" />All ({registrations.length})
+          <span className="dot all" />{t('registrations:list.tabs.all', { count: registrations.length })}
         </button>
         <button className={filters.isBooked === 'false' ? 'active' : ''} onClick={() => setBookedTab('false')}>
-          <span className="dot active-dot" />Pending ({pendingCount})
+          <span className="dot active-dot" />{t('registrations:list.tabs.pending', { count: pendingCount })}
         </button>
         <button className={filters.isBooked === 'true' ? 'active' : ''} onClick={() => setBookedTab('true')}>
-          <span className="dot inactive-dot" />Booked ({bookedCount})
+          <span className="dot inactive-dot" />{t('registrations:list.tabs.booked', { count: bookedCount })}
         </button>
       </div>
 
@@ -69,35 +76,29 @@ export default function Registrations() {
         <div className="toolbar-left">
           <input
             type="text"
-            placeholder="Search by Partner ID..."
+            placeholder={t('registrations:list.searchPlaceholder')}
+            aria-label={t('registrations:list.searchPlaceholder')}
             value={filters.partnerId}
             onChange={(e) => setFilters((f) => ({ ...f, partnerId: e.target.value }))}
             onKeyDown={(e) => e.key === 'Enter' && load()}
           />
         </div>
         <div className="toolbar-right">
-          <input placeholder="Project ID" value={filters.projectId} onChange={(e) => setFilters((f) => ({ ...f, projectId: e.target.value }))} style={{ padding: '0.5rem 0.7rem', border: '1px solid #d8dce3', borderRadius: 8 }} />
-          <select value={filters.status} onChange={(e) => setFilters((f) => ({ ...f, status: e.target.value }))}>
-            <option value="">Any status</option>
-            <option value="ACCEPTED">ACCEPTED</option>
-            <option value="REJECTED">REJECTED</option>
+          <input placeholder={t('registrations:list.projectPlaceholder')} aria-label={t('registrations:list.projectPlaceholder')} value={filters.projectId} onChange={(e) => setFilters((f) => ({ ...f, projectId: e.target.value }))} style={{ padding: '0.5rem 0.7rem', border: '1px solid #d8dce3', borderRadius: 8 }} />
+          <select value={filters.status} onChange={(e) => setFilters((f) => ({ ...f, status: e.target.value }))} aria-label={t('registrations:list.anyStatus')}>
+            <option value="">{t('registrations:list.anyStatus')}</option>
+            {REGISTRATION_STATUSES.map((s) => <option key={s} value={s}>{enumLabel('registrationStatus', s)}</option>)}
           </select>
-          <button className="secondary" onClick={() => load()}>Apply</button>
-          <button className="pill-export" onClick={exportCsv}>Export</button>
-          <label className="hint" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-            Show
-            <select value={pageSize} onChange={(e) => { setPageSize(Number(e.target.value)); setPage(1); }}>
-              {[10, 25, 50].map((n) => <option key={n} value={n}>{n}</option>)}
-            </select>
-            entries
-          </label>
+          <button className="secondary" onClick={() => load()}>{t('common:actions.apply')}</button>
+          <button className="pill-export" onClick={exportCsv}>{t('common:actions.export')}</button>
+          <PageSizeSelect value={pageSize} onChange={(n) => { setPageSize(n); setPage(1); }} />
         </div>
       </div>
 
       <div className="card">
         <table className="pro-table">
           <thead>
-            <tr><th>Registration</th><th>Partner</th><th>Project</th><th>Status</th><th>Stage</th><th>Booked</th></tr>
+            <tr>{['registration', 'partner', 'project', 'status', 'stage', 'booked'].map((k) => <th key={k}>{t(`registrations:list.columns.${k}`)}</th>)}</tr>
           </thead>
           <tbody>
             {pagedRegistrations.map((r) => (
@@ -105,30 +106,17 @@ export default function Registrations() {
                 <td className="primary-cell">{r.registrationId}</td>
                 <td>{r.partnerId}</td>
                 <td>{r.projectId || '-'}</td>
-                <td><span className={`badge ${r.status.toLowerCase()}`}>{r.status}</span></td>
+                <td><span className={`badge ${r.status.toLowerCase()}`}>{enumLabel('registrationStatus', r.status)}</span></td>
                 <td>{r.currentStage}</td>
-                <td><span className={`badge ${r.isBooked ? 'accepted' : 'pending'}`}>{r.isBooked ? 'Booked' : 'Pending'}</span></td>
+                <td><span className={`badge ${r.isBooked ? 'accepted' : 'pending'}`}>{r.isBooked ? t('registrations:list.booked') : t('registrations:list.pending')}</span></td>
               </tr>
             ))}
-            {registrations.length === 0 && <tr><td colSpan={6} className="hint">No registrations match these filters.</td></tr>}
+            {registrations.length === 0 && <tr><td colSpan={6} className="hint">{t('registrations:list.empty')}</td></tr>}
           </tbody>
         </table>
 
         {registrations.length > 0 && (
-          <div className="pagination-bar">
-            <span className="hint">
-              Showing {(currentPage - 1) * pageSize + 1} - {Math.min(currentPage * pageSize, registrations.length)} of {registrations.length} entries
-            </span>
-            <div className="pagination-buttons">
-              <button className="page-btn" disabled={currentPage <= 1} onClick={() => setPage(1)}>&laquo;</button>
-              <button className="page-btn" disabled={currentPage <= 1} onClick={() => setPage((p) => p - 1)}>&lsaquo;</button>
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
-                <button key={p} className={`page-btn ${p === currentPage ? 'current' : ''}`} onClick={() => setPage(p)}>{p}</button>
-              ))}
-              <button className="page-btn" disabled={currentPage >= totalPages} onClick={() => setPage((p) => p + 1)}>&rsaquo;</button>
-              <button className="page-btn" disabled={currentPage >= totalPages} onClick={() => setPage(totalPages)}>&raquo;</button>
-            </div>
-          </div>
+          <Pagination currentPage={currentPage} totalPages={totalPages} pageSize={pageSize} total={registrations.length} setPage={setPage} />
         )}
       </div>
     </div>

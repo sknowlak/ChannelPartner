@@ -10,10 +10,12 @@ import * as SecureStore from 'expo-secure-store';
 const configured = process.env.EXPO_PUBLIC_API_BASE_URL || Constants.expoConfig?.extra?.apiBaseUrl || '';
 const BASE_URL = configured || (__DEV__ ? 'http://localhost:5000/api/channel-partner' : '');
 
+// A language-neutral code; the message is translated where it is shown
+// (auth:config.<code>, see i18n/errors.js).
 export const API_CONFIG_ERROR = !BASE_URL
-  ? 'The app has no API address configured (EXPO_PUBLIC_API_BASE_URL).'
+  ? 'noApiAddress'
   : !__DEV__ && !BASE_URL.startsWith('https://')
-    ? 'This build points at an insecure (http://) API address. Release builds must use https://.'
+    ? 'insecureApiAddress'
     : null;
 
 const client = axios.create({ baseURL: BASE_URL, headers: { 'X-Client-Platform': 'MOBILE' }, timeout: 20000 });
@@ -41,7 +43,7 @@ export function setSignedOutHandler(fn) {
 }
 
 client.interceptors.request.use((config) => {
-  if (API_CONFIG_ERROR) throw new Error(API_CONFIG_ERROR);
+  if (API_CONFIG_ERROR) throw Object.assign(new Error(API_CONFIG_ERROR), { configError: API_CONFIG_ERROR });
   if (token) config.headers.Authorization = `Bearer ${token}`;
   return config;
 });
@@ -68,5 +70,8 @@ export const updateLeadProgress = (registrationId, payload) => client.post(`/my/
 export const listStatuses = () => client.get('/my/lead-statuses');
 export const listProjects = () => client.get('/my/projects');
 export const listLeadFields = () => client.get('/my/lead-fields');
+export const getMyProfile = () => client.get('/my/profile');
+// Used to save the UI language to the account ({ language }).
+export const updateProfile = (payload) => client.patch('/my/profile', payload);
 
 export default client;

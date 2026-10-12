@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "বিল্ডার পোর্টাল",
+    "referrals": "রেফারেল",
+    "builderLogin": "বিল্ডার লগইন",
+    "partnerLogin": "চ্যানেল পার্টনার লগইন"
+  },
+  "login": {
+    "title": "বিল্ডার সাইন ইন",
+    "hint": "বিল্ডার অ্যাকাউন্ট Leadrat তৈরি করে। আপনার অ্যাকাউন্ট না থাকলে আপনার অ্যাডমিনের সঙ্গে যোগাযোগ করুন।"
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "আপনার সিদ্ধান্তের অপেক্ষায়",
+    "ACCEPTED": "গৃহীত",
+    "REJECTED": "প্রত্যাখ্যাত"
+  },
+  "list": {
+    "title": "রেফারেল",
+    "allProjects": "সব প্রকল্প",
+    "allStatuses": "সব অবস্থা",
+    "count_one": "{{count}}টি রেফারেল",
+    "count_other": "{{count}}টি রেফারেল",
+    "columns": {
+      "referral": "রেফারেল",
+      "customer": "গ্রাহক",
+      "project": "প্রকল্প",
+      "sourcePartner": "উৎস পার্টনার",
+      "status": "অবস্থা",
+      "booking": "বুকিং",
+      "registered": "নিবন্ধনের তারিখ"
+    },
+    "booked": "বুক হয়েছে",
+    "empty": "এখনও কোনো রেফারেল নেই।"
+  },
+  "detail": {
+    "customer": "গ্রাহক",
+    "sourcePartner": "উৎস পার্টনার",
+    "attributionNote": "(কৃতিত্ব - পরিবর্তন করা যায় না)",
+    "leadStatus": "লিডের অবস্থা",
+    "protectedUntil": "সুরক্ষার শেষ তারিখ",
+    "referral": "রেফারেল",
+    "reason": "কারণ: {{reason}}",
+    "booking": "বুকিং",
+    "bookedOwner": "বুক হয়েছে - এখন আপনি পরিচালন মালিক",
+    "notBooked": "বুক হয়নি",
+    "sharedAfterBooking": "বুকিংয়ের পরে শেয়ার করা হবে",
+    "accept": "রেফারেল গ্রহণ করুন",
+    "confirmBooking": "বুকিং নিশ্চিত করুন",
+    "reject": "রেফারেল প্রত্যাখ্যান করুন",
+    "rejectReasonLabel": "প্রত্যাখ্যানের কারণ (পার্টনারকে দেখানো হবে) *",
+    "rejectConfirm": "প্রত্যাখ্যান করুন",
+    "confirmBookingPrompt": "আপনি কি বুকিং নিশ্চিত করতে চান? পরিচালন মালিকানা আপনার কাছে চলে আসবে এবং পার্টনার কমিশনের যোগ্য হবেন।",
+    "notice": {
+      "booked": "বুকিং নিশ্চিত হয়েছে।",
+      "accepted": "রেফারেল গ্রহণ করা হয়েছে।",
+      "rejected": "রেফারেল প্রত্যাখ্যান করা হয়েছে।"
+    },
+    "backToReferrals": "রেফারেলে ফিরে যান"
+  },
+  "history": {
+    "title": "ইতিহাস",
+    "actor": {
+      "system": "সিস্টেম",
+      "partner": "চ্যানেল পার্টনার",
+      "admin": "Leadrat অ্যাডমিন"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "পার্টনারের নিবন্ধন পাওয়া গেছে",
+      "DUPLICATE_CHECK_COMPLETED": "ডুপ্লিকেট যাচাই সম্পন্ন - কোনো সক্রিয় ডুপ্লিকেট পাওয়া যায়নি",
+      "REGISTRATION_ACCEPTED": "নিবন্ধন গৃহীত হয়েছে",
+      "PROTECTION_GRANTED_one": "{{count}} দিনের সুরক্ষা দেওয়া হয়েছে",
+      "PROTECTION_GRANTED_other": "{{count}} দিনের সুরক্ষা দেওয়া হয়েছে",
+      "STAGE_UPDATED": "অবস্থা পরিবর্তন করে {{stage}} করা হয়েছে",
+      "LEAD_DETAILS_UPDATED_one": "{{count}}টি ফিল্ড আপডেট করা হয়েছে",
+      "LEAD_DETAILS_UPDATED_other": "{{count}}টি ফিল্ড আপডেট করা হয়েছে",
+      "LEAD_ASSIGNED": "{{name}}-কে নিয়োজিত করা হয়েছে",
+      "LEAD_UNASSIGNED": "কাউকে নিয়োজিত করা হয়নি",
+      "REFERRAL_ACCEPTED": "বিল্ডার রেফারেল গ্রহণ করেছেন",
+      "REFERRAL_REJECTED": "বিল্ডার রেফারেল প্রত্যাখ্যান করেছেন। কারণ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}}-এর ডুপ্লিকেট নিবন্ধনের চেষ্টা প্রত্যাখ্যান করা হয়েছে",
+      "BOOKING_COMPLETED": "বুকিং সম্পন্ন হয়েছে",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "পরিচালন মালিকানা বিল্ডারের কাছে হস্তান্তর করা হয়েছে",
+      "PARTNER_ATTRIBUTION_PRESERVED": "পার্টনারের কৃতিত্ব সংরক্ষিত রাখা হয়েছে",
+      "COMMISSION_ELIGIBILITY_CREATED": "কমিশনের যোগ্যতা তৈরি হয়েছে",
+      "HANDOVER_COMPLETED": "হস্তান্তর সম্পন্ন হয়েছে",
+      "ADMIN_PROTECTION_RELEASED": "অ্যাডমিন মেয়াদ শেষ হওয়ার আগেই ডুপ্লিকেট সুরক্ষা তুলে নিয়েছেন। কারণ: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "অ্যাডমিন নিবন্ধনটি {{from}} থেকে {{to}}-তে পুনরায় বরাদ্দ করেছেন। কারণ: {{reason}}"
+    }
+  }
+}

@@ -1,3 +1,6 @@
+import { useTranslation } from 'react-i18next';
+import { useDataLabels } from '../i18n/dataLabels';
+
 const GROUP_ORDER = [
   'Core', 'Profile', 'Address', 'KYC', 'Documents', 'Banking',
   'Business', 'Integration', 'Agreement', 'Commission', 'Other', 'Custom'
@@ -18,6 +21,10 @@ function sortGroups(groups) {
 // when an admin adds a custom field or disables a standard one, this form
 // reflects it immediately with no code change.
 export default function PartnerForm({ fieldDefinitions, values, onChange, mode }) {
+  const { t } = useTranslation('partners');
+  // Built-in labels/groups/options are translated only while unchanged;
+  // admin-entered ones show as stored. Option VALUES are never changed.
+  const { fieldLabel, groupLabel, optionLabel } = useDataLabels();
   const renderable = fieldDefinitions.filter((def) => def.isEnabled && !def.isSystemGenerated);
   const groups = sortGroups([...new Set(renderable.map((d) => d.group))]);
 
@@ -41,7 +48,7 @@ export default function PartnerForm({ fieldDefinitions, values, onChange, mode }
           value={value}
           onChange={(e) => setValue(def, e.target.value)}
           required={mode === 'create' && def.isRequired}
-          placeholder={mode === 'edit' ? 'Leave blank to keep unchanged' : ''}
+          placeholder={mode === 'edit' ? t('partners:form.keepPassword') : ''}
         />
       );
     }
@@ -49,8 +56,8 @@ export default function PartnerForm({ fieldDefinitions, values, onChange, mode }
     if (def.dataType === 'SELECT') {
       return (
         <select value={value} onChange={(e) => setValue(def, e.target.value)} required={def.isRequired}>
-          <option value="">Select...</option>
-          {def.options.map((o) => <option key={o} value={o}>{o}</option>)}
+          <option value="">{t('partners:form.selectPlaceholder')}</option>
+          {def.options.map((o) => <option key={o} value={o}>{optionLabel(o)}</option>)}
         </select>
       );
     }
@@ -86,7 +93,7 @@ export default function PartnerForm({ fieldDefinitions, values, onChange, mode }
       return (
         <input
           type="text"
-          placeholder="Comma separated"
+          placeholder={t('partners:form.commaSeparated')}
           value={text}
           onChange={(e) => setValue(def, e.target.value.split(',').map((v) => v.trim()).filter(Boolean))}
         />
@@ -107,11 +114,11 @@ export default function PartnerForm({ fieldDefinitions, values, onChange, mode }
     <>
       {groups.map((group) => (
         <div key={group} style={{ marginBottom: '1.2rem' }}>
-          <h4 style={{ margin: '0 0 0.6rem', color: '#3d1421' }}>{group}</h4>
+          <h4 style={{ margin: '0 0 0.6rem', color: '#3d1421' }}>{groupLabel(group)}</h4>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0 1rem' }}>
             {renderable.filter((d) => d.group === group).map((def) => (
               <div className="field" key={def.fieldKey}>
-                <label>{def.label}{def.isRequired ? ' *' : ''}</label>
+                <label>{def.isRequired ? t('partners:form.requiredLabel', { label: fieldLabel(def) }) : fieldLabel(def)}</label>
                 {renderInput(def)}
               </div>
             ))}

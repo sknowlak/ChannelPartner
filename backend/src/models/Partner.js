@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const { isSupportedLanguage } = require('../config/languages');
 
 // Full channel-partner registration field set. Standard fields are modeled
 // directly (so they stay natively filterable/indexable); anything an admin
@@ -97,6 +98,9 @@ const partnerSchema = new mongoose.Schema(
     // every timestamp shown to this partner is rendered in this zone
     // instead of assuming a single server/browser timezone (section 32).
     timezone: { type: String, default: 'UTC' },
+    // Preferred UI language (sections 54-55) - '' = not chosen yet (device/browser
+    // decides). Any language in config/languages.json (the generated manifest).
+    language: { type: String, default: '', validate: { validator: (v) => v === '' || isSupportedLanguage(v), message: 'Unsupported language' } },
 
     // ISO 4217 currency code (e.g. "USD", "INR", "AED") - every monetary
     // field (budget, booking value) is a plain number with no unit of its

@@ -1,6 +1,10 @@
 // The app is used worldwide (spec section 32) - every date the backend
 // sends is a plain UTC ISO timestamp; these helpers render it in a specific
 // person's chosen zone using the native Intl API (no extra dependency).
+// The display LOCALE follows the UI language (section 54) - the same
+// instant renders as "11 Oct 2026" in English and "11 अक्तू॰ 2026" in Hindi.
+import i18n from 'i18next';
+import { intlLocale } from '../i18n/format';
 
 export const COMMON_TIMEZONES = [
   'UTC', 'Asia/Kolkata', 'Asia/Dubai', 'Asia/Singapore', 'Asia/Tokyo',
@@ -21,7 +25,7 @@ export function formatDateTime(value, timezone) {
   if (!value) return '-';
   const tz = timezone || detectBrowserTimezone();
   try {
-    return new Intl.DateTimeFormat(undefined, {
+    return new Intl.DateTimeFormat(intlLocale(), {
       timeZone: tz,
       dateStyle: 'medium',
       timeStyle: 'short'
@@ -35,7 +39,7 @@ export function formatDate(value, timezone) {
   if (!value) return '-';
   const tz = timezone || detectBrowserTimezone();
   try {
-    return new Intl.DateTimeFormat(undefined, { timeZone: tz, dateStyle: 'medium' }).format(new Date(value));
+    return new Intl.DateTimeFormat(intlLocale(), { timeZone: tz, dateStyle: 'medium' }).format(new Date(value));
   } catch {
     return new Date(value).toLocaleDateString();
   }
@@ -45,7 +49,7 @@ export function formatTime(value, timezone) {
   if (!value) return '-';
   const tz = timezone || detectBrowserTimezone();
   try {
-    return new Intl.DateTimeFormat(undefined, { timeZone: tz, timeStyle: 'short' }).format(new Date(value));
+    return new Intl.DateTimeFormat(intlLocale(), { timeZone: tz, timeStyle: 'short' }).format(new Date(value));
   } catch {
     return new Date(value).toLocaleTimeString();
   }
@@ -65,8 +69,8 @@ export function dayLabel(value, timezone) {
     const target = dateKeyInZone(value, tz);
     const today = dateKeyInZone(Date.now(), tz);
     const yesterday = dateKeyInZone(Date.now() - 24 * 60 * 60 * 1000, tz);
-    if (target === today) return 'Today';
-    if (target === yesterday) return 'Yesterday';
+    if (target === today) return i18n.t('common:dates.today');
+    if (target === yesterday) return i18n.t('common:dates.yesterday');
     return formatDate(value, tz);
   } catch {
     return formatDate(value, tz);

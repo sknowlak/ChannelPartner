@@ -1,5 +1,8 @@
 import { createContext, useContext, useEffect, useState } from 'react';
-import { getMyProfile, loginPartner, registerPartner } from '../api/client';
+import i18n from 'i18next';
+import { getMyProfile, loginPartner, registerPartner, updateMyProfile } from '../api/client';
+import { rememberLanguage } from '../i18n/language';
+import { isSupportedLocale } from '../i18n/locales';
 
 const AuthContext = createContext(null);
 
@@ -7,7 +10,16 @@ const AuthContext = createContext(null);
 // localStorage - never the full profile, which for an owner includes bank
 // account, PAN and similar details that anything able to read localStorage
 // (an XSS bug, a browser extension, a shared computer) could otherwise take.
-const CACHED_FIELDS = ['partnerId', 'memberId', 'username', 'name', 'email', 'mobile', 'companyName', 'timezone', 'currency'];
+const CACHED_FIELDS = ['partnerId', 'memberId', 'username', 'name', 'email', 'mobile', 'companyName', 'timezone', 'currency', 'language'];
+
+// The account's saved language wins once known (section 54); with none
+// saved yet, whatever this device is showing stays.
+function applyAccountLanguage(language) {
+  if (isSupportedLocale(language) && language !== i18n.language) {
+    i18n.changeLanguage(language);
+    rememberLanguage(language);
+  }
+}
 
 function toCached(profile, extra) {
   const cached = {};
@@ -35,6 +47,7 @@ export function AuthProvider({ children }) {
     localStorage.setItem('partnerToken', data.token);
     localStorage.setItem('partnerUser', JSON.stringify(merged));
     setPartner(merged);
+    applyAccountLanguage(merged.language);
     return merged;
   };
 
@@ -50,6 +63,7 @@ export function AuthProvider({ children }) {
         const merged = toCached({ ...partner, ...data.profile }, { role: data.role, roleName: data.roleName, permissions: data.permissions || [] });
         localStorage.setItem('partnerUser', JSON.stringify(merged));
         setPartner(merged);
+        applyAccountLanguage(merged.language);
       })
       .catch(() => {}); // an expired/invalid token here is handled by the 401 interceptor
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -76,6 +90,22 @@ export function AuthProvider({ children }) {
     });
   };
 
+  // Switches the UI language now (no reload - route and form state stay)
+  // and, when signed in, saves it as the account preference so it follows
+  // the user to other devices. The UI switch doesn't wait for the save.
+  const changeLanguage = (code) => {
+    if (!isSupportedLocale(code)) return Promise.resolve();
+    i18n.changeLanguage(code);
+    rememberLanguage(code);
+    if (!partner) return Promise.resolve();
+    setPartner((p) => {
+      const merged = { ...p, language: code };
+      localStorage.setItem('partnerUser', JSON.stringify(merged));
+      return merged;
+    });
+    return updateMyProfile({ language: code }).catch(() => {});
+  };
+
   const hasPermission = (permission) => Boolean(partner?.permissions?.includes(permission));
 
   const logout = () => {
@@ -85,7 +115,7 @@ export function AuthProvider({ children }) {
   };
 
   return (
-    <AuthContext.Provider value={{ partner, login, register, logout, updateLocalPartner, hasPermission }}>
+    <AuthContext.Provider value={{ partner, login, register, logout, updateLocalPartner, hasPermission, changeLanguage }}>
       {children}
     </AuthContext.Provider>
   );

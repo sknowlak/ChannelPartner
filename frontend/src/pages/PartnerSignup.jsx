@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
 import { COMMON_TIMEZONES, detectBrowserTimezone } from '../utils/timezone';
 import { COMMON_CURRENCIES } from '../utils/currency';
 import PhoneInput from '../components/PhoneInput';
 import { validateMobile } from '../utils/phone';
 import { focusField } from '../utils/formValidation';
+import LanguageSelect from '../components/LanguageSelect';
 
 const initialForm = {
   name: '', mobile: '', email: '', username: '', password: '',
@@ -13,11 +15,12 @@ const initialForm = {
 };
 
 export default function PartnerSignup() {
+  const { t, i18n } = useTranslation(['auth', 'common']);
   const [form, setForm] = useState(initialForm);
   const [error, setError] = useState(null);
   const [mobileError, setMobileError] = useState(null);
   const [busy, setBusy] = useState(false);
-  const { register } = useAuth();
+  const { register, changeLanguage } = useAuth();
   const navigate = useNavigate();
 
   const update = (field) => (e) => setForm((f) => ({ ...f, [field]: e.target.value }));
@@ -29,7 +32,7 @@ export default function PartnerSignup() {
     const mobileCheck = validateMobile(form.mobile);
     if (!mobileCheck.valid) {
       setMobileError(mobileCheck.reason);
-      setError('A field needs your attention - see below.');
+      setError(t('common:states.fieldNeedsAttention', { count: 1 }));
       focusField('mobile');
       return;
     }
@@ -37,7 +40,8 @@ export default function PartnerSignup() {
 
     setBusy(true);
     try {
-      await register(form);
+      // The chosen UI language becomes the new account's saved preference.
+      await register({ ...form, language: i18n.language });
       navigate('/my-leads');
     } catch (err) {
       const data = err.response?.data;
@@ -55,20 +59,23 @@ export default function PartnerSignup() {
 
   return (
     <div className="page page-wide">
-      <h1>Channel Partner Registration</h1>
-      <p className="hint">Create your account to start registering and managing your own leads.</p>
+      <h1>{t('auth:signup.title')}</h1>
+      <p className="hint">{t('auth:signup.intro')}</p>
+      <div className="field">
+        <LanguageSelect onChange={changeLanguage} />
+      </div>
       {error && <div className="error-box">{error}</div>}
 
       <form className="card" onSubmit={handleSubmit} noValidate>
         <div className="edit-form-sections">
           <div>
-            <h3 className="form-section-title"><span>Account Details</span></h3>
+            <h3 className="form-section-title"><span>{t('auth:signup.accountDetails')}</span></h3>
             <div className="field">
-              <label>Channel Partner Name *</label>
+              <label>{t('auth:signup.partnerName')}</label>
               <input value={form.name} onChange={update('name')} required />
             </div>
             <div className={`field ${mobileError ? 'invalid' : ''}`} id="field-mobile">
-              <label>Mobile Number *</label>
+              <label>{t('auth:signup.mobileNumber')}</label>
               <PhoneInput
                 value={form.mobile}
                 onChange={(val) => { setForm((f) => ({ ...f, mobile: val })); setMobileError(null); }}
@@ -77,35 +84,35 @@ export default function PartnerSignup() {
               {mobileError && <span className="field-error">{mobileError}</span>}
             </div>
             <div className="field">
-              <label>Email *</label>
+              <label>{t('auth:signup.email')}</label>
               <input type="email" value={form.email} onChange={update('email')} required />
             </div>
             <div className="field">
-              <label>Username *</label>
+              <label>{t('auth:signup.username')}</label>
               <input value={form.username} onChange={update('username')} required />
             </div>
             <div className="field">
-              <label>Password * (min 8 characters)</label>
+              <label>{t('auth:signup.password')}</label>
               <input type="password" value={form.password} onChange={update('password')} required minLength={8} />
             </div>
           </div>
 
           <div>
-            <h3 className="form-section-title"><span>Organisation Details</span></h3>
+            <h3 className="form-section-title"><span>{t('auth:signup.organisationDetails')}</span></h3>
             <div className="field">
-              <label>Company / Organisation Name</label>
+              <label>{t('auth:signup.companyName')}</label>
               <input value={form.companyName} onChange={update('companyName')} />
             </div>
             <div className="field">
-              <label>City</label>
+              <label>{t('auth:signup.city')}</label>
               <input value={form.city} onChange={update('city')} />
             </div>
             <div className="field">
-              <label>State</label>
+              <label>{t('auth:signup.state')}</label>
               <input value={form.state} onChange={update('state')} />
             </div>
             <div className="field">
-              <label>Timezone</label>
+              <label>{t('common:fields.timezone')}</label>
               <select value={form.timezone} onChange={update('timezone')}>
                 {(COMMON_TIMEZONES.includes(form.timezone) ? COMMON_TIMEZONES : [form.timezone, ...COMMON_TIMEZONES]).map((tz) => (
                   <option key={tz} value={tz}>{tz}</option>
@@ -113,7 +120,7 @@ export default function PartnerSignup() {
               </select>
             </div>
             <div className="field">
-              <label>Currency</label>
+              <label>{t('common:fields.currency')}</label>
               <select value={form.currency} onChange={update('currency')}>
                 {COMMON_CURRENCIES.map((c) => <option key={c} value={c}>{c}</option>)}
               </select>
@@ -123,11 +130,11 @@ export default function PartnerSignup() {
 
         <div className="edit-form-footer">
           <p className="hint" style={{ margin: 0 }}>
-            Already have an account? <Link to="/login">Sign in</Link>
+            {t('auth:signup.haveAccount')} <Link to="/login">{t('auth:signup.signInLink')}</Link>
           </p>
           <div className="actions">
             <button className="primary" type="submit" disabled={busy}>
-              {busy ? 'Creating account...' : 'Register'}
+              {busy ? t('auth:signup.creating') : t('auth:signup.register')}
             </button>
           </div>
         </div>

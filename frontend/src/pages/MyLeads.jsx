@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { assignRegistration, listLeadFields, listMyRegistrations } from '../api/client';
 import { useAuth } from '../context/AuthContext';
 import { formatDate, formatDateTime } from '../utils/timezone';
@@ -15,6 +16,8 @@ import { applySort, nextSortDir } from '../utils/sort';
 import { loadColumnPrefs, saveColumnPrefs } from '../utils/columnPrefs';
 import { sortLeadTabs } from '../utils/leadTabs';
 import { csvCell } from '../utils/csv';
+import { formatNumber } from '../i18n/format';
+import { fieldLabel, optionLabel, statusLabel, subStatusLabel } from '../i18n/dataLabels';
 
 const initialFilters = { search: '', status: '', projectId: '' };
 const GRID_KEY = 'myLeads';
@@ -35,11 +38,22 @@ function fieldValue(registration, def) {
   return registration[def.fieldKey];
 }
 
+// What the grid shows: numbers/currency in the UI locale, default dropdown
+// options translated (display only).
 function formatFieldValue(def, value, currency) {
   if (value === undefined || value === null || value === '') return '-';
-  if (def.dataType === 'LIST') return Array.isArray(value) ? value.join(', ') : String(value);
+  if (def.dataType === 'LIST') return Array.isArray(value) ? value.map((v) => optionLabel(v)).join(', ') : String(optionLabel(value));
   if (def.dataType === 'CURRENCY') return formatCurrency(value, currency);
-  if (def.dataType === 'NUMBER') return Number(value).toLocaleString();
+  if (def.dataType === 'NUMBER') return formatNumber(value);
+  if (def.dataType === 'SELECT') return String(optionLabel(value));
+  return String(value);
+}
+
+// What the CSV export writes: the stored value, untranslated and unformatted
+// by locale, so the file reads the same whatever language exported it.
+function rawFieldValue(def, value) {
+  if (value === undefined || value === null || value === '') return '-';
+  if (def.dataType === 'LIST' && Array.isArray(value)) return value.join(', ');
   return String(value);
 }
 
@@ -140,7 +154,9 @@ function sortFieldDefsForGrid(defs) {
   return [...defs].sort((a, b) => rank.get(a.group) - rank.get(b.group));
 }
 
-function buildColumns(fieldDefs, partnerTimezone, currency, users, canAssign, onAssign) {
+// Each column: `label` (translated header), `render` (cell), `title` (cell
+// tooltip, display text) and `text` (raw value for the CSV export).
+function buildColumns(fieldDefs, partnerTimezone, currency, users, canAssign, onAssign, t) {
   const fieldColumns = fieldDefs.map((def) => {
     // The lead's name is the row's primary identity, so it gets the same
     // avatar-circle + name/mobile treatment a CRM lead grid uses everywhere -
@@ -148,7 +164,7 @@ function buildColumns(fieldDefs, partnerTimezone, currency, users, canAssign, on
     if (def.scope === 'customer' && def.fieldKey === 'name') {
       return {
         key: def.fieldKey,
-        label: def.label,
+        label: fieldLabel(def),
         sortValue: (r) => fieldValue(r, def),
         render: (r) => {
           const name = fieldValue(r, def) || '-';
@@ -162,35 +178,38 @@ function buildColumns(fieldDefs, partnerTimezone, currency, users, canAssign, on
             </div>
           );
         },
-        text: (r) => formatFieldValue(def, fieldValue(r, def), currency)
+        title: (r) => formatFieldValue(def, fieldValue(r, def), currency),
+        text: (r) => rawFieldValue(def, fieldValue(r, def))
       };
     }
     return {
       key: def.fieldKey,
-      label: def.label,
+      label: fieldLabel(def),
       sortValue: (r) => fieldValue(r, def),
       render: (r) => formatFieldValue(def, fieldValue(r, def), currency),
-      text: (r) => formatFieldValue(def, fieldValue(r, def), currency)
+      title: (r) => formatFieldValue(def, fieldValue(r, def), currency),
+      text: (r) => rawFieldValue(def, fieldValue(r, def))
     };
   });
 
   const systemColumns = [
     {
       key: 'stage',
-      label: 'Status',
+      label: t('leads:columns.status'),
       sortValue: (r) => `${r.currentStage} ${r.subStatus || ''}`,
       render: (r) => (
         <span>
-          {r.currentStage}
-          {r.subStatus && <span className="sub-status">{r.subStatus}</span>}
+          {statusLabel(r.currentStage)}
+          {r.subStatus && <span className="sub-status">{subStatusLabel(r.subStatus)}</span>}
           {r.scheduledAt && <span className="sub-status">🕒 {formatDateTime(r.scheduledAt, partnerTimezone)}</span>}
         </span>
       ),
+      title: (r) => (r.subStatus ? `${statusLabel(r.currentStage)} - ${subStatusLabel(r.subStatus)}` : statusLabel(r.currentStage)),
       text: (r) => (r.subStatus ? `${r.currentStage} - ${r.subStatus}` : r.currentStage)
     },
     {
       key: 'assignedTo',
-      label: 'Assign To',
+      label: t('leads:columns.assignTo'),
       sortValue: (r) => r.assignedToName || '',
       render: (r) => (
         <AssignSelect
@@ -201,20 +220,23 @@ function buildColumns(fieldDefs, partnerTimezone, currency, users, canAssign, on
           style={{ padding: '0.35rem 0.5rem', fontSize: '0.82rem', minWidth: '9rem' }}
         />
       ),
+      title: (r) => r.assignedToName || t('leads:assign.unassigned'),
       text: (r) => r.assignedToName || 'Unassigned'
     },
     {
       key: 'booked',
-      label: 'Booked',
+      label: t('leads:columns.booked'),
       sortValue: (r) => (r.isBooked ? 1 : 0),
-      render: (r) => <span className={`badge ${r.isBooked ? 'accepted' : 'pending'}`}>{r.isBooked ? 'Booked' : 'Pending'}</span>,
+      render: (r) => <span className={`badge ${r.isBooked ? 'accepted' : 'pending'}`}>{r.isBooked ? t('leads:booking.booked') : t('leads:booking.pending')}</span>,
+      title: (r) => (r.isBooked ? t('leads:booking.booked') : t('leads:booking.pending')),
       text: (r) => (r.isBooked ? 'Yes' : 'No')
     },
     {
       key: 'protection',
-      label: 'Protection Until',
+      label: t('leads:columns.protectionUntil'),
       sortValue: (r) => new Date(r.protectionExpiry).getTime(),
       render: (r) => formatDate(r.protectionExpiry, partnerTimezone),
+      title: (r) => formatDate(r.protectionExpiry, partnerTimezone),
       text: (r) => formatDate(r.protectionExpiry, partnerTimezone)
     }
   ];
@@ -229,6 +251,7 @@ function buildDefaultColumnState(fieldDefs) {
 }
 
 export default function MyLeads() {
+  const { t, i18n } = useTranslation(['leads', 'common', 'data']);
   const [registrations, setRegistrations] = useState(null);
   const [fieldDefs, setFieldDefs] = useState([]);
   const [fieldFilters, setFieldFilters] = useState({});
@@ -293,9 +316,9 @@ export default function MyLeads() {
   }, []);
 
   const allColumns = useMemo(
-    () => buildColumns(fieldDefs, partner.timezone, partner.currency, workflowOptions.users, canAssign, handleAssign),
+    () => buildColumns(fieldDefs, partner.timezone, partner.currency, workflowOptions.users, canAssign, handleAssign, t),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [fieldDefs, partner.timezone, partner.currency, workflowOptions.users, canAssign]
+    [fieldDefs, partner.timezone, partner.currency, workflowOptions.users, canAssign, i18n.language]
   );
   const columnByKey = useMemo(() => new Map(allColumns.map((c) => [c.key, c])), [allColumns]);
   const selectFieldDefs = useMemo(() => fieldDefs.filter((d) => d.dataType === 'SELECT'), [fieldDefs]);
@@ -355,7 +378,8 @@ export default function MyLeads() {
   };
 
   const exportCsv = () => {
-    const header = ['Registration ID', ...visibleColumns.map((c) => c.label)];
+    // Headers in the UI language; cell values raw (see rawFieldValue).
+    const header = [t('leads:list.registrationId'), ...visibleColumns.map((c) => c.label)];
     const rows = sortedRegistrations.map((r) => [r.registrationId, ...visibleColumns.map((c) => c.text(r))]);
     const csv = [header, ...rows].map((row) => row.map(csvCell).join(',')).join('\n');
     const blob = new Blob([csv], { type: 'text/csv' });
@@ -371,10 +395,10 @@ export default function MyLeads() {
     <div className="page page-wide">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
         <div>
-          <h1 style={{ marginBottom: '0.2rem' }}>My Leads</h1>
-          <p className="hint" style={{ margin: 0 }}>Signed in as {partner.name} ({partner.partnerId}) · times shown in {partner.timezone}</p>
+          <h1 style={{ marginBottom: '0.2rem' }}>{t('leads:list.title')}</h1>
+          <p className="hint" style={{ margin: 0 }}>{t('leads:list.signedInAs', { name: partner.name, partnerId: partner.partnerId, timezone: partner.timezone })}</p>
         </div>
-        <button className="pill-primary" onClick={() => navigate('/register-lead')}>+ Add Lead</button>
+        <button className="pill-primary" onClick={() => navigate('/register-lead')}>{t('leads:list.addLead')}</button>
       </div>
 
       {error && <div className="error-box">{error}</div>}
@@ -382,13 +406,13 @@ export default function MyLeads() {
       {registrations && (
         <div className="status-tabs">
           <button className={!filters.status ? 'active' : ''} onClick={() => setStatusTab('')}>
-            <span className="dot all" />All ({registrations.length})
+            <span className="dot all" />{t('leads:list.tabs.all', { count: registrations.length })}
           </button>
           <button className={filters.status === 'PENDING' ? 'active' : ''} onClick={() => setStatusTab('PENDING')}>
-            <span className="dot active-dot" />Pending ({pendingCount})
+            <span className="dot active-dot" />{t('leads:list.tabs.pending', { count: pendingCount })}
           </button>
           <button className={filters.status === 'BOOKED' ? 'active' : ''} onClick={() => setStatusTab('BOOKED')}>
-            <span className="dot inactive-dot" />Booked ({bookedCount})
+            <span className="dot inactive-dot" />{t('leads:list.tabs.booked', { count: bookedCount })}
           </button>
         </div>
       )}
@@ -398,19 +422,19 @@ export default function MyLeads() {
           <div className="toolbar-left">
             <input
               type="text"
-              placeholder="Search by name, mobile, or registration ID..."
+              placeholder={t('leads:list.searchPlaceholder')}
               value={filters.search}
               onChange={(e) => { setFilters((f) => ({ ...f, search: e.target.value })); setPage(1); }}
             />
           </div>
           <div className="toolbar-right">
-            <button className="pill-export" onClick={exportCsv}>Export</button>
-            <button className="icon-btn view" title="Refresh" disabled={refreshing} onClick={refresh} style={{ margin: 0 }}>
+            <button className="pill-export" onClick={exportCsv}>{t('common:actions.export')}</button>
+            <button className="icon-btn view" title={t('common:actions.refresh')} disabled={refreshing} onClick={refresh} style={{ margin: 0 }}>
               <RefreshIcon />
             </button>
             <div className="column-panel-anchor">
               <button className="pill-filter" onClick={() => setShowFilterPanel((s) => !s)}>
-                Filter {activeFilterCount > 0 && <span className="filter-count-badge">{activeFilterCount}</span>}
+                {t('common:actions.filter')} {activeFilterCount > 0 && <span className="filter-count-badge">{activeFilterCount}</span>}
               </button>
               {showFilterPanel && (
                 <FilterPanel
@@ -426,7 +450,7 @@ export default function MyLeads() {
               )}
             </div>
             <div className="column-panel-anchor">
-              <button className="secondary" onClick={() => setShowColumnPanel((s) => !s)}>Manage Columns</button>
+              <button className="secondary" onClick={() => setShowColumnPanel((s) => !s)}>{t('leads:list.manageColumns')}</button>
               {showColumnPanel && columnPrefs && (
                 <ManageColumnsPanel
                   columns={columnPrefs.order.map((k) => columnByKey.get(k)).filter(Boolean)}
@@ -438,11 +462,10 @@ export default function MyLeads() {
               )}
             </div>
             <label className="hint" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-              Show
+              {t('leads:list.rowsPerPage')}
               <select value={pageSize} onChange={(e) => { setPageSize(Number(e.target.value)); setPage(1); }}>
-                {[10, 25, 50].map((n) => <option key={n} value={n}>{n}</option>)}
+                {[10, 25, 50].map((n) => <option key={n} value={n}>{formatNumber(n)}</option>)}
               </select>
-              entries
             </label>
           </div>
         </div>
@@ -453,11 +476,11 @@ export default function MyLeads() {
           <table className="pro-table">
             <thead>
               <tr>
-                <th>Registration ID</th>
+                <th>{t('leads:list.registrationId')}</th>
                 {visibleColumns.map((col) => (
                   <SortableTh key={col.key} label={col.label} colKey={col.key} sort={sort} onSort={toggleSort} />
                 ))}
-                <th>Actions</th>
+                <th>{t('common:fields.actions')}</th>
               </tr>
             </thead>
             <tbody>
@@ -465,25 +488,25 @@ export default function MyLeads() {
                 <tr key={r.registrationId}>
                   <td className="secondary-cell">{r.registrationId}</td>
                   {visibleColumns.map((col) => (
-                    <td key={col.key} title={col.text(r)}>{col.render(r)}</td>
+                    <td key={col.key} title={col.title(r)}>{col.render(r)}</td>
                   ))}
                   <td style={{ whiteSpace: 'nowrap' }}>
-                    <button className="icon-btn preview" title="Preview &amp; quick update" onClick={() => setPreviewFor(r.registrationId)}><PreviewIcon /></button>
-                    <button className="icon-btn view" title="View" onClick={() => navigate(`/registrations/${r.registrationId}`)}><ViewIcon /></button>
-                    <button className="icon-btn edit" title="Edit" onClick={() => navigate(`/registrations/${r.registrationId}/edit`)}><EditIcon /></button>
-                    <button className="icon-btn history" title="History" onClick={() => setHistoryFor(r.registrationId)}><HistoryIcon /></button>
+                    <button className="icon-btn preview" title={t('leads:list.actions.preview')} onClick={() => setPreviewFor(r.registrationId)}><PreviewIcon /></button>
+                    <button className="icon-btn view" title={t('common:actions.view')} onClick={() => navigate(`/registrations/${r.registrationId}`)}><ViewIcon /></button>
+                    <button className="icon-btn edit" title={t('common:actions.edit')} onClick={() => navigate(`/registrations/${r.registrationId}/edit`)}><EditIcon /></button>
+                    <button className="icon-btn history" title={t('leads:list.actions.history')} onClick={() => setHistoryFor(r.registrationId)}><HistoryIcon /></button>
                     <button
-                      className="icon-btn mail" title="Email"
+                      className="icon-btn mail" title={t('leads:list.actions.email')}
                       disabled={!r.customer?.email}
                       onClick={() => { window.location.href = `mailto:${r.customer.email}`; }}
                     ><MailIcon /></button>
                     <button
-                      className="icon-btn whatsapp" title="WhatsApp"
+                      className="icon-btn whatsapp" title={t('leads:list.actions.whatsapp')}
                       disabled={!customerMobile(r)}
                       onClick={() => window.open(`https://wa.me/${customerMobile(r).replace(/\D/g, '')}`, '_blank', 'noopener')}
                     ><WhatsAppIcon /></button>
                     <button
-                      className="icon-btn call" title="Call"
+                      className="icon-btn call" title={t('leads:list.actions.call')}
                       disabled={!customerMobile(r)}
                       onClick={() => { window.location.href = `tel:${customerMobile(r)}`; }}
                     ><CallIcon /></button>
@@ -491,29 +514,33 @@ export default function MyLeads() {
                 </tr>
               ))}
               {registrations && registrations.length === 0 && (
-                <tr><td colSpan={visibleColumns.length + 2} className="hint">No leads yet - register your first one.</td></tr>
+                <tr><td colSpan={visibleColumns.length + 2} className="hint">{t('leads:list.emptyState')}</td></tr>
               )}
               {registrations && registrations.length > 0 && filteredRegistrations.length === 0 && (
-                <tr><td colSpan={visibleColumns.length + 2} className="hint">No leads match these filters.</td></tr>
+                <tr><td colSpan={visibleColumns.length + 2} className="hint">{t('leads:list.noMatch')}</td></tr>
               )}
             </tbody>
           </table>
         </div>
-        {!registrations && !error && <p className="hint">Loading...</p>}
+        {!registrations && !error && <p className="hint">{t('common:states.loading')}</p>}
 
         {filteredRegistrations.length > 0 && (
           <div className="pagination-bar">
             <span className="hint">
-              Showing {(currentPage - 1) * pageSize + 1} - {Math.min(currentPage * pageSize, filteredRegistrations.length)} of {filteredRegistrations.length} entries
+              {t('leads:list.showing', {
+                from: formatNumber((currentPage - 1) * pageSize + 1),
+                to: formatNumber(Math.min(currentPage * pageSize, filteredRegistrations.length)),
+                total: formatNumber(filteredRegistrations.length)
+              })}
             </span>
             <div className="pagination-buttons">
-              <button className="page-btn" disabled={currentPage <= 1} onClick={() => setPage(1)}>&laquo;</button>
-              <button className="page-btn" disabled={currentPage <= 1} onClick={() => setPage((p) => p - 1)}>&lsaquo;</button>
+              <button className="page-btn" disabled={currentPage <= 1} aria-label={t('leads:list.pagination.first')} onClick={() => setPage(1)}>&laquo;</button>
+              <button className="page-btn" disabled={currentPage <= 1} aria-label={t('leads:list.pagination.previous')} onClick={() => setPage((p) => p - 1)}>&lsaquo;</button>
               {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
-                <button key={p} className={`page-btn ${p === currentPage ? 'current' : ''}`} onClick={() => setPage(p)}>{p}</button>
+                <button key={p} className={`page-btn ${p === currentPage ? 'current' : ''}`} onClick={() => setPage(p)}>{formatNumber(p)}</button>
               ))}
-              <button className="page-btn" disabled={currentPage >= totalPages} onClick={() => setPage((p) => p + 1)}>&rsaquo;</button>
-              <button className="page-btn" disabled={currentPage >= totalPages} onClick={() => setPage(totalPages)}>&raquo;</button>
+              <button className="page-btn" disabled={currentPage >= totalPages} aria-label={t('leads:list.pagination.next')} onClick={() => setPage((p) => p + 1)}>&rsaquo;</button>
+              <button className="page-btn" disabled={currentPage >= totalPages} aria-label={t('leads:list.pagination.last')} onClick={() => setPage(totalPages)}>&raquo;</button>
             </div>
           </div>
         )}
