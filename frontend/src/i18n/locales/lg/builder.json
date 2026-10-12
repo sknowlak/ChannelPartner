@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Omukutu gw'abazimbi",
+    "referrals": "Ebiwandiiko ebiweereddwayo",
+    "builderLogin": "Okuyingira kw'omuzimbi",
+    "partnerLogin": "Channel Omukwanaganya Okuyingira"
+  },
+  "login": {
+    "title": "Omuzimbi yingiramu",
+    "hint": "Akawunti z'abazimbi zikolebwa Leadrat . Buuza administrator wo oba tolina."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Okulinda okusalawo kwo",
+    "ACCEPTED": "Kikkirizibwa",
+    "REJECTED": "Agaaniddwa"
+  },
+  "list": {
+    "title": "Ebiwandiiko ebiweereddwayo",
+    "allProjects": "Pulojekiti zonna",
+    "allStatuses": "Embeera zonna",
+    "count_one": "{{count}} okusindikibwa",
+    "count_other": "{{count}} okusindikibwa",
+    "columns": {
+      "referral": "Okusindikibwa",
+      "customer": "Omuguzi",
+      "project": "Pulojekiti",
+      "sourcePartner": "Ensibuko Omukwanaganya",
+      "status": "Ennyimirira",
+      "booking": "Okubuuka",
+      "registered": "Bawandiisiddwa"
+    },
+    "booked": "Booked",
+    "empty": "Tewali referrals n'okutuusa kati."
+  },
+  "detail": {
+    "customer": "Omuguzi",
+    "sourcePartner": "Ensibuko Omukwanaganya",
+    "attributionNote": "(okulaga - tekiyinza kukyusibwa)",
+    "leadStatus": "Embeera y’Omukulembeze",
+    "protectedUntil": "Ekuumibwa Okutuusa",
+    "referral": "Okusindikibwa",
+    "reason": "Ensonga: {{reason}}",
+    "booking": "Okubuuka",
+    "bookedOwner": "Booked - ggwe nnannyini operational",
+    "notBooked": "Si booked",
+    "sharedAfterBooking": "Gabana oluvannyuma lw'okubuuka",
+    "accept": "Kkiriza Okusindikibwa",
+    "confirmBooking": "Kakasa Booking",
+    "reject": "Gaana Okusindikibwa",
+    "rejectReasonLabel": "Ensonga lwaki ogaana (eragiddwa munno) * .",
+    "rejectConfirm": "Okugaana",
+    "confirmBookingPrompt": "Okukakasa booking? Obwannannyini obw’emirimu bugenda gy’oli era omukwanaganya n’afuuka alina ebisaanyizo okuweebwa akasiimo.",
+    "notice": {
+      "booked": "Booking ekakasiddwa.",
+      "accepted": "Okusindikibwa kukkirizibwa.",
+      "rejected": "Okusindikibwa kugaaniddwa."
+    },
+    "backToReferrals": "Okudda ku Referrals"
+  },
+  "history": {
+    "title": "Ebyafaayo",
+    "actor": {
+      "system": "Ebikozesebwa ewamu",
+      "partner": "Omukwanaganya wa Channel",
+      "admin": "Admin Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Okwewandiisa kw’abaagalana kufunye",
+      "DUPLICATE_CHECK_COMPLETED": "Okukebera okuddirira kuwedde - tewali kuddiŋŋana kukola kuzuuliddwa",
+      "REGISTRATION_ACCEPTED": "Okwewandiisa kukkirizibwa",
+      "PROTECTION_GRANTED_one": "{{count}} -obukuumi bw'olunaku buweereddwa",
+      "PROTECTION_GRANTED_other": "{{count}} -obukuumi bw'olunaku buweereddwa",
+      "STAGE_UPDATED": "Embeera etereezeddwa okutuuka ku {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Ennimiro ya {{count}} erongooseddwa",
+      "LEAD_DETAILS_UPDATED_other": "Ennimiro za {{count}} ezizzeemu",
+      "LEAD_ASSIGNED": "Eweereddwa {{name}}",
+      "LEAD_UNASSIGNED": "Tebiweereddwayo",
+      "REFERRAL_ACCEPTED": "Builder yakkirizza okusindikibwa",
+      "REFERRAL_REJECTED": "Builder yagaanyi okusindikibwa. Ensonga: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Okugezaako okwewandiisa okuddiŋŋana nga {{partner}} kugaaniddwa",
+      "BOOKING_COMPLETED": "Booking ewedde",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Obwannannyini obw’emirimu bukyusiddwa ne buweebwa Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Okuwandiika kw’omukwano kukuumiddwa",
+      "COMMISSION_ELIGIBILITY_CREATED": "Ebisaanyizo by’akakiiko bitondeddwawo",
+      "HANDOVER_COMPLETED": "Okukwasa abantu kuwedde",
+      "ADMIN_PROTECTION_RELEASED": "Admin yafulumya duplicate protection nga bukyali. Ensonga: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin yazzeemu okugaba okwewandiisa okuva ku {{from}} okudda ku {{to}} . Ensonga: {{reason}}"
+    }
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Ajustes nisqa",
+    "noPermission": "Mana permisoyuqchu kanki churanakunata kamachinaykipaq."
+  },
+  "categories": {
+    "lead": "Kamachiy",
+    "user": "Usuario",
+    "integrations": "Integraciones nisqakuna"
+  },
+  "leadTabs": {
+    "fields": "Chakrakuna",
+    "statuses": "Estatus & Sub-Estatus nisqakuna",
+    "notifications": "Willakuykuna & Programadorkuna"
+  },
+  "fields": {
+    "leadIntro": "Plomo hap'ina formulariota ruway: chakrakunata atichiy/mana atichiy, mañasqa kaqta markay utaq kikiyki sapanchasqa pampakunata yapay.",
+    "userIntro": "Equipo Miembron Yanapakuy/Llamk'achiy formulariota ruway: pampakunata atichiy/mana atichiy, mañasqa kaqta markay utaq kikiyki sapanchasqa pampakunata yapay.",
+    "addCustomField": "+ Campo Personalizado nisqa yapay",
+    "fieldLabel": "Chakra Etiqueta",
+    "group": "Huñu",
+    "groupPlaceholderLead": "p.h. Tapuy Info",
+    "groupPlaceholderUser": "p.h. Detalles Adicionales nisqakuna",
+    "dataType": "Datos Tipo",
+    "options": "Akllanakuna (comawan t'aqasqa) .",
+    "requiredLead": "Munasqa - equipoykipi sociokuna kayta hunt'ananku tiyan huk umalliqta registranankupaq",
+    "requiredUser": "Munasqa - hunt'asqa kanan tiyan huk equipomanta yapaspa",
+    "creating": "Kamay...",
+    "createField": "Campo nisqa paqarichiy",
+    "columns": {
+      "field": "Panpa",
+      "group": "Huñu",
+      "type": "Niraq",
+      "required": "Mañasqa",
+      "enabled": "Atichisqa",
+      "kind": "Allin"
+    },
+    "kind": {
+      "custom": "Chullachasqa",
+      "core": "Nukleo (llachkasqa) .",
+      "standard": "Kaqlla"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Qillqa",
+    "TEXTAREA": "Unay qillqasqa",
+    "NUMBER": "Yupay",
+    "CURRENCY": "Kunan",
+    "DATE": "Imay pacha",
+    "SELECT": "Urayman urmay",
+    "LIST": "Lista"
+  },
+  "picker": {
+    "searchPlaceholder": "Maskay plomo pampakunata...",
+    "summary": "{{shown}} rikuchisqa · {{mandatory}} kamachisqa",
+    "mandatory": "Kamay",
+    "noMatch": "Mana chakrakuna tupanchu."
+  },
+  "statuses": {
+    "intro": "Umalliq estadokunayki chaymanta sub-estatusniyki - imatachus sapa mañan (huk p'unchaw & pacha, umalliq pampakuna) mayk'aq pipas huk pusayta chayman musuqyachin.",
+    "add": "+ Estadota yapay",
+    "columns": {
+      "order": "Ñiqinchay",
+      "status": "Imayna kaynin",
+      "subStatuses": "Subestatus nisqakuna",
+      "asksFor": "Mañakun",
+      "active": "Kawsaq"
+    },
+    "moveUp": "Wichayman kuyuy",
+    "moveDown": "Urayman kuyuy",
+    "defaultBadge": "Musuq pusaqkunapaq ñawpaqmanta churasqa",
+    "bookingBadge": "Reservacionpa kasqan",
+    "asksForLabel": "{{label}} nisqamanta mañakun.",
+    "asksForDateTime": "Punchaw & pachata mañakun",
+    "none": "Mana mayqinpas",
+    "dateTime": "Punchaw & pacha",
+    "scheduledOn": "{{names}} nisqapi.",
+    "fieldsSummary_one": "{{count}} pampa ( {{mandatory}} kamachisqa)",
+    "fieldsSummary_other": "{{count}} chakrakuna ( {{mandatory}} kamachisqa)",
+    "deleteConfirm": "¿ \" {{name}} \" nisqa kayninta qulluy? Kaytaqa manam kutichiyta atikunmanchu.",
+    "editTitle": "Llamk'apuy Kamachiy - {{name}}",
+    "newTitle": "Musuq Estado",
+    "name": "Estado Suti",
+    "colour": "Llinpi",
+    "active": "Kawsaq",
+    "isDefault": "Musuq pusaqkunapaq ñawpaqmanta churasqa kaynin",
+    "isBooking": "Reservacionpa kaynin (Reserva Completa nisqawan churasqa)",
+    "whenMoved": "Huk plomo kay estadoman astasqa kaptin",
+    "askSchedule": "Huk p'unchaw & pachata mañakuy (programador) .",
+    "scheduleLabelPlaceholder": "Etiqueta, p.h. Watukuy at",
+    "fieldsToShow": "Kunanchay formulariopi rikuchinapaq pampakuna pusay",
+    "subStatusesTitle": "Subestatus nisqakuna",
+    "subStatusesHint": "Sapa sub-estado kikin p'unchaw & pacha mañayta atin chaymanta kikin chakrakunata yapayta atin - estadopa pampankuna patapi rikuchisqa.",
+    "subStatusName": "Sub-estado suti",
+    "subFields": "Chakrakuna ( {{count}} ) .",
+    "subScheduleLabelPlaceholder": "P'unchaw & pacha etiqueta, p.h. Llama back at",
+    "addSubStatus": "+ Sub-Estado nisqatapas yapay",
+    "saveStatus": "Estadota waqaychay",
+    "createStatus": "Estadota paqarichiy"
+  },
+  "notifications": {
+    "intro": "Allin runakunaman willay mayk'aq huk umalliq huk estadoman chayan - chaylla, utaq huk churasqa pacha ñawpaq/qhipaman p'unchaw & pacha chaypi programasqa.",
+    "add": "+ Willayta yapay",
+    "columns": {
+      "notification": "Willakuy",
+      "whenStatusIs": "Maypachachus Estado Is",
+      "sends": "Kachan",
+      "to": "To",
+      "via": "Via",
+      "enabled": "Atichisqa"
+    },
+    "anyStatus": "Ima estadopas",
+    "anySubStatus": "Ima sub-estatus nisqapas",
+    "inactiveOption": "{{name}} (mana llamk'aq) .",
+    "emptyRules": "Manaraq willakuykuna kanchu - hukta yapay equipoykita willanaykipaq mayk'aq huk umalliq huk estadoman chayan.",
+    "jobs": {
+      "title": "Programado & Enviado",
+      "firesAt": "Ninakuna At",
+      "notification": "Willakuy",
+      "lead": "Kamachiy",
+      "status": "Imayna kaynin",
+      "details": "Kaqninkuna",
+      "empty": "Manaraqmi imapas programasqachu nitaq apachisqachu.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Kaqraq",
+      "PROCESSING": "Procesamiento nisqa",
+      "SENT": "Apachiy",
+      "FAILED": "Pantasqa",
+      "SKIPPED": "Saltasqa",
+      "CANCELLED": "Cancelado"
+    },
+    "deliveryStatus": {
+      "SENT": "apachiy",
+      "FAILED": "pantasqa",
+      "SKIPPED": "saltasqa"
+    },
+    "deliveryChannel": {
+      "IN_APP": "in-app nisqapi",
+      "EMAIL": "correo electrónico nisqapi",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Usuario asignado",
+      "owner": "Kapuq",
+      "updatedBy": "Kunanchasqa",
+      "role": "Ruway: {{name}}"
+    },
+    "channels": {
+      "inApp": "In-app nisqapi",
+      "email": "Correo electrónico nisqa",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Willayta qulluy \" {{name}} \"? Chaymanta yuyarichiykuna suyasqakuna cancelasqa kanku.",
+    "testPrompt": "Kay willakuymanta huk pruebata qam kikiykiman (in-app) apachiy mayqin ID pusaqwan ?",
+    "testSent": "Campanaykiman apachisqa: {{title}} {{message}}",
+    "headersInvalid": "Webhook umalliqkuna allin JSON kanan tiyan , ahinataq {\"Atichiy\": \"Aptor xyz\"} .",
+    "editTitle": "Willayta Llamk'apuy",
+    "newTitle": "Musuq Willakuy",
+    "name": "Suti",
+    "namePlaceholder": "p.h. Sitio watukuy yuyarichiy",
+    "whenStatus": "Maypachachus huk umalliqpa kaynin",
+    "subStatus": "Sub-estatus nisqa",
+    "send": "Kachay (programador) .",
+    "custom": "Chullachasqa...",
+    "modeBefore": "manaraq horario churasqa kashaqtin",
+    "modeAfter": "horario programasqa qhepaman",
+    "noScheduleWarning": "Kay estadoqa mana p'unchaw & pachata mañanchu, chayrayku huk \"manaraq/manaraq/qhipa programasqa pacha\" willakuy mana hayk'aqpas rawrachinmanchu.",
+    "noScheduleFix": "Llamk'achiy <strong>Mañakuy huk p'unchaw & pacha</strong> chaypaq Estatus & Sub-Estatus nisqapi, utaq chaylla apachiy.",
+    "sendTo": "Kayman apachiy (ima huñusqapas) .",
+    "recipientAssigned": "Asignasqa user (umalliq dueño) .",
+    "recipientOwner": "Cuentayuq / admin",
+    "recipientUpdatedBy": "Estadota musuqyachiq runa",
+    "everyoneWithRole": "Tukuy runa ruwayniyuq",
+    "specificUsers": "Sapanchasqa llamk'aqkuna (ruraq) .",
+    "inactiveNever": "Mana llamk'aq llamk'aqkuna mana hayk'appas willayta chaskinkuchu, akllasqa kaptinpas.",
+    "deliverVia": "Entrega via",
+    "channelInApp": "In-app (campana) .",
+    "channelEmail": "Correo electrónico nisqa",
+    "channelWebhook": "Webhook ( WhatsApp / SMS quq) .",
+    "emailHint": "Correo electrónico sapa chaskiqpa correo electrónico direccionninman rin chaymanta SMTP servidorpi churasqa necesitan (backend/.env); chaykama correo electrónico apachisqakuna saltasqa hina qillqasqa kanku.",
+    "webhookUrl": "Webhook URL ( POST , JSON ) nisqa.",
+    "headers": "Umakuna ( JSON ) .",
+    "content": "Willakuypa contenido",
+    "title": "Suti",
+    "message": "Willakuy",
+    "insertIntoTitle": "Titulo nisqaman churay",
+    "insertIntoMessage": "Willakuyman churay",
+    "anyLeadField": "Ima pusaq pampapas llamk'anmi, ahinataq <code1>{{example1}}</code1> icha <code2>{{example2}}</code2> .",
+    "preview": "Ñawpaq qhaway (muestra umalliq) .",
+    "enabled": "Atichisqa",
+    "saveRule": "Willayta waqaychay",
+    "createRule": "Willakuyta paqarichiy",
+    "variables": {
+      "customerName": "Plomo suti",
+      "customerMobile": "Plomo móvil nisqa",
+      "customerEmail": "Correo electrónico umalliq",
+      "registrationId": "ID de plomo nisqa",
+      "status": "Imayna kaynin",
+      "subStatus": "Sub-estatus nisqa",
+      "scheduleAt": "Punchaw & pacha programasqa",
+      "assignedTo": "Usuario asignado",
+      "updatedBy": "Kunanchasqa",
+      "recipient": "Chaskiqpa sutin",
+      "project": "Ruwana",
+      "notes": "Qhipa kaq qillqasqa",
+      "partner": "Socio suti"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Chaylla estado churasqa kaptin",
+      "AT": "Programasqa horapi",
+      "A1D": "1 p'unchaw programasqa pachamanta (qatiq qhaway) ."
+    },
+    "immediately": "Chayllapuni",
+    "atScheduled": "Programasqa horapi",
+    "before": {
+      "MINUTES_one": "{{count}} minuto ñawpaqta programasqa pachamanta",
+      "MINUTES_other": "{{count}} minutokuna manaraq programasqa pacha",
+      "HOURS_one": "{{count}} hora manaraq programasqa pacha",
+      "HOURS_other": "{{count}} pachakuna manaraq programasqa pacha",
+      "DAYS_one": "{{count}} p'unchaw manaraq programasqa pacha",
+      "DAYS_other": "{{count}} p'unchawkuna manaraq programasqa pacha",
+      "WEEKS_one": "{{count}} semana ñawpaqta programasqa pachamanta",
+      "WEEKS_other": "{{count}} semanakuna manaraq programasqa pacha",
+      "MONTHS_one": "{{count}} killa manaraq programasqa pacha",
+      "MONTHS_other": "{{count}} killakuna manaraq programasqa pacha",
+      "YEARS_one": "{{count}} wata manaraq programasqa pacha",
+      "YEARS_other": "{{count}} watakuna manaraq programasqa pacha"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minutomanta programasqa pachamanta",
+      "MINUTES_other": "{{count}} minutokuna programasqa pachamanta",
+      "HOURS_one": "{{count}} hora programasqa pachamanta",
+      "HOURS_other": "{{count}} horakuna programasqa pachamanta",
+      "DAYS_one": "{{count}} p'unchaw programasqa pachamanta qhipaman",
+      "DAYS_other": "{{count}} p'unchawkuna programasqa pachamanta",
+      "WEEKS_one": "{{count}} semana programasqa pachamanta",
+      "WEEKS_other": "{{count}} semanakuna programasqa pachamanta",
+      "MONTHS_one": "{{count}} killa programasqa pachamanta",
+      "MONTHS_other": "{{count}} killakuna programasqa pachamanta",
+      "YEARS_one": "{{count}} watamanta programasqa pachamanta",
+      "YEARS_other": "{{count}} watakuna programasqa pachamanta"
+    },
+    "units": {
+      "MINUTES_one": "minuto",
+      "MINUTES_other": "minutokuna",
+      "HOURS_one": "hora",
+      "HOURS_other": "horakuna",
+      "DAYS_one": "punchaw",
+      "DAYS_other": "punchawkuna",
+      "WEEKS_one": "semana",
+      "WEEKS_other": "semanakuna",
+      "MONTHS_one": "killa",
+      "MONTHS_other": "killakuna",
+      "YEARS_one": "wata",
+      "YEARS_other": "watakuna"
+    }
+  }
+}

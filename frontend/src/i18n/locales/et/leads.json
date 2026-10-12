@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Minu juhid",
+    "signedInAs": "Sisse logitud kasutajana {{name}} ( {{partnerId}} ) · ajad on näidatud ajavahemikus {{timezone}}",
+    "addLead": "+ Lisa plii",
+    "tabs": {
+      "all": "Kõik ( {{count}} )",
+      "pending": "Ootel ( {{count}} )",
+      "booked": "Broneeritud ( {{count}} )"
+    },
+    "searchPlaceholder": "Otsige nime, mobiiltelefoni või ID järgi ...",
+    "manageColumns": "Veergude haldamine",
+    "rowsPerPage": "Rida lehekülje kohta",
+    "registrationId": "ID",
+    "emptyState": "Müügivihjeid pole veel – registreerige oma esimene.",
+    "noMatch": "Nendele filtritele ei vasta ükski müügivihje.",
+    "showing": "Kuvatakse {{from}} - {{to}} kirjet {{total}} st",
+    "actions": {
+      "preview": "Eelvaade ja kiire värskendus",
+      "history": "Ajalugu",
+      "email": "Meil",
+      "whatsapp": "WhatsApp",
+      "call": "Helista"
+    },
+    "pagination": {
+      "first": "Esimene leht",
+      "previous": "Eelmine leht",
+      "next": "Järgmine leht",
+      "last": "Viimane leht"
+    }
+  },
+  "columns": {
+    "status": "Olek",
+    "assignTo": "Määra kasutajale",
+    "booked": "Broneeritud",
+    "protectionUntil": "Kaitse Kuni"
+  },
+  "booking": {
+    "booked": "Broneeritud",
+    "pending": "Ootel"
+  },
+  "assign": {
+    "unassigned": "Määramata",
+    "owner": "{{name}} (omanik)",
+    "inactive": "{{name}} (mitteaktiivne)",
+    "unknownUser": "Tundmatu kasutaja",
+    "assignedTo": "Määratud kasutajale {{name}}"
+  },
+  "form": {
+    "addTitle": "Lisa plii",
+    "editTitle": "Redigeeri müügivihjet",
+    "noPermissionAdd": "Teil pole müügivihjete registreerimiseks luba.",
+    "noPermissionEdit": "Teil pole müügivihjete muutmise luba.",
+    "selectPlaceholder": "Vali...",
+    "commaSeparated": "Komaga eraldatud",
+    "phonePlaceholder": "Telefoninumber",
+    "countryCode": "Riigi kood"
+  },
+  "project": {
+    "none": "Projekti veel pole (pole viidatud)",
+    "notInList": "{{project}} (ei ole projektiloendis)"
+  },
+  "journey": {
+    "customer": "Klient",
+    "currentOwner": "Praegune omanik",
+    "protectionExpiry": "Kaitse aegumine",
+    "leadStatus": "Juhti olek",
+    "scheduled": "Planeeritud",
+    "assignedTo": "Määratud",
+    "referral": "Suunamine",
+    "builderReason": "Ehitaja põhjus: {{reason}}",
+    "bookedHint": "Broneeritud ehitaja poolt – tegevusomand on läinud ehitajale; teie omistamine ja komisjonitasu kõlblikkus säilib.",
+    "notBookedHint": "Ehitaja kinnitab broneeringud pärast soovituse vastuvõtmist.",
+    "quickUpdate": "Kiire värskendus",
+    "leadDetails": "Plii üksikasjad",
+    "progressHistory": "Edusammude ajalugu",
+    "timesIn": "(ajad {{timezone}} )",
+    "backToMyLeads": "Tagasi Minu müügivihjete juurde",
+    "editLead": "Redigeeri müügivihjet"
+  },
+  "referral": {
+    "NOT_REFERRED": "Ei suunata (projekti pole)",
+    "PENDING_BUILDER": "Ehitaja ootel",
+    "ACCEPTED": "Ehitaja poolt vastu võetud",
+    "REJECTED": "Ehitaja poolt tagasi lükatud"
+  },
+  "preview": {
+    "ariaLabel": "Müügivihje eelvaade",
+    "title": "Müügivihje eelvaade",
+    "source": "Allikas",
+    "location": "Asukoht",
+    "scheduled": "Planeeritud",
+    "registered": "Registreeritud",
+    "latestNote": "Viimane märkus",
+    "quickUpdate": "Kiire värskendus",
+    "fullDetails": "Täielikud üksikasjad",
+    "editLead": "Redigeeri müügivihjet",
+    "history": "Ajalugu"
+  },
+  "quick": {
+    "assignedTo": "Määratud",
+    "status": "Olek",
+    "subStatus": "Alamolek",
+    "selectSubStatus": "Valige alamolek...",
+    "none": "Mitte ühtegi",
+    "scheduledAt": "Plaanitud kell",
+    "localTime": "kohaliku aja järgi",
+    "note": "Märkus",
+    "notePlaceholder": "Mis sellel kõnel/külastusel juhtus? (valikuline)",
+    "updateStatus": "Värskenda olekut",
+    "statusUpdated": "Olek värskendatud",
+    "bookedLocked": "See müügivihje on broneeritud – selle olekut ei saa enam muuta.",
+    "viewOnly": "Saate seda müügivihjet vaadata, kuid teie roll ei saa seda värskendada."
+  },
+  "history": {
+    "title": "Ajalugu – {{registrationId}}",
+    "tabs": {
+      "all": "Kõik",
+      "status": "Olek",
+      "assignment": "Ülesandmine",
+      "notes": "Märkmed"
+    },
+    "doneBy": "Autor: {{actor}}",
+    "system": "Süsteem",
+    "platforms": {
+      "System": "Süsteem",
+      "External": "Väline",
+      "Web": "Veeb",
+      "Mobile": "Mobiilne"
+    },
+    "added": "lisatud",
+    "updated": "uuendatud",
+    "empty": "(tühi)",
+    "noHistory": "Selles kategoorias pole veel ajalugu.",
+    "fieldLabels": {
+      "stage": "Olek",
+      "subStatus": "Alamolek",
+      "scheduledAt": "Ajakava",
+      "notes": "Märkmed",
+      "assignedTo": "Määratud"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Partneri registreerimine on kätte saadud",
+      "DUPLICATE_CHECK_COMPLETED": "Duplikaadi kontroll lõpetatud – aktiivset duplikaati ei leitud",
+      "REGISTRATION_ACCEPTED": "Registreerimine vastu võetud",
+      "PROTECTION_GRANTED_one": "{{count}} päevane kaitse on antud",
+      "PROTECTION_GRANTED_other": "{{count}} päevane kaitse on antud",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partnerId}} duplikaat registreerimiskatse lükati tagasi",
+      "LEAD_DETAILS_UPDATED_one": "Värskendatud {{count}} väli",
+      "LEAD_DETAILS_UPDATED_other": "Värskendatud {{count}} välja",
+      "STAGE_UPDATED": "Olek värskendati olekusse {{status}}",
+      "LEAD_ASSIGNED": "Määratud kasutajale {{name}}",
+      "LEAD_UNASSIGNED": "Määramata",
+      "BOOKING_COMPLETED": "Broneerimine lõpetatud",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Tegevusomandiõigus läks üle Builderile",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partneri omistamine on säilinud",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komisjoni abikõlblikkus on loodud",
+      "HANDOVER_COMPLETED": "Üleandmine lõpetatud",
+      "REFERRAL_ACCEPTED": "Ehitaja võttis soovituse vastu",
+      "REFERRAL_REJECTED": "Builder lükkas suunamise tagasi. Põhjus: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Administraator vabastas duplikaatkaitse varakult. Põhjus: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Administraator määras registreerimise ümber asukohalt {{from}} kasutajaks {{to}} . Põhjus: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Veergude haldamine",
+    "hint": "Lohistage ümberjärjestamiseks · märkige kuvamiseks",
+    "showAll": "Kuva kõik",
+    "resetDefault": "Lähtestage vaikeseadetele"
+  },
+  "filters": {
+    "title": "Filtrid",
+    "allProjects": "Kõik projektid",
+    "any": "Ükskõik milline",
+    "noFields": "Muid filtreeritavaid välju pole veel lubatud (Seaded > Müügivihje).",
+    "clearAll": "Kustuta kõik"
+  },
+  "phone": {
+    "MISSING": "Telefoninumber on nõutav.",
+    "INVALID": "Sisestage kehtiv telefoninumber.",
+    "TOO_SHORT": "Telefoninumber on liiga lühike.",
+    "TOO_LONG": "Telefoninumber on liiga pikk.",
+    "INVALID_FOR_COUNTRY": "See telefoninumber ei kehti riigis {{country}} .",
+    "COUNTRY_MISMATCH": "Valige õige riigikood.",
+    "NOT_MOBILE": "Sisestage mobiiltelefoni number, mitte lauatelefon."
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Құрылысшы порталы",
+    "referrals": "Референциялар",
+    "builderLogin": "Құрылысшыға кіру",
+    "partnerLogin": "Арна серіктесіне кіру"
+  },
+  "login": {
+    "title": "Құрылысшы жүйеге кіріңіз",
+    "hint": "Құрылысшы тіркелгілерін Leadrat жасайды. Егер сізде жоқ болса, әкімшіңізден сұраңыз."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Сіздің шешіміңізді күтуде",
+    "ACCEPTED": "Қабылданды",
+    "REJECTED": "Қабылданбады"
+  },
+  "list": {
+    "title": "Референциялар",
+    "allProjects": "Барлық жобалар",
+    "allStatuses": "Барлық күйлер",
+    "count_one": "{{count}} жолдама",
+    "count_other": "{{count}} жолдама",
+    "columns": {
+      "referral": "Жолдама",
+      "customer": "Тұтынушы",
+      "project": "Жоба",
+      "sourcePartner": "Бастапқы серіктес",
+      "status": "Күй",
+      "booking": "Брондау",
+      "registered": "Тіркелген"
+    },
+    "booked": "Брондалды",
+    "empty": "Әзірге сілтемелер жоқ."
+  },
+  "detail": {
+    "customer": "Тұтынушы",
+    "sourcePartner": "Бастапқы серіктес",
+    "attributionNote": "(атрибут - өзгерту мүмкін емес)",
+    "leadStatus": "Жетекші мәртебесі",
+    "protectedUntil": "дейін қорғалған",
+    "referral": "Жолдама",
+    "reason": "Себебі: {{reason}}",
+    "booking": "Брондау",
+    "bookedOwner": "Брондау - сіз операциялық иесісіз",
+    "notBooked": "Брондалмады",
+    "sharedAfterBooking": "Брондау кейін ортақ",
+    "accept": "Рефералды қабылдау",
+    "confirmBooking": "Брондауды растау",
+    "reject": "Рефералды қабылдамау",
+    "rejectReasonLabel": "Бас тарту себебі (серіктеске көрсетіледі) *",
+    "rejectConfirm": "Қабылдамау",
+    "confirmBookingPrompt": "Брондау расталсын ба? Операциялық меншік сізге ауысады және серіктес комиссия алуға құқылы болады.",
+    "notice": {
+      "booked": "Брондау расталды.",
+      "accepted": "Реферат қабылданды.",
+      "rejected": "Реферат қабылданбады."
+    },
+    "backToReferrals": "Анықтамалар дегенге қайта келу"
+  },
+  "history": {
+    "title": "Тарих",
+    "actor": {
+      "system": "Жүйе",
+      "partner": "Арна серіктесі",
+      "admin": "Leadrat админ"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Серіктесті тіркеу алынды",
+      "DUPLICATE_CHECK_COMPLETED": "Қайталанатын тексеру аяқталды - белсенді көшірме табылмады",
+      "REGISTRATION_ACCEPTED": "Тіркеу қабылданды",
+      "PROTECTION_GRANTED_one": "{{count}} -күндік қорғаныс берілді",
+      "PROTECTION_GRANTED_other": "{{count}} -күндік қорғаныс берілді",
+      "STAGE_UPDATED": "Күй {{stage}} күйіне жаңартылды",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} өріс жаңартылды",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} өріс жаңартылды",
+      "LEAD_ASSIGNED": "{{name}} тағайындалды",
+      "LEAD_UNASSIGNED": "Тағайындалмаған",
+      "REFERRAL_ACCEPTED": "Құрылысшы жолдаманы қабылдады",
+      "REFERRAL_REJECTED": "Құрылысшы ұсынысты қабылдамады. Себебі: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} қайталанатын тіркеу әрекеті қабылданбады",
+      "BOOKING_COMPLETED": "Брондау аяқталды",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Операциялық меншік Құрылысшыға берілді",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Серіктес атрибуты сақталған",
+      "COMMISSION_ELIGIBILITY_CREATED": "Комиссия жарамдылығы құрылды",
+      "HANDOVER_COMPLETED": "Беру аяқталды",
+      "ADMIN_PROTECTION_RELEASED": "Әкімші қайталанатын қорғауды ерте шығарды. Себебі: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Әкімші тіркеуді {{from}} орнына {{to}} етіп қайта тағайындады. Себебі: {{reason}}"
+    }
+  }
+}

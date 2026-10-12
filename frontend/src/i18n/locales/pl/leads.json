@@ -1,0 +1,192 @@
+{
+  "list": {
+    "title": "Moje leady",
+    "signedInAs": "Zalogowano jako {{name}} ( {{partnerId}} ) · czasy pokazane w {{timezone}}",
+    "addLead": "+ Dodaj leada",
+    "tabs": {
+      "all": "Wszyscy ( {{count}} )",
+      "pending": "Oczekujące ( {{count}} )",
+      "booked": "Zarezerwowano ( {{count}} )"
+    },
+    "searchPlaceholder": "Szukaj według nazwy, telefonu komórkowego lub ID rejestracyjnego...",
+    "manageColumns": "Zarządzaj kolumnami",
+    "rowsPerPage": "Wiersze na stronę",
+    "registrationId": "ID rejestracyjny",
+    "emptyState": "Nie ma jeszcze żadnych leadów - zarejestruj swojego pierwszego.",
+    "noMatch": "Żaden potencjalny klient nie pasuje do tych filtrów.",
+    "showing": "Wyświetlanie {{from}} - {{to}} z {{total}} wpisów",
+    "actions": {
+      "preview": "Podgląd i szybka aktualizacja",
+      "history": "Historia",
+      "email": "E-mail",
+      "whatsapp": "WhatsApp",
+      "call": "Dzwonić"
+    },
+    "pagination": {
+      "first": "Pierwsza strona",
+      "previous": "Poprzednia strona",
+      "next": "Następna strona",
+      "last": "Ostatnia strona"
+    }
+  },
+  "columns": {
+    "status": "Status",
+    "assignTo": "Przypisz do",
+    "booked": "Zarezerwowane",
+    "protectionUntil": "Ochrona do"
+  },
+  "booking": {
+    "booked": "Zarezerwowane",
+    "pending": "Aż do"
+  },
+  "assign": {
+    "unassigned": "Nieprzypisany",
+    "owner": "{{name}} (Właściciel)",
+    "inactive": "{{name}} (nieaktywny)",
+    "unknownUser": "Nieznany użytkownik",
+    "assignedTo": "Przypisany do: {{name}}"
+  },
+  "form": {
+    "addTitle": "Dodaj leada",
+    "editTitle": "Edytuj potencjalnego klienta",
+    "noPermissionAdd": "Nie masz uprawnień do rejestrowania potencjalnych klientów.",
+    "noPermissionEdit": "Nie masz uprawnień do edytowania potencjalnych klientów.",
+    "selectPlaceholder": "Wybierać...",
+    "commaSeparated": "Oddzielone przecinkiem",
+    "phonePlaceholder": "Numer telefonu",
+    "countryCode": "Kod kraju"
+  },
+  "project": {
+    "none": "Nie ma jeszcze projektu (niezweryfikowany)",
+    "notInList": "{{project}} (nie na liście projektów)"
+  },
+  "journey": {
+    "customer": "Klient",
+    "currentOwner": "Obecny właściciel",
+    "protectionExpiry": "Wygaśnięcie ochrony",
+    "leadStatus": "Stan potencjalnego klienta",
+    "scheduled": "Zaplanowany",
+    "assignedTo": "Przypisany do",
+    "referral": "Skierowanie",
+    "builderReason": "Powód konstruktora: {{reason}}",
+    "bookedHint": "Zarezerwowane przez budowniczego - własność operacyjna przeszła na budowniczego; Twoje przypisanie i uprawnienia do prowizji pozostają zachowane.",
+    "notBookedHint": "Rezerwacje są potwierdzane przez budowniczego po przyjęciu polecenia.",
+    "quickUpdate": "Szybka aktualizacja",
+    "leadDetails": "Szczegóły potencjalnego klienta",
+    "progressHistory": "Historia postępu",
+    "timesIn": "(godziny w {{timezone}} )",
+    "backToMyLeads": "Powrót do Moich potencjalnych klientów",
+    "editLead": "Edytuj potencjalnego klienta"
+  },
+  "referral": {
+    "NOT_REFERRED": "Brak odniesienia (brak projektu)",
+    "PENDING_BUILDER": "Czekam na budowniczego",
+    "ACCEPTED": "Zaakceptowany przez konstruktora",
+    "REJECTED": "Odrzucony przez konstruktora"
+  },
+  "preview": {
+    "ariaLabel": "Podgląd leadu",
+    "title": "Podgląd leadu",
+    "source": "Źródło",
+    "location": "Lokalizacja",
+    "scheduled": "Zaplanowany",
+    "registered": "Zarejestrowany",
+    "latestNote": "Najnowsza notatka",
+    "quickUpdate": "Szybka aktualizacja",
+    "fullDetails": "Pełne szczegóły",
+    "editLead": "Edytuj potencjalnego klienta",
+    "history": "Historia"
+  },
+  "quick": {
+    "assignedTo": "Przypisany do",
+    "status": "Status",
+    "subStatus": "Stan podrzędny",
+    "selectSubStatus": "Wybierz podstan...",
+    "none": "Nic",
+    "scheduledAt": "Zaplanowano o godz",
+    "localTime": "czas lokalny",
+    "note": "Notatka",
+    "notePlaceholder": "Co się wydarzyło podczas tej rozmowy/wizyty? (fakultatywny)",
+    "updateStatus": "Aktualizuj stan",
+    "statusUpdated": "Stan zaktualizowany",
+    "bookedLocked": "Ten lead jest zarezerwowany - nie można już zmienić jego statusu.",
+    "viewOnly": "Możesz wyświetlić tego potencjalnego klienta, ale Twoja rola nie może go zaktualizować."
+  },
+  "history": {
+    "title": "Historia - {{registrationId}}",
+    "tabs": {
+      "all": "Wszystko",
+      "status": "Status",
+      "assignment": "Zadanie",
+      "notes": "Notatki"
+    },
+    "doneBy": "Wykonane przez {{actor}}",
+    "system": "System",
+    "platforms": {
+      "System": "System",
+      "External": "Zewnętrzny",
+      "Web": "Sieć",
+      "Mobile": "Przenośny"
+    },
+    "added": "w dodatku",
+    "updated": "zaktualizowany",
+    "empty": "(pusty)",
+    "noHistory": "Brak historii w tej kategorii.",
+    "fieldLabels": {
+      "stage": "Status",
+      "subStatus": "Stan podrzędny",
+      "scheduledAt": "Harmonogram",
+      "notes": "Notatki",
+      "assignedTo": "Przypisany do"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Otrzymano rejestrację partnera",
+      "DUPLICATE_CHECK_COMPLETED": "Sprawdzanie duplikatów zakończone — nie znaleziono aktywnego duplikatu",
+      "REGISTRATION_ACCEPTED": "Rejestracja zaakceptowana",
+      "PROTECTION_GRANTED_one": "Przyznano {{count}} -dniową ochronę",
+      "PROTECTION_GRANTED_few": "Przyznano {{count}} -dniową ochronę",
+      "PROTECTION_GRANTED_many": "Przyznano {{count}} -dniową ochronę",
+      "PROTECTION_GRANTED_other": "Przyznano {{count}} -dniową ochronę",
+      "REGISTRATION_ATTEMPT_REJECTED": "Podwójna próba rejestracji podjęta przez {{partnerId}} została odrzucona",
+      "LEAD_DETAILS_UPDATED_one": "Zaktualizowano pole {{count}}",
+      "LEAD_DETAILS_UPDATED_few": "Zaktualizowano pola: {{count}}",
+      "LEAD_DETAILS_UPDATED_many": "Zaktualizowano pola: {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "Zaktualizowano pola: {{count}}",
+      "STAGE_UPDATED": "Stan zaktualizowany do {{status}}",
+      "LEAD_ASSIGNED": "Przypisany do: {{name}}",
+      "LEAD_UNASSIGNED": "Nieprzypisany",
+      "BOOKING_COMPLETED": "Rezerwacja zakończona",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Własność operacyjna przeniesiona na firmę Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Zachowano atrybucję partnera",
+      "COMMISSION_ELIGIBILITY_CREATED": "Utworzono uprawnienia do prowizji",
+      "HANDOVER_COMPLETED": "Przekazanie zakończone",
+      "REFERRAL_ACCEPTED": "Konstruktor przyjął skierowanie",
+      "REFERRAL_REJECTED": "Konstruktor odrzucił skierowanie. Powód: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Administrator wcześniej udostępnił ochronę przed duplikatami. Powód: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Administrator przeniósł rejestrację z {{from}} na {{to}} . Powód: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Zarządzaj kolumnami",
+    "hint": "Przeciągnij, aby zmienić kolejność · zaznacz, aby wyświetlić",
+    "showAll": "Pokaż wszystko",
+    "resetDefault": "Przywróć ustawienia domyślne"
+  },
+  "filters": {
+    "title": "Filtry",
+    "allProjects": "Wszystkie projekty",
+    "any": "Każdy",
+    "noFields": "Żadne inne pola, które można filtrować, nie są jeszcze włączone (Ustawienia > Potencjalny klient).",
+    "clearAll": "Wyczyść wszystko"
+  },
+  "phone": {
+    "MISSING": "Numer telefonu jest wymagany.",
+    "INVALID": "Proszę wprowadzić prawidłowy numer telefonu.",
+    "TOO_SHORT": "Numer telefonu jest za krótki.",
+    "TOO_LONG": "Numer telefonu jest za długi.",
+    "INVALID_FOR_COUNTRY": "Ten numer telefonu nie jest ważny w {{country}} .",
+    "COUNTRY_MISMATCH": "Proszę wybrać prawidłowy kod kraju.",
+    "NOT_MOBILE": "Proszę podać numer telefonu komórkowego, a nie stacjonarnego."
+  }
+}

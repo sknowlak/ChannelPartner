@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Nire Leads",
+    "signedInAs": "{{name}} ( {{partnerId}} ) gisa hasi duzu saioa · {{timezone}} -n agertzen diren orduak",
+    "addLead": "+ Gehitu beruna",
+    "tabs": {
+      "all": "Guztiak ( {{count}} )",
+      "pending": "Zain ( {{count}} )",
+      "booked": "Erreserbatua ( {{count}} )"
+    },
+    "searchPlaceholder": "Bilatu izenaren, mugikorraren edo erregistroko ID arabera...",
+    "manageColumns": "Kudeatu Zutabeak",
+    "rowsPerPage": "Orrialde bakoitzeko errenkadak",
+    "registrationId": "Erregistro ID",
+    "emptyState": "Oraindik ez dago biderik - erregistratu zure lehenengoa.",
+    "noMatch": "Ez dago bezeroek iragazki hauekin bat datorren.",
+    "showing": "{{from}} - {{to}} tik {{total}} sarrera erakusten",
+    "actions": {
+      "preview": "Aurrebista eta eguneratze azkarra",
+      "history": "Historia",
+      "email": "Posta elektronikoa",
+      "whatsapp": "WhatsApp",
+      "call": "Deitu"
+    },
+    "pagination": {
+      "first": "Lehen orrialdea",
+      "previous": "Aurreko orrialdea",
+      "next": "Hurrengo orrialdea",
+      "last": "Azken orrialdea"
+    }
+  },
+  "columns": {
+    "status": "Egoera",
+    "assignTo": "Esleitu Honi",
+    "booked": "Erreserbatua",
+    "protectionUntil": "Babesa Arte"
+  },
+  "booking": {
+    "booked": "Erreserbatua",
+    "pending": "Zain"
+  },
+  "assign": {
+    "unassigned": "Esleitu gabe",
+    "owner": "{{name}} (Jabea)",
+    "inactive": "{{name}} (ez aktibo)",
+    "unknownUser": "Erabiltzaile ezezaguna",
+    "assignedTo": "{{name}} ri esleitu zaio"
+  },
+  "form": {
+    "addTitle": "Gehitu beruna",
+    "editTitle": "Editatu Lead",
+    "noPermissionAdd": "Ez duzu lead-ak erregistratzeko baimenik.",
+    "noPermissionEdit": "Ez duzu bezerogaiak editatzeko baimenik.",
+    "selectPlaceholder": "Hautatu...",
+    "commaSeparated": "Koma bereizita",
+    "phonePlaceholder": "Telefono zenbakia",
+    "countryCode": "Herrialde-kodea"
+  },
+  "project": {
+    "none": "Oraindik ez dago proiekturik (ez da aipatu)",
+    "notInList": "{{project}} (ez dago proiektuen zerrendan)"
+  },
+  "journey": {
+    "customer": "Bezeroa",
+    "currentOwner": "Egungo jabea",
+    "protectionExpiry": "Babesaren iraungipena",
+    "leadStatus": "Lead egoera",
+    "scheduled": "Programatua",
+    "assignedTo": "Nori esleitua",
+    "referral": "Erreferentzia",
+    "builderReason": "Eraikitzailearen arrazoia: {{reason}}",
+    "bookedHint": "Eraikitzaileak erreserbatuta - jabetza operatiboa eraikitzaileari pasatu zaio; zure atribuzioa eta komisioaren hautagarritasuna mantentzen dira.",
+    "notBookedHint": "Erreserbak eraikitzaileak berresten ditu erreferentzia onartzen duenean.",
+    "quickUpdate": "Eguneratze azkarra",
+    "leadDetails": "Berunaren xehetasunak",
+    "progressHistory": "Aurrerapen Historia",
+    "timesIn": "(orduak {{timezone}} n)",
+    "backToMyLeads": "Itzuli Nire Leads-era",
+    "editLead": "Editatu Lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "Ez da aipatu (proiekturik ez)",
+    "PENDING_BUILDER": "Eraikitzailearen zain",
+    "ACCEPTED": "Eraikitzaileak onartua",
+    "REJECTED": "Eraikitzaileak baztertua"
+  },
+  "preview": {
+    "ariaLabel": "Lead aurrebista",
+    "title": "Lead aurrebista",
+    "source": "Iturria",
+    "location": "Kokapena",
+    "scheduled": "Programatua",
+    "registered": "Erregistratua",
+    "latestNote": "Azken Oharra",
+    "quickUpdate": "Eguneratze azkarra",
+    "fullDetails": "Xehetasun osoa",
+    "editLead": "Editatu Lead",
+    "history": "Historia"
+  },
+  "quick": {
+    "assignedTo": "Nori esleitua",
+    "status": "Egoera",
+    "subStatus": "Azpiegoera",
+    "selectSubStatus": "Hautatu azpiegoera...",
+    "none": "Bat ere ez",
+    "scheduledAt": "Ordutegian antolatuta",
+    "localTime": "tokiko ordua",
+    "note": "Oharra",
+    "notePlaceholder": "Zer gertatu da dei/bisita honetan? (aukerakoa)",
+    "updateStatus": "Eguneratu egoera",
+    "statusUpdated": "Egoera eguneratu da",
+    "bookedLocked": "Proba hau erreserbatuta dago; jada ezin da bere egoera aldatu.",
+    "viewOnly": "Proba hau ikus dezakezu, baina zure rolak ezin du eguneratu."
+  },
+  "history": {
+    "title": "Historia - {{registrationId}}",
+    "tabs": {
+      "all": "Denak",
+      "status": "Egoera",
+      "assignment": "Esleipena",
+      "notes": "Oharrak"
+    },
+    "doneBy": "{{actor}} k egina",
+    "system": "Sistema",
+    "platforms": {
+      "System": "Sistema",
+      "External": "Kanpokoa",
+      "Web": "Weba",
+      "Mobile": "Mugikorra"
+    },
+    "added": "gehitu",
+    "updated": "eguneratua",
+    "empty": "(hutsik)",
+    "noHistory": "Oraindik ez dago historiarik kategoria honetan.",
+    "fieldLabels": {
+      "stage": "Egoera",
+      "subStatus": "Azpiegoera",
+      "scheduledAt": "Ordutegia",
+      "notes": "Oharrak",
+      "assignedTo": "Nori esleitua"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Bazkideen erregistroa jaso da",
+      "DUPLICATE_CHECK_COMPLETED": "Bikoiztutako egiaztapena osatu da - ez da bikoiztu aktiborik aurkitu",
+      "REGISTRATION_ACCEPTED": "Izen-ematea onartu da",
+      "PROTECTION_GRANTED_one": "{{count}} eguneko babesa eman da",
+      "PROTECTION_GRANTED_other": "{{count}} eguneko babesa eman da",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partnerId}} -ren erregistro-saiakera bikoiztua baztertu da",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} eremu eguneratua",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} eremu eguneratuak",
+      "STAGE_UPDATED": "Egoera {{status}} -ra eguneratu da",
+      "LEAD_ASSIGNED": "{{name}} ri esleitu zaio",
+      "LEAD_UNASSIGNED": "Esleitu gabe",
+      "BOOKING_COMPLETED": "Erreserba amaitu da",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Jabetza operatiboa Builder-i transferitu zaio",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Bazkideen atribuzioa mantendu da",
+      "COMMISSION_ELIGIBILITY_CREATED": "Batzordearen hautagarritasuna sortu da",
+      "HANDOVER_COMPLETED": "Eskualdaketa amaituta",
+      "REFERRAL_ACCEPTED": "Eraikitzaileak erreferentzia onartu zuen",
+      "REFERRAL_REJECTED": "Eraikitzaileak erreferentea baztertu zuen. Arrazoia: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Administratzaileak bikoiztutako babesa kaleratu zuen goiz. Arrazoia: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Administratzaileak erregistroa berriro esleitu du {{from}} -tik {{to}} . Arrazoia: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Kudeatu Zutabeak",
+    "hint": "Arrastatu berrantolatzeko · egiaztatu erakusteko",
+    "showAll": "Erakutsi guztiak",
+    "resetDefault": "Berrezarri lehenespenera"
+  },
+  "filters": {
+    "title": "Iragazkiak",
+    "allProjects": "Proiektu guztiak",
+    "any": "Edozein",
+    "noFields": "Oraindik ez dago iragazki daitekeen beste eremurik gaituta (Ezarpenak > Proba).",
+    "clearAll": "Garbitu guztiak"
+  },
+  "phone": {
+    "MISSING": "Telefono zenbakia beharrezkoa da.",
+    "INVALID": "Mesedez, sartu baliozko telefono-zenbaki bat.",
+    "TOO_SHORT": "Telefono-zenbakia laburregia da.",
+    "TOO_LONG": "Telefono-zenbakia luzeegia da.",
+    "INVALID_FOR_COUNTRY": "Telefono-zenbaki honek ez du balio {{country}} rako.",
+    "COUNTRY_MISMATCH": "Mesedez, hautatu herrialde-kode zuzena.",
+    "NOT_MOBILE": "Mesedez, sartu mugikor-zenbaki bat, ez finkoa."
+  }
+}

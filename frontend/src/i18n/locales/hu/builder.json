@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Építő portál",
+    "referrals": "Áttételek",
+    "builderLogin": "Builder bejelentkezés",
+    "partnerLogin": "Csatornapartner bejelentkezés"
+  },
+  "login": {
+    "title": "Builder bejelentkezés",
+    "hint": "A Builder fiókokat a Leadrat hozza létre. Kérdezze meg a rendszergazdát, ha nem rendelkezik ilyennel."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Várja a döntését",
+    "ACCEPTED": "Elfogadott",
+    "REJECTED": "Elutasítva"
+  },
+  "list": {
+    "title": "Áttételek",
+    "allProjects": "Minden projekt",
+    "allStatuses": "Minden állapot",
+    "count_one": "{{count}} ajánlás",
+    "count_other": "{{count}} ajánlás",
+    "columns": {
+      "referral": "Beutaló",
+      "customer": "Vevő",
+      "project": "Projekt",
+      "sourcePartner": "Forrás Partner",
+      "status": "Állapot",
+      "booking": "Foglalás",
+      "registered": "Bejegyzett"
+    },
+    "booked": "Lefoglalt",
+    "empty": "Még nincsenek ajánlások."
+  },
+  "detail": {
+    "customer": "Vevő",
+    "sourcePartner": "Forrás Partner",
+    "attributionNote": "(megjelölés - nem módosítható)",
+    "leadStatus": "Vezetési állapot",
+    "protectedUntil": "Védett ig",
+    "referral": "Beutaló",
+    "reason": "Ok: {{reason}}",
+    "booking": "Foglalás",
+    "bookedOwner": "Lefoglalva – Ön az operatív tulajdonos",
+    "notBooked": "Nincs lefoglalva",
+    "sharedAfterBooking": "Foglalás után megosztva",
+    "accept": "Fogadja el az ajánlást",
+    "confirmBooking": "Foglalás megerősítése",
+    "reject": "Beutaló elutasítása",
+    "rejectReasonLabel": "Az elutasítás oka (megmutatva a partnernek) *",
+    "rejectConfirm": "Elutasít",
+    "confirmBookingPrompt": "Megerősíti a foglalást? A működési tulajdonjog Önhöz költözik, és a partner jogosulttá válik a jutalékra.",
+    "notice": {
+      "booked": "A foglalás megerősítve.",
+      "accepted": "Beutaló elfogadva.",
+      "rejected": "A beutaló elutasítva."
+    },
+    "backToReferrals": "Vissza a hivatkozásokhoz"
+  },
+  "history": {
+    "title": "Történelem",
+    "actor": {
+      "system": "Rendszer",
+      "partner": "Csatornapartner",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Partner regisztráció megérkezett",
+      "DUPLICATE_CHECK_COMPLETED": "Az ismétlődés ellenőrzése befejeződött – nem található aktív ismétlődés",
+      "REGISTRATION_ACCEPTED": "Regisztráció elfogadva",
+      "PROTECTION_GRANTED_one": "{{count}} napos védelem biztosított",
+      "PROTECTION_GRANTED_other": "{{count}} napos védelem biztosított",
+      "STAGE_UPDATED": "Az állapot frissítve a következőre: {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Frissített {{count}} mező",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} mező frissítve",
+      "LEAD_ASSIGNED": "Hozzárendelve: {{name}}",
+      "LEAD_UNASSIGNED": "Nincs hozzárendelve",
+      "REFERRAL_ACCEPTED": "A Builder elfogadta az ajánlást",
+      "REFERRAL_REJECTED": "Builder elutasította az ajánlást. Ok: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} ismétlődő regisztrációs kísérlete elutasítva",
+      "BOOKING_COMPLETED": "A foglalás befejeződött",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "A működési tulajdonjog átkerült a Builderre",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partner-hozzárendelés megőrizve",
+      "COMMISSION_ELIGIBILITY_CREATED": "Jutalékjogosultság létrejött",
+      "HANDOVER_COMPLETED": "Az átadás befejeződött",
+      "ADMIN_PROTECTION_RELEASED": "A rendszergazda korán kiadta a duplikált védelmet. Ok: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Az adminisztrátor átadta a regisztrációt a következőről: {{from}} a következőre: {{to}} . Ok: {{reason}}"
+    }
+  }
+}

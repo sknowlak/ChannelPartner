@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Tautuhinga",
+    "noPermission": "Kaore koe e whai mana ki te whakahaere i nga tautuhinga."
+  },
+  "categories": {
+    "lead": "Arataki",
+    "user": "Kaiwhakamahi",
+    "integrations": "Whakakotahitanga"
+  },
+  "leadTabs": {
+    "fields": "Nga mara",
+    "statuses": "Ngā Tūnga me ngā Tūnga-iti",
+    "notifications": "Whakamōhiotanga & Kaihōtaka"
+  },
+  "fields": {
+    "leadIntro": "Whirihorahia te puka hopu arataki: whakahoa/whakakorehia nga mara, tohuhia e hiahiatia ana, taapirihia ranei o ake ake mara ritenga.",
+    "userIntro": "Whirihorahia te Tāpiri/Whakatika Puka Mema Rōpū: whakahohea/monohia ngā āpure, tohuhia e hiahiatia ana, tāpirihia rānei ō ake āpure ritenga.",
+    "addCustomField": "+ Tāpiri Āpure Ritenga",
+    "fieldLabel": "Tapanga mara",
+    "group": "Rōpū",
+    "groupPlaceholderLead": "hei tauira Uiuinga korero",
+    "groupPlaceholderUser": "hei tauira mo etahi atu Taipitopito",
+    "dataType": "Momo Raraunga",
+    "options": "Kōwhiringa (wehea piko)",
+    "requiredLead": "E hiahiatia ana - me whakaki e nga hoa o to roopu tenei ki te rehita i tetahi kaiarahi",
+    "requiredUser": "E hiahiatia ana - me whakakii ina taapirihia he mema o te roopu",
+    "creating": "Waihanga...",
+    "createField": "Waihanga Mara",
+    "columns": {
+      "field": "Mara",
+      "group": "Rōpū",
+      "type": "Momo",
+      "required": "E hiahiatia ana",
+      "enabled": "Whakahohe",
+      "kind": "Ataahua"
+    },
+    "kind": {
+      "custom": "Ritenga",
+      "core": "Matua (maukati)",
+      "standard": "Paerewa"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Kuputuhi",
+    "TEXTAREA": "Kupu roa",
+    "NUMBER": "Tau",
+    "CURRENCY": "Moni",
+    "DATE": "Rā",
+    "SELECT": "Whakataka iho",
+    "LIST": "Rarangi"
+  },
+  "picker": {
+    "searchPlaceholder": "Rapua nga mara arahi...",
+    "summary": "{{shown}} kua whakaaturia · {{mandatory}} whakahau",
+    "mandatory": "Whakahau",
+    "noMatch": "Karekau he mara e rite ana."
+  },
+  "statuses": {
+    "intro": "Ko o mana rangatira me o mana-iti - he aha te tono a ia tangata (he ra me te wa, nga mara arahi) ina whakahōuhia e tetahi he arahi ki a ia.",
+    "add": "+ Tāpiri Tūnga",
+    "columns": {
+      "order": "Ota",
+      "status": "Tūnga",
+      "subStatuses": "Nga-Tuanga",
+      "asksFor": "Uiui Mo",
+      "active": "Hohe"
+    },
+    "moveUp": "Neke ki runga",
+    "moveDown": "Nuku ki raro",
+    "defaultBadge": "Taunoa mo nga kaiarahi hou",
+    "bookingBadge": "Tūnga tāpui",
+    "asksForLabel": "Ka tono mo {{label}}",
+    "asksForDateTime": "Ka patai mo te ra me te wa",
+    "none": "Karekau",
+    "dateTime": "Te ra me te wa",
+    "scheduledOn": "i runga i {{names}}",
+    "fieldsSummary_one": "{{count}} mara ( {{mandatory}} whakahau)",
+    "fieldsSummary_other": "{{count}} āpure ( {{mandatory}} whakahau)",
+    "deleteConfirm": "Mukua te mana \" {{name}} \"? Kaore e taea te whakakore i tenei.",
+    "editTitle": "Whakatika Tūnga - {{name}}",
+    "newTitle": "Tūnga Hou",
+    "name": "Ingoa Tūnga",
+    "colour": "Tae",
+    "active": "Hohe",
+    "isDefault": "Te mana taunoa mo nga kaiarahi hou",
+    "isBooking": "Tūnga tāpui (whakatauhia e te Rahui Whakaoti)",
+    "whenMoved": "Ina nekehia he arahi ki tenei mana",
+    "askSchedule": "Tonoa he ra me te wa (kaiwhakarite)",
+    "scheduleLabelPlaceholder": "Tapanga, hei tauira, Haere ki te",
+    "fieldsToShow": "Arataki mara hei whakaatu ki te puka whakahōu",
+    "subStatusesTitle": "Nga-Tuanga",
+    "subStatusesHint": "Ka taea e ia mana-iti te tono mo tona ake ra me te wa me te taapiri i ona ake mara - ka whakaatuhia ki runga ake o nga mara o te mana o runga.",
+    "subStatusName": "Ingoa-iti",
+    "subFields": "Ngā Āpure ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Te tapanga o te ra me te wa, hei tauira, Waea mai ki",
+    "addSubStatus": "+ Tāpiri Tūnga-iti",
+    "saveStatus": "Tiaki Tūnga",
+    "createStatus": "Waihanga Tūnga"
+  },
+  "notifications": {
+    "intro": "Whakamōhio atu ki te hunga tika ina tae atu te kaiarahi ki tetahi mana - i te wa tonu, i te wa i whakaritea i mua/i muri i te ra me te wa i whakaritea ki runga.",
+    "add": "+ Tāpiri Whakamōhiotanga",
+    "columns": {
+      "notification": "Panuitanga",
+      "whenStatusIs": "I te wa e tu ana",
+      "sends": "Ka tuku",
+      "to": "Ki",
+      "via": "Mā",
+      "enabled": "Whakahohe"
+    },
+    "anyStatus": "Tetahi mana",
+    "anySubStatus": "Tetahi mana iti",
+    "inactiveOption": "{{name}} (kore hohe)",
+    "emptyRules": "Kare ano he whakamohiotanga - taapirihia tetahi hei whakamohio i to roopu ina tae te kaiarahi ki tetahi mana.",
+    "jobs": {
+      "title": "Kua whakaritea me te tuku",
+      "firesAt": "Nga Ahi I",
+      "notification": "Panuitanga",
+      "lead": "Arataki",
+      "status": "Tūnga",
+      "details": "Nga korero",
+      "empty": "Kaore ano kia whakaritea, ka tukuna ranei.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Tarewa ana",
+      "PROCESSING": "Tukatuka",
+      "SENT": "Tukuna",
+      "FAILED": "I rahua",
+      "SKIPPED": "I pekehia",
+      "CANCELLED": "Kua whakakorehia"
+    },
+    "deliveryStatus": {
+      "SENT": "tukuna",
+      "FAILED": "i rahua",
+      "SKIPPED": "pekepeke"
+    },
+    "deliveryChannel": {
+      "IN_APP": "i-taupānga",
+      "EMAIL": "īmēra",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Kaiwhakamahi kua tohua",
+      "owner": "Rangatira",
+      "updatedBy": "Whakahoutia e",
+      "role": "Tūnga: {{name}}"
+    },
+    "channels": {
+      "inApp": "I-taupānga",
+      "email": "Īmēra",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Mukua te panui \" {{name}} \"? Ka whakakorehia nga whakamaharatanga e tatari ana.",
+    "testPrompt": "Tukuna he whakamatautau mo tenei whakamohiotanga ki a koe (i roto-taupānga) ma te whakamahi i te ID arataki ?",
+    "testSent": "I tukuna ki to pere: {{title}} {{message}}",
+    "headersInvalid": "Me whai mana nga pane Webhook JSON , hei tauira, {\"Whakaaetanga\": \"Kaiwhakahaere xyz\"}",
+    "editTitle": "Whakatika Whakamōhiotanga",
+    "newTitle": "Panuitanga Hou",
+    "name": "Ingoa",
+    "namePlaceholder": "hei tauira Te whakamaumahara ki te toronga pae",
+    "whenStatus": "Ina ko te mana o te kaiarahi",
+    "subStatus": "Turanga-iti",
+    "send": "Tukuna (kaiwhakahōtaka)",
+    "custom": "Ritenga...",
+    "modeBefore": "i mua i te wa i whakaritea",
+    "modeAfter": "i muri i te wa i whakaritea",
+    "noScheduleWarning": "Kaore tenei mana e tono mo te ra me te wa, no reira ko te panui \"i mua / i / i muri i te wa i whakaritea\" e kore e pupuhi.",
+    "noScheduleFix": "Whakakāhia <strong>te Tono mo te ra me te wa</strong> mo taua mea i raro i nga Tuanga me nga Turanga-iti, me tuku tonu ranei.",
+    "sendTo": "Tukuna ki (tetahi huinga)",
+    "recipientAssigned": "Kaiwhakamahi kua whakaritea (kairangatira rangatira)",
+    "recipientOwner": "Kaipupuri kaute / kaiwhakahaere",
+    "recipientUpdatedBy": "Tangata nana i whakahou te mana",
+    "everyoneWithRole": "Ko nga tangata katoa he mahi",
+    "specificUsers": "Kaiwhakamahi motuhake (hohe)",
+    "inactiveNever": "Ko nga kaiwhakamahi hohe kore e whiwhi whakamohiotanga, ahakoa kua tohua.",
+    "deliverVia": "Tukuna ma",
+    "channelInApp": "I-taupānga (pere)",
+    "channelEmail": "Īmēra",
+    "channelWebhook": "Webhook (Kaiwhakarato WhatsApp / SMS )",
+    "emailHint": "Ka haere te īmēra ki te wāhitau īmēra o ia kaiwhiwhi, ā, me whakarite te SMTP ki runga i te tūmau (backend/.env); tae noa ki taua wa ka tuhia nga tuku imeera kua pekehia.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Pane ( JSON )",
+    "content": "Ihirangi whakamohiotanga",
+    "title": "Taitara",
+    "message": "Karere",
+    "insertIntoTitle": "Kōkuhu ki te Taitara",
+    "insertIntoMessage": "Kōkuhu ki te Karere",
+    "anyLeadField": "Ka mahi ano nga mara arahi, hei tauira, <code1>{{example1}}</code1> <code2>{{example2}}</code2> ranei.",
+    "preview": "Arokite (tauira arahi)",
+    "enabled": "Whakahohe",
+    "saveRule": "Tiaki Whakamōhiotanga",
+    "createRule": "Waihanga Whakamōhiotanga",
+    "variables": {
+      "customerName": "Ingoa arahi",
+      "customerMobile": "Arahina pūkoro",
+      "customerEmail": "Arataki i te imeera",
+      "registrationId": "Arataki ID",
+      "status": "Tūnga",
+      "subStatus": "Turanga-iti",
+      "scheduleAt": "Te ra me te wa kua whakaritea",
+      "assignedTo": "Kaiwhakamahi kua tohua",
+      "updatedBy": "Whakahoutia e",
+      "recipient": "Ingoa kaiwhiwhi",
+      "project": "Kaupapa",
+      "notes": "Tuhinga o mua",
+      "partner": "Ingoa hoa"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "I te wa tonu ka whakatauhia te mana",
+      "AT": "I te wa i whakaritea",
+      "A1D": "1 ra i muri i te wa i whakaritea (arowhai whai muri)"
+    },
+    "immediately": "Inamata tonu",
+    "atScheduled": "I te wa kua whakaritea",
+    "before": {
+      "MINUTES_one": "{{count}} meneti i mua i te wa i whakaritea",
+      "MINUTES_other": "{{count}} meneti i mua i te wa i whakaritea",
+      "HOURS_one": "{{count}} haora i mua i te wa i whakaritea",
+      "HOURS_other": "{{count}} haora i mua i te wa i whakaritea",
+      "DAYS_one": "{{count}} ra i mua i te wa i whakaritea",
+      "DAYS_other": "{{count}} ra i mua i te wa i whakaritea",
+      "WEEKS_one": "{{count}} wiki i mua i te wa i whakaritea",
+      "WEEKS_other": "{{count}} wiki i mua i te wa i whakaritea",
+      "MONTHS_one": "{{count}} marama i mua i te wa i whakaritea",
+      "MONTHS_other": "{{count}} marama i mua i te wa i whakaritea",
+      "YEARS_one": "{{count}} tau i mua i te wa i whakaritea",
+      "YEARS_other": "{{count}} tau i mua i te wa i whakaritea"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} meneti i muri i te wa i whakaritea",
+      "MINUTES_other": "{{count}} meneti i muri i te wa i whakaritea",
+      "HOURS_one": "{{count}} haora i muri i te wa i whakaritea",
+      "HOURS_other": "{{count}} haora i muri i te wa i whakaritea",
+      "DAYS_one": "{{count}} ra i muri i te wa i whakaritea",
+      "DAYS_other": "{{count}} nga ra i muri i te wa i whakaritea",
+      "WEEKS_one": "{{count}} wiki i muri i te wa i whakaritea",
+      "WEEKS_other": "{{count}} wiki i muri i te wa i whakaritea",
+      "MONTHS_one": "{{count}} marama i muri i te wa i whakaritea",
+      "MONTHS_other": "{{count}} marama i muri i te wa i whakaritea",
+      "YEARS_one": "{{count}} tau i muri i te wa i whakaritea",
+      "YEARS_other": "{{count}} tau i muri i te wa i whakaritea"
+    },
+    "units": {
+      "MINUTES_one": "meneti",
+      "MINUTES_other": "meneti",
+      "HOURS_one": "haora",
+      "HOURS_other": "haora",
+      "DAYS_one": "rā",
+      "DAYS_other": "nga ra",
+      "WEEKS_one": "wiki",
+      "WEEKS_other": "wiki",
+      "MONTHS_one": "marama",
+      "MONTHS_other": "marama",
+      "YEARS_one": "tau",
+      "YEARS_other": "tau"
+    }
+  }
+}

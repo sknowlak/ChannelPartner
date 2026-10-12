@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Leads mine",
+    "signedInAs": "Pålogget som {{name}} ( {{partnerId}} ) · ganger vist i {{timezone}}",
+    "addLead": "+ Legg til lead",
+    "tabs": {
+      "all": "Alle ( {{count}} )",
+      "pending": "Venter ( {{count}} )",
+      "booked": "Bestilt ( {{count}} )"
+    },
+    "searchPlaceholder": "Søk etter navn, mobil eller registrerings ID ...",
+    "manageColumns": "Administrer kolonner",
+    "rowsPerPage": "Rader per side",
+    "registrationId": "Registrerings- ID",
+    "emptyState": "Ingen potensielle kunder ennå - registrer din første.",
+    "noMatch": "Ingen kundeemner samsvarer med disse filtrene.",
+    "showing": "Viser {{from}} - {{to}} av {{total}} oppføringer",
+    "actions": {
+      "preview": "Forhåndsvisning og rask oppdatering",
+      "history": "Historie",
+      "email": "E-post",
+      "whatsapp": "WhatsApp",
+      "call": "Ringe"
+    },
+    "pagination": {
+      "first": "Første side",
+      "previous": "Forrige side",
+      "next": "Neste side",
+      "last": "Siste side"
+    }
+  },
+  "columns": {
+    "status": "Status",
+    "assignTo": "Tilordne til",
+    "booked": "Bestilt",
+    "protectionUntil": "Beskyttelse til"
+  },
+  "booking": {
+    "booked": "Bestilt",
+    "pending": "I påvente av"
+  },
+  "assign": {
+    "unassigned": "Ikke tilordnet",
+    "owner": "{{name}} (eier)",
+    "inactive": "{{name}} (inaktiv)",
+    "unknownUser": "Ukjent bruker",
+    "assignedTo": "Tildelt til {{name}}"
+  },
+  "form": {
+    "addTitle": "Legg til bly",
+    "editTitle": "Rediger kundeemne",
+    "noPermissionAdd": "Du har ikke tillatelse til å registrere potensielle kunder.",
+    "noPermissionEdit": "Du har ikke tillatelse til å redigere potensielle kunder.",
+    "selectPlaceholder": "Velge...",
+    "commaSeparated": "Komma skilt",
+    "phonePlaceholder": "Telefonnummer",
+    "countryCode": "Landskode"
+  },
+  "project": {
+    "none": "Ikke noe prosjekt ennå (ikke referert)",
+    "notInList": "{{project}} (ikke i prosjektlisten)"
+  },
+  "journey": {
+    "customer": "Kunde",
+    "currentOwner": "Nåværende eier",
+    "protectionExpiry": "Beskyttelse utløper",
+    "leadStatus": "Lead Status",
+    "scheduled": "Planlagt",
+    "assignedTo": "Tildelt til",
+    "referral": "Henvisning",
+    "builderReason": "Byggerens årsak: {{reason}}",
+    "bookedHint": "Bestilt av byggherre - driftseierskap er flyttet til byggherre; din attribusjon og provisjonskvalifisering beholdes.",
+    "notBookedHint": "Bestillinger bekreftes av byggherren når de godtar henvisningen.",
+    "quickUpdate": "Rask oppdatering",
+    "leadDetails": "Leaddetaljer",
+    "progressHistory": "Fremdriftshistorie",
+    "timesIn": "(tider i {{timezone}} )",
+    "backToMyLeads": "Tilbake til Leads",
+    "editLead": "Rediger kundeemne"
+  },
+  "referral": {
+    "NOT_REFERRED": "Ikke henvist (ingen prosjekt)",
+    "PENDING_BUILDER": "Venter på byggmester",
+    "ACCEPTED": "Godkjent av byggherre",
+    "REJECTED": "Avvist av byggherre"
+  },
+  "preview": {
+    "ariaLabel": "Forhåndsvisning av potensielle kunder",
+    "title": "Forhåndsvisning av potensielle kunder",
+    "source": "Kilde",
+    "location": "Sted",
+    "scheduled": "Planlagt",
+    "registered": "Registrert",
+    "latestNote": "Siste notat",
+    "quickUpdate": "Rask oppdatering",
+    "fullDetails": "Fullstendige detaljer",
+    "editLead": "Rediger kundeemne",
+    "history": "Historie"
+  },
+  "quick": {
+    "assignedTo": "Tildelt til",
+    "status": "Status",
+    "subStatus": "Understatus",
+    "selectSubStatus": "Velg understatus...",
+    "none": "Ingen",
+    "scheduledAt": "Planlagt kl",
+    "localTime": "lokal tid",
+    "note": "Note",
+    "notePlaceholder": "Hva skjedde på denne samtalen/besøket? (valgfri)",
+    "updateStatus": "Oppdater status",
+    "statusUpdated": "Status oppdatert",
+    "bookedLocked": "Dette kundeemnet er booket - statusen kan ikke lenger endres.",
+    "viewOnly": "Du kan se denne kundeemnet, men rollen din kan ikke oppdatere den."
+  },
+  "history": {
+    "title": "Logg – {{registrationId}}",
+    "tabs": {
+      "all": "Alle",
+      "status": "Status",
+      "assignment": "Tildeling",
+      "notes": "Notater"
+    },
+    "doneBy": "Utført av {{actor}}",
+    "system": "System",
+    "platforms": {
+      "System": "System",
+      "External": "Utvendig",
+      "Web": "Web",
+      "Mobile": "Mobil"
+    },
+    "added": "lagt til",
+    "updated": "oppdatert",
+    "empty": "(tømme)",
+    "noHistory": "Ingen historikk i denne kategorien ennå.",
+    "fieldLabels": {
+      "stage": "Status",
+      "subStatus": "Understatus",
+      "scheduledAt": "Rute",
+      "notes": "Notater",
+      "assignedTo": "Tildelt til"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Partnerregistrering mottatt",
+      "DUPLICATE_CHECK_COMPLETED": "Duplikatsjekk fullført - ingen aktiv duplikat funnet",
+      "REGISTRATION_ACCEPTED": "Registrering akseptert",
+      "PROTECTION_GRANTED_one": "{{count}} dagers beskyttelse gitt",
+      "PROTECTION_GRANTED_other": "{{count}} dagers beskyttelse gitt",
+      "REGISTRATION_ATTEMPT_REJECTED": "Duplikatregistreringsforsøk av {{partnerId}} ble avvist",
+      "LEAD_DETAILS_UPDATED_one": "Oppdatert {{count}} felt",
+      "LEAD_DETAILS_UPDATED_other": "Oppdaterte {{count}} felt",
+      "STAGE_UPDATED": "Status oppdatert til {{status}}",
+      "LEAD_ASSIGNED": "Tildelt til {{name}}",
+      "LEAD_UNASSIGNED": "Ikke tilordnet",
+      "BOOKING_COMPLETED": "Bestilling fullført",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Driftsmessig eierskap overført til Byggmester",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partnerattribusjon bevart",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kommisjonsberettigelse opprettet",
+      "HANDOVER_COMPLETED": "Overlevering fullført",
+      "REFERRAL_ACCEPTED": "Byggmester godtok henvisningen",
+      "REFERRAL_REJECTED": "Byggmester avviste henvisningen. Årsak: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin ga ut duplikatbeskyttelse tidlig. Årsak: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Administrator tilordnet registreringen fra {{from}} til {{to}} . Årsak: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Administrer kolonner",
+    "hint": "Dra for å omorganisere · merk av for å vise",
+    "showAll": "Vis alle",
+    "resetDefault": "Tilbakestill til standard"
+  },
+  "filters": {
+    "title": "Filtre",
+    "allProjects": "Alle prosjekter",
+    "any": "Noen",
+    "noFields": "Ingen andre filtrerbare felt er aktivert ennå (Innstillinger > Lead).",
+    "clearAll": "Fjern alle"
+  },
+  "phone": {
+    "MISSING": "Telefonnummer er påkrevd.",
+    "INVALID": "Vennligst skriv inn et gyldig telefonnummer.",
+    "TOO_SHORT": "Telefonnummeret er for kort.",
+    "TOO_LONG": "Telefonnummeret er for langt.",
+    "INVALID_FOR_COUNTRY": "Dette telefonnummeret er ikke gyldig for {{country}} .",
+    "COUNTRY_MISMATCH": "Vennligst velg riktig landskode.",
+    "NOT_MOBILE": "Vennligst skriv inn et mobilnummer, ikke en fasttelefon."
+  }
+}

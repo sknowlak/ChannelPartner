@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Mo bann lead",
+    "signedInAs": "Finn konekte kouma {{name}} ( {{partnerId}} ) · bann fwa ki montre dan {{timezone}}",
+    "addLead": "+ Azout diplon",
+    "tabs": {
+      "all": "Tou ( {{count}} )",
+      "pending": "An atant ( {{count}} )",
+      "booked": "Finn rezerve ( {{count}} )"
+    },
+    "searchPlaceholder": "Rod par nom, portab, ou ID lanrezistreman ...",
+    "manageColumns": "Zer bann kolonn",
+    "rowsPerPage": "Bann ranze par paz",
+    "registrationId": "ID lanrezistreman",
+    "emptyState": "Pena indis ankor - anrezistre ou premie.",
+    "noMatch": "Okenn lead pa koresponn ar sa bann filtre-la.",
+    "showing": "Pe montre {{from}} - {{to}} bann lantre {{total}}",
+    "actions": {
+      "preview": "Apersi & miz-a-zour rapid",
+      "history": "Zistwar",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Lapel"
+    },
+    "pagination": {
+      "first": "Premie paz",
+      "previous": "Paz avan",
+      "next": "Paz swivan",
+      "last": "Dernie paz"
+    }
+  },
+  "columns": {
+    "status": "Stati",
+    "assignTo": "Asign a",
+    "booked": "Finn rezerve",
+    "protectionUntil": "Proteksion Ziska"
+  },
+  "booking": {
+    "booked": "Finn rezerve",
+    "pending": "An atant"
+  },
+  "assign": {
+    "unassigned": "Pa finn atribie",
+    "owner": "{{name}} (Proprieter)",
+    "inactive": "{{name}} (inaktif)",
+    "unknownUser": "Itilizater inkoni",
+    "assignedTo": "Finn atribie a {{name}}"
+  },
+  "form": {
+    "addTitle": "Azout diplon",
+    "editTitle": "Modifie Lead",
+    "noPermissionAdd": "Ou pena permision pou anrezistre bann lead.",
+    "noPermissionEdit": "Ou pena permision pou modifie bann lead.",
+    "selectPlaceholder": "Swazir...",
+    "commaSeparated": "Separe par virgil",
+    "phonePlaceholder": "Nimero telefonn",
+    "countryCode": "Kod pei"
+  },
+  "project": {
+    "none": "Pena proze ankor (pa finn refer)",
+    "notInList": "{{project}} (pa dan lalis proze)"
+  },
+  "journey": {
+    "customer": "Klian",
+    "currentOwner": "Proprieter aktyel",
+    "protectionExpiry": "Proteksion finn fini",
+    "leadStatus": "Stati Lead",
+    "scheduled": "Programe",
+    "assignedTo": "Finn atribie a",
+    "referral": "Referans",
+    "builderReason": "Rezon pou konstrikter: {{reason}}",
+    "bookedHint": "Finn rezerve par mason-la - propriete operasionel finn al ver mason-la; ou kalifikasion pou atribision ek komision finn garde.",
+    "notBookedHint": "Bann rezervasion konfirme par mason-la enn fwa ki zot finn aksepte referans-la.",
+    "quickUpdate": "Miz-a-zour rapid",
+    "leadDetails": "Detay lor plon",
+    "progressHistory": "Listwar Progre",
+    "timesIn": "(bann fwa dan {{timezone}} )",
+    "backToMyLeads": "Retourn lor mo bann indis",
+    "editLead": "Modifie Lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "Pa finn refer (pena proze)",
+    "PENDING_BUILDER": "Pe atann mason",
+    "ACCEPTED": "Aksepte par mason",
+    "REJECTED": "Rezete par mason"
+  },
+  "preview": {
+    "ariaLabel": "Apersi plon",
+    "title": "Apersi pou lead",
+    "source": "Sours",
+    "location": "Landrwa",
+    "scheduled": "Programe",
+    "registered": "Anrezistre",
+    "latestNote": "Dernie not",
+    "quickUpdate": "Miz-a-zour rapid",
+    "fullDetails": "Detay konple",
+    "editLead": "Modifie Lead",
+    "history": "Zistwar"
+  },
+  "quick": {
+    "assignedTo": "Finn atribie a",
+    "status": "Stati",
+    "subStatus": "Sou-stati",
+    "selectSubStatus": "Seleksionn sou-stati...",
+    "none": "Okenn",
+    "scheduledAt": "Programe a",
+    "localTime": "ler lokal",
+    "note": "Not",
+    "notePlaceholder": "Ki finn arive lor sa lapel / vizit-la? (opsionel)",
+    "updateStatus": "Miz-a-zour Stati",
+    "statusUpdated": "Stati finn met azour",
+    "bookedLocked": "Sa lead-la finn rezerve - so stati nepli kapav sanze.",
+    "viewOnly": "Ou kapav get sa lead-la, me ou rol pa kapav met li azour."
+  },
+  "history": {
+    "title": "Listwar - {{registrationId}}",
+    "tabs": {
+      "all": "Tou",
+      "status": "Stati",
+      "assignment": "Mision",
+      "notes": "Bann not"
+    },
+    "doneBy": "Finn fer par {{actor}}",
+    "system": "Sistem",
+    "platforms": {
+      "System": "Sistem",
+      "External": "Andeor",
+      "Web": "Web",
+      "Mobile": "Mobil"
+    },
+    "added": "finn azoute",
+    "updated": "finn met azour",
+    "empty": "(vid)",
+    "noHistory": "Pena listwar dan sa kategori-la ankor.",
+    "fieldLabels": {
+      "stage": "Stati",
+      "subStatus": "Sou-stati",
+      "scheduledAt": "Planing",
+      "notes": "Bann not",
+      "assignedTo": "Finn atribie a"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Finn resevwar lanrezistreman partener",
+      "DUPLICATE_CHECK_COMPLETED": "Verifikasion doub finn konplete - pa finn trouv okenn doub aktiv",
+      "REGISTRATION_ACCEPTED": "Finn aksepte lanrezistreman",
+      "PROTECTION_GRANTED_one": "{{count}} -zour proteksion finn done",
+      "PROTECTION_GRANTED_other": "{{count}} -zour proteksion finn done",
+      "REGISTRATION_ATTEMPT_REJECTED": "Tantativ lanrezistreman doub par {{partnerId}} finn rezete",
+      "LEAD_DETAILS_UPDATED_one": "Finn met azour domenn {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "Finn met azour bann domenn {{count}}",
+      "STAGE_UPDATED": "Stati finn met azour pou {{status}}",
+      "LEAD_ASSIGNED": "Finn atribie a {{name}}",
+      "LEAD_UNASSIGNED": "Pa finn atribie",
+      "BOOKING_COMPLETED": "Rezervasion finn konplete",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Propriete operasionel finn transfer a Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribision partener finn prezerve",
+      "COMMISSION_ELIGIBILITY_CREATED": "Finn kree elizibilite pou komision",
+      "HANDOVER_COMPLETED": "Remet finn konplete",
+      "REFERRAL_ACCEPTED": "Konstrikter finn aksepte referans-la",
+      "REFERRAL_REJECTED": "Konstrikter finn rezet referans-la. Rezon: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin finn pibliye proteksion doub boner. Rezon: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin finn re-asign lanrezistreman depi {{from}} ziska {{to}} . Rezon: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Zer bann kolonn",
+    "hint": "Trenn pou re-ord · verifie pou montre",
+    "showAll": "Montre tou",
+    "resetDefault": "Remet lor defo"
+  },
+  "filters": {
+    "title": "Filtre",
+    "allProjects": "Tou bann proze",
+    "any": "Ninport",
+    "noFields": "Okenn lezot domenn ki kapav filtre pa ankor aktive (Paramet > Lead).",
+    "clearAll": "Efas tou"
+  },
+  "phone": {
+    "MISSING": "Bizin nimero telefonn.",
+    "INVALID": "Met enn nimero telefonn valid silvouple.",
+    "TOO_SHORT": "Nimero telefonn tro kourt.",
+    "TOO_LONG": "Nimero telefonn tro long.",
+    "INVALID_FOR_COUNTRY": "Sa nimero telefonn-la pa valid pou {{country}} .",
+    "COUNTRY_MISMATCH": "Silvouple swazir bon kod pei.",
+    "NOT_MOBILE": "Silvouple met enn nimero portab, pa enn telefonn fix."
+  }
+}

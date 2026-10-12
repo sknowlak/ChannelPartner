@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Matamata ni Tara",
+    "referrals": "Veidusimaki",
+    "builderLogin": "Login ni Dauniveiqaravi",
+    "partnerLogin": "Login ni itokani ni sala"
+  },
+  "login": {
+    "title": "Saini ni tara vale",
+    "hint": "Na akaude ni tara vale e bulia na Leadrat . Taroga na nomu vakailesilesi kevaka e sega vei iko e dua."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Waraka tiko na nomu vakatulewa .",
+    "ACCEPTED": "Ciqomi",
+    "REJECTED": "Sa sega ni ciqomi"
+  },
+  "list": {
+    "title": "Veidusimaki",
+    "allProjects": "Na veicakacaka kece",
+    "allStatuses": "Na ituvaki kece",
+    "count_one": "{{count}} veivakauqeti",
+    "count_other": "{{count}} veivakauqeti",
+    "columns": {
+      "referral": "Veidusimaki",
+      "customer": "Kasitama",
+      "project": "Itavi",
+      "sourcePartner": "Veitokani ni ivurevure",
+      "status": "ITuvatuva",
+      "booking": "Vakavodoki",
+      "registered": "Rejisitataki"
+    },
+    "booked": "Sa vakarautaki",
+    "empty": "Se bera ni dua na veivakauqeti."
+  },
+  "detail": {
+    "customer": "Kasitama",
+    "sourcePartner": "Veitokani ni ivurevure",
+    "attributionNote": "(vakatutu - sega ni rawa ni veisautaki)",
+    "leadStatus": "iTuvaki ni Veiliutaki",
+    "protectedUntil": "Taqomaki Me yacova na 2019.",
+    "referral": "Veidusimaki",
+    "reason": "Vuna: {{reason}}",
+    "booking": "Vakavodoki",
+    "bookedOwner": "Vakavoutaki - o iko na itaukei ni cakacaka",
+    "notBooked": "Sega ni volai",
+    "sharedAfterBooking": "Wasei ni oti na vakacuru ilavo",
+    "accept": "Ciqoma na veivakauqeti",
+    "confirmBooking": "Vakadeitaka na Buking",
+    "reject": "Cakitaka na veivakadonui",
+    "rejectReasonLabel": "Vuna ni kena sega ni vakadonui (vakaraitaki vua na itokani) *",
+    "rejectConfirm": "Cata",
+    "confirmBookingPrompt": "Vakadeitaka na vakacuruilavo? Na taukeni ni cakacaka e toso vei iko ka sa yaco na itokani me rawata na komisi.",
+    "notice": {
+      "booked": "Sa vakadeitaki na kena vakarautaki.",
+      "accepted": "Sa ciqomi na veivakauqeti.",
+      "rejected": "E sega ni vakadonui na veivakauqeti."
+    },
+    "backToReferrals": "Lesu tale ki na veivakauqeti"
+  },
+  "history": {
+    "title": "Itukutuku makawa",
+    "actor": {
+      "system": "Ivakarau",
+      "partner": "Veitokani ni sala",
+      "admin": "Leadrat ni veiliutaki"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Sa ciqomi na rejisita ni itokani",
+      "DUPLICATE_CHECK_COMPLETED": "Sa vakacavari na jeke vakarua - sega ni kunei na vakaruataki",
+      "REGISTRATION_ACCEPTED": "Sa ciqomi na rejisita",
+      "PROTECTION_GRANTED_one": "{{count}} -siga ni veitaqomaki ka soli",
+      "PROTECTION_GRANTED_other": "{{count}} -siga ni veitaqomaki ka soli",
+      "STAGE_UPDATED": "Vakavoutaki na ituvaki ki na {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Vakavoutaki {{count}} vanua",
+      "LEAD_DETAILS_UPDATED_other": "Vakavoutaki na vanua ni {{count}}",
+      "LEAD_ASSIGNED": "Lesi ki na {{name}}",
+      "LEAD_UNASSIGNED": "Sega ni lesi",
+      "REFERRAL_ACCEPTED": "A ciqoma na dau tara vale na veivakauqeti",
+      "REFERRAL_REJECTED": "E sega ni ciqoma o Builder na veivakauqeti. Vuna: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Saga ni rejisita vakarua mai vei {{partner}} sega ni ciqomi",
+      "BOOKING_COMPLETED": "Sa vakacavari na buking",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Na taukeni ni cakacaka e toso ki na Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Na veivakadonui ni itokani e maroroi",
+      "COMMISSION_ELIGIBILITY_CREATED": "Sa buli na veivakadonui ni komisoni",
+      "HANDOVER_COMPLETED": "Sa oti na soli",
+      "ADMIN_PROTECTION_RELEASED": "Admin vagalalataka na itataqomaki vakarua ena gauna taumada. Vuna: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin sa lesia tale na rejisita mai na {{from}} ki na {{to}} . Vuna: {{reason}}"
+    }
+  }
+}

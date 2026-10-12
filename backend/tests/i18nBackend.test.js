@@ -29,7 +29,7 @@ describe('notification default texts', () => {
   });
 
   test('unknown or missing language falls back to English', () => {
-    expect(notificationTemplates('fr')).toBe(NOTIFICATION_TEMPLATES.en);
+    expect(notificationTemplates('xx')).toBe(NOTIFICATION_TEMPLATES.en);
     expect(notificationTemplates('')).toBe(NOTIFICATION_TEMPLATES.en);
   });
 

@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Builder Portal",
+    "referrals": "Referrals",
+    "builderLogin": "Builder Login",
+    "partnerLogin": "Têkeve Partner Channel"
+  },
+  "login": {
+    "title": "Avaker têkevinê",
+    "hint": "Hesabên Builder ji hêla Leadrat ve têne afirandin. Ji rêveberê xwe bipirsin eger we tune."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Li benda biryara we ne",
+    "ACCEPTED": "Qebûl kirin",
+    "REJECTED": "Redkirin"
+  },
+  "list": {
+    "title": "Referrals",
+    "allProjects": "Hemû projeyên",
+    "allStatuses": "Hemû statuyên",
+    "count_one": "{{count}} referans",
+    "count_other": "{{count}} referans",
+    "columns": {
+      "referral": "Referral",
+      "customer": "Miştirî",
+      "project": "Rêvename",
+      "sourcePartner": "Çavkanî Partner",
+      "status": "Cî",
+      "booking": "Booking",
+      "registered": "Qeyd kirin"
+    },
+    "booked": "Veqetandin",
+    "empty": "Hê referans tune."
+  },
+  "detail": {
+    "customer": "Miştirî",
+    "sourcePartner": "Çavkanî Partner",
+    "attributionNote": "(navnîşan - nayê guhertin)",
+    "leadStatus": "Lead Status",
+    "protectedUntil": "Parastin Heta",
+    "referral": "Referral",
+    "reason": "Sedem: {{reason}}",
+    "booking": "Booking",
+    "bookedOwner": "Veqetandî - hûn xwediyê operasyonê ne",
+    "notBooked": "Ne hatiye veqetandin",
+    "sharedAfterBooking": "Piştî veqetandinê parve kirin",
+    "accept": "Referral qebûl bikin",
+    "confirmBooking": "Veqetandinê piştrast bikin",
+    "reject": "Referral red bike",
+    "rejectReasonLabel": "Sedema redkirinê (ji hevjînê re tê nîşandan) *",
+    "rejectConfirm": "Refzkirin",
+    "confirmBookingPrompt": "Veqetandinê piştrast bike? Xwedîderketina operasyonê ji we re diçe û hevkar ji bo komîsyonê dibe.",
+    "notice": {
+      "booked": "Booking piştrast kir.",
+      "accepted": "Referral qebûl kirin.",
+      "rejected": "Serlêdan hat redkirin."
+    },
+    "backToReferrals": "Vegere Referrals"
+  },
+  "history": {
+    "title": "Dîrok",
+    "actor": {
+      "system": "Sîstem",
+      "partner": "Hevkarê kanalê",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Qeydkirina hevkarê wergirt",
+      "DUPLICATE_CHECK_COMPLETED": "Kontrola ducar qediya - kopiyek çalak nehat dîtin",
+      "REGISTRATION_ACCEPTED": "Registration qebûl kirin",
+      "PROTECTION_GRANTED_one": "{{count}} -roja parastinê hat dayîn",
+      "PROTECTION_GRANTED_other": "{{count}} -roja parastinê hat dayîn",
+      "STAGE_UPDATED": "Rewş li {{stage}} hat nûkirin",
+      "LEAD_DETAILS_UPDATED_one": "Qada {{count}} hat nûkirin",
+      "LEAD_DETAILS_UPDATED_other": "Qadan {{count}} hatin nûkirin",
+      "LEAD_ASSIGNED": "Ji {{name}} re hatî peywirdar kirin",
+      "LEAD_UNASSIGNED": "Bê tayînkirin",
+      "REFERRAL_ACCEPTED": "Avaker sewqê qebûl kir",
+      "REFERRAL_REJECTED": "Avakar sewqî red kir. Sedem: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Hewldana qeydkirinê ya ducar ji hêla {{partner}} ve hate red kirin",
+      "BOOKING_COMPLETED": "Veqetandin qediya",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Xwedîderketina operasyonê ji Builder re hat veguheztin",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Navnîşana Partner parastiye",
+      "COMMISSION_ELIGIBILITY_CREATED": "Destûra komîsyonê hate afirandin",
+      "HANDOVER_COMPLETED": "Radestkirin qediya",
+      "ADMIN_PROTECTION_RELEASED": "Admin parastina ducar zû berdan. Sedem: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin qeyda ji {{from}} ji bo {{to}} ji nû ve tayîn kir. Sedem: {{reason}}"
+    }
+  }
+}

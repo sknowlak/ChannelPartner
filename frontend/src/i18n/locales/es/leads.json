@@ -1,0 +1,190 @@
+{
+  "list": {
+    "title": "Mis clientes potenciales",
+    "signedInAs": "Iniciado sesión como {{name}} ( {{partnerId}} ) · horas mostradas en {{timezone}}",
+    "addLead": "+ Agregar cliente potencial",
+    "tabs": {
+      "all": "Todos ( {{count}} )",
+      "pending": "Pendiente ( {{count}} )",
+      "booked": "Reservado ( {{count}} )"
+    },
+    "searchPlaceholder": "Buscar por nombre, móvil o ID de registro...",
+    "manageColumns": "Administrar columnas",
+    "rowsPerPage": "Filas por página",
+    "registrationId": "ID de registro",
+    "emptyState": "Aún no hay clientes potenciales: registre el primero.",
+    "noMatch": "Ningún cliente potencial coincide con estos filtros.",
+    "showing": "Mostrando {{from}} - {{to}} de {{total}} entradas",
+    "actions": {
+      "preview": "Vista previa y actualización rápida",
+      "history": "Historia",
+      "email": "Correo electrónico",
+      "whatsapp": "WhatsApp",
+      "call": "Llamar"
+    },
+    "pagination": {
+      "first": "Primera página",
+      "previous": "Pagina anterior",
+      "next": "Página siguiente",
+      "last": "Última página"
+    }
+  },
+  "columns": {
+    "status": "Estado",
+    "assignTo": "Asignar a",
+    "booked": "Reservado",
+    "protectionUntil": "Protección hasta"
+  },
+  "booking": {
+    "booked": "Reservado",
+    "pending": "Pendiente"
+  },
+  "assign": {
+    "unassigned": "No asignado",
+    "owner": "{{name}} (Propietario)",
+    "inactive": "{{name}} (inactivo)",
+    "unknownUser": "Usuario desconocido",
+    "assignedTo": "Asignado a {{name}}"
+  },
+  "form": {
+    "addTitle": "Agregar cliente potencial",
+    "editTitle": "Editar cliente potencial",
+    "noPermissionAdd": "No tienes permiso para registrar clientes potenciales.",
+    "noPermissionEdit": "No tienes permiso para editar clientes potenciales.",
+    "selectPlaceholder": "Seleccionar...",
+    "commaSeparated": "Separados por comas",
+    "phonePlaceholder": "Número de teléfono",
+    "countryCode": "Código del país"
+  },
+  "project": {
+    "none": "Ningún proyecto aún (no referido)",
+    "notInList": "{{project}} (no en la lista de proyectos)"
+  },
+  "journey": {
+    "customer": "Cliente",
+    "currentOwner": "Propietario actual",
+    "protectionExpiry": "Caducidad de la protección",
+    "leadStatus": "Estado del cliente potencial",
+    "scheduled": "Programado",
+    "assignedTo": "Asignado a",
+    "referral": "Remisión",
+    "builderReason": "Razón del constructor: {{reason}}",
+    "bookedHint": "Reservado por el constructor: la propiedad operativa ha pasado al constructor; su atribución y elegibilidad para comisiones se mantienen.",
+    "notBookedHint": "Las reservas son confirmadas por el constructor una vez que aceptan la recomendación.",
+    "quickUpdate": "Actualización rápida",
+    "leadDetails": "Detalles del cliente potencial",
+    "progressHistory": "Historial de progreso",
+    "timesIn": "(veces en {{timezone}} )",
+    "backToMyLeads": "Volver a Mis clientes potenciales",
+    "editLead": "Editar cliente potencial"
+  },
+  "referral": {
+    "NOT_REFERRED": "No referido (sin proyecto)",
+    "PENDING_BUILDER": "esperando al constructor",
+    "ACCEPTED": "Aceptado por el constructor",
+    "REJECTED": "Rechazado por el constructor"
+  },
+  "preview": {
+    "ariaLabel": "Vista previa del cliente potencial",
+    "title": "Vista previa del cliente potencial",
+    "source": "Fuente",
+    "location": "Ubicación",
+    "scheduled": "Programado",
+    "registered": "Registrado",
+    "latestNote": "Última nota",
+    "quickUpdate": "Actualización rápida",
+    "fullDetails": "Detalles completos",
+    "editLead": "Editar cliente potencial",
+    "history": "Historia"
+  },
+  "quick": {
+    "assignedTo": "Asignado a",
+    "status": "Estado",
+    "subStatus": "Subestado",
+    "selectSubStatus": "Seleccionar subestado...",
+    "none": "Ninguno",
+    "scheduledAt": "Programado en",
+    "localTime": "hora local",
+    "note": "Nota",
+    "notePlaceholder": "¿Qué pasó en esta llamada/visita? (opcional)",
+    "updateStatus": "Estado de actualización",
+    "statusUpdated": "Estado actualizado",
+    "bookedLocked": "Este cliente potencial está reservado; su estado ya no se puede cambiar.",
+    "viewOnly": "Puede ver este cliente potencial, pero su función no puede actualizarlo."
+  },
+  "history": {
+    "title": "Historial: {{registrationId}}",
+    "tabs": {
+      "all": "Todo",
+      "status": "Estado",
+      "assignment": "Asignación",
+      "notes": "Notas"
+    },
+    "doneBy": "Hecho por {{actor}}",
+    "system": "Sistema",
+    "platforms": {
+      "System": "Sistema",
+      "External": "Externo",
+      "Web": "Web",
+      "Mobile": "Móvil"
+    },
+    "added": "agregado",
+    "updated": "actualizado",
+    "empty": "(vacío)",
+    "noHistory": "Aún no hay antecedentes en esta categoría.",
+    "fieldLabels": {
+      "stage": "Estado",
+      "subStatus": "Subestado",
+      "scheduledAt": "Cronograma",
+      "notes": "Notas",
+      "assignedTo": "Asignado a"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Registro de socio recibido",
+      "DUPLICATE_CHECK_COMPLETED": "Verificación de duplicados completada: no se encontró ningún duplicado activo",
+      "REGISTRATION_ACCEPTED": "Registro aceptado",
+      "PROTECTION_GRANTED_one": "{{count}} -día de protección concedida",
+      "PROTECTION_GRANTED_many": "{{count}} -día de protección concedida",
+      "PROTECTION_GRANTED_other": "{{count}} -día de protección concedida",
+      "REGISTRATION_ATTEMPT_REJECTED": "Intento de registro duplicado por parte de {{partnerId}} rechazado",
+      "LEAD_DETAILS_UPDATED_one": "Campo {{count}} actualizado",
+      "LEAD_DETAILS_UPDATED_many": "Campos {{count}} actualizados",
+      "LEAD_DETAILS_UPDATED_other": "Campos {{count}} actualizados",
+      "STAGE_UPDATED": "Estado actualizado a {{status}}",
+      "LEAD_ASSIGNED": "Asignado a {{name}}",
+      "LEAD_UNASSIGNED": "No asignado",
+      "BOOKING_COMPLETED": "Reserva completada",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Propiedad operativa transferida al constructor",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribución de socio conservada",
+      "COMMISSION_ELIGIBILITY_CREATED": "Elegibilidad para la comisión creada",
+      "HANDOVER_COMPLETED": "Entrega completada",
+      "REFERRAL_ACCEPTED": "El constructor aceptó la referencia.",
+      "REFERRAL_REJECTED": "El constructor rechazó la remisión. Razón: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "El administrador lanzó la protección duplicada anticipadamente. Razón: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "El administrador reasignó el registro de {{from}} a {{to}} . Razón: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Administrar columnas",
+    "hint": "Arrastrar para reordenar · marcar para mostrar",
+    "showAll": "Mostrar todo",
+    "resetDefault": "Restablecer los valores predeterminados"
+  },
+  "filters": {
+    "title": "Filtros",
+    "allProjects": "Todos los proyectos",
+    "any": "Cualquier",
+    "noFields": "Aún no hay otros campos filtrables habilitados (Configuración > Cliente potencial).",
+    "clearAll": "Borrar todo"
+  },
+  "phone": {
+    "MISSING": "Se requiere número de teléfono.",
+    "INVALID": "Por favor ingrese un número de teléfono válido.",
+    "TOO_SHORT": "El número de teléfono es demasiado corto.",
+    "TOO_LONG": "El número de teléfono es demasiado largo.",
+    "INVALID_FOR_COUNTRY": "Este número de teléfono no es válido para {{country}} .",
+    "COUNTRY_MISMATCH": "Seleccione el código de país correcto.",
+    "NOT_MOBILE": "Ingrese un número de teléfono móvil, no un teléfono fijo."
+  }
+}

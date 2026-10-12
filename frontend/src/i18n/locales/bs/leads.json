@@ -1,0 +1,190 @@
+{
+  "list": {
+    "title": "My Leads",
+    "signedInAs": "Prijavljen kao {{name}} ( {{partnerId}} ) · prikazana vremena u {{timezone}}",
+    "addLead": "+ Dodaj potencijalnog klijenta",
+    "tabs": {
+      "all": "sve ( {{count}} )",
+      "pending": "Na čekanju ( {{count}} )",
+      "booked": "Rezervirano ( {{count}} )"
+    },
+    "searchPlaceholder": "Traži po imenu, mobilnom telefonu ili registracijskom ID ...",
+    "manageColumns": "Upravljanje kolonama",
+    "rowsPerPage": "Redova po stranici",
+    "registrationId": "Registracijski ID",
+    "emptyState": "Još nema potencijalnih klijenata - registrirajte svoj prvi.",
+    "noMatch": "Nijedan potencijalni klijent ne odgovara ovim filterima.",
+    "showing": "Prikaz {{from}} - {{to}} od {{total}} unosa",
+    "actions": {
+      "preview": "Pregled i brzo ažuriranje",
+      "history": "Istorija",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Zovi"
+    },
+    "pagination": {
+      "first": "Prva stranica",
+      "previous": "Prethodna stranica",
+      "next": "Sledeća stranica",
+      "last": "Zadnja stranica"
+    }
+  },
+  "columns": {
+    "status": "Status",
+    "assignTo": "Assign To",
+    "booked": "Rezervisano",
+    "protectionUntil": "Zaštita do"
+  },
+  "booking": {
+    "booked": "Rezervisano",
+    "pending": "Na čekanju"
+  },
+  "assign": {
+    "unassigned": "Nedodijeljeno",
+    "owner": "{{name}} (vlasnik)",
+    "inactive": "{{name}} (neaktivan)",
+    "unknownUser": "Nepoznati korisnik",
+    "assignedTo": "Dodijeljeno na {{name}}"
+  },
+  "form": {
+    "addTitle": "Add Lead",
+    "editTitle": "Edit Lead",
+    "noPermissionAdd": "Nemate dozvolu za registraciju potencijalnih klijenata.",
+    "noPermissionEdit": "Nemate dozvolu za uređivanje potencijalnih klijenata.",
+    "selectPlaceholder": "Odaberite...",
+    "commaSeparated": "Zarez odvojeno",
+    "phonePlaceholder": "Broj telefona",
+    "countryCode": "Kod zemlje"
+  },
+  "project": {
+    "none": "Još nema projekta (nije upućen)",
+    "notInList": "{{project}} (nije na listi projekata)"
+  },
+  "journey": {
+    "customer": "Kupac",
+    "currentOwner": "Trenutni vlasnik",
+    "protectionExpiry": "Istek zaštite",
+    "leadStatus": "Lead Status",
+    "scheduled": "Zakazano",
+    "assignedTo": "Assigned To",
+    "referral": "Preporuka",
+    "builderReason": "Razlog graditelja: {{reason}}",
+    "bookedHint": "Knjižio graditelj - operativno vlasništvo je prešlo na graditelja; vaša atribucija i podobnost provizije se čuvaju.",
+    "notBookedHint": "Rezervacije su potvrđene od strane graditelja nakon što prihvate preporuku.",
+    "quickUpdate": "Quick Update",
+    "leadDetails": "Lead Details",
+    "progressHistory": "Progress History",
+    "timesIn": "(puta u {{timezone}} )",
+    "backToMyLeads": "Nazad na Moje potencijalne strane",
+    "editLead": "Edit Lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "Nije upućen (bez projekta)",
+    "PENDING_BUILDER": "Čeka se građevinar",
+    "ACCEPTED": "Prihvaćeno od strane građevinara",
+    "REJECTED": "Odbijeno od strane graditelja"
+  },
+  "preview": {
+    "ariaLabel": "Lead preview",
+    "title": "Lead Preview",
+    "source": "Izvor",
+    "location": "Lokacija",
+    "scheduled": "Zakazano",
+    "registered": "Registrovan",
+    "latestNote": "Latest Note",
+    "quickUpdate": "Quick Update",
+    "fullDetails": "Puni detalji",
+    "editLead": "Edit Lead",
+    "history": "Istorija"
+  },
+  "quick": {
+    "assignedTo": "Assigned To",
+    "status": "Status",
+    "subStatus": "Pod-status",
+    "selectSubStatus": "Odaberite podstatus...",
+    "none": "Nema",
+    "scheduledAt": "Zakazano u",
+    "localTime": "lokalnom vremenu",
+    "note": "Napomena",
+    "notePlaceholder": "Šta se dogodilo na ovom pozivu/posjeti? (opciono)",
+    "updateStatus": "Ažuriraj status",
+    "statusUpdated": "Status ažuriran",
+    "bookedLocked": "Ovaj potencijalni klijent je rezerviran - njegov status se više ne može promijeniti.",
+    "viewOnly": "Možete vidjeti ovu potencijalnu osobu, ali je vaša uloga ne može ažurirati."
+  },
+  "history": {
+    "title": "Historija - {{registrationId}}",
+    "tabs": {
+      "all": "Sve",
+      "status": "Status",
+      "assignment": "Zadatak",
+      "notes": "Bilješke"
+    },
+    "doneBy": "Uradio {{actor}}",
+    "system": "Sistem",
+    "platforms": {
+      "System": "Sistem",
+      "External": "Eksterni",
+      "Web": "Web",
+      "Mobile": "Mobilni"
+    },
+    "added": "dodano",
+    "updated": "ažurirano",
+    "empty": "(prazno)",
+    "noHistory": "Još uvijek nema historije u ovoj kategoriji.",
+    "fieldLabels": {
+      "stage": "Status",
+      "subStatus": "Pod-status",
+      "scheduledAt": "Raspored",
+      "notes": "Bilješke",
+      "assignedTo": "Assigned To"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Primljena registracija partnera",
+      "DUPLICATE_CHECK_COMPLETED": "Provjera duplikata je završena - aktivni duplikat nije pronađen",
+      "REGISTRATION_ACCEPTED": "Registracija prihvaćena",
+      "PROTECTION_GRANTED_one": "Zaštita {{count}} dana je odobrena",
+      "PROTECTION_GRANTED_few": "Zaštita {{count}} dana je odobrena",
+      "PROTECTION_GRANTED_other": "Zaštita {{count}} dana je odobrena",
+      "REGISTRATION_ATTEMPT_REJECTED": "Dvostruki pokušaj registracije od strane {{partnerId}} je odbijen",
+      "LEAD_DETAILS_UPDATED_one": "Ažurirano polje {{count}}",
+      "LEAD_DETAILS_UPDATED_few": "Ažurirano {{count}} polja",
+      "LEAD_DETAILS_UPDATED_other": "Ažurirano {{count}} polja",
+      "STAGE_UPDATED": "Status ažuriran na {{status}}",
+      "LEAD_ASSIGNED": "Dodijeljeno na {{name}}",
+      "LEAD_UNASSIGNED": "Nedodijeljeno",
+      "BOOKING_COMPLETED": "Rezervacija je završena",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operativno vlasništvo preneseno na Graditelja",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partnerska atribucija je sačuvana",
+      "COMMISSION_ELIGIBILITY_CREATED": "Podobnost provizije stvorena",
+      "HANDOVER_COMPLETED": "Primopredaja obavljena",
+      "REFERRAL_ACCEPTED": "Graditelj je prihvatio preporuku",
+      "REFERRAL_REJECTED": "Graditelj je odbio uputnicu. Razlog: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Administrator je ranije objavio zaštitu od duplikata. Razlog: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Administrator je ponovo dodijelio registraciju sa {{from}} na {{to}} . Razlog: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Upravljanje kolonama",
+    "hint": "Prevucite za promjenu redoslijeda · potvrdite za prikaz",
+    "showAll": "Prikaži sve",
+    "resetDefault": "Vrati na zadano"
+  },
+  "filters": {
+    "title": "Filteri",
+    "allProjects": "Svi projekti",
+    "any": "Bilo koji",
+    "noFields": "Nijedna druga polja koja se mogu filtrirati još nisu omogućena (Postavke > Potencijal).",
+    "clearAll": "Obriši sve"
+  },
+  "phone": {
+    "MISSING": "Broj telefona je obavezan.",
+    "INVALID": "Unesite važeći broj telefona.",
+    "TOO_SHORT": "Broj telefona je prekratak.",
+    "TOO_LONG": "Broj telefona je predugačak.",
+    "INVALID_FOR_COUNTRY": "Ovaj broj telefona nije važeći za {{country}} .",
+    "COUNTRY_MISMATCH": "Molimo odaberite ispravan kod zemlje.",
+    "NOT_MOBILE": "Unesite broj mobilnog telefona, a ne fiksnog."
+  }
+}

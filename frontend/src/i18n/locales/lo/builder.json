@@ -1,0 +1,87 @@
+{
+  "shell": {
+    "portal": "Builder Portal",
+    "referrals": "ການອ້າງອີງ",
+    "builderLogin": "Builder ເຂົ້າສູ່ລະບົບ",
+    "partnerLogin": "ຊ່ອງທາງການເຂົ້າສູ່ລະບົບຄູ່ຮ່ວມງານ"
+  },
+  "login": {
+    "title": "Builder ເຂົ້າສູ່ລະບົບ",
+    "hint": "ບັນຊີຜູ້ສ້າງແມ່ນສ້າງໂດຍ Leadrat . ຖາມຜູ້ເບິ່ງແຍງລະບົບຂອງເຈົ້າຖ້າທ່ານບໍ່ມີ."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "ລໍຖ້າການຕັດສິນໃຈຂອງເຈົ້າ",
+    "ACCEPTED": "ຍອມຮັບ",
+    "REJECTED": "ປະຕິເສດ"
+  },
+  "list": {
+    "title": "ການອ້າງອີງ",
+    "allProjects": "ໂຄງການທັງຫມົດ",
+    "allStatuses": "ສະຖານະທັງໝົດ",
+    "count_other": "{{count}} ການອ້າງອີງ",
+    "columns": {
+      "referral": "ການອ້າງອີງ",
+      "customer": "ລູກຄ້າ",
+      "project": "ໂຄງການ",
+      "sourcePartner": "ຄູ່ຮ່ວມງານແຫຼ່ງ",
+      "status": "ສະຖານະ",
+      "booking": "ການຈອງ",
+      "registered": "ລົງທະບຽນ"
+    },
+    "booked": "ຈອງແລ້ວ",
+    "empty": "ບໍ່ມີການອ້າງອີງເທື່ອ."
+  },
+  "detail": {
+    "customer": "ລູກຄ້າ",
+    "sourcePartner": "ຄູ່ຮ່ວມງານແຫຼ່ງ",
+    "attributionNote": "(ຄຸນສົມບັດ - ບໍ່ສາມາດປ່ຽນແປງໄດ້)",
+    "leadStatus": "ສະຖານະຜູ້ນໍາ",
+    "protectedUntil": "ປົກປ້ອງຈົນກ່ວາ",
+    "referral": "ການອ້າງອີງ",
+    "reason": "ເຫດຜົນ: {{reason}}",
+    "booking": "ການຈອງ",
+    "bookedOwner": "ຈອງ - ທ່ານເປັນເຈົ້າຂອງການດໍາເນີນງານ",
+    "notBooked": "ບໍ່ໄດ້ຈອງ",
+    "sharedAfterBooking": "ແບ່ງປັນຫຼັງຈາກການຈອງ",
+    "accept": "ຍອມຮັບການອ້າງອີງ",
+    "confirmBooking": "ຢືນຢັນການຈອງ",
+    "reject": "ປະຕິເສດການອ້າງອີງ",
+    "rejectReasonLabel": "ເຫດຜົນສໍາລັບການປະຕິເສດ (ສະແດງໃຫ້ເຫັນກັບຄູ່ຮ່ວມງານ) *",
+    "rejectConfirm": "ປະຕິເສດ",
+    "confirmBookingPrompt": "ຢືນຢັນການຈອງບໍ? ສິດຄວາມເປັນເຈົ້າຂອງໃນການປະຕິບັດງານຈະຍ້າຍໄປຫາທ່ານ ແລະຄູ່ຮ່ວມງານຈະມີສິດໄດ້ຮັບຄ່ານາຍໜ້າ.",
+    "notice": {
+      "booked": "ຢືນຢັນການຈອງ.",
+      "accepted": "ຍອມຮັບການອ້າງອີງ.",
+      "rejected": "ປະຕິເສດການອ້າງອີງ."
+    },
+    "backToReferrals": "ກັບໄປທີ່ການອ້າງອີງ"
+  },
+  "history": {
+    "title": "ປະຫວັດສາດ",
+    "actor": {
+      "system": "ລະບົບ",
+      "partner": "ຄູ່ຮ່ວມງານຊ່ອງ",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "ໄດ້ຮັບການລົງທະບຽນຄູ່ຮ່ວມງານ",
+      "DUPLICATE_CHECK_COMPLETED": "ກວດສອບການຊໍ້າກັນສຳເລັດແລ້ວ - ບໍ່ພົບການຊໍ້າກັນທີ່ເຮັດວຽກຢູ່",
+      "REGISTRATION_ACCEPTED": "ຍອມຮັບການລົງທະບຽນ",
+      "PROTECTION_GRANTED_other": "ໄດ້ຮັບການປົກປ້ອງ {{count}} - ມື້",
+      "STAGE_UPDATED": "ອັບເດດສະຖານະເປັນ {{stage}} ແລ້ວ",
+      "LEAD_DETAILS_UPDATED_other": "ອັບເດດ {{count}} ຊ່ອງ",
+      "LEAD_ASSIGNED": "ມອບໝາຍໃຫ້ {{name}}",
+      "LEAD_UNASSIGNED": "ບໍ່ໄດ້ມອບໝາຍ",
+      "REFERRAL_ACCEPTED": "Builder ຍອມຮັບການສົ່ງຕໍ່",
+      "REFERRAL_REJECTED": "Builder ປະຕິເສດການອ້າງອີງ. ເຫດຜົນ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "ຄວາມພະຍາຍາມລົງທະບຽນຊໍ້າກັນໂດຍ {{partner}} ຖືກປະຕິເສດ",
+      "BOOKING_COMPLETED": "ການຈອງສຳເລັດແລ້ວ",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "ການເປັນເຈົ້າຂອງການປະຕິບັດງານຖືກໂອນໄປໃຫ້ Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "ສະຫງວນຄຸນສົມບັດຮຸ້ນສ່ວນ",
+      "COMMISSION_ELIGIBILITY_CREATED": "ສ້າງການມີສິດໄດ້ຮັບຄະນະກໍາມະການ",
+      "HANDOVER_COMPLETED": "ການມອບສຳເລັດແລ້ວ",
+      "ADMIN_PROTECTION_RELEASED": "Admin ປ່ອຍການປົກປ້ອງຊໍ້າກັນກ່ອນໄວ. ເຫດຜົນ: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "ຜູ້ເບິ່ງແຍງໄດ້ມອບໝາຍການລົງທະບຽນຄືນໃໝ່ຈາກ {{from}} ເປັນ {{to}} . ເຫດຜົນ: {{reason}}"
+    }
+  }
+}

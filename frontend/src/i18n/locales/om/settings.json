@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Sajoo",
+    "noPermission": "Sajoo bulchuuf hayyama hin qabdu."
+  },
+  "categories": {
+    "lead": "Geggeessi",
+    "user": "Fayyadamaa",
+    "integrations": "Ida’amuu"
+  },
+  "leadTabs": {
+    "fields": "Dirreewwan",
+    "statuses": "Haalawwan & Haala Xiqqaa",
+    "notifications": "Beeksisa & Sagantaa"
+  },
+  "fields": {
+    "leadIntro": "Unkaa qabachuu dursaa qindeessii: man'eewwan dandeessisi/dhoksi, barbaachisoo mallatteessi, ykn man'eewwan amala mataa keetii dabali.",
+    "userIntro": "Unkaa Miseensa Garee Dabaluu/Gulaali qindeessii: man'eewwan dandeessisi/dhorsi, barbaachisoo mallatteessi, ykn man'eewwan amala mataa keetii dabali.",
+    "addCustomField": "+ Dirree Aadaa Dabaluu",
+    "fieldLabel": "Asxaa Dirree",
+    "group": "Garee",
+    "groupPlaceholderLead": "fkn Odeeffannoo Gaaffii",
+    "groupPlaceholderUser": "fkn Bal’ina Dabalataa",
+    "dataType": "Gosa Deetaa",
+    "options": "Filannoowwan (komaadhaan adda baafame) .",
+    "requiredLead": "Barbaachisaa - michoonni garee keessan keessa jiran dursa galmeessisuuf kana guutuu qabu",
+    "requiredUser": "Barbaachisaa - yeroo miseensa garee dabalamu guutamuu qaba",
+    "creating": "Uumuu...",
+    "createField": "Dirree Uumuu",
+    "columns": {
+      "field": "Dirree",
+      "group": "Garee",
+      "type": "Akaakuu",
+      "required": "Kan barbaadamu",
+      "enabled": "Dandeessifameera",
+      "kind": "Akaakuu"
+    },
+    "kind": {
+      "custom": "Aadaa",
+      "core": "Core (cufame) .",
+      "standard": "Sadarkaa"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Barreeffama",
+    "TEXTAREA": "Barreeffama dheeraa",
+    "NUMBER": "Lakkoofsa",
+    "CURRENCY": "Maallaqa",
+    "DATE": "Guyyaa",
+    "SELECT": "Kufaatii gadi bu'aa",
+    "LIST": "Tarreeffama"
+  },
+  "picker": {
+    "searchPlaceholder": "Dirreewwan dursaa barbaadi...",
+    "summary": "{{shown}} agarsiifame · {{mandatory}} dirqama",
+    "mandatory": "Dirqama",
+    "noMatch": "Dirreewwan wal hin simne."
+  },
+  "statuses": {
+    "intro": "Haalawwan dursaa fi haalawwan xiqqaa kee - waan tokkoon tokkoon isaanii gaafatan (guyyaa & sa'aatii, dirree dursaa) yeroo namni tokko dursaa gara isaatti haaromsu.",
+    "add": "+ Haala Dabaluu",
+    "columns": {
+      "order": "Ajajuu",
+      "status": "Sadarkaa",
+      "subStatuses": "Haala Xiqqaa",
+      "asksFor": "Gaafata",
+      "active": "Si'aawaa"
+    },
+    "moveUp": "Ol socho'aa",
+    "moveDown": "Gad bu'aa",
+    "defaultBadge": "Durtii dursa haaraadhaaf",
+    "bookingBadge": "Haala buukii",
+    "asksForLabel": "{{label}} jechuun gaafata.",
+    "asksForDateTime": "Guyyaa & sa'aatii gaafata",
+    "none": "Homaa",
+    "dateTime": "Guyyaa & sa'aatii",
+    "scheduledOn": "{{names}} irratti.",
+    "fieldsSummary_one": "{{count}} field ( {{mandatory}} dirqama)",
+    "fieldsSummary_other": "{{count}} fields ( {{mandatory}} dirqama) .",
+    "deleteConfirm": "Haala haquu \" {{name}} \"? Kun duubatti deebi’uu hin danda’u.",
+    "editTitle": "Haala Gulaali - {{name}}",
+    "newTitle": "Haala Haaraa",
+    "name": "Maqaa Haala",
+    "colour": "Halluu",
+    "active": "Si'aawaa",
+    "isDefault": "Haala durtii geggeessitoota haaraa",
+    "isBooking": "Haala buukii (Bukkii Guutuutiin kan kaa'ame) .",
+    "whenMoved": "Yeroo liidiin tokko gara sadarkaa kanaatti ce'u",
+    "askSchedule": "Guyyaa & sa'aatii (scheduler) gaafadhu .",
+    "scheduleLabelPlaceholder": "Asxaa, fkn Daawwannaa at",
+    "fieldsToShow": "Dirreewwan unka fooyya'iinsaa irratti agarsiisuuf geggeessi",
+    "subStatusesTitle": "Haala Xiqqaa",
+    "subStatusesHint": "Tokkoon tokkoon haalata xiqqaa guyyaa & sa'aatii mataa isaa gaafachuu fi man'ee mataa isaa dabaluu danda'a - man'eelee haalaa armaan olii irratti agarsiifaman.",
+    "subStatusName": "Maqaa haala xiqqaa",
+    "subFields": "Dirreewwan ( {{count}} ) .",
+    "subScheduleLabelPlaceholder": "Guyyaa & sa'aatii asxaa, fkn Call back at",
+    "addSubStatus": "+ Haala Xiqqaa Dabaluu",
+    "saveStatus": "Haala Qusachuu",
+    "createStatus": "Haala Uumuu"
+  },
+  "notifications": {
+    "intro": "Yeroo lead tokko haala tokko irra ga'u namoota sirrii beeksisuu - battalumatti, ykn sa'aatii murtaa'e guyyaa & sa'aatii irratti beellamame dura/booda.",
+    "add": "+ Beeksisa Dabaluu",
+    "columns": {
+      "notification": "Beeksisa",
+      "whenStatusIs": "Yeroo Haalli Is",
+      "sends": "Erga",
+      "to": "Gara",
+      "via": "Karaa",
+      "enabled": "Dandeessifameera"
+    },
+    "anyStatus": "Haala kamiyyuu",
+    "anySubStatus": "Haala xiqqaa kamiyyuu",
+    "inactiveOption": "{{name}} (kan hin sochoone) .",
+    "emptyRules": "Hanga ammaatti beeksisni hin jiru - yeroo dursi tokko haala tokko irra ga'u garee kee akeekkachiisuuf tokko dabali.",
+    "jobs": {
+      "title": "Sagantaa & Ergame",
+      "firesAt": "Ibidda At",
+      "notification": "Beeksisa",
+      "lead": "Geggeessi",
+      "status": "Sadarkaa",
+      "details": "Gadifageenyaan",
+      "empty": "Ammatti wanti beellamame ykn ergame hin jiru.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Eeggataa kan jiru",
+      "PROCESSING": "Adeemsa Hojii",
+      "SENT": "Erge",
+      "FAILED": "Kufe",
+      "SKIPPED": "Darbe",
+      "CANCELLED": "Haqameera"
+    },
+    "deliveryStatus": {
+      "SENT": "erge",
+      "FAILED": "kufe",
+      "SKIPPED": "darbame"
+    },
+    "deliveryChannel": {
+      "IN_APP": "in-app jedhamuun beekama",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Fayyadamaa ramadame",
+      "owner": "Abbaa",
+      "updatedBy": "Kan haaromfame",
+      "role": "Gahee hojii: {{name}}"
+    },
+    "channels": {
+      "inApp": "In-app",
+      "email": "Imeelii",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Beeksisa haquu \" {{name}} \"? Yaadachiisa irraa eegamaa jiru ni haqama.",
+    "testPrompt": "Qormaata beeksisa kanaa ofii keessaniif (in-app) ergi lead ID kam fayyadamuun ?",
+    "testSent": "Belbela keessaniif ergame: {{title}} {{message}}",
+    "headersInvalid": "Mata dureewwan Webhook JSON sirrii ta'uu qabu , fkn {\"Hayyama\": \"Baatee xyz\"}.",
+    "editTitle": "Beeksisa Gulaaluu",
+    "newTitle": "Beeksisa Haaraa",
+    "name": "Maqaa",
+    "namePlaceholder": "fkn Yaadachiisa daawwannaa iddoo",
+    "whenStatus": "Yeroo sadarkaan lead tokkoo ta'u",
+    "subStatus": "Haala xiqqaa",
+    "send": "Ergaa (sagantaa) .",
+    "custom": "Aadaa...",
+    "modeBefore": "sa’aatii beellamame dura",
+    "modeAfter": "sa’aatii beellamame booda",
+    "noScheduleWarning": "Haalli kun guyyaa & sa'aatii hin gaafatu, kanaaf beeksisni \"sa'aatii beellamame dura/yeroo/booda\" gonkumaa hin dhukaasu.",
+    "noScheduleFix": "On godhaa Status & Sub-Status jalatti <strong>guyyaa & sa'aatii isaaf gaafadhu</strong> , ykn Daftee ergi.",
+    "sendTo": "Gara (walnyaatinsa kamiyyuu) ergaa",
+    "recipientAssigned": "Fayyadamaa ramadame (abbaa dursaa) .",
+    "recipientOwner": "Abbaa herregaa / admin",
+    "recipientUpdatedBy": "Nama haala isaa update godhe",
+    "everyoneWithRole": "Hunduu gahee qaba",
+    "specificUsers": "Fayyadamtoota addaa (active) .",
+    "inactiveNever": "Fayyadamtoonni sochii hin qabne yoo filataman illee beeksisa gonkumaa hin argatan.",
+    "deliverVia": "Karaa geessuu",
+    "channelInApp": "In-app (belbelaa) .",
+    "channelEmail": "Imeelii",
+    "channelWebhook": "Webhook ( WhatsApp / SMS gabaabaa) .",
+    "emailHint": "Iimeeliin gara teessoo imeelii fudhataa tokkoon tokkootti kan deemu yoo ta'u, SMTP sarvarii irratti qindaa'e barbaada (backend/.env); hanga sanatti ergamni email akka darbameetti galmaa'a.",
+    "webhookUrl": "URL Webhook ( POST , JSON ) .",
+    "headers": "Mata dureewwan ( JSON ) .",
+    "content": "Qabiyyee beeksisa",
+    "title": "Mata-duree",
+    "message": "Ergaa",
+    "insertIntoTitle": "Mata duree keessa galchi",
+    "insertIntoMessage": "Ergaa keessa galchi",
+    "anyLeadField": "Dirreen dursaa kamiyyuu illee ni hojjeta, fkn <code1>{{example1}}</code1> ykn <code2>{{example2}}</code2> .",
+    "preview": "Durargii (sample lead) .",
+    "enabled": "Dandeessifameera",
+    "saveRule": "Beeksisa Qusachuu",
+    "createRule": "Beeksisa Uumuu",
+    "variables": {
+      "customerName": "Maqaa dursaa",
+      "customerMobile": "Moobaayila dursaa",
+      "customerEmail": "Imeelii geggeessaa",
+      "registrationId": "ID dursaa",
+      "status": "Sadarkaa",
+      "subStatus": "Haala xiqqaa",
+      "scheduleAt": "Guyyaa & sa'aatii beellamame",
+      "assignedTo": "Fayyadamaa ramadame",
+      "updatedBy": "Kan haaromfame",
+      "recipient": "Maqaa fudhataa",
+      "project": "Pirojektii",
+      "notes": "Yaadannoo yeroo dhiyoo",
+      "partner": "Maqaa hiriyaa"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Achumaan yeroo haalli saagamu",
+      "AT": "Yeroo beellamameetti",
+      "A1D": "Yeroo beellamame booda guyyaa 1 (hordoffii sakatta’iinsa) ."
+    },
+    "immediately": "Yerosuma",
+    "atScheduled": "Yeroo beellamameetti",
+    "before": {
+      "MINUTES_one": "{{count}} daqiiqaa sa'aatii beellamame dura",
+      "MINUTES_other": "{{count}} daqiiqaawwan sa'aatii beellamame dura",
+      "HOURS_one": "{{count}} sa'aatii beellamame dura",
+      "HOURS_other": "{{count}} sa'aatii sa'aatii beellamame dura",
+      "DAYS_one": "{{count}} guyyaa sa'aatii beellamame dura",
+      "DAYS_other": "{{count}} guyyoota sa'aatii beellamame dura",
+      "WEEKS_one": "{{count}} torban sa'aatii beellamame dura",
+      "WEEKS_other": "{{count}} torban sa'aatii beellamame dura",
+      "MONTHS_one": "{{count}} ji'a sa'aatii beellamame dura",
+      "MONTHS_other": "{{count}} ji'oota yeroo beellamame dura",
+      "YEARS_one": "{{count}} waggaa sa'aatii beellamame dura",
+      "YEARS_other": "{{count}} waggoota yeroo beellamame dura"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} daqiiqaa sa'aatii beellamame booda",
+      "MINUTES_other": "{{count}} daqiiqaa yeroo beellamame booda",
+      "HOURS_one": "{{count}} sa'aatii beellamame booda",
+      "HOURS_other": "{{count}} sa'aatii sa'aatii beellamame booda",
+      "DAYS_one": "{{count}} guyyaa sa'aatii beellamame booda",
+      "DAYS_other": "{{count}} guyyoota sa'aatii beellamame booda",
+      "WEEKS_one": "{{count}} torban sa'aatii beellamame booda",
+      "WEEKS_other": "{{count}} torban yeroo beellamame booda",
+      "MONTHS_one": "{{count}} ji'a yeroo beellamame booda",
+      "MONTHS_other": "{{count}} yeroo beellamame booda ji'oota",
+      "YEARS_one": "{{count}} waggaa yeroo beellamame booda",
+      "YEARS_other": "{{count}} waggoota yeroo beellamame booda"
+    },
+    "units": {
+      "MINUTES_one": "daqiiqaa",
+      "MINUTES_other": "daqiiqaawwan",
+      "HOURS_one": "sa'a",
+      "HOURS_other": "sa'aatiiwwan",
+      "DAYS_one": "guyyaa",
+      "DAYS_other": "guyyoota",
+      "WEEKS_one": "torbee",
+      "WEEKS_other": "torbanitti",
+      "MONTHS_one": "ji'a",
+      "MONTHS_other": "ji’oota",
+      "YEARS_one": "waggaa",
+      "YEARS_other": "waggoota"
+    }
+  }
+}

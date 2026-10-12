@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal mai ginawa",
+    "referrals": "Magana",
+    "builderLogin": "Shigar Mai Ginin",
+    "partnerLogin": "Shiga Abokin Tashar Tashar"
+  },
+  "login": {
+    "title": "Shigar mai gini",
+    "hint": "Leadrat ne ya ƙirƙira asusun magina . Tambayi mai kula da ku idan ba ku da ɗaya."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Jiran shawarar ku",
+    "ACCEPTED": "Karba",
+    "REJECTED": "An ƙi"
+  },
+  "list": {
+    "title": "Magana",
+    "allProjects": "Duk ayyukan",
+    "allStatuses": "Duk matsayi",
+    "count_one": "{{count}} mai magana",
+    "count_other": "{{count}} masu magana",
+    "columns": {
+      "referral": "Magana",
+      "customer": "Abokin ciniki",
+      "project": "Aikin",
+      "sourcePartner": "Abokin Hulɗa",
+      "status": "Matsayi",
+      "booking": "Yin ajiya",
+      "registered": "Rajista"
+    },
+    "booked": "An yi rajista",
+    "empty": "Har yanzu ba a ba da shawarar ba."
+  },
+  "detail": {
+    "customer": "Abokin ciniki",
+    "sourcePartner": "Abokin Hulɗa",
+    "attributionNote": "(Ba za a iya canzawa ba)",
+    "leadStatus": "Matsayin jagora",
+    "protectedUntil": "Kare Har",
+    "referral": "Magana",
+    "reason": "Dalili: {{reason}}",
+    "booking": "Yin ajiya",
+    "bookedOwner": "An yi rajista - kai ne mai aiki",
+    "notBooked": "Ba a yi rajista ba",
+    "sharedAfterBooking": "Raba bayan yin ajiya",
+    "accept": "Karɓi Gabatarwa",
+    "confirmBooking": "Tabbatar da Bugawa",
+    "reject": "Karɓi Gabatarwa",
+    "rejectReasonLabel": "Dalilin ƙin yarda (an nuna wa abokin tarayya) *",
+    "rejectConfirm": "Ƙi",
+    "confirmBookingPrompt": "Tabbatar da booking? Mallakar aiki tana motsawa zuwa gare ku kuma abokin tarayya ya cancanci izini.",
+    "notice": {
+      "booked": "An tabbatar da booking.",
+      "accepted": "Karɓar ƙaddamarwa.",
+      "rejected": "An ƙi amincewa."
+    },
+    "backToReferrals": "Komawa Zuwa Gabatarwa"
+  },
+  "history": {
+    "title": "Tarihi",
+    "actor": {
+      "system": "Tsari",
+      "partner": "Abokin tasha",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "An karɓi rajistar abokin tarayya",
+      "DUPLICATE_CHECK_COMPLETED": "An kammala rajistan kwafin - ba a sami kwafi mai aiki ba",
+      "REGISTRATION_ACCEPTED": "An karɓi rajista",
+      "PROTECTION_GRANTED_one": "{{count}} an ba da kariya ta rana",
+      "PROTECTION_GRANTED_other": "{{count}} an ba da kariya ta rana",
+      "STAGE_UPDATED": "An sabunta matsayin zuwa {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "An sabunta filin {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "An sabunta filayen {{count}}",
+      "LEAD_ASSIGNED": "An sanya wa {{name}}",
+      "LEAD_UNASSIGNED": "Ba a sanyawa ba",
+      "REFERRAL_ACCEPTED": "Mai ginin ya karɓi abin da aka tura",
+      "REFERRAL_REJECTED": "Mai gini ya ki amincewa da batun. Dalili: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Ƙoƙarin yin rajista na {{partner}} ya ƙi",
+      "BOOKING_COMPLETED": "An kammala booking",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Canja wurin ikon mallakar aiki zuwa magini",
+      "PARTNER_ATTRIBUTION_PRESERVED": "An kiyaye halayen abokin tarayya",
+      "COMMISSION_ELIGIBILITY_CREATED": "An ƙirƙiri cancantar hukumar",
+      "HANDOVER_COMPLETED": "An kammala mika mulki",
+      "ADMIN_PROTECTION_RELEASED": "Admin ya fitar da kwafin kariya da wuri. Dalili: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin ya sake sanya rajista daga {{from}} zuwa {{to}} . Dalili: {{reason}}"
+    }
+  }
+}

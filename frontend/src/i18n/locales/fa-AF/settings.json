@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "تنظیمات",
+    "noPermission": "شما اجازه مدیریت تنظیمات را ندارید."
+  },
+  "categories": {
+    "lead": "رهبری کردن",
+    "user": "کاربر",
+    "integrations": "ادغام ها"
+  },
+  "leadTabs": {
+    "fields": "رشته ها",
+    "statuses": "وضعیت ها و وضعیت های فرعی",
+    "notifications": "اعلان ها و زمانبندی ها"
+  },
+  "fields": {
+    "leadIntro": "فورم ضبط پیشتاز را تنظیم کنید: فیلد ها را فعال/غیر فعال کنید، آنها را مورد نیاز نشانی کنید، یا فیلد های دلخواه خود را اضافه کنید.",
+    "userIntro": "فورم اضافه کردن/ویرایش عضو تیم را تنظیم کنید: فیلد ها را فعال/غیر فعال کنید، آنها را مورد نیاز نشانی کنید، یا فیلد های دلخواه خود را اضافه کنید.",
+    "addCustomField": "+ اضافه کردن ساحه سفارشی",
+    "fieldLabel": "لیبل ساحه",
+    "group": "گروه",
+    "groupPlaceholderLead": "بطور مثال معلومات پرس و جو",
+    "groupPlaceholderUser": "بطور مثال جزئیات اضافی",
+    "dataType": "نوع معلومات",
+    "options": "گزینه ها (با ویرگول جدا شده)",
+    "requiredLead": "لازم است - همکاران در تیم شما باید این را برای ثبت یک لید پر کنند",
+    "requiredUser": "لازم است - باید هنگام اضافه کردن یک عضو تیم پر شود",
+    "creating": "ایجاد...",
+    "createField": "ایجاد ساحه",
+    "columns": {
+      "field": "میدان",
+      "group": "گروه",
+      "type": "نوع",
+      "required": "لازمی",
+      "enabled": "فعال شده",
+      "kind": "نوع"
+    },
+    "kind": {
+      "custom": "رواج",
+      "core": "هسته (قفل شده)",
+      "standard": "استاندارد"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "متن",
+    "TEXTAREA": "متن بلند",
+    "NUMBER": "عدد",
+    "CURRENCY": "واحد پول",
+    "DATE": "تاریخ",
+    "SELECT": "کشویی",
+    "LIST": "فهرست"
+  },
+  "picker": {
+    "searchPlaceholder": "جستجوی بخش های سرب...",
+    "summary": "{{shown}} نشان داده شده · {{mandatory}} اجباری",
+    "mandatory": "لازمی",
+    "noMatch": "هیچ رشته مطابقت ندارد."
+  },
+  "statuses": {
+    "intro": "وضعیت ها و وضعیت های فرعی پیشتاز شما – چیزی که هر کدام میخواهد (تاریخ و زمان، بخش های پیشتاز) زمانیکه کسی یک پیشتاز را به آن به روز میکند.",
+    "add": "+ اضافه کردن وضعیت",
+    "columns": {
+      "order": "فرمایش",
+      "status": "حالت",
+      "subStatuses": "وضعیت های فرعی",
+      "asksFor": "میخواهد",
+      "active": "فعال"
+    },
+    "moveUp": "بالا بروید",
+    "moveDown": "به پایین حرکت کنید",
+    "defaultBadge": "پیش فرض برای سرنخ های جدید",
+    "bookingBadge": "وضعیت رزرو",
+    "asksForLabel": "میخواهد {{label}}",
+    "asksForDateTime": "تاریخ و زمان را میپرسد",
+    "none": "هیچ",
+    "dateTime": "تاریخ و زمان",
+    "scheduledOn": "روی {{names}}",
+    "fieldsSummary_one": "{{count}} ساحه ( {{mandatory}} اجباری)",
+    "fieldsSummary_other": "{{count}} بخش ها ( {{mandatory}} اجباری)",
+    "deleteConfirm": "حذف وضعیت \" {{name}} \"؟ این نمیتواند خنثی گردد.",
+    "editTitle": "ویرایش وضعیت - {{name}}",
+    "newTitle": "وضعیت جدید",
+    "name": "نام وضعیت",
+    "colour": "رنگ",
+    "active": "فعال",
+    "isDefault": "وضعیت پیش فرض برای سرنخ های جدید",
+    "isBooking": "وضعیت ریزرف (تنظیم شده توسط ریزرف کامل)",
+    "whenMoved": "زمانیکه یک سرنخ به این وضعیت انتقال میابد",
+    "askSchedule": "یک تاریخ و زمان را بپرسید (برنامه ساز)",
+    "scheduleLabelPlaceholder": "لیبل، بطور مثال در",
+    "fieldsToShow": "بخش های پیشتاز برای نشان دادن در فورم به روز رسانی",
+    "subStatusesTitle": "وضعیت های فرعی",
+    "subStatusesHint": "هر وضعیت فرعی میتواند تاریخ و زمان خود را بخواهد و بخش های خود را اضافه کند – که در بالای بخش های وضعیت در بالا نشان داده شده است.",
+    "subStatusName": "نام وضعیت فرعی",
+    "subFields": "ساحات ( {{count}} )",
+    "subScheduleLabelPlaceholder": "لیبل تاریخ و زمان، بطور مثال به شماره تماس بگیرید",
+    "addSubStatus": "+ وضعیت فرعی اضافه کنید",
+    "saveStatus": "وضعیت را ذخیره کنید",
+    "createStatus": "ایجاد وضعیت"
+  },
+  "notifications": {
+    "intro": "زمانیکه یک سرنخ به یک وضعیت میرسد به مردم مناسب اطلاع دهید – بلافاصله، یا یک زمان معین قبل از/بعد از تاریخ و زمان تنظیم شده برای آن.",
+    "add": "+ اعلان اضافه کنید",
+    "columns": {
+      "notification": "اطلاعیه",
+      "whenStatusIs": "زمانیکه وضعیت باشد",
+      "sends": "ارسال میکند",
+      "to": "تا",
+      "via": "از طريق",
+      "enabled": "فعال شده"
+    },
+    "anyStatus": "هر حالت",
+    "anySubStatus": "هر حالت فرعی",
+    "inactiveOption": "{{name}} (غیرفعال)",
+    "emptyRules": "هنوز هیچ اعلان وجود ندارد - یکی را اضافه کنید تا زمانیکه یک سرنخ به یک وضعیت میرسد تیم خود را هشدار دهد.",
+    "jobs": {
+      "title": "برنامه ریزی شده و ارسال شده",
+      "firesAt": "آتش سوزی در",
+      "notification": "اطلاعیه",
+      "lead": "رهبری کردن",
+      "status": "حالت",
+      "details": "جزئیات",
+      "empty": "هیچ چیز هنوز برنامه ریزی یا ارسال نشده است.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "در انتظار",
+      "PROCESSING": "پروسس کردن",
+      "SENT": "ارسال شد",
+      "FAILED": "ناموفق",
+      "SKIPPED": "رد شد",
+      "CANCELLED": "لغو شد"
+    },
+    "deliveryStatus": {
+      "SENT": "ارسال شد",
+      "FAILED": "ناموفق",
+      "SKIPPED": "رد شده"
+    },
+    "deliveryChannel": {
+      "IN_APP": "در برنامه",
+      "EMAIL": "ایمیل",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "کاربر اختصاص داده شده",
+      "owner": "مالک",
+      "updatedBy": "به روز شده توسط",
+      "role": "نقش: {{name}}"
+    },
+    "channels": {
+      "inApp": "در برنامه",
+      "email": "ایمیل",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "حذف اعلان \" {{name}} \"؟ یادآوری های در حال انتظار از آن لغو میشوند.",
+    "testPrompt": "با استفاده از کدام ID پیشتاز یک تست این اعلان را به خود تان (در اپلیکیشن) بفرستید؟",
+    "testSent": "به زنگ شما ارسال شد: {{title}} {{message}}",
+    "headersInvalid": "سرنویس های Webhook باید JSON معتبر باشد، بطور مثال {\"اجازه\": \"حامل xyz\"}",
+    "editTitle": "اعلان ویرایش",
+    "newTitle": "اطلاعیه جدید",
+    "name": "نام",
+    "namePlaceholder": "بطور مثال یادآوری بازدید از سایت",
+    "whenStatus": "زمانیکه وضعیت یک پیشتاز باشد",
+    "subStatus": "وضعیت فرعی",
+    "send": "ارسال (برنامه ساز)",
+    "custom": "رواج...",
+    "modeBefore": "قبل از وقت تعیین شده",
+    "modeAfter": "بعد از وقت تعیین شده",
+    "noScheduleWarning": "این وضعیت تاریخ و زمان را نمیخواهد، از اینرو یک اعلان \"قبل/در/بعد از زمان تنظیم شده\" هیچگاه اجرا نخواهد شد.",
+    "noScheduleFix": "تحت وضعیت ها و وضعیت های فرعی <strong>درخواست تاریخ و زمان را</strong> روشن کنید، یا فوراً بفرستید.",
+    "sendTo": "ارسال به (هر ترکیب)",
+    "recipientAssigned": "کاربر اختصاص داده شده (مالک اصلی)",
+    "recipientOwner": "صاحب حساب / مدیر",
+    "recipientUpdatedBy": "شخص که وضعیت را به روز کرده است",
+    "everyoneWithRole": "هر کس با نقش",
+    "specificUsers": "کاربران مشخص (فعال)",
+    "inactiveNever": "استفاده کنندگان غیرفعال هیچگاه اعلانات را دریافت نمیکنند، حتی اگر انتخاب شده باشند.",
+    "deliverVia": "از طریق تحویل دهید",
+    "channelInApp": "در برنامه (زنگ)",
+    "channelEmail": "ایمیل",
+    "channelWebhook": "Webhook (ارایه کننده WhatsApp / SMS )",
+    "emailHint": "ایمیل به آدرس ایمیل هر دریافت کننده میرود و نیاز به تنظیم SMTP در سرور دارد (backend/.env)؛ تا آن زمان ارسال های ایمیل به عنوان پرش شده ثبت میشوند.",
+    "webhookUrl": "URL Webhook ( POST ، JSON )",
+    "headers": "سرنویس ها ( JSON )",
+    "content": "محتوای اعلان",
+    "title": "عنوان",
+    "message": "پیام",
+    "insertIntoTitle": "در عنوان درج کنید",
+    "insertIntoMessage": "در پیام درج کنید",
+    "anyLeadField": "هر ساحه پیشتاز همچنان کار میکند، بطور مثال <code1>{{example1}}</code1> یا <code2>{{example2}}</code2> .",
+    "preview": "پیش نمایش (نمونه لید)",
+    "enabled": "فعال شده",
+    "saveRule": "اطلاعیه را ذخیره کنید",
+    "createRule": "ایجاد اعلان",
+    "variables": {
+      "customerName": "نام پیشتاز",
+      "customerMobile": "موبایل سرب",
+      "customerEmail": "ایمیل پیشتاز",
+      "registrationId": "ID سرب",
+      "status": "حالت",
+      "subStatus": "وضعیت فرعی",
+      "scheduleAt": "تاریخ و زمان برنامه ریزی شده",
+      "assignedTo": "کاربر اختصاص داده شده",
+      "updatedBy": "به روز شده توسط",
+      "recipient": "نام دریافت کننده",
+      "project": "پروژه",
+      "notes": "آخرین یادداشت",
+      "partner": "نام شریک"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "بلافاصله زمانیکه وضعیت تنظیم میشود",
+      "AT": "در وقت تعیین شده",
+      "A1D": "1 روز بعد از وقت تعیین شده (چک پیگیری)"
+    },
+    "immediately": "بالفعل",
+    "atScheduled": "در وقت تعیین شده",
+    "before": {
+      "MINUTES_one": "{{count}} دقیقه قبل از وقت تعیین شده",
+      "MINUTES_other": "{{count}} دقیقه قبل از وقت تعیین شده",
+      "HOURS_one": "{{count}} یک ساعت قبل از وقت تعیین شده",
+      "HOURS_other": "{{count}} ساعت قبل از وقت تعیین شده",
+      "DAYS_one": "{{count}} یک روز قبل از وقت تعیین شده",
+      "DAYS_other": "{{count}} روز قبل از وقت تعیین شده",
+      "WEEKS_one": "{{count}} هفته قبل از وقت تعیین شده",
+      "WEEKS_other": "{{count}} هفته ها قبل از وقت تعیین شده",
+      "MONTHS_one": "{{count}} یک ماه قبل از وقت تعیین شده",
+      "MONTHS_other": "{{count}} ماه قبل از وقت تعیین شده",
+      "YEARS_one": "{{count}} سال قبل از وقت تعیین شده",
+      "YEARS_other": "{{count}} سال قبل از وقت تعیین شده"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} دقیقه بعد از وقت تعیین شده",
+      "MINUTES_other": "{{count}} دقیقه بعد از وقت تعیین شده",
+      "HOURS_one": "{{count}} ساعت بعد از وقت تعیین شده",
+      "HOURS_other": "{{count}} ساعت بعد از وقت تعیین شده",
+      "DAYS_one": "{{count}} روز بعد از وقت تعیین شده",
+      "DAYS_other": "{{count}} روز بعد از وقت تعیین شده",
+      "WEEKS_one": "{{count}} هفته بعد از وقت تعیین شده",
+      "WEEKS_other": "{{count}} هفته بعد از وقت تعیین شده",
+      "MONTHS_one": "{{count}} ماه بعد از وقت تعیین شده",
+      "MONTHS_other": "{{count}} ماه بعد از وقت تعیین شده",
+      "YEARS_one": "{{count}} سال بعد از زمان تعیین شده",
+      "YEARS_other": "{{count}} سال بعد از زمان تعیین شده"
+    },
+    "units": {
+      "MINUTES_one": "دقیقه",
+      "MINUTES_other": "دقایق",
+      "HOURS_one": "ساعت",
+      "HOURS_other": "ساعت ها",
+      "DAYS_one": "روز",
+      "DAYS_other": "روز",
+      "WEEKS_one": "هفته",
+      "WEEKS_other": "هفته ها",
+      "MONTHS_one": "دهان",
+      "MONTHS_other": "ماه",
+      "YEARS_one": "سال",
+      "YEARS_other": "سال ها"
+    }
+  }
+}

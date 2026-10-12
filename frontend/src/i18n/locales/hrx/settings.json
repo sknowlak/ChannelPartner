@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Instellunge",
+    "noPermission": "Tuu host khee erlaupnis fer ti instëlunge se rechiire."
+  },
+  "categories": {
+    "lead": "Fiire",
+    "user": "Benutzer",
+    "integrations": "Intekratsioone"
+  },
+  "leadTabs": {
+    "fields": "Fëlder",
+    "statuses": "Status & Unterstatus",
+    "notifications": "Notifikatsioone un planse"
+  },
+  "fields": {
+    "leadIntro": "Konfituer tas leetche fange formulaar: ti fële in richte/in richte, markeere se wii neetich, orer tuu tayn aychne fële hiner lose.",
+    "userIntro": "Konfituer tas formulaar Teel Mitkliiter hiner lose/ënere: ti fële in richte/in richte, markiire se wii neetich, orer tuu tayn aychne fële hiner lose.",
+    "addCustomField": "+ Persoonlich felt hinzufügen",
+    "fieldLabel": "Feld Etiket",
+    "group": "Krup",
+    "groupPlaceholderLead": "z.b. Info fer ti frooch",
+    "groupPlaceholderUser": "z.b. Ekstra detaile",
+    "dataType": "Tip fon te data",
+    "options": "Optsioone (mit te komma)",
+    "requiredLead": "Erforderlich - partnerxafte fon tayn team mise tas aus fiile fer een leerer se registriire .",
+    "requiredUser": "Erforderlich - mus aus kefëlt wëre wëns tuu een team mitkliiter hiner lose tuust .",
+    "creating": "Kreeere...",
+    "createField": "Feel kreere",
+    "columns": {
+      "field": "Khamp",
+      "group": "Krup",
+      "type": "Sort",
+      "required": "Ketswung",
+      "enabled": "Aktiwiert",
+      "kind": "Sort"
+    },
+    "kind": {
+      "custom": "Persoonlich",
+      "core": "Kern (ferxlos)",
+      "standard": "Xtantart"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Tekst",
+    "TEXTAREA": "Lang tëkst",
+    "NUMBER": "Numer",
+    "CURRENCY": "Kelt",
+    "DATE": "Ti tsayt",
+    "SELECT": "Runer runer",
+    "LIST": "List"
+  },
+  "picker": {
+    "searchPlaceholder": "Suuch lëtste fële...",
+    "summary": "{{shown}} ketsaycht · {{mandatory}} obligatoorix",
+    "mandatory": "Ketswung",
+    "noMatch": "Keen fëlder pasëyert."
+  },
+  "statuses": {
+    "intro": "Tayn leerer status un uner status - was yeete eene ferlangt (en taach & tsayt, leerer fële) wën yemant en leerer too truf aktualisiert.",
+    "add": "+ Status hiner lose",
+    "columns": {
+      "order": "Ortnung",
+      "status": "Petingung",
+      "subStatuses": "Unterstatus",
+      "asksFor": "Fragt Fer",
+      "active": "Aktiiw"
+    },
+    "moveUp": "Ferxwine uf",
+    "moveDown": "Runer keen",
+    "defaultBadge": "Standart fer naye lënter",
+    "bookingBadge": "Status fon te reserwiirung",
+    "asksForLabel": "Frayt fer {{label}}",
+    "asksForDateTime": "Frayt fer taach & tsayt",
+    "none": "Khee",
+    "dateTime": "Taach & tsayt",
+    "scheduledOn": "uf {{names}}",
+    "fieldsSummary_one": "{{count}} felt ( {{mandatory}} obligatoorix)",
+    "fieldsSummary_other": "{{count}} felter ( {{mandatory}} obligatoorix)",
+    "deleteConfirm": "Status \" {{name}} \" aus lëye? Tas khan nët kemacht wëre.",
+    "editTitle": "Status ënere - {{name}}",
+    "newTitle": "Neue Status",
+    "name": "Status Naam",
+    "colour": "Farp",
+    "active": "Aktiiw",
+    "isDefault": "Standart status fer naye lënter",
+    "isBooking": "Status fon te Reserweerung (setst fon Komplete Reserweerung)",
+    "whenMoved": "Wën een lët waase in tiise status kenom wërt .",
+    "askSchedule": "Fray fer een taach & tsayt (planer)",
+    "scheduleLabelPlaceholder": "Etiket, z.B. Besuuch uf",
+    "fieldsToShow": "Leet fële fer se tsayche uf tëm aktualisiirungs formulaar .",
+    "subStatusesTitle": "Unterstatus",
+    "subStatusesHint": "Yeete unerxiitliche status khan sayn aychne taach & tsayt ferlange un sayn aychne fële - woo uf te status sayn fële too hiir ketsaycht sin.",
+    "subStatusName": "Unterstatus naame",
+    "subFields": "Fëlder ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Datum & uer etiket, z.B. Ruf noch mool uf",
+    "addSubStatus": "+ Unterstatus hinzufügen",
+    "saveStatus": "Status xpaare",
+    "createStatus": "Status mache"
+  },
+  "notifications": {
+    "intro": "Notifikeere ti richtiche layt wën een leerer een status kriit - klaych, orer een pextimt tsayt foer/noo te taach & tsayt woo too truf pextimt is.",
+    "add": "+ Notifikatsioon hinzufügen",
+    "columns": {
+      "notification": "Notifikatsioon",
+      "whenStatusIs": "Wann Status Is",
+      "sends": "Sendt",
+      "to": "Tsu",
+      "via": "Torich",
+      "enabled": "Aktiwiert"
+    },
+    "anyStatus": "Yeete status",
+    "anySubStatus": "Yeete unerxiitliche status",
+    "inactiveOption": "{{name}} (inaktiif)",
+    "emptyRules": "Noch khee notisye - tuu een hiner lose fer tayn team se alarmiire wën een leerer een status erkhënt.",
+    "jobs": {
+      "title": "Plant & Kexikt",
+      "firesAt": "Feuer Am",
+      "notification": "Notifikatsioon",
+      "lead": "Fiire",
+      "status": "Petingung",
+      "details": "Kleenichkheete",
+      "empty": "Noch niks ferklaycht ore kexikt.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Am waarte",
+      "PROCESSING": "Ferarbeitung",
+      "SENT": "Kexikt",
+      "FAILED": "Fersaat",
+      "SKIPPED": "Ferxprung",
+      "CANCELLED": "Annulerëyert"
+    },
+    "deliveryStatus": {
+      "SENT": "kexikt",
+      "FAILED": "fersaat",
+      "SKIPPED": "ferxprëcht"
+    },
+    "deliveryChannel": {
+      "IN_APP": "in-app",
+      "EMAIL": "e-mail",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Kexënkt penutser",
+      "owner": "Aychentimer",
+      "updatedBy": "Aktualisiert fon",
+      "role": "Rol: {{name}}"
+    },
+    "channels": {
+      "inApp": "In-app",
+      "email": "E-mail",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Lëse ti notifikatsioon \" {{name}} \"? Ti erinerunge woo noch am waate sin fon tëm sin kans kexmis këp.",
+    "testPrompt": "Tuu een proop fon tiise notisye fer tich selepst xike (in-app) mit was fer leet ID ?",
+    "testSent": "Kexikt fer tayn klaytung: {{title}} {{message}}",
+    "headersInvalid": "Ti khop Webhook mise valit sin JSON , tsum payxpiil {\"Autorização\": \"Trainer xyz\"}",
+    "editTitle": "Notifikatsioon ënere",
+    "newTitle": "Neue Notifikatsioon",
+    "name": "Naame",
+    "namePlaceholder": "z.b. Site pesuuch erinere",
+    "whenStatus": "Wann een leed sayn status is",
+    "subStatus": "Unterstatus",
+    "send": "Send (planer)",
+    "custom": "Persoonlich...",
+    "modeBefore": "foer te pextimte tsayt",
+    "modeAfter": "noo een pextimt tsayt",
+    "noScheduleWarning": "Tiise status ferlangt net en taach & tsayt, soo, en \"foer/an/noo pextimte tsayt\" notisye teet nii mee faye.",
+    "noScheduleFix": "Tuu uf <strong>frooe fer een taach & tsayt</strong> fer tas uner Status & Sub-Status, orer xik Klaych.",
+    "sendTo": "Send fer (jede kombinatsioon)",
+    "recipientAssigned": "Assigned user (leed eigentümer)",
+    "recipientOwner": "Konto eigentümer / admin",
+    "recipientUpdatedBy": "Persoon woo te status aktualisiirt hot .",
+    "everyoneWithRole": "Yeete eene mit rol .",
+    "specificUsers": "Spetsiifixe penutser (aktiiwe)",
+    "inactiveNever": "Inaktiiwe penutser kriin nii notisye, soo kaar wën se raus kesuucht wëre.",
+    "deliverVia": "Liefere torich",
+    "channelInApp": "In-app (klok)",
+    "channelEmail": "E-mail",
+    "channelWebhook": "Webhook ( WhatsApp / SMS aanpeeter)",
+    "emailHint": "Ti e-mail keet tsu yeete empfänger sayn e-mail adres un praucht SMTP in setse uf em serwer (backend/.env); pis tan sin ti e-mails send prokramiert wii kexproch.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Kopf ( JSON )",
+    "content": "Notifikatsioons inhalt",
+    "title": "Tithel",
+    "message": "Pexeet",
+    "insertIntoTitle": "Insets in Titel .",
+    "insertIntoMessage": "Insetse in Message",
+    "anyLeadField": "Yeete lët waase funktsiooniert aach, tsum payxpiil <code1>{{example1}}</code1> orer <code2>{{example2}}</code2> .",
+    "preview": "Vorschau (proef lead)",
+    "enabled": "Aktiwiert",
+    "saveRule": "Notifikatsioon xpaare",
+    "createRule": "Notifikatsioon mache",
+    "variables": {
+      "customerName": "Leet naam",
+      "customerMobile": "Leet mobiil",
+      "customerEmail": "Leet e-mail",
+      "registrationId": "Lead ID",
+      "status": "Petingung",
+      "subStatus": "Unterstatus",
+      "scheduleAt": "Planungs taach & uer",
+      "assignedTo": "Kexënkt penutser",
+      "updatedBy": "Aktualisiert fon",
+      "recipient": "Naame fom empfänger",
+      "project": "Projëkt",
+      "notes": "Letste noote",
+      "partner": "Partner naame"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Klaych wën te status in kextelt kept .",
+      "AT": "In te pextimte tsayt .",
+      "A1D": "1 taach noo te pextimte tsayt (foerxtëlungs kontrol)"
+    },
+    "immediately": "Pletslich",
+    "atScheduled": "In een pextimt tsayt .",
+    "before": {
+      "MINUTES_one": "{{count}} minute foer ti pextimte tsayt",
+      "MINUTES_other": "{{count}} minute foer ti pextimte tsayt",
+      "HOURS_one": "{{count}} xtune foer te pextimte tsayt",
+      "HOURS_other": "{{count}} xtune foer ti pextimte tsayt",
+      "DAYS_one": "{{count}} taach foer te pextimte tsayt",
+      "DAYS_other": "{{count}} taache foer te pextimte tsayt",
+      "WEEKS_one": "{{count}} woch foer ti pextimte tsayt",
+      "WEEKS_other": "{{count}} woche foer te pextimte tsayt",
+      "MONTHS_one": "{{count}} moonat foer ti pextimte tsayt",
+      "MONTHS_other": "{{count}} moonate foer ti pextimte tsayt",
+      "YEARS_one": "{{count}} yoer foer ti pextimte tsayt",
+      "YEARS_other": "{{count}} yoere foer ti pextimte tsayt"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minute noo te pextimte tsayt",
+      "MINUTES_other": "{{count}} minute noo te pextimte tsayt",
+      "HOURS_one": "{{count}} xtune noo te pextimte tsayt",
+      "HOURS_other": "{{count}} xtune noo te pextimte tsayt",
+      "DAYS_one": "{{count}} taach noo te pextimte tsayt",
+      "DAYS_other": "{{count}} taache noo te pextimte tsayt",
+      "WEEKS_one": "{{count}} woch noo te pextimte tsayt",
+      "WEEKS_other": "{{count}} woche noo te pextimte tsayt",
+      "MONTHS_one": "{{count}} moonat noo te pextimte tsayt",
+      "MONTHS_other": "{{count}} moonate noo te pextimte tsayt",
+      "YEARS_one": "{{count}} yoer noo te pextimte tsayt",
+      "YEARS_other": "{{count}} yoere noo te pextimte tsayt"
+    },
+    "units": {
+      "MINUTES_one": "minut",
+      "MINUTES_other": "minute",
+      "HOURS_one": "xtun",
+      "HOURS_other": "xtuune",
+      "DAYS_one": "taach",
+      "DAYS_other": "taache",
+      "WEEKS_one": "woch",
+      "WEEKS_other": "woche",
+      "MONTHS_one": "moonat",
+      "MONTHS_other": "moonate",
+      "YEARS_one": "yoer",
+      "YEARS_other": "yoere"
+    }
+  }
+}

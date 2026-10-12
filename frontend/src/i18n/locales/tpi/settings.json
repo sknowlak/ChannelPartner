@@ -1,0 +1,244 @@
+{
+  "page": {
+    "title": "Ol seting",
+    "noPermission": "Yu no gat tok orait long menesim ol seting."
+  },
+  "categories": {
+    "lead": "Go pas",
+    "user": "Yusa",
+    "integrations": "Ol Integresen"
+  },
+  "leadTabs": {
+    "fields": "Ol fil",
+    "statuses": "Ol Stet & Ol Smol Stet",
+    "notifications": "Ol toksave na ol sediula"
+  },
+  "fields": {
+    "leadIntro": "Stretim 'lead capture' fom: opim/no pasim ol fil, makim ol olsem ol i nidim, o putim ol kastom fil bilong yu yet.",
+    "userIntro": "Stretim Add/Edit Team Member fom: opim/no pasim ol fil, makim ol olsem yu mas mekim, o putim ol kastom fil bilong yu yet.",
+    "addCustomField": "+ Putim Kastom Fil",
+    "fieldLabel": "Lebol bilong fil",
+    "group": "Grup",
+    "groupPlaceholderLead": "eksampel Infomesen bilong askim",
+    "groupPlaceholderUser": "eksampel, ol narapela ditel",
+    "dataType": "Kain data",
+    "options": "Ol opsen (koma i separetim)",
+    "requiredLead": "Yu mas - ol patna insait long tim bilong yu i mas fulumap dispela pepa long rejistaim wanpela 'lead'",
+    "requiredUser": "Yu mas raitim - yu mas raitim taim yu putim wanpela memba bilong tim",
+    "creating": "Wokim...",
+    "createField": "Wokim Fil",
+    "columns": {
+      "field": "Fild",
+      "group": "Grup",
+      "type": "Taip",
+      "required": "I mas",
+      "enabled": "Enabled",
+      "kind": "Gutpela pasin"
+    },
+    "kind": {
+      "custom": "Kastom",
+      "core": "As (lok)",
+      "standard": "Stendet"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Teks",
+    "TEXTAREA": "Longpela teks",
+    "NUMBER": "Namba",
+    "CURRENCY": "Karensi",
+    "DATE": "Deit",
+    "SELECT": "Dropdown",
+    "LIST": "List"
+  },
+  "picker": {
+    "searchPlaceholder": "Painim ol 'lead field'...",
+    "summary": "{{shown}} shown · {{mandatory}} mandatory",
+    "mandatory": "Mendetori",
+    "noMatch": "Nogat ol fil i wankain."
+  },
+  "statuses": {
+    "intro": "Ol 'lead status' na 'sub-status' bilong yu - wanem samting wanwan i askim long en (wanpela deit na taim, ol 'lead fields') taim wanpela i apdetim wanpela 'lead' long en.",
+    "add": "+ Putim Stet",
+    "columns": {
+      "order": "Oda",
+      "status": "Stetes",
+      "subStatuses": "Ol liklik stet",
+      "asksFor": "Askim long",
+      "active": "Ektiv"
+    },
+    "moveUp": "Muv i go antap",
+    "moveDown": "Muv i go daun",
+    "defaultBadge": "Difolt bilong ol nupela lid",
+    "bookingBadge": "Status bilong buking",
+    "asksForLabel": "Askim long {{label}}",
+    "asksForDateTime": "Askim long deit na taim",
+    "none": "Nogat wanpela samting",
+    "dateTime": "Deit na taim",
+    "scheduledOn": "long {{names}}",
+    "fieldsSummary_other": "{{count}} fields ( {{mandatory}} mandatory)",
+    "deleteConfirm": "Rausim status \" {{name}} \"? Dispela i no inap long kamap bek.",
+    "editTitle": "Stretim Status - {{name}}",
+    "newTitle": "Nupela Status",
+    "name": "Nem bilong Status",
+    "colour": "Kala",
+    "active": "Ektiv",
+    "isDefault": "Difolt status bilong ol nupela lid",
+    "isBooking": "Status bilong buking (setim long Buk pinis)",
+    "whenMoved": "Taim ol i muvim wanpela 'lead' i go long dispela 'status'",
+    "askSchedule": "Askim long wanpela deit na taim (seduler)",
+    "scheduleLabelPlaceholder": "Lebel, eksampel Go long",
+    "fieldsToShow": "Ol 'lead fields' bilong soim long 'update form'",
+    "subStatusesTitle": "Ol liklik stet",
+    "subStatusesHint": "Wanwan sab-status i ken askim long deit na taim bilong em yet na putim ol fil bilong em yet - i stap antap long ol fil bilong status antap.",
+    "subStatusName": "Nem bilong sab-status",
+    "subFields": "Ol fil ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Deit na taim lebol, eksampel Ringim bek long",
+    "addSubStatus": "+ Putim Sab-Stet",
+    "saveStatus": "Sevim Stet",
+    "createStatus": "Wokim Stetus"
+  },
+  "notifications": {
+    "intro": "Toksave long ol stretpela manmeri taim wanpela 'lead' i kamap long wanpela 'status' - hariap, o wanpela taim pastaim/bihain long deit na taim we ol i makim long en.",
+    "add": "+ Putim toksave",
+    "columns": {
+      "notification": "Toksave",
+      "whenStatusIs": "Taim Status Em",
+      "sends": "Salim",
+      "to": "Long",
+      "via": "I go olsem",
+      "enabled": "Enabled"
+    },
+    "anyStatus": "Eni status",
+    "anySubStatus": "Eni sab-status",
+    "inactiveOption": "{{name}} (i no wok)",
+    "emptyRules": "Nogat toksave yet - putim wanpela long toksave long tim bilong yu taim wanpela 'lead' i kamap long wanpela 'status'.",
+    "jobs": {
+      "title": "Sediul na salim",
+      "firesAt": "Paia Long",
+      "notification": "Toksave",
+      "lead": "Go pas",
+      "status": "Stetes",
+      "details": "Ol infomesen",
+      "empty": "Nogat wanpela samting i sediul o salim yet.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "I no konfem yet",
+      "PROCESSING": "Prosesing",
+      "SENT": "Salim",
+      "FAILED": "I no mekim",
+      "SKIPPED": "Skipim",
+      "CANCELLED": "Ol i kenselim"
+    },
+    "deliveryStatus": {
+      "SENT": "salim",
+      "FAILED": "i no mekim",
+      "SKIPPED": "lusim"
+    },
+    "deliveryChannel": {
+      "IN_APP": "insait long ap",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Ol i makim yusa",
+      "owner": "Owna",
+      "updatedBy": "Apdetim long",
+      "role": "Wok: {{name}}"
+    },
+    "channels": {
+      "inApp": "Insait long ap",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Rausim toksave \" {{name}} \"? Ol 'pending reminder' bilong en i kenselim.",
+    "testPrompt": "Salim wanpela tes bilong dispela toksave i go long yu yet (insait long ap) yusim wanem 'lead ID ?",
+    "testSent": "Salim i go long belo bilong yu: {{title}} {{message}}",
+    "headersInvalid": "Ol het Webhook i mas i gat gutpela JSON , olsem {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Senisim toksave",
+    "newTitle": "Nupela toksave",
+    "name": "Nem",
+    "namePlaceholder": "eksampel Rimainda bilong visitim sait",
+    "whenStatus": "Taim status bilong wanpela lida i",
+    "subStatus": "Sub-status",
+    "send": "Salim (seduler)",
+    "custom": "Kastom...",
+    "modeBefore": "pastaim long taim ol i makim",
+    "modeAfter": "bihain long taim ol i makim",
+    "noScheduleWarning": "Dispela status i no askim long wanpela deit na taim, olsem na wanpela \"bipo/long/bihain long taim yu makim\" toksave bai i no inap kamap.",
+    "noScheduleFix": "Opim <strong>Ask long deit na taim</strong> bilong en aninit long Status & Sub-Status, o salim Kwiktaim.",
+    "sendTo": "Salim i go long (olgeta kombinesen)",
+    "recipientAssigned": "Ol i makim yusa (lida ona)",
+    "recipientOwner": "Papa bilong akaun / edmin",
+    "recipientUpdatedBy": "Man husat i bin apdetim status",
+    "everyoneWithRole": "Olgeta manmeri i gat wok",
+    "specificUsers": "Ol spesifik yusa (i wok)",
+    "inactiveNever": "Ol inaktiv yusa i no save kisim ol toksave, maski ol i makim.",
+    "deliverVia": "Givim long rot bilong",
+    "channelInApp": "Insait long ap (bel)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS provaida)",
+    "emailHint": "Imel i go long email adres bilong wanwan manmeri na i nidim SMTP long seva (beken/.env); inap long dispela taim ol email ol i salim i stap olsem ol i bin lusim.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Ol het ( JSON )",
+    "content": "Notifikesen konten",
+    "title": "Taitel",
+    "message": "Mesej",
+    "insertIntoTitle": "Putim insait long het tok",
+    "insertIntoMessage": "Putim insait long Mesej",
+    "anyLeadField": "Olgeta 'lead field' i wok tu, olsem <code1>{{example1}}</code1> o <code2>{{example2}}</code2> .",
+    "preview": "Lukluk pastaim (sampela lid)",
+    "enabled": "Enabled",
+    "saveRule": "Sevim toksave",
+    "createRule": "Wokim toksave",
+    "variables": {
+      "customerName": "Nem bilong lida",
+      "customerMobile": "Lida mobail",
+      "customerEmail": "Lida email",
+      "registrationId": "Lida ID",
+      "status": "Stetes",
+      "subStatus": "Sub-status",
+      "scheduleAt": "Deit na taim ol i makim",
+      "assignedTo": "Ol i makim yusa",
+      "updatedBy": "Apdetim long",
+      "recipient": "Nem bilong man i kisim",
+      "project": "Wok",
+      "notes": "Laspela toksave",
+      "partner": "Nem bilong poroman"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Wantu tasol taim status i stap",
+      "AT": "Long taim stret",
+      "A1D": "1 de bihain long taim ol i makim (sekim bihain)"
+    },
+    "immediately": "Wantu tru",
+    "atScheduled": "Long taim stret",
+    "before": {
+      "MINUTES_other": "{{count}} minit pastaim long taim ol i makim",
+      "HOURS_other": "{{count}} aua pastaim long taim ol i makim",
+      "DAYS_other": "{{count}} de pastaim long taim ol i makim",
+      "WEEKS_other": "{{count}} wik pastaim long taim ol i makim",
+      "MONTHS_other": "{{count}} mun pastaim long taim ol i makim",
+      "YEARS_other": "{{count}} yia bipo long taim ol i makim"
+    },
+    "after": {
+      "MINUTES_other": "{{count}} minit bihain long taim ol i makim",
+      "HOURS_other": "{{count}} aua bihain long taim ol i makim",
+      "DAYS_other": "{{count}} de bihain long taim ol i makim",
+      "WEEKS_other": "{{count}} wik bihain long taim ol i makim",
+      "MONTHS_other": "{{count}} mun bihain long taim ol i makim",
+      "YEARS_other": "{{count}} yia bihain long taim ol i makim"
+    },
+    "units": {
+      "MINUTES_other": "ol minit",
+      "HOURS_other": "ol aua",
+      "DAYS_other": "de",
+      "WEEKS_other": "wik",
+      "MONTHS_other": "mun",
+      "YEARS_other": "ol yia"
+    }
+  }
+}

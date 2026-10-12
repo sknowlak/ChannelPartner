@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "IiKhokelo Zam",
+    "signedInAs": "Ngena njengo {{name}} ( {{partnerId}} ) · amaxesha aboniswe kwi {{timezone}}",
+    "addLead": "+ Yongeza iNkokeli",
+    "tabs": {
+      "all": "Zonke ( {{count}} )",
+      "pending": "Isalindile ( {{count}} )",
+      "booked": "Igciniwe ( {{count}} )"
+    },
+    "searchPlaceholder": "Khangela ngegama, iselula, okanye ID sobhaliso...",
+    "manageColumns": "Lawula amaKholam",
+    "rowsPerPage": "Imiqolo ngephepha ngalinye",
+    "registrationId": "ID yobhaliso",
+    "emptyState": "Akukho zikhokelo okwangoku - bhalisa eyokuqala.",
+    "noMatch": "Akukho zikhokhelo ezihambelana nezi zihluzo.",
+    "showing": "Ibonisa {{from}} - {{to}} kwe {{total}} amangeno",
+    "actions": {
+      "preview": "Jonga kwangaphambili kunye nohlaziyo olukhawulezayo",
+      "history": "Imbali",
+      "email": "I-imeyile",
+      "whatsapp": "WhatsApp",
+      "call": "Fowuna"
+    },
+    "pagination": {
+      "first": "Iphepha lokuqala",
+      "previous": "Iphepha elidlulileyo",
+      "next": "Iphepha elilandelayo",
+      "last": "Iphepha lokugqibela"
+    }
+  },
+  "columns": {
+    "status": "Ubume",
+    "assignTo": "Yabela Uku",
+    "booked": "Ibhukishiwe",
+    "protectionUntil": "Ukukhuselwa kude kube"
+  },
+  "booking": {
+    "booked": "Ibhukishiwe",
+    "pending": "Ilindile"
+  },
+  "assign": {
+    "unassigned": "Akuthunyelwanga",
+    "owner": "{{name}} (Umnini)",
+    "inactive": "{{name}} (ayisebenzi)",
+    "unknownUser": "Umsebenzisi ongaziwayo",
+    "assignedTo": "Yabelwe u {{name}}"
+  },
+  "form": {
+    "addTitle": "Yongeza iKhokelo",
+    "editTitle": "Hlela iNkokheli",
+    "noPermissionAdd": "Awunayo imvume yokubhalisa izikhokelo.",
+    "noPermissionEdit": "Awunayo imvume yokuhlela izikhokelo.",
+    "selectPlaceholder": "Khetha...",
+    "commaSeparated": "Ikoma yahluliwe",
+    "phonePlaceholder": "Inombolo yomnxeba",
+    "countryCode": "Ikhowusi yelizwe"
+  },
+  "project": {
+    "none": "Akukho projekthi okwangoku (ayibhekiswanga)",
+    "notInList": "{{project}} (hayi kuluhlu lweprojekthi)"
+  },
+  "journey": {
+    "customer": "Umthengi",
+    "currentOwner": "UMnini wangoku",
+    "protectionExpiry": "Ukuphela koKhuseleko",
+    "leadStatus": "Ubume bokukhokela",
+    "scheduled": "Icwangcisiwe",
+    "assignedTo": "Yabelwe Uku",
+    "referral": "Ukudluliselwa",
+    "builderReason": "Isizathu somakhi: {{reason}}",
+    "bookedHint": "Ibhukishwe ngumakhi - ubunini obusebenzayo bufudukele kumakhi; ukufaneleka kwakho kunye nokufaneleka kwekhomishini kugcinwa.",
+    "notBookedHint": "Ukubhukisha kuqinisekiswa ngumakhi xa besamnkela ukuthunyelwa.",
+    "quickUpdate": "Uhlaziyo oluKhawulezayo",
+    "leadDetails": "Iinkcukacha zokukhokela",
+    "progressHistory": "Imbali yenkqubela phambili",
+    "timesIn": "(amaxesha kwi {{timezone}} )",
+    "backToMyLeads": "Buyela kwiiNkokeli zam",
+    "editLead": "Hlela iNkokheli"
+  },
+  "referral": {
+    "NOT_REFERRED": "Ayithunyelwanga (akukho projekthi)",
+    "PENDING_BUILDER": "Ilinde umakhi",
+    "ACCEPTED": "Yamkelwe ngumakhi",
+    "REJECTED": "Yaliwe ngumakhi"
+  },
+  "preview": {
+    "ariaLabel": "Ukujonga kwangaphambili",
+    "title": "Lead Preview",
+    "source": "Umthombo",
+    "location": "Indawo",
+    "scheduled": "Icwangcisiwe",
+    "registered": "Ibhalisiwe",
+    "latestNote": "Inqaku lamva nje",
+    "quickUpdate": "Uhlaziyo oluKhawulezayo",
+    "fullDetails": "Iinkcukacha ezipheleleyo",
+    "editLead": "Hlela iNkokheli",
+    "history": "Imbali"
+  },
+  "quick": {
+    "assignedTo": "Yabelwe Uku",
+    "status": "Ubume",
+    "subStatus": "Ubume obungaphantsi",
+    "selectSubStatus": "Khetha ubume obuphantsi...",
+    "none": "Akukho nanye",
+    "scheduledAt": "Icwangciswe ngo",
+    "localTime": "ixesha lendawo",
+    "note": "Phawula",
+    "notePlaceholder": "Kwenzeke ntoni kule mnxeba/utyelelo? (ukhetho)",
+    "updateStatus": "Ubume bohlaziyo",
+    "statusUpdated": "Ubume buhlaziyiwe",
+    "bookedLocked": "Olu khokelo lubhukishwe - imeko yalo ayinakuguqulwa.",
+    "viewOnly": "Ungalujonga olu khokelo, kodwa indima yakho ayikwazi ukuyihlaziya."
+  },
+  "history": {
+    "title": "Imbali- {{registrationId}}",
+    "tabs": {
+      "all": "Konke",
+      "status": "Ubume",
+      "assignment": "Isabelo",
+      "notes": "Amanqaku"
+    },
+    "doneBy": "Yenziwe ngu {{actor}}",
+    "system": "Inkqubo",
+    "platforms": {
+      "System": "Inkqubo",
+      "External": "Ngaphandle",
+      "Web": "Web",
+      "Mobile": "Iselula"
+    },
+    "added": "yongezwe",
+    "updated": "ihlaziywe",
+    "empty": "(ayinanto)",
+    "noHistory": "Akukho mbali kolu didi okwangoku.",
+    "fieldLabels": {
+      "stage": "Ubume",
+      "subStatus": "Ubume obungaphantsi",
+      "scheduledAt": "Ishedyuli",
+      "notes": "Amanqaku",
+      "assignedTo": "Yabelwe Uku"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Ubhaliso lomlingane lufunyenwe",
+      "DUPLICATE_CHECK_COMPLETED": "Ukuhlolwa okuphindiweyo kugqityiwe - akukho phindaphindo lusebenzayo lufunyenweyo",
+      "REGISTRATION_ACCEPTED": "Ubhaliso lwamkelwe",
+      "PROTECTION_GRANTED_one": "{{count}} -ukhuseleko losuku lunikiwe",
+      "PROTECTION_GRANTED_other": "{{count}} -ukhuseleko losuku lunikiwe",
+      "REGISTRATION_ATTEMPT_REJECTED": "Umzamo wokubhalisa ophindwe kabini ngu- {{partnerId}} waliwe",
+      "LEAD_DETAILS_UPDATED_one": "Indawo {{count}} ehlaziyiweyo",
+      "LEAD_DETAILS_UPDATED_other": "iindawo {{count}} ezihlaziyiweyo",
+      "STAGE_UPDATED": "Isimo sihlaziyiwe ukuya ku {{status}}",
+      "LEAD_ASSIGNED": "Yabelwe u {{name}}",
+      "LEAD_UNASSIGNED": "Akuthunyelwanga",
+      "BOOKING_COMPLETED": "Ukubhukisha kugqityiwe",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Ubunini bokusebenza budluliselwe kuMakhi",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Ubambiswano lomlingane lugciniwe",
+      "COMMISSION_ELIGIBILITY_CREATED": "Ukufaneleka kweKhomishini kwenziwa",
+      "HANDOVER_COMPLETED": "Unikezelo lugqityiwe",
+      "REFERRAL_ACCEPTED": "Umakhi wamkele isibhengezo",
+      "REFERRAL_REJECTED": "Umakhi ukukhabile ukuthunyelwa. Isizathu: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Umlawuli ukhuphe ukhuseleko oluphindiweyo kwangoko. Isizathu: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Umlawuli ukwabele ubhaliso ukusuka {{from}} ukuya {{to}} . Isizathu: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Lawula amaKholam",
+    "hint": "Tsala ukucwangcisa kwakhona · jonga ukuze ubonise",
+    "showAll": "Bonisa zonke",
+    "resetDefault": "Phinda umisele uMiyo"
+  },
+  "filters": {
+    "title": "Izihluzi",
+    "allProjects": "Zonke iiprojekthi",
+    "any": "Nayiphi na",
+    "noFields": "Azikho ezinye iindawo ezihluzwayo ezenziweyo okwangoku (Useto > Inkokhelo).",
+    "clearAll": "Yicime yonke"
+  },
+  "phone": {
+    "MISSING": "Inombolo yefowuni iyafuneka.",
+    "INVALID": "Nceda ngenisa inombolo yefowuni esebenzayo.",
+    "TOO_SHORT": "Inombolo yefowuni imfutshane kakhulu.",
+    "TOO_LONG": "Inombolo yefowuni inde kakhulu.",
+    "INVALID_FOR_COUNTRY": "Le nombolo yefowuni ayisebenzi e- {{country}} .",
+    "COUNTRY_MISMATCH": "Nceda ukhethe ikhowudi yelizwe eyiyo.",
+    "NOT_MOBILE": "Nceda ufake inombolo yeselula, hayi ifowuni yasekhaya."
+  }
+}

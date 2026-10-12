@@ -1,0 +1,83 @@
+{
+  "title": "チームの管理",
+  "tabs": {
+    "members": "チームメンバー",
+    "roles": "役割と権限",
+    "profile": "私のプロフィール"
+  },
+  "roles": {
+    "owner": "所有者",
+    "member": "チームメンバー"
+  },
+  "profile": {
+    "updated": "プロフィールを更新しました。",
+    "basicInfo": "基本情報",
+    "organisationInfo": "組織情報",
+    "preferences": "設定",
+    "companyName": "会社名・団体名",
+    "city": "市",
+    "state": "州",
+    "currencyHelp": "チーム全体の予算と予約値を表示するために使用されます。",
+    "useDeviceTimezone": "デバイスのタイムゾーンを使用します ( {{timezone}} )",
+    "securityRole": "セキュリティと役割",
+    "newPassword": "新しいパスワード (変更しない場合は空白のままにします)",
+    "currentPassword": "現在のパスワード",
+    "memberSince": "メンバー歴",
+    "languageSaved": "アカウントに保存された言語 - サインインするすべてのデバイスで使用されます。"
+  },
+  "members": {
+    "intro": "チームのメンバーを追加、編集、非アクティブ化、または削除します。彼らは同じリードへのアクセスを共有します。",
+    "noPermission": "チームメンバーを追加、編集、または削除する権限がありません。",
+    "addNew": "+ 新しいユーザーを追加",
+    "passwordLabel": "{{label}} (8 文字以上)",
+    "rolePermissions": "役割と権限",
+    "adding": "追加中...",
+    "addMember": "チームメンバーを追加",
+    "tabAll": "すべて ( {{count}} )",
+    "tabActive": "アクティブ ( {{count}} )",
+    "tabInactive": "非アクティブ ( {{count}} )",
+    "searchPlaceholder": "名前またはユーザー名を検索...",
+    "allTimezones": "すべてのタイムゾーン",
+    "perPage": "ページごとのエントリ数",
+    "contact": "接触",
+    "added": "追加した",
+    "toggleActive": "アクティブ - クリックして非アクティブ化します",
+    "toggleInactive": "非アクティブ - クリックしてアクティブ化します",
+    "empty": "まだチームメンバーがいません。",
+    "noMatch": "これらのフィルターに一致するチーム メンバーはいません。",
+    "showing": "{{total}}件中{{from}} ～ {{to}}件を表示しています",
+    "firstPage": "最初のページ",
+    "previousPage": "前のページへ",
+    "nextPage": "次のページ",
+    "lastPage": "最後のページ"
+  },
+  "editMember": {
+    "title": "ユーザーの編集",
+    "noPermission": "チームメンバーを編集する権限がありません。",
+    "backToTeam": "チームに戻る",
+    "cantChangeOwn": "自分自身の役割やステータスを変更することはできません。",
+    "needsManageRoles": "メンバーの役割を変更するには、「役割の管理」権限が必要です。",
+    "addedBy": "追加者",
+    "addedOn": "追加日"
+  },
+  "rolesPage": {
+    "intro": "スーパー管理者、管理者、およびマネージャーは組み込みで変更できません。それ以外の場合はカスタム ロールを作成してください。",
+    "noPermission": "役割を管理する権限がありません。",
+    "createCustom": "+ カスタムロールの作成",
+    "roleName": "役割名",
+    "permissions": "権限",
+    "members": "メンバー",
+    "creating": "作成...",
+    "createRole": "ロールの作成",
+    "systemRole": "システムの役割",
+    "builtIn": "内蔵",
+    "empty": "まだ役割がありません。"
+  },
+  "permissions": {
+    "MANAGE_LEADS": "リードの管理 (作成、進行、予約)",
+    "MANAGE_TEAM": "チームの管理 (メンバーの追加、編集、削除)",
+    "MANAGE_ROLES": "役割と権限の管理",
+    "MANAGE_SETTINGS": "設定の管理 (リードフォームフィールド)",
+    "none": "権限がありません"
+  }
+}

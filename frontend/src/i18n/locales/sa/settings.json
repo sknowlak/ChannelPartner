@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "सेटिंग्स्",
+    "noPermission": "भवतः सेटिङ्ग्स् प्रबन्धनस्य अनुमतिः नास्ति ।"
+  },
+  "categories": {
+    "lead": "सीसम्‌",
+    "user": "उपयोक्ता",
+    "integrations": "एकीकरणानि"
+  },
+  "leadTabs": {
+    "fields": "क्षेत्राणि",
+    "statuses": "स्थिति एवं उपस्थिति",
+    "notifications": "अधिसूचना एवं समयनिर्धारक"
+  },
+  "fields": {
+    "leadIntro": "लीड-कॅप्चर-प्रपत्रं विन्यस्यताम्: क्षेत्राणि सक्षम/अक्षमं कुर्वन्तु, तान् आवश्यकान् चिह्नयन्तु, अथवा स्वकीयानि कस्टम्-क्षेत्राणि योजयन्तु ।",
+    "userIntro": "दलसदस्यं योजयतु/सम्पादयतु इति प्रपत्रं विन्यस्यताम्: क्षेत्राणि सक्षम/अक्षमं कुर्वन्तु, तान् आवश्यकान् चिह्नयन्तु, अथवा स्वकीयानि कस्टम् क्षेत्राणि योजयन्तु।",
+    "addCustomField": "+ Custom Field योजयतु",
+    "fieldLabel": "क्षेत्र लेबल",
+    "group": "समूह",
+    "groupPlaceholderLead": "यथा Inquiry Info",
+    "groupPlaceholderUser": "यथा अतिरिक्तविवरणम्",
+    "dataType": "दत्तांशप्रकारः",
+    "options": "विकल्पाः (अल्पविरामेन पृथक्कृताः) २.",
+    "requiredLead": "आवश्यकम् - भवतः दलस्य भागिनानां कृते लीड् पञ्जीकरणार्थं एतत् भर्तव्यम्",
+    "requiredUser": "आवश्यकम् - दलस्य सदस्यं योजयन्ते सति भर्तव्यम्",
+    "creating": "सृजति...",
+    "createField": "क्षेत्र रचयतु",
+    "columns": {
+      "field": "क्षेत्रम्‌",
+      "group": "समूह",
+      "type": "प्रकारः",
+      "required": "आवश्यकः",
+      "enabled": "सक्षमम्",
+      "kind": "दयालु"
+    },
+    "kind": {
+      "custom": "आचारः",
+      "core": "कोर (लॉक्ड्) ९.",
+      "standard": "स्तरीय"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "पाठ",
+    "TEXTAREA": "दीर्घः पाठः",
+    "NUMBER": "संख्या",
+    "CURRENCY": "मुद्रा",
+    "DATE": "दिनाङ्कः",
+    "SELECT": "पतनम्",
+    "LIST": "सूची"
+  },
+  "picker": {
+    "searchPlaceholder": "लीड क्षेत्रेषु अन्वेषणं कुर्वन्तु...",
+    "summary": "{{shown}} दर्शितम् · {{mandatory}} अनिवार्यम्",
+    "mandatory": "अनिवार्यः",
+    "noMatch": "न क्षेत्राणि मेलन्ति।"
+  },
+  "statuses": {
+    "intro": "भवतः लीड-स्थितिः उप-स्थितिः च - यदा कोऽपि लीड्-अद्यतनं करोति तदा प्रत्येकं यत् याचते (तिथिः & समयः, लीड्-क्षेत्राणि) ।",
+    "add": "+ स्थितिं योजयतु",
+    "columns": {
+      "order": "आदेशः",
+      "status": "स्थितिः",
+      "subStatuses": "उपस्थितिः",
+      "asksFor": "पृच्छति",
+      "active": "सक्रियं"
+    },
+    "moveUp": "उपरि गच्छतु",
+    "moveDown": "अधः गच्छतु",
+    "defaultBadge": "नूतनानां लीड्स् कृते पूर्वनिर्धारितम्",
+    "bookingBadge": "बुकिंगस्य स्थितिः",
+    "asksForLabel": "{{label}} इति पृच्छति।",
+    "asksForDateTime": "तिथिं & समयं च पृच्छति",
+    "none": "न कश्चित्",
+    "dateTime": "तिथि एवं समय",
+    "scheduledOn": "{{names}} इत्यत्र ।",
+    "fieldsSummary_one": "{{count}} क्षेत्र ( {{mandatory}} अनिवार्य)",
+    "fieldsSummary_other": "{{count}} क्षेत्राणि ( {{mandatory}} अनिवार्यम्)",
+    "deleteConfirm": "स्थितिं विलोपयतु \" {{name}} \"? एतत् निवर्तयितुं न शक्यते।",
+    "editTitle": "सम्पादन स्थिति - {{name}}",
+    "newTitle": "नवीन स्थिति",
+    "name": "स्थितिनाम",
+    "colour": "वर्ण",
+    "active": "सक्रियं",
+    "isDefault": "नूतनानां लीड्स् कृते पूर्वनिर्धारितस्थितिः",
+    "isBooking": "बुकिंग् स्थितिः (सम्पूर्ण बुकिंग् द्वारा निर्धारितम्)",
+    "whenMoved": "यदा कश्चन सीसः अस्मिन् स्थितिं प्रति स्थानान्तरितः भवति",
+    "askSchedule": "तिथिं समयं च पृच्छन्तु (scheduler)",
+    "scheduleLabelPlaceholder": "लेबल, यथा Visit at",
+    "fieldsToShow": "अद्यतनप्रपत्रे दर्शयितुं क्षेत्राणि लीडयन्तु",
+    "subStatusesTitle": "उपस्थितिः",
+    "subStatusesHint": "प्रत्येकं उपस्थितिः स्वकीयं तिथिं & समयं च पृच्छितुं शक्नोति तथा च स्वकीयाः क्षेत्राणि योजयितुं शक्नोति - उपरि स्थितिक्षेत्रस्य उपरि दर्शितम् ।",
+    "subStatusName": "उपस्थिति नाम",
+    "subFields": "क्षेत्राणि ( {{count}} ) .",
+    "subScheduleLabelPlaceholder": "तिथि & समय लेबल, यथा Call back at",
+    "addSubStatus": "+ उपस्थितिं योजयतु",
+    "saveStatus": "स्थितिं रक्षतु",
+    "createStatus": "स्थितिं रचयन्तु"
+  },
+  "notifications": {
+    "intro": "यदा कश्चन लीडः स्थितिं प्राप्नोति - तत्क्षणमेव, अथवा तस्मिन् निर्धारितदिनाङ्कात् & समयात् पूर्वं/पश्चात् निर्धारितसमयं सम्यक् जनान् सूचयन्तु।",
+    "add": "+ सूचनां योजयतु",
+    "columns": {
+      "notification": "अधिसूचना",
+      "whenStatusIs": "यदा स्थितिः भवति",
+      "sends": "प्रेषयति",
+      "to": "इत्यस्मै",
+      "via": "माध्यमे",
+      "enabled": "सक्षमम्"
+    },
+    "anyStatus": "कोऽपि स्थितिः",
+    "anySubStatus": "कोऽपि उपस्थितिः",
+    "inactiveOption": "{{name}} (निष्क्रिय) २.",
+    "emptyRules": "अद्यापि सूचनाः नास्ति - यदा लीड् स्थितिं प्राप्नोति तदा भवतः दलं सचेष्टयितुं एकं योजयन्तु।",
+    "jobs": {
+      "title": "अनुसूचित एवं प्रेषित",
+      "firesAt": "अग्निः At",
+      "notification": "अधिसूचना",
+      "lead": "सीसम्‌",
+      "status": "स्थितिः",
+      "details": "वर्णन",
+      "empty": "अद्यापि किमपि निर्धारितं वा प्रेषितं वा नास्ति।",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "विचाराधीनः",
+      "PROCESSING": "प्रसंस्करणम्",
+      "SENT": "प्रेषित",
+      "FAILED": "असफल",
+      "SKIPPED": "लङ्घितम्",
+      "CANCELLED": "रद्दं कृतम्"
+    },
+    "deliveryStatus": {
+      "SENT": "प्रेषित",
+      "FAILED": "असफल",
+      "SKIPPED": "skipped"
+    },
+    "deliveryChannel": {
+      "IN_APP": "in-app",
+      "EMAIL": "ईमेल",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "नियुक्तः उपयोक्ता",
+      "owner": "स्वामी",
+      "updatedBy": "द्वारा अद्यतन किया गया",
+      "role": "भूमिकाः {{name}}"
+    },
+    "channels": {
+      "inApp": "इन-एप्",
+      "email": "ईमेल",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "सूचनां विलोपयतु \" {{name}} \"? तस्मात् लम्बितस्मारकाः रद्दाः भवन्ति।",
+    "testPrompt": "अस्य सूचनायाः परीक्षणं स्वयमेव (in-app) प्रेषयन्तु कस्य lead ID उपयोगेन ?",
+    "testSent": "भवतः घण्टां प्रति प्रेषितम्: {{title}} {{message}}",
+    "headersInvalid": "Webhook शीर्षकं वैधं JSON , यथा {\"प्राधिकरणम्\": \"वाहकः xyz\"} भवितुमर्हति ।",
+    "editTitle": "अधिसूचना सम्पादयतु",
+    "newTitle": "नवीन अधिसूचना",
+    "name": "नामः",
+    "namePlaceholder": "यथा साइट् भ्रमणस्य स्मरणम्",
+    "whenStatus": "यदा कस्यचित् लीडस्य स्थितिः भवति",
+    "subStatus": "उपस्थितिः",
+    "send": "प्रेषयतु (निर्माता) २.",
+    "custom": "आचारः...",
+    "modeBefore": "निर्धारितसमयात् पूर्वं",
+    "modeAfter": "निर्धारितसमयानन्तरं",
+    "noScheduleWarning": "एषा स्थितिः तिथिं & समयं न याचते, अतः \"निर्धारितसमये/पश्चात्\" इति सूचना कदापि न प्रज्वलति स्म ।",
+    "noScheduleFix": "Statuses & Sub-Statuses इत्यस्य अन्तर्गतं तस्य <strong>तिथिं समयं च पृच्छन्तु</strong> चालू कुर्वन्तु, अथवा तत्क्षणं प्रेषयन्तु।",
+    "sendTo": "प्रेषयतु (किमपि संयोजनम्) .",
+    "recipientAssigned": "नियुक्तः उपयोक्ता (मुख्यस्वामिः) २.",
+    "recipientOwner": "खाता स्वामी / व्यवस्थापक",
+    "recipientUpdatedBy": "यः व्यक्तिः स्थितिं अद्यतनं कृतवान्",
+    "everyoneWithRole": "सर्वेषां भूमिका सह",
+    "specificUsers": "विशिष्टाः उपयोक्तारः (सक्रियाः) २.",
+    "inactiveNever": "निष्क्रियप्रयोक्तारः कदापि सूचनाः न प्राप्नुवन्ति, यद्यपि चयनिताः ।",
+    "deliverVia": "मार्गेण वितरन्तु",
+    "channelInApp": "इन-एप् (घण्टा) ९.",
+    "channelEmail": "ईमेल",
+    "channelWebhook": "Webhook ( WhatsApp / SMS प्रदाता) २.",
+    "emailHint": "ईमेल प्रत्येकस्य प्राप्तकर्तायाः ईमेल-सङ्केतं गच्छति तथा च सर्वरे (backend/.env) SMTP-स्थापनस्य आवश्यकता भवति; तावत्पर्यन्तं ईमेलप्रेषणं त्यक्तवत् लॉग् भवति।",
+    "webhookUrl": "Webhook URL ( POST , JSON ) .",
+    "headers": "शीर्षकम् ( JSON ) .",
+    "content": "अधिसूचना सामग्री",
+    "title": "शीर्षक",
+    "message": "सन्देशः",
+    "insertIntoTitle": "Title इत्यत्र सम्मिलितं कुर्वन्तु",
+    "insertIntoMessage": "Message इत्यत्र सम्मिलितं कुर्वन्तु",
+    "anyLeadField": "यत्किमपि लीडक्षेत्रम् अपि कार्यं करोति, यथा <code1>{{example1}}</code1> अथवा <code2>{{example2}}</code2> ।",
+    "preview": "पूर्वावलोकन (नमूना लीड) २.",
+    "enabled": "सक्षमम्",
+    "saveRule": "सूचनां रक्षतु",
+    "createRule": "सूचनां रचयन्तु",
+    "variables": {
+      "customerName": "सीसा नाम",
+      "customerMobile": "लीड मोबाईल",
+      "customerEmail": "ईमेलस्य नेतृत्वं कुर्वन्तु",
+      "registrationId": "सीसा ID",
+      "status": "स्थितिः",
+      "subStatus": "उपस्थितिः",
+      "scheduleAt": "निर्धारित तिथि एवं समय",
+      "assignedTo": "नियुक्तः उपयोक्ता",
+      "updatedBy": "द्वारा अद्यतन किया गया",
+      "recipient": "प्राप्तकर्ता नाम",
+      "project": "प्रकल्प",
+      "notes": "नवीनतम टिप्पणी",
+      "partner": "भागीदार नाम"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "तत्क्षणमेव यदा स्थितिः सेट् भवति",
+      "AT": "निर्धारितसमये",
+      "A1D": "निर्धारितसमयानन्तरं १ दिवसः (अनुवर्तनपरीक्षा) २."
+    },
+    "immediately": "झटिति",
+    "atScheduled": "निर्धारितसमये",
+    "before": {
+      "MINUTES_one": "{{count}} निर्धारितसमयात् पूर्वं निमेषः",
+      "MINUTES_other": "{{count}} निर्धारितसमयात् पूर्वं निमेषाः",
+      "HOURS_one": "{{count}} निर्धारितसमयात् पूर्वं घण्टा",
+      "HOURS_other": "{{count}} निर्धारितसमयात् पूर्वं घण्टाः",
+      "DAYS_one": "{{count}} निर्धारितसमयात् पूर्वं दिवसः",
+      "DAYS_other": "{{count}} निर्धारितसमयात् पूर्वं दिवसाः",
+      "WEEKS_one": "{{count}} निर्धारितसमयात् पूर्वं सप्ताहः",
+      "WEEKS_other": "{{count}} निर्धारितसमयात् पूर्वं सप्ताहाः",
+      "MONTHS_one": "{{count}} निर्धारितसमयात् पूर्वं मासः",
+      "MONTHS_other": "{{count}} निर्धारितसमयात् पूर्वं मासाः",
+      "YEARS_one": "{{count}} निर्धारितसमयात् पूर्वं वर्षम्",
+      "YEARS_other": "{{count}} निर्धारितसमयात् पूर्वं वर्षाणि"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} निर्धारितसमयानन्तरं निमेषः",
+      "MINUTES_other": "{{count}} निर्धारितसमयानन्तरं निमेषाः",
+      "HOURS_one": "{{count}} निर्धारितसमयानन्तरं घण्टा",
+      "HOURS_other": "{{count}} निर्धारितसमयानन्तरं घण्टाः",
+      "DAYS_one": "{{count}} निर्धारितसमयानन्तरं दिवसः",
+      "DAYS_other": "{{count}} निर्धारितसमयानन्तरं दिवसान्",
+      "WEEKS_one": "{{count}} निर्धारितसमयानन्तरं सप्ताहः",
+      "WEEKS_other": "{{count}} निर्धारितसमयानन्तरं सप्ताहान् अनन्तरम्",
+      "MONTHS_one": "{{count}} निर्धारितसमयानन्तरं मासः",
+      "MONTHS_other": "{{count}} निर्धारितसमयानन्तरं मासाः",
+      "YEARS_one": "{{count}} निर्धारितसमयानन्तरं वर्षम्",
+      "YEARS_other": "{{count}} निर्धारितसमयानन्तरं वर्षाणि यावत्"
+    },
+    "units": {
+      "MINUTES_one": "क्षणं",
+      "MINUTES_other": "पन्चनिमेषः",
+      "HOURS_one": "घटकः",
+      "HOURS_other": "घण्टानः",
+      "DAYS_one": "दिनं",
+      "DAYS_other": "दिवसाः",
+      "WEEKS_one": "सप्ताहः",
+      "WEEKS_other": "सप्ताहाः",
+      "MONTHS_one": "माह",
+      "MONTHS_other": "मासाः",
+      "YEARS_one": "वर्ष",
+      "YEARS_other": "वर्षाः"
+    }
+  }
+}

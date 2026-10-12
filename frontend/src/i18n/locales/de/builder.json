@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Builder-Portal",
+    "referrals": "Empfehlungen",
+    "builderLogin": "Builder-Login",
+    "partnerLogin": "Channel-Partner-Login"
+  },
+  "login": {
+    "title": "Bauherr anmelden",
+    "hint": "Builder-Konten werden von Leadrat erstellt. Fragen Sie Ihren Administrator, wenn Sie noch keines haben."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Warten auf Ihre Entscheidung",
+    "ACCEPTED": "Akzeptiert",
+    "REJECTED": "Abgelehnt"
+  },
+  "list": {
+    "title": "Empfehlungen",
+    "allProjects": "Alle Projekte",
+    "allStatuses": "Alle Status",
+    "count_one": "{{count}} Empfehlung",
+    "count_other": "{{count}} Empfehlungen",
+    "columns": {
+      "referral": "Verweisung",
+      "customer": "Kunde",
+      "project": "Projekt",
+      "sourcePartner": "Quellpartner",
+      "status": "Status",
+      "booking": "Buchung",
+      "registered": "Eingetragen"
+    },
+    "booked": "Gebucht",
+    "empty": "Noch keine Empfehlungen."
+  },
+  "detail": {
+    "customer": "Kunde",
+    "sourcePartner": "Quellpartner",
+    "attributionNote": "(Namensnennung – kann nicht geändert werden)",
+    "leadStatus": "Lead-Status",
+    "protectedUntil": "Geschützt bis",
+    "referral": "Verweisung",
+    "reason": "Grund: {{reason}}",
+    "booking": "Buchung",
+    "bookedOwner": "Gebucht – Sie sind der operative Eigentümer",
+    "notBooked": "Nicht gebucht",
+    "sharedAfterBooking": "Wird nach der Buchung geteilt",
+    "accept": "Akzeptieren Sie die Empfehlung",
+    "confirmBooking": "Bestätigen Sie die Buchung",
+    "reject": "Empfehlung ablehnen",
+    "rejectReasonLabel": "Grund der Absage (wird dem Partner angezeigt) *",
+    "rejectConfirm": "Ablehnen",
+    "confirmBookingPrompt": "Buchung bestätigen? Das operative Eigentum geht auf Sie über und der Partner wird provisionsberechtigt.",
+    "notice": {
+      "booked": "Buchung bestätigt.",
+      "accepted": "Empfehlung angenommen.",
+      "rejected": "Empfehlung abgelehnt."
+    },
+    "backToReferrals": "Zurück zu Empfehlungen"
+  },
+  "history": {
+    "title": "Geschichte",
+    "actor": {
+      "system": "System",
+      "partner": "Vertriebspartner",
+      "admin": "Leadrat Administrator"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Partneranmeldung erhalten",
+      "DUPLICATE_CHECK_COMPLETED": "Duplikatprüfung abgeschlossen – kein aktives Duplikat gefunden",
+      "REGISTRATION_ACCEPTED": "Anmeldung angenommen",
+      "PROTECTION_GRANTED_one": "{{count}} -tägiger Schutz gewährt",
+      "PROTECTION_GRANTED_other": "{{count}} -tägiger Schutz gewährt",
+      "STAGE_UPDATED": "Status aktualisiert auf {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Feld {{count}} aktualisiert",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} Felder aktualisiert",
+      "LEAD_ASSIGNED": "Zugewiesen an {{name}}",
+      "LEAD_UNASSIGNED": "Nicht zugewiesen",
+      "REFERRAL_ACCEPTED": "Builder akzeptierte die Empfehlung",
+      "REFERRAL_REJECTED": "Der Bauunternehmer lehnte die Überweisung ab. Grund: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Doppelter Registrierungsversuch von {{partner}} abgelehnt",
+      "BOOKING_COMPLETED": "Buchung abgeschlossen",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Das operative Eigentum wurde auf den Builder übertragen",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Namensnennung des Partners erhalten",
+      "COMMISSION_ELIGIBILITY_CREATED": "Provisionsberechtigung erstellt",
+      "HANDOVER_COMPLETED": "Übergabe abgeschlossen",
+      "ADMIN_PROTECTION_RELEASED": "Der Administrator hat den Duplikatschutz vorzeitig freigegeben. Grund: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Der Administrator hat die Registrierung von {{from}} auf {{to}} neu zugewiesen. Grund: {{reason}}"
+    }
+  }
+}

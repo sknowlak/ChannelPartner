@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Лэсьтӥсь портал",
+    "referrals": "Рефералъёс",
+    "builderLogin": "Лэсьтӥсь пырон",
+    "partnerLogin": "Каналлэн партнерез пырон"
+  },
+  "login": {
+    "title": "Лэсьтӥсь пырон",
+    "hint": "Лэсьтӥсь учётной пусъёс кылдытэмын Leadrat . Юалэ администратордылэсь, тӥляд ӧвӧл ке."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Возьмасько тӥлесьтыд решениедэс",
+    "ACCEPTED": "Кутэмын",
+    "REJECTED": "Отказать каремын"
+  },
+  "list": {
+    "title": "Рефералъёс",
+    "allProjects": "Вань проектъёс",
+    "allStatuses": "Вань статусъёс",
+    "count_one": "{{count}} направление",
+    "count_other": "{{count}} рефералъёс",
+    "columns": {
+      "referral": "Реферал",
+      "customer": "Клиент",
+      "project": "Проект",
+      "sourcePartner": "Источник партнерез",
+      "status": "Инлыкез",
+      "booking": "Бронирование",
+      "registered": "Регистрировать каремын"
+    },
+    "booked": "Бронировать каремын",
+    "empty": "Али ӧвӧл рефералъёс."
+  },
+  "detail": {
+    "customer": "Клиент",
+    "sourcePartner": "Источник партнерез",
+    "attributionNote": "(атрибуция - воштыны уг луы)",
+    "leadStatus": "Валтӥсь статусэз",
+    "protectedUntil": "Утемын",
+    "referral": "Реферал",
+    "reason": "Мугез: {{reason}}",
+    "booking": "Бронирование",
+    "bookedOwner": "Бронировать каремын - тӥ операционной кузёез",
+    "notBooked": "Ӧз бронь",
+    "sharedAfterBooking": "Бронирование бере люкиськиз",
+    "accept": "Рефералэз кутыны",
+    "confirmBooking": "Бронированиез юнматон",
+    "reject": "Рефералэз палэнтыны",
+    "rejectReasonLabel": "Отказлэн мугез (партнерлы возьматэмын) *",
+    "rejectConfirm": "Куронэз палэнтыны",
+    "confirmBookingPrompt": "Бронированиез юнматэ-а? Операционной кузёйыръёс тӥледлы выжиз но партнерез комиссилы право басьтэ.",
+    "notice": {
+      "booked": "Бронирование юнматэмын.",
+      "accepted": "Направление кутэмын.",
+      "rejected": "Реферал отклонен."
+    },
+    "backToReferrals": "Рефералъёс доры берытскыны"
+  },
+  "history": {
+    "title": "История",
+    "actor": {
+      "system": "Система",
+      "partner": "Каналлэн партнерез",
+      "admin": "Leadrat админ"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Партнер регистрация басьтэмын",
+      "DUPLICATE_CHECK_COMPLETED": "Дубликат эскерон быдэсмиз - ӧз шедьтэ активной дубликат",
+      "REGISTRATION_ACCEPTED": "Регистрация кутэмын",
+      "PROTECTION_GRANTED_one": "{{count}} -нунал утён сётэмын",
+      "PROTECTION_GRANTED_other": "{{count}} -нунал утён сётэмын",
+      "STAGE_UPDATED": "Статусэз выльдӥськиз {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Выльдӥськиз {{count}} бусы",
+      "LEAD_DETAILS_UPDATED_other": "Выльдӥськиз {{count}} бусыос",
+      "LEAD_ASSIGNED": "{{name}} сётэмын",
+      "LEAD_UNASSIGNED": "Неназначенный",
+      "REFERRAL_ACCEPTED": "Лэсьтӥсь рефералэз кутӥз",
+      "REFERRAL_REJECTED": "Лэсьтӥсь ӧз лэзьы направлениез. Мугез: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} лэн дубликат регистрация тыршонэз ӧз лэзе",
+      "BOOKING_COMPLETED": "Бронирование быдэсмиз",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Операционной кузёйыръёс лэсьтӥськисьлы сётэмын",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Партнер атрибуция утиськиз",
+      "COMMISSION_ELIGIBILITY_CREATED": "Комиссилы право кылдытэмын",
+      "HANDOVER_COMPLETED": "Сдача быдэсмиз",
+      "ADMIN_PROTECTION_RELEASED": "Админ дубликатъёсты утён вазьгес поттӥз. Мугез: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Админ выльысь висъяз регистрациез {{from}} -ысь {{to}} . Мугез: {{reason}}"
+    }
+  }
+}

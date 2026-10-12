@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Gawgap ai wa a chyinghka",
+    "referrals": "Referral ni",
+    "builderLogin": "Gawgap ai wa shang wa",
+    "partnerLogin": "Channel manang shang wa ai"
+  },
+  "login": {
+    "title": "Gawgap ai wa sign in",
+    "hint": "Builder ni a account ni hpe Leadrat kaw nna galaw ai. Nang hta n nga ai rai yang, na a administrator hpe san yu u."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Na a dawdan lam hpe la nga ai",
+    "ACCEPTED": "Hkap la sai",
+    "REJECTED": "N hkap la ai"
+  },
+  "list": {
+    "title": "Referral ni",
+    "allProjects": "Project yawng",
+    "allStatuses": "Status yawng",
+    "count_one": "{{count}} shagun ya ai",
+    "count_other": "{{count}} shagun dat ai",
+    "columns": {
+      "referral": "Hkrang shagun ai",
+      "customer": "Gunrai mari ai wa",
+      "project": "Sawn hpajang magam",
+      "sourcePartner": "Npawt nhpang manang",
+      "status": "Madang",
+      "booking": "Booking galaw ai",
+      "registered": "Mying jahpan bang da sai"
+    },
+    "booked": "Book galaw da sai",
+    "empty": "Referral n galaw shi ai."
+  },
+  "detail": {
+    "customer": "Gunrai mari ai wa",
+    "sourcePartner": "Npawt nhpang manang",
+    "attributionNote": "(attribution - n mai galai shai ai)",
+    "leadStatus": "Ningbaw Masa",
+    "protectedUntil": "2020 du hkra makawp maga da ai.",
+    "referral": "Hkrang shagun ai",
+    "reason": "Hpa majaw: {{reason}}",
+    "booking": "Booking galaw ai",
+    "bookedOwner": "Booked - nang gaw bungli galaw ai madu re",
+    "notBooked": "Booking n galaw shi ai",
+    "sharedAfterBooking": "Booking galaw ngut ai hpang garan ai",
+    "accept": "Referral hpe hkap la u",
+    "confirmBooking": "Booking galaw ai hpe kam u",
+    "reject": "Referral hpe ningdang kau",
+    "rejectReasonLabel": "Hpa majaw ningdang kau ai lam (partner hpe madun dan ai) *",
+    "rejectConfirm": "Shabai kau ai",
+    "confirmBookingPrompt": "Booking galaw sai kun? Operational madu ai lam gaw nang hpang de htawt sit nna, partner wa gaw commission lu na matu gingdan wa ai.",
+    "notice": {
+      "booked": "Booking galaw sai.",
+      "accepted": "Referral hpe hkap la sai.",
+      "rejected": "Referral hpe ningdang kau ai."
+    },
+    "backToReferrals": "Referral ni de bai wa na"
+  },
+  "history": {
+    "title": "Labau",
+    "actor": {
+      "system": "Lai len",
+      "partner": "Channel manang",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Partner mying jahpan hpe lu la sai",
+      "DUPLICATE_CHECK_COMPLETED": "Duplicate hpe jep yu ngut sai - active duplicate n mu ai",
+      "REGISTRATION_ACCEPTED": "Mying jahpan hkap la sai",
+      "PROTECTION_GRANTED_one": "{{count}} -nhtoi makawp maga lam jaw da sai",
+      "PROTECTION_GRANTED_other": "{{count}} -nhtoi makawp maga lam jaw da sai",
+      "STAGE_UPDATED": "Masa hpe {{stage}} de gram lajang da ai",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} hpe gram lajang da ai",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} lamu ga ni hpe gram lajang da ai",
+      "LEAD_ASSIGNED": "{{name}} hpe ap ya ai",
+      "LEAD_UNASSIGNED": "Magam bungli n jaw ai",
+      "REFERRAL_ACCEPTED": "Gawgap ai wa gaw referral hpe hkap la sai",
+      "REFERRAL_REJECTED": "Builder gaw dai referral hpe ningdang kau ai. Hpa majaw: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} hku nna mying jahpan bang na matu shakut ai hpe ningdang kau sai",
+      "BOOKING_COMPLETED": "Booking galaw ngut sai",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Bungli galaw ai madu hpe Builder de htawt sit kau sai.",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partner masat masa hpe makawp maga da ai",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komishin hkam la mai ai lam hpe hpaw da sai",
+      "HANDOVER_COMPLETED": "Ap ya ngut sai",
+      "ADMIN_PROTECTION_RELEASED": "Admin gaw duplicate makawp maga lam hpe shawng shapraw kau sai. Hpa majaw: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin gaw {{from}} kaw nna {{to}} de bai masat da ai. Hpa majaw: {{reason}}"
+    }
+  }
+}

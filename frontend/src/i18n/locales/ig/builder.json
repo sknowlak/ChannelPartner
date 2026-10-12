@@ -1,0 +1,87 @@
+{
+  "shell": {
+    "portal": "Portal ihe nrụpụta",
+    "referrals": "Ntuziaka",
+    "builderLogin": "Nbanye nbanye",
+    "partnerLogin": "Nbanye Onye Mmekọ ọwa"
+  },
+  "login": {
+    "title": "Nbanye onye nrụpụta",
+    "hint": "Ọ bụ Leadrat mebere akaụntụ onye nrụpụta. Jụọ onye nchịkwa gị ma ị nweghị otu."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Na-eche mkpebi gị",
+    "ACCEPTED": "anabatara",
+    "REJECTED": "Ajụjụ"
+  },
+  "list": {
+    "title": "Ntuziaka",
+    "allProjects": "Ọrụ niile",
+    "allStatuses": "Ọnọdụ niile",
+    "count_other": "{{count}} ntụnye aka",
+    "columns": {
+      "referral": "Ntugharị",
+      "customer": "Onye ahịa",
+      "project": "Ihe oru ngo",
+      "sourcePartner": "Isi mmalite Onye Mmekọ",
+      "status": "Ọnọdụ",
+      "booking": "Ịnye akwụkwọ",
+      "registered": "Edebara aha"
+    },
+    "booked": "Edere akwụkwọ",
+    "empty": "Enweghị ntụnye aka."
+  },
+  "detail": {
+    "customer": "Onye ahịa",
+    "sourcePartner": "Isi mmalite Onye Mmekọ",
+    "attributionNote": "(njirimara - enweghị ike ịgbanwe)",
+    "leadStatus": "Ọnọdụ ndu",
+    "protectedUntil": "Echebere ruo",
+    "referral": "Ntugharị",
+    "reason": "Ihe kpatara ya: {{reason}}",
+    "booking": "Ịnye akwụkwọ",
+    "bookedOwner": "Agbanyere - ị bụ onye nwe ọrụ",
+    "notBooked": "Edebeghị akwụkwọ",
+    "sharedAfterBooking": "Ekekọrịtara mgbe ntinye akwụkwọ",
+    "accept": "Nabata Ntuziaka",
+    "confirmBooking": "Kwenye ntinye akwụkwọ",
+    "reject": "Jụ Ntugharị",
+    "rejectReasonLabel": "Ihe kpatara ịjụ (gosipụtara onye mmekọ) *",
+    "rejectConfirm": "Jụ",
+    "confirmBookingPrompt": "Kwenye ntinye akwụkwọ? Ịnwe ọrụ na-agakwuru gị ma onye mmekọ ga-eru eru maka ọrụ.",
+    "notice": {
+      "booked": "Ekwenyere ntinye akwụkwọ.",
+      "accepted": "Anabatara ntụnye aka.",
+      "rejected": "Ajụjụ ntụnye aka."
+    },
+    "backToReferrals": "Laghachi na ntụnye aka"
+  },
+  "history": {
+    "title": "Akụkọ ihe mere eme",
+    "actor": {
+      "system": "Sistemu",
+      "partner": "Onye mmekọ ọwa",
+      "admin": "Onye Leadrat nchịkwa"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Enwetara ndebanye aha onye mmekọ",
+      "DUPLICATE_CHECK_COMPLETED": "Nlele oyiri emechara - ọnweghị oyiri na-arụ ọrụ ahụrụ",
+      "REGISTRATION_ACCEPTED": "nabatara ndebanye aha",
+      "PROTECTION_GRANTED_other": "Enyere nchebe ụbọchị {{count}}",
+      "STAGE_UPDATED": "Emelitere ọnọdụ ka ọ bụrụ {{stage}}",
+      "LEAD_DETAILS_UPDATED_other": "Emelitere {{count}} ubi",
+      "LEAD_ASSIGNED": "Enyere ya {{name}}",
+      "LEAD_UNASSIGNED": "Ekenyeghi ya",
+      "REFERRAL_ACCEPTED": "Onye nrụpụta nabatara ntụnye aka",
+      "REFERRAL_REJECTED": "Onye nrụpụta jụrụ ntụnye aka. Ihe kpatara ya: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Mgbalị ndebanye nke abụọ nke {{partner}} jụrụ",
+      "BOOKING_COMPLETED": "Etinye akwụkwọ agwụla",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Ebufere onye nrụpụta ọrụ n'aka Onye nrụpụta",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Echekwara njirimara onye mmekọ",
+      "COMMISSION_ELIGIBILITY_CREATED": "Emepụtara ntozu nke kọmitii",
+      "HANDOVER_COMPLETED": "Emechaala inyefe",
+      "ADMIN_PROTECTION_RELEASED": "Admin weputara nchedo oyiri n'oge. Ihe kpatara ya: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin ekenyegharịrị ndebanye aha site na {{from}} gaa na {{to}} . Ihe kpatara ya: {{reason}}"
+    }
+  }
+}

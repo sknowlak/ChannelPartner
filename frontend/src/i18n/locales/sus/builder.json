@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Banxi tife naadE",
+    "referrals": "Referrals",
+    "builderLogin": "Builder Login",
+    "partnerLogin": "Kanali bore sofe"
+  },
+  "login": {
+    "title": "Banxi tife sofe",
+    "hint": "Builder accounts rafalaxi Leadrat nan na. Wo xa wo xa yarerati maxOrin xa wo mu na."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Wo xa natɛ nan mamɛfe",
+    "ACCEPTED": "A tinxi",
+    "REJECTED": "A tondixi"
+  },
+  "list": {
+    "title": "Referrals",
+    "allProjects": "Projet birin",
+    "allStatuses": "Status birin",
+    "count_one": "{{count}} referral",
+    "count_other": "{{count}} referrals",
+    "columns": {
+      "referral": "Rasife",
+      "customer": "I magnakhoun",
+      "project": "Projè",
+      "sourcePartner": "Source Partner",
+      "status": "Tonyi ya yèrèki",
+      "booking": "Booking",
+      "registered": "A xili sEbExi"
+    },
+    "booked": "Booked",
+    "empty": "Mixi yo mu na naxan mixi rasigaxi sinden."
+  },
+  "detail": {
+    "customer": "I magnakhoun",
+    "sourcePartner": "Source Partner",
+    "attributionNote": "(attribution - mu nOma masarade)",
+    "leadStatus": "yarerati ki",
+    "protectedUntil": "A makanta han",
+    "referral": "Rasife",
+    "reason": "Xaxili: {{reason}}",
+    "booking": "Booking",
+    "bookedOwner": "Booked - wo tan nan na wali kanyi ra",
+    "notBooked": "A mu sEbExi",
+    "sharedAfterBooking": "A itaxun xi booking dangi xanbi",
+    "accept": "Wo xa tin referansi ra",
+    "confirmBooking": "Wo xa booking ratinmE",
+    "reject": "Referral tondi",
+    "rejectReasonLabel": "Naxan a toxi (a masenxi a bore bE) *",
+    "rejectConfirm": "Tondi a ma",
+    "confirmBookingPrompt": "Wo xa buki ratinmE? Yi wali sOtOxi wo nan yi ra a nun wo boree fama nE komisOn sOtOde.",
+    "notice": {
+      "booked": "Booking bara tin.",
+      "accepted": "Referral tinxi.",
+      "rejected": "Referral bara tondi."
+    },
+    "backToReferrals": "Wo gbilen wo xa masen gni ma"
+  },
+  "history": {
+    "title": "Féfori",
+    "actor": {
+      "system": "Arabaki",
+      "partner": "Kanali bore",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Wo bore xili sEbExi sOtOxi",
+      "DUPLICATE_CHECK_COMPLETED": "Duplicate check bara ɲɔn - duplicate active yo mu toxi",
+      "REGISTRATION_ACCEPTED": "Wo xa wo xili sEbE",
+      "PROTECTION_GRANTED_one": "{{count}} lOxE makantafe fixi",
+      "PROTECTION_GRANTED_other": "{{count}} lOxE makantafe fixi",
+      "STAGE_UPDATED": "A xa fe masarama han {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} yire ra yabuxi",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} yire nEnE",
+      "LEAD_ASSIGNED": "A fixi {{name}} nan ma",
+      "LEAD_UNASSIGNED": "Unassigned",
+      "REFERRAL_ACCEPTED": "Builder bara tin na referansi ra",
+      "REFERRAL_REJECTED": "Builder naxa na referansi tondi. Xaxili: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} xa sEbEli firin nde tondixi",
+      "BOOKING_COMPLETED": "Booking bara kamali",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Na wali sare bara masara banxi ti ma",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partner attribution preserved",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komisiyon lanma a xa raba",
+      "HANDOVER_COMPLETED": "Handover bara kamali",
+      "ADMIN_PROTECTION_RELEASED": "Admin bara duplicate protection ra mini a singe ra. Xaxili: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin bara xili sa {{from}} ma sigafe {{to}} . Xaxili: {{reason}}"
+    }
+  }
+}

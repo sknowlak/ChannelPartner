@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "සැකසීම්",
+    "noPermission": "ඔබට සැකසීම් කළමනාකරණය කිරීමට අවසර නැත."
+  },
+  "categories": {
+    "lead": "නායකත්වය",
+    "user": "පරිශීලක",
+    "integrations": "ඒකාබද්ධ කිරීම්"
+  },
+  "leadTabs": {
+    "fields": "ක්ෂේත්ර",
+    "statuses": "තත්ව සහ උප තත්ත්‍වය",
+    "notifications": "දැනුම්දීම් සහ උපලේඛනගත කරන්නන්"
+  },
+  "fields": {
+    "leadIntro": "ඊයම් ග්‍රහණ පෝරමය වින්‍යාස කරන්න: ක්ෂේත්‍ර සබල/අබල කරන්න, ඒවා අවශ්‍ය බව සලකුණු කරන්න, නැතහොත් ඔබේම අභිරුචි ක්ෂේත්‍ර එක් කරන්න.",
+    "userIntro": "කණ්ඩායම් සාමාජික පෝරමය එක් කරන්න/සංස්කරණය කරන්න: ක්ෂේත්‍ර සක්‍රීය/අබල කරන්න, අවශ්‍ය ලකුණු කරන්න, නැතහොත් ඔබේම අභිරුචි ක්ෂේත්‍ර එක් කරන්න.",
+    "addCustomField": "+ අභිරුචි ක්ෂේත්‍රය එක් කරන්න",
+    "fieldLabel": "ක්ෂේත්ර ලේබලය",
+    "group": "කණ්ඩායම",
+    "groupPlaceholderLead": "උදා: විමසීම් තොරතුරු",
+    "groupPlaceholderUser": "උදා: අමතර විස්තර",
+    "dataType": "දත්ත වර්ගය",
+    "options": "විකල්ප (කොමාවෙන් වෙන් කර ඇත)",
+    "requiredLead": "අවශ්‍යයි - පෙරමුණක් ලියාපදිංචි කිරීම සඳහා ඔබේ කණ්ඩායමේ හවුල්කරුවන් මෙය පිරවිය යුතුය",
+    "requiredUser": "අවශ්‍යයි - කණ්ඩායම් සාමාජිකයෙකු එකතු කිරීමේදී පිරවිය යුතුය",
+    "creating": "නිර්මාණය කරමින්...",
+    "createField": "ක්ෂේත්‍රය සාදන්න",
+    "columns": {
+      "field": "ක්ෂේත්රය",
+      "group": "කණ්ඩායම",
+      "type": "ටයිප් කරන්න",
+      "required": "අවශ්යයි",
+      "enabled": "සබල කර ඇත",
+      "kind": "කාරුණික"
+    },
+    "kind": {
+      "custom": "අභිරුචි",
+      "core": "හරය (අගුලු දමා ඇත)",
+      "standard": "සම්මතය"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "පෙළ",
+    "TEXTAREA": "දිගු පෙළ",
+    "NUMBER": "අංකය",
+    "CURRENCY": "මුදල්",
+    "DATE": "දිනය",
+    "SELECT": "පතන",
+    "LIST": "ලැයිස්තුව"
+  },
+  "picker": {
+    "searchPlaceholder": "ප්‍රමුඛ ක්ෂේත්‍ර සොයන්න...",
+    "summary": "{{shown}} පෙන්වා ඇත · {{mandatory}} අනිවාර්යය",
+    "mandatory": "අනිවාර්යයි",
+    "noMatch": "ක්ෂේත්‍ර නොගැලපේ."
+  },
+  "statuses": {
+    "intro": "ඔබගේ ප්‍රමුඛ තත්ත්‍වයන් සහ උප තත්ත්‍වය - යමෙකු එයට නායකත්වයක් යාවත්කාලීන කළ විට එක් එක් අය ඉල්ලන දේ (දිනයක් සහ වේලාවක්, ප්‍රමුඛ ක්ෂේත්‍ර).",
+    "add": "+ තත්ත්වය එක් කරන්න",
+    "columns": {
+      "order": "ඇණවුම් කරන්න",
+      "status": "තත්ත්වය",
+      "subStatuses": "උප තත්ත්‍වය",
+      "asksFor": "ඉල්ලා සිටී",
+      "active": "ක්රියාකාරී"
+    },
+    "moveUp": "ඉහළට ගමන් කරන්න",
+    "moveDown": "පහළට ගමන් කරන්න",
+    "defaultBadge": "නව නායකත්වය සඳහා පෙරනිමිය",
+    "bookingBadge": "වෙන්කරවා ගැනීමේ තත්ත්වය",
+    "asksForLabel": "{{label}} සඳහා අසයි",
+    "asksForDateTime": "දිනය සහ වේලාව අසයි",
+    "none": "කිසිවක් නැත",
+    "dateTime": "දිනය සහ වේලාව",
+    "scheduledOn": "{{names}} මත",
+    "fieldsSummary_one": "{{count}} ක්ෂේත්‍රය ( {{mandatory}} අනිවාර්ය)",
+    "fieldsSummary_other": "ක්ෂේත්‍ර {{count}} ( {{mandatory}} අනිවාර්ය)",
+    "deleteConfirm": "\" {{name}} \" තත්ත්වය මකන්නද? මෙය ආපසු හැරවිය නොහැක.",
+    "editTitle": "තත්ත්වය සංස්කරණය කරන්න - {{name}}",
+    "newTitle": "නව තත්ත්වය",
+    "name": "තත්ත්‍වයේ නම",
+    "colour": "වර්ණය",
+    "active": "ක්රියාකාරී",
+    "isDefault": "නව නායකත්වය සඳහා පෙරනිමි තත්ත්වය",
+    "isBooking": "වෙන්කිරීමේ තත්ත්වය (සම්පූර්ණ වෙන්කරවා ගැනීම මගින් සකසා ඇත)",
+    "whenMoved": "ඊයම් මෙම තත්වයට ගෙන යන විට",
+    "askSchedule": "දිනයක් සහ වේලාවක් ඉල්ලන්න (කාලසටහන්කරු)",
+    "scheduleLabelPlaceholder": "ලේබලය, උදා: වෙත පිවිසෙන්න",
+    "fieldsToShow": "යාවත්කාලීන පෝරමයේ පෙන්වීමට ඊයම් ක්ෂේත්‍ර",
+    "subStatusesTitle": "උප තත්ත්‍වය",
+    "subStatusesHint": "සෑම උප-තත්ත්වයකටම තමන්ගේම දිනය සහ වේලාව ඉල්ලා සිටිය හැකි අතර එහිම ක්ෂේත්‍ර එකතු කළ හැක - ඉහත තත්ත්‍වයේ ක්ෂේත්‍රවලට ඉහළින් පෙන්වා ඇත.",
+    "subStatusName": "උප තත්ත්‍වයේ නම",
+    "subFields": "ක්ෂේත්ර ( {{count}} )",
+    "subScheduleLabelPlaceholder": "දිනය සහ කාල ලේබලය, උදා: නැවත අමතන්න",
+    "addSubStatus": "+ උප තත්ත්‍වය එක් කරන්න",
+    "saveStatus": "තත්ත්වය සුරකින්න",
+    "createStatus": "තත්ත්වය සාදන්න"
+  },
+  "notifications": {
+    "intro": "ඊයම් තත්ත්වයකට ළඟා වූ විට නිවැරදි පුද්ගලයින්ට දැනුම් දෙන්න - වහාම, හෝ එහි නියමිත දිනට සහ වේලාවට පෙර/පසු නියමිත වේලාවක්.",
+    "add": "+ දැනුම්දීම එකතු කරන්න",
+    "columns": {
+      "notification": "දැනුම්දීම",
+      "whenStatusIs": "තත්ත්වය ඇති විට",
+      "sends": "යවයි",
+      "to": "වෙත",
+      "via": "හරහා",
+      "enabled": "සබල කර ඇත"
+    },
+    "anyStatus": "ඕනෑම තත්වයක්",
+    "anySubStatus": "ඕනෑම උප තත්වයක්",
+    "inactiveOption": "{{name}} (අක්‍රිය)",
+    "emptyRules": "තවම දැනුම්දීම් නොමැත - නායකයෙකු තත්වයකට පැමිණි විට ඔබේ කණ්ඩායමට අනතුරු ඇඟවීමට එකක් එක් කරන්න.",
+    "jobs": {
+      "title": "උපලේඛනගත කර යවන ලදී",
+      "firesAt": "ෆයර්ස්",
+      "notification": "දැනුම්දීම",
+      "lead": "නායකත්වය",
+      "status": "තත්ත්වය",
+      "details": "විස්තර",
+      "empty": "තවම කිසිවක් කාලසටහන් කර හෝ යවා නැත.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "පොරොත්තුවෙන්",
+      "PROCESSING": "සැකසීම",
+      "SENT": "යවා ඇත",
+      "FAILED": "අසාර්ථකයි",
+      "SKIPPED": "මග හැරිය",
+      "CANCELLED": "අවලංගු කළා"
+    },
+    "deliveryStatus": {
+      "SENT": "යැව්වා",
+      "FAILED": "අසාර්ථක විය",
+      "SKIPPED": "මග හැරිය"
+    },
+    "deliveryChannel": {
+      "IN_APP": "යෙදුම තුළ",
+      "EMAIL": "ඊමේල්",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "පැවරූ පරිශීලක",
+      "owner": "හිමිකරු",
+      "updatedBy": "විසින් යාවත්කාලීන කරන ලදී",
+      "role": "භූමිකාව: {{name}}"
+    },
+    "channels": {
+      "inApp": "යෙදුම තුළ",
+      "email": "ඊමේල් කරන්න",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "\" {{name}} \" දැනුම්දීම මකන්නද? එයින් පොරොත්තු සිහිකැඳවීම් අවලංගු වේ.",
+    "testPrompt": "කුමන ඊයම් ID භාවිතා කර ඔබටම (යෙදුම තුළ) මෙම දැනුම්දීමේ පරීක්ෂණයක් යවන්නද?",
+    "testSent": "ඔබගේ සීනුවට යවන ලදී: {{title}} {{message}}",
+    "headersInvalid": "Webhook ශීර්ෂයන් වලංගු JSON විය යුතුය, උදා: {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "දැනුම්දීම සංස්කරණය කරන්න",
+    "newTitle": "නව දැනුම්දීම",
+    "name": "නම",
+    "namePlaceholder": "උදා: අඩවියට පිවිසීමේ මතක් කිරීම",
+    "whenStatus": "නායකයෙකුගේ තත්වය ඇති විට",
+    "subStatus": "උප-තත්ත්වය",
+    "send": "යවන්න (කාලසටහන්කරු)",
+    "custom": "අභිරුචි...",
+    "modeBefore": "නියමිත වේලාවට පෙර",
+    "modeAfter": "නියමිත වේලාවට පසුව",
+    "noScheduleWarning": "මෙම තත්ත්වය දිනයක් සහ වේලාවක් ඉල්ලන්නේ නැත, එබැවින් \"නියමිත වේලාවට පෙර/වෙත/පසු\" දැනුම්දීමක් කිසිදා නොපෙන්වයි.",
+    "noScheduleFix": "තත්ත්‍වයන් සහ උප තත්ත්‍වයන් යටතේ ඒ සඳහා <strong>දිනයක් සහ වේලාවක් ඉල්ලා සිටීම</strong> ක්‍රියාත්මක කරන්න, නැතහොත් වහාම යවන්න.",
+    "sendTo": "(ඕනෑම සංයෝජනයක්) වෙත යවන්න",
+    "recipientAssigned": "පවරා ඇති පරිශීලක (ප්‍රධාන හිමිකරු)",
+    "recipientOwner": "ගිණුම් හිමිකරු / පරිපාලක",
+    "recipientUpdatedBy": "තත්ත්වය යාවත්කාලීන කළ පුද්ගලයා",
+    "everyoneWithRole": "භූමිකාවක් ඇති සියල්ලන්",
+    "specificUsers": "විශේෂිත පරිශීලකයින් (ක්‍රියාකාරී)",
+    "inactiveNever": "අකර්මන්‍ය පරිශීලකයන් තෝරා ගත්තද, කිසිවිටක දැනුම්දීම් නොලැබේ.",
+    "deliverVia": "හරහා භාර දෙන්න",
+    "channelInApp": "යෙදුම තුළ (සීනුව)",
+    "channelEmail": "ඊමේල් කරන්න",
+    "channelWebhook": "Webhook ( WhatsApp / SMS සපයන්නා)",
+    "emailHint": "විද්‍යුත් තැපෑල එක් එක් ලබන්නාගේ විද්‍යුත් තැපැල් ලිපිනයට යන අතර සේවාදායකයේ SMTP පිහිටුවීම අවශ්‍ය වේ (backend/.env); එතෙක් විද්‍යුත් තැපැල් යැවීම් මඟ හැරිය ලෙස ලොග් වේ.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "ශීර්ෂ ( JSON )",
+    "content": "දැනුම්දීම් අන්තර්ගතය",
+    "title": "මාතෘකාව",
+    "message": "පණිවිඩය",
+    "insertIntoTitle": "මාතෘකාවට ඇතුල් කරන්න",
+    "insertIntoMessage": "පණිවිඩයට ඇතුළු කරන්න",
+    "anyLeadField": "ඕනෑම ඊයම් ක්ෂේත්‍රයක්ද ක්‍රියා කරයි, උදා: <code1>{{example1}}</code1> හෝ <code2>{{example2}}</code2> .",
+    "preview": "පෙරදසුන (නියැදි නායකත්වය)",
+    "enabled": "සබල කර ඇත",
+    "saveRule": "දැනුම්දීම සුරකින්න",
+    "createRule": "දැනුම්දීමක් සාදන්න",
+    "variables": {
+      "customerName": "ඊයම් නම",
+      "customerMobile": "ඊයම් ජංගම",
+      "customerEmail": "ඊමේල් ඊමේල්",
+      "registrationId": "ඊයම් ID",
+      "status": "තත්ත්වය",
+      "subStatus": "උප-තත්ත්වය",
+      "scheduleAt": "නියමිත දිනය සහ වේලාව",
+      "assignedTo": "පැවරූ පරිශීලක",
+      "updatedBy": "විසින් යාවත්කාලීන කරන ලදී",
+      "recipient": "ලබන්නාගේ නම",
+      "project": "ව්යාපෘතිය",
+      "notes": "නවතම සටහන",
+      "partner": "හවුල්කරුගේ නම"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "තත්ත්වය සැකසූ වහාම",
+      "AT": "නියමිත වේලාවට",
+      "A1D": "නියමිත වේලාවට පසු දින 1 (පසු විපරම් පරීක්ෂාව)"
+    },
+    "immediately": "වහාම",
+    "atScheduled": "නියමිත වේලාවට",
+    "before": {
+      "MINUTES_one": "නියමිත වේලාවට මිනිත්තු {{count}} කට පෙර",
+      "MINUTES_other": "නියමිත වේලාවට මිනිත්තු {{count}} කට පෙර",
+      "HOURS_one": "නියමිත වේලාවට පැය {{count}} කට පෙර",
+      "HOURS_other": "නියමිත වේලාවට පැය {{count}} කට පෙර",
+      "DAYS_one": "නියමිත වේලාවට දින {{count}} කට පෙර",
+      "DAYS_other": "නියමිත වේලාවට දින {{count}} කට පෙර",
+      "WEEKS_one": "නියමිත වේලාවට සති {{count}} කට පෙර",
+      "WEEKS_other": "නියමිත වේලාවට සති {{count}} කට පෙර",
+      "MONTHS_one": "නියමිත වේලාවට මාස {{count}} කට පෙර",
+      "MONTHS_other": "නියමිත වේලාවට මාස {{count}} කට පෙර",
+      "YEARS_one": "නියමිත වේලාවට වසර {{count}} කට පෙර",
+      "YEARS_other": "නියමිත වේලාවට වසර {{count}} කට පෙර"
+    },
+    "after": {
+      "MINUTES_one": "නියමිත වේලාවට පසු විනාඩි {{count}} ක්",
+      "MINUTES_other": "නියමිත වේලාවට පසු විනාඩි {{count}}",
+      "HOURS_one": "නියමිත වේලාවට පසු පැය {{count}}",
+      "HOURS_other": "නියමිත වේලාවට පසු පැය {{count}}",
+      "DAYS_one": "නියමිත වේලාවට පසු දින {{count}}",
+      "DAYS_other": "නියමිත වේලාවට පසු දින {{count}}",
+      "WEEKS_one": "නියමිත වේලාවට පසු සති {{count}}",
+      "WEEKS_other": "නියමිත වේලාවට පසු සති {{count}}",
+      "MONTHS_one": "නියමිත වේලාවට පසු මාස {{count}}",
+      "MONTHS_other": "නියමිත වේලාවට පසු මාස {{count}}",
+      "YEARS_one": "නියමිත වේලාවට පසු වසර {{count}}",
+      "YEARS_other": "නියමිත වේලාවට පසු වසර {{count}}"
+    },
+    "units": {
+      "MINUTES_one": "මිනිත්තුව",
+      "MINUTES_other": "මිනිත්තු",
+      "HOURS_one": "පැය",
+      "HOURS_other": "පැය",
+      "DAYS_one": "දවස",
+      "DAYS_other": "දින",
+      "WEEKS_one": "සතිය",
+      "WEEKS_other": "සති",
+      "MONTHS_one": "මාසය",
+      "MONTHS_other": "මාස",
+      "YEARS_one": "වසර",
+      "YEARS_other": "අවුරුදු"
+    }
+  }
+}

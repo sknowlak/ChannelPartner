@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "बिल्डर पोर्टल",
+    "referrals": "रेफरलत",
+    "builderLogin": "बिल्डर लगइन",
+    "partnerLogin": "च्यानल पार्टनर लगइन"
+  },
+  "login": {
+    "title": "बिल्डर साइन इन",
+    "hint": "बिल्डर एकाउन्ट Leadrat दयेकूगु खः । छिकेय् मदुसा छिमि प्रशासकयात न्यँ ।"
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "छिगु निर्णयया निंतिं पियाच्वना ।",
+    "ACCEPTED": "स्वीकार यात",
+    "REJECTED": "अस्वीकार जुल"
+  },
+  "list": {
+    "title": "रेफरलत",
+    "allProjects": "दक्वं परियोजना",
+    "allStatuses": "दक्वं अवस्थात",
+    "count_one": "{{count}} रेफरल",
+    "count_other": "{{count}} रेफरलत",
+    "columns": {
+      "referral": "रेफरल",
+      "customer": "ग्राहक",
+      "project": "प्रोजेक्ट",
+      "sourcePartner": "स्रोत साझेदार",
+      "status": "अवस्था",
+      "booking": "बुकिङ्ग",
+      "registered": "दर्ता जुल"
+    },
+    "booked": "बुक जुल",
+    "empty": "आःतकं रेफरल मदुनि ।"
+  },
+  "detail": {
+    "customer": "ग्राहक",
+    "sourcePartner": "स्रोत साझेदार",
+    "attributionNote": "(एट्रिब्यूशन - हिले फै मखु)",
+    "leadStatus": "लीड अवस्था",
+    "protectedUntil": "१ तक संरक्षित ।",
+    "referral": "रेफरल",
+    "reason": "हुनि : {{reason}}",
+    "booking": "बुकिङ्ग",
+    "bookedOwner": "बुक जुल - छि संचालनया थुवाः खः ।",
+    "notBooked": "बुक मजूनि ।",
+    "sharedAfterBooking": "बुक यायेधुंकाः शेयर यात",
+    "accept": "रेफरल स्वीकार या",
+    "confirmBooking": "बुकिङ्ग पक्का या",
+    "reject": "रेफरलयात अस्वीकार या",
+    "rejectReasonLabel": "अस्वीकार याःगुया हुनि (पार्टनरयात क्यन) *",
+    "rejectConfirm": "वान्छ्‍वेगु",
+    "confirmBookingPrompt": "बुकिङ्ग पक्का या ला ? परिचालन स्वामित्व छिथाय् वनी अले साझेदार कमिशनया निंतिं योग्य जुइ ।",
+    "notice": {
+      "booked": "बुकिङ्ग पक्का जुल ।",
+      "accepted": "रेफरल स्वीकार जुल ।",
+      "rejected": "रेफरल अस्वीकार जुल ।"
+    },
+    "backToReferrals": "रेफरलय् लिहां हुँ ।"
+  },
+  "history": {
+    "title": "बाखँ",
+    "actor": {
+      "system": "प्रणाली",
+      "partner": "च्यानल पार्टनर",
+      "admin": "Leadrat एडमिन"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "साझेदार दर्ता जुल",
+      "DUPLICATE_CHECK_COMPLETED": "डुप्लिकेट जाँच पूवन - सक्रिय डुप्लिकेट मलू",
+      "REGISTRATION_ACCEPTED": "दर्ता स्वीकार जुल",
+      "PROTECTION_GRANTED_one": "{{count}} -न्हि संरक्षण ब्यूगु दु",
+      "PROTECTION_GRANTED_other": "{{count}} -न्हि संरक्षण ब्यूगु दु",
+      "STAGE_UPDATED": "अवस्थायात {{stage}} य् अपडेट यात",
+      "LEAD_DETAILS_UPDATED_one": "न्हूधाः यात {{count}} फिल्ड",
+      "LEAD_DETAILS_UPDATED_other": "न्हूधाः याःगु {{count}} ख्यः",
+      "LEAD_ASSIGNED": "{{name}} यात लःल्हात",
+      "LEAD_UNASSIGNED": "असाइन मजूगु",
+      "REFERRAL_ACCEPTED": "बिल्डरं रेफरलयात स्वीकार यात ।",
+      "REFERRAL_REJECTED": "बिल्डरं रेफरलयात अस्वीकार यात । हुनि : {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} पाखें डुप्लिकेट दर्ता यायेगु कुतः अस्वीकार जुल",
+      "BOOKING_COMPLETED": "बुकिङ्ग सिधल",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "बिल्डरयात संचालन स्वामित्व लःल्हात ।",
+      "PARTNER_ATTRIBUTION_PRESERVED": "पार्टनर एट्रिब्यूशन संरक्षित",
+      "COMMISSION_ELIGIBILITY_CREATED": "आयोगया योग्यता दयेकल ।",
+      "HANDOVER_COMPLETED": "लःल्हायेगु ज्या सिधल",
+      "ADMIN_PROTECTION_RELEASED": "एडमिनं डुप्लिकेट प्रोटेक्सन न्ह्यः हे सार्वजनिक यात । हुनि : {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "एडमिनं {{from}} निसें {{to}} तक दर्तायात हानं लःल्हात । हुनि : {{reason}}"
+    }
+  }
+}

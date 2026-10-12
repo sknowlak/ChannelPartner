@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Buildɛr Pörtal",
+    "referrals": "Repi̱rɛli̱",
+    "builderLogin": "Buildɛr Lögin",
+    "partnerLogin": "Ca̱nɛl Partnɛr Lögin"
+  },
+  "login": {
+    "title": "Kä ram min ta̱th sign rɛydɛ",
+    "hint": "Kä akaunti̱ni̱ tin lätkɛ cua kɛ cak ɛ Leadrat . Thiec ni kuär/ruec mi thiɛlɛ ji."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Liɛp kɛ min bi lar",
+    "ACCEPTED": "Ca nhɔk",
+    "REJECTED": "Cua lo̱k"
+  },
+  "list": {
+    "title": "Repi̱rɛli̱",
+    "allProjects": "Pöröjɛkni̱ diaal",
+    "allStatuses": "I̱thtati̱thni̱ diaal",
+    "count_one": "{{count}} referral",
+    "count_other": "{{count}} tin ca la̱th lät",
+    "columns": {
+      "referral": "Repɛral",
+      "customer": "Ra̱̱m mi ko̱k",
+      "project": "La̱t in la̱tkɛ",
+      "sourcePartner": "Gua̱th in tuɔɔk thi̱n Partnɛr",
+      "status": "Ta̱̱a̱dɛ",
+      "booking": "Buɔk",
+      "registered": "Ca gɔ̱r piny"
+    },
+    "booked": "Ca gɔ̱r",
+    "empty": "/Thiɛlɛ referral mi̱ ŋot."
+  },
+  "detail": {
+    "customer": "Ra̱̱m mi ko̱k",
+    "sourcePartner": "Gua̱th in tuɔɔk thi̱n Partnɛr",
+    "attributionNote": "(attribution - /ca jɛ de gɛr)",
+    "leadStatus": "Lead Status",
+    "protectedUntil": "Cua gaŋ Amäni̱",
+    "referral": "Repɛral",
+    "reason": "Luɔt: {{reason}}",
+    "booking": "Buɔk",
+    "bookedOwner": "Booked - ɛ ji̱n ram min lät",
+    "notBooked": "/Ka̱n jɛ gɔ̱r",
+    "sharedAfterBooking": "Cua nyuak kɛ kɔr kä mëë ca booking",
+    "accept": "Nhɔk Referral",
+    "confirmBooking": "Kɔnpääm Booking",
+    "reject": "Lo̱k Repɛral",
+    "rejectReasonLabel": "Luɔt in ca lo̱k (nyuɔ̱thɛ jɛ kä ram min lät kɛɛl kɛ jɛ) *",
+    "rejectConfirm": "Lo̱k",
+    "confirmBookingPrompt": "Kɔnpääm kä booking? Operational ownership bɛ wä kä ji kä bi ram min lät kɛ ji te kɛ cuɔ̱ŋ kɛ kuic kɔmmi̱ciɔn.",
+    "notice": {
+      "booked": "Booking ca kɔnpääm.",
+      "accepted": "Referral cua nhɔk.",
+      "rejected": "Referral cua lo̱k."
+    },
+    "backToReferrals": "Luny kä Referrali̱"
+  },
+  "history": {
+    "title": "Ca̱a̱̱l",
+    "actor": {
+      "system": "Min lät kɛ naath",
+      "partner": "Ca̱nɛl pa̱rtnɛr",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Partnɛr ri̱jithtɛciɔn ca jiek",
+      "DUPLICATE_CHECK_COMPLETED": "Dupli̱kët check cɛ thuɔ̱k - thiɛlɛ dupli̱kët mi̱ lät mi̱ ca jiek",
+      "REGISTRATION_ACCEPTED": "Ca gɔ̱r piny nhɔk",
+      "PROTECTION_GRANTED_one": "{{count}} -ni̱ ga̱ŋ mi̱ ca ŋun",
+      "PROTECTION_GRANTED_other": "{{count}} -ni̱ ga̱ŋ mi̱ ca ŋun",
+      "STAGE_UPDATED": "I̱thtati̱th cua nyɔk kɛ lätni̱ ɛ wä kä {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Ca nyɔk kɛ lätni̱ {{count}} pi̱e̱li̱",
+      "LEAD_DETAILS_UPDATED_other": "Ca nyɔk kɛ lätni̱ {{count}} pi̱e̱li̱",
+      "LEAD_ASSIGNED": "Cua la̱th kä {{name}}",
+      "LEAD_UNASSIGNED": "/Ka̱n la̱th lät",
+      "REFERRAL_ACCEPTED": "Cu Builder ɛ nhɔk ɛn ɣöö ba jɛ la̱th lät",
+      "REFERRAL_REJECTED": "Builder cuɛ lo̱k ɛn ɣöö ba jɛ la̱th lät. Luɔt: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Dupli̱kët ri̱ji̱thtɛciɔn ɣɔ̱n ɛ {{partner}} cua lo̱k",
+      "BOOKING_COMPLETED": "Booking cɛ thuɔ̱k",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Kä min lätdɛ cua naŋ kä Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partnɛr atri̱bi̱ciɔn cua gaŋ",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kɔmmi̱ciɔn ɛli̱gi̱li̱ti̱ cua cak",
+      "HANDOVER_COMPLETED": "Handover cɛ thuɔ̱k",
+      "ADMIN_PROTECTION_RELEASED": "Admin cɛ dupli̱kët protekciɔn ka̱m raar kɛ nhiam. Luɔt: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin cuɛ nyɔk kɛ läth lät kä {{from}} ɛ wä kä {{to}} . Luɔt: {{reason}}"
+    }
+  }
+}

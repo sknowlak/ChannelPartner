@@ -1,0 +1,244 @@
+{
+  "page": {
+    "title": "tetapan",
+    "noPermission": "Anda tidak mempunyai kebenaran untuk mengurus tetapan."
+  },
+  "categories": {
+    "lead": "memimpin",
+    "user": "pengguna",
+    "integrations": "Integrasi"
+  },
+  "leadTabs": {
+    "fields": "Padang",
+    "statuses": "Status & Sub-Status",
+    "notifications": "Pemberitahuan & Penjadual"
+  },
+  "fields": {
+    "leadIntro": "Konfigurasikan borang tangkapan petunjuk: dayakan/lumpuhkan medan, tandakannya diperlukan atau tambahkan medan tersuai anda sendiri.",
+    "userIntro": "Konfigurasikan borang Tambah/Edit Ahli Pasukan: dayakan/lumpuhkan medan, tandakannya diperlukan atau tambah medan tersuai anda sendiri.",
+    "addCustomField": "+ Tambah Medan Tersuai",
+    "fieldLabel": "Label Medan",
+    "group": "Kumpulan",
+    "groupPlaceholderLead": "cth. Maklumat Pertanyaan",
+    "groupPlaceholderUser": "cth Butiran Tambahan",
+    "dataType": "Jenis Data",
+    "options": "Pilihan (dipisahkan koma)",
+    "requiredLead": "Diperlukan - rakan kongsi dalam pasukan anda mesti mengisi ini untuk mendaftarkan petunjuk",
+    "requiredUser": "Diperlukan - mesti diisi semasa menambah ahli pasukan",
+    "creating": "Mencipta...",
+    "createField": "Cipta Medan",
+    "columns": {
+      "field": "Padang",
+      "group": "Kumpulan",
+      "type": "taip",
+      "required": "Diperlukan",
+      "enabled": "Didayakan",
+      "kind": "baik hati"
+    },
+    "kind": {
+      "custom": "Adat",
+      "core": "Teras (terkunci)",
+      "standard": "Standard"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Teks",
+    "TEXTAREA": "Teks panjang",
+    "NUMBER": "Nombor",
+    "CURRENCY": "mata wang",
+    "DATE": "tarikh",
+    "SELECT": "Jatuh turun",
+    "LIST": "Senaraikan"
+  },
+  "picker": {
+    "searchPlaceholder": "Cari medan petunjuk...",
+    "summary": "{{shown}} ditunjukkan · {{mandatory}} wajib",
+    "mandatory": "Wajib",
+    "noMatch": "Tiada medan sepadan."
+  },
+  "statuses": {
+    "intro": "Status dan substatus petunjuk anda - perkara yang diminta oleh setiap satu (tarikh & masa, medan petunjuk) apabila seseorang mengemas kini petunjuk kepadanya.",
+    "add": "+ Tambah Status",
+    "columns": {
+      "order": "Pesanan",
+      "status": "Status",
+      "subStatuses": "Substatus",
+      "asksFor": "Meminta",
+      "active": "Aktif"
+    },
+    "moveUp": "Bergerak ke atas",
+    "moveDown": "Bergerak ke bawah",
+    "defaultBadge": "Lalai untuk petunjuk baharu",
+    "bookingBadge": "Status tempahan",
+    "asksForLabel": "Meminta {{label}}",
+    "asksForDateTime": "Tanya tarikh & masa",
+    "none": "tiada",
+    "dateTime": "Tarikh & masa",
+    "scheduledOn": "pada {{names}}",
+    "fieldsSummary_other": "{{count}} medan ( {{mandatory}} mandatori)",
+    "deleteConfirm": "Padamkan status \" {{name}} \"? Ini tidak boleh dibuat asal.",
+    "editTitle": "Edit Status - {{name}}",
+    "newTitle": "Status Baru",
+    "name": "Nama Status",
+    "colour": "warna",
+    "active": "Aktif",
+    "isDefault": "Status lalai untuk petunjuk baharu",
+    "isBooking": "Status tempahan (ditetapkan oleh Tempahan Lengkap)",
+    "whenMoved": "Apabila petunjuk dipindahkan ke status ini",
+    "askSchedule": "Minta tarikh & masa (penjadual)",
+    "scheduleLabelPlaceholder": "Label, cth Lawati di",
+    "fieldsToShow": "Medan petunjuk untuk ditunjukkan pada borang kemas kini",
+    "subStatusesTitle": "Substatus",
+    "subStatusesHint": "Setiap substatus boleh meminta tarikh & masanya sendiri dan menambah medannya sendiri - ditunjukkan di atas medan status di atas.",
+    "subStatusName": "Nama substatus",
+    "subFields": "Medan ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Label tarikh & masa, cth. Panggil semula di",
+    "addSubStatus": "+ Tambah Sub-Status",
+    "saveStatus": "Simpan Status",
+    "createStatus": "Buat Status"
+  },
+  "notifications": {
+    "intro": "Beritahu orang yang betul apabila petunjuk mencapai status - serta-merta, atau masa yang ditetapkan sebelum/selepas tarikh & masa yang dijadualkan padanya.",
+    "add": "+ Tambah Pemberitahuan",
+    "columns": {
+      "notification": "Pemberitahuan",
+      "whenStatusIs": "Apabila Status Adalah",
+      "sends": "Menghantar",
+      "to": "Kepada",
+      "via": "Melalui",
+      "enabled": "Didayakan"
+    },
+    "anyStatus": "Apa-apa status",
+    "anySubStatus": "Sebarang sub-status",
+    "inactiveOption": "{{name}} (tidak aktif)",
+    "emptyRules": "Belum ada pemberitahuan - tambahkan pemberitahuan untuk memaklumkan pasukan anda apabila petunjuk mencapai status.",
+    "jobs": {
+      "title": "Dijadualkan & Dihantar",
+      "firesAt": "Kebakaran Di",
+      "notification": "Pemberitahuan",
+      "lead": "memimpin",
+      "status": "Status",
+      "details": "Butiran",
+      "empty": "Tiada apa-apa yang dijadualkan atau dihantar lagi.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Belum selesai",
+      "PROCESSING": "Memproses",
+      "SENT": "Dihantar",
+      "FAILED": "gagal",
+      "SKIPPED": "Dilangkau",
+      "CANCELLED": "Dibatalkan"
+    },
+    "deliveryStatus": {
+      "SENT": "dihantar",
+      "FAILED": "gagal",
+      "SKIPPED": "dilangkau"
+    },
+    "deliveryChannel": {
+      "IN_APP": "dalam apl",
+      "EMAIL": "emel",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Pengguna yang ditugaskan",
+      "owner": "Pemilik",
+      "updatedBy": "Dikemaskini oleh",
+      "role": "Peranan: {{name}}"
+    },
+    "channels": {
+      "inApp": "Dalam apl",
+      "email": "E-mel",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Padamkan pemberitahuan \" {{name}} \"? Peringatan yang belum selesai daripadanya dibatalkan.",
+    "testPrompt": "Hantar ujian pemberitahuan ini kepada diri sendiri (dalam apl) menggunakan ID petunjuk yang manakah ?",
+    "testSent": "Dihantar ke loceng anda: {{title}} {{message}}",
+    "headersInvalid": "Pengepala Webhook mestilah JSON yang sah , cth {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Edit Pemberitahuan",
+    "newTitle": "Pemberitahuan Baharu",
+    "name": "Nama",
+    "namePlaceholder": "cth. Peringatan lawatan tapak",
+    "whenStatus": "Apabila status pemimpin adalah",
+    "subStatus": "Sub-status",
+    "send": "Hantar (penjadual)",
+    "custom": "tersuai...",
+    "modeBefore": "sebelum masa yang dijadualkan",
+    "modeAfter": "selepas masa yang dijadualkan",
+    "noScheduleWarning": "Status ini tidak meminta tarikh & masa, jadi pemberitahuan \"sebelum/pada/selepas masa yang dijadualkan\" tidak akan dicetuskan.",
+    "noScheduleFix": "Hidupkan <strong>Minta tarikh & masa</strong> untuknya di bawah Status & Sub-Status, atau hantar Segera.",
+    "sendTo": "Hantar kepada (sebarang gabungan)",
+    "recipientAssigned": "Pengguna yang ditugaskan (pemilik utama)",
+    "recipientOwner": "Pemilik akaun / pentadbir",
+    "recipientUpdatedBy": "Orang yang mengemas kini status",
+    "everyoneWithRole": "Setiap orang mempunyai peranan",
+    "specificUsers": "Pengguna tertentu (aktif)",
+    "inactiveNever": "Pengguna tidak aktif tidak pernah menerima pemberitahuan, walaupun dipilih.",
+    "deliverVia": "Hantar melalui",
+    "channelInApp": "Dalam apl (loceng)",
+    "channelEmail": "E-mel",
+    "channelWebhook": "Webhook (pembekal WhatsApp / SMS )",
+    "emailHint": "E-mel pergi ke alamat e-mel setiap penerima dan memerlukan SMTP disediakan pada pelayan (backend/.env); sehingga kemudian penghantaran e-mel direkodkan sebagai dilangkau.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Pengepala ( JSON )",
+    "content": "Kandungan pemberitahuan",
+    "title": "Tajuk",
+    "message": "Mesej",
+    "insertIntoTitle": "Masukkan ke dalam Tajuk",
+    "insertIntoMessage": "Masukkan ke dalam Mesej",
+    "anyLeadField": "Mana-mana medan petunjuk juga berfungsi, cth <code1>{{example1}}</code1> atau <code2>{{example2}}</code2> .",
+    "preview": "Pratonton (contoh petunjuk)",
+    "enabled": "Didayakan",
+    "saveRule": "Simpan Pemberitahuan",
+    "createRule": "Buat Pemberitahuan",
+    "variables": {
+      "customerName": "Nama utama",
+      "customerMobile": "Mudah alih utama",
+      "customerEmail": "E-mel utama",
+      "registrationId": "ID utama",
+      "status": "Status",
+      "subStatus": "Sub-status",
+      "scheduleAt": "Tarikh & masa yang dijadualkan",
+      "assignedTo": "Pengguna yang ditugaskan",
+      "updatedBy": "Dikemaskini oleh",
+      "recipient": "Nama penerima",
+      "project": "Projek",
+      "notes": "Nota terkini",
+      "partner": "Nama rakan kongsi"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Serta-merta apabila status ditetapkan",
+      "AT": "Pada masa yang dijadualkan",
+      "A1D": "1 hari selepas masa yang dijadualkan (semakan susulan)"
+    },
+    "immediately": "serta merta",
+    "atScheduled": "Pada masa yang dijadualkan",
+    "before": {
+      "MINUTES_other": "{{count}} minit sebelum masa yang dijadualkan",
+      "HOURS_other": "{{count}} jam sebelum waktu yang dijadualkan",
+      "DAYS_other": "{{count}} hari sebelum masa yang dijadualkan",
+      "WEEKS_other": "{{count}} minggu sebelum masa yang dijadualkan",
+      "MONTHS_other": "{{count}} bulan sebelum masa yang dijadualkan",
+      "YEARS_other": "{{count}} tahun sebelum masa yang dijadualkan"
+    },
+    "after": {
+      "MINUTES_other": "{{count}} minit selepas masa yang dijadualkan",
+      "HOURS_other": "{{count}} jam selepas masa yang dijadualkan",
+      "DAYS_other": "{{count}} hari selepas masa yang dijadualkan",
+      "WEEKS_other": "{{count}} minggu selepas masa yang dijadualkan",
+      "MONTHS_other": "{{count}} bulan selepas masa yang dijadualkan",
+      "YEARS_other": "{{count}} tahun selepas masa yang dijadualkan"
+    },
+    "units": {
+      "MINUTES_other": "minit",
+      "HOURS_other": "jam",
+      "DAYS_other": "hari",
+      "WEEKS_other": "minggu",
+      "MONTHS_other": "bulan",
+      "YEARS_other": "tahun"
+    }
+  }
+}

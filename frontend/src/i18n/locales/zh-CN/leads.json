@@ -1,0 +1,186 @@
+{
+  "list": {
+    "title": "我的线索",
+    "signedInAs": "以{{name}} ( {{partnerId}} ) 身份登录·时间显示在{{timezone}}",
+    "addLead": "+ 添加潜在客户",
+    "tabs": {
+      "all": "全部 ( {{count}} )",
+      "pending": "待处理 ( {{count}} )",
+      "booked": "已预订 ( {{count}} )"
+    },
+    "searchPlaceholder": "按姓名、手机或注册ID搜索...",
+    "manageColumns": "管理栏目",
+    "rowsPerPage": "每页行数",
+    "registrationId": "注册ID",
+    "emptyState": "尚无潜在客户 - 注册您的第一个潜在客户。",
+    "noMatch": "没有引线与这些过滤器匹配。",
+    "showing": "显示{{from}} - {{to}}共{{total}}个条目",
+    "actions": {
+      "preview": "预览和快速更新",
+      "history": "历史",
+      "email": "电子邮件",
+      "whatsapp": "WhatsApp",
+      "call": "称呼"
+    },
+    "pagination": {
+      "first": "第一页",
+      "previous": "上一页",
+      "next": "下一页",
+      "last": "最后一页"
+    }
+  },
+  "columns": {
+    "status": "地位",
+    "assignTo": "分配给",
+    "booked": "已预订",
+    "protectionUntil": "保护直至"
+  },
+  "booking": {
+    "booked": "已预订",
+    "pending": "待办的"
+  },
+  "assign": {
+    "unassigned": "未分配",
+    "owner": "{{name}} （所有者）",
+    "inactive": "{{name}} （无效）",
+    "unknownUser": "未知用户",
+    "assignedTo": "分配给{{name}}"
+  },
+  "form": {
+    "addTitle": "添加潜在客户",
+    "editTitle": "编辑线索",
+    "noPermissionAdd": "您无权注册潜在客户。",
+    "noPermissionEdit": "您无权编辑潜在客户。",
+    "selectPlaceholder": "选择...",
+    "commaSeparated": "逗号分隔",
+    "phonePlaceholder": "电话号码",
+    "countryCode": "国家代码"
+  },
+  "project": {
+    "none": "还没有项目（未提及）",
+    "notInList": "{{project}} （不在项目列表中）"
+  },
+  "journey": {
+    "customer": "顾客",
+    "currentOwner": "现任所有者",
+    "protectionExpiry": "保护期满",
+    "leadStatus": "潜在客户状态",
+    "scheduled": "预定",
+    "assignedTo": "分配给",
+    "referral": "推荐",
+    "builderReason": "建造者的原因： {{reason}}",
+    "bookedHint": "由建筑商预订——运营所有权已转移至建筑商；您的归属和佣金资格将被保留。",
+    "notBookedHint": "建筑商接受推荐后即会确认预订。",
+    "quickUpdate": "快速更新",
+    "leadDetails": "线索详情",
+    "progressHistory": "进展历程",
+    "timesIn": "（时间为{{timezone}} ）",
+    "backToMyLeads": "返回我的线索",
+    "editLead": "编辑线索"
+  },
+  "referral": {
+    "NOT_REFERRED": "未提及（无项目）",
+    "PENDING_BUILDER": "等待建设者",
+    "ACCEPTED": "已被施工方验收",
+    "REJECTED": "被建筑商拒绝"
+  },
+  "preview": {
+    "ariaLabel": "潜在客户预览",
+    "title": "潜在客户预览",
+    "source": "来源",
+    "location": "地点",
+    "scheduled": "预定",
+    "registered": "挂号的",
+    "latestNote": "最新笔记",
+    "quickUpdate": "快速更新",
+    "fullDetails": "详细信息",
+    "editLead": "编辑线索",
+    "history": "历史"
+  },
+  "quick": {
+    "assignedTo": "分配给",
+    "status": "地位",
+    "subStatus": "子状态",
+    "selectSubStatus": "选择子状态...",
+    "none": "没有任何",
+    "scheduledAt": "预定于",
+    "localTime": "当地时间",
+    "note": "笔记",
+    "notePlaceholder": "这次通话/访问发生了什么？ （选修的）",
+    "updateStatus": "更新状态",
+    "statusUpdated": "状态已更新",
+    "bookedLocked": "该潜在客户已被预订 - 其状态无法再更改。",
+    "viewOnly": "您可以查看此潜在客户，但您的角色无法更新它。"
+  },
+  "history": {
+    "title": "历史记录 - {{registrationId}}",
+    "tabs": {
+      "all": "全部",
+      "status": "地位",
+      "assignment": "任务",
+      "notes": "笔记"
+    },
+    "doneBy": "由{{actor}}完成",
+    "system": "系统",
+    "platforms": {
+      "System": "系统",
+      "External": "外部的",
+      "Web": "网络",
+      "Mobile": "移动的"
+    },
+    "added": "额外",
+    "updated": "已更新",
+    "empty": "（空的）",
+    "noHistory": "此类别还没有历史记录。",
+    "fieldLabels": {
+      "stage": "地位",
+      "subStatus": "子状态",
+      "scheduledAt": "日程",
+      "notes": "笔记",
+      "assignedTo": "分配给"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "合作伙伴注册已收到",
+      "DUPLICATE_CHECK_COMPLETED": "重复检查已完成 - 未发现有效的重复项",
+      "REGISTRATION_ACCEPTED": "接受报名",
+      "PROTECTION_GRANTED_other": "已授予{{count}}天保护",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partnerId}}的重复注册尝试被拒绝",
+      "LEAD_DETAILS_UPDATED_other": "更新了{{count}}字段",
+      "STAGE_UPDATED": "状态已更新为{{status}}",
+      "LEAD_ASSIGNED": "分配给{{name}}",
+      "LEAD_UNASSIGNED": "未分配",
+      "BOOKING_COMPLETED": "预订完成",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "运营所有权转移给建造商",
+      "PARTNER_ATTRIBUTION_PRESERVED": "保留合作伙伴归属",
+      "COMMISSION_ELIGIBILITY_CREATED": "创建佣金资格",
+      "HANDOVER_COMPLETED": "交接完成",
+      "REFERRAL_ACCEPTED": "建造商接受了推荐",
+      "REFERRAL_REJECTED": "建造者拒绝了推荐。原因： {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "管理员提前发布了重复保护。原因： {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "管理员将注册从{{from}}重新分配到{{to}} 。原因： {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "管理栏目",
+    "hint": "拖动重新排序 · 勾选显示",
+    "showAll": "显示全部",
+    "resetDefault": "重置为默认值"
+  },
+  "filters": {
+    "title": "过滤器",
+    "allProjects": "所有项目",
+    "any": "任何",
+    "noFields": "尚未启用其他可过滤字段（设置 > 潜在顾客）。",
+    "clearAll": "全部清除"
+  },
+  "phone": {
+    "MISSING": "需要电话号码。",
+    "INVALID": "请输入有效的电话号码。",
+    "TOO_SHORT": "电话号码太短。",
+    "TOO_LONG": "电话号码太长。",
+    "INVALID_FOR_COUNTRY": "此电话号码对于{{country}}无效。",
+    "COUNTRY_MISMATCH": "请选择正确的国家代码。",
+    "NOT_MOBILE": "请输入手机号码，而不是固定电话号码。"
+  }
+}

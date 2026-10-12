@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Ustawiynia",
+    "noPermission": "Niy masz prawa do zarzōndzanio ustawiyniami."
+  },
+  "categories": {
+    "lead": "Kludzić",
+    "user": "Używocz",
+    "integrations": "Integracyje"
+  },
+  "leadTabs": {
+    "fields": "Pola",
+    "statuses": "Statusy i podstatusy",
+    "notifications": "Notyfikacyje i harmōnogramy"
+  },
+  "fields": {
+    "leadIntro": "Skōnfiguruj formularz chytanio kliyntōw: włōncz/wyłōncz pola, ôznacz je za wymogane abo przidej włosne niestandardowe pola.",
+    "userIntro": "Skonfiguruj formularz Przidaj/Edytuj Czōnka Zespołu: włōncz/wyłōncz pola, ôznacz je za wymogane abo przidaj włosne niestandardowe pola.",
+    "addCustomField": "+ Przidej niysztandardowe pole",
+    "fieldLabel": "Etyketa pola",
+    "group": "Grupa",
+    "groupPlaceholderLead": "bp. Informacyje ô zapytaniu",
+    "groupPlaceholderUser": "bp. Ekstra szczegōły",
+    "dataType": "Zorta danych",
+    "options": "Ôpcyje (podzielōne miyndzy przecinkami)",
+    "requiredLead": "Wymogane - partnyrze we twojij drużynie muszōm to wypołnić, coby zaregistrować prowadzōncego",
+    "requiredUser": "Wymogane - musi być wypołniōne przi przidowaniu czōnka zespołu",
+    "creating": "Tworzynie...",
+    "createField": "Utworz pole",
+    "columns": {
+      "field": "Dōmyna",
+      "group": "Grupa",
+      "type": "Zorta",
+      "required": "Wymogany",
+      "enabled": "Włōnczōne",
+      "kind": "Uprzyjmy"
+    },
+    "kind": {
+      "custom": "Zwyk",
+      "core": "Jōndro (zablokowane)",
+      "standard": "Sztandard"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Tekst",
+    "TEXTAREA": "Dugi tekst",
+    "NUMBER": "Numer",
+    "CURRENCY": "Waluta",
+    "DATE": "Data",
+    "SELECT": "Rowijany menu",
+    "LIST": "Wykoz"
+  },
+  "picker": {
+    "searchPlaceholder": "Poszukowanie pōl prowadzōncych...",
+    "summary": "{{shown}} pokozano · {{mandatory}} ôbowiōnzkowe",
+    "mandatory": "Musowy",
+    "noMatch": "Żodne pōl niy ôdpadajōm."
+  },
+  "statuses": {
+    "intro": "Statusy i podstatusy kliyntōw - ô co kożdy z nich pyto (data i czas, pola kliyntōw), kej ktoś aktualizuje kliynta.",
+    "add": "+ Przidej status",
+    "columns": {
+      "order": "Porzōndek",
+      "status": "Status",
+      "subStatuses": "Podstatusy",
+      "asksFor": "Pyto ô",
+      "active": "Aktywny"
+    },
+    "moveUp": "Przesuń sie w gōra",
+    "moveDown": "Przesuń sie w dōł",
+    "defaultBadge": "Domyślnie dlo nowych potencjalnych kliyntōw",
+    "bookingBadge": "Status rezerwacyje",
+    "asksForLabel": "Pyto ô {{label}}",
+    "asksForDateTime": "Pyto ô data i czas",
+    "none": "Żodyn",
+    "dateTime": "Data i czas",
+    "scheduledOn": "na {{names}}",
+    "fieldsSummary_one": "Pole {{count}} ( {{mandatory}} ôbowiōnzkowe)",
+    "fieldsSummary_other": "{{count}} pōl ( {{mandatory}} ôbowiōnzkowe)",
+    "deleteConfirm": "Usuń stan \" {{name}} \"? To niy może być cofniynte.",
+    "editTitle": "Edytuj stan - {{name}}",
+    "newTitle": "Nowy status",
+    "name": "Miano stanu",
+    "colour": "Farba",
+    "active": "Aktywny",
+    "isDefault": "Status domyślny dlo nowych potencjalnych kliyntōw",
+    "isBooking": "Status rezerwacyje (ustawiōny bez kōmpletno rezerwacyjo)",
+    "whenMoved": "Kej prowadzynie je przeniesiōne do tego statusu",
+    "askSchedule": "Zapytaj ô data i czas (harmōnogram)",
+    "scheduleLabelPlaceholder": "Etyketa, bp. Nawiydź na",
+    "fieldsToShow": "Pola prowadzōnce, co majōm być pokozane na formularzu aktualizacyje",
+    "subStatusesTitle": "Podstatusy",
+    "subStatusesHint": "Kożdy podstatus może zapytać ô włosno data i czas i przidać włosne pola - pokozane na wiyrchu pōl statusu powyżyj.",
+    "subStatusName": "Miano podstatusu",
+    "subFields": "Pola ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Etyketa daty i czasu, bp. Zadzwonij ôd",
+    "addSubStatus": "+ Przidej podstatus",
+    "saveStatus": "Zapisz stan",
+    "createStatus": "Utworz status"
+  },
+  "notifications": {
+    "intro": "Poinformuj ôdpednich ôsōb, kej prowadzōncy ôsiōngnie status - zaroz abo w ôkreślōnym czasie przed/po zaplanowanym na nim dacie i czasie.",
+    "add": "+ Przidej notyfikacyjo",
+    "columns": {
+      "notification": "Notyfikacyjo",
+      "whenStatusIs": "Kej status je",
+      "sends": "Wysyło",
+      "to": "Do",
+      "via": "Bez",
+      "enabled": "Włōnczōne"
+    },
+    "anyStatus": "Jako ino status",
+    "anySubStatus": "Jako ino podstatus",
+    "inactiveOption": "{{name}} (niyaktywne)",
+    "emptyRules": "Jeszcze niy ma notyfikacyji - przidej jedna, coby ôstrzegać swoja drużyna, kej lead ôsiōngnie status.",
+    "jobs": {
+      "title": "Zaplanowane i wysłane",
+      "firesAt": "Ôgnie przi",
+      "notification": "Notyfikacyjo",
+      "lead": "Kludzić",
+      "status": "Status",
+      "details": "Detale",
+      "empty": "Nic niy ma jeszcze zaplanowane ani wysłane.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} ​​)"
+    },
+    "jobStatus": {
+      "PENDING": "Aże do",
+      "PROCESSING": "Przetworzanie",
+      "SENT": "Posłany",
+      "FAILED": "Przegrany",
+      "SKIPPED": "Pōmiynto",
+      "CANCELLED": "Pociepniynte"
+    },
+    "deliveryStatus": {
+      "SENT": "posłany",
+      "FAILED": "przegrany",
+      "SKIPPED": "pōminiynte"
+    },
+    "deliveryChannel": {
+      "IN_APP": "w aplikacyji",
+      "EMAIL": "e-mail",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Przipisany używocz",
+      "owner": "Posiedziciel",
+      "updatedBy": "Zaktualizowane bez",
+      "role": "Rola: {{name}}"
+    },
+    "channels": {
+      "inApp": "W aplikacyji",
+      "email": "E-mail",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Usuń powiadōmiynie \" {{name}} \"? Ôczekujōnce przipomniynia z niego sōm pociepniynte.",
+    "testPrompt": "Wysłaj test tego powiadōmiynio do siebie (w aplikacyji) ze użyciym jakigo ID lead ?",
+    "testSent": "Wysłane do twojigo dzwōnka: {{title}} {{message}}",
+    "headersInvalid": "Zagłowki Webhook muszōm być ważny JSON , bp. {\"Autoryzacyjo\": \"Nosiciel xyz\"}",
+    "editTitle": "Edytuj powiadōmiynie",
+    "newTitle": "Nowe notyfikacyjo",
+    "name": "Miano",
+    "namePlaceholder": "bp. Przipomniynie ô byzuchu strōny",
+    "whenStatus": "Kej status prowadzōncego je",
+    "subStatus": "Podstatus",
+    "send": "Wysyłaj (harmōnogram)",
+    "custom": "Zwyk...",
+    "modeBefore": "przed zaplanowanym czasym",
+    "modeAfter": "po zaplanowanym czasie",
+    "noScheduleWarning": "Tyn status niy pyto ô data i czas, tōż powiadōmiynie \"przed/w/po zaplanowanym czasie\" nikej niy byłoby wypalane.",
+    "noScheduleFix": "Włōncz <strong>Zapytaj ô data i czas</strong> w ôbrymbie Statusy i podstatusy abo wyślij Zaroz.",
+    "sendTo": "Wysyłaj do (kożdyj kōmbinacyje)",
+    "recipientAssigned": "Przipisany używocz (głōwny posiedziciel)",
+    "recipientOwner": "Posiedziciel kōnta / admin",
+    "recipientUpdatedBy": "Ôsoba, kero zaktualizowała status",
+    "everyoneWithRole": "Kożdy z rolōm",
+    "specificUsers": "Ôkreślōne używocze (aktywni)",
+    "inactiveNever": "Niyaktywni używocze nikej niy dostowajōm powiadōmień, nawet jeźli sōm ôbrane.",
+    "deliverVia": "Dostawa bez",
+    "channelInApp": "W aplikacyji (dzwōn)",
+    "channelEmail": "E-mail",
+    "channelWebhook": "Webhook ( dostowca WhatsApp / SMS )",
+    "emailHint": "E-mail idzie na adres e-mail kożdego ôdbiorcy i potrzebuje ustawiynio SMTP na serwerze (backend/.env); do tego czasu wysyłania e-mail sōm zalogowane za pōminiynte.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Zagłowki ( JSON )",
+    "content": "Treść notyfikacyje",
+    "title": "Tytuł",
+    "message": "Wiadōmość",
+    "insertIntoTitle": "Wkludź do Tytułu",
+    "insertIntoMessage": "Wkludź do Wiadōmości",
+    "anyLeadField": "Funguje tyż kożde pole prowadzōnce, bp. <code1>{{example1}}</code1> abo <code2>{{example2}}</code2> .",
+    "preview": "Przedglōnd (prōbkowy prowadzynie)",
+    "enabled": "Włōnczōne",
+    "saveRule": "Zapisz powiadōmiynie",
+    "createRule": "Utworz notyfikacyjo",
+    "variables": {
+      "customerName": "Miano prowadzōncego",
+      "customerMobile": "Prowadzōncy mobilny",
+      "customerEmail": "Prowadzōnco e-mail",
+      "registrationId": "ID prowadzōncego",
+      "status": "Status",
+      "subStatus": "Podstatus",
+      "scheduleAt": "Zaplanowano data i czas",
+      "assignedTo": "Przipisany używocz",
+      "updatedBy": "Zaktualizowane bez",
+      "recipient": "Miano ôdbiorcy",
+      "project": "Projekt",
+      "notes": "Nojnowszo nota",
+      "partner": "Miano partnera"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Zaroz po ustawiyniu status",
+      "AT": "W zaplanowanym czasie",
+      "A1D": "1 dziyń po zaplanowanym czasie (dalszo kōntrola)"
+    },
+    "immediately": "Niyzawodnie",
+    "atScheduled": "W zaplanowanym czasie",
+    "before": {
+      "MINUTES_one": "{{count}} minuta przed zaplanowanōm godzinōm",
+      "MINUTES_other": "{{count}} minuty przed zaplanowanōm godōm",
+      "HOURS_one": "{{count}} godzina przed zaplanowanōm godzinōm",
+      "HOURS_other": "{{count}} godziny przed zaplanowanōm godzinōm",
+      "DAYS_one": "{{count}} dziyń przed zaplanowanōm godzinōm",
+      "DAYS_other": "{{count}} dni przed zaplanowanōm godzinōm",
+      "WEEKS_one": "{{count}} tydziyń przed zaplanowanōm godōm",
+      "WEEKS_other": "{{count}} tydnie przed zaplanowanōm godōm",
+      "MONTHS_one": "{{count}} miesiōnc przed zaplanowanōm godōm",
+      "MONTHS_other": "{{count}} miesiōnce przed zaplanowanōm godōm",
+      "YEARS_one": "{{count}} rok przed zaplanowanōm godōm",
+      "YEARS_other": "{{count}} lata przed zaplanowanōm godōm"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minuta po zaplanowanym czasie",
+      "MINUTES_other": "{{count}} minuty po zaplanowanym czasie",
+      "HOURS_one": "{{count}} godzina po zaplanowanym czasie",
+      "HOURS_other": "{{count}} godziny po zaplanowanym czasie",
+      "DAYS_one": "{{count}} dziyń po zaplanowanym czasie",
+      "DAYS_other": "{{count}} dni po zaplanowanym czasie",
+      "WEEKS_one": "{{count}} tydziyń po zaplanowanym czasie",
+      "WEEKS_other": "{{count}} tydnie po zaplanowanym czasie",
+      "MONTHS_one": "{{count}} miesiōnc po zaplanowanym czasie",
+      "MONTHS_other": "{{count}} miesiōncy po zaplanowanym czasie",
+      "YEARS_one": "{{count}} rok po zaplanowanym czasie",
+      "YEARS_other": "{{count}} lata po zaplanowanym czasie"
+    },
+    "units": {
+      "MINUTES_one": "minuta",
+      "MINUTES_other": "minuty",
+      "HOURS_one": "godzina",
+      "HOURS_other": "godziny",
+      "DAYS_one": "dziyń",
+      "DAYS_other": "dni",
+      "WEEKS_one": "tydziyń",
+      "WEEKS_other": "tydni",
+      "MONTHS_one": "miesiōnc",
+      "MONTHS_other": "miesiyncy",
+      "YEARS_one": "rok",
+      "YEARS_other": "lata"
+    }
+  }
+}

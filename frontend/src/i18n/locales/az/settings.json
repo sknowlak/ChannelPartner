@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Parametrlər",
+    "noPermission": "Ayarları idarə etmək icazəniz yoxdur."
+  },
+  "categories": {
+    "lead": "Qurğuşun",
+    "user": "İstifadəçi",
+    "integrations": "İnteqrasiyalar"
+  },
+  "leadTabs": {
+    "fields": "Sahələr",
+    "statuses": "Statuslar və alt statuslar",
+    "notifications": "Bildirişlər və Planlayıcılar"
+  },
+  "fields": {
+    "leadIntro": "Potensial tutma formasını konfiqurasiya edin: sahələri aktivləşdirin/deaktiv edin, onları tələb olunan kimi qeyd edin və ya öz fərdi sahələrinizi əlavə edin.",
+    "userIntro": "Komanda Üzvü Əlavə/Düzəliş formasını konfiqurasiya edin: sahələri aktivləşdirin/deaktiv edin, onları tələb olunan kimi qeyd edin və ya öz fərdi sahələrinizi əlavə edin.",
+    "addCustomField": "+ Xüsusi Sahə əlavə edin",
+    "fieldLabel": "Sahə Etiketi",
+    "group": "Qrup",
+    "groupPlaceholderLead": "məsələn, Sorğu Məlumatı",
+    "groupPlaceholderUser": "məsələn, Əlavə Təfərrüatlar",
+    "dataType": "Məlumat növü",
+    "options": "Seçimlər (vergüllə ayrılmış)",
+    "requiredLead": "Tələb olunur - komandanızdakı tərəfdaşlar potensial müştərini qeydiyyatdan keçirmək üçün bunu doldurmalıdırlar",
+    "requiredUser": "Tələb olunur - komanda üzvü əlavə edilərkən doldurulmalıdır",
+    "creating": "Yaradılır...",
+    "createField": "Sahə yaradın",
+    "columns": {
+      "field": "Sahə",
+      "group": "Qrup",
+      "type": "Növ",
+      "required": "Tələb olunur",
+      "enabled": "Aktivdir",
+      "kind": "mehriban"
+    },
+    "kind": {
+      "custom": "Xüsusi",
+      "core": "Əsas (kilidli)",
+      "standard": "Standart"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Mətn",
+    "TEXTAREA": "Uzun mətn",
+    "NUMBER": "Nömrə",
+    "CURRENCY": "Valyuta",
+    "DATE": "Tarix",
+    "SELECT": "Açılan siyahı",
+    "LIST": "Siyahı"
+  },
+  "picker": {
+    "searchPlaceholder": "Potensial sahələri axtarın...",
+    "summary": "{{shown}} göstərildi · {{mandatory}} məcburi",
+    "mandatory": "Məcburi",
+    "noMatch": "Uyğun sahə yoxdur."
+  },
+  "statuses": {
+    "intro": "Podratçı statuslarınız və alt statuslarınız - kimsə potensial müştərini yenilədikdə hər birinin tələb etdiyi (tarix və vaxt, potensial sahələr).",
+    "add": "+ Status əlavə edin",
+    "columns": {
+      "order": "Sifariş verin",
+      "status": "Vəziyyət",
+      "subStatuses": "Alt statuslar",
+      "asksFor": "İstəyir",
+      "active": "Aktiv"
+    },
+    "moveUp": "Yuxarı hərəkət edin",
+    "moveDown": "Aşağı hərəkət edin",
+    "defaultBadge": "Yeni potensial müştərilər üçün defolt",
+    "bookingBadge": "Rezervasiya statusu",
+    "asksForLabel": "{{label}} üçün soruşur",
+    "asksForDateTime": "Tarix və vaxtı soruşur",
+    "none": "Heç biri",
+    "dateTime": "Tarix və vaxt",
+    "scheduledOn": "{{names}} üzərində",
+    "fieldsSummary_one": "{{count}} sahə ( {{mandatory}} məcburi)",
+    "fieldsSummary_other": "{{count}} sahə ( {{mandatory}} məcburi)",
+    "deleteConfirm": "\" {{name}} \" statusu silinsin? Bu geri qaytarıla bilməz.",
+    "editTitle": "Statusu Redaktə et - {{name}}",
+    "newTitle": "Yeni Status",
+    "name": "Statusun adı",
+    "colour": "Rəng",
+    "active": "Aktiv",
+    "isDefault": "Yeni potensial müştərilər üçün defolt status",
+    "isBooking": "Rezervasiya statusu (Tam Rezervasiya ilə müəyyən edilir)",
+    "whenMoved": "Podratçı bu statusa köçürüldükdə",
+    "askSchedule": "Tarix və vaxtı soruşun (planlayıcı)",
+    "scheduleLabelPlaceholder": "Etiket, məsələn, Ziyarət et",
+    "fieldsToShow": "Yeniləmə formasında görünəcək sahələrə rəhbərlik edin",
+    "subStatusesTitle": "Alt statuslar",
+    "subStatusesHint": "Hər bir alt status öz tarixi və vaxtını istəyə və öz sahələrini əlavə edə bilər - yuxarıdakı status sahələrinin üstündə göstərilir.",
+    "subStatusName": "Alt status adı",
+    "subFields": "Sahələr ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Tarix və vaxt etiketi, məsələn, geri zəng edin",
+    "addSubStatus": "+ Alt status əlavə edin",
+    "saveStatus": "Status Saxla",
+    "createStatus": "Status yaradın"
+  },
+  "notifications": {
+    "intro": "Podratçı statusa çatdıqda lazımi insanları xəbərdar edin - dərhal və ya ona təyin edilmiş tarix və vaxtdan əvvəl/sonra müəyyən edilmiş vaxt.",
+    "add": "+ Bildiriş əlavə edin",
+    "columns": {
+      "notification": "Bildiriş",
+      "whenStatusIs": "Status olduqda",
+      "sends": "Göndər",
+      "to": "Kimə",
+      "via": "Vasitəsilə",
+      "enabled": "Aktivdir"
+    },
+    "anyStatus": "İstənilən status",
+    "anySubStatus": "İstənilən alt status",
+    "inactiveOption": "{{name}} (qeyri-aktiv)",
+    "emptyRules": "Hələ heç bir bildiriş yoxdur - lider statusa çatdıqda komandanızı xəbərdar etmək üçün bildiriş əlavə edin.",
+    "jobs": {
+      "title": "Planlaşdırıldı və Göndərildi",
+      "firesAt": "Yanğınlar",
+      "notification": "Bildiriş",
+      "lead": "Qurğuşun",
+      "status": "Vəziyyət",
+      "details": "Təfərrüatlar",
+      "empty": "Hələ heç nə planlaşdırılmayıb və ya göndərilməyib.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Gözlənir",
+      "PROCESSING": "Emal edilir",
+      "SENT": "Göndərildi",
+      "FAILED": "Uğursuz oldu",
+      "SKIPPED": "Atlandı",
+      "CANCELLED": "Ləğv edildi"
+    },
+    "deliveryStatus": {
+      "SENT": "göndərildi",
+      "FAILED": "uğursuz oldu",
+      "SKIPPED": "atladı"
+    },
+    "deliveryChannel": {
+      "IN_APP": "tətbiqdaxili",
+      "EMAIL": "e-poçt",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Təyin edilmiş istifadəçi",
+      "owner": "Sahibi",
+      "updatedBy": "tərəfindən yenilənib",
+      "role": "Rol: {{name}}"
+    },
+    "channels": {
+      "inApp": "Tətbiqdaxili",
+      "email": "E-poçt",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "\" {{name}} \" bildirişi silinsin? Ondan gözlənilən xatırlatmalar ləğv edilir.",
+    "testPrompt": "Hansı aparıcı ID dən istifadə edərək bu bildirişin sınağını özünüzə (tətbiqdaxili) göndərin?",
+    "testSent": "Zənginizə göndərildi: {{title}} {{message}}",
+    "headersInvalid": "Webhook başlıqları etibarlı JSON olmalıdır, məsələn, {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Bildirişi redaktə edin",
+    "newTitle": "Yeni Bildiriş",
+    "name": "ad",
+    "namePlaceholder": "məsələn Sayt ziyarəti xatırlatma",
+    "whenStatus": "Rəhbər statusu olduqda",
+    "subStatus": "Alt status",
+    "send": "Göndər (planlayıcı)",
+    "custom": "Xüsusi...",
+    "modeBefore": "planlaşdırılan vaxtdan əvvəl",
+    "modeAfter": "planlaşdırılmış vaxtdan sonra",
+    "noScheduleWarning": "Bu status tarix və vaxt tələb etmir, ona görə də \"planlaşdırılmış vaxtdan əvvəl/sonra\" bildirişi heç vaxt işə düşməyəcək.",
+    "noScheduleFix": "Statuslar və Alt Vəziyyətlər bölməsində <strong>Tarix və vaxt tələb et</strong> funksiyasını yandırın və ya Dərhal göndərin.",
+    "sendTo": "Göndər (istənilən kombinasiya)",
+    "recipientAssigned": "Təyin edilmiş istifadəçi (aparıcı sahib)",
+    "recipientOwner": "Hesab sahibi / admin",
+    "recipientUpdatedBy": "Statusu yeniləyən şəxs",
+    "everyoneWithRole": "Rolu olan hər kəs",
+    "specificUsers": "Xüsusi istifadəçilər (aktiv)",
+    "inactiveNever": "Seçilmiş olsa belə, qeyri-aktiv istifadəçilər heç vaxt bildiriş almırlar.",
+    "deliverVia": "vasitəsilə çatdırmaq",
+    "channelInApp": "Tətbiqdaxili (zəng)",
+    "channelEmail": "E-poçt",
+    "channelWebhook": "Webhook ( WhatsApp / SMS provayderi)",
+    "emailHint": "E-poçt hər bir alıcının e-poçt ünvanına gedir və serverdə SMTP qurmaq lazımdır (backend/.env); o vaxta qədər e-poçt göndərişləri atlanmış kimi qeyd olunur.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Başlıqlar ( JSON )",
+    "content": "Bildiriş məzmunu",
+    "title": "Başlıq",
+    "message": "Mesaj",
+    "insertIntoTitle": "Başlığa daxil edin",
+    "insertIntoMessage": "Mesaja daxil edin",
+    "anyLeadField": "İstənilən aparıcı sahə də işləyir, məsələn <code1>{{example1}}</code1> və ya <code2>{{example2}}</code2> .",
+    "preview": "Önizləmə (nümunə aparıcı)",
+    "enabled": "Aktivdir",
+    "saveRule": "Bildirişi Saxla",
+    "createRule": "Bildiriş yaradın",
+    "variables": {
+      "customerName": "Aparıcı adı",
+      "customerMobile": "Aparıcı mobil",
+      "customerEmail": "Aparıcı e-poçt",
+      "registrationId": "Aparıcı ID",
+      "status": "Vəziyyət",
+      "subStatus": "Alt status",
+      "scheduleAt": "Planlaşdırılmış tarix və vaxt",
+      "assignedTo": "Təyin edilmiş istifadəçi",
+      "updatedBy": "tərəfindən yenilənib",
+      "recipient": "Alıcı adı",
+      "project": "Layihə",
+      "notes": "Ən son qeyd",
+      "partner": "Tərəfdaş adı"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Vəziyyət təyin edildikdə dərhal",
+      "AT": "Planlaşdırılan vaxtda",
+      "A1D": "Planlaşdırılmış vaxtdan 1 gün sonra (sonrakı yoxlama)"
+    },
+    "immediately": "Dərhal",
+    "atScheduled": "Planlaşdırılmış vaxtda",
+    "before": {
+      "MINUTES_one": "Planlaşdırılmış vaxtdan {{count}} dəqiqə əvvəl",
+      "MINUTES_other": "Planlaşdırılmış vaxtdan {{count}} dəqiqə əvvəl",
+      "HOURS_one": "Planlaşdırılmış vaxtdan {{count}} saat əvvəl",
+      "HOURS_other": "Planlaşdırılmış vaxtdan {{count}} saat əvvəl",
+      "DAYS_one": "Planlaşdırılmış vaxtdan {{count}} gün əvvəl",
+      "DAYS_other": "Planlaşdırılmış vaxtdan {{count}} gün əvvəl",
+      "WEEKS_one": "Planlaşdırılmış vaxtdan {{count}} həftə əvvəl",
+      "WEEKS_other": "Planlaşdırılmış vaxtdan {{count}} həftə əvvəl",
+      "MONTHS_one": "Planlaşdırılmış vaxtdan {{count}} ay əvvəl",
+      "MONTHS_other": "Planlaşdırılmış vaxtdan {{count}} ay əvvəl",
+      "YEARS_one": "Planlaşdırılmış vaxtdan {{count}} il əvvəl",
+      "YEARS_other": "Planlaşdırılmış vaxtdan {{count}} il əvvəl"
+    },
+    "after": {
+      "MINUTES_one": "Planlaşdırılmış vaxtdan {{count}} dəqiqə sonra",
+      "MINUTES_other": "Planlaşdırılmış vaxtdan {{count}} dəqiqə sonra",
+      "HOURS_one": "Planlaşdırılmış vaxtdan {{count}} saat sonra",
+      "HOURS_other": "Planlaşdırılmış vaxtdan {{count}} saat sonra",
+      "DAYS_one": "Planlaşdırılmış vaxtdan {{count}} gün sonra",
+      "DAYS_other": "Planlaşdırılmış vaxtdan {{count}} gün sonra",
+      "WEEKS_one": "Planlaşdırılmış vaxtdan {{count}} həftə sonra",
+      "WEEKS_other": "Planlaşdırılmış vaxtdan {{count}} həftə sonra",
+      "MONTHS_one": "Planlaşdırılmış vaxtdan {{count}} ay sonra",
+      "MONTHS_other": "Planlaşdırılmış vaxtdan {{count}} ay sonra",
+      "YEARS_one": "Planlaşdırılmış vaxtdan {{count}} il sonra",
+      "YEARS_other": "Planlaşdırılmış vaxtdan {{count}} il sonra"
+    },
+    "units": {
+      "MINUTES_one": "dəqiqə",
+      "MINUTES_other": "dəqiqə",
+      "HOURS_one": "saat",
+      "HOURS_other": "saat",
+      "DAYS_one": "gün",
+      "DAYS_other": "günlər",
+      "WEEKS_one": "həftə",
+      "WEEKS_other": "həftələr",
+      "MONTHS_one": "ay",
+      "MONTHS_other": "ay",
+      "YEARS_one": "il",
+      "YEARS_other": "illər"
+    }
+  }
+}

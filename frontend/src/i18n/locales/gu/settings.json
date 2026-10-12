@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "સેટિંગ્સ",
+    "noPermission": "તમને સેટિંગ્સ મેનેજ કરવાની પરવાનગી નથી."
+  },
+  "categories": {
+    "lead": "લીડ",
+    "user": "વપરાશકર્તા",
+    "integrations": "એકીકરણ"
+  },
+  "leadTabs": {
+    "fields": "ક્ષેત્રો",
+    "statuses": "સ્ટેટસ અને પેટા સ્ટેટસ",
+    "notifications": "સૂચનાઓ અને સમયપત્રક"
+  },
+  "fields": {
+    "leadIntro": "લીડ કેપ્ચર ફોર્મને ગોઠવો: ફીલ્ડ્સને સક્ષમ/અક્ષમ કરો, તેમને જરૂરી ચિહ્નિત કરો અથવા તમારા પોતાના કસ્ટમ ફીલ્ડ ઉમેરો.",
+    "userIntro": "ટીમ મેમ્બર ઉમેરો/સંપાદિત કરો ફોર્મ ગોઠવો: ફીલ્ડ્સને સક્ષમ/અક્ષમ કરો, તેમને જરૂરી ચિહ્નિત કરો અથવા તમારા પોતાના કસ્ટમ ફીલ્ડ્સ ઉમેરો.",
+    "addCustomField": "+ કસ્ટમ ફીલ્ડ ઉમેરો",
+    "fieldLabel": "ફીલ્ડ લેબલ",
+    "group": "સમૂહ",
+    "groupPlaceholderLead": "દા.ત. પૂછપરછ માહિતી",
+    "groupPlaceholderUser": "દા.ત. વધારાની વિગતો",
+    "dataType": "ડેટા પ્રકાર",
+    "options": "વિકલ્પો (અલ્પવિરામથી અલગ)",
+    "requiredLead": "આવશ્યક - તમારી ટીમના ભાગીદારોએ લીડની નોંધણી કરવા માટે આ ભરવું આવશ્યક છે",
+    "requiredUser": "જરૂરી - ટીમના સભ્યને ઉમેરતી વખતે ભરવું આવશ્યક છે",
+    "creating": "બનાવી રહ્યું છે...",
+    "createField": "ક્ષેત્ર બનાવો",
+    "columns": {
+      "field": "ક્ષેત્ર",
+      "group": "સમૂહ",
+      "type": "પ્રકાર",
+      "required": "જરૂરી છે",
+      "enabled": "સક્ષમ",
+      "kind": "પ્રકારની"
+    },
+    "kind": {
+      "custom": "કસ્ટમ",
+      "core": "કોર (લોક કરેલ)",
+      "standard": "ધોરણ"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "ટેક્સ્ટ",
+    "TEXTAREA": "લાંબું લખાણ",
+    "NUMBER": "નંબર",
+    "CURRENCY": "ચલણ",
+    "DATE": "તારીખ",
+    "SELECT": "ડ્રોપડાઉન",
+    "LIST": "યાદી"
+  },
+  "picker": {
+    "searchPlaceholder": "લીડ ફીલ્ડ્સ શોધો...",
+    "summary": "{{shown}} બતાવેલ · {{mandatory}} ફરજિયાત",
+    "mandatory": "ફરજિયાત",
+    "noMatch": "કોઈ ફીલ્ડ મેચ નથી."
+  },
+  "statuses": {
+    "intro": "તમારા લીડ સ્ટેટસ અને પેટા સ્ટેટસ - જ્યારે કોઈ તેના પર લીડ અપડેટ કરે ત્યારે દરેક વ્યક્તિ શું માંગે છે (તારીખ અને સમય, લીડ ફીલ્ડ્સ).",
+    "add": "+ સ્થિતિ ઉમેરો",
+    "columns": {
+      "order": "ઓર્ડર",
+      "status": "સ્થિતિ",
+      "subStatuses": "પેટા-સ્થિતિઓ",
+      "asksFor": "માટે પૂછે છે",
+      "active": "સક્રિય"
+    },
+    "moveUp": "ઉપર ખસેડો",
+    "moveDown": "નીચે ખસેડો",
+    "defaultBadge": "નવી લીડ્સ માટે ડિફોલ્ટ",
+    "bookingBadge": "બુકિંગ સ્થિતિ",
+    "asksForLabel": "{{label}} માટે પૂછે છે",
+    "asksForDateTime": "તારીખ અને સમય પૂછે છે",
+    "none": "કોઈ નહિ",
+    "dateTime": "તારીખ અને સમય",
+    "scheduledOn": "{{names}} પર",
+    "fieldsSummary_one": "{{count}} ફીલ્ડ ( {{mandatory}} ફરજિયાત)",
+    "fieldsSummary_other": "{{count}} ફીલ્ડ્સ ( {{mandatory}} ફરજિયાત)",
+    "deleteConfirm": "સ્થિતિ \" {{name}} \" કાઢી નાખીએ? આ પૂર્વવત્ કરી શકાતું નથી.",
+    "editTitle": "સ્થિતિ સંપાદિત કરો - {{name}}",
+    "newTitle": "નવી સ્થિતિ",
+    "name": "સ્ટેટસ નામ",
+    "colour": "રંગ",
+    "active": "સક્રિય",
+    "isDefault": "નવી લીડ્સ માટે ડિફોલ્ટ સ્થિતિ",
+    "isBooking": "બુકિંગ સ્ટેટસ (સંપૂર્ણ બુકિંગ દ્વારા સેટ)",
+    "whenMoved": "જ્યારે લીડને આ સ્થિતિમાં ખસેડવામાં આવે છે",
+    "askSchedule": "તારીખ અને સમય માટે પૂછો (શેડ્યૂલર)",
+    "scheduleLabelPlaceholder": "લેબલ, દા.ત. મુલાકાત લો",
+    "fieldsToShow": "અપડેટ ફોર્મ પર બતાવવા માટે લીડ ફીલ્ડ્સ",
+    "subStatusesTitle": "પેટા-સ્થિતિઓ",
+    "subStatusesHint": "દરેક સબ-સ્ટેટસ તેની પોતાની તારીખ અને સમય પૂછી શકે છે અને તેના પોતાના ફીલ્ડ ઉમેરી શકે છે - ઉપર સ્ટેટસના ફીલ્ડ્સની ટોચ પર બતાવેલ છે.",
+    "subStatusName": "સબ-સ્ટેટસ નામ",
+    "subFields": "ક્ષેત્રો ( {{count}} )",
+    "subScheduleLabelPlaceholder": "તારીખ અને સમય લેબલ, દા.ત. પર કૉલ બેક કરો",
+    "addSubStatus": "+ પેટા-સ્થિતિ ઉમેરો",
+    "saveStatus": "સ્ટેટસ સાચવો",
+    "createStatus": "સ્થિતિ બનાવો"
+  },
+  "notifications": {
+    "intro": "જ્યારે લીડ સ્થિતિ પર પહોંચે ત્યારે યોગ્ય લોકોને સૂચિત કરો - તરત જ, અથવા તેના પર નિર્ધારિત તારીખ અને સમય પહેલાં/પછીનો સેટ સમય.",
+    "add": "+ સૂચના ઉમેરો",
+    "columns": {
+      "notification": "સૂચના",
+      "whenStatusIs": "જ્યારે સ્થિતિ છે",
+      "sends": "મોકલે છે",
+      "to": "થી",
+      "via": "વાયા",
+      "enabled": "સક્ષમ"
+    },
+    "anyStatus": "કોઈપણ સ્થિતિ",
+    "anySubStatus": "કોઈપણ પેટા-સ્થિતિ",
+    "inactiveOption": "{{name}} (નિષ્ક્રિય)",
+    "emptyRules": "હજી સુધી કોઈ સૂચનાઓ નથી - જ્યારે લીડ સ્થિતિ પર પહોંચે ત્યારે તમારી ટીમને ચેતવણી આપવા માટે એક ઉમેરો.",
+    "jobs": {
+      "title": "સુનિશ્ચિત અને મોકલેલ",
+      "firesAt": "ખાતે આગ",
+      "notification": "સૂચના",
+      "lead": "લીડ",
+      "status": "સ્થિતિ",
+      "details": "વિગતો",
+      "empty": "હજી સુધી કંઈપણ શેડ્યૂલ અથવા મોકલવામાં આવ્યું નથી.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "બાકી છે",
+      "PROCESSING": "પ્રોસેસિંગ",
+      "SENT": "મોકલેલ",
+      "FAILED": "નિષ્ફળ",
+      "SKIPPED": "છોડી દીધું",
+      "CANCELLED": "રદ કરેલ"
+    },
+    "deliveryStatus": {
+      "SENT": "મોકલેલ",
+      "FAILED": "નિષ્ફળ",
+      "SKIPPED": "છોડી દીધું"
+    },
+    "deliveryChannel": {
+      "IN_APP": "એપ્લિકેશનમાં",
+      "EMAIL": "ઇમેઇલ",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "સોંપાયેલ વપરાશકર્તા",
+      "owner": "માલિક",
+      "updatedBy": "દ્વારા અપડેટ કરાયેલ",
+      "role": "ભૂમિકા: {{name}}"
+    },
+    "channels": {
+      "inApp": "એપ્લિકેશનમાં",
+      "email": "ઈમેલ",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "સૂચના \" {{name}} \" કાઢી નાખીએ? તેમાંથી બાકી રિમાઇન્ડર્સ રદ કરવામાં આવે છે.",
+    "testPrompt": "કયા લીડ ID ઉપયોગ કરીને આ સૂચનાનું પરીક્ષણ જાતે (એપમાં) મોકલો?",
+    "testSent": "તમારી બેલ પર મોકલ્યો: {{title}} {{message}}",
+    "headersInvalid": "Webhook હેડર માન્ય JSON હોવા જોઈએ, દા.ત. {\"અધિકૃતતા\": \"બેરર xyz\"}",
+    "editTitle": "સૂચના સંપાદિત કરો",
+    "newTitle": "નવી સૂચના",
+    "name": "નામ",
+    "namePlaceholder": "દા.ત. સાઇટ મુલાકાત રીમાઇન્ડર",
+    "whenStatus": "જ્યારે લીડની સ્થિતિ છે",
+    "subStatus": "ઉપ-સ્થિતિ",
+    "send": "મોકલો (શેડ્યૂલર)",
+    "custom": "કસ્ટમ...",
+    "modeBefore": "નિર્ધારિત સમય પહેલા",
+    "modeAfter": "નિર્ધારિત સમય પછી",
+    "noScheduleWarning": "આ સ્થિતિ તારીખ અને સમય માટે પૂછતી નથી, તેથી \"નિર્ધારિત સમય પહેલાં/એટલે/પછી\" સૂચના ક્યારેય ફાયર થશે નહીં.",
+    "noScheduleFix": "સ્થિતિઓ અને ઉપ-સ્થિતિઓ હેઠળ તેના માટે <strong>તારીખ અને સમય માટે પૂછો</strong> ચાલુ કરો અથવા તરત જ મોકલો.",
+    "sendTo": "(કોઈપણ સંયોજન) પર મોકલો",
+    "recipientAssigned": "સોંપેલ વપરાશકર્તા (મુખ્ય માલિક)",
+    "recipientOwner": "એકાઉન્ટ માલિક / એડમિન",
+    "recipientUpdatedBy": "વ્યક્તિ જેણે સ્ટેટસ અપડેટ કર્યું છે",
+    "everyoneWithRole": "ભૂમિકા સાથે દરેક",
+    "specificUsers": "વિશિષ્ટ વપરાશકર્તાઓ (સક્રિય)",
+    "inactiveNever": "નિષ્ક્રિય વપરાશકર્તાઓને ક્યારેય સૂચનાઓ પ્રાપ્ત થતી નથી, પછી ભલે તે પસંદ કરવામાં આવે.",
+    "deliverVia": "મારફતે પહોંચાડો",
+    "channelInApp": "એપ્લિકેશનમાં (બેલ)",
+    "channelEmail": "ઈમેલ",
+    "channelWebhook": "Webhook ( WhatsApp / SMS પ્રદાતા)",
+    "emailHint": "ઈમેલ દરેક પ્રાપ્તકર્તાના ઈમેલ એડ્રેસ પર જાય છે અને સર્વર પર SMTP સેટ કરવાની જરૂર છે (backend/.env); ત્યાં સુધી ઈમેઈલ મોકલવામાં આવે છે તે છોડેલ તરીકે લોગ થાય છે.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "હેડર્સ ( JSON )",
+    "content": "સૂચના સામગ્રી",
+    "title": "શીર્ષક",
+    "message": "સંદેશ",
+    "insertIntoTitle": "શીર્ષકમાં દાખલ કરો",
+    "insertIntoMessage": "સંદેશમાં દાખલ કરો",
+    "anyLeadField": "કોઈપણ લીડ ફીલ્ડ પણ કામ કરે છે, દા.ત. <code1>{{example1}}</code1> અથવા <code2>{{example2}}</code2> .",
+    "preview": "પૂર્વાવલોકન (નમૂના લીડ)",
+    "enabled": "સક્ષમ",
+    "saveRule": "સૂચના સાચવો",
+    "createRule": "સૂચના બનાવો",
+    "variables": {
+      "customerName": "લીડ નામ",
+      "customerMobile": "લીડ મોબાઈલ",
+      "customerEmail": "લીડ ઇમેઇલ",
+      "registrationId": "લીડ ID",
+      "status": "સ્થિતિ",
+      "subStatus": "ઉપ-સ્થિતિ",
+      "scheduleAt": "સુનિશ્ચિત તારીખ અને સમય",
+      "assignedTo": "સોંપાયેલ વપરાશકર્તા",
+      "updatedBy": "દ્વારા અપડેટ કરાયેલ",
+      "recipient": "પ્રાપ્તકર્તાનું નામ",
+      "project": "પ્રોજેક્ટ",
+      "notes": "નવીનતમ નોંધ",
+      "partner": "ભાગીદારનું નામ"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "જ્યારે સ્થિતિ સેટ થઈ જાય ત્યારે તરત જ",
+      "AT": "નિયત સમયે",
+      "A1D": "નિર્ધારિત સમય પછી 1 દિવસ (ફોલો-અપ ચેક)"
+    },
+    "immediately": "તરત જ",
+    "atScheduled": "નિયત સમયે",
+    "before": {
+      "MINUTES_one": "નિર્ધારિત સમય પહેલા {{count}} મિનિટ",
+      "MINUTES_other": "નિર્ધારિત સમય પહેલા {{count}} મિનિટ",
+      "HOURS_one": "નિર્ધારિત સમય પહેલા {{count}} કલાક",
+      "HOURS_other": "નિર્ધારિત સમય પહેલા {{count}} કલાક",
+      "DAYS_one": "નિર્ધારિત સમય પહેલા {{count}} દિવસ",
+      "DAYS_other": "નિર્ધારિત સમય પહેલા {{count}} દિવસ",
+      "WEEKS_one": "નિર્ધારિત સમય પહેલા {{count}} અઠવાડિયા",
+      "WEEKS_other": "નિર્ધારિત સમય પહેલા {{count}} અઠવાડિયા",
+      "MONTHS_one": "નિર્ધારિત સમય પહેલા {{count}} મહિના",
+      "MONTHS_other": "નિર્ધારિત સમય પહેલા {{count}} મહિના",
+      "YEARS_one": "નિર્ધારિત સમય પહેલા {{count}} વર્ષ",
+      "YEARS_other": "નિર્ધારિત સમય પહેલા {{count}} વર્ષ"
+    },
+    "after": {
+      "MINUTES_one": "નિર્ધારિત સમય પછી {{count}} મિનિટ",
+      "MINUTES_other": "નિર્ધારિત સમય પછી {{count}} મિનિટ",
+      "HOURS_one": "નિર્ધારિત સમય પછી {{count}} કલાક",
+      "HOURS_other": "નિર્ધારિત સમય પછી {{count}} કલાક",
+      "DAYS_one": "નિર્ધારિત સમય પછી {{count}} દિવસ",
+      "DAYS_other": "નિર્ધારિત સમય પછી {{count}} દિવસ",
+      "WEEKS_one": "સુનિશ્ચિત સમય પછી {{count}} અઠવાડિયા",
+      "WEEKS_other": "સુનિશ્ચિત સમય પછી {{count}} અઠવાડિયા",
+      "MONTHS_one": "સુનિશ્ચિત સમય પછી {{count}} મહિનો",
+      "MONTHS_other": "સુનિશ્ચિત સમય પછી {{count}} મહિના",
+      "YEARS_one": "સુનિશ્ચિત સમય પછી {{count}} વર્ષ",
+      "YEARS_other": "સુનિશ્ચિત સમય પછી {{count}} વર્ષ"
+    },
+    "units": {
+      "MINUTES_one": "મિનિટ",
+      "MINUTES_other": "મિનિટ",
+      "HOURS_one": "કલાક",
+      "HOURS_other": "કલાક",
+      "DAYS_one": "દિવસ",
+      "DAYS_other": "દિવસો",
+      "WEEKS_one": "સપ્તાહ",
+      "WEEKS_other": "અઠવાડિયા",
+      "MONTHS_one": "મહિનો",
+      "MONTHS_other": "મહિનાઓ",
+      "YEARS_one": "વર્ષ",
+      "YEARS_other": "વર્ષ"
+    }
+  }
+}

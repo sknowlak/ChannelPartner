@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Sɛtin dɛn we dɛn dɔn mek",
+    "noPermission": "Yu nɔ gɛt rayt fɔ manej di sɛtin dɛn."
+  },
+  "categories": {
+    "lead": "Lid",
+    "user": "Yuzman we de yuz am",
+    "integrations": "Integreshɔn dɛn"
+  },
+  "leadTabs": {
+    "fields": "Fild dɛn",
+    "statuses": "Status & Sab-Status dɛn",
+    "notifications": "Notis & Skedul dɛn"
+  },
+  "fields": {
+    "leadIntro": "Kɔnfigyut di lida kapchɔ fɔm: ɛnabul/disabl fil dɛn, mak dɛn nid, ɔ ad yu yon kɔstɔm fil dɛn.",
+    "userIntro": "Kɔnfigyut di Add/Edit Team Member fɔm: ɛnabul/disable fil dɛn, mak dɛn nid, ɔ ad yu yon kɔstɔm fil dɛn.",
+    "addCustomField": "+ Add Kastɔm ​​Fild",
+    "fieldLabel": "Fild Lɛbul",
+    "group": "Grup",
+    "groupPlaceholderLead": "eg Inkwyuiz Info",
+    "groupPlaceholderUser": "eg Ɔda Ditiɛl dɛn",
+    "dataType": "Data Tayp",
+    "options": "Di tin dɛn we yu kin pik (we dɛn separet wit kɔma) .",
+    "requiredLead": "Rikwayd - patna dɛn na yu tim fɔ ful-ɔp dis fɔ rɛjista wan lida",
+    "requiredUser": "Rikwayd - fɔ ful-ɔp we yu de ad tim mɛmba",
+    "creating": "We yu de mek...",
+    "createField": "Krio Fild",
+    "columns": {
+      "field": "Fil",
+      "group": "Grup",
+      "type": "Kayn",
+      "required": "Fɔ du",
+      "enabled": "Dɛn dɔn ɛnabul am",
+      "kind": "Kayn"
+    },
+    "kind": {
+      "custom": "Wetin kɔmɔn",
+      "core": "Kor (we dɛn lɔk) .",
+      "standard": "Advays"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Tɛks",
+    "TEXTAREA": "Lɔng tɛks",
+    "NUMBER": "Nɔmba",
+    "CURRENCY": "Mɔni",
+    "DATE": "Det",
+    "SELECT": "Drɔp daun",
+    "LIST": "List"
+  },
+  "picker": {
+    "searchPlaceholder": "Sɔch lida fild dɛn...",
+    "summary": "{{shown}} sho · {{mandatory}} mandatory",
+    "mandatory": "Pawpa",
+    "noMatch": "No fil nɔ de we de mach."
+  },
+  "statuses": {
+    "intro": "Yu lida stetus ɛn sab-status - wetin ɛni wan de aks fɔ (a deti & tɛm, lida fil dɛm) we sɔmbɔdi ɔpdet wan lida to am.",
+    "add": "+ Add Status fɔ yu",
+    "columns": {
+      "order": "Ɔda",
+      "status": "Pozishɔn",
+      "subStatuses": "Sab-Status dɛn",
+      "asksFor": "Asks Fɔ",
+      "active": "Wok"
+    },
+    "moveUp": "Muf go ɔp",
+    "moveDown": "Muf go dɔŋ",
+    "defaultBadge": "Difɔlt fɔ nyu lida dɛn",
+    "bookingBadge": "Di stetɔs fɔ bukin",
+    "asksForLabel": "Aks fɔ {{label}}",
+    "asksForDateTime": "Ask fɔ deti & tɛm",
+    "none": "Nɔn",
+    "dateTime": "Deti & tɛm",
+    "scheduledOn": "pan {{names}}",
+    "fieldsSummary_one": "{{count}} fil ( {{mandatory}} mandatory)",
+    "fieldsSummary_other": "{{count}} fil dɛm ( {{mandatory}} mandatory)",
+    "deleteConfirm": "Dilit di stetɔs \" {{name}} \"? Dis nɔ go ebul fɔ chenj.",
+    "editTitle": "Ɛdit Status - {{name}}",
+    "newTitle": "Nyu Status",
+    "name": "Status Nem fɔ di pɔsin",
+    "colour": "Kɔlɔ",
+    "active": "Wok",
+    "isDefault": "Difɔlt stetɔs fɔ nyu lida dɛn",
+    "isBooking": "Di stetɔs fɔ bukin (we dɛn sɛt bay Kɔmplit Buk)",
+    "whenMoved": "We dɛn muf wan lid to dis stetɔs",
+    "askSchedule": "Aks fɔ wan de & tɛm (scheduler)",
+    "scheduleLabelPlaceholder": "Lebul, ɛgz., Visit na",
+    "fieldsToShow": "Lid fil dɛn fɔ sho na di ɔpdet fɔm",
+    "subStatusesTitle": "Sab-Status dɛn",
+    "subStatusesHint": "Ɛni sab-status kin aks fɔ in yon de & tɛm ɛn ad in yon fil dɛm - we dɛn sho pan tap di stetɔs in fil dɛm ɔp.",
+    "subStatusName": "Di nem we de na di sab-status",
+    "subFields": "Fild dɛn ( {{count}} ) .",
+    "subScheduleLabelPlaceholder": "Date & time label, eg Kɔl bak na",
+    "addSubStatus": "+ Add Sab-Status fɔ di ɔda wan dɛn",
+    "saveStatus": "Sev di Status",
+    "createStatus": "Krio Status fɔ mek yu gɛt di prɔblɛm"
+  },
+  "notifications": {
+    "intro": "Notis di rayt pipul dɛm we wan lida rich wan stetɔs - wantɛm wantɛm, ɔ wan sɛt tɛm bifo/afta di de & tɛm we dɛn dɔn sɛtul pan am.",
+    "add": "+ Add Notis",
+    "columns": {
+      "notification": "Notis fɔ notis",
+      "whenStatusIs": "We Status Na",
+      "sends": "I de sɛn",
+      "to": "To",
+      "via": "Bay",
+      "enabled": "Dɛn dɔn ɛnabul am"
+    },
+    "anyStatus": "Ɛni stetɔs",
+    "anySubStatus": "Ɛni sab-status",
+    "inactiveOption": "{{name}} (inaktiv) .",
+    "emptyRules": "No notis yet - ad wan fɔ wɔn yu tim we wan lida rich wan stetɔs.",
+    "jobs": {
+      "title": "Scheduled & Dɛn dɔn sɛn am",
+      "firesAt": "Faya dɛn we de na",
+      "notification": "Notis fɔ notis",
+      "lead": "Lid",
+      "status": "Pozishɔn",
+      "details": "Tin dɛn",
+      "empty": "Natin nɔ de we dɛn dɔn schedul ɔ sɛn yet.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "De wet",
+      "PROCESSING": "Di we aw dɛn de du di wok",
+      "SENT": "Bin sɛn",
+      "FAILED": "Dɔn fel",
+      "SKIPPED": "Skip am",
+      "CANCELLED": "Dɛn dɔn kansel am"
+    },
+    "deliveryStatus": {
+      "SENT": "bin sɛn",
+      "FAILED": "dɔn fel",
+      "SKIPPED": "skip am"
+    },
+    "deliveryChannel": {
+      "IN_APP": "insay di ap",
+      "EMAIL": "imel fɔ imel",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Yuz we dɛn dɔn asaynd",
+      "owner": "Pɔsin we gɛt am",
+      "updatedBy": "Na bay we dɛn dɔn ɔpdet am",
+      "role": "Rol: {{name}} we yu de du."
+    },
+    "channels": {
+      "inApp": "Insay di ap",
+      "email": "Imel fɔ yu",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Dilit notis \" {{name}} \"? Dɛn kin kansel di mɛmba dɛn we de wet frɔm am.",
+    "testPrompt": "Send wan tɛst fɔ dis notis to yusɛf (in-ap) yuz us lida ID ?",
+    "testSent": "Dɛn sɛn am to yu bɛl: {{title}} {{message}}",
+    "headersInvalid": "Webhook hεda dɛn fɔ valid JSON , ɛgz. {\"Ɔtorizayshɔn\": \"Bearer xyz\"}",
+    "editTitle": "Ɛdit Notis fɔ di pɔsin",
+    "newTitle": "Nyu Notis",
+    "name": "Nem",
+    "namePlaceholder": "eg Sayt visit mɛmba",
+    "whenStatus": "We wan lida in stetɔs na",
+    "subStatus": "Sab-status we di pɔsin gɛt",
+    "send": "Send (di wan we de schedul) .",
+    "custom": "Wetin kɔmɔn...",
+    "modeBefore": "bifo di tɛm we dɛn dɔn sɛtul",
+    "modeAfter": "afta di tɛm we dɛn dɔn sɛtul",
+    "noScheduleWarning": "Dis stetɔs nɔ de aks fɔ de & tɛm, so \"bifo/at/afta scheduled tɛm\" notis nɔ go ɛva faya.",
+    "noScheduleFix": "Turn on <strong>Aks fɔ wan de & tɛm</strong> fɔ am ɔnda Status & Sub-Status, ɔ sɛn Wantɛm wantɛm.",
+    "sendTo": "Send to (ɛni kɔmbaynshɔn) .",
+    "recipientAssigned": "Yuz we dɛn dɔn asaynd (lida ɔna) .",
+    "recipientOwner": "Di pɔsin we gɛt di akɔn / admin",
+    "recipientUpdatedBy": "Pɔsin we ɔpdet di stetɔs",
+    "everyoneWithRole": "Ɔlman wit rol",
+    "specificUsers": "Speshal yuza dɛn (aktiv) .",
+    "inactiveNever": "Di wan dɛn we nɔ de wok nɔ de ɛva gɛt notis, ilɛksɛf dɛn pik dɛn.",
+    "deliverVia": "Deliver via",
+    "channelInApp": "In-ap (bɛl) .",
+    "channelEmail": "Imel fɔ yu",
+    "channelWebhook": "Webhook ( Wan pɔsin we de gi WhatsApp / SMS )",
+    "emailHint": "Imel de go to ɛni pɔsin in imel adrɛs ɛn nid fɔ sɛt SMTP na di sava (backend/.env); te da tɛm de, dɛn kin log di imel we dɛn kin sɛn as dɛn dɔn skip am.",
+    "webhookUrl": "Webhook URL ( POST , JSON ) .",
+    "headers": "Hɛda dɛn ( JSON ) .",
+    "content": "Di tin dɛn we de insay di notis",
+    "title": "Taytul",
+    "message": "Mesɛj",
+    "insertIntoTitle": "Insayt insay Taytul",
+    "insertIntoMessage": "Insayt insay Mɛsej",
+    "anyLeadField": "Ɛni lid fil de wok bak, ɛgz. <code1>{{example1}}</code1> ɔ <code2>{{example2}}</code2> .",
+    "preview": "Priviu (sampul lid) .",
+    "enabled": "Dɛn dɔn ɛnabul am",
+    "saveRule": "Sev Notis",
+    "createRule": "Krio Notis",
+    "variables": {
+      "customerName": "Lid nem",
+      "customerMobile": "Lid mobayl",
+      "customerEmail": "Lid di imel",
+      "registrationId": "ID we de bifo",
+      "status": "Pozishɔn",
+      "subStatus": "Sab-status we di pɔsin gɛt",
+      "scheduleAt": "Deti & tɛm we dɛn dɔn schedul",
+      "assignedTo": "Yuz we dɛn dɔn asaynd",
+      "updatedBy": "Na bay we dɛn dɔn ɔpdet am",
+      "recipient": "Di pɔsin we gɛt di nem",
+      "project": "Prɔjɛkt",
+      "notes": "Di las not we dɛn rayt",
+      "partner": "Patna in nem"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Wantɛm wantɛm we dɛn dɔn sɛt di stetɔs",
+      "AT": "Na di tɛm we dɛn dɔn sɛtul",
+      "A1D": "1 de afta di tɛm we dɛn dɔn sɛtul (fɔl-ɔp chɛk) ."
+    },
+    "immediately": "Wantɛm wantɛm",
+    "atScheduled": "Na di tɛm we dɛn dɔn sɛtul",
+    "before": {
+      "MINUTES_one": "{{count}} minit bifo di tɛm we dɛn dɔn sɛtul",
+      "MINUTES_other": "{{count}} minit bifo di tɛm we dɛn dɔn sɛtul",
+      "HOURS_one": "{{count}} awa bifo di tɛm we dɛn dɔn sɛtul",
+      "HOURS_other": "{{count}} awa bifo di tɛm we dɛn dɔn sɛtul",
+      "DAYS_one": "{{count}} de bifo di tɛm we dɛn dɔn sɛtul",
+      "DAYS_other": "{{count}} dez bifo di tɛm we dɛn dɔn sɛtul",
+      "WEEKS_one": "{{count}} wik bifo di tɛm we dɛn dɔn sɛtul",
+      "WEEKS_other": "{{count}} wiks bifo di tɛm we dɛn dɔn sɛtul",
+      "MONTHS_one": "{{count}} mɔnt bifo di tɛm we dɛn dɔn sɛtul",
+      "MONTHS_other": "{{count}} mɔnt bifo di tɛm we dɛn dɔn sɛtul",
+      "YEARS_one": "{{count}} ia bifo di tɛm we dɛn dɔn sɛtul",
+      "YEARS_other": "{{count}} ia bifo di tɛm we dɛn dɔn sɛtul"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minit afta di tɛm we dɛn dɔn sɛtul",
+      "MINUTES_other": "{{count}} minit afta di tɛm we dɛn dɔn sɛtul",
+      "HOURS_one": "{{count}} awa afta di tɛm we dɛn dɔn sɛtul",
+      "HOURS_other": "{{count}} awa afta di tɛm we dɛn dɔn sɛtul",
+      "DAYS_one": "{{count}} de afta di tɛm we dɛn dɔn sɛtul",
+      "DAYS_other": "{{count}} dez afta di tɛm we dɛn dɔn sɛtul",
+      "WEEKS_one": "{{count}} wik afta di tɛm we dɛn dɔn sɛtul",
+      "WEEKS_other": "{{count}} wiks afta di tɛm we dɛn dɔn sɛtul",
+      "MONTHS_one": "{{count}} mɔnt afta di tɛm we dɛn dɔn sɛtul",
+      "MONTHS_other": "{{count}} mɔnt afta di tɛm we dɛn dɔn sɛtul",
+      "YEARS_one": "{{count}} ia afta di tɛm we dɛn dɔn sɛtul",
+      "YEARS_other": "{{count}} ia afta di tɛm we dɛn dɔn sɛtul"
+    },
+    "units": {
+      "MINUTES_one": "minit",
+      "MINUTES_other": "minit dɛn",
+      "HOURS_one": "awa",
+      "HOURS_other": "awa dɛn",
+      "DAYS_one": "de",
+      "DAYS_other": "de dɛn",
+      "WEEKS_one": "wik",
+      "WEEKS_other": "wik dɛn",
+      "MONTHS_one": "mɔnt",
+      "MONTHS_other": "mɔnt dɛn",
+      "YEARS_one": "ia",
+      "YEARS_other": "ia dɛn"
+    }
+  }
+}

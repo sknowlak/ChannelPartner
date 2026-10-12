@@ -1,0 +1,87 @@
+{
+  "shell": {
+    "portal": "Porte ti azo ti lekengo da",
+    "referrals": "Azo so a tokua ala",
+    "builderLogin": "Login ti zo ti lekengo da",
+    "partnerLogin": "Login ti Partenaire ti chaîne"
+  },
+  "login": {
+    "title": "Zo ti lekengo da ni asû maboko na gbe ni",
+    "hint": "A yeke sara kua na acompte ti Leadrat . Hunda zo so ayeke bâ lege ti mo wala mo yeke na ni pëpe."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Ti ku desizion ti mo .",
+    "ACCEPTED": "A yeda na ni",
+    "REJECTED": "A ke lo"
+  },
+  "list": {
+    "title": "Azo so a tokua ala",
+    "allProjects": "A-projet kue .",
+    "allStatuses": "A-état kue",
+    "count_other": "{{count}} azo so a tokua ala",
+    "columns": {
+      "referral": "Tokuango",
+      "customer": "Klient",
+      "project": "Kapa",
+      "sourcePartner": "Source Partenaire",
+      "status": "Dutingo ti zo",
+      "booking": "Réservation",
+      "registered": "A sû iri ti lo na mbeti"
+    },
+    "booked": "A réservé ni awe",
+    "empty": "Azo ti referral ayeke dä pëpe."
+  },
+  "detail": {
+    "customer": "Klient",
+    "sourcePartner": "Source Partenaire",
+    "attributionNote": "(attribution - a lingbi ti changé ni pëpe)",
+    "leadStatus": "Statut ti plomb",
+    "protectedUntil": "A bata ni juska na 2019.",
+    "referral": "Tokuango",
+    "reason": "Raison: {{reason}}",
+    "booking": "Réservation",
+    "bookedOwner": "A réservé - e yeke na propriétaire ti opérationnel .",
+    "notBooked": "A reservé ni pëpe",
+    "sharedAfterBooking": "A kangbi ni na peko ti réservation .",
+    "accept": "Yeda na mbeni zo so a tokua mo na mo",
+    "confirmBooking": "Confirmé réservation ni",
+    "reject": "Ke ti tokua mo",
+    "rejectReasonLabel": "Raison ti kengo ni (a fa ni na mba ti mo ni) * .",
+    "rejectConfirm": "Bi",
+    "confirmBookingPrompt": "Confirmé réservation ni awe? Propriété ti kusala ni ayeke gue na mo na mba ti mo ni aga zo so alingbi ti wara commission.",
+    "notice": {
+      "booked": "A confirmé réservation ni awe.",
+      "accepted": "A yeda na referral ni.",
+      "rejected": "A ke referral ni."
+    },
+    "backToReferrals": "Kiri na ndo ti azo so a tokua ala"
+  },
+  "history": {
+    "title": "Lisoro",
+    "actor": {
+      "system": "Kode ti fango tene",
+      "partner": "Partenaire ti chaîne",
+      "admin": "Admin Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "A sû iri ti amba ti mo na mbeti .",
+      "DUPLICATE_CHECK_COMPLETED": "A sara vérification ti double ni awe - a wara double ni so ayeke sara kua pëpe",
+      "REGISTRATION_ACCEPTED": "A yeda ti sû iri ti zo na mbeti",
+      "PROTECTION_GRANTED_other": "{{count}} -lango ti batango zo",
+      "STAGE_UPDATED": "A leke statut ni na {{stage}}",
+      "LEAD_DETAILS_UPDATED_other": "A sara si {{count}} aga fini",
+      "LEAD_ASSIGNED": "A mû ni na {{name}}",
+      "LEAD_UNASSIGNED": "A mû na lo pëpe",
+      "REFERRAL_ACCEPTED": "Builder ni ayeda na referral ni .",
+      "REFERRAL_REJECTED": "Builder ake ti tene a tokua lo. Raison: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "A ke ti tene {{partner}} atara ti sû iri ti lo na mbeti fani use",
+      "BOOKING_COMPLETED": "A hunzi ti sara réservation",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "A mû droit ti kusala ni na Builder .",
+      "PARTNER_ATTRIBUTION_PRESERVED": "A bata iri ti mba ti mo",
+      "COMMISSION_ELIGIBILITY_CREATED": "A leke a-équipement ti commission ni .",
+      "HANDOVER_COMPLETED": "A hunzi ti mû ni awe",
+      "ADMIN_PROTECTION_RELEASED": "Admin azia na sese double ti batango tele. Raison: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin a kiri a zia iri ti zo na mbeti ti londo na {{from}} ti si na {{to}} . Raison: {{reason}}"
+    }
+  }
+}

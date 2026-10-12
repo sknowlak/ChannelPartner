@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Meng Leads",
+    "signedInAs": "Aloggen als {{name}} ( {{partnerId}} ) · Zäite gewisen an {{timezone}}",
+    "addLead": "+ Füügt Lead",
+    "tabs": {
+      "all": "All ( {{count}} )",
+      "pending": "Erwaardung ( {{count}} )",
+      "booked": "Reservéiert ( {{count}} )"
+    },
+    "searchPlaceholder": "Sich no Numm, Handy oder Aschreiwung ID ...",
+    "manageColumns": "Spalten verwalten",
+    "rowsPerPage": "Reihen pro Säit",
+    "registrationId": "Aschreiwung ID",
+    "emptyState": "Nach keng Leads - registréiert Ären éischten.",
+    "noMatch": "Keng Leads passen dës Filteren.",
+    "showing": "Weist {{from}} - {{to}} vun {{total}} Entréen",
+    "actions": {
+      "preview": "Virschau & séier Update",
+      "history": "Geschicht",
+      "email": "E-Mail",
+      "whatsapp": "WhatsApp",
+      "call": "Call"
+    },
+    "pagination": {
+      "first": "Éischt Säit",
+      "previous": "Virdrun Säit",
+      "next": "Nächst Säit",
+      "last": "Lescht Säit"
+    }
+  },
+  "columns": {
+    "status": "Status",
+    "assignTo": "Assign to",
+    "booked": "Reservéiert",
+    "protectionUntil": "Schutz bis"
+  },
+  "booking": {
+    "booked": "Reservéiert",
+    "pending": "Erwaardung"
+  },
+  "assign": {
+    "unassigned": "Net zougewisen",
+    "owner": "{{name}} (Besëtzer)",
+    "inactive": "{{name}} (inaktiv)",
+    "unknownUser": "Onbekannt Benotzer",
+    "assignedTo": "{{name}} zougewisen"
+  },
+  "form": {
+    "addTitle": "Füügt Lead",
+    "editTitle": "Féierung änneren",
+    "noPermissionAdd": "Dir hutt keng Erlaabnis fir Leads anzeschreiwen.",
+    "noPermissionEdit": "Dir hutt keng Erlaabnis fir Leads z'änneren.",
+    "selectPlaceholder": "Wielt ...",
+    "commaSeparated": "Komma getrennt",
+    "phonePlaceholder": "Telefonsnummer",
+    "countryCode": "Land Code"
+  },
+  "project": {
+    "none": "Kee Projet nach (net bezeechent)",
+    "notInList": "{{project}} (net an der Projektlëscht)"
+  },
+  "journey": {
+    "customer": "Client",
+    "currentOwner": "Aktuelle Besëtzer",
+    "protectionExpiry": "Schutz Verfall",
+    "leadStatus": "Lead Status",
+    "scheduled": "Geplangt",
+    "assignedTo": "Zugewielt",
+    "referral": "Referenz",
+    "builderReason": "Grond vum Builder: {{reason}}",
+    "bookedHint": "Gebuer vum Builder - operationell Besëtzer ass op de Builder geplënnert; Är Attributioun an d'Kommissiounsberechtegung ginn behalen.",
+    "notBookedHint": "Reservatioune ginn vum Builder bestätegt nodeems se d'Referenz akzeptéieren.",
+    "quickUpdate": "Quick Update",
+    "leadDetails": "Lead Detailer",
+    "progressHistory": "Fortschrëtt Geschicht",
+    "timesIn": "(Zäiten an {{timezone}} )",
+    "backToMyLeads": "Zréck op Meng Leads",
+    "editLead": "Féierung änneren"
+  },
+  "referral": {
+    "NOT_REFERRED": "Net bezeechent (kee Projet)",
+    "PENDING_BUILDER": "Waart op Builder",
+    "ACCEPTED": "Akzeptéiert vum Builder",
+    "REJECTED": "Refuséiert vum Builder"
+  },
+  "preview": {
+    "ariaLabel": "Lead Virschau",
+    "title": "Lead Preview",
+    "source": "Quell",
+    "location": "Location",
+    "scheduled": "Geplangt",
+    "registered": "Registréiert",
+    "latestNote": "Läscht Notiz",
+    "quickUpdate": "Quick Update",
+    "fullDetails": "Voll Detailer",
+    "editLead": "Féierung änneren",
+    "history": "Geschicht"
+  },
+  "quick": {
+    "assignedTo": "Zugewielt",
+    "status": "Status",
+    "subStatus": "Ënner-Status",
+    "selectSubStatus": "Wielt Ënner-Status ...",
+    "none": "Keen",
+    "scheduledAt": "Geplangt um",
+    "localTime": "lokal Zäit",
+    "note": "Note",
+    "notePlaceholder": "Wat ass op dësem Uruff / Besuch geschitt? (optional)",
+    "updateStatus": "Update Status",
+    "statusUpdated": "Status aktualiséiert",
+    "bookedLocked": "Dëse Virsprong ass reservéiert - säi Status kann net méi geännert ginn.",
+    "viewOnly": "Dir kënnt dëse Lead kucken, awer Är Roll kann et net aktualiséieren."
+  },
+  "history": {
+    "title": "Geschicht - {{registrationId}}",
+    "tabs": {
+      "all": "All",
+      "status": "Status",
+      "assignment": "Aufgab",
+      "notes": "Notizen"
+    },
+    "doneBy": "Gemaach vum {{actor}}",
+    "system": "System",
+    "platforms": {
+      "System": "System",
+      "External": "Extern",
+      "Web": "Web",
+      "Mobile": "Mobile"
+    },
+    "added": "dobäi",
+    "updated": "aktualiséiert",
+    "empty": "(eidel)",
+    "noHistory": "Keng Geschicht an dëser Kategorie nach.",
+    "fieldLabels": {
+      "stage": "Status",
+      "subStatus": "Ënner-Status",
+      "scheduledAt": "Zäitplang",
+      "notes": "Notizen",
+      "assignedTo": "Zugewielt"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Partner Aschreiwung kritt",
+      "DUPLICATE_CHECK_COMPLETED": "Duplikatkontrolle fäerdeg - keen aktive Duplikat fonnt",
+      "REGISTRATION_ACCEPTED": "Aschreiwung akzeptéiert",
+      "PROTECTION_GRANTED_one": "{{count}} -Dag Schutz ausgezeechent",
+      "PROTECTION_GRANTED_other": "{{count}} -Dag Schutz ausgezeechent",
+      "REGISTRATION_ATTEMPT_REJECTED": "Duplizéiert Umeldungsversuch vum {{partnerId}} refuséiert",
+      "LEAD_DETAILS_UPDATED_one": "Aktualiséiert {{count}} Feld",
+      "LEAD_DETAILS_UPDATED_other": "Aktualiséiert {{count}} Felder",
+      "STAGE_UPDATED": "Status aktualiséiert op {{status}}",
+      "LEAD_ASSIGNED": "{{name}} zougewisen",
+      "LEAD_UNASSIGNED": "Net zougewisen",
+      "BOOKING_COMPLETED": "Buchung fäerdeg",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operationell Besëtzer op Builder transferéiert",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partner Attributioun konservéiert",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kommissioun Zoulag geschaf",
+      "HANDOVER_COMPLETED": "Handover fäerdeg",
+      "REFERRAL_ACCEPTED": "Builder huet d'Referenz ugeholl",
+      "REFERRAL_REJECTED": "Builder huet d'Referenz refuséiert. Grond: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Den Admin huet duplizéiert Schutz fréi fräigelooss. Grond: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Den Administrateur huet d'Aschreiwung vun {{from}} op {{to}} ëmgezeechent. Grond: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Spalten verwalten",
+    "hint": "Drag fir nei ze bestellen · kontrolléieren fir ze weisen",
+    "showAll": "Alles weisen",
+    "resetDefault": "Zerécksetzen op Default"
+  },
+  "filters": {
+    "title": "Filteren",
+    "allProjects": "All Projeten",
+    "any": "All",
+    "noFields": "Keng aner filterbar Felder sinn nach aktivéiert (Astellungen> Lead).",
+    "clearAll": "Alles läschen"
+  },
+  "phone": {
+    "MISSING": "Telefonsnummer ass néideg.",
+    "INVALID": "Gitt weg eng valabel Telefonsnummer.",
+    "TOO_SHORT": "Telefonsnummer ass ze kuerz.",
+    "TOO_LONG": "Telefonsnummer ass ze laang.",
+    "INVALID_FOR_COUNTRY": "Dës Telefonsnummer ass net valabel fir {{country}} .",
+    "COUNTRY_MISMATCH": "Wielt w.e.g. de richtege Landcode.",
+    "NOT_MOBILE": "Gitt weg eng Handysnummer, net eng Festnetz."
+  }
+}

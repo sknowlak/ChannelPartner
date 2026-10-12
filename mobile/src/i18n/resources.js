@@ -13,11 +13,1241 @@ import bn_auth from './locales/bn/auth.json';
 import bn_common from './locales/bn/common.json';
 import bn_data from './locales/bn/data.json';
 import bn_leads from './locales/bn/leads.json';
+import ta_auth from './locales/ta/auth.json';
+import ta_common from './locales/ta/common.json';
+import ta_data from './locales/ta/data.json';
+import ta_leads from './locales/ta/leads.json';
+import ab_auth from './locales/ab/auth.json';
+import ab_common from './locales/ab/common.json';
+import ab_data from './locales/ab/data.json';
+import ab_leads from './locales/ab/leads.json';
+import ace_auth from './locales/ace/auth.json';
+import ace_common from './locales/ace/common.json';
+import ace_data from './locales/ace/data.json';
+import ace_leads from './locales/ace/leads.json';
+import ach_auth from './locales/ach/auth.json';
+import ach_common from './locales/ach/common.json';
+import ach_data from './locales/ach/data.json';
+import ach_leads from './locales/ach/leads.json';
+import aa_auth from './locales/aa/auth.json';
+import aa_common from './locales/aa/common.json';
+import aa_data from './locales/aa/data.json';
+import aa_leads from './locales/aa/leads.json';
+import af_auth from './locales/af/auth.json';
+import af_common from './locales/af/common.json';
+import af_data from './locales/af/data.json';
+import af_leads from './locales/af/leads.json';
+import sq_auth from './locales/sq/auth.json';
+import sq_common from './locales/sq/common.json';
+import sq_data from './locales/sq/data.json';
+import sq_leads from './locales/sq/leads.json';
+import alz_auth from './locales/alz/auth.json';
+import alz_common from './locales/alz/common.json';
+import alz_data from './locales/alz/data.json';
+import alz_leads from './locales/alz/leads.json';
+import am_auth from './locales/am/auth.json';
+import am_common from './locales/am/common.json';
+import am_data from './locales/am/data.json';
+import am_leads from './locales/am/leads.json';
+import ar_auth from './locales/ar/auth.json';
+import ar_common from './locales/ar/common.json';
+import ar_data from './locales/ar/data.json';
+import ar_leads from './locales/ar/leads.json';
+import hy_auth from './locales/hy/auth.json';
+import hy_common from './locales/hy/common.json';
+import hy_data from './locales/hy/data.json';
+import hy_leads from './locales/hy/leads.json';
+import as_auth from './locales/as/auth.json';
+import as_common from './locales/as/common.json';
+import as_data from './locales/as/data.json';
+import as_leads from './locales/as/leads.json';
+import av_auth from './locales/av/auth.json';
+import av_common from './locales/av/common.json';
+import av_data from './locales/av/data.json';
+import av_leads from './locales/av/leads.json';
+import awa_auth from './locales/awa/auth.json';
+import awa_common from './locales/awa/common.json';
+import awa_data from './locales/awa/data.json';
+import awa_leads from './locales/awa/leads.json';
+import ay_auth from './locales/ay/auth.json';
+import ay_common from './locales/ay/common.json';
+import ay_data from './locales/ay/data.json';
+import ay_leads from './locales/ay/leads.json';
+import az_auth from './locales/az/auth.json';
+import az_common from './locales/az/common.json';
+import az_data from './locales/az/data.json';
+import az_leads from './locales/az/leads.json';
+import ban_auth from './locales/ban/auth.json';
+import ban_common from './locales/ban/common.json';
+import ban_data from './locales/ban/data.json';
+import ban_leads from './locales/ban/leads.json';
+import bal_auth from './locales/bal/auth.json';
+import bal_common from './locales/bal/common.json';
+import bal_data from './locales/bal/data.json';
+import bal_leads from './locales/bal/leads.json';
+import bm_auth from './locales/bm/auth.json';
+import bm_common from './locales/bm/common.json';
+import bm_data from './locales/bm/data.json';
+import bm_leads from './locales/bm/leads.json';
+import bci_auth from './locales/bci/auth.json';
+import bci_common from './locales/bci/common.json';
+import bci_data from './locales/bci/data.json';
+import bci_leads from './locales/bci/leads.json';
+import ba_auth from './locales/ba/auth.json';
+import ba_common from './locales/ba/common.json';
+import ba_data from './locales/ba/data.json';
+import ba_leads from './locales/ba/leads.json';
+import eu_auth from './locales/eu/auth.json';
+import eu_common from './locales/eu/common.json';
+import eu_data from './locales/eu/data.json';
+import eu_leads from './locales/eu/leads.json';
+import btx_auth from './locales/btx/auth.json';
+import btx_common from './locales/btx/common.json';
+import btx_data from './locales/btx/data.json';
+import btx_leads from './locales/btx/leads.json';
+import bts_auth from './locales/bts/auth.json';
+import bts_common from './locales/bts/common.json';
+import bts_data from './locales/bts/data.json';
+import bts_leads from './locales/bts/leads.json';
+import bbc_auth from './locales/bbc/auth.json';
+import bbc_common from './locales/bbc/common.json';
+import bbc_data from './locales/bbc/data.json';
+import bbc_leads from './locales/bbc/leads.json';
+import be_auth from './locales/be/auth.json';
+import be_common from './locales/be/common.json';
+import be_data from './locales/be/data.json';
+import be_leads from './locales/be/leads.json';
+import bem_auth from './locales/bem/auth.json';
+import bem_common from './locales/bem/common.json';
+import bem_data from './locales/bem/data.json';
+import bem_leads from './locales/bem/leads.json';
+import bew_auth from './locales/bew/auth.json';
+import bew_common from './locales/bew/common.json';
+import bew_data from './locales/bew/data.json';
+import bew_leads from './locales/bew/leads.json';
+import bho_auth from './locales/bho/auth.json';
+import bho_common from './locales/bho/common.json';
+import bho_data from './locales/bho/data.json';
+import bho_leads from './locales/bho/leads.json';
+import bik_auth from './locales/bik/auth.json';
+import bik_common from './locales/bik/common.json';
+import bik_data from './locales/bik/data.json';
+import bik_leads from './locales/bik/leads.json';
+import bs_auth from './locales/bs/auth.json';
+import bs_common from './locales/bs/common.json';
+import bs_data from './locales/bs/data.json';
+import bs_leads from './locales/bs/leads.json';
+import br_auth from './locales/br/auth.json';
+import br_common from './locales/br/common.json';
+import br_data from './locales/br/data.json';
+import br_leads from './locales/br/leads.json';
+import bg_auth from './locales/bg/auth.json';
+import bg_common from './locales/bg/common.json';
+import bg_data from './locales/bg/data.json';
+import bg_leads from './locales/bg/leads.json';
+import bua_auth from './locales/bua/auth.json';
+import bua_common from './locales/bua/common.json';
+import bua_data from './locales/bua/data.json';
+import bua_leads from './locales/bua/leads.json';
+import yue_auth from './locales/yue/auth.json';
+import yue_common from './locales/yue/common.json';
+import yue_data from './locales/yue/data.json';
+import yue_leads from './locales/yue/leads.json';
+import ca_auth from './locales/ca/auth.json';
+import ca_common from './locales/ca/common.json';
+import ca_data from './locales/ca/data.json';
+import ca_leads from './locales/ca/leads.json';
+import ceb_auth from './locales/ceb/auth.json';
+import ceb_common from './locales/ceb/common.json';
+import ceb_data from './locales/ceb/data.json';
+import ceb_leads from './locales/ceb/leads.json';
+import ch_auth from './locales/ch/auth.json';
+import ch_common from './locales/ch/common.json';
+import ch_data from './locales/ch/data.json';
+import ch_leads from './locales/ch/leads.json';
+import ce_auth from './locales/ce/auth.json';
+import ce_common from './locales/ce/common.json';
+import ce_data from './locales/ce/data.json';
+import ce_leads from './locales/ce/leads.json';
+import ny_auth from './locales/ny/auth.json';
+import ny_common from './locales/ny/common.json';
+import ny_data from './locales/ny/data.json';
+import ny_leads from './locales/ny/leads.json';
+import zh_CN_auth from './locales/zh-CN/auth.json';
+import zh_CN_common from './locales/zh-CN/common.json';
+import zh_CN_data from './locales/zh-CN/data.json';
+import zh_CN_leads from './locales/zh-CN/leads.json';
+import zh_TW_auth from './locales/zh-TW/auth.json';
+import zh_TW_common from './locales/zh-TW/common.json';
+import zh_TW_data from './locales/zh-TW/data.json';
+import zh_TW_leads from './locales/zh-TW/leads.json';
+import chk_auth from './locales/chk/auth.json';
+import chk_common from './locales/chk/common.json';
+import chk_data from './locales/chk/data.json';
+import chk_leads from './locales/chk/leads.json';
+import cv_auth from './locales/cv/auth.json';
+import cv_common from './locales/cv/common.json';
+import cv_data from './locales/cv/data.json';
+import cv_leads from './locales/cv/leads.json';
+import co_auth from './locales/co/auth.json';
+import co_common from './locales/co/common.json';
+import co_data from './locales/co/data.json';
+import co_leads from './locales/co/leads.json';
+import crh_auth from './locales/crh/auth.json';
+import crh_common from './locales/crh/common.json';
+import crh_data from './locales/crh/data.json';
+import crh_leads from './locales/crh/leads.json';
+import crh_Latn_auth from './locales/crh-Latn/auth.json';
+import crh_Latn_common from './locales/crh-Latn/common.json';
+import crh_Latn_data from './locales/crh-Latn/data.json';
+import crh_Latn_leads from './locales/crh-Latn/leads.json';
+import hr_auth from './locales/hr/auth.json';
+import hr_common from './locales/hr/common.json';
+import hr_data from './locales/hr/data.json';
+import hr_leads from './locales/hr/leads.json';
+import cs_auth from './locales/cs/auth.json';
+import cs_common from './locales/cs/common.json';
+import cs_data from './locales/cs/data.json';
+import cs_leads from './locales/cs/leads.json';
+import da_auth from './locales/da/auth.json';
+import da_common from './locales/da/common.json';
+import da_data from './locales/da/data.json';
+import da_leads from './locales/da/leads.json';
+import fa_AF_auth from './locales/fa-AF/auth.json';
+import fa_AF_common from './locales/fa-AF/common.json';
+import fa_AF_data from './locales/fa-AF/data.json';
+import fa_AF_leads from './locales/fa-AF/leads.json';
+import dv_auth from './locales/dv/auth.json';
+import dv_common from './locales/dv/common.json';
+import dv_data from './locales/dv/data.json';
+import dv_leads from './locales/dv/leads.json';
+import din_auth from './locales/din/auth.json';
+import din_common from './locales/din/common.json';
+import din_data from './locales/din/data.json';
+import din_leads from './locales/din/leads.json';
+import doi_auth from './locales/doi/auth.json';
+import doi_common from './locales/doi/common.json';
+import doi_data from './locales/doi/data.json';
+import doi_leads from './locales/doi/leads.json';
+import dov_auth from './locales/dov/auth.json';
+import dov_common from './locales/dov/common.json';
+import dov_data from './locales/dov/data.json';
+import dov_leads from './locales/dov/leads.json';
+import nl_auth from './locales/nl/auth.json';
+import nl_common from './locales/nl/common.json';
+import nl_data from './locales/nl/data.json';
+import nl_leads from './locales/nl/leads.json';
+import dyu_auth from './locales/dyu/auth.json';
+import dyu_common from './locales/dyu/common.json';
+import dyu_data from './locales/dyu/data.json';
+import dyu_leads from './locales/dyu/leads.json';
+import dz_auth from './locales/dz/auth.json';
+import dz_common from './locales/dz/common.json';
+import dz_data from './locales/dz/data.json';
+import dz_leads from './locales/dz/leads.json';
+import eo_auth from './locales/eo/auth.json';
+import eo_common from './locales/eo/common.json';
+import eo_data from './locales/eo/data.json';
+import eo_leads from './locales/eo/leads.json';
+import et_auth from './locales/et/auth.json';
+import et_common from './locales/et/common.json';
+import et_data from './locales/et/data.json';
+import et_leads from './locales/et/leads.json';
+import ee_auth from './locales/ee/auth.json';
+import ee_common from './locales/ee/common.json';
+import ee_data from './locales/ee/data.json';
+import ee_leads from './locales/ee/leads.json';
+import fo_auth from './locales/fo/auth.json';
+import fo_common from './locales/fo/common.json';
+import fo_data from './locales/fo/data.json';
+import fo_leads from './locales/fo/leads.json';
+import fj_auth from './locales/fj/auth.json';
+import fj_common from './locales/fj/common.json';
+import fj_data from './locales/fj/data.json';
+import fj_leads from './locales/fj/leads.json';
+import tl_auth from './locales/tl/auth.json';
+import tl_common from './locales/tl/common.json';
+import tl_data from './locales/tl/data.json';
+import tl_leads from './locales/tl/leads.json';
+import fi_auth from './locales/fi/auth.json';
+import fi_common from './locales/fi/common.json';
+import fi_data from './locales/fi/data.json';
+import fi_leads from './locales/fi/leads.json';
+import fon_auth from './locales/fon/auth.json';
+import fon_common from './locales/fon/common.json';
+import fon_data from './locales/fon/data.json';
+import fon_leads from './locales/fon/leads.json';
+import fr_auth from './locales/fr/auth.json';
+import fr_common from './locales/fr/common.json';
+import fr_data from './locales/fr/data.json';
+import fr_leads from './locales/fr/leads.json';
+import fr_CA_auth from './locales/fr-CA/auth.json';
+import fr_CA_common from './locales/fr-CA/common.json';
+import fr_CA_data from './locales/fr-CA/data.json';
+import fr_CA_leads from './locales/fr-CA/leads.json';
+import fy_auth from './locales/fy/auth.json';
+import fy_common from './locales/fy/common.json';
+import fy_data from './locales/fy/data.json';
+import fy_leads from './locales/fy/leads.json';
+import fur_auth from './locales/fur/auth.json';
+import fur_common from './locales/fur/common.json';
+import fur_data from './locales/fur/data.json';
+import fur_leads from './locales/fur/leads.json';
+import ff_auth from './locales/ff/auth.json';
+import ff_common from './locales/ff/common.json';
+import ff_data from './locales/ff/data.json';
+import ff_leads from './locales/ff/leads.json';
+import gaa_auth from './locales/gaa/auth.json';
+import gaa_common from './locales/gaa/common.json';
+import gaa_data from './locales/gaa/data.json';
+import gaa_leads from './locales/gaa/leads.json';
+import gl_auth from './locales/gl/auth.json';
+import gl_common from './locales/gl/common.json';
+import gl_data from './locales/gl/data.json';
+import gl_leads from './locales/gl/leads.json';
+import ka_auth from './locales/ka/auth.json';
+import ka_common from './locales/ka/common.json';
+import ka_data from './locales/ka/data.json';
+import ka_leads from './locales/ka/leads.json';
+import de_auth from './locales/de/auth.json';
+import de_common from './locales/de/common.json';
+import de_data from './locales/de/data.json';
+import de_leads from './locales/de/leads.json';
+import el_auth from './locales/el/auth.json';
+import el_common from './locales/el/common.json';
+import el_data from './locales/el/data.json';
+import el_leads from './locales/el/leads.json';
+import gn_auth from './locales/gn/auth.json';
+import gn_common from './locales/gn/common.json';
+import gn_data from './locales/gn/data.json';
+import gn_leads from './locales/gn/leads.json';
+import gu_auth from './locales/gu/auth.json';
+import gu_common from './locales/gu/common.json';
+import gu_data from './locales/gu/data.json';
+import gu_leads from './locales/gu/leads.json';
+import ht_auth from './locales/ht/auth.json';
+import ht_common from './locales/ht/common.json';
+import ht_data from './locales/ht/data.json';
+import ht_leads from './locales/ht/leads.json';
+import cnh_auth from './locales/cnh/auth.json';
+import cnh_common from './locales/cnh/common.json';
+import cnh_data from './locales/cnh/data.json';
+import cnh_leads from './locales/cnh/leads.json';
+import ha_auth from './locales/ha/auth.json';
+import ha_common from './locales/ha/common.json';
+import ha_data from './locales/ha/data.json';
+import ha_leads from './locales/ha/leads.json';
+import haw_auth from './locales/haw/auth.json';
+import haw_common from './locales/haw/common.json';
+import haw_data from './locales/haw/data.json';
+import haw_leads from './locales/haw/leads.json';
+import he_auth from './locales/he/auth.json';
+import he_common from './locales/he/common.json';
+import he_data from './locales/he/data.json';
+import he_leads from './locales/he/leads.json';
+import hil_auth from './locales/hil/auth.json';
+import hil_common from './locales/hil/common.json';
+import hil_data from './locales/hil/data.json';
+import hil_leads from './locales/hil/leads.json';
+import hmn_auth from './locales/hmn/auth.json';
+import hmn_common from './locales/hmn/common.json';
+import hmn_data from './locales/hmn/data.json';
+import hmn_leads from './locales/hmn/leads.json';
+import hu_auth from './locales/hu/auth.json';
+import hu_common from './locales/hu/common.json';
+import hu_data from './locales/hu/data.json';
+import hu_leads from './locales/hu/leads.json';
+import hrx_auth from './locales/hrx/auth.json';
+import hrx_common from './locales/hrx/common.json';
+import hrx_data from './locales/hrx/data.json';
+import hrx_leads from './locales/hrx/leads.json';
+import iba_auth from './locales/iba/auth.json';
+import iba_common from './locales/iba/common.json';
+import iba_data from './locales/iba/data.json';
+import iba_leads from './locales/iba/leads.json';
+import is_auth from './locales/is/auth.json';
+import is_common from './locales/is/common.json';
+import is_data from './locales/is/data.json';
+import is_leads from './locales/is/leads.json';
+import ig_auth from './locales/ig/auth.json';
+import ig_common from './locales/ig/common.json';
+import ig_data from './locales/ig/data.json';
+import ig_leads from './locales/ig/leads.json';
+import ilo_auth from './locales/ilo/auth.json';
+import ilo_common from './locales/ilo/common.json';
+import ilo_data from './locales/ilo/data.json';
+import ilo_leads from './locales/ilo/leads.json';
+import id_auth from './locales/id/auth.json';
+import id_common from './locales/id/common.json';
+import id_data from './locales/id/data.json';
+import id_leads from './locales/id/leads.json';
+import iu_Latn_auth from './locales/iu-Latn/auth.json';
+import iu_Latn_common from './locales/iu-Latn/common.json';
+import iu_Latn_data from './locales/iu-Latn/data.json';
+import iu_Latn_leads from './locales/iu-Latn/leads.json';
+import iu_auth from './locales/iu/auth.json';
+import iu_common from './locales/iu/common.json';
+import iu_data from './locales/iu/data.json';
+import iu_leads from './locales/iu/leads.json';
+import ga_auth from './locales/ga/auth.json';
+import ga_common from './locales/ga/common.json';
+import ga_data from './locales/ga/data.json';
+import ga_leads from './locales/ga/leads.json';
+import it_auth from './locales/it/auth.json';
+import it_common from './locales/it/common.json';
+import it_data from './locales/it/data.json';
+import it_leads from './locales/it/leads.json';
+import jam_auth from './locales/jam/auth.json';
+import jam_common from './locales/jam/common.json';
+import jam_data from './locales/jam/data.json';
+import jam_leads from './locales/jam/leads.json';
+import ja_auth from './locales/ja/auth.json';
+import ja_common from './locales/ja/common.json';
+import ja_data from './locales/ja/data.json';
+import ja_leads from './locales/ja/leads.json';
+import jv_auth from './locales/jv/auth.json';
+import jv_common from './locales/jv/common.json';
+import jv_data from './locales/jv/data.json';
+import jv_leads from './locales/jv/leads.json';
+import kac_auth from './locales/kac/auth.json';
+import kac_common from './locales/kac/common.json';
+import kac_data from './locales/kac/data.json';
+import kac_leads from './locales/kac/leads.json';
+import kl_auth from './locales/kl/auth.json';
+import kl_common from './locales/kl/common.json';
+import kl_data from './locales/kl/data.json';
+import kl_leads from './locales/kl/leads.json';
+import kn_auth from './locales/kn/auth.json';
+import kn_common from './locales/kn/common.json';
+import kn_data from './locales/kn/data.json';
+import kn_leads from './locales/kn/leads.json';
+import kr_auth from './locales/kr/auth.json';
+import kr_common from './locales/kr/common.json';
+import kr_data from './locales/kr/data.json';
+import kr_leads from './locales/kr/leads.json';
+import pam_auth from './locales/pam/auth.json';
+import pam_common from './locales/pam/common.json';
+import pam_data from './locales/pam/data.json';
+import pam_leads from './locales/pam/leads.json';
+import kk_auth from './locales/kk/auth.json';
+import kk_common from './locales/kk/common.json';
+import kk_data from './locales/kk/data.json';
+import kk_leads from './locales/kk/leads.json';
+import kha_auth from './locales/kha/auth.json';
+import kha_common from './locales/kha/common.json';
+import kha_data from './locales/kha/data.json';
+import kha_leads from './locales/kha/leads.json';
+import km_auth from './locales/km/auth.json';
+import km_common from './locales/km/common.json';
+import km_data from './locales/km/data.json';
+import km_leads from './locales/km/leads.json';
+import cgg_auth from './locales/cgg/auth.json';
+import cgg_common from './locales/cgg/common.json';
+import cgg_data from './locales/cgg/data.json';
+import cgg_leads from './locales/cgg/leads.json';
+import kg_auth from './locales/kg/auth.json';
+import kg_common from './locales/kg/common.json';
+import kg_data from './locales/kg/data.json';
+import kg_leads from './locales/kg/leads.json';
+import rw_auth from './locales/rw/auth.json';
+import rw_common from './locales/rw/common.json';
+import rw_data from './locales/rw/data.json';
+import rw_leads from './locales/rw/leads.json';
+import ktu_auth from './locales/ktu/auth.json';
+import ktu_common from './locales/ktu/common.json';
+import ktu_data from './locales/ktu/data.json';
+import ktu_leads from './locales/ktu/leads.json';
+import trp_auth from './locales/trp/auth.json';
+import trp_common from './locales/trp/common.json';
+import trp_data from './locales/trp/data.json';
+import trp_leads from './locales/trp/leads.json';
+import kv_auth from './locales/kv/auth.json';
+import kv_common from './locales/kv/common.json';
+import kv_data from './locales/kv/data.json';
+import kv_leads from './locales/kv/leads.json';
+import gom_auth from './locales/gom/auth.json';
+import gom_common from './locales/gom/common.json';
+import gom_data from './locales/gom/data.json';
+import gom_leads from './locales/gom/leads.json';
+import ko_auth from './locales/ko/auth.json';
+import ko_common from './locales/ko/common.json';
+import ko_data from './locales/ko/data.json';
+import ko_leads from './locales/ko/leads.json';
+import kri_auth from './locales/kri/auth.json';
+import kri_common from './locales/kri/common.json';
+import kri_data from './locales/kri/data.json';
+import kri_leads from './locales/kri/leads.json';
+import ku_auth from './locales/ku/auth.json';
+import ku_common from './locales/ku/common.json';
+import ku_data from './locales/ku/data.json';
+import ku_leads from './locales/ku/leads.json';
+import ckb_auth from './locales/ckb/auth.json';
+import ckb_common from './locales/ckb/common.json';
+import ckb_data from './locales/ckb/data.json';
+import ckb_leads from './locales/ckb/leads.json';
+import ky_auth from './locales/ky/auth.json';
+import ky_common from './locales/ky/common.json';
+import ky_data from './locales/ky/data.json';
+import ky_leads from './locales/ky/leads.json';
+import lo_auth from './locales/lo/auth.json';
+import lo_common from './locales/lo/common.json';
+import lo_data from './locales/lo/data.json';
+import lo_leads from './locales/lo/leads.json';
+import ltg_auth from './locales/ltg/auth.json';
+import ltg_common from './locales/ltg/common.json';
+import ltg_data from './locales/ltg/data.json';
+import ltg_leads from './locales/ltg/leads.json';
+import la_auth from './locales/la/auth.json';
+import la_common from './locales/la/common.json';
+import la_data from './locales/la/data.json';
+import la_leads from './locales/la/leads.json';
+import lv_auth from './locales/lv/auth.json';
+import lv_common from './locales/lv/common.json';
+import lv_data from './locales/lv/data.json';
+import lv_leads from './locales/lv/leads.json';
+import lij_auth from './locales/lij/auth.json';
+import lij_common from './locales/lij/common.json';
+import lij_data from './locales/lij/data.json';
+import lij_leads from './locales/lij/leads.json';
+import li_auth from './locales/li/auth.json';
+import li_common from './locales/li/common.json';
+import li_data from './locales/li/data.json';
+import li_leads from './locales/li/leads.json';
+import ln_auth from './locales/ln/auth.json';
+import ln_common from './locales/ln/common.json';
+import ln_data from './locales/ln/data.json';
+import ln_leads from './locales/ln/leads.json';
+import lt_auth from './locales/lt/auth.json';
+import lt_common from './locales/lt/common.json';
+import lt_data from './locales/lt/data.json';
+import lt_leads from './locales/lt/leads.json';
+import lmo_auth from './locales/lmo/auth.json';
+import lmo_common from './locales/lmo/common.json';
+import lmo_data from './locales/lmo/data.json';
+import lmo_leads from './locales/lmo/leads.json';
+import lg_auth from './locales/lg/auth.json';
+import lg_common from './locales/lg/common.json';
+import lg_data from './locales/lg/data.json';
+import lg_leads from './locales/lg/leads.json';
+import luo_auth from './locales/luo/auth.json';
+import luo_common from './locales/luo/common.json';
+import luo_data from './locales/luo/data.json';
+import luo_leads from './locales/luo/leads.json';
+import lb_auth from './locales/lb/auth.json';
+import lb_common from './locales/lb/common.json';
+import lb_data from './locales/lb/data.json';
+import lb_leads from './locales/lb/leads.json';
+import mk_auth from './locales/mk/auth.json';
+import mk_common from './locales/mk/common.json';
+import mk_data from './locales/mk/data.json';
+import mk_leads from './locales/mk/leads.json';
+import mad_auth from './locales/mad/auth.json';
+import mad_common from './locales/mad/common.json';
+import mad_data from './locales/mad/data.json';
+import mad_leads from './locales/mad/leads.json';
+import mai_auth from './locales/mai/auth.json';
+import mai_common from './locales/mai/common.json';
+import mai_data from './locales/mai/data.json';
+import mai_leads from './locales/mai/leads.json';
+import mak_auth from './locales/mak/auth.json';
+import mak_common from './locales/mak/common.json';
+import mak_data from './locales/mak/data.json';
+import mak_leads from './locales/mak/leads.json';
+import mg_auth from './locales/mg/auth.json';
+import mg_common from './locales/mg/common.json';
+import mg_data from './locales/mg/data.json';
+import mg_leads from './locales/mg/leads.json';
+import ms_auth from './locales/ms/auth.json';
+import ms_common from './locales/ms/common.json';
+import ms_data from './locales/ms/data.json';
+import ms_leads from './locales/ms/leads.json';
+import ms_Arab_auth from './locales/ms-Arab/auth.json';
+import ms_Arab_common from './locales/ms-Arab/common.json';
+import ms_Arab_data from './locales/ms-Arab/data.json';
+import ms_Arab_leads from './locales/ms-Arab/leads.json';
+import ml_auth from './locales/ml/auth.json';
+import ml_common from './locales/ml/common.json';
+import ml_data from './locales/ml/data.json';
+import ml_leads from './locales/ml/leads.json';
+import mt_auth from './locales/mt/auth.json';
+import mt_common from './locales/mt/common.json';
+import mt_data from './locales/mt/data.json';
+import mt_leads from './locales/mt/leads.json';
+import mam_auth from './locales/mam/auth.json';
+import mam_common from './locales/mam/common.json';
+import mam_data from './locales/mam/data.json';
+import mam_leads from './locales/mam/leads.json';
+import gv_auth from './locales/gv/auth.json';
+import gv_common from './locales/gv/common.json';
+import gv_data from './locales/gv/data.json';
+import gv_leads from './locales/gv/leads.json';
+import mi_auth from './locales/mi/auth.json';
+import mi_common from './locales/mi/common.json';
+import mi_data from './locales/mi/data.json';
+import mi_leads from './locales/mi/leads.json';
+import mr_auth from './locales/mr/auth.json';
+import mr_common from './locales/mr/common.json';
+import mr_data from './locales/mr/data.json';
+import mr_leads from './locales/mr/leads.json';
+import mh_auth from './locales/mh/auth.json';
+import mh_common from './locales/mh/common.json';
+import mh_data from './locales/mh/data.json';
+import mh_leads from './locales/mh/leads.json';
+import mwr_auth from './locales/mwr/auth.json';
+import mwr_common from './locales/mwr/common.json';
+import mwr_data from './locales/mwr/data.json';
+import mwr_leads from './locales/mwr/leads.json';
+import mfe_auth from './locales/mfe/auth.json';
+import mfe_common from './locales/mfe/common.json';
+import mfe_data from './locales/mfe/data.json';
+import mfe_leads from './locales/mfe/leads.json';
+import chm_auth from './locales/chm/auth.json';
+import chm_common from './locales/chm/common.json';
+import chm_data from './locales/chm/data.json';
+import chm_leads from './locales/chm/leads.json';
+import mni_Mtei_auth from './locales/mni-Mtei/auth.json';
+import mni_Mtei_common from './locales/mni-Mtei/common.json';
+import mni_Mtei_data from './locales/mni-Mtei/data.json';
+import mni_Mtei_leads from './locales/mni-Mtei/leads.json';
+import min_auth from './locales/min/auth.json';
+import min_common from './locales/min/common.json';
+import min_data from './locales/min/data.json';
+import min_leads from './locales/min/leads.json';
+import lus_auth from './locales/lus/auth.json';
+import lus_common from './locales/lus/common.json';
+import lus_data from './locales/lus/data.json';
+import lus_leads from './locales/lus/leads.json';
+import mn_auth from './locales/mn/auth.json';
+import mn_common from './locales/mn/common.json';
+import mn_data from './locales/mn/data.json';
+import mn_leads from './locales/mn/leads.json';
+import my_auth from './locales/my/auth.json';
+import my_common from './locales/my/common.json';
+import my_data from './locales/my/data.json';
+import my_leads from './locales/my/leads.json';
+import nhe_auth from './locales/nhe/auth.json';
+import nhe_common from './locales/nhe/common.json';
+import nhe_data from './locales/nhe/data.json';
+import nhe_leads from './locales/nhe/leads.json';
+import ndc_ZW_auth from './locales/ndc-ZW/auth.json';
+import ndc_ZW_common from './locales/ndc-ZW/common.json';
+import ndc_ZW_data from './locales/ndc-ZW/data.json';
+import ndc_ZW_leads from './locales/ndc-ZW/leads.json';
+import nr_auth from './locales/nr/auth.json';
+import nr_common from './locales/nr/common.json';
+import nr_data from './locales/nr/data.json';
+import nr_leads from './locales/nr/leads.json';
+import new_auth from './locales/new/auth.json';
+import new_common from './locales/new/common.json';
+import new_data from './locales/new/data.json';
+import new_leads from './locales/new/leads.json';
+import ne_auth from './locales/ne/auth.json';
+import ne_common from './locales/ne/common.json';
+import ne_data from './locales/ne/data.json';
+import ne_leads from './locales/ne/leads.json';
+import bm_Nkoo_auth from './locales/bm-Nkoo/auth.json';
+import bm_Nkoo_common from './locales/bm-Nkoo/common.json';
+import bm_Nkoo_data from './locales/bm-Nkoo/data.json';
+import bm_Nkoo_leads from './locales/bm-Nkoo/leads.json';
+import no_auth from './locales/no/auth.json';
+import no_common from './locales/no/common.json';
+import no_data from './locales/no/data.json';
+import no_leads from './locales/no/leads.json';
+import nus_auth from './locales/nus/auth.json';
+import nus_common from './locales/nus/common.json';
+import nus_data from './locales/nus/data.json';
+import nus_leads from './locales/nus/leads.json';
+import oc_auth from './locales/oc/auth.json';
+import oc_common from './locales/oc/common.json';
+import oc_data from './locales/oc/data.json';
+import oc_leads from './locales/oc/leads.json';
+import or_auth from './locales/or/auth.json';
+import or_common from './locales/or/common.json';
+import or_data from './locales/or/data.json';
+import or_leads from './locales/or/leads.json';
+import om_auth from './locales/om/auth.json';
+import om_common from './locales/om/common.json';
+import om_data from './locales/om/data.json';
+import om_leads from './locales/om/leads.json';
+import os_auth from './locales/os/auth.json';
+import os_common from './locales/os/common.json';
+import os_data from './locales/os/data.json';
+import os_leads from './locales/os/leads.json';
+import pag_auth from './locales/pag/auth.json';
+import pag_common from './locales/pag/common.json';
+import pag_data from './locales/pag/data.json';
+import pag_leads from './locales/pag/leads.json';
+import pap_auth from './locales/pap/auth.json';
+import pap_common from './locales/pap/common.json';
+import pap_data from './locales/pap/data.json';
+import pap_leads from './locales/pap/leads.json';
+import ps_auth from './locales/ps/auth.json';
+import ps_common from './locales/ps/common.json';
+import ps_data from './locales/ps/data.json';
+import ps_leads from './locales/ps/leads.json';
+import fa_auth from './locales/fa/auth.json';
+import fa_common from './locales/fa/common.json';
+import fa_data from './locales/fa/data.json';
+import fa_leads from './locales/fa/leads.json';
+import pl_auth from './locales/pl/auth.json';
+import pl_common from './locales/pl/common.json';
+import pl_data from './locales/pl/data.json';
+import pl_leads from './locales/pl/leads.json';
+import pt_auth from './locales/pt/auth.json';
+import pt_common from './locales/pt/common.json';
+import pt_data from './locales/pt/data.json';
+import pt_leads from './locales/pt/leads.json';
+import pt_PT_auth from './locales/pt-PT/auth.json';
+import pt_PT_common from './locales/pt-PT/common.json';
+import pt_PT_data from './locales/pt-PT/data.json';
+import pt_PT_leads from './locales/pt-PT/leads.json';
+import pa_auth from './locales/pa/auth.json';
+import pa_common from './locales/pa/common.json';
+import pa_data from './locales/pa/data.json';
+import pa_leads from './locales/pa/leads.json';
+import pa_Arab_auth from './locales/pa-Arab/auth.json';
+import pa_Arab_common from './locales/pa-Arab/common.json';
+import pa_Arab_data from './locales/pa-Arab/data.json';
+import pa_Arab_leads from './locales/pa-Arab/leads.json';
+import qu_auth from './locales/qu/auth.json';
+import qu_common from './locales/qu/common.json';
+import qu_data from './locales/qu/data.json';
+import qu_leads from './locales/qu/leads.json';
+import kek_auth from './locales/kek/auth.json';
+import kek_common from './locales/kek/common.json';
+import kek_data from './locales/kek/data.json';
+import kek_leads from './locales/kek/leads.json';
+import rom_auth from './locales/rom/auth.json';
+import rom_common from './locales/rom/common.json';
+import rom_data from './locales/rom/data.json';
+import rom_leads from './locales/rom/leads.json';
+import ro_auth from './locales/ro/auth.json';
+import ro_common from './locales/ro/common.json';
+import ro_data from './locales/ro/data.json';
+import ro_leads from './locales/ro/leads.json';
+import rn_auth from './locales/rn/auth.json';
+import rn_common from './locales/rn/common.json';
+import rn_data from './locales/rn/data.json';
+import rn_leads from './locales/rn/leads.json';
+import ru_auth from './locales/ru/auth.json';
+import ru_common from './locales/ru/common.json';
+import ru_data from './locales/ru/data.json';
+import ru_leads from './locales/ru/leads.json';
+import se_auth from './locales/se/auth.json';
+import se_common from './locales/se/common.json';
+import se_data from './locales/se/data.json';
+import se_leads from './locales/se/leads.json';
+import sm_auth from './locales/sm/auth.json';
+import sm_common from './locales/sm/common.json';
+import sm_data from './locales/sm/data.json';
+import sm_leads from './locales/sm/leads.json';
+import sg_auth from './locales/sg/auth.json';
+import sg_common from './locales/sg/common.json';
+import sg_data from './locales/sg/data.json';
+import sg_leads from './locales/sg/leads.json';
+import sa_auth from './locales/sa/auth.json';
+import sa_common from './locales/sa/common.json';
+import sa_data from './locales/sa/data.json';
+import sa_leads from './locales/sa/leads.json';
+import sat_Latn_auth from './locales/sat-Latn/auth.json';
+import sat_Latn_common from './locales/sat-Latn/common.json';
+import sat_Latn_data from './locales/sat-Latn/data.json';
+import sat_Latn_leads from './locales/sat-Latn/leads.json';
+import sat_auth from './locales/sat/auth.json';
+import sat_common from './locales/sat/common.json';
+import sat_data from './locales/sat/data.json';
+import sat_leads from './locales/sat/leads.json';
+import gd_auth from './locales/gd/auth.json';
+import gd_common from './locales/gd/common.json';
+import gd_data from './locales/gd/data.json';
+import gd_leads from './locales/gd/leads.json';
+import nso_auth from './locales/nso/auth.json';
+import nso_common from './locales/nso/common.json';
+import nso_data from './locales/nso/data.json';
+import nso_leads from './locales/nso/leads.json';
+import sr_auth from './locales/sr/auth.json';
+import sr_common from './locales/sr/common.json';
+import sr_data from './locales/sr/data.json';
+import sr_leads from './locales/sr/leads.json';
+import st_auth from './locales/st/auth.json';
+import st_common from './locales/st/common.json';
+import st_data from './locales/st/data.json';
+import st_leads from './locales/st/leads.json';
+import crs_auth from './locales/crs/auth.json';
+import crs_common from './locales/crs/common.json';
+import crs_data from './locales/crs/data.json';
+import crs_leads from './locales/crs/leads.json';
+import shn_auth from './locales/shn/auth.json';
+import shn_common from './locales/shn/common.json';
+import shn_data from './locales/shn/data.json';
+import shn_leads from './locales/shn/leads.json';
+import sn_auth from './locales/sn/auth.json';
+import sn_common from './locales/sn/common.json';
+import sn_data from './locales/sn/data.json';
+import sn_leads from './locales/sn/leads.json';
+import scn_auth from './locales/scn/auth.json';
+import scn_common from './locales/scn/common.json';
+import scn_data from './locales/scn/data.json';
+import scn_leads from './locales/scn/leads.json';
+import szl_auth from './locales/szl/auth.json';
+import szl_common from './locales/szl/common.json';
+import szl_data from './locales/szl/data.json';
+import szl_leads from './locales/szl/leads.json';
+import sd_auth from './locales/sd/auth.json';
+import sd_common from './locales/sd/common.json';
+import sd_data from './locales/sd/data.json';
+import sd_leads from './locales/sd/leads.json';
+import si_auth from './locales/si/auth.json';
+import si_common from './locales/si/common.json';
+import si_data from './locales/si/data.json';
+import si_leads from './locales/si/leads.json';
+import sk_auth from './locales/sk/auth.json';
+import sk_common from './locales/sk/common.json';
+import sk_data from './locales/sk/data.json';
+import sk_leads from './locales/sk/leads.json';
+import sl_auth from './locales/sl/auth.json';
+import sl_common from './locales/sl/common.json';
+import sl_data from './locales/sl/data.json';
+import sl_leads from './locales/sl/leads.json';
+import so_auth from './locales/so/auth.json';
+import so_common from './locales/so/common.json';
+import so_data from './locales/so/data.json';
+import so_leads from './locales/so/leads.json';
+import es_auth from './locales/es/auth.json';
+import es_common from './locales/es/common.json';
+import es_data from './locales/es/data.json';
+import es_leads from './locales/es/leads.json';
+import su_auth from './locales/su/auth.json';
+import su_common from './locales/su/common.json';
+import su_data from './locales/su/data.json';
+import su_leads from './locales/su/leads.json';
+import sus_auth from './locales/sus/auth.json';
+import sus_common from './locales/sus/common.json';
+import sus_data from './locales/sus/data.json';
+import sus_leads from './locales/sus/leads.json';
+import sw_auth from './locales/sw/auth.json';
+import sw_common from './locales/sw/common.json';
+import sw_data from './locales/sw/data.json';
+import sw_leads from './locales/sw/leads.json';
+import ss_auth from './locales/ss/auth.json';
+import ss_common from './locales/ss/common.json';
+import ss_data from './locales/ss/data.json';
+import ss_leads from './locales/ss/leads.json';
+import sv_auth from './locales/sv/auth.json';
+import sv_common from './locales/sv/common.json';
+import sv_data from './locales/sv/data.json';
+import sv_leads from './locales/sv/leads.json';
+import ty_auth from './locales/ty/auth.json';
+import ty_common from './locales/ty/common.json';
+import ty_data from './locales/ty/data.json';
+import ty_leads from './locales/ty/leads.json';
+import tg_auth from './locales/tg/auth.json';
+import tg_common from './locales/tg/common.json';
+import tg_data from './locales/tg/data.json';
+import tg_leads from './locales/tg/leads.json';
+import ber_Latn_auth from './locales/ber-Latn/auth.json';
+import ber_Latn_common from './locales/ber-Latn/common.json';
+import ber_Latn_data from './locales/ber-Latn/data.json';
+import ber_Latn_leads from './locales/ber-Latn/leads.json';
+import ber_auth from './locales/ber/auth.json';
+import ber_common from './locales/ber/common.json';
+import ber_data from './locales/ber/data.json';
+import ber_leads from './locales/ber/leads.json';
+import tt_auth from './locales/tt/auth.json';
+import tt_common from './locales/tt/common.json';
+import tt_data from './locales/tt/data.json';
+import tt_leads from './locales/tt/leads.json';
+import te_auth from './locales/te/auth.json';
+import te_common from './locales/te/common.json';
+import te_data from './locales/te/data.json';
+import te_leads from './locales/te/leads.json';
+import tet_auth from './locales/tet/auth.json';
+import tet_common from './locales/tet/common.json';
+import tet_data from './locales/tet/data.json';
+import tet_leads from './locales/tet/leads.json';
+import th_auth from './locales/th/auth.json';
+import th_common from './locales/th/common.json';
+import th_data from './locales/th/data.json';
+import th_leads from './locales/th/leads.json';
+import bo_auth from './locales/bo/auth.json';
+import bo_common from './locales/bo/common.json';
+import bo_data from './locales/bo/data.json';
+import bo_leads from './locales/bo/leads.json';
+import ti_auth from './locales/ti/auth.json';
+import ti_common from './locales/ti/common.json';
+import ti_data from './locales/ti/data.json';
+import ti_leads from './locales/ti/leads.json';
+import tiv_auth from './locales/tiv/auth.json';
+import tiv_common from './locales/tiv/common.json';
+import tiv_data from './locales/tiv/data.json';
+import tiv_leads from './locales/tiv/leads.json';
+import tpi_auth from './locales/tpi/auth.json';
+import tpi_common from './locales/tpi/common.json';
+import tpi_data from './locales/tpi/data.json';
+import tpi_leads from './locales/tpi/leads.json';
+import to_auth from './locales/to/auth.json';
+import to_common from './locales/to/common.json';
+import to_data from './locales/to/data.json';
+import to_leads from './locales/to/leads.json';
+import lua_auth from './locales/lua/auth.json';
+import lua_common from './locales/lua/common.json';
+import lua_data from './locales/lua/data.json';
+import lua_leads from './locales/lua/leads.json';
+import ts_auth from './locales/ts/auth.json';
+import ts_common from './locales/ts/common.json';
+import ts_data from './locales/ts/data.json';
+import ts_leads from './locales/ts/leads.json';
+import tn_auth from './locales/tn/auth.json';
+import tn_common from './locales/tn/common.json';
+import tn_data from './locales/tn/data.json';
+import tn_leads from './locales/tn/leads.json';
+import tcy_auth from './locales/tcy/auth.json';
+import tcy_common from './locales/tcy/common.json';
+import tcy_data from './locales/tcy/data.json';
+import tcy_leads from './locales/tcy/leads.json';
+import tum_auth from './locales/tum/auth.json';
+import tum_common from './locales/tum/common.json';
+import tum_data from './locales/tum/data.json';
+import tum_leads from './locales/tum/leads.json';
+import tr_auth from './locales/tr/auth.json';
+import tr_common from './locales/tr/common.json';
+import tr_data from './locales/tr/data.json';
+import tr_leads from './locales/tr/leads.json';
+import tk_auth from './locales/tk/auth.json';
+import tk_common from './locales/tk/common.json';
+import tk_data from './locales/tk/data.json';
+import tk_leads from './locales/tk/leads.json';
+import tyv_auth from './locales/tyv/auth.json';
+import tyv_common from './locales/tyv/common.json';
+import tyv_data from './locales/tyv/data.json';
+import tyv_leads from './locales/tyv/leads.json';
+import ak_auth from './locales/ak/auth.json';
+import ak_common from './locales/ak/common.json';
+import ak_data from './locales/ak/data.json';
+import ak_leads from './locales/ak/leads.json';
+import udm_auth from './locales/udm/auth.json';
+import udm_common from './locales/udm/common.json';
+import udm_data from './locales/udm/data.json';
+import udm_leads from './locales/udm/leads.json';
+import uk_auth from './locales/uk/auth.json';
+import uk_common from './locales/uk/common.json';
+import uk_data from './locales/uk/data.json';
+import uk_leads from './locales/uk/leads.json';
+import ur_auth from './locales/ur/auth.json';
+import ur_common from './locales/ur/common.json';
+import ur_data from './locales/ur/data.json';
+import ur_leads from './locales/ur/leads.json';
+import ug_auth from './locales/ug/auth.json';
+import ug_common from './locales/ug/common.json';
+import ug_data from './locales/ug/data.json';
+import ug_leads from './locales/ug/leads.json';
+import uz_auth from './locales/uz/auth.json';
+import uz_common from './locales/uz/common.json';
+import uz_data from './locales/uz/data.json';
+import uz_leads from './locales/uz/leads.json';
+import ve_auth from './locales/ve/auth.json';
+import ve_common from './locales/ve/common.json';
+import ve_data from './locales/ve/data.json';
+import ve_leads from './locales/ve/leads.json';
+import vec_auth from './locales/vec/auth.json';
+import vec_common from './locales/vec/common.json';
+import vec_data from './locales/vec/data.json';
+import vec_leads from './locales/vec/leads.json';
+import vi_auth from './locales/vi/auth.json';
+import vi_common from './locales/vi/common.json';
+import vi_data from './locales/vi/data.json';
+import vi_leads from './locales/vi/leads.json';
+import war_auth from './locales/war/auth.json';
+import war_common from './locales/war/common.json';
+import war_data from './locales/war/data.json';
+import war_leads from './locales/war/leads.json';
+import cy_auth from './locales/cy/auth.json';
+import cy_common from './locales/cy/common.json';
+import cy_data from './locales/cy/data.json';
+import cy_leads from './locales/cy/leads.json';
+import wo_auth from './locales/wo/auth.json';
+import wo_common from './locales/wo/common.json';
+import wo_data from './locales/wo/data.json';
+import wo_leads from './locales/wo/leads.json';
+import xh_auth from './locales/xh/auth.json';
+import xh_common from './locales/xh/common.json';
+import xh_data from './locales/xh/data.json';
+import xh_leads from './locales/xh/leads.json';
+import sah_auth from './locales/sah/auth.json';
+import sah_common from './locales/sah/common.json';
+import sah_data from './locales/sah/data.json';
+import sah_leads from './locales/sah/leads.json';
+import yi_auth from './locales/yi/auth.json';
+import yi_common from './locales/yi/common.json';
+import yi_data from './locales/yi/data.json';
+import yi_leads from './locales/yi/leads.json';
+import yo_auth from './locales/yo/auth.json';
+import yo_common from './locales/yo/common.json';
+import yo_data from './locales/yo/data.json';
+import yo_leads from './locales/yo/leads.json';
+import yua_auth from './locales/yua/auth.json';
+import yua_common from './locales/yua/common.json';
+import yua_data from './locales/yua/data.json';
+import yua_leads from './locales/yua/leads.json';
+import zap_auth from './locales/zap/auth.json';
+import zap_common from './locales/zap/common.json';
+import zap_data from './locales/zap/data.json';
+import zap_leads from './locales/zap/leads.json';
+import zu_auth from './locales/zu/auth.json';
+import zu_common from './locales/zu/common.json';
+import zu_data from './locales/zu/data.json';
+import zu_leads from './locales/zu/leads.json';
 
 export const resources = {
   'en': { auth: en_auth, common: en_common, data: en_data, leads: en_leads },
   'hi': { auth: hi_auth, common: hi_common, data: hi_data, leads: hi_leads },
   'bn': { auth: bn_auth, common: bn_common, data: bn_data, leads: bn_leads },
+  'ta': { auth: ta_auth, common: ta_common, data: ta_data, leads: ta_leads },
+  'ab': { auth: ab_auth, common: ab_common, data: ab_data, leads: ab_leads },
+  'ace': { auth: ace_auth, common: ace_common, data: ace_data, leads: ace_leads },
+  'ach': { auth: ach_auth, common: ach_common, data: ach_data, leads: ach_leads },
+  'aa': { auth: aa_auth, common: aa_common, data: aa_data, leads: aa_leads },
+  'af': { auth: af_auth, common: af_common, data: af_data, leads: af_leads },
+  'sq': { auth: sq_auth, common: sq_common, data: sq_data, leads: sq_leads },
+  'alz': { auth: alz_auth, common: alz_common, data: alz_data, leads: alz_leads },
+  'am': { auth: am_auth, common: am_common, data: am_data, leads: am_leads },
+  'ar': { auth: ar_auth, common: ar_common, data: ar_data, leads: ar_leads },
+  'hy': { auth: hy_auth, common: hy_common, data: hy_data, leads: hy_leads },
+  'as': { auth: as_auth, common: as_common, data: as_data, leads: as_leads },
+  'av': { auth: av_auth, common: av_common, data: av_data, leads: av_leads },
+  'awa': { auth: awa_auth, common: awa_common, data: awa_data, leads: awa_leads },
+  'ay': { auth: ay_auth, common: ay_common, data: ay_data, leads: ay_leads },
+  'az': { auth: az_auth, common: az_common, data: az_data, leads: az_leads },
+  'ban': { auth: ban_auth, common: ban_common, data: ban_data, leads: ban_leads },
+  'bal': { auth: bal_auth, common: bal_common, data: bal_data, leads: bal_leads },
+  'bm': { auth: bm_auth, common: bm_common, data: bm_data, leads: bm_leads },
+  'bci': { auth: bci_auth, common: bci_common, data: bci_data, leads: bci_leads },
+  'ba': { auth: ba_auth, common: ba_common, data: ba_data, leads: ba_leads },
+  'eu': { auth: eu_auth, common: eu_common, data: eu_data, leads: eu_leads },
+  'btx': { auth: btx_auth, common: btx_common, data: btx_data, leads: btx_leads },
+  'bts': { auth: bts_auth, common: bts_common, data: bts_data, leads: bts_leads },
+  'bbc': { auth: bbc_auth, common: bbc_common, data: bbc_data, leads: bbc_leads },
+  'be': { auth: be_auth, common: be_common, data: be_data, leads: be_leads },
+  'bem': { auth: bem_auth, common: bem_common, data: bem_data, leads: bem_leads },
+  'bew': { auth: bew_auth, common: bew_common, data: bew_data, leads: bew_leads },
+  'bho': { auth: bho_auth, common: bho_common, data: bho_data, leads: bho_leads },
+  'bik': { auth: bik_auth, common: bik_common, data: bik_data, leads: bik_leads },
+  'bs': { auth: bs_auth, common: bs_common, data: bs_data, leads: bs_leads },
+  'br': { auth: br_auth, common: br_common, data: br_data, leads: br_leads },
+  'bg': { auth: bg_auth, common: bg_common, data: bg_data, leads: bg_leads },
+  'bua': { auth: bua_auth, common: bua_common, data: bua_data, leads: bua_leads },
+  'yue': { auth: yue_auth, common: yue_common, data: yue_data, leads: yue_leads },
+  'ca': { auth: ca_auth, common: ca_common, data: ca_data, leads: ca_leads },
+  'ceb': { auth: ceb_auth, common: ceb_common, data: ceb_data, leads: ceb_leads },
+  'ch': { auth: ch_auth, common: ch_common, data: ch_data, leads: ch_leads },
+  'ce': { auth: ce_auth, common: ce_common, data: ce_data, leads: ce_leads },
+  'ny': { auth: ny_auth, common: ny_common, data: ny_data, leads: ny_leads },
+  'zh-CN': { auth: zh_CN_auth, common: zh_CN_common, data: zh_CN_data, leads: zh_CN_leads },
+  'zh-TW': { auth: zh_TW_auth, common: zh_TW_common, data: zh_TW_data, leads: zh_TW_leads },
+  'chk': { auth: chk_auth, common: chk_common, data: chk_data, leads: chk_leads },
+  'cv': { auth: cv_auth, common: cv_common, data: cv_data, leads: cv_leads },
+  'co': { auth: co_auth, common: co_common, data: co_data, leads: co_leads },
+  'crh': { auth: crh_auth, common: crh_common, data: crh_data, leads: crh_leads },
+  'crh-Latn': { auth: crh_Latn_auth, common: crh_Latn_common, data: crh_Latn_data, leads: crh_Latn_leads },
+  'hr': { auth: hr_auth, common: hr_common, data: hr_data, leads: hr_leads },
+  'cs': { auth: cs_auth, common: cs_common, data: cs_data, leads: cs_leads },
+  'da': { auth: da_auth, common: da_common, data: da_data, leads: da_leads },
+  'fa-AF': { auth: fa_AF_auth, common: fa_AF_common, data: fa_AF_data, leads: fa_AF_leads },
+  'dv': { auth: dv_auth, common: dv_common, data: dv_data, leads: dv_leads },
+  'din': { auth: din_auth, common: din_common, data: din_data, leads: din_leads },
+  'doi': { auth: doi_auth, common: doi_common, data: doi_data, leads: doi_leads },
+  'dov': { auth: dov_auth, common: dov_common, data: dov_data, leads: dov_leads },
+  'nl': { auth: nl_auth, common: nl_common, data: nl_data, leads: nl_leads },
+  'dyu': { auth: dyu_auth, common: dyu_common, data: dyu_data, leads: dyu_leads },
+  'dz': { auth: dz_auth, common: dz_common, data: dz_data, leads: dz_leads },
+  'eo': { auth: eo_auth, common: eo_common, data: eo_data, leads: eo_leads },
+  'et': { auth: et_auth, common: et_common, data: et_data, leads: et_leads },
+  'ee': { auth: ee_auth, common: ee_common, data: ee_data, leads: ee_leads },
+  'fo': { auth: fo_auth, common: fo_common, data: fo_data, leads: fo_leads },
+  'fj': { auth: fj_auth, common: fj_common, data: fj_data, leads: fj_leads },
+  'tl': { auth: tl_auth, common: tl_common, data: tl_data, leads: tl_leads },
+  'fi': { auth: fi_auth, common: fi_common, data: fi_data, leads: fi_leads },
+  'fon': { auth: fon_auth, common: fon_common, data: fon_data, leads: fon_leads },
+  'fr': { auth: fr_auth, common: fr_common, data: fr_data, leads: fr_leads },
+  'fr-CA': { auth: fr_CA_auth, common: fr_CA_common, data: fr_CA_data, leads: fr_CA_leads },
+  'fy': { auth: fy_auth, common: fy_common, data: fy_data, leads: fy_leads },
+  'fur': { auth: fur_auth, common: fur_common, data: fur_data, leads: fur_leads },
+  'ff': { auth: ff_auth, common: ff_common, data: ff_data, leads: ff_leads },
+  'gaa': { auth: gaa_auth, common: gaa_common, data: gaa_data, leads: gaa_leads },
+  'gl': { auth: gl_auth, common: gl_common, data: gl_data, leads: gl_leads },
+  'ka': { auth: ka_auth, common: ka_common, data: ka_data, leads: ka_leads },
+  'de': { auth: de_auth, common: de_common, data: de_data, leads: de_leads },
+  'el': { auth: el_auth, common: el_common, data: el_data, leads: el_leads },
+  'gn': { auth: gn_auth, common: gn_common, data: gn_data, leads: gn_leads },
+  'gu': { auth: gu_auth, common: gu_common, data: gu_data, leads: gu_leads },
+  'ht': { auth: ht_auth, common: ht_common, data: ht_data, leads: ht_leads },
+  'cnh': { auth: cnh_auth, common: cnh_common, data: cnh_data, leads: cnh_leads },
+  'ha': { auth: ha_auth, common: ha_common, data: ha_data, leads: ha_leads },
+  'haw': { auth: haw_auth, common: haw_common, data: haw_data, leads: haw_leads },
+  'he': { auth: he_auth, common: he_common, data: he_data, leads: he_leads },
+  'hil': { auth: hil_auth, common: hil_common, data: hil_data, leads: hil_leads },
+  'hmn': { auth: hmn_auth, common: hmn_common, data: hmn_data, leads: hmn_leads },
+  'hu': { auth: hu_auth, common: hu_common, data: hu_data, leads: hu_leads },
+  'hrx': { auth: hrx_auth, common: hrx_common, data: hrx_data, leads: hrx_leads },
+  'iba': { auth: iba_auth, common: iba_common, data: iba_data, leads: iba_leads },
+  'is': { auth: is_auth, common: is_common, data: is_data, leads: is_leads },
+  'ig': { auth: ig_auth, common: ig_common, data: ig_data, leads: ig_leads },
+  'ilo': { auth: ilo_auth, common: ilo_common, data: ilo_data, leads: ilo_leads },
+  'id': { auth: id_auth, common: id_common, data: id_data, leads: id_leads },
+  'iu-Latn': { auth: iu_Latn_auth, common: iu_Latn_common, data: iu_Latn_data, leads: iu_Latn_leads },
+  'iu': { auth: iu_auth, common: iu_common, data: iu_data, leads: iu_leads },
+  'ga': { auth: ga_auth, common: ga_common, data: ga_data, leads: ga_leads },
+  'it': { auth: it_auth, common: it_common, data: it_data, leads: it_leads },
+  'jam': { auth: jam_auth, common: jam_common, data: jam_data, leads: jam_leads },
+  'ja': { auth: ja_auth, common: ja_common, data: ja_data, leads: ja_leads },
+  'jv': { auth: jv_auth, common: jv_common, data: jv_data, leads: jv_leads },
+  'kac': { auth: kac_auth, common: kac_common, data: kac_data, leads: kac_leads },
+  'kl': { auth: kl_auth, common: kl_common, data: kl_data, leads: kl_leads },
+  'kn': { auth: kn_auth, common: kn_common, data: kn_data, leads: kn_leads },
+  'kr': { auth: kr_auth, common: kr_common, data: kr_data, leads: kr_leads },
+  'pam': { auth: pam_auth, common: pam_common, data: pam_data, leads: pam_leads },
+  'kk': { auth: kk_auth, common: kk_common, data: kk_data, leads: kk_leads },
+  'kha': { auth: kha_auth, common: kha_common, data: kha_data, leads: kha_leads },
+  'km': { auth: km_auth, common: km_common, data: km_data, leads: km_leads },
+  'cgg': { auth: cgg_auth, common: cgg_common, data: cgg_data, leads: cgg_leads },
+  'kg': { auth: kg_auth, common: kg_common, data: kg_data, leads: kg_leads },
+  'rw': { auth: rw_auth, common: rw_common, data: rw_data, leads: rw_leads },
+  'ktu': { auth: ktu_auth, common: ktu_common, data: ktu_data, leads: ktu_leads },
+  'trp': { auth: trp_auth, common: trp_common, data: trp_data, leads: trp_leads },
+  'kv': { auth: kv_auth, common: kv_common, data: kv_data, leads: kv_leads },
+  'gom': { auth: gom_auth, common: gom_common, data: gom_data, leads: gom_leads },
+  'ko': { auth: ko_auth, common: ko_common, data: ko_data, leads: ko_leads },
+  'kri': { auth: kri_auth, common: kri_common, data: kri_data, leads: kri_leads },
+  'ku': { auth: ku_auth, common: ku_common, data: ku_data, leads: ku_leads },
+  'ckb': { auth: ckb_auth, common: ckb_common, data: ckb_data, leads: ckb_leads },
+  'ky': { auth: ky_auth, common: ky_common, data: ky_data, leads: ky_leads },
+  'lo': { auth: lo_auth, common: lo_common, data: lo_data, leads: lo_leads },
+  'ltg': { auth: ltg_auth, common: ltg_common, data: ltg_data, leads: ltg_leads },
+  'la': { auth: la_auth, common: la_common, data: la_data, leads: la_leads },
+  'lv': { auth: lv_auth, common: lv_common, data: lv_data, leads: lv_leads },
+  'lij': { auth: lij_auth, common: lij_common, data: lij_data, leads: lij_leads },
+  'li': { auth: li_auth, common: li_common, data: li_data, leads: li_leads },
+  'ln': { auth: ln_auth, common: ln_common, data: ln_data, leads: ln_leads },
+  'lt': { auth: lt_auth, common: lt_common, data: lt_data, leads: lt_leads },
+  'lmo': { auth: lmo_auth, common: lmo_common, data: lmo_data, leads: lmo_leads },
+  'lg': { auth: lg_auth, common: lg_common, data: lg_data, leads: lg_leads },
+  'luo': { auth: luo_auth, common: luo_common, data: luo_data, leads: luo_leads },
+  'lb': { auth: lb_auth, common: lb_common, data: lb_data, leads: lb_leads },
+  'mk': { auth: mk_auth, common: mk_common, data: mk_data, leads: mk_leads },
+  'mad': { auth: mad_auth, common: mad_common, data: mad_data, leads: mad_leads },
+  'mai': { auth: mai_auth, common: mai_common, data: mai_data, leads: mai_leads },
+  'mak': { auth: mak_auth, common: mak_common, data: mak_data, leads: mak_leads },
+  'mg': { auth: mg_auth, common: mg_common, data: mg_data, leads: mg_leads },
+  'ms': { auth: ms_auth, common: ms_common, data: ms_data, leads: ms_leads },
+  'ms-Arab': { auth: ms_Arab_auth, common: ms_Arab_common, data: ms_Arab_data, leads: ms_Arab_leads },
+  'ml': { auth: ml_auth, common: ml_common, data: ml_data, leads: ml_leads },
+  'mt': { auth: mt_auth, common: mt_common, data: mt_data, leads: mt_leads },
+  'mam': { auth: mam_auth, common: mam_common, data: mam_data, leads: mam_leads },
+  'gv': { auth: gv_auth, common: gv_common, data: gv_data, leads: gv_leads },
+  'mi': { auth: mi_auth, common: mi_common, data: mi_data, leads: mi_leads },
+  'mr': { auth: mr_auth, common: mr_common, data: mr_data, leads: mr_leads },
+  'mh': { auth: mh_auth, common: mh_common, data: mh_data, leads: mh_leads },
+  'mwr': { auth: mwr_auth, common: mwr_common, data: mwr_data, leads: mwr_leads },
+  'mfe': { auth: mfe_auth, common: mfe_common, data: mfe_data, leads: mfe_leads },
+  'chm': { auth: chm_auth, common: chm_common, data: chm_data, leads: chm_leads },
+  'mni-Mtei': { auth: mni_Mtei_auth, common: mni_Mtei_common, data: mni_Mtei_data, leads: mni_Mtei_leads },
+  'min': { auth: min_auth, common: min_common, data: min_data, leads: min_leads },
+  'lus': { auth: lus_auth, common: lus_common, data: lus_data, leads: lus_leads },
+  'mn': { auth: mn_auth, common: mn_common, data: mn_data, leads: mn_leads },
+  'my': { auth: my_auth, common: my_common, data: my_data, leads: my_leads },
+  'nhe': { auth: nhe_auth, common: nhe_common, data: nhe_data, leads: nhe_leads },
+  'ndc-ZW': { auth: ndc_ZW_auth, common: ndc_ZW_common, data: ndc_ZW_data, leads: ndc_ZW_leads },
+  'nr': { auth: nr_auth, common: nr_common, data: nr_data, leads: nr_leads },
+  'new': { auth: new_auth, common: new_common, data: new_data, leads: new_leads },
+  'ne': { auth: ne_auth, common: ne_common, data: ne_data, leads: ne_leads },
+  'bm-Nkoo': { auth: bm_Nkoo_auth, common: bm_Nkoo_common, data: bm_Nkoo_data, leads: bm_Nkoo_leads },
+  'no': { auth: no_auth, common: no_common, data: no_data, leads: no_leads },
+  'nus': { auth: nus_auth, common: nus_common, data: nus_data, leads: nus_leads },
+  'oc': { auth: oc_auth, common: oc_common, data: oc_data, leads: oc_leads },
+  'or': { auth: or_auth, common: or_common, data: or_data, leads: or_leads },
+  'om': { auth: om_auth, common: om_common, data: om_data, leads: om_leads },
+  'os': { auth: os_auth, common: os_common, data: os_data, leads: os_leads },
+  'pag': { auth: pag_auth, common: pag_common, data: pag_data, leads: pag_leads },
+  'pap': { auth: pap_auth, common: pap_common, data: pap_data, leads: pap_leads },
+  'ps': { auth: ps_auth, common: ps_common, data: ps_data, leads: ps_leads },
+  'fa': { auth: fa_auth, common: fa_common, data: fa_data, leads: fa_leads },
+  'pl': { auth: pl_auth, common: pl_common, data: pl_data, leads: pl_leads },
+  'pt': { auth: pt_auth, common: pt_common, data: pt_data, leads: pt_leads },
+  'pt-PT': { auth: pt_PT_auth, common: pt_PT_common, data: pt_PT_data, leads: pt_PT_leads },
+  'pa': { auth: pa_auth, common: pa_common, data: pa_data, leads: pa_leads },
+  'pa-Arab': { auth: pa_Arab_auth, common: pa_Arab_common, data: pa_Arab_data, leads: pa_Arab_leads },
+  'qu': { auth: qu_auth, common: qu_common, data: qu_data, leads: qu_leads },
+  'kek': { auth: kek_auth, common: kek_common, data: kek_data, leads: kek_leads },
+  'rom': { auth: rom_auth, common: rom_common, data: rom_data, leads: rom_leads },
+  'ro': { auth: ro_auth, common: ro_common, data: ro_data, leads: ro_leads },
+  'rn': { auth: rn_auth, common: rn_common, data: rn_data, leads: rn_leads },
+  'ru': { auth: ru_auth, common: ru_common, data: ru_data, leads: ru_leads },
+  'se': { auth: se_auth, common: se_common, data: se_data, leads: se_leads },
+  'sm': { auth: sm_auth, common: sm_common, data: sm_data, leads: sm_leads },
+  'sg': { auth: sg_auth, common: sg_common, data: sg_data, leads: sg_leads },
+  'sa': { auth: sa_auth, common: sa_common, data: sa_data, leads: sa_leads },
+  'sat-Latn': { auth: sat_Latn_auth, common: sat_Latn_common, data: sat_Latn_data, leads: sat_Latn_leads },
+  'sat': { auth: sat_auth, common: sat_common, data: sat_data, leads: sat_leads },
+  'gd': { auth: gd_auth, common: gd_common, data: gd_data, leads: gd_leads },
+  'nso': { auth: nso_auth, common: nso_common, data: nso_data, leads: nso_leads },
+  'sr': { auth: sr_auth, common: sr_common, data: sr_data, leads: sr_leads },
+  'st': { auth: st_auth, common: st_common, data: st_data, leads: st_leads },
+  'crs': { auth: crs_auth, common: crs_common, data: crs_data, leads: crs_leads },
+  'shn': { auth: shn_auth, common: shn_common, data: shn_data, leads: shn_leads },
+  'sn': { auth: sn_auth, common: sn_common, data: sn_data, leads: sn_leads },
+  'scn': { auth: scn_auth, common: scn_common, data: scn_data, leads: scn_leads },
+  'szl': { auth: szl_auth, common: szl_common, data: szl_data, leads: szl_leads },
+  'sd': { auth: sd_auth, common: sd_common, data: sd_data, leads: sd_leads },
+  'si': { auth: si_auth, common: si_common, data: si_data, leads: si_leads },
+  'sk': { auth: sk_auth, common: sk_common, data: sk_data, leads: sk_leads },
+  'sl': { auth: sl_auth, common: sl_common, data: sl_data, leads: sl_leads },
+  'so': { auth: so_auth, common: so_common, data: so_data, leads: so_leads },
+  'es': { auth: es_auth, common: es_common, data: es_data, leads: es_leads },
+  'su': { auth: su_auth, common: su_common, data: su_data, leads: su_leads },
+  'sus': { auth: sus_auth, common: sus_common, data: sus_data, leads: sus_leads },
+  'sw': { auth: sw_auth, common: sw_common, data: sw_data, leads: sw_leads },
+  'ss': { auth: ss_auth, common: ss_common, data: ss_data, leads: ss_leads },
+  'sv': { auth: sv_auth, common: sv_common, data: sv_data, leads: sv_leads },
+  'ty': { auth: ty_auth, common: ty_common, data: ty_data, leads: ty_leads },
+  'tg': { auth: tg_auth, common: tg_common, data: tg_data, leads: tg_leads },
+  'ber-Latn': { auth: ber_Latn_auth, common: ber_Latn_common, data: ber_Latn_data, leads: ber_Latn_leads },
+  'ber': { auth: ber_auth, common: ber_common, data: ber_data, leads: ber_leads },
+  'tt': { auth: tt_auth, common: tt_common, data: tt_data, leads: tt_leads },
+  'te': { auth: te_auth, common: te_common, data: te_data, leads: te_leads },
+  'tet': { auth: tet_auth, common: tet_common, data: tet_data, leads: tet_leads },
+  'th': { auth: th_auth, common: th_common, data: th_data, leads: th_leads },
+  'bo': { auth: bo_auth, common: bo_common, data: bo_data, leads: bo_leads },
+  'ti': { auth: ti_auth, common: ti_common, data: ti_data, leads: ti_leads },
+  'tiv': { auth: tiv_auth, common: tiv_common, data: tiv_data, leads: tiv_leads },
+  'tpi': { auth: tpi_auth, common: tpi_common, data: tpi_data, leads: tpi_leads },
+  'to': { auth: to_auth, common: to_common, data: to_data, leads: to_leads },
+  'lua': { auth: lua_auth, common: lua_common, data: lua_data, leads: lua_leads },
+  'ts': { auth: ts_auth, common: ts_common, data: ts_data, leads: ts_leads },
+  'tn': { auth: tn_auth, common: tn_common, data: tn_data, leads: tn_leads },
+  'tcy': { auth: tcy_auth, common: tcy_common, data: tcy_data, leads: tcy_leads },
+  'tum': { auth: tum_auth, common: tum_common, data: tum_data, leads: tum_leads },
+  'tr': { auth: tr_auth, common: tr_common, data: tr_data, leads: tr_leads },
+  'tk': { auth: tk_auth, common: tk_common, data: tk_data, leads: tk_leads },
+  'tyv': { auth: tyv_auth, common: tyv_common, data: tyv_data, leads: tyv_leads },
+  'ak': { auth: ak_auth, common: ak_common, data: ak_data, leads: ak_leads },
+  'udm': { auth: udm_auth, common: udm_common, data: udm_data, leads: udm_leads },
+  'uk': { auth: uk_auth, common: uk_common, data: uk_data, leads: uk_leads },
+  'ur': { auth: ur_auth, common: ur_common, data: ur_data, leads: ur_leads },
+  'ug': { auth: ug_auth, common: ug_common, data: ug_data, leads: ug_leads },
+  'uz': { auth: uz_auth, common: uz_common, data: uz_data, leads: uz_leads },
+  've': { auth: ve_auth, common: ve_common, data: ve_data, leads: ve_leads },
+  'vec': { auth: vec_auth, common: vec_common, data: vec_data, leads: vec_leads },
+  'vi': { auth: vi_auth, common: vi_common, data: vi_data, leads: vi_leads },
+  'war': { auth: war_auth, common: war_common, data: war_data, leads: war_leads },
+  'cy': { auth: cy_auth, common: cy_common, data: cy_data, leads: cy_leads },
+  'wo': { auth: wo_auth, common: wo_common, data: wo_data, leads: wo_leads },
+  'xh': { auth: xh_auth, common: xh_common, data: xh_data, leads: xh_leads },
+  'sah': { auth: sah_auth, common: sah_common, data: sah_data, leads: sah_leads },
+  'yi': { auth: yi_auth, common: yi_common, data: yi_data, leads: yi_leads },
+  'yo': { auth: yo_auth, common: yo_common, data: yo_data, leads: yo_leads },
+  'yua': { auth: yua_auth, common: yua_common, data: yua_data, leads: yua_leads },
+  'zap': { auth: zap_auth, common: zap_common, data: zap_data, leads: zap_leads },
+  'zu': { auth: zu_auth, common: zu_common, data: zu_data, leads: zu_leads },
 };
 
 export const NAMESPACES = ["auth","common","data","leads"];

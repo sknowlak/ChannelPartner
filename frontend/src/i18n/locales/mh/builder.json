@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Builder Portal",
+    "referrals": "Ritōl ro",
+    "builderLogin": "Builder Login",
+    "partnerLogin": "Channel Partner Login"
+  },
+  "login": {
+    "title": "Ri kalōk eo ej sign in",
+    "hint": "Builder account ko rej kōmmane jen Leadrat . Kajjitōk ippān ritōl eo am̧ eļan̄n̄e ejjeļo̧k am̧."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Kōttar am pepe",
+    "ACCEPTED": "Emōj an bōk",
+    "REJECTED": "kar jolok"
+  },
+  "list": {
+    "title": "Ritōl ro",
+    "allProjects": "Aolep jerbal ko",
+    "allStatuses": "Aolep jekjek ko",
+    "count_one": "{{count}} referral",
+    "count_other": "{{count}} referrals",
+    "columns": {
+      "referral": "Referral",
+      "customer": "Riwia",
+      "project": "Burojeek",
+      "sourcePartner": "Rijerbal in Jikin",
+      "status": "Jōñan",
+      "booking": "Booking",
+      "registered": "Rejista"
+    },
+    "booked": "Booked",
+    "empty": "Ejelok armij ro rej jilkintok kiõ."
+  },
+  "detail": {
+    "customer": "Riwia",
+    "sourcePartner": "Rijerbal in Jikin",
+    "attributionNote": "(attribution - ejjab maroñ in oktak)",
+    "leadStatus": "Jekjek in tōl",
+    "protectedUntil": "Kōjparok mae",
+    "referral": "Referral",
+    "reason": "Un: {{reason}}",
+    "booking": "Booking",
+    "bookedOwner": "Booked - kwe eo ej bōk eddo in jerbal eo",
+    "notBooked": "Ejelok book",
+    "sharedAfterBooking": "Kar kwalok elikin an kar book e",
+    "accept": "Bōk Referral",
+    "confirmBooking": "Kamool am Booking",
+    "reject": "Reject Referral",
+    "rejectReasonLabel": "Unin an kar bōjrak (kwalok ñan eo mōttam) *",
+    "rejectConfirm": "Jab bōke",
+    "confirmBookingPrompt": "Kōmeļeļeik booking eo? Operational ownership ej etal ñan kwe im partner eo ej maroñ in bōk commission.",
+    "notice": {
+      "booked": "Booking emoj kamool.",
+      "accepted": "Referral kar bōk.",
+      "rejected": "Referral eo ejjelok."
+    },
+    "backToReferrals": "Bar jeblak ñan Referral ko"
+  },
+  "history": {
+    "title": "Melele ko maanlok",
+    "actor": {
+      "system": "Kein jerbal",
+      "partner": "Channel partner",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Rijikuul in ripālele eo emoj bōke",
+      "DUPLICATE_CHECK_COMPLETED": "Eṃōj dedeḷọk lale bar juon alen - ejjeḷọk bar juon alen ej jerbal",
+      "REGISTRATION_ACCEPTED": "Registration emoj bōke",
+      "PROTECTION_GRANTED_one": "{{count}} -day protection kar lelok",
+      "PROTECTION_GRANTED_other": "{{count}} -day protection kar lelok",
+      "STAGE_UPDATED": "Jekjek in kar kōkāāl ñan {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Kar kōkāāl {{count}} field eo",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} field ko kar kōkāāl",
+      "LEAD_ASSIGNED": "Kar lelok ñan {{name}}",
+      "LEAD_UNASSIGNED": "Ejelok lelok",
+      "REFERRAL_ACCEPTED": "Ri kalōk eo ear bōk referral eo",
+      "REFERRAL_REJECTED": "Builder eo ear jolok referral eo. Un: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Bar juon alen an {{partner}} kar bōjrak",
+      "BOOKING_COMPLETED": "Booking eo emōj an dedelok",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Jerbal in jerbal eo emoj lelok ñan ri kalōk",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partner attribution kar kōjparok",
+      "COMMISSION_ELIGIBILITY_CREATED": "Commission eligibility kar kōmmane",
+      "HANDOVER_COMPLETED": "Eṃōj kadedeḷọk leḷọk",
+      "ADMIN_PROTECTION_RELEASED": "Admin ear kōtlok kein kōjparok ko ruo ilo ien eo mokta. Un: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin ear bar lelok registration jen {{from}} ñan {{to}} . Un: {{reason}}"
+    }
+  }
+}

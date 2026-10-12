@@ -1,0 +1,83 @@
+{
+  "title": "Team verwalten",
+  "tabs": {
+    "members": "Teammitglieder",
+    "roles": "Rollen und Berechtigungen",
+    "profile": "Mein Profil"
+  },
+  "roles": {
+    "owner": "Eigentümer",
+    "member": "Teammitglied"
+  },
+  "profile": {
+    "updated": "Profil aktualisiert.",
+    "basicInfo": "Grundlegende Informationen",
+    "organisationInfo": "Informationen zur Organisation",
+    "preferences": "Präferenzen",
+    "companyName": "Firmen-/Organisationsname",
+    "city": "Stadt",
+    "state": "Zustand",
+    "currencyHelp": "Wird verwendet, um Budgets und Buchungswerte in Ihrem gesamten Team anzuzeigen.",
+    "useDeviceTimezone": "Gerätezeitzone verwenden ( {{timezone}} )",
+    "securityRole": "Sicherheit und Rolle",
+    "newPassword": "Neues Passwort (leer lassen, um es unverändert zu lassen)",
+    "currentPassword": "Aktuelles Passwort",
+    "memberSince": "Mitglied seit",
+    "languageSaved": "Die in Ihrem Konto gespeicherte Sprache wird auf jedem Gerät verwendet, auf dem Sie sich anmelden."
+  },
+  "members": {
+    "intro": "Fügen Sie Personen in Ihrem Team hinzu, bearbeiten, deaktivieren oder entfernen Sie sie – sie haben gemeinsam Zugriff auf dieselben Leads.",
+    "noPermission": "Sie sind nicht berechtigt, Teammitglieder hinzuzufügen, zu bearbeiten oder zu entfernen.",
+    "addNew": "+ Neuen Benutzer hinzufügen",
+    "passwordLabel": "{{label}} (mindestens 8 Zeichen)",
+    "rolePermissions": "Rolle und Berechtigungen",
+    "adding": "Hinzufügen...",
+    "addMember": "Teammitglied hinzufügen",
+    "tabAll": "Alle ( {{count}} )",
+    "tabActive": "Aktiv ( {{count}} )",
+    "tabInactive": "Inaktiv ( {{count}} )",
+    "searchPlaceholder": "Suchname oder Benutzername...",
+    "allTimezones": "Alle Zeitzonen",
+    "perPage": "Einträge pro Seite",
+    "contact": "Kontakt",
+    "added": "Hinzugefügt",
+    "toggleActive": "Aktiv – Klicken Sie zum Deaktivieren",
+    "toggleInactive": "Inaktiv – zum Aktivieren klicken",
+    "empty": "Noch keine Teammitglieder.",
+    "noMatch": "Kein Teammitglied entspricht diesen Filtern.",
+    "showing": "Es werden {{from}} - {{to}} von {{total}} Einträgen angezeigt",
+    "firstPage": "Erste Seite",
+    "previousPage": "Vorherige Seite",
+    "nextPage": "Nächste Seite",
+    "lastPage": "Letzte Seite"
+  },
+  "editMember": {
+    "title": "Benutzer bearbeiten",
+    "noPermission": "Sie sind nicht berechtigt, Teammitglieder zu bearbeiten.",
+    "backToTeam": "Zurück zum Team",
+    "cantChangeOwn": "Sie können Ihre eigene Rolle oder Ihren Status nicht ändern.",
+    "needsManageRoles": "Zum Ändern der Rolle eines Mitglieds ist die Berechtigung „Rollen verwalten“ erforderlich.",
+    "addedBy": "Hinzugefügt von",
+    "addedOn": "Hinzugefügt"
+  },
+  "rolesPage": {
+    "intro": "Super Admin, Admin und Manager sind integriert und können nicht geändert werden – erstellen Sie für alles andere eine benutzerdefinierte Rolle.",
+    "noPermission": "Sie sind nicht berechtigt, Rollen zu verwalten.",
+    "createCustom": "+ Erstellen Sie eine benutzerdefinierte Rolle",
+    "roleName": "Rollenname",
+    "permissions": "Berechtigungen",
+    "members": "Mitglieder",
+    "creating": "Erstellen...",
+    "createRole": "Rolle erstellen",
+    "systemRole": "Systemrolle",
+    "builtIn": "Eingebaut",
+    "empty": "Noch keine Rollen."
+  },
+  "permissions": {
+    "MANAGE_LEADS": "Leads verwalten (erstellen, vorantreiben, buchen)",
+    "MANAGE_TEAM": "Team verwalten (Mitglieder hinzufügen, bearbeiten, entfernen)",
+    "MANAGE_ROLES": "Rollen und Berechtigungen verwalten",
+    "MANAGE_SETTINGS": "Einstellungen verwalten (Lead-Formularfelder)",
+    "none": "Keine Berechtigungen"
+  }
+}

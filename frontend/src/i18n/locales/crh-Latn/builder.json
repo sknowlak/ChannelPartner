@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Qurucılar portalı",
+    "referrals": "Yollanmalar",
+    "builderLogin": "Qurucınıñ kirişi",
+    "partnerLogin": "Kanalnıñ şerikçisi kiriş"
+  },
+  "login": {
+    "title": "Qurucı kiriş",
+    "hint": "Qurucılarnıñ esapları Leadrat tarafından yaratıla . Eger sizde yoq olsa, administratorıñızdan sorañ."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Siziñ qararıñıznı bekleyim",
+    "ACCEPTED": "Qabul etildi",
+    "REJECTED": "Red etildi"
+  },
+  "list": {
+    "title": "Yollanmalar",
+    "allProjects": "Bütün leyhalar",
+    "allStatuses": "Bütün statuslar",
+    "count_one": "{{count}} yollanma",
+    "count_other": "{{count}} yollanmalar",
+    "columns": {
+      "referral": "Yollanma",
+      "customer": "Müşteri",
+      "project": "Leyha",
+      "sourcePartner": "Menba Ortak",
+      "status": "Vaziyet",
+      "booking": "Bronirovaniye",
+      "registered": "Qayd etilgen"
+    },
+    "booked": "Bron yapıldı",
+    "empty": "Alâ daa yollanmalar yoq."
+  },
+  "detail": {
+    "customer": "Müşteri",
+    "sourcePartner": "Menba Ortak",
+    "attributionNote": "(atributsiya - deñiştirilmez)",
+    "leadStatus": "Qurşun statusı",
+    "protectedUntil": "2014 senesine qadar qorçalanğan",
+    "referral": "Yollanma",
+    "reason": "Sebebi: {{reason}}",
+    "booking": "Bronirovaniye",
+    "bookedOwner": "Bronirovannıy - sen operativ saibiñ",
+    "notBooked": "Bron yapılmadı",
+    "sharedAfterBooking": "Bronirovaniyeden soñ paylaşıldı",
+    "accept": "Referalnı qabul etiñiz",
+    "confirmBooking": "Bronirovaniyeni tasdıqla",
+    "reject": "Yollanmanı red etmek",
+    "rejectReasonLabel": "Red etmekniñ sebebi (ortaqqa kösterile) * .",
+    "rejectConfirm": "Red etmek",
+    "confirmBookingPrompt": "Bronirovaniyeni tasdıqlamaq kerekmi? Operativ saiplik sizge keçe ve şerik komissiyağa lâyıq ola.",
+    "notice": {
+      "booked": "Bronirovaniye tasdıqlandı.",
+      "accepted": "Referat qabul etildi.",
+      "rejected": "Referat red etildi."
+    },
+    "backToReferrals": "Referallarğa qaytmaq"
+  },
+  "history": {
+    "title": "Tarih",
+    "actor": {
+      "system": "Tertibat",
+      "partner": "Kanalnıñ şerikçisi",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Ortak yazıluv keldi",
+      "DUPLICATE_CHECK_COMPLETED": "Dublikatı teşkerüv bitirildi - faal dublikatı tapılmadı",
+      "REGISTRATION_ACCEPTED": "Registratsiya qabul etildi",
+      "PROTECTION_GRANTED_one": "{{count}} -kündüz qorçalav berildi",
+      "PROTECTION_GRANTED_other": "{{count}} -kündüz qorçalav berildi",
+      "STAGE_UPDATED": "Status {{stage}} olaraq yañılandı",
+      "LEAD_DETAILS_UPDATED_one": "Yañılanğan {{count}} meydançığı",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} meydançıqları yañılandı",
+      "LEAD_ASSIGNED": "{{name}} -ge tayinlendi",
+      "LEAD_UNASSIGNED": "Tayinlenmegen",
+      "REFERRAL_ACCEPTED": "Qurucı yollanmanı qabul etti",
+      "REFERRAL_REJECTED": "Qurucı yollanmanı red etti. Sebebi: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} tarafından tekrarlanğan yazıluv tırışması red etildi",
+      "BOOKING_COMPLETED": "Bronirovaniye bitti",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operativ mülk Qurucığa berildi",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Ortak atributsiyası saqlandı",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komissiyanıñ aqqı yaratıldı",
+      "HANDOVER_COMPLETED": "Tapşıruv bitti",
+      "ADMIN_PROTECTION_RELEASED": "Admin dublikatı qorçalavnı erte çıqardı. Sebebi: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin yazıluvnı {{from}} den {{to}} ge yañıdan tayinledi. Sebebi: {{reason}}"
+    }
+  }
+}

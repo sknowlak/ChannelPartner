@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "सेटिंग्ज",
+    "noPermission": "तुम्हाला सेटिंग्ज व्यवस्थापित करण्याची परवानगी नाही."
+  },
+  "categories": {
+    "lead": "आघाडी",
+    "user": "वापरकर्ता",
+    "integrations": "एकत्रीकरण"
+  },
+  "leadTabs": {
+    "fields": "फील्ड",
+    "statuses": "स्थिती आणि उप-स्थिती",
+    "notifications": "सूचना आणि शेड्युलर"
+  },
+  "fields": {
+    "leadIntro": "लीड कॅप्चर फॉर्म कॉन्फिगर करा: फील्ड सक्षम/अक्षम करा, त्यांना आवश्यक चिन्हांकित करा किंवा तुमची स्वतःची सानुकूल फील्ड जोडा.",
+    "userIntro": "कार्यसंघ सदस्य जोडा/संपादित करा फॉर्म कॉन्फिगर करा: फील्ड सक्षम/अक्षम करा, त्यांना आवश्यक चिन्हांकित करा किंवा तुमची स्वतःची सानुकूल फील्ड जोडा.",
+    "addCustomField": "+ सानुकूल फील्ड जोडा",
+    "fieldLabel": "फील्ड लेबल",
+    "group": "गट",
+    "groupPlaceholderLead": "उदा. चौकशी माहिती",
+    "groupPlaceholderUser": "उदा अतिरिक्त तपशील",
+    "dataType": "डेटा प्रकार",
+    "options": "पर्याय (स्वल्पविरामाने विभक्त)",
+    "requiredLead": "आवश्यक आहे - आघाडीची नोंदणी करण्यासाठी तुमच्या टीममधील भागीदारांनी हे भरणे आवश्यक आहे",
+    "requiredUser": "आवश्यक - कार्यसंघ सदस्य जोडताना भरणे आवश्यक आहे",
+    "creating": "तयार करत आहे...",
+    "createField": "फील्ड तयार करा",
+    "columns": {
+      "field": "फील्ड",
+      "group": "गट",
+      "type": "प्रकार",
+      "required": "आवश्यक आहे",
+      "enabled": "सक्षम केले",
+      "kind": "दयाळू"
+    },
+    "kind": {
+      "custom": "सानुकूल",
+      "core": "कोर (लॉक केलेले)",
+      "standard": "मानक"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "मजकूर",
+    "TEXTAREA": "लांब मजकूर",
+    "NUMBER": "क्रमांक",
+    "CURRENCY": "चलन",
+    "DATE": "तारीख",
+    "SELECT": "ड्रॉपडाउन",
+    "LIST": "यादी"
+  },
+  "picker": {
+    "searchPlaceholder": "लीड फील्ड शोधा...",
+    "summary": "{{shown}} दाखवले · {{mandatory}} अनिवार्य",
+    "mandatory": "अनिवार्य",
+    "noMatch": "कोणतेही फील्ड जुळत नाहीत."
+  },
+  "statuses": {
+    "intro": "तुमची लीड स्थिती आणि उप-स्थिती - जेव्हा कोणी लीड अपडेट करते तेव्हा प्रत्येकजण काय विचारतो (तारीख आणि वेळ, लीड फील्ड).",
+    "add": "+ स्थिती जोडा",
+    "columns": {
+      "order": "ऑर्डर करा",
+      "status": "स्थिती",
+      "subStatuses": "उप-स्थिती",
+      "asksFor": "साठी विचारतो",
+      "active": "सक्रिय"
+    },
+    "moveUp": "वर हलवा",
+    "moveDown": "खाली हलवा",
+    "defaultBadge": "नवीन लीडसाठी डीफॉल्ट",
+    "bookingBadge": "बुकिंग स्थिती",
+    "asksForLabel": "{{label}} साठी विचारतो",
+    "asksForDateTime": "तारीख आणि वेळ विचारतो",
+    "none": "काहीही नाही",
+    "dateTime": "तारीख आणि वेळ",
+    "scheduledOn": "{{names}}",
+    "fieldsSummary_one": "{{count}} फील्ड ( {{mandatory}} अनिवार्य)",
+    "fieldsSummary_other": "{{count}} फील्ड ( {{mandatory}} अनिवार्य)",
+    "deleteConfirm": "\" {{name}} \" स्थिती हटवायची? हे पूर्ववत केले जाऊ शकत नाही.",
+    "editTitle": "स्थिती संपादित करा - {{name}}",
+    "newTitle": "नवीन स्थिती",
+    "name": "स्थितीचे नाव",
+    "colour": "रंग",
+    "active": "सक्रिय",
+    "isDefault": "नवीन लीडसाठी डीफॉल्ट स्थिती",
+    "isBooking": "बुकिंग स्थिती (पूर्ण बुकिंगद्वारे सेट)",
+    "whenMoved": "जेव्हा लीड या स्थितीत हलवली जाते",
+    "askSchedule": "तारीख आणि वेळ विचारा (शेड्युलर)",
+    "scheduleLabelPlaceholder": "लेबल, उदा. येथे भेट द्या",
+    "fieldsToShow": "अपडेट फॉर्मवर दाखवण्यासाठी लीड फील्ड",
+    "subStatusesTitle": "उप-स्थिती",
+    "subStatusesHint": "प्रत्येक उप-स्थिती स्वतःची तारीख आणि वेळ विचारू शकते आणि स्वतःची फील्ड जोडू शकते - वरील स्थितीच्या फील्डच्या शीर्षस्थानी दर्शविली आहे.",
+    "subStatusName": "उप-स्थितीचे नाव",
+    "subFields": "फील्ड ( {{count}} )",
+    "subScheduleLabelPlaceholder": "तारीख आणि वेळ लेबल, उदा येथे परत कॉल करा",
+    "addSubStatus": "+ उप-स्थिती जोडा",
+    "saveStatus": "स्थिती जतन करा",
+    "createStatus": "स्थिती तयार करा"
+  },
+  "notifications": {
+    "intro": "जेव्हा लीड स्थितीत पोहोचते तेव्हा योग्य लोकांना सूचित करा - ताबडतोब, किंवा त्यावर शेड्यूल केलेल्या तारीख आणि वेळेच्या आधी/नंतरची वेळ.",
+    "add": "+ सूचना जोडा",
+    "columns": {
+      "notification": "सूचना",
+      "whenStatusIs": "जेव्हा स्थिती असते",
+      "sends": "पाठवतो",
+      "to": "ला",
+      "via": "मार्गे",
+      "enabled": "सक्षम केले"
+    },
+    "anyStatus": "कोणतीही स्थिती",
+    "anySubStatus": "कोणतीही उप-स्थिती",
+    "inactiveOption": "{{name}} (निष्क्रिय)",
+    "emptyRules": "अद्याप कोणत्याही सूचना नाहीत - जेव्हा लीड स्थितीत पोहोचते तेव्हा तुमच्या टीमला अलर्ट करण्यासाठी एक जोडा.",
+    "jobs": {
+      "title": "अनुसूचित आणि पाठविले",
+      "firesAt": "येथे आग",
+      "notification": "सूचना",
+      "lead": "आघाडी",
+      "status": "स्थिती",
+      "details": "तपशील",
+      "empty": "अद्याप काहीही शेड्यूल केलेले किंवा पाठवलेले नाही.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "प्रलंबित",
+      "PROCESSING": "प्रक्रिया करत आहे",
+      "SENT": "पाठवले",
+      "FAILED": "अयशस्वी",
+      "SKIPPED": "वगळले",
+      "CANCELLED": "रद्द केले"
+    },
+    "deliveryStatus": {
+      "SENT": "पाठवले",
+      "FAILED": "अयशस्वी",
+      "SKIPPED": "वगळले"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ॲपमधील",
+      "EMAIL": "ईमेल",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "नियुक्त वापरकर्ता",
+      "owner": "मालक",
+      "updatedBy": "द्वारे अद्यतनित",
+      "role": "भूमिका: {{name}}"
+    },
+    "channels": {
+      "inApp": "ॲपमधील",
+      "email": "ईमेल",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "\" {{name}} \" सूचना हटवायची? त्यातून प्रलंबित स्मरणपत्रे रद्द केली आहेत.",
+    "testPrompt": "कोणता लीड ID वापरून या सूचनेची चाचणी स्वतःला (ॲपमधील) पाठवा?",
+    "testSent": "तुमच्या बेलवर पाठवले: {{title}} {{message}}",
+    "headersInvalid": "Webhook शीर्षलेख वैध JSON असणे आवश्यक आहे, उदा. {\"अधिकृतीकरण\": \"बेअरर xyz\"}",
+    "editTitle": "सूचना संपादित करा",
+    "newTitle": "नवीन सूचना",
+    "name": "नाव",
+    "namePlaceholder": "उदा. साइट भेट स्मरणपत्र",
+    "whenStatus": "जेव्हा लीडची स्थिती असते",
+    "subStatus": "उप-स्थिती",
+    "send": "पाठवा (शेड्युलर)",
+    "custom": "सानुकूल...",
+    "modeBefore": "नियोजित वेळेपूर्वी",
+    "modeAfter": "नियोजित वेळेनंतर",
+    "noScheduleWarning": "ही स्थिती तारीख आणि वेळ विचारत नाही, त्यामुळे \"नियोजित वेळेच्या आधी/वर/नंतर\" सूचना कधीही सुरू होणार नाही.",
+    "noScheduleFix": "स्थिती आणि उप-स्थिती अंतर्गत त्यासाठी <strong>तारीख आणि वेळ विचारा</strong> चालू करा किंवा लगेच पाठवा.",
+    "sendTo": "(कोणतेही संयोजन) वर पाठवा",
+    "recipientAssigned": "नियुक्त वापरकर्ता (मुख्य मालक)",
+    "recipientOwner": "खाते मालक / प्रशासक",
+    "recipientUpdatedBy": "स्थिती अपडेट केलेली व्यक्ती",
+    "everyoneWithRole": "प्रत्येकजण भूमिकासह",
+    "specificUsers": "विशिष्ट वापरकर्ते (सक्रिय)",
+    "inactiveNever": "निष्क्रिय वापरकर्ते कधीही सूचना प्राप्त करत नाहीत, जरी निवडले तरीही.",
+    "deliverVia": "द्वारे वितरित करा",
+    "channelInApp": "ॲपमधील (घंटा)",
+    "channelEmail": "ईमेल",
+    "channelWebhook": "Webhook ( WhatsApp / SMS प्रदाता)",
+    "emailHint": "ईमेल प्रत्येक प्राप्तकर्त्याच्या ईमेल पत्त्यावर जातो आणि सर्व्हरवर (backend/.env) SMTP सेट करणे आवश्यक आहे; तोपर्यंत ईमेल पाठवलेले वगळले म्हणून लॉग केले जातात.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "शीर्षलेख ( JSON )",
+    "content": "सूचना सामग्री",
+    "title": "शीर्षक",
+    "message": "संदेश",
+    "insertIntoTitle": "शीर्षक मध्ये घाला",
+    "insertIntoMessage": "संदेशात घाला",
+    "anyLeadField": "कोणतेही लीड फील्ड देखील कार्य करते, उदा. <code1>{{example1}}</code1> किंवा <code2>{{example2}}</code2> .",
+    "preview": "पूर्वावलोकन (नमुना आघाडी)",
+    "enabled": "सक्षम केले",
+    "saveRule": "सूचना जतन करा",
+    "createRule": "सूचना तयार करा",
+    "variables": {
+      "customerName": "आघाडीचे नाव",
+      "customerMobile": "लीड मोबाईल",
+      "customerEmail": "लीड ईमेल",
+      "registrationId": "लीड ID",
+      "status": "स्थिती",
+      "subStatus": "उप-स्थिती",
+      "scheduleAt": "नियोजित तारीख आणि वेळ",
+      "assignedTo": "नियुक्त वापरकर्ता",
+      "updatedBy": "द्वारे अद्यतनित",
+      "recipient": "प्राप्तकर्त्याचे नाव",
+      "project": "प्रकल्प",
+      "notes": "नवीनतम टीप",
+      "partner": "भागीदाराचे नाव"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "स्थिती सेट केल्यावर लगेच",
+      "AT": "नियोजित वेळी",
+      "A1D": "नियोजित वेळेनंतर 1 दिवस (फॉलो-अप तपासणी)"
+    },
+    "immediately": "लगेच",
+    "atScheduled": "नियोजित वेळी",
+    "before": {
+      "MINUTES_one": "नियोजित वेळेच्या {{count}} मिनिटे आधी",
+      "MINUTES_other": "नियोजित वेळेपूर्वी {{count}} मिनिटे",
+      "HOURS_one": "नियोजित वेळेच्या {{count}} तास आधी",
+      "HOURS_other": "नियोजित वेळेच्या {{count}} तास आधी",
+      "DAYS_one": "नियोजित वेळेच्या {{count}} दिवस आधी",
+      "DAYS_other": "नियोजित वेळेच्या {{count}} दिवस आधी",
+      "WEEKS_one": "नियोजित वेळेच्या {{count}} आठवडा आधी",
+      "WEEKS_other": "नियोजित वेळेच्या {{count}} आठवडे आधी",
+      "MONTHS_one": "नियोजित वेळेपूर्वी {{count}} महिना",
+      "MONTHS_other": "नियोजित वेळेच्या {{count}} महिने आधी",
+      "YEARS_one": "नियोजित वेळेच्या {{count}} वर्ष आधी",
+      "YEARS_other": "नियोजित वेळेच्या {{count}} वर्षे आधी"
+    },
+    "after": {
+      "MINUTES_one": "नियोजित वेळेनंतर {{count}} मिनिटे",
+      "MINUTES_other": "नियोजित वेळेनंतर {{count}} मिनिटे",
+      "HOURS_one": "नियोजित वेळेनंतर {{count}} तास",
+      "HOURS_other": "नियोजित वेळेनंतर {{count}} तास",
+      "DAYS_one": "नियोजित वेळेनंतर {{count}} दिवस",
+      "DAYS_other": "नियोजित वेळेनंतर {{count}} दिवस",
+      "WEEKS_one": "नियोजित वेळेनंतर {{count}} आठवडा",
+      "WEEKS_other": "नियोजित वेळेनंतर {{count}} आठवडे",
+      "MONTHS_one": "नियोजित वेळेनंतर {{count}} महिना",
+      "MONTHS_other": "नियोजित वेळेनंतर {{count}} महिने",
+      "YEARS_one": "नियोजित वेळेनंतर {{count}} वर्ष",
+      "YEARS_other": "नियोजित वेळेनंतर {{count}} वर्षे"
+    },
+    "units": {
+      "MINUTES_one": "मिनिट",
+      "MINUTES_other": "मिनिटे",
+      "HOURS_one": "तास",
+      "HOURS_other": "तास",
+      "DAYS_one": "दिवस",
+      "DAYS_other": "दिवस",
+      "WEEKS_one": "आठवडा",
+      "WEEKS_other": "आठवडे",
+      "MONTHS_one": "महिना",
+      "MONTHS_other": "महिने",
+      "YEARS_one": "वर्ष",
+      "YEARS_other": "वर्षे"
+    }
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Impostazions",
+    "noPermission": "No âs il permès di gjestî lis impostazions."
+  },
+  "categories": {
+    "lead": "Vuidâ",
+    "user": "Utent",
+    "integrations": "Integrazions"
+  },
+  "leadTabs": {
+    "fields": "Camps",
+    "statuses": "Stats e sot-stats",
+    "notifications": "Notificazions e programmadôrs"
+  },
+  "fields": {
+    "leadIntro": "Configurâ il formulâr di cjapade dai prospects: abilî/disabilitâ i cjamps, segnâju come necessaris, o zontâ i tôs cjamps personalizâts.",
+    "userIntro": "Configurâ il formulâr Azontâ/Modificâ membri dal grup: abilî/disabilitâ i cjamps, segnâju come necessaris, o zontâ i tôs cjamps personalizâts.",
+    "addCustomField": "+ Azontâ cjamp personalizât",
+    "fieldLabel": "Etichete dal cjamp",
+    "group": "Grup",
+    "groupPlaceholderLead": "par esempli Informazions su la domande",
+    "groupPlaceholderUser": "par esempli Detais adizionâi",
+    "dataType": "Tip di dâts",
+    "options": "Opzions (separadis di une virgule)",
+    "requiredLead": "Obietîf - i colaboradôrs dal vuestri grup a àn di compilâ chest par regjistrâ un prospect",
+    "requiredUser": "Obietîf - al à di jessi compilât cuant che si zonte un membri dal grup",
+    "creating": "Creâ...",
+    "createField": "Creâ cjamp",
+    "columns": {
+      "field": "Cjamp",
+      "group": "Grup",
+      "type": "Model",
+      "required": "Necessari",
+      "enabled": "Abilât",
+      "kind": "Zentîl"
+    },
+    "kind": {
+      "custom": "Personalizât",
+      "core": "Nucli (blocjât)",
+      "standard": "Nivel"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Test",
+    "TEXTAREA": "Test lunc",
+    "NUMBER": "Numar",
+    "CURRENCY": "Valude",
+    "DATE": "Date",
+    "SELECT": "Liste a scomenciament",
+    "LIST": "Liste"
+  },
+  "picker": {
+    "searchPlaceholder": "Cjamps di ricercje...",
+    "summary": "{{shown}} mostrât · {{mandatory}} obligatori",
+    "mandatory": "Obligatori",
+    "noMatch": "Nissun cjamp al corispuint."
+  },
+  "statuses": {
+    "intro": "I vôs status e sot-status dai leads - ce che ognidun al domande (une date e une ore, cjamps di lead) cuant che cualchidun al agjiorne un lead.",
+    "add": "+ Azontâ stât",
+    "columns": {
+      "order": "Ordin",
+      "status": "Stât",
+      "subStatuses": "Sot-stats",
+      "asksFor": "Al domande",
+      "active": "Atîf"
+    },
+    "moveUp": "Spostâsi sù",
+    "moveDown": "Spostâsi jù",
+    "defaultBadge": "Predefinît par gnûfs leads",
+    "bookingBadge": "Statût de prenotazion",
+    "asksForLabel": "Al domande {{label}}",
+    "asksForDateTime": "Al domande date e ore",
+    "none": "Nissun",
+    "dateTime": "Date e ore",
+    "scheduledOn": "su {{names}}",
+    "fieldsSummary_one": "Camp {{count}} ( {{mandatory}} obligatori)",
+    "fieldsSummary_other": "{{count}} cjamps ( {{mandatory}} obligatori)",
+    "deleteConfirm": "Elimina il stât \" {{name}} \"? Chest nol pues jessi disfat.",
+    "editTitle": "Modificâ il stât - {{name}}",
+    "newTitle": "Gnûf stât",
+    "name": "Nome dal stât",
+    "colour": "Colôr",
+    "active": "Atîf",
+    "isDefault": "Statût predefinît pai gnûfs leads",
+    "isBooking": "Statût de prenotazion (impostât di Prenotazion complete)",
+    "whenMoved": "Cuant che un prospect al è spostât in chest status",
+    "askSchedule": "Dumanda une date e une ore (programadôr)",
+    "scheduleLabelPlaceholder": "Etichete, par esempli Visite al",
+    "fieldsToShow": "Camps di protagonist par mostrâ sul formulâr di agjiornament",
+    "subStatusesTitle": "Sot-stats",
+    "subStatusesHint": "Ogni sot-status al pues domandâ la sô date e ore e zontâ i siei cjamps - mostrâts parsore dai cjamps dal status parsore.",
+    "subStatusName": "Nome dal sot-stât",
+    "subFields": "Camps ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Etichete di date e ore, par esempli Tornâ a telefonâ al",
+    "addSubStatus": "+ Azontâ sot-stât",
+    "saveStatus": "Salvâ stât",
+    "createStatus": "Creâ stât"
+  },
+  "notifications": {
+    "intro": "Notificâ lis personis justis cuant che un prospect al rive a un status - subit, o a un moment fiss prin/daspò de date e ore programadis su di lui.",
+    "add": "+ Azontâ notificazion",
+    "columns": {
+      "notification": "Notificazion",
+      "whenStatusIs": "Cuant che il stât al è",
+      "sends": "Mande",
+      "to": "A",
+      "via": "Vie",
+      "enabled": "Abilât"
+    },
+    "anyStatus": "Ogni status",
+    "anySubStatus": "Ogni sot-stât",
+    "inactiveOption": "{{name}} (inatîf)",
+    "emptyRules": "Ancjemò nissune notificazion - zontâ une par alertâ il to grup cuant che un prospect al rive a un status.",
+    "jobs": {
+      "title": "Programât e mandât",
+      "firesAt": "Incendiis A",
+      "notification": "Notificazion",
+      "lead": "Vuidâ",
+      "status": "Stât",
+      "details": "Detais",
+      "empty": "Ancjemò nuie programât o mandât.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Impastanât",
+      "PROCESSING": "Lavorazion",
+      "SENT": "Spedît",
+      "FAILED": "Falît",
+      "SKIPPED": "Saltât",
+      "CANCELLED": "Cancelât"
+    },
+    "deliveryStatus": {
+      "SENT": "spedît",
+      "FAILED": "falît",
+      "SKIPPED": "saltât"
+    },
+    "deliveryChannel": {
+      "IN_APP": "dentri de aplicazion",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Utent assegnât",
+      "owner": "Proprietari",
+      "updatedBy": "Atualizazion di",
+      "role": "Rûl: {{name}}"
+    },
+    "channels": {
+      "inApp": "Dentri de aplicazion",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Elimina la notificazion \" {{name}} \"? I ricuarts in cors a son cancelâts.",
+    "testPrompt": "Manda un test di cheste notificazion a te stes (in-app) doprant cuâl ID di lead ?",
+    "testSent": "Mandât al to cjampanili: {{title}} {{message}}",
+    "headersInvalid": "I intestazions Webhook a àn di jessi JSON valits , par esempli {\"Autorizazion\": \"Puartadôr xyz\"}",
+    "editTitle": "Modificâ la notificazion",
+    "newTitle": "Gnove notificazion",
+    "name": "Non",
+    "namePlaceholder": "par esempli ricuard di visite al sît",
+    "whenStatus": "Cuant che il status di un lead al è",
+    "subStatus": "Sot-stât",
+    "send": "Inviâ (programadôr)",
+    "custom": "Personalizât...",
+    "modeBefore": "prime dal timp programât",
+    "modeAfter": "dopo il timp programât",
+    "noScheduleWarning": "Chest status nol domande une date e une ore, cussì une notificazion \"prin/al/daspò l'ore programade\" e no vignarès mai fûr.",
+    "noScheduleFix": "Ative <strong>Domandi une date e une ore</strong> par chel sot Stats e Sot-Stâts, o inviâ subit.",
+    "sendTo": "Mandâ a (cualsisei cumbinazion)",
+    "recipientAssigned": "Utent assegnât (proprietari principâl)",
+    "recipientOwner": "Proprietari dal conto / aministradôr",
+    "recipientUpdatedBy": "Persone che e à gjornât il status",
+    "everyoneWithRole": "Ducj chei che a àn rûl",
+    "specificUsers": "Utents specifics (atîfs)",
+    "inactiveNever": "I utents inatîfs no ricevin mai notificazions, ancje se a son selezionâts.",
+    "deliverVia": "Consegnâ traviers",
+    "channelInApp": "Dentri de aplicazion (cjampanile)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( furnidôr WhatsApp / SMS )",
+    "emailHint": "L’email al va ae adresse di email di ogni destinatari e al à bisugne di SMTP configurât sul servidôr (backend/.env); fin che lis inviazions di email a son regjstradis come saltadis.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Intestazions ( JSON )",
+    "content": "Contignût de notificazion",
+    "title": "Titul",
+    "message": "Messaç",
+    "insertIntoTitle": "Inserî intal titul",
+    "insertIntoMessage": "Inserî intal Messaç",
+    "anyLeadField": "Ancje ogni cjamp di lead al funzione, par esempli <code1>{{example1}}</code1> o <code2>{{example2}}</code2> .",
+    "preview": "Anteprime (esempli di leads)",
+    "enabled": "Abilât",
+    "saveRule": "Salvâ la notificazion",
+    "createRule": "Creâ une notificazion",
+    "variables": {
+      "customerName": "Nome di protagonist",
+      "customerMobile": "Mobil di plomp",
+      "customerEmail": "Email di protagonist",
+      "registrationId": "ID di lead",
+      "status": "Stât",
+      "subStatus": "Sot-stât",
+      "scheduleAt": "Date e ore programadis",
+      "assignedTo": "Utent assegnât",
+      "updatedBy": "Atualizazion di",
+      "recipient": "Nome dal destinatari",
+      "project": "Progjet",
+      "notes": "Ultime note",
+      "partner": "Nome dal compagn"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Subit cuant che il stât al è metût",
+      "AT": "Al moment previodût",
+      "A1D": "1 dì dopo dal timp programât (control di seguiment)"
+    },
+    "immediately": "Daurman",
+    "atScheduled": "Al moment programât",
+    "before": {
+      "MINUTES_one": "{{count}} minût prin dal timp programât",
+      "MINUTES_other": "{{count}} minûts prin dal timp programât",
+      "HOURS_one": "{{count}} ore prime dal timp programât",
+      "HOURS_other": "{{count}} oris prime dal timp programât",
+      "DAYS_one": "{{count}} dì prin dal timp programât",
+      "DAYS_other": "{{count}} dîs prin dal timp programât",
+      "WEEKS_one": "{{count}} setemane prime dal timp programât",
+      "WEEKS_other": "{{count}} setemanis prin dal timp programât",
+      "MONTHS_one": "{{count}} mês prin dal timp programât",
+      "MONTHS_other": "{{count}} mês prin dal timp programât",
+      "YEARS_one": "{{count}} an prin dal timp programât",
+      "YEARS_other": "{{count}} agns prin dal timp programât"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minût dopo l’ore programade",
+      "MINUTES_other": "{{count}} minûts dopo dal timp programât",
+      "HOURS_one": "{{count}} ore dopo dal timp programât",
+      "HOURS_other": "{{count}} oris dopo dal timp programât",
+      "DAYS_one": "{{count}} dì dopo dal timp programât",
+      "DAYS_other": "{{count}} dîs dopo dal timp programât",
+      "WEEKS_one": "{{count}} setemane dopo dal timp programât",
+      "WEEKS_other": "{{count}} setemanis dopo dal timp programât",
+      "MONTHS_one": "{{count}} mês dopo dal timp programât",
+      "MONTHS_other": "{{count}} mês dopo dal timp programât",
+      "YEARS_one": "{{count}} an dopo dal timp programât",
+      "YEARS_other": "{{count}} agns dopo dal timp programât"
+    },
+    "units": {
+      "MINUTES_one": "minût",
+      "MINUTES_other": "minûts",
+      "HOURS_one": "ore",
+      "HOURS_other": "oris",
+      "DAYS_one": "dì",
+      "DAYS_other": "dîs",
+      "WEEKS_one": "setemane",
+      "WEEKS_other": "setemanis",
+      "MONTHS_one": "mês",
+      "MONTHS_other": "mês",
+      "YEARS_one": "agn",
+      "YEARS_other": "agns"
+    }
+  }
+}

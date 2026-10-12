@@ -1,0 +1,244 @@
+{
+  "page": {
+    "title": "Pengaturan",
+    "noPermission": "Anda tidak memiliki izin untuk mengelola setelan."
+  },
+  "categories": {
+    "lead": "Memimpin",
+    "user": "Pengguna",
+    "integrations": "Integrasi"
+  },
+  "leadTabs": {
+    "fields": "Bidang",
+    "statuses": "Status & Sub-Status",
+    "notifications": "Pemberitahuan & Penjadwal"
+  },
+  "fields": {
+    "leadIntro": "Konfigurasikan formulir pengambilan prospek: aktifkan/nonaktifkan bidang, tandai wajib diisi, atau tambahkan bidang khusus Anda sendiri.",
+    "userIntro": "Konfigurasikan formulir Tambah/Edit Anggota Tim: aktifkan/nonaktifkan bidang, tandai wajib diisi, atau tambahkan bidang khusus Anda sendiri.",
+    "addCustomField": "+ Tambahkan Bidang Kustom",
+    "fieldLabel": "Label Bidang",
+    "group": "Kelompok",
+    "groupPlaceholderLead": "misalnya Info Permintaan",
+    "groupPlaceholderUser": "misalnya Detail Tambahan",
+    "dataType": "Tipe Data",
+    "options": "Opsi (dipisahkan koma)",
+    "requiredLead": "Wajib diisi - mitra di tim Anda harus mengisinya untuk mendaftarkan prospek",
+    "requiredUser": "Wajib diisi - harus diisi saat menambahkan anggota tim",
+    "creating": "Membuat...",
+    "createField": "Buat Bidang",
+    "columns": {
+      "field": "Bidang",
+      "group": "Kelompok",
+      "type": "Jenis",
+      "required": "Diperlukan",
+      "enabled": "Diaktifkan",
+      "kind": "Baik"
+    },
+    "kind": {
+      "custom": "Kebiasaan",
+      "core": "Inti (terkunci)",
+      "standard": "Standar"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Teks",
+    "TEXTAREA": "Teks panjang",
+    "NUMBER": "Nomor",
+    "CURRENCY": "Mata uang",
+    "DATE": "Tanggal",
+    "SELECT": "tarik-turun",
+    "LIST": "Daftar"
+  },
+  "picker": {
+    "searchPlaceholder": "Telusuri bidang prospek...",
+    "summary": "{{shown}} ditampilkan · {{mandatory}} wajib",
+    "mandatory": "Wajib",
+    "noMatch": "Tidak ada bidang yang cocok."
+  },
+  "statuses": {
+    "intro": "Status dan sub-status prospek Anda - apa yang diminta masing-masing prospek (tanggal & waktu, bidang prospek) ketika seseorang memperbarui prospek ke prospek tersebut.",
+    "add": "+ Tambahkan Status",
+    "columns": {
+      "order": "Memesan",
+      "status": "Status",
+      "subStatuses": "Sub-Status",
+      "asksFor": "Meminta",
+      "active": "Aktif"
+    },
+    "moveUp": "Naik",
+    "moveDown": "Pindah ke bawah",
+    "defaultBadge": "Default untuk prospek baru",
+    "bookingBadge": "Status pemesanan",
+    "asksForLabel": "Meminta {{label}}",
+    "asksForDateTime": "Meminta tanggal & waktu",
+    "none": "Tidak ada",
+    "dateTime": "Tanggal & waktu",
+    "scheduledOn": "pada {{names}}",
+    "fieldsSummary_other": "{{count}} bidang ( {{mandatory}} wajib)",
+    "deleteConfirm": "Hapus status \" {{name}} \"? Hal ini tidak dapat dibatalkan.",
+    "editTitle": "Edit Status - {{name}}",
+    "newTitle": "Status Baru",
+    "name": "Nama Status",
+    "colour": "Warna",
+    "active": "Aktif",
+    "isDefault": "Status default untuk prospek baru",
+    "isBooking": "Status pemesanan (ditetapkan oleh Pemesanan Lengkap)",
+    "whenMoved": "Saat prospek dipindahkan ke status ini",
+    "askSchedule": "Minta tanggal & waktu (penjadwal)",
+    "scheduleLabelPlaceholder": "Label, misalnya Kunjungi di",
+    "fieldsToShow": "Bidang utama untuk ditampilkan pada formulir pembaruan",
+    "subStatusesTitle": "Sub-Status",
+    "subStatusesHint": "Setiap sub-status dapat menanyakan tanggal & waktunya sendiri dan menambahkan kolomnya sendiri - ditampilkan di atas kolom status di atas.",
+    "subStatusName": "Nama sub-status",
+    "subFields": "Bidang ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Label tanggal & waktu, misalnya Hubungi kembali di",
+    "addSubStatus": "+ Tambahkan Sub-Status",
+    "saveStatus": "Simpan Status",
+    "createStatus": "Buat Status"
+  },
+  "notifications": {
+    "intro": "Memberi tahu orang yang tepat ketika prospek mencapai suatu status - segera, atau waktu yang ditentukan sebelum/sesudah tanggal & waktu yang dijadwalkan.",
+    "add": "+ Tambahkan Pemberitahuan",
+    "columns": {
+      "notification": "Pemberitahuan",
+      "whenStatusIs": "Ketika Statusnya",
+      "sends": "Mengirim",
+      "to": "Ke",
+      "via": "Melalui",
+      "enabled": "Diaktifkan"
+    },
+    "anyStatus": "Status apa pun",
+    "anySubStatus": "Sub-status apa pun",
+    "inactiveOption": "{{name}} (tidak aktif)",
+    "emptyRules": "Belum ada pemberitahuan - tambahkan satu untuk mengingatkan tim Anda ketika prospek mencapai suatu status.",
+    "jobs": {
+      "title": "Dijadwalkan & Dikirim",
+      "firesAt": "Kebakaran Pada",
+      "notification": "Pemberitahuan",
+      "lead": "Memimpin",
+      "status": "Status",
+      "details": "Detail",
+      "empty": "Belum ada yang dijadwalkan atau dikirim.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Tertunda",
+      "PROCESSING": "Pengolahan",
+      "SENT": "Terkirim",
+      "FAILED": "Gagal",
+      "SKIPPED": "Dilewati",
+      "CANCELLED": "Dibatalkan"
+    },
+    "deliveryStatus": {
+      "SENT": "terkirim",
+      "FAILED": "gagal",
+      "SKIPPED": "dilewati"
+    },
+    "deliveryChannel": {
+      "IN_APP": "dalam aplikasi",
+      "EMAIL": "e-mail",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Pengguna yang ditugaskan",
+      "owner": "Pemilik",
+      "updatedBy": "Diperbarui oleh",
+      "role": "Peran: {{name}}"
+    },
+    "channels": {
+      "inApp": "Dalam aplikasi",
+      "email": "E-mail",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Hapus notifikasi \" {{name}} \"? Pengingat yang tertunda darinya dibatalkan.",
+    "testPrompt": "Kirim pengujian notifikasi ini ke diri Anda sendiri (dalam aplikasi) menggunakan ID prospek yang mana?",
+    "testSent": "Dikirim ke bel Anda: {{title}} {{message}}",
+    "headersInvalid": "Header Webhook harus berupa JSON yang valid, misalnya {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Edit Pemberitahuan",
+    "newTitle": "Pemberitahuan Baru",
+    "name": "Nama",
+    "namePlaceholder": "misalnya pengingat kunjungan situs",
+    "whenStatus": "Ketika status prospek adalah",
+    "subStatus": "Sub-status",
+    "send": "Kirim (penjadwal)",
+    "custom": "Kebiasaan...",
+    "modeBefore": "sebelum waktu yang dijadwalkan",
+    "modeAfter": "setelah waktu yang dijadwalkan",
+    "noScheduleWarning": "Status ini tidak menanyakan tanggal & waktu, jadi notifikasi \"sebelum/pada/setelah waktu yang dijadwalkan\" tidak akan pernah muncul.",
+    "noScheduleFix": "Aktifkan <strong>Minta tanggal & waktu</strong> di bawah Status & Sub-Status, atau kirim Segera.",
+    "sendTo": "Kirim ke (kombinasi apa saja)",
+    "recipientAssigned": "Pengguna yang ditetapkan (pemilik prospek)",
+    "recipientOwner": "Pemilik akun/admin",
+    "recipientUpdatedBy": "Orang yang memperbarui status",
+    "everyoneWithRole": "Setiap orang yang mempunyai peran",
+    "specificUsers": "Pengguna tertentu (aktif)",
+    "inactiveNever": "Pengguna yang tidak aktif tidak pernah menerima notifikasi, meskipun dipilih.",
+    "deliverVia": "Pengiriman melalui",
+    "channelInApp": "Dalam aplikasi (bel)",
+    "channelEmail": "E-mail",
+    "channelWebhook": "Webhook (penyedia WhatsApp / SMS )",
+    "emailHint": "Email masuk ke alamat email masing-masing penerima dan memerlukan pengaturan SMTP di server (backend/.env); sampai saat itu pengiriman email dicatat sebagai dilewati.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Header ( JSON )",
+    "content": "Konten pemberitahuan",
+    "title": "Judul",
+    "message": "Pesan",
+    "insertIntoTitle": "Masukkan ke dalam Judul",
+    "insertIntoMessage": "Masukkan ke dalam Pesan",
+    "anyLeadField": "Bidang prospek apa pun juga bisa digunakan, misalnya <code1>{{example1}}</code1> atau <code2>{{example2}}</code2> .",
+    "preview": "Pratinjau (contoh prospek)",
+    "enabled": "Diaktifkan",
+    "saveRule": "Simpan Pemberitahuan",
+    "createRule": "Buat Notifikasi",
+    "variables": {
+      "customerName": "Nama pemimpin",
+      "customerMobile": "Pimpin ponsel",
+      "customerEmail": "Email utama",
+      "registrationId": "ID Pemimpin",
+      "status": "Status",
+      "subStatus": "Sub-status",
+      "scheduleAt": "Tanggal & waktu yang dijadwalkan",
+      "assignedTo": "Pengguna yang ditugaskan",
+      "updatedBy": "Diperbarui oleh",
+      "recipient": "Nama penerima",
+      "project": "Proyek",
+      "notes": "Catatan terbaru",
+      "partner": "Nama mitra"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Segera setelah status ditetapkan",
+      "AT": "Pada waktu yang dijadwalkan",
+      "A1D": "1 hari setelah waktu yang dijadwalkan (pemeriksaan lanjutan)"
+    },
+    "immediately": "Langsung",
+    "atScheduled": "Pada waktu yang dijadwalkan",
+    "before": {
+      "MINUTES_other": "{{count}} menit sebelum waktu yang dijadwalkan",
+      "HOURS_other": "{{count}} jam sebelum waktu yang dijadwalkan",
+      "DAYS_other": "{{count}} hari sebelum waktu yang dijadwalkan",
+      "WEEKS_other": "{{count}} minggu sebelum waktu yang dijadwalkan",
+      "MONTHS_other": "{{count}} bulan sebelum waktu yang dijadwalkan",
+      "YEARS_other": "{{count}} tahun sebelum waktu yang dijadwalkan"
+    },
+    "after": {
+      "MINUTES_other": "{{count}} menit setelah waktu yang dijadwalkan",
+      "HOURS_other": "{{count}} jam setelah waktu yang dijadwalkan",
+      "DAYS_other": "{{count}} hari setelah waktu yang dijadwalkan",
+      "WEEKS_other": "{{count}} minggu setelah waktu yang dijadwalkan",
+      "MONTHS_other": "{{count}} bulan setelah waktu yang dijadwalkan",
+      "YEARS_other": "{{count}} tahun setelah waktu yang dijadwalkan"
+    },
+    "units": {
+      "MINUTES_other": "menit",
+      "HOURS_other": "jam",
+      "DAYS_other": "hari",
+      "WEEKS_other": "minggu",
+      "MONTHS_other": "bulan",
+      "YEARS_other": "bertahun-tahun"
+    }
+  }
+}

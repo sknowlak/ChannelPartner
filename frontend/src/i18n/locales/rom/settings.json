@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Paramètrură",
+    "noPermission": "Naj tut permisia te keres buti e paramètrurenqe."
+  },
+  "categories": {
+    "lead": "Tradel",
+    "user": "Uźitori",
+    "integrations": "Integracie"
+  },
+  "leadTabs": {
+    "fields": "Terena",
+    "statuses": "Statusura thaj Sub-Statusura",
+    "notifications": "Notifikàcie thaj Planàcie"
+  },
+  "fields": {
+    "leadIntro": "Konfigurisaren o formularo vaś o astaripe e śerutnengo: śaj te keren/naśti te keren buti, te markinen len sar trubujipe, vaj te thoven tumare śajutne thana.",
+    "userIntro": "Konfigurisar o formularo Thov/Edit Membro e Ekipaqo: śaj/ćhiv e thana, markin len sar trubujipe, vaj thov tire personalizirime thana.",
+    "addCustomField": "+ Thov o personalizirime fieldo",
+    "fieldLabel": "Etiketa e phuvăqi",
+    "group": "Grùpo",
+    "groupPlaceholderLead": "sar egzamplo, informacie pal-o pućhipen",
+    "groupPlaceholderUser": "sar misal, aver detalura",
+    "dataType": "Tipo e datengo",
+    "options": "Opcie (koma separime)",
+    "requiredLead": "Trubul - le partnerura ande tumaro timo trubun te pheren kado te registruin jekh lead",
+    "requiredUser": "Trubul - trubul te pherel pes kana thovel pes jekh membro e ekipake",
+    "creating": "Keren...",
+    "createField": "Keren o than",
+    "columns": {
+      "field": "Kїmpo",
+      "group": "Grùpo",
+      "type": "Tìpo",
+      "required": "Manglo",
+      "enabled": "Aktivisardo",
+      "kind": "Laćho"
+    },
+    "kind": {
+      "custom": "Aćar",
+      "core": "Kerdo (phandle)",
+      "standard": "Stàdardo"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Tèksto",
+    "TEXTAREA": "Lungo tèksto",
+    "NUMBER": "Gin",
+    "CURRENCY": "Valùta",
+    "DATE": "Dàta",
+    "SELECT": "Dropdown",
+    "LIST": "Lìsta"
+  },
+  "picker": {
+    "searchPlaceholder": "Roden le thana...",
+    "summary": "{{shown}} sikado · {{mandatory}} obligatori",
+    "mandatory": "Musajutno",
+    "noMatch": "Ni jekh rig na malavel pes."
+  },
+  "statuses": {
+    "intro": "Tumare statusura thaj sub-statusura le śerutnenge - so sako jekh mangel (jekh data thaj vràma, śerutnenge thana) kana varekon kerel o śerutno lil.",
+    "add": "+ Thov Statuso",
+    "columns": {
+      "order": "Komànda",
+      "status": "Stàtuso",
+      "subStatuses": "Sub-Statusura",
+      "asksFor": "Mangel",
+      "active": "Aktìvo"
+    },
+    "moveUp": "Dža opre",
+    "moveDown": "Dža tele",
+    "defaultBadge": "Defaulto vaś neve śajutnimata",
+    "bookingBadge": "Statuso e rezervàciaqo",
+    "asksForLabel": "Mangel {{label}}",
+    "asksForDateTime": "Mangel data thaj vrama",
+    "none": "Konik",
+    "dateTime": "Data & vràma",
+    "scheduledOn": "pe {{names}}",
+    "fieldsSummary_one": "{{count}} field ( {{mandatory}} obligatoricno)",
+    "fieldsSummary_other": "{{count}} thana ( {{mandatory}} obligatorikano)",
+    "deleteConfirm": "Xasaren o statuso \" {{name}} \"? Akava nashti te ovel kerdo.",
+    "editTitle": "Edit Status - {{name}}",
+    "newTitle": "Nevo Statuso",
+    "name": "Statusosko anav",
+    "colour": "Rang",
+    "active": "Aktìvo",
+    "isDefault": "Statuso standardo vaś neve śajutnimata",
+    "isBooking": "Statuso e rezervàciaqo (kerdo katar o pherdo rezervàciaqo)",
+    "whenMoved": "Kana jekh śerutno si ćhudino anθ-o kadava statuso",
+    "askSchedule": "Mangen jekh data thaj vràma (scheduler)",
+    "scheduleLabelPlaceholder": "Etiketa, egz. Vizita ko",
+    "fieldsToShow": "Le śerutne thana te sikaven pes anθ-o formularo vaś o nevipen",
+    "subStatusesTitle": "Sub-Statusura",
+    "subStatusesHint": "Sako sub-statuso śaj te mangel peski data thaj vràma thaj te thovel peski rig - sikavdo opral e statusosqe thana opral.",
+    "subStatusName": "Sub-statuso anav",
+    "subFields": "Terena ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Etiketa e dataqi thaj e vràmaqi, sar egzàmplo, akharen palpale k-o",
+    "addSubStatus": "+ Thov Sub-Status",
+    "saveStatus": "Garav o Statuso",
+    "createStatus": "Keren o Statuso"
+  },
+  "notifications": {
+    "intro": "Informisaren le ćaćutne manuśen kana jekh śerutno resel jekh statuso - sigo, vaj jekh vaxt anglal/palal i data thaj o vaxt planirime pe leste.",
+    "add": "+ Thov Notifikàcia",
+    "columns": {
+      "notification": "Notifikàcia",
+      "whenStatusIs": "Kana o Statuso Si",
+      "sends": "Bićhalel",
+      "to": "Te",
+      "via": "Andar",
+      "enabled": "Aktivisardo"
+    },
+    "anyStatus": "Savo statuso",
+    "anySubStatus": "Sako sub-statuso",
+    "inactiveOption": "{{name}} (na-aktivo)",
+    "emptyRules": "Akana naj notifikàcie - thov jekh te alarmisarel tiro timo kana jekh śerutno resel jekh statuso.",
+    "jobs": {
+      "title": "Planirime & Bićhaldo",
+      "firesAt": "Jagha pe",
+      "notification": "Notifikàcia",
+      "lead": "Tradel",
+      "status": "Stàtuso",
+      "details": "Detaja",
+      "empty": "Niso na si planirime vaj bičhaldo inke.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Ando aźukeripen",
+      "PROCESSING": "Procesàcia",
+      "SENT": "Bićhaldo",
+      "FAILED": "N-aśtisardăs",
+      "SKIPPED": "Nakhado",
+      "CANCELLED": "Anulirime"
+    },
+    "deliveryStatus": {
+      "SENT": "bićhaldo",
+      "FAILED": "n-aśtisardăs",
+      "SKIPPED": "nakhlo"
+    },
+    "deliveryChannel": {
+      "IN_APP": "and-i-app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Dino uźitori",
+      "owner": "Xulaj",
+      "updatedBy": "Kerdo nevo katar",
+      "role": "Rola: {{name}}"
+    },
+    "channels": {
+      "inApp": "Ande-app",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Te xasarel pes i notifikàcia \" {{name}} \"? Le aźutipnaske aźutimata katar leste si anulime.",
+    "testPrompt": "Bičhalen jekh test kadale notifikàciaqo tumenqe (anθ-i applikàcia) labǎrindoj savo lead ID ?",
+    "testSent": "Bićhaldo k-o tumaro ćàso: {{title}} {{message}}",
+    "headersInvalid": "Webhook esqe śerutne trebal te aven validno JSON , sar egzàmplo {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Keren i Notifikàcia",
+    "newTitle": "Nevi Notifikàcia",
+    "name": "Anav",
+    "namePlaceholder": "sar egzàmplo, akharipe vaś vizita e thanesqi",
+    "whenStatus": "Kana o statuso e śerutnesqo si",
+    "subStatus": "Sub-statuso",
+    "send": "Bičhalen (planirimo)",
+    "custom": "Aćar...",
+    "modeBefore": "anglal o vaxt savo si planirime",
+    "modeAfter": "palal o vaxt savo si planirime",
+    "noScheduleWarning": "Akava statuso na mangel data thaj vrama, odolesqe jekh notifikàcia \"anglal/ko/palal o vaxt e planirime\" nisar na ka del pes.",
+    "noScheduleFix": "Thov o <strong>Mangen jekh data thaj vràma</strong> vaś kodo telal Statusura thaj Sub-Statusura, vaj bićhalen les sigo.",
+    "sendTo": "Bičhalen ko (savi godi kombinàcia)",
+    "recipientAssigned": "Dino uźitori (o śerutno gazda)",
+    "recipientOwner": "Kontosko gazda / admin",
+    "recipientUpdatedBy": "Manush savo kerdas o statuso",
+    "everyoneWithRole": "Savore si len rola",
+    "specificUsers": "Specifična uźitorǎ (aktivne)",
+    "inactiveNever": "Le inaktivne uźitorǎ nisar na len notifikàcie, vi te si alosarde.",
+    "deliverVia": "Bićhalen prekal",
+    "channelInApp": "And-i aplikacia (xramosaripe)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS provider)",
+    "emailHint": "O e-mail źal k-i e-mail adresa svakone recipientosqi thaj trubul les SMTP kerdo po server (backend/.env); źi kana e bićhalde e-mailură si xramosarde sar nakhle.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Sherutne ( JSON )",
+    "content": "Notifikaciaqo sasto",
+    "title": "Tìtulo",
+    "message": "Mesàźo",
+    "insertIntoTitle": "Thov ando titlo",
+    "insertIntoMessage": "Thov ando mesažo",
+    "anyLeadField": "Sako śerutno than kerel buti vi vov, sar misal <code1>{{example1}}</code1> vaj <code2>{{example2}}</code2> .",
+    "preview": "Anglal-dikhipnasqo (eksemploqo śerutno)",
+    "enabled": "Aktivisardo",
+    "saveRule": "Notifikàcia te garaves",
+    "createRule": "Ker Notifikàcia",
+    "variables": {
+      "customerName": "O anav e anglune",
+      "customerMobile": "Vodno mobilno",
+      "customerEmail": "Vodno e-mailo",
+      "registrationId": "ID e śerutnesqo",
+      "status": "Stàtuso",
+      "subStatus": "Sub-statuso",
+      "scheduleAt": "Planirime data thaj vràma",
+      "assignedTo": "Dino uźitori",
+      "updatedBy": "Kerdo nevo katar",
+      "recipient": "O anav e recipientosqo",
+      "project": "Projèkto",
+      "notes": "Maj paluno lil",
+      "partner": "Anav e partneresqo"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Sigo kana o statuso si thodino",
+      "AT": "Ko vaxt savo si planirime",
+      "A1D": "1 dives palal o vaxt (kontrola palal)"
+    },
+    "immediately": "Sigo",
+    "atScheduled": "Pe planirime vrama",
+    "before": {
+      "MINUTES_one": "{{count}} minuta anglal o vaxt savo si planirime",
+      "MINUTES_other": "{{count}} minutura anglal o vaxt savo si planirime",
+      "HOURS_one": "{{count}} jekh ćàso anglal o vaxt savo sas dino",
+      "HOURS_other": "{{count}} òre anglal o vaxt savo sas dino",
+      "DAYS_one": "{{count}} dives anglal o vaxt savo si planirime",
+      "DAYS_other": "{{count}} divesa anglal o vaxt savo si planirime",
+      "WEEKS_one": "{{count}} kurko anglal o vaxt savo si planirime",
+      "WEEKS_other": "{{count}} kurke anglal o vaxt savo si planirime",
+      "MONTHS_one": "{{count}} ćhon anglal o vaxt savo si planirime",
+      "MONTHS_other": "{{count}} ćhona anglal o vaxt savo si planirime",
+      "YEARS_one": "{{count}} berś anglal o vaxt savo si planirime",
+      "YEARS_other": "{{count}} berśa anglal o vaxt savo si planirime"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minuta palal o vaxt savo sas planirime",
+      "MINUTES_other": "{{count}} minutură palal o vaxt savo sas dino",
+      "HOURS_one": "{{count}} ćàso palal o vaxt savo sas dino",
+      "HOURS_other": "{{count}} òre palal o vaxt savo sas dino",
+      "DAYS_one": "{{count}} dives palal o vaxt savo sas planirime",
+      "DAYS_other": "{{count}} divesa palal o vaxt savo sas planirime",
+      "WEEKS_one": "{{count}} kurko palal o vaxt savo sas planirime",
+      "WEEKS_other": "{{count}} kurke palal o vaxt savo sas planirime",
+      "MONTHS_one": "{{count}} ćhon palal o vaxt savo sas planirime",
+      "MONTHS_other": "{{count}} ćhona palal o vaxt savo sas planirime",
+      "YEARS_one": "{{count}} berś palal o vaxt savo sas planirime",
+      "YEARS_other": "{{count}} berśa palal o vaxt savo sas dino"
+    },
+    "units": {
+      "MINUTES_one": "minùto",
+      "MINUTES_other": "verbàlo procèso",
+      "HOURS_one": "òra",
+      "HOURS_other": "òre",
+      "DAYS_one": "dĭves",
+      "DAYS_other": "divesa",
+      "WEEKS_one": "kurko",
+      "WEEKS_other": "kurke",
+      "MONTHS_one": "ćhon",
+      "MONTHS_other": "ćhona",
+      "YEARS_one": "berś",
+      "YEARS_other": "berśa"
+    }
+  }
+}

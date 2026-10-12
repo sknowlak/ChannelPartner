@@ -1,0 +1,93 @@
+{
+  "shell": {
+    "portal": "Portałe del Costrutor",
+    "referrals": "Riferimenti",
+    "builderLogin": "Login del costrutor",
+    "partnerLogin": "Login del socio del canałe"
+  },
+  "login": {
+    "title": "Entrar del costrutor",
+    "hint": "I account builder i xe creài da Leadrat . Chiedi al tuo amministratore se non ne hai uno."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "In attesa de la vostra decision",
+    "ACCEPTED": "Acetà",
+    "REJECTED": "Rifiutà"
+  },
+  "list": {
+    "title": "Riferimenti",
+    "allProjects": "Tutti i progetti",
+    "allStatuses": "Tuti i status",
+    "count_one": "{{count}} rinvio",
+    "count_many": "{{count}} rinvii",
+    "count_other": "{{count}} rinvii",
+    "columns": {
+      "referral": "Riferimento",
+      "customer": "Cliente",
+      "project": "Projeto",
+      "sourcePartner": "Socio de fonte",
+      "status": "Stà",
+      "booking": "Prenotasion",
+      "registered": "Iscritto"
+    },
+    "booked": "Prenotà",
+    "empty": "No ghe xe gnancora rinvii."
+  },
+  "detail": {
+    "customer": "Cliente",
+    "sourcePartner": "Socio de fonte",
+    "attributionNote": "(atribusion - no ła pol esar canbià)",
+    "leadStatus": "Stato de protagonista",
+    "protectedUntil": "Proteto fin a",
+    "referral": "Riferimento",
+    "reason": "Motivo: {{reason}}",
+    "booking": "Prenotasion",
+    "bookedOwner": "Prenotà - te si el paron operativo",
+    "notBooked": "No prenotà",
+    "sharedAfterBooking": "Condiviso dopo ła prenotasion",
+    "accept": "Acetà el rinvio",
+    "confirmBooking": "Conferma ła prenotasion",
+    "reject": "Rifiuta el rinvio",
+    "rejectReasonLabel": "Motivo de rifiuto (mostrà al socio) *",
+    "rejectConfirm": "Refudar",
+    "confirmBookingPrompt": "Conferma la prenotazion? Ła proprietà operativa ła vien a ti e el socio el deventa idoneo a ła comision.",
+    "notice": {
+      "booked": "Prenotasion confermà.",
+      "accepted": "El rinvio acetà.",
+      "rejected": "El rinvio rifiutà."
+    },
+    "backToReferrals": "Torna ai rinvii"
+  },
+  "history": {
+    "title": "Storia",
+    "actor": {
+      "system": "Sistema",
+      "partner": "Socio del canałe",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Ricevùo l’iscrision del socio",
+      "DUPLICATE_CHECK_COMPLETED": "Controło del dopio finìo - no ghe xe stà catà un dopio ativo",
+      "REGISTRATION_ACCEPTED": "Iscrision acetà",
+      "PROTECTION_GRANTED_one": "{{count}} -giorno protesion concessa",
+      "PROTECTION_GRANTED_many": "{{count}} -giorno protesion concessa",
+      "PROTECTION_GRANTED_other": "{{count}} -giorno protesion concessa",
+      "STAGE_UPDATED": "Stato ajornà a {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "El canpo {{count}} ajornà",
+      "LEAD_DETAILS_UPDATED_many": "I canpi {{count}} ajornài",
+      "LEAD_DETAILS_UPDATED_other": "I canpi {{count}} ajornài",
+      "LEAD_ASSIGNED": "Assegnà a {{name}}",
+      "LEAD_UNASSIGNED": "No assegnà",
+      "REFERRAL_ACCEPTED": "El costrutor el ga acetà el rinvio",
+      "REFERRAL_REJECTED": "El costruttor el ga rifiutà el rinvio. Motivo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "El tentativo de registrasion dopio da parte de {{partner}} xe stà rifiutà",
+      "BOOKING_COMPLETED": "Prenotasion finìa",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Ła proprietà operativa trasferìa a Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribusion del socio conservà",
+      "COMMISSION_ELIGIBILITY_CREATED": "Idoneità a ła comision xe stà creà",
+      "HANDOVER_COMPLETED": "Consegna finìa",
+      "ADMIN_PROTECTION_RELEASED": "L’aministrador el ga rilascià in anticipo ła protesion dei dopi. Motivo: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "L’aministrador el ga riasegnà l’iscrision da {{from}} a {{to}} . Motivo: {{reason}}"
+    }
+  }
+}

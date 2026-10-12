@@ -1,0 +1,87 @@
+{
+  "shell": {
+    "portal": "វិបផតថលអ្នកសាងសង់",
+    "referrals": "ការណែនាំ",
+    "builderLogin": "ការចូលអ្នកសាងសង់",
+    "partnerLogin": "ការចូលជាដៃគូរបស់ប៉ុស្តិ៍"
+  },
+  "login": {
+    "title": "អ្នកសាងសង់ចូល",
+    "hint": "គណនីអ្នកបង្កើតត្រូវបានបង្កើតឡើងដោយ Leadrat ។ សួរអ្នកគ្រប់គ្រងរបស់អ្នកប្រសិនបើអ្នកមិនមាន។"
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "រង់ចាំការសម្រេចចិត្តរបស់អ្នក។",
+    "ACCEPTED": "ទទួលយក",
+    "REJECTED": "បដិសេធ"
+  },
+  "list": {
+    "title": "ការណែនាំ",
+    "allProjects": "គម្រោងទាំងអស់។",
+    "allStatuses": "ស្ថានភាពទាំងអស់។",
+    "count_other": "ការបញ្ជូនបន្ត {{count}}",
+    "columns": {
+      "referral": "យោង",
+      "customer": "អតិថិជន",
+      "project": "គម្រោង",
+      "sourcePartner": "ប្រភពដៃគូ",
+      "status": "ស្ថានភាព",
+      "booking": "ការកក់ទុក",
+      "registered": "បានចុះឈ្មោះ"
+    },
+    "booked": "បានកក់ទុក",
+    "empty": "មិនទាន់មានការណែនាំទេ។"
+  },
+  "detail": {
+    "customer": "អតិថិជន",
+    "sourcePartner": "ប្រភពដៃគូ",
+    "attributionNote": "(គុណលក្ខណៈ - មិនអាចផ្លាស់ប្តូរបានទេ)",
+    "leadStatus": "ស្ថានភាពនាំមុខ",
+    "protectedUntil": "ការពាររហូតដល់",
+    "referral": "យោង",
+    "reason": "ហេតុផល៖ {{reason}}",
+    "booking": "ការកក់ទុក",
+    "bookedOwner": "បានកក់ទុក - អ្នកគឺជាម្ចាស់ប្រតិបត្តិការ",
+    "notBooked": "មិនបានកក់ទុកទេ។",
+    "sharedAfterBooking": "ចែករំលែកបន្ទាប់ពីការកក់",
+    "accept": "ទទួលយកការណែនាំ",
+    "confirmBooking": "បញ្ជាក់ការកក់",
+    "reject": "បដិសេធការបញ្ជូន",
+    "rejectReasonLabel": "ហេតុផលសម្រាប់ការបដិសេធ (បង្ហាញដល់ដៃគូ) *",
+    "rejectConfirm": "បដិសេធ",
+    "confirmBookingPrompt": "បញ្ជាក់ការកក់? ភាពជាម្ចាស់ប្រតិបត្តិការផ្លាស់ទីទៅអ្នក ហើយដៃគូក្លាយជាមានសិទ្ធិទទួលបានកម្រៃជើងសារ។",
+    "notice": {
+      "booked": "ការកក់ត្រូវបានបញ្ជាក់។",
+      "accepted": "ឯកសារយោងត្រូវបានទទួលយក។",
+      "rejected": "ការ​ណែនាំ​ត្រូវ​បាន​បដិសេធ។"
+    },
+    "backToReferrals": "ត្រឡប់ទៅ ឯកសារយោង"
+  },
+  "history": {
+    "title": "ប្រវត្តិសាស្ត្រ",
+    "actor": {
+      "system": "ប្រព័ន្ធ",
+      "partner": "ដៃគូឆានែល",
+      "admin": "Leadrat អ្នកគ្រប់គ្រង"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "បានទទួលការចុះឈ្មោះដៃគូ",
+      "DUPLICATE_CHECK_COMPLETED": "ការត្រួតពិនិត្យស្ទួនបានបញ្ចប់ - រកមិនឃើញការស្ទួនសកម្មទេ។",
+      "REGISTRATION_ACCEPTED": "ការចុះឈ្មោះត្រូវបានទទួលយក",
+      "PROTECTION_GRANTED_other": "{{count}} -ថ្ងៃ​បាន​ផ្តល់​ការ​ការពារ",
+      "STAGE_UPDATED": "ស្ថានភាពបានធ្វើបច្ចុប្បន្នភាពទៅ {{stage}}",
+      "LEAD_DETAILS_UPDATED_other": "បានធ្វើបច្ចុប្បន្នភាពវាល {{count}}",
+      "LEAD_ASSIGNED": "បានចាត់តាំងឱ្យ {{name}}",
+      "LEAD_UNASSIGNED": "មិនបានចាត់តាំង",
+      "REFERRAL_ACCEPTED": "អ្នកសាងសង់បានទទួលយកការបញ្ជូន",
+      "REFERRAL_REJECTED": "អ្នកសាងសង់បានបដិសេធការបញ្ជូន។ ហេតុផល៖ {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "ការប៉ុនប៉ងចុះឈ្មោះស្ទួនដោយ {{partner}} ត្រូវបានបដិសេធ",
+      "BOOKING_COMPLETED": "ការកក់បានបញ្ចប់",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "កម្មសិទ្ធិប្រតិបត្តិការបានផ្ទេរទៅក្រុមហ៊ុនសាងសង់",
+      "PARTNER_ATTRIBUTION_PRESERVED": "បានរក្សាទុកគុណលក្ខណៈដៃគូ",
+      "COMMISSION_ELIGIBILITY_CREATED": "សិទ្ធិទទួលបានគណៈកម្មាការត្រូវបានបង្កើតឡើង",
+      "HANDOVER_COMPLETED": "ការប្រគល់ជូនបានបញ្ចប់",
+      "ADMIN_PROTECTION_RELEASED": "Admin បញ្ចេញការការពារស្ទួនមុនគេ។ ហេតុផល៖ {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "អ្នកគ្រប់គ្រងបានចាត់តាំងការចុះឈ្មោះឡើងវិញពី {{from}} ទៅ {{to}} ។ ហេតុផល៖ {{reason}}"
+    }
+  }
+}

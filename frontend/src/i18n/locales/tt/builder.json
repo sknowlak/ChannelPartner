@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Төзүче порталы",
+    "referrals": "Reибәрүләр",
+    "builderLogin": "Төзүче Логин",
+    "partnerLogin": "Канал Партнеры Логин"
+  },
+  "login": {
+    "title": "Төзүче керегез",
+    "hint": "Төзүче счетлары Leadrat тарафыннан ясалган. Сезнең администратордан сорагыз."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Карарыгызны көтәм",
+    "ACCEPTED": "Кабул ителде",
+    "REJECTED": "Кире кагылды"
+  },
+  "list": {
+    "title": "Reибәрүләр",
+    "allProjects": "Барлык проектлар",
+    "allStatuses": "Барлык статуслар",
+    "count_one": "{{count}} юллама",
+    "count_other": "{{count}} юлламалар",
+    "columns": {
+      "referral": "Reибәрү",
+      "customer": "Клиент",
+      "project": "Проект",
+      "sourcePartner": "Чыганак партнеры",
+      "status": "Статус",
+      "booking": "Броньлау",
+      "registered": "Теркәлгән"
+    },
+    "booked": "Броньланган",
+    "empty": "Yetлламалар юк."
+  },
+  "detail": {
+    "customer": "Клиент",
+    "sourcePartner": "Чыганак партнеры",
+    "attributionNote": "(атрибутика - үзгәртеп булмый)",
+    "leadStatus": "Куркынычсызлык статусы",
+    "protectedUntil": "Сакланганчы",
+    "referral": "Reибәрү",
+    "reason": "Сәбәп: {{reason}}",
+    "booking": "Броньлау",
+    "bookedOwner": "Броньланган - сез оператив хуҗа",
+    "notBooked": "Броньланмаган",
+    "sharedAfterBooking": "Бронь ясаганнан соң бүлешәләр",
+    "accept": "Reибәрүне кабул итегез",
+    "confirmBooking": "Броньлауны раслагыз",
+    "reject": "Reибәрүдән баш тарт",
+    "rejectReasonLabel": "Баш тартуның сәбәбе (партнерга күрсәтелә) *",
+    "rejectConfirm": "Баш тарт",
+    "confirmBookingPrompt": "Броньны раслыйсызмы? Оператив милек сезгә күчә һәм партнер комиссиягә хокук ала.",
+    "notice": {
+      "booked": "Броньлау расланды.",
+      "accepted": "Ferибәрү кабул ителде.",
+      "rejected": "Reибәрү кире кагылды."
+    },
+    "backToReferrals": "Ferлламаларга кире кайту"
+  },
+  "history": {
+    "title": "Тарих",
+    "actor": {
+      "system": "Система",
+      "partner": "Канал партнеры",
+      "admin": "Leadrat админ"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Партнер теркәлүе алынды",
+      "DUPLICATE_CHECK_COMPLETED": "Дубликат тикшерү тәмамланды - актив дубликат табылмады",
+      "REGISTRATION_ACCEPTED": "Теркәлү кабул ителде",
+      "PROTECTION_GRANTED_one": "{{count}} day-көнлек яклау бирелгән",
+      "PROTECTION_GRANTED_other": "{{count}} day-көнлек яклау бирелгән",
+      "STAGE_UPDATED": "Статус {{stage}} to яңартылды",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} кыры яңартылды",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} кырлары яңартылды",
+      "LEAD_ASSIGNED": "{{name}} to билгеләнде",
+      "LEAD_UNASSIGNED": "Билгеләнмәгән",
+      "REFERRAL_ACCEPTED": "Төзүче юлламаны кабул итте",
+      "REFERRAL_REJECTED": "Төзүче юлламаны кире какты. Сәбәп: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Register {{partner}} by тарафыннан теркәлү омтылышы кире кагылды",
+      "BOOKING_COMPLETED": "Броньлау тәмамланды",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Оператив милек Төзүчегә күчерелде",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Партнер атрибутикасы сакланган",
+      "COMMISSION_ELIGIBILITY_CREATED": "Комиссия хокукы булдырылды",
+      "HANDOVER_COMPLETED": "Тапшыру тәмамланды",
+      "ADMIN_PROTECTION_RELEASED": "Администратор икеләтә саклауны иртә чыгарды. Сәбәп: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Администратор теркәлүне {{from}} дан {{to}} га билгеләде. Сәбәп: {{reason}}"
+    }
+  }
+}

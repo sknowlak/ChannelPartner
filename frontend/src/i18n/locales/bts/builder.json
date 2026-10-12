@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal Pembangun",
+    "referrals": "Rujukan",
+    "builderLogin": "Masuk Pambangun",
+    "partnerLogin": "Masuk Mitra Saluran"
+  },
+  "login": {
+    "title": "Tukang masuk",
+    "hint": "Akun pembangun ibahen Leadrat . Sungkun ma administratormu anggo lape dong bamu."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Paimahon haputusanmu",
+    "ACCEPTED": "Ijalo",
+    "REJECTED": "Itolak"
+  },
+  "list": {
+    "title": "Rujukan",
+    "allProjects": "Haganup proyek",
+    "allStatuses": "Haganup status",
+    "count_one": "{{count}} rujukan",
+    "count_other": "{{count}} rujukan",
+    "columns": {
+      "referral": "Rujukan",
+      "customer": "Pamboli",
+      "project": "Proyek",
+      "sourcePartner": "Mitra Sumber",
+      "status": "Parhundul",
+      "booking": "Pemesanan",
+      "registered": "Domma tardaftar"
+    },
+    "booked": "Domma ipesan",
+    "empty": "Lang dong ope rujukan."
+  },
+  "detail": {
+    "customer": "Pamboli",
+    "sourcePartner": "Mitra Sumber",
+    "attributionNote": "(atribusi - lang boi iubah)",
+    "leadStatus": "Status Pimpinan",
+    "protectedUntil": "Ilindungi das hubani",
+    "referral": "Rujukan",
+    "reason": "Alasan: {{reason}}",
+    "booking": "Pemesanan",
+    "bookedOwner": "Domma ipesan - nassiam do simada operasional",
+    "notBooked": "Lang ipesan",
+    "sharedAfterBooking": "Ibagihon dobkonsi ipesan",
+    "accept": "Manjalo Rujukan",
+    "confirmBooking": "Pastihon Pemesanan",
+    "reject": "Tolak Rujukan",
+    "rejectReasonLabel": "Alasan manolak (ipatuduh hubani pasangan) *",
+    "rejectConfirm": "Itulak",
+    "confirmBookingPrompt": "Ikonfirmasi do pemesanan ai? Kepemilikan operasional pindah hubani nassiam janah mitra gabe talup manjalo komisi.",
+    "notice": {
+      "booked": "Pemesanan domma isahkon.",
+      "accepted": "Rujukan domma ijalo.",
+      "rejected": "Rujukan itulak."
+    },
+    "backToReferrals": "Mulak hubani Rujukan"
+  },
+  "history": {
+    "title": "Turi turian",
+    "actor": {
+      "system": "Sistem",
+      "partner": "Mitra saluran",
+      "admin": "Admin Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Domma ijalo pendaftaran mitra",
+      "DUPLICATE_CHECK_COMPLETED": "Pemeriksaan duplikat domma salosei - lang dong jumpah duplikat na aktif",
+      "REGISTRATION_ACCEPTED": "Domma ijalo pendaftaran",
+      "PROTECTION_GRANTED_one": "{{count}} -ari perlindungan na ibere",
+      "PROTECTION_GRANTED_other": "{{count}} -ari perlindungan na ibere",
+      "STAGE_UPDATED": "Status iperbarui gabe {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Bidang {{count}} na dob iperbarui",
+      "LEAD_DETAILS_UPDATED_other": "Bidang {{count}} na dob iperbarui",
+      "LEAD_ASSIGNED": "Itugaskon hubani {{name}}",
+      "LEAD_UNASSIGNED": "Lang itugaskon",
+      "REFERRAL_ACCEPTED": "Tukang manjalo rujukan ai",
+      "REFERRAL_REJECTED": "Tukang bangunan manolak rujukan ai. Alasan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Upaya pendaftaran duplikat humbani {{partner}} itulak",
+      "BOOKING_COMPLETED": "Domma salosei pemesanan",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Kepemilikan operasional ipindahi hubani Pembangun",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribusi mitra ipertahankon",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisi domma ibahen",
+      "HANDOVER_COMPLETED": "Penyerahan domma salosei",
+      "ADMIN_PROTECTION_RELEASED": "Admin padaskon perlindungan duplikat humbani mungkahni. Alasan: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin mambahen pendaftaran use humbani {{from}} hu {{to}} . Alasan: {{reason}}"
+    }
+  }
+}

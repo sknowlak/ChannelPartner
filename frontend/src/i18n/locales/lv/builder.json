@@ -1,0 +1,93 @@
+{
+  "shell": {
+    "portal": "Būvnieku portāls",
+    "referrals": "Ieteikumi",
+    "builderLogin": "Builder pieteikšanās",
+    "partnerLogin": "Kanāla partnera pieteikšanās"
+  },
+  "login": {
+    "title": "Builder pierakstīšanās",
+    "hint": "Builder kontus izveido Leadrat . Jautājiet savam administratoram, ja jums tāda nav."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Gaida jūsu lēmumu",
+    "ACCEPTED": "Pieņemts",
+    "REJECTED": "Noraidīts"
+  },
+  "list": {
+    "title": "Ieteikumi",
+    "allProjects": "Visi projekti",
+    "allStatuses": "Visi statusi",
+    "count_zero": "{{count}} ieteikumi",
+    "count_one": "{{count}} ieteikums",
+    "count_other": "{{count}} ieteikumi",
+    "columns": {
+      "referral": "Ieteikums",
+      "customer": "Klients",
+      "project": "Projekts",
+      "sourcePartner": "Avota partneris",
+      "status": "Statuss",
+      "booking": "Rezervēšana",
+      "registered": "Reģistrēts"
+    },
+    "booked": "Rezervēts",
+    "empty": "Vēl nav neviena nosūtījuma."
+  },
+  "detail": {
+    "customer": "Klients",
+    "sourcePartner": "Avota partneris",
+    "attributionNote": "(attiecinājums — nevar mainīt)",
+    "leadStatus": "Potenciālā pirkuma statuss",
+    "protectedUntil": "Aizsargāts līdz",
+    "referral": "Ieteikums",
+    "reason": "Iemesls: {{reason}}",
+    "booking": "Rezervēšana",
+    "bookedOwner": "Rezervēts — jūs esat operatīvais īpašnieks",
+    "notBooked": "Nav rezervēts",
+    "sharedAfterBooking": "Kopīgots pēc rezervācijas",
+    "accept": "Pieņemt nosūtīšanu",
+    "confirmBooking": "Apstipriniet rezervāciju",
+    "reject": "Noraidīt ieteikumu",
+    "rejectReasonLabel": "Noraidīšanas iemesls (parādīts partnerim) *",
+    "rejectConfirm": "Noraidīt",
+    "confirmBookingPrompt": "Vai apstiprināt rezervāciju? Darbības īpašumtiesības pāriet uz jums, un partneris kļūst tiesīgs saņemt komisiju.",
+    "notice": {
+      "booked": "Rezervācija apstiprināta.",
+      "accepted": "Nosūtījums pieņemts.",
+      "rejected": "Ieteikums noraidīts."
+    },
+    "backToReferrals": "Atpakaļ uz Referrals"
+  },
+  "history": {
+    "title": "Vēsture",
+    "actor": {
+      "system": "Sistēma",
+      "partner": "Kanāla partneris",
+      "admin": "Leadrat administrators"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Saņemta partnera reģistrācija",
+      "DUPLICATE_CHECK_COMPLETED": "Dublikāta pārbaude pabeigta — nav atrasts neviens aktīvs dublikāts",
+      "REGISTRATION_ACCEPTED": "Reģistrācija pieņemta",
+      "PROTECTION_GRANTED_zero": "Piešķirta {{count}} dienu aizsardzība",
+      "PROTECTION_GRANTED_one": "Piešķirta {{count}} dienu aizsardzība",
+      "PROTECTION_GRANTED_other": "Piešķirta {{count}} dienu aizsardzība",
+      "STAGE_UPDATED": "Statuss atjaunināts uz {{stage}}",
+      "LEAD_DETAILS_UPDATED_zero": "Atjaunināti {{count}} lauki",
+      "LEAD_DETAILS_UPDATED_one": "Atjaunināts lauks {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "Atjaunināti {{count}} lauki",
+      "LEAD_ASSIGNED": "Piešķirts {{name}}",
+      "LEAD_UNASSIGNED": "Nav piešķirts",
+      "REFERRAL_ACCEPTED": "Builder pieņēma ieteikumu",
+      "REFERRAL_REJECTED": "Builder noraidīja ieteikumu. Iemesls: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Reģistrācijas dublikāts, ko veica {{partner}} tika noraidīts",
+      "BOOKING_COMPLETED": "Rezervācija pabeigta",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operatīvās īpašumtiesības nodotas Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partnera attiecinājums saglabāts",
+      "COMMISSION_ELIGIBILITY_CREATED": "Izveidota komisijas maksa",
+      "HANDOVER_COMPLETED": "Nodošana pabeigta",
+      "ADMIN_PROTECTION_RELEASED": "Administrators agri atbrīvoja dublikātu aizsardzību. Iemesls: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Administrators atkārtoti piešķīra reģistrāciju no {{from}} uz {{to}} . Iemesls: {{reason}}"
+    }
+  }
+}

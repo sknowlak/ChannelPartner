@@ -1,0 +1,192 @@
+{
+  "list": {
+    "title": "Moje vedení",
+    "signedInAs": "Jste přihlášeni jako {{name}} ( {{partnerId}} ) · časy zobrazené v {{timezone}}",
+    "addLead": "+ Přidat olovo",
+    "tabs": {
+      "all": "Vše ( {{count}} )",
+      "pending": "Nevyřízeno ( {{count}} )",
+      "booked": "Zarezervováno ( {{count}} )"
+    },
+    "searchPlaceholder": "Hledejte podle jména, mobilu nebo registračního ID ...",
+    "manageColumns": "Správa sloupců",
+    "rowsPerPage": "Počet řádků na stránku",
+    "registrationId": "Registrační ID",
+    "emptyState": "Zatím žádné potenciální zákazníky – zaregistrujte si svého prvního.",
+    "noMatch": "Těmto filtrům neodpovídají žádní potenciální zákazníci.",
+    "showing": "Zobrazeno {{from}} - {{to}} z {{total}} záznamů",
+    "actions": {
+      "preview": "Náhled a rychlá aktualizace",
+      "history": "Dějiny",
+      "email": "E-mail",
+      "whatsapp": "WhatsApp",
+      "call": "Volání"
+    },
+    "pagination": {
+      "first": "První stránka",
+      "previous": "Předchozí stránka",
+      "next": "Další stránka",
+      "last": "Poslední stránka"
+    }
+  },
+  "columns": {
+    "status": "Postavení",
+    "assignTo": "Přiřadit",
+    "booked": "Zarezervováno",
+    "protectionUntil": "Ochrana Do"
+  },
+  "booking": {
+    "booked": "Zarezervováno",
+    "pending": "Čeká na vyřízení"
+  },
+  "assign": {
+    "unassigned": "Nepřiřazeno",
+    "owner": "{{name}} (vlastník)",
+    "inactive": "{{name}} (neaktivní)",
+    "unknownUser": "Neznámý uživatel",
+    "assignedTo": "Přiděleno uživateli {{name}}"
+  },
+  "form": {
+    "addTitle": "Přidat olovo",
+    "editTitle": "Upravit zájemce",
+    "noPermissionAdd": "Nemáte oprávnění registrovat potenciální zákazníky.",
+    "noPermissionEdit": "Nemáte oprávnění upravovat potenciální zákazníky.",
+    "selectPlaceholder": "Vybrat...",
+    "commaSeparated": "Odděleno čárkou",
+    "phonePlaceholder": "Telefonní číslo",
+    "countryCode": "Kód země"
+  },
+  "project": {
+    "none": "Zatím žádný projekt (nedoporučeno)",
+    "notInList": "{{project}} (není v seznamu projektů)"
+  },
+  "journey": {
+    "customer": "Zákazník",
+    "currentOwner": "Současný vlastník",
+    "protectionExpiry": "Vypršení ochrany",
+    "leadStatus": "Stav potenciálního zákazníka",
+    "scheduled": "Naplánováno",
+    "assignedTo": "Přiřazeno komu",
+    "referral": "Doporučení",
+    "builderReason": "Důvod stavebníka: {{reason}}",
+    "bookedHint": "Rezervováno stavebníkem - provozní vlastnictví se přesunulo na stavebníka; vaše přiřazení a nárok na provizi jsou zachovány.",
+    "notBookedHint": "Rezervace jsou potvrzeny stavitelem, jakmile přijme doporučení.",
+    "quickUpdate": "Rychlá aktualizace",
+    "leadDetails": "Podrobnosti o potenciálním zákazníkovi",
+    "progressHistory": "Historie pokroku",
+    "timesIn": "(časy v {{timezone}} )",
+    "backToMyLeads": "Zpět k My Leads",
+    "editLead": "Upravit zájemce"
+  },
+  "referral": {
+    "NOT_REFERRED": "Nedoporučeno (žádný projekt)",
+    "PENDING_BUILDER": "Čekání na stavitele",
+    "ACCEPTED": "Přijato stavitelem",
+    "REJECTED": "Stavitelem zamítnuto"
+  },
+  "preview": {
+    "ariaLabel": "Náhled potenciálního zákazníka",
+    "title": "Náhled potenciálního zákazníka",
+    "source": "Zdroj",
+    "location": "Umístění",
+    "scheduled": "Naplánováno",
+    "registered": "Registrovaný",
+    "latestNote": "Nejnovější poznámka",
+    "quickUpdate": "Rychlá aktualizace",
+    "fullDetails": "Úplné podrobnosti",
+    "editLead": "Upravit zájemce",
+    "history": "Dějiny"
+  },
+  "quick": {
+    "assignedTo": "Přiřazeno komu",
+    "status": "Postavení",
+    "subStatus": "Dílčí stav",
+    "selectSubStatus": "Vybrat dílčí stav...",
+    "none": "Žádný",
+    "scheduledAt": "Naplánováno na",
+    "localTime": "místního času",
+    "note": "Poznámka",
+    "notePlaceholder": "Co se stalo při tomto hovoru/návštěvě? (volitelný)",
+    "updateStatus": "Stav aktualizace",
+    "statusUpdated": "Stav aktualizován",
+    "bookedLocked": "Tento zájemce je zarezervován – jeho stav již nelze změnit.",
+    "viewOnly": "Tohoto potenciálního zákazníka můžete zobrazit, ale vaše role ho nemůže aktualizovat."
+  },
+  "history": {
+    "title": "Historie – {{registrationId}}",
+    "tabs": {
+      "all": "Vše",
+      "status": "Postavení",
+      "assignment": "Úkol",
+      "notes": "Poznámky"
+    },
+    "doneBy": "Autor: {{actor}}",
+    "system": "Systém",
+    "platforms": {
+      "System": "Systém",
+      "External": "Externí",
+      "Web": "Web",
+      "Mobile": "Mobilní"
+    },
+    "added": "přidáno",
+    "updated": "aktualizováno",
+    "empty": "(prázdný)",
+    "noHistory": "V této kategorii zatím žádná historie.",
+    "fieldLabels": {
+      "stage": "Postavení",
+      "subStatus": "Dílčí stav",
+      "scheduledAt": "Naplánovat",
+      "notes": "Poznámky",
+      "assignedTo": "Přiřazeno komu"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Registrace partnera přijata",
+      "DUPLICATE_CHECK_COMPLETED": "Kontrola duplikátů dokončena – nenalezen žádný aktivní duplikát",
+      "REGISTRATION_ACCEPTED": "Registrace přijata",
+      "PROTECTION_GRANTED_one": "{{count}} -denní ochrana udělena",
+      "PROTECTION_GRANTED_few": "{{count}} -denní ochrana udělena",
+      "PROTECTION_GRANTED_many": "{{count}} -denní ochrana udělena",
+      "PROTECTION_GRANTED_other": "{{count}} -denní ochrana udělena",
+      "REGISTRATION_ATTEMPT_REJECTED": "Duplicitní pokus o registraci od {{partnerId}} zamítnut",
+      "LEAD_DETAILS_UPDATED_one": "Aktualizováno pole {{count}}",
+      "LEAD_DETAILS_UPDATED_few": "Aktualizováno {{count}} polí",
+      "LEAD_DETAILS_UPDATED_many": "Aktualizováno {{count}} polí",
+      "LEAD_DETAILS_UPDATED_other": "Aktualizováno {{count}} polí",
+      "STAGE_UPDATED": "Stav aktualizován na {{status}}",
+      "LEAD_ASSIGNED": "Přiděleno uživateli {{name}}",
+      "LEAD_UNASSIGNED": "Nepřiřazeno",
+      "BOOKING_COMPLETED": "Rezervace dokončena",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Provozní vlastnictví převedeno na Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribuce partnera zachována",
+      "COMMISSION_ELIGIBILITY_CREATED": "Způsobilost provize vytvořena",
+      "HANDOVER_COMPLETED": "Předání dokončeno",
+      "REFERRAL_ACCEPTED": "Stavebník doporučení přijal",
+      "REFERRAL_REJECTED": "Stavebník doporučení odmítl. Důvod: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin předčasně uvolnil ochranu proti duplicitě. Důvod: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Administrátor přeřadil registraci z {{from}} na {{to}} . Důvod: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Správa sloupců",
+    "hint": "Přetažením změníte pořadí · zaškrtnutím zobrazíte",
+    "showAll": "Zobrazit vše",
+    "resetDefault": "Obnovit výchozí"
+  },
+  "filters": {
+    "title": "Filtry",
+    "allProjects": "Všechny projekty",
+    "any": "Žádný",
+    "noFields": "Zatím nejsou povolena žádná další filtrovatelná pole (Nastavení > Potenciální zákazník).",
+    "clearAll": "Vymazat vše"
+  },
+  "phone": {
+    "MISSING": "Telefonní číslo je povinné.",
+    "INVALID": "Zadejte prosím platné telefonní číslo.",
+    "TOO_SHORT": "Telefonní číslo je příliš krátké.",
+    "TOO_LONG": "Telefonní číslo je příliš dlouhé.",
+    "INVALID_FOR_COUNTRY": "Toto telefonní číslo není platné pro {{country}} .",
+    "COUNTRY_MISMATCH": "Vyberte prosím správný kód země.",
+    "NOT_MOBILE": "Zadejte prosím mobilní číslo, nikoli pevnou linku."
+  }
+}

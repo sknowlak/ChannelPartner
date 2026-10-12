@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "ГӀуцӀарухъанасул портал",
+    "referrals": "Рефералал",
+    "builderLogin": "ГӀуцӀарухъанасул логин",
+    "partnerLogin": "Каналалъул партнералъул логин"
+  },
+  "login": {
+    "title": "ГӀуцӀарас хъвай-хъвагӀай гьабе",
+    "hint": "Билдеразул аккаунтал гӀуцӀула Leadrat . Дурго администраторасда гьикъе, дур гьечӀони."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Дур хӀукмуялъухъ балагьун чӀун",
+    "ACCEPTED": "Къабул гьабуна",
+    "REJECTED": "Нахъ чӀвана"
+  },
+  "list": {
+    "title": "Рефералал",
+    "allProjects": "Киналго проектал",
+    "allStatuses": "Киналго статусал",
+    "count_one": "{{count}} реферал",
+    "count_other": "{{count}} рефералал",
+    "columns": {
+      "referral": "Реферал",
+      "customer": "Бичун босулев чи",
+      "project": "Проект",
+      "sourcePartner": "Источник Партнер",
+      "status": "Халкъазда гьоркьосеб ихтияралда бугеб хӀал",
+      "booking": "Бронирование",
+      "registered": "Регистрация гьабуна"
+    },
+    "booked": "Заказ гьабуна",
+    "empty": "Жеги рефералал гьечӀо."
+  },
+  "detail": {
+    "customer": "Бичун босулев чи",
+    "sourcePartner": "Источник Партнер",
+    "attributionNote": "(атрибуция - хисизабизе бегьуларо)",
+    "leadStatus": "Церехъанлъиялъул статус",
+    "protectedUntil": "ЦӀунула 2012 соналде щвезегӀан.",
+    "referral": "Реферал",
+    "reason": "ГӀилла: {{reason}}",
+    "booking": "Бронирование",
+    "bookedOwner": "Забронирован - мун вуго оперативияб бетӀергьан",
+    "notBooked": "Не забронировано",
+    "sharedAfterBooking": "Бронирование гьабун хадуб гьоркьоб биччана",
+    "accept": "Реферал къабул гьабе",
+    "confirmBooking": "Бронирование тасдикъ гьабе",
+    "reject": "Реферал нахъ чӀвазе",
+    "rejectReasonLabel": "НахъчӀваялъе гӀилла (партнерасда бихьула) *",
+    "rejectConfirm": "Нахъе цузе",
+    "confirmBookingPrompt": "Бронирование тасдикъ гьабизе? Оперативияб бетӀергьанлъи нужехъе уна ва партнер лъугьуна комиссия кьезе ихтияр бугевлъун.",
+    "notice": {
+      "booked": "Бронирование тасдикъ гьабуна.",
+      "accepted": "Направление къабул гьабуна.",
+      "rejected": "Направление нахъ чӀвана."
+    },
+    "backToReferrals": "Рефералазде нахъе ине"
+  },
+  "history": {
+    "title": "История",
+    "actor": {
+      "system": "Низам",
+      "partner": "Каналалъул партнер",
+      "admin": "Leadrat админ"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Партнеразул регистрация щвана",
+      "DUPLICATE_CHECK_COMPLETED": "Дубликаталъул халгьаби лъугӀана - жигараб дубликат батичӀо",
+      "REGISTRATION_ACCEPTED": "Регистрация къабул гьабуна",
+      "PROTECTION_GRANTED_one": "{{count}} -къоялъул цӀуни кьуна",
+      "PROTECTION_GRANTED_other": "{{count}} -къоялъул цӀуни кьуна",
+      "STAGE_UPDATED": "Статус цӀигьабуна {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "ЦӀигьабураб {{count}} майдан",
+      "LEAD_DETAILS_UPDATED_other": "ЦӀигьабураб {{count}} майданал",
+      "LEAD_ASSIGNED": "Назначен для {{name}}",
+      "LEAD_UNASSIGNED": "ТӀадкъай кьечӀеб",
+      "REFERRAL_ACCEPTED": "Строитель принял направление",
+      "REFERRAL_REJECTED": "Билдерас нахъ чӀвана гьеб направление. ГӀилла: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} хъвай-хъвагӀай гьабизе гьабураб дубликат нахъ чӀвана",
+      "BOOKING_COMPLETED": "Бронирование лъугӀана",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Оперативияб бетӀергьанлъи кьуна Строитель .",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Партнеразул атрибуция цӀунун хутӀана",
+      "COMMISSION_ELIGIBILITY_CREATED": "Комиссиялъул ихтияр гӀуцӀун букӀана",
+      "HANDOVER_COMPLETED": "Кьей лъугӀана",
+      "ADMIN_PROTECTION_RELEASED": "Админ цебего биччана дубликат цӀуни. ГӀилла: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Админ переназначил регистрацию с {{from}} на {{to}} . ГӀилла: {{reason}}"
+    }
+  }
+}

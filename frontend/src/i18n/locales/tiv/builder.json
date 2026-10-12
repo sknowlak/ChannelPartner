@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Ijiir i maan kwagh",
+    "referrals": "Mba i tindi ve hen ijiir igen",
+    "builderLogin": "Or u maan kwagh",
+    "partnerLogin": "Mzough u Mbatomov mba Channel"
+  },
+  "login": {
+    "title": "Or u maan kwagh nan nyôr ker",
+    "hint": "Ior mba ve lu a akaa a maan kwagh la ka Leadrat . Pine or u nengen sha tom wou aluer u ngu a mi ga yô."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "M ngu keghen kwagh u u tsough u eren la",
+    "ACCEPTED": "I lumun a mi",
+    "REJECTED": "I venda un"
+  },
+  "list": {
+    "title": "Mba i tindi ve hen ijiir igen",
+    "allProjects": "Tom cii",
+    "allStatuses": "Mbamlu cii",
+    "count_one": "{{count}} kwagh u i tindi",
+    "count_other": "{{count}} mba i tindi ve la",
+    "columns": {
+      "referral": "U tindin orgen",
+      "customer": "Orkasua",
+      "project": "Tom",
+      "sourcePartner": "Or u nan lu a ityom i eren",
+      "status": "Iaven",
+      "booking": "U eren booking",
+      "registered": "I nger iti"
+    },
+    "booked": "I nger iti",
+    "empty": "Ior mba i tindi ve la mba ga."
+  },
+  "detail": {
+    "customer": "Orkasua",
+    "sourcePartner": "Or u nan lu a ityom i eren",
+    "attributionNote": "(kwagh u i yer ér attribution - a fatyo u geman ga)",
+    "leadStatus": "Mlu u Hemen",
+    "protectedUntil": "I kura un zan zan 2019.",
+    "referral": "U tindin orgen",
+    "reason": "Ityôkyaa: {{reason}}",
+    "booking": "U eren booking",
+    "bookedOwner": "Booked - ka we u lu or u eren tom ye .",
+    "notBooked": "I nger iti ga",
+    "sharedAfterBooking": "I pase kwagh shighe u i er booking kera yô",
+    "accept": "Lumun u tindin we",
+    "confirmBooking": "Lumun u eren booking",
+    "reject": "Venda u tindin we hen ijiir igen",
+    "rejectReasonLabel": "Ityôkyaa i vendan yô (tese or u nan lu vea nan la) *",
+    "rejectConfirm": "Venda",
+    "confirmBookingPrompt": "U nger takerada ne kpa? Ior mba ve lu a ityom la ka ve mough ve yem hen a we, nahan or u u lu eren tom a nan la nan hingir u zuan a tom.",
+    "notice": {
+      "booked": "I nger booking.",
+      "accepted": "I lumun ér i tindi un.",
+      "rejected": "I venda u tindin un."
+    },
+    "backToReferrals": "Hide hen mba i tindi ve la"
+  },
+  "history": {
+    "title": "Yiase",
+    "actor": {
+      "system": "Shighr",
+      "partner": "Or u eren tom vea mo",
+      "admin": "Leadrat u hemen"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "I nger ati a or u nan er tom imôngo la.",
+      "DUPLICATE_CHECK_COMPLETED": "I nenge sha kwagh u i nger kwa har la been - i zua a kwagh u i nger kwa har la ga",
+      "REGISTRATION_ACCEPTED": "I lumun u ngeren iti",
+      "PROTECTION_GRANTED_one": "{{count}} -iyange i i ne mkor u",
+      "PROTECTION_GRANTED_other": "{{count}} -iyange i i ne mkor u",
+      "STAGE_UPDATED": "I hide i sôr mlu u kwagh ne hingir {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "I hide i sôr {{count}} ijiir la",
+      "LEAD_DETAILS_UPDATED_other": "I hide i sôr {{count}} ajiir",
+      "LEAD_ASSIGNED": "I na un tom hen {{name}}",
+      "LEAD_UNASSIGNED": "I na un tom ga",
+      "REFERRAL_ACCEPTED": "Or u maan kwagh la lumun a kwagh u i tindi un la.",
+      "REFERRAL_REJECTED": "Builder yange venda kwagh u i tindi un la. Ityôkyaa: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "I venda kwagh u {{partner}} yange nôngo ér una nger iti kwa har yô.",
+      "BOOKING_COMPLETED": "I bee u eren booking",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "I gema ian i eren tom la i na or u nan lu maan kwagh la.",
+      "PARTNER_ATTRIBUTION_PRESERVED": "I kura iti i mba ve lu a we imôngo la",
+      "COMMISSION_ELIGIBILITY_CREATED": "I ver ian i eren tom u i yer ér commission la.",
+      "HANDOVER_COMPLETED": "I na or kwagh been",
+      "ADMIN_PROTECTION_RELEASED": "Orvesen due a kwagh u kuran iyol sha shighe vough. Ityôkyaa: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Orvesen hide ver iti i ngeren iti sha {{from}} hingir {{to}} . Ityôkyaa: {{reason}}"
+    }
+  }
+}

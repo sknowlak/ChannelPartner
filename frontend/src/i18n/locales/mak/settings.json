@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Pangngatoro",
+    "noPermission": "Ikatte tena ijinna untu angngatoro setting."
+  },
+  "categories": {
+    "lead": "Ammimping",
+    "user": "Pake",
+    "integrations": "Integrasi"
+  },
+  "leadTabs": {
+    "fields": "Bidang",
+    "statuses": "Status & Sub-Status",
+    "notifications": "Notifikasi & Penjadwalan"
+  },
+  "fields": {
+    "leadIntro": "Konfigurasikan form penangkapan lead: aktifkan/nonaktifkan bidang, tanrai mereka yang dibutuhkan, atau tambahkan bidang khusus Anda sendiri.",
+    "userIntro": "Konfigurasikan formulir Tambah/Edit Anggota Tim: aktifkan/nonaktifkan bidang, tanrai mereka yang dibutuhkan, atau tambahkan bidang khusus Anda sendiri.",
+    "addCustomField": "+ tambai bidang khusus",
+    "fieldLabel": "Label lapangan",
+    "group": "Kalompo",
+    "groupPlaceholderLead": "misalna informasi pakkuta'nang",
+    "groupPlaceholderUser": "misalna Rincian Tambahan",
+    "dataType": "Jenis data",
+    "options": "Pilihan (nipisangkai koma)",
+    "requiredLead": "Parallui - pa'samaturukang ri timnu musti antama'i anne untu' andaftarkan lead",
+    "requiredUser": "Parallui - musti niisi punna nitambai anggota tim",
+    "creating": "Appareki...",
+    "createField": "appare bidang",
+    "columns": {
+      "field": "Lapangang",
+      "group": "Kalompo",
+      "type": "Jenis",
+      "required": "Riparallui",
+      "enabled": "Ni aktifkan",
+      "kind": "Bajik"
+    },
+    "kind": {
+      "custom": "Kebiasaan",
+      "core": "Inti (nikunci)",
+      "standard": "Sitandara"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Teks",
+    "TEXTAREA": "Teks lantang",
+    "NUMBER": "Nomoro",
+    "CURRENCY": "Mata doe",
+    "DATE": "Tanggala",
+    "SELECT": "Dropdown",
+    "LIST": "Dattara"
+  },
+  "picker": {
+    "searchPlaceholder": "Pa'boyai bidang lead...",
+    "summary": "{{shown}} nipa'piitteang · {{mandatory}} wajib",
+    "mandatory": "Wajib",
+    "noMatch": "Tena bidang cocok."
+  },
+  "statuses": {
+    "intro": "Status siagang sub-status leadnu - apa massing-massing appala (tanggal & wattu, bidang lead) punna rie' tau ampakabajiki lead mange ri ia.",
+    "add": "+ tambai status",
+    "columns": {
+      "order": "Appesang",
+      "status": "Status",
+      "subStatuses": "Sub-status",
+      "asksFor": "appala",
+      "active": "Aktif"
+    },
+    "moveUp": "A'lette' nai'",
+    "moveDown": "A'letteki naung",
+    "defaultBadge": "Default untuk lead beru",
+    "bookingBadge": "Status pemesanan",
+    "asksForLabel": "appala {{label}}",
+    "asksForDateTime": "Appala tanggala siagang wattu",
+    "none": "Tena",
+    "dateTime": "Tanggal & wattu",
+    "scheduledOn": "ri {{names}}",
+    "fieldsSummary_one": "{{count}} bidang ( {{mandatory}} wajib)",
+    "fieldsSummary_other": "{{count}} bidang ( {{mandatory}} wajib)",
+    "deleteConfirm": "Hapus status \" {{name}} \"? anne takkulleai niurangi.",
+    "editTitle": "Edit Status - {{name}}",
+    "newTitle": "Status beru",
+    "name": "Areng Status",
+    "colour": "Cora",
+    "active": "Aktif",
+    "isDefault": "Status bawaan untuk prospek baru",
+    "isBooking": "Status pemesanan (ni pasang ri pemesanan lengkap)",
+    "whenMoved": "Punna nia lead nipalette mange ri status kammaya anne",
+    "askSchedule": "Appala tanggal & wattu (penjadwal)",
+    "scheduleLabelPlaceholder": "Label, e.g Kunjungi ri",
+    "fieldsToShow": "Bidang-bidang timah untuk ditunjukkan pada formulir pembaruan",
+    "subStatusesTitle": "Sub-status",
+    "subStatusesHint": "massing-massing sub-status akkullei appala tanggal & wattu kalenna siagang natambai bidangna - ni pa'piitteang ri dallekang bidang status ri dallekang.",
+    "subStatusName": "areng sub-status",
+    "subFields": "Bidang ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Label tanggala siagang wattu, ebara'na a'kiring ammotere' ri",
+    "addSubStatus": "+ tambai sub-status",
+    "saveStatus": "Simpan Status",
+    "createStatus": "appare status"
+  },
+  "notifications": {
+    "intro": "Pauangi tau annabaya punna lead anrapi status - langsung, iareka wattu lebba nipattantu riolo/ribokoangna tanggal & wattu ni jadwalkan ri ia.",
+    "add": "+ Tambahkan Pemberitahuan",
+    "columns": {
+      "notification": "Pa'pau",
+      "whenStatusIs": "Ri wattu statusna",
+      "sends": "Nakiring",
+      "to": "Mange",
+      "via": "Angngolo",
+      "enabled": "Ni aktifkan"
+    },
+    "anyStatus": "Status apa-apa mamo",
+    "anySubStatus": "Sub-status apa-apa mamo",
+    "inactiveOption": "{{name}} (tena aktif)",
+    "emptyRules": "Tenapa notifikasi - tambai se're untu' ampakaingaki timnu punna nia' lead narapi' status.",
+    "jobs": {
+      "title": "Jadwal & Nikirim",
+      "firesAt": "Api ri",
+      "notification": "Pa'pau",
+      "lead": "Ammimping",
+      "status": "Status",
+      "details": "Detail",
+      "empty": "Tena apa-apa ni jadwalkan yareka ni kirim.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Tertunda",
+      "PROCESSING": "Proses",
+      "SENT": "Ta'kirim",
+      "FAILED": "Gagala",
+      "SKIPPED": "Ni lewati",
+      "CANCELLED": "Ni batalkan"
+    },
+    "deliveryStatus": {
+      "SENT": "ta'kirim",
+      "FAILED": "gagala",
+      "SKIPPED": "nibokoimi"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ri laleng aplikasi",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Pake yang ni tugaskan",
+      "owner": "Patanna",
+      "updatedBy": "Ni update ri",
+      "role": "Peran: {{name}}"
+    },
+    "channels": {
+      "inApp": "Ri laleng aplikasi",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Hapus notifikasi \" {{name}} \"? Pappiu'rangi yang nitanggu battu ri anjo ni batalkangi.",
+    "testPrompt": "Kikirimmi tes notifikasi anne mange ri kalennu (in-app) ammake ID lead apa?",
+    "testSent": "Nikiring mange ri loncengnu: {{title}} {{message}}",
+    "headersInvalid": "Header Webhook musti valid JSON , misalna {\"Otorisasi\": \"Pembawa xyz\"}",
+    "editTitle": "Edit Notifikasi",
+    "newTitle": "Pemberitahuan baru",
+    "name": "Areng",
+    "namePlaceholder": "misalna pappakainga kunjungang situs",
+    "whenStatus": "Punna statusna se'rea pamimping iamintu",
+    "subStatus": "Sub-status",
+    "send": "Kirim (penjadwal)",
+    "custom": "Kebiasaan...",
+    "modeBefore": "rioloang wattu ni jadwalkan",
+    "modeAfter": "ribokoangna wattu ni jadwalkan",
+    "noScheduleWarning": "Anne statusa tena na appala tanggal & wattu, jari notifikasi \"riolo/ri/ribokoang wattu ni jadwalkan\" tena na la'jari.",
+    "noScheduleFix": "Pa'jari <strong>appala' tanggala siagang wattu</strong> untu' anjo irawanganna Status & Sub-Status, iareka kirim langsung.",
+    "sendTo": "Kirim mange ri (kombinasi apa-apa mamo)",
+    "recipientAssigned": "Pake yang ni tugaskan (pemilik utama)",
+    "recipientOwner": "patanna akun / admin",
+    "recipientUpdatedBy": "Tau ampakabajiki statusna",
+    "everyoneWithRole": "Sikontu tau niaka peranna",
+    "specificUsers": "Pakeang khusus (aktif)",
+    "inactiveNever": "Tau tenaya na aktif tena lebba natarima notifikasi, manna pole nipile.",
+    "deliverVia": "Kipabattui lalang",
+    "channelInApp": "Ri laleng aplikasi (lonceng)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS provider)",
+    "emailHint": "Email mange ri alamat emailna massing-massing tau annarimaya siagang parallui SMTP nipasang ri server (backend/.env); sanggenna anjo email ni kirim ni log salaku ni lewati.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Headers ( JSON )",
+    "content": "Isi pemberitahuan",
+    "title": "Judulu",
+    "message": "Pappipasang",
+    "insertIntoTitle": "Pa'nassaang ri judul",
+    "insertIntoMessage": "Pa'nassaang ri Pesan",
+    "anyLeadField": "Sikontu bidang lead anjama to'ji, ebara'na <code1>{{example1}}</code1> iareka <code2>{{example2}}</code2> .",
+    "preview": "Pratinjau (contoh lead)",
+    "enabled": "Ni aktifkan",
+    "saveRule": "Simpan Pemberitahuan",
+    "createRule": "appare notifikasi",
+    "variables": {
+      "customerName": "areng poko",
+      "customerMobile": "Ponsel utama",
+      "customerEmail": "Email pimpinan",
+      "registrationId": "ID pamimping",
+      "status": "Status",
+      "subStatus": "Sub-status",
+      "scheduleAt": "Tanggal siagang wattu ni jadwalkan",
+      "assignedTo": "Pake yang ni tugaskan",
+      "updatedBy": "Ni update ri",
+      "recipient": "Areng tau annarimaya",
+      "project": "Proyek",
+      "notes": "Catatang beru",
+      "partner": "Areng pa'samaturukang"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Langsung punna statusna nipasang",
+      "AT": "Ri wattu lebaka nipattantu",
+      "A1D": "1 allo ribokoangna wattu ni jadwalkan (paressa susulan)"
+    },
+    "immediately": "Silalonna",
+    "atScheduled": "Ri wattu lebaka nipattantu",
+    "before": {
+      "MINUTES_one": "{{count}} menit riolo ri wattu ni jadwalkan",
+      "MINUTES_other": "{{count}} menit riolo ri wattu ni jadwalkan",
+      "HOURS_one": "{{count}} jam riolo ri wattu ni jadwalkan",
+      "HOURS_other": "{{count}} jam riolo ri wattu ni jadwalkan",
+      "DAYS_one": "{{count}} allo riolo ri wattu ni jadwalkan",
+      "DAYS_other": "{{count}} allo riolo ri wattu nipattantua",
+      "WEEKS_one": "{{count}} minggu riolo ri wattu ni jadwalkan",
+      "WEEKS_other": "{{count}} minggu riolo ri wattu ni jadwalkan",
+      "MONTHS_one": "{{count}} bulang riolo ri wattu ni jadwalkan",
+      "MONTHS_other": "{{count}} bulang riolo ri wattu ni jadwalkan",
+      "YEARS_one": "{{count}} taung riolo ri wattu ni jadwalkan",
+      "YEARS_other": "{{count}} taung riolo ri wattu ni jadwalkan"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} menit ribokoangna wattu ni jadwalkan",
+      "MINUTES_other": "{{count}} menit ribokoangna wattu ni jadwalkan",
+      "HOURS_one": "{{count}} jam ribokoangna wattu ni jadwalkan",
+      "HOURS_other": "{{count}} jam ribokoangna wattu ni jadwalkan",
+      "DAYS_one": "{{count}} allo ribokoangna wattu ni jadwalkan",
+      "DAYS_other": "{{count}} allo ribokoangna wattu ni jadwalkan",
+      "WEEKS_one": "{{count}} minggu ribokoangna wattu ni jadwalkan",
+      "WEEKS_other": "{{count}} minggu ribokoangna wattu ni jadwalkan",
+      "MONTHS_one": "{{count}} bulang ribokoangna wattu ni jadwalkan",
+      "MONTHS_other": "{{count}} bulang ribokoangna wattu ni jadwalkan",
+      "YEARS_one": "{{count}} taung ribokoangna wattu ni jadwalkan",
+      "YEARS_other": "{{count}} taung ribokoangna wattu ni jadwalkan"
+    },
+    "units": {
+      "MINUTES_one": "manni",
+      "MINUTES_other": "manni",
+      "HOURS_one": "jam",
+      "HOURS_other": "jam",
+      "DAYS_one": "allo",
+      "DAYS_other": "allo",
+      "WEEKS_one": "pekan",
+      "WEEKS_other": "minggu",
+      "MONTHS_one": "bulan",
+      "MONTHS_other": "bulang",
+      "YEARS_one": "taun",
+      "YEARS_other": "attahung tahung"
+    }
+  }
+}

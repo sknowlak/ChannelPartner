@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Deng kanakung manimuna",
+    "signedInAs": "Sign in as {{name}} ( {{partnerId}} ) · times shown in {{timezone}}",
+    "addLead": "+ Dagdagan ing Tingga",
+    "tabs": {
+      "all": "Sabla ( {{count}} )",
+      "pending": "Pending ( {{count}} )",
+      "booked": "Me-book ( {{count}} )"
+    },
+    "searchPlaceholder": "Manintun keng lagyu, mobile, o registration ID ...",
+    "manageColumns": "Pamahalaan la reng haligi",
+    "rowsPerPage": "Hilera balang bulung",
+    "registrationId": "Registration ID",
+    "emptyState": "Ala pang lead - i-register me ing mumunang metung.",
+    "noMatch": "alang lead a makatuglung kareng filter a reni.",
+    "showing": "Papakit ya ing {{from}} - {{to}} da reng {{total}} a entries",
+    "actions": {
+      "preview": "Preview & quick update",
+      "history": "Historia",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Awsan"
+    },
+    "pagination": {
+      "first": "Mumunang bulung",
+      "previous": "minunang bulung",
+      "next": "tutuking bulung",
+      "last": "Tauling bulung"
+    }
+  },
+  "columns": {
+    "status": "Kabilyan",
+    "assignTo": "I-assign to",
+    "booked": "me-book na",
+    "protectionUntil": "Proteksyun anggang"
+  },
+  "booking": {
+    "booked": "me-book na",
+    "pending": "E tapus"
+  },
+  "assign": {
+    "unassigned": "E miyabe",
+    "owner": "{{name}} (Makibandi)",
+    "inactive": "{{name}} (e aktibu)",
+    "unknownUser": "E kilalang talagamit",
+    "assignedTo": "Mitalaga ya keng {{name}}"
+  },
+  "form": {
+    "addTitle": "Dagdagan me ing tingga",
+    "editTitle": "I-edit ing Lead",
+    "noPermissionAdd": "Ala kang permisu para magregister kareng leads.",
+    "noPermissionEdit": "Ala kang permisu para mag edit kareng leads.",
+    "selectPlaceholder": "Pilian...",
+    "commaSeparated": "Mikawani la reng comma",
+    "phonePlaceholder": "Numeru ning teleponu",
+    "countryCode": "Code ning bangsa"
+  },
+  "project": {
+    "none": "Ala pang proyektu (e mipabalu)",
+    "notInList": "{{project}} (ali ya keng listahan ning proyektu)"
+  },
+  "journey": {
+    "customer": "Suki",
+    "currentOwner": "Kasalukuyan a makibandi",
+    "protectionExpiry": "Proteksyun Expiry",
+    "leadStatus": "Lead Status",
+    "scheduled": "Maka-iskedyul",
+    "assignedTo": "Mitalaga Keng",
+    "referral": "Referral",
+    "builderReason": "Sangkan ning talapagobra: {{reason}}",
+    "bookedHint": "Me-book ya keng builder - ing operational ownership mipalitan ya keng builder; ing kekang attribution ampo ing kekang commission eligibility mitagan ya.",
+    "notBookedHint": "Deng booking mekumpirma la keng builder nung tanggapan de ing referral.",
+    "quickUpdate": "Mabilis a Pamagbayu",
+    "leadDetails": "Detalye ning Lead",
+    "progressHistory": "Kasaysayan ning Panyulung",
+    "timesIn": "(times in {{timezone}} )",
+    "backToMyLeads": "mibalik ku kareng leads ku",
+    "editLead": "I-edit ing Lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "E ya mipabalu (ala yang proyektu)",
+    "PENDING_BUILDER": "manaya keng builder",
+    "ACCEPTED": "tinggap ne ning builder",
+    "REJECTED": "E ne tinggap ning builder"
+  },
+  "preview": {
+    "ariaLabel": "Lead preview",
+    "title": "Lead Preview",
+    "source": "Pikawanan",
+    "location": "Lugar",
+    "scheduled": "Maka-iskedyul",
+    "registered": "makarehistru",
+    "latestNote": "Bayung Tala",
+    "quickUpdate": "Mabilis a Pamagbayu",
+    "fullDetails": "Buong Detalye",
+    "editLead": "I-edit ing Lead",
+    "history": "Historia"
+  },
+  "quick": {
+    "assignedTo": "Mitalaga Keng",
+    "status": "Kabilyan",
+    "subStatus": "Sub-Status",
+    "selectSubStatus": "Pilinan me ing sub-status...",
+    "none": "Ala",
+    "scheduledAt": "Maka-iskedyul keng",
+    "localTime": "lokal a oras",
+    "note": "Kasurat",
+    "notePlaceholder": "Nanu ing milyari keng tawag / pamagbisita? (pabalung)",
+    "updateStatus": "I-update ing katayuan",
+    "statusUpdated": "Mibayu ing katayuan",
+    "bookedLocked": "Ing lead ayni me-book ya - ing kayang status e na malyaring alilan.",
+    "viewOnly": "Malyari meng akit ining lead, pero ing kekang role e ne malyaring i-update."
+  },
+  "history": {
+    "title": "Kasaysayan - {{registrationId}}",
+    "tabs": {
+      "all": "Eganagana",
+      "status": "Kabilyan",
+      "assignment": "Pagawa",
+      "notes": "Tala"
+    },
+    "doneBy": "gewa neng {{actor}}",
+    "system": "Sistema",
+    "platforms": {
+      "System": "Sistema",
+      "External": "Mala-nugul",
+      "Web": "Web",
+      "Mobile": "Makabungcal"
+    },
+    "added": "dinagdag",
+    "updated": "me-update",
+    "empty": "(alang laman)",
+    "noHistory": "Ala pang amlat keng kategoryang ayni.",
+    "fieldLabels": {
+      "stage": "Kabilyan",
+      "subStatus": "Sub-Status",
+      "scheduledAt": "Iskedyul",
+      "notes": "Tala",
+      "assignedTo": "Mitalaga Keng"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "tinggap na ing pamagrehistru kareng partner",
+      "DUPLICATE_CHECK_COMPLETED": "meyari na ing duplicate check - ala yang ikit a aktibung duplicate",
+      "REGISTRATION_ACCEPTED": "tanggapan ing pamagrehistru",
+      "PROTECTION_GRANTED_one": "{{count}} -aldo proteksyun mipagkalub",
+      "PROTECTION_GRANTED_other": "{{count}} -aldo proteksyun mipagkalub",
+      "REGISTRATION_ATTEMPT_REJECTED": "Ing pamag-register a duplicate ning {{partnerId}} e ya me-reject",
+      "LEAD_DETAILS_UPDATED_one": "Me-update ya ing {{count}} field",
+      "LEAD_DETAILS_UPDATED_other": "Me-update la reng {{count}} fields",
+      "STAGE_UPDATED": "Ing katayuan mibayu ya keng {{status}}",
+      "LEAD_ASSIGNED": "Mitalaga ya keng {{name}}",
+      "LEAD_UNASSIGNED": "E miyabe",
+      "BOOKING_COMPLETED": "Meyari na ing booking",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Ing operational ownership mipalitan ya keng Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partner attribution mepreserba ya",
+      "COMMISSION_ELIGIBILITY_CREATED": "Megawa ya ing karapatan king komisyun",
+      "HANDOVER_COMPLETED": "Meyari na ing pamag-handover",
+      "REFERRAL_ACCEPTED": "tinggap ne ning builder ing referral",
+      "REFERRAL_REJECTED": "E na builder ing referral. sangkan: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin pepalwal na ing duplicate protection maaga. sangkan: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Ing admin binili ne ing pamagrehistru manibat {{from}} papunta {{to}} . sangkan: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Pamahalaan la reng haligi",
+    "hint": "I-drag para i-reorder · check para akit",
+    "showAll": "Ikit mu ngan",
+    "resetDefault": "Ibalik ya keng Default"
+  },
+  "filters": {
+    "title": "Filters",
+    "allProjects": "Deng sablang proyektu",
+    "any": "Andyang nanu",
+    "noFields": "Ala pang aliwang filterable fields a maka-enable (Settings > Lead).",
+    "clearAll": "Linisan ngan"
+  },
+  "phone": {
+    "MISSING": "kailangan ing teleponu.",
+    "INVALID": "Pakisulat me ing valid number ning teleponu.",
+    "TOO_SHORT": "Masyadu yang makuyad ing bilang ning teleponu.",
+    "TOO_LONG": "Masyadu yang makaba ing number ning teleponu.",
+    "INVALID_FOR_COUNTRY": "E ya validu ing bilang a ini ning teleponu para king {{country}} .",
+    "COUNTRY_MISMATCH": "Pakipili me ing ustung code ning bangsa.",
+    "NOT_MOBILE": "Mag mobile number kayu, ali landline."
+  }
+}

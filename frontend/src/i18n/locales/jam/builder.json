@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Builder Portal",
+    "referrals": "Referrals",
+    "builderLogin": "Builder Login",
+    "partnerLogin": "Channel Partner Login"
+  },
+  "login": {
+    "title": "Builder sign in",
+    "hint": "Builder accounts dem mek by Leadrat . Ask yuh administrator if yuh nuh have one."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "A wait fi yuh decision",
+    "ACCEPTED": "Accepted",
+    "REJECTED": "Rejected"
+  },
+  "list": {
+    "title": "Referrals",
+    "allProjects": "All projects",
+    "allStatuses": "All statuses",
+    "count_one": "{{count}} referral",
+    "count_other": "{{count}} referrals",
+    "columns": {
+      "referral": "Referral",
+      "customer": "Custama",
+      "project": "Prajeck",
+      "sourcePartner": "Source Partner",
+      "status": "Place",
+      "booking": "Booking",
+      "registered": "Registered"
+    },
+    "booked": "Booked",
+    "empty": "No referrals yet."
+  },
+  "detail": {
+    "customer": "Custama",
+    "sourcePartner": "Source Partner",
+    "attributionNote": "(attribution - can't be changed)",
+    "leadStatus": "Lead Status",
+    "protectedUntil": "Protected Until",
+    "referral": "Referral",
+    "reason": "Reason: {{reason}}",
+    "booking": "Booking",
+    "bookedOwner": "Booked - yuh a di operational owna",
+    "notBooked": "No booked",
+    "sharedAfterBooking": "Share afta booking",
+    "accept": "Aksep Referral",
+    "confirmBooking": "Confirm Booking",
+    "reject": "Reject Referral",
+    "rejectReasonLabel": "Reason fi reject (shown to di partner) *",
+    "rejectConfirm": "Rejeck",
+    "confirmBookingPrompt": "Confirm di booking? Operational ownership move to yuh an di partner become eligible fi commission.",
+    "notice": {
+      "booked": "Booking confirmed.",
+      "accepted": "Referral accepted.",
+      "rejected": "Referral rejected."
+    },
+    "backToReferrals": "Back to Referrals"
+  },
+  "history": {
+    "title": "Histry",
+    "actor": {
+      "system": "Systim",
+      "partner": "Channel partner",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Partner registration received",
+      "DUPLICATE_CHECK_COMPLETED": "Duplicate check don - no active duplicate find",
+      "REGISTRATION_ACCEPTED": "Registration accepted",
+      "PROTECTION_GRANTED_one": "{{count}} -day protection granted",
+      "PROTECTION_GRANTED_other": "{{count}} -day protection granted",
+      "STAGE_UPDATED": "Status updated to {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Updated {{count}} field",
+      "LEAD_DETAILS_UPDATED_other": "Updated {{count}} fields",
+      "LEAD_ASSIGNED": "Assigned to {{name}}",
+      "LEAD_UNASSIGNED": "No assigned",
+      "REFERRAL_ACCEPTED": "Builder accept di referral",
+      "REFERRAL_REJECTED": "Builder did reject di referral. Reason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Duplicate registration attempt by {{partner}} rejected",
+      "BOOKING_COMPLETED": "Booking don",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operational ownership transfer to Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partner attribution preserved",
+      "COMMISSION_ELIGIBILITY_CREATED": "Commission eligibility created",
+      "HANDOVER_COMPLETED": "Handover completed",
+      "ADMIN_PROTECTION_RELEASED": "Admin did release duplicate protection early. Reason: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin reassign registration fram {{from}} to {{to}} . Reason: {{reason}}"
+    }
+  }
+}

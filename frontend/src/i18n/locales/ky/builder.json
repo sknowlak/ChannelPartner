@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Builder порталы",
+    "referrals": "Рефераттар",
+    "builderLogin": "Builder Login",
+    "partnerLogin": "Channel Partner Login"
+  },
+  "login": {
+    "title": "Куруучу кирүү",
+    "hint": "Куруучу эсептерди Leadrat түзөт. Эгер сизде жок болсо, администраторуңуздан сураңыз."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Сиздин чечимиңизди күтүп жатабыз",
+    "ACCEPTED": "Кабыл алынган",
+    "REJECTED": "Четке кагылды"
+  },
+  "list": {
+    "title": "Рефераттар",
+    "allProjects": "Бардык долбоорлор",
+    "allStatuses": "Бардык статустар",
+    "count_one": "{{count}} жолдомо",
+    "count_other": "{{count}} жолдомо",
+    "columns": {
+      "referral": "Реферал",
+      "customer": "Кардар",
+      "project": "Долбоор",
+      "sourcePartner": "Булак өнөктөш",
+      "status": "Статус",
+      "booking": "Брондоо",
+      "registered": "Катталган"
+    },
+    "booked": "Заказдалган",
+    "empty": "Азырынча жолдомо жок."
+  },
+  "detail": {
+    "customer": "Кардар",
+    "sourcePartner": "Булак өнөктөш",
+    "attributionNote": "(атрибуция - өзгөртүү мүмкүн эмес)",
+    "leadStatus": "Жетекчи статусу",
+    "protectedUntil": "чейин корголгон",
+    "referral": "Реферал",
+    "reason": "Себеби: {{reason}}",
+    "booking": "Брондоо",
+    "bookedOwner": "Ээленген - сиз операциялык ээсисиз",
+    "notBooked": "Ээленген эмес",
+    "sharedAfterBooking": "Ээлеп койгондон кийин бөлүшүлгөн",
+    "accept": "Referral кабыл алуу",
+    "confirmBooking": "Ээлеп коюуну ырастоо",
+    "reject": "Рефералды четке кагуу",
+    "rejectReasonLabel": "Четке кагуу себеби (өнөктөшкө көрсөтүлөт) *",
+    "rejectConfirm": "Четке кагуу",
+    "confirmBookingPrompt": "Ээлеп коюуну ырастайсызбы? Операциялык менчик сизге өтөт жана өнөктөш комиссияга укуктуу болот.",
+    "notice": {
+      "booked": "Брондоо ырасталды.",
+      "accepted": "Реферат кабыл алынды.",
+      "rejected": "Реферат четке кагылды."
+    },
+    "backToReferrals": "Referrals барагына кайтуу"
+  },
+  "history": {
+    "title": "тарых",
+    "actor": {
+      "system": "Система",
+      "partner": "Канал өнөктөшү",
+      "admin": "Leadrat админ"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Өнөктөштүн каттоосу алынды",
+      "DUPLICATE_CHECK_COMPLETED": "Кайталанма текшерүү аяктады - активдүү дубликат табылган жок",
+      "REGISTRATION_ACCEPTED": "Каттоо кабыл алынды",
+      "PROTECTION_GRANTED_one": "{{count}} -күндүк коргоо берилген",
+      "PROTECTION_GRANTED_other": "{{count}} -күндүк коргоо берилген",
+      "STAGE_UPDATED": "Статус {{stage}} болуп жаңырды",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} талаа жаңыртылды",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} талаа жаңыртылды",
+      "LEAD_ASSIGNED": "{{name}} үчүн дайындалган",
+      "LEAD_UNASSIGNED": "Дайындалган жок",
+      "REFERRAL_ACCEPTED": "Куруучу жолдомо кабыл алды",
+      "REFERRAL_REJECTED": "Куруучу жолдомодон баш тартты. Себеби: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} тарабынан кайталанган каттоо аракети четке кагылды",
+      "BOOKING_COMPLETED": "Ээлеп коюу аяктады",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Операциялык менчик Курулушчуга өткөрүлүп берилди",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Өнөктөштүн атрибуту сакталган",
+      "COMMISSION_ELIGIBILITY_CREATED": "Комиссия жарамдуулугу түзүлгөн",
+      "HANDOVER_COMPLETED": "Өткөрүп берүү аяктады",
+      "ADMIN_PROTECTION_RELEASED": "Админ дубликат коргоону эрте чыгарды. Себеби: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Админ каттоону {{from}} ордуна {{to}} чейин дайындады. Себеби: {{reason}}"
+    }
+  }
+}

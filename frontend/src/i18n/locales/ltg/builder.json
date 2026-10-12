@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Ceļtnīku portals",
+    "referrals": "Nūruodis",
+    "builderLogin": "Ceļtnīka pīsateikšona",
+    "partnerLogin": "Kanala partnera pīsateikšona"
+  },
+  "login": {
+    "title": "Ceļtnīka pīsateikšona",
+    "hint": "100 doc#1159 Ceļtnīku kontus veidoj Leadrat . Paprosit sovam administratoram, voi jums nav."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "100 doc#1159 Gaidu jiusu lāmumu .",
+    "ACCEPTED": "Pījimts",
+    "REJECTED": "Nūraideits"
+  },
+  "list": {
+    "title": "Nūruodis",
+    "allProjects": "Vysi projekti .",
+    "allStatuses": "Vysi statusi .",
+    "count_one": "{{count}} nūsyutejums",
+    "count_other": "{{count}} nūruodis",
+    "columns": {
+      "referral": "Nūsyutejums",
+      "customer": "Klients",
+      "project": "Projekts",
+      "sourcePartner": "Olūta partneris",
+      "status": "Statuss",
+      "booking": "Rezerviešona",
+      "registered": "Registrēts ."
+    },
+    "booked": "Rezervāts",
+    "empty": "Vēļ nav nūruodejumu."
+  },
+  "detail": {
+    "customer": "Klients",
+    "sourcePartner": "Olūta partneris",
+    "attributionNote": "(attīcynuojums - navar maineit)",
+    "leadStatus": "Vadeituoja statuss",
+    "protectedUntil": "Aizsorguots leidz 1990 .",
+    "referral": "Nūsyutejums",
+    "reason": "Īmeslis: {{reason}}",
+    "booking": "Rezerviešona",
+    "bookedOwner": "100 doc#1159 Rezervāts - tu esi operativais saiminīks .",
+    "notBooked": "Nav rezervāts .",
+    "sharedAfterBooking": "Daleits piec rezerviešonys .",
+    "accept": "Pījimt nūsyutejumu",
+    "confirmBooking": "Apstyprynuot rezervaceju",
+    "reject": "Nūraideit nūsyutejumu",
+    "rejectReasonLabel": "Īmeslis nūraideišonai (paruodeits partnerim) * .",
+    "rejectConfirm": "Atsasaceit",
+    "confirmBookingPrompt": "Apstyprynuot rezervaceju? Darbeibys eipašumtīseibys puorīt iz jūs i partneris palīk par tīseigu iz komiseju.",
+    "notice": {
+      "booked": "Rezervaceja apstyprynuota.",
+      "accepted": "Nūsyutejums pījimts.",
+      "rejected": "Nūsyutejums nūraideits."
+    },
+    "backToReferrals": "Atpakaļ iz nūruodem ."
+  },
+  "history": {
+    "title": "Viesture",
+    "actor": {
+      "system": "Sistema",
+      "partner": "Kanala partneris .",
+      "admin": "Leadrat admins"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Sajimta partnera registraceja .",
+      "DUPLICATE_CHECK_COMPLETED": "Dublikatu puorbaude pabeigta - nav atrosts aktivs dublikats .",
+      "REGISTRATION_ACCEPTED": "Pīsasaceišona pījimta .",
+      "PROTECTION_GRANTED_one": "{{count}} -dīnys aizsardzeiba pīškierta",
+      "PROTECTION_GRANTED_other": "{{count}} -dīnys aizsardzeiba pīškierta",
+      "STAGE_UPDATED": "Statuss atjaunuots ar {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Atjaunuots {{count}} lauks",
+      "LEAD_DETAILS_UPDATED_other": "Atjaunuoti {{count}} laukumi",
+      "LEAD_ASSIGNED": "Pīškierts {{name}}",
+      "LEAD_UNASSIGNED": "Napīškierts",
+      "REFERRAL_ACCEPTED": "100 doc#1281 Ceļtnīks pījēme nūsyutejumu .",
+      "REFERRAL_REJECTED": "Ceļtnīks nūraideja nūsyutejumu. Īmeslis: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} dubliejums registracejis mieginuojums nūraideits",
+      "BOOKING_COMPLETED": "Rezervaceja pabeigta .",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "100 doc#1281 Darbeibys eipašumtīseibys puorjimtys ceļtnīkam .",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partnera atribuceja saglobuota .",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komisejis atbiļsteiba izveiduota .",
+      "HANDOVER_COMPLETED": "Nūdūšona pabeigta .",
+      "ADMIN_PROTECTION_RELEASED": "Admins izlaide dubliejumu aizsardzeibu agri. Īmeslis: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admins puordaleja registraceju nu {{from}} iz {{to}} . Īmeslis: {{reason}}"
+    }
+  }
+}

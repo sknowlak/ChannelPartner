@@ -2280,7 +2280,7 @@ Every app - partner web app, builder portal, admin portal and mobile app - can b
 
 # 55. Every Language: Build-Time Machine Translation
 
-Prompted by "here I want all the languages instead only 3" (the My Profile language dropdown). Decision: offer every language a machine-translation provider supports (~130), generated **at build time** - never at runtime, never with customer data - and rolled out **in batches**. English, Hindi and Bengali stay the reviewed, hand-written translations.
+Prompted by "here I want all the languages instead only 3" (the My Profile language dropdown). Decision: offer every language a machine-translation provider supports (~130 on the paid APIs; all 249 Google Translate languages were generated with `google-free` because no API key was available), generated **at build time** - never at runtime, never with customer data - and rolled out **in batches**. English, Hindi and Bengali stay the reviewed, hand-written translations.
 
 ## How languages are produced (`tools/i18n/translate.mjs`)
 
@@ -2288,31 +2288,36 @@ Prompted by "here I want all the languages instead only 3" (the My Profile langu
 node tools/i18n/translate.mjs --provider google --list                 # what the provider offers
 node tools/i18n/translate.mjs --provider google --langs all --max 10    # next 10 languages not yet done
 node tools/i18n/translate.mjs --provider azure  --langs ta,te,mr        # specific languages
+node tools/i18n/translate.mjs --provider google-free --langs all        # every Google language, no key
 node tools/i18n/translate.mjs --provider google --langs all --max 200 --update   # refresh after English changes
 node tools/i18n/translate.mjs --remove ta,te                            # withdraw languages
 node tools/i18n/translate.mjs --manifest-only                           # rebuild the language lists
 node --test tools/i18n/translate.test.mjs                               # pipeline tests
 ```
 
-- Providers: Google Cloud Translation v2 (`GOOGLE_TRANSLATE_API_KEY`), Azure AI Translator v3 (`AZURE_TRANSLATOR_KEY` + `AZURE_TRANSLATOR_REGION`), DeepL (`DEEPL_API_KEY`, ~30 languages), and an offline `mock` for testing. Keys live in `tools/i18n/.env` (gitignored; template `.env.example`), never in the repo.
+- Providers: Google Cloud Translation v2 (`GOOGLE_TRANSLATE_API_KEY`), Azure AI Translator v3 (`AZURE_TRANSLATOR_KEY` + `AZURE_TRANSLATOR_REGION`), DeepL (`DEEPL_API_KEY`, ~30 languages), `google-free` (no key: the public endpoint translate.google.com itself uses - same engine, ~249 target languages, but unofficial, rate-limited and not covered by a Google contract; the tool batches small, pauses and retries), and an offline `mock` for testing. Keys live in `tools/i18n/.env` (gitignored; template `.env.example`), never in the repo.
 - Input: the English JSON of every app (partner web + builder portal, admin, mobile) and the backend notification texts - about 1,750 strings / 42,000 characters per language. Only UI text is sent to the provider.
-- Protected from translation: `{{placeholders}}`, `<Trans>` markup (numbered `<0>` and named `<action>` tags; empty/self-closing tags kept whole), and product/technical terms (Leadrat, API, JSON, cURL, OAuth, HMAC, CSV, BHK, UTM, CRM, webhook, ...). Any result that loses or alters one of them is replaced by the English text for that key and reported - nothing can break a screen at runtime.
+- Protected from translation: `{{placeholders}}`, `<Trans>` markup (numbered `<0>` and named `<action>` tags; empty/self-closing tags kept whole; an unpaired tag such as the literal `<token>` in "Bearer <token>" is text and kept whole), and product/technical terms (Leadrat, API, JSON, cURL, OAuth, HMAC, CSV, BHK, UTM, CRM, webhook, ...). Any result that loses or alters one of them is replaced by the English text for that key and reported - nothing can break a screen at runtime.
 - Plural forms follow each language's CLDR rules (Arabic six forms, Japanese one, Russian four), built from the English one/other texts.
-- Never overwritten: reviewed languages (en, hi, bn); any machine translation a person edited (the cache in `tools/i18n/cache/` records what the machine produced - a different value in the file is a human edit and is kept). Re-runs only send keys that are new or whose English changed.
+- Never overwritten: reviewed languages (en, hi, bn); any machine translation a person edited (the cache in `tools/i18n/cache/` records what the machine produced - a different value in the file is a human edit and is kept). Re-runs only send keys that are new, whose English changed, or that were kept in English last time.
 - Output: `locales/<code>/*.json` in each app, `backend/src/i18n/locales/<code>/notifications.json`, the regenerated mobile import list (`mobile/src/i18n/resources.js`), and the language manifest `tools/i18n/languages.json`, copied to each app (`src/i18n/languages.json`) and the backend (`src/config/languages.json`). A language appears in the dropdowns - and is accepted by the API - only once every app has all of its files.
 
 ## In the apps
 
 - Each app's language list comes from its `languages.json` (code, native name, English name, Intl locale, text direction, quality `reviewed` | `machine`). The backend accepts exactly those codes for `language` (validated against the manifest; no hard-coded enum).
 - The selector shows each language in its own script with its English name ("தமிழ் - Tamil") in two groups: **Reviewed translations** and **Machine translated (may contain errors)**. With only reviewed languages it is a plain list, as before.
-- Web apps load a language's files only when it is chosen (each namespace file is a separate ~1-2 kB chunk), so 100+ languages don't grow the initial download; English is always loaded as the fallback. The first render waits for the starting language.
+- Web apps load a language's files only when it is chosen. English is bundled (always needed as the fallback); every other language is copied by the shared Vite plugin `tools/i18n/viteLocales.mjs` to `dist/locales/<code>/<namespace>.json` as plain JSON (served from `src/i18n/locales` in dev) and fetched at runtime with a content-hash `?v=` for cache busting. Bundling them as JS chunks instead (one per language x namespace, ~3,200) made the partner-app build take 10+ minutes; now ~5 s. Any host serving `dist/` must serve `/locales/**` as static files.
 - Right-to-left languages (Arabic, Urdu, Persian, Hebrew, ...) set `<html dir="rtl">`; the layout mirrors (verified with Arabic). Fine RTL polish (icons, some spacing) may need review per screen.
+- The web selectors are capped in width (long names like "Abkhazian - Abkhaz" otherwise squeeze the label); the native `<select>` supports type-to-find.
 - Browser/device language matching covers regional tags (`pt-BR`, `zh-TW`, `ta-IN`).
+- Mobile: the picker is a button showing the current language that opens a searchable full-screen list (reviewed group, then machine-translated A-Z) - a chip per language does not scale to 249. All languages are bundled in the app (~16 kB each, ~4 MB total), since Metro cannot lazy-load files.
 
 ## Cost and batches
 
 About 42,000 characters per language: roughly USD 110 for ~130 languages on Google (USD 20 per million characters; 500,000 free per month = ~11 languages), roughly USD 55 on Azure (Free tier 2 million characters per month = ~47 languages). Running in batches (`--max`) keeps each run within a monthly free tier or budget, and every batch is complete and tested before the next.
 
 ## Quality
+
+Run result (2026-10-12): 249 languages; 21 of them keep 1-3 integration/list-count strings in English where Google altered a placeholder. Typical machine errors to expect: words translated out of context (e.g. "Mobile" as "moving" in Arabic).
 
 Machine translations are not reviewed. They are labelled as such in the selector, follow the protected-term rules above, and can be corrected by editing the JSON - edits survive later runs. Business terms in the glossary (`frontend/src/i18n/glossary.md`) are only guaranteed for en/hi/bn.

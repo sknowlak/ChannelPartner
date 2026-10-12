@@ -1,0 +1,96 @@
+{
+  "shell": {
+    "portal": "Партал будаўнікоў",
+    "referrals": "Рэфералы",
+    "builderLogin": "Уваход будаўніка",
+    "partnerLogin": "Уваход партнёра канала"
+  },
+  "login": {
+    "title": "Уваход будаўніка",
+    "hint": "Уліковыя запісы Builder стварае Leadrat . Калі ў вас яго няма, звярніцеся да адміністратара."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Чакаю вашага рашэння",
+    "ACCEPTED": "Прынята",
+    "REJECTED": "Адхілена"
+  },
+  "list": {
+    "title": "Рэфералы",
+    "allProjects": "Усе праекты",
+    "allStatuses": "Усе статусы",
+    "count_one": "{{count}} рэфералаў",
+    "count_few": "{{count}} рэфералаў",
+    "count_many": "{{count}} рэфералаў",
+    "count_other": "{{count}} рэфералаў",
+    "columns": {
+      "referral": "Накіраванне",
+      "customer": "Кліент",
+      "project": "Праект",
+      "sourcePartner": "Крыніца Партнёр",
+      "status": "Статус",
+      "booking": "Браніраванне",
+      "registered": "Зарэгістраваны"
+    },
+    "booked": "Забраніраваны",
+    "empty": "Рэфералаў пакуль няма."
+  },
+  "detail": {
+    "customer": "Кліент",
+    "sourcePartner": "Крыніца Партнёр",
+    "attributionNote": "(пазначэнне аўтарства - змяніць нельга)",
+    "leadStatus": "Статус вядучага",
+    "protectedUntil": "Ахоўваецца да",
+    "referral": "Накіраванне",
+    "reason": "Прычына: {{reason}}",
+    "booking": "Браніраванне",
+    "bookedOwner": "Забраніраваны - вы аперацыйны ўладальнік",
+    "notBooked": "Не забраніравана",
+    "sharedAfterBooking": "Абагулены пасля браніравання",
+    "accept": "Прыняць рэкамендацыю",
+    "confirmBooking": "Пацвердзіце браніраванне",
+    "reject": "Адхіліць рэкамендацыю",
+    "rejectReasonLabel": "Прычына адмовы (паказваецца партнёру) *",
+    "rejectConfirm": "Адхіліць",
+    "confirmBookingPrompt": "Пацвердзіць браніраванне? Аператыўная ўласнасць пераходзіць да вас, і партнёр атрымлівае права на камісію.",
+    "notice": {
+      "booked": "Браніраванне пацверджана.",
+      "accepted": "Рэкамендацыя прынята.",
+      "rejected": "Накіраванне адхілена."
+    },
+    "backToReferrals": "Вярнуцца да рэкамендацый"
+  },
+  "history": {
+    "title": "Гісторыя",
+    "actor": {
+      "system": "сістэма",
+      "partner": "Партнёр па канале",
+      "admin": "Адмін Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Атрымана рэгістрацыя партнёра",
+      "DUPLICATE_CHECK_COMPLETED": "Праверка дублікатаў завершана - актыўны дублікат не знойдзены",
+      "REGISTRATION_ACCEPTED": "Рэгістрацыя прынята",
+      "PROTECTION_GRANTED_one": "{{count}} -дзённая абарона прадастаўлена",
+      "PROTECTION_GRANTED_few": "{{count}} -дзённая абарона прадастаўлена",
+      "PROTECTION_GRANTED_many": "{{count}} -дзённая абарона прадастаўлена",
+      "PROTECTION_GRANTED_other": "{{count}} -дзённая абарона прадастаўлена",
+      "STAGE_UPDATED": "Статус абноўлены да {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Абноўлена поле {{count}}",
+      "LEAD_DETAILS_UPDATED_few": "Абноўлена {{count}} палёў",
+      "LEAD_DETAILS_UPDATED_many": "Абноўлена {{count}} палёў",
+      "LEAD_DETAILS_UPDATED_other": "Абноўлена {{count}} палёў",
+      "LEAD_ASSIGNED": "Прызначана {{name}}",
+      "LEAD_UNASSIGNED": "Непрызначаны",
+      "REFERRAL_ACCEPTED": "Будаўнік прыняў рэкамендацыю",
+      "REFERRAL_REJECTED": "Будаўнік адмовіўся ад рэкамендацыі. Прычына: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Спроба паўторнай рэгістрацыі {{partner}} адхілена",
+      "BOOKING_COMPLETED": "Браніраванне завершана",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Аперацыйная ўласнасць перададзена будаўніку",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Атрыбуцыя партнёра захавана",
+      "COMMISSION_ELIGIBILITY_CREATED": "Права на камісію створана",
+      "HANDOVER_COMPLETED": "Перадача завершана",
+      "ADMIN_PROTECTION_RELEASED": "Адміністратар раней выпусціў абарону ад дублікатаў. Прычына: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Адміністратар пераназначыў рэгістрацыю з {{from}} на {{to}} . Прычына: {{reason}}"
+    }
+  }
+}

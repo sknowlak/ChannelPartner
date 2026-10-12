@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "پرتال سازنده",
+    "referrals": "ارجاعات",
+    "builderLogin": "ورود سازنده",
+    "partnerLogin": "ورود به کانال شریک"
+  },
+  "login": {
+    "title": "ورود به سیستم سازنده",
+    "hint": "اکانت های سازنده توسط Leadrat ایجاد می شوند. اگر ندارید از سرپرست خود بپرسید."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "منتظر تصمیم شما هستم",
+    "ACCEPTED": "پذیرفته شد",
+    "REJECTED": "رد شد"
+  },
+  "list": {
+    "title": "ارجاعات",
+    "allProjects": "همه پروژه ها",
+    "allStatuses": "همه وضعیت ها",
+    "count_one": "{{count}} ارجاع",
+    "count_other": "{{count}} ارجاع",
+    "columns": {
+      "referral": "ارجاع",
+      "customer": "مشتری",
+      "project": "پروژه",
+      "sourcePartner": "شریک منبع",
+      "status": "وضعیت",
+      "booking": "رزرو",
+      "registered": "ثبت شده است"
+    },
+    "booked": "رزرو شده است",
+    "empty": "هنوز هیچ ارجاعی وجود ندارد."
+  },
+  "detail": {
+    "customer": "مشتری",
+    "sourcePartner": "شریک منبع",
+    "attributionNote": "(اسناد - قابل تغییر نیست)",
+    "leadStatus": "وضعیت سرنخ",
+    "protectedUntil": "محافظت شده تا زمانی که",
+    "referral": "ارجاع",
+    "reason": "دلیل: {{reason}}",
+    "booking": "رزرو",
+    "bookedOwner": "رزرو شده - شما مالک عملیاتی هستید",
+    "notBooked": "رزرو نشده است",
+    "sharedAfterBooking": "پس از رزرو به اشتراک گذاشته شد",
+    "accept": "ارجاع را بپذیرید",
+    "confirmBooking": "رزرو را تایید کنید",
+    "reject": "رد ارجاع",
+    "rejectReasonLabel": "دلیل رد (نشان داده شده به شریک) *",
+    "rejectConfirm": "رد کردن",
+    "confirmBookingPrompt": "رزرو را تأیید کنید؟ مالکیت عملیاتی به شما منتقل می شود و شریک واجد شرایط کمیسیون می شود.",
+    "notice": {
+      "booked": "رزرو تایید شد.",
+      "accepted": "ارجاع پذیرفته شد",
+      "rejected": "ارجاع رد شد"
+    },
+    "backToReferrals": "بازگشت به ارجاعات"
+  },
+  "history": {
+    "title": "تاریخچه",
+    "actor": {
+      "system": "سیستم",
+      "partner": "شریک کانال",
+      "admin": "مدیر Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "ثبت نام شریک دریافت شد",
+      "DUPLICATE_CHECK_COMPLETED": "بررسی تکراری تکمیل شد - هیچ مورد تکراری فعالی یافت نشد",
+      "REGISTRATION_ACCEPTED": "ثبت نام پذیرفته شد",
+      "PROTECTION_GRANTED_one": "{{count}} روز حفاظت داده شد",
+      "PROTECTION_GRANTED_other": "{{count}} روز حفاظت داده شد",
+      "STAGE_UPDATED": "وضعیت به {{stage}} به روز شد",
+      "LEAD_DETAILS_UPDATED_one": "فیلد {{count}} به روز شد",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} فیلد به روز شد",
+      "LEAD_ASSIGNED": "اختصاص داده شده به {{name}}",
+      "LEAD_UNASSIGNED": "واگذار نشده است",
+      "REFERRAL_ACCEPTED": "سازنده ارجاع را پذیرفت",
+      "REFERRAL_REJECTED": "سازنده ارجاع را رد کرد. دلیل: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "تلاش تکراری برای ثبت نام توسط {{partner}} رد شد",
+      "BOOKING_COMPLETED": "رزرو تکمیل شد",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "مالکیت عملیاتی به بیلدر منتقل شد",
+      "PARTNER_ATTRIBUTION_PRESERVED": "اسناد شریک حفظ شد",
+      "COMMISSION_ELIGIBILITY_CREATED": "واجد شرایط بودن کمیسیون ایجاد شد",
+      "HANDOVER_COMPLETED": "تحویل تکمیل شد",
+      "ADMIN_PROTECTION_RELEASED": "ادمین حفاظت تکراری را زودتر منتشر کرد. دلیل: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "ادمین ثبت نام را از {{from}} به {{to}} واگذار کرد. دلیل: {{reason}}"
+    }
+  }
+}

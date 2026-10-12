@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Instellinge",
+    "noPermission": "Geer höb gein toestemming um insjtellinge te behere."
+  },
+  "categories": {
+    "lead": "Leide",
+    "user": "Gebroeker",
+    "integrations": "Integraties"
+  },
+  "leadTabs": {
+    "fields": "Velde",
+    "statuses": "Status & Substatus",
+    "notifications": "Kennisgevinge & planningers"
+  },
+  "fields": {
+    "leadIntro": "Configureer ‘t lead capture-formulier: sjeet velde in/oet, markeer ze es vereis of voeg eur eige aangepaste velde touw.",
+    "userIntro": "Configureer ‘t formulier Teamlid toevoege/bewerke: sjeet velde in/oet, markeer ze es vereis of voeg eur eige aangepaste velde toe.",
+    "addCustomField": "+ Voeg Aangepaste veld toe",
+    "fieldLabel": "Veldlabel",
+    "group": "Groep",
+    "groupPlaceholderLead": "b.v. vraoginformatie",
+    "groupPlaceholderUser": "b.v. aanvullende details",
+    "dataType": "Gegevenstype",
+    "options": "Opties (gescheide door komma)",
+    "requiredLead": "Verpliech - partners in eur team motte dit invölle um un lead te registrere",
+    "requiredUser": "Verpliech - mot weure ingevuld bij ‘t touwveuge vaan ‘n teamlid",
+    "creating": "Make...",
+    "createField": "Veld make",
+    "columns": {
+      "field": "Vèld",
+      "group": "Groep",
+      "type": "Tiepe",
+      "required": "Vereis",
+      "enabled": "Aangeschakeld",
+      "kind": "Soort"
+    },
+    "kind": {
+      "custom": "Op moat",
+      "core": "Kern (gesjlote)",
+      "standard": "Sjtandaard"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Teks",
+    "TEXTAREA": "Lange teks",
+    "NUMBER": "Nummer",
+    "CURRENCY": "Valuuta",
+    "DATE": "Datum",
+    "SELECT": "Dropdown",
+    "LIST": "Lies"
+  },
+  "picker": {
+    "searchPlaceholder": "Zoek leadvelde...",
+    "summary": "{{shown}} getoend · {{mandatory}} verpliech",
+    "mandatory": "Verplich",
+    "noMatch": "Gein velde euvereinkomme."
+  },
+  "statuses": {
+    "intro": "Uw leadstatus en substatus - wat eder vraog (‘n datum en tied, leadvelde) es emes ‘n lead d’r op update.",
+    "add": "+ Status toevoege",
+    "columns": {
+      "order": "Bestèlling",
+      "status": "Sjtatus",
+      "subStatuses": "Substatus",
+      "asksFor": "Vreug um",
+      "active": "Aktief"
+    },
+    "moveUp": "Omhoeg bewege",
+    "moveDown": "Beweeg nao oonder",
+    "defaultBadge": "Standaard veur nuie leads",
+    "bookingBadge": "Reserveringsstatus",
+    "asksForLabel": "Vreeg um {{label}}",
+    "asksForDateTime": "Vraag um datum en tied",
+    "none": "Gein",
+    "dateTime": "Datum & tied",
+    "scheduledOn": "op {{names}}",
+    "fieldsSummary_one": "{{count}} veld ( {{mandatory}} verpliech)",
+    "fieldsSummary_other": "{{count}} velde ( {{mandatory}} verpliech)",
+    "deleteConfirm": "De status \" {{name}} \" wissen? Dit kin neet weure ongedaon.",
+    "editTitle": "Status bewerke - {{name}}",
+    "newTitle": "Nuie status",
+    "name": "Statusnaam",
+    "colour": "Kleur",
+    "active": "Aktief",
+    "isDefault": "Standaardstatus veur nuie leads",
+    "isBooking": "Reserveringsstatus (ingesteld door Complete Reserving)",
+    "whenMoved": "Es un lead nao dees status weurt versjoof",
+    "askSchedule": "Vraag um un datum en tied (planner)",
+    "scheduleLabelPlaceholder": "Label, b.v. Bezeuk op",
+    "fieldsToShow": "Leadvelde die op ut updateformulier motte weure getoend",
+    "subStatusesTitle": "Substatus",
+    "subStatusesHint": "Iedere substatus kin zien eige datum en tied vraoge en zien eige velde touwveuge - wie bove de velde vaan de status heibove weergegeve.",
+    "subStatusName": "Naam vaan de substatus",
+    "subFields": "Velde ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Datum- en tiedslabel, b.v. Bel trök op",
+    "addSubStatus": "+ Substatus toevoege",
+    "saveStatus": "Status opsjlaon",
+    "createStatus": "Status make"
+  },
+  "notifications": {
+    "intro": "Verwittig de juiste lui es ‘n lead ‘n status bereik - direk, of ‘n bepaolde tied veur/nao de datum en tied die d’r op is gepland.",
+    "add": "+ Voeg kennisgeving toe",
+    "columns": {
+      "notification": "Kennisgeving",
+      "whenStatusIs": "Wanneer de status is",
+      "sends": "Stuurt",
+      "to": "Noa",
+      "via": "Via",
+      "enabled": "Aangeschakeld"
+    },
+    "anyStatus": "Alle status",
+    "anySubStatus": "Alle substatus",
+    "inactiveOption": "{{name}} (inactief)",
+    "emptyRules": "Nog gein meldinge - voeg d’r ein touw um eur team te waarsjuwe es ‘n lead ‘n status bereik.",
+    "jobs": {
+      "title": "Gepland & Verstuurd",
+      "firesAt": "Vuur op",
+      "notification": "Kennisgeving",
+      "lead": "Leide",
+      "status": "Sjtatus",
+      "details": "Detaïs",
+      "empty": "Nog niks gepland of gestuurd.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "In aafwachting",
+      "PROCESSING": "Verwerking",
+      "SENT": "Gesjtuurd",
+      "FAILED": "Misluk",
+      "SKIPPED": "Oversjlaon",
+      "CANCELLED": "Geannuleerd"
+    },
+    "deliveryStatus": {
+      "SENT": "gesjtuurd",
+      "FAILED": "misluk",
+      "SKIPPED": "euvergeslaon"
+    },
+    "deliveryChannel": {
+      "IN_APP": "in-app",
+      "EMAIL": "e-mail",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Toegeweze gebroeker",
+      "owner": "Eigenaar",
+      "updatedBy": "Bijgewerkt door",
+      "role": "Rol: {{name}}"
+    },
+    "channels": {
+      "inApp": "In-app",
+      "email": "E-mail",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "De kennisgeving \" {{name}} \" verwijdere? Afwachtende herinneringe vaan ‘t weure geannuleerd.",
+    "testPrompt": "Stuur ‘n tes vaan deze melding nao dichzelf (in-app) mit welke lead- ID ?",
+    "testSent": "Verstuurd nao eur klok: {{title}} {{message}}",
+    "headersInvalid": "Webhook motte geldig JSON zien, b.v. {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Melding bewerke",
+    "newTitle": "Nuuj kennisgeving",
+    "name": "Naam",
+    "namePlaceholder": "b.v. Herinnering veur bezeuk aon de site",
+    "whenStatus": "Es de status vaan ‘n lead is",
+    "subStatus": "Substatus",
+    "send": "Stuur (planner)",
+    "custom": "Op moat...",
+    "modeBefore": "veur de geplande tied",
+    "modeAfter": "nao geplande tied",
+    "noScheduleWarning": "Dees status vraogt gein datum en tied, dus ‘n \"veur/op/nao de geplande tied\"-melding zou noets oetgaon.",
+    "noScheduleFix": "Slaag <strong>Vraag um ‘n datum en tied</strong> veur ‘t in oonder Status & Substatus, of sjik direk.",
+    "sendTo": "Stuur nao (elke combinatie)",
+    "recipientAssigned": "Toegeweze gebroeker (hoofigenaar)",
+    "recipientOwner": "Account-eigenaar / admin",
+    "recipientUpdatedBy": "Persoon dee de status heet bijgewerk",
+    "everyoneWithRole": "Iedereen mit un rol",
+    "specificUsers": "Specifieke gebrukers (actief)",
+    "inactiveNever": "Inactieve gebrukers kriege noets meldinge, zelfs es ze geselecteerd zien.",
+    "deliverVia": "Bezörg via",
+    "channelInApp": "In-app (klok)",
+    "channelEmail": "E-mail",
+    "channelWebhook": "Webhook ( WhatsApp / SMS provider)",
+    "emailHint": "E-mail geit nao ‘t e-mailadres vaan eder oontvanger en heet SMTP op de server ingesjtèld (backend/.env); tot daan weure e-mailverzendinge geregistreerd es euvergeslage.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Headers ( JSON )",
+    "content": "Inhoud vaan melding",
+    "title": "Titel",
+    "message": "Berich",
+    "insertIntoTitle": "Voeg in de titel in",
+    "insertIntoMessage": "Invoge in beriech",
+    "anyLeadField": "Alle leadvelde wèrke ouch, b.v. <code1>{{example1}}</code1> of <code2>{{example2}}</code2> .",
+    "preview": "Veurbeeld (veurbeeld lead)",
+    "enabled": "Aangeschakeld",
+    "saveRule": "Melding opsjlaon",
+    "createRule": "Melding make",
+    "variables": {
+      "customerName": "Hoofnaom",
+      "customerMobile": "Lead mobiel",
+      "customerEmail": "Lead e-mail",
+      "registrationId": "Lead ID",
+      "status": "Sjtatus",
+      "subStatus": "Substatus",
+      "scheduleAt": "Geplande datum & tied",
+      "assignedTo": "Toegeweze gebroeker",
+      "updatedBy": "Bijgewerkt door",
+      "recipient": "Naam vaan ontvanger",
+      "project": "Projèk",
+      "notes": "Nieuwste opmerking",
+      "partner": "Partnernaam"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Onmiddellik es de status is ingesjtèld",
+      "AT": "Op de geplande tied",
+      "A1D": "1 daag nao de geplande tied (opvolgcontrole)"
+    },
+    "immediately": "Onmiddelik",
+    "atScheduled": "Op geplande tied",
+    "before": {
+      "MINUTES_one": "{{count}} minuut veur de geplande tied",
+      "MINUTES_other": "{{count}} minute veur de geplande tied",
+      "HOURS_one": "{{count}} oor veur de geplande tied",
+      "HOURS_other": "{{count}} oere veur de geplande tied",
+      "DAYS_one": "{{count}} daag veur de geplande tied",
+      "DAYS_other": "{{count}} daag veur de geplande tied",
+      "WEEKS_one": "{{count}} week veur de geplande tied",
+      "WEEKS_other": "{{count}} weke veur de geplande tied",
+      "MONTHS_one": "{{count}} maond veur de geplande tied",
+      "MONTHS_other": "{{count}} maonde veur de geplande tied",
+      "YEARS_one": "{{count}} jaor veur de geplande tied",
+      "YEARS_other": "{{count}} jaor veur de geplande tied"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minuut nao de geplande tied",
+      "MINUTES_other": "{{count}} minute nao de geplande tied",
+      "HOURS_one": "{{count}} oor nao de geplande tied",
+      "HOURS_other": "{{count}} oor nao de geplande tied",
+      "DAYS_one": "{{count}} daag nao de geplande tied",
+      "DAYS_other": "{{count}} daag nao de geplande tied",
+      "WEEKS_one": "{{count}} week nao de geplande tied",
+      "WEEKS_other": "{{count}} weke nao de geplande tied",
+      "MONTHS_one": "{{count}} maond nao geplande tied",
+      "MONTHS_other": "{{count}} maonde nao de geplande tied",
+      "YEARS_one": "{{count}} jaor nao de geplande tied",
+      "YEARS_other": "{{count}} jaor nao de geplande tied"
+    },
+    "units": {
+      "MINUTES_one": "minuut",
+      "MINUTES_other": "minuute",
+      "HOURS_one": "oer",
+      "HOURS_other": "oere",
+      "DAYS_one": "daag",
+      "DAYS_other": "daag",
+      "WEEKS_one": "wêk",
+      "WEEKS_other": "weke",
+      "MONTHS_one": "moand",
+      "MONTHS_other": "maonde",
+      "YEARS_one": "joar",
+      "YEARS_other": "joare"
+    }
+  }
+}

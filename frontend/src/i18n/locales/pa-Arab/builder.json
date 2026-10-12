@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "بلڈر پورٹل",
+    "referrals": "حوالہ جات",
+    "builderLogin": "بلڈر لاگ ان",
+    "partnerLogin": "چینل پارٹنر لاگ ان"
+  },
+  "login": {
+    "title": "بلڈر سائن ان کرو",
+    "hint": "بلڈر اکاؤنٹس Leadrat دے ذریعہ بنائے گئے ہن۔ جے تہاڈے کول نئیں اے تے اپنے منتظم توں پچھو۔"
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "تہاڈے فیصلے دا انتظار کر رئے آں",
+    "ACCEPTED": "قبول کیتا گیا",
+    "REJECTED": "مسترد کر دتا گیا"
+  },
+  "list": {
+    "title": "حوالہ جات",
+    "allProjects": "سارے منصوبے",
+    "allStatuses": "ساریاں حیثیتاں",
+    "count_one": "{{count}} حوالہ",
+    "count_other": "{{count}} حوالہ جات",
+    "columns": {
+      "referral": "ریفرل",
+      "customer": "صارف",
+      "project": "پروجیکٹ",
+      "sourcePartner": "سورس پارٹنر",
+      "status": "حالت",
+      "booking": "بکنگ",
+      "registered": "رجسٹرڈ"
+    },
+    "booked": "بک ہو گیا",
+    "empty": "ہلے تیکر کوئی حوالہ نئیں۔"
+  },
+  "detail": {
+    "customer": "صارف",
+    "sourcePartner": "سورس پارٹنر",
+    "attributionNote": "(انتسابی - تبدیل نئیں کیتا جا سکدا)",
+    "leadStatus": "لیڈ دی حیثیت",
+    "protectedUntil": "جدوں تک محفوظ اے",
+    "referral": "ریفرل",
+    "reason": "وجہ: {{reason}}",
+    "booking": "بکنگ",
+    "bookedOwner": "بک کیتا گیا - تسی آپریشنل مالک او",
+    "notBooked": "بک نئیں کیتا گیا",
+    "sharedAfterBooking": "بکنگ دے بعد شیئر کیتا گیا",
+    "accept": "ریفرل قبول کرو",
+    "confirmBooking": "بکنگ دی تصدیق کرو",
+    "reject": "ریفرل مسترد کرو",
+    "rejectReasonLabel": "رد کرن دی وجہ (پارٹنر نوں وکھائی گئی) *",
+    "rejectConfirm": "مسترد کرنا",
+    "confirmBookingPrompt": "بکنگ دی تصدیق کرو؟ آپریشنل ملکیت تہاڈے کول جاندی اے تے شراکت دار کمیشن دے اہل ہو جاندا اے۔",
+    "notice": {
+      "booked": "بکنگ دی تصدیق ہو گئی۔",
+      "accepted": "حوالہ قبول کر لیا گیا۔",
+      "rejected": "حوالہ مسترد کر دتا گیا۔"
+    },
+    "backToReferrals": "حوالہ جات تے واپس جاؤ"
+  },
+  "history": {
+    "title": "تریخ",
+    "actor": {
+      "system": "نظام",
+      "partner": "چینل پارٹنر",
+      "admin": "Leadrat ایڈمن"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "پارٹنر رجسٹریشن وصول ہو گئی",
+      "DUPLICATE_CHECK_COMPLETED": "ڈپلیکیٹ چیک مکمل ہو گیا - کوئی ایکٹو ڈپلیکیٹ نئیں ملیا",
+      "REGISTRATION_ACCEPTED": "رجسٹریشن قبول کر لئی گئی",
+      "PROTECTION_GRANTED_one": "{{count}} -دن دا تحفظ دتا گیا",
+      "PROTECTION_GRANTED_other": "{{count}} -دن دا تحفظ دتا گیا",
+      "STAGE_UPDATED": "حیثیت {{stage}} تے اپ ڈیٹ کیتی گئی",
+      "LEAD_DETAILS_UPDATED_one": "اپ ڈیٹ کیتا گیا {{count}} فیلڈ",
+      "LEAD_DETAILS_UPDATED_other": "اپ ڈیٹ کیتا گیا {{count}} فیلڈز",
+      "LEAD_ASSIGNED": "{{name}} نوں تفویض کیتا گیا",
+      "LEAD_UNASSIGNED": "غیر تفویض شدہ",
+      "REFERRAL_ACCEPTED": "بلڈر نے حوالہ قبول کر لیا",
+      "REFERRAL_REJECTED": "بلڈر نے حوالہ مسترد کر دتا۔ وجہ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} دی نقلی رجسٹریشن دی کوشش مسترد کر دتی گئی",
+      "BOOKING_COMPLETED": "بکنگ مکمل ہو گئی",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "آپریشنل ملکیت بلڈر نوں منتقل کر دتی گئی",
+      "PARTNER_ATTRIBUTION_PRESERVED": "پارٹنر دی انتساب محفوظ اے",
+      "COMMISSION_ELIGIBILITY_CREATED": "کمیشن دی اہلیت بنائی گئی",
+      "HANDOVER_COMPLETED": "ہینڈ اوور مکمل ہو گیا",
+      "ADMIN_PROTECTION_RELEASED": "ایڈمن نے ڈپلیکیٹ پروٹیکشن جلدی جاری کر دتا۔ وجہ: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "ایڈمن نے رجسٹریشن نو {{from}} توں {{to}} تے دوبارہ تفویض کر دتا۔ وجہ: {{reason}}"
+    }
+  }
+}

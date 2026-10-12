@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Instellingen",
+    "noPermission": "U heeft geen toestemming om instellingen te beheren."
+  },
+  "categories": {
+    "lead": "Leiding",
+    "user": "Gebruiker",
+    "integrations": "Integraties"
+  },
+  "leadTabs": {
+    "fields": "Velden",
+    "statuses": "Statussen en substatussen",
+    "notifications": "Meldingen en planners"
+  },
+  "fields": {
+    "leadIntro": "Configureer het leadregistratieformulier: schakel velden in/uit, markeer ze als vereist of voeg uw eigen aangepaste velden toe.",
+    "userIntro": "Configureer het formulier Teamlid toevoegen/bewerken: schakel velden in/uit, markeer ze als vereist of voeg uw eigen aangepaste velden toe.",
+    "addCustomField": "+ Aangepast veld toevoegen",
+    "fieldLabel": "Veldlabel",
+    "group": "Groep",
+    "groupPlaceholderLead": "bijv. Aanvraaginformatie",
+    "groupPlaceholderUser": "bijv. aanvullende details",
+    "dataType": "Gegevenstype",
+    "options": "Opties (door komma's gescheiden)",
+    "requiredLead": "Vereist: partners in uw team moeten dit invullen om een ​​lead te registreren",
+    "requiredUser": "Verplicht - moet worden ingevuld bij het toevoegen van een teamlid",
+    "creating": "Creëren...",
+    "createField": "Veld maken",
+    "columns": {
+      "field": "Veld",
+      "group": "Groep",
+      "type": "Type",
+      "required": "Vereist",
+      "enabled": "Ingeschakeld",
+      "kind": "Vriendelijk"
+    },
+    "kind": {
+      "custom": "Aangepast",
+      "core": "Kern (vergrendeld)",
+      "standard": "Standaard"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Tekst",
+    "TEXTAREA": "Lange tekst",
+    "NUMBER": "Nummer",
+    "CURRENCY": "Munteenheid",
+    "DATE": "Datum",
+    "SELECT": "Dropdownmenu",
+    "LIST": "Lijst"
+  },
+  "picker": {
+    "searchPlaceholder": "Leadvelden zoeken...",
+    "summary": "{{shown}} getoond · {{mandatory}} verplicht",
+    "mandatory": "Verplicht",
+    "noMatch": "Er komen geen velden overeen."
+  },
+  "statuses": {
+    "intro": "Uw leadstatussen en substatussen: waar iedereen om vraagt ​​(een datum en tijd, leadvelden) wanneer iemand een lead ernaar bijwerkt.",
+    "add": "+ Status toevoegen",
+    "columns": {
+      "order": "Volgorde",
+      "status": "Status",
+      "subStatuses": "Substatussen",
+      "asksFor": "Vraagt ​​om",
+      "active": "Actief"
+    },
+    "moveUp": "Ga omhoog",
+    "moveDown": "Ga naar beneden",
+    "defaultBadge": "Standaard voor nieuwe leads",
+    "bookingBadge": "Boekingsstatus",
+    "asksForLabel": "Vraagt ​​om {{label}}",
+    "asksForDateTime": "Vraagt ​​naar datum en tijd",
+    "none": "Geen",
+    "dateTime": "Datum & tijd",
+    "scheduledOn": "op {{names}}",
+    "fieldsSummary_one": "veld {{count}} ( {{mandatory}} verplicht)",
+    "fieldsSummary_other": "{{count}} velden ( {{mandatory}} verplicht)",
+    "deleteConfirm": "Status \" {{name}} \" verwijderen? Dit kan niet ongedaan worden gemaakt.",
+    "editTitle": "Status bewerken - {{name}}",
+    "newTitle": "Nieuwe status",
+    "name": "Statusnaam",
+    "colour": "Kleur",
+    "active": "Actief",
+    "isDefault": "Standaardstatus voor nieuwe leads",
+    "isBooking": "Boekingsstatus (ingesteld door Boeking voltooien)",
+    "whenMoved": "Wanneer een lead naar deze status wordt verplaatst",
+    "askSchedule": "Vraag datum & tijd aan (planner)",
+    "scheduleLabelPlaceholder": "Label, bijvoorbeeld Bezoek op",
+    "fieldsToShow": "Leadvelden die op het updateformulier moeten worden weergegeven",
+    "subStatusesTitle": "Substatussen",
+    "subStatusesHint": "Elke substatus kan om zijn eigen datum en tijd vragen en zijn eigen velden toevoegen - weergegeven bovenaan de statusvelden hierboven.",
+    "subStatusName": "Naam van substatus",
+    "subFields": "Velden ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Datum- en tijdlabel, bijvoorbeeld terugbellen op",
+    "addSubStatus": "+ Substatus toevoegen",
+    "saveStatus": "Status opslaan",
+    "createStatus": "Status creëren"
+  },
+  "notifications": {
+    "intro": "Breng de juiste mensen op de hoogte wanneer een lead een status bereikt - onmiddellijk, of op een vast tijdstip vóór/na de geplande datum en tijd.",
+    "add": "+ Melding toevoegen",
+    "columns": {
+      "notification": "Kennisgeving",
+      "whenStatusIs": "Wanneer de status is",
+      "sends": "Verzendt",
+      "to": "Naar",
+      "via": "Via",
+      "enabled": "Ingeschakeld"
+    },
+    "anyStatus": "Elke status",
+    "anySubStatus": "Elke substatus",
+    "inactiveOption": "{{name}} (inactief)",
+    "emptyRules": "Nog geen meldingen: voeg er een toe om uw team te waarschuwen wanneer een lead een status bereikt.",
+    "jobs": {
+      "title": "Gepland en verzonden",
+      "firesAt": "Brandt op",
+      "notification": "Kennisgeving",
+      "lead": "Leiding",
+      "status": "Status",
+      "details": "Details",
+      "empty": "Nog niets gepland of verzonden.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "In behandeling",
+      "PROCESSING": "Verwerking",
+      "SENT": "Verstuurd",
+      "FAILED": "Mislukt",
+      "SKIPPED": "Overgeslagen",
+      "CANCELLED": "Geannuleerd"
+    },
+    "deliveryStatus": {
+      "SENT": "verstuurd",
+      "FAILED": "mislukt",
+      "SKIPPED": "overgeslagen"
+    },
+    "deliveryChannel": {
+      "IN_APP": "in-app",
+      "EMAIL": "e-mail",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Toegewezen gebruiker",
+      "owner": "Eigenaar",
+      "updatedBy": "Bijgewerkt door",
+      "role": "Rol: {{name}}"
+    },
+    "channels": {
+      "inApp": "In-app",
+      "email": "E-mail",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Melding \" {{name}} \" verwijderen? In behandeling zijnde herinneringen worden geannuleerd.",
+    "testPrompt": "Stuur een test van deze melding naar jezelf (in-app) met welke lead- ID ?",
+    "testSent": "Verzonden naar je bel: {{title}} {{message}}",
+    "headersInvalid": "Webhook headers moeten geldige JSON zijn, bijvoorbeeld {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Melding bewerken",
+    "newTitle": "Nieuwe melding",
+    "name": "Naam",
+    "namePlaceholder": "bijv. Herinnering aan locatiebezoek",
+    "whenStatus": "Wanneer de status van een lead is",
+    "subStatus": "Substatus",
+    "send": "Verzenden (planner)",
+    "custom": "Aangepast...",
+    "modeBefore": "vóór de geplande tijd",
+    "modeAfter": "na geplande tijd",
+    "noScheduleWarning": "Deze status vraagt ​​niet om een ​​datum en tijd, dus een melding 'voor/op/na geplande tijd' wordt nooit geactiveerd.",
+    "noScheduleFix": "Schakel <strong>Vraag om datum en tijd</strong> in onder Statussen & Substatussen, of verzend onmiddellijk.",
+    "sendTo": "Verzenden naar (elke combinatie)",
+    "recipientAssigned": "Toegewezen gebruiker (leadeigenaar)",
+    "recipientOwner": "Accounteigenaar/beheerder",
+    "recipientUpdatedBy": "Persoon die de status heeft bijgewerkt",
+    "everyoneWithRole": "Iedereen met rol",
+    "specificUsers": "Specifieke gebruikers (actief)",
+    "inactiveNever": "Inactieve gebruikers ontvangen nooit meldingen, zelfs niet als ze zijn geselecteerd.",
+    "deliverVia": "Bezorg via",
+    "channelInApp": "In-app (bel)",
+    "channelEmail": "E-mail",
+    "channelWebhook": "Webhook ( WhatsApp / SMS provider)",
+    "emailHint": "E-mail gaat naar het e-mailadres van elke ontvanger en vereist SMTP-instellingen op de server (backend/.env); tot die tijd worden e-mailverzendingen geregistreerd als overgeslagen.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Kopteksten ( JSON )",
+    "content": "Inhoud van de melding",
+    "title": "Titel",
+    "message": "Bericht",
+    "insertIntoTitle": "Invoegen in titel",
+    "insertIntoMessage": "Invoegen in bericht",
+    "anyLeadField": "Elk leadveld werkt ook, bijvoorbeeld <code1>{{example1}}</code1> of <code2>{{example2}}</code2> .",
+    "preview": "Voorbeeld (voorbeeldlead)",
+    "enabled": "Ingeschakeld",
+    "saveRule": "Melding opslaan",
+    "createRule": "Melding maken",
+    "variables": {
+      "customerName": "Leadnaam",
+      "customerMobile": "Leid mobiel",
+      "customerEmail": "Lead-e-mail",
+      "registrationId": "Lead ID",
+      "status": "Status",
+      "subStatus": "Substatus",
+      "scheduleAt": "Geplande datum en tijd",
+      "assignedTo": "Toegewezen gebruiker",
+      "updatedBy": "Bijgewerkt door",
+      "recipient": "Naam van ontvanger",
+      "project": "Project",
+      "notes": "Laatste opmerking",
+      "partner": "Partnernaam"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Onmiddellijk wanneer de status is ingesteld",
+      "AT": "Op de geplande tijd",
+      "A1D": "1 dag na gepland tijdstip (nacontrole)"
+    },
+    "immediately": "Onmiddellijk",
+    "atScheduled": "Op geplande tijd",
+    "before": {
+      "MINUTES_one": "{{count}} minuut vóór geplande tijd",
+      "MINUTES_other": "{{count}} minuten vóór geplande tijd",
+      "HOURS_one": "{{count}} uur vóór geplande tijd",
+      "HOURS_other": "{{count}} uur vóór de geplande tijd",
+      "DAYS_one": "{{count}} dag vóór geplande tijd",
+      "DAYS_other": "{{count}} dagen vóór de geplande tijd",
+      "WEEKS_one": "{{count}} week vóór geplande tijd",
+      "WEEKS_other": "{{count}} weken vóór de geplande tijd",
+      "MONTHS_one": "{{count}} maand vóór geplande tijd",
+      "MONTHS_other": "{{count}} maanden vóór geplande tijd",
+      "YEARS_one": "{{count}} jaar vóór geplande tijd",
+      "YEARS_other": "{{count}} jaar vóór de geplande tijd"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minuut na geplande tijd",
+      "MINUTES_other": "{{count}} minuten na geplande tijd",
+      "HOURS_one": "{{count}} uur na geplande tijd",
+      "HOURS_other": "{{count}} uur na geplande tijd",
+      "DAYS_one": "{{count}} dag na geplande tijd",
+      "DAYS_other": "{{count}} dagen na geplande tijd",
+      "WEEKS_one": "{{count}} week na geplande tijd",
+      "WEEKS_other": "{{count}} weken na geplande tijd",
+      "MONTHS_one": "{{count}} maand na geplande tijd",
+      "MONTHS_other": "{{count}} maanden na geplande tijd",
+      "YEARS_one": "{{count}} jaar na geplande tijd",
+      "YEARS_other": "{{count}} jaar na geplande tijd"
+    },
+    "units": {
+      "MINUTES_one": "minuut",
+      "MINUTES_other": "notulen",
+      "HOURS_one": "uur",
+      "HOURS_other": "uur",
+      "DAYS_one": "dag",
+      "DAYS_other": "dagen",
+      "WEEKS_one": "week",
+      "WEEKS_other": "weken",
+      "MONTHS_one": "maand",
+      "MONTHS_other": "maanden",
+      "YEARS_one": "jaar",
+      "YEARS_other": "jaar"
+    }
+  }
+}

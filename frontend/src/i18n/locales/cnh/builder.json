@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Builder Portal",
+    "referrals": "Hmanmi hna",
+    "builderLogin": "Builder Login",
+    "partnerLogin": "Channel Partner Login"
+  },
+  "login": {
+    "title": "Inn saktu min cazin",
+    "hint": "Builder account pawl cu Leadrat nih a sermi an si. Na ngeih lo ahcun na hruaitu kha hal."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Na biakhiahnak hngah",
+    "ACCEPTED": "Cohlan",
+    "REJECTED": "Hlawtmi"
+  },
+  "list": {
+    "title": "Hmanmi hna",
+    "allProjects": "Project vialte",
+    "allStatuses": "Dirhmun vialte",
+    "count_one": "{{count}} kuatnak",
+    "count_other": "{{count}} kuatmi",
+    "columns": {
+      "referral": "Referral",
+      "customer": "Thil cawtu",
+      "project": "Rian",
+      "sourcePartner": "Hramthawknak Partner",
+      "status": "Tlangtaar",
+      "booking": "Booking",
+      "registered": "Min cazin"
+    },
+    "booked": "Book tuahmi",
+    "empty": "Referral a um rih lo."
+  },
+  "detail": {
+    "customer": "Thil cawtu",
+    "sourcePartner": "Hramthawknak Partner",
+    "attributionNote": "(attribution - thlen khawh a si lo)",
+    "leadStatus": "Hruaitu dirhmun",
+    "protectedUntil": "tiang kilven a si",
+    "referral": "Referral",
+    "reason": "A ruang: {{reason}}",
+    "booking": "Booking",
+    "bookedOwner": "Booked - nangmah cu riantuannak ngeitu na si",
+    "notBooked": "Cawk a si lo",
+    "sharedAfterBooking": "Booking tuah hnu ah hrawmmi",
+    "accept": "Referral cohlan",
+    "confirmBooking": "Booking fehter",
+    "reject": "Referral Hlawt",
+    "rejectReasonLabel": "Hlawtnak a ruang (hawikom sinah langhter) *",
+    "rejectConfirm": "Cohlaan lo",
+    "confirmBookingPrompt": "Booking na fehter maw? Riantuannak ngeihnak cu nangmah sinah a kal i hawikom cu commission caah aa tlakmi a si.",
+    "notice": {
+      "booked": "Booking fehter a si cang.",
+      "accepted": "Referral cohlan a si.",
+      "rejected": "Referal cohlan a si lo."
+    },
+    "backToReferrals": "Referrals ah kir tthan"
+  },
+  "history": {
+    "title": "Sulhnu tuanbia",
+    "actor": {
+      "system": "Ningcang",
+      "partner": "Channel hawikom",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Partner min cazin kan hmuh cang",
+      "DUPLICATE_CHECK_COMPLETED": "Aa khatmi check dih a si cang - a cawlcangmi aa khatmi hmuh a si lo",
+      "REGISTRATION_ACCEPTED": "Min cazin cohlan a si cang",
+      "PROTECTION_GRANTED_one": "{{count}} -ni huhphenhnak pek a si",
+      "PROTECTION_GRANTED_other": "{{count}} -ni huhphenhnak pek a si",
+      "STAGE_UPDATED": "Dirhmun cu {{stage}} ah thlen a si",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} hmun tharchuah",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} hmun pawl tharchuahmi",
+      "LEAD_ASSIGNED": "{{name}} ah chiah",
+      "LEAD_UNASSIGNED": "Rianpek lomi",
+      "REFERRAL_ACCEPTED": "Innsaktu nih kuatnak cu a cohlan",
+      "REFERRAL_REJECTED": "Builder nih kuatnak cu a cohlang lo. A ruang: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} nih aa khatmi min cazin khumh aa zuammi cu cohlan a si lo",
+      "BOOKING_COMPLETED": "Booking tuah dih a si cang",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Riantuannak ngeihnak cu innsaktu sinah thlen a si",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Hawikom sinak cu kilven a si",
+      "COMMISSION_ELIGIBILITY_CREATED": "Commission tlamtlinnak ser",
+      "HANDOVER_COMPLETED": "Pekchanhnak lim a si cang",
+      "ADMIN_PROTECTION_RELEASED": "Admin nih aa khatmi kilvennak kha tuan tein a chuah. A ruang: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin nih {{from}} in {{to}} ah min cazin a thlen. A ruang: {{reason}}"
+    }
+  }
+}

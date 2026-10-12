@@ -1,0 +1,190 @@
+{
+  "list": {
+    "title": "I me indici",
+    "signedInAs": "Logà come {{name}} ( {{partnerId}} ) · tenpi mostrà in {{timezone}}",
+    "addLead": "+ Xonta piombo",
+    "tabs": {
+      "all": "Tutti ( {{count}} )",
+      "pending": "In attesa ( {{count}} )",
+      "booked": "Prenotà ( {{count}} )"
+    },
+    "searchPlaceholder": "Serca par nome, tełefono, o ID de iscrision ...",
+    "manageColumns": "Gestise łe cołone",
+    "rowsPerPage": "Righe par pagina",
+    "registrationId": "ID de iscrision",
+    "emptyState": "No ghe xe gnancora indicasión - iscrivite el primo.",
+    "noMatch": "Nisun indici el corisponde a sti filtri.",
+    "showing": "Mostrando {{from}} - {{to}} de {{total}} voci",
+    "actions": {
+      "preview": "Anteprima e ajornamento vełoce",
+      "history": "Storia",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Ciamada"
+    },
+    "pagination": {
+      "first": "Prima pagina",
+      "previous": "Pagina precedente",
+      "next": "Pagina dopo",
+      "last": "Ultima pagina"
+    }
+  },
+  "columns": {
+    "status": "Stà",
+    "assignTo": "Asegna a",
+    "booked": "Prenotà",
+    "protectionUntil": "Protesion fin"
+  },
+  "booking": {
+    "booked": "Prenotà",
+    "pending": "Drio spetar"
+  },
+  "assign": {
+    "unassigned": "No assegnà",
+    "owner": "{{name}} (Proprietario)",
+    "inactive": "{{name}} (inattivo)",
+    "unknownUser": "Utente sconosùo",
+    "assignedTo": "Assegnà a {{name}}"
+  },
+  "form": {
+    "addTitle": "Xonta piombo",
+    "editTitle": "Modifega el lead",
+    "noPermissionAdd": "No te ghè el permeso de registrar i clienti.",
+    "noPermissionEdit": "No te ghè el permeso de modifegar i leads.",
+    "selectPlaceholder": "Selessionar...",
+    "commaSeparated": "Separà da virgola",
+    "phonePlaceholder": "Nùmaro de telefono",
+    "countryCode": "Codice del paexe"
+  },
+  "project": {
+    "none": "Nessun progetto ancora (non riferito)",
+    "notInList": "{{project}} (no inte ła lista dei projeti)"
+  },
+  "journey": {
+    "customer": "Cliente",
+    "currentOwner": "Proprietario atuałe",
+    "protectionExpiry": "Scadenza deła protesion",
+    "leadStatus": "Stato de protagonista",
+    "scheduled": "Programà",
+    "assignedTo": "Assegnà a",
+    "referral": "Riferimento",
+    "builderReason": "Motivo del costrutor: {{reason}}",
+    "bookedHint": "Prenotà dal costrutor - ła proprietà operativa ła xe stà spostà al costrutor; ła vostra atribusion e ła vostra idoneità a ła comision łe xe tegnùe.",
+    "notBookedHint": "Łe prenotasion łe vien confermà dal costrutor na volta che el ga acetà el rinvio.",
+    "quickUpdate": "Ajornamento vełoce",
+    "leadDetails": "Detałi del protagonista",
+    "progressHistory": "Storia del progreso",
+    "timesIn": "(tempi in {{timezone}} )",
+    "backToMyLeads": "Torna ai me leads",
+    "editLead": "Modifega el lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "No riferìo (no progeto)",
+    "PENDING_BUILDER": "In attesa del costrutor",
+    "ACCEPTED": "Acetà dal costrutor",
+    "REJECTED": "Rifiutà dal costrutor"
+  },
+  "preview": {
+    "ariaLabel": "Anteprima del piombo",
+    "title": "Anteprima del lead",
+    "source": "Fonte",
+    "location": "Posission",
+    "scheduled": "Programà",
+    "registered": "Iscritto",
+    "latestNote": "Ultima nota",
+    "quickUpdate": "Ajornamento vełoce",
+    "fullDetails": "Detałi conpleti",
+    "editLead": "Modifega el lead",
+    "history": "Storia"
+  },
+  "quick": {
+    "assignedTo": "Assegnà a",
+    "status": "Stà",
+    "subStatus": "Soto-stato",
+    "selectSubStatus": "Selesiona el sotostato...",
+    "none": "Nissun",
+    "scheduledAt": "Programà ałe",
+    "localTime": "ora locałe",
+    "note": "Aponto",
+    "notePlaceholder": "Cossa xe capità in sta ciamada/vixita? (facoltativo)",
+    "updateStatus": "Stato de ajornamento",
+    "statusUpdated": "Stato ajornà",
+    "bookedLocked": "Sto lead el xe prenotà - el so status no el pol pì esar canbià.",
+    "viewOnly": "Te pol vardar sto lead, ma el to ruoło no’l pol agiornarlo."
+  },
+  "history": {
+    "title": "Cronologia - {{registrationId}}",
+    "tabs": {
+      "all": "Tuti",
+      "status": "Stà",
+      "assignment": "Mestiero",
+      "notes": "Note"
+    },
+    "doneBy": "Fato da {{actor}}",
+    "system": "Sistema",
+    "platforms": {
+      "System": "Sistema",
+      "External": "Esterno",
+      "Web": "Web",
+      "Mobile": "Mobile"
+    },
+    "added": "xontà",
+    "updated": "ajornà",
+    "empty": "(vodo)",
+    "noHistory": "Non ancora storia in questa categoria.",
+    "fieldLabels": {
+      "stage": "Stà",
+      "subStatus": "Soto-stato",
+      "scheduledAt": "Programa",
+      "notes": "Note",
+      "assignedTo": "Assegnà a"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Ricevùo l’iscrision del socio",
+      "DUPLICATE_CHECK_COMPLETED": "Controło del dopio finìo - no ghe xe stà catà un dopio ativo",
+      "REGISTRATION_ACCEPTED": "Iscrision acetà",
+      "PROTECTION_GRANTED_one": "{{count}} -giorno protesion concessa",
+      "PROTECTION_GRANTED_many": "{{count}} -giorno protesion concessa",
+      "PROTECTION_GRANTED_other": "{{count}} -giorno protesion concessa",
+      "REGISTRATION_ATTEMPT_REJECTED": "El tentativo de registrasion dopio da parte de {{partnerId}} xe stà rifiutà",
+      "LEAD_DETAILS_UPDATED_one": "El canpo {{count}} ajornà",
+      "LEAD_DETAILS_UPDATED_many": "I canpi {{count}} ajornài",
+      "LEAD_DETAILS_UPDATED_other": "I canpi {{count}} ajornài",
+      "STAGE_UPDATED": "Stato ajornà a {{status}}",
+      "LEAD_ASSIGNED": "Assegnà a {{name}}",
+      "LEAD_UNASSIGNED": "No assegnà",
+      "BOOKING_COMPLETED": "Prenotasion finìa",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Ła proprietà operativa trasferìa a Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribusion del socio conservà",
+      "COMMISSION_ELIGIBILITY_CREATED": "Idoneità a ła comision xe stà creà",
+      "HANDOVER_COMPLETED": "Consegna finìa",
+      "REFERRAL_ACCEPTED": "El costrutor el ga acetà el rinvio",
+      "REFERRAL_REJECTED": "El costruttor el ga rifiutà el rinvio. Motivo: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "L’aministrador el ga rilascià in anticipo ła protesion dei dopi. Motivo: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "L’aministrador el ga riasegnà l’iscrision da {{from}} a {{to}} . Motivo: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Gestise łe cołone",
+    "hint": "Trascina par riordine · varda par mostrar",
+    "showAll": "Mostra tuto",
+    "resetDefault": "Reset a ła predefinìa"
+  },
+  "filters": {
+    "title": "Filtri",
+    "allProjects": "Tutti i progetti",
+    "any": "Cualsiasi",
+    "noFields": "No ghe xe gnancora ativài altri canpi filtràbiłi (Inpostasion > Lead).",
+    "clearAll": "Canceła tuto"
+  },
+  "phone": {
+    "MISSING": "Xe necesario el numero de telefono.",
+    "INVALID": "Inserisci un numero de telefono valido.",
+    "TOO_SHORT": "El numero de telefono el xe masa curto.",
+    "TOO_LONG": "El numero de telefono el xe masa longo.",
+    "INVALID_FOR_COUNTRY": "Sto nùmaro de tełefono no l'è vałido par {{country}} .",
+    "COUNTRY_MISMATCH": "Selesiona el codice paexe giusto.",
+    "NOT_MOBILE": "Par piaser, inserì un nùmaro de tełefono, no un tełefono fiso."
+  }
+}

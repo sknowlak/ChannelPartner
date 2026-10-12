@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Барилгашадай портал",
+    "referrals": "Дабталганууд",
+    "builderLogin": "Барилгаша нэбтэрэлгэ",
+    "partnerLogin": "Сувагай түншын нэбтэрэлгэ"
+  },
+  "login": {
+    "title": "Барилгашан орохо",
+    "hint": "Барилгын дансануудые Leadrat бүтээнэ. Хэрбээ үгы һаа, администраторһаа асуу."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Танай шиидхэбэри хүлеэжэ байнаб",
+    "ACCEPTED": "Хүлээн абтаһан",
+    "REJECTED": "Арсаһан"
+  },
+  "list": {
+    "title": "Дабталганууд",
+    "allProjects": "Бүхы түсэлнүүд",
+    "allStatuses": "Бүхы байдалнууд",
+    "count_one": "{{count}} дамжуулга",
+    "count_other": "{{count}} дамжуулганууд",
+    "columns": {
+      "referral": "Дабталга",
+      "customer": "Үйлэшэлэгшэ",
+      "project": "Түлэблэл",
+      "sourcePartner": "Эхинэй түншэ",
+      "status": "Статус",
+      "booking": "Захиха",
+      "registered": "Бүридхэлдэ абтаһан"
+    },
+    "booked": "Захиһан",
+    "empty": "Мүнөө болотор дамжуулганууд үгы."
+  },
+  "detail": {
+    "customer": "Үйлэшэлэгшэ",
+    "sourcePartner": "Эхинэй түншэ",
+    "attributionNote": "(атрибуци - хубилгаха аргагүй)",
+    "leadStatus": "Түрүүшын байдал",
+    "protectedUntil": "болотор хамгаалагдаһан",
+    "referral": "Дабталга",
+    "reason": "Шалтагаан: {{reason}}",
+    "booking": "Захиха",
+    "bookedOwner": "Захиһан - та үйлэдбэрилэлэй эзэн гээшэт",
+    "notBooked": "Захигдаагүй",
+    "sharedAfterBooking": "Захилай һүүлдэ хубаалдаба",
+    "accept": "Дабталга хүлеэн абагты",
+    "confirmBooking": "Захиалга баталха",
+    "reject": "Дабталгаһаа арсаха",
+    "rejectReasonLabel": "Арсаһан шалтагаан (нүхэртөө харуулагдана) *",
+    "rejectConfirm": "Хүлеэн абахагүй",
+    "confirmBookingPrompt": "Захиалга баталха гү? Үйлэдбэрилэлэй эзэмшэл таанадта дамжуулагдажа, түншэнь комисси абаха эрхэтэй болоно.",
+    "notice": {
+      "booked": "Захиалга баталагдаа.",
+      "accepted": "Дабталга хүлеэн абтаба.",
+      "rejected": "Дабталга үгы болгогдоо."
+    },
+    "backToReferrals": "Дабталгануудта бусаха"
+  },
+  "history": {
+    "title": "Түүхэ",
+    "actor": {
+      "system": "Системэ",
+      "partner": "Сувагай түншэ",
+      "admin": "Leadrat захирагша"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Нүхэрэй бүридхэл абтаа",
+      "DUPLICATE_CHECK_COMPLETED": "Дабтагдаһан шалгалта дүүргэгдэбэ - эдэбхитэй дабтагдаһан үгы",
+      "REGISTRATION_ACCEPTED": "Бүридхэл абтаа",
+      "PROTECTION_GRANTED_one": "{{count}} -үдэрэй хамгаалалга үгтэбэ",
+      "PROTECTION_GRANTED_other": "{{count}} -үдэрэй хамгаалалга үгтэбэ",
+      "STAGE_UPDATED": "Байдал {{stage}} болотор шэнэлэгдэбэ",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} талбари шэнэлэгдэбэ",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} талбаринуудые шэнэлбэ",
+      "LEAD_ASSIGNED": "{{name}} руу үгтэһэн",
+      "LEAD_UNASSIGNED": "Даалгагдаагүй",
+      "REFERRAL_ACCEPTED": "Барилгашан дамжуулга хүлеэн абаа",
+      "REFERRAL_REJECTED": "Барилгашан энэ дамжуулгые үгы болгоо. Шалтагаан: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} эй дабтагдаһан бүридхэлэй оролдолго үгы болгогдоо",
+      "BOOKING_COMPLETED": "Захиалга дүүргэгдэбэ",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Үйлэдбэрилэлэй эзэмшэл Барилгашадта дамжуулагдаба",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Нүхэрэй нэрэ томьёо хадагалагдаа",
+      "COMMISSION_ELIGIBILITY_CREATED": "Комиссиин эрхэ бии болоо",
+      "HANDOVER_COMPLETED": "Хүргэлтэ дүүргэгдэбэ",
+      "ADMIN_PROTECTION_RELEASED": "Админ дабтагдаһан хамгаалалга эртэ гаргаа. Шалтагаан: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Админ бүридхэл {{from}} -һаа {{to}} руу шэлжүүлээ. Шалтагаан: {{reason}}"
+    }
+  }
+}

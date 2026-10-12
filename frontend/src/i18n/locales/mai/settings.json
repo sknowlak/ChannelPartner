@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "सेटिंग्स",
+    "noPermission": "अहाँक पास सेटिंग प्रबंधित करबाक अनुमति नहि अछि."
+  },
+  "categories": {
+    "lead": "अगुवाई",
+    "user": "उपयोगकर्ता",
+    "integrations": "एकीकरण"
+  },
+  "leadTabs": {
+    "fields": "खेत",
+    "statuses": "स्थिति एवं उपस्थिति",
+    "notifications": "अधिसूचना एवं समयनिर्धारक"
+  },
+  "fields": {
+    "leadIntro": "लीड कैप्चर फॉर्म कें कॉन्फ़िगर करूं: फील्ड कें सक्षम/अक्षम करूं, ओकरा आवश्यक चिह्नित करूं, या अपन खुद कें कस्टम फील्ड जोड़ूं.",
+    "userIntro": "टीम सदस्य जोड़ू/संपादित करू फॉर्म कें कॉन्फ़िगर करू: फील्ड कें सक्षम/अक्षम करू, ओकरा आवश्यक चिह्नित करू, अथवा अपन कस्टम फील्ड जोड़ू.",
+    "addCustomField": "+ कस्टम फील्ड जोड़ू",
+    "fieldLabel": "फील्ड लेबल",
+    "group": "समूह",
+    "groupPlaceholderLead": "जेना पूछताछ जानकारी",
+    "groupPlaceholderUser": "जेना अतिरिक्त विवरण",
+    "dataType": "डेटा प्रकार",
+    "options": "विकल्प (अल्पविराम से अलग) २.",
+    "requiredLead": "आवश्यक - अहां कें टीम कें भागीदारक कें एकटा लीड पंजीकृत करय कें लेल एकरा भरनाय आवश्यक छै",
+    "requiredUser": "आवश्यक - टीम के सदस्य के जोड़य काल भरय पड़त",
+    "creating": "बना रहल छी...",
+    "createField": "फील्ड बनाउ",
+    "columns": {
+      "field": "खेत",
+      "group": "समूह",
+      "type": "प्रकार",
+      "required": "आवश्यक",
+      "enabled": "सक्षम कएल गेल",
+      "kind": "प्रकार"
+    },
+    "kind": {
+      "custom": "परिपाटी",
+      "core": "कोर (लॉक) 1।",
+      "standard": "मानक"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "मूल ग्रन्थ",
+    "TEXTAREA": "दीर्घ पाठ",
+    "NUMBER": "संख्या",
+    "CURRENCY": "मुद्रा",
+    "DATE": "तारीख",
+    "SELECT": "ड्रॉपडाउन",
+    "LIST": "सूची"
+  },
+  "picker": {
+    "searchPlaceholder": "लीड फील्ड खोजें...",
+    "summary": "{{shown}} देखाओल गेल · {{mandatory}} अनिवार्य",
+    "mandatory": "जरूरी",
+    "noMatch": "कोनो खेत मेल नहि खाइत अछि।"
+  },
+  "statuses": {
+    "intro": "अहाँक लीड स्टेटस आ उप-स्टेटस - जे कियो कहैत अछि (एकटा तारीख आ समय, लीड फील्ड) जखन कियो कोनो लीड ओकरा पर अपडेट करैत अछि |",
+    "add": "+ स्टेटस जोड़ू",
+    "columns": {
+      "order": "आदेश",
+      "status": "स्थिति",
+      "subStatuses": "उप-स्थिति",
+      "asksFor": "पूछैत अछि",
+      "active": "चुस्त"
+    },
+    "moveUp": "ऊपर चलू",
+    "moveDown": "नीचाँ चलि जाउ",
+    "defaultBadge": "नव लीड के लेल डिफ़ॉल्ट",
+    "bookingBadge": "बुकिंग के स्थिति",
+    "asksForLabel": "{{label}} के लेल पूछैत अछि।",
+    "asksForDateTime": "तारीख & समय पूछैत अछि",
+    "none": "कोनो नहि",
+    "dateTime": "तिथि एवं समय",
+    "scheduledOn": "{{names}} पर।",
+    "fieldsSummary_one": "{{count}} field ( {{mandatory}} अनिवार्य)",
+    "fieldsSummary_other": "{{count}} क्षेत्र ( {{mandatory}} अनिवार्य)",
+    "deleteConfirm": "स्थिति \" {{name}} \" मेटाउ? एकरा पूर्ववत नहि कएल जा सकैत अछि।",
+    "editTitle": "संपादन स्थिति - {{name}}",
+    "newTitle": "नया स्टेटस",
+    "name": "स्थिति नाम",
+    "colour": "रंग",
+    "active": "चुस्त",
+    "isDefault": "नव लीड क लेल डिफ़ॉल्ट स्थिति",
+    "isBooking": "बुकिंग स्थिति (पूर्ण बुकिंग द्वारा निर्धारित)",
+    "whenMoved": "जखन कोनो सीसा एहि दर्जा पर ल' जाइत अछि",
+    "askSchedule": "तारीख एवं समय पूछें (शेड्यूलर)",
+    "scheduleLabelPlaceholder": "लेबल, जेना Visit at",
+    "fieldsToShow": "अपडेट फॉर्म पर देखाबय लेल लीड फील्ड",
+    "subStatusesTitle": "उप-स्थिति",
+    "subStatusesHint": "प्रत्येक उप-स्थिति अपन तारीख आ समय पूछि सकैत अछि आ अपन फील्ड जोड़ि सकैत अछि - जे ऊपर स्टेटस के फील्ड के ऊपर देखाओल गेल अछि |",
+    "subStatusName": "उप-स्थिति नाम",
+    "subFields": "क्षेत्र ( {{count}} ) २.",
+    "subScheduleLabelPlaceholder": "तिथि एवं समय लेबल, जेना कॉल बैक पर",
+    "addSubStatus": "+ उप-स्थिति जोड़ू",
+    "saveStatus": "स्टेटस सहेजें",
+    "createStatus": "स्टेटस बनाइए"
+  },
+  "notifications": {
+    "intro": "सही लोगक कें सूचित करूं जखन कोनों लीड कोनों स्थिति मे पहुंच जायत छै - तुरंत, या ओकरा पर निर्धारित तिथि आ समय सं पहिले/बाद मे एकटा निर्धारित समय.",
+    "add": "+ सूचना जोड़ू",
+    "columns": {
+      "notification": "अधिसूचना",
+      "whenStatusIs": "जब स्टेटस है",
+      "sends": "भेजैत अछि",
+      "to": "होए",
+      "via": "क दिआ",
+      "enabled": "सक्षम कएल गेल"
+    },
+    "anyStatus": "कोनो स्टेटस",
+    "anySubStatus": "कोनो उप-स्थिति",
+    "inactiveOption": "{{name}} (निष्क्रिय) २.",
+    "emptyRules": "एखन धरि कोनो सूचना नहि - एकटा जोड़ू जे जखन कोनो लीड कोनो स्टेटस पर पहुँचि जायत तखन अपन टीम केँ सचेत करू.",
+    "jobs": {
+      "title": "अनुसूचित एवं प्रेषित",
+      "firesAt": "फायर एट",
+      "notification": "अधिसूचना",
+      "lead": "अगुवाई",
+      "status": "स्थिति",
+      "details": "विवरण",
+      "empty": "एखन धरि किछु निर्धारित वा पठाओल नहि गेल।",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "लंबित",
+      "PROCESSING": "प्रसंस्करण",
+      "SENT": "पठाओल",
+      "FAILED": "अनुत्तीर्ण",
+      "SKIPPED": "छोड़ि देल गेल",
+      "CANCELLED": "रद्द क देल गेल"
+    },
+    "deliveryStatus": {
+      "SENT": "पठाओल",
+      "FAILED": "अनुत्तीर्ण",
+      "SKIPPED": "लंघि गेल"
+    },
+    "deliveryChannel": {
+      "IN_APP": "इन-एप",
+      "EMAIL": "ईमेल",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "असाइन कएल गेल प्रयोक्ता",
+      "owner": "मालिक",
+      "updatedBy": "द्वारा अद्यतन",
+      "role": "भूमिका: {{name}}"
+    },
+    "channels": {
+      "inApp": "इन-एप",
+      "email": "ईमेल",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "सूचना मेटाउ \" {{name}} \"? एकरा स लंबित स्मरण रद्द क देल गेल अछि।",
+    "testPrompt": "कोन लीड ID उपयोग करयत अइ सूचना कें परीक्षण अपना आप (इन-एप) भेजूं ?",
+    "testSent": "अहाँक घंटी पर पठाओल गेल: {{title}} {{message}}",
+    "headersInvalid": "Webhook हेडर वैध JSON होबाक चाही , जेना {\"प्राधिकरण\": \"वाहक xyz\"}",
+    "editTitle": "संपादन अधिसूचना",
+    "newTitle": "नया अधिसूचना",
+    "name": "नाम",
+    "namePlaceholder": "जेना साइट विजिट रिमाइंडर",
+    "whenStatus": "जखन कोनो लीड के स्टेटस होइत छैक",
+    "subStatus": "उप-स्थिति",
+    "send": "पठाउ (निर्माता) २.",
+    "custom": "परिपाटी...",
+    "modeBefore": "निर्धारित समय स पहिने",
+    "modeAfter": "निर्धारित समय के बाद",
+    "noScheduleWarning": "ई स्टेटस तारीख & समय नहि पूछैत अछि, तेँ \"निर्धारित समय सँ पहिने/पर/बाद\" सूचना कहियो फायर नहि होयत.",
+    "noScheduleFix": "चालू करू स्थिति आ उपस्थितिक अंतर्गत एकर लेल <strong>तारीख आ समय पूछू</strong> , वा तुरंत पठाउ।",
+    "sendTo": "(कोनो संयोजन) पर पठाउ",
+    "recipientAssigned": "असाइन कएल गेल प्रयोक्ता (लीड मालिक) २.",
+    "recipientOwner": "खाता मालिक / एडमिन",
+    "recipientUpdatedBy": "स्टेटस अपडेट करय वाला व्यक्ति",
+    "everyoneWithRole": "सब कियो भूमिका के साथ",
+    "specificUsers": "विशिष्ट प्रयोक्ता (सक्रिय) २.",
+    "inactiveNever": "निष्क्रिय प्रयोक्ता कें कहियो सूचना नहि भेटैत छै, भले ही चुनल गेल होय.",
+    "deliverVia": "के माध्यम से वितरित करे",
+    "channelInApp": "इन-एप (घंटी) 1.1.",
+    "channelEmail": "ईमेल",
+    "channelWebhook": "Webhook ( WhatsApp / SMS प्रदाता)",
+    "emailHint": "ईमेल प्रत्येक प्राप्तकर्ता कें ईमेल पता पर जायत छै आ सर्वर (बैकएंड/.env) पर एसएमटीपी सेटअप कें आवश्यकता होयत छै; ता धरि ईमेल भेजल गेल अछि जेना छोड़ल गेल अछि.",
+    "webhookUrl": "Webhook URL ( POST , JSON ) .",
+    "headers": "हेडर ( JSON ) 1.1.",
+    "content": "अधिसूचना सामग्री",
+    "title": "शीर्षक",
+    "message": "संदेश",
+    "insertIntoTitle": "शीर्षक में सम्मिलित करें",
+    "insertIntoMessage": "संदेश में सम्मिलित करें",
+    "anyLeadField": "कोनो लीड फील्ड सेहो काज करैत अछि, जेना <code1>{{example1}}</code1> अथवा <code2>{{example2}}</code2> .",
+    "preview": "पूर्वावलोकन (नमूना लीड) २.",
+    "enabled": "सक्षम कएल गेल",
+    "saveRule": "सूचना सहेजें",
+    "createRule": "अधिसूचना बनाइए",
+    "variables": {
+      "customerName": "सीसा नाम",
+      "customerMobile": "लीड मोबाइल",
+      "customerEmail": "ईमेल के नेतृत्व करू",
+      "registrationId": "लीड ID",
+      "status": "स्थिति",
+      "subStatus": "उप-स्थिति",
+      "scheduleAt": "निर्धारित तिथि एवं समय",
+      "assignedTo": "असाइन कएल गेल प्रयोक्ता",
+      "updatedBy": "द्वारा अद्यतन",
+      "recipient": "प्राप्तकर्ता के नाम",
+      "project": "परियोजना",
+      "notes": "नवीनतम नोट",
+      "partner": "साथी के नाम"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "तुरंत जखन स्टेटस सेट भ' जाइत अछि",
+      "AT": "निर्धारित समय पर",
+      "A1D": "निर्धारित समय के बाद 1 दिन (फॉलो-अप चेक)"
+    },
+    "immediately": "झटपट",
+    "atScheduled": "निर्धारित समय पर",
+    "before": {
+      "MINUTES_one": "{{count}} निर्धारित समय सँ मिनट पहिने",
+      "MINUTES_other": "{{count}} निर्धारित समय सँ मिनट पहिने",
+      "HOURS_one": "{{count}} निर्धारित समय सँ घंटा पहिने",
+      "HOURS_other": "{{count}} निर्धारित समय सँ घंटा पहिने",
+      "DAYS_one": "{{count}} निर्धारित समय सँ पहिने दिन",
+      "DAYS_other": "{{count}} निर्धारित समय सँ पहिने दिन",
+      "WEEKS_one": "{{count}} निर्धारित समय सँ सप्ताह पहिने",
+      "WEEKS_other": "{{count}} निर्धारित समय सँ सप्ताह पहिने",
+      "MONTHS_one": "{{count}} निर्धारित समय सँ मास पहिने",
+      "MONTHS_other": "{{count}} निर्धारित समय सँ महिना पहिने",
+      "YEARS_one": "{{count}} निर्धारित समय सँ साल पहिने",
+      "YEARS_other": "{{count}} निर्धारित समय सँ वर्ष पूर्व"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} निर्धारित समय के बाद मिनट",
+      "MINUTES_other": "{{count}} निर्धारित समय के बाद मिनट",
+      "HOURS_one": "निर्धारित समय के बाद {{count}} घंटा",
+      "HOURS_other": "{{count}} निर्धारित समय के बाद घण्टे",
+      "DAYS_one": "{{count}} निर्धारित समय के बाद दिन",
+      "DAYS_other": "निर्धारित समय के बाद {{count}} दिन",
+      "WEEKS_one": "{{count}} निर्धारित समय के बाद सप्ताह",
+      "WEEKS_other": "{{count}} निर्धारित समय के बाद सप्ताह",
+      "MONTHS_one": "{{count}} निर्धारित समय के बाद महीना",
+      "MONTHS_other": "{{count}} निर्धारित समय के बाद महिना",
+      "YEARS_one": "{{count}} निर्धारित समय के बाद साल",
+      "YEARS_other": "{{count}} निर्धारित समय के बाद वर्ष"
+    },
+    "units": {
+      "MINUTES_one": "मिनट",
+      "MINUTES_other": "मिनट",
+      "HOURS_one": "घंटा",
+      "HOURS_other": "घंटा",
+      "DAYS_one": "दिन",
+      "DAYS_other": "दिन",
+      "WEEKS_one": "सप्ताह",
+      "WEEKS_other": "सप्ताह",
+      "MONTHS_one": "मास",
+      "MONTHS_other": "महिना",
+      "YEARS_one": "साल",
+      "YEARS_other": "साल"
+    }
+  }
+}

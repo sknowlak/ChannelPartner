@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Kit ma ki keto kwede",
+    "noPermission": "Pi itye ki twero me doro jami ma ki keto."
+  },
+  "categories": {
+    "lead": "Dor wi",
+    "user": "Latic",
+    "integrations": "Ribbe"
+  },
+  "leadTabs": {
+    "fields": "Poto",
+    "statuses": "Kit ma tye kwede ki kit ma tye kwede",
+    "notifications": "Ngec ki dano ma yubu kare"
+  },
+  "fields": {
+    "leadIntro": "Yub karatac me mako dano: yabo/juku kabedo, keto lanyut ma mite, onyo med kabedo ma imito.",
+    "userIntro": "Yub karatac me medo/loko dano ma i dul ni: yabo/juku kabedo, ket lanyut ni mite, onyo med kabedo ma in imiito.",
+    "addCustomField": "+ Medo kabedo ma imito",
+    "fieldLabel": "Labol me poto",
+    "group": "Gurup",
+    "groupPlaceholderLead": "Labol, ngec me penyo",
+    "groupPlaceholderUser": "calo ngec mukene",
+    "dataType": "Kit ngec",
+    "options": "Jami ma ki yero (ki poko kin coc)",
+    "requiredLead": "Mite - lutic luwoti ma i gurup ni omyera gu coc man me coyo nying gi",
+    "requiredUser": "Mite - omyera ki coc ka ki medo ngat mo i dul ni",
+    "creating": "Yub...",
+    "createField": "Yub kabedo",
+    "columns": {
+      "field": "Ba",
+      "group": "Gurup",
+      "type": "Kit",
+      "required": "Mite",
+      "enabled": "Ki yabo",
+      "kind": "Kit"
+    },
+    "kind": {
+      "custom": "Kit me tekwaro",
+      "core": "Core (ki juku)",
+      "standard": "Kit rwom"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Coc",
+    "TEXTAREA": "Coc mabor",
+    "NUMBER": "Nama",
+    "CURRENCY": "Cente",
+    "DATE": "Ninu dwe",
+    "SELECT": "Dwok piny",
+    "LIST": "Lis"
+  },
+  "picker": {
+    "searchPlaceholder": "Yeny kabedo ma ibi telo iye...",
+    "summary": "{{shown}} shown · {{mandatory}} mandatory",
+    "mandatory": "Mite ite cik",
+    "noMatch": "Pe tye kabedo mo ma rwate."
+  },
+  "statuses": {
+    "intro": "Kit ma ngat moni tye kwede ki kit ma en tye kwede - ngo ma ngat acel acel penyo pire (nino dwe ki cawa, kabedo ma ngat moni tye iye) ka ngat mo oloko lok ma mako ngat moni.",
+    "add": "+ Med rwom",
+    "columns": {
+      "order": "Kit twero",
+      "status": "Kit ma tye kwede",
+      "subStatuses": "Kit ma piny tye kwede",
+      "asksFor": "penyo pi",
+      "active": "Tye ka tic"
+    },
+    "moveUp": "Wot malo",
+    "moveDown": "Cet piny",
+    "defaultBadge": "Gin ma ki keto pi dano manyen",
+    "bookingBadge": "Kit me booking",
+    "asksForLabel": "Penyo pi {{label}}",
+    "asksForDateTime": "Penyo pi nino dwe ki cawa",
+    "none": "Peke",
+    "dateTime": "Nino & cawa",
+    "scheduledOn": "i kom {{names}}",
+    "fieldsSummary_one": "{{count}} kabedo ( {{mandatory}} ma miite)",
+    "fieldsSummary_other": "{{count}} kabedo ( {{mandatory}} ma miite)",
+    "deleteConfirm": "Kwany rwom me \" {{name}} \"? Man pe kitwero dwoko cen.",
+    "editTitle": "Lok kit ma tye kwede - {{name}}",
+    "newTitle": "Kit manyen",
+    "name": "Nying me kit ma tye kwede",
+    "colour": "Rangi",
+    "active": "Tye ka tic",
+    "isDefault": "Kit ma tye kwede pi dano manyen ma gubi kelo",
+    "isBooking": "Kit ma ki keto kwede buk (ma ki keto ki buk ma otum)",
+    "whenMoved": "Ka ngat moni ki keto i rwom man",
+    "askSchedule": "Peny pi nino dwe ki cawa (layub yub)",
+    "scheduleLabelPlaceholder": "Nyut nying, calo limo i",
+    "fieldsToShow": "Kabedo ma ki bi nyutu i karatac me medo ngec",
+    "subStatusesTitle": "Kit ma piny tye kwede",
+    "subStatusesHint": "Kabedo acel acel twero penyo pi nino & cawa ne ki medo kabedo ne - ma ki nyutu i kom kabedo ma malo ni.",
+    "subStatusName": "Nying me rwom ma piny",
+    "subFields": "Kabedo ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Coc me nino dwe ki cawa, calo lwongo cen i",
+    "addSubStatus": "+ Medo rwom ma lapiny",
+    "saveStatus": "Gwok kit ma tye kwede",
+    "createStatus": "Yub rwom"
+  },
+  "notifications": {
+    "intro": "Mi ngec bot dano ma opore ka ngat moni oo i rwom mo - cut cut, onyo cawa ma ki keto ma peya/i nge nino & cawa ma ki keto iye.",
+    "add": "+ Med ngec",
+    "columns": {
+      "notification": "Ngec",
+      "whenStatusIs": "Ka rwom tye",
+      "sends": "Cwalo",
+      "to": "Bot",
+      "via": "Ni beo",
+      "enabled": "Ki yabo"
+    },
+    "anyStatus": "Kit mo keken",
+    "anySubStatus": "Gin mo keken ma tye piny",
+    "inactiveOption": "{{name}} (pe tiyo)",
+    "emptyRules": "Pe tye ngec mo - med acel me poyo wi gurup ni ka ngat moni oo i rwom.",
+    "jobs": {
+      "title": "Ki yubu & ki cwalo",
+      "firesAt": "Mac i",
+      "notification": "Ngec",
+      "lead": "Dor wi",
+      "status": "Kit ma tye kwede",
+      "details": "Ma tut",
+      "empty": "Pe tye gin mo ma ki yubu onyo ki cwalo.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Otum ku",
+      "PROCESSING": "Tiimo",
+      "SENT": "Ki cwalo",
+      "FAILED": "Odeg",
+      "SKIPPED": "ki kato",
+      "CANCELLED": "ki jwayo"
+    },
+    "deliveryStatus": {
+      "SENT": "ki cwalo",
+      "FAILED": "odeg",
+      "SKIPPED": "ki kato"
+    },
+    "deliveryChannel": {
+      "IN_APP": "i-app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Latic ma kimiyo bote",
+      "owner": "Rwed",
+      "updatedBy": "Ki medo ki",
+      "role": "Tic: {{name}}"
+    },
+    "channels": {
+      "inApp": "I-app",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Kwanyo ngec \" {{name}} \"? Lok me poyo wic ma tye ka kuro ki iye ki juku woko.",
+    "testPrompt": "Cwal temo me ngec man bot in keni (i-app) kun itiyo ki ID mene?",
+    "testSent": "Ki cwalo bot olang ni: {{title}} {{message}}",
+    "headersInvalid": "Wi lok me Webhook omyera obed JSON ma tye kakare, ma calo {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Lok ngec",
+    "newTitle": "Ngec manyen",
+    "name": "Nying",
+    "namePlaceholder": "labolle, poyo wic me limo kabedo",
+    "whenStatus": "Ka rwom pa latela tye",
+    "subStatus": "Kit ma piny",
+    "send": "Cwal (layub kare)",
+    "custom": "Kit me tekwaro...",
+    "modeBefore": "ma peya cawa ma ki keto",
+    "modeAfter": "ingee cawa ma ki moko",
+    "noScheduleWarning": "Kit man pe penyo pi nino dwe ki cawa, pi meno ngec me \"ma peya/i/i nge cawa ma ki moko\" pe obi tic.",
+    "noScheduleFix": "Yab <strong>Peny pi nino dwe ki cawa</strong> pi en i te Status & Sub-Status, onyo cwalo cut cut.",
+    "sendTo": "Cwal bot (dul mo keken)",
+    "recipientAssigned": "Latic ma ki miiyo (rwod tic ma pire tek)",
+    "recipientOwner": "Won akaunt / ladit",
+    "recipientUpdatedBy": "Ngat ma oloko kit ma jami tye kwede",
+    "everyoneWithRole": "Dano weny ma tye ki tic",
+    "specificUsers": "Lutic ma ki ngeyo (ma tye ka tic)",
+    "inactiveNever": "Lutic ma pe gitye ka tic pe ginongo ngec, kadi bed ni kiyero gi.",
+    "deliverVia": "Cwalo ki bot",
+    "channelInApp": "I-app (bell)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS provider)",
+    "emailHint": "Email cito bot ngat acel acel ma tye ka nongo email ki mito SMTP ma ki keto i server (backend/.env); nio ka dong email ma ki cwalo ki coyo ni ki kato woko.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Wi lok ( JSON )",
+    "content": "Lok me ngec",
+    "title": "Kit ma ki lwongo kwede",
+    "message": "Kwena",
+    "insertIntoTitle": "Ket i wi lok",
+    "insertIntoMessage": "Ket i kwena",
+    "anyLeadField": "Kabedo mo keken ma telo bene tiyo, calo <code1>{{example1}}</code1> onyo <code2>{{example2}}</code2> .",
+    "preview": "Nen (lanyut me tela)",
+    "enabled": "Ki yabo",
+    "saveRule": "Gwok ngec",
+    "createRule": "Yub ngec",
+    "variables": {
+      "customerName": "Nying ma telo",
+      "customerMobile": "Telo cim cing",
+      "customerEmail": "Email ma telo",
+      "registrationId": "Latela ID",
+      "status": "Kit ma tye kwede",
+      "subStatus": "Kit ma piny",
+      "scheduleAt": "Nino dwe ki cawa ma ki keto",
+      "assignedTo": "Latic ma kimiyo bote",
+      "updatedBy": "Ki medo ki",
+      "recipient": "Nying ngat ma obi nongo",
+      "project": "Purujek",
+      "notes": "Lok manyen",
+      "partner": "Nying lawoti"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Cut cut ka rwom ni ki keto",
+      "AT": "I cawa ma ki keto",
+      "A1D": "nino acel inge cawa ma ki moko (lubo neno)"
+    },
+    "immediately": "Cutu",
+    "atScheduled": "I cawa ma ki moko",
+    "before": {
+      "MINUTES_one": "{{count}} dakika ma peya cawa ma ki keto",
+      "MINUTES_other": "{{count}} dakika ma peya cawa ma ki keto",
+      "HOURS_one": "{{count}} cawa ma peya cawa ma ki moko",
+      "HOURS_other": "{{count}} cawa ma peya cawa ma ki keto",
+      "DAYS_one": "{{count}} nino ma peya cawa ma ki moko",
+      "DAYS_other": "{{count}} nino ma peya cawa ma ki keto",
+      "WEEKS_one": "{{count}} cabit ma peya cawa ma ki keto",
+      "WEEKS_other": "{{count}} cabit ma peya cawa ma ki keto",
+      "MONTHS_one": "{{count}} dwe ma peya cawa ma ki moko",
+      "MONTHS_other": "{{count}} dwe ma peya kare ma ki moko",
+      "YEARS_one": "{{count}} mwaka ma peya kare ma ki moko",
+      "YEARS_other": "{{count}} mwaka ma peya kare ma ki moko"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} dakika inge cawa ma ki keto",
+      "MINUTES_other": "{{count}} dakika inge cawa ma ki keto",
+      "HOURS_one": "{{count}} cawa ingee cawa ma ki moko",
+      "HOURS_other": "{{count}} cawa ingee cawa ma ki moko",
+      "DAYS_one": "{{count}} nino ingee cawa ma ki moko",
+      "DAYS_other": "{{count}} nino inge cawa ma ki moko",
+      "WEEKS_one": "{{count}} cabit ingee cawa ma ki moko",
+      "WEEKS_other": "{{count}} cabit inge cawa ma ki moko",
+      "MONTHS_one": "{{count}} dwe inge cawa ma ki moko",
+      "MONTHS_other": "{{count}} dwe inge kare ma ki moko",
+      "YEARS_one": "{{count}} mwaka inge kare ma ki keto",
+      "YEARS_other": "{{count}} mwaka inge kare ma ki moko"
+    },
+    "units": {
+      "MINUTES_one": "dakika",
+      "MINUTES_other": "dakika",
+      "HOURS_one": "cawa",
+      "HOURS_other": "cawa",
+      "DAYS_one": "ninu",
+      "DAYS_other": "nino",
+      "WEEKS_one": "cabit",
+      "WEEKS_other": "cabit",
+      "MONTHS_one": "dwe",
+      "MONTHS_other": "dwe",
+      "YEARS_one": "mwaka",
+      "YEARS_other": "mwaka"
+    }
+  }
+}

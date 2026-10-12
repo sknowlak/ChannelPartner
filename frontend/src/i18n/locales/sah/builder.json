@@ -1,0 +1,87 @@
+{
+  "shell": {
+    "portal": "Тутааччы портала",
+    "referrals": "Направлениелар",
+    "builderLogin": "Тутааччы киириитэ",
+    "partnerLogin": "Ханаал партнера киириитэ"
+  },
+  "login": {
+    "title": "Тутааччы киириитэ",
+    "hint": "Тутааччы аккауннарын Leadrat оҥорор. Суох буоллаҕына администраторгыттан ыйыт."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Быһаарыыгын кэтэһэбин",
+    "ACCEPTED": "Ылынна",
+    "REJECTED": "Ытыллыбыт"
+  },
+  "list": {
+    "title": "Направлениелар",
+    "allProjects": "Бары бырайыактар",
+    "allStatuses": "Бары статустар",
+    "count_other": "{{count}} ыҥырыылар",
+    "columns": {
+      "referral": "Направление",
+      "customer": "Клиент",
+      "project": "Бырайыак",
+      "sourcePartner": "Источник партнера",
+      "status": "Турук",
+      "booking": "Бронирование",
+      "registered": "Регистрацияламмыт"
+    },
+    "booked": "Сакаастаммыт",
+    "empty": "Пока реферал суох."
+  },
+  "detail": {
+    "customer": "Клиент",
+    "sourcePartner": "Источник партнера",
+    "attributionNote": "(атрибуция - уларытыллыбат)",
+    "leadStatus": "Сүрүн турук",
+    "protectedUntil": "диэри харыстанар",
+    "referral": "Направление",
+    "reason": "Биричиинэ: {{reason}}",
+    "booking": "Бронирование",
+    "bookedOwner": "Сакаастаммыт - эн дьаһайар хаһаайын буолаҕын",
+    "notBooked": "Сакаастамматах",
+    "sharedAfterBooking": "Сакаас кэнниттэн үллэһиллибит",
+    "accept": "Направлениены ылын",
+    "confirmBooking": "Бронированиены бигэргэт",
+    "reject": "Направлениены ылыммат",
+    "rejectReasonLabel": "Отказ төрүөтэ (партнерга көрдөрүллэр) *",
+    "rejectConfirm": "Аккаастаа",
+    "confirmBookingPrompt": "Бронированиены бигэргэтэҕин дуо? Оперативнай бас билии эйиэхэ көһөр уонна партнер хамнаһы ылар бырааптаах буолар.",
+    "notice": {
+      "booked": "Бронирование бигэргэтиллибит.",
+      "accepted": "Направление ылыллыбыт.",
+      "rejected": "Направление ылыллыбата."
+    },
+    "backToReferrals": "Рефералларга төннүү"
+  },
+  "history": {
+    "title": "История",
+    "actor": {
+      "system": "Система",
+      "partner": "Ханаал партнера",
+      "admin": "Leadrat админ"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Партнер регистрацията ылылынна",
+      "DUPLICATE_CHECK_COMPLETED": "Дубликат бэрэбиэркэтэ түмүктэннэ - актыыбынай дубликат булуллубатах",
+      "REGISTRATION_ACCEPTED": "Регистрация ылыллыбыт",
+      "PROTECTION_GRANTED_other": "{{count}} -күннээх көмүскэл бэриллибит",
+      "STAGE_UPDATED": "Статус саҥардыллыбыт {{stage}}",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} сирдэрин саҥардыы",
+      "LEAD_ASSIGNED": "{{name}} ананар",
+      "LEAD_UNASSIGNED": "Аналлыбатах",
+      "REFERRAL_ACCEPTED": "Тутааччы ыҥырыыны ылыммыта",
+      "REFERRAL_REJECTED": "Тутааччы ыҥырыыны ылымматаҕа. Биричиинэ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} хатыланар регистрацияны оҥоро сатааһына ылыллыбата",
+      "BOOKING_COMPLETED": "Бронирование бүттэ",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Операционнай бас билии тутааччыга бэриллибитэ",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Партнер атрибуцията харыстанар",
+      "COMMISSION_ELIGIBILITY_CREATED": "Хамыыһыйаҕа киирэр быраап оҥоһулунна",
+      "HANDOVER_COMPLETED": "Бэриллии түмүктэннэ",
+      "ADMIN_PROTECTION_RELEASED": "Админ дубликаттан көмүскэли эрдэ таһаарбыта. Биричиинэ: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Админ регистрацияны {{from}} -тан {{to}} -ка көһөрбүтэ. Биричиинэ: {{reason}}"
+    }
+  }
+}

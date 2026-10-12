@@ -1,0 +1,83 @@
+{
+  "title": "Gestisci squadra",
+  "tabs": {
+    "members": "Membri della squadra",
+    "roles": "Ruoli e autorizzazioni",
+    "profile": "Il mio profilo"
+  },
+  "roles": {
+    "owner": "Proprietario",
+    "member": "Membro della squadra"
+  },
+  "profile": {
+    "updated": "Profilo aggiornato.",
+    "basicInfo": "Informazioni di base",
+    "organisationInfo": "Informazioni sull'organizzazione",
+    "preferences": "Preferenze",
+    "companyName": "Nome dell'azienda/organizzazione",
+    "city": "Città",
+    "state": "Stato",
+    "currencyHelp": "Utilizzato per visualizzare budget e valori di prenotazione in tutto il team.",
+    "useDeviceTimezone": "Utilizza il fuso orario del dispositivo ( {{timezone}} )",
+    "securityRole": "Sicurezza e ruolo",
+    "newPassword": "Nuova Password (lascia vuoto per mantenerla invariata)",
+    "currentPassword": "password attuale",
+    "memberSince": "Membro dal",
+    "languageSaved": "Lingua salvata nel tuo account: verrà utilizzata su tutti i dispositivi a cui accedi."
+  },
+  "members": {
+    "intro": "Aggiungi, modifica, disattiva o rimuovi persone dal tuo team: condividono l'accesso agli stessi lead.",
+    "noPermission": "Non hai l'autorizzazione per aggiungere, modificare o rimuovere membri del team.",
+    "addNew": "+ Aggiungi nuovo utente",
+    "passwordLabel": "{{label}} (minimo 8 caratteri)",
+    "rolePermissions": "Ruolo e autorizzazioni",
+    "adding": "Aggiunta...",
+    "addMember": "Aggiungi membro del team",
+    "tabAll": "Tutti ( {{count}} )",
+    "tabActive": "Attivo ( {{count}} )",
+    "tabInactive": "Inattivo ( {{count}} )",
+    "searchPlaceholder": "Cerca nome o nome utente...",
+    "allTimezones": "Tutti i fusi orari",
+    "perPage": "Voci per pagina",
+    "contact": "Contatto",
+    "added": "Aggiunto",
+    "toggleActive": "Attivo: fare clic per disattivare",
+    "toggleInactive": "Inattivo: fare clic per attivare",
+    "empty": "Nessun membro del team ancora.",
+    "noMatch": "Nessun membro del team corrisponde a questi filtri.",
+    "showing": "Visualizzazione {{from}} - {{to}} di {{total}} voci",
+    "firstPage": "Prima pagina",
+    "previousPage": "Pagina precedente",
+    "nextPage": "Pagina successiva",
+    "lastPage": "Ultima pagina"
+  },
+  "editMember": {
+    "title": "Modifica utente",
+    "noPermission": "Non hai l'autorizzazione per modificare i membri del team.",
+    "backToTeam": "Ritorno alla squadra",
+    "cantChangeOwn": "Non puoi modificare il tuo ruolo o stato.",
+    "needsManageRoles": "La modifica del ruolo di un membro richiede l'autorizzazione Gestisci ruoli.",
+    "addedBy": "Aggiunto da",
+    "addedOn": "Aggiunto il"
+  },
+  "rolesPage": {
+    "intro": "Super amministratore, amministratore e manager sono integrati e non possono essere modificati: crea un ruolo personalizzato per qualsiasi altra cosa.",
+    "noPermission": "Non hai l'autorizzazione per gestire i ruoli.",
+    "createCustom": "+ Crea ruolo personalizzato",
+    "roleName": "Nome del ruolo",
+    "permissions": "Autorizzazioni",
+    "members": "Membri",
+    "creating": "Creazione...",
+    "createRole": "Crea ruolo",
+    "systemRole": "Ruolo del sistema",
+    "builtIn": "Integrato",
+    "empty": "Nessun ruolo ancora."
+  },
+  "permissions": {
+    "MANAGE_LEADS": "Gestire i lead (creare, avanzare, prenotare)",
+    "MANAGE_TEAM": "Gestisci team (aggiungi, modifica, rimuovi membri)",
+    "MANAGE_ROLES": "Gestisci ruoli e autorizzazioni",
+    "MANAGE_SETTINGS": "Gestisci impostazioni (campi modulo lead)",
+    "none": "Nessuna autorizzazione"
+  }
+}

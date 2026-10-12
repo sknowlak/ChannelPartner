@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Барилгачин портал",
+    "referrals": "Лавлагаа",
+    "builderLogin": "Барилгачин нэвтрэх",
+    "partnerLogin": "Сувгийн түншийн нэвтрэлт"
+  },
+  "login": {
+    "title": "Барилгачин нэвтэрнэ үү",
+    "hint": "Барилгачин дансуудыг Leadrat үүсгэсэн. Хэрэв танд байхгүй бол админаасаа асуугаарай."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Таны шийдвэрийг хүлээж байна",
+    "ACCEPTED": "Хүлээн зөвшөөрсөн",
+    "REJECTED": "Татгалзсан"
+  },
+  "list": {
+    "title": "Лавлагаа",
+    "allProjects": "Бүх төслүүд",
+    "allStatuses": "Бүх статусууд",
+    "count_one": "{{count}} лавлагаа",
+    "count_other": "{{count}} лавлагаа",
+    "columns": {
+      "referral": "Лавлагаа",
+      "customer": "Хэрэглэгч",
+      "project": "Төсөл",
+      "sourcePartner": "Эх сурвалж түнш",
+      "status": "Статус",
+      "booking": "Захиалга",
+      "registered": "Бүртгүүлсэн"
+    },
+    "booked": "Захиалагдсан",
+    "empty": "Одоогоор лавлагаа алга."
+  },
+  "detail": {
+    "customer": "Хэрэглэгч",
+    "sourcePartner": "Эх сурвалж түнш",
+    "attributionNote": "(атрибут - өөрчлөх боломжгүй)",
+    "leadStatus": "Тэргүүлэх статус",
+    "protectedUntil": "хүртэл хамгаалагдсан",
+    "referral": "Лавлагаа",
+    "reason": "Шалтгаан: {{reason}}",
+    "booking": "Захиалга",
+    "bookedOwner": "Захиалсан - та үйл ажиллагааны эзэмшигч",
+    "notBooked": "Захиалаагүй",
+    "sharedAfterBooking": "Захиалга хийсний дараа хуваалцсан",
+    "accept": "Лавлагаа хүлээн авах",
+    "confirmBooking": "Захиалга баталгаажуулна уу",
+    "reject": "Зөвлөмжөөс татгалзах",
+    "rejectReasonLabel": "Татгалзсан шалтгаан (хамтрагчид харуулав) *",
+    "rejectConfirm": "Татгалзах",
+    "confirmBookingPrompt": "Захиалгаа баталгаажуулах уу? Үйл ажиллагааны эзэмшил нь танд шилжиж, түнш нь шимтгэл авах эрхтэй болно.",
+    "notice": {
+      "booked": "Захиалгыг баталгаажууллаа.",
+      "accepted": "Лавлагаа хүлээн авлаа.",
+      "rejected": "Лавлагаа татгалзсан."
+    },
+    "backToReferrals": "Лавлагаа руу буцах"
+  },
+  "history": {
+    "title": "Түүх",
+    "actor": {
+      "system": "Систем",
+      "partner": "Сувгийн түнш",
+      "admin": "Leadrat админ"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Түншийн бүртгэлийг хүлээн авлаа",
+      "DUPLICATE_CHECK_COMPLETED": "Давхардсан шалгалт дууссан - идэвхтэй хуулбар олдсонгүй",
+      "REGISTRATION_ACCEPTED": "Бүртгэлийг хүлээн авлаа",
+      "PROTECTION_GRANTED_one": "{{count}} өдрийн хамгаалалт олгосон",
+      "PROTECTION_GRANTED_other": "{{count}} өдрийн хамгаалалт олгосон",
+      "STAGE_UPDATED": "Төлөвийг {{stage}} болгож шинэчилсэн",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} талбарыг шинэчилсэн",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} талбарыг шинэчилсэн",
+      "LEAD_ASSIGNED": "{{name}} -д томилогдсон",
+      "LEAD_UNASSIGNED": "Оноогоогүй",
+      "REFERRAL_ACCEPTED": "Барилгачин уг хүсэлтийг хүлээн авлаа",
+      "REFERRAL_REJECTED": "Барилгачин уг хүсэлтээс татгалзсан. Шалтгаан: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} н давхардсан бүртгэлийн оролдлогыг татгалзсан",
+      "BOOKING_COMPLETED": "Захиалга дууссан",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Үйл ажиллагааны өмчлөлийг Барилгачинд шилжүүлсэн",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Түншийн хамаарлыг хадгалсан",
+      "COMMISSION_ELIGIBILITY_CREATED": "Комиссын эрх бий болсон",
+      "HANDOVER_COMPLETED": "Хүлээн авалт дууссан",
+      "ADMIN_PROTECTION_RELEASED": "Админ давхардсан хамгаалалтыг эрт гаргасан. Шалтгаан: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Админ бүртгэлийг {{from}} -с {{to}} болгон өөрчилсөн. Шалтгаан: {{reason}}"
+    }
+  }
+}

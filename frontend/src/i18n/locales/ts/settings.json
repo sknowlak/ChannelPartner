@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Switirhisiwa",
+    "noPermission": "A wu na mpfumelelo wo lawula swiyimiso."
+  },
+  "categories": {
+    "lead": "Rhangela",
+    "user": "Mutirhisi",
+    "integrations": "Ku hlanganisiwa ka swilo"
+  },
+  "leadTabs": {
+    "fields": "Masimu",
+    "statuses": "Swiyimo & Swiyimo-ntsongo",
+    "notifications": "Switiviso & Vaendli va Swiyimiso"
+  },
+  "fields": {
+    "leadIntro": "Hlela fomo yo khoma lead: pfumelela/tshika tinsimu, ti fungha ti laveka, kumbe u engetela tinsimu ta wena ta ntolovelo.",
+    "userIntro": "Hlela fomo ya Engetelani/Hlela Xirho xa Xipano: pfumelela/tshika tinsimu, ti fungha leswaku ti laveka, kumbe u engetela tinsimu ta wena ta ntolovelo.",
+    "addCustomField": "+ Engetela Nsimu ya Xihlawuhlawu",
+    "fieldLabel": "Lebula ya Nsimu",
+    "group": "Ntlawa",
+    "groupPlaceholderLead": "xikombiso Vuxokoxoko bya Vulavisisi",
+    "groupPlaceholderUser": "xikombiso Vuxokoxoko byo Engetela",
+    "dataType": "Muxaka wa Data",
+    "options": "Swihlawulekisi (swi hambanisiwile hi khoma) .",
+    "requiredLead": "Swi laveka - vatirhisani eka xipano xa wena va fanele ku tata leswi ku tsarisa vukorhokeri",
+    "requiredUser": "Swi laveka - swi fanele ku tatiwa loko ku engeteriwa xirho xa xipano",
+    "creating": "Ku tumbuluxa...",
+    "createField": "Endla Nsimu",
+    "columns": {
+      "field": "Masimu",
+      "group": "Ntlawa",
+      "type": "Muxaka",
+      "required": "Laveka",
+      "enabled": "Swi pfuriwile",
+      "kind": "Tintswalo"
+    },
+    "kind": {
+      "custom": "Ntolovelo",
+      "core": "Core (yi lotleriwile) .",
+      "standard": "Xiyimo"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Tsalwa",
+    "TEXTAREA": "Tsalwa ro leha",
+    "NUMBER": "Nomboro",
+    "CURRENCY": "Mali ya tiko",
+    "DATE": "Siku",
+    "SELECT": "Ku wisa ehansi",
+    "LIST": "Nxaxamelo"
+  },
+  "picker": {
+    "searchPlaceholder": "Ku lavisisa tinsimu ta lead...",
+    "summary": "{{shown}} xi kombisiwile · {{mandatory}} xi boha",
+    "mandatory": "Xiboho",
+    "noMatch": "Ku hava tinsimu leti fambelanaka."
+  },
+  "statuses": {
+    "intro": "Swiyimo swa wena swa lead na sub-statuses - leswi un’wana na un’wana a swi kombelaka (siku & nkarhi, tinsimu ta lead) loko munhu a pfuxeta lead eka yona.",
+    "add": "+ Engetela Xiyimo",
+    "columns": {
+      "order": "Xileriso",
+      "status": "Xiyimo",
+      "subStatuses": "Swiyimo-ntsongo",
+      "asksFor": "Ku Kombela Ku",
+      "active": "Hanya"
+    },
+    "moveUp": "Suka ehenhla",
+    "moveDown": "Suka ehansi",
+    "defaultBadge": "Default eka swiletelo leswintshwa",
+    "bookingBadge": "Xiyimo xa ku bukuta",
+    "asksForLabel": "Ku kombela {{label}}",
+    "asksForDateTime": "Ku kombela siku & nkarhi",
+    "none": "Hava",
+    "dateTime": "Siku & nkarhi",
+    "scheduledOn": "eka {{names}}",
+    "fieldsSummary_one": "{{count}} field ( {{mandatory}} swi boha)",
+    "fieldsSummary_other": "{{count}} tinsimu ( {{mandatory}} swi boha)",
+    "deleteConfirm": "Ku susa xiyimo \" {{name}} \"? Leswi a swi nge tlheriseriwi endzhaku.",
+    "editTitle": "Xiyimo xa Hlela - {{name}}",
+    "newTitle": "Xiyimo Lexintshwa",
+    "name": "Vito ra Xiyimo",
+    "colour": "Muhlovo",
+    "active": "Hanya",
+    "isDefault": "Xiyimo xa ntolovelo xa swiletelo leswintshwa",
+    "isBooking": "Xiyimo xa ku bukuta (xi vekiwile hi Ku Bukula loku heleleke) .",
+    "whenMoved": "Loko lead yi yisiwa eka xiyimo lexi",
+    "askSchedule": "Kombela siku & nkarhi (scheduler) .",
+    "scheduleLabelPlaceholder": "Lebula, xikombiso Endzela eka",
+    "fieldsToShow": "Rhangela tinsimu ku kombisa eka fomo yo pfuxeta",
+    "subStatusesTitle": "Swiyimo-ntsongo",
+    "subStatusesHint": "Xiyimo xin’wana na xin’wana xi nga kombela siku & nkarhi wa xona no engetela tinsimu ta xona - leti kombisiweke ehenhla ka tinsimu ta xiyimo laha henhla.",
+    "subStatusName": "Vito ra xiyimo xa le hansi",
+    "subFields": "Tinsimu ( {{count}} ) .",
+    "subScheduleLabelPlaceholder": "Lebula ya siku & nkarhi, xikombiso Fonela endzhaku eka",
+    "addSubStatus": "+ Engetela Xiyimo-ntsongo",
+    "saveStatus": "Xiyimo xa Hlayisa",
+    "createStatus": "Endla Xiyimo"
+  },
+  "notifications": {
+    "intro": "Tivisa vanhu lava faneleke loko lead yi fika eka xiyimo - hi ku hatlisa, kumbe nkarhi lowu vekiweke emahlweni/endzhaku ka siku & nkarhi lowu vekiweke eka yona.",
+    "add": "+ Engetela Xitiviso",
+    "columns": {
+      "notification": "Xitiviso",
+      "whenStatusIs": "Loko Xiyimo Xi ri",
+      "sends": "Ku rhumela",
+      "to": "Eka",
+      "via": "Hile",
+      "enabled": "Swi pfuriwile"
+    },
+    "anyStatus": "Xiyimo xin’wana na xin’wana",
+    "anySubStatus": "Xiyimo xin’wana na xin’wana xa le hansi",
+    "inactiveOption": "{{name}} (a nga tirhi) .",
+    "emptyRules": "Ku hava switiviso ku fikela sweswi - engetela xin’we ku lemukisa xipano xa wena loko lead yi fika eka xiyimo.",
+    "jobs": {
+      "title": "Ku Hlawuriwa & Ku Rhumeriwile",
+      "firesAt": "Ndzilo Wa Ndzilo At",
+      "notification": "Xitiviso",
+      "lead": "Rhangela",
+      "status": "Xiyimo",
+      "details": "Vuxokoxoko",
+      "empty": "A ku na nchumu lowu hleriweke kumbe ku rhumeriwa ku fikela sweswi.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Rindzerile",
+      "PROCESSING": "Ku lulamisiwa ka swilo",
+      "SENT": "Rhumerile",
+      "FAILED": "Hluleka",
+      "SKIPPED": "Ku tluleriwile",
+      "CANCELLED": "Ku khanseliwile"
+    },
+    "deliveryStatus": {
+      "SENT": "rhumerile",
+      "FAILED": "hluleka",
+      "SKIPPED": "ku tlula-tlula"
+    },
+    "deliveryChannel": {
+      "IN_APP": "eka-app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Mutirhisi la averiweke",
+      "owner": "N'winyi",
+      "updatedBy": "Ku pfuxetiwa hi",
+      "role": "Ntirho: {{name}}"
+    },
+    "channels": {
+      "inApp": "In-app",
+      "email": "Imeyili",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Susa xitiviso \" {{name}} \"? Switsundzuxo leswi yimeleke ku suka eka yona swa khanseriwa.",
+    "testPrompt": "Rhumela xikambelo xa xitiviso lexi eka wena (in-app) hi ku tirhisa ID yihi ya lead ?",
+    "testSent": "Ku rhumeriwe eka bele ya wena: {{title}} {{message}}",
+    "headersInvalid": "Tinhlokomhaka Webhook ti fanele ku va JSON leyi tirhaka , xikombiso {\"Mpfumelelo\": \"Bearer xyz\"}",
+    "editTitle": "Hlela Xitiviso",
+    "newTitle": "Xitiviso Lexintshwa",
+    "name": "Vito",
+    "namePlaceholder": "xikombiso Xitsundzuxo xa ku endzela sayiti",
+    "whenStatus": "Loko xiyimo xa lead xi ri",
+    "subStatus": "Xiyimo xa le hansi",
+    "send": "Rhumela (muendli wa xiyimiso) .",
+    "custom": "Ntolovelo...",
+    "modeBefore": "ku nga si fika nkarhi lowu vekiweke",
+    "modeAfter": "endzhaku ka nkarhi lowu vekiweke",
+    "noScheduleWarning": "Xiyimo lexi a xi kombeli siku & nkarhi, kutani xitiviso xa \"before/at/after scheduled time\" a xi nga ta pfuka xi pfurha.",
+    "noScheduleFix": "Vulavula <strong>Kombela siku & nkarhi</strong> wa yona ehansi ka Status & Sub-Status, kutani u rhumela Hi ku hatlisa.",
+    "sendTo": "Rhumela eka (nhlanganiso wihi na wihi) .",
+    "recipientAssigned": "Mutirhisi loyi a averiweke (n’wini loyi a rhangelaka) .",
+    "recipientOwner": "N'wini wa akhawunti / admin",
+    "recipientUpdatedBy": "Munhu loyi a pfuxeteke xiyimo",
+    "everyoneWithRole": "Un’wana na un’wana na xiave",
+    "specificUsers": "Vatirhisi vo karhi (lava tirhaka) .",
+    "inactiveNever": "Vatirhisi lava nga tirhiki a va si tshama va kuma switiviso, hambiloko swi hlawuriwile.",
+    "deliverVia": "Ku yisa hi ku tirhisa",
+    "channelInApp": "In-app (bele) .",
+    "channelEmail": "Imeyili",
+    "channelWebhook": "Webhook ( Muphakeri wa WhatsApp / SMS )",
+    "emailHint": "Imeyili yi ya eka adirese ya imeyili ya muamukeri un’wana na un’wana naswona yi lava SMTP leyi vekiweke eka sevha (backend/.env); ku fikela kwalaho ku rhumeriwa ka ti-imeyili ku logiwa tanihi loku tluriweke.",
+    "webhookUrl": "URL Webhook ( POST , JSON ) .",
+    "headers": "Tinhlokomhaka ( JSON ) .",
+    "content": "Vuxokoxoko bya xitiviso",
+    "title": "Xirhangi",
+    "message": "Hungu",
+    "insertIntoTitle": "Nghenisa eka Nhlokomhaka",
+    "insertIntoMessage": "Nghenisa eka Rungula",
+    "anyLeadField": "Nsimu yin’wana na yin’wana ya lead ya tirha na yona, xikombiso <code1>{{example1}}</code1> kumbe <code2>{{example2}}</code2> .",
+    "preview": "Xikombiso xa le mahlweni (xikombiso xa lead) .",
+    "enabled": "Swi pfuriwile",
+    "saveRule": "Hlayisa Xitiviso",
+    "createRule": "Endla Xitiviso",
+    "variables": {
+      "customerName": "Vito ra murhangeri",
+      "customerMobile": "Lead mobile",
+      "customerEmail": "Rhangela imeyili",
+      "registrationId": "ID ya murhangeri",
+      "status": "Xiyimo",
+      "subStatus": "Xiyimo xa le hansi",
+      "scheduleAt": "Siku leri hleriweke & nkarhi",
+      "assignedTo": "Mutirhisi la averiweke",
+      "updatedBy": "Ku pfuxetiwa hi",
+      "recipient": "Vito ra muamukeri",
+      "project": "Phurojeke",
+      "notes": "Xitsundzuxo xa sweswinyana",
+      "partner": "Vito ra mutirhisani"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Hi ku hatlisa loko xiyimo xi vekiwile",
+      "AT": "Hi nkarhi lowu vekiweke",
+      "A1D": "Siku rin’we endzhaku ka nkarhi lowu vekiweke (ku kamberiwa ka ku landzelerisa) ."
+    },
+    "immediately": "Hi xihatla",
+    "atScheduled": "Hi nkarhi lowu vekiweke",
+    "before": {
+      "MINUTES_one": "{{count}} minete emahlweni ka nkarhi lowu vekiweke",
+      "MINUTES_other": "{{count}} timinete ku nga si fika nkarhi lowu vekiweke",
+      "HOURS_one": "{{count}} awara ku nga si fika nkarhi lowu vekiweke",
+      "HOURS_other": "{{count}} tiawara ku nga si fika nkarhi lowu vekiweke",
+      "DAYS_one": "{{count}} siku ku nga si fika nkarhi lowu vekiweke",
+      "DAYS_other": "{{count}} masiku ku nga si fika nkarhi lowu vekiweke",
+      "WEEKS_one": "{{count}} vhiki emahlweni ka nkarhi lowu vekiweke",
+      "WEEKS_other": "{{count}} mavhiki ku nga si fika nkarhi lowu vekiweke",
+      "MONTHS_one": "{{count}} n'hweti ku nga si fika nkarhi lowu vekiweke",
+      "MONTHS_other": "{{count}} tinhweti ku nga si fika nkarhi lowu vekiweke",
+      "YEARS_one": "{{count}} lembe ku nga si fika nkarhi lowu vekiweke",
+      "YEARS_other": "{{count}} malembe emahlweni ka nkarhi lowu vekiweke"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minete endzhaku ka nkarhi lowu vekiweke",
+      "MINUTES_other": "{{count}} timinete endzhaku ka nkarhi lowu vekiweke",
+      "HOURS_one": "{{count}} awara endzhaku ka nkarhi lowu vekiweke",
+      "HOURS_other": "{{count}} tiawara endzhaku ka nkarhi lowu vekiweke",
+      "DAYS_one": "{{count}} siku endzhaku ka nkarhi lowu vekiweke",
+      "DAYS_other": "{{count}} masiku endzhaku ka nkarhi lowu vekiweke",
+      "WEEKS_one": "{{count}} vhiki endzhaku ka nkarhi lowu vekiweke",
+      "WEEKS_other": "{{count}} mavhiki endzhaku ka nkarhi lowu vekiweke",
+      "MONTHS_one": "{{count}} n'hweti endzhaku ka nkarhi lowu vekiweke",
+      "MONTHS_other": "{{count}} tinhweti endzhaku ka nkarhi lowu vekiweke",
+      "YEARS_one": "{{count}} lembe endzhaku ka nkarhi lowu vekiweke",
+      "YEARS_other": "{{count}} malembe endzhaku ka nkarhi lowu vekiweke"
+    },
+    "units": {
+      "MINUTES_one": "minete",
+      "MINUTES_other": "timinete",
+      "HOURS_one": "awara",
+      "HOURS_other": "tiawara",
+      "DAYS_one": "siku",
+      "DAYS_other": "masiku",
+      "WEEKS_one": "vhiki",
+      "WEEKS_other": "mavhiki",
+      "MONTHS_one": "n'hweti",
+      "MONTHS_other": "tin’hweti",
+      "YEARS_one": "lembe",
+      "YEARS_other": "malembe"
+    }
+  }
+}

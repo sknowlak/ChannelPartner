@@ -1,0 +1,186 @@
+{
+  "list": {
+    "title": "我的線索",
+    "signedInAs": "以{{name}} ( {{partnerId}} ) 身分登入·時間顯示在{{timezone}}",
+    "addLead": "+ 新增潛在客戶",
+    "tabs": {
+      "all": "全部 ( {{count}} )",
+      "pending": "待處理 ( {{count}} )",
+      "booked": "已預訂 ( {{count}} )"
+    },
+    "searchPlaceholder": "依姓名、手機或註冊ID搜尋...",
+    "manageColumns": "管理欄目",
+    "rowsPerPage": "每頁行數",
+    "registrationId": "註冊ID",
+    "emptyState": "尚無潛在客戶 - 註冊您的第一個潛在客戶。",
+    "noMatch": "沒有引線與這些過濾器匹配。",
+    "showing": "顯示{{from}} - {{to}}共{{total}}個條目",
+    "actions": {
+      "preview": "預覽和快速更新",
+      "history": "歷史",
+      "email": "電子郵件",
+      "whatsapp": "WhatsApp",
+      "call": "稱呼"
+    },
+    "pagination": {
+      "first": "第一頁",
+      "previous": "上一頁",
+      "next": "下一頁",
+      "last": "最後一頁"
+    }
+  },
+  "columns": {
+    "status": "地位",
+    "assignTo": "分配給",
+    "booked": "已預訂",
+    "protectionUntil": "保護至"
+  },
+  "booking": {
+    "booked": "已預訂",
+    "pending": "待辦的"
+  },
+  "assign": {
+    "unassigned": "未分配",
+    "owner": "{{name}} （所有者）",
+    "inactive": "{{name}} （無效）",
+    "unknownUser": "未知用戶",
+    "assignedTo": "分配給{{name}}"
+  },
+  "form": {
+    "addTitle": "新增潛在客戶",
+    "editTitle": "編輯線索",
+    "noPermissionAdd": "您無權註冊潛在客戶。",
+    "noPermissionEdit": "您無權編輯潛在客戶。",
+    "selectPlaceholder": "選擇...",
+    "commaSeparated": "逗號分隔",
+    "phonePlaceholder": "電話號碼",
+    "countryCode": "國家代碼"
+  },
+  "project": {
+    "none": "還沒有項目（未提及）",
+    "notInList": "{{project}} （不在項目清單中）"
+  },
+  "journey": {
+    "customer": "顧客",
+    "currentOwner": "現任所有者",
+    "protectionExpiry": "保護期滿",
+    "leadStatus": "潛在客戶狀態",
+    "scheduled": "預定",
+    "assignedTo": "分配給",
+    "referral": "推薦",
+    "builderReason": "建造者的原因： {{reason}}",
+    "bookedHint": "由建築商預訂－營運所有權已轉移至建築商；您的歸屬和佣金資格將被保留。",
+    "notBookedHint": "建築商接受推薦後即會確認預訂。",
+    "quickUpdate": "快速更新",
+    "leadDetails": "線索詳情",
+    "progressHistory": "進度歷程",
+    "timesIn": "（時間為{{timezone}} ）",
+    "backToMyLeads": "回到我的線索",
+    "editLead": "編輯線索"
+  },
+  "referral": {
+    "NOT_REFERRED": "未提及（無項目）",
+    "PENDING_BUILDER": "等待建設者",
+    "ACCEPTED": "已被施工方驗收",
+    "REJECTED": "被建築商拒絕"
+  },
+  "preview": {
+    "ariaLabel": "潛在客戶預覽",
+    "title": "潛在客戶預覽",
+    "source": "來源",
+    "location": "地點",
+    "scheduled": "預定",
+    "registered": "掛號的",
+    "latestNote": "最新筆記",
+    "quickUpdate": "快速更新",
+    "fullDetails": "詳細資訊",
+    "editLead": "編輯線索",
+    "history": "歷史"
+  },
+  "quick": {
+    "assignedTo": "分配給",
+    "status": "地位",
+    "subStatus": "子狀態",
+    "selectSubStatus": "選擇子狀態...",
+    "none": "沒有任何",
+    "scheduledAt": "預定於",
+    "localTime": "當地時間",
+    "note": "筆記",
+    "notePlaceholder": "這次通話/訪問發生了什麼事？ （選修的）",
+    "updateStatus": "更新狀態",
+    "statusUpdated": "狀態已更新",
+    "bookedLocked": "該潛在客戶已預訂 - 其狀態無法再更改。",
+    "viewOnly": "您可以查看此潛在客戶，但您的角色無法更新它。"
+  },
+  "history": {
+    "title": "歷史記錄 - {{registrationId}}",
+    "tabs": {
+      "all": "全部",
+      "status": "地位",
+      "assignment": "任務",
+      "notes": "筆記"
+    },
+    "doneBy": "由{{actor}}完成",
+    "system": "系統",
+    "platforms": {
+      "System": "系統",
+      "External": "外部的",
+      "Web": "網路",
+      "Mobile": "移動的"
+    },
+    "added": "額外",
+    "updated": "已更新",
+    "empty": "（空的）",
+    "noHistory": "此類別還沒有歷史記錄。",
+    "fieldLabels": {
+      "stage": "地位",
+      "subStatus": "子狀態",
+      "scheduledAt": "行程",
+      "notes": "筆記",
+      "assignedTo": "分配給"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "合作夥伴註冊已收到",
+      "DUPLICATE_CHECK_COMPLETED": "重複檢查已完成 - 未發現有效的重複項",
+      "REGISTRATION_ACCEPTED": "接受報名",
+      "PROTECTION_GRANTED_other": "已授予{{count}}天保護",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partnerId}}的重複註冊嘗試被拒絕",
+      "LEAD_DETAILS_UPDATED_other": "更新了{{count}}字段",
+      "STAGE_UPDATED": "狀態已更新為{{status}}",
+      "LEAD_ASSIGNED": "分配給{{name}}",
+      "LEAD_UNASSIGNED": "未分配",
+      "BOOKING_COMPLETED": "預訂完成",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "營運所有權轉移給建造商",
+      "PARTNER_ATTRIBUTION_PRESERVED": "保留合作夥伴歸屬",
+      "COMMISSION_ELIGIBILITY_CREATED": "建立佣金資格",
+      "HANDOVER_COMPLETED": "交接完成",
+      "REFERRAL_ACCEPTED": "建造商接受了推薦",
+      "REFERRAL_REJECTED": "建造者拒絕了推薦。原因： {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "管理員提前發布了重複保護。原因： {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "管理者將註冊從{{from}}重新指派到{{to}} 。原因： {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "管理欄目",
+    "hint": "拖曳重新排序 · 勾選顯示",
+    "showAll": "顯示全部",
+    "resetDefault": "重設為預設值"
+  },
+  "filters": {
+    "title": "過濾器",
+    "allProjects": "所有項目",
+    "any": "任何",
+    "noFields": "尚未啟用其他可過濾欄位（設定 > 潛在顧客）。",
+    "clearAll": "全部清除"
+  },
+  "phone": {
+    "MISSING": "需要電話號碼。",
+    "INVALID": "請輸入有效的電話號碼。",
+    "TOO_SHORT": "電話號碼太短。",
+    "TOO_LONG": "電話號碼太長。",
+    "INVALID_FOR_COUNTRY": "此電話號碼對於{{country}}無效。",
+    "COUNTRY_MISMATCH": "請選擇正確的國家代碼。",
+    "NOT_MOBILE": "請輸入手機號碼，而不是固定電話號碼。"
+  }
+}

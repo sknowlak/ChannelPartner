@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Impostaçioin",
+    "noPermission": "No gh'é o permisso de gestî e impostaçioin."
+  },
+  "categories": {
+    "lead": "Condue",
+    "user": "Utente",
+    "integrations": "Integraçioin"
+  },
+  "leadTabs": {
+    "fields": "Campi",
+    "statuses": "Stati e Sottostati",
+    "notifications": "Notificaçioin e programmatoî"
+  },
+  "fields": {
+    "leadIntro": "Configurâ o modello de cattua de lead: attiva/disabilita i campi, marcâli comme neçessäi ò azzonze i vòstri campi personalizzæ.",
+    "userIntro": "Configurâ o modello Azzonta/Modificâ membro da squaddra: attiva/disabilita i campi, marcâli comme neçessäi ò azzonze i vòstri campi personalizzæ.",
+    "addCustomField": "+ Azzonta un campo personalizzou",
+    "fieldLabel": "Etichetta do campo",
+    "group": "Gruppo",
+    "groupPlaceholderLead": "pe exempio Info pe-a domanda",
+    "groupPlaceholderUser": "ex. Dettaggi in ciù",
+    "dataType": "Tipo de dæti",
+    "options": "Opçioin (separæ da-e virgole)",
+    "requiredLead": "O l'é neçessäio - i collaboratoî da vòstra squaddra devan compilâ sto chì pe registrâ un lead",
+    "requiredUser": "Obrigatöio - o dev'ëse compio quande s'azzonze un membro da squaddra",
+    "creating": "Creâ...",
+    "createField": "Creâ o campo",
+    "columns": {
+      "field": "Campo",
+      "group": "Gruppo",
+      "type": "Qualitæ",
+      "required": "Obrigatöio",
+      "enabled": "Attivo",
+      "kind": "Qualitæ"
+    },
+    "kind": {
+      "custom": "Personalizzou",
+      "core": "Nucleo (serrou)",
+      "standard": "Standard"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Testo",
+    "TEXTAREA": "Testo longo",
+    "NUMBER": "Numero",
+    "CURRENCY": "Valuta",
+    "DATE": "Dæta",
+    "SELECT": "Menua a-a lista",
+    "LIST": "Elenco"
+  },
+  "picker": {
+    "searchPlaceholder": "Campi de lead de reçerca...",
+    "summary": "{{shown}} mostrou · {{mandatory}} obrigatöio",
+    "mandatory": "Obrigatöio",
+    "noMatch": "Nisciun campo o corresponde."
+  },
+  "statuses": {
+    "intro": "I vòstri stati e sottostati de lead - quello che ciaschedun o domanda (unna dæta e unn'ora, campi de lead) quande quarchedun o l'aggiorna un lead.",
+    "add": "+ Azzonta de stato",
+    "columns": {
+      "order": "Ordine",
+      "status": "Stato",
+      "subStatuses": "Sottostati",
+      "asksFor": "Domanda Pe",
+      "active": "Attivo"
+    },
+    "moveUp": "Spostâse in çimma",
+    "moveDown": "Spostâse verso o basso",
+    "defaultBadge": "Predefinio pe-i neuvi leads",
+    "bookingBadge": "Stato de prenotaçion",
+    "asksForLabel": "Domanda {{label}}",
+    "asksForDateTime": "Domanda dæta e ora",
+    "none": "Nisciun",
+    "dateTime": "Dæta e ora",
+    "scheduledOn": "in sce {{names}}",
+    "fieldsSummary_one": "Campo {{count}} ( {{mandatory}} obrigatöio)",
+    "fieldsSummary_other": "Campi {{count}} ( {{mandatory}} obrigatöio)",
+    "deleteConfirm": "Cancellâ o stato \" {{name}} \"? Sto fæto o no peu ëse desfæto.",
+    "editTitle": "Modificâ o stato - {{name}}",
+    "newTitle": "Neuvo stato",
+    "name": "Nomme de stato",
+    "colour": "Cô",
+    "active": "Attivo",
+    "isDefault": "Stato predefinio pe-i neuvi leads",
+    "isBooking": "Stato de prenotaçion (impostou da Prenotaçion completa)",
+    "whenMoved": "Quande un lead o vëgne mesciou à sto stato",
+    "askSchedule": "Domanda unna dæta e unn'ora (programmatô)",
+    "scheduleLabelPlaceholder": "Etichetta, p.e. Vixita a-o",
+    "fieldsToShow": "I campi de lead da mostrâ in sciô modello d'aggiornamento",
+    "subStatusesTitle": "Sottostati",
+    "subStatusesHint": "Ògni sottostato o peu domandâ a seu dæta e ora e azzonze i seu campi – mostræ in çimma di campi do stato chì de d'ato.",
+    "subStatusName": "Nomme do sottostato",
+    "subFields": "Campi ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Etichetta de dæta e ora, pe exempio Telefonâ torna a-o",
+    "addSubStatus": "+ Azzonta Sottostato",
+    "saveStatus": "Salva o stato",
+    "createStatus": "Creâ o stato"
+  },
+  "notifications": {
+    "intro": "Avvisâ e persoñe giuste quande un lead o razzonze unna condiçion - de botto ò un tempo fisso avanti/dòppo a dæta e l'oa programmæ in sce quello.",
+    "add": "+ Azzonta notificaçion",
+    "columns": {
+      "notification": "Notificaçion",
+      "whenStatusIs": "Quande o Stato o l'é",
+      "sends": "Manda",
+      "to": "À",
+      "via": "Pe mezo de",
+      "enabled": "Attivo"
+    },
+    "anyStatus": "Quarche stato",
+    "anySubStatus": "Quarche sottostato",
+    "inactiveOption": "{{name}} (inattivo)",
+    "emptyRules": "Ancon nisciuña notificaçion - azzonze unna pe avvertî a vòstra squaddra quande un lead o razzonze un stato.",
+    "jobs": {
+      "title": "Programmou e spedio",
+      "firesAt": "Feughi A",
+      "notification": "Notificaçion",
+      "lead": "Condue",
+      "status": "Stato",
+      "details": "Dettaggi",
+      "empty": "Nisciun programmou ò spedio ancon.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "In atteisa",
+      "PROCESSING": "Elaboraçion",
+      "SENT": "Inviou",
+      "FAILED": "Fallio",
+      "SKIPPED": "Saltou",
+      "CANCELLED": "Annullou"
+    },
+    "deliveryStatus": {
+      "SENT": "inviou",
+      "FAILED": "fallio",
+      "SKIPPED": "saltou"
+    },
+    "deliveryChannel": {
+      "IN_APP": "in-app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Utente assegnou",
+      "owner": "Propietäio",
+      "updatedBy": "Aggiornou da",
+      "role": "Ròllo: {{name}}"
+    },
+    "channels": {
+      "inApp": "Inte l'app",
+      "email": "E-mail",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Cancellâ a notificaçion \" {{name}} \"? I rappòrti in attesa da lê son annullæ.",
+    "testPrompt": "Manda unna preuva de sta notificaçion à ti mæximo (in-app) deuviando quæ ID de lead ?",
+    "testSent": "Inviou a-o vòstro campanin: {{title}} {{message}}",
+    "headersInvalid": "E intestaçioin Webhook devan ëse JSON valide , pe exempio {\"Autorizzaçion\": \"Portatô xyz\"}",
+    "editTitle": "Modificâ a notificaçion",
+    "newTitle": "Neuva notificaçion",
+    "name": "Nomme",
+    "namePlaceholder": "pe exempio, rappòrto de vixita do scito",
+    "whenStatus": "Quande o stato de un lead o l'é",
+    "subStatus": "Sottostato",
+    "send": "Inviâ (programmatô)",
+    "custom": "Personalizzou...",
+    "modeBefore": "avanti de l'oa prevista",
+    "modeAfter": "dòppo o tempo previsto",
+    "noScheduleWarning": "Sto stato o no domanda unna dæta e unn'ora, donca unna notificaçion \"avanti/a-o/dòppo l'ora prevista\" a no saieiva mai descadenâ.",
+    "noScheduleFix": "Attivâ <strong>Domanda unna dæta e unn'ora</strong> inte Stati e sottostati ò inviâ de botto.",
+    "sendTo": "Manda à (quæ se segge combinaçion)",
+    "recipientAssigned": "Utente assegnou (proprietäio prinçipâ)",
+    "recipientOwner": "Proprietäio do conto / amministratô",
+    "recipientUpdatedBy": "Persoña ch'a l'à misso à gio o stato",
+    "everyoneWithRole": "Tutti co-o ròllo .",
+    "specificUsers": "Utenti speçifichi (attivi)",
+    "inactiveNever": "I utenti inattivi no reçeivan mai de notificaçioin, ascì se seleçionæ.",
+    "deliverVia": "Consegnâ traverso",
+    "channelInApp": "Inte l'app (campaña)",
+    "channelEmail": "E-mail",
+    "channelWebhook": "Webhook ( fornitô WhatsApp / SMS )",
+    "emailHint": "L'email o va à l'indirizzo email de ògni destinatäio e o l'à de beseugno de configurâ SMTP in sciô server (backend/.env); fin à alloa i invii de email son registræ comme saltæ.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Intestaçioin ( JSON )",
+    "content": "Contegnuo de notificaçioin",
+    "title": "Titolo",
+    "message": "Messaggio",
+    "insertIntoTitle": "Inserî into Titolo",
+    "insertIntoMessage": "Inserî into Messaggio",
+    "anyLeadField": "Quarche campo de lead o fonçioña ascì, comme <code1>{{example1}}</code1> ò <code2>{{example2}}</code2> .",
+    "preview": "Anteprima (lead de campion)",
+    "enabled": "Attivo",
+    "saveRule": "Salvâ a notificaçion",
+    "createRule": "Creâ unna notificaçion",
+    "variables": {
+      "customerName": "Nomme de protagonista",
+      "customerMobile": "Mobile de ciongio",
+      "customerEmail": "E-mail de protagonista",
+      "registrationId": "ID de protagonista",
+      "status": "Stato",
+      "subStatus": "Sottostato",
+      "scheduleAt": "Dæta e ora programmæ",
+      "assignedTo": "Utente assegnou",
+      "updatedBy": "Aggiornou da",
+      "recipient": "Nomme do destinatäio",
+      "project": "Progetto",
+      "notes": "Urtima nòtta",
+      "partner": "Nomme do compagno"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Subito quande o stato o l'é impostou .",
+      "AT": "A-o tempo previsto .",
+      "A1D": "1 giorno dòppo l'ora prevista (controllo de seguito)"
+    },
+    "immediately": "In sciô momento",
+    "atScheduled": "À l'ora prevista",
+    "before": {
+      "MINUTES_one": "{{count}} menûto avanti de l'oa prevista",
+      "MINUTES_other": "{{count}} menuti avanti de l'oa prevista",
+      "HOURS_one": "{{count}} unn'oa avanti de l'oa prevista",
+      "HOURS_other": "{{count}} oe avanti de l'oa prevista",
+      "DAYS_one": "{{count}} giorno avanti de l'oa prevista",
+      "DAYS_other": "{{count}} giorni avanti de l'oa prevista",
+      "WEEKS_one": "{{count}} settemaña avanti de l'oa prevista",
+      "WEEKS_other": "{{count}} settemañe avanti de l'ora prevista",
+      "MONTHS_one": "{{count}} un meise avanti de l'oa prevista",
+      "MONTHS_other": "{{count}} meixi avanti de l'oa prevista",
+      "YEARS_one": "{{count}} anno avanti de l'ora prevista",
+      "YEARS_other": "{{count}} anni avanti de l'ora prevista"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} menute dòppo l'oa prevista",
+      "MINUTES_other": "{{count}} menuti dòppo l'oa prevista",
+      "HOURS_one": "{{count}} oa dòppo l'oa prevista",
+      "HOURS_other": "{{count}} oe dòppo l'oa prevista",
+      "DAYS_one": "{{count}} giorno dòppo l'oa prevista",
+      "DAYS_other": "{{count}} giorni dòppo l'oa prevista",
+      "WEEKS_one": "{{count}} settemaña dòppo l'oa prevista",
+      "WEEKS_other": "{{count}} settemañe dòppo l'ora prevista",
+      "MONTHS_one": "{{count}} meise dòppo l'oa prevista",
+      "MONTHS_other": "{{count}} meixi dòppo l'ora prevista",
+      "YEARS_one": "{{count}} anno dòppo l'ora prevista",
+      "YEARS_other": "{{count}} anni dòppo l'ora prevista"
+    },
+    "units": {
+      "MINUTES_one": "menuto",
+      "MINUTES_other": "menui",
+      "HOURS_one": "oa",
+      "HOURS_other": "oe",
+      "DAYS_one": "giorno",
+      "DAYS_other": "giorni",
+      "WEEKS_one": "settemaña",
+      "WEEKS_other": "settemañe",
+      "MONTHS_one": "meise",
+      "MONTHS_other": "meixi",
+      "YEARS_one": "anno",
+      "YEARS_other": "anni"
+    }
+  }
+}

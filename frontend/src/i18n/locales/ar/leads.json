@@ -1,0 +1,196 @@
+{
+  "list": {
+    "title": "يؤدي بلدي",
+    "signedInAs": "تم تسجيل الدخول باسم {{name}} ( {{partnerId}} ) · الأوقات المعروضة في {{timezone}}",
+    "addLead": "+ إضافة الرصاص",
+    "tabs": {
+      "all": "الكل ( {{count}} )",
+      "pending": "في انتظار ( {{count}} )",
+      "booked": "تم الحجز ( {{count}} )"
+    },
+    "searchPlaceholder": "البحث بالاسم أو الجوال أو ID التسجيل ...",
+    "manageColumns": "إدارة الأعمدة",
+    "rowsPerPage": "صفوف لكل صفحة",
+    "registrationId": "ID التسجيل",
+    "emptyState": "لا يوجد عملاء متوقعين حتى الآن – قم بتسجيل أول عميل محتمل لك.",
+    "noMatch": "لا يوجد عملاء محتملين يتطابقون مع هذه المرشحات.",
+    "showing": "عرض {{from}} - {{to}} من {{total}} الإدخالات",
+    "actions": {
+      "preview": "معاينة وتحديث سريع",
+      "history": "تاريخ",
+      "email": "بريد إلكتروني",
+      "whatsapp": "WhatsApp",
+      "call": "يتصل"
+    },
+    "pagination": {
+      "first": "الصفحة الأولى",
+      "previous": "الصفحة السابقة",
+      "next": "الصفحة التالية",
+      "last": "الصفحة الأخيرة"
+    }
+  },
+  "columns": {
+    "status": "حالة",
+    "assignTo": "تعيين ل",
+    "booked": "حجزت",
+    "protectionUntil": "الحماية حتى"
+  },
+  "booking": {
+    "booked": "حجزت",
+    "pending": "قيد الانتظار"
+  },
+  "assign": {
+    "unassigned": "غير معين",
+    "owner": "{{name}} (المالك)",
+    "inactive": "{{name}} (غير نشط)",
+    "unknownUser": "مستخدم غير معروف",
+    "assignedTo": "تم التعيين إلى {{name}}"
+  },
+  "form": {
+    "addTitle": "أضف الرصاص",
+    "editTitle": "تحرير الرصاص",
+    "noPermissionAdd": "ليس لديك إذن لتسجيل العملاء المتوقعين.",
+    "noPermissionEdit": "ليس لديك إذن لتعديل العملاء المتوقعين.",
+    "selectPlaceholder": "يختار...",
+    "commaSeparated": "مفصولة بفاصلة",
+    "phonePlaceholder": "رقم التليفون",
+    "countryCode": "رمز البلد"
+  },
+  "project": {
+    "none": "لا يوجد مشروع بعد (لم تتم الإشارة إليه)",
+    "notInList": "{{project}} (ليس في قائمة المشاريع)"
+  },
+  "journey": {
+    "customer": "عميل",
+    "currentOwner": "المالك الحالي",
+    "protectionExpiry": "انتهاء الحماية",
+    "leadStatus": "حالة الرصاص",
+    "scheduled": "المقرر",
+    "assignedTo": "تم تعيينه ل",
+    "referral": "الإحالة",
+    "builderReason": "سبب المنشئ: {{reason}}",
+    "bookedHint": "تم الحجز من قبل شركة البناء - انتقلت الملكية التشغيلية إلى شركة البناء؛ يتم الاحتفاظ بأهلية الإسناد والعمولة الخاصة بك.",
+    "notBookedHint": "يتم تأكيد الحجوزات من قبل المنشئ بمجرد قبول الإحالة.",
+    "quickUpdate": "تحديث سريع",
+    "leadDetails": "تفاصيل الرصاص",
+    "progressHistory": "تاريخ التقدم",
+    "timesIn": "(الأوقات بتوقيت {{timezone}} )",
+    "backToMyLeads": "العودة إلى يؤدي",
+    "editLead": "تحرير الرصاص"
+  },
+  "referral": {
+    "NOT_REFERRED": "غير مُحال (لا يوجد مشروع)",
+    "PENDING_BUILDER": "في انتظار البناء",
+    "ACCEPTED": "مقبولة من قبل البناء",
+    "REJECTED": "مرفوض من قبل البناء"
+  },
+  "preview": {
+    "ariaLabel": "معاينة الرصاص",
+    "title": "معاينة الرصاص",
+    "source": "مصدر",
+    "location": "موقع",
+    "scheduled": "المقرر",
+    "registered": "مسجل",
+    "latestNote": "أحدث ملاحظة",
+    "quickUpdate": "تحديث سريع",
+    "fullDetails": "التفاصيل الكاملة",
+    "editLead": "تحرير الرصاص",
+    "history": "تاريخ"
+  },
+  "quick": {
+    "assignedTo": "تم تعيينه ل",
+    "status": "حالة",
+    "subStatus": "الحالة الفرعية",
+    "selectSubStatus": "تحديد الحالة الفرعية...",
+    "none": "لا أحد",
+    "scheduledAt": "المقرر في",
+    "localTime": "التوقيت المحلي",
+    "note": "ملحوظة",
+    "notePlaceholder": "ماذا حدث في هذه المكالمة/الزيارة؟ (خياري)",
+    "updateStatus": "تحديث الحالة",
+    "statusUpdated": "تم تحديث الحالة",
+    "bookedLocked": "تم حجز هذا العميل المتوقع - ولم يعد من الممكن تغيير حالته.",
+    "viewOnly": "يمكنك عرض هذا العميل المتوقع، لكن لا يمكن لدورك تحديثه."
+  },
+  "history": {
+    "title": "السجل - {{registrationId}}",
+    "tabs": {
+      "all": "الجميع",
+      "status": "حالة",
+      "assignment": "تكليف",
+      "notes": "ملحوظات"
+    },
+    "doneBy": "تم بواسطة {{actor}}",
+    "system": "نظام",
+    "platforms": {
+      "System": "نظام",
+      "External": "خارجي",
+      "Web": "ويب",
+      "Mobile": "متحرك"
+    },
+    "added": "وأضاف",
+    "updated": "محدث",
+    "empty": "(فارغ)",
+    "noHistory": "لا يوجد تاريخ في هذه الفئة حتى الآن.",
+    "fieldLabels": {
+      "stage": "حالة",
+      "subStatus": "الحالة الفرعية",
+      "scheduledAt": "جدول",
+      "notes": "ملحوظات",
+      "assignedTo": "تم تعيينه ل"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "تم استلام تسجيل الشريك",
+      "DUPLICATE_CHECK_COMPLETED": "اكتمل التحقق من التكرارات - لم يتم العثور على تكرار نشط",
+      "REGISTRATION_ACCEPTED": "تم قبول التسجيل",
+      "PROTECTION_GRANTED_zero": "{{count}} تم منح الحماية لمدة يوم",
+      "PROTECTION_GRANTED_one": "{{count}} تم منح الحماية لمدة يوم",
+      "PROTECTION_GRANTED_two": "{{count}} تم منح الحماية لمدة يوم",
+      "PROTECTION_GRANTED_few": "{{count}} تم منح الحماية لمدة يوم",
+      "PROTECTION_GRANTED_many": "{{count}} تم منح الحماية لمدة يوم",
+      "PROTECTION_GRANTED_other": "{{count}} تم منح الحماية لمدة يوم",
+      "REGISTRATION_ATTEMPT_REJECTED": "تم رفض محاولة التسجيل المكررة بواسطة {{partnerId}}",
+      "LEAD_DETAILS_UPDATED_zero": "تم تحديث {{count}} من الحقول",
+      "LEAD_DETAILS_UPDATED_one": "تم تحديث الحقل {{count}}",
+      "LEAD_DETAILS_UPDATED_two": "تم تحديث {{count}} من الحقول",
+      "LEAD_DETAILS_UPDATED_few": "تم تحديث {{count}} من الحقول",
+      "LEAD_DETAILS_UPDATED_many": "تم تحديث {{count}} من الحقول",
+      "LEAD_DETAILS_UPDATED_other": "تم تحديث {{count}} من الحقول",
+      "STAGE_UPDATED": "تم تحديث الحالة إلى {{status}}",
+      "LEAD_ASSIGNED": "تم التعيين إلى {{name}}",
+      "LEAD_UNASSIGNED": "غير معين",
+      "BOOKING_COMPLETED": "اكتمل الحجز",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "تم نقل الملكية التشغيلية إلى Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "تم الحفاظ على إسناد الشريك",
+      "COMMISSION_ELIGIBILITY_CREATED": "تم إنشاء أهلية العمولة",
+      "HANDOVER_COMPLETED": "اكتمل التسليم",
+      "REFERRAL_ACCEPTED": "قبل البناء الإحالة",
+      "REFERRAL_REJECTED": "رفض البناء الإحالة. السبب: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "أصدر المسؤول الحماية المكررة في وقت مبكر. السبب: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "قام المشرف بإعادة تعيين التسجيل من {{from}} إلى {{to}} . السبب: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "إدارة الأعمدة",
+    "hint": "اسحب لإعادة الترتيب · قم بالتأشير للإظهار",
+    "showAll": "إظهار الكل",
+    "resetDefault": "إعادة التعيين إلى الافتراضي"
+  },
+  "filters": {
+    "title": "المرشحات",
+    "allProjects": "جميع المشاريع",
+    "any": "أي",
+    "noFields": "لم يتم تمكين أي حقول أخرى قابلة للتصفية حتى الآن (الإعدادات > العميل المتوقع).",
+    "clearAll": "مسح الكل"
+  },
+  "phone": {
+    "MISSING": "رقم الهاتف مطلوب.",
+    "INVALID": "الرجاء إدخال رقم هاتف صالح.",
+    "TOO_SHORT": "رقم الهاتف قصير جدًا.",
+    "TOO_LONG": "رقم الهاتف طويل جدًا.",
+    "INVALID_FOR_COUNTRY": "رقم الهاتف هذا غير صالح لـ {{country}} .",
+    "COUNTRY_MISMATCH": "الرجاء تحديد رمز البلد الصحيح.",
+    "NOT_MOBILE": "الرجاء إدخال رقم الجوال وليس الهاتف الثابت."
+  }
+}

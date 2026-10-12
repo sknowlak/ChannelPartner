@@ -1,0 +1,99 @@
+{
+  "shell": {
+    "portal": "Portal Toiggal",
+    "referrals": "Reihys",
+    "builderLogin": "Login y Toiggal",
+    "partnerLogin": "Login Partner Channel"
+  },
+  "login": {
+    "title": "Soilshey stiagh",
+    "hint": "Ta Leadrat er n'yannoo cunteynyn towse . Failt rish dty stiureyder mannagh vel oo ry-hoi."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Ta mee geaishtagh rish dty vriwnys",
+    "ACCEPTED": "Gow rish.",
+    "REJECTED": "Reiht"
+  },
+  "list": {
+    "title": "Reihys",
+    "allProjects": "Ooilley prôjektyn",
+    "allStatuses": "Ooilley stayd",
+    "count_one": "{{count}} cur stiagh",
+    "count_two": "{{count}} ymmyd",
+    "count_few": "{{count}} ymmyd",
+    "count_many": "{{count}} ymmyd",
+    "count_other": "{{count}} ymmyd",
+    "columns": {
+      "referral": "Reihys",
+      "customer": "Custymeyr",
+      "project": "Deam",
+      "sourcePartner": "Partner Foayr",
+      "status": "Keimeeaght",
+      "booking": "Bookaghey",
+      "registered": "Clàrait"
+    },
+    "booked": "Reserved",
+    "empty": "Cha nel referral erbee foast."
+  },
+  "detail": {
+    "customer": "Custymeyr",
+    "sourcePartner": "Partner Foayr",
+    "attributionNote": "(attribution - cha nel eh ry-chaghlaa)",
+    "leadStatus": "Stayd Lead",
+    "protectedUntil": "Cooilleenit gys",
+    "referral": "Reihys",
+    "reason": "Oyr: {{reason}}",
+    "booking": "Bookaghey",
+    "bookedOwner": "Booked - she uss y eirey obbree",
+    "notBooked": "Cha nel eh er ny choyrt",
+    "sharedAfterBooking": "Shassoo erreish da bookaghey",
+    "accept": "Ghow rish Reihys",
+    "confirmBooking": "Dearbhagh Booking",
+    "reject": "Reih Reihys",
+    "rejectReasonLabel": "Reason son diuish (soilshaghey da'n cho-obbree) *",
+    "rejectConfirm": "Jiooldey",
+    "confirmBookingPrompt": "Dearbhagh y booking? Ta'n eiraght obbreeagh glenney dhyt as ta'n cho-obbree ry-gheddyn son comissoon.",
+    "notice": {
+      "booked": "Booking er ny chowraghey.",
+      "accepted": "Ta'n rheynn er ny ghoaill stiagh.",
+      "rejected": "Referral er ny ymmyrkey."
+    },
+    "backToReferrals": "Arraght gys Reihys"
+  },
+  "history": {
+    "title": "Shennaghys",
+    "actor": {
+      "system": "Aght",
+      "partner": "Co-partner channel",
+      "admin": "Admin Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Classaghey co-obbree er ny gheddyn",
+      "DUPLICATE_CHECK_COMPLETED": "Sheck daa-heshaght cliaghtey - cha nel daa-heshaght glan er ny gheddyn",
+      "REGISTRATION_ACCEPTED": "Gheiney clárys",
+      "PROTECTION_GRANTED_one": "{{count}} -coadey laa er ny choyrt",
+      "PROTECTION_GRANTED_two": "{{count}} -coadey laa er ny choyrt",
+      "PROTECTION_GRANTED_few": "{{count}} -coadey laa er ny choyrt",
+      "PROTECTION_GRANTED_many": "{{count}} -coadey laa er ny choyrt",
+      "PROTECTION_GRANTED_other": "{{count}} -coadey laa er ny choyrt",
+      "STAGE_UPDATED": "Ta'n staid er ny h-aarloo gys {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Yn field {{count}} er ny chur ry-cheilley",
+      "LEAD_DETAILS_UPDATED_two": "{{count}} fieldyn ry-hickyraghey",
+      "LEAD_DETAILS_UPDATED_few": "{{count}} fieldyn ry-hickyraghey",
+      "LEAD_DETAILS_UPDATED_many": "{{count}} fieldyn ry-hickyraghey",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} fieldyn ry-hickyraghey",
+      "LEAD_ASSIGNED": "Currit da {{name}}",
+      "LEAD_UNASSIGNED": "Cha nel eh er ny choyrt",
+      "REFERRAL_ACCEPTED": "Ghow y towshan rish y chur-my-ner",
+      "REFERRAL_REJECTED": "Builder y rheynn. Oyr: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Ta'n oirr cláshtaghey daa-heuagh ec {{partner}} er ny dhieeney",
+      "BOOKING_COMPLETED": "Booking cliaghtey",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Ta'n eiraght obbreeagh er ny chur gys Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Ta'n obbyr-partner er ny choadey",
+      "COMMISSION_ELIGIBILITY_CREATED": "Creeaght y Chommishoon",
+      "HANDOVER_COMPLETED": "Cur-my-ner",
+      "ADMIN_PROTECTION_RELEASED": "Va'n stiureyder er chur magh coadey duplicate t'er n'gholl shaghey. Oyr: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Ta'n stiureyder er n'aashagh cláryssey veih {{from}} gys {{to}} . Oyr: {{reason}}"
+    }
+  }
+}

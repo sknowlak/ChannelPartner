@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Ezarpenak",
+    "noPermission": "Ez duzu ezarpenak kudeatzeko baimenik."
+  },
+  "categories": {
+    "lead": "Beruna",
+    "user": "Erabiltzailea",
+    "integrations": "Integrazioak"
+  },
+  "leadTabs": {
+    "fields": "Eremuak",
+    "statuses": "Egoerak eta azpiegoerak",
+    "notifications": "Jakinarazpenak eta programatzaileak"
+  },
+  "fields": {
+    "leadIntro": "Konfiguratu lead harrapatzeko inprimakia: gaitu/desgaitu eremuak, markatu nahitaezkoak edo gehitu zure eremu pertsonalizatuak.",
+    "userIntro": "Konfiguratu Taldekidea Gehitu/Editatu inprimakia: gaitu/desgaitu eremuak, markatu nahitaezkoak edo gehitu zure eremu pertsonalizatuak.",
+    "addCustomField": "+ Gehitu eremu pertsonalizatua",
+    "fieldLabel": "Eremu Etiketa",
+    "group": "Taldea",
+    "groupPlaceholderLead": "adibidez, kontsultari buruzko informazioa",
+    "groupPlaceholderUser": "adib. Xehetasun gehigarriak",
+    "dataType": "Datu mota",
+    "options": "Aukerak (komaz bereizita)",
+    "requiredLead": "Beharrezkoa - zure taldeko bazkideek hau bete behar dute lider bat erregistratzeko",
+    "requiredUser": "Beharrezkoa - taldekide bat gehitzean bete behar da",
+    "creating": "Sortzen...",
+    "createField": "Sortu eremua",
+    "columns": {
+      "field": "Eremua",
+      "group": "Taldea",
+      "type": "Mota",
+      "required": "Beharrezkoa",
+      "enabled": "Gaituta",
+      "kind": "Jatorra"
+    },
+    "kind": {
+      "custom": "Pertsonalizatua",
+      "core": "Nukleoa (blokeatuta)",
+      "standard": "Estandarra"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Testua",
+    "TEXTAREA": "Testu luzea",
+    "NUMBER": "Zenbakia",
+    "CURRENCY": "Moneta",
+    "DATE": "Data",
+    "SELECT": "Goitibehera",
+    "LIST": "Zerrenda"
+  },
+  "picker": {
+    "searchPlaceholder": "Bilatu lead-eremuak...",
+    "summary": "{{shown}} erakusten · {{mandatory}} derrigorrezkoa",
+    "mandatory": "Nahitaezkoa",
+    "noMatch": "Ez dago eremurik bat."
+  },
+  "statuses": {
+    "intro": "Zure lead-egoerak eta azpi-egoerak - bakoitzak zer eskatzen duen (data eta ordua, lead-eremuak) norbaitek berrikuspen bat eguneratzen duenean.",
+    "add": "+ Gehitu egoera",
+    "columns": {
+      "order": "Agindu",
+      "status": "Egoera",
+      "subStatuses": "Azpiegoerak",
+      "asksFor": "Eskatzen du",
+      "active": "Aktiboa"
+    },
+    "moveUp": "Gora",
+    "moveDown": "Mugitu behera",
+    "defaultBadge": "Lehergailu berrientzako lehenetsia",
+    "bookingBadge": "Erreserbaren egoera",
+    "asksForLabel": "{{label}} eskatzen du",
+    "asksForDateTime": "Data eta ordua eskatzen du",
+    "none": "Bat ere ez",
+    "dateTime": "Data eta ordua",
+    "scheduledOn": "{{names}} egunean",
+    "fieldsSummary_one": "{{count}} eremua ( {{mandatory}} derrigorrezkoa)",
+    "fieldsSummary_other": "{{count}} eremu ( {{mandatory}} derrigorrezkoa)",
+    "deleteConfirm": "\" {{name}} \" egoera ezabatu? Hau ezin da desegin.",
+    "editTitle": "Editatu egoera - {{name}}",
+    "newTitle": "Egoera Berria",
+    "name": "Egoera Izena",
+    "colour": "Kolorea",
+    "active": "Aktiboa",
+    "isDefault": "Lehiakide berrien egoera lehenetsia",
+    "isBooking": "Erreserbaren egoera (Erreserba Osoak ezarrita)",
+    "whenMoved": "Proba bat egoera horretara eramaten denean",
+    "askSchedule": "Eskatu data eta ordua (programatzailea)",
+    "scheduleLabelPlaceholder": "Etiketa, adibidez, bisitatu at",
+    "fieldsToShow": "Erabilera-eremuak eguneratze inprimakian erakusteko",
+    "subStatusesTitle": "Azpiegoerak",
+    "subStatusesHint": "Azpi-egoera bakoitzak bere data eta ordua eska ditzake eta bere eremuak gehi ditzakete, goiko egoeraren eremuen gainean agertzen dena.",
+    "subStatusName": "Azpi-egoeraren izena",
+    "subFields": "Eremuak ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Data eta orduaren etiketa, adibidez, Deitu hona",
+    "addSubStatus": "+ Gehitu azpiegoera",
+    "saveStatus": "Gorde egoera",
+    "createStatus": "Sortu egoera"
+  },
+  "notifications": {
+    "intro": "Jakinaraz iezaiezu pertsona egokiei pertsona nagusi bat egoera batera iristen denean, berehala, edo bertan programatutako data eta ordua baino lehenago/ondoren zehaztutako ordu batera.",
+    "add": "+ Gehitu jakinarazpena",
+    "columns": {
+      "notification": "Jakinarazpena",
+      "whenStatusIs": "Egoera denean",
+      "sends": "Bidaltzen du",
+      "to": "To",
+      "via": "Via",
+      "enabled": "Gaituta"
+    },
+    "anyStatus": "Edozein egoera",
+    "anySubStatus": "Edozein azpiegoera",
+    "inactiveOption": "{{name}} (ez aktibo)",
+    "emptyRules": "Oraindik ez dago jakinarazpenik. Gehitu bat zure taldeari abisua emateko, lider bat egoera batera iristen denean.",
+    "jobs": {
+      "title": "Programatua eta bidalia",
+      "firesAt": "Suak At",
+      "notification": "Jakinarazpena",
+      "lead": "Beruna",
+      "status": "Egoera",
+      "details": "Xehetasunak",
+      "empty": "Oraindik ez dago ezer antolatu edo bidali.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Zain",
+      "PROCESSING": "Tramitazioa",
+      "SENT": "Bidali",
+      "FAILED": "Huts egin du",
+      "SKIPPED": "Saltatu",
+      "CANCELLED": "Bertan behera utzita"
+    },
+    "deliveryStatus": {
+      "SENT": "bidali",
+      "FAILED": "huts egin zuen",
+      "SKIPPED": "saltatu"
+    },
+    "deliveryChannel": {
+      "IN_APP": "aplikazioan",
+      "EMAIL": "posta elektronikoa",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Esleitutako erabiltzailea",
+      "owner": "Jabea",
+      "updatedBy": "arabera eguneratua",
+      "role": "Rola: {{name}}"
+    },
+    "channels": {
+      "inApp": "Aplikazioan",
+      "email": "Posta elektronikoa",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "\" {{name}} \" jakinarazpena ezabatu? Bertatik zain dauden abisuak bertan behera utzi dira.",
+    "testPrompt": "Bidali jakinarazpen honen proba bat zeure buruari (aplikazioan) zein lead ID erabiliz?",
+    "testSent": "Zure kanpaira bidali da: {{title}} {{message}}",
+    "headersInvalid": "Webhook goiburuek JSON baliozkoa izan behar dute, adibidez {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Editatu jakinarazpena",
+    "newTitle": "Jakinarazpen berria",
+    "name": "Izena",
+    "namePlaceholder": "adibidez, gune bisitaren abisua",
+    "whenStatus": "Leku baten egoera denean",
+    "subStatus": "Azpiegoera",
+    "send": "Bidali (planifikatzailea)",
+    "custom": "Pertsonalizatua...",
+    "modeBefore": "aurreikusitako ordua baino lehen",
+    "modeAfter": "aurreikusitako orduaren ondoren",
+    "noScheduleWarning": "Egoera honek ez du data eta ordurik eskatzen, beraz \"programatutako ordua baino lehen/at/ondoren\" jakinarazpena ez litzateke inoiz piztuko.",
+    "noScheduleFix": "Aktibatu <strong>Eskatu data eta ordua</strong> egoerak eta azpiegoerak atalean, edo bidali berehala.",
+    "sendTo": "Bidali hona (edozein konbinazio)",
+    "recipientAssigned": "Esleitutako erabiltzailea (jabe nagusia)",
+    "recipientOwner": "Kontuaren jabea / administratzailea",
+    "recipientUpdatedBy": "Egoera eguneratu duen pertsona",
+    "everyoneWithRole": "Pertsona orok rolarekin",
+    "specificUsers": "Erabiltzaile zehatzak (aktiboak)",
+    "inactiveNever": "Erabiltzaile inaktiboek ez dute inoiz jakinarazpenik jasotzen, hautatuta egon arren.",
+    "deliverVia": "Bidali bidez",
+    "channelInApp": "Aplikazioan (txirria)",
+    "channelEmail": "Posta elektronikoa",
+    "channelWebhook": "Webhook ( WhatsApp / SMS hornitzailea)",
+    "emailHint": "Posta elektronikoa hartzaile bakoitzaren helbide elektronikora doa eta zerbitzarian SMTP konfiguratu behar da (backend/.env); ordura arte e-posta bidalketak saltatu gisa erregistratzen dira.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Goiburuak ( JSON )",
+    "content": "Jakinarazpenaren edukia",
+    "title": "Izenburua",
+    "message": "Mezua",
+    "insertIntoTitle": "Txertatu izenburuan",
+    "insertIntoMessage": "Txertatu Mezuan",
+    "anyLeadField": "Erabilera-eremuak ere funtzionatzen du, adibidez <code1>{{example1}}</code1> edo <code2>{{example2}}</code2> .",
+    "preview": "Aurrebista (lagin-burua)",
+    "enabled": "Gaituta",
+    "saveRule": "Gorde jakinarazpena",
+    "createRule": "Sortu jakinarazpena",
+    "variables": {
+      "customerName": "Izenburua",
+      "customerMobile": "Berun mugikorra",
+      "customerEmail": "E-posta zuzena",
+      "registrationId": "Berun ID",
+      "status": "Egoera",
+      "subStatus": "Azpiegoera",
+      "scheduleAt": "Programatutako data eta ordua",
+      "assignedTo": "Esleitutako erabiltzailea",
+      "updatedBy": "arabera eguneratua",
+      "recipient": "Hartzailearen izena",
+      "project": "Proiektua",
+      "notes": "Azken oharra",
+      "partner": "Bazkidearen izena"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Egoera ezartzen denean berehala",
+      "AT": "Programatutako orduan",
+      "A1D": "Programatutako ordutik egun bat igaro ondoren (jarraipen-egiaztapena)"
+    },
+    "immediately": "Berehala",
+    "atScheduled": "Programatutako orduan",
+    "before": {
+      "MINUTES_one": "Programatutako ordua baino {{count}} minutu lehenago",
+      "MINUTES_other": "Programatutako ordua baino {{count}} minutu lehenago",
+      "HOURS_one": "Programatutako ordua baino {{count}} ordu lehenago",
+      "HOURS_other": "Programatutako ordua baino {{count}} ordu lehenago",
+      "DAYS_one": "Programatutako ordua baino {{count}} egun lehenago",
+      "DAYS_other": "Programatutako ordua baino {{count}} egun lehenago",
+      "WEEKS_one": "Programatutako ordua baino {{count}} aste",
+      "WEEKS_other": "Programatutako ordua baino {{count}} aste lehenago",
+      "MONTHS_one": "Programatutako ordua baino {{count}} hilabete lehenago",
+      "MONTHS_other": "Programatutako ordua baino {{count}} hilabete lehenago",
+      "YEARS_one": "Programatutako ordua baino {{count}} urte lehenago",
+      "YEARS_other": "Programatutako ordua baino {{count}} urte lehenago"
+    },
+    "after": {
+      "MINUTES_one": "Programatutako ordutik {{count}} minutu",
+      "MINUTES_other": "Programatutako ordutik {{count}} minutu",
+      "HOURS_one": "Programatutako ordutik {{count}} ordu",
+      "HOURS_other": "Programatutako ordutik {{count}} ordu",
+      "DAYS_one": "Programatutako ordutik {{count}} egun",
+      "DAYS_other": "Programatutako ordutik {{count}} egun",
+      "WEEKS_one": "Programatutako ordutik {{count}} aste",
+      "WEEKS_other": "Programatutako ordutik {{count}} aste",
+      "MONTHS_one": "Programatutako ordutik {{count}} hilabete",
+      "MONTHS_other": "Programatutako ordutik {{count}} hilabete",
+      "YEARS_one": "Programatutako ordutik {{count}} urte",
+      "YEARS_other": "Programatutako ordutik {{count}} urte"
+    },
+    "units": {
+      "MINUTES_one": "minutua",
+      "MINUTES_other": "minutuak",
+      "HOURS_one": "ordua",
+      "HOURS_other": "orduak",
+      "DAYS_one": "eguna",
+      "DAYS_other": "egunak",
+      "WEEKS_one": "astean",
+      "WEEKS_other": "asteak",
+      "MONTHS_one": "hilabetea",
+      "MONTHS_other": "hilabeteak",
+      "YEARS_one": "urtean",
+      "YEARS_other": "urteak"
+    }
+  }
+}

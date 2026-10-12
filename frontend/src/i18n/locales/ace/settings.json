@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Peuatoe",
+    "noPermission": "Droeneuh hana izin keu neu atoe setting."
+  },
+  "categories": {
+    "lead": "Pimpen",
+    "user": "Ureueng ngui",
+    "integrations": "Integrasi"
+  },
+  "leadTabs": {
+    "fields": "Ladang",
+    "statuses": "Keuadaan & Sub-Keuadaan",
+    "notifications": "Peunyata & Penjadwalan"
+  },
+  "fields": {
+    "leadIntro": "Konfigurasikan formulir tangkapan lead: aktifkan/nonaktifkan bidang, tandai awaknyan dipeureulee, atawa tamah bidang khusus droeneuh keudroe.",
+    "userIntro": "Konfigurasikan formulir Tambah/Edit Anggota Tim: aktifkan/nonaktifkan bidang, tanda awaknyan peureulee, atawa tamah bidang khusus droeneuh keudroe.",
+    "addCustomField": "+ Tambah Bidang Khusus .",
+    "fieldLabel": "Label lapangan",
+    "group": "Grup",
+    "groupPlaceholderLead": "misalnya Info Pertanyaan .",
+    "groupPlaceholderUser": "misalnya Detail Tambahan .",
+    "dataType": "Jeunèh Data",
+    "options": "Opsi (geupisah ngon tanda koma)",
+    "requiredLead": "Wajeb - mitra lam tim droeneuh wajeb neuisi nyoe untuk neudaftar lead .",
+    "requiredUser": "Wajeb - wajeb tapeugot watee ta tamah anggota tim .",
+    "creating": "Meucipta...",
+    "createField": "Peugot Bidang",
+    "columns": {
+      "field": "Blang",
+      "group": "Grup",
+      "type": "Jeuneuh",
+      "required": "Peureulee",
+      "enabled": "Ka geuaktifkan",
+      "kind": "Geut akai"
+    },
+    "kind": {
+      "custom": "Adat",
+      "core": "Inti (teukunci)",
+      "standard": "Standar"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Matan",
+    "TEXTAREA": "Teks panyang",
+    "NUMBER": "Numboi",
+    "CURRENCY": "Mata peng",
+    "DATE": "Tanggai",
+    "SELECT": "Drop-drop",
+    "LIST": "Lis"
+  },
+  "picker": {
+    "searchPlaceholder": "Cari bidang timbal balik...",
+    "summary": "{{shown}} geupeuleumah · {{mandatory}} wajib",
+    "mandatory": "Wajeep",
+    "noMatch": "Hana lapangan nyang cocok."
+  },
+  "statuses": {
+    "intro": "Status dan sub-status lead droeneuh - peu nyang dilakèe le maseng-maseng (tanggal & watee, bidang lead) watee na ureung nyang update lead keu nyan.",
+    "add": "+ Tambah status .",
+    "columns": {
+      "order": "Peusan",
+      "status": "Statuh",
+      "subStatuses": "Sub-Keadaan",
+      "asksFor": "Lakee Keu",
+      "active": "Aktif"
+    },
+    "moveUp": "Pinah u ateuh",
+    "moveDown": "Pinah u miyueb",
+    "defaultBadge": "Default keu lead baro",
+    "bookingBadge": "Status pemesanan",
+    "asksForLabel": "Tanyoe keu {{label}}",
+    "asksForDateTime": "Tanyoeng tanggai & watee",
+    "none": "Hana saboh pih",
+    "dateTime": "Tanggai & watee",
+    "scheduledOn": "bak {{names}}",
+    "fieldsSummary_one": "{{count}} bideuëng ( {{mandatory}} wajib)",
+    "fieldsSummary_other": "{{count}} bideuëng ( {{mandatory}} wajib)",
+    "deleteConfirm": "Peusampôh keuadaan \" {{name}} \"? Nyoe hana jeuet ta balek.",
+    "editTitle": "Peugot keuadaan - {{name}}",
+    "newTitle": "Status Baroe Aceh",
+    "name": "Nan status",
+    "colour": "Wareuna",
+    "active": "Aktif",
+    "isDefault": "Status lalai keu prospek baroe",
+    "isBooking": "Status pemesanan (teutapkan oleh Pemesanan Lengkap)",
+    "whenMoved": "Watèë saboh lead geupinah u status nyoe .",
+    "askSchedule": "Tanyoeng tanggai & watee (peujadwal)",
+    "scheduleLabelPlaceholder": "Label, miseu jih Kunjungi bak .",
+    "fieldsToShow": "Bidang timah keu geupeuleumah bak formulir pembaroan .",
+    "subStatusesTitle": "Sub-Keadaan",
+    "subStatusesHint": "Tiëp-tiëp sub-status jeuët geulakèë tanggai & watèë droëgeuh dan geutamah bideuëng droëgeuh - geupeuleumah bak ateuëh bideuëng status di ateuëh.",
+    "subStatusName": "Nan sub-status",
+    "subFields": "Bidang ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Label tanggal & watee, miseu jih Telpon kembali bak 10.00.",
+    "addSubStatus": "+ Tambah Sub-Status .",
+    "saveStatus": "Simpan status",
+    "createStatus": "Peugot status"
+  },
+  "notifications": {
+    "intro": "Peugah bak ureueng nyang beutoi watee sidroe lead troh bak saboh status - sigra, atawa watee nyang ka teupeuteunte seugohlom/lheuh tanggai & watee nyang ka dijadwalkan ateuh nyan.",
+    "add": "+ Tambah Pemberitahuan .",
+    "columns": {
+      "notification": "Peunyata",
+      "whenStatusIs": "Pajan Status Ka .",
+      "sends": "Meukirém",
+      "to": "Ho",
+      "via": "Via",
+      "enabled": "Ka geuaktifkan"
+    },
+    "anyStatus": "Status peu mantong .",
+    "anySubStatus": "Sub-status peu mantong",
+    "inactiveOption": "{{name}} (hana aktif)",
+    "emptyRules": "Hana pemberitahuan lom - tamah saboh untuk neubri peringatan keu tim droeneuh watee sidroe lead troh bak status.",
+    "jobs": {
+      "title": "Dijadwalkan & Dikirem",
+      "firesAt": "Apui Bak",
+      "notification": "Peunyata",
+      "lead": "Pimpen",
+      "status": "Statuh",
+      "details": "Detil",
+      "empty": "Hana peu nyang ka geu jadwal atawa geu kirem lom.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Meusangkot",
+      "PROCESSING": "Peuproses",
+      "SENT": "Kirem",
+      "FAILED": "Hana sukseh",
+      "SKIPPED": "Dileupah",
+      "CANCELLED": "Dibatalkan"
+    },
+    "deliveryStatus": {
+      "SENT": "kirem",
+      "FAILED": "hana sukseh",
+      "SKIPPED": "dileupah"
+    },
+    "deliveryChannel": {
+      "IN_APP": "lam aplikasi",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Ureueng ngui nyang ka geubri tugaih",
+      "owner": "Poe",
+      "updatedBy": "Geupeubarô lé",
+      "role": "Peran: {{name}}"
+    },
+    "channels": {
+      "inApp": "Lam aplikasi",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Sampôh peunyata \" {{name}} \"? Peuingat nyang teungoh teu-ulang dari nyan ka geubatasi.",
+    "testPrompt": "Neukirém tes notifikasi nyoe keu droëneuh (in-app) neungui ID lead pat ?",
+    "testSent": "Geukirém keu lonceng droeneuh: {{title}} {{message}}",
+    "headersInvalid": "Header Webhook wajeb JSON nyang sah , miseu jih {\"Otorisasi\": \"Pembawa xyz\"}",
+    "editTitle": "Sunting Peunyata",
+    "newTitle": "Peunyataan Baroe",
+    "name": "Nan",
+    "namePlaceholder": "miseu jih peuingat kunjungan situs .",
+    "whenStatus": "Meunyo status sidroe pemimpin nakeuh .",
+    "subStatus": "sub-status",
+    "send": "Kirem (peujadwal)",
+    "custom": "Adat...",
+    "modeBefore": "seugohlom watee nyang ka geujadwalkan",
+    "modeAfter": "lheuh watee nyang ka geujadwalkan",
+    "noScheduleWarning": "Status nyoe hana ji lakee tanggai & watee, jadi pemberitahuan \"seugolom/bak/lheuh watee nyang ka ji jadwal\" hana akan pernah ji peugot.",
+    "noScheduleFix": "Hidupkan <strong>Lakee tanggai & watee</strong> keu nyan di miyup Status & Sub-Status, atawa kirem Langsong.",
+    "sendTo": "Kirem keu (kombinasi peu mantong)",
+    "recipientAssigned": "Pengguna nyang geubri tugaih (peumilik utama)",
+    "recipientOwner": "Peumilik akun / admin .",
+    "recipientUpdatedBy": "Ureueng nyang peubaroe status .",
+    "everyoneWithRole": "Mandum ureung deungon peran .",
+    "specificUsers": "Pengguna khusus (aktif)",
+    "inactiveNever": "Pengguna nyang hana aktif hana tom geuterimong pemberitahuan, bah pih geupiléh.",
+    "deliverVia": "Peusampoe via",
+    "channelInApp": "Lam aplikasi (lonceng)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp SMS )",
+    "emailHint": "Email jijak bak alamat email tiep-tiep ureueng nyang teurimong dan peureulee SMTP nyang ka ji peugot bak server (backend/.env); sampoe lheuh nyan email nyang jikirém ka ji log lagee ji skip.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Ulee ( JSON )",
+    "content": "Asoe pemberitahuan",
+    "title": "Judui",
+    "message": "Peusan",
+    "insertIntoTitle": "Peutamong lam Judul .",
+    "insertIntoMessage": "Peutamong lam Peusan",
+    "anyLeadField": "Bidang lead peu manteng meubut cit, miseu jih <code1>{{example1}}</code1> atawa <code2>{{example2}}</code2> .",
+    "preview": "Pratinjau (contoh timah)",
+    "enabled": "Ka geuaktifkan",
+    "saveRule": "Simpan Peunyata",
+    "createRule": "Peugot Pemberitahuan",
+    "variables": {
+      "customerName": "Nan pemimpin",
+      "customerMobile": "Memimpin seluler",
+      "customerEmail": "Email memimpin",
+      "registrationId": "ID timbal balik",
+      "status": "Statuh",
+      "subStatus": "sub-status",
+      "scheduleAt": "Tanggai & watee nyang ka geujadwalkan",
+      "assignedTo": "Ureueng ngui nyang ka geubri tugaih",
+      "updatedBy": "Geupeubarô lé",
+      "recipient": "Nan penerima",
+      "project": "Proyek",
+      "notes": "Catatan terbaru",
+      "partner": "Nan pasangan"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Langsong watee status ka geuset .",
+      "AT": "Bak watee nyang ka geujadwalkan .",
+      "A1D": "1 uroe lheuh watee nyang ka geujadwalkan (pemeriksaan tindak lanjut)"
+    },
+    "immediately": "Sigra",
+    "atScheduled": "Bak watee nyang ka geujadwalkan",
+    "before": {
+      "MINUTES_one": "{{count}} minet sigohlom watee nyang ka geujadwalkan",
+      "MINUTES_other": "{{count}} minet sigohlom watee nyang ka geujadwalkan",
+      "HOURS_one": "{{count}} sijeum sigohlom watee nyang ka geujadwalkan",
+      "HOURS_other": "{{count}} jeum sigohlom watee nyang ka geujadwalkan",
+      "DAYS_one": "{{count}} uroe sigohlom watee nyang ka geujadwalkan",
+      "DAYS_other": "{{count}} uroe sigohlom watee nyang ka geujadwalkan",
+      "WEEKS_one": "{{count}} minggu sigohlom watee nyang ka geujadwalkan",
+      "WEEKS_other": "{{count}} minggu sigohlom watee nyang ka geujadwalkan",
+      "MONTHS_one": "{{count}} buleuen sigohlom watee nyang ka geujadwalkan",
+      "MONTHS_other": "{{count}} buleuen sigohlom watee nyang ka geujadwalkan",
+      "YEARS_one": "{{count}} thôn seugohlom watèe nyang ka geujadwalkan",
+      "YEARS_other": "{{count}} thôn sigohlom watèe nyang ka geujadwalkan"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minet lheuh watee nyang ka geujadwalkan",
+      "MINUTES_other": "{{count}} minet lheuh watee nyang ka geujadwalkan",
+      "HOURS_one": "{{count}} jeum lheuh watee nyang ka geujadwalkan",
+      "HOURS_other": "{{count}} jeum lheuh watee nyang ka geujadwalkan",
+      "DAYS_one": "{{count}} uroe lheuh watee nyang ka geujadwalkan",
+      "DAYS_other": "{{count}} uroe lheuh watee nyang ka geujadwalkan",
+      "WEEKS_one": "{{count}} minggu lheuh watee nyang ka geujadwalkan",
+      "WEEKS_other": "{{count}} minggu lheuh watee nyang ka geujadwalkan",
+      "MONTHS_one": "{{count}} buleuen lheuh watee nyang ka geujadwalkan",
+      "MONTHS_other": "{{count}} buleuen lheuh watee nyang ka geujadwalkan",
+      "YEARS_one": "{{count}} thôn lheuëh watèë nyang ka geujadwalkan",
+      "YEARS_other": "{{count}} thôn lheuëh watèë nyang ka geujadwalkan"
+    },
+    "units": {
+      "MINUTES_one": "minet",
+      "MINUTES_other": "minet",
+      "HOURS_one": "jeum",
+      "HOURS_other": "jeum",
+      "DAYS_one": "uroe",
+      "DAYS_other": "uroe;",
+      "WEEKS_one": "binggu",
+      "WEEKS_other": "minggu",
+      "MONTHS_one": "buleuen",
+      "MONTHS_other": "buleuen",
+      "YEARS_one": "thon",
+      "YEARS_other": "thon"
+    }
+  }
+}

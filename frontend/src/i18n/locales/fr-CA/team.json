@@ -1,0 +1,83 @@
+{
+  "title": "Gérer l'équipe",
+  "tabs": {
+    "members": "Membres de l'équipe",
+    "roles": "Rôles et autorisations",
+    "profile": "Mon profil"
+  },
+  "roles": {
+    "owner": "Propriétaire",
+    "member": "Membre de l'équipe"
+  },
+  "profile": {
+    "updated": "Profil mis à jour.",
+    "basicInfo": "Informations de base",
+    "organisationInfo": "Renseignements sur l'organisation",
+    "preferences": "Préférences",
+    "companyName": "Nom de l'entreprise/organisation",
+    "city": "Ville",
+    "state": "État",
+    "currencyHelp": "Utilisé pour afficher les budgets et les valeurs de réservation au sein de votre équipe.",
+    "useDeviceTimezone": "Utiliser le fuseau horaire de l'appareil ( {{timezone}} )",
+    "securityRole": "Sécurité et rôle",
+    "newPassword": "Nouveau mot de passe (laisser vide pour rester inchangé)",
+    "currentPassword": "Mot de passe actuel",
+    "memberSince": "Membre depuis",
+    "languageSaved": "Langue enregistrée dans votre compte : elle sera utilisée sur chaque appareil auquel vous vous connectez."
+  },
+  "members": {
+    "intro": "Ajoutez, modifiez, désactivez ou supprimez des personnes de votre équipe : elles partagent l'accès aux mêmes prospects.",
+    "noPermission": "Vous n'êtes pas autorisé à ajouter, modifier ou supprimer des membres de l'équipe.",
+    "addNew": "+ Ajouter un nouvel utilisateur",
+    "passwordLabel": "{{label}} (min 8 caractères)",
+    "rolePermissions": "Rôle et autorisations",
+    "adding": "Ajout...",
+    "addMember": "Ajouter un membre de l'équipe",
+    "tabAll": "Tous ( {{count}} )",
+    "tabActive": "Actif ( {{count}} )",
+    "tabInactive": "Inactif ( {{count}} )",
+    "searchPlaceholder": "Trouver un nom ou un nom d'utilisateur...",
+    "allTimezones": "Tous les fuseaux horaires",
+    "perPage": "Entrées par page",
+    "contact": "Coordonnées",
+    "added": "Ajouté",
+    "toggleActive": "Actif - cliquez pour désactiver",
+    "toggleInactive": "Inactif - cliquez pour activer",
+    "empty": "Aucun membre de l'équipe pour l'instant.",
+    "noMatch": "Aucun membre de l'équipe ne correspond à ces filtres.",
+    "showing": "Affichage {{from}} à {{to}} sur {{total}} entrées",
+    "firstPage": "Première page",
+    "previousPage": "Page précédente",
+    "nextPage": "Page suivante",
+    "lastPage": "Dernière page"
+  },
+  "editMember": {
+    "title": "Modifier l'utilisateur",
+    "noPermission": "Vous n'êtes pas autorisé à modifier les membres de l'équipe.",
+    "backToTeam": "Retourner à l'équipe",
+    "cantChangeOwn": "Vous ne pouvez pas modifier votre propre rôle ou statut.",
+    "needsManageRoles": "La modification du rôle d'un membre nécessite l'autorisation Gérer les rôles.",
+    "addedBy": "Ajouté par",
+    "addedOn": "Ajouté"
+  },
+  "rolesPage": {
+    "intro": "Super administrateur, administrateur et gestionnaire sont intégrés et ne peuvent pas être modifiés : créez un rôle personnalisé pour tout le reste.",
+    "noPermission": "Vous n'êtes pas autorisé à gérer les rôles.",
+    "createCustom": "+ Créer un rôle personnalisé",
+    "roleName": "Nom du rôle",
+    "permissions": "Autorisations",
+    "members": "Membres",
+    "creating": "Création...",
+    "createRole": "Créer un rôle",
+    "systemRole": "Rôle du système",
+    "builtIn": "Intégré",
+    "empty": "Aucun rôle pour l'instant."
+  },
+  "permissions": {
+    "MANAGE_LEADS": "Gérer les pistes (créer, progresser, réserver)",
+    "MANAGE_TEAM": "Gérer l'équipe (ajouter, modifier, supprimer des membres)",
+    "MANAGE_ROLES": "Gérer les rôles et les autorisations",
+    "MANAGE_SETTINGS": "Gérer les paramètres (champs du formulaire pour prospects)",
+    "none": "Aucune autorisation"
+  }
+}

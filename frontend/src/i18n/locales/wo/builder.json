@@ -1,0 +1,87 @@
+{
+  "shell": {
+    "portal": "Portaalu tabaxkat",
+    "referrals": "Yonnee",
+    "builderLogin": "Dugg ci tabaxkat",
+    "partnerLogin": "Duggal ci jàppante ci chaine"
+  },
+  "login": {
+    "title": "Duggal tabaxkat",
+    "hint": "Leadrat moo defar kontu tabaxkat yi . Laajteel sa administratër ndax amoo benn."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Xaar sa dogal",
+    "ACCEPTED": "Nanngu nañu ko",
+    "REJECTED": "Bañ"
+  },
+  "list": {
+    "title": "Yonnee",
+    "allProjects": "bépp projet",
+    "allStatuses": "Status yépp",
+    "count_other": "{{count}} jëmmal",
+    "columns": {
+      "referral": "Yonnee",
+      "customer": "Kilimaa",
+      "project": "Mbebët",
+      "sourcePartner": "Naataango",
+      "status": "Tolluwaay nekkin",
+      "booking": "Reservation",
+      "registered": "Bindu"
+    },
+    "booked": "Reservé",
+    "empty": "Ba leegi kenn deful."
+  },
+  "detail": {
+    "customer": "Kilimaa",
+    "sourcePartner": "Naataango",
+    "attributionNote": "(mënuñu ko soppi)",
+    "leadStatus": "Status de prospect",
+    "protectedUntil": "Aar Ba",
+    "referral": "Yonnee",
+    "reason": "Sabab: {{reason}}",
+    "booking": "Reservation",
+    "bookedOwner": "Booked - yaay boroom liggéey bi",
+    "notBooked": "Reserve wuñu ko",
+    "sharedAfterBooking": "Ñu ngi ko séddoo ginaaw biñu defee reservation",
+    "accept": "Nanngu ñu yónnee ko",
+    "confirmBooking": "Firndelal sa reservation",
+    "reject": "Bañ Yonnee",
+    "rejectReasonLabel": "Sabab bi tax ñu bañ (ñu wane ko jàppante bi) *",
+    "rejectConfirm": "Dàqq",
+    "confirmBookingPrompt": "Firndeel reservation bi? Boroom liggéey bi dafay toxu ci yaw, te jàppantekat bi mën na am komisioŋ.",
+    "notice": {
+      "booked": "Reservation bi firndeel nañu ko.",
+      "accepted": "Nanngu nañu yónnee.",
+      "rejected": "Referral bi dañu ko bañ."
+    },
+    "backToReferrals": "Dellu ci Yonneef yi"
+  },
+  "history": {
+    "title": "Jaar-jaar",
+    "actor": {
+      "system": "Tëralin",
+      "partner": "Partenaire chaine",
+      "admin": "Admin Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "jotna ñu bindu ab naataango",
+      "DUPLICATE_CHECK_COMPLETED": "Saytu ñaari yoon jeexna - gisu ñu ñaari yoon",
+      "REGISTRATION_ACCEPTED": "Nangu nañu bind sa tur",
+      "PROTECTION_GRANTED_other": "{{count}} -bis aar jox nañu ko",
+      "STAGE_UPDATED": "Dañu yeesal tolluwaayu {{stage}}",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} barab yiñ yeesal",
+      "LEAD_ASSIGNED": "Ñu jox ko {{name}}",
+      "LEAD_UNASSIGNED": "joxu ñu ko",
+      "REFERRAL_ACCEPTED": "Tabaxkat bi nanguna ñu yónnee ko",
+      "REFERRAL_REJECTED": "Tabaxkat bi dafa bañ yónnee ko. Sabab: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} jéema bind ñaari yoon, dañu ko bañ",
+      "BOOKING_COMPLETED": "Reservation bi jeexna",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Boroom liggéey bi dañu ko jox Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Attribution Partner bi denc nañu ko",
+      "COMMISSION_ELIGIBILITY_CREATED": "Sos nañu yelleefu komisioŋ",
+      "HANDOVER_COMPLETED": "Joxe bi jeexna",
+      "ADMIN_PROTECTION_RELEASED": "Admin bi teela genne ñaari aar. Sabab: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin bi dafa soppi bindu bi ci {{from}} dem ci {{to}} . Sabab: {{reason}}"
+    }
+  }
+}

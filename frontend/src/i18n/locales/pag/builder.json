@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Builder Portal",
+    "referrals": "Saray Referral",
+    "builderLogin": "Builder Login",
+    "partnerLogin": "Channel Partner Login"
+  },
+  "login": {
+    "title": "Manpirma na managpaalagey",
+    "hint": "Saray builder account et ginawa na Leadrat . Tepetan mo so administrador mo no walay walad sika."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Manaalagar ak na desisyon mo",
+    "ACCEPTED": "Inawat",
+    "REJECTED": "Ag-inawat"
+  },
+  "list": {
+    "title": "Saray Referral",
+    "allProjects": "Amin ya proyekto",
+    "allStatuses": "Amin ya kipapasen",
+    "count_one": "{{count}} referral",
+    "count_other": "{{count}} ya referral",
+    "columns": {
+      "referral": "Referral",
+      "customer": "Kustomer",
+      "project": "Proyekto",
+      "sourcePartner": "Source Partner",
+      "status": "Kipapasen",
+      "booking": "Panag-book",
+      "registered": "Rehistrado"
+    },
+    "booked": "Aka-book la",
+    "empty": "Anggapo ni ray referral."
+  },
+  "detail": {
+    "customer": "Kustomer",
+    "sourcePartner": "Source Partner",
+    "attributionNote": "(attribution - ag nayarin umanen)",
+    "leadStatus": "Kipapasen na Pangulo",
+    "protectedUntil": "Protektaan Anggad",
+    "referral": "Referral",
+    "reason": "Rason: {{reason}}",
+    "booking": "Panag-book",
+    "bookedOwner": "Aka-book la - sika so akankayarian na operasyon",
+    "notBooked": "Ag-aka-book",
+    "sharedAfterBooking": "In-share kayari na impan-book",
+    "accept": "Awaten so Referral",
+    "confirmBooking": "Kumpirmaen so Panag-book",
+    "reject": "Ipulisay so Referral",
+    "rejectReasonLabel": "Rason na ag-inmabobon (impanengneng ed kapareha) *",
+    "rejectConfirm": "Ipulisay",
+    "confirmBookingPrompt": "Kumpirmaen so booking? Say operational ownership et onla ed sika tan say partner et magmaliw ya kualipikado parad komisyon.",
+    "notice": {
+      "booked": "Akumpirma so booking.",
+      "accepted": "Inawat so referral.",
+      "rejected": "Ag-inawat so referral."
+    },
+    "backToReferrals": "Pawil ed saray Referral"
+  },
+  "history": {
+    "title": "Awaran",
+    "actor": {
+      "system": "Sistema",
+      "partner": "Channel partner",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Naawat so rehistrasyon na kapareha",
+      "DUPLICATE_CHECK_COMPLETED": "Asumpal so duplicate check - anggapoy anengneng ya aktibon duplicate",
+      "REGISTRATION_ACCEPTED": "Inawat so panrehistro",
+      "PROTECTION_GRANTED_one": "{{count}} -agew ya proteksion ya inter",
+      "PROTECTION_GRANTED_other": "{{count}} -agew ya proteksion ya inter",
+      "STAGE_UPDATED": "Say kipapasen et in-update ed {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "In-update {{count}} field",
+      "LEAD_DETAILS_UPDATED_other": "In-update {{count}} ya lawak",
+      "LEAD_ASSIGNED": "Nipabtang ed {{name}}",
+      "LEAD_UNASSIGNED": "Anggapoy niasain",
+      "REFERRAL_ACCEPTED": "Inawat na managpaalagey so referral",
+      "REFERRAL_REJECTED": "Ag-inawat na Builder so referral. Rason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Say doblin panrehistro na {{partner}} et ag-inawat",
+      "BOOKING_COMPLETED": "Asumpal lay booking",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Say panagkayarian ed operasyon et inyalis ed managpaalagey",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Napreserba so pangiter na kapareha",
+      "COMMISSION_ELIGIBILITY_CREATED": "Nagawa so kualipikasyon ed komisyon",
+      "HANDOVER_COMPLETED": "Asumpal so pangiter",
+      "ADMIN_PROTECTION_RELEASED": "Masakbay ya impaway na admin so duplicate protection. Rason: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Inuman na Admin so rehistrasyon manlapud {{from}} ya anggad {{to}} . Rason: {{reason}}"
+    }
+  }
+}

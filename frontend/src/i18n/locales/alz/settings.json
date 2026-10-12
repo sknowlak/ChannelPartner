@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Kabedo",
+    "noPermission": "Ipe ku twero mi telo wi lembe."
+  },
+  "categories": {
+    "lead": "Telo wic",
+    "user": "Jatic",
+    "integrations": "Dikiri"
+  },
+  "leadTabs": {
+    "fields": "Podho",
+    "statuses": "Kite man kite ma nok",
+    "notifications": "Lembe mi poyo wic man ju ma ketho yub"
+  },
+  "fields": {
+    "leadIntro": "Yub karatasi mi mako dhanu: keth/juk kabedo, keth lanyuth ikumgi, nyo med kabedo peri giri.",
+    "userIntro": "Keth fom mi medu/lok dhanu mi dul: keth/juk kabedo, keth lanyuth ikumgi, nyo med kabedo peri giri.",
+    "addCustomField": "+ Med kabedo peri giri",
+    "fieldLabel": "Label mi podho",
+    "group": "Coko",
+    "groupPlaceholderLead": "eg. Lembe mi penji",
+    "groupPlaceholderUser": "calu, Lembe mukende",
+    "dataType": "Kit lembe",
+    "options": "Lembe (ma jupoko ku koma)",
+    "requiredLead": "Mitere - juwadi i dul peri umaku giponj lembe eni pi ketho nying dhanu",
+    "requiredUser": "Mitere - umitu jupong ka jumedu ngati moko mi gurup",
+    "creating": "Cwio...",
+    "createField": "Caku kabedo",
+    "columns": {
+      "field": "Katic",
+      "group": "Coko",
+      "type": "Kyeo",
+      "required": "Omitire",
+      "enabled": "Juyio",
+      "kind": "Kisa"
+    },
+    "kind": {
+      "custom": "Custom",
+      "core": "Core (ma juku)",
+      "standard": "Makoya"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Gor",
+    "TEXTAREA": "Lembe ma bor",
+    "NUMBER": "Nyiguta",
+    "CURRENCY": "Sente",
+    "DATE": "Nindo",
+    "SELECT": "Dropdown",
+    "LIST": "Wel piny"
+  },
+  "picker": {
+    "searchPlaceholder": "Sayu kabedo mi telowic...",
+    "summary": "{{shown}} shown · {{mandatory}} mandatory",
+    "mandatory": "Umako",
+    "noMatch": "Podho moko epe."
+  },
+  "statuses": {
+    "intro": "Kabedo peri mi telowic man kite ma nok - ango ma ngati acel acel penjo (nindo & sawa, kabedo mi telowic) ka ngati moko udwoko lead manyen i iye.",
+    "add": "+ Med rwom",
+    "columns": {
+      "order": "Penji",
+      "status": "Rwom",
+      "subStatuses": "Kabedo ma nok",
+      "asksFor": "Penjo pi",
+      "active": "Tiyo"
+    },
+    "moveUp": "Woth malu",
+    "moveDown": "Woth piny",
+    "defaultBadge": "Default pi telowic manyen",
+    "bookingBadge": "Kite mi booking",
+    "asksForLabel": "Penjo pi {{label}}",
+    "asksForDateTime": "Penjo pi nindo & sawa",
+    "none": "Upe",
+    "dateTime": "Nindo & sawa",
+    "scheduledOn": "iwi {{names}}",
+    "fieldsSummary_one": "{{count}} field ( {{mandatory}} mandatory)",
+    "fieldsSummary_other": "{{count}} fields ( {{mandatory}} mandatory)",
+    "deleteConfirm": "Woth lembe \" {{name}} \"? Eni copo bedu ngo.",
+    "editTitle": "Lok kite - {{name}}",
+    "newTitle": "Kite manyen",
+    "name": "Nying pa lembe",
+    "colour": "Rangi",
+    "active": "Tiyo",
+    "isDefault": "Kite ma ecaku kudu pi telowic manyen",
+    "isBooking": "Kite ma booking utiye kudu (juketho ku Complete Booking)",
+    "whenMoved": "Ka jatel wi dhanu udok i rwom maeni",
+    "askSchedule": "Penj pi nindo & sawa (jagor)",
+    "scheduleLabelPlaceholder": "Label, calu Lim i",
+    "fieldsToShow": "Kabedo ma jubi nyuthu i karatasi mi dwoko piny manyen",
+    "subStatusesTitle": "Kabedo ma nok",
+    "subStatusesHint": "Sub-status acel acel copo penjo nindo man sawa pare gire man medu kabedo pare gire - ma nen iwi kabedo pa lembe ma malu.",
+    "subStatusName": "Nying piny",
+    "subFields": "Kabedo ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Nindo & sawa, calu Lwong i",
+    "addSubStatus": "+ Med Sub-Status",
+    "saveStatus": "Gwok kite",
+    "createStatus": "Caku kite"
+  },
+  "notifications": {
+    "intro": "Nyuth ni dhanu ma'tira ka ngati moko utuc i rwom moko - kawoni, nyo sawa moku ma podi/ingeye nindo & sawa ma juketho iwie.",
+    "add": "+ Medu ngec",
+    "columns": {
+      "notification": "Ngec",
+      "whenStatusIs": "Ka rwom utiye",
+      "sends": "Cwalo",
+      "to": "I",
+      "via": "Yor",
+      "enabled": "Juyio"
+    },
+    "anyStatus": "Kabedo moku ci",
+    "anySubStatus": "Kit piny moku ci",
+    "inactiveOption": "{{name}} (ma tiyo ngo)",
+    "emptyRules": "Lembe moko epe podi - med acel mi poyo wi jutic peri ka ngati moko utuc i rwom.",
+    "jobs": {
+      "title": "Juyike man juoro",
+      "firesAt": "Mac I",
+      "notification": "Ngec",
+      "lead": "Telo wic",
+      "status": "Rwom",
+      "details": "Kum lok",
+      "empty": "Piny moko epe ma juyike nyo juoro podi.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Podi",
+      "PROCESSING": "Tiyu",
+      "SENT": "Cwalo",
+      "FAILED": "Opodho",
+      "SKIPPED": "Juweko",
+      "CANCELLED": "Jujuko"
+    },
+    "deliveryStatus": {
+      "SENT": "cwalo",
+      "FAILED": "opodho",
+      "SKIPPED": "ukadhu"
+    },
+    "deliveryChannel": {
+      "IN_APP": "I-app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Jatic ma juyike",
+      "owner": "Won",
+      "updatedBy": "Judwoko manyen ku",
+      "role": "Tic: {{name}}"
+    },
+    "channels": {
+      "inApp": "I-app",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Woth lwongo \" {{name}} \"? Lembe ma poyo wic ma ubekuru kud i iye juwodho.",
+    "testPrompt": "Cwal penji mi lwongo eni iri giri (i-app) ni tiyo ku lead ID makani?",
+    "testSent": "Juoro i cingi: {{title}} {{message}}",
+    "headersInvalid": "Webhook headers umaku obed JSON maber, calu {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Lok lembe",
+    "newTitle": "Lembe manyen",
+    "name": "Nying",
+    "namePlaceholder": "calu, poyo wic mi limo kabedo",
+    "whenStatus": "Ka rwom pa jatel wi dhanu utiye",
+    "subStatus": "Kite ma piny",
+    "send": "Cwal (jagor)",
+    "custom": "Custom...",
+    "modeBefore": "mapodi sawa ma juketho",
+    "modeAfter": "ingey sawa ma juketho",
+    "noScheduleWarning": "Kabedo eni penjo ngo nindo man sawa, ci \"i wang/i/ingeye sawa ma juketho\" copo wok ungo.",
+    "noScheduleFix": "Yab <strong>Penj pi nindo man sawa</strong> i the Statuses & Sub-Statuses, nyo cwal Immediately.",
+    "sendTo": "Cwal ni (coko moko ci)",
+    "recipientAssigned": "Jatic ma juyike (jatel wi tic)",
+    "recipientOwner": "Won akaunti / jatel wi tic",
+    "recipientUpdatedBy": "Ngati mudwoko lembe manyen",
+    "everyoneWithRole": "Dhanu ceke ku tic",
+    "specificUsers": "Jutic moko (ma tiyu)",
+    "inactiveNever": "Jutic ma timo ngo tic gi nwango ngo lwongo, kadi nangu juyeru gi.",
+    "deliverVia": "Cwalu nikadhu kud i",
+    "channelInApp": "I-app (bell)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS provider)",
+    "emailHint": "Email cidho i email pa ngati acel acel man mitu SMTP ma juketho iwi server (backend/.env); nitundu eca, email ma juoro jubiketho ni skip.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Wi lembe ( JSON )",
+    "content": "Lembe mi poyo wic",
+    "title": "Wilembe",
+    "message": "Kwenda",
+    "insertIntoTitle": "Keth i wi lembe",
+    "insertIntoMessage": "Keth i lembe",
+    "anyLeadField": "Lead field moko ci tiyo de, calu <code1>{{example1}}</code1> nyo <code2>{{example2}}</code2> .",
+    "preview": "Nen (lanyut pa telowic)",
+    "enabled": "Juyio",
+    "saveRule": "Gwok lembe",
+    "createRule": "Cwec mi poyo wic",
+    "variables": {
+      "customerName": "Nying jatel wi tic",
+      "customerMobile": "Telo wi simu",
+      "customerEmail": "Email ma telo",
+      "registrationId": "ID pa jatel wi dhanu",
+      "status": "Rwom",
+      "subStatus": "Kite ma piny",
+      "scheduleAt": "Nindo man sawa ma juketho",
+      "assignedTo": "Jatic ma juyike",
+      "updatedBy": "Judwoko manyen ku",
+      "recipient": "Nying ja gamu",
+      "project": "Tic",
+      "notes": "Lembe manyen",
+      "partner": "Nying wadi"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Ndhu ndhu ka rwom ubedo",
+      "AT": "I saa ma juketho",
+      "A1D": "1 ceng ingey sawa ma juyike (lubo tok)"
+    },
+    "immediately": "Piyo",
+    "atScheduled": "I saa ma juketho",
+    "before": {
+      "MINUTES_one": "{{count}} dakika mapodi sawa ma juketho",
+      "MINUTES_other": "{{count}} dakika mapodi sawa ma juketho",
+      "HOURS_one": "{{count}} sawa mapodi sawa ma juketho",
+      "HOURS_other": "{{count}} sawa mapodi sawa ma juketho",
+      "DAYS_one": "{{count}} ceng mapodi sawa ma juketho",
+      "DAYS_other": "{{count}} nindu mapodi sawa ma juketho",
+      "WEEKS_one": "{{count}} yenga mapodi sawa ma juketho",
+      "WEEKS_other": "{{count}} yenga mapodi sawa ma juketho",
+      "MONTHS_one": "{{count}} dwi mapodi sawa ma juketho",
+      "MONTHS_other": "{{count}} dweche mapodi sawa ma juketho",
+      "YEARS_one": "{{count}} oro mapodi kare ma juketho",
+      "YEARS_other": "{{count}} oro mapodi kare ma juketho"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} dakika ingey sawa ma juketho",
+      "MINUTES_other": "{{count}} dakika ingey sawa ma juketho",
+      "HOURS_one": "{{count}} sawa ingey sawa ma juyike",
+      "HOURS_other": "{{count}} sawa ingey sawa ma juketho",
+      "DAYS_one": "{{count}} ceng ingey sawa ma juyike",
+      "DAYS_other": "{{count}} nindu ingey sawa ma juyike",
+      "WEEKS_one": "{{count}} yenga ingey sawa ma juyike",
+      "WEEKS_other": "{{count}} yenga ingey sawa ma juyike",
+      "MONTHS_one": "{{count}} dwi ingey sawa ma juyike",
+      "MONTHS_other": "{{count}} dweche bang' saa ma ne oket",
+      "YEARS_one": "{{count}} oro ingey kare ma juyike",
+      "YEARS_other": "{{count}} oro ingey kare ma juyike"
+    },
+    "units": {
+      "MINUTES_one": "dakika",
+      "MINUTES_other": "dakika",
+      "HOURS_one": "sawa",
+      "HOURS_other": "sawa",
+      "DAYS_one": "ceng",
+      "DAYS_other": "nindu",
+      "WEEKS_one": "yenga",
+      "WEEKS_other": "yenga",
+      "MONTHS_one": "dwi",
+      "MONTHS_other": "dweche",
+      "YEARS_one": "oro",
+      "YEARS_other": "oro"
+    }
+  }
+}

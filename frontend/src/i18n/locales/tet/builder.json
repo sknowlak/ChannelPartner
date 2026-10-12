@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portál Konstrutór",
+    "referrals": "Referénsia sira",
+    "builderLogin": "Builder Login",
+    "partnerLogin": "Login Parseiru Kanál nian"
+  },
+  "login": {
+    "title": "Konstrutór tama",
+    "hint": "Konta konstrutór sira kria hosi Leadrat . Husu ba ita-boot nia administradór se ita-boot laiha ida."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Hein Ita-boot nia desizaun",
+    "ACCEPTED": "Aseita ona",
+    "REJECTED": "Rejeitadu"
+  },
+  "list": {
+    "title": "Referénsia sira",
+    "allProjects": "Projetu hotu-hotu",
+    "allStatuses": "Estatutu hotu-hotu",
+    "count_one": "{{count}} referénsia",
+    "count_other": "{{count}} referénsia sira",
+    "columns": {
+      "referral": "Referénsia",
+      "customer": "Kliente",
+      "project": "Projetu",
+      "sourcePartner": "Parseiru Fonte",
+      "status": "Estadu",
+      "booking": "Rezervasaun",
+      "registered": "Rejistu ona"
+    },
+    "booked": "Rezerva ona",
+    "empty": "Seidauk iha referénsia."
+  },
+  "detail": {
+    "customer": "Kliente",
+    "sourcePartner": "Parseiru Fonte",
+    "attributionNote": "(atribuisaun - labele muda)",
+    "leadStatus": "Estatutu Xefe",
+    "protectedUntil": "Protejidu To'o",
+    "referral": "Referénsia",
+    "reason": "Razaun: {{reason}}",
+    "booking": "Rezervasaun",
+    "bookedOwner": "Rezerva ona - ita-boot maka na'in operasionál",
+    "notBooked": "Seidauk rezerva",
+    "sharedAfterBooking": "Fahe hafoin halo rezerva",
+    "accept": "Simu Referénsia",
+    "confirmBooking": "Konfirma Rezervasaun",
+    "reject": "Rejeita Referénsia",
+    "rejectReasonLabel": "Razaun atu rejeita (hatudu ba parseiru) *",
+    "rejectConfirm": "Rejeita",
+    "confirmBookingPrompt": "Konfirma rezervasaun? Propriedade operasionál muda ba ita-boot no parseiru sai elizivel ba komisaun.",
+    "notice": {
+      "booked": "Rezerva konfirmadu ona.",
+      "accepted": "Referál aseita ona.",
+      "rejected": "Referénsia rejeitadu."
+    },
+    "backToReferrals": "Fila fali ba Referénsia sira"
+  },
+  "history": {
+    "title": "Istória",
+    "actor": {
+      "system": "Sistema",
+      "partner": "Parseiru kanál",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Rejistu parseiru nian simu ona",
+      "DUPLICATE_CHECK_COMPLETED": "Verifikasaun duplikadu kompleta ona - laiha duplikadu ativu ne'ebé hetan",
+      "REGISTRATION_ACCEPTED": "Rejistu simu ona",
+      "PROTECTION_GRANTED_one": "{{count}} -loron protesaun ne'ebé fó",
+      "PROTECTION_GRANTED_other": "{{count}} -loron protesaun ne'ebé fó",
+      "STAGE_UPDATED": "Estatutu atualiza ona ba {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Atualiza ona kampu {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "Atualiza ona kampu {{count}}",
+      "LEAD_ASSIGNED": "Atribui ba {{name}}",
+      "LEAD_UNASSIGNED": "La atribui",
+      "REFERRAL_ACCEPTED": "Konstrutór simu referénsia",
+      "REFERRAL_REJECTED": "Konstrutór rejeita referénsia. Razaun: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Tentativa rejistu duplikadu husi {{partner}} rejeitadu",
+      "BOOKING_COMPLETED": "Rezervasaun kompletu ona",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Propriedade operasionál transfere ba Konstrutór",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribuisaun parseiru nian prezerva ona",
+      "COMMISSION_ELIGIBILITY_CREATED": "Elijibilidade ba komisaun kria ona",
+      "HANDOVER_COMPLETED": "Entrega kompletu ona",
+      "ADMIN_PROTECTION_RELEASED": "Admin fó sai protesaun duplikadu antes. Razaun: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin atribui fali rejistu husi {{from}} ba {{to}} . Razaun: {{reason}}"
+    }
+  }
+}

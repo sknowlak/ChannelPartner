@@ -1,0 +1,60 @@
+{
+  "list": {
+    "title": "Rakentajat ja projektit",
+    "hint": "Rakentajat kirjautuvat sisään rakentajaportaaliin hyväksyäkseen viitteitä projekteihinsä ja vahvistaakseen varauksia.",
+    "newOrg": "Uusi rakentajaorganisaatio",
+    "namePlaceholder": "esim. Prestige Group",
+    "add": "Lisää Builder",
+    "columns": {
+      "builder": "Rakentaja",
+      "status": "Status",
+      "users": "Käyttäjät",
+      "projects": "Projektit"
+    },
+    "empty": "Ei vielä rakentajia."
+  },
+  "detail": {
+    "deactivateHint": "Deaktivointi kirjaa jokaisen tämän rakentajan käyttäjän ulos välittömästi.",
+    "deactivate": "Poista käytöstä",
+    "activate": "Aktivoida",
+    "usersTitle": "Portaalin käyttäjät",
+    "userColumns": {
+      "name": "Nimi",
+      "email": "Sähköposti",
+      "status": "Status",
+      "lastLogin": "Viimeisin kirjautuminen",
+      "actions": "Toiminnot"
+    },
+    "resetPassword": "Palauta salasana",
+    "resetPrompt": "Uusi salasana käyttäjälle {{name}} (vähintään 8 merkkiä). Ne kirjataan ulos kaikkialta.",
+    "passwordReset": "Salasanan uusiminen käyttäjälle {{name}} .",
+    "noUsers": "Ei käyttäjiä vielä.",
+    "userForm": {
+      "name": "Nimi",
+      "email": "Sähköposti",
+      "initialPassword": "Alkuperäinen salasana (8+)",
+      "add": "Lisää käyttäjä",
+      "added": "Lisätty {{name}} ."
+    },
+    "projectsTitle": "Projektit",
+    "projectsHint": "Kumppanit valitsevat aktiivisista projekteista rekisteröidessään liidin; viittaus menee tälle rakentajalle.",
+    "projectColumns": {
+      "code": "Koodi",
+      "name": "Nimi",
+      "city": "Kaupunki",
+      "status": "Status",
+      "actions": "Toiminnot"
+    },
+    "closeReferrals": "Sulje viittauksille",
+    "reopen": "Avaa uudelleen",
+    "noProjects": "Ei vielä projekteja.",
+    "projectForm": {
+      "code": "Koodi, esim. PROJEKTI-A",
+      "name": "Nimi",
+      "city": "Kaupunki (valinnainen)",
+      "add": "Lisää projekti",
+      "created": "Luotu {{name}} ."
+    },
+    "back": "Takaisin Buildersiin"
+  }
+}

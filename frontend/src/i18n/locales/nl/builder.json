@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Bouwersportaal",
+    "referrals": "Verwijzingen",
+    "builderLogin": "Bouwer Inloggen",
+    "partnerLogin": "Inloggen kanaalpartner"
+  },
+  "login": {
+    "title": "Aanmelden voor bouwer",
+    "hint": "Builder-accounts worden aangemaakt door Leadrat . Vraag uw beheerder als u er geen heeft."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Wachten op uw beslissing",
+    "ACCEPTED": "Geaccepteerd",
+    "REJECTED": "Afgewezen"
+  },
+  "list": {
+    "title": "Verwijzingen",
+    "allProjects": "Alle projecten",
+    "allStatuses": "Alle statussen",
+    "count_one": "{{count}} verwijzing",
+    "count_other": "{{count}} verwijzingen",
+    "columns": {
+      "referral": "Verwijzing",
+      "customer": "Klant",
+      "project": "Project",
+      "sourcePartner": "Bronpartner",
+      "status": "Status",
+      "booking": "Boeking",
+      "registered": "Geregistreerd"
+    },
+    "booked": "Geboekt",
+    "empty": "Nog geen verwijzingen."
+  },
+  "detail": {
+    "customer": "Klant",
+    "sourcePartner": "Bronpartner",
+    "attributionNote": "(toeschrijving - kan niet worden gewijzigd)",
+    "leadStatus": "Leadstatus",
+    "protectedUntil": "Beschermd tot",
+    "referral": "Verwijzing",
+    "reason": "Reden: {{reason}}",
+    "booking": "Boeking",
+    "bookedOwner": "Geboekt - u bent de operationele eigenaar",
+    "notBooked": "Niet geboekt",
+    "sharedAfterBooking": "Gedeeld na boeking",
+    "accept": "Accepteer verwijzing",
+    "confirmBooking": "Bevestig boeking",
+    "reject": "Verwijzing afwijzen",
+    "rejectReasonLabel": "Reden van afwijzing (aan de partner getoond) *",
+    "rejectConfirm": "Afwijzen",
+    "confirmBookingPrompt": "Bevestig de boeking? Het operationele eigendom gaat naar u over en de partner komt in aanmerking voor commissie.",
+    "notice": {
+      "booked": "Boeking bevestigd.",
+      "accepted": "Verwijzing geaccepteerd.",
+      "rejected": "Verwijzing afgewezen."
+    },
+    "backToReferrals": "Terug naar Verwijzingen"
+  },
+  "history": {
+    "title": "Geschiedenis",
+    "actor": {
+      "system": "Systeem",
+      "partner": "Kanaalpartner",
+      "admin": "Leadrat beheerder"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Partnerregistratie ontvangen",
+      "DUPLICATE_CHECK_COMPLETED": "Duplicaatcontrole voltooid - geen actief duplicaat gevonden",
+      "REGISTRATION_ACCEPTED": "Registratie geaccepteerd",
+      "PROTECTION_GRANTED_one": "{{count}} -dag bescherming verleend",
+      "PROTECTION_GRANTED_other": "{{count}} -dag bescherming verleend",
+      "STAGE_UPDATED": "Status geüpdatet naar {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Veld van {{count}} bijgewerkt",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} velden bijgewerkt",
+      "LEAD_ASSIGNED": "Toegewezen aan {{name}}",
+      "LEAD_UNASSIGNED": "Niet toegewezen",
+      "REFERRAL_ACCEPTED": "Bouwer accepteerde de verwijzing",
+      "REFERRAL_REJECTED": "Bouwer heeft de verwijzing afgewezen. Reden: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Dubbele registratiepoging van {{partner}} afgewezen",
+      "BOOKING_COMPLETED": "Boeking voltooid",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operationeel eigendom overgedragen aan Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partnerattributie behouden",
+      "COMMISSION_ELIGIBILITY_CREATED": "Geschiktheid voor commissie gecreëerd",
+      "HANDOVER_COMPLETED": "Overdracht voltooid",
+      "ADMIN_PROTECTION_RELEASED": "De beheerder heeft de dubbele bescherming vroegtijdig vrijgegeven. Reden: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "De beheerder heeft de registratie opnieuw toegewezen van {{from}} naar {{to}} . Reden: {{reason}}"
+    }
+  }
+}

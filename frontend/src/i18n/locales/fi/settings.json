@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Asetukset",
+    "noPermission": "Sinulla ei ole lupaa hallita asetuksia."
+  },
+  "categories": {
+    "lead": "Johtaa",
+    "user": "Käyttäjä",
+    "integrations": "Integraatiot"
+  },
+  "leadTabs": {
+    "fields": "Kentät",
+    "statuses": "Tilat ja alitilat",
+    "notifications": "Ilmoitukset ja aikataulut"
+  },
+  "fields": {
+    "leadIntro": "Määritä liidien keräyslomake: ota kentät käyttöön/poista käytöstä, merkitse ne pakollisiksi tai lisää omia mukautettuja kenttiä.",
+    "userIntro": "Määritä Lisää/muokkaa tiimin jäsentä -lomake: ota kentät käyttöön/poista käytöstä, merkitse ne pakollisiksi tai lisää omia mukautettuja kenttiä.",
+    "addCustomField": "+ Lisää mukautettu kenttä",
+    "fieldLabel": "Kentän etiketti",
+    "group": "ryhmä",
+    "groupPlaceholderLead": "esim. kyselytiedot",
+    "groupPlaceholderUser": "esim. Lisätiedot",
+    "dataType": "Tietotyyppi",
+    "options": "Vaihtoehdot (pilkuilla erotettuna)",
+    "requiredLead": "Pakollinen – tiimisi kumppaneiden on täytettävä tämä liidin rekisteröimiseksi",
+    "requiredUser": "Pakollinen - on täytettävä lisättäessä tiimin jäsentä",
+    "creating": "Luodaan...",
+    "createField": "Luo kenttä",
+    "columns": {
+      "field": "Ala",
+      "group": "ryhmä",
+      "type": "Tyyppi",
+      "required": "Pakollinen",
+      "enabled": "Käytössä",
+      "kind": "Ystävällinen"
+    },
+    "kind": {
+      "custom": "Mukautettu",
+      "core": "Ydin (lukittu)",
+      "standard": "Vakio"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Teksti",
+    "TEXTAREA": "Pitkä teksti",
+    "NUMBER": "Määrä",
+    "CURRENCY": "Valuutta",
+    "DATE": "Päivämäärä",
+    "SELECT": "Pudotusvalikko",
+    "LIST": "Lista"
+  },
+  "picker": {
+    "searchPlaceholder": "Hae liidikenttiä...",
+    "summary": "{{shown}} näkyy · {{mandatory}} pakollinen",
+    "mandatory": "Pakollinen",
+    "noMatch": "Ei vastaavia kenttiä."
+  },
+  "statuses": {
+    "intro": "Liidien tilat ja alitilat – mitä kukin pyytää (päivämäärä ja kellonaika, liidikentät), kun joku päivittää liidin siihen.",
+    "add": "+ Lisää tila",
+    "columns": {
+      "order": "Tilata",
+      "status": "Status",
+      "subStatuses": "Alatilat",
+      "asksFor": "Pyytää",
+      "active": "Aktiivinen"
+    },
+    "moveUp": "Siirrä ylös",
+    "moveDown": "Siirry alas",
+    "defaultBadge": "Uusien liidien oletusarvo",
+    "bookingBadge": "Varauksen tila",
+    "asksForLabel": "pyytää {{label}}",
+    "asksForDateTime": "Pyytää päivämäärää ja kellonaikaa",
+    "none": "Ei mitään",
+    "dateTime": "Päivämäärä ja aika",
+    "scheduledOn": "{{names}}",
+    "fieldsSummary_one": "{{count}} kenttä ( {{mandatory}} pakollinen)",
+    "fieldsSummary_other": "{{count}} kenttää ( {{mandatory}} pakollista)",
+    "deleteConfirm": "Poistetaanko tila \" {{name}} \"? Tätä ei voi kumota.",
+    "editTitle": "Muokkaa tilaa - {{name}}",
+    "newTitle": "Uusi tila",
+    "name": "Tilan nimi",
+    "colour": "Väri",
+    "active": "Aktiivinen",
+    "isDefault": "Uusien liidien oletustila",
+    "isBooking": "Varauksen tila (asettaa Täydellinen varaus)",
+    "whenMoved": "Kun liidi siirretään tähän tilaan",
+    "askSchedule": "Pyydä päivämäärä ja aika (aikataulu)",
+    "scheduleLabelPlaceholder": "Etiketti, esim. Vieraile osoitteessa",
+    "fieldsToShow": "Päivityslomakkeessa näytettävät liidikentät",
+    "subStatusesTitle": "Alatilat",
+    "subStatusesHint": "Jokainen alitila voi pyytää omaa päivämäärää ja kellonaikaa ja lisätä omat kenttinsä - näytetään yllä olevien tilan kenttien päällä.",
+    "subStatusName": "Alitilan nimi",
+    "subFields": "Kentät ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Päivämäärä- ja aikamerkintä, esim. Soita takaisin p",
+    "addSubStatus": "+ Lisää alitila",
+    "saveStatus": "Tallenna tila",
+    "createStatus": "Luo tila"
+  },
+  "notifications": {
+    "intro": "Ilmoita oikeille ihmisille, kun liidi saavuttaa tilan - välittömästi tai tietyn ajan ennen/jälkeen sille ajoitetun päivämäärän ja kellonajan.",
+    "add": "+ Lisää ilmoitus",
+    "columns": {
+      "notification": "Ilmoitus",
+      "whenStatusIs": "Kun tila on",
+      "sends": "Lähettää",
+      "to": "Vastaanottaja",
+      "via": "Kautta",
+      "enabled": "Käytössä"
+    },
+    "anyStatus": "Mikä tahansa tila",
+    "anySubStatus": "Mikä tahansa alitila",
+    "inactiveOption": "{{name}} (ei-aktiivinen)",
+    "emptyRules": "Ei vielä ilmoituksia – lisää ilmoitus, jotta voit ilmoittaa tiimillesi, kun liidi saavuttaa tilan.",
+    "jobs": {
+      "title": "Ajoitettu ja lähetetty",
+      "firesAt": "Tulipalot klo",
+      "notification": "Ilmoitus",
+      "lead": "Johtaa",
+      "status": "Status",
+      "details": "Yksityiskohdat",
+      "empty": "Mitään ei ole vielä ajoitettu tai lähetetty.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Odottaa",
+      "PROCESSING": "Käsittely",
+      "SENT": "Lähetetty",
+      "FAILED": "Epäonnistui",
+      "SKIPPED": "Ohitettu",
+      "CANCELLED": "Peruutettu"
+    },
+    "deliveryStatus": {
+      "SENT": "lähetetty",
+      "FAILED": "epäonnistunut",
+      "SKIPPED": "ohitettu"
+    },
+    "deliveryChannel": {
+      "IN_APP": "sovelluksen sisällä",
+      "EMAIL": "sähköposti",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Määritetty käyttäjä",
+      "owner": "Omistaja",
+      "updatedBy": "Päivitti",
+      "role": "Rooli: {{name}}"
+    },
+    "channels": {
+      "inApp": "Sovelluksen sisällä",
+      "email": "Sähköposti",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Poistetaanko ilmoitus \" {{name}} \"? Sen odottavat muistutukset peruutetaan.",
+    "testPrompt": "Lähetä tämän ilmoituksen testi itsellesi (sovelluksen sisällä) millä ID ?",
+    "testSent": "Lähetetty kellosi: {{title}} {{message}}",
+    "headersInvalid": "Webhook otsikoiden on oltava kelvollisia JSON , esim. {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Muokkaa ilmoitusta",
+    "newTitle": "Uusi ilmoitus",
+    "name": "Nimi",
+    "namePlaceholder": "esim. sivuston vierailumuistutus",
+    "whenStatus": "Kun liidin tila on",
+    "subStatus": "Alatila",
+    "send": "Lähetä (aikataulu)",
+    "custom": "Mukautettu...",
+    "modeBefore": "ennen sovittua aikaa",
+    "modeAfter": "sovitun ajan jälkeen",
+    "noScheduleWarning": "Tämä tila ei kysy päivämäärää ja aikaa, joten \"ennen/at/jälkeen\" -ilmoitus ei koskaan käynnisty.",
+    "noScheduleFix": "Ota käyttöön <strong>Pyydä päivämäärää ja kellonaikaa</strong> kohdassa Tilat ja alatilat tai lähetä heti.",
+    "sendTo": "Lähetä (mikä tahansa yhdistelmä)",
+    "recipientAssigned": "Määrätty käyttäjä (pääomistaja)",
+    "recipientOwner": "Tilin omistaja / järjestelmänvalvoja",
+    "recipientUpdatedBy": "Henkilö, joka päivitti tilan",
+    "everyoneWithRole": "Kaikki roolissaan",
+    "specificUsers": "Tietyt käyttäjät (aktiiviset)",
+    "inactiveNever": "Ei-aktiiviset käyttäjät eivät koskaan saa ilmoituksia, vaikka ne olisivat valittuina.",
+    "deliverVia": "Toimita kautta",
+    "channelInApp": "Sovelluksen sisäinen (kello)",
+    "channelEmail": "Sähköposti",
+    "channelWebhook": "Webhook ( WhatsApp / SMS palveluntarjoaja)",
+    "emailHint": "Sähköposti menee kunkin vastaanottajan sähköpostiosoitteeseen ja vaatii SMTP:n määrityksen palvelimelle (backend/.env); siihen asti sähköpostin lähetykset kirjataan ohitettuina.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Otsikot ( JSON )",
+    "content": "Ilmoituksen sisältö",
+    "title": "Otsikko",
+    "message": "Viesti",
+    "insertIntoTitle": "Lisää otsikkoon",
+    "insertIntoMessage": "Lisää viestiin",
+    "anyLeadField": "Myös mikä tahansa liidikenttä toimii, esim. <code1>{{example1}}</code1> tai <code2>{{example2}}</code2> .",
+    "preview": "Esikatselu (näytejohto)",
+    "enabled": "Käytössä",
+    "saveRule": "Tallenna ilmoitus",
+    "createRule": "Luo ilmoitus",
+    "variables": {
+      "customerName": "Johdon nimi",
+      "customerMobile": "Johda mobiili",
+      "customerEmail": "Pääsähköposti",
+      "registrationId": "Liidin ID",
+      "status": "Status",
+      "subStatus": "Alatila",
+      "scheduleAt": "Suunniteltu päivämäärä ja aika",
+      "assignedTo": "Määritetty käyttäjä",
+      "updatedBy": "Päivitti",
+      "recipient": "Vastaanottajan nimi",
+      "project": "Projekti",
+      "notes": "Viimeisin muistiinpano",
+      "partner": "Kumppanin nimi"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Heti kun tila on asetettu",
+      "AT": "sovittuna aikana",
+      "A1D": "1 päivä aikataulun jälkeen (seurantatarkastus)"
+    },
+    "immediately": "Heti",
+    "atScheduled": "Suunniteltuun aikaan",
+    "before": {
+      "MINUTES_one": "{{count}} minuuttia ennen suunniteltua aikaa",
+      "MINUTES_other": "{{count}} minuuttia ennen suunniteltua aikaa",
+      "HOURS_one": "{{count}} tuntia ennen suunniteltua aikaa",
+      "HOURS_other": "{{count}} tuntia ennen suunniteltua aikaa",
+      "DAYS_one": "{{count}} päivää ennen suunniteltua aikaa",
+      "DAYS_other": "{{count}} päivää ennen suunniteltua aikaa",
+      "WEEKS_one": "{{count}} viikkoa ennen suunniteltua aikaa",
+      "WEEKS_other": "{{count}} viikkoa ennen suunniteltua aikaa",
+      "MONTHS_one": "{{count}} kuukautta ennen suunniteltua aikaa",
+      "MONTHS_other": "{{count}} kuukautta ennen suunniteltua aikaa",
+      "YEARS_one": "{{count}} vuotta ennen suunniteltua aikaa",
+      "YEARS_other": "{{count}} vuotta ennen suunniteltua aikaa"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minuuttia aikataulun jälkeen",
+      "MINUTES_other": "{{count}} minuuttia aikataulun jälkeen",
+      "HOURS_one": "{{count}} tuntia aikataulun jälkeen",
+      "HOURS_other": "{{count}} tuntia aikataulun jälkeen",
+      "DAYS_one": "{{count}} päivää aikataulun jälkeen",
+      "DAYS_other": "{{count}} päivää aikataulun jälkeen",
+      "WEEKS_one": "{{count}} viikkoa aikataulun jälkeen",
+      "WEEKS_other": "{{count}} viikkoa aikataulun jälkeen",
+      "MONTHS_one": "{{count}} kuukautta aikataulun jälkeen",
+      "MONTHS_other": "{{count}} kuukautta aikataulun jälkeen",
+      "YEARS_one": "{{count}} vuotta aikataulun jälkeen",
+      "YEARS_other": "{{count}} vuotta aikataulun jälkeen"
+    },
+    "units": {
+      "MINUTES_one": "minuutti",
+      "MINUTES_other": "minuuttia",
+      "HOURS_one": "tunnin",
+      "HOURS_other": "tuntia",
+      "DAYS_one": "päivä",
+      "DAYS_other": "päivää",
+      "WEEKS_one": "viikko",
+      "WEEKS_other": "viikkoa",
+      "MONTHS_one": "kuukausi",
+      "MONTHS_other": "kuukautta",
+      "YEARS_one": "vuosi",
+      "YEARS_other": "vuotta"
+    }
+  }
+}

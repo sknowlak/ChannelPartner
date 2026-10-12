@@ -1,0 +1,96 @@
+{
+  "shell": {
+    "portal": "Portál staviteľov",
+    "referrals": "Odporúčania",
+    "builderLogin": "Prihlásenie staviteľa",
+    "partnerLogin": "Prihlásenie partnera kanála"
+  },
+  "login": {
+    "title": "Prihláste sa staviteľom",
+    "hint": "Účty staviteľov vytvára Leadrat . Ak ho nemáte, spýtajte sa správcu."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Čakanie na vaše rozhodnutie",
+    "ACCEPTED": "Prijaté",
+    "REJECTED": "Odmietnuté"
+  },
+  "list": {
+    "title": "Odporúčania",
+    "allProjects": "Všetky projekty",
+    "allStatuses": "Všetky stavy",
+    "count_one": "{{count}} odporúčanie",
+    "count_few": "{{count}} odporúčaní",
+    "count_many": "{{count}} odporúčaní",
+    "count_other": "{{count}} odporúčaní",
+    "columns": {
+      "referral": "Odporúčanie",
+      "customer": "Zákazník",
+      "project": "Projekt",
+      "sourcePartner": "Zdrojový partner",
+      "status": "Stav",
+      "booking": "Rezervácia",
+      "registered": "Registrovaný"
+    },
+    "booked": "Rezervované",
+    "empty": "Zatiaľ žiadne odporúčania."
+  },
+  "detail": {
+    "customer": "Zákazník",
+    "sourcePartner": "Zdrojový partner",
+    "attributionNote": "(priradenie – nemožno zmeniť)",
+    "leadStatus": "Stav potenciálneho zákazníka",
+    "protectedUntil": "Chránené do",
+    "referral": "Odporúčanie",
+    "reason": "Dôvod: {{reason}}",
+    "booking": "Rezervácia",
+    "bookedOwner": "Rezervované - ste prevádzkovým vlastníkom",
+    "notBooked": "Nie je rezervované",
+    "sharedAfterBooking": "Zdieľané po rezervácii",
+    "accept": "Prijať odporúčanie",
+    "confirmBooking": "Potvrďte rezerváciu",
+    "reject": "Odmietnuť odporúčanie",
+    "rejectReasonLabel": "Dôvod odmietnutia (ukázaný partnerovi) *",
+    "rejectConfirm": "Odmietnuť",
+    "confirmBookingPrompt": "Potvrdiť rezerváciu? Prevádzkové vlastníctvo sa presunie na vás a partner získa nárok na províziu.",
+    "notice": {
+      "booked": "Rezervácia potvrdená.",
+      "accepted": "Odporúčanie prijaté.",
+      "rejected": "Odporúčanie bolo zamietnuté."
+    },
+    "backToReferrals": "Späť na Odporúčania"
+  },
+  "history": {
+    "title": "História",
+    "actor": {
+      "system": "systém",
+      "partner": "Kanálový partner",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Prijatá registrácia partnera",
+      "DUPLICATE_CHECK_COMPLETED": "Kontrola duplikátov dokončená – nenašiel sa žiadny aktívny duplikát",
+      "REGISTRATION_ACCEPTED": "Registrácia prijatá",
+      "PROTECTION_GRANTED_one": "{{count}} -dňová ochrana udelená",
+      "PROTECTION_GRANTED_few": "{{count}} -dňová ochrana udelená",
+      "PROTECTION_GRANTED_many": "{{count}} -dňová ochrana udelená",
+      "PROTECTION_GRANTED_other": "{{count}} -dňová ochrana udelená",
+      "STAGE_UPDATED": "Stav bol aktualizovaný na {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Aktualizované pole {{count}}",
+      "LEAD_DETAILS_UPDATED_few": "Aktualizované polia: {{count}}",
+      "LEAD_DETAILS_UPDATED_many": "Aktualizované polia: {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "Aktualizované polia: {{count}}",
+      "LEAD_ASSIGNED": "Pridelené používateľovi {{name}}",
+      "LEAD_UNASSIGNED": "Nepriradené",
+      "REFERRAL_ACCEPTED": "Stavebník prijal odporúčanie",
+      "REFERRAL_REJECTED": "Stavebník odporúčanie odmietol. Dôvod: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Duplicitný pokus o registráciu od {{partner}} bol zamietnutý",
+      "BOOKING_COMPLETED": "Rezervácia dokončená",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Prevádzkové vlastníctvo prevedené na Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribúcia partnera je zachovaná",
+      "COMMISSION_ELIGIBILITY_CREATED": "Oprávnenosť Komisie vytvorená",
+      "HANDOVER_COMPLETED": "Odovzdanie dokončené",
+      "ADMIN_PROTECTION_RELEASED": "Administrátor predčasne uvoľnil ochranu proti duplicite. Dôvod: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Administrátor zmenil pridelenie registrácie z {{from}} na {{to}} . Dôvod: {{reason}}"
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "list": {
+    "title": "私のリード",
+    "signedInAs": "{{name}} ( {{partnerId}} ) としてサインインしています · 時刻は{{timezone}}で表示されます",
+    "addLead": "+ リードを追加",
+    "tabs": {
+      "all": "すべて ( {{count}} )",
+      "pending": "保留中 ( {{count}} )",
+      "booked": "予約済み ( {{count}} )"
+    },
+    "searchPlaceholder": "名前、携帯電話、または登録IDで検索...",
+    "manageColumns": "列の管理",
+    "rowsPerPage": "ページあたりの行数",
+    "registrationId": "登録ID",
+    "emptyState": "まだリードがありません - 最初のリードを登録してください。",
+    "noMatch": "これらのフィルターに一致するリードはありません。",
+    "showing": "{{total}}件中{{from}} ～ {{to}}件を表示しています",
+    "actions": {
+      "preview": "プレビューとクイックアップデート",
+      "history": "歴史",
+      "email": "電子メール",
+      "whatsapp": "WhatsApp",
+      "call": "電話"
+    },
+    "pagination": {
+      "first": "最初のページ",
+      "previous": "前のページへ",
+      "next": "次のページ",
+      "last": "最後のページ"
+    }
+  },
+  "columns": {
+    "status": "状態",
+    "assignTo": "割り当て先",
+    "booked": "予約済み",
+    "protectionUntil": "までの保護"
+  },
+  "booking": {
+    "booked": "予約済み",
+    "pending": "保留中"
+  },
+  "assign": {
+    "unassigned": "未割り当て",
+    "owner": "{{name}} (所有者)",
+    "inactive": "{{name}} (非アクティブ)",
+    "unknownUser": "不明なユーザー",
+    "assignedTo": "{{name}}に割り当てられました"
+  },
+  "form": {
+    "addTitle": "リードを追加する",
+    "editTitle": "リードの編集",
+    "noPermissionAdd": "リードを登録する権限がありません。",
+    "noPermissionEdit": "リードを編集する権限がありません。",
+    "selectPlaceholder": "選択してください...",
+    "commaSeparated": "カンマ区切り",
+    "phonePlaceholder": "電話番号",
+    "countryCode": "国コード"
+  },
+  "project": {
+    "none": "まだプロジェクトがありません（参照されていません）",
+    "notInList": "{{project}} (プロジェクトリストにありません)"
+  },
+  "journey": {
+    "customer": "お客様",
+    "currentOwner": "現在の所有者",
+    "protectionExpiry": "保護の有効期限",
+    "leadStatus": "リードステータス",
+    "scheduled": "予定されている",
+    "assignedTo": "担当者",
+    "referral": "紹介",
+    "builderReason": "ビルダーの理由: {{reason}}",
+    "bookedHint": "建設業者によって予約されました - 運営上の所有権は建設業者に移動しました。あなたの帰属とコミッションの資格は保持されます。",
+    "notBookedHint": "建築業者が紹介を受け入れると、予約が確定します。",
+    "quickUpdate": "クイックアップデート",
+    "leadDetails": "リードの詳細",
+    "progressHistory": "進捗履歴",
+    "timesIn": "( {{timezone}}の時間)",
+    "backToMyLeads": "私のリードに戻る",
+    "editLead": "リードの編集"
+  },
+  "referral": {
+    "NOT_REFERRED": "参照されない（プロジェクトがない）",
+    "PENDING_BUILDER": "ビルダーを待っています",
+    "ACCEPTED": "建築業者に受け入れられました",
+    "REJECTED": "施工業者に断られた"
+  },
+  "preview": {
+    "ariaLabel": "リードプレビュー",
+    "title": "リードプレビュー",
+    "source": "ソース",
+    "location": "位置",
+    "scheduled": "予定されている",
+    "registered": "登録済み",
+    "latestNote": "最新のノート",
+    "quickUpdate": "クイックアップデート",
+    "fullDetails": "詳細",
+    "editLead": "リードの編集",
+    "history": "歴史"
+  },
+  "quick": {
+    "assignedTo": "担当者",
+    "status": "状態",
+    "subStatus": "サブステータス",
+    "selectSubStatus": "サブステータスを選択...",
+    "none": "なし",
+    "scheduledAt": "に予定されています",
+    "localTime": "現地時間",
+    "note": "注記",
+    "notePlaceholder": "この電話/訪問で何が起こりましたか? (オプション)",
+    "updateStatus": "ステータスの更新",
+    "statusUpdated": "ステータスが更新されました",
+    "bookedLocked": "この見込み客は予約されています。ステータスはもう変更できません。",
+    "viewOnly": "この潜在顧客を表示することはできますが、あなたの役割はそれを更新できません。"
+  },
+  "history": {
+    "title": "履歴 - {{registrationId}}",
+    "tabs": {
+      "all": "全て",
+      "status": "状態",
+      "assignment": "割り当て",
+      "notes": "注意事項"
+    },
+    "doneBy": "{{actor}}によって行われました",
+    "system": "システム",
+    "platforms": {
+      "System": "システム",
+      "External": "外部の",
+      "Web": "ウェブ",
+      "Mobile": "携帯"
+    },
+    "added": "追加した",
+    "updated": "更新されました",
+    "empty": "（空の）",
+    "noHistory": "このカテゴリにはまだ履歴がありません。",
+    "fieldLabels": {
+      "stage": "状態",
+      "subStatus": "サブステータス",
+      "scheduledAt": "スケジュール",
+      "notes": "注意事項",
+      "assignedTo": "担当者"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "パートナー登録を受け付けました",
+      "DUPLICATE_CHECK_COMPLETED": "重複チェックが完了しました - アクティブな重複は見つかりませんでした",
+      "REGISTRATION_ACCEPTED": "登録受付中",
+      "PROTECTION_GRANTED_other": "{{count}}日間の保護が付与されました",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partnerId}}による重複登録の試行が拒否されました",
+      "LEAD_DETAILS_UPDATED_other": "{{count}}フィールドを更新しました",
+      "STAGE_UPDATED": "ステータスが{{status}}に更新されました",
+      "LEAD_ASSIGNED": "{{name}}に割り当てられました",
+      "LEAD_UNASSIGNED": "未割り当て",
+      "BOOKING_COMPLETED": "予約完了",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "運営上の所有権が Builder に譲渡される",
+      "PARTNER_ATTRIBUTION_PRESERVED": "パートナーの帰属が保持される",
+      "COMMISSION_ELIGIBILITY_CREATED": "コミッション資格が作成されました",
+      "HANDOVER_COMPLETED": "引き継ぎ完了",
+      "REFERRAL_ACCEPTED": "ビルダーは紹介を受け入れました",
+      "REFERRAL_REJECTED": "ビルダーは紹介を拒否しました。理由: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "管理者は重複保護を早期に解除しました。理由: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "管理者は登録を{{from}}から{{to}}に再割り当てしました。理由: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "列の管理",
+    "hint": "ドラッグして並べ替える · チェックして表示する",
+    "showAll": "すべて表示",
+    "resetDefault": "デフォルトにリセット"
+  },
+  "filters": {
+    "title": "フィルター",
+    "allProjects": "すべてのプロジェクト",
+    "any": "どれでも",
+    "noFields": "他のフィルター可能なフィールドはまだ有効になっていません ([設定] > [リード])。",
+    "clearAll": "すべてクリア"
+  },
+  "phone": {
+    "MISSING": "電話番号は必須です。",
+    "INVALID": "有効な電話番号を入力してください。",
+    "TOO_SHORT": "電話番号が短すぎます。",
+    "TOO_LONG": "電話番号が長すぎます。",
+    "INVALID_FOR_COUNTRY": "この電話番号は{{country}}では無効です。",
+    "COUNTRY_MISMATCH": "正しい国コードを選択してください。",
+    "NOT_MOBILE": "固定電話ではなく、携帯電話の番号を入力してください。"
+  }
+}

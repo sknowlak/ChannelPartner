@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Imitantikile",
+    "noPermission": "Tamuli na insambu sha kusunga ifipekanyo."
+  },
+  "categories": {
+    "lead": "Tungulula",
+    "user": "Kabomfya",
+    "integrations": "Ukubikwa pamo"
+  },
+  "leadTabs": {
+    "fields": "Impanga",
+    "statuses": "Imibele & Imibele iyinono",
+    "notifications": "Ifishibisho & Abapekanya Inshita"
+  },
+  "fields": {
+    "leadIntro": "Ukupanga fomu iyakukwata iyakutungulula: suminisheni/ukulesha ififulo, fibikeni ifilefwaikwa, nangu ukulundako ififulo fyenu ifyakubomfya.",
+    "userIntro": "Ukupanga fomu iya Kulundako/Ukwalula Umuntu wa Mu Bumba: suminisheni/ukulesha ififulo, fibikenipo ukuti filekabilwa, nangu ukulundako ififulo fyenu ifya pa lwenu.",
+    "addCustomField": "+ Lundako Umuputule Uwalinga",
+    "fieldLabel": "Icimanyililo ca mpanga",
+    "group": "Ibumba",
+    "groupPlaceholderLead": "icakumwenako Amashiwi ya kwipusha",
+    "groupPlaceholderUser": "icakumwenako Ifyalundwapo",
+    "dataType": "Umusango wa fyebo",
+    "options": "Ifyakusalapo (ifyapusanapusana)",
+    "requiredLead": "Ifilefwaikwa - ababomfi mwi bumba lyenu balingile ukulemba ifi pakuti balembele intungulushi",
+    "requiredUser": "Icilekabilwa - cifwile ukulembwa ilyo mulebikako umuntu mwi bumba",
+    "creating": "Ukupanga...",
+    "createField": "Panga Umuputule",
+    "columns": {
+      "field": "Mwibala",
+      "group": "Ibumba",
+      "type": "Umusango",
+      "required": "Icilefwaika",
+      "enabled": "Casuminishiwa",
+      "kind": "Umusango"
+    },
+    "kind": {
+      "custom": "Intambi",
+      "core": "Umutuntulu (uwakakilwe)",
+      "standard": "Icilangililo"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Ilembo",
+    "TEXTAREA": "Ifilembo ifitali",
+    "NUMBER": "Impendwa",
+    "CURRENCY": "Indalama",
+    "DATE": "Ubushiku",
+    "SELECT": "Ukukonkapo",
+    "LIST": "Ubutantiko"
+  },
+  "picker": {
+    "searchPlaceholder": "Fwayeni ififulo ifitungulula...",
+    "summary": "{{shown}} icalangishiwa · {{mandatory}} icacindama",
+    "mandatory": "Cipope",
+    "noMatch": "Tapali ififulo ifipaleneko."
+  },
+  "statuses": {
+    "intro": "Imibele yenu iya kutungulula na imitantikile iyinono - ifyo cila umo aipusha (ubushiku & inshita, ififulo fya kutungulula) ilyo umuntu alebwekeshapo ukutungulula kuli ci.",
+    "add": "+ Lundako Icifulo",
+    "columns": {
+      "order": "Ubutantiko",
+      "status": "Imibele",
+      "subStatuses": "Imibele iyinono",
+      "asksFor": "Ipusha",
+      "active": "Icilebombeka"
+    },
+    "moveUp": "Ukusenda pamulu",
+    "moveDown": "Ukusenda panshi",
+    "defaultBadge": "Icikonkelepo ku batungilila abapya",
+    "bookingBadge": "Umusango wa kubukila",
+    "asksForLabel": "Ipusha pa {{label}}",
+    "asksForDateTime": "Ipusha ubushiku ne nshita",
+    "none": "Takuli",
+    "dateTime": "Ubushiku ne nshita",
+    "scheduledOn": "pa {{names}}",
+    "fieldsSummary_one": "{{count}} umuputule ( {{mandatory}} uwacindama)",
+    "fieldsSummary_other": "{{count}} ifiputulwa ( {{mandatory}} ifyacindama)",
+    "deleteConfirm": "Fuuta icifulo \" {{name}} \"? Ici tekuti cibweshiwepo.",
+    "editTitle": "Yalula Imibele - {{name}}",
+    "newTitle": "Icifulo Icipya",
+    "name": "Ishina lya cifulo",
+    "colour": "Ilangi",
+    "active": "Icilebombeka",
+    "isDefault": "Umusango wa lyonse uwa batungilila abapya",
+    "isBooking": "Umusango wa kupekanya (uwabikwa ukupitila mu Kupekanya Kwakumanina)",
+    "whenMoved": "Ilyo umutungulushi asendwa kuli ici cifulo",
+    "askSchedule": "Busheni ubushiku ne nshita (uwapekanya)",
+    "scheduleLabelPlaceholder": "Icimanyililo, icakumwenako Tandalileni pa",
+    "fieldsToShow": "Ififulo fyakutungulula ifyakulangisha pa fomu iyakubwekeshapo",
+    "subStatusesTitle": "Imibele iyinono",
+    "subStatusesHint": "Cila cifulo kuti caipusha ubushiku bwa ciko ne nshita no kulundapo ififulo fya ciko - ifilangishiwa pa muulu wa fifulo fya cifulo pa muulu.",
+    "subStatusName": "Ishina lya cifulo icinono",
+    "subFields": "Ififulo ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Ubushiku ne nshita, icakumwenako, Ita na kabili pa",
+    "addSubStatus": "+ Lundako Icifulo Icinono",
+    "saveStatus": "Sunga icifulo",
+    "createStatus": "Panga Icifulo"
+  },
+  "notifications": {
+    "intro": "Shimikileni abantu abalinga ilyo umutungulushi afika pa cifulo - apo pene, nangu inshita iyatantikwa ilyo / panuma ya bushiku & inshita iyatantikwa pali wene.",
+    "add": "+ Lundako Icishibisho",
+    "columns": {
+      "notification": "Icishibisho",
+      "whenStatusIs": "Ilyo Umusango Uli",
+      "sends": "Ukutuma",
+      "to": "Ku",
+      "via": "Ukupitila",
+      "enabled": "Casuminishiwa"
+    },
+    "anyStatus": "Icifulo icili conse",
+    "anySubStatus": "Icifulo icili conse",
+    "inactiveOption": "{{name}} (ilyabula ukubomba)",
+    "emptyRules": "Tapali ifishibisho nomba - lundapo cimo icakucenjesha ibumba lyobe ilyo intungulushi yafika pa cifulo.",
+    "jobs": {
+      "title": "Ifyapekanishiwa & Ifyatuminwe",
+      "firesAt": "Imililo Pa",
+      "notification": "Icishibisho",
+      "lead": "Tungulula",
+      "status": "Imibele",
+      "details": "Ifyebo",
+      "empty": "Tapali icatantikwa nangu icatuminwe nomba.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Ukulolela",
+      "PROCESSING": "Ukubombelapo",
+      "SENT": "Tuma",
+      "FAILED": "Ukufilwa",
+      "SKIPPED": "Calundwako",
+      "CANCELLED": "Cakanshiwa"
+    },
+    "deliveryStatus": {
+      "SENT": "tuma",
+      "FAILED": "ukufilwa",
+      "SKIPPED": "icalundwako"
+    },
+    "deliveryChannel": {
+      "IN_APP": "muli app",
+      "EMAIL": "imeli",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Kabomfya uwapeelwa",
+      "owner": "Umwine",
+      "updatedBy": "Icalungishiwa na",
+      "role": "Umulimo: {{name}}"
+    },
+    "channels": {
+      "inApp": "Mu-app",
+      "email": "Imeli",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Fuuta icishibisho \" {{name}} \"? Ifibukisho ifilelolela ukufuma kuli ci fyafumiishiwapo.",
+    "testPrompt": "Tuma ukufwailisha kwa uku kwishibisha kuli iwe wine (mu-app) ukubomfya ID nshi iya kutungulula ?",
+    "testSent": "Ituminwe ku nsengo yenu: {{title}} {{message}}",
+    "headersInvalid": "Imitwe ya Webhook ilingile ukuba iyalinga JSON , icakumwenako {\"Ukusuminisha\": \"Uwatwala xyz\"}",
+    "editTitle": "Yalula Icishibisho",
+    "newTitle": "Icishibisho icipya",
+    "name": "Ishina",
+    "namePlaceholder": "icakumwenako icibukisho cakutandalila incende",
+    "whenStatus": "Ilyo umusango wa ntungulushi uli .",
+    "subStatus": "Icifulo icinono",
+    "send": "Tuma (uwatantika)",
+    "custom": "Intambi...",
+    "modeBefore": "ilyo inshita tailafika",
+    "modeAfter": "panuma ya nshita iyatantikwa",
+    "noScheduleWarning": "Ici cifulo tacipusha ubushiku ne nshita, kanshi \"ilyo / pa / panuma ya nshita iyatantikwa\" ukushibisha tekuti kucitepo.",
+    "noScheduleFix": "Isuleni <strong>Ipushe ubushiku ne nshita</strong> pe samba lya Imibele ne Mibele Iinono, nangu ukutuma Lyonse.",
+    "sendTo": "Tuma kuli (ukubikwa pamo ukuli konse)",
+    "recipientAssigned": "Umuntu uwapeelwa (umwine umukalamba)",
+    "recipientOwner": "Mwine wa akaunti / umukalamba",
+    "recipientUpdatedBy": "Umuntu uwalungike imibele",
+    "everyoneWithRole": "Umuntu onse uwakwata umulimo",
+    "specificUsers": "Ababomfya abaibela (ababomba)",
+    "inactiveNever": "Ababomfya abashabomba tabapokelela ifishibisho, nangula nga basalwa.",
+    "deliverVia": "Ukutwala ukupitila",
+    "channelInApp": "Mu-app (inyenjele)",
+    "channelEmail": "Imeli",
+    "channelWebhook": "Webhook (Umupeela wa SMS WhatsApp )",
+    "emailHint": "Imeli ilaya ku keyala ka imeli ka muntu umo umo kabili ilafwaya SMTP iyabikwa pa cifulo ca kutambishishapo (ukukonkapo / .env); ukufika ilyo ama email yatuma yalembwa nga ayapuutwamo.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Imitwe ( JSON )",
+    "content": "Ifilesangwa mu cishibisho",
+    "title": "Umutwe",
+    "message": "Imbila",
+    "insertIntoTitle": "Bikeni mu Mutwe",
+    "insertIntoMessage": "Bikeni mu Imbila",
+    "anyLeadField": "Iciputulwa conse icakutungulula nacibomba, icakumwenako <code1>{{example1}}</code1> nangu <code2>{{example2}}</code2> .",
+    "preview": "Ukumona (icilangililo ca kutungulula)",
+    "enabled": "Casuminishiwa",
+    "saveRule": "Sunga Icishibisho",
+    "createRule": "Panga Icishibisho",
+    "variables": {
+      "customerName": "Ishina lya kutungulula",
+      "customerMobile": "Ukutungulula foni",
+      "customerEmail": "Imeli iyatungulula",
+      "registrationId": "ID ya kutungulula",
+      "status": "Imibele",
+      "subStatus": "Icifulo icinono",
+      "scheduleAt": "Ubushiku ne nshita ifyatantikwa",
+      "assignedTo": "Kabomfya uwapeelwa",
+      "updatedBy": "Icalungishiwa na",
+      "recipient": "Ishina lya ulepokelela",
+      "project": "Icakucita",
+      "notes": "Icikomo ica nombaline",
+      "partner": "Ishina lya mubomfi"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Ilyo line fye ilyo umusango wabikwa",
+      "AT": "Pa nshita yatantikwa .",
+      "A1D": "Ubushiku bumo panuma ya nshita iyatantikwa (ukukonkapo ukuceeceeta)"
+    },
+    "immediately": "Nomba line",
+    "atScheduled": "Pa nshita iyatantikwa",
+    "before": {
+      "MINUTES_one": "{{count}} mineti ilyo inshita tailafika",
+      "MINUTES_other": "{{count}} amamineti ilyo inshita tailafika",
+      "HOURS_one": "{{count}} insa ilyo inshita tailafika",
+      "HOURS_other": "{{count}} amaawala ilyo inshita tailafika",
+      "DAYS_one": "{{count}} ubushiku ilyo inshita iyatantikwa tailafika",
+      "DAYS_other": "{{count}} inshiku ilyo inshita tailafika",
+      "WEEKS_one": "{{count}} umulungu umo ilyo inshita tailafika",
+      "WEEKS_other": "{{count}} imilungu ilyo inshita tailafika",
+      "MONTHS_one": "{{count}} umweshi ilyo inshita tailafika",
+      "MONTHS_other": "{{count}} imyeshi ilyo inshita tailafika",
+      "YEARS_one": "{{count}} umwaka ilyo inshita tailatantikwa",
+      "YEARS_other": "{{count}} imyaka ilyo inshita tailafika"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} mineti panuma ya nshita iyatantikwa",
+      "MINUTES_other": "{{count}} amamineti panuma ya nshita iyatantikwa",
+      "HOURS_one": "{{count}} insa panuma ya nshita iyatantikwa",
+      "HOURS_other": "{{count}} insa panuma ya nshita iyatantikwa",
+      "DAYS_one": "{{count}} ubushiku panuma ya nshita iyatantikwa",
+      "DAYS_other": "{{count}} inshiku panuma ya nshita iyatantikwa",
+      "WEEKS_one": "{{count}} umulungu panuma ya nshita iyatantikwa",
+      "WEEKS_other": "{{count}} imilungu panuma ya nshita iyatantikwa",
+      "MONTHS_one": "{{count}} umweshi panuma ya nshita iyatantikwa",
+      "MONTHS_other": "{{count}} imyeshi panuma ya nshita iyatantikwa",
+      "YEARS_one": "{{count}} umwaka panuma ya nshita iyatantikwa",
+      "YEARS_other": "{{count}} imyaka panuma ya nshita iyatantikwa"
+    },
+    "units": {
+      "MINUTES_one": "mineti",
+      "MINUTES_other": "ba mineti",
+      "HOURS_one": "insa",
+      "HOURS_other": "amaora",
+      "DAYS_one": "ubushiku",
+      "DAYS_other": "inshiku",
+      "WEEKS_one": "umulungu",
+      "WEEKS_other": "imilungu",
+      "MONTHS_one": "umwenshi",
+      "MONTHS_other": "imyeshi",
+      "YEARS_one": "umwaka",
+      "YEARS_other": "imyaka"
+    }
+  }
+}

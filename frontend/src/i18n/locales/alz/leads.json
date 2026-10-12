@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Telo para",
+    "signedInAs": "Mondo calu {{name}} ( {{partnerId}} ) · sawa ma nyutho i {{timezone}}",
+    "addLead": "+ Med telowic",
+    "tabs": {
+      "all": "Gi zo ( {{count}} )",
+      "pending": "Kuro ( {{count}} )",
+      "booked": "Jugoro ( {{count}} )"
+    },
+    "searchPlaceholder": "Say ku nying, simu, nyo ID mi goyo nying...",
+    "manageColumns": "Gwok dul",
+    "rowsPerPage": "Laini kubang pot karatasi",
+    "registrationId": "ID mi goyo nying",
+    "emptyState": "Lembe moko epe podi - kyewo nying peri mir acel.",
+    "noMatch": "Lembe moko ope ma rwate ku filter eni.",
+    "showing": "Nyuthu {{from}} - {{to}} pa {{total}} entries",
+    "actions": {
+      "preview": "Nen con man dwoko piny manyen pio pio",
+      "history": "Lembe macon",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Goyo"
+    },
+    "pagination": {
+      "first": "Pot karatasi mir acel",
+      "previous": "Pot karatasi mukadho",
+      "next": "Pot karatasi mukende",
+      "last": "Pot karatasi mir ajiki"
+    }
+  },
+  "columns": {
+    "status": "Rwom",
+    "assignTo": "Mi ni",
+    "booked": "Jugoro",
+    "protectionUntil": "Gwok nitundu"
+  },
+  "booking": {
+    "booked": "Jugoro",
+    "pending": "Podi"
+  },
+  "assign": {
+    "unassigned": "Jupoko ngo",
+    "owner": "{{name}} (Won)",
+    "inactive": "{{name}} (ma tiyo ngo)",
+    "unknownUser": "Jatic ma jungeye ngo",
+    "assignedTo": "Jupoko ni {{name}}"
+  },
+  "form": {
+    "addTitle": "Med telowic",
+    "editTitle": "Lok telowic",
+    "noPermissionAdd": "Ipe ku twero mi ketho nying dhanu.",
+    "noPermissionEdit": "Ipe ku twero mi loko lembe.",
+    "selectPlaceholder": "Londi...",
+    "commaSeparated": "Comma poko",
+    "phonePlaceholder": "Namba cim",
+    "countryCode": "Namba mi ngom"
+  },
+  "project": {
+    "none": "Tic moko epe podi (judwoko ngo)",
+    "notInList": "{{project}} (epe i kind tic)"
+  },
+  "journey": {
+    "customer": "Kastuma",
+    "currentOwner": "Won piny ma kawoni",
+    "protectionExpiry": "Kare pa Gwoko",
+    "leadStatus": "Kit pa jatel wi dhanu",
+    "scheduled": "Juyike",
+    "assignedTo": "Jumiyo ni",
+    "referral": "Referal",
+    "builderReason": "The lembe pa jayub ot: {{reason}}",
+    "bookedHint": "Juyike ku jayub ot - twero mi tic udok ibang jayub ot; lembe peri man twero peri mi tic jugwoko.",
+    "notBookedHint": "Ju ma giyiko ot giyio bookings ka giyio lembe ma juoro igi.",
+    "quickUpdate": "Medu manyen pio pio",
+    "leadDetails": "Lembe ma pire tek",
+    "progressHistory": "Lembe mukadho mi dongo",
+    "timesIn": "(sawa in {{timezone}} )",
+    "backToMyLeads": "Dok cen i telowic para",
+    "editLead": "Lok telowic"
+  },
+  "referral": {
+    "NOT_REFERRED": "Juoro ngo (project epe)",
+    "PENDING_BUILDER": "Kuru jayiku ot",
+    "ACCEPTED": "Juyio ku jagedo",
+    "REJECTED": "Jagedo okwero"
+  },
+  "preview": {
+    "ariaLabel": "Nen ma kwong",
+    "title": "Nen ma kwong",
+    "source": "Cakire",
+    "location": "Kabedo",
+    "scheduled": "Juyike",
+    "registered": "Jugoro nying",
+    "latestNote": "Lembe manyen",
+    "quickUpdate": "Medu manyen pio pio",
+    "fullDetails": "Lembe ceke",
+    "editLead": "Lok telowic",
+    "history": "Lembe macon"
+  },
+  "quick": {
+    "assignedTo": "Jumiyo ni",
+    "status": "Rwom",
+    "subStatus": "Kite ma piny",
+    "selectSubStatus": "Yer piny ma nok...",
+    "none": "Upe",
+    "scheduledAt": "Juyike i",
+    "localTime": "sawa mi kabedu",
+    "note": "Kano",
+    "notePlaceholder": "Ango ma utimere i lwongo / limo eni? (iromo weko)",
+    "updateStatus": "Medu lembe manyen",
+    "statusUpdated": "Kite ma judwoko kudu manyen",
+    "bookedLocked": "Lembe maeni ju goyo - kite pare dong jucopo loko ngo.",
+    "viewOnly": "Icopo neno telowic eni, ento tic peri copo medo ngo."
+  },
+  "history": {
+    "title": "Lembe mukadho - {{registrationId}}",
+    "tabs": {
+      "all": "Ceke",
+      "status": "Rwom",
+      "assignment": "Tic atima",
+      "notes": "Lembe"
+    },
+    "doneBy": "Jutimo ku {{actor}}",
+    "system": "Kite mi time lembe",
+    "platforms": {
+      "System": "Kite mi time lembe",
+      "External": "Woko",
+      "Web": "Web",
+      "Mobile": "Simu"
+    },
+    "added": "umedu",
+    "updated": "judwoko manyen",
+    "empty": "(upe)",
+    "noHistory": "Lembe mukadho epe i dul eni podi.",
+    "fieldLabels": {
+      "stage": "Rwom",
+      "subStatus": "Kite ma piny",
+      "scheduledAt": "Nindo",
+      "notes": "Lembe",
+      "assignedTo": "Jumiyo ni"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Nwangu nying juwadi",
+      "DUPLICATE_CHECK_COMPLETED": "Chek ma judwoko wange udaru - ju nwango ngo ma judwoko wange ma tiyo",
+      "REGISTRATION_ACCEPTED": "Juyio kiewo nying",
+      "PROTECTION_GRANTED_one": "{{count}} -gwok pa ceng ma jumiyo",
+      "PROTECTION_GRANTED_other": "{{count}} -gwok pa ceng ma jumiyo",
+      "REGISTRATION_ATTEMPT_REJECTED": "Tembe mi goyo nying pa {{partnerId}} jukwero",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} ma juloko",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} ma juloko",
+      "STAGE_UPDATED": "Kite ma judwoko kudu ni {{status}}",
+      "LEAD_ASSIGNED": "Jupoko ni {{name}}",
+      "LEAD_UNASSIGNED": "Jupoko ngo",
+      "BOOKING_COMPLETED": "Kabedo uthum",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Wec pa tic judwoko ni jayiku ot",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Nying pa wadi jugwoko",
+      "COMMISSION_ELIGIBILITY_CREATED": "Bedo ku twero mi tic juyike",
+      "HANDOVER_COMPLETED": "Handover uthum",
+      "REFERRAL_ACCEPTED": "Jagedo uyio lembe ma juoro ire",
+      "REFERRAL_REJECTED": "Jagedo okwero lwongo ne. The lembe: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin uweko gwoko piny ma rom con. The lembe: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Jatel wi tic uloko rwom mi kiewo nying kud i {{from}} ni {{to}} . The lembe: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Gwok dul",
+    "hint": "Yer pi dwoko rwom · nen pi nyuthu",
+    "showAll": "Nyuth zo",
+    "resetDefault": "Dwok ni piny macon"
+  },
+  "filters": {
+    "title": "Filters",
+    "allProjects": "Tic ceke",
+    "any": "Moko",
+    "noFields": "Kabedo mange ma jucopu jwigo epe (Settings > Lead).",
+    "clearAll": "Wek zo"
+  },
+  "phone": {
+    "MISSING": "Namba cim mitere.",
+    "INVALID": "Kwayu kyewo namba cim maber.",
+    "TOO_SHORT": "Namba mi cim utiye nok akeca.",
+    "TOO_LONG": "Namba mi cim bor akeca.",
+    "INVALID_FOR_COUNTRY": "Namba cim eni epe pi {{country}} .",
+    "COUNTRY_MISMATCH": "Kwayu iyer namba mi ngom maber.",
+    "NOT_MOBILE": "Kwayu iketh namba peri mi cim, ento ungo namba mi cim."
+  }
+}

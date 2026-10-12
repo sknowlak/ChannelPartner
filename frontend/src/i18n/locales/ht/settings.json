@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Anviwònman",
+    "noPermission": "Ou pa gen pèmisyon pou jere paramèt yo."
+  },
+  "categories": {
+    "lead": "Plon",
+    "user": "Itilizatè",
+    "integrations": "Entegrasyon"
+  },
+  "leadTabs": {
+    "fields": "Jaden yo",
+    "statuses": "Estati & Sou-Eta",
+    "notifications": "Notifikasyon ak orè"
+  },
+  "fields": {
+    "leadIntro": "Konfigure fòm kaptire plon an: aktive / enfim jaden, make yo obligatwa, oswa ajoute pwòp jaden ou koutim.",
+    "userIntro": "Konfigure fòm Add/Edit Team Member: aktive/enfim jaden, make yo obligatwa, oswa ajoute pwòp jaden ou.",
+    "addCustomField": "+ Add Custom Field",
+    "fieldLabel": "Etikèt jaden",
+    "group": "Gwoup",
+    "groupPlaceholderLead": "pa egzanp enfòmasyon ankèt",
+    "groupPlaceholderUser": "egzanp Lòt Detay",
+    "dataType": "Kalite Done",
+    "options": "Opsyon (separe vigil)",
+    "requiredLead": "Obligatwa - patnè nan ekip ou a dwe ranpli sa a pou anrejistre yon plon",
+    "requiredUser": "Obligatwa - yo dwe ranpli lè w ap ajoute yon manm ekip la",
+    "creating": "Kreye...",
+    "createField": "Kreye jaden",
+    "columns": {
+      "field": "Jaden",
+      "group": "Gwoup",
+      "type": "Kalite",
+      "required": "Obligatwa",
+      "enabled": "Pèmèt",
+      "kind": "Janti"
+    },
+    "kind": {
+      "custom": "Custom",
+      "core": "Nwayo (fèmen)",
+      "standard": "Estanda"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Tèks",
+    "TEXTAREA": "Tèks long",
+    "NUMBER": "Nimewo",
+    "CURRENCY": "Lajan",
+    "DATE": "Dat",
+    "SELECT": "Dropdown",
+    "LIST": "Lis"
+  },
+  "picker": {
+    "searchPlaceholder": "Chèche jaden plon...",
+    "summary": "{{shown}} yo montre · {{mandatory}} obligatwa",
+    "mandatory": "Obligatwa",
+    "noMatch": "Pa gen okenn jaden matche ak."
+  },
+  "statuses": {
+    "intro": "Estati plon ou ak sou-estati - sa chak moun mande pou (yon dat ak lè, jaden plon) lè yon moun mete ajou yon plon nan li.",
+    "add": "+ Ajoute estati",
+    "columns": {
+      "order": "Lòd",
+      "status": "Estati",
+      "subStatuses": "Sou-Estati",
+      "asksFor": "Mande Pou",
+      "active": "Aktif"
+    },
+    "moveUp": "Deplase moute",
+    "moveDown": "Deplase desann",
+    "defaultBadge": "Default pou nouvo kondwi",
+    "bookingBadge": "Estati anrjistreman",
+    "asksForLabel": "Mande pou {{label}}",
+    "asksForDateTime": "Mande dat ak lè",
+    "none": "Okenn",
+    "dateTime": "Dat ak lè",
+    "scheduledOn": "sou {{names}}",
+    "fieldsSummary_one": "{{count}} jaden ( {{mandatory}} obligatwa)",
+    "fieldsSummary_other": "{{count}} jaden ( {{mandatory}} obligatwa)",
+    "deleteConfirm": "Efase estati \" {{name}} \"? Sa a pa ka defèt.",
+    "editTitle": "Edit estati - {{name}}",
+    "newTitle": "Nouvo Estati",
+    "name": "Non Estati",
+    "colour": "Koulè",
+    "active": "Aktif",
+    "isDefault": "Default estati pou nouvo kondwi",
+    "isBooking": "Estati anrjistreman (ki tabli pa anrjistreman konplè)",
+    "whenMoved": "Lè yon plon deplase nan estati sa a",
+    "askSchedule": "Mande yon dat ak lè (orè)",
+    "scheduleLabelPlaceholder": "Mete etikèt sou, egzanp Vizite nan",
+    "fieldsToShow": "Plon jaden yo montre sou fòm aktyalizasyon an",
+    "subStatusesTitle": "Sou-Estati",
+    "subStatusesHint": "Chak sou-estati ka mande pou pwòp dat ak lè li epi ajoute pwòp jaden pa yo - yo montre anlè jaden estati a pi wo a.",
+    "subStatusName": "Non sub-estati",
+    "subFields": "Jaden ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Dat ak lè etikèt, pa egzanp Rele tounen nan",
+    "addSubStatus": "+ Ajoute Sou-Estati",
+    "saveStatus": "Sove estati",
+    "createStatus": "Kreye estati"
+  },
+  "notifications": {
+    "intro": "Notifye moun ki dwat yo lè yon plon rive nan yon estati - imedyatman, oswa yon tan fiks anvan / apre dat ak lè pwograme sou li.",
+    "add": "+ Ajoute Notifikasyon",
+    "columns": {
+      "notification": "Notifikasyon",
+      "whenStatusIs": "Lè Estati Se",
+      "sends": "Voye",
+      "to": "Pou",
+      "via": "Via",
+      "enabled": "Pèmèt"
+    },
+    "anyStatus": "Nenpòt estati",
+    "anySubStatus": "Nenpòt sous-estati",
+    "inactiveOption": "{{name}} (inaktif)",
+    "emptyRules": "Pa gen okenn notifikasyon ankò - ajoute youn pou avèti ekip ou a lè yon plon rive nan yon estati.",
+    "jobs": {
+      "title": "Pwograme & Voye",
+      "firesAt": "Dife nan",
+      "notification": "Notifikasyon",
+      "lead": "Plon",
+      "status": "Estati",
+      "details": "Detay yo",
+      "empty": "Pa gen anyen ki pwograme oswa voye ankò.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "annatant",
+      "PROCESSING": "Pwosesis",
+      "SENT": "Voye",
+      "FAILED": "Echwe",
+      "SKIPPED": "Sote",
+      "CANCELLED": "Anile"
+    },
+    "deliveryStatus": {
+      "SENT": "voye",
+      "FAILED": "echwe",
+      "SKIPPED": "sote"
+    },
+    "deliveryChannel": {
+      "IN_APP": "nan-app",
+      "EMAIL": "imel",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Itilizatè plase",
+      "owner": "Pwopriyetè",
+      "updatedBy": "Mete ajou pa",
+      "role": "Wòl: {{name}}"
+    },
+    "channels": {
+      "inApp": "Nan-app",
+      "email": "Imèl",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Efase notifikasyon \" {{name}} \"? Rapèl ki annatant nan men li yo anile.",
+    "testPrompt": "Voye yon tès notifikasyon sa a pou tèt ou (nan-app) lè l sèvi avèk ki ID plon?",
+    "testSent": "Voye nan klòch ou a: {{title}} {{message}}",
+    "headersInvalid": "Tèt Webhook yo dwe valab JSON , pa egzanp {\"Otorizasyon\": \"Bearer xyz\"}",
+    "editTitle": "Edit Notifikasyon",
+    "newTitle": "Nouvo Notifikasyon",
+    "name": "Non",
+    "namePlaceholder": "eg rapèl vizit sit la",
+    "whenStatus": "Lè estati yon plon se",
+    "subStatus": "Sou-estati",
+    "send": "Voye (orè)",
+    "custom": "Custom...",
+    "modeBefore": "anvan lè pwograme",
+    "modeAfter": "apre lè pwograme",
+    "noScheduleWarning": "Estati sa a pa mande pou yon dat ak lè, kidonk yon notifikasyon \"anvan/nan/apre lè pwograme\" pa ta janm tire.",
+    "noScheduleFix": "Aktive <strong>Mande pou yon dat ak lè</strong> pou li anba Statuses & Sub-Statises, oswa voye imedyatman.",
+    "sendTo": "Voye bay (nenpòt konbinezon)",
+    "recipientAssigned": "Itilizatè ki asiyen (pwopriyetè prensipal)",
+    "recipientOwner": "Pwopriyetè kont / admin",
+    "recipientUpdatedBy": "Moun ki mete ajou estati a",
+    "everyoneWithRole": "Tout moun ki gen wòl",
+    "specificUsers": "Itilizatè espesifik (aktif)",
+    "inactiveNever": "Itilizatè ki inaktif pa janm resevwa notifikasyon, menm si yo chwazi yo.",
+    "deliverVia": "Livre via",
+    "channelInApp": "Nan aplikasyon (klòch)",
+    "channelEmail": "Imèl",
+    "channelWebhook": "Webhook (founisè WhatsApp / SMS )",
+    "emailHint": "Imèl ale nan adrès imel chak moun k ap resevwa a epi li bezwen SMTP mete sou sèvè a (backend/.env); jouk lè sa a voye imel yo konekte kòm sote.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Tèt ( JSON )",
+    "content": "Kontni notifikasyon",
+    "title": "Tit",
+    "message": "Mesaj",
+    "insertIntoTitle": "Mete nan Tit",
+    "insertIntoMessage": "Mete nan Mesaj",
+    "anyLeadField": "Nenpòt jaden plon travay tou, pa egzanp <code1>{{example1}}</code1> oswa <code2>{{example2}}</code2> .",
+    "preview": "Aperçu (echantiyon plon)",
+    "enabled": "Pèmèt",
+    "saveRule": "Sove Notifikasyon",
+    "createRule": "Kreye Notifikasyon",
+    "variables": {
+      "customerName": "Non plon",
+      "customerMobile": "Plon mobil",
+      "customerEmail": "Plon imèl",
+      "registrationId": "ID plon",
+      "status": "Estati",
+      "subStatus": "Sou-estati",
+      "scheduleAt": "Dat ak lè pwograme",
+      "assignedTo": "Itilizatè plase",
+      "updatedBy": "Mete ajou pa",
+      "recipient": "Non moun k ap resevwa a",
+      "project": "Pwojè",
+      "notes": "Dènye nòt",
+      "partner": "Non patnè"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Imedyatman lè yo mete estati a",
+      "AT": "Nan lè pwograme a",
+      "A1D": "1 jou apre lè pwograme (chèk swivi)"
+    },
+    "immediately": "Menm lè a",
+    "atScheduled": "Nan lè pwograme",
+    "before": {
+      "MINUTES_one": "{{count}} minit anvan lè pwograme a",
+      "MINUTES_other": "{{count}} minit anvan lè pwograme a",
+      "HOURS_one": "{{count}} èdtan anvan lè pwograme a",
+      "HOURS_other": "{{count}} èdtan anvan lè pwograme a",
+      "DAYS_one": "{{count}} jou anvan lè pwograme a",
+      "DAYS_other": "{{count}} jou anvan lè pwograme a",
+      "WEEKS_one": "{{count}} semèn anvan lè pwograme a",
+      "WEEKS_other": "{{count}} semèn anvan lè pwograme a",
+      "MONTHS_one": "{{count}} mwa anvan lè pwograme a",
+      "MONTHS_other": "{{count}} mwa anvan lè pwograme a",
+      "YEARS_one": "{{count}} ane anvan lè pwograme",
+      "YEARS_other": "{{count}} ane anvan lè pwograme"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minit apre lè pwograme",
+      "MINUTES_other": "{{count}} minit apre lè pwograme",
+      "HOURS_one": "{{count}} èdtan apre lè pwograme a",
+      "HOURS_other": "{{count}} èdtan apre lè pwograme a",
+      "DAYS_one": "{{count}} jou apre lè pwograme",
+      "DAYS_other": "{{count}} jou apre lè pwograme",
+      "WEEKS_one": "{{count}} semèn apre lè pwograme",
+      "WEEKS_other": "{{count}} semèn apre lè pwograme a",
+      "MONTHS_one": "{{count}} mwa apre lè pwograme",
+      "MONTHS_other": "{{count}} mwa apre lè pwograme",
+      "YEARS_one": "{{count}} ane apre lè pwograme",
+      "YEARS_other": "{{count}} ane apre lè pwograme"
+    },
+    "units": {
+      "MINUTES_one": "minit",
+      "MINUTES_other": "minit",
+      "HOURS_one": "èdtan",
+      "HOURS_other": "èdtan",
+      "DAYS_one": "jou",
+      "DAYS_other": "jou",
+      "WEEKS_one": "semèn",
+      "WEEKS_other": "semèn",
+      "MONTHS_one": "mwa",
+      "MONTHS_other": "mwa",
+      "YEARS_one": "ane",
+      "YEARS_other": "ane"
+    }
+  }
+}

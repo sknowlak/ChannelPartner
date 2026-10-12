@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Builder Portal",
+    "referrals": "Ուղղորդումներ",
+    "builderLogin": "Շինարարի մուտք",
+    "partnerLogin": "Ալիքի գործընկերոջ մուտք"
+  },
+  "login": {
+    "title": "Մուտք գործեք շինարար",
+    "hint": "Builder հաշիվները ստեղծվում են Leadrat կողմից: Հարցրեք ձեր ադմինիստրատորին, եթե չունեք:"
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Սպասում եմ ձեր որոշմանը",
+    "ACCEPTED": "Ընդունված է",
+    "REJECTED": "Մերժված է"
+  },
+  "list": {
+    "title": "Ուղղորդումներ",
+    "allProjects": "Բոլոր նախագծերը",
+    "allStatuses": "Բոլոր կարգավիճակները",
+    "count_one": "{{count}} ուղղորդում",
+    "count_other": "{{count}} ուղղորդումներ",
+    "columns": {
+      "referral": "Ուղղորդում",
+      "customer": "Հաճախորդ",
+      "project": "Նախագիծ",
+      "sourcePartner": "Աղբյուր գործընկեր",
+      "status": "Կարգավիճակ",
+      "booking": "Ամրագրում",
+      "registered": "Գրանցված է"
+    },
+    "booked": "Ամրագրված",
+    "empty": "Ուղղորդումներ դեռ չկան:"
+  },
+  "detail": {
+    "customer": "Հաճախորդ",
+    "sourcePartner": "Աղբյուր գործընկեր",
+    "attributionNote": "(վերագրում - չի կարող փոխվել)",
+    "leadStatus": "Առաջատարի կարգավիճակը",
+    "protectedUntil": "Պաշտպանված մինչև",
+    "referral": "Ուղղորդում",
+    "reason": "Պատճառը՝ {{reason}}",
+    "booking": "Ամրագրում",
+    "bookedOwner": "Ամրագրված - դուք գործառնական սեփականատերն եք",
+    "notBooked": "Ամրագրված չէ",
+    "sharedAfterBooking": "Համօգտագործվել է ամրագրումից հետո",
+    "accept": "Ընդունել ուղղորդումը",
+    "confirmBooking": "Հաստատեք ամրագրումը",
+    "reject": "Մերժել ուղղորդումը",
+    "rejectReasonLabel": "Մերժման պատճառը (ցույց է տրված գործընկերոջը) *",
+    "rejectConfirm": "Մերժել",
+    "confirmBookingPrompt": "Հաստատե՞լ ամրագրումը: Գործառնական սեփականության իրավունքը անցնում է ձեզ, և գործընկերը իրավասու է ստանալու միջնորդավճար:",
+    "notice": {
+      "booked": "Ամրագրումը հաստատված է:",
+      "accepted": "Ուղղորդումն ընդունված է:",
+      "rejected": "Ուղղորդումը մերժվել է։"
+    },
+    "backToReferrals": "Վերադարձ դեպի Ուղղորդումներ"
+  },
+  "history": {
+    "title": "Պատմություն",
+    "actor": {
+      "system": "Համակարգ",
+      "partner": "Ալիքի գործընկեր",
+      "admin": "Leadrat ադմին"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Գործընկերոջ գրանցումը ստացվել է",
+      "DUPLICATE_CHECK_COMPLETED": "Կրկնակի ստուգումն ավարտված է. ակտիվ կրկնօրինակ չի գտնվել",
+      "REGISTRATION_ACCEPTED": "Գրանցումն ընդունված է",
+      "PROTECTION_GRANTED_one": "{{count}} -օրվա պաշտպանությունը տրամադրված է",
+      "PROTECTION_GRANTED_other": "{{count}} -օրվա պաշտպանությունը տրամադրված է",
+      "STAGE_UPDATED": "Կարգավիճակը թարմացվել է {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Թարմացվել է {{count}} դաշտը",
+      "LEAD_DETAILS_UPDATED_other": "Թարմացվել է {{count}} դաշտ",
+      "LEAD_ASSIGNED": "Հանձնարարվել է {{name}}",
+      "LEAD_UNASSIGNED": "Չնշանակված",
+      "REFERRAL_ACCEPTED": "Շինարարն ընդունել է ուղեգիրը",
+      "REFERRAL_REJECTED": "Շինարարը մերժել է ուղեգիրը. Պատճառը՝ {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} ի կողմից գրանցման կրկնակի փորձը մերժվել է",
+      "BOOKING_COMPLETED": "Ամրագրումն ավարտված է",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Գործառնական սեփականությունը փոխանցվել է Շինարարին",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Գործընկերոջ վերագրումը պահպանվել է",
+      "COMMISSION_ELIGIBILITY_CREATED": "Ստեղծվել է հանձնաժողովի իրավասությունը",
+      "HANDOVER_COMPLETED": "Հանձնումն ավարտված է",
+      "ADMIN_PROTECTION_RELEASED": "Ադմինիստրատորը վաղաժամ թողարկեց կրկնօրինակ պաշտպանությունը: Պատճառը՝ {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Ադմինիստրատորը վերահանձնարարել է գրանցումը {{from}} -ից {{to}} ին: Պատճառը՝ {{reason}}"
+    }
+  }
+}

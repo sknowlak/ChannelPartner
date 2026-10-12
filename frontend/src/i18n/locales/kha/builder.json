@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Ka lynti jong u nongtei",
+    "referrals": "Ki jingphah",
+    "builderLogin": "Ka jingrung jong u nongtei",
+    "partnerLogin": "Ka jingrung jong u paralok jong ka channel"
+  },
+  "login": {
+    "title": "U nongtei u soi",
+    "hint": "Ia ki jingkhein jong ki nongshna la shna da Leadrat . Kylli ia u nongpyniaid jong phi lada phim don."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Ngi ap ia ka rai jong phi",
+    "ACCEPTED": "La pdiang",
+    "REJECTED": "La kyntait"
+  },
+  "list": {
+    "title": "Ki jingphah",
+    "allProjects": "Baroh ki projek",
+    "allStatuses": "Baroh ki kyrdan",
+    "count_one": "{{count}} jingphah",
+    "count_other": "{{count}} ki jingphah",
+    "columns": {
+      "referral": "Ka jingphah",
+      "customer": "Nongtheid",
+      "project": "Projek",
+      "sourcePartner": "U paralok tynrai",
+      "status": "Kyrdan",
+      "booking": "Ka jingbuh jaka",
+      "registered": "La pynrung kyrteng"
+    },
+    "booked": "La buh",
+    "empty": "Ym pat don ki jingpynkylla."
+  },
+  "detail": {
+    "customer": "Nongtheid",
+    "sourcePartner": "U paralok tynrai",
+    "attributionNote": "(ka jingpynpaw - ym lah ban pynkylla)",
+    "leadStatus": "Ka jinglong nongialam",
+    "protectedUntil": "La iada haduh 2020.",
+    "referral": "Ka jingphah",
+    "reason": "Ka daw: {{reason}}",
+    "booking": "Ka jingbuh jaka",
+    "bookedOwner": "La book - u dei u trai ba treikam",
+    "notBooked": "Ym shym la buh",
+    "sharedAfterBooking": "La iasam hadien ba la dep book",
+    "accept": "Pdiang ia ka jingphah",
+    "confirmBooking": "Pynthikna ia ka jingbuh jaka",
+    "reject": "Kyntait ia ka jingphah",
+    "rejectReasonLabel": "Ka daw jong ka jingkyntait (la pyni ha u paralok) * .",
+    "rejectConfirm": "Kyntait",
+    "confirmBookingPrompt": "Pynthikna ia ka jingpynbna? Ka jinglong trai treikam ka leit sha phi bad u paralok u kylla long uba bit ban ioh ia ka komishon.",
+    "notice": {
+      "booked": "La pynthikna ia ka jingbuh.",
+      "accepted": "La pdiang ia ka jingpynkylla.",
+      "rejected": "Ka jingpynkylla ka la shah kyntait."
+    },
+    "backToReferrals": "Phai biang sha ki jingpynkylla"
+  },
+  "history": {
+    "title": "Histori",
+    "actor": {
+      "system": "Ka rukom pyniaid",
+      "partner": "U paralok channel",
+      "admin": "Leadrat nongpyniaid"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "La pdiang ia ka jingpynrung kyrteng paralok",
+      "DUPLICATE_CHECK_COMPLETED": "La pyndep ia ka jingpeit bniah - ym shym la lap ia ka jingpynkylla kaba treikam",
+      "REGISTRATION_ACCEPTED": "La pdiang ia ka jingpynrung kyrteng",
+      "PROTECTION_GRANTED_one": "{{count}} -sngi iada la ai",
+      "PROTECTION_GRANTED_other": "{{count}} -sngi iada la ai",
+      "STAGE_UPDATED": "La pynthymmai ia ka jinglong sha {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "La pynthymmai ia ka {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "La pynthymmai {{count}} ki jaka",
+      "LEAD_ASSIGNED": "La ai sha {{name}}",
+      "LEAD_UNASSIGNED": "Bym shym la aiti",
+      "REFERRAL_ACCEPTED": "U nongtei u la pdiang ia ka jingai jingmut",
+      "REFERRAL_REJECTED": "U nongtei u la kyntait ia ka jingpynkylla. Ka daw: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Ka jingpyrshang ban pynrung kyrteng arsien da u {{partner}} la kyntait",
+      "BOOKING_COMPLETED": "La pyndep ia ka jingbuh jaka",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Ka jinglong trai ba treikam la pynkylla sha u Nongtei",
+      "PARTNER_ATTRIBUTION_PRESERVED": "La pynneh pynsah ia ka jingai jingmut jong u paralok",
+      "COMMISSION_ELIGIBILITY_CREATED": "La thaw ia ka jingbit ban ioh ia ka komishon",
+      "HANDOVER_COMPLETED": "La pyndep ia ka jingaiti",
+      "ADMIN_PROTECTION_RELEASED": "U Admin u la pyllait kloi ia ka jingiada kaba arsien. Ka daw: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "U Admin u la pynkylla ia ka jingpynrung kyrteng na {{from}} sha {{to}} . Ka daw: {{reason}}"
+    }
+  }
+}

@@ -8,21 +8,25 @@ import { initialLanguage, applyDocumentLanguage } from './language';
 // shared by every app, so the same concept never has two names.
 
 // Every JSON file under locales/<lang>/ is a namespace (file name =
-// namespace). Files are code-split and fetched only for the language in
-// use (plus English as the fallback), so offering 100+ languages doesn't
-// grow the initial download (section 55).
-const loaders = import.meta.glob('./locales/*/*.json');
-export const NAMESPACES = Object.keys(loaders)
-  .map((p) => /\.\/locales\/en\/([^/]+)\.json$/.exec(p)?.[1])
-  .filter(Boolean);
+// namespace). English is bundled (the fallback, always needed); any other
+// language is fetched as plain JSON from /locales/<lang>/<ns>.json only when
+// chosen, so offering 200+ languages doesn't grow the download or the build
+// (section 55; files emitted by tools/i18n/viteLocales.mjs).
+const english = import.meta.glob('./locales/en/*.json', { eager: true, import: 'default' });
+export const NAMESPACES = Object.keys(english).map((p) => /([^/]+)\.json$/.exec(p)[1]);
 
 const lazyBackend = {
   type: 'backend',
   init() {},
   read(language, namespace, callback) {
-    const load = loaders[`./locales/${language}/${namespace}.json`];
-    if (!load) return callback(null, {});
-    return load().then((mod) => callback(null, mod.default || mod), (err) => callback(err, false));
+    if (language === DEFAULT_LOCALE) return callback(null, english[`./locales/en/${namespace}.json`] || {});
+    return fetch(`${import.meta.env.BASE_URL}locales/${language}/${namespace}.json?v=${__I18N_VERSION__}`)
+      .then((res) => {
+        if (res.status === 404) return {};
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
+      .then((data) => callback(null, data), (err) => callback(err, false));
   }
 };
 

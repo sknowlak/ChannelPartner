@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Bouwportaal",
+    "referrals": "Verwiezinge",
+    "builderLogin": "Builder Login",
+    "partnerLogin": "Aanmelde veur kanaalpartner"
+  },
+  "login": {
+    "title": "Meld in vaan de bouwer",
+    "hint": "Builder-accounts were gemaak door Leadrat . Vraog eur administrateur of ge d’r gein heet."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Wach op eur beslissing",
+    "ACCEPTED": "Geaccepteerd",
+    "REJECTED": "Aafgeweze"
+  },
+  "list": {
+    "title": "Verwiezinge",
+    "allProjects": "Alle projekte",
+    "allStatuses": "Alle statusse",
+    "count_one": "{{count}} verwiezing",
+    "count_other": "{{count}} verwiezinge",
+    "columns": {
+      "referral": "Verwiezing",
+      "customer": "Klant",
+      "project": "Projèk",
+      "sourcePartner": "Bronpartner",
+      "status": "Sjtatus",
+      "booking": "Reservering",
+      "registered": "Geregistreerd"
+    },
+    "booked": "Gebook",
+    "empty": "Nog gein verwiezinge."
+  },
+  "detail": {
+    "customer": "Klant",
+    "sourcePartner": "Bronpartner",
+    "attributionNote": "(toesjrieving - kin neet weure veranderd)",
+    "leadStatus": "Leadstatus",
+    "protectedUntil": "Besjermd tot",
+    "referral": "Verwiezing",
+    "reason": "Reie: {{reason}}",
+    "booking": "Reservering",
+    "bookedOwner": "Gebook - geer zeet de operationele eigenaer",
+    "notBooked": "Neet gebook",
+    "sharedAfterBooking": "Gedeild nao boeking",
+    "accept": "Verwiezing accepteer",
+    "confirmBooking": "Bevestig boeking",
+    "reject": "Verwiezing weigere",
+    "rejectReasonLabel": "Reie veur aofwiezing (getoend aon de partner) *",
+    "rejectConfirm": "Aafsjloon",
+    "confirmBookingPrompt": "Bevestig de boeking? ‘t Operationeel eigendom geit nao uch en de partner komt in aanmerking veur commissie.",
+    "notice": {
+      "booked": "Reservering bevesteg.",
+      "accepted": "Verwiezing geaccepteerd.",
+      "rejected": "Verwiezing aafgeweze."
+    },
+    "backToReferrals": "Terug nao Verwiezinge"
+  },
+  "history": {
+    "title": "Histoorie",
+    "actor": {
+      "system": "Siesteem",
+      "partner": "Kanaalpartner",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Partnerregistratie ontvange",
+      "DUPLICATE_CHECK_COMPLETED": "Dubbele controle voltooid - gein actief dubbele gevoonde",
+      "REGISTRATION_ACCEPTED": "Registratie geaccepteerd",
+      "PROTECTION_GRANTED_one": "{{count}} -daag besjerming verliend",
+      "PROTECTION_GRANTED_other": "{{count}} -daag besjerming verliend",
+      "STAGE_UPDATED": "Status bijgewerk nao {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} veld geüpdate",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} velde bijgewerk",
+      "LEAD_ASSIGNED": "Toegeweze aan {{name}}",
+      "LEAD_UNASSIGNED": "Neet toegeweze",
+      "REFERRAL_ACCEPTED": "Bouwer heet de verwiezing geaccepteerd",
+      "REFERRAL_REJECTED": "Builder heet de verwiezing aafgeweze. Reie: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Dubbele registratiepoging door {{partner}} is aafgeweze",
+      "BOOKING_COMPLETED": "Reservering voltooid",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operationeel eigenaarsjap euvergedrage aon Bouwer",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partnertoewijzing bewaord",
+      "COMMISSION_ELIGIBILITY_CREATED": "Insjakelbaarheid veur commissie is opgeriech",
+      "HANDOVER_COMPLETED": "Overdrach voltooid",
+      "ADMIN_PROTECTION_RELEASED": "Admin heet dubbele besjerming vreug oetgebrach. Reie: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin heet de registratie hertoegeweze vaan {{from}} nao {{to}} . Reie: {{reason}}"
+    }
+  }
+}

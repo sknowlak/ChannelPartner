@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Einstellungen",
+    "noPermission": "Sie sind nicht berechtigt, Einstellungen zu verwalten."
+  },
+  "categories": {
+    "lead": "Führen",
+    "user": "Benutzer",
+    "integrations": "Integrationen"
+  },
+  "leadTabs": {
+    "fields": "Felder",
+    "statuses": "Status und Unterstatus",
+    "notifications": "Benachrichtigungen und Planer"
+  },
+  "fields": {
+    "leadIntro": "Konfigurieren Sie das Lead-Erfassungsformular: Aktivieren/deaktivieren Sie Felder, markieren Sie sie als erforderlich oder fügen Sie Ihre eigenen benutzerdefinierten Felder hinzu.",
+    "userIntro": "Konfigurieren Sie das Formular „Teammitglied hinzufügen/bearbeiten“: Aktivieren/deaktivieren Sie Felder, markieren Sie sie als erforderlich oder fügen Sie Ihre eigenen benutzerdefinierten Felder hinzu.",
+    "addCustomField": "+ Benutzerdefiniertes Feld hinzufügen",
+    "fieldLabel": "Feldbezeichnung",
+    "group": "Gruppe",
+    "groupPlaceholderLead": "z. B. Anfrageinformationen",
+    "groupPlaceholderUser": "zB Zusätzliche Details",
+    "dataType": "Datentyp",
+    "options": "Optionen (durch Kommas getrennt)",
+    "requiredLead": "Erforderlich – Partner in Ihrem Team müssen dies ausfüllen, um einen Lead zu registrieren",
+    "requiredUser": "Erforderlich – muss beim Hinzufügen eines Teammitglieds ausgefüllt werden",
+    "creating": "Erstellen...",
+    "createField": "Feld erstellen",
+    "columns": {
+      "field": "Feld",
+      "group": "Gruppe",
+      "type": "Typ",
+      "required": "Erforderlich",
+      "enabled": "Ermöglicht",
+      "kind": "Art"
+    },
+    "kind": {
+      "custom": "Brauch",
+      "core": "Kern (gesperrt)",
+      "standard": "Standard"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Text",
+    "TEXTAREA": "Langer Text",
+    "NUMBER": "Nummer",
+    "CURRENCY": "Währung",
+    "DATE": "Datum",
+    "SELECT": "Runterfallen",
+    "LIST": "Liste"
+  },
+  "picker": {
+    "searchPlaceholder": "Lead-Felder durchsuchen...",
+    "summary": "{{shown}} angezeigt · {{mandatory}} obligatorisch",
+    "mandatory": "Obligatorisch",
+    "noMatch": "Keine Felder stimmen überein."
+  },
+  "statuses": {
+    "intro": "Ihre Lead-Status und Unterstatus – was jeder einzelne fragt (Datum und Uhrzeit, Lead-Felder), wenn jemand einen Lead aktualisiert.",
+    "add": "+ Status hinzufügen",
+    "columns": {
+      "order": "Befehl",
+      "status": "Status",
+      "subStatuses": "Unterstatus",
+      "asksFor": "Fragt nach",
+      "active": "Aktiv"
+    },
+    "moveUp": "Bewegen Sie sich nach oben",
+    "moveDown": "Bewegen Sie sich nach unten",
+    "defaultBadge": "Standard für neue Leads",
+    "bookingBadge": "Buchungsstatus",
+    "asksForLabel": "Fragt nach {{label}}",
+    "asksForDateTime": "Fragt nach Datum und Uhrzeit",
+    "none": "Keiner",
+    "dateTime": "Datum und Uhrzeit",
+    "scheduledOn": "auf {{names}}",
+    "fieldsSummary_one": "{{count}} Feld ( {{mandatory}} obligatorisch)",
+    "fieldsSummary_other": "{{count}} Felder ( {{mandatory}} obligatorisch)",
+    "deleteConfirm": "Status „ {{name}} “ löschen? Dies kann nicht rückgängig gemacht werden.",
+    "editTitle": "Status bearbeiten – {{name}}",
+    "newTitle": "Neuer Status",
+    "name": "Statusname",
+    "colour": "Farbe",
+    "active": "Aktiv",
+    "isDefault": "Standardstatus für neue Leads",
+    "isBooking": "Buchungsstatus (festgelegt durch Buchung abschließen)",
+    "whenMoved": "Wenn ein Lead in diesen Status verschoben wird",
+    "askSchedule": "Fragen Sie nach einem Datum und einer Uhrzeit (Planer)",
+    "scheduleLabelPlaceholder": "Etikett, z. B. Besuch bei",
+    "fieldsToShow": "Lead-Felder, die im Aktualisierungsformular angezeigt werden sollen",
+    "subStatusesTitle": "Unterstatus",
+    "subStatusesHint": "Jeder Unterstatus kann nach seinem eigenen Datum und seiner eigenen Uhrzeit fragen und seine eigenen Felder hinzufügen – diese werden über den Feldern des Status oben angezeigt.",
+    "subStatusName": "Name des Unterstatus",
+    "subFields": "Felder ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Datums- und Uhrzeitbezeichnung, z. B. Rückruf unter",
+    "addSubStatus": "+ Unterstatus hinzufügen",
+    "saveStatus": "Status speichern",
+    "createStatus": "Status erstellen"
+  },
+  "notifications": {
+    "intro": "Benachrichtigen Sie die richtigen Personen, wenn ein Lead einen Status erreicht – sofort oder zu einem festgelegten Zeitpunkt vor/nach dem für ihn geplanten Datum und der festgelegten Uhrzeit.",
+    "add": "+ Benachrichtigung hinzufügen",
+    "columns": {
+      "notification": "Benachrichtigung",
+      "whenStatusIs": "Wenn Status ist",
+      "sends": "Sendet",
+      "to": "Zu",
+      "via": "Über",
+      "enabled": "Ermöglicht"
+    },
+    "anyStatus": "Beliebiger Status",
+    "anySubStatus": "Beliebiger Unterstatus",
+    "inactiveOption": "{{name}} (inaktiv)",
+    "emptyRules": "Noch keine Benachrichtigungen – fügen Sie eine hinzu, um Ihr Team zu benachrichtigen, wenn ein Lead einen Status erreicht.",
+    "jobs": {
+      "title": "Geplant und gesendet",
+      "firesAt": "Feuert auf",
+      "notification": "Benachrichtigung",
+      "lead": "Führen",
+      "status": "Status",
+      "details": "Details",
+      "empty": "Noch nichts geplant oder gesendet.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Ausstehend",
+      "PROCESSING": "Verarbeitung",
+      "SENT": "Gesendet",
+      "FAILED": "Fehlgeschlagen",
+      "SKIPPED": "Übersprungen",
+      "CANCELLED": "Abgesagt"
+    },
+    "deliveryStatus": {
+      "SENT": "gesendet",
+      "FAILED": "fehlgeschlagen",
+      "SKIPPED": "übersprungen"
+    },
+    "deliveryChannel": {
+      "IN_APP": "In-App",
+      "EMAIL": "E-Mail",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Zugewiesener Benutzer",
+      "owner": "Eigentümer",
+      "updatedBy": "Aktualisiert von",
+      "role": "Rolle: {{name}}"
+    },
+    "channels": {
+      "inApp": "In-App",
+      "email": "E-Mail",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Benachrichtigung „ {{name}} “ löschen? Ausstehende Mahnungen hiervon entfallen.",
+    "testPrompt": "Senden Sie einen Test dieser Benachrichtigung an sich selbst (in-App) mit welcher Lead- ID ?",
+    "testSent": "An Ihre Glocke gesendet: {{title}} {{message}}",
+    "headersInvalid": "Webhook Header müssen gültiges JSON sein, z. B. {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Benachrichtigung bearbeiten",
+    "newTitle": "Neue Benachrichtigung",
+    "name": "Name",
+    "namePlaceholder": "z. B. Erinnerung an Besuche vor Ort",
+    "whenStatus": "Wenn der Status eines Leads lautet",
+    "subStatus": "Unterstatus",
+    "send": "Senden (Planer)",
+    "custom": "Brauch...",
+    "modeBefore": "vor der geplanten Zeit",
+    "modeAfter": "nach der geplanten Zeit",
+    "noScheduleWarning": "Bei diesem Status werden kein Datum und keine Uhrzeit abgefragt, sodass eine Benachrichtigung „vor/um/nach der geplanten Zeit“ niemals ausgelöst wird.",
+    "noScheduleFix": "Aktivieren Sie unter „Status und Unterstatus“ die Option <strong>„Datum und Uhrzeit anfordern“</strong> oder „Sofort senden“.",
+    "sendTo": "Senden an (beliebige Kombination)",
+    "recipientAssigned": "Zugewiesener Benutzer (Hauptinhaber)",
+    "recipientOwner": "Kontoinhaber/Administrator",
+    "recipientUpdatedBy": "Person, die den Status aktualisiert hat",
+    "everyoneWithRole": "Jeder mit Rolle",
+    "specificUsers": "Bestimmte Benutzer (aktiv)",
+    "inactiveNever": "Inaktive Benutzer erhalten nie Benachrichtigungen, auch wenn diese Option ausgewählt ist.",
+    "deliverVia": "Liefern per",
+    "channelInApp": "In-App (Glocke)",
+    "channelEmail": "E-Mail",
+    "channelWebhook": "Webhook ( WhatsApp / SMS Anbieter)",
+    "emailHint": "Die E-Mail wird an die E-Mail-Adresse jedes Empfängers gesendet und erfordert die Einrichtung von SMTP auf dem Server (Backend/.env); Bis dahin werden E-Mail-Versendungen als übersprungen protokolliert.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Header ( JSON )",
+    "content": "Benachrichtigungsinhalt",
+    "title": "Titel",
+    "message": "Nachricht",
+    "insertIntoTitle": "In Titel einfügen",
+    "insertIntoMessage": "In Nachricht einfügen",
+    "anyLeadField": "Jedes Lead-Feld funktioniert ebenfalls, z. B. <code1>{{example1}}</code1> oder <code2>{{example2}}</code2> .",
+    "preview": "Vorschau (Beispiellead)",
+    "enabled": "Ermöglicht",
+    "saveRule": "Benachrichtigung speichern",
+    "createRule": "Benachrichtigung erstellen",
+    "variables": {
+      "customerName": "Hauptname",
+      "customerMobile": "Führen Sie Ihr Mobiltelefon aus",
+      "customerEmail": "Lead-E-Mail",
+      "registrationId": "Lead ID",
+      "status": "Status",
+      "subStatus": "Unterstatus",
+      "scheduleAt": "Geplantes Datum und Uhrzeit",
+      "assignedTo": "Zugewiesener Benutzer",
+      "updatedBy": "Aktualisiert von",
+      "recipient": "Empfängername",
+      "project": "Projekt",
+      "notes": "Neueste Notiz",
+      "partner": "Partnername"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Sofort, wenn der Status gesetzt wird",
+      "AT": "Zur geplanten Zeit",
+      "A1D": "1 Tag nach geplanter Zeit (Nachkontrolle)"
+    },
+    "immediately": "Sofort",
+    "atScheduled": "Zur geplanten Zeit",
+    "before": {
+      "MINUTES_one": "{{count}} Minute vor der geplanten Zeit",
+      "MINUTES_other": "{{count}} Minuten vor der geplanten Zeit",
+      "HOURS_one": "{{count}} Stunde vor der geplanten Zeit",
+      "HOURS_other": "{{count}} Stunden vor der geplanten Zeit",
+      "DAYS_one": "{{count}} Tag vor der geplanten Zeit",
+      "DAYS_other": "{{count}} Tage vor der geplanten Zeit",
+      "WEEKS_one": "{{count}} Woche vor der geplanten Zeit",
+      "WEEKS_other": "{{count}} Wochen vor der geplanten Zeit",
+      "MONTHS_one": "{{count}} Monat vor der geplanten Zeit",
+      "MONTHS_other": "{{count}} Monate vor dem geplanten Zeitpunkt",
+      "YEARS_one": "{{count}} Jahr vor dem geplanten Zeitpunkt",
+      "YEARS_other": "{{count}} Jahre vor dem geplanten Zeitpunkt"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} Minute nach der geplanten Zeit",
+      "MINUTES_other": "{{count}} Minuten nach der geplanten Zeit",
+      "HOURS_one": "{{count}} Stunde nach der geplanten Zeit",
+      "HOURS_other": "{{count}} Stunden nach der geplanten Zeit",
+      "DAYS_one": "{{count}} Tag nach der geplanten Zeit",
+      "DAYS_other": "{{count}} Tage nach der geplanten Zeit",
+      "WEEKS_one": "{{count}} Woche nach der geplanten Zeit",
+      "WEEKS_other": "{{count}} Wochen nach der geplanten Zeit",
+      "MONTHS_one": "{{count}} Monat nach der geplanten Zeit",
+      "MONTHS_other": "{{count}} Monate nach dem geplanten Zeitpunkt",
+      "YEARS_one": "{{count}} Jahr nach dem geplanten Zeitpunkt",
+      "YEARS_other": "{{count}} Jahre nach dem geplanten Zeitpunkt"
+    },
+    "units": {
+      "MINUTES_one": "Minute",
+      "MINUTES_other": "Minuten",
+      "HOURS_one": "Stunde",
+      "HOURS_other": "Std.",
+      "DAYS_one": "Tag",
+      "DAYS_other": "Tage",
+      "WEEKS_one": "Woche",
+      "WEEKS_other": "Wochen",
+      "MONTHS_one": "Monat",
+      "MONTHS_other": "Monate",
+      "YEARS_one": "Jahr",
+      "YEARS_other": "Jahre"
+    }
+  }
+}

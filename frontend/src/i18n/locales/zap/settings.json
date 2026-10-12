@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Configuración",
+    "noPermission": "Cadi naquiiñeʼ diʼ gápanu permisu para guni administrarnu ca configuración stinu."
+  },
+  "categories": {
+    "lead": "Riza niru",
+    "user": "Usuario",
+    "integrations": "Ca integración"
+  },
+  "leadTabs": {
+    "fields": "Ca layú",
+    "statuses": "Ca estatus ne ca subestatus",
+    "notifications": "Notificación ne programador"
+  },
+  "fields": {
+    "leadIntro": "Biʼniʼ configurar formulario de captura de plomo: biʼniʼ activar/desactivar ca campo, bicaa marca ni caquiiñeʼ o bicaa ca campo personalizadu stiluʼ.",
+    "userIntro": "Biʼniʼ configurar formulario Agregar/Editar miembro del equipo: biʼniʼ activar/desactivar ca campo, bicaa marca ni caquiiñeʼ o bicaa ca campo personalizadu stiluʼ.",
+    "addCustomField": "+ Bicaa campo personalizadu .",
+    "fieldLabel": "Etiqueta de campo",
+    "group": "Grupu",
+    "groupPlaceholderLead": "ejemplu Info de pregunta",
+    "groupPlaceholderUser": "p.ej., xcaadxi detalle .",
+    "dataType": "Tipu de datu",
+    "options": "Opciones (ni nuu né coma)",
+    "requiredLead": "Requisito - ca socio ni nuu lu equipu stiluʼ naquiiñeʼ gucaacaʼ ni para gucaacaʼ ti lead .",
+    "requiredUser": "Requisito - naquiiñeʼ guicá ni ora maʼ nuu ti equipu .",
+    "creating": "Bizáʼ...",
+    "createField": "Bizáʼ campo .",
+    "columns": {
+      "field": "Ra ñaa",
+      "group": "Grupu",
+      "type": "Clase",
+      "required": "Biquiiñe",
+      "enabled": "Biʼniʼ activar",
+      "kind": "Clase"
+    },
+    "kind": {
+      "custom": "Costumbre",
+      "core": "Núcleo (ni nabidxi)",
+      "standard": "Estándar"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Rucaa diidxa",
+    "TEXTAREA": "Texto naroʼbaʼ",
+    "NUMBER": "Númeru",
+    "CURRENCY": "Bueltu",
+    "DATE": "Dxí",
+    "SELECT": "Menú desplegable",
+    "LIST": "Lista"
+  },
+  "picker": {
+    "searchPlaceholder": "Biyubi campo de plomo...",
+    "summary": "{{shown}} bihuinni · {{mandatory}} obligatorio",
+    "mandatory": "Rapa xidé guni tuuxa xiixa",
+    "noMatch": "Nin ti campo cadi dxandíʼ."
+  },
+  "statuses": {
+    "intro": "Ca estatus ne ca subestatus stiʼ ca lead stiluʼ - xi rinabaʼ cada tobi de laacani (ti fecha & hora, campo de lead) ora chuʼ tu guni actualizar ti lead luni.",
+    "add": "+ Bicaa estado",
+    "columns": {
+      "order": "Orden",
+      "status": "Modo nuu xiixa",
+      "subStatuses": "Ca subestatus",
+      "asksFor": "Gunabaʼ para",
+      "active": "Riuu actibu"
+    },
+    "moveUp": "Biree de raqué .",
+    "moveDown": "Biree de raqué .",
+    "defaultBadge": "Predeterminado para ca lead cubi .",
+    "bookingBadge": "Estado de reserva",
+    "asksForLabel": "Gunabadiidxaʼ {{label}}",
+    "asksForDateTime": "Gunabadiidxaʼ fecha ne hora",
+    "none": "Nin tobi",
+    "dateTime": "Fecha ne hora",
+    "scheduledOn": "lu {{names}}",
+    "fieldsSummary_one": "{{count}} campo ( {{mandatory}} obligatorio)",
+    "fieldsSummary_other": "{{count}} campo ( {{mandatory}} obligatorio)",
+    "deleteConfirm": "Pa gucaaluʼ estatus \" {{name}} \" la? Qué zanda diʼ guibiguetaʼ ni.",
+    "editTitle": "Bichaa modo nuu ni - {{name}}",
+    "newTitle": "Estado cubi",
+    "name": "Lá estatus",
+    "colour": "Color",
+    "active": "Riuu actibu",
+    "isDefault": "Estado predeterminado para ca lead cubi .",
+    "isBooking": "Estado de reserva (ni rábicabe Reserva completa)",
+    "whenMoved": "Ora maʼ ziguxooñeʼ ti plomo lu estatus riʼ .",
+    "askSchedule": "Gunabaʼ ti fecha ne ti hora (programador)",
+    "scheduleLabelPlaceholder": "Etiqueta, casi Biiyaʼ lu .",
+    "fieldsToShow": "Campo de plomo para gusihuínniluʼ lu formulario de actualización .",
+    "subStatusesTitle": "Ca subestatus",
+    "subStatusesHint": "Cada sub-estado zanda guinabaʼ fecha & hora stiʼ ne gucaa ca campo stiʼ - ni rusihuinni lu ca campo stiʼ estatus ni nuu guibáʼ.",
+    "subStatusName": "Subestado lá",
+    "subFields": "Campo ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Etiqueta de fecha & hora, por ejemplo Bicaa ridxi sti biaje lu",
+    "addSubStatus": "+ Bicaa Sub-Estado .",
+    "saveStatus": "Guluu estado",
+    "createStatus": "Bizáʼ Estado"
+  },
+  "notifications": {
+    "intro": "Biʼniʼ notificar ca binni ni dxandíʼ ora maʼ zindá ti lead lu ti estatus - nagueendaca, o ti hora ni maʼ gudixhe ante/despué de fecha & hora ni cá luni.",
+    "add": "+ Bicaa notificación .",
+    "columns": {
+      "notification": "Notificación",
+      "whenStatusIs": "Ora maʼ nuu Estado .",
+      "sends": "Biseendaʼ",
+      "to": "Para",
+      "via": "Neza",
+      "enabled": "Biʼniʼ activar"
+    },
+    "anyStatus": "Guiráʼ estatus .",
+    "anySubStatus": "Guiráʼ subestatus .",
+    "inactiveOption": "{{name}} (cadi cayuni dxiiñaʼ)",
+    "emptyRules": "Cadi ca notificación diʼ - bicaa tobi para gudii alerta equipu stiluʼ ora maʼ chindá ti lead lu ti estatus.",
+    "jobs": {
+      "title": "Programadu ne biseendacabe ni",
+      "firesAt": "Ca guí ni nuu",
+      "notification": "Notificación",
+      "lead": "Riza niru",
+      "status": "Modo nuu xiixa",
+      "details": "Detalle stini",
+      "empty": "Qué huayuu dxi gaca programar o guseendacabe xiixa.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Cayaadxa",
+      "PROCESSING": "Procesamiento",
+      "SENT": "Ma biseenda",
+      "FAILED": "Bichee",
+      "SKIPPED": "Bindaa",
+      "CANCELLED": "Canceladu"
+    },
+    "deliveryStatus": {
+      "SENT": "ma biseenda",
+      "FAILED": "bichee",
+      "SKIPPED": "saltado"
+    },
+    "deliveryChannel": {
+      "IN_APP": "lu aplicación",
+      "EMAIL": "correu electrónicu",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Usuario ni maʼ guca asignar",
+      "owner": "Sti",
+      "updatedBy": "Biʼniʼ actualizarbe ni",
+      "role": "Rol: {{name}}"
+    },
+    "channels": {
+      "inApp": "Ndaaniʼ aplicación",
+      "email": "Correu electrónicu",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Pa gucaaluʼ notificación \" {{name}} \" la? Ca recuerdu ni nuu pendiente de laani raca cancelar cani.",
+    "testPrompt": "Biseendaʼ ti prueba de notificación riʼ ra nuuluʼ (lu aplicación) ra iquiiñeluʼ xi ID de plomo ?",
+    "testSent": "Biseendacabe ni lu campana stiluʼ: {{title}} {{message}}",
+    "headersInvalid": "Ca encabezadu Webhook naquiiñeʼ gácacani JSON válidu , casi {\"Autorización\": \"Portador xyz\"}",
+    "editTitle": "Biʼniʼ editar notificación",
+    "newTitle": "Notificación nacubi",
+    "name": "Lá",
+    "namePlaceholder": "ej. Recuerdu de visita lu sitiu .",
+    "whenStatus": "Ora ti estatus stiʼ ti lead nga .",
+    "subStatus": "Subestado",
+    "send": "Biseendaʼ (programador)",
+    "custom": "Costumbre...",
+    "modeBefore": "ante de hora ni maʼ nexheʼ .",
+    "modeAfter": "despué de hora ni maʼ nexheʼ .",
+    "noScheduleWarning": "Cadi canabaʼ diʼ estatus riʼ ti fecha ne ti hora, nga runi ti notificación «ante/ora/despué de hora programada» qué ziuu dxi guiree ni.",
+    "noScheduleFix": "Bicaa <strong>Gunabaʼ ti fecha ne ti hora</strong> para laani lu Estados y subestatus, o biseendaʼ Inmediatamente.",
+    "sendTo": "Biseendaʼ ra nuu (guiráʼ combinación)",
+    "recipientAssigned": "Usuario asignado (propietario principal)",
+    "recipientOwner": "Dueño stiʼ cuenta / administrador",
+    "recipientUpdatedBy": "Persona ni biʼniʼ actualizar estatus stiʼ .",
+    "everyoneWithRole": "Guiráʼ binni ni napa rol .",
+    "specificUsers": "Ca binni ni riquiiñeʼ ni (activo)",
+    "inactiveNever": "Ca binni ni qué runi dxiiñaʼ qué ziuu dxi guicaacaʼ notificación, neca maʼ gulícabe laacaʼ.",
+    "deliverVia": "Entregar via",
+    "channelInApp": "Ndaaniʼ aplicación (campana)",
+    "channelEmail": "Correu electrónicu",
+    "channelWebhook": "Webhook (ni rudii SMS WhatsApp",
+    "emailHint": "Correu electrónicu riʼ rié ni ra nuu dirección de correu electrónicu stiʼ cada binni ni guicaa ni ne caquiiñeʼ SMTP ni guca configurar lu servidor (backend/.env); hasta óraque ca correu electrónicu ni ruseendacabe ca raca registrar cani casi saltadu.",
+    "webhookUrl": "URL Webhook ( POST , JSON ).",
+    "headers": "Ca encabezadu ( JSON )",
+    "content": "Contenidu stiʼ notificación",
+    "title": "Títulu",
+    "message": "Diidxa",
+    "insertIntoTitle": "Bicaa lu Título .",
+    "insertIntoMessage": "Bicaa ndaaniʼ Mensaje .",
+    "anyLeadField": "Guiráʼ campo de plomo laaca runi dxiiñaʼ, casi <code1>{{example1}}</code1> o <code2>{{example2}}</code2> .",
+    "preview": "Previsualización (muestra de plomo)",
+    "enabled": "Biʼniʼ activar",
+    "saveRule": "Guluu notificación",
+    "createRule": "Bizáʼ notificación .",
+    "variables": {
+      "customerName": "Lá plomo",
+      "customerMobile": "Plomo móvil",
+      "customerEmail": "Correu electrónicu de plomo",
+      "registrationId": "ID de plomo",
+      "status": "Modo nuu xiixa",
+      "subStatus": "Subestado",
+      "scheduleAt": "Fecha ne hora ni maʼ guca programar",
+      "assignedTo": "Usuario ni maʼ guca asignar",
+      "updatedBy": "Biʼniʼ actualizarbe ni",
+      "recipient": "Lá binni ni guicaa ni",
+      "project": "Proyecto",
+      "notes": "Últimu nota",
+      "partner": "Lá socio"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Inmediatamente ora maʼ guca estatus stiʼ .",
+      "AT": "Ora maʼ gudixhecabe .",
+      "A1D": "1 dxi despué de hora ni maʼ gudixhecabe (cheque de seguimientu)"
+    },
+    "immediately": "Nagasidú",
+    "atScheduled": "Ora maʼ nexheʼ .",
+    "before": {
+      "MINUTES_one": "{{count}} minutu ante de hora ni maʼ nexheʼ",
+      "MINUTES_other": "{{count}} minutu ante de hora ni maʼ gudixhecabe",
+      "HOURS_one": "{{count}} hora ante de hora ni maʼ nexheʼ",
+      "HOURS_other": "{{count}} hora ante de hora ni maʼ nexheʼ",
+      "DAYS_one": "{{count}} dxi ante de hora ni maʼ nexheʼ",
+      "DAYS_other": "{{count}} dxi ante de hora ni maʼ gudixhecabe",
+      "WEEKS_one": "{{count}} semana ante de hora ni maʼ nexheʼ",
+      "WEEKS_other": "{{count}} semana ante de hora ni maʼ gudixhecabe",
+      "MONTHS_one": "{{count}} beeu ante de hora ni maʼ nexheʼ",
+      "MONTHS_other": "{{count}} beeu ante de hora ni maʼ gudixhecabe",
+      "YEARS_one": "{{count}} iza ante de hora ni maʼ nexheʼ",
+      "YEARS_other": "{{count}} iza ante de hora ni maʼ gudixhecabe"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minutu despué de hora ni maʼ gudixhecabe",
+      "MINUTES_other": "{{count}} minutu despué de hora ni maʼ gudixhecabe",
+      "HOURS_one": "{{count}} hora despué de hora ni maʼ gudixhecabe",
+      "HOURS_other": "{{count}} hora despué de hora ni maʼ gudixhecabe",
+      "DAYS_one": "{{count}} dxi despué de hora ni maʼ nexheʼ",
+      "DAYS_other": "{{count}} dxi despué de hora ni maʼ gudixhecabe",
+      "WEEKS_one": "{{count}} semana despué de hora ni maʼ gudixhecabe",
+      "WEEKS_other": "{{count}} semana despué de hora ni maʼ gudixhecabe",
+      "MONTHS_one": "{{count}} beeu despué de hora ni maʼ gudixhecabe",
+      "MONTHS_other": "{{count}} beeu despué de hora ni maʼ gudixhecabe",
+      "YEARS_one": "{{count}} iza despué de hora ni maʼ nexheʼ",
+      "YEARS_other": "{{count}} iza despué de hora ni maʼ nexheʼ"
+    },
+    "units": {
+      "MINUTES_one": "minutu",
+      "MINUTES_other": "minutu",
+      "HOURS_one": "ora",
+      "HOURS_other": "ca hora",
+      "DAYS_one": "dxí",
+      "DAYS_other": "dxi",
+      "WEEKS_one": "semana",
+      "WEEKS_other": "semana",
+      "MONTHS_one": "beeu",
+      "MONTHS_other": "beeu",
+      "YEARS_one": "iza",
+      "YEARS_other": "ca iza"
+    }
+  }
+}

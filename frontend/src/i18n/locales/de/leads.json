@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Meine Leads",
+    "signedInAs": "Angemeldet als {{name}} ( {{partnerId}} ) · Zeiten werden in {{timezone}} angezeigt",
+    "addLead": "+ Lead hinzufügen",
+    "tabs": {
+      "all": "Alle ( {{count}} )",
+      "pending": "Ausstehend ( {{count}} )",
+      "booked": "Gebucht ( {{count}} )"
+    },
+    "searchPlaceholder": "Suche nach Name, Mobiltelefon oder Registrierungs- ID ...",
+    "manageColumns": "Spalten verwalten",
+    "rowsPerPage": "Zeilen pro Seite",
+    "registrationId": "Registrierungs- ID",
+    "emptyState": "Noch keine Leads – registrieren Sie Ihren ersten.",
+    "noMatch": "Keine Leads entsprechen diesen Filtern.",
+    "showing": "Es werden {{from}} - {{to}} von {{total}} Einträgen angezeigt",
+    "actions": {
+      "preview": "Vorschau und schnelles Update",
+      "history": "Geschichte",
+      "email": "E-Mail",
+      "whatsapp": "WhatsApp",
+      "call": "Anruf"
+    },
+    "pagination": {
+      "first": "Erste Seite",
+      "previous": "Vorherige Seite",
+      "next": "Nächste Seite",
+      "last": "Letzte Seite"
+    }
+  },
+  "columns": {
+    "status": "Status",
+    "assignTo": "Zuordnen zu",
+    "booked": "Gebucht",
+    "protectionUntil": "Schutz bis"
+  },
+  "booking": {
+    "booked": "Gebucht",
+    "pending": "Ausstehend"
+  },
+  "assign": {
+    "unassigned": "Nicht zugewiesen",
+    "owner": "{{name}} (Besitzer)",
+    "inactive": "{{name}} (inaktiv)",
+    "unknownUser": "Unbekannter Benutzer",
+    "assignedTo": "Zugewiesen an {{name}}"
+  },
+  "form": {
+    "addTitle": "Lead hinzufügen",
+    "editTitle": "Lead bearbeiten",
+    "noPermissionAdd": "Sie sind nicht berechtigt, Leads zu registrieren.",
+    "noPermissionEdit": "Sie sind nicht berechtigt, Leads zu bearbeiten.",
+    "selectPlaceholder": "Wählen...",
+    "commaSeparated": "Komma getrennt",
+    "phonePlaceholder": "Telefonnummer",
+    "countryCode": "Landesvorwahl"
+  },
+  "project": {
+    "none": "Noch kein Projekt (nicht verwiesen)",
+    "notInList": "{{project}} (nicht in der Projektliste)"
+  },
+  "journey": {
+    "customer": "Kunde",
+    "currentOwner": "Aktueller Besitzer",
+    "protectionExpiry": "Ablauf des Schutzes",
+    "leadStatus": "Lead-Status",
+    "scheduled": "Geplant",
+    "assignedTo": "Zugewiesen an",
+    "referral": "Verweisung",
+    "builderReason": "Grund des Erstellers: {{reason}}",
+    "bookedHint": "Vom Bauträger gebucht - Betriebseigentum ist auf den Bauträger übergegangen; Ihre Namensnennung und Provisionsberechtigung bleiben erhalten.",
+    "notBookedHint": "Buchungen werden vom Bauträger bestätigt, sobald er die Empfehlung akzeptiert.",
+    "quickUpdate": "Schnelles Update",
+    "leadDetails": "Lead-Details",
+    "progressHistory": "Fortschrittsgeschichte",
+    "timesIn": "(Zeiten in {{timezone}} )",
+    "backToMyLeads": "Zurück zu „Meine Leads“.",
+    "editLead": "Lead bearbeiten"
+  },
+  "referral": {
+    "NOT_REFERRED": "Nicht verwiesen (kein Projekt)",
+    "PENDING_BUILDER": "Warten auf den Bauunternehmer",
+    "ACCEPTED": "Vom Bauträger akzeptiert",
+    "REJECTED": "Vom Bauherrn abgelehnt"
+  },
+  "preview": {
+    "ariaLabel": "Lead-Vorschau",
+    "title": "Lead-Vorschau",
+    "source": "Quelle",
+    "location": "Standort",
+    "scheduled": "Geplant",
+    "registered": "Eingetragen",
+    "latestNote": "Neueste Notiz",
+    "quickUpdate": "Schnelles Update",
+    "fullDetails": "Vollständige Details",
+    "editLead": "Lead bearbeiten",
+    "history": "Geschichte"
+  },
+  "quick": {
+    "assignedTo": "Zugewiesen an",
+    "status": "Status",
+    "subStatus": "Unterstatus",
+    "selectSubStatus": "Unterstatus auswählen...",
+    "none": "Keiner",
+    "scheduledAt": "Geplant um",
+    "localTime": "Ortszeit",
+    "note": "Notiz",
+    "notePlaceholder": "Was ist bei diesem Anruf/Besuch passiert? (optional)",
+    "updateStatus": "Aktualisierungsstatus",
+    "statusUpdated": "Status aktualisiert",
+    "bookedLocked": "Dieser Lead ist gebucht – sein Status kann nicht mehr geändert werden.",
+    "viewOnly": "Sie können diesen Lead anzeigen, aber Ihre Rolle kann ihn nicht aktualisieren."
+  },
+  "history": {
+    "title": "Verlauf – {{registrationId}}",
+    "tabs": {
+      "all": "Alle",
+      "status": "Status",
+      "assignment": "Abtretung",
+      "notes": "Notizen"
+    },
+    "doneBy": "Durchgeführt von {{actor}}",
+    "system": "System",
+    "platforms": {
+      "System": "System",
+      "External": "Extern",
+      "Web": "Web",
+      "Mobile": "Mobile"
+    },
+    "added": "hinzugefügt",
+    "updated": "aktualisiert",
+    "empty": "(leer)",
+    "noHistory": "Noch kein Verlauf in dieser Kategorie.",
+    "fieldLabels": {
+      "stage": "Status",
+      "subStatus": "Unterstatus",
+      "scheduledAt": "Zeitplan",
+      "notes": "Notizen",
+      "assignedTo": "Zugewiesen an"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Partneranmeldung erhalten",
+      "DUPLICATE_CHECK_COMPLETED": "Duplikatprüfung abgeschlossen – kein aktives Duplikat gefunden",
+      "REGISTRATION_ACCEPTED": "Anmeldung angenommen",
+      "PROTECTION_GRANTED_one": "{{count}} -tägiger Schutz gewährt",
+      "PROTECTION_GRANTED_other": "{{count}} -tägiger Schutz gewährt",
+      "REGISTRATION_ATTEMPT_REJECTED": "Doppelter Registrierungsversuch von {{partnerId}} abgelehnt",
+      "LEAD_DETAILS_UPDATED_one": "Feld {{count}} aktualisiert",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} Felder aktualisiert",
+      "STAGE_UPDATED": "Status aktualisiert auf {{status}}",
+      "LEAD_ASSIGNED": "Zugewiesen an {{name}}",
+      "LEAD_UNASSIGNED": "Nicht zugewiesen",
+      "BOOKING_COMPLETED": "Buchung abgeschlossen",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Das operative Eigentum wurde auf den Builder übertragen",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Namensnennung des Partners erhalten",
+      "COMMISSION_ELIGIBILITY_CREATED": "Provisionsberechtigung erstellt",
+      "HANDOVER_COMPLETED": "Übergabe abgeschlossen",
+      "REFERRAL_ACCEPTED": "Builder akzeptierte die Empfehlung",
+      "REFERRAL_REJECTED": "Der Bauunternehmer lehnte die Überweisung ab. Grund: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Der Administrator hat den Duplikatschutz vorzeitig freigegeben. Grund: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Der Administrator hat die Registrierung von {{from}} auf {{to}} neu zugewiesen. Grund: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Spalten verwalten",
+    "hint": "Zum Neuanordnen ziehen. Zum Anzeigen markieren",
+    "showAll": "Alle anzeigen",
+    "resetDefault": "Auf Standard zurücksetzen"
+  },
+  "filters": {
+    "title": "Filter",
+    "allProjects": "Alle Projekte",
+    "any": "Beliebig",
+    "noFields": "Es sind noch keine anderen filterbaren Felder aktiviert (Einstellungen > Lead).",
+    "clearAll": "Alles löschen"
+  },
+  "phone": {
+    "MISSING": "Telefonnummer ist erforderlich.",
+    "INVALID": "Bitte geben Sie eine gültige Telefonnummer ein.",
+    "TOO_SHORT": "Telefonnummer ist zu kurz.",
+    "TOO_LONG": "Telefonnummer ist zu lang.",
+    "INVALID_FOR_COUNTRY": "Diese Telefonnummer ist für {{country}} nicht gültig.",
+    "COUNTRY_MISMATCH": "Bitte wählen Sie den richtigen Ländercode aus.",
+    "NOT_MOBILE": "Bitte geben Sie eine Mobilfunknummer ein, keine Festnetznummer."
+  }
+}

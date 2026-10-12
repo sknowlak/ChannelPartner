@@ -1,0 +1,244 @@
+{
+  "page": {
+    "title": "Ngaahi fokotuʻutuʻu",
+    "noPermission": "'Oku 'ikai ke ke ma'u ha ngofua ke pule'i 'a e ngaahi settings."
+  },
+  "categories": {
+    "lead": "Taki",
+    "user": "Fakaʻaongaʻi",
+    "integrations": "Ngaahi fakatahataha'i"
+  },
+  "leadTabs": {
+    "fields": "Ngaahi Ngoue",
+    "statuses": "Ngaahi Tu'unga & Ngaahi Tu'unga Si'isi'i",
+    "notifications": "Ngaahi Fakatokanga & Ngaahi Fakataimitēpile"
+  },
+  "fields": {
+    "leadIntro": "Configure 'a e foomu 'o e taki: faka'ata/fakata'e'aonga'i 'a e ngaahi mala'e, faka'ilonga'i 'oku fie ma'u, pe tanaki atu ho'o ngaahi mala'e angamaheni.",
+    "userIntro": "Fakaleleiʻi ʻa e foomu Tānaki atu/Fakatonutonu ʻa e Mēmipa ʻo e Timí: fakaʻatā/fakaʻatā ʻa e ngaahi malaʻé, fakaʻilongaʻi ʻoku fie maʻu, pe tānaki atu hoʻo ngaahi malaʻe angamaheni pē ʻaʻau.",
+    "addCustomField": "+ Tānaki atu ʻa e Malaʻe Fakafoʻituituí",
+    "fieldLabel": "Leipa Mala'e",
+    "group": "Kulupu",
+    "groupPlaceholderLead": "eg Faka'eke'eke Info",
+    "groupPlaceholderUser": "eg Ngaahi Fakaikiiki Tanaki atu .",
+    "dataType": "Fa'ahinga fakamatala",
+    "options": "Ngaahi fili (fakamavaheʻi ʻe he koma)",
+    "requiredLead": "Fiema'u - kuo pau ke fakafonu 'eni 'e he ngaahi hoa ngaue 'i ho'o timi ke lesisita ha taki .",
+    "requiredUser": "Fiema'u - kuo pau ke fakafonu 'i he taimi 'oku tanaki atu ai ha memipa 'o e timi .",
+    "creating": "Fa'u...",
+    "createField": "Fa'u 'a e Mala'e",
+    "columns": {
+      "field": "Mala'e",
+      "group": "Kulupu",
+      "type": "Fa'ahinga",
+      "required": "Fiema'u",
+      "enabled": "Faka'ata",
+      "kind": "Faʻahinga"
+    },
+    "kind": {
+      "custom": "Angafakafonua",
+      "core": "Uho (loka'i)",
+      "standard": "Tu'unga"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Tohi",
+    "TEXTAREA": "Ko e tohi loloa",
+    "NUMBER": "Fika",
+    "CURRENCY": "Paʻanga",
+    "DATE": "Aho",
+    "SELECT": "Hifo ki lalo",
+    "LIST": "Lisi"
+  },
+  "picker": {
+    "searchPlaceholder": "Fekumi ki he ngaahi mala'e taki...",
+    "summary": "{{shown}} fakahaa'i · {{mandatory}} fakamālohi'i",
+    "mandatory": "Tu'utu'uni pau",
+    "noMatch": "ʻOku ʻikai ha ngaahi malaʻe ʻoku feʻunga."
+  },
+  "statuses": {
+    "intro": "Ko ho'o ngaahi tu'unga taki mo e ngaahi tu'unga si'isi'i - ko e me'a 'oku takitaha kole (ha 'aho & taimi, ngaahi mala'e taki) 'i he taimi 'oku fakafo'ou ai 'e ha taha ha taki ki ai.",
+    "add": "+ Tānaki atu ʻa e Tuʻungá",
+    "columns": {
+      "order": "Hokohoko",
+      "status": "Tu'unga",
+      "subStatuses": "Ngaahi Tu'unga Si'i",
+      "asksFor": "Kole ki he",
+      "active": "Longomo'ui"
+    },
+    "moveUp": "Hiki hake",
+    "moveDown": "Hiki hifo .",
+    "defaultBadge": "Default ki he kau taki fo'ou",
+    "bookingBadge": "Tu'unga 'o e puke",
+    "asksForLabel": "Kole ki he {{label}}",
+    "asksForDateTime": "Kole ki he 'aho & taimi",
+    "none": "Hala",
+    "dateTime": "'Aho & taimi",
+    "scheduledOn": "'i he {{names}}",
+    "fieldsSummary_other": "{{count}} ngaahi mala'e ( {{mandatory}} fakamalohi'i)",
+    "deleteConfirm": "Tamate'i 'a e tu'unga \" {{name}} \"? He ʻikai lava ke fakafoki ʻeni.",
+    "editTitle": "Fakatonutonu Tu'unga - {{name}}",
+    "newTitle": "Tu'unga Fo'ou",
+    "name": "Hingoa Tu'unga",
+    "colour": "Lanu",
+    "active": "Longomo'ui",
+    "isDefault": "Tu'unga tu'uma'u ki he kau taki fo'ou",
+    "isBooking": "Tu'unga 'o e Puke (fakatoka 'e he Puke Kakato)",
+    "whenMoved": "Ko e taimi 'oku hiki ai ha taki ki he tu'unga ko 'eni .",
+    "askSchedule": "Kole ha 'aho & taimi (taimi-tepile)",
+    "scheduleLabelPlaceholder": "Leipa, eg 'A'ahi ki he .",
+    "fieldsToShow": "Ngaahi mala'e taki ke fakahaa'i 'i he foomu fakafo'ou",
+    "subStatusesTitle": "Ngaahi Tu'unga Si'i",
+    "subStatusesHint": "'E lava ke kole 'e he sub-status takitaha 'a hono 'aho & taimi pea tanaki atu 'ene ngaahi mala'e - 'oku fakahaa'i 'i 'olunga 'i he ngaahi mala'e 'o e tu'unga 'i 'olunga.",
+    "subStatusName": "Hingoa tuʻunga siʻisiʻi",
+    "subFields": "Ngaahi mala'e ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Faka'ilonga 'aho & taimi, eg Toe telefoni mai ki he 10.00.",
+    "addSubStatus": "+ Tānaki atu ʻa e Tuʻunga Siʻisiʻi",
+    "saveStatus": "Tauhi Tu'unga",
+    "createStatus": "Fa'u Tu'unga"
+  },
+  "notifications": {
+    "intro": "Fakatokanga ki he kakai totonu 'i he taimi 'oku a'u ai ha taki ki ha tu'unga - 'i he taimi pe ko ia, pe ko ha taimi pau kimu'a/hili 'a e 'aho & taimi kuo fakataimitēpile'i 'i ai.",
+    "add": "+ Tānaki atu ha Fakatokanga",
+    "columns": {
+      "notification": "Fakatokanga",
+      "whenStatusIs": "Ko e Taimi ʻoku Tuʻunga .",
+      "sends": "Fekau'i atu",
+      "to": "Ki",
+      "via": "I he",
+      "enabled": "Faka'ata"
+    },
+    "anyStatus": "Ha fa'ahinga tu'unga .",
+    "anySubStatus": "Ko ha tu'unga si'isi'i",
+    "inactiveOption": "{{name}} ('ikai ngaue)",
+    "emptyRules": "'Oku te'eki ke 'iai ha fakatokanga - tanaki atu ha taha ke fakatokanga ki ho'o timi 'i he taimi 'oku a'u ai ha taki ki ha tu'unga.",
+    "jobs": {
+      "title": "Kuo fakataimitēpileʻi & ʻAve",
+      "firesAt": "Vela 'i he",
+      "notification": "Fakatokanga",
+      "lead": "Taki",
+      "status": "Tu'unga",
+      "details": "Ngaahi fakaikiiki",
+      "empty": "Te'eki ke fakataimi-tepile'i pe 'ave ha me'a.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Te'eki mahino",
+      "PROCESSING": "Ngaue",
+      "SENT": "ʻave",
+      "FAILED": "Tōo",
+      "SKIPPED": "Fakalaka",
+      "CANCELLED": "Kaniseli"
+    },
+    "deliveryStatus": {
+      "SENT": "ʻave",
+      "FAILED": "tōo",
+      "SKIPPED": "fakalaka"
+    },
+    "deliveryChannel": {
+      "IN_APP": "'i he-polokalama",
+      "EMAIL": "'imeili",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Vahe'i 'a e tokotaha ngaue",
+      "owner": "Tokotaha ha'ana",
+      "updatedBy": "Fakafo'ou 'e he",
+      "role": "Fatongia: {{name}}"
+    },
+    "channels": {
+      "inApp": "'I he-app",
+      "email": "'Imeili",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Tamate'i 'a e fakatokanga \" {{name}} \"? ʻOku kaniseli ʻa e ngaahi fakamanatu ʻoku kei tatali mei aí.",
+    "testPrompt": "'Ave ha sivi 'o e fakatokanga ko 'eni kiate koe ('i he-app) 'o ​​faka'aonga'i 'a ID taki ?",
+    "testSent": "Fakahoko atu ki ho'o fafangu: {{title}} {{message}}",
+    "headersInvalid": "Kuo pau ke 'aonga 'a e ngaahi 'ulu'i tohi ' Webhook JSON , eg {\"Fakangofua\": \"Tokotaha 'o e xyz\"}",
+    "editTitle": "Fakatonutonu Fakatokanga",
+    "newTitle": "Fanongonongo Fo'ou",
+    "name": "Hingoa",
+    "namePlaceholder": "eg Fakamanatu 'a'ahi ki he saiti .",
+    "whenStatus": "Ko e taimi 'oku tu'unga ai ha taki 'oku .",
+    "subStatus": "Tu'unga si'isi'i",
+    "send": "Fekau'i atu (taimi-tēpile)",
+    "custom": "Angafakafonua...",
+    "modeBefore": "kimuʻa ʻi he taimi kuo fakataimitēpileʻí",
+    "modeAfter": "hili e taimi kuo fakataimitēpileʻí",
+    "noScheduleWarning": "'Oku 'ikai ke kole 'e he tu'unga ko 'eni ha 'aho & taimi, ko ia 'e 'ikai 'aupito ke vela ha fakatokanga \"kimu'a/'i he/hili 'a e taimi kuo fakataimitēpile'i\".",
+    "noScheduleFix": "Fakamo'ui ' <strong>a e Kole ha 'aho & taimi</strong> ki ai 'i he ngaahi Tu'unga & Ngaahi Tu'unga Si'isi'i, pe 'ave 'i he taimi pe ko ia.",
+    "sendTo": "Fakahoko atu ki he (ha fa'ahinga fakataha'anga)",
+    "recipientAssigned": "Vahe'i 'a e tokotaha ngaue (taki 'o e 'ea)",
+    "recipientOwner": "Ko e tokotaha 'oku 'a'ana 'a e 'akauni / admin",
+    "recipientUpdatedBy": "Tokotaha na'a ne fakafo'ou 'a e tu'unga .",
+    "everyoneWithRole": "Ko e tokotaha kotoa pe 'oku 'i ai 'ene fatongia .",
+    "specificUsers": "Kau faka'aonga'i pau (ngaue)",
+    "inactiveNever": "ʻOku ʻikai ʻaupito ke maʻu ʻe he kau fakaʻaongaʻi ʻoku ʻikai ke nau ngāué ha ngaahi fakatokanga, neongo kapau ʻoku fili.",
+    "deliverVia": "Tu'uaki 'o fakafou 'i he",
+    "channelInApp": "'I he-app (fafangu)",
+    "channelEmail": "'Imeili",
+    "channelWebhook": "Webhook ( WhatsApp / tokotaha 'oku ne 'oatu SMS )",
+    "emailHint": "'Oku 'alu 'a e 'imeili ki he tu'asila 'imeili 'o e tokotaha takitaha 'oku ne ma'u pea 'oku fie ma'u 'a e SMTP fokotu'u 'i he seva (backend/.env); kae 'oua kuo 'osi 'a e ngaahi 'imeili 'oku 'ave 'o logged 'o hange ko e skipped.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Ngaahi 'ulu'i tohi ( JSON )",
+    "content": "Kakano 'o e fakatokanga",
+    "title": "Kaveinga",
+    "message": "Fekau",
+    "insertIntoTitle": "Fakahu ki he Uluaki",
+    "insertIntoMessage": "Fakahu ki he Fekau",
+    "anyLeadField": "'Oku ngaue foki ha mala'e taki, eg <code1>{{example1}}</code1> pe <code2>{{example2}}</code2> .",
+    "preview": "Tomu'a vakai'i (sipinga taki)",
+    "enabled": "Faka'ata",
+    "saveRule": "Tauhi e Fakatokanga",
+    "createRule": "Faʻu ha Fakatokanga",
+    "variables": {
+      "customerName": "Hingoa taki",
+      "customerMobile": "Taki fe'ave'aki",
+      "customerEmail": "ʻImeili taki",
+      "registrationId": "ID",
+      "status": "Tu'unga",
+      "subStatus": "Tu'unga si'isi'i",
+      "scheduleAt": "'Aho & taimi kuo fakataimitēpile'i",
+      "assignedTo": "Vahe'i 'a e tokotaha ngaue",
+      "updatedBy": "Fakafo'ou 'e he",
+      "recipient": "Hingoa ʻo e tokotaha maʻú",
+      "project": "Fo'i ngaue",
+      "notes": "Nouti fakamuimuitaha",
+      "partner": "Hingoa hoa ngaue"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "'I he taimi pe 'oku seti ai 'a e tu'unga .",
+      "AT": "‘I he taimi kuo fakataimitēpile‘í .",
+      "A1D": "Hili ha 'aho 'e 1 mei he taimi kuo fakataimitēpile'i (sivi muimui)"
+    },
+    "immediately": "Taimi pē ko ia",
+    "atScheduled": "‘I he taimi kuo fakataimitēpile‘í .",
+    "before": {
+      "MINUTES_other": "{{count}} miniti kimuʻa ʻi he taimi kuo fakataimitēpileʻí",
+      "HOURS_other": "{{count}} houa kimuʻa ʻi he taimi kuo fakataimitēpileʻí",
+      "DAYS_other": "{{count}} 'aho kimu'a he taimi kuo fakataimitēpile'i",
+      "WEEKS_other": "{{count}} uike kimuʻa ʻi he taimi kuo fakataimitēpileʻí",
+      "MONTHS_other": "{{count}} māhina kimuʻa ʻi he taimi kuo fakataimitēpileʻí",
+      "YEARS_other": "{{count}} taʻu kimuʻa ʻi he taimi kuo fakataimitēpileʻí"
+    },
+    "after": {
+      "MINUTES_other": "{{count}} miniti hili e taimi kuo fakataimitēpileʻí",
+      "HOURS_other": "{{count}} houa hili e taimi kuo fakataimitēpileʻí",
+      "DAYS_other": "{{count}} 'aho hili 'a e taimi kuo fakataimitēpile'i",
+      "WEEKS_other": "{{count}} uike hili e taimi kuo fakataimitēpileʻí",
+      "MONTHS_other": "{{count}} māhina hili e taimi kuo fakataimitēpileʻí",
+      "YEARS_other": "{{count}} taʻu hili ʻa e taimi kuo fakataimitēpileʻí"
+    },
+    "units": {
+      "MINUTES_other": "ngaahi miniti",
+      "HOURS_other": "ngaahi houa",
+      "DAYS_other": "'aho 'e 5",
+      "WEEKS_other": "uike 2",
+      "MONTHS_other": "māhina",
+      "YEARS_other": "ngaahi ta'u"
+    }
+  }
+}

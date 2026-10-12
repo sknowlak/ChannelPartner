@@ -1,0 +1,186 @@
+{
+  "list": {
+    "title": "내 리드",
+    "signedInAs": "{{name}} ( {{partnerId}} )(으)로 로그인됨 · {{timezone}} 에 표시된 시간",
+    "addLead": "+ 리드 추가",
+    "tabs": {
+      "all": "모두( {{count}} )",
+      "pending": "보류 중( {{count}} )",
+      "booked": "예약됨( {{count}} )"
+    },
+    "searchPlaceholder": "이름, 휴대폰, 등록 ID 로 검색하세요...",
+    "manageColumns": "열 관리",
+    "rowsPerPage": "페이지당 행 수",
+    "registrationId": "등록 ID",
+    "emptyState": "아직 리드가 없습니다. 첫 번째 리드를 등록하세요.",
+    "noMatch": "이 필터와 일치하는 리드가 없습니다.",
+    "showing": "{{total}} 항목 중 {{from}} - {{to}} 표시 중",
+    "actions": {
+      "preview": "미리보기 및 빠른 업데이트",
+      "history": "역사",
+      "email": "이메일",
+      "whatsapp": "WhatsApp",
+      "call": "부르다"
+    },
+    "pagination": {
+      "first": "첫 페이지",
+      "previous": "이전 페이지",
+      "next": "다음 페이지",
+      "last": "마지막 페이지"
+    }
+  },
+  "columns": {
+    "status": "상태",
+    "assignTo": "할당 대상",
+    "booked": "예약됨",
+    "protectionUntil": "보호 기간:"
+  },
+  "booking": {
+    "booked": "예약됨",
+    "pending": "보류 중"
+  },
+  "assign": {
+    "unassigned": "할당되지 않음",
+    "owner": "{{name}} (소유자)",
+    "inactive": "{{name}} (비활성)",
+    "unknownUser": "알 수 없는 사용자",
+    "assignedTo": "{{name}} 에게 할당됨"
+  },
+  "form": {
+    "addTitle": "리드 추가",
+    "editTitle": "리드 편집",
+    "noPermissionAdd": "리드를 등록할 권한이 없습니다.",
+    "noPermissionEdit": "리드를 편집할 권한이 없습니다.",
+    "selectPlaceholder": "선택하다...",
+    "commaSeparated": "쉼표로 구분됨",
+    "phonePlaceholder": "전화 번호",
+    "countryCode": "국가 코드"
+  },
+  "project": {
+    "none": "아직 프로젝트가 없습니다(추천되지 않음)",
+    "notInList": "{{project}} (프로젝트 목록에 없음)"
+  },
+  "journey": {
+    "customer": "고객",
+    "currentOwner": "현재 소유자",
+    "protectionExpiry": "보호 만료",
+    "leadStatus": "리드 상태",
+    "scheduled": "예정됨",
+    "assignedTo": "할당 대상",
+    "referral": "추천",
+    "builderReason": "작성자 이유: {{reason}}",
+    "bookedHint": "건축업자가 예약 - 운영 소유권이 건축업자에게 이전되었습니다. 귀하의 귀속 및 커미션 자격은 유지됩니다.",
+    "notBookedHint": "추천을 수락하면 건축업자가 예약을 확인합니다.",
+    "quickUpdate": "빠른 업데이트",
+    "leadDetails": "리드 세부정보",
+    "progressHistory": "진행 내역",
+    "timesIn": "( {{timezone}} 의 시간)",
+    "backToMyLeads": "내 리드로 돌아가기",
+    "editLead": "리드 편집"
+  },
+  "referral": {
+    "NOT_REFERRED": "추천되지 않음(프로젝트 없음)",
+    "PENDING_BUILDER": "빌더를 기다리고 있어요",
+    "ACCEPTED": "건축업자가 수락함",
+    "REJECTED": "건축업자에 의해 거부됨"
+  },
+  "preview": {
+    "ariaLabel": "리드 미리보기",
+    "title": "리드 미리보기",
+    "source": "원천",
+    "location": "위치",
+    "scheduled": "예정됨",
+    "registered": "등기",
+    "latestNote": "최신 노트",
+    "quickUpdate": "빠른 업데이트",
+    "fullDetails": "전체 세부사항",
+    "editLead": "리드 편집",
+    "history": "역사"
+  },
+  "quick": {
+    "assignedTo": "할당 대상",
+    "status": "상태",
+    "subStatus": "하위 상태",
+    "selectSubStatus": "하위 상태 선택...",
+    "none": "없음",
+    "scheduledAt": "예정 시간",
+    "localTime": "현지 시간",
+    "note": "메모",
+    "notePlaceholder": "이번 통화/방문에서 무슨 일이 일어났나요? (선택 과목)",
+    "updateStatus": "업데이트 상태",
+    "statusUpdated": "상태가 업데이트되었습니다.",
+    "bookedLocked": "이 리드는 예약되었습니다. 상태를 더 이상 변경할 수 없습니다.",
+    "viewOnly": "이 리드를 볼 수 있지만 귀하의 역할은 이를 업데이트할 수 없습니다."
+  },
+  "history": {
+    "title": "기록 - {{registrationId}}",
+    "tabs": {
+      "all": "모두",
+      "status": "상태",
+      "assignment": "과제",
+      "notes": "메모"
+    },
+    "doneBy": "수행자: {{actor}}",
+    "system": "체계",
+    "platforms": {
+      "System": "체계",
+      "External": "외부",
+      "Web": "편물",
+      "Mobile": "이동하는"
+    },
+    "added": "추가됨",
+    "updated": "업데이트됨",
+    "empty": "(비어 있는)",
+    "noHistory": "이 카테고리에는 아직 기록이 없습니다.",
+    "fieldLabels": {
+      "stage": "상태",
+      "subStatus": "하위 상태",
+      "scheduledAt": "일정",
+      "notes": "메모",
+      "assignedTo": "할당 대상"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "파트너 등록 접수됨",
+      "DUPLICATE_CHECK_COMPLETED": "중복 확인 완료 - 활성 중복 항목이 발견되지 않음",
+      "REGISTRATION_ACCEPTED": "등록이 승인되었습니다",
+      "PROTECTION_GRANTED_other": "{{count}} 일 보호 부여됨",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partnerId}} 의 중복 등록 시도가 거부되었습니다.",
+      "LEAD_DETAILS_UPDATED_other": "업데이트된 {{count}} 필드",
+      "STAGE_UPDATED": "상태가 {{status}} (으)로 업데이트되었습니다.",
+      "LEAD_ASSIGNED": "{{name}} 에게 할당됨",
+      "LEAD_UNASSIGNED": "할당되지 않음",
+      "BOOKING_COMPLETED": "예약 완료",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "운영 소유권이 Builder로 이전됨",
+      "PARTNER_ATTRIBUTION_PRESERVED": "파트너 속성이 보존됩니다.",
+      "COMMISSION_ELIGIBILITY_CREATED": "커미션 자격이 생성되었습니다.",
+      "HANDOVER_COMPLETED": "핸드오버 완료",
+      "REFERRAL_ACCEPTED": "빌더가 추천을 수락했습니다.",
+      "REFERRAL_REJECTED": "빌더가 추천을 거부했습니다. 이유: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "관리자가 중복 보호를 조기에 출시했습니다. 이유: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "관리자가 {{from}} 에서 {{to}} 로 등록을 재할당했습니다. 이유: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "열 관리",
+    "hint": "드래그하여 재정렬 · 표시하려면 선택하세요.",
+    "showAll": "모두 표시",
+    "resetDefault": "기본값으로 재설정"
+  },
+  "filters": {
+    "title": "필터",
+    "allProjects": "모든 프로젝트",
+    "any": "어느",
+    "noFields": "필터링 가능한 다른 필드는 아직 활성화되어 있지 않습니다(설정 > 리드).",
+    "clearAll": "모두 지우기"
+  },
+  "phone": {
+    "MISSING": "전화번호가 필요합니다.",
+    "INVALID": "유효한 전화번호를 입력하세요.",
+    "TOO_SHORT": "전화번호가 너무 짧습니다.",
+    "TOO_LONG": "전화번호가 너무 깁니다.",
+    "INVALID_FOR_COUNTRY": "이 전화번호는 {{country}} 에 유효하지 않습니다.",
+    "COUNTRY_MISMATCH": "올바른 국가 코드를 선택하세요.",
+    "NOT_MOBILE": "유선전화가 아닌 휴대폰 번호를 입력해주세요."
+  }
+}

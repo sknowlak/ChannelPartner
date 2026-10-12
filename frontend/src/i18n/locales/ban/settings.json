@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Setélan",
+    "noPermission": "Sameton nénten madué ijin jagi ngatur setélan."
+  },
+  "categories": {
+    "lead": "Mimpin",
+    "user": "Sanganggé",
+    "integrations": "Integrasi"
+  },
+  "leadTabs": {
+    "fields": "Widang",
+    "statuses": "Status & Sub-Status",
+    "notifications": "Pakéling & Panjadwalan"
+  },
+  "fields": {
+    "leadIntro": "Konfigurasiang formulir penangkapan timbal: aktifang/nonaktifang widang, tandain yéning kaperluang, utawi tambahin widang uwahan Sametoné.",
+    "userIntro": "Konfigurasiang formulir Tambahin/Edit Anggota Tim: aktifang/nonaktifang widang, tandain yéning kaperluang, utawi tambahin widang uwahan Sametoné.",
+    "addCustomField": "+ Wewehin Widang Uwahan",
+    "fieldLabel": "Label Widang",
+    "group": "Kelompok",
+    "groupPlaceholderLead": "minakadi Info Pitakén",
+    "groupPlaceholderUser": "minakadi Rincian Paweweh",
+    "dataType": "Jenis Data",
+    "options": "Opsi (kapisahin antuk koma)",
+    "requiredLead": "Kaperluang - mitra ring tim Sametoné patut nagingin puniki anggén ngdaftar prospek",
+    "requiredUser": "Kaperluang - patut kadagingin ritatkala ngawewehin anggota tim",
+    "creating": "Ngaryanin...",
+    "createField": "Ngaryanin Widang",
+    "columns": {
+      "field": "Lapangan",
+      "group": "Kelompok",
+      "type": "Jenis",
+      "required": "Wajib",
+      "enabled": "Aktipang",
+      "kind": "Macemné"
+    },
+    "kind": {
+      "custom": "Adat",
+      "core": "Inti (kakunci)",
+      "standard": "Standar"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Téks",
+    "TEXTAREA": "Teks dawa",
+    "NUMBER": "Nomer",
+    "CURRENCY": "Mata pipis",
+    "DATE": "Tanggal",
+    "SELECT": "Tedun",
+    "LIST": "Daptar"
+  },
+  "picker": {
+    "searchPlaceholder": "Sliksik widang timbal...",
+    "summary": "{{shown}} kasinahang · {{mandatory}} wajib",
+    "mandatory": "Wajib",
+    "noMatch": "Nénten wénten widang sané cocok."
+  },
+  "statuses": {
+    "intro": "Status lan sub-status prospek Sametoné - napi sané katunasin olih soang-soang (tanggal & galah, widang prospek) ritatkala wénten sané ngapdet prospek ring punika.",
+    "add": "+ Wewehin Status",
+    "columns": {
+      "order": "Mesen",
+      "status": "Setatus",
+      "subStatuses": "Sub-Status",
+      "asksFor": "Nunas",
+      "active": "Aktip"
+    },
+    "moveUp": "Pindah munggah",
+    "moveDown": "Pindah ka sor",
+    "defaultBadge": "Default anggén prospek anyar",
+    "bookingBadge": "Status pemesanan",
+    "asksForLabel": "Nunas {{label}}",
+    "asksForDateTime": "Nunas tanggal & galah",
+    "none": "Ten wénten",
+    "dateTime": "Pinanggal & galah",
+    "scheduledOn": "ring {{names}}",
+    "fieldsSummary_one": "Widang {{count}} ( {{mandatory}} wajib)",
+    "fieldsSummary_other": "{{count}} widang ( {{mandatory}} wajib)",
+    "deleteConfirm": "Icalang status \" {{name}} \"? Indike puniki nenten prasida kawaliang.",
+    "editTitle": "Edit Status - {{name}}",
+    "newTitle": "Status Anyar",
+    "name": "Wastan Status",
+    "colour": "Warnan",
+    "active": "Aktip",
+    "isDefault": "Status default anggén prospek anyar",
+    "isBooking": "Status pemesanan (kasetel olih Pemesanan Jangkep)",
+    "whenMoved": "Ritatkala timbal kagingsirang ka status puniki",
+    "askSchedule": "Nunas tanggal & galah (panjadwal)",
+    "scheduleLabelPlaceholder": "Label, minakadi Simpangin ring",
+    "fieldsToShow": "Widang utama sané pacang kasinahang ring formulir pembaruan",
+    "subStatusesTitle": "Sub-Status",
+    "subStatusesHint": "Soang-soang sub-status prasida nunas tanggal & galah soang-soang lan nambahin widang soang-soang - kasinahang ring duur widang status ring ajeng.",
+    "subStatusName": "Wastan sub-status",
+    "subFields": "Widang ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Label tanggal & galah, minakadi Telpon malih ring",
+    "addSubStatus": "+ Wewehin Sub-Status",
+    "saveStatus": "Simpen Status",
+    "createStatus": "Ngaryanin Status"
+  },
+  "notifications": {
+    "intro": "Kaceritayang ring jadma sane patut ritatkala timbal balik sampun rauh ring status - digelis, utawi galah sane sampun katentuang sadurung/sesampun tanggal & galah sane sampun kajantenang ring duurnyane.",
+    "add": "+ Wewehin pakéling",
+    "columns": {
+      "notification": "Pakéling",
+      "whenStatusIs": "Rikala Status punika",
+      "sends": "Ngirim",
+      "to": "Antuk",
+      "via": "Liwat",
+      "enabled": "Aktipang"
+    },
+    "anyStatus": "Status napi manten",
+    "anySubStatus": "Sub-status napi manten",
+    "inactiveOption": "{{name}} (nénten aktif)",
+    "emptyRules": "Durung wénten pakéling - tambahin pakéling anggén ngingsirang tim Sametoné ritatkala prospek rauh ring status.",
+    "jobs": {
+      "title": "Kajadwal & Kakirim",
+      "firesAt": "Api Ring",
+      "notification": "Pakéling",
+      "lead": "Mimpin",
+      "status": "Setatus",
+      "details": "Parincian",
+      "empty": "Durung wénten sané sampun kajadwal utawi kakirim.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Matunda",
+      "PROCESSING": "Ngolah",
+      "SENT": "Makirim",
+      "FAILED": "Ten berasil",
+      "SKIPPED": "Kalewatin",
+      "CANCELLED": "Kakancel"
+    },
+    "deliveryStatus": {
+      "SENT": "makirim",
+      "FAILED": "ten berasil",
+      "SKIPPED": "kalewatin"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ring aplikasi",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Sanganggé sané katetapang",
+      "owner": "Sané ngelah",
+      "updatedBy": "Kaanyarang olih",
+      "role": "Peran: {{name}}"
+    },
+    "channels": {
+      "inApp": "Ring aplikasi",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Icalang pakéling \" {{name}} \"? Panginget sané kantun nyantos saking punika kakansel.",
+    "testPrompt": "Kirim tes pabesen puniki ring ragan Sametoné (ring aplikasi) nganggén ID lead sané encen ?",
+    "testSent": "Kakirim ka lonceng Sametoné: {{title}} {{message}}",
+    "headersInvalid": "Header Webhook mangda JSON sané sah , minakadi {\"Otorisasi\": \"Pembawa xyz\"}",
+    "editTitle": "Edit pakéling",
+    "newTitle": "Pakéling Anyar",
+    "name": "Adan",
+    "namePlaceholder": "minakadi panginget ngrauhin situs",
+    "whenStatus": "Ritatkala status timbal inggih punika",
+    "subStatus": "Sub-status",
+    "send": "Kirim (panjadwal)",
+    "custom": "Adat...",
+    "modeBefore": "sadurung galah sané sampun kajantenang",
+    "modeAfter": "sesampun galah sané sampun kajantenang",
+    "noScheduleWarning": "Status puniki nénten nunas tanggal & galah, mawinan pakéling \"sadurung/ring/sesampun galah sané sampun kajantenang\" nénten pacang medal.",
+    "noScheduleFix": "Idupang <strong>Nunas tanggal & galah</strong> ring sor Status & Sub-Status, utawi kirim Digelis.",
+    "sendTo": "Kirim ka (kombinasi napi manten)",
+    "recipientAssigned": "Sanganggé sané katetapang (sané nuénang utama)",
+    "recipientOwner": "Sang madué akun / admin",
+    "recipientUpdatedBy": "Jadma sané ngapdet status",
+    "everyoneWithRole": "Samian sané madué peran",
+    "specificUsers": "Sanganggé tertentu (aktif)",
+    "inactiveNever": "Sanganggé sané nénten aktif nénten naenin polih pakéling, yadiastun sampun kapilih.",
+    "deliverVia": "Kirim saking",
+    "channelInApp": "Ring-apl (lonceng)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook (panyediaang WhatsApp / SMS )",
+    "emailHint": "Email nuju alamat email soang-soang penerima lan merluang SMTP sane kagenahang ring server (backend/.env); ngantos punika email sane kakirim kacatet dados kalewatin.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Murda ( JSON )",
+    "content": "Daging pakéling",
+    "title": "Judul",
+    "message": "Pesen",
+    "insertIntoTitle": "Sisipang ring Judul",
+    "insertIntoMessage": "Sisipang ring Pabesen",
+    "anyLeadField": "Widang utama taler prasida mamargi, minakadi <code1>{{example1}}</code1> utawi <code2>{{example2}}</code2> .",
+    "preview": "Pratinjo (conto timbal)",
+    "enabled": "Aktipang",
+    "saveRule": "Simpen pakéling",
+    "createRule": "Ngaryanin pakéling",
+    "variables": {
+      "customerName": "Wastan timbal",
+      "customerMobile": "Seluler timbal",
+      "customerEmail": "Email utama",
+      "registrationId": "ID timbal",
+      "status": "Setatus",
+      "subStatus": "Sub-status",
+      "scheduleAt": "Pinanggal & galah sané sampun kajadwal",
+      "assignedTo": "Sanganggé sané katetapang",
+      "updatedBy": "Kaanyarang olih",
+      "recipient": "Wastan sané nerima",
+      "project": "Proyék",
+      "notes": "Catetan anyar",
+      "partner": "Wastan mitra"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Pramangkin ritatkala status sampun kaatur",
+      "AT": "Ring galah sané sampun kajantenang",
+      "A1D": "1 rahina sasampun galah sané sampun kajantenang (pariksa tindak lanjut)"
+    },
+    "immediately": "Segera",
+    "atScheduled": "Ring galah sané sampun kajantenang",
+    "before": {
+      "MINUTES_one": "{{count}} menit sadurung galah sané sampun kajantenang",
+      "MINUTES_other": "{{count}} menit sadurung galah sané sampun kajantenang",
+      "HOURS_one": "{{count}} jam sadurung galah sané sampun kajantenang",
+      "HOURS_other": "{{count}} jam sadurung galah sané sampun kajantenang",
+      "DAYS_one": "{{count}} rahina sadurung galah sané sampun kajantenang",
+      "DAYS_other": "{{count}} rahina sadurung galah sané sampun kajantenang",
+      "WEEKS_one": "{{count}} awuku sadurung galah sané sampun kajantenang",
+      "WEEKS_other": "{{count}} wuku sadurung galah sané sampun kajantenang",
+      "MONTHS_one": "{{count}} asasih sadurung galah sané sampun kajantenang",
+      "MONTHS_other": "{{count}} sasih sadurung galah sané sampun kajantenang",
+      "YEARS_one": "{{count}} warsa sadurung galah sané sampun kajantenang",
+      "YEARS_other": "{{count}} warsa sadurung galah sané sampun kajantenang"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} menit sasampun galah sané sampun kajantenang",
+      "MINUTES_other": "{{count}} menit sasampun galah sané sampun kajantenang",
+      "HOURS_one": "{{count}} jam sasampun galah sané sampun kajantenang",
+      "HOURS_other": "{{count}} jam sasampun galah sané sampun kajantenang",
+      "DAYS_one": "{{count}} rahina sasampun galah sané sampun kajantenang",
+      "DAYS_other": "{{count}} rahina sasampun galah sané sampun kajantenang",
+      "WEEKS_one": "{{count}} awuku sasampun galah sané sampun kajantenang",
+      "WEEKS_other": "{{count}} wuku sasampun galah sané sampun kajantenang",
+      "MONTHS_one": "{{count}} sasih sasampun galah sané sampun kajantenang",
+      "MONTHS_other": "{{count}} sasih sasampun galah sané sampun kajantenang",
+      "YEARS_one": "{{count}} warsa sasampun galah sané sampun kajantenang",
+      "YEARS_other": "{{count}} warsa sasampun galah sané sampun kajantenang"
+    },
+    "units": {
+      "MINUTES_one": "menit",
+      "MINUTES_other": "menit",
+      "HOURS_one": "jam",
+      "HOURS_other": "jam",
+      "DAYS_one": "dina",
+      "DAYS_other": "rahina",
+      "WEEKS_one": "minggu",
+      "WEEKS_other": "wuku",
+      "MONTHS_one": "bulan",
+      "MONTHS_other": "sasih",
+      "YEARS_one": "warsa",
+      "YEARS_other": "warsa"
+    }
+  }
+}

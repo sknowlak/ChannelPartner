@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "बिल्डर पोर्टल",
+    "referrals": "रेफरलहरू",
+    "builderLogin": "बिल्डर लगइन",
+    "partnerLogin": "च्यानल साझेदार लगइन"
+  },
+  "login": {
+    "title": "बिल्डर साइन इन",
+    "hint": "बिल्डर खाताहरू Leadrat द्वारा सिर्जना गरिएको हो। यदि तपाईंसँग छैन भने आफ्नो प्रशासकलाई सोध्नुहोस्।"
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "तपाईको निर्णयको पर्खाइमा",
+    "ACCEPTED": "स्वीकार गरियो",
+    "REJECTED": "अस्वीकार गरियो"
+  },
+  "list": {
+    "title": "रेफरलहरू",
+    "allProjects": "सबै परियोजनाहरू",
+    "allStatuses": "सबै स्थितिहरू",
+    "count_one": "{{count}} रेफरल",
+    "count_other": "{{count}} रेफरलहरू",
+    "columns": {
+      "referral": "रेफरल",
+      "customer": "ग्राहक",
+      "project": "परियोजना",
+      "sourcePartner": "स्रोत साझेदार",
+      "status": "स्थिति",
+      "booking": "बुकिङ",
+      "registered": "दर्ता गरियो"
+    },
+    "booked": "बुक गरियो",
+    "empty": "अहिलेसम्म कुनै रेफरलहरू छैनन्।"
+  },
+  "detail": {
+    "customer": "ग्राहक",
+    "sourcePartner": "स्रोत साझेदार",
+    "attributionNote": "(विशेषता - परिवर्तन गर्न सकिँदैन)",
+    "leadStatus": "नेतृत्व स्थिति",
+    "protectedUntil": "सम्म संरक्षित",
+    "referral": "रेफरल",
+    "reason": "कारण: {{reason}}",
+    "booking": "बुकिङ",
+    "bookedOwner": "बुक गरिएको - तपाईं परिचालन मालिक हुनुहुन्छ",
+    "notBooked": "बुक गरिएको छैन",
+    "sharedAfterBooking": "बुकिङ पछि साझा",
+    "accept": "रेफरल स्वीकार गर्नुहोस्",
+    "confirmBooking": "बुकिङ पुष्टि गर्नुहोस्",
+    "reject": "रेफरल अस्वीकार गर्नुहोस्",
+    "rejectReasonLabel": "अस्वीकार गर्नुको कारण (साझेदारलाई देखाइयो) *",
+    "rejectConfirm": "अस्वीकार गर्नुहोस्",
+    "confirmBookingPrompt": "बुकिङ पुष्टि गर्नुहुन्छ? परिचालन स्वामित्व तपाईमा सर्छ र साझेदार आयोगको लागि योग्य हुन्छ।",
+    "notice": {
+      "booked": "बुकिङ पुष्टि भयो।",
+      "accepted": "रेफरल स्वीकार गरियो।",
+      "rejected": "रेफरल अस्वीकार गरियो।"
+    },
+    "backToReferrals": "रेफरलहरूमा फर्कनुहोस्"
+  },
+  "history": {
+    "title": "इतिहास",
+    "actor": {
+      "system": "प्रणाली",
+      "partner": "च्यानल साझेदार",
+      "admin": "Leadrat व्यवस्थापक"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "साझेदार दर्ता प्राप्त भयो",
+      "DUPLICATE_CHECK_COMPLETED": "डुप्लिकेट जाँच पूरा भयो - कुनै सक्रिय नक्कल फेला परेन",
+      "REGISTRATION_ACCEPTED": "दर्ता स्वीकृत",
+      "PROTECTION_GRANTED_one": "{{count}} दिनको सुरक्षा प्रदान गरियो",
+      "PROTECTION_GRANTED_other": "{{count}} दिनको सुरक्षा प्रदान गरियो",
+      "STAGE_UPDATED": "स्थिति अद्यावधिक गरी {{stage}} मा",
+      "LEAD_DETAILS_UPDATED_one": "अपडेट गरिएको {{count}} फिल्ड",
+      "LEAD_DETAILS_UPDATED_other": "अपडेट गरिएको {{count}} फिल्डहरू",
+      "LEAD_ASSIGNED": "{{name}} लाई काम तोकियो",
+      "LEAD_UNASSIGNED": "तोकिएको छैन",
+      "REFERRAL_ACCEPTED": "बिल्डरले रेफरल स्वीकार गरे",
+      "REFERRAL_REJECTED": "बिल्डरले रेफरल अस्वीकार गर्यो। कारण: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} द्वारा डुप्लिकेट दर्ता प्रयास अस्वीकार गरियो",
+      "BOOKING_COMPLETED": "बुकिङ सकियो",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "सञ्चालन स्वामित्व बिल्डरलाई हस्तान्तरण गरियो",
+      "PARTNER_ATTRIBUTION_PRESERVED": "साझेदार एट्रिब्युशन सुरक्षित",
+      "COMMISSION_ELIGIBILITY_CREATED": "आयोग योग्यता सिर्जना गरियो",
+      "HANDOVER_COMPLETED": "हस्तान्तरण सम्पन्न",
+      "ADMIN_PROTECTION_RELEASED": "प्रशासकले नक्कल सुरक्षा चाँडै जारी गर्यो। कारण: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "प्रशासकले {{from}} बाट {{to}} मा दर्ता पुन: नियुक्त गर्नुभयो। कारण: {{reason}}"
+    }
+  }
+}

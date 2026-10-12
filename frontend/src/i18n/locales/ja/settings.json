@@ -1,0 +1,244 @@
+{
+  "page": {
+    "title": "設定",
+    "noPermission": "設定を管理する権限がありません。"
+  },
+  "categories": {
+    "lead": "鉛",
+    "user": "ユーザー",
+    "integrations": "統合"
+  },
+  "leadTabs": {
+    "fields": "フィールド",
+    "statuses": "ステータスとサブステータス",
+    "notifications": "通知とスケジューラ"
+  },
+  "fields": {
+    "leadIntro": "リード獲得フォームを構成します。フィールドを有効/無効にするか、フィールドを必須としてマークするか、独自のカスタム フィールドを追加します。",
+    "userIntro": "[チーム メンバーの追加/編集] フォームを構成します。フィールドを有効/無効にしたり、フィールドを必須としてマークしたり、独自のカスタム フィールドを追加したりできます。",
+    "addCustomField": "+ カスタムフィールドを追加",
+    "fieldLabel": "フィールドラベル",
+    "group": "グループ",
+    "groupPlaceholderLead": "例：お問い合わせ情報",
+    "groupPlaceholderUser": "例: 追加の詳細",
+    "dataType": "データ型",
+    "options": "オプション (カンマ区切り)",
+    "requiredLead": "必須 - リードを登録するには、チームのパートナーがこれを入力する必要があります",
+    "requiredUser": "必須 - チームメンバーを追加するときに入力する必要があります",
+    "creating": "作成...",
+    "createField": "フィールドの作成",
+    "columns": {
+      "field": "分野",
+      "group": "グループ",
+      "type": "タイプ",
+      "required": "必須",
+      "enabled": "有効",
+      "kind": "親切"
+    },
+    "kind": {
+      "custom": "カスタム",
+      "core": "コア（ロック済み）",
+      "standard": "標準"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "文章",
+    "TEXTAREA": "長文",
+    "NUMBER": "番号",
+    "CURRENCY": "通貨",
+    "DATE": "日付",
+    "SELECT": "落ちる",
+    "LIST": "リスト"
+  },
+  "picker": {
+    "searchPlaceholder": "リードフィールドを検索...",
+    "summary": "{{shown}}表示 · {{mandatory}}必須",
+    "mandatory": "必須",
+    "noMatch": "一致するフィールドはありません。"
+  },
+  "statuses": {
+    "intro": "リードのステータスとサブステータス - 誰かがリードを更新するときにそれぞれが要求するもの (日付と時刻、リードのフィールド)。",
+    "add": "+ ステータスの追加",
+    "columns": {
+      "order": "注文",
+      "status": "状態",
+      "subStatuses": "サブステータス",
+      "asksFor": "求めるもの",
+      "active": "アクティブ"
+    },
+    "moveUp": "上に移動",
+    "moveDown": "下に移動",
+    "defaultBadge": "新しいリードのデフォルト",
+    "bookingBadge": "予約状況",
+    "asksForLabel": "{{label}}を要求します",
+    "asksForDateTime": "日付と時刻を尋ねる",
+    "none": "なし",
+    "dateTime": "日付と時刻",
+    "scheduledOn": "{{names}}で",
+    "fieldsSummary_other": "{{count}}フィールド ( {{mandatory}}必須)",
+    "deleteConfirm": "ステータス「 {{name}} 」を削除しますか?これを元に戻すことはできません。",
+    "editTitle": "ステータスの編集 - {{name}}",
+    "newTitle": "新しいステータス",
+    "name": "ステータス名",
+    "colour": "色",
+    "active": "アクティブ",
+    "isDefault": "新しいリードのデフォルトのステータス",
+    "isBooking": "予約ステータス（予約完了で設定）",
+    "whenMoved": "リードがこのステータスに移行すると",
+    "askSchedule": "日時を尋ねる（スケジューラー）",
+    "scheduleLabelPlaceholder": "ラベル、例: Visit at",
+    "fieldsToShow": "更新フォームに表示するリードフィールド",
+    "subStatusesTitle": "サブステータス",
+    "subStatusesHint": "各サブステータスは独自の日付と時刻を要求し、独自のフィールドを追加できます (上記のステータスのフィールドの上に表示されます)。",
+    "subStatusName": "サブステータス名",
+    "subFields": "フィールド ( {{count}} )",
+    "subScheduleLabelPlaceholder": "日付と時刻のラベル、例: 折り返し電話",
+    "addSubStatus": "+ サブステータスを追加",
+    "saveStatus": "ステータスの保存",
+    "createStatus": "ステータスの作成"
+  },
+  "notifications": {
+    "intro": "リードがステータスに達すると、即時、または予定された日付と時刻の前後の設定時間に、適切な担当者に通知します。",
+    "add": "+ 通知を追加",
+    "columns": {
+      "notification": "通知",
+      "whenStatusIs": "ステータスが次の場合",
+      "sends": "送信します",
+      "to": "に",
+      "via": "経由",
+      "enabled": "有効"
+    },
+    "anyStatus": "あらゆるステータス",
+    "anySubStatus": "任意のサブステータス",
+    "inactiveOption": "{{name}} (非アクティブ)",
+    "emptyRules": "通知はまだありません。見込み客がステータスに達したときにチームに通知するために通知を追加します。",
+    "jobs": {
+      "title": "スケジュールされて送信されました",
+      "firesAt": "ファイアーズ・アット",
+      "notification": "通知",
+      "lead": "鉛",
+      "status": "状態",
+      "details": "詳細",
+      "empty": "まだ何もスケジュールされておらず、送信されていません。",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "保留中",
+      "PROCESSING": "処理",
+      "SENT": "送信済み",
+      "FAILED": "失敗した",
+      "SKIPPED": "スキップされました",
+      "CANCELLED": "キャンセル"
+    },
+    "deliveryStatus": {
+      "SENT": "送信済み",
+      "FAILED": "失敗した",
+      "SKIPPED": "スキップしました"
+    },
+    "deliveryChannel": {
+      "IN_APP": "アプリ内",
+      "EMAIL": "電子メール",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "割り当てられたユーザー",
+      "owner": "所有者",
+      "updatedBy": "更新者",
+      "role": "役割: {{name}}"
+    },
+    "channels": {
+      "inApp": "アプリ内",
+      "email": "電子メール",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "通知「 {{name}} 」を削除しますか?保留中のリマインダーはキャンセルされます。",
+    "testPrompt": "どのリードIDを使用して、この通知のテストを自分 (アプリ内) に送信しますか?",
+    "testSent": "あなたのベルに送信されました: {{title}} {{message}}",
+    "headersInvalid": "Webhookヘッダーは有効なJSONである必要があります (例: {\"Authorization\": \"Bearer xyz\"})",
+    "editTitle": "通知の編集",
+    "newTitle": "新しい通知",
+    "name": "名前",
+    "namePlaceholder": "例: サイト訪問のリマインダー",
+    "whenStatus": "リードのステータスが次の場合",
+    "subStatus": "サブステータス",
+    "send": "送信 (スケジューラー)",
+    "custom": "カスタム...",
+    "modeBefore": "予定時間の前に",
+    "modeAfter": "予定時間以降",
+    "noScheduleWarning": "このステータスでは日付と時刻が要求されないため、「スケジュールされた時刻の前/時刻/後」通知が発生することはありません。",
+    "noScheduleFix": "[ステータスとサブステータス] で<strong>[日付と時刻を尋ねる</strong>] をオンにするか、すぐに送信します。",
+    "sendTo": "送信先 (任意の組み合わせ)",
+    "recipientAssigned": "割り当てられたユーザー (主所有者)",
+    "recipientOwner": "アカウント所有者/管理者",
+    "recipientUpdatedBy": "ステータスを更新した人",
+    "everyoneWithRole": "役割のある皆さん",
+    "specificUsers": "特定のユーザー (アクティブ)",
+    "inactiveNever": "非アクティブなユーザーは、選択されていても通知を受け取りません。",
+    "deliverVia": "経由で配達します",
+    "channelInApp": "アプリ内（ベル）",
+    "channelEmail": "電子メール",
+    "channelWebhook": "Webhook ( WhatsApp / SMSプロバイダー)",
+    "emailHint": "電子メールは各受信者の電子メール アドレスに送信され、サーバー (backend/.env) に SMTP が設定されている必要があります。それまでは、電子メール送信はスキップされたものとして記録されます。",
+    "webhookUrl": "Webhook URL ( POST 、 JSON )",
+    "headers": "ヘッダー ( JSON )",
+    "content": "お知らせ内容",
+    "title": "タイトル",
+    "message": "メッセージ",
+    "insertIntoTitle": "タイトルに挿入",
+    "insertIntoMessage": "メッセージに挿入",
+    "anyLeadField": "<code1>{{example1}}</code1>や<code2>{{example2}}</code2>など、任意のリードフィールドも機能します。",
+    "preview": "プレビュー（サンプルリード）",
+    "enabled": "有効",
+    "saveRule": "通知の保存",
+    "createRule": "通知の作成",
+    "variables": {
+      "customerName": "リード名",
+      "customerMobile": "リードモバイル",
+      "customerEmail": "リードメール",
+      "registrationId": "リードID",
+      "status": "状態",
+      "subStatus": "サブステータス",
+      "scheduleAt": "予定日時",
+      "assignedTo": "割り当てられたユーザー",
+      "updatedBy": "更新者",
+      "recipient": "受信者名",
+      "project": "プロジェクト",
+      "notes": "最新のメモ",
+      "partner": "パートナー名"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "ステータス設定直後",
+      "AT": "予定時刻に",
+      "A1D": "予定日から1日後（経過観察）"
+    },
+    "immediately": "すぐに",
+    "atScheduled": "予定時刻に",
+    "before": {
+      "MINUTES_other": "予定時刻の{{count}}分前",
+      "HOURS_other": "予定時刻の{{count}}時間前",
+      "DAYS_other": "予定時刻の{{count}}日前",
+      "WEEKS_other": "予定時刻の{{count}}週間前",
+      "MONTHS_other": "予定時刻の{{count}}か月前",
+      "YEARS_other": "予定時刻の{{count}}年前"
+    },
+    "after": {
+      "MINUTES_other": "予定時刻から{{count}}分経過",
+      "HOURS_other": "予定時刻から{{count}}時間遅れ",
+      "DAYS_other": "予定時刻から{{count}}日後",
+      "WEEKS_other": "予定時刻から{{count}}週間後",
+      "MONTHS_other": "予定時刻から{{count}}か月遅れ",
+      "YEARS_other": "予定時刻から{{count}}年後"
+    },
+    "units": {
+      "MINUTES_other": "分",
+      "HOURS_other": "時間",
+      "DAYS_other": "日",
+      "WEEKS_other": "週",
+      "MONTHS_other": "月",
+      "YEARS_other": "年"
+    }
+  }
+}

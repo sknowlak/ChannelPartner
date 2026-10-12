@@ -1,0 +1,83 @@
+{
+  "title": "Ekibi Yönet",
+  "tabs": {
+    "members": "Ekip Üyeleri",
+    "roles": "Roller ve İzinler",
+    "profile": "Profilim"
+  },
+  "roles": {
+    "owner": "Mal sahibi",
+    "member": "Ekip Üyesi"
+  },
+  "profile": {
+    "updated": "Profil güncellendi.",
+    "basicInfo": "Temel Bilgiler",
+    "organisationInfo": "Organizasyon Bilgileri",
+    "preferences": "Tercihler",
+    "companyName": "Şirket/Kuruluş Adı",
+    "city": "Şehir",
+    "state": "Durum",
+    "currencyHelp": "Ekibiniz genelinde bütçeleri ve rezervasyon değerlerini görüntülemek için kullanılır.",
+    "useDeviceTimezone": "Cihazın saat dilimini kullan ( {{timezone}} )",
+    "securityRole": "Güvenlik ve Rol",
+    "newPassword": "Yeni Şifre (değişmeden kalması için boş bırakın)",
+    "currentPassword": "Mevcut Şifre",
+    "memberSince": "Üyelik Tarihi",
+    "languageSaved": "Dil, hesabınıza kaydedildi; oturum açtığınız her cihazda kullanılacak."
+  },
+  "members": {
+    "intro": "Ekibinize kişi ekleyin, düzenleyin, devre dışı bırakın veya kaldırın; bu kişiler aynı potansiyel müşterilere erişimi paylaşır.",
+    "noPermission": "Ekip üyelerini ekleme, düzenleme veya kaldırma izniniz yok.",
+    "addNew": "+ Yeni Kullanıcı Ekle",
+    "passwordLabel": "{{label}} (en az 8 karakter)",
+    "rolePermissions": "Rol ve İzinler",
+    "adding": "Ekleniyor...",
+    "addMember": "Ekip Üyesi Ekle",
+    "tabAll": "Hepsi ( {{count}} )",
+    "tabActive": "Aktif ( {{count}} )",
+    "tabInactive": "Etkin değil ( {{count}} )",
+    "searchPlaceholder": "Ad veya kullanıcı adını arayın...",
+    "allTimezones": "Tüm zaman dilimleri",
+    "perPage": "Sayfa başına girişler",
+    "contact": "Temas etmek",
+    "added": "Eklendi",
+    "toggleActive": "Etkin - devre dışı bırakmak için tıklayın",
+    "toggleInactive": "Etkin değil - etkinleştirmek için tıklayın",
+    "empty": "Henüz ekip üyesi yok.",
+    "noMatch": "Bu filtrelerle eşleşen ekip üyesi yok.",
+    "showing": "{ {{total}} girişten {{from}} - {{to}} arası gösteriliyor",
+    "firstPage": "İlk sayfa",
+    "previousPage": "Önceki sayfa",
+    "nextPage": "Sonraki sayfa",
+    "lastPage": "Son sayfa"
+  },
+  "editMember": {
+    "title": "Kullanıcıyı Düzenle",
+    "noPermission": "Ekip üyelerini düzenleme izniniz yok.",
+    "backToTeam": "Takıma Geri Dön",
+    "cantChangeOwn": "Kendi rolünüzü veya durumunuzu değiştiremezsiniz.",
+    "needsManageRoles": "Bir üyenin rolünü değiştirmek için Rolleri Yönetme izni gerekir.",
+    "addedBy": "Tarafından eklendi",
+    "addedOn": "Eklenme Tarihi"
+  },
+  "rolesPage": {
+    "intro": "Süper Yönetici, Yönetici ve Yönetici yerleşiktir ve değiştirilemez; başka herhangi bir şey için özel bir rol oluşturun.",
+    "noPermission": "Rolleri yönetme izniniz yok.",
+    "createCustom": "+ Özel Rol Oluştur",
+    "roleName": "Rol Adı",
+    "permissions": "İzinler",
+    "members": "Üyeler",
+    "creating": "Oluşturuluyor...",
+    "createRole": "Rol Oluştur",
+    "systemRole": "Sistem rolü",
+    "builtIn": "Yerleşik",
+    "empty": "Henüz rol yok."
+  },
+  "permissions": {
+    "MANAGE_LEADS": "Potansiyel Müşterileri Yönetin (oluşturun, ilerleyin, ayırtın)",
+    "MANAGE_TEAM": "Ekibi Yönet (üye ekleme, düzenleme, kaldırma)",
+    "MANAGE_ROLES": "Rolleri ve İzinleri Yönet",
+    "MANAGE_SETTINGS": "Ayarları Yönet (potansiyel müşteri formu alanları)",
+    "none": "İzin yok"
+  }
+}

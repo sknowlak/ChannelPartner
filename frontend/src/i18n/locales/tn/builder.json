@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Kgoro ya Moagi",
+    "referrals": "Diphetisetso",
+    "builderLogin": "Tsena ya Moagi",
+    "partnerLogin": "Tsena ya Molekane wa Tšhanele"
+  },
+  "login": {
+    "title": "Saena ya moagi",
+    "hint": "Diakhaonto tsa moagi di tlhamilwe ke Leadrat . Botsa motsamaisi wa gago fa o se na yone."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Ke emetse tshwetso ya gago",
+    "ACCEPTED": "E amogetswe",
+    "REJECTED": "E gannwe"
+  },
+  "list": {
+    "title": "Diphetisetso",
+    "allProjects": "Diporojeke tsotlhe",
+    "allStatuses": "Maemo otlhe",
+    "count_one": "{{count}} thomelo",
+    "count_other": "{{count}} diphetisetso",
+    "columns": {
+      "referral": "Thomelo",
+      "customer": "Moreki",
+      "project": "Porojeke",
+      "sourcePartner": "Modirisani wa Motswedi",
+      "status": "Seemo",
+      "booking": "Go buka",
+      "registered": "E kwadisitswe"
+    },
+    "booked": "E beeleditswe",
+    "empty": "Ga go ise go nne le diphetisetso."
+  },
+  "detail": {
+    "customer": "Moreki",
+    "sourcePartner": "Modirisani wa Motswedi",
+    "attributionNote": "(kabo - ga e kake ya fetolwa)",
+    "leadStatus": "Boemo jwa Ketapele",
+    "protectedUntil": "E Sireleditswe Go Fitlha",
+    "referral": "Thomelo",
+    "reason": "Lebaka: {{reason}}",
+    "booking": "Go buka",
+    "bookedOwner": "E beeleditswe - ke wena mong wa tiro",
+    "notBooked": "Ga e ise e beelediwe",
+    "sharedAfterBooking": "E abelanwa morago ga go buka",
+    "accept": "Amogela Thomelo",
+    "confirmBooking": "Tlhomamisa Peeletso",
+    "reject": "Gana Thomelo",
+    "rejectReasonLabel": "Lebaka la go gana (le bontshiwa molekane) *",
+    "rejectConfirm": "Galala",
+    "confirmBookingPrompt": "A o tlhomamisa gore o beeleditse? Bong jwa tiro bo fudugela kwa go wena mme molekane o tshwanelegela khomishene.",
+    "notice": {
+      "booked": "Go netefaditswe go buka.",
+      "accepted": "Thomelo e amogetswe.",
+      "rejected": "Thomelo e gannwe."
+    },
+    "backToReferrals": "Boela kwa Diphetisong"
+  },
+  "history": {
+    "title": "Hisetori",
+    "actor": {
+      "system": "Thulaganyo",
+      "partner": "Molekane wa kanale",
+      "admin": "Motsamaisi Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Kwadiso ya molekane e amogetswe",
+      "DUPLICATE_CHECK_COMPLETED": "Tlhotlhomiso ya poeletso e weditswe - ga go a bonwa poeletso e e dirang",
+      "REGISTRATION_ACCEPTED": "Ikwadiso e amogetswe",
+      "PROTECTION_GRANTED_one": "{{count}} -tshireletso ya letsatsi e neetswe",
+      "PROTECTION_GRANTED_other": "{{count}} -tshireletso ya letsatsi e neetswe",
+      "STAGE_UPDATED": "Seemo se tlhabolotswe go nna {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Tšhemo e e tlhabolotsweng ya {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "Dikarolo tse di tlhabolotsweng tsa {{count}}",
+      "LEAD_ASSIGNED": "E abetswe {{name}}",
+      "LEAD_UNASSIGNED": "Ga e a abelwa",
+      "REFERRAL_ACCEPTED": "Moagi o amogetse thomelo",
+      "REFERRAL_REJECTED": "Moagi o ganne thomelo. Lebaka: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Maiteko a go ikwadisa gape a a dirilweng ke {{partner}} a gannwe",
+      "BOOKING_COMPLETED": "Go buka go weditswe",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Bong jwa tiro bo fetiseditswe go Moagi",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Kabo ya molekane e bolokilwe",
+      "COMMISSION_ELIGIBILITY_CREATED": "Go tshwanelega ga Khomišene go tlhamilwe",
+      "HANDOVER_COMPLETED": "Neelano e weditswe",
+      "ADMIN_PROTECTION_RELEASED": "Motsamaisi o golotse tshireletso ya dipoeletso go sa le gale. Lebaka: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Motsamaisi o abetse ikwadiso gape go tswa go {{from}} go ya go {{to}} . Lebaka: {{reason}}"
+    }
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "सेटिङ्ग",
+    "noPermission": "सेटिङ्ग ब्यवस्थापन यायेत छंके उजं मदु ।"
+  },
+  "categories": {
+    "lead": "अब्ले तक",
+    "user": "छ्यलामि",
+    "integrations": "एकीकरण"
+  },
+  "leadTabs": {
+    "fields": "ख्यः",
+    "statuses": "अवस्था व उप-स्थिति",
+    "notifications": "सुचं व धलः दयेकीपिं"
+  },
+  "fields": {
+    "leadIntro": "लीड क्याप्चर फारम कन्फिगर या: फिल्डयात सक्षम/असक्षम या, माःगु चिं तयादिसँ, वा थःगु हे कस्टम फिल्ड तनादिसँ।",
+    "userIntro": "एड/एडिट टिम मेम्बर फारम कन्फिगर या: फिल्डयात सक्षम/असक्षम या, माःगु चिं तयादिसँ, वा थःगु हे कस्टम फिल्ड तयादिसँ।",
+    "addCustomField": "+ कस्टम फिल्ड तनादिसँ",
+    "fieldLabel": "फिल्ड लेबल",
+    "group": "समूह",
+    "groupPlaceholderLead": "गथेकि न्यनेकनेया जानकारि",
+    "groupPlaceholderUser": "गथेकि तँसा विवरण",
+    "dataType": "डाटा ताजि",
+    "options": "विकल्प (अल्पविरामं अलग यानातःगु)",
+    "requiredLead": "माःगु - छिगु पुचलय् च्वंपिं पार्टनरतसें लीड दर्ता यायेत थुकियात जायेके हे माः ।",
+    "requiredUser": "माःगु - पुचःया दुजः तनाब्यूबलय् जायेके हे माः",
+    "creating": "सिर्जना यानाच्वना ...",
+    "createField": "फिल्ड दयेकि",
+    "columns": {
+      "field": "बु",
+      "group": "समूह",
+      "type": "ता",
+      "required": "मागु",
+      "enabled": "सक्षम",
+      "kind": "ता"
+    },
+    "kind": {
+      "custom": "दस्तूर",
+      "core": "कोर (तालं ग्वयातःगु)",
+      "standard": "जि"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "पाठ",
+    "TEXTAREA": "ताःहाकःगु टेक्स्ट",
+    "NUMBER": "संख्या",
+    "CURRENCY": "धेबा",
+    "DATE": "मिति",
+    "SELECT": "ड्रपडाउन",
+    "LIST": "दर्ता यायेगु"
+  },
+  "picker": {
+    "searchPlaceholder": "लीड फिल्ड मालादिसँ ...",
+    "summary": "{{shown}} क्यन · {{mandatory}} अनिवार्य",
+    "mandatory": "याय मागु",
+    "noMatch": "छुं नं ख्यः ज्वःलाःगु मदु ।"
+  },
+  "statuses": {
+    "intro": "छिगु लीड स्टेटस व सब-स्टेटस - सुनां नं लीड अपडेट याइबलय् प्रत्येकं छु फ्वनी (छगू तिथि व ई, लीड फिल्ड) ।",
+    "add": "+ अवस्था तनादिसँ",
+    "columns": {
+      "order": "उजं",
+      "status": "अवस्था",
+      "subStatuses": "उप-स्थिति",
+      "asksFor": "न्यन",
+      "active": "कर्ता"
+    },
+    "moveUp": "च्वय् हुँ ।",
+    "moveDown": "क्वय् हुँ ।",
+    "defaultBadge": "न्हूगु लीडया निंतिं पूर्वनिर्धारित",
+    "bookingBadge": "बुकिङ्ग अवस्था",
+    "asksForLabel": "{{label}} या निंतिं न्यँ ।",
+    "asksForDateTime": "न्हिल्याः व ई न्यन",
+    "none": "छु न मस्यु",
+    "dateTime": "तिथि व ई",
+    "scheduledOn": "{{names}} य्",
+    "fieldsSummary_one": "{{count}} फिल्ड ( {{mandatory}} अनिवार्य)",
+    "fieldsSummary_other": "{{count}} ख्यः ( {{mandatory}} अनिवार्य)",
+    "deleteConfirm": "अवस्था \" {{name}} \" हुयाछ्व ? थ्व लित काये फै मखु ।",
+    "editTitle": "अवस्था सम्पादन या - {{name}}",
+    "newTitle": "न्हुगु अवस्था",
+    "name": "अवस्था नां",
+    "colour": "रंग",
+    "active": "कर्ता",
+    "isDefault": "न्हूगु लीडया निंतिं पूर्वनिर्धारित अवस्था",
+    "isBooking": "बुकिङ्गया अवस्था (पूवंगु बुकिङ्गं सेट यात)",
+    "whenMoved": "गुबलय् छम्ह लीडयात थुगु अवस्थाय् यंकी",
+    "askSchedule": "न्हिल्याः व ईया निंतिं न्यँ (तालिका दयेकीम्ह)",
+    "scheduleLabelPlaceholder": "लेबल, गथेकि थन झासँ",
+    "fieldsToShow": "अपडेट फारमय् क्यनेत लीड फिल्ड",
+    "subStatusesTitle": "उप-स्थिति",
+    "subStatusesHint": "प्रत्येक उप-स्थितिं थःगु हे तिथि व ई न्यनेफइ व थःगु हे फिल्ड तनेफइ - च्वय् च्वंगु स्थितिया फिल्डया च्वय् क्यनातःगु दु।",
+    "subStatusName": "उप-स्थिति नां",
+    "subFields": "फिल्ड ( {{count}} )",
+    "subScheduleLabelPlaceholder": "न्हिल्याः व ईया लेबल, गथेकि हानं कल या",
+    "addSubStatus": "+ उप-स्थिति तनादिसँ",
+    "saveStatus": "अवस्थायात बचे या",
+    "createStatus": "अवस्था दयेकि"
+  },
+  "notifications": {
+    "intro": "छुं लीड छुं स्थितिइ थ्यनीबलय् पाय्छि मनूतय्त सुचं बियादिसँ - तुरुन्त हे, वा उकी निर्धारित तिथि व ई स्वयां न्ह्यः/लिपा छगू निश्चित ई ।",
+    "add": "+ सुचं तनादिसँ",
+    "columns": {
+      "notification": "सुचं",
+      "whenStatusIs": "अवस्था गबले जुइ",
+      "sends": "छ्वइ",
+      "to": "त",
+      "via": "जुका",
+      "enabled": "सक्षम"
+    },
+    "anyStatus": "छुं नं अवस्था",
+    "anySubStatus": "छुं नं उप-स्थिति",
+    "inactiveOption": "{{name}} (निष्क्रिय)",
+    "emptyRules": "आःतक सुचं मदुनि - लीड छगू अवस्थाय् थ्यनीबलय् छिगु पुचःयात सचेत यायेत छगू तनादिसँ ।",
+    "jobs": {
+      "title": "ज्याझ्वः क्वःछिनातःगु व छ्वयाहःगु",
+      "firesAt": "मि च्यात",
+      "notification": "सुचं",
+      "lead": "अब्ले तक",
+      "status": "अवस्था",
+      "details": "विवरण",
+      "empty": "आःतक छुं नं क्वःछिनातःगु बाय् छ्वयाहःगु मदुनि ।",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "बाँकी",
+      "PROCESSING": "प्रशोधन",
+      "SENT": "छ्वल",
+      "FAILED": "असफल",
+      "SKIPPED": "त्वःफिकल",
+      "CANCELLED": "रद्द जुल"
+    },
+    "deliveryStatus": {
+      "SENT": "छ्वल",
+      "FAILED": "असफल",
+      "SKIPPED": "त्वःफिकल"
+    },
+    "deliveryChannel": {
+      "IN_APP": "इन-एप",
+      "EMAIL": "इमेल",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "लःल्हानातःम्ह छ्यलामि",
+      "owner": "थुवा",
+      "updatedBy": "अपडेट यात",
+      "role": "भूमिका : {{name}}"
+    },
+    "channels": {
+      "inApp": "इन-एप",
+      "email": "इमेल",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "सुचं \" {{name}} \" हुयाछ्व ? थुकिं पेन्डिङ्ग रिमाइन्डर रद्द यात ।",
+    "testPrompt": "गुगु लीड ID छ्यलाः थुगु सुचंया जाँच थःत (इन-एप) छ्वयादिसँ ?",
+    "testSent": "छिगु घण्टीइ छ्वयाहल : {{title}} {{message}}",
+    "headersInvalid": "Webhook हेडर वैध JSON जुइमाः, गथेकि {\"अधिकार\" : \"बेयरर एक्सवाइजेड\"}",
+    "editTitle": "सुचं सम्पादन या",
+    "newTitle": "न्हुगु सुचं",
+    "name": "नाँ",
+    "namePlaceholder": "गथेकि साइट भ्रमणया लुमन्ति",
+    "whenStatus": "गुबलय् छम्ह नायःया अवस्था जुइ",
+    "subStatus": "उप-स्थिति",
+    "send": "छ्व (तालिका दयेकीम्ह)",
+    "custom": "दस्तूर...",
+    "modeBefore": "क्वःछिनातःगु ई स्वयां न्ह्यः",
+    "modeAfter": "क्वःछिनातःगु ई लिपा",
+    "noScheduleWarning": "थ्व स्थितिं तिथि व ई न्यनी मखु, उकिं \"निर्धारित ई न्ह्यः/इ/लिपा\" सुचं गबलें नं फायर जुइमखु।",
+    "noScheduleFix": "स्टेटस व सब-स्टेटस अन्तर्गत थुकिया निंतिं <strong>न्हिल्याः व ई</strong> न्यँ चायेकि, बाय् उघ्रिमय् छ्व ।",
+    "sendTo": "छ्व (छुं नं संयोजन)",
+    "recipientAssigned": "लःल्हानातःम्ह छ्यलामि (मुख्य थुवाः)",
+    "recipientOwner": "खाता थुवाः / प्रशासक",
+    "recipientUpdatedBy": "अवस्था अपडेट याःम्ह मनू",
+    "everyoneWithRole": "भूमिका दुपिं सकसितं",
+    "specificUsers": "विशेष प्रयोगकर्ता (सक्रिय)",
+    "inactiveNever": "निष्क्रिय प्रयोगकर्तातय् त ल्यःसां गुबलें नं सुचं वइ मखु ।",
+    "deliverVia": "मार्फत थ्यंकि",
+    "channelInApp": "इन-एप (घन्टि)",
+    "channelEmail": "इमेल",
+    "channelWebhook": "Webhook ( WhatsApp / SMS प्रदायक)",
+    "emailHint": "इमेल प्रत्येक प्राप्तकर्ताया इमेल एड्रेसय् वनी व सर्भरय् एसएमटीपी सेट अप यायेमाः (backend/.env); अबलय् तक इमेल छ्वयाहःगु त्वःफिकातःगु कथं लग जुइ ।",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "हेडर ( JSON )",
+    "content": "सुचंया विषयवस्तु",
+    "title": "उपाधि",
+    "message": "खँ",
+    "insertIntoTitle": "शीर्षकय् दुथ्याकि",
+    "insertIntoMessage": "हसनाय् दुथ्याकि",
+    "anyLeadField": "छुं नं लीड फिल्डं नं ज्या याइ, दसु <code1>{{example1}}</code1> वा <code2>{{example2}}</code2> ।",
+    "preview": "पूर्वावलोकन (नमूना लीड)",
+    "enabled": "सक्षम",
+    "saveRule": "सुचं बचे या",
+    "createRule": "सुचं दयेकि ।",
+    "variables": {
+      "customerName": "मू नां",
+      "customerMobile": "लीड मोबाइल",
+      "customerEmail": "लीड इमेल",
+      "registrationId": "लीड ID",
+      "status": "अवस्था",
+      "subStatus": "उप-स्थिति",
+      "scheduleAt": "क्वःछिनातःगु न्हिल्याः व ई",
+      "assignedTo": "लःल्हानातःम्ह छ्यलामि",
+      "updatedBy": "अपडेट यात",
+      "recipient": "काइम्हसिया नां",
+      "project": "प्रोजेक्ट",
+      "notes": "लिपांगु नोट",
+      "partner": "पार्टनरया नां"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "अवस्था सेट जुइबलय् उघ्रिमय्",
+      "AT": "क्वःछिनातःगु इलय्",
+      "A1D": "क्वःछिनातःगु ईया १ न्हु लिपा (लिउलिउ जाँच)"
+    },
+    "immediately": "याकन",
+    "atScheduled": "क्वःछिनातःगु इलय्",
+    "before": {
+      "MINUTES_one": "क्वःछिनातःगु ई स्वयां छगू मिनेट न्ह्यः {{count}}",
+      "MINUTES_other": "क्वःछिनातःगु ई स्वयां छुं मिनेट न्ह्यः {{count}}",
+      "HOURS_one": "क्वःछिनातःगु ई स्वयां छघौ न्ह्यः {{count}}",
+      "HOURS_other": "क्वःछिनातःगु ई स्वयां घौछि न्ह्यः {{count}}",
+      "DAYS_one": "क्वःछिनातःगु ई स्वयां छन्हु न्ह्यः {{count}}",
+      "DAYS_other": "क्वःछिनातःगु ई स्वयां न्हि न्ह्यः {{count}}",
+      "WEEKS_one": "क्वःछिनातःगु ई स्वयां छवाः न्ह्यः {{count}}",
+      "WEEKS_other": "क्वःछिनातःगु ई स्वयां छवाः न्ह्यः {{count}}",
+      "MONTHS_one": "क्वःछिनातःगु ई स्वयां लच्छि न्ह्यः {{count}}",
+      "MONTHS_other": "{{count}} क्वःछिनातःगु ई स्वयां ला न्ह्यः",
+      "YEARS_one": "निर्धारित ई स्वयां दच्छि न्ह्यः {{count}}",
+      "YEARS_other": "निर्धारित ई स्वयां दँ न्ह्यः {{count}}"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} क्वःछिनातःगु ई लिपाया मिनेट",
+      "MINUTES_other": "क्वःछिनातःगु ई लिपा {{count}} मिनेट",
+      "HOURS_one": "क्वःछिनातःगु ईया छघौ लिपा {{count}}",
+      "HOURS_other": "क्वःछिनातःगु ईया घौछि लिपा {{count}}",
+      "DAYS_one": "क्वःछिनातःगु ईया छन्हु लिपा {{count}}",
+      "DAYS_other": "क्वःछिनातःगु ई लिपाया {{count}} न्हि",
+      "WEEKS_one": "क्वःछिनातःगु ईया छवाः लिपा {{count}}",
+      "WEEKS_other": "क्वःछिनातःगु ईया वाः लिपा {{count}}",
+      "MONTHS_one": "क्वःछिनातःगु ईया लच्छि लिपा {{count}}",
+      "MONTHS_other": "क्वःछिनातःगु ईया ला लिपा {{count}}",
+      "YEARS_one": "क्वःछिनातःगु ईया दच्छि लिपा {{count}}",
+      "YEARS_other": "निर्धारित ई लिपाया {{count}} दँ"
+    },
+    "units": {
+      "MINUTES_one": "मिनेट",
+      "MINUTES_other": "मिनेट",
+      "HOURS_one": "घण्टा",
+      "HOURS_other": "घण्टा",
+      "DAYS_one": "न्ही",
+      "DAYS_other": "३ न्हु ५.",
+      "WEEKS_one": "वा",
+      "WEEKS_other": "वाः",
+      "MONTHS_one": "ला",
+      "MONTHS_other": "२ ला",
+      "YEARS_one": "ठुसी",
+      "YEARS_other": "दँ"
+    }
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "I mo Piombo",
+    "signedInAs": "Firmatu cum'è {{name}} ( {{partnerId}} ) · volte mostrati in {{timezone}}",
+    "addLead": "+ Aggiungi Piombo",
+    "tabs": {
+      "all": "Tutti ( {{count}} )",
+      "pending": "Pendente ( {{count}} )",
+      "booked": "Riservatu ( {{count}} )"
+    },
+    "searchPlaceholder": "Ricerca per nome, mobile, o ID di registrazione ...",
+    "manageColumns": "Gestisce e Culonni",
+    "rowsPerPage": "Righe per pagina",
+    "registrationId": "ID di registrazione",
+    "emptyState": "Nisuna guida ancora - registrate u vostru primu.",
+    "noMatch": "Nisun lead currisponde à questi filtri.",
+    "showing": "Mostra {{from}} - {{to}} di {{total}} entrate",
+    "actions": {
+      "preview": "Preview & aghjurnamentu rapidu",
+      "history": "Storia",
+      "email": "E-mail",
+      "whatsapp": "WhatsApp",
+      "call": "Chjama"
+    },
+    "pagination": {
+      "first": "Prima pagina",
+      "previous": "Pagina precedente",
+      "next": "Pagina dopu",
+      "last": "Ultima pagina"
+    }
+  },
+  "columns": {
+    "status": "Status",
+    "assignTo": "Assignà à",
+    "booked": "Riservatu",
+    "protectionUntil": "Prutezzione Finu à"
+  },
+  "booking": {
+    "booked": "Riservatu",
+    "pending": "In attesa"
+  },
+  "assign": {
+    "unassigned": "Unassigned",
+    "owner": "{{name}} (Proprietariu)",
+    "inactive": "{{name}} (inattivu)",
+    "unknownUser": "Utente scunnisciutu",
+    "assignedTo": "Assignatu à {{name}}"
+  },
+  "form": {
+    "addTitle": "Aghjunghjite Piombo",
+    "editTitle": "Edit Lead",
+    "noPermissionAdd": "Ùn avete micca permessu di registrà i leads.",
+    "noPermissionEdit": "Ùn avete micca permessu di edità i leads.",
+    "selectPlaceholder": "Sceglie...",
+    "commaSeparated": "Separate da virgula",
+    "phonePlaceholder": "Numeru di telefonu",
+    "countryCode": "Codice di u paese"
+  },
+  "project": {
+    "none": "Nisun prughjettu ancora (micca riferitu)",
+    "notInList": "{{project}} (micca in a lista di prughjetti)"
+  },
+  "journey": {
+    "customer": "Cliente",
+    "currentOwner": "Pruprietariu attuale",
+    "protectionExpiry": "Scadenza di prutezzione",
+    "leadStatus": "Status di piombu",
+    "scheduled": "Pianificatu",
+    "assignedTo": "Assignatu à",
+    "referral": "Riferimentu",
+    "builderReason": "U mutivu di u custruttore: {{reason}}",
+    "bookedHint": "Riservatu da u custruttore - a pruprietà operativa si trasfirìu à u custruttore; a vostra attribuzione è l'elegibilità di cumissioni sò manteni.",
+    "notBookedHint": "E riservazioni sò cunfirmate da u custruttore una volta chì accettanu u riferimentu.",
+    "quickUpdate": "Actualizazione rapida",
+    "leadDetails": "Dettagli principali",
+    "progressHistory": "Storia di u prugressu",
+    "timesIn": "(tempi in {{timezone}} )",
+    "backToMyLeads": "Torna à My Leads",
+    "editLead": "Edit Lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "Micca riferitu (senza prughjettu)",
+    "PENDING_BUILDER": "Aspittendu u custruttore",
+    "ACCEPTED": "Acceptatu da u custruttore",
+    "REJECTED": "Rifiutata da u custruttore"
+  },
+  "preview": {
+    "ariaLabel": "Preview di piombu",
+    "title": "Lead Preview",
+    "source": "Fonte",
+    "location": "Locu",
+    "scheduled": "Pianificatu",
+    "registered": "Arregistratu",
+    "latestNote": "Ultima nota",
+    "quickUpdate": "Actualizazione rapida",
+    "fullDetails": "Tutti i dettagli",
+    "editLead": "Edit Lead",
+    "history": "Storia"
+  },
+  "quick": {
+    "assignedTo": "Assignatu à",
+    "status": "Status",
+    "subStatus": "Sub-status",
+    "selectSubStatus": "Selezziunà u sottustatu ...",
+    "none": "Nimu",
+    "scheduledAt": "Pianu à",
+    "localTime": "ora lucale",
+    "note": "Nota",
+    "notePlaceholder": "Chì hè accadutu in questa chjama / visita? (opcional)",
+    "updateStatus": "Update Status",
+    "statusUpdated": "Status aghjurnatu",
+    "bookedLocked": "Stu piombu hè riservatu - u so statutu ùn pò più esse cambiatu.",
+    "viewOnly": "Pudete vede sta guida, ma u vostru rolu ùn pò micca aghjurnà."
+  },
+  "history": {
+    "title": "Storia - {{registrationId}}",
+    "tabs": {
+      "all": "Tuttu",
+      "status": "Status",
+      "assignment": "Assignazione",
+      "notes": "Notes"
+    },
+    "doneBy": "Fattu da {{actor}}",
+    "system": "Sistema",
+    "platforms": {
+      "System": "Sistema",
+      "External": "Esternu",
+      "Web": "Web",
+      "Mobile": "Mobile"
+    },
+    "added": "aghjustatu",
+    "updated": "aghjurnatu",
+    "empty": "(viotu)",
+    "noHistory": "Nisuna storia in sta categuria ancora.",
+    "fieldLabels": {
+      "stage": "Status",
+      "subStatus": "Sub-status",
+      "scheduledAt": "Schedule",
+      "notes": "Notes",
+      "assignedTo": "Assignatu à"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "A registrazione di i partenarii hè stata ricevuta",
+      "DUPLICATE_CHECK_COMPLETED": "Verificazione duplicata cumpletata - nisun duplicatu attivu trovu",
+      "REGISTRATION_ACCEPTED": "Registrazione accettata",
+      "PROTECTION_GRANTED_one": "{{count}} -ghjornu prutezzione cuncessa",
+      "PROTECTION_GRANTED_other": "{{count}} -ghjornu prutezzione cuncessa",
+      "REGISTRATION_ATTEMPT_REJECTED": "Tentativu di registrazione duplicata da {{partnerId}} rifiutatu",
+      "LEAD_DETAILS_UPDATED_one": "Campo {{count}} aghjurnatu",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} campi aghjurnati",
+      "STAGE_UPDATED": "Status aghjurnatu à {{status}}",
+      "LEAD_ASSIGNED": "Assignatu à {{name}}",
+      "LEAD_UNASSIGNED": "Unassigned",
+      "BOOKING_COMPLETED": "Riservazione cumpleta",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "A pruprietà operativa hè trasferita à Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "L'attribuzione di i partenarii cunservata",
+      "COMMISSION_ELIGIBILITY_CREATED": "Ammissibilità di a Cummissione creata",
+      "HANDOVER_COMPLETED": "Trasferimentu finitu",
+      "REFERRAL_ACCEPTED": "Builder hà accettatu u riferimentu",
+      "REFERRAL_REJECTED": "Builder hà rifiutatu u riferimentu. Motivu: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "L'amministratore hà liberatu a prutezzione duplicata prima. Motivu: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "L'amministratore hà riassignatu a registrazione da {{from}} à {{to}} . Motivu: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Gestisce e Culonni",
+    "hint": "Trascinate per riordinà · verificate per vede",
+    "showAll": "Mostra tuttu",
+    "resetDefault": "Resetta à Default"
+  },
+  "filters": {
+    "title": "Filtri",
+    "allProjects": "Tutti i prughjetti",
+    "any": "Qualchese",
+    "noFields": "Nisun altru campu filtrabile hè ancu attivatu (Settings> Lead).",
+    "clearAll": "Clear All"
+  },
+  "phone": {
+    "MISSING": "U numeru di telefunu hè necessariu.",
+    "INVALID": "Per piacè inserite un numeru di telefunu validu.",
+    "TOO_SHORT": "U numeru di telefunu hè troppu cortu.",
+    "TOO_LONG": "U numeru di telefunu hè troppu longu.",
+    "INVALID_FOR_COUNTRY": "Stu numeru di telefunu ùn hè micca validu per {{country}} .",
+    "COUNTRY_MISMATCH": "Per piacè selezziunate u codice di paese currettu.",
+    "NOT_MOBILE": "Per piacè inserite un numeru di telefuninu, micca una linea fissa."
+  }
+}

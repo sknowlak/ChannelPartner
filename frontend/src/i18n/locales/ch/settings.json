@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Setbisio siha",
+    "noPermission": "Ti un na'i permisu para un maneha i setbisio siha."
+  },
+  "categories": {
+    "lead": "Dirihi",
+    "user": "User",
+    "integrations": "Inetgrasion siha"
+  },
+  "leadTabs": {
+    "fields": "Tåno'",
+    "statuses": "Estao siha yan Sub-Estasio siha",
+    "notifications": "Notifikasion yan Manma'ayek"
+  },
+  "fields": {
+    "leadIntro": "Na'setbe i lead capture form: na'siña/na'suha i lugåt siha, marka siha ni' nisisåriu, pat addåpta i propiu na lugåt siha.",
+    "userIntro": "Na'setbe i Add/Edit Team Member na fotman: na'siña/na'suha i lugåt siha, marka siha ni' nisisåriu, pat addåpta i propiu na lugåt siha.",
+    "addCustomField": "+ Add Custom Field",
+    "fieldLabel": "Label gi i Tåno'",
+    "group": "Gurupu",
+    "groupPlaceholderLead": "put hemplo, Infotmasion put i Inestudia",
+    "groupPlaceholderUser": "pot hemplo, mas na detalye siha",
+    "dataType": "Klasin Dåta",
+    "options": "Siha (ma'apåsi ni' koma)",
+    "requiredLead": "Debi di i mangga'chong-mu gi i gurupu-mu u ma na'setbe este para u ma rehistra un lead",
+    "requiredUser": "nisisåriu - debi di u ma na'setbe yanggen ma addåpta un taotao gi i gurupu",
+    "creating": "Ha fa'tinas...",
+    "createField": "Na'huyong i Kampo",
+    "columns": {
+      "field": "Plasa",
+      "group": "Gurupu",
+      "type": "Klasi",
+      "required": "Ma nisisita",
+      "enabled": "Ma na'siña",
+      "kind": "Klasi"
+    },
+    "kind": {
+      "custom": "Kostumbri",
+      "core": "Core (ma'atkila)",
+      "standard": "Estándåt"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Tåti",
+    "TEXTAREA": "Långhet na tinige'",
+    "NUMBER": "Numeru",
+    "CURRENCY": "Piso",
+    "DATE": "Fetcha",
+    "SELECT": "Dropdown",
+    "LIST": "Lista"
+  },
+  "picker": {
+    "searchPlaceholder": "Fanli'e' i lead fields...",
+    "summary": "{{shown}} shown · {{mandatory}} mandatory",
+    "mandatory": "Mañelu",
+    "noMatch": "Ti parehu i lugåt siha."
+  },
+  "statuses": {
+    "intro": "I estao yan sub-estadu i lead-mu - hafa kada unu ha faisen (un fecha yan ora, lead fields) yanggen guaha ha na'fa'nu'i i lead.",
+    "add": "+ Na'i Estao",
+    "columns": {
+      "order": "Otdin",
+      "status": "Estadu",
+      "subStatuses": "Sub-Estatus siha",
+      "asksFor": "Ha faisen Para",
+      "active": "Brabu"
+    },
+    "moveUp": "Fanhånao",
+    "moveDown": "hånao papa'",
+    "defaultBadge": "Default para i nuebu na lina'la'",
+    "bookingBadge": "Estao gi i reservasion",
+    "asksForLabel": "Ha faisen para {{label}}",
+    "asksForDateTime": "Ha faisen put fecha yan ora",
+    "none": "Taya",
+    "dateTime": "Fecha yan ora",
+    "scheduledOn": "gi {{names}}",
+    "fieldsSummary_one": "{{count}} na lugåt ( {{mandatory}} mandatory)",
+    "fieldsSummary_other": "{{count}} na lugåt siha ( {{mandatory}} mandatory)",
+    "deleteConfirm": "Na'suha i estao \" {{name}} \"? Ti siña ma na'suha este.",
+    "editTitle": "Na'lå'la' i Estao - {{name}}",
+    "newTitle": "Nå'na' na Estao",
+    "name": "Na'an Estao",
+    "colour": "Kulot",
+    "active": "Brabu",
+    "isDefault": "Estao ni' ma'usa para i nuebu na taotao siha",
+    "isBooking": "I estao i inayek (ma'ayek ni' i finatton i inayek)",
+    "whenMoved": "Yanggen ma na'hanao i lead para este na estao",
+    "askSchedule": "faisen put i fecha yan ora (scheduler)",
+    "scheduleLabelPlaceholder": "Label, pot hemplo, Bisita gi",
+    "fieldsToShow": "I lugåt siha para u ma fa'nu'i gi i fotman inadelanta",
+    "subStatusesTitle": "Sub-Estatus siha",
+    "subStatusesHint": "Kada na sub-estadu siña ha faisen put i fecha yan ora-ña ya ha addåpta i propiu na lugåt siha - ma fa'nu'i gi hilo' i lugåt siha gi sanhilo'.",
+    "subStatusName": "Na'an i sub-estadu",
+    "subFields": "I lugåt siha ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Fecha yan ora, put hemplo, ågang tatte gi",
+    "addSubStatus": "+ Add Sub-Status",
+    "saveStatus": "Na'setbe i Estao",
+    "createStatus": "Na'huyong Estao"
+  },
+  "notifications": {
+    "intro": "Na'tungo' i taotao siha yanggen i lead ha håtsa i estao-ña - ensegidas, pat un tiempo antes/despues di i fecha yan ora ni' ma håtme.",
+    "add": "+ Na'i Notifikasion",
+    "columns": {
+      "notification": "Notifikasion",
+      "whenStatusIs": "yanggen i estao-ña",
+      "sends": "Ha na'hanao",
+      "to": "Para",
+      "via": "Pía",
+      "enabled": "Ma na'siña"
+    },
+    "anyStatus": "Kualkiera na estao",
+    "anySubStatus": "Kualkiera na sub-estatus",
+    "inactiveOption": "{{name}} (ti aktibu)",
+    "emptyRules": "Ti guaha notisia på'go - addåpta unu para u na'fanmanhasso i gurupu-mu yanggen i lead ha håtsa i estao-ña.",
+    "jobs": {
+      "title": "Ma'ayek yan Ma'ayek",
+      "firesAt": "Ma'utot Gi",
+      "notification": "Notifikasion",
+      "lead": "Dirihi",
+      "status": "Estadu",
+      "details": "Mas infotmasion",
+      "empty": "Ti ma na'setbe på'go.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Pepehna",
+      "PROCESSING": "Maproponi",
+      "SENT": "Ha nahanao",
+      "FAILED": "Dimalas",
+      "SKIPPED": "Ma'apåsi",
+      "CANCELLED": "Ma kansela"
+    },
+    "deliveryStatus": {
+      "SENT": "ha nahanao",
+      "FAILED": "dimalas",
+      "SKIPPED": "ma'apåsi"
+    },
+    "deliveryChannel": {
+      "IN_APP": "gi halom i app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Ma'ayek na taotao",
+      "owner": "Duenio",
+      "updatedBy": "Ma'aprueba ni'",
+      "role": "Role: {{name}}"
+    },
+    "channels": {
+      "inApp": "Gi halom i app",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Na'suha i notisia \" {{name}} \"? Ma kansela i manma'a'atan na manma'a'atan.",
+    "testPrompt": "Na'i hao un prublema put este na notisia (gi halom i app) ni' un usa hafa na lead ID ?",
+    "testSent": "Ma na'hanao para i kampana-mu: {{title}} {{message}}",
+    "headersInvalid": "Webhook headers debi di u bali JSON , pot hemplo {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Na'lå'la' i Notisia",
+    "newTitle": "nuebu na notisia",
+    "name": "Na'an",
+    "namePlaceholder": "put hemplo, rikåra para i bisitan i lugat",
+    "whenStatus": "Yanggen i estao i lead",
+    "subStatus": "Sub-estatus",
+    "send": "Na'hanao (scheduler)",
+    "custom": "Kostumbri...",
+    "modeBefore": "antes di i tiempo ni' ma håtme",
+    "modeAfter": "despues di i tiempo ni' ma håtme",
+    "noScheduleWarning": "Este na estao ti ha faisen put i fecha yan ora, pues ti u ma'ayek i \"antes/gi/despues di i ora\" na notisia.",
+    "noScheduleFix": "Na'lå'la' <strong>i Ask for a fecha & ora</strong> para este gi papa' i Statuses & Sub-Statuses, pat na'hanao Ensegidas.",
+    "sendTo": "Na'hanao para (maskeseha na kombinasion)",
+    "recipientAssigned": "Ma'ayek na taotao (i ga'ga')",
+    "recipientOwner": "Ga'ga' i kuenta / admin",
+    "recipientUpdatedBy": "Taotao ni' ha na'lå'la' i estao",
+    "everyoneWithRole": "Todu i taotao ni' guaha rol-ñiha",
+    "specificUsers": "Espesiåt na taotao (aktibu)",
+    "inactiveNever": "I manma'å'ñao na taotao ti ma risibi notisia, achokka' ma selekta.",
+    "deliverVia": "Na'hanao gi",
+    "channelInApp": "Gi halom i app (kampana)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS prufesiunåt)",
+    "emailHint": "I email para i email address kada na risibidot ya nisisåriu na u ma setbe i SMTP gi i server (backend/.env); astaki ayu na tiempo i email siha manma'a'atan komo manma'a'atan.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Headers ( JSON )",
+    "content": "Notifikasion kontenuha",
+    "title": "Titilu",
+    "message": "Mensahi",
+    "insertIntoTitle": "Na'halom gi Titulo",
+    "insertIntoMessage": "Na'halom gi i Mensåhi",
+    "anyLeadField": "Todu i lead field ma cho'gue lokkue', pot hemplo <code1>{{example1}}</code1> pat <code2>{{example2}}</code2> .",
+    "preview": "Preview (sample lead)",
+    "enabled": "Ma na'siña",
+    "saveRule": "Na'setbe i Notifikasion",
+    "createRule": "Na'huyong Notifikasion",
+    "variables": {
+      "customerName": "Na'an i fine'nina",
+      "customerMobile": "Lead mobile",
+      "customerEmail": "Email ni' ma'gås-ta",
+      "registrationId": "ID i Manma'gås-ta",
+      "status": "Estadu",
+      "subStatus": "Sub-estatus",
+      "scheduleAt": "Fecha yan ora ni' ma håtme",
+      "assignedTo": "Ma'ayek na taotao",
+      "updatedBy": "Ma'aprueba ni'",
+      "recipient": "Na'an i risibidot",
+      "project": "Proyecto",
+      "notes": "I mas nuebu na nota",
+      "partner": "Na'an i sosio"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Ensegidas yanggen ma setbe i estao",
+      "AT": "Gi i tiempon-ña",
+      "A1D": "1 diha despues di i ma'ayek na tiempo (che'cho'-ña)"
+    },
+    "immediately": "Unsigidas",
+    "atScheduled": "Gi i tiempon-ña",
+    "before": {
+      "MINUTES_one": "{{count}} minutos antes di i tiempo ni' ma håtme",
+      "MINUTES_other": "{{count}} minutos antes di i tiempo ni' ma håtme",
+      "HOURS_one": "{{count}} ora antes di i tiempo ni' ma håtme",
+      "HOURS_other": "{{count}} ora antes di i tiempo ni' ma håtme",
+      "DAYS_one": "{{count}} diha antes di i tiempo ni' ma håtme",
+      "DAYS_other": "{{count}} dihas antes di i tiempo ni' ma håtme",
+      "WEEKS_one": "{{count}} simana antes di i tiempo ni' ma håtme",
+      "WEEKS_other": "{{count}} simana siha antes di i tiempo ni' ma håtme",
+      "MONTHS_one": "{{count}} mes antes di i tiempo ni' ma håtme",
+      "MONTHS_other": "{{count}} mes antes di i tiempo ni' ma håtme",
+      "YEARS_one": "{{count}} sakkan antes di i tiempo ni' ma håtme",
+      "YEARS_other": "{{count}} åños antes di i tiempo ni' ma håtme"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minutos despues di i tiempo ni' ma håtme",
+      "MINUTES_other": "{{count}} minutos despues di i ma'ayek na tiempo",
+      "HOURS_one": "{{count}} ora despues di i ma'ayek na tiempo",
+      "HOURS_other": "{{count}} ora siha despues di i tiempo ni' ma håtme",
+      "DAYS_one": "{{count}} diha despues di i tiempo ni' ma håtme",
+      "DAYS_other": "{{count}} dihas despues di i tiempo ni' ma håtme",
+      "WEEKS_one": "{{count}} simana despues di i tiempo ni' ma håtme",
+      "WEEKS_other": "{{count}} simana siha despues di i tiempo ni' ma håtme",
+      "MONTHS_one": "{{count}} mes despues di i tiempo ni' ma håtme",
+      "MONTHS_other": "{{count}} mes siha despues di i tiempo ni' ma håtme",
+      "YEARS_one": "{{count}} sakkan despues di i tiempo ni' ma håtme",
+      "YEARS_other": "{{count}} åños despues di i tiempo ni' ma håtme"
+    },
+    "units": {
+      "MINUTES_one": "minutus",
+      "MINUTES_other": "minutus",
+      "HOURS_one": "ora",
+      "HOURS_other": "oras",
+      "DAYS_one": "dia",
+      "DAYS_other": "dihas",
+      "WEEKS_one": "simana",
+      "WEEKS_other": "simana siha",
+      "MONTHS_one": "mes",
+      "MONTHS_other": "mes siha",
+      "YEARS_one": "sakkan",
+      "YEARS_other": "aniu siha"
+    }
+  }
+}

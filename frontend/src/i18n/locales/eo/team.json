@@ -1,0 +1,83 @@
+{
+  "title": "Administri Teamon",
+  "tabs": {
+    "members": "Teamanoj",
+    "roles": "Roloj kaj Permesoj",
+    "profile": "Mia Profilo"
+  },
+  "roles": {
+    "owner": "Posedanto",
+    "member": "Teamano"
+  },
+  "profile": {
+    "updated": "Profilo ĝisdatigita.",
+    "basicInfo": "Bazaj Informoj",
+    "organisationInfo": "Organizaj Informoj",
+    "preferences": "Preferoj",
+    "companyName": "Nomo de Kompanio/Organizo",
+    "city": "Urbo",
+    "state": "Ŝtato",
+    "currencyHelp": "Uzita por montri buĝetojn kaj rezervajn valorojn tra via teamo.",
+    "useDeviceTimezone": "Uzu aparatan horzonon ( {{timezone}} )",
+    "securityRole": "Sekureco & Rolo",
+    "newPassword": "Nova Pasvorto (lasu malplena por konservi neŝanĝita)",
+    "currentPassword": "Nuna Pasvorto",
+    "memberSince": "Membro Ekde",
+    "languageSaved": "Lingvo konservita al via konto - ĝi estos uzata en ĉiu aparato, al kiu vi ensalutas."
+  },
+  "members": {
+    "intro": "Aldonu, redaktu, malaktivigu aŭ forigu homojn en via teamo - ili dividas aliron al la samaj kondukantoj.",
+    "noPermission": "Vi ne havas permeson aldoni, redakti aŭ forigi teamanojn.",
+    "addNew": "+ Aldonu Novan Uzanton",
+    "passwordLabel": "{{label}} (min 8 signoj)",
+    "rolePermissions": "Rolo & Permesoj",
+    "adding": "Aldonante...",
+    "addMember": "Aldonu Teamanon",
+    "tabAll": "Ĉiuj ( {{count}} )",
+    "tabActive": "Aktiva ( {{count}} )",
+    "tabInactive": "Neaktiva ( {{count}} )",
+    "searchPlaceholder": "Serĉu nomon aŭ uzantnomon...",
+    "allTimezones": "Ĉiuj horzonoj",
+    "perPage": "Enskriboj po paĝo",
+    "contact": "Kontaktu",
+    "added": "Aldonita",
+    "toggleActive": "Aktiva - alklaku por malaktivigi",
+    "toggleInactive": "Neaktiva - alklaku por aktivigi",
+    "empty": "Ankoraŭ neniuj teamanoj.",
+    "noMatch": "Neniuj teamanoj kongruas kun ĉi tiuj filtriloj.",
+    "showing": "Montrante {{from}} - {{to}} el {{total}} enskriboj",
+    "firstPage": "Unua paĝo",
+    "previousPage": "Antaŭa paĝo",
+    "nextPage": "Sekva paĝo",
+    "lastPage": "Lasta paĝo"
+  },
+  "editMember": {
+    "title": "Redaktu Uzanton",
+    "noPermission": "Vi ne havas permeson redakti teamanojn.",
+    "backToTeam": "Reen al Teamo",
+    "cantChangeOwn": "Vi ne povas ŝanĝi vian propran rolon aŭ statuson.",
+    "needsManageRoles": "Ŝanĝi la rolon de membro bezonas la permeson Administri Rolojn.",
+    "addedBy": "Aldonita De",
+    "addedOn": "Aldonita"
+  },
+  "rolesPage": {
+    "intro": "Super Administranto, Administranto kaj Administranto estas enkonstruitaj kaj ne povas esti ŝanĝitaj - kreu kutiman rolon por io alia.",
+    "noPermission": "Vi ne havas permeson administri rolojn.",
+    "createCustom": "+ Krei Propran Rolon",
+    "roleName": "Rolnomo",
+    "permissions": "Permesoj",
+    "members": "Membroj",
+    "creating": "Kreante...",
+    "createRole": "Krei Rolon",
+    "systemRole": "Sistemrolo",
+    "builtIn": "Enkonstruita",
+    "empty": "Ankoraŭ neniuj roloj."
+  },
+  "permissions": {
+    "MANAGE_LEADS": "Administri kondukojn (krei, progresi, libroj)",
+    "MANAGE_TEAM": "Administri Teamon (aldoni, redakti, forigi membrojn)",
+    "MANAGE_ROLES": "Administri Rolojn kaj Permesojn",
+    "MANAGE_SETTINGS": "Administri agordojn (kondukaj formularaj kampoj)",
+    "none": "Neniuj permesoj"
+  }
+}

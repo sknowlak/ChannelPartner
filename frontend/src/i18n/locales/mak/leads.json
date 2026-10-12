@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Pimpinanku",
+    "signedInAs": "Antama salaku {{name}} ( {{partnerId}} ) · wattu ni pa'piitteang ri {{timezone}}",
+    "addLead": "+ tambai timbal",
+    "tabs": {
+      "all": "Sikontu ( {{count}} )",
+      "pending": "Pending ( {{count}} )",
+      "booked": "Ni booking ( {{count}} )"
+    },
+    "searchPlaceholder": "Pa'boyai areng, ponsel, iareka ID pendaftaran ...",
+    "manageColumns": "Atoroki kolom",
+    "rowsPerPage": "barisang ri se'rea halamang",
+    "registrationId": "ID pendaftaran",
+    "emptyState": "Tena lead - daftarkan uru-urunu.",
+    "noMatch": "Tena lead cocok siagang anne filter.",
+    "showing": "Appa'piitteang {{from}} - {{to}} battu ri {{total}} entri",
+    "actions": {
+      "preview": "Pratinjau & pembaruan cepat",
+      "history": "Sejarah",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Kioki"
+    },
+    "pagination": {
+      "first": "halamang maka se're",
+      "previous": "halamang rioloa",
+      "next": "halamang ribokoangna",
+      "last": "Halaman kalabbusang"
+    }
+  },
+  "columns": {
+    "status": "Status",
+    "assignTo": "Assarei",
+    "booked": "Ni booking",
+    "protectionUntil": "Pajagaang sanggenna"
+  },
+  "booking": {
+    "booked": "Ni booking",
+    "pending": "Tertunda"
+  },
+  "assign": {
+    "unassigned": "Tena ni tugaskangi",
+    "owner": "{{name}} (Punna)",
+    "inactive": "{{name}} (tena aktif)",
+    "unknownUser": "tau tena ni isse'",
+    "assignedTo": "Nisareangi mange ri {{name}}"
+  },
+  "form": {
+    "addTitle": "tambai timbal",
+    "editTitle": "Edit Lead",
+    "noPermissionAdd": "Ikatte tena ijinna untu' andaftarkan lead.",
+    "noPermissionEdit": "Ikatte tena ijinna untu' a'pinra lead.",
+    "selectPlaceholder": "Pile...",
+    "commaSeparated": "Nipisangkai koma",
+    "phonePlaceholder": "Nomoro telepon",
+    "countryCode": "Kode negara"
+  },
+  "project": {
+    "none": "Tena proyek ija (tenapa ni rujuk)",
+    "notInList": "{{project}} (tena ri daftar proyek)"
+  },
+  "journey": {
+    "customer": "Paballi",
+    "currentOwner": "patanna kamma kammayya anne",
+    "protectionExpiry": "Perlindungan kadaluarsa",
+    "leadStatus": "Status Pimpinang",
+    "scheduled": "Ni jadwalkan",
+    "assignedTo": "Ni tugaskan mange ri",
+    "referral": "Rujukan",
+    "builderReason": "alasang tukang bangunang: {{reason}}",
+    "bookedHint": "Ni booking ri tukang bangunang - kepemilikan operasional aletteki mange ri tukang bangunang; atribusi siagang kelayakan komisi nu nijaga.",
+    "notBookedHint": "Pemesanan ni konfirmasi ri tukang bangunang punna lebaki natarima rujukan.",
+    "quickUpdate": "Pembaruan cepat",
+    "leadDetails": "Rincianna Timbal",
+    "progressHistory": "Riwaya kemajuan",
+    "timesIn": "(wattu ri {{timezone}} )",
+    "backToMyLeads": "ammotere mange ri pimpinanku",
+    "editLead": "Edit Lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "Tena ni rujuk (tena proyek)",
+    "PENDING_BUILDER": "antayangi tukang bangunang",
+    "ACCEPTED": "Nitarimai ri tukang bangunang",
+    "REJECTED": "Ni tolak ri tukang bangunang"
+  },
+  "preview": {
+    "ariaLabel": "Pratinjau timbal",
+    "title": "Pratinjau Timbal",
+    "source": "Poko",
+    "location": "Tampa",
+    "scheduled": "Ni jadwalkan",
+    "registered": "Terdaftar",
+    "latestNote": "Catatang beru",
+    "quickUpdate": "Pembaruan cepat",
+    "fullDetails": "Rincianna sukku",
+    "editLead": "Edit Lead",
+    "history": "Sejarah"
+  },
+  "quick": {
+    "assignedTo": "Ni tugaskan mange ri",
+    "status": "Status",
+    "subStatus": "Sub-Status",
+    "selectSubStatus": "Pilei sub-status...",
+    "none": "Tena",
+    "scheduledAt": "Ni jadwalkan ri",
+    "localTime": "wattu lokal",
+    "note": "Catatan",
+    "notePlaceholder": "Apa kajariang ri anne pa'kio'a / kunjungang? (pammileang)",
+    "updateStatus": "Status beru",
+    "statusUpdated": "Status ni update",
+    "bookedLocked": "Anne lead ni booking - statusna takkulleami nipinra.",
+    "viewOnly": "Ikatte akkullei anciniki anne lead, mingka perannu takkulleai ampakabajiki."
+  },
+  "history": {
+    "title": "Sejarah - {{registrationId}}",
+    "tabs": {
+      "all": "Iya ngaseng",
+      "status": "Status",
+      "assignment": "Tugasan",
+      "notes": "Catatang"
+    },
+    "doneBy": "Nigaukangi ri {{actor}}",
+    "system": "Sistem",
+    "platforms": {
+      "System": "Sistem",
+      "External": "Pantarang",
+      "Web": "Web",
+      "Mobile": "Mobile"
+    },
+    "added": "nitambai",
+    "updated": "ni update",
+    "empty": "(kosong)",
+    "noHistory": "Tena sejarah ri anne kategoria.",
+    "fieldLabels": {
+      "stage": "Status",
+      "subStatus": "Sub-Status",
+      "scheduledAt": "Rancangang",
+      "notes": "Catatang",
+      "assignedTo": "Ni tugaskan mange ri"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Pendaftaran mitra nitarima",
+      "DUPLICATE_CHECK_COMPLETED": "Pa'paressa duplikat lebaki - tena duplikat aktif ni gappa",
+      "REGISTRATION_ACCEPTED": "Pendaftaran ni tarima",
+      "PROTECTION_GRANTED_one": "{{count}} -hari perlindungan diberikan",
+      "PROTECTION_GRANTED_other": "{{count}} -hari perlindungan diberikan",
+      "REGISTRATION_ATTEMPT_REJECTED": "Usaha pendaftaran duplikat ri {{partnerId}} ni tolak",
+      "LEAD_DETAILS_UPDATED_one": "Bidang {{count}} ni update",
+      "LEAD_DETAILS_UPDATED_other": "Bidang {{count}} ni update",
+      "STAGE_UPDATED": "Status ni update mange ri {{status}}",
+      "LEAD_ASSIGNED": "Nisareangi mange ri {{name}}",
+      "LEAD_UNASSIGNED": "Tena ni tugaskangi",
+      "BOOKING_COMPLETED": "Pemesanan lebaki",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Kepemilikan operasional nipalette mange ri tukang bangunang",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribusi mitra nilestarikan",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisi ni paenteng",
+      "HANDOVER_COMPLETED": "Penyerahan lebaki",
+      "REFERRAL_ACCEPTED": "Tukang bangunang antarimai rujukan",
+      "REFERRAL_REJECTED": "Tukang bangunang anre' natarimai anjo rujukanga. Alasang: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin napasulu perlindungan duplikat riolo. Alasang: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin na tugaskangi ammotere pendaftaran battu ri {{from}} mange ri {{to}} . Alasang: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Atoroki kolom",
+    "hint": "Seret untuk urutan ulang · cek untuk ditunjukkan",
+    "showAll": "Pappicinikangi yangasenna",
+    "resetDefault": "Reset mange ri Default"
+  },
+  "filters": {
+    "title": "Saringan",
+    "allProjects": "Sikontu proyek",
+    "any": "Tungga tunggala",
+    "noFields": "Tena bidang maraeng akkullea ni saring ni aktifkan (Setting > Lead).",
+    "clearAll": "Pa'le'baki yangasenna"
+  },
+  "phone": {
+    "MISSING": "Nomoro telepon niparalluangi.",
+    "INVALID": "Pa'nassaang nomoro telepon yang valid.",
+    "TOO_SHORT": "Nomoro teleponna sanna' sike'de'na.",
+    "TOO_LONG": "Nomoro teleponna sanna lantangna.",
+    "INVALID_FOR_COUNTRY": "anne nomoro telepon tena na valid untuk {{country}} .",
+    "COUNTRY_MISMATCH": "Pilei kode negara yang cocok.",
+    "NOT_MOBILE": "Pa'nassaang nomoro ponsel, teai telepon darat."
+  }
+}

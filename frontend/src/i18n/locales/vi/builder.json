@@ -1,0 +1,87 @@
+{
+  "shell": {
+    "portal": "Cổng thông tin xây dựng",
+    "referrals": "Giới thiệu",
+    "builderLogin": "Đăng nhập thợ xây",
+    "partnerLogin": "Đăng nhập đối tác kênh"
+  },
+  "login": {
+    "title": "Đăng nhập người xây dựng",
+    "hint": "Tài khoản Builder được tạo bởi Leadrat . Hãy hỏi quản trị viên của bạn nếu bạn không có."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Chờ đợi quyết định của bạn",
+    "ACCEPTED": "Đã chấp nhận",
+    "REJECTED": "Vật bị loại bỏ"
+  },
+  "list": {
+    "title": "Giới thiệu",
+    "allProjects": "Tất cả dự án",
+    "allStatuses": "Tất cả trạng thái",
+    "count_other": "{{count}} lượt giới thiệu",
+    "columns": {
+      "referral": "Giới thiệu",
+      "customer": "Khách hàng",
+      "project": "Dự án",
+      "sourcePartner": "Đối tác nguồn",
+      "status": "Trạng thái",
+      "booking": "Đặt chỗ",
+      "registered": "Đăng ký"
+    },
+    "booked": "Đã đặt",
+    "empty": "Chưa có giới thiệu nào."
+  },
+  "detail": {
+    "customer": "Khách hàng",
+    "sourcePartner": "Đối tác nguồn",
+    "attributionNote": "(thuộc tính - không thể thay đổi)",
+    "leadStatus": "Trạng thái khách hàng tiềm năng",
+    "protectedUntil": "Được bảo vệ cho đến khi",
+    "referral": "Giới thiệu",
+    "reason": "Lý do: {{reason}}",
+    "booking": "Đặt chỗ",
+    "bookedOwner": "Đã đặt - bạn là chủ sở hữu hoạt động",
+    "notBooked": "Chưa đặt",
+    "sharedAfterBooking": "Chia sẻ sau khi đặt phòng",
+    "accept": "Chấp nhận giới thiệu",
+    "confirmBooking": "Xác nhận đặt chỗ",
+    "reject": "Từ chối giới thiệu",
+    "rejectReasonLabel": "Lý do từ chối (hiển thị cho đối tác) *",
+    "rejectConfirm": "Từ chối",
+    "confirmBookingPrompt": "Xác nhận đặt phòng? Quyền sở hữu hoạt động sẽ chuyển sang bạn và đối tác sẽ đủ điều kiện nhận hoa hồng.",
+    "notice": {
+      "booked": "Đặt phòng đã được xác nhận.",
+      "accepted": "Lời giới thiệu được chấp nhận.",
+      "rejected": "Lời giới thiệu bị từ chối."
+    },
+    "backToReferrals": "Quay lại giới thiệu"
+  },
+  "history": {
+    "title": "Lịch sử",
+    "actor": {
+      "system": "Hệ thống",
+      "partner": "Đối tác kênh",
+      "admin": "quản trị viên Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Đã nhận được đăng ký đối tác",
+      "DUPLICATE_CHECK_COMPLETED": "Đã hoàn tất kiểm tra trùng lặp - không tìm thấy bản sao đang hoạt động",
+      "REGISTRATION_ACCEPTED": "Đăng ký được chấp nhận",
+      "PROTECTION_GRANTED_other": "{{count}} -được bảo vệ trong ngày",
+      "STAGE_UPDATED": "Đã cập nhật trạng thái thành {{stage}}",
+      "LEAD_DETAILS_UPDATED_other": "Đã cập nhật các trường {{count}}",
+      "LEAD_ASSIGNED": "Đã giao cho {{name}}",
+      "LEAD_UNASSIGNED": "Chưa được chỉ định",
+      "REFERRAL_ACCEPTED": "Builder đã chấp nhận lời giới thiệu",
+      "REFERRAL_REJECTED": "Builder đã từ chối lời giới thiệu. Lý do: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Nỗ lực đăng ký trùng lặp của {{partner}} bị từ chối",
+      "BOOKING_COMPLETED": "Đặt phòng đã hoàn tất",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Quyền sở hữu hoạt động được chuyển giao cho Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Thuộc tính đối tác được giữ nguyên",
+      "COMMISSION_ELIGIBILITY_CREATED": "Đã tạo đủ điều kiện hoa hồng",
+      "HANDOVER_COMPLETED": "Bàn giao hoàn tất",
+      "ADMIN_PROTECTION_RELEASED": "Quản trị viên đã phát hành tính năng bảo vệ trùng lặp sớm. Lý do: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Quản trị viên đã chỉ định lại đăng ký từ {{from}} thành {{to}} . Lý do: {{reason}}"
+    }
+  }
+}

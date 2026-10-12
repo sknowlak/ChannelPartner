@@ -89,7 +89,16 @@ describe('translation key coverage', () => {
 });
 
 describe('runtime behaviour', () => {
-  beforeAll(() => i18nReady);
+  // In the browser other languages are fetched from /locales/<lang>/<ns>.json;
+  // there is no server here, so load the same files directly.
+  beforeAll(async () => {
+    await i18nReady;
+    for (const [lang, nss] of Object.entries(bundles)) {
+      for (const [ns, data] of Object.entries(nss)) {
+        if (!i18n.hasResourceBundle(lang, ns)) i18n.addResourceBundle(lang, ns, data);
+      }
+    }
+  });
   beforeEach(() => i18n.changeLanguage('en'));
 
   test('switching language changes text without reloading', async () => {
@@ -107,7 +116,7 @@ describe('runtime behaviour', () => {
   });
 
   test('an unsupported language falls back to English', async () => {
-    await i18n.changeLanguage('fr');
+    await i18n.changeLanguage('xx');
     expect(i18n.t('common:actions.save')).toBe('Save');
   });
 
@@ -121,7 +130,7 @@ describe('runtime behaviour', () => {
   test('browser language detection picks a supported language or nothing', () => {
     expect(browserLanguage(['hi-IN', 'en'])).toBe('hi');
     expect(browserLanguage(['bn-BD'])).toBe('bn');
-    expect(browserLanguage(['fr-FR', 'de'])).toBeNull();
+    expect(browserLanguage(['xx-XX', 'qaa'])).toBeNull();
   });
 
   test('dates follow the language', async () => {

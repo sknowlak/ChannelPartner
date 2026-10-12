@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "பில்டர் போர்டல்",
+    "referrals": "பரிந்துரைகள்",
+    "builderLogin": "பில்டர் உள்நுழைவு",
+    "partnerLogin": "சேனல் பார்ட்னர் உள்நுழைவு"
+  },
+  "login": {
+    "title": "பில்டர் உள்நுழைவு",
+    "hint": "பில்டர் கணக்குகள் Leadrat ஆல் உருவாக்கப்படுகின்றன. உங்களிடம் ஒன்று இல்லையென்றால் உங்கள் நிர்வாகியிடம் கேளுங்கள்."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "உங்கள் முடிவுக்காக காத்திருக்கிறேன்",
+    "ACCEPTED": "ஏற்றுக்கொள்ளப்பட்டது",
+    "REJECTED": "நிராகரிக்கப்பட்டது"
+  },
+  "list": {
+    "title": "பரிந்துரைகள்",
+    "allProjects": "அனைத்து திட்டங்களும்",
+    "allStatuses": "அனைத்து நிலைகளும்",
+    "count_one": "{{count}} பரிந்துரை",
+    "count_other": "{{count}} பரிந்துரைகள்",
+    "columns": {
+      "referral": "பரிந்துரை",
+      "customer": "வாடிக்கையாளர்",
+      "project": "திட்டம்",
+      "sourcePartner": "மூல பங்குதாரர்",
+      "status": "நிலை",
+      "booking": "முன்பதிவு",
+      "registered": "பதிவு செய்யப்பட்டது"
+    },
+    "booked": "முன்பதிவு செய்யப்பட்டது",
+    "empty": "இதுவரை பரிந்துரைகள் இல்லை."
+  },
+  "detail": {
+    "customer": "வாடிக்கையாளர்",
+    "sourcePartner": "மூல பங்குதாரர்",
+    "attributionNote": "(பண்பு - மாற்ற முடியாது)",
+    "leadStatus": "முன்னணி நிலை",
+    "protectedUntil": "வரை பாதுகாக்கப்படுகிறது",
+    "referral": "பரிந்துரை",
+    "reason": "காரணம்: {{reason}}",
+    "booking": "முன்பதிவு",
+    "bookedOwner": "முன்பதிவு செய்யப்பட்டது - நீங்கள் செயல்பாட்டு உரிமையாளர்",
+    "notBooked": "முன்பதிவு செய்யப்படவில்லை",
+    "sharedAfterBooking": "முன்பதிவு செய்த பிறகு பகிரப்பட்டது",
+    "accept": "பரிந்துரையை ஏற்கவும்",
+    "confirmBooking": "முன்பதிவை உறுதிப்படுத்தவும்",
+    "reject": "பரிந்துரையை நிராகரி",
+    "rejectReasonLabel": "நிராகரிப்பதற்கான காரணம் (கூட்டாளியிடம் காட்டப்பட்டது)*",
+    "rejectConfirm": "நிராகரிக்கவும்",
+    "confirmBookingPrompt": "முன்பதிவை உறுதிப்படுத்தவா? செயல்பாட்டு உரிமை உங்களுக்கு நகர்கிறது மற்றும் பங்குதாரர் கமிஷனுக்கு தகுதி பெறுகிறார்.",
+    "notice": {
+      "booked": "முன்பதிவு உறுதி செய்யப்பட்டது.",
+      "accepted": "பரிந்துரை ஏற்கப்பட்டது.",
+      "rejected": "பரிந்துரை நிராகரிக்கப்பட்டது."
+    },
+    "backToReferrals": "பரிந்துரைகளுக்குத் திரும்பு"
+  },
+  "history": {
+    "title": "வரலாறு",
+    "actor": {
+      "system": "அமைப்பு",
+      "partner": "சேனல் பார்ட்னர்",
+      "admin": "Leadrat நிர்வாகி"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "கூட்டாளர் பதிவு பெறப்பட்டது",
+      "DUPLICATE_CHECK_COMPLETED": "நகல் சரிபார்ப்பு முடிந்தது - செயலில் உள்ள நகல் எதுவும் இல்லை",
+      "REGISTRATION_ACCEPTED": "பதிவு ஏற்கப்பட்டது",
+      "PROTECTION_GRANTED_one": "{{count}} -நாள் பாதுகாப்பு வழங்கப்பட்டது",
+      "PROTECTION_GRANTED_other": "{{count}} -நாள் பாதுகாப்பு வழங்கப்பட்டது",
+      "STAGE_UPDATED": "நிலை {{stage}} க்கு புதுப்பிக்கப்பட்டது",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} புலம் புதுப்பிக்கப்பட்டது",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} புலங்கள் புதுப்பிக்கப்பட்டன",
+      "LEAD_ASSIGNED": "{{name}} க்கு ஒதுக்கப்பட்டது",
+      "LEAD_UNASSIGNED": "ஒதுக்கப்படாதது",
+      "REFERRAL_ACCEPTED": "பில்டர் பரிந்துரையை ஏற்றுக்கொண்டார்",
+      "REFERRAL_REJECTED": "பில்டர் பரிந்துரையை நிராகரித்தார். காரணம்: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} இன் நகல் பதிவு முயற்சி நிராகரிக்கப்பட்டது",
+      "BOOKING_COMPLETED": "முன்பதிவு முடிந்தது",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "செயல்பாட்டு உரிமை பில்டருக்கு மாற்றப்பட்டது",
+      "PARTNER_ATTRIBUTION_PRESERVED": "கூட்டாளர் பண்புக்கூறு பாதுகாக்கப்பட்டது",
+      "COMMISSION_ELIGIBILITY_CREATED": "கமிஷன் தகுதி உருவாக்கப்பட்டது",
+      "HANDOVER_COMPLETED": "ஒப்படைப்பு முடிந்தது",
+      "ADMIN_PROTECTION_RELEASED": "நிர்வாகம் நகல் பாதுகாப்பை முன்கூட்டியே வெளியிட்டது. காரணம்: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "நிர்வாகி {{from}} இலிருந்து {{to}} க்கு பதிவை மாற்றியுள்ளார். காரணம்: {{reason}}"
+    }
+  }
+}

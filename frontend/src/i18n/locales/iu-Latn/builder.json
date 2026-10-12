@@ -1,0 +1,93 @@
+{
+  "shell": {
+    "portal": "Sanajiup turaarutinga",
+    "referrals": "Tunijaujut",
+    "builderLogin": "Sanajiup qaritaujakkut titirarvinga",
+    "partnerLogin": "Talaviisakkut piliriqatigiiktunut qaritaujakkut titirarviksaq"
+  },
+  "login": {
+    "title": "Sanaji atiliuqtuq",
+    "hint": "Sanajinut akiliksait sanajauvaktut Leadrat . Apirilugu aulattijigijait pitaqanngikkuvit."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Utaqqivunga isumaliurutiginiaqtarnik",
+    "ACCEPTED": "Angiqtaujuq",
+    "REJECTED": "Aaggaaqtaujuq"
+  },
+  "list": {
+    "title": "Tunijaujut",
+    "allProjects": "Tamarmik piliriaksat",
+    "allStatuses": "Tamarmik qanuilinganingit",
+    "count_one": "{{count}} tunijaujuq",
+    "count_two": "{{count}} tunijaujut",
+    "count_other": "{{count}} tunijaujut",
+    "columns": {
+      "referral": "Tuniuqqaqtauniq",
+      "customer": "Akiliqsuijuq",
+      "project": "Piliriaq",
+      "sourcePartner": "Tukisigiarviksaq piliriqatigijaujuq",
+      "status": "Qanuilinganinga",
+      "booking": "Iniksaliurniq",
+      "registered": "Atiliuqtausimajuq"
+    },
+    "booked": "Iniksaliuqtausimajuq",
+    "empty": "Suli tunijaujuqalaunngittuq."
+  },
+  "detail": {
+    "customer": "Akiliqsuijuq",
+    "sourcePartner": "Tukisigiarviksaq piliriqatigijaujuq",
+    "attributionNote": "(atuqtauninga - asijjiqtaujunnangittuq)",
+    "leadStatus": "Sivuliqtiunirmut qanuilinganinga",
+    "protectedUntil": "Sapujjausimajut tikillugu",
+    "referral": "Tuniuqqaqtauniq",
+    "reason": "Pijjutinga: {{reason}}",
+    "booking": "Iniksaliurniq",
+    "bookedOwner": "Iniksaliuqtausimajuq - aulattinirmut nangminiqaqtiuvutit",
+    "notBooked": "Iniksaliuqtausimanngittuq",
+    "sharedAfterBooking": "Katujjaujuq iniksaliuqtaulauqtillugu",
+    "accept": "Angirlugu tunijaujuq",
+    "confirmBooking": "Nalunaiqsilutit iniksaliurnirmik",
+    "reject": "Aaggaaqtaujuq tunijaujuq",
+    "rejectReasonLabel": "Pijjutinga qipiluktauningata (takuksautitauluni aipparijaujumut) *",
+    "rejectConfirm": "Pinngiinnaqtuq",
+    "confirmBookingPrompt": "Nalunaiqsilutit iniksaliuqtausimajumik? Aulattinirmut nangminiqarniq ilingnut nuuppuq amma piliriqatigijait pijunnaqsiliqpuq kamisanmut.",
+    "notice": {
+      "booked": "Iniksaliurniq nalunaiqtausimajuq.",
+      "accepted": "Tunijaujuq angiqtaujuq.",
+      "rejected": "Tunijauninga aaggaaqtaujuq."
+    },
+    "backToReferrals": "Utirluta tunijaujunut"
+  },
+  "history": {
+    "title": "Piusirijauvalauqtut",
+    "actor": {
+      "system": "Pilirijjusiq",
+      "partner": "Talaviisakkut katujjiqatinga",
+      "admin": "Leadrat aulattiji"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Katujjiqatigiit atiliuqtausimaningit pijaujut",
+      "DUPLICATE_CHECK_COMPLETED": "Ajjinganik qaujisarniq pijariiqtaujuq - ajjinganik nanisijuqalaunngittuq",
+      "REGISTRATION_ACCEPTED": "Atiliurniq angiqtauvuq",
+      "PROTECTION_GRANTED_one": "{{count}} -ulluq sapummijaujjuti tunijaujuq",
+      "PROTECTION_GRANTED_two": "{{count}} -ulluq sapummijaujjuti tunijaujuq",
+      "PROTECTION_GRANTED_other": "{{count}} -ulluq sapummijaujjuti tunijaujuq",
+      "STAGE_UPDATED": "Qanuilinganinga nutaannguriaqtaujuq uvunga {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Nutaannguriaqtausimajuq {{count}} nalunaikkutaq",
+      "LEAD_DETAILS_UPDATED_two": "Nutaannguriaqtausimajut {{count}} nalunaikkutait",
+      "LEAD_DETAILS_UPDATED_other": "Nutaannguriaqtausimajut {{count}} nalunaikkutait",
+      "LEAD_ASSIGNED": "Tunijaujuq uvunga {{name}}",
+      "LEAD_UNASSIGNED": "Tilijausimanngittuq",
+      "REFERRAL_ACCEPTED": "Sanaji angilauqtuq tunijaujumik",
+      "REFERRAL_REJECTED": "Sanaji aaggaalauqtuq tunijaujumik. Pijjutinga: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Ajjigiiktittinasuarniq atiliurasuarnirmik {{partner}} aaggaaqtaujuq",
+      "BOOKING_COMPLETED": "Iniksaliurniq pijariiqsimajuq",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Aulattinirmut nangminirijaujuq nuttiqtaujuq sanajimut",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Piliriqatigiiktunut nalunaiqtausimajut sapujjausimajut",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kamisanamut pijunnarniq saqqitaujuq",
+      "HANDOVER_COMPLETED": "Tunisiniq pijariiqtuq",
+      "ADMIN_PROTECTION_RELEASED": "Aulattiji saqqittilauqtuq ajjinganik sapummijaujjutimik sivuniagut. Pijjutinga: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Aulattiji tunisikkanniqtuq atiliuqtausimanirmik {{from}} tavvunga {{to}} . Pijjutinga: {{reason}}"
+    }
+  }
+}

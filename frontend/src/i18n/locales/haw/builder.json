@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Pahu Mea Hana",
+    "referrals": "Nā kuhikuhi ʻana",
+    "builderLogin": "Hoʻokomo i ka mea kūkulu hale",
+    "partnerLogin": "Hoʻopaʻa inoa hoahana"
+  },
+  "login": {
+    "title": "E ʻeʻe mai ka mea kūkulu hale",
+    "hint": "Hoʻokumu ʻia nā moʻokāki mea kūkulu e Leadrat . E nīnau i kāu luna hoʻomalu inā ʻaʻohe āu."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Ke kali nei i kāu hoʻoholo",
+    "ACCEPTED": "Ua ʻae ʻia",
+    "REJECTED": "Hōʻole ʻia"
+  },
+  "list": {
+    "title": "Nā kuhikuhi ʻana",
+    "allProjects": "Nā papahana a pau",
+    "allStatuses": "Nā kūlana a pau",
+    "count_one": "{{count}} kuhikuhi",
+    "count_other": "{{count}} mea kuhikuhi",
+    "columns": {
+      "referral": "Hoʻopuka",
+      "customer": "Mea kūʻai",
+      "project": "Papahana",
+      "sourcePartner": "Hoa Punawai",
+      "status": "Kūlana",
+      "booking": "Hoʻopaʻa",
+      "registered": "Kakau inoa"
+    },
+    "booked": "Hoʻopaʻa ʻia",
+    "empty": "ʻAʻohe mea kuhikuhi."
+  },
+  "detail": {
+    "customer": "Mea kūʻai",
+    "sourcePartner": "Hoa Punawai",
+    "attributionNote": "(ʻaʻole hiki ke hoʻololi ʻia)",
+    "leadStatus": "Kūlana alakaʻi",
+    "protectedUntil": "Mālama ʻia a hiki i",
+    "referral": "Hoʻopuka",
+    "reason": "Ke kumu: {{reason}}",
+    "booking": "Hoʻopaʻa",
+    "bookedOwner": "Hoʻopaʻa ʻia - ʻo ʻoe ka mea hana",
+    "notBooked": "ʻAʻole i hoʻopaʻa ʻia",
+    "sharedAfterBooking": "Kaʻana like ma hope o ka hoʻopaʻa ʻana",
+    "accept": "E ʻae i ka hāʻawi ʻana",
+    "confirmBooking": "E hōʻoia i ka hoʻopaʻa ʻana",
+    "reject": "Hōʻole i ka hāʻawi ʻana",
+    "rejectReasonLabel": "Ke kumu o ka hōʻole ʻana (hōʻike ʻia i ka hoa) *",
+    "rejectConfirm": "Hoole",
+    "confirmBookingPrompt": "E hōʻoia i ka hoʻopaʻa ʻana? Ke neʻe nei ka mana hana iā ʻoe a lilo ka hoa pili i ke kōmike.",
+    "notice": {
+      "booked": "Hoʻopaʻa ʻia ka hoʻopaʻa ʻana.",
+      "accepted": "Ua ʻae ʻia ka hāʻawi ʻana.",
+      "rejected": "Hōʻole ʻia ka hāʻawi ʻana."
+    },
+    "backToReferrals": "Hoʻi i nā Referrals"
+  },
+  "history": {
+    "title": "Moolelo",
+    "actor": {
+      "system": "Pūnaehana",
+      "partner": "hoa channel",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Loaʻa ke kākau inoa hoa",
+      "DUPLICATE_CHECK_COMPLETED": "Hoʻopau ʻia ka nānā ʻana - ʻaʻohe mea i ʻike ʻia",
+      "REGISTRATION_ACCEPTED": "Ua ʻae ʻia ke kākau inoa",
+      "PROTECTION_GRANTED_one": "{{count}} -lā palekana i hā'awi 'ia",
+      "PROTECTION_GRANTED_other": "{{count}} -lā palekana i hā'awi 'ia",
+      "STAGE_UPDATED": "Hōʻano hou ʻia ke kūlana i {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Hōʻano hou ʻia {{count}} kahua",
+      "LEAD_DETAILS_UPDATED_other": "Hōʻano hou ʻia {{count}} kahua",
+      "LEAD_ASSIGNED": "Hāʻawi ʻia iā {{name}}",
+      "LEAD_UNASSIGNED": "Hāʻawi ʻole ʻia",
+      "REFERRAL_ACCEPTED": "Ua ʻae ʻo Builder i ka hāʻawi ʻana",
+      "REFERRAL_REJECTED": "Ua hōʻole ʻo Builder i ka hāʻawi ʻana. Ke kumu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Ua hōʻole ʻia ka hoʻāʻo hoʻopaʻa inoa ʻana e {{partner}}",
+      "BOOKING_COMPLETED": "Hoʻopau ʻia ka hoʻopaʻa ʻana",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Ua hoʻoili ʻia ka mana hana iā Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Mālama ʻia ka hoʻohui hoa",
+      "COMMISSION_ELIGIBILITY_CREATED": "Hoʻokumu ʻia ke kuleana o ke Komisina",
+      "HANDOVER_COMPLETED": "Ua pau ka haawi ana",
+      "ADMIN_PROTECTION_RELEASED": "Ua hoʻokuʻu mua ʻo Admin i kahi pale pālua. Ke kumu: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Ua hāʻawi hou ke kahu i ke kākau inoa mai {{from}} iā {{to}} . Ke kumu: {{reason}}"
+    }
+  }
+}

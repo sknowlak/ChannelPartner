@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Pengaturan",
+    "noPermission": "Labo lit hakndu guna ngaturken pengaturen."
+  },
+  "categories": {
+    "lead": "Memimpin",
+    "user": "Pengguna",
+    "integrations": "Integrasi"
+  },
+  "leadTabs": {
+    "fields": "Juma",
+    "statuses": "Status & Sub-Status .",
+    "notifications": "Pemberitahuan & Penjadwalen"
+  },
+  "fields": {
+    "leadIntro": "Konfigurasiken formulir penangkapen timbal balik: aktifken/nonaktifken bidang, tandai si iperluken, ntah pe tambahi bidang khususndu sendiri.",
+    "userIntro": "Konfigurasiken formulir Tambah/Edit Anggota Tim: aktifken/nonaktifken bidang, tandai si iperluken, ntah pe tambahken bidang khususndu sendiri.",
+    "addCustomField": "+ Tambahken Bidang Khusus .",
+    "fieldLabel": "Label Lapangan",
+    "group": "Grup",
+    "groupPlaceholderLead": "misalna Info Penungkunen .",
+    "groupPlaceholderUser": "misalna Rincian Tambahan .",
+    "dataType": "Jenis Data",
+    "options": "Pilihen (ipisahken alu koma) .",
+    "requiredLead": "Iperluken - mitra i bas timndu arus ngisi enda guna mendaftarken lead .",
+    "requiredUser": "Iperluken - arus iisi sanga nambahi anggota tim .",
+    "creating": "Erbahan...",
+    "createField": "Erbahan Bidang .",
+    "columns": {
+      "field": "Lapangen",
+      "group": "Grup",
+      "type": "Tipe",
+      "required": "Sikel",
+      "enabled": "Iaktifken",
+      "kind": "Bacar"
+    },
+    "kind": {
+      "custom": "Si biasa",
+      "core": "Inti (terkunci)",
+      "standard": "Si bisana"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Tulisan",
+    "TEXTAREA": "Teks si gedang .",
+    "NUMBER": "Nomor",
+    "CURRENCY": "Sen",
+    "DATE": "Tanggal",
+    "SELECT": "Menurut",
+    "LIST": "Daftar"
+  },
+  "picker": {
+    "searchPlaceholder": "Darami bidang-bidang timbal balik...",
+    "summary": "{{shown}} icidahken · {{mandatory}} wajib",
+    "mandatory": "Harus",
+    "noMatch": "La lit bidang si cocok."
+  },
+  "statuses": {
+    "intro": "Status ras sub-status leadndu - kai si ipindo masing-masing (sada tanggal & jam, bidang lead) sanga lit si memperbarui sada lead ku je.",
+    "add": "+ Tambahken Status .",
+    "columns": {
+      "order": "Lebuh",
+      "status": "Status",
+      "subStatuses": "Sub-Status",
+      "asksFor": "Mindo Guna .",
+      "active": "Mejingkat"
+    },
+    "moveUp": "Pindah ku datas .",
+    "moveDown": "Pindah ku teruh .",
+    "defaultBadge": "Bawaan guna pemimpin si mbaru .",
+    "bookingBadge": "Status pemesan",
+    "asksForLabel": "Minta {{label}}",
+    "asksForDateTime": "Nungkun tanggal & jam .",
+    "none": "La kai pe",
+    "dateTime": "Tanggal & jam",
+    "scheduledOn": "i bas {{names}}",
+    "fieldsSummary_one": "{{count}} bidang ( {{mandatory}} wajib)",
+    "fieldsSummary_other": "{{count}} bidang ( {{mandatory}} wajib)",
+    "deleteConfirm": "Hapus status \" {{name}} \"? Enda la banci ibalikken.",
+    "editTitle": "Sunting status - {{name}}",
+    "newTitle": "Status si mbaru .",
+    "name": "Gelar Status",
+    "colour": "Rupa",
+    "active": "Mejingkat",
+    "isDefault": "Status bawaan man lead si mbaru .",
+    "isBooking": "Status pemesanan (itetapken alu Pemesanan Lengkap)",
+    "whenMoved": "Adi sada lead ipindahken ku status enda .",
+    "askSchedule": "Pindolah tanggal & waktuna (penjadwalen) .",
+    "scheduleLabelPlaceholder": "Label, misalna Kunjungi i bas .",
+    "fieldsToShow": "Bidang-bidang si banci icidahken i bas formulir pembaruen .",
+    "subStatusesTitle": "Sub-Status",
+    "subStatusesHint": "Tiap sub-status banci mindo tanggal & jamna sendiri ras nambahi bidangna sendiri - icidahken i datas bidang status e i datas.",
+    "subStatusName": "Gelar si lit i bas status .",
+    "subFields": "Bidang ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Label tanggal & waktu, misalna Telpon mulihi jam 10.00.",
+    "addSubStatus": "+ Tambahken Sub-Status .",
+    "saveStatus": "Simpan status",
+    "createStatus": "Erbahan Status ."
+  },
+  "notifications": {
+    "intro": "Pebetehken man kalak si tepat tupung sada lead seh ku sada status - minter, ntah pe waktu si enggo itetapken ope/kenca tanggal & waktu si enggo ijadwalken i datasna.",
+    "add": "+ Tambahken Pemberitahuan .",
+    "columns": {
+      "notification": "Pemberitahuan",
+      "whenStatusIs": "Sanga Status Enggo .",
+      "sends": "Ngirimken",
+      "to": "Ku",
+      "via": "Arah",
+      "enabled": "Iaktifken"
+    },
+    "anyStatus": "Status kai pe .",
+    "anySubStatus": "Sub-status kai pe .",
+    "inactiveOption": "{{name}} (la aktif)",
+    "emptyRules": "La lit pemberitahuan - tambahi sada guna mpersingeti timndu sanga lit lead seh ku sada status.",
+    "jobs": {
+      "title": "Ijadwalken & Ikirim",
+      "firesAt": "Api I bas .",
+      "notification": "Pemberitahuan",
+      "lead": "Memimpin",
+      "status": "Status",
+      "details": "Detail",
+      "empty": "La lit si ijadwalken ntah pe si ikirimken.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Man timaan",
+      "PROCESSING": "Pengolahen",
+      "SENT": "Isuruh",
+      "FAILED": "Bangkas",
+      "SKIPPED": "Ilewati",
+      "CANCELLED": "Ibatalken"
+    },
+    "deliveryStatus": {
+      "SENT": "isuruh",
+      "FAILED": "bangkas",
+      "SKIPPED": "ilewati"
+    },
+    "deliveryChannel": {
+      "IN_APP": "i bas aplikasi",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Pengguna si itugasken",
+      "owner": "Si puna",
+      "updatedBy": "Iperbarui alu",
+      "role": "Peran: {{name}}"
+    },
+    "channels": {
+      "inApp": "I bas aplikasi",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Hapus pemberitahuan \" {{name}} \"? Persinget si tertunda i bas si e nari ibatasi.",
+    "testPrompt": "Kirimken tes pemberitahuan enda man dirindu (in-app) alu make lead ID si apai ?",
+    "testSent": "Ikirimken ku loncengndu: {{title}} {{message}}",
+    "headersInvalid": "Header Webhook arus sah JSON , misalna {\"Otorisasi\": \"Pembawa xyz\"}",
+    "editTitle": "Edit Pemberitahuan",
+    "newTitle": "Pemberitahuan si mbaru",
+    "name": "Gelar",
+    "namePlaceholder": "misalna peringet-ingeten kunjungen ku situs .",
+    "whenStatus": "Adi status sekalak pemimpin eme .",
+    "subStatus": "Sub-status",
+    "send": "Kirimken (penjadwalen)",
+    "custom": "Si biasa...",
+    "modeBefore": "ope denga waktu si enggo itetapken .",
+    "modeAfter": "kenca waktu si enggo ijadwalken .",
+    "noScheduleWarning": "Status enda labo mindo tanggal & jam, emaka pemberitahuan \"sebelum/jam/setelah waktu si enggo ijadwalken\" labo pernah fire.",
+    "noScheduleFix": "Hidupken <strong>Pindo tanggal & jam</strong> guna si e i teruh Status & Sub-Status, ntah pe kirimken Segera.",
+    "sendTo": "Kirimken ku (kombinasi kai pe)",
+    "recipientAssigned": "Pengguna si itugasken (pemilik utama) .",
+    "recipientOwner": "Pemilik akun / admin .",
+    "recipientUpdatedBy": "Kalak si mpelimbarui statusna .",
+    "everyoneWithRole": "Kerina kalak si lit peranna .",
+    "specificUsers": "Pengguna si khusus (aktif) .",
+    "inactiveNever": "Pengguna si la aktif la pernah ngaloken pemberitahuan, aminna pe ipilih.",
+    "deliverVia": "Iberekenna arah .",
+    "channelInApp": "I bas aplikasi (lonceng)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp SMS ) .",
+    "emailHint": "Email lawes ku alamat email tep-tep penerima ras perlu SMTP si iaturken i server (backend/.env); seh maka email si ikirimken e i log bagi si i skip.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Tajuk ( JSON )",
+    "content": "Isi pemberitahuan .",
+    "title": "Judul",
+    "message": "Pesan",
+    "insertIntoTitle": "Masukken ku bas Judul .",
+    "insertIntoMessage": "Masukken ku bas Pesan .",
+    "anyLeadField": "Bidang lead kai pe erdahin ka, misalna <code1>{{example1}}</code1> ntah pe <code2>{{example2}}</code2> .",
+    "preview": "Pratinjau (contoh timbal balik)",
+    "enabled": "Iaktifken",
+    "saveRule": "Simpan Pemberitahuan",
+    "createRule": "Erbahan Pemberitahuan .",
+    "variables": {
+      "customerName": "Gelar si mimpin",
+      "customerMobile": "Timbal ponsel .",
+      "customerEmail": "Email si maba",
+      "registrationId": "ID si memimpin",
+      "status": "Status",
+      "subStatus": "Sub-status",
+      "scheduleAt": "Tanggal & jam si enggo ijadwalken .",
+      "assignedTo": "Pengguna si itugasken",
+      "updatedBy": "Iperbarui alu",
+      "recipient": "Gelar si ngalokenca",
+      "project": "Proyek",
+      "notes": "Cataten si terbaru",
+      "partner": "Gelar mitra"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Minter sanga statusna enggo itetapken .",
+      "AT": "Ibas waktu si enggo itetapken .",
+      "A1D": "1 wari kenca waktu si enggo itetapken (pemeriksaan tindak lanjut) ."
+    },
+    "immediately": "Mis",
+    "atScheduled": "Ibas waktu si enggo itetapken .",
+    "before": {
+      "MINUTES_one": "{{count}} menit ope denga waktu si enggo itetapken",
+      "MINUTES_other": "{{count}} menit ope denga waktu si enggo itetapken",
+      "HOURS_one": "{{count}} jam ope denga waktu si enggo itetapken",
+      "HOURS_other": "{{count}} jam ope denga waktu si enggo itetapken",
+      "DAYS_one": "{{count}} wari ope denga waktu si enggo itetapken",
+      "DAYS_other": "{{count}} wari ope denga waktu si enggo itetapken",
+      "WEEKS_one": "{{count}} minggu ope denga waktu si enggo itetapken",
+      "WEEKS_other": "{{count}} minggu ope denga waktu si enggo itetapken",
+      "MONTHS_one": "{{count}} bulan ope denga waktu si enggo itetapken",
+      "MONTHS_other": "{{count}} bulan ope denga waktu si enggo itetapken",
+      "YEARS_one": "{{count}} tahun ope denga waktu si enggo itetapken",
+      "YEARS_other": "{{count}} tahun ope denga waktu si enggo itetapken"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} menit kenca waktu si enggo itetapken",
+      "MINUTES_other": "{{count}} menit kenca waktu si enggo itetapken",
+      "HOURS_one": "{{count}} jam kenca waktu si enggo itetapken",
+      "HOURS_other": "{{count}} jam kenca waktu si enggo itetapken",
+      "DAYS_one": "{{count}} wari kenca waktu si enggo itetapken",
+      "DAYS_other": "{{count}} wari kenca waktu si enggo itetapken",
+      "WEEKS_one": "{{count}} minggu kenca waktu si enggo itetapken",
+      "WEEKS_other": "{{count}} minggu kenca waktu si enggo itetapken",
+      "MONTHS_one": "{{count}} bulan kenca waktu si enggo itetapken",
+      "MONTHS_other": "{{count}} bulan kenca waktu si enggo itetapken",
+      "YEARS_one": "{{count}} tahun kenca waktu si enggo itetapken .",
+      "YEARS_other": "{{count}} tahun kenca waktu si enggo ijadwalken"
+    },
+    "units": {
+      "MINUTES_one": "menit",
+      "MINUTES_other": "menit",
+      "HOURS_one": "jam",
+      "HOURS_other": "jam",
+      "DAYS_one": "suwari",
+      "DAYS_other": "wari",
+      "WEEKS_one": "Minggu",
+      "WEEKS_other": "minggu",
+      "MONTHS_one": "bulan",
+      "MONTHS_other": "bulan",
+      "YEARS_one": "tahun",
+      "YEARS_other": "tahun"
+    }
+  }
+}

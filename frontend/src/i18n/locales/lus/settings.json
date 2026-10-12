@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Settings te pawh a awm",
+    "noPermission": "Settings enkawl phalna i nei lo."
+  },
+  "categories": {
+    "lead": "Kaihruai",
+    "user": "User hmangtu",
+    "integrations": "Integrations te pawh a awm"
+  },
+  "leadTabs": {
+    "fields": "Field hrang hrangah a awm",
+    "statuses": "Status & Sub-Status hrang hrang te",
+    "notifications": "Hriattirna & Schedulers te pawh a awm bawk"
+  },
+  "fields": {
+    "leadIntro": "Lead capture form configure rawh: fields enable/disable la, a tul anga mark la, i duh ang fields add rawh.",
+    "userIntro": "Add/Edit Team Member form chu configure rawh: fields enable/disable la, a tul anga mark la, i duh ang fields add rawh.",
+    "addCustomField": "+ Custom Field tih a ni",
+    "fieldLabel": "Field Label tih a ni",
+    "group": "Pawl",
+    "groupPlaceholderLead": "eg Zawhna Info",
+    "groupPlaceholderUser": "eg Thu belhchian dawl zawk",
+    "dataType": "Data chi hrang hrang",
+    "options": "Thil thlan theih (comma hmanga thliar hran) .",
+    "requiredLead": "A tul - i team-a partner-te chuan lead register tur chuan hei hi an fill up tur a ni",
+    "requiredUser": "Required - team member add hunah fill up tur a ni",
+    "creating": "Thil siam chhuah...",
+    "createField": "Field siam rawh",
+    "columns": {
+      "field": "Mual",
+      "group": "Pawl",
+      "type": "Lampang",
+      "required": "Mamawh",
+      "enabled": "Enable a ni tawh",
+      "kind": "Lainat"
+    },
+    "kind": {
+      "custom": "Chindan",
+      "core": "Core (locked) a ni.",
+      "standard": "Nihphung pangngai"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Thumal",
+    "TEXTAREA": "Thuziak sei tak",
+    "NUMBER": "A zat",
+    "CURRENCY": "Pawisa",
+    "DATE": "Tarikh",
+    "SELECT": "Dropdown a ni",
+    "LIST": "Ziak tlar"
+  },
+  "picker": {
+    "searchPlaceholder": "Lead fields ah zawng rawh...",
+    "summary": "{{shown}} entir · {{mandatory}} tih ngei ngei tur",
+    "mandatory": "Danin a phut",
+    "noMatch": "Field a inmil lo."
+  },
+  "statuses": {
+    "intro": "I lead status leh sub-status - mi pakhatin lead a update huna an dil (a date & time, lead fields) te.",
+    "add": "+ Status tih belh rawh",
+    "columns": {
+      "order": "Thupek",
+      "status": "Nihna",
+      "subStatuses": "Sub-Status hrang hrangte",
+      "asksFor": "Asks For",
+      "active": "Harhvang"
+    },
+    "moveUp": "Chunglam pan rawh",
+    "moveDown": "Hnung lam pan rawh",
+    "defaultBadge": "Lead thar tan default a ni",
+    "bookingBadge": "Booking dinhmun a ni",
+    "asksForLabel": "{{label}} a dil a.",
+    "asksForDateTime": "Date & time a zawt thin",
+    "none": "Pakhatmah",
+    "dateTime": "Date & hun hman dan",
+    "scheduledOn": "{{names}} chungchangah.",
+    "fieldsSummary_one": "{{count}} field ( {{mandatory}} tih ngei ngei tur)",
+    "fieldsSummary_other": "{{count}} fields ( {{mandatory}} tih ngei ngei tur)",
+    "deleteConfirm": "Delete dinhmun \" {{name}} \"? Hei hi tihdanglam theih a ni lo.",
+    "editTitle": "Edit Status - {{name}}",
+    "newTitle": "Status thar a awm",
+    "name": "Status Hming",
+    "colour": "Rawng",
+    "active": "Harhvang",
+    "isDefault": "Lead thar tan default status a awm",
+    "isBooking": "Booking dinhmun (Complete Booking hmanga siam)",
+    "whenMoved": "Lead pakhat chu hetiang dinhmunah hian sawn a nih chuan",
+    "askSchedule": "Date & time (scheduler) zawt rawh .",
+    "scheduleLabelPlaceholder": "Label, eg Visit at",
+    "fieldsToShow": "Update form-a tarlan tur lead fields te",
+    "subStatusesTitle": "Sub-Status hrang hrangte",
+    "subStatusesHint": "Sub-status tin hian anmahni date & time an zawt thei a, anmahni field an dah belh thei bawk - a chunga status fields chungah hian a lang.",
+    "subStatusName": "Sub-status hming a ni",
+    "subFields": "Field hrang hrang ( {{count}} ) .",
+    "subScheduleLabelPlaceholder": "Date & time label, eg Call back at ah hian a rawn lang leh ang",
+    "addSubStatus": "+ Sub-Status tih belh a ni",
+    "saveStatus": "Save Status a ni",
+    "createStatus": "Status siam rawh"
+  },
+  "notifications": {
+    "intro": "Lead pakhatin status a thlen chuan mi dik takte hriattir rawh - nghal, emaw, a chunga date & time scheduled hma/a hnua set time.",
+    "add": "+ Notification tih belh rawh",
+    "columns": {
+      "notification": "Hriattirna",
+      "whenStatusIs": "Status Is a nih chuan",
+      "sends": "A thawn",
+      "to": "Ah",
+      "via": "Kaltlangin",
+      "enabled": "Enable a ni tawh"
+    },
+    "anyStatus": "Eng status pawh nise",
+    "anySubStatus": "Sub-status eng pawh",
+    "inactiveOption": "{{name}} (a thawk lo) .",
+    "emptyRules": "Notifications a la awm lo - lead pakhatin status a thlen hunah i team hriattir turin pakhat add rawh.",
+    "jobs": {
+      "title": "Scheduled & thawn chhuah a ni",
+      "firesAt": "Fires At",
+      "notification": "Hriattirna",
+      "lead": "Kaihruai",
+      "status": "Nihna",
+      "details": "Kimchang",
+      "empty": "Engmah schedule leh thawn a la ni lo.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Hmabak",
+      "PROCESSING": "Processing tih a ni",
+      "SENT": "Thawn",
+      "FAILED": "Hlawhchham",
+      "SKIPPED": "Skipped a ni",
+      "CANCELLED": "Cancel a ni"
+    },
+    "deliveryStatus": {
+      "SENT": "thawn",
+      "FAILED": "hlawhchham",
+      "SKIPPED": "a skip ta a"
+    },
+    "deliveryChannel": {
+      "IN_APP": "in-app a ni",
+      "EMAIL": "email hmanga thawn a ni",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "User ruat a ni",
+      "owner": "Neitu",
+      "updatedBy": "Update a ni",
+      "role": "Role: {{name}}"
+    },
+    "channels": {
+      "inApp": "In-app a ni",
+      "email": "Email hmanga thawn theih a ni",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Notification \" {{name}} \" tihbo? A hnen atanga hriattirna pending te chu cancel a ni.",
+    "testPrompt": "He notification test hi nangmah (in-app) hnenah eng lead ID hmangin nge thawn rawh ?",
+    "testSent": "I bell-ah thawn a ni: {{title}} {{message}}",
+    "headersInvalid": "Webhook header te hi JSON dik tak a ni tur a ni , eg {\"Authorization\": \"Bearer xyz\"}.",
+    "editTitle": "Edit Hriattirna",
+    "newTitle": "Hriattirna thar",
+    "name": "Hming",
+    "namePlaceholder": "eg Site tlawh hriattirna",
+    "whenStatus": "Lead pakhat dinhmun a nih chuan",
+    "subStatus": "Sub-status a ni",
+    "send": "A thawn (scheduler) .",
+    "custom": "Chindan...",
+    "modeBefore": "hun ruat hmain",
+    "modeAfter": "hun ruat hnuah",
+    "noScheduleWarning": "He status hian date & time a zawt lo va, chuvangin \"before/at/after scheduled time\" notification hi a fire ngai lovang.",
+    "noScheduleFix": "Statuses & Sub-Statuses hnuaiah <strong>a date & time zawt rawh</strong> on on la, a nih loh leh Immediate takin thawn rawh.",
+    "sendTo": "(Combination eng pawh) ah thawn rawh.",
+    "recipientAssigned": "User ruat (hruaitu neitu) .",
+    "recipientOwner": "Account neitu / admin",
+    "recipientUpdatedBy": "Status update tu mi",
+    "everyoneWithRole": "Role nei zawng zawng",
+    "specificUsers": "A hmangtu bik (active) te .",
+    "inactiveNever": "Inactive users te hian notification an dawng ngai lo, selected pawh nise.",
+    "deliverVia": "A kaltlangin a rawn thawn thei",
+    "channelInApp": "In-app (bell) a awm a.",
+    "channelEmail": "Email hmanga thawn theih a ni",
+    "channelWebhook": "Webhook ( WhatsApp / SMS pe chhuaktu) .",
+    "emailHint": "Email hi a dawngtu tinte email address-ah a kal a, server-ah SMTP set up a ngai (backend/.env); chumi hma chuan email sends chu skip angin logged a ni.",
+    "webhookUrl": "Webhook URL ( POST , JSON ) tih a ni.",
+    "headers": "Headers ( JSON ) te chu .",
+    "content": "Notification chhunga thu awmte",
+    "title": "Nihna",
+    "message": "Thuthawn",
+    "insertIntoTitle": "Title ah hian dah lut rawh",
+    "insertIntoMessage": "Message ah hian dah lut rawh",
+    "anyLeadField": "Lead field eng pawh hian hna a thawk bawk a, eg <code1>{{example1}}</code1> emaw <code2>{{example2}}</code2> .",
+    "preview": "A hmasa ber (sample lead) 1.1.",
+    "enabled": "Enable a ni tawh",
+    "saveRule": "Notification chu save rawh",
+    "createRule": "Notification siam rawh",
+    "variables": {
+      "customerName": "Lead hming",
+      "customerMobile": "Mobile hmahruaitu",
+      "customerEmail": "Email hruai rawh",
+      "registrationId": "Hruaitu ID",
+      "status": "Nihna",
+      "subStatus": "Sub-status a ni",
+      "scheduleAt": "Ni & hun ruat sa",
+      "assignedTo": "User ruat a ni",
+      "updatedBy": "Update a ni",
+      "recipient": "A dawngtu hming",
+      "project": "Ruahmanna",
+      "notes": "Note thar ber",
+      "partner": "Partner hming"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Status a set veleh nghal",
+      "AT": "Hun ruat saah",
+      "A1D": "Hun ruat hnu ni 1 hnuah (follow-up check) ."
+    },
+    "immediately": "Rangtakin",
+    "atScheduled": "Hun ruat saah",
+    "before": {
+      "MINUTES_one": "Hun ruat hma minute {{count}}",
+      "MINUTES_other": "Hun ruat hma minute {{count}} a awm tawh",
+      "HOURS_one": "{{count}} hun ruat hma darkar khatah",
+      "HOURS_other": "Hun ruat hma darkar {{count}}",
+      "DAYS_one": "{{count}} hun ruat hma ni",
+      "DAYS_other": "{{count}} hun ruat hma ni",
+      "WEEKS_one": "{{count}} hun ruat hma kar khatah",
+      "WEEKS_other": "{{count}} hun ruat hma kar khatah",
+      "MONTHS_one": "{{count}} hun ruat hma thla khat",
+      "MONTHS_other": "{{count}} hun ruat hma thla a awm tawh",
+      "YEARS_one": "{{count}} hun ruat hma kum khat",
+      "YEARS_other": "{{count}} hun ruat hma kum"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} hun ruat hnu minute khatah",
+      "MINUTES_other": "{{count}} hun ruat hnu minute khatah",
+      "HOURS_one": "{{count}} hun ruat hnu darkar khatah",
+      "HOURS_other": "Hun ruat hnu darkar {{count}}",
+      "DAYS_one": "{{count}} hun ruat hnu ni khatah",
+      "DAYS_other": "Hun ruat hnu ni {{count}}",
+      "WEEKS_one": "{{count}} hun ruat hnu kar khatah",
+      "WEEKS_other": "{{count}} hun ruat hnu kar khatah",
+      "MONTHS_one": "{{count}} hun ruat hnu thla khatah",
+      "MONTHS_other": "{{count}} hun ruat hnu thla khatah",
+      "YEARS_one": "{{count}} hun ruat hnu kum khat hnuah",
+      "YEARS_other": "{{count}} hun ruat hnu kum"
+    },
+    "units": {
+      "MINUTES_one": "thil tereuh te",
+      "MINUTES_other": "te tak te te",
+      "HOURS_one": "darkar",
+      "HOURS_other": "darkar",
+      "DAYS_one": "ni",
+      "DAYS_other": "ni",
+      "WEEKS_one": "kar",
+      "WEEKS_other": "kar khat chhung a ni",
+      "MONTHS_one": "thla",
+      "MONTHS_other": "thla tam tak a ni",
+      "YEARS_one": "kum",
+      "YEARS_other": "kum"
+    }
+  }
+}

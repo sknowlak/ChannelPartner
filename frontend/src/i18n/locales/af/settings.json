@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Instellings",
+    "noPermission": "Jy het nie toestemming om instellings te bestuur nie."
+  },
+  "categories": {
+    "lead": "Lood",
+    "user": "Gebruiker",
+    "integrations": "Integrasies"
+  },
+  "leadTabs": {
+    "fields": "Velde",
+    "statuses": "Statusse en substatusse",
+    "notifications": "Kennisgewings en skeduleers"
+  },
+  "fields": {
+    "leadIntro": "Stel die loodvasleggingsvorm op: aktiveer/deaktiveer velde, merk dit as vereis, of voeg jou eie pasgemaakte velde by.",
+    "userIntro": "Stel die Voeg by/wysig spanlid-vorm op: aktiveer/deaktiveer velde, merk dit as vereis, of voeg jou eie pasgemaakte velde by.",
+    "addCustomField": "+ Voeg pasgemaakte veld by",
+    "fieldLabel": "Veld Etiket",
+    "group": "Groep",
+    "groupPlaceholderLead": "bv. Navrae-inligting",
+    "groupPlaceholderUser": "bv. Bykomende besonderhede",
+    "dataType": "Datatipe",
+    "options": "Opsies (komma-geskei)",
+    "requiredLead": "Vereis - vennote in jou span moet dit invul om 'n lood te registreer",
+    "requiredUser": "Vereis - moet ingevul word wanneer 'n spanlid bygevoeg word",
+    "creating": "Skep tans …",
+    "createField": "Skep veld",
+    "columns": {
+      "field": "Veld",
+      "group": "Groep",
+      "type": "Tik",
+      "required": "Vereis",
+      "enabled": "Geaktiveer",
+      "kind": "Soort"
+    },
+    "kind": {
+      "custom": "Pasgemaak",
+      "core": "Kern (gesluit)",
+      "standard": "Standaard"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Teks",
+    "TEXTAREA": "Lang teks",
+    "NUMBER": "Nommer",
+    "CURRENCY": "Geldeenheid",
+    "DATE": "Datum",
+    "SELECT": "Aftreklys",
+    "LIST": "Lys"
+  },
+  "picker": {
+    "searchPlaceholder": "Soek loodvelde...",
+    "summary": "{{shown}} gewys · {{mandatory}} verpligtend",
+    "mandatory": "Verpligtend",
+    "noMatch": "Geen velde pas nie."
+  },
+  "statuses": {
+    "intro": "Jou loodstatusse en substatusse - waarvoor elkeen vra ('n datum en tyd, loodvelde) wanneer iemand 'n leidraad daarvoor opdateer.",
+    "add": "+ Voeg status by",
+    "columns": {
+      "order": "Bestel",
+      "status": "Status",
+      "subStatuses": "Sub-statusse",
+      "asksFor": "Vra vir",
+      "active": "Aktief"
+    },
+    "moveUp": "Beweeg op",
+    "moveDown": "Beweeg af",
+    "defaultBadge": "Verstek vir nuwe leidrade",
+    "bookingBadge": "Bespreking status",
+    "asksForLabel": "Vra vir {{label}}",
+    "asksForDateTime": "Vra vir datum en tyd",
+    "none": "Geen",
+    "dateTime": "Datum en tyd",
+    "scheduledOn": "op {{names}}",
+    "fieldsSummary_one": "{{count}} veld ( {{mandatory}} verpligtend)",
+    "fieldsSummary_other": "{{count}} velde ( {{mandatory}} verpligtend)",
+    "deleteConfirm": "Vee status \" {{name}} \" uit? Dit kan nie ongedaan gemaak word nie.",
+    "editTitle": "Wysig status - {{name}}",
+    "newTitle": "Nuwe Status",
+    "name": "Status Naam",
+    "colour": "Kleur",
+    "active": "Aktief",
+    "isDefault": "Verstekstatus vir nuwe leidrade",
+    "isBooking": "Besprekingstatus (gestel deur Voltooi bespreking)",
+    "whenMoved": "Wanneer 'n lood na hierdie status geskuif word",
+    "askSchedule": "Vra vir 'n datum en tyd (skeduleerder)",
+    "scheduleLabelPlaceholder": "Etiket, bv. Besoek by",
+    "fieldsToShow": "Lei velde om op die opdateringsvorm te wys",
+    "subStatusesTitle": "Sub-statusse",
+    "subStatusesHint": "Elke substatus kan vir sy eie datum en tyd vra en sy eie velde byvoeg – bo-aan die status se velde hierbo gewys.",
+    "subStatusName": "Sub-status naam",
+    "subFields": "Velde ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Datum- en tydetiket, bv. Bel terug by",
+    "addSubStatus": "+ Voeg substatus by",
+    "saveStatus": "Stoor status",
+    "createStatus": "Skep status"
+  },
+  "notifications": {
+    "intro": "Stel die regte mense in kennis wanneer 'n lood 'n status bereik - onmiddellik, of 'n vasgestelde tyd voor/na die datum en tyd wat daarop geskeduleer is.",
+    "add": "+ Voeg kennisgewing by",
+    "columns": {
+      "notification": "Kennisgewing",
+      "whenStatusIs": "Wanneer Status Is",
+      "sends": "Stuur",
+      "to": "Om",
+      "via": "Via",
+      "enabled": "Geaktiveer"
+    },
+    "anyStatus": "Enige status",
+    "anySubStatus": "Enige sub-status",
+    "inactiveOption": "{{name}} (onaktief)",
+    "emptyRules": "Nog geen kennisgewings nie - voeg een by om jou span te waarsku wanneer 'n lood 'n status bereik.",
+    "jobs": {
+      "title": "Geskeduleer en gestuur",
+      "firesAt": "Brande By",
+      "notification": "Kennisgewing",
+      "lead": "Lood",
+      "status": "Status",
+      "details": "Besonderhede",
+      "empty": "Nog niks geskeduleer of gestuur nie.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Hangende",
+      "PROCESSING": "Verwerking",
+      "SENT": "Gestuur",
+      "FAILED": "Misluk",
+      "SKIPPED": "Oorgeslaan",
+      "CANCELLED": "Gekanselleer"
+    },
+    "deliveryStatus": {
+      "SENT": "gestuur",
+      "FAILED": "misluk",
+      "SKIPPED": "oorgeslaan"
+    },
+    "deliveryChannel": {
+      "IN_APP": "in-toepassing",
+      "EMAIL": "e-pos",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Toegewysde gebruiker",
+      "owner": "Eienaar",
+      "updatedBy": "Opgedateer deur",
+      "role": "Rol: {{name}}"
+    },
+    "channels": {
+      "inApp": "In-toepassing",
+      "email": "E-pos",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Vee kennisgewing \" {{name}} \" uit? Hangende aanmanings daaruit word gekanselleer.",
+    "testPrompt": "Stuur 'n toets van hierdie kennisgewing aan jouself (in-toepassing) met behulp van watter lood- ID ?",
+    "testSent": "Gestuur na jou klokkie: {{title}} {{message}}",
+    "headersInvalid": "Webhook opskrifte moet geldige JSON wees, bv. {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Wysig kennisgewing",
+    "newTitle": "Nuwe kennisgewing",
+    "name": "Naam",
+    "namePlaceholder": "bv. Terreinbesoek-herinnering",
+    "whenStatus": "Wanneer 'n lood se status is",
+    "subStatus": "Sub-status",
+    "send": "Stuur (skeduleerder)",
+    "custom": "Gepasmaakte...",
+    "modeBefore": "voor geskeduleerde tyd",
+    "modeAfter": "na geskeduleerde tyd",
+    "noScheduleWarning": "Hierdie status vra nie vir 'n datum en tyd nie, so 'n \"voor/op/na geskeduleerde tyd\"-kennisgewing sal nooit afgaan nie.",
+    "noScheduleFix": "Skakel <strong>Vra vir 'n datum en tyd</strong> daarvoor aan onder Statusse en substatusse, of stuur Onmiddellik.",
+    "sendTo": "Stuur na (enige kombinasie)",
+    "recipientAssigned": "Toegewysde gebruiker (hoofeienaar)",
+    "recipientOwner": "Rekening eienaar / admin",
+    "recipientUpdatedBy": "Persoon wat die status opgedateer het",
+    "everyoneWithRole": "Almal met 'n rol",
+    "specificUsers": "Spesifieke gebruikers (aktief)",
+    "inactiveNever": "Onaktiewe gebruikers ontvang nooit kennisgewings nie, selfs al is dit gekies.",
+    "deliverVia": "Lewer af via",
+    "channelInApp": "Inprogram (klok)",
+    "channelEmail": "E-pos",
+    "channelWebhook": "Webhook ( WhatsApp / SMS verskaffer)",
+    "emailHint": "E-pos gaan na elke ontvanger se e-posadres en moet SMTP opgestel word op die bediener (backend/.env); tot dan word e-posversendings aangeteken as oorgeslaan.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Opskrifte ( JSON )",
+    "content": "Kennisgewing inhoud",
+    "title": "Titel",
+    "message": "Boodskap",
+    "insertIntoTitle": "Voeg in Titel",
+    "insertIntoMessage": "Voeg in Boodskap in",
+    "anyLeadField": "Enige loodveld werk ook, bv. <code1>{{example1}}</code1> of <code2>{{example2}}</code2> .",
+    "preview": "Voorskou (voorbeeld lood)",
+    "enabled": "Geaktiveer",
+    "saveRule": "Stoor kennisgewing",
+    "createRule": "Skep kennisgewing",
+    "variables": {
+      "customerName": "Hoofnaam",
+      "customerMobile": "Lood selfoon",
+      "customerEmail": "Lei e-pos",
+      "registrationId": "Lood ID",
+      "status": "Status",
+      "subStatus": "Sub-status",
+      "scheduleAt": "Geskeduleerde datum en tyd",
+      "assignedTo": "Toegewysde gebruiker",
+      "updatedBy": "Opgedateer deur",
+      "recipient": "Ontvanger naam",
+      "project": "Projek",
+      "notes": "Jongste nota",
+      "partner": "Vennoot se naam"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Onmiddellik wanneer die status gestel is",
+      "AT": "Op die geskeduleerde tyd",
+      "A1D": "1 dag na geskeduleerde tyd (opvolgkontrole)"
+    },
+    "immediately": "Onmiddellik",
+    "atScheduled": "Op geskeduleerde tyd",
+    "before": {
+      "MINUTES_one": "{{count}} minuut voor geskeduleerde tyd",
+      "MINUTES_other": "{{count}} minute voor geskeduleerde tyd",
+      "HOURS_one": "{{count}} uur voor geskeduleerde tyd",
+      "HOURS_other": "{{count}} ure voor geskeduleerde tyd",
+      "DAYS_one": "{{count}} dag voor geskeduleerde tyd",
+      "DAYS_other": "{{count}} dae voor geskeduleerde tyd",
+      "WEEKS_one": "{{count}} week voor geskeduleerde tyd",
+      "WEEKS_other": "{{count}} weke voor geskeduleerde tyd",
+      "MONTHS_one": "{{count}} maand voor geskeduleerde tyd",
+      "MONTHS_other": "{{count}} maande voor geskeduleerde tyd",
+      "YEARS_one": "{{count}} jaar voor geskeduleerde tyd",
+      "YEARS_other": "{{count}} jaar voor geskeduleerde tyd"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minuut na geskeduleerde tyd",
+      "MINUTES_other": "{{count}} minute na geskeduleerde tyd",
+      "HOURS_one": "{{count}} uur na geskeduleerde tyd",
+      "HOURS_other": "{{count}} ure na geskeduleerde tyd",
+      "DAYS_one": "{{count}} dag na geskeduleerde tyd",
+      "DAYS_other": "{{count}} dae na geskeduleerde tyd",
+      "WEEKS_one": "{{count}} week na geskeduleerde tyd",
+      "WEEKS_other": "{{count}} weke na geskeduleerde tyd",
+      "MONTHS_one": "{{count}} maand na geskeduleerde tyd",
+      "MONTHS_other": "{{count}} maande na geskeduleerde tyd",
+      "YEARS_one": "{{count}} jaar na geskeduleerde tyd",
+      "YEARS_other": "{{count}} jaar na geskeduleerde tyd"
+    },
+    "units": {
+      "MINUTES_one": "minuut",
+      "MINUTES_other": "minute",
+      "HOURS_one": "uur",
+      "HOURS_other": "ure",
+      "DAYS_one": "dag",
+      "DAYS_other": "dae",
+      "WEEKS_one": "week",
+      "WEEKS_other": "weke",
+      "MONTHS_one": "maand",
+      "MONTHS_other": "maande",
+      "YEARS_one": "jaar",
+      "YEARS_other": "jare"
+    }
+  }
+}

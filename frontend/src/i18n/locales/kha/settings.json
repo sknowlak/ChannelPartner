@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Ki jingpynbeit",
+    "noPermission": "Ka don ka jingbit ban pyniaid ia ki jingpynbeit."
+  },
+  "categories": {
+    "lead": "Ialam",
+    "user": "U nongpyndonkam",
+    "integrations": "Ki jingpyniasoh"
+  },
+  "leadTabs": {
+    "fields": "Ki lyngkha",
+    "statuses": "Ki jinglong bad ki jinglong rit",
+    "notifications": "Ki jingpynbna bad ki jingpynbeit por"
+  },
+  "fields": {
+    "leadIntro": "Pynbeit ia ka phorm jong ka jingshim lead: pyntreikam/pynsangeh ia ki jaka, buh dak ia ki kum kiba donkam, lane pyndap ia la ki jong ki jaka ba la shna kyrpang.",
+    "userIntro": "Pynbeit ia ka phorm jong ka jingpynrung/pynbeit ia ki dkhot jong ka kynhun: pyntreikam/pynsangeh ia ki jaka, buh dak ia ki kum kiba donkam, lane pyndap ia la ki jong ki jaka ba la shna kyrpang.",
+    "addCustomField": "+ Pyndap ia ka jaka ba la buh kyrpang",
+    "fieldLabel": "Ka Jingthoh ha ka jaka",
+    "group": "Kynhun",
+    "groupPlaceholderLead": "kum ka jingtip jingkylli",
+    "groupPlaceholderUser": "eg Ki jingtip ba bniah",
+    "dataType": "Ka jait data",
+    "options": "Ki jingjied (la pyniakhlad da u comma)",
+    "requiredLead": "Donkam - ki paralok ha ka kynhun jong phi ki dei ban pyndap ia kane ban pynrung kyrteng ia u nongialam .",
+    "requiredUser": "Donkam - dei ban pyndap haba pynrung ia u dkhot jong ka kynhun .",
+    "creating": "Ka jingthaw...",
+    "createField": "Pynlong ia ka jaka",
+    "columns": {
+      "field": "Madan",
+      "group": "Kynhun",
+      "type": "Ka jait",
+      "required": "Badonkam",
+      "enabled": "La pyntreikam",
+      "kind": "Bha"
+    },
+    "kind": {
+      "custom": "Dustur",
+      "core": "Ka pdeng (ba la khang)",
+      "standard": "Kyrdan"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Jingthoh",
+    "TEXTAREA": "Ka jingthoh kaba jrong",
+    "NUMBER": "Nombor",
+    "CURRENCY": "Pisa",
+    "DATE": "Ka tarik",
+    "SELECT": "Ka jingpynhiar",
+    "LIST": "Ka lis ki tiar ki tar ne ka kam ban leh ne ka lis ki kyrteng"
+  },
+  "picker": {
+    "searchPlaceholder": "Ka jingwad ia ki jaka...",
+    "summary": "{{shown}} la pyni · {{mandatory}} ba donkam",
+    "mandatory": "Kaba kongsan",
+    "noMatch": "Ki lyngkha kiba iadei."
+  },
+  "statuses": {
+    "intro": "Ki jinglong bad ki jinglong ba rit jong ki nongialam jong phi - kaei kaba uwei pa uwei u pan (ka tarik & ka por, ki jaka jong ki nongialam) haba don kiba pynthymmai ia u nongialam sha ka.",
+    "add": "+ Pyndap ia ka jinglong",
+    "columns": {
+      "order": "Hukum",
+      "status": "Kyrdan",
+      "subStatuses": "Ki jinglong rit",
+      "asksFor": "Ka kylli na ka bynta",
+      "active": "Ba shait"
+    },
+    "moveUp": "Pynkylla sha jrong",
+    "moveDown": "Pynhiar shapoh",
+    "defaultBadge": "Ka jingpynkylla na ka bynta ki nongialam ba thymmai",
+    "bookingBadge": "Ka jinglong jingman jong ka jingbuh jaka",
+    "asksForLabel": "Ka kylli ia ka {{label}}",
+    "asksForDateTime": "Kylli ia ka tarik bad ka por",
+    "none": "Ym napdeng kine",
+    "dateTime": "Ka tarik bad ka por",
+    "scheduledOn": "ha {{names}}",
+    "fieldsSummary_one": "{{count}} jaka ( {{mandatory}} ba donkam)",
+    "fieldsSummary_other": "{{count}} ki jaka ( {{mandatory}} ba donkam)",
+    "deleteConfirm": "Pynduh ia ka jinglong \" {{name}} \"? Ia kane ym lah ban pynkylla.",
+    "editTitle": "Pynbeit ia ka jinglong - {{name}}",
+    "newTitle": "Ka Jinglong bathymmai",
+    "name": "Kyrteng kyrdan",
+    "colour": "Rong",
+    "active": "Ba shait",
+    "isDefault": "Ka jinglong ba la buh lypa na ka bynta ki nongïalam ba thymmai",
+    "isBooking": "Ka jinglong jingman jong ka jingbuh jaka (la buh da ka jingbuh jaka ba pura)",
+    "whenMoved": "Haba la pynkynriah ia u lead sha kane ka kyrdan .",
+    "askSchedule": "Kylli ia ka tarik bad ka por (u nongbuh por)",
+    "scheduleLabelPlaceholder": "Label, kum ka jingleit jngoh ha ka .",
+    "fieldsToShow": "Ki jaka ba ialam ban pyni ha ka phorm pynthymmai",
+    "subStatusesTitle": "Ki jinglong rit",
+    "subStatusesHint": "Kawei pa kawei ka sub-status ka lah ban pan ia la ka jong ka tarik & por bad pyndap ia la ki jong ki jaka - ba la pyni halor jong ki jaka jong ka status haneng.",
+    "subStatusName": "Ka kyrteng jong ka kyrdan",
+    "subFields": "Ki jaka ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Ka jingthoh ia ka tarik & ka por, kum ka jingkhot biang ha ka 10.00.",
+    "addSubStatus": "+ Pyndap ia ka jinglong ba rit",
+    "saveStatus": "Save ia ka jinglong",
+    "createStatus": "Pynlong ia ka jinglong"
+  },
+  "notifications": {
+    "intro": "Pyntip sha ki briew kiba dei ynda u lead u la poi ha ka kyrdan - mardor, lane ka por ba la buh shwa/hadien ka tarik & por ba la buh ha ka.",
+    "add": "+ Pynrung ia ka jingpynbna",
+    "columns": {
+      "notification": "Jingpyntip",
+      "whenStatusIs": "Haba ka jinglong ka long",
+      "sends": "Ka phah",
+      "to": "Sha",
+      "via": "Lyngba",
+      "enabled": "La pyntreikam"
+    },
+    "anyStatus": "Kano kano ka kyrdan",
+    "anySubStatus": "Kano kano ka kyrdan ba rit",
+    "inactiveOption": "{{name}} (bym treikam)",
+    "emptyRules": "Ym pat don jingpynbna - pynrung kawei ban pyntip ia ka kynhun jong phi ynda u nongialam u la poi ha ka kyrdan.",
+    "jobs": {
+      "title": "La buh por bad la phah",
+      "firesAt": "Ki ding ha",
+      "notification": "Jingpyntip",
+      "lead": "Ialam",
+      "status": "Kyrdan",
+      "details": "Ki jingtip ba bniah",
+      "empty": "Ym pat buh por ne phah ei ei.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Ba dang sah",
+      "PROCESSING": "Ka jingpynkhreh",
+      "SENT": "La phah",
+      "FAILED": "Bym longkam",
+      "SKIPPED": "La pynkynriah",
+      "CANCELLED": "La weng noh"
+    },
+    "deliveryStatus": {
+      "SENT": "la phah",
+      "FAILED": "bym longkam",
+      "SKIPPED": "la lyndet"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ha ka app",
+      "EMAIL": "ka email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "U nongpyndonkam ba la aiti",
+      "owner": "Trai",
+      "updatedBy": "La pynthymmai da ka",
+      "role": "Ka bynta: {{name}}"
+    },
+    "channels": {
+      "inApp": "Hapoh ka app",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Pyndam ia ka jingpynbna \" {{name}} \"? Ki jingpynkynmaw kiba dang sahteng na ka la pynsangeh noh.",
+    "testPrompt": "Phah ia ka test jong kane ka jingpynbna sha lade (ha ka app) da kaba pyndonkam ia kano ID lead ?",
+    "testSent": "La phah sha ka baje jong phi: {{title}} {{message}}",
+    "headersInvalid": "Ki khlieh jong Webhook ki dei ban long JSON kiba biang , kum {\"Ka jingai bor\": \"U nongkit xyz\"}",
+    "editTitle": "Pynbeit ia ka jingpynbna",
+    "newTitle": "Ka jingpynbna ba thymmai",
+    "name": "Kyrteng",
+    "namePlaceholder": "kum ka jingpynkynmaw ban leit jngoh ia ka jaka",
+    "whenStatus": "Haba ka kyrdan jong u nongialam ka long .",
+    "subStatus": "Ka jinglong ba rit",
+    "send": "Phah (nongbuh por)",
+    "custom": "Dustur...",
+    "modeBefore": "shwa ka por ba la buh",
+    "modeAfter": "hadien ka por ba la buh",
+    "noScheduleWarning": "Kane ka status kam pan ia ka tarik & por, kumta ka jingpynbna \"shwa/ha/hadien ka por ba la buh\" kan ym bthei satia.",
+    "noScheduleFix": "Pynmeh ia <strong>ka Kylli ia ka tarik & por</strong> na ka bynta jong ka hapoh ki jinglong & ki jinglong rit, lane phah mardor.",
+    "sendTo": "Phah sha (kano kano ka jingpyniasoh)",
+    "recipientAssigned": "U nongpyndonkam ba la aiti (u trai ba hakhmat eh)",
+    "recipientOwner": "U trai / nongpyniaid ia ka account",
+    "recipientUpdatedBy": "U briew uba la pynthymmai ia ka jinglong .",
+    "everyoneWithRole": "Baroh kiba don ka bynta",
+    "specificUsers": "Ki nongpyndonkam ba kyrpang (ba treikam)",
+    "inactiveNever": "Ki nongpyndonkam bym treikam kim ju ioh ia ki jingpynbna, wat lada la jied.",
+    "deliverVia": "Pynpoi lyngba",
+    "channelInApp": "Hapoh ka app (ka jingsawa)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( ki nongpynbiang WhatsApp / SMS )",
+    "emailHint": "Ka email ka leit sha kawei pa kawei ka email address jong u nongpdiang bad donkam ia ka SMTP ba la buh ha ka server (backend/.env); haduh kata ka por ki email ba la phah la log kum ba la skip.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Ki khlieh ( JSON )",
+    "content": "Ka jingdon jong ka jingpynbna",
+    "title": "Kyrdan",
+    "message": "Khubor",
+    "insertIntoTitle": "Pynrung ha ka Kyrteng",
+    "insertIntoMessage": "Pynrung ha ka khubor",
+    "anyLeadField": "Kano kano ka jaka lead ka treikam ruh, kum <code1>{{example1}}</code1> lane <code2>{{example2}}</code2> .",
+    "preview": "Peit lypa (nuksa ialam)",
+    "enabled": "La pyntreikam",
+    "saveRule": "Save ia ka jingpynbna",
+    "createRule": "Pynlong ia ka jingpynbna",
+    "variables": {
+      "customerName": "Ka kyrteng",
+      "customerMobile": "Ialam ia ka mobile",
+      "customerEmail": "Ialam ia ka email",
+      "registrationId": "ID ialam",
+      "status": "Kyrdan",
+      "subStatus": "Ka jinglong ba rit",
+      "scheduleAt": "Ka tarik bad por ba la buh",
+      "assignedTo": "U nongpyndonkam ba la aiti",
+      "updatedBy": "La pynthymmai da ka",
+      "recipient": "Kyrteng jong u nongpdiang",
+      "project": "Projek",
+      "notes": "Ka jingthoh ba thymmai",
+      "partner": "Kyrteng jong u paralok"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Mar kumta hi ynda la buh ia ka status .",
+      "AT": "Ha ka por ba la buh .",
+      "A1D": "1 sngi hadien ka por ba la buh (ka jingpeit bniah)"
+    },
+    "immediately": "Mardor",
+    "atScheduled": "Ha ka por ba la buh",
+    "before": {
+      "MINUTES_one": "{{count}} minit shwa ka por ba la buh",
+      "MINUTES_other": "{{count}} minit shwa ka por ba la buh",
+      "HOURS_one": "{{count}} shi kynta shwa ka por ba la buh",
+      "HOURS_other": "{{count}} kynta shwa ka por ba la buh",
+      "DAYS_one": "{{count}} sngi shwa ka por ba la buh",
+      "DAYS_other": "{{count}} sngi shwa ka por ba la buh",
+      "WEEKS_one": "{{count}} shi taiew shwa ka por ba la buh",
+      "WEEKS_other": "{{count}} taiew shwa ka por ba la buh",
+      "MONTHS_one": "{{count}} bnai shwa ka por ba la buh",
+      "MONTHS_other": "{{count}} bnai shwa ka por ba la buh",
+      "YEARS_one": "{{count}} snem shwa ka por ba la buh",
+      "YEARS_other": "{{count}} snem shwa ka por ba la buh"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minit hadien ka por ba la buh",
+      "MINUTES_other": "{{count}} minit hadien ka por ba la buh",
+      "HOURS_one": "{{count}} kynta hadien ka por ba la buh",
+      "HOURS_other": "{{count}} kynta hadien ka por ba la buh",
+      "DAYS_one": "{{count}} sngi hadien ka por ba la buh",
+      "DAYS_other": "{{count}} sngi hadien ka por ba la buh",
+      "WEEKS_one": "{{count}} taiew hadien ka por ba la buh",
+      "WEEKS_other": "{{count}} taiew hadien ka por ba la buh",
+      "MONTHS_one": "{{count}} bnai hadien ka por ba la buh",
+      "MONTHS_other": "{{count}} bnai hadien ka por ba la buh",
+      "YEARS_one": "{{count}} snem hadien ka por ba la buh",
+      "YEARS_other": "{{count}} snem hadien ka por ba la buh"
+    },
+    "units": {
+      "MINUTES_one": "minit",
+      "MINUTES_other": "ki minit",
+      "HOURS_one": "kynta",
+      "HOURS_other": "ki kynta",
+      "DAYS_one": "Sngi Balang",
+      "DAYS_other": "sngi",
+      "WEEKS_one": "taiew",
+      "WEEKS_other": "taiew",
+      "MONTHS_one": "bnai",
+      "MONTHS_other": "bnai",
+      "YEARS_one": "snem",
+      "YEARS_other": "ki snem"
+    }
+  }
+}

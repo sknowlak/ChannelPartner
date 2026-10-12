@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Paramètres",
+    "noPermission": "Avètz pas l'autorizacion de gerir los paramètres."
+  },
+  "categories": {
+    "lead": "Menar",
+    "user": "Utilizaire",
+    "integrations": "Integracions"
+  },
+  "leadTabs": {
+    "fields": "Camps",
+    "statuses": "Estatuts e sosestatuts",
+    "notifications": "Notificacions e programators"
+  },
+  "fields": {
+    "leadIntro": "Configuratz lo formulari de captura de clients potencials : activatz/desactivatz los camps, marcatz-los obligatòris, o apondètz vòstres pròpris camps personalizats.",
+    "userIntro": "Configuratz lo formulari Apondre/Modificar un membre de l'equipa : activar/desactivar los camps, marcar-los obligatòris, o apondre vòstres pròpris camps personalizats.",
+    "addCustomField": "+ Apondre un camp personalizat",
+    "fieldLabel": "Etiqueta de camp",
+    "group": "Grop",
+    "groupPlaceholderLead": "per exemple, d'informacions d'enquèsta",
+    "groupPlaceholderUser": "p. ex. Detalhs suplementaris",
+    "dataType": "Tipe de donadas",
+    "options": "Opcions (separats per de virgulas)",
+    "requiredLead": "Obligatòri - los partenaris de vòstra equipa devon emplenar aquò per enregistrar un client potencial",
+    "requiredUser": "Obligatòri - deu èsser emplenat al moment de l'apondon d'un membre de l'equipa",
+    "creating": "Creant...",
+    "createField": "Crear camp",
+    "columns": {
+      "field": "Camp",
+      "group": "Grop",
+      "type": "Tipe",
+      "required": "Exigit",
+      "enabled": "Activat",
+      "kind": "Brave"
+    },
+    "kind": {
+      "custom": "Costuma",
+      "core": "Nuclèu (blocat)",
+      "standard": "Estandard"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Tèxt",
+    "TEXTAREA": "Tèxte long",
+    "NUMBER": "Nombre",
+    "CURRENCY": "Moneda",
+    "DATE": "Data",
+    "SELECT": "Menú desenrotlant",
+    "LIST": "Lista"
+  },
+  "picker": {
+    "searchPlaceholder": "Cercar los camps de pista...",
+    "summary": "{{shown}} mostrat · {{mandatory}} obligatòri",
+    "mandatory": "Obligatòri",
+    "noMatch": "Cap de camp correspond."
+  },
+  "statuses": {
+    "intro": "Vòstres estatuts e sos-estatuts de client potencial - çò que cadun demanda (una data e ora, camps de client potencial) quand qualqu'un i met a jorn un client potencial.",
+    "add": "+ Apondre l'estatut",
+    "columns": {
+      "order": "Òrdre",
+      "status": "Estatut",
+      "subStatuses": "Sosestatuts",
+      "asksFor": "Demanda",
+      "active": "Actiu"
+    },
+    "moveUp": "Amont",
+    "moveDown": "Davalatz",
+    "defaultBadge": "Per defaut pels novèls clients potencials",
+    "bookingBadge": "Estat de reservacion",
+    "asksForLabel": "Demanda {{label}}",
+    "asksForDateTime": "Demanda la data e l'ora",
+    "none": "Cap",
+    "dateTime": "Data e ora",
+    "scheduledOn": "sus {{names}}",
+    "fieldsSummary_one": "{{count}} camp ( {{mandatory}} obligatòri)",
+    "fieldsSummary_other": "{{count}} camps ( {{mandatory}} obligatòri)",
+    "deleteConfirm": "Suprimir l'estat \" {{name}} \"? Aquò pòt pas èsser desfach.",
+    "editTitle": "Modificar l'estat - {{name}}",
+    "newTitle": "Novèl estatut",
+    "name": "Nom d'estat",
+    "colour": "Color",
+    "active": "Actiu",
+    "isDefault": "Estatut per defaut pels novèls clients potencials",
+    "isBooking": "Estat de reservacion (definit per Reservacion completa)",
+    "whenMoved": "Quand un client es desplaçat cap a aqueste estatut",
+    "askSchedule": "Demandatz una data e una ora (programator)",
+    "scheduleLabelPlaceholder": "Etiqueta, per ex. Visitatz a",
+    "fieldsToShow": "Camps de pista d'afichar sul formulari de mesa a jorn",
+    "subStatusesTitle": "Sosestatuts",
+    "subStatusesHint": "Cada sos-estatut pòt demandar sa pròpria data e ora e apondre sos pròpris camps - mostrats en dessús dels camps de l'estatut çai-sus.",
+    "subStatusName": "Nom de sos-estatut",
+    "subFields": "Camps ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Etiqueta de data e ora, per exemple, tornar telefonar a",
+    "addSubStatus": "+ Apondre un sos-estatut",
+    "saveStatus": "Enregistrar l'estat",
+    "createStatus": "Crear estatut"
+  },
+  "notifications": {
+    "intro": "Avisar las personas justas quand un client potencial atenh un estatut - immediatament, o un orari fixat abans/après la data e l'ora programada sus el.",
+    "add": "+ Apondre una notificacion",
+    "columns": {
+      "notification": "Notificacion",
+      "whenStatusIs": "Quand l'estatut es",
+      "sends": "Manda",
+      "to": "A",
+      "via": "Via",
+      "enabled": "Activat"
+    },
+    "anyStatus": "Quin estatut que siá",
+    "anySubStatus": "Tot sos-estatut",
+    "inactiveOption": "{{name}} (inactiu)",
+    "emptyRules": "Pas de notificacion encara - n'apondre una per alertar vòstra equipa quand un client potencial atenh un estatut.",
+    "jobs": {
+      "title": "Programat e mandat",
+      "firesAt": "Incendis a",
+      "notification": "Notificacion",
+      "lead": "Menar",
+      "status": "Estatut",
+      "details": "Detalhs",
+      "empty": "Res de programat o mandat encara.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "En espèra",
+      "PROCESSING": "Tractament",
+      "SENT": "Enviat",
+      "FAILED": "Mancat",
+      "SKIPPED": "Sautat",
+      "CANCELLED": "Anullat"
+    },
+    "deliveryStatus": {
+      "SENT": "enviat",
+      "FAILED": "mancat",
+      "SKIPPED": "sautat"
+    },
+    "deliveryChannel": {
+      "IN_APP": "dins l'aplicacion",
+      "EMAIL": "corrièl",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Utilizaire assignat",
+      "owner": "Proprietari",
+      "updatedBy": "Mesa a jorn per",
+      "role": "Ròtle : {{name}}"
+    },
+    "channels": {
+      "inApp": "Dins l'aplicacion",
+      "email": "Corrièl",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Suprimir la notificacion \" {{name}} \"? Los rapèls en espèra d'aquò son anullats.",
+    "testPrompt": "Mandatz un tèst d'aquesta notificacion a vos-meteis (dins l'aplicacion) en utilizant quin ID de client potencial ?",
+    "testSent": "Mandat a vòstra campana : {{title}} {{message}}",
+    "headersInvalid": "Los entèstas Webhook devon èsser JSON valids , per exemple {\"Autorizacion\" : \"Portaire xyz\"}",
+    "editTitle": "Modificar la notificacion",
+    "newTitle": "Notificacion novèla",
+    "name": "Nom",
+    "namePlaceholder": "p. ex. Rapèl de visita del site",
+    "whenStatus": "Quand l'estatut d'un client potencial es",
+    "subStatus": "Sos-estatut",
+    "send": "Mandar (planificator)",
+    "custom": "Costuma...",
+    "modeBefore": "abans l'ora prevista",
+    "modeAfter": "après l'ora prevista",
+    "noScheduleWarning": "Aqueste estatut demanda pas una data e una ora, doncas una notificacion \"abans/a/aprèp l'ora programada\" se desplegariá pas jamai.",
+    "noScheduleFix": "Activatz <strong>Demandar una data e una ora</strong> per aquò jos Estatuts e Sostatuts, o mandar Immediatament.",
+    "sendTo": "Mandar a (quina combinason que siá)",
+    "recipientAssigned": "Utilizaire assignat (proprietari principal)",
+    "recipientOwner": "Proprietari / administrator del compte",
+    "recipientUpdatedBy": "Persona qu'a mes a jorn l'estatut",
+    "everyoneWithRole": "Tot lo monde amb un ròtle",
+    "specificUsers": "Utilizaires especifics (actius)",
+    "inactiveNever": "Los utilizaires inactius recebon pas jamai de notificacions, quitament se son seleccionats.",
+    "deliverVia": "Entregar via",
+    "channelInApp": "Dins l'aplicacion (campana)",
+    "channelEmail": "Corrièl",
+    "channelWebhook": "Webhook ( provesidor WhatsApp / SMS )",
+    "emailHint": "Lo corrièl va a l'adreça de corrièl de cada destinatari e a besonh de configurar un SMTP sul servidor (backend/.env); fins alara los mandadís de corrièl son enregistrats coma sautats.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Entèstas ( JSON )",
+    "content": "Contengut de la notificacion",
+    "title": "Títol",
+    "message": "Messatge",
+    "insertIntoTitle": "Inserir dins lo títol",
+    "insertIntoMessage": "Inserir dins lo messatge",
+    "anyLeadField": "Tot camp de plomb fonciona tanben, per exemple <code1>{{example1}}</code1> o <code2>{{example2}}</code2> .",
+    "preview": "Apercebut (mòstra de plomb)",
+    "enabled": "Activat",
+    "saveRule": "Enregistrar la notificacion",
+    "createRule": "Crear una notificacion",
+    "variables": {
+      "customerName": "Nom principal",
+      "customerMobile": "Mobil de plomb",
+      "customerEmail": "Corrièl principal",
+      "registrationId": "ID de plomb",
+      "status": "Estatut",
+      "subStatus": "Sos-estatut",
+      "scheduleAt": "Data e ora programadas",
+      "assignedTo": "Utilizaire assignat",
+      "updatedBy": "Mesa a jorn per",
+      "recipient": "Nom del destinatari",
+      "project": "Projècte",
+      "notes": "Darrièra nòta",
+      "partner": "Nom del partenari"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Immediatament quand l'estatut es definit",
+      "AT": "A l'ora prevista",
+      "A1D": "1 jorn après l'ora prevista (verificacion de seguit)"
+    },
+    "immediately": "Immediatament",
+    "atScheduled": "A l'ora prevista",
+    "before": {
+      "MINUTES_one": "{{count}} minuta abans l'ora prevista",
+      "MINUTES_other": "{{count}} minutas abans l'ora prevista",
+      "HOURS_one": "{{count}} ora abans l'ora prevista",
+      "HOURS_other": "{{count}} oras abans l'ora prevista",
+      "DAYS_one": "{{count}} jorn abans l'ora prevista",
+      "DAYS_other": "{{count}} jorns abans l'ora prevista",
+      "WEEKS_one": "{{count}} setmana abans l'ora prevista",
+      "WEEKS_other": "{{count}} setmanas abans l'ora prevista",
+      "MONTHS_one": "{{count}} mes abans l'ora prevista",
+      "MONTHS_other": "{{count}} meses abans l'ora prevista",
+      "YEARS_one": "{{count}} an abans l'ora prevista",
+      "YEARS_other": "{{count}} ans abans l'ora prevista"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minuta après l'ora prevista",
+      "MINUTES_other": "{{count}} minutas après l'ora prevista",
+      "HOURS_one": "{{count}} ora après l'ora prevista",
+      "HOURS_other": "{{count}} oras après l'ora prevista",
+      "DAYS_one": "{{count}} jorn après l'ora prevista",
+      "DAYS_other": "{{count}} jorns après l'ora prevista",
+      "WEEKS_one": "{{count}} setmana après l'ora prevista",
+      "WEEKS_other": "{{count}} setmanas après l'ora prevista",
+      "MONTHS_one": "{{count}} mes après l'ora prevista",
+      "MONTHS_other": "{{count}} meses après l'ora prevista",
+      "YEARS_one": "{{count}} an après l'ora prevista",
+      "YEARS_other": "{{count}} ans après l'ora prevista"
+    },
+    "units": {
+      "MINUTES_one": "minuta",
+      "MINUTES_other": "minutas",
+      "HOURS_one": "ora",
+      "HOURS_other": "oras",
+      "DAYS_one": "jorn",
+      "DAYS_other": "jorns",
+      "WEEKS_one": "setmana",
+      "WEEKS_other": "setmanas",
+      "MONTHS_one": "mes",
+      "MONTHS_other": "meses",
+      "YEARS_one": "annada",
+      "YEARS_other": "ans"
+    }
+  }
+}

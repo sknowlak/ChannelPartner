@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Impostaziun",
+    "noPermission": "G’he minga el permess de gestir i impostaziun."
+  },
+  "categories": {
+    "lead": "Guidar",
+    "user": "Utent",
+    "integrations": "Integraziun"
+  },
+  "leadTabs": {
+    "fields": "Camp",
+    "statuses": "Status e sottastatus",
+    "notifications": "Notificaziun e pianificatur"
+  },
+  "fields": {
+    "leadIntro": "Configura el furmulari de cattura di lead: abilita/disabilita i camp, marcai cuma necessari o giuntà i tò camp personalizà.",
+    "userIntro": "Configura el furmul Aggiungi/Modifica Membro del Team: abilita/disabilita i camp, marcai cuma necessari o giunta i tò camp personalizà.",
+    "addCustomField": "+ Aggiungi Campo Personalizzato",
+    "fieldLabel": "Eticheta del camp",
+    "group": "Grup",
+    "groupPlaceholderLead": "par esempi Informaziun de dumanda",
+    "groupPlaceholderUser": "par esempi Olter dettagli",
+    "dataType": "Tip de dati",
+    "options": "Opziun (separà de virgul)",
+    "requiredLead": "Dumandad - i partner del vòster team g’han de cumpletar chestu per registrar un lead",
+    "requiredUser": "Dumandat - g’ha de vèss cumpletà quand se giunt un member del team",
+    "creating": "Creando...",
+    "createField": "Crea camp",
+    "columns": {
+      "field": "Camp",
+      "group": "Grup",
+      "type": "Sorta",
+      "required": "Domandad",
+      "enabled": "Abilitad",
+      "kind": "Jener"
+    },
+    "kind": {
+      "custom": "Personalizad",
+      "core": "Nucleo (serrà)",
+      "standard": "Standard"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Test",
+    "TEXTAREA": "Test luungh",
+    "NUMBER": "Numer",
+    "CURRENCY": "Solds",
+    "DATE": "Data",
+    "SELECT": "Lista a discesa",
+    "LIST": "Lista"
+  },
+  "picker": {
+    "searchPlaceholder": "Cerca camp de lead...",
+    "summary": "{{shown}} mustrà · {{mandatory}} obbligatori",
+    "mandatory": "Obligatori",
+    "noMatch": "Nissun camp currispunt."
+  },
+  "statuses": {
+    "intro": "I vòster stat e sottastat de lead: chel che dumanda ognun (una data e ura, camp de lead) quand che quaivun agiorna un lead.",
+    "add": "+ Aggiungi Stato",
+    "columns": {
+      "order": "Ordin",
+      "status": "Stat",
+      "subStatuses": "Sottastat",
+      "asksFor": "Dumanda",
+      "active": "Ativ"
+    },
+    "moveUp": "Sposta su",
+    "moveDown": "Spusta giò",
+    "defaultBadge": "Predefinì per i nœuf leads",
+    "bookingBadge": "Status de la prenotaziun",
+    "asksForLabel": "Dumanda {{label}}",
+    "asksForDateTime": "Dumanda data e ora",
+    "none": "Nissun",
+    "dateTime": "Data e ora",
+    "scheduledOn": "sü {{names}}",
+    "fieldsSummary_one": "Camp {{count}} ( {{mandatory}} obbligatori)",
+    "fieldsSummary_other": "Camp {{count}} ( {{mandatory}} obbligatori)",
+    "deleteConfirm": "Elimina el stat \" {{name}} \"? Chestu pœu no vèss disfà.",
+    "editTitle": "Modifica stat - {{name}}",
+    "newTitle": "Nœuf stat",
+    "name": "Nom de stat",
+    "colour": "Color",
+    "active": "Ativ",
+    "isDefault": "Status predefinì per i nœuf leads",
+    "isBooking": "Status de la prenotaziun (impostad de Prenotaziun cumpleta)",
+    "whenMoved": "Quand un lead l’è spustà a chestu stat",
+    "askSchedule": "Dumanda una data e un’ura (programatur)",
+    "scheduleLabelPlaceholder": "Etichetta, par esempi Visita a",
+    "fieldsToShow": "Camp de lead da mustrar in del furmul d’aggiornament",
+    "subStatusesTitle": "Sottastat",
+    "subStatusesHint": "Ogni sottastatus pœu dumandà la propri data e ura e giuntà i propri camp, mustrà sora i camp del status de sora.",
+    "subStatusName": "Nom del sottastatus",
+    "subFields": "Camp ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Etichetta de data e ora, par esempi Richiama a",
+    "addSubStatus": "+ Aggiungi Sottostato",
+    "saveStatus": "Salva stat",
+    "createStatus": "Crea stat"
+  },
+  "notifications": {
+    "intro": "Notificar i persun giüst quand un lead riva a un status, subit o a un ura fissada prima/dopu la data e l’ura programmà sü chel.",
+    "add": "+ Aggiungi notificazione",
+    "columns": {
+      "notification": "Notificaziun",
+      "whenStatusIs": "Quand el stat l’è",
+      "sends": "Manda",
+      "to": "A",
+      "via": "Via",
+      "enabled": "Abilitad"
+    },
+    "anyStatus": "Qual-sa-vöör status",
+    "anySubStatus": "Qual-sa-vöör sottastatus",
+    "inactiveOption": "{{name}} (inatif)",
+    "emptyRules": "Ancamò nissuna notifikaziun, giuntà una per avvertir el tò team quand un lead riva a un status.",
+    "jobs": {
+      "title": "Programmà e invià",
+      "firesAt": "Incendi A",
+      "notification": "Notificaziun",
+      "lead": "Guidar",
+      "status": "Stat",
+      "details": "Detali",
+      "empty": "Ancamò nient programmà o invià.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "In atesa",
+      "PROCESSING": "Lavoraziun",
+      "SENT": "Spedid",
+      "FAILED": "Fallid",
+      "SKIPPED": "Saltà",
+      "CANCELLED": "Annullad"
+    },
+    "deliveryStatus": {
+      "SENT": "spedid",
+      "FAILED": "fallid",
+      "SKIPPED": "saltà"
+    },
+    "deliveryChannel": {
+      "IN_APP": "in-app",
+      "EMAIL": "e-mail",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Utent asegnà",
+      "owner": "Proprietari",
+      "updatedBy": "Aggiornato da",
+      "role": "Rœul: {{name}}"
+    },
+    "channels": {
+      "inApp": "In-app",
+      "email": "E-mail",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Elimina la notifikaziun \" {{name}} \"? I ricurd en attesa sun annullà.",
+    "testPrompt": "Manda un test de chesta notifikaziun a te stess (in-app) duperand qual ID lead ?",
+    "testSent": "Invià a la tò campana: {{title}} {{message}}",
+    "headersInvalid": "I intestaziun Webhook g’han de vèss valid JSON , par esempi {\"Autorizaziun\": \"Portador xyz\"}",
+    "editTitle": "Modifica la notifikaziun",
+    "newTitle": "Nœuva notifikaziun",
+    "name": "Nom",
+    "namePlaceholder": "par esempi ricord de visita al sit",
+    "whenStatus": "Quand el stat de un lead l’è",
+    "subStatus": "Sottastatus",
+    "send": "Invia (pianificatur)",
+    "custom": "Personalizad...",
+    "modeBefore": "prima del temp previst",
+    "modeAfter": "dopu l’ura prevista",
+    "noScheduleWarning": "Chestu status dumanda no una data e un ura, donca una notifikaziun \"prima/a/dopu l'ura programada\" la se slanzà mai.",
+    "noScheduleFix": "Ativa <strong>Dumanda una data e un’ura</strong> sotta Status e sottastatus o invia subit.",
+    "sendTo": "Invia a (qual-sa-vöör cumbinaziun)",
+    "recipientAssigned": "Utent assegnà (proprietari principal)",
+    "recipientOwner": "Proprietari del cunt / amministratur",
+    "recipientUpdatedBy": "Persuna che g’ha agiurnà el status",
+    "everyoneWithRole": "Tutt cun la part",
+    "specificUsers": "Utent specifich (atif)",
+    "inactiveNever": "I utent inatif riceven mai notifikaziun, anca se seleziunà.",
+    "deliverVia": "Consegna travers",
+    "channelInApp": "In-app (campana)",
+    "channelEmail": "E-mail",
+    "channelWebhook": "Webhook (fornidur WhatsApp / SMS )",
+    "emailHint": "L'e-mail va a l'indiriz e-mail de ogni destinatari e g'ha bisogn de SMTP configurà sul server (backend/.env); fin a chel mument i invii de e-mail sun registrà cuma saltà.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Intestaziun ( JSON )",
+    "content": "Contenù de la notifikaziun",
+    "title": "Titol",
+    "message": "Messaj",
+    "insertIntoTitle": "Inserir in del titul",
+    "insertIntoMessage": "Inserir in del messaj",
+    "anyLeadField": "Qual-se-voor camp de lead funziuna anca lù, par esempi <code1>{{example1}}</code1> o <code2>{{example2}}</code2> .",
+    "preview": "Anteprima (campiun de lead)",
+    "enabled": "Abilitad",
+    "saveRule": "Salva la notifikaziun",
+    "createRule": "Crea notifikaziun",
+    "variables": {
+      "customerName": "Nom principal",
+      "customerMobile": "Mobil de plomb",
+      "customerEmail": "E-mail de lead",
+      "registrationId": "ID de lead",
+      "status": "Stat",
+      "subStatus": "Sottastatus",
+      "scheduleAt": "Data e ora programmà",
+      "assignedTo": "Utent asegnà",
+      "updatedBy": "Aggiornato da",
+      "recipient": "Nom del destinatari",
+      "project": "Projet",
+      "notes": "Ultima nota",
+      "partner": "Nom del partner"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Subèt quand el stat l’è impostà",
+      "AT": "A l'ura prevista",
+      "A1D": "1 dì dopu l’ura prevista (cuntrol de seguiment)"
+    },
+    "immediately": "Imediatament",
+    "atScheduled": "A l'ura prevista",
+    "before": {
+      "MINUTES_one": "{{count}} minut prima del ura programada",
+      "MINUTES_other": "{{count}} minut prima del ura programada",
+      "HOURS_one": "{{count}} ura prima del ura programada",
+      "HOURS_other": "{{count}} ore prima del orari programmà",
+      "DAYS_one": "{{count}} dì prima del ura programada",
+      "DAYS_other": "{{count}} dì prima del ura programada",
+      "WEEKS_one": "{{count}} settimana prima del orari programmà",
+      "WEEKS_other": "{{count}} seteman prima del temp programmà",
+      "MONTHS_one": "{{count}} mes prima del ura programada",
+      "MONTHS_other": "{{count}} mes prima del temp programmà",
+      "YEARS_one": "{{count}} an prima del temp programmà",
+      "YEARS_other": "{{count}} an prima del temp programmà"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minut dopu l’ura programada",
+      "MINUTES_other": "{{count}} minut dopu l’ura programada",
+      "HOURS_one": "{{count}} ura dopu l’ura programada",
+      "HOURS_other": "{{count}} ore dopu l’ura programada",
+      "DAYS_one": "{{count}} dì dopu l’ura programada",
+      "DAYS_other": "{{count}} dì dopu l’ura programada",
+      "WEEKS_one": "{{count}} setimana dopu l’ura programada",
+      "WEEKS_other": "{{count}} seteman dopu l’ura programada",
+      "MONTHS_one": "{{count}} mes dopu l’ura programada",
+      "MONTHS_other": "{{count}} mes dopu l’ura programada",
+      "YEARS_one": "{{count}} an dopu l’ura prevista",
+      "YEARS_other": "{{count}} an dopu l’ura programada"
+    },
+    "units": {
+      "MINUTES_one": "minut",
+      "MINUTES_other": "minuts",
+      "HOURS_one": "ora",
+      "HOURS_other": "ore",
+      "DAYS_one": "dì",
+      "DAYS_other": "dì",
+      "WEEKS_one": "semana",
+      "WEEKS_other": "seteman",
+      "MONTHS_one": "mes",
+      "MONTHS_other": "mes",
+      "YEARS_one": "ann",
+      "YEARS_other": "agn"
+    }
+  }
+}

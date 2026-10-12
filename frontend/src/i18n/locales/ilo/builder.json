@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal ti Builder",
+    "referrals": "Dagiti Referral",
+    "builderLogin": "Login ti Builder",
+    "partnerLogin": "Panaglogin ti Kakadua ti Channel"
+  },
+  "login": {
+    "title": "Agpirma ti managibangon",
+    "hint": "Dagiti kuenta ti managibangon ket pinartuat babaen ti Leadrat . Saludsodem iti administradormo no awan ti adda kenka."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Ur-urayen ti desisionmo",
+    "ACCEPTED": "Naawat",
+    "REJECTED": "Nalaksid"
+  },
+  "list": {
+    "title": "Dagiti Referral",
+    "allProjects": "Amin a proyekto",
+    "allStatuses": "Amin a kasasaad",
+    "count_one": "{{count}} ti panangiturong",
+    "count_other": "{{count}} dagiti panangiturong",
+    "columns": {
+      "referral": "Panangiturong",
+      "customer": "Kostumer",
+      "project": "Proyekto",
+      "sourcePartner": "Gubuayan a Kakadua",
+      "status": "Estado",
+      "booking": "Panag-book",
+      "registered": "Nairehistro"
+    },
+    "booked": "Na-book",
+    "empty": "Awan pay ti referral."
+  },
+  "detail": {
+    "customer": "Kostumer",
+    "sourcePartner": "Gubuayan a Kakadua",
+    "attributionNote": "(attribution - saan a mabaliwan)",
+    "leadStatus": "Kasasaad ti Lead",
+    "protectedUntil": "Nasalakniban Agingga",
+    "referral": "Panangiturong",
+    "reason": "Rason: {{reason}}",
+    "booking": "Panag-book",
+    "bookedOwner": "Booked - sika ti operational owner",
+    "notBooked": "Saan a na-book",
+    "sharedAfterBooking": "Shared kalpasan ti panag-book",
+    "accept": "Awaten ti Panangiturong",
+    "confirmBooking": "Pasingkedan ti Panag-book",
+    "reject": "Laksiden ti Panangiturong",
+    "rejectReasonLabel": "Rason ti panaglaksid (naipakita iti partner) * .",
+    "rejectConfirm": "Ipaid",
+    "confirmBookingPrompt": "Pasingkedan ti panag-book? Ti operasional a panagtagikua ket umakar kenka ken ti kasosio ket agbalin a maikari iti komision.",
+    "notice": {
+      "booked": "Nakumpirmaan ti panag-book.",
+      "accepted": "Naawat ti referral.",
+      "rejected": "Napagkedkedan ti pannakaiturong."
+    },
+    "backToReferrals": "Agsubli kadagiti Referral"
+  },
+  "history": {
+    "title": "Pakasaritaan",
+    "actor": {
+      "system": "Sistema",
+      "partner": "Kakadua ti channel",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Naawat ti panagrehistro ti partner",
+      "DUPLICATE_CHECK_COMPLETED": "Nalpasen ti duplikado a tseke - awan ti aktibo a duplikado a nasarakan",
+      "REGISTRATION_ACCEPTED": "Maawat ti panagrehistro",
+      "PROTECTION_GRANTED_one": "{{count}} -aldaw a proteksion ti naited",
+      "PROTECTION_GRANTED_other": "{{count}} -aldaw a proteksion ti naited",
+      "STAGE_UPDATED": "Na-update ti kasasaad iti {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Napabaro ti {{count}} a tay-ak",
+      "LEAD_DETAILS_UPDATED_other": "Napabaro dagiti {{count}} a tay-ak",
+      "LEAD_ASSIGNED": "Naituding iti {{name}}",
+      "LEAD_UNASSIGNED": "Saan a naituding",
+      "REFERRAL_ACCEPTED": "Inawat ni Builder ti referral",
+      "REFERRAL_REJECTED": "Inlaksid ni Builder ti referral. Rason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Ti duplikado a panagpadas ti panagrehistro babaen ti {{partner}} ket nailaksid",
+      "BOOKING_COMPLETED": "Nalpas ti panag-book",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operational ownership ti nayakar iti Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Napreserba ti partner attribution",
+      "COMMISSION_ELIGIBILITY_CREATED": "Naparsua ti pannakakualipika iti komision",
+      "HANDOVER_COMPLETED": "Nalpasen ti handover",
+      "ADMIN_PROTECTION_RELEASED": "Nasapa nga inruar ni Admin ti duplicate protection. Rason: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Intuding manen ti admin ti panagrehistro manipud iti {{from}} aginggana iti {{to}} . Rason: {{reason}}"
+    }
+  }
+}

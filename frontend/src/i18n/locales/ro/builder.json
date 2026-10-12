@@ -1,0 +1,93 @@
+{
+  "shell": {
+    "portal": "Portalul constructorului",
+    "referrals": "Recomandări",
+    "builderLogin": "Conectare pentru constructor",
+    "partnerLogin": "Conectare partener de canal"
+  },
+  "login": {
+    "title": "Conectați-vă constructor",
+    "hint": "Conturile Builder sunt create de Leadrat . Întrebați-vă administratorul dacă nu aveți unul."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Astept decizia ta",
+    "ACCEPTED": "Acceptat",
+    "REJECTED": "Respins"
+  },
+  "list": {
+    "title": "Recomandări",
+    "allProjects": "Toate proiectele",
+    "allStatuses": "Toate stările",
+    "count_one": "{{count}} recomandare",
+    "count_few": "{{count}} recomandări",
+    "count_other": "{{count}} recomandări",
+    "columns": {
+      "referral": "Sesizare",
+      "customer": "Client",
+      "project": "Proiect",
+      "sourcePartner": "Partener sursă",
+      "status": "Stare",
+      "booking": "Rezervare",
+      "registered": "Înregistrat"
+    },
+    "booked": "Rezervat",
+    "empty": "Nicio recomandare încă."
+  },
+  "detail": {
+    "customer": "Client",
+    "sourcePartner": "Partener sursă",
+    "attributionNote": "(atribuire - nu poate fi modificată)",
+    "leadStatus": "Starea lead-ului",
+    "protectedUntil": "Protejat Până la",
+    "referral": "Sesizare",
+    "reason": "Motiv: {{reason}}",
+    "booking": "Rezervare",
+    "bookedOwner": "Rezervat - sunteți proprietarul operațional",
+    "notBooked": "Nu rezervat",
+    "sharedAfterBooking": "Partajat după rezervare",
+    "accept": "Acceptați recomandarea",
+    "confirmBooking": "Confirmați rezervarea",
+    "reject": "Respingeți recomandarea",
+    "rejectReasonLabel": "Motivul respingerii (prezentat partenerului) *",
+    "rejectConfirm": "Respinge",
+    "confirmBookingPrompt": "Confirmi rezervarea? Proprietatea operațională revine dvs., iar partenerul devine eligibil pentru comision.",
+    "notice": {
+      "booked": "Rezervare confirmată.",
+      "accepted": "Recomandări acceptate.",
+      "rejected": "Sesizarea a fost respinsă."
+    },
+    "backToReferrals": "Înapoi la Recomandări"
+  },
+  "history": {
+    "title": "Istorie",
+    "actor": {
+      "system": "Sistem",
+      "partner": "Partener de canal",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Înregistrare partener primită",
+      "DUPLICATE_CHECK_COMPLETED": "Verificare duplicat finalizată - nu a fost găsit niciun duplicat activ",
+      "REGISTRATION_ACCEPTED": "Înregistrare acceptată",
+      "PROTECTION_GRANTED_one": "Protecție {{count}} -zi acordată",
+      "PROTECTION_GRANTED_few": "Protecție {{count}} -zi acordată",
+      "PROTECTION_GRANTED_other": "Protecție {{count}} -zi acordată",
+      "STAGE_UPDATED": "Starea a fost actualizată la {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Câmp {{count}} actualizat",
+      "LEAD_DETAILS_UPDATED_few": "S-au actualizat {{count}} câmpuri",
+      "LEAD_DETAILS_UPDATED_other": "S-au actualizat {{count}} câmpuri",
+      "LEAD_ASSIGNED": "Atribuit lui {{name}}",
+      "LEAD_UNASSIGNED": "Nealocat",
+      "REFERRAL_ACCEPTED": "Constructorul a acceptat recomandarea",
+      "REFERRAL_REJECTED": "Builder a respins trimiterea. Motiv: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Încercarea de înregistrare duplicată de către {{partner}} a fost respinsă",
+      "BOOKING_COMPLETED": "Rezervare finalizată",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Proprietatea operațională a fost transferată către Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribuirea partenerului a fost păstrată",
+      "COMMISSION_ELIGIBILITY_CREATED": "Eligibilitatea pentru comisie creată",
+      "HANDOVER_COMPLETED": "Predarea finalizată",
+      "ADMIN_PROTECTION_RELEASED": "Administratorul a lansat mai devreme protecția duplicat. Motiv: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Administratorul a reatribuit înregistrarea de la {{from}} la {{to}} . Motiv: {{reason}}"
+    }
+  }
+}

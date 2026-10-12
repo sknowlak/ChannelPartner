@@ -1,0 +1,190 @@
+{
+  "list": {
+    "title": "Mei conduce",
+    "signedInAs": "Conectat ca {{name}} ( {{partnerId}} ) · orele afișate în {{timezone}}",
+    "addLead": "+ Adăugați lead",
+    "tabs": {
+      "all": "Toate ( {{count}} )",
+      "pending": "În așteptare ( {{count}} )",
+      "booked": "Rezervat ( {{count}} )"
+    },
+    "searchPlaceholder": "Căutați după nume, telefon mobil sau ID de înregistrare...",
+    "manageColumns": "Gestionați coloanele",
+    "rowsPerPage": "Rânduri pe pagină",
+    "registrationId": "ID de înregistrare",
+    "emptyState": "Încă nu există clienți potențiali - înregistrați-vă primul.",
+    "noMatch": "Niciun client potențial nu se potrivește cu aceste filtre.",
+    "showing": "Se afișează {{from}} - {{to}} din {{total}} intrări",
+    "actions": {
+      "preview": "Previzualizare și actualizare rapidă",
+      "history": "Istorie",
+      "email": "E-mail",
+      "whatsapp": "WhatsApp",
+      "call": "Apel"
+    },
+    "pagination": {
+      "first": "Prima pagină",
+      "previous": "Pagina anterioară",
+      "next": "Pagina următoare",
+      "last": "Ultima pagina"
+    }
+  },
+  "columns": {
+    "status": "Stare",
+    "assignTo": "Atribuiți Către",
+    "booked": "Rezervat",
+    "protectionUntil": "Protecție Până la"
+  },
+  "booking": {
+    "booked": "Rezervat",
+    "pending": "În așteptare"
+  },
+  "assign": {
+    "unassigned": "Nealocat",
+    "owner": "{{name}} (proprietar)",
+    "inactive": "{{name}} (inactiv)",
+    "unknownUser": "Utilizator necunoscut",
+    "assignedTo": "Atribuit lui {{name}}"
+  },
+  "form": {
+    "addTitle": "Adăugați lead",
+    "editTitle": "Editați clientul potențial",
+    "noPermissionAdd": "Nu aveți permisiunea de a înregistra clienți potențiali.",
+    "noPermissionEdit": "Nu aveți permisiunea de a edita clienții potențiali.",
+    "selectPlaceholder": "Selecta...",
+    "commaSeparated": "Despărțite prin virgulă",
+    "phonePlaceholder": "Număr de telefon",
+    "countryCode": "Codul țării"
+  },
+  "project": {
+    "none": "Niciun proiect încă (nereferit)",
+    "notInList": "{{project}} (nu se află în lista de proiecte)"
+  },
+  "journey": {
+    "customer": "Client",
+    "currentOwner": "Actual proprietar",
+    "protectionExpiry": "Expirarea protecției",
+    "leadStatus": "Starea lead-ului",
+    "scheduled": "Programat",
+    "assignedTo": "Atribuit la",
+    "referral": "Sesizare",
+    "builderReason": "Motivul constructorului: {{reason}}",
+    "bookedHint": "Rezervat de constructor - proprietatea operațională a trecut la constructor; se păstrează atribuția și eligibilitatea la comision.",
+    "notBookedHint": "Rezervările sunt confirmate de constructor odată ce acceptă recomandarea.",
+    "quickUpdate": "Actualizare rapidă",
+    "leadDetails": "Detalii de plumb",
+    "progressHistory": "Istoria progresului",
+    "timesIn": "(ori în {{timezone}} )",
+    "backToMyLeads": "Înapoi la My Leads",
+    "editLead": "Editați clientul potențial"
+  },
+  "referral": {
+    "NOT_REFERRED": "Nereferit (fără proiect)",
+    "PENDING_BUILDER": "În așteptarea constructorului",
+    "ACCEPTED": "Acceptat de constructor",
+    "REJECTED": "Respins de constructor"
+  },
+  "preview": {
+    "ariaLabel": "Previzualizare lead",
+    "title": "Previzualizare lead",
+    "source": "Sursă",
+    "location": "Locaţie",
+    "scheduled": "Programat",
+    "registered": "Înregistrat",
+    "latestNote": "Ultima notă",
+    "quickUpdate": "Actualizare rapidă",
+    "fullDetails": "Detalii complete",
+    "editLead": "Editați clientul potențial",
+    "history": "Istorie"
+  },
+  "quick": {
+    "assignedTo": "Atribuit la",
+    "status": "Stare",
+    "subStatus": "Stare secundară",
+    "selectSubStatus": "Selectați starea secundară...",
+    "none": "Nici unul",
+    "scheduledAt": "Programat la",
+    "localTime": "ora locala",
+    "note": "Nota",
+    "notePlaceholder": "Ce s-a întâmplat la acest apel/vizită? (optional)",
+    "updateStatus": "Actualizare stare",
+    "statusUpdated": "Stare actualizată",
+    "bookedLocked": "Acest client potențial este rezervat - starea sa nu mai poate fi schimbată.",
+    "viewOnly": "Puteți vedea acest client potențial, dar rolul dvs. nu îl poate actualiza."
+  },
+  "history": {
+    "title": "Istoric - {{registrationId}}",
+    "tabs": {
+      "all": "Toate",
+      "status": "Stare",
+      "assignment": "Misiunea",
+      "notes": "Note"
+    },
+    "doneBy": "Realizat de {{actor}}",
+    "system": "Sistem",
+    "platforms": {
+      "System": "Sistem",
+      "External": "Extern",
+      "Web": "Web",
+      "Mobile": "Mobil"
+    },
+    "added": "adăugat",
+    "updated": "actualizat",
+    "empty": "(gol)",
+    "noHistory": "Încă nu există istoric în această categorie.",
+    "fieldLabels": {
+      "stage": "Stare",
+      "subStatus": "Stare secundară",
+      "scheduledAt": "Programa",
+      "notes": "Note",
+      "assignedTo": "Atribuit la"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Înregistrare partener primită",
+      "DUPLICATE_CHECK_COMPLETED": "Verificare duplicat finalizată - nu a fost găsit niciun duplicat activ",
+      "REGISTRATION_ACCEPTED": "Înregistrare acceptată",
+      "PROTECTION_GRANTED_one": "Protecție {{count}} -zi acordată",
+      "PROTECTION_GRANTED_few": "Protecție {{count}} -zi acordată",
+      "PROTECTION_GRANTED_other": "Protecție {{count}} -zi acordată",
+      "REGISTRATION_ATTEMPT_REJECTED": "Încercarea de înregistrare duplicată de către {{partnerId}} a fost respinsă",
+      "LEAD_DETAILS_UPDATED_one": "Câmp {{count}} actualizat",
+      "LEAD_DETAILS_UPDATED_few": "S-au actualizat {{count}} câmpuri",
+      "LEAD_DETAILS_UPDATED_other": "S-au actualizat {{count}} câmpuri",
+      "STAGE_UPDATED": "Starea a fost actualizată la {{status}}",
+      "LEAD_ASSIGNED": "Atribuit lui {{name}}",
+      "LEAD_UNASSIGNED": "Nealocat",
+      "BOOKING_COMPLETED": "Rezervare finalizată",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Proprietatea operațională a fost transferată către Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribuirea partenerului a fost păstrată",
+      "COMMISSION_ELIGIBILITY_CREATED": "Eligibilitatea pentru comisie creată",
+      "HANDOVER_COMPLETED": "Predarea finalizată",
+      "REFERRAL_ACCEPTED": "Constructorul a acceptat recomandarea",
+      "REFERRAL_REJECTED": "Builder a respins trimiterea. Motiv: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Administratorul a lansat mai devreme protecția duplicat. Motiv: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Administratorul a reatribuit înregistrarea de la {{from}} la {{to}} . Motiv: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Gestionați coloanele",
+    "hint": "Trageți pentru a reordona · bifați pentru a afișa",
+    "showAll": "Arată toate",
+    "resetDefault": "Resetați la valoarea implicită"
+  },
+  "filters": {
+    "title": "Filtre",
+    "allProjects": "Toate proiectele",
+    "any": "Orice",
+    "noFields": "Nu sunt încă activate alte câmpuri filtrabile (Setări > Lead).",
+    "clearAll": "Ștergeți tot"
+  },
+  "phone": {
+    "MISSING": "Numărul de telefon este obligatoriu.",
+    "INVALID": "Vă rugăm să introduceți un număr de telefon valid.",
+    "TOO_SHORT": "Numărul de telefon este prea scurt.",
+    "TOO_LONG": "Numărul de telefon este prea lung.",
+    "INVALID_FOR_COUNTRY": "Acest număr de telefon nu este valabil pentru {{country}} .",
+    "COUNTRY_MISMATCH": "Vă rugăm să selectați codul de țară corect.",
+    "NOT_MOBILE": "Vă rugăm să introduceți un număr de telefon mobil, nu un telefon fix."
+  }
+}

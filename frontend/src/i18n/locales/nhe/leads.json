@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "No tlayekanke",
+    "signedInAs": "Xikalaki kej {{name}} ( {{partnerId}} ) · tonali tlen nesi ipan {{timezone}}",
+    "addLead": "+ Xijtlali plomo",
+    "tabs": {
+      "all": "Nochi ( {{count}} )",
+      "pending": "Tlen poliui ( {{count}} )",
+      "booked": "Ki ijkuilok ( {{count}} )"
+    },
+    "searchPlaceholder": "Xijtemo ika motoka, ika mocelular, o ID tlen ika timoijkuilos ...",
+    "manageColumns": "Xikinmokuitlaui columnas",
+    "rowsPerPage": "Tlajkuiloli ipan se página",
+    "registrationId": "ID tlen ika timoijkuilos",
+    "emptyState": "Ayokmo onka tlajtoli - xikijkuilo tlen achtoui.",
+    "noMatch": "Ax onka tlajtoli tlen kiixnextia ni filtros.",
+    "showing": "Kinextia {{from}} - {{to}} tlen {{total}} tlajtoli",
+    "actions": {
+      "preview": "Xikita achtoui uan nimantsi tijpatlas",
+      "history": "Nemiliskayotl",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Tsanonotsalistli"
+    },
+    "pagination": {
+      "first": "Achtoui página",
+      "previous": "Tlajkuiloli tlen achtoui",
+      "next": "Seyok página",
+      "last": "Tlami página"
+    }
+  },
+  "columns": {
+    "status": "Tlaltokayotl",
+    "assignTo": "Xikin maka",
+    "booked": "Ki ijkuilok",
+    "protectionUntil": "Tlamokuitlauilistli hasta"
+  },
+  "booking": {
+    "booked": "Ki ijkuilok",
+    "pending": "Tlenpoliui"
+  },
+  "assign": {
+    "unassigned": "Ax motemaka",
+    "owner": "{{name}} (Owner)",
+    "inactive": "{{name}} (amo tekiti)",
+    "unknownUser": "Ax moixmati",
+    "assignedTo": "Kitlalijtokej ipan {{name}}"
+  },
+  "form": {
+    "addTitle": "Xijtlali plomo",
+    "editTitle": "Xijyektlali Lead",
+    "noPermissionAdd": "Ax tijpia tlanauatili para timo ijkuilos tlen mits tlaneuij.",
+    "noPermissionEdit": "Ax tijpiya tlanauatili para tijpatlas tlajtoli.",
+    "selectPlaceholder": "Tlapepenili...",
+    "commaSeparated": "Xixelo ika coma",
+    "phonePlaceholder": "número de teléfono",
+    "countryCode": "Código tlen tlali"
+  },
+  "project": {
+    "none": "Ax onka se tekitl (ax motemaka)",
+    "notInList": "{{project}} (ax eltok ipan nopa lista tlen proyectos)"
+  },
+  "journey": {
+    "customer": "Tlakoketl",
+    "currentOwner": "Tlen amantsi iaxka",
+    "protectionExpiry": "Tlamokuitlauilistli tlami",
+    "leadStatus": "Estado de plomo",
+    "scheduled": "Tlasenkaualistli",
+    "assignedTo": "Ki tlalijtokej",
+    "referral": "Tlatitlanili",
+    "builderReason": "Tlen kichijchijki: {{reason}}",
+    "bookedHint": "Ki ijkuilok nopa tlachijchijketl - nopa tekitl tlen iaxka ya mopatlak ika nopa tlachijchijketl; mo atribución uan mo comisión eligibilidad mokaua.",
+    "notBookedHint": "Nopa tlanemakalistli ki ijtoa nopa tlachijchijketl kemaj kiselia nopa tlajtoli.",
+    "quickUpdate": "Xiyankuili",
+    "leadDetails": "Tlayejyekoli tlen tlayacana",
+    "progressHistory": "Historia tlen moskaltijtok",
+    "timesIn": "(uejkapa ipan {{timezone}} )",
+    "backToMyLeads": "Ximokuepa ipan notlanemilil",
+    "editLead": "Xijyektlali Lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "Ax techtitlanilijkej (ax onka se tekitl)",
+    "PENDING_BUILDER": "Ni mochixtok tlen kichijchiua",
+    "ACCEPTED": "Kiselijtok tlen kichijchijki",
+    "REJECTED": "Amo kiselik nopa tlachijchijketl"
+  },
+  "preview": {
+    "ariaLabel": "Xikita tlayakapan",
+    "title": "Tlayejyekoli",
+    "source": "Yameyali",
+    "location": "Kanke",
+    "scheduled": "Tlasenkaualistli",
+    "registered": "Moijkuilok",
+    "latestNote": "Nopa yankuik tlajtoli",
+    "quickUpdate": "Xiyankuili",
+    "fullDetails": "Nochi tlamantli",
+    "editLead": "Xijyektlali Lead",
+    "history": "Nemiliskayotl"
+  },
+  "quick": {
+    "assignedTo": "Ki tlalijtokej",
+    "status": "Tlaltokayotl",
+    "subStatus": "Sub-Estado",
+    "selectSubStatus": "Xijtlapejpeni sub-estatus...",
+    "none": "Amaka",
+    "scheduledAt": "Motlalijtok ipan",
+    "localTime": "hora tlen nopa altepetl",
+    "note": "Tlakuiloli",
+    "notePlaceholder": "¿Tlake panok ipan ni tlajtoli / paxalojketl? (tlatinejki)",
+    "updateStatus": "Xijyankuili tlen eltok",
+    "statusUpdated": "Mopatlatok",
+    "bookedLocked": "Ni tlajtoli ya mosentlalijtok - ayokmo uelis mopatlas iestatus.",
+    "viewOnly": "Uelis tikitas ni tlanextili, pero moteki amo uelis kiyektlalis."
+  },
+  "history": {
+    "title": "Historia - {{registrationId}}",
+    "tabs": {
+      "all": "Nochimej",
+      "status": "Tlaltokayotl",
+      "assignment": "Semiluitekitl",
+      "notes": "Notas"
+    },
+    "doneBy": "Kichijtok ika {{actor}}",
+    "system": "Sistema",
+    "platforms": {
+      "System": "Sistema",
+      "External": "Kalteno",
+      "Web": "Web",
+      "Mobile": "Ejetlakanonostli"
+    },
+    "added": "kitlalik",
+    "updated": "yankuik",
+    "empty": "(kakjtok)",
+    "noHistory": "Ax onka historia ipan ni tlamantli.",
+    "fieldLabels": {
+      "stage": "Tlaltokayotl",
+      "subStatus": "Sub-Estado",
+      "scheduledAt": "Tlamapiluiloni",
+      "notes": "Notas",
+      "assignedTo": "Ki tlalijtokej"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Tlajtlanili tlen tlapaleuijketl kiselijtok",
+      "DUPLICATE_CHECK_COMPLETED": "Nopa tlatemolistli tlen ome tlamantli tlami - ax onka seyok tlen mosentlalijtok",
+      "REGISTRATION_ACCEPTED": "Mo ijkuilojtok",
+      "PROTECTION_GRANTED_one": "{{count}} -tonali tlamokuitlauilistli tlen motemaktijtok",
+      "PROTECTION_GRANTED_other": "{{count}} -tonali tlamokuitlauilistli tlen motemaktijtok",
+      "REGISTRATION_ATTEMPT_REJECTED": "Nopa tlajkuiloli tlen {{partnerId}} amo kiselijkej",
+      "LEAD_DETAILS_UPDATED_one": "Ki yankuikijtok {{count}} tlali",
+      "LEAD_DETAILS_UPDATED_other": "Kiyektlalijtokej {{count}} tlali",
+      "STAGE_UPDATED": "Estado mopatlatok ika {{status}}",
+      "LEAD_ASSIGNED": "Kitlalijtokej ipan {{name}}",
+      "LEAD_UNASSIGNED": "Ax motemaka",
+      "BOOKING_COMPLETED": "Ya tlami nopa tlajkuiloli",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Nopa tekitl tlen iaxka kipanoltijkej ika Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Nopa atribución tlen iuampoyouaj kipixtok",
+      "COMMISSION_ELIGIBILITY_CREATED": "Tlapaleuilistli tlen comisión tlen kichijchijkej",
+      "HANDOVER_COMPLETED": "Tlamilistli tlanki",
+      "REFERRAL_ACCEPTED": "Tlachijchijketl kiseli nopa tlajtoli",
+      "REFERRAL_REJECTED": "Builder amo kiselik nopa tlajtoli. Tlen: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin kikixtik tlamokuitlauilistli tlen ome tlamantli achtoui. Tlen: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin ki tlalik nopa registro tlen {{from}} ika {{to}} . Tlen: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Xikinmokuitlaui columnas",
+    "hint": "Xijtsonpechili para tijpatlas · xijtlachili para tijnextis",
+    "showAll": "Xikinnextili nochi",
+    "resetDefault": "Xijpatla tlen achtoui"
+  },
+  "filters": {
+    "title": "Filtros",
+    "allProjects": "Nochi tekitl",
+    "any": "Tlenueli",
+    "noFields": "Ayokmo onka sekinok tlali tlen uelis tijtlapejpenisej (Ajustes > Plomo).",
+    "clearAll": "Xijtsontekontlali nochi"
+  },
+  "phone": {
+    "MISSING": "Moneki se número tlen teléfono.",
+    "INVALID": "Xikijkuilo se número tlen teléfono tlen kuali.",
+    "TOO_SHORT": "Nopa número tlen teléfono tlauel tsikitsin.",
+    "TOO_LONG": "Nopa número tlen teléfono tlauel uejkapantik.",
+    "INVALID_FOR_COUNTRY": "Ni número tlen teléfono ax kuali para {{country}} .",
+    "COUNTRY_MISMATCH": "Xijtlapejpeni nopa tlali tlen kinamiki.",
+    "NOT_MOBILE": "Xikijkuilo se número tlen mocelular, ax se teléfono fijo."
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Settings",
+    "noPermission": "Anggapoy permiso mon mangasikaso na saray setting."
+  },
+  "categories": {
+    "lead": "Giya",
+    "user": "User",
+    "integrations": "Saray Pankasakey"
+  },
+  "leadTabs": {
+    "fields": "Saray uma",
+    "statuses": "Saray Estado tan Sub-Status",
+    "notifications": "Saray Notipikasyon tan Manag-iskedyul"
+  },
+  "fields": {
+    "leadIntro": "I-configure so lead capture form: i-enable/disable iray field, markaan iratan ya kaukolan, odino idagdag so sarilim ya custom field.",
+    "userIntro": "I-configure so Add/Edit Team Member form: i-enable/disable iray field, markaan iratan ya kaukolan, odino i-add so sarilim ya custom field.",
+    "addCustomField": "+ Idagdag so Custom Field",
+    "fieldLabel": "Field Label",
+    "group": "Grupo",
+    "groupPlaceholderLead": "alimbawa, Impormasyon ed Tepet",
+    "groupPlaceholderUser": "alimbawa, Kaaruman iran Detalye",
+    "dataType": "Klase na Data",
+    "options": "Saray opsyon (walay koma)",
+    "requiredLead": "Kaukolan - saray kapareha ed grupo yo et kaukolan ya sulatan iya pian makarehistro na lead",
+    "requiredUser": "Kaukolan - kaukolan ya sulatan no mangarum na membro na grupo",
+    "creating": "Manggagawa...",
+    "createField": "Manggawa na Field",
+    "columns": {
+      "field": "Alog",
+      "group": "Grupo",
+      "type": "Klase",
+      "required": "Nakaukolan",
+      "enabled": "Na-enable",
+      "kind": "Maong"
+    },
+    "kind": {
+      "custom": "Kustombre",
+      "core": "Utek (akakandado)",
+      "standard": "Estandarte"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Teksto",
+    "TEXTAREA": "Andukey a teksto",
+    "NUMBER": "Numero",
+    "CURRENCY": "Kuarta",
+    "DATE": "Petsa",
+    "SELECT": "Dropdown",
+    "LIST": "Listaan"
+  },
+  "picker": {
+    "searchPlaceholder": "Anapen iray lead field...",
+    "summary": "{{shown}} shown · {{mandatory}} mandatory",
+    "mandatory": "Obligado",
+    "noMatch": "Anggapoy mipara ed uma."
+  },
+  "statuses": {
+    "intro": "Saray lead statuses tan sub-statuses mo - no antoy kerewen na balang sakey (sakey a petsa tan oras, lead fields) no walay mangi-update na lead ed satan.",
+    "add": "+ Idagdag so Estado",
+    "columns": {
+      "order": "Pian",
+      "status": "Kipapasen",
+      "subStatuses": "Sub-Status",
+      "asksFor": "Mankekerew na",
+      "active": "Aktibo"
+    },
+    "moveUp": "Ontatdang",
+    "moveDown": "Onleksab",
+    "defaultBadge": "Default parad saray balon lead",
+    "bookingBadge": "Say kipapasen na panag-book",
+    "asksForLabel": "Mankekerew na {{label}}",
+    "asksForDateTime": "Mantepet na petsa tan oras",
+    "none": "Angapo",
+    "dateTime": "Petsa tan oras",
+    "scheduledOn": "ed {{names}}",
+    "fieldsSummary_one": "{{count}} field ( {{mandatory}} mandatory)",
+    "fieldsSummary_other": "{{count}} fields ( {{mandatory}} mandatory)",
+    "deleteConfirm": "Buralen so kipapasen na \" {{name}} \"? Agla nayarin ipawil iya.",
+    "editTitle": "I-edit so Status - {{name}}",
+    "newTitle": "Balon Kipapasen",
+    "name": "Ngaran na Kipapasen",
+    "colour": "Kolor",
+    "active": "Aktibo",
+    "isDefault": "Say default ya kipapasen na saray balon lead",
+    "isBooking": "Say kipapasen na panag-book (iletneg na Kompleton Panag-book)",
+    "whenMoved": "No say sakey a lead et niyalis ed sayan kipapasen",
+    "askSchedule": "Mankerew na petsa tan oras (manag-iskedyul)",
+    "scheduleLabelPlaceholder": "Label, alimbawa, Bisitaen so",
+    "fieldsToShow": "Saray lead field ya ipanengneng ed update form",
+    "subStatusesTitle": "Sub-Status",
+    "subStatusesHint": "Kada sub-status et nayarin onkerew na sarili ton petsa tan oras tan mangarum na sarili ton field - ya nanengneng ed tagey na saray field na status ed tagey.",
+    "subStatusName": "Ngaran na sub-status",
+    "subFields": "Saray lawak ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Petsa tan oras, alimbawa, Tawagan mo lamet ed",
+    "addSubStatus": "+ Idagdag so Sub-Status",
+    "saveStatus": "I-save so Status",
+    "createStatus": "Manggawa na Status"
+  },
+  "notifications": {
+    "intro": "Ipaamta ed saray dugan totoo no say sakey a lead et akasabi ed sakey a kipapasen - tampol, odino sakey a niganan oras sakbay/kayari na petsa tan oras ya akaeskedyul ed satan.",
+    "add": "+ Idagdag so Notipikasyon",
+    "columns": {
+      "notification": "Pakabat",
+      "whenStatusIs": "No say kipapasen et",
+      "sends": "Ipapawit",
+      "to": "Ed",
+      "via": "Panamegley",
+      "enabled": "Na-enable"
+    },
+    "anyStatus": "Antokaman ya kipapasen",
+    "anySubStatus": "Antokaman ya sub-status",
+    "inactiveOption": "{{name}} (ag aktibo)",
+    "emptyRules": "Anggapo ni so notipikasyon - mangarum na sakey pian naalerto so grupo yo no say sakey a lead et onsabi ed sakey a kipapasen.",
+    "jobs": {
+      "title": "Ineskedyul tan Impawit",
+      "firesAt": "Pool ed",
+      "notification": "Pakabat",
+      "lead": "Giya",
+      "status": "Kipapasen",
+      "details": "Saray detalye",
+      "empty": "Anggapo ni so akaeskedyul o nipawit.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Agni asumpal",
+      "PROCESSING": "Panproseso",
+      "SENT": "Inbaki",
+      "FAILED": "Kinmulang",
+      "SKIPPED": "Nalaktawan",
+      "CANCELLED": "Kanselado"
+    },
+    "deliveryStatus": {
+      "SENT": "inbaki",
+      "FAILED": "kinmulang",
+      "SKIPPED": "linmabas"
+    },
+    "deliveryChannel": {
+      "IN_APP": "diad loob na app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Niiter ya user",
+      "owner": "Akankayarian",
+      "updatedBy": "In-update nen",
+      "role": "Papel: {{name}}"
+    },
+    "channels": {
+      "inApp": "Diad loob na app",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Buralen so abiso \" {{name}} \"? Saray aalagaren ya panonot manlapud satan et nakansela.",
+    "testPrompt": "Mangiter na test na sayan notipikasyon ed sarilim (diad app) ya usaren moy anton lead ID ?",
+    "testSent": "Impawit ed kampanilya yo: {{title}} {{message}}",
+    "headersInvalid": "Saray header Webhook et nepeg ya balido ya JSON , alimbawa {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "I-edit so Notipikasyon",
+    "newTitle": "Balon Pakabat",
+    "name": "Ngaran",
+    "namePlaceholder": "alimbawa, panonot ed ibisita ed pasen",
+    "whenStatus": "No say kipapasen na sakey a lead et",
+    "subStatus": "Sub-status",
+    "send": "Ipawit (manag-iskedyul)",
+    "custom": "Kustombre...",
+    "modeBefore": "antis na akaeskedyul ya oras",
+    "modeAfter": "kayari na akaeskedyul ya oras",
+    "noScheduleWarning": "Sayan status et agmankekerew na petsa tan oras, kanian say \"sakbay/diad/kayari na akaeskedyul ya oras\" ya abiso et agbalot onlabas.",
+    "noScheduleFix": "I-on so <strong>Ask for a date & time</strong> parad satan diad silong na Status & Sub-Status, odino ipawit ya Tampol.",
+    "sendTo": "Ipawit ed (antokaman a kombinasyon)",
+    "recipientAssigned": "Niasain ya manguusar (manunan akankayarian)",
+    "recipientOwner": "Say akankayarian na account / admin",
+    "recipientUpdatedBy": "Too ya ang-update na status",
+    "everyoneWithRole": "Amin et walay betang da",
+    "specificUsers": "Saray espisipikon manguusar (aktibo)",
+    "inactiveNever": "Saray inaktibo ya manguusar et agbalot makaawat na notipikasyon, anggano pinili ra.",
+    "deliverVia": "Iter panamegley na",
+    "channelInApp": "Diad loob na app (bell)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS provider)",
+    "emailHint": "Say email et onla ed email address na kada recipient tan kaukolan so SMTP ya i-set up ed server (backend/.env); anggad saman et saray email ya impawit et ni-log ya ag-onlalabas.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Saray Uloan ( JSON )",
+    "content": "Say karga na abiso",
+    "title": "Titulo",
+    "message": "Mensahe",
+    "insertIntoTitle": "Ilaktip ed Titulo",
+    "insertIntoMessage": "Iloob ed Mensahe",
+    "anyLeadField": "Onkikiwas met so antokaman ya lead field, alimbawa say <code1>{{example1}}</code1> odino <code2>{{example2}}</code2> .",
+    "preview": "Preview (sample lead)",
+    "enabled": "Na-enable",
+    "saveRule": "I-save so Notipikasyon",
+    "createRule": "Manggawa na Notipikasyon",
+    "variables": {
+      "customerName": "Ngaran na manunan",
+      "customerMobile": "Manunan mobile",
+      "customerEmail": "Lead email",
+      "registrationId": "Lead ID",
+      "status": "Kipapasen",
+      "subStatus": "Sub-status",
+      "scheduleAt": "Ineskedyul ya petsa tan oras",
+      "assignedTo": "Niiter ya user",
+      "updatedBy": "In-update nen",
+      "recipient": "Ngaran na mangawat",
+      "project": "Proyekto",
+      "notes": "Sankabaloan ya nota",
+      "partner": "Ngaran na kapareha"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Tampol no aka-set la so kipapasen",
+      "AT": "Diad akaeskedyul ya oras",
+      "A1D": "1 agew kayari na akaeskedyul ya oras (sundon ya tsek)"
+    },
+    "immediately": "Tampol",
+    "atScheduled": "Diad akaeskedyul ya oras",
+    "before": {
+      "MINUTES_one": "{{count}} minuto antis na akaeskedyul ya oras",
+      "MINUTES_other": "{{count}} minuto antis na akaeskedyul ya oras",
+      "HOURS_one": "{{count}} oras antis na akaeskedyul ya oras",
+      "HOURS_other": "{{count}} oras antis na akaeskedyul ya oras",
+      "DAYS_one": "{{count}} ya agew antis na akaeskedyul ya oras",
+      "DAYS_other": "{{count}} ya agew antis na akaeskedyul ya oras",
+      "WEEKS_one": "{{count}} simba antis na akaeskedyul ya oras",
+      "WEEKS_other": "{{count}} simba antis na akaeskedyul ya oras",
+      "MONTHS_one": "{{count}} bulan antis na akaeskedyul ya oras",
+      "MONTHS_other": "{{count}} bulan antis na akaeskedyul ya oras",
+      "YEARS_one": "{{count}} taon antis na akaeskedyul ya oras",
+      "YEARS_other": "{{count}} taon antis na akaeskedyul ya oras"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minuto kayari na akaeskedyul ya oras",
+      "MINUTES_other": "{{count}} minuto kayari na akaeskedyul ya oras",
+      "HOURS_one": "{{count}} oras kayari na akaeskedyul ya oras",
+      "HOURS_other": "{{count}} oras kayari na akaeskedyul ya oras",
+      "DAYS_one": "{{count}} ya agew kayari na akaeskedyul ya oras",
+      "DAYS_other": "{{count}} ya agew kayari na akaeskedyul ya oras",
+      "WEEKS_one": "{{count}} simba kayari na akaeskedyul ya oras",
+      "WEEKS_other": "{{count}} simba kayari na akaeskedyul ya oras",
+      "MONTHS_one": "{{count}} bulan kayari na akaeskedyul ya oras",
+      "MONTHS_other": "{{count}} bulan kayari na akaeskedyul ya oras",
+      "YEARS_one": "{{count}} taon kayari na akaeskedyul ya oras",
+      "YEARS_other": "{{count}} taon kayari na akaeskedyul ya panaon"
+    },
+    "units": {
+      "MINUTES_one": "minuto",
+      "MINUTES_other": "saray minuto",
+      "HOURS_one": "oras",
+      "HOURS_other": "saray oras",
+      "DAYS_one": "agew",
+      "DAYS_other": "agew",
+      "WEEKS_one": "simba",
+      "WEEKS_other": "simba",
+      "MONTHS_one": "bulan",
+      "MONTHS_other": "bulan",
+      "YEARS_one": "taon",
+      "YEARS_other": "dakel a taon"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal del costrutur",
+    "referrals": "Riferiment",
+    "builderLogin": "Accedi al costrutur",
+    "partnerLogin": "Access del partner del canal"
+  },
+  "login": {
+    "title": "Accedi al costrutur",
+    "hint": "I cunt di costruttur sun creà de Leadrat . Dumanda al tò aministratur se g’he n’hee minga vun."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "In attesa de la tua decisiun",
+    "ACCEPTED": "Acetà",
+    "REJECTED": "Refudà"
+  },
+  "list": {
+    "title": "Riferiment",
+    "allProjects": "Tüt i pruget",
+    "allStatuses": "Tüt i stat",
+    "count_one": "{{count}} riferiment",
+    "count_other": "{{count}} riferiment",
+    "columns": {
+      "referral": "Riferiment",
+      "customer": "Client",
+      "project": "Projet",
+      "sourcePartner": "Partner de font",
+      "status": "Stat",
+      "booking": "Prenotazion",
+      "registered": "Registrad"
+    },
+    "booked": "Prenotà",
+    "empty": "Ancamò nissun riferiment."
+  },
+  "detail": {
+    "customer": "Client",
+    "sourcePartner": "Partner de font",
+    "attributionNote": "(attribuzion - la pœl miga vesser modificada)",
+    "leadStatus": "Stat del lead",
+    "protectedUntil": "Protett fin a",
+    "referral": "Riferiment",
+    "reason": "Motif: {{reason}}",
+    "booking": "Prenotazion",
+    "bookedOwner": "Prenotà - te set el proprietari operatif",
+    "notBooked": "Minga prenotà",
+    "sharedAfterBooking": "Condivis dopu la prenotaziun",
+    "accept": "Acetar el riferiment",
+    "confirmBooking": "Cunferma la prenotaziun",
+    "reject": "Refudà el riferiment",
+    "rejectReasonLabel": "Motif per refudà (mustrà al cumpagn) *",
+    "rejectConfirm": "Refudar",
+    "confirmBookingPrompt": "Cunfermà la prenotaziun? La proprietà operativa se trasferiss a ti e el partner diventa idoneo a la comisiun.",
+    "notice": {
+      "booked": "Prenotazione confermada.",
+      "accepted": "Riferiment acetà.",
+      "rejected": "Riferiment refudà."
+    },
+    "backToReferrals": "Torna ai Riferiment"
+  },
+  "history": {
+    "title": "Storia",
+    "actor": {
+      "system": "Sistema",
+      "partner": "Partner del canai",
+      "admin": "Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Registraziun del partner ricevuuda",
+      "DUPLICATE_CHECK_COMPLETED": "Cuntrol duplicà cumpletà - nissun duplicà atif truvà",
+      "REGISTRATION_ACCEPTED": "Iscriziun acetada",
+      "PROTECTION_GRANTED_one": "{{count}} dì de pruteziun cuncessa",
+      "PROTECTION_GRANTED_other": "{{count}} dì de pruteziun cuncessa",
+      "STAGE_UPDATED": "Stat agiurnà a {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Camp {{count}} agiurnà",
+      "LEAD_DETAILS_UPDATED_other": "Camp {{count}} agiurnà",
+      "LEAD_ASSIGNED": "Asegnà a {{name}}",
+      "LEAD_UNASSIGNED": "Minga asegnà",
+      "REFERRAL_ACCEPTED": "El costrutur g’ha acettà el riferiment",
+      "REFERRAL_REJECTED": "El costrutur g’ha refudà el riferiment. Motif: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "El tentatif de registraziun duplicà de {{partner}} refüdà",
+      "BOOKING_COMPLETED": "La prenotaziun l’è cumpletada",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "La proprietà operativa trasferida al costrutur",
+      "PARTNER_ATTRIBUTION_PRESERVED": "L’attribuziun del partner l’è cunservada",
+      "COMMISSION_ELIGIBILITY_CREATED": "Idoneità a la cumisiun creada",
+      "HANDOVER_COMPLETED": "La trasferiment cumpletada",
+      "ADMIN_PROTECTION_RELEASED": "L'amministratur g’ha pubblicà a bon temp la pruteziun duplicada. Motif: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "L'amministratur g'ha riassegnà la registraziun de {{from}} a {{to}} . Motif: {{reason}}"
+    }
+  }
+}

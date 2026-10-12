@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Inniminniinerit",
+    "noPermission": "Inissiissutit aqunnissaannut akuersissummik peqanngilatit."
+  },
+  "categories": {
+    "lead": "Siulersorpaa",
+    "user": "Atuisoq",
+    "integrations": "Ataatsimoortitsinerit"
+  },
+  "leadTabs": {
+    "fields": "Aatsitassat",
+    "statuses": "Statusit & Allat Statusit",
+    "notifications": "Nalunaarutit & Pilersaarusiortut"
+  },
+  "fields": {
+    "leadIntro": "Immersugassaq lead capture-mik aaqqissuutikkit: allagartat atulersikkit/atorsinnaajunnaarsikkit, pisariaqartinneqartutut nalunaarsukkit, imaluunniit nammineq allagartat naleqqussakkatit ilanngukkit.",
+    "userIntro": "Immersugassaq Add/Edit Team Member-imik aaqqissuussineq: allagartat atulersikkit/atorsinnaajunnaarsikkit, pisariaqartinneqartutut nalunaarsukkit, imaluunniit nammineq allagartat ilanngukkit.",
+    "addCustomField": "+ Ilanngukkit Felt Personlig",
+    "fieldLabel": "Felt-tabel",
+    "group": "Eqimattaq",
+    "groupPlaceholderLead": "il.il. Misissueqqissaarneq Info",
+    "groupPlaceholderUser": "il.il. Ilanngussat",
+    "dataType": "Datatype",
+    "options": "Toqqagassat (kommamik immikkoortinneqarsimasut)",
+    "requiredLead": "Piumasaqaataavoq - teamimi suleqatigisat una allattariaqarpaat lead-imik nalunaarsuinissamut",
+    "requiredUser": "Piumasaqaataavoq - teamimi ilaasortaq ilanngunneqarpat allanneqartariaqarpoq",
+    "creating": "Pilersitsineq...",
+    "createField": "Pilersitsineq Field",
+    "columns": {
+      "field": "Allaffissaq",
+      "group": "Eqimattaq",
+      "type": "Suussusaa",
+      "required": "Piumasaqaataasoq",
+      "enabled": "Atorneqarsinnaasoq",
+      "kind": "Saamasoq"
+    },
+    "kind": {
+      "custom": "Sullitaq",
+      "core": "Kerne (ikkussorneqarsimasoq)",
+      "standard": "Naliginnaasoq"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Allataq",
+    "TEXTAREA": "Allaaserisaq sivisooq",
+    "NUMBER": "Kisitsisit",
+    "CURRENCY": "Aki",
+    "DATE": "Ulloq",
+    "SELECT": "Allagartaq",
+    "LIST": "Allattorsimaffik"
+  },
+  "picker": {
+    "searchPlaceholder": "Ujaasineq lead felter...",
+    "summary": "{{shown}} takutinneqarpoq · {{mandatory}} pinngitsoorani",
+    "mandatory": "Pinngitsoorani",
+    "noMatch": "Felt-it naleqqutinngillat."
+  },
+  "statuses": {
+    "intro": "Lead-status-it aammalu sub-status-it - ataasiakkaat qanoq piumasaqarnersut (ulloq & nalunaaqutaq, lead-feltit) lead-imik tassunga nutarterpat.",
+    "add": "+ Status ilanngukkit",
+    "columns": {
+      "order": "Inniminnigaq",
+      "status": "Inissisimanermik nalunaarut",
+      "subStatuses": "Allattorsimaffiit",
+      "asksFor": "Apeqquteqarpoq",
+      "active": "Atuisut"
+    },
+    "moveUp": "Qummut nuugit",
+    "moveDown": "Allamut ingerlagit",
+    "defaultBadge": "Nutaanik lead-inik default",
+    "bookingBadge": "Inniminniinerup inissisimanera",
+    "asksForLabel": "{{label}} pillugu apeqquteqarpoq",
+    "asksForDateTime": "Ulloq & nalunaaqutaq apeqqutigaa",
+    "none": "Soqanngilaq",
+    "dateTime": "Ulloq & nalunaaqutaq",
+    "scheduledOn": "on {{names}}",
+    "fieldsSummary_one": "{{count}} allattuiffik ( {{mandatory}} pinngitsoorani)",
+    "fieldsSummary_other": "{{count}} allattuiffiit ( {{mandatory}} pinngitsoorani)",
+    "deleteConfirm": "Status \" {{name}} \" piiaruk? Tamanna unitsinneqarsinnaanngilaq.",
+    "editTitle": "Pissutsit allanngortikkit - {{name}}",
+    "newTitle": "Status nutaaq",
+    "name": "Status Aqqa",
+    "colour": "Qalipaat",
+    "active": "Atuisut",
+    "isDefault": "Lead-it nutaat pillugit status-i",
+    "isBooking": "Inniminniinerup inissisimanera (Inniminniineq tamakkersimasoq atorlugu inissinneqartoq)",
+    "whenMoved": "Lead-imik status-imut tassunga nuuttoqarpat",
+    "askSchedule": "Ulloq & nalunaaqutaq apeqqutigiuk (pilersaarusiortoq)",
+    "scheduleLabelPlaceholder": "Tabel, s.s. Pulaartut nal",
+    "fieldsToShow": "Nutarterinermi immersugassami takutinneqartussat lead-feltit",
+    "subStatusesTitle": "Allattorsimaffiit",
+    "subStatusesHint": "Allattorsimaffiit ataasiakkaat namminneq ulloq & nalunaaqutaq piumasaqarsinnaapput aammalu namminneq allagartanik ilanngussinnaallutik - statusip allagartaasa qulaani takutinneqartut.",
+    "subStatusName": "Allatut inissisimaffiup aqqa",
+    "subFields": "Allattorsimaffiit ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Ulloq & nalunaaqutaq allagartaq, s.s",
+    "addSubStatus": "+ Allattorsimaffiat ilanngukkit",
+    "saveStatus": "Status-imik annaasaqarit",
+    "createStatus": "Status-imik pilersitsineq"
+  },
+  "notifications": {
+    "intro": "Inuit eqqortut nalunaarutigikkit lead statusimut tikikkaangat - piaartumik, imaluunniit piffissaq aalajangersimasoq ulloq & nalunaaqutaq tassani pilersaarusiorneqarsimasoq sioqqullugu/kingusinnerusukkut.",
+    "add": "+ Nalunaaruteqarneq ilanngukkit",
+    "columns": {
+      "notification": "Nalunaarutiginninneq",
+      "whenStatusIs": "Qanga Status-iuvoq",
+      "sends": "Nassiussivoq",
+      "to": "Uunga",
+      "via": "Kkut",
+      "enabled": "Atorneqarsinnaasoq"
+    },
+    "anyStatus": "Status-imik sunaluunniit",
+    "anySubStatus": "Allatut inissisimaneq",
+    "inactiveOption": "{{name}} (atuunneq ajortoq)",
+    "emptyRules": "Suli nalunaarutigineqanngilaq - ilanngukkit teamit ilisimatinniarlugu, lead statusimut tikikkaangat.",
+    "jobs": {
+      "title": "Pilersaarusiorneq & Nassiunneqartoq",
+      "firesAt": "Ikuallannerit Nal",
+      "notification": "Nalunaarutiginninneq",
+      "lead": "Siulersorpaa",
+      "status": "Inissisimanermik nalunaarut",
+      "details": "Annikitsortaanik paasissutissat",
+      "empty": "Suli pilersaarusiortoqanngilaq nassiunneqanngilaq.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Utaqqivoq",
+      "PROCESSING": "Suliassaqartitsineq",
+      "SENT": "Kingusissoq",
+      "FAILED": "Ajutoorpoq",
+      "SKIPPED": "Skippeqarpoq",
+      "CANCELLED": "Taarserneqarpoq"
+    },
+    "deliveryStatus": {
+      "SENT": "kingusissoq",
+      "FAILED": "ajutoorpoq",
+      "SKIPPED": "skippeqarsimavoq"
+    },
+    "deliveryChannel": {
+      "IN_APP": "app-imi",
+      "EMAIL": "mailikkut",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Atuisoq toqqagaasoq",
+      "owner": "Piginnittoq",
+      "updatedBy": "Nutarterneqarpoq ulloq",
+      "role": "Rolle: {{name}}"
+    },
+    "channels": {
+      "inApp": "App-imi",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Nalunaarutigineqartoq \" {{name}} \" piiaruk? Tassaniit eqqaamasat utaqqisut unitsinneqarput.",
+    "testPrompt": "Nalunaarutiginninnermik misileraaneq nammineq nassiuk (in-app) lead ID sorleq atorlugu ?",
+    "testSent": "Klokimut nassiunneqarpoq: {{title}} {{message}}",
+    "headersInvalid": "Webhook qulequtaasa JSON atuuttussaapput , assersuutigalugu {\"Akuersissut\": \"Bærer xyz\"}",
+    "editTitle": "Nalunaarusiaq allanngortiguk",
+    "newTitle": "Nalunaarut nutaaq",
+    "name": "Ateq",
+    "namePlaceholder": "il.il. Sumiiffimmut pulaarnermut eqqaamasaqarneq",
+    "whenStatus": "Qanga lead-ip statusia",
+    "subStatus": "Allatut inissisimaneq",
+    "send": "Nassiuk (pilersaarusiortoq)",
+    "custom": "Sullitaq...",
+    "modeBefore": "piffissaq pilersaarusiorneqarsimasoq sioqqullugu",
+    "modeAfter": "piffissap pilersaarusiorneqarsimasup kingorna",
+    "noScheduleWarning": "Status-i taanna ulloq & nalunaaqutaq piumasaqanngilaq, taamaattumik \"piffissaq pilersaarusiorneqarsimasoq sioqqullugu/nalunaaqutaq/kinguaassiuutitigut\" nalunaaruteqarneq qanoq ililluniluunniit atorsinnaanngilaq.",
+    "noScheduleFix": "Statusit & Understatus-it ataani <strong>ulloq & nalunaaqutaq qinnuigiuk</strong> , imaluunniit nassiuk Piffissaq ingerlaannaq.",
+    "sendTo": "Nassiuk uunga (ataatsimooqatigiinneq sunaluunniit)",
+    "recipientAssigned": "Atuisoq toqqagaasoq (piginnittoq pingaarneq)",
+    "recipientOwner": "Kontomik piginnittuq / admin",
+    "recipientUpdatedBy": "Inuk statusimik nutarterisoq",
+    "everyoneWithRole": "Kikkut tamarmik rolleqarlutik",
+    "specificUsers": "Atuisut immikkut ittut (aktive)",
+    "inactiveNever": "Atuisut inaktivit nalunaarfigineqarneq ajorput, toqqarneqarsimagaluarlutik.",
+    "deliverVia": "Nassiussineq aqqutigalugu",
+    "channelInApp": "App-imi (klokki)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS pilersuisoq)",
+    "emailHint": "Email-i pissarsiarineqartunut ataasiakkaanut emailikkut adressinut ingerlavoq aammalu serverimi SMTP-mik inissiisoqartariaqarpoq (backend/.env); taamanikkut emailikkut nassiussat skippeqarsimasutut nalunaarsorneqartarput.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Qulequttat ( JSON )",
+    "content": "Nalunaarutip imarisaa",
+    "title": "Qulequtaq",
+    "message": "Nalunaarut",
+    "insertIntoTitle": "Titel-imut ilanngukkit",
+    "insertIntoMessage": "Messaj-imut ilanngukkit",
+    "anyLeadField": "Lead-felt sunaluunniit aamma sulisinnaavoq, assersuutigalugu <code1>{{example1}}</code1> imaluunniit <code2>{{example2}}</code2> .",
+    "preview": "Siullermeerneq (misiliutissaq)",
+    "enabled": "Atorneqarsinnaasoq",
+    "saveRule": "Nalunaarutiginninneq annaakkit",
+    "createRule": "Nalunaarutiginninnermik pilersitsineq",
+    "variables": {
+      "customerName": "Aqqa bly",
+      "customerMobile": "Mobilimik aqutsineq",
+      "customerEmail": "Email-imik aqutsineq",
+      "registrationId": "Bly ID",
+      "status": "Inissisimanermik nalunaarut",
+      "subStatus": "Allatut inissisimaneq",
+      "scheduleAt": "Ulloq & nalunaaqutaq pilersaarusiorneqarsimasoq",
+      "assignedTo": "Atuisoq toqqagaasoq",
+      "updatedBy": "Nutarterneqarpoq ulloq",
+      "recipient": "Pissarsisup aqqa",
+      "project": "Iluarsartuullugu pilersaarusiaq",
+      "notes": "Allaaserisaq kingulleq",
+      "partner": "Suleqatigiissitap aqqa"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Status-ip inissinneqarnerani ingerlaannaq",
+      "AT": "Piffissami pilersaarusiorneqarsimasumi",
+      "A1D": "Piffissaq pilersaarutaareersoq ulloq 1 qaangiuppat (malinnaalluni misissuineq)"
+    },
+    "immediately": "Tuaviortumik",
+    "atScheduled": "Piffissami pilersaarusiorneqarsimasumi",
+    "before": {
+      "MINUTES_one": "{{count}} piffissaq pilersaarusiorneqarsimasoq minutsi sioqqullugu",
+      "MINUTES_other": "{{count}} minutsit piffissaq pilersaarusiorneqarsimasoq sioqqullugu",
+      "HOURS_one": "{{count}} piffissaq pilersaarusiorneqarsimasoq sioqqullugu nalunaaqutaq",
+      "HOURS_other": "{{count}} piffissaq pilersaarusiorneqarsimasoq sioqqullugu akunnerit",
+      "DAYS_one": "{{count}} ulloq pilersaarusiorneqarsimasoq sioqqullugu",
+      "DAYS_other": "{{count}} ullut piffissaq pilersaarusiorneqarsimasoq sioqqullugu",
+      "WEEKS_one": "{{count}} piffissaq pilersaarusiorneqarsimasoq sapaatip akunnera sioqqullugu",
+      "WEEKS_other": "{{count}} sapaatit akunnerinik piffissaq pilersaarusiorneqarsimasoq sioqqullugu",
+      "MONTHS_one": "{{count}} piffissaq pilersaarusiorneqarsimasoq sioqqullugu qaammat",
+      "MONTHS_other": "{{count}} qaammatit piffissaq pilersaarusiorneqarsimasoq sioqqullugu",
+      "YEARS_one": "{{count}} ukioq piffissaq pilersaarusiorneqarsimasoq sioqqullugu",
+      "YEARS_other": "{{count}} ukiut piffissaq pilersaarusiorneqarsimasoq sioqqullugu"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minutsi piffissap pilersaarusiorneqarsimasup kingorna",
+      "MINUTES_other": "{{count}} minutsit pilersaarusiorneqarsimasup kingorna",
+      "HOURS_one": "{{count}} piffissap pilersaarusiorneqarsimasup kingorna nalunaaqutaq",
+      "HOURS_other": "{{count}} piffissap pilersaarusiorneqarsimasup kingorna akunnerit",
+      "DAYS_one": "{{count}} ulloq pilersaarusiorneqarsimasup kingorna",
+      "DAYS_other": "{{count}} ullut pilersaarusiorneqarsimasup kingorna",
+      "WEEKS_one": "{{count}} sapaatip akunnerata kingorna piffissaq pilersaarusiorneqarsimasoq",
+      "WEEKS_other": "{{count}} sapaatit akunnerit pilersaarusiorneqarsimasup kingorna",
+      "MONTHS_one": "{{count}} qaammat piffissaq pilersaarusiorneqarsimasoq qaangiuppat",
+      "MONTHS_other": "{{count}} qaammatit piffissap pilersaarusiorneqarsimasup kingorna",
+      "YEARS_one": "{{count}} ukioq pilersaarusiorneqarsimasup kingorna",
+      "YEARS_other": "{{count}} ukiut piffissap pilersaarusiorneqarsimasup kingorna"
+    },
+    "units": {
+      "MINUTES_one": "minutsi",
+      "MINUTES_other": "minutsit",
+      "HOURS_one": "nalunaaquttap akunnera",
+      "HOURS_other": "nalunaaquttap akunneri",
+      "DAYS_one": "ulloq",
+      "DAYS_other": "ullut 15-it",
+      "WEEKS_one": "sapaatip akunnera",
+      "WEEKS_other": "sapaatit akunnerini",
+      "MONTHS_one": "qaammat",
+      "MONTHS_other": "qaammatini",
+      "YEARS_one": "ukioq",
+      "YEARS_other": "Ikiut"
+    }
+  }
+}

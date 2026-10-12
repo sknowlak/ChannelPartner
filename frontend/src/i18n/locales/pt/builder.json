@@ -1,0 +1,93 @@
+{
+  "shell": {
+    "portal": "Portal do Construtor",
+    "referrals": "Referências",
+    "builderLogin": "Login do Construtor",
+    "partnerLogin": "Login de parceiro de canal"
+  },
+  "login": {
+    "title": "Login do construtor",
+    "hint": "As contas do construtor são criadas pela Leadrat . Pergunte ao seu administrador se você não tiver um."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Esperando pela sua decisão",
+    "ACCEPTED": "Aceito",
+    "REJECTED": "Rejeitado"
+  },
+  "list": {
+    "title": "Referências",
+    "allProjects": "Todos os projetos",
+    "allStatuses": "Todos os status",
+    "count_one": "{{count}} referências",
+    "count_many": "{{count}} referências",
+    "count_other": "{{count}} referências",
+    "columns": {
+      "referral": "Referência",
+      "customer": "Cliente",
+      "project": "Projeto",
+      "sourcePartner": "Parceiro de origem",
+      "status": "Status",
+      "booking": "Reserva",
+      "registered": "Registrado"
+    },
+    "booked": "Reservado",
+    "empty": "Nenhuma referência ainda."
+  },
+  "detail": {
+    "customer": "Cliente",
+    "sourcePartner": "Parceiro de origem",
+    "attributionNote": "(atribuição - não pode ser alterada)",
+    "leadStatus": "Status do lead",
+    "protectedUntil": "Protegido até",
+    "referral": "Referência",
+    "reason": "Motivo: {{reason}}",
+    "booking": "Reserva",
+    "bookedOwner": "Reservado - você é o proprietário operacional",
+    "notBooked": "Não reservado",
+    "sharedAfterBooking": "Compartilhado após a reserva",
+    "accept": "Aceitar indicação",
+    "confirmBooking": "Confirmar reserva",
+    "reject": "Rejeitar indicação",
+    "rejectReasonLabel": "Motivo da rejeição (mostrado ao parceiro) *",
+    "rejectConfirm": "Rejeitar",
+    "confirmBookingPrompt": "Confirmar a reserva? A propriedade operacional passa para você e o parceiro se torna elegível para comissão.",
+    "notice": {
+      "booked": "Reserva confirmada.",
+      "accepted": "Referência aceita.",
+      "rejected": "Referência rejeitada."
+    },
+    "backToReferrals": "Voltar para Referências"
+  },
+  "history": {
+    "title": "História",
+    "actor": {
+      "system": "Sistema",
+      "partner": "Parceiro de canal",
+      "admin": "Administrador Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Registro de parceiro recebido",
+      "DUPLICATE_CHECK_COMPLETED": "Verificação de duplicatas concluída – nenhuma duplicata ativa encontrada",
+      "REGISTRATION_ACCEPTED": "Registro aceito",
+      "PROTECTION_GRANTED_one": "{{count}} dias de proteção concedida",
+      "PROTECTION_GRANTED_many": "{{count}} dias de proteção concedida",
+      "PROTECTION_GRANTED_other": "{{count}} dias de proteção concedida",
+      "STAGE_UPDATED": "Status atualizado para {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Campo {{count}} atualizado",
+      "LEAD_DETAILS_UPDATED_many": "Campos {{count}} atualizados",
+      "LEAD_DETAILS_UPDATED_other": "Campos {{count}} atualizados",
+      "LEAD_ASSIGNED": "Atribuído a {{name}}",
+      "LEAD_UNASSIGNED": "Não atribuído",
+      "REFERRAL_ACCEPTED": "Builder aceitou a indicação",
+      "REFERRAL_REJECTED": "Builder rejeitou a indicação. Motivo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Tentativa de registro duplicado de {{partner}} rejeitada",
+      "BOOKING_COMPLETED": "Reserva concluída",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Propriedade operacional transferida para o Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribuição do parceiro preservada",
+      "COMMISSION_ELIGIBILITY_CREATED": "Elegibilidade da comissão criada",
+      "HANDOVER_COMPLETED": "Transferência concluída",
+      "ADMIN_PROTECTION_RELEASED": "O administrador liberou a proteção duplicada antecipadamente. Motivo: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "O administrador reatribuiu o registro de {{from}} para {{to}} . Motivo: {{reason}}"
+    }
+  }
+}

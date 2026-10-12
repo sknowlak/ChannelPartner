@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Mijn leads",
+    "signedInAs": "Aangemeld als {{name}} ( {{partnerId}} ) · tijden weergegeven in {{timezone}}",
+    "addLead": "+ Lead toevoegen",
+    "tabs": {
+      "all": "Alles ( {{count}} )",
+      "pending": "In behandeling ( {{count}} )",
+      "booked": "Geboekt ( {{count}} )"
+    },
+    "searchPlaceholder": "Zoeken op naam, mobiel of registratie- ID ...",
+    "manageColumns": "Kolommen beheren",
+    "rowsPerPage": "Rijen per pagina",
+    "registrationId": "Registratie- ID",
+    "emptyState": "Nog geen leads - registreer uw eerste.",
+    "noMatch": "Er zijn geen leads die overeenkomen met deze filters.",
+    "showing": "Toont {{from}} - {{to}} van {{total}} inzendingen",
+    "actions": {
+      "preview": "Voorbeeld en snelle update",
+      "history": "Geschiedenis",
+      "email": "E-mail",
+      "whatsapp": "WhatsApp",
+      "call": "Telefoongesprek"
+    },
+    "pagination": {
+      "first": "Eerste pagina",
+      "previous": "Vorige pagina",
+      "next": "Volgende pagina",
+      "last": "Laatste pagina"
+    }
+  },
+  "columns": {
+    "status": "Status",
+    "assignTo": "Toewijzen aan",
+    "booked": "Geboekt",
+    "protectionUntil": "Bescherming Tot"
+  },
+  "booking": {
+    "booked": "Geboekt",
+    "pending": "In behandeling"
+  },
+  "assign": {
+    "unassigned": "Niet toegewezen",
+    "owner": "{{name}} (Eigenaar)",
+    "inactive": "{{name}} (inactief)",
+    "unknownUser": "Onbekende gebruiker",
+    "assignedTo": "Toegewezen aan {{name}}"
+  },
+  "form": {
+    "addTitle": "Lead toevoegen",
+    "editTitle": "Lead bewerken",
+    "noPermissionAdd": "U heeft geen toestemming om leads te registreren.",
+    "noPermissionEdit": "U heeft geen rechten om leads te bewerken.",
+    "selectPlaceholder": "Selecteer...",
+    "commaSeparated": "Komma gescheiden",
+    "phonePlaceholder": "Telefoonnummer",
+    "countryCode": "Landcode"
+  },
+  "project": {
+    "none": "Nog geen project (niet doorverwezen)",
+    "notInList": "{{project}} (niet in de projectenlijst)"
+  },
+  "journey": {
+    "customer": "Klant",
+    "currentOwner": "Huidige eigenaar",
+    "protectionExpiry": "Bescherming vervalt",
+    "leadStatus": "Leadstatus",
+    "scheduled": "Gepland",
+    "assignedTo": "Toegewezen aan",
+    "referral": "Verwijzing",
+    "builderReason": "Reden van de bouwer: {{reason}}",
+    "bookedHint": "Geboekt door de bouwer - het operationele eigendom is overgegaan naar de bouwer; uw toeschrijving en geschiktheid voor de commissie blijven behouden.",
+    "notBookedHint": "Boekingen worden bevestigd door de bouwer zodra deze de verwijzing accepteert.",
+    "quickUpdate": "Snelle update",
+    "leadDetails": "Leaddetails",
+    "progressHistory": "Vooruitgangsgeschiedenis",
+    "timesIn": "(tijden in {{timezone}} )",
+    "backToMyLeads": "Terug naar Mijn leads",
+    "editLead": "Lead bewerken"
+  },
+  "referral": {
+    "NOT_REFERRED": "Niet verwezen (geen project)",
+    "PENDING_BUILDER": "Wachten op bouwer",
+    "ACCEPTED": "Geaccepteerd door bouwer",
+    "REJECTED": "Afgekeurd door bouwer"
+  },
+  "preview": {
+    "ariaLabel": "Leadvoorbeeld",
+    "title": "Leadvoorbeeld",
+    "source": "Bron",
+    "location": "Locatie",
+    "scheduled": "Gepland",
+    "registered": "Geregistreerd",
+    "latestNote": "Laatste opmerking",
+    "quickUpdate": "Snelle update",
+    "fullDetails": "Volledige details",
+    "editLead": "Lead bewerken",
+    "history": "Geschiedenis"
+  },
+  "quick": {
+    "assignedTo": "Toegewezen aan",
+    "status": "Status",
+    "subStatus": "Substatus",
+    "selectSubStatus": "Selecteer substatus...",
+    "none": "Geen",
+    "scheduledAt": "Gepland om",
+    "localTime": "lokale tijd",
+    "note": "Opmerking",
+    "notePlaceholder": "Wat gebeurde er tijdens dit gesprek/bezoek? (optioneel)",
+    "updateStatus": "Status bijwerken",
+    "statusUpdated": "Status bijgewerkt",
+    "bookedLocked": "Deze lead is geboekt. De status ervan kan niet meer worden gewijzigd.",
+    "viewOnly": "U kunt deze lead bekijken, maar uw rol kan deze niet bijwerken."
+  },
+  "history": {
+    "title": "Geschiedenis - {{registrationId}}",
+    "tabs": {
+      "all": "Alle",
+      "status": "Status",
+      "assignment": "Opdracht",
+      "notes": "Opmerkingen"
+    },
+    "doneBy": "Gedaan door {{actor}}",
+    "system": "Systeem",
+    "platforms": {
+      "System": "Systeem",
+      "External": "Extern",
+      "Web": "Web",
+      "Mobile": "Mobiel"
+    },
+    "added": "toegevoegd",
+    "updated": "bijgewerkt",
+    "empty": "(leeg)",
+    "noHistory": "Nog geen geschiedenis in deze categorie.",
+    "fieldLabels": {
+      "stage": "Status",
+      "subStatus": "Substatus",
+      "scheduledAt": "Schema",
+      "notes": "Opmerkingen",
+      "assignedTo": "Toegewezen aan"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Partnerregistratie ontvangen",
+      "DUPLICATE_CHECK_COMPLETED": "Duplicaatcontrole voltooid - geen actief duplicaat gevonden",
+      "REGISTRATION_ACCEPTED": "Registratie geaccepteerd",
+      "PROTECTION_GRANTED_one": "{{count}} -dag bescherming verleend",
+      "PROTECTION_GRANTED_other": "{{count}} -dag bescherming verleend",
+      "REGISTRATION_ATTEMPT_REJECTED": "Dubbele registratiepoging van {{partnerId}} afgewezen",
+      "LEAD_DETAILS_UPDATED_one": "Veld van {{count}} bijgewerkt",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} velden bijgewerkt",
+      "STAGE_UPDATED": "Status bijgewerkt naar {{status}}",
+      "LEAD_ASSIGNED": "Toegewezen aan {{name}}",
+      "LEAD_UNASSIGNED": "Niet toegewezen",
+      "BOOKING_COMPLETED": "Boeking voltooid",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operationeel eigendom overgedragen aan Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partnerattributie behouden",
+      "COMMISSION_ELIGIBILITY_CREATED": "Geschiktheid voor commissie gecreëerd",
+      "HANDOVER_COMPLETED": "Overdracht voltooid",
+      "REFERRAL_ACCEPTED": "Bouwer accepteerde de verwijzing",
+      "REFERRAL_REJECTED": "Bouwer heeft de verwijzing afgewezen. Reden: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "De beheerder heeft de dubbele bescherming vroegtijdig vrijgegeven. Reden: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "De beheerder heeft de registratie opnieuw toegewezen van {{from}} naar {{to}} . Reden: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Kolommen beheren",
+    "hint": "Sleep om de volgorde te wijzigen · vink aan om weer te geven",
+    "showAll": "Toon alles",
+    "resetDefault": "Terugzetten naar standaard"
+  },
+  "filters": {
+    "title": "Filters",
+    "allProjects": "Alle projecten",
+    "any": "Elk",
+    "noFields": "Er zijn nog geen andere filterbare velden ingeschakeld (Instellingen > Lead).",
+    "clearAll": "Alles wissen"
+  },
+  "phone": {
+    "MISSING": "Telefoonnummer is vereist.",
+    "INVALID": "Voer een geldig telefoonnummer in.",
+    "TOO_SHORT": "Telefoonnummer is te kort.",
+    "TOO_LONG": "Telefoonnummer is te lang.",
+    "INVALID_FOR_COUNTRY": "Dit telefoonnummer is niet geldig voor {{country}} .",
+    "COUNTRY_MISMATCH": "Selecteer de juiste landcode.",
+    "NOT_MOBILE": "Voer een mobiel nummer in, geen vaste lijn."
+  }
+}

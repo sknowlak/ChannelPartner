@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Mga Setting",
+    "noPermission": "Mayo kang permiso na pamahalaan an mga setting."
+  },
+  "categories": {
+    "lead": "Mangenot",
+    "user": "Paragamit",
+    "integrations": "Mga Pag-integrar"
+  },
+  "leadTabs": {
+    "fields": "Mga Uma",
+    "statuses": "Mga Kamugtakan asin Sub-Kamugtakan",
+    "notifications": "Mga Notipikasyon asin mga Paraiskedyul"
+  },
+  "fields": {
+    "leadIntro": "I-configure an lead capture form: i-enable/disable an mga field, markahan sinda na kaipuhan, o magdagdag nin sadiring mga custom field.",
+    "userIntro": "I-configure an pormang Add/Edit Team Member: i-enable/disable an mga field, markahan sindang kaipuhan, o idagdag an saimong sadiring mga custom field.",
+    "addCustomField": "+ Magdagdag nin Pasadyang Larangan",
+    "fieldLabel": "Label kan Larangan",
+    "group": "Grupo",
+    "groupPlaceholderLead": "halimbawa, Impormasyon sa Paghapot",
+    "groupPlaceholderUser": "halimbawa Mga Dagdag na Detalye",
+    "dataType": "Tipo nin Datos",
+    "options": "Mga Opsyon (nakasuhay nin koma)",
+    "requiredLead": "Kaipuhan - an mga kasosyo sa saimong grupo dapat na magsurat kaini tanganing makarehistro nin sarong lead",
+    "requiredUser": "Kaipuhan - dapat na panoon kun nagdadagdag nin sarong miyembro kan grupo",
+    "creating": "Naggigibo...",
+    "createField": "Magmukna nin Larangan",
+    "columns": {
+      "field": "Uma",
+      "group": "Grupo",
+      "type": "Klase",
+      "required": "Kaipuhan",
+      "enabled": "Pinagana",
+      "kind": "Kabuotan"
+    },
+    "kind": {
+      "custom": "Kustombre",
+      "core": "Ubod (nakakandado)",
+      "standard": "Standard"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Teksto",
+    "TEXTAREA": "Halawig na teksto",
+    "NUMBER": "Numero",
+    "CURRENCY": "Kwarta",
+    "DATE": "Petsa",
+    "SELECT": "Dropdown",
+    "LIST": "Listahan"
+  },
+  "picker": {
+    "searchPlaceholder": "Maghanap nin mga lead field...",
+    "summary": "{{shown}} ipinapahiling · {{mandatory}} mandatory",
+    "mandatory": "Kinakaipuhan",
+    "noMatch": "Mayo nin mga natad na magkapareho."
+  },
+  "statuses": {
+    "intro": "An saimong mga estado nin lead asin sub-estatus - kun ano an hinahagad kan lambang saro (sarong petsa asin oras, mga lead field) kun may nag-a-update nin lead digdi.",
+    "add": "+ Magdagdag nin Kamugtakan",
+    "columns": {
+      "order": "Order",
+      "status": "Estado",
+      "subStatuses": "Mga Sub-Estatus",
+      "asksFor": "Naghahagad nin",
+      "active": "Aktibo"
+    },
+    "moveUp": "Mag-itaas",
+    "moveDown": "Magbaba",
+    "defaultBadge": "Default para sa mga bagong lead",
+    "bookingBadge": "Kamugtakan nin pagpareserba",
+    "asksForLabel": "Naghagad nin {{label}}",
+    "asksForDateTime": "Naghahagad nin petsa asin oras",
+    "none": "Mayo",
+    "dateTime": "Petsa asin oras",
+    "scheduledOn": "sa {{names}}",
+    "fieldsSummary_one": "{{count}} field ( {{mandatory}} mandatory)",
+    "fieldsSummary_other": "{{count}} na mga larangan ( {{mandatory}} mandatory)",
+    "deleteConfirm": "Buraon an estado \" {{name}} \"? Dai na ini pwedeng ibalik.",
+    "editTitle": "Liwaton an Kamugtakan - {{name}}",
+    "newTitle": "Bagong Kamugtakan",
+    "name": "Pangaran kan Estado",
+    "colour": "Kolor",
+    "active": "Aktibo",
+    "isDefault": "Default na estado para sa mga bagong lead",
+    "isBooking": "Kamugtakan nin Pagpareserba (itinatakda kan Kumpletong Pagpareserba)",
+    "whenMoved": "Kun an sarong lead ibinalyo sa estadong ini",
+    "askSchedule": "Maghagad nin petsa asin oras (para-iskedyul)",
+    "scheduleLabelPlaceholder": "Label, halimbawa Magbisita sa",
+    "fieldsToShow": "Mga lead field na ipapahiling sa porma nin pag-update",
+    "subStatusesTitle": "Mga Sub-Estatus",
+    "subStatusesHint": "An lambang sub-status pwedeng maghagad nin sadiring petsa asin oras asin magdagdag nin sadiring mga field - na ipinapahiling sa ibabaw kan mga field kan estado sa itaas.",
+    "subStatusName": "Pangaran kan sub-status",
+    "subFields": "Mga Larangan ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Tatak nin petsa asin oras, halimbawa, Mag-apod giraray sa",
+    "addSubStatus": "+ Magdagdag nin Sub-Estatus",
+    "saveStatus": "I-save an Estado",
+    "createStatus": "Magmukna nin Estado"
+  },
+  "notifications": {
+    "intro": "Ipaaram sa tamang mga tawo kun an sarong lead nakaabot na sa sarong estado - tulos, o sarong itinalaan na oras bago/pagkatapos kan petsa asin oras na nakaiskedyul diyan.",
+    "add": "+ Magdagdag nin Paisi",
+    "columns": {
+      "notification": "Paisi",
+      "whenStatusIs": "Kun an Kamugtakan",
+      "sends": "Nagpapadara",
+      "to": "Pasiring",
+      "via": "Paagi sa",
+      "enabled": "Pinagana"
+    },
+    "anyStatus": "Anuman na estado",
+    "anySubStatus": "Anuman na sub-status",
+    "inactiveOption": "{{name}} (bakong aktibo)",
+    "emptyRules": "Mayo pang mga notipikasyon - magdagdag nin saro tanganing maalerto an saimong grupo kun an sarong lead nakaabot na sa sarong estado.",
+    "jobs": {
+      "title": "Nakaiskedyul asin Ipinadara",
+      "firesAt": "Nagsulo sa",
+      "notification": "Paisi",
+      "lead": "Mangenot",
+      "status": "Estado",
+      "details": "Mga detalye",
+      "empty": "Mayo pang naka-iskedyul o ipinadara.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Dai pa tapos",
+      "PROCESSING": "Pagproseso",
+      "SENT": "Ipinadasa",
+      "FAILED": "Nabagsak",
+      "SKIPPED": "Nalaktawan",
+      "CANCELLED": "Kanselado"
+    },
+    "deliveryStatus": {
+      "SENT": "ipinadasa",
+      "FAILED": "nabagsak",
+      "SKIPPED": "linampasan"
+    },
+    "deliveryChannel": {
+      "IN_APP": "sa laog kan app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Itinalaga na paragamit",
+      "owner": "Tagsadiri",
+      "updatedBy": "Ipinublikar kan",
+      "role": "Papel: {{name}}"
+    },
+    "channels": {
+      "inApp": "Sa laog kan app",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Buraon an notipikasyon \" {{name}} \"? An mga nakabinbin na pagirumdom gikan digdi kinanselar.",
+    "testPrompt": "Magpadara nin sarong pag-eksamin kan notipikasyon na ini sa saimong sadiri (sa laog kan app) gamit an arin na lead ID ?",
+    "testSent": "Ipinadara sa saimong kampana: {{title}} {{message}}",
+    "headersInvalid": "An mga header Webhook dapat balidong JSON , halimbawa {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "I-edit an Notipikasyon",
+    "newTitle": "Bagong Paisi",
+    "name": "Pangaran",
+    "namePlaceholder": "halimbawa, Pagirumdom sa pagbisita sa lugar",
+    "whenStatus": "Kun an estado kan sarong lead iyo an",
+    "subStatus": "Sub-status",
+    "send": "Ipadara (para-iskedyul)",
+    "custom": "Kustombre...",
+    "modeBefore": "bago an nakatalaan na oras",
+    "modeAfter": "pakatapos kan nakatalaan na oras",
+    "noScheduleWarning": "An estadong ini dai naghahagad nin petsa asin oras, kaya an sarong abiso na \"bago/sa/pagkatapos kan nakaiskedyul na oras\" dai nanggad maluwas.",
+    "noScheduleFix": "I-on <strong>an Maghagad nin petsa asin oras</strong> para kaini sa irarom kan Mga Estado asin Sub-Estatus, o magpadara Tulos.",
+    "sendTo": "Ipadara sa (ano man na kombinasyon)",
+    "recipientAssigned": "Itinao na paragamit (pangenot na kagsadiri)",
+    "recipientOwner": "Kagsadiri kan account / admin",
+    "recipientUpdatedBy": "Tawo na nag-update kan estado",
+    "everyoneWithRole": "An gabos na may papel",
+    "specificUsers": "Mga partikular na paragamit (aktibo)",
+    "inactiveNever": "An mga bakong aktibong paragamit dai nanggad nakakaresibe nin mga notipikasyon, dawa kun pinili.",
+    "deliverVia": "Maghatod sa paagi",
+    "channelInApp": "Sa laog kan app (kampanya)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS provider)",
+    "emailHint": "An email minaduman sa email address kan lambang resipyente asin nangangaipo nin SMTP na nakabugtak sa server (backend/.env); sagkod na an mga ipinadara nin email na-log bilang nalaktawan.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Mga Header ( JSON )",
+    "content": "Laog kan abiso",
+    "title": "Titulo",
+    "message": "Mensahe",
+    "insertIntoTitle": "Ibugtak sa Titulo",
+    "insertIntoMessage": "Ibugtak sa Mensahe",
+    "anyLeadField": "An arin man na lead field naggagana man, halimbawa <code1>{{example1}}</code1> o <code2>{{example2}}</code2> .",
+    "preview": "Preview (sample lead)",
+    "enabled": "Pinagana",
+    "saveRule": "I-save an Abiso",
+    "createRule": "Magmukna nin Abiso",
+    "variables": {
+      "customerName": "Pangenot na pangaran",
+      "customerMobile": "Lead mobile",
+      "customerEmail": "Pangenot na email",
+      "registrationId": "Lead ID",
+      "status": "Estado",
+      "subStatus": "Sub-status",
+      "scheduleAt": "Nakatalaan na petsa asin oras",
+      "assignedTo": "Itinalaga na paragamit",
+      "updatedBy": "Ipinublikar kan",
+      "recipient": "Pangaran kan resipyente",
+      "project": "Proyekto",
+      "notes": "Pinakabagong nota",
+      "partner": "Pangaran kan kapadis"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Tulos-tulos kun an estado nakabugtak na",
+      "AT": "Sa nakaiskedyul na oras",
+      "A1D": "1 aldaw pagkatapos kan nakaiskedyul na oras (follow-up check)"
+    },
+    "immediately": "Tulos tulos",
+    "atScheduled": "Sa nakaiskedyul na oras",
+    "before": {
+      "MINUTES_one": "{{count}} minuto bago an nakaiskedyul na oras",
+      "MINUTES_other": "{{count}} mga minuto bago an nakaiskedyul na oras",
+      "HOURS_one": "{{count}} oras bago an nakaiskedyul na oras",
+      "HOURS_other": "{{count}} oras bago an nakaiskedyul na oras",
+      "DAYS_one": "{{count}} aldaw bago an nakaiskedyul na oras",
+      "DAYS_other": "{{count}} aldaw bago an nakaiskedyul na oras",
+      "WEEKS_one": "{{count}} semana bago an nakaiskedyul na oras",
+      "WEEKS_other": "{{count}} mga semana bago an nakaiskedyul na oras",
+      "MONTHS_one": "{{count}} bulan bago an nakaiskedyul na oras",
+      "MONTHS_other": "{{count}} bulan bago an nakaiskedyul na oras",
+      "YEARS_one": "{{count}} taon bago an nakaiskedyul na oras",
+      "YEARS_other": "{{count}} taon bago an nakaiskedyul na oras"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minuto pagkatapos kan nakaiskedyul na oras",
+      "MINUTES_other": "{{count}} minutos pagkatapos kan nakaiskedyul na oras",
+      "HOURS_one": "{{count}} oras pagkatapos kan nakaiskedyul na oras",
+      "HOURS_other": "{{count}} oras pagkatapos kan nakaiskedyul na oras",
+      "DAYS_one": "{{count}} aldaw pagkatapos kan nakaiskedyul na oras",
+      "DAYS_other": "{{count}} aldaw pagkatapos kan nakaiskedyul na oras",
+      "WEEKS_one": "{{count}} semana pagkatapos kan nakaiskedyul na oras",
+      "WEEKS_other": "{{count}} semana pagkatapos kan nakaiskedyul na oras",
+      "MONTHS_one": "{{count}} bulan pagkatapos kan nakaiskedyul na oras",
+      "MONTHS_other": "{{count}} bulan pagkatapos kan nakaiskedyul na oras",
+      "YEARS_one": "{{count}} taon pagkatapos kan nakaiskedyul na oras",
+      "YEARS_other": "{{count}} taon pagkatapos kan nakaiskedyul na oras"
+    },
+    "units": {
+      "MINUTES_one": "minuto",
+      "MINUTES_other": "mga minuto",
+      "HOURS_one": "oras",
+      "HOURS_other": "mga oras",
+      "DAYS_one": "aldaw",
+      "DAYS_other": "aldaw",
+      "WEEKS_one": "semana",
+      "WEEKS_other": "semana",
+      "MONTHS_one": "bulan",
+      "MONTHS_other": "mga bulan",
+      "YEARS_one": "taon",
+      "YEARS_other": "mga taon"
+    }
+  }
+}

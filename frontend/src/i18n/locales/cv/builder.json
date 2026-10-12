@@ -1,0 +1,93 @@
+{
+  "shell": {
+    "portal": "Строитель порталӗ",
+    "referrals": "Рефералсем",
+    "builderLogin": "Строитель Логин",
+    "partnerLogin": "Канал партнерӗн логинӗ"
+  },
+  "login": {
+    "title": "Строитель кӗрӗ",
+    "hint": "Строитель аккаунчӗсене Leadrat йӗркелет. Сирӗн ҫук пулсан, хӑвӑрӑн администратортан ыйтӑр."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Сирӗн йышӑнӑва кӗтетӗп",
+    "ACCEPTED": "Йышӑннӑ",
+    "REJECTED": "Сирленӗ"
+  },
+  "list": {
+    "title": "Рефералсем",
+    "allProjects": "Пур проект та",
+    "allStatuses": "Пур статуссем те",
+    "count_zero": "{{count}} рефералсем",
+    "count_one": "{{count}} ҫыхӑну",
+    "count_other": "{{count}} рефералсем",
+    "columns": {
+      "referral": "Реферал",
+      "customer": "Заказчик",
+      "project": "Проект",
+      "sourcePartner": "Ҫӑлкуҫ партнерӗ",
+      "status": "Статус",
+      "booking": "Бронировани",
+      "registered": "Регистрациленӗ"
+    },
+    "booked": "Ҫырӑннӑ",
+    "empty": "Хальлӗхе ҫыхӑну ҫук-ха."
+  },
+  "detail": {
+    "customer": "Заказчик",
+    "sourcePartner": "Ҫӑлкуҫ партнерӗ",
+    "attributionNote": "(атрибуци - улӑштарма май ҫук)",
+    "leadStatus": "Тӗп статус",
+    "protectedUntil": "Хӳтӗленӗ",
+    "referral": "Реферал",
+    "reason": "Сӑлтавӗ: {{reason}}",
+    "booking": "Бронировани",
+    "bookedOwner": "Бронированнӑй - эсир операци хуҫи",
+    "notBooked": "Ҫырман",
+    "sharedAfterBooking": "Бронировани хыҫҫӑн пайланӑ",
+    "accept": "Реферал йышӑнӑр",
+    "confirmBooking": "Бронирование ҫирӗплетӗр",
+    "reject": "Реферацие сирсе ямалла",
+    "rejectReasonLabel": "Сирӗнтермелли сӑлтав (партнера кӑтартнӑ) *",
+    "rejectConfirm": "Тирке",
+    "confirmBookingPrompt": "Бронирование ҫирӗплетмелле-и? Операци харпӑрлӑхӗ сирӗн ҫине куҫать, партнер вара комисси илме тивӗҫлӗ пулса тӑрать.",
+    "notice": {
+      "booked": "Бронирование ҫирӗплетнӗ.",
+      "accepted": "Направлени йышӑннӑ.",
+      "rejected": "Направлени йышӑнман."
+    },
+    "backToReferrals": "Рефералсем патне таврӑнӑр"
+  },
+  "history": {
+    "title": "Истори",
+    "actor": {
+      "system": "Система",
+      "partner": "Канал партнерӗ",
+      "admin": "Leadrat админ"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Партнер регистрацине илнӗ",
+      "DUPLICATE_CHECK_COMPLETED": "Дубликат тӗрӗслевӗ вӗҫленчӗ - активлӑ дубликат тупӑнман",
+      "REGISTRATION_ACCEPTED": "Регистраци йышӑннӑ",
+      "PROTECTION_GRANTED_zero": "{{count}} -кун хӳтлӗхӗ панӑ",
+      "PROTECTION_GRANTED_one": "{{count}} -кун хӳтлӗхӗ панӑ",
+      "PROTECTION_GRANTED_other": "{{count}} -кун хӳтлӗхӗ панӑ",
+      "STAGE_UPDATED": "Статус ҫӗнетнӗ {{stage}}",
+      "LEAD_DETAILS_UPDATED_zero": "{{count}} уйӗсене ҫӗнетнӗ",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} уйне ҫӗнетнӗ",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} уйӗсене ҫӗнетнӗ",
+      "LEAD_ASSIGNED": "{{name}} ҫине уйӑрнӑ",
+      "LEAD_UNASSIGNED": "Ҫирӗплетмен",
+      "REFERRAL_ACCEPTED": "Строитель ҫыхӑнӑва йышӑннӑ",
+      "REFERRAL_REJECTED": "Строитель ҫав ҫырӑва йышӑнман. Сӑлтавӗ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} тепӗр хут регистрацилеме хӑтланнине йышӑнман",
+      "BOOKING_COMPLETED": "Бронирование вӗҫленӗ",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Ӗҫ харпӑрлӑхӗ строитель ҫине куҫнӑ",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Партнер атрибуцийӗ сыхланса юлнӑ",
+      "COMMISSION_ELIGIBILITY_CREATED": "Комисси тивӗҫлӗхне йӗркеленӗ",
+      "HANDOVER_COMPLETED": "Ҫитерсе пӗтернӗ",
+      "ADMIN_PROTECTION_RELEASED": "Админ дубликатсене хӳтӗлеме маларах кӑларнӑ. Сӑлтавӗ: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Админ регистрацие {{from}} -ран {{to}} ҫине куҫарнӑ. Сӑлтавӗ: {{reason}}"
+    }
+  }
+}

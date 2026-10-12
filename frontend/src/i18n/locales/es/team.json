@@ -1,0 +1,83 @@
+{
+  "title": "Gestionar equipo",
+  "tabs": {
+    "members": "Miembros del equipo",
+    "roles": "Roles y permisos",
+    "profile": "Mi perfil"
+  },
+  "roles": {
+    "owner": "Dueño",
+    "member": "Miembro del equipo"
+  },
+  "profile": {
+    "updated": "Perfil actualizado.",
+    "basicInfo": "Información básica",
+    "organisationInfo": "Información de la organización",
+    "preferences": "Preferencias",
+    "companyName": "Nombre de la empresa/organización",
+    "city": "Ciudad",
+    "state": "Estado",
+    "currencyHelp": "Se utiliza para mostrar presupuestos y valores de reserva en todo su equipo.",
+    "useDeviceTimezone": "Usar la zona horaria del dispositivo ( {{timezone}} )",
+    "securityRole": "Seguridad y rol",
+    "newPassword": "Nueva contraseña (déjela en blanco para mantenerla sin cambios)",
+    "currentPassword": "Contraseña actual",
+    "memberSince": "Miembro desde",
+    "languageSaved": "Idioma guardado en su cuenta: se utilizará en todos los dispositivos en los que inicie sesión."
+  },
+  "members": {
+    "intro": "Agregue, edite, desactive o elimine personas de su equipo: comparten el acceso a los mismos clientes potenciales.",
+    "noPermission": "No tienes permiso para agregar, editar o eliminar miembros del equipo.",
+    "addNew": "+ Agregar nuevo usuario",
+    "passwordLabel": "{{label}} (mínimo 8 caracteres)",
+    "rolePermissions": "Rol y permisos",
+    "adding": "Añadiendo...",
+    "addMember": "Agregar miembro del equipo",
+    "tabAll": "Todos ( {{count}} )",
+    "tabActive": "Activo ( {{count}} )",
+    "tabInactive": "Inactivo ( {{count}} )",
+    "searchPlaceholder": "Buscar nombre o nombre de usuario...",
+    "allTimezones": "Todas las zonas horarias",
+    "perPage": "Entradas por página",
+    "contact": "Contacto",
+    "added": "Agregado",
+    "toggleActive": "Activo: haga clic para desactivar",
+    "toggleInactive": "Inactivo: haga clic para activar",
+    "empty": "Aún no hay miembros del equipo.",
+    "noMatch": "Ningún miembro del equipo coincide con estos filtros.",
+    "showing": "Mostrando {{from}} - {{to}} de {{total}} entradas",
+    "firstPage": "Primera página",
+    "previousPage": "Pagina anterior",
+    "nextPage": "Página siguiente",
+    "lastPage": "Última página"
+  },
+  "editMember": {
+    "title": "Editar usuario",
+    "noPermission": "No tienes permiso para editar miembros del equipo.",
+    "backToTeam": "Volver al equipo",
+    "cantChangeOwn": "No puedes cambiar tu propio rol o estado.",
+    "needsManageRoles": "Para cambiar el rol de un miembro se necesita el permiso Administrar roles.",
+    "addedBy": "Añadido por",
+    "addedOn": "Añadido"
+  },
+  "rolesPage": {
+    "intro": "El superadministrador, el administrador y el administrador están integrados y no se pueden cambiar; cree una función personalizada para cualquier otra cosa.",
+    "noPermission": "No tienes permiso para administrar roles.",
+    "createCustom": "+ Crear rol personalizado",
+    "roleName": "Nombre del rol",
+    "permissions": "Permisos",
+    "members": "Miembros",
+    "creating": "Creando...",
+    "createRole": "Crear rol",
+    "systemRole": "Rol del sistema",
+    "builtIn": "Incorporado",
+    "empty": "Aún no hay roles."
+  },
+  "permissions": {
+    "MANAGE_LEADS": "Gestionar clientes potenciales (crear, progresar, reservar)",
+    "MANAGE_TEAM": "Administrar equipo (agregar, editar, eliminar miembros)",
+    "MANAGE_ROLES": "Administrar roles y permisos",
+    "MANAGE_SETTINGS": "Administrar configuración (campos de formulario para clientes potenciales)",
+    "none": "Sin permisos"
+  }
+}

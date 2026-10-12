@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Muvaki Portal",
+    "referrals": "Referrals",
+    "builderLogin": "Muvaki Login",
+    "partnerLogin": "Channel Partner Login"
+  },
+  "login": {
+    "title": "Saina muvaki",
+    "hint": "Maakaundi ekuvaka anogadzirwa Leadrat . Bvunza maneja wako kana iwe usina."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Kumirira sarudzo yako",
+    "ACCEPTED": "Kugamuchirwa",
+    "REJECTED": "Rambwa"
+  },
+  "list": {
+    "title": "Referrals",
+    "allProjects": "Mapurojekiti ese",
+    "allStatuses": "All statuses",
+    "count_one": "{{count}} kutumira",
+    "count_other": "{{count}} kutumira",
+    "columns": {
+      "referral": "Referral",
+      "customer": "Mutengi",
+      "project": "Project",
+      "sourcePartner": "Source Partner",
+      "status": "Status",
+      "booking": "Booking",
+      "registered": "Registered"
+    },
+    "booked": "Booked",
+    "empty": "Hapasati pari kutumirwa."
+  },
+  "detail": {
+    "customer": "Mutengi",
+    "sourcePartner": "Source Partner",
+    "attributionNote": "(attribution - haigone kuchinjwa)",
+    "leadStatus": "Lead Status",
+    "protectedUntil": "Dziviriro Kusvikira",
+    "referral": "Referral",
+    "reason": "Chikonzero: {{reason}}",
+    "booking": "Booking",
+    "bookedOwner": "Wakabhuka - ndiwe muridzi webasa",
+    "notBooked": "Haina kubhukwa",
+    "sharedAfterBooking": "Yakagoverwa mushure mekubhukidza",
+    "accept": "Bvuma Referral",
+    "confirmBooking": "Confirm Booking",
+    "reject": "Ramba Referral",
+    "rejectReasonLabel": "Chikonzero chekuramba (chinoratidzwa kune mumwe wako) *",
+    "rejectConfirm": "Ramba",
+    "confirmBookingPrompt": "simbisa kubhuka? Uridzi hwekushanda hunoenda kwauri uye mumwe wako anova anokodzera kukomisheni.",
+    "notice": {
+      "booked": "Kubhuka kwasimbiswa.",
+      "accepted": "Referral yakagamuchirwa.",
+      "rejected": "Referral yaramba."
+    },
+    "backToReferrals": "Back to Referrals"
+  },
+  "history": {
+    "title": "Nhoroondo",
+    "actor": {
+      "system": "System",
+      "partner": "Channel shamwari",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Kunyoreswa kwevadyidzani kwakagamuchirwa",
+      "DUPLICATE_CHECK_COMPLETED": "Cheki chechipiri chapera - hapana dhidhiropi inoshanda yawanikwa",
+      "REGISTRATION_ACCEPTED": "Kunyoresa kunogamuchirwa",
+      "PROTECTION_GRANTED_one": "{{count}} -dziviriro yezuva yapihwa",
+      "PROTECTION_GRANTED_other": "{{count}} -dziviriro yezuva yapihwa",
+      "STAGE_UPDATED": "Chimiro chavandudzwa kusvika pa {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Yakagadziridzwa {{count}} ndima",
+      "LEAD_DETAILS_UPDATED_other": "Yakagadziridzwa {{count}} ndima",
+      "LEAD_ASSIGNED": "Yakapiwa {{name}}",
+      "LEAD_UNASSIGNED": "Hauna kugoverwa",
+      "REFERRAL_ACCEPTED": "Muvaki akabvuma kutumirwa",
+      "REFERRAL_REJECTED": "Muvaki akaramba kutumwa. Chikonzero: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Kuedza kunyoreswa kwakaitwa {{partner}} kwarambwa",
+      "BOOKING_COMPLETED": "Kubhuka kwapera",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Huridzi hwekushanda hwaendeswa kuBuilder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Mudiwa akachengetedzwa",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komisheni yekukodzera yakagadzirwa",
+      "HANDOVER_COMPLETED": "Handover yapera",
+      "ADMIN_PROTECTION_RELEASED": "Admin akaburitsa duplicate dziviriro kare. Chikonzero: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin akapazve kunyoresa kubva {{from}} kuenda ku {{to}} . Chikonzero: {{reason}}"
+    }
+  }
+}

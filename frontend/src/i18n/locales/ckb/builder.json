@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "پۆرتاڵی بیناکار",
+    "referrals": "ڕەوانەکردنەکان",
+    "builderLogin": "چوونەژوورەوەی بیناکار",
+    "partnerLogin": "چوونەژوورەوەی هاوبەشی کەناڵ"
+  },
+  "login": {
+    "title": "بیناکار چوونە ژوورەوە",
+    "hint": "ئەکاونتی بیناکار لەلایەن Leadrat دروست دەکرێت . لە بەڕێوەبەرەکەت بپرسە ئەگەر یەکێکت نییە."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "چاوەڕوانی بڕیارەکەت",
+    "ACCEPTED": "قبوڵ کراوە",
+    "REJECTED": "ڕەتکرایەوە"
+  },
+  "list": {
+    "title": "ڕەوانەکردنەکان",
+    "allProjects": "هەموو پڕۆژەکان",
+    "allStatuses": "هەموو ستاتۆسەکان",
+    "count_one": "{{count}} ڕەوانەکردن",
+    "count_other": "{{count}} ڕەوانەکردنەکان",
+    "columns": {
+      "referral": "ڕەوانەکردن",
+      "customer": "کڕیار",
+      "project": "پرۆژە",
+      "sourcePartner": "سەرچاوە هاوبەش",
+      "status": "دۆخ",
+      "booking": "حجزکردن",
+      "registered": "تۆمارکراوە"
+    },
+    "booked": "حجز کراوە",
+    "empty": "هێشتا هیچ ڕەوانەکردنێک نییە."
+  },
+  "detail": {
+    "customer": "کڕیار",
+    "sourcePartner": "سەرچاوە هاوبەش",
+    "attributionNote": "(ئیسبات - ناتوانرێت بگۆڕدرێت)",
+    "leadStatus": "دۆخی سرکە",
+    "protectedUntil": "پارێزراوە تا...",
+    "referral": "ڕەوانەکردن",
+    "reason": "هۆکار: {{reason}}",
+    "booking": "حجزکردن",
+    "bookedOwner": "حجز کراوە - تۆ خاوەنی ئۆپەراسیۆنەکەیت",
+    "notBooked": "حجز نەکراوە",
+    "sharedAfterBooking": "دوای حجزکردن هاوبەش دەکرێت",
+    "accept": "ڕەوانەکردن قبوڵ بکە",
+    "confirmBooking": "حجزکردن پشتڕاست بکەرەوە",
+    "reject": "ڕەتکردنەوەی ڕەوانەکردن",
+    "rejectReasonLabel": "هۆکاری ڕەتکردنەوە (پێشاندانی هاوبەشی ژیان) *",
+    "rejectConfirm": "ڕەتکردنەوە",
+    "confirmBookingPrompt": "حجزکردنەکەت پشتڕاست بکەرەوە؟ خاوەندارێتی کارکردن دەگوازرێتەوە بۆ تۆ و هاوبەشەکە شایستەی کۆمیسیۆن دەبێت.",
+    "notice": {
+      "booked": "حجزکردن پشتڕاستکرایەوە.",
+      "accepted": "ڕەوانەکردن وەرگیراوە.",
+      "rejected": "ڕەوانەکردن ڕەتکرایەوە."
+    },
+    "backToReferrals": "گەڕانەوە بۆ ڕەوانەکردنەکان"
+  },
+  "history": {
+    "title": "مێژوو",
+    "actor": {
+      "system": "سیستەم",
+      "partner": "هاوبەشی کەناڵ",
+      "admin": "ئەدمینی Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "تۆماری هاوبەش وەرگیراوە",
+      "DUPLICATE_CHECK_COMPLETED": "پشکنینی دووبارە تەواو بوو - هیچ دووبارەیەکی چالاک نەدۆزراوەتەوە",
+      "REGISTRATION_ACCEPTED": "ناو تۆمارکردن وەرگیراوە",
+      "PROTECTION_GRANTED_one": "{{count}} -پاراستنی ڕۆژ بەخشراوە",
+      "PROTECTION_GRANTED_other": "{{count}} -پاراستنی ڕۆژ بەخشراوە",
+      "STAGE_UPDATED": "دۆخەکە نوێکراوەتەوە بۆ {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "مەیدانی {{count}} نوێکراوەتەوە",
+      "LEAD_DETAILS_UPDATED_other": "مەیدانەکانی {{count}} نوێ کراوەتەوە",
+      "LEAD_ASSIGNED": "بۆ {{name}} دیاری کراوە",
+      "LEAD_UNASSIGNED": "بێ تەرخانکراو",
+      "REFERRAL_ACCEPTED": "بیناکار ڕەوانەکردنەکەی قبوڵ کرد",
+      "REFERRAL_REJECTED": "بیلدەر ڕەوانەکردنی ڕەتکردەوە. هۆکار: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "هەوڵی تۆمارکردنی دووبارە لەلایەن {{partner}} ڕەتکرایەوە",
+      "BOOKING_COMPLETED": "حجزکردن تەواو بوو",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "خاوەندارێتی کارگێڕی گواسترایەوە بۆ بیلدەر",
+      "PARTNER_ATTRIBUTION_PRESERVED": "ئیسباتکردنی هاوبەش پارێزراوە",
+      "COMMISSION_ELIGIBILITY_CREATED": "شایستەیی کۆمیسیۆن دروست بووە",
+      "HANDOVER_COMPLETED": "ڕادەستکردنەوە تەواو بوو",
+      "ADMIN_PROTECTION_RELEASED": "ئەدمین زوو پاراستنی دووبارە بڵاوکردەوە. هۆکار: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "بەڕێوەبەر تۆمارکردنی لە {{from}} بۆ {{to}} تەرخانکردەوە. هۆکار: {{reason}}"
+    }
+  }
+}

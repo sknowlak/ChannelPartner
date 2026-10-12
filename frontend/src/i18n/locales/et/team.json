@@ -1,0 +1,83 @@
+{
+  "title": "Halda meeskonda",
+  "tabs": {
+    "members": "Meeskonna liikmed",
+    "roles": "Rollid ja load",
+    "profile": "Minu profiil"
+  },
+  "roles": {
+    "owner": "Omanik",
+    "member": "Meeskonna liige"
+  },
+  "profile": {
+    "updated": "Profiili värskendati.",
+    "basicInfo": "Põhiteave",
+    "organisationInfo": "Organisatsiooni teave",
+    "preferences": "Eelistused",
+    "companyName": "Ettevõtte/organisatsiooni nimi",
+    "city": "Linn",
+    "state": "osariik",
+    "currencyHelp": "Kasutatakse teie meeskonna eelarvete ja broneerimisväärtuste kuvamiseks.",
+    "useDeviceTimezone": "Kasuta seadme ajavööndit ( {{timezone}} )",
+    "securityRole": "Turvalisus ja roll",
+    "newPassword": "Uus parool (muutmata jätmiseks jätke tühjaks)",
+    "currentPassword": "Praegune parool",
+    "memberSince": "Liige alates",
+    "languageSaved": "Teie kontole salvestatud keel – seda kasutatakse igas seadmes, kuhu sisse logite."
+  },
+  "members": {
+    "intro": "Lisage, muutke, inaktiveerige või eemaldage inimesi oma meeskonnas – neil on juurdepääs samadele müügivihjetele.",
+    "noPermission": "Teil pole luba meeskonnaliikmete lisamiseks, muutmiseks ega eemaldamiseks.",
+    "addNew": "+ Lisa uus kasutaja",
+    "passwordLabel": "{{label}} (vähemalt 8 tähemärki)",
+    "rolePermissions": "Roll ja load",
+    "adding": "Lisamine...",
+    "addMember": "Lisa meeskonnaliige",
+    "tabAll": "Kõik ( {{count}} )",
+    "tabActive": "Aktiivne ( {{count}} )",
+    "tabInactive": "Mitteaktiivne ( {{count}} )",
+    "searchPlaceholder": "Otsi nime või kasutajanime...",
+    "allTimezones": "Kõik ajavööndid",
+    "perPage": "Sissekanded lehekülje kohta",
+    "contact": "Võtke ühendust",
+    "added": "Lisatud",
+    "toggleActive": "Aktiivne – desaktiveerimiseks klõpsake",
+    "toggleInactive": "Mitteaktiivne – aktiveerimiseks klõpsake",
+    "empty": "Meeskonnaliikmeid veel pole.",
+    "noMatch": "Ükski meeskonnaliige ei vasta nendele filtritele.",
+    "showing": "Kuvatakse {{from}} - {{to}} kirjet {{total}} st",
+    "firstPage": "Esimene leht",
+    "previousPage": "Eelmine leht",
+    "nextPage": "Järgmine leht",
+    "lastPage": "Viimane leht"
+  },
+  "editMember": {
+    "title": "Redigeeri kasutajat",
+    "noPermission": "Teil pole luba meeskonnaliikmete muutmiseks.",
+    "backToTeam": "Tagasi meeskonna juurde",
+    "cantChangeOwn": "Te ei saa oma rolli ega staatust muuta.",
+    "needsManageRoles": "Liikme rolli muutmiseks on vaja rollide haldamise luba.",
+    "addedBy": "Lisas",
+    "addedOn": "Lisatud"
+  },
+  "rolesPage": {
+    "intro": "Superadministraator, administraator ja haldur on sisseehitatud ja neid ei saa muuta – looge kõige muu jaoks kohandatud roll.",
+    "noPermission": "Teil pole luba rollide haldamiseks.",
+    "createCustom": "+ Loo kohandatud roll",
+    "roleName": "Rolli nimi",
+    "permissions": "load",
+    "members": "liikmed",
+    "creating": "Loomine...",
+    "createRole": "Loo roll",
+    "systemRole": "Süsteemi roll",
+    "builtIn": "Sisseehitatud",
+    "empty": "Rolle veel pole."
+  },
+  "permissions": {
+    "MANAGE_LEADS": "Müügivihjete haldamine (loomine, edenemine, broneerimine)",
+    "MANAGE_TEAM": "Meeskonna haldamine (liikmete lisamine, muutmine, eemaldamine)",
+    "MANAGE_ROLES": "Hallake rolle ja õigusi",
+    "MANAGE_SETTINGS": "Seadete haldamine (müügivihje vormi väljad)",
+    "none": "Lubasid pole"
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "page": {
+    "title": "Cài đặt",
+    "noPermission": "Bạn không có quyền quản lý cài đặt."
+  },
+  "categories": {
+    "lead": "Chỉ huy",
+    "user": "người dùng",
+    "integrations": "Tích hợp"
+  },
+  "leadTabs": {
+    "fields": "Trường",
+    "statuses": "Trạng thái & Trạng thái phụ",
+    "notifications": "Thông báo & Lập lịch"
+  },
+  "fields": {
+    "leadIntro": "Định cấu hình biểu mẫu thu thập khách hàng tiềm năng: bật/tắt các trường, đánh dấu chúng là bắt buộc hoặc thêm các trường tùy chỉnh của riêng bạn.",
+    "userIntro": "Định cấu hình biểu mẫu Thêm/Chỉnh sửa Thành viên nhóm: bật/tắt các trường, đánh dấu chúng là bắt buộc hoặc thêm các trường tùy chỉnh của riêng bạn.",
+    "addCustomField": "+ Thêm trường tùy chỉnh",
+    "fieldLabel": "Nhãn trường",
+    "group": "Nhóm",
+    "groupPlaceholderLead": "ví dụ: Thông tin yêu cầu",
+    "groupPlaceholderUser": "ví dụ: Chi tiết bổ sung",
+    "dataType": "Kiểu dữ liệu",
+    "options": "Tùy chọn (được phân tách bằng dấu phẩy)",
+    "requiredLead": "Bắt buộc - các đối tác trong nhóm của bạn phải điền thông tin này để đăng ký khách hàng tiềm năng",
+    "requiredUser": "Bắt buộc - phải điền khi thêm thành viên nhóm",
+    "creating": "Đang tạo...",
+    "createField": "Tạo trường",
+    "columns": {
+      "field": "Cánh đồng",
+      "group": "Nhóm",
+      "type": "Kiểu",
+      "required": "Yêu cầu",
+      "enabled": "Đã bật",
+      "kind": "Loại"
+    },
+    "kind": {
+      "custom": "Phong tục",
+      "core": "Cốt lõi (đã khóa)",
+      "standard": "Tiêu chuẩn"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Chữ",
+    "TEXTAREA": "Văn bản dài",
+    "NUMBER": "Con số",
+    "CURRENCY": "Tiền tệ",
+    "DATE": "Ngày",
+    "SELECT": "Thả xuống",
+    "LIST": "Danh sách"
+  },
+  "picker": {
+    "searchPlaceholder": "Tìm kiếm các trường khách hàng tiềm năng...",
+    "summary": "{{shown}} được hiển thị · {{mandatory}} bắt buộc",
+    "mandatory": "Bắt buộc",
+    "noMatch": "Không có trường nào phù hợp."
+  },
+  "statuses": {
+    "intro": "Trạng thái khách hàng tiềm năng và trạng thái phụ của bạn - mỗi trạng thái yêu cầu (ngày và giờ, trường khách hàng tiềm năng) khi ai đó cập nhật khách hàng tiềm năng vào đó.",
+    "add": "+ Thêm trạng thái",
+    "columns": {
+      "order": "Đặt hàng",
+      "status": "Trạng thái",
+      "subStatuses": "Trạng thái phụ",
+      "asksFor": "Yêu cầu",
+      "active": "Tích cực"
+    },
+    "moveUp": "Di chuyển lên",
+    "moveDown": "Di chuyển xuống",
+    "defaultBadge": "Mặc định cho khách hàng tiềm năng mới",
+    "bookingBadge": "Tình trạng đặt chỗ",
+    "asksForLabel": "Yêu cầu {{label}}",
+    "asksForDateTime": "Hỏi ngày và giờ",
+    "none": "Không có",
+    "dateTime": "Ngày và giờ",
+    "scheduledOn": "trên {{names}}",
+    "fieldsSummary_other": "{{count}} trường ( {{mandatory}} bắt buộc)",
+    "deleteConfirm": "Xóa trạng thái \" {{name}} \"? Điều này không thể hoàn tác được.",
+    "editTitle": "Chỉnh sửa trạng thái - {{name}}",
+    "newTitle": "Trạng thái mới",
+    "name": "Tên trạng thái",
+    "colour": "Màu sắc",
+    "active": "Tích cực",
+    "isDefault": "Trạng thái mặc định cho khách hàng tiềm năng mới",
+    "isBooking": "Trạng thái đặt chỗ (được đặt bởi Đặt chỗ hoàn tất)",
+    "whenMoved": "Khi một khách hàng tiềm năng được chuyển sang trạng thái này",
+    "askSchedule": "Yêu cầu ngày và giờ (lịch trình)",
+    "scheduleLabelPlaceholder": "Nhãn, ví dụ: Truy cập tại",
+    "fieldsToShow": "Các trường khách hàng tiềm năng sẽ hiển thị trên biểu mẫu cập nhật",
+    "subStatusesTitle": "Trạng thái phụ",
+    "subStatusesHint": "Mỗi trạng thái phụ có thể yêu cầu ngày và giờ riêng và thêm các trường riêng - được hiển thị ở đầu các trường của trạng thái ở trên.",
+    "subStatusName": "Tên trạng thái phụ",
+    "subFields": "Các trường ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Nhãn ngày và giờ, ví dụ: Gọi lại lúc",
+    "addSubStatus": "+ Thêm trạng thái phụ",
+    "saveStatus": "Lưu trạng thái",
+    "createStatus": "Tạo trạng thái"
+  },
+  "notifications": {
+    "intro": "Thông báo cho đúng người khi khách hàng tiềm năng đạt đến trạng thái - ngay lập tức hoặc thời gian đã đặt trước/sau ngày và giờ được lên lịch trên đó.",
+    "add": "+ Thêm thông báo",
+    "columns": {
+      "notification": "Thông báo",
+      "whenStatusIs": "Khi trạng thái là",
+      "sends": "Gửi",
+      "to": "ĐẾN",
+      "via": "Thông qua",
+      "enabled": "Đã bật"
+    },
+    "anyStatus": "Bất kỳ trạng thái nào",
+    "anySubStatus": "Bất kỳ trạng thái phụ nào",
+    "inactiveOption": "{{name}} (không hoạt động)",
+    "emptyRules": "Chưa có thông báo nào - hãy thêm một thông báo để thông báo cho nhóm của bạn khi khách hàng tiềm năng đạt đến trạng thái.",
+    "jobs": {
+      "title": "Đã lên lịch và đã gửi",
+      "firesAt": "cháy vào lúc",
+      "notification": "Thông báo",
+      "lead": "Chỉ huy",
+      "status": "Trạng thái",
+      "details": "Chi tiết",
+      "empty": "Chưa có gì được lên lịch hoặc gửi đi.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Chưa giải quyết",
+      "PROCESSING": "Xử lý",
+      "SENT": "Đã gửi",
+      "FAILED": "Thất bại",
+      "SKIPPED": "Đã bỏ qua",
+      "CANCELLED": "Đã hủy"
+    },
+    "deliveryStatus": {
+      "SENT": "đã gửi",
+      "FAILED": "thất bại",
+      "SKIPPED": "bỏ qua"
+    },
+    "deliveryChannel": {
+      "IN_APP": "trong ứng dụng",
+      "EMAIL": "e-mail",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Người dùng được chỉ định",
+      "owner": "Người sở hữu",
+      "updatedBy": "Cập nhật bởi",
+      "role": "Vai trò: {{name}}"
+    },
+    "channels": {
+      "inApp": "Trong ứng dụng",
+      "email": "E-mail",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Xóa thông báo \" {{name}} \"? Lời nhắc đang chờ xử lý từ nó sẽ bị hủy.",
+    "testPrompt": "Gửi bản kiểm tra thông báo này cho chính bạn (trong ứng dụng) bằng ID khách hàng tiềm năng nào?",
+    "testSent": "Đã gửi tới chuông của bạn: {{title}} {{message}}",
+    "headersInvalid": "Tiêu đề Webhook phải là JSON hợp lệ, ví dụ: {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Chỉnh sửa thông báo",
+    "newTitle": "Thông báo mới",
+    "name": "Tên",
+    "namePlaceholder": "ví dụ: nhắc nhở truy cập trang web",
+    "whenStatus": "Khi trạng thái của khách hàng tiềm năng là",
+    "subStatus": "Trạng thái phụ",
+    "send": "Gửi (lịch trình)",
+    "custom": "Phong tục...",
+    "modeBefore": "trước thời gian dự kiến",
+    "modeAfter": "sau thời gian dự kiến",
+    "noScheduleWarning": "Trạng thái này không yêu cầu ngày và giờ nên thông báo \"trước/vào/sau thời gian đã lên lịch\" sẽ không bao giờ xuất hiện.",
+    "noScheduleFix": "Bật <strong>Hỏi ngày và giờ</strong> cho nó trong Trạng thái & Trạng thái phụ hoặc gửi Ngay lập tức.",
+    "sendTo": "Gửi tới (bất kỳ sự kết hợp nào)",
+    "recipientAssigned": "Người dùng được chỉ định (chủ sở hữu chính)",
+    "recipientOwner": "Chủ tài khoản/quản trị viên",
+    "recipientUpdatedBy": "Người cập nhật trạng thái",
+    "everyoneWithRole": "Mọi người đều có vai trò",
+    "specificUsers": "Người dùng cụ thể (đang hoạt động)",
+    "inactiveNever": "Người dùng không hoạt động không bao giờ nhận được thông báo, ngay cả khi được chọn.",
+    "deliverVia": "Giao hàng qua",
+    "channelInApp": "Trong ứng dụng (chuông)",
+    "channelEmail": "E-mail",
+    "channelWebhook": "Webhook (nhà cung cấp WhatsApp / SMS )",
+    "emailHint": "Email sẽ đến địa chỉ email của từng người nhận và cần thiết lập SMTP trên máy chủ (backend/.env); cho đến lúc đó email gửi được ghi lại là bị bỏ qua.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Tiêu đề ( JSON )",
+    "content": "Nội dung thông báo",
+    "title": "Tiêu đề",
+    "message": "Tin nhắn",
+    "insertIntoTitle": "Chèn vào tiêu đề",
+    "insertIntoMessage": "Chèn vào tin nhắn",
+    "anyLeadField": "Bất kỳ trường khách hàng tiềm năng nào cũng có thể sử dụng được, ví dụ: <code1>{{example1}}</code1> hoặc <code2>{{example2}}</code2> .",
+    "preview": "Xem trước (dẫn mẫu)",
+    "enabled": "Đã bật",
+    "saveRule": "Lưu thông báo",
+    "createRule": "Tạo thông báo",
+    "variables": {
+      "customerName": "Tên khách hàng tiềm năng",
+      "customerMobile": "Chì di động",
+      "customerEmail": "Email khách hàng tiềm năng",
+      "registrationId": "ID khách hàng tiềm năng",
+      "status": "Trạng thái",
+      "subStatus": "Trạng thái phụ",
+      "scheduleAt": "Ngày và giờ dự kiến",
+      "assignedTo": "Người dùng được chỉ định",
+      "updatedBy": "Cập nhật bởi",
+      "recipient": "Tên người nhận",
+      "project": "Dự án",
+      "notes": "Ghi chú mới nhất",
+      "partner": "Tên đối tác"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Ngay lập tức khi trạng thái được thiết lập",
+      "AT": "Vào thời gian dự kiến",
+      "A1D": "1 ngày sau thời gian dự kiến ​​(kiểm tra tiếp theo)"
+    },
+    "immediately": "Ngay lập tức",
+    "atScheduled": "Vào thời gian dự kiến",
+    "before": {
+      "MINUTES_other": "{{count}} phút trước thời gian đã lên lịch",
+      "HOURS_other": "{{count}} giờ trước thời gian dự kiến",
+      "DAYS_other": "{{count}} ngày trước thời gian dự kiến",
+      "WEEKS_other": "{{count}} tuần trước thời gian dự kiến",
+      "MONTHS_other": "{{count}} tháng trước thời gian dự kiến",
+      "YEARS_other": "{{count}} năm trước thời gian dự kiến"
+    },
+    "after": {
+      "MINUTES_other": "{{count}} phút sau thời gian đã lên lịch",
+      "HOURS_other": "{{count}} giờ sau thời gian đã lên lịch",
+      "DAYS_other": "{{count}} ngày sau thời gian đã lên lịch",
+      "WEEKS_other": "{{count}} tuần sau thời gian đã lên lịch",
+      "MONTHS_other": "{{count}} tháng sau thời gian đã lên lịch",
+      "YEARS_other": "{{count}} năm sau thời gian đã lên lịch"
+    },
+    "units": {
+      "MINUTES_other": "phút",
+      "HOURS_other": "giờ",
+      "DAYS_other": "ngày",
+      "WEEKS_other": "tuần",
+      "MONTHS_other": "tháng",
+      "YEARS_other": "năm"
+    }
+  }
+}

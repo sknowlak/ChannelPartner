@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Իմ առաջատարները",
+    "signedInAs": "Մուտք եք գործել որպես {{name}} ( {{partnerId}} ) · ժամանակները ցուցադրված են {{timezone}} ում",
+    "addLead": "+ Ավելացնել կապար",
+    "tabs": {
+      "all": "Բոլորը ( {{count}} )",
+      "pending": "Սպասվում է ( {{count}} )",
+      "booked": "Ամրագրված է ( {{count}} )"
+    },
+    "searchPlaceholder": "Որոնել անունով, բջջային հեռախոսով կամ գրանցման ID ...",
+    "manageColumns": "Կառավարեք սյունակները",
+    "rowsPerPage": "Տողեր մեկ էջի համար",
+    "registrationId": "Գրանցման ID",
+    "emptyState": "Առայժմ առաջատարներ չկան. գրանցեք ձեր առաջինը:",
+    "noMatch": "Այս ֆիլտրերին ոչ մի կապուղի չի համապատասխանում:",
+    "showing": "Ցուցադրվում է {{from}} - {{to}} ը {{total}} -ից",
+    "actions": {
+      "preview": "Նախադիտում և արագ թարմացում",
+      "history": "Պատմություն",
+      "email": "Էլ",
+      "whatsapp": "WhatsApp",
+      "call": "Զանգահարեք"
+    },
+    "pagination": {
+      "first": "Առաջին էջ",
+      "previous": "Նախորդ էջ",
+      "next": "Հաջորդ էջը",
+      "last": "Վերջին էջ"
+    }
+  },
+  "columns": {
+    "status": "Կարգավիճակ",
+    "assignTo": "Հանձնարարել",
+    "booked": "Ամրագրված",
+    "protectionUntil": "Պաշտպանություն Մինչև"
+  },
+  "booking": {
+    "booked": "Ամրագրված",
+    "pending": "Սպասվում է"
+  },
+  "assign": {
+    "unassigned": "Չնշանակված",
+    "owner": "{{name}} (սեփականատեր)",
+    "inactive": "{{name}} (ոչ ակտիվ)",
+    "unknownUser": "Անհայտ օգտվող",
+    "assignedTo": "Հանձնարարվել է {{name}}"
+  },
+  "form": {
+    "addTitle": "Ավելացնել կապար",
+    "editTitle": "Խմբագրել առաջատարը",
+    "noPermissionAdd": "Դուք չունեք հաղորդագրություններ գրանցելու թույլտվություն:",
+    "noPermissionEdit": "Դուք չունեք հաղորդագրություններ խմբագրելու թույլտվություն:",
+    "selectPlaceholder": "Ընտրել...",
+    "commaSeparated": "Ստորակետով բաժանված",
+    "phonePlaceholder": "Հեռախոսահամար",
+    "countryCode": "Երկրի կոդը"
+  },
+  "project": {
+    "none": "Դեռևս չկա նախագիծ (նշված չէ)",
+    "notInList": "{{project}} (նախագծերի ցանկում չկա)"
+  },
+  "journey": {
+    "customer": "Հաճախորդ",
+    "currentOwner": "Ներկայիս սեփականատեր",
+    "protectionExpiry": "Պաշտպանության ժամկետը",
+    "leadStatus": "Առաջատարի կարգավիճակը",
+    "scheduled": "Պլանավորված",
+    "assignedTo": "Հանձնարարվել է",
+    "referral": "Ուղղորդում",
+    "builderReason": "Շինարարի պատճառը՝ {{reason}}",
+    "bookedHint": "Ամրագրված է շինարարի կողմից - գործառնական սեփականությունը տեղափոխվել է շինարարին. ձեր վերագրումը և միջնորդավճարը պահպանվում են:",
+    "notBookedHint": "Ամրագրումները հաստատվում են շինարարի կողմից, երբ նրանք ընդունում են ուղեգիրը:",
+    "quickUpdate": "Արագ թարմացում",
+    "leadDetails": "Կապարի մանրամասները",
+    "progressHistory": "Առաջընթացի պատմություն",
+    "timesIn": "(անգամ {{timezone}} )",
+    "backToMyLeads": "Վերադարձ դեպի Իմ առաջատարները",
+    "editLead": "Խմբագրել առաջատարը"
+  },
+  "referral": {
+    "NOT_REFERRED": "Նշված չէ (ոչ մի նախագիծ)",
+    "PENDING_BUILDER": "Սպասում է շինարարին",
+    "ACCEPTED": "Ընդունված է շինարարի կողմից",
+    "REJECTED": "Մերժվել է շինարարի կողմից"
+  },
+  "preview": {
+    "ariaLabel": "Առաջատարի նախադիտում",
+    "title": "Առաջատար նախադիտում",
+    "source": "Աղբյուր",
+    "location": "Գտնվելու վայրը",
+    "scheduled": "Պլանավորված",
+    "registered": "Գրանցված է",
+    "latestNote": "Վերջին նշում",
+    "quickUpdate": "Արագ թարմացում",
+    "fullDetails": "Ամբողջական Մանրամասներ",
+    "editLead": "Խմբագրել առաջատարը",
+    "history": "Պատմություն"
+  },
+  "quick": {
+    "assignedTo": "Հանձնարարվել է",
+    "status": "Կարգավիճակ",
+    "subStatus": "Ենթակարգավիճակ",
+    "selectSubStatus": "Ընտրել ենթակարգավիճակը...",
+    "none": "Ոչ մեկը",
+    "scheduledAt": "Պլանավորված է ժամը",
+    "localTime": "տեղական ժամանակով",
+    "note": "Նշում",
+    "notePlaceholder": "Ի՞նչ է տեղի ունեցել այս զանգի / այցելության ժամանակ: (ըստ ցանկության)",
+    "updateStatus": "Թարմացնել կարգավիճակը",
+    "statusUpdated": "Կարգավիճակը թարմացվել է",
+    "bookedLocked": "Այս առաջատարը ամրագրված է. նրա կարգավիճակն այլևս հնարավոր չէ փոխել:",
+    "viewOnly": "Դուք կարող եք դիտել այս առաջատարը, բայց ձեր դերը չի կարող թարմացնել այն:"
+  },
+  "history": {
+    "title": "Պատմություն - {{registrationId}}",
+    "tabs": {
+      "all": "Բոլորը",
+      "status": "Կարգավիճակ",
+      "assignment": "Հանձնարարություն",
+      "notes": "Նշումներ"
+    },
+    "doneBy": "Կատարել է {{actor}}",
+    "system": "Համակարգ",
+    "platforms": {
+      "System": "Համակարգ",
+      "External": "Արտաքին",
+      "Web": "Վեբ",
+      "Mobile": "Բջջային"
+    },
+    "added": "ավելացրել է",
+    "updated": "թարմացվել է",
+    "empty": "(դատարկ)",
+    "noHistory": "Այս կատեգորիայի պատմությունը դեռևս չկա:",
+    "fieldLabels": {
+      "stage": "Կարգավիճակ",
+      "subStatus": "Ենթակարգավիճակ",
+      "scheduledAt": "Ժամանակացույց",
+      "notes": "Նշումներ",
+      "assignedTo": "Հանձնարարվել է"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Ստացել է գործընկերոջ գրանցումը",
+      "DUPLICATE_CHECK_COMPLETED": "Կրկնակի ստուգումն ավարտված է. ակտիվ կրկնօրինակ չի գտնվել",
+      "REGISTRATION_ACCEPTED": "Գրանցումն ընդունված է",
+      "PROTECTION_GRANTED_one": "{{count}} -օրվա պաշտպանությունը տրամադրված է",
+      "PROTECTION_GRANTED_other": "{{count}} -օրվա պաշտպանությունը տրամադրված է",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partnerId}} ի կողմից գրանցման կրկնակի փորձը մերժվել է",
+      "LEAD_DETAILS_UPDATED_one": "Թարմացվել է {{count}} դաշտը",
+      "LEAD_DETAILS_UPDATED_other": "Թարմացվել է {{count}} դաշտ",
+      "STAGE_UPDATED": "Կարգավիճակը թարմացվել է {{status}}",
+      "LEAD_ASSIGNED": "Հանձնարարվել է {{name}}",
+      "LEAD_UNASSIGNED": "Չնշանակված",
+      "BOOKING_COMPLETED": "Ամրագրումն ավարտված է",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Գործառնական սեփականությունը փոխանցվել է Շինարարին",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Գործընկերոջ վերագրումը պահպանվել է",
+      "COMMISSION_ELIGIBILITY_CREATED": "Ստեղծվել է հանձնաժողովի իրավասությունը",
+      "HANDOVER_COMPLETED": "Հանձնումն ավարտված է",
+      "REFERRAL_ACCEPTED": "Շինարարն ընդունել է ուղեգիրը",
+      "REFERRAL_REJECTED": "Շինարարը մերժել է ուղեգիրը. Պատճառը՝ {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Ադմինիստրատորը վաղաժամ թողարկեց կրկնօրինակ պաշտպանությունը: Պատճառը՝ {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Ադմինիստրատորը վերահանձնարարել է գրանցումը {{from}} -ից {{to}} ին: Պատճառը՝ {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Կառավարեք սյունակները",
+    "hint": "Քաշեք՝ վերադասավորելու համար · ստուգեք՝ ցուցադրելու համար",
+    "showAll": "Ցույց տալ բոլորը",
+    "resetDefault": "Վերականգնել լռելյայն"
+  },
+  "filters": {
+    "title": "Զտիչներ",
+    "allProjects": "Բոլոր նախագծերը",
+    "any": "Ցանկացած",
+    "noFields": "Զտվող այլ դաշտեր դեռ միացված չեն (Կարգավորումներ > Առաջատար):",
+    "clearAll": "Մաքրել բոլորը"
+  },
+  "phone": {
+    "MISSING": "Հեռախոսահամարը պարտադիր է։",
+    "INVALID": "Խնդրում ենք մուտքագրել վավեր հեռախոսահամար:",
+    "TOO_SHORT": "Հեռախոսահամարը չափազանց կարճ է:",
+    "TOO_LONG": "Հեռախոսահամարը չափազանց երկար է:",
+    "INVALID_FOR_COUNTRY": "Այս հեռախոսահամարը վավեր չէ {{country}} ի համար:",
+    "COUNTRY_MISMATCH": "Խնդրում ենք ընտրել երկրի ճիշտ կոդը:",
+    "NOT_MOBILE": "Խնդրում ենք մուտքագրել բջջային համարը, ոչ թե ֆիքսված:"
+  }
+}

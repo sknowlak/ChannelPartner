@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Amasethingi",
+    "noPermission": "Awunalo imvumo yokuphatha amasethingi."
+  },
+  "categories": {
+    "lead": "Dosa",
+    "user": "Umsebenzisi",
+    "integrations": "Ukuhlanganiswa"
+  },
+  "leadTabs": {
+    "fields": "Amasimu",
+    "statuses": "Amazinga nama-Sub-Status",
+    "notifications": "Izaziso nabahleli"
+  },
+  "fields": {
+    "leadIntro": "Hlela iforomo lokubamba umdosiphambili: vumela/ukhubaze amasimu, uwatshwaye atlhogekako, nofana ufake amasimu wakho.",
+    "userIntro": "Hlela iforomu ye-Engeza/Hlela iLunga leThimba: vumela/ukhubaze amasimu, uwatshwaye atlhogekako, nofana ufake amasimu wakho.",
+    "addCustomField": "+ Faka iNsimu yangokwezifiso",
+    "fieldLabel": "Ilebula yeNsimu",
+    "group": "Isiqhema",
+    "groupPlaceholderLead": "isib. Ilwazi lokubuza",
+    "groupPlaceholderUser": "isib. Imininingwana eyengeziweko",
+    "dataType": "Umhlobo wedatha",
+    "options": "Iinkhetho (zihlukaniswe ngekhoma)",
+    "requiredLead": "Kuyatlhogeka - abalingani besiqhema sakho kufuze bazalise lokhu ukutlolisa umdosiphambili",
+    "requiredUser": "Kuyatlhogeka - kufanele kuzaliswe lokha nakufakwa ilunga lesiqhema",
+    "creating": "Ukudala...",
+    "createField": "Yenza iNsimu",
+    "columns": {
+      "field": "Umkhakha",
+      "group": "Isiqhema",
+      "type": "Umhlobo",
+      "required": "Okufunekako",
+      "enabled": "Inikwe amandla",
+      "kind": "Umusa"
+    },
+    "kind": {
+      "custom": "Umkhuba",
+      "core": "Umgogodla (ukhiyiwe)",
+      "standard": "Ibanga"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Itheksti",
+    "TEXTAREA": "Umtlolo omude",
+    "NUMBER": "Inomboro",
+    "CURRENCY": "Ikharensi",
+    "DATE": "Ilanga",
+    "SELECT": "Ukwehla phasi",
+    "LIST": "Irhelo"
+  },
+  "picker": {
+    "searchPlaceholder": "Sesha amasimu adosa phambili...",
+    "summary": "{{shown}} kutjengiswe · {{mandatory}} kuphoqelekile",
+    "mandatory": "Kukatelelekile",
+    "noMatch": "Akunamasimu afanako."
+  },
+  "statuses": {
+    "intro": "Ubujamo bakho bomrholi kanye nama-substatus - lokho omunye nomunye akubuzako (ilanga nesikhathi, amasimu womrholi) lokha umuntu nakabuyekeza umrholi kiwo.",
+    "add": "+ Faka ubujamo",
+    "columns": {
+      "order": "Ihlelo",
+      "status": "Ubujamo",
+      "subStatuses": "Ama-Sub-Status",
+      "asksFor": "Ibawa",
+      "active": "Majadu"
+    },
+    "moveUp": "Khuphukela phezulu",
+    "moveDown": "Yehla",
+    "defaultBadge": "Okuzenzakalelayo kwama-leads amatjha",
+    "bookingBadge": "Isimo sokubhukha",
+    "asksForLabel": "Ibawa {{label}}",
+    "asksForDateTime": "Ubuza ilanga nesikhathi",
+    "none": "Akukho",
+    "dateTime": "Ilanga nesikhathi",
+    "scheduledOn": "ku {{names}}",
+    "fieldsSummary_one": "{{count}} insimu ( {{mandatory}} okuphoqelekileko)",
+    "fieldsSummary_other": "{{count}} amasimu ( {{mandatory}} okuphoqelekileko)",
+    "deleteConfirm": "Susa ubujamo \" {{name}} \"? Lokhu angeze kwabuyiselwa emuva.",
+    "editTitle": "Hlela ubujamo - {{name}}",
+    "newTitle": "Isimo esitjha",
+    "name": "Ibizo lesimo",
+    "colour": "Umbala",
+    "active": "Majadu",
+    "isDefault": "Ubujamo obujayelekileko bama-leads amatjha",
+    "isBooking": "Isimo sokubhukha (esibekwe ngokubhukha okupheleleko)",
+    "whenMoved": "Lokha i-lead nayithuthelwa esimeni lesi",
+    "askSchedule": "Buza ilanga nesikhathi (umhleli)",
+    "scheduleLabelPlaceholder": "Ilebula, isib. Vakatjhela ku",
+    "fieldsToShow": "Amasimu adosa phambili azokutjengiswa efomini lokubuyekeza",
+    "subStatusesTitle": "Ama-Sub-Status",
+    "subStatusesHint": "Isimo ngasinye singabuza ilanga nesikhathi saso bese singezelela amasimu waso - atjengiswa ngaphezulu kwamasimu wesimo ngehla.",
+    "subStatusName": "Ibizo lesimo esingezansi",
+    "subFields": "Amasimu ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Ilebula yelanga nesikhathi, isib. Biza emuva ku-",
+    "addSubStatus": "+ Faka i-Sub-Status",
+    "saveStatus": "Gcina ubujamo",
+    "createStatus": "Yenza ubujamo"
+  },
+  "notifications": {
+    "intro": "Yazisa abantu abafaneleko lokha umdosiphambili nakafikelela esigabeni - khonokho, nofana isikhathi esibekiweko ngaphambi/ngemva kwelanga nesikhathi esihleliweko.",
+    "add": "+ Faka isaziso",
+    "columns": {
+      "notification": "Isaziso",
+      "whenStatusIs": "Lokha ubujamo",
+      "sends": "Ithumela",
+      "to": "Ku",
+      "via": "Ukuya",
+      "enabled": "Inikwe amandla"
+    },
+    "anyStatus": "Nanyana ngisiphi isimo",
+    "anySubStatus": "Nanyana ngisiphi isimo esingaphasi",
+    "inactiveOption": "{{name}} (alisebenzi)",
+    "emptyRules": "Akukabi nezaziso okwanje - engeza eyodwa ukuyelelisa isiqhema sakho lokha umrholi nakafikelela esigabeni.",
+    "jobs": {
+      "title": "Ihlelwe begodu ithunyelwe",
+      "firesAt": "Imililo",
+      "notification": "Isaziso",
+      "lead": "Dosa",
+      "status": "Ubujamo",
+      "details": "Imininingwana",
+      "empty": "Akukho okuhleliweko nofana okuthunyelwe okwanje.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Kulawulwe",
+      "PROCESSING": "Ukucubungula",
+      "SENT": "Thumele",
+      "FAILED": "Bhalelwe",
+      "SKIPPED": "Kweqiwe",
+      "CANCELLED": "Ikhanseliwe"
+    },
+    "deliveryStatus": {
+      "SENT": "thumele",
+      "FAILED": "bhalelwe",
+      "SKIPPED": "kweqiwe"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ngaphakathi kohlelo lokusebenza",
+      "EMAIL": "i-imeyili",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Umsebenzisi owabelwe",
+      "owner": "Umnikazi",
+      "updatedBy": "Ibuyekezwe ngu",
+      "role": "Indima: {{name}}"
+    },
+    "channels": {
+      "inApp": "Ngaphakathi kohlelo lokusebenza",
+      "email": "I-imeyili",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Susa isaziso \" {{name}} \"? Iinkhumbuzo ezilindelweko ezivela kiyo ziyakhanselwa.",
+    "testPrompt": "Thumela isivivinyo sesaziso kuwe (ngaphakathi kohlelo lokusebenza) usebenzisa ngiyiphi ID yomholi?",
+    "testSent": "Ithunyelwe ensimbini yakho: {{title}} {{message}}",
+    "headersInvalid": "Iinhloko ze Webhook kufanele zibe JSON esebenzako, isib. {\"Ukugunyazwa\": \"Umthwali xyz\"}",
+    "editTitle": "Hlela Isaziso",
+    "newTitle": "Isaziso esitjha",
+    "name": "Ibizo",
+    "namePlaceholder": "isib. Isikhumbuzo sokuvakatjhela isayithi",
+    "whenStatus": "Lokha ubujamo bomdosiphambili bu",
+    "subStatus": "Isimo esingezansi",
+    "send": "Thumela (umhleli)",
+    "custom": "Umkhuba...",
+    "modeBefore": "ngaphambi kwesikhathi esihleliweko",
+    "modeAfter": "ngemva kwesikhathi esihleliweko",
+    "noScheduleWarning": "Isimo lesi asibuzi ilanga nesikhathi, njeke isaziso esithi \"ngaphambi/ngesikhathi/emva kwesikhathi esihleliweko\" angeze savutha.",
+    "noScheduleFix": "Vulela <strong>Buza ilanga nesikhathi</strong> sayo ngaphasi kwama-Status & Sub-Status, nofana uthumele khonokho.",
+    "sendTo": "Thumela ku (nanyana ngiyiphi inhlanganisela)",
+    "recipientAssigned": "Umsebenzisi owabelweko (umnikazi odosa phambili)",
+    "recipientOwner": "Umnikazi we-akhawunti / umlawuli",
+    "recipientUpdatedBy": "Umuntu obuyekeze ubujamo",
+    "everyoneWithRole": "Woke umuntu onendima",
+    "specificUsers": "Abasebenzisi abathileko (abasebenzako)",
+    "inactiveNever": "Abasebenzisi abangasebenziko abakaze bathole izaziso, ngitjho nanyana bakhethiwe.",
+    "deliverVia": "Hambisa ngokusebenzisa",
+    "channelInApp": "Ngaphakathi kohlelo lokusebenza (insimbi)",
+    "channelEmail": "I-imeyili",
+    "channelWebhook": "Webhook ( umhlinzeki WhatsApp / SMS )",
+    "emailHint": "I-imeyili iya ekhelini le-imeyili lomuntu ngamunye begodu idinga i-SMTP ebekwe kuseva (i-backend/.env); bekube lapho ukuthunyelwa kwe-imeyili kubhalwa njengokweqiwe.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Iinhloko ( JSON )",
+    "content": "Okuqukethwe kwesaziso",
+    "title": "Ithayitlela",
+    "message": "Umlayezo",
+    "insertIntoTitle": "Faka esihlokweni",
+    "insertIntoMessage": "Faka emlayezweni",
+    "anyLeadField": "Nanyana ngiyiphi indawo yokudosa phambili iyasebenza, isib. <code1>{{example1}}</code1> nofana <code2>{{example2}}</code2> .",
+    "preview": "Ukubuka ngaphambilini (isampula yomrholi)",
+    "enabled": "Inikwe amandla",
+    "saveRule": "Gcina isaziso",
+    "createRule": "Yenza isaziso",
+    "variables": {
+      "customerName": "Ibizo elidosa phambili",
+      "customerMobile": "Umkhokheli weselula",
+      "customerEmail": "I-imeyili ekhokelako",
+      "registrationId": "ID yomdosiphambili",
+      "status": "Ubujamo",
+      "subStatus": "Isimo esingezansi",
+      "scheduleAt": "Ilanga nesikhathi esihleliweko",
+      "assignedTo": "Umsebenzisi owabelwe",
+      "updatedBy": "Ibuyekezwe ngu",
+      "recipient": "Ibizo lomamukeli",
+      "project": "Iphrojekthi",
+      "notes": "Inothi yakamuva",
+      "partner": "Ibizo lomlingani"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Khonokho lokha ubujamo nabubekiweko",
+      "AT": "Ngesikhathi esihleliweko",
+      "A1D": "1 ilanga ngemva kwesikhathi esihleliweko (ukuhlolwa kokulandela)"
+    },
+    "immediately": "Njenganje",
+    "atScheduled": "Ngesikhathi esibekiweko",
+    "before": {
+      "MINUTES_one": "{{count}} umzuzu ngaphambi kwesikhathi esihleliweko",
+      "MINUTES_other": "{{count}} imizuzu ngaphambi kwesikhathi esihleliweko",
+      "HOURS_one": "{{count}} i-awa ngaphambi kwesikhathi esihleliweko",
+      "HOURS_other": "{{count}} ama-awa ngaphambi kwesikhathi esihleliweko",
+      "DAYS_one": "{{count}} ilanga ngaphambi kwesikhathi esihleliweko",
+      "DAYS_other": "{{count}} amalanga ngaphambi kwesikhathi esihleliweko",
+      "WEEKS_one": "{{count}} iveke ngaphambi kwesikhathi esihleliweko",
+      "WEEKS_other": "{{count}} amaviki ngaphambi kwesikhathi esihleliweko",
+      "MONTHS_one": "{{count}} inyanga ngaphambi kwesikhathi esihleliweko",
+      "MONTHS_other": "{{count}} iinyanga ngaphambi kwesikhathi esihleliweko",
+      "YEARS_one": "{{count}} umnyaka ngaphambi kwesikhathi esihleliweko",
+      "YEARS_other": "{{count}} iminyaka ngaphambi kwesikhathi esihleliweko"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} umzuzu ngemva kwesikhathi esihleliweko",
+      "MINUTES_other": "{{count}} imizuzu ngemva kwesikhathi esihleliweko",
+      "HOURS_one": "{{count}} i-awa ngemva kwesikhathi esihleliweko",
+      "HOURS_other": "{{count}} ama-awa ngemva kwesikhathi esihleliweko",
+      "DAYS_one": "{{count}} ilanga ngemva kwesikhathi esihleliweko",
+      "DAYS_other": "{{count}} amalanga ngemva kwesikhathi esihleliweko",
+      "WEEKS_one": "{{count}} iveke ngemva kwesikhathi esihleliweko",
+      "WEEKS_other": "{{count}} amaviki ngemva kwesikhathi esihleliweko",
+      "MONTHS_one": "{{count}} inyanga ngemva kwesikhathi esihleliweko",
+      "MONTHS_other": "{{count}} iinyanga ngemva kwesikhathi esihleliweko",
+      "YEARS_one": "{{count}} umnyaka ngemva kwesikhathi esihleliweko",
+      "YEARS_other": "{{count}} iminyaka ngemva kwesikhathi esihleliweko"
+    },
+    "units": {
+      "MINUTES_one": "umzuzu",
+      "MINUTES_other": "imizuzu",
+      "HOURS_one": "i-iri",
+      "HOURS_other": "ama-iri",
+      "DAYS_one": "ilanga",
+      "DAYS_other": "amalanga",
+      "WEEKS_one": "iveke",
+      "WEEKS_other": "amaviki",
+      "MONTHS_one": "inyanga",
+      "MONTHS_other": "iinyanga",
+      "YEARS_one": "umnyaka",
+      "YEARS_other": "iminyaka"
+    }
+  }
+}

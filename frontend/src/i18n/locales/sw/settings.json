@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Mipangilio",
+    "noPermission": "Huna ruhusa ya kudhibiti mipangilio."
+  },
+  "categories": {
+    "lead": "Kuongoza",
+    "user": "Mtumiaji",
+    "integrations": "Ushirikiano"
+  },
+  "leadTabs": {
+    "fields": "Viwanja",
+    "statuses": "Hadhi na Hali Ndogo",
+    "notifications": "Arifa na Viratibu"
+  },
+  "fields": {
+    "leadIntro": "Sanidi fomu ya kunasa risasi: wezesha/zima sehemu, ziweke alama zinahitajika, au ongeza sehemu zako maalum.",
+    "userIntro": "Sanidi Ongeza/Hariri fomu ya Mwanachama wa Timu: wezesha/zima sehemu, ziweke alama zinahitajika, au ongeza sehemu zako maalum.",
+    "addCustomField": "+ Ongeza Sehemu Maalum",
+    "fieldLabel": "Lebo ya shamba",
+    "group": "Kikundi",
+    "groupPlaceholderLead": "kwa mfano Maelezo ya Uchunguzi",
+    "groupPlaceholderUser": "kwa mfano Maelezo ya Ziada",
+    "dataType": "Aina ya Data",
+    "options": "Chaguo (kutenganishwa kwa koma)",
+    "requiredLead": "Inahitajika - washirika kwenye timu yako lazima wajaze hili ili kusajili kiongozi",
+    "requiredUser": "Inahitajika - lazima ijazwe wakati wa kuongeza mshiriki wa timu",
+    "creating": "Inaunda...",
+    "createField": "Unda Uga",
+    "columns": {
+      "field": "Shamba",
+      "group": "Kikundi",
+      "type": "Aina",
+      "required": "Inahitajika",
+      "enabled": "Imewashwa",
+      "kind": "Aina"
+    },
+    "kind": {
+      "custom": "Desturi",
+      "core": "Msingi (imefungwa)",
+      "standard": "Kawaida"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Maandishi",
+    "TEXTAREA": "Maandishi marefu",
+    "NUMBER": "Nambari",
+    "CURRENCY": "Sarafu",
+    "DATE": "Tarehe",
+    "SELECT": "Kunjuzi",
+    "LIST": "Orodha"
+  },
+  "picker": {
+    "searchPlaceholder": "Tafuta sehemu zinazoongoza...",
+    "summary": "{{shown}} imeonyeshwa · {{mandatory}} lazima",
+    "mandatory": "Lazima",
+    "noMatch": "Hakuna sehemu zinazolingana."
+  },
+  "statuses": {
+    "intro": "Hali zako za kuongoza na hali ndogo - kile ambacho kila mmoja anaomba (tarehe na saa, sehemu za kuongoza) mtu anaposasisha mwongozo kwake.",
+    "add": "+ Ongeza Hali",
+    "columns": {
+      "order": "Agizo",
+      "status": "Hali",
+      "subStatuses": "Sub-Hadhi",
+      "asksFor": "Anauliza Kwa",
+      "active": "Inayotumika"
+    },
+    "moveUp": "Sogeza juu",
+    "moveDown": "Sogeza chini",
+    "defaultBadge": "Chaguomsingi kwa viongozi wapya",
+    "bookingBadge": "Hali ya kuhifadhi",
+    "asksForLabel": "Inauliza {{label}}",
+    "asksForDateTime": "Inauliza tarehe na wakati",
+    "none": "Hakuna",
+    "dateTime": "Tarehe na wakati",
+    "scheduledOn": "kwenye {{names}}",
+    "fieldsSummary_one": "Sehemu ya {{count}} ( {{mandatory}} lazima)",
+    "fieldsSummary_other": "Sehemu {{count}} ( {{mandatory}} lazima)",
+    "deleteConfirm": "Je, ungependa kufuta hali \" {{name}} \"? Hili haliwezi kutenduliwa.",
+    "editTitle": "Badilisha Hali - {{name}}",
+    "newTitle": "Hali Mpya",
+    "name": "Jina la Hali",
+    "colour": "Rangi",
+    "active": "Inayotumika",
+    "isDefault": "Hali chaguomsingi ya viongozi wapya",
+    "isBooking": "Hali ya kuhifadhi (imewekwa na Uhifadhi Kamili)",
+    "whenMoved": "Wakati uongozi unahamishwa hadi kwenye hali hii",
+    "askSchedule": "Uliza tarehe na wakati (mratibu)",
+    "scheduleLabelPlaceholder": "Weka lebo, kwa mfano Tembelea kwa",
+    "fieldsToShow": "Onyesha sehemu za kuonyesha kwenye fomu ya kusasisha",
+    "subStatusesTitle": "Sub-Hadhi",
+    "subStatusesHint": "Kila hali ndogo inaweza kuuliza tarehe na saa yake na kuongeza sehemu zake - iliyoonyeshwa juu ya sehemu za hali hapo juu.",
+    "subStatusName": "Jina la hali ndogo",
+    "subFields": "Viwanja ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Tarehe na saa lebo, kwa mfano, piga tena saa",
+    "addSubStatus": "+ Ongeza Hali Ndogo",
+    "saveStatus": "Hifadhi Hali",
+    "createStatus": "Unda Hali"
+  },
+  "notifications": {
+    "intro": "Waarifu watu wanaofaa uongozi unapofikia hadhi - mara moja, au muda uliowekwa kabla/baada ya tarehe na saa iliyoratibiwa.",
+    "add": "+ Ongeza Arifa",
+    "columns": {
+      "notification": "Arifa",
+      "whenStatusIs": "Wakati Hali iko",
+      "sends": "Inatuma",
+      "to": "Kwa",
+      "via": "Kupitia",
+      "enabled": "Imewashwa"
+    },
+    "anyStatus": "Hali yoyote",
+    "anySubStatus": "Hali yoyote ndogo",
+    "inactiveOption": "{{name}} (haitumiki)",
+    "emptyRules": "Bado hakuna arifa - ongeza moja ili kuarifu timu yako wakati uongozi unafikia hadhi.",
+    "jobs": {
+      "title": "Imeratibiwa & Imetumwa",
+      "firesAt": "Moto Katika",
+      "notification": "Arifa",
+      "lead": "Kuongoza",
+      "status": "Hali",
+      "details": "Maelezo",
+      "empty": "Bado hakuna kilichoratibiwa au kutumwa.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Inasubiri",
+      "PROCESSING": "Inachakata",
+      "SENT": "Imetumwa",
+      "FAILED": "Imeshindwa",
+      "SKIPPED": "Imerukwa",
+      "CANCELLED": "Imeghairiwa"
+    },
+    "deliveryStatus": {
+      "SENT": "imetumwa",
+      "FAILED": "imeshindwa",
+      "SKIPPED": "ruka"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ndani ya programu",
+      "EMAIL": "barua pepe",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Mtumiaji aliyekabidhiwa",
+      "owner": "Mmiliki",
+      "updatedBy": "Imesasishwa na",
+      "role": "Jukumu: {{name}}"
+    },
+    "channels": {
+      "inApp": "Ndani ya programu",
+      "email": "Barua pepe",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Je, ungependa kufuta arifa \" {{name}} \"? Vikumbusho vinavyosubiri kutoka kwayo vimeghairiwa.",
+    "testPrompt": "Jitumie jaribio la arifa hii (ndani ya programu) ukitumia ID gani cha kwanza ?",
+    "testSent": "Imetumwa kwa kengele yako: {{title}} {{message}}",
+    "headersInvalid": "Vichwa vya Webhook lazima viwe halali JSON , kwa mfano {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Hariri Arifa",
+    "newTitle": "Arifa Mpya",
+    "name": "Jina",
+    "namePlaceholder": "kwa mfano kikumbusho cha kutembelea tovuti",
+    "whenStatus": "Wakati hali ya kiongozi ni",
+    "subStatus": "Hali ndogo",
+    "send": "Tuma (mratibu)",
+    "custom": "Maalum...",
+    "modeBefore": "kabla ya muda uliopangwa",
+    "modeAfter": "baada ya muda uliopangwa",
+    "noScheduleWarning": "Hali hii haiulizi tarehe na saa, kwa hivyo arifa ya \"kabla/saa/baada ya wakati ulioratibiwa\" haitawaka kamwe.",
+    "noScheduleFix": "Washa <strong>Uliza tarehe na saa</strong> yake chini ya Hali na Hali Ndogo, au tuma Mara Moja.",
+    "sendTo": "Tuma kwa (mchanganyiko wowote)",
+    "recipientAssigned": "Mtumiaji aliyekabidhiwa (mmiliki kiongozi)",
+    "recipientOwner": "Mmiliki wa akaunti / msimamizi",
+    "recipientUpdatedBy": "Mtu aliyesasisha hali",
+    "everyoneWithRole": "Kila mtu na jukumu",
+    "specificUsers": "Watumiaji mahususi (wanaofanya kazi)",
+    "inactiveNever": "Watumiaji ambao hawatumii kamwe hawapokei arifa, hata wakichaguliwa.",
+    "deliverVia": "Toa kupitia",
+    "channelInApp": "Ndani ya programu (kengele)",
+    "channelEmail": "Barua pepe",
+    "channelWebhook": "Webhook (mtoa huduma wa WhatsApp / SMS )",
+    "emailHint": "Barua pepe huenda kwa barua pepe ya kila mpokeaji na inahitaji SMTP kusanidiwa kwenye seva (backend/.env); hadi wakati huo barua pepe hutuma huwekwa kama kurukwa.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Vijajuu ( JSON )",
+    "content": "Maudhui ya arifa",
+    "title": "Kichwa",
+    "message": "Ujumbe",
+    "insertIntoTitle": "Ingiza kwenye Kichwa",
+    "insertIntoMessage": "Ingiza kwenye Ujumbe",
+    "anyLeadField": "Sehemu yoyote ya kuongoza inafanya kazi pia, kwa mfano <code1>{{example1}}</code1> au <code2>{{example2}}</code2> .",
+    "preview": "Hakiki (sampuli ya risasi)",
+    "enabled": "Imewashwa",
+    "saveRule": "Hifadhi Arifa",
+    "createRule": "Unda Arifa",
+    "variables": {
+      "customerName": "Jina la kiongozi",
+      "customerMobile": "Kuongoza simu",
+      "customerEmail": "Barua pepe ya kuongoza",
+      "registrationId": "ID cha kiongozi",
+      "status": "Hali",
+      "subStatus": "Hali ndogo",
+      "scheduleAt": "Tarehe na wakati uliopangwa",
+      "assignedTo": "Mtumiaji aliyekabidhiwa",
+      "updatedBy": "Imesasishwa na",
+      "recipient": "Jina la mpokeaji",
+      "project": "Mradi",
+      "notes": "Ujumbe wa hivi punde",
+      "partner": "Jina la mshirika"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Mara moja wakati hali imewekwa",
+      "AT": "Kwa wakati uliopangwa",
+      "A1D": "Siku 1 baada ya muda uliopangwa (uchunguzi wa ufuatiliaji)"
+    },
+    "immediately": "Mara moja",
+    "atScheduled": "Kwa wakati uliopangwa",
+    "before": {
+      "MINUTES_one": "Dakika {{count}} kabla ya muda ulioratibiwa",
+      "MINUTES_other": "Dakika {{count}} kabla ya muda ulioratibiwa",
+      "HOURS_one": "Saa {{count}} kabla ya muda ulioratibiwa",
+      "HOURS_other": "Saa {{count}} kabla ya muda ulioratibiwa",
+      "DAYS_one": "Siku {{count}} kabla ya muda ulioratibiwa",
+      "DAYS_other": "Siku {{count}} kabla ya muda ulioratibiwa",
+      "WEEKS_one": "Wiki {{count}} kabla ya muda ulioratibiwa",
+      "WEEKS_other": "Wiki {{count}} kabla ya muda ulioratibiwa",
+      "MONTHS_one": "Mwezi {{count}} kabla ya muda ulioratibiwa",
+      "MONTHS_other": "Miezi {{count}} kabla ya muda ulioratibiwa",
+      "YEARS_one": "Mwaka {{count}} kabla ya muda ulioratibiwa",
+      "YEARS_other": "Miaka {{count}} kabla ya muda ulioratibiwa"
+    },
+    "after": {
+      "MINUTES_one": "Dakika {{count}} baada ya muda ulioratibiwa",
+      "MINUTES_other": "Dakika {{count}} baada ya muda ulioratibiwa",
+      "HOURS_one": "Saa {{count}} baada ya muda ulioratibiwa",
+      "HOURS_other": "saa {{count}} baada ya muda ulioratibiwa",
+      "DAYS_one": "Siku {{count}} baada ya muda ulioratibiwa",
+      "DAYS_other": "Siku {{count}} baada ya muda ulioratibiwa",
+      "WEEKS_one": "Wiki {{count}} baada ya muda ulioratibiwa",
+      "WEEKS_other": "Wiki {{count}} baada ya muda ulioratibiwa",
+      "MONTHS_one": "Mwezi {{count}} baada ya muda ulioratibiwa",
+      "MONTHS_other": "Miezi {{count}} baada ya muda ulioratibiwa",
+      "YEARS_one": "Mwaka {{count}} baada ya muda ulioratibiwa",
+      "YEARS_other": "Miaka {{count}} baada ya muda ulioratibiwa"
+    },
+    "units": {
+      "MINUTES_one": "dakika",
+      "MINUTES_other": "dakika",
+      "HOURS_one": "saa",
+      "HOURS_other": "masaa",
+      "DAYS_one": "siku",
+      "DAYS_other": "siku",
+      "WEEKS_one": "wiki",
+      "WEEKS_other": "wiki",
+      "MONTHS_one": "mwezi",
+      "MONTHS_other": "miezi",
+      "YEARS_one": "mwaka",
+      "YEARS_other": "miaka"
+    }
+  }
+}

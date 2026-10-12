@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Mos pistas",
+    "signedInAs": "Connexionat coma {{name}} ( {{partnerId}} ) · còps afichats dins {{timezone}}",
+    "addLead": "+ Apondre de plomb",
+    "tabs": {
+      "all": "Totes ( {{count}} )",
+      "pending": "En espèra ( {{count}} )",
+      "booked": "Reservat ( {{count}} )"
+    },
+    "searchPlaceholder": "Cercar per nom, mobil, o ID d'inscripcion ...",
+    "manageColumns": "Gerir las colomnas",
+    "rowsPerPage": "Linhas per pagina",
+    "registrationId": "ID d'inscripcion",
+    "emptyState": "Pas encara de pistas - enregistratz vòstre primièr.",
+    "noMatch": "Cap de pista correspond pas a aqueles filtres.",
+    "showing": "Afichar {{from}} - {{to}} de {{total}} d'entradas",
+    "actions": {
+      "preview": "Apercebut e mesa a jorn rapida",
+      "history": "Istòria",
+      "email": "Corrièl",
+      "whatsapp": "WhatsApp",
+      "call": "Sonar"
+    },
+    "pagination": {
+      "first": "Primièra pagina",
+      "previous": "Pagina precedenta",
+      "next": "Pagina seguenta",
+      "last": "Darrièra pagina"
+    }
+  },
+  "columns": {
+    "status": "Estatut",
+    "assignTo": "Assignar a",
+    "booked": "Reservat",
+    "protectionUntil": "Proteccion Fins a"
+  },
+  "booking": {
+    "booked": "Reservat",
+    "pending": "En espèra"
+  },
+  "assign": {
+    "unassigned": "Non assignat",
+    "owner": "{{name}} (Proprietari)",
+    "inactive": "{{name}} (inactiu)",
+    "unknownUser": "Utilizaire desconegut",
+    "assignedTo": "Assignat a {{name}}"
+  },
+  "form": {
+    "addTitle": "Apondre de plomb",
+    "editTitle": "Modificar lo cap",
+    "noPermissionAdd": "Avètz pas l'autorizacion d'enregistrar de clients potencials.",
+    "noPermissionEdit": "Avètz pas l'autorizacion de modificar los clients potencials.",
+    "selectPlaceholder": "Causir...",
+    "commaSeparated": "Separat per virgula",
+    "phonePlaceholder": "Numèro de telefòn",
+    "countryCode": "Còdi de país"
+  },
+  "project": {
+    "none": "Cap de projècte encara (pas referit)",
+    "notInList": "{{project}} (pas dins la lista dels projèctes)"
+  },
+  "journey": {
+    "customer": "Client",
+    "currentOwner": "Proprietari actual",
+    "protectionExpiry": "Expiracion de la proteccion",
+    "leadStatus": "Estatut de plomb",
+    "scheduled": "Programat",
+    "assignedTo": "Assignat a",
+    "referral": "Referéncia",
+    "builderReason": "Motiu del constructor : {{reason}}",
+    "bookedHint": "Reservat pel constructor - la proprietat operacionala es passada al constructor; vòstra atribucion e vòstra elegibilitat a la comission son gardadas.",
+    "notBookedHint": "Las reservacions son confirmadas pel constructor un còp qu'acceptan la referéncia.",
+    "quickUpdate": "Mesa a jorn rapida",
+    "leadDetails": "Detalhs del plomb",
+    "progressHistory": "Istoric de progrès",
+    "timesIn": "(còps dins {{timezone}} )",
+    "backToMyLeads": "Tornar a mos indicis",
+    "editLead": "Modificar lo cap"
+  },
+  "referral": {
+    "NOT_REFERRED": "Pas referit (pas de projècte)",
+    "PENDING_BUILDER": "En espèra del constructor",
+    "ACCEPTED": "Acceptat pel constructor",
+    "REJECTED": "Refusat pel constructor"
+  },
+  "preview": {
+    "ariaLabel": "Apercebut de plomb",
+    "title": "Apercebut de plomb",
+    "source": "Font",
+    "location": "Endrech",
+    "scheduled": "Programat",
+    "registered": "Inscrich",
+    "latestNote": "Darrièra nòta",
+    "quickUpdate": "Mesa a jorn rapida",
+    "fullDetails": "Detalhs complets",
+    "editLead": "Modificar lo cap",
+    "history": "Istòria"
+  },
+  "quick": {
+    "assignedTo": "Assignat a",
+    "status": "Estatut",
+    "subStatus": "Sosestatut",
+    "selectSubStatus": "Seleccionatz lo sos-estatut...",
+    "none": "Cap",
+    "scheduledAt": "Programat a",
+    "localTime": "ora locala",
+    "note": "Nòta",
+    "notePlaceholder": "Qué se passèt dins aquela crida / visita? (opcional)",
+    "updateStatus": "Estatut de mesa a jorn",
+    "statusUpdated": "Estat mes a jorn",
+    "bookedLocked": "Aqueste lead es reservat - son estatut pòt pas mai èsser modificat.",
+    "viewOnly": "Podètz visualizar aqueste indici, mas vòstre ròtle pòt pas lo metre a jorn."
+  },
+  "history": {
+    "title": "Istoric - {{registrationId}}",
+    "tabs": {
+      "all": "Tot",
+      "status": "Estatut",
+      "assignment": "Mission",
+      "notes": "Nòtas"
+    },
+    "doneBy": "Fach per {{actor}}",
+    "system": "Sistèma",
+    "platforms": {
+      "System": "Sistèma",
+      "External": "Extèrn",
+      "Web": "Web",
+      "Mobile": "Mobil"
+    },
+    "added": "apondut",
+    "updated": "mes a jorn",
+    "empty": "(vuèg)",
+    "noHistory": "Pas d'istòria dins aquesta categoria encara.",
+    "fieldLabels": {
+      "stage": "Estatut",
+      "subStatus": "Sosestatut",
+      "scheduledAt": "Orari",
+      "notes": "Nòtas",
+      "assignedTo": "Assignat a"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Inscripcion de partenari recebuda",
+      "DUPLICATE_CHECK_COMPLETED": "Verificacion del doble completada - pas cap de doble actiu trobat",
+      "REGISTRATION_ACCEPTED": "Inscripcion acceptada",
+      "PROTECTION_GRANTED_one": "{{count}} -proteccion de jorn concedida",
+      "PROTECTION_GRANTED_other": "{{count}} -proteccion de jorn concedida",
+      "REGISTRATION_ATTEMPT_REJECTED": "Ensag d'inscripcion en doble per {{partnerId}} refusada",
+      "LEAD_DETAILS_UPDATED_one": "Camp {{count}} mes a jorn",
+      "LEAD_DETAILS_UPDATED_other": "Los camps {{count}} mes a jorn",
+      "STAGE_UPDATED": "Estatut mes a jorn a {{status}}",
+      "LEAD_ASSIGNED": "Assignat a {{name}}",
+      "LEAD_UNASSIGNED": "Non assignat",
+      "BOOKING_COMPLETED": "Reservacion acabada",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "La proprietat operacionala transferida a Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribucion del partenari conservada",
+      "COMMISSION_ELIGIBILITY_CREATED": "Elegibilitat a la comission creada",
+      "HANDOVER_COMPLETED": "Remesa completada",
+      "REFERRAL_ACCEPTED": "Lo constructor acceptèt la referéncia",
+      "REFERRAL_REJECTED": "Lo constructor a refusat la referéncia. Rason: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "L'administrator a publicat la proteccion de doble lèu. Rason: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "L'administrator a reassignat l'inscripcion de {{from}} a {{to}} . Rason: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Gerir las colomnas",
+    "hint": "Arrossegatz per reordenar · verificar per afichar",
+    "showAll": "Mostrar tot",
+    "resetDefault": "Reïnicializar a la valor per defaut"
+  },
+  "filters": {
+    "title": "Filtres",
+    "allProjects": "Totes los projèctes",
+    "any": "Quin que siá",
+    "noFields": "Cap d'autre camp filtrable es pas encara activat (Paramètres > Plomb).",
+    "clearAll": "Escafar tot"
+  },
+  "phone": {
+    "MISSING": "Lo numèro de telefòn es requerit.",
+    "INVALID": "Picatz un numèro de telefòn valid.",
+    "TOO_SHORT": "Lo numèro de telefòn es tròp cort.",
+    "TOO_LONG": "Lo numèro de telefòn es tròp long.",
+    "INVALID_FOR_COUNTRY": "Aqueste numèro de telefòn es pas valid per {{country}} .",
+    "COUNTRY_MISMATCH": "Seleccionatz lo còde de país corrècte.",
+    "NOT_MOBILE": "Picatz un numèro de telefòn mobil, pas un telefòn fixe."
+  }
+}

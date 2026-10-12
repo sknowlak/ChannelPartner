@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Porthaḽa ya Mufhaṱi",
+    "referrals": "U rumelwa",
+    "builderLogin": "Login ya Mufhaṱi",
+    "partnerLogin": "Login ya Mufarisani wa Tshiṱirathedzhi"
+  },
+  "login": {
+    "title": "Mufhaṱi o saina",
+    "hint": "Akhaunthu dza vhafhaṱi dzo sikwa nga Leadrat . Vhudzisani mulanguli waṋu arali ni si na."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Ndi khou lindela tsheo yavho .",
+    "ACCEPTED": "Zwo ṱanganedzwa",
+    "REJECTED": "Ro hanedzwa"
+  },
+  "list": {
+    "title": "U rumelwa",
+    "allProjects": "Projeke dzothe",
+    "allStatuses": "Maimo othe",
+    "count_one": "{{count}} u rumelwa",
+    "count_other": "{{count}} u rumelwa",
+    "columns": {
+      "referral": "U rumelwa",
+      "customer": "Murengi",
+      "project": "Thandela",
+      "sourcePartner": "Mufarisani wa Tshisima",
+      "status": "Tshiimo",
+      "booking": "U buka",
+      "registered": "Vho ṅwaliswa"
+    },
+    "booked": "Ro bukwa",
+    "empty": "A hu athu u rumelwa."
+  },
+  "detail": {
+    "customer": "Murengi",
+    "sourcePartner": "Mufarisani wa Tshisima",
+    "attributionNote": "(u ṱalutshedza - a zwi nga shandukiswa)",
+    "leadStatus": "Tshiimo tsha u ranga phanḓa",
+    "protectedUntil": "Tsireledzwa U swika .",
+    "referral": "U rumelwa",
+    "reason": "Muhumbulo: {{reason}}",
+    "booking": "U buka",
+    "bookedOwner": "Booked - ndi inwi muṋe wa mushumo",
+    "notBooked": "Ahuna bookiwa",
+    "sharedAfterBooking": "Yo kovhelwa nga murahu ha u buka",
+    "accept": "Ṱanganedzani u rumelwa",
+    "confirmBooking": "Kha vha khwaṱhisedze u buka",
+    "reject": "Hana u rumelwa",
+    "rejectReasonLabel": "Muhumbulo wa u hana (wo sumbedzwa mufarisi) * .",
+    "rejectConfirm": "Hana",
+    "confirmBookingPrompt": "Vho khwaṱhisedza u buka? Vhuṋe ha mushumo vhu fhira kha inwi nahone mufarisani u vha o teaho u wana khomishini.",
+    "notice": {
+      "booked": "Booking yo khwathisedzwa.",
+      "accepted": "U rumelwa ho ṱanganedzwa.",
+      "rejected": "U rumelwa ho hanedzwa."
+    },
+    "backToReferrals": "U vhuyelela kha u rumelwa"
+  },
+  "history": {
+    "title": "Ḓivhazwakale",
+    "actor": {
+      "system": "Sisiṱeme",
+      "partner": "Mufarisi wa tshiṱirathedzhi",
+      "admin": "Mulanguli Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "U ṅwaliswa ha vhafarisani ho ṱanganedzwa",
+      "DUPLICATE_CHECK_COMPLETED": "Tsedzuluso ya dovholola yo fhela - a hu na dovholola i shumaho yo wanalaho",
+      "REGISTRATION_ACCEPTED": "U ṅwaliswa ho ṱanganedzwa",
+      "PROTECTION_GRANTED_one": "{{count}} -tsireledzo ya duvha yo newa",
+      "PROTECTION_GRANTED_other": "{{count}} -tsireledzo ya duvha yo newa",
+      "STAGE_UPDATED": "Tshiimo tsho khwiniswa tsha vha {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Tsimu yo khwiniswaho ya {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "Masimu o khwiniswaho {{count}}",
+      "LEAD_ASSIGNED": "Yo ṋewa {{name}}",
+      "LEAD_UNASSIGNED": "A yo ngo avhelwa",
+      "REFERRAL_ACCEPTED": "Mufhaṱi o ṱanganedza u rumelwa",
+      "REFERRAL_REJECTED": "Mufhaṱi o hana u rumelwa. Muhumbulo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Ndingedzo dza u ṅwalisa nga {{partner}} dzo hanedzwa",
+      "BOOKING_COMPLETED": "U buka zwo fhela",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Vhuṋe ha mushumo ho fhiriselwa kha Mufhaṱi",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Vhuṱanzi ha mufarisani ho vhulungwa",
+      "COMMISSION_ELIGIBILITY_CREATED": "U tea ha khomishini zwo sikwa",
+      "HANDOVER_COMPLETED": "U ṋetshedzwa ho fhela",
+      "ADMIN_PROTECTION_RELEASED": "Admin o bvisa tsireledzo ya duplicate hu tshe na tshifhinga. Muhumbulo: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Mulanguli o ṋea hafhu u ṅwaliswa u bva kha {{from}} u ya kha {{to}} . Muhumbulo: {{reason}}"
+    }
+  }
+}

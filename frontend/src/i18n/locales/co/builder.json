@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal di custruttore",
+    "referrals": "Riferimenti",
+    "builderLogin": "Login di u custruttore",
+    "partnerLogin": "Login di Partner di u Canale"
+  },
+  "login": {
+    "title": "Costruttore accede",
+    "hint": "I cunti Builder sò creati da Leadrat . Pregunte à u vostru amministratore s'ellu ùn avete micca unu."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Aspittendu a vostra decisione",
+    "ACCEPTED": "Acceptatu",
+    "REJECTED": "Rifiutata"
+  },
+  "list": {
+    "title": "Riferimenti",
+    "allProjects": "Tutti i prughjetti",
+    "allStatuses": "Tutti i statuti",
+    "count_one": "{{count}} riferimentu",
+    "count_other": "{{count}} riferimenti",
+    "columns": {
+      "referral": "Riferimentu",
+      "customer": "Cliente",
+      "project": "Prughjettu",
+      "sourcePartner": "Partenarii di fonte",
+      "status": "Status",
+      "booking": "Riserva",
+      "registered": "Arregistratu"
+    },
+    "booked": "Riservatu",
+    "empty": "Nisun riferimentu ancora."
+  },
+  "detail": {
+    "customer": "Cliente",
+    "sourcePartner": "Partenarii di fonte",
+    "attributionNote": "(attribuzione - ùn pò micca esse cambiatu)",
+    "leadStatus": "Status di piombu",
+    "protectedUntil": "Prutettu Finu à",
+    "referral": "Riferimentu",
+    "reason": "Motivu: {{reason}}",
+    "booking": "Riserva",
+    "bookedOwner": "Riservatu - site u pruprietariu operativu",
+    "notBooked": "Ùn hè micca riservatu",
+    "sharedAfterBooking": "Cumpartu dopu a riservazione",
+    "accept": "Accetta Riferimentu",
+    "confirmBooking": "Cunfirmà a prenotazione",
+    "reject": "Rifiuta Riferimentu",
+    "rejectReasonLabel": "Motivu di ricusà (mostratu à u cumpagnu) *",
+    "rejectConfirm": "Rifiuta",
+    "confirmBookingPrompt": "Cunfirmà a riservazione ? A pruprietà operativa passa à voi è u cumpagnu diventa eligibile per a cumissioni.",
+    "notice": {
+      "booked": "Riservazione cunfirmata.",
+      "accepted": "Riferimentu accettatu.",
+      "rejected": "Riferimentu rifiutatu."
+    },
+    "backToReferrals": "Torna à Riferimenti"
+  },
+  "history": {
+    "title": "Storia",
+    "actor": {
+      "system": "Sistema",
+      "partner": "Partner di u canali",
+      "admin": "Leadrat amministratore"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "A registrazione di i partenarii hè stata ricevuta",
+      "DUPLICATE_CHECK_COMPLETED": "Verificazione duplicata cumpletata - nisun duplicatu attivu trovu",
+      "REGISTRATION_ACCEPTED": "Registrazione accettata",
+      "PROTECTION_GRANTED_one": "{{count}} -ghjornu prutezzione cuncessa",
+      "PROTECTION_GRANTED_other": "{{count}} -ghjornu prutezzione cuncessa",
+      "STAGE_UPDATED": "Status aghjurnatu à {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Campo {{count}} aghjurnatu",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} campi aghjurnati",
+      "LEAD_ASSIGNED": "Assignatu à {{name}}",
+      "LEAD_UNASSIGNED": "Unassigned",
+      "REFERRAL_ACCEPTED": "Builder hà accettatu u riferimentu",
+      "REFERRAL_REJECTED": "Builder hà rifiutatu u riferimentu. Motivu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Tentativu di registrazione duplicata da {{partner}} rifiutatu",
+      "BOOKING_COMPLETED": "Riservazione cumpleta",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "A pruprietà operativa hè trasferita à Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "L'attribuzione di i partenarii cunservata",
+      "COMMISSION_ELIGIBILITY_CREATED": "Ammissibilità di a Cummissione creata",
+      "HANDOVER_COMPLETED": "Trasferimentu finitu",
+      "ADMIN_PROTECTION_RELEASED": "L'amministratore hà liberatu a prutezzione duplicata prima. Motivu: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "L'amministratore hà riassignatu a registrazione da {{from}} à {{to}} . Motivu: {{reason}}"
+    }
+  }
+}

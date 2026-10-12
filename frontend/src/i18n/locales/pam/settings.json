@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Settings",
+    "noPermission": "Ala kang permisu para mamahala kareng settings."
+  },
+  "categories": {
+    "lead": "Manimuna",
+    "user": "User",
+    "integrations": "Pamisanmetung"
+  },
+  "leadTabs": {
+    "fields": "Marangle",
+    "statuses": "Status & Sub-Status",
+    "notifications": "Pabalu at Talapag-iskedyul"
+  },
+  "fields": {
+    "leadIntro": "I-configure me ing lead capture form: i-enable/disable la reng fields, markahan mu lang kailangan, o dagdagan me ing sarili mung custom fields.",
+    "userIntro": "I-configure me ing Add/Edit Team Member form: i-enable/disable la reng fields, markahan mu lang kailangan, o dagdagan me ing sarili mung custom fields.",
+    "addCustomField": "+ Dagdagan ing Custom Field",
+    "fieldLabel": "Field Label",
+    "group": "Grupu",
+    "groupPlaceholderLead": "alimbawa Inquiry Info",
+    "groupPlaceholderUser": "alimbawa karagdagang detalye",
+    "dataType": "Data Type",
+    "options": "Options (comma separated)",
+    "requiredLead": "kailangan - deng partners keng kekang grupu kailangan lang mag fill in para makaregister lang lead",
+    "requiredUser": "kailangan - kailangan yang katmuan nung magdagdag kang miyembru ning grupu",
+    "creating": "gagawang...",
+    "createField": "gawa kang larangan",
+    "columns": {
+      "field": "Tamnanan",
+      "group": "Grupu",
+      "type": "Buri",
+      "required": "Kailangan",
+      "enabled": "Me-enable",
+      "kind": "Maganaka"
+    },
+    "kind": {
+      "custom": "Kaugalian",
+      "core": "Core (makakandadu)",
+      "standard": "Kapitparis"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Teksto",
+    "TEXTAREA": "Makabang text",
+    "NUMBER": "Numeru",
+    "CURRENCY": "Halaga",
+    "DATE": "Aldo",
+    "SELECT": "Dropdown",
+    "LIST": "Listahn"
+  },
+  "picker": {
+    "searchPlaceholder": "Manintun kang lead fields...",
+    "summary": "{{shown}} shown · {{mandatory}} mandatory",
+    "mandatory": "Kailangan",
+    "noMatch": "alang makatuglung a larangan."
+  },
+  "statuses": {
+    "intro": "Deng kekang lead statuses ampo sub-statuses - nanu ing aduan da reng balang metung (metung a petsa & oras, lead fields) nung atin mag-update keng lead.",
+    "add": "+ Dagdagan ing katayuan",
+    "columns": {
+      "order": "Utus",
+      "status": "Kabilyan",
+      "subStatuses": "Sub-Status",
+      "asksFor": "Manyawad ya",
+      "active": "Aktibu"
+    },
+    "moveUp": "lumipat ka babo",
+    "moveDown": "Lumipat ka pababa",
+    "defaultBadge": "Default para kareng bayung lead",
+    "bookingBadge": "Ing katayuan ning pamag-book",
+    "asksForLabel": "Manyawad yang {{label}}",
+    "asksForDateTime": "mangutang ya keng petsa ampo oras",
+    "none": "Ala",
+    "dateTime": "Petsa & oras",
+    "scheduledOn": "keng {{names}}",
+    "fieldsSummary_one": "{{count}} field ( {{mandatory}} mandatory)",
+    "fieldsSummary_other": "{{count}} fields ( {{mandatory}} mandatory)",
+    "deleteConfirm": "Bura ing katayuan \" {{name}} \"? E malyaring ibalik ini.",
+    "editTitle": "I-edit ing Status - {{name}}",
+    "newTitle": "Bayung katayuan",
+    "name": "Status Name",
+    "colour": "Kule",
+    "active": "Aktibu",
+    "isDefault": "Default status para kareng bayung leads",
+    "isBooking": "Booking status (set by Complete Booking)",
+    "whenMoved": "nung ing metung a lead mipalitan ya keng status ayni",
+    "askSchedule": "Manyad kang petsa ampo oras (scheduler)",
+    "scheduleLabelPlaceholder": "Label, alimbawa Bisita keng",
+    "fieldsToShow": "Lead fields para ipakit keng update form",
+    "subStatusesTitle": "Sub-Status",
+    "subStatusesHint": "Balang sub-status malyari yang maniawad sariling petsa at oras at dagdagan na ing sarili nang field - a akakit king babo da reng field ning status babo.",
+    "subStatusName": "sub-status name",
+    "subFields": "Fields ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Label ning petsa ampo oras, alimbawa, tumawag kang pasibayu keng",
+    "addSubStatus": "+ Dagdagan ing Sub-Status",
+    "saveStatus": "I-save ing katayuan",
+    "createStatus": "gawa kang katayuan"
+  },
+  "notifications": {
+    "intro": "Pabalu kareng ustu a tau nung ing metung a lead miras ya keng metung a status - agad, o metung a oras bayu/kaybat ning petsa & oras a maka-schedule kaniti.",
+    "add": "+ Dagdagan ing Pabalu",
+    "columns": {
+      "notification": "Pabalu",
+      "whenStatusIs": "Nung kapilan ya ing katayuan",
+      "sends": "Magpadala",
+      "to": "Para",
+      "via": "Kabilang dareng",
+      "enabled": "Me-enable"
+    },
+    "anyStatus": "Nanu mang katayuan",
+    "anySubStatus": "Nanu mang sub-status",
+    "inactiveOption": "{{name}} (e aktibu)",
+    "emptyRules": "Ala pang abisu - dagdagan me ing metung para abalu mu ing kekang grupu nung miras ya keng status ing lead.",
+    "jobs": {
+      "title": "Maka-iskedyul at mipadala",
+      "firesAt": "Api keng",
+      "notification": "Pabalu",
+      "lead": "Manimuna",
+      "status": "Kabilyan",
+      "details": "Detalyi",
+      "empty": "Ala pang me-schedule o me-send.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "E tapus",
+      "PROCESSING": "Pamagprosesu",
+      "SENT": "Binye",
+      "FAILED": "Megkamali",
+      "SKIPPED": "Laktawan",
+      "CANCELLED": "Kanseladu"
+    },
+    "deliveryStatus": {
+      "SENT": "binye",
+      "FAILED": "megkamali",
+      "SKIPPED": "linabas"
+    },
+    "deliveryChannel": {
+      "IN_APP": "keng-app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Mituldu a talagamit",
+      "owner": "Mikibandi",
+      "updatedBy": "me-update ya keng",
+      "role": "Papel: {{name}}"
+    },
+    "channels": {
+      "inApp": "In-app",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Bura ing abisu \" {{name}} \"? Kanseladu la reng pending a paganaka.",
+    "testPrompt": "Magpadala kang test na niting abisu keng sarili mu (in-app) gamit ing lead ID ?",
+    "testSent": "Pepadala ya keng kekang kampanilya: {{title}} {{message}}",
+    "headersInvalid": "Deng headers Webhook dapat valid JSON , alimbawa {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "I-edit ing pabalu",
+    "newTitle": "Bayung Pabalu",
+    "name": "Lagyu",
+    "namePlaceholder": "alimbawa Paganaka keng pamagbisita keng site",
+    "whenStatus": "nung ing katayuan ning metung a lead",
+    "subStatus": "Sub-status",
+    "send": "Padala (talapag-iskedyul)",
+    "custom": "Kaugalian...",
+    "modeBefore": "bayu ing makatakdang oras",
+    "modeAfter": "kaybat ning makatakdang oras",
+    "noScheduleWarning": "Ing status ayni ali ya manyad petsa ampo oras, inya ing \"bayu/at/kaybat ning makatakda a oras\" a abisu e ya kapilan man mag-fire.",
+    "noScheduleFix": "I-on me <strong>ing Ask para keng petsa ampo oras</strong> para kaniti lalam ning Statuses & Sub-Statuses, o padala agad.",
+    "sendTo": "Iparala me keng (nanu mang kumbinasyun)",
+    "recipientAssigned": "Mituldu a talagamit (manung makibandi)",
+    "recipientOwner": "makibandi keng account / admin",
+    "recipientUpdatedBy": "Tau na mig update keng status",
+    "everyoneWithRole": "balang metung atin yang papel",
+    "specificUsers": "Deng partikular a gagamit (aktibu)",
+    "inactiveNever": "Deng e aktibung gagamit e la tatanggap abisu, agyang mepili la.",
+    "deliverVia": "Ideliver kapamilatan ning",
+    "channelInApp": "In-app (bell)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS provider)",
+    "emailHint": "Ing email munta ya keng email address ning balang tatanggap at kailangan yang SMTP ing server (backend/.env); anggang kanita deng email a peparala maka-log la bilang linabas.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Headers ( JSON )",
+    "content": "Laman ning pabalu",
+    "title": "Titulo",
+    "message": "Mensahi",
+    "insertIntoTitle": "Isulud keng pamagat",
+    "insertIntoMessage": "Isulud keng mensahi",
+    "anyLeadField": "Nanu mang lead field gagana ya, alimbawa <code1>{{example1}}</code1> o <code2>{{example2}}</code2> .",
+    "preview": "Preview (sample lead)",
+    "enabled": "Me-enable",
+    "saveRule": "I-save ing pabalu",
+    "createRule": "gawa kang abisu",
+    "variables": {
+      "customerName": "lagyung manimuna",
+      "customerMobile": "Lead mobile",
+      "customerEmail": "Lead email",
+      "registrationId": "Lead ID",
+      "status": "Kabilyan",
+      "subStatus": "Sub-status",
+      "scheduleAt": "Petsa at oras a maka-iskedyul",
+      "assignedTo": "Mituldu a talagamit",
+      "updatedBy": "me-update ya keng",
+      "recipient": "lagyu ning tatanggap",
+      "project": "Proyektu",
+      "notes": "Bayung tala",
+      "partner": "lagyu ning partner"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "agad nung ing status na",
+      "AT": "King makatakda nang oras",
+      "A1D": "1 aldo kaybat ning makatakdang oras (follow-up check)"
+    },
+    "immediately": "Lagwa",
+    "atScheduled": "keng oras a makatakda",
+    "before": {
+      "MINUTES_one": "{{count}} minutu bayu ing makatakdang oras",
+      "MINUTES_other": "{{count}} minutu bayu ing makatakda a oras",
+      "HOURS_one": "{{count}} oras bayu ing makatakdang oras",
+      "HOURS_other": "{{count}} oras bayu ing makatakdang oras",
+      "DAYS_one": "{{count}} aldo bayu ing makatakdang oras",
+      "DAYS_other": "{{count}} aldo bayu ing makatakdang oras",
+      "WEEKS_one": "{{count}} paruminggu bayu ing makatakdang oras",
+      "WEEKS_other": "{{count}} duminggu bayu ing makatakda a oras",
+      "MONTHS_one": "{{count}} bulan bayu ing makatakdang oras",
+      "MONTHS_other": "{{count}} bulan bayu ing makatakda a oras",
+      "YEARS_one": "{{count}} banua bayu ing makatakda a oras",
+      "YEARS_other": "{{count}} banua bayu ing makatakda a oras"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minutu kaybat ning makatakdang oras",
+      "MINUTES_other": "{{count}} minutu kaybat ning makatakdang oras",
+      "HOURS_one": "{{count}} oras kaybat ning makatakdang oras",
+      "HOURS_other": "{{count}} oras kaybat ning makatakdang oras",
+      "DAYS_one": "{{count}} aldo kaybat ning makatakdang oras",
+      "DAYS_other": "{{count}} aldo kaybat ning makatakdang oras",
+      "WEEKS_one": "{{count}} paruminggu kaybat ning makatakdang oras",
+      "WEEKS_other": "{{count}} duminggu kaybat ning makatakdang oras",
+      "MONTHS_one": "{{count}} bulan kaybat ning makatakdang oras",
+      "MONTHS_other": "{{count}} bulan kaybat ning makatakdang oras",
+      "YEARS_one": "{{count}} banua kaybat ning makatakdang oras",
+      "YEARS_other": "{{count}} banua kaybat ning makatakdang oras"
+    },
+    "units": {
+      "MINUTES_one": "minutu",
+      "MINUTES_other": "minutu",
+      "HOURS_one": "oras",
+      "HOURS_other": "horas",
+      "DAYS_one": "aldo",
+      "DAYS_other": "aldo",
+      "WEEKS_one": "dumingu",
+      "WEEKS_other": "duminggu",
+      "MONTHS_one": "bulan",
+      "MONTHS_other": "bulan",
+      "YEARS_one": "bulan",
+      "YEARS_other": "banwa"
+    }
+  }
+}

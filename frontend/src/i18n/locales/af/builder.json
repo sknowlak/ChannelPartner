@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Bouer Portaal",
+    "referrals": "Verwysings",
+    "builderLogin": "Bouer-aanmelding",
+    "partnerLogin": "Kanaalvennoot-aanmelding"
+  },
+  "login": {
+    "title": "Bouer teken aan",
+    "hint": "Bouer-rekeninge word deur Leadrat geskep. Vra jou administrateur as jy nie een het nie."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Wag vir jou besluit",
+    "ACCEPTED": "Aanvaar",
+    "REJECTED": "Verwerp"
+  },
+  "list": {
+    "title": "Verwysings",
+    "allProjects": "Alle projekte",
+    "allStatuses": "Alle statusse",
+    "count_one": "{{count}} verwysing",
+    "count_other": "{{count}} verwysings",
+    "columns": {
+      "referral": "Verwysing",
+      "customer": "Kliënt",
+      "project": "Projek",
+      "sourcePartner": "Bronvennoot",
+      "status": "Status",
+      "booking": "Bespreking",
+      "registered": "Geregistreer"
+    },
+    "booked": "Bespreek",
+    "empty": "Nog geen verwysings nie."
+  },
+  "detail": {
+    "customer": "Kliënt",
+    "sourcePartner": "Bronvennoot",
+    "attributionNote": "(toeskrywing - kan nie verander word nie)",
+    "leadStatus": "Loodstatus",
+    "protectedUntil": "Beskerm tot",
+    "referral": "Verwysing",
+    "reason": "Rede: {{reason}}",
+    "booking": "Bespreking",
+    "bookedOwner": "Bespreek - jy is die operasionele eienaar",
+    "notBooked": "Nie bespreek nie",
+    "sharedAfterBooking": "Gedeel na bespreking",
+    "accept": "Aanvaar verwysing",
+    "confirmBooking": "Bevestig bespreking",
+    "reject": "Verwerp verwysing",
+    "rejectReasonLabel": "Rede vir verwerping (aan die maat gewys) *",
+    "rejectConfirm": "Verwerp",
+    "confirmBookingPrompt": "Bevestig die bespreking? Operasionele eienaarskap skuif na jou toe en die vennoot kom in aanmerking vir kommissie.",
+    "notice": {
+      "booked": "Bespreking bevestig.",
+      "accepted": "Verwysing aanvaar.",
+      "rejected": "Verwysing afgekeur."
+    },
+    "backToReferrals": "Terug na Verwysings"
+  },
+  "history": {
+    "title": "Geskiedenis",
+    "actor": {
+      "system": "Stelsel",
+      "partner": "Kanaalvennoot",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Vennootregistrasie ontvang",
+      "DUPLICATE_CHECK_COMPLETED": "Duplikaatkontrole voltooi - geen aktiewe duplikaat gevind nie",
+      "REGISTRATION_ACCEPTED": "Registrasie aanvaar",
+      "PROTECTION_GRANTED_one": "{{count}} dae beskerming toegestaan",
+      "PROTECTION_GRANTED_other": "{{count}} dae beskerming toegestaan",
+      "STAGE_UPDATED": "Status opgedateer na {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Opgedateer {{count}} veld",
+      "LEAD_DETAILS_UPDATED_other": "Opgedateer {{count}} velde",
+      "LEAD_ASSIGNED": "Toegewys aan {{name}}",
+      "LEAD_UNASSIGNED": "Ontoegewys",
+      "REFERRAL_ACCEPTED": "Bouer het die verwysing aanvaar",
+      "REFERRAL_REJECTED": "Bouer het die verwysing verwerp. Rede: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Duplikaatregistrasiepoging deur {{partner}} is afgekeur",
+      "BOOKING_COMPLETED": "Bespreking voltooi",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operasionele eienaarskap oorgedra aan Bouwer",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Vennoot-toeskrywing het behoue ​​gebly",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kommissie-kwalifikasie geskep",
+      "HANDOVER_COMPLETED": "Oorhandiging voltooi",
+      "ADMIN_PROTECTION_RELEASED": "Admin het vroegtydig duplikaatbeskerming vrygestel. Rede: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin het registrasie van {{from}} na {{to}} hertoegewys. Rede: {{reason}}"
+    }
+  }
+}

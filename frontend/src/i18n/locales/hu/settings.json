@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Beállítások elemre",
+    "noPermission": "Nincs engedélye a beállítások kezelésére."
+  },
+  "categories": {
+    "lead": "Ólom",
+    "user": "Felhasználó",
+    "integrations": "Integrációk"
+  },
+  "leadTabs": {
+    "fields": "Mezők",
+    "statuses": "Állapotok és alállapotok",
+    "notifications": "Értesítések és ütemezők"
+  },
+  "fields": {
+    "leadIntro": "Konfigurálja a lead rögzítési űrlapot: engedélyezze/letiltja a mezőket, jelölje meg kötelezőnek, vagy adja hozzá saját egyéni mezőit.",
+    "userIntro": "Konfigurálja a Csapattag hozzáadása/szerkesztése űrlapot: engedélyezze/letiltja a mezőket, jelölje meg kötelezőnek, vagy adja hozzá saját egyéni mezőit.",
+    "addCustomField": "+ Egyéni mező hozzáadása",
+    "fieldLabel": "Mezőcímke",
+    "group": "Csoport",
+    "groupPlaceholderLead": "pl Érdeklődési információ",
+    "groupPlaceholderUser": "pl. További részletek",
+    "dataType": "Adattípus",
+    "options": "Opciók (vesszővel elválasztva)",
+    "requiredLead": "Kötelező – a csapatában lévő partnereknek ki kell tölteniük ezt a lead regisztrálásához",
+    "requiredUser": "Kötelező - csapattag felvételekor kell kitölteni",
+    "creating": "Létrehozás...",
+    "createField": "Mező létrehozása",
+    "columns": {
+      "field": "Mező",
+      "group": "Csoport",
+      "type": "Írja be",
+      "required": "Kívánt",
+      "enabled": "Engedélyezve",
+      "kind": "Fajta"
+    },
+    "kind": {
+      "custom": "Szokás",
+      "core": "Mag (zárva)",
+      "standard": "Standard"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Szöveg",
+    "TEXTAREA": "Hosszú szöveg",
+    "NUMBER": "Szám",
+    "CURRENCY": "Valuta",
+    "DATE": "Dátum",
+    "SELECT": "Legördülő menü",
+    "LIST": "Lista"
+  },
+  "picker": {
+    "searchPlaceholder": "Keresés potenciális mezőkben...",
+    "summary": "{{shown}} látható · {{mandatory}} kötelező",
+    "mandatory": "Kötelező",
+    "noMatch": "Egyetlen mező sem egyezik."
+  },
+  "statuses": {
+    "intro": "A potenciális ügyfelek állapotai és alállapotai – amit mindegyik kér (dátum és idő, lead mezők), amikor valaki frissíti a potenciális ügyfeleket.",
+    "add": "+ Állapot hozzáadása",
+    "columns": {
+      "order": "Rendelés",
+      "status": "Állapot",
+      "subStatuses": "Alállapotok",
+      "asksFor": "Kéri",
+      "active": "Aktív"
+    },
+    "moveUp": "Lépj felfelé",
+    "moveDown": "Mozgás lefelé",
+    "defaultBadge": "Az új potenciális ügyfelek alapértelmezett értéke",
+    "bookingBadge": "Foglalás állapota",
+    "asksForLabel": "A következőt kéri: {{label}}",
+    "asksForDateTime": "Dátumot és időt kér",
+    "none": "Egyik sem",
+    "dateTime": "Dátum és idő",
+    "scheduledOn": "ekkor: {{names}}",
+    "fieldsSummary_one": "{{count}} mező ( {{mandatory}} kötelező)",
+    "fieldsSummary_other": "{{count}} mező ( {{mandatory}} kötelező)",
+    "deleteConfirm": "Törli a \" {{name}} \" állapotot? Ezt nem lehet visszavonni.",
+    "editTitle": "Állapot szerkesztése – {{name}}",
+    "newTitle": "Új állapot",
+    "name": "Állapot Név",
+    "colour": "Szín",
+    "active": "Aktív",
+    "isDefault": "Új potenciális ügyfelek alapértelmezett állapota",
+    "isBooking": "Foglalási állapot (a Teljes foglalás által beállítva)",
+    "whenMoved": "Amikor egy lead ebbe az állapotba kerül",
+    "askSchedule": "Kérjen időpontot és időpontot (ütemező)",
+    "scheduleLabelPlaceholder": "Címke, pl. Látogatás a címen",
+    "fieldsToShow": "A frissítési űrlapon megjelenítendő vezető mezők",
+    "subStatusesTitle": "Alállapotok",
+    "subStatusesHint": "Mindegyik alállapot kérheti a saját dátumát és idejét, és saját mezőket adhat hozzá – a fenti állapotmezők tetején.",
+    "subStatusName": "A részállapot neve",
+    "subFields": "Mezők ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Dátum és idő címke, pl. visszahívás a számon",
+    "addSubStatus": "+ Alállapot hozzáadása",
+    "saveStatus": "Állapot mentése",
+    "createStatus": "Állapot létrehozása"
+  },
+  "notifications": {
+    "intro": "Értesítse a megfelelő embereket, ha egy potenciális ügyfél állapotba kerül – azonnal, vagy egy beállított időpontban a rajta ütemezett dátum és időpont előtt/után.",
+    "add": "+ Értesítés hozzáadása",
+    "columns": {
+      "notification": "Bejelentés",
+      "whenStatusIs": "Amikor az állapot van",
+      "sends": "Küld",
+      "to": "To",
+      "via": "Keresztül",
+      "enabled": "Engedélyezve"
+    },
+    "anyStatus": "Bármilyen állapot",
+    "anySubStatus": "Bármilyen alállapot",
+    "inactiveOption": "{{name}} (inaktív)",
+    "emptyRules": "Még nincsenek értesítések – adjon hozzá egyet, hogy figyelmeztesse csapatát, ha a potenciális potenciál eléri az állapotát.",
+    "jobs": {
+      "title": "Ütemezett és elküldve",
+      "firesAt": "Tüzek at",
+      "notification": "Bejelentés",
+      "lead": "Ólom",
+      "status": "Állapot",
+      "details": "Részletek",
+      "empty": "Még nincs ütemezve vagy elküldve semmi.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Függőben levő",
+      "PROCESSING": "Feldolgozás",
+      "SENT": "Küldött",
+      "FAILED": "Sikertelen",
+      "SKIPPED": "Kihagyva",
+      "CANCELLED": "Törölve"
+    },
+    "deliveryStatus": {
+      "SENT": "küldött",
+      "FAILED": "sikertelen",
+      "SKIPPED": "átugrott"
+    },
+    "deliveryChannel": {
+      "IN_APP": "alkalmazáson belül",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Hozzárendelt felhasználó",
+      "owner": "Tulajdonos",
+      "updatedBy": "Frissítette",
+      "role": "Szerep: {{name}}"
+    },
+    "channels": {
+      "inApp": "Alkalmazáson belül",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Törli a(z) \" {{name}} \" értesítést? A függőben lévő emlékeztetők törlésre kerülnek.",
+    "testPrompt": "Ennek az értesítésnek a tesztjét küldje el magának (alkalmazáson belül), melyik lead- ID használatával?",
+    "testSent": "Elküldve a csengőre: {{title}} {{message}}",
+    "headersInvalid": "Webhook fejléceknek érvényes JSON kell lenniük, pl. {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Értesítés szerkesztése",
+    "newTitle": "Új értesítés",
+    "name": "Név",
+    "namePlaceholder": "pl. helyszíni látogatás emlékeztető",
+    "whenStatus": "Amikor egy lead állapota",
+    "subStatus": "Részállapot",
+    "send": "Küldés (ütemező)",
+    "custom": "Szokás...",
+    "modeBefore": "a tervezett időpont előtt",
+    "modeAfter": "tervezett időpont után",
+    "noScheduleWarning": "Ez az állapot nem kér dátumot és időt, így az „ütemezett időpont előtt/kor/után” értesítés soha nem aktiválódik.",
+    "noScheduleFix": "Kapcsolja be a <strong>Kérjen dátumot és időpontot</strong> az Állapotok és alállapotok alatt, vagy küldje el az azonnal.",
+    "sendTo": "Küldés (bármilyen kombináció)",
+    "recipientAssigned": "Hozzárendelt felhasználó (vezető tulajdonos)",
+    "recipientOwner": "Fióktulajdonos / rendszergazda",
+    "recipientUpdatedBy": "Személy, aki frissítette az állapotot",
+    "everyoneWithRole": "Mindenkinek van szerepe",
+    "specificUsers": "Meghatározott felhasználók (aktív)",
+    "inactiveNever": "Az inaktív felhasználók soha nem kapnak értesítést, még akkor sem, ha ki vannak választva.",
+    "deliverVia": "Szállítás ezen keresztül",
+    "channelInApp": "Alkalmazáson belüli (csengő)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS szolgáltató)",
+    "emailHint": "Az e-mail minden címzett e-mail címére érkezik, és be kell állítani az SMTP-t a szerveren (backend/.env); addig az e-mail küldések kihagyottként kerülnek naplózásra.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Fejlécek ( JSON )",
+    "content": "Értesítési tartalom",
+    "title": "Cím",
+    "message": "Üzenet",
+    "insertIntoTitle": "Beszúrás a Címbe",
+    "insertIntoMessage": "Helyezze be az Üzenetbe",
+    "anyLeadField": "Bármely lead mező is működik, pl. <code1>{{example1}}</code1> vagy <code2>{{example2}}</code2> .",
+    "preview": "Előnézet (minta lead)",
+    "enabled": "Engedélyezve",
+    "saveRule": "Értesítés mentése",
+    "createRule": "Értesítés létrehozása",
+    "variables": {
+      "customerName": "Vezető neve",
+      "customerMobile": "Lead mobil",
+      "customerEmail": "Vezető e-mail",
+      "registrationId": "Lead ID",
+      "status": "Állapot",
+      "subStatus": "Részállapot",
+      "scheduleAt": "Ütemezett dátum és idő",
+      "assignedTo": "Hozzárendelt felhasználó",
+      "updatedBy": "Frissítette",
+      "recipient": "Címzett neve",
+      "project": "Projekt",
+      "notes": "Legújabb jegyzet",
+      "partner": "Partner neve"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Azonnal az állapot beállítása után",
+      "AT": "A megbeszélt időpontban",
+      "A1D": "1 nappal a tervezett időpont után (utóellenőrzés)"
+    },
+    "immediately": "Azonnal",
+    "atScheduled": "A megbeszélt időpontban",
+    "before": {
+      "MINUTES_one": "{{count}} perccel a tervezett időpont előtt",
+      "MINUTES_other": "{{count}} perccel a tervezett időpont előtt",
+      "HOURS_one": "{{count}} órával a tervezett időpont előtt",
+      "HOURS_other": "{{count}} órával a tervezett időpont előtt",
+      "DAYS_one": "{{count}} nappal a tervezett időpont előtt",
+      "DAYS_other": "{{count}} nappal a tervezett időpont előtt",
+      "WEEKS_one": "{{count}} héttel a tervezett időpont előtt",
+      "WEEKS_other": "{{count}} héttel a tervezett időpont előtt",
+      "MONTHS_one": "{{count}} hónappal a tervezett időpont előtt",
+      "MONTHS_other": "{{count}} hónappal a tervezett időpont előtt",
+      "YEARS_one": "{{count}} évvel a tervezett időpont előtt",
+      "YEARS_other": "{{count}} évvel a tervezett időpont előtt"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} perccel a tervezett idő után",
+      "MINUTES_other": "{{count}} perccel a tervezett idő után",
+      "HOURS_one": "{{count}} órával a tervezett időpont után",
+      "HOURS_other": "{{count}} órával a tervezett időpont után",
+      "DAYS_one": "{{count}} nappal a tervezett időpont után",
+      "DAYS_other": "{{count}} nappal a tervezett időpont után",
+      "WEEKS_one": "{{count}} héttel a tervezett időpont után",
+      "WEEKS_other": "{{count}} héttel a tervezett időpont után",
+      "MONTHS_one": "{{count}} hónappal a tervezett időpont után",
+      "MONTHS_other": "{{count}} hónappal a tervezett időpont után",
+      "YEARS_one": "{{count}} évvel a tervezett időpont után",
+      "YEARS_other": "{{count}} évvel a tervezett időpont után"
+    },
+    "units": {
+      "MINUTES_one": "perc",
+      "MINUTES_other": "jegyzőkönyv",
+      "HOURS_one": "óra",
+      "HOURS_other": "óra",
+      "DAYS_one": "nap",
+      "DAYS_other": "napokon",
+      "WEEKS_one": "hét",
+      "WEEKS_other": "hétig",
+      "MONTHS_one": "hónap",
+      "MONTHS_other": "hónap",
+      "YEARS_one": "év",
+      "YEARS_other": "évre"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal ya wakuzenga",
+    "referrals": "Kutumizgika",
+    "builderLogin": "Kuloŵa kwa wakuzenga",
+    "partnerLogin": "Kuloŵa kwa Mnyako wa pa Channel"
+  },
+  "login": {
+    "title": "Sayinani wakuzenga",
+    "hint": "Akaunti yakuzenga yikupangika na Leadrat . Fumbani mulaŵiliri winu usange mulije."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Kulindilira ivyo mwasankha",
+    "ACCEPTED": "Wazomerezgeka",
+    "REJECTED": "Wakakanizgika"
+  },
+  "list": {
+    "title": "Kutumizgika",
+    "allProjects": "Mapulojekiti ghose",
+    "allStatuses": "Vinthu vyose",
+    "count_one": "{{count}} kutumizgika",
+    "count_other": "{{count}} vyakutumizgika",
+    "columns": {
+      "referral": "Kutumizgika",
+      "customer": "Kasitomala",
+      "project": "Pulojekiti",
+      "sourcePartner": "Mnyake wakufumapo",
+      "status": "Udindo",
+      "booking": "Kusunga malo",
+      "registered": "Kulembeska"
+    },
+    "booked": "Kusungika",
+    "empty": "Palije vyakutumizgika pa nyengo iyi."
+  },
+  "detail": {
+    "customer": "Kasitomala",
+    "sourcePartner": "Mnyake wakufumapo",
+    "attributionNote": "(kupereka - kungasinthika yayi)",
+    "leadStatus": "Kulongozga",
+    "protectedUntil": "Kuvikilirika Mpaka",
+    "referral": "Kutumizgika",
+    "reason": "Chifukwa: {{reason}}",
+    "booking": "Kusunga malo",
+    "bookedOwner": "Kulembeka - ndimwe mweneko wa ntchito",
+    "notBooked": "Kulembeka yayi",
+    "sharedAfterBooking": "Kugaŵikana pamanyuma pa kupanga buku",
+    "accept": "Zomerezgani kutumizgika",
+    "confirmBooking": "Simikizani kusunga malo",
+    "reject": "Kukana Kutumizgika",
+    "rejectReasonLabel": "Chifukwa cha kukanira (kulongoreka kwa mnyako) *",
+    "rejectConfirm": "Kana",
+    "confirmBookingPrompt": "Kasi mwakhozgera buku? Uŵenecho wakugwira ntchito ukusamira kwa imwe ndipo mnyako wakuŵa wakwenelera kupokera komishoni.",
+    "notice": {
+      "booked": "Kusunga malo kwakhozgeka.",
+      "accepted": "Kutumizgika kwazomerezgeka.",
+      "rejected": "Kutumizgika kukakanizgika."
+    },
+    "backToReferrals": "Kuwelera ku vyakutumizgika"
+  },
+  "history": {
+    "title": "Mbiri",
+    "actor": {
+      "system": "Ndondomeko",
+      "partner": "Mnyako wa pa channel",
+      "admin": "Mulongozgi wa Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Kulembeska kwa ŵabwezi kwapokelereka",
+      "DUPLICATE_CHECK_COMPLETED": "Cheke yakukopera yamara - palije yakukopera iyo yasangika",
+      "REGISTRATION_ACCEPTED": "Kulembeska kwazomerezgeka",
+      "PROTECTION_GRANTED_one": "{{count}} -chitetezo cha zuŵa",
+      "PROTECTION_GRANTED_other": "{{count}} -chitetezo cha zuŵa",
+      "STAGE_UPDATED": "Umo vinthu vikasinthikira ku {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Kusintha kwa {{count}} malo",
+      "LEAD_DETAILS_UPDATED_other": "Kusintha kwa {{count}} minda",
+      "LEAD_ASSIGNED": "Wapelekeka ku {{name}}",
+      "LEAD_UNASSIGNED": "Kugaŵirika yayi",
+      "REFERRAL_ACCEPTED": "Munthu wakuzenga wakazomera kutumizgika",
+      "REFERRAL_REJECTED": "Builder wakakana kutumizgika. Chifukwa: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Kuyezga kulembeska kwakuwerezgawerezga kwa {{partner}} kukakanizgika",
+      "BOOKING_COMPLETED": "Kusunga malo kwamalizgika",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Uŵeneco wa ntchito wakupelekeka kwa wakuzenga",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Kupeleka kwa ŵanyako kwasungika",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kuzomerezgeka kwa komiti kwapangika",
+      "HANDOVER_COMPLETED": "Kupeleka kwamalizgika",
+      "ADMIN_PROTECTION_RELEASED": "Admin wakafumiska chitetezo chakukopera mwaluwiro. Chifukwa: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin wakagaŵiraso kulembeska kufuma ku {{from}} ku {{to}} . Chifukwa: {{reason}}"
+    }
+  }
+}

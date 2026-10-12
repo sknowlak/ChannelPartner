@@ -1,0 +1,190 @@
+{
+  "list": {
+    "title": "Mani Leads",
+    "signedInAs": "Pierakstījies kā {{name}} ( {{partnerId}} ) · reizes, kas rādītas šādā laika zonā: {{timezone}}",
+    "addLead": "+ Pievienojiet svinu",
+    "tabs": {
+      "all": "Visi ( {{count}} )",
+      "pending": "Gaida ( {{count}} )",
+      "booked": "Rezervēts ( {{count}} )"
+    },
+    "searchPlaceholder": "Meklēt pēc vārda, mobilā tālruņa vai reģistrācijas ID ...",
+    "manageColumns": "Pārvaldīt kolonnas",
+    "rowsPerPage": "Rindas vienā lapā",
+    "registrationId": "Reģistrācijas ID",
+    "emptyState": "Vēl nav potenciālo pirkumu — reģistrējiet savu pirmo.",
+    "noMatch": "Neviens potenciālais pirkums neatbilst šiem filtriem.",
+    "showing": "Rāda {{from}} - {{to}} no {{total}} ierakstiem",
+    "actions": {
+      "preview": "Priekšskatījums un ātra atjaunināšana",
+      "history": "Vēsture",
+      "email": "E-pasts",
+      "whatsapp": "WhatsApp",
+      "call": "Zvaniet"
+    },
+    "pagination": {
+      "first": "Pirmā lapa",
+      "previous": "Iepriekšējā lapa",
+      "next": "Nākamā lapa",
+      "last": "Pēdējā lapa"
+    }
+  },
+  "columns": {
+    "status": "Statuss",
+    "assignTo": "Piešķirt",
+    "booked": "Rezervēts",
+    "protectionUntil": "Aizsardzība Līdz"
+  },
+  "booking": {
+    "booked": "Rezervēts",
+    "pending": "Gaida"
+  },
+  "assign": {
+    "unassigned": "Nav piešķirts",
+    "owner": "{{name}} (īpašnieks)",
+    "inactive": "{{name}} (neaktīvs)",
+    "unknownUser": "Nezināms lietotājs",
+    "assignedTo": "Piešķirts {{name}}"
+  },
+  "form": {
+    "addTitle": "Pievienojiet svinu",
+    "editTitle": "Rediģēt potenciālo pirkumu",
+    "noPermissionAdd": "Jums nav atļaujas reģistrēt potenciālos pirkumus.",
+    "noPermissionEdit": "Jums nav atļaujas rediģēt potenciālos pirkumus.",
+    "selectPlaceholder": "Izvēlieties...",
+    "commaSeparated": "Atdalīts ar komatu",
+    "phonePlaceholder": "Tālruņa numurs",
+    "countryCode": "Valsts kods"
+  },
+  "project": {
+    "none": "Vēl nav projekta (nav norādīts)",
+    "notInList": "{{project}} (nav projektu sarakstā)"
+  },
+  "journey": {
+    "customer": "Klients",
+    "currentOwner": "Pašreizējais īpašnieks",
+    "protectionExpiry": "Aizsardzības derīguma termiņš",
+    "leadStatus": "Potenciālā pirkuma statuss",
+    "scheduled": "Plānots",
+    "assignedTo": "Piešķirts",
+    "referral": "Ieteikums",
+    "builderReason": "Izstrādātāja iemesls: {{reason}}",
+    "bookedHint": "Rezervējis būvētājs - ekspluatācijas īpašumtiesības ir pārgājušas būvētājam; jūsu attiecinājuma un komisijas maksas tiesības tiek saglabātas.",
+    "notBookedHint": "Būvnieks apstiprina rezervācijas, kad viņš pieņem ieteikumu.",
+    "quickUpdate": "Ātrā atjaunināšana",
+    "leadDetails": "Sīkāka informācija par potenciālu",
+    "progressHistory": "Progresa vēsture",
+    "timesIn": "(laiki {{timezone}} )",
+    "backToMyLeads": "Atpakaļ uz My Leads",
+    "editLead": "Rediģēt potenciālo pirkumu"
+  },
+  "referral": {
+    "NOT_REFERRED": "Nav norādīts (nav projekta)",
+    "PENDING_BUILDER": "Gaidu celtnieku",
+    "ACCEPTED": "Pieņēmis celtnieks",
+    "REJECTED": "Būvnieks noraidījis"
+  },
+  "preview": {
+    "ariaLabel": "Potenciālā pirkuma priekšskatījums",
+    "title": "Potenciālā pirkuma priekšskatījums",
+    "source": "Avots",
+    "location": "Atrašanās vieta",
+    "scheduled": "Plānots",
+    "registered": "Reģistrēts",
+    "latestNote": "Jaunākā piezīme",
+    "quickUpdate": "Ātrā atjaunināšana",
+    "fullDetails": "Pilna informācija",
+    "editLead": "Rediģēt potenciālo pirkumu",
+    "history": "Vēsture"
+  },
+  "quick": {
+    "assignedTo": "Piešķirts",
+    "status": "Statuss",
+    "subStatus": "Apakšstatuss",
+    "selectSubStatus": "Atlasiet apakšstatusu...",
+    "none": "Nav",
+    "scheduledAt": "Plānots plkst",
+    "localTime": "vietējais laiks",
+    "note": "Piezīme",
+    "notePlaceholder": "Kas notika šajā zvanā/apmeklējumā? (pēc izvēles)",
+    "updateStatus": "Atjaunināt statusu",
+    "statusUpdated": "Statuss atjaunināts",
+    "bookedLocked": "Šis potenciālais pirkums ir rezervēts — tā statusu vairs nevar mainīt.",
+    "viewOnly": "Varat skatīt šo potenciālo pirkumu, taču jūsu loma to nevar atjaunināt."
+  },
+  "history": {
+    "title": "Vēsture — {{registrationId}}",
+    "tabs": {
+      "all": "Visi",
+      "status": "Statuss",
+      "assignment": "Piešķiršana",
+      "notes": "Piezīmes"
+    },
+    "doneBy": "Autors: {{actor}}",
+    "system": "Sistēma",
+    "platforms": {
+      "System": "Sistēma",
+      "External": "Ārējais",
+      "Web": "Web",
+      "Mobile": "Mobilais"
+    },
+    "added": "pievienots",
+    "updated": "atjaunināts",
+    "empty": "(tukšs)",
+    "noHistory": "Šajā kategorijā vēl nav vēstures.",
+    "fieldLabels": {
+      "stage": "Statuss",
+      "subStatus": "Apakšstatuss",
+      "scheduledAt": "Grafiks",
+      "notes": "Piezīmes",
+      "assignedTo": "Piešķirts"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Saņemta partnera reģistrācija",
+      "DUPLICATE_CHECK_COMPLETED": "Dublikāta pārbaude pabeigta — nav atrasts neviens aktīvs dublikāts",
+      "REGISTRATION_ACCEPTED": "Reģistrācija pieņemta",
+      "PROTECTION_GRANTED_zero": "Piešķirta {{count}} dienu aizsardzība",
+      "PROTECTION_GRANTED_one": "Piešķirta {{count}} dienu aizsardzība",
+      "PROTECTION_GRANTED_other": "Piešķirta {{count}} dienu aizsardzība",
+      "REGISTRATION_ATTEMPT_REJECTED": "Reģistrācijas dublikāts, ko veica {{partnerId}} ir noraidīts",
+      "LEAD_DETAILS_UPDATED_zero": "Atjaunināti {{count}} lauki",
+      "LEAD_DETAILS_UPDATED_one": "Atjaunināts lauks {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "Atjaunināti {{count}} lauki",
+      "STAGE_UPDATED": "Statuss atjaunināts uz {{status}}",
+      "LEAD_ASSIGNED": "Piešķirts {{name}}",
+      "LEAD_UNASSIGNED": "Nav piešķirts",
+      "BOOKING_COMPLETED": "Rezervācija pabeigta",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operatīvās īpašumtiesības nodotas Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partnera attiecinājums saglabāts",
+      "COMMISSION_ELIGIBILITY_CREATED": "Izveidota komisijas maksa",
+      "HANDOVER_COMPLETED": "Nodošana pabeigta",
+      "REFERRAL_ACCEPTED": "Builder pieņēma ieteikumu",
+      "REFERRAL_REJECTED": "Builder noraidīja ieteikumu. Iemesls: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Administrators agri atbrīvoja dublikātu aizsardzību. Iemesls: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Administrators atkārtoti piešķīra reģistrāciju no {{from}} uz {{to}} . Iemesls: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Pārvaldīt kolonnas",
+    "hint": "Velciet, lai pārkārtotu · atzīmējiet, lai parādītu",
+    "showAll": "Rādīt visu",
+    "resetDefault": "Atiestatīt uz noklusējuma vērtību"
+  },
+  "filters": {
+    "title": "Filtri",
+    "allProjects": "Visi projekti",
+    "any": "Jebkurš",
+    "noFields": "Vēl nav iespējots neviens cits filtrējams lauks (Iestatījumi > Potenciālais pirkums).",
+    "clearAll": "Notīrīt visu"
+  },
+  "phone": {
+    "MISSING": "Nepieciešams tālruņa numurs.",
+    "INVALID": "Lūdzu, ievadiet derīgu tālruņa numuru.",
+    "TOO_SHORT": "Tālruņa numurs ir pārāk īss.",
+    "TOO_LONG": "Tālruņa numurs ir pārāk garš.",
+    "INVALID_FOR_COUNTRY": "Šis tālruņa numurs nav derīgs valstī {{country}} .",
+    "COUNTRY_MISMATCH": "Lūdzu, atlasiet pareizo valsts kodu.",
+    "NOT_MOBILE": "Lūdzu, ievadiet mobilā tālruņa, nevis fiksētā tālruņa numuru."
+  }
+}

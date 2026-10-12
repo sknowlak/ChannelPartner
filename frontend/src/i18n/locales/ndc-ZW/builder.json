@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal yeMuvaki",
+    "referrals": "Kutumirwa",
+    "builderLogin": "Muvaki Login",
+    "partnerLogin": "Chiteshi Mudiwa Pinda"
+  },
+  "login": {
+    "title": "Muvaki anonyora",
+    "hint": "Maakaundi evavaki anogadzirwa nge Leadrat . Bvunza mutungamiri wako kana usina imwe."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Kuemera chisarudzo chako .",
+    "ACCEPTED": "Zvakaashirwa",
+    "REJECTED": "Kurambwa ."
+  },
+  "list": {
+    "title": "Kutumirwa",
+    "allProjects": "Zveshe zvirongwa .",
+    "allStatuses": "Zvese mamiriro",
+    "count_one": "{{count}} kutumira",
+    "count_other": "{{count}} zvinotumirwa",
+    "columns": {
+      "referral": "Kuendeswa",
+      "customer": "Mutengi",
+      "project": "Chirongwa",
+      "sourcePartner": "Source Mudiwa",
+      "status": "Chithado",
+      "booking": "Kubhuka",
+      "registered": "Yakanyoreswa"
+    },
+    "booked": "Yakabhukwa",
+    "empty": "Hapana vanotumirwa parizvino."
+  },
+  "detail": {
+    "customer": "Mutengi",
+    "sourcePartner": "Source Mudiwa",
+    "attributionNote": "(kupa - hakugone kuchinjwa)",
+    "leadStatus": "Kutungamira Chimiro",
+    "protectedUntil": "Kudzivirirwa Kuguma .",
+    "referral": "Kuendeswa",
+    "reason": "Chikonzero: {{reason}}",
+    "booking": "Kubhuka",
+    "bookedOwner": "Yakabhukwa - iwe ndiwe muridzi wekushanda .",
+    "notBooked": "Hazvina kubhukwa .",
+    "sharedAfterBooking": "Yakagoverwa mushure mekubhuka .",
+    "accept": "Bvuma kutumirwa",
+    "confirmBooking": "Simbisa kuti wakabhuka",
+    "reject": "Ramba kutumirwa",
+    "rejectReasonLabel": "Chikonzero chekuramba (chinoratidzwa kune mumwe) * .",
+    "rejectConfirm": "Kuramba",
+    "confirmBookingPrompt": "Simbisa kuti wakabhuka ere? Operational muridzi anoenda kwauri uye mudiwa anova akakodzera komisheni.",
+    "notice": {
+      "booked": "Kubhuka kwakasimbiswa.",
+      "accepted": "Kutumirwa kunoashirwa.",
+      "rejected": "Kutumirwa kwakarambwa."
+    },
+    "backToReferrals": "Kudzokera kune Zvinotumirwa ."
+  },
+  "history": {
+    "title": "Ngano",
+    "actor": {
+      "system": "Sishitema",
+      "partner": "Chiteshi mudikani",
+      "admin": "Mutungamiriri Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Kunyoreswa kwemumwe kwakagamuchirwa",
+      "DUPLICATE_CHECK_COMPLETED": "Cheki yakadzokororwa yakapedzwa - hapana yakadzokororwa inoshanda yakawanikwa",
+      "REGISTRATION_ACCEPTED": "Kunyoresa kwakaashirwa .",
+      "PROTECTION_GRANTED_one": "{{count}} -zuva rekudzivirirwa rakapiwa",
+      "PROTECTION_GRANTED_other": "{{count}} -zuva rekudzivirirwa rakapiwa",
+      "STAGE_UPDATED": "Chimiro chakagadziriswa ku {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Yakagadziridzwa {{count}} munda",
+      "LEAD_DETAILS_UPDATED_other": "Yakagadziridzwa {{count}} minda",
+      "LEAD_ASSIGNED": "Yakagoverwa ku {{name}}",
+      "LEAD_UNASSIGNED": "Hazvina kugoverwa",
+      "REFERRAL_ACCEPTED": "Muvaki akagamuchira kutumirwa",
+      "REFERRAL_REJECTED": "Muvaki wakaramba kutumirwa. Chikonzero: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Kuedza kwekunyoresa kwakadzokororwa nge {{partner}} kwakarambwa",
+      "BOOKING_COMPLETED": "Kubhuka kwapera",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Muridzi wekushanda wakaendeswa kune Muvaki .",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Mudiwa wekupa yakachengetedzwa",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kukodzera kweKomishini kwakagadzirwa .",
+      "HANDOVER_COMPLETED": "Kupetudzwa kwapera",
+      "ADMIN_PROTECTION_RELEASED": "Admin yakabudisa kudzivirira kwakadzokororwa mangwanani. Chikonzero: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin yakagoverwazve kunyoreswa kubva {{from}} kusvika {{to}} . Chikonzero: {{reason}}"
+    }
+  }
+}

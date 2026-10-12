@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Builder Portal",
+    "referrals": "Zotumizira",
+    "builderLogin": "Kulowa kwa Builder",
+    "partnerLogin": "Kulowera kwa Channel Partner"
+  },
+  "login": {
+    "title": "Lowani muakaunti",
+    "hint": "Maakaunti omanga amapangidwa ndi Leadrat . Funsani woyang'anira wanu ngati mulibe."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Kuyembekezera chisankho chanu",
+    "ACCEPTED": "Adalandiridwa",
+    "REJECTED": "Wakanidwa"
+  },
+  "list": {
+    "title": "Zotumizira",
+    "allProjects": "Ntchito zonse",
+    "allStatuses": "Ma status onse",
+    "count_one": "{{count}} kutumiza",
+    "count_other": "{{count}} otumiza",
+    "columns": {
+      "referral": "Kutumiza",
+      "customer": "Makasitomala",
+      "project": "Ntchito",
+      "sourcePartner": "Source Partner",
+      "status": "Mkhalidwe",
+      "booking": "Kusungitsa",
+      "registered": "Olembetsedwa"
+    },
+    "booked": "Yasungitsidwa",
+    "empty": "Palibe zotumizira pano."
+  },
+  "detail": {
+    "customer": "Makasitomala",
+    "sourcePartner": "Source Partner",
+    "attributionNote": "(chidziwitso - sichingasinthidwe)",
+    "leadStatus": "Mtsogoleri",
+    "protectedUntil": "Kutetezedwa Mpaka",
+    "referral": "Kutumiza",
+    "reason": "Chifukwa: {{reason}}",
+    "booking": "Kusungitsa",
+    "bookedOwner": "Osungitsidwa - ndinu mwiniwake wogwira ntchito",
+    "notBooked": "Sanasungidwe",
+    "sharedAfterBooking": "Zagawidwa pambuyo posungitsa",
+    "accept": "Landirani Kutumiza",
+    "confirmBooking": "Tsimikizirani Kusungitsa",
+    "reject": "Kana Kutumiza",
+    "rejectReasonLabel": "Chifukwa chokanira (chowonetsedwa kwa mnzanu) *",
+    "rejectConfirm": "Kana",
+    "confirmBookingPrompt": "Tsimikizirani kusungitsa? Eni ake ogwirira ntchito amasamukira kwa inu ndipo mnzanuyo amakhala woyenera kupatsidwa ntchito.",
+    "notice": {
+      "booked": "Kusungitsa kwatsimikizika.",
+      "accepted": "Kutumiza kwavomerezedwa.",
+      "rejected": "Kutumiza kukanidwa."
+    },
+    "backToReferrals": "Bwererani ku Zotumiza"
+  },
+  "history": {
+    "title": "Mbiri",
+    "actor": {
+      "system": "Dongosolo",
+      "partner": "Wothandizira pa Channel",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Kulembetsa kwa anzanu kwalandiridwa",
+      "DUPLICATE_CHECK_COMPLETED": "cheke chobwereza chamalizidwa - palibe chobwereza chomwe chapezeka",
+      "REGISTRATION_ACCEPTED": "Kulembetsa kwavomerezedwa",
+      "PROTECTION_GRANTED_one": "{{count}} -chitetezo chatsiku chaperekedwa",
+      "PROTECTION_GRANTED_other": "{{count}} -chitetezo chatsiku chaperekedwa",
+      "STAGE_UPDATED": "Zomwe zasinthidwa kukhala {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Malo osinthidwa {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "Zasinthidwa {{count}} minda",
+      "LEAD_ASSIGNED": "Zaperekedwa kwa {{name}}",
+      "LEAD_UNASSIGNED": "Zosaperekedwa",
+      "REFERRAL_ACCEPTED": "Omanga adavomera kutumizidwa",
+      "REFERRAL_REJECTED": "Womanga wakana kutumiza. Chifukwa: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Kuyesa kobwerezabwereza kwa {{partner}} kwakanidwa",
+      "BOOKING_COMPLETED": "Kusungitsa kwatha",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Mwini wake wantchito wasamutsidwa kwa Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Mgwirizano wa oyanjana nawo wasungidwa",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kuyenerera kwa Commission kudapangidwa",
+      "HANDOVER_COMPLETED": "Kupereka kwatha",
+      "ADMIN_PROTECTION_RELEASED": "Admin adatulutsa chitetezo chobwereza msanga. Chifukwa: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Woyang'anira adagawiranso kulembetsa kuchokera ku {{from}} kupita ku {{to}} . Chifukwa: {{reason}}"
+    }
+  }
+}

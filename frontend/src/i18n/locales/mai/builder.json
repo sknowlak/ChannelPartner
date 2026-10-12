@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "बिल्डर पोर्टल",
+    "referrals": "रेफरल के लिये",
+    "builderLogin": "बिल्डर लॉगिन",
+    "partnerLogin": "चैनल पार्टनर लॉगिन"
+  },
+  "login": {
+    "title": "बिल्डर साइन इन करू",
+    "hint": "बिल्डर खाता Leadrat द्वारा बनाओल जाइत अछि . अपन प्रशासक सँ पूछू जे अहाँक पास नहि अछि की नहि।"
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "अहाँक निर्णयक प्रतीक्षा मे",
+    "ACCEPTED": "स्वीकार कयल गेल",
+    "REJECTED": "खारिज क देल गेल"
+  },
+  "list": {
+    "title": "रेफरल के लिये",
+    "allProjects": "सब परियोजना",
+    "allStatuses": "सब स्टेटस",
+    "count_one": "{{count}} रेफरल",
+    "count_other": "{{count}} रेफरल",
+    "columns": {
+      "referral": "रेफरल",
+      "customer": "ग्राहक",
+      "project": "परियोजना",
+      "sourcePartner": "स्रोत भागीदार",
+      "status": "स्थिति",
+      "booking": "बुकिंग",
+      "registered": "पंजीकृत"
+    },
+    "booked": "बुक कएल गेल",
+    "empty": "एखन धरि कोनो रेफरल नहि।"
+  },
+  "detail": {
+    "customer": "ग्राहक",
+    "sourcePartner": "स्रोत भागीदार",
+    "attributionNote": "(एट्रिब्यूशन - बदलल नहि जा सकैत अछि)",
+    "leadStatus": "सीसा के स्थिति",
+    "protectedUntil": "संरक्षित जब तक",
+    "referral": "रेफरल",
+    "reason": "कारण: {{reason}}",
+    "booking": "बुकिंग",
+    "bookedOwner": "बुक कएल गेल - अहाँ परिचालन मालिक छी",
+    "notBooked": "बुकिंग नहि भेल",
+    "sharedAfterBooking": "बुकिंग के बाद साझा",
+    "accept": "रेफरल स्वीकार करू",
+    "confirmBooking": "बुकिंग के पुष्टि करू",
+    "reject": "रेफरल के अस्वीकार करब",
+    "rejectReasonLabel": "अस्वीकार करबाक कारण (साथी केँ देखाओल गेल) *",
+    "rejectConfirm": "अस्वीकार करनाइ",
+    "confirmBookingPrompt": "बुकिंग के पुष्टि करब? परिचालन स्वामित्व अहां कें पास चलि जायत छै आ भागीदार कमीशन कें लेल पात्र भ जायत छै.",
+    "notice": {
+      "booked": "बुकिंग पुष्टि भेल।",
+      "accepted": "रेफरल स्वीकार कयल गेल।",
+      "rejected": "रेफरल खारिज क देल गेल।"
+    },
+    "backToReferrals": "रेफरल पर वापस जाएँ"
+  },
+  "history": {
+    "title": "इतिहास",
+    "actor": {
+      "system": "तरीका",
+      "partner": "चैनल पार्टनर",
+      "admin": "Leadrat एडमिन"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "साथी पंजीकरण प्राप्त",
+      "DUPLICATE_CHECK_COMPLETED": "डुप्लिकेट चेक पूरा भेल - कोनो सक्रिय डुप्लिकेट नहि भेटल",
+      "REGISTRATION_ACCEPTED": "पंजीकरण स्वीकृत",
+      "PROTECTION_GRANTED_one": "{{count}} -दिन संरक्षण प्रदान कएल गेल",
+      "PROTECTION_GRANTED_other": "{{count}} -दिन संरक्षण प्रदान कएल गेल",
+      "STAGE_UPDATED": "स्थिति {{stage}} पर अपडेट कएल गेल अछि.",
+      "LEAD_DETAILS_UPDATED_one": "अद्यतन {{count}} क्षेत्र",
+      "LEAD_DETAILS_UPDATED_other": "अद्यतन {{count}} क्षेत्र",
+      "LEAD_ASSIGNED": "{{name}} के लिए असाइन किया गया।",
+      "LEAD_UNASSIGNED": "अनसाइन कयल गेल",
+      "REFERRAL_ACCEPTED": "बिल्डर रेफरल स्वीकार क लेलक",
+      "REFERRAL_REJECTED": "बिल्डर रेफरल के खारिज क देलक। कारण: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} द्वारा डुप्लिकेट पंजीकरण प्रयास अस्वीकृत",
+      "BOOKING_COMPLETED": "बुकिंग पूरा भ गेल",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "परिचालन स्वामित्व बिल्डर मे स्थानांतरित",
+      "PARTNER_ATTRIBUTION_PRESERVED": "साथी विशेषता संरक्षित",
+      "COMMISSION_ELIGIBILITY_CREATED": "आयोग के पात्रता सृजित",
+      "HANDOVER_COMPLETED": "हस्तान्तरण पूरा",
+      "ADMIN_PROTECTION_RELEASED": "एडमिन डुप्लिकेट प्रोटेक्शन जल्दी जारी क देलक। कारण: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "व्यवस्थापक पंजीकरण केँ {{from}} सँ {{to}} मे पुनः नियुक्त केलक. कारण: {{reason}}"
+    }
+  }
+}

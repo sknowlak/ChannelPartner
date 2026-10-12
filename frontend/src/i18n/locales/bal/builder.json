@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "بلڈر پورٹل",
+    "referrals": "حوالہ جات",
+    "builderLogin": "بلڈر لاگ ان",
+    "partnerLogin": "چینل پارٹنر لاگ ان"
+  },
+  "login": {
+    "title": "بلڈر سائن ان کن",
+    "hint": "بلڈر اکاؤنٹس Leadrat ءِ نیمگ ءَ جوڑ کنگ بنت۔ اگاں ترا ھچ نیست گڑا وتی منتظم ءَ جُست کن۔"
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "تئی پیسلہ ئے ودار ءَ آں",
+    "ACCEPTED": "منّگ بیثہ",
+    "REJECTED": "رد کنگ بوت"
+  },
+  "list": {
+    "title": "حوالہ جات",
+    "allProjects": "کلیں منصوبہ",
+    "allStatuses": "کلیں جاور",
+    "count_one": "{{count}} حوالہ",
+    "count_other": "{{count}} حوالہ جات",
+    "columns": {
+      "referral": "ریفرل",
+      "customer": "کارمرزوک",
+      "project": "پروجیکٹ",
+      "sourcePartner": "وسیلہ شریک",
+      "status": "جاور",
+      "booking": "بکنگ",
+      "registered": "رجسٹرڈ کنگ بوتگ"
+    },
+    "booked": "بک کثہ",
+    "empty": "انگت ءَ ھچ ریفرل نہ بوتگ۔"
+  },
+  "detail": {
+    "customer": "کارمرزوک",
+    "sourcePartner": "وسیلہ شریک",
+    "attributionNote": "(انتساب - بدل کنگ نہ بیت)",
+    "leadStatus": "لیڈ ءِ جاور",
+    "protectedUntil": "داں 2019 ءَ رکّینگ بوتگ۔",
+    "referral": "ریفرل",
+    "reason": "سبب: {{reason}}",
+    "booking": "بکنگ",
+    "bookedOwner": "بُک کنگ بوتگ - تئو آپریشنل مالک ئے",
+    "notBooked": "بک نہ بیثغیں",
+    "sharedAfterBooking": "بکنگ ئا پذا شیئر کثہ",
+    "accept": "ریفرل قبول کن",
+    "confirmBooking": "بکنگ ئے تصدیق کن",
+    "reject": "ریفرل رد کن",
+    "rejectReasonLabel": "رد کنگ ءِ سوب (شریک ءَ پیش دارگ بیت) *",
+    "rejectConfirm": "رَد",
+    "confirmBookingPrompt": "بکنگ ئے تصدیق کن؟ آپریشنل ملکیت ترا دیم ءَ روت ءُ شریک کمیشن ءِ اہل بیت۔",
+    "notice": {
+      "booked": "بکنگ ءِ تصدیق بوتگ۔",
+      "accepted": "حوالہ قبول کنگ بوتگ۔",
+      "rejected": "ریفرل رد کنگ بوتگ۔"
+    },
+    "backToReferrals": "ریفرلز ئا پذا"
+  },
+  "history": {
+    "title": "بُندپتر",
+    "actor": {
+      "system": "راہبند",
+      "partner": "چینل ئے شریک",
+      "admin": "Leadrat ایڈمن"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "شریک ءِ رجسٹریشن رس اِتگ",
+      "DUPLICATE_CHECK_COMPLETED": "ڈپلیکیٹ چیک سرجم بیثہ - ہچ فعال ڈپلیکیٹ نہ رستہ",
+      "REGISTRATION_ACCEPTED": "رجسٹریشن قبول کنگ بوتگ",
+      "PROTECTION_GRANTED_one": "{{count}} -روچ ءِ رکھینگ دیگ بوتگ",
+      "PROTECTION_GRANTED_other": "{{count}} -روچ ءِ رکھینگ دیگ بوتگ",
+      "STAGE_UPDATED": "جاور ھال {{stage}} ءَ نوک کنگ بوتگ",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} ءِ پڑ ءَ نوک کنگ بوتگ",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} ءِ پڑ نوک کنگ بوتگ اَنت",
+      "LEAD_ASSIGNED": "{{name}} ءَ تفویض کنگ بوتگ",
+      "LEAD_UNASSIGNED": "بے تفویض کنگ بوتگ",
+      "REFERRAL_ACCEPTED": "بلڈر ءَ ریفرل من اِت",
+      "REFERRAL_REJECTED": "بلڈر ءَ ریفرل رد کتگ۔ سبب: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} ءِ نیمگ ءَ چہ رجسٹریشن ءِ نقل ءِ کوشست رد کنگ بوتگ",
+      "BOOKING_COMPLETED": "بکنگ سرجم بیثہ",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "آپریشنل ملکیت بلڈر ءَ را دیم دیگ بوتگ",
+      "PARTNER_ATTRIBUTION_PRESERVED": "شریک ءِ انتساب ءِ حفاظت کنگ بوتگ",
+      "COMMISSION_ELIGIBILITY_CREATED": "کمیشن ئے اہلیت جوڑ بیثہ",
+      "HANDOVER_COMPLETED": "حوالہ کنگ سرجم بوت",
+      "ADMIN_PROTECTION_RELEASED": "ایڈمن ءَ نقلی حفاظت ءِ زوت شنگ کتگ۔ سبب: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "ایڈمن ءَ رجسٹریشن ءَ چہ {{from}} ءَ {{to}} ءَ دوبر دیم داتگ۔ سبب: {{reason}}"
+    }
+  }
+}

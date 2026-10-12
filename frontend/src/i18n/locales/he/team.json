@@ -1,0 +1,83 @@
+{
+  "title": "ניהול צוות",
+  "tabs": {
+    "members": "חברי צוות",
+    "roles": "תפקידים והרשאות",
+    "profile": "הפרופיל שלי"
+  },
+  "roles": {
+    "owner": "בַּעַל",
+    "member": "חבר צוות"
+  },
+  "profile": {
+    "updated": "הפרופיל עודכן.",
+    "basicInfo": "מידע בסיסי",
+    "organisationInfo": "מידע על הארגון",
+    "preferences": "העדפות",
+    "companyName": "שם חברה / ארגון",
+    "city": "עִיר",
+    "state": "מְדִינָה",
+    "currencyHelp": "משמש להצגת תקציבים וערכי הזמנות בכל הצוות שלך.",
+    "useDeviceTimezone": "השתמש באזור הזמן של המכשיר ( {{timezone}} )",
+    "securityRole": "אבטחה ותפקיד",
+    "newPassword": "סיסמה חדשה (השאירו ריק כדי להשאיר ללא שינוי)",
+    "currentPassword": "סיסמה נוכחית",
+    "memberSince": "חבר מאז",
+    "languageSaved": "שפה שנשמרה בחשבון שלך - היא תשמש בכל מכשיר שאליו אתה נכנס."
+  },
+  "members": {
+    "intro": "הוסף, ערוך, השבת או הסר אנשים בצוות שלך - הם חולקים גישה לאותם לידים.",
+    "noPermission": "אין לך הרשאה להוסיף, לערוך או להסיר חברי צוות.",
+    "addNew": "+ הוסף משתמש חדש",
+    "passwordLabel": "{{label}} (מינימום 8 תווים)",
+    "rolePermissions": "תפקיד והרשאות",
+    "adding": "מוֹסִיף...",
+    "addMember": "הוסף חבר צוות",
+    "tabAll": "הכל ( {{count}} )",
+    "tabActive": "פעיל ( {{count}} )",
+    "tabInactive": "לא פעיל ( {{count}} )",
+    "searchPlaceholder": "חפש שם או שם משתמש...",
+    "allTimezones": "כל אזורי הזמן",
+    "perPage": "ערכים לכל עמוד",
+    "contact": "מַגָע",
+    "added": "נוסף",
+    "toggleActive": "פעיל - לחץ כדי לבטל",
+    "toggleInactive": "לא פעיל - לחץ להפעלה",
+    "empty": "עדיין אין חברי צוות.",
+    "noMatch": "אין חברי צוות שתואמים למסננים אלה.",
+    "showing": "מציג {{from}} - {{to}} מתוך {{total}} ערכים",
+    "firstPage": "עמוד ראשון",
+    "previousPage": "העמוד הקודם",
+    "nextPage": "העמוד הבא",
+    "lastPage": "עמוד אחרון"
+  },
+  "editMember": {
+    "title": "ערוך משתמש",
+    "noPermission": "אין לך הרשאה לערוך את חברי הצוות.",
+    "backToTeam": "חזרה לצוות",
+    "cantChangeOwn": "אתה לא יכול לשנות את התפקיד או הסטטוס שלך.",
+    "needsManageRoles": "שינוי התפקיד של חבר מצריך הרשאת ניהול תפקידים.",
+    "addedBy": "נוסף על ידי",
+    "addedOn": "נוסף ב-"
+  },
+  "rolesPage": {
+    "intro": "Super Admin, Admin ו-Manager מובנים ולא ניתן לשנותם - צור תפקיד מותאם אישית לכל דבר אחר.",
+    "noPermission": "אין לך הרשאה לנהל תפקידים.",
+    "createCustom": "+ צור תפקיד מותאם אישית",
+    "roleName": "שם התפקיד",
+    "permissions": "הרשאות",
+    "members": "חברים",
+    "creating": "יוצר...",
+    "createRole": "צור תפקיד",
+    "systemRole": "תפקיד מערכת",
+    "builtIn": "מובנה",
+    "empty": "עדיין אין תפקידים."
+  },
+  "permissions": {
+    "MANAGE_LEADS": "ניהול לידים (יצירה, התקדמות, ספר)",
+    "MANAGE_TEAM": "ניהול צוות (הוסף, ערוך, הסר חברים)",
+    "MANAGE_ROLES": "נהל תפקידים והרשאות",
+    "MANAGE_SETTINGS": "נהל הגדרות (שדות טופס לידים)",
+    "none": "אין הרשאות"
+  }
+}

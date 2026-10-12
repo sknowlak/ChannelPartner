@@ -1,0 +1,87 @@
+{
+  "shell": {
+    "portal": "建立者入口網站",
+    "referrals": "推薦",
+    "builderLogin": "建立者登入",
+    "partnerLogin": "頻道合作夥伴登入"
+  },
+  "login": {
+    "title": "建立者登入",
+    "hint": "建立者帳戶係由Leadrat建立。如果你冇，問下你嘅管理員。"
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "等緊你嘅決定",
+    "ACCEPTED": "接受咗",
+    "REJECTED": "拒絕咗"
+  },
+  "list": {
+    "title": "推薦",
+    "allProjects": "所有項目",
+    "allStatuses": "所有狀態",
+    "count_other": "{{count}}推薦",
+    "columns": {
+      "referral": "推薦",
+      "customer": "顧客",
+      "project": "計劃",
+      "sourcePartner": "來源合作夥伴",
+      "status": "地位",
+      "booking": "預訂",
+      "registered": "註冊咗"
+    },
+    "booked": "已經預訂咗",
+    "empty": "仲未有推薦人。"
+  },
+  "detail": {
+    "customer": "顧客",
+    "sourcePartner": "來源合作夥伴",
+    "attributionNote": "（歸因 - 改唔到）",
+    "leadStatus": "領先狀態",
+    "protectedUntil": "保護到",
+    "referral": "推薦",
+    "reason": "原因： {{reason}}",
+    "booking": "預訂",
+    "bookedOwner": "已預訂 - 你係營運擁有者",
+    "notBooked": "未預訂",
+    "sharedAfterBooking": "預訂後分享",
+    "accept": "接受推薦",
+    "confirmBooking": "確認預訂",
+    "reject": "拒絕推薦",
+    "rejectReasonLabel": "拒絕嘅原因（向伴侶顯示） *",
+    "rejectConfirm": "拒絕",
+    "confirmBookingPrompt": "確認預訂？營運擁有權轉移畀你，而合作夥伴就有資格獲得佣金。",
+    "notice": {
+      "booked": "預訂確認咗。",
+      "accepted": "接受推薦。",
+      "rejected": "推薦被拒絕。"
+    },
+    "backToReferrals": "返去推薦"
+  },
+  "history": {
+    "title": "歷史",
+    "actor": {
+      "system": "系統",
+      "partner": "頻道合作夥伴",
+      "admin": "Leadrat管理員"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "收到合作夥伴註冊",
+      "DUPLICATE_CHECK_COMPLETED": "重複檢查完成 - 搵唔到有效嘅重複",
+      "REGISTRATION_ACCEPTED": "接受咗登記",
+      "PROTECTION_GRANTED_other": "{{count}} - 日保護已經授予",
+      "STAGE_UPDATED": "狀態更新到{{stage}}",
+      "LEAD_DETAILS_UPDATED_other": "更新咗{{count}}欄位",
+      "LEAD_ASSIGNED": "分配畀{{name}}",
+      "LEAD_UNASSIGNED": "未分配",
+      "REFERRAL_ACCEPTED": "建築師接受咗個推薦",
+      "REFERRAL_REJECTED": "建築師拒絕咗個推薦。原因： {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}}嘅重複註冊嘗試被拒絕",
+      "BOOKING_COMPLETED": "預訂完成咗",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "營運擁有權轉移畀 Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "保留咗合作夥伴歸因",
+      "COMMISSION_ELIGIBILITY_CREATED": "建立咗佣金資格",
+      "HANDOVER_COMPLETED": "交接完成",
+      "ADMIN_PROTECTION_RELEASED": "管理員提早發佈咗重複保護。原因： {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "管理員將註冊由{{from}}重新分配到{{to}} 。原因： {{reason}}"
+    }
+  }
+}

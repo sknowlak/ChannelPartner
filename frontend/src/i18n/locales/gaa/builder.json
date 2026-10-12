@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Tsumalɔ Portal",
+    "referrals": "Mɛi ni akɛ amɛ yaa",
+    "builderLogin": "Tsumalɔ Botemɔ",
+    "partnerLogin": "Chanɛl Hefatalɔ Botemɔ"
+  },
+  "login": {
+    "title": "Tsumalɔ bote mli",
+    "hint": "Leadrat ji mɔ ni fee tsumalɔi akaunti. Bi onitsumɔ nɔkwɛlɔ lɛ kɛji obɛ eko."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Omiimɛ oyiŋkpɛɛ lɛ",
+    "ACCEPTED": "Akpɛlɛ nɔ",
+    "REJECTED": "Akpoo"
+  },
+  "list": {
+    "title": "Mɛi ni akɛ amɛ yaa",
+    "allProjects": "Nitsumɔi fɛɛ",
+    "allStatuses": "Shihilɛi fɛɛ",
+    "count_one": "{{count}} gbɛtsɔɔmɔ",
+    "count_other": "{{count}} gbɛtsɔɔmɔi",
+    "columns": {
+      "referral": "Tsɔɔmɔ",
+      "customer": "Kɔstɔma",
+      "project": "Projɛti",
+      "sourcePartner": "Hefatalɔ Jɛɛhe",
+      "status": "Heni odamɔ",
+      "booking": "He ni ato",
+      "registered": "Aŋmala gbɛi awo mli"
+    },
+    "booked": "Ato he gbɛjianɔ",
+    "empty": "Mɔ ko bɛ ni atsɔɔ lɛ lolo."
+  },
+  "detail": {
+    "customer": "Kɔstɔma",
+    "sourcePartner": "Hefatalɔ Jɛɛhe",
+    "attributionNote": "(hegbɛi - anyɛɛɛ atsake)",
+    "leadStatus": "Hiɛnyiɛlɔ Shihilɛ",
+    "protectedUntil": "Abu He Kɛyashi",
+    "referral": "Tsɔɔmɔ",
+    "reason": "Yiŋtoo: {{reason}}",
+    "booking": "He ni ato",
+    "bookedOwner": "Booked - bo ji nitsumɔ lɛ nuŋtsɔ",
+    "notBooked": "Akɛ wolo ko ewooo mli",
+    "sharedAfterBooking": "Ajara yɛ be mli ni ato he gbɛjianɔ sɛɛ",
+    "accept": "Kpɛlɛmɔ Mɔ ni Akɛbaahã bo lɛ nɔ",
+    "confirmBooking": "Mamɔ he ni ooofee lɛ nɔ mi",
+    "reject": "Kpoomɔ Gbɛtsɔɔmɔ",
+    "rejectReasonLabel": "Yiŋtoo hewɔ ni akpoo (atsɔɔ hefatalɔ lɛ) *",
+    "rejectConfirm": "Kpoo",
+    "confirmBookingPrompt": "Mamɔ he ni ato lɛ nɔ mi? Nitsumɔ mli nɔyeli lɛ yaa onɔ ni hefatalɔ lɛ bafeɔ mɔ ni sa kɛha nitsumɔ.",
+    "notice": {
+      "booked": "Ama he ni ato lɛ nɔ mi.",
+      "accepted": "Akpɛlɛɔ gbɛtsɔɔmɔ nɔ.",
+      "rejected": "Akpoo gbɛtsɔɔmɔ."
+    },
+    "backToReferrals": "Ku sɛɛ kɛya Mɛi ni Akɛbaahã bo lɛ anɔ"
+  },
+  "history": {
+    "title": "Tsutsu blema",
+    "actor": {
+      "system": "Gbɛjianɔtoo",
+      "partner": "Chanɛl hefatalɔ",
+      "admin": "Nɔkwɛlɔ Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Ashɛ hefatalɔ woloŋmaa he",
+      "DUPLICATE_CHECK_COMPLETED": "Agbe nɔ ni ji enyɔ lɛ naa - anaaa nɔ ni ji enyɔ ni miitsu nii",
+      "REGISTRATION_ACCEPTED": "Akpɛlɛɔ gbɛi aŋmalamɔ nɔ",
+      "PROTECTION_GRANTED_one": "{{count}} -gbi hebuu aha",
+      "PROTECTION_GRANTED_other": "{{count}} -gbi hebuu aha",
+      "STAGE_UPDATED": "Shihilɛ tsakemɔ kɛtee {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Atsake {{count}} ŋmɔ lɛ",
+      "LEAD_DETAILS_UPDATED_other": "Atsake {{count}} ŋmɔji",
+      "LEAD_ASSIGNED": "Akɛha {{name}}",
+      "LEAD_UNASSIGNED": "Akɛhaaa",
+      "REFERRAL_ACCEPTED": "Builder kpɛlɛ gbɛtsɔɔmɔ lɛ nɔ",
+      "REFERRAL_REJECTED": "Builder kpoo nitsumɔ ni akɛha lɛ lɛ. Yiŋtoo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} ŋmaa shii enyɔ kpoo",
+      "BOOKING_COMPLETED": "Agbe he ni ato lɛ naa",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Akɛ nitsumɔ lɛ nɔyeli lɛ tee Builder dɛŋ",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Ato hefatalɔ gbɛi ahe",
+      "COMMISSION_ELIGIBILITY_CREATED": "Abɔ nitsumɔ he hegbɛ",
+      "HANDOVER_COMPLETED": "Agbe nitsumɔ lɛ naa",
+      "ADMIN_PROTECTION_RELEASED": "Admin jie hebuu henɔi enyɔ kpo mra. Yiŋtoo: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin tsake woloŋmaa kɛjɛ {{from}} kɛtee {{to}} . Yiŋtoo: {{reason}}"
+    }
+  }
+}

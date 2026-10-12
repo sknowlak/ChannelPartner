@@ -1,0 +1,99 @@
+{
+  "shell": {
+    "portal": "Porched ar saverien",
+    "referrals": "Kaset",
+    "builderLogin": "En em lugañ gant ar sevel",
+    "partnerLogin": "En em lugañ gant kevread ar chadenn"
+  },
+  "login": {
+    "title": "En em lugañ gant ar saverien",
+    "hint": "Krouet eo ar c'hontoù sevel gant Leadrat . Goulennit digant ho merour ma n'hoc'h eus ket unan."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "O c'hortoz ho tiviz",
+    "ACCEPTED": "Degemeret",
+    "REJECTED": "Nac'het"
+  },
+  "list": {
+    "title": "Kaset",
+    "allProjects": "An holl raktresoù",
+    "allStatuses": "An holl statudoù",
+    "count_one": "{{count}} dave",
+    "count_two": "{{count}} daveoù",
+    "count_few": "{{count}} daveoù",
+    "count_many": "{{count}} daveoù",
+    "count_other": "{{count}} daveoù",
+    "columns": {
+      "referral": "Kas",
+      "customer": "Arval",
+      "project": "Raktresañ",
+      "sourcePartner": "Kevread mammenn",
+      "status": "Statud",
+      "booking": "Prenañ",
+      "registered": "Enrollet"
+    },
+    "booked": "Prenet",
+    "empty": "N'eus bet kaset ebet c'hoazh."
+  },
+  "detail": {
+    "customer": "Arval",
+    "sourcePartner": "Kevread mammenn",
+    "attributionNote": "(deskrivadur - n'hall ket bezañ kemmet)",
+    "leadStatus": "Statud ar penn",
+    "protectedUntil": "Gwarezet betek",
+    "referral": "Kas",
+    "reason": "Abeg : {{reason}}",
+    "booking": "Prenañ",
+    "bookedOwner": "Prenet - c'hwi eo ar perc'henn oberiant",
+    "notBooked": "N'eo ket bet prenet",
+    "sharedAfterBooking": "Rannet goude bezañ prenet",
+    "accept": "Degemer ar c'hemennadennoù",
+    "confirmBooking": "Kadarnaat ar c'houmanant",
+    "reject": "Nac'h ar c'hemennadenn",
+    "rejectReasonLabel": "Abeg evit nac'hañ (diskouezet d'ar c'heveler) *",
+    "rejectConfirm": "Disteurel",
+    "confirmBookingPrompt": "Kadarnaat ar prenadenn ? Tremen a ra ar perc'henniezh oberiant deoc'h hag ar c'hevread a zeu da vezañ gouest da gaout ur gomision.",
+    "notice": {
+      "booked": "Kadarnaet eo bet ar c'houmanant.",
+      "accepted": "Degemeret eo bet ar c'hemennadenn.",
+      "rejected": "Nac'het eo bet ar c'hemennadenn."
+    },
+    "backToReferrals": "Distreiñ d'ar c'hemennadennoù"
+  },
+  "history": {
+    "title": "Istor",
+    "actor": {
+      "system": "Reizhiad",
+      "partner": "Kevread ar chadenn",
+      "admin": "Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Resevet eo bet an enskrivadur kevredet",
+      "DUPLICATE_CHECK_COMPLETED": "Gwiriañ an eiladenn echuet - n'eus bet kavet eiladenn oberiant ebet",
+      "REGISTRATION_ACCEPTED": "Degemeret eo bet an enskrivadurioù",
+      "PROTECTION_GRANTED_one": "{{count}} -devezh gwarez roet",
+      "PROTECTION_GRANTED_two": "{{count}} -devezh gwarez roet",
+      "PROTECTION_GRANTED_few": "{{count}} -devezh gwarez roet",
+      "PROTECTION_GRANTED_many": "{{count}} -devezh gwarez roet",
+      "PROTECTION_GRANTED_other": "{{count}} -devezh gwarez roet",
+      "STAGE_UPDATED": "Statud hizivaet da {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Hizivaet eo bet ar vaezienn {{count}}",
+      "LEAD_DETAILS_UPDATED_two": "Maeziennoù {{count}} hizivaet",
+      "LEAD_DETAILS_UPDATED_few": "Maeziennoù {{count}} hizivaet",
+      "LEAD_DETAILS_UPDATED_many": "Maeziennoù {{count}} hizivaet",
+      "LEAD_DETAILS_UPDATED_other": "Maeziennoù {{count}} hizivaet",
+      "LEAD_ASSIGNED": "Roet da {{name}}",
+      "LEAD_UNASSIGNED": "N'eo ket bet roet",
+      "REFERRAL_ACCEPTED": "Degemeret eo bet ar c'hemennadenn gant ar Saver",
+      "REFERRAL_REJECTED": "Nac'het en deus ar Saver ar c'hemennadenn. Abeg : {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Klask enskrivañ eilet gant {{partner}} nac'het",
+      "BOOKING_COMPLETED": "Echu eo ar c'houmanant",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Treuzkaset eo bet ar perc'henniezh oberiant da Saver",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Deskrivadur ar c'hevread miret",
+      "COMMISSION_ELIGIBILITY_CREATED": "Krouet eo bet an aotre da gemer perzh",
+      "HANDOVER_COMPLETED": "Echu eo an treuzkas",
+      "ADMIN_PROTECTION_RELEASED": "Embannet en deus ar merour gwarez an doublennoù a-raok. Abeg : {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Adlakaet eo bet an enskrivadur gant merour eus {{from}} da {{to}} . Abeg : {{reason}}"
+    }
+  }
+}

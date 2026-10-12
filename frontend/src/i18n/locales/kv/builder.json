@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Стрӧитчысьяслӧн портал",
+    "referrals": "Направлениеяс",
+    "builderLogin": "Стрӧитысь пырӧм .",
+    "partnerLogin": "Канал партнер пырӧм ."
+  },
+  "login": {
+    "title": "Стрӧитчысь пырис .",
+    "hint": "Стрӧитчысьяслӧн учётнӧй записьяс лӧсьӧдӧма Leadrat . Юалӧй асланыд администраторлысь, абу-ӧ тіян."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Виччысям тіянлысь решение .",
+    "ACCEPTED": "Примитӧма",
+    "REJECTED": "Отказав"
+  },
+  "list": {
+    "title": "Направлениеяс",
+    "allProjects": "Став проектыс .",
+    "allStatuses": "Став статусыс .",
+    "count_one": "{{count}} шыӧдчӧм",
+    "count_other": "{{count}} шыӧдчӧмъяс",
+    "columns": {
+      "referral": "Направление",
+      "customer": "Вӧдитчысь",
+      "project": "Проект",
+      "sourcePartner": "Источник Партнер .",
+      "status": "Статус",
+      "booking": "Бронирование",
+      "registered": "Регистрируйтӧма"
+    },
+    "booked": "Бронируйтӧма",
+    "empty": "Направлениеяс абу на."
+  },
+  "detail": {
+    "customer": "Вӧдитчысь",
+    "sourcePartner": "Источник Партнер .",
+    "attributionNote": "(атрибуция - оз позь вежны) .",
+    "leadStatus": "Статус водзын .",
+    "protectedUntil": "Дорйӧма 2019 воӧдз.",
+    "referral": "Направление",
+    "reason": "Причина: {{reason}}",
+    "booking": "Бронирование",
+    "bookedOwner": "Бронируйтӧма - ті оперативнӧй кӧзяин .",
+    "notBooked": "Не бронируйтöма .",
+    "sharedAfterBooking": "Бронируйтӧм бӧрын юксьӧны .",
+    "accept": "Примитны направление",
+    "confirmBooking": "Подтвердитны бронирование",
+    "reject": "Отказать направление",
+    "rejectReasonLabel": "Отказ вылӧ причина (петкӧдлӧма партнерлы) * .",
+    "rejectConfirm": "Ӧтдортны",
+    "confirmBookingPrompt": "Подтвердитны бронирование? Операционнӧй власьт вуджӧ тіян вылӧ да партнер лоӧ комиссия вылӧ лӧсяланаӧн.",
+    "notice": {
+      "booked": "Бронирование подтвержден.",
+      "accepted": "Направление примитöма.",
+      "rejected": "Направлениеысь ӧткажитчис."
+    },
+    "backToReferrals": "Бӧр локтӧны направлениеяс дорӧ ."
+  },
+  "history": {
+    "title": "История",
+    "actor": {
+      "system": "Система",
+      "partner": "Канал партнер .",
+      "admin": "Leadrat админ"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Партнерскӧй регистрация босьтӧма .",
+      "DUPLICATE_CHECK_COMPLETED": "Дубликат проверка помалӧма - абу аддзӧма активнӧй дубликат .",
+      "REGISTRATION_ACCEPTED": "Регистрация примитӧм .",
+      "PROTECTION_GRANTED_one": "{{count}} -лун дорйӧм сетӧма .",
+      "PROTECTION_GRANTED_other": "{{count}} -лун дорйӧм сетӧма .",
+      "STAGE_UPDATED": "Статус выльмӧдӧма {{stage}} вылӧ.",
+      "LEAD_DETAILS_UPDATED_one": "Выльмӧдӧма {{count}} юкӧн .",
+      "LEAD_DETAILS_UPDATED_other": "Выльмӧдӧма {{count}} юкӧнъяс .",
+      "LEAD_ASSIGNED": "Сетӧма {{name}} вылӧ.",
+      "LEAD_UNASSIGNED": "Неназначеннӧй",
+      "REFERRAL_ACCEPTED": "Стрӧитысь примитіс направление .",
+      "REFERRAL_REJECTED": "Стрӧитысь ӧткажитчис направлениеысь. Причина: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} дублируйтӧм регистрация зільӧмысь эновтӧма",
+      "BOOKING_COMPLETED": "Бронирование помавсьӧ .",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Операционнӧй власьт вуджӧдӧма Строительлы .",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Партнер атрибуция видзӧма .",
+      "COMMISSION_ELIGIBILITY_CREATED": "Комиссия лӧсьӧдӧма .",
+      "HANDOVER_COMPLETED": "Сдача помавсьӧ .",
+      "ADMIN_PROTECTION_RELEASED": "Админ лэдзис дубликат дорйӧм водзджык. Причина: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Админ выльысь сетіс регистрациясӧ {{from}} дорысь {{to}} . Причина: {{reason}}"
+    }
+  }
+}

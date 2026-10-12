@@ -1,0 +1,196 @@
+{
+  "list": {
+    "title": "Fy Arweinwyr",
+    "signedInAs": "Wedi mewngofnodi fel {{name}} ( {{partnerId}} ) · amseroedd a ddangosir yn {{timezone}}",
+    "addLead": "+ Ychwanegu Plwm",
+    "tabs": {
+      "all": "Pob un ( {{count}} )",
+      "pending": "Ar y gweill ( {{count}} )",
+      "booked": "Wedi archebu ( {{count}} )"
+    },
+    "searchPlaceholder": "Chwilio yn ôl enw, ffôn symudol, neu ID cofrestru ...",
+    "manageColumns": "Rheoli Colofnau",
+    "rowsPerPage": "Rhesi fesul tudalen",
+    "registrationId": "ID cofrestru",
+    "emptyState": "Dim awgrymiadau eto - cofrestrwch eich un cyntaf.",
+    "noMatch": "Does dim gwifrau yn cyd-fynd â'r hidlyddion hyn.",
+    "showing": "Yn dangos {{from}} - {{to}} o {{total}} cofnodion",
+    "actions": {
+      "preview": "Rhagolwg a diweddariad cyflym",
+      "history": "Hanes",
+      "email": "Ebost",
+      "whatsapp": "WhatsApp",
+      "call": "Galwch"
+    },
+    "pagination": {
+      "first": "Tudalen gyntaf",
+      "previous": "Tudalen flaenorol",
+      "next": "Tudalen nesaf",
+      "last": "Tudalen olaf"
+    }
+  },
+  "columns": {
+    "status": "Statws",
+    "assignTo": "Neilltuo i",
+    "booked": "Wedi archebu",
+    "protectionUntil": "Gwarchod Tan"
+  },
+  "booking": {
+    "booked": "Wedi archebu",
+    "pending": "Arfaeth"
+  },
+  "assign": {
+    "unassigned": "Heb ei aseinio",
+    "owner": "{{name}} (Perchennog)",
+    "inactive": "{{name}} (anactif)",
+    "unknownUser": "Defnyddiwr anhysbys",
+    "assignedTo": "Wedi'i aseinio i {{name}}"
+  },
+  "form": {
+    "addTitle": "Ychwanegu Plwm",
+    "editTitle": "Golygu Arweiniol",
+    "noPermissionAdd": "Nid oes gennych ganiatâd i gofrestru arweinwyr.",
+    "noPermissionEdit": "Nid oes gennych ganiatâd i olygu gwifrau.",
+    "selectPlaceholder": "Dewiswch...",
+    "commaSeparated": "Coma wedi gwahanu",
+    "phonePlaceholder": "Rhif ffôn",
+    "countryCode": "Cod gwlad"
+  },
+  "project": {
+    "none": "Dim prosiect eto (heb gyfeirio)",
+    "notInList": "{{project}} (ddim yn y rhestr prosiectau)"
+  },
+  "journey": {
+    "customer": "Cwsmer",
+    "currentOwner": "Perchennog Presennol",
+    "protectionExpiry": "Diogelu Dod i Ben",
+    "leadStatus": "Statws Arweiniol",
+    "scheduled": "Wedi'i drefnu",
+    "assignedTo": "Neilltuol i",
+    "referral": "Cyfeirio",
+    "builderReason": "Rheswm yr adeiladwr: {{reason}}",
+    "bookedHint": "Archebwyd gan yr adeiladwr - mae perchnogaeth weithredol wedi symud i'r adeiladwr; cedwir eich priodoliad a chymhwysedd comisiwn.",
+    "notBookedHint": "Caiff archebion eu cadarnhau gan yr adeiladwr unwaith y byddant yn derbyn yr atgyfeiriad.",
+    "quickUpdate": "Diweddariad Cyflym",
+    "leadDetails": "Manylion Arweiniol",
+    "progressHistory": "Hanes Cynnydd",
+    "timesIn": "(amseroedd yn {{timezone}} )",
+    "backToMyLeads": "Yn ôl at Fy Arweinwyr",
+    "editLead": "Golygu Arweiniol"
+  },
+  "referral": {
+    "NOT_REFERRED": "Heb ei gyfeirio (dim prosiect)",
+    "PENDING_BUILDER": "Aros am adeiladwr",
+    "ACCEPTED": "Derbyniwyd gan yr adeiladwr",
+    "REJECTED": "Gwrthodwyd gan adeiladwr"
+  },
+  "preview": {
+    "ariaLabel": "Rhagolwg arweiniol",
+    "title": "Rhagolwg Arweiniol",
+    "source": "Ffynhonnell",
+    "location": "Lleoliad",
+    "scheduled": "Wedi'i drefnu",
+    "registered": "Wedi cofrestru",
+    "latestNote": "Nodyn Diweddaraf",
+    "quickUpdate": "Diweddariad Cyflym",
+    "fullDetails": "Manylion Llawn",
+    "editLead": "Golygu Arweiniol",
+    "history": "Hanes"
+  },
+  "quick": {
+    "assignedTo": "Neilltuol i",
+    "status": "Statws",
+    "subStatus": "Is-statws",
+    "selectSubStatus": "Dewiswch is-statws...",
+    "none": "Dim",
+    "scheduledAt": "Wedi'i amserlennu yn",
+    "localTime": "amser lleol",
+    "note": "Nodyn",
+    "notePlaceholder": "Beth ddigwyddodd ar yr alwad / ymweliad hwn? (dewisol)",
+    "updateStatus": "Diweddaru Statws",
+    "statusUpdated": "Statws wedi'i ddiweddaru",
+    "bookedLocked": "Mae'r arweiniad hwn wedi'i archebu - ni ellir newid ei statws mwyach.",
+    "viewOnly": "Gallwch weld yr arweiniad hwn, ond ni all eich rôl ei diweddaru."
+  },
+  "history": {
+    "title": "Hanes - {{registrationId}}",
+    "tabs": {
+      "all": "Pawb",
+      "status": "Statws",
+      "assignment": "Aseiniad",
+      "notes": "Nodiadau"
+    },
+    "doneBy": "Wedi'i wneud gan {{actor}}",
+    "system": "System",
+    "platforms": {
+      "System": "System",
+      "External": "Allanol",
+      "Web": "Gwe",
+      "Mobile": "Symudol"
+    },
+    "added": "ychwanegodd",
+    "updated": "diweddaru",
+    "empty": "(gwag)",
+    "noHistory": "Dim hanes yn y categori hwn eto.",
+    "fieldLabels": {
+      "stage": "Statws",
+      "subStatus": "Is-statws",
+      "scheduledAt": "Atodlen",
+      "notes": "Nodiadau",
+      "assignedTo": "Neilltuol i"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Derbyniwyd cofrestriad partner",
+      "DUPLICATE_CHECK_COMPLETED": "Gwiriad dyblyg wedi'i gwblhau - ni chanfuwyd copi dyblyg gweithredol",
+      "REGISTRATION_ACCEPTED": "Derbynnir cofrestriad",
+      "PROTECTION_GRANTED_zero": "{{count}} diogelu diwrnod wedi'i roi",
+      "PROTECTION_GRANTED_one": "{{count}} diogelu diwrnod wedi'i roi",
+      "PROTECTION_GRANTED_two": "{{count}} diogelu diwrnod wedi'i roi",
+      "PROTECTION_GRANTED_few": "{{count}} diogelu diwrnod wedi'i roi",
+      "PROTECTION_GRANTED_many": "{{count}} diogelu diwrnod wedi'i roi",
+      "PROTECTION_GRANTED_other": "{{count}} diogelu diwrnod wedi'i roi",
+      "REGISTRATION_ATTEMPT_REJECTED": "Ymgais gofrestru dyblyg gan {{partnerId}} wedi'i wrthod",
+      "LEAD_DETAILS_UPDATED_zero": "Mae {{count}} maes wedi'u diweddaru",
+      "LEAD_DETAILS_UPDATED_one": "Maes {{count}} wedi'i ddiweddaru",
+      "LEAD_DETAILS_UPDATED_two": "Mae {{count}} maes wedi'u diweddaru",
+      "LEAD_DETAILS_UPDATED_few": "Mae {{count}} maes wedi'u diweddaru",
+      "LEAD_DETAILS_UPDATED_many": "Mae {{count}} maes wedi'u diweddaru",
+      "LEAD_DETAILS_UPDATED_other": "Mae {{count}} maes wedi'u diweddaru",
+      "STAGE_UPDATED": "Statws wedi'i ddiweddaru i {{status}}",
+      "LEAD_ASSIGNED": "Wedi'i aseinio i {{name}}",
+      "LEAD_UNASSIGNED": "Heb ei aseinio",
+      "BOOKING_COMPLETED": "Archebu wedi'i gwblhau",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Trosglwyddo perchnogaeth weithredol i Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Priodoli partner wedi'i gadw",
+      "COMMISSION_ELIGIBILITY_CREATED": "Cymhwysedd y Comisiwn wedi'i greu",
+      "HANDOVER_COMPLETED": "Trosglwyddiad wedi'i gwblhau",
+      "REFERRAL_ACCEPTED": "Derbyniodd yr adeiladwr yr atgyfeiriad",
+      "REFERRAL_REJECTED": "Gwrthododd yr adeiladwr yr atgyfeiriad. Rheswm: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Rhyddhaodd y gweinyddwr amddiffyniad dyblyg yn gynnar. Rheswm: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Mae'r gweinyddwr wedi ailbennu cofrestriad o {{from}} i {{to}} . Rheswm: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Rheoli Colofnau",
+    "hint": "Llusgwch i ail-archebu · siec i ddangos",
+    "showAll": "Dangos Pawb",
+    "resetDefault": "Ailosod i'r Rhagosodiad"
+  },
+  "filters": {
+    "title": "Hidlau",
+    "allProjects": "Pob prosiect",
+    "any": "Unrhyw",
+    "noFields": "Nid oes unrhyw feysydd hidlo eraill wedi'u galluogi eto (Gosodiadau> Arwain).",
+    "clearAll": "Clirio Pawb"
+  },
+  "phone": {
+    "MISSING": "Mae angen rhif ffôn.",
+    "INVALID": "Rhowch rif ffôn dilys.",
+    "TOO_SHORT": "Mae'r rhif ffôn yn rhy fyr.",
+    "TOO_LONG": "Mae'r rhif ffôn yn rhy hir.",
+    "INVALID_FOR_COUNTRY": "Nid yw'r rhif ffôn hwn yn ddilys ar gyfer {{country}} .",
+    "COUNTRY_MISMATCH": "Dewiswch y cod gwlad cywir.",
+    "NOT_MOBILE": "Rhowch rif ffôn symudol, nid llinell dir."
+  }
+}

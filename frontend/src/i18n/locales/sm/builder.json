@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Fausia Portal",
+    "referrals": "Fa'asinoga",
+    "builderLogin": "Faufale Login",
+    "partnerLogin": "Fa'asinomaga Auala Paaga"
+  },
+  "login": {
+    "title": "Saini le faufale",
+    "hint": "O tala faufale na faia e Leadrat . Fesili i lau pule pe afai e leai sau tasi."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Faatalitali mo lau faaiuga",
+    "ACCEPTED": "Taliaina",
+    "REJECTED": "Teena"
+  },
+  "list": {
+    "title": "Fa'asinoga",
+    "allProjects": "Poloketi uma",
+    "allStatuses": "Statuses uma",
+    "count_one": "{{count}} faasinomaga",
+    "count_other": "{{count}} faasinomaga",
+    "columns": {
+      "referral": "Fa'asinoga",
+      "customer": "Tagata fa'atau",
+      "project": "Poloketi",
+      "sourcePartner": "Punavai Paaga",
+      "status": "Tulaga",
+      "booking": "Tusitala",
+      "registered": "Resitala"
+    },
+    "booked": "Tusia",
+    "empty": "E leai ni fa'asinoga i le taimi nei."
+  },
+  "detail": {
+    "customer": "Tagata fa'atau",
+    "sourcePartner": "Punavai Paaga",
+    "attributionNote": "(tulaga - e le mafai ona suia)",
+    "leadStatus": "Tulaga Ta'ita'i",
+    "protectedUntil": "Puipuia Seia",
+    "referral": "Fa'asinoga",
+    "reason": "Mafuaaga: {{reason}}",
+    "booking": "Tusitala",
+    "bookedOwner": "Tusia - o oe o le pule fa'agaioiga",
+    "notBooked": "E le'i tusi",
+    "sharedAfterBooking": "Fa'asoa ina ua uma ona tusi",
+    "accept": "Talia Fa'asinoga",
+    "confirmBooking": "Fa'amaonia Tusia",
+    "reject": "Teena Fa'asinoga",
+    "rejectReasonLabel": "Mafuaaga mo le teena (fa'aali i le paaga) *",
+    "rejectConfirm": "Teena",
+    "confirmBookingPrompt": "Fa'amaonia le resitalaina? O le pule fa'atino e fa'ae'e atu ia te oe ma e agava'a le paaga mo le komisi.",
+    "notice": {
+      "booked": "Fa'amaonia tusi.",
+      "accepted": "Ua talia le faasinomaga.",
+      "rejected": "Ua teena le faasinomaga."
+    },
+    "backToReferrals": "Toe fo'i i Fa'asinoga"
+  },
+  "history": {
+    "title": "Tala'aga",
+    "actor": {
+      "system": "Faiga",
+      "partner": "Paaga alalaupapa",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Maua le resitalaina o paaga",
+      "DUPLICATE_CHECK_COMPLETED": "Ua mae'a le siaki fa'alua - e le'i maua se kopi fa'atino",
+      "REGISTRATION_ACCEPTED": "Ua talia le lesitala",
+      "PROTECTION_GRANTED_one": "{{count}} -aso puipuiga ua tuuina atu",
+      "PROTECTION_GRANTED_other": "{{count}} -aso puipuiga ua tuuina atu",
+      "STAGE_UPDATED": "Fa'afouina tulaga ile {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Fa'afou {{count}} fanua",
+      "LEAD_DETAILS_UPDATED_other": "Fa'afou {{count}} fanua",
+      "LEAD_ASSIGNED": "Tofia ia {{name}}",
+      "LEAD_UNASSIGNED": "Le tofiaina",
+      "REFERRAL_ACCEPTED": "Na talia e le Faufale le faasinomaga",
+      "REFERRAL_REJECTED": "Na teena e le Faufale le faasinomaga. Mafuaaga: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Te'ena le taumafai e lesitala faalua e {{partner}}",
+      "BOOKING_COMPLETED": "Ua mae'a tusi",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "O le pule fa'agaioiga ua tu'uina atu i le Faufale",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Fa'asoa fa'apaaga fa'asaoina",
+      "COMMISSION_ELIGIBILITY_CREATED": "Fausia le agavaa o le Komisi",
+      "HANDOVER_COMPLETED": "Ua mae'a le tu'uina atu",
+      "ADMIN_PROTECTION_RELEASED": "Na vave fa'amatu'u atu e le pule fa'alua puipuiga. Mafuaaga: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Pule toe tofia le resitala mai {{from}} i {{to}} . Mafuaaga: {{reason}}"
+    }
+  }
+}

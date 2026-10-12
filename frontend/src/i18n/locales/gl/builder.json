@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal do Construtor",
+    "referrals": "Referencias",
+    "builderLogin": "Inicio de sesión do constructor",
+    "partnerLogin": "Acceso de socio de canle"
+  },
+  "login": {
+    "title": "Inicia sesión do constructor",
+    "hint": "As contas de creadores son creadas por Leadrat . Pregúntalle ao teu administrador se non tes un."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Agardando a súa decisión",
+    "ACCEPTED": "Aceptado",
+    "REJECTED": "Rexeitado"
+  },
+  "list": {
+    "title": "Referencias",
+    "allProjects": "Todos os proxectos",
+    "allStatuses": "Todos os estados",
+    "count_one": "{{count}} referencia",
+    "count_other": "{{count}} referencias",
+    "columns": {
+      "referral": "Remisión",
+      "customer": "Cliente",
+      "project": "Proxecto",
+      "sourcePartner": "Socio de orixe",
+      "status": "Estado",
+      "booking": "Reserva",
+      "registered": "Rexistrado"
+    },
+    "booked": "Reservado",
+    "empty": "Aínda non hai referencias."
+  },
+  "detail": {
+    "customer": "Cliente",
+    "sourcePartner": "Socio de orixe",
+    "attributionNote": "(atribución - non se pode cambiar)",
+    "leadStatus": "Estado de lead",
+    "protectedUntil": "Protexido Ata",
+    "referral": "Remisión",
+    "reason": "Motivo: {{reason}}",
+    "booking": "Reserva",
+    "bookedOwner": "Reservado: es o propietario operativo",
+    "notBooked": "Non reservado",
+    "sharedAfterBooking": "Compartido despois da reserva",
+    "accept": "Aceptar Referencia",
+    "confirmBooking": "Confirmar reserva",
+    "reject": "Rexeitar a referencia",
+    "rejectReasonLabel": "Motivo do rexeitamento (móstrase ao compañeiro) *",
+    "rejectConfirm": "Rexeitar",
+    "confirmBookingPrompt": "Confirmar a reserva? A propiedade operativa pasa a ti e o socio pasa a ser elixible para a comisión.",
+    "notice": {
+      "booked": "Reserva confirmada.",
+      "accepted": "Remisión aceptada.",
+      "rejected": "Remisión rexeitada."
+    },
+    "backToReferrals": "Volver a Referencias"
+  },
+  "history": {
+    "title": "Historia",
+    "actor": {
+      "system": "Sistema",
+      "partner": "Socio da canle",
+      "admin": "Administrador Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Rexistro de socio recibido",
+      "DUPLICATE_CHECK_COMPLETED": "Comprobación de duplicados completada: non se atopou ningún duplicado activo",
+      "REGISTRATION_ACCEPTED": "Inscrición aceptada",
+      "PROTECTION_GRANTED_one": "Protección {{count}} días concedida",
+      "PROTECTION_GRANTED_other": "Protección {{count}} días concedida",
+      "STAGE_UPDATED": "Actualizouse o estado a {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Campo {{count}} actualizado",
+      "LEAD_DETAILS_UPDATED_other": "Actualizáronse {{count}} campos",
+      "LEAD_ASSIGNED": "Asignado a {{name}}",
+      "LEAD_UNASSIGNED": "Sen asignar",
+      "REFERRAL_ACCEPTED": "O constructor aceptou a referencia",
+      "REFERRAL_REJECTED": "Builder rexeitou a remisión. Motivo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Rexeitouse o intento de rexistro duplicado de {{partner}}",
+      "BOOKING_COMPLETED": "Reserva completada",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Propiedade operativa transferida a Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Mantívose a atribución do socio",
+      "COMMISSION_ELIGIBILITY_CREATED": "Creouse a elegibilidade da comisión",
+      "HANDOVER_COMPLETED": "Entrega completada",
+      "ADMIN_PROTECTION_RELEASED": "O administrador lanzou a protección duplicada antes. Motivo: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "O administrador reasignou o rexistro de {{from}} a {{to}} . Motivo: {{reason}}"
+    }
+  }
+}

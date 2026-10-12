@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Litlhophiso",
+    "noPermission": "Ha u na tumello ea ho laola litlhophiso."
+  },
+  "categories": {
+    "lead": "Ketapele",
+    "user": "Mosebedisi",
+    "integrations": "Kopanyo"
+  },
+  "leadTabs": {
+    "fields": "Masimo",
+    "statuses": "Maemo le Maemo a Manyane",
+    "notifications": "Litsebiso & Bahlophisi"
+  },
+  "fields": {
+    "leadIntro": "Lokisa foromo ea ho hapa pele: nolofalletsa / thibela masimo, a tšoaee a hlokeha, kapa eketsa masimo a hau a tloaelo.",
+    "userIntro": "Lokisa foromo ea Setho sa Eketsa / Edita: nolofalletsa / tima masimo, a tšoaee a hlokeha, kapa eketsa masimo a hau a tloaelo.",
+    "addCustomField": "+ Eketsa Sebaka sa Tloaelo",
+    "fieldLabel": "Letšoao la Tšimo",
+    "group": "Sehlopha",
+    "groupPlaceholderLead": "mohlala Inquiry Info",
+    "groupPlaceholderUser": "mohlala. Lintlha tse ling",
+    "dataType": "Mofuta oa data",
+    "options": "Likhetho (li arotsoe ka koma)",
+    "requiredLead": "Ho hlokahala - balekane sehlopheng sa hau ba tlameha ho tlatsa sena ho ngolisa moetapele",
+    "requiredUser": "Hoa hlokahala - e tlameha ho tlatsoa ha o eketsa setho sa sehlopha",
+    "creating": "Ea theha...",
+    "createField": "Theha Tšimo",
+    "columns": {
+      "field": "Tšimo",
+      "group": "Sehlopha",
+      "type": "Mofuta",
+      "required": "Ho hlokahala",
+      "enabled": "E lumelletsoe",
+      "kind": "Mosa"
+    },
+    "kind": {
+      "custom": "Tloaelo",
+      "core": "Core (e notletsoeng)",
+      "standard": "Standard"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Mongolo",
+    "TEXTAREA": "Mongolo o molelele",
+    "NUMBER": "Nomoro",
+    "CURRENCY": "Chelete",
+    "DATE": "Letsatsi",
+    "SELECT": "Theosa",
+    "LIST": "Lenane"
+  },
+  "picker": {
+    "searchPlaceholder": "Batla libaka tse ka sehloohong...",
+    "summary": "{{shown}} e bonts'itsoeng · {{mandatory}} e tlamang",
+    "mandatory": "E tlamehang",
+    "noMatch": "Ha ho masimo a tšoanang."
+  },
+  "statuses": {
+    "intro": "Maemo a hau a etelletseng pele le maemo a manyane - seo e mong le e mong a se kopang (letsatsi le nako, libaka tse etellang pele) ha motho e mong a ntlafatsa lead ho eona.",
+    "add": "+ Eketsa Boemo",
+    "columns": {
+      "order": "Taelo",
+      "status": "Boemo",
+      "subStatuses": "Sub-Statuses",
+      "asksFor": "E Botsa",
+      "active": "E sebetsa"
+    },
+    "moveUp": "Suthela holimo",
+    "moveDown": "Suthela fatshe",
+    "defaultBadge": "Ka ho qaleha bakeng sa litumellano tse ncha",
+    "bookingBadge": "Boemo ba ho beeletsa",
+    "asksForLabel": "E kopa {{label}}",
+    "asksForDateTime": "E botsa letsatsi le nako",
+    "none": "Ha ho letho",
+    "dateTime": "Letsatsi & nako",
+    "scheduledOn": "ho {{names}}",
+    "fieldsSummary_one": "{{count}} lebala ( {{mandatory}} tlamehile)",
+    "fieldsSummary_other": "{{count}} masimo ( {{mandatory}} tlamehileng)",
+    "deleteConfirm": "Hlakola boemo \" {{name}} \"? Sena se ke ke sa etsolloa.",
+    "editTitle": "Fetola Boemo - {{name}}",
+    "newTitle": "Boemo bo bocha",
+    "name": "Lebitso la Boemo",
+    "colour": "Mmala",
+    "active": "E sebetsa",
+    "isDefault": "Maemo a kamehla bakeng sa litumellano tse ncha",
+    "isBooking": "Boemo ba ho beeletsa (se behiloe ke Complete Booking)",
+    "whenMoved": "Ha moetapele o fetisetsoa boemong bona",
+    "askSchedule": "Kopa letsatsi le nako (mohlophisi)",
+    "scheduleLabelPlaceholder": "Label, mohlala Etela ho",
+    "fieldsToShow": "Etela libaka tse hlahang foromong ea ntlafatso",
+    "subStatusesTitle": "Sub-Statuses",
+    "subStatusesHint": "Boemo bo bong le bo bong bo ka kopa letsatsi le nako ea bona mme ba kenye likarolo tsa bona - tse bonts'itsoeng kaholimo ho likarolo tsa boemo bo kaholimo.",
+    "subStatusName": "Lebitso la boemo bo tlase",
+    "subFields": "Libaka ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Letsatsi le nako, mohlala, letsa hape ka",
+    "addSubStatus": "+ Kenya Sub-State",
+    "saveStatus": "Boloka Boemo",
+    "createStatus": "Theha Boemo"
+  },
+  "notifications": {
+    "intro": "Tsebisa batho ba nepahetseng ha moetapele o fihla maemong - hanghang, kapa nako e behiloeng pele/ka mor'a letsatsi le nako e reriloeng ho eona.",
+    "add": "+ Kenya Tsebiso",
+    "columns": {
+      "notification": "Tsebiso",
+      "whenStatusIs": "Ha Boemo bo Le",
+      "sends": "E romela",
+      "to": "Ho",
+      "via": "Ka",
+      "enabled": "E lumelletsoe"
+    },
+    "anyStatus": "Boemo bofe kapa bofe",
+    "anySubStatus": "Boemo bofe kapa bofe bo tlase",
+    "inactiveOption": "{{name}} (ha e sebetse)",
+    "emptyRules": "Ha ho na litemoso - eketsa e 'ngoe ho lemosa sehlopha sa hau ha moetapele a fihla boemong bo itseng.",
+    "jobs": {
+      "title": "E Reretsoe & E Rometsoe",
+      "firesAt": "Mello At",
+      "notification": "Tsebiso",
+      "lead": "Ketapele",
+      "status": "Boemo",
+      "details": "Lintlha",
+      "empty": "Ha ho letho le hlophisitsoeng kapa le rometsoeng hajoale.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "E emetse",
+      "PROCESSING": "Ho sebetsa",
+      "SENT": "E rometsoe",
+      "FAILED": "E hlolehile",
+      "SKIPPED": "Qholotsoe",
+      "CANCELLED": "E hlakotsoe"
+    },
+    "deliveryStatus": {
+      "SENT": "rometsoe",
+      "FAILED": "hlolehile",
+      "SKIPPED": "tlola"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ka har'a app",
+      "EMAIL": "imeile",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Mosebelisi ea abetsoeng",
+      "owner": "Mong'a",
+      "updatedBy": "E ntlafalitsoe ke",
+      "role": "Karolo: {{name}}"
+    },
+    "channels": {
+      "inApp": "Ka har'a app",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Hlakola tsebiso \" {{name}} \"? Likhopotso tse emetseng ho tsoa ho eona li hlakotsoe.",
+    "testPrompt": "I romelle tlhahlobo ea tsebiso ena (ka har'a app) u sebelisa ID e kae?",
+    "testSent": "E rometsoe ho tšepe ea hau: {{title}} {{message}}",
+    "headersInvalid": "Lihlooho tsa Webhook li tlameha ho sebetsa JSON , mohlala {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Fetola Tsebiso",
+    "newTitle": "Tsebiso e Ncha",
+    "name": "Lebitso",
+    "namePlaceholder": "mohlala, khopotso ea ketelo ea sebaka",
+    "whenStatus": "Ha boemo ba moetapele ke",
+    "subStatus": "Boemo bo tlase",
+    "send": "Romela (mohlophisi)",
+    "custom": "Tloaelo...",
+    "modeBefore": "pele ho nako e behiloeng",
+    "modeAfter": "ka mor'a nako e behiloeng",
+    "noScheduleWarning": "Boemo bona ha bo botse letsatsi le nako, kahoo tsebiso ea \"pele/ka/ka morao ho nako\" e ke ke ea thunya.",
+    "noScheduleFix": "Bulela <strong>ho Botsa letsatsi le nako</strong> ea eona tlasa Maemo le Maemo a Manyane, kapa u romele Hang-hang.",
+    "sendTo": "Romella ho (motsoako ofe kapa ofe)",
+    "recipientAssigned": "Mosebelisi ea abetsoeng (mong'a moetapele)",
+    "recipientOwner": "Mong'a akhaonto / admin",
+    "recipientUpdatedBy": "Motho ea nchafalitseng boemo",
+    "everyoneWithRole": "E mong le e mong ea nang le karolo",
+    "specificUsers": "Basebelisi ba khethehileng (ba sebetsang)",
+    "inactiveNever": "Basebelisi ba sa sebetseng ha ba fumane litemoso, leha ba khethiloe.",
+    "deliverVia": "Fana ka",
+    "channelInApp": "Ka har'a app (bell)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook (mofani WhatsApp / SMS )",
+    "emailHint": "Imeile e ea atereseng ea lengolo-tsoibila ea moamoheli e mong le e mong 'me e hloka hore SMTP e thehoe ho seva (backend/.env); ho fihlela ka nako eo mangolo-tsoibila a romelloang a bolokoa joalo ka ha a tlositsoe.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Lihlooho ( JSON )",
+    "content": "Litaba tsa tsebiso",
+    "title": "Sehlooho",
+    "message": "Molaetsa",
+    "insertIntoTitle": "Kenya ho Sehlooho",
+    "insertIntoMessage": "Kenya Molaetseng",
+    "anyLeadField": "Sebaka sefe kapa sefe sa moetapele se sebetsa le sona, mohlala <code1>{{example1}}</code1> kapa <code2>{{example2}}</code2> .",
+    "preview": "Preview (mohlala oa lead)",
+    "enabled": "E lumelletsoe",
+    "saveRule": "Boloka Tsebiso",
+    "createRule": "Theha Tsebiso",
+    "variables": {
+      "customerName": "Lebitso la moetapele",
+      "customerMobile": "Keta mobile",
+      "customerEmail": "Keta imeile",
+      "registrationId": "ID ea moeta-pele",
+      "status": "Boemo",
+      "subStatus": "Boemo bo tlase",
+      "scheduleAt": "Letsatsi le nako e behiloeng",
+      "assignedTo": "Mosebelisi ea abetsoeng",
+      "updatedBy": "E ntlafalitsoe ke",
+      "recipient": "Lebitso la moamohedi",
+      "project": "Morero",
+      "notes": "Molaetsa oa morao-rao",
+      "partner": "Lebitso la molekane"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Hang ha boemo bo setilwe",
+      "AT": "Ka nako e reriloeng",
+      "A1D": "Letsatsi le 1 ka mor'a nako e reriloeng (tlhahlobo ea morao-rao)"
+    },
+    "immediately": "Hanghang",
+    "atScheduled": "Ka nako e behiloeng",
+    "before": {
+      "MINUTES_one": "metsotso e {{count}} pele ho nako e behiloeng",
+      "MINUTES_other": "Metsotso e {{count}} pele ho nako e behiloeng",
+      "HOURS_one": "{{count}} hora pele ho nako e behiloeng",
+      "HOURS_other": "{{count}} lihora pele ho nako e reriloeng",
+      "DAYS_one": "{{count}} letsatsi pele ho nako e behiloeng",
+      "DAYS_other": "Matsatsi a {{count}} pele ho nako e reriloeng",
+      "WEEKS_one": "{{count}} beke pele ho nako e reriloeng",
+      "WEEKS_other": "{{count}} libeke pele ho nako e reriloeng",
+      "MONTHS_one": "{{count}} khoeli pele ho nako e behiloeng",
+      "MONTHS_other": "Likhoeli tse {{count}} pele ho nako e reriloeng",
+      "YEARS_one": "{{count}} selemo pele ho nako e behiloeng",
+      "YEARS_other": "{{count}} lilemo pele ho nako e reriloeng"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} motsotso ka mor'a nako e behiloeng",
+      "MINUTES_other": "Metsotso e {{count}} ka mor'a nako e behiloeng",
+      "HOURS_one": "{{count}} hora ka mor'a nako e behiloeng",
+      "HOURS_other": "Lihora tse {{count}} ka mor'a nako e behiloeng",
+      "DAYS_one": "{{count}} letsatsi ka mor'a nako e behiloeng",
+      "DAYS_other": "Matsatsi a {{count}} ka mor'a nako e behiloeng",
+      "WEEKS_one": "{{count}} beke ka mor'a nako e behiloeng",
+      "WEEKS_other": "{{count}} libeke ka mor'a nako e behiloeng",
+      "MONTHS_one": "{{count}} khoeli ka mor'a nako e behiloeng",
+      "MONTHS_other": "Likhoeli tse {{count}} ka mor'a nako e reriloeng",
+      "YEARS_one": "{{count}} selemo ka mor'a nako e behiloeng",
+      "YEARS_other": "{{count}} lilemo ka mor'a nako e reriloeng"
+    },
+    "units": {
+      "MINUTES_one": "motsotso",
+      "MINUTES_other": "metsotso",
+      "HOURS_one": "hora",
+      "HOURS_other": "lihora",
+      "DAYS_one": "letsatsi",
+      "DAYS_other": "matsatsi",
+      "WEEKS_one": "beke",
+      "WEEKS_other": "libeke",
+      "MONTHS_one": "khoeli",
+      "MONTHS_other": "likhoeli",
+      "YEARS_one": "selemo",
+      "YEARS_other": "lilemo"
+    }
+  }
+}

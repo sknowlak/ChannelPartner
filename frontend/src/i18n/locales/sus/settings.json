@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "ParamEtrE",
+    "noPermission": "Wo mu lan ma wo xa paramEtrEe ra gbata."
+  },
+  "categories": {
+    "lead": "A khaninfé",
+    "user": "User",
+    "integrations": "Integrasion"
+  },
+  "leadTabs": {
+    "fields": "XEe",
+    "statuses": "Status & Sub-Status",
+    "notifications": "Notifikasion & Scheduler"
+  },
+  "fields": {
+    "leadIntro": "Wo xa lead capture form rafala: yiree ra sEmbE so/a kana, wo e ma lanma, xa na mu wo yEtE kan xa yiree sa a fari.",
+    "userIntro": "Wo Add/Edit Team Member form rafala: yiree ra sEmbE so/a kana, wo e ma lanma, xa na mu wo yEtE kan yiree sa a fari.",
+    "addCustomField": "+ Add Custom Field",
+    "fieldLabel": "Field Label",
+    "group": "Gnama malankhi",
+    "groupPlaceholderLead": "misali ra, maxOrin gni",
+    "groupPlaceholderUser": "misali ra, fe gbEtE",
+    "dataType": "Data mOli",
+    "options": "Sugandi (koma itaxunxi)",
+    "requiredLead": "A lan ma - wo xa wali boree lan ma e xa yi sEbE ala ko e xa nO wo xili sEbE de",
+    "requiredUser": "A lan ma - a lan ma a xa sEbE wo na mixi nde sa a fari",
+    "creating": "A rafalafe...",
+    "createField": "yire rafala",
+    "columns": {
+      "field": "Khè",
+      "group": "Gnama malankhi",
+      "type": "A bombo",
+      "required": "Nakhan tidé gbo",
+      "enabled": "A sEmbE soxi",
+      "kind": "Gui mikhi"
+    },
+    "kind": {
+      "custom": "Namounyi",
+      "core": "Core (locked)",
+      "standard": "Kiya kerén"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Sèbèli",
+    "TEXTAREA": "Sɛbɛli xungbe",
+    "NUMBER": "Khassabi",
+    "CURRENCY": "Köbiri khili",
+    "DATE": "Lanlè",
+    "SELECT": "Dropdown",
+    "LIST": "Khiley"
+  },
+  "picker": {
+    "searchPlaceholder": "Wo xa lead fields fen...",
+    "summary": "{{shown}} shown · {{mandatory}} mandatory",
+    "mandatory": "Itin imou tin",
+    "noMatch": "XE yo mu lanma."
+  },
+  "statuses": {
+    "intro": "Wo xa lead status nun sub-status - naxan birin maxOrin ma (lOxE nun waxati, lead fields) mixi nde na lead ma nE.",
+    "add": "+ Status sa a fari",
+    "columns": {
+      "order": "Ara gnèrèfé",
+      "status": "Tonyi ya yèrèki",
+      "subStatuses": "Sub-Status",
+      "asksFor": "A maxOrinE",
+      "active": "Nakhan walifé"
+    },
+    "moveUp": "Wo te",
+    "moveDown": "Wo goro",
+    "defaultBadge": "Default for new leads",
+    "bookingBadge": "Booking status",
+    "asksForLabel": "{{label}} maxOrin",
+    "asksForDateTime": "A lOxE nun waxati maxOrin ma",
+    "none": "Mikhi yo",
+    "dateTime": "lOxE nun waxati",
+    "scheduledOn": "{{names}}",
+    "fieldsSummary_one": "{{count}} field ( {{mandatory}} mandatory)",
+    "fieldsSummary_other": "{{count}} fields ( {{mandatory}} mandatory)",
+    "deleteConfirm": "\" {{name}} \" xa fe kana? Na mu nOma gbilen de.",
+    "editTitle": "Wo xa fe masara - {{name}}",
+    "newTitle": "Status nEnE",
+    "name": "Status xili",
+    "colour": "Coulèri",
+    "active": "Nakhan walifé",
+    "isDefault": "Default status for new leads",
+    "isBooking": "Booking status (set by Complete Booking)",
+    "whenMoved": "Xa a sa li mixi nde bara siga yi ki",
+    "askSchedule": "Wo lOxE nun waxati maxOrin (wali raba ma)",
+    "scheduleLabelPlaceholder": "Label, misali ra wo siga",
+    "fieldsToShow": "Lead fields to show the update form",
+    "subStatusesTitle": "Sub-Status",
+    "subStatusesHint": "Sub-status birin nOma a yEtE kan xa lOxE nun waxati maxOrin de a man nOma a yEtE kan xa kEdie sa de a fari - naxan ma senxi status xa kEdie fari.",
+    "subStatusName": "Sub-status xili",
+    "subFields": "Fields ( {{count}} )",
+    "subScheduleLabelPlaceholder": "lOxE nun waxati sEbEli, misali ra wo xa gbilen wo xili de",
+    "addSubStatus": "+ Add Sub-Status",
+    "saveStatus": "Status ragata",
+    "createStatus": "Status rafala"
+  },
+  "notifications": {
+    "intro": "Wo mixi fangnie ra kolon wo xa mixi nde to a xa wali ra - keren na, xa na mu waxati nde beenun/na xanbi lOxE nun waxati naxan saxi a ma.",
+    "add": "+ Notification sa a fari",
+    "columns": {
+      "notification": "Notifikasion",
+      "whenStatusIs": "Xa a sa li",
+      "sends": "A rasanbama",
+      "to": "Minden",
+      "via": "Nakha anièma",
+      "enabled": "A sEmbE soxi"
+    },
+    "anyStatus": "Status yo",
+    "anySubStatus": "Sub-status yo",
+    "inactiveOption": "{{name}} (a mu walima)",
+    "emptyRules": "Notifikasion yo mu na sinden - wo keren sa a fari ala ko wo xa wo xa mixie ra kolon xa mixi nde bara a xa wali sOtO.",
+    "jobs": {
+      "title": "A rafalaxi a nun a rasanbaxi",
+      "firesAt": "tE na",
+      "notification": "Notifikasion",
+      "lead": "A khaninfé",
+      "status": "Tonyi ya yèrèki",
+      "details": "Détayei",
+      "empty": "Sese mu rafalaxi xa na mu a rasanbaxi sinden.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Ana mamètifé",
+      "PROCESSING": "Walife",
+      "SENT": "Rasamba",
+      "FAILED": "Lossi fé",
+      "SKIPPED": "A bara dangi",
+      "CANCELLED": "A bara kana"
+    },
+    "deliveryStatus": {
+      "SENT": "rasamba",
+      "FAILED": "Lossi fé",
+      "SKIPPED": "a raboloxi"
+    },
+    "deliveryChannel": {
+      "IN_APP": "appli kui",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "User sugandixi",
+      "owner": "Akagni",
+      "updatedBy": "A masarama",
+      "role": "Role: {{name}}"
+    },
+    "channels": {
+      "inApp": "App kui",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Wo xa \" {{name}} \" masen gni kana? Na ratude naxan nu na a kui a bara kana.",
+    "testPrompt": "Wo yi masen gni xEndE wo yEtE bE (in-app) wo xa lead ID mundun yusi?",
+    "testSent": "A rasanbaxi wo xa bell ma: {{title}} {{message}}",
+    "headersInvalid": "Webhook xunyi lan ma a xa findi JSON , misali ra {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Notifikasion masarama",
+    "newTitle": "Notifikasion nEnE",
+    "name": "Khili",
+    "namePlaceholder": "misali ra yire matofe ra ratufe",
+    "whenStatus": "Xa a sa li yarerati xa fe na",
+    "subStatus": "Sub-status",
+    "send": "Rasanba (wali raba)",
+    "custom": "Namounyi...",
+    "modeBefore": "beenun waxati sugandixi xa a li",
+    "modeAfter": "waxati sugandixi dangi xanbi",
+    "noScheduleWarning": "Yi fe mu lOxE nun waxati maxOrin ma, na nan a ra \"before/at/after scheduled time\" masen gni mu fama minide.",
+    "noScheduleFix": "<strong>Wo xa lOxE nun waxati</strong> maxOrin Status & Sub-Status bun ma, xa na mu wo xa a rasanba keren na.",
+    "sendTo": "Wo xa a rasanba (naxan birin malanxi)",
+    "recipientAssigned": "User sugandixi (a kanyi xungbe)",
+    "recipientOwner": "Konti kanyi / xunmati",
+    "recipientUpdatedBy": "Mixi naxan yi fe masarama",
+    "everyoneWithRole": "Mixi birin na a xa wali kui",
+    "specificUsers": "Mixi keren keren ma (naxan na walife)",
+    "inactiveNever": "Mixi naxee mu walima e mu xibaarue sOtO ma, hali e sugandixi.",
+    "deliverVia": "Wo xa a rasanba",
+    "channelInApp": "In-app (bell)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS provider)",
+    "emailHint": "Email siga ma mixi keren keren ma email yire a nun a lan ma a xa SMTP sa serveur ma (backend/.env); han na waxati ma email xEndEe fama nE sEbEde alo a bara kana.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Xunmati ( JSON )",
+    "content": "Notifikasion kui",
+    "title": "Khou yi",
+    "message": "Gnounkhoui",
+    "insertIntoTitle": "Wo a sa title kui",
+    "insertIntoMessage": "Wo a sa masen gni kui",
+    "anyLeadField": "Lead field birin fan walima, misali ra <code1>{{example1}}</code1> xa na mu <code2>{{example2}}</code2> .",
+    "preview": "A singe (misali singe)",
+    "enabled": "A sEmbE soxi",
+    "saveRule": "Notifikasion ragata",
+    "createRule": "Notifikasion raba",
+    "variables": {
+      "customerName": "Xili xungbe",
+      "customerMobile": "Lead mobile",
+      "customerEmail": "Email xungbe",
+      "registrationId": "Lead ID",
+      "status": "Tonyi ya yèrèki",
+      "subStatus": "Sub-status",
+      "scheduleAt": "lOxE nun waxati sugandixi",
+      "assignedTo": "User sugandixi",
+      "updatedBy": "A masarama",
+      "recipient": "Mixi xili",
+      "project": "Projè",
+      "notes": "Note dOnxE",
+      "partner": "Wo bore xili"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "keren na waxati naxan ma a xa status saxi",
+      "AT": "waxati sugandixi ma",
+      "A1D": "1 lOxun keren waxati sugandixi dangi xanbi (wo xa bira a fOxOra)"
+    },
+    "immediately": "Yaya",
+    "atScheduled": "waxati sugandixi ma",
+    "before": {
+      "MINUTES_one": "{{count}} miniti beenun waxati sugandixi xa a li",
+      "MINUTES_other": "{{count}} miniti beenun waxati sugandixi xa a li",
+      "HOURS_one": "{{count}} waxati singe beenun waxati sugandixi xa a li",
+      "HOURS_other": "{{count}} waxati beenun waxati sugandixi xa a li",
+      "DAYS_one": "{{count}} lOxun singe beenun waxati sugandixi xa a li",
+      "DAYS_other": "{{count}} lOxE beenun waxati sugandixi xa a li",
+      "WEEKS_one": "{{count}} lOxun singe beenun waxati sugandixi xa a li",
+      "WEEKS_other": "{{count}} lOxun dangixi beenun waxati sugandixi xa a li",
+      "MONTHS_one": "{{count}} kike beenun waxati sugandixi xa a li",
+      "MONTHS_other": "{{count}} kike beenun waxati sugandixi xa a li",
+      "YEARS_one": "{{count}} gnE singe beenun waxati sugandixi xa a li",
+      "YEARS_other": "{{count}} gnE singe beenun waxati sugandixi xa a li"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} miniti dangi xanbi waxati sugandixi",
+      "MINUTES_other": "{{count}} miniti waxati sugandixi dangi xanbi",
+      "HOURS_one": "{{count}} waxati dangi xanbi waxati sugandixi",
+      "HOURS_other": "{{count}} waxati dangi xanbi",
+      "DAYS_one": "{{count}} lOxun dangi xanbi waxati sugandixi",
+      "DAYS_other": "{{count}} lOxun dangi xanbi waxati sugandixi",
+      "WEEKS_one": "{{count}} lOxun dangixi waxati sugandixi dangi xanbi",
+      "WEEKS_other": "{{count}} lOxun dangixi waxati sugandixi dangi xanbi",
+      "MONTHS_one": "{{count}} kike dangi xanbi waxati sugandixi",
+      "MONTHS_other": "{{count}} kike dangi xanbi waxati sugandixi",
+      "YEARS_one": "{{count}} ɲɛ dangi xanbi waxati sugandixi",
+      "YEARS_other": "{{count}} gnE wuyaxi waxati sugandixi dangi xanbi"
+    },
+    "units": {
+      "MINUTES_one": "miniti",
+      "MINUTES_other": "minitey",
+      "HOURS_one": "lèri",
+      "HOURS_other": "lèri",
+      "DAYS_one": "lokhè",
+      "DAYS_other": "lOxE",
+      "WEEKS_one": "lökhounyi",
+      "WEEKS_other": "lOxun",
+      "MONTHS_one": "kiké",
+      "MONTHS_other": "kike",
+      "YEARS_one": "gnè",
+      "YEARS_other": "gnèey"
+    }
+  }
+}

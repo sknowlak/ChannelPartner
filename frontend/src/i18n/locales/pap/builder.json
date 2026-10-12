@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal di Konstruktor",
+    "referrals": "Referensianan",
+    "builderLogin": "Login di konstruktor",
+    "partnerLogin": "Login di Partner di Kanal"
+  },
+  "login": {
+    "title": "Konstruktor a drenta",
+    "hint": "Kuentanan di konstruktor ta wòrdu kreá dor di Leadrat . Puntra bo atministradó si bo no tin un."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Wardando riba bo desishon",
+    "ACCEPTED": "Aseptá",
+    "REJECTED": "Rechasá"
+  },
+  "list": {
+    "title": "Referensianan",
+    "allProjects": "Tur proyekto",
+    "allStatuses": "Tur status",
+    "count_one": "{{count}} referensia",
+    "count_other": "{{count}} referensia",
+    "columns": {
+      "referral": "Referensia",
+      "customer": "Kliente",
+      "project": "Proyekto",
+      "sourcePartner": "Partner di Fuente",
+      "status": "Estado",
+      "booking": "Reservashon",
+      "registered": "Registrá"
+    },
+    "booked": "Reservá",
+    "empty": "No tin referensia ainda."
+  },
+  "detail": {
+    "customer": "Kliente",
+    "sourcePartner": "Partner di Fuente",
+    "attributionNote": "(atribushon - no por wòrdu kambia)",
+    "leadStatus": "Status di Lider",
+    "protectedUntil": "Protehá Te",
+    "referral": "Referensia",
+    "reason": "Motibu: {{reason}}",
+    "booking": "Reservashon",
+    "bookedOwner": "Reservá - bo ta e doño operashonal",
+    "notBooked": "No a reservá",
+    "sharedAfterBooking": "Kompartí despues di reservashon",
+    "accept": "Aseptá Referensia",
+    "confirmBooking": "Konfirmá Reservashon",
+    "reject": "Rechasá Referensia",
+    "rejectReasonLabel": "Motibu pa rechasá (mustra na e partner) *",
+    "rejectConfirm": "Rechasá",
+    "confirmBookingPrompt": "Konfirmá e reservashon? E propiedat operashonal ta pasa pa bo i e partner ta bira eligibel pa komishon.",
+    "notice": {
+      "booked": "Reservashon konfirmá.",
+      "accepted": "Referensia ta wòrdu aseptá.",
+      "rejected": "Referensia rechasá."
+    },
+    "backToReferrals": "Bek na Referensianan"
+  },
+  "history": {
+    "title": "Historia",
+    "actor": {
+      "system": "Sistema",
+      "partner": "Partner di kanal",
+      "admin": "Admin Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Registrashon di partner a risibí",
+      "DUPLICATE_CHECK_COMPLETED": "Kòntròl di duplikado kompletá - no a haña duplikado aktivo",
+      "REGISTRATION_ACCEPTED": "Inskripshon ta wòrdu aseptá",
+      "PROTECTION_GRANTED_one": "{{count}} -protekshon di dia otorgá",
+      "PROTECTION_GRANTED_other": "{{count}} -protekshon di dia otorgá",
+      "STAGE_UPDATED": "Status aktualisá na {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Kampo {{count}} aktualisá",
+      "LEAD_DETAILS_UPDATED_other": "Kamponan di {{count}} aktualisá",
+      "LEAD_ASSIGNED": "Asigná na {{name}}",
+      "LEAD_UNASSIGNED": "No asigná",
+      "REFERRAL_ACCEPTED": "Konstruktor a aseptá e referensia",
+      "REFERRAL_REJECTED": "Konstruktor a rechasá e referensia. Motibu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Intento di registrashon dupliká di {{partner}} a wòrdu rechasá",
+      "BOOKING_COMPLETED": "Reservashon kompletá",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Propiedat operashonal a wòrdu transferí pa Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribushon di partner konserbá",
+      "COMMISSION_ELIGIBILITY_CREATED": "Eligibilidat pa komishon a wòrdu kreá",
+      "HANDOVER_COMPLETED": "Entrega kompletá",
+      "ADMIN_PROTECTION_RELEASED": "Atministradó a lansa protekshon di duplikado trempan. Motibu: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin a reasigná registrashon di {{from}} pa {{to}} . Motibu: {{reason}}"
+    }
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "list": {
+    "title": "Мои лиды",
+    "signedInAs": "Выполнен вход как {{name}} ( {{partnerId}} ) · время указано в {{timezone}}",
+    "addLead": "+ Добавить интерес",
+    "tabs": {
+      "all": "Все ( {{count}} )",
+      "pending": "В ожидании ( {{count}} )",
+      "booked": "Забронировано ( {{count}} )"
+    },
+    "searchPlaceholder": "Поиск по имени, мобильному телефону или регистрационному ID ...",
+    "manageColumns": "Управление столбцами",
+    "rowsPerPage": "Строков на странице",
+    "registrationId": "Регистрационный ID",
+    "emptyState": "Лидов пока нет – зарегистрируйте первого.",
+    "noMatch": "Ни один интерес не соответствует этим фильтрам.",
+    "showing": "Показаны записи {{from}} – {{to}} из {{total}}",
+    "actions": {
+      "preview": "Предварительный просмотр и быстрое обновление",
+      "history": "История",
+      "email": "Электронная почта",
+      "whatsapp": "WhatsApp",
+      "call": "Вызов"
+    },
+    "pagination": {
+      "first": "Первая страница",
+      "previous": "Предыдущая страница",
+      "next": "Следующая страница",
+      "last": "Последняя страница"
+    }
+  },
+  "columns": {
+    "status": "Статус",
+    "assignTo": "Назначить кому",
+    "booked": "Забронировано",
+    "protectionUntil": "Защита до"
+  },
+  "booking": {
+    "booked": "Забронировано",
+    "pending": "В ожидании"
+  },
+  "assign": {
+    "unassigned": "Неназначенный",
+    "owner": "{{name}} (Владелец)",
+    "inactive": "{{name}} (неактивно)",
+    "unknownUser": "Неизвестный пользователь",
+    "assignedTo": "Назначено {{name}}"
+  },
+  "form": {
+    "addTitle": "Добавить интерес",
+    "editTitle": "Изменить интерес",
+    "noPermissionAdd": "У вас нет разрешения на регистрацию потенциальных клиентов.",
+    "noPermissionEdit": "У вас недостаточно прав для редактирования интересов.",
+    "selectPlaceholder": "Выбирать...",
+    "commaSeparated": "Через запятую",
+    "phonePlaceholder": "Номер телефона",
+    "countryCode": "Код страны"
+  },
+  "project": {
+    "none": "Проекта пока нет (не передано)",
+    "notInList": "{{project}} (нет в списке проектов)"
+  },
+  "journey": {
+    "customer": "Клиент",
+    "currentOwner": "Текущий владелец",
+    "protectionExpiry": "Срок действия защиты",
+    "leadStatus": "Статус лида",
+    "scheduled": "Запланировано",
+    "assignedTo": "Назначено",
+    "referral": "Направление",
+    "builderReason": "Причина строителя: {{reason}}",
+    "bookedHint": "Забронировано застройщиком – эксплуатационная собственность перешла к застройщику; ваша атрибуция и право на получение комиссионных сохраняются.",
+    "notBookedHint": "Бронирование подтверждается застройщиком после принятия рекомендации.",
+    "quickUpdate": "Быстрое обновление",
+    "leadDetails": "Подробности о лиде",
+    "progressHistory": "История прогресса",
+    "timesIn": "(время в {{timezone}} )",
+    "backToMyLeads": "Вернуться к моим лидам",
+    "editLead": "Изменить интерес"
+  },
+  "referral": {
+    "NOT_REFERRED": "Не передано (нет проекта)",
+    "PENDING_BUILDER": "В ожидании застройщика",
+    "ACCEPTED": "Принято застройщиком",
+    "REJECTED": "Отклонено застройщиком"
+  },
+  "preview": {
+    "ariaLabel": "Предварительный просмотр потенциальных клиентов",
+    "title": "Предварительный просмотр потенциальных клиентов",
+    "source": "Источник",
+    "location": "Расположение",
+    "scheduled": "Запланировано",
+    "registered": "Зарегистрирован",
+    "latestNote": "Последняя заметка",
+    "quickUpdate": "Быстрое обновление",
+    "fullDetails": "Полная информация",
+    "editLead": "Изменить интерес",
+    "history": "История"
+  },
+  "quick": {
+    "assignedTo": "Назначено",
+    "status": "Статус",
+    "subStatus": "Подстатус",
+    "selectSubStatus": "Выберите подстатус...",
+    "none": "Никто",
+    "scheduledAt": "Запланировано на",
+    "localTime": "местное время",
+    "note": "Примечание",
+    "notePlaceholder": "Что произошло во время этого звонка/визита? (необязательный)",
+    "updateStatus": "Обновить статус",
+    "statusUpdated": "Статус обновлен",
+    "bookedLocked": "Этот лид зарезервирован — его статус уже нельзя изменить.",
+    "viewOnly": "Вы можете просмотреть этот интерес, но ваша роль не может его обновлять."
+  },
+  "history": {
+    "title": "История – {{registrationId}}",
+    "tabs": {
+      "all": "Все",
+      "status": "Статус",
+      "assignment": "Назначение",
+      "notes": "Примечания"
+    },
+    "doneBy": "Выполнил {{actor}}",
+    "system": "Система",
+    "platforms": {
+      "System": "Система",
+      "External": "Внешний",
+      "Web": "Интернет",
+      "Mobile": "мобильный"
+    },
+    "added": "добавлен",
+    "updated": "обновлено",
+    "empty": "(пустой)",
+    "noHistory": "В этой категории пока нет истории.",
+    "fieldLabels": {
+      "stage": "Статус",
+      "subStatus": "Подстатус",
+      "scheduledAt": "Расписание",
+      "notes": "Примечания",
+      "assignedTo": "Назначено"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Регистрация партнера получена",
+      "DUPLICATE_CHECK_COMPLETED": "Проверка дубликатов завершена: активных дубликатов не обнаружено.",
+      "REGISTRATION_ACCEPTED": "Регистрация принята",
+      "PROTECTION_GRANTED_one": "Предоставлена ​​защита на {{count}} дней",
+      "PROTECTION_GRANTED_few": "Предоставлена ​​защита на {{count}} дней",
+      "PROTECTION_GRANTED_many": "Предоставлена ​​защита на {{count}} дней",
+      "PROTECTION_GRANTED_other": "Предоставлена ​​защита на {{count}} дней",
+      "REGISTRATION_ATTEMPT_REJECTED": "Повторная попытка регистрации со стороны {{partnerId}} отклонена",
+      "LEAD_DETAILS_UPDATED_one": "Обновлено поле {{count}}",
+      "LEAD_DETAILS_UPDATED_few": "Обновлено полей: {{count}} .",
+      "LEAD_DETAILS_UPDATED_many": "Обновлено полей: {{count}} .",
+      "LEAD_DETAILS_UPDATED_other": "Обновлено полей: {{count}} .",
+      "STAGE_UPDATED": "Статус обновлен до {{status}}",
+      "LEAD_ASSIGNED": "Назначено {{name}}",
+      "LEAD_UNASSIGNED": "Неназначенный",
+      "BOOKING_COMPLETED": "Бронирование завершено",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Операционная собственность передана застройщику",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Атрибуция партнера сохранена.",
+      "COMMISSION_ELIGIBILITY_CREATED": "Право на участие в комиссии создано",
+      "HANDOVER_COMPLETED": "Передача завершена",
+      "REFERRAL_ACCEPTED": "Застройщик принял рекомендацию",
+      "REFERRAL_REJECTED": "Застройщик отклонил это предложение. Причина: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Администратор досрочно выпустил защиту от дублирования. Причина: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Администратор переназначил регистрацию с {{from}} на {{to}} . Причина: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Управление столбцами",
+    "hint": "Перетащите, чтобы изменить порядок · отметьте, чтобы показать",
+    "showAll": "Показать все",
+    "resetDefault": "Сбросить настройки по умолчанию"
+  },
+  "filters": {
+    "title": "Фильтры",
+    "allProjects": "Все проекты",
+    "any": "Любой",
+    "noFields": "Никакие другие фильтруемые поля пока не активированы (Настройки > Интерес).",
+    "clearAll": "Очистить все"
+  },
+  "phone": {
+    "MISSING": "Требуется номер телефона.",
+    "INVALID": "Пожалуйста, введите действительный номер телефона.",
+    "TOO_SHORT": "Номер телефона слишком короткий.",
+    "TOO_LONG": "Номер телефона слишком длинный.",
+    "INVALID_FOR_COUNTRY": "Этот номер телефона недействителен для {{country}} .",
+    "COUNTRY_MISMATCH": "Пожалуйста, выберите правильный код страны.",
+    "NOT_MOBILE": "Пожалуйста, введите номер мобильного телефона, а не стационарного."
+  }
+}

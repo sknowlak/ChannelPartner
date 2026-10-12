@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Төҙөүселәр порталы",
+    "referrals": "Йүнәлтмәләр",
+    "builderLogin": "Төҙөүсе инеү",
+    "partnerLogin": "Канал партнерына инеү"
+  },
+  "login": {
+    "title": "Төҙөүсе инә",
+    "hint": "Төҙөүсе иҫәп яҙмалары Leadrat тарафынан булдырыла. Администраторығыҙҙан һорағыҙ, әгәр ҙә һеҙҙә юҡ икән."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Һинең ҡарарыңды көтәм .",
+    "ACCEPTED": "Ҡабул ителде",
+    "REJECTED": "Кире ҡағыла"
+  },
+  "list": {
+    "title": "Йүнәлтмәләр",
+    "allProjects": "Бөтә проекттар",
+    "allStatuses": "Бөтә статустар",
+    "count_one": "{{count}} йүнәлтмә",
+    "count_other": "{{count}} йүнәлтмәләр",
+    "columns": {
+      "referral": "Йүнәлтмә",
+      "customer": "Клиент",
+      "project": "Проект",
+      "sourcePartner": "Сығанаҡ партнеры",
+      "status": "Статус",
+      "booking": "Бронирование",
+      "registered": "Теркәлгән"
+    },
+    "booked": "Бронировать",
+    "empty": "Әлегә йүнәлтмәләр юҡ."
+  },
+  "detail": {
+    "customer": "Клиент",
+    "sourcePartner": "Сығанаҡ партнеры",
+    "attributionNote": "(атрибуция - үҙгәртеп булмай)",
+    "leadStatus": "Ҡуҙғыс статусы",
+    "protectedUntil": "2014 йылға тиклем һаҡлана.",
+    "referral": "Йүнәлтмә",
+    "reason": "Сәбәп: {{reason}}",
+    "booking": "Бронирование",
+    "bookedOwner": "Бронировать - һеҙ оператив хужа",
+    "notBooked": "Заказ бирелмәгән",
+    "sharedAfterBooking": "Бронированиенан һуң бүлешелгән",
+    "accept": "Йүнәлтмә ҡабул итеү",
+    "confirmBooking": "Бронированиены раҫлау",
+    "reject": "Йүнәлтмәне кире ҡағыу",
+    "rejectReasonLabel": "Кире ҡағыу сәбәбе (партнерға күрһәтелә) *",
+    "rejectConfirm": "Ҡабул итмәҫкә",
+    "confirmBookingPrompt": "Бронированиены раҫларғамы? Оператив милек һеҙгә күсә һәм партнер комиссия хоҡуғына эйә була.",
+    "notice": {
+      "booked": "Бронирование раҫланды.",
+      "accepted": "Йүнәлтмә ҡабул ителә.",
+      "rejected": "Йүнәлтмә кире ҡағыла."
+    },
+    "backToReferrals": "Йүнәлтмәләргә кире ҡайтыу"
+  },
+  "history": {
+    "title": "Тарих",
+    "actor": {
+      "system": "Система",
+      "partner": "Канал партнеры",
+      "admin": "Leadrat админ"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Партнер теркәү алынды",
+      "DUPLICATE_CHECK_COMPLETED": "Дубликат тикшерелде - әүҙем дубликат табылманы",
+      "REGISTRATION_ACCEPTED": "Теркәлеү ҡабул ителә",
+      "PROTECTION_GRANTED_one": "{{count}} -көн яҡлау бирелгән",
+      "PROTECTION_GRANTED_other": "{{count}} -көн яҡлау бирелгән",
+      "STAGE_UPDATED": "Статус {{stage}} тип яңыртылды",
+      "LEAD_DETAILS_UPDATED_one": "Яңыртылған {{count}} яланы",
+      "LEAD_DETAILS_UPDATED_other": "Яңыртылған {{count}} яландары",
+      "LEAD_ASSIGNED": "{{name}} исеменә тәғәйенләнгән",
+      "LEAD_UNASSIGNED": "Тәғәйенләнмәгән",
+      "REFERRAL_ACCEPTED": "Төҙөүсе йүнәлтмәне ҡабул итте",
+      "REFERRAL_REJECTED": "Төҙөүсе йүнәлтмәне кире ҡаҡты. Сәбәп: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} тарафынан ҡабатланған теркәү маташыуы кире ҡағыла",
+      "BOOKING_COMPLETED": "Бронирование тамамланды",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Оператив милек төҙөүсегә тапшырылды",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Партнер атрибуцияһы һаҡланған",
+      "COMMISSION_ELIGIBILITY_CREATED": "Комиссия хоҡуғы булдырылған",
+      "HANDOVER_COMPLETED": "Тапшырыу тамамланды",
+      "ADMIN_PROTECTION_RELEASED": "Админ дубликаттар һаҡлауҙы иртә сығарҙы. Сәбәп: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Админ теркәүҙе {{from}} -тан {{to}} -ға үҙгәртте. Сәбәп: {{reason}}"
+    }
+  }
+}

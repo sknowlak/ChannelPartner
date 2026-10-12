@@ -1,0 +1,87 @@
+{
+  "shell": {
+    "portal": "พอร์ทัลผู้สร้าง",
+    "referrals": "การอ้างอิง",
+    "builderLogin": "เข้าสู่ระบบตัวสร้าง",
+    "partnerLogin": "เข้าสู่ระบบพันธมิตรช่องทาง"
+  },
+  "login": {
+    "title": "ผู้สร้างลงชื่อเข้าใช้",
+    "hint": "บัญชีตัวสร้างถูกสร้างขึ้นโดย Leadrat สอบถามผู้ดูแลระบบของคุณหากคุณไม่มี"
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "รอการตัดสินใจของคุณ",
+    "ACCEPTED": "ได้รับการยอมรับ",
+    "REJECTED": "ถูกปฏิเสธ"
+  },
+  "list": {
+    "title": "การอ้างอิง",
+    "allProjects": "ทุกโครงการ",
+    "allStatuses": "สถานะทั้งหมด",
+    "count_other": "ผู้อ้างอิง {{count}} ราย",
+    "columns": {
+      "referral": "การอ้างอิง",
+      "customer": "ลูกค้า",
+      "project": "โครงการ",
+      "sourcePartner": "พันธมิตรต้นทาง",
+      "status": "สถานะ",
+      "booking": "การจอง",
+      "registered": "ลงทะเบียนแล้ว"
+    },
+    "booked": "จองแล้ว",
+    "empty": "ยังไม่มีการอ้างอิง"
+  },
+  "detail": {
+    "customer": "ลูกค้า",
+    "sourcePartner": "พันธมิตรต้นทาง",
+    "attributionNote": "(การระบุแหล่งที่มา - ไม่สามารถเปลี่ยนแปลงได้)",
+    "leadStatus": "สถานะลูกค้าเป้าหมาย",
+    "protectedUntil": "ได้รับการคุ้มครองจนถึง",
+    "referral": "การอ้างอิง",
+    "reason": "เหตุผล: {{reason}}",
+    "booking": "การจอง",
+    "bookedOwner": "จองแล้ว - คุณเป็นเจ้าของการดำเนินการ",
+    "notBooked": "ไม่ได้จอง",
+    "sharedAfterBooking": "แชร์หลังการจอง",
+    "accept": "ยอมรับการอ้างอิง",
+    "confirmBooking": "ยืนยันการจอง",
+    "reject": "ปฏิเสธการอ้างอิง",
+    "rejectReasonLabel": "เหตุผลในการปฏิเสธ (แสดงต่อพันธมิตร) *",
+    "rejectConfirm": "ปฏิเสธ",
+    "confirmBookingPrompt": "ยืนยันการจอง? ความเป็นเจ้าของในการปฏิบัติงานจะย้ายมาที่คุณ และพันธมิตรจะมีสิทธิ์ได้รับค่าคอมมิชชั่น",
+    "notice": {
+      "booked": "ยืนยันการจองแล้ว",
+      "accepted": "ยอมรับการอ้างอิงแล้ว",
+      "rejected": "การอ้างอิงถูกปฏิเสธ"
+    },
+    "backToReferrals": "กลับไปที่การอ้างอิง"
+  },
+  "history": {
+    "title": "ประวัติศาสตร์",
+    "actor": {
+      "system": "ระบบ",
+      "partner": "พันธมิตรช่องทาง",
+      "admin": "Leadrat แอดมิน"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "ได้รับการลงทะเบียนพันธมิตรแล้ว",
+      "DUPLICATE_CHECK_COMPLETED": "ตรวจสอบซ้ำเสร็จสมบูรณ์ - ไม่พบรายการซ้ำที่ใช้งานอยู่",
+      "REGISTRATION_ACCEPTED": "ยอมรับการลงทะเบียนแล้ว",
+      "PROTECTION_GRANTED_other": "ได้รับความคุ้มครอง {{count}} วัน",
+      "STAGE_UPDATED": "สถานะอัปเดตเป็น {{stage}}",
+      "LEAD_DETAILS_UPDATED_other": "อัปเดต {{count}} ช่องแล้ว",
+      "LEAD_ASSIGNED": "มอบหมายให้ {{name}}",
+      "LEAD_UNASSIGNED": "ยังไม่ได้มอบหมาย",
+      "REFERRAL_ACCEPTED": "ผู้สร้างยอมรับการอ้างอิงแล้ว",
+      "REFERRAL_REJECTED": "ตัวสร้างปฏิเสธการอ้างอิง เหตุผล: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "ความพยายามในการลงทะเบียนซ้ำโดย {{partner}} ถูกปฏิเสธ",
+      "BOOKING_COMPLETED": "การจองเสร็จสมบูรณ์",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "กรรมสิทธิ์ในการดำเนินงานโอนไปยัง Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "การระบุแหล่งที่มาของพันธมิตรยังคงอยู่",
+      "COMMISSION_ELIGIBILITY_CREATED": "สร้างสิทธิ์คอมมิชชั่นแล้ว",
+      "HANDOVER_COMPLETED": "การส่งมอบเสร็จสมบูรณ์",
+      "ADMIN_PROTECTION_RELEASED": "ผู้ดูแลระบบเผยแพร่การป้องกันซ้ำล่วงหน้า เหตุผล: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "ผู้ดูแลระบบมอบหมายการลงทะเบียนใหม่จาก {{from}} เป็น {{to}} เหตุผล: {{reason}}"
+    }
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Dagiti Mangiturongko",
+    "signedInAs": "Napirmaan a kas {{name}} ( {{partnerId}} ) · dagiti oras a naipakita iti {{timezone}}",
+    "addLead": "+ Inayon ti Lead",
+    "tabs": {
+      "all": "Amin ( {{count}} ) .",
+      "pending": "Pending ( {{count}} ) .",
+      "booked": "Nag-book ( {{count}} ) ."
+    },
+    "searchPlaceholder": "Agbirok babaen ti nagan, mobile, wenno registration ID ...",
+    "manageColumns": "Imanehar dagiti Kolum",
+    "rowsPerPage": "Dagiti hilera iti kada panid",
+    "registrationId": "ID ti panagrehistro",
+    "emptyState": "Awan pay ti leads - irehistrom ti umuna.",
+    "noMatch": "Awan dagiti lead a maitunos kadagitoy a filter.",
+    "showing": "Ipakita ti {{from}} - {{to}} dagiti {{total}} a panagserrek",
+    "actions": {
+      "preview": "Preview & napardas nga update",
+      "history": "Pakasaritaan",
+      "email": "I-email",
+      "whatsapp": "WhatsApp",
+      "call": "Awagan"
+    },
+    "pagination": {
+      "first": "Umuna a panid",
+      "previous": "Naudi a panid",
+      "next": "Sumaruno a panid",
+      "last": "Maudi a panid"
+    }
+  },
+  "columns": {
+    "status": "Estado",
+    "assignTo": "Ituding Iti",
+    "booked": "Na-book",
+    "protectionUntil": "Proteksion Agingga"
+  },
+  "booking": {
+    "booked": "Na-book",
+    "pending": "Naisardeng biit"
+  },
+  "assign": {
+    "unassigned": "Saan a naituding",
+    "owner": "{{name}} (Makinkukua) .",
+    "inactive": "{{name}} (saan nga aktibo) .",
+    "unknownUser": "Di ammo nga agus-usar",
+    "assignedTo": "Naituding iti {{name}}"
+  },
+  "form": {
+    "addTitle": "Inayon ti Lead",
+    "editTitle": "Urnosen ti Lead",
+    "noPermissionAdd": "Awan ti pammalubosmo a mangirehistro kadagiti lead.",
+    "noPermissionEdit": "Awan ti pammalubosmo nga ag-edit kadagiti lead.",
+    "selectPlaceholder": "Agpili...",
+    "commaSeparated": "Nagsina ti koma",
+    "phonePlaceholder": "Numero ti telepono",
+    "countryCode": "Kodigo ti pagilian"
+  },
+  "project": {
+    "none": "Awan pay ti proyekto (saan a naitudo) .",
+    "notInList": "{{project}} (saan nga iti listaan ​​ti proyekto) ."
+  },
+  "journey": {
+    "customer": "Kostumer",
+    "currentOwner": "Agdama nga Agtagikua",
+    "protectionExpiry": "Panagleppas ti Proteksion",
+    "leadStatus": "Kasasaad ti Lead",
+    "scheduled": "Naiskediul",
+    "assignedTo": "Naituding Iti",
+    "referral": "Panangiturong",
+    "builderReason": "Rason ti managibangon: {{reason}}",
+    "bookedHint": "Booked ti builder - ti operational ownership ket immakar iti builder; mataginayon ti attribution ken commission eligibility-mo.",
+    "notBookedHint": "Dagiti panag-book ket pinasingkedan ti builder apaman nga awatenda ti referral.",
+    "quickUpdate": "Napartak nga Update",
+    "leadDetails": "Dagiti Detalye ti Lead",
+    "progressHistory": "Pakasaritaan ti Panagrang-ay",
+    "timesIn": "(dagiti oras iti {{timezone}} )",
+    "backToMyLeads": "Agsubli Kadagiti Mangiturongko",
+    "editLead": "Urnosen ti Lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "Saan a naitudo (awan ti proyekto) .",
+    "PENDING_BUILDER": "Agur-uray iti builder",
+    "ACCEPTED": "Inawat ti managibangon",
+    "REJECTED": "Inlaksid ti managibangon"
+  },
+  "preview": {
+    "ariaLabel": "Panangidaulo ti preview",
+    "title": "Preview ti Lead",
+    "source": "Pammataudan",
+    "location": "Lokasion",
+    "scheduled": "Naiskediul",
+    "registered": "Nairehistro",
+    "latestNote": "Kaudian a Pakaammo",
+    "quickUpdate": "Napartak nga Update",
+    "fullDetails": "Naan-anay a Detalye",
+    "editLead": "Urnosen ti Lead",
+    "history": "Pakasaritaan"
+  },
+  "quick": {
+    "assignedTo": "Naituding Iti",
+    "status": "Estado",
+    "subStatus": "Sub-Kasasaad",
+    "selectSubStatus": "Pilien ti sub-status...",
+    "none": "Awan",
+    "scheduledAt": "Naikeddeng iti",
+    "localTime": "lokal nga oras",
+    "note": "Lagipen",
+    "notePlaceholder": "Ania ti napasamak iti daytoy nga awag / panagbisita? (opsional)",
+    "updateStatus": "Ipabaro ti Kasasaad",
+    "statusUpdated": "Na-update ti kasasaad",
+    "bookedLocked": "Daytoy a lead ket na-book - ti kasasaadna ket saanen a mabalin a mabaliwan.",
+    "viewOnly": "Mabalinmo a kitaen daytoy a lead, ngem ti akemmo ket saan a maka-update."
+  },
+  "history": {
+    "title": "Pakasaritaan - {{registrationId}}",
+    "tabs": {
+      "all": "Amin",
+      "status": "Estado",
+      "assignment": "Panangidutok",
+      "notes": "Dagiti Pakaammo"
+    },
+    "doneBy": "Inaramid ni {{actor}}",
+    "system": "Sistema",
+    "platforms": {
+      "System": "Sistema",
+      "External": "Iti ruar",
+      "Web": "Web",
+      "Mobile": "Mobile"
+    },
+    "added": "innayonna",
+    "updated": "na-update",
+    "empty": "(ubbaw)",
+    "noHistory": "Awan pay ti pakasaritaan iti daytoy a kategoria.",
+    "fieldLabels": {
+      "stage": "Estado",
+      "subStatus": "Sub-Kasasaad",
+      "scheduledAt": "Iskediul",
+      "notes": "Dagiti Pakaammo",
+      "assignedTo": "Naituding Iti"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} ) .",
+    "events": {
+      "REGISTRATION_RECEIVED": "Naawat ti panagrehistro ti partner",
+      "DUPLICATE_CHECK_COMPLETED": "Nalpasen ti duplikado a tseke - awan ti aktibo a duplikado a nasarakan",
+      "REGISTRATION_ACCEPTED": "Maawat ti panagrehistro",
+      "PROTECTION_GRANTED_one": "{{count}} -aldaw a proteksion ti naited",
+      "PROTECTION_GRANTED_other": "{{count}} -aldaw a proteksion ti naited",
+      "REGISTRATION_ATTEMPT_REJECTED": "Ti duplikado a panagpadas ti panagrehistro babaen ti {{partnerId}} ket nailaksid",
+      "LEAD_DETAILS_UPDATED_one": "Napabaro ti {{count}} a tay-ak",
+      "LEAD_DETAILS_UPDATED_other": "Napabaro dagiti {{count}} a tay-ak",
+      "STAGE_UPDATED": "Na-update ti kasasaad iti {{status}}",
+      "LEAD_ASSIGNED": "Naituding iti {{name}}",
+      "LEAD_UNASSIGNED": "Saan a naituding",
+      "BOOKING_COMPLETED": "Nalpas ti panag-book",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operational ownership ti nayakar iti Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Napreserba ti partner attribution",
+      "COMMISSION_ELIGIBILITY_CREATED": "Naparsua ti pannakakualipika iti komision",
+      "HANDOVER_COMPLETED": "Nalpasen ti handover",
+      "REFERRAL_ACCEPTED": "Inawat ni Builder ti referral",
+      "REFERRAL_REJECTED": "Inlaksid ni Builder ti referral. Rason: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Nasapa nga inruar ni Admin ti duplicate protection. Rason: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Intuding manen ti admin ti panagrehistro manipud iti {{from}} aginggana iti {{to}} . Rason: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Imanehar dagiti Kolum",
+    "hint": "I-drag tapno maurnos manen · i-check tapno maipakita",
+    "showAll": "Ipakita Amin",
+    "resetDefault": "I-reset iti Default"
+  },
+  "filters": {
+    "title": "Dagiti pagsala",
+    "allProjects": "Amin a proyekto",
+    "any": "Aniaman",
+    "noFields": "Awan pay dagiti sabali a masala a tay-ak a napalubosan (Settings > Lead).",
+    "clearAll": "Nalawag Amin"
+  },
+  "phone": {
+    "MISSING": "Masapul ti numero ti telepono.",
+    "INVALID": "Pangngaasiyo ta iserrekyo ti balido a numero ti telepono.",
+    "TOO_SHORT": "Ababa unay ti numero ti telepono.",
+    "TOO_LONG": "Atiddog ​​unay ti numero ti telepono.",
+    "INVALID_FOR_COUNTRY": "Daytoy a numero ti telepono ket saan a balido para iti {{country}} .",
+    "COUNTRY_MISMATCH": "Pangngaasiyo ta pilien ti umno a kodigo ti pagilian.",
+    "NOT_MOBILE": "Pangngaasiyo ta iserrekyo ti mobile number, saan a landline."
+  }
+}

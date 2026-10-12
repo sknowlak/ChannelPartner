@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Setting",
+    "noPermission": "Settings khwlaina bagwi nini thani rwngthoma kwrwi."
+  },
+  "categories": {
+    "lead": "Lama phunukmani",
+    "user": "User",
+    "integrations": "kwthalaimani"
+  },
+  "leadTabs": {
+    "fields": "Kwtal",
+    "statuses": "Tongmungrok & Kwtal-Tongmungrok",
+    "notifications": "Koktwmarok tei Swlaijakrok"
+  },
+  "fields": {
+    "leadIntro": "Lead romnani form no swnamdi: khetorokno swnamdi/swngdi, nangmani hwnwi mark khaidi, eba nini sakni muchungtwi khetorokno swnamdi.",
+    "userIntro": "Team ni borok no swnam/swnam form no swnam di: rangchak no swnam di/ swnam di, abo no mark khai di, eba nini sakni rangchak no swnam di.",
+    "addCustomField": "+ Khatungma jaga tubudi",
+    "fieldLabel": "Hayungni Label",
+    "group": "Dol",
+    "groupPlaceholderLead": "udhahoron swngmani koktwma",
+    "groupPlaceholderUser": "Eg teibo koktwma",
+    "dataType": "Data mung",
+    "options": "Chongmungrok (comma bai khakchangjak)",
+    "requiredLead": "Rangmani - nini dolni baksa samung tangnairok khoroksa lead mung swina bagwi omono supungna nangnai",
+    "requiredUser": "Nangmani - team ni borok add khai phuru swijakna nangnai",
+    "creating": "Snamjak...",
+    "createField": "Field swnamdi",
+    "columns": {
+      "field": "Kheto",
+      "group": "Dol",
+      "type": "Dal",
+      "required": "Nangmani",
+      "enabled": "Kwtal",
+      "kind": "Dal"
+    },
+    "kind": {
+      "custom": "Raida",
+      "core": "Core (lock khlaijak)",
+      "standard": "Raida"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Swimung",
+    "TEXTAREA": "Kwtal swijak",
+    "NUMBER": "Lombor",
+    "CURRENCY": "Chol",
+    "DATE": "Salmari",
+    "SELECT": "Dropdown",
+    "LIST": "Mung bwtang"
+  },
+  "picker": {
+    "searchPlaceholder": "Lead jaga nai di...",
+    "summary": "{{shown}} phunukjak · {{mandatory}} khwnajak",
+    "mandatory": "Jekhephano magosinai",
+    "noMatch": "Kwtal kheto kwrwi."
+  },
+  "statuses": {
+    "intro": "Nini lead ni tongmung tei sub-tongmung - khoroksa khoroksa lead no update khlai phuru tamo sankha (sal & jora, lead ni jaga).",
+    "add": "+ Tongmungno swlaidi",
+    "columns": {
+      "order": "Raida",
+      "status": "Kaham hamya",
+      "subStatuses": "Kwchak-Tongmung",
+      "asksFor": "Swngmani",
+      "active": "Kwsrang"
+    },
+    "moveUp": "Sakao himdi",
+    "moveDown": "Twimao himdi",
+    "defaultBadge": "Kwtal lead rokni bagwi default",
+    "bookingBadge": "Book khaimani tongmung",
+    "asksForLabel": "{{label}} ni bagwi swngkha",
+    "asksForDateTime": "Sal & jora swngdi",
+    "none": "Mungsaya",
+    "dateTime": "Sal & jora",
+    "scheduledOn": "{{names}} ni sakao",
+    "fieldsSummary_one": "{{count}} jaga ( {{mandatory}} nangkukmani)",
+    "fieldsSummary_other": "{{count}} kheto ( {{mandatory}} nangkukmani)",
+    "deleteConfirm": "\" {{name}} \" ni tongmung no swkak di? Obo undo khlaiwi manliya.",
+    "editTitle": "Swlaimani tongmung - {{name}}",
+    "newTitle": "Kwtal tongmung",
+    "name": "Tongmungni mung",
+    "colour": "Pali",
+    "active": "Kwsrang",
+    "isDefault": "Kwtal lead rokni bagwi swkangni tongmung",
+    "isBooking": "Book wngmani tongmung (Book khlaimani bisingtwi setup)",
+    "whenMoved": "Jephuru khoroksa lead o jagao tubujak",
+    "askSchedule": "Sal tei jora swngdi (swkang swnamnai)",
+    "scheduleLabelPlaceholder": "Label, udhahoron",
+    "fieldsToShow": "Kwtal wngmani form o phunukna bagwi swkangni jaga",
+    "subStatusesTitle": "Kwchak-Tongmung",
+    "subStatusesHint": "Joto sub-status bini date & jora no swngwi mano tei bini jaga no rwwi mano - aboni sakao status ni jaga ni sakao phunukjak.",
+    "subStatusName": "Tongmungni mung",
+    "subFields": "Hayung ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Sal tei jora swijak, udhahoron",
+    "addSubStatus": "+ Kwchak-Tongmungno Twdi",
+    "saveStatus": "Tongmung mwthangdi",
+    "createStatus": "Status swnamdi"
+  },
+  "notifications": {
+    "intro": "Lead kaisa status o sók phai khe - rangchak, eba aboni sakao schedule khlaijak date & jora ni swkang/uáisa set wngjak jora no sa di.",
+    "add": "+ Koktwma chapdi",
+    "columns": {
+      "notification": "Koktwma",
+      "whenStatusIs": "Status Tongmani",
+      "sends": "Rohorkha",
+      "to": "No",
+      "via": "Tui",
+      "enabled": "Kwtal"
+    },
+    "anyStatus": "Jesa phano tongmung",
+    "anySubStatus": "Jesa phano sub-swngmung",
+    "inactiveOption": "{{name}} (samung khlai ya)",
+    "emptyRules": "Tabuk jorao koktwma kwrwi - lead kaisa status o sók phai khe nini team no koktwma rwna bagwi kaisa add khlai di.",
+    "jobs": {
+      "title": "Swngjak & Rohorjak",
+      "firesAt": "Hor wngkha",
+      "notification": "Koktwma",
+      "lead": "Lama phunukmani",
+      "status": "Kaham hamya",
+      "details": "Details",
+      "empty": "Tabuk jorao mungsa phano schedule eba rohorjakya.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Chabna tongrwkma",
+      "PROCESSING": "Samung tangwi",
+      "SENT": "Rohorkha",
+      "FAILED": "Mechenkha",
+      "SKIPPED": "Skip khaijak",
+      "CANCELLED": "Cancel wngkha"
+    },
+    "deliveryStatus": {
+      "SENT": "rohorkha",
+      "FAILED": "mechenkha",
+      "SKIPPED": "skip khaijak"
+    },
+    "deliveryChannel": {
+      "IN_APP": "App ni bisingo",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Sajaknai swnamnai",
+      "owner": "Bubagra",
+      "updatedBy": "Kwtal wngkha",
+      "role": "Samung: {{name}}"
+    },
+    "channels": {
+      "inApp": "App ni bisingo",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "\" {{name}} \" koktwma no swbai di? Aboni bisingni muitu narwkmani kokrok cancel khlaijak.",
+    "testPrompt": "O koktwma ni test no nini thani rohor di (app ni bisingo) tamo lead ID no use khaiwi ?",
+    "testSent": "Nini bell o rohorjak: {{title}} {{message}}",
+    "headersInvalid": "Webhook bokhorokrok JSON wngwi tongna nangnai, udhahoron {\"Kwthar\": \"Twlangnai xyz\"}",
+    "editTitle": "Koktwma no swlaiwi",
+    "newTitle": "Kwtal koktwma",
+    "name": "Mung",
+    "namePlaceholder": "eg Site naina bagwi muitu narwkmani",
+    "whenStatus": "Jephuru khoroksa lead ni tongmung",
+    "subStatus": "Tongmung",
+    "send": "Rohor di (swngnai)",
+    "custom": "Raida...",
+    "modeBefore": "swmai tangjak jora swkang",
+    "modeAfter": "swmai tangjak jorani ulo",
+    "noScheduleWarning": "O status no date & jora swngya, aboni bagwi \"swngjak jora ni swkang/jora/jora ni ulo\" hwnwi sajakmani kok no twiwi kok sanani muchungya.",
+    "noScheduleFix": "Status & Sub-Status ni thani aboni bagwi <strong>sal & jora swngwi</strong> on khai di, eba khe thwngwi rohor di.",
+    "sendTo": "Rohor di (jesa phano thansa)",
+    "recipientAssigned": "Sajaknai swnamnai (kwplaisa malkhungni)",
+    "recipientOwner": "khata ni borok / admin",
+    "recipientUpdatedBy": "Status update khwlainai borok",
+    "everyoneWithRole": "Joto borok ni role",
+    "specificUsers": "Kwtal swnamnairok (kwrak)",
+    "inactiveNever": "Inactive wngnai rok no koktwma rwjakya, chongjak phano.",
+    "deliverVia": "ni bisingtwi tubudi",
+    "channelInApp": "App-ni bisingo (khoroksa)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS rwnai)",
+    "emailHint": "Email khoroksa khoroksani email jagao thangnai tei aboni bagwino SMTP set khlaijaknai (backend/.env); aboni ulo email rohorjakmarokno skip khlaijak hwnwi log khlaijak.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Bokhorok ( JSON )",
+    "content": "Koktwma manwi",
+    "title": "Mung pharmani",
+    "message": "Koktun",
+    "insertIntoTitle": "Muchungtwi tubudi",
+    "insertIntoMessage": "Message ni bisingo tubudi",
+    "anyLeadField": "Jesa phano lead field bo samung khlaio, udhahoron <code1>{{example1}}</code1> eba <code2>{{example2}}</code2> .",
+    "preview": "Swkang naimani (nwngmung)",
+    "enabled": "Kwtal",
+    "saveRule": "Koktwma no mwthangdi",
+    "createRule": "Koktwma swnamdi",
+    "variables": {
+      "customerName": "Lead ni mung",
+      "customerMobile": "Mobile tubui",
+      "customerEmail": "Email tubudi",
+      "registrationId": "ID",
+      "status": "Kaham hamya",
+      "subStatus": "Tongmung",
+      "scheduleAt": "Swngjak sal tei jora",
+      "assignedTo": "Sajaknai swnamnai",
+      "updatedBy": "Kwtal wngkha",
+      "recipient": "Mannai mung",
+      "project": "Samung bwtang",
+      "notes": "Kwtal koktwma",
+      "partner": "Partner ni mung"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Status set wngma jorao",
+      "AT": "Swnamjak jorao",
+      "A1D": "Swnamjak jorani bagwi 1 salni ulo (naitugwi naidi)"
+    },
+    "immediately": "Dodoro",
+    "atScheduled": "Swnamjak jorao",
+    "before": {
+      "MINUTES_one": "{{count}} swmai tangjak jora swkang minit",
+      "MINUTES_other": "{{count}} swmai tangjak jora swkang minit",
+      "HOURS_one": "{{count}} swmai tangjak jora swkang jora",
+      "HOURS_other": "{{count}} jora swkang jora",
+      "DAYS_one": "{{count}} swmai tangjak jora swkang sal",
+      "DAYS_other": "{{count}} sal swkang swmai tangjak jora",
+      "WEEKS_one": "{{count}} swmai tangjak jora swkang hapta",
+      "WEEKS_other": "{{count}} swmai tangjak jora swkang hapta",
+      "MONTHS_one": "{{count}} swmai tangjak jora talni swkang",
+      "MONTHS_other": "{{count}} swmai tangjak jorani swkang tal",
+      "YEARS_one": "{{count}} swmai tangjak jorani swkang bisi",
+      "YEARS_other": "{{count}} bisi swkang swmai tangjak jora"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} swmai tangjak jorani ulo minit",
+      "MINUTES_other": "{{count}} swmai tangjak jorani ulo minit",
+      "HOURS_one": "{{count}} swmai tangjak jorani ulo jora",
+      "HOURS_other": "{{count}} swkangni jorani ulo jora",
+      "DAYS_one": "{{count}} swkangni salni ulo",
+      "DAYS_other": "{{count}} swkangni salni ulo",
+      "WEEKS_one": "{{count}} swmai tangjak jorani ulo hapta",
+      "WEEKS_other": "{{count}} swmai tangjak jorani ulo hapta",
+      "MONTHS_one": "{{count}} swmai tangjak jora talni ulo",
+      "MONTHS_other": "{{count}} swmai tangjak jorani ulo tal",
+      "YEARS_one": "{{count}} swmai tangjak jorani ulo bisi",
+      "YEARS_other": "{{count}} swmai tangjak jorani ulo bisi"
+    },
+    "units": {
+      "MINUTES_one": "soti",
+      "MINUTES_other": "soti",
+      "HOURS_one": "daam",
+      "HOURS_other": "dam",
+      "DAYS_one": "sal",
+      "DAYS_other": "sal",
+      "WEEKS_one": "hati",
+      "WEEKS_other": "hapta",
+      "MONTHS_one": "taal",
+      "MONTHS_other": "tal",
+      "YEARS_one": "bisi",
+      "YEARS_other": "bisirok"
+    }
+  }
+}

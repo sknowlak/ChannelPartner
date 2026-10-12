@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Settings",
+    "noPermission": "Ùn avete micca permessu di gestisce i paràmetri."
+  },
+  "categories": {
+    "lead": "Piombu",
+    "user": "User",
+    "integrations": "Integrazioni"
+  },
+  "leadTabs": {
+    "fields": "Campi",
+    "statuses": "Status & Sub-Status",
+    "notifications": "Notificazioni è Schedulers"
+  },
+  "fields": {
+    "leadIntro": "Configurate a forma di cattura di piombu: attivate / disattivate i campi, marcateli necessarii, o aghjunghje i vostri campi persunalizati.",
+    "userIntro": "Configurate a forma di Add / Edit Team Member: attivate / disattivate i campi, marcateli richiesti, o aghjunghje i vostri campi persunalizati.",
+    "addCustomField": "+ Aghjunghjite un campu persunalizatu",
+    "fieldLabel": "Etichetta di campu",
+    "group": "gruppu",
+    "groupPlaceholderLead": "per esempiu, Inquiry Info",
+    "groupPlaceholderUser": "per esempiu, Dettagli supplementari",
+    "dataType": "Tipu di dati",
+    "options": "Opzioni (separati da virgola)",
+    "requiredLead": "Ubligatoriu - i partenarii di a vostra squadra devenu compie questu per registrà un lead",
+    "requiredUser": "Necessariu - deve esse cumpletu quandu aghjunghje un membru di a squadra",
+    "creating": "Creazione...",
+    "createField": "Crea Campu",
+    "columns": {
+      "field": "Campu",
+      "group": "gruppu",
+      "type": "Tipu",
+      "required": "Ubligatoriu",
+      "enabled": "Abilitatu",
+      "kind": "Gentile"
+    },
+    "kind": {
+      "custom": "Custom",
+      "core": "Core (locked)",
+      "standard": "Standard"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Testu",
+    "TEXTAREA": "Testu longu",
+    "NUMBER": "numeru",
+    "CURRENCY": "valuta",
+    "DATE": "Data",
+    "SELECT": "Dropdown",
+    "LIST": "Lista"
+  },
+  "picker": {
+    "searchPlaceholder": "Cerca i campi principali...",
+    "summary": "{{shown}} mustratu · {{mandatory}} obligatoriu",
+    "mandatory": "Ubligatoriu",
+    "noMatch": "Nisun campu currispondenu."
+  },
+  "statuses": {
+    "intro": "I vostri stati di guida è sottostatus - ciò chì ognunu dumanda (una data è ora, campi di guida) quandu qualchissia aghjurnà un piombo à questu.",
+    "add": "+ Aggiungi Status",
+    "columns": {
+      "order": "Ordine",
+      "status": "Status",
+      "subStatuses": "Sub-Status",
+      "asksFor": "Dumanda per",
+      "active": "Attivu"
+    },
+    "moveUp": "Sposta su",
+    "moveDown": "Sposta giù",
+    "defaultBadge": "Default per i novi guidi",
+    "bookingBadge": "Status di riservazione",
+    "asksForLabel": "Richiede {{label}}",
+    "asksForDateTime": "Dumanda data è ora",
+    "none": "Nimu",
+    "dateTime": "Data è ora",
+    "scheduledOn": "nantu à {{names}}",
+    "fieldsSummary_one": "{{count}} campu ( {{mandatory}} obligatoriu)",
+    "fieldsSummary_other": "{{count}} campi ( {{mandatory}} obligatoriu)",
+    "deleteConfirm": "Sguassà u statutu \" {{name}} \"? Questu ùn pò micca esse annullatu.",
+    "editTitle": "Edit Status - {{name}}",
+    "newTitle": "New Status",
+    "name": "Status Name",
+    "colour": "Culore",
+    "active": "Attivu",
+    "isDefault": "Status predeterminatu per i novi leads",
+    "isBooking": "Status di riservazione (fissatu da a prenotazione cumpleta)",
+    "whenMoved": "Quandu un capu hè spustatu à questu statutu",
+    "askSchedule": "Dumandate una data è ora (scheduler)",
+    "scheduleLabelPlaceholder": "Etichetta, per esempiu Visita à",
+    "fieldsToShow": "Campi di guida per vede nantu à a forma d'aghjurnamentu",
+    "subStatusesTitle": "Sub-Status",
+    "subStatusesHint": "Ogni sottustatu pò dumandà a so propria data è ora è aghjunghje i so propii campi - mostrati sopra à i campi di u statutu sopra.",
+    "subStatusName": "Nome di u substatu",
+    "subFields": "Campi ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Etichetta di data è ora, per esempiu Chjamate à",
+    "addSubStatus": "+ Add Sub-Status",
+    "saveStatus": "Salvà Status",
+    "createStatus": "Crea Status"
+  },
+  "notifications": {
+    "intro": "Avvisà e persone ghjustificate quandu un piombu righjunghji un statutu - immediatamente, o un tempu stabilitu prima / dopu a data è l'ora prevista nantu à questu.",
+    "add": "+ Aggiungi Notificazione",
+    "columns": {
+      "notification": "Notificazione",
+      "whenStatusIs": "Quandu u Statu hè",
+      "sends": "Mandate",
+      "to": "À",
+      "via": "Via",
+      "enabled": "Abilitatu"
+    },
+    "anyStatus": "Qualchese statutu",
+    "anySubStatus": "Ogni sottustatu",
+    "inactiveOption": "{{name}} (inattivu)",
+    "emptyRules": "Nisuna notificazione ancora - aghjunghje una per avvisà a vostra squadra quandu un capu ghjunghje à un statutu.",
+    "jobs": {
+      "title": "Pianu è mandatu",
+      "firesAt": "Fire At",
+      "notification": "Notificazione",
+      "lead": "Piombu",
+      "status": "Status",
+      "details": "Dettagli",
+      "empty": "Nunda pianificatu o mandatu ancora.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "In attesa",
+      "PROCESSING": "Trattamentu",
+      "SENT": "Mandatu",
+      "FAILED": "Fiascatu",
+      "SKIPPED": "Saltatu",
+      "CANCELLED": "Annulatu"
+    },
+    "deliveryStatus": {
+      "SENT": "mandatu",
+      "FAILED": "fiascatu",
+      "SKIPPED": "saltatu"
+    },
+    "deliveryChannel": {
+      "IN_APP": "in-app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Utente assignatu",
+      "owner": "Pruprietariu",
+      "updatedBy": "Aghjurnatu da",
+      "role": "Role: {{name}}"
+    },
+    "channels": {
+      "inApp": "In-app",
+      "email": "E-mail",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Eliminate a notificazione \" {{name}} \"? I ricordi pendenti da ellu sò annullati.",
+    "testPrompt": "Mandate una prova di sta notificazione à voi stessu (in-app) aduprendu quale ID di lead?",
+    "testSent": "Mandatu à a vostra campana: {{title}} {{message}}",
+    "headersInvalid": "L'intestazione Webhook deve esse JSON validu, per esempiu {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Edit Notification",
+    "newTitle": "Novu Notificazione",
+    "name": "Nome",
+    "namePlaceholder": "per esempiu, un ricordu di visita di u situ",
+    "whenStatus": "Quandu u statutu di un capu hè",
+    "subStatus": "Sottustatu",
+    "send": "Mandate (scheduler)",
+    "custom": "Custom...",
+    "modeBefore": "prima di l'ora prevista",
+    "modeAfter": "dopu à u tempu previstu",
+    "noScheduleWarning": "Stu statutu ùn dumanda micca una data è ora, cusì una notificazione \"prima / à / dopu à l'ora pianificata\" ùn saria mai sparata.",
+    "noScheduleFix": "Turn on <strong>Ask for a data & time</strong> for it under Status & Sub-Statuses, o mandate Immediatamente.",
+    "sendTo": "Mandate à (qualsiasi cumminazzioni)",
+    "recipientAssigned": "Utente assignatu (proprietariu principale)",
+    "recipientOwner": "U pruprietariu di u contu / amministratore",
+    "recipientUpdatedBy": "Persona chì hà aghjurnatu u statutu",
+    "everyoneWithRole": "Tutti cù un rolu",
+    "specificUsers": "Utenti specifichi (attivi)",
+    "inactiveNever": "L'utilizatori inattivi ùn ricevenu mai notifiche, ancu s'ellu hè sceltu.",
+    "deliverVia": "Consegna via",
+    "channelInApp": "In-app (campana)",
+    "channelEmail": "E-mail",
+    "channelWebhook": "Webhook (furnitore WhatsApp / SMS )",
+    "emailHint": "L'email va à l'indirizzu email di ogni destinatariu è hà bisognu di SMTP stallatu nantu à u servitore (backend/.env); finu à allora i mandati di e-mail sò registrati cum'è saltati.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Intestazioni ( JSON )",
+    "content": "Cuntenutu di notificazione",
+    "title": "Titulu",
+    "message": "Missaghju",
+    "insertIntoTitle": "Inserisce in Titulu",
+    "insertIntoMessage": "Inserite in Missaghju",
+    "anyLeadField": "Qualchese campu di guida funziona ancu, per esempiu <code1>{{example1}}</code1> o <code2>{{example2}}</code2> .",
+    "preview": "Anteprima (esempiu di guida)",
+    "enabled": "Abilitatu",
+    "saveRule": "Salvà a Notificazione",
+    "createRule": "Crea Notificazione",
+    "variables": {
+      "customerName": "Nome di piombu",
+      "customerMobile": "Cunduce mobile",
+      "customerEmail": "Piombu email",
+      "registrationId": "ID di piombu",
+      "status": "Status",
+      "subStatus": "Sottustatu",
+      "scheduleAt": "Data è ora pianificate",
+      "assignedTo": "Utente assignatu",
+      "updatedBy": "Aghjurnatu da",
+      "recipient": "Nome di u destinatariu",
+      "project": "Prughjettu",
+      "notes": "Ultima nota",
+      "partner": "Nome di u cumpagnu"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Immediatamente quandu u statu hè stabilitu",
+      "AT": "À l'ora prevista",
+      "A1D": "1 ghjornu dopu l'ora pianificata (cuntrolu di seguitu)"
+    },
+    "immediately": "Immediatamente",
+    "atScheduled": "À l'ora prevista",
+    "before": {
+      "MINUTES_one": "{{count}} minuti prima di l'ora prevista",
+      "MINUTES_other": "{{count}} minuti prima di l'ora prevista",
+      "HOURS_one": "{{count}} ora prima di l'ora prevista",
+      "HOURS_other": "{{count}} ore prima di l'ora prevista",
+      "DAYS_one": "{{count}} ghjornu prima di l'ora prevista",
+      "DAYS_other": "{{count}} ghjorni prima di l'ora prevista",
+      "WEEKS_one": "{{count}} settimana prima di l'ora prevista",
+      "WEEKS_other": "{{count}} settimane prima di l'ora prevista",
+      "MONTHS_one": "{{count}} mesi prima di l'ora prevista",
+      "MONTHS_other": "{{count}} mesi prima di l'ora prevista",
+      "YEARS_one": "{{count}} annu prima di l'ora prevista",
+      "YEARS_other": "{{count}} anni prima di l'ora prevista"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minuti dopu l'ora prevista",
+      "MINUTES_other": "{{count}} minuti dopu l'ora prevista",
+      "HOURS_one": "{{count}} ora dopu l'ora prevista",
+      "HOURS_other": "{{count}} ore dopu l'ora prevista",
+      "DAYS_one": "{{count}} ghjornu dopu l'ora prevista",
+      "DAYS_other": "{{count}} ghjorni dopu l'ora prevista",
+      "WEEKS_one": "{{count}} settimana dopu l'ora prevista",
+      "WEEKS_other": "{{count}} settimane dopu l'ora prevista",
+      "MONTHS_one": "{{count}} mesi dopu l'ora prevista",
+      "MONTHS_other": "{{count}} mesi dopu l'ora prevista",
+      "YEARS_one": "{{count}} annu dopu l'ora prevista",
+      "YEARS_other": "{{count}} anni dopu à u tempu pianificatu"
+    },
+    "units": {
+      "MINUTES_one": "minutu",
+      "MINUTES_other": "minuti",
+      "HOURS_one": "ora",
+      "HOURS_other": "ore",
+      "DAYS_one": "ghjornu",
+      "DAYS_other": "ghjorni",
+      "WEEKS_one": "settimana",
+      "WEEKS_other": "settimane",
+      "MONTHS_one": "mese",
+      "MONTHS_other": "mesi",
+      "YEARS_one": "annu",
+      "YEARS_other": "anni"
+    }
+  }
+}

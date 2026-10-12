@@ -1,0 +1,186 @@
+{
+  "list": {
+    "title": "Khách hàng tiềm năng của tôi",
+    "signedInAs": "Đã đăng nhập bằng {{name}} ( {{partnerId}} ) · lần hiển thị ở {{timezone}}",
+    "addLead": "+ Thêm khách hàng tiềm năng",
+    "tabs": {
+      "all": "Tất cả ( {{count}} )",
+      "pending": "Đang chờ xử lý ( {{count}} )",
+      "booked": "Đã đặt ( {{count}} )"
+    },
+    "searchPlaceholder": "Tìm kiếm theo tên, số điện thoại di động hoặc ID đăng ký ...",
+    "manageColumns": "Quản lý cột",
+    "rowsPerPage": "Hàng trên mỗi trang",
+    "registrationId": "ID đăng ký",
+    "emptyState": "Chưa có khách hàng tiềm năng - hãy đăng ký khách hàng tiềm năng đầu tiên của bạn.",
+    "noMatch": "Không có khách hàng tiềm năng nào phù hợp với các bộ lọc này.",
+    "showing": "Đang hiển thị {{from}} - {{to}} trong tổng {{total}} mục",
+    "actions": {
+      "preview": "Xem trước và cập nhật nhanh",
+      "history": "Lịch sử",
+      "email": "E-mail",
+      "whatsapp": "WhatsApp",
+      "call": "Gọi"
+    },
+    "pagination": {
+      "first": "Trang đầu tiên",
+      "previous": "Trang trước",
+      "next": "Trang tiếp theo",
+      "last": "Trang cuối cùng"
+    }
+  },
+  "columns": {
+    "status": "Trạng thái",
+    "assignTo": "Gán cho",
+    "booked": "Đã đặt",
+    "protectionUntil": "Bảo vệ cho đến khi"
+  },
+  "booking": {
+    "booked": "Đã đặt",
+    "pending": "Chưa giải quyết"
+  },
+  "assign": {
+    "unassigned": "Chưa được chỉ định",
+    "owner": "{{name}} (Chủ sở hữu)",
+    "inactive": "{{name}} (không hoạt động)",
+    "unknownUser": "Người dùng không xác định",
+    "assignedTo": "Đã giao cho {{name}}"
+  },
+  "form": {
+    "addTitle": "Thêm khách hàng tiềm năng",
+    "editTitle": "Chỉnh sửa khách hàng tiềm năng",
+    "noPermissionAdd": "Bạn không có quyền đăng ký khách hàng tiềm năng.",
+    "noPermissionEdit": "Bạn không có quyền chỉnh sửa khách hàng tiềm năng.",
+    "selectPlaceholder": "Lựa chọn...",
+    "commaSeparated": "Được phân cách bằng dấu phẩy",
+    "phonePlaceholder": "Số điện thoại",
+    "countryCode": "Mã quốc gia"
+  },
+  "project": {
+    "none": "Chưa có dự án nào (chưa được giới thiệu)",
+    "notInList": "{{project}} (không có trong danh sách dự án)"
+  },
+  "journey": {
+    "customer": "Khách hàng",
+    "currentOwner": "Chủ sở hữu hiện tại",
+    "protectionExpiry": "Hết hạn bảo vệ",
+    "leadStatus": "Trạng thái khách hàng tiềm năng",
+    "scheduled": "Đã lên lịch",
+    "assignedTo": "Được giao cho",
+    "referral": "Giới thiệu",
+    "builderReason": "Lý do của người xây dựng: {{reason}}",
+    "bookedHint": "Được người xây dựng đặt trước - quyền sở hữu vận hành đã được chuyển sang người xây dựng; tính đủ điều kiện phân bổ và hoa hồng của bạn được giữ nguyên.",
+    "notBookedHint": "Việc đặt chỗ sẽ được người xây dựng xác nhận sau khi họ chấp nhận lời giới thiệu.",
+    "quickUpdate": "Cập nhật nhanh",
+    "leadDetails": "Chi tiết khách hàng tiềm năng",
+    "progressHistory": "Lịch sử tiến độ",
+    "timesIn": "(thời gian trong {{timezone}} )",
+    "backToMyLeads": "Quay lại khách hàng tiềm năng của tôi",
+    "editLead": "Chỉnh sửa khách hàng tiềm năng"
+  },
+  "referral": {
+    "NOT_REFERRED": "Không được giới thiệu (không có dự án)",
+    "PENDING_BUILDER": "Chờ người xây dựng",
+    "ACCEPTED": "Được người xây dựng chấp nhận",
+    "REJECTED": "Bị nhà xây dựng từ chối"
+  },
+  "preview": {
+    "ariaLabel": "Xem trước khách hàng tiềm năng",
+    "title": "Xem trước khách hàng tiềm năng",
+    "source": "Nguồn",
+    "location": "Vị trí",
+    "scheduled": "Đã lên lịch",
+    "registered": "Đăng ký",
+    "latestNote": "Ghi chú mới nhất",
+    "quickUpdate": "Cập nhật nhanh",
+    "fullDetails": "Chi tiết đầy đủ",
+    "editLead": "Chỉnh sửa khách hàng tiềm năng",
+    "history": "Lịch sử"
+  },
+  "quick": {
+    "assignedTo": "Được giao cho",
+    "status": "Trạng thái",
+    "subStatus": "Trạng thái phụ",
+    "selectSubStatus": "Chọn trạng thái phụ...",
+    "none": "Không có",
+    "scheduledAt": "Dự kiến ​​vào lúc",
+    "localTime": "giờ địa phương",
+    "note": "Ghi chú",
+    "notePlaceholder": "Điều gì đã xảy ra trong cuộc gọi/chuyến thăm này? (không bắt buộc)",
+    "updateStatus": "Cập nhật trạng thái",
+    "statusUpdated": "Đã cập nhật trạng thái",
+    "bookedLocked": "Khách hàng tiềm năng này đã được đặt trước - trạng thái của nó không thể thay đổi được nữa.",
+    "viewOnly": "Bạn có thể xem khách hàng tiềm năng này nhưng vai trò của bạn không thể cập nhật nó."
+  },
+  "history": {
+    "title": "Lịch sử - {{registrationId}}",
+    "tabs": {
+      "all": "Tất cả",
+      "status": "Trạng thái",
+      "assignment": "Phân công",
+      "notes": "Ghi chú"
+    },
+    "doneBy": "Thực hiện bởi {{actor}}",
+    "system": "Hệ thống",
+    "platforms": {
+      "System": "Hệ thống",
+      "External": "Bên ngoài",
+      "Web": "Web",
+      "Mobile": "Điện thoại di động"
+    },
+    "added": "đã thêm",
+    "updated": "đã cập nhật",
+    "empty": "(trống)",
+    "noHistory": "Chưa có lịch sử nào trong danh mục này.",
+    "fieldLabels": {
+      "stage": "Trạng thái",
+      "subStatus": "Trạng thái phụ",
+      "scheduledAt": "Lịch trình",
+      "notes": "Ghi chú",
+      "assignedTo": "Được giao cho"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Đã nhận được đăng ký đối tác",
+      "DUPLICATE_CHECK_COMPLETED": "Đã hoàn tất kiểm tra trùng lặp - không tìm thấy bản sao đang hoạt động",
+      "REGISTRATION_ACCEPTED": "Đăng ký được chấp nhận",
+      "PROTECTION_GRANTED_other": "{{count}} -được bảo vệ trong ngày",
+      "REGISTRATION_ATTEMPT_REJECTED": "Nỗ lực đăng ký trùng lặp của {{partnerId}} bị từ chối",
+      "LEAD_DETAILS_UPDATED_other": "Đã cập nhật các trường {{count}}",
+      "STAGE_UPDATED": "Đã cập nhật trạng thái thành {{status}}",
+      "LEAD_ASSIGNED": "Đã giao cho {{name}}",
+      "LEAD_UNASSIGNED": "Chưa được chỉ định",
+      "BOOKING_COMPLETED": "Đặt phòng đã hoàn tất",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Quyền sở hữu hoạt động được chuyển giao cho Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Thuộc tính đối tác được giữ nguyên",
+      "COMMISSION_ELIGIBILITY_CREATED": "Đã tạo đủ điều kiện hoa hồng",
+      "HANDOVER_COMPLETED": "Bàn giao hoàn tất",
+      "REFERRAL_ACCEPTED": "Builder đã chấp nhận lời giới thiệu",
+      "REFERRAL_REJECTED": "Builder đã từ chối lời giới thiệu. Lý do: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Quản trị viên đã phát hành tính năng bảo vệ trùng lặp sớm. Lý do: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Quản trị viên đã chỉ định lại đăng ký từ {{from}} thành {{to}} . Lý do: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Quản lý cột",
+    "hint": "Kéo để sắp xếp lại · chọn để hiển thị",
+    "showAll": "Hiển thị tất cả",
+    "resetDefault": "Đặt lại về mặc định"
+  },
+  "filters": {
+    "title": "Bộ lọc",
+    "allProjects": "Tất cả dự án",
+    "any": "Bất kì",
+    "noFields": "Chưa có trường có thể lọc nào khác được bật (Cài đặt > Khách hàng tiềm năng).",
+    "clearAll": "Xóa tất cả"
+  },
+  "phone": {
+    "MISSING": "Số điện thoại là bắt buộc.",
+    "INVALID": "Vui lòng nhập số điện thoại hợp lệ.",
+    "TOO_SHORT": "Số điện thoại quá ngắn.",
+    "TOO_LONG": "Số điện thoại quá dài.",
+    "INVALID_FOR_COUNTRY": "Số điện thoại này không hợp lệ cho {{country}} .",
+    "COUNTRY_MISMATCH": "Vui lòng chọn đúng mã quốc gia.",
+    "NOT_MOBILE": "Vui lòng nhập số điện thoại di động, không phải số điện thoại cố định."
+  }
+}

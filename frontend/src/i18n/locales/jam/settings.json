@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Settings",
+    "noPermission": "Yuh no have no permission fi manage settings."
+  },
+  "categories": {
+    "lead": "Lead",
+    "user": "User",
+    "integrations": "Integrations"
+  },
+  "leadTabs": {
+    "fields": "Fields",
+    "statuses": "Status & Sub-Status",
+    "notifications": "Notifications & Schedulers"
+  },
+  "fields": {
+    "leadIntro": "Configure di lead capture form: enable/disable fields, mark dem required, or add yuh own custom fields.",
+    "userIntro": "Configure di Add/Edit Team Member form: enable/disable fields, mark dem required, or add yuh own custom fields.",
+    "addCustomField": "+ Add Custom Field",
+    "fieldLabel": "Field Label",
+    "group": "Bungle",
+    "groupPlaceholderLead": "eg Inquiry Info",
+    "groupPlaceholderUser": "eg Additional Details",
+    "dataType": "Data Type",
+    "options": "Options (comma separated)",
+    "requiredLead": "Required - partners pan yuh team haffi fill dis in fi register a lead",
+    "requiredUser": "Yuh haffi fill in wen yuh a add a team member",
+    "creating": "Creating...",
+    "createField": "Create Field",
+    "columns": {
+      "field": "Fiel",
+      "group": "Bungle",
+      "type": "Type",
+      "required": "Require",
+      "enabled": "Enabled",
+      "kind": "Kine"
+    },
+    "kind": {
+      "custom": "Custom",
+      "core": "Core (locked)",
+      "standard": "Standaad"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Ritin",
+    "TEXTAREA": "Long text",
+    "NUMBER": "Amount",
+    "CURRENCY": "Money",
+    "DATE": "Date",
+    "SELECT": "Dropdown",
+    "LIST": "Rite dung"
+  },
+  "picker": {
+    "searchPlaceholder": "Search lead fields...",
+    "summary": "{{shown}} shown · {{mandatory}} mandatory",
+    "mandatory": "Compulsry",
+    "noMatch": "No fields match."
+  },
+  "statuses": {
+    "intro": "Yuh lead statuses an sub-statuses - weh each one ask fah (a date & time, lead fields) wen somebody update a lead to it.",
+    "add": "+ Add Status",
+    "columns": {
+      "order": "Orda",
+      "status": "Place",
+      "subStatuses": "Sub-Statuses",
+      "asksFor": "Asks For",
+      "active": "Staat"
+    },
+    "moveUp": "Move up",
+    "moveDown": "Move dung",
+    "defaultBadge": "Default fi new leads",
+    "bookingBadge": "Booking status",
+    "asksForLabel": "Asks fi {{label}}",
+    "asksForDateTime": "Ask fi date & time",
+    "none": "Nun",
+    "dateTime": "Date & time",
+    "scheduledOn": "pan {{names}}",
+    "fieldsSummary_one": "{{count}} field ( {{mandatory}} mandatory)",
+    "fieldsSummary_other": "{{count}} fields ( {{mandatory}} mandatory)",
+    "deleteConfirm": "Delete status \" {{name}} \"? Dis cyaan be undone.",
+    "editTitle": "Edit Status - {{name}}",
+    "newTitle": "New Status",
+    "name": "Status Name",
+    "colour": "Cola",
+    "active": "Staat",
+    "isDefault": "Default status fi new leads",
+    "isBooking": "Booking status (set by Complete Booking)",
+    "whenMoved": "Wen a lead get move to dis status",
+    "askSchedule": "Ask fi a date & time (scheduler)",
+    "scheduleLabelPlaceholder": "Label, eg Visit at",
+    "fieldsToShow": "Lead fields fi show pan di update form",
+    "subStatusesTitle": "Sub-Statuses",
+    "subStatusesHint": "Each sub-status can ask fi it own date & time an add it own fields - shown pan top a di status's fields above.",
+    "subStatusName": "Sub-status name",
+    "subFields": "Fields ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Date & time label, eg Call back at",
+    "addSubStatus": "+ Add Sub-Status",
+    "saveStatus": "Save Status",
+    "createStatus": "Create Status"
+  },
+  "notifications": {
+    "intro": "Notify di right people wen a lead reach a status - immediately, or a set time before/after di date & time scheduled pan it.",
+    "add": "+ Add Notification",
+    "columns": {
+      "notification": "Notification",
+      "whenStatusIs": "Wen Status Is",
+      "sends": "Sen",
+      "to": "Tuh",
+      "via": "Via",
+      "enabled": "Enabled"
+    },
+    "anyStatus": "Any status",
+    "anySubStatus": "Any sub-status",
+    "inactiveOption": "{{name}} (inactive)",
+    "emptyRules": "No notifications yet - add one fi alert yuh team wen a lead reach a status.",
+    "jobs": {
+      "title": "Scheduled & Sent",
+      "firesAt": "Fires At",
+      "notification": "Notification",
+      "lead": "Lead",
+      "status": "Place",
+      "details": "Detail dem",
+      "empty": "Notn no schedule or sen yet.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "A wait",
+      "PROCESSING": "Processing",
+      "SENT": "Sen aaf",
+      "FAILED": "Neva pass",
+      "SKIPPED": "Skipped",
+      "CANCELLED": "Canceled"
+    },
+    "deliveryStatus": {
+      "SENT": "sen aaf",
+      "FAILED": "neva pass",
+      "SKIPPED": "skip"
+    },
+    "deliveryChannel": {
+      "IN_APP": "in-app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Assigned user",
+      "owner": "Owna",
+      "updatedBy": "Updated by",
+      "role": "Role: {{name}}"
+    },
+    "channels": {
+      "inApp": "In-app",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Delete notification \" {{name}} \"? Pending reminders fram it are cancelled.",
+    "testPrompt": "Sen a test a dis notification to yuhself (in-app) using which lead ID ?",
+    "testSent": "Sen to yuh bell: {{title}} {{message}}",
+    "headersInvalid": "Webhook headers haffi be valid JSON , eg {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Edit Notification",
+    "newTitle": "New Notification",
+    "name": "Name",
+    "namePlaceholder": "eg Site visit reminder",
+    "whenStatus": "Wen a lead's status is",
+    "subStatus": "Sub-status",
+    "send": "Sen (scheduler)",
+    "custom": "Custom...",
+    "modeBefore": "before scheduled time",
+    "modeAfter": "afta scheduled time",
+    "noScheduleWarning": "Dis status nuh ask fi a date & time, so a \"before/at/after scheduled time\" notification woulda neva fire.",
+    "noScheduleFix": "Turn on <strong>Ask fi a date & time</strong> fi it unda Statuses & Sub-Statuses, or sen Immediately.",
+    "sendTo": "Sen to (any combination)",
+    "recipientAssigned": "Assigned user (lead owner)",
+    "recipientOwner": "Account owna / admin",
+    "recipientUpdatedBy": "Person weh update di status",
+    "everyoneWithRole": "Everybody wid role",
+    "specificUsers": "Specific users (active)",
+    "inactiveNever": "Inactive users neva get notifications, even if dem select.",
+    "deliverVia": "Deliver via",
+    "channelInApp": "In-app (bell)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS provider)",
+    "emailHint": "Email go to each recipient's email address an need SMTP set up pan di server (backend/.env); til den email sends dem log as skipped.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Headers ( JSON )",
+    "content": "Notification content",
+    "title": "Title",
+    "message": "Messij",
+    "insertIntoTitle": "Insert into Title",
+    "insertIntoMessage": "Insert into Message",
+    "anyLeadField": "Any lead field work too, eg <code1>{{example1}}</code1> or <code2>{{example2}}</code2> .",
+    "preview": "Preview (sample lead)",
+    "enabled": "Enabled",
+    "saveRule": "Save Notification",
+    "createRule": "Create Notification",
+    "variables": {
+      "customerName": "Lead name",
+      "customerMobile": "Lead mobile",
+      "customerEmail": "Lead email",
+      "registrationId": "Lead ID",
+      "status": "Place",
+      "subStatus": "Sub-status",
+      "scheduleAt": "Scheduled date & time",
+      "assignedTo": "Assigned user",
+      "updatedBy": "Updated by",
+      "recipient": "Recipient name",
+      "project": "Prajeck",
+      "notes": "Latest note",
+      "partner": "Partner name"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Immediately wen di status set",
+      "AT": "At di scheduled time",
+      "A1D": "1 day afta scheduled time (follow-up check)"
+    },
+    "immediately": "Now",
+    "atScheduled": "At scheduled time",
+    "before": {
+      "MINUTES_one": "{{count}} minute before scheduled time",
+      "MINUTES_other": "{{count}} minutes before scheduled time",
+      "HOURS_one": "{{count}} hour before scheduled time",
+      "HOURS_other": "{{count}} hours before scheduled time",
+      "DAYS_one": "{{count}} day before scheduled time",
+      "DAYS_other": "{{count}} days before scheduled time",
+      "WEEKS_one": "{{count}} week before scheduled time",
+      "WEEKS_other": "{{count}} weeks before scheduled time",
+      "MONTHS_one": "{{count}} month before scheduled time",
+      "MONTHS_other": "{{count}} months before scheduled time",
+      "YEARS_one": "{{count}} year before scheduled time",
+      "YEARS_other": "{{count}} years before scheduled time"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minute afta scheduled time",
+      "MINUTES_other": "{{count}} minutes afta scheduled time",
+      "HOURS_one": "{{count}} hour afta scheduled time",
+      "HOURS_other": "{{count}} hours afta scheduled time",
+      "DAYS_one": "{{count}} day afta scheduled time",
+      "DAYS_other": "{{count}} days afta scheduled time",
+      "WEEKS_one": "{{count}} week afta scheduled time",
+      "WEEKS_other": "{{count}} weeks afta scheduled time",
+      "MONTHS_one": "{{count}} month afta scheduled time",
+      "MONTHS_other": "{{count}} months afta scheduled time",
+      "YEARS_one": "{{count}} year afta scheduled time",
+      "YEARS_other": "{{count}} years afta scheduled time"
+    },
+    "units": {
+      "MINUTES_one": "minite",
+      "MINUTES_other": "minite dem",
+      "HOURS_one": "owa",
+      "HOURS_other": "owaz",
+      "DAYS_one": "day",
+      "DAYS_other": "days",
+      "WEEKS_one": "inna e week",
+      "WEEKS_other": "weeks",
+      "MONTHS_one": "mont'",
+      "MONTHS_other": "months",
+      "YEARS_one": "ear",
+      "YEARS_other": "eternity"
+    }
+  }
+}

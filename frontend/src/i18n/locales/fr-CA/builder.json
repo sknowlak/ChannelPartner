@@ -1,0 +1,93 @@
+{
+  "shell": {
+    "portal": "Portail du constructeur",
+    "referrals": "Références",
+    "builderLogin": "Connexion du fabricant",
+    "partnerLogin": "Connexion du partenaire de distribution"
+  },
+  "login": {
+    "title": "Connexion du fabricant",
+    "hint": "Les comptes du fabricant sont créés par Leadrat . Demandez à votre administrateur si vous n'en avez pas."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "En attendant votre décision",
+    "ACCEPTED": "Accepté",
+    "REJECTED": "Rejeté"
+  },
+  "list": {
+    "title": "Références",
+    "allProjects": "Tous les projets",
+    "allStatuses": "Tous les statuts",
+    "count_one": "{{count}} référence",
+    "count_many": "{{count}} références",
+    "count_other": "{{count}} références",
+    "columns": {
+      "referral": "Référence",
+      "customer": "Client",
+      "project": "Projet",
+      "sourcePartner": "Partenaire source",
+      "status": "Statut",
+      "booking": "Réservation",
+      "registered": "Inscrit"
+    },
+    "booked": "Réservé",
+    "empty": "Aucune référence pour l'instant."
+  },
+  "detail": {
+    "customer": "Client",
+    "sourcePartner": "Partenaire source",
+    "attributionNote": "(attribution - ne peut pas être modifié)",
+    "leadStatus": "État du prospect",
+    "protectedUntil": "Protégé jusqu'à",
+    "referral": "Référence",
+    "reason": "Raison : {{reason}}",
+    "booking": "Réservation",
+    "bookedOwner": "Réservé - vous êtes le propriétaire opérationnel",
+    "notBooked": "Non réservé",
+    "sharedAfterBooking": "Partagé après la réservation",
+    "accept": "Accepter la référence",
+    "confirmBooking": "Confirmer la réservation",
+    "reject": "Rejeter la référence",
+    "rejectReasonLabel": "Raison du refus (montré au partenaire) *",
+    "rejectConfirm": "Rejeter",
+    "confirmBookingPrompt": "Confirmer la réservation ? La propriété opérationnelle vous revient et le partenaire devient admissible à une commission.",
+    "notice": {
+      "booked": "Réservation confirmée.",
+      "accepted": "Référence acceptée.",
+      "rejected": "Référence rejetée."
+    },
+    "backToReferrals": "Retour aux références"
+  },
+  "history": {
+    "title": "Histoire",
+    "actor": {
+      "system": "Système",
+      "partner": "Partenaire de distribution",
+      "admin": "Administrateur Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Inscription du partenaire reçue",
+      "DUPLICATE_CHECK_COMPLETED": "Vérification des doublons terminée - aucun doublon actif trouvé",
+      "REGISTRATION_ACCEPTED": "Inscription acceptée",
+      "PROTECTION_GRANTED_one": "{{count}} jours de protection accordés",
+      "PROTECTION_GRANTED_many": "{{count}} jours de protection accordés",
+      "PROTECTION_GRANTED_other": "{{count}} jours de protection accordés",
+      "STAGE_UPDATED": "Mise à jour du statut à {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Champ {{count}} mis à jour",
+      "LEAD_DETAILS_UPDATED_many": "{{count}} champs mis à jour",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} champs mis à jour",
+      "LEAD_ASSIGNED": "Attribué à {{name}}",
+      "LEAD_UNASSIGNED": "Non attribué",
+      "REFERRAL_ACCEPTED": "Le constructeur a accepté la référence",
+      "REFERRAL_REJECTED": "Le constructeur a rejeté la référence. Raison : {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Tentative d'enregistrement en double de {{partner}} rejetée",
+      "BOOKING_COMPLETED": "Réservation terminée",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Propriété opérationnelle transférée au constructeur",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Attribution du partenaire préservée",
+      "COMMISSION_ELIGIBILITY_CREATED": "Admissibilité à la commission créée",
+      "HANDOVER_COMPLETED": "Rabais terminé",
+      "ADMIN_PROTECTION_RELEASED": "L'administrateur a publié la protection contre les doublons plus tôt. Raison : {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "L'administrateur a réaffecté l'inscription de {{from}} à {{to}} . Raison : {{reason}}"
+    }
+  }
+}

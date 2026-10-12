@@ -1,0 +1,190 @@
+{
+  "list": {
+    "title": "Mes prospects",
+    "signedInAs": "Connecté en tant que {{name}} ( {{partnerId}} ) · heures affichées dans {{timezone}}",
+    "addLead": "+ Ajouter un prospect",
+    "tabs": {
+      "all": "Tous ( {{count}} )",
+      "pending": "En attente ( {{count}} )",
+      "booked": "Réservé ( {{count}} )"
+    },
+    "searchPlaceholder": "Recherche par nom, mobile ou ID d'enregistrement...",
+    "manageColumns": "Gérer les colonnes",
+    "rowsPerPage": "Lignes par page",
+    "registrationId": "ID d'enregistrement",
+    "emptyState": "Aucune piste pour l'instant - enregistrez votre première.",
+    "noMatch": "Aucune piste ne correspond à ces filtres.",
+    "showing": "Affichage {{from}} à {{to}} sur {{total}} entrées",
+    "actions": {
+      "preview": "Aperçu et mise à jour rapide",
+      "history": "Histoire",
+      "email": "E-mail",
+      "whatsapp": "WhatsApp",
+      "call": "Appel"
+    },
+    "pagination": {
+      "first": "Première page",
+      "previous": "Page précédente",
+      "next": "Page suivante",
+      "last": "Dernière page"
+    }
+  },
+  "columns": {
+    "status": "Statut",
+    "assignTo": "Attribuer à",
+    "booked": "Réservé",
+    "protectionUntil": "Protection jusqu'à"
+  },
+  "booking": {
+    "booked": "Réservé",
+    "pending": "En attente"
+  },
+  "assign": {
+    "unassigned": "Non attribué",
+    "owner": "{{name}} (Propriétaire)",
+    "inactive": "{{name}} (inactif)",
+    "unknownUser": "Utilisateur inconnu",
+    "assignedTo": "Attribué à {{name}}"
+  },
+  "form": {
+    "addTitle": "Ajouter un prospect",
+    "editTitle": "Modifier le prospect",
+    "noPermissionAdd": "Vous n'êtes pas autorisé à enregistrer des prospects.",
+    "noPermissionEdit": "Vous n'êtes pas autorisé à modifier les prospects.",
+    "selectPlaceholder": "Sélectionner...",
+    "commaSeparated": "Séparés par des virgules",
+    "phonePlaceholder": "Numéro de téléphone",
+    "countryCode": "Code du pays"
+  },
+  "project": {
+    "none": "Pas encore de projet (non référencé)",
+    "notInList": "{{project}} (pas dans la liste des projets)"
+  },
+  "journey": {
+    "customer": "Client",
+    "currentOwner": "Propriétaire actuel",
+    "protectionExpiry": "Expiration de la protection",
+    "leadStatus": "Statut du prospect",
+    "scheduled": "Programmé",
+    "assignedTo": "Attribué à",
+    "referral": "Référence",
+    "builderReason": "Raison du constructeur : {{reason}}",
+    "bookedHint": "Réservé par le constructeur - la propriété opérationnelle a été transférée au constructeur ; votre attribution et votre éligibilité à la commission sont conservées.",
+    "notBookedHint": "Les réservations sont confirmées par le constructeur une fois qu'il accepte la référence.",
+    "quickUpdate": "Mise à jour rapide",
+    "leadDetails": "Détails du prospect",
+    "progressHistory": "Historique des progrès",
+    "timesIn": "(heures dans {{timezone}} )",
+    "backToMyLeads": "Retour à mes prospects",
+    "editLead": "Modifier le prospect"
+  },
+  "referral": {
+    "NOT_REFERRED": "Non référencé (pas de projet)",
+    "PENDING_BUILDER": "En attente du constructeur",
+    "ACCEPTED": "Accepté par le constructeur",
+    "REJECTED": "Rejeté par le constructeur"
+  },
+  "preview": {
+    "ariaLabel": "Aperçu du prospect",
+    "title": "Aperçu du prospect",
+    "source": "Source",
+    "location": "Emplacement",
+    "scheduled": "Programmé",
+    "registered": "Inscrit",
+    "latestNote": "Dernière note",
+    "quickUpdate": "Mise à jour rapide",
+    "fullDetails": "Tous les détails",
+    "editLead": "Modifier le prospect",
+    "history": "Histoire"
+  },
+  "quick": {
+    "assignedTo": "Attribué à",
+    "status": "Statut",
+    "subStatus": "Sous-statut",
+    "selectSubStatus": "Sélectionnez le sous-statut...",
+    "none": "Aucun",
+    "scheduledAt": "Prévu à",
+    "localTime": "heure locale",
+    "note": "Note",
+    "notePlaceholder": "Que s'est-il passé lors de cet appel/visite ? (facultatif)",
+    "updateStatus": "Statut de la mise à jour",
+    "statusUpdated": "Statut mis à jour",
+    "bookedLocked": "Ce prospect est réservé - son statut ne peut plus être modifié.",
+    "viewOnly": "Vous pouvez afficher ce prospect, mais votre rôle ne peut pas le mettre à jour."
+  },
+  "history": {
+    "title": "Historique - {{registrationId}}",
+    "tabs": {
+      "all": "Tous",
+      "status": "Statut",
+      "assignment": "Affectation",
+      "notes": "Remarques"
+    },
+    "doneBy": "Réalisé par {{actor}}",
+    "system": "Système",
+    "platforms": {
+      "System": "Système",
+      "External": "Externe",
+      "Web": "Internet",
+      "Mobile": "Mobile"
+    },
+    "added": "ajouté",
+    "updated": "mis à jour",
+    "empty": "(vide)",
+    "noHistory": "Pas d'historique dans cette catégorie pour l'instant.",
+    "fieldLabels": {
+      "stage": "Statut",
+      "subStatus": "Sous-statut",
+      "scheduledAt": "Calendrier",
+      "notes": "Remarques",
+      "assignedTo": "Attribué à"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Inscription partenaire reçue",
+      "DUPLICATE_CHECK_COMPLETED": "Vérification des doublons terminée - aucun doublon actif trouvé",
+      "REGISTRATION_ACCEPTED": "Inscription acceptée",
+      "PROTECTION_GRANTED_one": "{{count}} jours de protection accordés",
+      "PROTECTION_GRANTED_many": "{{count}} jours de protection accordés",
+      "PROTECTION_GRANTED_other": "{{count}} jours de protection accordés",
+      "REGISTRATION_ATTEMPT_REJECTED": "Tentative d'enregistrement en double de {{partnerId}} rejetée",
+      "LEAD_DETAILS_UPDATED_one": "Champ {{count}} mis à jour",
+      "LEAD_DETAILS_UPDATED_many": "{{count}} champs mis à jour",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} champs mis à jour",
+      "STAGE_UPDATED": "Statut mis à jour à {{status}}",
+      "LEAD_ASSIGNED": "Attribué à {{name}}",
+      "LEAD_UNASSIGNED": "Non attribué",
+      "BOOKING_COMPLETED": "Réservation terminée",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Propriété opérationnelle transférée au constructeur",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Attribution du partenaire préservée",
+      "COMMISSION_ELIGIBILITY_CREATED": "Admissibilité à la commission créée",
+      "HANDOVER_COMPLETED": "Remise terminée",
+      "REFERRAL_ACCEPTED": "Le constructeur a accepté la référence",
+      "REFERRAL_REJECTED": "Le constructeur a rejeté la référence. Raison : {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "L'administrateur a publié la protection contre les doublons plus tôt. Raison : {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "L'administrateur a réaffecté l'inscription de {{from}} à {{to}} . Raison : {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Gérer les colonnes",
+    "hint": "Faites glisser pour réorganiser · cochez pour afficher",
+    "showAll": "Afficher tout",
+    "resetDefault": "Réinitialiser aux valeurs par défaut"
+  },
+  "filters": {
+    "title": "Filtres",
+    "allProjects": "Tous les projets",
+    "any": "N'importe lequel",
+    "noFields": "Aucun autre champ filtrable n'est encore activé (Paramètres > Lead).",
+    "clearAll": "Tout effacer"
+  },
+  "phone": {
+    "MISSING": "Le numéro de téléphone est requis.",
+    "INVALID": "Veuillez entrer un numéro de téléphone valide.",
+    "TOO_SHORT": "Le numéro de téléphone est trop court.",
+    "TOO_LONG": "Le numéro de téléphone est trop long.",
+    "INVALID_FOR_COUNTRY": "Ce numéro de téléphone n'est pas valide pour {{country}} .",
+    "COUNTRY_MISMATCH": "Veuillez sélectionner le bon code de pays.",
+    "NOT_MOBILE": "Veuillez saisir un numéro de mobile et non un numéro de téléphone fixe."
+  }
+}

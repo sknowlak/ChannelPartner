@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Wajenzi Portal",
+    "referrals": "Marejeleo",
+    "builderLogin": "Kuingia kwa Wajenzi",
+    "partnerLogin": "Kuingia kwa Washirika wa Kituo"
+  },
+  "login": {
+    "title": "Ingia kwa mjenzi",
+    "hint": "Akaunti za wajenzi zinaundwa na Leadrat . Uliza msimamizi wako ikiwa huna."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Kusubiri uamuzi wako",
+    "ACCEPTED": "Imekubaliwa",
+    "REJECTED": "Imekataliwa"
+  },
+  "list": {
+    "title": "Marejeleo",
+    "allProjects": "Miradi yote",
+    "allStatuses": "Hali zote",
+    "count_one": "{{count}} rufaa",
+    "count_other": "{{count}} rufaa",
+    "columns": {
+      "referral": "Rufaa",
+      "customer": "Mteja",
+      "project": "Mradi",
+      "sourcePartner": "Chanzo Mshirika",
+      "status": "Hali",
+      "booking": "Kuhifadhi",
+      "registered": "Imesajiliwa"
+    },
+    "booked": "Imehifadhiwa",
+    "empty": "Bado hakuna marejeleo."
+  },
+  "detail": {
+    "customer": "Mteja",
+    "sourcePartner": "Chanzo Mshirika",
+    "attributionNote": "(sifa - haiwezi kubadilishwa)",
+    "leadStatus": "Hali ya Uongozi",
+    "protectedUntil": "Imelindwa Mpaka",
+    "referral": "Rufaa",
+    "reason": "Sababu: {{reason}}",
+    "booking": "Kuhifadhi",
+    "bookedOwner": "Umeweka nafasi - wewe ndiye mmiliki anayefanya kazi",
+    "notBooked": "Haijawekwa nafasi",
+    "sharedAfterBooking": "Imeshirikiwa baada ya kuhifadhi",
+    "accept": "Kubali Rufaa",
+    "confirmBooking": "Thibitisha Kuhifadhi",
+    "reject": "Kataa Rufaa",
+    "rejectReasonLabel": "Sababu ya kukataa (imeonyeshwa kwa mshirika) *",
+    "rejectConfirm": "Kataa",
+    "confirmBookingPrompt": "Ungependa kuthibitisha kuweka nafasi? Umiliki wa kiutendaji unahamia kwako na mshirika anastahiki tume.",
+    "notice": {
+      "booked": "Uhifadhi umethibitishwa.",
+      "accepted": "Rufaa imekubaliwa.",
+      "rejected": "Rufaa imekataliwa."
+    },
+    "backToReferrals": "Rudi kwa Marejeleo"
+  },
+  "history": {
+    "title": "Historia",
+    "actor": {
+      "system": "Mfumo",
+      "partner": "Mshirika wa kituo",
+      "admin": "Msimamizi Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Usajili wa mshirika umepokelewa",
+      "DUPLICATE_CHECK_COMPLETED": "Ukaguzi wa nakala umekamilika - hakuna nakala inayotumika iliyopatikana",
+      "REGISTRATION_ACCEPTED": "Usajili umekubaliwa",
+      "PROTECTION_GRANTED_one": "Ulinzi wa siku {{count}} umetolewa",
+      "PROTECTION_GRANTED_other": "Ulinzi wa siku {{count}} umetolewa",
+      "STAGE_UPDATED": "Hali imesasishwa hadi {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Uga {{count}} umesasishwa",
+      "LEAD_DETAILS_UPDATED_other": "Ilisasisha sehemu {{count}}",
+      "LEAD_ASSIGNED": "Imekabidhiwa kwa {{name}}",
+      "LEAD_UNASSIGNED": "Haijakabidhiwa",
+      "REFERRAL_ACCEPTED": "Mjenzi alikubali rufaa",
+      "REFERRAL_REJECTED": "Mjenzi amekataa rufaa. Sababu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Jaribio la usajili la {{partner}} lililorudiwa limekataliwa",
+      "BOOKING_COMPLETED": "Uhifadhi umekamilika",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Umiliki wa uendeshaji umehamishiwa kwa Mjenzi",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Maelezo ya mshirika yamehifadhiwa",
+      "COMMISSION_ELIGIBILITY_CREATED": "Ustahiki wa tume umeundwa",
+      "HANDOVER_COMPLETED": "Makabidhiano yamekamilika",
+      "ADMIN_PROTECTION_RELEASED": "Msimamizi alitoa ulinzi unaorudiwa mapema. Sababu: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Msimamizi alikabidhi upya usajili kutoka {{from}} hadi {{to}} . Sababu: {{reason}}"
+    }
+  }
+}

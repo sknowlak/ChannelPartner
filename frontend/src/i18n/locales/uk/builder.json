@@ -1,0 +1,96 @@
+{
+  "shell": {
+    "portal": "Портал будівельника",
+    "referrals": "Реферали",
+    "builderLogin": "Вхід будівельника",
+    "partnerLogin": "Вхід партнера каналу"
+  },
+  "login": {
+    "title": "Вхід будівельника",
+    "hint": "Облікові записи Builder створює Leadrat . Зверніться до адміністратора, якщо у вас його немає."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Чекаю на ваше рішення",
+    "ACCEPTED": "прийнято",
+    "REJECTED": "Відхилено"
+  },
+  "list": {
+    "title": "Реферали",
+    "allProjects": "Всі проекти",
+    "allStatuses": "Всі статуси",
+    "count_one": "{{count}} реферал",
+    "count_few": "{{count}} рефералів",
+    "count_many": "{{count}} рефералів",
+    "count_other": "{{count}} рефералів",
+    "columns": {
+      "referral": "Направлення",
+      "customer": "Замовник",
+      "project": "Демонструвати",
+      "sourcePartner": "Джерельний партнер",
+      "status": "Статус",
+      "booking": "Бронювання",
+      "registered": "Зареєстрований"
+    },
+    "booked": "Заброньовано",
+    "empty": "Ще немає рефералів."
+  },
+  "detail": {
+    "customer": "Замовник",
+    "sourcePartner": "Джерельний партнер",
+    "attributionNote": "(атрибуція - змінити не можна)",
+    "leadStatus": "Статус потенційного клієнта",
+    "protectedUntil": "Охороняється до",
+    "referral": "Направлення",
+    "reason": "Причина: {{reason}}",
+    "booking": "Бронювання",
+    "bookedOwner": "Заброньовано - Ви оперативний власник",
+    "notBooked": "Не заброньовано",
+    "sharedAfterBooking": "Поділився після бронювання",
+    "accept": "Прийняти рекомендацію",
+    "confirmBooking": "Підтвердити бронювання",
+    "reject": "Відхилити рекомендацію",
+    "rejectReasonLabel": "Причина відмови (показується партнеру) *",
+    "rejectConfirm": "Відхиляти",
+    "confirmBookingPrompt": "Підтвердити бронювання? Операційне право власності переходить до вас, а партнер отримує право на комісію.",
+    "notice": {
+      "booked": "Бронювання підтверджено.",
+      "accepted": "Рекомендацію прийнято.",
+      "rejected": "Рекомендацію відхилено."
+    },
+    "backToReferrals": "Назад до рефералів"
+  },
+  "history": {
+    "title": "історія",
+    "actor": {
+      "system": "система",
+      "partner": "Партнер по каналу",
+      "admin": "Leadrat адмін"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Отримано реєстрацію партнера",
+      "DUPLICATE_CHECK_COMPLETED": "Перевірку дублікатів завершено – активного дубліката не знайдено",
+      "REGISTRATION_ACCEPTED": "Реєстрацію прийнято",
+      "PROTECTION_GRANTED_one": "Надано {{count}} -денний захист",
+      "PROTECTION_GRANTED_few": "Надано {{count}} -денний захист",
+      "PROTECTION_GRANTED_many": "Надано {{count}} -денний захист",
+      "PROTECTION_GRANTED_other": "Надано {{count}} -денний захист",
+      "STAGE_UPDATED": "Статус оновлено до {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Оновлено поле {{count}}",
+      "LEAD_DETAILS_UPDATED_few": "Оновлено {{count}} полів",
+      "LEAD_DETAILS_UPDATED_many": "Оновлено {{count}} полів",
+      "LEAD_DETAILS_UPDATED_other": "Оновлено {{count}} полів",
+      "LEAD_ASSIGNED": "Призначено {{name}}",
+      "LEAD_UNASSIGNED": "Непризначений",
+      "REFERRAL_ACCEPTED": "Забудовник прийняв рекомендацію",
+      "REFERRAL_REJECTED": "Забудовник відхилив рекомендацію. Причина: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Повторну спробу реєстрації {{partner}} відхилено",
+      "BOOKING_COMPLETED": "Бронювання завершено",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Операційне право власності передано Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Атрибуція партнера збережена",
+      "COMMISSION_ELIGIBILITY_CREATED": "Право на комісію створено",
+      "HANDOVER_COMPLETED": "Передача завершена",
+      "ADMIN_PROTECTION_RELEASED": "Адміністратор раніше випустив захист від дублікатів. Причина: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Адміністратор змінив реєстрацію з {{from}} на {{to}} . Причина: {{reason}}"
+    }
+  }
+}

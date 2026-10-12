@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Baparametre",
+    "noPermission": "Nge kele ve ti nswa ya kutwadisa baparametre."
+  },
+  "categories": {
+    "lead": "Plomb",
+    "user": "Muntu ya ke sadilaka",
+    "integrations": "Kuvukisa"
+  },
+  "leadTabs": {
+    "fields": "Bilanga",
+    "statuses": "Bikalulu & Bikalulu ya Fioti",
+    "notifications": "Bansangu & Baprograme"
+  },
+  "fields": {
+    "leadIntro": "Kuyidika formulaire ya kukanga bantu: pesa nzila/kukanga bisika, tula bidimbu na zulu na yo kana yo ke lomba, to yika bisika na nge mosi.",
+    "userIntro": "Tula formulaire ya Kuyika/Kuyidika Muntu ya Ekipi: kukangula/kukanga bisika, tula kidimbu nde yo ke lomba, to yika bisika na nge mosi.",
+    "addCustomField": "+ Yika Kisika ya Nge Me Yidika",
+    "fieldLabel": "Label ya bilanga",
+    "group": "Kimvuka",
+    "groupPlaceholderLead": "mu mbandu Bansangu ya Kuyula",
+    "groupPlaceholderUser": "mu mbandu Mambu ya nkaka",
+    "dataType": "Mutindu ya Bansangu",
+    "options": "Maponi (bo me kabula yo ti virgule)",
+    "requiredLead": "Yo ke lomba - banduku ya ekipi na beno fwete fulusa mambu yai sambu na kusonikisa zina ya mfumu .",
+    "requiredUser": "Yo ke lombaka - fwete fulusa ntangu ya kuyika muntu ya ekipi .",
+    "creating": "Kusala...",
+    "createField": "Sala Kilanga",
+    "columns": {
+      "field": "Bkilanga",
+      "group": "Kimvuka",
+      "type": "Mutindu",
+      "required": "Yo ke lomba",
+      "enabled": "Bo me pesa nzila",
+      "kind": "Mutindu"
+    },
+    "kind": {
+      "custom": "Kikalulu",
+      "core": "Ntu (ya kukangama)",
+      "standard": "Nsiku"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Bisono",
+    "TEXTAREA": "Mambu ya nda",
+    "NUMBER": "Ntalu",
+    "CURRENCY": "Mbongo",
+    "DATE": "Dati",
+    "SELECT": "Kukulumuka",
+    "LIST": "Liste"
+  },
+  "picker": {
+    "searchPlaceholder": "Sosa bisika ya ntu...",
+    "summary": "{{shown}} me monisama · {{mandatory}} ya mfunu",
+    "mandatory": "Ya mfunu",
+    "noMatch": "Ata bilanga mosi ve ke wakana."
+  },
+  "statuses": {
+    "intro": "Ba statut ya ba ntuadisi na nge na ba ntuadisi ya fioti - yina mosi mosi ke lomba (kilumbu & ntangu, ba nzila ya ba ntuadisi) ntangu muntu ke tula ntuadisi mosi na zulu na yau.",
+    "add": "+ Yika kisika",
+    "columns": {
+      "order": "Ntuma",
+      "status": "Statut",
+      "subStatuses": "Bikalulu ya Fioti",
+      "asksFor": "Kulomba Sambu na",
+      "active": "Ya ke sala"
+    },
+    "moveUp": "Kukwenda na zulu",
+    "moveDown": "Kukwenda na nsi",
+    "defaultBadge": "Defaut sambu na ba nzila ya mpa",
+    "bookingBadge": "Statut ya réservation",
+    "asksForLabel": "Kulomba sambu na {{label}}",
+    "asksForDateTime": "Kulomba dati & ntangu",
+    "none": "Ata mosi ve",
+    "dateTime": "Dati & ntangu",
+    "scheduledOn": "na {{names}}",
+    "fieldsSummary_one": "{{count}} kisika ( {{mandatory}} ya mfunu)",
+    "fieldsSummary_other": "{{count}} bilanga ( {{mandatory}} ya mfunu)",
+    "deleteConfirm": "Kufwa kisika \" {{name}} \"? Dyambu yai lenda vutuka ve na nima.",
+    "editTitle": "Soba kisika - {{name}}",
+    "newTitle": "Kikalulu ya Mpa",
+    "name": "Zina ya kisika",
+    "colour": "Mukubu",
+    "active": "Ya ke sala",
+    "isDefault": "Statut ya luyantiku sambu na bantu ya mpa",
+    "isBooking": "Statut ya réservation (bo me tula yo na réservation ya mvimba)",
+    "whenMoved": "Kana bo me nata ntu-dyambu mosi na kisika yai .",
+    "askSchedule": "Lomba dati & ntangu (muntu ya ke salaka manaka)",
+    "scheduleLabelPlaceholder": "Label, mu mbandu Kutala na .",
+    "fieldsToShow": "Bilanga ya ntu sambu na kumonisa na formulaire ya kutula na zulu",
+    "subStatusesTitle": "Bikalulu ya Fioti",
+    "subStatusesHint": "Konso kisika ya fioti lenda lomba kilumbu & ntangu na yandi mosi mpe kuyika bisika na yandi mosi - me monisama na zulu ya bisika ya kisika yina kele na zulu.",
+    "subStatusName": "Zina ya kisika ya fioti",
+    "subFields": "Bilanga ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Dati & ntangu, mu mbandu Binga diaka na .",
+    "addSubStatus": "+ Yika kisika ya fioti",
+    "saveStatus": "Bumba kisika",
+    "createStatus": "Kusala Kikalulu"
+  },
+  "notifications": {
+    "intro": "Zabisa bantu ya mbote kana ntuadisi mosi me kuma na kifulu mosi - mbala mosi, to ntangu mosi ya me bongisama na ntwala/na manima ya kilumbu & ntangu yina me tulama na zulu na yau.",
+    "add": "+ Yika Nsangu",
+    "columns": {
+      "notification": "Luzayisu",
+      "whenStatusIs": "Ntangu Statut Kele .",
+      "sends": "Yandi ke tinda",
+      "to": "Na",
+      "via": "Na nzila ya",
+      "enabled": "Bo me pesa nzila"
+    },
+    "anyStatus": "Konso kisika",
+    "anySubStatus": "Konso kisika ya fioti",
+    "inactiveOption": "{{name}} (ya ke sala ve)",
+    "emptyRules": "Ba nsangu kele ntete ve - yika mosi sambu na kukebisa ekipi na nge kana ntuadisi mosi me kuma na kisika mosi.",
+    "jobs": {
+      "title": "Bo me yidika yo mpi bo me tinda yo",
+      "firesAt": "Tiya Na",
+      "notification": "Luzayisu",
+      "lead": "Plomb",
+      "status": "Statut",
+      "details": "Mambu ya fioti-fioti",
+      "empty": "Ata kima mosi ve ya bo me yidika to me tinda ntete.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Ya bo ke vingila",
+      "PROCESSING": "Kuyidika",
+      "SENT": "Tindaka",
+      "FAILED": "Nungaka ve",
+      "SKIPPED": "Bo me buya",
+      "CANCELLED": "Bo me katula yo"
+    },
+    "deliveryStatus": {
+      "SENT": "tindaka",
+      "FAILED": "nungaka ve",
+      "SKIPPED": "me pumbuka"
+    },
+    "deliveryChannel": {
+      "IN_APP": "na appli",
+      "EMAIL": "e-mail",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Muntu ya bo me pesa",
+      "owner": "Munkwa",
+      "updatedBy": "Bo me tula yo na zulu na",
+      "role": "Mukumba: {{name}}"
+    },
+    "channels": {
+      "inApp": "Na kati ya application",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Kufwa nsangu \" {{name}} \"? Bo ke katulaka bangibusa yina ke vingilaka yo.",
+    "testPrompt": "Tinda test ya nsangu yayi na nge mosi (na appli) na kusadilaka inki ID ya ntuadisi ?",
+    "testSent": "Tindaka na ngunga na nge: {{title}} {{message}}",
+    "headersInvalid": "Ba ntu-diambu Webhook fwete vanda JSON ya mbote , mu mbandu {\"Nswa\": \"Muntu ya ke nata xyz\"}",
+    "editTitle": "Soba Luzayisu",
+    "newTitle": "Luzayisu ya Mpa",
+    "name": "Zina",
+    "namePlaceholder": "mu mbandu ngibusa ya kutala site",
+    "whenStatus": "Kana kisika ya mfumu kele .",
+    "subStatus": "Kikalulu ya fioti",
+    "send": "Tinda (muntu ya ke salaka manaka)",
+    "custom": "Kikalulu...",
+    "modeBefore": "na ntwala ya ntangu yina bo me yidika",
+    "modeAfter": "na nima ya ntangu yina bo me yidika",
+    "noScheduleWarning": "Statut yayi ke lomba ve kilumbu & ntangu, yau yina nsangu ya \"na ntwala/na/na nima ya ntangu ya bo me yidika\" zolaka ve ata fioti.",
+    "noScheduleFix": "Kangula <strong>Lomba dati & ntangu</strong> sambu na yo na nsi ya Bansiku & Bansiku ya Fioti, to tinda Nswalu.",
+    "sendTo": "Tinda na (konso kimvuka)",
+    "recipientAssigned": "Muntu ya bo me pesa (mfumu ya ntete)",
+    "recipientOwner": "Mfumu ya konti / mfumu",
+    "recipientUpdatedBy": "Muntu yina tulaka statut",
+    "everyoneWithRole": "Muntu yonso ti mukumba .",
+    "specificUsers": "Bantu ya ke sadilaka yo (ya ke salaka)",
+    "inactiveNever": "Bantu yina ke sadilaka yo ve ke bakaka ve ata fioti bansangu, ata bo me pona yo.",
+    "deliverVia": "Kupesa na nzila ya",
+    "channelInApp": "Na kati ya appli (ngunga)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( Muntu ya ke pesaka SMS WhatsApp",
+    "emailHint": "E-mail ke kwendaka na adresi ya e-mail ya konso muntu yina ke bakaka yo mpi yo ke vandaka na mfunu ya SMTP yina bo me tula na serveur (backend/.env); tii kuna ba email ke tindamaka bonso ya kukonda.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Bantu-diambu ( JSON )",
+    "content": "Mambu ya kele na nsangu",
+    "title": "Titre",
+    "message": "Nsangu",
+    "insertIntoTitle": "Kotisa na Titre",
+    "insertIntoMessage": "Kotisa na Nsangu",
+    "anyLeadField": "Konso kisika ya ntu ke salaka mpi, mu mbandu <code1>{{example1}}</code1> to <code2>{{example2}}</code2> .",
+    "preview": "Kutala na ntwala (mbandu ya ntuadisi)",
+    "enabled": "Bo me pesa nzila",
+    "saveRule": "Bumba Nsangu",
+    "createRule": "Sala Luzayisu",
+    "variables": {
+      "customerName": "Zina ya ntu",
+      "customerMobile": "Plomb mobile",
+      "customerEmail": "Email ya ntu",
+      "registrationId": "ID ya plomb",
+      "status": "Statut",
+      "subStatus": "Kikalulu ya fioti",
+      "scheduleAt": "Dati & ntangu ya bo me yidika",
+      "assignedTo": "Muntu ya bo me pesa",
+      "updatedBy": "Bo me tula yo na zulu na",
+      "recipient": "Zina ya muntu ya ke baka",
+      "project": "Kisalu",
+      "notes": "Noti ya nsuka",
+      "partner": "Zina ya nduku"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Mbala mosi ntangu bo me tula statut .",
+      "AT": "Na ntangu yina bo me yidika .",
+      "A1D": "Kilumbu 1 na nima ya ntangu yina bo me yidika (kutala mambu yina bo me sala)"
+    },
+    "immediately": "Na mbala mosi",
+    "atScheduled": "Na ntangu yina bo me yidika .",
+    "before": {
+      "MINUTES_one": "{{count}} miniti na ntwala ya ntangu ya bo me yidika",
+      "MINUTES_other": "{{count}} baminiti na ntwala ya ntangu ya bo me yidika",
+      "HOURS_one": "{{count}} ngunga na ntwala ya ntangu ya bo me yidika",
+      "HOURS_other": "{{count}} bangunga na ntwala ya ntangu ya bo me yidika",
+      "DAYS_one": "{{count}} kilumbu na ntwala ya ntangu ya bo me yidika",
+      "DAYS_other": "{{count}} bilumbu na ntwala ya ntangu ya bo me yidika",
+      "WEEKS_one": "{{count}} mposo na ntwala ya ntangu ya bo me yidika",
+      "WEEKS_other": "{{count}} bamposo na ntwala ya ntangu ya bo me yidika",
+      "MONTHS_one": "{{count}} ngonda na ntwala ya ntangu ya bo me yidika",
+      "MONTHS_other": "{{count}} bangonda na ntwala ya ntangu ya bo me yidika",
+      "YEARS_one": "{{count}} mvula na ntwala ya ntangu ya bo me yidika",
+      "YEARS_other": "{{count}} bamvula na ntwala ya ntangu yina bo me yidika"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} miniti na nima ya ntangu yina bo me yidika",
+      "MINUTES_other": "{{count}} baminiti na nima ya ntangu yina bo me yidika",
+      "HOURS_one": "{{count}} ngunga na nima ya ntangu yina bo me yidika",
+      "HOURS_other": "{{count}} bangunga na nima ya ntangu yina bo me yidika",
+      "DAYS_one": "{{count}} kilumbu na nima ya ntangu ya bo me yidika",
+      "DAYS_other": "{{count}} bilumbu na nima ya ntangu ya bo me yidika",
+      "WEEKS_one": "{{count}} mposo na nima ya ntangu ya bo me yidika",
+      "WEEKS_other": "{{count}} bamposo na nima ya ntangu yina bo me yidika",
+      "MONTHS_one": "{{count}} ngonda na nima ya ntangu ya bo me yidika",
+      "MONTHS_other": "{{count}} bangonda na nima ya ntangu yina bo me yidika",
+      "YEARS_one": "{{count}} mvula na nima ya ntangu yina bo me yidika",
+      "YEARS_other": "{{count}} bamvula na nima ya ntangu yina bo me yidika"
+    },
+    "units": {
+      "MINUTES_one": "miniti",
+      "MINUTES_other": "baminiti",
+      "HOURS_one": "ngunga",
+      "HOURS_other": "bangunga",
+      "DAYS_one": "kilumbu",
+      "DAYS_other": "bilumbu",
+      "WEEKS_one": "mposo",
+      "WEEKS_other": "bamposo",
+      "MONTHS_one": "ngonda",
+      "MONTHS_other": "bangonda",
+      "YEARS_one": "mvula",
+      "YEARS_other": "bamvula"
+    }
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Ebikulembera byange",
+    "signedInAs": "Yayingidde nga {{name}} ( {{partnerId}} ) · emirundi egiragiddwa mu {{timezone}}",
+    "addLead": "+ Okwongerako Omusulo",
+    "tabs": {
+      "all": "Byonna ( {{count}} ) .",
+      "pending": "Okulindirira ( {{count}} ) .",
+      "booked": "Booked ( {{count}} ) ."
+    },
+    "searchPlaceholder": "Noonya amannya, essimu, oba ID y'okwewandiisa ...",
+    "manageColumns": "Dukanya Ennyiriri",
+    "rowsPerPage": "Ennyiriri buli lupapula",
+    "registrationId": "ID y'okwewandiisa",
+    "emptyState": "Tewali leads yet - wandiisa esooka.",
+    "noMatch": "Tewali leads zikwatagana na filters zino.",
+    "showing": "Okulaga {{from}} - {{to}} ku {{total}} ebiyingiziddwa",
+    "actions": {
+      "preview": "Okusooka okulaba & okulongoosa amangu",
+      "history": "Ebyafaayo",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Okuyita"
+    },
+    "pagination": {
+      "first": "Omuko ogusooka",
+      "previous": "Omuko oguwedde",
+      "next": "Omuko oguddako",
+      "last": "Omuko ogusembayo"
+    }
+  },
+  "columns": {
+    "status": "Ennyimirira",
+    "assignTo": "Gabira Ku",
+    "booked": "Booked",
+    "protectionUntil": "Obukuumi Okutuusa"
+  },
+  "booking": {
+    "booked": "Booked",
+    "pending": "Tekinagwa"
+  },
+  "assign": {
+    "unassigned": "Tebiweereddwayo",
+    "owner": "{{name}} (Nnannyini)",
+    "inactive": "{{name}} (tekola)",
+    "unknownUser": "Omukozesa atamanyiddwa",
+    "assignedTo": "Eweereddwa {{name}}"
+  },
+  "form": {
+    "addTitle": "Okwongerako Omusulo",
+    "editTitle": "Edit Omukulembeze",
+    "noPermissionAdd": "Tolina lukusa kuwandiisa ba leads.",
+    "noPermissionEdit": "Tolina lukusa kulongoosa ba leads.",
+    "selectPlaceholder": "Okulonda...",
+    "commaSeparated": "Comma eyawuddwamu",
+    "phonePlaceholder": "Ennamba y’essimu",
+    "countryCode": "Koodi y’eggwanga"
+  },
+  "project": {
+    "none": "Tewali pulojekiti yonna n'okutuusa kati (tennajuliziddwa)",
+    "notInList": "{{project}} (si mu lukalala lwa pulojekiti)"
+  },
+  "journey": {
+    "customer": "Omuguzi",
+    "currentOwner": "Nnannyini yo mu kiseera kino",
+    "protectionExpiry": "Obukuumi Kuggwaako",
+    "leadStatus": "Embeera y’Omukulembeze",
+    "scheduled": "Ebitegekeddwa",
+    "assignedTo": "Eweereddwa Ku",
+    "referral": "Okusindikibwa",
+    "builderReason": "Ensonga y'omuzimbi: {{reason}}",
+    "bookedHint": "Booked by the builder - obwannannyini obw'emirimu busengukidde ku muzimbi; attribution yo n’ebisaanyizo by’okuweebwa commission bikuumibwa.",
+    "notBookedHint": "Bookings zikakasibwa omuzimbi nga bamaze okukkiriza okusindikibwa.",
+    "quickUpdate": "Okulongoosa amangu",
+    "leadDetails": "Ebikwata ku Kukulembera",
+    "progressHistory": "Ebyafaayo by’Enkulaakulana",
+    "timesIn": "(emirundi mu {{timezone}} )",
+    "backToMyLeads": "Okudda ku Bikulembeze Byange",
+    "editLead": "Edit Omukulembeze"
+  },
+  "referral": {
+    "NOT_REFERRED": "Tekijuliziddwa (tewali pulojekiti) .",
+    "PENDING_BUILDER": "Alinze omuzimbi",
+    "ACCEPTED": "Kikkirizibwa omuzimbi",
+    "REJECTED": "Egaaniddwa omuzimbi"
+  },
+  "preview": {
+    "ariaLabel": "Kulembera okusooka okulaba",
+    "title": "Okukulembera Okusooka",
+    "source": "Ensibuko",
+    "location": "Ekifo",
+    "scheduled": "Ebitegekeddwa",
+    "registered": "Bawandiisiddwa",
+    "latestNote": "Ekisembyeyo okuwandiikibwa",
+    "quickUpdate": "Okulongoosa amangu",
+    "fullDetails": "Ebisingawo mu bujjuvu",
+    "editLead": "Edit Omukulembeze",
+    "history": "Ebyafaayo"
+  },
+  "quick": {
+    "assignedTo": "Eweereddwa Ku",
+    "status": "Ennyimirira",
+    "subStatus": "Embeera Entono",
+    "selectSubStatus": "Londa embeera entono...",
+    "none": "Tewali",
+    "scheduledAt": "Etegekeddwa ku...",
+    "localTime": "mu budde bw’ekitundu",
+    "note": "Ebbaluwa",
+    "notePlaceholder": "Kiki ekyaliwo ku call / visit eno? (kya kusalawo)",
+    "updateStatus": "Okutereeza Embeera",
+    "statusUpdated": "Embeera etereezeddwa",
+    "bookedLocked": "Okukulembera kuno ku booked - embeera yaayo tekyayinza kukyusibwa.",
+    "viewOnly": "Osobola okulaba lead eno, naye omulimu gwo tegusobola kugitereeza."
+  },
+  "history": {
+    "title": "Ebyafaayo - {{registrationId}}",
+    "tabs": {
+      "all": "Onna",
+      "status": "Ennyimirira",
+      "assignment": "Ekigezo",
+      "notes": "Ebiwandiiko"
+    },
+    "doneBy": "Kikoleddwa {{actor}}",
+    "system": "Ebikozesebwa ewamu",
+    "platforms": {
+      "System": "Ebikozesebwa ewamu",
+      "External": "Wabweeru",
+      "Web": "Omukutu gwa yintaneeti",
+      "Mobile": "Essimu"
+    },
+    "added": "bwe yagasseeko",
+    "updated": "kizzeemu okulongoosebwa",
+    "empty": "(obukalu)",
+    "noHistory": "Tewali byafaayo mu kiti kino n'okutuusa kati.",
+    "fieldLabels": {
+      "stage": "Ennyimirira",
+      "subStatus": "Embeera Entono",
+      "scheduledAt": "Teekateeka",
+      "notes": "Ebiwandiiko",
+      "assignedTo": "Eweereddwa Ku"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Okwewandiisa kw’abaagalana kufunye",
+      "DUPLICATE_CHECK_COMPLETED": "Okukebera okuddirira kuwedde - tewali kuddiŋŋana kukola kuzuuliddwa",
+      "REGISTRATION_ACCEPTED": "Okwewandiisa kukkirizibwa",
+      "PROTECTION_GRANTED_one": "{{count}} -obukuumi bw'olunaku buweereddwa",
+      "PROTECTION_GRANTED_other": "{{count}} -obukuumi bw'olunaku buweereddwa",
+      "REGISTRATION_ATTEMPT_REJECTED": "Okugezaako okwewandiisa okuddiŋŋana nga {{partnerId}} kugaaniddwa",
+      "LEAD_DETAILS_UPDATED_one": "Ennimiro ya {{count}} erongooseddwa",
+      "LEAD_DETAILS_UPDATED_other": "Ennimiro za {{count}} ezizzeemu",
+      "STAGE_UPDATED": "Embeera etereezeddwa okutuuka ku {{status}}",
+      "LEAD_ASSIGNED": "Eweereddwa {{name}}",
+      "LEAD_UNASSIGNED": "Tebiweereddwayo",
+      "BOOKING_COMPLETED": "Booking ewedde",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Obwannannyini obw’emirimu bukyusiddwa ne buweebwa Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Okuwandiika kw’omukwano kukuumiddwa",
+      "COMMISSION_ELIGIBILITY_CREATED": "Ebisaanyizo by’akakiiko bitondeddwawo",
+      "HANDOVER_COMPLETED": "Okukwasa abantu kuwedde",
+      "REFERRAL_ACCEPTED": "Builder yakkirizza okusindikibwa",
+      "REFERRAL_REJECTED": "Builder yagaanyi okusindikibwa. Ensonga: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin yafulumya duplicate protection nga bukyali. Ensonga: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin yazzeemu okugaba okwewandiisa okuva ku {{from}} okudda ku {{to}} . Ensonga: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Dukanya Ennyiriri",
+    "hint": "Senda okuddamu okulagira · kebera okulaga",
+    "showAll": "Laga Byonna",
+    "resetDefault": "Ddamu ku Default"
+  },
+  "filters": {
+    "title": "Ebisengejja",
+    "allProjects": "Pulojekiti zonna",
+    "any": "Nna",
+    "noFields": "Tewali nnimiro ndala ezisengekebwa zikoleddwa n'okutuusa kati (Ensengeka > Okukulembera).",
+    "clearAll": "Clear Byonna"
+  },
+  "phone": {
+    "MISSING": "Ennamba y’essimu yeetaagibwa.",
+    "INVALID": "Nsaba oyingize ennamba y'essimu entuufu.",
+    "TOO_SHORT": "Ennamba y’essimu nnyimpi nnyo.",
+    "TOO_LONG": "Ennamba y’essimu mpanvu nnyo.",
+    "INVALID_FOR_COUNTRY": "Ennamba eno ey'essimu si ntuufu ku {{country}} .",
+    "COUNTRY_MISMATCH": "Nsaba olonde koodi y'ensi entuufu.",
+    "NOT_MOBILE": "Nsaba oyingize ennamba y'essimu, so si ssimu ya ttaka."
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal Pambangun",
+    "referrals": "Rujukan",
+    "builderLogin": "Masuak Pambangun",
+    "partnerLogin": "Masuak Mitra Saluran"
+  },
+  "login": {
+    "title": "Masuak tukang bangunan",
+    "hint": "Akun pambangun dibuek dek Leadrat . Tanyoan ka panguruih kalau indak ado."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Manunggu kaputusan sanak .",
+    "ACCEPTED": "Ditarimo",
+    "REJECTED": "Ditulak"
+  },
+  "list": {
+    "title": "Rujukan",
+    "allProjects": "Sagalo proyek",
+    "allStatuses": "Sagalo status",
+    "count_one": "{{count}} rujukan",
+    "count_other": "{{count}} rujukan",
+    "columns": {
+      "referral": "Rujukan",
+      "customer": "Palanggan",
+      "project": "Proyek",
+      "sourcePartner": "Mitra Sumber",
+      "status": "Kaadaan",
+      "booking": "Pamasanan",
+      "registered": "Didaftarkan"
+    },
+    "booked": "Dipesan",
+    "empty": "Alun ado rujukan lai."
+  },
+  "detail": {
+    "customer": "Palanggan",
+    "sourcePartner": "Mitra Sumber",
+    "attributionNote": "(atribusi - indak dapek diubah)",
+    "leadStatus": "Status Mamimpin",
+    "protectedUntil": "Dilindungi Sampai",
+    "referral": "Rujukan",
+    "reason": "Alasan: {{reason}}",
+    "booking": "Pamasanan",
+    "bookedOwner": "Dipesan - sanak nan punyo operasional .",
+    "notBooked": "Indak dipesan",
+    "sharedAfterBooking": "Dibagikan sasudah mamasan",
+    "accept": "Tarimo Rujukan",
+    "confirmBooking": "Konfirmasi Pamasanan",
+    "reject": "Tolak Rujukan",
+    "rejectReasonLabel": "Alasan untuak manulak (ditunjuakkan ka pasangan) *",
+    "rejectConfirm": "Manolak",
+    "confirmBookingPrompt": "Konfirmasikan pamasanan? Kepemilikan operasional pindah ka sanak dan pasangan manjadi layak untuak komisi.",
+    "notice": {
+      "booked": "Pemesanan lah dikonfirmasi.",
+      "accepted": "Rujukan ditarimo.",
+      "rejected": "Rujukan ditulak."
+    },
+    "backToReferrals": "Baliak ka Rujukan"
+  },
+  "history": {
+    "title": "Sajarah",
+    "actor": {
+      "system": "Sistem",
+      "partner": "Mitra saluran",
+      "admin": "Admin Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Pendaftaran mitra alah ditarimo",
+      "DUPLICATE_CHECK_COMPLETED": "Pamariksaan duplikat salasai - indak ado duplikat aktif nan ditamukan",
+      "REGISTRATION_ACCEPTED": "Pendaftaran alah ditarimo",
+      "PROTECTION_GRANTED_one": "{{count}} -hari palinduangan diagiah",
+      "PROTECTION_GRANTED_other": "{{count}} -hari palinduangan diagiah",
+      "STAGE_UPDATED": "Status diperbarui manjadi {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Bidang {{count}} diperbarui",
+      "LEAD_DETAILS_UPDATED_other": "Bidang {{count}} diperbarui",
+      "LEAD_ASSIGNED": "Ditugaskan untuak {{name}}",
+      "LEAD_UNASSIGNED": "Indak ditugaskan",
+      "REFERRAL_ACCEPTED": "Tukang bangunan manarimo rujukan",
+      "REFERRAL_REJECTED": "Tukang bangunan manulak rujukan tu. Alasan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Usaho pendaftaran duplikat dek {{partner}} ditolak",
+      "BOOKING_COMPLETED": "Pemesanan salasai",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Kapamilikan operasional dipindahan ka Pambangun",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribusi pasangan dipaliharo",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisi dibuek",
+      "HANDOVER_COMPLETED": "Penyerahan salasai",
+      "ADMIN_PROTECTION_RELEASED": "Admin malapehan duplikat perlindungan awal. Alasan: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin manugaskan baliak pendaftaran dari {{from}} manjadi {{to}} . Alasan: {{reason}}"
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "shell": {
+    "portal": "Porth Adeiladwyr",
+    "referrals": "Atgyfeiriadau",
+    "builderLogin": "Mewngofnodi Adeiladwr",
+    "partnerLogin": "Mewngofnodi Partner Sianel"
+  },
+  "login": {
+    "title": "Adeiladwr yn mewngofnodi",
+    "hint": "Mae cyfrifon adeiladwr yn cael eu creu gan Leadrat . Gofynnwch i'ch gweinyddwr os nad oes gennych chi un."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Aros am eich penderfyniad",
+    "ACCEPTED": "Derbyniwyd",
+    "REJECTED": "Gwrthodwyd"
+  },
+  "list": {
+    "title": "Atgyfeiriadau",
+    "allProjects": "Pob prosiect",
+    "allStatuses": "Pob statws",
+    "count_zero": "{{count}} atgyfeiriad",
+    "count_one": "{{count}} atgyfeiriad",
+    "count_two": "{{count}} atgyfeiriad",
+    "count_few": "{{count}} atgyfeiriad",
+    "count_many": "{{count}} atgyfeiriad",
+    "count_other": "{{count}} atgyfeiriad",
+    "columns": {
+      "referral": "Cyfeirio",
+      "customer": "Cwsmer",
+      "project": "Prosiect",
+      "sourcePartner": "Partner Ffynhonnell",
+      "status": "Statws",
+      "booking": "Archebu",
+      "registered": "Wedi cofrestru"
+    },
+    "booked": "Wedi archebu",
+    "empty": "Dim cyfeiriadau eto."
+  },
+  "detail": {
+    "customer": "Cwsmer",
+    "sourcePartner": "Partner Ffynhonnell",
+    "attributionNote": "(priodoliad - ni ellir ei newid)",
+    "leadStatus": "Statws Arweiniol",
+    "protectedUntil": "Gwarchodedig Tan",
+    "referral": "Cyfeirio",
+    "reason": "Rheswm: {{reason}}",
+    "booking": "Archebu",
+    "bookedOwner": "Wedi archebu - chi yw'r perchennog gweithredol",
+    "notBooked": "Heb ei archebu",
+    "sharedAfterBooking": "Wedi'i rannu ar ôl archebu",
+    "accept": "Derbyn Atgyfeiriad",
+    "confirmBooking": "Cadarnhau Archebu",
+    "reject": "Gwrthod Atgyfeiriad",
+    "rejectReasonLabel": "Rheswm dros wrthod (dangosir i’r partner) *",
+    "rejectConfirm": "Gwrthod",
+    "confirmBookingPrompt": "Cadarnhau'r archeb? Mae perchnogaeth weithredol yn symud i chi a daw'r partner yn gymwys i gael comisiwn.",
+    "notice": {
+      "booked": "Archebu wedi'i gadarnhau.",
+      "accepted": "Derbyniwyd yr atgyfeiriad.",
+      "rejected": "Atgyfeiriad wedi'i wrthod."
+    },
+    "backToReferrals": "Yn ôl at Atgyfeiriadau"
+  },
+  "history": {
+    "title": "Hanes",
+    "actor": {
+      "system": "System",
+      "partner": "Partner sianel",
+      "admin": "Gweinyddiaeth Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Derbyniwyd cofrestriad partner",
+      "DUPLICATE_CHECK_COMPLETED": "Gwiriad dyblyg wedi'i gwblhau - ni chanfuwyd copi dyblyg gweithredol",
+      "REGISTRATION_ACCEPTED": "Derbynnir cofrestriad",
+      "PROTECTION_GRANTED_zero": "{{count}} diogelu diwrnod wedi'i roi",
+      "PROTECTION_GRANTED_one": "{{count}} diogelu diwrnod wedi'i roi",
+      "PROTECTION_GRANTED_two": "{{count}} diogelu diwrnod wedi'i roi",
+      "PROTECTION_GRANTED_few": "{{count}} diogelu diwrnod wedi'i roi",
+      "PROTECTION_GRANTED_many": "{{count}} diogelu diwrnod wedi'i roi",
+      "PROTECTION_GRANTED_other": "{{count}} diogelu diwrnod wedi'i roi",
+      "STAGE_UPDATED": "Statws wedi'i ddiweddaru i {{stage}}",
+      "LEAD_DETAILS_UPDATED_zero": "Mae {{count}} maes wedi'u diweddaru",
+      "LEAD_DETAILS_UPDATED_one": "Maes {{count}} wedi'i ddiweddaru",
+      "LEAD_DETAILS_UPDATED_two": "Mae {{count}} maes wedi'u diweddaru",
+      "LEAD_DETAILS_UPDATED_few": "Mae {{count}} maes wedi'u diweddaru",
+      "LEAD_DETAILS_UPDATED_many": "Mae {{count}} maes wedi'u diweddaru",
+      "LEAD_DETAILS_UPDATED_other": "Mae {{count}} maes wedi'u diweddaru",
+      "LEAD_ASSIGNED": "Wedi'i aseinio i {{name}}",
+      "LEAD_UNASSIGNED": "Heb ei aseinio",
+      "REFERRAL_ACCEPTED": "Derbyniodd yr adeiladwr yr atgyfeiriad",
+      "REFERRAL_REJECTED": "Gwrthododd yr adeiladwr yr atgyfeiriad. Rheswm: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Ymgais gofrestru dyblyg gan {{partner}} wedi'i wrthod",
+      "BOOKING_COMPLETED": "Archebu wedi'i gwblhau",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Trosglwyddo perchnogaeth weithredol i Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Priodoli partner wedi'i gadw",
+      "COMMISSION_ELIGIBILITY_CREATED": "Cymhwysedd y Comisiwn wedi'i greu",
+      "HANDOVER_COMPLETED": "Trosglwyddiad wedi'i gwblhau",
+      "ADMIN_PROTECTION_RELEASED": "Rhyddhaodd y gweinyddwr amddiffyniad dyblyg yn gynnar. Rheswm: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Mae'r gweinyddwr wedi ailbennu cofrestriad o {{from}} i {{to}} . Rheswm: {{reason}}"
+    }
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "My Leads",
+    "signedInAs": "Signatus est sicut {{name}} ( {{partnerId}} ) · tempora in {{timezone}} ostensa",
+    "addLead": "+ Add plumbum",
+    "tabs": {
+      "all": "Omnes ( {{count}} )",
+      "pending": "Eviewray ( {{count}} )",
+      "booked": "Corruptela ( {{count}} )"
+    },
+    "searchPlaceholder": "Quaere nominatim mobile vel adnotatione ID ...",
+    "manageColumns": "Curo columnarum",
+    "rowsPerPage": "Ordines per paginam",
+    "registrationId": "Registration ID",
+    "emptyState": "No ducit adhuc - subcriptio primum tuum.",
+    "noMatch": "Nullae his Filtra par ducit.",
+    "showing": "Ostendens {{from}} - {{to}} de {{total}} viscus",
+    "actions": {
+      "preview": "Praevius & velox renovatio",
+      "history": "Historia",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Vocatio"
+    },
+    "pagination": {
+      "first": "Prima pagina",
+      "previous": "Pagina prior",
+      "next": "Proxima pagina",
+      "last": "Ultima pagina"
+    }
+  },
+  "columns": {
+    "status": "Status",
+    "assignTo": "Assignare",
+    "booked": "Booked",
+    "protectionUntil": "Donec"
+  },
+  "booking": {
+    "booked": "Booked",
+    "pending": "Eviewray"
+  },
+  "assign": {
+    "unassigned": "Unssigned",
+    "owner": "{{name}} (dominus)",
+    "inactive": "{{name}} (iners)",
+    "unknownUser": "Ignota user",
+    "assignedTo": "{{name}} dedit."
+  },
+  "form": {
+    "addTitle": "Add plumbum",
+    "editTitle": "Edit plumbum",
+    "noPermissionAdd": "Non permittitur tibi ut subcriptio ducit.",
+    "noPermissionEdit": "Non permittitur tibi recensere ducit.",
+    "selectPlaceholder": "Lego...",
+    "commaSeparated": "Comma separata",
+    "phonePlaceholder": "Numerus telephonicus",
+    "countryCode": "Patria codice"
+  },
+  "project": {
+    "none": "No project yet (not referred)",
+    "notInList": "{{project}} (non in indice project)"
+  },
+  "journey": {
+    "customer": "Customer",
+    "currentOwner": "Current Possessor",
+    "protectionExpiry": "Tutela Exitus",
+    "leadStatus": "Duc Status",
+    "scheduled": "Scheduled",
+    "assignedTo": "assignata",
+    "referral": "Deferre",
+    "builderReason": "Rationem conditoris: {{reason}}",
+    "bookedHint": "Corruptela ab artifice - proprietas operational ad aedificatorem movit; vestrae attributionis et commissionis eligibility servetur.",
+    "notBookedHint": "Libellorum confirmantur ab artifice semel deferre accepta.",
+    "quickUpdate": "Velox Update",
+    "leadDetails": "Duc Details",
+    "progressHistory": "Progressus Historia",
+    "timesIn": "(tempus in {{timezone}} )",
+    "backToMyLeads": "Back to My Leads",
+    "editLead": "Edit plumbum"
+  },
+  "referral": {
+    "NOT_REFERRED": "Not referred (non project)",
+    "PENDING_BUILDER": "Expectans hic",
+    "ACCEPTED": "Accepit ab architecto",
+    "REJECTED": "Reprobari ab architecto"
+  },
+  "preview": {
+    "ariaLabel": "plumbum preview",
+    "title": "Praevius plumbum",
+    "source": "Source",
+    "location": "Locus",
+    "scheduled": "Scheduled",
+    "registered": "Descripserunt",
+    "latestNote": "Tardus Nota",
+    "quickUpdate": "Velox Update",
+    "fullDetails": "Full Details",
+    "editLead": "Edit plumbum",
+    "history": "Historia"
+  },
+  "quick": {
+    "assignedTo": "assignata",
+    "status": "Status",
+    "subStatus": "Sub-Status",
+    "selectSubStatus": "Lego sub-status...",
+    "none": "Nullus",
+    "scheduledAt": "Scheduled at",
+    "localTime": "loci tempus",
+    "note": "Nota",
+    "notePlaceholder": "Quid factum est in hac vocatione / visita? (optional) back",
+    "updateStatus": "Status update",
+    "statusUpdated": "Status updated",
+    "bookedLocked": "Hoc plumbum corruptela est - eius status iam mutari non potest.",
+    "viewOnly": "Hoc plumbum inspicere potes, sed munus tuum illud renovare non potest."
+  },
+  "history": {
+    "title": "Historia - {{registrationId}}",
+    "tabs": {
+      "all": "All",
+      "status": "Status",
+      "assignment": "adsignatio",
+      "notes": "Notae"
+    },
+    "doneBy": "Actum ab {{actor}}",
+    "system": "Systema",
+    "platforms": {
+      "System": "Systema",
+      "External": "Externum",
+      "Web": "Web",
+      "Mobile": "Mobile"
+    },
+    "added": "additae",
+    "updated": "updated \"",
+    "empty": "(vacuus)",
+    "noHistory": "Nulla historia in hac categoria adhuc.",
+    "fieldLabels": {
+      "stage": "Status",
+      "subStatus": "Sub-Status",
+      "scheduledAt": "Schedule",
+      "notes": "Notae",
+      "assignedTo": "assignata"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Socium adnotatione accepit",
+      "DUPLICATE_CHECK_COMPLETED": "Duplicata reprehendo perficitur - non invenitur duplicata activa",
+      "REGISTRATION_ACCEPTED": "Registration accepit",
+      "PROTECTION_GRANTED_one": "{{count}} -day praesidium datum",
+      "PROTECTION_GRANTED_other": "{{count}} -day praesidium datum",
+      "REGISTRATION_ATTEMPT_REJECTED": "Duplicare adnotationem conatus per {{partnerId}} rejecerunt",
+      "LEAD_DETAILS_UPDATED_one": "Updated {{count}} agrum",
+      "LEAD_DETAILS_UPDATED_other": "Updated {{count}} agros",
+      "STAGE_UPDATED": "Status renovatus ad {{status}}",
+      "LEAD_ASSIGNED": "{{name}} dedit.",
+      "LEAD_UNASSIGNED": "Unssigned",
+      "BOOKING_COMPLETED": "Libri complebitur",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Res ad conditorem translatum operational",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Socium attributionis servavit",
+      "COMMISSION_ELIGIBILITY_CREATED": "Commissio eligibility creata est",
+      "HANDOVER_COMPLETED": "Orabant complebitur",
+      "REFERRAL_ACCEPTED": "Architecto recusandae deferre",
+      "REFERRAL_REJECTED": "Architecto repudiandae eget. Ratio: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin mane praesidium duplicatum dimisit. Ratio: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin resignavit adnotationem ab {{from}} ad {{to}} . Ratio: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Curo columnarum",
+    "hint": "Trahunt ad reorder · reprehendo ostendere",
+    "showAll": "Ostende All",
+    "resetDefault": "Reset ad Default"
+  },
+  "filters": {
+    "title": "Filtra",
+    "allProjects": "Omnia consilia",
+    "any": "Ullus",
+    "noFields": "Nullae aliae agri filterabiles adhuc capacia sunt (Setting > Lead).",
+    "clearAll": "Patet All"
+  },
+  "phone": {
+    "MISSING": "Numerus telephonicus requiritur.",
+    "INVALID": "Please enter a numerus telephonicus validus.",
+    "TOO_SHORT": "Numerus telephonicus brevior est.",
+    "TOO_LONG": "Numerus telephonicus nimis longus est.",
+    "INVALID_FOR_COUNTRY": "Numerus telephonicus hic pro {{country}} non valet.",
+    "COUNTRY_MISMATCH": "Placere eligere rectam regionem codice.",
+    "NOT_MOBILE": "Please enter a number of mobile, not landline."
+  }
+}

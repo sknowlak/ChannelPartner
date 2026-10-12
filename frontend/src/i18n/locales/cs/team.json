@@ -1,0 +1,83 @@
+{
+  "title": "Spravovat tým",
+  "tabs": {
+    "members": "Členové týmu",
+    "roles": "Role a oprávnění",
+    "profile": "Můj profil"
+  },
+  "roles": {
+    "owner": "Majitel",
+    "member": "Člen týmu"
+  },
+  "profile": {
+    "updated": "Profil aktualizován.",
+    "basicInfo": "Základní informace",
+    "organisationInfo": "Informace o organizaci",
+    "preferences": "Předvolby",
+    "companyName": "Název společnosti / organizace",
+    "city": "Město",
+    "state": "Stát",
+    "currencyHelp": "Používá se k zobrazení rozpočtů a hodnot rezervací v celém týmu.",
+    "useDeviceTimezone": "Použít časové pásmo zařízení ( {{timezone}} )",
+    "securityRole": "Zabezpečení a role",
+    "newPassword": "Nové heslo (nechte prázdné, aby zůstalo nezměněno)",
+    "currentPassword": "Aktuální heslo",
+    "memberSince": "Členem od",
+    "languageSaved": "Jazyk uložený do vašeho účtu – bude použit na každém zařízení, do kterého se přihlásíte."
+  },
+  "members": {
+    "intro": "Přidejte, upravte, deaktivujte nebo odeberte lidi ve vašem týmu – sdílejí přístup ke stejným potenciálním zákazníkům.",
+    "noPermission": "Nemáte oprávnění přidávat, upravovat nebo odebírat členy týmu.",
+    "addNew": "+ Přidat nového uživatele",
+    "passwordLabel": "{{label}} (min. 8 znaků)",
+    "rolePermissions": "Role a oprávnění",
+    "adding": "Přidávání...",
+    "addMember": "Přidat člena týmu",
+    "tabAll": "Vše ( {{count}} )",
+    "tabActive": "Aktivní ( {{count}} )",
+    "tabInactive": "Neaktivní ( {{count}} )",
+    "searchPlaceholder": "Hledat jméno nebo uživatelské jméno...",
+    "allTimezones": "Všechna časová pásma",
+    "perPage": "Záznamy na stránku",
+    "contact": "Kontakt",
+    "added": "Přidáno",
+    "toggleActive": "Aktivní – kliknutím deaktivujete",
+    "toggleInactive": "Neaktivní – kliknutím aktivujete",
+    "empty": "Zatím žádní členové týmu.",
+    "noMatch": "Těmto filtrům neodpovídají žádní členové týmu.",
+    "showing": "Zobrazeno {{from}} - {{to}} z {{total}} záznamů",
+    "firstPage": "První stránka",
+    "previousPage": "Předchozí stránka",
+    "nextPage": "Další stránka",
+    "lastPage": "Poslední stránka"
+  },
+  "editMember": {
+    "title": "Upravit uživatele",
+    "noPermission": "Nemáte oprávnění upravovat členy týmu.",
+    "backToTeam": "Zpět k týmu",
+    "cantChangeOwn": "Nemůžete změnit svou vlastní roli nebo status.",
+    "needsManageRoles": "Změna role člena vyžaduje oprávnění ke správě rolí.",
+    "addedBy": "Přidáno uživatelem",
+    "addedOn": "Přidáno na"
+  },
+  "rolesPage": {
+    "intro": "Super Admin, Admin a Manager jsou vestavěné a nelze je změnit – vytvořte si vlastní roli pro cokoli jiného.",
+    "noPermission": "Nemáte oprávnění ke správě rolí.",
+    "createCustom": "+ Vytvořit vlastní roli",
+    "roleName": "Název role",
+    "permissions": "Oprávnění",
+    "members": "členové",
+    "creating": "Vytváření...",
+    "createRole": "Vytvořit roli",
+    "systemRole": "Systémová role",
+    "builtIn": "Vestavěný",
+    "empty": "Zatím žádné role."
+  },
+  "permissions": {
+    "MANAGE_LEADS": "Správa potenciálních zákazníků (vytváření, postup, rezervace)",
+    "MANAGE_TEAM": "Spravovat tým (přidávat, upravovat, odebírat členy)",
+    "MANAGE_ROLES": "Správa rolí a oprávnění",
+    "MANAGE_SETTINGS": "Spravovat nastavení (pole formuláře pro zájemce)",
+    "none": "Žádná oprávnění"
+  }
+}

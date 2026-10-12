@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Malongolola",
+    "noPermission": "Kuena ne bukenji bua kulombola malu to."
+  },
+  "categories": {
+    "lead": "Kulombola",
+    "user": "Muena mudimu",
+    "integrations": "Disangisha"
+  },
+  "leadTabs": {
+    "fields": "Madimi",
+    "statuses": "Miaba ne Miaba mikese",
+    "notifications": "Mamanyisha ne bafidi ba ndondo"
+  },
+  "fields": {
+    "leadIntro": "Longolola formilere wa dikuata dia bantu badi mua kulonda: enza bua miaba ikale mikumbane, enza bua ikale ne tshimanyinu tshidi tshikengedibua, anyi weja miaba yebe ya pa buayi.",
+    "userIntro": "Longolola formilere wa Add/Edit Team Member: enza/kupangisha miaba, iteka tshimanyinu tshia dijinga, anyi wela miaba yebe nkayebe.",
+    "addCustomField": "+ Weja muaba wa pa buawu",
+    "fieldLabel": "Tshimanyinu tshia budimi",
+    "group": "Tshisumbu",
+    "groupPlaceholderLead": "tshilejilu, ngumu ya dikonka",
+    "groupPlaceholderUser": "tshilejilu, malu makuabu",
+    "dataType": "Mushindu wa myanda",
+    "options": "Malu adibu mua kusungula (mutapulula ne virgule)",
+    "requiredLead": "Bidi bikengedibua - bena mudimu nebe ba mu tshisumbu tshienu badi ne tshia kuwuja bualu ebu bua kufunda muntu udibu mua kukulombola",
+    "requiredUser": "Bidi bikengedibua - bidi ne tshia kuwuja padibu basakidila muntu wa mu tshisumbu",
+    "creating": "Kufuka...",
+    "createField": "Enza tshitupa",
+    "columns": {
+      "field": "Budimi",
+      "group": "Tshisumbu",
+      "type": "Kututa",
+      "required": "Bidi bikengela",
+      "enabled": "Bienzeja",
+      "kind": "Mushindu"
+    },
+    "kind": {
+      "custom": "Tshilele",
+      "core": "Mutshi (mukanga)",
+      "standard": "Tshilele"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Mifundu",
+    "TEXTAREA": "Mêyi male",
+    "NUMBER": "Bungi",
+    "CURRENCY": "Folanga",
+    "DATE": "Dituku",
+    "SELECT": "Kupueka panshi",
+    "LIST": "Liste"
+  },
+  "picker": {
+    "searchPlaceholder": "Kimba miaba ya kulombola...",
+    "summary": "{{shown}} shown · {{mandatory}} mandatory",
+    "mandatory": "Kuenzeja ku bukole",
+    "noMatch": "Kakuena madimi adi apetangana to."
+  },
+  "statuses": {
+    "intro": "Nsombelu yebe ya bulombodi ne miaba mikese - tshidi yonso wa kudibu ulomba (dituku ne dîba, miaba ya bulombodi) padi muntu ushintulula bulombodi kudiye.",
+    "add": "+ Weja nsombelu",
+    "columns": {
+      "order": "Kuludika",
+      "status": "Mushindu",
+      "subStatuses": "Miaba mikese",
+      "asksFor": "Udi ulomba",
+      "active": "Wenza mudimu"
+    },
+    "moveUp": "Banda mulu",
+    "moveDown": "Upueka panshi",
+    "defaultBadge": "Tshia kumpala bua bantu bapiabapia",
+    "bookingBadge": "Nsombelu wa difunda",
+    "asksForLabel": "Udi ulomba {{label}}",
+    "asksForDateTime": "Udi ulomba dituku ne dîba",
+    "none": "Tshintu nansha tshimua",
+    "dateTime": "Dituku ne dîba",
+    "scheduledOn": "pa {{names}}",
+    "fieldsSummary_one": "{{count}} field ( {{mandatory}} mandatory)",
+    "fieldsSummary_other": "{{count}} fields ( {{mandatory}} mandatory)",
+    "deleteConfirm": "Kujimija nsombelu \" {{name}} \"? Bualu ebu kabuena mua kupingajibua to.",
+    "editTitle": "Shintulula nsombelu - {{name}}",
+    "newTitle": "Nsombelu mupiamupia",
+    "name": "Dîna dia nsombelu",
+    "colour": "Mubidi",
+    "active": "Wenza mudimu",
+    "isDefault": "Nsombelu wa kumpala wa bantu bapiabapia",
+    "isBooking": "Nsombelu wa difunda (mulongolola kudi difunda dijima)",
+    "whenMoved": "Padibu bashintulula tshintu tshidi tshilombola ku nsombelu eu",
+    "askSchedule": "Lomba dituku ne dîba (muena programe)",
+    "scheduleLabelPlaceholder": "Tshimanyinu, tshilejilu, Tangila ku",
+    "fieldsToShow": "Miaba ya kumpala idi ne tshia kuleja pa dibeji dia dishintulula",
+    "subStatusesTitle": "Miaba mikese",
+    "subStatusesHint": "Tshitupa tshionso tshidi mua kulomba dituku ne dîba ne kusakidila miaba yatshi - idi ileja pa mutu pa miaba idi kulu eku.",
+    "subStatusName": "Dîna dia tshitupa",
+    "subFields": "Miaba ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Tshimanyinu tshia dituku ne dîba, tshilejilu: Bikila kabidi ku",
+    "addSubStatus": "+ Weja tshitupa tshia nsombelu",
+    "saveStatus": "Lama nsombelu",
+    "createStatus": "Kuenza nsombelu"
+  },
+  "notifications": {
+    "intro": "Umanyishe bantu bakumbane padi muntu ufika ku tshidiye - diakamue, anyi dîba kampanda kumpala/panyima pa dituku ne dîba didibu balongolole.",
+    "add": "+ Weja dimanyisha",
+    "columns": {
+      "notification": "Dimanyisha",
+      "whenStatusIs": "Padi nsombelu",
+      "sends": "Udi utuma",
+      "to": "Bua",
+      "via": "Kupitshila",
+      "enabled": "Bienzeja"
+    },
+    "anyStatus": "Nsombelu kayi yonso",
+    "anySubStatus": "Muaba kayi wonso",
+    "inactiveOption": "{{name}} (kayi wenza mudimu)",
+    "emptyRules": "Kakuena mamanyisha to - weja umue bua kudimuija tshisumbu tshieba padi muntu udi ulombola ufika ku tshidiye.",
+    "jobs": {
+      "title": "Tshilongolola ne tshituma",
+      "firesAt": "Kapia Ku",
+      "notification": "Dimanyisha",
+      "lead": "Kulombola",
+      "status": "Mushindu",
+      "details": "Malu a makese",
+      "empty": "Kakuena tshintu tshilongolola anyi tshituma to.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Mu nkatshi mua kwindila",
+      "PROCESSING": "Dilongolola",
+      "SENT": "Kutuma",
+      "FAILED": "Kubula",
+      "SKIPPED": "Kupita",
+      "CANCELLED": "Bakalekela"
+    },
+    "deliveryStatus": {
+      "SENT": "kutuma",
+      "FAILED": "kubula",
+      "SKIPPED": "mupita"
+    },
+    "deliveryChannel": {
+      "IN_APP": "mu-app",
+      "EMAIL": "e-mail",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Muena mudimu mufila",
+      "owner": "Muena tshintu",
+      "updatedBy": "Bilongolola kudi",
+      "role": "Mudimu: {{name}}"
+    },
+    "channels": {
+      "inApp": "Mu-app",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Kujimija dimanyisha \" {{name}} \"? Bivulukilu bidi bindile bidi bifumina kudibi mbijimijibue.",
+    "testPrompt": "Tuma tshikebelu tshia dimanyisha edi kudi wewe nkayebe (mu programe) wenza mudimu ne ID kayi?",
+    "testSent": "Kutuma ku tshingoma tshiebe: {{title}} {{message}}",
+    "headersInvalid": "Mitu ya Webhook idi ne tshia kuikala JSON mimpe, tshilejilu {\"Dianyisha\": \"Muena xyz\"}",
+    "editTitle": "Shintulula dimanyisha",
+    "newTitle": "Dimanyisha dipiadipia",
+    "name": "Dina",
+    "namePlaceholder": "tshilejilu, tshivulukilu tshia dikumbula dia muaba",
+    "whenStatus": "Padi nsombelu wa muntu udi ulombola",
+    "subStatus": "Muaba mukese",
+    "send": "Tuma (mulongolola)",
+    "custom": "Tshilele...",
+    "modeBefore": "kumpala kua dîba dilongolola",
+    "modeAfter": "kunyima kua dîba dilongolola",
+    "noScheduleWarning": "Muaba eu kawena ulomba dituku ne dîba to, nunku dimanyisha dia \"kumpala/ku/panyima pa dîba dilongolola\" kadiakupatuka nansha kakese.",
+    "noScheduleFix": "Ela <strong>Ask bua dituku ne dîba</strong> bua bualu ebu muinshi mua Status & Sub-Status, anyi utume diakamue.",
+    "sendTo": "Tuma kudi (disangisha dionso)",
+    "recipientAssigned": "Muena mudimu mufila (muena mudimu)",
+    "recipientOwner": "Muena konte / mulombodi",
+    "recipientUpdatedBy": "Muntu uvua mushintulule nsombelu",
+    "everyoneWithRole": "Muntu yense udi ne mudimu",
+    "specificUsers": "Bena mudimu kampanda (badi benza mudimu)",
+    "inactiveNever": "Bantu badi kabayi benza mudimu kabatu bapeta mamanyisha nansha bobu babasungule.",
+    "deliverVia": "Ufila ku diambuluisha dia",
+    "channelInApp": "Mu-app (tshingoma)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS provider)",
+    "emailHint": "E-mail udi uya ku adrese wa e-mail wa muntu yonso ne udi dijinga ne SMTP mulongolola pa tshiamu tshia mudimu (backend/.env); too ne dîba adi, mikanda idibu batuma ku Enternete idi mifunda bu mipangile.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Mitu ya malu ( JSON )",
+    "content": "Malu adi mu dimanyisha",
+    "title": "Tshiena bualu",
+    "message": "Mukenji",
+    "insertIntoTitle": "Ela mu tshiena bualu",
+    "insertIntoMessage": "Ela mu mukenji",
+    "anyLeadField": "Tshitupa tshionso tshia kumpala tshidi kabidi tshienza mudimu, tshilejilu <code1>{{example1}}</code1> anyi <code2>{{example2}}</code2> .",
+    "preview": "Tangila (tshilejilu tshia bulombodi)",
+    "enabled": "Bienzeja",
+    "saveRule": "Lama dimanyisha",
+    "createRule": "Enza dimanyisha",
+    "variables": {
+      "customerName": "Dîna dia mfumu",
+      "customerMobile": "Mulombodi wa telefone",
+      "customerEmail": "Email wa kulombola",
+      "registrationId": "ID wa kulombola",
+      "status": "Mushindu",
+      "subStatus": "Muaba mukese",
+      "scheduleAt": "Dituku ne dîba dilongolola",
+      "assignedTo": "Muena mudimu mufila",
+      "updatedBy": "Bilongolola kudi",
+      "recipient": "Dîna dia mupeta",
+      "project": "Mudimu",
+      "notes": "Note wa lelu",
+      "partner": "Dîna dia muena dibaka"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Diakamue padibu bateka nsombelu",
+      "AT": "Pa dîba didibu balongolole",
+      "A1D": "1 dituku kunyima kua dîba divuabu balongolole (tshikebelu tshia kulonda)"
+    },
+    "immediately": "Mpindieu",
+    "atScheduled": "Pa dîba dilongolola",
+    "before": {
+      "MINUTES_one": "{{count}} minite kumpala kua dîba dilongolola",
+      "MINUTES_other": "{{count}} minite kumpala kua dîba dilongolola",
+      "HOURS_one": "{{count}} dîba kumpala kua dîba dilongolola",
+      "HOURS_other": "{{count}} mêba kumpala kua dîba dilongolola",
+      "DAYS_one": "{{count}} dituku kumpala kua dîba dilongolola",
+      "DAYS_other": "{{count}} matuku kumpala kua dîba dilongolola",
+      "WEEKS_one": "{{count}} lumingu kumpala kua dîba dilongolola",
+      "WEEKS_other": "{{count}} mbingu kumpala kua dîba dilongolola",
+      "MONTHS_one": "{{count}} ngondo kumpala kua dîba dilongolola",
+      "MONTHS_other": "{{count}} ngondo kumpala kua dîba dilongolola",
+      "YEARS_one": "{{count}} tshidimu kumpala kua tshikondo tshilongolola",
+      "YEARS_other": "{{count}} bidimu kumpala kua tshikondo tshilongolola"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minite kunyima kua dîba dilongolola",
+      "MINUTES_other": "{{count}} minite kunyima kua dîba dilongolola",
+      "HOURS_one": "{{count}} diba kunyima kua dîba dilongolola",
+      "HOURS_other": "{{count}} mêba kunyima kua dîba dilongolola",
+      "DAYS_one": "{{count}} dituku kunyima kua dîba dilongolola",
+      "DAYS_other": "{{count}} matuku kunyima kua dîba dilongolola",
+      "WEEKS_one": "{{count}} lumingu kunyima kua dîba dilongolola",
+      "WEEKS_other": "{{count}} mbingu kunyima kua dîba dilongolola",
+      "MONTHS_one": "{{count}} ngondo kunyima kua dîba dilongolola",
+      "MONTHS_other": "{{count}} ngondu kunyima kua tshikondo tshilongolola",
+      "YEARS_one": "{{count}} tshidimu kunyima kua tshikondo tshilongolola",
+      "YEARS_other": "{{count}} bidimu kunyima kua tshikondo tshilongolola"
+    },
+    "units": {
+      "MINUTES_one": "minite",
+      "MINUTES_other": "minite",
+      "HOURS_one": "dîba",
+      "HOURS_other": "meba",
+      "DAYS_one": "dituka",
+      "DAYS_other": "matuku",
+      "WEEKS_one": "lumingu",
+      "WEEKS_other": "mbingu",
+      "MONTHS_one": "ngondu",
+      "MONTHS_other": "ngondo",
+      "YEARS_one": "tshidimu",
+      "YEARS_other": "bidimu"
+    }
+  }
+}

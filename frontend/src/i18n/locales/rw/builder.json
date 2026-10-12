@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Urubuga rwubaka",
+    "referrals": "Kohereza",
+    "builderLogin": "Kwinjira",
+    "partnerLogin": "Umuyoboro winjira"
+  },
+  "login": {
+    "title": "Injira yubaka",
+    "hint": "Konti zubaka zakozwe na Leadrat . Baza umuyobozi wawe niba udafite."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Gutegereza icyemezo cyawe",
+    "ACCEPTED": "Byemewe",
+    "REJECTED": "Yanze"
+  },
+  "list": {
+    "title": "Kohereza",
+    "allProjects": "Imishinga yose",
+    "allStatuses": "Imimerere yose",
+    "count_one": "{{count}} kubohereza",
+    "count_other": "{{count}} kubohereza",
+    "columns": {
+      "referral": "Kohereza",
+      "customer": "Umukiriya",
+      "project": "Umushinga",
+      "sourcePartner": "Umufatanyabikorwa",
+      "status": "Imiterere",
+      "booking": "Kwiyandikisha",
+      "registered": "Kwiyandikisha"
+    },
+    "booked": "Yanditse",
+    "empty": "Nta kohereza."
+  },
+  "detail": {
+    "customer": "Umukiriya",
+    "sourcePartner": "Umufatanyabikorwa",
+    "attributionNote": "(Inshingano - ntishobora guhinduka)",
+    "leadStatus": "Imiyoborere",
+    "protectedUntil": "Kurindwa Kugeza",
+    "referral": "Kohereza",
+    "reason": "Impamvu: {{reason}}",
+    "booking": "Kwiyandikisha",
+    "bookedOwner": "Yanditseho - uri nyir'ibikorwa",
+    "notBooked": "Ntabwo yanditse",
+    "sharedAfterBooking": "Basangiye nyuma yo gutumaho",
+    "accept": "Emera koherezwa",
+    "confirmBooking": "Emeza ko wanditse",
+    "reject": "Wange kohereza",
+    "rejectReasonLabel": "Impamvu yo kwanga (yeretse umukunzi) *",
+    "rejectConfirm": "Wange",
+    "confirmBookingPrompt": "Emeza ko wanditse? Ibikorwa nyirizina bikwimukira kandi umufatanyabikorwa yemerewe gukora komisiyo.",
+    "notice": {
+      "booked": "Kwiyandikisha byemejwe.",
+      "accepted": "Kohereza byemewe.",
+      "rejected": "Kohereza byanze."
+    },
+    "backToReferrals": "Subira kuri Kohereza"
+  },
+  "history": {
+    "title": "Amateka",
+    "actor": {
+      "system": "Sisitemu",
+      "partner": "Umufatanyabikorwa",
+      "admin": "Umuyobozi Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Kwiyandikisha kw'abafatanyabikorwa byakiriwe",
+      "DUPLICATE_CHECK_COMPLETED": "Igenzura ryibiri ryarangiye - nta duplicate ikora yabonetse",
+      "REGISTRATION_ACCEPTED": "Kwiyandikisha biremewe",
+      "PROTECTION_GRANTED_one": "{{count}} -umunsi wo kurinda watanzwe",
+      "PROTECTION_GRANTED_other": "{{count}} -umunsi wo kurinda watanzwe",
+      "STAGE_UPDATED": "Imiterere ivugururwa kuri {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Yavuguruwe {{count}} umurima",
+      "LEAD_DETAILS_UPDATED_other": "Yavuguruwe {{count}} imirima",
+      "LEAD_ASSIGNED": "Yahawe {{name}}",
+      "LEAD_UNASSIGNED": "Umukono",
+      "REFERRAL_ACCEPTED": "Umwubatsi yemeye koherezwa",
+      "REFERRAL_REJECTED": "Umwubatsi yanze koherezwa. Impamvu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Kwigana kwigana kugerageza {{partner}} byanze",
+      "BOOKING_COMPLETED": "Kwiyandikisha birangiye",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Ibikorwa nyirizina byimuriwe Kubaka",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Inshingano z'abafatanyabikorwa zabitswe",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komisiyo yujuje ibisabwa",
+      "HANDOVER_COMPLETED": "Ihererekanyabubasha ryarangiye",
+      "ADMIN_PROTECTION_RELEASED": "Admin yarekuye gukingirwa hakiri kare. Impamvu: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin yongeye kwiyandikisha kuva {{from}} kugeza {{to}} . Impamvu: {{reason}}"
+    }
+  }
+}

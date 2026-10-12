@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "conditor Portal",
+    "referrals": "Referrals",
+    "builderLogin": "conditor Login",
+    "partnerLogin": "Channel Socius Login"
+  },
+  "login": {
+    "title": "Hic signum in",
+    "hint": "Rationes aedificator a Leadrat creatae sunt . Administratorem tuum interroga si unum non habes."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Exspecto tuum consilium",
+    "ACCEPTED": "Accepit",
+    "REJECTED": "reprobum"
+  },
+  "list": {
+    "title": "Referrals",
+    "allProjects": "Omnia consilia",
+    "allStatuses": "Omnes statuses",
+    "count_one": "{{count}} deferre",
+    "count_other": "{{count}} referrals",
+    "columns": {
+      "referral": "Deferre",
+      "customer": "Customer",
+      "project": "Project",
+      "sourcePartner": "Source Socius",
+      "status": "Status",
+      "booking": "Booking",
+      "registered": "Descripserunt"
+    },
+    "booked": "Booked",
+    "empty": "Nullam eget elit sed."
+  },
+  "detail": {
+    "customer": "Customer",
+    "sourcePartner": "Source Socius",
+    "attributionNote": "(Attributionis - mutari non potest)",
+    "leadStatus": "Duc Status",
+    "protectedUntil": "Donec donec",
+    "referral": "Deferre",
+    "reason": "Ratio: {{reason}}",
+    "booking": "Booking",
+    "bookedOwner": "Corruptela - es dominus operational",
+    "notBooked": "Non corruptela",
+    "sharedAfterBooking": "Shared post booking",
+    "accept": "Suscipe REGRESSUS",
+    "confirmBooking": "Adfirmare Cras",
+    "reject": "Rogationem contribulati",
+    "rejectReasonLabel": "Ratio respuendi (conjugis ostensa) *",
+    "rejectConfirm": "Rejice",
+    "confirmBookingPrompt": "Confirmetis in magna? Dominium operationale ad te movet et particeps fit habiles ad commissionem.",
+    "notice": {
+      "booked": "Confirmavit Bocking.",
+      "accepted": "Deferre recusandae.",
+      "rejected": "Deferre repudiandae."
+    },
+    "backToReferrals": "Ad Referrals"
+  },
+  "history": {
+    "title": "Historia",
+    "actor": {
+      "system": "Systema",
+      "partner": "Socium Channel",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Socium adnotatione accepit",
+      "DUPLICATE_CHECK_COMPLETED": "Duplicata reprehendo perficitur - non invenitur duplicata activa",
+      "REGISTRATION_ACCEPTED": "Registration accepit",
+      "PROTECTION_GRANTED_one": "{{count}} -day praesidium datum",
+      "PROTECTION_GRANTED_other": "{{count}} -day praesidium datum",
+      "STAGE_UPDATED": "Status renovatus ad {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Updated {{count}} agrum",
+      "LEAD_DETAILS_UPDATED_other": "Updated {{count}} agros",
+      "LEAD_ASSIGNED": "{{name}} dedit.",
+      "LEAD_UNASSIGNED": "Unssigned",
+      "REFERRAL_ACCEPTED": "Architecto recusandae deferre",
+      "REFERRAL_REJECTED": "Architecto repudiandae eget. Ratio: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Duplicare adnotationem conatum ab {{partner}} rejecit",
+      "BOOKING_COMPLETED": "Libri complebitur",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Res ad conditorem translatum operational",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Socium attributionis servavit",
+      "COMMISSION_ELIGIBILITY_CREATED": "Commissio eligibility creata est",
+      "HANDOVER_COMPLETED": "Orabant complebitur",
+      "ADMIN_PROTECTION_RELEASED": "Admin mane praesidium duplicatum dimisit. Ratio: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin resignavit adnotationem ab {{from}} ad {{to}} . Ratio: {{reason}}"
+    }
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "I miei leads",
+    "signedInAs": "Accedût come {{name}} ( {{partnerId}} ) · lis oris mostradis in {{timezone}}",
+    "addLead": "+ Azontâ promp",
+    "tabs": {
+      "all": "Ducj ( {{count}} )",
+      "pending": "In cors ( {{count}} )",
+      "booked": "Prenotât ( {{count}} )"
+    },
+    "searchPlaceholder": "Cirî par non, telefonin o ID di regjistrazion ...",
+    "manageColumns": "Gjestî lis colonis",
+    "rowsPerPage": "Riis par pagjine",
+    "registrationId": "ID di regjistrazion",
+    "emptyState": "Ancjemò nissun prospect - regjistrâ il to prin.",
+    "noMatch": "Nissun prospect al corispuint a chescj filtris.",
+    "showing": "Mostrant {{from}} - {{to}} des jentradis {{total}}",
+    "actions": {
+      "preview": "Anteprime e agjiornament svelt",
+      "history": "Storie",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Clamade"
+    },
+    "pagination": {
+      "first": "Prime pagjine",
+      "previous": "Pagjine precedent",
+      "next": "Pagjine dopo",
+      "last": "Ultime pagjine"
+    }
+  },
+  "columns": {
+    "status": "Stât",
+    "assignTo": "Assegnâ a",
+    "booked": "Prenotât",
+    "protectionUntil": "Protezion Fin a"
+  },
+  "booking": {
+    "booked": "Prenotât",
+    "pending": "Impastanât"
+  },
+  "assign": {
+    "unassigned": "No assegnât",
+    "owner": "{{name}} (Proprietari)",
+    "inactive": "{{name}} (inatîf)",
+    "unknownUser": "Utent no cognossût",
+    "assignedTo": "Assegnât a {{name}}"
+  },
+  "form": {
+    "addTitle": "Azontâ promp",
+    "editTitle": "Modificâ il protagonist",
+    "noPermissionAdd": "No âs il permès di regjistrâ i leads.",
+    "noPermissionEdit": "No âs il permès di modificâ i leads.",
+    "selectPlaceholder": "Sielt...",
+    "commaSeparated": "Virgule separade",
+    "phonePlaceholder": "Numar di telefon",
+    "countryCode": "Codiç dal paîs"
+  },
+  "project": {
+    "none": "Ancjemò nissun progjet (no riferît)",
+    "notInList": "{{project}} (no inte liste dai progjets)"
+  },
+  "journey": {
+    "customer": "Client",
+    "currentOwner": "Proprietari corint",
+    "protectionExpiry": "Scadence de protezion",
+    "leadStatus": "Statût di protagonist",
+    "scheduled": "Programât",
+    "assignedTo": "Assegnât a",
+    "referral": "Riferiment",
+    "builderReason": "Motîf dal costrutôr: {{reason}}",
+    "bookedHint": "Prenotât dal costrutôr - la proprietât operative e je passade al costrutôr; la sô atribuzion e la sô idoneitât pe comission a son mantignudis.",
+    "notBookedHint": "Lis prenotazions a son confermadis dal costrutôr cuant che al acete il rinviament.",
+    "quickUpdate": "Atualizazion svelte",
+    "leadDetails": "Detais dal protagonist",
+    "progressHistory": "Storie dal progrès",
+    "timesIn": "(oris in {{timezone}} )",
+    "backToMyLeads": "Tornâ ai miei leads",
+    "editLead": "Modificâ il protagonist"
+  },
+  "referral": {
+    "NOT_REFERRED": "No riferît (nissun progjet)",
+    "PENDING_BUILDER": "In spiete dal costrutôr",
+    "ACCEPTED": "Acetât dal costrutôr",
+    "REJECTED": "Refudât dal costrutôr"
+  },
+  "preview": {
+    "ariaLabel": "Anteprime dal protagonist",
+    "title": "Anteprime dal protagonist",
+    "source": "Origjin",
+    "location": "Posizion",
+    "scheduled": "Programât",
+    "registered": "Regjistrât",
+    "latestNote": "Ultime note",
+    "quickUpdate": "Atualizazion svelte",
+    "fullDetails": "Detais complets",
+    "editLead": "Modificâ il protagonist",
+    "history": "Storie"
+  },
+  "quick": {
+    "assignedTo": "Assegnât a",
+    "status": "Stât",
+    "subStatus": "Sot-stât",
+    "selectSubStatus": "Seleziona sot-stât...",
+    "none": "Nissun",
+    "scheduledAt": "Programât a",
+    "localTime": "ore locâl",
+    "note": "Note",
+    "notePlaceholder": "Cje al è sucedût in cheste cjamade / visite? (facoltatîf)",
+    "updateStatus": "Agjiornâ il stât",
+    "statusUpdated": "Statût gjornâl",
+    "bookedLocked": "Chest lead al è prenotât - il so status nol pues plui jessi cambiât.",
+    "viewOnly": "Tu puedis viodi chest prospect, ma il to rûl nol pues agjiornâlu."
+  },
+  "history": {
+    "title": "Storie - {{registrationId}}",
+    "tabs": {
+      "all": "Dut",
+      "status": "Stât",
+      "assignment": "Incarghe",
+      "notes": "Notis"
+    },
+    "doneBy": "Fat di {{actor}}",
+    "system": "Sisteme",
+    "platforms": {
+      "System": "Sisteme",
+      "External": "Esterni",
+      "Web": "Web",
+      "Mobile": "Celulâr"
+    },
+    "added": "zontât",
+    "updated": "agjiornât",
+    "empty": "(vueit)",
+    "noHistory": "Ancjemò nissune storie in cheste categorie.",
+    "fieldLabels": {
+      "stage": "Stât",
+      "subStatus": "Sot-stât",
+      "scheduledAt": "Program",
+      "notes": "Notis",
+      "assignedTo": "Assegnât a"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "La regjistrazion dal colaboradôr e je stade ricevude",
+      "DUPLICATE_CHECK_COMPLETED": "Control dopli completât - no si è cjatât dopli atîf",
+      "REGISTRATION_ACCEPTED": "La iscrizion e je acetade",
+      "PROTECTION_GRANTED_one": "{{count}} -dîs di protezion concedude",
+      "PROTECTION_GRANTED_other": "{{count}} -dîs di protezion concedude",
+      "REGISTRATION_ATTEMPT_REJECTED": "Tentatîf di regjistrazion dopli di {{partnerId}} al è stât refudât",
+      "LEAD_DETAILS_UPDATED_one": "Camp {{count}} gjornâl",
+      "LEAD_DETAILS_UPDATED_other": "Camps {{count}} gjornâts",
+      "STAGE_UPDATED": "Stât agjiornât a {{status}}",
+      "LEAD_ASSIGNED": "Assegnât a {{name}}",
+      "LEAD_UNASSIGNED": "No assegnât",
+      "BOOKING_COMPLETED": "La prenotazion e je finide",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "La proprietât operative trasferide al Costrutôr",
+      "PARTNER_ATTRIBUTION_PRESERVED": "La atribuzion dal compagn preservade",
+      "COMMISSION_ELIGIBILITY_CREATED": "Idoneitât ae comission creade",
+      "HANDOVER_COMPLETED": "La consegne completade",
+      "REFERRAL_ACCEPTED": "Il costrutôr al à acetât il rinviament",
+      "REFERRAL_REJECTED": "Il costrutôr al refudà il rinviament. Motîf: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "L’aministradôr al à dât fûr une protezion dople adore. Motîf: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "L'aministradôr al à riassegnât la regjistrazion di {{from}} a {{to}} . Motîf: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Gjestî lis colonis",
+    "hint": "Sburtâ par riordenâ · controlâ par mostrâ",
+    "showAll": "Mostra dut",
+    "resetDefault": "Azerâ al predefinît"
+  },
+  "filters": {
+    "title": "Filtris",
+    "allProjects": "Ducj i progjets",
+    "any": "Cualsiasi",
+    "noFields": "Nissun altri cjamp filtrabil al è ancjemò abilât (Impostazions > Lead).",
+    "clearAll": "Cancelâ dut"
+  },
+  "phone": {
+    "MISSING": "Al è necessari il numar di telefon.",
+    "INVALID": "Par plasê inserî un numar di telefon valit.",
+    "TOO_SHORT": "Il numar di telefon al è masse curt.",
+    "TOO_LONG": "Il numar di telefon al è masse lunc.",
+    "INVALID_FOR_COUNTRY": "Chest numar di telefon nol è valit par {{country}} .",
+    "COUNTRY_MISMATCH": "Par plasê selezionâ il codiç dal paîs coret.",
+    "NOT_MOBILE": "Par plasê inserî un numar di telefonin celulâr, no une telefonie fisse."
+  }
+}

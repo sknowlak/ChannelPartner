@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Тудугжу портал",
+    "referrals": "Дамчыдылгалар",
+    "builderLogin": "Тудугжунуң киржилгези",
+    "partnerLogin": "Шанналдың партнеру"
+  },
+  "login": {
+    "title": "Тудугжу кирер",
+    "hint": "Тудугжу аккаунттарны Leadrat тургузуп турар. Чок болза администраторуңардан айтырып көрүңер даан."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Силерниң шиитпириңерни манап тур мен",
+    "ACCEPTED": "Хүлээп алган",
+    "REJECTED": "Хүлээп албаан"
+  },
+  "list": {
+    "title": "Дамчыдылгалар",
+    "allProjects": "Шупту төлевилелдер",
+    "allStatuses": "Шупту статустар",
+    "count_one": "{{count}} дамчыдылга",
+    "count_other": "{{count}} дамчыдылгалар",
+    "columns": {
+      "referral": "Направление",
+      "customer": "Садып алыкчы",
+      "project": "Проект",
+      "sourcePartner": "Үндезин партнер",
+      "status": "Байдал",
+      "booking": "Бронирование",
+      "registered": "Бүрүткеттинген"
+    },
+    "booked": "Заказтаан",
+    "empty": "Амдыызында дамчыдылгалар чок."
+  },
+  "detail": {
+    "customer": "Садып алыкчы",
+    "sourcePartner": "Үндезин партнер",
+    "attributionNote": "(атрибуцияны - өскертип болбас)",
+    "leadStatus": "Башкы кижиниң байдалы",
+    "protectedUntil": "чедир камгалаттынган",
+    "referral": "Направление",
+    "reason": "Чылдагаан: {{reason}}",
+    "booking": "Бронирование",
+    "bookedOwner": "Заказтаан - силер ажылдап турар ээзи-дир силер",
+    "notBooked": "Заказ чок",
+    "sharedAfterBooking": "Заказ соонда үлешкен",
+    "accept": "Направлениени хүлээп алыңар",
+    "confirmBooking": "Бронированиени бадыткаар",
+    "reject": "Направлениени хүлээп албас",
+    "rejectReasonLabel": "Отказтың чылдагааны (эш-өөрүнге көргүскен) *",
+    "rejectConfirm": "Чөпшээревес",
+    "confirmBookingPrompt": "Бронированиени бадыткаар бе? Ажыл-чорудулганың ээзи силерже шилчиир, а партнер комиссия алыр эргелиг апаар.",
+    "notice": {
+      "booked": "Бронирование бадыткаттынган.",
+      "accepted": "Направление хүлээп алдынган.",
+      "rejected": "Направлениени хүлээп албаан."
+    },
+    "backToReferrals": "Рефералдарже эглип келир"
+  },
+  "history": {
+    "title": "Төөгү",
+    "actor": {
+      "system": "Система",
+      "partner": "Шанналдың партнёру",
+      "admin": "Leadrat админ"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Партнер бүрүткелди алган",
+      "DUPLICATE_CHECK_COMPLETED": "Дубликат хыналдазы доозулган - ажылдап турар дубликат тывылбаан",
+      "REGISTRATION_ACCEPTED": "Регистрацияны хүлээп алган",
+      "PROTECTION_GRANTED_one": "{{count}} -хүннүң камгалалын берген",
+      "PROTECTION_GRANTED_other": "{{count}} -хүннүң камгалалын берген",
+      "STAGE_UPDATED": "Статус {{stage}} кылдыр өскерилген",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} деп шөлдү чаарткан",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} шөлдерин чаарткан",
+      "LEAD_ASSIGNED": "{{name}} га онаашкан",
+      "LEAD_UNASSIGNED": "Дааскан эвес",
+      "REFERRAL_ACCEPTED": "Тудугжу дамчыдылганы хүлээп алган",
+      "REFERRAL_REJECTED": "Тудугжу дамчыдылганы хүлээп албаан. Чылдагаан: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} -тиң катап бүрүткел оралдажыышкыны хүлээп алдынмаан",
+      "BOOKING_COMPLETED": "Бронирование доозулган",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Ажыл-чорудулганың ээзи тудугжуга шилчиткен",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Партнер атрибуциязы кадагалаттынып арткан",
+      "COMMISSION_ELIGIBILITY_CREATED": "Комиссия эргези тургустунган",
+      "HANDOVER_COMPLETED": "Дамчыдылга доозулган",
+      "ADMIN_PROTECTION_RELEASED": "Админ катаптаашкын камгалалын эртежик үндүрген. Чылдагаан: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Админ бүрүткелди {{from}} -дан {{to}} че шилчиткен. Чылдагаан: {{reason}}"
+    }
+  }
+}

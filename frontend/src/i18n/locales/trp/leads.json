@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Ani bwkhak",
+    "signedInAs": "{{name}} ( {{partnerId}} ) · {{timezone}} o phunukjak jora",
+    "addLead": "+ Lead chapdi",
+    "tabs": {
+      "all": "Joto ( {{count}} )",
+      "pending": "Nasingwi tongmani ( {{count}} )",
+      "booked": "Bukhukjak ( {{count}} )"
+    },
+    "searchPlaceholder": "Muchungtwi, mobile bai, eba mung swijak ID bai naidi...",
+    "manageColumns": "Kolomrokno naikoldi",
+    "rowsPerPage": "page ni rows",
+    "registrationId": "Registering ID",
+    "emptyState": "Tabuk jora leads kwrwi - nini puila registration khai di.",
+    "noMatch": "O filter bai khoroksa phano lead wngya.",
+    "showing": "{{from}} phunukmani - {{to}} ni {{total}} ni",
+    "actions": {
+      "preview": "Swkang naimani tei dakti update",
+      "history": "Laibuma",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Ringmani"
+    },
+    "pagination": {
+      "first": "Puila page",
+      "previous": "swkangni page",
+      "next": "swkangni page",
+      "last": "Poitoni page"
+    }
+  },
+  "columns": {
+    "status": "Kaham hamya",
+    "assignTo": "Yaphar di",
+    "booked": "Book khaijak",
+    "protectionUntil": "Raktharmani"
+  },
+  "booking": {
+    "booked": "Book khaijak",
+    "pending": "Chabna tongrwkma"
+  },
+  "assign": {
+    "unassigned": "Samung rwjakya",
+    "owner": "{{name}} (Malik)",
+    "inactive": "{{name}} (samung khlai ya)",
+    "unknownUser": "Sinijakya user",
+    "assignedTo": "{{name}} no rwjak"
+  },
+  "form": {
+    "addTitle": "Lead tubudi",
+    "editTitle": "Lead swlaidi",
+    "noPermissionAdd": "Leads registration khwlaina bagwi nini thani permission kwrwi.",
+    "noPermissionEdit": "Leads edit khaina bagwi nwng rwngya.",
+    "selectPlaceholder": "Saidi...",
+    "commaSeparated": "Comma khaijak",
+    "phonePlaceholder": "Phone number",
+    "countryCode": "Haste ni code"
+  },
+  "project": {
+    "none": "Tabuk jorao project kwrwi (sajakya)",
+    "notInList": "{{project}} (samung list o kwrwi)"
+  },
+  "journey": {
+    "customer": "Painai",
+    "currentOwner": "Tabukni Malik",
+    "protectionExpiry": "Raktharmani jora",
+    "leadStatus": "Lead ni tongmung",
+    "scheduled": "Swngjak",
+    "assignedTo": "Sajakmani",
+    "referral": "Rohormani",
+    "builderReason": "Snamnai borokni karon: {{reason}}",
+    "bookedHint": "Builder bai book khlaijak - samung tangnai borokni thani tháng kha; nini rwngthoma tei commission ni rwngthoma no narwkjak.",
+    "notBookedHint": "Booking wngmani abo nok tangnai borok bai confirm khlaijak, bohrok referral no yachak khe.",
+    "quickUpdate": "Dakti Kwtal Khlaimani",
+    "leadDetails": "Lead ni koktwma",
+    "progressHistory": "Swkang thangmani koktwma",
+    "timesIn": "( {{timezone}} o jora)",
+    "backToMyLeads": "Ani Leads ni thani kiphilwi phaidi",
+    "editLead": "Lead swlaidi"
+  },
+  "referral": {
+    "NOT_REFERRED": "Refer khlaijakya (project kwrwi)",
+    "PENDING_BUILDER": "Snamnai ni bagwi naisingwi tongmani",
+    "ACCEPTED": "Snamnai bai yachajak",
+    "REJECTED": "Snamnai bai reject wngkha"
+  },
+  "preview": {
+    "ariaLabel": "Lead swkangni nukmung",
+    "title": "Lead swkangni naimung",
+    "source": "Muk",
+    "location": "Thai",
+    "scheduled": "Swngjak",
+    "registered": "Register khlaijak",
+    "latestNote": "Kwtal koktwma",
+    "quickUpdate": "Dakti Kwtal Khlaimani",
+    "fullDetails": "Puila koktwma",
+    "editLead": "Lead swlaidi",
+    "history": "Laibuma"
+  },
+  "quick": {
+    "assignedTo": "Sajakmani",
+    "status": "Kaham hamya",
+    "subStatus": "Tongmung",
+    "selectSubStatus": "Sub-status chongdi...",
+    "none": "Mungsaya",
+    "scheduledAt": "ni jorao swnamjak",
+    "localTime": "amchaini jora",
+    "note": "Swijaknai",
+    "notePlaceholder": "O call / visit o tamo wngkha? (optional)",
+    "updateStatus": "Kwtal tongmung",
+    "statusUpdated": "Kwtal tongmung",
+    "bookedLocked": "O lead book wngkha - bini status no swlaiwi manliya.",
+    "viewOnly": "Nwng o lead no naiwi mano, phiya nini role no update khwlaiwi mano."
+  },
+  "history": {
+    "title": "Tarik - {{registrationId}}",
+    "tabs": {
+      "all": "Joto",
+      "status": "Kaham hamya",
+      "assignment": "Samung bakjak",
+      "notes": "Notes"
+    },
+    "doneBy": "{{actor}} bai khlaijak",
+    "system": "System",
+    "platforms": {
+      "System": "System",
+      "External": "Phatartui",
+      "Web": "Web",
+      "Mobile": "Mobile"
+    },
+    "added": "chapjak",
+    "updated": "kwtal wngkha",
+    "empty": "(bukcha)",
+    "noHistory": "Tabuk jora o koktwma kwrwi.",
+    "fieldLabels": {
+      "stage": "Kaham hamya",
+      "subStatus": "Tongmung",
+      "scheduledAt": "Samung bwtang",
+      "notes": "Notes",
+      "assignedTo": "Sajakmani"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Partner ni mung swijak mankha",
+      "DUPLICATE_CHECK_COMPLETED": "Duplicate naiwi naimani páikha - kwrwi wngwi manliya",
+      "REGISTRATION_ACCEPTED": "Registration rwjak kha",
+      "PROTECTION_GRANTED_one": "{{count}} -sal mwthangjak kha",
+      "PROTECTION_GRANTED_other": "{{count}} -sal mwthangjak kha",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partnerId}} bai swijaknani chaitokma rwjakya",
+      "LEAD_DETAILS_UPDATED_one": "Kwtal wngkha {{count}} jaga",
+      "LEAD_DETAILS_UPDATED_other": "Kwtal wngkha {{count}} jaga",
+      "STAGE_UPDATED": "Tongmung kwtal wngkha {{status}}",
+      "LEAD_ASSIGNED": "{{name}} no rwjak",
+      "LEAD_UNASSIGNED": "Samung rwjakya",
+      "BOOKING_COMPLETED": "Booking wngkha",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Samung tangnai borok Builder ni thani tubujak kha",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partner ni mung mwthangjak kha",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komison ni bagwi manthai snamjak kha",
+      "HANDOVER_COMPLETED": "Yapharmani paikha",
+      "REFERRAL_ACCEPTED": "Nok tangnai rohorjakmano yachakkha",
+      "REFERRAL_REJECTED": "Builder rok abono reject khaikha. Kaham: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin duplicate mwthangmung swkangno rwkha. Kaham: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin {{from}} ni simi {{to}} simi swimungno swlaiwi rwkha. Kaham: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Kolomrokno naikoldi",
+    "hint": "Order khwlaina bagwi drag khaidi · phunukna bagwi naidi",
+    "showAll": "Joto phunukdi",
+    "resetDefault": "swkangni wngwi thango"
+  },
+  "filters": {
+    "title": "philter",
+    "allProjects": "Joto samung",
+    "any": "Jesa",
+    "noFields": "Tei kubun filter wngnai jagarok tabuk jorao wngya (Settings > Lead).",
+    "clearAll": "Jotono swkakdi"
+  },
+  "phone": {
+    "MISSING": "Phone number nangnai.",
+    "INVALID": "Khapang srangwi kaisa phone number rwdi.",
+    "TOO_SHORT": "Phone number belai kheno short wngkha.",
+    "TOO_LONG": "Phone number belai kheno lachima tongo.",
+    "INVALID_FOR_COUNTRY": "O phone number {{country}} ni bagwi wngya .",
+    "COUNTRY_MISMATCH": "Khapang srangwi thik khe haste ni code no select khai di.",
+    "NOT_MOBILE": "Mobile number rwdi, Landline ya."
+  }
+}

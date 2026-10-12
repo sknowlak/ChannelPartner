@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Builder Portal",
+    "referrals": "Remisser",
+    "builderLogin": "Builder Login",
+    "partnerLogin": "Inloggning för kanalpartner"
+  },
+  "login": {
+    "title": "Byggmästare logga in",
+    "hint": "Builder-konton skapas av Leadrat . Fråga din administratör om du inte har en."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Väntar på ditt beslut",
+    "ACCEPTED": "Accepterad",
+    "REJECTED": "Avvisad"
+  },
+  "list": {
+    "title": "Remisser",
+    "allProjects": "Alla projekt",
+    "allStatuses": "Alla statusar",
+    "count_one": "{{count}} remiss",
+    "count_other": "{{count}} hänvisningar",
+    "columns": {
+      "referral": "Remiss",
+      "customer": "Kund",
+      "project": "Projekt",
+      "sourcePartner": "Källpartner",
+      "status": "Status",
+      "booking": "Bokning",
+      "registered": "Registrerad"
+    },
+    "booked": "Bokad",
+    "empty": "Inga remisser än."
+  },
+  "detail": {
+    "customer": "Kund",
+    "sourcePartner": "Källpartner",
+    "attributionNote": "(attribution - kan inte ändras)",
+    "leadStatus": "Ledningsstatus",
+    "protectedUntil": "Skyddad till",
+    "referral": "Remiss",
+    "reason": "Orsak: {{reason}}",
+    "booking": "Bokning",
+    "bookedOwner": "Bokad - du är den operativa ägaren",
+    "notBooked": "Ej bokad",
+    "sharedAfterBooking": "Delas efter bokning",
+    "accept": "Acceptera remiss",
+    "confirmBooking": "Bekräfta bokning",
+    "reject": "Avvisa remiss",
+    "rejectReasonLabel": "Orsak till avslag (visas för partnern) *",
+    "rejectConfirm": "Avvisa",
+    "confirmBookingPrompt": "Bekräfta bokningen? Operativt ägande flyttar till dig och partnern blir berättigad till provision.",
+    "notice": {
+      "booked": "Bokning bekräftad.",
+      "accepted": "Remiss accepteras.",
+      "rejected": "Remiss avslogs."
+    },
+    "backToReferrals": "Tillbaka till hänvisningar"
+  },
+  "history": {
+    "title": "Historia",
+    "actor": {
+      "system": "System",
+      "partner": "Kanalpartner",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Partnerregistrering mottagen",
+      "DUPLICATE_CHECK_COMPLETED": "Dubblettkontroll slutförd - ingen aktiv dubblett hittades",
+      "REGISTRATION_ACCEPTED": "Registrering accepterad",
+      "PROTECTION_GRANTED_one": "{{count}} dagars skydd beviljats",
+      "PROTECTION_GRANTED_other": "{{count}} dagars skydd beviljats",
+      "STAGE_UPDATED": "Status uppdaterad till {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Uppdaterat {{count}} fält",
+      "LEAD_DETAILS_UPDATED_other": "Uppdaterade {{count}} fält",
+      "LEAD_ASSIGNED": "Tilldelad till {{name}}",
+      "LEAD_UNASSIGNED": "Otilldelad",
+      "REFERRAL_ACCEPTED": "Builder accepterade remissen",
+      "REFERRAL_REJECTED": "Builder avvisade remissen. Orsak: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Dubblett registreringsförsök av {{partner}} avvisades",
+      "BOOKING_COMPLETED": "Bokning klar",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Det operativa ägandet överförts till Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partnertillskrivning bevarad",
+      "COMMISSION_ELIGIBILITY_CREATED": "kommissionsberättigande skapats",
+      "HANDOVER_COMPLETED": "Överlämning genomförd",
+      "ADMIN_PROTECTION_RELEASED": "Admin släppte dubblettskydd tidigt. Orsak: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Administratören tilldelade registreringen från {{from}} till {{to}} . Orsak: {{reason}}"
+    }
+  }
+}

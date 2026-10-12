@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Occasus",
+    "noPermission": "Non permittitur tibi occasus administrare."
+  },
+  "categories": {
+    "lead": "Plumbum",
+    "user": "User",
+    "integrations": "Integrations"
+  },
+  "leadTabs": {
+    "fields": "Agri",
+    "statuses": "Statuses & Sub-Statuses",
+    "notifications": "Acta Vicimediorum & Schedulers"
+  },
+  "fields": {
+    "leadIntro": "Captionem plumbi formam configurare: campos disable da, requiris notas, vel agros tuos morem adde.",
+    "userIntro": "Configurare Adaugeo/Edit Team Member formam: da/disable agros, nota requiri, vel morem tuum agros adde.",
+    "addCustomField": "+ Add Custom Field",
+    "fieldLabel": "Agro Label",
+    "group": "Group",
+    "groupPlaceholderLead": "eg Inquisitionis Info",
+    "groupPlaceholderUser": "eg Additional Details",
+    "dataType": "Data Type",
+    "options": "Options (comma separata)",
+    "requiredLead": "Requiritur - sociis in turma tua implere debet ut subcriptio plumbeum",
+    "requiredUser": "Requiritur - impleri debet cum addit Suspendisse",
+    "creating": "Creando...",
+    "createField": "Create Field",
+    "columns": {
+      "field": "Agro",
+      "group": "Group",
+      "type": "Type",
+      "required": "required",
+      "enabled": "Enabled",
+      "kind": "Benignus"
+    },
+    "kind": {
+      "custom": "Consuetudinem",
+      "core": "Core (clausum)",
+      "standard": "Standard"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Textum",
+    "TEXTAREA": "Longum illud",
+    "NUMBER": "Numerus",
+    "CURRENCY": "Currency",
+    "DATE": "Date",
+    "SELECT": "Dropdown",
+    "LIST": "List"
+  },
+  "picker": {
+    "searchPlaceholder": "Quaerere agros plumbi...",
+    "summary": "{{shown}} monstratum est · {{mandatory}} amet",
+    "mandatory": "Amet",
+    "noMatch": "Nulli agri par."
+  },
+  "statuses": {
+    "intro": "Tui plumbi status et sub-statutum - quod quisque petit (diem & tempus, agros ducunt) cum quis plumbum ad illud renovat.",
+    "add": "+ Add Status",
+    "columns": {
+      "order": "Order",
+      "status": "Status",
+      "subStatuses": "Sub-Statuses",
+      "asksFor": "quaerit enim",
+      "active": "Active"
+    },
+    "moveUp": "Movere",
+    "moveDown": "Movere",
+    "defaultBadge": "Default ad novum ducit",
+    "bookingBadge": "Status libri",
+    "asksForLabel": "Petit pro {{label}}",
+    "asksForDateTime": "Quaerit date & time",
+    "none": "Nullus",
+    "dateTime": "Date & time",
+    "scheduledOn": "in {{names}}",
+    "fieldsSummary_one": "{{count}} agrum ( {{mandatory}} amet)",
+    "fieldsSummary_other": "{{count}} agros ( {{mandatory}} amet)",
+    "deleteConfirm": "Status Delete \" {{name}} \"? Hoc fieri infectum non potest.",
+    "editTitle": "Status recensere - {{name}}",
+    "newTitle": "Novus Status",
+    "name": "Status nomen",
+    "colour": "Color",
+    "active": "Active",
+    "isDefault": "Default status ad novum ducit",
+    "isBooking": "Cras status (set by The Booking)",
+    "whenMoved": "Cum plumbo ad hunc statum movetur",
+    "askSchedule": "Petere diem & tempus (scheduler)",
+    "scheduleLabelPlaceholder": "Label, eg",
+    "fieldsToShow": "Plumbea agros ut ostenderet in update forma",
+    "subStatusesTitle": "Sub-Statuses",
+    "subStatusesHint": "Unusquisque sub-status suum diem & tempus petere potest et suos agros addere — supra statis agros supra demonstratum est.",
+    "subStatusName": "Sub-status nomine",
+    "subFields": "Agri ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Date & tempus titulus, eg Revoca at",
+    "addSubStatus": "+ Add Sub-Status",
+    "saveStatus": "Servo Status",
+    "createStatus": "Create Status"
+  },
+  "notifications": {
+    "intro": "Ius notificare populum cum plumbea ad statum - immediate, vel tempus statutum ante / post diem & tempus in eo accedendo.",
+    "add": "+ Add Notification",
+    "columns": {
+      "notification": "Notification",
+      "whenStatusIs": "Cum Status Is",
+      "sends": "mittit",
+      "to": "Ad",
+      "via": "Via",
+      "enabled": "Enabled"
+    },
+    "anyStatus": "Quis status",
+    "anySubStatus": "Quis sub-status",
+    "inactiveOption": "{{name}} (iners)",
+    "emptyRules": "Nullae notificationes adhuc - adde unum ad incitandos equos tuos cum plumbea ad statum pervenit.",
+    "jobs": {
+      "title": "Scheduled & Sent",
+      "firesAt": "ignes At",
+      "notification": "Notification",
+      "lead": "Plumbum",
+      "status": "Status",
+      "details": "Singula",
+      "empty": "Nihil accedant aut missi adhuc.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Eviewray",
+      "PROCESSING": "Processing",
+      "SENT": "Sent",
+      "FAILED": "Defecit",
+      "SKIPPED": "Skipped",
+      "CANCELLED": "Pax"
+    },
+    "deliveryStatus": {
+      "SENT": "missus",
+      "FAILED": "defecit",
+      "SKIPPED": "exsultaverunt"
+    },
+    "deliveryChannel": {
+      "IN_APP": "in-app *",
+      "EMAIL": "inscriptio",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "User assignata",
+      "owner": "dominus",
+      "updatedBy": "Updated per",
+      "role": "Munus: {{name}}"
+    },
+    "channels": {
+      "inApp": "In-app",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Delere notificationem \" {{name}} \"? Ab eo lite monimenta cassantur.",
+    "testPrompt": "Testam notificationis huius ad te mitte (in-app) utens quae ID ducunt?",
+    "testSent": "Ad campanam tuam missi: {{title}} {{message}}",
+    "headersInvalid": "Capituli Webhook validi esse debent JSON , eg {\"LICENTIA\": \"Gloria xyz\"}",
+    "editTitle": "Edit Notification",
+    "newTitle": "Nova Notification",
+    "name": "Nomen",
+    "namePlaceholder": "eg Site visita admonitio",
+    "whenStatus": "Cum plumbo status est",
+    "subStatus": "Sub-status",
+    "send": "Mitte (scheduler)",
+    "custom": "Consuetudo...",
+    "modeBefore": "ante scheduled tempore",
+    "modeAfter": "Post scheduled tempore",
+    "noScheduleWarning": "Hic status non postulat diem & tempus, ut \"ante/ad/post tempus\" notificatio numquam incendat.",
+    "noScheduleFix": "<strong>Rogate diem & tempus</strong> pro eo sub Statuses & Sub-Statuses, aut statim mitte.",
+    "sendTo": "Mitte ad (aliqua iunctura)",
+    "recipientAssigned": "User assignata (dominus plumbum)",
+    "recipientOwner": "Ratio domini / admin",
+    "recipientUpdatedBy": "Homo qui updated status",
+    "everyoneWithRole": "Omnes cum partes",
+    "specificUsers": "Imprimis users (active)",
+    "inactiveNever": "Utentes otiosi notificationes numquam recipiunt, etiam si electus est.",
+    "deliverVia": "Libera via",
+    "channelInApp": "In-app (bell)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS provisor)",
+    "emailHint": "Inscriptio ad quamlibet inscriptionem recipientis accedit et eget SMTP in calculonis servi (backend/.env); donec email mittit sunt initium et exsultaverunt.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Capitis ( JSON )",
+    "content": "Notification contentus",
+    "title": "Titulus",
+    "message": "Nuntius",
+    "insertIntoTitle": "Titulum inserere in",
+    "insertIntoMessage": "Inserere in Nuntius",
+    "anyLeadField": "Quilibet campus plumbeus etiam operatur, eg <code1>{{example1}}</code1> vel <code2>{{example2}}</code2> .",
+    "preview": "Praevius (specimen plumbi)",
+    "enabled": "Enabled",
+    "saveRule": "Salvum Notification",
+    "createRule": "Create Notification",
+    "variables": {
+      "customerName": "plumbum nomen",
+      "customerMobile": "plumbum mobile",
+      "customerEmail": "plumbum email",
+      "registrationId": "plumbum ID",
+      "status": "Status",
+      "subStatus": "Sub-status",
+      "scheduleAt": "Scheduled date & time",
+      "assignedTo": "User assignata",
+      "updatedBy": "Updated per",
+      "recipient": "Nomen recipiens",
+      "project": "Project",
+      "notes": "Ultima nota",
+      "partner": "socium nomen"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Statim cum status positus est",
+      "AT": "In accedant tempore",
+      "A1D": "I die post horarium temporis (sequantur-reprehendo)"
+    },
+    "immediately": "Confestim",
+    "atScheduled": "In scheduled tempore",
+    "before": {
+      "MINUTES_one": "{{count}} momento ante tempus horarium",
+      "MINUTES_other": "{{count}} minutas ante tempus horarium",
+      "HOURS_one": "Hora ante tempus horarium {{count}}",
+      "HOURS_other": "{{count}} horas ante tempus horarium",
+      "DAYS_one": "{{count}} Pridie horarium",
+      "DAYS_other": "{{count}} dies antequam accedant tempus",
+      "WEEKS_one": "{{count}} septimana ante tempus horarium",
+      "WEEKS_other": "{{count}} septimanas ante tempus horarium",
+      "MONTHS_one": "{{count}} mensem ante tempus horarium",
+      "MONTHS_other": "{{count}} menses ante tempus horarium",
+      "YEARS_one": "{{count}} annum antequam accedant tempus",
+      "YEARS_other": "{{count}} annis ante tempus horarium"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} momento post horarium temporis",
+      "MINUTES_other": "{{count}} minutas post horarium temporis",
+      "HOURS_one": "{{count}} hora post scheduled tempus",
+      "HOURS_other": "{{count}} horas post horarium tempus",
+      "DAYS_one": "{{count}} die post horarium temporis",
+      "DAYS_other": "{{count}} dies post horarium tempus",
+      "WEEKS_one": "{{count}} septimana post tempus horarium",
+      "WEEKS_other": "{{count}} septimanas post tempus horarium",
+      "MONTHS_one": "{{count}} mensem post tempus horarium",
+      "MONTHS_other": "{{count}} menses post tempus horarium",
+      "YEARS_one": "{{count}} annum post tempus horarium",
+      "YEARS_other": "{{count}} annos post tempus horarium"
+    },
+    "units": {
+      "MINUTES_one": "minute",
+      "MINUTES_other": "minuta",
+      "HOURS_one": "hora",
+      "HOURS_other": "horae",
+      "DAYS_one": "dies",
+      "DAYS_other": "diebus",
+      "WEEKS_one": "hebdomadis",
+      "WEEKS_other": "hebdomades",
+      "MONTHS_one": "mensis",
+      "MONTHS_other": "menses",
+      "YEARS_one": "annus",
+      "YEARS_other": "annos"
+    }
+  }
+}

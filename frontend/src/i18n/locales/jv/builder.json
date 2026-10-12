@@ -1,0 +1,87 @@
+{
+  "shell": {
+    "portal": "Portal Pembangun",
+    "referrals": "Rujukan",
+    "builderLogin": "Mbangun Login",
+    "partnerLogin": "Login Mitra Saluran"
+  },
+  "login": {
+    "title": "Mbangun mlebu",
+    "hint": "Akun Builder digawe dening Leadrat . Takon administrator yen sampeyan ora duwe."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Ngenteni keputusanmu",
+    "ACCEPTED": "Ditampa",
+    "REJECTED": "Ditolak"
+  },
+  "list": {
+    "title": "Rujukan",
+    "allProjects": "Kabeh proyek",
+    "allStatuses": "Kabeh status",
+    "count_other": "{{count}} pitunjuk",
+    "columns": {
+      "referral": "Rujukan",
+      "customer": "Pelanggan",
+      "project": "Proyek",
+      "sourcePartner": "Sumber Mitra",
+      "status": "Status",
+      "booking": "Booking",
+      "registered": "Kadhaftar"
+    },
+    "booked": "dipesen",
+    "empty": "Durung ana pitunjuk."
+  },
+  "detail": {
+    "customer": "Pelanggan",
+    "sourcePartner": "Sumber Mitra",
+    "attributionNote": "(atribusi - ora bisa diganti)",
+    "leadStatus": "Status Lead",
+    "protectedUntil": "Dilindungi Nganti",
+    "referral": "Rujukan",
+    "reason": "Alesan: {{reason}}",
+    "booking": "Booking",
+    "bookedOwner": "Dipesen - sampeyan pemilik operasional",
+    "notBooked": "Ora dipesen",
+    "sharedAfterBooking": "Dibagi sawise pesenan",
+    "accept": "Nampa Rujukan",
+    "confirmBooking": "Konfirmasi Booking",
+    "reject": "Nolak Rujukan",
+    "rejectReasonLabel": "Alesan kanggo nolak (dituduhake menyang pasangan) *",
+    "rejectConfirm": "nolak",
+    "confirmBookingPrompt": "Konfirmasi pesenan? Kepemilikan operasional pindhah menyang sampeyan lan mitra dadi layak kanggo komisi.",
+    "notice": {
+      "booked": "Booking dikonfirmasi.",
+      "accepted": "Rujukan ditampa.",
+      "rejected": "Rujukan ditolak."
+    },
+    "backToReferrals": "Bali menyang Rujukan"
+  },
+  "history": {
+    "title": "Sajarah",
+    "actor": {
+      "system": "Sistem",
+      "partner": "Mitra saluran",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Registrasi mitra ditampa",
+      "DUPLICATE_CHECK_COMPLETED": "Priksa duplikat rampung - ora ana duplikat aktif sing ditemokake",
+      "REGISTRATION_ACCEPTED": "Registrasi ditampa",
+      "PROTECTION_GRANTED_other": "{{count}} pangayoman -dina diwenehake",
+      "STAGE_UPDATED": "Status dianyari {{stage}}",
+      "LEAD_DETAILS_UPDATED_other": "Bidang {{count}} sing dianyari",
+      "LEAD_ASSIGNED": "Ditugasake kanggo {{name}}",
+      "LEAD_UNASSIGNED": "Ora diutus",
+      "REFERRAL_ACCEPTED": "Pembina nampa rujukan kasebut",
+      "REFERRAL_REJECTED": "Pembina nolak rujukan kasebut. Alesan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Upaya registrasi duplikat dening {{partner}} ditolak",
+      "BOOKING_COMPLETED": "Booking rampung",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Kepemilikan operasional ditransfer menyang Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribusi partner dilestarekake",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisi digawe",
+      "HANDOVER_COMPLETED": "Handover rampung",
+      "ADMIN_PROTECTION_RELEASED": "Admin ngeculake proteksi duplikat luwih awal. Alesan: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin ngganti registrasi saka {{from}} menyang {{to}} . Alesan: {{reason}}"
+    }
+  }
+}

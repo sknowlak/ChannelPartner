@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Ɔdansifo Portal",
+    "referrals": "Nneɛma a wɔde kɔma afoforo",
+    "builderLogin": "Ɔdansifo no Login",
+    "partnerLogin": "Channel Ɔhokafo Login"
+  },
+  "login": {
+    "title": "Ɔdansifo de ne nsa hyɛ ase",
+    "hint": "Leadrat na ɔyɛɛ adansifoɔ akontaabuo . Bisa wo administrator no sɛ wunni bi anaa."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Woretwɛn wo gyinaesi",
+    "ACCEPTED": "Wogye tom",
+    "REJECTED": "Wɔpowee"
+  },
+  "list": {
+    "title": "Nneɛma a wɔde kɔma afoforo",
+    "allProjects": "Nnwuma nyinaa",
+    "allStatuses": "Gyinabea ahorow nyinaa",
+    "count_one": "{{count}} a wɔde kɔma obi",
+    "count_other": "{{count}} nsɛm a wɔde kɔma nkurɔfo",
+    "columns": {
+      "referral": "Nsɛm a wɔde kɔma obi",
+      "customer": "Adetɔni",
+      "project": "Dwumadie",
+      "sourcePartner": "Fibea Ɔhokafo",
+      "status": "Gyinabea",
+      "booking": "Nsɛm a Wɔka Kyerɛ",
+      "registered": "Wɔakyerɛw wɔn din"
+    },
+    "booked": "Wɔakyerɛw wɔn din",
+    "empty": "No referrals biara de besi nnɛ."
+  },
+  "detail": {
+    "customer": "Adetɔni",
+    "sourcePartner": "Fibea Ɔhokafo",
+    "attributionNote": "(attribution - ntumi nnsesa) .",
+    "leadStatus": "Lead Gyinabea",
+    "protectedUntil": "Wɔabɔ ho ban Kosi sɛ",
+    "referral": "Nsɛm a wɔde kɔma obi",
+    "reason": "Nea enti a ɛte saa: {{reason}}",
+    "booking": "Nsɛm a Wɔka Kyerɛ",
+    "bookedOwner": "Booked - wo ne dwumadie wura",
+    "notBooked": "Wɔnkyerɛw wɔn din",
+    "sharedAfterBooking": "Wɔkyɛ bere a wɔagye din awie no",
+    "accept": "Gye Referral no tom",
+    "confirmBooking": "Si Booking no so dua",
+    "reject": "Pow Referral a Wɔde Kɔma Wo",
+    "rejectReasonLabel": "Nea enti a wɔpow (wɔkyerɛ ɔhokafo no) * .",
+    "rejectConfirm": "Po",
+    "confirmBookingPrompt": "Si so dua sɛ woakyerɛw wo din? Operational ownership tu kɔ wo nkyɛn na ɔhokafo no bɛyɛ nea ɔfata sɛ wonya commission.",
+    "notice": {
+      "booked": "Booking no sii so dua.",
+      "accepted": "Wɔgye toom sɛ wɔde obi bɛkɔ akɔma obi.",
+      "rejected": "Wɔpow sɛ wɔde no kɔma nkurɔfo."
+    },
+    "backToReferrals": "San Kɔ Referrals so"
+  },
+  "history": {
+    "title": "Abakɔsɛm",
+    "actor": {
+      "system": "Sestɛm",
+      "partner": "Channel hokafo",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Ɔhokafo dinkyerɛw a wonyae",
+      "DUPLICATE_CHECK_COMPLETED": "Duplicate check awie - wonhuu duplicate a ɛyɛ adwuma biara",
+      "REGISTRATION_ACCEPTED": "Wogye dinkyerɛw tom",
+      "PROTECTION_GRANTED_one": "{{count}} -da ahobanbɔ a wɔde ama",
+      "PROTECTION_GRANTED_other": "{{count}} -da ahobanbɔ a wɔde ama",
+      "STAGE_UPDATED": "Gyinabea a wɔayɛ no foforo akɔ {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} afuo a wɔayɛ no foforɔ",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} afuo a wɔayɛ no foforɔ",
+      "LEAD_ASSIGNED": "Wɔde ama {{name}}",
+      "LEAD_UNASSIGNED": "Wɔamfa wɔn nsa anhyɛ mu",
+      "REFERRAL_ACCEPTED": "Builder gyee asɛm a wɔde kɔmaa no no toom",
+      "REFERRAL_REJECTED": "Builder pow asɛm a wɔde kɔmaa no no. Nea enti a ɛte saa: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Wɔapow mmɔden a {{partner}} bɔe sɛ wɔbɛkyerɛw wɔn din mprenu",
+      "BOOKING_COMPLETED": "Wɔawie Booking no",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Wɔde adwumayɛ mu wurayɛ no kɔmaa Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Wɔakora ɔhokafo attribution so",
+      "COMMISSION_ELIGIBILITY_CREATED": "Commission eligibility a wɔayɛ",
+      "HANDOVER_COMPLETED": "Wɔawie handover no",
+      "ADMIN_PROTECTION_RELEASED": "Admin yii duplicate ahobammɔ adi ntɛm. Nea enti a ɛte saa: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin san de dinkyerɛw fii {{from}} kɔɔ {{to}} . Nea enti a ɛte saa: {{reason}}"
+    }
+  }
+}

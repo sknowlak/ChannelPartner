@@ -1,0 +1,192 @@
+{
+  "list": {
+    "title": "Mo Cheannardan",
+    "signedInAs": "Clàraichte a-steach mar {{name}} ( {{partnerId}} ) · amannan air an sealltainn ann an {{timezone}}",
+    "addLead": "+ Cuir luaidhe ris",
+    "tabs": {
+      "all": "A h-uile ( {{count}} )",
+      "pending": "A' feitheamh ( {{count}} )",
+      "booked": "Glèidhte ( {{count}} )"
+    },
+    "searchPlaceholder": "Rannsaich a rèir ainm, fòn-làimhe, no ID clàraidh ...",
+    "manageColumns": "Stiùirich Colbhan",
+    "rowsPerPage": "Sreathan gach duilleag",
+    "registrationId": "ID clàraidh",
+    "emptyState": "Gun stiùiridhean fhathast - clàraich a’ chiad fhear agad.",
+    "noMatch": "Chan eil stiùir sam bith a’ freagairt ris na sìoltachain sin.",
+    "showing": "A' sealltainn {{from}} - {{to}} de {{total}} inntrigidhean",
+    "actions": {
+      "preview": "Ro-shealladh & ùrachadh sgiobalta",
+      "history": "Eachdraidh",
+      "email": "Post-d",
+      "whatsapp": "WhatsApp",
+      "call": "Call"
+    },
+    "pagination": {
+      "first": "A' chiad duilleag",
+      "previous": "An duilleag roimhe",
+      "next": "An ath dhuilleig",
+      "last": "An duilleag mu dheireadh"
+    }
+  },
+  "columns": {
+    "status": "Inbhe",
+    "assignTo": "Sònraich do",
+    "booked": "Glèidhte",
+    "protectionUntil": "Dìon gus an"
+  },
+  "booking": {
+    "booked": "Glèidhte",
+    "pending": "A' feitheamh"
+  },
+  "assign": {
+    "unassigned": "Neo-ainmichte",
+    "owner": "{{name}} (sealbhadair)",
+    "inactive": "{{name}} (neo-ghnìomhach)",
+    "unknownUser": "Cleachdaiche neo-aithnichte",
+    "assignedTo": "Air a shònrachadh do {{name}}"
+  },
+  "form": {
+    "addTitle": "Cuir luaidhe ris",
+    "editTitle": "Deasaich Lead",
+    "noPermissionAdd": "Chan eil cead agad stiùirichean a chlàradh.",
+    "noPermissionEdit": "Chan eil cead agad stiùiridhean a dheasachadh.",
+    "selectPlaceholder": "Tagh...",
+    "commaSeparated": "Coma air a sgaradh",
+    "phonePlaceholder": "Àireamh fòn",
+    "countryCode": "Còd na dùthcha"
+  },
+  "project": {
+    "none": "Chan eil pròiseact ann fhathast (gun iomradh)",
+    "notInList": "{{project}} (chan ann air liosta a' phròiseict)"
+  },
+  "journey": {
+    "customer": "Neach-ceannach",
+    "currentOwner": "Sealbhadair gnàthach",
+    "protectionExpiry": "Crìochnachadh dìon",
+    "leadStatus": "Inbhe luaidhe",
+    "scheduled": "Clàraichte",
+    "assignedTo": "Air a shònrachadh gu",
+    "referral": "Iomradh",
+    "builderReason": "Adhbhar an neach-togail: {{reason}}",
+    "bookedHint": "Glèidhte leis an neach-togail - tha seilbh obrachaidh air gluasad chun neach-togail; tha d’ ainm agus ion-roghnachd coimisean air an cumail.",
+    "notBookedHint": "Bidh àiteachan air an dearbhadh leis an neach-togail aon uair ‘s gun gabh iad ris an iomradh.",
+    "quickUpdate": "Ùrachadh luath air ìre",
+    "leadDetails": "Mion-fhiosrachadh luaidhe",
+    "progressHistory": "Eachdraidh Adhartas",
+    "timesIn": "(amannan ann an {{timezone}} )",
+    "backToMyLeads": "Air ais gu My Leads",
+    "editLead": "Deasaich Lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "Gun iomradh (gun phròiseact)",
+    "PENDING_BUILDER": "A’ feitheamh ris an neach-togail",
+    "ACCEPTED": "Air gabhail ris leis an neach-togail",
+    "REJECTED": "Air a dhiùltadh leis an neach-togail"
+  },
+  "preview": {
+    "ariaLabel": "Ro-shealladh stiùir",
+    "title": "Ro-shealladh luaidhe",
+    "source": "Stòr",
+    "location": "Àite",
+    "scheduled": "Clàraichte",
+    "registered": "Clàraichte",
+    "latestNote": "An nota as ùire",
+    "quickUpdate": "Ùrachadh luath air ìre",
+    "fullDetails": "Mion-fhiosrachadh slàn",
+    "editLead": "Deasaich Lead",
+    "history": "Eachdraidh"
+  },
+  "quick": {
+    "assignedTo": "Air a shònrachadh gu",
+    "status": "Inbhe",
+    "subStatus": "Fo-Inbhe",
+    "selectSubStatus": "Tagh fo-inbhe...",
+    "none": "Chan eil gin",
+    "scheduledAt": "Clàraichte aig",
+    "localTime": "àm ionadail",
+    "note": "Thoir an aire",
+    "notePlaceholder": "Dè thachair air a’ ghairm/tadhal seo? (roghainneil)",
+    "updateStatus": "Inbhe ùrachadh",
+    "statusUpdated": "Inbhe air ùrachadh",
+    "bookedLocked": "Tha an stiùir seo glèidhte - chan urrainnear a h-inbhe atharrachadh tuilleadh.",
+    "viewOnly": "Chì thu an stiùir seo, ach chan urrainn do dhreuchd ùrachadh."
+  },
+  "history": {
+    "title": "Eachdraidh - {{registrationId}}",
+    "tabs": {
+      "all": "Uile",
+      "status": "Inbhe",
+      "assignment": "Sònrachadh",
+      "notes": "Notaichean"
+    },
+    "doneBy": "Dèanta le {{actor}}",
+    "system": "Siostam",
+    "platforms": {
+      "System": "Siostam",
+      "External": "Taobh a-muigh",
+      "Web": "Lìon",
+      "Mobile": "Fòn-làimhe"
+    },
+    "added": "air a chur ris",
+    "updated": "ùrachadh",
+    "empty": "(falamh)",
+    "noHistory": "Chan eil eachdraidh san roinn seo fhathast.",
+    "fieldLabels": {
+      "stage": "Inbhe",
+      "subStatus": "Fo-Inbhe",
+      "scheduledAt": "Clàr",
+      "notes": "Notaichean",
+      "assignedTo": "Air a shònrachadh gu"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Clàradh com-pàirtiche air fhaighinn",
+      "DUPLICATE_CHECK_COMPLETED": "Sgrùdadh dùblaichte crìochnaichte - cha deach lethbhreac gnìomhach a lorg",
+      "REGISTRATION_ACCEPTED": "Chaidh gabhail ri clàradh",
+      "PROTECTION_GRANTED_one": "{{count}} -latha dìon air a thoirt seachad",
+      "PROTECTION_GRANTED_two": "{{count}} -latha dìon air a thoirt seachad",
+      "PROTECTION_GRANTED_few": "{{count}} -latha dìon air a thoirt seachad",
+      "PROTECTION_GRANTED_other": "{{count}} -latha dìon air a thoirt seachad",
+      "REGISTRATION_ATTEMPT_REJECTED": "Dhiùlt oidhirp clàraidh dhùblaichte le {{partnerId}}",
+      "LEAD_DETAILS_UPDATED_one": "Chaidh raon {{count}} ùrachadh",
+      "LEAD_DETAILS_UPDATED_two": "{{count}} raointean air an ùrachadh",
+      "LEAD_DETAILS_UPDATED_few": "{{count}} raointean air an ùrachadh",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} raointean air an ùrachadh",
+      "STAGE_UPDATED": "Inbhe air ùrachadh gu {{status}}",
+      "LEAD_ASSIGNED": "Air a shònrachadh do {{name}}",
+      "LEAD_UNASSIGNED": "Neo-ainmichte",
+      "BOOKING_COMPLETED": "Clàradh crìochnaichte",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Chaidh seilbh obrachaidh a ghluasad gu Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Buadh com-pàirtiche air a ghleidheadh",
+      "COMMISSION_ELIGIBILITY_CREATED": "ion-roghnachd Coimisean air a chruthachadh",
+      "HANDOVER_COMPLETED": "Gluasad crìochnaichte",
+      "REFERRAL_ACCEPTED": "Ghabh an neach-togail ris an iomradh",
+      "REFERRAL_REJECTED": "Dhiùlt an neach-togail an iomradh. Adhbhar: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Sgaoil an rianaire dìon dùblaichte tràth. Adhbhar: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Dh'ath-ainmich an rianaire an clàradh o {{from}} gu {{to}} . Adhbhar: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Stiùirich Colbhan",
+    "hint": "Slaod gus ath-òrdachadh · seic gus sealltainn",
+    "showAll": "Seall na h-uile",
+    "resetDefault": "Ath-shuidheachadh gu Default"
+  },
+  "filters": {
+    "title": "Criathragan",
+    "allProjects": "A h-uile pròiseact",
+    "any": "Sam bith",
+    "noFields": "Chan eil raointean sìoltachaidh sam bith eile air an comasachadh fhathast (Settings> Lead).",
+    "clearAll": "Glan na h-uile"
+  },
+  "phone": {
+    "MISSING": "Tha feum air àireamh fòn.",
+    "INVALID": "Feuch an cuir thu a-steach àireamh fòn dligheach.",
+    "TOO_SHORT": "Tha an àireamh fòn ro ghoirid.",
+    "TOO_LONG": "Tha an àireamh fòn ro fhada.",
+    "INVALID_FOR_COUNTRY": "Chan eil an àireamh fòn seo dligheach airson {{country}} .",
+    "COUNTRY_MISMATCH": "Feuch an tagh thu an còd dùthcha ceart.",
+    "NOT_MOBILE": "Feuch an cuir thu a-steach àireamh fòn-làimhe, chan e loidhne-tìre."
+  }
+}

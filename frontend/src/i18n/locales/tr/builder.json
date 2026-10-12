@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "İnşaatçı Portalı",
+    "referrals": "Tavsiyeler",
+    "builderLogin": "İnşaatçı Girişi",
+    "partnerLogin": "Kanal Ortağı Girişi"
+  },
+  "login": {
+    "title": "İnşaatçı oturum açma",
+    "hint": "İnşaatçı hesapları Leadrat tarafından oluşturulur. Yöneticiniz yoksa yöneticinize sorun."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Kararınızı bekliyorum",
+    "ACCEPTED": "Kabul edildi",
+    "REJECTED": "Reddedilmiş"
+  },
+  "list": {
+    "title": "Tavsiyeler",
+    "allProjects": "Tüm projeler",
+    "allStatuses": "Tüm durumlar",
+    "count_one": "{{count}} yönlendirme",
+    "count_other": "{{count}} yönlendirme",
+    "columns": {
+      "referral": "Yönlendirme",
+      "customer": "Müşteri",
+      "project": "Proje",
+      "sourcePartner": "Kaynak Ortağı",
+      "status": "Durum",
+      "booking": "Rezervasyon",
+      "registered": "Kayıtlı"
+    },
+    "booked": "Rezerve edildi",
+    "empty": "Henüz yönlendirme yok."
+  },
+  "detail": {
+    "customer": "Müşteri",
+    "sourcePartner": "Kaynak Ortağı",
+    "attributionNote": "(atıf - değiştirilemez)",
+    "leadStatus": "Müşteri Adayı Durumu",
+    "protectedUntil": "Şu Kadar Korumalı",
+    "referral": "Yönlendirme",
+    "reason": "Sebep: {{reason}}",
+    "booking": "Rezervasyon",
+    "bookedOwner": "Rezervasyon yapıldı - işletme sahibi sizsiniz",
+    "notBooked": "Rezervasyon yapılmadı",
+    "sharedAfterBooking": "Rezervasyondan sonra paylaşıldı",
+    "accept": "Yönlendirmeyi Kabul Et",
+    "confirmBooking": "Rezervasyonu Onayla",
+    "reject": "Yönlendirmeyi Reddet",
+    "rejectReasonLabel": "Reddetme nedeni (ortağa gösterilir) *",
+    "rejectConfirm": "Reddetmek",
+    "confirmBookingPrompt": "Rezervasyon onaylansın mı? Operasyonel sahiplik size geçer ve iş ortağı komisyon almaya hak kazanır.",
+    "notice": {
+      "booked": "Rezervasyon onaylandı.",
+      "accepted": "Yönlendirme kabul edildi.",
+      "rejected": "Yönlendirme reddedildi."
+    },
+    "backToReferrals": "Tavsiyelere Geri Dön"
+  },
+  "history": {
+    "title": "Tarih",
+    "actor": {
+      "system": "Sistem",
+      "partner": "Kanal ortağı",
+      "admin": "Leadrat yönetici"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "İş ortağı kaydı alındı",
+      "DUPLICATE_CHECK_COMPLETED": "Yinelenen kontrol tamamlandı - etkin bir kopya bulunamadı",
+      "REGISTRATION_ACCEPTED": "Kayıt kabul edildi",
+      "PROTECTION_GRANTED_one": "{{count}} günlük koruma verildi",
+      "PROTECTION_GRANTED_other": "{{count}} günlük koruma verildi",
+      "STAGE_UPDATED": "Durum {{stage}} olarak güncellendi",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} alanı güncellendi",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} alan güncellendi",
+      "LEAD_ASSIGNED": "{{name}} adlı kişiye atandı",
+      "LEAD_UNASSIGNED": "Atanmamış",
+      "REFERRAL_ACCEPTED": "İnşaatçı tavsiyeyi kabul etti",
+      "REFERRAL_REJECTED": "İnşaatçı yönlendirmeyi reddetti. Sebep: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} tarafından yapılan mükerrer kayıt girişimi reddedildi",
+      "BOOKING_COMPLETED": "Rezervasyon tamamlandı",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operasyonel mülkiyet Builder'a devredildi",
+      "PARTNER_ATTRIBUTION_PRESERVED": "İş ortağı ilişkilendirmesi korundu",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komisyon uygunluğu oluşturuldu",
+      "HANDOVER_COMPLETED": "Devir teslim tamamlandı",
+      "ADMIN_PROTECTION_RELEASED": "Yönetici yinelenen korumayı erken yayınladı. Sebep: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Yönetici, kaydı {{from}} yerine {{to}} olarak yeniden atadı. Sebep: {{reason}}"
+    }
+  }
+}

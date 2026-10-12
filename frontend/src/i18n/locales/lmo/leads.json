@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "I me leads",
+    "signedInAs": "Accedü cuma {{name}} ( {{partnerId}} ) · i temp mustrà en {{timezone}}",
+    "addLead": "+ Aggiungi Lead",
+    "tabs": {
+      "all": "Tüt ( {{count}} )",
+      "pending": "En attesa ( {{count}} )",
+      "booked": "Prenotà ( {{count}} )"
+    },
+    "searchPlaceholder": "Cerca per nomm, celular o ID de registraziun ...",
+    "manageColumns": "Gestisci i culonn",
+    "rowsPerPage": "Righ per pagina",
+    "registrationId": "ID de registraziun",
+    "emptyState": "Ancamò nissun leads - registra el prim.",
+    "noMatch": "Nissun lead currispunt a chesti filter.",
+    "showing": "Mustrand {{from}} - {{to}} di voci {{total}}",
+    "actions": {
+      "preview": "Anteprima e aggiornament rapid",
+      "history": "Storia",
+      "email": "E-mail",
+      "whatsapp": "WhatsApp",
+      "call": "Ciamada"
+    },
+    "pagination": {
+      "first": "Prima pagina",
+      "previous": "Pagina precedent",
+      "next": "Pagina sucesiva",
+      "last": "Ultima pagina"
+    }
+  },
+  "columns": {
+    "status": "Stat",
+    "assignTo": "Assegna a",
+    "booked": "Prenotà",
+    "protectionUntil": "Proteziun fin a"
+  },
+  "booking": {
+    "booked": "Prenotà",
+    "pending": "In atesa"
+  },
+  "assign": {
+    "unassigned": "Minga asegnà",
+    "owner": "{{name}} (Proprietari)",
+    "inactive": "{{name}} (inatif)",
+    "unknownUser": "Utent minga cognussü",
+    "assignedTo": "Asegnà a {{name}}"
+  },
+  "form": {
+    "addTitle": "Aggiungi lead",
+    "editTitle": "Modifica lead",
+    "noPermissionAdd": "G’he minga el permess de registrar i leads.",
+    "noPermissionEdit": "G’he minga el permess de mudificà i leads.",
+    "selectPlaceholder": "Selezionar...",
+    "commaSeparated": "Separà de virgola",
+    "phonePlaceholder": "Numer de telefon",
+    "countryCode": "Codes del paes"
+  },
+  "project": {
+    "none": "Ancamò nissun pruget (minga riferì)",
+    "notInList": "{{project}} (minga in de la lista di pruget)"
+  },
+  "journey": {
+    "customer": "Client",
+    "currentOwner": "Proprietari atual",
+    "protectionExpiry": "Scadenza de la pruteziun",
+    "leadStatus": "Stat del lead",
+    "scheduled": "Programad",
+    "assignedTo": "Assegnà a",
+    "referral": "Riferiment",
+    "builderReason": "Motif del costrutur: {{reason}}",
+    "bookedHint": "Prenotà del costrutur - la proprietà operativa la s’è spustada al costrutur; la vòstra attribuziun e la vòstra idoneità a la cumisiun sun mantegnuu.",
+    "notBookedHint": "I prenotaziun sun cunfermà del costrutur quand che acetan el riferiment.",
+    "quickUpdate": "Aggiornament rapid",
+    "leadDetails": "Dettagli del plomb",
+    "progressHistory": "Storia del prugress",
+    "timesIn": "(ora in {{timezone}} )",
+    "backToMyLeads": "Torna ai me leads",
+    "editLead": "Modifica lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "Minga riferì (nissun pruget)",
+    "PENDING_BUILDER": "En attesa del costrutur",
+    "ACCEPTED": "Acetà del costrutur",
+    "REJECTED": "Refudà del costrutur"
+  },
+  "preview": {
+    "ariaLabel": "Anteprima del lead",
+    "title": "Anteprima del lead",
+    "source": "Font",
+    "location": "Post",
+    "scheduled": "Programad",
+    "registered": "Registrad",
+    "latestNote": "Ultima nota",
+    "quickUpdate": "Aggiornament rapid",
+    "fullDetails": "Dettagli cumplet",
+    "editLead": "Modifica lead",
+    "history": "Storia"
+  },
+  "quick": {
+    "assignedTo": "Assegnà a",
+    "status": "Stat",
+    "subStatus": "Sottastato",
+    "selectSubStatus": "Seleziuna sottastatus...",
+    "none": "Nissun",
+    "scheduledAt": "Programad a",
+    "localTime": "ora local",
+    "note": "Nota",
+    "notePlaceholder": "Cosa l’è sucedü en chesta chiamada / visita? (facoltativ)",
+    "updateStatus": "Aggiorna stat",
+    "statusUpdated": "Stat agiornà",
+    "bookedLocked": "Chestu lead l’è prenutà, el sò status pœu minga vèss püsee cambià.",
+    "viewOnly": "Pœdet vedè chestu lead, ma la vòstra funziun la pœu minga agiurnal."
+  },
+  "history": {
+    "title": "Storia - {{registrationId}}",
+    "tabs": {
+      "all": "Tuts",
+      "status": "Stat",
+      "assignment": "Compit",
+      "notes": "Note"
+    },
+    "doneBy": "Fat de {{actor}}",
+    "system": "Sistema",
+    "platforms": {
+      "System": "Sistema",
+      "External": "De fœra",
+      "Web": "Web",
+      "Mobile": "Mobel"
+    },
+    "added": "aggiunto",
+    "updated": "agiornà",
+    "empty": "(vœid)",
+    "noHistory": "Ancamò nissuna storia en chesta categuria.",
+    "fieldLabels": {
+      "stage": "Stat",
+      "subStatus": "Sottastato",
+      "scheduledAt": "Programa",
+      "notes": "Note",
+      "assignedTo": "Assegnà a"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Registraziun del partner ricevuuda",
+      "DUPLICATE_CHECK_COMPLETED": "Cuntrol duplicà cumpletà - nissun duplicà atif truvà",
+      "REGISTRATION_ACCEPTED": "Iscriziun acetada",
+      "PROTECTION_GRANTED_one": "{{count}} dì de pruteziun cuncessa",
+      "PROTECTION_GRANTED_other": "{{count}} dì de pruteziun cuncessa",
+      "REGISTRATION_ATTEMPT_REJECTED": "Tentatif de registraziun duplicà de {{partnerId}} refüdà",
+      "LEAD_DETAILS_UPDATED_one": "Camp {{count}} agiurnà",
+      "LEAD_DETAILS_UPDATED_other": "Camp {{count}} agiurnà",
+      "STAGE_UPDATED": "Stat agiurnà a {{status}}",
+      "LEAD_ASSIGNED": "Asegnà a {{name}}",
+      "LEAD_UNASSIGNED": "Minga asegnà",
+      "BOOKING_COMPLETED": "La prenotaziun l’è cumpletada",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "La proprietà operativa trasferida al costrutur",
+      "PARTNER_ATTRIBUTION_PRESERVED": "L’attribuziun del partner l’è cunservada",
+      "COMMISSION_ELIGIBILITY_CREATED": "Idoneità a la cumisiun creada",
+      "HANDOVER_COMPLETED": "La trasferiment cumpletada",
+      "REFERRAL_ACCEPTED": "El costrutur g’ha acettà el riferiment",
+      "REFERRAL_REJECTED": "El costrutur g’ha refudà el riferiment. Motif: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "L'amministratur g’ha pubblicà a bon temp la pruteziun duplicada. Motif: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "L'amministratur g'ha riassegnà la registraziun de {{from}} a {{to}} . Motif: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Gestisci i culonn",
+    "hint": "Trascina per riurdenar · cuntrula per mustrar",
+    "showAll": "Mostra tüt",
+    "resetDefault": "Ripristina al predefinì"
+  },
+  "filters": {
+    "title": "Filtri",
+    "allProjects": "Tüt i pruget",
+    "any": "Qualsessia",
+    "noFields": "Nissun olter camp filtrabil l’è ancamò abilì (Impostaziun > Lead).",
+    "clearAll": "Cancella tüt"
+  },
+  "phone": {
+    "MISSING": "L’è necessari el numer del telefon.",
+    "INVALID": "Digita un numer di telefon valid.",
+    "TOO_SHORT": "El numer del telefon l’è tropp cuurt.",
+    "TOO_LONG": "El numer del telefon l’è trop luungh.",
+    "INVALID_FOR_COUNTRY": "Chestu numer di telefon l’è minga valid per {{country}} .",
+    "COUNTRY_MISMATCH": "Per piasé seleziuna el giüst codes del pais.",
+    "NOT_MOBILE": "Per piasé inserisci un numer celular, minga una linea fissa."
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "د جوړونکي پورټل",
+    "referrals": "حوالې",
+    "builderLogin": "د جوړونکي ننوتل",
+    "partnerLogin": "د چینل ملګري ننوتل"
+  },
+  "login": {
+    "title": "جوړونکی ننوتنه",
+    "hint": "د جوړونکي حسابونه د Leadrat لخوا رامینځته شوي. له خپل مدیر څخه پوښتنه وکړئ که تاسو نه لرئ."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "ستاسو د پریکړې په تمه",
+    "ACCEPTED": "ومنل شو",
+    "REJECTED": "رد کړل"
+  },
+  "list": {
+    "title": "حوالې",
+    "allProjects": "ټولې پروژې",
+    "allStatuses": "ټول حالتونه",
+    "count_one": "{{count}} راجع کول",
+    "count_other": "{{count}} راجع کول",
+    "columns": {
+      "referral": "حواله",
+      "customer": "پیرودونکي",
+      "project": "پروژه",
+      "sourcePartner": "سرچینه همکار",
+      "status": "حالت",
+      "booking": "بکنگ",
+      "registered": "ثبت شوی"
+    },
+    "booked": "بک شوی",
+    "empty": "تر اوسه هیڅ حواله نشته."
+  },
+  "detail": {
+    "customer": "پیرودونکي",
+    "sourcePartner": "سرچینه همکار",
+    "attributionNote": "(انتساب - نشي بدلیدلی)",
+    "leadStatus": "د مشر حالت",
+    "protectedUntil": "تر هغه پورې ساتل کیږي",
+    "referral": "حواله",
+    "reason": "لامل: {{reason}}",
+    "booking": "بکنگ",
+    "bookedOwner": "بک شوی - تاسو عملیاتي مالک یاست",
+    "notBooked": "نه بک شوی",
+    "sharedAfterBooking": "د بک کولو وروسته شریک شوی",
+    "accept": "حواله قبول کړئ",
+    "confirmBooking": "بکینګ تایید کړئ",
+    "reject": "راجع کول رد کړئ",
+    "rejectReasonLabel": "د رد کولو دلیل (ملګری ته ښودل شوی) *",
+    "rejectConfirm": "رد کړه",
+    "confirmBookingPrompt": "بکینګ تایید کړئ؟ عملیاتي ملکیت تاسو ته ځي او ملګري د کمیسیون لپاره وړ کیږي.",
+    "notice": {
+      "booked": "بکینګ تایید شو.",
+      "accepted": "حواله ومنل شوه.",
+      "rejected": "حواله رد شوه."
+    },
+    "backToReferrals": "بیرته حوالې ته"
+  },
+  "history": {
+    "title": "تاریخ",
+    "actor": {
+      "system": "سیسټم",
+      "partner": "د چینل ملګری",
+      "admin": "Leadrat مدیر"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "د شریکانو نوم لیکنه ترلاسه شوه",
+      "DUPLICATE_CHECK_COMPLETED": "د نقل چک بشپړ شو - هیڅ فعال نقل ونه موندل شو",
+      "REGISTRATION_ACCEPTED": "نوم لیکنه ومنل شوه",
+      "PROTECTION_GRANTED_one": "{{count}} ورځی خوندیتوب ورکړل شوی",
+      "PROTECTION_GRANTED_other": "{{count}} ورځی خوندیتوب ورکړل شوی",
+      "STAGE_UPDATED": "وضعیت {{stage}} ته تازه شوی",
+      "LEAD_DETAILS_UPDATED_one": "تازه شوی {{count}} ساحه",
+      "LEAD_DETAILS_UPDATED_other": "تازه شوي {{count}} ساحې",
+      "LEAD_ASSIGNED": "{{name}} ته سپارل شوی",
+      "LEAD_UNASSIGNED": "بې تفاوته",
+      "REFERRAL_ACCEPTED": "جوړونکي راجع کول ومنل",
+      "REFERRAL_REJECTED": "جوړونکي راجع کول رد کړل. لامل: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "د {{partner}} لخوا د راجستریشن د نقل هڅه رد شوه",
+      "BOOKING_COMPLETED": "بکنګ بشپړ شو",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "عملیاتي ملکیت بلډر ته لیږدول شوی",
+      "PARTNER_ATTRIBUTION_PRESERVED": "د شریک انتساب ساتل",
+      "COMMISSION_ELIGIBILITY_CREATED": "د کمیسیون وړتیا رامنځته شوه",
+      "HANDOVER_COMPLETED": "سپارل بشپړ شول",
+      "ADMIN_PROTECTION_RELEASED": "اډمین د نقل محافظت دمخه خپور کړ. لامل: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "اډمین له {{from}} څخه {{to}} ته راجسټریشن بیا وټاکه. لامل: {{reason}}"
+    }
+  }
+}

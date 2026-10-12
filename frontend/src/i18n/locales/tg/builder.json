@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Портали Сохтмон",
+    "referrals": "Рефератҳо",
+    "builderLogin": "Воридшавӣ ба сохтмончӣ",
+    "partnerLogin": "Воридшавӣ ба шарики канал"
+  },
+  "login": {
+    "title": "Сохтмон ворид шавед",
+    "hint": "Ҳисобҳои сохтмончӣ аз ҷониби Leadrat сохта шудаанд. Агар шумо надошта бошед, аз администратори худ пурсед."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Интизори қарори шумо",
+    "ACCEPTED": "Қабул карда шудааст",
+    "REJECTED": "Рад карда шуд"
+  },
+  "list": {
+    "title": "Рефератҳо",
+    "allProjects": "Ҳама лоиҳаҳо",
+    "allStatuses": "Ҳама статусҳо",
+    "count_one": "{{count}} муроҷиат",
+    "count_other": "{{count}} муроҷиат",
+    "columns": {
+      "referral": "Реферат",
+      "customer": "Муштарӣ",
+      "project": "Лоиҳа",
+      "sourcePartner": "Сарчашма шарик",
+      "status": "Статус",
+      "booking": "Бронкунӣ",
+      "registered": "Ба қайд гирифта шудааст"
+    },
+    "booked": "Зан карда шуд",
+    "empty": "Ҳанӯз муроҷиатҳо нестанд."
+  },
+  "detail": {
+    "customer": "Муштарӣ",
+    "sourcePartner": "Сарчашма шарик",
+    "attributionNote": "(аттрибутсия - тағир додан мумкин нест)",
+    "leadStatus": "Ҳолати роҳбар",
+    "protectedUntil": "Муҳофизат то",
+    "referral": "Реферат",
+    "reason": "Сабаб: {{reason}}",
+    "booking": "Бронкунӣ",
+    "bookedOwner": "Брон карда шуд - шумо соҳиби амалиёт ҳастед",
+    "notBooked": "Зан карда нашудааст",
+    "sharedAfterBooking": "Пас аз фармоиш мубодила карда мешавад",
+    "accept": "Роҳхатро қабул кунед",
+    "confirmBooking": "Бронкуниро тасдиқ кунед",
+    "reject": "Рефератро рад кунед",
+    "rejectReasonLabel": "Сабаби рад (ба шарик нишон дода мешавад) *",
+    "rejectConfirm": "Рад кардан",
+    "confirmBookingPrompt": "Бронкуниро тасдиқ кунед? Моликияти амалиётӣ ба шумо мегузарад ва шарик ҳуқуқи комиссияро пайдо мекунад.",
+    "notice": {
+      "booked": "Бронкунӣ тасдиқ карда шуд.",
+      "accepted": "Мурожаат қабул қилинди.",
+      "rejected": "Муроҷиат рад карда шуд."
+    },
+    "backToReferrals": "Бозгашт ба Рефератҳо"
+  },
+  "history": {
+    "title": "Таърих",
+    "actor": {
+      "system": "Система",
+      "partner": "Шарики канал",
+      "admin": "Админ Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Бақайдгирии шарикон гирифта шуд",
+      "DUPLICATE_CHECK_COMPLETED": "Санҷиши такрорӣ анҷом ёфт - ягон нусхаи фаъол ёфт нашуд",
+      "REGISTRATION_ACCEPTED": "Бақайдгирӣ қабул карда шуд",
+      "PROTECTION_GRANTED_one": "{{count}} -муҳофизати рӯз дода шудааст",
+      "PROTECTION_GRANTED_other": "{{count}} -муҳофизати рӯз дода шудааст",
+      "STAGE_UPDATED": "Ҳолат ба {{stage}} навсозӣ шуд",
+      "LEAD_DETAILS_UPDATED_one": "Майдони {{count}} нав карда шуд",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} майдон нав карда шуд",
+      "LEAD_ASSIGNED": "Ба {{name}} таъин шудааст",
+      "LEAD_UNASSIGNED": "Таъиннашуда",
+      "REFERRAL_ACCEPTED": "Бинокор роххатро кабул кард",
+      "REFERRAL_REJECTED": "Сохтмон муроҷиатро рад кард. Сабаб: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Кӯшиши бақайдгирии такрорӣ аз ҷониби {{partner}} рад карда шуд",
+      "BOOKING_COMPLETED": "Бронкунӣ анҷом ёфт",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Моликияти амалиётӣ ба Сохтмон гузашт",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Аттрибутсияи шарикӣ нигоҳ дошта шудааст",
+      "COMMISSION_ELIGIBILITY_CREATED": "Қобилияти комиссия таъсис дода шудааст",
+      "HANDOVER_COMPLETED": "Интиқол ба анҷом расид",
+      "ADMIN_PROTECTION_RELEASED": "Администратор муҳофизати такрориро барвақт баровард. Сабаб: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Админ сабти номро аз {{from}} ба {{to}} иваз кард. Сабаб: {{reason}}"
+    }
+  }
+}

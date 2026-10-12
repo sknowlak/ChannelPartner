@@ -1,0 +1,96 @@
+{
+  "shell": {
+    "portal": "Portal Konstruktora",
+    "referrals": "Polecenia",
+    "builderLogin": "Zaloguj się do Konstruktora",
+    "partnerLogin": "Logowanie partnera kanału"
+  },
+  "login": {
+    "title": "Konstruktor zaloguj się",
+    "hint": "Konta Builder są tworzone przez Leadrat . Zapytaj administratora, jeśli go nie masz."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Czekam na Twoją decyzję",
+    "ACCEPTED": "Przyjęty",
+    "REJECTED": "Odrzucony"
+  },
+  "list": {
+    "title": "Polecenia",
+    "allProjects": "Wszystkie projekty",
+    "allStatuses": "Wszystkie statusy",
+    "count_one": "{{count}} skierowanie",
+    "count_few": "{{count}} poleconych",
+    "count_many": "{{count}} poleconych",
+    "count_other": "{{count}} poleconych",
+    "columns": {
+      "referral": "Skierowanie",
+      "customer": "Klient",
+      "project": "Projekt",
+      "sourcePartner": "Partner źródłowy",
+      "status": "Status",
+      "booking": "Rezerwacja",
+      "registered": "Zarejestrowany"
+    },
+    "booked": "Zarezerwowane",
+    "empty": "Nie ma jeszcze żadnych skierowań."
+  },
+  "detail": {
+    "customer": "Klient",
+    "sourcePartner": "Partner źródłowy",
+    "attributionNote": "(atrybucja - nie można zmienić)",
+    "leadStatus": "Stan potencjalnego klienta",
+    "protectedUntil": "Chroniony do",
+    "referral": "Skierowanie",
+    "reason": "Powód: {{reason}}",
+    "booking": "Rezerwacja",
+    "bookedOwner": "Zarezerwowane - jesteś właścicielem operacyjnym",
+    "notBooked": "Nie zarezerwowane",
+    "sharedAfterBooking": "Udostępnione po dokonaniu rezerwacji",
+    "accept": "Zaakceptuj polecenie",
+    "confirmBooking": "Potwierdź rezerwację",
+    "reject": "Odrzuć skierowanie",
+    "rejectReasonLabel": "Powód odrzucenia (pokazany partnerowi) *",
+    "rejectConfirm": "Odrzucić",
+    "confirmBookingPrompt": "Potwierdzić rezerwację? Własność operacyjna przechodzi na Ciebie, a partner staje się uprawniony do prowizji.",
+    "notice": {
+      "booked": "Rezerwacja potwierdzona.",
+      "accepted": "Skierowanie przyjęte.",
+      "rejected": "Skierowanie odrzucone."
+    },
+    "backToReferrals": "Powrót do poleceń"
+  },
+  "history": {
+    "title": "Historia",
+    "actor": {
+      "system": "System",
+      "partner": "Partner kanału",
+      "admin": "Administrator Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Otrzymano rejestrację partnera",
+      "DUPLICATE_CHECK_COMPLETED": "Sprawdzanie duplikatów zakończone — nie znaleziono aktywnego duplikatu",
+      "REGISTRATION_ACCEPTED": "Rejestracja zaakceptowana",
+      "PROTECTION_GRANTED_one": "Przyznano {{count}} -dniową ochronę",
+      "PROTECTION_GRANTED_few": "Przyznano {{count}} -dniową ochronę",
+      "PROTECTION_GRANTED_many": "Przyznano {{count}} -dniową ochronę",
+      "PROTECTION_GRANTED_other": "Przyznano {{count}} -dniową ochronę",
+      "STAGE_UPDATED": "Stan zaktualizowany do {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Zaktualizowano pole {{count}}",
+      "LEAD_DETAILS_UPDATED_few": "Zaktualizowano pola: {{count}}",
+      "LEAD_DETAILS_UPDATED_many": "Zaktualizowano pola: {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "Zaktualizowano pola: {{count}}",
+      "LEAD_ASSIGNED": "Przypisany do: {{name}}",
+      "LEAD_UNASSIGNED": "Nieprzypisany",
+      "REFERRAL_ACCEPTED": "Konstruktor przyjął skierowanie",
+      "REFERRAL_REJECTED": "Konstruktor odrzucił skierowanie. Powód: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Podwójna próba rejestracji dokonana przez {{partner}} została odrzucona",
+      "BOOKING_COMPLETED": "Rezerwacja zakończona",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Własność operacyjna przeniesiona na firmę Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Zachowano atrybucję partnera",
+      "COMMISSION_ELIGIBILITY_CREATED": "Utworzono uprawnienia do prowizji",
+      "HANDOVER_COMPLETED": "Przekazanie zakończone",
+      "ADMIN_PROTECTION_RELEASED": "Administrator wcześniej udostępnił ochronę przed duplikatami. Powód: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Administrator przeniósł rejestrację z {{from}} na {{to}} . Powód: {{reason}}"
+    }
+  }
+}

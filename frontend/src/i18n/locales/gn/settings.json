@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Ñemboheko",
+    "noPermission": "Ndereguerekói permiso emohenda hag̃ua ñemboheko."
+  },
+  "categories": {
+    "lead": "Myakã",
+    "user": "Pojoapy puruhára",
+    "integrations": "Integraciones rehegua"
+  },
+  "leadTabs": {
+    "fields": "Umi kokue",
+    "statuses": "Estatus & Subestatus rehegua",
+    "notifications": "Marandu & Programador-kuéra"
+  },
+  "fields": {
+    "leadIntro": "Emohenda formulario capture lead rehegua: emboguata/embogue umi campo, emarka oñeikotevẽha térã emoĩ nde campo personalizado.",
+    "userIntro": "Emohenda formulario Embojoapy/Emohenda Miembro Equipo rehegua: emboguata/embogue umi tenda, emarka oñeikotevẽha térã emoĩ nde tenda jeporupyre.",
+    "addCustomField": "+ Oñemoĩve Campo Personalizado",
+    "fieldLabel": "Etiqueta de Campo rehegua",
+    "group": "Aty",
+    "groupPlaceholderLead": "p.e. Info Ñeporandu rehegua",
+    "groupPlaceholderUser": "p.e. Detalles Adicionales rehegua",
+    "dataType": "Datokuéra Tipo",
+    "options": "Opciones (oñemboja’óva coma rupive) .",
+    "requiredLead": "Oñeikotevẽ - umi socio nde equipo-pegua omyenyhẽva’erã kóva oregistra haĝua peteĩ plomo",
+    "requiredUser": "Oñeikotevẽ - oñemyenyhẽva’erã oñembojoapývo peteĩ equipo-pegua",
+    "creating": "Omoheñóivo...",
+    "createField": "Ojapo Campo",
+    "columns": {
+      "field": "Ñu",
+      "group": "Aty",
+      "type": "Hesegua",
+      "required": "Apopeteĩrã",
+      "enabled": "Ojehabilita",
+      "kind": "Rory"
+    },
+    "kind": {
+      "custom": "Jepokuaa",
+      "core": "Núcleo (oñemboty) .",
+      "standard": "Techaukarã"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Maranduhai",
+    "TEXTAREA": "Texto ipukúva",
+    "NUMBER": "Papapy",
+    "CURRENCY": "Viru ñemoambue",
+    "DATE": "Fecha",
+    "SELECT": "Ojeguejy haguã",
+    "LIST": "Rysýi"
+  },
+  "picker": {
+    "searchPlaceholder": "Eheka umi campo de plomo...",
+    "summary": "{{shown}} ojehechauka · {{mandatory}} obligatorio",
+    "mandatory": "Katuetéva",
+    "noMatch": "Ndaipóri kokue ojoajúva."
+  },
+  "statuses": {
+    "intro": "Nde estado de lead ha sub-estatus - mba’épa ojerure peteĩteĩva (peteĩ ára & aravo, campos de lead) oĩramo ombopyahúva peteĩ lead hese.",
+    "add": "+ Oñemoĩve Estado",
+    "columns": {
+      "order": "Hekopete",
+      "status": "Tetã",
+      "subStatuses": "Subestatus-kuéra rehegua",
+      "asksFor": "Ojerure",
+      "active": "Kyre'ỹ"
+    },
+    "moveUp": "Eñemongu’e yvate gotyo",
+    "moveDown": "Eñemongu’e oguejy haguã",
+    "defaultBadge": "Por defecto umi lead pyahúpe g̃uarã",
+    "bookingBadge": "Estado de reserva rehegua",
+    "asksForLabel": "Ojerure {{label}} rehegua.",
+    "asksForDateTime": "Ojerure ára & aravo",
+    "none": "Avave",
+    "dateTime": "Ára & aravo",
+    "scheduledOn": "{{names}} rehegua.",
+    "fieldsSummary_one": "{{count}} campo ( {{mandatory}} obligatorio)",
+    "fieldsSummary_other": "{{count}} tenda ( {{mandatory}} obligatorio)",
+    "deleteConfirm": "Ombogue estado \" {{name}} \"? Péva ndaikatúi ojedesatina.",
+    "editTitle": "Emohenda reko - {{name}}",
+    "newTitle": "Estado Pyahu",
+    "name": "Estado réra",
+    "colour": "Sa'y",
+    "active": "Kyre'ỹ",
+    "isDefault": "Estado por defecto umi lead pyahúpe g̃uarã",
+    "isBooking": "Reserva reko (omoĩva Reserva Completa rupive) .",
+    "whenMoved": "Oñemomýivo peteî plomo ko estatus-pe",
+    "askSchedule": "Ejerure peteĩ ára & aravo (programador) .",
+    "scheduleLabelPlaceholder": "Etiqueta, techapyrãme Visita at",
+    "fieldsToShow": "Omotenonde umi campo ojehechauka hag̃ua formulario actualización-pe",
+    "subStatusesTitle": "Subestatus-kuéra rehegua",
+    "subStatusesHint": "Káda subestado ikatu ojerure ára & aravo ha omoĩve ijyvy tee - ojehechaukáva estado ryru yvate gotyo.",
+    "subStatusName": "Sub-estatus réra",
+    "subFields": "Umi tenda ( {{count}} ) .",
+    "subScheduleLabelPlaceholder": "Fecha & hora etiqueta, techapyrãme Ehenói jey ko’ápe",
+    "addSubStatus": "+ Oñemoĩve Sub-Estado",
+    "saveStatus": "Oñongatu Estado",
+    "createStatus": "Ojapo Estado"
+  },
+  "notifications": {
+    "intro": "Eikuaauka tapicha oikeva’erãme peteĩ plomo og̃uahẽvo peteĩ estado - pya’e, térã peteĩ aravo oje’éva ára & aravo oñembosako’íva mboyve/ rire.",
+    "add": "+ Oñemoĩve Marandu",
+    "columns": {
+      "notification": "Marandu",
+      "whenStatusIs": "Oĩ jave Estado",
+      "sends": "Omondo",
+      "to": "G̃uarã-hag̃ua",
+      "via": "Tape",
+      "enabled": "Ojehabilita"
+    },
+    "anyStatus": "Oimeraẽ estado rehegua",
+    "anySubStatus": "Oimeraẽ subestatus rehegua",
+    "inactiveOption": "{{name}} (ndaipóri) .",
+    "emptyRules": "Ndaipóri gueteri marandu - emoĩ peteĩ emomarandu hag̃ua ne equipo-pe peteĩ líder og̃uahẽvo peteĩ estado-pe.",
+    "jobs": {
+      "title": "Programado & Oñemondóva",
+      "firesAt": "Tatakuéra At",
+      "notification": "Marandu",
+      "lead": "Myakã",
+      "status": "Tetã",
+      "details": "Sa'ỹijo peteĩteĩ",
+      "empty": "Mba'eve noñeprogramái ni noñemondói gueteri.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} ) Ñe'ẽpoty ha ñe'ẽpoty ñemohenda."
+    },
+    "jobStatus": {
+      "PENDING": "Oha'arõva",
+      "PROCESSING": "Procesamiento rehegua",
+      "SENT": "Guerahauka",
+      "FAILED": "Ñesẽvai",
+      "SKIPPED": "Ojesalta",
+      "CANCELLED": "Oñembogue"
+    },
+    "deliveryStatus": {
+      "SENT": "guerahauka",
+      "FAILED": "ñesẽvai",
+      "SKIPPED": "ojesalta"
+    },
+    "deliveryChannel": {
+      "IN_APP": "in-app rehegua",
+      "EMAIL": "correo electrónico rehegua",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Pojoapy oñeme’ẽva’ekue",
+      "owner": "Jára",
+      "updatedBy": "Ombopyahu por",
+      "role": "Tembiaporã: {{name}}"
+    },
+    "channels": {
+      "inApp": "In-app-pe",
+      "email": "Correo electrónico rehegua",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Ombogue marandu \" {{name}} \"? Umi mandu'a pendiente oúva chugui oñemboyke.",
+    "testPrompt": "Emondo peteĩ prueba ko marandu rehegua ndejupe (in-app) reiporúvo mba’e ID lead ?",
+    "testSent": "Oñemondóva nde campana-pe: {{title}} {{message}}",
+    "headersInvalid": "Webhook iñakãrapu’ãva ha’eva’erã JSON añetegua , techapyrãme {\"Autorización\": \"Bearer xyz\"}",
+    "editTitle": "Ñemboheko Marandu",
+    "newTitle": "Marandu pyahu",
+    "name": "Téra",
+    "namePlaceholder": "p.e. Ñemandu’a visita sitio rehegua",
+    "whenStatus": "Oĩ jave peteĩ plomo estado ha’e",
+    "subStatus": "Subestatus rehegua",
+    "send": "Omondo (programador) .",
+    "custom": "Jepokuaa...",
+    "modeBefore": "aravo ojeprogramáva mboyve",
+    "modeAfter": "aravo ojeprogramáva rire",
+    "noScheduleWarning": "Ko estado ndojeruréi peteĩ ára & aravo, upévare peteĩ marandu \"aravo programada mboyve/aravo/ rire\" araka’eve ndodisparamo’ãi.",
+    "noScheduleFix": "Emboguejy <strong>Ejerure peteĩ ára & aravo</strong> upévarã Estado & Subestatus guýpe, térã emondo Pya’e.",
+    "sendTo": "Omondo (oimeraẽva ñembojoaju) .",
+    "recipientAssigned": "Pojoapy oñeme’ẽva’ekue (ijára tenondegua) .",
+    "recipientOwner": "Kuatia jára / admin",
+    "recipientUpdatedBy": "Tapicha ombopyahúva estado",
+    "everyoneWithRole": "Mayma tapicha orekóva rol",
+    "specificUsers": "Umi puruhára específico (activo) .",
+    "inactiveNever": "Umi puruhára ndojapóiva araka’eve ndohupytýi marandu, ojeporavóramo jepe.",
+    "deliverVia": "Ome'ê vía",
+    "channelInApp": "In-app (campana) rehegua .",
+    "channelEmail": "Correo electrónico rehegua",
+    "channelWebhook": "Webhook ( WhatsApp / SMS ñeme'ẽha)",
+    "emailHint": "Correo electrónico oho peteĩteĩva ohupytyva’ekue correo electrónico dirección-pe ha oikotevẽ SMTP oñembosako’íva servidor-pe (backend/.env); upe peve umi correo electrónico ñemondo ojeregistra ojesaltaháicha.",
+    "webhookUrl": "Webhook URL ( POST , JSON ) Ñe'ẽpoty ha ñe'ẽpoty ñemohenda.",
+    "headers": "Ñe’ẽryru ( JSON ) .",
+    "content": "Marandu contenido rehegua",
+    "title": "Myakãha",
+    "message": "Marandu",
+    "insertIntoTitle": "Oñemoinge Título-pe",
+    "insertIntoMessage": "Emoinge Marandu’ípe",
+    "anyLeadField": "Oimeraẽva campo de plomo ombaꞌapo avei, techapyrãramo <code1>{{example1}}</code1> térã <code2>{{example2}}</code2> .",
+    "preview": "Tembiecharã (plomo muestra) .",
+    "enabled": "Ojehabilita",
+    "saveRule": "Oñongatu Marandu",
+    "createRule": "Ojapo Marandu",
+    "variables": {
+      "customerName": "Plomo réra",
+      "customerMobile": "Plomo móvil rehegua",
+      "customerEmail": "Omotenonde correo electrónico",
+      "registrationId": "ID plomo rehegua",
+      "status": "Tetã",
+      "subStatus": "Subestatus rehegua",
+      "scheduleAt": "Ára & aravo ojeprogramáva",
+      "assignedTo": "Pojoapy oñeme’ẽva’ekue",
+      "updatedBy": "Ombopyahu por",
+      "recipient": "Ohupytyva’ekue réra",
+      "project": "Apopyrã",
+      "notes": "Nota ipyahuvéva",
+      "partner": "Socio réra"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Upepete oñemohenda jave pe estado",
+      "AT": "Pe óra ojeprogramávape",
+      "A1D": "1 ára aravo oñembosako’íva rire (chequeo de seguimiento) ."
+    },
+    "immediately": "Ag̃aiténtema",
+    "atScheduled": "Pe óra ojeprogramávape",
+    "before": {
+      "MINUTES_one": "{{count}} minuto aravo oñembosako’íva mboyve",
+      "MINUTES_other": "{{count}} aravo’i aravo oñembosako’íva mboyve",
+      "HOURS_one": "{{count}} aravo’i aravo oñembosako’íva mboyve",
+      "HOURS_other": "{{count}} aravo’i aravo oñembosako’íva mboyve",
+      "DAYS_one": "{{count}} ára aravo oñembosako’íva mboyve",
+      "DAYS_other": "{{count}} ára aravo oñembosako’íva mboyve",
+      "WEEKS_one": "{{count}} arapokõindy aravo oñembosako’íva mboyve",
+      "WEEKS_other": "{{count}} arapokõindy aravo oñembosako’íva mboyve",
+      "MONTHS_one": "{{count}} jasy aravo oñembosako’íva mboyve",
+      "MONTHS_other": "{{count}} jasy aravo oñembosako’íva mboyve",
+      "YEARS_one": "{{count}} ary aravo oñembosako’íva mboyve",
+      "YEARS_other": "{{count}} ary aravo oñembosako’íva mboyve"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minuto aravo oñembosako’íva rire",
+      "MINUTES_other": "{{count}} aravo’i aravo oñembosako’íva rire",
+      "HOURS_one": "{{count}} aravo’i aravo oñembosako’íva rire",
+      "HOURS_other": "{{count}} aravo’i aravo oñembosako’íva rire",
+      "DAYS_one": "{{count}} ára aravo oñembosako’íva rire",
+      "DAYS_other": "{{count}} ára aravo oñembosako’íva rire",
+      "WEEKS_one": "{{count}} arapokõindy aravo oñembosako’íva rire",
+      "WEEKS_other": "{{count}} arapokõindy aravo oñembosako’íva rire",
+      "MONTHS_one": "{{count}} jasy aravo oñembosako’íva rire",
+      "MONTHS_other": "{{count}} jasy aravo oñembosako’íva rire",
+      "YEARS_one": "{{count}} ary rire aravo oñembosako’íva",
+      "YEARS_other": "{{count}} ary aravo oñembosako’íva rire"
+    },
+    "units": {
+      "MINUTES_one": "aravo'i",
+      "MINUTES_other": "aravo'i",
+      "HOURS_one": "aravo",
+      "HOURS_other": "aravokuéra",
+      "DAYS_one": "ára",
+      "DAYS_other": "ára",
+      "WEEKS_one": "arapokõindy",
+      "WEEKS_other": "arapokõindy pukukue",
+      "MONTHS_one": "jasy",
+      "MONTHS_other": "jasy pukukue",
+      "YEARS_one": "ary",
+      "YEARS_other": "ary"
+    }
+  }
+}

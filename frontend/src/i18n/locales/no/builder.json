@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Byggherreportal",
+    "referrals": "Henvisninger",
+    "builderLogin": "Byggherre pålogging",
+    "partnerLogin": "Pålogging for kanalpartner"
+  },
+  "login": {
+    "title": "Byggmester logger på",
+    "hint": "Builder-kontoer opprettes av Leadrat . Spør administratoren din hvis du ikke har en."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Venter på din avgjørelse",
+    "ACCEPTED": "Godtatt",
+    "REJECTED": "Avvist"
+  },
+  "list": {
+    "title": "Henvisninger",
+    "allProjects": "Alle prosjekter",
+    "allStatuses": "Alle statuser",
+    "count_one": "{{count}} henvisning",
+    "count_other": "{{count}} henvisninger",
+    "columns": {
+      "referral": "Henvisning",
+      "customer": "Kunde",
+      "project": "Prosjekt",
+      "sourcePartner": "Kildepartner",
+      "status": "Status",
+      "booking": "Bestilling",
+      "registered": "Registrert"
+    },
+    "booked": "Bestilt",
+    "empty": "Ingen henvisninger ennå."
+  },
+  "detail": {
+    "customer": "Kunde",
+    "sourcePartner": "Kildepartner",
+    "attributionNote": "(attribusjon - kan ikke endres)",
+    "leadStatus": "Lead Status",
+    "protectedUntil": "Beskyttet til",
+    "referral": "Henvisning",
+    "reason": "Årsak: {{reason}}",
+    "booking": "Bestilling",
+    "bookedOwner": "Booket - du er operativ eier",
+    "notBooked": "Ikke booket",
+    "sharedAfterBooking": "Deles etter bestilling",
+    "accept": "Godta henvisning",
+    "confirmBooking": "Bekreft bestilling",
+    "reject": "Avvis henvisning",
+    "rejectReasonLabel": "Årsak til avvisning (vist til partneren) *",
+    "rejectConfirm": "Avvis",
+    "confirmBookingPrompt": "Bekrefte bestillingen? Operasjonelt eierskap flyttes til deg og partneren blir berettiget til provisjon.",
+    "notice": {
+      "booked": "Bestilling bekreftet.",
+      "accepted": "Henvisning godtatt.",
+      "rejected": "Henvisning avvist."
+    },
+    "backToReferrals": "Tilbake til henvisninger"
+  },
+  "history": {
+    "title": "Historie",
+    "actor": {
+      "system": "System",
+      "partner": "Kanalpartner",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Partnerregistrering mottatt",
+      "DUPLICATE_CHECK_COMPLETED": "Duplikatsjekk fullført - ingen aktiv duplikat funnet",
+      "REGISTRATION_ACCEPTED": "Registrering akseptert",
+      "PROTECTION_GRANTED_one": "{{count}} dagers beskyttelse gitt",
+      "PROTECTION_GRANTED_other": "{{count}} dagers beskyttelse gitt",
+      "STAGE_UPDATED": "Status oppdatert til {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Oppdatert {{count}} felt",
+      "LEAD_DETAILS_UPDATED_other": "Oppdaterte {{count}} felt",
+      "LEAD_ASSIGNED": "Tildelt til {{name}}",
+      "LEAD_UNASSIGNED": "Ikke tilordnet",
+      "REFERRAL_ACCEPTED": "Byggmester godtok henvisningen",
+      "REFERRAL_REJECTED": "Byggmester avviste henvisningen. Årsak: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Duplikatregistreringsforsøk av {{partner}} ble avvist",
+      "BOOKING_COMPLETED": "Bestilling fullført",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Driftsmessig eierskap overført til Byggmester",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partnerattribusjon bevart",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kommisjonsberettigelse opprettet",
+      "HANDOVER_COMPLETED": "Overlevering fullført",
+      "ADMIN_PROTECTION_RELEASED": "Admin ga ut duplikatbeskyttelse tidlig. Årsak: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Administrator tilordnet registreringen fra {{from}} til {{to}} . Årsak: {{reason}}"
+    }
+  }
+}

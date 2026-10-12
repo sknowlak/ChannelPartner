@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal Builder",
+    "referrals": "Referans",
+    "builderLogin": "Builder Login",
+    "partnerLogin": "Chèn patnè Login"
+  },
+  "login": {
+    "title": "Builder konekte",
+    "hint": "Kont Builder yo kreye pa Leadrat . Mande administratè w la si w pa genyen youn."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Ap tann desizyon ou",
+    "ACCEPTED": "Aksepte",
+    "REJECTED": "Rejte"
+  },
+  "list": {
+    "title": "Referans",
+    "allProjects": "Tout pwojè yo",
+    "allStatuses": "Tout estati",
+    "count_one": "{{count}} referans",
+    "count_other": "{{count}} referans",
+    "columns": {
+      "referral": "Referans",
+      "customer": "Kliyan",
+      "project": "Pwojè",
+      "sourcePartner": "Sous patnè",
+      "status": "Estati",
+      "booking": "Anrjistreman",
+      "registered": "Anrejistre"
+    },
+    "booked": "Anrezève",
+    "empty": "Pa gen okenn referans ankò."
+  },
+  "detail": {
+    "customer": "Kliyan",
+    "sourcePartner": "Sous patnè",
+    "attributionNote": "(atribisyon - pa ka chanje)",
+    "leadStatus": "Estati Plon",
+    "protectedUntil": "Pwoteje Jiskaske",
+    "referral": "Referans",
+    "reason": "Rezon ki fè: {{reason}}",
+    "booking": "Anrjistreman",
+    "bookedOwner": "Lize - ou se pwopriyetè a operasyonèl",
+    "notBooked": "Pa rezève",
+    "sharedAfterBooking": "Pataje apre anrjistreman",
+    "accept": "Aksepte Referans",
+    "confirmBooking": "Konfime Anrjistreman",
+    "reject": "Rejte Referans",
+    "rejectReasonLabel": "Rezon pou rejte (montre patnè a) *",
+    "rejectConfirm": "Rejte",
+    "confirmBookingPrompt": "Konfime anrjistreman an? Pwopriyete operasyon an vin jwenn ou epi patnè a vin kalifye pou komisyon an.",
+    "notice": {
+      "booked": "Anrjistreman konfime.",
+      "accepted": "Rekòmandasyon aksepte.",
+      "rejected": "Rekòmandasyon rejte."
+    },
+    "backToReferrals": "Retounen nan Referans"
+  },
+  "history": {
+    "title": "Istwa",
+    "actor": {
+      "system": "Sistèm",
+      "partner": "Patnè chanèl la",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Enskripsyon patnè yo te resevwa",
+      "DUPLICATE_CHECK_COMPLETED": "Tèks kopi ranpli - pa jwenn okenn kopi aktif",
+      "REGISTRATION_ACCEPTED": "Enskripsyon aksepte",
+      "PROTECTION_GRANTED_one": "{{count}} jou pwoteksyon akòde",
+      "PROTECTION_GRANTED_other": "{{count}} jou pwoteksyon akòde",
+      "STAGE_UPDATED": "Estati a mete ajou a {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Mete ajou {{count}} jaden",
+      "LEAD_DETAILS_UPDATED_other": "Mete ajou {{count}} jaden yo",
+      "LEAD_ASSIGNED": "Bay {{name}}",
+      "LEAD_UNASSIGNED": "Unassigned",
+      "REFERRAL_ACCEPTED": "Builder aksepte rekòmandasyon an",
+      "REFERRAL_REJECTED": "Builder rejte rekòmandasyon an. Rezon ki fè: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} te rejte tantativ enskripsyon kopi",
+      "BOOKING_COMPLETED": "Anrjistreman fini",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Pwopriyetè operasyonèl transfere bay Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribisyon patnè konsève",
+      "COMMISSION_ELIGIBILITY_CREATED": "Elijiblite komisyon kreye",
+      "HANDOVER_COMPLETED": "Transmisyon fini",
+      "ADMIN_PROTECTION_RELEASED": "Admin lage pwoteksyon kopi bonè. Rezon ki fè: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin reassigne enskripsyon soti nan {{from}} a {{to}} . Rezon ki fè: {{reason}}"
+    }
+  }
+}

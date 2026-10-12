@@ -1,0 +1,93 @@
+{
+  "shell": {
+    "portal": "Portal del Constructor",
+    "referrals": "Referències",
+    "builderLogin": "Inici de sessió del constructor",
+    "partnerLogin": "Inici de sessió de soci del canal"
+  },
+  "login": {
+    "title": "Inicieu la sessió del constructor",
+    "hint": "Els comptes del constructor els crea Leadrat . Pregunteu al vostre administrador si no en teniu cap."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Esperant la teva decisió",
+    "ACCEPTED": "Acceptat",
+    "REJECTED": "Rebutjat"
+  },
+  "list": {
+    "title": "Referències",
+    "allProjects": "Tots els projectes",
+    "allStatuses": "Tots els estats",
+    "count_one": "{{count}} referència",
+    "count_many": "{{count}} referències",
+    "count_other": "{{count}} referències",
+    "columns": {
+      "referral": "Referència",
+      "customer": "Client",
+      "project": "Projecte",
+      "sourcePartner": "Soci d'origen",
+      "status": "Estat",
+      "booking": "Reserva",
+      "registered": "Registrat"
+    },
+    "booked": "Reservat",
+    "empty": "Encara no hi ha referències."
+  },
+  "detail": {
+    "customer": "Client",
+    "sourcePartner": "Soci d'origen",
+    "attributionNote": "(atribució - no es pot canviar)",
+    "leadStatus": "Estat de plom",
+    "protectedUntil": "Protegit Fins",
+    "referral": "Referència",
+    "reason": "Motiu: {{reason}}",
+    "booking": "Reserva",
+    "bookedOwner": "Reservat: ets el propietari operatiu",
+    "notBooked": "No reservat",
+    "sharedAfterBooking": "Compartit després de la reserva",
+    "accept": "Accepta la referència",
+    "confirmBooking": "Confirmeu la reserva",
+    "reject": "Rebutja la referència",
+    "rejectReasonLabel": "Motiu del rebuig (mostrat a la parella) *",
+    "rejectConfirm": "Rebutja",
+    "confirmBookingPrompt": "Confirmeu la reserva? La propietat operativa passa a vostè i el soci esdevé elegible per a la comissió.",
+    "notice": {
+      "booked": "Reserva confirmada.",
+      "accepted": "Referència acceptada.",
+      "rejected": "Referència rebutjada."
+    },
+    "backToReferrals": "Tornar a Referències"
+  },
+  "history": {
+    "title": "Història",
+    "actor": {
+      "system": "Sistema",
+      "partner": "Soci del canal",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "S'ha rebut el registre de soci",
+      "DUPLICATE_CHECK_COMPLETED": "Comprovació de duplicats completada: no s'ha trobat cap duplicat actiu",
+      "REGISTRATION_ACCEPTED": "Inscripció acceptada",
+      "PROTECTION_GRANTED_one": "Protecció de {{count}} dies concedida",
+      "PROTECTION_GRANTED_many": "Protecció de {{count}} dies concedida",
+      "PROTECTION_GRANTED_other": "Protecció de {{count}} dies concedida",
+      "STAGE_UPDATED": "Estat actualitzat a {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Camp {{count}} actualitzat",
+      "LEAD_DETAILS_UPDATED_many": "S'han actualitzat {{count}} camps",
+      "LEAD_DETAILS_UPDATED_other": "S'han actualitzat {{count}} camps",
+      "LEAD_ASSIGNED": "Assignat a {{name}}",
+      "LEAD_UNASSIGNED": "Sense assignar",
+      "REFERRAL_ACCEPTED": "El constructor va acceptar la referència",
+      "REFERRAL_REJECTED": "El constructor va rebutjar la referència. Motiu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "S'ha rebutjat l'intent de registre duplicat de {{partner}}",
+      "BOOKING_COMPLETED": "Reserva completada",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Propietat operativa transferida a Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "S'ha conservat l'atribució del soci",
+      "COMMISSION_ELIGIBILITY_CREATED": "S'ha creat l'elegibilitat de la comissió",
+      "HANDOVER_COMPLETED": "Lliurament finalitzat",
+      "ADMIN_PROTECTION_RELEASED": "L'administrador va llançar la protecció duplicada abans. Motiu: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "L'administrador ha reassignat el registre de {{from}} a {{to}} . Motiu: {{reason}}"
+    }
+  }
+}

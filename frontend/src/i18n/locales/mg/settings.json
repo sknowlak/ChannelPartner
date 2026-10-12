@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Fikirana",
+    "noPermission": "Tsy manana alalana hitantana kira ianao."
+  },
+  "categories": {
+    "lead": "HAMPIDIRANA",
+    "user": "mpampiasa",
+    "integrations": "Integrations"
+  },
+  "leadTabs": {
+    "fields": "eny an-tsaha",
+    "statuses": "Statuses & Sub-status",
+    "notifications": "Notifications & Schedulers"
+  },
+  "fields": {
+    "leadIntro": "Ampifanaraho ny endrika fisamborana fitarihana: avelao / esory ny saha, mariho fa ilaina izany, na ampio ny saha mahazatra anao.",
+    "userIntro": "Ampifanaraho ny endrika Add/Edit Team Member: enable/disable fields, mariho fa ilaina izany, na ampio ny sahanao manokana.",
+    "addCustomField": "+ Ampio saha manokana",
+    "fieldLabel": "Field Label",
+    "group": "vondrona",
+    "groupPlaceholderLead": "oh.Inquiry Info",
+    "groupPlaceholderUser": "oh Fanazavana fanampiny",
+    "dataType": "Karazana angona",
+    "options": "Safidy (sarahina faingo)",
+    "requiredLead": "Ilaina - ny mpiara-miasa amin'ny ekipanao dia tsy maintsy mameno izany mba hisoratra anarana fitarihana",
+    "requiredUser": "Ilaina - tsy maintsy fenoina rehefa manampy mpikambana ao amin'ny ekipa",
+    "creating": "Mamorona...",
+    "createField": "Mamorona saha",
+    "columns": {
+      "field": "SaHa",
+      "group": "vondrona",
+      "type": "Type",
+      "required": "ilaina",
+      "enabled": "afaka",
+      "kind": "AHOANA"
+    },
+    "kind": {
+      "custom": "fanao",
+      "core": "Core (nihidy)",
+      "standard": "Malagasy"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Text",
+    "TEXTAREA": "Lahatsoratra lava",
+    "NUMBER": "isa",
+    "CURRENCY": "Sandam-bola",
+    "DATE": "Daty",
+    "SELECT": "Velarina",
+    "LIST": "Lisitra"
+  },
+  "picker": {
+    "searchPlaceholder": "Hikaroka saha fitarihana...",
+    "summary": "{{shown}} aseho · {{mandatory}} tsy maintsy atao",
+    "mandatory": "maintsy",
+    "noMatch": "Tsy misy saha mifanentana."
+  },
+  "statuses": {
+    "intro": "Ny satan'ny fitarihana sy ny zana-tsarimihetsika - izay angatahan'ny tsirairay (daty sy ora, sahan'ny fitarihana) rehefa misy olona manavao ny fitarihana azy.",
+    "add": "+ Ampio Status",
+    "columns": {
+      "order": "mba",
+      "status": "sata",
+      "subStatuses": "Sub-status",
+      "asksFor": "Mangataka",
+      "active": "Active"
+    },
+    "moveUp": "Miakatra",
+    "moveDown": "Mandrosoa midina",
+    "defaultBadge": "Default ho an'ny fitarihana vaovao",
+    "bookingBadge": "Sata famandrihana",
+    "asksForLabel": "Mangataka {{label}}",
+    "asksForDateTime": "Mangataka daty sy ora",
+    "none": "tsy misy",
+    "dateTime": "Daty & ora",
+    "scheduledOn": "amin'ny {{names}}",
+    "fieldsSummary_one": "saha {{count}} ( {{mandatory}} tsy maintsy)",
+    "fieldsSummary_other": "{{count}} saha ( {{mandatory}} tsy maintsy)",
+    "deleteConfirm": "Fafao ny sata \" {{name}} \"? Tsy azo averina izany.",
+    "editTitle": "Ahitsio Sata - {{name}}",
+    "newTitle": "Status vaovao",
+    "name": "Anaran'ny sata",
+    "colour": "Color",
+    "active": "Active",
+    "isDefault": "Sata default ho an'ny fitarihana vaovao",
+    "isBooking": "Sata famandrihana (apetraky ny Famandrihana feno)",
+    "whenMoved": "Rehefa afindra amin'io sata io ny fitarihana iray",
+    "askSchedule": "Mangataha daty sy ora (mpandrindra)",
+    "scheduleLabelPlaceholder": "Label, ohatra, Visit at",
+    "fieldsToShow": "Sahan'ny fitarihana haseho amin'ny endrika fanavaozana",
+    "subStatusesTitle": "Sub-status",
+    "subStatusesHint": "Ny zana-statistika tsirairay dia afaka mangataka ny daty sy ny orany ary manampy ny sahany manokana - aseho eo an-tampon'ny sahan'ny sata etsy ambony.",
+    "subStatusName": "Anarana substatus",
+    "subFields": "saha ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Etikety daty sy ora, oh",
+    "addSubStatus": "+ Ampio Sub-status",
+    "saveStatus": "Save Status",
+    "createStatus": "Mamorona Status"
+  },
+  "notifications": {
+    "intro": "Ampahafantaro ny olona mety rehefa tonga any amin'ny toerana iray ny mpitarika iray - avy hatrany, na fotoana voatondro mialoha/aorian'ny daty sy ora voatondro ao.",
+    "add": "+ Ampio fampahafantarana",
+    "columns": {
+      "notification": "fampahafantarana",
+      "whenStatusIs": "Rehefa misy ny Status",
+      "sends": "DIA MANDEFA",
+      "to": "ny",
+      "via": "tamin'ny alalan'ny",
+      "enabled": "afaka"
+    },
+    "anyStatus": "Na inona na inona sata",
+    "anySubStatus": "Any sub-status",
+    "inactiveOption": "{{name}} (tsy mavitrika)",
+    "emptyRules": "Tsy mbola misy fampandrenesana - ampio iray hanairana ny ekipanao rehefa tonga amin'ny sata ny mpitarika iray.",
+    "jobs": {
+      "title": "Voalahatra & nalefa",
+      "firesAt": "Fires At",
+      "notification": "fampahafantarana",
+      "lead": "HAMPIDIRANA",
+      "status": "sata",
+      "details": "tsipiriany",
+      "empty": "Tsy mbola nisy voalahatra na nalefa.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "mbola miandry",
+      "PROCESSING": "fanodinana",
+      "SENT": "Nalefa",
+      "FAILED": "tsy nahomby",
+      "SKIPPED": "dia nifalihavanja",
+      "CANCELLED": "nofoanana ny"
+    },
+    "deliveryStatus": {
+      "SENT": "nalefa",
+      "FAILED": "tsy nahomby",
+      "SKIPPED": "dia nifalihavanja"
+    },
+    "deliveryChannel": {
+      "IN_APP": "in-app",
+      "EMAIL": "mailaka",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Mpampiasa voatendry",
+      "owner": "TOMPON'NY",
+      "updatedBy": "Nohavaozin'i",
+      "role": "Andraikitra: {{name}}"
+    },
+    "channels": {
+      "inApp": "In-app",
+      "email": "mailaka",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Fafao ny fampahafantarana \" {{name}} \"? Foanana ny fampahatsiahivana miandry azy.",
+    "testPrompt": "Alefaso amin'ny tenanao (in-app) ny fitsapana an'ity fampahafantarana ity amin'ny fampiasana ID fitarihana inona?",
+    "testSent": "Nalefa tamin'ny lakolosy: {{title}} {{message}}",
+    "headersInvalid": "Ny lohatenin'ny Webhook dia tsy maintsy JSON manankery , ohatra {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Ahitsio Fampandrenesana",
+    "newTitle": "Fampandrenesana vaovao",
+    "name": "Anarana",
+    "namePlaceholder": "oh. Fampahatsiahivana fitsidihana tranokala",
+    "whenStatus": "Rehefa ny satan'ny mpitarika dia",
+    "subStatus": "Sub-status",
+    "send": "Alefaso (mpandrindra)",
+    "custom": "Custom...",
+    "modeBefore": "alohan'ny fotoana voatondro",
+    "modeAfter": "aorian'ny fotoana voatondro",
+    "noScheduleWarning": "Ity sata ity dia tsy mangataka daty sy ora, ka tsy hirehitra mihitsy ny fampandrenesana \"alohan'ny/amin'ny/aorian'ny fotoana voatondro\".",
+    "noScheduleFix": "Alefaso <strong>Mangataka daty sy ora</strong> ho azy eo ambanin'ny Statuses & Sub-Status, na alefaso avy hatrany.",
+    "sendTo": "Alefaso any (izay mitambatra)",
+    "recipientAssigned": "Mpampiasa voatendry (tompon'andraikitra)",
+    "recipientOwner": "Tompon'ny kaonty / admin",
+    "recipientUpdatedBy": "Olona nanavao ny sata",
+    "everyoneWithRole": "Samy manana anjara",
+    "specificUsers": "Mpampiasa manokana (mavitrika)",
+    "inactiveNever": "Ireo mpampiasa tsy mavitrika dia tsy mahazo fampandrenesana mihitsy, na dia voafidy aza.",
+    "deliverVia": "Manaterana amin'ny alalan'ny",
+    "channelInApp": "In-app ( lakolosy)",
+    "channelEmail": "mailaka",
+    "channelWebhook": "Webhook (mpanome WhatsApp / SMS )",
+    "emailHint": "Ny mailaka dia mankany amin'ny adiresin'ny mailaka tsirairay ary mila SMTP napetraka ao amin'ny server (backend/.env); mandra-pahatongan'izany, ny fandefasana mailaka dia voarakitra ho toy ny nitsambikina.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Lohateny ( JSON )",
+    "content": "Votoatin'ny fampahafantarana",
+    "title": "Lohateny",
+    "message": "hAFATRA",
+    "insertIntoTitle": "Hiverina any amin'ny Title",
+    "insertIntoMessage": "Hiverina any amin'ny Message",
+    "anyLeadField": "Ny saha fitarihana rehetra dia miasa koa, ohatra <code1>{{example1}}</code1> na <code2>{{example2}}</code2> .",
+    "preview": "Preview (fakan-tahaka)",
+    "enabled": "afaka",
+    "saveRule": "Save Notification",
+    "createRule": "Mamorona fampahafantarana",
+    "variables": {
+      "customerName": "Anarana fitarihana",
+      "customerMobile": "Lead mobile",
+      "customerEmail": "Taratasy mailaka",
+      "registrationId": "Lead ID",
+      "status": "sata",
+      "subStatus": "Sub-status",
+      "scheduleAt": "Daty sy ora voalahatra",
+      "assignedTo": "Mpampiasa voatendry",
+      "updatedBy": "Nohavaozin'i",
+      "recipient": "Anaran'ny mpandray",
+      "project": "TETIKASA",
+      "notes": "Naoty farany",
+      "partner": "Anaran'ny mpiara-miasa"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Avy hatrany rehefa napetraka ny sata",
+      "AT": "Amin'ny fotoana voatondro",
+      "A1D": "1 andro aorian'ny fotoana voatondro (fanaraha-maso)"
+    },
+    "immediately": "AVY HATRANY",
+    "atScheduled": "Amin'ny fotoana voatondro",
+    "before": {
+      "MINUTES_one": "{{count}} minitra alohan'ny fotoana voatondro",
+      "MINUTES_other": "{{count}} minitra alohan'ny fotoana voatondro",
+      "HOURS_one": "{{count}} ora alohan'ny fotoana voatondro",
+      "HOURS_other": "{{count}} ora alohan'ny fotoana voatondro",
+      "DAYS_one": "{{count}} andro alohan'ny fotoana voatondro",
+      "DAYS_other": "{{count}} andro alohan'ny fotoana voatondro",
+      "WEEKS_one": "{{count}} herinandro alohan'ny fotoana voatondro",
+      "WEEKS_other": "{{count}} herinandro alohan'ny fotoana voatondro",
+      "MONTHS_one": "{{count}} volana alohan'ny fotoana voatondro",
+      "MONTHS_other": "{{count}} volana alohan'ny fotoana voatondro",
+      "YEARS_one": "{{count}} taona alohan'ny fotoana voatondro",
+      "YEARS_other": "{{count}} taona talohan'ny fotoana voatondro"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minitra aorian'ny fotoana voatondro",
+      "MINUTES_other": "{{count}} minitra aorian'ny fotoana voatondro",
+      "HOURS_one": "{{count}} ora aorian'ny ora voalahatra",
+      "HOURS_other": "{{count}} ora aorian'ny ora voalahatra",
+      "DAYS_one": "{{count}} andro aorian'ny fotoana voatondro",
+      "DAYS_other": "{{count}} andro aorian'ny fotoana voatondro",
+      "WEEKS_one": "{{count}} herinandro aorian'ny fotoana voatondro",
+      "WEEKS_other": "{{count}} herinandro aorian'ny fotoana voatondro",
+      "MONTHS_one": "{{count}} volana aorian'ny fotoana voatondro",
+      "MONTHS_other": "{{count}} volana aorian'ny fotoana voatondro",
+      "YEARS_one": "{{count}} taona aorian'ny fotoana voatondro",
+      "YEARS_other": "{{count}} taona taorian'ny fotoana voatondro"
+    },
+    "units": {
+      "MINUTES_one": "minitra",
+      "MINUTES_other": "minitra",
+      "HOURS_one": "ora",
+      "HOURS_other": "ORA",
+      "DAYS_one": "andro",
+      "DAYS_other": "andro",
+      "WEEKS_one": "herinandro",
+      "WEEKS_other": "HERINANDRON'NY",
+      "MONTHS_one": "VOLANA",
+      "MONTHS_other": "VOLANA",
+      "YEARS_one": "TAOM-",
+      "YEARS_other": "taona"
+    }
+  }
+}

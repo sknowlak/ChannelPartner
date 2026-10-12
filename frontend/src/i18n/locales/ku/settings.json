@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Settings",
+    "noPermission": "Destûra we ya birêvebirina mîhengan tune."
+  },
+  "categories": {
+    "lead": "Birêvebirin",
+    "user": "Bikaranîvan",
+    "integrations": "Integrations"
+  },
+  "leadTabs": {
+    "fields": "Fields",
+    "statuses": "Rewş & Bin-Rewşa",
+    "notifications": "Notifications & Schedulers"
+  },
+  "fields": {
+    "leadIntro": "Forma girtina pêşengê mîheng bikin: Zeviyan çalak bikin/neçalak bikin, wan pêwîst nîşan bikin, an qadên xweya xwerû lê zêde bikin.",
+    "userIntro": "Forma Endam Tîmê lê zêde bike/biguherîne mîheng bike: Zeviyan çalak bike/neçalak bike, wan pêwîst nîşan bide, an qadên xwe yên xwerû lê zêde bike.",
+    "addCustomField": "+ Qada Xweser zêde bikin",
+    "fieldLabel": "Field Label",
+    "group": "Kom",
+    "groupPlaceholderLead": "mînak Agahiyên Lêpirsînê",
+    "groupPlaceholderUser": "mînak Detayên Zêdeyî",
+    "dataType": "Type Data",
+    "options": "Vebijêrk (koma veqetandî)",
+    "requiredLead": "Pêdivî ye - hevkarên li ser tîmê we divê vê yekê dagirin da ku pêşengek tomar bikin",
+    "requiredUser": "Pêdivî ye - dema ku endamek tîmek zêde bike divê were dagirtin",
+    "creating": "Çêkirin...",
+    "createField": "Zeviyê çêbikin",
+    "columns": {
+      "field": "Erd",
+      "group": "Kom",
+      "type": "Awa",
+      "required": "Required",
+      "enabled": "Enabled",
+      "kind": "Cins"
+    },
+    "kind": {
+      "custom": "Hûnbunî",
+      "core": "Core (girtî)",
+      "standard": "Rêzan"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Nivîstok",
+    "TEXTAREA": "Nivîsa dirêj",
+    "NUMBER": "Jimare",
+    "CURRENCY": "Diravcins",
+    "DATE": "Rojek",
+    "SELECT": "Dropdown",
+    "LIST": "Rêzkirin"
+  },
+  "picker": {
+    "searchPlaceholder": "Li qadên sereke bigerin...",
+    "summary": "{{shown}} nîşan dan · {{mandatory}} mecbûrî",
+    "mandatory": "Bicî",
+    "noMatch": "Zeviyên hev nagirin."
+  },
+  "statuses": {
+    "intro": "Rewşên pêşeng û jêr-statûyên we - gava ku kesek rêbernameyek jê re nûve dike, her yek jê çi dipirse (tarîx û dem, qadên rêberiyê).",
+    "add": "+ Rewşa zêde bikin",
+    "columns": {
+      "order": "Emir",
+      "status": "Cî",
+      "subStatuses": "Sub-Statuses",
+      "asksFor": "Dipirse",
+      "active": "Jîr"
+    },
+    "moveUp": "Derketina jor",
+    "moveDown": "Biçe jêr",
+    "defaultBadge": "Pêşniyaz ji bo rêberên nû",
+    "bookingBadge": "Rewşa veqetandinê",
+    "asksForLabel": "{{label}} dipirse",
+    "asksForDateTime": "Dîrok û dem dipirse",
+    "none": "Netû",
+    "dateTime": "Dîrok & dem",
+    "scheduledOn": "li ser {{names}}",
+    "fieldsSummary_one": "Qada {{count}} ( {{mandatory}} mecbûrî)",
+    "fieldsSummary_other": "{{count}} zevî ( {{mandatory}} mecbûrî)",
+    "deleteConfirm": "Rewşa \" {{name}} \" jê bibe? Ev nayê betalkirin.",
+    "editTitle": "Rewşa Biguherîne - {{name}}",
+    "newTitle": "Rewşa Nû",
+    "name": "Navê Rewşê",
+    "colour": "Reng",
+    "active": "Jîr",
+    "isDefault": "Ji bo pêşengên nû statûya xwerû",
+    "isBooking": "Rewşa veqetandinê (ji hêla Veqetandinê ve hatî danîn)",
+    "whenMoved": "Dema ku rêberek berbi vê statûyê ve diçe",
+    "askSchedule": "Dîrok û dem bipirsin (bernameger)",
+    "scheduleLabelPlaceholder": "Label, p.ex. Serdana li",
+    "fieldsToShow": "Zeviyên rêber bikin ku li ser forma nûvekirinê nîşan bidin",
+    "subStatusesTitle": "Sub-Statuses",
+    "subStatusesHint": "Her jêr-statû dikare dîrok û demjimêra xwe bipirse û qadên xwe lê zêde bike - li jorê qadên statûyê yên li jor têne xuyang kirin.",
+    "subStatusName": "Navê bin-rewşa",
+    "subFields": "Qadan ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Labelê tarîx û wext, p.ex",
+    "addSubStatus": "+ Bin-Rewşa zêde bikin",
+    "saveStatus": "Save Status",
+    "createStatus": "Status biafirînin"
+  },
+  "notifications": {
+    "intro": "Dema ku rêberek digihîje statûyekê - yekser, an demek diyar berî/piştî tarîx û demjimêra ku li ser hatî plansaz kirin, mirovên rast agahdar bikin.",
+    "add": "+ Agahdariyê zêde bikin",
+    "columns": {
+      "notification": "Agahdayin",
+      "whenStatusIs": "Dema ku Status e",
+      "sends": "Dişîne",
+      "to": "Ber",
+      "via": "Via",
+      "enabled": "Enabled"
+    },
+    "anyStatus": "Her statuyek",
+    "anySubStatus": "Her sub-statû",
+    "inactiveOption": "{{name}} (neçalak)",
+    "emptyRules": "Hîn agahdarî tune - yek lê zêde bikin da ku gava rêberek bigihîje statûyek tîmê xwe hişyar bike.",
+    "jobs": {
+      "title": "Bername û şandin",
+      "firesAt": "Fires At",
+      "notification": "Agahdayin",
+      "lead": "Birêvebirin",
+      "status": "Cî",
+      "details": "Details",
+      "empty": "Tiştek nehatiye şandin an nehatiye şandin.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Nexelas",
+      "PROCESSING": "Xebitandinî",
+      "SENT": "şandin",
+      "FAILED": "Bi ser neket",
+      "SKIPPED": "Derbaz kirin",
+      "CANCELLED": "Betal kirin"
+    },
+    "deliveryStatus": {
+      "SENT": "şandin",
+      "FAILED": "têkçû",
+      "SKIPPED": "bazdan"
+    },
+    "deliveryChannel": {
+      "IN_APP": "nav-app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Bikarhêner destnîşankirî",
+      "owner": "Xwedî",
+      "updatedBy": "Updated by",
+      "role": "Rol: {{name}}"
+    },
+    "channels": {
+      "inApp": "In-app",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Agahdariya \" {{name}} \" jê bibe? Bîranînên li bendê ji wê têne betal kirin.",
+    "testPrompt": "Testek vê agahdarkirinê ji xwe re (di nav-serîlêdanê de) bi karanîna kîjan ID pêşeng bişîne?",
+    "testSent": "Ji zengila te re hat şandin: {{title}} {{message}}",
+    "headersInvalid": "Sernivîsên Webhook divê JSON derbasdar bin, mînakî {\"Desthilatî\": \"Xyz hilgirê\"}",
+    "editTitle": "Agahdariyê biguherîne",
+    "newTitle": "Agahdariya Nû",
+    "name": "Nav",
+    "namePlaceholder": "mînak Bîranîna serdana malperê",
+    "whenStatus": "Dema ku statûya sereke ye",
+    "subStatus": "Sub-status",
+    "send": "Bişîne (bernameger)",
+    "custom": "Hûnbunî...",
+    "modeBefore": "berî dema diyarkirî",
+    "modeAfter": "piştî dema diyarkirî",
+    "noScheduleWarning": "Ev statû dîrok û dem napirse, ji ber vê yekê agahdariyek \"berî/li/piştî wextê diyarkirî\" qet naşewite.",
+    "noScheduleFix": "Ji bo wê di bin Rewş û BineRewş de <strong>rojek û dem bipirsin</strong> çalak bikin, an Tavilê bişînin.",
+    "sendTo": "Bişîne (her kombînasyona)",
+    "recipientAssigned": "Bikarhênerê tayînkirî (xwediyê sereke)",
+    "recipientOwner": "Xwediyê hesabê / rêveberê",
+    "recipientUpdatedBy": "Kesê ku statûyê nû kiriye",
+    "everyoneWithRole": "Her kes bi rol",
+    "specificUsers": "Bikarhênerên taybetî (çalak)",
+    "inactiveNever": "Bikarhênerên neçalak tu carî agahiyê wernagirin, tevî ku hatine hilbijartin.",
+    "deliverVia": "Radest bi rêya",
+    "channelInApp": "Di sepanê de (zengil)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook (pêşkêşkerê WhatsApp / SMS )",
+    "emailHint": "E-name diçe navnîşana e-nameya her wergir û pêdivî ye ku SMTP li ser serverê were saz kirin (paşgir/.env); heta wê demê şandina e-nameyê wekî paşveçûn têne tomar kirin.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Sernav ( JSON )",
+    "content": "Naveroka ragihandinê",
+    "title": "Nav",
+    "message": "Agah",
+    "insertIntoTitle": "Têxe nav Sernav",
+    "insertIntoMessage": "Têxe nav Mesajê",
+    "anyLeadField": "Her qadeke sereke jî dixebite, mînakî <code1>{{example1}}</code1> an <code2>{{example2}}</code2> .",
+    "preview": "Pêşdîtin (rêbera nimûne)",
+    "enabled": "Enabled",
+    "saveRule": "Save Notification",
+    "createRule": "Agahdariyê çêbikin",
+    "variables": {
+      "customerName": "Navê rêber",
+      "customerMobile": "Lead mobile",
+      "customerEmail": "E-nameya rêber",
+      "registrationId": "ID rêber",
+      "status": "Cî",
+      "subStatus": "Sub-status",
+      "scheduleAt": "Dîrok û demjimêra plankirî",
+      "assignedTo": "Bikarhêner destnîşankirî",
+      "updatedBy": "Updated by",
+      "recipient": "Navê wergir",
+      "project": "Rêvename",
+      "notes": "Nota herî dawî",
+      "partner": "Navê hevkar"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Di cih de gava ku statûya danîn",
+      "AT": "Di dema diyarkirî de",
+      "A1D": "1 roj piştî dema diyarkirî (kontrola şopandinê)"
+    },
+    "immediately": "Derhal",
+    "atScheduled": "Di dema diyarkirî de",
+    "before": {
+      "MINUTES_one": "{{count}} deqîqe berî dema diyarkirî",
+      "MINUTES_other": "{{count}} deqe berî dema diyarkirî",
+      "HOURS_one": "{{count}} saet beriya dema diyarkirî",
+      "HOURS_other": "{{count}} saet beriya dema diyarkirî",
+      "DAYS_one": "{{count}} roj berî dema diyarkirî",
+      "DAYS_other": "{{count}} roj beriya dema diyarkirî",
+      "WEEKS_one": "{{count}} hefte berî dema diyarkirî",
+      "WEEKS_other": "{{count}} hefte berî dema diyarkirî",
+      "MONTHS_one": "{{count}} meh beriya dema diyarkirî",
+      "MONTHS_other": "{{count}} meh beriya dema diyarkirî",
+      "YEARS_one": "{{count}} sal berî dema diyarkirî",
+      "YEARS_other": "{{count}} sal berî dema diyarkirî"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} deqîqe piştî dema diyarkirî",
+      "MINUTES_other": "{{count}} deqîqe piştî dema diyarkirî",
+      "HOURS_one": "{{count}} saet piştî dema diyarkirî",
+      "HOURS_other": "{{count}} saet piştî dema diyarkirî",
+      "DAYS_one": "{{count}} roj piştî dema diyarkirî",
+      "DAYS_other": "{{count}} roj piştî dema diyarkirî",
+      "WEEKS_one": "{{count}} hefte piştî dema diyarkirî",
+      "WEEKS_other": "{{count}} hefte piştî dema diyarkirî",
+      "MONTHS_one": "{{count}} meh piştî dema diyarkirî",
+      "MONTHS_other": "{{count}} meh piştî dema diyarkirî",
+      "YEARS_one": "{{count}} sal piştî dema diyarkirî",
+      "YEARS_other": "{{count}} sal piştî dema diyarkirî"
+    },
+    "units": {
+      "MINUTES_one": "deqqe",
+      "MINUTES_other": "minutes",
+      "HOURS_one": "seet",
+      "HOURS_other": "saetan",
+      "DAYS_one": "roj",
+      "DAYS_other": "rojan",
+      "WEEKS_one": "hefte",
+      "WEEKS_other": "hefteyan",
+      "MONTHS_one": "meh",
+      "MONTHS_other": "mehan",
+      "YEARS_one": "sal",
+      "YEARS_other": "salan"
+    }
+  }
+}

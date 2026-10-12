@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "ബിൽഡർ പോർട്ടൽ",
+    "referrals": "റഫറലുകൾ",
+    "builderLogin": "ബിൽഡർ ലോഗിൻ",
+    "partnerLogin": "ചാനൽ പങ്കാളി ലോഗിൻ"
+  },
+  "login": {
+    "title": "ബിൽഡർ സൈൻ ഇൻ ചെയ്യുന്നു",
+    "hint": "Leadrat ആണ് ബിൽഡർ അക്കൗണ്ടുകൾ സൃഷ്ടിച്ചിരിക്കുന്നത്. നിങ്ങൾക്ക് ഒന്നുമില്ലെങ്കിൽ നിങ്ങളുടെ അഡ്‌മിനിസ്‌ട്രേറ്ററോട് ചോദിക്കുക."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "നിങ്ങളുടെ തീരുമാനത്തിനായി കാത്തിരിക്കുന്നു",
+    "ACCEPTED": "സ്വീകരിച്ചു",
+    "REJECTED": "നിരസിച്ചു"
+  },
+  "list": {
+    "title": "റഫറലുകൾ",
+    "allProjects": "എല്ലാ പദ്ധതികളും",
+    "allStatuses": "എല്ലാ സ്റ്റാറ്റസുകളും",
+    "count_one": "{{count}} റഫറൽ",
+    "count_other": "{{count}} റഫറലുകൾ",
+    "columns": {
+      "referral": "റഫറൽ",
+      "customer": "ഉപഭോക്താവ്",
+      "project": "പദ്ധതി",
+      "sourcePartner": "ഉറവിട പങ്കാളി",
+      "status": "നില",
+      "booking": "ബുക്കിംഗ്",
+      "registered": "രജിസ്റ്റർ ചെയ്തു"
+    },
+    "booked": "ബുക്ക് ചെയ്തു",
+    "empty": "ഇതുവരെ റഫറലുകളൊന്നുമില്ല."
+  },
+  "detail": {
+    "customer": "ഉപഭോക്താവ്",
+    "sourcePartner": "ഉറവിട പങ്കാളി",
+    "attributionNote": "(കടപ്പാട് - മാറ്റാൻ കഴിയില്ല)",
+    "leadStatus": "ലീഡ് നില",
+    "protectedUntil": "വരെ സംരക്ഷിച്ചു",
+    "referral": "റഫറൽ",
+    "reason": "കാരണം: {{reason}}",
+    "booking": "ബുക്കിംഗ്",
+    "bookedOwner": "ബുക്ക് ചെയ്തു - നിങ്ങളാണ് പ്രവർത്തന ഉടമ",
+    "notBooked": "ബുക്ക് ചെയ്തിട്ടില്ല",
+    "sharedAfterBooking": "ബുക്കിംഗിന് ശേഷം പങ്കിട്ടു",
+    "accept": "റഫറൽ സ്വീകരിക്കുക",
+    "confirmBooking": "ബുക്കിംഗ് സ്ഥിരീകരിക്കുക",
+    "reject": "റഫറൽ നിരസിക്കുക",
+    "rejectReasonLabel": "നിരസിക്കാനുള്ള കാരണം (പങ്കാളിയെ കാണിക്കുന്നു) *",
+    "rejectConfirm": "നിരസിക്കുക",
+    "confirmBookingPrompt": "ബുക്കിംഗ് സ്ഥിരീകരിക്കണോ? പ്രവർത്തന ഉടമസ്ഥാവകാശം നിങ്ങളിലേക്ക് മാറുകയും പങ്കാളി കമ്മീഷനായി യോഗ്യനാകുകയും ചെയ്യും.",
+    "notice": {
+      "booked": "ബുക്കിംഗ് സ്ഥിരീകരിച്ചു.",
+      "accepted": "റഫറൽ സ്വീകരിച്ചു.",
+      "rejected": "റഫറൽ നിരസിച്ചു."
+    },
+    "backToReferrals": "റഫറലുകൾ എന്ന താളിലേക്ക് മടങ്ങുക"
+  },
+  "history": {
+    "title": "ചരിത്രം",
+    "actor": {
+      "system": "സിസ്റ്റം",
+      "partner": "ചാനൽ പങ്കാളി",
+      "admin": "Leadrat അഡ്മിൻ"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "പങ്കാളി രജിസ്ട്രേഷൻ ലഭിച്ചു",
+      "DUPLICATE_CHECK_COMPLETED": "ഡ്യൂപ്ലിക്കേറ്റ് പരിശോധന പൂർത്തിയായി - സജീവമായ ഡ്യൂപ്ലിക്കേറ്റൊന്നും കണ്ടെത്തിയില്ല",
+      "REGISTRATION_ACCEPTED": "രജിസ്ട്രേഷൻ സ്വീകരിച്ചു",
+      "PROTECTION_GRANTED_one": "{{count}} -ദിവസ സംരക്ഷണം അനുവദിച്ചു",
+      "PROTECTION_GRANTED_other": "{{count}} -ദിവസ സംരക്ഷണം അനുവദിച്ചു",
+      "STAGE_UPDATED": "നില {{stage}} -ലേക്ക് അപ്ഡേറ്റ് ചെയ്തു",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} ഫീൽഡ് അപ്ഡേറ്റ് ചെയ്തു",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} ഫീൽഡുകൾ അപ്ഡേറ്റ് ചെയ്തു",
+      "LEAD_ASSIGNED": "{{name}} എന്നയാൾക്ക് അസൈൻ ചെയ്‌തു",
+      "LEAD_UNASSIGNED": "അസൈൻ ചെയ്തിട്ടില്ല",
+      "REFERRAL_ACCEPTED": "ബിൽഡർ റഫറൽ സ്വീകരിച്ചു",
+      "REFERRAL_REJECTED": "ബിൽഡർ റഫറൽ നിരസിച്ചു. കാരണം: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} എന്നയാളുടെ ഡ്യൂപ്ലിക്കേറ്റ് രജിസ്ട്രേഷൻ ശ്രമം നിരസിച്ചു",
+      "BOOKING_COMPLETED": "ബുക്കിംഗ് പൂർത്തിയായി",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "പ്രവർത്തന ഉടമസ്ഥാവകാശം ബിൽഡറിന് കൈമാറി",
+      "PARTNER_ATTRIBUTION_PRESERVED": "പങ്കാളി ആട്രിബ്യൂഷൻ സംരക്ഷിച്ചു",
+      "COMMISSION_ELIGIBILITY_CREATED": "കമ്മീഷൻ യോഗ്യത സൃഷ്ടിച്ചു",
+      "HANDOVER_COMPLETED": "കൈമാറ്റം പൂർത്തിയായി",
+      "ADMIN_PROTECTION_RELEASED": "അഡ്മിൻ ഡ്യൂപ്ലിക്കേറ്റ് പരിരക്ഷ നേരത്തെ പുറത്തിറക്കി. കാരണം: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "അഡ്മിൻ {{from}} മുതൽ {{to}} ലേക്ക് രജിസ്ട്രേഷൻ പുനർനിയമിച്ചു. കാരണം: {{reason}}"
+    }
+  }
+}

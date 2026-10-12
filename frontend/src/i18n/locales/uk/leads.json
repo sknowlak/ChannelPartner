@@ -1,0 +1,192 @@
+{
+  "list": {
+    "title": "Мої потенційні клієнти",
+    "signedInAs": "Ви ввійшли як {{name}} ( {{partnerId}} ) · показано час у {{timezone}}",
+    "addLead": "+ Додати потенційного клієнта",
+    "tabs": {
+      "all": "Усі ( {{count}} )",
+      "pending": "Очікує на розгляд ( {{count}} )",
+      "booked": "Заброньовано ( {{count}} )"
+    },
+    "searchPlaceholder": "Шукайте за іменем, мобільним телефоном або ID реєстрації...",
+    "manageColumns": "Керування стовпцями",
+    "rowsPerPage": "Рядків на сторінці",
+    "registrationId": "Реєстраційний ID",
+    "emptyState": "Поки що немає потенційних клієнтів - зареєструйте свій перший.",
+    "noMatch": "Жоден потенційний клієнт не відповідає цим фільтрам.",
+    "showing": "Показано {{from}} - {{to}} із {{total}} записів",
+    "actions": {
+      "preview": "Попередній перегляд і швидке оновлення",
+      "history": "історія",
+      "email": "Електронна пошта",
+      "whatsapp": "WhatsApp",
+      "call": "Телефонуйте"
+    },
+    "pagination": {
+      "first": "Перша сторінка",
+      "previous": "Попередня сторінка",
+      "next": "Наступна сторінка",
+      "last": "Остання сторінка"
+    }
+  },
+  "columns": {
+    "status": "Статус",
+    "assignTo": "Призначити кому",
+    "booked": "Заброньовано",
+    "protectionUntil": "Захист До"
+  },
+  "booking": {
+    "booked": "Заброньовано",
+    "pending": "В очікуванні"
+  },
+  "assign": {
+    "unassigned": "Непризначений",
+    "owner": "{{name}} (Власник)",
+    "inactive": "{{name}} (неактивний)",
+    "unknownUser": "Невідомий користувач",
+    "assignedTo": "Призначено {{name}}"
+  },
+  "form": {
+    "addTitle": "Додати потенційного клієнта",
+    "editTitle": "Редагувати потенційного клієнта",
+    "noPermissionAdd": "Ви не маєте дозволу на реєстрацію потенційних клієнтів.",
+    "noPermissionEdit": "Ви не маєте дозволу редагувати потенційних клієнтів.",
+    "selectPlaceholder": "Виберіть...",
+    "commaSeparated": "Відокремлено комою",
+    "phonePlaceholder": "Номер телефону",
+    "countryCode": "Код країни"
+  },
+  "project": {
+    "none": "Ще немає проекту (не згадується)",
+    "notInList": "{{project}} (немає в списку проектів)"
+  },
+  "journey": {
+    "customer": "Замовник",
+    "currentOwner": "Нинішній власник",
+    "protectionExpiry": "Термін дії захисту",
+    "leadStatus": "Статус потенційного клієнта",
+    "scheduled": "За розкладом",
+    "assignedTo": "Кому призначено",
+    "referral": "Направлення",
+    "builderReason": "Причина будівельника: {{reason}}",
+    "bookedHint": "Заброньовано забудовником - оперативне право власності перейшло до забудовника; ваша атрибуція та право на комісію збережено.",
+    "notBookedHint": "Бронювання підтверджується забудовником після того, як він приймає рекомендацію.",
+    "quickUpdate": "Швидке оновлення",
+    "leadDetails": "Відомості про потенційного клієнта",
+    "progressHistory": "Історія прогресу",
+    "timesIn": "(час у {{timezone}} )",
+    "backToMyLeads": "Назад до моїх потенційних клієнтів",
+    "editLead": "Редагувати потенційного клієнта"
+  },
+  "referral": {
+    "NOT_REFERRED": "Не згадується (немає проекту)",
+    "PENDING_BUILDER": "Очікування забудовника",
+    "ACCEPTED": "Прийнято забудовником",
+    "REJECTED": "Відмовлено забудовником"
+  },
+  "preview": {
+    "ariaLabel": "Попередній перегляд потенційних клієнтів",
+    "title": "Попередній перегляд потенційних клієнтів",
+    "source": "Джерело",
+    "location": "Розташування",
+    "scheduled": "За розкладом",
+    "registered": "Зареєстрований",
+    "latestNote": "Остання примітка",
+    "quickUpdate": "Швидке оновлення",
+    "fullDetails": "Повна інформація",
+    "editLead": "Редагувати потенційного клієнта",
+    "history": "історія"
+  },
+  "quick": {
+    "assignedTo": "Кому призначено",
+    "status": "Статус",
+    "subStatus": "Підстатус",
+    "selectSubStatus": "Виберіть підстатус...",
+    "none": "Жодного",
+    "scheduledAt": "Заплановано о",
+    "localTime": "місцевий час",
+    "note": "Примітка",
+    "notePlaceholder": "Що сталося під час цього дзвінка/візиту? (необов'язково)",
+    "updateStatus": "Статус оновлення",
+    "statusUpdated": "Статус оновлено",
+    "bookedLocked": "Цей потенційний клієнт заброньовано – його статус більше не можна змінити.",
+    "viewOnly": "Ви можете переглянути цей потенційний клієнт, але ваша роль не може його оновити."
+  },
+  "history": {
+    "title": "Історія - {{registrationId}}",
+    "tabs": {
+      "all": "всі",
+      "status": "Статус",
+      "assignment": "призначення",
+      "notes": "Примітки"
+    },
+    "doneBy": "Автор: {{actor}}",
+    "system": "система",
+    "platforms": {
+      "System": "система",
+      "External": "зовнішній",
+      "Web": "Інтернет",
+      "Mobile": "мобільний"
+    },
+    "added": "додано",
+    "updated": "оновлено",
+    "empty": "(порожній)",
+    "noHistory": "У цій категорії ще немає історії.",
+    "fieldLabels": {
+      "stage": "Статус",
+      "subStatus": "Підстатус",
+      "scheduledAt": "розклад",
+      "notes": "Примітки",
+      "assignedTo": "Кому призначено"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Отримано реєстрацію партнера",
+      "DUPLICATE_CHECK_COMPLETED": "Перевірку дублікатів завершено – активного дубліката не знайдено",
+      "REGISTRATION_ACCEPTED": "Реєстрацію прийнято",
+      "PROTECTION_GRANTED_one": "Надано {{count}} -денний захист",
+      "PROTECTION_GRANTED_few": "Надано {{count}} -денний захист",
+      "PROTECTION_GRANTED_many": "Надано {{count}} -денний захист",
+      "PROTECTION_GRANTED_other": "Надано {{count}} -денний захист",
+      "REGISTRATION_ATTEMPT_REJECTED": "Повторну спробу реєстрації {{partnerId}} відхилено",
+      "LEAD_DETAILS_UPDATED_one": "Оновлено поле {{count}}",
+      "LEAD_DETAILS_UPDATED_few": "Оновлено {{count}} полів",
+      "LEAD_DETAILS_UPDATED_many": "Оновлено {{count}} полів",
+      "LEAD_DETAILS_UPDATED_other": "Оновлено {{count}} полів",
+      "STAGE_UPDATED": "Статус оновлено до {{status}}",
+      "LEAD_ASSIGNED": "Призначено {{name}}",
+      "LEAD_UNASSIGNED": "Непризначений",
+      "BOOKING_COMPLETED": "Бронювання завершено",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Операційне право власності передано Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Атрибуція партнера збережена",
+      "COMMISSION_ELIGIBILITY_CREATED": "Право на комісію створено",
+      "HANDOVER_COMPLETED": "Передача завершена",
+      "REFERRAL_ACCEPTED": "Забудовник прийняв рекомендацію",
+      "REFERRAL_REJECTED": "Забудовник відхилив рекомендацію. Причина: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Адміністратор раніше випустив захист від дублікатів. Причина: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Адміністратор змінив реєстрацію з {{from}} на {{to}} . Причина: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Керування стовпцями",
+    "hint": "Перетягніть, щоб змінити порядок · поставте прапорець, щоб показати",
+    "showAll": "Показати все",
+    "resetDefault": "Скинути до замовчування"
+  },
+  "filters": {
+    "title": "Фільтри",
+    "allProjects": "Всі проекти",
+    "any": "Будь-який",
+    "noFields": "Інші поля, які можна фільтрувати, ще не ввімкнено (Налаштування > Потенційний клієнт).",
+    "clearAll": "Очистити все"
+  },
+  "phone": {
+    "MISSING": "Номер телефону обов'язковий.",
+    "INVALID": "Введіть дійсний номер телефону.",
+    "TOO_SHORT": "Номер телефону занадто короткий.",
+    "TOO_LONG": "Номер телефону задовгий.",
+    "INVALID_FOR_COUNTRY": "Цей номер телефону недійсний для {{country}} .",
+    "COUNTRY_MISMATCH": "Виберіть правильний код країни.",
+    "NOT_MOBILE": "Будь ласка, введіть номер мобільного телефону, а не стаціонарного."
+  }
+}

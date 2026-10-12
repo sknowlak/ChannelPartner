@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Innstillingar",
+    "noPermission": "Tú hevur ikki loyvi at umsita innstillingar."
+  },
+  "categories": {
+    "lead": "Leiða",
+    "user": "Brúkari",
+    "integrations": "Samleggingar"
+  },
+  "leadTabs": {
+    "fields": "Øki",
+    "statuses": "Støður og undirstøður",
+    "notifications": "Fráboðanir og tíðarætlanir"
+  },
+  "fields": {
+    "leadIntro": "Set leiðslufanga oyðublaðið upp: virkja/sløkk teigar, merk teir sum kravdar ella legg tínar egnu sersniðgivnu teigar til.",
+    "userIntro": "Set oyðublaðið Legg til/Rætta toymislim til: virkja/sløkkja teigar, merkja teir sum kravdar ella legg tínar egnu sersniðgivnu teigar til.",
+    "addCustomField": "+ Legg tilrættalagdan teig til",
+    "fieldLabel": "Teigmerki",
+    "group": "Bólkur",
+    "groupPlaceholderLead": "t.d. Fyrispurningsupplýsingar",
+    "groupPlaceholderUser": "t.d. Eyka smálutir",
+    "dataType": "Dátuslag",
+    "options": "Valmøguleikar (kommaskildir)",
+    "requiredLead": "Kravt - samstarvsfelagar á tínum toymi skulu fylla hetta út fyri at skráseta ein leiðara",
+    "requiredUser": "Kravt - skal fyllast út, tá ein toymislim verður lagdur afturat",
+    "creating": "Skapa...",
+    "createField": "Stovna teig",
+    "columns": {
+      "field": "Bøur",
+      "group": "Bólkur",
+      "type": "Slag",
+      "required": "Ásettur",
+      "enabled": "Virkjað",
+      "kind": "Vinaligur"
+    },
+    "kind": {
+      "custom": "Skikkur",
+      "core": "Kjarni (læstur)",
+      "standard": "Støði"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Tekstur",
+    "TEXTAREA": "Langur tekstur",
+    "NUMBER": "Nummar",
+    "CURRENCY": "Umferð",
+    "DATE": "Dagur í mánaðinum",
+    "SELECT": "Rullulista",
+    "LIST": "Listi"
+  },
+  "picker": {
+    "searchPlaceholder": "Leita eftir leiðarafeltum...",
+    "summary": "{{shown}} víst · {{mandatory}} skyldugt",
+    "mandatory": "Álagdur",
+    "noMatch": "Ongin teigur passar."
+  },
+  "statuses": {
+    "intro": "Tínar leiðslustøður og undirstøður - hvat hvør biður um (dagfesting & klokkutíð, leiðslufelt) tá onkur dagførir ein leiðslu til hann.",
+    "add": "+ Legg støðu til",
+    "columns": {
+      "order": "Sum er",
+      "status": "Støða",
+      "subStatuses": "Undirstøður",
+      "asksFor": "Biður um",
+      "active": "Virkin"
+    },
+    "moveUp": "Flyt upp",
+    "moveDown": "Flyt niður",
+    "defaultBadge": "Forsett fyri nýggjar leiðarar",
+    "bookingBadge": "Bíleggingarstøða",
+    "asksForLabel": "Spyr eftir {{label}}",
+    "asksForDateTime": "Spyr um dagfesting og klokkutíð",
+    "none": "Eingin",
+    "dateTime": "Dagfesting & klokkutíð",
+    "scheduledOn": "á {{names}}",
+    "fieldsSummary_one": "{{count}} teigur ( {{mandatory}} skyldugt)",
+    "fieldsSummary_other": "{{count}} teigar ( {{mandatory}} skyldugt)",
+    "deleteConfirm": "Strika status \" {{name}} \"? Hetta kann ikki gerast aftur.",
+    "editTitle": "Rætta støðu - {{name}}",
+    "newTitle": "Nýggj støða",
+    "name": "Statusnavn",
+    "colour": "Litur",
+    "active": "Virkin",
+    "isDefault": "Forsett støða fyri nýggjar leiðarar",
+    "isBooking": "Bíleggingarstøða (sett av Fullfíggjað bílegging)",
+    "whenMoved": "Tá ein leiðsla er flutt til hesa støðu",
+    "askSchedule": "Bið um dagfesting og tíð (tíðarætlan)",
+    "scheduleLabelPlaceholder": "Merki, t.d. Vitja kl.",
+    "fieldsToShow": "Leiðsluteigar at vísa á dagføringar oyðublaðnum",
+    "subStatusesTitle": "Undirstøður",
+    "subStatusesHint": "Hvør undirstatus kann biðja um sína egnu dagfesting & klokkutíð og leggja sínar egnu teigar til - víst omaná teigarnar hjá statusinum omanfyri.",
+    "subStatusName": "Undirstøðunavn",
+    "subFields": "Teigar ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Dagfesting & klokkutíð merki, t.d. Ring aftur kl.",
+    "addSubStatus": "+ Legg undirstøðu til",
+    "saveStatus": "Goym støðu",
+    "createStatus": "Stovna støðu"
+  },
+  "notifications": {
+    "intro": "Boða røttu fólkunum frá, tá ein leiðari røkkur eina status - beinanvegin, ella ávísa tíð áðrenn/eftir dagfestingina & klokkuna, sum er ásett á henni.",
+    "add": "+ Legg fráboðan til",
+    "columns": {
+      "notification": "Fráboðan",
+      "whenStatusIs": "Tá støðan er",
+      "sends": "Sendir",
+      "to": "Til",
+      "via": "Um",
+      "enabled": "Virkjað"
+    },
+    "anyStatus": "Einhvør støða",
+    "anySubStatus": "Ein og hvør undirstøða",
+    "inactiveOption": "{{name}} (óvirkin)",
+    "emptyRules": "Ongar fráboðanir enn - legg eina til fyri at ávara títt toymi, tá ein leiðsla røkkur einum status.",
+    "jobs": {
+      "title": "Skrásett og sent",
+      "firesAt": "Eldar Kl.",
+      "notification": "Fráboðan",
+      "lead": "Leiða",
+      "status": "Støða",
+      "details": "Staklutir",
+      "empty": "Einki ásett ella sent enn.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Sum liggur í óvissu",
+      "PROCESSING": "Viðgerð",
+      "SENT": "Sent",
+      "FAILED": "Miseydnað",
+      "SKIPPED": "Hoppað",
+      "CANCELLED": "Avlýst"
+    },
+    "deliveryStatus": {
+      "SENT": "sent",
+      "FAILED": "miseydnað",
+      "SKIPPED": "slept"
+    },
+    "deliveryChannel": {
+      "IN_APP": "í appini",
+      "EMAIL": "teldupostur",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Tilnevndur brúkari",
+      "owner": "Ánari",
+      "updatedBy": "Dagført av",
+      "role": "Leiklutur: {{name}}"
+    },
+    "channels": {
+      "inApp": "Í appini",
+      "email": "Teldupostur",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Strika fráboðan \" {{name}} \"? Bíðandi áminningar frá tí eru avlýstar.",
+    "testPrompt": "Send eina roynd av hesi fráboðan til tín sjálvan (í appini) við hvørjum leiðslu- ID ?",
+    "testSent": "Send til tína klokku: {{title}} {{message}}",
+    "headersInvalid": "Webhook høvdini skulu vera galdandi JSON , t.d. {\"Heimild\": \"Beri xyz\"}",
+    "editTitle": "Rætta fráboðan",
+    "newTitle": "Nýggj fráboðan",
+    "name": "Navn",
+    "namePlaceholder": "t.d. Áminning um síðuvitjan",
+    "whenStatus": "Tá statusurin hjá einum leiðara er",
+    "subStatus": "Undirstøða",
+    "send": "Send (tíðarætlan)",
+    "custom": "Skikkur...",
+    "modeBefore": "áðrenn ásetta tíð",
+    "modeAfter": "eftir ásetta tíð",
+    "noScheduleWarning": "Hesin statusurin biður ikki um dagfesting & tíð, so ein \"áðrenn/kl/eftir ásetta tíð\" fráboðan vildi ongantíð skotið.",
+    "noScheduleFix": "Tendra <strong>Bið um dagfesting & tíð</strong> til tað undir Støður & Undirstøður, ella send Beinanvegin.",
+    "sendTo": "Send til (ein og hvør samanseting)",
+    "recipientAssigned": "Tilnevndur brúkari (høvuðseigarin)",
+    "recipientOwner": "Kontueigarin / umsitarin",
+    "recipientUpdatedBy": "Persónur, sum dagførdi støðuna",
+    "everyoneWithRole": "Øll við leikluti",
+    "specificUsers": "Ávísir brúkarar (virknir)",
+    "inactiveNever": "Óvirknir brúkarar fáa ongantíð fráboðanir, sjálvt um teir eru valdir.",
+    "deliverVia": "Avheinta umvegis",
+    "channelInApp": "Í appini (klokka)",
+    "channelEmail": "Teldupostur",
+    "channelWebhook": "Webhook ( WhatsApp / SMS veitari)",
+    "emailHint": "Teldupostur fer til teldupostadressuna hjá hvørjum móttakara og hevur brúk fyri SMTP sett upp á ambætaranum (backend/.env); til tá eru teldupostsendingar skrásettar sum sleptar.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Yvirskriftir ( JSON )",
+    "content": "Innihald í fráboðanini",
+    "title": "Heiti",
+    "message": "Boð",
+    "insertIntoTitle": "Set inn í Heiti",
+    "insertIntoMessage": "Set inn í boð",
+    "anyLeadField": "Ein og hvør leiðsluteigur virkar eisini, t.d <code1>{{example1}}</code1> ella <code2>{{example2}}</code2> .",
+    "preview": "Forskoðan (sýnisleiðsla)",
+    "enabled": "Virkjað",
+    "saveRule": "Goym fráboðan",
+    "createRule": "Stovna fráboðan",
+    "variables": {
+      "customerName": "Leiðandi navn",
+      "customerMobile": "Blýfartelefon",
+      "customerEmail": "Leiðsluteldupostur",
+      "registrationId": "Blý ID",
+      "status": "Støða",
+      "subStatus": "Undirstøða",
+      "scheduleAt": "Ásett dagur og klokkutíð",
+      "assignedTo": "Tilnevndur brúkari",
+      "updatedBy": "Dagført av",
+      "recipient": "Móttakaranavn",
+      "project": "Verkætlan",
+      "notes": "Nýggjasta viðmerking",
+      "partner": "Navn á samstarvsfelaga"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Beinanvegin tá statusurin er settur",
+      "AT": "Til ásettu tíðina",
+      "A1D": "1 dag eftir ásetta tíð (eftirkanning)"
+    },
+    "immediately": "Beinanvegin",
+    "atScheduled": "Til ásetta tíð",
+    "before": {
+      "MINUTES_one": "{{count}} minuttir áðrenn ásetta tíð",
+      "MINUTES_other": "{{count}} minuttir áðrenn ásetta tíð",
+      "HOURS_one": "{{count}} tíma áðrenn ásetta tíð",
+      "HOURS_other": "{{count}} tímar áðrenn ásetta tíð",
+      "DAYS_one": "{{count}} dag áðrenn ásetta tíð",
+      "DAYS_other": "{{count}} dagar áðrenn ásetta tíð",
+      "WEEKS_one": "{{count}} viku áðrenn ásetta tíð",
+      "WEEKS_other": "{{count}} vikur áðrenn ásetta tíð",
+      "MONTHS_one": "{{count}} mánað áðrenn ásetta tíð",
+      "MONTHS_other": "{{count}} mánaðir áðrenn ásetta tíð",
+      "YEARS_one": "{{count}} ár áðrenn ásetta tíð",
+      "YEARS_other": "{{count}} ár áðrenn ásetta tíð"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minuttir eftir ásetta tíð",
+      "MINUTES_other": "{{count}} minuttir eftir ásetta tíð",
+      "HOURS_one": "{{count}} tíma eftir ásetta tíð",
+      "HOURS_other": "{{count}} tímar eftir ásetta tíð",
+      "DAYS_one": "{{count}} dag eftir ásetta tíð",
+      "DAYS_other": "{{count}} dagar eftir ásetta tíð",
+      "WEEKS_one": "{{count}} viku eftir ásetta tíð",
+      "WEEKS_other": "{{count}} vikur eftir ásetta tíð",
+      "MONTHS_one": "{{count}} mánað eftir ásetta tíð",
+      "MONTHS_other": "{{count}} mánaðir eftir ásetta tíð",
+      "YEARS_one": "{{count}} ár eftir ásetta tíð",
+      "YEARS_other": "{{count}} ár eftir ásetta tíð"
+    },
+    "units": {
+      "MINUTES_one": "minutt",
+      "MINUTES_other": "minuttir",
+      "HOURS_one": "tími",
+      "HOURS_other": "tímar",
+      "DAYS_one": "dagur",
+      "DAYS_other": "dagar",
+      "WEEKS_one": "veikur",
+      "WEEKS_other": "vikur",
+      "MONTHS_one": "mánaði",
+      "MONTHS_other": "mánaðir",
+      "YEARS_one": "ár",
+      "YEARS_other": "ár"
+    }
+  }
+}

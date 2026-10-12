@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Xariirka wax dhisaha",
+    "referrals": "tixraac",
+    "builderLogin": "Soo gal wax dhisaha",
+    "partnerLogin": "Soo gal Partner Channel"
+  },
+  "login": {
+    "title": "Soo gal wax dhisaha",
+    "hint": "Xisaabaadka wax dhisaha waxa sameeyay Leadrat . Weydii maamulahaaga haddii aadan mid lahayn."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Sugitaanka go'aankaaga",
+    "ACCEPTED": "Waa la aqbalay",
+    "REJECTED": "Waa la diiday"
+  },
+  "list": {
+    "title": "tixraac",
+    "allProjects": "Dhammaan mashaariicda",
+    "allStatuses": "Dhammaan heerarka",
+    "count_one": "{{count}} tixraac",
+    "count_other": "{{count}} tixraac",
+    "columns": {
+      "referral": "U gudbin",
+      "customer": "Macmiil",
+      "project": "Mashruuca",
+      "sourcePartner": "Xigasho Partner",
+      "status": "Xaalada",
+      "booking": "Boos dhigashada",
+      "registered": "diiwaan gashan"
+    },
+    "booked": "Boossaday",
+    "empty": "Wali lama soo gudbin"
+  },
+  "detail": {
+    "customer": "Macmiil",
+    "sourcePartner": "Xigasho Partner",
+    "attributionNote": "(sifo - lama bedeli karo)",
+    "leadStatus": "Heerka Hogaaminta",
+    "protectedUntil": "Ilaalin Ilaa",
+    "referral": "U gudbin",
+    "reason": "Sababta: {{reason}}",
+    "booking": "Boos dhigashada",
+    "bookedOwner": "La ballansan yahay - adiga ayaa ah milkiilaha shaqada",
+    "notBooked": "Lama ballansan",
+    "sharedAfterBooking": "La wadaago ka dib ballansashada",
+    "accept": "Aqbal Gudbinta",
+    "confirmBooking": "Xaqiiji Booska",
+    "reject": "Diid Gudbinta",
+    "rejectReasonLabel": "Sababta loo diiday (la tusay lamaanaha) *",
+    "rejectConfirm": "Diid",
+    "confirmBookingPrompt": "Xaqiiji boos-qabsiga? Lahaanshaha hawleed adiga ayay kuu guuraysaa oo lammaanuhu wuxuu noqonayaa mid u qalma komishanka.",
+    "notice": {
+      "booked": "Ballanqaadku waa la xaqiijiyay.",
+      "accepted": "Gudbinta waa la aqbalay",
+      "rejected": "Gudbinta waa la diiday."
+    },
+    "backToReferrals": "Ku laabo tixraacyada"
+  },
+  "history": {
+    "title": "Taariikhda",
+    "actor": {
+      "system": "Nidaamka",
+      "partner": "Shuraakada kanaalka",
+      "admin": "Maamulka Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Diiwaangelinta lammaanaha waa la helay",
+      "DUPLICATE_CHECK_COMPLETED": "Jeega nuqul ka mid ah waa la dhammaystiray - lama helin nuqul firfircoon oo firfircoon",
+      "REGISTRATION_ACCEPTED": "Diiwaangelinta waa la aqbalay",
+      "PROTECTION_GRANTED_one": "{{count}} -maalin ilaalinta waa la siiyay",
+      "PROTECTION_GRANTED_other": "{{count}} -maalin ilaalinta waa la siiyay",
+      "STAGE_UPDATED": "Xaalada ayaa loo cusboonaysiiyay {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "La cusboonaysiiyay {{count}} garoonka",
+      "LEAD_DETAILS_UPDATED_other": "La cusboonaysiiyay {{count}} beeraha",
+      "LEAD_ASSIGNED": "Lagu meeleeyay {{name}}",
+      "LEAD_UNASSIGNED": "Aan la magacaabin",
+      "REFERRAL_ACCEPTED": "Dhisuhu wuu aqbalay gudbinta",
+      "REFERRAL_REJECTED": "Dhisuhu wuu diiday gudbinta Sababta: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Isku dayga diiwaangelinta nuqulka ah ee {{partner}} waa diiday",
+      "BOOKING_COMPLETED": "Buuxinta waa la dhameeyay",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Lahaanshaha hawleed lagu wareejiyay Dhise",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Sifada lammaanaha waa la ilaaliyay",
+      "COMMISSION_ELIGIBILITY_CREATED": "U qalmida komishanka ayaa la abuuray",
+      "HANDOVER_COMPLETED": "Xilwareejintu way dhammaatay",
+      "ADMIN_PROTECTION_RELEASED": "Maamulka ayaa goor hore sii daayay ilaalin nuqul ah. Sababta: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Maamulku waxa uu dib u wakiishay diiwaangelinta {{from}} una wareejiyay {{to}} . Sababta: {{reason}}"
+    }
+  }
+}

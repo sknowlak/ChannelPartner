@@ -1,4 +1,4 @@
-// node --test tools/i18n   (section 55)
+// node --test tools/i18n/translate.test.mjs   (section 55)
 // The masking must survive a provider that rewrites every text node, and
 // any damage to placeholders or <Trans> tags must be detected.
 import test from 'node:test';
@@ -16,7 +16,8 @@ const CASES = [
   'Have the client\'s cURL? <action>Import from cURL</action> to fill this in.',
   'Template with <fieldkey></fieldkey> placeholders (e.g. <example></example>).',
   'Use <strong>{{count}}</strong> of <1>your</1> API keys<br/> now & then',
-  'Leadrat sends a JSON webhook to {{url}}'
+  'Leadrat sends a JSON webhook to {{url}}',
+  'Sent as "Authorization: Bearer <token>"'
 ];
 
 for (const source of CASES) {

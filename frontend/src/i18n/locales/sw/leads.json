@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Viongozi Wangu",
+    "signedInAs": "Umeingia kama {{name}} ( {{partnerId}} ) · nyakati zinazoonyeshwa katika {{timezone}}",
+    "addLead": "+ Ongeza Mwongozo",
+    "tabs": {
+      "all": "Zote ( {{count}} )",
+      "pending": "Inasubiri ( {{count}} )",
+      "booked": "Imehifadhiwa ( {{count}} )"
+    },
+    "searchPlaceholder": "Tafuta kwa jina, simu ya mkononi, au ID cha usajili ...",
+    "manageColumns": "Dhibiti Safu",
+    "rowsPerPage": "Safu kwa kila ukurasa",
+    "registrationId": "ID cha Usajili",
+    "emptyState": "Bado hakuna mwongozo - sajili yako ya kwanza.",
+    "noMatch": "Hakuna viongozi wanaolingana na vichujio hivi.",
+    "showing": "Inaonyesha {{from}} - {{to}} kati ya {{total}} maingizo",
+    "actions": {
+      "preview": "Hakiki na sasisho la haraka",
+      "history": "Historia",
+      "email": "Barua pepe",
+      "whatsapp": "WhatsApp",
+      "call": "Piga simu"
+    },
+    "pagination": {
+      "first": "Ukurasa wa kwanza",
+      "previous": "Ukurasa uliotangulia",
+      "next": "Ukurasa unaofuata",
+      "last": "Ukurasa wa mwisho"
+    }
+  },
+  "columns": {
+    "status": "Hali",
+    "assignTo": "Peana Kwa",
+    "booked": "Imehifadhiwa",
+    "protectionUntil": "Ulinzi Mpaka"
+  },
+  "booking": {
+    "booked": "Imehifadhiwa",
+    "pending": "Inasubiri"
+  },
+  "assign": {
+    "unassigned": "Haijakabidhiwa",
+    "owner": "{{name}} (Mmiliki)",
+    "inactive": "{{name}} (haitumiki)",
+    "unknownUser": "Mtumiaji asiyejulikana",
+    "assignedTo": "Imekabidhiwa kwa {{name}}"
+  },
+  "form": {
+    "addTitle": "Ongeza Kuongoza",
+    "editTitle": "Hariri Kiongozi",
+    "noPermissionAdd": "Huna ruhusa ya kusajili viongozi.",
+    "noPermissionEdit": "Huna ruhusa ya kuhariri viongozi.",
+    "selectPlaceholder": "Chagua...",
+    "commaSeparated": "koma imetenganishwa",
+    "phonePlaceholder": "Nambari ya simu",
+    "countryCode": "Msimbo wa nchi"
+  },
+  "project": {
+    "none": "Bado hakuna mradi (haujarejelewa)",
+    "notInList": "{{project}} (haiko katika orodha ya mradi)"
+  },
+  "journey": {
+    "customer": "Mteja",
+    "currentOwner": "Mmiliki wa Sasa",
+    "protectionExpiry": "Kuisha kwa Ulinzi",
+    "leadStatus": "Hali ya Uongozi",
+    "scheduled": "Imepangwa",
+    "assignedTo": "Imekabidhiwa Kwa",
+    "referral": "Rufaa",
+    "builderReason": "Sababu ya mjenzi: {{reason}}",
+    "bookedHint": "Imehifadhiwa na mjenzi - umiliki wa uendeshaji umehamia kwa mjenzi; maelezo yako na ustahiki wa tume huhifadhiwa.",
+    "notBookedHint": "Uhifadhi huthibitishwa na mjenzi mara tu anapokubali rufaa.",
+    "quickUpdate": "Sasisho la Haraka",
+    "leadDetails": "Maelezo ya Kiongozi",
+    "progressHistory": "Historia ya Maendeleo",
+    "timesIn": "(mara katika {{timezone}} )",
+    "backToMyLeads": "Rudi kwa Miongozo Yangu",
+    "editLead": "Hariri Kiongozi"
+  },
+  "referral": {
+    "NOT_REFERRED": "Haijarejelewa (hakuna mradi)",
+    "PENDING_BUILDER": "Inasubiri mjenzi",
+    "ACCEPTED": "Imekubaliwa na mjenzi",
+    "REJECTED": "Imekataliwa na mjenzi"
+  },
+  "preview": {
+    "ariaLabel": "Onyesho la kukagua kiongozi",
+    "title": "Muhtasari wa Kiongozi",
+    "source": "Chanzo",
+    "location": "Mahali",
+    "scheduled": "Imepangwa",
+    "registered": "Imesajiliwa",
+    "latestNote": "Ujumbe Mpya",
+    "quickUpdate": "Sasisho la Haraka",
+    "fullDetails": "Maelezo Kamili",
+    "editLead": "Hariri Kiongozi",
+    "history": "Historia"
+  },
+  "quick": {
+    "assignedTo": "Imekabidhiwa Kwa",
+    "status": "Hali",
+    "subStatus": "Hali Ndogo",
+    "selectSubStatus": "Chagua hali ndogo...",
+    "none": "Hakuna",
+    "scheduledAt": "Imepangwa saa",
+    "localTime": "wakati wa ndani",
+    "note": "Kumbuka",
+    "notePlaceholder": "Ni nini kilifanyika kwenye simu/tembeleo hili? (si lazima)",
+    "updateStatus": "Sasisha Hali",
+    "statusUpdated": "Hali imesasishwa",
+    "bookedLocked": "Uongozi huu umewekwa - hali yake haiwezi kubadilishwa tena.",
+    "viewOnly": "Unaweza kutazama mwongozo huu, lakini jukumu lako haliwezi kulisasisha."
+  },
+  "history": {
+    "title": "Historia - {{registrationId}}",
+    "tabs": {
+      "all": "Wote",
+      "status": "Hali",
+      "assignment": "Mgawo",
+      "notes": "Vidokezo"
+    },
+    "doneBy": "Imefanywa na {{actor}}",
+    "system": "Mfumo",
+    "platforms": {
+      "System": "Mfumo",
+      "External": "Nje",
+      "Web": "Mtandao",
+      "Mobile": "Simu ya Mkononi"
+    },
+    "added": "aliongeza",
+    "updated": "imesasishwa",
+    "empty": "(tupu)",
+    "noHistory": "Bado hakuna historia katika kategoria hii.",
+    "fieldLabels": {
+      "stage": "Hali",
+      "subStatus": "Hali Ndogo",
+      "scheduledAt": "Ratiba",
+      "notes": "Vidokezo",
+      "assignedTo": "Imekabidhiwa Kwa"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Usajili wa mshirika umepokelewa",
+      "DUPLICATE_CHECK_COMPLETED": "Ukaguzi wa nakala umekamilika - hakuna nakala inayotumika iliyopatikana",
+      "REGISTRATION_ACCEPTED": "Usajili umekubaliwa",
+      "PROTECTION_GRANTED_one": "Ulinzi wa siku {{count}} umetolewa",
+      "PROTECTION_GRANTED_other": "Ulinzi wa siku {{count}} umetolewa",
+      "REGISTRATION_ATTEMPT_REJECTED": "Jaribio la usajili la {{partnerId}} lililorudiwa limekataliwa",
+      "LEAD_DETAILS_UPDATED_one": "Uga {{count}} umesasishwa",
+      "LEAD_DETAILS_UPDATED_other": "Ilisasisha sehemu {{count}}",
+      "STAGE_UPDATED": "Hali imesasishwa hadi {{status}}",
+      "LEAD_ASSIGNED": "Imekabidhiwa kwa {{name}}",
+      "LEAD_UNASSIGNED": "Haijakabidhiwa",
+      "BOOKING_COMPLETED": "Uhifadhi umekamilika",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Umiliki wa uendeshaji umehamishiwa kwa Mjenzi",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Maelezo ya mshirika yamehifadhiwa",
+      "COMMISSION_ELIGIBILITY_CREATED": "Ustahiki wa tume umeundwa",
+      "HANDOVER_COMPLETED": "Makabidhiano yamekamilika",
+      "REFERRAL_ACCEPTED": "Mjenzi alikubali rufaa",
+      "REFERRAL_REJECTED": "Mjenzi amekataa rufaa. Sababu: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Msimamizi alitoa ulinzi unaorudiwa mapema. Sababu: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Msimamizi alikabidhi upya usajili kutoka {{from}} hadi {{to}} . Sababu: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Dhibiti Safu",
+    "hint": "Buruta ili kupanga upya · angalia ili kuonyesha",
+    "showAll": "Onyesha Yote",
+    "resetDefault": "Weka upya kwa Chaguomsingi"
+  },
+  "filters": {
+    "title": "Vichujio",
+    "allProjects": "Miradi yote",
+    "any": "Yoyote",
+    "noFields": "Bado hakuna sehemu zingine zinazoweza kuchujwa (Mipangilio > Ongoza).",
+    "clearAll": "Futa Zote"
+  },
+  "phone": {
+    "MISSING": "Nambari ya simu inahitajika.",
+    "INVALID": "Tafadhali weka nambari sahihi ya simu.",
+    "TOO_SHORT": "Nambari ya simu ni fupi mno.",
+    "TOO_LONG": "Nambari ya simu ni ndefu sana.",
+    "INVALID_FOR_COUNTRY": "Nambari hii ya simu si halali kwa {{country}} .",
+    "COUNTRY_MISMATCH": "Tafadhali chagua msimbo sahihi wa nchi.",
+    "NOT_MOBILE": "Tafadhali weka nambari ya simu, sio simu ya mezani."
+  }
+}

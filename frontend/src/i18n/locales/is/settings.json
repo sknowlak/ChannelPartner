@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Stillingar",
+    "noPermission": "Þú hefur ekki heimild til að stjórna stillingum."
+  },
+  "categories": {
+    "lead": "Blý",
+    "user": "Notandi",
+    "integrations": "Samþættingar"
+  },
+  "leadTabs": {
+    "fields": "Fields",
+    "statuses": "Staða og undirstöður",
+    "notifications": "Tilkynningar og tímasetningar"
+  },
+  "fields": {
+    "leadIntro": "Stilltu eyðublaðið til að fanga vöruna: virkjaðu/slökkva á reiti, merktu þá sem nauðsynlega eða bættu við eigin sérsniðnum reitum.",
+    "userIntro": "Stilltu eyðublaðið Bæta við/breyta liðsfélaga: virkja/slökkva á reiti, merktu þá sem nauðsynlega eða bættu við eigin sérsniðnum reitum.",
+    "addCustomField": "+ Bæta við sérsniðnum reit",
+    "fieldLabel": "Veltimerki",
+    "group": "Hópur",
+    "groupPlaceholderLead": "td Fyrirspurnarupplýsingar",
+    "groupPlaceholderUser": "td Viðbótarupplýsingar",
+    "dataType": "Tegund gagna",
+    "options": "Valkostir (aðskilin með kommum)",
+    "requiredLead": "Nauðsynlegt - samstarfsaðilar í teyminu þínu verða að fylla út þetta til að skrá forystu",
+    "requiredUser": "Áskilið - þarf að fylla út þegar liðsmanni er bætt við",
+    "creating": "Býr til...",
+    "createField": "Búa til reit",
+    "columns": {
+      "field": "Field",
+      "group": "Hópur",
+      "type": "Tegund",
+      "required": "Áskilið",
+      "enabled": "Virkt",
+      "kind": "Vingjarnlegur"
+    },
+    "kind": {
+      "custom": "Sérsniðin",
+      "core": "Kjarni (læstur)",
+      "standard": "Standard"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Texti",
+    "TEXTAREA": "Langur texti",
+    "NUMBER": "Númer",
+    "CURRENCY": "Gjaldmiðill",
+    "DATE": "Dagsetning",
+    "SELECT": "Fellilisti",
+    "LIST": "Listi"
+  },
+  "picker": {
+    "searchPlaceholder": "Leita að leiðarreitum...",
+    "summary": "{{shown}} sýnt · {{mandatory}} skylda",
+    "mandatory": "Skylt",
+    "noMatch": "Engir reitir passa."
+  },
+  "statuses": {
+    "intro": "Leiðendastöðurnar þínar og undirstöðurnar - það sem hver og einn biður um (dagsetning og tími, leiðareitir) þegar einhver uppfærir leið í það.",
+    "add": "+ Bæta við stöðu",
+    "columns": {
+      "order": "Panta",
+      "status": "Staða",
+      "subStatuses": "Undirstöður",
+      "asksFor": "Spyr um",
+      "active": "Virkur"
+    },
+    "moveUp": "Færðu þig upp",
+    "moveDown": "Færðu þig niður",
+    "defaultBadge": "Sjálfgefið fyrir nýjar upplýsingar",
+    "bookingBadge": "Bókunarstaða",
+    "asksForLabel": "Biður um {{label}}",
+    "asksForDateTime": "Spyr um dagsetningu og tíma",
+    "none": "Engin",
+    "dateTime": "Dagsetning og tími",
+    "scheduledOn": "á {{names}}",
+    "fieldsSummary_one": "{{count}} reitur ( {{mandatory}} skylda)",
+    "fieldsSummary_other": "{{count}} reitir ( {{mandatory}} áskilið)",
+    "deleteConfirm": "Eyða stöðunni \" {{name}} \"? Þetta er ekki hægt að afturkalla.",
+    "editTitle": "Breyta stöðu - {{name}}",
+    "newTitle": "Ný staða",
+    "name": "Stöðuheiti",
+    "colour": "Litur",
+    "active": "Virkur",
+    "isDefault": "Sjálfgefin staða fyrir nýjar upplýsingar",
+    "isBooking": "Bókunarstaða (stillt af heildarbókun)",
+    "whenMoved": "Þegar leið er færð í þessa stöðu",
+    "askSchedule": "Biðjið um dagsetningu og tíma (dagskrá)",
+    "scheduleLabelPlaceholder": "Merki, td Heimsókn kl",
+    "fieldsToShow": "Leiðreitir til að sýna á uppfærslueyðublaðinu",
+    "subStatusesTitle": "Undirstöður",
+    "subStatusesHint": "Hver undirstaða getur beðið um sína eigin dagsetningu og tíma og bætt við eigin reitum - sýndar ofan á reiti stöðunnar hér að ofan.",
+    "subStatusName": "Nafn undirstöðu",
+    "subFields": "Reitir ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Dagsetningar- og tímamerki, td hringja til baka kl",
+    "addSubStatus": "+ Bæta við undirstöðu",
+    "saveStatus": "Vista stöðu",
+    "createStatus": "Búa til stöðu"
+  },
+  "notifications": {
+    "intro": "Látið rétta fólkið vita þegar leiðarljós nær stöðu - strax, eða ákveðinn tíma fyrir/eftir dagsetningu og tíma sem áætlað er á henni.",
+    "add": "+ Bæta við tilkynningu",
+    "columns": {
+      "notification": "Tilkynning",
+      "whenStatusIs": "Þegar staða er",
+      "sends": "Sendir",
+      "to": "Til",
+      "via": "Via",
+      "enabled": "Virkt"
+    },
+    "anyStatus": "Hvaða staða sem er",
+    "anySubStatus": "Hvaða undirstaða sem er",
+    "inactiveOption": "{{name}} (óvirkt)",
+    "emptyRules": "Engar tilkynningar enn - bættu við einni til að láta lið þitt vita þegar leiðandi nær stöðu.",
+    "jobs": {
+      "title": "Tímasett og sent",
+      "firesAt": "Eldur Kl",
+      "notification": "Tilkynning",
+      "lead": "Blý",
+      "status": "Staða",
+      "details": "Upplýsingar",
+      "empty": "Ekkert skipulagt eða sent ennþá.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Í bið",
+      "PROCESSING": "Vinnsla",
+      "SENT": "Sent",
+      "FAILED": "Mistókst",
+      "SKIPPED": "Sleppti",
+      "CANCELLED": "Hætt við"
+    },
+    "deliveryStatus": {
+      "SENT": "sent",
+      "FAILED": "mistókst",
+      "SKIPPED": "sleppt"
+    },
+    "deliveryChannel": {
+      "IN_APP": "í appi",
+      "EMAIL": "tölvupósti",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Úthlutaður notandi",
+      "owner": "Eigandi",
+      "updatedBy": "Uppfært af",
+      "role": "Hlutverk: {{name}}"
+    },
+    "channels": {
+      "inApp": "Í appi",
+      "email": "Tölvupóstur",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Eyða tilkynningu \" {{name}} \"? Hætt er við áminningar frá henni.",
+    "testPrompt": "Sendu próf á þessari tilkynningu til þín (í appi) með hvaða ID ?",
+    "testSent": "Sendt á bjölluna þína: {{title}} {{message}}",
+    "headersInvalid": "Webhook hausar verða að vera gilt JSON , td {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Breyta tilkynningu",
+    "newTitle": "Ný tilkynning",
+    "name": "Nafn",
+    "namePlaceholder": "td áminning um heimsókn á vef",
+    "whenStatus": "Þegar staða forystu er",
+    "subStatus": "Undirstaða",
+    "send": "Senda (dagskrá)",
+    "custom": "Sérsniðin...",
+    "modeBefore": "fyrir áætlaðan tíma",
+    "modeAfter": "eftir áætlaðan tíma",
+    "noScheduleWarning": "Þessi staða biður ekki um dagsetningu og tíma, þannig að tilkynning um „fyrir/á/eftir áætlaðan tíma“ myndi aldrei loga.",
+    "noScheduleFix": "Kveiktu á <strong>Biðja um dagsetningu og tíma</strong> fyrir það undir Stöður og undirstöður, eða sendu strax.",
+    "sendTo": "Senda til (hvaða samsetning sem er)",
+    "recipientAssigned": "Úthlutaður notandi (aðaleigandi)",
+    "recipientOwner": "Reikningseigandi / stjórnandi",
+    "recipientUpdatedBy": "Sá sem uppfærði stöðuna",
+    "everyoneWithRole": "Allir með hlutverk",
+    "specificUsers": "Sérstakir notendur (virkir)",
+    "inactiveNever": "Óvirkir notendur fá aldrei tilkynningar, jafnvel þótt valið sé.",
+    "deliverVia": "Afhenda í gegnum",
+    "channelInApp": "Í forriti (bjalla)",
+    "channelEmail": "Tölvupóstur",
+    "channelWebhook": "Webhook ( WhatsApp / SMS veitandi)",
+    "emailHint": "Tölvupóstur fer á netfang hvers viðtakanda og þarf að setja upp SMTP á þjóninum (backend/.env); þangað til er tölvupóstsending skráð sem sleppt.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Hausar ( JSON )",
+    "content": "Efni tilkynninga",
+    "title": "Titill",
+    "message": "Skilaboð",
+    "insertIntoTitle": "Settu inn í titil",
+    "insertIntoMessage": "Settu inn í skilaboð",
+    "anyLeadField": "Allir leiðarreitir virka líka, td <code1>{{example1}}</code1> eða <code2>{{example2}}</code2> .",
+    "preview": "Forskoðun (sýnishorn)",
+    "enabled": "Virkt",
+    "saveRule": "Vista tilkynningu",
+    "createRule": "Búðu til tilkynningu",
+    "variables": {
+      "customerName": "Leiðarnafn",
+      "customerMobile": "Blý farsíma",
+      "customerEmail": "Leiðtogapóstur",
+      "registrationId": "ID",
+      "status": "Staða",
+      "subStatus": "Undirstaða",
+      "scheduleAt": "Áætluð dagsetning og tími",
+      "assignedTo": "Úthlutaður notandi",
+      "updatedBy": "Uppfært af",
+      "recipient": "Nafn viðtakanda",
+      "project": "Verkefni",
+      "notes": "Nýjasta athugasemdin",
+      "partner": "Nafn félaga"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Strax þegar staða er stillt",
+      "AT": "Á tilsettum tíma",
+      "A1D": "1 degi eftir áætlaðan tíma (eftirfylgniskoðun)"
+    },
+    "immediately": "Strax",
+    "atScheduled": "Á tilsettum tíma",
+    "before": {
+      "MINUTES_one": "{{count}} mínútu fyrir áætlaðan tíma",
+      "MINUTES_other": "{{count}} mínútum fyrir áætlaðan tíma",
+      "HOURS_one": "{{count}} klukkustund fyrir áætlaðan tíma",
+      "HOURS_other": "{{count}} klukkustundum fyrir áætlaðan tíma",
+      "DAYS_one": "{{count}} degi fyrir áætlaðan tíma",
+      "DAYS_other": "{{count}} dögum fyrir áætlaðan tíma",
+      "WEEKS_one": "{{count}} viku fyrir áætlaðan tíma",
+      "WEEKS_other": "{{count}} vikum fyrir áætlaðan tíma",
+      "MONTHS_one": "{{count}} mánuði fyrir áætlaðan tíma",
+      "MONTHS_other": "{{count}} mánuðum fyrir áætlaðan tíma",
+      "YEARS_one": "{{count}} ári fyrir áætlaðan tíma",
+      "YEARS_other": "{{count}} árum fyrir áætlaðan tíma"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} mínútu eftir áætlaðan tíma",
+      "MINUTES_other": "{{count}} mínútum eftir áætlaðan tíma",
+      "HOURS_one": "{{count}} klukkustund eftir áætlaðan tíma",
+      "HOURS_other": "{{count}} klukkustundum eftir áætlaðan tíma",
+      "DAYS_one": "{{count}} degi eftir áætlaðan tíma",
+      "DAYS_other": "{{count}} dögum eftir áætlaðan tíma",
+      "WEEKS_one": "{{count}} viku eftir áætlaðan tíma",
+      "WEEKS_other": "{{count}} vikum eftir áætlaðan tíma",
+      "MONTHS_one": "{{count}} mánuði eftir áætlaðan tíma",
+      "MONTHS_other": "{{count}} mánuðum eftir áætlaðan tíma",
+      "YEARS_one": "{{count}} ár eftir áætlaðan tíma",
+      "YEARS_other": "{{count}} árum eftir áætlaðan tíma"
+    },
+    "units": {
+      "MINUTES_one": "mínútu",
+      "MINUTES_other": "mínútur",
+      "HOURS_one": "klukkustund",
+      "HOURS_other": "klukkustundir",
+      "DAYS_one": "dag",
+      "DAYS_other": "daga",
+      "WEEKS_one": "viku",
+      "WEEKS_other": "vikur",
+      "MONTHS_one": "mánuði",
+      "MONTHS_other": "mánuði",
+      "YEARS_one": "ári",
+      "YEARS_other": "ár"
+    }
+  }
+}

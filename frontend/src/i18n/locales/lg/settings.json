@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Enteekateeka",
+    "noPermission": "Tolina lukusa kuddukanya nteekateeka."
+  },
+  "categories": {
+    "lead": "Okukulembera",
+    "user": "Omukozesa",
+    "integrations": "Okugatta ebintu"
+  },
+  "leadTabs": {
+    "fields": "Ennimiro",
+    "statuses": "Emitendera & Embeera Entono",
+    "notifications": "Okumanyisibwa & Abategesi"
+  },
+  "fields": {
+    "leadIntro": "Tegeka ffoomu y'okukwata okukulembera: sobozesa/lemesa ennimiro, ziteekeko akabonero nga zeetaagisa, oba yongera ku nnimiro zo ez'enjawulo.",
+    "userIntro": "Tegeka ffoomu ya Add/Edit Team Member: sobozesa/lemesa ennimiro, ziteekeko akabonero nti zeetaagisa, oba yongera ku nnimiro zo ez'enjawulo.",
+    "addCustomField": "+ Okwongerako Ennimiro ya Custom",
+    "fieldLabel": "Ennimiro Label",
+    "group": "Ekibinja",
+    "groupPlaceholderLead": "okugeza Inquiry Info",
+    "groupPlaceholderUser": "okugeza Ebisingawo",
+    "dataType": "Ekika kya Data",
+    "options": "Ebyokulonda (ebyawuddwamu koma) .",
+    "requiredLead": "Ekyetaagisa - abakolagana ku ttiimu yo balina okujjuza kino okuwandiisa okukulembera",
+    "requiredUser": "Ekyetaagisa - kirina okujjibwamu nga oyongerako mmemba wa ttiimu",
+    "creating": "Okutondawo...",
+    "createField": "Tonda Ennimiro",
+    "columns": {
+      "field": "Ekisaawe",
+      "group": "Ekibinja",
+      "type": "Okuwandiika",
+      "required": "Etaagisa",
+      "enabled": "Kisobozeseddwa",
+      "kind": "Kisa"
+    },
+    "kind": {
+      "custom": "Empisa",
+      "core": "Core (esibye) .",
+      "standard": "Omutindo"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Okuwandiika obubaka",
+    "TEXTAREA": "Ebiwandiiko ebiwanvu",
+    "NUMBER": "Omuwendo",
+    "CURRENCY": "Sente",
+    "DATE": "Olunaku olw'omweezi",
+    "SELECT": "Okugwa wansi",
+    "LIST": "Lisiti"
+  },
+  "picker": {
+    "searchPlaceholder": "Noonya ennimiro z'okukulembera...",
+    "summary": "{{shown}} eragiddwa · {{mandatory}} kikakatako",
+    "mandatory": "Teekwa",
+    "noMatch": "Tewali nnimiro zikwatagana."
+  },
+  "statuses": {
+    "intro": "Embeera zo ez'okukulembera n'embeera entono - buli omu ky'asaba (olunaku & essaawa, ennimiro z'okukulembera) ng'omuntu atereeza lead ku kyo.",
+    "add": "+ Okwongerako Embeera",
+    "columns": {
+      "order": "Okulagira",
+      "status": "Ennyimirira",
+      "subStatuses": "Ebitundu ebitonotono",
+      "asksFor": "Asaba Ku...",
+      "active": "Obunyiikivu"
+    },
+    "moveUp": "Tambula waggulu",
+    "moveDown": "Tambula wansi",
+    "defaultBadge": "Default ku leads empya",
+    "bookingBadge": "Embeera y'okubuuka",
+    "asksForLabel": "Asaba {{label}}",
+    "asksForDateTime": "Abuuza olunaku & essaawa",
+    "none": "Tewali",
+    "dateTime": "Olunaku & essaawa",
+    "scheduledOn": "ku {{names}}",
+    "fieldsSummary_one": "{{count}} field ( {{mandatory}} kikakatako)",
+    "fieldsSummary_other": "{{count}} fields ( {{mandatory}} kikakatako)",
+    "deleteConfirm": "Ssazaamu embeera \" {{name}} \"? Kino tekiyinza kuggyibwawo.",
+    "editTitle": "Edit Embeera - {{name}}",
+    "newTitle": "Embeera Empya",
+    "name": "Erinnya ly’Embeera",
+    "colour": "Erangi",
+    "active": "Obunyiikivu",
+    "isDefault": "Embeera esookerwako eri abakulembeze abapya",
+    "isBooking": "Embeera y'okubuuka (eteekebwawo Complete Booking)",
+    "whenMoved": "Omukulembeze bwe gusengulwa okutuuka ku mbeera eno",
+    "askSchedule": "Saba olunaku & essaawa (scheduler)",
+    "scheduleLabelPlaceholder": "Label, okugeza Lambula ku",
+    "fieldsToShow": "Kulembera ennimiro okulaga ku foomu y'okulongoosa",
+    "subStatusesTitle": "Ebitundu ebitonotono",
+    "subStatusesHint": "Buli sub-status esobola okusaba olunaku & essaawa yaayo n'eyongerako ennimiro zaayo - eziragiddwa waggulu ku nnimiro za status waggulu.",
+    "subStatusName": "Erinnya ly’embeera entono",
+    "subFields": "Ennimiro ( {{count}} ) .",
+    "subScheduleLabelPlaceholder": "Date & time label, okugeza Kuba ku",
+    "addSubStatus": "+ Okwongerako Sub-Status",
+    "saveStatus": "Okutereka Embeera",
+    "createStatus": "Tonda Embeera"
+  },
+  "notifications": {
+    "intro": "Tegeeza abantu abatuufu nga lead etuuse ku status - amangu ddala, oba ekiseera ekigere nga/oluvannyuma lw'olunaku & essaawa etekeddwa ku yo.",
+    "add": "+ Okwongerako Okumanyisibwa",
+    "columns": {
+      "notification": "Okutegeeza",
+      "whenStatusIs": "Nga Embeera Eri",
+      "sends": "Asindika",
+      "to": "Ku",
+      "via": "Ku",
+      "enabled": "Kisobozeseddwa"
+    },
+    "anyStatus": "Embeera yonna",
+    "anySubStatus": "Embeera yonna entono",
+    "inactiveOption": "{{name}} (tekola)",
+    "emptyRules": "Tewali kumanyisibwa n'okutuusa kati - yongerako ekimu okulabula ttiimu yo ng'omukulembeze atuuse ku mbeera.",
+    "jobs": {
+      "title": "Enteekateeka & Eweerezeddwa",
+      "firesAt": "Omuliro Gukubye Ku...",
+      "notification": "Okutegeeza",
+      "lead": "Okukulembera",
+      "status": "Ennyimirira",
+      "details": "Ebisingawo",
+      "empty": "Tewali kintu kyonna kitegekeddwa oba okusindikibwa n’okutuusa kati.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Tekinagwa",
+      "PROCESSING": "Okukola ku nsonga eno",
+      "SENT": "Yatumwa",
+      "FAILED": "Okugwa",
+      "SKIPPED": "Skipped",
+      "CANCELLED": "Esaziddwamu"
+    },
+    "deliveryStatus": {
+      "SENT": "yatumwa",
+      "FAILED": "okugwa",
+      "SKIPPED": "yabuuka"
+    },
+    "deliveryChannel": {
+      "IN_APP": "mu-app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Omukozesa eyaweebwa",
+      "owner": "Nannyini",
+      "updatedBy": "Ebipya bya...",
+      "role": "Omulimu: {{name}}"
+    },
+    "channels": {
+      "inApp": "Mu-app",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Ssazaamu okumanyisibwa \" {{name}} \"? Okujjukiza okulindirira okuva mu yo kusazibwamu.",
+    "testPrompt": "Weereza okugezesebwa kw'okumanyisibwa kuno gy'oli (mu app) ng'okozesa lead ID ki ?",
+    "testSent": "Eweerezeddwa ku kagombe ko: {{title}} {{message}}",
+    "headersInvalid": "Emitwe Webhook girina okuba nga gituufu JSON , okugeza {\"Olukusa\": \"Omutwala xyz\"}",
+    "editTitle": "Edit Okumanyisa",
+    "newTitle": "Okumanyisibwa Okupya",
+    "name": "Erinnya",
+    "namePlaceholder": "okugeza Okujjukiza okukyalira omukutu",
+    "whenStatus": "Nga embeera y’omukulembeze eri",
+    "subStatus": "Embeera entono",
+    "send": "Sindika (omutegesi w'enteekateeka) .",
+    "custom": "Empisa...",
+    "modeBefore": "ng’obudde obuteekeddwawo tebunnatuuka",
+    "modeAfter": "oluvannyuma lw’obudde obuteekeddwawo",
+    "noScheduleWarning": "Embeera eno tesaba lunaku & ssaawa, kale okumanyisibwa \"nga tekunnabaawo/ku/oluvannyuma lw'essaawa etekeddwa\" tekyandikubye.",
+    "noScheduleFix": "Ggula <strong>ku Buuza olunaku & essaawa</strong> yaayo wansi wa Statuses & Sub-Statuses, oba weereza Amangu.",
+    "sendTo": "Sindika ku (omugatte gwonna)",
+    "recipientAssigned": "Omukozesa eyaweebwa (nnannyini mukulembeze) .",
+    "recipientOwner": "Nnannyini akawunti / admin",
+    "recipientUpdatedBy": "Omuntu eyatereeza embeera",
+    "everyoneWithRole": "Buli muntu alina omulimu",
+    "specificUsers": "Abakozesa ebitongole (abakola) .",
+    "inactiveNever": "Abakozesa abatakola tebafuna kumanyisibwa, ne bwe baba nga balondeddwa.",
+    "deliverVia": "Tuusa ng'oyita mu",
+    "channelInApp": "Mu-app (akagombe) .",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( Omugabi wa WhatsApp / SMS )",
+    "emailHint": "Email egenda ku email ya buli muntu afuna era yeetaaga SMTP okuteekebwawo ku server (backend/.env); okutuusa olwo email sends ziwandiikibwa nga skipped.",
+    "webhookUrl": "URL Webhook ( POST , JSON ) .",
+    "headers": "Emitwe ( JSON ) .",
+    "content": "Ebirimu mu kumanyisa",
+    "title": "Omutwe",
+    "message": "Obubaka",
+    "insertIntoTitle": "Teeka mu Mutwe",
+    "insertIntoMessage": "Yingiza mu Bubaka",
+    "anyLeadField": "Ennimiro yonna ey'okukulembera nayo ekola, okugeza <code1>{{example1}}</code1> oba <code2>{{example2}}</code2> .",
+    "preview": "Okusooka okulaba (ekyokulabirako eky’okukulembera) .",
+    "enabled": "Kisobozeseddwa",
+    "saveRule": "Teeka Okumanyisibwa",
+    "createRule": "Tonda Okumanyisa",
+    "variables": {
+      "customerName": "Erinnya ly’omukulembeze",
+      "customerMobile": "Kulembera essimu",
+      "customerEmail": "Kulembera email",
+      "registrationId": "ID y'omukulembeze",
+      "status": "Ennyimirira",
+      "subStatus": "Embeera entono",
+      "scheduleAt": "Olunaku & essaawa ezitegekeddwa",
+      "assignedTo": "Omukozesa eyaweebwa",
+      "updatedBy": "Ebipya bya...",
+      "recipient": "Erinnya ly’oyo afuna",
+      "project": "Pulojekiti",
+      "notes": "Ekisembyeyo okuwandiikibwa",
+      "partner": "Erinnya ly’omubeezi"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Amangu ddala nga embeera eteekeddwawo",
+      "AT": "Mu kiseera ekitegekeddwa",
+      "A1D": "Olunaku 1 oluvannyuma lw’obudde obuteekeddwawo (okukebera okugoberera) ."
+    },
+    "immediately": "Mbagirawo",
+    "atScheduled": "Mu kiseera ekigere",
+    "before": {
+      "MINUTES_one": "{{count}} eddakiika nga tebunnatuuka ku ssaawa etegekeddwa",
+      "MINUTES_other": "{{count}} eddakiika nga tezinnaba kutuuka ku ssaawa etegekeddwa",
+      "HOURS_one": "{{count}} essaawa nga tebunnatuuka ku ssaawa etegekeddwa",
+      "HOURS_other": "{{count}} essaawa nga tezinnabaawo ssaawa eziteekeddwawo",
+      "DAYS_one": "{{count}} olunaku nga terunnatuuka ku ssaawa etegekeddwa",
+      "DAYS_other": "{{count}} ennaku nga obudde obutegekeddwa tebunnatuuka",
+      "WEEKS_one": "{{count}} wiiki ng'obudde obutegekeddwa tebunnatuuka",
+      "WEEKS_other": "{{count}} wiiki nga tezinnaba kutuuka ku ssaawa etegekeddwa",
+      "MONTHS_one": "{{count}} omwezi nga tegunnatuuka ku ssaawa etegekeddwa",
+      "MONTHS_other": "{{count}} emyezi nga tebunnatuuka ku ssaawa etegekeddwa",
+      "YEARS_one": "{{count}} omwaka nga tegunnatuuka ku ssaawa etegekeddwa",
+      "YEARS_other": "{{count}} emyaka nga tebunnatuuka ku ssaawa etegekeddwa"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} eddakiika oluvannyuma lw'obudde obutegekeddwa",
+      "MINUTES_other": "{{count}} eddakiika oluvannyuma lw'obudde obutegekeddwa",
+      "HOURS_one": "{{count}} essaawa oluvannyuma lw'essaawa etegekeddwa",
+      "HOURS_other": "{{count}} essaawa oluvannyuma lw'essaawa eziteekeddwawo",
+      "DAYS_one": "{{count}} olunaku oluvannyuma lw'essaawa etegekeddwa",
+      "DAYS_other": "{{count}} ennaku oluvannyuma lw'obudde obutegekeddwa",
+      "WEEKS_one": "{{count}} wiiki oluvannyuma lw'obudde obutegekeddwa",
+      "WEEKS_other": "{{count}} wiiki oluvannyuma lw'obudde obutegekeddwa",
+      "MONTHS_one": "{{count}} omwezi oluvannyuma lw'obudde obutegekeddwa",
+      "MONTHS_other": "{{count}} emyezi oluvannyuma lw'obudde obutegekeddwa",
+      "YEARS_one": "{{count}} omwaka oluvannyuma lw'obudde obutegekeddwa",
+      "YEARS_other": "{{count}} emyaka oluvannyuma lw'obudde obuteekeddwawo"
+    },
+    "units": {
+      "MINUTES_one": "eddakiika",
+      "MINUTES_other": "dakikka",
+      "HOURS_one": "essaawa",
+      "HOURS_other": "saawa",
+      "DAYS_one": "olunaku",
+      "DAYS_other": "ennaku",
+      "WEEKS_one": "sabiiti",
+      "WEEKS_other": "wiiki",
+      "MONTHS_one": "omwezi",
+      "MONTHS_other": "emyezi",
+      "YEARS_one": "omwaka",
+      "YEARS_other": "emyaka"
+    }
+  }
+}

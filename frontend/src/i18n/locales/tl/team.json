@@ -1,0 +1,83 @@
+{
+  "title": "Pamahalaan ang Koponan",
+  "tabs": {
+    "members": "Mga Miyembro ng Koponan",
+    "roles": "Mga Tungkulin at Pahintulot",
+    "profile": "Aking Profile"
+  },
+  "roles": {
+    "owner": "May-ari",
+    "member": "Miyembro ng Koponan"
+  },
+  "profile": {
+    "updated": "Na-update ang profile.",
+    "basicInfo": "Pangunahing Impormasyon",
+    "organisationInfo": "Impormasyon sa Organisasyon",
+    "preferences": "Mga Kagustuhan",
+    "companyName": "Pangalan ng Kumpanya / Organisasyon",
+    "city": "lungsod",
+    "state": "Estado",
+    "currencyHelp": "Ginagamit upang ipakita ang mga badyet at halaga ng booking sa iyong team.",
+    "useDeviceTimezone": "Gamitin ang timezone ng device ( {{timezone}} )",
+    "securityRole": "Seguridad at Tungkulin",
+    "newPassword": "Bagong Password (iwang blangko upang manatiling hindi nagbabago)",
+    "currentPassword": "Kasalukuyang Password",
+    "memberSince": "Member Since",
+    "languageSaved": "Naka-save ang wika sa iyong account - gagamitin ito sa bawat device kung saan ka magsa-sign in."
+  },
+  "members": {
+    "intro": "Magdagdag, mag-edit, mag-deactivate, o mag-alis ng mga tao sa iyong team - nagbabahagi sila ng access sa parehong mga lead.",
+    "noPermission": "Wala kang pahintulot na magdagdag, mag-edit, o mag-alis ng mga miyembro ng team.",
+    "addNew": "+ Magdagdag ng Bagong User",
+    "passwordLabel": "{{label}} (min 8 character)",
+    "rolePermissions": "Tungkulin at Pahintulot",
+    "adding": "Idinaragdag...",
+    "addMember": "Magdagdag ng Miyembro ng Koponan",
+    "tabAll": "Lahat ( {{count}} )",
+    "tabActive": "Aktibo ( {{count}} )",
+    "tabInactive": "Hindi aktibo ( {{count}} )",
+    "searchPlaceholder": "Hanapin ang pangalan o username...",
+    "allTimezones": "Lahat ng timezone",
+    "perPage": "Mga entry sa bawat pahina",
+    "contact": "Makipag-ugnayan",
+    "added": "Idinagdag",
+    "toggleActive": "Aktibo - i-click upang i-deactivate",
+    "toggleInactive": "Hindi aktibo - i-click upang i-activate",
+    "empty": "Wala pang miyembro ng team.",
+    "noMatch": "Walang miyembro ng team ang tumutugma sa mga filter na ito.",
+    "showing": "Ipinapakita ang {{from}} - {{to}} ng {{total}} na mga entry",
+    "firstPage": "Unang pahina",
+    "previousPage": "Nakaraang pahina",
+    "nextPage": "Susunod na pahina",
+    "lastPage": "Huling pahina"
+  },
+  "editMember": {
+    "title": "I-edit ang User",
+    "noPermission": "Wala kang pahintulot na i-edit ang mga miyembro ng team.",
+    "backToTeam": "Bumalik sa Koponan",
+    "cantChangeOwn": "Hindi mo maaaring baguhin ang iyong sariling tungkulin o katayuan.",
+    "needsManageRoles": "Ang pagpapalit ng tungkulin ng isang miyembro ay nangangailangan ng pahintulot na Pamahalaan ang Mga Tungkulin.",
+    "addedBy": "Idinagdag ni",
+    "addedOn": "Idinagdag Sa"
+  },
+  "rolesPage": {
+    "intro": "Ang Super Admin, Admin, at Manager ay built-in at hindi mababago - gumawa ng custom na tungkulin para sa anumang bagay.",
+    "noPermission": "Wala kang pahintulot na pamahalaan ang mga tungkulin.",
+    "createCustom": "+ Lumikha ng Custom na Tungkulin",
+    "roleName": "Pangalan ng Tungkulin",
+    "permissions": "Mga Pahintulot",
+    "members": "Mga miyembro",
+    "creating": "Ginagawa...",
+    "createRole": "Lumikha ng Tungkulin",
+    "systemRole": "Papel ng system",
+    "builtIn": "Naka-built-in",
+    "empty": "Wala pang roles."
+  },
+  "permissions": {
+    "MANAGE_LEADS": "Pamahalaan ang Mga Lead (lumikha, progreso, mag-book)",
+    "MANAGE_TEAM": "Pamahalaan ang Koponan (magdagdag, mag-edit, mag-alis ng mga miyembro)",
+    "MANAGE_ROLES": "Pamahalaan ang Mga Tungkulin at Pahintulot",
+    "MANAGE_SETTINGS": "Pamahalaan ang Mga Setting (mga field ng lead form)",
+    "none": "Walang pahintulot"
+  }
+}

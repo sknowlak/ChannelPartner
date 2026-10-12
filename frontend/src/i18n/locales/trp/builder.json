@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Snamnai Portal",
+    "referrals": "Rohorjakmani",
+    "builderLogin": "Snamnai login",
+    "partnerLogin": "channel bai baksa login"
+  },
+  "login": {
+    "title": "Snamnai sign khaidi",
+    "hint": "Leadrat ni thani swnamjak kha . Nini administrator no swngdi, kebo kwrwi hinkhe."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Nini chongmani bagwi naisingwi tongo",
+    "ACCEPTED": "Yachakjak",
+    "REJECTED": "Yakarjak"
+  },
+  "list": {
+    "title": "Rohorjakmani",
+    "allProjects": "Joto samung",
+    "allStatuses": "Joto tongmung",
+    "count_one": "{{count}} rohorjak",
+    "count_other": "{{count}} rwjakmani",
+    "columns": {
+      "referral": "Rohormani",
+      "customer": "Painai",
+      "project": "Samung bwtang",
+      "sourcePartner": "Buj thumnai",
+      "status": "Kaham hamya",
+      "booking": "Book khaimani",
+      "registered": "Register khlaijak"
+    },
+    "booked": "Book khaijak",
+    "empty": "Tabukbo referral wngya kho."
+  },
+  "detail": {
+    "customer": "Painai",
+    "sourcePartner": "Buj thumnai",
+    "attributionNote": "(swlaijakma - swlaiwi manliya)",
+    "leadStatus": "Lead ni tongmung",
+    "protectedUntil": "2019 jora mwthangjak.",
+    "referral": "Rohormani",
+    "reason": "Kaham: {{reason}}",
+    "booking": "Book khaimani",
+    "bookedOwner": "Book wngkha - nwng wngkha samung tangnai borok",
+    "notBooked": "Book wngya kho",
+    "sharedAfterBooking": "Book khaimani ulo share khaikha",
+    "accept": "Rohorjakmano yachakdi",
+    "confirmBooking": "Book khaimani kokno swmai tangdi",
+    "reject": "Rohorjakmano yakar di",
+    "rejectReasonLabel": "Reject wngmani karon (partner no phunukjak) *",
+    "rejectConfirm": "Chajakya wngmani",
+    "confirmBookingPrompt": "Book wngmani kokno swmai tangkha de? Samung tangnai borok nini thani thango tei baksa samung tangnai borok commission ni bagwi nangkukma wngwi thango.",
+    "notice": {
+      "booked": "Booking wngkha.",
+      "accepted": "Refer wngkha.",
+      "rejected": "Refer khaijakya wngkha."
+    },
+    "backToReferrals": "Rohorjakmani thani kiphilwi phaidi"
+  },
+  "history": {
+    "title": "Laibuma",
+    "actor": {
+      "system": "System",
+      "partner": "channel bai baksa",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Partner ni mung swijak mankha",
+      "DUPLICATE_CHECK_COMPLETED": "Duplicate naiwi naimani páikha - kwrwi wngwi manliya",
+      "REGISTRATION_ACCEPTED": "Registration rwjak kha",
+      "PROTECTION_GRANTED_one": "{{count}} -sal mwthangjak kha",
+      "PROTECTION_GRANTED_other": "{{count}} -sal mwthangjak kha",
+      "STAGE_UPDATED": "{{stage}} o tongmung kwtal wngkha",
+      "LEAD_DETAILS_UPDATED_one": "Kwtal wngkha {{count}} jaga",
+      "LEAD_DETAILS_UPDATED_other": "Kwtal wngkha {{count}} jaga",
+      "LEAD_ASSIGNED": "{{name}} no rwjak",
+      "LEAD_UNASSIGNED": "Samung rwjakya",
+      "REFERRAL_ACCEPTED": "Nok tangnai rohorjakmano yachakkha",
+      "REFERRAL_REJECTED": "Builder rok abono reject khaikha. Kaham: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} bai swijaknani chaitokma rwjakya",
+      "BOOKING_COMPLETED": "Booking wngkha",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Samung tangnai borok Builder ni thani tubujak kha",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partner ni mung mwthangjak kha",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komison ni bagwi manthai snamjak kha",
+      "HANDOVER_COMPLETED": "Yapharmani paikha",
+      "ADMIN_PROTECTION_RELEASED": "Admin duplicate mwthangmung swkangno rwkha. Kaham: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin {{from}} ni simi {{to}} simi swimungno swlaiwi rwkha. Kaham: {{reason}}"
+    }
+  }
+}

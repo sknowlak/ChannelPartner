@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Dipeakanyo",
+    "noPermission": "Ga o na tumelelo ya go laola dipeakanyo."
+  },
+  "categories": {
+    "lead": "Eta pele",
+    "user": "Modiriši",
+    "integrations": "Dikopanyo tša go kopanywa"
+  },
+  "leadTabs": {
+    "fields": "Mašemo",
+    "statuses": "Maemo & Maemo a ka fasana",
+    "notifications": "Ditsebišo & Bapeakanyo"
+  },
+  "fields": {
+    "leadIntro": "Beakanya foromo ya go swara lead: kgontšha/thibela mašemo, a swaya gore a a nyakega, goba o oketše mašemo a gago a tlwaelo.",
+    "userIntro": "Beakanya foromo ya Oketša/Edita Leloko la Sehlopha: kgontšha/thibela mafelo, a swaya gore a a nyakega, goba o oketše mafelo a gago a tlwaelo.",
+    "addCustomField": "+ Oketša Tšhemo ya Tlwaelo",
+    "fieldLabel": "Leina la Tšhemo",
+    "group": "Sehlopha",
+    "groupPlaceholderLead": "mohlala, Tshedimošo ya Dipotšišo",
+    "groupPlaceholderUser": "mohlala Dintlha tša Tlaleletšo",
+    "dataType": "Mohuta wa Datha",
+    "options": "Dikgetho (e arogantšwe ka koma) .",
+    "requiredLead": "Go nyakega - balekane sehlopheng sa gago ba swanetše go tlatša se go ngwadiša ketapele",
+    "requiredUser": "Go nyakega - go swanetše go tlatšwa ge go okeletšwa leloko la sehlopha",
+    "creating": "Go hlola...",
+    "createField": "Hlama Tšhemo",
+    "columns": {
+      "field": "Tšhemo",
+      "group": "Sehlopha",
+      "type": "Mohuta",
+      "required": "Nyakegago",
+      "enabled": "E kgontšhitšwe",
+      "kind": "Mohuta"
+    },
+    "kind": {
+      "custom": "Tlwaelo",
+      "core": "Core (e notletšwe) .",
+      "standard": "Motheo"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Sengwalwa",
+    "TEXTAREA": "Sengwalwa se setelele",
+    "NUMBER": "Nomoro",
+    "CURRENCY": "Mohuta wa tšhelete",
+    "DATE": "Letšatšikgwedi",
+    "SELECT": "Go theoga fase",
+    "LIST": "Lenaneo"
+  },
+  "picker": {
+    "searchPlaceholder": "Batla mabala a lead...",
+    "summary": "{{shown}} e bontšhitšwe · {{mandatory}} e gapeletša",
+    "mandatory": "Kgapeletšo",
+    "noMatch": "Ga go na mašemo ao a swanago."
+  },
+  "statuses": {
+    "intro": "Maemo a gago a go eta pele le maemo a ka fasana - seo yo mongwe le yo mongwe a se kgopelago (letšatšikgwedi & nako, mašemo a go eta pele) ge motho a mpshafatša lead go yona.",
+    "add": "+ Oketša Boemo",
+    "columns": {
+      "order": "Tatelano",
+      "status": "Maemo",
+      "subStatuses": "Maemo a ka fasana",
+      "asksFor": "E Kgopela",
+      "active": "Mafolofolo"
+    },
+    "moveUp": "Tlogela godimo",
+    "moveDown": "Suthela fase",
+    "defaultBadge": "Default bakeng sa di-lead tše mpsha",
+    "bookingBadge": "Boemo bja go beakanya",
+    "asksForLabel": "E kgopela {{label}}",
+    "asksForDateTime": "E kgopela date & nako",
+    "none": "Ga go selo",
+    "dateTime": "Letšatšikgwedi & nako",
+    "scheduledOn": "ka {{names}}",
+    "fieldsSummary_one": "{{count}} tšhemo ( {{mandatory}} kgapeletšo)",
+    "fieldsSummary_other": "{{count}} masimo ( {{mandatory}} kgapeletšo)",
+    "deleteConfirm": "Phimola boemo \" {{name}} \"? Se se ka se dirwe morago.",
+    "editTitle": "Edita Boemo - {{name}}",
+    "newTitle": "Boemo bjo Bofsa",
+    "name": "Leina la Boemo",
+    "colour": "Mmala",
+    "active": "Mafolofolo",
+    "isDefault": "Boemo bja tlwaelo bja di-lead tše mpsha",
+    "isBooking": "Boemo bja go beakanya (se beilwe ke Peeletšo e Feletšego) .",
+    "whenMoved": "Ge lead e šuthišetšwa maemong a",
+    "askSchedule": "Kgopela letšatšikgwedi & nako (mothulaganyi) .",
+    "scheduleLabelPlaceholder": "Leibole, mohlala, Etela go",
+    "fieldsToShow": "Eta pele mabala go bontšha ka foromo ya mpshafatšo",
+    "subStatusesTitle": "Maemo a ka fasana",
+    "subStatusesHint": "Boemo bjo bongwe le bjo bongwe bja ka fasana bo ka kgopela letšatšikgwedi & nako ya bjona gomme ya oketša mašemo a bjona - a bontšhitšwe godimo ga mašemo a maemo ka godimo.",
+    "subStatusName": "Leina la maemo a ka fasana",
+    "subFields": "Mabala ( {{count}} ) .",
+    "subScheduleLabelPlaceholder": "Letšatšikgwedi & nako leina, mohlala, Letša morago go",
+    "addSubStatus": "+ Oketša Boemo bja ka fasana",
+    "saveStatus": "Boloka Boemo",
+    "createStatus": "Hlama Boemo"
+  },
+  "notifications": {
+    "intro": "Tsebiša batho ba maleba ge lead e fihla maemong - ka pela, goba nako ye e beilwego pele/ka morago ga letšatšikgwedi & nako yeo e rulagantšwego go yona.",
+    "add": "+ Oketša Tsebišo",
+    "columns": {
+      "notification": "Tsebišo",
+      "whenStatusIs": "Ge Boemo bo le",
+      "sends": "E romela",
+      "to": "Go",
+      "via": "Ka tsela ya",
+      "enabled": "E kgontšhitšwe"
+    },
+    "anyStatus": "Boemo bofe kapa bofe",
+    "anySubStatus": "Boemo bofe goba bofe bja ka fasana",
+    "inactiveOption": "{{name}} (e sa šome) .",
+    "emptyRules": "Ga go na ditsebišo go fihla ga bjale - oketša e tee go lemoša sehlopha sa gago ge lead e fihla maemong.",
+    "jobs": {
+      "title": "E Rulagantšwe & E Rometšwe",
+      "firesAt": "Mello Ka",
+      "notification": "Tsebišo",
+      "lead": "Eta pele",
+      "status": "Maemo",
+      "details": "Dintlha",
+      "empty": "Ga go selo seo se rulagantšwego goba seo se rometšwego go fihla ga bjale.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Letetšwe",
+      "PROCESSING": "Tshepetšo",
+      "SENT": "Rometše",
+      "FAILED": "Paletšwe",
+      "SKIPPED": "E tloletšwe",
+      "CANCELLED": "E phumotšwe"
+    },
+    "deliveryStatus": {
+      "SENT": "rometše",
+      "FAILED": "paletšwe",
+      "SKIPPED": "a tlola"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ka gare ga tirišo",
+      "EMAIL": "imeile",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Modiriši yo a abetšwego",
+      "owner": "Mong",
+      "updatedBy": "E mpshafaditšwe ke",
+      "role": "Karolo: {{name}}"
+    },
+    "channels": {
+      "inApp": "Ka gare ga tirišo",
+      "email": "Imeile",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Phimola tsebišo \" {{name}} \"? Dikgopotšo tše di sa emetšego go tšwa go yona di a phumolwa.",
+    "testPrompt": "Romela teko ya tsebišo ye go wena (ka gare ga tirišo) o diriša ID efe ya go eta pele ?",
+    "testSent": "E rometšwe go tšhipi ya gago: {{title}} {{message}}",
+    "headersInvalid": "Dihlogo tša Webhook di swanetše go ba JSON ye e šomago , mohlala {\"Tumelelo\": \"Morwadi xyz\"}",
+    "editTitle": "Edita Tsebišo",
+    "newTitle": "Tsebišo ye Mpsha",
+    "name": "Leina",
+    "namePlaceholder": "mohlala Kgopotšo ya ketelo ya lefelo",
+    "whenStatus": "Ge maemo a lead e le",
+    "subStatus": "Boemo bja ka fasana",
+    "send": "Romela (mothulaganyi) .",
+    "custom": "Tlwaelo...",
+    "modeBefore": "pele ga nako yeo e rulagantšwego",
+    "modeAfter": "ka morago ga nako yeo e rulagantšwego",
+    "noScheduleWarning": "Boemo bjo ga bo kgopele letšatšikgwedi & nako, ka fao tsebišo ya \"pele/ka/ka morago ga nako ye e rulagantšwego\" e be e ka se tsoge e thunya.",
+    "noScheduleFix": "Bulela <strong>Kgopela letšatšikgwedi & nako</strong> ya yona ka fase ga Maemo & Maemo a ka fasana, goba o romele Ka pela.",
+    "sendTo": "Romela go (motswako ofe goba ofe) .",
+    "recipientAssigned": "Modiriši yo a abetšwego (mong wa go eta pele) .",
+    "recipientOwner": "Mong wa akhaonto / admin",
+    "recipientUpdatedBy": "Motho yo a mpshafaditšego maemo",
+    "everyoneWithRole": "Motho yo mongwe le yo mongwe yo a nago le tema",
+    "specificUsers": "Badiriši ba itšego (ba šomago) .",
+    "inactiveNever": "Badiriši bao ba sa šomego ga ba ke ba amogela ditsebišo, le ge ba kgethilwe.",
+    "deliverVia": "Go tliša ka",
+    "channelInApp": "Ka gare ga tirišo (tšepe) .",
+    "channelEmail": "Imeile",
+    "channelWebhook": "Webhook ( Mofani WhatsApp / SMS ) .",
+    "emailHint": "Imeile e ya atereseng ya imeile ya moamogedi yo mongwe le yo mongwe gomme e nyaka SMTP yeo e hlomilwego go seva (backend/.env); go fihla ka nako yeo imeile romela di logged e le tlolo.",
+    "webhookUrl": "URL Webhook ( POST , JSON ) .",
+    "headers": "Dihlogo ( JSON ) .",
+    "content": "Diteng tša tsebišo",
+    "title": "Thaetlele",
+    "message": "Molaetša",
+    "insertIntoTitle": "Tsenya ka gare ga Sehlogo",
+    "insertIntoMessage": "Tsenya ka gare ga Molaetša",
+    "anyLeadField": "Tšhemo efe goba efe ya lloto le yona e a šoma, mohlala <code1>{{example1}}</code1> goba <code2>{{example2}}</code2> .",
+    "preview": "Tebelelopele (mohlala wa ketapele) .",
+    "enabled": "E kgontšhitšwe",
+    "saveRule": "Boloka Tsebišo",
+    "createRule": "Hlama Tsebišo",
+    "variables": {
+      "customerName": "Lebitso la etella pele",
+      "customerMobile": "Etela pele selefouno",
+      "customerEmail": "Etela pele imeile",
+      "registrationId": "ID ya go eta pele",
+      "status": "Maemo",
+      "subStatus": "Boemo bja ka fasana",
+      "scheduleAt": "Letšatšikgwedi le le rulagantšwego & nako",
+      "assignedTo": "Modiriši yo a abetšwego",
+      "updatedBy": "E mpshafaditšwe ke",
+      "recipient": "Leina la moamogedi",
+      "project": "Protšeke",
+      "notes": "Noutu ya moragorago",
+      "partner": "Leina la molekane"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Gateetee ge maemo a beakantšwe",
+      "AT": "Ka nako yeo e rulagantšwego",
+      "A1D": "1 letšatši ka morago ga nako ye e rulagantšwego (tlhahlobo ya go latela) ."
+    },
+    "immediately": "Ka potlako",
+    "atScheduled": "Ka nako ye e rulagantšwego",
+    "before": {
+      "MINUTES_one": "{{count}} motsotso pele ga nako ye e rulagantšwego",
+      "MINUTES_other": "{{count}} metsotso pele ga nako ye e rulagantšwego",
+      "HOURS_one": "{{count}} iri pele ga nako ye e rulagantšwego",
+      "HOURS_other": "{{count}} diiri pele ga nako ye e rulagantšwego",
+      "DAYS_one": "{{count}} letšatši pele ga nako ye e rulagantšwego",
+      "DAYS_other": "{{count}} matšatši pele ga nako ye e rulagantšwego",
+      "WEEKS_one": "{{count}} beke pele ga nako ye e rulagantšwego",
+      "WEEKS_other": "{{count}} dibeke pele ga nako ye e rulagantšwego",
+      "MONTHS_one": "{{count}} kgwedi pele ga nako ye e rulagantšwego",
+      "MONTHS_other": "{{count}} dikgwedi pele ga nako ye e rulagantšwego",
+      "YEARS_one": "{{count}} ngwaga pele ga nako ye e rulagantšwego",
+      "YEARS_other": "{{count}} mengwaga pele ga nako ye e rulagantšwego"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} motsotso ka morago ga nako ye e rulagantšwego",
+      "MINUTES_other": "{{count}} metsotso ka morago ga nako ye e rulagantšwego",
+      "HOURS_one": "{{count}} iri ka morago ga nako ye e rulagantšwego",
+      "HOURS_other": "{{count}} diiri ka morago ga nako ye e rulagantšwego",
+      "DAYS_one": "{{count}} letšatši ka morago ga nako ye e rulagantšwego",
+      "DAYS_other": "{{count}} matšatši ka morago ga nako ye e rulagantšwego",
+      "WEEKS_one": "{{count}} beke ka morago ga nako ye e rulagantšwego",
+      "WEEKS_other": "{{count}} dibeke ka morago ga nako ye e rulagantšwego",
+      "MONTHS_one": "{{count}} kgwedi ka morago ga nako ye e rulagantšwego",
+      "MONTHS_other": "{{count}} dikgwedi ka morago ga nako ye e rulagantšwego",
+      "YEARS_one": "{{count}} ngwaga ka morago ga nako ye e rulagantšwego",
+      "YEARS_other": "{{count}} mengwaga ka morago ga nako ye e rulagantšwego"
+    },
+    "units": {
+      "MINUTES_one": "motsotso",
+      "MINUTES_other": "metsotso",
+      "HOURS_one": "iri",
+      "HOURS_other": "diiri",
+      "DAYS_one": "letšatši",
+      "DAYS_other": "matšatši",
+      "WEEKS_one": "beke",
+      "WEEKS_other": "dibeke tše dingwe",
+      "MONTHS_one": "kgwedi",
+      "MONTHS_other": "dikgwedi",
+      "YEARS_one": "ngwaga",
+      "YEARS_other": "mengwaga"
+    }
+  }
+}

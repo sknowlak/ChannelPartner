@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Jotelo maga",
+    "signedInAs": "Odonjo kaka {{name}} ( {{partnerId}} ) · seche ma onyis e {{timezone}}",
+    "addLead": "+ Med jotelo",
+    "tabs": {
+      "all": "Giduto ( {{count}} )",
+      "pending": "Orito ( {{count}} )",
+      "booked": "Oketo ( {{count}} )"
+    },
+    "searchPlaceholder": "Many ka itiyo gi nying, simu, kata ID mar ndiko ...",
+    "manageColumns": "Rit Kolom",
+    "rowsPerPage": "Row ka pej",
+    "registrationId": "ID mar ndiko",
+    "emptyState": "Onge lead ma pod nitie - ndikri nying’ mari mokwongo.",
+    "noMatch": "Onge lead ma chal gi filta gi.",
+    "showing": "Nyiso {{from}} - {{to}} mar {{total}} weche modonjo",
+    "actions": {
+      "preview": "Neno motelo kendo loso mapiyo",
+      "history": "Sigana",
+      "email": "Imel",
+      "whatsapp": "WhatsApp",
+      "call": "Luongo"
+    },
+    "pagination": {
+      "first": "Oboke mokwongo",
+      "previous": "Oboke mokalo",
+      "next": "Oboke maluwo",
+      "last": "Oboke mogik"
+    }
+  },
+  "columns": {
+    "status": "Kare",
+    "assignTo": "Chiw ne",
+    "booked": "Oketi",
+    "protectionUntil": "Rieko nyaka"
+  },
+  "booking": {
+    "booked": "Oketi",
+    "pending": "Pok otimore"
+  },
+  "assign": {
+    "unassigned": "Ok omiye",
+    "owner": "{{name}} (Wuon)",
+    "inactive": "{{name}} (ok ti)",
+    "unknownUser": "Ng'at ma ok ong'ere",
+    "assignedTo": "Ochiw ne {{name}}"
+  },
+  "form": {
+    "addTitle": "Med jotelo",
+    "editTitle": "Loki Jatelo",
+    "noPermissionAdd": "Ok in kod ratiro mar ndiko nying’ jogo ma idwaro.",
+    "noPermissionEdit": "Ok in kod ratiro mar loko lead.",
+    "selectPlaceholder": "Yier...",
+    "commaSeparated": "Koma opogore",
+    "phonePlaceholder": "Namba mar simu",
+    "countryCode": "Kod mar piny"
+  },
+  "project": {
+    "none": "Onge chenro ma pod (ok ondiki)",
+    "notInList": "{{project}} (ok ni e listi mar chenro)"
+  },
+  "journey": {
+    "customer": "Jang'iepo",
+    "currentOwner": "Wuon ot ma sani",
+    "protectionExpiry": "Tich mar rito",
+    "leadStatus": "Kido mar Jatelo",
+    "scheduled": "Oket chenro",
+    "assignedTo": "Ochiw ne",
+    "referral": "Ooro",
+    "builderReason": "Gimomiyo jagedo: {{reason}}",
+    "bookedHint": "Obuke gi jagedo - wuon tich osedhi ne jagedo; ng’eyo mari kod ratiro mari mar komison oket.",
+    "notBookedHint": "Joma gero otno ng’ado bura kuomgi bang’ ka giseyie gi ng’at ma oseorogi.",
+    "quickUpdate": "Update mapiyo",
+    "leadDetails": "Weche matut mag telo",
+    "progressHistory": "Sigana mar dhi nyime",
+    "timesIn": "(seche e {{timezone}} )",
+    "backToMyLeads": "Dwogo e Joma Atelo",
+    "editLead": "Loki Jatelo"
+  },
+  "referral": {
+    "NOT_REFERRED": "Ok oter (onge chenro)",
+    "PENDING_BUILDER": "Orito jagedo",
+    "ACCEPTED": "Oyie gi jagedo",
+    "REJECTED": "Odagi gi jagedo"
+  },
+  "preview": {
+    "ariaLabel": "Neno motelo",
+    "title": "Neno motelo",
+    "source": "Kuma oaye",
+    "location": "Kuma entie",
+    "scheduled": "Oket chenro",
+    "registered": "Ondiki nyinge",
+    "latestNote": "Oboke masani",
+    "quickUpdate": "Update mapiyo",
+    "fullDetails": "Weche duto",
+    "editLead": "Loki Jatelo",
+    "history": "Sigana"
+  },
+  "quick": {
+    "assignedTo": "Ochiw ne",
+    "status": "Kare",
+    "subStatus": "Kido matin",
+    "selectSubStatus": "Yier chal matin...",
+    "none": "Onge",
+    "scheduledAt": "Oketo chenro saa",
+    "localTime": "saa mar pinyno",
+    "note": "Ndik piny",
+    "notePlaceholder": "Ang’o ma ne otimore e simu / limo ma kamano? (ok ochuno)",
+    "updateStatus": "Loki chal",
+    "statusUpdated": "Oketo chal",
+    "bookedLocked": "Lead ni oseket - rang’iny mare ok nyal lokore kendo.",
+    "viewOnly": "Inyalo neno lead ni, to tich mari ok nyal loso."
+  },
+  "history": {
+    "title": "Sigana - {{registrationId}}",
+    "tabs": {
+      "all": "Duto",
+      "status": "Kare",
+      "assignment": "Tich",
+      "notes": "Ndiko"
+    },
+    "doneBy": "Otim gi {{actor}}",
+    "system": "Chenro",
+    "platforms": {
+      "System": "Chenro",
+      "External": "Maoko",
+      "Web": "Mbui",
+      "Mobile": "Sime mar lwedo"
+    },
+    "added": "omedo",
+    "updated": "Oket manyien",
+    "empty": "(ni nono)",
+    "noHistory": "Onge historia e kidienyni nyaka sani.",
+    "fieldLabels": {
+      "stage": "Kare",
+      "subStatus": "Kido matin",
+      "scheduledAt": "Chenro",
+      "notes": "Ndiko",
+      "assignedTo": "Ochiw ne"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Rejistreson mar jowete oseyudo",
+      "DUPLICATE_CHECK_COMPLETED": "Chek mar duplikat osetieko - onge duplikat matiyo mayudore",
+      "REGISTRATION_ACCEPTED": "Oyie gi ndiko nying'",
+      "PROTECTION_GRANTED_one": "{{count}} -ochieng' mar rito",
+      "PROTECTION_GRANTED_other": "{{count}} -ochieng' mar rito",
+      "REGISTRATION_ATTEMPT_REJECTED": "Tem mar ndiko nying’ mar {{partnerId}} odagi",
+      "LEAD_DETAILS_UPDATED_one": "Otim lokruok mar {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} ma olosi",
+      "STAGE_UPDATED": "Kido oselokre obed {{status}}",
+      "LEAD_ASSIGNED": "Ochiw ne {{name}}",
+      "LEAD_UNASSIGNED": "Ok omiye",
+      "BOOKING_COMPLETED": "Buking osetieko",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Owruok mar tich oter ne Jagedo",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Nyis mar jowete oriti",
+      "COMMISSION_ELIGIBILITY_CREATED": "Ratiro mar komison noloso",
+      "HANDOVER_COMPLETED": "Chiwruok osetieko",
+      "REFERRAL_ACCEPTED": "Jagedo noyie gi ng'at mane oorone",
+      "REFERRAL_REJECTED": "Jagedo nodagi ng’ado burano. Gimomiyo: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin nogolo arita maromre mapiyo. Gimomiyo: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Jatend piny noloko nying’ kowuok e {{from}} nyaka {{to}} . Gimomiyo: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Rit Kolom",
+    "hint": "Dwok mondo ior kendo · Rang mondo onyis",
+    "showAll": "Nyis Duto",
+    "resetDefault": "Ket kendo kaka machon"
+  },
+  "filters": {
+    "title": "Filta",
+    "allProjects": "Projek duto",
+    "any": "Moroamora",
+    "noFields": "Onge kuonde mamoko ma inyalo filter ma oseket (Sete > Lead).",
+    "clearAll": "Gol oko duto"
+  },
+  "phone": {
+    "MISSING": "Namba mar simu dwarore.",
+    "INVALID": "Yie mondo iket namba mar simu ma owinjore.",
+    "TOO_SHORT": "Namba mar simu en namba matin ahinya.",
+    "TOO_LONG": "Namba mar simu bor ahinya.",
+    "INVALID_FOR_COUNTRY": "Namba mar simu ni ok owinjore ne {{country}} .",
+    "COUNTRY_MISMATCH": "Yie kod mar piny ma owinjore.",
+    "NOT_MOBILE": "Yie mondo iket namba mar simu, to ok mar simu ma itiyogo."
+  }
+}

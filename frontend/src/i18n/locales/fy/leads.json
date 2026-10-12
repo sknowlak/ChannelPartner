@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Myn leads",
+    "signedInAs": "Oanmelde as {{name}} ( {{partnerId}} ) · tiden werjûn yn {{timezone}}",
+    "addLead": "+ Lead tafoegje",
+    "tabs": {
+      "all": "Alle ( {{count}} )",
+      "pending": "Wachtsjen ( {{count}} )",
+      "booked": "Boeke ( {{count}} )"
+    },
+    "searchPlaceholder": "Sykje op namme, mobyl, of registraasje- ID ...",
+    "manageColumns": "Kolommen beheare",
+    "rowsPerPage": "Rigen per side",
+    "registrationId": "Registraasje ID",
+    "emptyState": "Noch gjin leads - registrearje jo earste.",
+    "noMatch": "Gjin leads oerienkomme mei dizze filters.",
+    "showing": "Toant {{from}} - {{to}} fan {{total}} ynstjoerings",
+    "actions": {
+      "preview": "Foarbyld en rappe update",
+      "history": "Skiednis",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Belje"
+    },
+    "pagination": {
+      "first": "Earste side",
+      "previous": "Foarige side",
+      "next": "Folgjende side",
+      "last": "Lêste side"
+    }
+  },
+  "columns": {
+    "status": "Status",
+    "assignTo": "Tawize oan",
+    "booked": "Boeke",
+    "protectionUntil": "Beskerming oant"
+  },
+  "booking": {
+    "booked": "Boeke",
+    "pending": "Yn ôfwachting"
+  },
+  "assign": {
+    "unassigned": "Net tawiisd",
+    "owner": "{{name}} (Eigner)",
+    "inactive": "{{name}} (ynaktyf)",
+    "unknownUser": "Unbekende brûker",
+    "assignedTo": "Tawiisd oan {{name}}"
+  },
+  "form": {
+    "addTitle": "Lead tafoegje",
+    "editTitle": "Lead bewurkje",
+    "noPermissionAdd": "Jo hawwe gjin tastimming om leads te registrearjen.",
+    "noPermissionEdit": "Jo hawwe gjin tastimming om leads te bewurkjen.",
+    "selectPlaceholder": "Selektearje...",
+    "commaSeparated": "Komma skieden",
+    "phonePlaceholder": "Tillefoannûmer",
+    "countryCode": "Lân koade"
+  },
+  "project": {
+    "none": "Noch gjin projekt (net ferwiisd)",
+    "notInList": "{{project}} (net yn 'e projektlist)"
+  },
+  "journey": {
+    "customer": "Klant",
+    "currentOwner": "Aktuele eigner",
+    "protectionExpiry": "Beskerming Expiry",
+    "leadStatus": "Lead Status",
+    "scheduled": "Planne",
+    "assignedTo": "Tawiisd oan",
+    "referral": "Ferwizing",
+    "builderReason": "Reden fan bouwer: {{reason}}",
+    "bookedHint": "Boekt troch de bouwer - operasjoneel eigendom is ferhuze nei de bouwer; jo taskriuwing en kommisje-kwalifikaasje wurde bewarre.",
+    "notBookedHint": "Boekingen wurde befêstige troch de bouwer as se de ferwizing akseptearje.",
+    "quickUpdate": "Quick Update",
+    "leadDetails": "Lead Details",
+    "progressHistory": "Progress Skiednis",
+    "timesIn": "(tiden yn {{timezone}} )",
+    "backToMyLeads": "Werom nei My Leads",
+    "editLead": "Lead bewurkje"
+  },
+  "referral": {
+    "NOT_REFERRED": "Net ferwiisd (gjin projekt)",
+    "PENDING_BUILDER": "Wachtsje op bouwer",
+    "ACCEPTED": "Akseptearre troch bouwer",
+    "REJECTED": "Ofwiisd troch bouwer"
+  },
+  "preview": {
+    "ariaLabel": "Lead preview",
+    "title": "Lead Preview",
+    "source": "Boarne",
+    "location": "Lokaasje",
+    "scheduled": "Planne",
+    "registered": "Registrearre",
+    "latestNote": "Lêste Notysje",
+    "quickUpdate": "Quick Update",
+    "fullDetails": "Folsleine Details",
+    "editLead": "Lead bewurkje",
+    "history": "Skiednis"
+  },
+  "quick": {
+    "assignedTo": "Tawiisd oan",
+    "status": "Status",
+    "subStatus": "Sub-Status",
+    "selectSubStatus": "Selektearje sub-status...",
+    "none": "Gjin",
+    "scheduledAt": "Planne at",
+    "localTime": "lokale tiid",
+    "note": "Noat",
+    "notePlaceholder": "Wat barde op dizze oprop / besite? (fakultatyf)",
+    "updateStatus": "Update Status",
+    "statusUpdated": "Status bywurke",
+    "bookedLocked": "Dizze lead is boekt - syn status kin net mear wizige wurde.",
+    "viewOnly": "Jo kinne dizze lead besjen, mar jo rol kin it net bywurkje."
+  },
+  "history": {
+    "title": "Skiednis - {{registrationId}}",
+    "tabs": {
+      "all": "Alle",
+      "status": "Status",
+      "assignment": "Opdracht",
+      "notes": "Notysjes"
+    },
+    "doneBy": "Dien troch {{actor}}",
+    "system": "Systeem",
+    "platforms": {
+      "System": "Systeem",
+      "External": "Ekstern",
+      "Web": "Web",
+      "Mobile": "Mobyl"
+    },
+    "added": "tafoege",
+    "updated": "fernijd",
+    "empty": "(leech)",
+    "noHistory": "Der is noch gjin skiednis yn dizze kategory.",
+    "fieldLabels": {
+      "stage": "Status",
+      "subStatus": "Sub-Status",
+      "scheduledAt": "Skema",
+      "notes": "Notysjes",
+      "assignedTo": "Tawiisd oan"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Partnerregistraasje ûntfongen",
+      "DUPLICATE_CHECK_COMPLETED": "Duplikaatkontrôle foltôge - gjin aktyf duplikaat fûn",
+      "REGISTRATION_ACCEPTED": "Registraasje akseptearre",
+      "PROTECTION_GRANTED_one": "{{count}} -dagen beskerming ferliend",
+      "PROTECTION_GRANTED_other": "{{count}} -dagen beskerming ferliend",
+      "REGISTRATION_ATTEMPT_REJECTED": "Dûbele registraasjepoging troch {{partnerId}} ôfwiisd",
+      "LEAD_DETAILS_UPDATED_one": "Bywurke {{count}} fjild",
+      "LEAD_DETAILS_UPDATED_other": "Bywurke {{count}} fjilden",
+      "STAGE_UPDATED": "Status bywurke nei {{status}}",
+      "LEAD_ASSIGNED": "Tawiisd oan {{name}}",
+      "LEAD_UNASSIGNED": "Net tawiisd",
+      "BOOKING_COMPLETED": "Reservearring klear",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operasjoneel eigendom oerdroegen oan Bouwer",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partner taskriuwing bewarre bleaun",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kommisje eligibility makke",
+      "HANDOVER_COMPLETED": "Oerdracht klear",
+      "REFERRAL_ACCEPTED": "Bouwer akseptearre de ferwizing",
+      "REFERRAL_REJECTED": "Bouwer hat de ferwizing ôfwiisd. Reden: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin hat dûbele beskerming betiid frijlitten. Reden: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Behearder hat registraasje fan {{from}} opnij tawiisd oan {{to}} . Reden: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Kolommen beheare",
+    "hint": "Sleep om opnij oarder te meitsjen · kontrolearje om te sjen",
+    "showAll": "Alles sjen litte",
+    "resetDefault": "Weromsette nei Standert"
+  },
+  "filters": {
+    "title": "Filters",
+    "allProjects": "Alle projekten",
+    "any": "Elk",
+    "noFields": "Gjin oare filterbere fjilden binne noch ynskeakele (Ynstellings> Lead).",
+    "clearAll": "Alles wiskje"
+  },
+  "phone": {
+    "MISSING": "Tillefoannûmer is fereaske.",
+    "INVALID": "Fier in jildich telefoannûmer yn.",
+    "TOO_SHORT": "Tillefoannûmer is te koart.",
+    "TOO_LONG": "Tillefoannûmer is te lang.",
+    "INVALID_FOR_COUNTRY": "Dit telefoannûmer is net jildich foar {{country}} .",
+    "COUNTRY_MISMATCH": "Selektearje asjebleaft de juste lânkoade.",
+    "NOT_MOBILE": "Fier asjebleaft in mobyl nûmer yn, net in fêste line."
+  }
+}

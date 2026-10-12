@@ -1,0 +1,83 @@
+{
+  "title": "Pārvaldīt komandu",
+  "tabs": {
+    "members": "Komandas dalībnieki",
+    "roles": "Lomas un atļaujas",
+    "profile": "Mans profils"
+  },
+  "roles": {
+    "owner": "Īpašnieks",
+    "member": "Komandas dalībnieks"
+  },
+  "profile": {
+    "updated": "Profils atjaunināts.",
+    "basicInfo": "Pamatinformācija",
+    "organisationInfo": "Organizācijas informācija",
+    "preferences": "Preferences",
+    "companyName": "Uzņēmuma/organizācijas nosaukums",
+    "city": "Pilsēta",
+    "state": "valsts",
+    "currencyHelp": "Izmanto, lai jūsu komandā parādītu budžetus un rezervācijas vērtības.",
+    "useDeviceTimezone": "Izmantot ierīces laika joslu ( {{timezone}} )",
+    "securityRole": "Drošība un loma",
+    "newPassword": "Jauna parole (atstājiet tukšu, lai nemainītu)",
+    "currentPassword": "Pašreizējā parole",
+    "memberSince": "Biedrs Kopš",
+    "languageSaved": "Jūsu kontā saglabātā valoda — tā tiks izmantota katrā ierīcē, kurā pierakstīsieties."
+  },
+  "members": {
+    "intro": "Pievienojiet, rediģējiet, deaktivizējiet vai noņemiet personas savā komandā — viņiem ir kopīga piekļuve tiem pašiem potenciālajiem pirkumiem.",
+    "noPermission": "Jums nav atļaujas pievienot, rediģēt vai noņemt komandas dalībniekus.",
+    "addNew": "+ Pievienot jaunu lietotāju",
+    "passwordLabel": "{{label}} (vismaz 8 rakstzīmes)",
+    "rolePermissions": "Loma un atļaujas",
+    "adding": "Notiek pievienošana...",
+    "addMember": "Pievienot komandas locekli",
+    "tabAll": "Visi ( {{count}} )",
+    "tabActive": "Aktīvs ( {{count}} )",
+    "tabInactive": "Neaktīvs ( {{count}} )",
+    "searchPlaceholder": "Meklēt vārdu vai lietotājvārdu...",
+    "allTimezones": "Visas laika joslas",
+    "perPage": "Ieraksti katrā lapā",
+    "contact": "Sazināties",
+    "added": "Pievienots",
+    "toggleActive": "Aktīvs — noklikšķiniet, lai deaktivizētu",
+    "toggleInactive": "Neaktīvs — noklikšķiniet, lai aktivizētu",
+    "empty": "Komandas dalībnieku vēl nav.",
+    "noMatch": "Neviens komandas dalībnieks neatbilst šiem filtriem.",
+    "showing": "Rāda {{from}} - {{to}} no {{total}} ierakstiem",
+    "firstPage": "Pirmā lapa",
+    "previousPage": "Iepriekšējā lapa",
+    "nextPage": "Nākamā lapa",
+    "lastPage": "Pēdējā lapa"
+  },
+  "editMember": {
+    "title": "Rediģēt lietotāju",
+    "noPermission": "Jums nav atļaujas rediģēt komandas dalībniekus.",
+    "backToTeam": "Atpakaļ uz komandu",
+    "cantChangeOwn": "Jūs nevarat mainīt savu lomu vai statusu.",
+    "needsManageRoles": "Lai mainītu dalībnieka lomu, ir nepieciešama lomu pārvaldības atļauja.",
+    "addedBy": "Pievienoja",
+    "addedOn": "Pievienots"
+  },
+  "rolesPage": {
+    "intro": "Īpašais administrators, administrators un pārvaldnieks ir iebūvēti, un tos nevar mainīt — izveidojiet pielāgotu lomu jebkam citam.",
+    "noPermission": "Jums nav atļaujas pārvaldīt lomas.",
+    "createCustom": "+ Izveidojiet pielāgotu lomu",
+    "roleName": "Lomas nosaukums",
+    "permissions": "Atļaujas",
+    "members": "Biedri",
+    "creating": "Notiek izveide...",
+    "createRole": "Izveidot lomu",
+    "systemRole": "Sistēmas loma",
+    "builtIn": "Iebūvēts",
+    "empty": "Vēl nav lomu."
+  },
+  "permissions": {
+    "MANAGE_LEADS": "Pārvaldīt potenciālos klientus (izveidot, virzīties uz priekšu, rezervēt)",
+    "MANAGE_TEAM": "Pārvaldīt komandu (pievienot, rediģēt, noņemt dalībniekus)",
+    "MANAGE_ROLES": "Pārvaldīt lomas un atļaujas",
+    "MANAGE_SETTINGS": "Pārvaldīt iestatījumus (potenciālā pirkuma veidlapas lauki)",
+    "none": "Nav atļauju"
+  }
+}

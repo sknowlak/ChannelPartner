@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Setin",
+    "noPermission": "Nyiro izǝnyi settingsbe cistǝgǝbe bawo."
+  },
+  "categories": {
+    "lead": "Jetə",
+    "user": "Faidatǝma",
+    "integrations": "Kǝltǝ"
+  },
+  "leadTabs": {
+    "fields": "Barewa",
+    "statuses": "Daraja-a Daraja-Gana-a",
+    "notifications": "Warmatǝgǝ-a kuru Jadawa-a"
+  },
+  "fields": {
+    "leadIntro": "Form lead capturebedəga fasaltə: nadəga yitagattəgə/batə, sandiya məradətənaro alamtəgə, au nadəga kəlanzəlaro yira.",
+    "userIntro": "Form Add/Edit Team Memberbedəga fasaltə: nashawadəga yitagattəgə/batə, sandiya məradətənaro alamtə, au nashawa kəlanzəbe yitagattəgə.",
+    "addCustomField": "+ Na Kulashiye yira",
+    "fieldLabel": "Alama Fieldbe",
+    "group": "Samno",
+    "groupPlaceholderLead": "misallo Bayan Korobe",
+    "groupPlaceholderUser": "misallo Bayanna Nzəra",
+    "dataType": "Jili Bayannabe",
+    "options": "Karnowa (comma yekkata)",
+    "requiredLead": "Mǝradǝtǝna - gawilma karafkanǝmbe mburo walzǝna adǝga yimbule fuwuma rajista diwo nankaro",
+    "requiredUser": "Mǝradǝtǝna - mburo walzǝna loktu memba karafkadǝbe tǝrayinlan",
+    "creating": "Tando...",
+    "createField": "Field kunkunne",
+    "columns": {
+      "field": "Fili",
+      "group": "Samno",
+      "type": "Jili",
+      "required": "Məradətəna",
+      "enabled": "Muwonzəna",
+      "kind": "Ngəla"
+    },
+    "kind": {
+      "custom": "Ada",
+      "core": "Dawu (zakkata)",
+      "standard": "Kərtilo"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Matən",
+    "TEXTAREA": "Ruwo kuruwu",
+    "NUMBER": "Lamba",
+    "CURRENCY": "Kungəna",
+    "DATE": "Sartə",
+    "SELECT": "Cidiyaro gǝnatǝ",
+    "LIST": "Ruwotə"
+  },
+  "picker": {
+    "searchPlaceholder": "Kulashi fuwumabe...",
+    "summary": "{{shown}} fǝletǝna · {{mandatory}} mbu",
+    "mandatory": "Mbu",
+    "noMatch": "Fannuwa matchbe ba."
+  },
+  "statuses": {
+    "intro": "Daraja fuwuma ye-a kuru daraja gana-a - awo falnzawoso majin də (kəntawu-a loktu-a, na fuwuma ye) loktu kam laa fuwuma dəga update sədin ma.",
+    "add": "+ Daraja yira",
+    "columns": {
+      "order": "Dowo",
+      "status": "Daraja",
+      "subStatuses": "Daraja-Gana",
+      "asksFor": "Kowo",
+      "active": "Mazaar"
+    },
+    "moveUp": "Samiro lenəmin",
+    "moveDown": "Cidiyaro lenəmin",
+    "defaultBadge": "Fuwumawa bəlinro default",
+    "bookingBadge": "Daraja bookingbe",
+    "asksForLabel": "{{label}} koro",
+    "asksForDateTime": "Loktu-a yim-a koro",
+    "none": "Ba",
+    "dateTime": "Loktu-a yim-a",
+    "scheduledOn": "kəla {{names}}",
+    "fieldsSummary_one": "{{count}} faraskəram ( {{mandatory}} mbu)",
+    "fieldsSummary_other": "{{count}} nashawa ( {{mandatory}} mburo walzəna)",
+    "deleteConfirm": "Daraja \" {{name}} \"? Adǝ raktǝ kalaktǝyin ba.",
+    "editTitle": "Daraja Sasərtə - {{name}}",
+    "newTitle": "Daraja Bǝlin",
+    "name": "Su Darajabe",
+    "colour": "Launu",
+    "active": "Mazaar",
+    "isDefault": "Daraja fuwumawa bəlinbe",
+    "isBooking": "Daraja bookingbe (Booking tamotǝlan setin)",
+    "whenMoved": "Sa lead dəga daraja adəro təkkiya",
+    "askSchedule": "Loktu-a yim-a wune (jadawa)",
+    "scheduleLabelPlaceholder": "Label, misallo ziyara",
+    "fieldsToShow": "Nawa fuwutəbe kəla fom bəlintəgəben fəletə",
+    "subStatusesTitle": "Daraja-Gana",
+    "subStatusesHint": "Sub-status wo so raksə loktunzə-a yimzə-a sorin kuru nashanzə kəlanzəye sərayin - sami nasha darajadəyen fəletənadə.",
+    "subStatusName": "Su daraja-cidiyabe",
+    "subFields": "Nawa ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Loktu-a yim-a, misallo waltǝ bowotǝ",
+    "addSubStatus": "+ Daraja-Gana Nzəra",
+    "saveStatus": "Daraja Gənatə",
+    "createStatus": "Daraja kunkunne"
+  },
+  "notifications": {
+    "intro": "Am ngəlaro notə sa fuwuma də daraja nazəyiya - tinyi, au loktu təkkəna kawu/ngawo yim-a loktu-a kəlanzən təkkənayen.",
+    "add": "+ Warmatǝgǝram yira",
+    "columns": {
+      "notification": "Warmatǝgǝ",
+      "whenStatusIs": "Sa Daraja",
+      "sends": "Zuzəyin",
+      "to": "Ro",
+      "via": "Mben",
+      "enabled": "Muwonzəna"
+    },
+    "anyStatus": "Daraja jilifi yayi",
+    "anySubStatus": "Daraja-gana ndaso yayi",
+    "inactiveOption": "{{name}} (cidajinba)",
+    "emptyRules": "Kuwa yayi notə ba - fal yira karafkanəmro notəro sa fuwuma daraja nazəyiya.",
+    "jobs": {
+      "title": "Jadawa & Zutəna",
+      "firesAt": "Konnu Na",
+      "notification": "Warmatǝgǝ",
+      "lead": "Jetə",
+      "status": "Daraja",
+      "details": "Bayenwa",
+      "empty": "Kuwa yayi awo laa jadwaltəna au zutəna ba.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Kawudəro",
+      "PROCESSING": "Sasərtə",
+      "SENT": "Zuwatəna",
+      "FAILED": "Sukkuruwuna",
+      "SKIPPED": "Tǝrǝna",
+      "CANCELLED": "Daftəna"
+    },
+    "deliveryStatus": {
+      "SENT": "zuwatəna",
+      "FAILED": "sukkuruwuna",
+      "SKIPPED": "tǝrǝna"
+    },
+    "deliveryChannel": {
+      "IN_APP": "suro-manhajaben",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Faidatǝmaro cedo",
+      "owner": "Kəma",
+      "updatedBy": "Bǝlingǝna",
+      "role": "Fasal: {{name}}"
+    },
+    "channels": {
+      "inApp": "Suro-manhajaben",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Warmatəgə \" {{name}} \"? Shilan taktəwa təmaatadə daftəna.",
+    "testPrompt": "Jaraptə notə adəbe kəlanəmro zuwune (suro appben) lead ID ndaso faidatəlan ?",
+    "testSent": "Kararrawanǝmro zuwatǝgǝna: {{title}} {{message}}",
+    "headersInvalid": "Headers Webhook mburo walzəna JSON , misallo {\"Izinyi\": \"Gotəma xyz\"}",
+    "editTitle": "Warmatǝgǝram Sawartǝ",
+    "newTitle": "Warmatǝgǝ Bǝlin",
+    "name": "Su",
+    "namePlaceholder": "misallo na ziyarabe taktə",
+    "whenStatus": "Sa daraja fuwumabedə",
+    "subStatus": "Daraja-gana",
+    "send": "Zutə (jadawa)",
+    "custom": "Ada...",
+    "modeBefore": "kawu loktu tǝdǝnadǝro",
+    "modeAfter": "ngawo loktu tǝdǝnaben",
+    "noScheduleWarning": "Daraja adə loktu-a yim-a sorinba, adə nankaro \"kawu/ngawo loktu təmatənadən\" notəgədə ngaltema konnu lan cijinba.",
+    "noScheduleFix": "Loktu- <strong>a yim-a cidiya</strong> Status-a Sub-Statuses-ayen matə, au Tinyiro zutə.",
+    "sendTo": "(Kəltəram jilifi yayi) ro zuzə",
+    "recipientAssigned": "Faidatǝma tǝkǝna (kǝmanzǝ kura)",
+    "recipientOwner": "Kǝma akawuntbe / cidama",
+    "recipientUpdatedBy": "Kam duwo darajadəga bəlinzəna",
+    "everyoneWithRole": "Nduso cidanzə mbeji",
+    "specificUsers": "Am faidatayinne taganasbe (cidajin)",
+    "inactiveNever": "Am faidatəmasodə ngaltema notification sowandayinba, kartəna yayi.",
+    "deliverVia": "Futu yitagattəgə",
+    "channelInApp": "Suro-manhajaben (kararrawa)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS kudoma)",
+    "emailHint": "Email də address email fandoma wo soro lejin kuru SMTP do kəla server yen gənatəna məradəzəna (backend/.env); hatta email zutənadə skipped ro gənatəna.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Saudo ( JSON )",
+    "content": "Awo-a warmatǝgǝbe",
+    "title": "Kaala",
+    "message": "Kawuli",
+    "insertIntoTitle": "Suro Titlebero yike",
+    "insertIntoMessage": "Kawuliro yike",
+    "anyLeadField": "Fannu fuwuma ndasowoso cidajin, misallo <code1>{{example1}}</code1> au <code2>{{example2}}</code2> .",
+    "preview": "Futu kurube (fuwuma samfurbe)",
+    "enabled": "Muwonzəna",
+    "saveRule": "Wartǝgǝma gǝnane",
+    "createRule": "Warmatǝgǝram kunkunne",
+    "variables": {
+      "customerName": "Su kura",
+      "customerMobile": "Mobayil fuwuma",
+      "customerEmail": "Email fuwuma",
+      "registrationId": "ID fuwumabe",
+      "status": "Daraja",
+      "subStatus": "Daraja-gana",
+      "scheduleAt": "Loktu-a yim-a",
+      "assignedTo": "Faidatǝmaro cedo",
+      "updatedBy": "Bǝlingǝna",
+      "recipient": "Su kam mowomabe",
+      "project": "Cida",
+      "notes": "Note bǝlin",
+      "partner": "Su gawilmabe"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Sa statusdə settənadən",
+      "AT": "Loktu tǝdǝnadǝn",
+      "A1D": "Kawu 1 ngawo loktu tǝmatǝnaben (kulastǝ zǝgayin)"
+    },
+    "immediately": "Naadəro",
+    "atScheduled": "Loktu tǝdǝnadǝn",
+    "before": {
+      "MINUTES_one": "{{count}} minti kawu loktu tǝdǝnadǝro",
+      "MINUTES_other": "{{count}} mintiwa kawu loktu tǝdǝnadǝro",
+      "HOURS_one": "{{count}} awa kawu loktu tǝdǝnadǝro",
+      "HOURS_other": "{{count}} awa kawu loktu tǝdǝnadǝro",
+      "DAYS_one": "{{count}} yim kawu loktu tǝdǝnadǝro",
+      "DAYS_other": "{{count}} kawu loktu tǝdǝnadǝro",
+      "WEEKS_one": "{{count}} magǝ kawu loktu tǝdǝnadǝro",
+      "WEEKS_other": "{{count}} mawu kawu loktu tǝdǝnadǝro",
+      "MONTHS_one": "{{count}} kəntawu kawu loktu təmatənadəro",
+      "MONTHS_other": "{{count}} kəntawuwa kawu loktu təmatənadəro",
+      "YEARS_one": "{{count}} saa kawu loktu tǝdǝnadǝro",
+      "YEARS_other": "{{count}} saa kawu loktu tǝdǝnadǝro"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minti ngawo loktu tǝdǝnadǝben",
+      "MINUTES_other": "{{count}} mintiwa ngawo loktu tǝdǝnadǝben",
+      "HOURS_one": "{{count}} awa ngawo loktu tǝdǝnadǝben",
+      "HOURS_other": "{{count}} awa ngawo loktu tǝdǝnadǝben",
+      "DAYS_one": "{{count}} yim ngawo loktu tǝdǝnadǝben",
+      "DAYS_other": "{{count}} kawuwa ngawo loktu tǝdǝnadǝben",
+      "WEEKS_one": "{{count}} magǝ ngawo loktu tǝdǝnadǝben",
+      "WEEKS_other": "{{count}} magǝ ngawo loktu tǝdǝnadǝben",
+      "MONTHS_one": "{{count}} kəntawu ngawo loktu təmatənadən",
+      "MONTHS_other": "{{count}} kəntawu ngawo loktu təmatənadən",
+      "YEARS_one": "{{count}} saa ngawo loktu tǝdǝnadǝben",
+      "YEARS_other": "{{count}} saa ngawo loktu tǝdǝnadǝben"
+    },
+    "units": {
+      "MINUTES_one": "minti",
+      "MINUTES_other": "mintiwa",
+      "HOURS_one": "sa",
+      "HOURS_other": "saawa",
+      "DAYS_one": "yim",
+      "DAYS_other": "kawu",
+      "WEEKS_one": "magə",
+      "WEEKS_other": "magǝ",
+      "MONTHS_one": "kəntagə",
+      "MONTHS_other": "kəntagəwa",
+      "YEARS_one": "saa",
+      "YEARS_other": "saawa"
+    }
+  }
+}

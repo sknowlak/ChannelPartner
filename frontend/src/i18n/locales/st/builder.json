@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Sehahi Portal",
+    "referrals": "Liphetisetso",
+    "builderLogin": "Mohahi Keno",
+    "partnerLogin": "Keno ea Partner Partner"
+  },
+  "login": {
+    "title": "Kena ka sehahi",
+    "hint": "Li-account tsa lihahi li entsoe ke Leadrat . Botsa molaoli oa hau haeba ha u na eona."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "E emetse qeto ea hau",
+    "ACCEPTED": "E amohetsoe",
+    "REJECTED": "Hanoa"
+  },
+  "list": {
+    "title": "Liphetisetso",
+    "allProjects": "Merero eohle",
+    "allStatuses": "Maemo kaofela",
+    "count_one": "{{count}} phetiso",
+    "count_other": "{{count}} batho ba fetisetsoang",
+    "columns": {
+      "referral": "Phetisetso",
+      "customer": "Moreki",
+      "project": "Morero",
+      "sourcePartner": "Mohloli Molekane",
+      "status": "Boemo",
+      "booking": "Booking",
+      "registered": "Ngodisitsoe"
+    },
+    "booked": "E ngolisitsoe",
+    "empty": "Ha ho na batho ba romelloang."
+  },
+  "detail": {
+    "customer": "Moreki",
+    "sourcePartner": "Mohloli Molekane",
+    "attributionNote": "(Tlhahiso - e ke ke ea fetoloa)",
+    "leadStatus": "Boemo ba ho etella pele",
+    "protectedUntil": "Sireletsoa Ho fihlela",
+    "referral": "Phetisetso",
+    "reason": "Lebaka: {{reason}}",
+    "booking": "Booking",
+    "bookedOwner": "E ngolisitsoe - ke uena mong'a ts'ebetso",
+    "notBooked": "Ha ea ngolisoa",
+    "sharedAfterBooking": "E arolelanoa ka mor'a ho bhuka",
+    "accept": "Amohela Phetisetso",
+    "confirmBooking": "Netefatsa Booking",
+    "reject": "Hana Phetisetso",
+    "rejectReasonLabel": "Lebaka la ho hana (le bontšitsoeng ho molekane) *",
+    "rejectConfirm": "Hana",
+    "confirmBookingPrompt": "Netefatsa kopo? Ho ba beng ba ts'ebetso ho ea ho uena mme molekane o ba le tokelo ea ho fuoa khomishene.",
+    "notice": {
+      "booked": "Pehelo e netefalitsoe.",
+      "accepted": "Phetisetso e amohetsoe.",
+      "rejected": "Phetisetso e hanngoe."
+    },
+    "backToReferrals": "Khutlela ho Referrals"
+  },
+  "history": {
+    "title": "Histori",
+    "actor": {
+      "system": "Tsamaiso",
+      "partner": "Molekane oa mocha",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Ngoliso ea balekane e amohetse",
+      "DUPLICATE_CHECK_COMPLETED": "Ho phethiloe ho hlahlobisisa - ha ho se kopitsoang se sebetsang",
+      "REGISTRATION_ACCEPTED": "Ngoliso e amohetsoe",
+      "PROTECTION_GRANTED_one": "{{count}} -tšireletseho ea letsatsi e fanoe",
+      "PROTECTION_GRANTED_other": "{{count}} -tšireletseho ea letsatsi e fanoe",
+      "STAGE_UPDATED": "Boemo bo ntlafalitsoe ho {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Sebaka sa {{count}} se ntlafalitsoe",
+      "LEAD_DETAILS_UPDATED_other": "Libaka tse {{count}} tse ntlafalitsoeng",
+      "LEAD_ASSIGNED": "E abetsoe {{name}}",
+      "LEAD_UNASSIGNED": "Ha ea ajoa",
+      "REFERRAL_ACCEPTED": "Sehahi se amohetse phetisetso",
+      "REFERRAL_REJECTED": "Sehahi se hanne phetisetso. Lebaka: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} e qheletsoeng ka thoko ho leka ho ingolisa",
+      "BOOKING_COMPLETED": "Peeletso e phethiloe",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Botho ba ts'ebetso bo fetiselitsoe ho Sehahi",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Botumo ba balekane bo bolokiloe",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komisi ea ho tšoaneleha e entsoe",
+      "HANDOVER_COMPLETED": "Ho fana ho phethiloe",
+      "ADMIN_PROTECTION_RELEASED": "Admin o lokolotse ts'ireletso ea bobeli pele. Lebaka: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Mookameli o fane ka boingoliso bocha ho tloha {{from}} ho ea ho {{to}} . Lebaka: {{reason}}"
+    }
+  }
+}

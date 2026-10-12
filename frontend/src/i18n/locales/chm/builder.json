@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Чоҥышо портал",
+    "referrals": "Направлений-влак",
+    "builderLogin": "Чоҥышо пураш",
+    "partnerLogin": "Канал партнерна-влак пураш"
+  },
+  "login": {
+    "title": "Чоҥышо пурымаште",
+    "hint": "Чоҥышо шотышто Leadrat ышта. Администратор деч йодса, тендан уке гын."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Тендан пунчалдам вучаш",
+    "ACCEPTED": "Приниматлыме",
+    "REJECTED": "Отказым пуымо"
+  },
+  "list": {
+    "title": "Направлений-влак",
+    "allProjects": "Чыла проект",
+    "allStatuses": "Чыла статус",
+    "count_one": "{{count}} ӱжмаш",
+    "count_other": "{{count}} ӱжмаш-влак",
+    "columns": {
+      "referral": "Направлений",
+      "customer": "Клиентна",
+      "project": "Проект",
+      "sourcePartner": "Партнерна-влак",
+      "status": "Статус",
+      "booking": "Бронироватлымаш",
+      "registered": "Регистрироватлыме"
+    },
+    "booked": "Бронироватлыме",
+    "empty": "Эше нимогай направлений уке."
+  },
+  "detail": {
+    "customer": "Клиентна",
+    "sourcePartner": "Партнерна-влак",
+    "attributionNote": "(атрибуций - вашталташ ок лий)",
+    "leadStatus": "Вӱдышӧ статус",
+    "protectedUntil": "марте аралыме",
+    "referral": "Направлений",
+    "reason": "Шылташ: {{reason}}",
+    "booking": "Бронироватлымаш",
+    "bookedOwner": "Бронироватлыме - те оперативный оза улыда",
+    "notBooked": "Бронироватлыме огыл",
+    "sharedAfterBooking": "Бронироватлыме деч вара пайлыме",
+    "accept": "Рефералым налаш",
+    "confirmBooking": "Бронироватлымашым пеҥгыдемдыза",
+    "reject": "Направлений деч кораҥмаш",
+    "rejectReasonLabel": "Отказым пуымо амал (партнерлан ончыктымо) *",
+    "rejectConfirm": "Ӧрдыжтараш",
+    "confirmBookingPrompt": "Бронироватлымашым пеҥгыдемдаш? Оперативный собственность тендан деке кусна да партнер комиссийлан праван лиеш.",
+    "notice": {
+      "booked": "Бронироватлымаш пеҥгыдемдалтын.",
+      "accepted": "Направлений приниматлалтеш.",
+      "rejected": "Направлений отказым пуэн."
+    },
+    "backToReferrals": "Реферал-влак деке пӧртылаш"
+  },
+  "history": {
+    "title": "Историй",
+    "actor": {
+      "system": "Система",
+      "partner": "Канал партнер",
+      "admin": "Leadrat админ"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Партнер регистрацийым налын",
+      "DUPLICATE_CHECK_COMPLETED": "Дубликат тергымаш пытен - активный дубликат муын огыл",
+      "REGISTRATION_ACCEPTED": "Регистрацийым налме",
+      "PROTECTION_GRANTED_one": "{{count}} -кече аралыме пуалтеш",
+      "PROTECTION_GRANTED_other": "{{count}} -кече аралыме пуалтеш",
+      "STAGE_UPDATED": "Статус {{stage}} марте уэмдыме",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} кумдыкым уэмдыме",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} кумдыкым уэмдыме",
+      "LEAD_ASSIGNED": "{{name}} -лан пуымо",
+      "LEAD_UNASSIGNED": "Палемдыдыме",
+      "REFERRAL_ACCEPTED": "Чоҥышо направленийым налын",
+      "REFERRAL_REJECTED": "Чоҥышо еҥ ӱжмашым шӧрен. Шылташ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} ын дубликат регистрацийым эрташ тӧчымӧ деч кораҥмаш",
+      "BOOKING_COMPLETED": "Бронироватлымаш пытен",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Операций собственность Builder-лан куснен",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Партнер атрибуций аралалт кодын",
+      "COMMISSION_ELIGIBILITY_CREATED": "Комиссий правам ыштыме",
+      "HANDOVER_COMPLETED": "Передаче пытен",
+      "ADMIN_PROTECTION_RELEASED": "Админ дубликат аралыме йӧным ондак луктын. Шылташ: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Админ регистрацийым {{from}} гыч {{to}} -ыш кусарыме. Шылташ: {{reason}}"
+    }
+  }
+}

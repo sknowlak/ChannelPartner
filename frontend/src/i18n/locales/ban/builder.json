@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal Pawangun",
+    "referrals": "Rujukan",
+    "builderLogin": "Ngranjing Pawangun",
+    "partnerLogin": "Ngranjing Mitra Saluran"
+  },
+  "login": {
+    "title": "Ngranjing saking sang sané ngwangun",
+    "hint": "Akun pembangun kakaryanin olih Leadrat . Takenang ring administrator yéning Sameton nénten madué."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Ngantosang pamutus Sametoné",
+    "ACCEPTED": "Katrima",
+    "REJECTED": "Katolak"
+  },
+  "list": {
+    "title": "Rujukan",
+    "allProjects": "Proyek makasami",
+    "allStatuses": "Status makasami",
+    "count_one": "{{count}} rujukan",
+    "count_other": "{{count}} rujukan",
+    "columns": {
+      "referral": "Rujukan",
+      "customer": "Palanggan",
+      "project": "Proyék",
+      "sourcePartner": "Mitra Sumber",
+      "status": "Setatus",
+      "booking": "Pemesanan",
+      "registered": "Kadaftarang"
+    },
+    "booked": "Kapesen",
+    "empty": "Durung wénten rujukan."
+  },
+  "detail": {
+    "customer": "Palanggan",
+    "sourcePartner": "Mitra Sumber",
+    "attributionNote": "(atribusi - nénten prasida kauwah)",
+    "leadStatus": "Status Unggulan",
+    "protectedUntil": "Kalindungin Ngantos",
+    "referral": "Rujukan",
+    "reason": "Alasan: {{reason}}",
+    "booking": "Pemesanan",
+    "bookedOwner": "Kapesen - Sameton sané nuénang operasional",
+    "notBooked": "Nénten kapesen",
+    "sharedAfterBooking": "Kaagi risampuné memesan",
+    "accept": "Nrima Rujukan",
+    "confirmBooking": "Konfirmasi Pemesanan",
+    "reject": "Nulak Rujukan",
+    "rejectReasonLabel": "Alasan nulak (kacihnayang ring pasangan) *",
+    "rejectConfirm": "Nolak",
+    "confirmBookingPrompt": "Konfirmasiang pemesanan? Padruwen operasional magingsir ka ragane lan mitra dados layak komisi.",
+    "notice": {
+      "booked": "Pemesanan sampun kakonfirmasi.",
+      "accepted": "Rujukan sampun katerima.",
+      "rejected": "Rujukan katulak."
+    },
+    "backToReferrals": "Mawali ka Rujukan"
+  },
+  "history": {
+    "title": "Riwayat",
+    "actor": {
+      "system": "Sistem",
+      "partner": "Mitra saluran",
+      "admin": "Admin Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Pendaftaran mitra sampun katerima",
+      "DUPLICATE_CHECK_COMPLETED": "Pariksaan duplikat sampun puput - nénten wénten duplikat sané aktif kapanggihin",
+      "REGISTRATION_ACCEPTED": "Pendaftaran sampun katerima",
+      "PROTECTION_GRANTED_one": "{{count}} -dina perlindungan kaicenin",
+      "PROTECTION_GRANTED_other": "{{count}} -dina perlindungan kaicenin",
+      "STAGE_UPDATED": "Status kaanyarang dados {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Widang {{count}} sané kaanyarang",
+      "LEAD_DETAILS_UPDATED_other": "Widang {{count}} sané kaanyarang",
+      "LEAD_ASSIGNED": "Katetapang ring {{name}}",
+      "LEAD_UNASSIGNED": "Nénten katetapang",
+      "REFERRAL_ACCEPTED": "Tukang wangunan nerima rujukan",
+      "REFERRAL_REJECTED": "Tukang nulak rujukan punika. Alasan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Utsaha pendaftaran duplikat olih {{partner}} katulak",
+      "BOOKING_COMPLETED": "Pemesanan sampun puput",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Padruwén operasional kagingsirang ka Pembangun",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribusi mitra kapertahanin",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisi kakaryanin",
+      "HANDOVER_COMPLETED": "Penyerahan sampun puput",
+      "ADMIN_PROTECTION_RELEASED": "Admin sampun ngamedalang perlindungan duplikat dumunan. Alasan: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin netepang malih pendaftaran saking {{from}} ka {{to}} . Alasan: {{reason}}"
+    }
+  }
+}

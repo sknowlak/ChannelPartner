@@ -1,0 +1,83 @@
+{
+  "title": "Gerir equipe",
+  "tabs": {
+    "members": "Membros da equipa",
+    "roles": "Funções e permissões",
+    "profile": "O meu perfil"
+  },
+  "roles": {
+    "owner": "Proprietário",
+    "member": "Membro da equipa"
+  },
+  "profile": {
+    "updated": "Perfil atualizado.",
+    "basicInfo": "Informações Básicas",
+    "organisationInfo": "Informações da organização",
+    "preferences": "Preferências",
+    "companyName": "Nome da empresa/organização",
+    "city": "Cidade",
+    "state": "Estado",
+    "currencyHelp": "Utilizado para exibir orçamentos e valores de reserva de toda a sua equipa.",
+    "useDeviceTimezone": "Utilizar fuso horário do dispositivo ( {{timezone}} )",
+    "securityRole": "Segurança e função",
+    "newPassword": "Nova Palavra-passe (deixar em branco para manter inalterada)",
+    "currentPassword": "Senha atual",
+    "memberSince": "Membro desde",
+    "languageSaved": "Idioma guardado na sua conta – será utilizado em todos os dispositivos em que fizer login."
+  },
+  "members": {
+    "intro": "Adicione, edite, desative ou remova pessoas da sua equipa – partilham o acesso aos mesmos leads.",
+    "noPermission": "Não tem permissão para adicionar, editar ou remover membros da equipa.",
+    "addNew": "+ Adicionar novo utilizador",
+    "passwordLabel": "{{label}} (mínimo 8 caracteres)",
+    "rolePermissions": "Função e permissões",
+    "adding": "Adicionando...",
+    "addMember": "Adicionar membro da equipa",
+    "tabAll": "All ( {{count}} )",
+    "tabActive": "Ativo ( {{count}} )",
+    "tabInactive": "Inactivo ( {{count}} )",
+    "searchPlaceholder": "Pesquisar nome ou nome de utilizador...",
+    "allTimezones": "Todos os fusos horários",
+    "perPage": "Entradas por página",
+    "contact": "Contacto",
+    "added": "Adicionado",
+    "toggleActive": "Ativo - clique para desativar",
+    "toggleInactive": "Inativo - clique para ativar",
+    "empty": "Nenhum membro da equipa ainda.",
+    "noMatch": "Nenhum membro da equipa corresponde a estes filtros.",
+    "showing": "Mostrando {{from}} - {{to}} de {{total}} entradas",
+    "firstPage": "Primeira página",
+    "previousPage": "Página anterior",
+    "nextPage": "Próxima página",
+    "lastPage": "Última página"
+  },
+  "editMember": {
+    "title": "Editar utilizador",
+    "noPermission": "Não tem permissão para editar membros da equipa.",
+    "backToTeam": "De volta à equipa",
+    "cantChangeOwn": "Não pode mudar a sua própria função ou estado.",
+    "needsManageRoles": "A alteração da função de um membro requer a permissão Gerir funções.",
+    "addedBy": "Adicionado por",
+    "addedOn": "Adicionado em"
+  },
+  "rolesPage": {
+    "intro": "Superadministrador, Administrador e Gestor estão integrados e não podem ser alterados – crie uma função personalizada para qualquer outra coisa.",
+    "noPermission": "Não tem permissão para gerir funções.",
+    "createCustom": "+ Criar função personalizada",
+    "roleName": "Nome da função",
+    "permissions": "Permissões",
+    "members": "Membros",
+    "creating": "Criando...",
+    "createRole": "Criar função",
+    "systemRole": "Função do sistema",
+    "builtIn": "Integrado",
+    "empty": "Ainda não há papéis."
+  },
+  "permissions": {
+    "MANAGE_LEADS": "Gerir leads (criar, progredir, reservar)",
+    "MANAGE_TEAM": "Gerir equipa (adicionar, editar, remover membros)",
+    "MANAGE_ROLES": "Gerir funções e permissões",
+    "MANAGE_SETTINGS": "Gerir configurações (campos do formulário de leads)",
+    "none": "Sem permissões"
+  }
+}

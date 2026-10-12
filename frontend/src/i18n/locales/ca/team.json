@@ -1,0 +1,83 @@
+{
+  "title": "Gestionar l'equip",
+  "tabs": {
+    "members": "Membres de l'equip",
+    "roles": "Rols i permisos",
+    "profile": "El meu perfil"
+  },
+  "roles": {
+    "owner": "Propietari",
+    "member": "Membre de l'equip"
+  },
+  "profile": {
+    "updated": "Perfil actualitzat.",
+    "basicInfo": "Informació bàsica",
+    "organisationInfo": "Informació de l'organització",
+    "preferences": "Preferències",
+    "companyName": "Nom de l'empresa/organització",
+    "city": "Ciutat",
+    "state": "Estat",
+    "currencyHelp": "S'utilitza per mostrar pressupostos i valors de reserves al vostre equip.",
+    "useDeviceTimezone": "Utilitza la zona horària del dispositiu ( {{timezone}} )",
+    "securityRole": "Seguretat i rol",
+    "newPassword": "Contrasenya nova (deixa en blanc per mantenir-la sense canvis)",
+    "currentPassword": "Contrasenya actual",
+    "memberSince": "Membre des de",
+    "languageSaved": "Idioma desat al vostre compte: s'utilitzarà a tots els dispositius en què inicieu la sessió."
+  },
+  "members": {
+    "intro": "Afegiu, editeu, desactiveu o elimineu persones del vostre equip: comparteixen accés als mateixos contactes.",
+    "noPermission": "No teniu permís per afegir, editar o eliminar membres de l'equip.",
+    "addNew": "+ Afegeix un nou usuari",
+    "passwordLabel": "{{label}} (mínim 8 caràcters)",
+    "rolePermissions": "Rol i permisos",
+    "adding": "S'està afegint...",
+    "addMember": "Afegeix un membre de l'equip",
+    "tabAll": "Tots ( {{count}} )",
+    "tabActive": "Actiu ( {{count}} )",
+    "tabInactive": "Inactiu ( {{count}} )",
+    "searchPlaceholder": "Cerca nom o nom d'usuari...",
+    "allTimezones": "Totes les zones horàries",
+    "perPage": "Entrades per pàgina",
+    "contact": "Contacte",
+    "added": "Afegit",
+    "toggleActive": "Actiu: feu clic per desactivar-lo",
+    "toggleInactive": "Inactiu: feu clic per activar-lo",
+    "empty": "Encara no hi ha membres de l'equip.",
+    "noMatch": "Cap membre de l'equip coincideix amb aquests filtres.",
+    "showing": "Es mostren {{from}} - {{to}} de {{total}} entrades",
+    "firstPage": "Primera pàgina",
+    "previousPage": "Pàgina anterior",
+    "nextPage": "Pàgina següent",
+    "lastPage": "Última pàgina"
+  },
+  "editMember": {
+    "title": "Edita usuari",
+    "noPermission": "No teniu permís per editar els membres de l'equip.",
+    "backToTeam": "Torna a l'equip",
+    "cantChangeOwn": "No pots canviar el teu propi rol o estat.",
+    "needsManageRoles": "Per canviar el rol d'un membre cal el permís Gestiona les funcions.",
+    "addedBy": "Afegit per",
+    "addedOn": "Afegit"
+  },
+  "rolesPage": {
+    "intro": "El superadministrador, l'administrador i el gestor estan integrats i no es poden canviar; creeu una funció personalitzada per a qualsevol altra cosa.",
+    "noPermission": "No teniu permís per gestionar els rols.",
+    "createCustom": "+ Crea un rol personalitzat",
+    "roleName": "Nom del rol",
+    "permissions": "Permisos",
+    "members": "Membres",
+    "creating": "S'està creant...",
+    "createRole": "Crea un rol",
+    "systemRole": "Rol del sistema",
+    "builtIn": "Integrat",
+    "empty": "Encara no hi ha cap paper."
+  },
+  "permissions": {
+    "MANAGE_LEADS": "Gestionar clients potencials (crear, progressar, reservar)",
+    "MANAGE_TEAM": "Gestionar l'equip (afegir, editar, eliminar membres)",
+    "MANAGE_ROLES": "Gestionar rols i permisos",
+    "MANAGE_SETTINGS": "Gestiona la configuració (camps del formulari de contactes)",
+    "none": "Sense permisos"
+  }
+}

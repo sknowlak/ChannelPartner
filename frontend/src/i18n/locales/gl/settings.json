@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Configuración",
+    "noPermission": "Non tes permiso para xestionar a configuración."
+  },
+  "categories": {
+    "lead": "Chumbo",
+    "user": "Usuario",
+    "integrations": "Integracións"
+  },
+  "leadTabs": {
+    "fields": "Campos",
+    "statuses": "Estados e subestados",
+    "notifications": "Notificacións e programadores"
+  },
+  "fields": {
+    "leadIntro": "Configura o formulario de captura de clientes potenciales: activa/desactiva os campos, márcaos como obrigatorios ou engade os teus propios campos personalizados.",
+    "userIntro": "Configura o formulario Engadir/Editar membro do equipo: activa/desactiva os campos, márcaos como obrigatorios ou engade os teus propios campos personalizados.",
+    "addCustomField": "+ Engadir campo personalizado",
+    "fieldLabel": "Etiqueta de campo",
+    "group": "Grupo",
+    "groupPlaceholderLead": "por exemplo, información de consulta",
+    "groupPlaceholderUser": "por exemplo, detalles adicionais",
+    "dataType": "Tipo de datos",
+    "options": "Opcións (separadas por comas)",
+    "requiredLead": "Obrigatorio: os socios do teu equipo deben cubrir isto para rexistrar un cliente potencial",
+    "requiredUser": "Obrigatorio: debe cubrirse ao engadir un membro do equipo",
+    "creating": "Creando...",
+    "createField": "Crear campo",
+    "columns": {
+      "field": "Campo",
+      "group": "Grupo",
+      "type": "Tipo",
+      "required": "Obrigatorio",
+      "enabled": "Activado",
+      "kind": "amable"
+    },
+    "kind": {
+      "custom": "Personalizado",
+      "core": "Núcleo (bloqueado)",
+      "standard": "Estándar"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Texto",
+    "TEXTAREA": "Texto longo",
+    "NUMBER": "Número",
+    "CURRENCY": "Moeda",
+    "DATE": "Data",
+    "SELECT": "Menú despregable",
+    "LIST": "Lista"
+  },
+  "picker": {
+    "searchPlaceholder": "Buscar campos de clientes potenciales...",
+    "summary": "{{shown}} mostrado · {{mandatory}} obrigatorio",
+    "mandatory": "Obrigatorio",
+    "noMatch": "Ningún campo coincide."
+  },
+  "statuses": {
+    "intro": "Os teus estados e subestados de clientes potenciales: o que pide cada un (unha data e hora, campos de clientes potenciales) cando alguén actualiza un cliente potencial.",
+    "add": "+ Engadir estado",
+    "columns": {
+      "order": "Orde",
+      "status": "Estado",
+      "subStatuses": "Sub-Estados",
+      "asksFor": "Solicita",
+      "active": "Activo"
+    },
+    "moveUp": "Moverse cara arriba",
+    "moveDown": "Mover cara abaixo",
+    "defaultBadge": "Predeterminado para novos clientes potenciales",
+    "bookingBadge": "Estado da reserva",
+    "asksForLabel": "Solicita {{label}}",
+    "asksForDateTime": "Solicita data e hora",
+    "none": "Ningún",
+    "dateTime": "Data e hora",
+    "scheduledOn": "en {{names}}",
+    "fieldsSummary_one": "{{count}} campo ( {{mandatory}} obrigatorio)",
+    "fieldsSummary_other": "{{count}} campos ( {{mandatory}} obrigatorio)",
+    "deleteConfirm": "Queres eliminar o estado \" {{name}} \"? Isto non se pode desfacer.",
+    "editTitle": "Editar estado: {{name}}",
+    "newTitle": "Novo estado",
+    "name": "Nome do estado",
+    "colour": "Cor",
+    "active": "Activo",
+    "isDefault": "Estado predeterminado para novos clientes potenciales",
+    "isBooking": "Estado da reserva (definido por Reserva completa)",
+    "whenMoved": "Cando un cliente potencial se move a este estado",
+    "askSchedule": "Solicitar data e hora (programador)",
+    "scheduleLabelPlaceholder": "Etiqueta, p. ex. Visita en",
+    "fieldsToShow": "Campos de clientes potenciales para mostrar no formulario de actualización",
+    "subStatusesTitle": "Sub-Estados",
+    "subStatusesHint": "Cada subestado pode solicitar a súa propia data e hora e engadir os seus propios campos, que se mostran enriba dos campos do estado arriba.",
+    "subStatusName": "Nome do subestado",
+    "subFields": "Campos ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Etiqueta de data e hora, p. ex. Chamar ao",
+    "addSubStatus": "+ Engadir subestado",
+    "saveStatus": "Gardar estado",
+    "createStatus": "Crear estado"
+  },
+  "notifications": {
+    "intro": "Notifica ás persoas adecuadas cando un cliente potencial alcanza un estado, inmediatamente ou a unha hora establecida antes ou despois da data e hora programadas nel.",
+    "add": "+ Engadir notificación",
+    "columns": {
+      "notification": "Notificación",
+      "whenStatusIs": "Cando o estado é",
+      "sends": "Envía",
+      "to": "Para",
+      "via": "Vía",
+      "enabled": "Activado"
+    },
+    "anyStatus": "Calquera estado",
+    "anySubStatus": "Calquera subestado",
+    "inactiveOption": "{{name}} (inactivo)",
+    "emptyRules": "Aínda non hai notificacións. Engade unha para alertar ao teu equipo cando un cliente potencial alcanza un estado.",
+    "jobs": {
+      "title": "Programado e enviado",
+      "firesAt": "Incendios en",
+      "notification": "Notificación",
+      "lead": "Chumbo",
+      "status": "Estado",
+      "details": "Detalles",
+      "empty": "Aínda non hai nada programado nin enviado.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Pendente",
+      "PROCESSING": "Procesamento",
+      "SENT": "Enviado",
+      "FAILED": "Fallou",
+      "SKIPPED": "Omitido",
+      "CANCELLED": "Cancelado"
+    },
+    "deliveryStatus": {
+      "SENT": "enviado",
+      "FAILED": "fallou",
+      "SKIPPED": "saltouse"
+    },
+    "deliveryChannel": {
+      "IN_APP": "na aplicación",
+      "EMAIL": "correo electrónico",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Usuario asignado",
+      "owner": "Propietario",
+      "updatedBy": "Actualizado por",
+      "role": "Papel: {{name}}"
+    },
+    "channels": {
+      "inApp": "Na aplicación",
+      "email": "Correo electrónico",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Queres eliminar a notificación \" {{name}} \"? Os recordatorios pendentes del canceláronse.",
+    "testPrompt": "Envíache unha proba desta notificación a ti mesmo (dentro da aplicación) usando que ID de cliente potencial?",
+    "testSent": "Enviado á túa campá: {{title}} {{message}}",
+    "headersInvalid": "As cabeceiras Webhook deben ser JSON válido, por exemplo {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Editar notificación",
+    "newTitle": "Nova notificación",
+    "name": "Nome",
+    "namePlaceholder": "por exemplo, recordatorio de visita ao sitio",
+    "whenStatus": "Cando o estado dun cliente potencial é",
+    "subStatus": "Subestado",
+    "send": "Enviar (programador)",
+    "custom": "Personalizado...",
+    "modeBefore": "antes da hora prevista",
+    "modeAfter": "despois da hora prevista",
+    "noScheduleWarning": "Este estado non solicita data nin hora, polo que nunca se activará unha notificación \"antes/á/despois da hora programada\".",
+    "noScheduleFix": "Activa <strong>Solicitar data e hora</strong> en Estados e subestados ou envialo inmediatamente.",
+    "sendTo": "Enviar a (calquera combinación)",
+    "recipientAssigned": "Usuario asignado (propietario principal)",
+    "recipientOwner": "Propietario da conta / administrador",
+    "recipientUpdatedBy": "Persoa que actualizou o estado",
+    "everyoneWithRole": "Todos con papel",
+    "specificUsers": "Usuarios específicos (activos)",
+    "inactiveNever": "Os usuarios inactivos nunca reciben notificacións, aínda que estean seleccionados.",
+    "deliverVia": "Entrega vía",
+    "channelInApp": "Na aplicación (campá)",
+    "channelEmail": "Correo electrónico",
+    "channelWebhook": "Webhook (proveedor WhatsApp / SMS )",
+    "emailHint": "O correo electrónico vai ao enderezo de correo electrónico de cada destinatario e necesita SMTP configurado no servidor (backend/.env); ata entón, os envíos de correo electrónico rexistráronse como omitidos.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Cabeceiras ( JSON )",
+    "content": "Contido da notificación",
+    "title": "Título",
+    "message": "Mensaxe",
+    "insertIntoTitle": "Inserir no Título",
+    "insertIntoMessage": "Inserir en Mensaxe",
+    "anyLeadField": "Calquera campo potencial tamén funciona, por exemplo, <code1>{{example1}}</code1> ou <code2>{{example2}}</code2> .",
+    "preview": "Vista previa (cliente de mostra)",
+    "enabled": "Activado",
+    "saveRule": "Gardar notificación",
+    "createRule": "Crear notificación",
+    "variables": {
+      "customerName": "Nome principal",
+      "customerMobile": "Leder móbil",
+      "customerEmail": "Correo electrónico principal",
+      "registrationId": "ID de plomo",
+      "status": "Estado",
+      "subStatus": "Subestado",
+      "scheduleAt": "Data e hora programadas",
+      "assignedTo": "Usuario asignado",
+      "updatedBy": "Actualizado por",
+      "recipient": "Nome do destinatario",
+      "project": "Proxecto",
+      "notes": "Última nota",
+      "partner": "Nome do socio"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Inmediatamente cando se establece o estado",
+      "AT": "Á hora prevista",
+      "A1D": "1 día despois da hora programada (comprobación de seguimento)"
+    },
+    "immediately": "Inmediatamente",
+    "atScheduled": "Á hora prevista",
+    "before": {
+      "MINUTES_one": "{{count}} minutos antes da hora programada",
+      "MINUTES_other": "{{count}} minutos antes da hora programada",
+      "HOURS_one": "{{count}} hora antes da hora programada",
+      "HOURS_other": "{{count}} horas antes da hora programada",
+      "DAYS_one": "{{count}} día antes da hora programada",
+      "DAYS_other": "{{count}} días antes da hora programada",
+      "WEEKS_one": "{{count}} semana antes da hora programada",
+      "WEEKS_other": "{{count}} semanas antes da hora programada",
+      "MONTHS_one": "{{count}} mes antes da hora programada",
+      "MONTHS_other": "{{count}} meses antes da hora programada",
+      "YEARS_one": "{{count}} ano antes da hora programada",
+      "YEARS_other": "{{count}} anos antes da hora programada"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minutos despois da hora programada",
+      "MINUTES_other": "{{count}} minutos despois da hora programada",
+      "HOURS_one": "{{count}} hora despois da hora programada",
+      "HOURS_other": "{{count}} horas despois da hora programada",
+      "DAYS_one": "{{count}} día despois da hora programada",
+      "DAYS_other": "{{count}} días despois da hora programada",
+      "WEEKS_one": "{{count}} semana despois da hora programada",
+      "WEEKS_other": "{{count}} semanas despois da hora programada",
+      "MONTHS_one": "{{count}} mes despois da hora programada",
+      "MONTHS_other": "{{count}} meses despois da hora programada",
+      "YEARS_one": "{{count}} ano despois da hora programada",
+      "YEARS_other": "{{count}} anos despois da hora programada"
+    },
+    "units": {
+      "MINUTES_one": "minuto",
+      "MINUTES_other": "minutos",
+      "HOURS_one": "hora",
+      "HOURS_other": "horas",
+      "DAYS_one": "día",
+      "DAYS_other": "días",
+      "WEEKS_one": "semana",
+      "WEEKS_other": "semanas",
+      "MONTHS_one": "mes",
+      "MONTHS_other": "meses",
+      "YEARS_one": "ano",
+      "YEARS_other": "anos"
+    }
+  }
+}

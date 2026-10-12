@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Eraikitzailearen Ataria",
+    "referrals": "Erreferentziak",
+    "builderLogin": "Eraikitzailearen saioa",
+    "partnerLogin": "Kanaleko bazkideen saioa"
+  },
+  "login": {
+    "title": "Hasi saioa eraikitzailea",
+    "hint": "Builder kontuak Leadrat ek sortzen ditu. Galdetu administratzaileari halakorik ez baduzu."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Zure erabakiaren zain",
+    "ACCEPTED": "Onartua",
+    "REJECTED": "Baztertua"
+  },
+  "list": {
+    "title": "Erreferentziak",
+    "allProjects": "Proiektu guztiak",
+    "allStatuses": "Egoera guztiak",
+    "count_one": "{{count}} erreferentzia",
+    "count_other": "{{count}} erreferentzia",
+    "columns": {
+      "referral": "Erreferentzia",
+      "customer": "Bezeroa",
+      "project": "Proiektua",
+      "sourcePartner": "Iturburu-bazkidea",
+      "status": "Egoera",
+      "booking": "Erreserba",
+      "registered": "Erregistratua"
+    },
+    "booked": "Erreserbatua",
+    "empty": "Oraindik ez dago erreferentziarik."
+  },
+  "detail": {
+    "customer": "Bezeroa",
+    "sourcePartner": "Iturburu-bazkidea",
+    "attributionNote": "(esleipena - ezin da aldatu)",
+    "leadStatus": "Lead egoera",
+    "protectedUntil": "Babestua arte",
+    "referral": "Erreferentzia",
+    "reason": "Arrazoia: {{reason}}",
+    "booking": "Erreserba",
+    "bookedOwner": "Erreserbatua - jabe operatiboa zara",
+    "notBooked": "Ez dago erreserbatuta",
+    "sharedAfterBooking": "Erreserba egin ondoren partekatua",
+    "accept": "Onartu Erreferentzia",
+    "confirmBooking": "Berretsi erreserba",
+    "reject": "Erreferentzia baztertu",
+    "rejectReasonLabel": "Baztertzeko arrazoia (bikotekideari erakutsi) *",
+    "rejectConfirm": "Baztertu",
+    "confirmBookingPrompt": "Erreserba berretsi? Jabetza operatiboa zuregana pasako da eta bazkideak komisioa jasotzeko eskubidea izango du.",
+    "notice": {
+      "booked": "Erreserba baieztatu da.",
+      "accepted": "Erreferentzia onartu da.",
+      "rejected": "Erreferentzia baztertua."
+    },
+    "backToReferrals": "Itzuli Erreferentzietara"
+  },
+  "history": {
+    "title": "Historia",
+    "actor": {
+      "system": "Sistema",
+      "partner": "Kanaleko bazkidea",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Bazkideen erregistroa jaso da",
+      "DUPLICATE_CHECK_COMPLETED": "Bikoiztutako egiaztapena osatu da - ez da bikoiztu aktiborik aurkitu",
+      "REGISTRATION_ACCEPTED": "Izen-ematea onartu da",
+      "PROTECTION_GRANTED_one": "{{count}} eguneko babesa eman da",
+      "PROTECTION_GRANTED_other": "{{count}} eguneko babesa eman da",
+      "STAGE_UPDATED": "Egoera eguneratu da: {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} eremu eguneratua",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} eremu eguneratuak",
+      "LEAD_ASSIGNED": "{{name}} ri esleitu zaio",
+      "LEAD_UNASSIGNED": "Esleitu gabe",
+      "REFERRAL_ACCEPTED": "Eraikitzaileak erreferentzia onartu zuen",
+      "REFERRAL_REJECTED": "Eraikitzaileak erreferentea baztertu zuen. Arrazoia: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Baztertu egin da {{partner}} -ren erregistro saiakera bikoiztua",
+      "BOOKING_COMPLETED": "Erreserba amaitu da",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Jabetza operatiboa Builder-i transferitu zaio",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Bazkideen atribuzioa mantendu da",
+      "COMMISSION_ELIGIBILITY_CREATED": "Batzordearen hautagarritasuna sortu da",
+      "HANDOVER_COMPLETED": "Eskualdaketa amaituta",
+      "ADMIN_PROTECTION_RELEASED": "Administratzaileak bikoiztutako babesa kaleratu zuen goiz. Arrazoia: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Administratzaileak erregistroa berriro esleitu du {{from}} -tik {{to}} . Arrazoia: {{reason}}"
+    }
+  }
+}

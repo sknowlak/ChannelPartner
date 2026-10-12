@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Agordoj",
+    "noPermission": "Vi ne havas permeson administri agordojn."
+  },
+  "categories": {
+    "lead": "Plumbo",
+    "user": "Uzanto",
+    "integrations": "Integriĝoj"
+  },
+  "leadTabs": {
+    "fields": "Kampoj",
+    "statuses": "Statusoj & Sub-Statutoj",
+    "notifications": "Sciigoj kaj Planiloj"
+  },
+  "fields": {
+    "leadIntro": "Agordu la formon de kapto de plumbo: ebligu/malŝaltu kampojn, marku ilin bezonataj aŭ aldonu viajn proprajn kutimajn kampojn.",
+    "userIntro": "Agordu la formularon Aldoni/Redakti Teamanon: ebligu/malŝalti kampojn, marku ilin bezonataj aŭ aldonu viajn proprajn kutimajn kampojn.",
+    "addCustomField": "+ Aldonu Propran Kampon",
+    "fieldLabel": "Kampa Etikedo",
+    "group": "Grupo",
+    "groupPlaceholderLead": "ekz. Demandaj Informoj",
+    "groupPlaceholderUser": "ekz. Pliaj Detaloj",
+    "dataType": "Tipo de datumoj",
+    "options": "Opcioj (komo apartigitaj)",
+    "requiredLead": "Bezonata - partneroj en via teamo devas plenigi ĉi tion por registri antaŭecon",
+    "requiredUser": "Bezonata - devas esti plenigita kiam oni aldonas teamanon",
+    "creating": "Kreante...",
+    "createField": "Kreu Kampon",
+    "columns": {
+      "field": "Kampo",
+      "group": "Grupo",
+      "type": "Tajpu",
+      "required": "Bezonata",
+      "enabled": "Ebligita",
+      "kind": "Afabla"
+    },
+    "kind": {
+      "custom": "Kutimo",
+      "core": "Kerno (ŝlosita)",
+      "standard": "Normo"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Teksto",
+    "TEXTAREA": "Longa teksto",
+    "NUMBER": "Numero",
+    "CURRENCY": "Monero",
+    "DATE": "Dato",
+    "SELECT": "Dropdown",
+    "LIST": "Listo"
+  },
+  "picker": {
+    "searchPlaceholder": "Serĉu gvidkampojn...",
+    "summary": "{{shown}} montrata · {{mandatory}} deviga",
+    "mandatory": "Deviga",
+    "noMatch": "Neniuj kampoj kongruas."
+  },
+  "statuses": {
+    "intro": "Viaj gvidaj statusoj kaj substatoj - kion ĉiu petas (dato kaj horo, gvidkampoj) kiam iu ĝisdatigas antaŭecon al ĝi.",
+    "add": "+ Aldonu Statuson",
+    "columns": {
+      "order": "Ordonu",
+      "status": "Statuso",
+      "subStatuses": "Substatusoj",
+      "asksFor": "Petas Por",
+      "active": "Aktiva"
+    },
+    "moveUp": "Movu supren",
+    "moveDown": "Movu malsupren",
+    "defaultBadge": "Defaŭlte por novaj kondukoj",
+    "bookingBadge": "Rezerva stato",
+    "asksForLabel": "Petas {{label}}",
+    "asksForDateTime": "Petas daton kaj horon",
+    "none": "Neniu",
+    "dateTime": "Dato kaj horo",
+    "scheduledOn": "sur {{names}}",
+    "fieldsSummary_one": "{{count}} kampo ( {{mandatory}} deviga)",
+    "fieldsSummary_other": "{{count}} kampoj ( {{mandatory}} deviga)",
+    "deleteConfirm": "Ĉu forigi statuson \" {{name}} \"? Ĉi tio ne povas esti malfarita.",
+    "editTitle": "Redakti Statuson - {{name}}",
+    "newTitle": "Nova Statuso",
+    "name": "Statusa Nomo",
+    "colour": "Koloro",
+    "active": "Aktiva",
+    "isDefault": "Defaŭlta stato por novaj kondukantoj",
+    "isBooking": "Rezerva stato (agordita de Kompleta Rezervado)",
+    "whenMoved": "Kiam plumbo estas movita al ĉi tiu statuso",
+    "askSchedule": "Petu daton kaj horon (planilo)",
+    "scheduleLabelPlaceholder": "Etikedo, ekz. Vizitu ĉe",
+    "fieldsToShow": "Konduku kampojn por montri en la ĝisdatiga formularo",
+    "subStatusesTitle": "Substatusoj",
+    "subStatusesHint": "Ĉiu sub-stato povas peti sian propran daton kaj horon kaj aldoni siajn proprajn kampojn - montritajn supre de la kampoj de la statuso supre.",
+    "subStatusName": "Sub-statusa nomo",
+    "subFields": "Kampoj ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Dato kaj hora etikedo, ekz. Revoku je",
+    "addSubStatus": "+ Aldonu Sub-Statuson",
+    "saveStatus": "Konservu Statuson",
+    "createStatus": "Krei Statuson"
+  },
+  "notifications": {
+    "intro": "Sciigu la ĝustajn homojn kiam antaŭeco atingas statuson - tuj, aŭ fiksitan tempon antaŭ/post la dato kaj horo planitaj sur ĝi.",
+    "add": "+ Aldonu Sciigon",
+    "columns": {
+      "notification": "Sciigo",
+      "whenStatusIs": "Kiam Statuso Estas",
+      "sends": "Sendas",
+      "to": "Al",
+      "via": "Via",
+      "enabled": "Ebligita"
+    },
+    "anyStatus": "Ajna statuso",
+    "anySubStatus": "Ajna sub-stato",
+    "inactiveOption": "{{name}} (neaktiva)",
+    "emptyRules": "Ankoraŭ neniuj sciigoj - aldonu unu por atentigi vian teamon kiam antaŭeco atingas statuson.",
+    "jobs": {
+      "title": "Planita & Sendita",
+      "firesAt": "Fajroj Ĉe",
+      "notification": "Sciigo",
+      "lead": "Plumbo",
+      "status": "Statuso",
+      "details": "Detaloj",
+      "empty": "Ankoraŭ nenio planita aŭ sendita.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Pritraktata",
+      "PROCESSING": "Prilaborado",
+      "SENT": "Sendita",
+      "FAILED": "Malsukcesis",
+      "SKIPPED": "Saltis",
+      "CANCELLED": "Nuligite"
+    },
+    "deliveryStatus": {
+      "SENT": "sendis",
+      "FAILED": "malsukcesis",
+      "SKIPPED": "saltis"
+    },
+    "deliveryChannel": {
+      "IN_APP": "en-apo",
+      "EMAIL": "retpoŝto",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Asignita uzanto",
+      "owner": "Posedanto",
+      "updatedBy": "Ĝisdatigita de",
+      "role": "Rolo: {{name}}"
+    },
+    "channels": {
+      "inApp": "En-apo",
+      "email": "Retpoŝto",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Ĉu forigi sciigon \" {{name}} \"? Atenditaj memorigiloj de ĝi estas nuligitaj.",
+    "testPrompt": "Sendu teston de ĉi tiu sciigo al vi mem (en-aplikaĵo) per kiu gvida ID ?",
+    "testSent": "Sendita al via sonorilo: {{title}} {{message}}",
+    "headersInvalid": "Webhook -kapoj devas esti validaj JSON , ekz. {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Redakti Sciigon",
+    "newTitle": "Nova Sciigo",
+    "name": "Nomo",
+    "namePlaceholder": "ekz. Rememorigilo pri vizito",
+    "whenStatus": "Kiam la statuso de plumbo estas",
+    "subStatus": "Sub-stato",
+    "send": "Sendu (planilo)",
+    "custom": "Propra...",
+    "modeBefore": "antaŭ planita tempo",
+    "modeAfter": "post planita tempo",
+    "noScheduleWarning": "Ĉi tiu stato ne petas daton kaj horon, do sciigo \"antaŭ/je/post planita tempo\" neniam ekfunkcius.",
+    "noScheduleFix": "Ŝaltu <strong>Petu daton kaj horon</strong> por ĝi sub Statusoj kaj Substatoj, aŭ sendu Tuj.",
+    "sendTo": "Sendu al (iu ajn kombinaĵo)",
+    "recipientAssigned": "Asignita uzanto (ĉefa posedanto)",
+    "recipientOwner": "Konto posedanto / administranto",
+    "recipientUpdatedBy": "Persono kiu ĝisdatigis la statuson",
+    "everyoneWithRole": "Ĉiuj kun rolo",
+    "specificUsers": "Specifaj uzantoj (aktivaj)",
+    "inactiveNever": "Neaktivaj uzantoj neniam ricevas sciigojn, eĉ se elektitaj.",
+    "deliverVia": "Liveri per",
+    "channelInApp": "En-apo (sonorilo)",
+    "channelEmail": "Retpoŝto",
+    "channelWebhook": "Webhook ( WhatsApp / SMS provizanto)",
+    "emailHint": "Retpoŝto iras al la retadreso de ĉiu ricevanto kaj bezonas SMTP agordita sur la servilo (backend/.env); ĝis tiam retpoŝtaj sendoj estas registritaj kiel preterlasitaj.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Kapoj ( JSON )",
+    "content": "Sciiga enhavo",
+    "title": "Titolo",
+    "message": "Mesaĝo",
+    "insertIntoTitle": "Enigu en Titolo",
+    "insertIntoMessage": "Enigu en Mesaĝon",
+    "anyLeadField": "Iu ajn gvidkampo ankaŭ funkcias, ekz. <code1>{{example1}}</code1> aŭ <code2>{{example2}}</code2> .",
+    "preview": "Antaŭrigardo (ekzempla plumbo)",
+    "enabled": "Ebligita",
+    "saveRule": "Konservu Sciigon",
+    "createRule": "Krei Sciigon",
+    "variables": {
+      "customerName": "Ĉefnomo",
+      "customerMobile": "Plumbo poŝtelefono",
+      "customerEmail": "Gvidi retpoŝton",
+      "registrationId": "Plumbo ID",
+      "status": "Statuso",
+      "subStatus": "Sub-stato",
+      "scheduleAt": "Planita dato kaj horo",
+      "assignedTo": "Asignita uzanto",
+      "updatedBy": "Ĝisdatigita de",
+      "recipient": "Nomo de la ricevanto",
+      "project": "Projekto",
+      "notes": "Lasta noto",
+      "partner": "Nomo de partnero"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Tuj kiam la statuso estas agordita",
+      "AT": "Je la planita horo",
+      "A1D": "1 tagon post planita tempo (sekva kontrolo)"
+    },
+    "immediately": "Tuj",
+    "atScheduled": "Je la planita tempo",
+    "before": {
+      "MINUTES_one": "{{count}} minuton antaŭ planita tempo",
+      "MINUTES_other": "{{count}} minutojn antaŭ planita tempo",
+      "HOURS_one": "{{count}} horon antaŭ planita tempo",
+      "HOURS_other": "{{count}} horojn antaŭ planita tempo",
+      "DAYS_one": "{{count}} tagon antaŭ la planita tempo",
+      "DAYS_other": "{{count}} tagojn antaŭ la planita tempo",
+      "WEEKS_one": "{{count}} semajnon antaŭ planita tempo",
+      "WEEKS_other": "{{count}} semajnojn antaŭ planita tempo",
+      "MONTHS_one": "{{count}} monaton antaŭ planita tempo",
+      "MONTHS_other": "{{count}} monatojn antaŭ planita tempo",
+      "YEARS_one": "{{count}} jaron antaŭ la planita tempo",
+      "YEARS_other": "{{count}} jarojn antaŭ la planita tempo"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minuton post planita tempo",
+      "MINUTES_other": "{{count}} minutojn post planita tempo",
+      "HOURS_one": "{{count}} horon post planita tempo",
+      "HOURS_other": "{{count}} horojn post planita tempo",
+      "DAYS_one": "{{count}} tagon post planita tempo",
+      "DAYS_other": "{{count}} tagojn post planita tempo",
+      "WEEKS_one": "{{count}} semajnon post planita tempo",
+      "WEEKS_other": "{{count}} semajnojn post planita tempo",
+      "MONTHS_one": "{{count}} monaton post planita tempo",
+      "MONTHS_other": "{{count}} monatojn post planita tempo",
+      "YEARS_one": "{{count}} jaron post planita tempo",
+      "YEARS_other": "{{count}} jarojn post planita tempo"
+    },
+    "units": {
+      "MINUTES_one": "minuto",
+      "MINUTES_other": "minutoj",
+      "HOURS_one": "horo",
+      "HOURS_other": "horoj",
+      "DAYS_one": "tago",
+      "DAYS_other": "tagoj",
+      "WEEKS_one": "semajno",
+      "WEEKS_other": "semajnoj",
+      "MONTHS_one": "monato",
+      "MONTHS_other": "monatoj",
+      "YEARS_one": "jaro",
+      "YEARS_other": "jaroj"
+    }
+  }
+}

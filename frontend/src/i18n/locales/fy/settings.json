@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Ynstellings",
+    "noPermission": "Jo hawwe gjin tastimming om ynstellings te behearjen."
+  },
+  "categories": {
+    "lead": "Foarsprong",
+    "user": "Brûker",
+    "integrations": "Yntegraasjes"
+  },
+  "leadTabs": {
+    "fields": "Fields",
+    "statuses": "Statuses & Sub-Statussen",
+    "notifications": "Notifikaasjes en planners"
+  },
+  "fields": {
+    "leadIntro": "Konfigurearje it lead capture-formulier: fjilden ynskeakelje / útskeakelje, markearje se as fereaske, of foegje jo eigen oanpaste fjilden ta.",
+    "userIntro": "Konfigurearje it formulier Teamlid tafoegje/bewurkje: fjilden ynskeakelje/útskeakelje, markearje se as fereaske, of foegje jo eigen oanpaste fjilden ta.",
+    "addCustomField": "+ Oanpast fjild tafoegje",
+    "fieldLabel": "Field Label",
+    "group": "Groep",
+    "groupPlaceholderLead": "bygelyks Inquiry Info",
+    "groupPlaceholderUser": "bygelyks Oanfoljende Details",
+    "dataType": "Data Type",
+    "options": "Opsjes (komma skieden)",
+    "requiredLead": "Ferplicht - partners yn jo team moatte dit ynfolje om in lead te registrearjen",
+    "requiredUser": "Fereaske - moat ynfolle wurde by it tafoegjen fan in teamlid",
+    "creating": "Oanmeitsjen...",
+    "createField": "Meitsje fjild",
+    "columns": {
+      "field": "Fjild",
+      "group": "Groep",
+      "type": "Type",
+      "required": "Required",
+      "enabled": "Ynskeakele",
+      "kind": "Soart"
+    },
+    "kind": {
+      "custom": "Oanpast",
+      "core": "Kearn (beskoattele)",
+      "standard": "Standert"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Tekst",
+    "TEXTAREA": "Lange tekst",
+    "NUMBER": "Nûmer",
+    "CURRENCY": "Faluta",
+    "DATE": "Datum",
+    "SELECT": "Dropdown",
+    "LIST": "List"
+  },
+  "picker": {
+    "searchPlaceholder": "Sykje leadfjilden...",
+    "summary": "{{shown}} werjûn · {{mandatory}} ferplicht",
+    "mandatory": "Ferplicht",
+    "noMatch": "Gjin fjilden oerien."
+  },
+  "statuses": {
+    "intro": "Jo leadstatussen en substatussen - wêr't elk om freget (in datum en tiid, leadfjilden) as immen der in lead nei bywurket.",
+    "add": "+ Status taheakje",
+    "columns": {
+      "order": "Oarder",
+      "status": "Status",
+      "subStatuses": "Sub-Statussen",
+      "asksFor": "freget om",
+      "active": "Aktyf"
+    },
+    "moveUp": "Gean omheech",
+    "moveDown": "Nei ûnderen",
+    "defaultBadge": "Standert foar nije leads",
+    "bookingBadge": "Reservearring status",
+    "asksForLabel": "freget om {{label}}",
+    "asksForDateTime": "freget om datum en tiid",
+    "none": "Gjin",
+    "dateTime": "Datum & tiid",
+    "scheduledOn": "op {{names}}",
+    "fieldsSummary_one": "{{count}} fjild ( {{mandatory}} ferplicht)",
+    "fieldsSummary_other": "{{count}} fjilden ( {{mandatory}} ferplicht)",
+    "deleteConfirm": "Status \" {{name}} \" wiskje? Dit kin net ûngedien makke wurde.",
+    "editTitle": "Status bewurkje - {{name}}",
+    "newTitle": "Nije Status",
+    "name": "Status Namme",
+    "colour": "Kleur",
+    "active": "Aktyf",
+    "isDefault": "Standert status foar nije leads",
+    "isBooking": "Boekingsstatus (ynsteld troch Folsleine boeking)",
+    "whenMoved": "As in lead wurdt ferpleatst nei dizze status",
+    "askSchedule": "Freegje om in datum en tiid (planner)",
+    "scheduleLabelPlaceholder": "Label, bygelyks Visit at",
+    "fieldsToShow": "Leadfjilden om te sjen op it updateformulier",
+    "subStatusesTitle": "Sub-Statussen",
+    "subStatusesHint": "Elke substatus kin om syn eigen datum en tiid freegje en syn eigen fjilden tafoegje - werjûn boppe op 'e statusfjilden hjirboppe.",
+    "subStatusName": "Sub-status namme",
+    "subFields": "Fjilden ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Datum- en tiidlabel, bgl. Rop werom op",
+    "addSubStatus": "+ Sub-status tafoegje",
+    "saveStatus": "Bewarje Status",
+    "createStatus": "Status oanmeitsje"
+  },
+  "notifications": {
+    "intro": "Meld de juste minsken as in lead in status berikt - daliks, as in fêste tiid foar/nei de datum en tiid dêrop pland.",
+    "add": "+ Notifikaasje tafoegje",
+    "columns": {
+      "notification": "Notifikaasje",
+      "whenStatusIs": "Wannear Status Is",
+      "sends": "Stjoert",
+      "to": "Nei",
+      "via": "Via",
+      "enabled": "Ynskeakele"
+    },
+    "anyStatus": "Elke status",
+    "anySubStatus": "Elke sub-status",
+    "inactiveOption": "{{name}} (ynaktyf)",
+    "emptyRules": "Noch gjin notifikaasjes - foegje ien ta om jo team te warskôgjen as in lead in status berikt.",
+    "jobs": {
+      "title": "Planne & ferstjoerd",
+      "firesAt": "Fjoer by",
+      "notification": "Notifikaasje",
+      "lead": "Foarsprong",
+      "status": "Status",
+      "details": "Details",
+      "empty": "Noch neat pland of ferstjoerd.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Yn ôfwachting",
+      "PROCESSING": "Ferwurking",
+      "SENT": "Ferstjoerd",
+      "FAILED": "Mislearre",
+      "SKIPPED": "Oerslaan",
+      "CANCELLED": "Annulearre"
+    },
+    "deliveryStatus": {
+      "SENT": "ferstjoerd",
+      "FAILED": "mislearre",
+      "SKIPPED": "oerslein"
+    },
+    "deliveryChannel": {
+      "IN_APP": "yn-app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Tawiisde brûker",
+      "owner": "Eigner",
+      "updatedBy": "Bywurke troch",
+      "role": "Rol: {{name}}"
+    },
+    "channels": {
+      "inApp": "Yn-app",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Notifikaasje \" {{name}} \" wiskje? Wachtjende herinnerings dêrfan wurde annulearre.",
+    "testPrompt": "Stjoer in test fan dizze notifikaasje nei josels (yn-app) mei hokker lead- ID ?",
+    "testSent": "Ferstjoerd nei jo bel: {{title}} {{message}}",
+    "headersInvalid": "Webhook koppen moatte jildich JSON wêze, bygelyks {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Notifikaasje bewurkje",
+    "newTitle": "Nije notifikaasje",
+    "name": "Namme",
+    "namePlaceholder": "bygelyks Site besite herinnering",
+    "whenStatus": "As de status fan in lead is",
+    "subStatus": "Sub-status",
+    "send": "Stjoer (planner)",
+    "custom": "Oanpaste...",
+    "modeBefore": "foar plande tiid",
+    "modeAfter": "nei plande tiid",
+    "noScheduleWarning": "Dizze status freget net om in datum en tiid, dus in \"foar/op/nei plande tiid\"-notifikaasje soe nea fjoer.",
+    "noScheduleFix": "Skeakelje <strong>Freegje om in datum en tiid</strong> foar it yn ûnder Statuses & Sub-Statussen, of stjoer Daliks.",
+    "sendTo": "Stjoer nei (elke kombinaasje)",
+    "recipientAssigned": "Tawiisde brûker (lead eigner)",
+    "recipientOwner": "Account eigner / admin",
+    "recipientUpdatedBy": "Persoan dy't de status bywurke hat",
+    "everyoneWithRole": "Elkenien mei rol",
+    "specificUsers": "Spesifike brûkers (aktyf)",
+    "inactiveNever": "Ynaktive brûkers ûntfange nea notifikaasjes, sels as se selektearre binne.",
+    "deliverVia": "Leverje fia",
+    "channelInApp": "Yn-app (bel)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS provider)",
+    "emailHint": "E-post giet nei eltse ûntfanger syn e-mailadres en moat SMTP ynsteld op de tsjinner (backend/.env); oant dan wurde e-postferstjoerings ynlogd as oerslein.",
+    "webhookUrl": "Webhook URL ( POST , JSON )",
+    "headers": "Headers ( JSON )",
+    "content": "Notifikaasje ynhâld",
+    "title": "Titel",
+    "message": "Berjocht",
+    "insertIntoTitle": "Ynfoegje yn titel",
+    "insertIntoMessage": "Ynfoegje yn berjocht",
+    "anyLeadField": "Elk leadfjild wurket ek, bygelyks <code1>{{example1}}</code1> of <code2>{{example2}}</code2> .",
+    "preview": "Foarbyld (foarbyld lead)",
+    "enabled": "Ynskeakele",
+    "saveRule": "Notifikaasje bewarje",
+    "createRule": "Meitsje Notifikaasje",
+    "variables": {
+      "customerName": "Lead namme",
+      "customerMobile": "Lead mobyl",
+      "customerEmail": "Lead email",
+      "registrationId": "Lead ID",
+      "status": "Status",
+      "subStatus": "Sub-status",
+      "scheduleAt": "Plande datum en tiid",
+      "assignedTo": "Tawiisde brûker",
+      "updatedBy": "Bywurke troch",
+      "recipient": "Untfanger namme",
+      "project": "Projekt",
+      "notes": "Lêste notysje",
+      "partner": "Partner namme"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Fuortendaliks as de status is ynsteld",
+      "AT": "Op de plande tiid",
+      "A1D": "1 dei nei plande tiid (ferfolchkontrôle)"
+    },
+    "immediately": "Daliks",
+    "atScheduled": "Op plande tiid",
+    "before": {
+      "MINUTES_one": "{{count}} minút foar plande tiid",
+      "MINUTES_other": "{{count}} minuten foar plande tiid",
+      "HOURS_one": "{{count}} oere foar plande tiid",
+      "HOURS_other": "{{count}} oeren foar plande tiid",
+      "DAYS_one": "{{count}} dei foar plande tiid",
+      "DAYS_other": "{{count}} dagen foar plande tiid",
+      "WEEKS_one": "{{count}} wike foar plande tiid",
+      "WEEKS_other": "{{count}} wiken foar plande tiid",
+      "MONTHS_one": "{{count}} moanne foar plande tiid",
+      "MONTHS_other": "{{count}} moannen foar plande tiid",
+      "YEARS_one": "{{count}} jier foar plande tiid",
+      "YEARS_other": "{{count}} jier foar plande tiid"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minút nei plande tiid",
+      "MINUTES_other": "{{count}} minuten nei plande tiid",
+      "HOURS_one": "{{count}} oere nei plande tiid",
+      "HOURS_other": "{{count}} oeren nei plande tiid",
+      "DAYS_one": "{{count}} dei nei plande tiid",
+      "DAYS_other": "{{count}} dagen nei plande tiid",
+      "WEEKS_one": "{{count}} wike nei plande tiid",
+      "WEEKS_other": "{{count}} wiken nei plande tiid",
+      "MONTHS_one": "{{count}} moanne nei plande tiid",
+      "MONTHS_other": "{{count}} moannen nei plande tiid",
+      "YEARS_one": "{{count}} jier nei plande tiid",
+      "YEARS_other": "{{count}} jier nei plande tiid"
+    },
+    "units": {
+      "MINUTES_one": "minút",
+      "MINUTES_other": "minuten",
+      "HOURS_one": "oere",
+      "HOURS_other": "oeren",
+      "DAYS_one": "dei",
+      "DAYS_other": "dagen",
+      "WEEKS_one": "wike",
+      "WEEKS_other": "wiken",
+      "MONTHS_one": "moanne",
+      "MONTHS_other": "moannen",
+      "YEARS_one": "jier",
+      "YEARS_other": "jierren"
+    }
+  }
+}

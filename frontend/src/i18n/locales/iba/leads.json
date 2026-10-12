@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Timbal Aku",
+    "signedInAs": "Dilog masuk nyadi {{name}} ( {{partnerId}} ) · jam ti dipandangka dalam {{timezone}}",
+    "addLead": "+ Nambahka Timbal",
+    "tabs": {
+      "all": "Semua ( {{count}} )",
+      "pending": "Bedau nganti ( {{count}} )",
+      "booked": "Dipesan ( {{count}} )"
+    },
+    "searchPlaceholder": "Ngiga ngena nama, telefon binching, tauka ID ngerejista ...",
+    "manageColumns": "Ngatur Kolum",
+    "rowsPerPage": "Baris tiap lambar",
+    "registrationId": "ID ngerejista",
+    "emptyState": "Nadai lead agi - rejista keterubah nuan.",
+    "noMatch": "Nadai timbal ti setipak enggau penapis tu.",
+    "showing": "Ngayanka {{from}} - {{to}} ari {{total}} entri",
+    "actions": {
+      "preview": "Pratonton & pemadah enggau jampat",
+      "history": "Sejarah",
+      "email": "Emel",
+      "whatsapp": "WhatsApp",
+      "call": "Ngangau"
+    },
+    "pagination": {
+      "first": "Lambar keterubah",
+      "previous": "Lambar sebedau tu",
+      "next": "Lambar ti nangkanka nya",
+      "last": "Lambar kepenudi"
+    }
+  },
+  "columns": {
+    "status": "Pangkat",
+    "assignTo": "Ngagihka Ngagai",
+    "booked": "Ditempah",
+    "protectionUntil": "Pengelikun Nganti 2019."
+  },
+  "booking": {
+    "booked": "Ditempah",
+    "pending": "Lubah"
+  },
+  "assign": {
+    "unassigned": "Enda diberi",
+    "owner": "{{name}} (Pengempu)",
+    "inactive": "{{name}} (enda aktif)",
+    "unknownUser": "Penguna ti enda dikelala",
+    "assignedTo": "Diberi ngagai {{name}}"
+  },
+  "form": {
+    "addTitle": "Nambahka Timbal",
+    "editTitle": "Ngedit Timbal",
+    "noPermissionAdd": "Nuan nadai pemendar ngerejista lead.",
+    "noPermissionEdit": "Nuan nadai pemendar ngedit lead.",
+    "selectPlaceholder": "Pilih...",
+    "commaSeparated": "Diseraraka enggau tanda koma",
+    "phonePlaceholder": "Lumur telefon",
+    "countryCode": "Kod menua"
+  },
+  "project": {
+    "none": "Nadai projek agi (enda dirujuk)",
+    "notInList": "{{project}} (nadai dalam lis projek)"
+  },
+  "journey": {
+    "customer": "Pelangan",
+    "currentOwner": "Pengempu Diatu",
+    "protectionExpiry": "Pengelepas Pengelikun",
+    "leadStatus": "Status Timbal",
+    "scheduled": "Diperambu",
+    "assignedTo": "Diberi Ngagai",
+    "referral": "Rujukan",
+    "builderReason": "Kebuah ngaga: {{reason}}",
+    "bookedHint": "Dibuking ulih tukang ngaga - pengempu operasyen udah mindah ngagai tukang ngaga; atribusyen enggau kelayakan komisyen nuan disimpan.",
+    "notBookedHint": "Booking disahka tukang ngaga sepengudah sida nerima referral nya.",
+    "quickUpdate": "Pemadah enggau jampat",
+    "leadDetails": "Penerang ti silik",
+    "progressHistory": "Sejarah Penyulut",
+    "timesIn": "(jam dalam {{timezone}} )",
+    "backToMyLeads": "Pulai ngagai Leads Aku",
+    "editLead": "Ngedit Timbal"
+  },
+  "referral": {
+    "NOT_REFERRED": "Enda dirujuk (nadai projek)",
+    "PENDING_BUILDER": "Nganti tukang ngaga",
+    "ACCEPTED": "Diterima ulih tukang ngaga",
+    "REJECTED": "Ditulak ulih tukang ngaga"
+  },
+  "preview": {
+    "ariaLabel": "Prapeda timbal",
+    "title": "Pratonton Timbal",
+    "source": "Iti",
+    "location": "Alai",
+    "scheduled": "Diperambu",
+    "registered": "Udah direjista",
+    "latestNote": "Nota pemadu baru",
+    "quickUpdate": "Pemadah enggau jampat",
+    "fullDetails": "Penerang Penuh",
+    "editLead": "Ngedit Timbal",
+    "history": "Sejarah"
+  },
+  "quick": {
+    "assignedTo": "Diberi Ngagai",
+    "status": "Pangkat",
+    "subStatus": "Sub-Status",
+    "selectSubStatus": "Pilih sub-status...",
+    "none": "Nadai",
+    "scheduledAt": "Diperambu pukul 10.00.",
+    "localTime": "jam menua tu",
+    "note": "Nota",
+    "notePlaceholder": "Nama utai nyadi ba kangau/penemuai tu? (pemilih)",
+    "updateStatus": "Ngemaruka Status",
+    "statusUpdated": "Status udah dikemaru",
+    "bookedLocked": "Lead tu udah di booking - status iya enda ulih diubah agi.",
+    "viewOnly": "Nuan ulih meda lead tu, tang role nuan enda ulih update iya."
+  },
+  "history": {
+    "title": "Sejarah - {{registrationId}}",
+    "tabs": {
+      "all": "Semua",
+      "status": "Pangkat",
+      "assignment": "Kerja",
+      "notes": "Nota"
+    },
+    "doneBy": "Digaga ulih {{actor}}",
+    "system": "Sistem",
+    "platforms": {
+      "System": "Sistem",
+      "External": "Luar",
+      "Web": "Web",
+      "Mobile": "Telepon"
+    },
+    "added": "ditambah",
+    "updated": "dikemaru",
+    "empty": "(puang)",
+    "noHistory": "Nadai sejarah dalam kategori tu agi.",
+    "fieldLabels": {
+      "stage": "Pangkat",
+      "subStatus": "Sub-Status",
+      "scheduledAt": "Jadual",
+      "notes": "Nota",
+      "assignedTo": "Diberi Ngagai"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Pengawa ngerejista kaling udah diterima",
+      "DUPLICATE_CHECK_COMPLETED": "Duplikat peresa udah tembu - nadai duplikat aktif ditemu",
+      "REGISTRATION_ACCEPTED": "Pengawa ngerejista udah diterima",
+      "PROTECTION_GRANTED_one": "{{count}} -hari lindung diberi",
+      "PROTECTION_GRANTED_other": "{{count}} -hari lindung diberi",
+      "REGISTRATION_ATTEMPT_REJECTED": "Duplikat nguji ngerejista ulih {{partnerId}} ditulak",
+      "LEAD_DETAILS_UPDATED_one": "Bidang {{count}} ti udah dikemaru",
+      "LEAD_DETAILS_UPDATED_other": "Bidang {{count}} ti udah dikemaru",
+      "STAGE_UPDATED": "Status dikemaru ngagai {{status}}",
+      "LEAD_ASSIGNED": "Diberi ngagai {{name}}",
+      "LEAD_UNASSIGNED": "Enda diberi",
+      "BOOKING_COMPLETED": "Booking udah tembu",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Pengempu operasyen dipindahka ngagai Pengatur .",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribusyen kaling dijaga",
+      "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisyen digaga",
+      "HANDOVER_COMPLETED": "Pengawa nyerah udah tembu",
+      "REFERRAL_ACCEPTED": "Tukang ngaga nerima rujukan nya",
+      "REFERRAL_REJECTED": "Builder nulak rujukan nya. Kebuah: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin ngeluarka duplikat pelindung tumu. Kebuah: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin ngagihka baru pengawa ngerejista ari {{from}} ngagai {{to}} . Kebuah: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Ngatur Kolum",
+    "hint": "Seret ngambika ulih ngatur baru · peresa ngambika ulih dipandangka",
+    "showAll": "Tunjukka Semua",
+    "resetDefault": "Reset ngagai Lalai"
+  },
+  "filters": {
+    "title": "Penapis",
+    "allProjects": "Semua projek",
+    "any": "Ke deka",
+    "noFields": "Nadai bidang bukai ti ulih ditapis udah diaktifka agi (Pengatur > Lead).",
+    "clearAll": "Buai Semua"
+  },
+  "phone": {
+    "MISSING": "Lumur telefon dipinta.",
+    "INVALID": "Minta nuan masukka lumur telefon ti sah.",
+    "TOO_SHORT": "Lumur telefon kelalu pandak.",
+    "TOO_LONG": "Lumur telefon kelalu panjai.",
+    "INVALID_FOR_COUNTRY": "Lumur telefon tu enda sah ungkup {{country}} .",
+    "COUNTRY_MISMATCH": "Pilih kod menua ti betul.",
+    "NOT_MOBILE": "Minta nuan masukka lumur telefon binching, ukai talipaun darat."
+  }
+}

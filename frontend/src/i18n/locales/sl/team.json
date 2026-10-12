@@ -1,0 +1,83 @@
+{
+  "title": "Upravljanje ekipe",
+  "tabs": {
+    "members": "Člani ekipe",
+    "roles": "Vloge in dovoljenja",
+    "profile": "Moj profil"
+  },
+  "roles": {
+    "owner": "Lastnik",
+    "member": "Član ekipe"
+  },
+  "profile": {
+    "updated": "Profil posodobljen.",
+    "basicInfo": "Osnovne informacije",
+    "organisationInfo": "Informacije o organizaciji",
+    "preferences": "Nastavitve",
+    "companyName": "Ime podjetja/organizacije",
+    "city": "Mesto",
+    "state": "Država",
+    "currencyHelp": "Uporablja se za prikaz proračunov in vrednosti rezervacij v vaši ekipi.",
+    "useDeviceTimezone": "Uporabi časovni pas naprave ( {{timezone}} )",
+    "securityRole": "Varnost in vloga",
+    "newPassword": "Novo geslo (pustite prazno, da ostane nespremenjeno)",
+    "currentPassword": "Trenutno geslo",
+    "memberSince": "Član od",
+    "languageSaved": "Jezik, shranjen v vašem računu – uporabljal se bo v vsaki napravi, v katero se prijavite."
+  },
+  "members": {
+    "intro": "Dodajte, uredite, deaktivirajte ali odstranite ljudi v svoji ekipi – delijo dostop do istih potencialnih strank.",
+    "noPermission": "Nimate dovoljenja za dodajanje, urejanje ali odstranjevanje članov ekipe.",
+    "addNew": "+ Dodaj novega uporabnika",
+    "passwordLabel": "{{label}} (najmanj 8 znakov)",
+    "rolePermissions": "Vloga in dovoljenja",
+    "adding": "Dodajanje ...",
+    "addMember": "Dodajte člana ekipe",
+    "tabAll": "Vse ( {{count}} )",
+    "tabActive": "Aktiven ( {{count}} )",
+    "tabInactive": "Neaktivno ( {{count}} )",
+    "searchPlaceholder": "Išči ime ali uporabniško ime ...",
+    "allTimezones": "Vsi časovni pasovi",
+    "perPage": "Vnosi na stran",
+    "contact": "Kontakt",
+    "added": "Dodano",
+    "toggleActive": "Aktivno - kliknite za deaktivacijo",
+    "toggleInactive": "Neaktivno - kliknite za aktivacijo",
+    "empty": "Še ni članov ekipe.",
+    "noMatch": "Noben član ekipe ne ustreza tem filtrom.",
+    "showing": "Prikaz {{from}} - {{to}} od {{total}} vnosov",
+    "firstPage": "Prva stran",
+    "previousPage": "Prejšnja stran",
+    "nextPage": "Naslednja stran",
+    "lastPage": "Zadnja stran"
+  },
+  "editMember": {
+    "title": "Uredi uporabnika",
+    "noPermission": "Nimate dovoljenja za urejanje članov ekipe.",
+    "backToTeam": "Nazaj k ekipi",
+    "cantChangeOwn": "Ne morete spremeniti svoje vloge ali statusa.",
+    "needsManageRoles": "Spreminjanje vloge člana zahteva dovoljenje za upravljanje vlog.",
+    "addedBy": "Dodal",
+    "addedOn": "Dodano"
+  },
+  "rolesPage": {
+    "intro": "Super skrbnik, skrbnik in upravitelj so vgrajeni in jih ni mogoče spremeniti – ustvarite vlogo po meri za kar koli drugega.",
+    "noPermission": "Nimate dovoljenja za upravljanje vlog.",
+    "createCustom": "+ Ustvarite vlogo po meri",
+    "roleName": "Ime vloge",
+    "permissions": "Dovoljenja",
+    "members": "člani",
+    "creating": "Ustvarjanje ...",
+    "createRole": "Ustvari vlogo",
+    "systemRole": "Sistemska vloga",
+    "builtIn": "Vgradna",
+    "empty": "Ni še nobene vloge."
+  },
+  "permissions": {
+    "MANAGE_LEADS": "Upravljanje možnih strank (ustvarjanje, napredek, rezervacija)",
+    "MANAGE_TEAM": "Upravljanje ekipe (dodajanje, urejanje, odstranjevanje članov)",
+    "MANAGE_ROLES": "Upravljanje vlog in dovoljenj",
+    "MANAGE_SETTINGS": "Upravljanje nastavitev (polja obrazca za potencialne stranke)",
+    "none": "Brez dovoljenj"
+  }
+}

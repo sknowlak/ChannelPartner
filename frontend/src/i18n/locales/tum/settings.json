@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Vyakunozga",
+    "noPermission": "Mulije chizomerezgo cha kulongozga vyakunozga."
+  },
+  "categories": {
+    "lead": "Dangilila",
+    "user": "Woseŵezeska",
+    "integrations": "Kuphatikiza"
+  },
+  "leadTabs": {
+    "fields": "Minda",
+    "statuses": "Vigaŵa na vigaŵa vichokovichoko",
+    "notifications": "Vimanyisko na vyakunozga"
+  },
+  "fields": {
+    "leadIntro": "Konzekerani fomu yakukolera ŵalongozgi: kuzomerezga/kukanizga minda, ŵikani chimanyikwiro pa ivyo vikukhumbikwa, panji ŵikanipo minda yinu.",
+    "userIntro": "Konzekerani fomu ya Add/Edit Team Member: zomerezgani/kukanizga minda, ŵikani chimanyikwiro pa ivyo vikukhumbikwa, panji ŵikanipo minda yinu.",
+    "addCustomField": "+ Sazgilanipo Munda wakuzomerezgeka",
+    "fieldLabel": "Lebo ya munda",
+    "group": "Ungano",
+    "groupPlaceholderLead": "mwachiyelezgero, uthenga wa kufumba",
+    "groupPlaceholderUser": "Mwachiyelezgero, Vinyake vyakusazgikira",
+    "dataType": "Mtundu wa Data",
+    "options": "Vyakusankha (vyakupatulika na koma)",
+    "requiredLead": "Kukhumbikwa - ŵanyinu mu gulu linu ŵakwenera kulemba ivi kuti ŵalembeske ŵalongozgi",
+    "requiredUser": "Kukhumbikwa - kukwenera kuzuzgika para mukusazgako membala wa gulu",
+    "creating": "Kupanga...",
+    "createField": "Lembani Munda",
+    "columns": {
+      "field": "Munda",
+      "group": "Ungano",
+      "type": "Mutundu",
+      "required": "Khumbikwa",
+      "enabled": "Kuzomerezgeka",
+      "kind": "Lusungu"
+    },
+    "kind": {
+      "custom": "Mwambo",
+      "core": "Pakati (wakujalika)",
+      "standard": "Sitandade"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Malemba",
+    "TEXTAREA": "Malemba ghatali",
+    "NUMBER": "Nambala",
+    "CURRENCY": "Ndalama",
+    "DATE": "Zuba",
+    "SELECT": "Kukhira pasi",
+    "LIST": "Mazina"
+  },
+  "picker": {
+    "searchPlaceholder": "Penja malo ghakulongozga...",
+    "summary": "{{shown}} kulongoreka · {{mandatory}} kuchichizga",
+    "mandatory": "Khumbika chomene",
+    "noMatch": "Palije minda yakuyana."
+  },
+  "statuses": {
+    "intro": "Makhaliro ghinu ghakulongozga na vigaŵa vichokovichoko - ivyo waliyose wakupempha (zuŵa & nyengo, minda yakulongozga) para munthu wakusintha kulongozga kwa iyo.",
+    "add": "+ Sazgilanipo umo vinthu viliri",
+    "columns": {
+      "order": "Ndondomeko",
+      "status": "Udindo",
+      "subStatuses": "Vinthu vichokovichoko",
+      "asksFor": "Wakupempha",
+      "active": "Chakugwila ntchito"
+    },
+    "moveUp": "Sunthani pachanya",
+    "moveDown": "Sunthani pasi",
+    "defaultBadge": "Kukhazikika kwa ŵalongozgi ŵaphya",
+    "bookingBadge": "Kusunga malo",
+    "asksForLabel": "Kupempha {{label}}",
+    "asksForDateTime": "Kufumba zuŵa na nyengo",
+    "none": "Palije",
+    "dateTime": "Zuŵa na nyengo",
+    "scheduledOn": "pa {{names}}",
+    "fieldsSummary_one": "{{count}} munda ( {{mandatory}} wakukhumbikwa)",
+    "fieldsSummary_other": "{{count}} minda ( {{mandatory}} kuchichizga)",
+    "deleteConfirm": "Fufutani umo vinthu viliri \" {{name}} \"? Ici cingasinthika yayi.",
+    "editTitle": "Sinthani umo vinthu viliri - {{name}}",
+    "newTitle": "Mkhaliro Uphya",
+    "name": "Zina la mkhalidwe",
+    "colour": "Mutundu",
+    "active": "Chakugwila ntchito",
+    "isDefault": "Ukhalilo wakukhazikika wa ŵalongozgi ŵaphya",
+    "isBooking": "Kusunga kwa malo (kuŵikika na Kusunga Kwakukwana)",
+    "whenMoved": "Para wakulongozga wakusunthika ku malo agha",
+    "askSchedule": "Fumbani zuŵa na nyengo (wakunozga)",
+    "scheduleLabelPlaceholder": "Lebo, mwachiyelezgero, Lutani ku",
+    "fieldsToShow": "Malo ghakulongozga ghakuwoneska pa fomu ya kusintha",
+    "subStatusesTitle": "Vinthu vichokovichoko",
+    "subStatusesHint": "Chigaŵa chilichose chingapempha zuŵa & nyengo yake na kusazgapo minda yake - iyo yikulongoreka pachanya pa minda ya status iyo ili pachanya.",
+    "subStatusName": "Zina la chigaŵa",
+    "subFields": "Minda ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Chimanyikwiro cha zuŵa na nyengo, mwachiyelezgero, yimbiraniso pa",
+    "addSubStatus": "+ Sazgilanipo Sub-Status",
+    "saveStatus": "Sungani umo vinthu viliri",
+    "createStatus": "Lembani umo vinthu viliri"
+  },
+  "notifications": {
+    "intro": "Ziŵiskani ŵanthu ŵakwenelera para mulongozgi wafika pa msinkhu - nyengo yeneyiyo, panji nyengo yakuŵikika pambere/pamanyuma pa zuŵa & nyengo iyo yaŵikika pa iyo.",
+    "add": "+ Sazgilanipo chimanyisko",
+    "columns": {
+      "notification": "Chimanyisko",
+      "whenStatusIs": "Para Mkhaliro Uli",
+      "sends": "Wakutuma",
+      "to": "Ku",
+      "via": "Kujumphira",
+      "enabled": "Kuzomerezgeka"
+    },
+    "anyStatus": "Udindo uliwose",
+    "anySubStatus": "Udindo uliwose",
+    "inactiveOption": "{{name}} (wakugwira ntchito yayi)",
+    "emptyRules": "Palije vimanyisko - sazgilanipo chimoza kuti muchenjezge gulu linu para wakulongozga wafika pa msinkhu.",
+    "jobs": {
+      "title": "Kunozga na kutumizga",
+      "firesAt": "Moto Pa",
+      "notification": "Chimanyisko",
+      "lead": "Dangilila",
+      "status": "Udindo",
+      "details": "Dongosolo",
+      "empty": "Palije ico caŵikika panji kutumizgika.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Kulindilira",
+      "PROCESSING": "Kunozga",
+      "SENT": "Tuma",
+      "FAILED": "Kutondeka",
+      "SKIPPED": "Kudumphika",
+      "CANCELLED": "Kukanizgika"
+    },
+    "deliveryStatus": {
+      "SENT": "tuma",
+      "FAILED": "kutondeka",
+      "SKIPPED": "wakajumphiska"
+    },
+    "deliveryChannel": {
+      "IN_APP": "mu pulogiramu",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Woseŵezeska wakupika",
+      "owner": "Mweneko",
+      "updatedBy": "Kusinthika na",
+      "role": "Mulimo: {{name}}"
+    },
+    "channels": {
+      "inApp": "Mu-app",
+      "email": "Imelo",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Fufutani chimanyisko \" {{name}} \"? Vikumbusko ivyo vikulindilira kufuma kwa iyo vikufumiskikapo.",
+    "testPrompt": "Tumirani mayeso gha chimanyisko ichi kwa imwe mwekha (mu-app) kugwiriskira nchito ID wuli yakulongozga ?",
+    "testSent": "Kutumizgika ku belu winu: {{title}} {{message}}",
+    "headersInvalid": "Mitu Webhook yikwenera kuŵa yakuzomerezgeka JSON , mwachiyelezgero {\"Kuzomerezga\": \"Wakunyamura xyz\"}",
+    "editTitle": "Sinthani chimanyisko",
+    "newTitle": "Chimanyisko chiphya",
+    "name": "Zina",
+    "namePlaceholder": "mwachiyelezgero, kukumbuska vya ulendo wa pa webusayiti",
+    "whenStatus": "Para udindo wa mulongozgi uli .",
+    "subStatus": "Udindo",
+    "send": "Tumirani (wakupanga ndondomeko)",
+    "custom": "Mwambo...",
+    "modeBefore": "pambere nyengo yakuŵikika yindakwane",
+    "modeAfter": "panyuma pa nyengo iyo yikaŵikika",
+    "noScheduleWarning": "Ukhaliro uwu ukupempha yayi zuŵa & nyengo, ntheura \"pambere / pa / pamanyuma pa nyengo yakuŵikika\" chimanyisko chingaŵapo yayi.",
+    "noScheduleFix": "Gwirani <strong>Pemphani zuŵa na nyengo</strong> yake pasi pa Vigaŵa na Vigaŵa Vichokovichoko, panji tumizani Mwaluŵiro.",
+    "sendTo": "Tumirani ku (kuphatikizapo kuli kose)",
+    "recipientAssigned": "Woseŵezeska wakupika (mweneko wakulongozga)",
+    "recipientOwner": "Mweneko wa akaunti / mulaŵiliri",
+    "recipientUpdatedBy": "Munthu uyo ​​wakasintha umo vinthu viliri",
+    "everyoneWithRole": "Waliyose uyo wali na udindo",
+    "specificUsers": "Awo ŵakuseŵezeska (ŵakugwira ntchito)",
+    "inactiveNever": "Ŵanthu awo ŵakugwiliskira ntchito yayi ŵakupokera yayi vimanyikwiro, nanga ŵangasankhika.",
+    "deliverVia": "Kupereka kwizira",
+    "channelInApp": "Mu-app (belu)",
+    "channelEmail": "Imelo",
+    "channelWebhook": "Webhook (wakupeleka SMS pa WhatsApp )",
+    "emailHint": "Imelo yikuluta ku adiresi ya imelo ya waliyose uyo wakupokera ndipo yikukhumbikwira SMTP iyo yikuŵikika pa seva (backend / .env); mpaka nyengo iyo email yikutumizgika yikulembeka nga yikujumphika.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Mitu ( JSON )",
+    "content": "Vyakumanyiska",
+    "title": "Mutu",
+    "message": "Uthenga",
+    "insertIntoTitle": "Ikani mu Mutu",
+    "insertIntoMessage": "Ikani mu Uthenga",
+    "anyLeadField": "Munda uliwose wakulongozga ukugwiraso ntchito, mwachiyelezgero <code1>{{example1}}</code1> panji <code2>{{example2}}</code2> .",
+    "preview": "Kuwonera dankha (chiyelezgero cha kulongozga)",
+    "enabled": "Kuzomerezgeka",
+    "saveRule": "Sungani chimanyisko",
+    "createRule": "Lembani chimanyisko",
+    "variables": {
+      "customerName": "Zina lakulongozga",
+      "customerMobile": "Kulongozga mafoni",
+      "customerEmail": "Imelo yakulongozga",
+      "registrationId": "ID yakulongozga",
+      "status": "Udindo",
+      "subStatus": "Udindo",
+      "scheduleAt": "Zuŵa na nyengo ivyo vyaŵikika",
+      "assignedTo": "Woseŵezeska wakupika",
+      "updatedBy": "Kusinthika na",
+      "recipient": "Zina la uyo wakupokera",
+      "project": "Pulojekiti",
+      "notes": "Noti yasonosono",
+      "partner": "Zina la mnyako"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Mwaluŵiro para udindo waŵikika .",
+      "AT": "Pa nyengo iyo ŵakaŵika .",
+      "A1D": "Zuŵa limoza panyuma pa nyengo iyo yikaŵikika (kuwoneseska)"
+    },
+    "immediately": "Nyengo yeneyiyo",
+    "atScheduled": "Pa nyengo yakuŵikika",
+    "before": {
+      "MINUTES_one": "{{count}} mphindi pambere nyengo yakuŵikika yindakwane",
+      "MINUTES_other": "{{count}} mphindi pambere nyengo yakuŵikika yindakwane",
+      "HOURS_one": "{{count}} ora pambere nyengo yakuŵikika yindakwane",
+      "HOURS_other": "{{count}} maora pambere nyengo yakuŵikika yindakwane",
+      "DAYS_one": "{{count}} zuŵa pambere nyengo yakuŵikika yindakwane",
+      "DAYS_other": "{{count}} mazuŵa pambere nyengo yakuŵikika yindakwane",
+      "WEEKS_one": "{{count}} sabata pambere nyengo yakuŵikika yindakwane",
+      "WEEKS_other": "{{count}} masabata pambere nyengo yakuŵikika yindakwane",
+      "MONTHS_one": "{{count}} mwezi umoza pambere nyengo yakuŵikika yindakwane",
+      "MONTHS_other": "{{count}} myezi pambere nyengo yakuŵikika yindakwane",
+      "YEARS_one": "{{count}} chaka pambere nyengo yakuŵikika yindakwane",
+      "YEARS_other": "{{count}} vyaka pambere nyengo yakuŵikika yindakwane"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} mphindi panyuma pa nyengo iyo yikaŵikika",
+      "MINUTES_other": "{{count}} mphindi panyuma pa nyengo iyo yikaŵikika",
+      "HOURS_one": "{{count}} ora panyuma pa nyengo iyo yikaŵikika",
+      "HOURS_other": "{{count}} maora ghakulondezgapo pa nyengo iyo yikaŵikika",
+      "DAYS_one": "{{count}} zuŵa panyuma pa nyengo iyo mwaŵika",
+      "DAYS_other": "{{count}} mazuŵa ghakulondezgapo pa nyengo iyo yikaŵikika",
+      "WEEKS_one": "{{count}} sabata panyuma pa nyengo iyo yikaŵikika",
+      "WEEKS_other": "{{count}} masabata kufuma apo nyengo yikaŵikika",
+      "MONTHS_one": "{{count}} mwezi panyuma pa nyengo iyo yikaŵikika",
+      "MONTHS_other": "{{count}} myezi kufuma pa nyengo iyo yikaŵikika",
+      "YEARS_one": "{{count}} chaka panyuma pa nyengo iyo yikaŵikika",
+      "YEARS_other": "{{count}} vyaka kufuma apo nyengo yikaŵikika"
+    },
+    "units": {
+      "MINUTES_one": "miniti",
+      "MINUTES_other": "maminiti",
+      "HOURS_one": "awala",
+      "HOURS_other": "maora",
+      "DAYS_one": "zuba",
+      "DAYS_other": "mazuŵa",
+      "WEEKS_one": "sabata",
+      "WEEKS_other": "masabata",
+      "MONTHS_one": "mwezi",
+      "MONTHS_other": "myezi",
+      "YEARS_one": "chilumika",
+      "YEARS_other": "vyaka"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "title": "Valdykite komandą",
+  "tabs": {
+    "members": "Komandos nariai",
+    "roles": "Vaidmenys ir leidimai",
+    "profile": "Mano profilis"
+  },
+  "roles": {
+    "owner": "Savininkas",
+    "member": "Komandos narys"
+  },
+  "profile": {
+    "updated": "Profilis atnaujintas.",
+    "basicInfo": "Pagrindinė informacija",
+    "organisationInfo": "Organizacijos informacija",
+    "preferences": "Parinktys",
+    "companyName": "Įmonės / organizacijos pavadinimas",
+    "city": "Miestas",
+    "state": "valstybė",
+    "currencyHelp": "Naudojamas jūsų komandos biudžetams ir rezervavimo vertėms rodyti.",
+    "useDeviceTimezone": "Naudoti įrenginio laiko juostą ( {{timezone}} )",
+    "securityRole": "Saugumas ir vaidmuo",
+    "newPassword": "Naujas slaptažodis (palikite tuščią, kad nepasikeistų)",
+    "currentPassword": "Dabartinis slaptažodis",
+    "memberSince": "Narys Nuo",
+    "languageSaved": "Kalba išsaugota paskyroje – ji bus naudojama kiekviename įrenginyje, prie kurio prisijungiate."
+  },
+  "members": {
+    "intro": "Pridėkite, redaguokite, išaktyvinkite arba pašalinkite žmones iš savo komandos – jie turi prieigą prie tų pačių potencialių klientų.",
+    "noPermission": "Neturite leidimo pridėti, redaguoti ar pašalinti komandos narių.",
+    "addNew": "+ Pridėti naują vartotoją",
+    "passwordLabel": "{{label}} (mažiausiai 8 simboliai)",
+    "rolePermissions": "Vaidmuo ir leidimai",
+    "adding": "Pridedama...",
+    "addMember": "Pridėti komandos narį",
+    "tabAll": "Visi ( {{count}} )",
+    "tabActive": "Aktyvus ( {{count}} )",
+    "tabInactive": "Neaktyvus ( {{count}} )",
+    "searchPlaceholder": "Ieškokite vardo arba vartotojo vardo...",
+    "allTimezones": "Visos laiko juostos",
+    "perPage": "Įrašai viename puslapyje",
+    "contact": "Susisiekite",
+    "added": "Pridėta",
+    "toggleActive": "Aktyvus – spustelėkite, kad išjungtumėte",
+    "toggleInactive": "Neaktyvus – spustelėkite, kad suaktyvintumėte",
+    "empty": "Kol kas komandos narių nėra.",
+    "noMatch": "Nė vienas komandos narys neatitinka šių filtrų.",
+    "showing": "Rodoma {{from}} - {{to}} iš {{total}} įrašų",
+    "firstPage": "Pirmas puslapis",
+    "previousPage": "Ankstesnis puslapis",
+    "nextPage": "Kitas puslapis",
+    "lastPage": "Paskutinis puslapis"
+  },
+  "editMember": {
+    "title": "Redaguoti naudotoją",
+    "noPermission": "Neturite leidimo redaguoti komandos narių.",
+    "backToTeam": "Atgal į komandą",
+    "cantChangeOwn": "Jūs negalite pakeisti savo vaidmens ar statuso.",
+    "needsManageRoles": "Norint pakeisti nario vaidmenį, reikia leidimo valdyti vaidmenis.",
+    "addedBy": "Pridėjo",
+    "addedOn": "Pridėta"
+  },
+  "rolesPage": {
+    "intro": "Superadministratorius, administratorius ir valdytojas yra integruoti ir negali būti keičiami – sukurkite tinkintą vaidmenį bet kam kitam.",
+    "noPermission": "Neturite leidimo tvarkyti vaidmenų.",
+    "createCustom": "+ Sukurkite pasirinktinį vaidmenį",
+    "roleName": "Vaidmens pavadinimas",
+    "permissions": "Leidimai",
+    "members": "nariai",
+    "creating": "Kuriama...",
+    "createRole": "Sukurti vaidmenį",
+    "systemRole": "Sistemos vaidmuo",
+    "builtIn": "Įmontuotas",
+    "empty": "Kol kas nėra vaidmenų."
+  },
+  "permissions": {
+    "MANAGE_LEADS": "Tvarkyti potencialius klientus (kurti, patobulinti, rezervuoti)",
+    "MANAGE_TEAM": "Valdykite komandą (pridėkite, redaguokite, pašalinkite narius)",
+    "MANAGE_ROLES": "Tvarkykite vaidmenis ir leidimus",
+    "MANAGE_SETTINGS": "Tvarkyti nustatymus (potencialių klientų formos laukai)",
+    "none": "Jokių leidimų"
+  }
+}

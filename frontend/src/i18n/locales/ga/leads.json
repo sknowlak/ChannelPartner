@@ -1,0 +1,194 @@
+{
+  "list": {
+    "title": "Mo Cheannairí",
+    "signedInAs": "Sínithe isteach mar {{name}} ( {{partnerId}} ) · amanna a thaispeántar in {{timezone}}",
+    "addLead": "+ Cuir Luaidhe leis",
+    "tabs": {
+      "all": "Gach ( {{count}} )",
+      "pending": "Ar feitheamh ( {{count}} )",
+      "booked": "Curtha in áirithe ( {{count}} )"
+    },
+    "searchPlaceholder": "Cuardaigh de réir ainm, fón póca nó ID clárúcháin ...",
+    "manageColumns": "Colúin a bhainistiú",
+    "rowsPerPage": "Sraitheanna in aghaidh an leathanaigh",
+    "registrationId": "ID clárúcháin",
+    "emptyState": "Níl aon treoracha fós - cláraigh do chéad cheann.",
+    "noMatch": "Ní mheaitseálann aon luaidhe leis na scagairí seo.",
+    "showing": "Ag taispeáint {{from}} - {{to}} de {{total}} iontrálacha",
+    "actions": {
+      "preview": "Réamhamharc & nuashonrú tapa",
+      "history": "Stair",
+      "email": "Ríomhphost",
+      "whatsapp": "WhatsApp",
+      "call": "Glaoigh"
+    },
+    "pagination": {
+      "first": "An chéad leathanach",
+      "previous": "An leathanach roimhe seo",
+      "next": "An chéad leathanach eile",
+      "last": "leathanach deiridh"
+    }
+  },
+  "columns": {
+    "status": "Stádas",
+    "assignTo": "Sann Chun",
+    "booked": "Curtha in áirithe",
+    "protectionUntil": "Cosaint Go dtí"
+  },
+  "booking": {
+    "booked": "Curtha in áirithe",
+    "pending": "Ar feitheamh"
+  },
+  "assign": {
+    "unassigned": "Neamhshannta",
+    "owner": "{{name}} (Úinéir)",
+    "inactive": "{{name}} (neamhghníomhach)",
+    "unknownUser": "Úsáideoir anaithnid",
+    "assignedTo": "Sannta do {{name}}"
+  },
+  "form": {
+    "addTitle": "Cuir Luaidhe leis",
+    "editTitle": "Cuir Luaidhe in Eagar",
+    "noPermissionAdd": "Níl cead agat treoracha a chlárú.",
+    "noPermissionEdit": "Níl cead agat treoracha a chur in eagar.",
+    "selectPlaceholder": "Roghnaigh...",
+    "commaSeparated": "Camóg scartha",
+    "phonePlaceholder": "Uimhir theileafóin",
+    "countryCode": "Cód tíre"
+  },
+  "project": {
+    "none": "Níl aon tionscadal fós (gan tagairt)",
+    "notInList": "{{project}} (nach bhfuil sa liosta tionscadal)"
+  },
+  "journey": {
+    "customer": "Custaiméir",
+    "currentOwner": "Úinéir Reatha",
+    "protectionExpiry": "Éag Cosaint",
+    "leadStatus": "Stádas Luaidhe",
+    "scheduled": "Sceidealta",
+    "assignedTo": "Sannta do",
+    "referral": "Atreorú",
+    "builderReason": "Cúis an tógálaí: {{reason}}",
+    "bookedHint": "In áirithe ag an tógálaí - tá úinéireacht oibríochtúil bhog sé go dtí an tógálaí; coinnítear do cháil agus do cháilitheacht coimisiúin.",
+    "notBookedHint": "Deimhníonn an tógálaí na háirithintí a luaithe a ghlacann siad leis an atreorú.",
+    "quickUpdate": "Nuashonrú Tapa",
+    "leadDetails": "Sonraí Luaidhe",
+    "progressHistory": "Stair Dul Chun Cinn",
+    "timesIn": "( amanna i {{timezone}} )",
+    "backToMyLeads": "Ar ais go dtí Mo Cheannairí",
+    "editLead": "Cuir Luaidhe in Eagar"
+  },
+  "referral": {
+    "NOT_REFERRED": "Gan atreorú (gan tionscadal)",
+    "PENDING_BUILDER": "Ag fanacht le tógálaí",
+    "ACCEPTED": "Glactha ag tógálaí",
+    "REJECTED": "Diúltaithe ag tógálaí"
+  },
+  "preview": {
+    "ariaLabel": "Réamhamharc luaidhe",
+    "title": "Réamhamharc Luaidhe",
+    "source": "Foinse",
+    "location": "Suíomh",
+    "scheduled": "Sceidealta",
+    "registered": "Cláraithe",
+    "latestNote": "Nóta is déanaí",
+    "quickUpdate": "Nuashonrú Tapa",
+    "fullDetails": "Sonraí Iomlána",
+    "editLead": "Cuir Luaidhe in Eagar",
+    "history": "Stair"
+  },
+  "quick": {
+    "assignedTo": "Sannta do",
+    "status": "Stádas",
+    "subStatus": "Fo-Stádas",
+    "selectSubStatus": "Roghnaigh fo-stádas...",
+    "none": "Dada",
+    "scheduledAt": "Sceidealta ag",
+    "localTime": "am áitiúil",
+    "note": "Nóta",
+    "notePlaceholder": "Cad a tharla ar an nglao/cuairt seo? (roghnach)",
+    "updateStatus": "Stádas Nuashonraithe",
+    "statusUpdated": "Nuashonraíodh an stádas",
+    "bookedLocked": "Cuirtear an luaidhe seo in áirithe - ní féidir a stádas a athrú a thuilleadh.",
+    "viewOnly": "Is féidir leat an treoir seo a fheiceáil, ach ní féidir le do ról é a nuashonrú."
+  },
+  "history": {
+    "title": "Stair - {{registrationId}}",
+    "tabs": {
+      "all": "Gach",
+      "status": "Stádas",
+      "assignment": "Sannadh",
+      "notes": "Nótaí"
+    },
+    "doneBy": "Arna dhéanamh ag {{actor}}",
+    "system": "Córas",
+    "platforms": {
+      "System": "Córas",
+      "External": "Seachtrach",
+      "Web": "Gréasán",
+      "Mobile": "Soghluaiste"
+    },
+    "added": "curtha leis",
+    "updated": "nuashonraithe",
+    "empty": "(folamh)",
+    "noHistory": "Níl aon stair sa chatagóir seo fós.",
+    "fieldLabels": {
+      "stage": "Stádas",
+      "subStatus": "Fo-Stádas",
+      "scheduledAt": "Sceideal",
+      "notes": "Nótaí",
+      "assignedTo": "Sannta do"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Clárú comhpháirtí faighte",
+      "DUPLICATE_CHECK_COMPLETED": "Seiceáil dhúblach críochnaithe - níor aimsíodh aon dúblach gníomhach",
+      "REGISTRATION_ACCEPTED": "Glacadh le clárú",
+      "PROTECTION_GRANTED_one": "{{count}} -deonaíodh cosaint lae",
+      "PROTECTION_GRANTED_two": "{{count}} -deonaíodh cosaint lae",
+      "PROTECTION_GRANTED_few": "{{count}} -deonaíodh cosaint lae",
+      "PROTECTION_GRANTED_many": "{{count}} -deonaíodh cosaint lae",
+      "PROTECTION_GRANTED_other": "{{count}} -deonaíodh cosaint lae",
+      "REGISTRATION_ATTEMPT_REJECTED": "Iarracht clárúcháin dhúblach {{partnerId}} diúltaithe",
+      "LEAD_DETAILS_UPDATED_one": "Réimse {{count}} nuashonraithe",
+      "LEAD_DETAILS_UPDATED_two": "{{count}} réimse nuashonraithe",
+      "LEAD_DETAILS_UPDATED_few": "{{count}} réimse nuashonraithe",
+      "LEAD_DETAILS_UPDATED_many": "{{count}} réimse nuashonraithe",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} réimse nuashonraithe",
+      "STAGE_UPDATED": "Nuashonraíodh an stádas go {{status}}",
+      "LEAD_ASSIGNED": "Sannta do {{name}}",
+      "LEAD_UNASSIGNED": "Neamhshannta",
+      "BOOKING_COMPLETED": "Cuireadh an áirithint i gcrích",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Aistríodh úinéireacht oibríochtúil chuig Tógálaí",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Leithdháileadh comhpháirtí caomhnaithe",
+      "COMMISSION_ELIGIBILITY_CREATED": "Cruthaíodh incháilitheacht an Choimisiúin",
+      "HANDOVER_COMPLETED": "An t-aistriú críochnaithe",
+      "REFERRAL_ACCEPTED": "Ghlac Tógálaí leis an tarchur",
+      "REFERRAL_REJECTED": "Dhiúltaigh Tógálaí an tarchur. Cúis: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Scaoileadh admin cosaint dhúbailt go luath. Cúis: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Rinne an riarthóir an clárú a athshannadh ó {{from}} go {{to}} . Cúis: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Colúin a bhainistiú",
+    "hint": "Tarraing chun athordú · seiceáil chun a thaispeáint",
+    "showAll": "Taispeáin Uile",
+    "resetDefault": "Athshocraigh go Réamhshocrú"
+  },
+  "filters": {
+    "title": "Scagairí",
+    "allProjects": "Gach tionscadal",
+    "any": "ar bith",
+    "noFields": "Níl aon réimsí scagtha eile cumasaithe fós (Socruithe > Luaidhe).",
+    "clearAll": "Glan Uile"
+  },
+  "phone": {
+    "MISSING": "Tá uimhir theileafóin ag teastáil.",
+    "INVALID": "Cuir isteach uimhir theileafóin bhailí.",
+    "TOO_SHORT": "Tá an uimhir theileafóin ró-ghearr.",
+    "TOO_LONG": "Tá an uimhir theileafóin rófhada.",
+    "INVALID_FOR_COUNTRY": "Níl an uimhir theileafóin seo bailí do {{country}} .",
+    "COUNTRY_MISMATCH": "Roghnaigh an cód tíre ceart.",
+    "NOT_MOBILE": "Cuir isteach uimhir fón póca, ní líne thalún."
+  }
+}

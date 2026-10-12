@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "Mina ledtrådar",
+    "signedInAs": "Inloggad som {{name}} ( {{partnerId}} ) · gånger visas i {{timezone}}",
+    "addLead": "+ Lägg till bly",
+    "tabs": {
+      "all": "Alla ( {{count}} )",
+      "pending": "Väntar ( {{count}} )",
+      "booked": "Bokad ( {{count}} )"
+    },
+    "searchPlaceholder": "Sök efter namn, mobil eller registrerings ID ...",
+    "manageColumns": "Hantera kolumner",
+    "rowsPerPage": "Rader per sida",
+    "registrationId": "Registrerings ID",
+    "emptyState": "Inga potentiella kunder ännu - registrera din första.",
+    "noMatch": "Inga potentiella kunder matchar dessa filter.",
+    "showing": "Visar {{from}} - {{to}} av {{total}} poster",
+    "actions": {
+      "preview": "Förhandsgranskning och snabb uppdatering",
+      "history": "Historia",
+      "email": "E-post",
+      "whatsapp": "WhatsApp",
+      "call": "Samtal"
+    },
+    "pagination": {
+      "first": "Första sidan",
+      "previous": "Föregående sida",
+      "next": "Nästa sida",
+      "last": "Sista sidan"
+    }
+  },
+  "columns": {
+    "status": "Status",
+    "assignTo": "Tilldela till",
+    "booked": "Bokad",
+    "protectionUntil": "Skydd tills"
+  },
+  "booking": {
+    "booked": "Bokad",
+    "pending": "I avvaktan på"
+  },
+  "assign": {
+    "unassigned": "Otilldelad",
+    "owner": "{{name}} (ägare)",
+    "inactive": "{{name}} (inaktiv)",
+    "unknownUser": "Okänd användare",
+    "assignedTo": "Tilldelad till {{name}}"
+  },
+  "form": {
+    "addTitle": "Lägg till bly",
+    "editTitle": "Redigera lead",
+    "noPermissionAdd": "Du har inte behörighet att registrera potentiella kunder.",
+    "noPermissionEdit": "Du har inte behörighet att redigera potentiella kunder.",
+    "selectPlaceholder": "Välja...",
+    "commaSeparated": "Komma separerad",
+    "phonePlaceholder": "Telefonnummer",
+    "countryCode": "Landskod"
+  },
+  "project": {
+    "none": "Inget projekt ännu (ej hänvisat)",
+    "notInList": "{{project}} (inte i projektlistan)"
+  },
+  "journey": {
+    "customer": "Kund",
+    "currentOwner": "Nuvarande ägare",
+    "protectionExpiry": "Skyddsutgång",
+    "leadStatus": "Ledningsstatus",
+    "scheduled": "Schemalagt",
+    "assignedTo": "Tilldelad till",
+    "referral": "Remiss",
+    "builderReason": "Byggarens anledning: {{reason}}",
+    "bookedHint": "Bokas av byggherren - operativt ägande har flyttat till byggherren; din attribution och provisionsberättigande behålls.",
+    "notBookedHint": "Bokningar bekräftas av byggaren när de accepterar remissen.",
+    "quickUpdate": "Snabb uppdatering",
+    "leadDetails": "Lead Detaljer",
+    "progressHistory": "Framstegshistoria",
+    "timesIn": "(tider i {{timezone}} )",
+    "backToMyLeads": "Tillbaka till Mina Leads",
+    "editLead": "Redigera lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "Ej hänvisad (inget projekt)",
+    "PENDING_BUILDER": "Väntar på byggare",
+    "ACCEPTED": "Godkänd av byggare",
+    "REJECTED": "Avvisad av byggare"
+  },
+  "preview": {
+    "ariaLabel": "Förhandsgranskning av leads",
+    "title": "Lead Preview",
+    "source": "Källa",
+    "location": "Plats",
+    "scheduled": "Schemalagt",
+    "registered": "Registrerad",
+    "latestNote": "Senaste anmärkning",
+    "quickUpdate": "Snabb uppdatering",
+    "fullDetails": "Fullständiga detaljer",
+    "editLead": "Redigera lead",
+    "history": "Historia"
+  },
+  "quick": {
+    "assignedTo": "Tilldelad till",
+    "status": "Status",
+    "subStatus": "Understatus",
+    "selectSubStatus": "Välj understatus...",
+    "none": "Ingen",
+    "scheduledAt": "Schemalagt kl",
+    "localTime": "lokaltid",
+    "note": "Notera",
+    "notePlaceholder": "Vad hände under detta samtal/besök? (frivillig)",
+    "updateStatus": "Uppdatera status",
+    "statusUpdated": "Status uppdaterad",
+    "bookedLocked": "Detta lead är bokat - dess status kan inte längre ändras.",
+    "viewOnly": "Du kan se det här leadet, men din roll kan inte uppdatera det."
+  },
+  "history": {
+    "title": "Historik – {{registrationId}}",
+    "tabs": {
+      "all": "Alla",
+      "status": "Status",
+      "assignment": "Uppdrag",
+      "notes": "Anteckningar"
+    },
+    "doneBy": "Gjort av {{actor}}",
+    "system": "System",
+    "platforms": {
+      "System": "System",
+      "External": "Extern",
+      "Web": "Web",
+      "Mobile": "Mobil"
+    },
+    "added": "lagt till",
+    "updated": "uppdaterad",
+    "empty": "(tömma)",
+    "noHistory": "Ingen historik i denna kategori ännu.",
+    "fieldLabels": {
+      "stage": "Status",
+      "subStatus": "Understatus",
+      "scheduledAt": "Schema",
+      "notes": "Anteckningar",
+      "assignedTo": "Tilldelad till"
+    },
+    "statusWithSub": "{{status}} ( {{subStatus}} )",
+    "events": {
+      "REGISTRATION_RECEIVED": "Partnerregistrering mottagen",
+      "DUPLICATE_CHECK_COMPLETED": "Dubblettkontroll slutförd - ingen aktiv dubblett hittades",
+      "REGISTRATION_ACCEPTED": "Registrering accepterad",
+      "PROTECTION_GRANTED_one": "{{count}} dagars skydd beviljats",
+      "PROTECTION_GRANTED_other": "{{count}} dagars skydd beviljats",
+      "REGISTRATION_ATTEMPT_REJECTED": "Dubblett registreringsförsök av {{partnerId}} avvisades",
+      "LEAD_DETAILS_UPDATED_one": "Uppdaterat {{count}} fält",
+      "LEAD_DETAILS_UPDATED_other": "Uppdaterade {{count}} fält",
+      "STAGE_UPDATED": "Status uppdaterad till {{status}}",
+      "LEAD_ASSIGNED": "Tilldelad till {{name}}",
+      "LEAD_UNASSIGNED": "Otilldelad",
+      "BOOKING_COMPLETED": "Bokning klar",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Det operativa ägandet överförts till Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partnertillskrivning bevarad",
+      "COMMISSION_ELIGIBILITY_CREATED": "kommissionsberättigande skapats",
+      "HANDOVER_COMPLETED": "Överlämning genomförd",
+      "REFERRAL_ACCEPTED": "Builder accepterade remissen",
+      "REFERRAL_REJECTED": "Builder avvisade remissen. Orsak: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin släppte dubblettskydd tidigt. Orsak: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Administratören tilldelade registreringen från {{from}} till {{to}} . Orsak: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Hantera kolumner",
+    "hint": "Dra för att ändra ordning · markera för att visa",
+    "showAll": "Visa alla",
+    "resetDefault": "Återställ till standard"
+  },
+  "filters": {
+    "title": "Filter",
+    "allProjects": "Alla projekt",
+    "any": "Några",
+    "noFields": "Inga andra filtrerbara fält är aktiverade ännu (Inställningar > Lead).",
+    "clearAll": "Rensa alla"
+  },
+  "phone": {
+    "MISSING": "Telefonnummer krävs.",
+    "INVALID": "Ange ett giltigt telefonnummer.",
+    "TOO_SHORT": "Telefonnumret är för kort.",
+    "TOO_LONG": "Telefonnumret är för långt.",
+    "INVALID_FOR_COUNTRY": "Det här telefonnumret är inte giltigt för {{country}} .",
+    "COUNTRY_MISMATCH": "Välj rätt landskod.",
+    "NOT_MOBILE": "Ange ett mobilnummer, inte en fast telefon."
+  }
+}

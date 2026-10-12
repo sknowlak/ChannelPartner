@@ -1,0 +1,96 @@
+{
+  "shell": {
+    "portal": "Statybininkų portalas",
+    "referrals": "Rekomendacijos",
+    "builderLogin": "Builder prisijungimas",
+    "partnerLogin": "Kanalo partnerio prisijungimas"
+  },
+  "login": {
+    "title": "Statybininko prisijungimas",
+    "hint": "„Builder“ paskyras kuria Leadrat . Paklauskite administratoriaus, jei jo neturite."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Laukiame jūsų sprendimo",
+    "ACCEPTED": "Priimta",
+    "REJECTED": "Atmesta"
+  },
+  "list": {
+    "title": "Rekomendacijos",
+    "allProjects": "Visi projektai",
+    "allStatuses": "Visos būsenos",
+    "count_one": "{{count}} persiuntimas",
+    "count_few": "{{count}} persiuntimų",
+    "count_many": "{{count}} persiuntimų",
+    "count_other": "{{count}} persiuntimų",
+    "columns": {
+      "referral": "Rekomendacija",
+      "customer": "Klientas",
+      "project": "Projektas",
+      "sourcePartner": "Šaltinio partneris",
+      "status": "Būsena",
+      "booking": "Užsakymas",
+      "registered": "Registruotas"
+    },
+    "booked": "Užsakyta",
+    "empty": "Siuntimų dar nėra."
+  },
+  "detail": {
+    "customer": "Klientas",
+    "sourcePartner": "Šaltinio partneris",
+    "attributionNote": "(priskyrimas – keisti negalima)",
+    "leadStatus": "Vadovo būsena",
+    "protectedUntil": "Saugoma iki",
+    "referral": "Rekomendacija",
+    "reason": "Priežastis: {{reason}}",
+    "booking": "Užsakymas",
+    "bookedOwner": "Užsakyta – esate eksploatacinis savininkas",
+    "notBooked": "Neužsakyta",
+    "sharedAfterBooking": "Bendrinamas po užsakymo",
+    "accept": "Priimti persiuntimą",
+    "confirmBooking": "Patvirtinti rezervaciją",
+    "reject": "Atmesti persiuntimą",
+    "rejectReasonLabel": "Atmetimo priežastis (parodyti partneriui) *",
+    "rejectConfirm": "Atmesti",
+    "confirmBookingPrompt": "Patvirtinti užsakymą? Veiklos nuosavybė pereina jums, o partneris gali gauti komisinius.",
+    "notice": {
+      "booked": "Užsakymas patvirtintas.",
+      "accepted": "Siuntimas priimtas.",
+      "rejected": "Siuntimas atmestas."
+    },
+    "backToReferrals": "Atgal į Referals"
+  },
+  "history": {
+    "title": "Istorija",
+    "actor": {
+      "system": "Sistema",
+      "partner": "Kanalo partneris",
+      "admin": "Leadrat administratorius"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Gauta partnerio registracija",
+      "DUPLICATE_CHECK_COMPLETED": "Pasikartojimo patikrinimas baigtas – aktyvaus dublikato nerasta",
+      "REGISTRATION_ACCEPTED": "Registracija priimta",
+      "PROTECTION_GRANTED_one": "Suteikta {{count}} d. apsauga",
+      "PROTECTION_GRANTED_few": "Suteikta {{count}} d. apsauga",
+      "PROTECTION_GRANTED_many": "Suteikta {{count}} d. apsauga",
+      "PROTECTION_GRANTED_other": "Suteikta {{count}} d. apsauga",
+      "STAGE_UPDATED": "Būsena atnaujinta į {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Atnaujintas {{count}} laukas",
+      "LEAD_DETAILS_UPDATED_few": "Atnaujinti laukai: {{count}}",
+      "LEAD_DETAILS_UPDATED_many": "Atnaujinti laukai: {{count}}",
+      "LEAD_DETAILS_UPDATED_other": "Atnaujinti laukai: {{count}}",
+      "LEAD_ASSIGNED": "Priskirta {{name}}",
+      "LEAD_UNASSIGNED": "Nepriskirta",
+      "REFERRAL_ACCEPTED": "Statybininkas priėmė siuntimą",
+      "REFERRAL_REJECTED": "Statybininkas atmetė kreipimąsi. Priežastis: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Pasikartojantis {{partner}} bandymas registruotis atmestas",
+      "BOOKING_COMPLETED": "Užsakymas baigtas",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Eksploatacinė nuosavybė perduota „Builder“.",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partnerio priskyrimas išsaugotas",
+      "COMMISSION_ELIGIBILITY_CREATED": "Sukurtas Komisijos tinkamumas",
+      "HANDOVER_COMPLETED": "Perdavimas baigtas",
+      "ADMIN_PROTECTION_RELEASED": "Administratorius anksti išleido pasikartojančią apsaugą. Priežastis: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Administratorius perskyrė registraciją iš {{from}} į {{to}} . Priežastis: {{reason}}"
+    }
+  }
+}

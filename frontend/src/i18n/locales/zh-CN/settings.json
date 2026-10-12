@@ -1,0 +1,244 @@
+{
+  "page": {
+    "title": "设置",
+    "noPermission": "您没有管理设置的权限。"
+  },
+  "categories": {
+    "lead": "带领",
+    "user": "用户",
+    "integrations": "集成"
+  },
+  "leadTabs": {
+    "fields": "领域",
+    "statuses": "状态和子状态",
+    "notifications": "通知和调度程序"
+  },
+  "fields": {
+    "leadIntro": "配置潜在客户捕获表单：启用/禁用字段、将其标记为必填或添加您自己的自定义字段。",
+    "userIntro": "配置“添加/编辑团队成员”表单：启用/禁用字段、将其标记为必填或添加您自己的自定义字段。",
+    "addCustomField": "+ 添加自定义字段",
+    "fieldLabel": "字段标签",
+    "group": "团体",
+    "groupPlaceholderLead": "例如查询信息",
+    "groupPlaceholderUser": "例如附加细节",
+    "dataType": "数据类型",
+    "options": "选项（逗号分隔）",
+    "requiredLead": "必填 - 您团队中的合作伙伴必须填写此信息才能注册潜在客户",
+    "requiredUser": "必填 - 添加团队成员时必须填写",
+    "creating": "创造...",
+    "createField": "创建字段",
+    "columns": {
+      "field": "场地",
+      "group": "团体",
+      "type": "类型",
+      "required": "必需的",
+      "enabled": "启用",
+      "kind": "种类"
+    },
+    "kind": {
+      "custom": "风俗",
+      "core": "核心（锁定）",
+      "standard": "标准"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "文本",
+    "TEXTAREA": "长文本",
+    "NUMBER": "数字",
+    "CURRENCY": "货币",
+    "DATE": "日期",
+    "SELECT": "下拉菜单",
+    "LIST": "列表"
+  },
+  "picker": {
+    "searchPlaceholder": "搜索潜在客户字段...",
+    "summary": "{{shown}}显示 · {{mandatory}}强制",
+    "mandatory": "强制的",
+    "noMatch": "没有字段匹配。"
+  },
+  "statuses": {
+    "intro": "您的潜在客户状态和子状态 - 当有人更新潜在客户时，每个人都要求什么（日期和时间、潜在客户字段）。",
+    "add": "+ 添加状态",
+    "columns": {
+      "order": "命令",
+      "status": "地位",
+      "subStatuses": "子状态",
+      "asksFor": "要求",
+      "active": "积极的"
+    },
+    "moveUp": "向上移动",
+    "moveDown": "下移",
+    "defaultBadge": "新潜在客户的默认设置",
+    "bookingBadge": "预订状态",
+    "asksForLabel": "要求{{label}}",
+    "asksForDateTime": "询问日期和时间",
+    "none": "没有任何",
+    "dateTime": "日期和时间",
+    "scheduledOn": "在{{names}}上",
+    "fieldsSummary_other": "{{count}}个字段（ {{mandatory}}强制）",
+    "deleteConfirm": "删除状态“ {{name}} ”？此操作无法撤消。",
+    "editTitle": "编辑状态 - {{name}}",
+    "newTitle": "新状态",
+    "name": "状态名称",
+    "colour": "颜色",
+    "active": "积极的",
+    "isDefault": "新潜在客户的默认状态",
+    "isBooking": "预订状态（由“完成预订”设置）",
+    "whenMoved": "当潜在客户转至此状态时",
+    "askSchedule": "询问日期和时间（安排）",
+    "scheduleLabelPlaceholder": "标签，例如访问于",
+    "fieldsToShow": "引导字段显示在更新表单上",
+    "subStatusesTitle": "子状态",
+    "subStatusesHint": "每个子状态都可以询问自己的日期和时间，并添加自己的字段 - 显示在上面状态字段的顶部。",
+    "subStatusName": "子状态名称",
+    "subFields": "字段 ( {{count}} )",
+    "subScheduleLabelPlaceholder": "日期和时间标签，例如回电于",
+    "addSubStatus": "+ 添加子状态",
+    "saveStatus": "保存状态",
+    "createStatus": "创建状态"
+  },
+  "notifications": {
+    "intro": "当潜在客户达到某种状态时立即通知合适的人员，或在预定的日期和时间之前/之后的设定时间通知。",
+    "add": "+ 添加通知",
+    "columns": {
+      "notification": "通知",
+      "whenStatusIs": "当状态为",
+      "sends": "发送",
+      "to": "到",
+      "via": "通过",
+      "enabled": "启用"
+    },
+    "anyStatus": "任何状态",
+    "anySubStatus": "任何子状态",
+    "inactiveOption": "{{name}} （无效）",
+    "emptyRules": "尚无通知 - 添加通知以在潜在客户达到某种状态时提醒您的团队。",
+    "jobs": {
+      "title": "已安排并已发送",
+      "firesAt": "开火于",
+      "notification": "通知",
+      "lead": "带领",
+      "status": "地位",
+      "details": "细节",
+      "empty": "尚未安排或发送任何内容。",
+      "delivery": "{{channel}} → {{recipient}} ： {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} ： {{status}} （ {{detail}} ）"
+    },
+    "jobStatus": {
+      "PENDING": "待办的",
+      "PROCESSING": "加工",
+      "SENT": "发送",
+      "FAILED": "失败的",
+      "SKIPPED": "跳过",
+      "CANCELLED": "取消"
+    },
+    "deliveryStatus": {
+      "SENT": "发送",
+      "FAILED": "失败的",
+      "SKIPPED": "跳过"
+    },
+    "deliveryChannel": {
+      "IN_APP": "应用内",
+      "EMAIL": "电子邮件",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "指定用户",
+      "owner": "所有者",
+      "updatedBy": "更新者",
+      "role": "角色： {{name}}"
+    },
+    "channels": {
+      "inApp": "应用内",
+      "email": "电子邮件",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "删除通知“ {{name}} ”？待处理的提醒将被取消。",
+    "testPrompt": "使用哪个潜在客户ID向您自己（在应用程序内）发送此通知的测试？",
+    "testSent": "已发送至您的小铃： {{title}} {{message}}",
+    "headersInvalid": "Webhook标头必须是有效的JSON ，例如 {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "编辑通知",
+    "newTitle": "新通知",
+    "name": "姓名",
+    "namePlaceholder": "例如网站访问提醒",
+    "whenStatus": "当潜在客户的状态为",
+    "subStatus": "子状态",
+    "send": "发送（调度程序）",
+    "custom": "风俗...",
+    "modeBefore": "在预定时间之前",
+    "modeAfter": "在预定时间之后",
+    "noScheduleWarning": "此状态不要求提供日期和时间，因此“在预定时间之前/在/之后”通知永远不会触发。",
+    "noScheduleFix": "在状态和子状态下打开<strong>询问日期和时间</strong>，或立即发送。",
+    "sendTo": "发送至（任意组合）",
+    "recipientAssigned": "指定用户（主要所有者）",
+    "recipientOwner": "帐户所有者/管理员",
+    "recipientUpdatedBy": "更新状态的人",
+    "everyoneWithRole": "每个人都有角色",
+    "specificUsers": "特定用户（活跃）",
+    "inactiveNever": "非活动用户永远不会收到通知，即使已选择。",
+    "deliverVia": "交付通过",
+    "channelInApp": "应用内（响铃）",
+    "channelEmail": "电子邮件",
+    "channelWebhook": "Webhook （ WhatsApp / SMS提供商）",
+    "emailHint": "电子邮件发送至每个收件人的电子邮件地址，并且需要在服务器（backend/.env）上设置 SMTP；在此之前，电子邮件发送将被记录为已跳过。",
+    "webhookUrl": "Webhook URL （ POST 、 JSON ）",
+    "headers": "标头（ JSON ）",
+    "content": "通知内容",
+    "title": "标题",
+    "message": "信息",
+    "insertIntoTitle": "插入标题",
+    "insertIntoMessage": "插入消息",
+    "anyLeadField": "任何潜在客户字段也适用，例如<code1>{{example1}}</code1>或<code2>{{example2}}</code2> 。",
+    "preview": "预览（样本线索）",
+    "enabled": "启用",
+    "saveRule": "保存通知",
+    "createRule": "创建通知",
+    "variables": {
+      "customerName": "线索姓名",
+      "customerMobile": "领先移动",
+      "customerEmail": "潜在客户电子邮件",
+      "registrationId": "潜在客户ID",
+      "status": "地位",
+      "subStatus": "子状态",
+      "scheduleAt": "预定日期和时间",
+      "assignedTo": "指定用户",
+      "updatedBy": "更新者",
+      "recipient": "收件人姓名",
+      "project": "项目",
+      "notes": "最新笔记",
+      "partner": "合作伙伴名称"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "状态设置后立即",
+      "AT": "在预定的时间",
+      "A1D": "预定时间后1天（后续检查）"
+    },
+    "immediately": "立即地",
+    "atScheduled": "在预定时间",
+    "before": {
+      "MINUTES_other": "比预定时间早{{count}}分钟",
+      "HOURS_other": "比预定时间早{{count}}小时",
+      "DAYS_other": "比预定时间提前{{count}}天",
+      "WEEKS_other": "比预定时间提前{{count}}周",
+      "MONTHS_other": "比预定时间提前{{count}}个月",
+      "YEARS_other": "比预定时间提前{{count}}年"
+    },
+    "after": {
+      "MINUTES_other": "比预定时间晚{{count}}分钟",
+      "HOURS_other": "比预定时间晚{{count}}小时",
+      "DAYS_other": "预定时间后{{count}}天",
+      "WEEKS_other": "预定时间后{{count}}周",
+      "MONTHS_other": "预定时间后{{count}}个月",
+      "YEARS_other": "预定时间后{{count}}年"
+    },
+    "units": {
+      "MINUTES_other": "分钟",
+      "HOURS_other": "小时",
+      "DAYS_other": "天",
+      "WEEKS_other": "周",
+      "MONTHS_other": "月",
+      "YEARS_other": "年"
+    }
+  }
+}

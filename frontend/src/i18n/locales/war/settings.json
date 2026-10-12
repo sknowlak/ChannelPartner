@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Mga kahimtang",
+    "noPermission": "Waray ka pagtugot ha pagdumara han mga setting."
+  },
+  "categories": {
+    "lead": "Nangunguna",
+    "user": "Gumagamit",
+    "integrations": "Mga Pag-usa"
+  },
+  "leadTabs": {
+    "fields": "Mga uma",
+    "statuses": "Mga Kahimtang & Sub-Kahimtang",
+    "notifications": "Mga Pahibaro & Mga Iskedyol"
+  },
+  "fields": {
+    "leadIntro": "I-configure an porma han pagkuha hin lead: pagpaandar/pag-andar han mga uma, markahi ini nga ginkikinahanglan, o pagdugang han imo kalugaringon nga pasadya nga mga uma.",
+    "userIntro": "I-configure an porma han Pagdugang/Pag-edit han Miyembro han Grupo: pagpaandar/pag-andar han mga uma, markahi ini nga ginkikinahanglan, o pagdugang han imo kalugaringon nga pasadya nga mga uma.",
+    "addCustomField": "+ Dugangi an Pasadya nga Uma .",
+    "fieldLabel": "Label han uma",
+    "group": "Grupo",
+    "groupPlaceholderLead": "eg Impormasyon han Pagpakiana",
+    "groupPlaceholderUser": "eg Dugang nga mga Detalye .",
+    "dataType": "Klase hin Datos",
+    "options": "Mga kapilian (ginbulag hin koma)",
+    "requiredLead": "Kinahanglan - kinahanglan pun-on ini han mga kasugbong ha iyo team para makaparehistro hin lead .",
+    "requiredUser": "Kinahanglan - kinahanglan pun-on kun nagdudugtong hin miyembro han team .",
+    "creating": "Paghimo...",
+    "createField": "Paghimo hin Uma",
+    "columns": {
+      "field": "Uma",
+      "group": "Grupo",
+      "type": "Tipo",
+      "required": "Kinahanglan",
+      "enabled": "Gin-aktibo",
+      "kind": "Klase"
+    },
+    "kind": {
+      "custom": "Kustom",
+      "core": "Uyok (nakandado)",
+      "standard": "Suruklan"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Teksto",
+    "TEXTAREA": "Hilaba nga teksto",
+    "NUMBER": "Numero",
+    "CURRENCY": "Salapi",
+    "DATE": "Petsa",
+    "SELECT": "Paghulog",
+    "LIST": "Lista"
+  },
+  "picker": {
+    "searchPlaceholder": "Pagbiling hin mga uma nga tingga...",
+    "summary": "{{shown}} ginpakita · {{mandatory}} obligado",
+    "mandatory": "Obligado",
+    "noMatch": "Waray mga uma nga katugbang."
+  },
+  "statuses": {
+    "intro": "An imo mga kahimtang han panguna ngan mga sub-kahimtang - kon ano an gin-aaro han kada usa (usa nga petsa & oras, mga uma han panguna) kon may-ada nag-uupdate hin usa nga panguna ngadto hito.",
+    "add": "+ Dugangi hin Kahimtang",
+    "columns": {
+      "order": "Order",
+      "status": "Kahimtang",
+      "subStatuses": "Mga Sub-Kahimtang",
+      "asksFor": "Nag-aaro Para",
+      "active": "Aktibo"
+    },
+    "moveUp": "Pagbalhin tipaigbaw",
+    "moveDown": "Pagbalhin tipaubos .",
+    "defaultBadge": "Kasagaran para han bag-o nga mga lead .",
+    "bookingBadge": "Kahimtang han pag-book",
+    "asksForLabel": "Nag-aaro hin {{label}}",
+    "asksForDateTime": "Nagpapakiana hin petsa & oras",
+    "none": "Waray",
+    "dateTime": "Petsa & oras",
+    "scheduledOn": "ha {{names}}",
+    "fieldsSummary_one": "{{count}} uma ( {{mandatory}} kinahanglanon)",
+    "fieldsSummary_other": "{{count}} mga uma ( {{mandatory}} kinahanglanon)",
+    "deleteConfirm": "Paraa an kahimtang \" {{name}} \"? Diri ini mababawi.",
+    "editTitle": "Igliwat an Kahimtang - {{name}}",
+    "newTitle": "Bag-o nga Kahimtang",
+    "name": "Ngaran han Kahimtang",
+    "colour": "Kolor",
+    "active": "Aktibo",
+    "isDefault": "Kasagaran nga kahimtang para han bag-o nga mga nangunguna",
+    "isBooking": "Kahimtang han pag-book (ginbutang han Kumpleto nga Pag-book)",
+    "whenMoved": "Kon an usa nga lead iginbabalhin hini nga kahimtang .",
+    "askSchedule": "Pag-aro hin petsa & oras (tag-iskedyul)",
+    "scheduleLabelPlaceholder": "Label, pananglitan Bisita ha .",
+    "fieldsToShow": "Mga uma nga panguna nga igpapakita ha porma han pag-update .",
+    "subStatusesTitle": "Mga Sub-Kahimtang",
+    "subStatusesHint": "An kada sub-status in pwede mag-aro hin kalugaringon nga petsa & oras ngan magdugang hin kalugaringon nga mga uma - nga iginpapakita ha igbaw han mga uma han status ha igbaw.",
+    "subStatusName": "Ngaran han ubos nga kahimtang",
+    "subFields": "Mga uma ( {{count}} )",
+    "subScheduleLabelPlaceholder": "Petsa & oras nga marka, pananglitan Tawag utro ha",
+    "addSubStatus": "+ Dugangi hin Sub-Kahimtang",
+    "saveStatus": "Tipigi an Kahimtang",
+    "createStatus": "Paghimo hin Kahimtang"
+  },
+  "notifications": {
+    "intro": "Pahibarua an tama nga mga tawo kun an usa nga lead in umabot hin usa nga kahimtang - dayon, o usa nga gintalaan nga oras antis/katapos han petsa & oras nga nakatalaan dida hini.",
+    "add": "+ Dugangi hin Pahibaro",
+    "columns": {
+      "notification": "Pahibaro",
+      "whenStatusIs": "Kun San-o an Kahimtang .",
+      "sends": "Nagpapadara",
+      "to": "Ha",
+      "via": "Pinaagi",
+      "enabled": "Gin-aktibo"
+    },
+    "anyStatus": "Bisan ano nga kahimtang .",
+    "anySubStatus": "Bisan ano nga ubos nga kahimtang .",
+    "inactiveOption": "{{name}} (diri aktibo)",
+    "emptyRules": "Waray pa mga pahibaro - pagdugang hin usa para mahibaroan an imo team kun an usa nga lead in umabot hin kahimtang.",
+    "jobs": {
+      "title": "Nakatalaan & Ginpadara",
+      "firesAt": "Mga Sunog Ha",
+      "notification": "Pahibaro",
+      "lead": "Nangunguna",
+      "status": "Kahimtang",
+      "details": "Detalye",
+      "empty": "Waray pa nakatalaan o ginpadara.",
+      "delivery": "{{channel}} → {{recipient}} : {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}} : {{status}} ( {{detail}} )"
+    },
+    "jobStatus": {
+      "PENDING": "Naghuhulat",
+      "PROCESSING": "Pagproseso",
+      "SENT": "Ginpadara",
+      "FAILED": "Napakyas",
+      "SKIPPED": "Ginlaktaw",
+      "CANCELLED": "Ginkansela"
+    },
+    "deliveryStatus": {
+      "SENT": "ginpadara",
+      "FAILED": "napakyas",
+      "SKIPPED": "ginlaktaw"
+    },
+    "deliveryChannel": {
+      "IN_APP": "ha app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Gintokahan nga gumaramit",
+      "owner": "Tag-iya",
+      "updatedBy": "Ginbag-o han",
+      "role": "Papel: {{name}}"
+    },
+    "channels": {
+      "inApp": "Ha-app",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Paraa an pahibaro \" {{name}} \"? Kanselado an naghuhulat nga mga pahinumdom tikang hito.",
+    "testPrompt": "Magpadara hin pagsari hini nga pahibaro ha imo kalugaringon (ha app) gamit an ano nga ID han panguna ?",
+    "testSent": "Ginpadara ha imo kampanilya: {{title}} {{message}}",
+    "headersInvalid": "An mga ulohan Webhook kinahanglan nga balido nga JSON , pananglitan {\"Pagtugot\": \"Pagdara xyz\"}",
+    "editTitle": "Ig-edit an Pahibaro",
+    "newTitle": "Bag-o nga Pahibaro",
+    "name": "Ngaran",
+    "namePlaceholder": "eg Pahinumdom han pagbisita ha lugar .",
+    "whenStatus": "Kun an kahimtang han usa nga lead amo an .",
+    "subStatus": "Ubos nga kahimtang",
+    "send": "Ipadara (tag-iskedyul)",
+    "custom": "Kustom...",
+    "modeBefore": "antes han nakatalaan nga oras .",
+    "modeAfter": "katapos han nakatalaan nga oras .",
+    "noScheduleWarning": "Ini nga kahimtang diri nangangaro hin petsa & oras, salit an \"antes/ha/katapos han nakatalaan nga oras\" nga pahibaro diri gud magpapabuto.",
+    "noScheduleFix": "I-on <strong>an Pag-aro hin petsa & oras</strong> para hini ha ilarom han Mga Kahimtang & Sub-Kahimtang, o ipadara Dayon.",
+    "sendTo": "Ipadara ha (bisan ano nga kombinasyon)",
+    "recipientAssigned": "Gintokahan nga gumaramit (pangulo nga tag-iya)",
+    "recipientOwner": "Tag-iya han kuwenta / admin",
+    "recipientUpdatedBy": "Tawo nga nag-update han status .",
+    "everyoneWithRole": "An ngatanan nga may papel .",
+    "specificUsers": "Mga partikular nga gumaramit (aktibo)",
+    "inactiveNever": "An diri aktibo nga mga gumaramit diri gud nakakakarawat hin mga pahibaro, bisan kon ginpili.",
+    "deliverVia": "Idul-ong pinaagi han",
+    "channelInApp": "Ha-app (kampana)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook ( WhatsApp / SMS taghatag)",
+    "emailHint": "An email makadto ha tagsa nga email adres han nakakarawat ngan nagkikinahanglan hin SMTP nga nakabutang ha server (backend/.env); tubtob hito nga panahon an mga pagpadara hin email gin-log sugad nga ginlaktawan.",
+    "webhookUrl": "URL Webhook ( POST , JSON )",
+    "headers": "Mga ulohan ( JSON )",
+    "content": "Sulod han pahibaro",
+    "title": "Titulo",
+    "message": "Mensahe",
+    "insertIntoTitle": "Isulod ha Titulo .",
+    "insertIntoMessage": "Isulod ha Mensahe",
+    "anyLeadField": "Bisan ano nga tingga nga uma nagtrabaho liwat, pananglitan <code1>{{example1}}</code1> o <code2>{{example2}}</code2> .",
+    "preview": "Pagkita (sampol nga tingga)",
+    "enabled": "Gin-aktibo",
+    "saveRule": "Tipigi an Pahibaro",
+    "createRule": "Paghimo hin Pahibaro",
+    "variables": {
+      "customerName": "Ngaran han tingga",
+      "customerMobile": "Manguna nga mobile",
+      "customerEmail": "Panguna nga email",
+      "registrationId": "Tangga ID",
+      "status": "Kahimtang",
+      "subStatus": "Ubos nga kahimtang",
+      "scheduleAt": "Nakatalaan nga petsa & oras",
+      "assignedTo": "Gintokahan nga gumaramit",
+      "updatedBy": "Ginbag-o han",
+      "recipient": "Ngaran han makarawat",
+      "project": "Proyekto",
+      "notes": "Pinakabag-o nga nota",
+      "partner": "Ngaran han kapadis"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Dayon kon an kahimtang nabutang na .",
+      "AT": "Ha nakatalaan nga oras .",
+      "A1D": "1 ka adlaw katapos han nakatalaan nga oras (pagsunod nga pag-usisa)"
+    },
+    "immediately": "Dayon",
+    "atScheduled": "Ha nakatalaan nga oras .",
+    "before": {
+      "MINUTES_one": "{{count}} minuto ugsa han nakatalaan nga oras",
+      "MINUTES_other": "{{count}} mga minuto ugsa han nakatalaan nga oras",
+      "HOURS_one": "{{count}} oras antes han nakatalaan nga oras",
+      "HOURS_other": "{{count}} mga oras antis han nakatalaan nga oras",
+      "DAYS_one": "{{count}} adlaw antis han nakatalaan nga oras",
+      "DAYS_other": "{{count}} mga adlaw antis han nakatalaan nga oras",
+      "WEEKS_one": "{{count}} semana antes han nakatalaan nga oras",
+      "WEEKS_other": "{{count}} mga semana ugsa han nakatalaan nga oras",
+      "MONTHS_one": "{{count}} bulan ugsa han nakatalaan nga oras",
+      "MONTHS_other": "{{count}} mga bulan antis han nakatalaan nga oras",
+      "YEARS_one": "{{count}} tuig ugsa han nakatalaan nga oras",
+      "YEARS_other": "{{count}} ka tuig antis han nakatalaan nga oras"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minuto katapos han nakatalaan nga oras",
+      "MINUTES_other": "{{count}} mga minuto katapos han nakatalaan nga oras",
+      "HOURS_one": "{{count}} oras katapos han nakatalaan nga oras",
+      "HOURS_other": "{{count}} mga oras katapos han nakatalaan nga oras",
+      "DAYS_one": "{{count}} adlaw katapos han nakatalaan nga oras",
+      "DAYS_other": "{{count}} mga adlaw katapos han nakatalaan nga oras",
+      "WEEKS_one": "{{count}} semana katapos han nakatalaan nga oras",
+      "WEEKS_other": "{{count}} mga semana katapos han nakatalaan nga oras",
+      "MONTHS_one": "{{count}} bulan katapos han nakatalaan nga oras",
+      "MONTHS_other": "{{count}} mga bulan katapos han nakatalaan nga oras",
+      "YEARS_one": "{{count}} tuig katapos han nakatalaan nga oras",
+      "YEARS_other": "{{count}} ka tuig katapos han nakatalaan nga oras"
+    },
+    "units": {
+      "MINUTES_one": "minuto",
+      "MINUTES_other": "minuto",
+      "HOURS_one": "oras",
+      "HOURS_other": "oras",
+      "DAYS_one": "adlaw",
+      "DAYS_other": "adlaw",
+      "WEEKS_one": "semana",
+      "WEEKS_other": "semana",
+      "MONTHS_one": "bulan",
+      "MONTHS_other": "bulan",
+      "YEARS_one": "tuig",
+      "YEARS_other": "mga tuig"
+    }
+  }
+}

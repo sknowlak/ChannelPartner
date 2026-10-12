@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Portal del constructor",
+    "referrals": "Referéncias",
+    "builderLogin": "Connexion del constructor",
+    "partnerLogin": "Connexion de partenari de canal"
+  },
+  "login": {
+    "title": "Connexion del constructor",
+    "hint": "Los comptes de constructor son creats per Leadrat . Demandatz a vòstre administrator se n'avètz pas un."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "En esperant vòstra decision",
+    "ACCEPTED": "Acceptat",
+    "REJECTED": "Refusat"
+  },
+  "list": {
+    "title": "Referéncias",
+    "allProjects": "Totes los projèctes",
+    "allStatuses": "Totes los estatuts",
+    "count_one": "{{count}} referéncia",
+    "count_other": "{{count}} referéncias",
+    "columns": {
+      "referral": "Referéncia",
+      "customer": "Client",
+      "project": "Projècte",
+      "sourcePartner": "Sòci font",
+      "status": "Estatut",
+      "booking": "Reservacion",
+      "registered": "Inscrich"
+    },
+    "booked": "Reservat",
+    "empty": "Pas de referéncias encara."
+  },
+  "detail": {
+    "customer": "Client",
+    "sourcePartner": "Sòci font",
+    "attributionNote": "(atribucion - pòt pas èsser modificada)",
+    "leadStatus": "Estatut de plomb",
+    "protectedUntil": "Protegit fins a",
+    "referral": "Referéncia",
+    "reason": "Rason: {{reason}}",
+    "booking": "Reservacion",
+    "bookedOwner": "Reservat - sètz lo proprietari operacional",
+    "notBooked": "Pas reservat",
+    "sharedAfterBooking": "Partatjat après la reservacion",
+    "accept": "Acceptar la referéncia",
+    "confirmBooking": "Confirmar la reservacion",
+    "reject": "Refusar la referéncia",
+    "rejectReasonLabel": "Motiu de refús (mostrat al partenari) *",
+    "rejectConfirm": "Fòragetar",
+    "confirmBookingPrompt": "Confirmar la reservacion? La proprietat operacionala vos passa e lo partenari ven elegible per la comission.",
+    "notice": {
+      "booked": "Reservacion confirmada.",
+      "accepted": "Referéncia acceptada.",
+      "rejected": "Referéncia refusada."
+    },
+    "backToReferrals": "Tornar a las referéncias"
+  },
+  "history": {
+    "title": "Istòria",
+    "actor": {
+      "system": "Sistèma",
+      "partner": "Partenari del canal",
+      "admin": "Admin Leadrat"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Inscripcion de partenari recebuda",
+      "DUPLICATE_CHECK_COMPLETED": "Verificacion del doble completada - pas cap de doble actiu trobat",
+      "REGISTRATION_ACCEPTED": "Inscripcion acceptada",
+      "PROTECTION_GRANTED_one": "{{count}} -proteccion de jorn concedida",
+      "PROTECTION_GRANTED_other": "{{count}} -proteccion de jorn concedida",
+      "STAGE_UPDATED": "Estat mes a jorn a {{stage}}",
+      "LEAD_DETAILS_UPDATED_one": "Camp {{count}} mes a jorn",
+      "LEAD_DETAILS_UPDATED_other": "Los camps {{count}} mes a jorn",
+      "LEAD_ASSIGNED": "Assignat a {{name}}",
+      "LEAD_UNASSIGNED": "Non assignat",
+      "REFERRAL_ACCEPTED": "Lo constructor acceptèt la referéncia",
+      "REFERRAL_REJECTED": "Lo constructor a refusat la referéncia. Rason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "Ensag d'inscripcion en doble per {{partner}} refusada",
+      "BOOKING_COMPLETED": "Reservacion acabada",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "La proprietat operacionala transferida a Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Atribucion del partenari conservada",
+      "COMMISSION_ELIGIBILITY_CREATED": "Elegibilitat a la comission creada",
+      "HANDOVER_COMPLETED": "Remesa completada",
+      "ADMIN_PROTECTION_RELEASED": "L'administrator a publicat la proteccion de doble lèu. Rason: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "L'administrator a reassignat l'inscripcion de {{from}} a {{to}} . Rason: {{reason}}"
+    }
+  }
+}

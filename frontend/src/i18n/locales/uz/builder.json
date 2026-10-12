@@ -1,0 +1,90 @@
+{
+  "shell": {
+    "portal": "Quruvchi portali",
+    "referrals": "Yo'llanmalar",
+    "builderLogin": "Quruvchiga kirish",
+    "partnerLogin": "Kanal hamkoriga kirish"
+  },
+  "login": {
+    "title": "Quruvchi tizimga kiring",
+    "hint": "Quruvchi hisoblari Leadrat tomonidan yaratilgan. Agar sizda yo'q bo'lsa, administratoringizdan so'rang."
+  },
+  "referralStatus": {
+    "PENDING_BUILDER": "Sizning qaroringizni kutmoqdamiz",
+    "ACCEPTED": "Qabul qilingan",
+    "REJECTED": "Rad etilgan"
+  },
+  "list": {
+    "title": "Yo'llanmalar",
+    "allProjects": "Barcha loyihalar",
+    "allStatuses": "Barcha holatlar",
+    "count_one": "{{count}} ta murojaat",
+    "count_other": "{{count}} ta tavsiya",
+    "columns": {
+      "referral": "Yo'naltirish",
+      "customer": "Mijoz",
+      "project": "Loyiha",
+      "sourcePartner": "Manba hamkori",
+      "status": "Status",
+      "booking": "Rezervasyon",
+      "registered": "Roʻyxatdan oʻtgan"
+    },
+    "booked": "Band qilingan",
+    "empty": "Hali tavsiyalar yo'q."
+  },
+  "detail": {
+    "customer": "Mijoz",
+    "sourcePartner": "Manba hamkori",
+    "attributionNote": "(atribut - o'zgartirib bo'lmaydi)",
+    "leadStatus": "Etakchi holati",
+    "protectedUntil": "gacha himoyalangan",
+    "referral": "Yo'naltirish",
+    "reason": "Sabab: {{reason}}",
+    "booking": "Rezervasyon",
+    "bookedOwner": "Bandlangan - siz operatsion egasisiz",
+    "notBooked": "Band qilinmagan",
+    "sharedAfterBooking": "Bandlovdan keyin ulashiladi",
+    "accept": "Tavsiyani qabul qiling",
+    "confirmBooking": "Buyurtmani tasdiqlang",
+    "reject": "Yo'naltirishni rad qilish",
+    "rejectReasonLabel": "Rad etish sababi (sherikga ko'rsatilgan) *",
+    "rejectConfirm": "Rad etish",
+    "confirmBookingPrompt": "Bandlov tasdiqlansinmi? Operatsion mulk huquqi sizga o'tadi va sherik komissiya olish huquqiga ega bo'ladi.",
+    "notice": {
+      "booked": "Bandlov tasdiqlandi.",
+      "accepted": "Referat qabul qilindi.",
+      "rejected": "Yo'naltirish rad etildi."
+    },
+    "backToReferrals": "Referallar sahifasiga qaytish"
+  },
+  "history": {
+    "title": "Tarix",
+    "actor": {
+      "system": "Tizim",
+      "partner": "Kanal hamkori",
+      "admin": "Leadrat admin"
+    },
+    "event": {
+      "REGISTRATION_RECEIVED": "Hamkor registratsiyasi qabul qilindi",
+      "DUPLICATE_CHECK_COMPLETED": "Takroriy tekshiruv tugallandi - faol dublikat topilmadi",
+      "REGISTRATION_ACCEPTED": "Ro'yxatdan o'tish qabul qilindi",
+      "PROTECTION_GRANTED_one": "{{count}} kunlik himoya berilgan",
+      "PROTECTION_GRANTED_other": "{{count}} kunlik himoya berilgan",
+      "STAGE_UPDATED": "Holati {{stage}} ga yangilandi",
+      "LEAD_DETAILS_UPDATED_one": "{{count}} maydoni yangilandi",
+      "LEAD_DETAILS_UPDATED_other": "{{count}} ta maydon yangilandi",
+      "LEAD_ASSIGNED": "{{name}} ga tayinlangan",
+      "LEAD_UNASSIGNED": "Tayinlanmagan",
+      "REFERRAL_ACCEPTED": "Quruvchi taklifni qabul qildi",
+      "REFERRAL_REJECTED": "Quruvchi tavsiyanomani rad etdi. Sabab: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partner}} tomonidan takroriy roʻyxatga olish urinishi rad etildi",
+      "BOOKING_COMPLETED": "Bandlov yakunlandi",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operatsion egalik Builderga o'tdi",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Hamkor atributi saqlanib qoldi",
+      "COMMISSION_ELIGIBILITY_CREATED": "Komissiya huquqi yaratildi",
+      "HANDOVER_COMPLETED": "O'tkazish tugallandi",
+      "ADMIN_PROTECTION_RELEASED": "Admin dublikat himoyasini erta chiqardi. Sabab: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin roʻyxatdan oʻtishni {{from}} dan {{to}} ga oʻzgartirdi. Sabab: {{reason}}"
+    }
+  }
+}
