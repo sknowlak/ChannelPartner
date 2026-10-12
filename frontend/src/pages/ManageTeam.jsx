@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { createTeamMember, deleteTeamMember, getMyProfile, listRoles, listTeam, listUserFields, updateTeamMember } from '../api/client';
 import { useAuth } from '../context/AuthContext';
 import { formatDateTime } from '../utils/timezone';
 import TeamTabs from '../components/TeamTabs';
 import DynamicFieldInput from '../components/DynamicFieldInput';
-import { PERMISSIONS, PERMISSION_LABELS } from '../utils/permissions';
+import { PERMISSIONS, permissionLabel } from '../utils/permissions';
 import { findFieldErrors, focusField } from '../utils/formValidation';
 import { csvCell } from '../utils/csv';
+import { groupLabel, roleLabel, userFieldLabel } from '../i18n/dataLabels';
 
 const GROUP_ORDER = ['Basic Information', 'Preferences'];
 const initialFilters = { search: '', status: '', timezone: '' };
@@ -40,6 +42,7 @@ function TrashIcon() {
 }
 
 export default function ManageTeam() {
+  const { t } = useTranslation(['team', 'common', 'data']);
   const { partner } = useAuth();
   const navigate = useNavigate();
   // Sourced fresh from the server rather than the cached session, so a
@@ -114,7 +117,7 @@ export default function ManageTeam() {
     const errs = findFieldErrors(fieldDefs, values);
     if (errs.length > 0) {
       setFieldErrors(new Map(errs.map((er) => [er.fieldKey, er.message])));
-      setError(`${errs.length === 1 ? 'A field needs' : `${errs.length} fields need`} your attention - see below.`);
+      setError(t('common:states.fieldNeedsAttention', { count: errs.length }));
       focusField(errs[0].fieldKey);
       return;
     }
@@ -165,7 +168,11 @@ export default function ManageTeam() {
   };
 
   const exportCsv = () => {
-    const header = ['Name', 'Username', 'Mobile', 'Email', 'Role', 'Timezone', 'Status', 'Added'];
+    // Headers follow the UI language; cell values stay raw.
+    const header = [
+      t('common:fields.name'), t('common:fields.username'), t('common:fields.mobile'), t('common:fields.email'),
+      t('common:fields.role'), t('common:fields.timezone'), t('common:fields.status'), t('team:members.added')
+    ];
     const rows = filteredMembers.map((m) => [
       m.name, m.username, m.mobile || '', m.email || '', m.roleName || '', m.timezone, m.status, formatDateTime(m.createdAt, partner.timezone)
     ]);
@@ -183,16 +190,16 @@ export default function ManageTeam() {
     <div className="page page-wide">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
         <div>
-          <h1 style={{ marginBottom: '0.2rem' }}>Manage Team</h1>
+          <h1 style={{ marginBottom: '0.2rem' }}>{t('team:title')}</h1>
           <p className="hint" style={{ margin: 0 }}>
             {canManageTeam
-              ? 'Add, edit, deactivate, or remove people on your team - they share access to the same leads.'
-              : "You don't have permission to add, edit, or remove team members."}
+              ? t('team:members.intro')
+              : t('team:members.noPermission')}
           </p>
         </div>
         {canManageTeam && (
           <button className="pill-primary" onClick={() => setShowForm((s) => !s)}>
-            {showForm ? 'Cancel' : '+ Add New User'}
+            {showForm ? t('common:actions.cancel') : t('team:members.addNew')}
           </button>
         )}
       </div>
@@ -206,11 +213,13 @@ export default function ManageTeam() {
           <div className="edit-form-sections">
             {sortGroups([...new Set(fieldDefs.map((d) => d.group))]).map((group) => (
               <div key={group}>
-                <h3 className="form-section-title"><span>{group}</span></h3>
+                <h3 className="form-section-title"><span>{groupLabel(group)}</span></h3>
                 {fieldDefs.filter((d) => d.group === group).map((def) => (
                   <div className={`field ${fieldErrors.has(def.fieldKey) ? 'invalid' : ''}`} key={def.fieldKey} id={`field-${def.fieldKey}`}>
                     <label>
-                      {def.label}{def.isRequired ? ' *' : ''}{def.fieldKey === 'password' ? ' (min 8 characters)' : ''}
+                      {def.fieldKey === 'password'
+                        ? t('team:members.passwordLabel', { label: `${userFieldLabel(def)}${def.isRequired ? ' *' : ''}` })
+                        : `${userFieldLabel(def)}${def.isRequired ? ' *' : ''}`}
                     </label>
                     <DynamicFieldInput def={def} value={values[def.fieldKey]} onChange={(val) => setValue(def.fieldKey, val)} />
                     {fieldErrors.has(def.fieldKey) && <span className="field-error">{fieldErrors.get(def.fieldKey)}</span>}
@@ -220,7 +229,7 @@ export default function ManageTeam() {
             ))}
 
             <div>
-              <h3 className="form-section-title"><span>Role &amp; Permissions</span></h3>
+              <h3 className="form-section-title"><span>{t('team:members.rolePermissions')}</span></h3>
               <div className="role-picker">
                 {roles.map((r) => (
                   <div
@@ -230,10 +239,10 @@ export default function ManageTeam() {
                   >
                     <div className="role-name">
                       <input type="radio" checked={roleId === r.roleId} onChange={() => setRoleId(r.roleId)} />
-                      {r.name}
+                      {roleLabel(r.name)}
                     </div>
                     <div className="role-perms">
-                      {r.permissions.length ? r.permissions.map((p) => PERMISSION_LABELS[p]).join(' · ') : 'No permissions'}
+                      {r.permissions.length ? r.permissions.map((p) => permissionLabel(p)).join(' · ') : t('team:permissions.none')}
                     </div>
                   </div>
                 ))}
@@ -244,8 +253,8 @@ export default function ManageTeam() {
           <div className="edit-form-footer">
             <div className="meta" />
             <div className="actions">
-              <button className="secondary" type="button" onClick={() => setShowForm(false)}>Cancel</button>
-              <button className="primary" type="submit" disabled={busy}>{busy ? 'Adding...' : 'Add Team Member'}</button>
+              <button className="secondary" type="button" onClick={() => setShowForm(false)}>{t('common:actions.cancel')}</button>
+              <button className="primary" type="submit" disabled={busy}>{busy ? t('team:members.adding') : t('team:members.addMember')}</button>
             </div>
           </div>
         </form>
@@ -254,13 +263,13 @@ export default function ManageTeam() {
       {members && (
         <div className="status-tabs">
           <button className={filters.status === '' ? 'active' : ''} onClick={() => setStatusTab('')}>
-            <span className="dot all" />All ({members.length})
+            <span className="dot all" />{t('team:members.tabAll', { count: members.length })}
           </button>
           <button className={filters.status === 'ACTIVE' ? 'active' : ''} onClick={() => setStatusTab('ACTIVE')}>
-            <span className="dot active-dot" />Active ({activeCount})
+            <span className="dot active-dot" />{t('team:members.tabActive', { count: activeCount })}
           </button>
           <button className={filters.status === 'INACTIVE' ? 'active' : ''} onClick={() => setStatusTab('INACTIVE')}>
-            <span className="dot inactive-dot" />Inactive ({inactiveCount})
+            <span className="dot inactive-dot" />{t('team:members.tabInactive', { count: inactiveCount })}
           </button>
         </div>
       )}
@@ -270,23 +279,22 @@ export default function ManageTeam() {
           <div className="toolbar-left">
             <input
               type="text"
-              placeholder="Search name or username..."
+              placeholder={t('team:members.searchPlaceholder')}
               value={filters.search}
               onChange={(e) => { setFilters((f) => ({ ...f, search: e.target.value })); setPage(1); }}
             />
           </div>
           <div className="toolbar-right">
             <select value={filters.timezone} onChange={(e) => { setFilters((f) => ({ ...f, timezone: e.target.value })); setPage(1); }}>
-              <option value="">All timezones</option>
+              <option value="">{t('team:members.allTimezones')}</option>
               {availableTimezones.map((tz) => <option key={tz} value={tz}>{tz}</option>)}
             </select>
-            <button className="pill-export" onClick={exportCsv}>Export</button>
+            <button className="pill-export" onClick={exportCsv}>{t('common:actions.export')}</button>
             <label className="hint" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-              Show
+              {t('team:members.perPage')}
               <select value={pageSize} onChange={(e) => { setPageSize(Number(e.target.value)); setPage(1); }}>
                 {[10, 25, 50].map((n) => <option key={n} value={n}>{n}</option>)}
               </select>
-              entries
             </label>
           </div>
         </div>
@@ -296,13 +304,13 @@ export default function ManageTeam() {
         <table className="pro-table">
           <thead>
             <tr>
-              <th>Name</th>
-              <th>Contact</th>
-              <th>Role</th>
-              <th>Timezone</th>
-              <th>Status</th>
-              <th>Added</th>
-              {canManageTeam && <th>Actions</th>}
+              <th>{t('common:fields.name')}</th>
+              <th>{t('team:members.contact')}</th>
+              <th>{t('common:fields.role')}</th>
+              <th>{t('common:fields.timezone')}</th>
+              <th>{t('common:fields.status')}</th>
+              <th>{t('team:members.added')}</th>
+              {canManageTeam && <th>{t('common:fields.actions')}</th>}
             </tr>
           </thead>
           <tbody>
@@ -313,46 +321,50 @@ export default function ManageTeam() {
                   <div className="secondary-cell">{m.username}</div>
                 </td>
                 <td>{m.mobile || m.email || '-'}</td>
-                <td>{m.roleName || '-'}</td>
+                <td>{m.roleName ? roleLabel(m.roleName) : '-'}</td>
                 <td>{m.timezone}</td>
                 <td>
-                  <label className="toggle-switch" title={m.status === 'ACTIVE' ? 'Active - click to deactivate' : 'Inactive - click to activate'}>
-                    <input type="checkbox" checked={m.status === 'ACTIVE'} disabled={!canManageTeam} onChange={() => canManageTeam && toggleStatus(m)} />
+                  <label className="toggle-switch" title={m.status === 'ACTIVE' ? t('team:members.toggleActive') : t('team:members.toggleInactive')}>
+                    <input type="checkbox" aria-label={t(`common:status.${m.status}`)} checked={m.status === 'ACTIVE'} disabled={!canManageTeam} onChange={() => canManageTeam && toggleStatus(m)} />
                     <span className="slider" />
                   </label>
                 </td>
                 <td className="secondary-cell">{formatDateTime(m.createdAt, partner.timezone)}</td>
                 {canManageTeam && (
                   <td>
-                    <button className="icon-btn edit" title="Edit" onClick={() => navigate(`/team/${m.memberId}/edit`)}><EditIcon /></button>
-                    <button className="icon-btn remove" title="Remove" onClick={() => remove(m)}><TrashIcon /></button>
+                    <button className="icon-btn edit" title={t('common:actions.edit')} aria-label={t('common:actions.edit')} onClick={() => navigate(`/team/${m.memberId}/edit`)}><EditIcon /></button>
+                    <button className="icon-btn remove" title={t('common:actions.remove')} aria-label={t('common:actions.remove')} onClick={() => remove(m)}><TrashIcon /></button>
                   </td>
                 )}
               </tr>
             ))}
             {members && members.length === 0 && (
-              <tr><td colSpan={canManageTeam ? 7 : 6} className="hint">No team members yet.</td></tr>
+              <tr><td colSpan={canManageTeam ? 7 : 6} className="hint">{t('team:members.empty')}</td></tr>
             )}
             {members && members.length > 0 && filteredMembers.length === 0 && (
-              <tr><td colSpan={canManageTeam ? 7 : 6} className="hint">No team members match these filters.</td></tr>
+              <tr><td colSpan={canManageTeam ? 7 : 6} className="hint">{t('team:members.noMatch')}</td></tr>
             )}
           </tbody>
         </table>
-        {!members && !error && <p className="hint">Loading...</p>}
+        {!members && !error && <p className="hint">{t('common:states.loading')}</p>}
 
         {filteredMembers.length > 0 && (
           <div className="pagination-bar">
             <span className="hint">
-              Showing {(currentPage - 1) * pageSize + 1} - {Math.min(currentPage * pageSize, filteredMembers.length)} of {filteredMembers.length} entries
+              {t('team:members.showing', {
+                from: (currentPage - 1) * pageSize + 1,
+                to: Math.min(currentPage * pageSize, filteredMembers.length),
+                total: filteredMembers.length
+              })}
             </span>
             <div className="pagination-buttons">
-              <button className="page-btn" disabled={currentPage <= 1} onClick={() => setPage(1)}>&laquo;</button>
-              <button className="page-btn" disabled={currentPage <= 1} onClick={() => setPage((p) => p - 1)}>&lsaquo;</button>
+              <button className="page-btn" disabled={currentPage <= 1} aria-label={t('team:members.firstPage')} onClick={() => setPage(1)}>&laquo;</button>
+              <button className="page-btn" disabled={currentPage <= 1} aria-label={t('team:members.previousPage')} onClick={() => setPage((p) => p - 1)}>&lsaquo;</button>
               {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
                 <button key={p} className={`page-btn ${p === currentPage ? 'current' : ''}`} onClick={() => setPage(p)}>{p}</button>
               ))}
-              <button className="page-btn" disabled={currentPage >= totalPages} onClick={() => setPage((p) => p + 1)}>&rsaquo;</button>
-              <button className="page-btn" disabled={currentPage >= totalPages} onClick={() => setPage(totalPages)}>&raquo;</button>
+              <button className="page-btn" disabled={currentPage >= totalPages} aria-label={t('team:members.nextPage')} onClick={() => setPage((p) => p + 1)}>&rsaquo;</button>
+              <button className="page-btn" disabled={currentPage >= totalPages} aria-label={t('team:members.lastPage')} onClick={() => setPage(totalPages)}>&raquo;</button>
             </div>
           </div>
         )}

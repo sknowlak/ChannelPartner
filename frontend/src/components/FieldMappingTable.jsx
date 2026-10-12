@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { bodyFromRows, parseTemplateObject, rowsFromBody } from '../utils/curlMapping';
 import { SAMPLE_LEAD_PAYLOAD } from '../utils/webhookPreview';
 
@@ -33,9 +34,10 @@ function parseFixed(text) {
 // reads it and writes it back, so the raw template editor and this view
 // never disagree.
 export default function FieldMappingTable({ template, groups, onChange }) {
+  const { t } = useTranslation('integrations');
   const body = parseTemplateObject(template);
   if (!body) {
-    return <p className="hint">Field mapping is available when the body template is a JSON object. Edit the template directly below.</p>;
+    return <p className="hint">{t('mapping.notObject')}</p>;
   }
   const rows = rowsFromBody(body);
   const known = new Set(groups.flatMap((g) => g.items.map((i) => i.path)));
@@ -55,11 +57,11 @@ export default function FieldMappingTable({ template, groups, onChange }) {
 
   return (
     <div className="field">
-      <label>Field Mapping - {mappedCount} of {rows.length} client keys mapped to CRM fields</label>
+      <label>{t('mapping.title', { mapped: mappedCount, count: rows.length })}</label>
       <div className="mapping-table-wrap">
         <table className="pro-table mapping-table">
           <thead>
-            <tr><th>Client CRM key</th><th>Send value from</th><th>Sample result</th></tr>
+            <tr><th>{t('mapping.clientKey')}</th><th>{t('mapping.sendFrom')}</th><th>{t('mapping.sampleResult')}</th></tr>
           </thead>
           <tbody>
             {rows.map((row, index) => {
@@ -71,12 +73,12 @@ export default function FieldMappingTable({ template, groups, onChange }) {
                   <td>
                     <div className="mapping-cell">
                       <select value={selectValue} onChange={(e) => onSelect(index, e.target.value)}>
-                        <option value={NULL_OPTION}>- Not mapped (send null) -</option>
-                        <option value={FIXED_OPTION}>Fixed value...</option>
-                        {row.kind === 'FIELD' && !known.has(row.field) && <option value={row.field}>{`{{${row.field}}}`} (unknown field)</option>}
+                        <option value={NULL_OPTION}>{t('mapping.notMapped')}</option>
+                        <option value={FIXED_OPTION}>{t('mapping.fixedValue')}</option>
+                        {row.kind === 'FIELD' && !known.has(row.field) && <option value={row.field}>{t('mapping.unknownField', { field: `{{${row.field}}}` })}</option>}
                         {groups.map((group) => (
-                          <optgroup key={group.label} label={group.label}>
-                            {group.items.map((item) => <option key={item.path} value={item.path}>{item.label}</option>)}
+                          <optgroup key={group.label} label={group.display ?? group.label}>
+                            {group.items.map((item) => <option key={item.path} value={item.path}>{item.display ?? item.label}</option>)}
                           </optgroup>
                         ))}
                       </select>
@@ -84,7 +86,7 @@ export default function FieldMappingTable({ template, groups, onChange }) {
                         <input
                           value={displayFixed(row.value)}
                           onChange={(e) => updateRow(index, { kind: 'FIXED', value: parseFixed(e.target.value) })}
-                          placeholder="Same value for every lead"
+                          placeholder={t('mapping.fixedPlaceholder')}
                         />
                       )}
                     </div>

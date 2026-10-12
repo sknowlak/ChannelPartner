@@ -1,11 +1,15 @@
 import { Fragment, useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { getMyRegistration, getMyRegistrationAudit, listLeadFields } from '../api/client';
 import { useAuth } from '../context/AuthContext';
 import { formatDate, formatDateTime } from '../utils/timezone';
 import { sortLeadTabs } from '../utils/leadTabs';
 import { PERMISSIONS } from '../utils/permissions';
 import LeadQuickUpdate, { useLeadWorkflowOptions } from '../components/LeadQuickUpdate';
+import { actorLabel, describeEvent, platformLabel } from '../components/LeadHistoryModal';
+import { formatNumber } from '../i18n/format';
+import { fieldLabel, groupLabel, optionLabel, statusLabel, subStatusLabel, useDataLabels } from '../i18n/dataLabels';
 
 function fieldValue(def, registration, customer) {
   if (def.scope === 'customer') return customer?.[def.fieldKey];
@@ -13,19 +17,16 @@ function fieldValue(def, registration, customer) {
   return registration.customFields?.[def.fieldKey];
 }
 
-// Where the referral stands with the builder (section 52).
-const REFERRAL_LABEL = {
-  NOT_REFERRED: 'Not referred (no project)',
-  PENDING_BUILDER: 'Waiting for builder',
-  ACCEPTED: 'Accepted by builder',
-  REJECTED: 'Rejected by builder'
-};
+// Where the referral stands with the builder (section 52). Labels are
+// leads:referral.<STATUS>; the enum value itself is never translated.
+const REFERRAL_STATUSES = new Set(['NOT_REFERRED', 'PENDING_BUILDER', 'ACCEPTED', 'REJECTED']);
 const REFERRAL_BADGE = { NOT_REFERRED: 'pending', PENDING_BUILDER: 'pending', ACCEPTED: 'accepted', REJECTED: 'rejected' };
 
 function formatFieldValue(def, value) {
   if (value === undefined || value === null || value === '') return '-';
-  if (def.dataType === 'LIST') return Array.isArray(value) ? value.join(', ') : String(value);
-  if (def.dataType === 'NUMBER') return Number(value).toLocaleString();
+  if (def.dataType === 'LIST') return Array.isArray(value) ? value.map((v) => optionLabel(v)).join(', ') : String(optionLabel(value));
+  if (def.dataType === 'NUMBER') return formatNumber(value);
+  if (def.dataType === 'SELECT') return String(optionLabel(value));
   return String(value);
 }
 
@@ -36,6 +37,8 @@ function formatFieldValue(def, value) {
 // (section 40, "get Leads" should show all the fields too) - same tab
 // grouping as Add/Edit Lead, just read-only.
 export default function PartnerJourney() {
+  const { t } = useTranslation(['leads', 'common']);
+  useDataLabels();
   const { registrationId } = useParams();
   const { partner, hasPermission } = useAuth();
   const workflowOptions = useLeadWorkflowOptions();
@@ -70,7 +73,7 @@ export default function PartnerJourney() {
 
 
   if (error) return <div className="page"><div className="error-box">{error}</div></div>;
-  if (!detail || !fieldDefs) return <div className="page">Loading...</div>;
+  if (!detail || !fieldDefs) return <div className="page">{t('common:states.loading')}</div>;
 
   const { registration, customer, ownership } = detail;
   const tabs = sortLeadTabs([...new Set(fieldDefs.map((f) => f.group))]);
@@ -80,38 +83,38 @@ export default function PartnerJourney() {
       <h1>{registrationId}</h1>
       <div className="card">
         <dl className="kv">
-          <dt>Customer</dt>
+          <dt>{t('leads:journey.customer')}</dt>
           <dd>{customer.name} ({customer.mobile})</dd>
-          <dt>Project</dt>
+          <dt>{t('common:fields.project')}</dt>
           <dd>{registration.projectId}</dd>
-          <dt>Current Owner</dt>
+          <dt>{t('leads:journey.currentOwner')}</dt>
           <dd>{ownership ? ownership.workingOwner : registration.partnerId}</dd>
-          <dt>Protection Expiry</dt>
+          <dt>{t('leads:journey.protectionExpiry')}</dt>
           <dd>{formatDate(registration.protectionExpiry, partner.timezone)}</dd>
-          <dt>Lead Status</dt>
-          <dd>{registration.currentStage}{registration.subStatus ? ` - ${registration.subStatus}` : ''}</dd>
+          <dt>{t('leads:journey.leadStatus')}</dt>
+          <dd>{statusLabel(registration.currentStage)}{registration.subStatus ? ` - ${subStatusLabel(registration.subStatus)}` : ''}</dd>
           {registration.scheduledAt && (
             <>
-              <dt>Scheduled</dt>
+              <dt>{t('leads:journey.scheduled')}</dt>
               <dd>{formatDateTime(registration.scheduledAt, partner.timezone)}</dd>
             </>
           )}
-          <dt>Assigned To</dt>
-          <dd>{detail.assignedToName || 'Unassigned'}</dd>
-          <dt>Referral</dt>
+          <dt>{t('leads:journey.assignedTo')}</dt>
+          <dd>{detail.assignedToName || t('leads:assign.unassigned')}</dd>
+          <dt>{t('leads:journey.referral')}</dt>
           <dd>
-            <span className={`badge ${REFERRAL_BADGE[registration.referralStatus] || 'pending'}`}>{REFERRAL_LABEL[registration.referralStatus] || registration.referralStatus}</span>
-            {registration.referralDecision?.reason && <div className="hint" style={{ marginTop: '0.3rem' }}>Builder's reason: {registration.referralDecision.reason}</div>}
+            <span className={`badge ${REFERRAL_BADGE[registration.referralStatus] || 'pending'}`}>{REFERRAL_STATUSES.has(registration.referralStatus) ? t(`leads:referral.${registration.referralStatus}`) : registration.referralStatus}</span>
+            {registration.referralDecision?.reason && <div className="hint" style={{ marginTop: '0.3rem' }}>{t('leads:journey.builderReason', { reason: registration.referralDecision.reason })}</div>}
           </dd>
         </dl>
 
         {registration.isBooked
-          ? <p className="hint">Booked by the builder - operational ownership has moved to the builder; your attribution and commission eligibility are kept.</p>
-          : <p className="hint">Bookings are confirmed by the builder once they accept the referral.</p>}
+          ? <p className="hint">{t('leads:journey.bookedHint')}</p>
+          : <p className="hint">{t('leads:journey.notBookedHint')}</p>}
       </div>
 
       <div className="card">
-        <h3 style={{ marginTop: 0 }}>Quick Update</h3>
+        <h3 style={{ marginTop: 0 }}>{t('leads:journey.quickUpdate')}</h3>
         {workflowOptions.loaded ? (
           <LeadQuickUpdate
             lead={{ ...registration }}
@@ -123,15 +126,15 @@ export default function PartnerJourney() {
             canEdit={canEdit}
             onUpdated={() => load()}
           />
-        ) : <p className="hint">Loading...</p>}
+        ) : <p className="hint">{t('common:states.loading')}</p>}
       </div>
 
       <div className="card">
-        <h3 style={{ marginTop: 0 }}>Lead Details</h3>
+        <h3 style={{ marginTop: 0 }}>{t('leads:journey.leadDetails')}</h3>
         <div className="status-tabs">
           {tabs.map((tab) => (
             <button key={tab} className={activeTab === tab ? 'active' : ''} onClick={() => setActiveTab(tab)}>
-              {tab}
+              {groupLabel(tab)}
             </button>
           ))}
         </div>
@@ -139,7 +142,7 @@ export default function PartnerJourney() {
           <dl className="kv" key={tab} style={{ display: activeTab === tab ? 'grid' : 'none' }}>
             {fieldDefs.filter((f) => f.group === tab).map((def) => (
               <Fragment key={def.fieldKey}>
-                <dt>{def.label}</dt>
+                <dt>{fieldLabel(def)}</dt>
                 <dd>{formatFieldValue(def, fieldValue(def, registration, customer))}</dd>
               </Fragment>
             ))}
@@ -148,22 +151,22 @@ export default function PartnerJourney() {
       </div>
 
       <div className="card">
-        <h3>Progress History <span className="hint">(times in {partner.timezone})</span></h3>
+        <h3>{t('leads:journey.progressHistory')} <span className="hint">{t('leads:journey.timesIn', { timezone: partner.timezone })}</span></h3>
         <ul className="timeline">
           {events.map((ev) => (
             <li key={ev.auditId}>
               <div className="ts">
-                {formatDateTime(ev.timestamp, partner.timezone)} · {ev.actor === 'SYSTEM' ? 'System' : ev.actor} · {ev.platform || (ev.actor === 'SYSTEM' ? 'System' : '-')}
+                {formatDateTime(ev.timestamp, partner.timezone)} · {actorLabel(ev.actor)} · {ev.platform ? platformLabel(ev.platform) : (ev.actor === 'SYSTEM' ? t('leads:history.system') : '-')}
               </div>
-              <div>{ev.description}</div>
+              <div>{describeEvent(ev)}</div>
             </li>
           ))}
         </ul>
       </div>
 
       <div style={{ display: 'flex', gap: '0.6rem' }}>
-        <Link to="/my-leads"><button className="secondary">Back to My Leads</button></Link>
-        <Link to={`/registrations/${registrationId}/edit`}><button className="secondary">Edit Lead</button></Link>
+        <Link to="/my-leads"><button className="secondary">{t('leads:journey.backToMyLeads')}</button></Link>
+        <Link to={`/registrations/${registrationId}/edit`}><button className="secondary">{t('leads:journey.editLead')}</button></Link>
       </div>
     </div>
   );

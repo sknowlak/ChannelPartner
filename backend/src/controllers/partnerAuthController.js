@@ -10,6 +10,7 @@ const { ensureBaseFields: ensureBaseUserFields } = require('../services/userFiel
 const { generateApiKey, apiKeyFields } = require('../utils/apiKey');
 const { validateMobile } = require('../utils/phone');
 const { isValidEmail } = require('../utils/email');
+const { isSupportedLanguage } = require('../config/languages');
 
 // Fields a partner may set about themselves during self-registration or a
 // later profile update. Deliberately excludes admin/builder-controlled
@@ -92,6 +93,8 @@ async function register(req, res, next) {
       passwordHash: await hashPassword(password),
       timezone: timezone || 'UTC',
       currency: currency || 'USD',
+      // The language picked on the signup screen becomes the account preference.
+      language: isSupportedLanguage(req.body.language) ? req.body.language : '',
       createdBy: 'SELF_REGISTERED',
       status: 'ACTIVE',
       kycStatus: 'PENDING',
@@ -227,7 +230,10 @@ async function updateMyProfile(req, res, next) {
       const member = await TeamMember.findOne({ memberId: req.memberId });
       if (!member) return res.status(404).json({ reason: 'Team member not found' });
 
-      const { name, mobile, email, timezone, password } = req.body;
+      const { name, mobile, email, timezone, password, language } = req.body;
+      if (language !== undefined && language !== '' && !isSupportedLanguage(language)) {
+        return res.status(400).json({ reason: 'Unsupported language', fieldKey: 'language' });
+      }
       if (password) {
         const failure = await applyPasswordChange(member, req.body);
         if (failure) return res.status(failure.status).json(failure.body);
@@ -243,6 +249,7 @@ async function updateMyProfile(req, res, next) {
       }
       if (email !== undefined) member.email = email;
       if (timezone !== undefined) member.timezone = timezone;
+      if (language !== undefined) member.language = language;
 
       await member.save();
       // A password change revokes every older token, including the one this
@@ -254,7 +261,10 @@ async function updateMyProfile(req, res, next) {
     const partner = await Partner.findOne({ partnerId: req.partnerId });
     if (!partner) return res.status(404).json({ reason: 'Partner not found' });
 
-    const { name, mobile, email, timezone, currency, password } = req.body;
+    const { name, mobile, email, timezone, currency, password, language } = req.body;
+    if (language !== undefined && language !== '' && !isSupportedLanguage(language)) {
+      return res.status(400).json({ reason: 'Unsupported language', fieldKey: 'language' });
+    }
     if (password) {
       const failure = await applyPasswordChange(partner, req.body);
       if (failure) return res.status(failure.status).json(failure.body);
@@ -271,6 +281,7 @@ async function updateMyProfile(req, res, next) {
     if (email !== undefined) partner.email = email;
     if (timezone !== undefined) partner.timezone = timezone;
     if (currency !== undefined) partner.currency = currency;
+    if (language !== undefined) partner.language = language;
     for (const field of SELF_SERVICE_FIELDS) {
       if (req.body[field] !== undefined) partner[field] = req.body[field];
     }

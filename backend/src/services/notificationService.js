@@ -6,6 +6,7 @@ const Partner = require('../models/Partner');
 const { nextId } = require('../utils/idGenerator');
 const { loadOrgUsers } = require('./userDirectoryService');
 const { buildLeadPayload, renderTemplate, performSend } = require('./webhookService');
+const { notificationTemplates } = require('../i18n/notificationTemplates');
 
 const SCHEDULER_INTERVAL_MS = 30 * 1000;
 const SMTP_TIMEOUT_MS = 10000;
@@ -124,8 +125,8 @@ function buildContentPayload({ registration, customer, partner, users, job, reci
   };
 }
 
-const DEFAULT_TITLE = '{{customer.name}} - {{status}}';
-const DEFAULT_MESSAGE = 'Lead {{registrationId}} ({{customer.name}}, {{customer.mobile}}) is now {{status}} {{subStatus}}.';
+// English defaults; per-recipient languages come from i18n/notificationTemplates.js.
+const { title: DEFAULT_TITLE, message: DEFAULT_MESSAGE } = notificationTemplates('en');
 
 // --- Recipients -----------------------------------------------------------
 
@@ -210,13 +211,16 @@ async function deliverJob(job) {
   const titleTpl = rule.content?.title || DEFAULT_TITLE;
   const messageTpl = rule.content?.message || DEFAULT_MESSAGE;
 
+  // Default texts are chosen per recipient language (section 54); a rule's
+  // own custom text is used as written for everyone.
   const rendered = recipients.map((recipient) => {
     const payload = buildContentPayload({ registration, customer, partner, users, job, recipient });
+    const defaults = notificationTemplates(recipient.language);
     return {
       recipient,
       payload,
-      title: renderTemplate(titleTpl, payload).replace(/\s+/g, ' ').trim(),
-      message: renderTemplate(messageTpl, payload).trim()
+      title: renderTemplate(rule.content?.title || defaults.title, payload).replace(/\s+/g, ' ').trim(),
+      message: renderTemplate(rule.content?.message || defaults.message, payload).trim()
     };
   });
 
@@ -325,8 +329,9 @@ async function sendTest(partnerId, ruleId, registrationId, user) {
   const recipient = users.find((u) => u.userId === user.userId) || { name: user.label, timezone: 'UTC' };
   const job = { context: { statusName: registration.currentStage, subStatusName: registration.subStatus, scheduledAt: registration.scheduledAt, actorLabel: user.label, actorUserId: user.userId } };
   const payload = buildContentPayload({ registration, customer, partner, users, job, recipient });
-  const title = `[Test] ${renderTemplate(rule.content?.title || DEFAULT_TITLE, payload).replace(/\s+/g, ' ').trim()}`;
-  const message = renderTemplate(rule.content?.message || DEFAULT_MESSAGE, payload).trim();
+  const defaults = notificationTemplates(recipient.language);
+  const title = `${defaults.testPrefix} ${renderTemplate(rule.content?.title || defaults.title, payload).replace(/\s+/g, ' ').trim()}`;
+  const message = renderTemplate(rule.content?.message || defaults.message, payload).trim();
   await Notification.create({ notificationId: await nextId('NTF'), partnerId, userId: user.userId, ruleId, registrationId, title, message });
   return { title, message };
 }

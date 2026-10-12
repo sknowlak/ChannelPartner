@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "আমার লিড",
+    "signedInAs": "{{name}} ({{partnerId}}) হিসেবে সাইন ইন করা · সময় {{timezone}} অনুযায়ী দেখানো হচ্ছে",
+    "addLead": "+ লিড যোগ করুন",
+    "tabs": {
+      "all": "সব ({{count}})",
+      "pending": "অপেক্ষমাণ ({{count}})",
+      "booked": "বুক করা ({{count}})"
+    },
+    "searchPlaceholder": "নাম, মোবাইল বা নিবন্ধন ID দিয়ে খুঁজুন...",
+    "manageColumns": "কলাম পরিচালনা করুন",
+    "rowsPerPage": "প্রতি পৃষ্ঠায় সারি",
+    "registrationId": "নিবন্ধন ID",
+    "emptyState": "এখনও কোনো লিড নেই - আপনার প্রথম লিড নিবন্ধন করুন।",
+    "noMatch": "এই ফিল্টারগুলোর সঙ্গে কোনো লিড মেলেনি।",
+    "showing": "{{total}}টির মধ্যে {{from}} - {{to}} দেখানো হচ্ছে",
+    "actions": {
+      "preview": "প্রিভিউ ও দ্রুত আপডেট",
+      "history": "ইতিহাস",
+      "email": "ইমেল",
+      "whatsapp": "হোয়াটসঅ্যাপ",
+      "call": "কল করুন"
+    },
+    "pagination": {
+      "first": "প্রথম পৃষ্ঠা",
+      "previous": "আগের পৃষ্ঠা",
+      "next": "পরের পৃষ্ঠা",
+      "last": "শেষ পৃষ্ঠা"
+    }
+  },
+  "columns": {
+    "status": "অবস্থা",
+    "assignTo": "নিয়োগ করুন",
+    "booked": "বুক করা",
+    "protectionUntil": "সুরক্ষার মেয়াদ শেষ"
+  },
+  "booking": {
+    "booked": "বুক করা",
+    "pending": "অপেক্ষমাণ"
+  },
+  "assign": {
+    "unassigned": "কাউকে নিয়োজিত নয়",
+    "owner": "{{name}} (মালিক)",
+    "inactive": "{{name}} (নিষ্ক্রিয়)",
+    "unknownUser": "অজানা ব্যবহারকারী",
+    "assignedTo": "{{name}}-কে নিয়োজিত"
+  },
+  "form": {
+    "addTitle": "লিড যোগ করুন",
+    "editTitle": "লিড সম্পাদনা করুন",
+    "noPermissionAdd": "আপনার লিড নিবন্ধন করার অনুমতি নেই।",
+    "noPermissionEdit": "আপনার লিড সম্পাদনা করার অনুমতি নেই।",
+    "selectPlaceholder": "নির্বাচন করুন...",
+    "commaSeparated": "কমা দিয়ে আলাদা করুন",
+    "phonePlaceholder": "ফোন নম্বর",
+    "countryCode": "দেশের কোড"
+  },
+  "project": {
+    "none": "এখনও কোনো প্রকল্প নেই (রেফার করা হয়নি)",
+    "notInList": "{{project}} (প্রকল্প তালিকায় নেই)"
+  },
+  "journey": {
+    "customer": "গ্রাহক",
+    "currentOwner": "বর্তমান মালিক",
+    "protectionExpiry": "সুরক্ষার মেয়াদ শেষ",
+    "leadStatus": "লিডের অবস্থা",
+    "scheduled": "নির্ধারিত সময়",
+    "assignedTo": "নিয়োজিত",
+    "referral": "রেফারেল",
+    "builderReason": "বিল্ডারের কারণ: {{reason}}",
+    "bookedHint": "বিল্ডার বুক করেছেন - পরিচালন মালিকানা বিল্ডারের কাছে চলে গেছে; আপনার কৃতিত্ব ও কমিশনের যোগ্যতা বজায় থাকবে।",
+    "notBookedHint": "রেফারেল গ্রহণ করার পর বিল্ডার বুকিং নিশ্চিত করেন।",
+    "quickUpdate": "দ্রুত আপডেট",
+    "leadDetails": "লিডের বিবরণ",
+    "progressHistory": "অগ্রগতির ইতিহাস",
+    "timesIn": "(সময় {{timezone}} অনুযায়ী)",
+    "backToMyLeads": "আমার লিডে ফিরে যান",
+    "editLead": "লিড সম্পাদনা করুন"
+  },
+  "referral": {
+    "NOT_REFERRED": "রেফার করা হয়নি (কোনো প্রকল্প নেই)",
+    "PENDING_BUILDER": "বিল্ডারের অপেক্ষায়",
+    "ACCEPTED": "বিল্ডার গ্রহণ করেছেন",
+    "REJECTED": "বিল্ডার প্রত্যাখ্যান করেছেন"
+  },
+  "preview": {
+    "ariaLabel": "লিড প্রিভিউ",
+    "title": "লিড প্রিভিউ",
+    "source": "উৎস",
+    "location": "অবস্থান",
+    "scheduled": "নির্ধারিত সময়",
+    "registered": "নিবন্ধিত",
+    "latestNote": "সর্বশেষ নোট",
+    "quickUpdate": "দ্রুত আপডেট",
+    "fullDetails": "সম্পূর্ণ বিবরণ",
+    "editLead": "লিড সম্পাদনা করুন",
+    "history": "ইতিহাস"
+  },
+  "quick": {
+    "assignedTo": "নিয়োজিত",
+    "status": "অবস্থা",
+    "subStatus": "উপ-অবস্থা",
+    "selectSubStatus": "উপ-অবস্থা নির্বাচন করুন...",
+    "none": "কোনোটি নয়",
+    "scheduledAt": "নির্ধারিত সময়",
+    "localTime": "স্থানীয় সময়",
+    "note": "নোট",
+    "notePlaceholder": "এই কল / ভিজিটে কী হয়েছে? (ঐচ্ছিক)",
+    "updateStatus": "অবস্থা আপডেট করুন",
+    "statusUpdated": "অবস্থা আপডেট করা হয়েছে",
+    "bookedLocked": "এই লিডটি বুক হয়ে গেছে - এর অবস্থা আর পরিবর্তন করা যাবে না।",
+    "viewOnly": "আপনি এই লিডটি দেখতে পারেন, কিন্তু আপনার ভূমিকা এটি আপডেট করতে পারে না।"
+  },
+  "history": {
+    "title": "ইতিহাস - {{registrationId}}",
+    "tabs": {
+      "all": "সব",
+      "status": "অবস্থা",
+      "assignment": "নিয়োগ",
+      "notes": "নোট"
+    },
+    "doneBy": "{{actor}} করেছেন",
+    "system": "সিস্টেম",
+    "platforms": {
+      "System": "সিস্টেম",
+      "External": "বাহ্যিক",
+      "Web": "ওয়েব",
+      "Mobile": "মোবাইল"
+    },
+    "added": "যোগ করা হয়েছে",
+    "updated": "আপডেট করা হয়েছে",
+    "empty": "(খালি)",
+    "noHistory": "এই বিভাগে এখনও কোনো ইতিহাস নেই।",
+    "fieldLabels": {
+      "stage": "অবস্থা",
+      "subStatus": "উপ-অবস্থা",
+      "scheduledAt": "সময়সূচি",
+      "notes": "নোট",
+      "assignedTo": "নিয়োজিত"
+    },
+    "statusWithSub": "{{status}} ({{subStatus}})",
+    "events": {
+      "REGISTRATION_RECEIVED": "পার্টনারের নিবন্ধন পাওয়া গেছে",
+      "DUPLICATE_CHECK_COMPLETED": "ডুপ্লিকেট যাচাই সম্পন্ন - কোনো সক্রিয় ডুপ্লিকেট পাওয়া যায়নি",
+      "REGISTRATION_ACCEPTED": "নিবন্ধন গৃহীত হয়েছে",
+      "PROTECTION_GRANTED_one": "{{count}} দিনের সুরক্ষা দেওয়া হয়েছে",
+      "PROTECTION_GRANTED_other": "{{count}} দিনের সুরক্ষা দেওয়া হয়েছে",
+      "REGISTRATION_ATTEMPT_REJECTED": "{{partnerId}}-এর ডুপ্লিকেট নিবন্ধনের চেষ্টা প্রত্যাখ্যাত হয়েছে",
+      "LEAD_DETAILS_UPDATED_one": "{{count}}টি ফিল্ড আপডেট করা হয়েছে",
+      "LEAD_DETAILS_UPDATED_other": "{{count}}টি ফিল্ড আপডেট করা হয়েছে",
+      "STAGE_UPDATED": "অবস্থা আপডেট করে {{status}} করা হয়েছে",
+      "LEAD_ASSIGNED": "{{name}}-কে নিয়োজিত করা হয়েছে",
+      "LEAD_UNASSIGNED": "কাউকে নিয়োজিত নয়",
+      "BOOKING_COMPLETED": "বুকিং সম্পন্ন হয়েছে",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "পরিচালন মালিকানা বিল্ডারের কাছে হস্তান্তর করা হয়েছে",
+      "PARTNER_ATTRIBUTION_PRESERVED": "পার্টনারের কৃতিত্ব সংরক্ষিত হয়েছে",
+      "COMMISSION_ELIGIBILITY_CREATED": "কমিশনের যোগ্যতা তৈরি হয়েছে",
+      "HANDOVER_COMPLETED": "হস্তান্তর সম্পন্ন হয়েছে",
+      "REFERRAL_ACCEPTED": "বিল্ডার রেফারেল গ্রহণ করেছেন",
+      "REFERRAL_REJECTED": "বিল্ডার রেফারেল প্রত্যাখ্যান করেছেন। কারণ: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "অ্যাডমিন নির্ধারিত সময়ের আগেই ডুপ্লিকেট সুরক্ষা তুলে নিয়েছেন। কারণ: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "অ্যাডমিন নিবন্ধনটি {{from}} থেকে {{to}}-এ পুনরায় নিয়োগ করেছেন। কারণ: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "কলাম পরিচালনা করুন",
+    "hint": "ক্রম বদলাতে টেনে আনুন · দেখাতে টিক দিন",
+    "showAll": "সব দেখান",
+    "resetDefault": "ডিফল্টে রিসেট করুন"
+  },
+  "filters": {
+    "title": "ফিল্টার",
+    "allProjects": "সব প্রকল্প",
+    "any": "যেকোনো",
+    "noFields": "এখনও অন্য কোনো ফিল্টারযোগ্য ফিল্ড চালু নেই (সেটিংস > লিড)।",
+    "clearAll": "সব মুছুন"
+  },
+  "phone": {
+    "MISSING": "ফোন নম্বর আবশ্যক।",
+    "INVALID": "অনুগ্রহ করে একটি সঠিক ফোন নম্বর লিখুন।",
+    "TOO_SHORT": "ফোন নম্বরটি খুব ছোট।",
+    "TOO_LONG": "ফোন নম্বরটি খুব বড়।",
+    "INVALID_FOR_COUNTRY": "এই ফোন নম্বরটি {{country}}-এর জন্য সঠিক নয়।",
+    "COUNTRY_MISMATCH": "অনুগ্রহ করে সঠিক দেশের কোড নির্বাচন করুন।",
+    "NOT_MOBILE": "অনুগ্রহ করে ল্যান্ডলাইন নয়, একটি মোবাইল নম্বর লিখুন।"
+  }
+}

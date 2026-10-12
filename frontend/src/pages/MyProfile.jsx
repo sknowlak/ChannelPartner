@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { getMyProfile, updateMyProfile } from '../api/client';
 import { useAuth } from '../context/AuthContext';
 import { COMMON_TIMEZONES, detectBrowserTimezone, formatDateTime } from '../utils/timezone';
@@ -7,9 +8,13 @@ import PhoneInput from '../components/PhoneInput';
 import TeamTabs from '../components/TeamTabs';
 import { validateMobile } from '../utils/phone';
 import { focusField } from '../utils/formValidation';
+import LanguageSelect from '../components/LanguageSelect';
+import { roleLabel } from '../i18n/dataLabels';
 
 export default function MyProfile() {
-  const { partner, updateLocalPartner } = useAuth();
+  const { t } = useTranslation(['team', 'common']);
+  const { partner, updateLocalPartner, changeLanguage } = useAuth();
+  const [languageSaved, setLanguageSaved] = useState(false);
   const [form, setForm] = useState(null);
   const [role, setRole] = useState(partner.role || null);
   const [roleName, setRoleName] = useState(partner.roleName || '');
@@ -39,7 +44,7 @@ export default function MyProfile() {
       const mobileCheck = validateMobile(form.mobile);
       if (!mobileCheck.valid) {
         setMobileError(mobileCheck.reason);
-        setError('A field needs your attention - see below.');
+        setError(t('common:states.fieldNeedsAttention', { count: 1 }));
         focusField('mobile');
         return;
       }
@@ -77,27 +82,38 @@ export default function MyProfile() {
   };
 
   if (error && !form) return <div className="page page-wide"><div className="error-box">{error}</div></div>;
-  if (!form) return <div className="page page-wide">Loading...</div>;
+  if (!form) return <div className="page page-wide">{t('common:states.loading')}</div>;
 
   const isOwner = role === 'OWNER';
+  const roleText = roleName ? roleLabel(roleName) : t(isOwner ? 'team:roles.owner' : 'team:roles.member');
+
+  // The preferred language (section 54) applies immediately and is saved to
+  // the account on its own - it doesn't wait for "Save Changes", and it
+  // doesn't touch any other field in this form.
+  const pickLanguage = async (code) => {
+    setLanguageSaved(false);
+    setForm((f) => ({ ...f, language: code }));
+    await changeLanguage(code);
+    setLanguageSaved(true);
+  };
 
   return (
     <div className="page page-wide">
-      <h1>Manage Team</h1>
+      <h1>{t('team:title')}</h1>
       <TeamTabs />
       {error && <div className="error-box">{error}</div>}
-      {saved && <div className="card" style={{ background: '#e1f5e5', color: '#1a7f3c' }}>Profile updated.</div>}
+      {saved && <div className="card" style={{ background: '#e1f5e5', color: '#1a7f3c' }}>{t('team:profile.updated')}</div>}
 
       <form className="card" onSubmit={handleSubmit} noValidate>
         <div className="edit-form-sections">
           <div>
-            <h3 className="form-section-title"><span>Basic Information</span></h3>
+            <h3 className="form-section-title"><span>{t('team:profile.basicInfo')}</span></h3>
             <div className="field">
-              <label>Name</label>
+              <label>{t('common:fields.name')}</label>
               <input value={form.name || ''} onChange={update('name')} required />
             </div>
             <div className={`field ${mobileError ? 'invalid' : ''}`} id="field-mobile">
-              <label>Mobile</label>
+              <label>{t('common:fields.mobile')}</label>
               <PhoneInput
                 value={form.mobile || ''}
                 onChange={(val) => { setForm((f) => ({ ...f, mobile: val })); setMobileError(null); }}
@@ -105,40 +121,46 @@ export default function MyProfile() {
               {mobileError && <span className="field-error">{mobileError}</span>}
             </div>
             <div className="field">
-              <label>Email</label>
+              <label>{t('common:fields.email')}</label>
               <input type="email" value={form.email || ''} onChange={update('email')} />
             </div>
           </div>
 
           <div>
-            <h3 className="form-section-title"><span>{isOwner ? 'Organisation Information' : 'Preferences'}</span></h3>
+            <h3 className="form-section-title"><span>{isOwner ? t('team:profile.organisationInfo') : t('team:profile.preferences')}</span></h3>
             {isOwner && (
               <>
                 <div className="field">
-                  <label>Company / Organisation Name</label>
+                  <label>{t('team:profile.companyName')}</label>
                   <input value={form.companyName || ''} onChange={update('companyName')} />
                 </div>
                 <div className="field">
-                  <label>City</label>
+                  <label>{t('team:profile.city')}</label>
                   <input value={form.city || ''} onChange={update('city')} />
                 </div>
                 <div className="field">
-                  <label>State</label>
+                  <label>{t('team:profile.state')}</label>
                   <input value={form.state || ''} onChange={update('state')} />
                 </div>
                 <div className="field">
-                  <label>Currency</label>
+                  <label>{t('common:fields.currency')}</label>
                   <select value={form.currency || 'USD'} onChange={update('currency')}>
                     {(COMMON_CURRENCIES.includes(form.currency) ? COMMON_CURRENCIES : [form.currency || 'USD', ...COMMON_CURRENCIES]).map((c) => (
                       <option key={c} value={c}>{c}</option>
                     ))}
                   </select>
-                  <p className="hint" style={{ margin: '0.3rem 0 0' }}>Used to display budgets and booking values across your team.</p>
+                  <p className="hint" style={{ margin: '0.3rem 0 0' }}>{t('team:profile.currencyHelp')}</p>
                 </div>
               </>
             )}
+            <div className="field" id="field-language">
+              <LanguageSelect id="profile-language" value={form.language || undefined} onChange={pickLanguage} />
+              <p className="hint" style={{ margin: '0.3rem 0 0' }}>
+                {languageSaved ? t('team:profile.languageSaved') : t('common:language.help')}
+              </p>
+            </div>
             <div className="field">
-              <label>Timezone</label>
+              <label>{t('common:fields.timezone')}</label>
               <select value={form.timezone || 'UTC'} onChange={update('timezone')}>
                 {(COMMON_TIMEZONES.includes(form.timezone) ? COMMON_TIMEZONES : [form.timezone || 'UTC', ...COMMON_TIMEZONES]).map((tz) => (
                   <option key={tz} value={tz}>{tz}</option>
@@ -150,24 +172,24 @@ export default function MyProfile() {
                 style={{ marginTop: '0.4rem', alignSelf: 'flex-start' }}
                 onClick={() => setForm((f) => ({ ...f, timezone: detectBrowserTimezone() }))}
               >
-                Use device timezone ({detectBrowserTimezone()})
+                {t('team:profile.useDeviceTimezone', { timezone: detectBrowserTimezone() })}
               </button>
             </div>
           </div>
 
           <div>
-            <h3 className="form-section-title"><span>Security & Role</span></h3>
+            <h3 className="form-section-title"><span>{t('team:profile.securityRole')}</span></h3>
             <div className="field">
-              <label>Role</label>
-              <input value={roleName || (isOwner ? 'Owner' : 'Team Member')} disabled />
+              <label>{t('common:fields.role')}</label>
+              <input value={roleText} disabled />
             </div>
             <div className="field" id="field-password">
-              <label>New Password (leave blank to keep unchanged)</label>
+              <label>{t('team:profile.newPassword')}</label>
               <input type="password" name="password" autoComplete="new-password" value={form.password} onChange={update('password')} minLength={8} />
             </div>
             {form.password && (
               <div className="field" id="field-currentPassword">
-                <label>Current Password *</label>
+                <label>{t('team:profile.currentPassword')} *</label>
                 <input type="password" name="currentPassword" autoComplete="current-password" value={form.currentPassword} onChange={update('currentPassword')} required />
               </div>
             )}
@@ -176,12 +198,12 @@ export default function MyProfile() {
 
         <div className="edit-form-footer">
           <div className="meta">
-            <span><strong>Username</strong>{partner.username}</span>
-            <span><strong>Role</strong>{roleName || (isOwner ? 'Owner' : 'Team Member')}</span>
-            {form.createdAt && <span><strong>Member Since</strong>{formatDateTime(form.createdAt, form.timezone)}</span>}
+            <span><strong>{t('common:fields.username')}</strong>{partner.username}</span>
+            <span><strong>{t('common:fields.role')}</strong>{roleText}</span>
+            {form.createdAt && <span><strong>{t('team:profile.memberSince')}</strong>{formatDateTime(form.createdAt, form.timezone)}</span>}
           </div>
           <div className="actions">
-            <button className="primary" type="submit" disabled={busy}>{busy ? 'Saving...' : 'Save Changes'}</button>
+            <button className="primary" type="submit" disabled={busy}>{busy ? t('common:actions.saving') : t('common:actions.saveChanges')}</button>
           </div>
         </div>
       </form>

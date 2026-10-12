@@ -12,6 +12,7 @@
 import {
   getCountries, getCountryCallingCode, parsePhoneNumberFromString, validatePhoneNumberLength
 } from 'libphonenumber-js/max';
+import i18n from 'i18next';
 
 const regionNames = (() => {
   try {
@@ -68,6 +69,25 @@ const ERROR_MESSAGES = {
   NOT_MOBILE: 'Please enter a mobile number, not a landline.'
 };
 
+// Display text for a validation result's stable `code`, in the current UI
+// language (leads:phone.<CODE>). `message`/`reason` from validatePhoneNumber
+// stay English so they keep matching the backend; this is what UIs show.
+// Falls back to the English text when i18next isn't initialised (tests).
+export function phoneErrorMessage(code, country) {
+  // No country to name (validateMobile passes none) - the generic sentence
+  // reads better than "not valid for undefined".
+  if (code === 'INVALID_FOR_COUNTRY' && !country) code = 'INVALID';
+  const english = typeof ERROR_MESSAGES[code] === 'function' ? ERROR_MESSAGES[code](country) : ERROR_MESSAGES[code];
+  if (!i18n.isInitialized) return english;
+  let localizedCountry = country ? countryName(country) : '';
+  try {
+    if (country) localizedCountry = new Intl.DisplayNames([i18n.language], { type: 'region' }).of(country) || localizedCountry;
+  } catch {
+    // keep the English name
+  }
+  return i18n.t(`leads:phone.${code}`, { country: localizedCountry, defaultValue: english });
+}
+
 function fail(code, country) {
   const message = typeof ERROR_MESSAGES[code] === 'function' ? ERROR_MESSAGES[code](country) : ERROR_MESSAGES[code];
   return { valid: false, code, message };
@@ -116,6 +136,6 @@ export function validatePhoneNumber(rawInput, selectedCountry, options = {}) {
 // which is exactly what <PhoneInput>'s onChange always produces).
 export function validateMobile(value) {
   const result = validatePhoneNumber(value, undefined);
-  if (!result.valid) return { valid: false, code: result.code, reason: result.message };
+  if (!result.valid) return { valid: false, code: result.code, reason: phoneErrorMessage(result.code) };
   return { valid: true, code: 'VALID', reason: undefined };
 }

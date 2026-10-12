@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { useDataLabels } from '../i18n/dataLabels';
 import { sortLeadTabs } from '../utils/leadTabs';
 
 // Chooses which lead fields the status-update form shows for a status or
@@ -6,10 +8,12 @@ import { sortLeadTabs } from '../utils/leadTabs';
 // ENABLED field of the lead module, grouped like the Add Lead tabs.
 // `value` = [{ fieldKey, isRequired }].
 export default function StatusFieldsPicker({ fieldDefs, value, onChange, disabled }) {
+  const { t } = useTranslation('settings');
+  const { fieldLabel, groupLabel } = useDataLabels();
   const [query, setQuery] = useState('');
   const selected = new Map((value || []).map((f) => [f.fieldKey, f]));
   const q = query.trim().toLowerCase();
-  const visible = fieldDefs.filter((d) => !q || d.label.toLowerCase().includes(q) || d.fieldKey.toLowerCase().includes(q));
+  const visible = fieldDefs.filter((d) => !q || d.label.toLowerCase().includes(q) || String(fieldLabel(d)).toLowerCase().includes(q) || d.fieldKey.toLowerCase().includes(q));
   const groups = sortLeadTabs([...new Set(visible.map((d) => d.group))]);
 
   const setField = (fieldKey, patch) => {
@@ -24,13 +28,13 @@ export default function StatusFieldsPicker({ fieldDefs, value, onChange, disable
   return (
     <div className="fields-picker">
       <div className="fields-picker-head">
-        <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search lead fields..." />
-        <span className="hint">{selected.size} shown · {[...selected.values()].filter((f) => f.isRequired).length} mandatory</span>
+        <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder={t('picker.searchPlaceholder')} />
+        <span className="hint">{t('picker.summary', { shown: selected.size, mandatory: [...selected.values()].filter((f) => f.isRequired).length })}</span>
       </div>
       <div className="fields-picker-list">
         {groups.map((group) => (
           <div key={group}>
-            <div className="placeholder-group-label">{group}</div>
+            <div className="placeholder-group-label">{groupLabel(group)}</div>
             {visible.filter((d) => d.group === group).map((def) => {
               const sel = selected.get(def.fieldKey);
               return (
@@ -42,7 +46,7 @@ export default function StatusFieldsPicker({ fieldDefs, value, onChange, disable
                       disabled={disabled}
                       onChange={(e) => setField(def.fieldKey, e.target.checked ? {} : null)}
                     />
-                    {def.label}
+                    {fieldLabel(def)}
                   </label>
                   <label className={`mandatory-toggle ${sel ? '' : 'muted'}`}>
                     <input
@@ -51,14 +55,14 @@ export default function StatusFieldsPicker({ fieldDefs, value, onChange, disable
                       disabled={disabled || !sel}
                       onChange={(e) => setField(def.fieldKey, { isRequired: e.target.checked })}
                     />
-                    Mandatory
+                    {t('picker.mandatory')}
                   </label>
                 </div>
               );
             })}
           </div>
         ))}
-        {visible.length === 0 && <p className="hint">No fields match.</p>}
+        {visible.length === 0 && <p className="hint">{t('picker.noMatch')}</p>}
       </div>
     </div>
   );

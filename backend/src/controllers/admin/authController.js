@@ -1,5 +1,6 @@
 const Admin = require('../../models/Admin');
 const { verifyPassword, issueToken } = require('../../services/adminAuthService');
+const { isSupportedLanguage } = require('../../config/languages');
 
 // POST /api/admin/auth/login
 async function login(req, res, next) {
@@ -18,7 +19,7 @@ async function login(req, res, next) {
     const token = issueToken(admin);
     return res.json({
       token,
-      admin: { adminId: admin.adminId, name: admin.name, email: admin.email, role: admin.role }
+      admin: { adminId: admin.adminId, name: admin.name, email: admin.email, role: admin.role, language: admin.language || '' }
     });
   } catch (err) {
     next(err);
@@ -26,8 +27,27 @@ async function login(req, res, next) {
 }
 
 // GET /api/admin/auth/me
-async function me(req, res) {
-  return res.json({ admin: req.admin });
+async function me(req, res, next) {
+  try {
+    const admin = await Admin.findOne({ adminId: req.admin.adminId });
+    return res.json({ admin: { ...req.admin, name: admin?.name, language: admin?.language || '' } });
+  } catch (err) {
+    next(err);
+  }
 }
 
-module.exports = { login, me };
+// PATCH /api/admin/auth/me { language } - the admin's preferred UI language (section 54).
+async function updateMe(req, res, next) {
+  try {
+    const { language } = req.body;
+    if (language === undefined || (language !== '' && !isSupportedLanguage(language))) {
+      return res.status(400).json({ reason: 'Unsupported language', fieldKey: 'language' });
+    }
+    await Admin.updateOne({ adminId: req.admin.adminId }, { $set: { language } });
+    return res.json({ language });
+  } catch (err) {
+    next(err);
+  }
+}
+
+module.exports = { login, me, updateMe };

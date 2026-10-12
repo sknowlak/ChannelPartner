@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useNavigate, useParams } from 'react-router-dom';
 import { getMyRegistration, listLeadFields, updateMyRegistration } from '../api/client';
 import DynamicFieldInput from '../components/DynamicFieldInput';
@@ -6,6 +7,7 @@ import { PERMISSIONS } from '../utils/permissions';
 import { useAuth } from '../context/AuthContext';
 import { sortLeadTabs } from '../utils/leadTabs';
 import { findFieldErrors, focusField } from '../utils/formValidation';
+import { useDataLabels } from '../i18n/dataLabels';
 
 function valueFor(def, registration, customer) {
   if (def.scope === 'customer') return customer?.[def.fieldKey] ?? '';
@@ -22,6 +24,8 @@ export default function EditLead() {
   const { registrationId } = useParams();
   const { hasPermission, partner } = useAuth();
   const navigate = useNavigate();
+  const { t } = useTranslation(['leads', 'common']);
+  const { fieldLabel, groupLabel } = useDataLabels();
   const [fieldDefs, setFieldDefs] = useState(null);
   const [activeTab, setActiveTab] = useState(null);
   const [values, setValues] = useState(null);
@@ -65,7 +69,7 @@ export default function EditLead() {
     const errs = findFieldErrors(fieldDefs, values);
     if (errs.length > 0) {
       setFieldErrors(new Map(errs.map((e) => [e.fieldKey, e.message])));
-      setError(`${errs.length === 1 ? 'A field needs' : `${errs.length} fields need`} your attention - see below.`);
+      setError(t('common:states.fieldNeedsAttention', { count: errs.length }));
       goToField(errs[0].fieldKey);
       return;
     }
@@ -97,19 +101,19 @@ export default function EditLead() {
   if (!hasPermission(PERMISSIONS.MANAGE_LEADS)) {
     return (
       <div className="page page-wide">
-        <div className="error-box">You don't have permission to edit leads.</div>
+        <div className="error-box">{t('leads:form.noPermissionEdit')}</div>
       </div>
     );
   }
 
   if (error && !fieldDefs) return <div className="page page-wide"><div className="error-box">{error}</div></div>;
-  if (!fieldDefs || !values) return <div className="page page-wide">Loading...</div>;
+  if (!fieldDefs || !values) return <div className="page page-wide">{t('common:states.loading')}</div>;
 
   const tabs = sortLeadTabs([...new Set(fieldDefs.map((d) => d.group))]);
 
   return (
     <div className="page page-wide">
-      <h1>Edit Lead</h1>
+      <h1>{t('leads:form.editTitle')}</h1>
       {error && <div className="error-box">{error}</div>}
 
       <form className="card" onSubmit={handleSubmit} noValidate>
@@ -124,7 +128,7 @@ export default function EditLead() {
                 onClick={() => setActiveTab(tab)}
               >
                 {tabHasError && <span className="dot error-dot" />}
-                {tab}
+                {groupLabel(tab)}
               </button>
             );
           })}
@@ -140,7 +144,7 @@ export default function EditLead() {
                 <div key={i}>
                   {col.map((def) => (
                     <div className={`field ${fieldErrors.has(def.fieldKey) ? 'invalid' : ''}`} key={def.fieldKey} id={`field-${def.fieldKey}`}>
-                      <label>{def.label}{def.isRequired ? ' *' : ''}</label>
+                      <label>{fieldLabel(def)}{def.isRequired ? ' *' : ''}</label>
                       <DynamicFieldInput def={def} value={values[def.fieldKey]} onChange={(val) => setValue(def.fieldKey, val)} currency={partner?.currency} />
                       {fieldErrors.has(def.fieldKey) && <span className="field-error">{fieldErrors.get(def.fieldKey)}</span>}
                     </div>
@@ -154,9 +158,9 @@ export default function EditLead() {
         <div className="edit-form-footer">
           <div className="meta" />
           <div className="actions">
-            <button className="secondary" type="button" onClick={() => navigate(`/registrations/${registrationId}`)}>Cancel</button>
+            <button className="secondary" type="button" onClick={() => navigate(`/registrations/${registrationId}`)}>{t('common:actions.cancel')}</button>
             <button className="primary" type="submit" disabled={submitting}>
-              {submitting ? 'Saving...' : 'Save'}
+              {submitting ? t('common:actions.saving') : t('common:actions.save')}
             </button>
           </div>
         </div>

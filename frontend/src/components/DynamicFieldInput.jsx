@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+import { useDataLabels } from '../i18n/dataLabels';
 import { COMMON_TIMEZONES } from '../utils/timezone';
 import PhoneInput from './PhoneInput';
 import ProjectSelect from './ProjectSelect';
@@ -7,6 +9,8 @@ import ProjectSelect from './ProjectSelect';
 // each form always matches whatever fields the partner has configured,
 // without per-field code. `currency` is only used by the CURRENCY branch.
 export default function DynamicFieldInput({ def, value, onChange, currency }) {
+  const { t } = useTranslation('leads');
+  const { optionLabel } = useDataLabels();
   const v = value ?? '';
 
   if (def.fieldKey === 'mobile' || def.fieldKey === 'alternateMobile') {
@@ -42,8 +46,8 @@ export default function DynamicFieldInput({ def, value, onChange, currency }) {
   if (def.dataType === 'SELECT') {
     return (
       <select value={v} onChange={(e) => onChange(e.target.value)} required={def.isRequired}>
-        <option value="">Select...</option>
-        {def.options.map((o) => <option key={o} value={o}>{o}</option>)}
+        <option value="">{t('form.selectPlaceholder')}</option>
+        {def.options.map((o) => <option key={o} value={o}>{optionLabel(o)}</option>)}
       </select>
     );
   }
@@ -89,7 +93,7 @@ export default function DynamicFieldInput({ def, value, onChange, currency }) {
     return (
       <input
         type="text"
-        placeholder="Comma separated"
+        placeholder={t('form.commaSeparated')}
         value={text}
         onChange={(e) => onChange(e.target.value.split(',').map((s) => s.trim()).filter(Boolean))}
       />

@@ -1,13 +1,20 @@
 import { useState } from 'react';
 import { ActivityIndicator, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { useTranslation } from 'react-i18next';
 import { API_CONFIG_ERROR, login, saveSession } from '../api/client';
+import LanguagePicker from '../components/LanguagePicker';
+import { configErrorMessage, errorMessage } from '../i18n/errors';
+import { applyAccountLanguage, setDeviceLanguage } from '../i18n/language';
 
 // Same login as the web partner portal (owner or team member).
 export default function LoginScreen({ onSignedIn }) {
+  const { t } = useTranslation(['auth', 'common']);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [busy, setBusy] = useState(false);
-  const [error, setError] = useState(API_CONFIG_ERROR);
+  const [error, setError] = useState(null);
+  // Built at render time so it follows a language switch.
+  const shownError = error || configErrorMessage(API_CONFIG_ERROR);
 
   const submit = async () => {
     setBusy(true);
@@ -15,9 +22,11 @@ export default function LoginScreen({ onSignedIn }) {
     try {
       const { data } = await login(username.trim(), password);
       await saveSession(data.token);
+      // The account's saved language (if any) wins over the device choice.
+      await applyAccountLanguage(data.partner?.language);
       onSignedIn();
     } catch (err) {
-      setError(err.response?.data?.reason || err.message);
+      setError(errorMessage(err));
     } finally {
       setBusy(false);
     }
@@ -25,14 +34,22 @@ export default function LoginScreen({ onSignedIn }) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Channel Partner Sign In</Text>
-      {error && <Text style={styles.error}>{error}</Text>}
-      <Text style={styles.label}>Username</Text>
-      <TextInput style={styles.input} value={username} onChangeText={setUsername} autoCapitalize="none" autoCorrect={false} />
-      <Text style={styles.label}>Password</Text>
-      <TextInput style={styles.input} value={password} onChangeText={setPassword} secureTextEntry />
-      <TouchableOpacity style={styles.button} onPress={submit} disabled={busy || !!API_CONFIG_ERROR || !username || !password}>
-        {busy ? <ActivityIndicator color="#fff" /> : <Text style={styles.buttonText}>Sign In</Text>}
+      {/* Device-only choice before sign-in; the account preference applies after. */}
+      <LanguagePicker onChange={setDeviceLanguage} />
+      <Text style={styles.title} accessibilityRole="header">{t('auth:login.title')}</Text>
+      {shownError && <Text style={styles.error} accessibilityLiveRegion="polite">{shownError}</Text>}
+      <Text style={styles.label}>{t('common:fields.username')}</Text>
+      <TextInput style={styles.input} value={username} onChangeText={setUsername} autoCapitalize="none" autoCorrect={false} accessibilityLabel={t('common:fields.username')} />
+      <Text style={styles.label}>{t('common:fields.password')}</Text>
+      <TextInput style={styles.input} value={password} onChangeText={setPassword} secureTextEntry accessibilityLabel={t('common:fields.password')} />
+      <TouchableOpacity
+        style={styles.button}
+        onPress={submit}
+        disabled={busy || !!API_CONFIG_ERROR || !username || !password}
+        accessibilityRole="button"
+        accessibilityLabel={busy ? t('common:actions.signingIn') : t('common:actions.signIn')}
+      >
+        {busy ? <ActivityIndicator color="#fff" /> : <Text style={styles.buttonText}>{t('common:actions.signIn')}</Text>}
       </TouchableOpacity>
     </View>
   );

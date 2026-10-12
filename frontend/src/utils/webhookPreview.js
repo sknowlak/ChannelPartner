@@ -74,12 +74,13 @@ function flattenForForm(obj, prefix = '') {
   return out;
 }
 
-export function buildPreviewBody(format, bodyTemplate, headersText) {
+// `emptyText` is the (translated) hint shown while a Custom body is blank.
+export function buildPreviewBody(format, bodyTemplate, headersText, emptyText = '(write a body template above to see a preview)') {
   if (format === 'FORM') {
     return flattenForForm(SAMPLE_LEAD_PAYLOAD).map(([k, v]) => `${k}=${encodeURIComponent(v)}`).join('&');
   }
   if (format === 'CUSTOM') {
-    return bodyTemplate ? renderTemplate(bodyTemplate, SAMPLE_LEAD_PAYLOAD, { json: isJsonContentType(headersText) }) : '(write a body template above to see a preview)';
+    return bodyTemplate ? renderTemplate(bodyTemplate, SAMPLE_LEAD_PAYLOAD, { json: isJsonContentType(headersText) }) : emptyText;
   }
   return JSON.stringify(SAMPLE_LEAD_PAYLOAD, null, 2);
 }

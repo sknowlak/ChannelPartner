@@ -23,6 +23,7 @@ async function loadOrgUsers(partnerId) {
       email: partner.email,
       mobile: partner.mobile,
       timezone: partner.timezone || 'UTC',
+      language: partner.language || '',
       roleId: superAdmin?.roleId || '',
       isOwner: true,
       status: 'ACTIVE'
@@ -35,6 +36,7 @@ async function loadOrgUsers(partnerId) {
       email: m.email || '',
       mobile: m.mobile || '',
       timezone: m.timezone || 'UTC',
+      language: m.language || '',
       roleId: m.roleId,
       isOwner: false,
       status: m.status

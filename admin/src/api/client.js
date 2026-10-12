@@ -25,6 +25,9 @@ client.interceptors.response.use(
 );
 
 export const login = (email, password) => client.post('/auth/login', { email, password });
+// The signed-in admin's own record, incl. the saved UI language (section 54).
+export const getMe = () => client.get('/auth/me');
+export const updateMe = (payload) => client.patch('/auth/me', payload);
 
 export const getDashboard = () => client.get('/dashboard');
 

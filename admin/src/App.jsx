@@ -1,4 +1,6 @@
+import { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import NavBar from './components/NavBar';
 import ProtectedRoute from './components/ProtectedRoute';
 import Login from './pages/Login';
@@ -14,6 +16,12 @@ import Builders from './pages/Builders';
 import BuilderDetail from './pages/BuilderDetail';
 
 export default function App() {
+  const { t, i18n } = useTranslation('common');
+  // The browser tab title follows the UI language.
+  useEffect(() => {
+    document.title = t('common:brand.admin');
+  }, [t, i18n.language]);
+
   return (
     <div className="app-shell">
       <NavBar />

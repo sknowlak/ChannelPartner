@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { listProjects } from '../api/client';
 
 // Projects come from the builder catalogue (section 52) - the project
@@ -11,14 +12,15 @@ function loadProjects() {
 }
 
 export default function ProjectSelect({ value, onChange, required }) {
+  const { t } = useTranslation('leads');
   const [projects, setProjects] = useState([]);
   useEffect(() => { loadProjects().then(setProjects).catch(() => setProjects([])); }, []);
   // A lead registered before the catalogue existed may hold an unknown code - keep showing it.
   const known = projects.some((p) => p.projectId === value);
   return (
     <select value={value || ''} onChange={(e) => onChange(e.target.value)} required={required}>
-      <option value="">No project yet (not referred)</option>
-      {!known && value && <option value={value}>{value} (not in the project list)</option>}
+      <option value="">{t('project.none')}</option>
+      {!known && value && <option value={value}>{t('project.notInList', { project: value })}</option>}
       {projects.map((p) => (
         <option key={p.projectId} value={p.projectId}>{p.name} - {p.builderName}{p.city ? ` (${p.city})` : ''}</option>
       ))}

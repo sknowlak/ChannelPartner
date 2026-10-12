@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { useDataLabels } from '../i18n/dataLabels';
 import { getMyRegistration } from '../api/client';
 import { formatDateTime } from '../utils/timezone';
 import LeadQuickUpdate from './LeadQuickUpdate';
@@ -19,6 +21,8 @@ function Row({ label, children }) {
 // `options` comes from useLeadWorkflowOptions() in the parent so the grid
 // and the drawer share one users/statuses fetch.
 export default function LeadPreviewDrawer({ registrationId, timezone, options, canEdit, onClose, onUpdated, onShowHistory }) {
+  const { t } = useTranslation(['leads', 'common']);
+  const { optionLabel, statusLabel, subStatusLabel } = useDataLabels();
   const navigate = useNavigate();
   const [detail, setDetail] = useState(null);
   const [error, setError] = useState(null);
@@ -56,37 +60,37 @@ export default function LeadPreviewDrawer({ registrationId, timezone, options, c
 
   return (
     <div className="drawer-backdrop" onClick={onClose}>
-      <aside className="drawer-panel" onClick={(e) => e.stopPropagation()} aria-label="Lead preview">
+      <aside className="drawer-panel" onClick={(e) => e.stopPropagation()} aria-label={t('leads:preview.ariaLabel')}>
         <div className="modal-header">
           <div>
-            <h3 style={{ margin: 0 }}>{customer?.name || 'Lead Preview'}</h3>
+            <h3 style={{ margin: 0 }}>{customer?.name || t('leads:preview.title')}</h3>
             <span className="hint">{registrationId}</span>
           </div>
-          <button className="link" onClick={onClose}>Close</button>
+          <button className="link" onClick={onClose}>{t('common:actions.close')}</button>
         </div>
 
         {error && <div className="error-box">{error}</div>}
-        {!detail && !error && <p className="hint">Loading...</p>}
+        {!detail && !error && <p className="hint">{t('common:states.loading')}</p>}
 
         {detail && (
           <>
             <div className="preview-status">
-              <span className="badge pending">{reg.currentStage}{reg.subStatus ? ` · ${reg.subStatus}` : ''}</span>
-              <span className="hint">{detail.assignedToName ? `Assigned to ${detail.assignedToName}` : 'Unassigned'}</span>
+              <span className="badge pending">{statusLabel(reg.currentStage)}{reg.subStatus ? ` · ${subStatusLabel(reg.subStatus)}` : ''}</span>
+              <span className="hint">{detail.assignedToName ? t('leads:assign.assignedTo', { name: detail.assignedToName }) : t('leads:assign.unassigned')}</span>
             </div>
 
             <dl className="kv preview-kv">
-              <Row label="Mobile">{customer?.mobile && <a href={`tel:${customer.mobile}`}>{customer.mobile}</a>}</Row>
-              <Row label="Email">{customer?.email && <a href={`mailto:${customer.email}`}>{customer.email}</a>}</Row>
-              <Row label="Project">{reg.projectId}</Row>
-              <Row label="Source">{reg.leadSource}</Row>
-              <Row label="Location">{reg.preferredLocation}</Row>
-              {reg.scheduledAt && <Row label="Scheduled">{formatDateTime(reg.scheduledAt, timezone)}</Row>}
-              <Row label="Registered">{formatDateTime(reg.registeredAt, timezone)}</Row>
-              <Row label="Latest Note">{reg.notes}</Row>
+              <Row label={t('common:fields.mobile')}>{customer?.mobile && <a href={`tel:${customer.mobile}`}>{customer.mobile}</a>}</Row>
+              <Row label={t('common:fields.email')}>{customer?.email && <a href={`mailto:${customer.email}`}>{customer.email}</a>}</Row>
+              <Row label={t('common:fields.project')}>{reg.projectId}</Row>
+              <Row label={t('leads:preview.source')}>{optionLabel(reg.leadSource)}</Row>
+              <Row label={t('leads:preview.location')}>{reg.preferredLocation}</Row>
+              {reg.scheduledAt && <Row label={t('leads:preview.scheduled')}>{formatDateTime(reg.scheduledAt, timezone)}</Row>}
+              <Row label={t('leads:preview.registered')}>{formatDateTime(reg.registeredAt, timezone)}</Row>
+              <Row label={t('leads:preview.latestNote')}>{reg.notes}</Row>
             </dl>
 
-            <h4 className="drawer-section-title">Quick Update</h4>
+            <h4 className="drawer-section-title">{t('leads:preview.quickUpdate')}</h4>
             {options.loaded ? (
               <LeadQuickUpdate
                 lead={reg}
@@ -98,12 +102,12 @@ export default function LeadPreviewDrawer({ registrationId, timezone, options, c
                 canEdit={canEdit}
                 onUpdated={applyPatch}
               />
-            ) : <p className="hint">Loading...</p>}
+            ) : <p className="hint">{t('common:states.loading')}</p>}
 
             <div className="drawer-footer">
-              <button className="secondary" onClick={() => navigate(`/registrations/${registrationId}`)}>Full Details</button>
-              {canEdit && <button className="secondary" onClick={() => navigate(`/registrations/${registrationId}/edit`)}>Edit Lead</button>}
-              {onShowHistory && <button className="secondary" onClick={() => onShowHistory(registrationId)}>History</button>}
+              <button className="secondary" onClick={() => navigate(`/registrations/${registrationId}`)}>{t('leads:preview.fullDetails')}</button>
+              {canEdit && <button className="secondary" onClick={() => navigate(`/registrations/${registrationId}/edit`)}>{t('leads:preview.editLead')}</button>}
+              {onShowHistory && <button className="secondary" onClick={() => onShowHistory(registrationId)}>{t('leads:preview.history')}</button>}
             </div>
           </>
         )}

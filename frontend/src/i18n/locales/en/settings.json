@@ -1,0 +1,263 @@
+{
+  "page": {
+    "title": "Settings",
+    "noPermission": "You don't have permission to manage settings."
+  },
+  "categories": {
+    "lead": "Lead",
+    "user": "User",
+    "integrations": "Integrations"
+  },
+  "leadTabs": {
+    "fields": "Fields",
+    "statuses": "Statuses & Sub-Statuses",
+    "notifications": "Notifications & Schedulers"
+  },
+  "fields": {
+    "leadIntro": "Configure the lead capture form: enable/disable fields, mark them required, or add your own custom fields.",
+    "userIntro": "Configure the Add/Edit Team Member form: enable/disable fields, mark them required, or add your own custom fields.",
+    "addCustomField": "+ Add Custom Field",
+    "fieldLabel": "Field Label",
+    "group": "Group",
+    "groupPlaceholderLead": "e.g. Enquiry Info",
+    "groupPlaceholderUser": "e.g. Additional Details",
+    "dataType": "Data Type",
+    "options": "Options (comma separated)",
+    "requiredLead": "Required - partners on your team must fill this in to register a lead",
+    "requiredUser": "Required - must be filled in when adding a team member",
+    "creating": "Creating...",
+    "createField": "Create Field",
+    "columns": {
+      "field": "Field",
+      "group": "Group",
+      "type": "Type",
+      "required": "Required",
+      "enabled": "Enabled",
+      "kind": "Kind"
+    },
+    "kind": {
+      "custom": "Custom",
+      "core": "Core (locked)",
+      "standard": "Standard"
+    }
+  },
+  "dataTypes": {
+    "TEXT": "Text",
+    "TEXTAREA": "Long text",
+    "NUMBER": "Number",
+    "CURRENCY": "Currency",
+    "DATE": "Date",
+    "SELECT": "Dropdown",
+    "LIST": "List"
+  },
+  "picker": {
+    "searchPlaceholder": "Search lead fields...",
+    "summary": "{{shown}} shown · {{mandatory}} mandatory",
+    "mandatory": "Mandatory",
+    "noMatch": "No fields match."
+  },
+  "statuses": {
+    "intro": "Your lead statuses and sub-statuses - what each one asks for (a date & time, lead fields) when someone updates a lead to it.",
+    "add": "+ Add Status",
+    "columns": {
+      "order": "Order",
+      "status": "Status",
+      "subStatuses": "Sub-Statuses",
+      "asksFor": "Asks For",
+      "active": "Active"
+    },
+    "moveUp": "Move up",
+    "moveDown": "Move down",
+    "defaultBadge": "Default for new leads",
+    "bookingBadge": "Booking status",
+    "asksForLabel": "Asks for {{label}}",
+    "asksForDateTime": "Asks for date & time",
+    "none": "None",
+    "dateTime": "Date & time",
+    "scheduledOn": "on {{names}}",
+    "fieldsSummary_one": "{{count}} field ({{mandatory}} mandatory)",
+    "fieldsSummary_other": "{{count}} fields ({{mandatory}} mandatory)",
+    "deleteConfirm": "Delete status \"{{name}}\"? This cannot be undone.",
+    "editTitle": "Edit Status - {{name}}",
+    "newTitle": "New Status",
+    "name": "Status Name",
+    "colour": "Colour",
+    "active": "Active",
+    "isDefault": "Default status for new leads",
+    "isBooking": "Booking status (set by Complete Booking)",
+    "whenMoved": "When a lead is moved to this status",
+    "askSchedule": "Ask for a date & time (scheduler)",
+    "scheduleLabelPlaceholder": "Label, e.g. Visit at",
+    "fieldsToShow": "Lead fields to show on the update form",
+    "subStatusesTitle": "Sub-Statuses",
+    "subStatusesHint": "Each sub-status can ask for its own date & time and add its own fields - shown on top of the status's fields above.",
+    "subStatusName": "Sub-status name",
+    "subFields": "Fields ({{count}})",
+    "subScheduleLabelPlaceholder": "Date & time label, e.g. Call back at",
+    "addSubStatus": "+ Add Sub-Status",
+    "saveStatus": "Save Status",
+    "createStatus": "Create Status"
+  },
+  "notifications": {
+    "intro": "Notify the right people when a lead reaches a status - immediately, or a set time before/after the date & time scheduled on it.",
+    "add": "+ Add Notification",
+    "columns": {
+      "notification": "Notification",
+      "whenStatusIs": "When Status Is",
+      "sends": "Sends",
+      "to": "To",
+      "via": "Via",
+      "enabled": "Enabled"
+    },
+    "anyStatus": "Any status",
+    "anySubStatus": "Any sub-status",
+    "inactiveOption": "{{name}} (inactive)",
+    "emptyRules": "No notifications yet - add one to alert your team when a lead reaches a status.",
+    "jobs": {
+      "title": "Scheduled & Sent",
+      "firesAt": "Fires At",
+      "notification": "Notification",
+      "lead": "Lead",
+      "status": "Status",
+      "details": "Details",
+      "empty": "Nothing scheduled or sent yet.",
+      "delivery": "{{channel}} → {{recipient}}: {{status}}",
+      "deliveryWithDetail": "{{channel}} → {{recipient}}: {{status}} ({{detail}})"
+    },
+    "jobStatus": {
+      "PENDING": "Pending",
+      "PROCESSING": "Processing",
+      "SENT": "Sent",
+      "FAILED": "Failed",
+      "SKIPPED": "Skipped",
+      "CANCELLED": "Cancelled"
+    },
+    "deliveryStatus": {
+      "SENT": "sent",
+      "FAILED": "failed",
+      "SKIPPED": "skipped"
+    },
+    "deliveryChannel": {
+      "IN_APP": "in-app",
+      "EMAIL": "email",
+      "WEBHOOK": "webhook"
+    },
+    "recipients": {
+      "assignedUser": "Assigned user",
+      "owner": "Owner",
+      "updatedBy": "Updated by",
+      "role": "Role: {{name}}"
+    },
+    "channels": {
+      "inApp": "In-app",
+      "email": "Email",
+      "webhook": "Webhook"
+    },
+    "deleteConfirm": "Delete notification \"{{name}}\"? Pending reminders from it are cancelled.",
+    "testPrompt": "Send a test of this notification to yourself (in-app) using which lead ID?",
+    "testSent": "Sent to your bell:\n\n{{title}}\n{{message}}",
+    "headersInvalid": "Webhook headers must be valid JSON, e.g. {\"Authorization\": \"Bearer xyz\"}",
+    "editTitle": "Edit Notification",
+    "newTitle": "New Notification",
+    "name": "Name",
+    "namePlaceholder": "e.g. Site visit reminder",
+    "whenStatus": "When a lead's status is",
+    "subStatus": "Sub-status",
+    "send": "Send (scheduler)",
+    "custom": "Custom...",
+    "modeBefore": "before scheduled time",
+    "modeAfter": "after scheduled time",
+    "noScheduleWarning": "This status doesn't ask for a date & time, so a \"before/at/after scheduled time\" notification would never fire.",
+    "noScheduleFix": "Turn on <strong>Ask for a date & time</strong> for it under Statuses & Sub-Statuses, or send Immediately.",
+    "sendTo": "Send to (any combination)",
+    "recipientAssigned": "Assigned user (lead owner)",
+    "recipientOwner": "Account owner / admin",
+    "recipientUpdatedBy": "Person who updated the status",
+    "everyoneWithRole": "Everyone with role",
+    "specificUsers": "Specific users (active)",
+    "inactiveNever": "Inactive users never receive notifications, even if selected.",
+    "deliverVia": "Deliver via",
+    "channelInApp": "In-app (bell)",
+    "channelEmail": "Email",
+    "channelWebhook": "Webhook (WhatsApp / SMS provider)",
+    "emailHint": "Email goes to each recipient's email address and needs SMTP set up on the server (backend/.env); until then email sends are logged as skipped.",
+    "webhookUrl": "Webhook URL (POST, JSON)",
+    "headers": "Headers (JSON)",
+    "content": "Notification content",
+    "title": "Title",
+    "message": "Message",
+    "insertIntoTitle": "Insert into Title",
+    "insertIntoMessage": "Insert into Message",
+    "anyLeadField": "Any lead field works too, e.g. <code1>{{example1}}</code1> or <code2>{{example2}}</code2>.",
+    "preview": "Preview (sample lead)",
+    "enabled": "Enabled",
+    "saveRule": "Save Notification",
+    "createRule": "Create Notification",
+    "variables": {
+      "customerName": "Lead name",
+      "customerMobile": "Lead mobile",
+      "customerEmail": "Lead email",
+      "registrationId": "Lead ID",
+      "status": "Status",
+      "subStatus": "Sub-status",
+      "scheduleAt": "Scheduled date & time",
+      "assignedTo": "Assigned user",
+      "updatedBy": "Updated by",
+      "recipient": "Recipient name",
+      "project": "Project",
+      "notes": "Latest note",
+      "partner": "Partner name"
+    }
+  },
+  "timing": {
+    "presets": {
+      "IMMEDIATE": "Immediately when the status is set",
+      "AT": "At the scheduled time",
+      "A1D": "1 day after scheduled time (follow-up check)"
+    },
+    "immediately": "Immediately",
+    "atScheduled": "At scheduled time",
+    "before": {
+      "MINUTES_one": "{{count}} minute before scheduled time",
+      "MINUTES_other": "{{count}} minutes before scheduled time",
+      "HOURS_one": "{{count}} hour before scheduled time",
+      "HOURS_other": "{{count}} hours before scheduled time",
+      "DAYS_one": "{{count}} day before scheduled time",
+      "DAYS_other": "{{count}} days before scheduled time",
+      "WEEKS_one": "{{count}} week before scheduled time",
+      "WEEKS_other": "{{count}} weeks before scheduled time",
+      "MONTHS_one": "{{count}} month before scheduled time",
+      "MONTHS_other": "{{count}} months before scheduled time",
+      "YEARS_one": "{{count}} year before scheduled time",
+      "YEARS_other": "{{count}} years before scheduled time"
+    },
+    "after": {
+      "MINUTES_one": "{{count}} minute after scheduled time",
+      "MINUTES_other": "{{count}} minutes after scheduled time",
+      "HOURS_one": "{{count}} hour after scheduled time",
+      "HOURS_other": "{{count}} hours after scheduled time",
+      "DAYS_one": "{{count}} day after scheduled time",
+      "DAYS_other": "{{count}} days after scheduled time",
+      "WEEKS_one": "{{count}} week after scheduled time",
+      "WEEKS_other": "{{count}} weeks after scheduled time",
+      "MONTHS_one": "{{count}} month after scheduled time",
+      "MONTHS_other": "{{count}} months after scheduled time",
+      "YEARS_one": "{{count}} year after scheduled time",
+      "YEARS_other": "{{count}} years after scheduled time"
+    },
+    "units": {
+      "MINUTES_one": "minute",
+      "MINUTES_other": "minutes",
+      "HOURS_one": "hour",
+      "HOURS_other": "hours",
+      "DAYS_one": "day",
+      "DAYS_other": "days",
+      "WEEKS_one": "week",
+      "WEEKS_other": "weeks",
+      "MONTHS_one": "month",
+      "MONTHS_other": "months",
+      "YEARS_one": "year",
+      "YEARS_other": "years"
+    }
+  }
+}

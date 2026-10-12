@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { getMyProfile, getTeamMember, listRoles, listUserFields, updateTeamMember } from '../api/client';
 import { formatDateTime } from '../utils/timezone';
-import { PERMISSIONS, PERMISSION_LABELS } from '../utils/permissions';
+import { PERMISSIONS, permissionLabel } from '../utils/permissions';
 import { useAuth } from '../context/AuthContext';
 import DynamicFieldInput from '../components/DynamicFieldInput';
 import { findFieldErrors, focusField } from '../utils/formValidation';
+import { groupLabel, roleLabel, userFieldLabel } from '../i18n/dataLabels';
 
 const GROUP_ORDER = ['Basic Information', 'Preferences'];
 
@@ -21,6 +23,7 @@ function sortGroups(groups) {
 }
 
 export default function EditTeamMember() {
+  const { t } = useTranslation(['team', 'common', 'data']);
   const { memberId } = useParams();
   const navigate = useNavigate();
   const { partner } = useAuth();
@@ -75,7 +78,7 @@ export default function EditTeamMember() {
     const errs = findFieldErrors(validationDefs, values);
     if (errs.length > 0) {
       setFieldErrors(new Map(errs.map((e2) => [e2.fieldKey, e2.message])));
-      setError(`${errs.length === 1 ? 'A field needs' : `${errs.length} fields need`} your attention - see below.`);
+      setError(t('common:states.fieldNeedsAttention', { count: errs.length }));
       focusField(errs[0].fieldKey);
       return;
     }
@@ -113,13 +116,13 @@ export default function EditTeamMember() {
   };
 
   if (error && !values) return <div className="page page-wide"><div className="error-box">{error}</div></div>;
-  if (!values || !fieldDefs) return <div className="page page-wide">Loading...</div>;
+  if (!values || !fieldDefs) return <div className="page page-wide">{t('common:states.loading')}</div>;
 
   if (!permissions.includes(PERMISSIONS.MANAGE_TEAM)) {
     return (
       <div className="page page-wide">
-        <div className="error-box">You don't have permission to edit team members.</div>
-        <Link to="/team"><button className="secondary">Back to Team</button></Link>
+        <div className="error-box">{t('team:editMember.noPermission')}</div>
+        <Link to="/team"><button className="secondary">{t('team:editMember.backToTeam')}</button></Link>
       </div>
     );
   }
@@ -136,21 +139,21 @@ export default function EditTeamMember() {
 
   return (
     <div className="page page-wide">
-      <h1>Edit User</h1>
+      <h1>{t('team:editMember.title')}</h1>
       {error && <div className="error-box">{error}</div>}
 
       <form className="card" onSubmit={handleSubmit} noValidate>
         <div className="edit-form-sections">
           {sortGroups([...new Set(fieldDefs.map((d) => d.group))]).map((group) => (
             <div key={group}>
-              <h3 className="form-section-title"><span>{group}</span></h3>
+              <h3 className="form-section-title"><span>{groupLabel(group)}</span></h3>
               {fieldDefs.filter((d) => d.group === group).map((def) => {
                 const isPassword = def.fieldKey === 'password';
                 const renderDef = isPassword ? { ...def, isRequired: false } : def;
                 return (
                   <div className={`field ${fieldErrors.has(def.fieldKey) ? 'invalid' : ''}`} key={def.fieldKey} id={`field-${def.fieldKey}`}>
                     <label>
-                      {isPassword ? 'New Password (leave blank to keep unchanged)' : `${def.label}${def.isRequired ? ' *' : ''}`}
+                      {isPassword ? t('team:profile.newPassword') : `${userFieldLabel(def)}${def.isRequired ? ' *' : ''}`}
                     </label>
                     <DynamicFieldInput def={renderDef} value={values[def.fieldKey]} onChange={(val) => setValue(def.fieldKey, val)} />
                     {fieldErrors.has(def.fieldKey) && <span className="field-error">{fieldErrors.get(def.fieldKey)}</span>}
@@ -159,10 +162,10 @@ export default function EditTeamMember() {
               })}
               {group === 'Preferences' && (
                 <div className="field">
-                  <label>Status</label>
+                  <label>{t('common:fields.status')}</label>
                   <select value={status} onChange={(e) => setStatus(e.target.value)} disabled={isSelf}>
-                    <option value="ACTIVE">ACTIVE</option>
-                    <option value="INACTIVE">INACTIVE</option>
+                    <option value="ACTIVE">{t('common:status.ACTIVE')}</option>
+                    <option value="INACTIVE">{t('common:status.INACTIVE')}</option>
                   </select>
                 </div>
               )}
@@ -170,10 +173,10 @@ export default function EditTeamMember() {
           ))}
 
           <div>
-            <h3 className="form-section-title"><span>Role &amp; Permissions</span></h3>
-            {isSelf && <p className="hint">You can't change your own role or status.</p>}
+            <h3 className="form-section-title"><span>{t('team:members.rolePermissions')}</span></h3>
+            {isSelf && <p className="hint">{t('team:editMember.cantChangeOwn')}</p>}
             {!isSelf && !permissions.includes(PERMISSIONS.MANAGE_ROLES) && (
-              <p className="hint">Changing a member's role needs the Manage Roles permission.</p>
+              <p className="hint">{t('team:editMember.needsManageRoles')}</p>
             )}
             <div className="role-picker">
               {roles.map((r) => (
@@ -185,10 +188,10 @@ export default function EditTeamMember() {
                 >
                   <div className="role-name">
                     <input type="radio" checked={roleId === r.roleId} onChange={() => pickRole(r)} disabled={!canAssignRoles || !withinReach(r)} />
-                    {r.name}
+                    {roleLabel(r.name)}
                   </div>
                   <div className="role-perms">
-                    {r.permissions.length ? r.permissions.map((p) => PERMISSION_LABELS[p]).join(' · ') : 'No permissions'}
+                    {r.permissions.length ? r.permissions.map((p) => permissionLabel(p)).join(' · ') : t('team:permissions.none')}
                   </div>
                 </div>
               ))}
@@ -198,13 +201,13 @@ export default function EditTeamMember() {
 
         <div className="edit-form-footer">
           <div className="meta">
-            <span><strong>Username</strong>{member.username}</span>
-            <span><strong>Added By</strong>{member.createdBy || '-'}</span>
-            <span><strong>Added On</strong>{formatDateTime(member.createdAt, partner.timezone)}</span>
+            <span><strong>{t('common:fields.username')}</strong>{member.username}</span>
+            <span><strong>{t('team:editMember.addedBy')}</strong>{member.createdBy || '-'}</span>
+            <span><strong>{t('team:editMember.addedOn')}</strong>{formatDateTime(member.createdAt, partner.timezone)}</span>
           </div>
           <div className="actions">
-            <button className="secondary" type="button" onClick={() => navigate('/team')}>Cancel</button>
-            <button className="primary" type="submit" disabled={busy}>{busy ? 'Saving...' : 'Save'}</button>
+            <button className="secondary" type="button" onClick={() => navigate('/team')}>{t('common:actions.cancel')}</button>
+            <button className="primary" type="submit" disabled={busy}>{busy ? t('common:actions.saving') : t('common:actions.save')}</button>
           </div>
         </div>
       </form>

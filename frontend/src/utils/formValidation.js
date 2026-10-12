@@ -1,4 +1,13 @@
+import i18n from 'i18next';
 import { validateMobile } from './phone';
+import { fieldLabel, userFieldLabel } from '../i18n/dataLabels';
+
+// Lead and user field defs share this validator - whichever default-label
+// table recognises the label translates it; a custom label stays as typed.
+function displayLabel(def) {
+  const lead = fieldLabel(def);
+  return lead !== def.label ? lead : userFieldLabel(def);
+}
 
 // Shared by every DynamicFieldInput-driven form (RegisterLead, EditLead,
 // ManageTeam, EditTeamMember). Required fields are partner-configurable
@@ -17,7 +26,7 @@ export function findFieldErrors(fieldDefs, values) {
     const value = values[def.fieldKey];
     const empty = isEmpty(value);
     if (def.isRequired && empty) {
-      errors.push({ fieldKey: def.fieldKey, group: def.group, message: `${def.label} is required.` });
+      errors.push({ fieldKey: def.fieldKey, group: def.group, message: i18n.t('common:states.required', { field: displayLabel(def) }) });
       continue;
     }
     if (!empty && (def.fieldKey === 'mobile' || def.fieldKey === 'alternateMobile')) {

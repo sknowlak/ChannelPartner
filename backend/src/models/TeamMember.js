@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const { isSupportedLanguage } = require('../config/languages');
 
 // A user a channel partner (the account "owner") adds to their own team so
 // more than one person can work the same pool of leads. Team members log in
@@ -21,6 +22,9 @@ const teamMemberSchema = new mongoose.Schema(
     // do beyond viewing the shared lead pool, which is never gated.
     roleId: { type: String, required: true },
     timezone: { type: String, default: 'UTC' },
+    // Preferred UI language (sections 54-55) - '' = not chosen yet (device/browser
+    // decides). Any language in config/languages.json (the generated manifest).
+    language: { type: String, default: '', validate: { validator: (v) => v === '' || isSupportedLanguage(v), message: 'Unsupported language' } },
     createdBy: String,
 
     // Values for any partner-added custom user field (section 38) - keyed

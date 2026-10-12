@@ -1,0 +1,83 @@
+{
+  "title": "Manage Team",
+  "tabs": {
+    "members": "Team Members",
+    "roles": "Roles & Permissions",
+    "profile": "My Profile"
+  },
+  "roles": {
+    "owner": "Owner",
+    "member": "Team Member"
+  },
+  "profile": {
+    "updated": "Profile updated.",
+    "basicInfo": "Basic Information",
+    "organisationInfo": "Organisation Information",
+    "preferences": "Preferences",
+    "companyName": "Company / Organisation Name",
+    "city": "City",
+    "state": "State",
+    "currencyHelp": "Used to display budgets and booking values across your team.",
+    "useDeviceTimezone": "Use device timezone ({{timezone}})",
+    "securityRole": "Security & Role",
+    "newPassword": "New Password (leave blank to keep unchanged)",
+    "currentPassword": "Current Password",
+    "memberSince": "Member Since",
+    "languageSaved": "Language saved to your account - it will be used on every device you sign in to."
+  },
+  "members": {
+    "intro": "Add, edit, deactivate, or remove people on your team - they share access to the same leads.",
+    "noPermission": "You don't have permission to add, edit, or remove team members.",
+    "addNew": "+ Add New User",
+    "passwordLabel": "{{label}} (min 8 characters)",
+    "rolePermissions": "Role & Permissions",
+    "adding": "Adding...",
+    "addMember": "Add Team Member",
+    "tabAll": "All ({{count}})",
+    "tabActive": "Active ({{count}})",
+    "tabInactive": "Inactive ({{count}})",
+    "searchPlaceholder": "Search name or username...",
+    "allTimezones": "All timezones",
+    "perPage": "Entries per page",
+    "contact": "Contact",
+    "added": "Added",
+    "toggleActive": "Active - click to deactivate",
+    "toggleInactive": "Inactive - click to activate",
+    "empty": "No team members yet.",
+    "noMatch": "No team members match these filters.",
+    "showing": "Showing {{from}} - {{to}} of {{total}} entries",
+    "firstPage": "First page",
+    "previousPage": "Previous page",
+    "nextPage": "Next page",
+    "lastPage": "Last page"
+  },
+  "editMember": {
+    "title": "Edit User",
+    "noPermission": "You don't have permission to edit team members.",
+    "backToTeam": "Back to Team",
+    "cantChangeOwn": "You can't change your own role or status.",
+    "needsManageRoles": "Changing a member's role needs the Manage Roles permission.",
+    "addedBy": "Added By",
+    "addedOn": "Added On"
+  },
+  "rolesPage": {
+    "intro": "Super Admin, Admin, and Manager are built-in and cannot be changed - create a custom role for anything else.",
+    "noPermission": "You don't have permission to manage roles.",
+    "createCustom": "+ Create Custom Role",
+    "roleName": "Role Name",
+    "permissions": "Permissions",
+    "members": "Members",
+    "creating": "Creating...",
+    "createRole": "Create Role",
+    "systemRole": "System role",
+    "builtIn": "Built-in",
+    "empty": "No roles yet."
+  },
+  "permissions": {
+    "MANAGE_LEADS": "Manage Leads (create, progress, book)",
+    "MANAGE_TEAM": "Manage Team (add, edit, remove members)",
+    "MANAGE_ROLES": "Manage Roles & Permissions",
+    "MANAGE_SETTINGS": "Manage Settings (lead form fields)",
+    "none": "No permissions"
+  }
+}

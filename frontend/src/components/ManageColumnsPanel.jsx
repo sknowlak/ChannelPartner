@@ -1,10 +1,12 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 // Dropdown panel for showing/hiding and drag-reordering grid columns
 // (section 40). `columns` is the full manageable set as {key, label} in
 // their CURRENT order; `hidden` is the set of currently-hidden keys.
 // Changes apply live (no separate "Apply" step) - onChange(newOrder, newHidden).
 export default function ManageColumnsPanel({ columns, hidden, onChange, onClose, onReset }) {
+  const { t } = useTranslation(['leads', 'common']);
   const [dragIndex, setDragIndex] = useState(null);
 
   const toggleHidden = (key) => {
@@ -26,10 +28,10 @@ export default function ManageColumnsPanel({ columns, hidden, onChange, onClose,
   return (
     <div className="column-panel card">
       <div className="column-panel-header">
-        <strong>Manage Columns</strong>
-        <button className="link" onClick={onClose}>Close</button>
+        <strong>{t('leads:columnsPanel.title')}</strong>
+        <button className="link" onClick={onClose}>{t('common:actions.close')}</button>
       </div>
-      <p className="hint" style={{ margin: '0 0 0.6rem' }}>Drag to reorder · check to show</p>
+      <p className="hint" style={{ margin: '0 0 0.6rem' }}>{t('leads:columnsPanel.hint')}</p>
       <div className="column-panel-list">
         {columns.map((col, i) => (
           <div
@@ -49,8 +51,8 @@ export default function ManageColumnsPanel({ columns, hidden, onChange, onClose,
         ))}
       </div>
       <div className="column-panel-footer">
-        <button className="secondary" onClick={showAll}>Show All</button>
-        <button className="secondary" onClick={onReset}>Reset to Default</button>
+        <button className="secondary" onClick={showAll}>{t('leads:columnsPanel.showAll')}</button>
+        <button className="secondary" onClick={onReset}>{t('leads:columnsPanel.resetDefault')}</button>
       </div>
     </div>
   );

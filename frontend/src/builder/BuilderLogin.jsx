@@ -1,13 +1,25 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import LanguageSelect from '../components/LanguageSelect';
+import { rememberLanguage } from '../i18n/language';
+import { isSupportedLocale } from '../i18n/locales';
 import { builderLogin, setBuilderSession } from './builderClient';
 
 export default function BuilderLogin() {
+  const { t, i18n } = useTranslation(['builder', 'common']);
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
   const [busy, setBusy] = useState(false);
+
+  // Before sign-in the choice is remembered on this device only.
+  const pickLanguage = (code) => {
+    if (!isSupportedLocale(code)) return;
+    i18n.changeLanguage(code);
+    rememberLanguage(code);
+  };
 
   const submit = async (e) => {
     e.preventDefault();
@@ -15,6 +27,12 @@ export default function BuilderLogin() {
     setError(null);
     try {
       const { data } = await builderLogin(email, password);
+      // The account's saved language (if any) takes precedence over the device choice.
+      const accountLanguage = data.user?.language;
+      if (isSupportedLocale(accountLanguage)) {
+        rememberLanguage(accountLanguage);
+        if (accountLanguage !== i18n.language) i18n.changeLanguage(accountLanguage);
+      }
       setBuilderSession(data.token, data.user);
       navigate('/builder/referrals');
     } catch (err) {
@@ -27,18 +45,21 @@ export default function BuilderLogin() {
   return (
     <div className="page">
       <form className="card" onSubmit={submit} style={{ maxWidth: 420 }}>
-        <h3 style={{ marginTop: 0 }}>Builder sign in</h3>
-        <p className="hint">Builder accounts are created by Leadrat. Ask your administrator if you don't have one.</p>
+        <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '0.5rem' }}>
+          <LanguageSelect id="builder-login-language" value={i18n.language} onChange={pickLanguage} />
+        </div>
+        <h3 style={{ marginTop: 0 }}>{t('builder:login.title')}</h3>
+        <p className="hint">{t('builder:login.hint')}</p>
         {error && <div className="error-box">{error}</div>}
         <div className="field">
-          <label>Email</label>
-          <input type="email" autoComplete="username" value={email} onChange={(e) => setEmail(e.target.value)} required />
+          <label htmlFor="builder-login-email">{t('common:fields.email')}</label>
+          <input id="builder-login-email" type="email" autoComplete="username" value={email} onChange={(e) => setEmail(e.target.value)} required />
         </div>
         <div className="field">
-          <label>Password</label>
-          <input type="password" autoComplete="current-password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+          <label htmlFor="builder-login-password">{t('common:fields.password')}</label>
+          <input id="builder-login-password" type="password" autoComplete="current-password" value={password} onChange={(e) => setPassword(e.target.value)} required />
         </div>
-        <button className="primary" type="submit" disabled={busy} style={{ width: '100%' }}>{busy ? 'Signing in...' : 'Sign In'}</button>
+        <button className="primary" type="submit" disabled={busy} style={{ width: '100%' }}>{busy ? t('common:actions.signingIn') : t('common:actions.signIn')}</button>
       </form>
     </div>
   );

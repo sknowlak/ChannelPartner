@@ -1,0 +1,188 @@
+{
+  "list": {
+    "title": "My Leads",
+    "signedInAs": "Signed in as {{name}} ({{partnerId}}) · times shown in {{timezone}}",
+    "addLead": "+ Add Lead",
+    "tabs": {
+      "all": "All ({{count}})",
+      "pending": "Pending ({{count}})",
+      "booked": "Booked ({{count}})"
+    },
+    "searchPlaceholder": "Search by name, mobile, or registration ID...",
+    "manageColumns": "Manage Columns",
+    "rowsPerPage": "Rows per page",
+    "registrationId": "Registration ID",
+    "emptyState": "No leads yet - register your first one.",
+    "noMatch": "No leads match these filters.",
+    "showing": "Showing {{from}} - {{to}} of {{total}} entries",
+    "actions": {
+      "preview": "Preview & quick update",
+      "history": "History",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "call": "Call"
+    },
+    "pagination": {
+      "first": "First page",
+      "previous": "Previous page",
+      "next": "Next page",
+      "last": "Last page"
+    }
+  },
+  "columns": {
+    "status": "Status",
+    "assignTo": "Assign To",
+    "booked": "Booked",
+    "protectionUntil": "Protection Until"
+  },
+  "booking": {
+    "booked": "Booked",
+    "pending": "Pending"
+  },
+  "assign": {
+    "unassigned": "Unassigned",
+    "owner": "{{name}} (Owner)",
+    "inactive": "{{name}} (inactive)",
+    "unknownUser": "Unknown user",
+    "assignedTo": "Assigned to {{name}}"
+  },
+  "form": {
+    "addTitle": "Add Lead",
+    "editTitle": "Edit Lead",
+    "noPermissionAdd": "You don't have permission to register leads.",
+    "noPermissionEdit": "You don't have permission to edit leads.",
+    "selectPlaceholder": "Select...",
+    "commaSeparated": "Comma separated",
+    "phonePlaceholder": "Phone number",
+    "countryCode": "Country code"
+  },
+  "project": {
+    "none": "No project yet (not referred)",
+    "notInList": "{{project}} (not in the project list)"
+  },
+  "journey": {
+    "customer": "Customer",
+    "currentOwner": "Current Owner",
+    "protectionExpiry": "Protection Expiry",
+    "leadStatus": "Lead Status",
+    "scheduled": "Scheduled",
+    "assignedTo": "Assigned To",
+    "referral": "Referral",
+    "builderReason": "Builder's reason: {{reason}}",
+    "bookedHint": "Booked by the builder - operational ownership has moved to the builder; your attribution and commission eligibility are kept.",
+    "notBookedHint": "Bookings are confirmed by the builder once they accept the referral.",
+    "quickUpdate": "Quick Update",
+    "leadDetails": "Lead Details",
+    "progressHistory": "Progress History",
+    "timesIn": "(times in {{timezone}})",
+    "backToMyLeads": "Back to My Leads",
+    "editLead": "Edit Lead"
+  },
+  "referral": {
+    "NOT_REFERRED": "Not referred (no project)",
+    "PENDING_BUILDER": "Waiting for builder",
+    "ACCEPTED": "Accepted by builder",
+    "REJECTED": "Rejected by builder"
+  },
+  "preview": {
+    "ariaLabel": "Lead preview",
+    "title": "Lead Preview",
+    "source": "Source",
+    "location": "Location",
+    "scheduled": "Scheduled",
+    "registered": "Registered",
+    "latestNote": "Latest Note",
+    "quickUpdate": "Quick Update",
+    "fullDetails": "Full Details",
+    "editLead": "Edit Lead",
+    "history": "History"
+  },
+  "quick": {
+    "assignedTo": "Assigned To",
+    "status": "Status",
+    "subStatus": "Sub-Status",
+    "selectSubStatus": "Select sub-status...",
+    "none": "None",
+    "scheduledAt": "Scheduled at",
+    "localTime": "local time",
+    "note": "Note",
+    "notePlaceholder": "What happened on this call / visit? (optional)",
+    "updateStatus": "Update Status",
+    "statusUpdated": "Status updated",
+    "bookedLocked": "This lead is booked - its status can no longer be changed.",
+    "viewOnly": "You can view this lead, but your role can't update it."
+  },
+  "history": {
+    "title": "History - {{registrationId}}",
+    "tabs": {
+      "all": "All",
+      "status": "Status",
+      "assignment": "Assignment",
+      "notes": "Notes"
+    },
+    "doneBy": "Done by {{actor}}",
+    "system": "System",
+    "platforms": {
+      "System": "System",
+      "External": "External",
+      "Web": "Web",
+      "Mobile": "Mobile"
+    },
+    "added": "added",
+    "updated": "updated",
+    "empty": "(empty)",
+    "noHistory": "No history in this category yet.",
+    "fieldLabels": {
+      "stage": "Status",
+      "subStatus": "Sub-Status",
+      "scheduledAt": "Schedule",
+      "notes": "Notes",
+      "assignedTo": "Assigned To"
+    },
+    "statusWithSub": "{{status}} ({{subStatus}})",
+    "events": {
+      "REGISTRATION_RECEIVED": "Partner registration received",
+      "DUPLICATE_CHECK_COMPLETED": "Duplicate check completed - no active duplicate found",
+      "REGISTRATION_ACCEPTED": "Registration accepted",
+      "PROTECTION_GRANTED_one": "{{count}}-day protection granted",
+      "PROTECTION_GRANTED_other": "{{count}}-day protection granted",
+      "REGISTRATION_ATTEMPT_REJECTED": "Duplicate registration attempt by {{partnerId}} rejected",
+      "LEAD_DETAILS_UPDATED_one": "Updated {{count}} field",
+      "LEAD_DETAILS_UPDATED_other": "Updated {{count}} fields",
+      "STAGE_UPDATED": "Status updated to {{status}}",
+      "LEAD_ASSIGNED": "Assigned to {{name}}",
+      "LEAD_UNASSIGNED": "Unassigned",
+      "BOOKING_COMPLETED": "Booking completed",
+      "OPERATIONAL_OWNERSHIP_TRANSFERRED": "Operational ownership transferred to Builder",
+      "PARTNER_ATTRIBUTION_PRESERVED": "Partner attribution preserved",
+      "COMMISSION_ELIGIBILITY_CREATED": "Commission eligibility created",
+      "HANDOVER_COMPLETED": "Handover completed",
+      "REFERRAL_ACCEPTED": "Builder accepted the referral",
+      "REFERRAL_REJECTED": "Builder rejected the referral. Reason: {{reason}}",
+      "ADMIN_PROTECTION_RELEASED": "Admin released duplicate protection early. Reason: {{reason}}",
+      "ADMIN_PARTNER_REASSIGNED": "Admin reassigned registration from {{from}} to {{to}}. Reason: {{reason}}"
+    }
+  },
+  "columnsPanel": {
+    "title": "Manage Columns",
+    "hint": "Drag to reorder · check to show",
+    "showAll": "Show All",
+    "resetDefault": "Reset to Default"
+  },
+  "filters": {
+    "title": "Filters",
+    "allProjects": "All projects",
+    "any": "Any",
+    "noFields": "No other filterable fields are enabled yet (Settings > Lead).",
+    "clearAll": "Clear All"
+  },
+  "phone": {
+    "MISSING": "Phone number is required.",
+    "INVALID": "Please enter a valid phone number.",
+    "TOO_SHORT": "Phone number is too short.",
+    "TOO_LONG": "Phone number is too long.",
+    "INVALID_FOR_COUNTRY": "This phone number is not valid for {{country}}.",
+    "COUNTRY_MISMATCH": "Please select the correct country code.",
+    "NOT_MOBILE": "Please enter a mobile number, not a landline."
+  }
+}

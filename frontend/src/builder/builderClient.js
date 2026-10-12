@@ -15,9 +15,19 @@ export function getBuilderSession() {
     return null;
   }
 }
+// builderUser holds display fields only (incl. the UI language) - never credentials.
 export function setBuilderSession(token, user) {
   localStorage.setItem('builderToken', token);
-  localStorage.setItem('builderUser', JSON.stringify({ name: user.name, email: user.email, builderId: user.builderId }));
+  localStorage.setItem('builderUser', JSON.stringify({ name: user.name, email: user.email, builderId: user.builderId, language: user.language || '' }));
+}
+export function updateBuilderSessionUser(patch) {
+  const user = getBuilderSession();
+  if (!user) return;
+  try {
+    localStorage.setItem('builderUser', JSON.stringify({ ...user, ...patch }));
+  } catch {
+    /* storage unavailable - nothing to update */
+  }
 }
 export function clearBuilderSession() {
   localStorage.removeItem('builderToken');
@@ -42,6 +52,7 @@ client.interceptors.response.use(
 
 export const builderLogin = (email, password) => client.post('/auth/login', { email, password });
 export const getBuilderMe = () => client.get('/me');
+export const updateBuilderMe = (body) => client.patch('/me', body);
 export const listBuilderProjects = () => client.get('/projects');
 export const listReferrals = (params) => client.get('/referrals', { params });
 export const getReferral = (id) => client.get(`/referrals/${id}`);
