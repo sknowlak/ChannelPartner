@@ -116,7 +116,12 @@ const partnerSchema = new mongoose.Schema(
     // Integrations module (section 43) via X-Api-Key instead of a login
     // session - regenerable, so a leaked key can be rotated without
     // touching the partner's password.
-    apiKey: { type: String, unique: true, sparse: true }
+    // Legacy plaintext key - migrated to apiKeyHash at startup, then removed.
+    apiKey: { type: String, unique: true, sparse: true },
+    // Integration API key (sections 43, 52): only its hash is stored.
+    apiKeyHash: { type: String, unique: true, sparse: true },
+    apiKeyPrefix: String,
+    apiKeyCreatedAt: Date
   },
   { timestamps: true }
 );

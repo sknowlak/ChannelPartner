@@ -1,7 +1,7 @@
 const IntegrationWebhook = require('../models/IntegrationWebhook');
 const WebhookDelivery = require('../models/WebhookDelivery');
 const Registration = require('../models/Registration');
-const Customer = require('../models/Customer');
+const { contactView } = require('../utils/contact');
 const Partner = require('../models/Partner');
 const { nextId } = require('../utils/idGenerator');
 const { outboundUrlProblem } = require('../utils/outboundUrl');
@@ -26,8 +26,11 @@ const resyncsInProgress = new Set();
 // it nested; FORM flattens it like everything else, see flattenForForm).
 // `partner` is the channel partner who owns the lead - a receiving CRM
 // usually wants to know which partner sent it (ChannelPartnerName etc.).
-function buildLeadPayload(registration, customer, eventType, partner) {
+// `customer` is the lead's OWN contact copy (section 52), never the shared
+// Customer record another partner may have filled in.
+function buildLeadPayload(registration, _legacyCustomerArg, eventType, partner) {
   const reg = registration.toObject ? registration.toObject() : registration;
+  const customer = contactView(reg);
   return {
     event: eventType,
     timestamp: new Date().toISOString(),
@@ -46,14 +49,14 @@ function buildLeadPayload(registration, customer, eventType, partner) {
     leadSource: reg.leadSource || '',
     notes: reg.notes || '',
     customFields: reg.customFields || {},
-    customer: customer ? {
+    customer: {
       name: customer.name,
       mobile: customer.mobile,
-      countryCode: customer.mobileDialCode || '',
-      nationalNumber: customer.mobileNationalNumber || '',
+      countryCode: customer.mobileDialCode,
+      nationalNumber: customer.mobileNationalNumber,
       email: customer.email,
       alternateMobile: customer.alternateMobile
-    } : null,
+    },
     partner: partner ? { name: partner.name, mobile: partner.mobile, email: partner.email, companyName: partner.companyName || '' } : null
   };
 }
@@ -317,11 +320,11 @@ async function sendWebhook(webhook, basePayload, eventType, registrationId, part
 // Fire-and-forget from the caller's point of view (myLeadsController never
 // awaits this) - a slow or dead external target must never slow down or
 // fail the partner's own API response.
-async function triggerWebhooks(partnerId, eventType, registration, customer) {
+async function triggerWebhooks(partnerId, eventType, registration) {
   const webhooks = await IntegrationWebhook.find({ partnerId, isEnabled: true, events: eventType });
   if (webhooks.length === 0) return;
   const partner = await Partner.findOne({ partnerId });
-  const payload = buildLeadPayload(registration, customer, eventType, partner);
+  const payload = buildLeadPayload(registration, null, eventType, partner);
   await Promise.all(webhooks.map((wh) =>
     sendWebhook(wh, payload, eventType, registration.registrationId, partnerId).catch(() => {})
   ));
@@ -404,15 +407,13 @@ async function resyncRange(partnerId, webhookId, fromDate, toDate) {
   try {
     const matching = await Registration.countDocuments(query);
     const registrations = await Registration.find(query).sort({ registeredAt: 1 }).limit(RESYNC_MAX_LEADS);
-    const customers = await Customer.find({ customerId: { $in: registrations.map((r) => r.customerId) } });
-    const customerById = new Map(customers.map((c) => [c.customerId, c]));
     const partner = await Partner.findOne({ partnerId });
 
     const queue = [...registrations];
     const worker = async () => {
       while (queue.length) {
         const reg = queue.shift();
-        const payload = buildLeadPayload(reg, customerById.get(reg.customerId), 'SYNC', partner);
+        const payload = buildLeadPayload(reg, null, 'SYNC', partner);
         await sendWebhook(webhook, payload, 'SYNC', reg.registrationId, partnerId).catch(() => {});
       }
     };
@@ -433,8 +434,8 @@ async function sendTestPush(partnerId, webhookId, registrationId) {
     ? await Registration.findOne({ partnerId, registrationId: String(registrationId) })
     : await Registration.findOne({ partnerId }).sort({ registeredAt: -1 });
   if (!reg) return { error: 'No lead to test with - register a lead first' };
-  const [customer, partner] = await Promise.all([Customer.findOne({ customerId: reg.customerId }), Partner.findOne({ partnerId })]);
-  const payload = buildLeadPayload(reg, customer, 'TEST', partner);
+  const partner = await Partner.findOne({ partnerId });
+  const payload = buildLeadPayload(reg, null, 'TEST', partner);
   const result = await sendWebhook(webhook, payload, 'TEST', reg.registrationId, partnerId);
   const link = await IntegrationLink.findOne({ connectorId: webhookId, registrationId: reg.registrationId });
   return { ...result, registrationId: reg.registrationId, externalId: link?.externalId || '' };

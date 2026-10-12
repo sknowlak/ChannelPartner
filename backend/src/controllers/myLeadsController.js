@@ -1,4 +1,3 @@
-const Customer = require('../models/Customer');
 const Registration = require('../models/Registration');
 const ProgressEvent = require('../models/ProgressEvent');
 const Booking = require('../models/Booking');
@@ -6,9 +5,10 @@ const CommissionEligibility = require('../models/CommissionEligibility');
 const { nextId } = require('../utils/idGenerator');
 const { findDuplicate, findOrCreateCustomer, claimProtection } = require('../services/duplicateService');
 const { createInitialOwnership, getOwnership } = require('../services/ownershipService');
-const { completeBooking } = require('../services/bookingService');
 const { leadEditProblem } = require('../services/leadEditGuards');
 const { fieldValueProblem } = require('../utils/fieldValues');
+const { contactView, CONTACT_FIELDS } = require('../utils/contact');
+const { resolveProject, referralStatusFor, listOpenProjects } = require('../services/projectService');
 const { logEvent, getTimeline } = require('../services/auditService');
 const { withIdempotency } = require('../services/idempotencyService');
 const { getSettings } = require('../services/settingsService');
@@ -41,10 +41,11 @@ function planNotifications(req, registration) {
 // closes the "one partner must never see another partner's registrations"
 // safeguard (spec section 21) for the self-service portal.
 
+// Another partner's registration answers exactly like a missing one (404),
+// so registration IDs can't be probed to learn what exists elsewhere.
 async function assertOwnedRegistration(registrationId, partnerId) {
-  const registration = await Registration.findOne({ registrationId: String(registrationId) });
+  const registration = await Registration.findOne({ registrationId: String(registrationId), partnerId });
   if (!registration) return { error: { status: 404, reason: 'Registration not found' } };
-  if (registration.partnerId !== partnerId) return { error: { status: 403, reason: 'This registration does not belong to your account' } };
   return { registration };
 }
 
@@ -57,18 +58,16 @@ async function assertOwnedRegistration(registrationId, partnerId) {
 async function listMyRegistrations(req, res, next) {
   try {
     const registrations = await Registration.find({ partnerId: req.partnerId }).sort({ registeredAt: -1 });
-    const customers = await Customer.find({ customerId: { $in: registrations.map((r) => r.customerId) } });
-    const customerById = new Map(customers.map((c) => [c.customerId, c]));
     const users = await loadAssignableUsers(req.partnerId);
     const userNameById = new Map(users.map((u) => [u.userId, u.name]));
 
     const enriched = registrations.map((r) => {
-      const customer = customerById.get(r.customerId);
+      const customer = contactView(r);
       return {
         ...r.toObject(),
-        customerName: customer?.name || '',
-        customerMobile: customer?.mobile || '',
-        customer: customer ? customer.toObject() : null,
+        customerName: customer.name,
+        customerMobile: customer.mobile,
+        customer,
         assignedToName: r.assignedTo ? userNameById.get(r.assignedTo) || '' : ''
       };
     });
@@ -139,6 +138,10 @@ async function createMyRegistration(req, res, next) {
       if (valueProblem) return res.status(400).json({ status: 'ERROR', reason: valueProblem, fieldKey: def.fieldKey });
     }
 
+    // The project decides which builder the lead is referred to (section 52).
+    const { error: projectError } = await resolveProject(projectId);
+    if (projectError) return res.status(400).json({ status: 'ERROR', reason: projectError, fieldKey: 'projectId' });
+
     const customFieldValues = {};
     for (const def of fieldDefs) {
       if (def.scope === 'custom' && def.isEnabled && req.body[def.fieldKey] !== undefined && req.body[def.fieldKey] !== '') {
@@ -169,7 +172,8 @@ async function createMyRegistration(req, res, next) {
         return {
           status: 'REJECTED',
           reasonCode: 'DUPLICATE_PROTECTED',
-          reason: 'Customer is already registered by another partner.',
+          // Deliberately no partner name or contact details (section 52).
+          reason: 'This customer is already protected for this project.',
           protectedUntil
         };
       };
@@ -177,16 +181,9 @@ async function createMyRegistration(req, res, next) {
       const duplicate = await findDuplicate({ mobile: customer.mobile, email: customer.email, alternateMobile: customer.alternateMobile, projectId });
       if (duplicate) return rejectDuplicate(duplicate.registrationId, duplicate.protectionExpiry);
 
-      const customerDoc = await findOrCreateCustomer({
-        name: customer.name,
-        mobile: customer.mobile,
-        email: customer.email,
-        alternateMobile: customer.alternateMobile
-      });
-      if (customer.alternateMobile && !customerDoc.alternateMobile) {
-        customerDoc.alternateMobile = customer.alternateMobile;
-        await customerDoc.save();
-      }
+      // Identity record only (one per phone number, the protection claim key).
+      // The contact details this partner entered stay on the registration.
+      const customerDoc = await findOrCreateCustomer({ name: customer.name, mobile: customer.mobile });
 
       const { duplicateProtectionDays } = await getSettings();
       const registrationId = await nextId('REG');
@@ -209,6 +206,8 @@ async function createMyRegistration(req, res, next) {
         customerId: customerDoc.customerId,
         partnerId,
         projectId,
+        referralStatus: referralStatusFor(projectId),
+        contact: Object.fromEntries(CONTACT_FIELDS.map((k) => [k, customer[k] ? String(customer[k]) : ''])),
         status: 'ACCEPTED',
         currentStage: initialStage,
         registeredAt,
@@ -251,7 +250,7 @@ async function createMyRegistration(req, res, next) {
 
       // Fire-and-forget (section 43) - an external target being slow or
       // down must never delay or fail this response.
-      triggerWebhooks(partnerId, 'LEAD_CREATED', registrationDoc, customerDoc).catch(() => {});
+      triggerWebhooks(partnerId, 'LEAD_CREATED', registrationDoc).catch(() => {});
       planNotifications(req, registrationDoc);
 
       return {
@@ -276,8 +275,8 @@ async function getMyRegistration(req, res, next) {
     const { registration, error } = await assertOwnedRegistration(req.params.registrationId, req.partnerId);
     if (error) return res.status(error.status).json({ reason: error.reason });
 
-    const [customer, ownership, booking, commission] = await Promise.all([
-      Customer.findOne({ customerId: registration.customerId }),
+    const customer = contactView(registration);
+    const [ownership, booking, commission] = await Promise.all([
       getOwnership(registration.registrationId),
       Booking.findOne({ registrationId: registration.registrationId }),
       CommissionEligibility.findOne({ registrationId: registration.registrationId })
@@ -298,15 +297,36 @@ async function getMyRegistration(req, res, next) {
 // PATCH /api/channel-partner/my/registrations/:registrationId  (requires MANAGE_LEADS)
 // Edit Lead (section 39) - updates whichever fields this partner has
 // configured on their lead form (section 36), split by scope the same way
-// createMyRegistration reads them: 'customer' fields land on the Customer
-// document, 'registration' fields are real Registration schema columns,
+// createMyRegistration reads them: 'customer' fields land on the lead's own
+// contact copy (never the shared Customer record, section 52), 'registration' fields are real Registration schema columns,
 // 'custom' fields merge into Registration.customFields. name/mobile/notes
 // stay whatever they already were if omitted from the payload (partial
 // update, same semantics as updateTeamMember).
-function getCurrentFieldValue(def, registration, customer) {
-  if (def.scope === 'customer') return customer ? customer[def.fieldKey] : undefined;
+function getCurrentFieldValue(def, registration) {
+  if (def.scope === 'customer') return registration.contact ? registration.contact[def.fieldKey] : undefined;
   if (def.scope === 'registration') return registration[def.fieldKey];
   return registration.customFields ? registration.customFields[def.fieldKey] : undefined;
+}
+
+function applyFieldValue(registration, def, value, normalized) {
+  if (def.scope === 'customer') {
+    registration.contact = { ...(registration.contact?.toObject ? registration.contact.toObject() : registration.contact), [def.fieldKey]: value ?? '' };
+  } else if (def.scope === 'registration') {
+    registration[def.fieldKey] = normalized;
+  } else {
+    registration.customFields = { ...registration.customFields, [def.fieldKey]: value };
+  }
+}
+
+// A new primary number re-links the lead to that number's identity record;
+// a new project is a new referral, so the builder's earlier decision no
+// longer applies (section 52).
+function applyReferralChange(registration, pending, guard) {
+  if (guard.customerId) registration.customerId = guard.customerId;
+  if (pending.projectId !== undefined) {
+    registration.referralStatus = referralStatusFor(String(pending.projectId || ''));
+    registration.referralDecision = undefined;
+  }
 }
 
 function valuesEqual(a, b) {
@@ -323,7 +343,6 @@ async function updateMyRegistration(req, res, next) {
     if (error) return res.status(error.status).json({ reason: error.reason });
 
     const fieldDefs = await listFieldDefinitions(req.partnerId);
-    const customer = await Customer.findOne({ customerId: registration.customerId });
 
     // A field required today might not have been when this lead was first
     // registered (or the partner just turned "required" on in Settings) -
@@ -333,7 +352,7 @@ async function updateMyRegistration(req, res, next) {
       if (!def.isEnabled || !def.isRequired) continue;
       if (req.integrationImport && !def.isCore) continue; // see createMyRegistration
       const incoming = req.body[def.fieldKey];
-      const resolved = incoming !== undefined ? incoming : getCurrentFieldValue(def, registration, customer);
+      const resolved = incoming !== undefined ? incoming : getCurrentFieldValue(def, registration);
       if (resolved === undefined || resolved === null || resolved === '') {
         return res.status(400).json({ status: 'ERROR', reason: `${def.label} is required`, fieldKey: def.fieldKey });
       }
@@ -362,29 +381,20 @@ async function updateMyRegistration(req, res, next) {
     for (const def of editableDefs) {
       const value = req.body[def.fieldKey];
       const normalized = (def.dataType === 'NUMBER' || def.dataType === 'CURRENCY') && value !== '' ? Number(value) : value;
-      const previous = getCurrentFieldValue(def, registration, customer);
+      const previous = getCurrentFieldValue(def, registration);
       if (valuesEqual(previous, normalized)) continue;
       changes.push({ fieldKey: def.fieldKey, label: def.label, from: previous, to: normalized });
       pending[def.fieldKey] = normalized;
     }
 
     const defsByKey = Object.fromEntries(fieldDefs.map((d) => [d.fieldKey, d]));
-    const editProblem = await leadEditProblem({ registration, customer, pending, defsByKey });
-    if (editProblem) return res.status(editProblem.statusCode).json({ status: 'ERROR', reason: editProblem.reason, fieldKey: editProblem.fieldKey });
+    const guard = await leadEditProblem({ registration, pending, defsByKey });
+    if (guard.problem) return res.status(guard.problem.statusCode).json({ status: 'ERROR', reason: guard.problem.reason, fieldKey: guard.problem.fieldKey });
 
     for (const [fieldKey, normalized] of Object.entries(pending)) {
-      const def = defsByKey[fieldKey];
-      const value = req.body[fieldKey];
-      if (def.scope === 'customer') {
-        if (customer) customer[def.fieldKey] = value;
-      } else if (def.scope === 'registration') {
-        registration[def.fieldKey] = normalized;
-      } else {
-        registration.customFields = { ...registration.customFields, [def.fieldKey]: value };
-      }
+      applyFieldValue(registration, defsByKey[fieldKey], req.body[fieldKey], normalized);
     }
-
-    if (customer) await customer.save();
+    applyReferralChange(registration, pending, guard);
     await registration.save();
 
     if (changes.length > 0) {
@@ -395,10 +405,10 @@ async function updateMyRegistration(req, res, next) {
         newValue: { changes },
         description: `Updated ${changes.length} field${changes.length === 1 ? '' : 's'}`
       });
-      triggerWebhooks(req.partnerId, 'LEAD_UPDATED', registration, customer).catch(() => {});
+      triggerWebhooks(req.partnerId, 'LEAD_UPDATED', registration).catch(() => {});
     }
 
-    return res.json({ registration, customer });
+    return res.json({ registration, customer: contactView(registration) });
   } catch (err) {
     next(err);
   }
@@ -434,7 +444,7 @@ async function updateMyProgress(req, res, next) {
     if (resolved.error) return res.status(400).json({ reason: resolved.error, fieldKey: resolved.status ? 'subStatus' : 'stage' });
     if (stageChanged && (!resolved.status.isActive || resolved.status.isBooking)) {
       return res.status(400).json({
-        reason: resolved.status.isBooking ? 'Use Complete Booking to book a lead' : `"${stage}" is inactive`,
+        reason: resolved.status.isBooking ? 'Bookings are confirmed by the builder' : `"${stage}" is inactive`,
         fieldKey: 'stage'
       });
     }
@@ -455,7 +465,6 @@ async function updateMyProgress(req, res, next) {
     }
 
     const fieldDefs = await listFieldDefinitions(req.partnerId);
-    const customer = await Customer.findOne({ customerId: registration.customerId });
     const incoming = req.body.fields && typeof req.body.fields === 'object' ? req.body.fields : {};
     const formDefs = resolved.fields
       .map((f) => ({ ...f, def: fieldDefs.find((d) => d.fieldKey === f.fieldKey && d.isEnabled) }))
@@ -464,7 +473,7 @@ async function updateMyProgress(req, res, next) {
     // The Notes field is filled from the update's own note box.
     const notes = req.body.notes !== undefined ? String(req.body.notes || '').trim() : '';
     for (const f of formDefs) {
-      let value = incoming[f.fieldKey] !== undefined ? incoming[f.fieldKey] : getCurrentFieldValue(f.def, registration, customer);
+      let value = incoming[f.fieldKey] !== undefined ? incoming[f.fieldKey] : getCurrentFieldValue(f.def, registration);
       if (f.fieldKey === 'notes' && notes) value = notes;
       const empty = value === undefined || value === null || value === '' || (Array.isArray(value) && value.length === 0);
       if (f.isRequired && empty) {
@@ -505,27 +514,22 @@ async function updateMyProgress(req, res, next) {
       const { def } = f;
       const value = incoming[f.fieldKey];
       const normalized = (def.dataType === 'NUMBER' || def.dataType === 'CURRENCY') && value !== '' ? Number(value) : value;
-      if (!valuesEqual(getCurrentFieldValue(def, registration, customer), normalized)) pending[def.fieldKey] = normalized;
+      if (!valuesEqual(getCurrentFieldValue(def, registration), normalized)) pending[def.fieldKey] = normalized;
     }
     const defsByKey = Object.fromEntries(formDefs.map((f) => [f.fieldKey, f.def]));
-    const editProblem = await leadEditProblem({ registration, customer, pending, defsByKey });
-    if (editProblem) return res.status(editProblem.statusCode).json({ reason: editProblem.reason, fieldKey: editProblem.fieldKey });
+    const guard = await leadEditProblem({ registration, pending, defsByKey });
+    if (guard.problem) return res.status(guard.problem.statusCode).json({ reason: guard.problem.reason, fieldKey: guard.problem.fieldKey });
 
     for (const f of formDefs) {
       if (pending[f.fieldKey] === undefined) continue;
       const { def } = f;
       const value = incoming[f.fieldKey];
       const normalized = pending[f.fieldKey];
-      const previous = getCurrentFieldValue(def, registration, customer);
+      const previous = getCurrentFieldValue(def, registration);
       changes.push({ fieldKey: def.fieldKey, label: def.label, from: previous, to: normalized });
-      if (def.scope === 'customer') {
-        if (customer) customer[def.fieldKey] = value;
-      } else if (def.scope === 'registration') {
-        registration[def.fieldKey] = normalized;
-      } else {
-        registration.customFields = { ...registration.customFields, [def.fieldKey]: value };
-      }
+      applyFieldValue(registration, def, value, normalized);
     }
+    applyReferralChange(registration, pending, guard);
 
     if (changes.length === 0) {
       return res.json({ registrationId, currentStage: registration.currentStage, subStatus: registration.subStatus || '', notes: registration.notes || '', scheduledAt: registration.scheduledAt || null });
@@ -537,7 +541,6 @@ async function updateMyProgress(req, res, next) {
     registration.subStatus = subStatus;
     registration.scheduledAt = scheduledAt;
     if (notes) registration.notes = notes;
-    if (customer && changes.some((c) => formDefs.find((f) => f.fieldKey === c.fieldKey)?.def.scope === 'customer')) await customer.save();
     await registration.save();
 
     if (statusChanged) {
@@ -556,7 +559,7 @@ async function updateMyProgress(req, res, next) {
       description: statusChanged ? `Status updated to ${statusLabel}` : `Updated ${changes.length} field${changes.length === 1 ? '' : 's'}`
     });
 
-    triggerWebhooks(req.partnerId, statusChanged ? 'STAGE_UPDATED' : 'LEAD_UPDATED', registration, customer).catch(() => {});
+    triggerWebhooks(req.partnerId, statusChanged ? 'STAGE_UPDATED' : 'LEAD_UPDATED', registration).catch(() => {});
     if (statusChanged) planNotifications(req, registration);
 
     return res.json({ registrationId, currentStage: stage, subStatus, notes: registration.notes || '', scheduledAt: registration.scheduledAt || null });
@@ -566,24 +569,23 @@ async function updateMyProgress(req, res, next) {
 }
 
 // POST /api/channel-partner/my/registrations/:registrationId/booking
+// Booking hands operational ownership to the builder and creates the
+// commission record, so only the builder can confirm it (section 52) - a
+// partner confirming their own booking would be marking their own homework.
 async function createMyBooking(req, res, next) {
   try {
-    const { registrationId } = req.params;
-    const { registration, error } = await assertOwnedRegistration(registrationId, req.partnerId);
+    const { error } = await assertOwnedRegistration(req.params.registrationId, req.partnerId);
     if (error) return res.status(error.status).json({ reason: error.reason });
+    return res.status(403).json({ reason: 'Bookings are confirmed by the builder in the builder portal' });
+  } catch (err) {
+    next(err);
+  }
+}
 
-    const { replayed, result } = await completeBooking({
-      registration,
-      actorLabel: req.actorLabel,
-      externalEventId: req.body.externalEventId,
-      afterBooked: async (booked) => {
-        planNotifications(req, booked);
-        const customer = await Customer.findOne({ customerId: booked.customerId });
-        triggerWebhooks(booked.partnerId, 'BOOKING_COMPLETED', booked, customer).catch(() => {});
-      }
-    });
-
-    return res.status(replayed ? 200 : 201).json(result);
+// GET /api/channel-partner/my/projects - projects a lead can be referred to.
+async function listProjects(req, res, next) {
+  try {
+    return res.json({ projects: await listOpenProjects() });
   } catch (err) {
     next(err);
   }
@@ -672,6 +674,7 @@ async function listLeadStatuses(req, res, next) {
 }
 
 module.exports = {
+  listProjects,
   listAssignableUsers,
   listLeadStatuses,
   listMyRegistrations,

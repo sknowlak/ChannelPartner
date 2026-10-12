@@ -7,7 +7,7 @@ const { logEvent } = require('../services/auditService');
 const { ensureDefaultRoles, resolvePermissions } = require('../services/roleService');
 const { ensureBaseFields: ensureBaseLeadFields } = require('../services/leadFieldDefinitionService');
 const { ensureBaseFields: ensureBaseUserFields } = require('../services/userFieldDefinitionService');
-const { generateApiKey } = require('../utils/apiKey');
+const { generateApiKey, apiKeyFields } = require('../utils/apiKey');
 const { validateMobile } = require('../utils/phone');
 const { isValidEmail } = require('../utils/email');
 
@@ -31,6 +31,7 @@ function toSafeObject(doc) {
   delete obj.passwordHash;
   delete obj.passwordChangedAt;
   delete obj.apiKey;
+  delete obj.apiKeyHash;
   return obj;
 }
 
@@ -95,7 +96,7 @@ async function register(req, res, next) {
       status: 'ACTIVE',
       kycStatus: 'PENDING',
       approvalStatus: 'PENDING',
-      apiKey: generateApiKey()
+      ...apiKeyFields(generateApiKey())
     });
 
     for (const field of SELF_SERVICE_FIELDS) {

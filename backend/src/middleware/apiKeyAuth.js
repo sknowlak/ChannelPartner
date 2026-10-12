@@ -1,5 +1,6 @@
 const Partner = require('../models/Partner');
 const { ALL_PERMISSIONS } = require('../config/permissions');
+const { hashApiKey } = require('../utils/apiKey');
 
 // Authenticates the partner's public integration API (sections 43 and 51)
 // with the organisation's API key instead of a login session, so any other
@@ -45,7 +46,7 @@ async function apiKeyAuth(req, res, next) {
   if (!key) return res.status(401).json({ reason: 'Missing API key - send it in the X-Api-Key header' });
 
   try {
-    const partner = await Partner.findOne({ apiKey: key });
+    const partner = await Partner.findOne({ apiKeyHash: hashApiKey(key) });
     if (!partner || partner.status !== 'ACTIVE') {
       return res.status(401).json({ reason: 'Invalid API key' });
     }

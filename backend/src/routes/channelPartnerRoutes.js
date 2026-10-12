@@ -1,9 +1,5 @@
 const express = require('express');
-const { createRegistration, getRegistration, listRegistrationStatuses, updateProgress } = require('../controllers/registrationController');
 const { checkDuplicate } = require('../controllers/duplicateController');
-const { createBooking } = require('../controllers/bookingController');
-const { getAuditTimeline } = require('../controllers/auditController');
-const { getCommissionEligibility } = require('../controllers/commissionController');
 const partnerAuthController = require('../controllers/partnerAuthController');
 const myLeadsController = require('../controllers/myLeadsController');
 const teamController = require('../controllers/teamController');
@@ -20,21 +16,16 @@ const partnerAuth = require('../middleware/partnerAuth');
 const apiKeyAuth = require('../middleware/apiKeyAuth');
 const { requirePermission } = partnerAuth;
 const { PERMISSIONS } = require('../config/permissions');
-const { loginRateLimit } = require('../middleware/rateLimit');
+const { loginRateLimit, signupRateLimit } = require('../middleware/rateLimit');
 
 const router = express.Router();
 
-// Original, unauthenticated surface - server-to-server / simulated external
-// CRM registrations (spec section 6). Left untouched for backward
-// compatibility; identity is asserted by the caller, not by a login session.
-router.post('/registrations', createRegistration);
-router.get('/registrations/:registrationId', getRegistration);
-router.get('/registrations/:registrationId/statuses', listRegistrationStatuses);
-router.post('/registrations/:registrationId/progress', updateProgress);
-router.post('/registrations/:registrationId/booking', createBooking);
-router.get('/registrations/:registrationId/audit', getAuditTimeline);
-router.get('/registrations/:registrationId/commission', getCommissionEligibility);
-router.post('/duplicate-check', checkDuplicate);
+// Every route below needs a credential (section 52): a partner session
+// (/my/*), the organisation's API key (/integrations/*), or a receive
+// source's secret URL (/hooks/*). The original unauthenticated
+// /registrations* and /duplicate-check routes were removed - anyone could
+// read customer details, register as any partner, and book any lead
+// through them. Builders use /api/builder (builderRoutes.js).
 
 // Integrations module inbound surface (section 43) - "I can receive lead[s]
 // or lead progress updates" from the partner's own external system,
@@ -52,7 +43,6 @@ router.get('/integrations/openapi.json', openApiController.openApiSpec);
 router.get('/integrations/leads', apiKeyAuth, openApiController.listLeads);
 router.get('/integrations/leads/:registrationId', apiKeyAuth, openApiController.getLead);
 router.patch('/integrations/leads/:registrationId', apiKeyAuth, myLeadsController.updateMyRegistration);
-router.post('/integrations/leads/:registrationId/booking', apiKeyAuth, myLeadsController.createMyBooking);
 router.get('/integrations/lead-statuses', apiKeyAuth, openApiController.listLeadStatusesPublic);
 router.get('/integrations/lead-fields', apiKeyAuth, openApiController.listLeadFieldsPublic);
 router.get('/integrations/subscriptions', apiKeyAuth, openApiController.listSubscriptions);
@@ -67,7 +57,7 @@ router.get('/hooks/:sourceKey', integrationSourceController.verifyChallenge);
 
 // Channel partner self-service: register/login, then manage only your own
 // leads. See spec section 31.
-router.post('/partners/register', partnerAuthController.register);
+router.post('/partners/register', signupRateLimit, partnerAuthController.register);
 router.post('/partners/login', loginRateLimit, partnerAuthController.login);
 
 router.get('/my/profile', partnerAuth, partnerAuthController.getMyProfile);
@@ -85,6 +75,8 @@ router.get('/my/registrations/:registrationId/audit', partnerAuth, myLeadsContro
 router.patch('/my/registrations/:registrationId/assign', partnerAuth, requirePermission(PERMISSIONS.MANAGE_LEADS), myLeadsController.assignRegistration);
 router.get('/my/assignable-users', partnerAuth, myLeadsController.listAssignableUsers);
 router.get('/my/lead-statuses', partnerAuth, myLeadsController.listLeadStatuses);
+router.get('/my/projects', partnerAuth, myLeadsController.listProjects);
+router.post('/my/duplicate-check', partnerAuth, checkDuplicate);
 
 router.get('/my/grid-preferences/:gridKey', partnerAuth, gridPreferencesController.getGridPreferences);
 router.patch('/my/grid-preferences/:gridKey', partnerAuth, gridPreferencesController.updateGridPreferences);

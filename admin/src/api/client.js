@@ -47,6 +47,16 @@ export const overrideRegistration = (registrationId, payload) =>
 
 export const listAudit = (params) => client.get('/audit', { params });
 
+// Builders, builder portal users and projects (section 52).
+export const listBuilders = () => client.get('/builders');
+export const createBuilder = (payload) => client.post('/builders', payload);
+export const getBuilder = (builderId) => client.get(`/builders/${builderId}`);
+export const updateBuilder = (builderId, payload) => client.patch(`/builders/${builderId}`, payload);
+export const createBuilderUser = (builderId, payload) => client.post(`/builders/${builderId}/users`, payload);
+export const updateBuilderUser = (builderUserId, payload) => client.patch(`/builder-users/${builderUserId}`, payload);
+export const createProject = (payload) => client.post('/projects', payload);
+export const updateProject = (projectId, payload) => client.patch(`/projects/${projectId}`, payload);
+
 export const getSettings = () => client.get('/settings');
 export const updateSettings = (payload) => client.put('/settings', payload);
 

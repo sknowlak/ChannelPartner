@@ -19,6 +19,7 @@ export default function NavBar() {
       <Link to="/">Dashboard</Link>
       <Link to="/partners">Channel Partners</Link>
       <Link to="/partner-fields">Partner Fields</Link>
+      <Link to="/builders">Builders &amp; Projects</Link>
       <Link to="/registrations">Registrations</Link>
       <Link to="/audit">Audit</Link>
       <Link to="/settings">Settings</Link>

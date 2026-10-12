@@ -14,10 +14,8 @@ const PAGE_TITLES = {
   '/settings/leads/notifications': 'Settings',
   '/settings/users': 'Settings',
   '/settings/integrations': 'Settings',
-  '/lookup': 'Lookup Registration',
   '/login': 'Sign In',
-  '/signup': 'Channel Partner Registration',
-  '/simulate-registration': 'Simulate External CRM Registration'
+  '/signup': 'Channel Partner Registration'
 };
 
 function titleFor(pathname) {

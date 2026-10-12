@@ -4,11 +4,13 @@ const cors = require('cors');
 const connectDB = require('./src/config/db');
 const channelPartnerRoutes = require('./src/routes/channelPartnerRoutes');
 const adminRoutes = require('./src/routes/adminRoutes');
+const builderRoutes = require('./src/routes/builderRoutes');
 const errorHandler = require('./src/middleware/errorHandler');
 const { runWithContext } = require('./src/utils/requestContext');
 const { startScheduler } = require('./src/services/notificationService');
 const { startRetryScheduler } = require('./src/services/webhookService');
 const { startPullScheduler } = require('./src/services/pullService');
+const { runP0Migrations } = require('./src/migrations/p0AccessControl');
 
 const stripOperators = require('./src/middleware/stripOperators');
 
@@ -18,6 +20,20 @@ const app = express();
 // req.ip is the real client - the login rate limiter keys on it.
 if (process.env.TRUST_PROXY) app.set('trust proxy', Number(process.env.TRUST_PROXY) || process.env.TRUST_PROXY);
 app.disable('x-powered-by');
+
+// Security headers for a JSON API (section 52): no sniffing, no framing, no
+// referrer leaks, nothing executable, and HTTPS-only once in production.
+app.use((req, res, next) => {
+  res.set({
+    'X-Content-Type-Options': 'nosniff',
+    'X-Frame-Options': 'DENY',
+    'Referrer-Policy': 'no-referrer',
+    'Content-Security-Policy': "default-src 'none'; frame-ancestors 'none'",
+    'Cross-Origin-Resource-Policy': 'same-site'
+  });
+  if (process.env.NODE_ENV === 'production') res.set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
+  next();
+});
 
 // CORS_ORIGINS (comma-separated) limits which web origins may call the API
 // from a browser. Unset = any origin, which is fine for local development
@@ -51,6 +67,7 @@ app.get('/health', (req, res) => res.json({ status: 'ok' }));
 // admin-facing (JWT-protected, see src/middleware/adminAuth.js).
 app.use('/api/channel-partner', channelPartnerRoutes);
 app.use('/api/admin', adminRoutes);
+app.use('/api/builder', builderRoutes);
 
 // Every client here parses errors as JSON (err.response.data.reason) -
 // Express's default 404 is an HTML page, which would otherwise reach the
@@ -66,6 +83,7 @@ const PORT = process.env.PORT || 5000;
 process.on('unhandledRejection', (err) => console.error('[unhandledRejection]', err));
 
 connectDB()
+  .then(() => runP0Migrations())
   .then(() => {
     app.listen(PORT, () => console.log(`Backend listening on port ${PORT}`));
     // Fires scheduled lead notifications (section 49) every 30 seconds.

@@ -20,6 +20,10 @@ function rejection(statusCode, message) {
 async function bookingProblem(registration) {
   if (registration.status !== 'ACCEPTED') return 'Only an accepted registration can be booked';
   if (registration.isBooked) return 'This lead is already booked';
+  // Booking is the builder's action on a referral it has accepted (section 52).
+  if (!registration.projectId || registration.referralStatus === 'NOT_REFERRED') return 'This lead is not referred to a project';
+  if (registration.referralStatus === 'REJECTED') return 'This referral was rejected and cannot be booked';
+  if (registration.referralStatus !== 'ACCEPTED') return 'Accept the referral before confirming the booking';
   const supersededBy = await Registration.findOne({
     customerId: registration.customerId,
     projectId: registration.projectId || '',
@@ -34,9 +38,8 @@ async function bookingProblem(registration) {
 
 // The responsibility-transfer event (spec section 13): creates the booking,
 // flips operational ownership to the builder while the partner keeps
-// attribution, and creates the commission-eligibility record. Shared by the
-// logged-in partner route and the external/builder route so both enforce the
-// same rules. `afterBooked(registration)` runs once the lead is booked
+// attribution, and creates the commission-eligibility record. Called from
+// the builder portal only (section 52) - partners can't confirm bookings. `afterBooked(registration)` runs once the lead is booked
 // (notifications, webhooks).
 async function completeBooking({ registration, actorLabel, externalEventId, afterBooked }) {
   const { registrationId, partnerId } = registration;
@@ -47,9 +50,10 @@ async function completeBooking({ registration, actorLabel, externalEventId, afte
 
     // Atomic gate: only one request can flip isBooked false -> true, so two
     // simultaneous bookings (with or without an event ID) can't both create
-    // a booking and a commission record.
+    // a booking and a commission record - and a rejection that lands at the
+    // same moment wins over the booking.
     const claimed = await Registration.findOneAndUpdate(
-      { registrationId, isBooked: { $ne: true } },
+      { registrationId, isBooked: { $ne: true }, referralStatus: 'ACCEPTED' },
       { $set: { isBooked: true } },
       { new: true }
     );

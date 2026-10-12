@@ -22,27 +22,8 @@ client.interceptors.response.use(
   }
 );
 
-// Original, unauthenticated demo/integration surface (spec section 6) - kept
-// as-is for the simulated-external-CRM flow and the builder persona.
-export const registerCustomer = (payload) => client.post('/registrations', payload);
-
-export const getRegistration = (registrationId, view = 'partner') =>
-  client.get(`/registrations/${registrationId}`, { params: { view } });
-
-export const updateProgress = (registrationId, payload) =>
-  client.post(`/registrations/${registrationId}/progress`, payload);
-
-export const createBooking = (registrationId, payload = {}) =>
-  client.post(`/registrations/${registrationId}/booking`, payload);
-
-export const getAuditTimeline = (registrationId) => client.get(`/registrations/${registrationId}/audit`);
-
-export const getCommissionEligibility = (registrationId) => client.get(`/registrations/${registrationId}/commission`);
-
-export const checkDuplicate = (payload) => client.post('/duplicate-check', payload);
-
-// Channel partner self-service (spec section 31) - register, log in, then
-// manage only your own leads via the /my/* endpoints, JWT-protected.
+// Partner session API (section 31). The old unauthenticated /registrations*
+// demo surface was removed (section 52); builders use api/builderClient.js.
 export const registerPartner = (payload) => client.post('/partners/register', payload);
 export const loginPartner = (username, password) => client.post('/partners/login', { username, password });
 export const getMyProfile = () => client.get('/my/profile');
@@ -65,6 +46,8 @@ export const updateGridPreferences = (gridKey, prefs) => client.patch(`/my/grid-
 export const listTeam = () => client.get('/my/team');
 export const listAssignableUsers = () => client.get('/my/assignable-users');
 export const listLeadStatuses = () => client.get('/my/lead-statuses');
+export const listProjects = () => client.get('/my/projects');
+export const checkDuplicate = (payload) => client.post('/my/duplicate-check', payload);
 export const createLeadStatus = (payload) => client.post('/my/lead-statuses', payload);
 export const updateLeadStatus = (statusId, payload) => client.patch(`/my/lead-statuses/${statusId}`, payload);
 export const deleteLeadStatus = (statusId) => client.delete(`/my/lead-statuses/${statusId}`);

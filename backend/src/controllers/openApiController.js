@@ -1,5 +1,5 @@
 const Registration = require('../models/Registration');
-const Customer = require('../models/Customer');
+const { contactView } = require('../utils/contact');
 const IntegrationWebhook = require('../models/IntegrationWebhook');
 const { listStatuses } = require('../services/leadStatusService');
 const { listFieldDefinitions } = require('../services/leadFieldDefinitionService');
@@ -12,7 +12,7 @@ const integrationController = require('./integrationController');
 
 const MAX_PAGE_SIZE = 200;
 
-function leadView(reg, customer) {
+function leadView(reg) {
   const r = reg.toObject ? reg.toObject() : reg;
   return {
     registrationId: r.registrationId,
@@ -37,12 +37,8 @@ function leadView(reg, customer) {
     leadSource: r.leadSource || '',
     notes: r.notes || '',
     customFields: r.customFields || {},
-    customer: customer ? {
-      name: customer.name,
-      mobile: customer.mobile,
-      email: customer.email || '',
-      alternateMobile: customer.alternateMobile || ''
-    } : null
+    referralStatus: r.referralStatus,
+    customer: (({ name, mobile, email, alternateMobile }) => ({ name, mobile, email, alternateMobile }))(contactView(r))
   };
 }
 
@@ -64,14 +60,12 @@ async function listLeads(req, res, next) {
       Registration.countDocuments(filter),
       Registration.find(filter).sort({ updatedAt: 1, _id: 1 }).skip((page - 1) * limit).limit(limit)
     ]);
-    const customers = await Customer.find({ customerId: { $in: regs.map((r) => r.customerId) } });
-    const byId = new Map(customers.map((c) => [c.customerId, c]));
     return res.json({
       page,
       limit,
       total,
       hasMore: page * limit < total,
-      leads: regs.map((r) => leadView(r, byId.get(r.customerId)))
+      leads: regs.map((r) => leadView(r))
     });
   } catch (err) {
     next(err);
@@ -83,8 +77,7 @@ async function getLead(req, res, next) {
   try {
     const reg = await Registration.findOne({ partnerId: req.partnerId, registrationId: String(req.params.registrationId) });
     if (!reg) return res.status(404).json({ reason: 'Lead not found' });
-    const customer = await Customer.findOne({ customerId: reg.customerId });
-    return res.json(leadView(reg, customer));
+    return res.json(leadView(reg));
   } catch (err) {
     next(err);
   }

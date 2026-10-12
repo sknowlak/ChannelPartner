@@ -4,57 +4,36 @@ const RegistrationClaim = require('../models/RegistrationClaim');
 const { getSettings } = require('./settingsService');
 const { normalizeMobile } = require('../utils/phone');
 const { normalizeEmail } = require('../utils/email');
-const { escapeRegex } = require('../utils/partnerFilter');
 const { nextId } = require('../utils/idGenerator');
 
-// Customer documents that represent the same person as the incoming
-// identity, on whichever match fields are configured (section 7):
-// - mobile: the primary AND alternate numbers are checked against both the
-//   stored primary and alternate numbers (a second partner can't slip the
-//   same customer in under their other phone);
-// - email: matched on the normalized form (case, spaces, +tags ignored).
-// The non-normalized fallbacks cover Customer records saved before the
-// normalized keys existed.
-async function findMatchingCustomers({ mobile, email, alternateMobile }) {
+// Finds an ACTIVE (still-protected) registration of the same person for the
+// same project (spec section 7), matching on the normalized keys each
+// registration keeps of its own contact details (section 52) - primary and
+// alternate numbers are checked against both, emails ignore case, spaces
+// and +tags. Matches regardless of which partner holds it: ownership must
+// never be silently overwritten, even by the same partner re-registering.
+// `excludeRegistrationId` lets an edit of an existing lead ask "would this
+// collide with anyone else?".
+async function findDuplicate({ mobile, email, alternateMobile, projectId, excludeRegistrationId }) {
+  projectId = String(projectId || ''); // leads with no project attached (section 33) share the '' bucket
   const { duplicateMatchFields } = await getSettings();
-  const filters = [];
+  const keys = [];
 
   if (duplicateMatchFields.includes('mobile')) {
     for (const number of [mobile, alternateMobile]) {
       if (!number) continue;
       const key = normalizeMobile(String(number));
-      filters.push({ mobileNormalized: key }, { alternateMobileNormalized: key }, { alternateMobile: String(number) });
+      if (key) keys.push({ 'match.mobile': key }, { 'match.alternateMobile': key });
     }
   }
   if (duplicateMatchFields.includes('email') && email) {
-    const trimmed = String(email).trim();
-    filters.push({ emailNormalized: normalizeEmail(trimmed) }, { email: { $regex: `^${escapeRegex(trimmed)}$`, $options: 'i' } });
+    const key = normalizeEmail(String(email));
+    if (key) keys.push({ 'match.email': key });
   }
+  if (keys.length === 0) return null;
 
-  if (filters.length === 0) return [];
-  return Customer.find({ $or: filters });
-}
-
-// Finds an ACTIVE (still-protected) registration matching the incoming
-// customer on any configured identity field, scoped to the same project
-// (spec section 7). Matches regardless of which partner holds the existing
-// registration - ownership must never be silently overwritten, even by the
-// same partner re-registering. `excludeRegistrationId` lets an edit of an
-// existing lead check "would this collide with anyone else?".
-async function findDuplicate({ mobile, email, alternateMobile, projectId, excludeRegistrationId }) {
-  projectId = String(projectId || ''); // leads with no project attached (section 33) share the '' bucket
-
-  const matchingCustomers = await findMatchingCustomers({ mobile, email, alternateMobile });
-  if (matchingCustomers.length === 0) return null;
-
-  const filter = {
-    customerId: { $in: matchingCustomers.map((c) => c.customerId) },
-    projectId,
-    status: 'ACCEPTED',
-    protectionExpiry: { $gt: new Date() }
-  };
+  const filter = { $or: keys, projectId, status: 'ACCEPTED', protectionExpiry: { $gt: new Date() } };
   if (excludeRegistrationId) filter.registrationId = { $ne: excludeRegistrationId };
-
   return Registration.findOne(filter).sort({ registeredAt: -1 });
 }
 
@@ -105,4 +84,4 @@ async function reassignClaim(registrationId, partnerId) {
   await RegistrationClaim.updateMany({ registrationId }, { $set: { partnerId } });
 }
 
-module.exports = { findDuplicate, findMatchingCustomers, findOrCreateCustomer, claimProtection, releaseClaim, reassignClaim };
+module.exports = { findDuplicate, findOrCreateCustomer, claimProtection, releaseClaim, reassignClaim };

@@ -34,8 +34,9 @@ function isBlockedAddress(ip) {
   return true;
 }
 
+// Never honoured in production (section 52), whatever the env says.
 function privateTargetsAllowed() {
-  return process.env.ALLOW_PRIVATE_WEBHOOK_TARGETS === 'true';
+  return process.env.ALLOW_PRIVATE_WEBHOOK_TARGETS === 'true' && process.env.NODE_ENV !== 'production';
 }
 
 // Syntax-only check (scheme, no credentials) - safe to run without network.

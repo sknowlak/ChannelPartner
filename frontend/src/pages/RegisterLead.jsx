@@ -13,8 +13,6 @@ import { findFieldErrors, focusField } from '../utils/formValidation';
 // list (sections 36, 39) as a tabbed form (Lead Info / Enquiry Info /
 // Additional Info / Others / Notes) - enabling/disabling/requiring a field,
 // or adding a custom one, changes this form immediately with no code change.
-// PartnerRegistration.jsx is kept separately for the unauthenticated
-// simulated-external-CRM demo flow (spec section 19).
 export default function RegisterLead() {
   const { hasPermission, partner } = useAuth();
   const [fieldDefs, setFieldDefs] = useState(null);

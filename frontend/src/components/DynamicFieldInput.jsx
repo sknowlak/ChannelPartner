@@ -1,5 +1,6 @@
 import { COMMON_TIMEZONES } from '../utils/timezone';
 import PhoneInput from './PhoneInput';
+import ProjectSelect from './ProjectSelect';
 
 // Renders a single form control from a LeadFieldDefinition/UserFieldDefinition
 // (sections 36, 38) - shared by RegisterLead.jsx and the team member forms so
@@ -10,6 +11,10 @@ export default function DynamicFieldInput({ def, value, onChange, currency }) {
 
   if (def.fieldKey === 'mobile' || def.fieldKey === 'alternateMobile') {
     return <PhoneInput value={v} onChange={onChange} required={def.isRequired} />;
+  }
+
+  if (def.fieldKey === 'projectId') {
+    return <ProjectSelect value={v} onChange={onChange} required={def.isRequired} />;
   }
 
   if (def.fieldKey === 'timezone') {
