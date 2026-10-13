@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { assignRegistration, listLeadFields, listMyRegistrations } from '../api/client';
 import { useAuth } from '../context/AuthContext';
-import { formatDate, formatDateTime } from '../utils/timezone';
+import { formatDate, formatDateTime, effectiveTimezone } from '../utils/timezone';
 import { formatCurrency } from '../utils/currency';
 import { PERMISSIONS } from '../utils/permissions';
 import SortableTh from '../components/SortableTh';
@@ -18,6 +18,7 @@ import { sortLeadTabs } from '../utils/leadTabs';
 import { csvCell } from '../utils/csv';
 import { formatNumber } from '../i18n/format';
 import { fieldLabel, optionLabel, statusLabel, subStatusLabel } from '../i18n/dataLabels';
+import { pageWindow } from '../utils/pageWindow';
 
 const initialFilters = { search: '', status: '', projectId: '' };
 const GRID_KEY = 'myLeads';
@@ -396,7 +397,7 @@ export default function MyLeads() {
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
         <div>
           <h1 style={{ marginBottom: '0.2rem' }}>{t('leads:list.title')}</h1>
-          <p className="hint" style={{ margin: 0 }}>{t('leads:list.signedInAs', { name: partner.name, partnerId: partner.partnerId, timezone: partner.timezone })}</p>
+          <p className="hint" style={{ margin: 0 }}>{t('leads:list.signedInAs', { name: partner.name, partnerId: partner.partnerId, timezone: effectiveTimezone(partner.timezone) })}</p>
         </div>
         <button className="pill-primary" onClick={() => navigate('/register-lead')}>{t('leads:list.addLead')}</button>
       </div>
@@ -536,8 +537,9 @@ export default function MyLeads() {
             <div className="pagination-buttons">
               <button className="page-btn" disabled={currentPage <= 1} aria-label={t('leads:list.pagination.first')} onClick={() => setPage(1)}>&laquo;</button>
               <button className="page-btn" disabled={currentPage <= 1} aria-label={t('leads:list.pagination.previous')} onClick={() => setPage((p) => p - 1)}>&lsaquo;</button>
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
-                <button key={p} className={`page-btn ${p === currentPage ? 'current' : ''}`} onClick={() => setPage(p)}>{formatNumber(p)}</button>
+              {pageWindow(currentPage, totalPages).map((p, i) => (p === 'gap'
+                ? <span key={`gap-${i}`} className="page-gap" aria-hidden="true">&hellip;</span>
+                : <button key={p} className={`page-btn ${p === currentPage ? 'current' : ''}`} aria-current={p === currentPage ? 'page' : undefined} onClick={() => setPage(p)}>{formatNumber(p)}</button>
               ))}
               <button className="page-btn" disabled={currentPage >= totalPages} aria-label={t('leads:list.pagination.next')} onClick={() => setPage((p) => p + 1)}>&rsaquo;</button>
               <button className="page-btn" disabled={currentPage >= totalPages} aria-label={t('leads:list.pagination.last')} onClick={() => setPage(totalPages)}>&raquo;</button>

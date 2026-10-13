@@ -17,6 +17,17 @@ const { resolvePermissions } = require('../services/roleService');
 // would silently keep acting on stale authorization data. Deriving it fresh
 // here costs one extra lookup but means a token never needs to be reissued
 // for its authorization to be correct.
+// The web app sends the browser's IANA timezone (X-Client-Timezone). Kept
+// per person as deviceTimezone so server-made texts (notifications) use
+// local time for people on "Automatic" timezone. Fire-and-forget; only
+// written when it changed.
+function rememberDeviceTimezone(req, Model, filter) {
+  const tz = String(req.headers['x-client-timezone'] || '').slice(0, 64);
+  if (!tz) return;
+  try { new Intl.DateTimeFormat('en', { timeZone: tz }); } catch { return; } // eslint-disable-line no-new
+  Model.updateOne({ ...filter, deviceTimezone: { $ne: tz } }, { $set: { deviceTimezone: tz } }).catch(() => {});
+}
+
 async function partnerAuth(req, res, next) {
   const header = req.headers.authorization || '';
   const [scheme, token] = header.split(' ');
@@ -64,6 +75,7 @@ async function partnerAuth(req, res, next) {
     // Human-readable "who" for the audit trail (section 41) - a name reads
     // far better than a bare partnerId/username in a history list.
     req.actorLabel = role === 'MEMBER' ? `${actorName} (${decoded.username})` : `${actorName} (Owner)`;
+    rememberDeviceTimezone(req, role === 'MEMBER' ? TeamMember : Partner, role === 'MEMBER' ? { partnerId: decoded.partnerId, username: decoded.username } : { partnerId: decoded.partnerId });
     return next();
   } catch (err) {
     return res.status(401).json({ reason: 'Invalid or expired session' });

@@ -10,7 +10,9 @@ const { runWithContext } = require('./src/utils/requestContext');
 const { startScheduler } = require('./src/services/notificationService');
 const { startRetryScheduler } = require('./src/services/webhookService');
 const { startPullScheduler } = require('./src/services/pullService');
+const { startLinkedInScheduler } = require('./src/services/linkedin/linkedinConnectorService');
 const { runP0Migrations } = require('./src/migrations/p0AccessControl');
+const { runTimezoneMigration } = require('./src/migrations/timezoneAutomatic');
 
 const stripOperators = require('./src/middleware/stripOperators');
 
@@ -84,6 +86,7 @@ process.on('unhandledRejection', (err) => console.error('[unhandledRejection]', 
 
 connectDB()
   .then(() => runP0Migrations())
+  .then(() => runTimezoneMigration())
   .then(() => {
     app.listen(PORT, () => console.log(`Backend listening on port ${PORT}`));
     // Fires scheduled lead notifications (section 49) every 30 seconds.
@@ -92,6 +95,7 @@ connectDB()
       // Automatic webhook retries and scheduled API pulls (section 51).
       startRetryScheduler();
       startPullScheduler();
+      startLinkedInScheduler();
     }
   })
   .catch((err) => {

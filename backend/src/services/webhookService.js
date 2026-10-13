@@ -321,6 +321,10 @@ async function sendWebhook(webhook, basePayload, eventType, registrationId, part
 // awaits this) - a slow or dead external target must never slow down or
 // fail the partner's own API response.
 async function triggerWebhooks(partnerId, eventType, registration) {
+  // Every lead event also reaches the LinkedIn Conversions API (section 59);
+  // required lazily - linkedinCapiService -> ... -> myLeadsController -> here.
+  require('./linkedin/linkedinCapiService').onLeadEvent(partnerId, eventType, registration) // eslint-disable-line global-require
+    .catch((err) => console.error('[linkedin] conversion', err.message));
   const webhooks = await IntegrationWebhook.find({ partnerId, isEnabled: true, events: eventType });
   if (webhooks.length === 0) return;
   const partner = await Partner.findOne({ partnerId });

@@ -21,6 +21,12 @@ export function detectBrowserTimezone() {
   }
 }
 
+// The zone times are actually shown in: the saved one, or - when it is
+// '' (Automatic, section 60) - this device's.
+export function effectiveTimezone(timezone) {
+  return timezone || detectBrowserTimezone();
+}
+
 export function formatDateTime(value, timezone) {
   if (!value) return '-';
   const tz = timezone || detectBrowserTimezone();

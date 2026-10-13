@@ -2,17 +2,17 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
-import { COMMON_TIMEZONES, detectBrowserTimezone } from '../utils/timezone';
 import { COMMON_CURRENCIES } from '../utils/currency';
 import PhoneInput from '../components/PhoneInput';
 import { validateMobile } from '../utils/phone';
 import { focusField } from '../utils/formValidation';
 import LanguageSelect from '../components/LanguageSelect';
 import PasswordInput from '../components/PasswordInput';
+import TimezoneSelect from '../components/TimezoneSelect';
 
 const initialForm = {
   name: '', mobile: '', email: '', username: '', password: '',
-  companyName: '', city: '', state: '', timezone: detectBrowserTimezone(), currency: 'USD'
+  companyName: '', city: '', state: '', timezone: '', currency: 'USD'
 };
 
 export default function PartnerSignup() {
@@ -114,11 +114,7 @@ export default function PartnerSignup() {
             </div>
             <div className="field">
               <label>{t('common:fields.timezone')}</label>
-              <select value={form.timezone} onChange={update('timezone')}>
-                {(COMMON_TIMEZONES.includes(form.timezone) ? COMMON_TIMEZONES : [form.timezone, ...COMMON_TIMEZONES]).map((tz) => (
-                  <option key={tz} value={tz}>{tz}</option>
-                ))}
-              </select>
+              <TimezoneSelect value={form.timezone} onChange={(tz) => setForm((f) => ({ ...f, timezone: tz }))} />
             </div>
             <div className="field">
               <label>{t('common:fields.currency')}</label>

@@ -21,7 +21,8 @@ const teamMemberSchema = new mongoose.Schema(
     // References Role.roleId (section 34) - determines what this member can
     // do beyond viewing the shared lead pool, which is never gated.
     roleId: { type: String, required: true },
-    timezone: { type: String, default: 'UTC' },
+    timezone: { type: String, default: '' }, // '' = Automatic (device timezone, section 60)
+    deviceTimezone: { type: String, default: '' },
     // Preferred UI language (sections 54-55) - '' = not chosen yet (device/browser
     // decides). Any language in config/languages.json (the generated manifest).
     language: { type: String, default: '', validate: { validator: (v) => v === '' || isSupportedLanguage(v), message: 'Unsupported language' } },

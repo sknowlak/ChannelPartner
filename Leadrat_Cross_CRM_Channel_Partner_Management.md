@@ -2341,4 +2341,430 @@ Prompted by "make this UI more informative and colourful, show some business log
 - **Layout** (`frontend/src/pages/PartnerLogin.jsx`): two columns. On the left, a colourful panel (navy → indigo → teal) with the headline, a one-line description of the portal and four features, each with its own coloured icon: register leads, duplicate protection (the period is configurable, so no number is shown), stage tracking, and credit at booking (source partner). On the right are the title, a welcome line, the language selector and the sign-in card (accent top border, gradient Sign In button, "secure sign-in" note), plus links to partner registration and the builder portal. Below 860px wide it is one column with the form first.
 - The page only describes features that exist today; commission is not mentioned, because partners can't see it yet.
 - Text: `auth:login.*` (`portalName`, `welcome`, `heroTitle`, `heroIntro`, `features.<key>.title|text`, `secure`, `builderPrompt`, `builderLink`). Hand-written in en/hi/bn using the glossary terms; machine-translated for the other languages (section 55).
-- Known gap (not new): the app shell's sidebar is fixed-width and does not collapse on phones, so below ~600px it covers part of every page, including this one.
+- On phones the sidebar is a drawer behind the top bar's menu button (section 58).
+
+# 58. Pagination and Small Screens
+
+Prompted by My Leads with 1,000 leads: the pager drew one button per page (100), which made the page wider than the screen - the whole app scrolled sideways and the sticky top bar stopped part-way.
+
+- **Pager** (`utils/pageWindow.js` in the partner app and admin, unit-tested): first page, last page, the current page with one neighbour each side, and "…" where pages are skipped - `« ‹ 1 … 49 50 51 … 100 › »`. Always 7 numbered slots once there are more than 7 pages, so the pager does not change width while paging; "…" never hides a single page. The current page has `aria-current="page"`. Used by My Leads, Manage Team and the admin Partners/Registrations lists. The buttons also wrap instead of widening the page.
+- **Sidebar** (partner app and builder portal): below 900px wide it is a slide-in drawer opened from a menu button in the top bar (`components/MenuButton.jsx`: `useNavDrawer`, `NavBackdrop`). It closes on navigation, Escape or a tap outside, opens from the right in right-to-left languages, and skips the animation for reduced-motion users. Label `common:actions.openMenu`.
+- **Top bar / pages** below 900px: tighter padding, long titles truncate; below 600px the partner name is hidden (the avatar stays) and the pager is centred. Wide tables keep scrolling inside their card (`.table-scroll`), never the page.
+- Checked with headless Chrome at 1600 / 820 / 390 px: the page is never wider than the screen.
+- Not changed: the admin portal's top navigation layout.
+
+# 59. Connectors: LinkedIn Ads (Lead Gen Forms, Spend / Cost per Lead, Conversions API)
+
+Prompted by "create a new module connectors and create LinkedIn submodule where if my client run any ads to generate leads it will go to Leads module ... activity log, how many leads created date wise or total and cost per lead ... If CAPI possible that also track." Decisions taken with the user (2026-10-13): **each channel partner connects their own LinkedIn account**; first build = **lead sync + spend/CPL + activity log + Conversions API**; LinkedIn leads **without a phone number are rejected and logged** (the "every lead needs a mobile" rule stays).
+
+## Where it lives
+
+Settings → **Connectors** (new tab) → **LinkedIn Ads** (`/settings/connectors`, `/settings/connectors/linkedin`). Reads are open to the partner's team; connecting, settings, sync and conversion rules need **Manage Settings**.
+
+## LinkedIn side (what must be requested in the LinkedIn developer portal)
+
+The app "Leadrat" (client ID `86z12fpj1677d1`, page "Leadrat Real Estate CRM") needs these products, on the same app:
+
+| Feature | LinkedIn product | Scopes |
+|---|---|---|
+| Ad accounts, campaigns, spend | Advertising API | `r_ads`, `r_ads_reporting` |
+| Lead Gen Form leads (+ lead webhooks) | Lead Sync API | `r_marketing_leadgen_automation`, `r_organization_admin` |
+| Conversions back to LinkedIn | Conversions API | `rw_conversions` |
+| Member name on the connection | (sign-in) | `r_basicprofile` |
+
+Prerequisites: the app's **business email verified** (pending on 2026-10-13); the redirect URL registered exactly under Auth (`LINKEDIN_REDIRECT_URI`). Refresh tokens (365 days, not extended by refreshing) are only issued to approved Marketing Developer Platform apps - without them the connection lasts 60 days and the page asks the partner to reconnect.
+
+**Page posts / likes / comments (Community Management API) are not built**: LinkedIn requires that product on a *separate* app, its approval is the hardest, and its terms forbid using commenter/reactor data to create leads or enrich a CRM (names may only be cached 24 hours). Only counts per post would be allowed - a later step.
+
+## How it works (backend)
+
+- `config/linkedin.js` - client ID/secret, redirect URI, API version header (`LinkedIn-Version: 202609` and `X-Restli-Protocol-Version: 2.0.0` on every call), optional `LINKEDIN_WEBHOOK_URL`. The `*_BASE` overrides exist only for the mock.
+- **Connect** (`linkedinConnectorService.startConnect/completeConnect`): 3-legged OAuth with a random `state` stored 15 minutes (`ConnectorOAuthState`, CSRF protection) → the code is exchanged at the public callback `GET /api/channel-partner/connectors/linkedin/callback` → the browser returns to the LinkedIn page (`PARTNER_APP_URL`). The member's ad accounts are loaded (`adAccountUsers?q=authenticatedUser` + `adAccounts/{id}`); all sync by default, switchable per account. "LinkedIn" is added to the partner's **Source** dropdown options.
+- **Tokens are encrypted at rest** (AES-256-GCM, `utils/secretBox.js`, key `CONNECTOR_ENCRYPTION_KEY`, derived from `JWT_SECRET` if unset) and never returned by the API. An access token expiring within 5 minutes - or rejected with 401 - is refreshed once automatically; no usable refresh token → status **Reconnect needed**, syncing pauses, logged.
+- **Lead sync** (`linkedinLeadService`): every `syncMinutes` (5-60, default 10) the scheduler fetches `leadFormResponses?q=owner&owner=(sponsoredAccount:…)&leadType=(leadType:SPONSORED)&submittedAtTimeRange=(start,end)` per enabled ad account (first sync: last 30 days; then from the last successful sync minus a 1-hour overlap; pages of 100). Test leads only when "include test leads" is on. Each answer is joined to its form's questions (`leadForms/{id}`, cached per run) and mapped by `predefinedField`: first + last name → name; PHONE_NUMBER / WORK_PHONE_NUMBER → mobile (+ alternate); EMAIL / WORK_EMAIL → email; COMPANY_NAME → Company; JOB_TITLE → Designation; CITY / STATE / COUNTRY → Customer Location; custom questions (incl. multiple-choice option labels) → Notes. Source = LinkedIn, Sub-source = form name, Campaign = LinkedIn campaign name. A number starting with + keeps its country; a local number uses the connection's default country.
+- Each lead goes through `createMyRegistration` (registration source `LINKEDIN`, idempotency key `LINKEDIN:<leadId>`) - validation, **duplicate protection**, audit history, notifications and webhooks exactly as for any lead. The outcome per lead is stored in `LinkedInLead` (CREATED / DUPLICATE / REJECTED / FAILED; failed ones retried up to 5 times) and linked in `IntegrationLink` (`connectorId LINKEDIN:<partnerId>`). A lead is never imported twice.
+- **Real-time** (optional, needs a public HTTPS `LINKEDIN_WEBHOOK_URL`): a `leadNotifications` subscription per ad account. `GET /connectors/linkedin/webhook?challengeCode=` answers LinkedIn's validation with HMAC-SHA256(client secret); `POST` checks `X-LI-Signature` (HMAC-SHA256 of `hmacsha256=` + raw body, constant-time compare), answers at once, then fetches and imports the lead. Without it, leads arrive on the schedule.
+- **No missed leads - four layers** (added 2026-10-13, "I want lead create in system real time; if by chance it gets missed, the system checks and auto-fetches, or the client fetches by date range"):
+  1. *Real time* - the lead webhook above (needs the public HTTPS URL).
+  2. *Scheduled sync* - every 5-60 minutes, from the last successful sync minus a 1-hour overlap; the window only moves forward when every ad account succeeded, so an outage is re-read on the next run.
+  3. *Daily catch-up* - once a day (and on every "Sync now") the last 7 days are re-read (`catchUpAt`), for leads missed by a failed webhook or reported late by LinkedIn.
+  4. *Fetch by date range* - Manage Settings users pick From / To on the LinkedIn page (`POST /my/connectors/linkedin/fetch-range`, up to 90 days per request, future end dates clipped to now): leads from before connecting, or any period to re-check.
+  Every layer goes through the same import, so a lead already imported is skipped ("already imported" in the activity log line), never duplicated; failed imports retry up to 5 times. How far back LinkedIn keeps lead responses is not documented.
+- **Scopes** can be overridden with `LINKEDIN_SCOPES` (space-separated) while only some LinkedIn products are approved; a sign-in refused for a scope (`unauthorized_scope_error`) is shown to the partner as "LinkedIn has not approved the Leadrat app for ... yet". The member name comes from `/v2/me` or, failing that, OpenID Connect `/v2/userinfo`.
+- **Spend and cost per lead** (`linkedinStatsService`): every 3 hours (and on "Sync now") `adAnalytics?q=analytics&pivot=CAMPAIGN&timeGranularity=DAILY` per account (first run 90 days, then the last 14 days, since LinkedIn finalises figures late) → `LinkedInAdStat` per campaign per day (spend in the account currency and USD, impressions, clicks, LinkedIn-counted leads, form opens), kept beyond LinkedIn's 6-month daily window. The report gives totals, daily rows and per-campaign rows for any date range; **cost per lead = spend ÷ leads LinkedIn counted**, **cost per created lead = spend ÷ leads actually added to My Leads**; ad accounts in mixed currencies are reported in USD.
+- **Conversions API** (`linkedinCapiService`): the partner maps Leadrat statuses (e.g. Qualified, Site Visit, Booking) to a conversion type; "Create on LinkedIn" creates the conversion rule on the ad account (`POST /conversions`, method `CONVERSIONS_API`, all campaigns, 90/30-day windows). When a LinkedIn lead reaches a mapped status by any path (partner app, API, builder booking - hooked in `webhookService.triggerWebhooks`), a conversion event is sent once per lead and status (`eventId leadrat-<REG>-<status>`) with the **LinkedIn lead ID** (`urn:li:leadGenFormResponse:…`) and a **SHA-256 hash of the email** - never plain contact details. Failed sends retry with back-off (1, 5, 30, 120, 720 minutes; 5 attempts); events older than 90 days are dropped (LinkedIn limit).
+- **Activity log** (`ConnectorActivity`, kept 1 year): connect / disconnect, reconnect needed, access renewed, settings changes, every lead sync with counts, every lead with its outcome and reason, statistics refreshes, conversion rules, conversions sent / failed, real-time notifications, errors. Filterable by event type and level.
+- **Disconnect** deletes the tokens and webhook subscriptions and turns conversions off; leads, statistics and the log are kept. (To remove Leadrat from the member's LinkedIn account: LinkedIn Settings → Data privacy → Permitted services.)
+
+API (under `/api/channel-partner`): `GET /my/connectors`; `GET | PATCH | DELETE /my/connectors/linkedin`; `POST /my/connectors/linkedin/connect`, `/sync`, `/accounts/refresh`, `/conversion-rules`; `GET /my/connectors/linkedin/stats?from&to`; `GET /my/connectors/linkedin/activity?type&level&page`; public `GET /connectors/linkedin/callback` and `GET | POST /connectors/linkedin/webhook`.
+
+## Partner app
+
+A connector catalogue card, and the LinkedIn page with:
+
+- status banners (not configured / just connected / reconnect needed / reconnect due within 30 days / last error);
+- a connect checklist (ad-account role, company-page role, phone question on the form);
+- connection facts (member, by whom, when, sign-in-again date, auto-renew, last / next sync) with Sync now, Refresh ad accounts and Disconnect;
+- ad accounts with a per-account sync switch, and sync settings (default country, interval, test leads);
+- **Performance** for 7 / 30 / 90 days: tiles (spend, leads on LinkedIn, cost per lead, leads created, cost per created lead, duplicates, rejected, impressions, clicks, CTR), the all-time total, *Leads per day* and *Spend per day* as two separate charts (never one dual-axis chart) with hover tooltips and a table view, and a per-campaign table;
+- the Conversions API switch and status mapping;
+- the activity log with filters and pager.
+
+Text is in the `connectors` namespace (en / hi / bn hand-written; other languages machine-translated with LinkedIn product names protected in `tools/i18n/translate.mjs`).
+
+## Testing
+
+- `tests/linkedinConnector.test.js` (unit): lead mapping, token encryption and tamper detection, webhook challenge and signature, conversion payload (no plain email).
+- `tests/e2e/mockLinkedIn.mjs` + `tests/e2e/linkedin.e2e.mjs` (`npm run test:e2e:linkedin`, 35 checks; start a fresh mock per run): OAuth connect and forged-state refusal, tokens never returned, settings validation, sync (created / rejected for no phone / test lead skipped / never twice / duplicate protection), 7-day catch-up, fetch by date range (imports, never twice, bad ranges refused), version headers on every call, field mapping, default country, webhook challenge + unsigned refusal + signed real-time lead, conversion rule + a single conversion event with lead ID and hashed email, token refresh after a rejected token, stats totals / daily / campaigns, activity log and filter, disconnect keeping history.
+- **Real LinkedIn (2026-10-13, verified live)**: client ID and secret in `backend/.env` - the first secret given was stale (a real refresh token was rejected with `invalid_client`; LinkedIn checks the grant before the client, so fake-code tests prove nothing); with the **current secret** (updated by the user the same day) the refresh succeeds, and Leadrat's own renewal (`accessTokenFor`) renewed the demo connection's token against LinkedIn (activity "Access renewed"; refresh token valid to 2027-10-13); the callback URL `http://localhost:5000/api/channel-partner/connectors/linkedin/callback` is registered. The app's current permissions are only `email, openid, profile, r_events, rw_events, w_member_social`: sign-in identity works (OpenID `/v2/userinfo`), but ad accounts, ad analytics and `/v2/me` return 403 "Not enough permissions", and a Connect asking for `r_ads` is refused (`unauthorized_scope_error`). A token from the developer portal's token generator is attached to the demo partner (PARTNER-001, member "SK NOWLAK", expires 2026-12-12, stored encrypted) - it connects and syncs, shows 0 ad accounts and the "products not approved" warning. Programmatic refresh works for this app once the current secret is set. **Blocked on LinkedIn approving the Advertising API, Lead Sync API and Conversions API products** (and the business-email verification) - then reconnect from the page. Connecting without ad permissions now succeeds with that warning instead of failing (`loadAdAccounts`), and "Refresh ad accounts" clears it once approved (e2e: 39 checks). Not verifiable without live access: Lead Sync daily rate limits; whether an older form *version* can differ from `leadForms/{id}` (answers are joined to the current version).
+
+## Configuration (`backend/.env`)
+
+`LINKEDIN_CLIENT_ID`, `LINKEDIN_CLIENT_SECRET`, `LINKEDIN_REDIRECT_URI`, `PARTNER_APP_URL`, `LINKEDIN_WEBHOOK_URL` (optional), `LINKEDIN_API_VERSION`, `CONNECTOR_ENCRYPTION_KEY` - see `.env.example`.
+
+# 60. Automatic (Local) Timezone
+
+Prompted by "Timezone UTC - make local timezone for view": every partner and team member had `timezone: 'UTC'` by default, so all times in the partner app showed in UTC.
+
+- **Automatic is the new default** (`timezone: ''` on Partner and TeamMember): times are shown in the timezone of the device being used, and follow it when the person travels. A fixed zone (UTC included) can still be chosen in My Profile, sign-up and the team-member form (`components/TimezoneSelect.jsx`, first option "Automatic - this device (<zone>)").
+- **Migration** (`src/migrations/timezoneAutomatic.js`, run once at startup, marker `timezone-automatic-2026-10` in the `migrations` collection): accounts still on `UTC` - the old default - moved to Automatic (14 partners on the development database). Anyone choosing UTC afterwards keeps it.
+- **Server-made texts**: the web app sends `X-Client-Timezone` (browser IANA zone) on every request; `partnerAuth` stores it as `deviceTimezone` when it changes. Notification texts use `timezone || deviceTimezone || 'UTC'` (`userDirectoryService`), so people on Automatic get local times in notifications too.
+- Labels that name the zone ("times shown in ...") show the effective zone (`effectiveTimezone()` in `utils/timezone.js`). Manage Team shows "Automatic" in the timezone column, filter and CSV export.
+- Unchanged: the admin portal already defaults to the browser's timezone (its own picker in the top bar); the mobile app uses the phone's.
+
+# Appendix A. Original Multilingual (i18n) Requirements
+
+The requirements brief the multilingual work was built from (previously the separate file `AI_Prompt_Entire_Application_Multilingual_i18n.md`, merged here on 2026-10-13 so this document is the single spec). What was built is described in sections 54 (English, Hindi, Bengali) and 55 (every language, build-time machine translation).
+
+### Objective
+
+Implement complete, production-ready multilingual support across the
+**entire existing Cross-CRM Channel Partner Management application**.
+This is an implementation task, not just a proposal. Inspect the
+repository, implement the feature, add tests, run the relevant checks,
+and report exactly what changed.
+
+The application uses the **MERN stack**: - Frontend: React + Vite -
+Backend: Node.js + Express - Database: MongoDB + Mongoose - Mobile:
+React Native + Expo, if present in the repository - Separate admin
+portal, if present
+
+Keep the current stack and architecture. Do not rewrite the application
+or introduce a different frontend/backend framework.
+
+### 1. Start with repository discovery
+
+Before changing code: 1. Inspect the repository structure and identify
+every application surface: partner web app, builder web app, admin
+portal, mobile app, login/signup, public/demo screens, settings, emails,
+notifications, reports, exports, API responses, and background jobs. 2.
+Identify the router/layout/navigation, component library, forms,
+validation schemas, date/number formatting utilities, API error
+handling, email templates, notification templates, export generation,
+and tests. 3. Identify existing language choices, translations,
+hard-coded user-facing strings, custom components, and design
+conventions. 4. Produce a brief inventory of apps and user-visible text
+locations, then continue implementation. Do not stop at the inventory or
+ask me to translate each screen manually. 5. Do not assume that the
+partner frontend, admin portal, builder views, and mobile app share the
+same translation setup; verify each independently.
+
+### 2. Language strategy and defaults
+
+Build a scalable internationalization (i18n) system, not a collection of
+manually toggled labels.
+
+-   Use a mature library suitable for each existing platform. For React
+    web apps, prefer `i18next` with `react-i18next`; for React Native,
+    use a compatible i18next setup if mobile is present. Reuse a common
+    translation resource structure where practical.
+-   Do not add dependencies blindly: inspect `package.json`, the
+    existing app architecture, and compatibility first.
+-   Provide a visible language selector in the main application shell
+    and relevant authentication/onboarding screens. If separate apps
+    have separate shells, provide the selector in each.
+-   Initial supported languages:
+    -   English (`en`) --- fallback and default
+    -   Hindi (`hi`)
+    -   Bengali (`bn`)
+-   Design the locale registry so more languages can be added without
+    code changes to every screen.
+-   If an existing saved user preference is available, retain it.
+    Otherwise choose the browser/device language only when it matches a
+    supported locale; fall back to English.
+-   Persist the selected locale using the application's existing
+    preference approach. On web, use a safe, non-sensitive preference
+    store; do not store credentials or tokens as part of language
+    preference. On mobile, use the project's existing persistence
+    approach.
+-   Add a user profile preference for language only if it fits the
+    current profile model and does not cause a broad schema rewrite.
+-   Do not silently change business behavior when changing locale.
+
+### 3. Translate the entire user interface
+
+Every user-visible string in every application surface must use
+translation keys, including but not limited to:
+
+-   Navigation, menus, page titles, breadcrumbs, tabs, buttons,
+    tooltips, labels, placeholders, helper text, empty states, loading
+    states, success messages, confirmations, warnings, and error
+    messages.
+-   Login, signup, password flows, profile, team management, roles,
+    permissions, partner registration, lead lists, lead details,
+    referral creation, recipient selection, duplicate-check outcomes,
+    referral acceptance/rejection, customer journey/progress, builder
+    views, booking handover, commission eligibility, audit timelines,
+    integrations, settings, dashboards, filters, pagination, tables,
+    charts, and exports.
+-   Admin portal: partners, team members, approvals/KYC, projects, field
+    definitions, settings, audit, integration setup, and dashboard.
+-   Mobile app: all screens, navigation labels, validation messages,
+    offline/loading/error states, and dialogs.
+-   Demo/simulated-CRM flows, where they exist.
+-   Accessibility labels, screen-reader descriptions, keyboard hints,
+    and other visible/accessibility text.
+-   Client-side validation, API error mapping, and fallback messages.
+
+Requirements: - Replace hard-coded UI text with stable semantic
+translation keys, for example `common.save`, `auth.login.title`,
+`leads.emptyState`, `referrals.accept`, `booking.confirmation.title`. -
+Avoid translating dynamically generated identifiers, CRM field keys,
+partner names, customer-entered content, API IDs, or external CRM values
+unless there is an explicit product requirement. - Preserve current
+routes, business logic, permissions, and workflows. - Do not concatenate
+sentence fragments to form translated sentences; use complete
+translation messages and interpolation variables. - Avoid duplicate keys
+with conflicting meanings. Organize translation resources by domain or
+feature. - Use pluralization and interpolation correctly (e.g., number
+of leads, days remaining, records found). - If a translation key is
+missing, fall back to English and log a development warning without
+crashing the application. - No raw translation key
+(e.g. `leads.emptyState`) should appear to a production user. - Do not
+use automatic machine translation at runtime for customer data or
+private content. - Preserve meaning and business terminology
+consistently across all locales.
+
+### 4. Translation quality and terminology
+
+-   Create a glossary for important business terms so they remain
+    consistent in all supported languages.
+-   Translate meaning naturally rather than translating word-for-word.
+-   Use the same translations consistently across partner, builder,
+    admin, email, notification, and mobile surfaces.
+-   Keep statuses, role names, permission labels, duplicate outcomes,
+    booking, attribution, and commission terminology consistent.
+-   Use respectful, professional Hindi and Bengali appropriate for
+    business software.
+-   Keep external CRM names, product names, project names, partner
+    names, customer names, and identifiers unchanged unless the user
+    explicitly chooses otherwise.
+-   Add translation metadata or comments for ambiguous business terms
+    where needed.
+-   Do not invent legal/compliance translations. If any legal text
+    requires an approved translation, flag it for review while keeping
+    the English source authoritative.
+
+### 5. Locale-aware formatting and layout
+
+Use locale-aware formatting instead of hard-coded display formats.
+
+-   Dates and times: use `Intl.DateTimeFormat` or an existing shared
+    formatter; respect the user's timezone setting and format the same
+    instant appropriately in each locale.
+-   Numbers: use `Intl.NumberFormat`.
+-   Currency: use the configured currency code for the
+    transaction/organization; locale changes display format but must not
+    change the actual currency or amount.
+-   Percentages and decimal values: use locale-aware formatting.
+-   Relative time and pluralized counts: use the i18n library's
+    pluralization/formatting capabilities.
+-   Store timestamps in UTC and keep API/database values locale-neutral.
+    Translate only at the presentation boundary.
+-   Do not translate enum values or alter persisted status codes,
+    database keys, API field names, event names, webhook payload keys,
+    or external integration contracts.
+-   Keep phone numbers, CRM IDs, booking IDs, registration IDs, API
+    keys, and other identifiers in their canonical representation unless
+    product requirements say otherwise.
+-   Handle right-to-left layout correctly if a future RTL locale is
+    added; do not break current left-to-right layouts.
+-   Ensure Hindi and Bengali fonts render correctly across supported
+    browsers/devices. Use existing compatible font strategy; add fonts
+    only if necessary and licensed/appropriate.
+-   Check text expansion: avoid fixed widths/heights that clip longer
+    translations; ensure tables, buttons, menus, dialogs, and forms
+    remain responsive.
+
+### 6. Backend, APIs, emails, and notifications
+
+The backend should remain language-neutral by default.
+
+-   Keep stable machine-readable API error codes and structured
+    validation details. Translate messages in the frontend where
+    possible.
+-   If backend-generated email/SMS/WhatsApp/push notifications are
+    user-facing, support language selection based on recipient
+    preference or a documented organization default.
+-   Centralize email and notification templates by locale. Provide
+    English fallback when a translation is missing.
+-   Background jobs must not assume one global language if recipients
+    have different preferences.
+-   If an API explicitly returns a user-facing message, provide a
+    locale-aware mechanism without changing the meaning of
+    machine-readable fields.
+-   Do not localize webhook/API integration payloads, enum values, or
+    signatures. External systems require stable contracts.
+-   Do not leak customer data into translation logs or third-party
+    translation services.
+
+### 7. Translation resources and file organization
+
+Use a clear, maintainable structure. Adapt to the repository rather than
+forcing an unnecessary rewrite. Example:
+
+``` text
+src/
+  i18n/
+    index.js
+    locales.js
+    detectLanguage.js
+    formatters.js
+    glossary.md
+    locales/
+      en/
+        common.json
+        auth.json
+        leads.json
+        referrals.json
+        booking.json
+        admin.json
+        integrations.json
+      hi/
+        common.json
+        auth.json
+        leads.json
+        referrals.json
+        booking.json
+        admin.json
+        integrations.json
+      bn/
+        common.json
+        auth.json
+        leads.json
+        referrals.json
+        booking.json
+        admin.json
+        integrations.json
+```
+
+This is an example only. Reuse the repository's conventions and share
+resources between web apps only where that is maintainable. Avoid one
+giant JSON file if the application has multiple domains or separately
+built apps.
+
+For every supported language: - Provide complete translations for the
+strings used by the implemented UI. - Maintain identical key structure
+across locales. - Validate that no required key is missing or has an
+incompatible value type. - Add an automated check/script for missing
+keys and optionally unused keys. - Do not fill entire locales with
+English text while claiming the application is fully translated. English
+fallback is acceptable for genuinely missing keys during development,
+but the final report must disclose any untranslated user-facing
+strings. - Keep translation JSON valid and avoid unsafe HTML
+interpolation. Do not render translations as raw HTML.
+
+### 8. Language selector behavior
+
+-   Add an accessible selector labelled "Language" (translated in each
+    locale).
+-   Show human-readable language names, preferably in their own script:
+    -   English
+    -   हिन्दी
+    -   বাংলা
+-   Switching language should update the current screen immediately
+    without a full page reload.
+-   Preserve the user's current route, form input, filters, selected
+    records, and in-progress work during locale changes.
+-   Do not log the user out or reset app state when the language
+    changes.
+-   Ensure selector keyboard access, focus state, screen-reader label,
+    and adequate contrast.
+-   Display the selected locale clearly.
+-   Make sure the choice persists across reloads and app navigation.
+-   Where user accounts exist, define precedence between a saved account
+    preference and a local device preference. Document the chosen
+    precedence.
+
+### 9. Testing requirements
+
+Add tests for: - Locale initialization and English fallback. - Supported
+browser/device language detection. - Persistence across
+reload/navigation. - Switching English/Hindi/Bengali without losing
+route or form state. - Translation key coverage and matching key
+structure across locales. - Missing-key behavior and development
+warnings. - Pluralization/interpolation. - Date/time/number/currency
+formatting in each locale. - Login/signup validation, API error
+rendering, empty/loading/error states in each locale. - Partner,
+builder, admin, and mobile surfaces (where present). - Long translated
+strings, table overflow, dialog clipping, and responsive layouts. -
+Notification/email language selection if these features are
+implemented. - Ensuring API payloads, status enums, webhook payloads,
+IDs, and database values do not change when locale changes.
+
+Search for remaining hard-coded user-facing strings and add a
+lint/test/script check where practical. Avoid false positives for logs,
+test fixtures, identifiers, and customer-entered content.
+
+### 10. Implementation workflow
+
+1.  Inspect the repository and report the apps/surfaces found.
+2.  Design the smallest maintainable i18n architecture that fits the
+    current MERN codebase.
+3.  Add locale resources and initialization.
+4.  Implement language detection, selector, and preference persistence.
+5.  Translate all user-facing strings throughout every application
+    surface, not only the dashboard.
+6.  Add locale-aware formatters and translate user-facing
+    notifications/templates where present.
+7.  Add key-coverage checks and tests.
+8.  Run relevant tests, lint, and production builds for every affected
+    web/mobile app. If a command cannot run, state why.
+9.  Manually inspect for hard-coded strings, missing translations,
+    broken layout, raw keys, and changed business behavior.
+10. Review the diff for unrelated rewrites, unsafe HTML, changes to API
+    contracts, or accidental localization of machine values.
+
+Do not stop after implementing the language selector. The task is
+complete only when translation coverage spans the whole application.
+
+### 11. Definition of done
+
+-   English, Hindi, and Bengali are selectable in every relevant app
+    surface.
+-   Language selection persists and takes effect immediately.
+-   All user-facing static UI text is translated in all supported
+    locales, with any exceptions clearly listed.
+-   Dates, times, numbers, currencies, pluralized values, validation
+    messages, notifications, and errors are handled appropriately.
+-   No business logic, database enum, API contract, integration payload,
+    permission, or workflow changes as a side effect of localization.
+-   Tests validate key coverage and critical locale behavior.
+-   Production builds pass for all affected apps, or failures are
+    documented.
+-   No secrets or customer PII are sent to translation services or
+    written into translation resources.
+
+### 12. Final report
+
+Return: 1. Applications/surfaces inspected. 2. Chosen i18n libraries and
+architecture, with rationale. 3. Files/modules added or changed. 4.
+Languages and translation coverage by app/surface. 5. Any untranslated
+strings and why they remain. 6. Tests and exact commands/results. 7.
+Build/lint results. 8. Any manual review needed from a native
+Hindi/Bengali speaker. 9. Instructions for adding a fourth language
+later.
+
+**Begin by inspecting the existing repository and then implement the
+full feature. Do not return only a plan, tutorial, or sample language
+selector.**

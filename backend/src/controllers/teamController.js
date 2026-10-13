@@ -126,7 +126,7 @@ async function createTeamMember(req, res, next) {
       email: req.body.email,
       username: lowerUsername,
       passwordHash: await hashPassword(password),
-      timezone: req.body.timezone || 'UTC',
+      timezone: req.body.timezone || '',
       roleId,
       createdBy: req.actorLabel,
       customFields: customFieldValues

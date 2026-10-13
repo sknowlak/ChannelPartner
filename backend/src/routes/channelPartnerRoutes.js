@@ -12,6 +12,7 @@ const integrationController = require('../controllers/integrationController');
 const gridPreferencesController = require('../controllers/gridPreferencesController');
 const integrationSourceController = require('../controllers/integrationSourceController');
 const openApiController = require('../controllers/openApiController');
+const linkedinConnectorController = require('../controllers/linkedinConnectorController');
 const partnerAuth = require('../middleware/partnerAuth');
 const apiKeyAuth = require('../middleware/apiKeyAuth');
 const { requirePermission } = partnerAuth;
@@ -54,6 +55,12 @@ router.delete('/integrations/subscriptions/:subscriptionId', apiKeyAuth, openApi
 // subscription handshakes (e.g. Facebook's hub.challenge).
 router.post('/hooks/:sourceKey', integrationSourceController.receive);
 router.get('/hooks/:sourceKey', integrationSourceController.verifyChallenge);
+
+// LinkedIn connector (section 59): OAuth return URL and lead notification
+// webhook. Public - the OAuth state / HMAC signature are the credentials.
+router.get('/connectors/linkedin/callback', linkedinConnectorController.callback);
+router.get('/connectors/linkedin/webhook', linkedinConnectorController.webhookChallenge);
+router.post('/connectors/linkedin/webhook', linkedinConnectorController.webhookReceive);
 
 // Channel partner self-service: register/login, then manage only your own
 // leads. See spec section 31.
@@ -153,6 +160,19 @@ router.post('/my/integrations/sources/:sourceId/run', partnerAuth, requirePermis
 router.get('/my/integrations/inbound-events', partnerAuth, integrationSourceController.listInboundEvents);
 
 router.get('/my/integrations/deliveries', partnerAuth, integrationController.listDeliveries);
+
+// Connectors (section 59): Settings -> Connectors -> LinkedIn.
+router.get('/my/connectors', partnerAuth, linkedinConnectorController.listConnectors);
+router.get('/my/connectors/linkedin', partnerAuth, linkedinConnectorController.getLinkedIn);
+router.get('/my/connectors/linkedin/stats', partnerAuth, linkedinConnectorController.stats);
+router.get('/my/connectors/linkedin/activity', partnerAuth, linkedinConnectorController.activity);
+router.post('/my/connectors/linkedin/connect', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), linkedinConnectorController.connect);
+router.patch('/my/connectors/linkedin', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), linkedinConnectorController.updateSettings);
+router.post('/my/connectors/linkedin/accounts/refresh', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), linkedinConnectorController.refreshAccounts);
+router.post('/my/connectors/linkedin/sync', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), linkedinConnectorController.syncNow);
+router.post('/my/connectors/linkedin/fetch-range', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), linkedinConnectorController.fetchRange);
+router.post('/my/connectors/linkedin/conversion-rules', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), linkedinConnectorController.addConversionRule);
+router.delete('/my/connectors/linkedin', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), linkedinConnectorController.disconnect);
 router.post('/my/integrations/deliveries/:deliveryId/retry', partnerAuth, requirePermission(PERMISSIONS.MANAGE_SETTINGS), integrationController.retryDeliveryHandler);
 
 module.exports = router;
