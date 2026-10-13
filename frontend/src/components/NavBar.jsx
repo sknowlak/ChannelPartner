@@ -4,7 +4,8 @@ import { useAuth } from '../context/AuthContext';
 import { roleLabel } from '../i18n/dataLabels';
 import BrandLogo from './BrandLogo';
 
-export default function NavBar() {
+// `open`: slid in on narrow screens (below 900px it is an off-canvas drawer).
+export default function NavBar({ open = false }) {
   const { t } = useTranslation(['shell', 'team', 'common', 'data']);
   const { partner, logout } = useAuth();
   const navigate = useNavigate();
@@ -22,7 +23,7 @@ export default function NavBar() {
     : t(partner?.role === 'OWNER' ? 'team:roles.owner' : 'team:roles.member');
 
   return (
-    <nav className="nav-bar" aria-label={t('shell:nav.mainNav')}>
+    <nav className={`nav-bar${open ? ' open' : ''}`} aria-label={t('shell:nav.mainNav')}>
       <span className="brand"><BrandLogo size={34} showName={false} /><span>{t('shell:nav.brandName')}<br />{t('shell:nav.brandSub')}</span></span>
       {partner ? (
         <>

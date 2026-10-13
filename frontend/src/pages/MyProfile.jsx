@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { getMyProfile, updateMyProfile } from '../api/client';
 import { useAuth } from '../context/AuthContext';
-import { COMMON_TIMEZONES, detectBrowserTimezone, formatDateTime } from '../utils/timezone';
+import { detectBrowserTimezone, formatDateTime } from '../utils/timezone';
 import { COMMON_CURRENCIES } from '../utils/currency';
 import PhoneInput from '../components/PhoneInput';
 import TeamTabs from '../components/TeamTabs';
@@ -11,6 +11,7 @@ import { focusField } from '../utils/formValidation';
 import LanguageSelect from '../components/LanguageSelect';
 import { roleLabel } from '../i18n/dataLabels';
 import PasswordInput from '../components/PasswordInput';
+import TimezoneSelect from '../components/TimezoneSelect';
 
 export default function MyProfile() {
   const { t } = useTranslation(['team', 'common']);
@@ -162,11 +163,7 @@ export default function MyProfile() {
             </div>
             <div className="field">
               <label>{t('common:fields.timezone')}</label>
-              <select value={form.timezone || 'UTC'} onChange={update('timezone')}>
-                {(COMMON_TIMEZONES.includes(form.timezone) ? COMMON_TIMEZONES : [form.timezone || 'UTC', ...COMMON_TIMEZONES]).map((tz) => (
-                  <option key={tz} value={tz}>{tz}</option>
-                ))}
-              </select>
+              <TimezoneSelect value={form.timezone} onChange={(tz) => setForm((f) => ({ ...f, timezone: tz }))} />
               <button
                 type="button"
                 className="secondary"

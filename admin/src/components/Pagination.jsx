@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { pageWindow } from '../utils/pageWindow';
 
 // Shared pager for the Partners and Registrations tables (same markup both
 // used inline before). Page-size picker and the "Showing x - y of z" line.
@@ -24,7 +25,7 @@ export default function Pagination({ currentPage, totalPages, pageSize, total, s
       <div className="pagination-buttons" role="navigation" aria-label={t('lists:pagination.label')}>
         <button className="page-btn" aria-label={t('lists:pagination.first')} disabled={currentPage <= 1} onClick={() => setPage(1)}>&laquo;</button>
         <button className="page-btn" aria-label={t('lists:pagination.previous')} disabled={currentPage <= 1} onClick={() => setPage((p) => p - 1)}>&lsaquo;</button>
-        {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
+        {pageWindow(currentPage, totalPages).map((p, i) => (p === 'gap' ? <span key={`gap-${i}`} className="page-gap" aria-hidden="true">&hellip;</span> : (
           <button
             key={p}
             className={`page-btn ${p === currentPage ? 'current' : ''}`}
@@ -34,7 +35,7 @@ export default function Pagination({ currentPage, totalPages, pageSize, total, s
           >
             {p}
           </button>
-        ))}
+        )))}
         <button className="page-btn" aria-label={t('lists:pagination.next')} disabled={currentPage >= totalPages} onClick={() => setPage((p) => p + 1)}>&rsaquo;</button>
         <button className="page-btn" aria-label={t('lists:pagination.last')} disabled={currentPage >= totalPages} onClick={() => setPage(totalPages)}>&raquo;</button>
       </div>

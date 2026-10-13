@@ -1,8 +1,11 @@
 import axios from 'axios';
+import { detectBrowserTimezone } from '../utils/timezone';
 
 const BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api/channel-partner';
 
-const client = axios.create({ baseURL: BASE_URL, headers: { 'X-Client-Platform': 'WEB' } });
+// X-Client-Timezone: this browser's zone, so server-made texts (notifications)
+// use local time for people on Automatic timezone (section 60).
+const client = axios.create({ baseURL: BASE_URL, headers: { 'X-Client-Platform': 'WEB', 'X-Client-Timezone': detectBrowserTimezone() } });
 
 client.interceptors.request.use((config) => {
   const token = localStorage.getItem('partnerToken');
@@ -107,5 +110,18 @@ export const regenerateSourceKey = (sourceId) => client.post(`/my/integrations/s
 export const testIntegrationSource = (sourceId, payload = {}) => client.post(`/my/integrations/sources/${sourceId}/test`, payload);
 export const runIntegrationSource = (sourceId) => client.post(`/my/integrations/sources/${sourceId}/run`);
 export const listInboundEvents = (params) => client.get('/my/integrations/inbound-events', { params });
+
+// Connectors (section 59): LinkedIn Lead Gen Forms, ad spend, Conversions API.
+export const listConnectors = () => client.get('/my/connectors');
+export const getLinkedInConnector = () => client.get('/my/connectors/linkedin');
+export const connectLinkedIn = () => client.post('/my/connectors/linkedin/connect');
+export const updateLinkedInConnector = (payload) => client.patch('/my/connectors/linkedin', payload);
+export const refreshLinkedInAccounts = () => client.post('/my/connectors/linkedin/accounts/refresh');
+export const syncLinkedIn = () => client.post('/my/connectors/linkedin/sync');
+export const fetchLinkedInRange = (range) => client.post('/my/connectors/linkedin/fetch-range', range);
+export const disconnectLinkedIn = () => client.delete('/my/connectors/linkedin');
+export const getLinkedInStats = (params) => client.get('/my/connectors/linkedin/stats', { params });
+export const listLinkedInActivity = (params) => client.get('/my/connectors/linkedin/activity', { params });
+export const createLinkedInConversionRule = (payload) => client.post('/my/connectors/linkedin/conversion-rules', payload);
 
 export default client;

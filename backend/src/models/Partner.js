@@ -97,7 +97,11 @@ const partnerSchema = new mongoose.Schema(
     // IANA timezone (e.g. "Asia/Kolkata") - the app is used worldwide, so
     // every timestamp shown to this partner is rendered in this zone
     // instead of assuming a single server/browser timezone (section 32).
-    timezone: { type: String, default: 'UTC' },
+    // '' = Automatic: the device's own timezone (section 60).
+    timezone: { type: String, default: '' },
+    // Last timezone reported by this person's browser (X-Client-Timezone) -
+    // used for server-made texts while timezone is Automatic.
+    deviceTimezone: { type: String, default: '' },
     // Preferred UI language (sections 54-55) - '' = not chosen yet (device/browser
     // decides). Any language in config/languages.json (the generated manifest).
     language: { type: String, default: '', validate: { validator: (v) => v === '' || isSupportedLanguage(v), message: 'Unsupported language' } },

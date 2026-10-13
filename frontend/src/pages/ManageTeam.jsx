@@ -10,6 +10,7 @@ import { PERMISSIONS, permissionLabel } from '../utils/permissions';
 import { findFieldErrors, focusField } from '../utils/formValidation';
 import { csvCell } from '../utils/csv';
 import { groupLabel, roleLabel, userFieldLabel } from '../i18n/dataLabels';
+import { pageWindow } from '../utils/pageWindow';
 
 const GROUP_ORDER = ['Basic Information', 'Preferences'];
 const initialFilters = { search: '', status: '', timezone: '' };
@@ -70,7 +71,6 @@ export default function ManageTeam() {
         setRoles(roleData.roles);
         setFieldDefs(fieldData.definitions.filter((d) => d.isEnabled));
         setRoleId((r) => (r ? r : roleData.roles.find((r2) => r2.name === 'Manager')?.roleId || ''));
-        setValues((v) => (v.timezone ? v : { ...v, timezone: 'UTC' }));
       })
       .catch((err) => setError(err.response?.data?.reason || err.message));
   };
@@ -81,13 +81,16 @@ export default function ManageTeam() {
 
   const activeCount = (members || []).filter((m) => m.status === 'ACTIVE').length;
   const inactiveCount = (members || []).filter((m) => m.status === 'INACTIVE').length;
-  const availableTimezones = members ? [...new Set(members.map((m) => m.timezone))].sort() : [];
+  // '' (Automatic) gets its own filter key - '' already means 'all timezones'.
+  const tzKey = (m) => m.timezone || 'AUTO';
+  const tzText = (key) => (key === 'AUTO' ? t('common:fields.autoTimezoneShort') : key);
+  const availableTimezones = members ? [...new Set(members.map(tzKey))].sort() : [];
 
   const filteredMembers = (members || []).filter((m) => {
     const search = filters.search.trim().toLowerCase();
     if (search && !m.name.toLowerCase().includes(search) && !m.username.toLowerCase().includes(search)) return false;
     if (filters.status && m.status !== filters.status) return false;
-    if (filters.timezone && m.timezone !== filters.timezone) return false;
+    if (filters.timezone && tzKey(m) !== filters.timezone) return false;
     return true;
   });
 
@@ -131,7 +134,7 @@ export default function ManageTeam() {
         payload[def.fieldKey] = def.dataType === 'NUMBER' ? Number(val) : val;
       }
       await createTeamMember(payload);
-      setValues({ timezone: 'UTC' });
+      setValues({});
       setFieldErrors(new Map());
       setShowForm(false);
       load();
@@ -174,7 +177,7 @@ export default function ManageTeam() {
       t('common:fields.role'), t('common:fields.timezone'), t('common:fields.status'), t('team:members.added')
     ];
     const rows = filteredMembers.map((m) => [
-      m.name, m.username, m.mobile || '', m.email || '', m.roleName || '', m.timezone, m.status, formatDateTime(m.createdAt, partner.timezone)
+      m.name, m.username, m.mobile || '', m.email || '', m.roleName || '', tzText(tzKey(m)), m.status, formatDateTime(m.createdAt, partner.timezone)
     ]);
     const csv = [header, ...rows].map((r) => r.map(csvCell).join(',')).join('\n');
     const blob = new Blob([csv], { type: 'text/csv' });
@@ -287,7 +290,7 @@ export default function ManageTeam() {
           <div className="toolbar-right">
             <select value={filters.timezone} onChange={(e) => { setFilters((f) => ({ ...f, timezone: e.target.value })); setPage(1); }}>
               <option value="">{t('team:members.allTimezones')}</option>
-              {availableTimezones.map((tz) => <option key={tz} value={tz}>{tz}</option>)}
+              {availableTimezones.map((tz) => <option key={tz} value={tz}>{tzText(tz)}</option>)}
             </select>
             <button className="pill-export" onClick={exportCsv}>{t('common:actions.export')}</button>
             <label className="hint" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
@@ -322,7 +325,7 @@ export default function ManageTeam() {
                 </td>
                 <td>{m.mobile || m.email || '-'}</td>
                 <td>{m.roleName ? roleLabel(m.roleName) : '-'}</td>
-                <td>{m.timezone}</td>
+                <td>{tzText(tzKey(m))}</td>
                 <td>
                   <label className="toggle-switch" title={m.status === 'ACTIVE' ? t('team:members.toggleActive') : t('team:members.toggleInactive')}>
                     <input type="checkbox" aria-label={t(`common:status.${m.status}`)} checked={m.status === 'ACTIVE'} disabled={!canManageTeam} onChange={() => canManageTeam && toggleStatus(m)} />
@@ -360,8 +363,9 @@ export default function ManageTeam() {
             <div className="pagination-buttons">
               <button className="page-btn" disabled={currentPage <= 1} aria-label={t('team:members.firstPage')} onClick={() => setPage(1)}>&laquo;</button>
               <button className="page-btn" disabled={currentPage <= 1} aria-label={t('team:members.previousPage')} onClick={() => setPage((p) => p - 1)}>&lsaquo;</button>
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
-                <button key={p} className={`page-btn ${p === currentPage ? 'current' : ''}`} onClick={() => setPage(p)}>{p}</button>
+              {pageWindow(currentPage, totalPages).map((p, i) => (p === 'gap'
+                ? <span key={`gap-${i}`} className="page-gap" aria-hidden="true">&hellip;</span>
+                : <button key={p} className={`page-btn ${p === currentPage ? 'current' : ''}`} aria-current={p === currentPage ? 'page' : undefined} onClick={() => setPage(p)}>{p}</button>
               ))}
               <button className="page-btn" disabled={currentPage >= totalPages} aria-label={t('team:members.nextPage')} onClick={() => setPage((p) => p + 1)}>&rsaquo;</button>
               <button className="page-btn" disabled={currentPage >= totalPages} aria-label={t('team:members.lastPage')} onClick={() => setPage(totalPages)}>&raquo;</button>

@@ -21,6 +21,9 @@ import IntegrationApi from './pages/IntegrationApi';
 import EditTeamMember from './pages/EditTeamMember';
 import PartnerJourney from './pages/PartnerJourney';
 import BuilderApp from './builder/BuilderApp';
+import { NavBackdrop, useNavDrawer } from './components/MenuButton';
+import Connectors from './pages/Connectors';
+import LinkedInConnector from './pages/LinkedInConnector';
 
 function Home() {
   const { partner } = useAuth();
@@ -44,11 +47,13 @@ export default function App() {
 }
 
 function PartnerApp() {
+  const drawer = useNavDrawer();
   return (
     <div className="app-shell">
-      <NavBar />
+      <NavBar open={drawer.open} />
+      <NavBackdrop open={drawer.open} onClose={drawer.close} />
       <main className="app-content">
-        <TopBar />
+        <TopBar menuOpen={drawer.open} onMenu={drawer.toggle} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<PartnerLogin />} />
@@ -71,6 +76,8 @@ function PartnerApp() {
           <Route path="/settings/leads/notifications" element={<ProtectedRoute><NotificationSettings /></ProtectedRoute>} />
           <Route path="/settings/users" element={<ProtectedRoute><UserSettings /></ProtectedRoute>} />
           <Route path="/settings/integrations" element={<ProtectedRoute><IntegrationSettings /></ProtectedRoute>} />
+          <Route path="/settings/connectors" element={<ProtectedRoute><Connectors /></ProtectedRoute>} />
+          <Route path="/settings/connectors/linkedin" element={<ProtectedRoute><LinkedInConnector /></ProtectedRoute>} />
           <Route path="/settings/integrations/receive" element={<ProtectedRoute><IntegrationSources kind="RECEIVE" key="RECEIVE" /></ProtectedRoute>} />
           <Route path="/settings/integrations/pull" element={<ProtectedRoute><IntegrationSources kind="PULL" key="PULL" /></ProtectedRoute>} />
           <Route path="/settings/integrations/api" element={<ProtectedRoute><IntegrationApi /></ProtectedRoute>} />

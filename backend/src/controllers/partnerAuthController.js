@@ -91,7 +91,7 @@ async function register(req, res, next) {
       email: email.trim(),
       username: lowerUsername,
       passwordHash: await hashPassword(password),
-      timezone: timezone || 'UTC',
+      timezone: timezone || '',
       currency: currency || 'USD',
       // The language picked on the signup screen becomes the account preference.
       language: isSupportedLanguage(req.body.language) ? req.body.language : '',

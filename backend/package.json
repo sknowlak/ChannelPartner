@@ -9,7 +9,8 @@
     "seed": "node seed/seed.js",
     "test": "jest",
     "test:e2e": "node tests/e2e/accessControl.e2e.mjs && node tests/e2e/securityRegression.e2e.mjs",
-    "test:e2e:integrations": "node tests/e2e/integrations.e2e.mjs"
+    "test:e2e:integrations": "node tests/e2e/integrations.e2e.mjs",
+    "test:e2e:linkedin": "node tests/e2e/linkedin.e2e.mjs"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

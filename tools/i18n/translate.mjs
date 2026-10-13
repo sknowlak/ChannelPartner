@@ -50,7 +50,9 @@ const TERMS = [
   'Leadrat', 'OAuth 2.0', 'OAuth', 'HMAC', 'SHA-256', 'SHA-1', 'SHA-512', 'Base64', 'API', 'URL', 'URLs', 'JSON', 'cURL',
   'CSV', 'HTTPS', 'HTTP', 'BHK', 'UTM', 'CRM', 'CRMs', 'Webhook', 'Webhooks', 'webhook', 'webhooks', 'ID', 'IDs', 'SMS',
   'WhatsApp', 'Zapier', 'n8n', 'Postman', 'Facebook', 'Meta', 'Google', 'Azure', 'DeepL', 'OpenAPI', 'REST', 'GET', 'POST',
-  'PUT', 'PATCH', 'DELETE', 'UTC', 'IST', 'KYC', 'PAN', 'GSTIN', 'RERA', 'IFSC'
+  'PUT', 'PATCH', 'DELETE', 'UTC', 'IST', 'KYC', 'PAN', 'GSTIN', 'RERA', 'IFSC',
+  'LinkedIn Ads', 'LinkedIn', 'Lead Gen Forms Manager', 'Lead Gen Forms', 'Lead Gen Form', 'Conversions API', 'Campaign Manager',
+  'Content Admin'
 ];
 const RTL = new Set(['ar', 'he', 'iw', 'fa', 'ur', 'ps', 'sd', 'ug', 'yi', 'dv', 'ckb', 'ku-Arab', 'pa-Arab', 'ks', 'syr', 'prs']);
 const PLURAL_SUFFIX = /_(zero|one|two|few|many|other)$/;

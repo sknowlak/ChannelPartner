@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { getMyRegistration, getMyRegistrationAudit, listLeadFields } from '../api/client';
 import { useAuth } from '../context/AuthContext';
-import { formatDate, formatDateTime } from '../utils/timezone';
+import { formatDate, formatDateTime, effectiveTimezone } from '../utils/timezone';
 import { sortLeadTabs } from '../utils/leadTabs';
 import { PERMISSIONS } from '../utils/permissions';
 import LeadQuickUpdate, { useLeadWorkflowOptions } from '../components/LeadQuickUpdate';
@@ -151,7 +151,7 @@ export default function PartnerJourney() {
       </div>
 
       <div className="card">
-        <h3>{t('leads:journey.progressHistory')} <span className="hint">{t('leads:journey.timesIn', { timezone: partner.timezone })}</span></h3>
+        <h3>{t('leads:journey.progressHistory')} <span className="hint">{t('leads:journey.timesIn', { timezone: effectiveTimezone(partner.timezone) })}</span></h3>
         <ul className="timeline">
           {events.map((ev) => (
             <li key={ev.auditId}>

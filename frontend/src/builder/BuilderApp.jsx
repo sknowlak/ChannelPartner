@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Navigate, NavLink, Route, Routes, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LanguageSelect from '../components/LanguageSelect';
+import MenuButton, { NavBackdrop, useNavDrawer } from '../components/MenuButton';
 import { rememberLanguage } from '../i18n/language';
 import { isSupportedLocale } from '../i18n/locales';
 import { clearBuilderSession, getBuilderMe, getBuilderSession, updateBuilderMe, updateBuilderSessionUser } from './builderClient';
@@ -51,10 +52,11 @@ export default function BuilderApp() {
     navigate('/builder/login');
   };
   const linkClass = ({ isActive }) => (isActive ? 'active' : undefined);
+  const drawer = useNavDrawer();
 
   return (
     <div className="app-shell">
-      <nav className="nav-bar">
+      <nav className={`nav-bar${drawer.open ? ' open' : ''}`}>
         <span className="brand">Leadrat<br />{t('builder:shell.portal')}</span>{/* i18n-ignore: product name */}
         {user ? (
           <>
@@ -72,8 +74,14 @@ export default function BuilderApp() {
           </>
         )}
       </nav>
+      <NavBackdrop open={drawer.open} onClose={drawer.close} />
       <main className="app-content">
-        <header className="top-bar"><h2>{t('builder:shell.portal')}</h2></header>
+        <header className="top-bar">
+          <div className="top-bar-title">
+            <MenuButton open={drawer.open} onClick={drawer.toggle} label={t('common:actions.openMenu')} />
+            <h2>{t('builder:shell.portal')}</h2>
+          </div>
+        </header>
         <Routes>
           <Route path="login" element={<BuilderLogin />} />
           <Route path="referrals" element={<RequireBuilder><BuilderReferrals /></RequireBuilder>} />

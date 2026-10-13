@@ -207,3 +207,7 @@ table.pro-table .secondary-cell { font-size: 0.8rem; color: #888; }
 }
 .password-toggle:hover { color: #14213d; }
 .password-toggle:focus-visible { outline: 2px solid #14213d; outline-offset: 1px; }
+
+/* Pager: "1 … 49 50 51 … 100" (utils/pageWindow.js) - wraps instead of widening the page */
+.pagination-buttons { flex-wrap: wrap; }
+.page-gap { min-width: 1.6rem; text-align: center; color: #888; user-select: none; }

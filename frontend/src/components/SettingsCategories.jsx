@@ -14,6 +14,7 @@ export default function SettingsCategories() {
       <NavLink to="/settings/leads" className={tabClass}>{t('categories.lead')}</NavLink>
       <NavLink to="/settings/users" className={tabClass}>{t('categories.user')}</NavLink>
       <NavLink to="/settings/integrations" className={tabClass}>{t('categories.integrations')}</NavLink>
+      <NavLink to="/settings/connectors" className={tabClass}>{t('categories.connectors')}</NavLink>
     </div>
   );
 }

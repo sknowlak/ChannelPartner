@@ -70,7 +70,7 @@ const registrationSchema = new mongoose.Schema(
     externalReferenceId: String,
     source: {
       type: String,
-      enum: ['LEADRAT', 'SIMULATED_EXTERNAL_CRM', 'PARTNER_CRM', 'EXTERNAL_API', 'INTEGRATION_CONNECTOR'],
+      enum: ['LEADRAT', 'SIMULATED_EXTERNAL_CRM', 'PARTNER_CRM', 'EXTERNAL_API', 'INTEGRATION_CONNECTOR', 'LINKEDIN'],
       default: 'PARTNER_CRM'
     },
     isBooked: { type: Boolean, default: false },
