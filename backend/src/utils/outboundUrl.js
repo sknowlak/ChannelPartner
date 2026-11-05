@@ -1,5 +1,8 @@
-const dns = require('dns').promises;
+const dnsCallback = require('dns');
 const net = require('net');
+const { Agent } = require('undici');
+
+const dns = dnsCallback.promises;
 
 // SSRF guard for every URL the server calls on a partner's behalf
 // (integration webhooks, notification-rule webhooks). Without it, anyone
@@ -12,6 +15,13 @@ const net = require('net');
 // Callers must also send with `redirect: 'manual'` so a public URL can't
 // 30x-bounce the request to an internal one.
 //
+// The pre-send check alone is not enough: fetch() resolves the hostname
+// AGAIN when it connects, so a DNS-rebinding host (public IP for our check,
+// 127.0.0.1 a moment later) would slip through. Every outbound call is
+// therefore sent through `safeDispatcher` below, whose connect-time DNS
+// lookup refuses blocked addresses - the address that is actually
+// connected to is the one that was checked.
+//
 // For local development against a webhook receiver on your own machine,
 // set ALLOW_PRIVATE_WEBHOOK_TARGETS=true in backend/.env.
 
@@ -21,8 +31,13 @@ const blocked = new net.BlockList();
   ['169.254.0.0', 16], ['172.16.0.0', 12], ['192.0.0.0', 24], ['192.168.0.0', 16],
   ['198.18.0.0', 15], ['224.0.0.0', 4], ['240.0.0.0', 4]
 ].forEach(([addr, prefix]) => blocked.addSubnet(addr, prefix, 'ipv4'));
+// ::/96 (IPv4-compatible, covers :: and ::1), NAT64 (64:ff9b::/96 and the
+// local-use 64:ff9b:1::/48), 6to4 (2002::/16) and the discard prefix
+// (100::/64) all carry or reach an embedded IPv4 address - and with it,
+// possibly an internal one - so none of them is a valid public target.
 [
-  ['::', 128], ['::1', 128], ['fc00::', 7], ['fe80::', 10], ['ff00::', 8]
+  ['::', 96], ['::1', 128], ['64:ff9b::', 96], ['64:ff9b:1::', 48], ['100::', 64], ['2002::', 16],
+  ['fc00::', 7], ['fe80::', 10], ['ff00::', 8]
 ].forEach(([addr, prefix]) => blocked.addSubnet(addr, prefix, 'ipv6'));
 
 function isBlockedAddress(ip) {
@@ -80,4 +95,26 @@ async function outboundUrlProblem(rawUrl) {
   return null;
 }
 
-module.exports = { outboundUrlProblem, urlShapeProblem, isBlockedAddress };
+// dns.lookup with the same rule applied to whatever it returns. Used as
+// the socket's `lookup`, so it runs for the connection itself (node:net
+// skips lookup for IP literals - those are covered by outboundUrlProblem,
+// which every caller runs first).
+function guardedLookup(hostname, options, callback) {
+  const opts = typeof options === 'object' && options !== null ? options : { family: options };
+  dnsCallback.lookup(hostname, { ...opts, all: true }, (err, addresses) => {
+    if (err) return callback(err);
+    if (!privateTargetsAllowed() && (!addresses.length || addresses.some((a) => isBlockedAddress(a.address)))) {
+      const blockedErr = new Error(`Blocked: "${hostname}" resolves to a non-public address`);
+      blockedErr.code = 'EBLOCKEDADDRESS';
+      return callback(blockedErr);
+    }
+    if (opts.all) return callback(null, addresses);
+    return callback(null, addresses[0].address, addresses[0].family);
+  });
+}
+
+// Pass as fetch(url, { dispatcher: safeDispatcher }) for every outbound
+// call made on a partner's behalf.
+const safeDispatcher = new Agent({ connect: { lookup: guardedLookup } });
+
+module.exports = { outboundUrlProblem, urlShapeProblem, isBlockedAddress, guardedLookup, safeDispatcher };

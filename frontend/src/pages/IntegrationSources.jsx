@@ -287,7 +287,7 @@ export default function IntegrationSources({ kind }) {
         </p>
 
         {form && canManage && (
-          <form className="card" onSubmit={save} style={{ background: '#f8f9fb' }}>
+          <form className="card" onSubmit={save} style={{ background: 'var(--surface-2)' }}>
             <div className="form-grid">
               <div className="field">
                 <label>{t('sources.nameRequired')}</label>
@@ -373,7 +373,7 @@ export default function IntegrationSources({ kind }) {
 
             {!isPull && (
               <details>
-                <summary style={{ cursor: 'pointer', fontSize: '0.85rem', fontWeight: 600, color: '#444' }}>{t('receive.security')}</summary>
+                <summary style={{ cursor: 'pointer', fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-2)' }}>{t('receive.security')}</summary>
                 <AuthEditor value={form.verifyAuth} onChange={(verifyAuth) => setForm((f) => ({ ...f, verifyAuth }))} allowedTypes={['NONE', 'HMAC']} direction="inbound" title={t('receive.securityAuthTitle')} />
                 <div className="field">
                   <label>{t('receive.verifyToken')}</label>
@@ -485,7 +485,7 @@ export default function IntegrationSources({ kind }) {
                     <Trans t={t} i18nKey="sources.previewStale" components={{ action: <button type="button" className="link-button" onClick={runTest} /> }} />
                   </p>
                 )}
-                <textarea readOnly rows={10} value={JSON.stringify(test.preview, null, 2)} style={{ width: '100%', fontFamily: 'monospace', fontSize: '0.78rem', background: '#f3f4f7' }} />
+                <textarea readOnly rows={10} value={JSON.stringify(test.preview, null, 2)} style={{ width: '100%', fontFamily: 'monospace', fontSize: '0.78rem', background: 'var(--surface-2)' }} />
               </>
             )}
 

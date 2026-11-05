@@ -2432,6 +2432,17 @@ Prompted by "Timezone UTC - make local timezone for view": every partner and tea
 - Labels that name the zone ("times shown in ...") show the effective zone (`effectiveTimezone()` in `utils/timezone.js`). Manage Team shows "Automatic" in the timezone column, filter and CSV export.
 - Unchanged: the admin portal already defaults to the browser's timezone (its own picker in the top bar); the mobile app uses the phone's.
 
+# 61. Themes and Visual Polish
+
+Prompted by "entire system: app background colour, 3-4 types of view, and a more attractive responsive UI".
+
+- **Themes** in the partner app, builder portal and admin portal: **System** (follows the device's light/dark setting, live), **Light**, **Dark**, **Ocean** (blue) and **Sunset** (warm). Picker in the top bar (palette icon; admin: in the top menu). The choice is kept per device (`localStorage.leadratTheme`) and applied before the first paint by a small inline script in each `index.html`, so pages never flash the wrong colours. The admin portal's Light theme keeps its own maroon so it is never mistaken for the partner app.
+- **How it works**: every colour in `index.css` is now a role token (`--bg`, `--surface`, `--surface-2`, `--selected`, `--border`, `--border-strong`, `--text`, `--text-2`, `--text-muted`, `--text-faint`, `--heading`, `--brand`, `--brand-hover`, `--on-brand`, `--nav-bg`, `--nav-text`, `--nav-active`, `--link`, `--focus`, status pairs `--danger/-bg/-text`, `--success/-bg`, `--warn-bg/-text`, `--info-bg/-text`, `--shadow`, `--viz-1..3`). A theme is one set of values for them (`src/theme.css`, `<html data-theme>`). The conversion was by CSS property and selector, so the same hex became a different role where it meant different things (e.g. `#fff` = card background vs text on a dark button). Vivid action colours (lead row action buttons, status dots, LinkedIn blue, login artwork) are the same in every theme. Native controls follow the theme (`color-scheme`, inputs no longer browser-white in Dark).
+- **Charts**: series colours are tokens too; Dark uses the dark steps of the same hues, validated against the dark card colour (all checks pass).
+- **Polish** (all themes): 12px cards with a soft border and shadow, frosted sticky top bar, consistent inputs with a coloured focus ring, gentle hover lift on buttons, table row hover, theme-coloured thin scrollbars, fluid page titles, smooth colour transitions (off with reduced motion). Phones: larger tap targets, tighter card padding; the admin top menu wraps instead of overflowing.
+- New text (`common:theme.*`) hand-written in en/hi/bn, machine-translated for the other languages.
+- Not covered: the mobile (Expo) app keeps its current look.
+
 # Appendix A. Original Multilingual (i18n) Requirements
 
 The requirements brief the multilingual work was built from (previously the separate file `AI_Prompt_Entire_Application_Multilingual_i18n.md`, merged here on 2026-10-13 so this document is the single spec). What was built is described in sections 54 (English, Hindi, Bengali) and 55 (every language, build-time machine translation).

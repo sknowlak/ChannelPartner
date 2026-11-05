@@ -223,9 +223,8 @@ function openApiSpec(req, res) {
       '/integrations/leads/{registrationId}/progress': {
         post: { summary: 'Change status / sub-status / schedule / note', parameters: [leadId], requestBody: json({ $ref: '#/components/schemas/Progress' }), responses: { 200: { description: 'Updated' } } }
       },
-      '/integrations/leads/{registrationId}/booking': {
-        post: { summary: 'Complete booking (hand over to builder)', parameters: [leadId], requestBody: json({ type: 'object', properties: { externalEventId: { type: 'string' } } }), responses: { 201: { description: 'Booked' } } }
-      },
+      // No booking endpoint here: bookings are confirmed by the builder in the
+      // builder portal only (section 52), never through a partner API key.
       '/integrations/lead-statuses': { get: { summary: 'Your status pipeline', responses: { 200: { description: 'Statuses' } } } },
       '/integrations/lead-fields': { get: { summary: 'Fields a lead can carry', responses: { 200: { description: 'Fields' } } } },
       '/integrations/subscriptions': {

@@ -123,7 +123,7 @@ export default function Partners() {
           />
         </div>
         <div className="toolbar-right">
-          <input placeholder={t('partners:list.cityPlaceholder')} aria-label={t('partners:list.cityPlaceholder')} value={filters.city} onChange={(e) => setFilters((f) => ({ ...f, city: e.target.value }))} style={{ padding: '0.5rem 0.7rem', border: '1px solid #d8dce3', borderRadius: 8 }} />
+          <input placeholder={t('partners:list.cityPlaceholder')} aria-label={t('partners:list.cityPlaceholder')} value={filters.city} onChange={(e) => setFilters((f) => ({ ...f, city: e.target.value }))} style={{ padding: '0.5rem 0.7rem', border: '1px solid var(--border-strong)', borderRadius: 8 }} />
           <select value={filters.kycStatus} onChange={(e) => setFilters((f) => ({ ...f, kycStatus: e.target.value }))} aria-label={t('partners:list.anyKyc')}>
             <option value="">{t('partners:list.anyKyc')}</option>
             {KYC_STATUSES.map((s) => <option key={s} value={s}>{enumLabel('kycStatus', s)}</option>)}

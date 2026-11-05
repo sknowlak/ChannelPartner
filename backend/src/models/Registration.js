@@ -110,6 +110,9 @@ registrationSchema.index({ 'match.mobile': 1, projectId: 1 });
 registrationSchema.index({ 'match.alternateMobile': 1, projectId: 1 });
 registrationSchema.index({ 'match.email': 1, projectId: 1 });
 registrationSchema.index({ projectId: 1, referralStatus: 1 });
+// My Leads (newest first) and incremental "changed since" reads per partner.
+registrationSchema.index({ partnerId: 1, registeredAt: -1 });
+registrationSchema.index({ partnerId: 1, updatedAt: 1, _id: 1 });
 
 // Keeps the phone breakdown and the match keys in step with `contact`.
 registrationSchema.pre('validate', function deriveContactKeys(next) {

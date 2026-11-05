@@ -3,16 +3,29 @@ const { getJwtSecret } = require('../config/jwtSecret');
 
 // Encrypts secrets kept in the database (AES-256-GCM) - used for connector
 // OAuth tokens (section 59), which give access to a partner's ad account
-// and leads. Key: CONNECTOR_ENCRYPTION_KEY (64 hex chars = 32 bytes);
-// without it a key is derived from JWT_SECRET so development works, but a
-// dedicated key should be set in production (rotating JWT_SECRET would
-// otherwise make stored tokens unreadable - partners would reconnect).
+// and leads. Key: CONNECTOR_ENCRYPTION_KEY (64 hex chars = 32 bytes).
+// Outside production a missing key falls back to one derived from
+// JWT_SECRET so development works; with NODE_ENV=production a missing or
+// malformed key is refused (server.js checks at startup, and key() throws
+// on first use) - silently deriving it would tie every stored token to
+// JWT_SECRET, so rotating that secret would make them all unreadable.
 
 const PREFIX = 'enc:v1:';
 let cachedKey = null;
 
+function assertKeyConfigured(env = process.env) {
+  const raw = env.CONNECTOR_ENCRYPTION_KEY || '';
+  if (env.NODE_ENV === 'production' && !/^[0-9a-f]{64}$/i.test(raw)) {
+    throw new Error(
+      'CONNECTOR_ENCRYPTION_KEY must be set in production to 64 hex characters (32 bytes) - '
+      + `e.g. node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"`
+    );
+  }
+}
+
 function key() {
   if (cachedKey) return cachedKey;
+  assertKeyConfigured();
   const raw = process.env.CONNECTOR_ENCRYPTION_KEY || '';
   if (/^[0-9a-f]{64}$/i.test(raw)) cachedKey = Buffer.from(raw, 'hex');
   else cachedKey = crypto.createHash('sha256').update(`leadrat-connector-secrets:${getJwtSecret()}`).digest();
@@ -38,4 +51,4 @@ function open(sealed) {
   return Buffer.concat([decipher.update(buf.subarray(28)), decipher.final()]).toString('utf8');
 }
 
-module.exports = { seal, open };
+module.exports = { seal, open, assertKeyConfigured };

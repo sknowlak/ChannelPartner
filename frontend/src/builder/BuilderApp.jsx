@@ -3,6 +3,7 @@ import { Navigate, NavLink, Route, Routes, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
 import LanguageSelect from '../components/LanguageSelect';
 import MenuButton, { NavBackdrop, useNavDrawer } from '../components/MenuButton';
+import ThemeSelect from '../components/ThemeSelect';
 import { rememberLanguage } from '../i18n/language';
 import { isSupportedLocale } from '../i18n/locales';
 import { clearBuilderSession, getBuilderMe, getBuilderSession, updateBuilderMe, updateBuilderSessionUser } from './builderClient';
@@ -81,6 +82,7 @@ export default function BuilderApp() {
             <MenuButton open={drawer.open} onClick={drawer.toggle} label={t('common:actions.openMenu')} />
             <h2>{t('builder:shell.portal')}</h2>
           </div>
+          <div className="top-bar-user"><ThemeSelect /></div>
         </header>
         <Routes>
           <Route path="login" element={<BuilderLogin />} />

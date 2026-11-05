@@ -24,6 +24,12 @@ const builderAdmin = require('../controllers/admin/builderAdminController');
 
 const router = express.Router();
 
+// Any admin may edit a partner's profile, but setting a new password lets
+// the admin sign in as that partner - Super Admin only. (A username change
+// is gated inside updatePartner, since the edit form always re-sends the
+// unchanged username and only the controller can tell it apart.)
+const superAdminForPasswordReset = (req, res, next) => (req.body?.password ? requireSuperAdmin(req, res, next) : next());
+
 // Public
 router.post('/auth/login', loginRateLimit, login);
 
@@ -38,7 +44,7 @@ router.get('/dashboard', getDashboardSummary);
 router.get('/partners', listPartners);
 router.post('/partners', requireSuperAdmin, createPartner);
 router.get('/partners/:partnerId', getPartner);
-router.patch('/partners/:partnerId', updatePartner);
+router.patch('/partners/:partnerId', superAdminForPasswordReset, updatePartner);
 router.get('/partners/:partnerId/activity', getPartnerActivity);
 
 router.get('/field-definitions', fieldDefinitionController.list);

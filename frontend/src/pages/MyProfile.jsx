@@ -104,7 +104,7 @@ export default function MyProfile() {
       <h1>{t('team:title')}</h1>
       <TeamTabs />
       {error && <div className="error-box">{error}</div>}
-      {saved && <div className="card" style={{ background: '#e1f5e5', color: '#1a7f3c' }}>{t('team:profile.updated')}</div>}
+      {saved && <div className="card" style={{ background: 'var(--success-bg)', color: 'var(--success)' }}>{t('team:profile.updated')}</div>}
 
       <form className="card" onSubmit={handleSubmit} noValidate>
         <div className="edit-form-sections">

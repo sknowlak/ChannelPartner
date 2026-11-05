@@ -1,6 +1,12 @@
 const Admin = require('../../models/Admin');
+const bcrypt = require('bcryptjs');
 const { verifyPassword, issueToken } = require('../../services/adminAuthService');
 const { isSupportedLanguage } = require('../../config/languages');
+
+// Compared against when no active admin has the given email, so a miss costs
+// the same bcrypt time as a wrong password - otherwise the response time
+// tells an attacker which admin emails exist. Computed once at load.
+const DUMMY_HASH = bcrypt.hashSync('timing-equaliser-not-a-real-password', 10);
 
 // POST /api/admin/auth/login
 async function login(req, res, next) {
@@ -10,11 +16,10 @@ async function login(req, res, next) {
       return res.status(400).json({ reason: 'email and password are required' });
     }
 
-    const admin = await Admin.findOne({ email: email.toLowerCase(), status: 'ACTIVE' });
-    if (!admin) return res.status(401).json({ reason: 'Invalid credentials' });
-
-    const valid = await verifyPassword(password, admin.passwordHash);
-    if (!valid) return res.status(401).json({ reason: 'Invalid credentials' });
+    const admin = await Admin.findOne({ email: String(email).toLowerCase(), status: 'ACTIVE' });
+    // bcrypt runs whether or not the account exists (see DUMMY_HASH).
+    const valid = await verifyPassword(String(password), admin ? admin.passwordHash : DUMMY_HASH);
+    if (!admin || !valid) return res.status(401).json({ reason: 'Invalid credentials' });
 
     const token = issueToken(admin);
     return res.json({

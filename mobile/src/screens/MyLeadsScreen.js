@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
 import { useFocusEffect } from '@react-navigation/native';
-import { ActivityIndicator, FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { ActivityIndicator, FlatList, RefreshControl, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { clearSession, listMyLeads } from '../api/client';
 import LanguagePicker from '../components/LanguagePicker';
@@ -14,17 +14,27 @@ export default function MyLeadsScreen({ navigation, onSignedOut }) {
   const { statusLabel } = useDataLabels();
   const [leads, setLeads] = useState(null);
   const [error, setError] = useState(null);
+  const [refreshing, setRefreshing] = useState(false);
 
-  useFocusEffect(
-    useCallback(() => {
+  // A later successful load clears an earlier error (it used to stay above
+  // fresh data); pull to refresh or tap the error to retry.
+  const load = useCallback(
+    () =>
       listMyLeads()
-        .then(({ data }) => setLeads(data.registrations))
-        .catch((err) => setError(errorMessage(err)));
-    }, [])
+        .then(({ data }) => { setError(null); setLeads(data.registrations); })
+        .catch((err) => setError(errorMessage(err))),
+    []
   );
+  useFocusEffect(useCallback(() => { load(); }, [load]));
+
+  const refresh = async () => {
+    setRefreshing(true);
+    await load();
+    setRefreshing(false);
+  };
 
   const signOut = async () => {
-    await clearSession();
+    try { await clearSession(); } catch { /* keychain error: still leave the session */ }
     onSignedOut();
   };
 
@@ -38,15 +48,25 @@ export default function MyLeadsScreen({ navigation, onSignedOut }) {
       </View>
       {/* Switches immediately and saves to the partner's account. */}
       <LanguagePicker onChange={changeAccountLanguage} />
-      {error && <Text style={styles.error}>{error}</Text>}
+      {error && (
+        <TouchableOpacity onPress={refresh} accessibilityRole="button">
+          <Text style={styles.error}>{error} · <Text style={styles.link}>{t('common:actions.retry')}</Text></Text>
+        </TouchableOpacity>
+      )}
       {!leads && !error && <ActivityIndicator accessibilityLabel={t('common:states.loading')} />}
       <FlatList
         data={leads || []}
         keyExtractor={(item) => item.registrationId}
         // Re-render the rows (stage/referral labels) on a language switch.
         extraData={i18n.language}
+        refreshControl={<RefreshControl refreshing={refreshing} onRefresh={refresh} />}
         renderItem={({ item }) => (
-          <TouchableOpacity style={styles.card} onPress={() => navigation.navigate('PartnerJourney', { registrationId: item.registrationId })}>
+          <TouchableOpacity
+            style={styles.card}
+            onPress={() => navigation.navigate('PartnerJourney', { registrationId: item.registrationId })}
+            accessibilityRole="button"
+            accessibilityLabel={`${item.customerName || item.registrationId}, ${statusLabel(item.currentStage)}`}
+          >
             <Text style={styles.name}>{item.customerName || item.registrationId}</Text>
             <Text style={styles.meta}>{item.customerMobile} · {statusLabel(item.currentStage)}</Text>
             <Text style={styles.meta}>{item.isBooked ? t('leads:list.booked') : referralLabel(item.referralStatus)}</Text>

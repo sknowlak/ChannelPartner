@@ -1,7 +1,7 @@
 const IntegrationSource = require('../models/IntegrationSource');
 const { performSend, renderTemplate, renderUrl } = require('./webhookService');
 const { getPath } = require('../utils/jsonPath');
-const { importPayload, extractRecords, previewPayload } = require('./leadImportService');
+const { importPayload, extractRecords, previewPayload, MAX_RECORDS_PER_REQUEST } = require('./leadImportService');
 
 // PULL sources (section 51): Leadrat calls another system's API on a
 // schedule and imports what it returns. Works with any JSON API:
@@ -45,7 +45,9 @@ async function fetchPage(source, url, vars) {
   }
 }
 
-// Walks the pages and calls onPage(json) for each. Returns pages fetched.
+// Walks the pages and calls onPage(json) for each. Returns
+// { pages, truncated } - truncated when it stopped at maxPages while the API
+// still had more to give (the caller must not treat the run as complete).
 async function walkPages(source, onPage, { maxPages }) {
   const p = source.pagination || {};
   const type = p.type || 'NONE';
@@ -55,8 +57,9 @@ async function walkPages(source, onPage, { maxPages }) {
   let cursor = '';
   let nextUrl = '';
   let fetched = 0;
+  let more = true;
 
-  while (fetched < maxPages) {
+  while (more && fetched < maxPages) {
     const vars = templateVars(source, { page, offset, cursor });
     const url = nextUrl || renderUrl(source.url, vars);
     const json = await fetchPage(source, url, vars);
@@ -64,6 +67,7 @@ async function walkPages(source, onPage, { maxPages }) {
     const count = extractRecords(source, json).length;
     await onPage(json);
 
+    more = false;
     if (type === 'NONE' || count === 0) break;
     if (type === 'PAGE') { if (count < pageSize) break; page += 1; }
     if (type === 'OFFSET') { if (count < pageSize) break; offset += pageSize; }
@@ -77,8 +81,9 @@ async function walkPages(source, onPage, { maxPages }) {
       if (!next || typeof next !== 'string' || next === nextUrl) break;
       nextUrl = new URL(next, source.url).toString();
     }
+    more = true;
   }
-  return fetched;
+  return { pages: fetched, truncated: more };
 }
 
 // "Test" in the UI: first page only, nothing imported. Returns the raw
@@ -91,25 +96,43 @@ async function testPull(source) {
 
 // One real run. {{since}} for the next run is this run's START time, so
 // records changed while it was running are picked up next time.
+//
+// A run that stopped at the page limit (or got a page with more records
+// than one import takes) did NOT read everything since lastSince - moving
+// lastSince on would skip the unread records forever. So lastSince stays
+// put and the run is flagged with a warning; the next run re-reads from the
+// same point (already-imported records come back UNCHANGED/UPDATED via
+// their IntegrationLink). If the backlog is bigger than maxPages x pageSize
+// and the API returns oldest first, raise maxPages - the warning says so.
 async function runPull(source) {
   const startedAt = new Date();
   const totals = { pages: 0, received: 0, CREATED: 0, UPDATED: 0, UNCHANGED: 0, DUPLICATE: 0, REJECTED: 0, FAILED: 0 };
   let error = '';
+  let truncated = false;
+  const maxPages = Math.min(source.pagination?.maxPages || 10, HARD_MAX_PAGES);
   try {
-    totals.pages = await walkPages(source, async (json) => {
-      const { summary } = await importPayload(source, json);
+    const walked = await walkPages(source, async (json) => {
+      const { summary, truncated: pageTruncated } = await importPayload(source, json);
+      if (pageTruncated) truncated = true;
       for (const [k, v] of Object.entries(summary)) totals[k] = (totals[k] || 0) + v;
-    }, { maxPages: Math.min(source.pagination?.maxPages || 10, HARD_MAX_PAGES) });
+    }, { maxPages });
+    totals.pages = walked.pages;
+    if (walked.truncated) truncated = true;
   } catch (err) {
     error = err.message;
   }
 
+  const warning = truncated
+    ? `Stopped before reading everything (page limit ${maxPages}, or more than ${MAX_RECORDS_PER_REQUEST} records in one page) - the next run starts from the same point. Raise the page limit if this keeps happening.`
+    : '';
+  if (warning) console.warn('[integrations] pull truncated', source.sourceId, warning);
+
   const update = {
     lastRunAt: startedAt,
-    lastResult: { ...totals, error, finishedAt: new Date() },
+    lastResult: { ...totals, error, truncated, warning, finishedAt: new Date() },
     nextRunAt: new Date(Date.now() + (source.intervalMinutes || 15) * 60 * 1000)
   };
-  if (!error) update.lastSince = startedAt;
+  if (!error && !truncated) update.lastSince = startedAt;
   await IntegrationSource.updateOne({ _id: source._id }, { $set: update });
   return update.lastResult;
 }

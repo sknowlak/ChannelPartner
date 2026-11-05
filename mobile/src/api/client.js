@@ -52,7 +52,9 @@ client.interceptors.response.use(
   async (err) => {
     // Expired/revoked session (password changed, account deactivated).
     if (err.response?.status === 401 && token) {
-      await clearSession();
+      // A keychain failure must not replace the 401 (the user would see a
+      // network error and stay signed in on a dead session).
+      try { await clearSession(); } catch { token = null; }
       onSignedOut();
     }
     return Promise.reject(err);
@@ -63,7 +65,10 @@ client.interceptors.response.use(
 // routes this app used to call were removed (section 52).
 export const login = (username, password) => client.post('/partners/login', { username, password });
 export const listMyLeads = () => client.get('/my/registrations');
-export const createLead = (payload) => client.post('/my/registrations', payload);
+// retryKey: one value per filled-in form, so a timeout retry or a double tap
+// replays the first result instead of being rejected as our own duplicate.
+export const createLead = (payload, retryKey) =>
+  client.post('/my/registrations', payload, retryKey ? { headers: { 'Idempotency-Key': retryKey } } : undefined);
 export const getLead = (registrationId) => client.get(`/my/registrations/${registrationId}`);
 export const getLeadAudit = (registrationId) => client.get(`/my/registrations/${registrationId}/audit`);
 export const updateLeadProgress = (registrationId, payload) => client.post(`/my/registrations/${registrationId}/progress`, payload);

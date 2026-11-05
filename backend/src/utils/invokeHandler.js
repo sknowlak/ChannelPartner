@@ -19,6 +19,15 @@ function invokeHandler(handler, { partnerId, actorLabel, params = {}, body = {},
       role: 'OWNER',
       memberId: null,
       permissions: ALL_PERMISSIONS,
+      // Like Express's req.get / req.header: case-insensitive header lookup.
+      get(name) {
+        const wanted = String(name).toLowerCase();
+        const hit = Object.keys(this.headers || {}).find((h) => h.toLowerCase() === wanted);
+        return hit === undefined ? undefined : this.headers[hit];
+      },
+      header(name) {
+        return this.get(name);
+      },
       ...extra
     };
     const res = {

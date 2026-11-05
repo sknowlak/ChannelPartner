@@ -319,7 +319,7 @@ export default function IntegrationSettings() {
         </p>
 
         {showForm && canManageSettings && (
-          <form className="card" onSubmit={handleSubmit} style={{ background: '#f8f9fb' }}>
+          <form className="card" onSubmit={handleSubmit} style={{ background: 'var(--surface-2)' }}>
             {showCurlImport ? (
               <div className="field">
                 <label>{t('push.curlLabel')}</label>
@@ -377,7 +377,7 @@ export default function IntegrationSettings() {
 
             <AuthEditor value={form.auth} onChange={(auth) => setForm((f) => ({ ...f, auth }))} title={t('push.authTitle')} />
 
-            <div className="card" style={{ background: '#fff', padding: '0.9rem 1rem' }}>
+            <div className="card" style={{ background: 'var(--surface)', padding: '0.9rem 1rem' }}>
               <h4 style={{ margin: '0 0 0.4rem' }}>{t('push.modeTitle')}</h4>
               <label style={{ display: 'flex', gap: '0.4rem', alignItems: 'center', fontWeight: 400 }}>
                 <input type="radio" checked={form.mode === 'SAME'} onChange={() => setForm((f) => ({ ...f, mode: 'SAME' }))} />
@@ -441,7 +441,7 @@ export default function IntegrationSettings() {
                   />
                 )}
                 <details className="field" open={!parseTemplateObject(form.bodyTemplate)}>
-                  <summary style={{ cursor: 'pointer', fontSize: '0.85rem', fontWeight: 600, color: '#444' }}>{t('push.rawTemplate')}</summary>
+                  <summary style={{ cursor: 'pointer', fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-2)' }}>{t('push.rawTemplate')}</summary>
                   <textarea
                     rows={8}
                     value={form.bodyTemplate}
@@ -468,10 +468,10 @@ export default function IntegrationSettings() {
 
             <div className="field">
               <label>{t('push.preview')}</label>
-              <textarea readOnly rows={6} value={buildPreviewBody(form.format, form.bodyTemplate, form.headersText, t('push.previewEmpty'))} style={{ fontFamily: 'monospace', fontSize: '0.8rem', background: '#f3f4f7' }} />
+              <textarea readOnly rows={6} value={buildPreviewBody(form.format, form.bodyTemplate, form.headersText, t('push.previewEmpty'))} style={{ fontFamily: 'monospace', fontSize: '0.8rem', background: 'var(--surface-2)' }} />
             </div>
 
-            <label style={{ fontSize: '0.85rem', fontWeight: 600, color: '#444' }}>{t('push.sendOn')}</label>
+            <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-2)' }}>{t('push.sendOn')}</label>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', margin: '0.5rem 0 1rem' }}>
               {EVENT_OPTIONS.map((ev) => (
                 <label key={ev} style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontWeight: 400 }}>
@@ -529,7 +529,7 @@ export default function IntegrationSettings() {
         {!webhooks && !error && <p className="hint">{t('common:states.loading')}</p>}
 
         {resyncTarget && (
-          <div className="card" style={{ background: '#f8f9fb', marginTop: '1rem' }}>
+          <div className="card" style={{ background: 'var(--surface-2)', marginTop: '1rem' }}>
             <h4 style={{ marginTop: 0 }}>{t('push.syncTitle', { name: resyncTarget.name })}</h4>
             <p className="hint">{t('push.syncHelp')}</p>
             <div className="form-grid">

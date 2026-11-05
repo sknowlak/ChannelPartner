@@ -36,7 +36,7 @@ export default function Login() {
         <div className="login-language">
           <LanguageSelect onChange={changeLanguage} />
         </div>
-        <h2 style={{ marginTop: 0, color: '#3d1421' }}>{t('auth:login.title')}</h2>
+        <h2 style={{ marginTop: 0, color: 'var(--heading)' }}>{t('auth:login.title')}</h2>
         {error && <div className="error-box">{error}</div>}
         <div className="field">
           <label htmlFor="admin-login-email">{t('common:fields.email')}</label>

@@ -84,7 +84,7 @@ export default function Registrations() {
           />
         </div>
         <div className="toolbar-right">
-          <input placeholder={t('registrations:list.projectPlaceholder')} aria-label={t('registrations:list.projectPlaceholder')} value={filters.projectId} onChange={(e) => setFilters((f) => ({ ...f, projectId: e.target.value }))} style={{ padding: '0.5rem 0.7rem', border: '1px solid #d8dce3', borderRadius: 8 }} />
+          <input placeholder={t('registrations:list.projectPlaceholder')} aria-label={t('registrations:list.projectPlaceholder')} value={filters.projectId} onChange={(e) => setFilters((f) => ({ ...f, projectId: e.target.value }))} style={{ padding: '0.5rem 0.7rem', border: '1px solid var(--border-strong)', borderRadius: 8 }} />
           <select value={filters.status} onChange={(e) => setFilters((f) => ({ ...f, status: e.target.value }))} aria-label={t('registrations:list.anyStatus')}>
             <option value="">{t('registrations:list.anyStatus')}</option>
             {REGISTRATION_STATUSES.map((s) => <option key={s} value={s}>{enumLabel('registrationStatus', s)}</option>)}

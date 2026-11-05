@@ -1,3 +1,4 @@
+const bcrypt = require('bcryptjs');
 const Partner = require('../models/Partner');
 const TeamMember = require('../models/TeamMember');
 const Role = require('../models/Role');
@@ -11,6 +12,11 @@ const { generateApiKey, apiKeyFields } = require('../utils/apiKey');
 const { validateMobile } = require('../utils/phone');
 const { isValidEmail } = require('../utils/email');
 const { isSupportedLanguage } = require('../config/languages');
+
+// Compared against when the username matches no account, so a miss costs
+// the same bcrypt time as a wrong password - otherwise the response time
+// tells an attacker which usernames exist. Computed once at load.
+const DUMMY_HASH = bcrypt.hashSync('timing-equaliser-not-a-real-password', 10);
 
 // Fields a partner may set about themselves during self-registration or a
 // later profile update. Deliberately excludes admin/builder-controlled
@@ -185,6 +191,8 @@ async function login(req, res, next) {
       return res.json({ token, role: 'MEMBER', roleName: memberRole?.name || '', permissions, partner: toSafeObject(member) });
     }
 
+    // No such username: still spend a bcrypt comparison (see DUMMY_HASH).
+    await verifyPassword(String(password), DUMMY_HASH);
     return res.status(401).json({ reason: 'Invalid credentials' });
   } catch (err) {
     next(err);

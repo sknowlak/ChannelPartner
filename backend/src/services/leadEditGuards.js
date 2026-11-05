@@ -59,21 +59,25 @@ async function leadEditProblem({ registration, pending, defsByKey }) {
     customerId = (await findOrCreateCustomer({ name: contact.name || pending.name || 'Customer', mobile: identity.mobile })).customerId;
   }
 
-  // Move the atomic protection claim to the new customer + project, so a
-  // simultaneous registration can't slip in between check and save.
-  if ((customerId !== registration.customerId || projectChanging) && registration.protectionExpiry > new Date()) {
+  // Move the atomic protection claims to the new identity + project, so a
+  // simultaneous registration can't slip in between check and save. Any
+  // identity change matters, not just the primary number: claims are held
+  // per number / email (duplicateService.claimKeysFor).
+  if ((identityKeys.length || projectChanging) && registration.protectionExpiry > new Date()) {
     const claim = await claimProtection({
       customerId,
       projectId,
       registrationId: registration.registrationId,
       partnerId: registration.partnerId,
-      expiresAt: registration.protectionExpiry
+      expiresAt: registration.protectionExpiry,
+      ...identity
     });
-    if (!claim.claimed && claim.holder.registrationId !== registration.registrationId) {
+    if (!claim.claimed) {
       return problem(409, 'This customer was just registered for that project by someone else', identityKeys[0] || 'projectId');
     }
+    // Give up the keys of the old number / email / project.
     await RegistrationClaim.updateMany(
-      { registrationId: registration.registrationId, key: { $ne: `${customerId}|${projectId}` } },
+      { registrationId: registration.registrationId, key: { $nin: claim.keys } },
       { $set: { expiresAt: new Date() } }
     );
   }

@@ -10,12 +10,16 @@ const MARKER = 'timezone-automatic-2026-10';
 
 async function runTimezoneMigration() {
   const migrations = mongoose.connection.db.collection('migrations');
-  const claimed = await migrations.updateOne({ _id: MARKER }, { $setOnInsert: { ranAt: new Date() } }, { upsert: true });
-  if (!claimed.upsertedCount) return null; // already done
+  if (await migrations.findOne({ _id: MARKER })) return null; // already done
   const [partners, members] = await Promise.all([
     Partner.updateMany({ timezone: 'UTC' }, { $set: { timezone: '' } }),
     TeamMember.updateMany({ timezone: 'UTC' }, { $set: { timezone: '' } })
   ]);
+  // Marker only AFTER the updates: written first, a crash (or DB error)
+  // part-way left it marked done with accounts never moved. Both updates
+  // are idempotent, so running twice (two instances starting together) is
+  // harmless.
+  await migrations.updateOne({ _id: MARKER }, { $setOnInsert: { ranAt: new Date() } }, { upsert: true });
   console.log(`[migration] timezone: ${partners.modifiedCount} partner(s), ${members.modifiedCount} team member(s) moved from UTC to Automatic`);
   return { partners: partners.modifiedCount, members: members.modifiedCount };
 }

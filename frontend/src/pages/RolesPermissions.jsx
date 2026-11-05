@@ -113,7 +113,7 @@ export default function RolesPermissions() {
             <label>{t('team:rolesPage.roleName')}</label>
             <input value={form.name} onChange={(e) => setForm((f) => ({ ...f, name: e.target.value }))} required />
           </div>
-          <label style={{ fontSize: '0.85rem', fontWeight: 600, color: '#444' }}>{t('team:rolesPage.permissions')}</label>
+          <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-2)' }}>{t('team:rolesPage.permissions')}</label>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', margin: '0.5rem 0 1rem' }}>
             {ALL_PERMISSIONS.map((perm) => (
               <label key={perm} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 400 }}>

@@ -4,7 +4,7 @@ const Registration = require('../models/Registration');
 const { contactView } = require('../utils/contact');
 const Partner = require('../models/Partner');
 const { nextId } = require('../utils/idGenerator');
-const { outboundUrlProblem } = require('../utils/outboundUrl');
+const { outboundUrlProblem, safeDispatcher } = require('../utils/outboundUrl');
 const { redactHeaders, restoreRedacted } = require('../utils/secretHeaders');
 const IntegrationLink = require('../models/IntegrationLink');
 const { applyAuth, invalidateToken } = require('./httpAuthService');
@@ -171,11 +171,14 @@ async function readCapped(res, limit) {
 // notification-rule webhooks. The URL is re-checked right before every send
 // (utils/outboundUrl.js) and redirects are not followed. `auth` is applied
 // last (httpAuthService), so tokens/keys/signatures never reach the caller's
-// log; an OAuth2 401 refreshes the token and retries once.
+// log; an OAuth2 401 refreshes the token and retries once. `authOwner`
+// ("partnerId|connectorId") keeps a cached OAuth2 token to that connection.
+// The request goes through safeDispatcher, which re-checks the address the
+// hostname resolves to at connect time (DNS rebinding).
 //
 // Result: { status, httpStatus, responseBody (first 2000 chars, for the log),
 // responseText (up to maxResponseChars, for parsing), errorMessage, retryable }.
-async function performSend(url, method, headers, body, { auth, maxResponseChars = MAX_RESPONSE_CHARS } = {}) {
+async function performSend(url, method, headers, body, { auth, authOwner = '', maxResponseChars = MAX_RESPONSE_CHARS } = {}) {
   const result = { status: 'FAILED', httpStatus: null, responseBody: '', responseText: '', errorMessage: '', retryable: false };
   const problem = await outboundUrlProblem(url);
   if (problem) {
@@ -186,7 +189,7 @@ async function performSend(url, method, headers, body, { auth, maxResponseChars 
   for (let attempt = 0; attempt < 2; attempt += 1) {
     let request;
     try {
-      request = await applyAuth(auth, { url, headers, body });
+      request = await applyAuth(auth, { url, headers, body }, { owner: authOwner });
     } catch (err) {
       result.errorMessage = err.message;
       result.retryable = true;
@@ -201,13 +204,14 @@ async function performSend(url, method, headers, body, { auth, maxResponseChars 
         headers: request.headers,
         body: BODYLESS_METHODS.includes(method) ? undefined : body,
         signal: controller.signal,
-        redirect: 'manual'
+        redirect: 'manual',
+        dispatcher: safeDispatcher
       });
       result.httpStatus = res.status;
 
       if (res.status === 401 && auth?.type === 'OAUTH2' && attempt === 0) {
         res.body?.cancel().catch(() => {});
-        invalidateToken(auth); // expired/revoked token - fetch a fresh one and try once more
+        invalidateToken(auth, authOwner); // expired/revoked token - fetch a fresh one and try once more
         continue;
       }
       if (res.status >= 300 && res.status < 400) {
@@ -224,6 +228,11 @@ async function performSend(url, method, headers, body, { auth, maxResponseChars 
       }
       return result;
     } catch (err) {
+      if (err.cause?.code === 'EBLOCKEDADDRESS') {
+        // The hostname re-resolved to an internal address at connect time.
+        result.errorMessage = err.cause.message;
+        return result;
+      }
       result.errorMessage = err.name === 'AbortError' ? `Request timed out after ${SEND_TIMEOUT_MS / 1000}s` : err.message;
       result.retryable = true;
       return result;
@@ -283,17 +292,46 @@ function storedOutcome(outcome) {
   return rest;
 }
 
+const authOwnerOf = (webhook) => `${webhook.partnerId}|${webhook.webhookId}`;
+
+// Pushes for the same lead to the same webhook run one at a time. In
+// CREATE_UPDATE mode create-vs-update depends on the IntegrationLink, which
+// is only written once the create response is back - without this,
+// LEAD_CREATED immediately followed by STAGE_UPDATED would both see "no
+// link yet" and create the lead twice in the target CRM. It also keeps a
+// lead's events reaching the target in the order they happened.
+// In-process only: with several backend instances two pushes for one lead
+// could still overlap (rare - a lead's events come from one request at a
+// time); a shared lock (e.g. a Mongo lease document) would close that.
+const pushChains = new Map(); // "webhookId|registrationId" -> tail promise
+function serialisePush(webhook, registrationId, fn) {
+  const key = `${webhook.webhookId}|${registrationId}`;
+  const run = (pushChains.get(key) || Promise.resolve()).then(fn);
+  const tail = run.catch(() => {});
+  pushChains.set(key, tail);
+  tail.then(() => { if (pushChains.get(key) === tail) pushChains.delete(key); });
+  return run;
+}
+
+function buildPush(webhook, op, basePayload) {
+  const payload = { ...basePayload, external: { id: op.link?.externalId || '' } };
+  const { headers, body } = buildRequest(webhook, payload, { bodyTemplate: op.bodyTemplate, method: op.method });
+  return { url: renderUrl(op.url, payload), method: op.method, headers, body };
+}
+
 // Sends one webhook and always writes a WebhookDelivery row - "I should get
 // all updates failed, pass, or where its problem" - never throws, so a
 // caller doing Promise.all() across several webhooks can't have one bad
 // target blow up the others.
-async function sendWebhook(webhook, basePayload, eventType, registrationId, partnerId) {
-  const op = await resolveOperation(webhook, registrationId);
-  const payload = { ...basePayload, external: { id: op.link?.externalId || '' } };
-  const { headers, body } = buildRequest(webhook, payload, { bodyTemplate: op.bodyTemplate, method: op.method });
-  const url = renderUrl(op.url, payload);
+function sendWebhook(webhook, basePayload, eventType, registrationId, partnerId) {
+  return serialisePush(webhook, registrationId, () => sendWebhookNow(webhook, basePayload, eventType, registrationId, partnerId));
+}
 
-  const outcome = await performSend(url, op.method, headers, body, { auth: webhook.auth, maxResponseChars: LINK_RESPONSE_CHARS });
+async function sendWebhookNow(webhook, basePayload, eventType, registrationId, partnerId) {
+  const op = await resolveOperation(webhook, registrationId);
+  const { url, headers, body } = buildPush(webhook, op, basePayload);
+
+  const outcome = await performSend(url, op.method, headers, body, { auth: webhook.auth, authOwner: authOwnerOf(webhook), maxResponseChars: LINK_RESPONSE_CHARS });
   if (op.operation !== 'UPDATE') await recordExternalId(webhook, registrationId, outcome);
 
   const deliveryId = await nextId('DLV');
@@ -340,17 +378,57 @@ async function triggerWebhooks(partnerId, eventType, registration) {
 // whatever the lead looks like now. Auth is applied fresh (a new OAuth2
 // token, a new signature). Used by the Retry button and the automatic
 // retry scheduler.
+//
+// A deleted or disabled webhook is never retried: the stored headers hold
+// [REDACTED] placeholders and the credentials live only on the webhook, so
+// the request would go out unauthenticated (to a target the partner
+// switched off). The delivery is closed instead.
 async function retryDelivery(partnerId, deliveryId) {
   const delivery = await WebhookDelivery.findOne({ deliveryId, partnerId });
   if (!delivery) return { error: 'Delivery not found' };
 
   const webhook = await IntegrationWebhook.findOne({ webhookId: delivery.webhookId, partnerId });
-  const headers = restoreRedacted(delivery.requestHeaders, webhook?.headers);
-  const outcome = await performSend(delivery.requestUrl, delivery.requestMethod, headers, delivery.requestBody, {
-    auth: webhook?.auth,
+  if (!webhook || !webhook.isEnabled) {
+    const reason = webhook ? 'the webhook is disabled - enable it to retry' : 'the webhook was deleted';
+    delivery.nextRetryAt = null;
+    delivery.errorMessage = `${delivery.errorMessage ? `${delivery.errorMessage} | ` : ''}Not retried: ${reason}`.slice(0, 2000);
+    await delivery.save();
+    return { error: `Not retried: ${reason}` };
+  }
+  return serialisePush(webhook, delivery.registrationId, () => replayDelivery(webhook, delivery));
+}
+
+async function replayDelivery(webhook, delivery) {
+  let url = delivery.requestUrl;
+  let method = delivery.requestMethod;
+  let headers = restoreRedacted(delivery.requestHeaders, webhook.headers);
+  let body = delivery.requestBody;
+
+  // A failed CREATE whose lead was created in the target by a later push
+  // must not be replayed as-is (that would duplicate the record there):
+  // the update request is sent instead, built from the lead as it is now.
+  if (delivery.operation === 'CREATE') {
+    const op = await resolveOperation(webhook, delivery.registrationId);
+    if (op.operation === 'UPDATE') {
+      const reg = await Registration.findOne({ partnerId: webhook.partnerId, registrationId: delivery.registrationId });
+      if (!reg) {
+        delivery.nextRetryAt = null;
+        delivery.errorMessage = 'Not retried: the lead is already in the target system and no longer exists here';
+        await delivery.save();
+        return { delivery };
+      }
+      const partner = await Partner.findOne({ partnerId: webhook.partnerId });
+      ({ url, method, headers, body } = buildPush(webhook, op, buildLeadPayload(reg, null, delivery.eventType, partner)));
+      Object.assign(delivery, { operation: 'UPDATE', requestUrl: url, requestMethod: method, requestHeaders: redactHeaders(headers), requestBody: body });
+    }
+  }
+
+  const outcome = await performSend(url, method, headers, body, {
+    auth: webhook.auth,
+    authOwner: authOwnerOf(webhook),
     maxResponseChars: LINK_RESPONSE_CHARS
   });
-  if (webhook && delivery.operation !== 'UPDATE') await recordExternalId(webhook, delivery.registrationId, outcome);
+  if (delivery.operation !== 'UPDATE') await recordExternalId(webhook, delivery.registrationId, outcome);
 
   delivery.status = outcome.status;
   delivery.httpStatus = outcome.httpStatus;
@@ -382,6 +460,12 @@ async function processDueRetries() {
   } finally {
     retrying = false;
   }
+}
+
+// Called when a webhook is deleted or disabled: nothing scheduled for it
+// may go out any more.
+async function cancelPendingRetries(partnerId, webhookId) {
+  await WebhookDelivery.updateMany({ partnerId, webhookId, nextRetryAt: { $ne: null } }, { $set: { nextRetryAt: null } });
 }
 
 function startRetryScheduler() {
@@ -455,5 +539,6 @@ module.exports = {
   performSend,
   sendTestPush,
   startRetryScheduler,
-  processDueRetries
+  processDueRetries,
+  cancelPendingRetries
 };

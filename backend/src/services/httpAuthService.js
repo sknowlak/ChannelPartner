@@ -1,5 +1,5 @@
 const crypto = require('crypto');
-const { outboundUrlProblem } = require('../utils/outboundUrl');
+const { outboundUrlProblem, safeDispatcher } = require('../utils/outboundUrl');
 
 // How Leadrat authenticates to SOMEONE ELSE's API (section 51) - shared by
 // push webhooks and pull sources. Static headers alone (the old model)
@@ -93,16 +93,23 @@ function maskAuth(auth) {
 
 const tokenCache = new Map(); // cacheKey -> { token, expiresAt }
 
-function tokenCacheKey(auth) {
-  return `${auth.tokenUrl}|${auth.clientId}|${auth.scope}|${auth.audience}`;
+// A cached token is only reused by the SAME connection: the key covers the
+// owner (partner + connector, passed by the caller) and the client secret,
+// so another tenant who types in the same token URL / client ID / scope -
+// but not the secret - can never be handed someone else's token. Hashed
+// so the secret itself never sits in the map's keys.
+function tokenCacheKey(auth, owner = '') {
+  return crypto.createHash('sha256')
+    .update(JSON.stringify([String(owner), auth.tokenUrl, auth.clientId, auth.clientSecret, auth.scope, auth.audience, auth.clientAuth]))
+    .digest('hex');
 }
 
-function invalidateToken(auth) {
-  if (auth?.type === 'OAUTH2') tokenCache.delete(tokenCacheKey(auth));
+function invalidateToken(auth, owner = '') {
+  if (auth?.type === 'OAUTH2') tokenCache.delete(tokenCacheKey(auth, owner));
 }
 
-async function fetchOAuthToken(auth) {
-  const key = tokenCacheKey(auth);
+async function fetchOAuthToken(auth, owner = '') {
+  const key = tokenCacheKey(auth, owner);
   const cached = tokenCache.get(key);
   if (cached && cached.expiresAt > Date.now() + 30000) return cached.token;
 
@@ -123,7 +130,7 @@ async function fetchOAuthToken(auth) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), TOKEN_TIMEOUT_MS);
   try {
-    const res = await fetch(auth.tokenUrl, { method: 'POST', headers, body: params.toString(), signal: controller.signal, redirect: 'manual' });
+    const res = await fetch(auth.tokenUrl, { method: 'POST', headers, body: params.toString(), signal: controller.signal, redirect: 'manual', dispatcher: safeDispatcher });
     const text = (await res.text()).slice(0, 20000);
     let data;
     try { data = JSON.parse(text); } catch { data = Object.fromEntries(new URLSearchParams(text)); }
@@ -150,7 +157,9 @@ function hmacSignature(auth, body) {
 
 // Returns the url + headers to actually send. Applied AFTER the request is
 // logged, so tokens, keys and signatures never land in the delivery log.
-async function applyAuth(auth, { url, headers = {}, body }) {
+// `owner` identifies the connection (e.g. "partnerId|webhookId") and scopes
+// the OAuth2 token cache to it.
+async function applyAuth(auth, { url, headers = {}, body }, { owner = '' } = {}) {
   const out = { url, headers: { ...headers } };
   if (!auth || auth.type === 'NONE') return out;
 
@@ -171,7 +180,7 @@ async function applyAuth(auth, { url, headers = {}, body }) {
       }
       break;
     case 'OAUTH2':
-      out.headers.Authorization = `Bearer ${await fetchOAuthToken(auth)}`;
+      out.headers.Authorization = `Bearer ${await fetchOAuthToken(auth, owner)}`;
       break;
     case 'HMAC':
       out.headers[auth.signatureHeader || 'X-Signature'] = hmacSignature(auth, body);

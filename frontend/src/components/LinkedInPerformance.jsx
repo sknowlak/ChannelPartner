@@ -10,9 +10,10 @@ import DailyBarChart from './DailyBarChart';
 // per-campaign breakdown.
 
 const RANGES = [7, 30, 90];
-const SERIES_LINKEDIN = '#2a78d6'; // validated categorical slot 1
-const SERIES_CREATED = '#eb6834'; // slot 2
-const SERIES_SPEND = '#6250d6'; // slot 7, single series
+// Validated categorical slots; light/dark steps come from the theme (theme.css).
+const SERIES_LINKEDIN = 'var(--viz-1)';
+const SERIES_CREATED = 'var(--viz-2)';
+const SERIES_SPEND = 'var(--viz-3)'; // single series
 
 const ymd = (d) => d.toISOString().slice(0, 10);
 

@@ -5,6 +5,8 @@ import App from './App.jsx';
 import { AuthProvider } from './context/AuthContext.jsx';
 import { i18nReady } from './i18n';
 import './index.css';
+// Theme tokens + polish after index.css so they win at equal specificity.
+import './theme.css';
 
 // Render once English + the starting language are loaded (section 55).
 i18nReady.finally(() => ReactDOM.createRoot(document.getElementById('root')).render(

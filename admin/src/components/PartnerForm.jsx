@@ -114,7 +114,7 @@ export default function PartnerForm({ fieldDefinitions, values, onChange, mode }
     <>
       {groups.map((group) => (
         <div key={group} style={{ marginBottom: '1.2rem' }}>
-          <h4 style={{ margin: '0 0 0.6rem', color: '#3d1421' }}>{groupLabel(group)}</h4>
+          <h4 style={{ margin: '0 0 0.6rem', color: 'var(--heading)' }}>{groupLabel(group)}</h4>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0 1rem' }}>
             {renderable.filter((d) => d.group === group).map((def) => (
               <div className="field" key={def.fieldKey}>

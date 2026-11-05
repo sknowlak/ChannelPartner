@@ -25,6 +25,7 @@ export default function PartnerJourneyScreen({ route }) {
   const load = useCallback(async () => {
     try {
       const [{ data: d }, { data: audit }, { data: st }] = await Promise.all([getLead(registrationId), getLeadAudit(registrationId), listStatuses()]);
+      setError(null);
       setDetail(d);
       setEvents(audit.events);
       setStages(st.statuses.filter((s) => s.isActive && !s.isBooking && !s.requiresSchedule).map((s) => s.name));
@@ -35,9 +36,16 @@ export default function PartnerJourneyScreen({ route }) {
 
   useFocusEffect(useCallback(() => { load(); }, [load]));
 
+  // The next stage on the partner's pipeline. A lead whose current stage is
+  // not on that list (e.g. a scheduled stage set on the web) has no "next" -
+  // indexOf -1 used to offer "Move to <first stage>" and reset the lead.
+  const nextStageOf = (current) => {
+    const i = stages.indexOf(current);
+    return i === -1 ? undefined : stages[i + 1];
+  };
+
   const advanceStage = async () => {
-    const current = stages.indexOf(detail.registration.currentStage);
-    const next = stages[current + 1];
+    const next = nextStageOf(detail.registration.currentStage);
     if (!next) return;
     setBusy(true);
     setError(null);
@@ -51,9 +59,22 @@ export default function PartnerJourneyScreen({ route }) {
     }
   };
 
-  if (!detail) return <View style={styles.container}>{error ? <Text style={styles.error}>{error}</Text> : <ActivityIndicator accessibilityLabel={t('common:states.loading')} />}</View>;
+  if (!detail) {
+    return (
+      <View style={styles.container}>
+        {error ? (
+          <>
+            <Text style={styles.error}>{error}</Text>
+            <TouchableOpacity style={styles.secondaryButton} onPress={load} accessibilityRole="button">
+              <Text style={styles.secondaryButtonText}>{t('common:actions.retry')}</Text>
+            </TouchableOpacity>
+          </>
+        ) : <ActivityIndicator accessibilityLabel={t('common:states.loading')} />}
+      </View>
+    );
+  }
   const { registration, customer } = detail;
-  const nextStage = stages[stages.indexOf(registration.currentStage) + 1];
+  const nextStage = nextStageOf(registration.currentStage);
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
@@ -70,7 +91,7 @@ export default function PartnerJourneyScreen({ route }) {
       </View>
 
       {!registration.isBooked && nextStage && (
-        <TouchableOpacity style={styles.secondaryButton} disabled={busy} onPress={advanceStage}>
+        <TouchableOpacity style={styles.secondaryButton} disabled={busy} onPress={advanceStage} accessibilityRole="button">
           {busy ? <ActivityIndicator /> : <Text style={styles.secondaryButtonText}>{t('leads:journey.moveTo', { stage: statusLabel(nextStage) })}</Text>}
         </TouchableOpacity>
       )}

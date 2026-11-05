@@ -26,6 +26,18 @@ function roleWithinReach(req, role) {
   return (role?.permissions || []).every((p) => req.permissions.includes(p));
 }
 
+// Resetting someone's password is effectively logging in as them, so it
+// needs a strictly higher level than "within reach": the target's
+// permissions must be a STRICT subset of the caller's. Otherwise two peers
+// with the same role (e.g. two Admins) could take over each other's
+// accounts. The account owner is exempt (they own every account anyway).
+function roleStrictlyBelow(req, role) {
+  if (req.role === 'OWNER') return true;
+  const target = role?.permissions || [];
+  if (!roleWithinReach(req, role)) return false;
+  return req.permissions.some((p) => !target.includes(p));
+}
+
 async function defaultRoleId(partnerId) {
   const manager = await Role.findOne({ partnerId, name: 'Manager' });
   return manager ? manager.roleId : null;
@@ -183,6 +195,9 @@ async function updateTeamMember(req, res, next) {
       return res.status(400).json({ reason: 'Enter a valid email address', fieldKey: 'email' });
     }
     if (password) {
+      if (!roleStrictlyBelow(req, currentRole)) {
+        return res.status(403).json({ reason: "You can only reset the password of a team member whose role has fewer permissions than yours", fieldKey: 'password' });
+      }
       const problem = passwordProblem(password);
       if (problem) return res.status(400).json({ reason: problem, fieldKey: 'password' });
       member.passwordHash = await hashPassword(password);
@@ -266,4 +281,4 @@ async function deleteTeamMember(req, res, next) {
   }
 }
 
-module.exports = { listTeam, getTeamMember, createTeamMember, updateTeamMember, deleteTeamMember };
+module.exports = { listTeam, getTeamMember, createTeamMember, updateTeamMember, deleteTeamMember, roleWithinReach, roleStrictlyBelow };

@@ -207,9 +207,13 @@ async function importRecord(source, record, ctx, defsByKey) {
 }
 
 // Imports every record in a payload. Returns counts per outcome plus
-// per-record results (first 20) for the caller.
+// per-record results (first 20) for the caller. Only the first
+// MAX_RECORDS_PER_REQUEST records are taken; `truncated` says some were left
+// out, so a scheduled pull knows it did not read everything.
 async function importPayload(source, body) {
-  const records = extractRecords(source, body).slice(0, MAX_RECORDS_PER_REQUEST);
+  const allRecords = extractRecords(source, body);
+  const records = allRecords.slice(0, MAX_RECORDS_PER_REQUEST);
+  const truncated = allRecords.length > records.length;
   const defs = await listFieldDefinitions(source.partnerId);
   const defsByKey = Object.fromEntries(defs.filter((d) => d.isEnabled).map((d) => [d.fieldKey, d]));
   const ctx = { partnerId: source.partnerId, actorLabel: `${source.name} (Integration)` };
@@ -221,7 +225,7 @@ async function importPayload(source, body) {
     summary[result.outcome] += 1;
     if (results.length < 20) results.push(result);
   }
-  return { summary, results };
+  return { summary, results, truncated };
 }
 
 // Dry run for the mapping UI: what each record WOULD become, nothing saved.

@@ -1,9 +1,11 @@
 const Registration = require('../models/Registration');
 const ProgressEvent = require('../models/ProgressEvent');
+const Ownership = require('../models/Ownership');
+const AuditEvent = require('../models/AuditEvent');
 const Booking = require('../models/Booking');
 const CommissionEligibility = require('../models/CommissionEligibility');
 const { nextId } = require('../utils/idGenerator');
-const { findDuplicate, findOrCreateCustomer, claimProtection } = require('../services/duplicateService');
+const { findDuplicate, findOrCreateCustomer, claimProtection, releaseClaim } = require('../services/duplicateService');
 const { createInitialOwnership, getOwnership } = require('../services/ownershipService');
 const { leadEditProblem } = require('../services/leadEditGuards');
 const { fieldValueProblem } = require('../utils/fieldValues');
@@ -84,6 +86,45 @@ const REQUIREMENT_FIELDS = [
   'requirementType', 'propertyType', 'bhk', 'budgetMin', 'budgetMax',
   'preferredLocation', 'possessionTimeline', 'leadSource', 'notes'
 ];
+const NUMERIC_REQUIREMENT_FIELDS = ['budgetMin', 'budgetMax'];
+const REGISTRATION_SOURCES = Registration.schema.path('source').enumValues;
+
+// Checks `source` and the requirement fields BEFORE the protection claim is
+// taken: a value Mongoose would refuse (an unknown source, budgetMin "abc",
+// an object) used to fail Registration.create after the claim, leaving the
+// customer blocked for the whole protection window by a lead that never
+// existed. Returns { problem } or { requirementDetails } (numbers coerced).
+function requirementDetailsFrom(body) {
+  if (body.source !== undefined && body.source !== '' && !REGISTRATION_SOURCES.includes(body.source)) {
+    return { problem: { reason: `source must be one of ${REGISTRATION_SOURCES.join(', ')}`, fieldKey: 'source' } };
+  }
+  const requirementDetails = {};
+  for (const field of REQUIREMENT_FIELDS) {
+    const value = body[field];
+    if (value === undefined || value === null || value === '') continue;
+    if (NUMERIC_REQUIREMENT_FIELDS.includes(field)) {
+      const n = typeof value === 'number' ? value : typeof value === 'string' && value.trim() !== '' ? Number(value) : NaN;
+      if (!Number.isFinite(n)) return { problem: { reason: `${field} must be a number`, fieldKey: field } };
+      requirementDetails[field] = n;
+    } else {
+      if (typeof value === 'object') return { problem: { reason: `${field} must be text`, fieldKey: field } };
+      requirementDetails[field] = String(value);
+    }
+  }
+  return { requirementDetails };
+}
+
+// Undoes a create that failed after its claim was taken, so the customer
+// isn't left protected by (or half-registered as) a lead that never finished.
+async function rollBackCreate(registrationId) {
+  await Promise.all([
+    Registration.deleteOne({ registrationId }),
+    Ownership.deleteMany({ registrationId }),
+    ProgressEvent.deleteMany({ registrationId }),
+    AuditEvent.deleteMany({ registrationId })
+  ]).catch((err) => console.error('[registrations] rollback cleanup failed', registrationId, err));
+  await releaseClaim(registrationId);
+}
 
 // POST /api/channel-partner/my/registrations
 async function createMyRegistration(req, res, next) {
@@ -142,6 +183,12 @@ async function createMyRegistration(req, res, next) {
     const { error: projectError } = await resolveProject(projectId);
     if (projectError) return res.status(400).json({ status: 'ERROR', reason: projectError, fieldKey: 'projectId' });
 
+    if (externalReferenceId !== undefined && externalReferenceId !== null && typeof externalReferenceId === 'object') {
+      return res.status(400).json({ status: 'ERROR', reason: 'externalReferenceId must be text', fieldKey: 'externalReferenceId' });
+    }
+    const { problem: requirementProblem, requirementDetails } = requirementDetailsFrom(req.body);
+    if (requirementProblem) return res.status(400).json({ status: 'ERROR', ...requirementProblem });
+
     const customFieldValues = {};
     for (const def of fieldDefs) {
       if (def.scope === 'custom' && def.isEnabled && req.body[def.fieldKey] !== undefined && req.body[def.fieldKey] !== '') {
@@ -160,14 +207,22 @@ async function createMyRegistration(req, res, next) {
       changes.push({ fieldKey: def.fieldKey, label: def.label, value });
     }
 
-    const { result } = await withIdempotency(externalReferenceId, 'createMyRegistration', async () => {
+    // A client retry key (Idempotency-Key header, e.g. the mobile app's per-form
+    // UUID) takes precedence over the CRM reference, so a timeout retry or a
+    // double tap replays the first result instead of hitting our own lead as a
+    // duplicate - and reusing a CRM reference for a new customer is not needed.
+    const retryKey = String(req.get('Idempotency-Key') || '').trim().slice(0, 128);
+    const idempotencyKey = retryKey ? `key:${retryKey}` : externalReferenceId;
+    const { result } = await withIdempotency(idempotencyKey, 'createMyRegistration', async () => {
       const rejectDuplicate = async (existingRegistrationId, protectedUntil) => {
+        // Written on the EXISTING owner's lead, whose partner reads this
+        // timeline - so no trace of who tried (section 52): not the other
+        // partner's ID, staff name or lead source.
         await logEvent({
           registrationId: existingRegistrationId,
           eventType: 'REGISTRATION_ATTEMPT_REJECTED',
-          actor: req.actorLabel,
-          source: source || 'PARTNER_CRM',
-          description: `Duplicate registration attempt by ${partnerId} rejected`
+          actor: 'SYSTEM',
+          description: 'A duplicate registration attempt by another partner was rejected'
         });
         return {
           status: 'REJECTED',
@@ -192,61 +247,73 @@ async function createMyRegistration(req, res, next) {
 
       // The check above can race with a simultaneous registration of the same
       // customer; the claim is the atomic tie-breaker - only one wins.
-      const claim = await claimProtection({ customerId: customerDoc.customerId, projectId, registrationId, partnerId, expiresAt: protectionExpiry });
+      // One claim key per number / email (duplicateService.claimKeysFor).
+      const claim = await claimProtection({
+        customerId: customerDoc.customerId,
+        projectId,
+        registrationId,
+        partnerId,
+        expiresAt: protectionExpiry,
+        mobile: customer.mobile,
+        email: customer.email,
+        alternateMobile: customer.alternateMobile
+      });
       if (!claim.claimed) return rejectDuplicate(claim.holder.registrationId, claim.holder.expiresAt);
 
-      const requirementDetails = {};
-      for (const field of REQUIREMENT_FIELDS) {
-        if (req.body[field] !== undefined && req.body[field] !== '') requirementDetails[field] = req.body[field];
+      // From here on the customer is claimed: any failure must give the
+      // claim back, or the customer stays blocked by a lead that doesn't exist.
+      let registrationDoc;
+      try {
+        const initialStage = await getDefaultStatusName(partnerId);
+        registrationDoc = await Registration.create({
+          registrationId,
+          customerId: customerDoc.customerId,
+          partnerId,
+          projectId,
+          referralStatus: referralStatusFor(projectId),
+          contact: Object.fromEntries(CONTACT_FIELDS.map((k) => [k, customer[k] ? String(customer[k]) : ''])),
+          status: 'ACCEPTED',
+          currentStage: initialStage,
+          registeredAt,
+          protectionStart: registeredAt,
+          protectionExpiry,
+          externalReferenceId,
+          source: source || 'PARTNER_CRM',
+          ...requirementDetails,
+          customFields: customFieldValues
+        });
+
+        await createInitialOwnership(registrationId, partnerId);
+
+        const eventId = await nextId('PROG');
+        await ProgressEvent.create({
+          eventId,
+          registrationId,
+          stage: initialStage,
+          eventType: 'REGISTRATION_CREATED',
+          source: source || 'PARTNER_CRM'
+        });
+
+        await logEvent({
+          registrationId,
+          eventType: 'REGISTRATION_RECEIVED',
+          actor: req.actorLabel,
+          newValue: { changes },
+          description: 'Partner registration received'
+        });
+        await logEvent({ registrationId, eventType: 'DUPLICATE_CHECK_COMPLETED', actor: 'SYSTEM', description: 'Duplicate check completed - no active duplicate found' });
+        await logEvent({ registrationId, eventType: 'REGISTRATION_ACCEPTED', actor: 'SYSTEM', description: 'Registration accepted' });
+        await logEvent({
+          registrationId,
+          eventType: 'PROTECTION_GRANTED',
+          actor: 'SYSTEM',
+          newValue: { protectionExpiry },
+          description: `${duplicateProtectionDays}-day protection granted`
+        });
+      } catch (err) {
+        await rollBackCreate(registrationId);
+        throw err;
       }
-
-      const initialStage = await getDefaultStatusName(partnerId);
-      const registrationDoc = await Registration.create({
-        registrationId,
-        customerId: customerDoc.customerId,
-        partnerId,
-        projectId,
-        referralStatus: referralStatusFor(projectId),
-        contact: Object.fromEntries(CONTACT_FIELDS.map((k) => [k, customer[k] ? String(customer[k]) : ''])),
-        status: 'ACCEPTED',
-        currentStage: initialStage,
-        registeredAt,
-        protectionStart: registeredAt,
-        protectionExpiry,
-        externalReferenceId,
-        source: source || 'PARTNER_CRM',
-        ...requirementDetails,
-        customFields: customFieldValues
-      });
-
-
-      await createInitialOwnership(registrationId, partnerId);
-
-      const eventId = await nextId('PROG');
-      await ProgressEvent.create({
-        eventId,
-        registrationId,
-        stage: initialStage,
-        eventType: 'REGISTRATION_CREATED',
-        source: source || 'PARTNER_CRM'
-      });
-
-      await logEvent({
-        registrationId,
-        eventType: 'REGISTRATION_RECEIVED',
-        actor: req.actorLabel,
-        newValue: { changes },
-        description: 'Partner registration received'
-      });
-      await logEvent({ registrationId, eventType: 'DUPLICATE_CHECK_COMPLETED', actor: 'SYSTEM', description: 'Duplicate check completed - no active duplicate found' });
-      await logEvent({ registrationId, eventType: 'REGISTRATION_ACCEPTED', actor: 'SYSTEM', description: 'Registration accepted' });
-      await logEvent({
-        registrationId,
-        eventType: 'PROTECTION_GRANTED',
-        actor: 'SYSTEM',
-        newValue: { protectionExpiry },
-        description: `${duplicateProtectionDays}-day protection granted`
-      });
 
       // Fire-and-forget (section 43) - an external target being slow or
       // down must never delay or fail this response.

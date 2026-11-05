@@ -1,0 +1,201 @@
+/* App themes (section 61). Every colour in index.css is a role token below;
+   a theme is one set of values for those roles. <html data-theme="..."> is
+   set before first paint by the inline script in index.html (theme.js keeps
+   it in sync): light | dark | ocean | sunset ("System" resolves to light or
+   dark from the device setting). Vivid action colours (icon buttons, status
+   dots, LinkedIn blue) are the same in every theme. */
+
+:root,
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f4f6fa;
+  --surface: #ffffff;
+  --surface-2: #f6f8fb;
+  --selected: #e9effc;
+  --border: #e3e7ee;
+  --border-strong: #cfd5df;
+  --text: #1a1d24;
+  --text-2: #424a57;
+  --text-muted: #5f6878;
+  --text-faint: #858d9b;
+  --heading: #14213d;
+  --brand: #14213d;
+  --brand-hover: #22335c;
+  --on-brand: #ffffff;
+  --nav-bg: #14213d;
+  --nav-text: #cbd5f5;
+  --nav-active: #4f8cff;
+  --link: #1a5fb4;
+  --focus: #2f6fed;
+  --danger: #b3261e;
+  --danger-bg: #fbe2e2;
+  --danger-text: #7a1f1a;
+  --success: #1a7f3c;
+  --success-bg: #e1f5e5;
+  --warn-bg: #fff2cc;
+  --warn-text: #7a5f00;
+  --info-bg: #e8f1fc;
+  --info-text: #1a4a7a;
+  --shadow: 0 1px 2px rgba(16, 24, 40, 0.05), 0 2px 8px rgba(16, 24, 40, 0.06);
+  --shadow-lg: 0 12px 32px rgba(16, 24, 40, 0.14);
+  /* Chart series (validated light steps, see the dataviz palette) */
+  --viz-1: #2a78d6;
+  --viz-2: #eb6834;
+  --viz-3: #6250d6;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0d121c;
+  --surface: #151b27;
+  --surface-2: #1a2231;
+  --selected: #22314f;
+  --border: #263044;
+  --border-strong: #354159;
+  --text: #e6e9ef;
+  --text-2: #c3c9d5;
+  --text-muted: #9ba4b5;
+  --text-faint: #7d8699;
+  --heading: #eef2fa;
+  --brand: #4c62d8;
+  --brand-hover: #5e73e3;
+  --on-brand: #ffffff;
+  --nav-bg: #0a0f18;
+  --nav-text: #aeb8d4;
+  --nav-active: #7aa7ff;
+  --link: #8ab4ff;
+  --focus: #8ab4ff;
+  --danger: #ff8a80;
+  --danger-bg: #3b1d20;
+  --danger-text: #ffb4ab;
+  --success: #6bd894;
+  --success-bg: #15301f;
+  --warn-bg: #362c12;
+  --warn-text: #f1cd64;
+  --info-bg: #16283f;
+  --info-text: #a9c7f4;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.03);
+  --shadow-lg: 0 14px 36px rgba(0, 0, 0, 0.5);
+  /* Dark steps of the same hues (validated against --surface) */
+  --viz-1: #3987e5;
+  --viz-2: #d95926;
+  --viz-3: #9085e9;
+}
+
+:root[data-theme="ocean"] {
+  color-scheme: light;
+  --bg: #e9f3f8;
+  --surface: #ffffff;
+  --surface-2: #f2f8fb;
+  --selected: #d8eef6;
+  --border: #d3e3eb;
+  --border-strong: #b5cdd9;
+  --text: #102530;
+  --text-2: #34505e;
+  --text-muted: #557180;
+  --text-faint: #7b94a1;
+  --heading: #0b3c55;
+  --brand: #0b6e8f;
+  --brand-hover: #095a75;
+  --on-brand: #ffffff;
+  --nav-bg: #083b53;
+  --nav-text: #bfe2ef;
+  --nav-active: #4fd1e8;
+  --link: #0a6fa0;
+  --focus: #0a8fbf;
+}
+
+:root[data-theme="sunset"] {
+  color-scheme: light;
+  --bg: #fbf3ec;
+  --surface: #ffffff;
+  --surface-2: #fdf7f2;
+  --selected: #fbe4d5;
+  --border: #eedfd2;
+  --border-strong: #dcc4b2;
+  --text: #2b1a14;
+  --text-2: #573e32;
+  --text-muted: #7a5f50;
+  --text-faint: #9e8575;
+  --heading: #5a2318;
+  --brand: #b5432a;
+  --brand-hover: #983620;
+  --on-brand: #ffffff;
+  --nav-bg: #4a1e17;
+  --nav-text: #f5d0c3;
+  --nav-active: #ffb27a;
+  --link: #a83d22;
+  --focus: #d9581f;
+}
+
+/* Native controls follow the theme (inputs had the browser's white). */
+body { background: var(--bg); color: var(--text); }
+input, select, textarea { background: var(--surface); color: var(--text); }
+input::placeholder, textarea::placeholder { color: var(--text-faint); }
+a { color: var(--link); }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+
+/* Smooth switch between themes; off for people who prefer less motion. */
+body, .card, .top-bar, .nav-bar, input, select, textarea, table.pro-table thead th {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  body, .card, .top-bar, .nav-bar, input, select, textarea, table.pro-table thead th { transition: none; }
+}
+
+/* ---- Polish shared by every theme (section 61) ---- */
+.page h1 { font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2rem); color: var(--heading); letter-spacing: -0.01em; }
+h2, h3, h4 { color: var(--heading); }
+
+/* Inputs: one look everywhere, clear focus ring in the theme colour. */
+.field input, .field select, .field textarea, .filters input, .filters select,
+.toolbar-left input, .toolbar-right select, .li-filters select {
+  border-color: var(--border-strong); border-radius: 8px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.field input:focus, .field select:focus, .field textarea:focus, .filters input:focus, .filters select:focus,
+.toolbar-left input:focus, .toolbar-right select:focus, .li-filters select:focus {
+  outline: none; border-color: var(--focus);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--focus) 22%, transparent);
+}
+
+/* Buttons: gentle lift on hover. */
+button.primary, button.secondary, button.danger, button.pill-primary, button.pill-export, button.pill-filter {
+  border-radius: 8px; font-weight: 600; transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.15s ease;
+}
+button.primary:hover:not(:disabled), button.pill-primary:hover, button.pill-export:hover, button.pill-filter:hover {
+  transform: translateY(-1px); box-shadow: 0 4px 12px color-mix(in srgb, var(--brand) 28%, transparent);
+}
+button.secondary { background: var(--surface); border-color: var(--border-strong); color: var(--heading); }
+button.secondary:hover:not(:disabled) { border-color: var(--heading); background: var(--surface-2); }
+
+/* Tables: row hover and tidy header corners. */
+table.pro-table tbody tr { transition: background-color 0.12s ease; }
+table.pro-table tbody tr:hover { background: var(--surface-2); }
+th, td { border-bottom-color: var(--border); }
+
+/* Top bar: frosted, stays readable over scrolling content. */
+.top-bar {
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  -webkit-backdrop-filter: saturate(1.4) blur(10px); backdrop-filter: saturate(1.4) blur(10px);
+}
+.nav-bar a.active { box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06); }
+
+/* Theme picker (components/ThemeSelect.jsx) */
+.theme-select { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--text-muted); }
+.theme-select select {
+  padding: 0.3rem 0.5rem; border: 1px solid var(--border-strong); border-radius: 8px;
+  background: var(--surface); color: var(--text); font-size: 0.85rem; cursor: pointer;
+}
+
+/* Thin, theme-coloured scrollbars. */
+* { scrollbar-width: thin; scrollbar-color: var(--border-strong) transparent; }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 10px; border: 2px solid transparent; background-clip: padding-box; }
+
+/* Phones: roomier tap targets, cards edge to edge with less padding. */
+@media (max-width: 600px) {
+  .card { padding: 1rem; border-radius: 10px; }
+  button.primary, button.secondary, button.danger { min-height: 40px; }
+  .theme-select svg { display: none; }
+}

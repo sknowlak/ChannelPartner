@@ -7,6 +7,17 @@ function errorHandler(err, req, res, next) { // eslint-disable-line no-unused-va
   if (err.type === 'entity.too.large') return res.status(413).json({ reason: 'Request body is too large' });
   if (err.type === 'entity.parse.failed') return res.status(400).json({ reason: 'Request body is not valid JSON' });
 
+  // A value Mongoose refused (wrong type, not in an enum) is the caller's
+  // mistake, not a server fault: 400, naming only the offending field(s) -
+  // never the raw message, which carries model names and internals.
+  if (err.name === 'ValidationError' && err.errors) {
+    const fields = Object.keys(err.errors);
+    return res.status(400).json({ reason: `Invalid value for: ${fields.join(', ')}`, fieldKey: fields[0] });
+  }
+  if (err.name === 'CastError') {
+    return res.status(400).json({ reason: `Invalid value for: ${err.path}`, fieldKey: err.path });
+  }
+
   const statusCode = err.statusCode || err.status || 500;
   const reason = statusCode < 500 && err.message ? err.message : 'Internal server error';
   res.status(statusCode).json({ reason });

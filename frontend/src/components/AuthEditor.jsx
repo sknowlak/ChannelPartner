@@ -31,7 +31,7 @@ export default function AuthEditor({ value, onChange, allowedTypes, title, direc
   );
 
   return (
-    <div className="card" style={{ background: '#fff', padding: '0.9rem 1rem' }}>
+    <div className="card" style={{ background: 'var(--surface)', padding: '0.9rem 1rem' }}>
       <h4 style={{ margin: '0 0 0.6rem' }}>{title || t('auth.title')}</h4>
       <div className="form-grid">
         <Field label={t('auth.type')}>

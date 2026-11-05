@@ -4,7 +4,7 @@ import { useState } from 'react';
 // one y-axis, recessive grid, 4px rounded tops, a hover tooltip per day
 // (the hit area is the whole day column). A legend appears for two series;
 // a single series is named by the chart title. Colours are validated
-// categorical slots (see .viz-* tokens in index.css); text never uses them.
+// categorical slots (--viz-* tokens in theme.css, stepped per theme); text never uses them.
 const W = 460;
 const H = 210;
 const PAD = { top: 10, right: 6, bottom: 24, left: 46 };
@@ -70,7 +70,7 @@ export default function DailyBarChart({ title, data, series, formatValue, format
                   const v = Number(d[s.key]) || 0;
                   if (v <= 0) return null;
                   const y = yOf(v);
-                  return <path key={s.key} d={column(x0 + k * (barW + 2), y, barW, PAD.top + plotH - y)} fill={s.color} />;
+                  return <path key={s.key} d={column(x0 + k * (barW + 2), y, barW, PAD.top + plotH - y)} style={{ fill: s.color }} />;
                 })}
                 {i % labelEvery === 0 && (
                   <text x={PAD.left + slot * i + slot / 2} y={H - 8} textAnchor="middle" className="viz-axis">{dateLabel(d.date)}</text>

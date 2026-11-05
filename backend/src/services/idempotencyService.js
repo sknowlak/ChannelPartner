@@ -29,12 +29,22 @@ async function withIdempotency(key, routeName, operation, scope = '') {
   const scopedRoute = scope ? `${routeName}:${scope}` : routeName;
   const scopedKey = String(key);
 
-  try {
-    await IdempotencyRecord.create({ key: scopedKey, routeName: scopedRoute, state: 'PENDING' });
-  } catch (err) {
-    if (err.code !== 11000) throw err;
+  // Claim the key. A record can vanish between the failed create and the
+  // lookup (the request holding it failed and released it) - then the key
+  // is free again, so the claim is simply retried.
+  for (let attempt = 0; ; attempt += 1) {
+    try {
+      await IdempotencyRecord.create({ key: scopedKey, routeName: scopedRoute, state: 'PENDING' });
+      break;
+    } catch (err) {
+      if (err.code !== 11000) throw err;
+    }
     const existing = await IdempotencyRecord.findOne({ key: scopedKey, routeName: scopedRoute });
-    if (existing?.state !== 'PENDING') return { replayed: true, result: existing.response };
+    if (!existing) {
+      if (attempt < 2) continue;
+      throw conflict('A request with this reference ID is already being processed - retry shortly');
+    }
+    if (existing.state !== 'PENDING') return { replayed: true, result: existing.response };
 
     // Another request with this key is mid-flight - unless it was abandoned.
     if (Date.now() - existing.updatedAt.getTime() < STALE_PENDING_MS) {
@@ -46,6 +56,7 @@ async function withIdempotency(key, routeName, operation, scope = '') {
       { new: true, timestamps: true }
     );
     if (!takenOver) throw conflict('A request with this reference ID is already being processed - retry shortly');
+    break;
   }
 
   let result;

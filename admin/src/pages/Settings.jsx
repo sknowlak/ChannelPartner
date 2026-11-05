@@ -74,7 +74,7 @@ export default function Settings() {
       <h1>{t('settings:title')}</h1>
       <p className="hint">{t('settings:hint')}</p>
       {error && <div className="error-box">{error}</div>}
-      {saved && <div className="card" style={{ background: '#e1f5e5', color: '#1a7f3c' }}>{t('settings:saved')}</div>}
+      {saved && <div className="card" style={{ background: 'var(--success-bg)', color: 'var(--success)' }}>{t('settings:saved')}</div>}
 
       <form onSubmit={handleSave}>
         <div className="card">
@@ -90,7 +90,7 @@ export default function Settings() {
             />
           </div>
 
-          <label style={{ fontSize: '0.85rem', fontWeight: 600, color: '#444' }}>{t('settings:protection.matchFields')}</label>
+          <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-2)' }}>{t('settings:protection.matchFields')}</label>
           <div style={{ display: 'flex', gap: '1rem', marginTop: '0.4rem' }}>
             {MATCH_FIELD_OPTIONS.map((field) => (
               <label key={field} style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontWeight: 400 }}>

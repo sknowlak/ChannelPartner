@@ -4,6 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import NotificationBell from './NotificationBell';
 import LanguageSelect from './LanguageSelect';
 import MenuButton from './MenuButton';
+import ThemeSelect from './ThemeSelect';
 
 // Route -> translation key (shell:titles.*); resolved with t() at render
 // time so the title follows a language switch.
@@ -44,15 +45,18 @@ export default function TopBar({ menuOpen = false, onMenu }) {
         {onMenu && <MenuButton open={menuOpen} onClick={onMenu} label={t('common:actions.openMenu')} />}
         <h2>{t(`shell:titles.${titleKeyFor(pathname)}`)}</h2>
       </div>
-      {partner && (
-        <div className="top-bar-user">
-          {/* Signed in: switches now and saves to the account (like My Profile). */}
-          <LanguageSelect compact onChange={changeLanguage} />
-          <NotificationBell timezone={partner.timezone} />
-          <span className="avatar">{partner.name.charAt(0).toUpperCase()}</span>
-          <span>{partner.name}</span>
-        </div>
-      )}
+      <div className="top-bar-user">
+        <ThemeSelect />
+        {partner && (
+          <>
+            {/* Signed in: switches now and saves to the account (like My Profile). */}
+            <LanguageSelect compact onChange={changeLanguage} />
+            <NotificationBell timezone={partner.timezone} />
+            <span className="avatar">{partner.name.charAt(0).toUpperCase()}</span>
+            <span>{partner.name}</span>
+          </>
+        )}
+      </div>
     </header>
   );
 }

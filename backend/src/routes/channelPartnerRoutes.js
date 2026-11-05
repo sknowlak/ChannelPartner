@@ -17,7 +17,7 @@ const partnerAuth = require('../middleware/partnerAuth');
 const apiKeyAuth = require('../middleware/apiKeyAuth');
 const { requirePermission } = partnerAuth;
 const { PERMISSIONS } = require('../config/permissions');
-const { loginRateLimit, signupRateLimit } = require('../middleware/rateLimit');
+const { loginRateLimit, signupRateLimit, duplicateCheckRateLimit, leadCreateRateLimit, integrationLeadCreateRateLimit } = require('../middleware/rateLimit');
 
 const router = express.Router();
 
@@ -34,7 +34,7 @@ const router = express.Router();
 // Reuses the exact same handlers as the /my/* routes below - they only ever
 // read req.partnerId/req.actorLabel, which apiKeyAuth sets the same way
 // partnerAuth does.
-router.post('/integrations/leads', apiKeyAuth, myLeadsController.createMyRegistration);
+router.post('/integrations/leads', apiKeyAuth, integrationLeadCreateRateLimit, myLeadsController.createMyRegistration);
 router.post('/integrations/leads/:registrationId/progress', apiKeyAuth, myLeadsController.updateMyProgress);
 
 // The partner's open, two-way API (section 51): read leads/statuses/fields,
@@ -73,7 +73,7 @@ router.patch('/my/profile', partnerAuth, partnerAuthController.updateMyProfile);
 // Viewing the shared lead pool is never gated (spec section 32); creating/
 // progressing/booking a lead requires MANAGE_LEADS (section 34).
 router.get('/my/registrations', partnerAuth, myLeadsController.listMyRegistrations);
-router.post('/my/registrations', partnerAuth, requirePermission(PERMISSIONS.MANAGE_LEADS), myLeadsController.createMyRegistration);
+router.post('/my/registrations', partnerAuth, requirePermission(PERMISSIONS.MANAGE_LEADS), leadCreateRateLimit, myLeadsController.createMyRegistration);
 router.get('/my/registrations/:registrationId', partnerAuth, myLeadsController.getMyRegistration);
 router.patch('/my/registrations/:registrationId', partnerAuth, requirePermission(PERMISSIONS.MANAGE_LEADS), myLeadsController.updateMyRegistration);
 router.post('/my/registrations/:registrationId/progress', partnerAuth, requirePermission(PERMISSIONS.MANAGE_LEADS), myLeadsController.updateMyProgress);
@@ -83,7 +83,7 @@ router.patch('/my/registrations/:registrationId/assign', partnerAuth, requirePer
 router.get('/my/assignable-users', partnerAuth, myLeadsController.listAssignableUsers);
 router.get('/my/lead-statuses', partnerAuth, myLeadsController.listLeadStatuses);
 router.get('/my/projects', partnerAuth, myLeadsController.listProjects);
-router.post('/my/duplicate-check', partnerAuth, checkDuplicate);
+router.post('/my/duplicate-check', partnerAuth, duplicateCheckRateLimit, checkDuplicate);
 
 router.get('/my/grid-preferences/:gridKey', partnerAuth, gridPreferencesController.getGridPreferences);
 router.patch('/my/grid-preferences/:gridKey', partnerAuth, gridPreferencesController.updateGridPreferences);

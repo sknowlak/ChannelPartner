@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ActivityIndicator, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { ActivityIndicator, KeyboardAvoidingView, Platform, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { API_CONFIG_ERROR, login, saveSession } from '../api/client';
 import LanguagePicker from '../components/LanguagePicker';
@@ -33,8 +33,11 @@ export default function LoginScreen({ onSignedIn }) {
     }
   };
 
+  // Scrolls and lifts above the keyboard so the password field and Sign in
+  // stay reachable on small phones and with large font sizes.
   return (
-    <View style={styles.container}>
+    <KeyboardAvoidingView style={styles.fill} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
+    <ScrollView contentContainerStyle={styles.container} keyboardShouldPersistTaps="handled">
       {/* Device-only choice before sign-in; the account preference applies after. */}
       <LanguagePicker onChange={setDeviceLanguage} />
       <Text style={styles.title} accessibilityRole="header">{t('auth:login.title')}</Text>
@@ -52,11 +55,13 @@ export default function LoginScreen({ onSignedIn }) {
       >
         {busy ? <ActivityIndicator color="#fff" /> : <Text style={styles.buttonText}>{t('common:actions.signIn')}</Text>}
       </TouchableOpacity>
-    </View>
+    </ScrollView>
+    </KeyboardAvoidingView>
   );
 }
 
 const styles = StyleSheet.create({
+  fill: { flex: 1 },
   container: { padding: 20, paddingTop: 80 },
   title: { fontSize: 22, fontWeight: '700', marginBottom: 16, color: '#14213d' },
   label: { fontSize: 13, fontWeight: '600', color: '#444', marginTop: 10, marginBottom: 4 },
