@@ -30,7 +30,8 @@
       "registered": "Rexistrado"
     },
     "booked": "Reservado",
-    "empty": "Aínda non hai referencias."
+    "empty": "Aínda non hai referencias.",
+    "bookingCancelled": "Reserva cancelada"
   },
   "detail": {
     "customer": "Cliente",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Reserva confirmada.",
       "accepted": "Remisión aceptada.",
-      "rejected": "Remisión rexeitada."
+      "rejected": "Remisión rexeitada.",
+      "bookingCancelled": "Reserva cancelada."
     },
-    "backToReferrals": "Volver a Referencias"
+    "backToReferrals": "Volver a Referencias",
+    "bookingCancelled": "Reserva cancelada",
+    "cancelBooking": "Cancelar a reserva",
+    "cancelReasonLabel": "Motivo da cancelación (mostrado ao socio) *",
+    "cancelBookingHint": "A propiedade operativa volve ao socio e cancela a súa elegibilidade para as comisións. O liderado pódese reservar de novo máis tarde.",
+    "cancelBookingConfirm": "Cancela a reserva"
   },
   "history": {
     "title": "Historia",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Creouse a elegibilidade da comisión",
       "HANDOVER_COMPLETED": "Entrega completada",
       "ADMIN_PROTECTION_RELEASED": "O administrador lanzou a protección duplicada antes. Motivo: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "O administrador reasignou o rexistro de {{from}} a {{to}} . Motivo: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "O administrador reasignou o rexistro de {{from}} a {{to}} . Motivo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Rexeitouse un intento de rexistro duplicado doutro compañeiro",
+      "BOOKING_CANCELLED": "Reserva cancelada. Motivo: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "A propiedade operativa devolveuse ao socio",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "A elegibilidade da comisión cancelouse coa reserva",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Restableceuse a elegibilidade das comisións para a nova reserva"
     }
   }
 }

@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "योग्य",
-    "PENDING": "विचाराधीन"
+    "PENDING": "विचाराधीन",
+    "CANCELLED": "रद्द गरियो"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "डुप्लिकेट सुरक्षा चाँडै जारी गर्नुहोस्",
-    "REASSIGN_PARTNER": "अर्को साझेदारलाई पुन: नियुक्त गर्नुहोस्"
+    "REASSIGN_PARTNER": "अर्को साझेदारलाई पुन: नियुक्त गर्नुहोस्",
+    "CANCEL_BOOKING": "बुकिङ रद्द गर्नुहोस्"
   },
   "dataType": {
     "TEXT": "पाठ",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "सुपर एडमिन",
     "ADMIN": "व्यवस्थापक"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "पुष्टि भयो",
+    "CANCELLED": "रद्द गरियो"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "विशेषता",
+    "DISPUTED": "विवादित"
+  },
+  "disputeStatus": {
+    "OPEN": "खोल्नुहोस्",
+    "UPHELD": "समर्थन गर्यो",
+    "OVERTURNED": "उल्टाइयो",
+    "WITHDRAWN": "फिर्ता गरियो"
   }
 }

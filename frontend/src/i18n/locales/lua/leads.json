@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Mufunda",
-    "pending": "Mu nkatshi mua kwindila"
+    "pending": "Mu nkatshi mua kwindila",
+    "status": {
+      "CONFIRMED": "Mufunda",
+      "CANCELLED": "Dilomba diakajika"
+    }
   },
   "assign": {
     "unassigned": "Kayi mupeshibue",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Kakuena mudimu nansha umo (ki mmuleja to)",
-    "notInList": "{{project}} (ki mu liste wa projet to)"
+    "notInList": "{{project}} (ki mu liste wa projet to)",
+    "protectionDays_one": "{{count}} -dituku dia bukubi",
+    "protectionDays_other": "{{count}} -dituku dia bukubi"
   },
   "journey": {
     "customer": "Kiliya",
@@ -76,7 +82,14 @@
     "progressHistory": "Malu a kale a malu adi menzeke",
     "timesIn": "(misangu mu {{timezone}} )",
     "backToMyLeads": "Kupingana ku malu anyi",
-    "editLead": "Shintulula tshilombodi"
+    "editLead": "Shintulula tshilombodi",
+    "disputeBanner": "Muena mudimu mukuabu mmuele mpata bua bumfumu bua muena mudimu eu. Mulombodi Leadrat udi utangila bualu ebu - bukubi buebe budi bushala too ne padibu bangata dipangadika.",
+    "booking": "Difunda",
+    "commission": "Kasumbu",
+    "notBooked": "Ki mbafunda to",
+    "cancelledOn": "Bishipa mu {{date}} .",
+    "cancelReason": "Bualu: {{reason}}",
+    "cancelledHint": "Muenji wa nzubu wakashipa dilomba dia nzubu - bumfumu bua mudimu budi bupingane kuudi ne bukenji bua kupeta makuta budi bushipa. Bidi bipingajibua pikala muntu mufunda kabidi."
   },
   "referral": {
     "NOT_REFERRED": "Kabena batumibue (kakuena mudimu to)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Muibaki wakitaba dituma",
       "REFERRAL_REJECTED": "Muibaki wakabenga dituma. Bualu: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Mulombodi wakapatula bukubi bua misangu ibidi kumpala kua dîba. Bualu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Mulombodi wakashintulula difunda dia {{from}} to {{to}} . Bualu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Mulombodi wakashintulula difunda dia {{from}} to {{to}} . Bualu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Diteta dia difunda dia misangu ibidi dia muena mudimu mukuabu diakabenga",
+      "BOOKING_CANCELLED": "Difunda diakajika. Bualu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Bumfumu bua mudimu budi bupingajibua kudi muena mudimu",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Dikumbana dia mudimu didi dijimijibua ne difunda dia muaba",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Bukokeshi bua kupeta makuta budi bupingajibua bua difunda dipiadipia",
+      "OWNERSHIP_DISPUTE_RAISED": "Muena mudimu mukuabu uvua muele mpata bua bumfumu bua muena mudimu eu - mulombodi Leadrat neakonkonone bualu ebu",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Dikokangana dia bumfumu dia muena mudimu eu diakajimijibua - bumfumu buebe kabuena bushintuluke to",
+      "OWNERSHIP_DISPUTE_UPHELD": "Dikokangana dia bumfumu dia muena mudimu eu diakakonkononyibua - bumfumu buebe budi bujadikibua",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Difunda kunyima kua dikokangana diebe dia bumfumu dimane kujika mu diakalenga diebe. Note: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Dikuba diakajika: dikokangana dia bumfumu diakajika bua diakalenga dia muena mudimu mukuabu. Note: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Nomba ya telefone eyi kayena mikumbane bua {{country}} .",
     "COUNTRY_MISMATCH": "Sungula code wa ditunga muimpe.",
     "NOT_MOBILE": "Suaku ufunda nimero ya telefone, ki nimero ya ku nzubu to."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Mudimu udi mukumbane",
+      "PENDING": "Mudimu udi muindila",
+      "CANCELLED": "Mudimu uvua mushipa"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Badi bafila kudi wewe",
+      "DISPUTED": "Difila dia bintu didi dibengangana"
+    }
+  },
+  "result": {
+    "none": "Kakuena tshipeta tshia difunda tshia kuleja to. Kumpala funda muntu udi ukulombola.",
+    "acceptedTitle": "Mulombodi mufundisha",
+    "rejectedTitle": "Mulombodi ki mmufunda to",
+    "protectionWindow": "Dididishi dia bukubi",
+    "protectedUntil": "Kulama too ne",
+    "openLead": "Bulula Mulombodi",
+    "addAnother": "Weja Mulombodi Mukuabu",
+    "duplicate": "Difuanyikija - dilama kale",
+    "duplicateHint": "Muena mudimu eu mmulama kale bua mudimu eu kudi difunda dikuabu, nunku kabavua mua kumufundisha to.",
+    "existingProtectedUntil": "Difunda didiku didi dikuba too ne"
+  },
+  "disputes": {
+    "title": "Malu anyi",
+    "intro": "Bilumbu bia bumfumu biuvua mujule kudi bakiliya bivuabu babenge bu bintu bia muomumue. Mulombodi wa Leadrat udi utangila tshionso tshia kudibi.",
+    "empty": "Kuena mujule bilumbu nansha bimue. Shi muena mudimu uudi mulue nende mubenga bu tshintu tshibidi, udi mua kubenga bualu ebu bilondeshile tshipeta tshia difunda.",
+    "columns": {
+      "dispute": "Matandu",
+      "reason": "Bualu buebe",
+      "outcome": "Bipeta"
+    },
+    "status": {
+      "OPEN": "Mu dikonkonona",
+      "UPHELD": "Ki mu diakalenga diebe to",
+      "OVERTURNED": "Mbapangadije mu diakalenga diebe",
+      "WITHDRAWN": "Kumbushibua"
+    },
+    "awaitingReview": "Ndi muindile dikonkonona dia admin",
+    "openNewLead": "Kangula njila webe {{id}}",
+    "withdraw": "Kumbusha",
+    "withdrawConfirm": "Kumbusha tshilumbu tshieba bua {{name}} ? Bumfumu bua mpindieu budi bushala anu mudibu.",
+    "raise": "Dikokangana dia bumfumu",
+    "raiseTitle": "Dikokangana dia bumfumu",
+    "raiseHint": "Shi muena mudimu ewu uvua mulue kuudi kumpala, umvuije bua tshinyi. Mulombodi wa Leadrat neakonkonone bualu ebu; bobu bapangadije mu diakalenga diebe, muntu udi ukulombola udi mufunda bua bualu buebe.",
+    "reasonLabel": "Bua tshinyi muena mudimu eu udi webe?",
+    "reasonMin_one": "Nansha {{count}} maleta.",
+    "reasonMin_other": "Nansha {{count}} maleta.",
+    "submit": "Tuma dikokangana",
+    "notProtected": "Kakuena muntu udi ne bukubi kudi muena mudimu eu bua mudimu ewu to - udi mua kufunda muena mudimu mpindieu.",
+    "raised": "Dikokangana {{id}} dituma bua kukonkonona.",
+    "viewAll": "Tangila bilumbu bianyi"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Tshikondu",
+    "lastDays_one": "{{count}} dituku",
+    "lastDays_other": "{{count}} matuku",
+    "emptyTitle": "Difika dilenga! Kuena ne njila to.",
+    "emptyHint": "Funda muntu webe wa kumpala - tshikondo tshiebe tshia mudimu, difunda ne matuku a ndekelu a bukubi nebimueneke apa.",
+    "tiles": {
+      "leads": "Bungi bua bantu",
+      "newInPeriod_one": "{{count}} mupiamupia mu tshikondo etshi",
+      "newInPeriod_other": "{{count}} mupiamupia mu tshikondo etshi",
+      "accepted": "Bitabijibua",
+      "booked": "Mufunda",
+      "bookedInPeriod_one": "{{count}} mufunda mu tshikondo etshi",
+      "bookedInPeriod_other": "{{count}} mufunda mu tshikondo etshi",
+      "conversion": "Dikudimuna",
+      "conversionHint": "Bantu badibu bafunde bu tshitupa tshia bantu badibu bitabe",
+      "protectedNow": "Mukuba mpindieu",
+      "expiringSoon_one": "Dikuba didi dijika mu {{count}} dituku",
+      "expiringSoon_other": "Dikuba didi dijika mu matuku {{count}}",
+      "disputedNow": "Badi babenga kudi bakuabu",
+      "disputedNowHint": "Dilombola diebe ne dikokangana dia bumfumu didi difumina kudi muena mudimu mukuabu",
+      "commissionEligible": "Mudimu udi mukumbane",
+      "commissionCancelled_one": "{{count}} canceled",
+      "commissionCancelled_other": "{{count}} canceled"
+    },
+    "chart": {
+      "title_one": "Difunda dia mêna ne difunda dia miaba ku dituku - dituku dia ndekelu {{count}}",
+      "title_other": "Difunda dia mêna ne difunda dia miaba ku dituku - matuku a ndekelu {{count}}",
+      "registrations": "Difunda dia mêna",
+      "bookings": "Difunda dia miaba"
+    },
+    "byStage": "Udi ulombola bilondeshile nsombelu",
+    "bySource": "Bilombola ku source",
+    "byReferral": "Udi ulombola bilondeshile nsombelu wa dituma",
+    "myDisputes": "Malu audi mujule",
+    "noDisputes": "Kakuena bilumbu bivua bijuka to.",
+    "unknown": "Kabiena biteka to",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM wa pambelu (mufuanyikija)",
+      "PARTNER_CRM": "Tshisakidila kudi tshisumbu tshienu",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Disangisha",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Dikuba didi dijika mu dituku didi dilonda {{count}}",
+    "expiringTitle_other": "Dikuba didi dijika mu matuku adi alonda {{count}}",
+    "expiringEmpty": "Kakuena plomb udi ujimija bukubi buende mu dididishi edi to."
   }
 }

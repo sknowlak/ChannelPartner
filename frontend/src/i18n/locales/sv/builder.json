@@ -30,7 +30,8 @@
       "registered": "Registrerad"
     },
     "booked": "Bokad",
-    "empty": "Inga remisser än."
+    "empty": "Inga remisser än.",
+    "bookingCancelled": "Bokning avbruten"
   },
   "detail": {
     "customer": "Kund",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Bokning bekräftad.",
       "accepted": "Remiss accepteras.",
-      "rejected": "Remiss avslogs."
+      "rejected": "Remiss avslogs.",
+      "bookingCancelled": "Bokning avbruten."
     },
-    "backToReferrals": "Tillbaka till hänvisningar"
+    "backToReferrals": "Tillbaka till hänvisningar",
+    "bookingCancelled": "Bokning avbruten",
+    "cancelBooking": "Avboka bokning",
+    "cancelReasonLabel": "Orsak till avbokning (visas för partnern) *",
+    "cancelBookingHint": "Det operativa ägandet går tillbaka till partnern och deras provisionsberättigande upphävs. Ledningen kan bokas igen senare.",
+    "cancelBookingConfirm": "Avboka bokningen"
   },
   "history": {
     "title": "Historia",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "kommissionsberättigande skapats",
       "HANDOVER_COMPLETED": "Överlämning genomförd",
       "ADMIN_PROTECTION_RELEASED": "Admin släppte dubblettskydd tidigt. Orsak: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Administratören tilldelade registreringen från {{from}} till {{to}} . Orsak: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Administratören tilldelade registreringen från {{from}} till {{to}} . Orsak: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ett dubbelregistreringsförsök av en annan partner avvisades",
+      "BOOKING_CANCELLED": "Bokning avbruten. Orsak: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Det operativa ägandet återgick till partnern",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kommissionsberättigandet avbröts med bokningen",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kommissionsberättigande återställd för den nya bokningen"
     }
   }
 }

@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Prihvatljivo",
-    "PENDING": "Na čekanju"
+    "PENDING": "Na čekanju",
+    "CANCELLED": "Otkazano"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Ranije otpustite duplu zaštitu",
-    "REASSIGN_PARTNER": "Preusmjerite drugom partneru"
+    "REASSIGN_PARTNER": "Preusmjerite drugom partneru",
+    "CANCEL_BOOKING": "Otkažite rezervaciju"
   },
   "dataType": {
     "TEXT": "Tekst",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super Admin",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Potvrđeno",
+    "CANCELLED": "Otkazano"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Pripisano",
+    "DISPUTED": "Osporeno"
+  },
+  "disputeStatus": {
+    "OPEN": "Otvori",
+    "UPHELD": "Potvrđeno",
+    "OVERTURNED": "Prevrnuto",
+    "WITHDRAWN": "Povučen"
   }
 }

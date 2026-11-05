@@ -30,7 +30,8 @@
       "registered": "पंजीकरण तिथि"
     },
     "booked": "बुक हो गया",
-    "empty": "अभी तक कोई रेफ़रल नहीं है।"
+    "empty": "अभी तक कोई रेफ़रल नहीं है।",
+    "bookingCancelled": "बुकिंग रद्द"
   },
   "detail": {
     "customer": "ग्राहक",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "बुकिंग की पुष्टि हो गई।",
       "accepted": "रेफ़रल स्वीकार कर लिया गया।",
-      "rejected": "रेफ़रल अस्वीकार कर दिया गया।"
+      "rejected": "रेफ़रल अस्वीकार कर दिया गया।",
+      "bookingCancelled": "बुकिंग रद्द कर दी गई।"
     },
-    "backToReferrals": "रेफ़रल पर वापस जाएँ"
+    "backToReferrals": "रेफ़रल पर वापस जाएँ",
+    "bookingCancelled": "बुकिंग रद्द",
+    "cancelBooking": "बुकिंग रद्द करें",
+    "cancelReasonLabel": "रद्द करने का कारण (पार्टनर को दिखाया जाएगा) *",
+    "cancelBookingHint": "परिचालन स्वामित्व पार्टनर को वापस चला जाएगा और उनकी कमीशन पात्रता रद्द हो जाएगी। लीड को बाद में फिर से बुक किया जा सकता है।",
+    "cancelBookingConfirm": "बुकिंग रद्द करें"
   },
   "history": {
     "title": "इतिहास",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "कमीशन पात्रता बनाई गई",
       "HANDOVER_COMPLETED": "हस्तांतरण पूरा हुआ",
       "ADMIN_PROTECTION_RELEASED": "एडमिन ने डुप्लिकेट सुरक्षा समय से पहले समाप्त की। कारण: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "एडमिन ने पंजीकरण {{from}} से {{to}} को पुनः सौंपा। कारण: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "एडमिन ने पंजीकरण {{from}} से {{to}} को पुनः सौंपा। कारण: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "किसी अन्य पार्टनर का डुप्लिकेट पंजीकरण प्रयास अस्वीकार किया गया",
+      "BOOKING_CANCELLED": "बुकिंग रद्द की गई। कारण: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "परिचालन स्वामित्व पार्टनर को लौटाया गया",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "बुकिंग के साथ कमीशन पात्रता रद्द की गई",
+      "COMMISSION_ELIGIBILITY_RESTORED": "नई बुकिंग के लिए कमीशन पात्रता बहाल की गई"
     }
   }
 }

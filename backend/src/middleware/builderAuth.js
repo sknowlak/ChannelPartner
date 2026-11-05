@@ -2,6 +2,7 @@ const { verifyToken } = require('../services/builderAuthService');
 const { issuedBeforePasswordChange } = require('../services/partnerAuthService');
 const BuilderUser = require('../models/BuilderUser');
 const Builder = require('../models/Builder');
+const { isRevoked } = require('../services/tokenRevocation');
 
 // Protects /api/builder/* (section 52). The user AND their organization are
 // re-read on every request, so deactivating either (or changing the
@@ -18,6 +19,7 @@ async function builderAuth(req, res, next) {
   }
 
   try {
+    if (await isRevoked(token)) return res.status(401).json({ reason: 'You have been logged out - please log in again' });
     const user = await BuilderUser.findOne({ builderUserId: decoded.builderUserId });
     if (!user || user.status !== 'ACTIVE' || user.builderId !== decoded.builderId) {
       return res.status(401).json({ reason: 'Builder account is not active' });

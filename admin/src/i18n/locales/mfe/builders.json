@@ -43,7 +43,9 @@
       "name": "Nom",
       "city": "Lavil",
       "status": "Stati",
-      "actions": "Bann aksion"
+      "actions": "Bann aksion",
+      "protection": "Proteksion kont doub",
+      "matchOn": "Bann doub koresponn lor"
     },
     "closeReferrals": "Ferme pou bann referans",
     "reopen": "Reouver",
@@ -55,6 +57,25 @@
       "add": "Azout proze",
       "created": "Finn kre {{name}} ."
     },
-    "back": "Retourn lor bann mason"
+    "back": "Retourn lor bann mason",
+    "protection": {
+      "days_one": "{{count}} zour",
+      "days_other": "{{count}} zour",
+      "globalDays_one": "Global par defo ( {{count}} zour)",
+      "globalDays_other": "Defo global ( {{count}} zour)",
+      "globalDefault": "Defo global",
+      "placeholder": "Zour proteksion (vid = par defo global)",
+      "saved": "Proteksion doub finn met azour pou {{name}} .",
+      "hint": "Proteksion doub: 1-3650 zour, ou les li vid pou servi par defo global depi bann Paramet. Enn sanzman aplik zis pou bann nouvo lanrezistreman - bann ki deza existe gard zot expirasion."
+    },
+    "matching": {
+      "global": "Defo global",
+      "globalWith": "Global par defo ( {{fields}} )",
+      "mobile": "Nimero portab",
+      "email": "Email",
+      "both": "Nimero portab + email",
+      "saved": "Koresponn doub finn met azour pou {{name}}",
+      "hint": "Ki bann detay fer ki de lanrezistreman vinn mem klian pou enn proze. Bann sanzman pou aplik pou bann chek an doub apartir aster-la; proteksion ki deza existe pa afekte."
+    }
   }
 }

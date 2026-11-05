@@ -43,7 +43,9 @@
       "name": "Libito",
       "city": "Lidolobha",
       "status": "Sikhundla",
-      "actions": "Tento"
+      "actions": "Tento",
+      "protection": "Kuvikeleka lokuphindvwe kabili",
+      "matchOn": "Umdlalo lophindvwe kabili ku"
     },
     "closeReferrals": "Vala kuze kudluliselwe",
     "reopen": "Vula kabusha",
@@ -55,6 +57,25 @@
       "add": "Ngeta Iphrojekthi",
       "created": "Kwadalwa {{name}} ."
     },
-    "back": "Emuva kubakhi"
+    "back": "Emuva kubakhi",
+    "protection": {
+      "days_one": "{{count}} lilanga",
+      "days_other": "{{count}} emalanga",
+      "globalDays_one": "Lokujwayelekile kwemhlaba wonkhe ( {{count}} lilanga)",
+      "globalDays_other": "Lokujwayelekile kwemhlaba wonkhe ( {{count}} emalanga)",
+      "globalDefault": "Lokujwayelekile kwemhlaba wonkhe",
+      "placeholder": "Emalanga ekuvikela (angenalutfo = lokujwayelekile kwemhlaba wonkhe)",
+      "saved": "Kuvikelwa lokuphindvwe kabili kuvuselelwe ku {{name}} .",
+      "hint": "Kuvikelwa lokuphindzaphindziwe: emalanga langu-1-3650, noma ushiye ungenalutfo kute usebentise lokujwayelekile kwemhlaba wonkhe kusuka ku-Settings. Lushintjo lusebenta kuphela ekubhaliseni lokusha - lokukhona kugcina sikhatsi sabo sekuphelelwa sikhatsi."
+    },
+    "matching": {
+      "global": "Lokujwayelekile kwemhlaba wonkhe",
+      "globalWith": "Lokujwayelekile kwemhlaba wonkhe ( {{fields}} )",
+      "mobile": "Inombolo yeselula",
+      "email": "Imeyili",
+      "both": "Inombolo yeselula + i-imeyili",
+      "saved": "Kuphindzaphindza lokuhambisanako lokubuyeketiwe ku {{name}}",
+      "hint": "Yiphi imininingwane yenta kubhalisa lokubili ikhasimende elifanayo iphrojekthi. Tingucuko tisebenta ekuhloleni lokuphindvwe kabili kusukela nyalo; kuvikeleka lokukhona akutsintseki."
+    }
   }
 }

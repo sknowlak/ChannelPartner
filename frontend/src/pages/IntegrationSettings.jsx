@@ -16,7 +16,7 @@ import { buildPreviewBody } from '../utils/webhookPreview';
 import { bodyFromRows, parseCurl, parseTemplateObject, suggestRows } from '../utils/curlMapping';
 
 // Event codes are API values; their labels come from integrations:events.*.
-const EVENT_OPTIONS = ['LEAD_CREATED', 'LEAD_UPDATED', 'STAGE_UPDATED', 'BOOKING_COMPLETED'];
+const EVENT_OPTIONS = ['LEAD_CREATED', 'LEAD_UPDATED', 'STAGE_UPDATED', 'BOOKING_COMPLETED', 'BOOKING_CANCELLED'];
 const FORMATS = ['JSON', 'FORM', 'CUSTOM'];
 const METHODS = ['POST', 'PUT', 'PATCH', 'GET', 'DELETE'];
 const UPDATE_METHODS = ['PUT', 'PATCH', 'POST', 'DELETE'];

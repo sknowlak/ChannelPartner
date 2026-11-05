@@ -7,7 +7,7 @@ const { verifyPassword, hashPassword, passwordProblem } = require('../services/p
 const { issueToken } = require('../services/builderAuthService');
 const { getOwnership } = require('../services/ownershipService');
 const { buildBuilderView } = require('../services/visibilityService');
-const { completeBooking } = require('../services/bookingService');
+const { completeBooking, cancelBooking } = require('../services/bookingService');
 const { logEvent, getTimeline } = require('../services/auditService');
 const { triggerWebhooks } = require('../services/webhookService');
 const { projectIdsForBuilder } = require('../services/projectService');
@@ -210,6 +210,27 @@ async function bookReferral(req, res, next) {
   }
 }
 
+// POST /api/builder/referrals/:registrationId/booking/cancel  { reason }
+// The buyer backed out (section 62): the booking and commission are marked
+// CANCELLED and the lead goes back to the partner, attribution intact.
+async function cancelReferralBooking(req, res, next) {
+  try {
+    const registration = await loadScopedReferral(req);
+    if (!registration) return res.status(404).json({ reason: 'Referral not found' });
+    const result = await cancelBooking({
+      registration,
+      actorLabel: req.actorLabel,
+      reason: req.body?.reason,
+      afterCancelled: (lead) => triggerWebhooks(lead.partnerId, 'BOOKING_CANCELLED', lead)
+    });
+    return res.json(result);
+  } catch (err) {
+    next(err);
+  }
+}
+
+const BUILDER_HIDDEN_EVENTS = new Set(['OWNERSHIP_DISPUTE_RAISED', 'OWNERSHIP_DISPUTE_CLOSED', 'OWNERSHIP_DISPUTE_OVERTURNED', 'PROTECTION_ENDED_BY_DISPUTE']);
+
 // GET /api/builder/referrals/:registrationId/audit
 // What happened, when, and by whom at organization level - without the
 // partner's internal field values or staff names.
@@ -217,7 +238,8 @@ async function getReferralAudit(req, res, next) {
   try {
     const registration = await loadScopedReferral(req);
     if (!registration) return res.status(404).json({ reason: 'Referral not found' });
-    const events = await getTimeline(registration.registrationId);
+    // Ownership disputes are between partners and Leadrat (section 62) - not the builder's business.
+    const events = (await getTimeline(registration.registrationId)).filter((e) => !BUILDER_HIDDEN_EVENTS.has(e.eventType));
     const actorType = (actor) => {
       if (!actor || actor === 'SYSTEM') return 'System';
       if (/\(Builder:/.test(actor)) return actor;
@@ -233,4 +255,4 @@ async function getReferralAudit(req, res, next) {
   }
 }
 
-module.exports = { login, me, updateMe, changePassword, listProjects, listReferrals, getReferral, decideReferral, bookReferral, getReferralAudit };
+module.exports = { login, me, updateMe, changePassword, listProjects, listReferrals, getReferral, decideReferral, bookReferral, cancelReferralBooking, getReferralAudit };

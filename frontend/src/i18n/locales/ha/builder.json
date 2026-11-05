@@ -30,7 +30,8 @@
       "registered": "Rajista"
     },
     "booked": "An yi rajista",
-    "empty": "Har yanzu ba a ba da shawarar ba."
+    "empty": "Har yanzu ba a ba da shawarar ba.",
+    "bookingCancelled": "An soke yin rajista"
   },
   "detail": {
     "customer": "Abokin ciniki",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "An tabbatar da booking.",
       "accepted": "Karɓar ƙaddamarwa.",
-      "rejected": "An ƙi amincewa."
+      "rejected": "An ƙi amincewa.",
+      "bookingCancelled": "An soke yin rajista"
     },
-    "backToReferrals": "Komawa Zuwa Gabatarwa"
+    "backToReferrals": "Komawa Zuwa Gabatarwa",
+    "bookingCancelled": "An soke yin rajista",
+    "cancelBooking": "Soke Bugawa",
+    "cancelReasonLabel": "Dalilin sokewa (an nuna wa abokin tarayya) *",
+    "cancelBookingHint": "Operational ownership goes back to the partner and their commission eligibility is cancelled. Ana iya sake yin ajiyar gubar daga baya.",
+    "cancelBookingConfirm": "Soke littafin"
   },
   "history": {
     "title": "Tarihi",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "An ƙirƙiri cancantar hukumar",
       "HANDOVER_COMPLETED": "An kammala mika mulki",
       "ADMIN_PROTECTION_RELEASED": "Admin ya fitar da kwafin kariya da wuri. Dalili: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin ya sake sanya rajista daga {{from}} zuwa {{to}} . Dalili: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin ya sake sanya rajista daga {{from}} zuwa {{to}} . Dalili: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "An yi watsi da yunƙurin yin rajista na wani abokin tarayya",
+      "BOOKING_CANCELLED": "An soke yin rajista Dalili: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Mallakar aiki ta koma ga abokin tarayya",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "An soke cancantar hukumar tare da yin ajiyar kuɗi",
+      "COMMISSION_ELIGIBILITY_RESTORED": "An dawo da cancantar hukumar don sabon yin rajista"
     }
   }
 }

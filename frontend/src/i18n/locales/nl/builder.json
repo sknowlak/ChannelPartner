@@ -30,7 +30,8 @@
       "registered": "Geregistreerd"
     },
     "booked": "Geboekt",
-    "empty": "Nog geen verwijzingen."
+    "empty": "Nog geen verwijzingen.",
+    "bookingCancelled": "Boeking geannuleerd"
   },
   "detail": {
     "customer": "Klant",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Boeking bevestigd.",
       "accepted": "Verwijzing geaccepteerd.",
-      "rejected": "Verwijzing afgewezen."
+      "rejected": "Verwijzing afgewezen.",
+      "bookingCancelled": "Boeking geannuleerd."
     },
-    "backToReferrals": "Terug naar Verwijzingen"
+    "backToReferrals": "Terug naar Verwijzingen",
+    "bookingCancelled": "Boeking geannuleerd",
+    "cancelBooking": "Boeking annuleren",
+    "cancelReasonLabel": "Reden van annulering (getoond aan de partner) *",
+    "cancelBookingHint": "Het operationele eigendom gaat terug naar de partner en het recht op commissie wordt geannuleerd. De voorsprong kan later opnieuw geboekt worden.",
+    "cancelBookingConfirm": "Annuleer de boeking"
   },
   "history": {
     "title": "Geschiedenis",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Geschiktheid voor commissie gecreëerd",
       "HANDOVER_COMPLETED": "Overdracht voltooid",
       "ADMIN_PROTECTION_RELEASED": "De beheerder heeft de dubbele bescherming vroegtijdig vrijgegeven. Reden: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "De beheerder heeft de registratie opnieuw toegewezen van {{from}} naar {{to}} . Reden: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "De beheerder heeft de registratie opnieuw toegewezen van {{from}} naar {{to}} . Reden: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Een dubbele registratiepoging van een andere partner werd afgewezen",
+      "BOOKING_CANCELLED": "Boeking geannuleerd. Reden: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Het operationele eigendom ging terug naar de partner",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Het in aanmerking komen voor de commissie is geannuleerd bij de boeking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Het recht op commissie is hersteld voor de nieuwe boeking"
     }
   }
 }

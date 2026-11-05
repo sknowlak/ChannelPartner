@@ -31,7 +31,8 @@
       "registered": "Registrerejuvvon"
     },
     "booked": "Diŋgojuvvon",
-    "empty": "Eai leat vuos čujuhusat."
+    "empty": "Eai leat vuos čujuhusat.",
+    "bookingCancelled": "Diŋgojupmi heaittihuvvui"
   },
   "detail": {
     "customer": "Áššehas",
@@ -54,9 +55,15 @@
     "notice": {
       "booked": "Diŋgon lea duođaštuvvon.",
       "accepted": "Čujuheapmi dohkkehuvvo.",
-      "rejected": "Čujuhus hilgojuvvui."
+      "rejected": "Čujuhus hilgojuvvui.",
+      "bookingCancelled": "Diŋgojupmi heaittihuvvui."
     },
-    "backToReferrals": "Ruovttoluotta čujuhusaide"
+    "backToReferrals": "Ruovttoluotta čujuhusaide",
+    "bookingCancelled": "Diŋgojupmi heaittihuvvui",
+    "cancelBooking": "Heaittihit diŋgoma",
+    "cancelReasonLabel": "Sivva heaittiheapmái (čájehuvvo ovttasbargoguoibmái) *",
+    "cancelBookingHint": "Doaibmaoamastanvuoigatvuohta manná ruovttoluotta ovttasbargoguoibmái ja sin provišuvdnavuoigatvuohta heaittihuvvo. Jođiheami sáhttá diŋgot fas maŋŋelabbos.",
+    "cancelBookingConfirm": "Heaitte diŋgojumi"
   },
   "history": {
     "title": "Historjá",
@@ -87,7 +94,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kommišuvdnavuoigatvuohta lea ráhkaduvvon",
       "HANDOVER_COMPLETED": "Sirdin lea čađahuvvon",
       "ADMIN_PROTECTION_RELEASED": "Hálddašeaddji almmuhii duppalsuodjalusa árrat. Sivva: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin sirddii registrerema {{from}} :s {{to}} . Sivva: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin sirddii registrerema {{from}} :s {{to}} . Sivva: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Nuppi ovttasbargoguoimmi duppal registrerengeahččaleapmi hilgojuvvui",
+      "BOOKING_CANCELLED": "Diŋgojupmi heaittihuvvui. Sivva: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Doaibmaoamastanvuoigatvuohta máhcahuvvo ovttasbargoguoibmái",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kommišuvdnavuoigatvuohta heaittihuvvo diŋgoma bokte",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ođđa diŋgojumi ovddas fas biddjojuvvo provišuvdnavuoigatvuohta"
     }
   }
 }

@@ -30,7 +30,8 @@
       "registered": "Rejistu ona"
     },
     "booked": "Rezerva ona",
-    "empty": "Seidauk iha referénsia."
+    "empty": "Seidauk iha referénsia.",
+    "bookingCancelled": "Rezervasaun kanseladu"
   },
   "detail": {
     "customer": "Kliente",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Rezerva konfirmadu ona.",
       "accepted": "Referál aseita ona.",
-      "rejected": "Referénsia rejeitadu."
+      "rejected": "Referénsia rejeitadu.",
+      "bookingCancelled": "Rezervasaun kanseladu."
     },
-    "backToReferrals": "Fila fali ba Referénsia sira"
+    "backToReferrals": "Fila fali ba Referénsia sira",
+    "bookingCancelled": "Rezervasaun kanseladu",
+    "cancelBooking": "Kansela Rezervasaun",
+    "cancelReasonLabel": "Razaun ba kanselamentu (hatudu ba parseiru) *",
+    "cancelBookingHint": "Propriedade operasionál fila fali ba parseiru no sira nia elijível ba komisaun kanseladu. Lead bele rezerva fali depois.",
+    "cancelBookingConfirm": "Kansela rezervasaun"
   },
   "history": {
     "title": "Istória",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Elijibilidade ba komisaun kria ona",
       "HANDOVER_COMPLETED": "Entrega kompletu ona",
       "ADMIN_PROTECTION_RELEASED": "Admin fó sai protesaun duplikadu antes. Razaun: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin atribui fali rejistu husi {{from}} ba {{to}} . Razaun: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin atribui fali rejistu husi {{from}} ba {{to}} . Razaun: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Tentativa rejistu duplikadu ida hosi parseiru seluk hetan rejeita",
+      "BOOKING_CANCELLED": "Rezervasaun kanseladu. Razaun: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Propriedade operasionál fila fali ba parseiru",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Elijibilidade ba komisaun kanseladu ho rezervasaun",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Elijibilidade ba komisaun restaura ona ba rezerva foun"
     }
   }
 }

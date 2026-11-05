@@ -30,7 +30,8 @@
       "registered": "تىزىملاتتى"
     },
     "booked": "زاكاز قىلىندى",
-    "empty": "ھازىرچە يوللانما يوق."
+    "empty": "ھازىرچە يوللانما يوق.",
+    "bookingCancelled": "زاكاز بىكار قىلىندى"
   },
   "detail": {
     "customer": "خېرىدار",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "زاكاز جەزملەشتۈرۈلدى.",
       "accepted": "تەۋسىيە قوبۇل قىلىندى.",
-      "rejected": "رەت قىلىش رەت قىلىندى."
+      "rejected": "رەت قىلىش رەت قىلىندى.",
+      "bookingCancelled": "زاكاز بىكار قىلىندى."
     },
-    "backToReferrals": "پايدىلانمىلارغا قايتىش"
+    "backToReferrals": "پايدىلانمىلارغا قايتىش",
+    "bookingCancelled": "زاكاز بىكار قىلىندى",
+    "cancelBooking": "زاكازنى ئەمەلدىن قالدۇرۇڭ",
+    "cancelReasonLabel": "ئەمەلدىن قالدۇرۇشنىڭ سەۋەبى (ھەمراھىغا كۆرسىتىلدى) *",
+    "cancelBookingHint": "تىجارەت ئىگىدارلىق ھوقۇقى شېرىككە قايتىدۇ ۋە ئۇلارنىڭ ھاۋالە سالاھىيىتى بىكار قىلىنىدۇ. قوغۇشۇننى كېيىن زاكاس قىلىشقا بولىدۇ.",
+    "cancelBookingConfirm": "زاكازنى بىكار قىلىڭ"
   },
   "history": {
     "title": "تارىخ",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "كومىتېت سالاھىيىتى قۇرۇلدى",
       "HANDOVER_COMPLETED": "تاپشۇرۇپ بېرىش تاماملاندى",
       "ADMIN_PROTECTION_RELEASED": "باشقۇرغۇچى كۆپەيتىلگەن قوغداشنى بالدۇر ئېلان قىلدى. سەۋەبى: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "باشقۇرغۇچى تىزىمغا ئالدۇرۇشنى {{from}} دىن {{to}} غا قايتا ئورۇنلاشتۇردى. سەۋەبى: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "باشقۇرغۇچى تىزىمغا ئالدۇرۇشنى {{from}} دىن {{to}} غا قايتا ئورۇنلاشتۇردى. سەۋەبى: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "باشقا شېرىكنىڭ كۆپەيتىلگەن تىزىملاش سىنىقى رەت قىلىندى",
+      "BOOKING_CANCELLED": "زاكاز بىكار قىلىندى. سەۋەبى: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "تىجارەت ئىگىدارلىق ھوقۇقى شېرىككە قايتىپ كەلدى",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "زاكاز قىلىش ئارقىلىق كومىتېتنىڭ سالاھىيىتى بىكار قىلىندى",
+      "COMMISSION_ELIGIBILITY_RESTORED": "يېڭى زاكاز ئۈچۈن كومىسسىيەنىڭ سالاھىيىتى ئەسلىگە كەلتۈرۈلدى"
     }
   }
 }

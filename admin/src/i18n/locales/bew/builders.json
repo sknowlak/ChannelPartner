@@ -43,7 +43,9 @@
       "name": "Name",
       "city": "Kota",
       "status": "Kondisi",
-      "actions": "Tindakan"
+      "actions": "Tindakan",
+      "protection": "Perlindungan duplikat",
+      "matchOn": "Duplikat cocok pada"
     },
     "closeReferrals": "Tutup buat rujukan",
     "reopen": "Buka lagi",
@@ -55,6 +57,25 @@
       "add": "Tambahin Proyek",
       "created": "Dibuat {{name}} ."
     },
-    "back": "Balik ke Builders"
+    "back": "Balik ke Builders",
+    "protection": {
+      "days_one": "{{count}} hari",
+      "days_other": "{{count}} hari",
+      "globalDays_one": "Global default ( {{count}} day)",
+      "globalDays_other": "Bawaan global ( {{count}} hari)",
+      "globalDefault": "Bawaan global",
+      "placeholder": "Hari perlindungan (kosong = bawaan global)",
+      "saved": "Perlindungan duplikat diperbarui untuk {{name}} .",
+      "hint": "Perlindungan duplikat: 1-3650 hari, atau biarin kosong buat make bawaan global dari Pengaturan. Perubahan cuma berlaku buat pendaftaran baru - yang udah ada tetep kadaluarsa."
+    },
+    "matching": {
+      "global": "Bawaan global",
+      "globalWith": "Global default ( {{fields}} )",
+      "mobile": "Nomor ponsel",
+      "email": "Email",
+      "both": "Nomor ponsel + email",
+      "saved": "Pencocokan duplikat diperbarui untuk {{name}}",
+      "hint": "Detail mana yang bikin dua pendaftaran jadi pelanggan yang sama untuk sebuah proyek. Perubahan berlaku untuk cek duplikat mulai sekarang; perlindungan yang ada kagak terpengaruh."
+    }
   }
 }

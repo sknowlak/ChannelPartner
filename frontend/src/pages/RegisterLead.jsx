@@ -69,9 +69,9 @@ export default function RegisterLead() {
     }
 
     setSubmitting(true);
+    const customer = {};
+    const payload = {};
     try {
-      const customer = {};
-      const payload = {};
       for (const def of fieldDefs) {
         const val = values[def.fieldKey];
         if (val === undefined || val === '') continue;
@@ -93,7 +93,9 @@ export default function RegisterLead() {
       } else if (data?.reasonCode) {
         // An actual business outcome (duplicate protection etc.), not a
         // form-validation problem - this is what the Result screen is for.
-        navigate(`/registrations/result`, { state: { result: data } });
+        // What was entered goes along so a refused duplicate can be disputed
+        // without typing the customer in again (section 62).
+        navigate(`/registrations/result`, { state: { result: data, submitted: { customer, projectId: payload.projectId || '' } } });
       } else {
         setError(data?.reason || err.message);
       }

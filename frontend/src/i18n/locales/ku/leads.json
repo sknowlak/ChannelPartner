@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Veqetandin",
-    "pending": "Nexelas"
+    "pending": "Nexelas",
+    "status": {
+      "CONFIRMED": "Veqetandin",
+      "CANCELLED": "Booking betal kirin"
+    }
   },
   "assign": {
     "unassigned": "Bê tayînkirin",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Hîn proje tune (negotiye)",
-    "notInList": "{{project}} (ne di lîsteya projeyê de)"
+    "notInList": "{{project}} (ne di lîsteya projeyê de)",
+    "protectionDays_one": "{{count}} -parastina roj",
+    "protectionDays_other": "{{count}} -parastina roj"
   },
   "journey": {
     "customer": "Miştirî",
@@ -76,7 +82,14 @@
     "progressHistory": "Dîroka Pêşketinê",
     "timesIn": "(car di {{timezone}} de)",
     "backToMyLeads": "Vegere Pêşengên Min",
-    "editLead": "Edit Lead"
+    "editLead": "Edit Lead",
+    "disputeBanner": "Hevkarekî din xwedîtiya vî xerîdar nakok kiriye. Rêvebirek Leadrat wê dinirxîne - parastina we di cîh de dimîne heya ku ew biryar bidin.",
+    "booking": "Booking",
+    "commission": "Simsarî",
+    "notBooked": "Ne hatiye veqetandin",
+    "cancelledOn": "Di {{date}} de hat betalkirin.",
+    "cancelReason": "Sedem: {{reason}}",
+    "cancelledHint": "Avaker veqetandinê betal kir - xwedaniya xebitandinê bi we re vedigere û destûrdariya komîsyonê betal dibe. Ger pêşengî dîsa were veqetandin ew tê vegerandin."
   },
   "referral": {
     "NOT_REFERRED": "Negotin (ne proje)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Avaker sewqê qebûl kir",
       "REFERRAL_REJECTED": "Avakar sewqî red kir. Sedem: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin parastina ducar zû berdan. Sedem: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin qeyda ji {{from}} ji bo {{to}} ji nû ve tayîn kir. Sedem: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin qeyda ji {{from}} ji bo {{to}} ji nû ve tayîn kir. Sedem: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Hewldana qeydkirina dubare ya ji hêla hevalbendek din ve hate red kirin",
+      "BOOKING_CANCELLED": "Booking betal kirin. Sedem: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Xwedîderketina operasyonê li hevkarê vegeriya",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Destûra komîsyonê bi veqetandinê re hate betal kirin",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Destûra komîsyonê ji bo veqetandina nû hate vegerandin",
+      "OWNERSHIP_DISPUTE_RAISED": "Hevkarek din xwedîtiya vê xerîdar nakok dike - rêvebirek Leadrat dê wê binirxîne",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Nakokiya xwedîtiyê ya li ser vê xerîdar hate paşvekişandin - xwedaniya we nayê guhertin",
+      "OWNERSHIP_DISPUTE_UPHELD": "Nakokiya xwedîtiyê li ser vê xerîdar hate vekolîn - xwedaniya we hate pejirandin",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Piştî ku nakokiya xwedaniya we di berjewendiya we de biryar hat tomar kirin. Nîşe: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Parastin bi dawî bû: nakokiyek xwedîtiyê di berjewendiya hevparek din de biryar hat girtin. Nîşe: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Ev jimara têlefonê ji bo {{country}} ne derbasdar e.",
     "COUNTRY_MISMATCH": "Ji kerema xwe koda welatê rast hilbijêrin.",
     "NOT_MOBILE": "Ji kerema xwe nimreyek desta binivîsin, ne xêzek."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komîsyona mafdar",
+      "PENDING": "Komîsyona li benda",
+      "CANCELLED": "Komîsyon betal kirin"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Ji we re tê veqetandin",
+      "DISPUTED": "Attribution nakokî"
+    }
+  },
+  "result": {
+    "none": "Encama qeydkirinê tune ku nîşan bide. Pêşî rêberek qeyd bikin.",
+    "acceptedTitle": "Lead qeydkirî",
+    "rejectedTitle": "Lead ne qeydkirî ye",
+    "protectionWindow": "Paceya Parastinê",
+    "protectedUntil": "Parastin Heta",
+    "openLead": "Rêbertî vekin",
+    "addAnother": "Rêberek din lê zêde bike",
+    "duplicate": "Duber - jixwe parastî ye",
+    "duplicateHint": "Ev xerîdar jixwe ji bo vê projeyê bi qeydek din ve hatî parastin, ji ber vê yekê ew ji we re nehat tomar kirin.",
+    "existingProtectedUntil": "Qeydkirina heyî parastiye heya"
+  },
+  "disputes": {
+    "title": "Nakokîyên min",
+    "intro": "Nakokiyên xwedîtiyê yên ku we ji bo xerîdarên ku wekî dubare hatine red kirin raber kirine. Rêvebirek Leadrat her yekê dinirxîne.",
+    "empty": "We tu nakokî dernexistiye. Ger xerîdarek ku we aniye wekî dubare were red kirin, hûn dikarin wê ji encama qeydkirinê nakok bikin.",
+    "columns": {
+      "dispute": "Înkarkirin",
+      "reason": "Sedema te",
+      "outcome": "Netîce"
+    },
+    "status": {
+      "OPEN": "Di bin çavan de",
+      "UPHELD": "Ne bi xêra we ye",
+      "OVERTURNED": "Di berjewendiya we de biryar da",
+      "WITHDRAWN": "vekişandin"
+    },
+    "awaitingReview": "Li benda nirxandina rêveberiyê ne",
+    "openNewLead": "Serkêşiya xwe veke {{id}}",
+    "withdraw": "Vekişîn",
+    "withdrawConfirm": "Nakokiya xwe ji bo {{name}} vekişîne? Xwedîderketina heyî her wekî xwe dimîne.",
+    "raise": "Xwedîderketina nakokiyê",
+    "raiseTitle": "Xwedîderketina nakokiyê",
+    "raiseHint": "Ger ev xerîdar pêşî hat ba we, rave bikin çima. Rêvebirek Leadrat wê binirxîne; heke ew di berjewendiya we de biryar bidin, rêber ji bo we tê tomar kirin.",
+    "reasonLabel": "Çima ev xerîdar yê te ye?",
+    "reasonMin_one": "Bi kêmanî {{count}} karakter.",
+    "reasonMin_other": "Bi kêmanî {{count}} karakter.",
+    "submit": "Nakokî bişînin",
+    "notProtected": "Kes ji bo vê projeyê êdî parastina vî xerîdar nake - hûn dikarin niha pêşengiyê tomar bikin.",
+    "raised": "Nakokî {{id}} ji bo vekolînê hat şandin.",
+    "viewAll": "Nakokiyên min bibînin"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Cilhatina jinan",
+    "lastDays_one": "{{count}} roj",
+    "lastDays_other": "{{count}} roj",
+    "emptyTitle": "Bi xêr hatî! Hîn tu rêgezên te tune ne.",
+    "emptyHint": "Pêşengiya xweya yekem tomar bikin - xeta boriya we, veqetandin û demên parastinê dê li vir diyar bibin.",
+    "tiles": {
+      "leads": "Bi tevahî rêve dibe",
+      "newInPeriod_one": "Di vê heyamê de {{count}} nû",
+      "newInPeriod_other": "Di vê heyamê de {{count}} nû",
+      "accepted": "Qebûl kirin",
+      "booked": "Veqetandin",
+      "bookedInPeriod_one": "Di vê heyamê de {{count}} hatin veqetandin",
+      "bookedInPeriod_other": "Di vê heyamê de {{count}} hatin veqetandin",
+      "conversion": "Gûhertinî",
+      "conversionHint": "Pêşengên veqetandî wekî parek pêşengên pejirandî",
+      "protectedNow": "Niha parastiye",
+      "expiringSoon_one": "Parastin di roja {{count}} de bi dawî dibe",
+      "expiringSoon_other": "Parastin di {{count}} rojan de bi dawî dibe",
+      "disputedNow": "Ji hêla kesên din ve têne nîqaş kirin",
+      "disputedNowHint": "We bi nakokiyek xwedaniya vekirî ya ji hevalbendek din re rê dide",
+      "commissionEligible": "Komîsyona mafdar",
+      "commissionCancelled_one": "{{count}} betal kirin",
+      "commissionCancelled_other": "{{count}} betal kirin"
+    },
+    "chart": {
+      "title_one": "Qeydkirin û veqetandinê her roj - {{count}} roja dawî",
+      "title_other": "Qeydkirin û veqetandin her roj - {{count}} rojên dawî",
+      "registrations": "Registrations",
+      "bookings": "Bookings"
+    },
+    "byStage": "Ji hêla statûyê ve pêşengî dike",
+    "bySource": "Ji hêla çavkaniyê ve dibe",
+    "byReferral": "Ji hêla statûya referansê ve dibe",
+    "myDisputes": "Nakokîyên ku we rakir",
+    "noDisputes": "Ti nakokî derneketin.",
+    "unknown": "Not set",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM ya derve (simûlasyon)",
+      "PARTNER_CRM": "Ji hêla tîmê we ve hatî zêdekirin",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Pêxistinî",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Parastin di {{count}} roja pêş de bi dawî dibe",
+    "expiringTitle_other": "Parastin di {{count}} rojên pêş de qediya",
+    "expiringEmpty": "Di vê pencereyê de ti rêber parastina xwe winda nake."
   }
 }

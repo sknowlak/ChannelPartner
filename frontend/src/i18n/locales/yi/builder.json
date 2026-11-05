@@ -30,7 +30,8 @@
       "registered": "רעגיסטרירט"
     },
     "booked": "בוקט",
-    "empty": "נאָך קיין רעפערראַלס."
+    "empty": "נאָך קיין רעפערראַלס.",
+    "bookingCancelled": "בוקינג קאַנסאַלד"
   },
   "detail": {
     "customer": "קונה",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "בוקינג באשטעטיקט.",
       "accepted": "רעפערראַל אנגענומען.",
-      "rejected": "רעפערראַל פארווארפן."
+      "rejected": "רעפערראַל פארווארפן.",
+      "bookingCancelled": "בוקינג קאַנסאַלד."
     },
-    "backToReferrals": "צוריק צו רעפערראַלס"
+    "backToReferrals": "צוריק צו רעפערראַלס",
+    "bookingCancelled": "בוקינג קאַנסאַלד",
+    "cancelBooking": "באָטל מאַכן בוקינג",
+    "cancelReasonLabel": "סיבה פֿאַר קאַנסאַלינג (געוויזן צו די שוטעף) *",
+    "cancelBookingHint": "אַפּעריישאַנאַל אָונערשיפּ גייט צוריק צו די שוטעף און זייער קאָמיסיע בארעכטיגונג איז קאַנסאַלד. די פירן קענען זיין בוקט ווידער שפּעטער.",
+    "cancelBookingConfirm": "באָטל מאַכן די בוקינג"
   },
   "history": {
     "title": "געשיכטע",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "קאָמיסיע בארעכטיגונג באשאפן",
       "HANDOVER_COMPLETED": "כאַנדאָווער געענדיקט",
       "ADMIN_PROTECTION_RELEASED": "אַדמין באפרייט דופּליקאַט שוץ פרי. סיבה: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "אַדמין ריאַסיינד רעגיסטראַציע פון {{from}} צו {{to}} . סיבה: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "אַדמין ריאַסיינד רעגיסטראַציע פון {{from}} צו {{to}} . סיבה: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "א דופּליקאַט רעגיסטראַציע פּרווון דורך אן אנדער שוטעף איז פארווארפן",
+      "BOOKING_CANCELLED": "בוקינג קאַנסאַלד. סיבה: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "אַפּעריישאַנאַל אָונערשיפּ אומגעקערט צו די שוטעף",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "קאַמישאַן בארעכטיגונג קאַנסאַלד מיט די בוקינג",
+      "COMMISSION_ELIGIBILITY_RESTORED": "קאַמישאַן בארעכטיגונג געזונט פֿאַר די נייַע בוקינג"
     }
   }
 }

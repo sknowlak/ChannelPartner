@@ -43,7 +43,9 @@
       "name": "Ateq",
       "city": "Illoqarfik",
       "status": "Inissisimanermik nalunaarut",
-      "actions": "Suliassat"
+      "actions": "Suliassat",
+      "protection": "Marloqiusamik illersuineq",
+      "matchOn": "Duplikatit match on"
     },
     "closeReferrals": "Nassiussassanut matuvoq",
     "reopen": "Ammaqqissaaq",
@@ -55,6 +57,25 @@
       "add": "Projekti ilanngukkit",
       "created": "Pilersinneqarpoq {{name}} ."
     },
-    "back": "Taarsiullugu Sanaartortut"
+    "back": "Taarsiullugu Sanaartortut",
+    "protection": {
+      "days_one": "{{count}} ulloq",
+      "days_other": "{{count}} ullut",
+      "globalDays_one": "Nunarsuaq tamakkerlugu nalinginnaasoq ( {{count}} ulloq)",
+      "globalDays_other": "Nunarsuaq tamakkerlugu nalinginnaasoq ( {{count}} ullut)",
+      "globalDefault": "Nunarsuaq tamakkerlugu atortussaq",
+      "placeholder": "Illersuinermi ullut (empty = nunarsuaq tamakkerlugu atorneqartoq)",
+      "saved": "{{name}} -mut illersuineq marloqiusamik nutarterneqarpoq .",
+      "hint": "Marloqiusamik illersuineq: ullut 1-3650, imaluunniit Instillinger-imiit nunarsuaq tamakkerlugu atortussaq atorlugu imaqanngitsumik qimaguk. Allanngortitsineq allattorsimaffinnut nutaanut kisimi atuuppoq - pioreersut atuuffissatik pigiinnarpaat."
+    },
+    "matching": {
+      "global": "Nunarsuaq tamakkerlugu atortussaq",
+      "globalWith": "Nunarsuaq tamakkerlugu atorneqartoq ( {{fields}} )",
+      "mobile": "Mobilnummeri",
+      "email": "Email",
+      "both": "Mobilnummeri + e-mail",
+      "saved": "{{name}} mut naleqqussarneq marloqiusamik nutarterneqarpoq",
+      "hint": "Detaljit sorliit allattorsimaffiit marluk suliamut ataatsimik ataasiakkaanngortippaat. Allanngortiterinerit maannamut marloqiusamik misissuinernut atuupput; illersuinerup pioreersup sunniuteqanngilaq."
+    }
   }
 }

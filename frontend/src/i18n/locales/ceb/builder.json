@@ -30,7 +30,8 @@
       "registered": "Narehistro"
     },
     "booked": "Gi-book",
-    "empty": "Wala pay referral."
+    "empty": "Wala pay referral.",
+    "bookingCancelled": "Gikansela ang pag-book"
   },
   "detail": {
     "customer": "Kustomer",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Gikumpirma ang booking.",
       "accepted": "Gidawat ang referral.",
-      "rejected": "Gisalikway ang referral."
+      "rejected": "Gisalikway ang referral.",
+      "bookingCancelled": "Gikansela ang pag-book."
     },
-    "backToReferrals": "Balik sa Mga Referral"
+    "backToReferrals": "Balik sa Mga Referral",
+    "bookingCancelled": "Gikansela ang pag-book",
+    "cancelBooking": "Ikansela ang Pag-book",
+    "cancelReasonLabel": "Rason sa pagkanselar (gipakita sa kauban) *",
+    "cancelBookingHint": "Ang pagpanag-iya sa operasyon mobalik sa kauban ug ang ilang pagka-kwalipikado sa komisyon gikansela. Ang lead mahimong ma-book pag-usab sa ulahi.",
+    "cancelBookingConfirm": "Cancel ang booking"
   },
   "history": {
     "title": "Kasaysayan",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Gihimo ang kwalipikasyon sa komisyon",
       "HANDOVER_COMPLETED": "Nakompleto ang handover",
       "ADMIN_PROTECTION_RELEASED": "Sayo nga gipagawas sa admin ang duplicate nga proteksyon. Rason: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Gi-assign sa Admin ang rehistrasyon gikan sa {{from}} ngadto sa {{to}} . Rason: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Gi-assign sa Admin ang rehistrasyon gikan sa {{from}} ngadto sa {{to}} . Rason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ang usa ka doble nga pagsulay sa pagparehistro sa laing kauban gisalikway",
+      "BOOKING_CANCELLED": "Gikansela ang pag-book. Rason: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ang pagpanag-iya sa operasyon gibalik sa kauban",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Gikansela ang kwalipikasyon sa komisyon uban ang pag-book",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ang kwalipikasyon sa komisyon gipahiuli alang sa bag-ong booking"
     }
   }
 }

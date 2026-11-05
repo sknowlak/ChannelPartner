@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "འོས༌འབབ༌ཅན",
-    "PENDING": "བསྣར་བཞག་ཡོདཔ"
+    "PENDING": "བསྣར་བཞག་ཡོདཔ",
+    "CANCELLED": "ཆ་མེད་བཏང་ཡོདཔ།"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "འདྲ་བཤུས་སྲུང་སྐྱོབ་སྔོན་འགྲོ།",
-    "REASSIGN_PARTNER": "མཉམ་འབྲེལ་པ་གཞན་ཅིག་ལུ་ལོག་འགན་སྤྲོད་འབད།"
+    "REASSIGN_PARTNER": "མཉམ་འབྲེལ་པ་གཞན་ཅིག་ལུ་ལོག་འགན་སྤྲོད་འབད།",
+    "CANCEL_BOOKING": "བཀོད་སྒྲིག་ཆ་མེད་གཏང་།"
   },
   "dataType": {
     "TEXT": "ཡིག༌གུ",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "སུ་པར་ཨེ་ཌིམ།",
     "ADMIN": "བདག་སྐྱོང་པ།"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "ངེས་དཔྱད་འབད་ཡོདཔ།",
+    "CANCELLED": "ཆ་མེད་བཏང་ཡོདཔ།"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "ཁྱད་ཆོས་ཅན།",
+    "DISPUTED": "རྩོད་གཞི་ཅན།"
+  },
+  "disputeStatus": {
+    "OPEN": "ཕྱེ་ཕྱེཝ",
+    "UPHELD": "རྒྱབ་སྐྱོར་འབད་ཡོདཔ།",
+    "OVERTURNED": "གཡོ་སྒྱུ་འབད་ཡོདཔ།",
+    "WITHDRAWN": "ཕྱིར་འཐེན།"
   }
 }

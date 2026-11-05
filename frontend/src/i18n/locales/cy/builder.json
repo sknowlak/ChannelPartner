@@ -34,7 +34,8 @@
       "registered": "Wedi cofrestru"
     },
     "booked": "Wedi archebu",
-    "empty": "Dim cyfeiriadau eto."
+    "empty": "Dim cyfeiriadau eto.",
+    "bookingCancelled": "Archebu wedi'i ganslo"
   },
   "detail": {
     "customer": "Cwsmer",
@@ -57,9 +58,15 @@
     "notice": {
       "booked": "Archebu wedi'i gadarnhau.",
       "accepted": "Derbyniwyd yr atgyfeiriad.",
-      "rejected": "Atgyfeiriad wedi'i wrthod."
+      "rejected": "Atgyfeiriad wedi'i wrthod.",
+      "bookingCancelled": "Archebu wedi'i ganslo."
     },
-    "backToReferrals": "Yn ôl at Atgyfeiriadau"
+    "backToReferrals": "Yn ôl at Atgyfeiriadau",
+    "bookingCancelled": "Archebu wedi'i ganslo",
+    "cancelBooking": "Canslo Archebu",
+    "cancelReasonLabel": "Rheswm dros ganslo (dangosir i’r partner) *",
+    "cancelBookingHint": "Mae perchnogaeth weithredol yn mynd yn ôl i'r partner a chaiff ei gymhwysedd comisiwn ei ganslo. Gellir archebu'r arweiniad eto yn ddiweddarach.",
+    "cancelBookingConfirm": "Canslo'r archeb"
   },
   "history": {
     "title": "Hanes",
@@ -96,7 +103,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Cymhwysedd y Comisiwn wedi'i greu",
       "HANDOVER_COMPLETED": "Trosglwyddiad wedi'i gwblhau",
       "ADMIN_PROTECTION_RELEASED": "Rhyddhaodd y gweinyddwr amddiffyniad dyblyg yn gynnar. Rheswm: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Mae'r gweinyddwr wedi ailbennu cofrestriad o {{from}} i {{to}} . Rheswm: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Mae'r gweinyddwr wedi ailbennu cofrestriad o {{from}} i {{to}} . Rheswm: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Gwrthodwyd ymgais gofrestru ddyblyg gan bartner arall",
+      "BOOKING_CANCELLED": "Archebu wedi'i ganslo. Rheswm: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Dychwelodd perchnogaeth weithredol i'r partner",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Cymhwysedd y Comisiwn wedi'i ganslo gyda'r archeb",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Cymhwysedd y Comisiwn wedi'i adfer ar gyfer yr archeb newydd"
     }
   }
 }

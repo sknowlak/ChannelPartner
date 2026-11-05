@@ -43,7 +43,9 @@
       "name": "ad",
       "city": "Şəhər",
       "status": "Vəziyyət",
-      "actions": "Fəaliyyətlər"
+      "actions": "Fəaliyyətlər",
+      "protection": "Dublikat qoruma",
+      "matchOn": "Dublikatlar uyğun gəlir"
     },
     "closeReferrals": "Referanslar üçün bağlayın",
     "reopen": "Yenidən açın",
@@ -55,6 +57,25 @@
       "add": "Layihə əlavə edin",
       "created": "{{name}} yaradıldı."
     },
-    "back": "İnşaatçılar səhifəsinə qayıt"
+    "back": "İnşaatçılar səhifəsinə qayıt",
+    "protection": {
+      "days_one": "{{count}} gün",
+      "days_other": "{{count}} gün",
+      "globalDays_one": "Qlobal defolt ( {{count}} gün)",
+      "globalDays_other": "Qlobal defolt ( {{count}} gün)",
+      "globalDefault": "Qlobal defolt",
+      "placeholder": "Qoruma günləri (boş = qlobal defolt)",
+      "saved": "{{name}} üçün dublikat qoruma yeniləndi.",
+      "hint": "Dublikat qoruma: 1-3650 gün və ya Parametrlərdən qlobal defoltdan istifadə etmək üçün boş buraxın. Dəyişiklik yalnız yeni qeydiyyatlara şamil edilir - mövcud olanlar öz müddətini saxlayır."
+    },
+    "matching": {
+      "global": "Qlobal defolt",
+      "globalWith": "Qlobal defolt ( {{fields}} )",
+      "mobile": "Mobil nömrə",
+      "email": "E-poçt",
+      "both": "Mobil nömrə + e-poçt",
+      "saved": "{{name}} üçün dublikat uyğunluğu yeniləndi",
+      "hint": "Hansı detallar bir layihə üçün iki qeydiyyatı eyni müştəri edir. Dəyişikliklər bundan sonra dublikat çeklərə şamil edilir; mövcud mühafizə təsir etmir."
+    }
   }
 }

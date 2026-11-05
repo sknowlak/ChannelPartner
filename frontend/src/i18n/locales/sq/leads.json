@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Rezervuar",
-    "pending": "Në pritje"
+    "pending": "Në pritje",
+    "status": {
+      "CONFIRMED": "Rezervuar",
+      "CANCELLED": "Rezervimi u anulua"
+    }
   },
   "assign": {
     "unassigned": "E pacaktuar",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Asnjë projekt ende (nuk është referuar)",
-    "notInList": "{{project}} (jo në listën e projekteve)"
+    "notInList": "{{project}} (jo në listën e projekteve)",
+    "protectionDays_one": "{{count}} -mbrojtje ditore",
+    "protectionDays_other": "{{count}} -mbrojtje ditore"
   },
   "journey": {
     "customer": "Klienti",
@@ -76,7 +82,14 @@
     "progressHistory": "Historia e Progresit",
     "timesIn": "(herë në {{timezone}} )",
     "backToMyLeads": "Kthehu te Klientët e Mi",
-    "editLead": "Edit Lead"
+    "editLead": "Edit Lead",
+    "disputeBanner": "Një partner tjetër ka kundërshtuar pronësinë e këtij klienti. Një administrator Leadrat po e shqyrton atë - mbrojtja juaj qëndron në vend derisa ata të vendosin.",
+    "booking": "Rezervimi",
+    "commission": "Komisioni",
+    "notBooked": "I pa rezervuar",
+    "cancelledOn": "Anuluar më {{date}} .",
+    "cancelReason": "Arsyeja: {{reason}}",
+    "cancelledHint": "Ndërtuesi e anuloi rezervimin - pronësia operacionale është kthyer me ju dhe pranueshmëria e komisionit është anuluar. Rikthehet nëse epërsia rezervohet sërish."
   },
   "referral": {
     "NOT_REFERRED": "Nuk është referuar (pa projekt)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Ndërtuesi pranoi referimin",
       "REFERRAL_REJECTED": "Ndërtuesi e refuzoi referimin. Arsyeja: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Administratori lëshoi ​​herët mbrojtjen e dyfishtë. Arsyeja: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Administratori ricaktoi regjistrimin nga {{from}} në {{to}} . Arsyeja: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Administratori ricaktoi regjistrimin nga {{from}} në {{to}} . Arsyeja: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Një përpjekje e dyfishtë për regjistrim nga një partner tjetër u refuzua",
+      "BOOKING_CANCELLED": "Rezervimi u anulua. Arsyeja: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Pronësia operative iu kthye partnerit",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Përshtatshmëria e komisionit u anulua me rezervimin",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Përshtatshmëria e komisionit u rivendos për rezervimin e ri",
+      "OWNERSHIP_DISPUTE_RAISED": "Një partner tjetër kontestoi pronësinë e këtij klienti - një administrator Leadrat do ta shqyrtojë atë",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Mosmarrëveshja e pronësisë për këtë klient u tërhoq - pronësia juaj është e pandryshuar",
+      "OWNERSHIP_DISPUTE_UPHELD": "Mosmarrëveshja e pronësisë për këtë klient është shqyrtuar - pronësia juaj është konfirmuar",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Regjistruar pasi mosmarrëveshja juaj e pronësisë u vendos në favorin tuaj. Shënim: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Mbrojtja përfundoi: një mosmarrëveshje pronësie u vendos në favor të një partneri tjetër. Shënim: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Ky numër telefoni nuk është i vlefshëm për {{country}} .",
     "COUNTRY_MISMATCH": "Ju lutemi zgjidhni kodin e duhur të shtetit.",
     "NOT_MOBILE": "Ju lutemi shkruani një numër celular, jo një telefon fiks."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisioni i pranueshëm",
+      "PENDING": "Komisioni në pritje",
+      "CANCELLED": "Komisioni u anulua"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Atribuohet ty",
+      "DISPUTED": "Atributi i diskutueshëm"
+    }
+  },
+  "result": {
+    "none": "Nuk ka asnjë rezultat regjistrimi për t'u shfaqur. Regjistro një kryesim fillimisht.",
+    "acceptedTitle": "Plumbi i regjistruar",
+    "rejectedTitle": "Plumbi nuk është regjistruar",
+    "protectionWindow": "Dritarja e Mbrojtjes",
+    "protectedUntil": "Mbrojtur deri në",
+    "openLead": "Hap Plumbin",
+    "addAnother": "Shtoni një tjetër drejtues",
+    "duplicate": "Dublikatë - tashmë e mbrojtur",
+    "duplicateHint": "Ky klient është tashmë i mbrojtur për këtë projekt nga një tjetër regjistrim, kështu që nuk mund të regjistrohej për ju.",
+    "existingProtectedUntil": "Regjistrimi ekzistues i mbrojtur deri"
+  },
+  "disputes": {
+    "title": "Mosmarrëveshjet e mia",
+    "intro": "Mosmarrëveshjet e pronësisë që ngritët për klientët që u refuzuan si dublikatë. Një administrator Leadrat shqyrton secilën prej tyre.",
+    "empty": "Ju nuk keni ngritur asnjë mosmarrëveshje. Nëse një klient që keni sjellë refuzohet si dublikatë, ju mund ta kundërshtoni atë nga rezultati i regjistrimit.",
+    "columns": {
+      "dispute": "mosmarrëveshje",
+      "reason": "Arsyeja juaj",
+      "outcome": "Rezultati"
+    },
+    "status": {
+      "OPEN": "Në shqyrtim",
+      "UPHELD": "Jo në favorin tuaj",
+      "OVERTURNED": "Vendosi në favorin tuaj",
+      "WITHDRAWN": "Tërhequr"
+    },
+    "awaitingReview": "Në pritje të shqyrtimit nga administratori",
+    "openNewLead": "Hapni drejtimin tuaj {{id}}",
+    "withdraw": "Tërhiqet",
+    "withdrawConfirm": "Tërhiqet mosmarrëveshja juaj për {{name}} ? Pronësia aktuale qëndron ashtu siç është.",
+    "raise": "Mosmarrëveshje pronësie",
+    "raiseTitle": "Mosmarrëveshje pronësie",
+    "raiseHint": "Nëse ky klient erdhi tek ju i pari, shpjegoni pse. Një administrator Leadrat do ta shqyrtojë atë; nëse ata vendosin në favorin tuaj, drejtimi është regjistruar për ju.",
+    "reasonLabel": "Pse ky klient është i yti?",
+    "reasonMin_one": "Të paktën {{count}} karakter.",
+    "reasonMin_other": "Të paktën {{count}} karaktere.",
+    "submit": "Dërgo mosmarrëveshjen",
+    "notProtected": "Askush nuk ka më mbrojtje për këtë klient për këtë projekt - ju mund të regjistroni drejtimin tani.",
+    "raised": "Mosmarrëveshja {{id}} u dërgua për shqyrtim.",
+    "viewAll": "Shiko mosmarrëveshjet e mia"
+  },
+  "dashboard": {
+    "title": "Paneli",
+    "period": "Periudha",
+    "lastDays_one": "{{count}} ditë",
+    "lastDays_other": "{{count}} ditë",
+    "emptyTitle": "Mirë se vini! Nuk keni ende të dhëna.",
+    "emptyHint": "Regjistroni drejtimin tuaj të parë - tubacioni, rezervimet dhe afatet e mbrojtjes do të shfaqen këtu.",
+    "tiles": {
+      "leads": "Drejtimet totale",
+      "newInPeriod_one": "{{count}} të reja në këtë periudhë",
+      "newInPeriod_other": "{{count}} të reja në këtë periudhë",
+      "accepted": "Pranuar",
+      "booked": "Rezervuar",
+      "bookedInPeriod_one": "{{count}} rezervuar në këtë periudhë",
+      "bookedInPeriod_other": "{{count}} rezervuar në këtë periudhë",
+      "conversion": "Konvertimi",
+      "conversionHint": "Pikat e rezervuara si pjesë e klientëve të pranuar",
+      "protectedNow": "E mbrojtur tani",
+      "expiringSoon_one": "Mbrojtja përfundon në {{count}} ditë",
+      "expiringSoon_other": "Mbrojtja përfundon për {{count}} ditë",
+      "disputedNow": "Kontestuar nga të tjerët",
+      "disputedNowHint": "Udhëheqjet tuaja me një mosmarrëveshje të hapur pronësie nga një partner tjetër",
+      "commissionEligible": "Komisioni i pranueshëm",
+      "commissionCancelled_one": "{{count}} u anulua",
+      "commissionCancelled_other": "{{count}} u anulua"
+    },
+    "chart": {
+      "title_one": "Regjistrimet dhe rezervimet në ditë - {{count}} dita e fundit",
+      "title_other": "Regjistrimet dhe rezervimet në ditë - zgjasin {{count}} ditë",
+      "registrations": "Regjistrimet",
+      "bookings": "Rezervimet"
+    },
+    "byStage": "Kryeson sipas statusit",
+    "bySource": "Drejton sipas burimit",
+    "byReferral": "Drejton sipas statusit të referimit",
+    "myDisputes": "Mosmarrëveshjet që keni ngritur",
+    "noDisputes": "Asnjë mosmarrëveshje e ngritur.",
+    "unknown": "Nuk është vendosur",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM e jashtme (e simuluar)",
+      "PARTNER_CRM": "Shtuar nga ekipi juaj",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integrimi",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Mbrojtja skadon në {{count}} ditën tjetër",
+    "expiringTitle_other": "Mbrojtja skadon në {{count}} ditët e ardhshme",
+    "expiringEmpty": "Asnjë plumb nuk e humb mbrojtjen e tij në këtë dritare."
   }
 }

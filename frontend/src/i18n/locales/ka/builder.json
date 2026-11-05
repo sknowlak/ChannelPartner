@@ -30,7 +30,8 @@
       "registered": "დარეგისტრირდა"
     },
     "booked": "დაჯავშნილი",
-    "empty": "ჯერ არ არის მიმართვები."
+    "empty": "ჯერ არ არის მიმართვები.",
+    "bookingCancelled": "დაჯავშნა გაუქმდა"
   },
   "detail": {
     "customer": "დამკვეთი",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "დაჯავშნა დადასტურებულია.",
       "accepted": "რეფერალი მიღებულია.",
-      "rejected": "მიმართვა უარყოფილია."
+      "rejected": "მიმართვა უარყოფილია.",
+      "bookingCancelled": "დაჯავშნა გაუქმდა."
     },
-    "backToReferrals": "დაბრუნება რეფერალებზე"
+    "backToReferrals": "დაბრუნება რეფერალებზე",
+    "bookingCancelled": "დაჯავშნა გაუქმდა",
+    "cancelBooking": "დაჯავშნის გაუქმება",
+    "cancelReasonLabel": "გაუქმების მიზეზი (აჩვენა პარტნიორს) *",
+    "cancelBookingHint": "საოპერაციო მფლობელობა უბრუნდება პარტნიორს და მათი საკომისიო უფლებამოსილება გაუქმებულია. ტყვიის დაჯავშნა შესაძლებელია მოგვიანებით.",
+    "cancelBookingConfirm": "გააუქმეთ დაჯავშნა"
   },
   "history": {
     "title": "ისტორია",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "შეიქმნა კომისიის უფლებამოსილება",
       "HANDOVER_COMPLETED": "ჩაბარება დასრულდა",
       "ADMIN_PROTECTION_RELEASED": "ადმინისტრატორმა ადრე გამოუშვა დუბლიკატი დაცვა. მიზეზი: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "ადმინისტრატორმა ხელახლა დაავალა რეგისტრაცია {{from}} -დან {{to}} . მიზეზი: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "ადმინისტრატორმა ხელახლა დაავალა რეგისტრაცია {{from}} -დან {{to}} . მიზეზი: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "სხვა პარტნიორის მიერ რეგისტრაციის დუბლიკატი მცდელობა უარყოფილია",
+      "BOOKING_CANCELLED": "დაჯავშნა გაუქმდა. მიზეზი: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "საოპერაციო საკუთრება დაუბრუნდა პარტნიორს",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "კომისიის უფლებამოსილება გაუქმდა დაჯავშნით",
+      "COMMISSION_ELIGIBILITY_RESTORED": "ახალი დაჯავშნისთვის კომისიის უფლებამოსილება აღდგა"
     }
   }
 }

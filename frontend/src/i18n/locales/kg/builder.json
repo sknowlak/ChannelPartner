@@ -30,7 +30,8 @@
       "registered": "Kusonikisa zina"
     },
     "booked": "Bo me bumba yo",
-    "empty": "Ata referral mosi ve tii ntangu yai."
+    "empty": "Ata referral mosi ve tii ntangu yai.",
+    "bookingCancelled": "Bo me katula reservation"
   },
   "detail": {
     "customer": "Kiliya",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Reservation me ndimama.",
       "accepted": "Bo me ndima kutinda.",
-      "rejected": "Bo me buyaka kutindila yandi."
+      "rejected": "Bo me buyaka kutindila yandi.",
+      "bookingCancelled": "Bo me katula reservation."
     },
-    "backToReferrals": "Kuvutuka na Bantu ya Bo Tindaka"
+    "backToReferrals": "Kuvutuka na Bantu ya Bo Tindaka",
+    "bookingCancelled": "Bo me katula reservation",
+    "cancelBooking": "Katula Reservation",
+    "cancelReasonLabel": "Kikuma ya kukatula (bo me songa nduku) *",
+    "cancelBookingHint": "Kimfumu ya kisalu ke vutuka na nduku mpi bo ke katulaka nswa na bo ya kubaka komisio. E nkumbu ilenda tambula diaka kuna kwalanda.",
+    "cancelBookingConfirm": "Katula reservation"
   },
   "history": {
     "title": "Disolo",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kufwana ya komite me salama",
       "HANDOVER_COMPLETED": "Kupesa me mana",
       "ADMIN_PROTECTION_RELEASED": "Admin basisaka lutaninu ya zole na ntwala. Kikuma: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Ntwadisi me pesa zina ya nkaka katuka na {{from}} tii na {{to}} . Kikuma: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Ntwadisi me pesa zina ya nkaka katuka na {{from}} tii na {{to}} . Kikuma: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Bo buyaka kumeka kusonikisa zina ya mbala zole yina nduku ya nkaka salaka",
+      "BOOKING_CANCELLED": "Bo me katula reservation. Kikuma: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Kimfumu ya kisalu me vutuka na nduku",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Bo me katula nswa ya kubaka komisio ti reservation",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Bo me vutula nswa ya kusala kisalu sambu na reservation ya mpa"
     }
   }
 }

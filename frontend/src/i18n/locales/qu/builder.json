@@ -30,7 +30,8 @@
       "registered": "Qillqasqa"
     },
     "booked": "Reservado",
-    "empty": "Manaraqmi referenciakuna kanchu."
+    "empty": "Manaraqmi referenciakuna kanchu.",
+    "bookingCancelled": "Reserva cancelasqa"
   },
   "detail": {
     "customer": "Rantiq",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Reservacionta takyachirqa.",
       "accepted": "Referencia nisqa chaskisqa.",
-      "rejected": "Referencia nisqa mana chaskisqachu."
+      "rejected": "Referencia nisqa mana chaskisqachu.",
+      "bookingCancelled": "Reserva cancelasqa."
     },
-    "backToReferrals": "Referencias nisqaman kutiy"
+    "backToReferrals": "Referencias nisqaman kutiy",
+    "bookingCancelled": "Reserva cancelasqa",
+    "cancelBooking": "Reservacionta cancelar",
+    "cancelReasonLabel": "Razón cancelar (socioman rikuchisqa) * .",
+    "cancelBookingHint": "Propiedad operativa nisqa socioman kutimun chaymanta comisión nisqapaq eligibilidadninku cancelasqa. Chay plomo nisqataqa qhepamanmi hukmanta reservakunman.",
+    "cancelBookingConfirm": "Reservacionta cancelay"
   },
   "history": {
     "title": "Willarina",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Comisión nisqapaq eligibilidad nisqa kamasqa",
       "HANDOVER_COMPLETED": "Entrega tukusqaña",
       "ADMIN_PROTECTION_RELEASED": "Admin iskay kuti hark'ayta ñawpaqmanta lluqsichirqan. Razón: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin qillqakuyta {{from}} kaqmanta {{to}} kaqman wakmanta churarqa. Razón: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin qillqakuyta {{from}} kaqmanta {{to}} kaqman wakmanta churarqa. Razón: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Huk sociopa iskay kuti registro ruwayta munasqanqa mana chaskisqachu karqa",
+      "BOOKING_CANCELLED": "Reserva cancelasqa. Razón: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Propiedad operativa nisqa socioman kutichisqa",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Comisión nisqapaq eligibilidad nisqa reservacionwan cancelasqa",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Comisión nisqapaq eligibilidad nisqa musuq reserva nisqapaq kutichisqa"
     }
   }
 }

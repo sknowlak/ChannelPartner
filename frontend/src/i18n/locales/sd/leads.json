@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "بک ٿيل",
-    "pending": "باقي رهيو"
+    "pending": "باقي رهيو",
+    "status": {
+      "CONFIRMED": "بک ٿيل",
+      "CANCELLED": "بکنگ منسوخ ڪئي وئي"
+    }
   },
   "assign": {
     "unassigned": "اڻ مقرر ڪيل",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "اڃا تائين ڪو به منصوبو نه آهي (حوالو نه ڪيو ويو آهي)",
-    "notInList": "{{project}} (پراجيڪٽ لسٽ ۾ نه آهي)"
+    "notInList": "{{project}} (پراجيڪٽ لسٽ ۾ نه آهي)",
+    "protectionDays_one": "{{count}} - ڏينھن جو تحفظ",
+    "protectionDays_other": "{{count}} - ڏينھن جو تحفظ"
   },
   "journey": {
     "customer": "ڪسٽمر",
@@ -76,7 +82,14 @@
     "progressHistory": "ترقي جي تاريخ",
     "timesIn": "( ڀيرا {{timezone}} ۾)",
     "backToMyLeads": "واپس منهنجي ليڊز ڏانهن",
-    "editLead": "ليڊ کي تبديل ڪريو"
+    "editLead": "ليڊ کي تبديل ڪريو",
+    "disputeBanner": "ٻيو پارٽنر هن گراهڪ جي ملڪيت تي تڪرار ڪيو آهي. هڪ Leadrat منتظم ان جو جائزو وٺي رهيو آهي - توهان جو تحفظ برقرار رهندو جيستائين اهي فيصلو ڪن.",
+    "booking": "بکنگ",
+    "commission": "ڪميشن",
+    "notBooked": "بک ٿيل نه آهي",
+    "cancelledOn": "منسوخ ڪيو ويو {{date}} تي.",
+    "cancelReason": "سبب: {{reason}}",
+    "cancelledHint": "بلڊر بکنگ منسوخ ڪري ڇڏي - آپريشنل ملڪيت توهان وٽ واپس آهي ۽ ڪميشن جي اهليت منسوخ ڪئي وئي آهي. اهو بحال ٿئي ٿو جيڪڏهن ليڊ ٻيهر بک ڪيو وڃي."
   },
   "referral": {
     "NOT_REFERRED": "حوالو نه ڏنو (ڪو پروجيڪٽ)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "بلڊر حوالو قبول ڪيو",
       "REFERRAL_REJECTED": "بلڊر ريفرل کي رد ڪري ڇڏيو. سبب: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "منتظم جلد ئي نقل جي حفاظت جاري ڪئي. سبب: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "منتظم رجسٽريشن ٻيهر مقرر ڪئي {{from}} کان {{to}} تائين. سبب: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "منتظم رجسٽريشن ٻيهر مقرر ڪئي {{from}} کان {{to}} تائين. سبب: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "ٻي پارٽنر پاران هڪ نقل رجسٽريشن جي ڪوشش رد ڪئي وئي",
+      "BOOKING_CANCELLED": "بکنگ منسوخ ڪئي وئي. سبب: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "آپريشنل ملڪيت پارٽنر ڏانهن واپس آئي",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "ڪميشن جي اهليت بکنگ سان منسوخ ڪئي وئي",
+      "COMMISSION_ELIGIBILITY_RESTORED": "نئين بکنگ لاءِ ڪميشن جي اهليت بحال ڪئي وئي",
+      "OWNERSHIP_DISPUTE_RAISED": "هڪ ٻيو پارٽنر هن گراهڪ جي ملڪيت تي تڪرار ڪيو - هڪ Leadrat منتظم ان جو جائزو وٺندو",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "هن گراهڪ تي ملڪيت جي تڪرار کي واپس ورتو ويو - توهان جي ملڪيت غير تبديل ٿيل آهي",
+      "OWNERSHIP_DISPUTE_UPHELD": "ھن گراهڪ تي ملڪيت جي تڪرار جو جائزو ورتو ويو - توھان جي ملڪيت جي تصديق ڪئي وئي آھي",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "توهان جي حق ۾ فيصلو ڪيو ويو توهان جي ملڪيت جي تڪرار کان پوء رجسٽر ٿيو. نوٽ: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "تحفظ ختم ٿي ويو: هڪ ملڪيت جي تڪرار جو فيصلو ٻئي پارٽنر جي حق ۾ ڪيو ويو. نوٽ: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "هي فون نمبر {{country}} لاءِ صحيح ناهي.",
     "COUNTRY_MISMATCH": "مھرباني ڪري صحيح ملڪ جو ڪوڊ چونڊيو.",
     "NOT_MOBILE": "مھرباني ڪري ھڪڙو موبائل نمبر داخل ڪريو، لينڊ لائن نه."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "ڪميشن جي لائق",
+      "PENDING": "ڪميشن جي انتظار ۾",
+      "CANCELLED": "ڪميشن منسوخ ڪئي وئي"
+    },
+    "attribution": {
+      "ATTRIBUTED": "تو ڏانهن منسوب",
+      "DISPUTED": "انتساب تڪراري"
+    }
+  },
+  "result": {
+    "none": "ظاهر ڪرڻ لاء ڪو به رجسٽريشن نتيجو ناهي. پهرين ليڊ رجسٽر ڪريو.",
+    "acceptedTitle": "ليڊ رجسٽرڊ",
+    "rejectedTitle": "ليڊ رجسٽر ٿيل ناهي",
+    "protectionWindow": "حفاظتي ونڊو",
+    "protectedUntil": "تائين محفوظ",
+    "openLead": "اوپن ليڊ",
+    "addAnother": "ٻيو ليڊ شامل ڪريو",
+    "duplicate": "نقل - اڳ ۾ ئي محفوظ",
+    "duplicateHint": "هي گراهڪ اڳ ۾ ئي هن پروجيڪٽ لاءِ ٻي رجسٽريشن ذريعي محفوظ آهي، تنهن ڪري اهو توهان لاءِ رجسٽر نه ٿي سگهيو.",
+    "existingProtectedUntil": "موجوده رجسٽريشن تائين محفوظ"
+  },
+  "disputes": {
+    "title": "منهنجا تڪرار",
+    "intro": "مالڪي جا تڪرار جيڪي توهان گراهڪن لاءِ اٿاريا هئا جن کي نقل طور رد ڪيو ويو هو. هڪ Leadrat منتظم هر هڪ جو جائزو وٺندو آهي.",
+    "empty": "توهان ڪو به تڪرار نه ڪيو آهي. جيڪڏهن هڪ گراهڪ جيڪو توهان آندو آهي ان کي نقل جي طور تي رد ڪيو ويو آهي، توهان ان کي رجسٽريشن جي نتيجي ۾ تڪرار ڪري سگهو ٿا.",
+    "columns": {
+      "dispute": "تڪرار",
+      "reason": "تنهنجو سبب",
+      "outcome": "نتيجو"
+    },
+    "status": {
+      "OPEN": "جائزو هيٺ",
+      "UPHELD": "توهان جي حق ۾ نه آهي",
+      "OVERTURNED": "توهان جي حق ۾ فيصلو ڪيو",
+      "WITHDRAWN": "واپس ورتو ويو"
+    },
+    "awaitingReview": "منتظم جي نظرثاني جي انتظار ۾",
+    "openNewLead": "پنهنجي ليڊ کوليو {{id}}",
+    "withdraw": "واپس وٺڻ",
+    "withdrawConfirm": "{{name}} لاءِ پنھنجو تڪرار واپس وٺو؟ موجوده ملڪيت جيئن ته رهي ٿي.",
+    "raise": "تڪرار جي ملڪيت",
+    "raiseTitle": "تڪرار جي ملڪيت",
+    "raiseHint": "جيڪڏهن هي گراهڪ توهان وٽ پهريون ڀيرو آيو، وضاحت ڪريو ڇو. هڪ Leadrat منتظم ان جو جائزو وٺندو؛ جيڪڏهن اهي توهان جي حق ۾ فيصلو ڪن ٿا، ليڊ توهان لاء رجسٽر ٿيل آهي.",
+    "reasonLabel": "هي گراهڪ توهان جو ڇو آهي؟",
+    "reasonMin_one": "گھٽ ۾ گھٽ {{count}} اکر.",
+    "reasonMin_other": "گھٽ ۾ گھٽ {{count}} اکر.",
+    "submit": "تڪرار موڪليو",
+    "notProtected": "هن پروجيڪٽ لاءِ هن گراهڪ تي وڌيڪ ڪنهن کي به تحفظ نه آهي - توهان هاڻي رجسٽر ڪري سگهو ٿا اڳواٽ.",
+    "raised": "تڪرار {{id}} نظرثاني لاءِ موڪليو ويو.",
+    "viewAll": "منهنجا تڪرار ڏسو"
+  },
+  "dashboard": {
+    "title": "ڊيش بورڊ",
+    "period": "عرصو",
+    "lastDays_one": "{{count}} ڏينهن",
+    "lastDays_other": "{{count}} ڏينهن",
+    "emptyTitle": "ڀلي ڪري آيا! توھان وٽ اڃا تائين ڪو به رستو نه آھي.",
+    "emptyHint": "پنهنجي پهرين ليڊ کي رجسٽر ڪريو - توهان جي پائپ لائن، بکنگ ۽ تحفظ جي آخري حدون هتي ظاهر ٿينديون.",
+    "tiles": {
+      "leads": "ڪل ليڊز",
+      "newInPeriod_one": "هن عرصي ۾ {{count}} نئون",
+      "newInPeriod_other": "هن عرصي ۾ {{count}} نئون",
+      "accepted": "قبول ڪيو",
+      "booked": "بک ٿيل",
+      "bookedInPeriod_one": "{{count}} هن عرصي ۾ بک ڪيو ويو",
+      "bookedInPeriod_other": "{{count}} هن عرصي ۾ بک ڪيو ويو",
+      "conversion": "تبديلي",
+      "conversionHint": "بک ٿيل ليڊز قبول ٿيل ليڊز جي حصي طور",
+      "protectedNow": "هاڻي حفاظت ڪئي",
+      "expiringSoon_one": "تحفظ ختم ٿيڻ {{count}} ڏينهن ۾",
+      "expiringSoon_other": "تحفظ ختم ٿيڻ {{count}} ڏينهن ۾",
+      "disputedNow": "ٻين طرفان تڪرار",
+      "disputedNowHint": "توهان جي اڳواڻي هڪ ٻئي پارٽنر کان کليل ملڪيت جي تڪرار سان",
+      "commissionEligible": "ڪميشن جي لائق",
+      "commissionCancelled_one": "{{count}} منسوخ ٿيل",
+      "commissionCancelled_other": "{{count}} منسوخ ٿيل"
+    },
+    "chart": {
+      "title_one": "رجسٽريشن ۽ بکنگ في ڏينهن - آخري {{count}} ڏينهن",
+      "title_other": "في ڏينهن رجسٽريشن ۽ بکنگ - آخري {{count}} ڏينهن",
+      "registrations": "رجسٽريشنون",
+      "bookings": "بکنگ"
+    },
+    "byStage": "حيثيت جي لحاظ کان اڳواڻي",
+    "bySource": "ذريعن جي ذريعي",
+    "byReferral": "ريفرل اسٽيٽس جي حوالي سان",
+    "myDisputes": "تڪرار جيڪي توھان اٿاريا",
+    "noDisputes": "ڪوبه تڪرار پيدا نه ٿيو.",
+    "unknown": "مقرر نه ٿيو",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "خارجي CRM (نقلي)",
+      "PARTNER_CRM": "توهان جي ٽيم پاران شامل ڪيو ويو",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "انضمام",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "ايندڙ {{count}} ڏينهن ۾ تحفظ ختم ٿي رهيو آهي",
+    "expiringTitle_other": "ايندڙ {{count}} ڏينهن ۾ تحفظ ختم ٿي رهيو آهي",
+    "expiringEmpty": "هن ونڊو ۾ ڪوبه ليڊ پنهنجو تحفظ نه وڃائيندو آهي."
   }
 }

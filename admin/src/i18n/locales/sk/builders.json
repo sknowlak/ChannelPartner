@@ -43,7 +43,9 @@
       "name": "Meno",
       "city": "Mesto",
       "status": "Stav",
-      "actions": "Akcie"
+      "actions": "Akcie",
+      "protection": "Duplicitná ochrana",
+      "matchOn": "Duplikáty sa zhodujú"
     },
     "closeReferrals": "Zatvorte pre odporúčania",
     "reopen": "Znovu otvorte",
@@ -55,6 +57,29 @@
       "add": "Pridať projekt",
       "created": "Vytvorené {{name}} ."
     },
-    "back": "Späť na Stavitelia"
+    "back": "Späť na Stavitelia",
+    "protection": {
+      "days_one": "{{count}} deň",
+      "days_few": "{{count}} dní",
+      "days_many": "{{count}} dní",
+      "days_other": "{{count}} dní",
+      "globalDays_one": "Globálne predvolené ( {{count}} deň)",
+      "globalDays_few": "Globálne predvolené ( {{count}} dní)",
+      "globalDays_many": "Globálne predvolené ( {{count}} dní)",
+      "globalDays_other": "Globálne predvolené ( {{count}} dní)",
+      "globalDefault": "Globálne predvolené",
+      "placeholder": "Dni ochrany (prázdne = globálne predvolené nastavenie)",
+      "saved": "Duplicitná ochrana bola aktualizovaná pre {{name}} .",
+      "hint": "Ochrana proti duplicite: 1 – 3 650 dní, alebo ponechajte pole prázdne, ak chcete použiť globálne predvolené nastavenie z Nastavenia. Zmena sa týka len nových registrácií - platnosť existujúcich zostáva zachovaná."
+    },
+    "matching": {
+      "global": "Globálne predvolené",
+      "globalWith": "Globálne predvolené ( {{fields}} )",
+      "mobile": "Mobilné číslo",
+      "email": "Email",
+      "both": "Mobilné číslo + email",
+      "saved": "Aktualizované duplicitné zhody pre {{name}}",
+      "hint": "Ktoré podrobnosti robia z dvoch registrácií toho istého zákazníka pre projekt. Zmeny sa odteraz vzťahujú na duplicitné kontroly; existujúca ochrana nie je ovplyvnená."
+    }
   }
 }

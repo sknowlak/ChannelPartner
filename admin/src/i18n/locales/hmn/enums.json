@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Tsim nyog",
-    "PENDING": "Tseem tos"
+    "PENDING": "Tseem tos",
+    "CANCELLED": "Tso tseg"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Tso cov kev tiv thaiv duplicate thaum ntxov",
-    "REASSIGN_PARTNER": "Rov xa mus rau lwm tus khub"
+    "REASSIGN_PARTNER": "Rov xa mus rau lwm tus khub",
+    "CANCEL_BOOKING": "Ncua tseg booking"
   },
   "dataType": {
     "TEXT": "Ntawv nyeem",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super Admin",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Kev lees paub",
+    "CANCELLED": "Tso tseg"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Tsim nyog",
+    "DISPUTED": "Kev tsis sib haum xeeb"
+  },
+  "disputeStatus": {
+    "OPEN": "Qhib",
+    "UPHELD": "Txhawb nqa",
+    "OVERTURNED": "Rov qab",
+    "WITHDRAWN": "Tshem tawm"
   }
 }

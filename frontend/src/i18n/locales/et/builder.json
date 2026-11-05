@@ -30,7 +30,8 @@
       "registered": "Registreeritud"
     },
     "booked": "Broneeritud",
-    "empty": "Soovitusi veel pole."
+    "empty": "Soovitusi veel pole.",
+    "bookingCancelled": "Broneering tühistatud"
   },
   "detail": {
     "customer": "Klient",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Broneering kinnitatud.",
       "accepted": "Saatekiri vastu võetud.",
-      "rejected": "Suunamine lükati tagasi."
+      "rejected": "Suunamine lükati tagasi.",
+      "bookingCancelled": "Broneering tühistatud."
     },
-    "backToReferrals": "Tagasi viidete juurde"
+    "backToReferrals": "Tagasi viidete juurde",
+    "bookingCancelled": "Broneering tühistatud",
+    "cancelBooking": "Tühista broneering",
+    "cancelReasonLabel": "Tühistamise põhjus (näidatakse partnerile) *",
+    "cancelBookingHint": "Tegevusomandiõigus läheb tagasi partnerile ja tema vahendustasu kõlblikkus tühistatakse. Esikoha saab hiljem uuesti broneerida.",
+    "cancelBookingConfirm": "Tühista broneering"
   },
   "history": {
     "title": "Ajalugu",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Komisjoni abikõlblikkus on loodud",
       "HANDOVER_COMPLETED": "Üleandmine lõpetatud",
       "ADMIN_PROTECTION_RELEASED": "Administraator vabastas duplikaatkaitse varakult. Põhjus: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Administraator määras registreerimise ümber asukohalt {{from}} kasutajaks {{to}} . Põhjus: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Administraator määras registreerimise ümber asukohalt {{from}} kasutajaks {{to}} . Põhjus: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Teise partneri duplikaatregistreerimiskatse lükati tagasi",
+      "BOOKING_CANCELLED": "Broneering tühistatud. Põhjus: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Tegevusomandiõigus tagastati partnerile",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Broneeringuga tühistati komisjonitasu kehtivus",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Komisjonitasu kõlblikkus uue broneeringu jaoks taastatud"
     }
   }
 }

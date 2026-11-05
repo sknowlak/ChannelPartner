@@ -30,7 +30,8 @@
       "registered": "A tɔgɔ sɛbɛra"
     },
     "booked": "A sɛbɛra",
-    "empty": "Mɔgɔ si ma ci fɔlɔ."
+    "empty": "Mɔgɔ si ma ci fɔlɔ.",
+    "bookingCancelled": "Ɲɛyirali bɔra"
   },
   "detail": {
     "customer": "Sannikɛla",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Booking sɛgɛsɛgɛra.",
       "accepted": "A sɔnna ka ci.",
-      "rejected": "O mɔgɔw banna ka taga n’u ye."
+      "rejected": "O mɔgɔw banna ka taga n’u ye.",
+      "bookingCancelled": "Booking be bɔ yen."
     },
-    "backToReferrals": "Kɔsegi ka taga yɔrɔ minw cira"
+    "backToReferrals": "Kɔsegi ka taga yɔrɔ minw cira",
+    "bookingCancelled": "Ɲɛyirali bɔra",
+    "cancelBooking": "Aw ka yɔrɔ marali dabila",
+    "cancelReasonLabel": "Kuun min kama u y’o baara dabila (a yira baarakɛɲɔgɔn na) *",
+    "cancelBookingHint": "Operasiyɔn tigiya be kɔsegi baarakɛɲɔgɔn ma ani u ka komisiyɔn ka joli be bɔ yen. O ɲɛminɛbaga be se ka booking kɛ tugun kɔfɛ.",
+    "cancelBookingConfirm": "Aw ye booking lalɔ"
   },
   "history": {
     "title": "Tariku",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Komisiyɔn ka jogo danna",
       "HANDOVER_COMPLETED": "Dili banna",
       "ADMIN_PROTECTION_RELEASED": "Admin ye lakanali fila bɔ joona. Kuun: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Kuntigi ye tɔgɔsɛbɛ yɛlɛma ka bɔ {{from}} la ka taga {{to}} . Kuun: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Kuntigi ye tɔgɔsɛbɛ yɛlɛma ka bɔ {{from}} la ka taga {{to}} . Kuun: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Jɛnɲɔgɔn wɛrɛ y’a ɲini ka tɔgɔ sɛbɛ fila kɛ, o banna .",
+      "BOOKING_CANCELLED": "Booking be bɔ yen. Kuun: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operasiyɔn tigiya kɔsegira baarakɛɲɔgɔn ma .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Komisiyɔn ka joli bɔsi ni booking ye",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Komisiyɔn ka joli be segi ka kɛ booking kura kama"
     }
   }
 }

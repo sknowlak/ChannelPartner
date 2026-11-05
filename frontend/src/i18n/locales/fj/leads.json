@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Sa vakarautaki",
-    "pending": "Lala tu"
+    "pending": "Lala tu",
+    "status": {
+      "CONFIRMED": "Sa vakarautaki",
+      "CANCELLED": "Sa bokoci na buking"
+    }
   },
   "assign": {
     "unassigned": "Sega ni lesi",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Se bera ni dua na cakacaka (sega ni vakaraitaki)",
-    "notInList": "{{project}} (sega ni tiko ena lisi ni cakacaka)"
+    "notInList": "{{project}} (sega ni tiko ena lisi ni cakacaka)",
+    "protectionDays_one": "{{count}} -siga ni veitaqomaki",
+    "protectionDays_other": "{{count}} -siga ni veitaqomaki"
   },
   "journey": {
     "customer": "Kasitama",
@@ -76,7 +82,14 @@
     "progressHistory": "iTukutuku ni Toso",
     "timesIn": "(gauna ena {{timezone}} )",
     "backToMyLeads": "Lesu tale ki na Noqu Veiliutaki",
-    "editLead": "Edita na iLiuliu"
+    "editLead": "Edita na iLiuliu",
+    "disputeBanner": "E dua tale na itokani e sa veiletitaka na taukena na kasitama oqo. E dua na admin Leadrat e sa dikeva tiko - na nomu veitaqomaki e tiko ga ena vanua me yacova ni ra sa vakatulewataka.",
+    "booking": "Vakavodoki",
+    "commission": "Ivotavota",
+    "notBooked": "Sega ni volai",
+    "cancelledOn": "Sa bokoci ena {{date}} .",
+    "cancelReason": "Vuna: {{reason}}",
+    "cancelledHint": "Na dau tara vale e bokoca na booking - sa lesu tale mai vei iko na taukeni ni cakacaka ka sa bokoci na dodonu ni komisi. E vakalesui mai kevaka e booked tale na iliuliu."
   },
   "referral": {
     "NOT_REFERRED": "Sega ni vakaraitaki (sega ni cakacaka)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "A ciqoma na dau tara vale na veivakauqeti",
       "REFERRAL_REJECTED": "E sega ni ciqoma o Builder na veivakauqeti. Vuna: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin vagalalataka na itataqomaki vakarua ena gauna taumada. Vuna: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin sa lesia tale na rejisita mai na {{from}} ki na {{to}} . Vuna: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin sa lesia tale na rejisita mai na {{from}} ki na {{to}} . Vuna: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "E dua na sasaga ni rejisita vakarua mai vua e dua tale na itokani e a sega ni vakadonui .",
+      "BOOKING_CANCELLED": "Sa bokoci na vakacuru ilavo. Vuna: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Na taukeni ni cakacaka e lesu tale vua na itokani",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Sa bokoci na veivakadonui ni komisoni kei na kena vakarautaki",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Sa vakalesui mai na veivakadonui ni komisoni me baleta na ivola vou",
+      "OWNERSHIP_DISPUTE_RAISED": "E dua tale na itokani e veiletitaka na taukeni ni kasitama oqo - e dua na admin Leadrat ena dikeva tale",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Na veileti ni taukena ena kasitama oqo e a kau tani - na nomu taukena e sega ni veisau .",
+      "OWNERSHIP_DISPUTE_UPHELD": "Na veileti ni taukena ena kasitama oqo e a railesuvi - sa vakadeitaki na nomu taukena .",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Rejisitataki ni oti na nomu veileti ni taukena e vakatulewataki ena nomu vinaka. iTukutuku: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Sa mai cava na veitaqomaki: sa vakatulewataki e dua na veileti ni taukena me baleta e dua tale na itokani. iTukutuku: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Na naba ni talevoni oqo e sega ni dodonu me baleta na {{country}} .",
     "COUNTRY_MISMATCH": "Yalovinaka digitaka na code ni vanua dodonu.",
     "NOT_MOBILE": "Yalovinaka vakacuruma e dua na naba ni talevoni veikauyaki, sega ni dua na talevoni ni vanua."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "E rawa ni komisoni",
+      "PENDING": "Komisoni e waraki tiko",
+      "CANCELLED": "Sa bokoci na Komisoni"
+    },
+    "attribution": {
+      "ATTRIBUTED": "E vakatokai vei iko",
+      "DISPUTED": "Veiletitaki na kena itukutuku"
+    }
+  },
+  "result": {
+    "none": "Sega ni dua na macala ni rejisita me vakaraitaki. Rejisitataka taumada e dua na iliuliu.",
+    "acceptedTitle": "Rejisitataki na iliuliu",
+    "rejectedTitle": "Lead sega ni rejisita",
+    "protectionWindow": "Katubaleka ni Veitaqomaki",
+    "protectedUntil": "Taqomaki Me yacova na 2019.",
+    "openLead": "Dolava na iLiuliu",
+    "addAnother": "Kuria e dua tale na iliuliu",
+    "duplicate": "Vakaruataki - sa taqomaki",
+    "duplicateHint": "Na kasitama oqo e sa taqomaki tu me baleta na cakacaka oqo ena dua tale na rejisita, sa sega kina ni rawa ni rejisitataki vei iko.",
+    "existingProtectedUntil": "Na rejisita sa tu oqo e taqomaki me yacova na 2019."
+  },
+  "disputes": {
+    "title": "Noqu Veileti",
+    "intro": "Na veileti ni taukena o vakatura me baleti ira na kasitama ka ra sega ni vakadonui me vaka na kena ilavelave. E dua na iliuliu Leadrat e raica lesu na veitikina yadua.",
+    "empty": "O ni sa vakatubura e dua na veileti. Kevaka e dua na kasitama o kauta mai e sega ni vakadonui me vaka e dua na ilavelave, e rawa ni o veiletitaka mai na isau ni rejisita.",
+    "columns": {
+      "dispute": "Veileti",
+      "reason": "Na nomu vuna .",
+      "outcome": "Veika mai yaco"
+    },
+    "status": {
+      "OPEN": "Ena ruku ni railesuva",
+      "UPHELD": "Sega ni nomu vinaka",
+      "OVERTURNED": "Vakatulewataki ena nomu vinaka .",
+      "WITHDRAWN": "Sa kau tani"
+    },
+    "awaitingReview": "Waraka tiko na railesuva ni admin",
+    "openNewLead": "Dolava na nomu iliuliu {{id}}",
+    "withdraw": "Vakasuka",
+    "withdrawConfirm": "Kauta laivi na nomu veileti me baleta na {{name}} ? Na taukeni ni gauna oqo e tiko ga me vaka e tu kina.",
+    "raise": "Veiletitaka na taukena",
+    "raiseTitle": "Veiletitaka na taukena",
+    "raiseHint": "Kevaka e lako mai vei iko taumada na kasitama oqo, vakamacalataka na vuna. Ena dikeva tale e dua na admin Leadrat ; kevaka era vakatulewa ena nomu vinaka, sa rejisitataki na iliuliu me baleti iko.",
+    "reasonLabel": "Na cava e nomu kina na kasitama oqo?",
+    "reasonMin_one": "E lailai duadua na {{count}} na itovo.",
+    "reasonMin_other": "E lailai duadua na {{count}} na matanivola.",
+    "submit": "Vakauta na Veileti",
+    "notProtected": "E sega ni dua e taura na veitaqomaki ena kasitama oqo me baleta na cakacaka oqo e dua tale - e rawa ni o rejisita na iliuliu ena gauna oqo.",
+    "raised": "Veileti {{id}} vakau me dikevi.",
+    "viewAll": "Raica na noqu veileti"
+  },
+  "dashboard": {
+    "title": "Dasibodi",
+    "period": "Gauna",
+    "lastDays_one": "{{count}} siga",
+    "lastDays_other": "{{count}} siga",
+    "emptyTitle": "Kidavaki! E se bera ni dua na nomu iliuliu.",
+    "emptyHint": "Rejisitataka na nomu imatai ni iliuliu - na nomu paipo, bookings kei na gauna ni veitaqomaki ena vakaraitaki eke.",
+    "tiles": {
+      "leads": "Iwiliwili taucoko",
+      "newInPeriod_one": "{{count}} vou ena gauna oqo",
+      "newInPeriod_other": "{{count}} vou ena gauna oqo",
+      "accepted": "Ciqomi",
+      "booked": "Sa vakarautaki",
+      "bookedInPeriod_one": "{{count}} sa volai tu ena gauna oqo",
+      "bookedInPeriod_other": "{{count}} sa volai tu ena gauna oqo",
+      "conversion": "Veisau",
+      "conversionHint": "Na veiliutaki vakaivolataki me vaka e dua na wasei ni veiliutaki ciqomi .",
+      "protectedNow": "Taqomaki ena gauna oqo",
+      "expiringSoon_one": "Veitaqomaki e cava ena {{count}} siga",
+      "expiringSoon_other": "Veitaqomaki e cava ena {{count}} siga",
+      "disputedNow": "Era veiletitaka eso tale",
+      "disputedNowHint": "Na nomu veiliutaki kei na dua na veileti ni taukeni ni dolavi mai na dua tale na itokani .",
+      "commissionEligible": "E rawa ni komisoni",
+      "commissionCancelled_one": "{{count}} bokoci",
+      "commissionCancelled_other": "{{count}} bokoci"
+    },
+    "chart": {
+      "title_one": "Rejisita kei na vakacuru ilavo ena dua na siga - iotioti ni {{count}} siga",
+      "title_other": "Rejisita kei na vakacuru ilavo ena dua na siga - iotioti ni {{count}} siga",
+      "registrations": "Rejisita",
+      "bookings": "Vakavodoki"
+    },
+    "byStage": "Veiliutaki ena ituvaki",
+    "bySource": "Veiliutaki ena ivurevure",
+    "byReferral": "Veiliutaki ena ituvaki ni veivakauqeti",
+    "myDisputes": "Veileti o vakatura",
+    "noDisputes": "E sega ni dua na veileti e vakaturi.",
+    "unknown": "Sega ni vakarautaki",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM e taudaku (vakatautauvatataki)",
+      "PARTNER_CRM": "Vakacuruma na nomu timi",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Vakaduavatataki",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Na veitaqomaki ena cava ena {{count}} siga ka tarava",
+    "expiringTitle_other": "Na veitaqomaki ena cava ena {{count}} siga ka tarava",
+    "expiringEmpty": "E sega ni dua na lead e vakayalia na kena itataqomaki ena katubaleka oqo."
   }
 }

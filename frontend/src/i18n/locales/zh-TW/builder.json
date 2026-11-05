@@ -29,7 +29,8 @@
       "registered": "掛號的"
     },
     "booked": "已預訂",
-    "empty": "還沒推薦。"
+    "empty": "還沒推薦。",
+    "bookingCancelled": "預訂已取消"
   },
   "detail": {
     "customer": "顧客",
@@ -52,9 +53,15 @@
     "notice": {
       "booked": "預訂已確認。",
       "accepted": "接受推薦。",
-      "rejected": "推薦被拒絕。"
+      "rejected": "推薦被拒絕。",
+      "bookingCancelled": "預訂已取消。"
     },
-    "backToReferrals": "返回推薦"
+    "backToReferrals": "返回推薦",
+    "bookingCancelled": "預訂已取消",
+    "cancelBooking": "取消預訂",
+    "cancelReasonLabel": "取消原因（向合作夥伴顯示）*",
+    "cancelBookingHint": "營運所有權歸還給合作夥伴，並且他們的佣金資格被取消。稍後可以再次預訂線索。",
+    "cancelBookingConfirm": "取消預訂"
   },
   "history": {
     "title": "歷史",
@@ -81,7 +88,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "建立佣金資格",
       "HANDOVER_COMPLETED": "交接完成",
       "ADMIN_PROTECTION_RELEASED": "管理員提前發布了重複保護。原因： {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "管理者將註冊從{{from}}重新指派到{{to}} 。原因： {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "管理者將註冊從{{from}}重新指派到{{to}} 。原因： {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "其他合作夥伴的重複註冊嘗試被拒絕",
+      "BOOKING_CANCELLED": "預訂已取消。原因： {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "營運所有權歸還給合作夥伴",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "預訂後佣金資格取消",
+      "COMMISSION_ELIGIBILITY_RESTORED": "新預訂的佣金資格已恢復"
     }
   }
 }

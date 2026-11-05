@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "namandrika",
-    "pending": "mbola miandry"
+    "pending": "mbola miandry",
+    "status": {
+      "CONFIRMED": "namandrika",
+      "CANCELLED": "Nofoanana ny famandrihana"
+    }
   },
   "assign": {
     "unassigned": "notendrena",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Tsy mbola misy tetikasa (tsy voalaza)",
-    "notInList": "{{project}} (tsy ao amin'ny lisitry ny tetikasa)"
+    "notInList": "{{project}} (tsy ao amin'ny lisitry ny tetikasa)",
+    "protectionDays_one": "{{count}} -andro fiarovana",
+    "protectionDays_other": "{{count}} -andro fiarovana"
   },
   "journey": {
     "customer": "mpanjifa",
@@ -76,7 +82,14 @@
     "progressHistory": "Tantaran'ny fandrosoana",
     "timesIn": "(fotoana ao amin'ny {{timezone}} )",
     "backToMyLeads": "Hiverina any amin'ny My Leads",
-    "editLead": "Ahitsio Lead"
+    "editLead": "Ahitsio Lead",
+    "disputeBanner": "Nisy mpiara-miombon'antoka iray hafa niady hevitra momba ny tompon'ity mpanjifa ity. Mpiandraikitra Leadrat no mandinika izany - mijanona eo amin'ny toerany ny fiarovana anao mandra-pahatonga azy ireo hanapa-kevitra.",
+    "booking": "Famandrihana",
+    "commission": "Commission",
+    "notBooked": "Tsy namandrika",
+    "cancelledOn": "Nofoanana ny {{date}} .",
+    "cancelReason": "Antony: {{reason}}",
+    "cancelledHint": "Nofoanan'ny mpanorina ny famandrihana - tafaverina aminao ny fananana miasa ary nofoanana ny fahazoan-dàlana ho komisiona. Averina amin'ny laoniny izany raha toa ka voafandrika indray ny fitarihana."
   },
   "referral": {
     "NOT_REFERRED": "Tsy voalaza (tsy misy tetikasa)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Nanaiky ny fanondroana ny Builder",
       "REFERRAL_REJECTED": "Nolavin'ny Builder ny fanondroana. Antony: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Namoaka fiarovana dika mitovy aloha ny Admin. Antony: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Nafindran'ny mpitantana ny fisoratana anarana manomboka amin'ny {{from}} mankany {{to}} . Antony: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Nafindran'ny mpitantana ny fisoratana anarana manomboka amin'ny {{from}} mankany {{to}} . Antony: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Nolavina ny andrana fisoratana anarana dika mitovy nataon'ny mpiara-miasa iray hafa",
+      "BOOKING_CANCELLED": "Nofoanana ny famandrihana. Antony: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Niverina tamin'ny mpiara-miombon'antoka ny fananana miasa",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Nofoanana ny fahazoan'ny komity tamin'ny famandrihana",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Naverina tamin'ny laoniny ny fahafahan'ny komisiona ho an'ny famandrihana vaovao",
+      "OWNERSHIP_DISPUTE_RAISED": "Mpiara-miasa iray hafa niady hevitra momba ny fananan'ity mpanjifa ity - ny mpitantana Leadrat no handinika izany",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Ny fifandirana momba ny fananana amin'ity mpanjifa ity dia nesorina - tsy miova ny fanananao",
+      "OWNERSHIP_DISPUTE_UPHELD": "Nojerena ny fifanolanana momba ny fananana amin'ity mpanjifa ity - voamarina ny fanananao",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Nisoratra anarana taorian'ny fanapahan-kevitra momba ny fifanolanana momba ny fanananao. Fanamarihana: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Nifarana ny fiarovana: fifanolanana momba ny fananana no tapaka ho an'ny mpiara-miasa iray hafa. Fanamarihana: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Ity laharan-telefaona ity dia tsy manan-kery ho an'ny {{country}} .",
     "COUNTRY_MISMATCH": "Fidio ny kaodim-pirenena marina azafady.",
     "NOT_MOBILE": "Mampidira laharana finday fa tsy telefaonina."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Vaomiera mendrika",
+      "PENDING": "Vaomiera miandry",
+      "CANCELLED": "Nofoanana ny vaomiera"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Natolotra anao",
+      "DISPUTED": "Famaritana nifanolana"
+    }
+  },
+  "result": {
+    "none": "Tsy misy valiny fisoratana anarana aseho. Misoratra anarana fitarihana aloha.",
+    "acceptedTitle": "Lead voasoratra anarana",
+    "rejectedTitle": "Lead tsy voasoratra",
+    "protectionWindow": "Fiarovana Window",
+    "protectedUntil": "Arovana Mandra-pahatongan'ny",
+    "openLead": "Open Lead",
+    "addAnother": "Manampia fitarihana hafa",
+    "duplicate": "Duplicate - efa voaaro",
+    "duplicateHint": "Ity mpanjifa ity dia efa voaaro amin'ity tetikasa ity amin'ny fisoratana anarana hafa, ka tsy azo nisoratra anarana ho anao.",
+    "existingProtectedUntil": "Ny fisoratana anarana efa misy dia voaaro hatramin'ny"
+  },
+  "disputes": {
+    "title": "Ny adiko",
+    "intro": "Ny fifandirana momba ny fanananao natsanganao ho an'ny mpanjifa izay nolavina ho dika mitovy. Mpitantana Leadrat iray no mandinika ny tsirairay.",
+    "empty": "Tsy nametraka fifandirana ianao. Raha nolavina ho dika mitovy ny mpanjifa nentinao, dia azonao atao ny miady hevitra amin'ny valin'ny fisoratana anarana.",
+    "columns": {
+      "dispute": "fifandirana",
+      "reason": "Ny antony",
+      "outcome": "vokatra"
+    },
+    "status": {
+      "OPEN": "Eo am-pandinihana",
+      "UPHELD": "Tsy mankasitraka anao",
+      "OVERTURNED": "Nanapa-kevitra ho anao",
+      "WITHDRAWN": "miaro"
+    },
+    "awaitingReview": "Miandry ny famerenan'ny admin",
+    "openNewLead": "Sokafy ny fitarihanao {{id}}",
+    "withdraw": "hiala",
+    "withdrawConfirm": "Esory ny fifandiranao momba an'i {{name}} ? Ny fananana ankehitriny dia mijanona ho toy izany.",
+    "raise": "Mifanohitra amin'ny fananana",
+    "raiseTitle": "Mifanohitra amin'ny fananana",
+    "raiseHint": "Raha io mpanjifa io no tonga voalohany aminao, hazavao ny antony. Ny admin Leadrat dia hijery izany; raha manapa-kevitra ho anao izy ireo, dia misoratra anarana ho anao ny fitarihana.",
+    "reasonLabel": "Nahoana no anao ity mpanjifa ity?",
+    "reasonMin_one": "Farafahakeliny {{count}} toetra.",
+    "reasonMin_other": "Farafahakeliny {{count}} tarehin-tsoratra.",
+    "submit": "Alefaso ny fifandirana",
+    "notProtected": "Tsy misy miaro an'ity mpanjifa ity intsony amin'ity tetikasa ity - azonao atao ny manoratra ny fitarihana izao.",
+    "raised": "Ny fifandirana {{id}} nalefa hojerena.",
+    "viewAll": "Jereo ny adiko"
+  },
+  "dashboard": {
+    "title": "anaty fiara",
+    "period": "NANOMBOKA TEO",
+    "lastDays_one": "{{count}} andro",
+    "lastDays_other": "{{count}} andro",
+    "emptyTitle": "Tongasoa! Tsy mbola manana fitarihana ianao.",
+    "emptyHint": "Soraty ny fitarihana voalohany anao - hiseho eto ny famandrihanao, ny famandrihana ary ny fe-potoana fiarovana.",
+    "tiles": {
+      "leads": "Total leads",
+      "newInPeriod_one": "{{count}} vaovao amin'ity vanim-potoana ity",
+      "newInPeriod_other": "{{count}} vaovao amin'ity vanim-potoana ity",
+      "accepted": "nanaiky",
+      "booked": "namandrika",
+      "bookedInPeriod_one": "{{count}} namandrika tamin'ity vanim-potoana ity",
+      "bookedInPeriod_other": "{{count}} namandrika tamin'ity vanim-potoana ity",
+      "conversion": "MIOVA",
+      "conversionHint": "Mitarika voafandrika ho ampahany amin'ny fitarihana ekena",
+      "protectedNow": "Voaaro izao",
+      "expiringSoon_one": "Fiarovana mifarana amin'ny {{count}} andro",
+      "expiringSoon_other": "Fiarovana mifarana ao anatin'ny {{count}} andro",
+      "disputedNow": "Iadian'ny hafa",
+      "disputedNowHint": "Ny fitarihanao miaraka amin'ny fifandirana momba ny fananana misokatra avy amin'ny mpiara-miasa hafa",
+      "commissionEligible": "Vaomiera mendrika",
+      "commissionCancelled_one": "{{count}} nofoanana",
+      "commissionCancelled_other": "{{count}} nofoanana"
+    },
+    "chart": {
+      "title_one": "Fisoratana anarana sy famandrihana isan'andro - {{count}} andro farany",
+      "title_other": "Fisoratana anarana sy famandrihana isan'andro - {{count}} andro farany",
+      "registrations": "nisoratra anarana",
+      "bookings": "Famandrihana"
+    },
+    "byStage": "Mitarika amin'ny sata",
+    "bySource": "Mitarika amin'ny loharano",
+    "byReferral": "Mitarika amin'ny satan'ny referral",
+    "myDisputes": "Fifandirana nataonao",
+    "noDisputes": "Tsy misy fifandirana.",
+    "unknown": "Tsy napetraka",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM ivelany (simulate)",
+      "PARTNER_CRM": "Nampian'ny ekipanao",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "fampidirana",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Fiarovana tapitra amin'ny {{count}} andro manaraka",
+    "expiringTitle_other": "Fiarovana tapitra amin'ny {{count}} andro manaraka",
+    "expiringEmpty": "Tsy misy firaka very ny fiarovana amin'ity varavarankely ity."
   }
 }

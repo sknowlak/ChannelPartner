@@ -30,7 +30,8 @@
       "registered": "Ondiki nyinge"
     },
     "booked": "Oketi",
-    "empty": "Onge jogo ma oseorogi nyaka sani."
+    "empty": "Onge jogo ma oseorogi nyaka sani.",
+    "bookingCancelled": "Buk osekansi"
   },
   "detail": {
     "customer": "Jang'iepo",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Osiem ni ibiro yudo thuolo.",
       "accepted": "Oyie gi ng’at ma oorogi.",
-      "rejected": "Odagi ng’ado bura."
+      "rejected": "Odagi ng’ado bura.",
+      "bookingCancelled": "Ne okethore ng’ado thuolo."
     },
-    "backToReferrals": "Dwoki e jogo ma ooro"
+    "backToReferrals": "Dwoki e jogo ma ooro",
+    "bookingCancelled": "Buk osekansi",
+    "cancelBooking": "Rangruok mar yudo thuolo",
+    "cancelReasonLabel": "Gimomiyo onego ogol (onyis jaoda) *",
+    "cancelBookingHint": "Owruok mar tich dok ne jaoda kendo ratiro margi mar yudo komison iweyo. Lead inyalo ng’iewo kendo bang’e.",
+    "cancelBookingConfirm": "Kanyo ng'ado thuolo"
   },
   "history": {
     "title": "Sigana",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Ratiro mar komison noloso",
       "HANDOVER_COMPLETED": "Chiwruok osetieko",
       "ADMIN_PROTECTION_RELEASED": "Admin nogolo arita maromre mapiyo. Gimomiyo: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Jatend piny noloko nying’ kowuok e {{from}} nyaka {{to}} . Gimomiyo: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Jatend piny noloko nying’ kowuok e {{from}} nyaka {{to}} . Gimomiyo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Tem mar ndiko nying’ mar jaoda machielo ne ok oyie",
+      "BOOKING_CANCELLED": "Ne okethore ng’ado thuolo. Gimomiyo: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Owruok mar tich noduok ne jawete",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ochungi bedo gi ratiro mar yudo komison bang' ng'ado buo",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Odwoko ratiro mar yudo komison mar ng'iewo thuolo manyien"
     }
   }
 }

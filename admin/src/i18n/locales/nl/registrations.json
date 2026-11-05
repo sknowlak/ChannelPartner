@@ -49,8 +49,73 @@
       "newPartnerId": "Nieuwe partner- ID",
       "reason": "Reden (verplicht)",
       "apply": "Overschrijving toepassen",
-      "applying": "Toepassen..."
+      "applying": "Toepassen...",
+      "cancelBookingHint": "Als u annuleert, worden de boeking en de bijbehorende commissie als geannuleerd gemarkeerd, wordt het operationele eigendom teruggegeven aan de partner en kan de bouwer deze lead opnieuw boeken.",
+      "cancelBookingConfirm": "Deze boeking annuleren? De commissie wordt ook geannuleerd. Deze wordt gelogd met uw naam en reden."
     },
-    "timelineTitle": "Audittijdlijn (deze registratie)"
+    "timelineTitle": "Audittijdlijn (deze registratie)",
+    "bookingStatus": "Boekingsstatus",
+    "commissionAttribution": "Commissietoeschrijving",
+    "disputeOpen": "Er loopt een eigendomsgeschil over deze klant. Een andere partner zegt dat het eigendom van hen is. De beslissing wordt genomen op de pagina Geschillen.",
+    "viewDisputes": "Bekijk geschillen",
+    "cancellation": {
+      "title": "Boeking geannuleerd",
+      "hint": "De boeking en de commissie worden geannuleerd; het operationele eigendom ligt weer bij de partner en de bouwer kan deze voorsprong weer boeken.",
+      "at": "Geannuleerd om",
+      "by": "Geannuleerd door",
+      "reason": "Reden"
+    }
+  },
+  "disputes": {
+    "title": "Eigendomsgeschillen",
+    "hint": "Een partner wiens registratie als duplicaat is afgewezen, kan betwisten wie de eigenaar is van de klant. Beoordeel beide partijen en beslis.",
+    "statusFilter": "Geschilstatus",
+    "allStatuses": "Alle statussen",
+    "empty": "Geen geschillen met deze status.",
+    "columns": {
+      "dispute": "Geschil",
+      "customer": "Klant",
+      "project": "Project",
+      "raisedBy": "Opgegroeid door",
+      "heldBy": "Huidige eigenaar",
+      "status": "Status",
+      "raisedAt": "Opgeheven"
+    },
+    "detail": {
+      "title": "Geschil {{id}}",
+      "raisedOn": "Opgegroeid {{date}}",
+      "raisingTitle": "Opgegroeid door",
+      "holderTitle": "Huidige eigenaar",
+      "partner": "Partner",
+      "raisedBy": "Ingezonden door",
+      "customerName": "Klant",
+      "mobile": "Mobiel",
+      "alternateMobile": "Alternatief mobiel",
+      "email": "E-mail",
+      "project": "Project",
+      "reason": "Hun reden",
+      "registration": "Registratie",
+      "registeredAt": "Geregistreerd op",
+      "referral": "Verwijzing",
+      "heldMissing": "De vastgehouden registratie kon niet worden gevonden.",
+      "resolutionTitle": "Beslissing",
+      "outcome": "Resultaat",
+      "note": "Opmerking",
+      "decidedBy": "Besloten door",
+      "decidedAt": "Besloten",
+      "newRegistration": "Nieuwe registratie",
+      "decideTitle": "Beslis over dit geschil",
+      "noteLabel": "Toelichting op het besluit (verplicht)",
+      "noteRequired": "Schrijf een notitie om te beslissen.",
+      "uphold": "Houd stand",
+      "overturn": "Omvallen",
+      "upholdEffect": "{{holder}} behoudt de klant. Het geschil is gesloten en er verandert niets anders.",
+      "overturnEffect": "De duplicaatbescherming van {{holder}} eindigt nu en de klant wordt als nieuwe registratie geregistreerd voor {{partner}} .",
+      "heldBookedHelp": "Deze klant is geboekt via de huidige eigenaar. Annuleer eerst die boeking (Admin Override op de registratie) en annuleer vervolgens:",
+      "confirmTitle": "Weet je het zeker?",
+      "confirmUphold": "Ja, volhouden",
+      "confirmOverturn": "Ja, omvallen",
+      "back": "Terug naar Geschillen"
+    }
   }
 }

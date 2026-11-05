@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Броньланган",
-    "pending": "Көтелгән"
+    "pending": "Көтелгән",
+    "status": {
+      "CONFIRMED": "Броньланган",
+      "CANCELLED": "Броньлау юкка чыгарылды"
+    }
   },
   "assign": {
     "unassigned": "Билгеләнмәгән",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Әлегә проект юк (күрсәтелмәгән)",
-    "notInList": "{{project}} (проект исемлегендә түгел)"
+    "notInList": "{{project}} (проект исемлегендә түгел)",
+    "protectionDays_one": "{{count}} көнлек саклау",
+    "protectionDays_other": "{{count}} көнлек саклау"
   },
   "journey": {
     "customer": "Клиент",
@@ -76,7 +82,14 @@
     "progressHistory": "Прогресс тарихы",
     "timesIn": "( {{timezone}} )",
     "backToMyLeads": "Минем җитәкчелеккә кире кайту",
-    "editLead": "Лидерны үзгәртү"
+    "editLead": "Лидерны үзгәртү",
+    "disputeBanner": "Тагын бер партнер бу клиентның милек турында бәхәсләште. Leadrat администраторы аны тикшерә - сезнең карарыгыз карар кабул иткәнче тора.",
+    "booking": "Броньлау",
+    "commission": "Комиссия",
+    "notBooked": "Броньланмаган",
+    "cancelledOn": "{{date}} onда юкка чыгарылды.",
+    "cancelReason": "Сәбәп: {{reason}}",
+    "cancelledHint": "Төзүче броньны юкка чыгарды - оператив милек сезнең белән кайтты һәм комиссия хокукы юкка чыгарылды. Куркынычсызлык кабат броньланса, торгызыла."
   },
   "referral": {
     "NOT_REFERRED": "Игътибар ителмәгән (проект юк)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Төзүче юлламаны кабул итте",
       "REFERRAL_REJECTED": "Төзүче юлламаны кире какты. Сәбәп: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Администратор икеләтә саклауны иртә чыгарды. Сәбәп: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Администратор теркәлүне {{from}} дан {{to}} га билгеләде. Сәбәп: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Администратор теркәлүне {{from}} дан {{to}} га билгеләде. Сәбәп: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Башка партнерның икеләтә теркәлү омтылышы кире кагылды",
+      "BOOKING_CANCELLED": "Броньлау юкка чыгарылды. Сәбәп: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Оператив милек партнерга кайтты",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Комиссия хокукы бронь белән юкка чыгарылды",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Яңа бронь өчен комиссия хокукы торгызылды",
+      "OWNERSHIP_DISPUTE_RAISED": "Тагын бер партнер бу клиентның милек турында бәхәсләште - Leadrat администраторы аны караячак",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Бу клиенттагы милек бәхәсе алынды - сезнең милек үзгәрми",
+      "OWNERSHIP_DISPUTE_UPHELD": "Бу клиенттагы милек бәхәсе каралды - сезнең милек расланган",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Сезнең милек бәхәсе сезнең файдагызга хәл ителгәннән соң теркәлде. Искәрмә: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Саклау тәмамланды: милек бәхәсе бүтән партнер файдасына хәл ителде. Искәрмә: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Бу телефон номеры {{country}} for өчен яраксыз.",
     "COUNTRY_MISMATCH": "Зинһар, дөрес ил кодын сайлагыз.",
     "NOT_MOBILE": "Зинһар, кәрәзле номерны кертегез."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Комиссия хокуклы",
+      "PENDING": "Комиссия көтелә",
+      "CANCELLED": "Комиссия юкка чыгарылды"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Сезгә",
+      "DISPUTED": "Атрибутика бәхәсле"
+    }
+  },
+  "result": {
+    "none": "Күрсәтү өчен теркәлү нәтиҗәләре юк. Башта лидерны теркәгез.",
+    "acceptedTitle": "Кургаш теркәлгән",
+    "rejectedTitle": "Кургаш теркәлмәгән",
+    "protectionWindow": "Саклау тәрәзәсе",
+    "protectedUntil": "Сакланганчы",
+    "openLead": "Ачык корыч",
+    "addAnother": "Башка лидерны өстәгез",
+    "duplicate": "Дубликаты - сакланган",
+    "duplicateHint": "Бу клиент бу проект өчен бүтән теркәлү белән сакланган, шуңа күрә ул сезнең өчен теркәлергә мөмкин түгел.",
+    "existingProtectedUntil": "Хәзерге теркәлү сакланган"
+  },
+  "disputes": {
+    "title": "Минем бәхәсләр",
+    "intro": "Сез дубликат буларак кире кагылган клиентлар өчен сез күтәргән милек бәхәсләре. Leadrat администраторы аларның һәрберсен карый.",
+    "empty": "Сез бернинди бәхәсләр дә күтәрмәдегез. Әгәр сез китергән клиент дубликат буларак кире кагылса, сез аны теркәлү нәтиҗәләреннән бәхәсләшә аласыз.",
+    "columns": {
+      "dispute": "Талашу",
+      "reason": "Сезнең сәбәп",
+      "outcome": "Нәтиҗә"
+    },
+    "status": {
+      "OPEN": "Карала",
+      "UPHELD": "Сезнең файдагызда түгел",
+      "OVERTURNED": "Сезнең файдагызга карар кабул иттеләр",
+      "WITHDRAWN": "Чыгарылган"
+    },
+    "awaitingReview": "Администратор каравын көтә",
+    "openNewLead": "Lead {{id}}",
+    "withdraw": "Чыгару",
+    "withdrawConfirm": "{{name}} for өчен бәхәсегезне тартып алыгыз? Хәзерге милек элеккечә кала.",
+    "raise": "Талашу",
+    "raiseTitle": "Талашу",
+    "raiseHint": "Бу клиент сезгә башта килгән булса, ни өчен икәнен аңлатыгыз. Leadrat администратор аны караячак; алар сезнең файдагызга карар кабул итсәләр, әйдәп баручы сезнең өчен теркәлгән.",
+    "reasonLabel": "Нигә бу клиент сезнеке?",
+    "reasonMin_one": "Ким дигәндә {{count}} характеры.",
+    "reasonMin_other": "Ким дигәндә {{count}} символлары.",
+    "submit": "Талашу җибәр",
+    "notProtected": "Бу проект өчен беркем дә бу клиентны якламый - сез хәзер лидерны теркәп куя аласыз.",
+    "raised": "Талашу {{id}} review карау өчен җибәрелгән.",
+    "viewAll": "Минем бәхәсләрне карау"
+  },
+  "dashboard": {
+    "title": "Такталар",
+    "period": "Вакыт",
+    "lastDays_one": "{{count}} көн",
+    "lastDays_other": "{{count}} көн",
+    "emptyTitle": "Рәхим итегез! Сездә әле лидерлар юк.",
+    "emptyHint": "Беренче корычны теркәгез - сезнең торба, броньлау һәм саклау вакыты монда күрсәтеләчәк.",
+    "tiles": {
+      "leads": "Барлык лидерлар",
+      "newInPeriod_one": "{{count}} бу чорда яңа",
+      "newInPeriod_other": "{{count}} бу чорда яңа",
+      "accepted": "Кабул ителде",
+      "booked": "Броньланган",
+      "bookedInPeriod_one": "period {{count}} бу чорда броньланган",
+      "bookedInPeriod_other": "period {{count}} бу чорда броньланган",
+      "conversion": "Конверсия",
+      "conversionHint": "Кабул ителгән лидерларның өлеше буларак броньланган лидерлар",
+      "protectedNow": "Хәзер сакланган",
+      "expiringSoon_one": "{{count}} көнендә саклау",
+      "expiringSoon_other": "{{count}} көнендә саклау",
+      "disputedNow": "Башкалар белән бәхәсләшәләр",
+      "disputedNowHint": "Сезнең бүтән партнердан ачык милек бәхәсе белән алып барасыз",
+      "commissionEligible": "Комиссия хокуклы",
+      "commissionCancelled_one": "{{count}} юкка чыгарылды",
+      "commissionCancelled_other": "{{count}} юкка чыгарылды"
+    },
+    "chart": {
+      "title_one": "Көнгә теркәлүләр һәм броньлар - соңгы {{count}} көн",
+      "title_other": "Көнгә теркәлүләр һәм броньлар - соңгы {{count}} көн",
+      "registrations": "Теркәлү",
+      "bookings": "Броньлау"
+    },
+    "byStage": "Статус буенча алып бара",
+    "bySource": "Чыганак белән алып бара",
+    "byReferral": "Referллама статусы белән алып бара",
+    "myDisputes": "Сез күтәргән бәхәсләр",
+    "noDisputes": "Бәхәсләр күтәрелмәде.",
+    "unknown": "Көтелмәгән",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Тышкы CRM (симуляцияләнгән)",
+      "PARTNER_CRM": "Сезнең команда белән өстәлде",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Интеграция",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Киләсе {{count}} көнендә саклану вакыты бетә",
+    "expiringTitle_other": "Киләсе {{count}} көннәрендә саклану вакыты бетә",
+    "expiringEmpty": "Бу тәрәзәдә бер корыч та саклануны югалтмый."
   }
 }

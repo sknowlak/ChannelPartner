@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "بک کثہ",
-    "pending": "اوشتاتگیں"
+    "pending": "اوشتاتگیں",
+    "status": {
+      "CONFIRMED": "بک کثہ",
+      "CANCELLED": "بکنگ منسوخ کنگ بیثہ"
+    }
   },
   "assign": {
     "unassigned": "بے تفویض کنگ بوتگ",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "انگت ءَ ھچ پروجیکٹ نیست (حوالہ نہ داتگ)",
-    "notInList": "{{project}} (پروجیکٹ ءِ لسٹ ءَ نہ اِنت)"
+    "notInList": "{{project}} (پروجیکٹ ءِ لسٹ ءَ نہ اِنت)",
+    "protectionDays_one": "{{count}} -روچ ءِ رکھینگ",
+    "protectionDays_other": "{{count}} -روچ ءِ رکھینگ"
   },
   "journey": {
     "customer": "کارمرزوک",
@@ -76,7 +82,14 @@
     "progressHistory": "پیشرفت ئے تاریخ",
     "timesIn": "( {{timezone}} ءِ تہا وھد)",
     "backToMyLeads": "منی لیڈز ءِ نیمگ ءَ پدا رواں",
-    "editLead": "لیڈ ءَ ترمیم کن"
+    "editLead": "لیڈ ءَ ترمیم کن",
+    "disputeBanner": "یک دگہ شریکے ءَ اے گاہک ءِ ملکیت ءِ سرا جھیڑہ کتگ۔ یک Leadrat ایڈمنے ایشی ءِ چار ءُ تپاس ءَ اِنت - تئی رکھینگ ءِ جاہ ءَ مانیت داں کہ آ فیصلہ بہ کن اَنت۔",
+    "booking": "بکنگ",
+    "commission": "کمیشن",
+    "notBooked": "بک نہ بیثغیں",
+    "cancelledOn": "{{date}} ءِ سرا منسوخ کنگ بوتگ۔",
+    "cancelReason": "سبب: {{reason}}",
+    "cancelledHint": "بلڈر ءَ بکنگ منسوخ کتگ - آپریشنل ملکیت تئی گوما پدا اتکگ ءُ کمیشن ءِ اہلیت منسوخ کنگ بوتگ۔ اگاں لیڈ پدا بک کنگ بہ بیت گڑا بحال کنگ بیت۔"
   },
   "referral": {
     "NOT_REFERRED": "حوالہ نہ داتگ (ہچ پروجیکٹ نہ بوتگ)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "بلڈر ءَ ریفرل من اِت",
       "REFERRAL_REJECTED": "بلڈر ءَ ریفرل رد کتگ۔ سبب: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "ایڈمن ءَ نقلی حفاظت ءِ زوت شنگ کتگ۔ سبب: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "ایڈمن ءَ رجسٹریشن ءَ چہ {{from}} ءَ {{to}} ءَ دوبر دیم داتگ۔ سبب: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "ایڈمن ءَ رجسٹریشن ءَ چہ {{from}} ءَ {{to}} ءَ دوبر دیم داتگ۔ سبب: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "یک نقلی رجسٹریشن ءِ کوشست چہ دگہ شریکے ءَ رد کنگ بوتگ",
+      "BOOKING_CANCELLED": "بکنگ منسوخ کنگ بوتگ۔ سبب: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "آپریشنل ملکیت شریک ءَ پدا واتر کنگ بوت",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "کمیشن ئے اہلیت بکنگ ئا گوں منسوخ بیثہ",
+      "COMMISSION_ELIGIBILITY_RESTORED": "نوکیں بکنگ ءِ ھاتر ءَ کمیشن ءِ اہلیت بحال کنگ بوتگ",
+      "OWNERSHIP_DISPUTE_RAISED": "یک دگہ شریکے ءَ اے گاہک ءِ ملکیت ءِ سرا جھیڑہ کتگ - Leadrat ایڈمن ایشی ءِ سرا چمشانک دنت",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "اے گاہک ئے ملکیت ئے جنجال پچ کثہ۔ تئی ملکیت بدل نہ بیثغیں",
+      "OWNERSHIP_DISPUTE_UPHELD": "اے گاہک ئے ملکیت ئے جنجال ئے چار ءُ تپاسی بیثہ۔ تئی ملکیت ئے تصدیق بیثہ",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "شمئے ملکیت ءِ جیڑہ ءِ شمئے حق ءَ فیصلہ کنگ ءَ پد رجسٹرڈ بوتگ۔ نوٹ: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "تحفظ ختم بوت: ملکیت ءِ تنازعہ ءِ فیصلہ دگہ شریک ءِ حق ءَ کنگ بوت۔ نوٹ: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "اے فون نمبر پہ {{country}} ءَ ھچ وڑ ءَ ھست نہ اِنت۔",
     "COUNTRY_MISMATCH": "ملک ءِ راستیں کڈ ءَ گچین بہ کن اِت۔",
     "NOT_MOBILE": "موبائل نمبر نبشتہ کن ات، لینڈ لائن نہ۔"
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "کمیشن اہل",
+      "PENDING": "کمیشن زیر التوا انت",
+      "CANCELLED": "کمیشن منسوخ کنگ بوتگ"
+    },
+    "attribution": {
+      "ATTRIBUTED": "ترا منسوب کنگ بوتگ",
+      "DISPUTED": "انتساب ءِ سرا جھیڑہ کنگ بوتگ"
+    }
+  },
+  "result": {
+    "none": "رجسٹریشن ءِ نتیجہ ءِ دیم ءَ آرگ نہ بیت۔ اولی لیڈ ءِ رجسٹریشن ءَ بکن اِت۔",
+    "acceptedTitle": "لیڈ رجسٹرڈ کنگ بوتگ",
+    "rejectedTitle": "لیڈ رجسٹرڈ نہ بوتگ",
+    "protectionWindow": "تحفظ ءِ دریگ",
+    "protectedUntil": "داں 2019 ءَ رکّینگ بوتگ۔",
+    "openLead": "اوپن لیڈ",
+    "addAnother": "یک دگہ لیڈ یے ھوار کن",
+    "duplicate": "نقل - پیسرا چہ رکھینگ بوتگ",
+    "duplicateHint": "اے مشتری پہ اے منصوبہ ءَ دگہ رجسٹریشن ءِ وسیلہ ءَ پیسر ءَ چہ رکھینگ بوتگ، پمیشکا اے پہ شما رجسٹرڈ کنگ نہ بوتگ۔",
+    "existingProtectedUntil": "موجودہ رجسٹریشن ءِ حفاظت ءَ داں 2020 ءَ کنگ بیت۔"
+  },
+  "disputes": {
+    "title": "منی جنجال",
+    "intro": "ملکیت ءِ جیڑہ کہ تو پہ گاہکاں چست کتگ اَنت کہ نقل ءِ رد ءَ رد کنگ بوتگ اَنت۔ یک Leadrat ایڈمن ہر یکے ءِ سرا چمشانک دنت۔",
+    "empty": "تو ھچ وڑیں جنجالے چست نہ کتگ۔ اگاں یک مشتری یے کہ شما آؤرتگ ات آئی ءَ را نقل ءِ دروشم ءَ رد کنگ بوتگ گڑا شما رجسٹریشن ءِ آسر ءَ چہ آئی ءَ جھیڑہ کت کن ات۔",
+    "columns": {
+      "dispute": "اڑاند",
+      "reason": "تئی سوب",
+      "outcome": "آسر"
+    },
+    "status": {
+      "OPEN": "جائزہ ءِ چیر ءَ",
+      "UPHELD": "تئی حق ءَ نہ اِنت",
+      "OVERTURNED": "تئی حقا فیصلہ کثہ",
+      "WITHDRAWN": "پذا کشغ بیثغیں"
+    },
+    "awaitingReview": "ایڈمن جائزہ ئے ودار ئا ایں",
+    "openNewLead": "وتی لیڈ {{id}} ءَ پچ کن",
+    "withdraw": "پدا بزور",
+    "withdrawConfirm": "وتی جنجال ءَ پہ {{name}} ءَ کشّ اِت ؟ انوگیں ملکیت ھما وڑا مانیت کہ ھست اِنت۔",
+    "raise": "تنازعہ ءِ ملکیت",
+    "raiseTitle": "تنازعہ ءِ ملکیت",
+    "raiseHint": "اگاں اے گاہک اولی رند ءَ تئی گور ءَ اتکگ گڑا ھال بہ دے کہ پرچا۔ یک Leadrat ایڈمنے ایشی ءِ سرا چمشانک دنت؛ اگاں آ تئی حق ءَ فیصلہ کن اَنت گڑا لیڈ تئی واستہ رجسٹرڈ اِنت۔",
+    "reasonLabel": "اے گاہک پرچا تئی اِنت؟",
+    "reasonMin_one": "کم چہ کم {{count}} کردار۔",
+    "reasonMin_other": "کم چہ کم {{count}} آب۔",
+    "submit": "تنازعہ دیم دئے",
+    "notProtected": "کسے اے پروجیکٹ ءِ ھاترا اے مشتری ءِ سر ءَ گیشتر حفاظت نہ کنت - شما نوں لیڈ ءَ رجسٹرڈ کن اِت۔",
+    "raised": "تنازعہ {{id}} پہ چار ءُ تپاسی ءَ دیم دیگ بوتگ۔",
+    "viewAll": "منی جنجالاں بہ گند"
+  },
+  "dashboard": {
+    "title": "ڈیش بورڈ",
+    "period": "مدت",
+    "lastDays_one": "{{count}} روچ",
+    "lastDays_other": "{{count}} روچ",
+    "emptyTitle": "وشاتکے! ترا انگت ھچ وڑیں لیڈ نیست۔",
+    "emptyHint": "وتی اولی لیڈ ءَ رجسٹر کن اِت - شمئے پائپ لائن، بکنگ ءُ تحفظ ءِ ڈیڈ لائن ادا دیم ءَ کیت۔",
+    "tiles": {
+      "leads": "کل لیڈز",
+      "newInPeriod_one": "{{count}} اے وھد ءِ تہ ءَ نوکیں",
+      "newInPeriod_other": "{{count}} اے وھد ءِ تہ ءَ نوکیں",
+      "accepted": "منّگ بیثہ",
+      "booked": "بک کثہ",
+      "bookedInPeriod_one": "{{count}} اے وھد ءَ بُک کنگ بوتگ",
+      "bookedInPeriod_other": "{{count}} اے وھد ءَ بُک کنگ بوتگ",
+      "conversion": "تبدیلی",
+      "conversionHint": "منّغ کثغیں لیڈز ئے بہر ئے ردا بک کثغیں لیڈز",
+      "protectedNow": "نوں رکھینگ بوتگ",
+      "expiringSoon_one": "{{count}} روچ ءَ آسر بیوکیں رکھینگ",
+      "expiringSoon_other": "{{count}} روچاں گوں آسر بیوکیں رکھینگ",
+      "disputedNow": "دگرانی نیمگا چہ جھیڑہ کنگ بوتگ",
+      "disputedNowHint": "شمئے لیڈز گوں دگہ شریکے ءَ پچیں ملکیت ءِ جیڑہ ءَ",
+      "commissionEligible": "کمیشن اہل",
+      "commissionCancelled_one": "{{count}} منسوخ کنگ بوتگ",
+      "commissionCancelled_other": "{{count}} منسوخ کنگ بوتگ"
+    },
+    "chart": {
+      "title_one": "رجسٹریشن ءُ بکنگ ءِ روچ ءِ سرا - گڈی {{count}} روچ",
+      "title_other": "رجسٹریشن ءُ بکنگ ءِ روچ ءِ سرا - گڈی {{count}} روچ",
+      "registrations": "رجسٹریشن",
+      "bookings": "بکنگ"
+    },
+    "byStage": "حیثیت ءِ رد ءَ دیم ءَ روت",
+    "bySource": "وسیلہ ئے ردا رہشونی کنت",
+    "byReferral": "ریفرل ءِ جاور ءِ رد ءَ دیم ءَ روت",
+    "myDisputes": "تنازعات کہ تئو چست کثہ",
+    "noDisputes": "ہچ تنازعہ چست نہ بوتگ۔",
+    "unknown": "سیٹ نہ ایں",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "درائیں CRM (نقلی)",
+      "PARTNER_CRM": "تئی ٹیم ئا شہ ھوار کثغیں",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "یکجا کنگ",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "دیمتر ءِ {{count}} روچ ءَ تحفظ ءِ وھد ھلاس بیت",
+    "expiringTitle_other": "دیمتر ءِ {{count}} روچاں رکّینگ ءِ وھد ھلاس بیت",
+    "expiringEmpty": "اے دریگ ءِ تہا ہچ لیڈ وتی حفاظت ءَ چہ زبہر نہ بیت۔"
   }
 }

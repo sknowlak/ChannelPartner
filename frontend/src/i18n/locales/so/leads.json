@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Boossaday",
-    "pending": "La sugayo"
+    "pending": "La sugayo",
+    "status": {
+      "CONFIRMED": "Boossaday",
+      "CANCELLED": "Boos-dhigista waa la joojiyay"
+    }
   },
   "assign": {
     "unassigned": "Aan la magacaabin",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Mashruuc wali ma jiro (lama gudbin)",
-    "notInList": "{{project}} (kuma jiraan liiska mashruuca)"
+    "notInList": "{{project}} (kuma jiraan liiska mashruuca)",
+    "protectionDays_one": "{{count}} -maalin ilaalinta",
+    "protectionDays_other": "{{count}} -maalin ilaalinta"
   },
   "journey": {
     "customer": "Macmiil",
@@ -76,7 +82,14 @@
     "progressHistory": "Horumarka Taariikhda",
     "timesIn": "(wakhtiyada {{timezone}} )",
     "backToMyLeads": "Ku laabo Hogaanshayda",
-    "editLead": "Tafatir hogaanka"
+    "editLead": "Tafatir hogaanka",
+    "disputeBanner": "Lammaane kale ayaa ku murmay lahaanshaha macmiilkan. Maamulka Leadrat ayaa dib u eegis ku sameynaya - ilaalintaadu waxay sii jirtaa meesha ilaa ay go'aan ka gaarayaan.",
+    "booking": "Boos dhigashada",
+    "commission": "Komishanka",
+    "notBooked": "Lama ballansan",
+    "cancelledOn": "La joojiyay {{date}} .",
+    "cancelReason": "Sababta: {{reason}}",
+    "cancelledHint": "Dhisuhu wuu buriyay ballan-qaadista - lahaanshaha hawlgelinta adigaa kula soo laabanaysa oo u-qalmitaanka komishanka waa la joojiyay. Waa la soo celinayaa haddii hogaanka mar kale la sii ballansado."
   },
   "referral": {
     "NOT_REFERRED": "Lama tixraacin (mashruuc ma jiro)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Dhisuhu wuu aqbalay gudbinta",
       "REFERRAL_REJECTED": "Dhisuhu wuu diiday gudbinta Sababta: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Maamulka ayaa goor hore sii daayay ilaalin nuqul ah. Sababta: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Maamulku waxa uu dib u wakiishay diiwaangelinta {{from}} una wareejiyay {{to}} . Sababta: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Maamulku waxa uu dib u wakiishay diiwaangelinta {{from}} una wareejiyay {{to}} . Sababta: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Isku dayga diiwaan gelinta nuqul ka mid ah ee lammaane kale waa la diiday",
+      "BOOKING_CANCELLED": "Boos-dhigista waa la joojiyay Sababta: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Lahaanshaha hawlgalka ayaa lagu soo celiyay lammaanaha",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "U-qalmitaanka komishanka waa la joojiyay ballanta",
+      "COMMISSION_ELIGIBILITY_RESTORED": "U-qalmitaanka komishanka ayaa dib loogu soo celiyay ballan-qaadka cusub",
+      "OWNERSHIP_DISPUTE_RAISED": "Lamaane kale oo lagu muransan yahay lahaanshaha macmiilkan - maamulka Leadrat ayaa dib u eegi doona",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Muranka lahaanshaha ee macmiilkan waa laga noqday - lahaanshiyahaagu isma beddelin",
+      "OWNERSHIP_DISPUTE_UPHELD": "Muranka lahaanshaha ee macmiilkan dib ayaa loo eegay - lahaanshahaaga waa la xaqiijiyay",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Diiwangeliyay ka dib markii la go'aamiyay muranka lahaanshahaaga adiga. Fiiro gaar ah: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Ilaalinta ayaa dhammaatay: khilaaf lahaanshaha ayaa la go'aamiyay iyadoo loo hiilinayo lammaane kale. Fiiro gaar ah: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Taleefan nambarkan uma shaqeynayo {{country}} .",
     "COUNTRY_MISMATCH": "Fadlan door koodka waddanka saxda ah.",
     "NOT_MOBILE": "Fadlan geli nambarka gacanta, ma aha mid landline ah."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komishanka u qalma",
+      "PENDING": "Guddiga la sugayo",
+      "CANCELLED": "Guddiga waa la joojiyay"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Adiga ayaa loo aaneynayaa",
+      "DISPUTED": "Sifada ayaa lagu muransan yahay"
+    }
+  },
+  "result": {
+    "none": "Natiijo diiwaangelin ah oo la muujinayo ma jirto. Marka hore diwaangeli hogaanka.",
+    "acceptedTitle": "Leedhka ayaa diiwaan gashan",
+    "rejectedTitle": "Leedhka lama diiwaan gashanayn",
+    "protectionWindow": "Daaqada ilaalinta",
+    "protectedUntil": "Ilaalin Ilaa",
+    "openLead": "Fur hogaanka",
+    "addAnother": "Ku dar Hogaan kale",
+    "duplicate": "Koobi - mar hore ayaa la ilaaliyay",
+    "duplicateHint": "Macmiilkan waxa horeba u ilaalinayey mashruucan diwaangelin kale, markaa laguuma diwaan galiyo.",
+    "existingProtectedUntil": "Diiwaangelinta jirta waa la ilaalinayaa ilaa"
+  },
+  "disputes": {
+    "title": "Murankayga",
+    "intro": "Muranka lahaanshaha ee aad u soo kicisay macaamiisha oo loo diiday sidii nuqullo ahaan. Maamulka Leadrat ayaa mid walba eegaya.",
+    "empty": "Wax khilaaf ah ma aadan soo qaadin. Haddii macmiil aad keentay loo diido nuqul ahaan, waxaad ka doodi kartaa natiijada diiwaangelinta.",
+    "columns": {
+      "dispute": "Muran",
+      "reason": "Sababtaada",
+      "outcome": "Natiijada"
+    },
+    "status": {
+      "OPEN": "Dib u eegis ayaa ku jira",
+      "UPHELD": "Adiga kuuma jirto",
+      "OVERTURNED": "Go'aan ku gaaray adiga",
+      "WITHDRAWN": "La baxay"
+    },
+    "awaitingReview": "Sugaya dib u eegista maamulka",
+    "openNewLead": "Fur hogaankaaga {{id}}",
+    "withdraw": "Ka noqoshada",
+    "withdrawConfirm": "Ka noqo murankaaga {{name}} ? Lahaanshaha hadda waxay ahaanaysaa sida ay tahay.",
+    "raise": "Lahaanshaha muran",
+    "raiseTitle": "Lahaanshaha muran",
+    "raiseHint": "Haddii macmiilkani kuugu hor yimaado, sharax sababta. Maamulka Leadrat ayaa dib u eegi doona; Haddii ay go'aan ku gaaraan adiga, hogaanka adiga ayaa kuu diiwaan gashan.",
+    "reasonLabel": "Waa maxay sababta macmiilkan u yahay adiga?",
+    "reasonMin_one": "Ugu yaraan {{count}} xaraf",
+    "reasonMin_other": "Ugu yaraan {{count}} xarfo",
+    "submit": "Dir Dirir",
+    "notProtected": "Ma jiro qof ilaalinaya macmiilkan mashruucan mar dambe - waxaad diiwaangelin kartaa hogaanka hadda.",
+    "raised": "Muranka {{id}} ayaa loo diray dib u eegis.",
+    "viewAll": "Fiiri khilaafadeyda"
+  },
+  "dashboard": {
+    "title": "Dashboard-ka",
+    "period": "Muddada",
+    "lastDays_one": "{{count}} maalin",
+    "lastDays_other": "{{count}} maalmood",
+    "emptyTitle": "Soo dhawoow! Wali ma haysatid hogaan.",
+    "emptyHint": "Diiwaangeli rasaastaada ugu horreysa - dhuumahaaga, ballansashadaada iyo waqtiga ugu dambeeya ee ilaalinta ayaa ka muuqan doona halkan.",
+    "tiles": {
+      "leads": "Wadarta hogaaminta",
+      "newInPeriod_one": "{{count}} cusub muddadan",
+      "newInPeriod_other": "{{count}} cusub muddadan",
+      "accepted": "Waa la aqbalay",
+      "booked": "Boossaday",
+      "bookedInPeriod_one": "{{count}} la qabsiyay muddadan",
+      "bookedInPeriod_other": "{{count}} la qabsiyay muddadan",
+      "conversion": "Beddelka",
+      "conversionHint": "Hogaamiyeyaasha la ballansan sida qayb ka mid ah hoggaanka la aqbalay",
+      "protectedNow": "Ilaalin hadda",
+      "expiringSoon_one": "Ilaalinta waxay ku dhamaanaysaa {{count}} maalin",
+      "expiringSoon_other": "Ilaalinta waxay ku dhamaanaysaa {{count}} maalmood",
+      "disputedNow": "Dad kale ayaa isku haysta",
+      "disputedNowHint": "Hogaamiyaashaada khilaaf lahaanshaha furan oo ka imaanaya lamaane kale",
+      "commissionEligible": "Komishanka u qalma",
+      "commissionCancelled_one": "{{count}} waa la joojiyay",
+      "commissionCancelled_other": "{{count}} waa la joojiyay"
+    },
+    "chart": {
+      "title_one": "Diiwaangelinta iyo ballansashada maalintii - {{count}} maalinta u dambaysa",
+      "title_other": "Diiwaangelinta iyo ballansashada maalintii - {{count}} maalmood ee ugu dambeeya",
+      "registrations": "Diiwaangelinta",
+      "bookings": "Booska"
+    },
+    "byStage": "Waxay ku hogaaminaysaa xaalad",
+    "bySource": "Hogaamiyo ilo",
+    "byReferral": "Waxay ku hogaaminaysaa heerka gudbinta",
+    "myDisputes": "Muranka aad soo bandhigtay",
+    "noDisputes": "Wax khilaaf ah lama soo kicin",
+    "unknown": "Lama dejin",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM dibadda ah (la ekaysiiyay)",
+      "PARTNER_CRM": "Waxaa ku daray kooxdaada",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Is dhexgalka",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Ilaalinta waxa uu dhacayaa maalinta xigta {{count}}",
+    "expiringTitle_other": "Ilaalintu waxa ay dhacaysaa maalmaha {{count}} ee soo socda",
+    "expiringEmpty": "Ma jiro rasaas luminaysa difaaceeda daaqadan."
   }
 }

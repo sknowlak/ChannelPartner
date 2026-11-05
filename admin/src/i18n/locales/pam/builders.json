@@ -43,7 +43,9 @@
       "name": "Lagyu",
       "city": "Syudad",
       "status": "Kabilyan",
-      "actions": "Aksyon"
+      "actions": "Aksyon",
+      "protection": "proteksyun a dobli",
+      "matchOn": "Deng duplicate makatuglung la keng"
     },
     "closeReferrals": "Saradu para kareng referrals",
     "reopen": "buklat pasibayu",
@@ -55,6 +57,25 @@
       "add": "Dagdagan ing proyektu",
       "created": "Megawa ya ing {{name}} ."
     },
-    "back": "Mibalik kareng Builders"
+    "back": "Mibalik kareng Builders",
+    "protection": {
+      "days_one": "{{count}} aldo",
+      "days_other": "{{count}} aldo",
+      "globalDays_one": "Global default ( {{count}} day)",
+      "globalDays_other": "Global default ( {{count}} aldo)",
+      "globalDefault": "Global default",
+      "placeholder": "Protection days (empty = global default)",
+      "saved": "Mibayu ya ing proteksyun king duplicate para king {{name}} .",
+      "hint": "Duplicate protection: 1-3650 aldo, o paburen meng alang laman para gamitan ing global default ibat kareng Settings. Ing pamagbayu para yamu kareng bayung rehistrasyun - deng atyu na manatili la keng karelang expiry."
+    },
+    "matching": {
+      "global": "Global default",
+      "globalWith": "Global default ( {{fields}} )",
+      "mobile": "Numeru ning cellphone",
+      "email": "Email",
+      "both": "Numeru ning cellphone + email",
+      "saved": "Ing duplicate matching mibayu ya para keng {{name}}",
+      "hint": "Nanu la reng detalye na gagawang adwang registration ing pareung customer para keng metung a proyektu. Deng pamagbayu mipatupad la kareng duplicate a tseke manibat ngeni; ing proteksyun a atyu na ali ya apektadu."
+    }
   }
 }

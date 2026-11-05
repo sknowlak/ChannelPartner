@@ -43,7 +43,9 @@
       "name": "Naran",
       "city": "Sidade",
       "status": "Estadu",
-      "actions": "Asaun sira"
+      "actions": "Asaun sira",
+      "protection": "Protesaun duplikadu",
+      "matchOn": "Duplikadu sira koresponde iha"
     },
     "closeReferrals": "Taka ba referénsia sira",
     "reopen": "Loke fali",
@@ -55,6 +57,25 @@
       "add": "Hatama Projetu",
       "created": "Kria ona {{name}} ."
     },
-    "back": "Fila fali ba Konstrutór sira"
+    "back": "Fila fali ba Konstrutór sira",
+    "protection": {
+      "days_one": "{{count}} loron",
+      "days_other": "{{count}} loron",
+      "globalDays_one": "Padraun globál ( {{count}} loron)",
+      "globalDays_other": "Padraun globál ( {{count}} loron)",
+      "globalDefault": "Padraun globál",
+      "placeholder": "Loron protesaun nian (mamuk = padraun globál)",
+      "saved": "Protesaun duplikadu atualiza ona ba {{name}} .",
+      "hint": "Protesaun duplikadu: loron 1-3650, ka husik mamuk atu uza padraun globál husi Konfigurasaun sira. Mudansa ida aplika de'it ba rejistu foun sira - sira ne'ebé eziste ona mantein sira nia vensimentu."
+    },
+    "matching": {
+      "global": "Padraun globál",
+      "globalWith": "Padraun globál ( {{fields}} )",
+      "mobile": "Númeru telemovel",
+      "email": "Email",
+      "both": "Númeru telemovel + email",
+      "saved": "Korrespondénsia duplikadu atualiza ona ba {{name}}",
+      "hint": "Detallu sira ne'ebé halo rejistu rua sai kliente hanesan ba projetu ida. Mudansa sira aplika ba verifikasaun duplikadu sira hahú agora; protesaun ne'ebé iha la afetadu."
+    }
   }
 }

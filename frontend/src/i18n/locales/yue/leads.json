@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "已經預訂咗",
-    "pending": "待定"
+    "pending": "待定",
+    "status": {
+      "CONFIRMED": "已經預訂咗",
+      "CANCELLED": "預訂取消咗"
+    }
   },
   "assign": {
     "unassigned": "未分配",
@@ -58,7 +62,8 @@
   },
   "project": {
     "none": "仲未有項目（未參考）",
-    "notInList": "{{project}} （唔喺項目清單入面）"
+    "notInList": "{{project}} （唔喺項目清單入面）",
+    "protectionDays_other": "{{count}} - 日保護"
   },
   "journey": {
     "customer": "顧客",
@@ -76,7 +81,14 @@
     "progressHistory": "進度歷史",
     "timesIn": "（ {{timezone}}嘅時間）",
     "backToMyLeads": "返去我嘅潛在客戶",
-    "editLead": "編輯潛在客戶"
+    "editLead": "編輯潛在客戶",
+    "disputeBanner": "另一個合作夥伴對呢個客戶嘅擁有權有爭議。 Leadrat管理員正喺度審查緊 - 你嘅保護措施會保持原位，直至佢哋決定為止。",
+    "booking": "預訂",
+    "commission": "佣金",
+    "notBooked": "未預訂",
+    "cancelledOn": "喺{{date}}取消咗。",
+    "cancelReason": "原因： {{reason}}",
+    "cancelledHint": "建築商取消咗預訂 - 營運擁有權返咗畀你，而佣金資格亦都取消咗。如果再次預訂潛在客戶，就會恢復。"
   },
   "referral": {
     "NOT_REFERRED": "冇轉介（冇項目）",
@@ -158,7 +170,17 @@
       "REFERRAL_ACCEPTED": "建築師接受咗個推薦",
       "REFERRAL_REJECTED": "建築師拒絕咗個推薦。原因： {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "管理員提早發佈咗重複保護。原因： {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "管理員將註冊由{{from}}重新分配到{{to}} 。原因： {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "管理員將註冊由{{from}}重新分配到{{to}} 。原因： {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "另一個合作夥伴嘅重複註冊嘗試被拒絕",
+      "BOOKING_CANCELLED": "預訂取消咗。原因： {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "營運所有權返咗畀合作夥伴",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "隨住預訂而取消佣金資格",
+      "COMMISSION_ELIGIBILITY_RESTORED": "新預訂嘅佣金資格已經恢復",
+      "OWNERSHIP_DISPUTE_RAISED": "另一個合作夥伴對呢個客戶嘅擁有權有爭議 - Leadrat管理員會審查呢個客戶",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "呢個客戶嘅擁有權爭議已經被撤回 - 你嘅擁有權係冇變",
+      "OWNERSHIP_DISPUTE_UPHELD": "呢個客戶嘅擁有權爭議已經審查過 - 你嘅擁有權已經確認",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "喺你嘅所有權爭議得到有利嘅決定之後註冊。註： {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "保護結束：所有權爭議被決定，有利於另一個合作夥伴。註： {{note}}"
     }
   },
   "columnsPanel": {
@@ -182,5 +204,100 @@
     "INVALID_FOR_COUNTRY": "呢個電話號碼對{{country}}無效。",
     "COUNTRY_MISMATCH": "請揀正確嘅國家代碼。",
     "NOT_MOBILE": "請輸入手機號碼，而唔係固網電話。"
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "有資格佣金",
+      "PENDING": "佣金待處理",
+      "CANCELLED": "佣金取消咗"
+    },
+    "attribution": {
+      "ATTRIBUTED": "歸因於你",
+      "DISPUTED": "歸因有爭議"
+    }
+  },
+  "result": {
+    "none": "冇登記結果顯示。先註冊一個潛在客戶。",
+    "acceptedTitle": "潛在客戶註冊咗",
+    "rejectedTitle": "鉛未註冊",
+    "protectionWindow": "保護窗口",
+    "protectedUntil": "保護到",
+    "openLead": "開放潛在客戶",
+    "addAnother": "加另一個潛在客戶",
+    "duplicate": "重複 - 已經受到保護",
+    "duplicateHint": "呢個客戶已經受到另一個註冊嘅保護，所以佢冇辦法為你註冊。",
+    "existingProtectedUntil": "現有嘅註冊受保護直至"
+  },
+  "disputes": {
+    "title": "我嘅爭議",
+    "intro": "你為客戶提出嘅所有權爭議，但係被拒絕為重複。 Leadrat管理員會審查每一個。",
+    "empty": "你冇提出任何爭議。如果你帶嚟嘅客戶被拒絕為重複客戶，你可以喺登記結果入面爭議。",
+    "columns": {
+      "dispute": "糾紛",
+      "reason": "你嘅理由",
+      "outcome": "結果"
+    },
+    "status": {
+      "OPEN": "喺審查中",
+      "UPHELD": "唔係對你有利",
+      "OVERTURNED": "決定咗對你有利",
+      "WITHDRAWN": "撤回"
+    },
+    "awaitingReview": "等緊管理員審查",
+    "openNewLead": "打開你嘅潛在客戶{{id}}",
+    "withdraw": "撤回",
+    "withdrawConfirm": "撤回你對{{name}}嘅爭議？而家嘅擁有權保持原狀。",
+    "raise": "爭議所有權",
+    "raiseTitle": "爭議所有權",
+    "raiseHint": "如果呢個客先嚟搵你，解釋點解。一個Leadrat管理員會審查佢；如果佢哋決定有利你，潛在客戶就會為你註冊。",
+    "reasonLabel": "點解呢個客係你嘅？",
+    "reasonMin_other": "至少{{count}}個字元。",
+    "submit": "發送爭議",
+    "notProtected": "冇人再為呢個項目保護呢個客戶 - 你而家可以註冊潛在客戶。",
+    "raised": "爭議{{id}}已經送去審查。",
+    "viewAll": "睇下我嘅爭議"
+  },
+  "dashboard": {
+    "title": "資訊主頁",
+    "period": "時段",
+    "lastDays_other": "{{count}}日",
+    "emptyTitle": "歡迎！你仲未有任何線索。",
+    "emptyHint": "註冊你嘅第一個潛在客戶 - 你嘅管道、預約同保護截止日期會喺呢度顯示。",
+    "tiles": {
+      "leads": "總潛在客戶",
+      "newInPeriod_other": "{{count}}呢個時期係新嘅",
+      "accepted": "接受咗",
+      "booked": "已經預訂咗",
+      "bookedInPeriod_other": "{{count}}喺呢段時間預訂咗",
+      "conversion": "轉換",
+      "conversionHint": "預約咗嘅潛在客戶係接受咗嘅潛在客戶嘅一部分",
+      "protectedNow": "而家受到保護",
+      "expiringSoon_other": "以{{count}}日結束嘅保護",
+      "disputedNow": "畀其他人爭議",
+      "disputedNowHint": "你嘅潛在客戶同另一個合作夥伴嘅公開擁有權爭議",
+      "commissionEligible": "有資格佣金",
+      "commissionCancelled_other": "{{count}}取消咗"
+    },
+    "chart": {
+      "title_other": "每日嘅登記同預訂 - 最後{{count}}日",
+      "registrations": "登記",
+      "bookings": "預訂"
+    },
+    "byStage": "按狀態領先",
+    "bySource": "按來源分類",
+    "byReferral": "按推薦狀態領先",
+    "myDisputes": "你提出嘅爭議",
+    "noDisputes": "冇提出任何爭議。",
+    "unknown": "未設定",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "外部CRM （模擬）",
+      "PARTNER_CRM": "由你嘅團隊加入",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "整合",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_other": "保護喺未來{{count}}日到期",
+    "expiringEmpty": "喺呢個窗口入面，冇鉛會失去保護。"
   }
 }

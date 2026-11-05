@@ -30,7 +30,8 @@
       "registered": "Registrime"
     },
     "booked": "Rezervirime",
-    "empty": "Akana naj referencie."
+    "empty": "Akana naj referencie.",
+    "bookingCancelled": "O rezervàcia sas phandli"
   },
   "detail": {
     "customer": "Kliènto",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "O rezervàcia si konfirmime.",
       "accepted": "O bićhaldipen si akceptisardo.",
-      "rejected": "O bićhaldipen si naśardo."
+      "rejected": "O bićhaldipen si naśardo.",
+      "bookingCancelled": "I rezervàcia sas phangli."
     },
-    "backToReferrals": "Iriv man k-e referencură"
+    "backToReferrals": "Iriv man k-e referencură",
+    "bookingCancelled": "O rezervàcia sas phandli",
+    "cancelBooking": "Anulacia e rezervàciaqi",
+    "cancelReasonLabel": "O śajdipen vaś o ćhinavipen (sikado e partneresqe) *",
+    "cancelBookingHint": "O operativno barvalipe źal palpale ko partneri thaj lengo eligibiliteto vaś e komisia si anulime. O śerutno śaj te avel rezervisardo pale maj palal.",
+    "cancelBookingConfirm": "Anulisarel i rezervàcia"
   },
   "history": {
     "title": "Història",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Komisiako eligibiliteto kerdo",
       "HANDOVER_COMPLETED": "O pherdo pherdo",
       "ADMIN_PROTECTION_RELEASED": "O Admin mukhlja avri protekcia e duplikàturenqi maj anglal. Motivo: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "O Admin paruvel i registracia katar {{from}} ko {{to}} . Motivo: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "O Admin paruvel i registracia katar {{from}} ko {{to}} . Motivo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Jekh dujto zumavipen te kerel pes i registracia katar aver partneri sas nakhlo",
+      "BOOKING_CANCELLED": "I rezervàcia sas phangli. Motivo: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "O operativno barvalipe si dino palpale e partnereske",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "E komisiaki eligibilitèta si anulisardi kana sas kerdini i rezervàcia",
+      "COMMISSION_ELIGIBILITY_RESTORED": "E komisiaki eligibilitèta si restaurime vaś i nevi rezervàcia"
     }
   }
 }

@@ -30,7 +30,8 @@
       "registered": "Terdaftar"
     },
     "booked": "Ni booking",
-    "empty": "Tena rujukan ija."
+    "empty": "Tena rujukan ija.",
+    "bookingCancelled": "Pemesanan ni batalkan"
   },
   "detail": {
     "customer": "Paballi",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Pemesanan ni konfirmasi.",
       "accepted": "Rujukan ni tarima.",
-      "rejected": "Rujukan ni tolak."
+      "rejected": "Rujukan ni tolak.",
+      "bookingCancelled": "Pemesanan ni batalkan."
     },
-    "backToReferrals": "ammotere mange ri rujukan"
+    "backToReferrals": "ammotere mange ri rujukan",
+    "bookingCancelled": "Pemesanan ni batalkan",
+    "cancelBooking": "Batalkan Pemesanan",
+    "cancelReasonLabel": "Alasang untu' ambatallangi (nipa'piitteang ri pa'samaturukang) *",
+    "cancelBookingHint": "Kepemilikan operasional ammotere mange ri pa'samaturukang siagang kelayakan komisina ke batal. Anjo lead akkullei ni booking pole sallang.",
+    "cancelBookingConfirm": "Batalkangi pemesanan"
   },
   "history": {
     "title": "Sejarah",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisi ni paenteng",
       "HANDOVER_COMPLETED": "Penyerahan lebaki",
       "ADMIN_PROTECTION_RELEASED": "Admin napasulu perlindungan duplikat riolo. Alasang: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin na tugaskangi ammotere pendaftaran battu ri {{from}} mange ri {{to}} . Alasang: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin na tugaskangi ammotere pendaftaran battu ri {{from}} mange ri {{to}} . Alasang: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Usaha pendaftaran duplikat ri pa'samaturukang maraeng ni tolak",
+      "BOOKING_CANCELLED": "Pemesanan ni batalkan. Alasang: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Kepemilikan operasional ni ammotere mange ri pa'samaturukang",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kelayakan komisi ni batalkan siagang pemesanan",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kelayakan komisi ni ammotere untuk pemesanan beru"
     }
   }
 }

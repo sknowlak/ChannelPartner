@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Rezervat",
-    "pending": "În așteptare"
+    "pending": "În așteptare",
+    "status": {
+      "CONFIRMED": "Rezervat",
+      "CANCELLED": "Rezervarea a fost anulată"
+    }
   },
   "assign": {
     "unassigned": "Nealocat",
@@ -58,7 +62,10 @@
   },
   "project": {
     "none": "Niciun proiect încă (nereferit)",
-    "notInList": "{{project}} (nu se află în lista de proiecte)"
+    "notInList": "{{project}} (nu se află în lista de proiecte)",
+    "protectionDays_one": "{{count}} zi de protecție",
+    "protectionDays_few": "{{count}} zi de protecție",
+    "protectionDays_other": "{{count}} zi de protecție"
   },
   "journey": {
     "customer": "Client",
@@ -76,7 +83,14 @@
     "progressHistory": "Istoria progresului",
     "timesIn": "(ori în {{timezone}} )",
     "backToMyLeads": "Înapoi la My Leads",
-    "editLead": "Editați clientul potențial"
+    "editLead": "Editați clientul potențial",
+    "disputeBanner": "Un alt partener a contestat dreptul de proprietate asupra acestui client. Un administrator Leadrat îl examinează - protecția dvs. rămâne în vigoare până când ei decid.",
+    "booking": "Rezervare",
+    "commission": "Comision",
+    "notBooked": "Nu rezervat",
+    "cancelledOn": "Anulat pe {{date}} .",
+    "cancelReason": "Motiv: {{reason}}",
+    "cancelledHint": "Constructorul a anulat rezervarea - proprietatea operațională revine cu dvs. și eligibilitatea comisionului este anulată. Este restabilit dacă avansul este rezervat din nou."
   },
   "referral": {
     "NOT_REFERRED": "Nereferit (fără proiect)",
@@ -162,7 +176,17 @@
       "REFERRAL_ACCEPTED": "Constructorul a acceptat recomandarea",
       "REFERRAL_REJECTED": "Builder a respins trimiterea. Motiv: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Administratorul a lansat mai devreme protecția duplicat. Motiv: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Administratorul a reatribuit înregistrarea de la {{from}} la {{to}} . Motiv: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Administratorul a reatribuit înregistrarea de la {{from}} la {{to}} . Motiv: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "O încercare de înregistrare duplicată a unui alt partener a fost respinsă",
+      "BOOKING_CANCELLED": "Rezervare anulată. Motiv: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Proprietatea operațională a revenit partenerului",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Eligibilitatea comisionului a fost anulată odată cu rezervarea",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Eligibilitatea la comision a fost restabilită pentru noua rezervare",
+      "OWNERSHIP_DISPUTE_RAISED": "Un alt partener a contestat dreptul de proprietate asupra acestui client - un administrator Leadrat îl va examina",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Litigia privind proprietatea asupra acestui client a fost retrasă - calitatea de proprietar este neschimbată",
+      "OWNERSHIP_DISPUTE_UPHELD": "Disputa privind calitatea de proprietar asupra acestui client a fost examinată - calitatea de proprietar este confirmată",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Înregistrat după ce disputa dvs. privind proprietatea a fost decisă în favoarea dvs. Notă: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Protecția s-a încheiat: o dispută de proprietate a fost decisă în favoarea unui alt partener. Notă: {{note}}"
     }
   },
   "columnsPanel": {
@@ -186,5 +210,116 @@
     "INVALID_FOR_COUNTRY": "Acest număr de telefon nu este valabil pentru {{country}} .",
     "COUNTRY_MISMATCH": "Vă rugăm să selectați codul de țară corect.",
     "NOT_MOBILE": "Vă rugăm să introduceți un număr de telefon mobil, nu un telefon fix."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Comision eligibil",
+      "PENDING": "Comision în așteptare",
+      "CANCELLED": "Comision anulat"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Atribuit ție",
+      "DISPUTED": "Atribuirea contestată"
+    }
+  },
+  "result": {
+    "none": "Niciun rezultat al înregistrării de afișat. Înregistrați mai întâi un client potențial.",
+    "acceptedTitle": "Plumb înregistrat",
+    "rejectedTitle": "Lead nu este înregistrat",
+    "protectionWindow": "Fereastra de protecție",
+    "protectedUntil": "Protejat Până la",
+    "openLead": "Deschide Lead",
+    "addAnother": "Adăugați un alt client potențial",
+    "duplicate": "Duplicat - deja protejat",
+    "duplicateHint": "Acest client este deja protejat pentru acest proiect printr-o altă înregistrare, așa că nu a putut fi înregistrat pentru dvs.",
+    "existingProtectedUntil": "Înregistrare existentă protejată până la"
+  },
+  "disputes": {
+    "title": "Disputele mele",
+    "intro": "Litigiile de proprietate pe care le-ați ridicat pentru clienții care au fost refuzați ca duplicate. Un administrator Leadrat le examinează pe fiecare.",
+    "empty": "Nu ați ridicat nicio dispută. Dacă un client pe care l-ați adus este refuzat ca duplicat, îl puteți contesta din rezultatul înregistrării.",
+    "columns": {
+      "dispute": "Disputa",
+      "reason": "Motivul tău",
+      "outcome": "Rezultat"
+    },
+    "status": {
+      "OPEN": "În curs de revizuire",
+      "UPHELD": "Nu în favoarea ta",
+      "OVERTURNED": "Hotărât în ​​favoarea ta",
+      "WITHDRAWN": "Retras"
+    },
+    "awaitingReview": "Se așteaptă evaluarea administratorului",
+    "openNewLead": "Deschideți-vă clientul potențial {{id}}",
+    "withdraw": "Retrage",
+    "withdrawConfirm": "Retrageți disputa pentru {{name}} ? Proprietatea actuală rămâne așa cum este.",
+    "raise": "Contestă proprietatea",
+    "raiseTitle": "Contestă proprietatea",
+    "raiseHint": "Dacă acest client a venit primul la tine, explică de ce. Un administrator Leadrat îl va examina; dacă decid în favoarea dvs., lead-ul este înregistrat pentru dvs.",
+    "reasonLabel": "De ce este acest client al tău?",
+    "reasonMin_one": "Cel puțin {{count}} caracter.",
+    "reasonMin_few": "Cel puțin {{count}} caractere.",
+    "reasonMin_other": "Cel puțin {{count}} caractere.",
+    "submit": "Trimite disputa",
+    "notProtected": "Nimeni nu mai deține protecție pentru acest client pentru acest proiect - puteți înregistra liderul acum.",
+    "raised": "Litigiul {{id}} trimis pentru examinare.",
+    "viewAll": "Vezi disputele mele"
+  },
+  "dashboard": {
+    "title": "Bord",
+    "period": "Perioadă",
+    "lastDays_one": "{{count}} zi",
+    "lastDays_few": "{{count}} zile",
+    "lastDays_other": "{{count}} zile",
+    "emptyTitle": "Bun venit! Încă nu aveți piste.",
+    "emptyHint": "Înregistrați-vă primul client potențial - canalul dvs., rezervările și termenele limită de protecție vor apărea aici.",
+    "tiles": {
+      "leads": "Total de clienți potențiali",
+      "newInPeriod_one": "{{count}} noi în această perioadă",
+      "newInPeriod_few": "{{count}} noi în această perioadă",
+      "newInPeriod_other": "{{count}} noi în această perioadă",
+      "accepted": "Acceptat",
+      "booked": "Rezervat",
+      "bookedInPeriod_one": "{{count}} rezervate în această perioadă",
+      "bookedInPeriod_few": "{{count}} rezervate în această perioadă",
+      "bookedInPeriod_other": "{{count}} rezervate în această perioadă",
+      "conversion": "Conversie",
+      "conversionHint": "Clienti potențiali rezervați ca procent din clienții potențiali acceptați",
+      "protectedNow": "Protejat acum",
+      "expiringSoon_one": "Protecția se încheie în {{count}} zi",
+      "expiringSoon_few": "Protecția se încheie în {{count}} zile",
+      "expiringSoon_other": "Protecția se încheie în {{count}} zile",
+      "disputedNow": "Contestat de alții",
+      "disputedNowHint": "Clientii dvs. potențiali cu o dispută deschisă privind proprietatea din partea unui alt partener",
+      "commissionEligible": "Comision eligibil",
+      "commissionCancelled_one": "{{count}} anulat",
+      "commissionCancelled_few": "{{count}} anulat",
+      "commissionCancelled_other": "{{count}} anulat"
+    },
+    "chart": {
+      "title_one": "Înregistrări și rezervări pe zi - ultima {{count}} zi",
+      "title_few": "Înregistrări și rezervări pe zi - ultimele {{count}} zile",
+      "title_other": "Înregistrări și rezervări pe zi - ultimele {{count}} zile",
+      "registrations": "Înregistrări",
+      "bookings": "Rezervări"
+    },
+    "byStage": "Conduce după statut",
+    "bySource": "Conduce după sursă",
+    "byReferral": "Conduce prin statutul de recomandare",
+    "myDisputes": "Disputele pe care le-ați ridicat",
+    "noDisputes": "Nu s-au ridicat dispute.",
+    "unknown": "Nu setat",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM extern (simulat)",
+      "PARTNER_CRM": "Adăugat de echipa ta",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integrare",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Protecția expiră în următoarea {{count}} zi",
+    "expiringTitle_few": "Protecția expiră în următoarele {{count}} zile",
+    "expiringTitle_other": "Protecția expiră în următoarele {{count}} zile",
+    "expiringEmpty": "Niciun plumb nu își pierde protecția în această fereastră."
   }
 }

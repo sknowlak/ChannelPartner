@@ -43,7 +43,9 @@
       "name": "Izina",
       "city": "Igisagara",
       "status": "Umwanya",
-      "actions": "Ibikorwa"
+      "actions": "Ibikorwa",
+      "protection": "Uburinzi bwisubiriza",
+      "matchOn": "Ivyisubiriza bihuye kuri"
     },
     "closeReferrals": "Gufunga abarungikwa",
     "reopen": "Gusubira gufungura",
@@ -55,6 +57,25 @@
       "add": "Kwongerako umugambi",
       "created": "Yaremwe {{name}} ."
     },
-    "back": "Gusubira ku bubatsi"
+    "back": "Gusubira ku bubatsi",
+    "protection": {
+      "days_one": "{{count}} umusi",
+      "days_other": "{{count}} imisi",
+      "globalDays_one": "Imburabuzi kw'isi yose ( {{count}} umusi)",
+      "globalDays_other": "Imburabuzi kw'isi yose ( {{count}} imisi)",
+      "globalDefault": "mburabuzi kw'isi yose",
+      "placeholder": "Iminsi y'uburinzi (ubusa = mburabuzi kw'isi yose)",
+      "saved": "Uburinzi bwisubiriza bwavuguruwe kuri {{name}} .",
+      "hint": "Uburinzi bw'ibisubizo: imisi 1-3650, canke usige ubusa kugira ngo ukoreshe ivy'isi yose bivuye mu Mitunganyirize. Ihinduka rikoreshwa gusa ku mashasha y'iyandikisha - ayo asanzweho aguma afise igihe co guhera."
+    },
+    "matching": {
+      "global": "mburabuzi kw'isi yose",
+      "globalWith": "Imburabuzi y'isi yose ( {{fields}} )",
+      "mobile": "Nimero ya telefone ngendanwa",
+      "email": "Imeyili",
+      "both": "Inomero ya telefone ngendanwa + imeyili",
+      "saved": "Ivyiyumviro vy'uguhuza vyavuguruwe kuri {{name}}",
+      "hint": "Ivyo bimenyetso bituma amayandikisha abiri aba umukiriya umwe ku mugambi. Impinduka zijanye n’ugusuzuma incuro zibiri kuva ubu; uburinzi buriho ntibugira ico bukoze."
+    }
   }
 }

@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Ni booking",
-    "pending": "Tertunda"
+    "pending": "Tertunda",
+    "status": {
+      "CONFIRMED": "Ni booking",
+      "CANCELLED": "Pemesanan ni batalkan"
+    }
   },
   "assign": {
     "unassigned": "Tena ni tugaskangi",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Tena proyek ija (tenapa ni rujuk)",
-    "notInList": "{{project}} (tena ri daftar proyek)"
+    "notInList": "{{project}} (tena ri daftar proyek)",
+    "protectionDays_one": "{{count}} -hari perlindungan",
+    "protectionDays_other": "{{count}} -hari perlindungan"
   },
   "journey": {
     "customer": "Paballi",
@@ -76,7 +82,14 @@
     "progressHistory": "Riwaya kemajuan",
     "timesIn": "(wattu ri {{timezone}} )",
     "backToMyLeads": "ammotere mange ri pimpinanku",
-    "editLead": "Edit Lead"
+    "editLead": "Edit Lead",
+    "disputeBanner": "Mitra maraeng a'bali' bicarai ri sesena pa'punnaangna anne palanggana. Admin Leadrat ansalidiki - perlindungannu ammantang ri tampa'na sanggenna ke'nanga a'pattantu.",
+    "booking": "Pemesanan",
+    "commission": "Komisi",
+    "notBooked": "Tena ni booking",
+    "cancelledOn": "Ni batalkan ri {{date}} .",
+    "cancelReason": "Alasang: {{reason}}",
+    "cancelledHint": "Tukang bangunanga na batalkangi pemesanan - kepemilikan operasional ammotere mange ri kau siagang kelayakan komisi ni batalkangi. Iamintu nipa'jari ammotere' punna lead ni booking pole."
   },
   "referral": {
     "NOT_REFERRED": "Tena ni rujuk (tena proyek)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Tukang bangunang antarimai rujukan",
       "REFERRAL_REJECTED": "Tukang bangunang anre' natarimai anjo rujukanga. Alasang: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin napasulu perlindungan duplikat riolo. Alasang: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin na tugaskangi ammotere pendaftaran battu ri {{from}} mange ri {{to}} . Alasang: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin na tugaskangi ammotere pendaftaran battu ri {{from}} mange ri {{to}} . Alasang: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Usaha pendaftaran duplikat ri pa'samaturukang maraeng ni tolak",
+      "BOOKING_CANCELLED": "Pemesanan ni batalkangi. Alasang: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Kepemilikan operasional ni ammotere mange ri pa'samaturukang",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kelayakan komisi ni batalkan siagang pemesanan",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kelayakan komisi ni ammotere untuk pemesanan beru",
+      "OWNERSHIP_DISPUTE_RAISED": "Mitra maraeng a'bali' bicara ri sesena pa'punnaangna anne pelanggana - se're admin Leadrat la'paressai",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Pertikaian kepemilikan pada pelanggan ini ditarik - kepemilikan Anda tidak berubah",
+      "OWNERSHIP_DISPUTE_UPHELD": "Perselisihan kepemilikan ri pelanggan anne niparessai - kepemilikannu ni konfirmasi",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Ni daftarkan ribokoangna perselisihan kepemilikannu ni puttama ri katte. Catatang: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Pa'jagaang a'le'basa': pa'geakkang pa'punnaang ni puttama'i ri sesena pa'samaturukang maraeng. Catatang: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "anne nomoro telepon tena na valid untuk {{country}} .",
     "COUNTRY_MISMATCH": "Pilei kode negara yang cocok.",
     "NOT_MOBILE": "Pa'nassaang nomoro ponsel, teai telepon darat."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisi layak",
+      "PENDING": "Komisi yang tertunda",
+      "CANCELLED": "Komisi ni batalkan"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Ni pasang mange ri kau",
+      "DISPUTED": "Atribusi niperdebatkan"
+    }
+  },
+  "result": {
+    "none": "Tena hasil pendaftaran untu ni pa'piitteang. Daftarkan rolong lead.",
+    "acceptedTitle": "Lead terdaftar",
+    "rejectedTitle": "Lead tena na terdaftar",
+    "protectionWindow": "Jendela perlindungan",
+    "protectedUntil": "Nilindungi sa'genna",
+    "openLead": "Bukai Lead",
+    "addAnother": "tambai pole lead maraeng",
+    "duplicate": "Duplikat - lebba ni lindungi",
+    "duplicateHint": "Anne pelanggan lebba ni lindungi untuk anne proyek ri pendaftaran maraeng, jari anre' na'kulle ni daftarkan untuk ikatte.",
+    "existingProtectedUntil": "Pendaftaran yang ada dilindungi sampai"
+  },
+  "disputes": {
+    "title": "Perselisihanku",
+    "intro": "Perselisihan kepemilikan nu paenteng untuk pelanggan nu ni tolak salaku duplikat. Admin Leadrat ansalidiki massing-massing.",
+    "empty": "Ikatte tena nu ampa'niaki parkara. Punna rie' pelanggan nu angngerang anre' natarimai salaku duplikat, akkullei nu bantah battu ri hasil pendaftaran.",
+    "columns": {
+      "dispute": "Pabeseran",
+      "reason": "alasannu",
+      "outcome": "Passele"
+    },
+    "status": {
+      "OPEN": "Ri laleng tinjauang",
+      "UPHELD": "Tena na ri kau",
+      "OVERTURNED": "Nipattantui ri katte",
+      "WITHDRAWN": "Nitarik"
+    },
+    "awaitingReview": "Antayangi ulasan admin",
+    "openNewLead": "Sungkei leadnu {{id}}",
+    "withdraw": "Abbeso",
+    "withdrawConfirm": "Tarikkangi parkaranu untuk {{name}} ? Pammantangang kamma kammayya anne tuli kamma anjo.",
+    "raise": "Perselisihan kepemilikan",
+    "raiseTitle": "Perselisihan kepemilikan",
+    "raiseHint": "Punna anne palanggana battu riolo mange ri kau, pabattuangi angngapa. Admin Leadrat lanaparessai; punna ke'nanga a'pattantui untu' ikatte, anjo lead ni daftarkan untu' ikatte.",
+    "reasonLabel": "Angngapa na anne pelanggannu?",
+    "reasonMin_one": "Paling kurang {{count}} karakter.",
+    "reasonMin_other": "Paling kurang {{count}} karakter.",
+    "submit": "Kirim Perselisihan",
+    "notProtected": "Tena tau anjagai anne pelanggana untuk anne proyekka pole - akkullei nu daftarkan lead kamma kammayya anne.",
+    "raised": "Sengketa {{id}} nikiring untu niparessai.",
+    "viewAll": "Ciniki parkaraku"
+  },
+  "dashboard": {
+    "title": "Dasbor",
+    "period": "Periode",
+    "lastDays_one": "{{count}} allo",
+    "lastDays_other": "{{count}} allo",
+    "emptyTitle": "Salama battu! Ikatte anre'pa rie' pa'piitteang.",
+    "emptyHint": "Daftarkan lead maka se'renu - pipeline, booking siagang deadline perlindungannu la'pa'piitteang anrinni.",
+    "tiles": {
+      "leads": "Sikontu lead",
+      "newInPeriod_one": "{{count}} beru ri anne periode",
+      "newInPeriod_other": "{{count}} beru ri anne periode",
+      "accepted": "Nitarimai",
+      "booked": "Ni booking",
+      "bookedInPeriod_one": "{{count}} ni booking ri anne periode",
+      "bookedInPeriod_other": "{{count}} ni booking ri anne periode",
+      "conversion": "Konversi",
+      "conversionHint": "Lead ni booking salaku bageang battu ri lead ni tarima",
+      "protectedNow": "Nilindungi kamma kammayya anne",
+      "expiringSoon_one": "Pajagaang ammari ri {{count}} allo",
+      "expiringSoon_other": "Pajagaang ammari ri {{count}} allo",
+      "disputedNow": "Nibantangi ri tau maraenga",
+      "disputedNowHint": "Pimpinannu siagang sengketa kepemilikan terbuka battu ri pa'samaturukang maraeng",
+      "commissionEligible": "Komisi layak",
+      "commissionCancelled_one": "{{count}} ni batalkan",
+      "commissionCancelled_other": "{{count}} ni batalkan"
+    },
+    "chart": {
+      "title_one": "Pendaftaran siagang pemesanan allo-allo - allo ribokoangna {{count}}",
+      "title_other": "Pendaftaran siagang pemesanan allo-allo - {{count}} allo-allo ribokoangna",
+      "registrations": "Pendaftaran",
+      "bookings": "Pemesanan"
+    },
+    "byStage": "Pimpinang situru status",
+    "bySource": "Pimpinan battu ri sumber",
+    "byReferral": "Pimpinang ri status rujukan",
+    "myDisputes": "Perselisihan nu pabattu",
+    "noDisputes": "Tena pa'geakkang ni pa'nassa.",
+    "unknown": "Tena nipasang",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM eksternal (simulasi)",
+      "PARTNER_CRM": "Nitambai ri timnu",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integrasi",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Perlindungan lanynya ri allo {{count}} ribokoangna",
+    "expiringTitle_other": "Perlindungan lanynya ri {{count}} allo ribokoangna",
+    "expiringEmpty": "Tena timah tappela pajagaangna ri anne jendelaya."
   }
 }

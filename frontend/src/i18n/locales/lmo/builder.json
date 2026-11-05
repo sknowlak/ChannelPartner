@@ -30,7 +30,8 @@
       "registered": "Registrad"
     },
     "booked": "Prenotà",
-    "empty": "Ancamò nissun riferiment."
+    "empty": "Ancamò nissun riferiment.",
+    "bookingCancelled": "Prenotazione annullata"
   },
   "detail": {
     "customer": "Client",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Prenotazione confermada.",
       "accepted": "Riferiment acetà.",
-      "rejected": "Riferiment refudà."
+      "rejected": "Riferiment refudà.",
+      "bookingCancelled": "La prenotazione annullata."
     },
-    "backToReferrals": "Torna ai Riferiment"
+    "backToReferrals": "Torna ai Riferiment",
+    "bookingCancelled": "Prenotazione annullata",
+    "cancelBooking": "Annulla la prenotazion",
+    "cancelReasonLabel": "Motif per l’annullament (mustrà al partner) *",
+    "cancelBookingHint": "La proprietà operativa la turna al partner e luur idoneità a la comisiun l’è annullada. El lead pœu vèss prenutà ancamò dopu.",
+    "cancelBookingConfirm": "Annulla la prenotazion"
   },
   "history": {
     "title": "Storia",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Idoneità a la cumisiun creada",
       "HANDOVER_COMPLETED": "La trasferiment cumpletada",
       "ADMIN_PROTECTION_RELEASED": "L'amministratur g’ha pubblicà a bon temp la pruteziun duplicada. Motif: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "L'amministratur g'ha riassegnà la registraziun de {{from}} a {{to}} . Motif: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "L'amministratur g'ha riassegnà la registraziun de {{from}} a {{to}} . Motif: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Un tentatif de registraziun duplicà de part de un olter partner l’è stà refüdà",
+      "BOOKING_CANCELLED": "La prenotazione annullata. Motif: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "La proprietà operativa restituida al soci",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "L'idoneità a la cumisiun annullada cun la prenutaziun",
+      "COMMISSION_ELIGIBILITY_RESTORED": "L’idoneità a la cumisiun restaurada per la nœuva prenutaziun"
     }
   }
 }

@@ -43,7 +43,9 @@
       "name": "Numm",
       "city": "Stad",
       "status": "Status",
-      "actions": "Aktiounen"
+      "actions": "Aktiounen",
+      "protection": "Duplikat Schutz",
+      "matchOn": "Duplikate Match op"
     },
     "closeReferrals": "Zoumaache fir Referenzen",
     "reopen": "Reouverture",
@@ -55,6 +57,25 @@
       "add": "Projet dobäisetzen",
       "created": "{{name}} erstallt."
     },
-    "back": "Zréck op Builders"
+    "back": "Zréck op Builders",
+    "protection": {
+      "days_one": "{{count}} Dag",
+      "days_other": "{{count}} Deeg",
+      "globalDays_one": "Global Standard ( {{count}} Dag)",
+      "globalDays_other": "Global Standard ( {{count}} Deeg)",
+      "globalDefault": "Global Default",
+      "placeholder": "Schutzdeeg (eidel = global Standard)",
+      "saved": "Duplizéiert Schutz fir {{name}} aktualiséiert.",
+      "hint": "Duplizéiert Schutz: 1-3650 Deeg, oder loosst eidel fir de globale Standard aus Astellungen ze benotzen. Eng Ännerung gëlt nëmme fir nei Umeldungen - existent behalen hiren Oflaf."
+    },
+    "matching": {
+      "global": "Global Default",
+      "globalWith": "Global Standard ( {{fields}} )",
+      "mobile": "Handysnummer",
+      "email": "E-Mail",
+      "both": "Handysnummer + E-Mail",
+      "saved": "Duplizéiert Matching aktualiséiert fir {{name}}",
+      "hint": "Wéi eng Detailer maachen zwee Aschreiwungen dee selwechte Client fir e Projet. Ännerungen gëlle vun elo un fir duplizéiert Kontrollen; bestehend Schutz ass net betraff."
+    }
   }
 }

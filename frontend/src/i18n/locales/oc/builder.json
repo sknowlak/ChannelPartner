@@ -30,7 +30,8 @@
       "registered": "Inscrich"
     },
     "booked": "Reservat",
-    "empty": "Pas de referéncias encara."
+    "empty": "Pas de referéncias encara.",
+    "bookingCancelled": "Reservacion anullada"
   },
   "detail": {
     "customer": "Client",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Reservacion confirmada.",
       "accepted": "Referéncia acceptada.",
-      "rejected": "Referéncia refusada."
+      "rejected": "Referéncia refusada.",
+      "bookingCancelled": "Reservacion anullada."
     },
-    "backToReferrals": "Tornar a las referéncias"
+    "backToReferrals": "Tornar a las referéncias",
+    "bookingCancelled": "Reservacion anullada",
+    "cancelBooking": "Anullar la reservacion",
+    "cancelReasonLabel": "Motiu d'anullacion (mostrada al partenari) *",
+    "cancelBookingHint": "La proprietat operacionala remonta al partenari e son elegibilitat a la comission es anullada. Lo plomb pòt èsser reservat de nòu mai tard.",
+    "cancelBookingConfirm": "Anullar la reservacion"
   },
   "history": {
     "title": "Istòria",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Elegibilitat a la comission creada",
       "HANDOVER_COMPLETED": "Remesa completada",
       "ADMIN_PROTECTION_RELEASED": "L'administrator a publicat la proteccion de doble lèu. Rason: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "L'administrator a reassignat l'inscripcion de {{from}} a {{to}} . Rason: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "L'administrator a reassignat l'inscripcion de {{from}} a {{to}} . Rason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Una temptativa d'inscripcion en doble d'un autre partenari foguèt refusada",
+      "BOOKING_CANCELLED": "Reservacion anullada. Rason: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "La proprietat operacionala tornada al partenari",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "L'admissibilitat a la comission anullada amb la reservacion",
+      "COMMISSION_ELIGIBILITY_RESTORED": "L'elegibilitat a la comission restablida per la nòva reservacion"
     }
   }
 }

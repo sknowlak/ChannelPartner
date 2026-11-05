@@ -24,7 +24,10 @@ const webhookDeliverySchema = new mongoose.Schema(
     operation: { type: String, enum: ['CREATE', 'UPDATE', 'SEND'], default: 'SEND' },
     // Automatic retry with backoff (section 51): set while another attempt is
     // scheduled, cleared when the retry scheduler claims it.
-    nextRetryAt: { type: Date, default: null }
+    nextRetryAt: { type: Date, default: null },
+    // The API request whose change caused this push (section 62), also sent
+    // to the target as X-Leadrat-Request-Id. Empty for scheduler-made pushes.
+    requestId: { type: String, default: '' }
   },
   { timestamps: true }
 );

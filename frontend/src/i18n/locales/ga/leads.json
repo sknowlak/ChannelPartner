@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Curtha in áirithe",
-    "pending": "Ar feitheamh"
+    "pending": "Ar feitheamh",
+    "status": {
+      "CONFIRMED": "Curtha in áirithe",
+      "CANCELLED": "Cuireadh an áirithint ar ceal"
+    }
   },
   "assign": {
     "unassigned": "Neamhshannta",
@@ -58,7 +62,12 @@
   },
   "project": {
     "none": "Níl aon tionscadal fós (gan tagairt)",
-    "notInList": "{{project}} (nach bhfuil sa liosta tionscadal)"
+    "notInList": "{{project}} (nach bhfuil sa liosta tionscadal)",
+    "protectionDays_one": "{{count}} -chosaint lae",
+    "protectionDays_two": "{{count}} -chosaint lae",
+    "protectionDays_few": "{{count}} -chosaint lae",
+    "protectionDays_many": "{{count}} -chosaint lae",
+    "protectionDays_other": "{{count}} -chosaint lae"
   },
   "journey": {
     "customer": "Custaiméir",
@@ -76,7 +85,14 @@
     "progressHistory": "Stair Dul Chun Cinn",
     "timesIn": "( amanna i {{timezone}} )",
     "backToMyLeads": "Ar ais go dtí Mo Cheannairí",
-    "editLead": "Cuir Luaidhe in Eagar"
+    "editLead": "Cuir Luaidhe in Eagar",
+    "disputeBanner": "Chuir comhpháirtí eile in aghaidh úinéireachta an chustaiméara seo. Tá riarthóir Leadrat ag déanamh athbhreithniú air - fanann do chosaint i bhfeidhm go dtí go gcinnfidh siad.",
+    "booking": "Áirithint",
+    "commission": "Coimisiún",
+    "notBooked": "Gan áirithint",
+    "cancelledOn": "Cealaithe ar {{date}} .",
+    "cancelReason": "Cúis: {{reason}}",
+    "cancelledHint": "Chealaigh an tógálaí an áirithint - tá úinéireacht oibríoch ar ais agat agus tá incháilitheacht an choimisiúin curtha ar ceal. Déantar é a athchóiriú má chuirtear an luaidhe in áirithe arís."
   },
   "referral": {
     "NOT_REFERRED": "Gan atreorú (gan tionscadal)",
@@ -166,7 +182,17 @@
       "REFERRAL_ACCEPTED": "Ghlac Tógálaí leis an tarchur",
       "REFERRAL_REJECTED": "Dhiúltaigh Tógálaí an tarchur. Cúis: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Scaoileadh admin cosaint dhúbailt go luath. Cúis: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Rinne an riarthóir an clárú a athshannadh ó {{from}} go {{to}} . Cúis: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Rinne an riarthóir an clárú a athshannadh ó {{from}} go {{to}} . Cúis: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Diúltaíodh d’iarracht chlárúcháin dhúblach ó chomhpháirtí eile",
+      "BOOKING_CANCELLED": "Cuireadh an áirithint ar ceal. Cúis: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Tháinig úinéireacht oibriúcháin ar ais chuig an gcomhpháirtí",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Cealaíodh incháilitheacht an Choimisiúin leis an áirithint",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Athbhunaíodh incháilitheacht an Choimisiúin don áirithint nua",
+      "OWNERSHIP_DISPUTE_RAISED": "Rinne comhpháirtí eile díospóid faoi úinéireacht an chustaiméara seo - déanfaidh riarthóir Leadrat athbhreithniú air",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Tarraingíodh siar an díospóid úinéireachta ar an gcustaiméir seo - níl aon athrú ar d'úinéireacht",
+      "OWNERSHIP_DISPUTE_UPHELD": "Rinneadh athbhreithniú ar an aighneas úinéireachta ar an gcustaiméir seo - deimhnítear d'úinéireacht",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Cláraithe tar éis do dhíospóid úinéireachta cinneadh a dhéanamh i do fhabhar. Nóta: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Tháinig deireadh le cosaint: socraíodh díospóid úinéireachta i bhfabhar comhpháirtí eile. Nóta: {{note}}"
     }
   },
   "columnsPanel": {
@@ -190,5 +216,132 @@
     "INVALID_FOR_COUNTRY": "Níl an uimhir theileafóin seo bailí do {{country}} .",
     "COUNTRY_MISMATCH": "Roghnaigh an cód tíre ceart.",
     "NOT_MOBILE": "Cuir isteach uimhir fón póca, ní líne thalún."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Coimisiún incháilithe",
+      "PENDING": "Coimisiún ar feitheamh",
+      "CANCELLED": "Coimisiún ar ceal"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Curtha i leith tú",
+      "DISPUTED": "Tá conspóid i leith leithdháilte"
+    }
+  },
+  "result": {
+    "none": "Níl aon toradh clárúcháin le taispeáint. Cláraigh luaidhe ar dtús.",
+    "acceptedTitle": "Luaidhe cláraithe",
+    "rejectedTitle": "Luaidhe gan chlárú",
+    "protectionWindow": "Fuinneog Chosanta",
+    "protectedUntil": "Cosanta Go dtí",
+    "openLead": "Luaidhe Oscailte",
+    "addAnother": "Cuir Luaidhe Eile leis",
+    "duplicate": "Dúblach - cosanta cheana féin",
+    "duplicateHint": "Tá an custaiméir seo cosanta don tionscadal seo cheana féin ag clárúchán eile, mar sin ní fhéadfaí é a chlárú duit.",
+    "existingProtectedUntil": "Clárú reatha cosanta go dtí"
+  },
+  "disputes": {
+    "title": "Mo Dhíospóidí",
+    "intro": "Díospóidí úinéireachta a d’ardaigh tú do chustaiméirí ar diúltaíodh dóibh mar dhúblaigh. Déanann riarthóir Leadrat athbhreithniú ar gach ceann acu.",
+    "empty": "Níor ardaigh tú aon díospóid. Má dhiúltaítear do chustaiméir a thug tú isteach mar dhúblach, féadfaidh tú é a dhíospóid ó thoradh an chláraithe.",
+    "columns": {
+      "dispute": "Díospóid",
+      "reason": "Do chúis",
+      "outcome": "Toradh"
+    },
+    "status": {
+      "OPEN": "Faoi athbhreithniú",
+      "UPHELD": "Ní i do fhabhar",
+      "OVERTURNED": "Cinneadh i do bhfabhar",
+      "WITHDRAWN": "Tarraingthe siar"
+    },
+    "awaitingReview": "Ag fanacht le léirmheas admin",
+    "openNewLead": "Oscail do threoir {{id}}",
+    "withdraw": "Tarraing siar",
+    "withdrawConfirm": "D'aighneas a tharraingt siar le haghaidh {{name}} ? Fanann an úinéireacht reatha mar atá sé.",
+    "raise": "Úinéireacht díospóide",
+    "raiseTitle": "Úinéireacht díospóide",
+    "raiseHint": "Má tháinig an custaiméir seo chugat ar dtús, mínigh cén fáth. Déanfaidh riarthóir Leadrat athbhreithniú air; má chinneann siad i do bhfabhar, cláraítear an treoir duit.",
+    "reasonLabel": "Cén fáth gur leatsa an custaiméir seo?",
+    "reasonMin_one": "Ar a laghad {{count}} carachtar.",
+    "reasonMin_two": "Ar a laghad {{count}} carachtar.",
+    "reasonMin_few": "Ar a laghad {{count}} carachtar.",
+    "reasonMin_many": "Ar a laghad {{count}} carachtar.",
+    "reasonMin_other": "Ar a laghad {{count}} carachtar.",
+    "submit": "Seol Aighneas",
+    "notProtected": "Níl cosaint ag aon duine ar an gcustaiméir seo don tionscadal seo níos mó - is féidir leat an luaidhe a chlárú anois.",
+    "raised": "Díospóid {{id}} seolta le haghaidh athbhreithniú.",
+    "viewAll": "Féach ar mo chuid díospóidí"
+  },
+  "dashboard": {
+    "title": "Deais",
+    "period": "Tréimhse",
+    "lastDays_one": "{{count}} lá",
+    "lastDays_two": "{{count}} lá",
+    "lastDays_few": "{{count}} lá",
+    "lastDays_many": "{{count}} lá",
+    "lastDays_other": "{{count}} lá",
+    "emptyTitle": "Fáilte romhat! Níl aon treo agat fós.",
+    "emptyHint": "Cláraigh do chéad treoir - beidh do phíblíne, áirithintí agus spriocdhátaí cosanta le feiceáil anseo.",
+    "tiles": {
+      "leads": "Iomlán mar thoradh",
+      "newInPeriod_one": "{{count}} nua sa tréimhse seo",
+      "newInPeriod_two": "{{count}} nua sa tréimhse seo",
+      "newInPeriod_few": "{{count}} nua sa tréimhse seo",
+      "newInPeriod_many": "{{count}} nua sa tréimhse seo",
+      "newInPeriod_other": "{{count}} nua sa tréimhse seo",
+      "accepted": "Glactar leis",
+      "booked": "Curtha in áirithe",
+      "bookedInPeriod_one": "{{count}} curtha in áirithe sa tréimhse seo",
+      "bookedInPeriod_two": "{{count}} curtha in áirithe sa tréimhse seo",
+      "bookedInPeriod_few": "{{count}} curtha in áirithe sa tréimhse seo",
+      "bookedInPeriod_many": "{{count}} curtha in áirithe sa tréimhse seo",
+      "bookedInPeriod_other": "{{count}} curtha in áirithe sa tréimhse seo",
+      "conversion": "Comhshó",
+      "conversionHint": "Treoraí curtha in áirithe mar sciar de thorthaí glactha",
+      "protectedNow": "Cosanta anois",
+      "expiringSoon_one": "Críochnaíonn an chosaint i {{count}} lá",
+      "expiringSoon_two": "Críochnaíonn an chosaint i gceann {{count}} lá",
+      "expiringSoon_few": "Críochnaíonn an chosaint i gceann {{count}} lá",
+      "expiringSoon_many": "Críochnaíonn an chosaint i gceann {{count}} lá",
+      "expiringSoon_other": "Críochnaíonn an chosaint i gceann {{count}} lá",
+      "disputedNow": "Díospóid ag daoine eile",
+      "disputedNowHint": "Do thoradh le díospóid faoi úinéireacht oscailte ó chomhpháirtí eile",
+      "commissionEligible": "Coimisiún incháilithe",
+      "commissionCancelled_one": "{{count}} cealaithe",
+      "commissionCancelled_two": "{{count}} cealaithe",
+      "commissionCancelled_few": "{{count}} cealaithe",
+      "commissionCancelled_many": "{{count}} cealaithe",
+      "commissionCancelled_other": "{{count}} cealaithe"
+    },
+    "chart": {
+      "title_one": "Clárúcháin agus áirithintí in aghaidh an lae - {{count}} lá deiridh",
+      "title_two": "Clárúcháin agus áirithintí in aghaidh an lae - {{count}} lá deiridh",
+      "title_few": "Clárúcháin agus áirithintí in aghaidh an lae - {{count}} lá deiridh",
+      "title_many": "Clárúcháin agus áirithintí in aghaidh an lae - {{count}} lá deiridh",
+      "title_other": "Clárúcháin agus áirithintí in aghaidh an lae - {{count}} lá deiridh",
+      "registrations": "Clárúcháin",
+      "bookings": "Áirithintí"
+    },
+    "byStage": "Treoraíonn de réir stádais",
+    "bySource": "Treoraithe de réir foinse",
+    "byReferral": "Treoraíonn de réir stádas atreoraithe",
+    "myDisputes": "Díospóidí a d'ardaigh tú",
+    "noDisputes": "Níor ardaíodh aon díospóid.",
+    "unknown": "Gan socraithe",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM seachtrach (insamhladh)",
+      "PARTNER_CRM": "Curtha leis ag d'fhoireann",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Comhtháthú",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Cosaint in éag sa {{count}} lá eile",
+    "expiringTitle_two": "Cosaint in éag sna {{count}} lá atá romhainn",
+    "expiringTitle_few": "Cosaint in éag sna {{count}} lá atá romhainn",
+    "expiringTitle_many": "Cosaint in éag sna {{count}} lá atá romhainn",
+    "expiringTitle_other": "Cosaint in éag sna {{count}} lá atá romhainn",
+    "expiringEmpty": "Ní chailleann aon luaidhe a chosaint san fhuinneog seo."
   }
 }

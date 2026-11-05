@@ -49,8 +49,73 @@
       "newPartnerId": "ID Yothandizana Naye Yatsopano",
       "reason": "Chifukwa (chofunikira)",
       "apply": "Ikani Zowonjezera",
-      "applying": "Kuyika..."
+      "applying": "Kuyika...",
+      "cancelBookingHint": "Kuletsa kumasonyeza kuti kusungitsa malo ndi ntchito yake yathetsedwa, kubwezera umwini wa ogwira nawo ntchito, ndikulola womanga kuti azitsogoleranso.",
+      "cancelBookingConfirm": "Kodi mukufuna kusungitsa malo? Ntchito yake yathetsedwanso. Izi zasungidwa ndi dzina lanu ndi chifukwa."
     },
-    "timelineTitle": "Audit Timeline (kulembetsa uku)"
+    "timelineTitle": "Audit Timeline (kulembetsa uku)",
+    "bookingStatus": "Mkhalidwe Wosungitsa",
+    "commissionAttribution": "Chidziwitso cha Commission",
+    "disputeOpen": "Mkangano wa umwini uli wotsegukira kwa kasitomala uyu - mnzake wina akuti ndi wawo. Zimaganiziridwa patsamba la Mikangano.",
+    "viewDisputes": "Onani mikangano",
+    "cancellation": {
+      "title": "Kusungitsa kwathetsedwa",
+      "hint": "Kusungitsa ndi ntchito yake zathetsedwa; umwini wantchito wabwereranso ndi mnzake ndipo womanga atha kuyitanitsanso chitsogozochi.",
+      "at": "Adalepheretsedwa pa",
+      "by": "Yathetsedwa ndi",
+      "reason": "Chifukwa"
+    }
+  },
+  "disputes": {
+    "title": "Mikangano ya Mwini",
+    "hint": "Wothandizana naye amene kulembetsa kwake kudakanidwa ngati kubwereza akhoza kutsutsana ndi mwini wake wa kasitomala. Unikani mbali zonse ziwiri ndikusankha.",
+    "statusFilter": "Mkangano udindo",
+    "allStatuses": "Ma status onse",
+    "empty": "Palibe zotsutsana ndi izi.",
+    "columns": {
+      "dispute": "Mkangano",
+      "customer": "Makasitomala",
+      "project": "Ntchito",
+      "raisedBy": "Wokwezedwa ndi",
+      "heldBy": "Mwiniwake wapano",
+      "status": "Mkhalidwe",
+      "raisedAt": "Anakwezedwa"
+    },
+    "detail": {
+      "title": "Mkangano {{id}}",
+      "raisedOn": "Adakwezedwa {{date}}",
+      "raisingTitle": "Wokwezedwa ndi",
+      "holderTitle": "Mwiniwake wapano",
+      "partner": "Wothandizira",
+      "raisedBy": "Adatumizidwa ndi",
+      "customerName": "Makasitomala",
+      "mobile": "Zam'manja",
+      "alternateMobile": "Njira ina yam'manja",
+      "email": "Imelo",
+      "project": "Ntchito",
+      "reason": "Chifukwa chawo",
+      "registration": "Kulembetsa",
+      "registeredAt": "Adalembetsa",
+      "referral": "Kutumiza",
+      "heldMissing": "Kulembetsa komwe kunachitika sikunapezeke.",
+      "resolutionTitle": "Chosankha",
+      "outcome": "Zotsatira",
+      "note": "Zindikirani",
+      "decidedBy": "Anaganiza",
+      "decidedAt": "Anaganiza",
+      "newRegistration": "Kulembetsa kwatsopano",
+      "decideTitle": "Sankhani mkanganowu",
+      "noteLabel": "Chidziwitso chofotokozera chisankho (chofunikira)",
+      "noteRequired": "Lembani kalata kuti musankhe.",
+      "uphold": "Limbikitsani",
+      "overturn": "Kugubuduza",
+      "upholdEffect": "{{holder}} amasunga kasitomala. Mkangano watsekedwa ndipo palibe chomwe chimasintha.",
+      "overturnEffect": "Chitetezo chobwereza cha {{holder}} chatha tsopano ndipo kasitomala walembetsedwa ku {{partner}} ngati kaundula watsopano.",
+      "heldBookedHelp": "Makasitomalayu adasungitsidwa kudzera mwa mwini wake. Fufuzani kusungitsako kaye (Admin Override pakulembetsa), kenako kugubuduza:",
+      "confirmTitle": "Mukutsimikiza?",
+      "confirmUphold": "Inde, tsatirani",
+      "confirmOverturn": "Inde, kugubuduza",
+      "back": "Bwererani ku Mikangano"
+    }
   }
 }

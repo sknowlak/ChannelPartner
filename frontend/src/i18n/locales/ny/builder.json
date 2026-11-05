@@ -30,7 +30,8 @@
       "registered": "Olembetsedwa"
     },
     "booked": "Yasungitsidwa",
-    "empty": "Palibe zotumizira pano."
+    "empty": "Palibe zotumizira pano.",
+    "bookingCancelled": "Kusungitsa kwathetsedwa"
   },
   "detail": {
     "customer": "Makasitomala",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Kusungitsa kwatsimikizika.",
       "accepted": "Kutumiza kwavomerezedwa.",
-      "rejected": "Kutumiza kukanidwa."
+      "rejected": "Kutumiza kukanidwa.",
+      "bookingCancelled": "Kusungitsa kwathetsedwa."
     },
-    "backToReferrals": "Bwererani ku Zotumiza"
+    "backToReferrals": "Bwererani ku Zotumiza",
+    "bookingCancelled": "Kusungitsa kwathetsedwa",
+    "cancelBooking": "Letsani Kusungitsa",
+    "cancelReasonLabel": "Chifukwa cholepherera (chikuwonetsedwa kwa mnzanu) *",
+    "cancelBookingHint": "Eni ake ogwirira ntchito amabwerera kwa wothandizana nawo ndipo kuyeneretsedwa kwawo kutha. Otsogolera atha kusungitsidwanso pambuyo pake.",
+    "cancelBookingConfirm": "Letsani kusungitsa"
   },
   "history": {
     "title": "Mbiri",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kuyenerera kwa Commission kudapangidwa",
       "HANDOVER_COMPLETED": "Kupereka kwatha",
       "ADMIN_PROTECTION_RELEASED": "Admin adatulutsa chitetezo chobwereza msanga. Chifukwa: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Woyang'anira adagawiranso kulembetsa kuchokera ku {{from}} kupita ku {{to}} . Chifukwa: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Woyang'anira adagawiranso kulembetsa kuchokera ku {{from}} kupita ku {{to}} . Chifukwa: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Kuyesa kobwereza kwa mnzako wina kunakanidwa",
+      "BOOKING_CANCELLED": "Kusungitsa kwathetsedwa. Chifukwa: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Eni ake ogwirira ntchito adabwerera kwa mnzako",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kuyenerera kwa Commission kwathetsedwa ndi kusungitsa",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kuyenerera kwa Commission kwabwezeredwa pakusungitsa kwatsopano"
     }
   }
 }

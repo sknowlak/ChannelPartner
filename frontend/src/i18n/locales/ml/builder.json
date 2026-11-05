@@ -30,7 +30,8 @@
       "registered": "രജിസ്റ്റർ ചെയ്തു"
     },
     "booked": "ബുക്ക് ചെയ്തു",
-    "empty": "ഇതുവരെ റഫറലുകളൊന്നുമില്ല."
+    "empty": "ഇതുവരെ റഫറലുകളൊന്നുമില്ല.",
+    "bookingCancelled": "ബുക്കിംഗ് റദ്ദാക്കി"
   },
   "detail": {
     "customer": "ഉപഭോക്താവ്",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "ബുക്കിംഗ് സ്ഥിരീകരിച്ചു.",
       "accepted": "റഫറൽ സ്വീകരിച്ചു.",
-      "rejected": "റഫറൽ നിരസിച്ചു."
+      "rejected": "റഫറൽ നിരസിച്ചു.",
+      "bookingCancelled": "ബുക്കിംഗ് റദ്ദാക്കി."
     },
-    "backToReferrals": "റഫറലുകൾ എന്ന താളിലേക്ക് മടങ്ങുക"
+    "backToReferrals": "റഫറലുകൾ എന്ന താളിലേക്ക് മടങ്ങുക",
+    "bookingCancelled": "ബുക്കിംഗ് റദ്ദാക്കി",
+    "cancelBooking": "ബുക്കിംഗ് റദ്ദാക്കുക",
+    "cancelReasonLabel": "റദ്ദാക്കാനുള്ള കാരണം (പങ്കാളിയെ കാണിക്കുന്നു) *",
+    "cancelBookingHint": "പ്രവർത്തന ഉടമസ്ഥാവകാശം പങ്കാളിയിലേക്ക് തിരികെ പോകുകയും അവരുടെ കമ്മീഷൻ യോഗ്യത റദ്ദാക്കുകയും ചെയ്യുന്നു. ലീഡ് പിന്നീട് വീണ്ടും ബുക്ക് ചെയ്യാം.",
+    "cancelBookingConfirm": "ബുക്കിംഗ് റദ്ദാക്കുക"
   },
   "history": {
     "title": "ചരിത്രം",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "കമ്മീഷൻ യോഗ്യത സൃഷ്ടിച്ചു",
       "HANDOVER_COMPLETED": "കൈമാറ്റം പൂർത്തിയായി",
       "ADMIN_PROTECTION_RELEASED": "അഡ്മിൻ ഡ്യൂപ്ലിക്കേറ്റ് പരിരക്ഷ നേരത്തെ പുറത്തിറക്കി. കാരണം: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "അഡ്മിൻ {{from}} മുതൽ {{to}} ലേക്ക് രജിസ്ട്രേഷൻ പുനർനിയമിച്ചു. കാരണം: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "അഡ്മിൻ {{from}} മുതൽ {{to}} ലേക്ക് രജിസ്ട്രേഷൻ പുനർനിയമിച്ചു. കാരണം: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "മറ്റൊരു പങ്കാളിയുടെ ഡ്യൂപ്ലിക്കേറ്റ് രജിസ്ട്രേഷൻ ശ്രമം നിരസിക്കപ്പെട്ടു",
+      "BOOKING_CANCELLED": "ബുക്കിംഗ് റദ്ദാക്കി. കാരണം: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "പ്രവർത്തന ഉടമസ്ഥാവകാശം പങ്കാളിക്ക് തിരികെ നൽകി",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "ബുക്കിംഗിനൊപ്പം കമ്മീഷൻ യോഗ്യത റദ്ദാക്കി",
+      "COMMISSION_ELIGIBILITY_RESTORED": "പുതിയ ബുക്കിംഗിനുള്ള കമ്മീഷൻ യോഗ്യത പുനഃസ്ഥാപിച്ചു"
     }
   }
 }

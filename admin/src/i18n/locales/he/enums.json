@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "כשיר",
-    "PENDING": "תָלוּי וְעוֹמֵד"
+    "PENDING": "תָלוּי וְעוֹמֵד",
+    "CANCELLED": "בּוּטלָה"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "שחרר הגנה כפולה מוקדם",
-    "REASSIGN_PARTNER": "הקצה מחדש לשותף אחר"
+    "REASSIGN_PARTNER": "הקצה מחדש לשותף אחר",
+    "CANCEL_BOOKING": "בטל הזמנה"
   },
   "dataType": {
     "TEXT": "טֶקסט",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "סופר אדמין",
     "ADMIN": "מנהל מערכת"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "מְאוּשָׁר",
+    "CANCELLED": "בּוּטלָה"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "מיוחס",
+    "DISPUTED": "שנוי במחלוקת"
+  },
+  "disputeStatus": {
+    "OPEN": "לִפְתוֹחַ",
+    "UPHELD": "נשמר",
+    "OVERTURNED": "מְהוּפָּך",
+    "WITHDRAWN": "נסוג"
   }
 }

@@ -43,7 +43,9 @@
       "name": "Navn",
       "city": "Býur",
       "status": "Støða",
-      "actions": "Handlingar"
+      "actions": "Handlingar",
+      "protection": "Dupultvernd",
+      "matchOn": "Tvítøk samsvara á"
     },
     "closeReferrals": "Stongt fyri tilvísingum",
     "reopen": "Opna aftur",
@@ -55,6 +57,25 @@
       "add": "Legg verkætlan til",
       "created": "Stovnað {{name}} ."
     },
-    "back": "Aftur til Byggiharrar"
+    "back": "Aftur til Byggiharrar",
+    "protection": {
+      "days_one": "{{count}} dag",
+      "days_other": "{{count}} dagar",
+      "globalDays_one": "Alheims forsett ( {{count}} dagur)",
+      "globalDays_other": "Alheims forsett ( {{count}} dagar)",
+      "globalDefault": "Alheims forsett",
+      "placeholder": "Verndardagar (tómur = alheims forsett)",
+      "saved": "Tvítøk verja dagførd fyri {{name}} .",
+      "hint": "Dupultverja: 1-3650 dagar, ella lat vera tómt fyri at brúka globala forsetta frá Innstillingum. Broyting er bert galdandi fyri nýggjar skrásetingar - verandi halda sína gildistíð."
+    },
+    "matching": {
+      "global": "Alheims forsett",
+      "globalWith": "Alheims forsett ( {{fields}} )",
+      "mobile": "Fartelefonnummar",
+      "email": "Teldupostur",
+      "both": "Fartelefonnummar + teldupostur",
+      "saved": "Samsvarandi tvítøk dagførd fyri {{name}}",
+      "hint": "Hvørjar smálutir gera tvær skrásetingar til sama kunda fyri eina verkætlan. Broytingar eru galdandi fyri tvífaldar ávísingar frá nú av; verandi vernd ikki ávirkast."
+    }
   }
 }

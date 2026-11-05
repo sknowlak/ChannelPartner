@@ -43,7 +43,9 @@
       "name": "Nome",
       "city": "Città",
       "status": "Stato",
-      "actions": "Azioni"
+      "actions": "Azioni",
+      "protection": "Protezione duplicata",
+      "matchOn": "I duplicati corrispondono"
     },
     "closeReferrals": "Chiudi per referral",
     "reopen": "Riaprire",
@@ -55,6 +57,27 @@
       "add": "Aggiungi progetto",
       "created": "Creato {{name}} ."
     },
-    "back": "Torniamo ai costruttori"
+    "back": "Torniamo ai costruttori",
+    "protection": {
+      "days_one": "{{count}} giorno",
+      "days_many": "{{count}} giorni",
+      "days_other": "{{count}} giorni",
+      "globalDays_one": "Valore predefinito globale ( {{count}} giorno)",
+      "globalDays_many": "Impostazione predefinita globale ( {{count}} giorni)",
+      "globalDays_other": "Impostazione predefinita globale ( {{count}} giorni)",
+      "globalDefault": "Default globale",
+      "placeholder": "Giorni di protezione (vuoto = impostazione predefinita globale)",
+      "saved": "Protezione duplicata aggiornata per {{name}} .",
+      "hint": "Protezione duplicata: 1-3650 giorni oppure lascia vuoto per utilizzare l'impostazione predefinita globale da Impostazioni. La modifica si applica solo alle nuove registrazioni: quelle esistenti mantengono la loro scadenza."
+    },
+    "matching": {
+      "global": "Default globale",
+      "globalWith": "Valore predefinito globale ( {{fields}} )",
+      "mobile": "Numero di cellulare",
+      "email": "E-mail",
+      "both": "Numero di cellulare + e-mail",
+      "saved": "Corrispondenza duplicata aggiornata per {{name}}",
+      "hint": "Quali dettagli rendono due registrazioni lo stesso cliente per un progetto. Da ora in poi le modifiche si applicano agli assegni duplicati; la protezione esistente non viene influenzata."
+    }
   }
 }

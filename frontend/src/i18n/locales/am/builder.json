@@ -30,7 +30,8 @@
       "registered": "ተመዝግቧል"
     },
     "booked": "ተይዟል።",
-    "empty": "እስካሁን ምንም ሪፈራል የለም።"
+    "empty": "እስካሁን ምንም ሪፈራል የለም።",
+    "bookingCancelled": "ቦታ ማስያዝ ተሰርዟል።"
   },
   "detail": {
     "customer": "ደንበኛ",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "ቦታ ማስያዝ ተረጋግጧል።",
       "accepted": "ሪፈራል ተቀባይነት አግኝቷል።",
-      "rejected": "ሪፈራል ተቀባይነት አላገኘም።"
+      "rejected": "ሪፈራል ተቀባይነት አላገኘም።",
+      "bookingCancelled": "ቦታ ማስያዝ ተሰርዟል።"
     },
-    "backToReferrals": "ወደ ሪፈራሎች ተመለስ"
+    "backToReferrals": "ወደ ሪፈራሎች ተመለስ",
+    "bookingCancelled": "ቦታ ማስያዝ ተሰርዟል።",
+    "cancelBooking": "ቦታ ማስያዝ ሰርዝ",
+    "cancelReasonLabel": "የተሰረዘበት ምክንያት (ለባልደረባው ይታያል) *",
+    "cancelBookingHint": "የክዋኔ ባለቤትነት ወደ አጋር ይመለሳል እና የኮሚሽን ብቁነታቸው ይሰረዛል። መሪው በኋላ እንደገና ሊያዝ ይችላል።",
+    "cancelBookingConfirm": "ቦታ ማስያዝ ይሰርዙ"
   },
   "history": {
     "title": "ታሪክ",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "የኮሚሽኑ ብቁነት ተፈጥሯል።",
       "HANDOVER_COMPLETED": "ርክክብ ተጠናቅቋል",
       "ADMIN_PROTECTION_RELEASED": "አስተዳዳሪ ቀደም ብሎ የተባዛ ጥበቃን ለቋል። ምክንያት {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "አስተዳዳሪ ምዝገባን ከ {{from}} ወደ {{to}} መድቧል። ምክንያት {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "አስተዳዳሪ ምዝገባን ከ {{from}} ወደ {{to}} መድቧል። ምክንያት {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "በሌላ አጋር የተደረገ የተባዛ የምዝገባ ሙከራ ውድቅ ተደርጓል",
+      "BOOKING_CANCELLED": "ቦታ ማስያዝ ተሰርዟል። ምክንያት {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "የተግባር ባለቤትነት ወደ አጋር ተመልሷል",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "ከቦታ ማስያዣው ጋር የኮሚሽኑ ብቁነት ተሰርዟል።",
+      "COMMISSION_ELIGIBILITY_RESTORED": "ለአዲሱ ቦታ ማስያዝ የኮሚሽኑ ብቁነት ተመልሷል"
     }
   }
 }

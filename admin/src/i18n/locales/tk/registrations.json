@@ -49,8 +49,73 @@
       "newPartnerId": "Täze hyzmatdaş ID",
       "reason": "Sebäp (zerur)",
       "apply": "Artykmaç ulanyň",
-      "applying": "Giriş ..."
+      "applying": "Giriş ...",
+      "cancelBookingHint": "Cancelatyrmak, bron etmegi we komissiýanyň ýatyrylandygyny görkezýär, amaly eýeçiligini partnýora gaýtaryp berýär we gurluşykçynyň bu ýazgyny täzeden ýazmagyna mümkinçilik berýär.",
+      "cancelBookingConfirm": "Bu bron etmegi ýatyryp bilersiňizmi? Onuň komissiýasy hem ýatyryldy. Bu siziň adyňyz we sebäbiňiz bilen ýazylýar."
     },
-    "timelineTitle": "Gözegçilik möhleti (bu hasaba alyş)"
+    "timelineTitle": "Gözegçilik möhleti (bu hasaba alyş)",
+    "bookingStatus": "Zakaz etmegiň ýagdaýy",
+    "commissionAttribution": "Komissiýanyň aýratynlygy",
+    "disputeOpen": "Bu müşderi üçin eýeçilik dawasy açyk - başga bir hyzmatdaş bu olaryňkydygyny aýdýar. Jedeller sahypasynda karar berildi.",
+    "viewDisputes": "Jedelleri görüň",
+    "cancellation": {
+      "title": "Zakaz bermek ýatyryldy",
+      "hint": "Zakaz bermek we tabşyrmak ýatyryldy; amaly eýeçilik hyzmatdaş bilen yzyna gaýdyp geldi we gurluşykçy bu gurşuny täzeden bron edip biler.",
+      "at": "Atedatyryldy",
+      "by": "Atyryldy",
+      "reason": "Sebäp"
+    }
+  },
+  "disputes": {
+    "title": "Eýeçilik jedelleri",
+    "hint": "Hasaba alynmagy dublikat hökmünde ret edilen hyzmatdaş, müşderiniň kimdigi barada jedel edip biler. Iki tarapy gözden geçiriň we karar beriň.",
+    "statusFilter": "Jedelleriň ýagdaýy",
+    "allStatuses": "Allhli statuslar",
+    "empty": "Bu status bilen jedel ýok.",
+    "columns": {
+      "dispute": "Jedel",
+      "customer": "Müşderi",
+      "project": "Taslama",
+      "raisedBy": "Ulaldy",
+      "heldBy": "Häzirki eýesi",
+      "status": ".Agdaý",
+      "raisedAt": "Ulaldy"
+    },
+    "detail": {
+      "title": "Jedel {{id}}",
+      "raisedOn": "Ulaldylan {{date}}",
+      "raisingTitle": "Ulaldy",
+      "holderTitle": "Häzirki eýesi",
+      "partner": "Hyzmatdaş",
+      "raisedBy": "Iberen",
+      "customerName": "Müşderi",
+      "mobile": "Jübi telefony",
+      "alternateMobile": "Alternatiw ykjam",
+      "email": "E-poçta iberiň",
+      "project": "Taslama",
+      "reason": "Olaryň sebäbi",
+      "registration": "Hasaba alyş",
+      "registeredAt": "Hasaba alnan",
+      "referral": "Ralollama",
+      "heldMissing": "Geçirilen hasaba alyş tapylmady",
+      "resolutionTitle": "Karar",
+      "outcome": "Netije",
+      "note": "Bellik",
+      "decidedBy": "Karar berdi",
+      "decidedAt": "Karar berildi",
+      "newRegistration": "Täze hasaba alyş",
+      "decideTitle": "Bu jedeli çözüň",
+      "noteLabel": "Karary düşündirmek üçin bellik (zerur)",
+      "noteRequired": "Karar bermek üçin bellik ýazyň.",
+      "uphold": "Goldaw",
+      "overturn": "Artykmaçlyk",
+      "upholdEffect": "{{holder}} müşderini saklaýar. Jedel ýapyk we başga hiç zat üýtgemeýär.",
+      "overturnEffect": "{{holder}} dublikat goragy indi gutarýar we müşderi täze hasaba alyş hökmünde {{partner}} for üçin hasaba alyndy.",
+      "heldBookedHelp": "Bu müşderi häzirki eýesiniň üsti bilen bron edilýär. Ilki bilen bron etmegi ýatyryň (Admin bellige almagy ýok ediň), soň bolsa agdaryň:",
+      "confirmTitle": "Ynanýarsyňyzmy?",
+      "confirmUphold": "Hawa, goldaw ber",
+      "confirmOverturn": "Hawa, agdarmak",
+      "back": "Jedellere dolan"
+    }
   }
 }

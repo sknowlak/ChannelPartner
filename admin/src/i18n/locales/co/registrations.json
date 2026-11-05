@@ -49,8 +49,73 @@
       "newPartnerId": "Novu ID Partner",
       "reason": "Ragione (obligatoriu)",
       "apply": "Applica l'override",
-      "applying": "Applicazione..."
+      "applying": "Applicazione...",
+      "cancelBookingHint": "L'annullamentu marca a riservazione è a so cumissioni cum'è annullata, torna a pruprietà operativa à u partner, è permette à u custruttore di riservà sta guida di novu.",
+      "cancelBookingConfirm": "Cancella sta prenotazione? A so cumissioni hè ancu annullata. Questu hè registratu cù u vostru nome è a ragione."
     },
-    "timelineTitle": "Cronologia di Audit (questa registrazione)"
+    "timelineTitle": "Cronologia di Audit (questa registrazione)",
+    "bookingStatus": "Status di riservazione",
+    "commissionAttribution": "Attribuzione di a Cummissione",
+    "disputeOpen": "Una disputa di pruprietà hè aperta nantu à stu cliente - un altru cumpagnu dice chì hè u so. Hè decisu nantu à a pagina Disputes.",
+    "viewDisputes": "Vede i disputi",
+    "cancellation": {
+      "title": "Riservazione annullata",
+      "hint": "A riservazione è a so cumissioni sò annullate; A pruprietà operativa hè tornata cù u cumpagnu è u custruttore pò riservà sta guida di novu.",
+      "at": "Annulatu à",
+      "by": "Annulatu da",
+      "reason": "Ragiò"
+    }
+  },
+  "disputes": {
+    "title": "Dispute di pruprietà",
+    "hint": "Un cumpagnu chì a so registrazione hè stata rifiutata cum'è un duplicatu pò disputà quale pussede u cliente. Rivisite i dui lati è decide.",
+    "statusFilter": "Status di disputa",
+    "allStatuses": "Tutti i statuti",
+    "empty": "Nisuna disputa cù stu statutu.",
+    "columns": {
+      "dispute": "Dispute",
+      "customer": "Cliente",
+      "project": "Prughjettu",
+      "raisedBy": "Cresciuta da",
+      "heldBy": "U pruprietariu attuale",
+      "status": "Status",
+      "raisedAt": "Alzatu nantu"
+    },
+    "detail": {
+      "title": "Dispute {{id}}",
+      "raisedOn": "Cresciuta {{date}}",
+      "raisingTitle": "Cresciuta da",
+      "holderTitle": "U pruprietariu attuale",
+      "partner": "Partner",
+      "raisedBy": "Inviatu da",
+      "customerName": "Cliente",
+      "mobile": "Mobile",
+      "alternateMobile": "Alternate mobile",
+      "email": "E-mail",
+      "project": "Prughjettu",
+      "reason": "U so mutivu",
+      "registration": "Iscrizzione",
+      "registeredAt": "Registratu nantu à",
+      "referral": "Riferimentu",
+      "heldMissing": "A registrazione tenuta ùn hè micca stata truvata.",
+      "resolutionTitle": "Decisione",
+      "outcome": "Risultatu",
+      "note": "Nota",
+      "decidedBy": "Decidu da",
+      "decidedAt": "Decisi",
+      "newRegistration": "Nova iscrizzione",
+      "decideTitle": "Decide sta disputa",
+      "noteLabel": "Nota chì spiega a decisione (obligatoria)",
+      "noteRequired": "Scrivite una nota per decide.",
+      "uphold": "Mantene",
+      "overturn": "Rivultà",
+      "upholdEffect": "{{holder}} mantene u cliente. A disputa hè chjusa è nunda di più cambia.",
+      "overturnEffect": "A prutezzione duplicata di {{holder}} finisce avà è u cliente hè registratu per {{partner}} cum'è una nova registrazione.",
+      "heldBookedHelp": "Stu cliente hè riservatu attraversu u pruprietariu attuale. Annulla prima quella prenotazione (Admin Override nantu à a registrazione), poi annullà:",
+      "confirmTitle": "Sì sicuru?",
+      "confirmUphold": "Iè, sustene",
+      "confirmOverturn": "Iè, rinvià",
+      "back": "Torna à Disputes"
+    }
   }
 }

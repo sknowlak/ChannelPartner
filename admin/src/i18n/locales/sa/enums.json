@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "योग्य",
-    "PENDING": "विचाराधीनः"
+    "PENDING": "विचाराधीनः",
+    "CANCELLED": "रद्दं कृतम्"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "डुप्लिकेट् रक्षणं पूर्वमेव मुक्तं कुर्वन्तु",
-    "REASSIGN_PARTNER": "अन्यस्मिन् भागीदारे पुनः नियुक्तं कुर्वन्तु"
+    "REASSIGN_PARTNER": "अन्यस्मिन् भागीदारे पुनः नियुक्तं कुर्वन्तु",
+    "CANCEL_BOOKING": "बुकिंग् रद्दं कुर्वन्तु"
   },
   "dataType": {
     "TEXT": "पाठ",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "सुपर एडमिन",
     "ADMIN": "एडमिन"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "पुष्टिः कृता",
+    "CANCELLED": "रद्दं कृतम्"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "आरोपितम्",
+    "DISPUTED": "विवादित"
+  },
+  "disputeStatus": {
+    "OPEN": "उद्घाटित",
+    "UPHELD": "समर्थितम्",
+    "OVERTURNED": "उल्लिखितम्",
+    "WITHDRAWN": "निवृत्तः"
   }
 }

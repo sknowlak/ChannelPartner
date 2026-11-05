@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Primeren",
-    "PENDING": "V teku"
+    "PENDING": "V teku",
+    "CANCELLED": "Preklicano"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Predčasno sprostite zaščito pred dvojniki",
-    "REASSIGN_PARTNER": "Prerazporedite na drugega partnerja"
+    "REASSIGN_PARTNER": "Prerazporedite na drugega partnerja",
+    "CANCEL_BOOKING": "Prekliči rezervacijo"
   },
   "dataType": {
     "TEXT": "Besedilo",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super Admin",
     "ADMIN": "skrbnik"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Potrjeno",
+    "CANCELLED": "Preklicano"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Pripisano",
+    "DISPUTED": "Sporno"
+  },
+  "disputeStatus": {
+    "OPEN": "Odpri",
+    "UPHELD": "Potrjeno",
+    "OVERTURNED": "Prevrnjeno",
+    "WITHDRAWN": "umaknjen"
   }
 }

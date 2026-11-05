@@ -49,8 +49,73 @@
       "newPartnerId": "ID Parseiru Foun",
       "reason": "Razaun (presiza)",
       "apply": "Aplika Override",
-      "applying": "Aplika hela..."
+      "applying": "Aplika hela...",
+      "cancelBookingHint": "Kanselamentu marka rezervasaun no ninia komisaun hanesan kanseladu, fó fila fali propriedade operasionál ba parseiru, no husik konstrutór atu rezerva fali lead ida-ne'e.",
+      "cancelBookingConfirm": "Kansela rezervasaun ida-ne'e? Ninia komisaun mós kanseladu. Ida-ne'e rejista ho ita-boot nia naran no razaun."
     },
-    "timelineTitle": "Liña Tempu Auditoria nian (rejistu ida-ne'e)"
+    "timelineTitle": "Liña Tempu Auditoria nian (rejistu ida-ne'e)",
+    "bookingStatus": "Estadu Rezervasaun",
+    "commissionAttribution": "Atribuisaun Komisaun",
+    "disputeOpen": "Disputa propriedade ida nakloke ba kliente ida-ne'e - parseiru seluk hatete katak ida-ne'e sira nian. Ida-ne'e deside iha pájina Disputa sira.",
+    "viewDisputes": "Haree disputa sira",
+    "cancellation": {
+      "title": "Rezervasaun kanseladu",
+      "hint": "Rezervasaun no nia komisaun kanseladu; propriedade operasionál fila fali ho parseiru no konstrutór bele rezerva fali lead ida-ne'e.",
+      "at": "Kansela iha",
+      "by": "Kanseladu husi",
+      "reason": "Razaun"
+    }
+  },
+  "disputes": {
+    "title": "Disputa sira kona-ba Propriedade",
+    "hint": "Parseiru ida ne'ebé nia rejistu hetan rejeita hanesan duplikadu bele disputa sé maka na'in ba kliente. Haree filafali parte rua no deside.",
+    "statusFilter": "Estatutu disputa nian",
+    "allStatuses": "Estatutu hotu-hotu",
+    "empty": "Laiha disputa ho estatutu ida-ne'e.",
+    "columns": {
+      "dispute": "Deskute malu",
+      "customer": "Kliente",
+      "project": "Projetu",
+      "raisedBy": "Hasa'e husi",
+      "heldBy": "Na'in atuál",
+      "status": "Estadu",
+      "raisedAt": "Hasa'e iha"
+    },
+    "detail": {
+      "title": "Disputa {{id}}",
+      "raisedOn": "Hasa'e {{date}}",
+      "raisingTitle": "Hasa'e husi",
+      "holderTitle": "Na'in atuál",
+      "partner": "Parseiru",
+      "raisedBy": "Submete husi",
+      "customerName": "Kliente",
+      "mobile": "Movel",
+      "alternateMobile": "Móvel alternativu",
+      "email": "Email",
+      "project": "Projetu",
+      "reason": "Sira nia razaun",
+      "registration": "Rejistu",
+      "registeredAt": "Rejistu iha",
+      "referral": "Referénsia",
+      "heldMissing": "Rejistu ne'ebé maka rai hela labele hetan.",
+      "resolutionTitle": "Dezisaun",
+      "outcome": "Rezultadu",
+      "note": "Nota",
+      "decidedBy": "Deside husi",
+      "decidedAt": "Deside iha",
+      "newRegistration": "Rejistu foun",
+      "decideTitle": "Deside disputa ida-ne'e",
+      "noteLabel": "Nota ne'ebé esplika desizaun (presiza)",
+      "noteRequired": "Hakerek nota ida hodi deside.",
+      "uphold": "Sustenta",
+      "overturn": "Overturn",
+      "upholdEffect": "{{holder}} mantein kliente. Disputa ne'e taka ona no laiha buat seluk ne'ebé maka muda.",
+      "overturnEffect": "{{holder}} nia protesaun duplikadu remata agora no kliente rejista ona ba {{partner}} hanesan rejistu foun.",
+      "heldBookedHelp": "Kliente ida-ne'e hetan rezerva liuhosi na'in atuál. Kansela uluk rezervasaun ne'ebá (Admin Override iha rejistu), hafoin muda:",
+      "confirmTitle": "Ita-boot iha serteza?",
+      "confirmUphold": "Sim, defende",
+      "confirmOverturn": "Sim, nakfera",
+      "back": "Fila fali ba Disputa sira"
+    }
   }
 }

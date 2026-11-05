@@ -43,7 +43,9 @@
       "name": "Namma",
       "city": "Gávpot",
       "status": "Status",
-      "actions": "Doaimmat"
+      "actions": "Doaimmat",
+      "protection": "Duppalsuodjalus",
+      "matchOn": "Duplikahtat heivejit oktii"
     },
     "closeReferrals": "Gidde čujuhusaid várás",
     "reopen": "Rahpat fas",
@@ -55,6 +57,27 @@
       "add": "Lasit prošeavtta",
       "created": "Ráhkaduvvon {{name}} ."
     },
-    "back": "Ruovttoluotta huksejeaddjiide"
+    "back": "Ruovttoluotta huksejeaddjiide",
+    "protection": {
+      "days_one": "{{count}} beaivi",
+      "days_two": "{{count}} beaivvi",
+      "days_other": "{{count}} beaivvi",
+      "globalDays_one": "Globála standárda ( {{count}} beaivi)",
+      "globalDays_two": "Globála standárda ( {{count}} beaivvi)",
+      "globalDays_other": "Globála standárda ( {{count}} beaivvi)",
+      "globalDefault": "Globála standárda",
+      "placeholder": "Suodjalusbeaivvit (eatnan = globála standárda)",
+      "saved": "Duppalsuodjalus lea ođasmahttojuvvon {{name}} várás.",
+      "hint": "Duppalastinsuodjalus: 1-3650 beaivvi, dahje bidjat dan čáhppesin vai beasat geavahit globála standárdda Settings:as. Rievdadus guoská dušše ođđa registreremiidda - dálá registreremat bissot iežaset áigemeari."
+    },
+    "matching": {
+      "global": "Globála standárda",
+      "globalWith": "Globála standárda ( {{fields}} )",
+      "mobile": "Mobiilanummir",
+      "email": "E-poasta",
+      "both": "Mobiilanummir + e-poasta",
+      "saved": "Duppal heiveheapmi ođasmahttojuvvon {{name}} várás",
+      "hint": "Makkár dieđut dahket guokte registrerema seamma kundarin prošektii. Rievdadusat gustojit duppal dárkkistemiide ​​dás rájes; dálá suodjaleapmi ii váikkuhuvvo."
+    }
   }
 }

@@ -49,8 +49,73 @@
       "newPartnerId": "ID Rakan Kongsi Baharu",
       "reason": "Sebab (diperlukan)",
       "apply": "Gunakan Override",
-      "applying": "Memohon..."
+      "applying": "Memohon...",
+      "cancelBookingHint": "Pembatalan menandakan tempahan dan komisennya sebagai dibatalkan, mengembalikan pemilikan operasi kepada rakan kongsi dan membenarkan pembina menempah petunjuk ini semula.",
+      "cancelBookingConfirm": "Batalkan tempahan ini? Komisennya juga dibatalkan. Ini dilog dengan nama dan alasan anda."
     },
-    "timelineTitle": "Garis Masa Audit (pendaftaran ini)"
+    "timelineTitle": "Garis Masa Audit (pendaftaran ini)",
+    "bookingStatus": "Status Tempahan",
+    "commissionAttribution": "Atribusi Komisen",
+    "disputeOpen": "Pertikaian pemilikan terbuka pada pelanggan ini - rakan kongsi lain mengatakan ia milik mereka. Ia diputuskan pada halaman Pertikaian.",
+    "viewDisputes": "Lihat pertikaian",
+    "cancellation": {
+      "title": "Tempahan dibatalkan",
+      "hint": "Tempahan dan komisennya dibatalkan; pemilikan operasi kembali dengan rakan kongsi dan pembina boleh menempah petunjuk ini semula.",
+      "at": "Dibatalkan pada",
+      "by": "Dibatalkan oleh",
+      "reason": "Sebab"
+    }
+  },
+  "disputes": {
+    "title": "Pertikaian Pemilikan",
+    "hint": "Rakan kongsi yang pendaftarannya ditolak sebagai pendua boleh mempertikaikan siapa pemilik pelanggan. Semak kedua-dua pihak dan buat keputusan.",
+    "statusFilter": "Status pertikaian",
+    "allStatuses": "Semua status",
+    "empty": "Tiada pertikaian dengan status ini.",
+    "columns": {
+      "dispute": "Pertikaian",
+      "customer": "Pelanggan",
+      "project": "Projek",
+      "raisedBy": "Dibesarkan oleh",
+      "heldBy": "Pemilik semasa",
+      "status": "Status",
+      "raisedAt": "Dibesarkan pada"
+    },
+    "detail": {
+      "title": "Pertikaian {{id}}",
+      "raisedOn": "Dinaikkan {{date}}",
+      "raisingTitle": "Dibesarkan oleh",
+      "holderTitle": "Pemilik semasa",
+      "partner": "rakan kongsi",
+      "raisedBy": "Dihantar oleh",
+      "customerName": "Pelanggan",
+      "mobile": "Mudah alih",
+      "alternateMobile": "Mudah alih ganti",
+      "email": "E-mel",
+      "project": "Projek",
+      "reason": "Alasan mereka",
+      "registration": "Pendaftaran",
+      "registeredAt": "Berdaftar pada",
+      "referral": "Rujukan",
+      "heldMissing": "Pendaftaran yang dipegang tidak ditemui.",
+      "resolutionTitle": "Keputusan",
+      "outcome": "Hasil",
+      "note": "Nota",
+      "decidedBy": "Diputuskan oleh",
+      "decidedAt": "Diputuskan pada",
+      "newRegistration": "Pendaftaran baru",
+      "decideTitle": "Putuskan pertikaian ini",
+      "noteLabel": "Nota menerangkan keputusan (diperlukan)",
+      "noteRequired": "Tulis nota untuk membuat keputusan.",
+      "uphold": "Tegakkan",
+      "overturn": "terbalikkan",
+      "upholdEffect": "{{holder}} mengekalkan pelanggan. Pertikaian ditutup dan tiada apa-apa lagi yang berubah.",
+      "overturnEffect": "Perlindungan pendua {{holder}} tamat sekarang dan pelanggan didaftarkan untuk {{partner}} sebagai pendaftaran baharu.",
+      "heldBookedHelp": "Pelanggan ini ditempah melalui pemilik semasa. Batalkan tempahan itu dahulu (Pentadbiran Gantikan pada pendaftaran), kemudian batalkan:",
+      "confirmTitle": "Adakah anda pasti?",
+      "confirmUphold": "Ya, tegakkan",
+      "confirmOverturn": "Ya, terbalikkan",
+      "back": "Kembali ke Pertikaian"
+    }
   }
 }

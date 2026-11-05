@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Zvinovoneka",
-    "PENDING": "Zvakayima"
+    "PENDING": "Zvakayima",
+    "CANCELLED": "Zvakakanzurwa"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Regedza kudzivirira kwakadzokororwa mangwanani .",
-    "REASSIGN_PARTNER": "Reassign kune mumwe mudiwa ."
+    "REASSIGN_PARTNER": "Reassign kune mumwe mudiwa .",
+    "CANCEL_BOOKING": "Kanzura kubhuka"
   },
   "dataType": {
     "TEXT": "Samba",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Mutungamiri mukuru",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Zvakasimbiswa",
+    "CANCELLED": "Zvakakanzurwa"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Zvinonzi",
+    "DISPUTED": "Zvinokakavadzana"
+  },
+  "disputeStatus": {
+    "OPEN": "Fungunyura",
+    "UPHELD": "Kutsigirwa",
+    "OVERTURNED": "Yakapindurwa",
+    "WITHDRAWN": "Kubviswa"
   }
 }

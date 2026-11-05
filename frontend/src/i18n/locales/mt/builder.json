@@ -33,7 +33,8 @@
       "registered": "Reġistrat"
     },
     "booked": "Ibbukkjat",
-    "empty": "S'issa l-ebda referenza."
+    "empty": "S'issa l-ebda referenza.",
+    "bookingCancelled": "Booking ikkanċellat"
   },
   "detail": {
     "customer": "Klijent",
@@ -56,9 +57,15 @@
     "notice": {
       "booked": "Booking ikkonfermat.",
       "accepted": "Referenza aċċettata.",
-      "rejected": "Riferiment miċħud."
+      "rejected": "Riferiment miċħud.",
+      "bookingCancelled": "Booking ikkanċellat."
     },
-    "backToReferrals": "Lura għar-Riferimenti"
+    "backToReferrals": "Lura għar-Riferimenti",
+    "bookingCancelled": "Booking ikkanċellat",
+    "cancelBooking": "Ikkanċella Booking",
+    "cancelReasonLabel": "Raġuni għall-kanċellazzjoni (muri lis-sieħeb) *",
+    "cancelBookingHint": "Is-sjieda operattiva tmur lura lis-sieħeb u l-eliġibilità għall-kummissjoni tagħhom tiġi kkanċellata. Il-vantaġġ jista’ jerġa’ jiġi bbukkjat aktar tard.",
+    "cancelBookingConfirm": "Ikkanċella l-prenotazzjoni"
   },
   "history": {
     "title": "Storja",
@@ -93,7 +100,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Eliġibilità tal-Kummissjoni maħluqa",
       "HANDOVER_COMPLETED": "Trasferiment tlesta",
       "ADMIN_PROTECTION_RELEASED": "L-amministratur ħareġ protezzjoni duplikata kmieni. Raġuni: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "L-amministratur ta reġistrazzjoni mill-ġdid minn {{from}} għal {{to}} . Raġuni: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "L-amministratur ta reġistrazzjoni mill-ġdid minn {{from}} għal {{to}} . Raġuni: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Attentat ta' reġistrazzjoni doppja minn sieħeb ieħor ġie miċħud",
+      "BOOKING_CANCELLED": "Booking ikkanċellat. Raġuni: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Is-sjieda operattiva rritornata lis-sieħeb",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Eliġibilità tal-Kummissjoni kkanċellata mal-prenotazzjoni",
+      "COMMISSION_ELIGIBILITY_RESTORED": "L-eliġibilità tal-Kummissjoni ġiet restawrata għall-prenotazzjoni l-ġdida"
     }
   }
 }

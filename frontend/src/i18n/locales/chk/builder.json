@@ -30,7 +30,8 @@
       "registered": "A fen makketiw"
     },
     "booked": "A fen puk",
-    "empty": "Ese wor chon refer ngeni."
+    "empty": "Ese wor chon refer ngeni.",
+    "bookingCancelled": "Ewe booking a kansel"
   },
   "detail": {
     "customer": "Kastomer",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "A fen affat ewe booking.",
       "accepted": "Refer a etiwa.",
-      "rejected": "Repwe fis."
+      "rejected": "Repwe fis.",
+      "bookingCancelled": "A kansel ewe booking."
     },
-    "backToReferrals": "Niwin ngeni ekkewe Refer ."
+    "backToReferrals": "Niwin ngeni ekkewe Refer .",
+    "bookingCancelled": "Ewe booking a kansel",
+    "cancelBooking": "Kansel ewe puk",
+    "cancelReasonLabel": "Popun ka kansel (a pwa ngeni ewe chon fiti) * .",
+    "cancelBookingHint": "Ewe pisekin angang epwe niwin ngeni ewe chon angang me ar tufichin commission epwe kansel. Ewe lead epwe tongeni book sefan mwirin.",
+    "cancelBookingConfirm": "Kansel ewe puk ."
   },
   "history": {
     "title": "Uruwon",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Ewe tufichin komiti a foruta .",
       "HANDOVER_COMPLETED": "A wes ewe angangen fang",
       "ADMIN_PROTECTION_RELEASED": "Admin a fori ewe tumun mi fitikoko. Popun: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Ewe chon nemenem a siwini ewe taropwen mak seni {{from}} ngeni {{to}} . Popun: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Ewe chon nemenem a siwini ewe taropwen mak seni {{from}} ngeni {{to}} . Popun: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ew sossotun rejister mi fis fan ruu ren pwan emon chienan we a poutano .",
+      "BOOKING_CANCELLED": "A kansel ewe booking. Popun: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ewe nemenem mi angang a niwin ngeni ewe chon angang .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ewe tufichin angei ewe komisin a kansel ren ewe booking .",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ewe tufichin komiti a niwinsefan ngeni ewe minefoon puk ."
     }
   }
 }

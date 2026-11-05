@@ -1,5 +1,6 @@
 const IntegrationWebhook = require('../models/IntegrationWebhook');
 const WebhookDelivery = require('../models/WebhookDelivery');
+const { getContext } = require('../utils/requestContext');
 const Registration = require('../models/Registration');
 const { contactView } = require('../utils/contact');
 const Partner = require('../models/Partner');
@@ -330,6 +331,10 @@ function sendWebhook(webhook, basePayload, eventType, registrationId, partnerId)
 async function sendWebhookNow(webhook, basePayload, eventType, registrationId, partnerId) {
   const op = await resolveOperation(webhook, registrationId);
   const { url, headers, body } = buildPush(webhook, op, basePayload);
+  // Ties the push to the API request that caused it (section 62); kept in
+  // the stored headers, so a retry sends the same ID.
+  const { requestId = '' } = getContext();
+  if (requestId) headers['X-Leadrat-Request-Id'] = requestId;
 
   const outcome = await performSend(url, op.method, headers, body, { auth: webhook.auth, authOwner: authOwnerOf(webhook), maxResponseChars: LINK_RESPONSE_CHARS });
   if (op.operation !== 'UPDATE') await recordExternalId(webhook, registrationId, outcome);
@@ -349,7 +354,8 @@ async function sendWebhookNow(webhook, basePayload, eventType, registrationId, p
     requestHeaders: redactHeaders(headers),
     requestBody: body,
     ...storedOutcome(outcome),
-    nextRetryAt: nextRetryAt(webhook, 1, outcome)
+    nextRetryAt: nextRetryAt(webhook, 1, outcome),
+    requestId
   });
 
   return { deliveryId, ...storedOutcome(outcome) };

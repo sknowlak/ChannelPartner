@@ -43,7 +43,9 @@
       "name": "Naam",
       "city": "Sjtad",
       "status": "Sjtatus",
-      "actions": "Acties"
+      "actions": "Acties",
+      "protection": "Dubbele besjerming",
+      "matchOn": "Duplicate euvereinkómme op"
     },
     "closeReferrals": "Sluit veur verwiezinge",
     "reopen": "Weer ope",
@@ -55,6 +57,25 @@
       "add": "Project toevoege",
       "created": "{{name}} gemaak."
     },
-    "back": "Terug nao Bouwers"
+    "back": "Terug nao Bouwers",
+    "protection": {
+      "days_one": "{{count}} daag",
+      "days_other": "{{count}} daag",
+      "globalDays_one": "Global standaard ( {{count}} daag)",
+      "globalDays_other": "Globaal standaard ( {{count}} daag)",
+      "globalDefault": "Globaal standaard",
+      "placeholder": "Besjermingsdaag (leeg = globaal standaard)",
+      "saved": "Dubbele besjerming is bijgewerk veur {{name}} .",
+      "hint": "Dubbele besjerming: 1-3650 daog, of laot leeg um de globale standaard vaan Instellinge te gebruke. ‘n Wijziging is allein van toepassing op nuie registraties - bestaonde registraties blieve hun vervaldatum."
+    },
+    "matching": {
+      "global": "Globaal standaard",
+      "globalWith": "Globaal standaard ( {{fields}} )",
+      "mobile": "Mobielnummer",
+      "email": "E-mail",
+      "both": "Mobielnummer + e-mail",
+      "saved": "Dubbele euvereinsjtömming is bijgewerk veur {{name}}",
+      "hint": "Welke details make twie registraties dezelfde klant veur un projek. Veranderinge gelde vanaaf nu op dubbele controles; besjtaonde besjerming is neet beïnvlood."
+    }
   }
 }

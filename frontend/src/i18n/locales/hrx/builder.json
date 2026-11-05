@@ -30,7 +30,8 @@
       "registered": "Registriert"
     },
     "booked": "Reserwiirt",
-    "empty": "Noch khee referënse."
+    "empty": "Noch khee referënse.",
+    "bookingCancelled": "Reserweerung is kanseliert"
   },
   "detail": {
     "customer": "Khuner",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Reserweerung is konfirmiert.",
       "accepted": "Referëns is akseptiert.",
-      "rejected": "Referëns ferwort."
+      "rejected": "Referëns ferwort.",
+      "bookingCancelled": "Reserweerung is annuliert."
     },
-    "backToReferrals": "Zurück fer ti Referënse"
+    "backToReferrals": "Zurück fer ti Referënse",
+    "bookingCancelled": "Reserweerung is kanseliert",
+    "cancelBooking": "Reservação annuler",
+    "cancelReasonLabel": "Ursaach fer tas ëntxlus se mache (ketsaycht fer te partner) *",
+    "cancelBookingHint": "Ti operatsioons ërepxaft keet tsurik fer te partnerxaft un tëne sayn komisioons kwalifikatsioon is kans fernicht kep. Ti lët waase khëne noch mool xpeeter kexrip wëre.",
+    "cancelBookingConfirm": "Ti reserwiirung kanseere ."
   },
   "history": {
     "title": "Kexichte",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Komisioons kwalifikatsioon kemacht kep",
       "HANDOVER_COMPLETED": "Ti iwersetsung is fërtich",
       "ADMIN_PROTECTION_RELEASED": "Admin hot friier duplikaat xitsung aus keprung. Ursaach: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin hot ti registratsioon fon {{from}} tsu {{to}} noch mool kexrip . Ursaach: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin hot ti registratsioon fon {{from}} tsu {{to}} noch mool kexrip . Ursaach: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Een duplikaat registratsioons fersuuchung fon een aner partnerxaft waar ferwort .",
+      "BOOKING_CANCELLED": "Reserweerung is annuliert. Ursaach: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operatsioons eigentum is tsurik fer te partnerxaft keprung .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Komisioon kwalifikatsioon is mit te reserwiirung kanseliert .",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Komisioon kwalifikatsioon fer ti nay reserwiirung tsurik kenom ."
     }
   }
 }

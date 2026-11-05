@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Don hok",
-    "PENDING": "Ba dang sah"
+    "PENDING": "Ba dang sah",
+    "CANCELLED": "La weng noh"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Pyllait kloi ia ka jingiada kaba arsien",
-    "REASSIGN_PARTNER": "Pyniaid biang sha uwei pat u paralok ."
+    "REASSIGN_PARTNER": "Pyniaid biang sha uwei pat u paralok .",
+    "CANCEL_BOOKING": "Pynsangeh noh ia ka jingbuh jaka"
   },
   "dataType": {
     "TEXT": "Jingthoh",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "U nongpyniaid ba khraw",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "La pynskhem",
+    "CANCELLED": "La weng noh"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "La pynshong nongrim",
+    "DISPUTED": "La ialeh pyrshah"
+  },
+  "disputeStatus": {
+    "OPEN": "Plie",
+    "UPHELD": "La pynskhem",
+    "OVERTURNED": "La pynkylla",
+    "WITHDRAWN": "La weng noh"
   }
 }

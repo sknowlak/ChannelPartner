@@ -30,7 +30,8 @@
       "registered": "Qayd etilgen"
     },
     "booked": "Bron yapıldı",
-    "empty": "Alâ daa yollanmalar yoq."
+    "empty": "Alâ daa yollanmalar yoq.",
+    "bookingCancelled": "Bronirovaniye lâğu etildi"
   },
   "detail": {
     "customer": "Müşteri",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Bronirovaniye tasdıqlandı.",
       "accepted": "Referat qabul etildi.",
-      "rejected": "Referat red etildi."
+      "rejected": "Referat red etildi.",
+      "bookingCancelled": "Bronirovaniye lâğu etildi."
     },
-    "backToReferrals": "Referallarğa qaytmaq"
+    "backToReferrals": "Referallarğa qaytmaq",
+    "bookingCancelled": "Bronirovaniye lâğu etildi",
+    "cancelBooking": "Bronirovaniyeni lâğu etiñiz",
+    "cancelReasonLabel": "Lâğu etmekniñ sebebi (ortaqqa kösterile) *",
+    "cancelBookingHint": "Operativ saiplik şerikke qayta ve olarnıñ komissiya aqqı lâğu etile. Qurşunnı soñra kene bron etmek mümkün.",
+    "cancelBookingConfirm": "Bronirovaniyeni lâğu etiñiz"
   },
   "history": {
     "title": "Tarih",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Komissiyanıñ aqqı yaratıldı",
       "HANDOVER_COMPLETED": "Tapşıruv bitti",
       "ADMIN_PROTECTION_RELEASED": "Admin dublikatı qorçalavnı erte çıqardı. Sebebi: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin yazıluvnı {{from}} den {{to}} ge yañıdan tayinledi. Sebebi: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin yazıluvnı {{from}} den {{to}} ge yañıdan tayinledi. Sebebi: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Başqa şerikniñ dublikatı yazıluv tırışması red etildi",
+      "BOOKING_CANCELLED": "Bronirovaniye lâğu etildi. Sebebi: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operativ mülk şerikke qaytarıldı",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Komissiyağa aqqı bronnen lâğu etildi",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Yañı bron içün komissiya aqqı tiklendi"
     }
   }
 }

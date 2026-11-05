@@ -29,7 +29,8 @@
       "registered": "A tɔgɔ sɛbɛnna"
     },
     "booked": "A ye gafe sɔrɔ",
-    "empty": "Referrals si ma kɛ fɔlɔ."
+    "empty": "Referrals si ma kɛ fɔlɔ.",
+    "bookingCancelled": "Booking (jatebɔ) tiɲɛna"
   },
   "detail": {
     "customer": "Sannikɛla",
@@ -52,9 +53,15 @@
     "notice": {
       "booked": "Booking (jatebɔ) dafara.",
       "accepted": "A sɔnna ka ci bila mɔgɔ ma.",
-      "rejected": "Referral (cikan) banna."
+      "rejected": "Referral (cikan) banna.",
+      "bookingCancelled": "Booking (jatebɔ) tiɲɛna."
     },
-    "backToReferrals": "Segin ka segin Referrals kan"
+    "backToReferrals": "Segin ka segin Referrals kan",
+    "bookingCancelled": "Booking (jatebɔ) tiɲɛna",
+    "cancelBooking": "Annuler Réservation (Jatebɔ) la",
+    "cancelReasonLabel": "Kun min na a bɛ ban (a jiralen bɛ jɛɲɔgɔn na) * .",
+    "cancelBookingHint": "Baarakɛcogo tigiyali bɛ segin jɛɲɔgɔn fɛ ani u ka komisiyɔn sɔrɔli bɛ ban. Lead bɛ se ka booking kɛ tugun kɔfɛ.",
+    "cancelBookingConfirm": "A’ ye jatebɔ kɛ"
   },
   "history": {
     "title": "Tariku",
@@ -81,7 +88,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Komisiɔn ka setigiya dabɔra",
       "HANDOVER_COMPLETED": "Handover dafara",
       "ADMIN_PROTECTION_RELEASED": "Admin ye duplicate protection bɔ joona. Kun: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin ye sɛbɛnni bila kokura ka bɔ {{from}} ka taa {{to}} . Kun: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin ye sɛbɛnni bila kokura ka bɔ {{from}} ka taa {{to}} . Kun: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "A jɛɲɔgɔn wɛrɛ ye a ɲini ka a tɔgɔ sɛbɛn siɲɛ fila, o banna",
+      "BOOKING_CANCELLED": "Booking (jatebɔ) tiɲɛna. Kun: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Baarakɛcogo tigiyali seginna jɛɲɔgɔn ma",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Komisiɔn ka setigiya tiɲɛna ni jatebɔ ye",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Komisiɔn ka setigiya seginna ka kɛ jatebɔ kura in na"
     }
   }
 }

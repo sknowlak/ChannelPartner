@@ -49,8 +49,73 @@
       "newPartnerId": "Nœuf ID partner",
       "reason": "Motif (dumandad)",
       "apply": "Aplica sovrascriziun",
-      "applying": "Aplicand..."
+      "applying": "Aplicand...",
+      "cancelBookingHint": "L’annullament marca la prenotaziun e la sò comisiun cuma annullà, restituiss la proprietà operativa al partner e permett al costrutur de prenotar ancamò chestu lead.",
+      "cancelBookingConfirm": "Annullar chesta prenotaziun? Anca la sò comisiun l’è annullada. Chestu l’è registrà cunt el tò nomm e la rason."
     },
-    "timelineTitle": "Cronologia de audit (chesta registraziun)"
+    "timelineTitle": "Cronologia de audit (chesta registraziun)",
+    "bookingStatus": "Stat de la prenotaziun",
+    "commissionAttribution": "Attribuziun de la cumisiun",
+    "disputeOpen": "Una disputa de proprietà l’è averta sü chestu client: un olter partner dis che l’è luur. L’è decidü in de la pagina di Controversi.",
+    "viewDisputes": "Visualizzà i cunflit",
+    "cancellation": {
+      "title": "Prenotazione annullata",
+      "hint": "La prenotaziun e la sò comisiun sun annullà; la proprietà operativa l’è turnada cunt el partner e el costrutur pœu prenutar ancamò chestu lead.",
+      "at": "Annullato a",
+      "by": "Annullato da",
+      "reason": "Rexon"
+    }
+  },
+  "disputes": {
+    "title": "Controversi de proprietà",
+    "hint": "Un partner che la sò registraziun l’è stada refüdada cuma duplicat pœu cuntestar chi l’è el proprietari del client. Revis tüt i dü lat e decid.",
+    "statusFilter": "Status de la disputa",
+    "allStatuses": "Tüt i stat",
+    "empty": "Nissun cunflit cun chestu status.",
+    "columns": {
+      "dispute": "Disputa",
+      "customer": "Client",
+      "project": "Projet",
+      "raisedBy": "Creà de",
+      "heldBy": "Proprietari atual",
+      "status": "Stat",
+      "raisedAt": "Alzà sü"
+    },
+    "detail": {
+      "title": "Disputa {{id}}",
+      "raisedOn": "Sulevà {{date}}",
+      "raisingTitle": "Creà de",
+      "holderTitle": "Proprietari atual",
+      "partner": "Compagn",
+      "raisedBy": "Invià de",
+      "customerName": "Client",
+      "mobile": "Mobel",
+      "alternateMobile": "Mubil alternatif",
+      "email": "E-mail",
+      "project": "Projet",
+      "reason": "La luur rason",
+      "registration": "Registraziun",
+      "registeredAt": "Registrato su",
+      "referral": "Riferiment",
+      "heldMissing": "La registraziun tegnüda l’è minga stada truvada.",
+      "resolutionTitle": "Decision",
+      "outcome": "Resultad",
+      "note": "Nota",
+      "decidedBy": "Decidü de",
+      "decidedAt": "Decidü sü",
+      "newRegistration": "Nœuva registraziun",
+      "decideTitle": "Decidi chesta disputa",
+      "noteLabel": "Nota che spiega la decisiun (dumandada)",
+      "noteRequired": "Scrivi una nota per decider.",
+      "uphold": "Sostegn",
+      "overturn": "Capovolt",
+      "upholdEffect": "{{holder}} mantegn el client. La disputa l’è sarada e cambia nient olter.",
+      "overturnEffect": "La pruteziun duplicada de {{holder}} la finìs incœu e el client l’è registrà per {{partner}} cuma nœuva registraziun.",
+      "heldBookedHelp": "Chestu client l’è prenutà travers del atual proprietari. Annulla prima chela prenotaziun (Admin Override sü la registraziun), e dopu annulla:",
+      "confirmTitle": "Set segür?",
+      "confirmUphold": "Sì, sostegn",
+      "confirmOverturn": "Sì, ribaltà",
+      "back": "Torna ai cuntraversi"
+    }
   }
 }

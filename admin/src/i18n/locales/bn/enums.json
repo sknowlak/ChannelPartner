@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "যোগ্য",
-    "PENDING": "অপেক্ষমাণ"
+    "PENDING": "অপেক্ষমাণ",
+    "CANCELLED": "বাতিল"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "ডুপ্লিকেট সুরক্ষা আগেভাগে তুলে নিন",
-    "REASSIGN_PARTNER": "অন্য পার্টনারকে নিয়োজিত করুন"
+    "REASSIGN_PARTNER": "অন্য পার্টনারকে নিয়োজিত করুন",
+    "CANCEL_BOOKING": "বুকিং বাতিল করুন"
   },
   "dataType": {
     "TEXT": "টেক্সট",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "সুপার অ্যাডমিন",
     "ADMIN": "অ্যাডমিন"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "নিশ্চিত",
+    "CANCELLED": "বাতিল"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "কৃতিত্ব দেওয়া হয়েছে",
+    "DISPUTED": "বিরোধপূর্ণ"
+  },
+  "disputeStatus": {
+    "OPEN": "খোলা",
+    "UPHELD": "বহাল রাখা হয়েছে",
+    "OVERTURNED": "উল্টে দেওয়া হয়েছে",
+    "WITHDRAWN": "প্রত্যাহার করা হয়েছে"
   }
 }

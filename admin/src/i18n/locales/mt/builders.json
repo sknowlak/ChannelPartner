@@ -43,7 +43,9 @@
       "name": "Isem",
       "city": "Belt",
       "status": "Status",
-      "actions": "Azzjonijiet"
+      "actions": "Azzjonijiet",
+      "protection": "Protezzjoni duplikata",
+      "matchOn": "Duplikati jaqblu fuq"
     },
     "closeReferrals": "Agħlaq għal referenzi",
     "reopen": "Iftaħ mill-ġdid",
@@ -55,6 +57,31 @@
       "add": "Żid Proġett",
       "created": "Maħluq {{name}} ."
     },
-    "back": "Lura għall-bennejja"
+    "back": "Lura għall-bennejja",
+    "protection": {
+      "days_one": "{{count}} jum",
+      "days_two": "{{count}} ijiem",
+      "days_few": "{{count}} ijiem",
+      "days_many": "{{count}} ijiem",
+      "days_other": "{{count}} ijiem",
+      "globalDays_one": "default globali ( {{count}} jum)",
+      "globalDays_two": "default globali ( {{count}} ijiem)",
+      "globalDays_few": "default globali ( {{count}} ijiem)",
+      "globalDays_many": "default globali ( {{count}} ijiem)",
+      "globalDays_other": "default globali ( {{count}} ijiem)",
+      "globalDefault": "Inadempjenza globali",
+      "placeholder": "Ġranet ta' protezzjoni (vojta = default globali)",
+      "saved": "Protezzjoni duplikata aġġornata għal {{name}} .",
+      "hint": "Protezzjoni duplikata: 1-3650 jum, jew ħalli vojta biex tuża l-inadempjenza globali minn Settings. Bidla tapplika biss għal reġistrazzjonijiet ġodda - dawk eżistenti jżommu l-iskadenza tagħhom."
+    },
+    "matching": {
+      "global": "Inadempjenza globali",
+      "globalWith": "default globali ( {{fields}} )",
+      "mobile": "Numru tal-mowbajl",
+      "email": "Email",
+      "both": "Numru tal-mowbajl + email",
+      "saved": "Tqabbil duplikat aġġornat għal {{name}}",
+      "hint": "Liema dettalji jagħmlu żewġ reġistrazzjonijiet l-istess klijent għal proġett. Bidliet japplikaw għal kontrolli duplikati minn issa 'l quddiem; protezzjoni eżistenti mhix affettwata."
+    }
   }
 }

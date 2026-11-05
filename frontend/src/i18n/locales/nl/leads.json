@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Geboekt",
-    "pending": "In behandeling"
+    "pending": "In behandeling",
+    "status": {
+      "CONFIRMED": "Geboekt",
+      "CANCELLED": "Boeking geannuleerd"
+    }
   },
   "assign": {
     "unassigned": "Niet toegewezen",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Nog geen project (niet doorverwezen)",
-    "notInList": "{{project}} (niet in de projectenlijst)"
+    "notInList": "{{project}} (niet in de projectenlijst)",
+    "protectionDays_one": "{{count}} -dag bescherming",
+    "protectionDays_other": "{{count}} -dag bescherming"
   },
   "journey": {
     "customer": "Klant",
@@ -76,7 +82,14 @@
     "progressHistory": "Vooruitgangsgeschiedenis",
     "timesIn": "(tijden in {{timezone}} )",
     "backToMyLeads": "Terug naar Mijn leads",
-    "editLead": "Lead bewerken"
+    "editLead": "Lead bewerken",
+    "disputeBanner": "Een andere partner heeft het eigendom van deze klant betwist. Een Leadrat beheerder beoordeelt het - uw bescherming blijft van kracht totdat zij beslissen.",
+    "booking": "Boeking",
+    "commission": "Commissie",
+    "notBooked": "Niet geboekt",
+    "cancelledOn": "Geannuleerd op {{date}} .",
+    "cancelReason": "Reden: {{reason}}",
+    "cancelledHint": "De bouwer heeft de boeking geannuleerd. Het operationele eigendom is terug bij u en het recht op commissie is geannuleerd. Deze wordt hersteld als de voorsprong opnieuw wordt geboekt."
   },
   "referral": {
     "NOT_REFERRED": "Niet verwezen (geen project)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Bouwer accepteerde de verwijzing",
       "REFERRAL_REJECTED": "Bouwer heeft de verwijzing afgewezen. Reden: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "De beheerder heeft de dubbele bescherming vroegtijdig vrijgegeven. Reden: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "De beheerder heeft de registratie opnieuw toegewezen van {{from}} naar {{to}} . Reden: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "De beheerder heeft de registratie opnieuw toegewezen van {{from}} naar {{to}} . Reden: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Een dubbele registratiepoging van een andere partner werd afgewezen",
+      "BOOKING_CANCELLED": "Boeking geannuleerd. Reden: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Het operationele eigendom ging terug naar de partner",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Het in aanmerking komen voor de commissie is geannuleerd bij de boeking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Het recht op commissie is hersteld voor de nieuwe boeking",
+      "OWNERSHIP_DISPUTE_RAISED": "Een andere partner betwistte het eigendom van deze klant. Een Leadrat beheerder zal dit beoordelen",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Het eigendomsgeschil over deze klant is ingetrokken. Uw eigendom is ongewijzigd",
+      "OWNERSHIP_DISPUTE_UPHELD": "Het eigendomsgeschil voor deze klant is beoordeeld. Uw eigendom is bevestigd",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Geregistreerd nadat uw eigendomsgeschil in uw voordeel werd beslist. Opmerking: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "De bescherming eindigde: een eigendomsgeschil werd beslist in het voordeel van een andere partner. Opmerking: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Dit telefoonnummer is niet geldig voor {{country}} .",
     "COUNTRY_MISMATCH": "Selecteer de juiste landcode.",
     "NOT_MOBILE": "Voer een mobiel nummer in, geen vaste lijn."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Commissie komt in aanmerking",
+      "PENDING": "Commissie in behandeling",
+      "CANCELLED": "Commissie geannuleerd"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Aan jou toegeschreven",
+      "DISPUTED": "Toeschrijving betwist"
+    }
+  },
+  "result": {
+    "none": "Geen registratieresultaat om te tonen. Registreer eerst een lead.",
+    "acceptedTitle": "Lood geregistreerd",
+    "rejectedTitle": "Lead niet geregistreerd",
+    "protectionWindow": "Beschermingsvenster",
+    "protectedUntil": "Beschermd tot",
+    "openLead": "Open leiding",
+    "addAnother": "Voeg nog een lead toe",
+    "duplicate": "Duplicaat - al beveiligd",
+    "duplicateHint": "Deze klant is al beschermd voor dit project door een andere registratie, dus deze kon niet voor u worden geregistreerd.",
+    "existingProtectedUntil": "Bestaande registratie beschermd tot"
+  },
+  "disputes": {
+    "title": "Mijn geschillen",
+    "intro": "Eigendomsgeschillen die u heeft ingediend voor klanten die als duplicaten zijn geweigerd. Een Leadrat beheerder beoordeelt ze allemaal.",
+    "empty": "U heeft geen betwistingen naar voren gebracht. Indien een door u aangebrachte klant als duplicaat wordt geweigerd, kunt u dit betwisten via het registratieresultaat.",
+    "columns": {
+      "dispute": "Geschil",
+      "reason": "Jouw reden",
+      "outcome": "Resultaat"
+    },
+    "status": {
+      "OPEN": "Wordt beoordeeld",
+      "UPHELD": "Niet in jouw voordeel",
+      "OVERTURNED": "Besloten in uw voordeel",
+      "WITHDRAWN": "Ingetrokken"
+    },
+    "awaitingReview": "Wachten op beoordeling door beheerder",
+    "openNewLead": "Open uw lead {{id}}",
+    "withdraw": "Terugtrekken",
+    "withdrawConfirm": "Uw geschil voor {{name}} intrekken? Het huidige eigendom blijft zoals het is.",
+    "raise": "Eigendom betwisten",
+    "raiseTitle": "Eigendom betwisten",
+    "raiseHint": "Als deze klant als eerste naar u toe kwam, leg dan uit waarom. Een Leadrat beheerder zal het beoordelen; als zij in uw voordeel beslissen, wordt de lead voor u geregistreerd.",
+    "reasonLabel": "Waarom is deze klant van jou?",
+    "reasonMin_one": "Minimaal {{count}} teken.",
+    "reasonMin_other": "Minimaal {{count}} tekens.",
+    "submit": "Geschil verzenden",
+    "notProtected": "Niemand heeft meer bescherming voor deze klant voor dit project - u kunt de lead nu registreren.",
+    "raised": "Geschil {{id}} verzonden voor beoordeling.",
+    "viewAll": "Bekijk mijn geschillen"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Periode",
+    "lastDays_one": "{{count}} dag",
+    "lastDays_other": "{{count}} dagen",
+    "emptyTitle": "Welkom! U heeft nog geen leads.",
+    "emptyHint": "Registreer uw eerste lead - uw pipeline, boekingen en beschermingsdeadlines worden hier weergegeven.",
+    "tiles": {
+      "leads": "Totaal aantal leads",
+      "newInPeriod_one": "{{count}} nieuw in deze periode",
+      "newInPeriod_other": "{{count}} nieuw in deze periode",
+      "accepted": "Geaccepteerd",
+      "booked": "Geboekt",
+      "bookedInPeriod_one": "{{count}} geboekt in deze periode",
+      "bookedInPeriod_other": "{{count}} geboekt in deze periode",
+      "conversion": "Conversie",
+      "conversionHint": "Geboekte leads als percentage van geaccepteerde leads",
+      "protectedNow": "Nu beschermd",
+      "expiringSoon_one": "Bescherming eindigt over {{count}} dag",
+      "expiringSoon_other": "Bescherming eindigt over {{count}} dagen",
+      "disputedNow": "Betwist door anderen",
+      "disputedNowHint": "Uw leads met een open eigendomsgeschil van een andere partner",
+      "commissionEligible": "Commissie komt in aanmerking",
+      "commissionCancelled_one": "{{count}} geannuleerd",
+      "commissionCancelled_other": "{{count}} geannuleerd"
+    },
+    "chart": {
+      "title_one": "Registratie en boekingen per dag - laatste {{count}} dag",
+      "title_other": "Registratie en boekingen per dag - afgelopen {{count}} dagen",
+      "registrations": "Registraties",
+      "bookings": "Boekingen"
+    },
+    "byStage": "Leidt op status",
+    "bySource": "Leads per bron",
+    "byReferral": "Leidt op verwijzingsstatus",
+    "myDisputes": "Geschillen die u hebt aangekaart",
+    "noDisputes": "Er zijn geen geschillen gerezen.",
+    "unknown": "Niet ingesteld",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Externe CRM (gesimuleerd)",
+      "PARTNER_CRM": "Toegevoegd door jouw team",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integratie",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "De bescherming verloopt over de volgende {{count}} dag",
+    "expiringTitle_other": "De bescherming verloopt over de komende {{count}} dagen",
+    "expiringEmpty": "In dit venster verliest geen enkel lood zijn bescherming."
   }
 }

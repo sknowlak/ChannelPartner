@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Udah dipesen",
-    "pending": "Tunde"
+    "pending": "Tunde",
+    "status": {
+      "CONFIRMED": "Udah dipesen",
+      "CANCELLED": "Pemesanan dibatalin"
+    }
   },
   "assign": {
     "unassigned": "Kagak ditugasin",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Belum ada proyek (belum dirujuk)",
-    "notInList": "{{project}} (kagak ada di daftar proyek)"
+    "notInList": "{{project}} (kagak ada di daftar proyek)",
+    "protectionDays_one": "{{count}} -hari perlindungan",
+    "protectionDays_other": "{{count}} -hari perlindungan"
   },
   "journey": {
     "customer": "Langganan",
@@ -76,7 +82,14 @@
     "progressHistory": "Riwayat Kemajuan",
     "timesIn": "(kali di {{timezone}} )",
     "backToMyLeads": "Balik ke petunjuk gue",
-    "editLead": "Edit Lead"
+    "editLead": "Edit Lead",
+    "disputeBanner": "Mitra lain udah ngebantah kepemilikan pelanggan ini. Admin Leadrat lagi ngereview - perlindungan lu tetep ada sampe mereka mutusin.",
+    "booking": "Pemesanan",
+    "commission": "Komisi",
+    "notBooked": "Belom dipesen",
+    "cancelledOn": "Dibatalin pada {{date}} .",
+    "cancelReason": "Alasan: {{reason}}",
+    "cancelledHint": "Tukang bangunan ngebatalin pemesanan - kepemilikan operasional balik ke lu dan kelayakan komisi dibatalin. Itu dipulihin kalo leadnya dipesen lagi."
   },
   "referral": {
     "NOT_REFERRED": "Kagak dirujuk (kagak ada proyek)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Tukang bangunan nerima rujukan",
       "REFERRAL_REJECTED": "Tukang bangunan menolak rujukan. Alasan: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin ngeluarin perlindungan duplikat lebih awal. Alasan: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin ngatur ulang pendaftaran dari {{from}} ke {{to}} . Alasan: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin ngatur ulang pendaftaran dari {{from}} ke {{to}} . Alasan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Percobaan pendaftaran duplikat dari mitra lain ditolak",
+      "BOOKING_CANCELLED": "Pemesanan dibatalin. Alasan: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Kepemilikan operasional dibalikin ke mitra",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kelayakan komisi dibatalin dengan pemesanan",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kelayakan komisi dipulihkan untuk pemesanan baru",
+      "OWNERSHIP_DISPUTE_RAISED": "Mitra lain ngebantah kepemilikan pelanggan ini - admin Leadrat bakalan ngereviewnya",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Sengketa kepemilikan pelanggan ini ditarik - kepemilikan lu kagak berubah",
+      "OWNERSHIP_DISPUTE_UPHELD": "Sengketa kepemilikan pelanggan ini udah ditinjau - kepemilikan lu udah dikonfirmasi",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Didaftarin setelah sengketa kepemilikan lu diputusin memihak lu. Catatan: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Perlindungan berakhir: sengketa kepemilikan diputuskan memihak mitra lain. Catatan: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Nomor telepon ini kagak berlaku buat {{country}} .",
     "COUNTRY_MISMATCH": "Tolong pilih kode negara yang bener.",
     "NOT_MOBILE": "Tolong masukin nomor ponsel, bukan telepon darat."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisi yang memenuhi syarat",
+      "PENDING": "Komisi tertunda",
+      "CANCELLED": "Komisi dibatalin"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Dikaitkan ama lu",
+      "DISPUTED": "Atribusi diperdebatkan"
+    }
+  },
+  "result": {
+    "none": "Gak ada hasil pendaftaran yang harus ditunjukin. Daftarin prospek dulu.",
+    "acceptedTitle": "Lead terdaftar",
+    "rejectedTitle": "Lead kagak terdaftar",
+    "protectionWindow": "Jendela Perlindungan",
+    "protectedUntil": "Dilindungin Sampe",
+    "openLead": "Buka Lead",
+    "addAnother": "Tambahin Lead Lain",
+    "duplicate": "Duplikat - udah dilindungin",
+    "duplicateHint": "Pelanggan ini udah dilindungin buat proyek ini oleh pendaftaran lain, jadi kagak bisa didaftarin buat lu.",
+    "existingProtectedUntil": "Pendaftaran yang udah ada dilindungin sampe"
+  },
+  "disputes": {
+    "title": "Perselisihan gue",
+    "intro": "Perselisihan kepemilikan yang lu angkat buat pelanggan yang ditolak sebagai duplikat. Admin Leadrat ngereview masing-masing.",
+    "empty": "Lu kagak ngajuin sengketa. Kalo pelanggan yang lu bawa ditolak sebagai duplikat, lu bisa bantah dari hasil pendaftaran.",
+    "columns": {
+      "dispute": "Ngebantah",
+      "reason": "Alasan lu",
+      "outcome": "Akibatnye"
+    },
+    "status": {
+      "OPEN": "Lagi ditinjau",
+      "UPHELD": "Kagak memihak lu",
+      "OVERTURNED": "Diputusin buat lu",
+      "WITHDRAWN": "Ditarik"
+    },
+    "awaitingReview": "Lagi nunggu ulasan admin",
+    "openNewLead": "Buka lead lu {{id}}",
+    "withdraw": "Narik",
+    "withdrawConfirm": "Tarik sengketa lu buat {{name}} ? Kepemilikan yang sekarang tetep apa adanya.",
+    "raise": "Sengketa kepemilikan",
+    "raiseTitle": "Sengketa kepemilikan",
+    "raiseHint": "Kalo pelanggan ini dateng ke lu duluan, jelasin kenapa. Admin Leadrat bakalan ngereviewnya; kalo mereka mutusin buat lu, leadnya terdaftar buat lu.",
+    "reasonLabel": "Kenapa pelanggan ini punya lu?",
+    "reasonMin_one": "Paling kagak karakter {{count}} .",
+    "reasonMin_other": "Paling kagak {{count}} karakter.",
+    "submit": "Kirim Perselisihan",
+    "notProtected": "Gak ada yang ngelindungin pelanggan ini buat proyek ini lagi - lu bisa daftar prospek sekarang.",
+    "raised": "Perselisihan {{id}} dikirim untuk ditinjau.",
+    "viewAll": "Liat sengketa gue"
+  },
+  "dashboard": {
+    "title": "Dasbor",
+    "period": "Wayah",
+    "lastDays_one": "{{count}} hari",
+    "lastDays_other": "{{count}} hari",
+    "emptyTitle": "Selamet dateng! Lu belom punya petunjuk.",
+    "emptyHint": "Daftarin lead pertama lu - pipeline, pemesanan dan deadline perlindungan lu bakal muncul di sini.",
+    "tiles": {
+      "leads": "Total prospek",
+      "newInPeriod_one": "{{count}} baru di periode ini",
+      "newInPeriod_other": "{{count}} baru di periode ini",
+      "accepted": "Diterima",
+      "booked": "Udah dipesen",
+      "bookedInPeriod_one": "{{count}} dipesen di periode ini",
+      "bookedInPeriod_other": "{{count}} dipesen di periode ini",
+      "conversion": "Konversi",
+      "conversionHint": "Prospek yang dipesan sebagai bagian dari prospek yang diterima",
+      "protectedNow": "Dilindungin sekarang",
+      "expiringSoon_one": "Perlindungan berakhir di {{count}} hari",
+      "expiringSoon_other": "Perlindungan berakhir dalam {{count}} hari",
+      "disputedNow": "Diperdebatkan oleh orang lain",
+      "disputedNowHint": "Pimpinan lu dengan sengketa kepemilikan terbuka dari mitra lain",
+      "commissionEligible": "Komisi yang memenuhi syarat",
+      "commissionCancelled_one": "{{count}} dibatalin",
+      "commissionCancelled_other": "{{count}} dibatalin"
+    },
+    "chart": {
+      "title_one": "Pendaftaran dan pemesanan per hari - {{count}} hari terakhir",
+      "title_other": "Pendaftaran dan pemesanan per hari - {{count}} hari terakhir",
+      "registrations": "Pendaftaran",
+      "bookings": "Pemesanan"
+    },
+    "byStage": "Memimpin berdasarkan status",
+    "bySource": "Pimpinan dari sumber",
+    "byReferral": "Memimpin berdasarkan status rujukan",
+    "myDisputes": "Perselisihan yang lu angkat",
+    "noDisputes": "Gak ada sengketa yang diangkat.",
+    "unknown": "Belom diatur",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM eksternal (simulasi)",
+      "PARTNER_CRM": "Ditambahin ama tim lu",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integrasi",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Perlindungan abis di {{count}} hari berikutnya",
+    "expiringTitle_other": "Perlindungan abis dalam {{count}} hari ke depan",
+    "expiringEmpty": "Gak ada timbal yang kehilangan perlindungannya di jendela ini."
   }
 }

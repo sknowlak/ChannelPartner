@@ -49,8 +49,73 @@
       "newPartnerId": "New Partner ID",
       "reason": "Yog vim li cas (yuav tsum tau)",
       "apply": "Thov Override",
-      "applying": "Kev thov..."
+      "applying": "Kev thov...",
+      "cancelBookingHint": "Ncua tseg cim qhov booking thiab nws cov commission raws li muab tso tseg, rov ua hauj lwm ua tswv cuab rau tus khub, thiab cia tus builder phau ntawv no coj dua.",
+      "cancelBookingConfirm": "Tso tseg qhov booking no? Nws cov commission raug muab tso tseg thiab. Qhov no tau sau nrog koj lub npe thiab vim li cas."
     },
-    "timelineTitle": "Lub Sijhawm Tshawb Fawb (cov ntawv sau npe no)"
+    "timelineTitle": "Lub Sijhawm Tshawb Fawb (cov ntawv sau npe no)",
+    "bookingStatus": "Booking Status",
+    "commissionAttribution": "Commission Attribution",
+    "disputeOpen": "Kev tsis sib haum xeeb ntawm tswv cuab tau qhib rau tus neeg siv khoom no - lwm tus khub hais tias nws yog lawv li. Nws raug txiav txim siab ntawm nplooj ntawv Kev Tsis Txaus Siab.",
+    "viewDisputes": "Saib kev tsis sib haum xeeb",
+    "cancellation": {
+      "title": "Booking tso tseg",
+      "hint": "Lub booking thiab nws cov commission raug muab tso tseg; kev ua tswv cuab rov qab los nrog tus khub thiab tus neeg tsim khoom tuaj yeem sau cov ntaub ntawv no dua.",
+      "at": "Ncua tseg ntawm",
+      "by": "Tso tseg los ntawm",
+      "reason": "Yog vim li cas"
+    }
+  },
+  "disputes": {
+    "title": "Cov tswv cuab tsis sib haum xeeb",
+    "hint": "Ib tus khub uas nws qhov kev sau npe raug tsis lees paub raws li qhov sib npaug tuaj yeem sib cav tias leej twg yog tus tswv ntawm cov neeg siv khoom. Tshawb xyuas ob sab thiab txiav txim siab.",
+    "statusFilter": "Kev tsis sib haum xeeb",
+    "allStatuses": "Txhua yam xwm txheej",
+    "empty": "Tsis muaj kev sib cav nrog qhov xwm txheej no.",
+    "columns": {
+      "dispute": "Kev tsis sib haum xeeb",
+      "customer": "Cov neeg siv khoom",
+      "project": "Qhov project",
+      "raisedBy": "tsa los ntawm",
+      "heldBy": "Tus tswv tam sim no",
+      "status": "xwm txheej",
+      "raisedAt": "Nce rau"
+    },
+    "detail": {
+      "title": "Kev tsis sib haum xeeb {{id}}",
+      "raisedOn": "Nce {{date}}",
+      "raisingTitle": "tsa los ntawm",
+      "holderTitle": "Tus tswv tam sim no",
+      "partner": "Tus khub",
+      "raisedBy": "Xa los ntawm",
+      "customerName": "Cov neeg siv khoom",
+      "mobile": "Txawb",
+      "alternateMobile": "Hloov mobile",
+      "email": "Email",
+      "project": "Qhov project",
+      "reason": "Lawv yog vim li cas",
+      "registration": "Kev sau npe",
+      "registeredAt": "Sau npe rau",
+      "referral": "Kev xa mus",
+      "heldMissing": "Nrhiav tsis tau daim ntawv tuav pov hwm.",
+      "resolutionTitle": "Kev txiav txim siab",
+      "outcome": "Qhov tshwm sim",
+      "note": "Nco tseg",
+      "decidedBy": "Txiav txim siab los ntawm",
+      "decidedAt": "Txiav txim siab rau",
+      "newRegistration": "Kev sau npe tshiab",
+      "decideTitle": "Txiav txim siab qhov kev tsis sib haum xeeb no",
+      "noteLabel": "Nco ntsoov piav qhia qhov kev txiav txim siab (yuav tsum tau)",
+      "noteRequired": "Sau ntawv los txiav txim.",
+      "uphold": "Txhawb nqa",
+      "overturn": "Hla",
+      "upholdEffect": "{{holder}} khaws cov neeg siv khoom. Qhov kev tsis sib haum xeeb raug kaw thiab tsis muaj dab tsi hloov pauv.",
+      "overturnEffect": "{{holder}} 's duplicate tiv thaiv xaus tam sim no thiab cov neeg siv khoom tau sau npe rau {{partner}} raws li kev sau npe tshiab.",
+      "heldBookedHelp": "Cov neeg siv khoom no tau booked los ntawm tus tswv tam sim no. Ncua tseg qhov booking ua ntej (Admin Override ntawm kev sau npe), ces tig rov qab:",
+      "confirmTitle": "Koj puas paub tseeb?",
+      "confirmUphold": "Yog, txhawb nqa",
+      "confirmOverturn": "Yog, overturn",
+      "back": "Rov qab mus rau Kev Sib Tham"
+    }
   }
 }

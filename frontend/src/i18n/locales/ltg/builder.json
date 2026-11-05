@@ -30,7 +30,8 @@
       "registered": "Registrēts ."
     },
     "booked": "Rezervāts",
-    "empty": "Vēļ nav nūruodejumu."
+    "empty": "Vēļ nav nūruodejumu.",
+    "bookingCancelled": "Rezervaceja atcalta ."
   },
   "detail": {
     "customer": "Klients",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Rezervaceja apstyprynuota.",
       "accepted": "Nūsyutejums pījimts.",
-      "rejected": "Nūsyutejums nūraideits."
+      "rejected": "Nūsyutejums nūraideits.",
+      "bookingCancelled": "Rezervaceja atcalta."
     },
-    "backToReferrals": "Atpakaļ iz nūruodem ."
+    "backToReferrals": "Atpakaļ iz nūruodem .",
+    "bookingCancelled": "Rezervaceja atcalta .",
+    "cancelBooking": "Atceļt rezervaceju",
+    "cancelReasonLabel": "Īmeslis atceļšonai (paruodeits partnerim) * .",
+    "cancelBookingHint": "Darbeibys eipašumtīseibys īt atpakaļ partnerim i juo komisejis tīseibys teik atcaltys. Vadeituoju var rezervēt otkon vāluok.",
+    "cancelBookingConfirm": "Atceļt rezervaceju ."
   },
   "history": {
     "title": "Viesture",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Komisejis atbiļsteiba izveiduota .",
       "HANDOVER_COMPLETED": "Nūdūšona pabeigta .",
       "ADMIN_PROTECTION_RELEASED": "Admins izlaide dubliejumu aizsardzeibu agri. Īmeslis: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admins puordaleja registraceju nu {{from}} iz {{to}} . Īmeslis: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admins puordaleja registraceju nu {{from}} iz {{to}} . Īmeslis: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "100 doc#1281 Cyta partnera registracejis mieginuojums tyka nūraideits .",
+      "BOOKING_CANCELLED": "Rezervaceja atcalta. Īmeslis: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "100 doc#1281 Darbeibys eipašumtīseibys atgrīztys partnerim .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "100 doc#1281 Komisejis atbiļsteiba atcalta ar rezervaceju .",
+      "COMMISSION_ELIGIBILITY_RESTORED": "100 doc#1281 Atjaunuota komisejis tīseibys jaunai rezervacejai ."
     }
   }
 }

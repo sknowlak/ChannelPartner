@@ -43,7 +43,9 @@
       "name": "Nagan",
       "city": "Siudad",
       "status": "Estado",
-      "actions": "Dagiti Aramiden"
+      "actions": "Dagiti Aramiden",
+      "protection": "Duplikado ti proteksion",
+      "matchOn": "Duplikado ti agtunos on"
     },
     "closeReferrals": "Serraan para kadagiti referral",
     "reopen": "Luktan manen",
@@ -55,6 +57,25 @@
       "add": "Add Project",
       "created": "Naparsua ti {{name}} ."
     },
-    "back": "Agsubli kadagiti Builders"
+    "back": "Agsubli kadagiti Builders",
+    "protection": {
+      "days_one": "{{count}} nga aldaw",
+      "days_other": "{{count}} nga aldaw",
+      "globalDays_one": "Sangalubongan a default ( {{count}} nga aldaw) .",
+      "globalDays_other": "Sangalubongan a default ( {{count}} nga aldaw) .",
+      "globalDefault": "Sangalubongan a default",
+      "placeholder": "Dagiti aldaw ti salaknib (empty = sangalubongan a default) .",
+      "saved": "Napabaro ti doble a salaknib para iti {{name}} .",
+      "hint": "Duplikado a proteksion: 1-3650 nga aldaw, wenno bay-an nga awan ti kargana tapno mausar ti sangalubongan a default manipud iti Settings. Ti panagbalbaliw ket agaplikar laeng kadagiti baro a panagrehistro - dagiti agdama ket pagtalinaedenda ti panagleppasda."
+    },
+    "matching": {
+      "global": "Sangalubongan a default",
+      "globalWith": "Sangalubongan a default ( {{fields}} ) .",
+      "mobile": "Numero ti mobile",
+      "email": "I-email",
+      "both": "Numero ti mobile + email",
+      "saved": "Napabaro ti doble a panagtunos para iti {{name}}",
+      "hint": "Ania dagiti detalye a mamagbalin iti dua a panagrehistro nga agpapada a kustomer para iti maysa a proyekto. Agaplikar dagiti panagbalbaliw kadagiti doble a tseke manipud ita; saan a maapektaran ti addan a proteksion."
+    }
   }
 }

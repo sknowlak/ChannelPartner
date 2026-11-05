@@ -43,7 +43,9 @@
       "name": "Nomo",
       "city": "Urbo",
       "status": "Statuso",
-      "actions": "Agoj"
+      "actions": "Agoj",
+      "protection": "Duobla protekto",
+      "matchOn": "Duplikatoj kongruas"
     },
     "closeReferrals": "Fermu por referencoj",
     "reopen": "Remalfermu",
@@ -55,6 +57,25 @@
       "add": "Aldonu Projekton",
       "created": "Kreita {{name}} ."
     },
-    "back": "Reen al Konstruistoj"
+    "back": "Reen al Konstruistoj",
+    "protection": {
+      "days_one": "{{count}} tagon",
+      "days_other": "{{count}} tagojn",
+      "globalDays_one": "Tutmonda defaŭlto ( {{count}} tago)",
+      "globalDays_other": "Tutmonda defaŭlto ( {{count}} tagoj)",
+      "globalDefault": "Tutmonda defaŭlto",
+      "placeholder": "Protektotagoj (malplena = tutmonda defaŭlta)",
+      "saved": "Duobla protekto ĝisdatigita por {{name}} .",
+      "hint": "Duobla protekto: 1-3650 tagoj, aŭ lasu malplena por uzi la tutmondan defaŭlton de Agordoj. Ŝanĝo validas nur por novaj registriĝoj - la ekzistantaj konservas sian eksvalidiĝon."
+    },
+    "matching": {
+      "global": "Tutmonda defaŭlto",
+      "globalWith": "Tutmonda defaŭlto ( {{fields}} )",
+      "mobile": "Poŝtelefona nombro",
+      "email": "Retpoŝto",
+      "both": "Poŝtelefono numero + retpoŝto",
+      "saved": "Duobla kongruo ĝisdatigita por {{name}}",
+      "hint": "Kiuj detaloj faras du registriĝojn la sama kliento por projekto. Ŝanĝoj validas por duplikataj ĉekoj ekde nun; ekzistanta protekto ne estas tuŝita."
+    }
   }
 }

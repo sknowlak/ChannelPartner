@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Ukulinga",
-    "PENDING": "Ukulolela"
+    "PENDING": "Ukulolela",
+    "CANCELLED": "Cakanshiwa"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Fumyeni ubucingililo bwapalana bwangu",
-    "REASSIGN_PARTNER": "Ukubweseshamo umulimo kuli umbi uo mulebomba nankwe"
+    "REASSIGN_PARTNER": "Ukubweseshamo umulimo kuli umbi uo mulebomba nankwe",
+    "CANCEL_BOOKING": "Ukukansha ukubuka"
   },
   "dataType": {
     "TEXT": "Ilembo",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Katungulula Umukalamba",
     "ADMIN": "Katungulula"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Cashininkishiwa",
+    "CANCELLED": "Cakanshiwa"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Icapeelwa",
+    "DISPUTED": "Ukukansana"
+  },
+  "disputeStatus": {
+    "OPEN": "Isula",
+    "UPHELD": "Icasuminishiwa",
+    "OVERTURNED": "Ukupilibulwa",
+    "WITHDRAWN": "Ukufumishiwapo"
   }
 }

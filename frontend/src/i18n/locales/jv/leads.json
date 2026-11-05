@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "dipesen",
-    "pending": "Ditunggu"
+    "pending": "Ditunggu",
+    "status": {
+      "CONFIRMED": "dipesen",
+      "CANCELLED": "Booking dibatalake"
+    }
   },
   "assign": {
     "unassigned": "Ora diutus",
@@ -58,7 +62,8 @@
   },
   "project": {
     "none": "Durung proyek (ora diarani)",
-    "notInList": "{{project}} (ora ana ing dhaptar proyek)"
+    "notInList": "{{project}} (ora ana ing dhaptar proyek)",
+    "protectionDays_other": "{{count}} -proteksi dina"
   },
   "journey": {
     "customer": "Pelanggan",
@@ -76,7 +81,14 @@
     "progressHistory": "Riwayat Kemajuan",
     "timesIn": "(wektu ing {{timezone}} )",
     "backToMyLeads": "Bali menyang My Leads",
-    "editLead": "Sunting Lead"
+    "editLead": "Sunting Lead",
+    "disputeBanner": "Mitra liyane wis mbantah kepemilikan pelanggan iki. Admin Leadrat lagi mriksa - pangayoman sampeyan tetep ana nganti dheweke mutusake.",
+    "booking": "Booking",
+    "commission": "Komisi",
+    "notBooked": "Ora dipesen",
+    "cancelledOn": "Batal tanggal {{date}} .",
+    "cancelReason": "Alesan: {{reason}}",
+    "cancelledHint": "Pembina mbatalake pesenan - kepemilikan operasional bali karo sampeyan lan hak komisi dibatalake. Iki dibalèkaké yen timbal dipesen maneh."
   },
   "referral": {
     "NOT_REFERRED": "Ora diarani (ora ana proyek)",
@@ -158,7 +170,17 @@
       "REFERRAL_ACCEPTED": "Pembina nampa rujukan kasebut",
       "REFERRAL_REJECTED": "Pembina nolak rujukan kasebut. Alesan: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin ngeculake proteksi duplikat luwih awal. Alesan: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin ngganti registrasi saka {{from}} menyang {{to}} . Alesan: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin ngganti registrasi saka {{from}} menyang {{to}} . Alesan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Upaya registrasi duplikat dening mitra liya ditolak",
+      "BOOKING_CANCELLED": "Booking dibatalake. Alesan: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Kepemilikan operasional bali menyang mitra",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kelayakan komisi dibatalake kanthi pesenan",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kelayakan Komisi dibalekake kanggo pesenan anyar",
+      "OWNERSHIP_DISPUTE_RAISED": "Mitra liyane mbantah kepemilikan pelanggan iki - admin Leadrat bakal mriksa",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Sengketa kepemilikan ing pelanggan iki ditarik - kepemilikan sampeyan ora owah",
+      "OWNERSHIP_DISPUTE_UPHELD": "Sengketa kepemilikan ing pelanggan iki dideleng - kepemilikan sampeyan wis dikonfirmasi",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Ndhaptar sawise sengketa kepemilikan sampeyan diputusake kanggo sampeyan. Cathetan: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Perlindhungan rampung: perselisihan kepemilikan diputusake kanggo mitra liyane. Cathetan: {{note}}"
     }
   },
   "columnsPanel": {
@@ -182,5 +204,100 @@
     "INVALID_FOR_COUNTRY": "Nomer telpon iki ora valid kanggo {{country}} .",
     "COUNTRY_MISMATCH": "Mangga pilih kode negara sing bener.",
     "NOT_MOBILE": "Mangga ketik nomer seluler, dudu landline."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisi layak",
+      "PENDING": "Komisi ditundha",
+      "CANCELLED": "Komisi dibatalake"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Disebabake kanggo sampeyan",
+      "DISPUTED": "Atribusi regejegan"
+    }
+  },
+  "result": {
+    "none": "Ora ana asil registrasi sing ditampilake. Ndhaptar timbal dhisik.",
+    "acceptedTitle": "Lead kadhaftar",
+    "rejectedTitle": "Lead ora kadhaptar",
+    "protectionWindow": "Jendhela pangayoman",
+    "protectedUntil": "Dilindungi Nganti",
+    "openLead": "Bukak Lead",
+    "addAnother": "Tambah Lead Liyane",
+    "duplicate": "Duplikat - wis dilindhungi",
+    "duplicateHint": "Pelanggan iki wis dilindhungi kanggo proyek iki kanthi registrasi liyane, saengga ora bisa didaftar kanggo sampeyan.",
+    "existingProtectedUntil": "Registrasi sing ana dilindhungi nganti"
+  },
+  "disputes": {
+    "title": "Sengketa Kula",
+    "intro": "Sengketa kepemilikan sing sampeyan lakoni kanggo pelanggan sing ditolak minangka duplikat. A admin Leadrat mriksa saben.",
+    "empty": "Sampeyan wis ora mimpin sembarang musuhan. Yen pelanggan sing digawa mlebu ditolak minangka duplikat, sampeyan bisa mbantah saka asil registrasi.",
+    "columns": {
+      "dispute": "regejegan",
+      "reason": "Alasanmu",
+      "outcome": "Asil"
+    },
+    "status": {
+      "OPEN": "Ing review",
+      "UPHELD": "Ora ing sih sampeyan",
+      "OVERTURNED": "Mutusaké ing sih",
+      "WITHDRAWN": "Ditarik"
+    },
+    "awaitingReview": "Nunggu review admin",
+    "openNewLead": "Bukak timbalmu {{id}}",
+    "withdraw": "mundur",
+    "withdrawConfirm": "Mbatalake regejegan sampeyan kanggo {{name}} ? Kepemilikan saiki tetep kaya saiki.",
+    "raise": "Sengketa kepemilikan",
+    "raiseTitle": "Sengketa kepemilikan",
+    "raiseHint": "Yen pelanggan iki teka dhisik, jelasake apa sebabe. A admin Leadrat bakal maneh; yen padha arep ing sih, timbal kadhaftar kanggo sampeyan.",
+    "reasonLabel": "Napa pelanggan iki duweke sampeyan?",
+    "reasonMin_other": "Paling ora {{count}} karakter.",
+    "submit": "Kirim Sengketa",
+    "notProtected": "Ora ana sing duwe pangayoman marang pelanggan iki kanggo proyek iki maneh - sampeyan bisa ndhaptar pimpinan saiki.",
+    "raised": "Sengketa {{id}} dikirim kanggo ditinjau.",
+    "viewAll": "Deleng regejeganku"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Periode",
+    "lastDays_other": "{{count}} dina",
+    "emptyTitle": "Sugeng rawuh! Sampeyan durung duwe timbal.",
+    "emptyHint": "Ndhaptar timbal pisanan sampeyan - saluran pipa, pesenan lan tenggat wektu perlindungan bakal ditampilake ing kene.",
+    "tiles": {
+      "leads": "Total timbal",
+      "newInPeriod_other": "{{count}} anyar ing periode iki",
+      "accepted": "Ditampa",
+      "booked": "dipesen",
+      "bookedInPeriod_other": "{{count}} dipesen ing wektu iki",
+      "conversion": "Konversi",
+      "conversionHint": "Pesen timbal minangka bagean saka timbal sing ditampa",
+      "protectedNow": "dilindhungi saiki",
+      "expiringSoon_other": "Proteksi pungkasan ing {{count}} dina",
+      "disputedNow": "Dibantah wong liya",
+      "disputedNowHint": "Pimpinan sampeyan kanthi regejegan kepemilikan mbukak saka partner liyane",
+      "commissionEligible": "Komisi layak",
+      "commissionCancelled_other": "{{count}} dibatalake"
+    },
+    "chart": {
+      "title_other": "Registrasi lan pesenan saben dina - {{count}} dina pungkasan",
+      "registrations": "Pendhaftaran",
+      "bookings": "pesenan"
+    },
+    "byStage": "Mimpin miturut status",
+    "bySource": "Mimpin dening sumber",
+    "byReferral": "Mimpin kanthi status rujukan",
+    "myDisputes": "Regejegan sampeyan wungu",
+    "noDisputes": "Ora ana regejegan.",
+    "unknown": "Ora disetel",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM eksternal (simulasi)",
+      "PARTNER_CRM": "Ditambahake dening tim sampeyan",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integrasi",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_other": "Proteksi kadaluwarsa ing {{count}} dina sabanjure",
+    "expiringEmpty": "Ora ana timbal sing ilang perlindungan ing jendhela iki."
   }
 }

@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Имеющий право",
-    "PENDING": "В ожидании"
+    "PENDING": "В ожидании",
+    "CANCELLED": "Отменено"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Снимите защиту от дублирования заранее",
-    "REASSIGN_PARTNER": "Переназначить другому партнеру"
+    "REASSIGN_PARTNER": "Переназначить другому партнеру",
+    "CANCEL_BOOKING": "Отменить бронирование"
   },
   "dataType": {
     "TEXT": "Текст",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Суперадминистратор",
     "ADMIN": "Админ"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Подтвержденный",
+    "CANCELLED": "Отменено"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Приписывается",
+    "DISPUTED": "Оспаривается"
+  },
+  "disputeStatus": {
+    "OPEN": "Открыть",
+    "UPHELD": "Поддержано",
+    "OVERTURNED": "Перевернутый",
+    "WITHDRAWN": "снято"
   }
 }

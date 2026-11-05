@@ -49,8 +49,73 @@
       "newPartnerId": "ID hoa hou",
       "reason": "Ke kumu (pono)",
       "apply": "E noi i ka Override",
-      "applying": "Ke noi nei..."
+      "applying": "Ke noi nei...",
+      "cancelBookingHint": "ʻO ka hoʻopau ʻana e hōʻailona i ka hoʻopaʻa ʻana a me kāna kōmike i hoʻopau ʻia, e hoʻihoʻi i ka mana hana i ka hoa, a e ʻae i ka mea kūkulu hale e kākau hou i kēia alakaʻi.",
+      "cancelBookingConfirm": "Hoʻopau i kēia hoʻopaʻa ʻana? Hoʻopau pū ʻia kāna komisina. Hoʻopaʻa ʻia kēia me kou inoa a me kou kumu."
     },
-    "timelineTitle": "Manawa Manawa (keia kakau inoa)"
+    "timelineTitle": "Manawa Manawa (keia kakau inoa)",
+    "bookingStatus": "Kūlana hoʻopaʻa",
+    "commissionAttribution": "Hoʻohui Komisina",
+    "disputeOpen": "Wehe ʻia kahi hoʻopaʻapaʻa kuleana ma kēia mea kūʻai - ʻōlelo kekahi hoa pili iā lākou. Hoʻoholo ʻia ma ka ʻaoʻao Disputes.",
+    "viewDisputes": "Nānā i nā hoʻopaʻapaʻa",
+    "cancellation": {
+      "title": "Hoʻopau ʻia ka hoʻopaʻa ʻana",
+      "hint": "Hoʻopau ʻia ka hoʻopaʻa ʻana a me kāna komisina; Ua hoʻi ka mana o ka hana me ka hoa a hiki i ka mea kūkulu hale ke puke hou i kēia alakaʻi.",
+      "at": "Hoʻopau ʻia ma",
+      "by": "Hoʻopau ʻia e",
+      "reason": "Ke kumu"
+    }
+  },
+  "disputes": {
+    "title": "Hoʻopaʻapaʻa kuleana",
+    "hint": "Hiki ke hoʻopaʻapaʻa i ka mea nona ka mea kūʻai aku i kahi hoa i hōʻole ʻia kona inoa ʻana ma ke ʻano he kope. E nānā i nā ʻaoʻao ʻelua a hoʻoholo.",
+    "statusFilter": "Kūlana hoʻopaʻapaʻa",
+    "allStatuses": "Nā kūlana a pau",
+    "empty": "ʻAʻohe hoʻopaʻapaʻa me kēia kūlana.",
+    "columns": {
+      "dispute": "Hoʻopaʻapaʻa",
+      "customer": "Mea kūʻai",
+      "project": "Papahana",
+      "raisedBy": "Hāpai ʻia e",
+      "heldBy": "Mea nona kēia manawa",
+      "status": "Kūlana",
+      "raisedAt": "Hāpai ʻia ma"
+    },
+    "detail": {
+      "title": "Hoʻopaʻapaʻa {{id}}",
+      "raisedOn": "Hāpai ʻia {{date}}",
+      "raisingTitle": "Hāpai ʻia e",
+      "holderTitle": "Mea nona kēia manawa",
+      "partner": "hoa",
+      "raisedBy": "Waihoia e",
+      "customerName": "Mea kūʻai",
+      "mobile": "Mobile",
+      "alternateMobile": "Paʻa paʻa lima ʻē aʻe",
+      "email": "leka uila",
+      "project": "Papahana",
+      "reason": "ʻO kā lākou kumu",
+      "registration": "Kakau inoa",
+      "registeredAt": "Kakauia ma",
+      "referral": "Hoʻopuka",
+      "heldMissing": "ʻAʻole i loaʻa ka inoa i mālama ʻia.",
+      "resolutionTitle": "Hoʻoholo",
+      "outcome": "Ka hopena",
+      "note": "Nānā",
+      "decidedBy": "Hoʻoholo ʻia e",
+      "decidedAt": "Hoʻoholo i ka",
+      "newRegistration": "Kakau inoa hou",
+      "decideTitle": "E hoʻoholo i kēia hoʻopaʻapaʻa",
+      "noteLabel": "Hoʻomaopopo e wehewehe ana i ka hoʻoholo (pono)",
+      "noteRequired": "E kākau i palapala e hoʻoholo ai.",
+      "uphold": "E kākoʻo",
+      "overturn": "Kahuli",
+      "upholdEffect": "Mālama ʻo {{holder}} i ka mea kūʻai. Ua pani ʻia ka hoʻopaʻapaʻa a ʻaʻohe mea ʻē aʻe e hoʻololi.",
+      "overturnEffect": "Hoʻopau ʻia ko {{holder}} pale lua i kēia manawa a ua hoʻopaʻa inoa ʻia ka mea kūʻai no {{partner}} ma ke ʻano he hoʻopaʻa inoa hou.",
+      "heldBookedHelp": "Hoʻopaʻa ʻia kēia mea kūʻai ma o ka mea nona kēia manawa. Hoʻopau mua i kēlā hoʻopaʻa inoa (Manaʻo ʻo Admin ma ke kākau inoa ʻana), a laila hoʻohuli:",
+      "confirmTitle": "He ʻoiaʻiʻo kēnā?",
+      "confirmUphold": "ʻAe, kākoʻo",
+      "confirmOverturn": "ʻAe, hoʻokahuli",
+      "back": "Hoʻi i nā hoʻopaʻapaʻa"
+    }
   }
 }

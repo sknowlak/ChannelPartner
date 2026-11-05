@@ -43,7 +43,9 @@
       "name": "Izina",
       "city": "Dolopo",
       "status": "Chiimo",
-      "actions": "Michito"
+      "actions": "Michito",
+      "protection": "Kukwabililwa ziindi zyobile",
+      "matchOn": "Zikozyano zileendelana a"
     },
     "closeReferrals": "Jala kuti bantu batumwa",
     "reopen": "Jula alimwi",
@@ -55,6 +57,25 @@
       "add": "Koyungizya pulojekiti",
       "created": "Wakalenga {{name}} ."
     },
-    "back": "Kujokela kuli Basikuyaka"
+    "back": "Kujokela kuli Basikuyaka",
+    "protection": {
+      "days_one": "{{count}} buzuba",
+      "days_other": "{{count}} mazuba",
+      "globalDays_one": "Chiindi choonse ( {{count}} buzuba)",
+      "globalDays_other": "Zyakachitika munyika yoonse ( {{count}} mazuba)",
+      "globalDefault": "Zyakachitika munyika yoonse",
+      "placeholder": "Mazuba aakukwabilila (atakwe chintu = nyika yoonse mbwiizulwa)",
+      "saved": "Kukwabililwa kwakukozyanisya kwakacincwa kuli {{name}} .",
+      "hint": "Kukwabililwa ziindi zyobile: mazuba aali 1-3650, naa kusiya kakunyina chintu kuti ubelesye nzila yanyika yoonse kuzwa kuZibambidwe. Kuchincha kulabeleka buyo kulibaabo bapya - aabo baliwo balabamba chiindi chabo."
+    },
+    "matching": {
+      "global": "Zyakachitika munyika yoonse",
+      "globalWith": "Zyakachitika munyika yoonse ( {{fields}} )",
+      "mobile": "Namba yafooni",
+      "email": "Imeyili",
+      "both": "Namba yafooni + imeyili",
+      "saved": "Kweezyanisya kwakabambululwa kwa {{name}}",
+      "hint": "Ino ntwaambo nzi tupa kuti kulilembya bobile babe kasitoma omwe wapulojekiti. Kuchincha kulabeleka kuma cheki aabili kuzwa lino; lukwabililo luliwo talujatikizyigwi pe."
+    }
   }
 }

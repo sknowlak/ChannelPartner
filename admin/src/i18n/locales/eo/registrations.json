@@ -49,8 +49,73 @@
       "newPartnerId": "Nova Partnero ID",
       "reason": "Kialo (postulata)",
       "apply": "Apliki Override",
-      "applying": "Aplikante..."
+      "applying": "Aplikante...",
+      "cancelBookingHint": "Nuligo markas la rezervon kaj ĝian komisionon kiel nuligitaj, resendas funkcian proprieton al la partnero, kaj lasas la konstruanto rezervi ĉi tiun antaŭecon denove.",
+      "cancelBookingConfirm": "Ĉu nuligi ĉi tiun rezervon? Ĝia komisiono ankaŭ estas nuligita. Ĉi tio estas registrita kun via nomo kaj kialo."
     },
-    "timelineTitle": "Kontrola Templinio (ĉi tiu registrado)"
+    "timelineTitle": "Kontrola Templinio (ĉi tiu registrado)",
+    "bookingStatus": "Rezerva Statuso",
+    "commissionAttribution": "Komisiono Atribuo",
+    "disputeOpen": "Pri tiu kliento estas malfermita disputo pri proprieto - alia partnero diras, ke ĝi estas ilia. Estas decidite sur la paĝo Kvereloj.",
+    "viewDisputes": "Rigardu disputojn",
+    "cancellation": {
+      "title": "Rezervado nuligita",
+      "hint": "La rezervo kaj ĝia komisiono estas nuligitaj; funkcia proprieto revenis kun la partnero kaj la konstruanto povas rezervi ĉi tiun plumbon denove.",
+      "at": "Nuligite je",
+      "by": "Nuligite de",
+      "reason": "Kialo"
+    }
+  },
+  "disputes": {
+    "title": "Disputoj pri Posedo",
+    "hint": "Partnero, kies registriĝo estis malakceptita kiel duplikato, povas disputi, kiu posedas la klienton. Revizu ambaŭ flankojn kaj decidu.",
+    "statusFilter": "Disputo statuso",
+    "allStatuses": "Ĉiuj statusoj",
+    "empty": "Neniuj disputoj kun ĉi tiu statuso.",
+    "columns": {
+      "dispute": "Disputo",
+      "customer": "Kliento",
+      "project": "Projekto",
+      "raisedBy": "Levita de",
+      "heldBy": "Nuna posedanto",
+      "status": "Statuso",
+      "raisedAt": "Levita sur"
+    },
+    "detail": {
+      "title": "Disputo {{id}}",
+      "raisedOn": "Levita {{date}}",
+      "raisingTitle": "Levita de",
+      "holderTitle": "Nuna posedanto",
+      "partner": "Partnero",
+      "raisedBy": "Submetita de",
+      "customerName": "Kliento",
+      "mobile": "Poŝtelefono",
+      "alternateMobile": "Alterna poŝtelefono",
+      "email": "Retpoŝto",
+      "project": "Projekto",
+      "reason": "Ilia kialo",
+      "registration": "Registrado",
+      "registeredAt": "Registrita je",
+      "referral": "Referenco",
+      "heldMissing": "La okazigita registriĝo ne estis trovita.",
+      "resolutionTitle": "Decido",
+      "outcome": "Rezulto",
+      "note": "Notu",
+      "decidedBy": "Decidite de",
+      "decidedAt": "Decidis pri",
+      "newRegistration": "Nova registriĝo",
+      "decideTitle": "Decidu ĉi tiun disputon",
+      "noteLabel": "Noto klarigante la decidon (postulata)",
+      "noteRequired": "Skribu noton por decidi.",
+      "uphold": "Subtenu",
+      "overturn": "renverso",
+      "upholdEffect": "{{holder}} konservas la klienton. La disputo estas fermita kaj nenio alia ŝanĝiĝas.",
+      "overturnEffect": "La duplikata protekto de {{holder}} finiĝas nun kaj la kliento estas registrita por {{partner}} kiel nova registriĝo.",
+      "heldBookedHelp": "Ĉi tiu kliento estas rezervita per la nuna posedanto. Unue nuligi tiun rezervon (Administranto Anstataŭigi dum la registrado), poste nuligi:",
+      "confirmTitle": "Ĉu vi certas?",
+      "confirmUphold": "Jes, subtenu",
+      "confirmOverturn": "Jes, renversu",
+      "back": "Reen al Disputoj"
+    }
   }
 }

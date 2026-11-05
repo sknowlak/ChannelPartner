@@ -30,7 +30,8 @@
       "registered": "Bo me sonikisaka zina"
     },
     "booked": "Bo me bumba yo",
-    "empty": "Ba referansi kele ntete ve."
+    "empty": "Ba referansi kele ntete ve.",
+    "bookingCancelled": "Bo me katula reservation"
   },
   "detail": {
     "customer": "Kiliya",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Bo me ndima reservation.",
       "accepted": "Bo ke ndimaka kutinda muntu.",
-      "rejected": "Bo me buya kutindila yandi."
+      "rejected": "Bo me buya kutindila yandi.",
+      "bookingCancelled": "Bo me katula reservation."
     },
-    "backToReferrals": "Kuvutuka na Bantu ya Bo Me Tinda"
+    "backToReferrals": "Kuvutuka na Bantu ya Bo Me Tinda",
+    "bookingCancelled": "Bo me katula reservation",
+    "cancelBooking": "Kukatula Reservation",
+    "cancelReasonLabel": "Kikuma ya kukatula (kumonisa na nduku) * .",
+    "cancelBookingHint": "Kimfumu ya bisalu ke vutuka na nduku mpe nswa na bau ya kubaka kisalu ke katuka. Bo lenda bumba diaka bantu yina na nima.",
+    "cancelBookingConfirm": "Kukatula reservation"
   },
   "history": {
     "title": "Disolo",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kufwana ya komite me salama",
       "HANDOVER_COMPLETED": "Kupesa me mana",
       "ADMIN_PROTECTION_RELEASED": "Admin basisaka lutaninu zole na ntwala. Kikuma: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Mfumu me pesa diaka zina katuka na {{from}} tii na {{to}} . Kikuma: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Mfumu me pesa diaka zina katuka na {{from}} tii na {{to}} . Kikuma: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Bo buyaka kumeka ya kusonikisa zina ya nduku ya nkaka .",
+      "BOOKING_CANCELLED": "Bo me katula reservation. Kikuma: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Kimfumu ya bisalu me vutuka na nduku .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Bo me katulaka nswa ya kubaka komite ti réservation",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Bo vutulaka nswa ya komite sambu na reservation ya mpa"
     }
   }
 }

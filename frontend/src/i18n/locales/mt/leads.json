@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Ibbukkjat",
-    "pending": "Pendenti"
+    "pending": "Pendenti",
+    "status": {
+      "CONFIRMED": "Ibbukkjat",
+      "CANCELLED": "Booking ikkanċellat"
+    }
   },
   "assign": {
     "unassigned": "Mhux assenjat",
@@ -58,7 +62,12 @@
   },
   "project": {
     "none": "Għadu l-ebda proġett (mhux referut)",
-    "notInList": "{{project}} (mhux fil-lista tal-proġetti)"
+    "notInList": "{{project}} (mhux fil-lista tal-proġetti)",
+    "protectionDays_one": "{{count}} -jum protezzjoni",
+    "protectionDays_two": "{{count}} -jum protezzjoni",
+    "protectionDays_few": "{{count}} -jum protezzjoni",
+    "protectionDays_many": "{{count}} -jum protezzjoni",
+    "protectionDays_other": "{{count}} -jum protezzjoni"
   },
   "journey": {
     "customer": "Klijent",
@@ -76,7 +85,14 @@
     "progressHistory": "Storja tal-Progress",
     "timesIn": "(ħinijiet f' {{timezone}} )",
     "backToMyLeads": "Lura għal My Leads",
-    "editLead": "Edit Ċomb"
+    "editLead": "Edit Ċomb",
+    "disputeBanner": "Imsieħeb ieħor ikkontesta s-sjieda ta' dan il-klijent. Amministratur Leadrat qed jirrevedih - il-protezzjoni tiegħek tibqa' f'postha sakemm jiddeċiedu.",
+    "booking": "Booking",
+    "commission": "Kummissjoni",
+    "notBooked": "Mhux ibbukkjat",
+    "cancelledOn": "Ikkanċellat fi {{date}} .",
+    "cancelReason": "Raġuni: {{reason}}",
+    "cancelledHint": "Il-bennej ikkanċella l-prenotazzjoni - is-sjieda operattiva hija lura miegħek u l-eliġibilità tal-kummissjoni hija kkanċellata. Jiġi restawrat jekk iċ-ċomb jerġa’ jiġi bbukkjat."
   },
   "referral": {
     "NOT_REFERRED": "Mhux referut (l-ebda proġett)",
@@ -166,7 +182,17 @@
       "REFERRAL_ACCEPTED": "Il-bennej aċċetta r-referenza",
       "REFERRAL_REJECTED": "Il-bennej ċaħad ir-riferiment. Raġuni: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "L-amministratur ħareġ protezzjoni duplikata kmieni. Raġuni: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "L-amministratur ta reġistrazzjoni mill-ġdid minn {{from}} għal {{to}} . Raġuni: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "L-amministratur ta reġistrazzjoni mill-ġdid minn {{from}} għal {{to}} . Raġuni: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Attentat ta' reġistrazzjoni doppja minn sieħeb ieħor ġie miċħud",
+      "BOOKING_CANCELLED": "Booking ikkanċellat. Raġuni: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Is-sjieda operattiva rritornata lis-sieħeb",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Eliġibilità tal-Kummissjoni kkanċellata mal-prenotazzjoni",
+      "COMMISSION_ELIGIBILITY_RESTORED": "L-eliġibilità tal-Kummissjoni ġiet restawrata għall-prenotazzjoni l-ġdida",
+      "OWNERSHIP_DISPUTE_RAISED": "Imsieħeb ieħor ikkontesta s-sjieda ta' dan il-klijent - admin ta' Leadrat se jirrevedih",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "It-tilwima dwar is-sjieda dwar dan il-klijent ġiet irtirata - is-sjieda tiegħek ma nbidlitx",
+      "OWNERSHIP_DISPUTE_UPHELD": "It-tilwima dwar is-sjieda dwar dan il-klijent ġiet riveduta - is-sjieda tiegħek hija kkonfermata",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Irreġistrat wara li t-tilwima dwar is-sjieda tiegħek ġiet deċiża favur tiegħek. Nota: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Il-protezzjoni ntemmet: tilwima dwar is-sjieda ġiet deċiża favur sieħeb ieħor. Nota: {{note}}"
     }
   },
   "columnsPanel": {
@@ -190,5 +216,132 @@
     "INVALID_FOR_COUNTRY": "Dan in-numru tat-telefon mhuwiex validu għal {{country}} .",
     "COUNTRY_MISMATCH": "Jekk jogħġbok agħżel il-kodiċi tal-pajjiż korrett.",
     "NOT_MOBILE": "Jekk jogħġbok daħħal numru tal-mowbajl, mhux linja fissa."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Kummissjoni eliġibbli",
+      "PENDING": "Kummissjoni pendenti",
+      "CANCELLED": "Kummissjoni kkanċellata"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Attribwit lilek",
+      "DISPUTED": "Attribuzzjoni kkontestata"
+    }
+  },
+  "result": {
+    "none": "Ebda riżultat tar-reġistrazzjoni x'juri. Irreġistra ċomb l-ewwel.",
+    "acceptedTitle": "Iċ-ċomb irreġistrat",
+    "rejectedTitle": "Iċ-ċomb mhux irreġistrat",
+    "protectionWindow": "Tieqa tal-Protezzjoni",
+    "protectedUntil": "Protetti Sakemm",
+    "openLead": "Miftuħ Ċomb",
+    "addAnother": "Żid Ċomb Ieħor",
+    "duplicate": "Duplikat - diġà protett",
+    "duplicateHint": "Dan il-klijent huwa diġà protett għal dan il-proġett b'reġistrazzjoni oħra, għalhekk ma setax jiġi rreġistrat għalik.",
+    "existingProtectedUntil": "Reġistrazzjoni eżistenti protetta sa"
+  },
+  "disputes": {
+    "title": "Tilwim Tiegħi",
+    "intro": "Tilwim dwar is-sjieda li qajjt għal klijenti li ġew rifjutati bħala duplikati. Amministratur Leadrat jirrevedi kull wieħed.",
+    "empty": "Inti ma qajjtu ebda tilwim. Jekk klijent li daħħalt jiġi rrifjutat bħala duplikat, tista' tikkontestah mir-riżultat tar-reġistrazzjoni.",
+    "columns": {
+      "dispute": "Tilwima",
+      "reason": "Ir-raġuni tiegħek",
+      "outcome": "Riżultat"
+    },
+    "status": {
+      "OPEN": "Taħt reviżjoni",
+      "UPHELD": "Mhux favur tiegħek",
+      "OVERTURNED": "Iddeċieda favur tiegħek",
+      "WITHDRAWN": "Irtirat"
+    },
+    "awaitingReview": "Stennija għar-reviżjoni tal-amministratur",
+    "openNewLead": "Iftaħ iċ-ċomb tiegħek {{id}}",
+    "withdraw": "Irtira",
+    "withdrawConfirm": "Irtira t-tilwima tiegħek għal {{name}} ? Is-sjieda attwali tibqa' kif inhi.",
+    "raise": "Sjieda tat-tilwim",
+    "raiseTitle": "Sjieda tat-tilwim",
+    "raiseHint": "Jekk dan il-klijent ġie għandek l-ewwel, spjega għaliex. Amministratur Leadrat se jirrevedih; jekk jiddeċiedu favur tiegħek, iċ-ċomb jiġi rreġistrat għalik.",
+    "reasonLabel": "Għaliex dan il-klijent huwa tiegħek?",
+    "reasonMin_one": "Mill-inqas {{count}} karattru.",
+    "reasonMin_two": "Mill-inqas {{count}} karattri.",
+    "reasonMin_few": "Mill-inqas {{count}} karattri.",
+    "reasonMin_many": "Mill-inqas {{count}} karattri.",
+    "reasonMin_other": "Mill-inqas {{count}} karattri.",
+    "submit": "Ibgħat Tilwima",
+    "notProtected": "Ħadd ma għandu protezzjoni fuq dan il-klijent għal dan il-proġett aktar - tista 'tirreġistra l-ċomb issa.",
+    "raised": "Tilwima {{id}} mibgħuta għal reviżjoni.",
+    "viewAll": "Ara t-tilwim tiegħi"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Perjodu",
+    "lastDays_one": "{{count}} jum",
+    "lastDays_two": "{{count}} ijiem",
+    "lastDays_few": "{{count}} ijiem",
+    "lastDays_many": "{{count}} ijiem",
+    "lastDays_other": "{{count}} ijiem",
+    "emptyTitle": "Merħba! Għadek m'għandek l-ebda twassal.",
+    "emptyHint": "Irreġistra l-ewwel lead tiegħek - il-pipeline, il-prenotazzjonijiet u l-iskadenzi tal-protezzjoni tiegħek se jidhru hawn.",
+    "tiles": {
+      "leads": "Ċomb totali",
+      "newInPeriod_one": "{{count}} ġdid f'dan il-perjodu",
+      "newInPeriod_two": "{{count}} ġdid f'dan il-perjodu",
+      "newInPeriod_few": "{{count}} ġdid f'dan il-perjodu",
+      "newInPeriod_many": "{{count}} ġdid f'dan il-perjodu",
+      "newInPeriod_other": "{{count}} ġdid f'dan il-perjodu",
+      "accepted": "Aċċettati",
+      "booked": "Ibbukkjat",
+      "bookedInPeriod_one": "{{count}} ibbukkjati f'dan il-perjodu",
+      "bookedInPeriod_two": "{{count}} ibbukkjati f'dan il-perjodu",
+      "bookedInPeriod_few": "{{count}} ibbukkjati f'dan il-perjodu",
+      "bookedInPeriod_many": "{{count}} ibbukkjati f'dan il-perjodu",
+      "bookedInPeriod_other": "{{count}} ibbukkjati f'dan il-perjodu",
+      "conversion": "Konverżjoni",
+      "conversionHint": "Leads ibbukkjati bħala sehem ta' leads aċċettati",
+      "protectedNow": "Protetti issa",
+      "expiringSoon_one": "Protezzjoni li tispiċċa fi {{count}} jum",
+      "expiringSoon_two": "Protezzjoni tispiċċa fi {{count}} ijiem",
+      "expiringSoon_few": "Protezzjoni tispiċċa fi {{count}} ijiem",
+      "expiringSoon_many": "Protezzjoni tispiċċa fi {{count}} ijiem",
+      "expiringSoon_other": "Protezzjoni tispiċċa fi {{count}} ijiem",
+      "disputedNow": "Kkontestat minn oħrajn",
+      "disputedNowHint": "Twassal tiegħek b'tilwima ta' sjieda miftuħa minn sieħeb ieħor",
+      "commissionEligible": "Kummissjoni eliġibbli",
+      "commissionCancelled_one": "{{count}} ikkanċellat",
+      "commissionCancelled_two": "{{count}} ikkanċellat",
+      "commissionCancelled_few": "{{count}} ikkanċellat",
+      "commissionCancelled_many": "{{count}} ikkanċellat",
+      "commissionCancelled_other": "{{count}} ikkanċellat"
+    },
+    "chart": {
+      "title_one": "Reġistrazzjonijiet u prenotazzjonijiet kuljum - l-aħħar {{count}} jum",
+      "title_two": "Reġistrazzjonijiet u prenotazzjonijiet kuljum - l-aħħar {{count}} ijiem",
+      "title_few": "Reġistrazzjonijiet u prenotazzjonijiet kuljum - l-aħħar {{count}} ijiem",
+      "title_many": "Reġistrazzjonijiet u prenotazzjonijiet kuljum - l-aħħar {{count}} ijiem",
+      "title_other": "Reġistrazzjonijiet u prenotazzjonijiet kuljum - l-aħħar {{count}} ijiem",
+      "registrations": "Reġistrazzjonijiet",
+      "bookings": "Prenotazzjonijiet"
+    },
+    "byStage": "Tmexxi skond l-istatus",
+    "bySource": "Tmexxi skond is-sors",
+    "byReferral": "Tmexxi bl-istatus ta' riferiment",
+    "myDisputes": "Tilwim li qajjimt",
+    "noDisputes": "Ma tqajmet ebda tilwim.",
+    "unknown": "Mhux issettjat",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM estern (simulat)",
+      "PARTNER_CRM": "Miżjud mit-tim tiegħek",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integrazzjoni",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Il-protezzjoni tiskadi fil- {{count}} jum li jmiss",
+    "expiringTitle_two": "Il-protezzjoni tiskadi fil- {{count}} ijiem li jmiss",
+    "expiringTitle_few": "Il-protezzjoni tiskadi fil- {{count}} ijiem li jmiss",
+    "expiringTitle_many": "Il-protezzjoni tiskadi fil- {{count}} ijiem li jmiss",
+    "expiringTitle_other": "Il-protezzjoni tiskadi fil- {{count}} ijiem li jmiss",
+    "expiringEmpty": "L-ebda ċomb ma jitlef il-protezzjoni tiegħu f'din it-tieqa."
   }
 }

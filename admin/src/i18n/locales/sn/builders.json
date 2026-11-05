@@ -43,7 +43,9 @@
       "name": "Zita",
       "city": "Guta",
       "status": "Status",
-      "actions": "Zviito"
+      "actions": "Zviito",
+      "protection": "Duplicate protection",
+      "matchOn": "Duplicates match on"
     },
     "closeReferrals": "Vhara kune zvinotumirwa",
     "reopen": "Vhura zvakare",
@@ -55,6 +57,25 @@
       "add": "Wedzera Project",
       "created": "Yakagadzirwa {{name}} ."
     },
-    "back": "Back to Builders"
+    "back": "Back to Builders",
+    "protection": {
+      "days_one": "{{count}} zuva",
+      "days_other": "{{count}} mazuva",
+      "globalDays_one": "Global default ( {{count}} zuva)",
+      "globalDays_other": "Global default ( {{count}} mazuva)",
+      "globalDefault": "Global default",
+      "placeholder": "Mazuva ekudzivirira (isina = global default)",
+      "saved": "Duplicate dziviriro yakagadziridzwa ye {{name}} .",
+      "hint": "Duplicate dziviriro: 1-3650 mazuva, kana kusiya isina chinhu kuti ushandise iyo yepasirese default kubva kuSettings. Shanduko inoshanda chete kune kunyoreswa kutsva - iripo inochengeta kupera kwayo."
+    },
+    "matching": {
+      "global": "Global default",
+      "globalWith": "Global default ( {{fields}} )",
+      "mobile": "Nharembozha nhamba",
+      "email": "Email",
+      "both": "Nharembozha + email",
+      "saved": "Duplicate yekuenzanisa yakagadziridzwa ye {{name}}",
+      "hint": "Ndedzipi ruzivo dzinoita kunyoreswa kuviri mutengi mumwechete wepurojekiti. Shanduko dzinoshanda kune dzakapetwa cheki kubva zvino zvichienda mberi; chengetedzo iripo haikanganisike."
+    }
   }
 }

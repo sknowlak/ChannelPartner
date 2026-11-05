@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Acï gɔ̈t",
-    "pending": "Ke cë bɛ̈n"
+    "pending": "Ke cë bɛ̈n",
+    "status": {
+      "CONFIRMED": "Acï gɔ̈t",
+      "CANCELLED": "Bɛ̈n acï cuɔp"
+    }
   },
   "assign": {
     "unassigned": "Kë këc gäm",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Acïn kë loi ëmɛn (acï tuɔɔc)",
-    "notInList": "{{project}} (acïn kë tɔ̈u në lööŋ ke luɔi yic)"
+    "notInList": "{{project}} (acïn kë tɔ̈u në lööŋ ke luɔi yic)",
+    "protectionDays_one": "{{count}} -köl gël",
+    "protectionDays_other": "{{count}} -köl gël"
   },
   "journey": {
     "customer": "Raan lui",
@@ -76,7 +82,14 @@
     "progressHistory": "Akököl de Lɔtueŋ",
     "timesIn": "(thaa në {{timezone}} )",
     "backToMyLeads": "Dhuk ciëën tënë Käkiɛ̈",
-    "editLead": "Cɔk nhom tueŋ"
+    "editLead": "Cɔk nhom tueŋ",
+    "disputeBanner": "Raan dɛ̈t ë määth acï teer në kë de raan ë ɣɔɔc kënë. Raan ë gël Leadrat ee ye tïŋ - gëldu abï rëër tëde agut cï bïk lööŋ tääu.",
+    "booking": "Kuɛ̈ny",
+    "commission": "Kuɔ̈t",
+    "notBooked": "Acï gɔ̈t",
+    "cancelledOn": "Acï puɔ̈l në {{date}} .",
+    "cancelReason": "Kë yenë ye looi: {{reason}}",
+    "cancelledHint": "Raan ë yïk acï ɣön ë tɔ̈ɔ̈u puɔ̈l - nhomlääu de luɔi acï dhuk tënë yïn ku lööŋ ke yök de wëu acï puɔ̈l. Aye dhuɔ̈k ciëën të cï lead bɛɛr book."
   },
   "referral": {
     "NOT_REFERRED": "Acï tuɔɔc (acïn kë loi)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Raan yïk acï kë cï tuɔɔc gam",
       "REFERRAL_REJECTED": "Raan ë yïk acï lööŋ cï keek tuɔɔc jäi. Kë yenë ye looi: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin acï gël de kä cï dhuɔ̈kic lac luɔ̈nybei. Kë yenë ye looi: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin acï gɛ̈tpiny bɛɛr gäm tënë {{from}} agut cï {{to}} . Kë yenë ye looi: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin acï gɛ̈tpiny bɛɛr gäm tënë {{from}} agut cï {{to}} . Kë yenë ye looi: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Thëm de gätpiny de rin në raan dɛ̈t cï mat acï jäi",
+      "BOOKING_CANCELLED": "Böoking acï puɔc. Kë yenë ye looi: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Këde luɔi acï dhuk tënë raan cï mat",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Löny de Akutnhom acï cuɔp wei kenë tɔ̈ɔ̈u",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Lööŋ ke Akutnhom acï dhuɔ̈kciëën tënë tɔ̈ɔ̈u yam",
+      "OWNERSHIP_DISPUTE_RAISED": "Raan dɛ̈t cï mat kenë yen acï jam në kë de raan ɣɔɔc kënë - raan mac Leadrat abï ye bɛɛr tïŋ",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Kë rɛɛc de këde raan ɣɔɔc acï nyaai - këdu acïï rot waar",
+      "OWNERSHIP_DISPUTE_UPHELD": "Kë teer në këde raan ɣɔɔc kënë acï caath - këdu acï yök",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Acï gätpiny të cïnë tɔŋdu de raan nɔŋ këdu thöl në luɔɔi në këdu yic. Tïŋ: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Gël acï thök: teer de këde raan acï tak në këde raan dɛ̈t cï mat kenë yen. Tïŋ: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Namba de telepun kënë acie luui tënë {{country}} .",
     "COUNTRY_MISMATCH": "Kuɛ̈ny ë thäät ë thäät ë thäät.",
     "NOT_MOBILE": "Yïn alëu ba namba de telepun tääu thïn, acie namba de telepun ë piny."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Akutnhom acï gam",
+      "PENDING": "Akutnhom atɔ̈u ke tiit",
+      "CANCELLED": "Akutnhom acï cuɔp wei"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Acï gäm yïn",
+      "DISPUTED": "Kë cï gäm acï teer"
+    }
+  },
+  "result": {
+    "none": "Acïn kë cï yök në gɛ̈tpiny yic bï nyuɔɔth. Gät ë lööŋ tueŋ.",
+    "acceptedTitle": "Lead acï gät rin",
+    "rejectedTitle": "Lead akëc gät rin",
+    "protectionWindow": "Aɣëër de Gël",
+    "protectedUntil": "Acï Gël Agut cï",
+    "openLead": "Liep thok",
+    "addAnother": "Tääu ë Raan dɛ̈t",
+    "duplicate": "Dhuɔ̈p - acï gël wënthɛɛr",
+    "duplicateHint": "Yen raan ë ɣɔɔc kënë acï tɔ̈ɔ̈u wënthɛɛr tënë luɔi kënë në gɛ̈tpiny dɛ̈t, këya acïï lëu bï gɛ̈tpiny tënë yïn.",
+    "existingProtectedUntil": "Gät de rin tɔ̈u acï gël agut cï 2019."
+  },
+  "disputes": {
+    "title": "Käkiɛ̈ ke teer",
+    "intro": "Käke tɔŋ ke nhomlääu cï keek jat nhial tënë kɔc ɣɔɔc cï keek jäi ë ke ye kä cï keek dhuɔ̈kpiny. Raan ë lööŋ Leadrat ë thëm ë tök.",
+    "empty": "Yïn acïn kë cï yïn thɔ̈ɔ̈r jat nhial. Na cï raan ɣɔɔc yïn bɛ̈i thïn kuec ke ye kë cï dhuɔ̈kpiny, yïn alëu ba ye thɔ̈ɔ̈r tënë kë cï yök në gɛ̈tpiny yic.",
+    "columns": {
+      "dispute": "Kä cë röt looi",
+      "reason": "Këdu",
+      "outcome": "Kë cë bɛ̈n"
+    },
+    "status": {
+      "OPEN": "Atɔ̈u ke cɛɛth",
+      "UPHELD": "Acïï tɔ̈ në këdu yic",
+      "OVERTURNED": "Acï tak në këdu",
+      "WITHDRAWN": "Acï nyaai"
+    },
+    "awaitingReview": "Tïït ë thëm de admin",
+    "openNewLead": "Liep thokdu {{id}}",
+    "withdraw": "Thɔŋ keɛr",
+    "withdrawConfirm": "Tääu ë tɔŋdu wei tënë {{name}} ? Raan ë tɔ̈ në yemɛɛn ee rëër cït tɛ̈n tɔ̈ yen thïn.",
+    "raise": "Teer de këde raan",
+    "raiseTitle": "Teer de këde raan",
+    "raiseHint": "Na cï raan ɣɔɔc kënë bɛ̈n tënë yïn tueŋ, ke yïn luel kë yen. Raan ë lööŋ Leadrat abï ye tïŋ; na cïk lööŋ tääu në këdu yic, ke lead acï gɔ̈t tënë yïn.",
+    "reasonLabel": "Yeŋö ye raan ɣɔɔc kënë ya këdu?",
+    "reasonMin_one": "Atɔ̈u {{count}} ë thäät.",
+    "reasonMin_other": "Atɔ̈u {{count}} ë wël.",
+    "submit": "Tuɔɔc kë teer",
+    "notProtected": "Acïn raan muk gël tënë raan ɣɔɔc kënë tënë luɔi kënë ëya dɛ̈t - yïn alëu ba raan ë lööŋ gɔ̈t ëmɛn.",
+    "raised": "Kë rɛɛc {{id}} acï tuɔɔc bï tïŋ.",
+    "viewAll": "Tïŋ käkiɛ̈ ke teer"
+  },
+  "dashboard": {
+    "title": "Kë ye nyuɔɔth",
+    "period": "Në ye thää ɣë",
+    "lastDays_one": "{{count}} aköl",
+    "lastDays_other": "{{count}} nïn",
+    "emptyTitle": "Taue thin! Yïn acïn lööŋ ëmɛn.",
+    "emptyHint": "Gät rin ë lööŋ tueŋ - piööcdu, gɛ̈tpiny ku thää ë gël abï nyuɔɔth ëtënë.",
+    "tiles": {
+      "leads": "Ciin de kɔc tɔ̈ tueŋ",
+      "newInPeriod_one": "{{count}} jöt në ye thaar kënë yic",
+      "newInPeriod_other": "{{count}} jöt në ye thaar kënë yic",
+      "accepted": "Acï gam",
+      "booked": "Acï gɔ̈t",
+      "bookedInPeriod_one": "{{count}} acï gɔ̈t në ye thaar kënë yic",
+      "bookedInPeriod_other": "{{count}} acï gɔ̈t në ye thaar kënë yic",
+      "conversion": "Gɛ̈r de yic",
+      "conversionHint": "Kɔc cï keek gɔ̈t ke ye biäk de kɔc cï keek gam",
+      "protectedNow": "Acï gël ëmɛɛn",
+      "expiringSoon_one": "Gël thök në {{count}} köl",
+      "expiringSoon_other": "Gël ee thök në {{count}} nïn",
+      "disputedNow": "Acï kɔc kɔ̈k teer",
+      "disputedNowHint": "Kɔckuun ye kɔc mac kenë teer de nhomlääu tënë raan dɛ̈t ye mat kenë yïïn",
+      "commissionEligible": "Akutnhom acï gam",
+      "commissionCancelled_one": "{{count}} acï cuɔp",
+      "commissionCancelled_other": "{{count}} acï cuɔp"
+    },
+    "chart": {
+      "title_one": "Gät rin ku tɔ̈ɔ̈u de rin në kööl tökic - kööl de {{count}} de akër",
+      "title_other": "Gät rin ku tɔ̈ɔ̈u de rin në kööl tökic - nïn ke {{count}} ke akër",
+      "registrations": "Gät rin",
+      "bookings": "Gɔ̈ɔ̈c"
+    },
+    "byStage": "Ye kɔc ŋɔ̈ɔ̈r në tände",
+    "bySource": "Kɔc ye ŋɔ̈ɔ̈r në të bïï kek thïn",
+    "byReferral": "Ye ŋɔ̈ɔ̈r në tän de tuɔɔc",
+    "myDisputes": "Kä cïke teer ca ke jat nhial",
+    "noDisputes": "Acïn kä cï keek tɛɛr yiic cï ke jat nhial.",
+    "unknown": "Acï juiir",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM tɔ̈u aɣeer (cï thɔ̈ɔ̈ŋ)",
+      "PARTNER_CRM": "Acï mat thïn në akutnhomdu yic",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Mɛ̈ɛ̈të yic",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Gël abï thök në {{count}} köl dɛ̈t",
+    "expiringTitle_other": "Gël abï thök në nïn {{count}} bɔ̈",
+    "expiringEmpty": "Acïn lead ye gëlde määr në ye winh kënë yic."
   }
 }

@@ -43,7 +43,9 @@
       "name": "Naame",
       "city": "Xtat",
       "status": "Petingung",
-      "actions": "Aktsioone"
+      "actions": "Aktsioone",
+      "protection": "Duplikaat xitsung",
+      "matchOn": "Duplikaate pasëyert uf"
     },
     "closeReferrals": "Xlos fer ti referënse",
     "reopen": "Witer uf mache",
@@ -55,6 +57,25 @@
       "add": "Proyekt aan tuun",
       "created": "{{name}} kemacht kep is ."
     },
-    "back": "Zurück fer ti Bauer"
+    "back": "Zurück fer ti Bauer",
+    "protection": {
+      "days_one": "{{count}} taach",
+      "days_other": "{{count}} taache",
+      "globalDays_one": "Globaal standard ( {{count}} taach)",
+      "globalDays_other": "Globaal standard ( {{count}} taache)",
+      "globalDefault": "Global standard",
+      "placeholder": "Protektsioons taache (leere = welt standard)",
+      "saved": "Duplikaat xitsung aktualisiirt fer {{name}} .",
+      "hint": "Duplikaat xitsung: 1-3650 taache, orer lose leere fer ti welt fon te Instellunge penutse. En ënerung kept ploos fer naye registratsioone - ti eksistente hale sayn auskepung."
+    },
+    "matching": {
+      "global": "Global standard",
+      "globalWith": "Globaal standard ( {{fields}} )",
+      "mobile": "Mobiil numer",
+      "email": "E-mail",
+      "both": "Mobiil numer + e-mail",
+      "saved": "Duplikaat fon te richtichkheet aktualisiirt fer {{name}}",
+      "hint": "Welche detaile mache tswaay registratsioone ti selwich kliënt fer een projëkt. Ti ënerunge tuun fon yets aan foran fer ti tswaay xprooche penutse; eksistiirente xitsung is nët petrof."
+    }
   }
 }

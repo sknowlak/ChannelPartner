@@ -30,7 +30,8 @@
       "registered": "পঞ্জীয়ন কৰা হৈছে"
     },
     "booked": "বুকিং কৰা হৈছে",
-    "empty": "এতিয়াও কোনো ৰেফাৰেল নাই।"
+    "empty": "এতিয়াও কোনো ৰেফাৰেল নাই।",
+    "bookingCancelled": "বুকিং বাতিল কৰা হৈছে"
   },
   "detail": {
     "customer": "গ্ৰাহক",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "বুকিং নিশ্চিত।",
       "accepted": "ৰেফাৰেল গ্ৰহণ কৰা হৈছে।",
-      "rejected": "ৰেফাৰেল নাকচ কৰা হৈছে।"
+      "rejected": "ৰেফাৰেল নাকচ কৰা হৈছে।",
+      "bookingCancelled": "বুকিং বাতিল কৰা হৈছে।"
     },
-    "backToReferrals": "ৰেফাৰেললৈ উভতি যাওক"
+    "backToReferrals": "ৰেফাৰেললৈ উভতি যাওক",
+    "bookingCancelled": "বুকিং বাতিল কৰা হৈছে",
+    "cancelBooking": "বুকিং বাতিল কৰক",
+    "cancelReasonLabel": "বাতিল কৰাৰ কাৰণ (সঙ্গীক দেখুওৱা হৈছে) *",
+    "cancelBookingHint": "কাৰ্য্যকৰী মালিকীস্বত্ব অংশীদাৰৰ হাতলৈ ঘূৰি যায় আৰু তেওঁলোকৰ কমিচনৰ যোগ্যতা বাতিল কৰা হয়। পিছত পুনৰ লিড বুকিং কৰিব পাৰিব।",
+    "cancelBookingConfirm": "বুকিং বাতিল কৰক"
   },
   "history": {
     "title": "ইতিহাস",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "আয়োগৰ যোগ্যতা সৃষ্টি",
       "HANDOVER_COMPLETED": "হেণ্ডঅভাৰ সম্পূৰ্ণ হ’ল",
       "ADMIN_PROTECTION_RELEASED": "এডমিনে ডুপ্লিকেট প্ৰটেকচন সোনকালে মুকলি কৰি দিলে। কাৰণ: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "প্ৰশাসকে {{from}} ৰ পৰা {{to}} লৈ পঞ্জীয়ন পুনৰ নিযুক্ত কৰিলে। কাৰণ: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "প্ৰশাসকে {{from}} ৰ পৰা {{to}} লৈ পঞ্জীয়ন পুনৰ নিযুক্ত কৰিলে। কাৰণ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "আন এজন অংশীদাৰৰ ডুপ্লিকেট পঞ্জীয়নৰ প্ৰচেষ্টা নাকচ কৰা হৈছিল",
+      "BOOKING_CANCELLED": "বুকিং বাতিল কৰা হৈছে। কাৰণ: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "কাৰ্য্যকৰী মালিকীস্বত্ব অংশীদাৰৰ হাতলৈ ঘূৰি আহিল",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "বুকিঙৰ লগে লগে কমিছনৰ যোগ্যতা বাতিল কৰা হ’ল",
+      "COMMISSION_ELIGIBILITY_RESTORED": "নতুন বুকিঙৰ বাবে কমিচনৰ যোগ্যতা পুনৰ ঘূৰি আহিল"
     }
   }
 }

@@ -30,7 +30,8 @@
       "registered": "Ба қайд гирифта шудааст"
     },
     "booked": "Зан карда шуд",
-    "empty": "Ҳанӯз муроҷиатҳо нестанд."
+    "empty": "Ҳанӯз муроҷиатҳо нестанд.",
+    "bookingCancelled": "Бронкунӣ бекор карда шуд"
   },
   "detail": {
     "customer": "Муштарӣ",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Бронкунӣ тасдиқ карда шуд.",
       "accepted": "Мурожаат қабул қилинди.",
-      "rejected": "Муроҷиат рад карда шуд."
+      "rejected": "Муроҷиат рад карда шуд.",
+      "bookingCancelled": "Бронкунӣ бекор карда шуд."
     },
-    "backToReferrals": "Бозгашт ба Рефератҳо"
+    "backToReferrals": "Бозгашт ба Рефератҳо",
+    "bookingCancelled": "Бронкунӣ бекор карда шуд",
+    "cancelBooking": "Бекор кардани брон",
+    "cancelReasonLabel": "Сабаби бекор кардан (ба шарик нишон дода мешавад) *",
+    "cancelBookingHint": "Моликияти амалиётӣ ба шарик бармегардад ва ҳуқуқи комиссияи онҳо бекор карда мешавад. Пешбарро дертар дубора фармоиш додан мумкин аст.",
+    "cancelBookingConfirm": "Бронкуниро бекор кунед"
   },
   "history": {
     "title": "Таърих",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Қобилияти комиссия таъсис дода шудааст",
       "HANDOVER_COMPLETED": "Интиқол ба анҷом расид",
       "ADMIN_PROTECTION_RELEASED": "Администратор муҳофизати такрориро барвақт баровард. Сабаб: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Админ сабти номро аз {{from}} ба {{to}} иваз кард. Сабаб: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Админ сабти номро аз {{from}} ба {{to}} иваз кард. Сабаб: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Кӯшиши сабти такрории шарики дигар рад карда шуд",
+      "BOOKING_CANCELLED": "Бронкунӣ бекор карда шуд. Сабаб: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Моликияти амалиётӣ ба шарик баргардонида шуд",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ҳуқуқи комиссия бо фармоиш бекор карда мешавад",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ҳуқуқи комиссия барои бронкунии нав барқарор карда шуд"
     }
   }
 }

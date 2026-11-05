@@ -30,7 +30,8 @@
       "registered": "Teudaftar"
     },
     "booked": "Ka geupeusapat",
-    "empty": "Hana rujukan lom."
+    "empty": "Hana rujukan lom.",
+    "bookingCancelled": "Pemesanan ka dibatalkan"
   },
   "detail": {
     "customer": "Peulanggan",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Pemesanan ka dikonfirmasi.",
       "accepted": "Rujukan ka geuterimong.",
-      "rejected": "Rujukan ditulak."
+      "rejected": "Rujukan ditulak.",
+      "bookingCancelled": "Pemesanan ka dibatalkan."
     },
-    "backToReferrals": "Kembali keu Rujukan ."
+    "backToReferrals": "Kembali keu Rujukan .",
+    "bookingCancelled": "Pemesanan ka dibatalkan",
+    "cancelBooking": "Batalkan Pemesanan",
+    "cancelReasonLabel": "Alasan pembatalan (ditunjukkan keu pasangan) *",
+    "cancelBookingHint": "Keupemilikan operasional kembali keu mitra dan kelayakan komisi awak nyan dibatalkan. Lead nyan jeut neu booking lom eunteuk.",
+    "cancelBookingConfirm": "Batalkan pemesanan"
   },
   "history": {
     "title": "Seujarah",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisi dipeugot .",
       "HANDOVER_COMPLETED": "Seurah seuleusoe",
       "ADMIN_PROTECTION_RELEASED": "Admin geupeuteubiet perlindungan duplikat awai. Alasan: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin geubri lom pendaftaran dari {{from}} keu {{to}} . Alasan: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin geubri lom pendaftaran dari {{from}} keu {{to}} . Alasan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Upaya pendaftaran duplikat le pasangan laen ditulak .",
+      "BOOKING_CANCELLED": "Pemesanan ka dibatalkan. Alasan: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Peumiléhan operasional geubri pulang keu mitra .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kelayakan komisi dibatalkan deungon pemesanan .",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kelayakan komisi dipulihkan untuk pemesanan baro ."
     }
   }
 }

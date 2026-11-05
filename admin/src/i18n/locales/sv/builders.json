@@ -43,7 +43,9 @@
       "name": "Namn",
       "city": "Stad",
       "status": "Status",
-      "actions": "Åtgärder"
+      "actions": "Åtgärder",
+      "protection": "Dubblettskydd",
+      "matchOn": "Dubletter matchar på"
     },
     "closeReferrals": "Stäng för remisser",
     "reopen": "Öppna igen",
@@ -55,6 +57,25 @@
       "add": "Lägg till projekt",
       "created": "Skapade {{name}} ."
     },
-    "back": "Tillbaka till Builders"
+    "back": "Tillbaka till Builders",
+    "protection": {
+      "days_one": "{{count}} dag",
+      "days_other": "{{count}} dagar",
+      "globalDays_one": "Global standard ( {{count}} dag)",
+      "globalDays_other": "Global standard ( {{count}} dagar)",
+      "globalDefault": "Global standard",
+      "placeholder": "Skyddsdagar (tom = global standard)",
+      "saved": "Dubblettskydd uppdaterat för {{name}} .",
+      "hint": "Dubblettskydd: 1-3650 dagar, eller lämna tomt för att använda den globala standarden från Inställningar. En ändring gäller endast för nya registreringar - befintliga behåller sin giltighetstid."
+    },
+    "matching": {
+      "global": "Global standard",
+      "globalWith": "Global standard ( {{fields}} )",
+      "mobile": "Mobilnummer",
+      "email": "E-post",
+      "both": "Mobilnummer + e-post",
+      "saved": "Dubblettmatchning uppdaterad för {{name}}",
+      "hint": "Vilka uppgifter gör två registreringar till samma kund för ett projekt. Ändringar gäller dubbletter av kontroller från och med nu; befintligt skydd påverkas inte."
+    }
   }
 }

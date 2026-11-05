@@ -18,7 +18,8 @@ async function logEvent({ registrationId, eventType, actor, source, platform, pr
     platform: resolvedPlatform,
     previousValue,
     newValue,
-    description
+    description,
+    requestId: getContext().requestId || ''
   });
 }
 

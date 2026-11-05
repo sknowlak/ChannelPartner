@@ -43,7 +43,9 @@
       "name": "Nama",
       "city": "Bandar",
       "status": "Status",
-      "actions": "Tindakan"
+      "actions": "Tindakan",
+      "protection": "Perlindungan pendua",
+      "matchOn": "Pendua sepadan dihidupkan"
     },
     "closeReferrals": "Tutup untuk rujukan",
     "reopen": "Buka semula",
@@ -55,6 +57,23 @@
       "add": "Tambah Projek",
       "created": "Mencipta {{name}} ."
     },
-    "back": "Kembali ke Pembina"
+    "back": "Kembali ke Pembina",
+    "protection": {
+      "days_other": "{{count}} hari",
+      "globalDays_other": "Lalai global ( {{count}} hari)",
+      "globalDefault": "lalai global",
+      "placeholder": "Hari perlindungan (kosong = lalai global)",
+      "saved": "Perlindungan pendua dikemas kini untuk {{name}} .",
+      "hint": "Perlindungan pendua: 1-3650 hari, atau biarkan kosong untuk menggunakan lalai global daripada Tetapan. Perubahan hanya terpakai pada pendaftaran baharu - pendaftaran sedia ada mengekalkan tarikh luputnya."
+    },
+    "matching": {
+      "global": "lalai global",
+      "globalWith": "Lalai global ( {{fields}} )",
+      "mobile": "Nombor mudah alih",
+      "email": "E-mel",
+      "both": "Nombor telefon bimbit + e-mel",
+      "saved": "Padanan pendua dikemas kini untuk {{name}}",
+      "hint": "Butiran mana yang menjadikan dua pendaftaran pelanggan yang sama untuk projek. Perubahan dikenakan pada cek pendua mulai sekarang; perlindungan sedia ada tidak terjejas."
+    }
   }
 }

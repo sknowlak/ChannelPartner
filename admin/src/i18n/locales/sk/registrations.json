@@ -49,8 +49,73 @@
       "newPartnerId": "Nové ID partnera",
       "reason": "Dôvod (povinné)",
       "apply": "Použiť prepísanie",
-      "applying": "Uplatňuje sa..."
+      "applying": "Uplatňuje sa...",
+      "cancelBookingHint": "Zrušením sa rezervácia a jej provízia označia ako zrušené, vráti prevádzkové vlastníctvo partnerovi a staviteľovi umožní znova rezervovať tento potenciálny zákazník.",
+      "cancelBookingConfirm": "Zrušiť túto rezerváciu? Jeho provízia je tiež zrušená. Toto je zaznamenané s vaším menom a dôvodom."
     },
-    "timelineTitle": "Časová os auditu (táto registrácia)"
+    "timelineTitle": "Časová os auditu (táto registrácia)",
+    "bookingStatus": "Stav rezervácie",
+    "commissionAttribution": "Pridelenie provízie",
+    "disputeOpen": "S týmto zákazníkom je otvorený vlastnícky spor – iný partner tvrdí, že je jeho. Rozhoduje sa na stránke Spory.",
+    "viewDisputes": "Zobraziť spory",
+    "cancellation": {
+      "title": "Rezervácia zrušená",
+      "hint": "Rezervácia a jej provízia sú zrušené; prevádzkové vlastníctvo je späť u partnera a stavebník si môže toto vedenie znova rezervovať.",
+      "at": "Zrušené o",
+      "by": "Zrušené používateľom",
+      "reason": "Dôvod"
+    }
+  },
+  "disputes": {
+    "title": "Spory o vlastníctvo",
+    "hint": "Partner, ktorého registrácia bola zamietnutá ako duplikát, môže namietať, kto je vlastníkom zákazníka. Preskúmajte obe strany a rozhodnite sa.",
+    "statusFilter": "Stav sporu",
+    "allStatuses": "Všetky stavy",
+    "empty": "Žiadne spory s týmto stavom.",
+    "columns": {
+      "dispute": "Spor",
+      "customer": "Zákazník",
+      "project": "Projekt",
+      "raisedBy": "Vychovaný",
+      "heldBy": "Súčasný vlastník",
+      "status": "Stav",
+      "raisedAt": "Vychovaný na"
+    },
+    "detail": {
+      "title": "Námietka {{id}}",
+      "raisedOn": "Vyvýšené {{date}}",
+      "raisingTitle": "Vychovaný",
+      "holderTitle": "Súčasný vlastník",
+      "partner": "Partner",
+      "raisedBy": "Predložil",
+      "customerName": "Zákazník",
+      "mobile": "Mobil",
+      "alternateMobile": "Alternatívny mobil",
+      "email": "Email",
+      "project": "Projekt",
+      "reason": "Ich dôvod",
+      "registration": "Registrácia",
+      "registeredAt": "Registrovaný dňa",
+      "referral": "Odporúčanie",
+      "heldMissing": "Zadržanú registráciu sa nepodarilo nájsť.",
+      "resolutionTitle": "rozhodnutie",
+      "outcome": "Výsledok",
+      "note": "Poznámka",
+      "decidedBy": "Rozhodnuté podľa",
+      "decidedAt": "Rozhodnuté",
+      "newRegistration": "Nová registrácia",
+      "decideTitle": "Rozhodnite tento spor",
+      "noteLabel": "Poznámka vysvetľujúca rozhodnutie (povinné)",
+      "noteRequired": "Napíšte poznámku, aby ste sa rozhodli.",
+      "uphold": "Podržať",
+      "overturn": "Prevrátiť",
+      "upholdEffect": "{{holder}} drží zákazníka. Spor je uzavretý a nič iné sa nemení.",
+      "overturnEffect": "Duplicitná ochrana {{holder}} teraz končí a zákazník je zaregistrovaný pre {{partner}} ako nová registrácia.",
+      "heldBookedHelp": "Tento zákazník je rezervovaný prostredníctvom aktuálneho vlastníka. Najprv zrušte túto rezerváciu (prepísanie správcom pri registrácii), potom zrušte:",
+      "confirmTitle": "si si istý?",
+      "confirmUphold": "Áno, udržať",
+      "confirmOverturn": "Áno, prevrátiť",
+      "back": "Späť na spory"
+    }
   }
 }

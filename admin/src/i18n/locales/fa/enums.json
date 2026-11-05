@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "واجد شرایط",
-    "PENDING": "در انتظار"
+    "PENDING": "در انتظار",
+    "CANCELLED": "لغو شد"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "حفاظت تکراری را زودتر آزاد کنید",
-    "REASSIGN_PARTNER": "دوباره به شریک دیگری واگذار کنید"
+    "REASSIGN_PARTNER": "دوباره به شریک دیگری واگذار کنید",
+    "CANCEL_BOOKING": "رزرو را لغو کنید"
   },
   "dataType": {
     "TEXT": "متن",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "سوپر ادمین",
     "ADMIN": "مدیر"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "تایید شد",
+    "CANCELLED": "لغو شد"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "نسبت داده شده است",
+    "DISPUTED": "مورد مناقشه قرار گرفت"
+  },
+  "disputeStatus": {
+    "OPEN": "باز کنید",
+    "UPHELD": "تایید شد",
+    "OVERTURNED": "واژگون شد",
+    "WITHDRAWN": "برداشته شد"
   }
 }

@@ -43,7 +43,9 @@
       "name": "Lub npe",
       "city": "Lub nroog",
       "status": "xwm txheej",
-      "actions": "Kev ua"
+      "actions": "Kev ua",
+      "protection": "Kev tiv thaiv dua",
+      "matchOn": "Duplicates match rau"
     },
     "closeReferrals": "Kaw rau kev xa mus",
     "reopen": "Rov qhib dua",
@@ -55,6 +57,25 @@
       "add": "Ntxiv qhov project",
       "created": "Tsim {{name}} ."
     },
-    "back": "Rov qab mus rau Builders"
+    "back": "Rov qab mus rau Builders",
+    "protection": {
+      "days_one": "{{count}} hnub",
+      "days_other": "{{count}} hnub",
+      "globalDays_one": "Ntiaj teb no default ( {{count}} hnub)",
+      "globalDays_other": "Ntiaj teb no default ( {{count}} hnub)",
+      "globalDefault": "Ntiaj teb no default",
+      "placeholder": "Cov hnub tiv thaiv (kub = ntiaj teb default)",
+      "saved": "Kev tiv thaiv dua tshiab rau {{name}} .",
+      "hint": "Duplicate tiv thaiv: 1-3650 hnub, los yog tawm khoob mus siv lub ntiaj teb no default los ntawm Chaw. Ib qho kev hloov pauv tsuas yog siv rau cov ntawv sau npe tshiab - cov uas twb muaj lawm khaws lawv lub sijhawm tas sijhawm."
+    },
+    "matching": {
+      "global": "Ntiaj teb no default",
+      "globalWith": "Ntiaj teb no default ( {{fields}} )",
+      "mobile": "Xov tooj txawb",
+      "email": "Email",
+      "both": "Xov tooj txawb + email",
+      "saved": "Kev hloov pauv hloov tshiab rau {{name}}",
+      "hint": "Cov ntsiab lus twg ua rau ob daim ntawv sau npe tib tus neeg siv khoom rau ib qhov project. Cov kev hloov pauv siv rau cov tshev sib npaug txij li tam sim no; kev tiv thaiv uas twb muaj lawm tsis cuam tshuam."
+    }
   }
 }

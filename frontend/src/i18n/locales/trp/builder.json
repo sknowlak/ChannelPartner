@@ -30,7 +30,8 @@
       "registered": "Register khlaijak"
     },
     "booked": "Book khaijak",
-    "empty": "Tabukbo referral wngya kho."
+    "empty": "Tabukbo referral wngya kho.",
+    "bookingCancelled": "Book khaijak kha"
   },
   "detail": {
     "customer": "Painai",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Booking wngkha.",
       "accepted": "Refer wngkha.",
-      "rejected": "Refer khaijakya wngkha."
+      "rejected": "Refer khaijakya wngkha.",
+      "bookingCancelled": "Booking khaijak kha."
     },
-    "backToReferrals": "Rohorjakmani thani kiphilwi phaidi"
+    "backToReferrals": "Rohorjakmani thani kiphilwi phaidi",
+    "bookingCancelled": "Book khaijak kha",
+    "cancelBooking": "Book khaimani yakar di",
+    "cancelReasonLabel": "Cancel wngmani karon (partner no phunukjak) *",
+    "cancelBookingHint": "Samung tangnani malkhung kiphilwi thango tei bohrokni commission manthai sokomorjak. Lead no book khaiwi mannai.",
+    "cancelBookingConfirm": "Buking khaimani yakar di"
   },
   "history": {
     "title": "Laibuma",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Komison ni bagwi manthai snamjak kha",
       "HANDOVER_COMPLETED": "Yapharmani paikha",
       "ADMIN_PROTECTION_RELEASED": "Admin duplicate mwthangmung swkangno rwkha. Kaham: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin {{from}} ni simi {{to}} simi swimungno swlaiwi rwkha. Kaham: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin {{from}} ni simi {{to}} simi swimungno swlaiwi rwkha. Kaham: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Tei kaisa hamjaknai bai swijaknani chaitokma reject wngliya",
+      "BOOKING_CANCELLED": "Booking khaijak kha. Kaham: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Samung tangnai borokni thani kiphilwi phaikha",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Buking khaimani bai komison ni manthai sokomorjak kha",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kwtal booking ni bagwi commission ni rwngthoma kiphilwi tubujak kha"
     }
   }
 }

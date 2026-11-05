@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "有资格的",
-    "PENDING": "待办的"
+    "PENDING": "待办的",
+    "CANCELLED": "取消"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "尽早解除重复保护",
-    "REASSIGN_PARTNER": "重新分配给另一个合作伙伴"
+    "REASSIGN_PARTNER": "重新分配给另一个合作伙伴",
+    "CANCEL_BOOKING": "取消预订"
   },
   "dataType": {
     "TEXT": "文本",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "超级管理员",
     "ADMIN": "行政"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "确认的",
+    "CANCELLED": "取消"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "归因",
+    "DISPUTED": "争议"
+  },
+  "disputeStatus": {
+    "OPEN": "打开",
+    "UPHELD": "坚持",
+    "OVERTURNED": "翻倒了",
+    "WITHDRAWN": "撤回"
   }
 }

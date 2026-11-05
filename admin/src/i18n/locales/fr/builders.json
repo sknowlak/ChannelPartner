@@ -43,7 +43,9 @@
       "name": "Nom",
       "city": "Ville",
       "status": "Statut",
-      "actions": "Actes"
+      "actions": "Actes",
+      "protection": "Protection contre les doubles",
+      "matchOn": "Les doublons correspondent"
     },
     "closeReferrals": "Fermer pour les références",
     "reopen": "Rouvrir",
@@ -55,6 +57,27 @@
       "add": "Ajouter un projet",
       "created": "Créé {{name}} ."
     },
-    "back": "Retour aux constructeurs"
+    "back": "Retour aux constructeurs",
+    "protection": {
+      "days_one": "{{count}} jour",
+      "days_many": "{{count}} jours",
+      "days_other": "{{count}} jours",
+      "globalDays_one": "Valeur par défaut globale ( {{count}} jour)",
+      "globalDays_many": "Valeur par défaut globale ( {{count}} jours)",
+      "globalDays_other": "Valeur par défaut globale ( {{count}} jours)",
+      "globalDefault": "Valeur par défaut globale",
+      "placeholder": "Jours de protection (vide = valeur par défaut globale)",
+      "saved": "Protection contre les doublons mise à jour pour {{name}} .",
+      "hint": "Protection contre les doublons : 1 à 3 650 jours, ou laissez ce champ vide pour utiliser la valeur par défaut globale des paramètres. Un changement s'applique uniquement aux nouvelles inscriptions - les inscriptions existantes conservent leur date d'expiration."
+    },
+    "matching": {
+      "global": "Valeur par défaut globale",
+      "globalWith": "Valeur par défaut globale ( {{fields}} )",
+      "mobile": "Numéro de portable",
+      "email": "E-mail",
+      "both": "Numéro de portable + email",
+      "saved": "Correspondance en double mise à jour pour {{name}}",
+      "hint": "Quels détails font que deux inscriptions du même client pour un projet. Les modifications s’appliquent désormais aux chèques en double ; la protection existante n’est pas affectée."
+    }
   }
 }

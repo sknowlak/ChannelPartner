@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Be klɛli i fluwa",
-    "pending": "N'ga be nan yoman"
+    "pending": "N'ga be nan yoman",
+    "status": {
+      "CONFIRMED": "Be klɛli i fluwa",
+      "CANCELLED": "Be kpɛli lika’n i nun"
+    }
   },
   "assign": {
     "unassigned": "Be faman be manman",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Projet fi nunman lɛ (be nin a kanman ndɛ)",
-    "notInList": "{{project}} (ɔ nunman junman’n i listi’n nun)"
+    "notInList": "{{project}} (ɔ nunman junman’n i listi’n nun)",
+    "protectionDays_one": "{{count}} -cɛn sasalɛ",
+    "protectionDays_other": "{{count}} -cɛn sasalɛ"
   },
   "journey": {
     "customer": "Like to fuɛ",
@@ -76,7 +82,14 @@
     "progressHistory": "Like nga ɔ yoli’n i su ndɛ",
     "timesIn": "(blɛ nga be o {{timezone}} nun )",
     "backToMyLeads": "Sa min sin min atin’m be su",
-    "editLead": "Kaci Lead"
+    "editLead": "Kaci Lead",
+    "disputeBanner": "Sran uflɛ m’ɔ nin i be di junman’n, ɔ si akplowa kɛ sran sɔ’n i liɛ’n ti i liɛ. Leadrat admin kun su nian nun - ɔ sasalɛ’n ka lɛ lele naan b’a fa ajalɛ.",
+    "booking": "Reservation",
+    "commission": "N'galiɛ",
+    "notBooked": "Be klɛman be dunman",
+    "cancelledOn": "Be kpɛli i nun {{date}} su.",
+    "cancelReason": "Sa: {{reason}}",
+    "cancelledHint": "Sran ng’ɔ kplannin sua’n, ɔ kpɛli sua’n i nun - junman dilɛ’n i min’n w’a saci ɔ wun lɔ, yɛ be kpɛli junman dilɛ’n i nun. Sɛ be fa lead’n be sie i fluwa’n su ekun’n, be fa siesie i ekun."
   },
   "referral": {
     "NOT_REFERRED": "Be flɛmɛn i (projet nunman lɛ)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Sran ng’ɔ kplan sua’n, ɔ kplinnin su kɛ be sunmɛnnin i.",
       "REFERRAL_REJECTED": "Builder w’a kplinman ndɛ sɔ’n su. Sa: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin yili like sasalɛ nɲɔn ndɛndɛ. Sa: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin fali i dunman’n sieli i {{from}} su ɔli {{to}} . Sa: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin fali i dunman’n sieli i {{from}} su ɔli {{to}} . Sa: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Kɛ sran uflɛ kunndɛli kɛ ɔ́ klɛ́ i dunman’n, b’a kplinman su.",
+      "BOOKING_CANCELLED": "Be kpɛli lika’n i nun. Sa: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Be fali junman dilɛ’n i min’n be sali be sin be wiengu’n i sa nun.",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Be kpɛli komisiɔn’n i nun ninnge’m be nun.",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Be fali komisiɔn’n i atin’n be sieli i lika uflɛ’n i sin",
+      "OWNERSHIP_DISPUTE_RAISED": "Sran uflɛ m’ɔ nin i be di junman’n, ɔ sili akplowa kɛ sran sɔ’n ti i liɛ - Leadrat i su kpɛn kun wá nían nun",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Be yili like tofuɛ sɔ’n i su ndɛ’n - ɔ like’n w’a kaciman",
+      "OWNERSHIP_DISPUTE_UPHELD": "Be niannin like tofuɛ sɔ’n i su ndɛ’n nun - ɔ ti ɔ liɛ’n",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Be klɛli i dunman’n, kɛ be fali ndɛ nga be kan kɛ ɔ ti ɔ liɛ’n su’n, ɔ ti ɔ liɛ’n su’n. N'dɛ: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Be sasalɛ’n wieli: be fali ajalɛ kɛ be fa like kun i su ndɛ’n be fa man sran uflɛ. N'dɛ: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Telefɔnu nimero sɔ'n timan {{country}} liɛ.",
     "COUNTRY_MISMATCH": "Fa nvle’n i kodɛ ng’ɔ ti kpa’n.",
     "NOT_MOBILE": "Yaki klɛ telefɔnu nimero kun, nán telefɔnu ng’ɔ o asiɛ’n su’n."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisiɔn m’ɔ kwla di junman’n",
+      "PENDING": "Komisiɔn ng’ɔ su minndɛ’n",
+      "CANCELLED": "Be nunnunnin junman dilɛ’n"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Be fa man wɔ",
+      "DISPUTED": "Be siman ndɛ sɔ’n i su akplowa"
+    }
+  },
+  "result": {
+    "none": "Be klɛman be dunman’n i su nzɔliɛ fi. Dumua klɛ sran kun i dunman.",
+    "acceptedTitle": "Be klɛli be dunman",
+    "rejectedTitle": "Be klɛman be dunman",
+    "protectionWindow": "Fenɛtri ng’ɔ sasa sran’n",
+    "protectedUntil": "Be sasa be lele .",
+    "openLead": "Tike Lead",
+    "addAnother": "Fa sran uflɛ wla nun",
+    "duplicate": "I nɲɔn su - be dun mmua sasali i",
+    "duplicateHint": "Kliɛn sɔ’n, be dun mmua sasali i junman sɔ’n i dilɛ nun, ɔ maan b’a kwlá klɛmɛn i dunman’n b’a manman amun.",
+    "existingProtectedUntil": "Be sasa fluwa nga be klɛli i laa’n lele afuɛ 2019 nun."
+  },
+  "disputes": {
+    "title": "Min akplowa’m be",
+    "intro": "Like tofuɛ’m be su ndɛ nga amun kannin’n, mɔ be kplinnin su kɛ be yo be nɲɔn’n. Leadrat i su kpɛn kun nian be nun kunngunngun.",
+    "empty": "Amun a kpɛman ndɛnngan fi ba. Sɛ be kplinman su kɛ kasiɛnfuɛ kun mɔ amun fali i bali’n, ɔ ti i nɲɔn’n, amun kwla si akplowa i su ndɛ nga be klɛli’n i su.",
+    "columns": {
+      "dispute": "Utre",
+      "reason": "Ɔ ndɛ’n .",
+      "outcome": "I vie wlɛ"
+    },
+    "status": {
+      "OPEN": "Be su nian nun",
+      "UPHELD": "Nán ɔ liɛ su .",
+      "OVERTURNED": "Be fali ajalɛ kɛ ɔ́ yó ɔ ye .",
+      "WITHDRAWN": "Be yili i"
+    },
+    "awaitingReview": "E su minndɛ admin i ndɛ’n",
+    "openNewLead": "Tike ɔ ɲrun {{id}}",
+    "withdraw": "Ʃuen",
+    "withdrawConfirm": "?Amun yi amun ndɛ’n {{name}} ? Sran ng’ɔ le i dɔ nga su’n, ɔ ka lɛ kɛ ɔ fa ti’n sa.",
+    "raise": "Akplowa silɛ’n",
+    "raiseTitle": "Akplowa silɛ’n",
+    "raiseHint": "Sɛ kasiɛnfuɛ sɔ’n yɛ ɔ dun mmua bali ɔ wun lɔ’n, yiyi like nga ti yɛ ɔ yoli sɔ’n i nun. Leadrat admin kun yɛ ɔ́ nían nun ɔn; sɛ be fa ajalɛ kɛ ɔ ti ɔ liɛ’n su’n, be klɛ sran ng’ɔ dun mmua’n i dunman’n ɔ su.",
+    "reasonLabel": "?Ngue ti yɛ kasiɛnfuɛ sɔ’n ti ɔ liɛ ɔ?",
+    "reasonMin_one": "Ɔ ti {{count}} i nzɔliɛ like.",
+    "reasonMin_other": "Ɔ fata kɛ {{count}} ndɛ mma mun.",
+    "submit": "Fa ndɛ’n ko man",
+    "notProtected": "Sran fi leman sasalɛ like tofuɛ sɔ’n su junman sɔ’n i dilɛ nun kun - a kwla klɛ sran ng’ɔ dun mmua’n i dunman dɔ nga su.",
+    "raised": "Be sunmannin ndɛnngan {{id}} kɛ be nian nun.",
+    "viewAll": "Nian min akplowa’m be su ."
+  },
+  "dashboard": {
+    "title": "Tablo",
+    "period": "Issɔ blɛ",
+    "lastDays_one": "{{count}} tʃin",
+    "lastDays_other": "{{count}} tʃin ba",
+    "emptyTitle": "Amun mo nin balɛ! Ɔ nin a ɲanman sran fi.",
+    "emptyHint": "Klɛ ɔ dunman klikli’n - ɔ pipeline, ɔ bookings nin ɔ sasalɛ blɛ’m bé fíte wa.",
+    "tiles": {
+      "leads": "Be kwlaa nga be dun mmua’n",
+      "newInPeriod_one": "{{count}} uflɛ blɛ sɔ nun",
+      "newInPeriod_other": "{{count}} uflɛ blɛ sɔ nun",
+      "accepted": "Be kplinnin su",
+      "booked": "Be klɛli i fluwa",
+      "bookedInPeriod_one": "{{count}} be klɛli i blɛ sɔ’n nun",
+      "bookedInPeriod_other": "{{count}} be klɛli i blɛ sɔ’n nun",
+      "conversion": "Kacilɛ",
+      "conversionHint": "Be nga be klɛli be dunman’n, be ti sran nga be sɔli be nun’n be nun kun",
+      "protectedNow": "Be sasa be siɛn’n",
+      "expiringSoon_one": "Sasalɛ ng’ɔ wie {{count}} cɛn’n nun’n",
+      "expiringSoon_other": "Be sasalɛ’n i awieliɛ’n yɛle {{count}} tʃin’m be nun",
+      "disputedNow": "Sran uflɛ’m be si akplowa .",
+      "disputedNowHint": "Ɔ kpɛnngbɛn’m be nin sran uflɛ be afiɛn ndɛnngan",
+      "commissionEligible": "Komisiɔn m’ɔ kwla di junman’n",
+      "commissionCancelled_one": "{{count}} be nunnunnin i",
+      "commissionCancelled_other": "{{count}} be nunnunnin i"
+    },
+    "chart": {
+      "title_one": "Be dunman klɛlɛ nin be lika siesielɛ cɛn kwlaa - tʃin kasiɛn {{count}}",
+      "title_other": "Be dunman klɛlɛ nin lika siesielɛ tʃin kwlaa - tʃin kasiɛn {{count}}",
+      "registrations": "Be dunman klɛlɛ",
+      "bookings": "Reservations"
+    },
+    "byStage": "Leads par status",
+    "bySource": "Leads par source",
+    "byReferral": "Be fa sran mun be kɔ lika uflɛ",
+    "myDisputes": "Akplowa nga amun kannin’n",
+    "noDisputes": "Be kpɛli akplowa fi.",
+    "unknown": "Be siesieman",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM ng’ɔ o gua su lɔ’n (be sunnzunnin i)",
+      "PARTNER_CRM": "Ɔ sran’m be fali be wlali nun",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Intɛgration",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Sasalɛ’n i blɛ’n wíe {{count}} cɛn ng’ɔ́ bá lɛ’n nun",
+    "expiringTitle_other": "Sasalɛ’n i blɛ’n wíe {{count}} tʃin nga bé bá lɛ’n be nun",
+    "expiringEmpty": "Plomb fi saciman i sasalɛ’n fenɛtri sɔ’n nun."
   }
 }

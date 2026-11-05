@@ -30,7 +30,8 @@
       "registered": "Бүридхэлдэ абтаһан"
     },
     "booked": "Захиһан",
-    "empty": "Мүнөө болотор дамжуулганууд үгы."
+    "empty": "Мүнөө болотор дамжуулганууд үгы.",
+    "bookingCancelled": "Захиалга болюулагдаба"
   },
   "detail": {
     "customer": "Үйлэшэлэгшэ",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Захиалга баталагдаа.",
       "accepted": "Дабталга хүлеэн абтаба.",
-      "rejected": "Дабталга үгы болгогдоо."
+      "rejected": "Дабталга үгы болгогдоо.",
+      "bookingCancelled": "Захиалга болюулагдаба."
     },
-    "backToReferrals": "Дабталгануудта бусаха"
+    "backToReferrals": "Дабталгануудта бусаха",
+    "bookingCancelled": "Захиалга болюулагдаба",
+    "cancelBooking": "Захиалга болюулха",
+    "cancelReasonLabel": "Болюулха шалтагаан (нүхэртөө харуулагдана) *",
+    "cancelBookingHint": "Үйлэдбэрилэлэй эзэмшэл түншэдэ бусажа, тэдэнэй комиссиин эрхэ болюулагдана. Түрүүлэгшэ хожом дахин захижа болохо.",
+    "cancelBookingConfirm": "Захиалга болюулха"
   },
   "history": {
     "title": "Түүхэ",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Комиссиин эрхэ бии болоо",
       "HANDOVER_COMPLETED": "Хүргэлтэ дүүргэгдэбэ",
       "ADMIN_PROTECTION_RELEASED": "Админ дабтагдаһан хамгаалалга эртэ гаргаа. Шалтагаан: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Админ бүридхэл {{from}} -һаа {{to}} руу шэлжүүлээ. Шалтагаан: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Админ бүридхэл {{from}} -һаа {{to}} руу шэлжүүлээ. Шалтагаан: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ондоо түншын дахин бүридхэлэй оролдолго үгы болгогдоо",
+      "BOOKING_CANCELLED": "Захиалга болюулагдаба. Шалтагаан: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Үйлэдбэрилэлэй эзэмшэл түншэдэ бусаагдаа",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Захиалгатай хамта комиссиин эрхэ болюулагдаба",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Шэнэ захилай түлөө комиссиин эрхэ һэргээгдэбэ"
     }
   }
 }

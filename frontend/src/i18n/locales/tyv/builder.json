@@ -30,7 +30,8 @@
       "registered": "Бүрүткеттинген"
     },
     "booked": "Заказтаан",
-    "empty": "Амдыызында дамчыдылгалар чок."
+    "empty": "Амдыызында дамчыдылгалар чок.",
+    "bookingCancelled": "Бронирование соксаткан"
   },
   "detail": {
     "customer": "Садып алыкчы",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Бронирование бадыткаттынган.",
       "accepted": "Направление хүлээп алдынган.",
-      "rejected": "Направлениени хүлээп албаан."
+      "rejected": "Направлениени хүлээп албаан.",
+      "bookingCancelled": "Бронирование соксаткан."
     },
-    "backToReferrals": "Рефералдарже эглип келир"
+    "backToReferrals": "Рефералдарже эглип келир",
+    "bookingCancelled": "Бронирование соксаткан",
+    "cancelBooking": "Бронированиени соксадыр",
+    "cancelReasonLabel": "Соксатканының чылдагааны (партнерга көргүскен) *",
+    "cancelBookingHint": "Ажыл-чорудулганың ээзи партнерже эглип кээр болгаш оларның комиссия эргези өжүртүнүп каар. Башкы кижини соонда катап дужаап болур.",
+    "cancelBookingConfirm": "Бронированиени соксадыр"
   },
   "history": {
     "title": "Төөгү",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Комиссия эргези тургустунган",
       "HANDOVER_COMPLETED": "Дамчыдылга доозулган",
       "ADMIN_PROTECTION_RELEASED": "Админ катаптаашкын камгалалын эртежик үндүрген. Чылдагаан: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Админ бүрүткелди {{from}} -дан {{to}} че шилчиткен. Чылдагаан: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Админ бүрүткелди {{from}} -дан {{to}} че шилчиткен. Чылдагаан: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Өске партнернуң катап бүрүткел оралдажыышкыны хүлээп алдынмаан",
+      "BOOKING_CANCELLED": "Бронирование соксаткан. Чылдагаан: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ажыл-чорудулганың ээзи партнерга эглип келген",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Комиссия алыр эргени бронь-биле соксаткан",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Чаа броньга комиссия эргези катап тургустунган"
     }
   }
 }

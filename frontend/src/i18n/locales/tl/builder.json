@@ -30,7 +30,8 @@
       "registered": "Nakarehistro"
     },
     "booked": "Naka-book",
-    "empty": "Wala pang referral."
+    "empty": "Wala pang referral.",
+    "bookingCancelled": "Kinansela ang booking"
   },
   "detail": {
     "customer": "Customer",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Nakumpirma ang booking.",
       "accepted": "Tinanggap ang referral.",
-      "rejected": "Tinanggihan ang referral."
+      "rejected": "Tinanggihan ang referral.",
+      "bookingCancelled": "Kinansela ang booking."
     },
-    "backToReferrals": "Bumalik sa Mga Referral"
+    "backToReferrals": "Bumalik sa Mga Referral",
+    "bookingCancelled": "Kinansela ang booking",
+    "cancelBooking": "Kanselahin ang Booking",
+    "cancelReasonLabel": "Dahilan ng pagkansela (ipinakita sa partner) *",
+    "cancelBookingHint": "Ibabalik sa partner ang operational ownership at kinansela ang kanilang pagiging kwalipikado sa komisyon. Maaaring i-book muli ang lead mamaya.",
+    "cancelBookingConfirm": "Kanselahin ang booking"
   },
   "history": {
     "title": "Kasaysayan",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Nalikha ang pagiging karapat-dapat sa komisyon",
       "HANDOVER_COMPLETED": "Nakumpleto ang handover",
       "ADMIN_PROTECTION_RELEASED": "Maagang naglabas ng duplicate na proteksyon ang admin. Dahilan: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Muling itinalaga ng admin ang pagpaparehistro mula {{from}} hanggang {{to}} . Dahilan: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Muling itinalaga ng admin ang pagpaparehistro mula {{from}} hanggang {{to}} . Dahilan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ang isang dobleng pagtatangka sa pagpaparehistro ng isa pang kasosyo ay tinanggihan",
+      "BOOKING_CANCELLED": "Kinansela ang booking. Dahilan: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ibinalik sa partner ang operational ownership",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kinansela ang pagiging karapat-dapat sa komisyon kasama ng booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Naibalik ang pagiging kwalipikado ng komisyon para sa bagong booking"
     }
   }
 }

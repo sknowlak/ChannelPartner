@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Elegible",
-    "PENDING": "Pendent"
+    "PENDING": "Pendent",
+    "CANCELLED": "Cancel·lat"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Allibereu la protecció duplicada abans d'hora",
-    "REASSIGN_PARTNER": "Reassignar a un altre soci"
+    "REASSIGN_PARTNER": "Reassignar a un altre soci",
+    "CANCEL_BOOKING": "Cancel·la la reserva"
   },
   "dataType": {
     "TEXT": "Text",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super Administrador",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Confirmat",
+    "CANCELLED": "Cancel·lat"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Atribuït",
+    "DISPUTED": "Impugnat"
+  },
+  "disputeStatus": {
+    "OPEN": "Obert",
+    "UPHELD": "Mantingut",
+    "OVERTURNED": "Bolada",
+    "WITHDRAWN": "Retirada"
   }
 }

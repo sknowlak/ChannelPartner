@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Biʼniʼ reservar",
-    "pending": "Cayaadxa"
+    "pending": "Cayaadxa",
+    "status": {
+      "CONFIRMED": "Biʼniʼ reservar",
+      "CANCELLED": "Cancelar reservación"
+    }
   },
   "assign": {
     "unassigned": "Cadi maʼ guca asignar",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Cadi cayaca diʼ ti proyectu (cadi cayaca referir)",
-    "notInList": "{{project}} (cadi nuu lu lista stiʼ ca proyectu)"
+    "notInList": "{{project}} (cadi nuu lu lista stiʼ ca proyectu)",
+    "protectionDays_one": "{{count}} -dxi raca proteger",
+    "protectionDays_other": "{{count}} -dxi raca proteger"
   },
   "journey": {
     "customer": "Cliente",
@@ -76,7 +82,14 @@
     "progressHistory": "Historia stiʼ ca progresu",
     "timesIn": "(hora lu {{timezone}} )",
     "backToMyLeads": "Biguetaʼ ra nuu ca lead stinneʼ",
-    "editLead": "Biʼniʼ editar plomo"
+    "editLead": "Biʼniʼ editar plomo",
+    "disputeBanner": "Sti socio que maʼ biʼniʼ disputar tu napa cliente riʼ. Ti administrador Leadrat cayuni revisar ni - protección stiluʼ riaana ni dede ora maʼ gudixhe íquecabe.",
+    "booking": "Reservación",
+    "commission": "Gulee xcu ni, gulee comisión",
+    "notBooked": "Maʼ biʼniʼ reservarbe",
+    "cancelledOn": "Biʼniʼ cancelarbe ni {{date}} .",
+    "cancelReason": "Razón: {{reason}}",
+    "cancelledHint": "Biʼniʼ cancelar constructor que reserva stiʼ - maʼ bibiguetaʼ propiedad operativa ra nuuluʼ ne maʼ zanda guicaaluʼ comisión. Ribiguetaʼ ni pa guibiguetaʼ gaca reservar plomo que sti biaje."
   },
   "referral": {
     "NOT_REFERRED": "Maʼ biʼniʼ referirbe (cadi proyectu)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Biʼniʼ aceptar constructor que referencia que .",
       "REFERRAL_REJECTED": "Builder qué niná ñuni referir laabe. Razón: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin biʼniʼ liberar protección duplicada tempranu. Razón: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin biʼniʼ reasignar registru stiʼ {{from}} para {{to}} . Razón: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin biʼniʼ reasignar registru stiʼ {{from}} para {{to}} . Razón: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Biʼniʼ rechazarcabe ti intento de registru duplicadu ni biʼniʼ sti socio .",
+      "BOOKING_CANCELLED": "Biʼniʼ cancelarbe reserva stibe. Razón: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Biguetaʼ propiedad operativa stiʼ socio que .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Canceladu elegibilidad stiʼ comisión né reserva .",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Biguetaʼ zanda guicaa binni comisión para guni reservar cubi .",
+      "OWNERSHIP_DISPUTE_RAISED": "Sti socio ni biʼniʼ disputar de propiedad stiʼ cliente riʼ - ti administrador Leadrat zuuyaʼ ni .",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Biree disputa de propiedad stiʼ cliente riʼ - cadi cuchaa diʼ propiedad stiluʼ .",
+      "OWNERSHIP_DISPUTE_UPHELD": "Biiyacabe disputa de propiedad stiʼ cliente riʼ - maʼ guca confirmar propiedad stiluʼ .",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Bicaacabe lá despué de guca decidir disputa de propiedad stiluʼ a favor stiluʼ. Nota: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Biluxe protección: biʼniʼ decidircabe ti disputa de propiedad a favor de sti socio. Nota: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Número de teléfono riʼ cadi dxandíʼ diʼ ni para {{country}} .",
     "COUNTRY_MISMATCH": "Biiyaʼ xi códigu stiʼ guidxi ca.",
     "NOT_MOBILE": "Bicaa ti número de teléfono móvil, cadi ti teléfono fijo."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Comisión ni zanda guicaa",
+      "PENDING": "Comisión ni nuu pendiente",
+      "CANCELLED": "Comisión ni guca cancelar"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Atribuido lii .",
+      "DISPUTED": "Atribución ni cucaalúcabe"
+    }
+  },
+  "result": {
+    "none": "Nin ti resultadu de inscripción para gusihuínnibe. Bicaa ti lead primé.",
+    "acceptedTitle": "Plomo ni maʼ guca registrar",
+    "rejectedTitle": "Plomo ni maʼ guca registrar",
+    "protectionWindow": "Ventana ni rapa binni",
+    "protectedUntil": "Biʼniʼ protegerbe dede 2019.",
+    "openLead": "Bixheleʼ plomo",
+    "addAnother": "Bicaa sti plomo .",
+    "duplicate": "Duplicadu - maʼ guca proteger .",
+    "duplicateHint": "Cliente riʼ maʼ guca proteger para proyectu riʼ pur sti registru, ngue runi qué ñanda ñuni registrarbe ni para lii.",
+    "existingProtectedUntil": "Inscripción existente protegida hasta 2019."
+  },
+  "disputes": {
+    "title": "Ca guendaridinde stinneʼ",
+    "intro": "Ca disputa de propiedad ni bicaaluʼ para ca cliente ni qué ninácabe ñuni duplicarcabe cani. Ti administrador Leadrat ruuyaʼ cada tobi de laacani.",
+    "empty": "Maʼ bicaaluʼ xiixa guendaridinde. Pa qué guicaacabe ti cliente ni yenécabe casi ti duplicadu, zanda guni disputarluʼ ni pur resultadu stiʼ registru.",
+    "columns": {
+      "dispute": "Ridinde",
+      "reason": "Razón stiluʼ .",
+      "outcome": "Resultadu"
+    },
+    "status": {
+      "OPEN": "Ni cayuni revisarcabe",
+      "UPHELD": "Cadi lu favor stiluʼ .",
+      "OVERTURNED": "Biʼniʼ decidirbe ni lu favor stiluʼ .",
+      "WITHDRAWN": "Biree"
+    },
+    "awaitingReview": "Cabézanu guni revisar administrador",
+    "openNewLead": "Bixheleʼ lead stiluʼ {{id}}",
+    "withdraw": "Riaaxha",
+    "withdrawConfirm": "Retirar disputa stiuʼ pur {{name}} ? Ca binni ni napa propiedad yanna riʼ riaanacaʼ casi nuucaʼ.",
+    "raise": "Disputa de propiedad .",
+    "raiseTitle": "Disputa de propiedad .",
+    "raiseHint": "Pa primé beeda cliente riʼ ra nuuluʼ, bisiene laabe xiñee. Ti administrador Leadrat zuuyaʼ ni; pa quixhe íquecabe a favor stiluʼ, raca registrar plomo ca para lii.",
+    "reasonLabel": "Xiñee nápaluʼ cliente riʼ yaʼ.",
+    "reasonMin_one": "Por lo menos {{count}} carácter ca.",
+    "reasonMin_other": "Por lo menos {{count}} ca letra ca.",
+    "submit": "Biseendaʼ ti disputa",
+    "notProtected": "Nin tobi de laacabe qué gapa protección lu cliente riʼ para proyectu riʼ jma - zanda gucaaluʼ lá ca plomo ca yanna.",
+    "raised": "Disputa {{id}} ni biseendacabe para guihuinni.",
+    "viewAll": "Biiyaʼ ca disputa stinneʼ ."
+  },
+  "dashboard": {
+    "title": "Tableru stiʼ",
+    "period": "Tiempu",
+    "lastDays_one": "{{count}} dxi",
+    "lastDays_other": "{{count}} dxi",
+    "emptyTitle": "Latiidi! Maʼ qué gápaluʼ nin ti plomo.",
+    "emptyHint": "Bicaa primé lead stiluʼ - ca tubería stiluʼ, ca reserva stiluʼ ne ca fecha límite stiʼ protección stiluʼ zuuyaluʼ cani raríʼ.",
+    "tiles": {
+      "leads": "Total de ca lead",
+      "newInPeriod_one": "{{count}} nacubi lu ca dxi riʼ",
+      "newInPeriod_other": "{{count}} nacubi lu ca dxi riʼ",
+      "accepted": "Biʼniʼ aceptarbe",
+      "booked": "Biʼniʼ reservar",
+      "bookedInPeriod_one": "{{count}} ni guca reservar lu ca dxi riʼ",
+      "bookedInPeriod_other": "{{count}} ni guca reservar lu ca dxi riʼ",
+      "conversion": "Conversión",
+      "conversionHint": "Ca lead ni maʼ guca reservar casi parte de ca lead ni maʼ gucuaacabe .",
+      "protectedNow": "Protegidu yanna .",
+      "expiringSoon_one": "Protección ni riluxe lu {{count}} dxi",
+      "expiringSoon_other": "Protección ni riluxe lu {{count}} dxi",
+      "disputedNow": "Biʼniʼ disputar xcaadxi binni .",
+      "disputedNowHint": "Ca binni ni napa ti disputa abierta de propiedad stiʼ sti socio .",
+      "commissionEligible": "Comisión ni zanda guicaa",
+      "commissionCancelled_one": "{{count}} maʼ guca cancelar",
+      "commissionCancelled_other": "{{count}} maʼ guca cancelar"
+    },
+    "chart": {
+      "title_one": "Ca inscripción ne ca reservación ni raca lu ti dxi - últimu {{count}} dxi",
+      "title_other": "Ca inscripción ne ca reservación ni raca lu ti dxi - últimu {{count}} dxi",
+      "registrations": "Ca inscripción",
+      "bookings": "Reserva"
+    },
+    "byStage": "Lider pur estatus",
+    "bySource": "Lider pur fuente .",
+    "byReferral": "Lider pur estatus de referencia",
+    "myDisputes": "Ca disputa ni bicaaluʼ .",
+    "noDisputes": "Qué ñuu diʼ disputa.",
+    "unknown": "Cadi set",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM externo (simulado)",
+      "PARTNER_CRM": "Bicaa equipu stiluʼ ni",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integración",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Protección ni zaluxe lu sti dxi {{count}}",
+    "expiringTitle_other": "Protección ni zaluxe lu ca dxi ni zeeda ca {{count}}",
+    "expiringEmpty": "Nin ti plomo qué rusaana de gapa protección stiʼ lu ventana riʼ."
   }
 }

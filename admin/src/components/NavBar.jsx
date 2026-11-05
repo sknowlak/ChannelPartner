@@ -13,8 +13,8 @@ export default function NavBar() {
 
   if (!admin) return null;
 
-  const handleLogout = () => {
-    logout();
+  const handleLogout = async () => {
+    await logout();
     navigate('/login');
   };
 
@@ -26,6 +26,7 @@ export default function NavBar() {
       <Link to="/partner-fields">{t('nav:links.partnerFields')}</Link>
       <Link to="/builders">{t('nav:links.builders')}</Link>
       <Link to="/registrations">{t('nav:links.registrations')}</Link>
+      <Link to="/disputes">{t('nav:links.disputes')}</Link>
       <Link to="/audit">{t('nav:links.audit')}</Link>
       <Link to="/settings">{t('nav:links.settings')}</Link>
       <span className="spacer" />

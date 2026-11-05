@@ -49,8 +49,73 @@
       "newPartnerId": "Jauns partnera ID",
       "reason": "Īmeslis (vajadzeigs)",
       "apply": "Pīmāruot puorbaudi",
-      "applying": "Pīsasokūt..."
+      "applying": "Pīsasokūt...",
+      "cancelBookingHint": "Atceļšona atzeimoj rezervaceju i tuos komiseju kai atcaltu, atgrīž darbeibys eipašumtīseibys partnerim i ļaun ceļtnīkam otkon rezervēt itū līdu.",
+      "cancelBookingConfirm": "Atceļt itū rezervaceju? Ari juos komiseja ir atcalta. Tys ir īraksteits ar jūs vuordu i īmesli."
     },
-    "timelineTitle": "Revizejis laika lineja (itei registraceja)"
+    "timelineTitle": "Revizejis laika lineja (itei registraceja)",
+    "bookingStatus": "Rezerviešonys statuss",
+    "commissionAttribution": "Komisejis pīškieršona",
+    "disputeOpen": "Iz itū klientu ir atvārts eipašumtīseibu streids - cyts partneris soka, ka tys ir jūs. Tys teik nūlamts Streidu lopā.",
+    "viewDisputes": "Skatīt streidus",
+    "cancellation": {
+      "title": "Rezervaceja atcalta .",
+      "hint": "Rezervaceja i tuos komiseja teik atcalta; darbeibys eipašumtīseibys ir atpakaļ pi partnera i ceļtnīks var rezervēt itū līdu otkon.",
+      "at": "Atceļts plkst.",
+      "by": "Atceļts leidz .",
+      "reason": "Īmeslis"
+    }
+  },
+  "disputes": {
+    "title": "Eipašumtīseibu streidi",
+    "hint": "Partners, kura registraceja tyka nūraideita kai dublikats, var streideitīs, kam pīdar klients. Pārskatīt obejis pusis i nūlemt.",
+    "statusFilter": "Streida statuss",
+    "allStatuses": "Vysi statusi .",
+    "empty": "Nikaidu streidu ar itū statusu.",
+    "columns": {
+      "dispute": "Streids",
+      "customer": "Klients",
+      "project": "Projekts",
+      "raisedBy": "Paceļts ar .",
+      "heldBy": "Pošreizejais saiminīks .",
+      "status": "Statuss",
+      "raisedAt": "Pacalts 2012 ."
+    },
+    "detail": {
+      "title": "Streids {{id}}",
+      "raisedOn": "Pacalts {{date}}",
+      "raisingTitle": "Paceļts ar .",
+      "holderTitle": "Pošreizejais saiminīks .",
+      "partner": "Partners",
+      "raisedBy": "Īsnīdzs .",
+      "customerName": "Klients",
+      "mobile": "Mobils",
+      "alternateMobile": "Alternativais mobilais .",
+      "email": "E-posts",
+      "project": "Projekts",
+      "reason": "100 doc#1159 Jūs īmeslis .",
+      "registration": "Pīsasaceišona",
+      "registeredAt": "Pīsaregistrēts 2012. g.",
+      "referral": "Nūsyutejums",
+      "heldMissing": "Turātū registraceju navarēja atrast.",
+      "resolutionTitle": "Lāmums",
+      "outcome": "Rezultats",
+      "note": "Zeimeite",
+      "decidedBy": "Nūlemts ar .",
+      "decidedAt": "Nūlamts par .",
+      "newRegistration": "Jauna registraceja .",
+      "decideTitle": "Izlemt itū streidu .",
+      "noteLabel": "Pīzeime, kurā skaidruots lāmums (obligats)",
+      "noteRequired": "Uzroksti pīzeimi, lai nūlemtu.",
+      "uphold": "Atbaļsteit",
+      "overturn": "Apgrīzt",
+      "upholdEffect": "{{holder}} tur klientu. Streids ir slāgts i nikas cyts nasamaina.",
+      "overturnEffect": "{{holder}} 's dublieju aizsardzeiba beidzās niu i klients ir registrāts {{partner}} kai jauna registraceja.",
+      "heldBookedHelp": "Itys klients teik rezervāts caur tagadejū saiminīku. Atceļt tū rezervaceju pyrma (Admin Override iz registraceju), tod apgrīzt:",
+      "confirmTitle": "Voi esi drūss?",
+      "confirmUphold": "Jā, uzturēt",
+      "confirmOverturn": "Da, apgrīzt .",
+      "back": "Atpakaļ iz streidim ."
+    }
   }
 }

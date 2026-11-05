@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Ki ijkuilok",
-    "pending": "Tlenpoliui"
+    "pending": "Tlenpoliui",
+    "status": {
+      "CONFIRMED": "Ki ijkuilok",
+      "CANCELLED": "Nopa tlanemakalistli tlami"
+    }
   },
   "assign": {
     "unassigned": "Ax motemaka",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Ax onka se tekitl (ax motemaka)",
-    "notInList": "{{project}} (ax eltok ipan nopa lista tlen proyectos)"
+    "notInList": "{{project}} (ax eltok ipan nopa lista tlen proyectos)",
+    "protectionDays_one": "{{count}} -tonal tlamokuitlauilistli",
+    "protectionDays_other": "{{count}} -tonal tlamokuitlauilistli"
   },
   "journey": {
     "customer": "Tlakoketl",
@@ -76,7 +82,14 @@
     "progressHistory": "Historia tlen moskaltijtok",
     "timesIn": "(uejkapa ipan {{timezone}} )",
     "backToMyLeads": "Ximokuepa ipan notlanemilil",
-    "editLead": "Xijyektlali Lead"
+    "editLead": "Xijyektlali Lead",
+    "disputeBanner": "Seyok iuampo kiixnamijki tlen iaxka ni tlakoujketl. Se Leadrat admin kiixtoma - mo tlamokuitlauilistli mokauas hasta kemaj kiijtosej.",
+    "booking": "Tlajtlanili",
+    "commission": "Tlaxtlauili",
+    "notBooked": "Ax tleno",
+    "cancelledOn": "Kiixpolojkej ipan {{date}} .",
+    "cancelReason": "Tlen: {{reason}}",
+    "cancelledHint": "Nopa tlachijchijketl kiixpolok nopa tlanemakalistli - nopa tekitl tlen iaxka mokuepa mouaya uan nopa eligibilidad tlen comisión kiixpolok. Mokuepa tla nopa tlayacanalistli sampa ki ijkuilojtokej."
   },
   "referral": {
     "NOT_REFERRED": "Ax techtitlanilijkej (ax onka se tekitl)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Tlachijchijketl kiseli nopa tlajtoli",
       "REFERRAL_REJECTED": "Builder amo kiselik nopa tlajtoli. Tlen: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin kikixtik tlamokuitlauilistli tlen ome tlamantli achtoui. Tlen: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin ki tlalik nopa registro tlen {{from}} ika {{to}} . Tlen: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin ki tlalik nopa registro tlen {{from}} ika {{to}} . Tlen: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Se tlajkuiloli tlen seyok iuampo tlen kinekiyaya kichiuas amo kiselijkej",
+      "BOOKING_CANCELLED": "Nopa tlanemakalistli tlami. Tlen: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Nopa tekitl tlen iaxka mokuepa ika nopa tlapaleuijketl",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Nopa tlapaleuilistli tlen comisión tlami ika nopa reservación",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Nopa comisión tlen ika timo tlaxtlauas mokuepki pampa nopa yankuik tlanemakalistli",
+      "OWNERSHIP_DISPUTE_RAISED": "Seyok iuampo kiixnamijki tlen iaxka ni tlakoujketl - se Leadrat admin kiitas",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Nopa tlauejkayotl tlen iaxka ni tlakouanij kikixtijkej - moaxka ax mopatla",
+      "OWNERSHIP_DISPUTE_UPHELD": "Nopa tlauejkayotl tlen iaxka ni tlakouanij kiixtomayayaj - mo iaxka ya mosentlalijtok",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Mo ijkuilijtok kemaj mo tlauejkayotl tlen moaxka mosentlalijtok ipan mo favor. Xikita: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Tlamokuitlauilistli tlami: se tlauejkayotl tlen iaxka mosentlali ika seyok iuampo. Xikita: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Ni número tlen teléfono ax kuali para {{country}} .",
     "COUNTRY_MISMATCH": "Xijtlapejpeni nopa tlali tlen kinamiki.",
     "NOT_MOBILE": "Xikijkuilo se número tlen mocelular, ax se teléfono fijo."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Comisión tlen ueli",
+      "PENDING": "Tlanauatili tlen poliui",
+      "CANCELLED": "Nopa tekitl kiixpolojkej"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Tlen moaxka",
+      "DISPUTED": "Atribución disputada"
+    }
+  },
+  "result": {
+    "none": "Ax onka se tlaxtlauili tlen ika timo ijkuilos. Achtoui xikijkuilo se tlajtoli.",
+    "acceptedTitle": "Plomo tlen ijkuilijtok",
+    "rejectedTitle": "Ax ijkuilijtok",
+    "protectionWindow": "Ventana tlen tlamokuitlauilistli",
+    "protectedUntil": "Tlamokuitlauilistli hasta",
+    "openLead": "Xijtlapo nopa plomo",
+    "addAnother": "Xijtlali seyok tlayekanki",
+    "duplicate": "Duplicado - ya tlamokuitlauijtok",
+    "duplicateHint": "Ni tlakoujketl ya tlamokuitlauijtok ika ni tekitl ika seyok tlajkuiloli, yeka ax uelki mits ijkuilos.",
+    "existingProtectedUntil": "Nopa registro tlen ya eltok tlamokuitlauijtok hasta"
+  },
+  "disputes": {
+    "title": "No tlauejkayotl",
+    "intro": "Tlaixnamikilistli tlen tlanemakalistli tlen tijchijki ika tlanemakaketl tlen amo kinselijkej pampa eliyaya san se. Se Leadrat admin kiixtoma sejse.",
+    "empty": "Ax tijchijtok tleno tlauejkayotl. Tlaj se tlakoujketl tlen tij uikak amo kiseliaj kej se duplicado, uelis tij tlatsakuiltis tlen nopa registro.",
+    "columns": {
+      "dispute": "Kualankayotl",
+      "reason": "Tlen timoiljuia",
+      "outcome": "Tlentemaka"
+    },
+    "status": {
+      "OPEN": "Ipan tlatemolistli",
+      "UPHELD": "Ax ipan mo favor",
+      "OVERTURNED": "Ni mosentlalijtok ipan mo favor",
+      "WITHDRAWN": "Kikixtijkej"
+    },
+    "awaitingReview": "Ni mochixtok ma ki itas nopa tlayekanki",
+    "openNewLead": "Xijtlapo mo tlajtoli {{id}}",
+    "withdraw": "Xiuikata",
+    "withdrawConfirm": "Xikixti mo tlauejkayotl ika {{name}} ? Nopa tlen nama iaxka mokaua kejatsa eltok.",
+    "raise": "Tlaixnamikilistli tlen iaxka",
+    "raiseTitle": "Tlaixnamikilistli tlen iaxka",
+    "raiseHint": "Tlaj ni tlakoketl achtoui mitspaxaloto, xikijto kenke. Se Leadrat admin kiitas; tla inijuantij mosentlalisej ipan mo favor, nopa tlayacanalistli mo ijkuilijtok para ta.",
+    "reasonLabel": "¿Kenke ni tlakouani moaxka?",
+    "reasonMin_one": "Kej nopa {{count}} tlajtoli.",
+    "reasonMin_other": "Kej nopa {{count}} tlajtoli.",
+    "submit": "Xititlani tlateuilistli",
+    "notProtected": "Axaka kipixtok tlamokuitlauilistli ipan ni tlakouani tlen ni tekitl - uelis tij ijkuilos nopa tlayekanki amantsi.",
+    "raised": "Tlajtlanili {{id}} kititlankej ma kiitakaj.",
+    "viewAll": "Xikita no tlateuilistli"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Tonali",
+    "lastDays_one": "{{count}} tonali",
+    "lastDays_other": "{{count}} tonali",
+    "emptyTitle": "Kualitiasij! Ayokmo tijpia tlen ika timonejnemiltis.",
+    "emptyHint": "Xikijkuilo nopa achtoui tlajtoli - mo pipeline, mo reservas uan nopa tonali tlen ika timomanauis monextis nikan.",
+    "tiles": {
+      "leads": "Nochi tlen kiuika",
+      "newInPeriod_one": "{{count}} yankuik ipan ni tonali",
+      "newInPeriod_other": "{{count}} yankuik ipan ni tonali",
+      "accepted": "Kiselijtokej",
+      "booked": "Ki ijkuilok",
+      "bookedInPeriod_one": "{{count}} tlen kichijchijkej ipan ni tonali",
+      "bookedInPeriod_other": "{{count}} tlen kichijchijkej ipan ni tonali",
+      "conversion": "Tlapatlalistli",
+      "conversionHint": "Nopa tlajtoli tlen ijkuilitok kej se tlajko tlen nopa tlajtoli tlen kiselijtokej",
+      "protectedNow": "Axkan tlamokuitlauijtok",
+      "expiringSoon_one": "Tlamokuitlauilistli tlen tlami ipan {{count}} tonali",
+      "expiringSoon_other": "Tlamokuitlauilistli tlami ika {{count}} tonali",
+      "disputedNow": "Kiixnamikij sekinok",
+      "disputedNowHint": "Mo tlayekapan ika se tlauejkayotl tlen tlapojtok tlen seyok mouampo",
+      "commissionEligible": "Comisión tlen ueli",
+      "commissionCancelled_one": "{{count}} tlami",
+      "commissionCancelled_other": "{{count}} tlami"
+    },
+    "chart": {
+      "title_one": "Inscripciones uan reservas se tonali - itlamian {{count}} tonali",
+      "title_other": "Inscripciones uan reservas se tonali - tlami {{count}} tonali",
+      "registrations": "Inscripciones",
+      "bookings": "Tlajtlanili"
+    },
+    "byStage": "Kinyakana ika estado",
+    "bySource": "Kinyakana ika tlen ualeua",
+    "byReferral": "Kinyakana ika estado de referencia",
+    "myDisputes": "Tlauejkayotl tlen tijchijki",
+    "noDisputes": "Ax onka tlauejkayotl.",
+    "unknown": "Ax kitlalijtokej",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM tlen uejka (simulado)",
+      "PARTNER_CRM": "Kitlalik mo equipo",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integración",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Tlamokuitlauilistli tlamis ipan nopa seyok tonali {{count}}",
+    "expiringTitle_other": "Tlamokuitlauilistli tlamis ipan nopa {{count}} tonali tlen ualas",
+    "expiringEmpty": "Ax onka plomo tlen kipoloua itlamokuitlauilis ipan ni ventana."
   }
 }

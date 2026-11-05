@@ -49,8 +49,73 @@
       "newPartnerId": "ID Mitra Baru",
       "reason": "alasang (parallu)",
       "apply": "Pake Override",
-      "applying": "Appilajara..."
+      "applying": "Appilajara...",
+      "cancelBookingHint": "Pambatalanna a'jari tanra pemesanan siagang komisina salaku pembatalan, ammotere'i pa'punnaang operasional mange ri pa'samaturukang, siagang na pa'biangi tukang bangunang a'pesan poleang.",
+      "cancelBookingConfirm": "Batalkan anne pemesanan? Komisina ni batal tongi. anne ni catat siagang areng siagang alasannu."
     },
-    "timelineTitle": "Garis waktu audit (pendaftaran anne)"
+    "timelineTitle": "Garis waktu audit (pendaftaran anne)",
+    "bookingStatus": "Status Pemesanan",
+    "commissionAttribution": "Atribusi komisi",
+    "disputeOpen": "Perselisihan kepemilikan ta'sungkei ri anne pelanggan - pa'samaturukang maraeng angkana iami antu ke'nanga. iami antu ni puttama ri halamang sengketa.",
+    "viewDisputes": "Ciniki parkara",
+    "cancellation": {
+      "title": "Pemesanan ni batalkan",
+      "hint": "Pemesanan siagang komisina nikanre; kepemilikan operasional ammotere siagang pa'samaturukang siagang tukang bangunang akkullei na booking poleang anne lead.",
+      "at": "Ni batalkangi ri",
+      "by": "Ni batalkan ri",
+      "reason": "Alasan"
+    }
+  },
+  "disputes": {
+    "title": "Perselisihan Kepemilikan",
+    "hint": "Se'rea pa'samaturukang nu pendaftaranna ni tolak salaku duplikat akkullei a'gea'-gea' inai patanna pelanggan. Paressai ruaya pihak siagang puttama.",
+    "statusFilter": "Status sengketa",
+    "allStatuses": "Sikontu status",
+    "empty": "Tena pa'beserang siagang anne statusa.",
+    "columns": {
+      "dispute": "Pabeseran",
+      "customer": "Paballi",
+      "project": "Proyek",
+      "raisedBy": "Niangkaki ri",
+      "heldBy": "patanna kamma kammayya anne",
+      "status": "Status",
+      "raisedAt": "Niangkaki ri"
+    },
+    "detail": {
+      "title": "Perselisihan {{id}}",
+      "raisedOn": "Niangkaki {{date}}",
+      "raisingTitle": "Niangkaki ri",
+      "holderTitle": "patanna kamma kammayya anne",
+      "partner": "Agan",
+      "raisedBy": "Ni kirim ri",
+      "customerName": "Paballi",
+      "mobile": "Mobile",
+      "alternateMobile": "Ponsel alternatif",
+      "email": "Email",
+      "project": "Proyek",
+      "reason": "Alasanna ke'nanga",
+      "registration": "Pendaftaran",
+      "registeredAt": "Ni daftar ri",
+      "referral": "Rujukan",
+      "heldMissing": "Pendaftaran yang dipegang tidak dapat ditemukan.",
+      "resolutionTitle": "Pajjari",
+      "outcome": "Passele",
+      "note": "Catatan",
+      "decidedBy": "Nipattantu ri",
+      "decidedAt": "Nipattantui",
+      "newRegistration": "Pendaftaran baru",
+      "decideTitle": "Pattentui anne parkaraya",
+      "noteLabel": "Catatang ampakasingaraki kaputusang (parallui)",
+      "noteRequired": "Tulisi se're catatang untu' ampattantui.",
+      "uphold": "Pakajarreki",
+      "overturn": "Balik",
+      "upholdEffect": "{{holder}} anjagai pelanggan. Anjo parkaraya nitutui siagang tena apa-apa maraeng a'pinra.",
+      "overturnEffect": "{{holder}} 's duplikat perlindungan berakhir sekarang dan pelanggan terdaftar untuk {{partner}} sebagai pendaftaran baru.",
+      "heldBookedHelp": "Anne palanggana ni bookingi lalang ri patanna kamma kammayya anne. Batalkan anjo booking riolo (Admin Override ri pendaftaran), nampa nupinra:",
+      "confirmTitle": "Maka tappakko?",
+      "confirmUphold": "kamma, ampaentengi",
+      "confirmOverturn": "kamma, a'bali'",
+      "back": "Ammotere mange ri parkara"
+    }
   }
 }

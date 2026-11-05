@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Zarezerwowane",
-    "pending": "Aż do"
+    "pending": "Aż do",
+    "status": {
+      "CONFIRMED": "Zarezerwowane",
+      "CANCELLED": "Rezerwacja anulowana"
+    }
   },
   "assign": {
     "unassigned": "Nieprzypisany",
@@ -58,7 +62,11 @@
   },
   "project": {
     "none": "Nie ma jeszcze projektu (niezweryfikowany)",
-    "notInList": "{{project}} (nie na liście projektów)"
+    "notInList": "{{project}} (nie na liście projektów)",
+    "protectionDays_one": "{{count}} -dniowa ochrona",
+    "protectionDays_few": "{{count}} -dniowa ochrona",
+    "protectionDays_many": "{{count}} -dniowa ochrona",
+    "protectionDays_other": "{{count}} -dniowa ochrona"
   },
   "journey": {
     "customer": "Klient",
@@ -76,7 +84,14 @@
     "progressHistory": "Historia postępu",
     "timesIn": "(godziny w {{timezone}} )",
     "backToMyLeads": "Powrót do Moich potencjalnych klientów",
-    "editLead": "Edytuj potencjalnego klienta"
+    "editLead": "Edytuj potencjalnego klienta",
+    "disputeBanner": "Inny partner zakwestionował własność tego klienta. Administrator Leadrat sprawdza to – Twoja ochrona pozostaje niezmieniona, dopóki nie podejmie decyzji.",
+    "booking": "Rezerwacja",
+    "commission": "Zamawiać",
+    "notBooked": "Nie zarezerwowane",
+    "cancelledOn": "Anulowano {{date}} .",
+    "cancelReason": "Powód: {{reason}}",
+    "cancelledHint": "Budowniczy anulował rezerwację – własność operacyjna powróciła do Ciebie, a uprawnienia do prowizji zostały anulowane. Zostanie przywrócony, jeśli potencjalny klient zostanie ponownie zarezerwowany."
   },
   "referral": {
     "NOT_REFERRED": "Brak odniesienia (brak projektu)",
@@ -164,7 +179,17 @@
       "REFERRAL_ACCEPTED": "Konstruktor przyjął skierowanie",
       "REFERRAL_REJECTED": "Konstruktor odrzucił skierowanie. Powód: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Administrator wcześniej udostępnił ochronę przed duplikatami. Powód: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Administrator przeniósł rejestrację z {{from}} na {{to}} . Powód: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Administrator przeniósł rejestrację z {{from}} na {{to}} . Powód: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Podwójna próba rejestracji dokonana przez innego partnera została odrzucona",
+      "BOOKING_CANCELLED": "Rezerwacja anulowana. Powód: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Własność operacyjna wróciła do partnera",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Uprawnienie do prowizji anulowane wraz z rezerwacją",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Przywrócono uprawnienia do prowizji w przypadku nowej rezerwacji",
+      "OWNERSHIP_DISPUTE_RAISED": "Inny partner zakwestionował własność tego klienta – administrator Leadrat to sprawdzi",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Spór dotyczący własności tego klienta został wycofany – Twoja własność pozostaje niezmieniona",
+      "OWNERSHIP_DISPUTE_UPHELD": "Rozpatrzono spór dotyczący własności tego klienta – Twoja własność została potwierdzona",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Zarejestrowano po rozstrzygnięciu sporu własnościowego na Twoją korzyść. Uwaga: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Ochrona zakończyła się: spór własnościowy został rozstrzygnięty na korzyść innego partnera. Uwaga: {{note}}"
     }
   },
   "columnsPanel": {
@@ -188,5 +213,124 @@
     "INVALID_FOR_COUNTRY": "Ten numer telefonu nie jest ważny w {{country}} .",
     "COUNTRY_MISMATCH": "Proszę wybrać prawidłowy kod kraju.",
     "NOT_MOBILE": "Proszę podać numer telefonu komórkowego, a nie stacjonarnego."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Kwalifikująca się prowizja",
+      "PENDING": "Komisja w toku",
+      "CANCELLED": "Komisja odwołana"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Przypisywane Tobie",
+      "DISPUTED": "Uznanie autorstwa kwestionowane"
+    }
+  },
+  "result": {
+    "none": "Brak wyników rejestracji do pokazania. Najpierw zarejestruj potencjalnego klienta.",
+    "acceptedTitle": "Ołów zarejestrowany",
+    "rejectedTitle": "Ołów niezarejestrowany",
+    "protectionWindow": "Okno ochronne",
+    "protectedUntil": "Chroniony do",
+    "openLead": "Otwórz lead",
+    "addAnother": "Dodaj kolejnego potencjalnego klienta",
+    "duplicate": "Duplikat - już chroniony",
+    "duplicateHint": "Ten klient jest już chroniony dla tego projektu przez inną rejestrację, więc nie mógł zostać zarejestrowany dla Ciebie.",
+    "existingProtectedUntil": "Istniejąca rejestracja jest chroniona do"
+  },
+  "disputes": {
+    "title": "Moje spory",
+    "intro": "Spory dotyczące własności zgłoszone przez Ciebie w przypadku klientów, którym odmówiono współpracy ze względu na duplikaty. Administrator Leadrat sprawdza każdy z nich.",
+    "empty": "Nie zgłosiłeś żadnych sporów. Jeśli przyprowadzony przez Ciebie klient zostanie odrzucony jako duplikat, możesz zakwestionować tę decyzję na podstawie wyniku rejestracji.",
+    "columns": {
+      "dispute": "Spór",
+      "reason": "Twój powód",
+      "outcome": "Wynik"
+    },
+    "status": {
+      "OPEN": "W trakcie przeglądu",
+      "UPHELD": "Nie na twoją korzyść",
+      "OVERTURNED": "Zdecydowano na twoją korzyść",
+      "WITHDRAWN": "Zamknięty w sobie"
+    },
+    "awaitingReview": "Czekam na opinię administratora",
+    "openNewLead": "Otwórz swojego potencjalnego klienta {{id}}",
+    "withdraw": "Wycofać",
+    "withdrawConfirm": "Wycofać spór w sprawie {{name}} ? Obecny właściciel pozostaje bez zmian.",
+    "raise": "Spór o własność",
+    "raiseTitle": "Spór o własność",
+    "raiseHint": "Jeśli ten klient przyszedł do Ciebie pierwszy, wyjaśnij dlaczego. Administrator Leadrat sprawdzi to; jeśli podejmą decyzję na Twoją korzyść, lead zostanie zarejestrowany dla Ciebie.",
+    "reasonLabel": "Dlaczego ten klient jest Twój?",
+    "reasonMin_one": "Co najmniej {{count}} znak.",
+    "reasonMin_few": "Co najmniej {{count}} znaków.",
+    "reasonMin_many": "Co najmniej {{count}} znaków.",
+    "reasonMin_other": "Co najmniej {{count}} znaków.",
+    "submit": "Wyślij spór",
+    "notProtected": "Nikt już nie zapewnia ochrony temu klientowi w ramach tego projektu - możesz zarejestrować potencjalnego klienta już teraz.",
+    "raised": "Spór {{id}} wysłany do sprawdzenia.",
+    "viewAll": "Zobacz moje spory"
+  },
+  "dashboard": {
+    "title": "Panel",
+    "period": "Okres",
+    "lastDays_one": "{{count}} dzień",
+    "lastDays_few": "{{count}} dni",
+    "lastDays_many": "{{count}} dni",
+    "lastDays_other": "{{count}} dni",
+    "emptyTitle": "Powitanie! Nie masz jeszcze żadnych potencjalnych klientów.",
+    "emptyHint": "Zarejestruj swojego pierwszego leada – tutaj pojawią się Twoje plany, rezerwacje i terminy ochrony.",
+    "tiles": {
+      "leads": "Całkowita liczba potencjalnych klientów",
+      "newInPeriod_one": "{{count}} nowości w tym okresie",
+      "newInPeriod_few": "{{count}} nowości w tym okresie",
+      "newInPeriod_many": "{{count}} nowości w tym okresie",
+      "newInPeriod_other": "{{count}} nowości w tym okresie",
+      "accepted": "Przyjęty",
+      "booked": "Zarezerwowane",
+      "bookedInPeriod_one": "{{count}} zarezerwowane w tym okresie",
+      "bookedInPeriod_few": "{{count}} zarezerwowane w tym okresie",
+      "bookedInPeriod_many": "{{count}} zarezerwowane w tym okresie",
+      "bookedInPeriod_other": "{{count}} zarezerwowane w tym okresie",
+      "conversion": "Konwersja",
+      "conversionHint": "Zarezerwowane leady jako część zaakceptowanych leadów",
+      "protectedNow": "Teraz chroniony",
+      "expiringSoon_one": "Ochrona kończy się za {{count}} dzień",
+      "expiringSoon_few": "Ochrona kończy się za {{count}} dni",
+      "expiringSoon_many": "Ochrona kończy się za {{count}} dni",
+      "expiringSoon_other": "Ochrona kończy się za {{count}} dni",
+      "disputedNow": "Kwestionowane przez innych",
+      "disputedNowHint": "Twoi potencjalni klienci z otwartym sporem dotyczącym własności od innego partnera",
+      "commissionEligible": "Kwalifikująca się prowizja",
+      "commissionCancelled_one": "{{count}} anulowano",
+      "commissionCancelled_few": "{{count}} anulowano",
+      "commissionCancelled_many": "{{count}} anulowano",
+      "commissionCancelled_other": "{{count}} anulowano"
+    },
+    "chart": {
+      "title_one": "Rejestracje i rezerwacje dziennie - ostatni {{count}} dzień",
+      "title_few": "Rejestracje i rezerwacje dziennie - ostatnie {{count}} dni",
+      "title_many": "Rejestracje i rezerwacje dziennie - ostatnie {{count}} dni",
+      "title_other": "Rejestracje i rezerwacje dziennie - ostatnie {{count}} dni",
+      "registrations": "Rejestracje",
+      "bookings": "Rezerwacje"
+    },
+    "byStage": "Prowadzi według statusu",
+    "bySource": "Prowadzi według źródła",
+    "byReferral": "Prowadzi według statusu polecenia",
+    "myDisputes": "Podniesione przez Ciebie spory",
+    "noDisputes": "Nie zgłoszono żadnych sporów.",
+    "unknown": "Nie ustawiono",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Zewnętrzny CRM (symulowany)",
+      "PARTNER_CRM": "Dodane przez Twój zespół",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integracja",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Ochrona wygasa w ciągu następnego {{count}} dnia",
+    "expiringTitle_few": "Ochrona wygaśnie w ciągu najbliższych {{count}} dni",
+    "expiringTitle_many": "Ochrona wygaśnie w ciągu najbliższych {{count}} dni",
+    "expiringTitle_other": "Ochrona wygaśnie w ciągu najbliższych {{count}} dni",
+    "expiringEmpty": "Żaden lead nie traci w tym oknie swojej ochrony."
   }
 }

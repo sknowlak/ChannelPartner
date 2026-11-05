@@ -49,8 +49,73 @@
       "newPartnerId": "ID itsva yeMudiwa",
       "reason": "Chikonzero (chinodiwa)",
       "apply": "Shandisa Kupfuura",
-      "applying": "Kunyorera..."
+      "applying": "Kunyorera...",
+      "cancelBookingHint": "Kukanzura kunokombidza kuti kubhuka uye komisheni yaro yakakanzurwa, inopetudza muridzi wekushanda kune mumwe, uye inorega muvaki abhuka kutungamira uku zvakare.",
+      "cancelBookingConfirm": "Kanzura kubhuka uku? Komisheni yaro inokanzurwawo. Izvi zvinonyorwa ngezina rako nechikonzero."
     },
-    "timelineTitle": "Nguwa yekuongorora (kunyoreswa uku)"
+    "timelineTitle": "Nguwa yekuongorora (kunyoreswa uku)",
+    "bookingStatus": "Chimiro chekubhuka",
+    "commissionAttribution": "Kupa kweKomishini",
+    "disputeOpen": "Kukakavadzana kwemuridzi kwakavhurika pamutengi uyu - umweni mudiwa unoti ndezvavo. Zvinosarudzwa pane peji yeKukakavadzana.",
+    "viewDisputes": "Ona kukakavadzana .",
+    "cancellation": {
+      "title": "Kubhuka kwakakanzurwa",
+      "hint": "Kubhuka uye komisheni yaro inokanzurwa; muridzi wekushanda wadzoka nemumwe uye muvaki anogona kubhuka kutungamirira uku zvakare.",
+      "at": "Yakakanzurwa pa .",
+      "by": "Yakakanzurwa nge .",
+      "reason": "Chizato"
+    }
+  },
+  "disputes": {
+    "title": "Kukakavadzana kweUridzi",
+    "hint": "Mumwe uyo kunyoreswa kwake kwakarambwa seyakadzokororwa anokona kukakavara kuti ndiani muridzi wemutengi. Ongorora mativi ese maviri uye usarudze.",
+    "statusFilter": "Kukakavadzana mamiriro",
+    "allStatuses": "Zvese mamiriro",
+    "empty": "Hapana kukakavara nechimiro ichi.",
+    "columns": {
+      "dispute": "Kuyita muphikisano",
+      "customer": "Mutengi",
+      "project": "Chirongwa",
+      "raisedBy": "Kurerwa nge .",
+      "heldBy": "Muridzi wemazuva ano .",
+      "status": "Chithado",
+      "raisedAt": "Kurerwa pa ."
+    },
+    "detail": {
+      "title": "Kukakavadzana {{id}}",
+      "raisedOn": "Yakasimudzwa {{date}}",
+      "raisingTitle": "Kurerwa nge .",
+      "holderTitle": "Muridzi wemazuva ano .",
+      "partner": "Vanozwanana",
+      "raisedBy": "Yakatumirwa nge .",
+      "customerName": "Mutengi",
+      "mobile": "Mujiyo",
+      "alternateMobile": "Imweni nharembozha",
+      "email": "Email",
+      "project": "Chirongwa",
+      "reason": "Chikonzero chavo .",
+      "registration": "Kunyoreswa",
+      "registeredAt": "Yakanyoreswa pa .",
+      "referral": "Kuendeswa",
+      "heldMissing": "Kunyoreswa kwakaitwa hakuna kuwanikwa.",
+      "resolutionTitle": "Mutemo",
+      "outcome": "Zvokugumisira",
+      "note": "Kouvonesesa",
+      "decidedBy": "Zvakasarudzwa nge .",
+      "decidedAt": "Yakasarudzwa pa .",
+      "newRegistration": "Kunyoreswa patsva .",
+      "decideTitle": "Sarudza gakava iri .",
+      "noteLabel": "Chinyorwa chinotsanangura chisarudzo (chinodiwa) .",
+      "noteRequired": "Nyora chinyorwa kuti usarudze.",
+      "uphold": "Kutsigira",
+      "overturn": "Kupindukira",
+      "upholdEffect": "{{holder}} anochengeta mutengi. Kukakavadzana kwakavharwa uye hapana chimwe chinochinja.",
+      "overturnEffect": "{{holder}} 's kudzivirira kwakadzokororwa kunopera zvino uye mutengi akanyoreswa {{partner}} sekunyoreswa patsva.",
+      "heldBookedHelp": "mutengi uyu akabhukwa kuburikidza muridzi iye zvino. Kanzura iyo bhuku kutanga (Admin Override pane kunyoreswa), uye wopinduka:",
+      "confirmTitle": "Unogwinyiswa ere?",
+      "confirmUphold": "Ehe, sigira .",
+      "confirmOverturn": "Eya, kupindukira .",
+      "back": "Kupetuka kune Kukakavadzana ."
+    }
   }
 }

@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Lefoglalt",
-    "pending": "Függőben levő"
+    "pending": "Függőben levő",
+    "status": {
+      "CONFIRMED": "Lefoglalt",
+      "CANCELLED": "A foglalás törölve"
+    }
   },
   "assign": {
     "unassigned": "Nincs hozzárendelve",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Még nincs projekt (nem hivatkozott)",
-    "notInList": "{{project}} (nincs a projektlistában)"
+    "notInList": "{{project}} (nincs a projektlistában)",
+    "protectionDays_one": "{{count}} napos védelem",
+    "protectionDays_other": "{{count}} napos védelem"
   },
   "journey": {
     "customer": "Vevő",
@@ -76,7 +82,14 @@
     "progressHistory": "Haladás története",
     "timesIn": "(időzóna: {{timezone}} )",
     "backToMyLeads": "Vissza a saját vezetőimhez",
-    "editLead": "Lead szerkesztése"
+    "editLead": "Lead szerkesztése",
+    "disputeBanner": "Egy másik partner vitatta ennek az ügyfélnek a tulajdonjogát. A Leadrat adminisztrátora felülvizsgálja – az Ön védelme mindaddig érvényben marad, amíg nem döntenek.",
+    "booking": "Foglalás",
+    "commission": "Jutalék",
+    "notBooked": "Nincs lefoglalva",
+    "cancelledOn": "Lemondás dátuma: {{date}} .",
+    "cancelReason": "Ok: {{reason}}",
+    "cancelledHint": "Az építtető törölte a foglalást – a működési tulajdonjog visszatért Önhöz, és a jutalékjogosultság megszűnt. Visszaáll, ha a vezetést újra lefoglalják."
   },
   "referral": {
     "NOT_REFERRED": "Nincs utalva (nincs projekt)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "A Builder elfogadta az ajánlást",
       "REFERRAL_REJECTED": "Builder elutasította az ajánlást. Ok: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "A rendszergazda korán kiadta a duplikált védelmet. Ok: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Az adminisztrátor átadta a regisztrációt a következőről: {{from}} a következőre: {{to}} . Ok: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Az adminisztrátor átadta a regisztrációt a következőről: {{from}} a következőre: {{to}} . Ok: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Egy másik partner ismétlődő regisztrációs kísérlete elutasításra került",
+      "BOOKING_CANCELLED": "A foglalás törölve. Ok: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "A működési tulajdonjog visszakerült a partnerhez",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "A jutalékjogosultság a foglalással törölve",
+      "COMMISSION_ELIGIBILITY_RESTORED": "A jutalékjogosultság visszaállt az új foglaláshoz",
+      "OWNERSHIP_DISPUTE_RAISED": "Egy másik partner vitatta ennek az ügyfélnek a tulajdonjogát – a Leadrat adminisztrátor felülvizsgálja",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Az ügyféllel kapcsolatos tulajdonjogi vitát visszavonták – az Ön tulajdonjoga változatlan",
+      "OWNERSHIP_DISPUTE_UPHELD": "Az ügyfél tulajdonjogi vitáját felülvizsgáltuk – tulajdonjogát megerősítettük",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Azután regisztrálták, hogy tulajdonjogi vitája az Ön javára döntött. Megjegyzés: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "A védelem megszűnt: egy tulajdonosi vita egy másik partner javára dőlt el. Megjegyzés: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Ez a telefonszám nem érvényes a következő országban: {{country}} .",
     "COUNTRY_MISMATCH": "Kérjük, válassza ki a megfelelő országkódot.",
     "NOT_MOBILE": "Kérjük, mobiltelefonszámot adjon meg, ne vezetékes számot."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Jutalék jogosult",
+      "PENDING": "Bizottság függőben",
+      "CANCELLED": "A jutalék törölve"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Neked tulajdonítva",
+      "DISPUTED": "A hozzárendelés vitatott"
+    }
+  },
+  "result": {
+    "none": "Nincs megjeleníthető regisztrációs eredmény. Először regisztráljon egy leadot.",
+    "acceptedTitle": "Ólom regisztrálva",
+    "rejectedTitle": "Ólom nincs regisztrálva",
+    "protectionWindow": "Védelmi ablak",
+    "protectedUntil": "Védett ig",
+    "openLead": "Nyissa meg a vezetőt",
+    "addAnother": "Adjon hozzá egy másik vezetéket",
+    "duplicate": "Másolat – már védett",
+    "duplicateHint": "Ez az ügyfél egy másik regisztrációval már védett ehhez a projekthez, ezért nem lehetett regisztrálni az Ön számára.",
+    "existingProtectedUntil": "A meglévő regisztráció védett ig"
+  },
+  "disputes": {
+    "title": "Saját vitáim",
+    "intro": "Tulajdonjogi viták, amelyeket ismétlődőként elutasított ügyfelekkel kapcsolatban. Egy Leadrat adminisztrátor mindegyiket felülvizsgálja.",
+    "empty": "Ön nem emelt vitát. Ha egy Ön által behozott vásárlót másodpéldányként elutasítanak, azt a regisztráció eredményéből vitathatja.",
+    "columns": {
+      "dispute": "Vita",
+      "reason": "Az okod",
+      "outcome": "Eredmény"
+    },
+    "status": {
+      "OPEN": "Felülvizsgálat alatt",
+      "UPHELD": "Nem az ön javára",
+      "OVERTURNED": "Az Ön javára döntött",
+      "WITHDRAWN": "Visszavont"
+    },
+    "awaitingReview": "Várom az admin véleményét",
+    "openNewLead": "Nyissa meg a potenciális ügyfeleket {{id}}",
+    "withdraw": "Visszavonás",
+    "withdrawConfirm": "Visszavonja a vitát a következővel kapcsolatban: {{name}} ? A jelenlegi tulajdonjog megmarad.",
+    "raise": "A tulajdonjog vitája",
+    "raiseTitle": "A tulajdonjog vitája",
+    "raiseHint": "Ha ez az ügyfél először fordult Önhöz, indokolja meg, miért. A Leadrat adminisztrátor felülvizsgálja; ha az Ön javára döntenek, a vezetést az Ön számára regisztrálják.",
+    "reasonLabel": "Miért a tiéd ez az ügyfél?",
+    "reasonMin_one": "Legalább {{count}} karakter.",
+    "reasonMin_other": "Legalább {{count}} karakter.",
+    "submit": "Vita küldése",
+    "notProtected": "Ennél a projektnél már senki sem védi ezt az ügyfelet – most regisztrálhatja a vezetőt.",
+    "raised": "A {{id}} vita elküldve felülvizsgálatra.",
+    "viewAll": "Vitáim megtekintése"
+  },
+  "dashboard": {
+    "title": "Műszerfal",
+    "period": "Időszak",
+    "lastDays_one": "{{count}} nap",
+    "lastDays_other": "{{count}} nap",
+    "emptyTitle": "Üdvözöljük! Még nincsenek potenciális ügyfelek.",
+    "emptyHint": "Regisztrálja első érdeklődőjét – a folyamat, a foglalások és a védelmi határidők itt fognak megjelenni.",
+    "tiles": {
+      "leads": "Összes lead",
+      "newInPeriod_one": "{{count}} új ebben az időszakban",
+      "newInPeriod_other": "{{count}} új ebben az időszakban",
+      "accepted": "Elfogadott",
+      "booked": "Lefoglalt",
+      "bookedInPeriod_one": "{{count}} lefoglalt ebben az időszakban",
+      "bookedInPeriod_other": "{{count}} lefoglalt ebben az időszakban",
+      "conversion": "Átalakítás",
+      "conversionHint": "A lefoglalt leadek az elfogadott potenciális ügyfelek arányaként",
+      "protectedNow": "Most védett",
+      "expiringSoon_one": "A védelem {{count}} nap múlva ér véget",
+      "expiringSoon_other": "A védelem {{count}} nap múlva lejár",
+      "disputedNow": "Mások vitatják",
+      "disputedNowHint": "A potenciális ügyfelek egy másik partner által indított tulajdonjogi vitával kapcsolatban",
+      "commissionEligible": "Jutalék jogosult",
+      "commissionCancelled_one": "{{count}} törölve",
+      "commissionCancelled_other": "{{count}} törölve"
+    },
+    "chart": {
+      "title_one": "Regisztrációk és foglalások naponta – utolsó {{count}} nap",
+      "title_other": "Regisztrációk és foglalások naponta – utolsó {{count}} nap",
+      "registrations": "Regisztrációk",
+      "bookings": "Foglalások"
+    },
+    "byStage": "Státusz szerint vezet",
+    "bySource": "Forrás szerint vezet",
+    "byReferral": "Az ajánlási állapot alapján vezet",
+    "myDisputes": "Felvetett viták",
+    "noDisputes": "Nem merült fel vita.",
+    "unknown": "Nincs beállítva",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Külső CRM (szimulált)",
+      "PARTNER_CRM": "Csapatod hozzáadta",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integráció",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "A védelem a következő {{count}} napon belül lejár",
+    "expiringTitle_other": "A védelem a következő {{count}} napon belül lejár",
+    "expiringEmpty": "Ebben az ablakban egyetlen ólom sem veszíti el védelmét."
   }
 }

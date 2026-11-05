@@ -29,7 +29,8 @@
       "registered": "Регистрацияламмыт"
     },
     "booked": "Сакаастаммыт",
-    "empty": "Пока реферал суох."
+    "empty": "Пока реферал суох.",
+    "bookingCancelled": "Бронирование тохтотуллубут"
   },
   "detail": {
     "customer": "Клиент",
@@ -52,9 +53,15 @@
     "notice": {
       "booked": "Бронирование бигэргэтиллибит.",
       "accepted": "Направление ылыллыбыт.",
-      "rejected": "Направление ылыллыбата."
+      "rejected": "Направление ылыллыбата.",
+      "bookingCancelled": "Бронирование отменено."
     },
-    "backToReferrals": "Рефералларга төннүү"
+    "backToReferrals": "Рефералларга төннүү",
+    "bookingCancelled": "Бронирование тохтотуллубут",
+    "cancelBooking": "Бронированиены тохтот",
+    "cancelReasonLabel": "Ууратыы төрүөтэ (партнерга көрдөрүллэр) *",
+    "cancelBookingHint": "Оперативнай бас билии партнерга төннөр уонна кинилэр хамыыһыйаҕа ылыы бырааптара суох оҥоһуллар. Сүрүн оруолу кэлин эмиэ сакаастыахха сөп.",
+    "cancelBookingConfirm": "Бронированиены тохтот"
   },
   "history": {
     "title": "История",
@@ -81,7 +88,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Хамыыһыйаҕа киирэр быраап оҥоһулунна",
       "HANDOVER_COMPLETED": "Бэриллии түмүктэннэ",
       "ADMIN_PROTECTION_RELEASED": "Админ дубликаттан көмүскэли эрдэ таһаарбыта. Биричиинэ: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Админ регистрацияны {{from}} -тан {{to}} -ка көһөрбүтэ. Биричиинэ: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Админ регистрацияны {{from}} -тан {{to}} -ка көһөрбүтэ. Биричиинэ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Атын партнер хатыланар регистрацияны оҥоро сатааһына ылыллыбатаҕа",
+      "BOOKING_CANCELLED": "Бронирование отменено. Биричиинэ: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Оперативнай бас билии партнерга төннөрүллүбүтэ",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Сакаастааһыҥҥа хамыыһыйа ылыы бырааба суох буолла",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Саҥа сакаастааһыҥҥа хамыыһыйа ылыы бырааба төннөрүллүбүтэ"
     }
   }
 }

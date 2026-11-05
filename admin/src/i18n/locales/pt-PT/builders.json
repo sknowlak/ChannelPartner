@@ -43,7 +43,9 @@
       "name": "Nome",
       "city": "Cidade",
       "status": "Estatuto",
-      "actions": "Ações"
+      "actions": "Ações",
+      "protection": "Proteção duplicada",
+      "matchOn": "Correspondência de duplicados ativada"
     },
     "closeReferrals": "Fechar para referências",
     "reopen": "Reabrir",
@@ -55,6 +57,27 @@
       "add": "Adicionar projeto",
       "created": "Criado {{name}} ."
     },
-    "back": "Voltar para Construtores"
+    "back": "Voltar para Construtores",
+    "protection": {
+      "days_one": "{{count}} dia",
+      "days_many": "{{count}} dias",
+      "days_other": "{{count}} dias",
+      "globalDays_one": "Padrão global ( {{count}} dia)",
+      "globalDays_many": "Padrão global ( {{count}} dias)",
+      "globalDays_other": "Padrão global ( {{count}} dias)",
+      "globalDefault": "Padrão global",
+      "placeholder": "Dias de proteção (vazio = padrão global)",
+      "saved": "Proteção duplicada atualizada para {{name}} .",
+      "hint": "Proteção duplicada: 1-3650 dias ou deixe em branco para utilizar o padrão global em Definições. A alteração aplica-se apenas a novos registos – os existentes mantêm a sua validade."
+    },
+    "matching": {
+      "global": "Padrão global",
+      "globalWith": "Padrão global ( {{fields}} )",
+      "mobile": "Número de telemóvel",
+      "email": "E-mail",
+      "both": "Número de telemóvel + e-mail",
+      "saved": "Correspondência duplicada atualizada para {{name}}",
+      "hint": "Que detalhes fazem com que dois registos sejam o mesmo cliente para um projeto. As alterações aplicam-se a cheques duplicados a partir de agora; a protecção existente não é afectada."
+    }
   }
 }

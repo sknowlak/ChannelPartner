@@ -43,7 +43,9 @@
       "name": "Ady",
       "city": "Şäher",
       "status": ".Agdaý",
-      "actions": "Hereketler"
+      "actions": "Hereketler",
+      "protection": "Gorag",
+      "matchOn": "Dublikatlar gabat gelýär"
     },
     "closeReferrals": "Salgylar üçin ýapyň",
     "reopen": "Aç",
@@ -55,6 +57,25 @@
       "add": "Taslama goşuň",
       "created": "{{name}} döredildi."
     },
-    "back": "Gurluşykçylara gaýdyp geliň"
+    "back": "Gurluşykçylara gaýdyp geliň",
+    "protection": {
+      "days_one": "{{count}} gün",
+      "days_other": "{{count}} günler",
+      "globalDays_one": "Global default ( {{count}} gün)",
+      "globalDays_other": "Global default ( {{count}} günler)",
+      "globalDefault": "Global default",
+      "placeholder": "Gorag günleri (boş = global default)",
+      "saved": "{{name}} for üçin täzelenen gorag.",
+      "hint": "Gaýtalama goragy: 1-3650 gün, ýa-da Sazlamalardan global standarty ulanmak üçin boş goýuň. Üýtgetme diňe täze hasaba alyşlara degişlidir - bar bolanlar möhletini saklaýar."
+    },
+    "matching": {
+      "global": "Global default",
+      "globalWith": "Global default ( {{fields}} )",
+      "mobile": "Jübi belgisi",
+      "email": "E-poçta iberiň",
+      "both": "Jübi belgisi + e-poçta",
+      "saved": "{{name}} for üçin täzelenen gabat gelýän gabat gelýän",
+      "hint": "Haýsy jikme-jiklikler bir taslama üçin bir müşderini iki hasaba alýar. Üýtgeşmeler mundan beýläk köpeltmek üçin ulanylýar; bar bolan gorag täsir etmeýär."
+    }
   }
 }

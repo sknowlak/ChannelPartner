@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "bron edildi",
-    "pending": "Gözlənir"
+    "pending": "Gözlənir",
+    "status": {
+      "CONFIRMED": "bron edildi",
+      "CANCELLED": "Rezervasiya ləğv edildi"
+    }
   },
   "assign": {
     "unassigned": "Təyin edilmədi",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Hələ layihə yoxdur (istinad edilməyib)",
-    "notInList": "{{project}} (layihə siyahısında deyil)"
+    "notInList": "{{project}} (layihə siyahısında deyil)",
+    "protectionDays_one": "{{count}} -günlük qorunma",
+    "protectionDays_other": "{{count}} -günlük qorunma"
   },
   "journey": {
     "customer": "Müştəri",
@@ -76,7 +82,14 @@
     "progressHistory": "Tərəqqi Tarixi",
     "timesIn": "( {{timezone}} vaxt)",
     "backToMyLeads": "Rəhbərlərim səhifəsinə qayıt",
-    "editLead": "Rəhbəri Redaktə et"
+    "editLead": "Rəhbəri Redaktə et",
+    "disputeBanner": "Digər partnyor bu müştərinin mülkiyyətində mübahisə edir. Leadrat admini onu nəzərdən keçirir - onlar qərar verənə qədər müdafiəniz yerində qalacaq.",
+    "booking": "Rezervasyon",
+    "commission": "komissiya",
+    "notBooked": "rezervasiya edilməyib",
+    "cancelledOn": "{{date}} tarixində ləğv edilib.",
+    "cancelReason": "Səbəb: {{reason}}",
+    "cancelledHint": "İnşaatçı sifarişi ləğv etdi - əməliyyat mülkiyyəti sizə qayıdır və komissiya hüququ ləğv edilir. Lider yenidən sifariş edildikdə bərpa olunur."
   },
   "referral": {
     "NOT_REFERRED": "İstinad edilməyib (layihə yoxdur)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "İnşaatçı müraciəti qəbul etdi",
       "REFERRAL_REJECTED": "İnşaatçı təklifi rədd etdi. Səbəb: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin dublikat qorumasını erkən buraxdı. Səbəb: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin qeydiyyatı {{from}} dən {{to}} a təyin etdi. Səbəb: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin qeydiyyatı {{from}} dən {{to}} a təyin etdi. Səbəb: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Başqa tərəfdaş tərəfindən dublikat qeydiyyat cəhdi rədd edildi",
+      "BOOKING_CANCELLED": "Rezervasiya ləğv edildi. Səbəb: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Əməliyyat mülkiyyəti tərəfdaşa qaytarıldı",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Komissiya uyğunluğu rezervasiya ilə ləğv edilir",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Yeni rezervasiya üçün komissiya hüququ bərpa edildi",
+      "OWNERSHIP_DISPUTE_RAISED": "Digər tərəfdaş bu müştərinin mülkiyyəti ilə mübahisə edir - Leadrat admini onu nəzərdən keçirəcək",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Bu müştəri ilə bağlı mülkiyyət mübahisəsi geri götürüldü - sahibliyiniz dəyişməyib",
+      "OWNERSHIP_DISPUTE_UPHELD": "Bu müştəri ilə bağlı mülkiyyət mübahisəsi nəzərdən keçirildi - sahibliyiniz təsdiqləndi",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Mülkiyyət mübahisəniz xeyrinizə həll edildikdən sonra qeydiyyata alındı. Qeyd: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Qoruma sona çatdı: mülkiyyət mübahisəsi başqa tərəfdaşın xeyrinə həll edildi. Qeyd: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Bu telefon nömrəsi {{country}} üçün keçərli deyil.",
     "COUNTRY_MISMATCH": "Zəhmət olmasa düzgün ölkə kodunu seçin.",
     "NOT_MOBILE": "Zəhmət olmasa, stasionar deyil, mobil nömrə daxil edin."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komissiya uyğundur",
+      "PENDING": "Komissiya gözləyir",
+      "CANCELLED": "Komissiya ləğv edildi"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Sizə aid edilir",
+      "DISPUTED": "Atribut mübahisəlidir"
+    }
+  },
+  "result": {
+    "none": "Göstəriləcək qeydiyyat nəticəsi yoxdur. Əvvəlcə aparıcını qeydiyyatdan keçirin.",
+    "acceptedTitle": "Aparıcı qeydə alınıb",
+    "rejectedTitle": "Aparıcı qeydiyyatdan keçməyib",
+    "protectionWindow": "Qoruma Pəncərəsi",
+    "protectedUntil": "qədər qorunur",
+    "openLead": "Açıq aparıcı",
+    "addAnother": "Başqa bir aparıcı əlavə edin",
+    "duplicate": "Dublikat - artıq qorunur",
+    "duplicateHint": "Bu müştəri artıq bu layihə üçün başqa qeydiyyatla qorunur, ona görə də o, sizin üçün qeydiyyata alına bilməz.",
+    "existingProtectedUntil": "Mövcud qeydiyyat qədər qorunur"
+  },
+  "disputes": {
+    "title": "Mənim mübahisələrim",
+    "intro": "Dublikat kimi rədd edilən müştərilər üçün qaldırdığınız mülkiyyət mübahisələri. Leadrat admin hər birini nəzərdən keçirir.",
+    "empty": "Heç bir mübahisə qaldırmamısınız. Əgər gətirdiyiniz müştəriyə dublikat kimi rədd cavabı verilirsə, siz qeydiyyat nəticəsindən onunla mübahisə edə bilərsiniz.",
+    "columns": {
+      "dispute": "Mübahisə",
+      "reason": "Səbəbiniz",
+      "outcome": "Nəticə"
+    },
+    "status": {
+      "OPEN": "Nəzərdən keçirilir",
+      "UPHELD": "Sizin xeyrinizə deyil",
+      "OVERTURNED": "Sizin xeyrinizə qərar verdi",
+      "WITHDRAWN": "Geri çəkildi"
+    },
+    "awaitingReview": "Admin rəyini gözləyirik",
+    "openNewLead": "Liderinizi açın {{id}}",
+    "withdraw": "geri çəkilmək",
+    "withdrawConfirm": "{{name}} üçün mübahisənizi geri götürün? Mövcud mülkiyyət olduğu kimi qalır.",
+    "raise": "Mülkiyyətlə mübahisə edin",
+    "raiseTitle": "Mülkiyyətlə mübahisə edin",
+    "raiseHint": "Əgər bu müştəri ilk sizə gəlibsə, bunun səbəbini izah edin. Leadrat admini onu nəzərdən keçirəcək; onlar sizin xeyrinizə qərar versələr, lider sizin üçün qeydə alınır.",
+    "reasonLabel": "Bu müştəri niyə sizindir?",
+    "reasonMin_one": "Ən azı {{count}} simvol.",
+    "reasonMin_other": "Ən azı {{count}} simvol.",
+    "submit": "Mübahisə göndərin",
+    "notProtected": "Artıq heç kim bu layihə üçün bu müştərini qoruya bilməz - siz aparıcını indi qeydiyyatdan keçirə bilərsiniz.",
+    "raised": "{{id}} mübahisəsi nəzərdən keçirilmək üçün göndərildi.",
+    "viewAll": "Mübahisələrimə baxın"
+  },
+  "dashboard": {
+    "title": "İdarə paneli",
+    "period": "Dövr",
+    "lastDays_one": "{{count}} gün",
+    "lastDays_other": "{{count}} gün",
+    "emptyTitle": "Xoş gəldiniz! Sizdə hələ heç bir aparıcı yoxdur.",
+    "emptyHint": "İlk potensialınızı qeydiyyatdan keçirin - boru kəməriniz, sifarişləriniz və mühafizə müddətləriniz burada görünəcək.",
+    "tiles": {
+      "leads": "Ümumi liderlər",
+      "newInPeriod_one": "Bu dövrdə {{count}} yeni",
+      "newInPeriod_other": "Bu dövrdə {{count}} yeni",
+      "accepted": "Qəbul edildi",
+      "booked": "bron edildi",
+      "bookedInPeriod_one": "Bu müddətdə {{count}} sifariş edilib",
+      "bookedInPeriod_other": "Bu müddətdə {{count}} rezervasiya edilib",
+      "conversion": "Dönüşüm",
+      "conversionHint": "Qəbul edilmiş potensial müştərilərin payı kimi rezervasiya edilmiş potensial müştərilər",
+      "protectedNow": "İndi qorunur",
+      "expiringSoon_one": "Qoruma {{count}} günə başa çatır",
+      "expiringSoon_other": "Qoruma {{count}} günə başa çatır",
+      "disputedNow": "Başqaları tərəfindən mübahisə edilir",
+      "disputedNowHint": "Başqa tərəfdaşın açıq sahiblik mübahisəsi ilə liderlik edirsiniz",
+      "commissionEligible": "Komissiya uyğundur",
+      "commissionCancelled_one": "{{count}} ləğv edildi",
+      "commissionCancelled_other": "{{count}} ləğv edildi"
+    },
+    "chart": {
+      "title_one": "Gündəlik qeydiyyat və sifarişlər - son {{count}} gün",
+      "title_other": "Gündəlik qeydiyyat və sifarişlər - son {{count}} gün",
+      "registrations": "Qeydiyyatlar",
+      "bookings": "Rezervasyonlar"
+    },
+    "byStage": "Statusuna görə liderdir",
+    "bySource": "Mənbəyə görə rəhbərlik edir",
+    "byReferral": "İstinad statusuna görə liderlik edir",
+    "myDisputes": "Qaldırdığınız mübahisələr",
+    "noDisputes": "Heç bir mübahisə yaranmadı.",
+    "unknown": "Qurulmayıb",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Xarici CRM (imitasiya edilmiş)",
+      "PARTNER_CRM": "Komandanız tərəfindən əlavə edilib",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "İnteqrasiya",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Qoruma müddəti növbəti {{count}} gündə bitir",
+    "expiringTitle_other": "Qoruma müddəti növbəti {{count}} gündə bitir",
+    "expiringEmpty": "Bu pəncərədə heç bir qurğuşun müdafiəsini itirmir."
   }
 }

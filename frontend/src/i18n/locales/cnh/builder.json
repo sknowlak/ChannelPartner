@@ -30,7 +30,8 @@
       "registered": "Min cazin"
     },
     "booked": "Book tuahmi",
-    "empty": "Referral a um rih lo."
+    "empty": "Referral a um rih lo.",
+    "bookingCancelled": "Booking cancel a si cang"
   },
   "detail": {
     "customer": "Thil cawtu",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Booking fehter a si cang.",
       "accepted": "Referral cohlan a si.",
-      "rejected": "Referal cohlan a si lo."
+      "rejected": "Referal cohlan a si lo.",
+      "bookingCancelled": "Booking cancel a si."
     },
-    "backToReferrals": "Referrals ah kir tthan"
+    "backToReferrals": "Referrals ah kir tthan",
+    "bookingCancelled": "Booking cancel a si cang",
+    "cancelBooking": "Booking Cancel",
+    "cancelReasonLabel": "Cancel tuahnak a ruang (hawikom sinah langhter) *",
+    "cancelBookingHint": "Riantuannak ngeihnak cu hawikom sinah a kir i an commission covo cu hrawh a si. Hruaitu cu a hnu ah book tthan khawh a si.",
+    "cancelBookingConfirm": "Booking kha ngol"
   },
   "history": {
     "title": "Sulhnu tuanbia",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Commission tlamtlinnak ser",
       "HANDOVER_COMPLETED": "Pekchanhnak lim a si cang",
       "ADMIN_PROTECTION_RELEASED": "Admin nih aa khatmi kilvennak kha tuan tein a chuah. A ruang: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin nih {{from}} in {{to}} ah min cazin a thlen. A ruang: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin nih {{from}} in {{to}} ah min cazin a thlen. A ruang: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Hawikom dang nih aa khatmi min cazin khumh aa zuammi cu cohlan a si lo",
+      "BOOKING_CANCELLED": "Booking cancel a si. A ruang: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Riantuannak ngeihnak cu hawikom sinah pek tthan a si",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Booking tuahnak he commission hmuh khawhnak cu hrawh a si",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Booking thar caah commission tlamtlinnak pek tthan a si"
     }
   }
 }

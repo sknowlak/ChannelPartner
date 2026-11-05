@@ -30,7 +30,8 @@
       "registered": "Rejista"
     },
     "booked": "Booked",
-    "empty": "Ejelok armij ro rej jilkintok kiõ."
+    "empty": "Ejelok armij ro rej jilkintok kiõ.",
+    "bookingCancelled": "Booking eo emoj kansela"
   },
   "detail": {
     "customer": "Riwia",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Booking emoj kamool.",
       "accepted": "Referral kar bōk.",
-      "rejected": "Referral eo ejjelok."
+      "rejected": "Referral eo ejjelok.",
+      "bookingCancelled": "Booking eo emoj kansela."
     },
-    "backToReferrals": "Bar jeblak ñan Referral ko"
+    "backToReferrals": "Bar jeblak ñan Referral ko",
+    "bookingCancelled": "Booking eo emoj kansela",
+    "cancelBooking": "Kanne Booking",
+    "cancelReasonLabel": "Unin an kar kansela (kwalok ñan ri jerbal eo) *",
+    "cancelBookingHint": "Jerbal in bōk eddo ej jeblak ñan ri jerbal eo im maroñ eo air ñan bōk commission ej jolok. Lead eo emaron bar book tokelik.",
+    "cancelBookingConfirm": "Kanne booking eo"
   },
   "history": {
     "title": "Melele ko maanlok",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Commission eligibility kar kōmmane",
       "HANDOVER_COMPLETED": "Eṃōj kadedeḷọk leḷọk",
       "ADMIN_PROTECTION_RELEASED": "Admin ear kōtlok kein kōjparok ko ruo ilo ien eo mokta. Un: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin ear bar lelok registration jen {{from}} ñan {{to}} . Un: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin ear bar lelok registration jen {{from}} ñan {{to}} . Un: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Juon bar juon alen kar kajeoñ in register jen bar juon partner kar bōjrak",
+      "BOOKING_CANCELLED": "Booking eo emoj kansela. Un: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Jerbal in bōk eddo eo ej bar jeblak ñan ri jerbal eo",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kōttōpar in bōk koņaan kar kansela ippān booking eo",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Emōj an bar jeblak maroñ in bōk koņaan ilo booking eo ekãl"
     }
   }
 }

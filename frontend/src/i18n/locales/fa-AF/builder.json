@@ -30,7 +30,8 @@
       "registered": "ثبت شده"
     },
     "booked": "رزرو شده",
-    "empty": "هنوز هیچ ارجاعی وجود ندارد."
+    "empty": "هنوز هیچ ارجاعی وجود ندارد.",
+    "bookingCancelled": "ریزرف لغو شد"
   },
   "detail": {
     "customer": "مشتری",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "ریزرف کردن تایید شد.",
       "accepted": "ارجاع قبول شد.",
-      "rejected": "ارجاع رد شد."
+      "rejected": "ارجاع رد شد.",
+      "bookingCancelled": "ریزرف لغو شد."
     },
-    "backToReferrals": "برگشت به ارجاعات"
+    "backToReferrals": "برگشت به ارجاعات",
+    "bookingCancelled": "ریزرف لغو شد",
+    "cancelBooking": "لغو رزرو",
+    "cancelReasonLabel": "دلیل لغو (به شریک نشان داده شده است) *",
+    "cancelBookingHint": "مالکیت عملیاتی به شریک برمیگردد و واجد شرایط بودن کمیسیون آنها لغو میشود. پیشتاز بعداً دوباره ریزرف شده میتواند.",
+    "cancelBookingConfirm": "لغو رزرو"
   },
   "history": {
     "title": "تاریخ",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "واجد شرایط بودن کمیسیون ایجاد شد",
       "HANDOVER_COMPLETED": "تحویل تکمیل شد",
       "ADMIN_PROTECTION_RELEASED": "مدیر محافظت تکراری را زود منتشر کرد. دلیل: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "مدیر ثبت نام را از {{from}} به {{to}} دوباره اختصاص داد. دلیل: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "مدیر ثبت نام را از {{from}} به {{to}} دوباره اختصاص داد. دلیل: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "یک تلاش ثبت نام تکراری توسط یک شریک دیگر رد شد",
+      "BOOKING_CANCELLED": "ریزرف لغو شد. دلیل: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "مالکیت عملیاتی به شریک برگردانده شد",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "واجد شرایط بودن کمیسیون با رزرو لغو شد",
+      "COMMISSION_ELIGIBILITY_RESTORED": "واجد شرایط بودن کمیسیون برای ریزرف جدید بازگردانده شد"
     }
   }
 }

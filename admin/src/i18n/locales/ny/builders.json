@@ -43,7 +43,9 @@
       "name": "Dzina",
       "city": "Mzinda",
       "status": "Mkhalidwe",
-      "actions": "Zochita"
+      "actions": "Zochita",
+      "protection": "Chitetezo chobwereza",
+      "matchOn": "Zobwerezedwa zikufanana"
     },
     "closeReferrals": "Tsekani otumizira",
     "reopen": "Tsegulaninso",
@@ -55,6 +57,25 @@
       "add": "Add Project",
       "created": "Adapangidwa {{name}} ."
     },
-    "back": "Bwererani kwa Omanga"
+    "back": "Bwererani kwa Omanga",
+    "protection": {
+      "days_one": "{{count}} tsiku",
+      "days_other": "{{count}} masiku",
+      "globalDays_one": "Zosasintha zapadziko lonse lapansi (tsiku {{count}} )",
+      "globalDays_other": "Zosasintha zapadziko lonse (masiku {{count}} )",
+      "globalDefault": "Padziko lonse lapansi",
+      "placeholder": "Masiku achitetezo (chopanda = kusakhazikika kwapadziko lonse)",
+      "saved": "Chitetezo chobwereza chasinthidwa pa {{name}} .",
+      "hint": "Chitetezo chobwereza: masiku 1-3650, kapena siyani opanda kanthu kuti mugwiritse ntchito zosintha zapadziko lonse lapansi kuchokera ku Zikhazikiko. Kusintha kumagwira ntchito kwa olembetsa atsopano - omwe alipo amasunga nthawi yawo."
+    },
+    "matching": {
+      "global": "Padziko lonse lapansi",
+      "globalWith": "Zosasintha zapadziko lonse lapansi ( {{fields}} )",
+      "mobile": "Nambala yafoni yam'manja",
+      "email": "Imelo",
+      "both": "Nambala yam'manja + imelo",
+      "saved": "Zofananitsa zobwereza zasinthidwa za {{name}}",
+      "hint": "Zomwe zimapangitsa zolembetsa ziwiri kukhala kasitomala yemweyo wa polojekiti. Zosintha zikugwira ntchito pamacheke obwereza kuyambira pano; chitetezo chomwe chilipo sichikhudzidwa."
+    }
   }
 }

@@ -30,7 +30,8 @@
       "registered": "Registréiert"
     },
     "booked": "Reservéiert",
-    "empty": "Nach keng Referenzen."
+    "empty": "Nach keng Referenzen.",
+    "bookingCancelled": "Reservatioun annuléiert"
   },
   "detail": {
     "customer": "Client",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Buchung confirméiert.",
       "accepted": "Referenz ugeholl.",
-      "rejected": "Referenz refuséiert."
+      "rejected": "Referenz refuséiert.",
+      "bookingCancelled": "Reservatioun annuléiert."
     },
-    "backToReferrals": "Zréck op Referrals"
+    "backToReferrals": "Zréck op Referrals",
+    "bookingCancelled": "Reservatioun annuléiert",
+    "cancelBooking": "Booking annuléieren",
+    "cancelReasonLabel": "Grond fir Annulatioun (dem Partner gewisen) *",
+    "cancelBookingHint": "Operationell Besëtz geet zréck op de Partner an hir Kommissiounsberechtegung gëtt annuléiert. De Virsprong kann spéider nees gebucht ginn.",
+    "cancelBookingConfirm": "Annulatioun der Buchung"
   },
   "history": {
     "title": "Geschicht",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kommissioun Zoulag geschaf",
       "HANDOVER_COMPLETED": "Handover fäerdeg",
       "ADMIN_PROTECTION_RELEASED": "Den Admin huet duplizéiert Schutz fréi fräigelooss. Grond: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Den Administrateur huet d'Aschreiwung vun {{from}} op {{to}} ëmgezeechent. Grond: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Den Administrateur huet d'Aschreiwung vun {{from}} op {{to}} ëmgezeechent. Grond: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "En Duplikat Aschreiwungsversuch vun engem anere Partner gouf refuséiert",
+      "BOOKING_CANCELLED": "Reservatioun annuléiert. Grond: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operationell Besëtzer zréck op de Partner",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kommissioun Usproch mat der Buchung annuléiert",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kommissioun Zoulag restauréiert fir déi nei Buchung"
     }
   }
 }

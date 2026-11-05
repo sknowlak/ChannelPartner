@@ -30,7 +30,8 @@
       "registered": "Tz´ib´in"
     },
     "booked": "O tz´ok q´o´n",
-    "empty": "Myia junjen referencias."
+    "empty": "Myia junjen referencias.",
+    "bookingCancelled": "Ma tz´el tpa´n t-xnaq´tzb´il"
   },
   "detail": {
     "customer": "Loq´el",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Ma tz´ok q´o´n t-xilen.",
       "accepted": "A referencia tzaj k´amo´n.",
-      "rejected": "A referencia mya b´a´n."
+      "rejected": "A referencia mya b´a´n.",
+      "bookingCancelled": "Ma tz´el q´i´n t-xilen."
     },
-    "backToReferrals": "Tzaj meltz´aj kyi´j referencias"
+    "backToReferrals": "Tzaj meltz´aj kyi´j referencias",
+    "bookingCancelled": "Ma tz´el tpa´n t-xnaq´tzb´il",
+    "cancelBooking": "Tzaj ttzaqpi´na t-xnaq´tzb´il",
+    "cancelReasonLabel": "Tiqu´n n-chi b´aj t-xilen (n-chi yek´unte te t-xjalil) *",
+    "cancelBookingHint": "A t-xilen aq´untl n-meltz´aj te t-xjalil extzen ky-oklenj te comisión n-el tpa´n. A t-xilen n-ku tz´ok t-ximan juntl majl.",
+    "cancelBookingConfirm": "Q´onk t-xilen aju´ t-xilen"
   },
   "history": {
     "title": "T-xilen",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Aju´ t-xilen aq´untl b´incha´n",
       "HANDOVER_COMPLETED": "b´aj t-xnaq´tza´n",
       "ADMIN_PROTECTION_RELEASED": "A Admin etz t-xo´n jun t-xq´uqb´il te tnejel. Tiqu´n: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "A Admin n-chi tzaj tqona t-xilen t-tz´ib´b´il te {{from}} te {{to}} . Tiqu´n: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "A Admin n-chi tzaj tqona t-xilen t-tz´ib´b´il te {{from}} te {{to}} . Tiqu´n: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "jun tajlal t-xilen t-xnaq´tzb´il tu´n juntl tuk´e mya b´ant t-xnaq´tza´n",
+      "BOOKING_CANCELLED": "Ma tz´el q´i´n t-xilen. Tiqu´n: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "A t-xilen aq´untl n-meltz´aj te t-xjalil",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Aju´ t-xilen aq´untl n-el tpa´n tib´ tuk´e aju´ t-xilen",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Aju t-xilen comisión tzaj q´o´n juntl majl te ak´aj reservación"
     }
   }
 }

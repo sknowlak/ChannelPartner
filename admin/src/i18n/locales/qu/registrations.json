@@ -49,8 +49,73 @@
       "newPartnerId": "Musuq Socio ID",
       "reason": "Razón (necesario) .",
       "apply": "Aplicar Override nisqa",
-      "applying": "Aplicaspa..."
+      "applying": "Aplicaspa...",
+      "cancelBookingHint": "Cancelar reservacionta chaymanta comisiónninta cancelasqa hina marcan, operativo propiedadninta socioman kutichin, chaymanta wasi ruwaqman kay umalliqta wakmanta reservayta saqin.",
+      "cancelBookingConfirm": "¿Kay reservacionta cancelankichu? Comisionninpas cancelasqañam. Kayqa sutiykiwan, razonniykiwan ima qillqasqa kachkan."
     },
-    "timelineTitle": "Auditoría Tiempo nisqa (kay registro) ."
+    "timelineTitle": "Auditoría Tiempo nisqa (kay registro) .",
+    "bookingStatus": "Estatus de Reserva",
+    "commissionAttribution": "Atribución Comisión nisqamanta",
+    "disputeOpen": "Huk dueño ch'aqway kay rantiqpi kichasqa kachkan - huk socio paykunap kaqta nin. Chayqa Disputas nisqa p’anqapin decidikun.",
+    "viewDisputes": "Ch’aqwaykunata qhaway",
+    "cancellation": {
+      "title": "Reserva cancelasqa",
+      "hint": "Reservacionpas, comisionninpas cancelasqañam; operativo propiedad kutimun sociowan chaymanta wasi ruwaq kay pusayta wakmanta qillqayta atin.",
+      "at": "Cancelado a",
+      "by": "Cancelado por",
+      "reason": "Imarayku"
+    }
+  },
+  "disputes": {
+    "title": "Dueño kayninmanta Ch’aqwaykuna",
+    "hint": "Huk socio mayqinchus registron duplicado hina mana chaskisqachu karqan, pichus rantiqpa dueñon kasqanmanta ch'aqwayta atin. Iskaynin ladokunata qhawarispa decidiy.",
+    "statusFilter": "Ch’aqwaypa kaynin",
+    "allStatuses": "Tukuy estatuskuna",
+    "empty": "Mana ch’aqwaykuna kay estadowan.",
+    "columns": {
+      "dispute": "Awqanakuy",
+      "customer": "Rantiq",
+      "project": "Ruwana",
+      "raisedBy": "Uqharisqa por",
+      "heldBy": "Kunan pachayuq",
+      "status": "Imayna kaynin",
+      "raisedAt": "Uqharisqa on"
+    },
+    "detail": {
+      "title": "Ch'aqway {{id}}",
+      "raisedOn": "Huqarisqa {{date}}",
+      "raisingTitle": "Uqharisqa por",
+      "holderTitle": "Kunan pachayuq",
+      "partner": "Masi",
+      "raisedBy": "Enviado por",
+      "customerName": "Rantiq",
+      "mobile": "Apaykachana",
+      "alternateMobile": "Móvil alternado nisqa",
+      "email": "Correo electrónico nisqa",
+      "project": "Ruwana",
+      "reason": "Razonninku",
+      "registration": "Inscripción nisqa",
+      "registeredAt": "Inscrito en",
+      "referral": "Referencia nisqa",
+      "heldMissing": "Chay hap’isqa registro nisqataqa manan tariyta atirqankuchu.",
+      "resolutionTitle": "Akllay",
+      "outcome": "Tukusqa",
+      "note": "Uchuy willakuy",
+      "decidedBy": "Decidisqa",
+      "decidedAt": "Decidisqa",
+      "newRegistration": "Musuq qillqakuy",
+      "decideTitle": "Kay ch’aqwayta tanteay",
+      "noteLabel": "Decidisqanmanta sut’inchaspa nota (necesario) .",
+      "noteRequired": "Decidinaykipaq huk notata qillqay.",
+      "uphold": "Sapaqchay",
+      "overturn": "T’uqyay",
+      "upholdEffect": "{{holder}} rantiqta waqaychan. Chay ch’aqwayqa wisq’asqañan kashan, manan imapas hukqa cambianchu.",
+      "overturnEffect": "{{holder}} 's iskay kuti hark'aynin kunan tukukun chaymanta rantiq {{partner}} kaqpaq musuq registro hina qillqasqa.",
+      "heldBookedHelp": "Kay rantiqmi kunan dueñonwan reservasqa kachkan. Ñawpaqta chay reservacionta qulluy (Admin Override registro kaqpi), chaymanta tikray:",
+      "confirmTitle": "¿Segurochu kanki?",
+      "confirmUphold": "Arí, takyay",
+      "confirmOverturn": "Arí, t’ikrakuy",
+      "back": "Ch’aqwaykunaman kutiy"
+    }
   }
 }

@@ -51,6 +51,8 @@ client.interceptors.response.use(
 );
 
 export const builderLogin = (email, password) => client.post('/auth/login', { email, password });
+// Token passed explicitly: the session is cleared right after this is sent.
+export const builderLogout = (token) => client.post('/auth/logout', null, { headers: { Authorization: `Bearer ${token}` } });
 export const getBuilderMe = () => client.get('/me');
 export const updateBuilderMe = (body) => client.patch('/me', body);
 export const listBuilderProjects = () => client.get('/projects');
@@ -58,4 +60,5 @@ export const listReferrals = (params) => client.get('/referrals', { params });
 export const getReferral = (id) => client.get(`/referrals/${id}`);
 export const decideReferral = (id, decision, reason) => client.post(`/referrals/${id}/decision`, { decision, reason });
 export const bookReferral = (id) => client.post(`/referrals/${id}/booking`, {});
+export const cancelReferralBooking = (id, reason) => client.post(`/referrals/${id}/booking/cancel`, { reason });
 export const getReferralAudit = (id) => client.get(`/referrals/${id}/audit`);

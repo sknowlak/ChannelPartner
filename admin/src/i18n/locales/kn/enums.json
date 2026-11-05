@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "ಅರ್ಹರು",
-    "PENDING": "ಬಾಕಿಯಿದೆ"
+    "PENDING": "ಬಾಕಿಯಿದೆ",
+    "CANCELLED": "ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "ನಕಲು ರಕ್ಷಣೆಯನ್ನು ಮೊದಲೇ ಬಿಡುಗಡೆ ಮಾಡಿ",
-    "REASSIGN_PARTNER": "ಮತ್ತೊಂದು ಪಾಲುದಾರನಿಗೆ ಮರುಹೊಂದಿಸಿ"
+    "REASSIGN_PARTNER": "ಮತ್ತೊಂದು ಪಾಲುದಾರನಿಗೆ ಮರುಹೊಂದಿಸಿ",
+    "CANCEL_BOOKING": "ಬುಕಿಂಗ್ ರದ್ದುಮಾಡಿ"
   },
   "dataType": {
     "TEXT": "ಪಠ್ಯ",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "ಸೂಪರ್ ಅಡ್ಮಿನ್",
     "ADMIN": "ನಿರ್ವಾಹಕ"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "ದೃಢಪಡಿಸಿದೆ",
+    "CANCELLED": "ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "ಆರೋಪಿಸಲಾಗಿದೆ",
+    "DISPUTED": "ವಿವಾದಿತವಾಗಿದೆ"
+  },
+  "disputeStatus": {
+    "OPEN": "ತೆರೆಯಿರಿ",
+    "UPHELD": "ಎತ್ತಿಹಿಡಿಯಲಾಗಿದೆ",
+    "OVERTURNED": "ಉರುಳಿದೆ",
+    "WITHDRAWN": "ಹಿಂತೆಗೆದುಕೊಳ್ಳಲಾಗಿದೆ"
   }
 }

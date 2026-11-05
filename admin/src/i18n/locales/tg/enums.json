@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Муносиб",
-    "PENDING": "Дар интизорӣ"
+    "PENDING": "Дар интизорӣ",
+    "CANCELLED": "Бекор карда шуд"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Муҳофизати такрориро барвақт озод кунед",
-    "REASSIGN_PARTNER": "Ба шарики дигар аз нав таъин кунед"
+    "REASSIGN_PARTNER": "Ба шарики дигар аз нав таъин кунед",
+    "CANCEL_BOOKING": "Бронкуниро бекор кунед"
   },
   "dataType": {
     "TEXT": "Матн",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Супер Админ",
     "ADMIN": "Админ"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Тасдик карда шуд",
+    "CANCELLED": "Бекор карда шуд"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Мансуб дониста шудааст",
+    "DISPUTED": "Баҳс"
+  },
+  "disputeStatus": {
+    "OPEN": "Кушода",
+    "UPHELD": "Тасдик карда шуд",
+    "OVERTURNED": "чаппа шуд",
+    "WITHDRAWN": "Бозхонд"
   }
 }

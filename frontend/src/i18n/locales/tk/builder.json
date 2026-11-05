@@ -30,7 +30,8 @@
       "registered": "Bellige alyndy"
     },
     "booked": "Zakaz edildi",
-    "empty": "Entek salgylanma ýok."
+    "empty": "Entek salgylanma ýok.",
+    "bookingCancelled": "Zakaz bermek ýatyryldy"
   },
   "detail": {
     "customer": "Müşderi",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Zakaz etmek tassyklandy",
       "accepted": "Ibermek kabul edildi.",
-      "rejected": "Ibermek ret edildi."
+      "rejected": "Ibermek ret edildi.",
+      "bookingCancelled": "Zakaz bermek ýatyryldy"
     },
-    "backToReferrals": "Ferollamalara dolan"
+    "backToReferrals": "Ferollamalara dolan",
+    "bookingCancelled": "Zakaz bermek ýatyryldy",
+    "cancelBooking": "Zakaz etmegi ýatyryň",
+    "cancelReasonLabel": "Ingatyrmagyň sebäbi (hyzmatdaşyňyza görkezilýär) *",
+    "cancelBookingHint": "Amal eýeçiligi partnýora gaýdyp gelýär we olaryň ygtyýarlyklary ýatyrylýar. Gurşuny soňrak bron edip bolýar.",
+    "cancelBookingConfirm": "Zakaz etmegi ýatyryň"
   },
   "history": {
     "title": "Taryh",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Komissiýanyň hukugy döredildi",
       "HANDOVER_COMPLETED": "Geçiriş tamamlandy",
       "ADMIN_PROTECTION_RELEASED": "Admin dublikat goragy ir goýberdi. Sebäp: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin bellige alnyşy {{from}} dan {{to}} çenli belledi. Sebäp: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin bellige alnyşy {{from}} dan {{to}} çenli belledi. Sebäp: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Başga hyzmatdaşyň iki gezek hasaba alyş synanyşygy ret edildi",
+      "BOOKING_CANCELLED": "Zakaz bermek ýatyryldy Sebäp: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Amal eýeçiligi partnýora gaýdyp geldi",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Zakaz bermek bilen komissiýanyň hukugy ýatyryldy",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Täze bron etmek üçin komissiýanyň hukugy dikeldildi"
     }
   }
 }

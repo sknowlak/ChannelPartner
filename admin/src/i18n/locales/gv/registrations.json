@@ -49,8 +49,73 @@
       "newPartnerId": "ID Partner noa",
       "reason": "Reesht (reiht)",
       "apply": "Cur stiagh Override",
-      "applying": "Cur stiagh..."
+      "applying": "Cur stiagh...",
+      "cancelBookingHint": "Ta'n cancelling markee yn booking as e chommishaghyn myr cancelled, t'eh cur stiagh y stiurey obbreeagh da'n cho-obbree, as t'eh lesh y towse booking y lead shoh reesht.",
+      "cancelBookingConfirm": "Cur stiagh y booking shoh? Ta'n comiishoon echey er ny scughey myrgeddin. Ta shoh loggey lesh dty ennym as dty red."
     },
-    "timelineTitle": "Lioar-am Reesht (y chlashtyn shoh)"
+    "timelineTitle": "Lioar-am Reesht (y chlashtyn shoh)",
+    "bookingStatus": "Stayd Booking",
+    "commissionAttribution": "Cooishyn Cooishyn",
+    "disputeOpen": "Ta streeu son eiraght foshlit er y customer shoh - ta'n cho-obbree elley gra dy nee ocsyn eh. T'eh er ny choyrt stiagh er y duillag Disputes.",
+    "viewDisputes": "Cur-my-ner ny streeuyn",
+    "cancellation": {
+      "title": "Ta'n booking er ny scughey",
+      "hint": "Ta'n booking as e chommishaghyn er nyn stroie; ta'n eiraght obbreeagh er-gerrey rish y cho-obbree as t'eh ry-hoi y towshan book y lead shoh reesht.",
+      "at": "Currit er",
+      "by": "Currit magh liorish",
+      "reason": "Arganey"
+    }
+  },
+  "disputes": {
+    "title": "Cooishyn Eiraght",
+    "hint": "Faagys y cho-obbree v'er ny ymmyrkey myr duplicate dy ghra c'raad t'eh y customer. Review yn daa thalloo as breearrey.",
+    "statusFilter": "Stayd y streeu",
+    "allStatuses": "Ooilley stayd",
+    "empty": "Cha nel streeu erbee ec y stayd shoh.",
+    "columns": {
+      "dispute": "Argane",
+      "customer": "Custymeyr",
+      "project": "Deam",
+      "raisedBy": "Reiht liorish",
+      "heldBy": "Yn eirey nish",
+      "status": "Keimeeaght",
+      "raisedAt": "Reiht er"
+    },
+    "detail": {
+      "title": "Streisht {{id}}",
+      "raisedOn": "Er ny hroggal {{date}}",
+      "raisingTitle": "Reiht liorish",
+      "holderTitle": "Yn eirey nish",
+      "partner": "Co-earroo",
+      "raisedBy": "Cur stiagh liorish",
+      "customerName": "Custymeyr",
+      "mobile": "Gáire",
+      "alternateMobile": "Mobile elley",
+      "email": "E-mail",
+      "project": "Deam",
+      "reason": "Yn aght oc",
+      "registration": "Classaghey;",
+      "registeredAt": "Clàrait er",
+      "referral": "Reihys",
+      "heldMissing": "Cha row y chlashtyn ry-gheddyn.",
+      "resolutionTitle": "Briwnys",
+      "outcome": "Eiyrtys",
+      "note": "Baghtag",
+      "decidedBy": "Beaghey liorish",
+      "decidedAt": "Beaghey er",
+      "newRegistration": "Clashtyn noa",
+      "decideTitle": "Beaghey er y chreenaght shoh",
+      "noteLabel": "Note dy mharkey yn breearrey (required)",
+      "noteRequired": "Screeu note dy ghra.",
+      "uphold": "Cummal seose",
+      "overturn": "Cur stiagh;",
+      "upholdEffect": "{{holder}} t'eh cur y chlient. Ta'n streeu cloie as cha nel red erbee elley caghlaa.",
+      "overturnEffect": "Ta'n coadey dooghyssagh {{holder}} 's jerrey nish as ta'n customer clàrait son {{partner}} myr clàragh noa.",
+      "heldBookedHelp": "Ta'n customer shoh er ny bookaghey trooid y thie-oast. Cur stiagh y booking shen er-dy-hoshiaght (Admin Override er y chlashtyn), as cur stiagh:",
+      "confirmTitle": "Vel oo shickyr?",
+      "confirmUphold": "Ta, cummal seose",
+      "confirmOverturn": "Ta, cur stiagh",
+      "back": "Arraght gys Cooishyn"
+    }
   }
 }

@@ -30,7 +30,8 @@
       "registered": "Eingetragen"
     },
     "booked": "Gebucht",
-    "empty": "Noch keine Empfehlungen."
+    "empty": "Noch keine Empfehlungen.",
+    "bookingCancelled": "Buchung storniert"
   },
   "detail": {
     "customer": "Kunde",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Buchung bestätigt.",
       "accepted": "Empfehlung angenommen.",
-      "rejected": "Empfehlung abgelehnt."
+      "rejected": "Empfehlung abgelehnt.",
+      "bookingCancelled": "Buchung storniert."
     },
-    "backToReferrals": "Zurück zu Empfehlungen"
+    "backToReferrals": "Zurück zu Empfehlungen",
+    "bookingCancelled": "Buchung storniert",
+    "cancelBooking": "Buchung stornieren",
+    "cancelReasonLabel": "Grund der Stornierung (wird dem Partner angezeigt) *",
+    "cancelBookingHint": "Das operative Eigentum geht an den Partner zurück und sein Provisionsanspruch entfällt. Der Lead kann später wieder gebucht werden.",
+    "cancelBookingConfirm": "Stornieren Sie die Buchung"
   },
   "history": {
     "title": "Geschichte",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Provisionsberechtigung erstellt",
       "HANDOVER_COMPLETED": "Übergabe abgeschlossen",
       "ADMIN_PROTECTION_RELEASED": "Der Administrator hat den Duplikatschutz vorzeitig freigegeben. Grund: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Der Administrator hat die Registrierung von {{from}} auf {{to}} neu zugewiesen. Grund: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Der Administrator hat die Registrierung von {{from}} auf {{to}} neu zugewiesen. Grund: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ein doppelter Registrierungsversuch eines anderen Partners wurde abgelehnt",
+      "BOOKING_CANCELLED": "Buchung storniert. Grund: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Das operative Eigentum ging an den Partner zurück",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Mit der Buchung entfällt der Provisionsanspruch",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Provisionsberechtigung für die neue Buchung wiederhergestellt"
     }
   }
 }

@@ -43,7 +43,9 @@
       "name": "Name",
       "city": "Town",
       "status": "Place",
-      "actions": "Actions"
+      "actions": "Actions",
+      "protection": "Duplicate protection",
+      "matchOn": "Duplicates match on"
     },
     "closeReferrals": "Close fi referrals",
     "reopen": "Reopen",
@@ -55,6 +57,25 @@
       "add": "Add Project",
       "created": "Created {{name}} ."
     },
-    "back": "Back to Builders"
+    "back": "Back to Builders",
+    "protection": {
+      "days_one": "{{count}} day",
+      "days_other": "{{count}} days",
+      "globalDays_one": "Global default ( {{count}} day)",
+      "globalDays_other": "Global default ( {{count}} days)",
+      "globalDefault": "Global default",
+      "placeholder": "Protection days (empty = global default)",
+      "saved": "Duplicate protection updated fi {{name}} .",
+      "hint": "Duplicate protection: 1-3650 days, or lef empty fi use di global default fram Settings. A change apply only to new registrations - existing ones keep dem expiry."
+    },
+    "matching": {
+      "global": "Global default",
+      "globalWith": "Global default ( {{fields}} )",
+      "mobile": "Mobile numba",
+      "email": "Email",
+      "both": "Mobile numba + email",
+      "saved": "Duplicate matching updated fi {{name}}",
+      "hint": "Which details mek two registrations di same customer fi a project. Changes apply to duplicate checks fram now on; existing protection is not affected."
+    }
   }
 }

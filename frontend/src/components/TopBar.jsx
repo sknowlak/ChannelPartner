@@ -9,7 +9,10 @@ import ThemeSelect from './ThemeSelect';
 // Route -> translation key (shell:titles.*); resolved with t() at render
 // time so the title follows a language switch.
 const PAGE_TITLES = {
+  '/dashboard': 'dashboard',
   '/my-leads': 'myLeads',
+  '/disputes': 'disputes',
+  '/registrations/result': 'registrationResult',
   '/register-lead': 'addLead',
   '/team': 'manageTeam',
   '/team/roles': 'roles',

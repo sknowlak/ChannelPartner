@@ -43,7 +43,9 @@
       "name": "Ad",
       "city": "Şeer",
       "status": "Vaziyet",
-      "actions": "Areketler"
+      "actions": "Areketler",
+      "protection": "Dublikatı qorçalav",
+      "matchOn": "Dublikatı 100 künü kelişe"
     },
     "closeReferrals": "Referallar içün qapatıñız",
     "reopen": "Yañıdan açıñız",
@@ -55,6 +57,25 @@
       "add": "Proyekt qoşmaq",
       "created": "Yaratıldı {{name}} ."
     },
-    "back": "Qurucılarğa qaytmaq"
+    "back": "Qurucılarğa qaytmaq",
+    "protection": {
+      "days_one": "{{count}} kün",
+      "days_other": "{{count}} künler",
+      "globalDays_one": "Global standart ( {{count}} kün)",
+      "globalDays_other": "Global standart ( {{count}} künler)",
+      "globalDefault": "Global standart",
+      "placeholder": "Qorçalav künleri (boş = bütün dünya standart)",
+      "saved": "{{name}} içün dublikatı qorçalavı yañardı.",
+      "hint": "Dublikatlardan qorçalav: 1-3650 kün, ya da «Parametrlerden» global standartnı qullanmaq içün boş qaldırıñız. Deñişme tek yañı yazıluvlarğa aittir - mevcutları öz müddetini saqlaylar."
+    },
+    "matching": {
+      "global": "Global standart",
+      "globalWith": "Global standart ( {{fields}} )",
+      "mobile": "Mobil raqam",
+      "email": "Elektron poçta",
+      "both": "Mobil raqam + poçta",
+      "saved": "{{name}} içün dublikatı keliştirüv yañartıla",
+      "hint": "Qaysı detaller eki yazıluvnı bir de bir leyha içün bir müşteri yapalar. Deñişmeler endiden soñ tekrarlanğan teşkerüvlerge aittir; mevcut qorçalavğa tesir etmey."
+    }
   }
 }

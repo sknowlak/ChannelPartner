@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "બુક કરાવ્યું",
-    "pending": "બાકી છે"
+    "pending": "બાકી છે",
+    "status": {
+      "CONFIRMED": "બુક કરાવ્યું",
+      "CANCELLED": "બુકિંગ કેન્સલ"
+    }
   },
   "assign": {
     "unassigned": "અસાઇન કરેલ",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "હજી સુધી કોઈ પ્રોજેક્ટ નથી (નો ઉલ્લેખ નથી)",
-    "notInList": "{{project}} (પ્રોજેક્ટ સૂચિમાં નથી)"
+    "notInList": "{{project}} (પ્રોજેક્ટ સૂચિમાં નથી)",
+    "protectionDays_one": "{{count}} - દિવસની સુરક્ષા",
+    "protectionDays_other": "{{count}} - દિવસની સુરક્ષા"
   },
   "journey": {
     "customer": "ગ્રાહક",
@@ -76,7 +82,14 @@
     "progressHistory": "પ્રગતિ ઇતિહાસ",
     "timesIn": "( {{timezone}} માં વખત )",
     "backToMyLeads": "માય લીડ્સ પર પાછા જાઓ",
-    "editLead": "લીડ સંપાદિત કરો"
+    "editLead": "લીડ સંપાદિત કરો",
+    "disputeBanner": "અન્ય ભાગીદારે આ ગ્રાહકની માલિકી પર વિવાદ કર્યો છે. Leadrat એડમિન તેની સમીક્ષા કરી રહ્યાં છે - જ્યાં સુધી તેઓ નિર્ણય ન લે ત્યાં સુધી તમારું રક્ષણ ચાલુ રહેશે.",
+    "booking": "બુકિંગ",
+    "commission": "કમિશન",
+    "notBooked": "બુક નથી",
+    "cancelledOn": "{{date}} ના રોજ રદ કર્યું.",
+    "cancelReason": "કારણ: {{reason}}",
+    "cancelledHint": "બિલ્ડરે બુકિંગ રદ કર્યું - ઓપરેશનલ માલિકી તમારી પાસે પાછી આવી ગઈ છે અને કમિશનની પાત્રતા રદ કરવામાં આવી છે. જો લીડ ફરીથી બુક કરવામાં આવે તો તે પુનઃસ્થાપિત થાય છે."
   },
   "referral": {
     "NOT_REFERRED": "ઉલ્લેખિત નથી (કોઈ પ્રોજેક્ટ નથી)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "બિલ્ડરે રેફરલ સ્વીકાર્યો",
       "REFERRAL_REJECTED": "બિલ્ડરે રેફરલ નકારી કાઢ્યો. કારણ: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "એડમિને ડુપ્લિકેટ સંરક્ષણ વહેલું બહાર પાડ્યું. કારણ: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "એડમિને {{from}} થી {{to}} સુધી નોંધણી ફરીથી સોંપી. કારણ: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "એડમિને {{from}} થી {{to}} સુધી નોંધણી ફરીથી સોંપી. કારણ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "અન્ય ભાગીદાર દ્વારા ડુપ્લિકેટ નોંધણીનો પ્રયાસ નકારવામાં આવ્યો હતો",
+      "BOOKING_CANCELLED": "બુકિંગ કેન્સલ. કારણ: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "ઓપરેશનલ માલિકી ભાગીદારને પાછી આપી",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "બુકિંગ સાથે કમિશનની પાત્રતા રદ કરવામાં આવી છે",
+      "COMMISSION_ELIGIBILITY_RESTORED": "નવા બુકિંગ માટે કમિશન પાત્રતા પુનઃસ્થાપિત",
+      "OWNERSHIP_DISPUTE_RAISED": "અન્ય ભાગીદારે આ ગ્રાહકની માલિકી પર વિવાદ કર્યો - Leadrat એડમિન તેની સમીક્ષા કરશે",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "આ ગ્રાહક પરનો માલિકી વિવાદ પાછો ખેંચી લેવામાં આવ્યો હતો - તમારી માલિકી યથાવત છે",
+      "OWNERSHIP_DISPUTE_UPHELD": "આ ગ્રાહક પરના માલિકી વિવાદની સમીક્ષા કરવામાં આવી હતી - તમારી માલિકી પુષ્ટિ થયેલ છે",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "તમારા માલિકી વિવાદનો તમારી તરફેણમાં નિર્ણય લેવામાં આવ્યા પછી નોંધણી કરાવી. નોંધ: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "સંરક્ષણ સમાપ્ત થયું: માલિકી વિવાદનો નિર્ણય અન્ય ભાગીદારની તરફેણમાં કરવામાં આવ્યો હતો. નોંધ: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "આ ફોન નંબર {{country}} માટે માન્ય નથી.",
     "COUNTRY_MISMATCH": "કૃપા કરીને સાચો દેશ કોડ પસંદ કરો.",
     "NOT_MOBILE": "કૃપા કરીને મોબાઇલ નંબર દાખલ કરો, લેન્ડલાઇન નહીં."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "કમિશન પાત્ર",
+      "PENDING": "કમિશન બાકી છે",
+      "CANCELLED": "કમિશન રદ કર્યું"
+    },
+    "attribution": {
+      "ATTRIBUTED": "તમને આભારી છે",
+      "DISPUTED": "એટ્રિબ્યુશન વિવાદિત"
+    }
+  },
+  "result": {
+    "none": "No registration result to show. પ્રથમ લીડ રજીસ્ટર કરો.",
+    "acceptedTitle": "લીડ નોંધાયેલ",
+    "rejectedTitle": "લીડ નોંધાયેલ નથી",
+    "protectionWindow": "પ્રોટેક્શન વિન્ડો",
+    "protectedUntil": "સુધી સુરક્ષિત",
+    "openLead": "ઓપન લીડ",
+    "addAnother": "અન્ય લીડ ઉમેરો",
+    "duplicate": "ડુપ્લિકેટ - પહેલેથી જ સુરક્ષિત",
+    "duplicateHint": "આ ગ્રાહક પહેલાથી જ આ પ્રોજેક્ટ માટે અન્ય નોંધણી દ્વારા સુરક્ષિત છે, તેથી તે તમારા માટે નોંધાયેલ નથી.",
+    "existingProtectedUntil": "ત્યાં સુધી હાલની નોંધણી સુરક્ષિત છે"
+  },
+  "disputes": {
+    "title": "મારા વિવાદો",
+    "intro": "ડુપ્લિકેટ તરીકે નકારવામાં આવેલ ગ્રાહકો માટે તમે માલિકીના વિવાદો ઉભા કર્યા છે. Leadrat એડમિન દરેકની સમીક્ષા કરે છે.",
+    "empty": "તમે કોઈ વિવાદ ઉઠાવ્યો નથી. જો તમે લાવેલા ગ્રાહકને ડુપ્લિકેટ તરીકે નકારવામાં આવે છે, તો તમે નોંધણી પરિણામમાંથી તેનો વિવાદ કરી શકો છો.",
+    "columns": {
+      "dispute": "વિવાદ",
+      "reason": "તમારું કારણ",
+      "outcome": "પરિણામ"
+    },
+    "status": {
+      "OPEN": "સમીક્ષા હેઠળ",
+      "UPHELD": "તમારી તરફેણમાં નથી",
+      "OVERTURNED": "તમારી તરફેણમાં નિર્ણય કર્યો",
+      "WITHDRAWN": "પાછી ખેંચી લીધી"
+    },
+    "awaitingReview": "એડમિન સમીક્ષા માટે રાહ જોઈ રહ્યું છે",
+    "openNewLead": "તમારી લીડ {{id}} ખોલો",
+    "withdraw": "ઉપાડો",
+    "withdrawConfirm": "{{name}} માટે તમારો વિવાદ પાછો ખેંચો? વર્તમાન માલિકી જેમ છે તેમ રહે છે.",
+    "raise": "વિવાદ માલિકી",
+    "raiseTitle": "વિવાદ માલિકી",
+    "raiseHint": "જો આ ગ્રાહક પહેલા તમારી પાસે આવ્યો હોય, તો તેનું કારણ સમજાવો. Leadrat એડમિન તેની સમીક્ષા કરશે; જો તેઓ તમારી તરફેણમાં નિર્ણય લે, તો લીડ તમારા માટે નોંધાયેલ છે.",
+    "reasonLabel": "આ ગ્રાહક તમારો કેમ છે?",
+    "reasonMin_one": "ઓછામાં ઓછું {{count}} અક્ષર.",
+    "reasonMin_other": "ઓછામાં ઓછા {{count}} અક્ષરો.",
+    "submit": "વિવાદ મોકલો",
+    "notProtected": "આ પ્રોજેક્ટ માટે આ ગ્રાહકને હવેથી કોઈનું રક્ષણ નથી - તમે હવે લીડની નોંધણી કરાવી શકો છો.",
+    "raised": "વિવાદ {{id}} સમીક્ષા માટે મોકલ્યો.",
+    "viewAll": "મારા વિવાદો જુઓ"
+  },
+  "dashboard": {
+    "title": "ડેશબોર્ડ",
+    "period": "સમયગાળો",
+    "lastDays_one": "{{count}} દિવસ",
+    "lastDays_other": "{{count}} દિવસ",
+    "emptyTitle": "સ્વાગત છે! તમારી પાસે હજુ સુધી કોઈ લીડ નથી.",
+    "emptyHint": "તમારી પ્રથમ લીડની નોંધણી કરો - તમારી પાઇપલાઇન, બુકિંગ અને સુરક્ષાની સમયમર્યાદા અહીં દેખાશે.",
+    "tiles": {
+      "leads": "કુલ લીડ્સ",
+      "newInPeriod_one": "આ સમયગાળામાં {{count}} નવા",
+      "newInPeriod_other": "આ સમયગાળામાં {{count}} નવા",
+      "accepted": "સ્વીકાર્યું",
+      "booked": "બુક કરાવ્યું",
+      "bookedInPeriod_one": "આ સમયગાળામાં {{count}} બુક થયા",
+      "bookedInPeriod_other": "આ સમયગાળામાં {{count}} બુક થયા",
+      "conversion": "રૂપાંતર",
+      "conversionHint": "સ્વીકૃત લીડ્સના શેર તરીકે બુક કરેલ લીડ્સ",
+      "protectedNow": "હવે સુરક્ષિત",
+      "expiringSoon_one": "સુરક્ષા {{count}} દિવસમાં સમાપ્ત થશે",
+      "expiringSoon_other": "સુરક્ષા {{count}} દિવસમાં સમાપ્ત થશે",
+      "disputedNow": "અન્યો દ્વારા વિવાદિત",
+      "disputedNowHint": "અન્ય ભાગીદાર પાસેથી ખુલ્લી માલિકી વિવાદ સાથે તમારી લીડ",
+      "commissionEligible": "કમિશન પાત્ર",
+      "commissionCancelled_one": "{{count}} રદ કર્યા",
+      "commissionCancelled_other": "{{count}} રદ કર્યા"
+    },
+    "chart": {
+      "title_one": "દિવસ દીઠ નોંધણી અને બુકિંગ - છેલ્લા {{count}} દિવસ",
+      "title_other": "દિવસ દીઠ નોંધણી અને બુકિંગ - છેલ્લા {{count}} દિવસ",
+      "registrations": "નોંધણીઓ",
+      "bookings": "બુકિંગ"
+    },
+    "byStage": "સ્થિતિ દ્વારા દોરી જાય છે",
+    "bySource": "સ્ત્રોત દ્વારા દોરી જાય છે",
+    "byReferral": "રેફરલ સ્થિતિ દ્વારા દોરી જાય છે",
+    "myDisputes": "તમે ઉભા કરેલા વિવાદો",
+    "noDisputes": "કોઈ વિવાદ ઉભા કર્યા નથી.",
+    "unknown": "સેટ નથી",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "બાહ્ય CRM (સિમ્યુલેટેડ)",
+      "PARTNER_CRM": "તમારી ટીમ દ્વારા ઉમેરાયેલ",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "એકીકરણ",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "આગામી {{count}} દિવસમાં સંરક્ષણ સમાપ્ત થઈ રહ્યું છે",
+    "expiringTitle_other": "આગામી {{count}} દિવસમાં સંરક્ષણ સમાપ્ત થઈ રહ્યું છે",
+    "expiringEmpty": "આ વિંડોમાં કોઈ લીડ તેનું રક્ષણ ગુમાવતું નથી."
   }
 }

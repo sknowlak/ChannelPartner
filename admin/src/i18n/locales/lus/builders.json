@@ -43,7 +43,9 @@
       "name": "Hming",
       "city": "Khawpui",
       "status": "Nihna",
-      "actions": "Thiltih"
+      "actions": "Thiltih",
+      "protection": "Duplicate venhimna a ni",
+      "matchOn": "Duplicates match on a ni"
     },
     "closeReferrals": "Referral tan khar rawh",
     "reopen": "hawng leh rawh",
@@ -55,6 +57,25 @@
       "add": "Project tih belh rawh",
       "created": "{{name}} siam a ni."
     },
-    "back": "Builders lam pan leh rawh"
+    "back": "Builders lam pan leh rawh",
+    "protection": {
+      "days_one": "{{count}} ni",
+      "days_other": "{{count}} ni",
+      "globalDays_one": "Khawvel pum huap default ( {{count}} ni) .",
+      "globalDays_other": "Khawvel pum huap default ( {{count}} ni) .",
+      "globalDefault": "Global default a ni",
+      "placeholder": "Hriselna ni (empty = global default) 1.1.",
+      "saved": "{{name}} tan duplicate venhimna update a ni.",
+      "hint": "Duplicate protection: Ni 1-3650 chhung, a nih loh leh Settings atanga global default hman turin empty-in dah rawh. Hrilhfiahna hi registration thar tan chauh hman a ni - a awm tawhte chuan an expiry an vawng reng a ni."
+    },
+    "matching": {
+      "global": "Global default a ni",
+      "globalWith": "Khawvel pum huap default ( {{fields}} ) .",
+      "mobile": "Mobile number a ni",
+      "email": "Email hmanga thawn theih a ni",
+      "both": "Mobile number + email hmanga siam a ni",
+      "saved": "{{name}} tan duplicate matching update a ni.",
+      "hint": "Eng details nge registration pahnih chu project pakhat atan customer inang a siam. Tun atang chuan duplicate check-ah pawh inthlak danglamna hi hman a ni ang; humhalhna awmsa chu a nghawng lo."
+    }
   }
 }

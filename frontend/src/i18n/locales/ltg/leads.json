@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Rezervāts",
-    "pending": "Gaidūšs"
+    "pending": "Gaidūšs",
+    "status": {
+      "CONFIRMED": "Rezervāts",
+      "CANCELLED": "Rezervaceja atcalta ."
+    }
   },
   "assign": {
     "unassigned": "Napīškierts",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Vēļ nav projekta (nav atsasaukts)",
-    "notInList": "{{project}} (nav projektu sarokstā)"
+    "notInList": "{{project}} (nav projektu sarokstā)",
+    "protectionDays_one": "{{count}} -dīnys aizsardzeiba",
+    "protectionDays_other": "{{count}} -dīnys aizsardzeiba"
   },
   "journey": {
     "customer": "Klients",
@@ -76,7 +82,14 @@
     "progressHistory": "Progresa viesture",
     "timesIn": "(laiki {{timezone}} )",
     "backToMyLeads": "Atpakaļ iz munu līdu .",
-    "editLead": "Rediģēt līderi"
+    "editLead": "Rediģēt līderi",
+    "disputeBanner": "Vēļ vīns partneris ir streidiejs eipašumtīseibys iz itū klientu. Leadrat admins tū puorsaver - jūs aizsardzeiba palīk vītā, cikom jī nūlems.",
+    "booking": "Rezerviešona",
+    "commission": "Komiseja",
+    "notBooked": "Nav rezervāts .",
+    "cancelledOn": "Atcalts {{date}} .",
+    "cancelReason": "Īmeslis: {{reason}}",
+    "cancelledHint": "Ceļtnīks atcēle rezervaceju - darbeibys eipašumtīseibys ir atpakaļ pi jiusu i komisejis tīseibys teik atcaltys. Tys teik atjaunuots, ka otkon teik rezervāts svyns."
   },
   "referral": {
     "NOT_REFERRED": "Nav atsasaukts (bez projekta)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "100 doc#1281 Ceļtnīks pījēme nūsyutejumu .",
       "REFERRAL_REJECTED": "Ceļtnīks nūraideja nūsyutejumu. Īmeslis: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admins izlaide dubliejumu aizsardzeibu agri. Īmeslis: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admins puordaleja registraceju nu {{from}} iz {{to}} . Īmeslis: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admins puordaleja registraceju nu {{from}} iz {{to}} . Īmeslis: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "100 doc#1281 Cyta partnera registracejis mieginuojums tyka nūraideits .",
+      "BOOKING_CANCELLED": "Rezervaceja atcalta. Īmeslis: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "100 doc#1281 Darbeibys eipašumtīseibys atgrīztys partnerim .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "100 doc#1281 Komisejis atbiļsteiba atcalta ar rezervaceju .",
+      "COMMISSION_ELIGIBILITY_RESTORED": "100 doc#1281 Atjaunuota komisejis tīseibys jaunai rezervacejai .",
+      "OWNERSHIP_DISPUTE_RAISED": "100 doc#1159 Vēļ vīns partneris apstreidēja ituo klienta eipašumtīseibys - Leadrat admins tū puorsavērs .",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "100 doc#1281 Eipašumtīseibu streids par itū klientu tyka atsaukts - jūs eipašumtīseibys ir namaineigys .",
+      "OWNERSHIP_DISPUTE_UPHELD": "100 doc#1281 Eipašumtīseibu streids par itū klientu tyka izskateits - jūs eipašumtīseibys ir apstyprynuotys .",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Registrāts piec tam, kod jūs eipašumtīseibu streids tyka izlemts jūs lobā. Pīzeime: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Aizsardzeiba beidzēs: eipašumtīseibu streids tyka izlemts par lobu cytam partnerim. Pīzeime: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Itys telefona numurs nav dereigs {{country}} .",
     "COUNTRY_MISMATCH": "Lyudzu, izavielej pareizu vaļsts kodu.",
     "NOT_MOBILE": "Lyudzu, īrokstit mobiluo telefona numeri, navys sātys telefonu."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komiseja tīseiga .",
+      "PENDING": "Komiseja gaideita .",
+      "CANCELLED": "Komiseja atcalta ."
+    },
+    "attribution": {
+      "ATTRIBUTED": "Attīcynuots iz tevi .",
+      "DISPUTED": "Attīcynuošona apstreidama"
+    }
+  },
+  "result": {
+    "none": "Nikaidu registracejis rezultatu, kū paruodeit. Pīregistrej līdu pyrmais.",
+    "acceptedTitle": "Svyns registrāts .",
+    "rejectedTitle": "Svyns nav registrāts .",
+    "protectionWindow": "Aizsardzeibys lūgs .",
+    "protectedUntil": "Aizsorguots leidz 1990 .",
+    "openLead": "Atvārts svyns",
+    "addAnother": "Pīvīnojit vēļ vīnu līdu .",
+    "duplicate": "Dublikats - jau aizsorguots .",
+    "duplicateHint": "Itys klients jau ir aizsorguots itam projektam ar cytu registraceju, partū jū navarēja registrēt deļ jūs.",
+    "existingProtectedUntil": "Asūšuo registraceja aizsorgojama leidz 2010. godam."
+  },
+  "disputes": {
+    "title": "Muni streidi",
+    "intro": "Eipašumtīseibu streidi, kū jius izsacejot klientim, nu kurim tyka atsasaceiti kai dublikati. Leadrat admins puorsaver kotru.",
+    "empty": "Jyus naasat izsacejuši nikaidu streidu. Ka klientam, kuru īvede, teik atsasaceits kai dublikats, tū var apstreidēt nu registracejis rezultata.",
+    "columns": {
+      "dispute": "Streids",
+      "reason": "Jūs īmeslis .",
+      "outcome": "Rezultats"
+    },
+    "status": {
+      "OPEN": "Pārskateišonai .",
+      "UPHELD": "Nav jūs lobā .",
+      "OVERTURNED": "Nūlemts jūs lobā .",
+      "WITHDRAWN": "Atsaukts"
+    },
+    "awaitingReview": "Gaidu admina atsauksmi .",
+    "openNewLead": "Atver sovu līdu {{id}}",
+    "withdraw": "Atsaukt",
+    "withdrawConfirm": "Atsaukt sovu streidu par {{name}} ? Pošreizejuo eipašumtīseiba palīk taida, kaida ir.",
+    "raise": "Streidu eipašumtīseibys .",
+    "raiseTitle": "Streidu eipašumtīseibys .",
+    "raiseHint": "Ka tys klients pi tevis atguoja pyrmais, paskaidroj, parkū. Tū puorsavērs Leadrat admins; ka jī lem par lobu tev, tod līds teik registrāts deļ teve.",
+    "reasonLabel": "Deļ kuo tys klients ir Tovs?",
+    "reasonMin_one": "Vysmoz {{count}} raksturu.",
+    "reasonMin_other": "Vysmoz {{count}} zeimis.",
+    "submit": "Syuteit streidu",
+    "notProtected": "Nivīns vairs natur aizsardzeibu iz itū klientu par itū projektu - var registrēt līdu niu.",
+    "raised": "Streids {{id}} nūsyuteits puorsavieršonai.",
+    "viewAll": "Skatīt munus streidus ."
+  },
+  "dashboard": {
+    "title": "Instrumentu paneļs",
+    "period": "Laikmets",
+    "lastDays_one": "{{count}} dīna",
+    "lastDays_other": "{{count}} dīnys",
+    "emptyTitle": "Sveicynuot! Tev vēļ nav līdu.",
+    "emptyHint": "Pīregistrej sovu pyrmū līdu - tovs cauruļvads, rezervacejis i aizsardzeibys termeņi pasaruodeis ite.",
+    "tiles": {
+      "leads": "Kūpā īdūtī",
+      "newInPeriod_one": "{{count}} jauns itymā periodā .",
+      "newInPeriod_other": "{{count}} jauns itymā periodā .",
+      "accepted": "Pījimts",
+      "booked": "Rezervāts",
+      "bookedInPeriod_one": "{{count}} rezervāts itymā periodā",
+      "bookedInPeriod_other": "{{count}} rezervāts itymā periodā",
+      "conversion": "Konverseja",
+      "conversionHint": "100 doc#1281 Rezervātī līdi kai pījimtūs līdu daļa .",
+      "protectedNow": "Aizsorguots niu .",
+      "expiringSoon_one": "Aizsardzeiba, kas beidzās ar {{count}} dīnu .",
+      "expiringSoon_other": "Aizsardzeiba, kas beidzās ar {{count}} dīnom",
+      "disputedNow": "100 doc#1281 Streideigi cyti .",
+      "disputedNowHint": "100 doc#1159 Jūs līderi ar atkluotu eipašumtīseibu streidu nu cyta partnera .",
+      "commissionEligible": "Komiseja tīseiga .",
+      "commissionCancelled_one": "{{count}} atcalts",
+      "commissionCancelled_other": "{{count}} atcalts"
+    },
+    "chart": {
+      "title_one": "Pīsasaceišona i rezervacejis dīnā - pādejuo {{count}} dīna .",
+      "title_other": "Pīsasaceišona i rezervacejis dīnā - pādejuos {{count}} dīnys .",
+      "registrations": "Pīsasaceišona",
+      "bookings": "Rezervacejis"
+    },
+    "byStage": "Vad piec statusa",
+    "bySource": "Vad piec olūta .",
+    "byReferral": "Vad piec nūsyuteišonys statusa .",
+    "myDisputes": "Streidi jūs izsaceiti .",
+    "noDisputes": "Nikaidu streidu nav izsaceiti.",
+    "unknown": "Nav īkuortuots .",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Uorejais CRM (simulāts)",
+      "PARTNER_CRM": "Pīvīnuoja jūs komanda .",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integraceja",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Aizsardzeibys termeņš beidzās nuokušajā {{count}} dīnā",
+    "expiringTitle_other": "Aizsardzeibys termeņš beidzās nuokušajuos {{count}} dīnuos",
+    "expiringEmpty": "Nivīns svyns itymā lūgā nazaudej sovu aizsardzeibu."
   }
 }

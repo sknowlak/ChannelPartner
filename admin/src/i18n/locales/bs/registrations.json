@@ -49,8 +49,73 @@
       "newPartnerId": "Novi ID partnera",
       "reason": "Razlog (obavezno)",
       "apply": "Primijeni nadjačavanje",
-      "applying": "Primjena..."
+      "applying": "Primjena...",
+      "cancelBookingHint": "Otkazivanje označava rezervaciju i njenu proviziju kao otkazane, vraća operativno vlasništvo partneru i dozvoljava graditelju da ponovo rezervira ovo vodstvo.",
+      "cancelBookingConfirm": "Otkazati ovu rezervaciju? I njegova provizija je otkazana. Ovo se evidentira s vašim imenom i razlogom."
     },
-    "timelineTitle": "Vremenski okvir revizije (ova registracija)"
+    "timelineTitle": "Vremenski okvir revizije (ova registracija)",
+    "bookingStatus": "Status rezervacije",
+    "commissionAttribution": "Pripisivanje provizije",
+    "disputeOpen": "Otvoren je vlasnički spor protiv ovog kupca - drugi partner kaže da je njihov. O tome se odlučuje na stranici Sporovi.",
+    "viewDisputes": "Pogledajte sporove",
+    "cancellation": {
+      "title": "Rezervacija je otkazana",
+      "hint": "Rezervacija i njena provizija su otkazani; operativno vlasništvo je vraćeno partneru i graditelj može ponovo rezervirati ovaj potencijal.",
+      "at": "Otkazano u",
+      "by": "Otkazano od strane",
+      "reason": "Razlog"
+    }
+  },
+  "disputes": {
+    "title": "Vlasnički sporovi",
+    "hint": "Partner čija je registracija odbijena kao duplikat može osporiti ko je vlasnik kupca. Pregledajte obje strane i odlučite.",
+    "statusFilter": "Status spora",
+    "allStatuses": "Svi statusi",
+    "empty": "Nema sporova sa ovim statusom.",
+    "columns": {
+      "dispute": "Spor",
+      "customer": "Kupac",
+      "project": "Projekt",
+      "raisedBy": "Podigao",
+      "heldBy": "Trenutni vlasnik",
+      "status": "Status",
+      "raisedAt": "Odgajan na"
+    },
+    "detail": {
+      "title": "Spor {{id}}",
+      "raisedOn": "Podignut {{date}}",
+      "raisingTitle": "Podigao",
+      "holderTitle": "Trenutni vlasnik",
+      "partner": "Partner",
+      "raisedBy": "Submitted by",
+      "customerName": "Kupac",
+      "mobile": "Mobilni",
+      "alternateMobile": "Alternativni mobilni",
+      "email": "Email",
+      "project": "Projekt",
+      "reason": "Njihov razlog",
+      "registration": "Registracija",
+      "registeredAt": "Registriran na",
+      "referral": "Preporuka",
+      "heldMissing": "Zadržana registracija nije pronađena.",
+      "resolutionTitle": "Odluka",
+      "outcome": "Ishod",
+      "note": "Napomena",
+      "decidedBy": "Odlučio",
+      "decidedAt": "Odlučeno",
+      "newRegistration": "Nova registracija",
+      "decideTitle": "Odlučite o ovom sporu",
+      "noteLabel": "Napomena s objašnjenjem odluke (obavezno)",
+      "noteRequired": "Napišite napomenu da odlučite.",
+      "uphold": "Uphold",
+      "overturn": "Prevrnuti",
+      "upholdEffect": "{{holder}} zadržava kupca. Spor je zatvoren i ništa se više ne mijenja.",
+      "overturnEffect": "Zaštita duplikata {{holder}} sada prestaje i korisnik je registrovan za {{partner}} kao nova registracija.",
+      "heldBookedHelp": "Ovaj kupac je rezerviran preko trenutnog vlasnika. Prvo otkažite tu rezervaciju (Admin nadjačava registraciju), a zatim poništite:",
+      "confirmTitle": "Jeste li sigurni?",
+      "confirmUphold": "Da, pridržavajte se",
+      "confirmOverturn": "Da, prevrnuti",
+      "back": "Nazad na sporove"
+    }
   }
 }

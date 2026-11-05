@@ -43,7 +43,9 @@
       "name": "Mung",
       "city": "Auli",
       "status": "Kaham hamya",
-      "actions": "Samungrok"
+      "actions": "Samungrok",
+      "protection": "Duplicate mwthangmung",
+      "matchOn": "Duplicate wngkha"
     },
     "closeReferrals": "Referral ni bagwi khakdi",
     "reopen": "Phiyokdi",
@@ -55,6 +57,25 @@
       "add": "Project tubudi",
       "created": "Snamjak {{name}} ."
     },
-    "back": "Snamnairokni thani kiphilwi phaidi"
+    "back": "Snamnairokni thani kiphilwi phaidi",
+    "protection": {
+      "days_one": "{{count}} sal",
+      "days_other": "{{count}} sal",
+      "globalDays_one": "Swngcharni swlaijak ( {{count}} sal)",
+      "globalDays_other": "Swngcharni swlaijak ( {{count}} sal)",
+      "globalDefault": "Swngcharni swlaijak",
+      "placeholder": "Raktharmani salrok (kwchangma = swngcharni swkangni)",
+      "saved": "{{name}} ni bagwi kwtal mwthangmung kwtal wngkha .",
+      "hint": "Duplicate wngwi tongmani: 1-3650 sal, eba Settings ni swngcharni wngwi tongmani wngwi tongmani wngwi tongmani. Kaisa swlaimung kwtal registration rokni bagwi simi se wngnai - tongnairok bohrokni expiry no narwknai."
+    },
+    "matching": {
+      "global": "Swngcharni swlaijak",
+      "globalWith": "Swngcharni swkangni ( {{fields}} )",
+      "mobile": "Mobile number",
+      "email": "Email",
+      "both": "Mobail nombor + email",
+      "saved": "{{name}} ni bagwi kwtal khe swlaijak kha",
+      "hint": "Abo hai kheno khoroknwi registration no kaisa project ni bagwi kaisa customer khlaio. Tabukni simi duplicate check ni bagwi swlaimungrok wngnai; tongnai mwthangmung no swkak ya."
+    }
   }
 }

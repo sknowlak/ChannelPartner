@@ -49,8 +49,73 @@
       "newPartnerId": "ID com-pàirtiche ùr",
       "reason": "Adhbhar (riatanach)",
       "apply": "Cuir a-steach Override",
-      "applying": "A' tagradh..."
+      "applying": "A' tagradh...",
+      "cancelBookingHint": "Le bhith a’ cur dheth tha e a’ comharrachadh an glèidhidh agus a choimisean mar a chaidh a chuir dheth, a’ tilleadh seilbh obrachaidh chun chom-pàirtiche, agus a’ leigeil leis an neach-togail seo a stiùireadh a-rithist.",
+      "cancelBookingConfirm": "Sguir dheth an glèidheadh ​​seo? Tha an coimisean aige air a chuir dheth cuideachd. Tha seo air a chlàradh le d’ ainm agus adhbhar."
     },
-    "timelineTitle": "Clàr-ama Sgrùdaidh (an clàradh seo)"
+    "timelineTitle": "Clàr-ama Sgrùdaidh (an clàradh seo)",
+    "bookingStatus": "Inbhe Clàraidh",
+    "commissionAttribution": "Attribution Coimisean",
+    "disputeOpen": "Tha connspaid seilbh fosgailte don neach-ceannach seo - tha com-pàirtiche eile ag ràdh gur ann leotha a tha e. Tha e air a cho-dhùnadh air an duilleag Connspaid.",
+    "viewDisputes": "Thoir sùil air connspaidean",
+    "cancellation": {
+      "title": "Clàradh air a chuir dheth",
+      "hint": "Tha an clàradh agus a choimisean air an cur dheth; tha seilbh obrachaidh air ais leis a’ chom-pàirtiche agus faodaidh an neach-togail an stiùir seo a ghlèidheadh ​​a-rithist.",
+      "at": "Air a chur dheth aig",
+      "by": "Air a chur dheth le",
+      "reason": "Adhbhar"
+    }
+  },
+  "disputes": {
+    "title": "Connspaidean Seilbh",
+    "hint": "Faodaidh com-pàirtiche a chaidh a chlàradh a dhiùltadh mar dhùblachadh connspaid cò leis a tha an neach-ceannach. Dèan lèirmheas air an dà thaobh agus co-dhùnadh.",
+    "statusFilter": "Inbhe connspaid",
+    "allStatuses": "A h-uile inbhe",
+    "empty": "Chan eil connspaid sam bith mun inbhe seo.",
+    "columns": {
+      "dispute": "Connspaid",
+      "customer": "Neach-ceannach",
+      "project": "Pròiseact",
+      "raisedBy": "Air a thogail le",
+      "heldBy": "Sealbhadair gnàthach",
+      "status": "Inbhe",
+      "raisedAt": "Thogadh air"
+    },
+    "detail": {
+      "title": "Connspaid {{id}}",
+      "raisedOn": "{{date}} air a thogail",
+      "raisingTitle": "Air a thogail le",
+      "holderTitle": "Sealbhadair gnàthach",
+      "partner": "Com-pàirtiche",
+      "raisedBy": "Air a chuir a-steach le",
+      "customerName": "Neach-ceannach",
+      "mobile": "Fòn-làimhe",
+      "alternateMobile": "Fòn-làimhe eile",
+      "email": "Post-d",
+      "project": "Pròiseact",
+      "reason": "An adhbhar aca",
+      "registration": "Clàradh",
+      "registeredAt": "Clàraichte air",
+      "referral": "Iomradh",
+      "heldMissing": "Cha deach an clàradh a chaidh a chumail a lorg.",
+      "resolutionTitle": "Co-dhùnadh",
+      "outcome": "Toradh",
+      "note": "Thoir an aire",
+      "decidedBy": "Air a cho-dhùnadh le",
+      "decidedAt": "Co-dhùnadh air",
+      "newRegistration": "Clàradh ùr",
+      "decideTitle": "Dèan co-dhùnadh mun chonnspaid seo",
+      "noteLabel": "Nota a’ mìneachadh a’ cho-dhùnaidh (riatanach)",
+      "noteRequired": "Sgrìobh nota airson co-dhùnadh.",
+      "uphold": "Seas suas",
+      "overturn": "Tilleadh",
+      "upholdEffect": "{{holder}} a' cumail a' chustamair. Tha a’ chonnspaid dùinte agus chan atharraich dad eile.",
+      "overturnEffect": "Tha dìon dùblaichte {{holder}} a’ tighinn gu crìch an-dràsta agus tha an teachdaiche clàraichte airson {{partner}} mar chlàradh ùr.",
+      "heldBookedHelp": "Tha an neach-ceannach seo air a ghleidheadh ​​​​tron ​​t-sealbhadair gnàthach. Sguir dhen àite sin an-toiseach (Smachd air an Rianachd air a’ chlàradh), agus an uairsin cuir air ais:",
+      "confirmTitle": "A bheil thu cinnteach?",
+      "confirmUphold": "Seadh, seas suas",
+      "confirmOverturn": "Tha, cuir thairis",
+      "back": "Air ais gu Connspaidean"
+    }
   }
 }

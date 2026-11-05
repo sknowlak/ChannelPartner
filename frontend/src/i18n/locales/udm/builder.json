@@ -30,7 +30,8 @@
       "registered": "Регистрировать каремын"
     },
     "booked": "Бронировать каремын",
-    "empty": "Али ӧвӧл рефералъёс."
+    "empty": "Али ӧвӧл рефералъёс.",
+    "bookingCancelled": "Бронирование отменен"
   },
   "detail": {
     "customer": "Клиент",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Бронирование юнматэмын.",
       "accepted": "Направление кутэмын.",
-      "rejected": "Реферал отклонен."
+      "rejected": "Реферал отклонен.",
+      "bookingCancelled": "Бронирование отменен."
     },
-    "backToReferrals": "Рефералъёс доры берытскыны"
+    "backToReferrals": "Рефералъёс доры берытскыны",
+    "bookingCancelled": "Бронирование отменен",
+    "cancelBooking": "Бронированиез пытсано",
+    "cancelReasonLabel": "Отменалэн мугез (партнерлы возьматэмын) *",
+    "cancelBookingHint": "Операционной кузёйыръёс берытско партнерлы но соослэн комиссионной правозы пытсамын. Лидэз берлогес выльысь гожтыны луэ.",
+    "cancelBookingConfirm": "Бронированиез пытсано"
   },
   "history": {
     "title": "История",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Комиссилы право кылдытэмын",
       "HANDOVER_COMPLETED": "Сдача быдэсмиз",
       "ADMIN_PROTECTION_RELEASED": "Админ дубликатъёсты утён вазьгес поттӥз. Мугез: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Админ выльысь висъяз регистрациез {{from}} -ысь {{to}} . Мугез: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Админ выльысь висъяз регистрациез {{from}} -ысь {{to}} . Мугез: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Мукет партнерлэн дубликат регистрация лэсьтыны турттэмез ӧз лэзе",
+      "BOOKING_CANCELLED": "Бронирование отменен. Мугез: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Операционной кузёйыръёс берытскизы партнерлы",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Комиссия правоез броньэн ӵош пытсамын",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Выль бронь понна комиссилы правоез берыктӥз"
     }
   }
 }

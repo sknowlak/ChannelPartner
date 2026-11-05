@@ -43,7 +43,9 @@
       "name": "Eizina",
       "city": "Orurembo",
       "status": "Okoyemerire",
-      "actions": "Ebikorwa"
+      "actions": "Ebikorwa",
+      "protection": "Okurinda emirundi ebiri",
+      "matchOn": "Ebigarukwamu nibishushana aha"
     },
     "closeReferrals": "Kinga ahabw'okutwarwa",
     "reopen": "Garuka oigure",
@@ -55,6 +57,25 @@
       "add": "Yongyera purojekiti",
       "created": "Ekihangirwe {{name}} ."
     },
-    "back": "Garuka aha boombeki"
+    "back": "Garuka aha boombeki",
+    "protection": {
+      "days_one": "{{count}} ekiro",
+      "days_other": "{{count}} ebiro",
+      "globalDays_one": "Ensi yoona ( {{count}} ekiro)",
+      "globalDays_other": "Ensi yoona ( {{count}} ebiro)",
+      "globalDefault": "Enkora y'ensi yoona",
+      "placeholder": "Ebiro by'okwerinda (busha = ensi yoona)",
+      "saved": "Okurinda okugarukiremu kwagarurwaho ahabwa {{name}} .",
+      "hint": "Okurinda emirundi ebiri: ebiro 1-3650, nari reka busha kukoresa ebiri omu nsi yoona kuruga omu ntebeekanisa. Empindahinduka neekwata aha kwehandikisa okusya kwonka - okuriho nikuguma nikuhwaho."
+    },
+    "matching": {
+      "global": "Enkora y'ensi yoona",
+      "globalWith": "Ekirikubaho omunsi yoona ( {{fields}} )",
+      "mobile": "Enamba y'esimu",
+      "email": "Emeyiru",
+      "both": "Enamba y'esimu + e-mail",
+      "saved": "Okushushanisa kwa kabiri kwagarurwaho ahabwa {{name}}",
+      "hint": "Ni bintu ki ebirikureetera okwehandikisa kubiri kuba kasitoma omwe ahabwa purojekiti. Empindahinduka nizikwata aha kukyebera okurikugarukagaruka kuruga hati; oburinzi oburiho tiburikukwatwaho."
+    }
   }
 }

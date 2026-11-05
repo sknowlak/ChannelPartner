@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Yettwajerred",
-    "pending": "Ar mara"
+    "pending": "Ar mara",
+    "status": {
+      "CONFIRMED": "Yettwajerred",
+      "CANCELLED": "Asekles yettwabṭel"
+    }
   },
   "assign": {
     "unassigned": "Ur yettunefk ara",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Mazal ulac asenfar (ur yettwasemma ara)",
-    "notInList": "{{project}} (ur yelli ara deg umuɣ n usenfar)"
+    "notInList": "{{project}} (ur yelli ara deg umuɣ n usenfar)",
+    "protectionDays_one": "{{count}} -aḥareb n wass",
+    "protectionDays_other": "{{count}} -aḥareb n wass"
   },
   "journey": {
     "customer": "Amsaɣ",
@@ -76,7 +82,14 @@
     "progressHistory": "Amezruy n Ukemmel",
     "timesIn": "(tikkal deg {{timezone}} )",
     "backToMyLeads": "Tuɣalin ɣer yiḍrisen-iw",
-    "editLead": "Beddel Aselway"
+    "editLead": "Beddel Aselway",
+    "disputeBanner": "Amcicki-nniḍen yeccetki ɣef tbaḍnit n umeẓlu-a. Admin Leadrat yettmuqul-it - aḥareb-ik ad yeqqim deg umkan-is alamma gzem-d lḥeqq.",
+    "booking": "Asekles",
+    "commission": "Aseɣlef",
+    "notBooked": "Ur yettwaɛzel ara",
+    "cancelledOn": "Yettwabṭel deg {{date}} .",
+    "cancelReason": "Ssebba: {{reason}}",
+    "cancelledHint": "Abennay yebṭel lḥeqq - lbaḍna n uxeddim tuɣal-d ɣur-k yerna lḥeqq n tmeṣkiwt yettwabṭel. Yettwarreḍ ma yella yettwasbedd-d lḥebs tikkelt nniḍen."
   },
   "referral": {
     "NOT_REFERRED": "Ur yettunefk ara (ulac asenfar)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Builder yeqbel asenqed-nni.",
       "REFERRAL_REJECTED": "Builder yugi asenqed-nni. Ssebba: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin yessufeɣ-d aḥareb n tneqqiḍt zik. Ssebba: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin yerra-d asekles seg {{from}} ɣer {{to}} . Ssebba: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin yerra-d asekles seg {{from}} ɣer {{to}} . Ssebba: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Aɛraḍ n usekles n tis snat sɣur ucrik nniḍen yettwaqbel",
+      "BOOKING_CANCELLED": "Asekles yettwabṭel. Ssebba: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Tuɣal-d tbaḍnit n uxeddim i ucrik",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ttwabṭel tzemmar n tesmilt s usmel",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Tuɣal-d tzemmar n tesmilt i usmel amaynut",
+      "OWNERSHIP_DISPUTE_RAISED": "Amcicki nniḍen yeccetki ɣef tbaḍnit n umectari-a - ad t-id-yesqerdec yiwen n unemhal Leadrat",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Taluft n bab n umectari-a tettwakkes - bab-ik ur yettbeddil ara",
+      "OWNERSHIP_DISPUTE_UPHELD": "Amciwer n tbaḍnit ɣef umeẓlu-a yettwasqerdec - tban-d tbaḍnit-ik",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Yettwasekles deffir ma yettwaqbel ccwal-ik n tbaḍnit s lfayda-k. Tamawt: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Yekfa uḥareb : yettwaqbel yiwen n umciwer n tbaḍnit s lfayda n ucrik niḍen. Tamawt: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Uṭṭun-a n tilifun ur yeqbil ara {{country}} .",
     "COUNTRY_MISMATCH": "Ttxil-k fren akaram n tmurt iwatan.",
     "NOT_MOBILE": "Ttxil-k ssekcem uṭun n tilifun, mačči d tilifun n wakal."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Tasmilt tezmer",
+      "PENDING": "Tasmilt tettwaɛreḍ",
+      "CANCELLED": "Tettwabṭel Tasmilt"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Yettwaqqen ɣur-k",
+      "DISPUTED": "Asenqed yettwasqerdec"
+    }
+  },
+  "result": {
+    "none": "Ulac agmuḍ n usekles ara d-yesbanen. Ssekles-d yiwen n uswir d amezwaru.",
+    "acceptedTitle": "Yettwasekles uselway",
+    "rejectedTitle": "Lead ur yettwaskelsen ara",
+    "protectionWindow": "Tasekkirt n Uḥareb",
+    "protectedUntil": "Yettwaḥrez alamma",
+    "openLead": "Ldi Aselkim",
+    "addAnother": "Rnu Aselway nniḍen",
+    "duplicate": "Asnulfu - yettwaḥrez yakan",
+    "duplicateHint": "Amsaɣ-a yettwaḥrez yakan i usenfar-a s usekles nniḍen, ihi ur yezmir ara ad yettwasmel fell-ak.",
+    "existingProtectedUntil": "Asekles yellan yettwaḥrez alamma d 2020."
+  },
+  "disputes": {
+    "title": "Imenɣiyen-iw",
+    "intro": "Imenɣiyen n tbaḍnit ay d-tessekneḍ i yimsaɣen ay yettwagin d iḍrisen. Admin Leadrat yettmuqul yal yiwen.",
+    "empty": "Ur d-tessekneḍ ara kra n ccwal. Ma yella amectari i d-tewwiḍ yugi-t d aɛeqqa, tzemreḍ ad t-tḥettemḍ seg ugmuḍ n usekles.",
+    "columns": {
+      "dispute": "Amennuɣ",
+      "reason": "Ssebba nnek",
+      "outcome": "Agemmuḍ"
+    },
+    "status": {
+      "OPEN": "Ddaw uskazal",
+      "UPHELD": "Mačči deg lfayda-k",
+      "OVERTURNED": "Yettwagzem deg lfayda-k",
+      "WITHDRAWN": "Yettwajebd"
+    },
+    "awaitingReview": "Ttraǧuɣ asenqed n tedbelt",
+    "openNewLead": "Ldi aselway-ik {{id}}",
+    "withdraw": "Kkes-d",
+    "withdrawConfirm": "Jerred taluft-ik ɣef {{name}} ? Tabaɣurt n tura teqqim akken tella.",
+    "raise": "Tabaɣurt n ccwal",
+    "raiseTitle": "Tabaɣurt n ccwal",
+    "raiseHint": "Ma yella amesni-agi yusa-d ɣur-k d amezwaru, sfehmeḍ-as acimi. Ad t-id-yesqerdec yiwen n admin Leadrat ; ma yella gzem-d lḥeqq-ik, lqedd yettwasmel-ak-d fell-ak.",
+    "reasonLabel": "Ayɣer d amectari-agi ayla-k?",
+    "reasonMin_one": "Ma ulac {{count}} n usekkil.",
+    "reasonMin_other": "Ma ulac {{count}} n yisekkilen.",
+    "submit": "Azen Amjadel",
+    "notProtected": "Yiwen ur yeṭṭif ara aḥareb ɣef umeẓlu-agi i usenfar-agi s waṭas - tzemreḍ ad tesseklesḍ aselway tura.",
+    "raised": "Amjadel {{id}} yettwazen i uɛiwed n tmuɣli.",
+    "viewAll": "Wali imenɣiyen-iw"
+  },
+  "dashboard": {
+    "title": "Tafelwit",
+    "period": "Tallit",
+    "lastDays_one": "{{count}} ass",
+    "lastDays_other": "{{count}} ussan",
+    "emptyTitle": "Ansuf yis-wen! Ur tesɛiḍ ara iberdan ar tura.",
+    "emptyHint": "Ssekles aḍris-ik amezwaru - aẓeḍḍa-k n tmeẓdiyin, n tmeẓdiyin d tmeẓdiyin n uḥareb ad d-banen dagi.",
+    "tiles": {
+      "leads": "Agmuḍ n yimdanen",
+      "newInPeriod_one": "{{count}} d amaynut deg tallit-a",
+      "newInPeriod_other": "{{count}} d amaynut deg tallit-a",
+      "accepted": "Yettwaqbel",
+      "booked": "Yettwajerred",
+      "bookedInPeriod_one": "{{count}} yettwasbedd deg tallit-a",
+      "bookedInPeriod_other": "{{count}} yettwasbedd deg tallit-a",
+      "conversion": "Asnulfu",
+      "conversionHint": "Imeslayen yettwasbedden d aḥric seg imeslayen yettwaqbalen",
+      "protectedNow": "Yettwaḥrez tura",
+      "expiringSoon_one": "Aḥareb yettfakkan deg wass {{count}}",
+      "expiringSoon_other": "Aḥareb yettfakkan deg {{count}} n wussan",
+      "disputedNow": "Yettwamjadel sɣur wiyaḍ",
+      "disputedNowHint": "Imḍebbren-ik s umciwer n tbaḍnit yeldin seg ucrik nniḍen",
+      "commissionEligible": "Tasmilt tezmer",
+      "commissionCancelled_one": "{{count}} yettwabṭel",
+      "commissionCancelled_other": "{{count}} yettwabṭel"
+    },
+    "chart": {
+      "title_one": "Asekles d usmel deg wass - ass aneggaru {{count}}",
+      "title_other": "Asekles d usmel deg wass - {{count}} ussan ineggura",
+      "registrations": "Asekles",
+      "bookings": "Tiwsiwin"
+    },
+    "byStage": "Yettawi s lḥala",
+    "bySource": "Yettawi s uɣbalu",
+    "byReferral": "Yettawi s lḥala n uceggeɛ",
+    "myDisputes": "Imenɣiyen ay d-tessekneḍ",
+    "noDisputes": "Ulac imenɣiyen i d-yettwabedren.",
+    "unknown": "Ur yettwasbedd ara",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM n berra (yettwasnefli)",
+      "PARTNER_CRM": "Terna-t terbaɛt-ik",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Asdukkel",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Aḥareb ad ifak deg wass {{count}} i d-iteddun",
+    "expiringTitle_other": "Aḥareb ad ifak deg ussan {{count}} i d-iteddun",
+    "expiringEmpty": "Ulac aẓru i yettwaxṣaren aḥareb-is deg ṭṭaq-agi."
   }
 }

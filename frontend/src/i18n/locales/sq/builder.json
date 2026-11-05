@@ -30,7 +30,8 @@
       "registered": "I regjistruar"
     },
     "booked": "Rezervuar",
-    "empty": "Nuk ka ende referime."
+    "empty": "Nuk ka ende referime.",
+    "bookingCancelled": "Rezervimi u anulua"
   },
   "detail": {
     "customer": "Klienti",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Rezervimi u konfirmua.",
       "accepted": "Referimi u pranua.",
-      "rejected": "Referimi u refuzua."
+      "rejected": "Referimi u refuzua.",
+      "bookingCancelled": "Rezervimi u anulua."
     },
-    "backToReferrals": "Kthehu te Referimet"
+    "backToReferrals": "Kthehu te Referimet",
+    "bookingCancelled": "Rezervimi u anulua",
+    "cancelBooking": "Anulo rezervimin",
+    "cancelReasonLabel": "Arsyeja e anulimit (i tregohet partnerit) *",
+    "cancelBookingHint": "Pronësia operacionale i kthehet partnerit dhe kualifikimi i tyre për komision anulohet. Kryesimi mund të rezervohet sërish më vonë.",
+    "cancelBookingConfirm": "Anuloni rezervimin"
   },
   "history": {
     "title": "Historia",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Përshtatshmëria e komisionit u krijua",
       "HANDOVER_COMPLETED": "Dorëzimi përfundoi",
       "ADMIN_PROTECTION_RELEASED": "Administratori lëshoi ​​herët mbrojtjen e dyfishtë. Arsyeja: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Administratori ricaktoi regjistrimin nga {{from}} në {{to}} . Arsyeja: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Administratori ricaktoi regjistrimin nga {{from}} në {{to}} . Arsyeja: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Një përpjekje e dyfishtë për regjistrim nga një partner tjetër u refuzua",
+      "BOOKING_CANCELLED": "Rezervimi u anulua. Arsyeja: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Pronësia operative iu kthye partnerit",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Përshtatshmëria e komisionit u anulua me rezervimin",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Përshtatshmëria e komisionit u rivendos për rezervimin e ri"
     }
   }
 }

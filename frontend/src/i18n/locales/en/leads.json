@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Booked",
-    "pending": "Pending"
+    "pending": "Pending",
+    "status": {
+      "CONFIRMED": "Booked",
+      "CANCELLED": "Booking cancelled"
+    }
   },
   "assign": {
     "unassigned": "Unassigned",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "No project yet (not referred)",
-    "notInList": "{{project}} (not in the project list)"
+    "notInList": "{{project}} (not in the project list)",
+    "protectionDays_one": "{{count}}-day protection",
+    "protectionDays_other": "{{count}}-day protection"
   },
   "journey": {
     "customer": "Customer",
@@ -76,7 +82,14 @@
     "progressHistory": "Progress History",
     "timesIn": "(times in {{timezone}})",
     "backToMyLeads": "Back to My Leads",
-    "editLead": "Edit Lead"
+    "editLead": "Edit Lead",
+    "disputeBanner": "Another partner has disputed ownership of this customer. A Leadrat admin is reviewing it - your protection stays in place until they decide.",
+    "booking": "Booking",
+    "commission": "Commission",
+    "notBooked": "Not booked",
+    "cancelledOn": "Cancelled on {{date}}.",
+    "cancelReason": "Reason: {{reason}}",
+    "cancelledHint": "The builder cancelled the booking - operational ownership is back with you and commission eligibility is cancelled. It is restored if the lead is booked again."
   },
   "referral": {
     "NOT_REFERRED": "Not referred (no project)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Builder accepted the referral",
       "REFERRAL_REJECTED": "Builder rejected the referral. Reason: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin released duplicate protection early. Reason: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin reassigned registration from {{from}} to {{to}}. Reason: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin reassigned registration from {{from}} to {{to}}. Reason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "A duplicate registration attempt by another partner was rejected",
+      "BOOKING_CANCELLED": "Booking cancelled. Reason: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operational ownership returned to the partner",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Commission eligibility cancelled with the booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Commission eligibility restored for the new booking",
+      "OWNERSHIP_DISPUTE_RAISED": "Another partner disputed ownership of this customer - a Leadrat admin will review it",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "The ownership dispute on this customer was withdrawn - your ownership is unchanged",
+      "OWNERSHIP_DISPUTE_UPHELD": "The ownership dispute on this customer was reviewed - your ownership is confirmed",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Registered after your ownership dispute was decided in your favour. Note: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Protection ended: an ownership dispute was decided in favour of another partner. Note: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "This phone number is not valid for {{country}}.",
     "COUNTRY_MISMATCH": "Please select the correct country code.",
     "NOT_MOBILE": "Please enter a mobile number, not a landline."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Commission eligible",
+      "PENDING": "Commission pending",
+      "CANCELLED": "Commission cancelled"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Attributed to you",
+      "DISPUTED": "Attribution disputed"
+    }
+  },
+  "result": {
+    "none": "No registration result to show. Register a lead first.",
+    "acceptedTitle": "Lead registered",
+    "rejectedTitle": "Lead not registered",
+    "protectionWindow": "Protection Window",
+    "protectedUntil": "Protected Until",
+    "openLead": "Open Lead",
+    "addAnother": "Add Another Lead",
+    "duplicate": "Duplicate - already protected",
+    "duplicateHint": "This customer is already protected for this project by another registration, so it could not be registered for you.",
+    "existingProtectedUntil": "Existing registration protected until"
+  },
+  "disputes": {
+    "title": "My Disputes",
+    "intro": "Ownership disputes you raised for customers that were refused as duplicates. A Leadrat admin reviews each one.",
+    "empty": "You have not raised any disputes. If a customer you brought in is refused as a duplicate, you can dispute it from the registration result.",
+    "columns": {
+      "dispute": "Dispute",
+      "reason": "Your reason",
+      "outcome": "Outcome"
+    },
+    "status": {
+      "OPEN": "Under review",
+      "UPHELD": "Not in your favour",
+      "OVERTURNED": "Decided in your favour",
+      "WITHDRAWN": "Withdrawn"
+    },
+    "awaitingReview": "Waiting for admin review",
+    "openNewLead": "Open your lead {{id}}",
+    "withdraw": "Withdraw",
+    "withdrawConfirm": "Withdraw your dispute for {{name}}? The current ownership stays as it is.",
+    "raise": "Dispute ownership",
+    "raiseTitle": "Dispute ownership",
+    "raiseHint": "If this customer came to you first, explain why. A Leadrat admin will review it; if they decide in your favour, the lead is registered for you.",
+    "reasonLabel": "Why is this customer yours?",
+    "reasonMin_one": "At least {{count}} character.",
+    "reasonMin_other": "At least {{count}} characters.",
+    "submit": "Send Dispute",
+    "notProtected": "Nobody holds protection on this customer for this project any more - you can register the lead now.",
+    "raised": "Dispute {{id}} sent for review.",
+    "viewAll": "View my disputes"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Period",
+    "lastDays_one": "{{count}} day",
+    "lastDays_other": "{{count}} days",
+    "emptyTitle": "Welcome! You have no leads yet.",
+    "emptyHint": "Register your first lead - your pipeline, bookings and protection deadlines will show up here.",
+    "tiles": {
+      "leads": "Total leads",
+      "newInPeriod_one": "{{count}} new in this period",
+      "newInPeriod_other": "{{count}} new in this period",
+      "accepted": "Accepted",
+      "booked": "Booked",
+      "bookedInPeriod_one": "{{count}} booked in this period",
+      "bookedInPeriod_other": "{{count}} booked in this period",
+      "conversion": "Conversion",
+      "conversionHint": "Booked leads as a share of accepted leads",
+      "protectedNow": "Protected now",
+      "expiringSoon_one": "Protection ending in {{count}} day",
+      "expiringSoon_other": "Protection ending in {{count}} days",
+      "disputedNow": "Disputed by others",
+      "disputedNowHint": "Your leads with an open ownership dispute from another partner",
+      "commissionEligible": "Commission eligible",
+      "commissionCancelled_one": "{{count}} cancelled",
+      "commissionCancelled_other": "{{count}} cancelled"
+    },
+    "chart": {
+      "title_one": "Registrations and bookings per day - last {{count}} day",
+      "title_other": "Registrations and bookings per day - last {{count}} days",
+      "registrations": "Registrations",
+      "bookings": "Bookings"
+    },
+    "byStage": "Leads by status",
+    "bySource": "Leads by source",
+    "byReferral": "Leads by referral status",
+    "myDisputes": "Disputes you raised",
+    "noDisputes": "No disputes raised.",
+    "unknown": "Not set",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "External CRM (simulated)",
+      "PARTNER_CRM": "Added by your team",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integration",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Protection expiring in the next {{count}} day",
+    "expiringTitle_other": "Protection expiring in the next {{count}} days",
+    "expiringEmpty": "No lead loses its protection in this window."
   }
 }

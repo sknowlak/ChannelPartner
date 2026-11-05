@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Book galaw da sai",
-    "pending": "Jahkring da ai"
+    "pending": "Jahkring da ai",
+    "status": {
+      "CONFIRMED": "Book galaw da sai",
+      "CANCELLED": "Booking hpe jahkring kau ai"
+    }
   },
   "assign": {
     "unassigned": "Magam bungli n jaw ai",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Project n nga shi ai (n tsun dan ai)",
-    "notInList": "{{project}} (project jahpan hta n lawm ai)"
+    "notInList": "{{project}} (project jahpan hta n lawm ai)",
+    "protectionDays_one": "{{count}} -nhtoi makawp maga ai lam",
+    "protectionDays_other": "{{count}} -nhtoi makawp maga ai lam"
   },
   "journey": {
     "customer": "Gunrai mari ai wa",
@@ -76,7 +82,14 @@
     "progressHistory": "Rawt jat galu kaba wa ai labau",
     "timesIn": "( {{timezone}} hta aten ni )",
     "backToMyLeads": "Ngai woi awn ai de bai wa u",
-    "editLead": "Ningbaw hpe gram lajang"
+    "editLead": "Ningbaw hpe gram lajang",
+    "disputeBanner": "Kaga partner langai mi gaw ndai customer hpe madu ai lam hpe ndang kalang galaw wa sai. Leadrat admin langai mi gaw dai hpe bai maram yu nga ai - shanhte dawdan ai aten du hkra na a makawp maga lam gaw shara kaw sha nga ai.",
+    "booking": "Booking galaw ai",
+    "commission": "Komishin gumhpraw , komishin hpung",
+    "notBooked": "Booking n galaw shi ai",
+    "cancelledOn": "{{date}} hta jahkring kau ai.",
+    "cancelReason": "Hpa majaw: {{reason}}",
+    "cancelledHint": "Builder wa gaw booking hpe jahkring kau ai - bungli galaw ai madu ai lam gaw nang kaw bai du wa sai hte commission lu na ahkaw ahkang hpe jahkring kau ai. Lead hpe bai booking galaw yang bai gram lajang ya ai."
   },
   "referral": {
     "NOT_REFERRED": "N tsun ai (project n nga ai)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Gawgap ai wa gaw referral hpe hkap la sai",
       "REFERRAL_REJECTED": "Builder gaw dai referral hpe ningdang kau ai. Hpa majaw: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin gaw duplicate makawp maga lam hpe shawng shapraw kau sai. Hpa majaw: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin gaw {{from}} kaw nna {{to}} de bai masat da ai. Hpa majaw: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin gaw {{from}} kaw nna {{to}} de bai masat da ai. Hpa majaw: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Kaga manang langai mi mying jahpan bang na matu shakut ai hpe ningdang kau hkrum ai",
+      "BOOKING_CANCELLED": "Booking hpe jahkring kau ai. Hpa majaw: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Bungli madu ai lam hpe manang wa hpang de bai nhtang jaw ai",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Booking galaw ai hte rau Commission lu na ahkaw ahkang hpe dawm kau sai.",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Booking nnan a matu Commission ahkaw ahkang bai gram lajang ya sai",
+      "OWNERSHIP_DISPUTE_RAISED": "Kaga manang langai mi gaw ndai customer hpe madu ai lam hpe ndang kalang galaw ai - Leadrat admin langai mi bai maram yu na re",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Ndai customer a ntsa na madu ai lam hpe dawm kau sai - na a madu ai lam n galai shai ai",
+      "OWNERSHIP_DISPUTE_UPHELD": "Ndai customer a ntsa na madu ai lam hpe bai maram yu sai - na a madu ai lam hpe kam sai",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Na a madu ai lam hpe nang a matu dawdan ngut ai hpang, mying jahpan bang da ai. Myit yu na: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Makawp maga ai lam ngut mat sai: madu ai lam hte seng nna manghkang hpe kaga manang langai a akyu a matu dawdan kau sai. Myit yu na: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Ndai phone nambat gaw {{country}} a matu n mai lang ai.",
     "COUNTRY_MISMATCH": "Teng man ai mungdan code hpe lata la u.",
     "NOT_MOBILE": "Landline n re ai sha, mobile nambat hpe bang u."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komishin hkam la mai ai",
+      "PENDING": "Komishin la nga ai",
+      "CANCELLED": "Komishin hpe dawm kau sai"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Nang hpe masat da ai",
+      "DISPUTED": "Attribution hpe ndang kalang byin ai"
+    }
+  },
+  "result": {
+    "none": "Mying jahpan bang ai mahtai hpe madun na matu n nga ai. Lead langai hpe shawng mying jahpan bang u.",
+    "acceptedTitle": "Lead mying jahpan bang da sai",
+    "rejectedTitle": "Lead hpe mying jahpan n bang da ai",
+    "protectionWindow": "Makawp maga ai Window",
+    "protectedUntil": "2020 du hkra makawp maga da ai.",
+    "openLead": "Lead hpe hpaw",
+    "addAnother": "Kaga Lead langai mi hpe jat bang u",
+    "duplicate": "Duplicate - makawp maga da sai",
+    "duplicateHint": "Ndai customer hpe ndai project a matu kaga registration langai mi hku nna makawp maga da sai majaw, nang a matu registration n mai galaw ai.",
+    "existingProtectedUntil": "Ya nga ai mying jahpan hpe 2020 du hkra makawp maga da ai."
+  },
+  "disputes": {
+    "title": "Ngai a ga law hkat ai lam ni",
+    "intro": "Duplicate hku nna ningdang kau hkrum ai customers ni a matu nang shabyin ai madu ai lam hte seng ai manghkang ni. Leadrat admin langai mi gaw langai hpra hpe bai maram yu ai.",
+    "empty": "Nang gaw hpa manghkang mung n shabyin ai. Nang woi sa ai customer langai hpe duplicate hku nna ningdang kau ai rai yang, registration result kaw nna nang ninghkap mai ai.",
+    "columns": {
+      "dispute": "Dara ai",
+      "reason": "Na a lam",
+      "outcome": "Pru sa ai lam"
+    },
+    "status": {
+      "OPEN": "Bai maram yu nga ai",
+      "UPHELD": "Nang hpe n ra sharawng ai",
+      "OVERTURNED": "Nang hpe akyu jaw na matu dawdan da sai",
+      "WITHDRAWN": "Htawm la kau sai"
+    },
+    "awaitingReview": "Admin ni a ningmu hpe la nga ai",
+    "openNewLead": "Na a ningbaw {{id}} hpe hpaw u",
+    "withdraw": "Dawm la ai",
+    "withdrawConfirm": "{{name}} a matu na a ndang kalang hpe bai nhtang la u ? Ya na madu ai lam gaw dai hku sha naw nga ai.",
+    "raise": "Ga law hkat ai madu ai lam",
+    "raiseTitle": "Ga law hkat ai madu ai lam",
+    "raiseHint": "Ndai customer gaw nang hpang de shawng sa ai rai yang, hpa majaw re ai hpe tsun dan u. Leadrat admin langai mi bai maram yu na re; shanhte gaw nang hpe madi shadaw ai hku dawdan yang, ningbaw ningla hpe nang a matu masat da ai.",
+    "reasonLabel": "Ndai customer gaw hpa majaw na a rai ta?",
+    "reasonMin_one": "N law htum {{count}} ngu ai laika hpe ka da u.",
+    "reasonMin_other": "N law htum {{count}} ngu ai laika si ni hpe bang u.",
+    "submit": "Ga law hkat ai lam hpe sa dat u",
+    "notProtected": "Ndai project a matu kadai mung ndai customer hpe makawp maga ai lam n galaw sai - nang gaw lead hpe ya jang register galaw mai sai.",
+    "raised": "Manghkang {{id}} hpe bai maram yu na matu sa dat ai.",
+    "viewAll": "Ngai a ndang kalang lam ni hpe yu u"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Aten ladaw",
+    "lastDays_one": "{{count}} shani",
+    "lastDays_other": "{{count}} nhtoi",
+    "emptyTitle": "Hkap tau la ga ai! Nang hta ningbaw n nga ai.",
+    "emptyHint": "Na a shawng nnan na ningbaw ningla hpe mying jahpan bang u - na a pipeline, booking hte makawp maga ai aten jahtum ni hpe ndai kaw mu lu na re.",
+    "tiles": {
+      "leads": "Yawng woi awn ai",
+      "newInPeriod_one": "{{count}} ndai aten laman nnan",
+      "newInPeriod_other": "{{count}} ndai aten laman nnan",
+      "accepted": "Hkap la sai",
+      "booked": "Book galaw da sai",
+      "bookedInPeriod_one": "{{count}} hpe ndai aten laman book galaw da ai",
+      "bookedInPeriod_other": "{{count}} hpe ndai aten laman book galaw da ai",
+      "conversion": "Galai shai ai lam",
+      "conversionHint": "Hkap la ai ningbaw ningla ni a garan gachyan ai hku nna booking galaw da ai ningbaw ningla ni",
+      "protectedNow": "Ya makawp maga da sai",
+      "expiringSoon_one": "{{count}} shani hta ngut ai makawp maga lam",
+      "expiringSoon_other": "{{count}} nhtoi hta ngut ai makawp maga lam",
+      "disputedNow": "Kaga ni ndang kalang byin ai",
+      "disputedNowHint": "Kaga manang langai kaw na madu ai lam hpe hpaw tsun shaga ai lam hte na a ningbaw ningla ni",
+      "commissionEligible": "Komishin hkam la mai ai",
+      "commissionCancelled_one": "{{count}} hpe dawm kau sai",
+      "commissionCancelled_other": "{{count}} hpe dawm kau sai"
+    },
+    "chart": {
+      "title_one": "Lani mi hta mying jahpan bang ai hte booking galaw ai - hpang jahtum {{count}} shani",
+      "title_other": "Lani mi hta mying jahpan bang ai hte booking galaw ai - hpang jahtum {{count}} nhtoi",
+      "registrations": "Mying jahpan bang ai lam ni",
+      "bookings": "Booking galaw ai"
+    },
+    "byStage": "Status hku nna woi awn ai",
+    "bySource": "Npawt nhpang hku nna woi awn ai",
+    "byReferral": "Referral masa hku nna woi awn ai",
+    "myDisputes": "Nang shapraw ai ndang kalang lam ni",
+    "noDisputes": "Ga law hkat ai lam n nga ai.",
+    "unknown": "N set ai",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Shinggan CRM (hkap la ai)",
+      "PARTNER_CRM": "Na a team kaw nna jat bang da ai",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Kahkyin gumdin lam",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Hpang na {{count}} shani hta makawp maga ai lam htum mat na re",
+    "expiringTitle_other": "Hpang na {{count}} nhtoi ni hta makawp maga ai lam htum mat na re",
+    "expiringEmpty": "Ndai window hta gara lead mung shi a makawp maga lam hpe sum mat ai n nga ai."
   }
 }

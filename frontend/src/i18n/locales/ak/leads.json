@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Wɔakyerɛw wɔn din",
-    "pending": "Retwɛn"
+    "pending": "Retwɛn",
+    "status": {
+      "CONFIRMED": "Wɔakyerɛw wɔn din",
+      "CANCELLED": "Wɔatwa booking no mu"
+    }
   },
   "assign": {
     "unassigned": "Wɔamfa wɔn nsa anhyɛ mu",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Adwuma biara nni hɔ de besi nnɛ (wɔnkyerɛw) .",
-    "notInList": "{{project}} (ɛnyɛ adwuma no din mu) ."
+    "notInList": "{{project}} (ɛnyɛ adwuma no din mu) .",
+    "protectionDays_one": "{{count}} -da ahobanbɔ",
+    "protectionDays_other": "{{count}} -da ahobanbɔ"
   },
   "journey": {
     "customer": "Adetɔni",
@@ -76,7 +82,14 @@
     "progressHistory": "Nkɔso Abakɔsɛm",
     "timesIn": "(mmere wɔ {{timezone}} )",
     "backToMyLeads": "San Kɔ M’akwankyerɛ So",
-    "editLead": "Sesa Ɔkannifo"
+    "editLead": "Sesa Ɔkannifo",
+    "disputeBanner": "Ɔhokafo foforo agye akyinnye wɔ adetɔfo yi wurayɛ ho. Leadrat admin bi rehwɛ mu - wo ahobanbɔ no tena hɔ kɔsi sɛ wɔbɛsi gyinaeɛ.",
+    "booking": "Nsɛm a Wɔka Kyerɛ",
+    "commission": "Hyɛ aseɛ",
+    "notBooked": "Wɔnkyerɛw wɔn din",
+    "cancelledOn": "Wɔatwa mu wɔ {{date}} .",
+    "cancelReason": "Nea enti a ɛte saa: {{reason}}",
+    "cancelledHint": "Ɔdansifoɔ no twaa booking no mu - operational ownership asan aba wo nkyɛn na wɔatwa commission eligibility mu. Sɛ wɔsan kyerɛw lead no bio a, wɔsan de ba."
   },
   "referral": {
     "NOT_REFERRED": "Wɔankɔ (adwuma biara nni hɔ) .",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Builder gyee asɛm a wɔde kɔmaa no no toom",
       "REFERRAL_REJECTED": "Builder pow asɛm a wɔde kɔmaa no no. Nea enti a ɛte saa: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin yii duplicate ahobammɔ adi ntɛm. Nea enti a ɛte saa: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin san de dinkyerɛw fii {{from}} kɔɔ {{to}} . Nea enti a ɛte saa: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin san de dinkyerɛw fii {{from}} kɔɔ {{to}} . Nea enti a ɛte saa: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Wɔpoo mmɔden a ɔhokafo foforo bɔe sɛ ɔbɛkyerɛw ne din mpɛn abien",
+      "BOOKING_CANCELLED": "Wɔatwa booking no mu. Nea enti a ɛte saa: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operational ownership san baa ɔhokafo no nkyɛn",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Commission eligibility twaa mu ne booking no",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Commission eligibility san de bae ma booking foforo no",
+      "OWNERSHIP_DISPUTE_RAISED": "Ɔhokafoɔ foforɔ gye akyinnyeɛ wɔ saa adetɔfoɔ yi wurayɛ ho - Leadrat admin bi bɛhwɛ mu",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Wɔtwee wurayɛ ho akasakasa a ɛwɔ saa adetɔfoɔ yi so no - wo wurayɛ no nsakraeɛ biara",
+      "OWNERSHIP_DISPUTE_UPHELD": "Wɔhwɛɛ owura ho akasakasa a ɛwɔ saa adetɔfoɔ yi so - wɔasi wo wurayɛ so dua",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Wɔkyerɛw wo din bere a wosii wo wurayɛ ho akasakasa no ho gyinae wɔ w’anim akyi. Hyɛ no nsow: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Ahobammɔ baa awiei: wosii owura ho akasakasa bi ho gyinae de boaa ɔhokafo foforo. Hyɛ no nsow: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Saa telefon nɔma yi nyɛ adwuma mma {{country}} .",
     "COUNTRY_MISMATCH": "Yɛsrɛ sɛ paw ɔman no mmara a ɛfata.",
     "NOT_MOBILE": "Yɛsrɛ sɛ kyerɛw mobile nɔma, na ɛnyɛ landline."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Commission a ɛfata",
+      "PENDING": "Commission a ɛda so ara wɔ hɔ",
+      "CANCELLED": "Commission no twaa mu"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Wɔkyerɛ sɛ wo na ɔkyerɛwee",
+      "DISPUTED": "Wɔgye akyinnye wɔ attribution ho"
+    }
+  },
+  "result": {
+    "none": "No registration aba a wɔbɛkyerɛ. Di kan kyerɛw obi a odi kan no din.",
+    "acceptedTitle": "Lead a wɔakyerɛw wɔn din",
+    "rejectedTitle": "Lead a wɔankyerɛw din",
+    "protectionWindow": "Ahobammɔ Mfɛnsere",
+    "protectedUntil": "Wɔabɔ ho ban Kosi sɛ",
+    "openLead": "Bue Kɔbere",
+    "addAnother": "Fa Kɔbere Foforo Ka Ho",
+    "duplicate": "Duplicate - a woabo ho ban dedaw",
+    "duplicateHint": "Wɔabɔ saa adetɔfo yi ho ban dedaw ama adwuma yi denam din foforo a wɔakyerɛw so, enti wɔantumi ankyerɛw wɔn din amma wo.",
+    "existingProtectedUntil": "Wɔabɔ dinkyerɛw a ɛwɔ hɔ dedaw no ho ban kosi sɛ"
+  },
+  "disputes": {
+    "title": "M’Akasakasa",
+    "intro": "Akyinnyegye a ɛfa owura ho a wosɔre maa adetɔfo a wɔpowee sɛ ɛyɛ nea wɔayɛ no abien. Leadrat admin bi hwɛ emu biara mu.",
+    "empty": "Momfaa akasakasa biara mmae. Sɛ wɔpow adetɔfo bi a wode no bae sɛ nea wɔayɛ no abien a, wubetumi agye ho akyinnye afi nea efii dinkyerɛw mu aba no mu.",
+    "columns": {
+      "dispute": "Masno",
+      "reason": "Wo ntease",
+      "outcome": "Nsunsuansoɔ"
+    },
+    "status": {
+      "OPEN": "Wɔ nhwehwɛmu ase",
+      "UPHELD": "Ɛnyɛ nea ɛbɛboa wo",
+      "OVERTURNED": "Wosii gyinae wɔ w’anim",
+      "WITHDRAWN": "Wɔatwe wɔn ho afi ho"
+    },
+    "awaitingReview": "Yɛretwɛn sɛ admin nhwehwɛmu bɛba",
+    "openNewLead": "Bue wo kan no {{id}}",
+    "withdraw": "Yi firi",
+    "withdrawConfirm": "Twe wo akasakasa no fi hɔ ma {{name}} ? Mprempren wurayɛ no tra hɔ sɛnea ɛte no.",
+    "raise": "Akyinnyegye a ɛfa owurayɛ ho",
+    "raiseTitle": "Akyinnyegye a ɛfa owurayɛ ho",
+    "raiseHint": "Sɛ adetɔfo yi dii kan baa wo nkyɛn a, kyerɛkyerɛ nea enti a ɛte saa mu. Leadrat admin bi bɛhwɛ mu; sɛ wosi gyinae ma wo a, wɔkyerɛw nea odi kan no din ma wo.",
+    "reasonLabel": "Dɛn nti na adetɔfo yi yɛ wo dea?",
+    "reasonMin_one": "Anyɛ yiye koraa no, {{count}} nkyerɛwde.",
+    "reasonMin_other": "Anyɛ yiye koraa no, {{count}} nkyerɛwde.",
+    "submit": "Send Akyinnyegye",
+    "notProtected": "Obiara nkura ahobanbɔ wɔ saa adetɔfoɔ yi so mma saa adwuma yi bio - wobɛtumi akyerɛw nea ɛdi kan no din seesei.",
+    "raised": "Akyinnyegye {{id}} a wɔde kɔmaa sɛ wɔmfa nhwɛ mu.",
+    "viewAll": "Hwɛ m’akasakasa ahorow"
+  },
+  "dashboard": {
+    "title": "Dashboard a wɔde kyerɛw nsɛm",
+    "period": "Berɛ",
+    "lastDays_one": "{{count}} da no",
+    "lastDays_other": "{{count}} nna",
+    "emptyTitle": "Akwaaba! Wo nni leads biara de besi nnɛ.",
+    "emptyHint": "Kyerɛw wo kan a edi kan - wo pipeline, bookings ne ahobammɔ bere a etwa to bɛda adi wɔ ha.",
+    "tiles": {
+      "leads": "Total leads",
+      "newInPeriod_one": "{{count}} foforo wɔ saa bere yi mu",
+      "newInPeriod_other": "{{count}} foforo wɔ saa bere yi mu",
+      "accepted": "Wogye tom",
+      "booked": "Wɔakyerɛw wɔn din",
+      "bookedInPeriod_one": "{{count}} booked wɔ saa bere yi mu",
+      "bookedInPeriod_other": "{{count}} booked wɔ saa bere yi mu",
+      "conversion": "Nsakrae",
+      "conversionHint": "Booked leads sɛ kyɛfa wɔ leads a wogye tom mu",
+      "protectedNow": "Wɔabɔ ho ban mprempren",
+      "expiringSoon_one": "Ahobanbɔ a ɛba awiei wɔ {{count}} da no mu",
+      "expiringSoon_other": "Ahobanbɔ a ɛba awiei wɔ {{count}} nna mu",
+      "disputedNow": "Afoforo gye ho akyinnye",
+      "disputedNowHint": "Wo di anim ne owura ho akasakasa a ɛda adi pefee a efi ɔhokafo foforo hɔ",
+      "commissionEligible": "Commission a ɛfata",
+      "commissionCancelled_one": "{{count}} wɔatwa mu",
+      "commissionCancelled_other": "{{count}} wɔatwa mu"
+    },
+    "chart": {
+      "title_one": "Nnipa a wɔkyerɛw wɔn din ne wɔn a wɔkra da biara - da a etwa to {{count}}",
+      "title_other": "Nnipa a wɔkyerɛw wɔn din ne wɔn a wɔkra da biara - {{count}} nna a etwa to",
+      "registrations": "Wɔn a wɔkyerɛw wɔn din",
+      "bookings": "Nsɛm a Wɔka Kyerɛ"
+    },
+    "byStage": "Di anim denam dibea a ɔwɔ so",
+    "bySource": "Di anim denam fibea so",
+    "byReferral": "Di anim denam referral tebea so",
+    "myDisputes": "Akyinnyegye ahorow a wosɔree",
+    "noDisputes": "Akyinnyegye biara amma.",
+    "unknown": "Ɛnyɛ nea wɔde asi hɔ",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Abɔnten so CRM (a wɔayɛ no sɛnea ɛte) .",
+      "PARTNER_CRM": "Wo kuw no na ɛde kaa ho",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Nkabom a wɔde bɛka abom",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Ahobanbɔ a ɛretwam wɔ {{count}} da a edi hɔ no mu",
+    "expiringTitle_other": "Ahobanbɔ a ɛretwam wɔ {{count}} nna a edi hɔ no mu",
+    "expiringEmpty": "Kɔbere biara nhwere ahobammɔ wɔ mfɛnsere yi mu."
   }
 }

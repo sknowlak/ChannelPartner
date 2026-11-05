@@ -10,10 +10,9 @@ const { createInitialOwnership, getOwnership } = require('../services/ownershipS
 const { leadEditProblem } = require('../services/leadEditGuards');
 const { fieldValueProblem } = require('../utils/fieldValues');
 const { contactView, CONTACT_FIELDS } = require('../utils/contact');
-const { resolveProject, referralStatusFor, listOpenProjects } = require('../services/projectService');
+const { resolveProject, referralStatusFor, listOpenProjects, protectionDaysFor } = require('../services/projectService');
 const { logEvent, getTimeline } = require('../services/auditService');
 const { withIdempotency } = require('../services/idempotencyService');
-const { getSettings } = require('../services/settingsService');
 const { listFieldDefinitions } = require('../services/leadFieldDefinitionService');
 const { triggerWebhooks } = require('../services/webhookService');
 const { validateMobileField } = require('../utils/phone');
@@ -62,11 +61,18 @@ async function listMyRegistrations(req, res, next) {
     const registrations = await Registration.find({ partnerId: req.partnerId }).sort({ registeredAt: -1 });
     const users = await loadAssignableUsers(req.partnerId);
     const userNameById = new Map(users.map((u) => [u.userId, u.name]));
+    // Leads whose booking was cancelled (section 62) - the list says so
+    // instead of looking like they were never booked.
+    const cancelled = new Set((await Booking.find({
+      registrationId: { $in: registrations.filter((r) => !r.isBooked).map((r) => r.registrationId) },
+      status: 'CANCELLED'
+    }).select('registrationId')).map((b) => b.registrationId));
 
     const enriched = registrations.map((r) => {
       const customer = contactView(r);
       return {
         ...r.toObject(),
+        bookingStatus: r.isBooked ? 'CONFIRMED' : cancelled.has(r.registrationId) ? 'CANCELLED' : '',
         customerName: customer.name,
         customerMobile: customer.mobile,
         customer,
@@ -240,7 +246,8 @@ async function createMyRegistration(req, res, next) {
       // The contact details this partner entered stay on the registration.
       const customerDoc = await findOrCreateCustomer({ name: customer.name, mobile: customer.mobile });
 
-      const { duplicateProtectionDays } = await getSettings();
+      // The project's own window when it has one (section 62), else the global one.
+      const duplicateProtectionDays = await protectionDaysFor(projectId);
       const registrationId = await nextId('REG');
       const registeredAt = new Date();
       const protectionExpiry = new Date(registeredAt.getTime() + duplicateProtectionDays * 24 * 60 * 60 * 1000);

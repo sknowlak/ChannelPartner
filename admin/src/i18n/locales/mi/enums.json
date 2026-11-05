@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "E tika ana",
-    "PENDING": "Tarewa ana"
+    "PENDING": "Tarewa ana",
+    "CANCELLED": "Kua whakakorehia"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Tukuna te whakamarutanga takirua moata",
-    "REASSIGN_PARTNER": "Hoatu ki tetahi atu hoa"
+    "REASSIGN_PARTNER": "Hoatu ki tetahi atu hoa",
+    "CANCEL_BOOKING": "Whakakorehia te tono"
   },
   "dataType": {
     "TEXT": "Kuputuhi",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Kaiwhakahaere Matua",
     "ADMIN": "Kaiwhakahaere"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Kua whakapumautia",
+    "CANCELLED": "Kua whakakorehia"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Kua huanga",
+    "DISPUTED": "Ka tautohetia"
+  },
+  "disputeStatus": {
+    "OPEN": "Tuwhera",
+    "UPHELD": "Whakanuia",
+    "OVERTURNED": "Ka hurihia",
+    "WITHDRAWN": "Kua unuhia"
   }
 }

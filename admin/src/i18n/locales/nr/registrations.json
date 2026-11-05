@@ -49,8 +49,73 @@
       "newPartnerId": "ID yomlingani omutjha",
       "reason": "Isizathu (kuyatlhogeka)",
       "apply": "Sebenzisa ukudlulisa",
-      "applying": "Ukufaka isibawo..."
+      "applying": "Ukufaka isibawo...",
+      "cancelBookingHint": "Ukukhansela kutshwaya ukubhukha nekhomishini yayo njengokukhanseliwe, kubuyisela ubunikazi bokusebenza kumlingani, begodu kuvumela umakhi bona abhukhe i-lead le godu.",
+      "cancelBookingConfirm": "Khansela ukubhukha lokhu? Ikhomishini yayo ikhanseliwe nayo. Lokhu kufakwe ngebizo lakho nebanga lakho."
     },
-    "timelineTitle": "Isikhathi sokuHlola (lokhu kutloliswa)"
+    "timelineTitle": "Isikhathi sokuHlola (lokhu kutloliswa)",
+    "bookingStatus": "Isimo sokubhukha",
+    "commissionAttribution": "Ukunikelwa kwekhomitjhini",
+    "disputeOpen": "Ukuphikisana kobunikazi kuvuliwe ekhasimendeni - omunye umlingani uthi ngeyabo. Kunqunywa ekhasini leempikiswano.",
+    "viewDisputes": "Qala iingxabano",
+    "cancellation": {
+      "title": "Ukubhukha kukhanseliwe",
+      "hint": "Ukubhukha kanye nekhomishini yayo kukhanseliwe; ubunikazi bokusebenza bubuyele kumlingani begodu umakhi angabhukha umrholi lo godu.",
+      "at": "Ikhanseliwe ngo-",
+      "by": "Ikhanseliwe ngu",
+      "reason": "Isizathu"
+    }
+  },
+  "disputes": {
+    "title": "Iingxabano zobunikazi",
+    "hint": "Umlingani obhaliselwe ukutloliswa kwakhe njengekhophi angaphikisana nokuthi ngubani umnikazi wekhasimende. Buyekeza zombili iinhlangothi bese unquma.",
+    "statusFilter": "Isimo sokuphikisana",
+    "allStatuses": "Boke ubujamo",
+    "empty": "Akukho ukuphikisana ngesimo lesi.",
+    "columns": {
+      "dispute": "Isinghonghoyilo",
+      "customer": "Umthengi",
+      "project": "Iphrojekthi",
+      "raisedBy": "Ikhuliswe ngu",
+      "heldBy": "Umnikazi wamanje",
+      "status": "Ubujamo",
+      "raisedAt": "Ikhuliswe ngo-"
+    },
+    "detail": {
+      "title": "Ukuphikisana {{id}}",
+      "raisedOn": "Iphakanyisiwe {{date}}",
+      "raisingTitle": "Ikhuliswe ngu",
+      "holderTitle": "Umnikazi wamanje",
+      "partner": "Umlingani",
+      "raisedBy": "Ithunyelwe ngu",
+      "customerName": "Umthengi",
+      "mobile": "Khambako",
+      "alternateMobile": "Elinye iselula",
+      "email": "I-imeyili",
+      "project": "Iphrojekthi",
+      "reason": "Isizathu sabo",
+      "registration": "Ukutlolisa",
+      "registeredAt": "Ibhalisiwe mhlana",
+      "referral": "Ukudluliselwa",
+      "heldMissing": "Ukutloliswa okubanjiweko akutholakalanga.",
+      "resolutionTitle": "Isiqunto",
+      "outcome": "Umphumela",
+      "note": "Tjheja",
+      "decidedBy": "Kuquntwe ngu",
+      "decidedAt": "Kuquntwe",
+      "newRegistration": "Ukutloliswa okutjha",
+      "decideTitle": "Nquma umraro lo",
+      "noteLabel": "Inothi elihlathulula isiqunto (liyatlhogeka)",
+      "noteRequired": "Tlola inothi ukuze unqume.",
+      "uphold": "Sekela",
+      "overturn": "Phendulela",
+      "upholdEffect": "{{holder}} ugcina ikhasimende. Ukuphikisana kuvaliwe begodu akukho okunye okutjhugulukako.",
+      "overturnEffect": "Ukuvikelwa kwe {{holder}} 's okuphindwe kabili kuyaphela nje begodu ikhasimende libhaliswe ku {{partner}} njengokutloliswa okutjha.",
+      "heldBookedHelp": "Ikhasimende leli libhukwe ngomnikazi wamanje. Khansela ukubhukha lokho kokuthoma (Admin Override ekubhalisweni), bese uphendulela:",
+      "confirmTitle": "Uqiniseka?",
+      "confirmUphold": "Iye, qinisa",
+      "confirmOverturn": "Iye, jika",
+      "back": "Buyela eempikiswaneni"
+    }
   }
 }

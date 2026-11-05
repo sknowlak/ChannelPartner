@@ -30,7 +30,8 @@
       "registered": "Kua rehitatia"
     },
     "booked": "Kua tohua",
-    "empty": "Karekau he tohutoro."
+    "empty": "Karekau he tohutoro.",
+    "bookingCancelled": "Kua whakakorehia te tono"
   },
   "detail": {
     "customer": "Kiritaki",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Whakapumautia te rahui.",
       "accepted": "I whakaaetia te tuku.",
-      "rejected": "I whakakahoretia te tuku."
+      "rejected": "I whakakahoretia te tuku.",
+      "bookingCancelled": "Kua whakakorehia te tono."
     },
-    "backToReferrals": "Hoki ki nga Tohutoro"
+    "backToReferrals": "Hoki ki nga Tohutoro",
+    "bookingCancelled": "Kua whakakorehia te tono",
+    "cancelBooking": "Whakakorehia te Rahui",
+    "cancelReasonLabel": "Take mo te whakakore (whakaatuhia ki te hoa) *",
+    "cancelBookingHint": "Ka hoki te mana whakahaere ki te hoa mahi, ka whakakorehia to raatau whakaurunga. Ka taea te tuhi ano te kaiarahi i muri mai.",
+    "cancelBookingConfirm": "Whakakorehia te tono"
   },
   "history": {
     "title": "Hītori",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kua waihangahia te mana o te Komihana",
       "HANDOVER_COMPLETED": "Kua oti te tuku",
       "ADMIN_PROTECTION_RELEASED": "I tukuna wawe e te Kaiwhakahaere te whakamarumaru takirua. Take: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "I tukuna ano e te Kaiwhakahaere te rehitatanga mai i {{from}} ki {{to}} . Take: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "I tukuna ano e te Kaiwhakahaere te rehitatanga mai i {{from}} ki {{to}} . Take: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "I whakahēngia he ngana rehitatanga takirua a tetahi atu hoa",
+      "BOOKING_CANCELLED": "Kua whakakorehia te tono. Take: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "I hoki mai te mana whakahaere ki te hoa",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "I whakakorehia te whakaurunga a te Komihana me te tono",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kua whakahokia mai te mana o te Komihana mo te rahui hou"
     }
   }
 }

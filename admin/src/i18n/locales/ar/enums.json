@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "صالح",
-    "PENDING": "قيد الانتظار"
+    "PENDING": "قيد الانتظار",
+    "CANCELLED": "تم الإلغاء"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "الافراج عن الحماية المكررة في وقت مبكر",
-    "REASSIGN_PARTNER": "إعادة التعيين إلى شريك آخر"
+    "REASSIGN_PARTNER": "إعادة التعيين إلى شريك آخر",
+    "CANCEL_BOOKING": "إلغاء الحجز"
   },
   "dataType": {
     "TEXT": "نص",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "المشرف الفائق",
     "ADMIN": "مسؤل"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "مؤكد",
+    "CANCELLED": "تم الإلغاء"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "المنسوب",
+    "DISPUTED": "المتنازع عليها"
+  },
+  "disputeStatus": {
+    "OPEN": "يفتح",
+    "UPHELD": "أيد",
+    "OVERTURNED": "انقلبت",
+    "WITHDRAWN": "انسحبت"
   }
 }

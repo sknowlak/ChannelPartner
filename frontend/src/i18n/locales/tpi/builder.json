@@ -29,7 +29,8 @@
       "registered": "Rejistret"
     },
     "booked": "Buk pinis",
-    "empty": "Nogat riferal yet."
+    "empty": "Nogat riferal yet.",
+    "bookingCancelled": "Ol i kenselim buking"
   },
   "detail": {
     "customer": "Kastoma",
@@ -52,9 +53,15 @@
     "notice": {
       "booked": "Buking i konfem.",
       "accepted": "Ol i kisim riferal.",
-      "rejected": "Ol i sakim riferal."
+      "rejected": "Ol i sakim riferal.",
+      "bookingCancelled": "Ol i kenselim buking."
     },
-    "backToReferrals": "Go bek long ol 'referrals'"
+    "backToReferrals": "Go bek long ol 'referrals'",
+    "bookingCancelled": "Ol i kenselim buking",
+    "cancelBooking": "Kenselim Buking",
+    "cancelReasonLabel": "As bilong kenselim (soim long poroman) *",
+    "cancelBookingHint": "Operesenel onasip i go bek long patna na ol i kenselim komisen eligibiliti bilong ol. Yu ken bukim gen 'lead' bihain.",
+    "cancelBookingConfirm": "Kenselim buking"
   },
   "history": {
     "title": "Histori",
@@ -81,7 +88,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Komisin eligibiliti i kamap",
       "HANDOVER_COMPLETED": "Hanover i pinis",
       "ADMIN_PROTECTION_RELEASED": "Edmin i bin rilisim 'duplicate protection' pastaim. As: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Edmin i senisim rejistresen long {{from}} i go long {{to}} . As: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Edmin i senisim rejistresen long {{from}} i go long {{to}} . As: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Wanpela narapela patna i traim long rejistretim tupela taim i no bin kamap",
+      "BOOKING_CANCELLED": "Ol i kenselim buking. As: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operesenel onasip i go bek long patna",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ol i kenselim wok bilong kisim komisen wantaim buking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Komisin eligibiliti i kamap gen long nupela buking"
     }
   }
 }

@@ -30,7 +30,8 @@
       "registered": "নিবন্ধনের তারিখ"
     },
     "booked": "বুক হয়েছে",
-    "empty": "এখনও কোনো রেফারেল নেই।"
+    "empty": "এখনও কোনো রেফারেল নেই।",
+    "bookingCancelled": "বুকিং বাতিল"
   },
   "detail": {
     "customer": "গ্রাহক",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "বুকিং নিশ্চিত হয়েছে।",
       "accepted": "রেফারেল গ্রহণ করা হয়েছে।",
-      "rejected": "রেফারেল প্রত্যাখ্যান করা হয়েছে।"
+      "rejected": "রেফারেল প্রত্যাখ্যান করা হয়েছে।",
+      "bookingCancelled": "বুকিং বাতিল করা হয়েছে।"
     },
-    "backToReferrals": "রেফারেলে ফিরে যান"
+    "backToReferrals": "রেফারেলে ফিরে যান",
+    "bookingCancelled": "বুকিং বাতিল",
+    "cancelBooking": "বুকিং বাতিল করুন",
+    "cancelReasonLabel": "বাতিলের কারণ (পার্টনারকে দেখানো হবে) *",
+    "cancelBookingHint": "পরিচালন মালিকানা পার্টনারের কাছে ফিরে যাবে এবং তাঁর কমিশনের যোগ্যতা বাতিল হবে। লিডটি পরে আবার বুক করা যাবে।",
+    "cancelBookingConfirm": "বুকিং বাতিল করুন"
   },
   "history": {
     "title": "ইতিহাস",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "কমিশনের যোগ্যতা তৈরি হয়েছে",
       "HANDOVER_COMPLETED": "হস্তান্তর সম্পন্ন হয়েছে",
       "ADMIN_PROTECTION_RELEASED": "অ্যাডমিন মেয়াদ শেষ হওয়ার আগেই ডুপ্লিকেট সুরক্ষা তুলে নিয়েছেন। কারণ: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "অ্যাডমিন নিবন্ধনটি {{from}} থেকে {{to}}-তে পুনরায় বরাদ্দ করেছেন। কারণ: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "অ্যাডমিন নিবন্ধনটি {{from}} থেকে {{to}}-তে পুনরায় বরাদ্দ করেছেন। কারণ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "অন্য একজন পার্টনারের ডুপ্লিকেট নিবন্ধনের চেষ্টা প্রত্যাখ্যাত হয়েছে",
+      "BOOKING_CANCELLED": "বুকিং বাতিল করা হয়েছে। কারণ: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "পরিচালন মালিকানা পার্টনারকে ফেরত দেওয়া হয়েছে",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "বুকিংয়ের সঙ্গে কমিশনের যোগ্যতা বাতিল হয়েছে",
+      "COMMISSION_ELIGIBILITY_RESTORED": "নতুন বুকিংয়ের জন্য কমিশনের যোগ্যতা পুনর্বহাল হয়েছে"
     }
   }
 }

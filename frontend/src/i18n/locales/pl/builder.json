@@ -32,7 +32,8 @@
       "registered": "Zarejestrowany"
     },
     "booked": "Zarezerwowane",
-    "empty": "Nie ma jeszcze żadnych skierowań."
+    "empty": "Nie ma jeszcze żadnych skierowań.",
+    "bookingCancelled": "Rezerwacja anulowana"
   },
   "detail": {
     "customer": "Klient",
@@ -55,9 +56,15 @@
     "notice": {
       "booked": "Rezerwacja potwierdzona.",
       "accepted": "Skierowanie przyjęte.",
-      "rejected": "Skierowanie odrzucone."
+      "rejected": "Skierowanie odrzucone.",
+      "bookingCancelled": "Rezerwacja anulowana."
     },
-    "backToReferrals": "Powrót do poleceń"
+    "backToReferrals": "Powrót do poleceń",
+    "bookingCancelled": "Rezerwacja anulowana",
+    "cancelBooking": "Anuluj rezerwację",
+    "cancelReasonLabel": "Powód anulowania (pokazany partnerowi) *",
+    "cancelBookingHint": "Własność operacyjna wraca do partnera, a jego uprawnienia do prowizji zostają anulowane. Lead można zarezerwować ponownie później.",
+    "cancelBookingConfirm": "Anuluj rezerwację"
   },
   "history": {
     "title": "Historia",
@@ -90,7 +97,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Utworzono uprawnienia do prowizji",
       "HANDOVER_COMPLETED": "Przekazanie zakończone",
       "ADMIN_PROTECTION_RELEASED": "Administrator wcześniej udostępnił ochronę przed duplikatami. Powód: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Administrator przeniósł rejestrację z {{from}} na {{to}} . Powód: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Administrator przeniósł rejestrację z {{from}} na {{to}} . Powód: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Podwójna próba rejestracji dokonana przez innego partnera została odrzucona",
+      "BOOKING_CANCELLED": "Rezerwacja anulowana. Powód: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Własność operacyjna wróciła do partnera",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Uprawnienie do prowizji anulowane wraz z rezerwacją",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Przywrócono uprawnienia do prowizji w przypadku nowej rezerwacji"
     }
   }
 }

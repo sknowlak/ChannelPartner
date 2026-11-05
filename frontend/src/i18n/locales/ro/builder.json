@@ -31,7 +31,8 @@
       "registered": "Înregistrat"
     },
     "booked": "Rezervat",
-    "empty": "Nicio recomandare încă."
+    "empty": "Nicio recomandare încă.",
+    "bookingCancelled": "Rezervarea a fost anulată"
   },
   "detail": {
     "customer": "Client",
@@ -54,9 +55,15 @@
     "notice": {
       "booked": "Rezervare confirmată.",
       "accepted": "Recomandări acceptate.",
-      "rejected": "Sesizarea a fost respinsă."
+      "rejected": "Sesizarea a fost respinsă.",
+      "bookingCancelled": "Rezervare anulată."
     },
-    "backToReferrals": "Înapoi la Recomandări"
+    "backToReferrals": "Înapoi la Recomandări",
+    "bookingCancelled": "Rezervarea a fost anulată",
+    "cancelBooking": "Anulați rezervarea",
+    "cancelReasonLabel": "Motivul anulării (afișat partenerului) *",
+    "cancelBookingHint": "Proprietatea operațională revine partenerului și eligibilitatea pentru comisioane este anulată. Avantajul poate fi rezervat din nou mai târziu.",
+    "cancelBookingConfirm": "Anulați rezervarea"
   },
   "history": {
     "title": "Istorie",
@@ -87,7 +94,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Eligibilitatea pentru comisie creată",
       "HANDOVER_COMPLETED": "Predarea finalizată",
       "ADMIN_PROTECTION_RELEASED": "Administratorul a lansat mai devreme protecția duplicat. Motiv: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Administratorul a reatribuit înregistrarea de la {{from}} la {{to}} . Motiv: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Administratorul a reatribuit înregistrarea de la {{from}} la {{to}} . Motiv: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "O încercare de înregistrare duplicată a unui alt partener a fost respinsă",
+      "BOOKING_CANCELLED": "Rezervare anulată. Motiv: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Proprietatea operațională a revenit partenerului",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Eligibilitatea comisionului a fost anulată odată cu rezervarea",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Eligibilitatea la comision a fost restabilită pentru noua rezervare"
     }
   }
 }

@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Kusungika",
-    "pending": "Kulindilira"
+    "pending": "Kulindilira",
+    "status": {
+      "CONFIRMED": "Kusungika",
+      "CANCELLED": "Kusunga kwakanizgika"
+    }
   },
   "assign": {
     "unassigned": "Kugaŵirika yayi",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Palije pulojekiti iyo yilipo (yikuyowoyeka yayi)",
-    "notInList": "{{project}} (mu mndandanda wa pulojekiti yayi)"
+    "notInList": "{{project}} (mu mndandanda wa pulojekiti yayi)",
+    "protectionDays_one": "{{count}} -kuvikilira kwa zuŵa",
+    "protectionDays_other": "{{count}} -kuvikilira kwa zuŵa"
   },
   "journey": {
     "customer": "Kasitomala",
@@ -76,7 +82,14 @@
     "progressHistory": "Mbiri yakuluta panthazi",
     "timesIn": "(nyengo mu {{timezone}} )",
     "backToMyLeads": "Kuwelera ku vyakulongozga vyane",
-    "editLead": "Sinthani Lead"
+    "editLead": "Sinthani Lead",
+    "disputeBanner": "Munthu munyake uyo wakuchita nayo ntchito wakususkana na mweneko wa kasitomala uyu. Admin Leadrat wakuwoneseska - chivikiliro chinu chikukhala mu malo ghake mpaka ŵasankhe.",
+    "booking": "Kusunga malo",
+    "commission": "Ntchito",
+    "notBooked": "Kulembeka yayi",
+    "cancelledOn": "Kukanizgika pa {{date}} .",
+    "cancelReason": "Chifukwa: {{reason}}",
+    "cancelledHint": "Munthu uyo ​​wakazenga nyumba wakakanizga buku - mweneko wa ntchito wawelera kwa imwe ndipo kuzomerezgeka kwa komishoni kwakanizgika. Iwo ukuwezgeka usange lead walembekaso."
   },
   "referral": {
     "NOT_REFERRED": "Kutumizgika yayi (palije pulojekiti)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Munthu wakuzenga wakazomera kutumizgika",
       "REFERRAL_REJECTED": "Builder wakakana kutumizgika. Chifukwa: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin wakafumiska chitetezo chakukopera mwaluwiro. Chifukwa: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin wakagaŵiraso kulembeska kufuma ku {{from}} ku {{to}} . Chifukwa: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin wakagaŵiraso kulembeska kufuma ku {{from}} ku {{to}} . Chifukwa: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Kuyezga kulembeska kwakuwerezgawerezga kwa munyake kukakanizgika",
+      "BOOKING_CANCELLED": "Kusunga buku kwakanizgika. Chifukwa: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Uŵeneco wa ntchito wakawelera kwa munyake",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kuzomerezgeka kwa komiti kwafumiskikapo na kusunga malo",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kuzomerezgeka kwa komiti kwawezgeka kwa buku liphya",
+      "OWNERSHIP_DISPUTE_RAISED": "Munyake wakasuska mweneko wa kasitomala uyu - mulaŵiliri wa Leadrat wazamuwoneseska",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Mphindano ya mweneko pa kasitomala uyu yikafumiskikapo - mweneko winu wandasinthe",
+      "OWNERSHIP_DISPUTE_UPHELD": "Mphindano ya mweneko wa kasitomala uyu yikawonekeraso - mweneko winu wakhozgeka",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Kulembeska pamanyuma pakuti mphindano yinu ya mweneko yadumulika mwakukolerana na imwe. Chimanyisko: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Kuvikilira kukamara: mphindano ya mweneko yikadumulika mwakukolerana na munyake. Chimanyisko: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Nambala ya foni iyi njakugwira ntchito yayi ku {{country}} .",
     "COUNTRY_MISMATCH": "Chonde sankhani nambara ya charu iyo yikwenelera.",
     "NOT_MOBILE": "Chonde lembani nambara ya foni, foni ya pa nyumba yayi."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komishoni njakwenelera",
+      "PENDING": "Komishoni yikulindilirika",
+      "CANCELLED": "Komiti yafumiskikapo"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Kupelekeka kwa imwe",
+      "DISPUTED": "Kupeleka kukususkika"
+    }
+  },
+  "result": {
+    "none": "Palije vyakufumapo vya kulembeska ivyo vikulongora. Lembeskani dankha munthu uyo ​​wakulongozga.",
+    "acceptedTitle": "Lead wakulembeska",
+    "rejectedTitle": "Lead wakulembeska yayi",
+    "protectionWindow": "Windo lakuvikilira",
+    "protectedUntil": "Kuvikilirika Mpaka",
+    "openLead": "Julani Lead",
+    "addAnother": "Sazgilanipo Mulongozgi Unyake",
+    "duplicate": "Kukopera - kwavikilirika kale",
+    "duplicateHint": "Kasitomala uyu wakuvikilirika kale pa ntchito iyi na kulembeska kunyake, ntheura wakatondeka kulembeska kwa imwe.",
+    "existingProtectedUntil": "Kulembeska uko kulipo kukuvikilirika mpaka 2019."
+  },
+  "disputes": {
+    "title": "Kususkana Kwane",
+    "intro": "Mphindano za mweneko uwo mukawuskapo ku makasitomala agho ghakakanizgika kuŵa ghakukopera. Mulongozgi Leadrat wakuwoneseska chilichose.",
+    "empty": "Mundawuskepo mphindano yiliyose. Usange kasitomala uyo mukamutora wakukanizgika kuŵa kopi, mungasuska kufuma pa ivyo mwasanga pa kulembeska.",
+    "columns": {
+      "dispute": "Mukangano",
+      "reason": "Chifukwa chinu",
+      "outcome": "Vyakufuma"
+    },
+    "status": {
+      "OPEN": "Kuwoneseska",
+      "UPHELD": "Mu kukondwa namwe yayi",
+      "OVERTURNED": "Kusankha mwakukolerana namwe",
+      "WITHDRAWN": "Kufumiskikapo"
+    },
+    "awaitingReview": "Kulindilira kuti admin wawone",
+    "openNewLead": "Julani chilongozgo chinu {{id}}",
+    "withdraw": "Leka",
+    "withdrawConfirm": "Kuwuskapo mphindano yinu pa {{name}} ? Uŵeneco wa sono ukukhala nga umo uliri.",
+    "raise": "Kususkana kwa mweneko",
+    "raiseTitle": "Kususkana kwa mweneko",
+    "raiseHint": "Usange kasitomala uyu ndiyo wakiza kwa imwe dankha, mulongosore chifukwa chake. Mulongozgi wa Leadrat wazamuwoneseska; usange ŵasankha mwakukolerana namwe, ŵalongozgi ŵakulembeskeka kwa imwe.",
+    "reasonLabel": "Chifukwa wuli kasitomala uyu ni winu?",
+    "reasonMin_one": "Pafupifupi {{count}} chilembo.",
+    "reasonMin_other": "Pafupifupi {{count}} malembo.",
+    "submit": "Tumirani Mphindano",
+    "notProtected": "Palije uyo wali na chivikiliro pa kasitomala uyu pa ntchito iyi - mungalembeska kulongozga sono.",
+    "raised": "Mphindano {{id}} yatumizgika kuti yiwoneke.",
+    "viewAll": "Wonani mphindano zane"
+  },
+  "dashboard": {
+    "title": "Dashibodi",
+    "period": "Nyengo",
+    "lastDays_one": "{{count}} zuŵa",
+    "lastDays_other": "{{count}} mazuŵa",
+    "emptyTitle": "Mwapokeleleka! Mulije vilongozgo pa nyengo iyi.",
+    "emptyHint": "Lembeskani mlongozgi winu wakwamba - payipi yinu, nyengo yakulembera na kuvikilira vizamuwoneka pano.",
+    "tiles": {
+      "leads": "Wose pamoza",
+      "newInPeriod_one": "{{count}} viphya mu nyengo iyi",
+      "newInPeriod_other": "{{count}} viphya mu nyengo iyi",
+      "accepted": "Wazomerezgeka",
+      "booked": "Kusungika",
+      "bookedInPeriod_one": "{{count}} kwalembeka mu nyengo iyi",
+      "bookedInPeriod_other": "{{count}} kwalembeka mu nyengo iyi",
+      "conversion": "Kusintha",
+      "conversionHint": "Mabuku ghakulongozga nga ni chigaŵa cha awo ŵakuzomerezgeka",
+      "protectedNow": "Kuvikilirika sono",
+      "expiringSoon_one": "Chivikiliro chikumalira mu {{count}} zuŵa",
+      "expiringSoon_other": "Kuvikilira kukumara mu {{count}} mazuŵa",
+      "disputedNow": "Kususkika na ŵanyake",
+      "disputedNowHint": "Kulongozga kwanu na mphindano ya mweneko kufuma kwa munyake",
+      "commissionEligible": "Komishoni njakwenelera",
+      "commissionCancelled_one": "{{count}} kwafumiskikapo",
+      "commissionCancelled_other": "{{count}} kwafumiskikapo"
+    },
+    "chart": {
+      "title_one": "Kulembeska na kusunga malo pa zuŵa - zuŵa lakumaliya la {{count}}",
+      "title_other": "Kulembeska na kusunga malo pa zuŵa - mazuŵa ghakumasinda {{count}}",
+      "registrations": "Kulembeska",
+      "bookings": "Kusunga malo"
+    },
+    "byStage": "Kulongozga na udindo",
+    "bySource": "Kulongozga na source",
+    "byReferral": "Kulongozga na umo kutumizgikira",
+    "myDisputes": "Mphindano izo mwawuskapo",
+    "noDisputes": "Palije mphindano izo zikawuskika.",
+    "unknown": "Kuŵikika yayi",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM yakuwalo (yakuyezgelera)",
+      "PARTNER_CRM": "Kusazgikira na gulu linu",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Kuphatikiza",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Chitetezo chikumara mu {{count}} zuŵa lakulondezgapo",
+    "expiringTitle_other": "Chitetezo chikumara mu mazuŵa ghakulondezgapo gha {{count}}",
+    "expiringEmpty": "Palije mkuŵa uwo ukutaya chivikiliro chake pa windo ili."
   }
 }

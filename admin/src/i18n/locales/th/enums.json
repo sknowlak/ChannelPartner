@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "มีสิทธิ์",
-    "PENDING": "รอดำเนินการ"
+    "PENDING": "รอดำเนินการ",
+    "CANCELLED": "ยกเลิก"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "เผยแพร่การป้องกันซ้ำล่วงหน้า",
-    "REASSIGN_PARTNER": "มอบหมายใหม่ให้กับพันธมิตรรายอื่น"
+    "REASSIGN_PARTNER": "มอบหมายใหม่ให้กับพันธมิตรรายอื่น",
+    "CANCEL_BOOKING": "ยกเลิกการจอง"
   },
   "dataType": {
     "TEXT": "ข้อความ",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "ผู้ดูแลระบบขั้นสูง",
     "ADMIN": "ผู้ดูแลระบบ"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "ยืนยันแล้ว",
+    "CANCELLED": "ยกเลิก"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "ประกอบ",
+    "DISPUTED": "มีข้อโต้แย้ง"
+  },
+  "disputeStatus": {
+    "OPEN": "เปิด",
+    "UPHELD": "ยึดถือ",
+    "OVERTURNED": "พลิกคว่ำ",
+    "WITHDRAWN": "ถอนออกแล้ว"
   }
 }

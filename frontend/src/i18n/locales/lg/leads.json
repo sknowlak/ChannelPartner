@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Booked",
-    "pending": "Tekinagwa"
+    "pending": "Tekinagwa",
+    "status": {
+      "CONFIRMED": "Booked",
+      "CANCELLED": "Booking esaziddwamu"
+    }
   },
   "assign": {
     "unassigned": "Tebiweereddwayo",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Tewali pulojekiti yonna n'okutuusa kati (tennajuliziddwa)",
-    "notInList": "{{project}} (si mu lukalala lwa pulojekiti)"
+    "notInList": "{{project}} (si mu lukalala lwa pulojekiti)",
+    "protectionDays_one": "{{count}} -okukuuma olunaku",
+    "protectionDays_other": "{{count}} -okukuuma olunaku"
   },
   "journey": {
     "customer": "Omuguzi",
@@ -76,7 +82,14 @@
     "progressHistory": "Ebyafaayo by’Enkulaakulana",
     "timesIn": "(emirundi mu {{timezone}} )",
     "backToMyLeads": "Okudda ku Bikulembeze Byange",
-    "editLead": "Edit Omukulembeze"
+    "editLead": "Edit Omukulembeze",
+    "disputeBanner": "Omulala munne awakanyizza obwannannyini ku kasitoma ono. A Leadrat admin is reviewing it - obukuumi bwo busigala mu kifo okutuusa nga basazeewo.",
+    "booking": "Okubuuka",
+    "commission": "Akasimi",
+    "notBooked": "Si booked",
+    "cancelledOn": "Yasazibwamu nga {{date}} .",
+    "cancelReason": "Ensonga: {{reason}}",
+    "cancelledHint": "Omuzimbi yasazaamu booking - obwannannyini obw'emirimu bukomyewo naawe era ebisaanyizo by'akasiimo bisaziddwamu. Kizzibwawo singa okukulembera kuddamu okuteekebwako kaadi."
   },
   "referral": {
     "NOT_REFERRED": "Tekijuliziddwa (tewali pulojekiti) .",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Builder yakkirizza okusindikibwa",
       "REFERRAL_REJECTED": "Builder yagaanyi okusindikibwa. Ensonga: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin yafulumya duplicate protection nga bukyali. Ensonga: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin yazzeemu okugaba okwewandiisa okuva ku {{from}} okudda ku {{to}} . Ensonga: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin yazzeemu okugaba okwewandiisa okuva ku {{from}} okudda ku {{to}} . Ensonga: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Okugezaako okwewandiisa emirundi ebiri okwakolebwa munne omulala kwagaaniddwa",
+      "BOOKING_CANCELLED": "Booking esaziddwamu. Ensonga: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Obwannannyini obw’emirimu bwadda eri omukwanaganya",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ebisaanyizo by’akakiiko byasaziddwamu nga booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ebisaanyizo by’akakiiko bikomezeddwawo ku booking empya",
+      "OWNERSHIP_DISPUTE_RAISED": "Omukwano omulala yawakanyizza obwannannyini bwa kasitoma ono - admin Leadrat ajja kukyetegereza",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Enkaayana z'obwannannyini ku kasitoma ono zaggyibwawo - obwannannyini bwo tebukyusiddwa",
+      "OWNERSHIP_DISPUTE_UPHELD": "Enkaayana z'obwannannyini ku kasitoma ono zeekenneenyezebwa - obwannannyini bwo bukakasiddwa",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Yawandiisibwa oluvannyuma lw’enkaayana zo ku bwannannyini okusalibwawo mu bulungi bwo. Weetegereze: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Obukuumi bwaggwa: enkaayana ku bwannannyini zasalibwawo nga ziwagira omubeezi omulala. Weetegereze: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Ennamba eno ey'essimu si ntuufu ku {{country}} .",
     "COUNTRY_MISMATCH": "Nsaba olonde koodi y'ensi entuufu.",
     "NOT_MOBILE": "Nsaba oyingize ennamba y'essimu, so si ssimu ya ttaka."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Akakiiko akalina ebisaanyizo",
+      "PENDING": "Akakiiko kalindiridde",
+      "CANCELLED": "Akakiiko kasaziddwamu"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Kigambibwa nti gy’oli",
+      "DISPUTED": "Attribution ewakanyibwa"
+    }
+  },
+  "result": {
+    "none": "Tewali bivudde mu kwewandiisa kulaga. Sooka owandiise okukulembera.",
+    "acceptedTitle": "Lead ewandiisiddwa",
+    "rejectedTitle": "Lead tewandiisiddwa",
+    "protectionWindow": "Eddirisa ly’Obukuumi",
+    "protectedUntil": "Ekuumibwa Okutuusa",
+    "openLead": "Open Lead",
+    "addAnother": "Okwongerako Omusulo Omulala",
+    "duplicate": "Duplicate - yakuumibwa dda",
+    "duplicateHint": "Kasitoma ono yakuumibwa dda ku pulojekiti eno olw’okwewandiisa okulala, kale teyasobodde kukuwandiisibwa.",
+    "existingProtectedUntil": "Okwewandiisa okuliwo kukuumibwa okutuusa..."
+  },
+  "disputes": {
+    "title": "Enkaayana Zange",
+    "intro": "Enkaayana ku bwannannyini ze mwaleeta ku bakasitoma ezaagaanibwa nga zikoppololwa. Admin wa Leadrat yeetegereza buli emu.",
+    "empty": "Temuleese nkaayana yonna. Singa kasitoma gwe waleese agaana ng’omukopi, osobola okumuwakanya okusinziira ku bivudde mu kwewandiisa.",
+    "columns": {
+      "dispute": "Empaka",
+      "reason": "Ensonga yo",
+      "outcome": "Ebivudemu"
+    },
+    "status": {
+      "OPEN": "Mu kwekenneenya",
+      "UPHELD": "Si mu bulungi bwo",
+      "OVERTURNED": "Yasazeewo mu bulungi bwo",
+      "WITHDRAWN": "Baggyiddwayo"
+    },
+    "awaitingReview": "Tulindiridde admin review",
+    "openNewLead": "Ggulawo okukulembera kwo {{id}}",
+    "withdraw": "Okujjayo",
+    "withdrawConfirm": "Ggyawo enkaayana zo ku {{name}} ? Obwannannyini obuliwo kati busigala nga bwe buli.",
+    "raise": "Enkaayana ku bwannannyini",
+    "raiseTitle": "Enkaayana ku bwannannyini",
+    "raiseHint": "Kasitoma ono bw’aba asoose kujja gy’oli, nnyonnyola lwaki. Admin Leadrat ajja kukyetegereza; bwe basalawo mu bulungi bwo, okukulembera kuwandiisibwa ku lulwo.",
+    "reasonLabel": "Lwaki kasitoma ono wuwo?",
+    "reasonMin_one": "Waakiri {{count}} ennukuta.",
+    "reasonMin_other": "Waakiri {{count}} ennukuta.",
+    "submit": "Sindika Enkaayana",
+    "notProtected": "Tewali muntu yenna akwata bukuumi ku kasitoma ono ku pulojekiti eno - osobola okuwandiisa omukulembeze kati.",
+    "raised": "Enkaayana {{id}} esindikiddwa okwekenneenya.",
+    "viewAll": "Laba enkaayana zange"
+  },
+  "dashboard": {
+    "title": "Daasiboodi",
+    "period": "Ekiseera",
+    "lastDays_one": "{{count}} olunaku",
+    "lastDays_other": "{{count}} ennaku",
+    "emptyTitle": "Kaale! Tolina leads n'okutuusa kati.",
+    "emptyHint": "Wandiisa lead yo esooka - payipu yo, bookings n'ennaku z'obukuumi zijja kulabika wano.",
+    "tiles": {
+      "leads": "Omugatte gw’abakulembedde",
+      "newInPeriod_one": "{{count}} ebipya mu kiseera kino",
+      "newInPeriod_other": "{{count}} ebipya mu kiseera kino",
+      "accepted": "Kikkirizibwa",
+      "booked": "Booked",
+      "bookedInPeriod_one": "{{count}} booked mu kiseera kino",
+      "bookedInPeriod_other": "{{count}} booked mu kiseera kino",
+      "conversion": "Okukyuka",
+      "conversionHint": "Booked leads nga omugabo ku leads ezikkirizibwa",
+      "protectedNow": "Ekuumibwa kati",
+      "expiringSoon_one": "Obukuumi obukoma mu lunaku {{count}}",
+      "expiringSoon_other": "Obukuumi obukoma mu nnaku {{count}}",
+      "disputedNow": "Okukaayanirwa abalala",
+      "disputedNowHint": "Okukulembera kwo n’enkaayana z’obwannannyini eziggule okuva eri munno omulala",
+      "commissionEligible": "Akakiiko akalina ebisaanyizo",
+      "commissionCancelled_one": "{{count}} esaziddwamu",
+      "commissionCancelled_other": "{{count}} esaziddwamu"
+    },
+    "chart": {
+      "title_one": "Okwewandiisa n'okubuuka buli lunaku - olunaku {{count}} olusembayo",
+      "title_other": "Okwewandiisa n'okubuuka buli lunaku - ennaku {{count}} ezisembayo",
+      "registrations": "Okwewandiisa",
+      "bookings": "Okubuuka"
+    },
+    "byStage": "Akulembera okusinziira ku mbeera",
+    "bySource": "Akulembera okusinziira ku nsibuko",
+    "byReferral": "Akulembera okusinziira ku mbeera y’okusindikibwa",
+    "myDisputes": "Enkaayana ze mwaleese",
+    "noDisputes": "Tewali nkaayana zaaleeteddwa.",
+    "unknown": "Tekiteekeddwawo",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM ey’ebweru (ekoppa) .",
+      "PARTNER_CRM": "Yayongeddeko ttiimu yo",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Okwegatta",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Obukuumi buggwaako mu lunaku {{count}} oluddako",
+    "expiringTitle_other": "Obukuumi buggwaako mu nnaku {{count}} eziddako",
+    "expiringEmpty": "Tewali lead efiirwa bukuumi bwayo mu ddirisa lino."
   }
 }

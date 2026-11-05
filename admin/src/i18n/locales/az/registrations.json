@@ -49,8 +49,73 @@
       "newPartnerId": "Yeni Partnyor ID",
       "reason": "Səbəb (tələb olunur)",
       "apply": "Üstündən yazmağı tətbiq edin",
-      "applying": "Tətbiq olunur..."
+      "applying": "Tətbiq olunur...",
+      "cancelBookingHint": "Ləğv etmək rezervasiyanı və onun komissiyasını ləğv edilmiş kimi qeyd edir, əməliyyat sahibliyini partnyora qaytarır və inşaatçıya bunu yenidən sifariş etməyə imkan verir.",
+      "cancelBookingConfirm": "Bu rezervasiya ləğv edilsin? Onun komissiyası da ləğv edilir. Bu, adınız və səbəbinizlə qeyd olunur."
     },
-    "timelineTitle": "Audit qrafiki (bu qeydiyyat)"
+    "timelineTitle": "Audit qrafiki (bu qeydiyyat)",
+    "bookingStatus": "Rezervasiya Vəziyyəti",
+    "commissionAttribution": "Komissiya Atributları",
+    "disputeOpen": "Mülkiyyət mübahisəsi bu müştəri üçün açıqdır - başqa tərəfdaş bunun onların olduğunu deyir. Mübahisələr səhifəsində qərar verilir.",
+    "viewDisputes": "Mübahisələrə baxın",
+    "cancellation": {
+      "title": "Rezervasiya ləğv edildi",
+      "hint": "Rezervasiya və onun komissiyası ləğv edilir; əməliyyat mülkiyyəti partnyorla geri qayıdır və inşaatçı bu potensialı yenidən sifariş edə bilər.",
+      "at": "Ləğv edilib",
+      "by": "tərəfindən ləğv edildi",
+      "reason": "Səbəb"
+    }
+  },
+  "disputes": {
+    "title": "Mülkiyyət Mübahisələri",
+    "hint": "Dublikat kimi qeydiyyatı rədd edilmiş tərəfdaş müştərinin kimə məxsus olduğunu mübahisə edə bilər. Hər iki tərəfi nəzərdən keçirin və qərar verin.",
+    "statusFilter": "Mübahisə statusu",
+    "allStatuses": "Bütün statuslar",
+    "empty": "Bu statusla mübahisə yoxdur.",
+    "columns": {
+      "dispute": "Mübahisə",
+      "customer": "Müştəri",
+      "project": "Layihə",
+      "raisedBy": "tərəfindən böyüdü",
+      "heldBy": "Hazırkı sahibi",
+      "status": "Vəziyyət",
+      "raisedAt": "Böyüdü"
+    },
+    "detail": {
+      "title": "Mübahisə {{id}}",
+      "raisedOn": "{{date}} böyüdü",
+      "raisingTitle": "tərəfindən böyüdü",
+      "holderTitle": "Hazırkı sahibi",
+      "partner": "tərəfdaş",
+      "raisedBy": "tərəfindən təqdim edilmişdir",
+      "customerName": "Müştəri",
+      "mobile": "Mobil",
+      "alternateMobile": "Alternativ mobil",
+      "email": "E-poçt",
+      "project": "Layihə",
+      "reason": "Onların səbəbi",
+      "registration": "Qeydiyyat",
+      "registeredAt": "Qeydiyyatdan keçib",
+      "referral": "İstinad",
+      "heldMissing": "Keçirilən qeydiyyatı tapmaq mümkün olmadı.",
+      "resolutionTitle": "Qərar",
+      "outcome": "Nəticə",
+      "note": "Qeyd",
+      "decidedBy": "tərəfindən qərar verildi",
+      "decidedAt": "Qərar verdi",
+      "newRegistration": "Yeni qeydiyyat",
+      "decideTitle": "Bu mübahisəyə qərar verin",
+      "noteLabel": "Qərarı izah edən qeyd (tələb olunur)",
+      "noteRequired": "Qərar vermək üçün bir qeyd yazın.",
+      "uphold": "Saxlamaq",
+      "overturn": "Axmaq",
+      "upholdEffect": "{{holder}} müştərini saxlayır. Mübahisə bağlanıb və başqa heç nə dəyişmir.",
+      "overturnEffect": "{{holder}} -in dublikat mühafizəsi indi başa çatır və müştəri yeni qeydiyyat kimi {{partner}} üçün qeydiyyatdan keçib.",
+      "heldBookedHelp": "Bu müştəri cari sahibi vasitəsilə bron edilir. Əvvəlcə həmin sifarişi ləğv edin (qeydiyyatda Admin ləğv edin), sonra ləğv edin:",
+      "confirmTitle": "əminsən?",
+      "confirmUphold": "Bəli, saxlayın",
+      "confirmOverturn": "Bəli, aşmaq",
+      "back": "Mübahisələrə qayıt"
+    }
   }
 }

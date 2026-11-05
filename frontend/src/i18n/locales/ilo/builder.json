@@ -30,7 +30,8 @@
       "registered": "Nairehistro"
     },
     "booked": "Na-book",
-    "empty": "Awan pay ti referral."
+    "empty": "Awan pay ti referral.",
+    "bookingCancelled": "Nakansela ti panag-book"
   },
   "detail": {
     "customer": "Kostumer",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Nakumpirmaan ti panag-book.",
       "accepted": "Naawat ti referral.",
-      "rejected": "Napagkedkedan ti pannakaiturong."
+      "rejected": "Napagkedkedan ti pannakaiturong.",
+      "bookingCancelled": "Nakansela ti panag-book."
     },
-    "backToReferrals": "Agsubli kadagiti Referral"
+    "backToReferrals": "Agsubli kadagiti Referral",
+    "bookingCancelled": "Nakansela ti panag-book",
+    "cancelBooking": "Kanselaen ti Panag-book",
+    "cancelReasonLabel": "Rason ti panagkansela (naipakita iti partner) * .",
+    "cancelBookingHint": "Agsubli ti operational ownership iti partner ken makanselar ti commission eligibility-da. Mabalin a mai-book manen ti lead inton agangay.",
+    "cancelBookingConfirm": "Kanselaen ti panag-book"
   },
   "history": {
     "title": "Pakasaritaan",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Naparsua ti pannakakualipika iti komision",
       "HANDOVER_COMPLETED": "Nalpasen ti handover",
       "ADMIN_PROTECTION_RELEASED": "Nasapa nga inruar ni Admin ti duplicate protection. Rason: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Intuding manen ti admin ti panagrehistro manipud iti {{from}} aginggana iti {{to}} . Rason: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Intuding manen ti admin ti panagrehistro manipud iti {{from}} aginggana iti {{to}} . Rason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Napagkedkedan ti duplicate registration attempt ti sabali a partner",
+      "BOOKING_CANCELLED": "Nakansela ti panag-book. Rason: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Nagsubli ti operational ownership iti partner",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Commission eligibility nakansela iti panag-book",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Naisubli ti Commission eligibility para iti baro a booking"
     }
   }
 }

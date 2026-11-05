@@ -30,7 +30,8 @@
       "registered": "Kwiyandikisha"
     },
     "booked": "Yanditse",
-    "empty": "Nta kohereza."
+    "empty": "Nta kohereza.",
+    "bookingCancelled": "Kwiyandikisha byahagaritswe"
   },
   "detail": {
     "customer": "Umukiriya",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Kwiyandikisha byemejwe.",
       "accepted": "Kohereza byemewe.",
-      "rejected": "Kohereza byanze."
+      "rejected": "Kohereza byanze.",
+      "bookingCancelled": "Kwiyandikisha byahagaritswe."
     },
-    "backToReferrals": "Subira kuri Kohereza"
+    "backToReferrals": "Subira kuri Kohereza",
+    "bookingCancelled": "Kwiyandikisha byahagaritswe",
+    "cancelBooking": "Kureka kubika",
+    "cancelReasonLabel": "Impamvu yo guhagarika (yerekanwe kuri mugenzi wawe) *",
+    "cancelBookingHint": "Gutunga ibikorwa bisubira mubafatanyabikorwa kandi uburenganzira bwabo bwa komisiyo burahagarikwa. Isonga irashobora kongera kubikwa nyuma.",
+    "cancelBookingConfirm": "Hagarika kubika"
   },
   "history": {
     "title": "Amateka",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Komisiyo yujuje ibisabwa",
       "HANDOVER_COMPLETED": "Ihererekanyabubasha ryarangiye",
       "ADMIN_PROTECTION_RELEASED": "Admin yarekuye gukingirwa hakiri kare. Impamvu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin yongeye kwiyandikisha kuva {{from}} kugeza {{to}} . Impamvu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin yongeye kwiyandikisha kuva {{from}} kugeza {{to}} . Impamvu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Kugerageza kwigana inshuro ebyiri nundi mufatanyabikorwa byanze",
+      "BOOKING_CANCELLED": "Kwiyandikisha byahagaritswe. Impamvu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ibikorwa nyirizina byagarutse kumufatanyabikorwa",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kwemererwa na komisiyo byahagaritswe no kubika",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Komisiyo yujuje ibisabwa yagaruwe kubitabo bishya"
     }
   }
 }

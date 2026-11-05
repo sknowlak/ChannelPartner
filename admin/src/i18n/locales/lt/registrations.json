@@ -49,8 +49,73 @@
       "newPartnerId": "Naujas partnerio ID",
       "reason": "Priežastis (būtina)",
       "apply": "Taikyti nepaisymą",
-      "applying": "Taikoma..."
+      "applying": "Taikoma...",
+      "cancelBookingHint": "Atšaukus užsakymas ir jo komisiniai pažymimi kaip atšaukti, partneriui grąžinama eksploatacinė nuosavybė ir statybininkui leidžiama vėl rezervuoti šį potencialų klientą.",
+      "cancelBookingConfirm": "Atšaukti šį užsakymą? Jo komisiniai taip pat atšaukti. Tai užregistruota su jūsų vardu ir priežastimi."
     },
-    "timelineTitle": "Audito laiko juosta (ši registracija)"
+    "timelineTitle": "Audito laiko juosta (ši registracija)",
+    "bookingStatus": "Užsakymo būsena",
+    "commissionAttribution": "Komisijos priskyrimas",
+    "disputeOpen": "Dėl šio kliento kilo ginčas dėl nuosavybės – kitas partneris sako, kad tai yra jo. Tai sprendžiama Ginčų puslapyje.",
+    "viewDisputes": "Peržiūrėkite ginčus",
+    "cancellation": {
+      "title": "Užsakymas atšauktas",
+      "hint": "Užsakymas ir jo komisiniai atšaukiami; partneriui grįžta eksploatacinės nuosavybės teisės ir statytojas gali vėl rezervuoti šį potencialų klientą.",
+      "at": "Atšauktas",
+      "by": "Atšaukė",
+      "reason": "Priežastis"
+    }
+  },
+  "disputes": {
+    "title": "Ginčai dėl nuosavybės",
+    "hint": "Partneris, kurio registracija buvo atmesta kaip dublikatas, gali ginčyti, kam priklauso klientas. Peržiūrėkite abi puses ir nuspręskite.",
+    "statusFilter": "Ginčo būsena",
+    "allStatuses": "Visos būsenos",
+    "empty": "Dėl šio statuso nėra ginčų.",
+    "columns": {
+      "dispute": "Ginčas",
+      "customer": "Klientas",
+      "project": "Projektas",
+      "raisedBy": "Užaugino",
+      "heldBy": "Dabartinis savininkas",
+      "status": "Būsena",
+      "raisedAt": "Pakeltas"
+    },
+    "detail": {
+      "title": "Ginčas {{id}}",
+      "raisedOn": "Pakeltas {{date}}",
+      "raisingTitle": "Užaugino",
+      "holderTitle": "Dabartinis savininkas",
+      "partner": "Partneris",
+      "raisedBy": "Pateikė",
+      "customerName": "Klientas",
+      "mobile": "Mobilusis",
+      "alternateMobile": "Alternatyvus mobilusis",
+      "email": "El. paštas",
+      "project": "Projektas",
+      "reason": "Jų priežastis",
+      "registration": "Registracija",
+      "registeredAt": "Užsiregistravo",
+      "referral": "Rekomendacija",
+      "heldMissing": "Sulaikytos registracijos nepavyko rasti.",
+      "resolutionTitle": "Sprendimas",
+      "outcome": "Rezultatas",
+      "note": "Pastaba",
+      "decidedBy": "Nusprendė",
+      "decidedAt": "Nusprendė",
+      "newRegistration": "Nauja registracija",
+      "decideTitle": "Išspręskite šį ginčą",
+      "noteLabel": "Pastaba, paaiškinanti sprendimą (būtina)",
+      "noteRequired": "Parašykite pastabą, kad nuspręstumėte.",
+      "uphold": "Palaikyti",
+      "overturn": "Apversti",
+      "upholdEffect": "{{holder}} išlaiko klientą. Ginčas baigtas ir daugiau niekas nesikeičia.",
+      "overturnEffect": "{{holder}} pasikartojančioji apsauga baigiasi dabar ir klientas užregistruojamas {{partner}} kaip nauja registracija.",
+      "heldBookedHelp": "Šis klientas yra užsakytas per dabartinį savininką. Pirmiausia atšaukite užsakymą (registracijos administratoriaus nepaisymas), tada panaikinkite:",
+      "confirmTitle": "Ar esi tikras?",
+      "confirmUphold": "Taip, palaikyti",
+      "confirmOverturn": "Taip, apversti",
+      "back": "Atgal į ginčus"
+    }
   }
 }

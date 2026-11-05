@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "بک کروایا",
-    "pending": "زیر التواء"
+    "pending": "زیر التواء",
+    "status": {
+      "CONFIRMED": "بک کروایا",
+      "CANCELLED": "بکنگ منسوخ کر دی گئی۔"
+    }
   },
   "assign": {
     "unassigned": "غیر تفویض کردہ",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "ابھی تک کوئی پروجیکٹ نہیں (حوالہ نہیں دیا گیا)",
-    "notInList": "{{project}} (پروجیکٹ کی فہرست میں نہیں)"
+    "notInList": "{{project}} (پروجیکٹ کی فہرست میں نہیں)",
+    "protectionDays_one": "{{count}} دن کا تحفظ",
+    "protectionDays_other": "{{count}} دن کا تحفظ"
   },
   "journey": {
     "customer": "گاہک",
@@ -76,7 +82,14 @@
     "progressHistory": "ترقی کی تاریخ",
     "timesIn": "( {{timezone}} میں اوقات)",
     "backToMyLeads": "واپس مائی لیڈز پر",
-    "editLead": "لیڈ میں ترمیم کریں۔"
+    "editLead": "لیڈ میں ترمیم کریں۔",
+    "disputeBanner": "دوسرے پارٹنر نے اس گاہک کی ملکیت پر اختلاف کیا ہے۔ ایک Leadrat منتظم اس کا جائزہ لے رہا ہے - آپ کا تحفظ اس وقت تک برقرار رہے گا جب تک وہ فیصلہ نہ کریں۔",
+    "booking": "بکنگ",
+    "commission": "کمیشن",
+    "notBooked": "بک نہیں کیا گیا۔",
+    "cancelledOn": "{{date}} کو منسوخ کر دیا گیا۔",
+    "cancelReason": "وجہ: {{reason}}",
+    "cancelledHint": "بلڈر نے بکنگ منسوخ کر دی - آپریشنل ملکیت آپ کے پاس واپس آ گئی ہے اور کمیشن کی اہلیت منسوخ ہو گئی ہے۔ اگر سیسہ دوبارہ بک جاتا ہے تو یہ بحال ہوجاتا ہے۔"
   },
   "referral": {
     "NOT_REFERRED": "حوالہ نہیں دیا گیا (کوئی پروجیکٹ نہیں)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "بلڈر نے حوالہ قبول کیا۔",
       "REFERRAL_REJECTED": "بلڈر نے حوالہ مسترد کر دیا۔ وجہ: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "ایڈمن نے ڈپلیکیٹ تحفظ جلد جاری کیا۔ وجہ: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "ایڈمن نے {{from}} سے {{to}} تک رجسٹریشن دوبارہ تفویض کی ہے۔ وجہ: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "ایڈمن نے {{from}} سے {{to}} تک رجسٹریشن دوبارہ تفویض کی ہے۔ وجہ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "دوسرے پارٹنر کی جانب سے نقل کی رجسٹریشن کی کوشش کو مسترد کر دیا گیا۔",
+      "BOOKING_CANCELLED": "بکنگ منسوخ کر دی گئی۔ وجہ: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "آپریشنل ملکیت پارٹنر کو واپس کر دی گئی۔",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "کمیشن کی اہلیت بکنگ کے ساتھ منسوخ کر دی گئی۔",
+      "COMMISSION_ELIGIBILITY_RESTORED": "نئی بکنگ کے لیے کمیشن کی اہلیت بحال ہو گئی۔",
+      "OWNERSHIP_DISPUTE_RAISED": "ایک اور پارٹنر نے اس گاہک کی ملکیت پر اختلاف کیا - ایک Leadrat منتظم اس کا جائزہ لے گا۔",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "اس گاہک پر ملکیت کا تنازعہ واپس لے لیا گیا ہے - آپ کی ملکیت میں کوئی تبدیلی نہیں ہے۔",
+      "OWNERSHIP_DISPUTE_UPHELD": "اس گاہک پر ملکیت کے تنازعہ کا جائزہ لیا گیا - آپ کی ملکیت کی تصدیق ہوگئی",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "آپ کے ملکیت کے تنازعہ کا فیصلہ آپ کے حق میں ہونے کے بعد رجسٹر کیا گیا۔ نوٹ: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "تحفظ ختم: ملکیت کے تنازع کا فیصلہ دوسرے پارٹنر کے حق میں کیا گیا۔ نوٹ: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "یہ فون نمبر {{country}} کے لیے درست نہیں ہے۔",
     "COUNTRY_MISMATCH": "براہ کرم درست ملک کا کوڈ منتخب کریں۔",
     "NOT_MOBILE": "براہ کرم ایک موبائل نمبر درج کریں، لینڈ لائن نہیں۔"
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "کمیشن کے اہل ہیں۔",
+      "PENDING": "کمیشن زیر التواء",
+      "CANCELLED": "کمیشن منسوخ"
+    },
+    "attribution": {
+      "ATTRIBUTED": "آپ سے منسوب",
+      "DISPUTED": "انتساب متنازعہ"
+    }
+  },
+  "result": {
+    "none": "ظاہر کرنے کے لیے رجسٹریشن کا کوئی نتیجہ نہیں ہے۔ پہلے لیڈ رجسٹر کریں۔",
+    "acceptedTitle": "لیڈ رجسٹرڈ",
+    "rejectedTitle": "لیڈ رجسٹرڈ نہیں ہے۔",
+    "protectionWindow": "پروٹیکشن ونڈو",
+    "protectedUntil": "تک محفوظ رکھا",
+    "openLead": "کھلی لیڈ",
+    "addAnother": "ایک اور لیڈ شامل کریں۔",
+    "duplicate": "ڈپلیکیٹ - پہلے سے ہی محفوظ ہے۔",
+    "duplicateHint": "یہ گاہک پہلے سے ہی اس پروجیکٹ کے لیے ایک اور رجسٹریشن کے ذریعے محفوظ ہے، اس لیے اسے آپ کے لیے رجسٹر نہیں کیا جا سکا۔",
+    "existingProtectedUntil": "موجودہ رجسٹریشن تک محفوظ ہے۔"
+  },
+  "disputes": {
+    "title": "میرے تنازعات",
+    "intro": "ملکیت کے تنازعات جو آپ نے صارفین کے لیے اٹھائے تھے جن کو نقل کے طور پر مسترد کر دیا گیا تھا۔ ایک Leadrat ایڈمن ہر ایک کا جائزہ لیتا ہے۔",
+    "empty": "آپ نے کوئی تنازعہ نہیں اٹھایا۔ اگر آپ کے لائے ہوئے گاہک کو ڈپلیکیٹ کے طور پر انکار کر دیا جاتا ہے، تو آپ رجسٹریشن کے نتائج سے اس پر تنازعہ کر سکتے ہیں۔",
+    "columns": {
+      "dispute": "تنازعہ",
+      "reason": "آپ کی وجہ",
+      "outcome": "نتیجہ"
+    },
+    "status": {
+      "OPEN": "زیر جائزہ",
+      "UPHELD": "آپ کے حق میں نہیں۔",
+      "OVERTURNED": "آپ کے حق میں فیصلہ کیا۔",
+      "WITHDRAWN": "واپس لے لیا"
+    },
+    "awaitingReview": "منتظم کے جائزے کا انتظار ہے۔",
+    "openNewLead": "اپنا لیڈ کھولیں {{id}}",
+    "withdraw": "واپس لینا",
+    "withdrawConfirm": "{{name}} کے لیے اپنا تنازعہ واپس لیں؟ موجودہ ملکیت جوں کی توں رہتی ہے۔",
+    "raise": "تنازعہ ملکیت",
+    "raiseTitle": "تنازعہ ملکیت",
+    "raiseHint": "اگر یہ گاہک پہلے آپ کے پاس آیا تو اس کی وجہ بتائیں۔ ایک Leadrat ایڈمن اس کا جائزہ لے گا۔ اگر وہ آپ کے حق میں فیصلہ کرتے ہیں، تو لیڈ آپ کے لیے رجسٹرڈ ہے۔",
+    "reasonLabel": "یہ گاہک آپ کا کیوں ہے؟",
+    "reasonMin_one": "کم از کم {{count}} حرف۔",
+    "reasonMin_other": "کم از کم {{count}} حروف۔",
+    "submit": "تنازعہ بھیجیں۔",
+    "notProtected": "اس پراجیکٹ کے لیے اس گاہک کو اب کوئی بھی تحفظ نہیں دے گا - آپ ابھی لیڈ کو رجسٹر کر سکتے ہیں۔",
+    "raised": "تنازعہ {{id}} جائزہ کے لیے بھیجا گیا۔",
+    "viewAll": "میرے تنازعات دیکھیں"
+  },
+  "dashboard": {
+    "title": "ڈیش بورڈ",
+    "period": "مدت",
+    "lastDays_one": "{{count}} دن",
+    "lastDays_other": "{{count}} دن",
+    "emptyTitle": "خوش آمدید! آپ کے پاس ابھی تک کوئی لیڈز نہیں ہیں۔",
+    "emptyHint": "اپنی پہلی لیڈ رجسٹر کریں - آپ کی پائپ لائن، بکنگ اور تحفظ کی آخری تاریخیں یہاں دکھائی دیں گی۔",
+    "tiles": {
+      "leads": "کل لیڈز",
+      "newInPeriod_one": "اس مدت میں {{count}} نئے",
+      "newInPeriod_other": "اس مدت میں {{count}} نئے",
+      "accepted": "قبول کر لیا",
+      "booked": "بک کروایا",
+      "bookedInPeriod_one": "اس مدت میں {{count}} بک ہوئے۔",
+      "bookedInPeriod_other": "اس مدت میں {{count}} بک ہوئے۔",
+      "conversion": "تبدیلی",
+      "conversionHint": "بک شدہ لیڈز قبول شدہ لیڈز کے حصہ کے طور پر",
+      "protectedNow": "اب محفوظ ہے۔",
+      "expiringSoon_one": "تحفظ {{count}} دن میں ختم ہو رہا ہے۔",
+      "expiringSoon_other": "تحفظ {{count}} دنوں میں ختم ہو رہا ہے۔",
+      "disputedNow": "دوسروں کی طرف سے متنازعہ",
+      "disputedNowHint": "دوسرے پارٹنر سے ملکیت کے کھلے تنازعہ کے ساتھ آپ کی لیڈز",
+      "commissionEligible": "کمیشن کے اہل ہیں۔",
+      "commissionCancelled_one": "{{count}} منسوخ کر دیا گیا۔",
+      "commissionCancelled_other": "{{count}} منسوخ کر دیا گیا۔"
+    },
+    "chart": {
+      "title_one": "رجسٹریشن اور بکنگ فی دن - آخری {{count}} دن",
+      "title_other": "رجسٹریشن اور بکنگ فی دن - آخری {{count}} دن",
+      "registrations": "رجسٹریشنز",
+      "bookings": "بکنگ"
+    },
+    "byStage": "حیثیت کے لحاظ سے رہنمائی کرتا ہے۔",
+    "bySource": "ماخذ کی طرف سے لیڈز",
+    "byReferral": "ریفرل کی حیثیت سے لیڈز",
+    "myDisputes": "تنازعات جو آپ نے اٹھائے ہیں۔",
+    "noDisputes": "کوئی تنازعہ نہیں اٹھایا۔",
+    "unknown": "سیٹ نہیں ہے۔",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "بیرونی CRM (نقلی)",
+      "PARTNER_CRM": "آپ کی ٹیم کے ذریعہ شامل کیا گیا۔",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "انضمام",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "تحفظ کی میعاد اگلے {{count}} دن میں ختم ہو رہی ہے۔",
+    "expiringTitle_other": "تحفظ کی میعاد اگلے {{count}} دنوں میں ختم ہو رہی ہے۔",
+    "expiringEmpty": "اس ونڈو میں کوئی لیڈ اپنا تحفظ نہیں کھوتا۔"
   }
 }

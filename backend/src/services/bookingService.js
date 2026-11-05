@@ -6,7 +6,7 @@ const { nextId } = require('../utils/idGenerator');
 const { transferOperationalOwnershipToBuilder } = require('./ownershipService');
 const { logEvent } = require('./auditService');
 const { withIdempotency } = require('./idempotencyService');
-const { getBookingStatusName } = require('./leadStatusService');
+const { getBookingStatusName, getDefaultStatusName } = require('./leadStatusService');
 const { findBookedDuplicate } = require('./duplicateService');
 
 function rejection(statusCode, message) {
@@ -54,8 +54,20 @@ async function unfinishedBooking(registrationId) {
 
 // The commission record, created at most once per lead (unique
 // registrationId) - a concurrent retry just gets the one that won.
-async function ensureCommission({ registrationId, partnerId, bookingId, projectId }) {
+async function ensureCommission({ registrationId, partnerId, bookingId, projectId, disputed }) {
+  // An ownership dispute open on the lead (section 62) marks the attribution.
+  const attributionStatus = disputed ? 'DISPUTED' : 'ATTRIBUTED';
   const existing = await CommissionEligibility.findOne({ registrationId });
+  // Re-booked after a cancellation (section 62): the same record becomes
+  // eligible again for the new booking - still one commission per lead.
+  if (existing && existing.eligibilityStatus === 'CANCELLED') {
+    existing.eligibilityStatus = 'ELIGIBLE';
+    existing.attributionStatus = attributionStatus;
+    existing.bookingId = bookingId;
+    existing.partnerId = partnerId;
+    await existing.save();
+    return { commission: existing, created: true, restored: true };
+  }
   if (existing) return { commission: existing, created: false };
   try {
     const commission = await CommissionEligibility.create({
@@ -64,7 +76,7 @@ async function ensureCommission({ registrationId, partnerId, bookingId, projectI
       partnerId,
       bookingId,
       projectId,
-      attributionStatus: 'ATTRIBUTED',
+      attributionStatus,
       eligibilityStatus: 'ELIGIBLE'
     });
     return { commission, created: true };
@@ -108,9 +120,19 @@ async function completeBooking({ registration, actorLabel, externalEventId, afte
       );
       if (!claimed) throw rejection(409, 'This lead is already booked');
 
-      bookingId = await nextId('BOOK');
+      const stageBeforeBooking = claimed.currentStage || '';
       try {
-        await Booking.create({ bookingId, registrationId, projectId: registration.projectId || '', externalEventId });
+        // A lead whose earlier booking was cancelled (section 62) re-uses that
+        // booking record - one booking per lead stays true.
+        const cancelled = await Booking.findOne({ registrationId, status: 'CANCELLED' });
+        if (cancelled) {
+          bookingId = cancelled.bookingId;
+          cancelled.set({ status: 'CONFIRMED', bookingDate: new Date(), externalEventId, stageBeforeBooking, cancelledAt: undefined, cancelledBy: undefined, cancellationReason: undefined });
+          await cancelled.save();
+        } else {
+          bookingId = await nextId('BOOK');
+          await Booking.create({ bookingId, registrationId, projectId: registration.projectId || '', externalEventId, stageBeforeBooking });
+        }
       } catch (err) {
         // Nothing was booked - open the gate again so the booking can be retried.
         await Registration.updateOne({ registrationId }, { $set: { isBooked: false } });
@@ -140,8 +162,11 @@ async function completeBooking({ registration, actorLabel, externalEventId, afte
       await logEvent({ registrationId, eventType: 'PARTNER_ATTRIBUTION_PRESERVED', actor: 'SYSTEM', newValue: partnerId, description: 'Partner attribution preserved' });
     }
 
-    const { commission, created } = await ensureCommission({ registrationId, partnerId, bookingId, projectId: registration.projectId || '' });
-    if (created) {
+    const { commission, created, restored } = await ensureCommission({ registrationId, partnerId, bookingId, projectId: registration.projectId || '', disputed: claimed.disputeStatus === 'OPEN' });
+    if (restored) {
+      await logEvent({ registrationId, eventType: 'COMMISSION_ELIGIBILITY_RESTORED', actor: 'SYSTEM', newValue: commission.commissionId, description: 'Commission eligibility restored for the new booking' });
+      await logEvent({ registrationId, eventType: 'HANDOVER_COMPLETED', actor: 'SYSTEM', description: 'Handover completed' });
+    } else if (created) {
       await logEvent({ registrationId, eventType: 'COMMISSION_ELIGIBILITY_CREATED', actor: 'SYSTEM', newValue: commission.commissionId, description: 'Commission eligibility created' });
       await logEvent({ registrationId, eventType: 'HANDOVER_COMPLETED', actor: 'SYSTEM', description: 'Handover completed' });
     }
@@ -166,4 +191,72 @@ async function completeBooking({ registration, actorLabel, externalEventId, afte
   }, `${partnerId}:${registrationId}`);
 }
 
-module.exports = { completeBooking, bookingProblem };
+// Cancels a confirmed booking (section 62) - the builder's (or an admin's)
+// action when a buyer backs out. Everything the booking did is undone except
+// the history: the booking and commission records stay, marked CANCELLED;
+// operational ownership returns to the partner, who keeps attribution and
+// can work the customer again; the lead goes back to its pre-booking stage.
+// Protection reverts to the lead's original window - a booked lead was
+// protected permanently, a cancelled one only until its protectionExpiry.
+// `afterCancelled(registration)` runs once done (webhooks).
+async function cancelBooking({ registration, actorLabel, reason, afterCancelled }) {
+  const { registrationId, partnerId } = registration;
+  const why = String(reason || '').trim().slice(0, 500);
+  if (!why) throw rejection(400, 'A reason is required to cancel a booking');
+
+  // Atomic gate: only one cancel can flip isBooked true -> false.
+  const claimed = await Registration.findOneAndUpdate(
+    { registrationId, isBooked: true },
+    { $set: { isBooked: false } },
+    { new: true }
+  );
+  if (!claimed) throw rejection(409, 'This lead is not booked');
+
+  const booking = await Booking.findOne({ registrationId });
+  if (booking) {
+    booking.set({ status: 'CANCELLED', cancelledAt: new Date(), cancelledBy: actorLabel, cancellationReason: why });
+    await booking.save();
+  }
+  await logEvent({ registrationId, eventType: 'BOOKING_CANCELLED', actor: actorLabel, newValue: { reason: why }, description: `Booking cancelled. Reason: ${why}` });
+
+  await Ownership.updateMany({ registrationId }, { $set: { operationalOwner: partnerId, ownershipStatus: 'PARTNER_OWNED' } });
+  claimed.currentStage = booking?.stageBeforeBooking || (await getDefaultStatusName(partnerId));
+  claimed.subStatus = '';
+  claimed.scheduledAt = null;
+  await claimed.save();
+  await logEvent({
+    registrationId,
+    eventType: 'OPERATIONAL_OWNERSHIP_RETURNED',
+    actor: 'SYSTEM',
+    previousValue: 'BUILDER',
+    newValue: partnerId,
+    description: 'Operational ownership returned to the partner'
+  });
+
+  const commission = await CommissionEligibility.findOneAndUpdate(
+    { registrationId, eligibilityStatus: { $ne: 'CANCELLED' } },
+    { $set: { eligibilityStatus: 'CANCELLED' } },
+    { new: true }
+  );
+  if (commission) {
+    await logEvent({ registrationId, eventType: 'COMMISSION_ELIGIBILITY_CANCELLED', actor: 'SYSTEM', newValue: commission.commissionId, description: 'Commission eligibility cancelled with the booking' });
+  }
+
+  if (afterCancelled) {
+    Promise.resolve()
+      .then(() => afterCancelled(claimed))
+      .catch((err) => console.error('[booking] post-cancellation hook failed', err));
+  }
+
+  return {
+    registrationId,
+    bookingId: booking?.bookingId || null,
+    bookingStatus: 'CANCELLED',
+    operationalOwner: partnerId,
+    partnerAttribution: partnerId,
+    commissionEligibility: 'CANCELLED',
+    currentStage: claimed.currentStage
+  };
+}
+
+module.exports = { completeBooking, bookingProblem, cancelBooking };

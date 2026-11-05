@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Aka-book la",
-    "pending": "Agni asumpal"
+    "pending": "Agni asumpal",
+    "status": {
+      "CONFIRMED": "Aka-book la",
+      "CANCELLED": "Kanselado so booking"
+    }
   },
   "assign": {
     "unassigned": "Anggapoy niasain",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Anggapo ni so proyekto (ag ni inrefer)",
-    "notInList": "{{project}} (anggapo ed listaan ​​na proyekto)"
+    "notInList": "{{project}} (anggapo ed listaan ​​na proyekto)",
+    "protectionDays_one": "{{count}} -agew ya proteksion",
+    "protectionDays_other": "{{count}} -agew ya proteksion"
   },
   "journey": {
     "customer": "Kustomer",
@@ -76,7 +82,14 @@
     "progressHistory": "Kasaysayan na Inyaligwas",
     "timesIn": "(panaon ed {{timezone}} )",
     "backToMyLeads": "Pawil ed saray Liad Ko",
-    "editLead": "I-edit so Lead"
+    "editLead": "I-edit so Lead",
+    "disputeBanner": "Walay sananey a partner ya nansasangsangan no antoy akankayarian ed sayan kustomer. Say Leadrat admin et manrerepaso ed saya - say proteksion mo et mansiansia anggad mandesisyon ira.",
+    "booking": "Panag-book",
+    "commission": "Komisyon",
+    "notBooked": "Ag-aka-book",
+    "cancelledOn": "Kanselado nen {{date}} .",
+    "cancelReason": "Rason: {{reason}}",
+    "cancelledHint": "Kinansela na managpaalagey so booking - say operational ownership et pinmawil ed sika tan say commission eligibility et kinansela. Napawil itan no say lead et na-book lamet."
   },
   "referral": {
     "NOT_REFERRED": "Ag-inrefer (anggapoy proyekto)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Inawat na managpaalagey so referral",
       "REFERRAL_REJECTED": "Ag-inawat na Builder so referral. Rason: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Masakbay ya impaway na admin so duplicate protection. Rason: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Inuman na Admin so rehistrasyon manlapud {{from}} ya anggad {{to}} . Rason: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Inuman na Admin so rehistrasyon manlapud {{from}} ya anggad {{to}} . Rason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Say pansasagpot na sananey a kapareha ya manrehistro na duplicate et ag-inawat",
+      "BOOKING_CANCELLED": "Kanselado so booking. Rason: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Say panagkayarian ed operasyon et nipawil ed kapareha",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Say kualipikasyon ed komisyon et kinansela ed panag-book",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Nipawil so kualipikasyon ed komisyon parad balon booking",
+      "OWNERSHIP_DISPUTE_RAISED": "Sakey nin partner so nansasangsangan no antoy akankayarian ed sayan kustomer - sakey ya Leadrat admin so manrepaso ed saya",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Say sangsangan ed panagkayarian ed sayan kustomer et inatras - say panagkayarian mo et ag anguman",
+      "OWNERSHIP_DISPUTE_UPHELD": "Say sangsangan ed panagkayarian ed sayan kustomer et nirepaso - say panagkayarian mo et akumpirma",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Nirehistro kayari na panlalaban yo nipaakar ed panagkayarian ya adesisyonan ya pabor ed sikayo. Note: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Anampot so proteksion: sakey a sangsangan nipaakar ed panagkayarian so adesisyonan pabor ed sananey a kapareha. Note: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Sayan numero na telepono et aliwan balido parad {{country}} .",
     "COUNTRY_MISMATCH": "Ipangasin pilien so dugan kodigo na bansa.",
     "NOT_MOBILE": "Ipangasin mangiloob na numero na telepono, aliwan landline."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Kwalipikado ed komisyon",
+      "PENDING": "Aalagaren so komisyon",
+      "CANCELLED": "Kanselado so komisyon"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Impasen ed sika",
+      "DISPUTED": "Ag-inmabobon so panangibaga"
+    }
+  },
+  "result": {
+    "none": "Anggapoy resulta na rehistrasyon ya ipanengneng. Manparehistro nin unona na lead.",
+    "acceptedTitle": "Rehistrado so lead",
+    "rejectedTitle": "Say lead et ag-akarehistro",
+    "protectionWindow": "Bintana na Proteksion",
+    "protectedUntil": "Protektaan Anggad",
+    "openLead": "Bukas a Lead",
+    "addAnother": "Mangiyan na sananey a lead",
+    "duplicate": "Duplicate - protektado la",
+    "duplicateHint": "Sayan kustomer et protektado la ed sayan proyekto na sananey a rehistrasyon, kanian ag-itan nayarin irehistro parad sika.",
+    "existingProtectedUntil": "Say wala lan rehistrasyon et protektado anggad"
+  },
+  "disputes": {
+    "title": "Saray Suppiatan Ko",
+    "intro": "Saray sangsangan nipaakar ed panagkayarian ya inlesa yo parad saray kustomer ya ag inawat bilang duplikado. Say Leadrat admin so manrepaso ed kada sakey.",
+    "empty": "Anggapoy ginawa yon sangsangan. No say sakey a kustomer ya inawit mo et ag-inawat bilang duplicate, nayarian mon i-dispute itan manlapud resulta na rehistrasyon.",
+    "columns": {
+      "dispute": "Panlalaban",
+      "reason": "Say rason mo",
+      "outcome": "Pansumpalan"
+    },
+    "status": {
+      "OPEN": "Narerepaso",
+      "UPHELD": "Aliwan pabor ed sika",
+      "OVERTURNED": "Nandesisyon ak ya pabor ed sika",
+      "WITHDRAWN": "Inatras"
+    },
+    "awaitingReview": "Manaalagar na admin review",
+    "openNewLead": "Lukasan so lead mo {{id}}",
+    "withdraw": "Iyalis",
+    "withdrawConfirm": "Ibawi mo so sangsangan mo parad {{name}} ? Say kaplesan ya akankayarian et mansiansian ontan.",
+    "raise": "Pansasangsangan ed panagkayarian",
+    "raiseTitle": "Pansasangsangan ed panagkayarian",
+    "raiseHint": "No sayan kustomer so inmuna ya linma ed sika, ipaliwawa no akin. Say Leadrat admin so manrepaso ed saya; no mandesisyon iran pabor ed sika, say lead et nirehistro parad sika.",
+    "reasonLabel": "Akin et kayarian mo iyan kustomer?",
+    "reasonMin_one": "Ag-onkulang ed {{count}} a karakter.",
+    "reasonMin_other": "Ag-onkulang ed {{count}} a karakter.",
+    "submit": "Ipawit so Suppiat",
+    "notProtected": "Anggapo lay proteksion ed sayan kustomer parad sayan proyekto - sarag mo lan irehistro so lead natan.",
+    "raised": "Say sangsangan {{id}} nipawit parad repaso.",
+    "viewAll": "Nengnengen iray sangsangan ko"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Panaon",
+    "lastDays_one": "{{count}} ya agew",
+    "lastDays_other": "{{count}} ya agew",
+    "emptyTitle": "Naabrasa kayo! Anggapo ni ray lead mo.",
+    "emptyHint": "Iparehistro so unonan lead mo - say pipeline, bookings tan deadline na proteksion mo et ompatnag dia.",
+    "tiles": {
+      "leads": "Dagup na lead",
+      "newInPeriod_one": "{{count}} balo ed sayan panaon",
+      "newInPeriod_other": "{{count}} balo ed sayan panaon",
+      "accepted": "Inawat",
+      "booked": "Aka-book la",
+      "bookedInPeriod_one": "{{count}} aka-book ed sayan panaon",
+      "bookedInPeriod_other": "{{count}} aka-book ed sayan panaon",
+      "conversion": "Panagpasimbalo",
+      "conversionHint": "Saray aka-book ya lead bilang kabiangan na saray inawat ya lead",
+      "protectedNow": "Protektado la natan",
+      "expiringSoon_one": "Proteksion ya manampot ed {{count}} ya agew",
+      "expiringSoon_other": "Proteksion ya manampot ed {{count}} ya agew",
+      "disputedNow": "Insuppiat na arum",
+      "disputedNowHint": "Saray lead mo ed sakey a lukas a sangsangan nipaakar ed panagkayarian manlapud sananey a kapareha",
+      "commissionEligible": "Kwalipikado ed komisyon",
+      "commissionCancelled_one": "{{count}} nakansela",
+      "commissionCancelled_other": "{{count}} nakansela"
+    },
+    "chart": {
+      "title_one": "Saray rehistrasyon tan panag-book kada agew - unor ya {{count}} ya agew",
+      "title_other": "Saray rehistrasyon tan panag-book kada agew - unor ya {{count}} ya agew",
+      "registrations": "Saray Rehistrasyon",
+      "bookings": "Panag-book"
+    },
+    "byStage": "Mangidaulo unong ed kipapasen",
+    "bySource": "Mangitonton unong ed lapuan",
+    "byReferral": "Saray mangidadaulo unong ed kipapasen na referral",
+    "myDisputes": "Saray agpantatalosan ya inlesa yo",
+    "noDisputes": "Anggapoy sangsangan ya inlesa.",
+    "unknown": "Ag-inletneg",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "External CRM (simulated)",
+      "PARTNER_CRM": "Inyarum na grupo yo",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Pankasakey",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Say proteksion et onlabas ed ontumbok ya {{count}} ya agew",
+    "expiringTitle_other": "Say proteksion et onlabas ed ontumbok ya {{count}} ya agew",
+    "expiringEmpty": "Anggapoy tingga ya naandi so proteksion to ed sayan bintana."
   }
 }

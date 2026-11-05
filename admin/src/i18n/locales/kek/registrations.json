@@ -49,8 +49,73 @@
       "newPartnerId": "Ak’ ID re li komon",
       "reason": "Xyaalal (na’ajman ru)",
       "apply": "Xk’anjelankil li Override",
-      "applying": "Xk'anjelankil..."
+      "applying": "Xk'anjelankil...",
+      "cancelBookingHint": "Lix tz’eqtaanankil naxk’e reetalil li reservación ut lix comisión jo’ xsachb’al, naxsutq’isi li eechanihom re li k’anjelak re li komon, ut naxkanab’ laj kab’lanel chixb’oqb’al wi’chik li b’eresink a’in.",
+      "cancelBookingConfirm": "Ma naru xsachb’al li reservación a’in? Na’isiman ajwi’ lix taqlanb’il k’anjel. A’in tz’iib’anb’il rik’in laa k’ab’a’ ut laa k’a’uxl."
     },
-    "timelineTitle": "Xhoonalil li Auditoría (li tz’iib’ank a’in)"
+    "timelineTitle": "Xhoonalil li Auditoría (li tz’iib’ank a’in)",
+    "bookingStatus": "Xwanjik li reserva",
+    "commissionAttribution": "Xk’eeb’al li k’anjel",
+    "disputeOpen": "Jun li wech’ok-ib’ chirix li eechanihom teeto sa’ xb’een li k’ay a’in - jun chik li komon naxye naq a’an reheb’. Na’uxmank xsik’b’al ru sa’ li perel Disputas.",
+    "viewDisputes": "Rilb’aleb’ li wech’ok-ib’ .",
+    "cancellation": {
+      "title": "Xsachmank li reservación",
+      "hint": "Li booking ut lix comisión neke’xkanab’; li eechanihom re li k’anjelak wan wi’chik rik’in li komon ut laj kab’lanel naru naxb’oq wi’chik li b’eresink a’in.",
+      "at": "Xtz’eqtaanaak sa’ li",
+      "by": "Xtz’eqtaanaak xb’aan",
+      "reason": "Xyalal"
+    }
+  },
+  "disputes": {
+    "title": "Xwech’b’al rix li eechanihom",
+    "hint": "Jun li komon li kitz’eqtaanaak lix tz’iib’ankil jo’ jun li k’utb’esink naru naxwech’ rix ani aj eechal re li k’ay. Il ru li wiib’ chi na’leb’ ut k’uub’.",
+    "statusFilter": "Xwanjik li wech'ok-ib'",
+    "allStatuses": "Chixjunil li estatus",
+    "empty": "Maak’a’ li wech’ok-ib’ rik’in li estatus a’in.",
+    "columns": {
+      "dispute": "Chajkilal",
+      "customer": "At komon",
+      "project": "Kanjel",
+      "raisedBy": "Xwaklesiik xb’aan .",
+      "heldBy": "Laj eechal re anaqwan",
+      "status": "Wanjik",
+      "raisedAt": "Kiwaklesiik sa’ li"
+    },
+    "detail": {
+      "title": "Xwech’b’al rix {{id}}",
+      "raisedOn": "Xwaklesiik {{date}}",
+      "raisingTitle": "Xwaklesiik xb’aan .",
+      "holderTitle": "Laj eechal re anaqwan",
+      "partner": "Sumil",
+      "raisedBy": "Xk’eemank xb’aan .",
+      "customerName": "At komon",
+      "mobile": "Na eek'an",
+      "alternateMobile": "Jalan chik li mobael",
+      "email": "Correo electrónico",
+      "project": "Kanjel",
+      "reason": "Lix k’a’uxleb’ .",
+      "registration": "Xtz'iib'ankil xk'ab'a'",
+      "registeredAt": "Xtz’iib’aak xk’ab’a’ sa’ li",
+      "referral": "Xtaqlankil",
+      "heldMissing": "Ink’a’ kiru xtawb’al li tz’iib’anb’il esil li k’uulanb’il.",
+      "resolutionTitle": "Karu xkoxla",
+      "outcome": "Resilal",
+      "note": "Tzaq",
+      "decidedBy": "Xk’uub’aman xb’aan .",
+      "decidedAt": "Xk’uub’aman sa’ xb’een .",
+      "newRegistration": "Ak’ tz’iib’ank .",
+      "decideTitle": "Xk’uub’ankil li wech’ok-ib’ a’in .",
+      "noteLabel": "K’e reetal xch’olob’ankil li na’leb’ (na’ajman ru)",
+      "noteRequired": "Tz’iib’a jun li hu re xsik’b’al ru.",
+      "uphold": "Xk'eeb'al xwankil",
+      "overturn": "Xq'axb'al ru",
+      "upholdEffect": "{{holder}} naxk’uula li k’ay. Li wech’ok-ib’ tz’aptz’o ut maak’a’ chik najala.",
+      "overturnEffect": "Li kolok re li ka'pak'alil re {{holder}} naraqe' anaqwan ut li k'ay naxtz'iib'a rib' cho'q re {{partner}} jo' jun ak' tz'iib'ank.",
+      "heldBookedHelp": "Li k’ay a’in na’ok chi b’oqmank rik’in laj eechal re li wank anajwan. Xtz’eqtaanankil li reservación a’an xb’een wa (Admin Override sa’ li tz’iib’ank), toja’ naq taasutq’isi:",
+      "confirmTitle": "Ma chʼolchʼo chaawu?",
+      "confirmUphold": "Yaal, xwaklesinkil .",
+      "confirmOverturn": "Yaal, xsutq’isinkil .",
+      "back": "Sutq’iik sa’ li wech’ok-ib’ ."
+    }
   }
 }

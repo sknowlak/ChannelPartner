@@ -30,7 +30,8 @@
       "registered": "Anrezistre"
     },
     "booked": "Rezerve",
-    "empty": "napa referans pour le moman."
+    "empty": "napa referans pour le moman.",
+    "bookingCancelled": "rezervasyon in ganny kennsel"
   },
   "detail": {
     "customer": "Konsomater",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "rezervasyon in ganny konfirmen.",
       "accepted": "referans in ganny aksepte.",
-      "rejected": "referans in ganny rezete."
+      "rejected": "referans in ganny rezete.",
+      "bookingCancelled": "rezervasyon in ganny kennsel."
     },
-    "backToReferrals": "Retourn lo bann referans"
+    "backToReferrals": "Retourn lo bann referans",
+    "bookingCancelled": "rezervasyon in ganny kennsel",
+    "cancelBooking": "kennsel rezervasyon",
+    "cancelReasonLabel": "rezon pour kennsel (montre avek partener) *",
+    "cancelBookingHint": "propriyete operasyonnel i retourn kot partener e zot kalifikasyon komisyon i ganny kennsel. sa lead i kapab ganny rezerve ankor pli tar.",
+    "cancelBookingConfirm": "kennsel sa rezervasyon"
   },
   "history": {
     "title": "Listwar",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "kalifikasyon komisyon in ganny kree",
       "HANDOVER_COMPLETED": "handover in konplete",
       "ADMIN_PROTECTION_RELEASED": "admin in lans proteksyon doub boner. Rezon: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin in re-asiyen lanrezistreman sorti {{from}} pou al {{to}} . Rezon: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin in re-asiyen lanrezistreman sorti {{from}} pou al {{to}} . Rezon: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "en lesey lanrezistreman doub par en lot partener in ganny rezete",
+      "BOOKING_CANCELLED": "rezervasyon in ganny kennsel. Rezon: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "propriyete operasyonnel in ganny retournen avek partener",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "kalifikasyon komisyon in ganny kennsel avek rezervasyon",
+      "COMMISSION_ELIGIBILITY_RESTORED": "kalifikasyon komisyon in ganny remete pou nouvo rezervasyon"
     }
   }
 }

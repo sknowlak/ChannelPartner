@@ -49,8 +49,73 @@
       "newPartnerId": "ID Azɔ̌gbɛ́ Yɔyɔ̌",
       "reason": "Hwɛjijɔ (è byɔ)",
       "apply": "Zǎn Nǔ E Nɔ Gbɔn É",
-      "applying": "E ɖo yiyi wɛ..."
+      "applying": "E ɖo yiyi wɛ...",
+      "cancelBookingHint": "Enyi è hɛn nǔ e è bló é gblé ɔ, é nɔ xlɛ́ ɖɔ è ko hɛn nǔ e è bló é kpo azɔ̌ e è sɔ́ d’así n’i é kpo gblé, bo nɔ lɛ́vɔ sɔ́ azɔ̌ ɔ sín acɛ jó nú mɛ e è w’azɔ̌ xá é, lobo nɔ jó xɔgbigbátɔ́ ɔ dó bɔ é nɔ lɛ́vɔ bló tuto nú nǔ enɛ.",
+      "cancelBookingConfirm": "Gbɔn fí e è sɔ́ ɖ’ayǐ é à ? È lɛ́ ɖè azɔ̌ e è sɔ́ d’así n’i é síìn. È nɔ wlan nyikɔ towe kpo hwɛjijɔ towe kpo dó wema mɛ."
     },
-    "timelineTitle": "Hwenu e è na gbéjé nǔ lɛ kpɔ́n é (nyikɔ elɔ)"
+    "timelineTitle": "Hwenu e è na gbéjé nǔ lɛ kpɔ́n é (nyikɔ elɔ)",
+    "bookingStatus": "Ninɔmɛ e mɛ è bló tuto ɖè é",
+    "commissionAttribution": "Azɔ̌ e è sɔ́ d’así nú mɛ é",
+    "disputeOpen": "Nǔ e nyí nǔɖokan tɔn é sín xó ɖò hunhun jí ɖò axisinɔ élɔ́ jí - xɔ́ntɔn ɖevo ɖɔ é nyí yetɔn. È nɔ wá gbeta ɔ kɔn ɖò wexwɛ Hwɛɖɔxɔsa ɔ tɔn jí.",
+    "viewDisputes": "Kpɔ́n jlɛ lɛ",
+    "cancellation": {
+      "title": "È ɖó tɛnmɛ e è sɔ́ ɖó te é te",
+      "hint": "È nɔ ɖè tɛnmɛ e è bló é kpo azɔ̌ e è sɔ́ d’así n’i é kpo síìn; Ɖo Ɖɔxomε ɔ, Ɖɔxomεtɔ ɔ sixu Ɖɔxomε Ɖo Ɖɔxomε enε ɔ mε.",
+      "at": "È ɖó te ɖò",
+      "by": "È súnsún gbɔn",
+      "reason": "Hwɛjijɔ"
+    }
+  },
+  "disputes": {
+    "title": "Nǔɖokan lɛ sín hwɛgbe lɛ",
+    "hint": "Azɔ̌gbɛ́ e è gbɛ́ nyikɔ tɔn dó wema mɛ ɖɔ é nyí ɖiɖe wè é ɖé sixu dɔn nǔ dó mɛ e ɖó axisinɔ ɔ é jí. Kpɔ́n akpá wè lɛ bǐ bo wá gbeta ɔ kɔn.",
+    "statusFilter": "Ninɔmɛ jlɛɖiɖɔ tɔn",
+    "allStatuses": "Ninɔmɛ lɛ bǐ",
+    "empty": "Jlɛɖiɖɔ ɖě ɖò ninɔmɛ enɛ mɛ ǎ.",
+    "columns": {
+      "dispute": "Kpò",
+      "customer": "Xɔtɔ́",
+      "project": "Azɔwanú",
+      "raisedBy": "È kplɔ́n ɛ",
+      "heldBy": "Mɛ e ɖó é dìn é",
+      "status": "Tɛnkpɔn",
+      "raisedAt": "È kplɔ́n ɛ ɖò 1914."
+    },
+    "detail": {
+      "title": "Jlɛɖiɖɔ {{id}}",
+      "raisedOn": "È sɔ́ {{date}}",
+      "raisingTitle": "È kplɔ́n ɛ",
+      "holderTitle": "Mɛ e ɖó é dìn é",
+      "partner": "Alɔwliwli",
+      "raisedBy": "Mɛ e sɛ́dó é wɛ nyí",
+      "customerName": "Xɔtɔ́",
+      "mobile": "Alokàn",
+      "alternateMobile": "Alɔkɛ́ ɖevo",
+      "email": "Email",
+      "project": "Azɔwanú",
+      "reason": "Hwɛjijɔ yetɔn .",
+      "registration": "Nyikɔ wlanwlan",
+      "registeredAt": "È wlan nyikɔ dó wema mɛ ɖò .",
+      "referral": "Mɛsɛ́dó",
+      "heldMissing": "È sixu mɔ nyikɔ e è hɛn é ǎ.",
+      "resolutionTitle": "Afɔ̌tunté",
+      "outcome": "Ledudu",
+      "note": "Wlan wlan",
+      "decidedBy": "Gbeta ɔ kɔn .",
+      "decidedAt": "È wá gbeta ɔ kɔn ɖɔ",
+      "newRegistration": "Mɛylɔwema yɔyɔ̌",
+      "decideTitle": "Mi wá gbeta ɔ kɔn dó hwɛgbe elɔ jí .",
+      "noteLabel": "Nǔwlanwlán e tinmɛ gbeta e kɔn è wá é (è byɔ)",
+      "noteRequired": "Wlan nǔ dó wema jí bo wá gbeta ɔ kɔn.",
+      "uphold": "Nɔ hɛn",
+      "overturn": "Gbɔn",
+      "upholdEffect": "{{holder}} nɔ hɛn axisinɔ ɔ. È sú hwɛɖiɖɔ ɔ bɔ nǔ ɖevo sɔ́ ɖyɔ ǎ.",
+      "overturnEffect": "{{holder}} 's alɔcyɔnmɛji wegɔ ɔ fó din bɔ axisinɔ ɔ wlan nyikɔ tɔn do {{partner}} mɛ ɖi nyikɔ yɔyɔ ɖe.",
+      "heldBookedHelp": "È nɔ bló tuto nú axisinɔ enɛ gbɔn mɛ e ɖó é dìn é jí. Mi hɛn tɛnmɛ enɛ ɔ gble jɛ nukɔn (Admin Override ɖo nyikɔ mitɔn ji), enɛ ɔ gudo ɔ, mi ɖyɔ:",
+      "confirmTitle": "A ganjɛwu à ?",
+      "confirmUphold": "Ɛɛn, nɔ gudo nú .",
+      "confirmOverturn": "Ɛɛn, hɛn .",
+      "back": "Lɛkɔ yì Jlɛ lɛ jí"
+    }
   }
 }

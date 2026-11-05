@@ -31,7 +31,8 @@
       "registered": "Registrado"
     },
     "booked": "Reservado",
-    "empty": "Nenhuma referência ainda."
+    "empty": "Nenhuma referência ainda.",
+    "bookingCancelled": "Reserva cancelada"
   },
   "detail": {
     "customer": "Cliente",
@@ -54,9 +55,15 @@
     "notice": {
       "booked": "Reserva confirmada.",
       "accepted": "Referência aceite.",
-      "rejected": "Referência rejeitada."
+      "rejected": "Referência rejeitada.",
+      "bookingCancelled": "Reserva cancelada."
     },
-    "backToReferrals": "Voltar para Referências"
+    "backToReferrals": "Voltar para Referências",
+    "bookingCancelled": "Reserva cancelada",
+    "cancelBooking": "Cancelar reserva",
+    "cancelReasonLabel": "Motivo do cancelamento (mostrado ao parceiro) *",
+    "cancelBookingHint": "A propriedade operacional regressa ao parceiro e a sua elegibilidade para a comissão é cancelada. O lead pode ser reservado novamente mais tarde.",
+    "cancelBookingConfirm": "Cancelar a reserva"
   },
   "history": {
     "title": "História",
@@ -87,7 +94,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Elegibilidade da comissão criada",
       "HANDOVER_COMPLETED": "Transferência concluída",
       "ADMIN_PROTECTION_RELEASED": "O administrador libertou a proteção duplicada antecipadamente. Motivo: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "O administrador reatribuiu o registo de {{from}} para {{to}} . Motivo: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "O administrador reatribuiu o registo de {{from}} para {{to}} . Motivo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Uma tentativa de registo duplicado feita por outro parceiro foi rejeitada",
+      "BOOKING_CANCELLED": "Reserva cancelada. Motivo: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Propriedade operacional devolvida ao parceiro",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Elegibilidade para comissão cancelada com a reserva",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Elegibilidade da comissão reposta para a nova reserva"
     }
   }
 }

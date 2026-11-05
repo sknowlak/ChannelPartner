@@ -14,6 +14,8 @@ import Audit from './pages/Audit';
 import Settings from './pages/Settings';
 import Builders from './pages/Builders';
 import BuilderDetail from './pages/BuilderDetail';
+import Disputes from './pages/Disputes';
+import DisputeDetail from './pages/DisputeDetail';
 
 export default function App() {
   const { t, i18n } = useTranslation('common');
@@ -33,6 +35,8 @@ export default function App() {
         <Route path="/partner-fields" element={<ProtectedRoute><PartnerFields /></ProtectedRoute>} />
         <Route path="/registrations" element={<ProtectedRoute><Registrations /></ProtectedRoute>} />
         <Route path="/registrations/:registrationId" element={<ProtectedRoute><RegistrationDetail /></ProtectedRoute>} />
+        <Route path="/disputes" element={<ProtectedRoute><Disputes /></ProtectedRoute>} />
+        <Route path="/disputes/:disputeId" element={<ProtectedRoute><DisputeDetail /></ProtectedRoute>} />
         <Route path="/audit" element={<ProtectedRoute><Audit /></ProtectedRoute>} />
         <Route path="/settings" element={<ProtectedRoute><Settings /></ProtectedRoute>} />
         <Route path="/builders" element={<ProtectedRoute><Builders /></ProtectedRoute>} />

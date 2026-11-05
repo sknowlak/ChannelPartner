@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Icalembelwe",
-    "pending": "Ukulolela"
+    "pending": "Ukulolela",
+    "status": {
+      "CONFIRMED": "Icalembelwe",
+      "CANCELLED": "Ukupekanya kwakanshiwa"
+    }
   },
   "assign": {
     "unassigned": "Tacipeelwe",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Tapali umulimo nomba (uushalumbulwa)",
-    "notInList": "{{project}} (te mu butantiko bwa milimo)"
+    "notInList": "{{project}} (te mu butantiko bwa milimo)",
+    "protectionDays_one": "{{count}} -ukucingililwa kwa bushiku",
+    "protectionDays_other": "{{count}} -ukucingililwa kwa bushiku"
   },
   "journey": {
     "customer": "Kashita",
@@ -76,7 +82,14 @@
     "progressHistory": "Ilyashi lya kale ilya kulunduluka",
     "timesIn": "(inshita mu {{timezone}} )",
     "backToMyLeads": "Ukubwelela ku Ntungulushi Shandi",
-    "editLead": "Yalula Ubutungulushi"
+    "editLead": "Yalula Ubutungulushi",
+    "disputeBanner": "Umbi uo twabomba nankwe alikansana pa lwa buni bwa uyu kasitoma. Katungulula Leadrat alecipitulukamo - ubucingililo bwenu bulatwalilila ukufikila bapingulapo.",
+    "booking": "Ukupekanya",
+    "commission": "Umulimo",
+    "notBooked": "Tacilembelwe",
+    "cancelledOn": "Cakanshiwa pa {{date}} .",
+    "cancelReason": "Umulandu: {{reason}}",
+    "cancelledHint": "Umukuuli alikanshile ukulembesha - ubuni bwa mulimo bwabwelele kuli imwe kabili ukulinga kwa komishoni kwakanshiwa. Ici cilabweshiwa nga ca kuti ukutungulula kwalembeshiwa na kabili."
   },
   "referral": {
     "NOT_REFERRED": "Tacilangishiwe (tapali umulimo)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Kakuuli asumine ukutuma",
       "REFERRAL_REJECTED": "Umukuuli alikene ukutuma. Umulandu: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin alifumishe ubucingililo bwapalana bwangu. Umulandu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Katungulula alibwekeshepo ukulembesha ukufuma kuli {{from}} ukufika kuli {{to}} . Umulandu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Katungulula alibwekeshepo ukulembesha ukufuma kuli {{from}} ukufika kuli {{to}} . Umulandu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ukwesha kwa kwilembesha ukwabwekeshiwapo ukwa mubomfi umbi kwakanishiwe",
+      "BOOKING_CANCELLED": "Ukubuka kwakanshiwa. Umulandu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ubunini bwa mibombele bwabweshiwa kuli uo balebomba nankwe",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ukulinga kwa komishoni kwafumiishiwapo pamo no kupekanya",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ukulinga kwa komishini kwabweshiwa ku kupekanya ukupya",
+      "OWNERSHIP_DISPUTE_RAISED": "Umbi uo twabomba nankwe alikansana pa lwa buni bwa uyu kasitoma - umukalamba wa Leadrat akacipitulukamo",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Ukukansana pa lwa bunini pali uyu kasitoma kwafuminepo - ubunini bwenu tabwapilibwilwe",
+      "OWNERSHIP_DISPUTE_UPHELD": "Ukukansana pa bunini pali uyu kasitoma kwapitulwikwemo - ubunini bwenu bwashininkishiwa",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Ukulembeshiwa pa numa ya kukansana kwenu ukwa buninshi kwapingwilwe mu kulungatika kwenu. Ishiba: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Ukucingililwa kwapwile: ukukansana kwa bukwashi kwapingwilwe mu kufwaya kwa munankwe umbi. Ishiba: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Iyi nambala ya lamya tayabomba kuli {{country}} .",
     "COUNTRY_MISMATCH": "Mukwai saleni inambala ya calo iyalinga.",
     "NOT_MOBILE": "Mukwai lembeni inambala ya foni, te ya pa ng'anda."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komishini iyalinga",
+      "PENDING": "Imilimo ilelolela",
+      "CANCELLED": "Komishini yafumiishiwapo"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Ukupeelwa kuli imwe",
+      "DISPUTED": "Ukupeela kwakanshiwa"
+    }
+  },
+  "result": {
+    "none": "Tapali ifyafumamo ifyakulembesha ifyakulangisha. Lembesheni intungulushi intanshi.",
+    "acceptedTitle": "Ukutungulula kwalembeshiwa",
+    "rejectedTitle": "Ukutungulula takwalembeshiwa",
+    "protectionWindow": "Iwindo lya Bucingililo",
+    "protectedUntil": "Ukucingililwa Ukufika",
+    "openLead": "Isuleni Intungulushi",
+    "addAnother": "Lundako Umbi Uwakutungulula",
+    "duplicate": "Icakubwekeshapo - icacingililwa kale",
+    "duplicateHint": "Uyu kasitoma alicingililwa kale kuli iyi projekiti ukupitila mu kulembwa kumbi, eico te kuti alembele kuli imwe.",
+    "existingProtectedUntil": "Ukulembesha ukwaliko ukwacingililwa ukufika 2019."
+  },
+  "disputes": {
+    "title": "Ukukansana Kwandi",
+    "intro": "Amafya ya buninshi ayo mwabuulile kuli bakasitoma abakanishiwe nga ifikope. Katungulula Leadrat alapitulukamo muli cimo na cimo.",
+    "empty": "Tamuli no kuleta ukukansana ukuli konse. Nga ca kuti kasitoma uo mwaletele akaanishiwa nga ca kutila ali uwa cibili, kuti mwacikaanya ukufuma ku cifumamo ca kulembwa.",
+    "columns": {
+      "dispute": "Ukuumana",
+      "reason": "Umulandu wenu",
+      "outcome": "Ukufumamo"
+    },
+    "status": {
+      "OPEN": "Ukupitulwikwamo",
+      "UPHELD": "Tacili mu kufwaya kwenu",
+      "OVERTURNED": "Napingwilepo mu kulungatika kuli imwe",
+      "WITHDRAWN": "Ukufumishiwapo"
+    },
+    "awaitingReview": "Ukulolela ukupitulukamo kwa butungulushi",
+    "openNewLead": "Isuleni ubutungulushi bwenu {{id}}",
+    "withdraw": "Ukuleka",
+    "withdrawConfirm": "Fumyeniko ukukansana kwenu pa {{name}} ? Ubunini bwa nomba bwashala nga fintu buli.",
+    "raise": "Ukukansana ubunini",
+    "raiseTitle": "Ukukansana ubunini",
+    "raiseHint": "Nga ca kuti uyu kasitoma aliishile kuli imwe intanshi, mulondolwele umulandu. Umukalamba wa Leadrat akacipitulukamo; nga bapingulapo mu kulungatika kuli imwe, ukutungulula kwalembeshiwa kuli imwe.",
+    "reasonLabel": "Bushe mulandu nshi uyu kasitoma ali wenu?",
+    "reasonMin_one": "Nalimo {{count}} ifishibilo.",
+    "reasonMin_other": "Nalimo {{count}} ifishibilo.",
+    "submit": "Tuma Ukukansana",
+    "notProtected": "Takuli nangu umo uuli no kucingililwa pali uyu kasitoma pali iyi projekiti na kabili - kuti mwalembesha ubutungulushi nomba.",
+    "raised": "Ukukansana {{id}} kwatuminwe ku kupitulukamo.",
+    "viewAll": "Moneni ukukansana kwandi"
+  },
+  "dashboard": {
+    "title": "Dashibodi",
+    "period": "Inshita",
+    "lastDays_one": "{{count}} ubushiku",
+    "lastDays_other": "{{count}} inshiku",
+    "emptyTitle": "Ukusengela! Tamuli na ba ntungulushi nomba.",
+    "emptyHint": "Lembesheni ubutungulushi bwenu ubwa kubalilapo - umutande wenu, ukulembesha ne nshita sha kupwisha isha kucingililwa fikalangishiwa apa.",
+    "tiles": {
+      "leads": "Ukutungulula konse",
+      "newInPeriod_one": "{{count}} ifipya muli iyi nshita",
+      "newInPeriod_other": "{{count}} ifipya muli iyi nshita",
+      "accepted": "Casuminishiwa",
+      "booked": "Icalembelwe",
+      "bookedInPeriod_one": "{{count}} ukubikwa muli iyi nshita",
+      "bookedInPeriod_other": "{{count}} ukubikwa muli iyi nshita",
+      "conversion": "Ukupilibula",
+      "conversionHint": "Abatungulula abalembelwe nga icakaniko ca batungulula abasuminishiwa",
+      "protectedNow": "Icacingililwa nomba",
+      "expiringSoon_one": "Ubucingililo ubulepwa muli {{count}} ubushiku",
+      "expiringSoon_other": "Ukucingililwa ukupwa mu {{count}} inshiku",
+      "disputedNow": "Ukukanshiwa na bambi",
+      "disputedNowHint": "Ukutungulula kwenu no kukansana kwa bukwashi ukwaisuka ukufuma kuli umbi uo mulebomba nankwe",
+      "commissionEligible": "Komishini iyalinga",
+      "commissionCancelled_one": "{{count}} kwakanshiwa",
+      "commissionCancelled_other": "{{count}} kwakanshiwa"
+    },
+    "chart": {
+      "title_one": "Ukulembesha no kupekanya ubushiku - ubushiku bwakulekelesha {{count}}",
+      "title_other": "Ukulembesha no kupanga ififulo cila bushiku - inshiku sha kulekelesha {{count}}",
+      "registrations": "Ukulembesha",
+      "bookings": "Ukupekanya"
+    },
+    "byStage": "Ukutungulula ukupitila mu cifulo",
+    "bySource": "Ukutungulula ukupitila mu ntulo",
+    "byReferral": "Ukutungulula ukulingana na imibele ya kutuma",
+    "myDisputes": "Amafya mwabuulile",
+    "noDisputes": "Tapali ukukansana ukwabuushiwe.",
+    "unknown": "Tacibikwa",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM iya kunse (iyapalanishiwa)",
+      "PARTNER_CRM": "Icalundwako ne bumba lyenu",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Ukubikwa pamo",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Ubucingililo bulepwa mu bushiku bwakonkapo {{count}}",
+    "expiringTitle_other": "Ubucingo bulepwa mu nshiku {{count}} ishikonkelepo",
+    "expiringEmpty": "Takuli umutuntulu uuonaula ubucingililo bwakwe muli ili windo."
   }
 }

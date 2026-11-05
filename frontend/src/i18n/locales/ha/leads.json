@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "An yi rajista",
-    "pending": "Ana jiran"
+    "pending": "Ana jiran",
+    "status": {
+      "CONFIRMED": "An yi rajista",
+      "CANCELLED": "An soke yin rajista"
+    }
   },
   "assign": {
     "unassigned": "Ba a sanyawa ba",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Babu wani aiki tukuna (ba a ambata ba)",
-    "notInList": "{{project}} (ba a cikin jerin ayyukan ba)"
+    "notInList": "{{project}} (ba a cikin jerin ayyukan ba)",
+    "protectionDays_one": "{{count}} kariya ta rana",
+    "protectionDays_other": "{{count}} kariya ta rana"
   },
   "journey": {
     "customer": "Abokin ciniki",
@@ -76,7 +82,14 @@
     "progressHistory": "Tarihin Ci gaba",
     "timesIn": "(Lokaci a cikin {{timezone}} )",
     "backToMyLeads": "Komawa Jagorana",
-    "editLead": "Gyara Jagora"
+    "editLead": "Gyara Jagora",
+    "disputeBanner": "Wani abokin tarayya ya yi jayayya game da mallakar wannan abokin ciniki. Wani jami'in Leadrat yana duba shi - kariyar ku tana nan a wurin har sai sun yanke shawara.",
+    "booking": "Yin ajiya",
+    "commission": "Hukumar",
+    "notBooked": "Ba a yi rajista ba",
+    "cancelledOn": "An soke ranar {{date}} .",
+    "cancelReason": "Dalili: {{reason}}",
+    "cancelledHint": "The builder cancelled the booking - operational ownership is back with you and commission eligibility is cancelled. Ana maido da shi idan aka sake yin ajiyar gubar."
   },
   "referral": {
     "NOT_REFERRED": "Ba a magana (babu aikin)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Mai ginin ya karɓi abin da aka tura",
       "REFERRAL_REJECTED": "Mai gini ya ki amincewa da batun. Dalili: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin ya fitar da kwafin kariya da wuri. Dalili: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin ya sake sanya rajista daga {{from}} zuwa {{to}} . Dalili: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin ya sake sanya rajista daga {{from}} zuwa {{to}} . Dalili: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "An yi watsi da yunƙurin yin rajista na wani abokin tarayya",
+      "BOOKING_CANCELLED": "An soke yin rajista Dalili: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Mallakar aiki ta koma ga abokin tarayya",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "An soke cancantar hukumar tare da yin ajiyar kuɗi",
+      "COMMISSION_ELIGIBILITY_RESTORED": "An dawo da cancantar hukumar don sabon yin rajista",
+      "OWNERSHIP_DISPUTE_RAISED": "Wani abokin tarayya ya yi jayayya game da mallakar wannan abokin ciniki - mai kula da Leadrat zai duba shi",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "An janye takaddamar mallakar mallakar wannan abokin ciniki - ikon mallakar ku bai canza ba",
+      "OWNERSHIP_DISPUTE_UPHELD": "An sake duba takaddamar mallakar mallakar wannan abokin ciniki - an tabbatar da mallakar ku",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Rijista bayan an yanke shawarar rigimar mallakar ku don amfanin ku. Lura: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Kariya ta ƙare: an yanke shawarar takaddamar mallakar mallakar wani abokin tarayya. Lura: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Wannan lambar wayar ba ta aiki ga {{country}} .",
     "COUNTRY_MISMATCH": "Da fatan za a zaɓi madaidaicin lambar ƙasa.",
     "NOT_MOBILE": "Da fatan za a shigar da lambar wayar hannu, ba layin ƙasa ba."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Hukumar ta cancanci",
+      "PENDING": "Hukumar da ke jira",
+      "CANCELLED": "Hukumar ta soke"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Dangana gare ku",
+      "DISPUTED": "An yi gardama kan sifa"
+    }
+  },
+  "result": {
+    "none": "Babu sakamakon rajista da zai nuna. Register a lead first.",
+    "acceptedTitle": "Jagoran yayi rijista",
+    "rejectedTitle": "Ledar ba a yi rijista ba",
+    "protectionWindow": "Tagar kariya",
+    "protectedUntil": "Kare Har",
+    "openLead": "Buɗe Jagora",
+    "addAnother": "Ƙara Wani Jagora",
+    "duplicate": "Kwafi - riga an kiyaye shi",
+    "duplicateHint": "An riga an kiyaye wannan abokin ciniki don wannan aikin ta wata rajista, don haka ba za a iya yi muku rajista ba.",
+    "existingProtectedUntil": "Rijistar da ta kasance tana kiyaye har sai"
+  },
+  "disputes": {
+    "title": "Rigima Na",
+    "intro": "Ownership disputes you raised for customers that were refused as duplicates. A Leadrat admin na duba kowane daya.",
+    "empty": "Ba ku ta da wata jayayya ba. If a customer you brought in is refused as a duplicate, you can dispute it from the registration result.",
+    "columns": {
+      "dispute": "jayayya",
+      "reason": "Dalilin ku",
+      "outcome": "Sakamako"
+    },
+    "status": {
+      "OPEN": "Karkashin nazari",
+      "UPHELD": "Ba don yardar ku ba",
+      "OVERTURNED": "An yanke shawara don yardar ku",
+      "WITHDRAWN": "Janye"
+    },
+    "awaitingReview": "Ana jiran dubawar admin",
+    "openNewLead": "Bude jagorar ku {{id}}",
+    "withdraw": "Janye",
+    "withdrawConfirm": "Janye takaddamar ku don {{name}} ? Mallakar na yanzu tana nan yadda take.",
+    "raise": "Mallakar jayayya",
+    "raiseTitle": "Mallakar jayayya",
+    "raiseHint": "Idan wannan abokin ciniki ya zo gare ku da farko, bayyana dalilin. Wani mai gudanarwa Leadrat zai duba shi; if they decide in your favour, the lead is registered for you.",
+    "reasonLabel": "Me yasa wannan abokin ciniki naku ne?",
+    "reasonMin_one": "Akalla harafi {{count}}",
+    "reasonMin_other": "Akalla haruffa {{count}}",
+    "submit": "Aika jayayya",
+    "notProtected": "Babu wanda ke da kariya ga wannan abokin ciniki don wannan aikin kuma - zaku iya yin rijistar jagora a yanzu.",
+    "raised": "An aika jayayya {{id}} don dubawa.",
+    "viewAll": "Duba rigima na"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Lokaci",
+    "lastDays_one": "{{count}} rana",
+    "lastDays_other": "{{count}} kwanaki",
+    "emptyTitle": "Barka da zuwa! Ba ku da jagora tukuna.",
+    "emptyHint": "Yi rijistar jagorar farko - bututunku, ajiyar ku da lokacin kare kariya zai bayyana anan.",
+    "tiles": {
+      "leads": "Jimlar jagora",
+      "newInPeriod_one": "{{count}} sabo a wannan lokacin",
+      "newInPeriod_other": "{{count}} sabo a wannan lokacin",
+      "accepted": "Karba",
+      "booked": "An yi rajista",
+      "bookedInPeriod_one": "An yi ajiyar {{count}} a wannan lokacin",
+      "bookedInPeriod_other": "An yi ajiyar {{count}} a wannan lokacin",
+      "conversion": "Juyawa",
+      "conversionHint": "Jagororin da aka ba da izini azaman rabon jagororin karɓuwa",
+      "protectedNow": "An kare yanzu",
+      "expiringSoon_one": "Kariya yana ƙarewa a cikin {{count}} rana",
+      "expiringSoon_other": "Kariya yana ƙarewa a cikin {{count}} kwanaki",
+      "disputedNow": "Wasu sun yi jayayya",
+      "disputedNowHint": "Jagorarku tare da budaddiyar takaddamar mallakar mallakar wani abokin tarayya",
+      "commissionEligible": "Hukumar ta cancanci",
+      "commissionCancelled_one": "An soke {{count}}",
+      "commissionCancelled_other": "An soke {{count}}"
+    },
+    "chart": {
+      "title_one": "Rijista da yin rajista a kowace rana - {{count}} rana ta ƙarshe",
+      "title_other": "Rijista da yin rajista a kowace rana - kwanaki {{count}} na ƙarshe",
+      "registrations": "Rajista",
+      "bookings": "Bookings"
+    },
+    "byStage": "Jagoranci ta matsayi",
+    "bySource": "Jagoranci ta tushe",
+    "byReferral": "Jagoranci ta hanyar matsayi",
+    "myDisputes": "Rigima da kuka taso",
+    "noDisputes": "Babu jayayya da aka taso.",
+    "unknown": "Ba a saita ba",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM na waje (wanda aka kwaikwayi)",
+      "PARTNER_CRM": "Ƙungiya ta ƙara",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Haɗin kai",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Kariya yana ƙarewa a rana mai zuwa {{count}}",
+    "expiringTitle_other": "Kariya yana ƙarewa a cikin kwanaki masu zuwa {{count}}",
+    "expiringEmpty": "Babu gubar da ta rasa kariyar ta a wannan taga."
   }
 }

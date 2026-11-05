@@ -49,8 +49,73 @@
       "newPartnerId": "ID ya Munyako Muphya",
       "reason": "Chifukwa (chikukhumbikwa)",
       "apply": "Gwiliskiranipo",
-      "applying": "Kulembeska..."
+      "applying": "Kulembeska...",
+      "cancelBookingHint": "Kukanizga kukulongora kuti buku na komishoni yake vyafumiskikapo, kukuwezgerapo udindo wa kugwira ntchito kwa munyake, ndipo wakuzomerezga wakuzenga kuti walembeso buku ili.",
+      "cancelBookingConfirm": "Kasi mungakanizga buku ili? Komiti yake nayo yikufumiskikapo. Ici cikulembeka na zina linu na cifukwa."
     },
-    "timelineTitle": "Nyengo yakuwoneseska (kulembeska uku)"
+    "timelineTitle": "Nyengo yakuwoneseska (kulembeska uku)",
+    "bookingStatus": "Umo vinthu vyalembekera",
+    "commissionAttribution": "Kupeleka kwa Komiti",
+    "disputeOpen": "Mphindano ya mweneko yikujulika pa kasitomala uyu - munyake wakuti ni wawo. Icho chikusankhika pa tchati cha Mphindano.",
+    "viewDisputes": "Wonani vyakususkana",
+    "cancellation": {
+      "title": "Kusunga kwakanizgika",
+      "hint": "Kulembeska na komishoni yake vikufumiskikapo; mweneko wakugwira ntchito wawelera na mnzake ndipo wakuzenga wangalembaso kulongozga uku.",
+      "at": "Wakakanizgika pa",
+      "by": "Wakakanizgika na",
+      "reason": "Chifukwa"
+    }
+  },
+  "disputes": {
+    "title": "Kususkana kwa mweneko",
+    "hint": "Munthu uyo ​​wakakanizgika kulembeska nga ni kopi wangasuska kuti ni njani uyo ni mweneko wa kasitomala. Wonani vigaŵa vyose viŵiri na kusankha.",
+    "statusFilter": "Mkhalidwe wa mphindano",
+    "allStatuses": "Vinthu vyose",
+    "empty": "Palije mphindano na udindo uwu.",
+    "columns": {
+      "dispute": "Mukangano",
+      "customer": "Kasitomala",
+      "project": "Pulojekiti",
+      "raisedBy": "Kulera na",
+      "heldBy": "Mweneko sono",
+      "status": "Udindo",
+      "raisedAt": "Wakakulira pa"
+    },
+    "detail": {
+      "title": "Kususkana {{id}}",
+      "raisedOn": "Kukwezgeka {{date}}",
+      "raisingTitle": "Kulera na",
+      "holderTitle": "Mweneko sono",
+      "partner": "Munyithu",
+      "raisedBy": "Kutumizgika na",
+      "customerName": "Kasitomala",
+      "mobile": "Kwendakwenda",
+      "alternateMobile": "Mafoni ghanyake",
+      "email": "Imelo",
+      "project": "Pulojekiti",
+      "reason": "Chifukwa chawo .",
+      "registration": "Kulembeska",
+      "registeredAt": "Kulembeska pa",
+      "referral": "Kutumizgika",
+      "heldMissing": "Kulembeska uko kukachitika kukasangika yayi.",
+      "resolutionTitle": "Chiganizo",
+      "outcome": "Vyakufuma",
+      "note": "Chimanyisko",
+      "decidedBy": "Kusankhika na",
+      "decidedAt": "Ŵakasankha",
+      "newRegistration": "Kulembeska kuphya",
+      "decideTitle": "Sankhani mphindano iyi",
+      "noteLabel": "Noti yakulongosora ivyo ŵasankha (vikukhumbikwa)",
+      "noteRequired": "Lembani kuti musankhepo.",
+      "uphold": "Kukhozgera",
+      "overturn": "Kuguza",
+      "upholdEffect": "{{holder}} wakusunga kasitomala. Mphindano iyi yamara ndipo palije chinyake icho chikusintha.",
+      "overturnEffect": "{{holder}} 's chitetezo chakuwerezgawerezga chikumara sono ndipo kasitomala wakulembeska kwa {{partner}} nga ni kulembeska kuphya.",
+      "heldBookedHelp": "Kasitomala uyu wakulembeka kwizira mwa mweneko uyo walipo sono. Kukankhira buku ilo pakwamba (Admin Override pa kulembeska), ndipo pamanyuma musinthe:",
+      "confirmTitle": "Kasi mukusimikizga?",
+      "confirmUphold": "Enya, khozgani",
+      "confirmOverturn": "Enya, kuwuskapo",
+      "back": "Kuwelera ku Mphindano"
+    }
   }
 }

@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Reserved",
-    "pending": "Derrey"
+    "pending": "Derrey",
+    "status": {
+      "CONFIRMED": "Reserved",
+      "CANCELLED": "Ta'n booking er ny scughey"
+    }
   },
   "assign": {
     "unassigned": "Cha nel eh er ny choyrt",
@@ -58,7 +62,12 @@
   },
   "project": {
     "none": "Cha nel projet erbee foast (cha nel eh er ny choyrt)",
-    "notInList": "{{project}} (cha nel eh 'sy liosta y phrojekt)"
+    "notInList": "{{project}} (cha nel eh 'sy liosta y phrojekt)",
+    "protectionDays_one": "{{count}} -coadey laa",
+    "protectionDays_two": "{{count}} -coadey laa",
+    "protectionDays_few": "{{count}} -coadey laa",
+    "protectionDays_many": "{{count}} -coadey laa",
+    "protectionDays_other": "{{count}} -coadey laa"
   },
   "journey": {
     "customer": "Custymeyr",
@@ -76,7 +85,14 @@
     "progressHistory": "Taghyr Aarloo",
     "timesIn": "(ammyn ayns {{timezone}} )",
     "backToMyLeads": "Arraght gys my Leads",
-    "editLead": "Reih Lead"
+    "editLead": "Reih Lead",
+    "disputeBanner": "Ta co-obbree elley er n'eiyrt rish y customer shoh. Ta admin Leadrat ry-reayll - ta'n coadey eu ry-reayll derrey t'ad dy ghra.",
+    "booking": "Bookaghey",
+    "commission": "Co-thrumpaght",
+    "notBooked": "Cha nel eh er ny choyrt",
+    "cancelledOn": "Currit er {{date}} .",
+    "cancelReason": "Oyr: {{reason}}",
+    "cancelledHint": "Va'n towse er n'yannoo y booking - ta'n eiraght obbreeagh er-gerrey dhyt as ta'n comissoon er n'yannoo ymmyd jeh. T'eh er ny choyrt reesht my t'eh er ny bookaghey reesht."
   },
   "referral": {
     "NOT_REFERRED": "Cha nel eh er ny choyrt (cha nel projekt)",
@@ -166,7 +182,17 @@
       "REFERRAL_ACCEPTED": "Ghow y towshan rish y chur-my-ner",
       "REFERRAL_REJECTED": "Builder y rheynn. Oyr: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Va'n stiureyder er chur magh coadey duplicate t'er n'gholl shaghey. Oyr: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Ta'n stiureyder er n'aashagh cláryssey veih {{from}} gys {{to}} . Oyr: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Ta'n stiureyder er n'aashagh cláryssey veih {{from}} gys {{to}} . Oyr: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Va oirr cláshtaghey daa-heuagh ec co-obbree elley er ny ymmyrkey",
+      "BOOKING_CANCELLED": "Ta'n booking er ny chur da. Oyr: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ta'n eiraght obbreeagh er ny choyrt reesht da'n cho-obbree",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ta'n chommishoon er ny chur magh lesh y booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Reiht y chommishoon son y booking noa",
+      "OWNERSHIP_DISPUTE_RAISED": "Ta co-obbree elley er streeu son eiraght y chustooyr shoh - nee admin Leadrat eh y vriwnys",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Va'n streeu son eieys er y chustooir shoh er ny tharroo - cha nel dty eieys er ny chaghlaa",
+      "OWNERSHIP_DISPUTE_UPHELD": "Va'n streeu son eieaght er y chustooir shoh er ny ath-scrutaghey - ta'n eieaght ayd er ny chowraghey",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Clàrait lurg da dty chreenaght son eiraght ve jeant ayns dty laue. Note: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Va'n coadey er jeet gys jerrey: va streeu son eiraght er ny choyrt gys jerrey son co-obbree elley. Note: {{note}}"
     }
   },
   "columnsPanel": {
@@ -190,5 +216,132 @@
     "INVALID_FOR_COUNTRY": "Cha nel yn earroo çhellvane shoh kiart son {{country}} .",
     "COUNTRY_MISMATCH": "Taght yn code t'ayn cheart.",
     "NOT_MOBILE": "Cur stiagh uimhir phone, cha nee lieh-thallooin."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Comiishoon ymmyrchagh",
+      "PENDING": "Comiishoon ry-gheddyn",
+      "CANCELLED": "Comiishoon er ny scughey"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Currit dhyt",
+      "DISPUTED": "Cur-my-ner"
+    }
+  },
+  "result": {
+    "none": "Cha nel toshiaght cláryssey dy hoilshaghey. Clasht lead y chied cheayrt.",
+    "acceptedTitle": "Lead clàrait",
+    "rejectedTitle": "Lead cha nel eh clàrait",
+    "protectionWindow": "Fuinneig Coadey",
+    "protectedUntil": "Cooilleenit gys",
+    "openLead": "Lead foshlit",
+    "addAnother": "Cur Lead Elley rish",
+    "duplicate": "Duplicate - er ny choadey er-dy-henney",
+    "duplicateHint": "Ta'n customer shoh er ny choadey son y phrojekt shoh liorish clárys elley, shen-y-fa cha b'ee cláryssit son oo.",
+    "existingProtectedUntil": "Ta'n chlashtyn ry-gheddyn coadey derrey 2019."
+  },
+  "disputes": {
+    "title": "My Chreenaght",
+    "intro": "Cooishyn eiraght t'ou er n'yannoo son customeryn v'er nyn dhieeney myr duplicateyn. Ta admin Leadrat ry-reayll gagh un.",
+    "empty": "Cha vel oo er n’yannoo red erbee dy ghra. Mannagh vel customer t'ou er chur stiagh er ny ymmyrkey myr duplicate, t'ou uss goaill rish y red t'ou er chur stiagh.",
+    "columns": {
+      "dispute": "Argane",
+      "reason": "Dty resoon",
+      "outcome": "Eiyrtys"
+    },
+    "status": {
+      "OPEN": "Fo aashaghey",
+      "UPHELD": "Cha nee ayns dty vondeish",
+      "OVERTURNED": "Beaghey ayns dty vondeish",
+      "WITHDRAWN": "Tarroogh"
+    },
+    "awaitingReview": "Ta shin geaishtagh rish ath-scrutaght admin",
+    "openNewLead": "Foshlit dty lead {{id}}",
+    "withdraw": "Cobbarroo",
+    "withdrawConfirm": "Tarroo dty streeu son {{name}} ? Ta'n eiraght nish cummal myr t'eh.",
+    "raise": "Eiraght y streeu",
+    "raiseTitle": "Eiraght y streeu",
+    "raiseHint": "Mannagh daink y customer shoh hood’s ec y toshiaght, soilshee-jee cre’n-fa. Ta admin Leadrat ry-reayll; as my t’ad dy ghra ayns dty veeal, t’eh clàrait son dty veeal.",
+    "reasonLabel": "Cre'n-fa ta'n customer shoh dty?",
+    "reasonMin_one": "Er-y-fa shen {{count}} caracter.",
+    "reasonMin_two": "Caracteryn {{count}} er y chooid sloo.",
+    "reasonMin_few": "Caracteryn {{count}} er y chooid sloo.",
+    "reasonMin_many": "Caracteryn {{count}} er y chooid sloo.",
+    "reasonMin_other": "Caracteryn {{count}} er y chooid sloo.",
+    "submit": "Cur Cooish",
+    "notProtected": "Cha nel dooinney erbee ry-gheddyn coadey er y customer shoh son y phrojekt shoh ny s'anmey - t'ou uss ry-chlashtyn rish y lead anoish.",
+    "raised": "Yn streeu {{id}} er ny choyrt son rieughid.",
+    "viewAll": "Cur-my-ner my streeuyn"
+  },
+  "dashboard": {
+    "title": "Boayrd-dash;",
+    "period": "Abbyrt",
+    "lastDays_one": "{{count}} laa",
+    "lastDays_two": "{{count}} laa",
+    "lastDays_few": "{{count}} laa",
+    "lastDays_many": "{{count}} laa",
+    "lastDays_other": "{{count}} laa",
+    "emptyTitle": "Curmish! Cha nel leads ayd foast.",
+    "emptyHint": "Claare dty chied lead - bee dty pipeline, dty bookings as dty laghyn-coadey ry-akin ec shoh.",
+    "tiles": {
+      "leads": "Leads ooilley",
+      "newInPeriod_one": "{{count}} noa 'sy traa shoh",
+      "newInPeriod_two": "{{count}} noa 'sy traa shoh",
+      "newInPeriod_few": "{{count}} noa 'sy traa shoh",
+      "newInPeriod_many": "{{count}} noa 'sy traa shoh",
+      "newInPeriod_other": "{{count}} noa 'sy traa shoh",
+      "accepted": "Gow rish.",
+      "booked": "Reserved",
+      "bookedInPeriod_one": "{{count}} er ny bookaghey 'sy traa shoh",
+      "bookedInPeriod_two": "{{count}} er ny bookaghey 'sy traa shoh",
+      "bookedInPeriod_few": "{{count}} er ny bookaghey 'sy traa shoh",
+      "bookedInPeriod_many": "{{count}} er ny bookaghey 'sy traa shoh",
+      "bookedInPeriod_other": "{{count}} er ny bookaghey 'sy traa shoh",
+      "conversion": "Reihys",
+      "conversionHint": "Leadsyn bookt myr cooid jeh leadsyn er nyn greeaghey",
+      "protectedNow": "Coadey nish",
+      "expiringSoon_one": "Coadey t'er jeet gys {{count}} laa",
+      "expiringSoon_two": "Coadey t'er jeet gys jerrey ayns {{count}} laa",
+      "expiringSoon_few": "Coadey t'er jeet gys jerrey ayns {{count}} laa",
+      "expiringSoon_many": "Coadey t'er jeet gys jerrey ayns {{count}} laa",
+      "expiringSoon_other": "Coadey t'er jeet gys jerrey ayns {{count}} laa",
+      "disputedNow": "Taitnyssagh ec feallagh elley",
+      "disputedNowHint": "Ta dty stiureyderyn lesh streeu foshlit veih co-obbree elley",
+      "commissionEligible": "Comiishoon ymmyrchagh",
+      "commissionCancelled_one": "{{count}} er ny scughey",
+      "commissionCancelled_two": "{{count}} er ny scughey",
+      "commissionCancelled_few": "{{count}} er ny scughey",
+      "commissionCancelled_many": "{{count}} er ny scughey",
+      "commissionCancelled_other": "{{count}} er ny scughey"
+    },
+    "chart": {
+      "title_one": "Clashtyn as lioaryn gagh laa - laa {{count}} s'jerree",
+      "title_two": "Clashtyn as lioaryn gagh laa - laa {{count}} s'jerree",
+      "title_few": "Clashtyn as lioaryn gagh laa - laa {{count}} s'jerree",
+      "title_many": "Clashtyn as lioaryn gagh laa - laa {{count}} s'jerree",
+      "title_other": "Clashtyn as lioaryn gagh laa - laa {{count}} s'jerree",
+      "registrations": "Clashtyn",
+      "bookings": "Booishyn"
+    },
+    "byStage": "Leads liorish stayd",
+    "bySource": "Leads liorish font",
+    "byReferral": "Leads liorish stayd y rheynn",
+    "myDisputes": "Cooishyn v'ou er n'eiyrt",
+    "noDisputes": "Cha nel streeu erbee er ny hroggal.",
+    "unknown": "Cha nel eh set",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM sheshoil (co-chasley)",
+      "PARTNER_CRM": "Currit rish dty squad",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Co-cheangley",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Ta'n coadey goll er-dy-henney 'sy laa {{count}} er-gerrey",
+    "expiringTitle_two": "Ta'n coadey goll er-dy-henney ayns ny laa {{count}} er-gerrey",
+    "expiringTitle_few": "Ta'n coadey goll er-dy-henney ayns ny laa {{count}} er-gerrey",
+    "expiringTitle_many": "Ta'n coadey goll er-dy-henney ayns ny laa {{count}} er-gerrey",
+    "expiringTitle_other": "Ta'n coadey goll er-dy-henney ayns ny laa {{count}} er-gerrey",
+    "expiringEmpty": "Nish cha nel lead coayl e choadey 'sy vee-chraueeaght shoh."
   }
 }

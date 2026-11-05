@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "適格",
-    "PENDING": "保留中"
+    "PENDING": "保留中",
+    "CANCELLED": "キャンセル"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "重複保護を早期に解除する",
-    "REASSIGN_PARTNER": "別のパートナーに再割り当てする"
+    "REASSIGN_PARTNER": "別のパートナーに再割り当てする",
+    "CANCEL_BOOKING": "予約をキャンセルする"
   },
   "dataType": {
     "TEXT": "文章",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "スーパー管理者",
     "ADMIN": "管理者"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "確認済み",
+    "CANCELLED": "キャンセル"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "帰属",
+    "DISPUTED": "論争中"
+  },
+  "disputeStatus": {
+    "OPEN": "開ける",
+    "UPHELD": "支持される",
+    "OVERTURNED": "ひっくり返った",
+    "WITHDRAWN": "撤回されました"
   }
 }

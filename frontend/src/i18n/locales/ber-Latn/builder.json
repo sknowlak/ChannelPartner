@@ -30,7 +30,8 @@
       "registered": "Yettwasekles"
     },
     "booked": "Yettwajerred",
-    "empty": "Ulac tikciwin ar tura."
+    "empty": "Ulac tikciwin ar tura.",
+    "bookingCancelled": "Asekles yettwabṭel"
   },
   "detail": {
     "customer": "Amsaɣ",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Yettwawekked usmel.",
       "accepted": "Asenqed yettwaqbel.",
-      "rejected": "Asenqed yettwagi."
+      "rejected": "Asenqed yettwagi.",
+      "bookingCancelled": "Asekles yettwabṭel."
     },
-    "backToReferrals": "Tuɣalin ɣer Tiwlafin"
+    "backToReferrals": "Tuɣalin ɣer Tiwlafin",
+    "bookingCancelled": "Asekles yettwabṭel",
+    "cancelBooking": "Bṭel Asekles",
+    "cancelReasonLabel": "Ssebba n usbeddi (yettwasekna i ucrik) *",
+    "cancelBookingHint": "Tabaɣurt n uxeddim tettuɣal ɣer ucrik yerna yettwabṭel lḥeqq-nsen n tmehla. Lead yezmer ad yettwasbedd tikkelt nniḍen sdeffir.",
+    "cancelBookingConfirm": "Bṭel asekles"
   },
   "history": {
     "title": "Amezruy",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Yettwaxleq-d uzref n tesmilt",
       "HANDOVER_COMPLETED": "Aselkem yekfa",
       "ADMIN_PROTECTION_RELEASED": "Admin yessufeɣ-d aḥareb n tneqqiḍt zik. Ssebba: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin yerra-d asekles seg {{from}} ɣer {{to}} . Ssebba: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin yerra-d asekles seg {{from}} ɣer {{to}} . Ssebba: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Aɛraḍ n usekles n tis snat sɣur ucrik nniḍen yettwaqbel",
+      "BOOKING_CANCELLED": "Asekles yettwabṭel. Ssebba: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Tuɣal-d tbaḍnit n uxeddim i ucrik",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ttwabṭel tzemmar n tesmilt s usmel",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Tuɣal-d tzemmar n tesmilt i usmel amaynut"
     }
   }
 }

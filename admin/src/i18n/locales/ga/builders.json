@@ -43,7 +43,9 @@
       "name": "Ainm",
       "city": "Cathair",
       "status": "Stádas",
-      "actions": "Gníomhartha"
+      "actions": "Gníomhartha",
+      "protection": "Cosaint dhúbailte",
+      "matchOn": "Meaitseálann dúbailt ar"
     },
     "closeReferrals": "Dún le haghaidh atreoruithe",
     "reopen": "Athoscail",
@@ -55,6 +57,31 @@
       "add": "Cuir Tionscadal leis",
       "created": "Cruthaithe {{name}} ."
     },
-    "back": "Ar ais go Tógálaithe"
+    "back": "Ar ais go Tógálaithe",
+    "protection": {
+      "days_one": "{{count}} lá",
+      "days_two": "{{count}} lá",
+      "days_few": "{{count}} lá",
+      "days_many": "{{count}} lá",
+      "days_other": "{{count}} lá",
+      "globalDays_one": "Réamhshocrú domhanda ( {{count}} lá)",
+      "globalDays_two": "Réamhshocrú domhanda ( {{count}} lá)",
+      "globalDays_few": "Réamhshocrú domhanda ( {{count}} lá)",
+      "globalDays_many": "Réamhshocrú domhanda ( {{count}} lá)",
+      "globalDays_other": "Réamhshocrú domhanda ( {{count}} lá)",
+      "globalDefault": "Réamhshocrú domhanda",
+      "placeholder": "Laethanta cosanta (folamh = réamhshocrú domhanda)",
+      "saved": "Nuashonraíodh cosaint dhúblach do {{name}} .",
+      "hint": "Cosaint dhúblach: 1-3650 lá, nó fág folamh chun an réamhshocrú domhanda a úsáid ó na Socruithe. Ní bhaineann athrú ach le clárúcháin nua - coinníonn na cinn atá ann cheana a n-éag."
+    },
+    "matching": {
+      "global": "Réamhshocrú domhanda",
+      "globalWith": "Réamhshocrú domhanda ( {{fields}} )",
+      "mobile": "Uimhir fón póca",
+      "email": "Ríomhphost",
+      "both": "Uimhir ghutháin + ríomhphost",
+      "saved": "Nuashonraíodh meaitseáil dhúblach le haghaidh {{name}}",
+      "hint": "Cé na sonraí a fhágann gurb an custaiméir céanna dhá chlárúchán le haghaidh tionscadail. Baineann athruithe le seiceálacha dúblacha as seo amach; ní dhéantar difear don chosaint atá ann cheana féin."
+    }
   }
 }

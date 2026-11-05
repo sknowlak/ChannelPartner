@@ -30,7 +30,8 @@
       "registered": "Mufundisha"
     },
     "booked": "Mufunda",
-    "empty": "Kakuena bantu badi batuma to."
+    "empty": "Kakuena bantu badi batuma to.",
+    "bookingCancelled": "Dilomba diakajika"
   },
   "detail": {
     "customer": "Kiliya",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Difunda diakajadikibua.",
       "accepted": "Dituma didi ditabibua.",
-      "rejected": "Dituma dia bantu dibenga."
+      "rejected": "Dituma dia bantu dibenga.",
+      "bookingCancelled": "Difunda diakajika."
     },
-    "backToReferrals": "Kupingana ku bantu badi batuma"
+    "backToReferrals": "Kupingana ku bantu badi batuma",
+    "bookingCancelled": "Dilomba diakajika",
+    "cancelBooking": "Kulekela dilomba",
+    "cancelReasonLabel": "Bualu bua dishipa (buleja kudi muena mudimu) *",
+    "cancelBookingHint": "Bumfumu bua mudimu budi bupingana kudi muena mudimu ne bukenji buabu bua kupeta makuta budi bujimijibua. Mulombodi udi mua kuikala mufunda kabidi pashishe.",
+    "cancelBookingConfirm": "Imanyika dilomba"
   },
   "history": {
     "title": "Muanu",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Dikumbana dia mudimu diakafukibua",
       "HANDOVER_COMPLETED": "Difila dia bintu dijika",
       "ADMIN_PROTECTION_RELEASED": "Mulombodi wakapatula bukubi bua misangu ibidi kumpala kua dîba. Bualu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Mulombodi wakashintulula difunda dia {{from}} to {{to}} . Bualu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Mulombodi wakashintulula difunda dia {{from}} to {{to}} . Bualu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Diteta dia difunda dia misangu ibidi dia muena mudimu mukuabu diakabenga",
+      "BOOKING_CANCELLED": "Difunda diakajika. Bualu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Bumfumu bua mudimu budi bupingajibua kudi muena mudimu",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Dikumbana dia mudimu didi dijimijibua ne difunda dia muaba",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Bukokeshi bua kupeta makuta budi bupingajibua bua difunda dipiadipia"
     }
   }
 }

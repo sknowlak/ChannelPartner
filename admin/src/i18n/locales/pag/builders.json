@@ -43,7 +43,9 @@
       "name": "Ngaran",
       "city": "Syudad",
       "status": "Kipapasen",
-      "actions": "Saray kiwas"
+      "actions": "Saray kiwas",
+      "protection": "Proteksion ed duplikado",
+      "matchOn": "Saray duplikado et mipara ed"
     },
     "closeReferrals": "Sarado parad saray referral",
     "reopen": "Lukasan lamet",
@@ -55,6 +57,25 @@
       "add": "Idagdag so Proyekto",
       "created": "Ginawa so {{name}} ."
     },
-    "back": "Pawil ed saray Managpaalagey"
+    "back": "Pawil ed saray Managpaalagey",
+    "protection": {
+      "days_one": "{{count}} ya agew",
+      "days_other": "{{count}} ya agew",
+      "globalDays_one": "Global default ( {{count}} ya agew)",
+      "globalDays_other": "Global default ( {{count}} ya agew)",
+      "globalDefault": "Global default",
+      "placeholder": "Saray agew na proteksion (anggapoy karga = global default)",
+      "saved": "In-update so proteksion ed duplicate parad {{name}} .",
+      "hint": "Proteksion ed duplicate: 1-3650 ya agew, odino paulyanan ya anggapoy karga pian nausar so global default manlapud Settings. Say pananguman et onaplika labat ed saray balon rehistrasyon - saray wala la et mansiansian expire."
+    },
+    "matching": {
+      "global": "Global default",
+      "globalWith": "Global default ( {{fields}} )",
+      "mobile": "Numero na telepono",
+      "email": "Email",
+      "both": "Numero na telepono + email",
+      "saved": "In-update so duplicate matching parad {{name}}",
+      "hint": "Anto ran detalye so manggawa ed duaran rehistrasyon ya parehon kustomer parad sakey a proyekto. Saray pananguman et onaplika ed saray duplikadon tseke manlapud natan; ag naapektoan so walan proteksion."
+    }
   }
 }

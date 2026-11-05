@@ -43,7 +43,9 @@
       "name": "Nom",
       "city": "Vila",
       "status": "Estatut",
-      "actions": "Accions"
+      "actions": "Accions",
+      "protection": "Proteccion de doble",
+      "matchOn": "Los dobles correspondon sus"
     },
     "closeReferrals": "Barrar per las referéncias",
     "reopen": "Tornar dobrir",
@@ -55,6 +57,25 @@
       "add": "Apondre un projècte",
       "created": "Creat {{name}} ."
     },
-    "back": "Tornar als constructors"
+    "back": "Tornar als constructors",
+    "protection": {
+      "days_one": "{{count}} jorn",
+      "days_other": "{{count}} jorns",
+      "globalDays_one": "Per defaut global ( {{count}} jorn)",
+      "globalDays_other": "Per defaut global ( {{count}} jorns)",
+      "globalDefault": "Per defaut global",
+      "placeholder": "Jorns de proteccion (vuèg = per defaut global)",
+      "saved": "Proteccion contra doble mesa a jorn per {{name}} .",
+      "hint": "Proteccion de doble : 1-3650 jorns, o daissar vuèg per utilizar lo global per defaut dempuèi los Paramètres. Un cambiament s'aplica sonque a las novèlas inscripcions - las existentas gardan lor expiracion."
+    },
+    "matching": {
+      "global": "Per defaut global",
+      "globalWith": "Per defaut global ( {{fields}} )",
+      "mobile": "Numèro de telefòn mobil",
+      "email": "Corrièl",
+      "both": "Numèro de telefòn mobil + corrièl",
+      "saved": "Correspondéncia en doble mesa a jorn per {{name}}",
+      "hint": "Quins detalhs fan de doas inscripcions lo meteis client per un projècte. Las modificacions s'aplican als verificacions en doble a partir d'ara ; la proteccion existenta es pas afectada."
+    }
   }
 }

@@ -33,7 +33,8 @@
       "registered": "Enrollet"
     },
     "booked": "Prenet",
-    "empty": "N'eus bet kaset ebet c'hoazh."
+    "empty": "N'eus bet kaset ebet c'hoazh.",
+    "bookingCancelled": "Nullet eo bet ar c'houmanant"
   },
   "detail": {
     "customer": "Arval",
@@ -56,9 +57,15 @@
     "notice": {
       "booked": "Kadarnaet eo bet ar c'houmanant.",
       "accepted": "Degemeret eo bet ar c'hemennadenn.",
-      "rejected": "Nac'het eo bet ar c'hemennadenn."
+      "rejected": "Nac'het eo bet ar c'hemennadenn.",
+      "bookingCancelled": "Nullet eo bet ar c'houmanant."
     },
-    "backToReferrals": "Distreiñ d'ar c'hemennadennoù"
+    "backToReferrals": "Distreiñ d'ar c'hemennadennoù",
+    "bookingCancelled": "Nullet eo bet ar c'houmanant",
+    "cancelBooking": "Nullañ ar c'houmanant",
+    "cancelReasonLabel": "Abeg an nullañ (diskouezet d'ar c'heveler) *",
+    "cancelBookingHint": "Distreiñ a ra ar perc'henniezh oberiant d'ar c'hevread ha nullet e vez o gwir da gaout ur gomision. Ar penn a c'hallo bezañ prenet en-dro diwezhatoc'h.",
+    "cancelBookingConfirm": "Nullañ ar c'houmanant"
   },
   "history": {
     "title": "Istor",
@@ -93,7 +100,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Krouet eo bet an aotre da gemer perzh",
       "HANDOVER_COMPLETED": "Echu eo an treuzkas",
       "ADMIN_PROTECTION_RELEASED": "Embannet en deus ar merour gwarez an doublennoù a-raok. Abeg : {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Adlakaet eo bet an enskrivadur gant merour eus {{from}} da {{to}} . Abeg : {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Adlakaet eo bet an enskrivadur gant merour eus {{from}} da {{to}} . Abeg : {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Nac'het eo bet ur c'hlask enskrivañ eilet gant ur c'hevread all",
+      "BOOKING_CANCELLED": "Nullet eo bet ar c'houmanant. Abeg : {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Distreiñ a ra ar perc'henniezh oberiant d'ar c'hevread",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Nullet eo bet ar gopr gant ar c'houmanant",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Adlakaet eo bet ar gwir da gaout ur gomision evit ar c'houmanant nevez"
     }
   }
 }

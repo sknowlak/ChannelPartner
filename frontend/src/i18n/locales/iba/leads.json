@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Ditempah",
-    "pending": "Lubah"
+    "pending": "Lubah",
+    "status": {
+      "CONFIRMED": "Ditempah",
+      "CANCELLED": "Tempahan udah dikinsil"
+    }
   },
   "assign": {
     "unassigned": "Enda diberi",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Nadai projek agi (enda dirujuk)",
-    "notInList": "{{project}} (nadai dalam lis projek)"
+    "notInList": "{{project}} (nadai dalam lis projek)",
+    "protectionDays_one": "{{count}} -hari ngelindung",
+    "protectionDays_other": "{{count}} -hari ngelindung"
   },
   "journey": {
     "customer": "Pelangan",
@@ -76,7 +82,14 @@
     "progressHistory": "Sejarah Penyulut",
     "timesIn": "(jam dalam {{timezone}} )",
     "backToMyLeads": "Pulai ngagai Leads Aku",
-    "editLead": "Ngedit Timbal"
+    "editLead": "Ngedit Timbal",
+    "disputeBanner": "Seiku agi kaling udah belaya hak ngempu pelanggan tu. Seiku admin Leadrat benung meresa iya - pelindung nuan mengkang ba endur iya nyentukka sida mutuska.",
+    "booking": "Tempahan",
+    "commission": "Upah",
+    "notBooked": "Enda dibuking",
+    "cancelledOn": "Dikinsil kena {{date}} .",
+    "cancelReason": "Kebuah: {{reason}}",
+    "cancelledHint": "Orang ke ngaga nya nginsil booking - operasyen ngempu udah pulai enggau nuan lalu kelayakan komisyen dikinsil. Iya dipulaika enti lead nya dibuking baru."
   },
   "referral": {
     "NOT_REFERRED": "Enda dirujuk (nadai projek)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Tukang ngaga nerima rujukan nya",
       "REFERRAL_REJECTED": "Builder nulak rujukan nya. Kebuah: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin ngeluarka duplikat pelindung tumu. Kebuah: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin ngagihka baru pengawa ngerejista ari {{from}} ngagai {{to}} . Kebuah: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin ngagihka baru pengawa ngerejista ari {{from}} ngagai {{to}} . Kebuah: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Uji ngerejista duplikat ari kaling bukai ditulak .",
+      "BOOKING_CANCELLED": "Booking udah dikinsil. Kebuah: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Pengempu operasyen dipulaika ngagai kaling .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kelayakan komisyen dikinsil enggau booking .",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kelayakan komisyen dipulaika baru ungkup booking baru .",
+      "OWNERSHIP_DISPUTE_RAISED": "Seiku agi kaling belaya ngempu pelanggan tu - siku admin Leadrat deka meresa iya .",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Penyarut pengempu ba pelanggan tu ditarit pulai - pengempu nuan enda berubah",
+      "OWNERSHIP_DISPUTE_UPHELD": "Penyarut pengempu ba pelanggan tu udah diperatika baru - pengempu nuan udah disahka",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Direjista sepengudah laya ngempu nuan diputuska bepiak ngagai nuan. Nota: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Pengawa nyaga udah abis: laya ngempu udah diputuska bepiak ngagai kaling bukai. Nota: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Lumur telefon tu enda sah ungkup {{country}} .",
     "COUNTRY_MISMATCH": "Pilih kod menua ti betul.",
     "NOT_MOBILE": "Minta nuan masukka lumur telefon binching, ukai talipaun darat."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisyen ti layak",
+      "PENDING": "Komisyen benung diperundingka",
+      "CANCELLED": "Komisyen dikinsil"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Dikaitka enggau nuan",
+      "DISPUTED": "Atribusyen diperebutka"
+    }
+  },
+  "result": {
+    "none": "Nadai pemutus ngerejista deka dipandangka. Rejista dulu timbal.",
+    "acceptedTitle": "Timbal udah direjista",
+    "rejectedTitle": "Plumbum enda direjista",
+    "protectionWindow": "Jendela Pengelikun",
+    "protectedUntil": "Dijaga Sampai 2019.",
+    "openLead": "Buka Timbal",
+    "addAnother": "Nambahka Siti Agi Lead",
+    "duplicate": "Duplikat - udah dijaga .",
+    "duplicateHint": "Pelanggan tu udah dijaga ke projek tu ngena chara ngerejista bukai, nya alai iya enda ulih direjista ke nuan.",
+    "existingProtectedUntil": "Rejista ke udah bisi dijaga nyentuk ngagai taun 2020."
+  },
+  "disputes": {
+    "title": "Penyarut Aku",
+    "intro": "Penyarut pengempu ti dibantaika nuan ungkup pelanggan ti ditulak nyadi duplikat. Seiku admin Leadrat meresa tiap iti.",
+    "empty": "Nuan nadai mantaika sebarang laya. Enti pelanggan ti dibai nuan ditulak nyadi duplikat, nuan tau nyakal nya ari pemutus ngerejista.",
+    "columns": {
+      "dispute": "Ngelaban",
+      "reason": "Kebuah nuan",
+      "outcome": "Pengujung"
+    },
+    "status": {
+      "OPEN": "Benung diperesa",
+      "UPHELD": "Enda bepiak ngagai nuan .",
+      "OVERTURNED": "Diputuska bepiak ngagai nuan .",
+      "WITHDRAWN": "Ditarit pulai"
+    },
+    "awaitingReview": "Nganti review ari admin",
+    "openNewLead": "Buka timbal nuan {{id}}",
+    "withdraw": "Mansutka",
+    "withdrawConfirm": "Narit pulai laya nuan ke {{name}} ? Pengempu ke diatu mengkang baka ke diatu.",
+    "raise": "Penyarut pasal pengempu",
+    "raiseTitle": "Penyarut pasal pengempu",
+    "raiseHint": "Enti pelanggan tu datai ngagai nuan dulu, terangka kebuah. Seiku admin Leadrat deka meresa iya; enti sida mutuska bepiak ngagai nuan, timbal nya direjista ke nuan.",
+    "reasonLabel": "Nama kebuah pelanggan tu enggi nuan?",
+    "reasonMin_one": "Sekurang-kurang iya urup {{count}} .",
+    "reasonMin_other": "Sekurang-kurang iya {{count}} urup.",
+    "submit": "Nganjung Penyarut",
+    "notProtected": "Nadai orang megai lindung ba pelanggan tu ke projek tu agi - nuan tau ngerejista lead diatu.",
+    "raised": "Penyarut {{id}} dianjung ngambika diperatika baru.",
+    "viewAll": "Peda penyarut aku"
+  },
+  "dashboard": {
+    "title": "Papan pemuka",
+    "period": "Timpuh",
+    "lastDays_one": "{{count}} hari",
+    "lastDays_other": "{{count}} hari",
+    "emptyTitle": "Selamat datai! Nuan bedau bisi timbal.",
+    "emptyHint": "Rejista lead keterubah nuan - pipeline, booking enggau haribulan pelindung nuan deka ayan ditu.",
+    "tiles": {
+      "leads": "Penyampau timbal",
+      "newInPeriod_one": "{{count}} baru dalam timpuh tu",
+      "newInPeriod_other": "{{count}} baru dalam timpuh tu",
+      "accepted": "Diterima",
+      "booked": "Ditempah",
+      "bookedInPeriod_one": "{{count}} udah dibukut dalam timpuh tu",
+      "bookedInPeriod_other": "{{count}} udah dibukut dalam timpuh tu",
+      "conversion": "Pengawa nukar",
+      "conversionHint": "Lead ti udah dibukut nyadi bagi ari lead ti diterima .",
+      "protectedNow": "Dijaga diatu",
+      "expiringSoon_one": "Pengelikun ti tembu ba hari {{count}}",
+      "expiringSoon_other": "Pengelikun ti tembu ba {{count}} hari",
+      "disputedNow": "Dipertalatka orang bukai .",
+      "disputedNowHint": "Leads nuan enggau laya pengempu tebuka ari kaling bukai .",
+      "commissionEligible": "Komisyen ti layak",
+      "commissionCancelled_one": "{{count}} dikinsil",
+      "commissionCancelled_other": "{{count}} dikinsil"
+    },
+    "chart": {
+      "title_one": "Pengawa ngerejista enggau booking sehari - hari {{count}} kepenudi",
+      "title_other": "Pengawa ngerejista enggau booking sehari - {{count}} hari kepenudi",
+      "registrations": "Pengawa ngerejista",
+      "bookings": "Tempahan"
+    },
+    "byStage": "Ngiring nitihka status",
+    "bySource": "Ngiring nitihka pun penatai",
+    "byReferral": "Ngiring nitihka status rujukan",
+    "myDisputes": "Penyarut ti dibantaika nuan",
+    "noDisputes": "Nadai penyarut dibantaika.",
+    "unknown": "Enda diatur",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM luar (tiru)",
+      "PARTNER_CRM": "Ditambah enggau tim nuan",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Penyerakup",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Pengelikun abis timpuh dalam {{count}} hari ti nangkanka nya",
+    "expiringTitle_other": "Pengelikun abis timpuh dalam {{count}} hari ti deka datai",
+    "expiringEmpty": "Nadai plumbum lenyau pelindung iya ba jenila tu."
   }
 }

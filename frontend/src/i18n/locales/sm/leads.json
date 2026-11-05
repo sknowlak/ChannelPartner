@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Tusia",
-    "pending": "Faatalitali"
+    "pending": "Faatalitali",
+    "status": {
+      "CONFIRMED": "Tusia",
+      "CANCELLED": "Ua faaleaogaina tusi"
+    }
   },
   "assign": {
     "unassigned": "Le tofiaina",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Leai se poloketi (e le'i ta'ua)",
-    "notInList": "{{project}} (e le o iai i le lisi o galuega)"
+    "notInList": "{{project}} (e le o iai i le lisi o galuega)",
+    "protectionDays_one": "{{count}} -aso puipuiga",
+    "protectionDays_other": "{{count}} -aso puipuiga"
   },
   "journey": {
     "customer": "Tagata fa'atau",
@@ -76,7 +82,14 @@
     "progressHistory": "Talafaasolopito o le Alualu i Luma",
     "timesIn": "(taimi ile {{timezone}} )",
     "backToMyLeads": "Toe fo'i i O'u Ta'ita'i",
-    "editLead": "Fa'asa'o Ta'ita'i"
+    "editLead": "Fa'asa'o Ta'ita'i",
+    "disputeBanner": "O le isi paaga ua finau i le umiaina o lenei tagata faatau. O lo'o toe iloiloina e le pule Leadrat - e tumau pea lau puipuiga se'ia latou filifili.",
+    "booking": "Tusitala",
+    "commission": "Komisi",
+    "notBooked": "E le'i tusi",
+    "cancelledOn": "Fa'aleaogaina ile {{date}} .",
+    "cancelReason": "Mafuaaga: {{reason}}",
+    "cancelledHint": "Ua faaleaogaina e le faufale le tusi - ua toe fo'i mai le pule fa'atino ma oe ma ua fa'aleaogaina le agava'a o le komisi. E toe fa'afo'i pe a toe tusi le ta'imua."
   },
   "referral": {
     "NOT_REFERRED": "Le fa'ailoa (leai se poloketi)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Na talia e le Faufale le faasinomaga",
       "REFERRAL_REJECTED": "Na teena e le Faufale le faasinomaga. Mafuaaga: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Na vave fa'amatu'u atu e le pule fa'alua puipuiga. Mafuaaga: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Pule toe tofia le resitala mai {{from}} i {{to}} . Mafuaaga: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Pule toe tofia le resitala mai {{from}} i {{to}} . Mafuaaga: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "O se taumafaiga e lesitala faalua a se isi paaga na teena",
+      "BOOKING_CANCELLED": "Ua faaleaogaina tusi. Mafuaaga: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Na toe fa'afo'i le pule fa'atino i le paaga",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Fa'aleaogaina le agava'a i le komisi i le fa'aagaga",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Toe fa'afo'isia le agava'a a le Komisi mo le resitalaina fou",
+      "OWNERSHIP_DISPUTE_RAISED": "O le isi paaga na finauina le umiaina o lenei tagata faatau - o le a toe iloiloina e le pulega Leadrat",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Ua faaui i tua le feeseeseaiga o le umiaina o lenei tagata faatau - e le suia lau pule",
+      "OWNERSHIP_DISPUTE_UPHELD": "O le finauga o le umiaina o lenei tagata faatau na toe iloiloina - ua faamaonia lou umiaina",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Fa'amauina ina ua mae'a lau fa'ai'uga o lou pule. Manatua: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Na fa'ai'u le puipuiga: na fa'ai'uina se fe'ese'esea'iga o le pule i se isi paaga. Manatua: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "O lenei numera telefoni e le aoga mo {{country}} .",
     "COUNTRY_MISMATCH": "Fa'amolemole filifili le fa'ailoga sa'o a le atunu'u.",
     "NOT_MOBILE": "Fa'amolemole tu'u se numera feavea'i, ae le o se laina telefoni."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "E agavaa i le Komisi",
+      "PENDING": "Komisi o lo'o fa'atali",
+      "CANCELLED": "Ua faaleaogaina le Komisi"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Fa'atatau ia te oe",
+      "DISPUTED": "Fa'ailoga ua finauina"
+    }
+  },
+  "result": {
+    "none": "Leai se fa'ai'uga resitala e fa'aalia. Resitala muamua se ta'ita'i.",
+    "acceptedTitle": "Ta'ita'i resitalaina",
+    "rejectedTitle": "Le ta'ita'i e le'i resitalaina",
+    "protectionWindow": "Faamalama Puipuiga",
+    "protectedUntil": "Puipuia Seia",
+    "openLead": "Tatala Ta'ita'i",
+    "addAnother": "Faaopoopo i ai se isi Ta'ita'i",
+    "duplicate": "Fa'alua - ua uma ona puipuia",
+    "duplicateHint": "O lenei tagata fa'atau ua uma ona puipuia mo lenei poloketi e se isi resitala, ina ia le mafai ona resitalaina mo oe.",
+    "existingProtectedUntil": "Le resitalaina oi ai nei puipuia se'ia"
+  },
+  "disputes": {
+    "title": "O'u Feeseesea'iga",
+    "intro": "O fe'ese'esea'iga o le pule na e laga mo tagata fa'atau na teena o ni fa'alua. E toe iloilo e le pulega Leadrat ia mea taitasi.",
+    "empty": "E te lei lagaina ni feeseeseaiga. Afai e te'ena se tagata fa'atau na e aumai i totonu e fai ma fa'alua, e mafai ona e finauina mai le fa'ai'uga o le resitala.",
+    "columns": {
+      "dispute": "Feeseeseaiga",
+      "reason": "O lau mafuaaga",
+      "outcome": "Taunuuga"
+    },
+    "status": {
+      "OPEN": "I lalo o le iloiloga",
+      "UPHELD": "E le fiafia ia te oe",
+      "OVERTURNED": "Filifili i lou finagalo",
+      "WITHDRAWN": "Aveesea"
+    },
+    "awaitingReview": "Faatalitali mo se iloiloga a le pulega",
+    "openNewLead": "Tatala lau ta'ita'i {{id}}",
+    "withdraw": "Aveese",
+    "withdrawConfirm": "Aveese lau finauga mo {{name}} ? O lo'o tumau pea le pule o lo'o iai nei.",
+    "raise": "Feeseesea'i le pule",
+    "raiseTitle": "Feeseesea'i le pule",
+    "raiseHint": "Afai na muamua sau lenei tagata faatau ia te oe, faamatala pe aisea. O le a toe iloiloina e le pulega Leadrat ; afai latou te filifili mo oe, o le taʻitaʻi ua lesitala mo oe.",
+    "reasonLabel": "Aisea ua avea ai lenei tagata faatau ma oe?",
+    "reasonMin_one": "Le itiiti ifo {{count}} uiga.",
+    "reasonMin_other": "Le itiiti ifo {{count}} mataitusi.",
+    "submit": "Auina atu Feeseeseaiga",
+    "notProtected": "E leai se isi na te toe puipuia lenei tagata fa'atau mo lenei poloketi - e mafai ona e lesitala le ta'imua i le taimi nei.",
+    "raised": "Feeseesea'iga {{id}} lafo mo se iloiloga.",
+    "viewAll": "Va'ai i a'u finauga"
+  },
+  "dashboard": {
+    "title": "Laupapa laupapa",
+    "period": "Vaitaimi",
+    "lastDays_one": "{{count}} aso",
+    "lastDays_other": "{{count}} aso",
+    "emptyTitle": "Afio mai! E leai sau ta'ita'iga i le taimi nei.",
+    "emptyHint": "Resitala lau ta'ita'i muamua - o lau paipa, tusi resitala ma taimi fa'agata ole puipuiga ole a fa'aalia iinei.",
+    "tiles": {
+      "leads": "Aofa'i ta'ita'i",
+      "newInPeriod_one": "{{count}} fou i lenei vaitau",
+      "newInPeriod_other": "{{count}} fou i lenei vaitau",
+      "accepted": "Taliaina",
+      "booked": "Tusia",
+      "bookedInPeriod_one": "{{count}} tusi i lenei vaitaimi",
+      "bookedInPeriod_other": "{{count}} tusi i lenei vaitaimi",
+      "conversion": "Liua",
+      "conversionHint": "Fa'atusi ta'ita'i o se fa'asoa o ta'ita'i talia",
+      "protectedNow": "Puipuia nei",
+      "expiringSoon_one": "Puipuiga e muta ile {{count}} aso",
+      "expiringSoon_other": "Puipuiga e muta ile {{count}} aso",
+      "disputedNow": "Ua finauina e isi",
+      "disputedNowHint": "O lau ta'ita'i ma se fe'ese'esea'iga o le pule fa'aalia mai se isi paaga",
+      "commissionEligible": "E agavaa i le Komisi",
+      "commissionCancelled_one": "{{count}} faaleaogaina",
+      "commissionCancelled_other": "{{count}} faaleaogaina"
+    },
+    "chart": {
+      "title_one": "Lesitala ma tusi i le aso - {{count}} aso mulimuli",
+      "title_other": "Lesitala ma tusi i le aso - {{count}} aso mulimuli",
+      "registrations": "Fa'amauina",
+      "bookings": "Tusitala"
+    },
+    "byStage": "E ta’ita’i i tulaga",
+    "bySource": "E ta'ita'i ile puna",
+    "byReferral": "Ta'ita'i ile tulaga fa'asino",
+    "myDisputes": "Feeseesea'iga na e laga",
+    "noDisputes": "E leai ni feeseeseaiga na laga.",
+    "unknown": "E le'i setiina",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM fafo (fa'ata'ita'i)",
+      "PARTNER_CRM": "Fa'aopoopo e lau 'au",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Tuufaatasiga",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Puipuiga e muta i le isi {{count}} aso",
+    "expiringTitle_other": "Puipuiga e muta i le isi {{count}} aso",
+    "expiringEmpty": "E leai se ta'ita'i e leiloa lona puipuiga i lenei fa'amalama."
   }
 }

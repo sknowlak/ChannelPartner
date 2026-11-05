@@ -49,8 +49,73 @@
       "newPartnerId": "ID Mitra Baru",
       "reason": "Alasan (wajib)",
       "apply": "Terapkan Penggantian",
-      "applying": "Melamar..."
+      "applying": "Melamar...",
+      "cancelBookingHint": "Pembatalan menandai pemesanan dan komisinya sebagai dibatalkan, mengembalikan kepemilikan operasional kepada mitra, dan memungkinkan pembuat memesan prospek ini lagi.",
+      "cancelBookingConfirm": "Batalkan pemesanan ini? Komisinya juga dibatalkan. Ini dicatat dengan nama dan alasan Anda."
     },
-    "timelineTitle": "Timeline Audit (pendaftaran ini)"
+    "timelineTitle": "Timeline Audit (pendaftaran ini)",
+    "bookingStatus": "Status Pemesanan",
+    "commissionAttribution": "Atribusi Komisi",
+    "disputeOpen": "Sengketa kepemilikan terbuka pada pelanggan ini - mitra lain mengatakan bahwa itu adalah milik mereka. Diputuskan di halaman Sengketa.",
+    "viewDisputes": "Lihat perselisihan",
+    "cancellation": {
+      "title": "Pemesanan dibatalkan",
+      "hint": "Pemesanan dan komisinya dibatalkan; kepemilikan operasional kembali pada mitra dan pembangun dapat memesan petunjuk ini lagi.",
+      "at": "Dibatalkan pada",
+      "by": "Dibatalkan oleh",
+      "reason": "Alasan"
+    }
+  },
+  "disputes": {
+    "title": "Sengketa Kepemilikan",
+    "hint": "Mitra yang pendaftarannya ditolak sebagai duplikat dapat mempermasalahkan siapa pemilik pelanggan tersebut. Tinjau kedua sisi dan putuskan.",
+    "statusFilter": "Status sengketa",
+    "allStatuses": "Semua status",
+    "empty": "Tidak ada perselisihan dengan status ini.",
+    "columns": {
+      "dispute": "Sengketa",
+      "customer": "Pelanggan",
+      "project": "Proyek",
+      "raisedBy": "Dibesarkan oleh",
+      "heldBy": "Pemilik saat ini",
+      "status": "Status",
+      "raisedAt": "Dibesarkan"
+    },
+    "detail": {
+      "title": "Sengketa {{id}}",
+      "raisedOn": "Dibangkitkan pada {{date}}",
+      "raisingTitle": "Dibesarkan oleh",
+      "holderTitle": "Pemilik saat ini",
+      "partner": "Mitra",
+      "raisedBy": "Dikirim oleh",
+      "customerName": "Pelanggan",
+      "mobile": "Seluler",
+      "alternateMobile": "Ponsel alternatif",
+      "email": "E-mail",
+      "project": "Proyek",
+      "reason": "Alasan mereka",
+      "registration": "Pendaftaran",
+      "registeredAt": "Terdaftar pada",
+      "referral": "Rujukan",
+      "heldMissing": "Pendaftaran yang diadakan tidak dapat ditemukan.",
+      "resolutionTitle": "Keputusan",
+      "outcome": "Hasil",
+      "note": "Catatan",
+      "decidedBy": "Diputuskan oleh",
+      "decidedAt": "Memutuskan",
+      "newRegistration": "Pendaftaran baru",
+      "decideTitle": "Selesaikan perselisihan ini",
+      "noteLabel": "Catatan yang menjelaskan keputusan (wajib)",
+      "noteRequired": "Tulis catatan untuk memutuskan.",
+      "uphold": "Menegakkan",
+      "overturn": "Menggulingkan",
+      "upholdEffect": "{{holder}} mempertahankan pelanggan. Perselisihan telah ditutup dan tidak ada perubahan lain.",
+      "overturnEffect": "Perlindungan duplikat {{holder}} berakhir sekarang dan pelanggan terdaftar untuk {{partner}} sebagai pendaftaran baru.",
+      "heldBookedHelp": "Pelanggan ini dipesan melalui pemilik saat ini. Batalkan pemesanan tersebut terlebih dahulu (Admin Override pada pendaftaran), lalu batalkan:",
+      "confirmTitle": "Apa kamu yakin?",
+      "confirmUphold": "Ya, pertahankan",
+      "confirmOverturn": "Ya, terbalik",
+      "back": "Kembali ke Perselisihan"
+    }
   }
 }

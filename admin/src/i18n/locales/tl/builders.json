@@ -43,7 +43,9 @@
       "name": "Pangalan",
       "city": "lungsod",
       "status": "Katayuan",
-      "actions": "Mga aksyon"
+      "actions": "Mga aksyon",
+      "protection": "Duplicate na proteksyon",
+      "matchOn": "Naka-on ang mga duplicate"
     },
     "closeReferrals": "Isara para sa mga referral",
     "reopen": "Muling buksan",
@@ -55,6 +57,25 @@
       "add": "Magdagdag ng Proyekto",
       "created": "Nilikha {{name}} ."
     },
-    "back": "Bumalik sa Mga Tagabuo"
+    "back": "Bumalik sa Mga Tagabuo",
+    "protection": {
+      "days_one": "{{count}} araw",
+      "days_other": "{{count}} araw",
+      "globalDays_one": "Global default ( {{count}} araw)",
+      "globalDays_other": "Global default ( {{count}} na araw)",
+      "globalDefault": "Global default",
+      "placeholder": "Mga araw ng proteksyon (walang laman = global default)",
+      "saved": "Na-update ang duplicate na proteksyon para kay {{name}} .",
+      "hint": "Duplicate na proteksyon: 1-3650 araw, o iwanang walang laman upang magamit ang pandaigdigang default mula sa Mga Setting. Nalalapat lang ang isang pagbabago sa mga bagong pagpaparehistro - pinapanatili ng mga umiiral na ang kanilang pag-expire."
+    },
+    "matching": {
+      "global": "Global default",
+      "globalWith": "Global default ( {{fields}} )",
+      "mobile": "Numero ng mobile",
+      "email": "Email",
+      "both": "Numero ng mobile + email",
+      "saved": "Na-update ang duplicate na pagtutugma para kay {{name}}",
+      "hint": "Aling mga detalye ang gumagawa ng dalawang pagpaparehistro sa parehong customer para sa isang proyekto. Nalalapat ang mga pagbabago sa mga duplicate na tseke mula ngayon; hindi apektado ang kasalukuyang proteksyon."
+    }
   }
 }

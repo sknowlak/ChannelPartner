@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Inniminniisoqarsimavoq",
-    "pending": "Utaqqivoq"
+    "pending": "Utaqqivoq",
+    "status": {
+      "CONFIRMED": "Inniminniisoqarsimavoq",
+      "CANCELLED": "Inniminniineq unitsinneqarpoq"
+    }
   },
   "assign": {
     "unassigned": "Atorfinitsinneqanngilaq",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Suli suliniuteqanngilaq (nassuiarneqanngilaq)",
-    "notInList": "{{project}} (projekt-ip allattorsimaffianiinngilaq)"
+    "notInList": "{{project}} (projekt-ip allattorsimaffianiinngilaq)",
+    "protectionDays_one": "{{count}} -ullormut illersuineq",
+    "protectionDays_other": "{{count}} -ullormut illersuineq"
   },
   "journey": {
     "customer": "Sullitaq",
@@ -76,7 +82,14 @@
     "progressHistory": "Ineriartorneq Oqaluttuassartaq",
     "timesIn": "(piffissat {{timezone}} )",
     "backToMyLeads": "Taarsiullugu Uanga Leads-inut",
-    "editLead": "Lead-imik allanngortitsineq"
+    "editLead": "Lead-imik allanngortitsineq",
+    "disputeBanner": "Suleqatigiissitap allap ataasiakkaamut tassunga piginnittuunera isumaqatigiinngissutigaa. Leadrat admin-ip nalilersorpaa - illersuinerit aalajangernissaasa tungaanut inissisimavoq.",
+    "booking": "Inniminniineq",
+    "commission": "Pisassat",
+    "notBooked": "Inniminniinngilaq",
+    "cancelledOn": "Ulloq {{date}} unitsinneqarpoq.",
+    "cancelReason": "Pissutaasoq: {{reason}}",
+    "cancelledHint": "Sanaartortup inniminniineq unitsippaa - ingerlatsinermi piginnittuuneq ilinnut uteqqippoq aamma kommissionimut pisinnaatitaaffiit unitsinneqarput. Taanna iluarsineqartarpoq lead-i bookerneqaqqippat."
   },
   "referral": {
     "NOT_REFERRED": "Nassuiarneqanngilaq (projekteqanngilaq)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Builder-ip nassiussaq akuersaarpaa",
       "REFERRAL_REJECTED": "Builder-ip nassiussaq itigartitsissutigaa. Pissutaasoq: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Adminip marloqiusamik illersuineq siusinnerusukkut saqqummiuppaa. Pissutaasoq: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin-ip allattorsimaffik {{from}} -imiit {{to}} mut allanngortippaa. Pissutaasoq: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin-ip allattorsimaffik {{from}} -imiit {{to}} mut allanngortippaa. Pissutaasoq: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Suleqatigiissitamit allamit marloqiusamik nalunaarsorneqarnissamik misileraaneq itigartinneqarpoq",
+      "BOOKING_CANCELLED": "Inniminniineq unitsinneqarpoq. Pissutaasoq: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ingerlatsinermi piginnittuuneq suleqatigisamut uteqqippoq",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kommissionimut pisinnaatitaaffik inniminniinermi unitsinneqarpoq",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kommissionimut pisinnaatitaaffiit nutaamik inniminniinermut taarserneqarput",
+      "OWNERSHIP_DISPUTE_RAISED": "Suleqatigiissitap allap ataasiakkaap piginnittuunera uppernarsarpaa - Leadrat admin-ip tamanna nalilersortussaavaa",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Ataasiakkaaq taanna pillugu piginnittussaanermut isumaqatigiinnginneq unitsinneqarpoq - piginnittuunerit allanngortinneqanngilaq",
+      "OWNERSHIP_DISPUTE_UPHELD": "Ataasiakkaaq una pillugu piginnittussaanermut isumaqatigiinnginneq nalilersorneqarpoq - piginnittuunerit uppernarsarneqarpoq",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Piginnittuunermut isumaqatigiinnginnerit illit iluaqutigalugu aalajangerneqarmat nalunaarsorneqarpoq. Maluginiaruk: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Illersuineq naammappoq: piginnittussaanermut isumaqatigiinnginneq suleqatigisamut allamut iluaqutaasumik aalajangerneqarpoq. Maluginiaruk: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Oqarasuaatip normua una {{country}} -mut atuutinngilaq.",
     "COUNTRY_MISMATCH": "Nunap normua eqqortoq toqqaruk.",
     "NOT_MOBILE": "Mobilnummeri allaguk, nunap iluani telefoniunngitsoq."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Kommissioni pisinnaasoq",
+      "PENDING": "Kommissioni utaqqivoq",
+      "CANCELLED": "Kommissioni unitsinneqarpoq"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Ilinnut tunngatinneqarpoq",
+      "DISPUTED": "Attribution isumaqatigiinngissutigineqarpoq"
+    }
+  },
+  "result": {
+    "none": "Allattorsimaffimmi inerneq takutinneqarsinnaanngilaq. Siullermik lead-imik nalunaarsuigit.",
+    "acceptedTitle": "Bly nalunaarsorneqarpoq",
+    "rejectedTitle": "Bly nalunaarsorneqanngilaq",
+    "protectionWindow": "Illersuinermut Igalaaq",
+    "protectedUntil": "Illersugaavoq Tilillugu",
+    "openLead": "Avammut Lead",
+    "addAnother": "Allamik Lead-imik ilanngussaq",
+    "duplicate": "Duplikat - illersorneqareersoq",
+    "duplicateHint": "Ataasiakkaaq taanna suliamut tassunga allamik nalunaarsuinermik illersorneqareerpoq, taamaattumik ilinnut nalunaarsorneqarsinnaasimanngilaq.",
+    "existingProtectedUntil": "Allattorsimaffik pioreersoq illersorneqartoq tikillugu"
+  },
+  "disputes": {
+    "title": "Uanga Akerleriissutit",
+    "intro": "Piginnittuunermut isumaqatigiinnginnerit ataasiakkaanut saqqummiussimasatit, taakku marloqiusatut itigartinneqarput. Leadrat admin-ip ataasiakkaat nalilersortarpai.",
+    "empty": "Illit isumaqatigiinnginnernik saqqummiussisimanngilatit. Ataatsimiititaliaq tikissimasat marloqiusamik itigartinneqarpat, nalunaarsuinermi inernermit uppernarsarsinnaavat.",
+    "columns": {
+      "dispute": "Assortorpaa",
+      "reason": "Illit pissutaasoq",
+      "outcome": "Inernera"
+    },
+    "status": {
+      "OPEN": "Allatut oqaatigalugu",
+      "UPHELD": "Illit iluaqutaanngilaq",
+      "OVERTURNED": "Illit iluaqutaasumik aalajangerneqarpoq",
+      "WITHDRAWN": "Utertinneqarpoq"
+    },
+    "awaitingReview": "Admin-imik nalilersuineq utaqqivara",
+    "openNewLead": "Siulersuisoq {{id}} ammaruk",
+    "withdraw": "Tingusineq",
+    "withdrawConfirm": "{{name}} pillugu isumaqatigiinnginnerit tunuartikkit ? Ullumikkut piginnittuuneq taamatut inissisimavoq.",
+    "raise": "Piginnittuuneq pillugu isumaqatigiinnginneq",
+    "raiseTitle": "Piginnittuuneq pillugu isumaqatigiinnginneq",
+    "raiseHint": "Ataasiakkaaq taanna siullermik ilinnut tikissimappat, sooq taamaattoqarnersoq nassuiarlugu. Leadrat admin-ip taanna nalilersortussaavaa; illit iluaqutissatut aalajangissappata, aqutsisoq ilinnut nalunaarsorneqartarpoq.",
+    "reasonLabel": "Sooq una ataasiakkaaq illit pigiviuk?",
+    "reasonMin_one": "Minnerunngitsumik {{count}} karakteri.",
+    "reasonMin_other": "Minnerpaamik {{count}} allagartat.",
+    "submit": "Nassiuk Akerleriissuteqarneq",
+    "notProtected": "Kikkulluunniit suliniummut tassunga ataasiakkaamut illersuisumik tigummigallarneq ajorput - lead-imik maanna nalunaarsinnaavutit.",
+    "raised": "Suliaq {{id}} nassiunneqarpoq nalilersorneqartussanngorlugu.",
+    "viewAll": "Uanga isumaqatigiinnginnerit takukkit"
+  },
+  "dashboard": {
+    "title": "Instrumentbordi",
+    "period": "Piffissaq",
+    "lastDays_one": "{{count}} ulloq",
+    "lastDays_other": "{{count}} ullut",
+    "emptyTitle": "Tikilluarit! Suli lead-inik peqanngilatit.",
+    "emptyHint": "Siullermik lead-it nalunaarutigiuk - pilersaarusiat, inniminniinerit aamma illersuinermut piffissarititat uani takuneqarsinnaapput.",
+    "tiles": {
+      "leads": "Katillugit lead-it",
+      "newInPeriod_one": "{{count}} piffissami tassani nutaaq",
+      "newInPeriod_other": "{{count}} piffissami tassani nutaaq",
+      "accepted": "Akuerineqarpoq",
+      "booked": "Inniminniisoqarsimavoq",
+      "bookedInPeriod_one": "{{count}} piffissami tassani inniminnigaavoq",
+      "bookedInPeriod_other": "{{count}} piffissami tassani inniminnigaavoq",
+      "conversion": "Allanngortitsineq",
+      "conversionHint": "Lead-it booked-it akuerineqarsimasut lead-it ilaattut",
+      "protectedNow": "Illersorneqarpoq maanna",
+      "expiringSoon_one": "Illersuineq ulloq {{count}} -mi naggaserneqartoq",
+      "expiringSoon_other": "Illersuineq ulluni {{count}} ini naggaserneqartoq",
+      "disputedNow": "Allanit isumaqatigineqartoq",
+      "disputedNowHint": "Suleqatigiissitamit allamit avammut piginnittunngortitsinermik isumaqatigiinnginnermik siuttuuvutit",
+      "commissionEligible": "Kommissioni pisinnaasoq",
+      "commissionCancelled_one": "{{count}} unitsinneqarpoq",
+      "commissionCancelled_other": "{{count}} unitsinneqarpoq"
+    },
+    "chart": {
+      "title_one": "Ullormut nalunaarnerit aamma inniminniinerit - ulloq kingulleq {{count}}",
+      "title_other": "Ullormut nalunaarnerit aamma inniminniinerit - ullut kingulliit {{count}}",
+      "registrations": "Allattorsimaffiit",
+      "bookings": "Inniminniinerit"
+    },
+    "byStage": "Status malillugu siuttuuvoq",
+    "bySource": "Killeq malillugu aqutsivoq",
+    "byReferral": "Nassiussassanik statusikkut aqutsivoq",
+    "myDisputes": "Isumaqatigiinnginnerit saqqummiussimasatit",
+    "noDisputes": "Isumaqatigiinnginnerit saqqummiunneqanngillat.",
+    "unknown": "Set-inngilaq",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM avataaniittoq (simulerineqartoq)",
+      "PARTNER_CRM": "Teamimit ilanngunneqarpoq",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Ataatsimoortitsineq",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Illersuineq ulloq tulliuttoq {{count}} atuutissaaq",
+    "expiringTitle_other": "Illersuineq ulluni tulliuttuni {{count}} atuutissaaq",
+    "expiringEmpty": "Arlaannaalluunniit igalaami tassani illersorneqarnera annaavaa."
   }
 }

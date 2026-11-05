@@ -65,6 +65,10 @@ client.interceptors.response.use(
 // routes this app used to call were removed (section 52).
 export const login = (username, password) => client.post('/partners/login', { username, password });
 export const listMyLeads = () => client.get('/my/registrations');
+// Ends this session on the server too (section 62), so the token stops
+// working even if it was copied off the device. Best effort: signing out
+// locally must never wait on or fail because of the network.
+export const logoutOnServer = () => client.post('/my/logout', null, { timeout: 5000 }).catch(() => {});
 // retryKey: one value per filled-in form, so a timeout retry or a double tap
 // replays the first result instead of being rejected as our own duplicate.
 export const createLead = (payload, retryKey) =>

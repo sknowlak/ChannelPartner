@@ -33,7 +33,8 @@
       "registered": "Clàrait"
     },
     "booked": "Reserved",
-    "empty": "Cha nel referral erbee foast."
+    "empty": "Cha nel referral erbee foast.",
+    "bookingCancelled": "Ta'n booking er ny scughey"
   },
   "detail": {
     "customer": "Custymeyr",
@@ -56,9 +57,15 @@
     "notice": {
       "booked": "Booking er ny chowraghey.",
       "accepted": "Ta'n rheynn er ny ghoaill stiagh.",
-      "rejected": "Referral er ny ymmyrkey."
+      "rejected": "Referral er ny ymmyrkey.",
+      "bookingCancelled": "Ta'n booking er ny chur da."
     },
-    "backToReferrals": "Arraght gys Reihys"
+    "backToReferrals": "Arraght gys Reihys",
+    "bookingCancelled": "Ta'n booking er ny scughey",
+    "cancelBooking": "Cur-my-ner",
+    "cancelReasonLabel": "Reason son y scughey (soilshaghey da'n cho-obbree) *",
+    "cancelBookingHint": "Ta'n eiraght obbreeagh goll er-gerrey da'n cho-obbree as ta'n aght-obbraghey oc er ny scughey. Ta'n lead ry-bookey reesht lurg shen.",
+    "cancelBookingConfirm": "Cur stiagh y booking"
   },
   "history": {
     "title": "Shennaghys",
@@ -93,7 +100,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Creeaght y Chommishoon",
       "HANDOVER_COMPLETED": "Cur-my-ner",
       "ADMIN_PROTECTION_RELEASED": "Va'n stiureyder er chur magh coadey duplicate t'er n'gholl shaghey. Oyr: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Ta'n stiureyder er n'aashagh cláryssey veih {{from}} gys {{to}} . Oyr: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Ta'n stiureyder er n'aashagh cláryssey veih {{from}} gys {{to}} . Oyr: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Va oirr cláshtaghey daa-heuagh ec co-obbree elley er ny ymmyrkey",
+      "BOOKING_CANCELLED": "Ta'n booking er ny chur da. Oyr: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ta'n eiraght obbreeagh er ny choyrt reesht da'n cho-obbree",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ta'n chommishoon er ny chur magh lesh y booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Reiht y chommishoon son y booking noa"
     }
   }
 }

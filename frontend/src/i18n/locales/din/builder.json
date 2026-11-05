@@ -30,7 +30,8 @@
       "registered": "Acï gät rin"
     },
     "booked": "Acï gɔ̈t",
-    "empty": "Acïn kɔc cï keek tuɔɔc ëmɛn."
+    "empty": "Acïn kɔc cï keek tuɔɔc ëmɛn.",
+    "bookingCancelled": "Bɛ̈n acï cuɔp"
   },
   "detail": {
     "customer": "Raan lui",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Böoking acï yök.",
       "accepted": "Tuɔɔc acï gam.",
-      "rejected": "Acï tuɔɔc kuec."
+      "rejected": "Acï tuɔɔc kuec.",
+      "bookingCancelled": "Böoking acï puɔc."
     },
-    "backToReferrals": "Dhuk ciëën tënë kä cïke tuɔɔc"
+    "backToReferrals": "Dhuk ciëën tënë kä cïke tuɔɔc",
+    "bookingCancelled": "Bɛ̈n acï cuɔp",
+    "cancelBooking": "Cɔl kë cï tääu piny",
+    "cancelReasonLabel": "Kë yenë ye gël (acï nyuɔɔth tënë raan tɔ̈ kenë yïn) *",
+    "cancelBookingHint": "Käk luɔi aye dhuk ciëën tënë raan ë määth ku lööŋken ke commission aye keek cɔk thök. Lead alëu bï ya book ëya dɛ̈t.",
+    "cancelBookingConfirm": "Cɔl të cï tɔ̈ɔ̈u"
   },
   "history": {
     "title": "Anyïkööl",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Löny de Akutnhom acï cak",
       "HANDOVER_COMPLETED": "Gäm de käŋ acï thöl",
       "ADMIN_PROTECTION_RELEASED": "Admin acï gël de kä cï dhuɔ̈kic lac luɔ̈nybei. Kë yenë ye looi: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin acï gɛ̈tpiny bɛɛr gäm tënë {{from}} agut cï {{to}} . Kë yenë ye looi: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin acï gɛ̈tpiny bɛɛr gäm tënë {{from}} agut cï {{to}} . Kë yenë ye looi: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Thëm de gätpiny de rin në raan dɛ̈t cï mat acï jäi",
+      "BOOKING_CANCELLED": "Böoking acï puɔc. Kë yenë ye looi: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Këde luɔi acï dhuk tënë raan cï mat",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Löny de Akutnhom acï cuɔp wei kenë tɔ̈ɔ̈u",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Lööŋ ke Akutnhom acï dhuɔ̈kciëën tënë tɔ̈ɔ̈u yam"
     }
   }
 }

@@ -30,7 +30,8 @@
       "registered": "Yakanyoreswa"
     },
     "booked": "Yakabhukwa",
-    "empty": "Hapana vanotumirwa parizvino."
+    "empty": "Hapana vanotumirwa parizvino.",
+    "bookingCancelled": "Kubhuka kwakakanzurwa"
   },
   "detail": {
     "customer": "Mutengi",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Kubhuka kwakasimbiswa.",
       "accepted": "Kutumirwa kunoashirwa.",
-      "rejected": "Kutumirwa kwakarambwa."
+      "rejected": "Kutumirwa kwakarambwa.",
+      "bookingCancelled": "Kubhuka kwakakanzurwa."
     },
-    "backToReferrals": "Kudzokera kune Zvinotumirwa ."
+    "backToReferrals": "Kudzokera kune Zvinotumirwa .",
+    "bookingCancelled": "Kubhuka kwakakanzurwa",
+    "cancelBooking": "Kanzura Kubhuka",
+    "cancelReasonLabel": "Chikonzero chekukanzura (chinoratidzwa kune mumwe) *",
+    "cancelBookingHint": "Operational muridzi unodzokera kune mumwe uye kukodzera kwavo kwekomisheni kunokanzurwa. Kutungamira kunogona kubhukwa zvakare gare gare.",
+    "cancelBookingConfirm": "Kanzura kubhuka ."
   },
   "history": {
     "title": "Ngano",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kukodzera kweKomishini kwakagadzirwa .",
       "HANDOVER_COMPLETED": "Kupetudzwa kwapera",
       "ADMIN_PROTECTION_RELEASED": "Admin yakabudisa kudzivirira kwakadzokororwa mangwanani. Chikonzero: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin yakagoverwazve kunyoreswa kubva {{from}} kusvika {{to}} . Chikonzero: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin yakagoverwazve kunyoreswa kubva {{from}} kusvika {{to}} . Chikonzero: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Kuedza kwekunyoreswa kwakadzokororwa nemumwe mudiwa kwakarambwa",
+      "BOOKING_CANCELLED": "Kubhuka kwakakanzurwa. Chikonzero: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Muridzi wekushanda akadzokera kune mumwe .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kukodzera kweKomishini kwakadzimwa nekubhuka",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kukodzera kweKomishini kwakadzoserwa kune itsva yekubhuka"
     }
   }
 }

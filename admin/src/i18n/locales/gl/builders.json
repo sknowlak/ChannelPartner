@@ -43,7 +43,9 @@
       "name": "Nome",
       "city": "Cidade",
       "status": "Estado",
-      "actions": "Accións"
+      "actions": "Accións",
+      "protection": "Protección duplicada",
+      "matchOn": "Os duplicados coinciden"
     },
     "closeReferrals": "Pechar para referencias",
     "reopen": "Reabrir",
@@ -55,6 +57,25 @@
       "add": "Engadir proxecto",
       "created": "Creouse {{name}} ."
     },
-    "back": "Volver a Construtores"
+    "back": "Volver a Construtores",
+    "protection": {
+      "days_one": "{{count}} día",
+      "days_other": "{{count}} días",
+      "globalDays_one": "Predeterminado global ( {{count}} día)",
+      "globalDays_other": "Predeterminado global ( {{count}} días)",
+      "globalDefault": "Por defecto global",
+      "placeholder": "Días de protección (valeiro = predeterminado global)",
+      "saved": "Protección duplicada actualizada para {{name}} .",
+      "hint": "Protección duplicada: de 1 a 3650 días ou deixa o campo baleiro para usar o valor predeterminado global de Configuración. Un cambio aplícase só aos novos rexistros; os existentes manteñen a súa caducidade."
+    },
+    "matching": {
+      "global": "Por defecto global",
+      "globalWith": "Predeterminado global ( {{fields}} )",
+      "mobile": "Número de móbil",
+      "email": "Correo electrónico",
+      "both": "Número de móbil + correo electrónico",
+      "saved": "Actualizouse a coincidencia duplicada para {{name}}",
+      "hint": "Que detalles fan que dous rexistros sexan o mesmo cliente para un proxecto. Os cambios aplícanse ás verificacións duplicadas a partir de agora; a protección existente non se ve afectada."
+    }
   }
 }

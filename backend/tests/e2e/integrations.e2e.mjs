@@ -59,6 +59,7 @@ await sleep(1500);
 let log = await mockLog();
 const create = log.find((c) => c.path === '/crm/leads' && c.method === 'POST' && c.body.includes(l1.data.registrationId));
 check('lead created -> POST with OAuth2 bearer token', create?.headers.authorization === 'Bearer tok-1', create);
+check('the push carries the request ID of the API call that caused it (section 62)', /^[0-9a-f-]{36}$/.test(create?.headers['x-leadrat-request-id'] || ''), create?.headers);
 check('OAuth2 token is cached (at most one token request)', log.filter((c) => c.path === '/oauth/token').length <= 1, log.filter((c) => c.path === '/oauth/token').length);
 
 const statuses = (await call('GET', '/my/lead-statuses', { token: T })).data.statuses;

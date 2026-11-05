@@ -43,7 +43,9 @@
       "name": "Nom",
       "city": "Ciutat",
       "status": "Estat",
-      "actions": "Accions"
+      "actions": "Accions",
+      "protection": "Protecció duplicada",
+      "matchOn": "Els duplicats coincideixen activats"
     },
     "closeReferrals": "Tanca per a referències",
     "reopen": "Torna a obrir",
@@ -55,6 +57,27 @@
       "add": "Afegeix projecte",
       "created": "S'ha creat {{name}} ."
     },
-    "back": "Torna a Constructors"
+    "back": "Torna a Constructors",
+    "protection": {
+      "days_one": "{{count}} dia",
+      "days_many": "{{count}} dies",
+      "days_other": "{{count}} dies",
+      "globalDays_one": "Predeterminat global ( {{count}} dia)",
+      "globalDays_many": "Predeterminat global ( {{count}} dies)",
+      "globalDays_other": "Predeterminat global ( {{count}} dies)",
+      "globalDefault": "Per defecte global",
+      "placeholder": "Dies de protecció (buit = predeterminat global)",
+      "saved": "S'ha actualitzat la protecció duplicada per a {{name}} .",
+      "hint": "Protecció duplicada: d'1 a 3650 dies, o deixeu-lo en blanc per utilitzar el valor predeterminat global de Configuració. Un canvi només s'aplica als nous registres; els existents mantenen la seva caducitat."
+    },
+    "matching": {
+      "global": "Per defecte global",
+      "globalWith": "Predeterminat global ( {{fields}} )",
+      "mobile": "Número de mòbil",
+      "email": "Correu electrònic",
+      "both": "Número de mòbil + correu electrònic",
+      "saved": "S'ha actualitzat la concordança duplicada per a {{name}}",
+      "hint": "Quins detalls fan que dos registres siguin el mateix client per a un projecte. Els canvis s'apliquen a les comprovacions duplicades a partir d'ara; la protecció existent no es veu afectada."
+    }
   }
 }

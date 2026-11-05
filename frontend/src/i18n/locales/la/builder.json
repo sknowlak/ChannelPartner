@@ -30,7 +30,8 @@
       "registered": "Descripserunt"
     },
     "booked": "Booked",
-    "empty": "Nullam eget elit sed."
+    "empty": "Nullam eget elit sed.",
+    "bookingCancelled": "Booking cancellatam"
   },
   "detail": {
     "customer": "Customer",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Confirmavit Bocking.",
       "accepted": "Deferre recusandae.",
-      "rejected": "Deferre repudiandae."
+      "rejected": "Deferre repudiandae.",
+      "bookingCancelled": "Cras instat."
     },
-    "backToReferrals": "Ad Referrals"
+    "backToReferrals": "Ad Referrals",
+    "bookingCancelled": "Booking cancellatam",
+    "cancelBooking": "Cancel Booking",
+    "cancelReasonLabel": "Ratio distrahendi (conjugis ostensa) *",
+    "cancelBookingHint": "Dominium operationale ad socium redit et eorum commissio eligibilitas instat. Plumbum iterum postea corruptela esse potest.",
+    "cancelBookingConfirm": "Cancel booking"
   },
   "history": {
     "title": "Historia",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Commissio eligibility creata est",
       "HANDOVER_COMPLETED": "Orabant complebitur",
       "ADMIN_PROTECTION_RELEASED": "Admin mane praesidium duplicatum dimisit. Ratio: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin resignavit adnotationem ab {{from}} ad {{to}} . Ratio: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin resignavit adnotationem ab {{from}} ad {{to}} . Ratio: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Duplex adnotatione conatus ab alio socio repulsus est",
+      "BOOKING_CANCELLED": "Cras instat. Ratio: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Res rediit ad socium operational",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Commissio eligibility cassatur cum libri",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Commissio eligibility pro novo libro restituitur"
     }
   }
 }

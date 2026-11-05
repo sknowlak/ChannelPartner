@@ -30,7 +30,8 @@
       "registered": "Kadaftarang"
     },
     "booked": "Kapesen",
-    "empty": "Durung wénten rujukan."
+    "empty": "Durung wénten rujukan.",
+    "bookingCancelled": "Pemesanan sampun kakancel"
   },
   "detail": {
     "customer": "Palanggan",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Pemesanan sampun kakonfirmasi.",
       "accepted": "Rujukan sampun katerima.",
-      "rejected": "Rujukan katulak."
+      "rejected": "Rujukan katulak.",
+      "bookingCancelled": "Pemesanan sampun kakancel."
     },
-    "backToReferrals": "Mawali ka Rujukan"
+    "backToReferrals": "Mawali ka Rujukan",
+    "bookingCancelled": "Pemesanan sampun kakancel",
+    "cancelBooking": "Ngingsirang Pemesanan",
+    "cancelReasonLabel": "Alasan ngingsirang (kacihnayang ring mitra) *",
+    "cancelBookingHint": "Padruwen operasional mawali ring mitra lan kelayakan komisi ipun kacancel. Timbal punika prasida kapesen malih salanturnyane.",
+    "cancelBookingConfirm": "Ngingsirang pemesanan"
   },
   "history": {
     "title": "Riwayat",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisi kakaryanin",
       "HANDOVER_COMPLETED": "Penyerahan sampun puput",
       "ADMIN_PROTECTION_RELEASED": "Admin sampun ngamedalang perlindungan duplikat dumunan. Alasan: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin netepang malih pendaftaran saking {{from}} ka {{to}} . Alasan: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin netepang malih pendaftaran saking {{from}} ka {{to}} . Alasan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Utsaha pendaftaran duplikat olih mitra tiosan katulak",
+      "BOOKING_CANCELLED": "Pemesanan sampun kakancel. Alasan: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Padruwen operasional kawaliang ring mitra",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kelayakan komisi kacancel antuk pemesanan",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kelayakan komisi kawaliang antuk pemesanan anyar"
     }
   }
 }

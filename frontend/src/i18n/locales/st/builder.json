@@ -30,7 +30,8 @@
       "registered": "Ngodisitsoe"
     },
     "booked": "E ngolisitsoe",
-    "empty": "Ha ho na batho ba romelloang."
+    "empty": "Ha ho na batho ba romelloang.",
+    "bookingCancelled": "Pehelo e hlakotsoe"
   },
   "detail": {
     "customer": "Moreki",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Pehelo e netefalitsoe.",
       "accepted": "Phetisetso e amohetsoe.",
-      "rejected": "Phetisetso e hanngoe."
+      "rejected": "Phetisetso e hanngoe.",
+      "bookingCancelled": "Pehelo e hlakotsoe."
     },
-    "backToReferrals": "Khutlela ho Referrals"
+    "backToReferrals": "Khutlela ho Referrals",
+    "bookingCancelled": "Pehelo e hlakotsoe",
+    "cancelBooking": "Hlakola Booking",
+    "cancelReasonLabel": "Lebaka la ho hlakola (le bontšitsoeng ho molekane) *",
+    "cancelBookingHint": "Beng ba ts'ebetso ba khutlela ho molekane mme ho tšoaneleha ha komisi ea bona ho hlakotsoe. Ketapele e ka ngolisoa hape hamorao.",
+    "cancelBookingConfirm": "Hlakola kopo"
   },
   "history": {
     "title": "Histori",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Komisi ea ho tšoaneleha e entsoe",
       "HANDOVER_COMPLETED": "Ho fana ho phethiloe",
       "ADMIN_PROTECTION_RELEASED": "Admin o lokolotse ts'ireletso ea bobeli pele. Lebaka: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Mookameli o fane ka boingoliso bocha ho tloha {{from}} ho ea ho {{to}} . Lebaka: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Mookameli o fane ka boingoliso bocha ho tloha {{from}} ho ea ho {{to}} . Lebaka: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Teko ea ho ingolisa e entsoeng ke molekane e mong e ile ea hanoa",
+      "BOOKING_CANCELLED": "Pehelo e hlakotsoe. Lebaka: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Thepa ea ts'ebetso e khutliselitsoe ho molekane",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ho tšoaneleha ha Khomishene ho hlakotsoe ka peheletso",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Litokelo tsa Khomishene li khutliselitsoe bakeng sa peeletso e ncha"
     }
   }
 }

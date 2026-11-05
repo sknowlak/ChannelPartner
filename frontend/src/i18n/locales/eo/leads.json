@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Rezervita",
-    "pending": "Pritraktata"
+    "pending": "Pritraktata",
+    "status": {
+      "CONFIRMED": "Rezervita",
+      "CANCELLED": "Rezervado nuligita"
+    }
   },
   "assign": {
     "unassigned": "Neasignita",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Ankoraŭ neniu projekto (ne referita)",
-    "notInList": "{{project}} (ne en la projektolisto)"
+    "notInList": "{{project}} (ne en la projektolisto)",
+    "protectionDays_one": "{{count}} -taga protekto",
+    "protectionDays_other": "{{count}} -taga protekto"
   },
   "journey": {
     "customer": "Kliento",
@@ -76,7 +82,14 @@
     "progressHistory": "Progreshistorio",
     "timesIn": "(tempoj en {{timezone}} )",
     "backToMyLeads": "Reen al Miaj gvidiloj",
-    "editLead": "Redakti Gvidi"
+    "editLead": "Redakti Gvidi",
+    "disputeBanner": "Alia partnero pridisputis la proprieton de ĉi tiu kliento. Administranto Leadrat revizias ĝin - via protekto restas en loko ĝis ili decidos.",
+    "booking": "Rezervado",
+    "commission": "Komisiono",
+    "notBooked": "Ne mendita",
+    "cancelledOn": "Nuligite je {{date}} .",
+    "cancelReason": "Kialo: {{reason}}",
+    "cancelledHint": "La konstruanto nuligis la rezervon - la funkcia proprieto revenis kun vi kaj la komision-kvalifiko estas nuligita. Ĝi estas restarigita se la antaŭeco estas rezervita denove."
   },
   "referral": {
     "NOT_REFERRED": "Ne referencita (neniu projekto)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Konstruisto akceptis la referencon",
       "REFERRAL_REJECTED": "Konstruisto malakceptis la referencon. Kialo: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Administranto liberigis duplikatan protekton frue. Kialo: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Administranto reasignis registradon de {{from}} al {{to}} . Kialo: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Administranto reasignis registradon de {{from}} al {{to}} . Kialo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Duplikata registriĝoprovo de alia partnero estis malakceptita",
+      "BOOKING_CANCELLED": "Rezervado nuligita. Kialo: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Funkcia proprieto resendita al la partnero",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Komisiona kvalifiko nuligita kun la rezervo",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Komisiona kvalifiko restarigita por la nova rezervo",
+      "OWNERSHIP_DISPUTE_RAISED": "Alia partnero pridisputis la proprieton de ĉi tiu kliento - administranto Leadrat revizios ĝin",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "La disputo pri proprieto pri ĉi tiu kliento estis retirita - via proprieto estas senŝanĝa",
+      "OWNERSHIP_DISPUTE_UPHELD": "La disputo pri proprieto pri ĉi tiu kliento estis reviziita - via proprieto estas konfirmita",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Registrite post via disputo pri proprieto estis decidita en via favoro. Noto: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Protekto finiĝis: disputo pri proprieto estis decidita favore al alia partnero. Noto: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Ĉi tiu telefonnumero ne validas por {{country}} .",
     "COUNTRY_MISMATCH": "Bonvolu elekti la ĝustan landokodon.",
     "NOT_MOBILE": "Bonvolu enigi poŝtelefonon, ne fikstelefonon."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisiono elektebla",
+      "PENDING": "Komisiono pritraktata",
+      "CANCELLED": "Komisiono nuligita"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Atribuite al vi",
+      "DISPUTED": "Atribuo pridisputata"
+    }
+  },
+  "result": {
+    "none": "Neniu registra rezulto montrenda. Registru antaŭecon unue.",
+    "acceptedTitle": "Plumbo registrita",
+    "rejectedTitle": "Plumbo ne registrita",
+    "protectionWindow": "Protekta Fenestro",
+    "protectedUntil": "Protektita Ĝis",
+    "openLead": "Malfermu Plumbon",
+    "addAnother": "Aldonu Alian Plumbon",
+    "duplicate": "Duplikato - jam protektita",
+    "duplicateHint": "Ĉi tiu kliento jam estas protektita por ĉi tiu projekto per alia registrado, do ĝi ne povus esti registrita por vi.",
+    "existingProtectedUntil": "Ekzistanta registriĝo protektita ĝis"
+  },
+  "disputes": {
+    "title": "Miaj Disputoj",
+    "intro": "Poseddisputoj, kiujn vi levis por klientoj, kiuj estis rifuzitaj kiel duplikatoj. Administranto Leadrat recenzas ĉiun.",
+    "empty": "Vi ne levis disputojn. Se kliento, kiun vi enportis, estas rifuzita kiel duplikato, vi povas kontesti ĝin de la registra rezulto.",
+    "columns": {
+      "dispute": "Disputo",
+      "reason": "Via kialo",
+      "outcome": "Rezulto"
+    },
+    "status": {
+      "OPEN": "Sub revizio",
+      "UPHELD": "Ne en via favoro",
+      "OVERTURNED": "Decidite en via favoro",
+      "WITHDRAWN": "Retirita"
+    },
+    "awaitingReview": "Atendante administran revizion",
+    "openNewLead": "Malfermu vian kondukon {{id}}",
+    "withdraw": "Retiriĝi",
+    "withdrawConfirm": "Forigi vian disputon pri {{name}} ? La nuna proprieto restas tia.",
+    "raise": "Disputo pri proprieto",
+    "raiseTitle": "Disputo pri proprieto",
+    "raiseHint": "Se ĉi tiu kliento venis al vi unue, klarigu kial. Administranto Leadrat revizios ĝin; se ili decidas en via favoro, la gvido estas registrita por vi.",
+    "reasonLabel": "Kial ĉi tiu kliento estas via?",
+    "reasonMin_one": "Almenaŭ {{count}} signon.",
+    "reasonMin_other": "Almenaŭ {{count}} signojn.",
+    "submit": "Sendu disputon",
+    "notProtected": "Neniu plu tenas protekton sur ĉi tiu kliento por ĉi tiu projekto - vi povas registri la gvidon nun.",
+    "raised": "Disputo {{id}} sendita por revizio.",
+    "viewAll": "Rigardu miajn disputojn"
+  },
+  "dashboard": {
+    "title": "Panelo",
+    "period": "Periodo",
+    "lastDays_one": "{{count}} tagon",
+    "lastDays_other": "{{count}} tagojn",
+    "emptyTitle": "Bonvenon! Vi ankoraŭ ne havas kondukojn.",
+    "emptyHint": "Registru vian unuan kondukon - via dukto, rezervoj kaj protektaj templimoj aperos ĉi tie.",
+    "tiles": {
+      "leads": "Totalaj kondukoj",
+      "newInPeriod_one": "{{count}} novaj en ĉi tiu periodo",
+      "newInPeriod_other": "{{count}} novaj en ĉi tiu periodo",
+      "accepted": "Akceptita",
+      "booked": "Rezervita",
+      "bookedInPeriod_one": "{{count}} menditaj en ĉi tiu periodo",
+      "bookedInPeriod_other": "{{count}} menditaj en ĉi tiu periodo",
+      "conversion": "Konvertiĝo",
+      "conversionHint": "Rezervitaj kondukoj kiel parto de akceptitaj kondukoj",
+      "protectedNow": "Protektita nun",
+      "expiringSoon_one": "Protekto finiĝanta en {{count}} tago",
+      "expiringSoon_other": "Protekto finiĝanta en {{count}} tagoj",
+      "disputedNow": "Pridisputata de aliaj",
+      "disputedNowHint": "Viaj kondukoj kun malferma disputo pri proprieto de alia partnero",
+      "commissionEligible": "Komisiono elektebla",
+      "commissionCancelled_one": "{{count}} nuligita",
+      "commissionCancelled_other": "{{count}} nuligita"
+    },
+    "chart": {
+      "title_one": "Aliĝoj kaj rezervoj ĉiutage - lasta {{count}} tago",
+      "title_other": "Registradoj kaj rezervoj ĉiutage - lastaj {{count}} tagoj",
+      "registrations": "Aliĝoj",
+      "bookings": "Rezervoj"
+    },
+    "byStage": "Gvidas laŭ statuso",
+    "bySource": "Gvidas laŭ fonto",
+    "byReferral": "Gvidas laŭ referenco statuso",
+    "myDisputes": "Disputoj, kiujn vi levis",
+    "noDisputes": "Neniuj disputoj levitaj.",
+    "unknown": "Ne fiksita",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Ekstera CRM (simulita)",
+      "PARTNER_CRM": "Aldonita de via teamo",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integriĝo",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Protekto eksvalidiĝos en la sekva {{count}} tago",
+    "expiringTitle_other": "Protekto eksvalidiĝos en la venontaj {{count}} tagoj",
+    "expiringEmpty": "Neniu plumbo perdas sian protekton en ĉi tiu fenestro."
   }
 }

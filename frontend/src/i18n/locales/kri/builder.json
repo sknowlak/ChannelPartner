@@ -30,7 +30,8 @@
       "registered": "Dɛn dɔn rɛjista am"
     },
     "booked": "Dɛn dɔn buk am",
-    "empty": "No riferal nɔ de yet."
+    "empty": "No riferal nɔ de yet.",
+    "bookingCancelled": "Dɛn dɔn kansel di bukin"
   },
   "detail": {
     "customer": "Kɔstɔma",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Buk bin kɔnfyus.",
       "accepted": "Dɛn kin aksept fɔ rifer am.",
-      "rejected": "Dɛn nɔ gri fɔ rifer am."
+      "rejected": "Dɛn nɔ gri fɔ rifer am.",
+      "bookingCancelled": "Dɛn dɔn kansel di bukin."
     },
-    "backToReferrals": "Bak to Riferal dɛn"
+    "backToReferrals": "Bak to Riferal dɛn",
+    "bookingCancelled": "Dɛn dɔn kansel di bukin",
+    "cancelBooking": "Kansel di Buk",
+    "cancelReasonLabel": "Rizin fɔ kansel (dɛn sho di patna) *",
+    "cancelBookingHint": "Di ɔpreshɔnal ɔnaship de go bak to di patna ɛn dɛn kin kansel dɛn kɔmishɔn ɛligibiliti. Di lid kin buk bak leta.",
+    "cancelBookingConfirm": "Kansel di bukin"
   },
   "history": {
     "title": "Istri",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kɔmishɔn ɛligibiliti we dɛn mek",
       "HANDOVER_COMPLETED": "Di handover dɔn dɔn",
       "ADMIN_PROTECTION_RELEASED": "Admin bin rilis dupliket protɛkshɔn ali. Rizin: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin riasayn rɛjista frɔm {{from}} to {{to}} . Rizin: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin riasayn rɛjista frɔm {{from}} to {{to}} . Rizin: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Wan dupliket rɛjista we ɔda patna bin tray fɔ rɛjista nɔ bin gri",
+      "BOOKING_CANCELLED": "Dɛn dɔn kansel di bukin. Rizin: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Opareshɔnal ɔnaship bin kam bak to di patna",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kɔmishɔn ɛligibiliti kansel wit di bukin",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kɔmishɔn ɛligibiliti dɔn kam bak fɔ di nyu bukin"
     }
   }
 }

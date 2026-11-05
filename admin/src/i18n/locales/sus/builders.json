@@ -43,7 +43,9 @@
       "name": "Khili",
       "city": "Ta",
       "status": "Tonyi ya yèrèki",
-      "actions": "Walie"
+      "actions": "Walie",
+      "protection": "makantafe firin",
+      "matchOn": "Duplicate match on"
     },
     "closeReferrals": "A balan mixie rasigafe ra",
     "reopen": "Wo man xa rabi",
@@ -55,6 +57,25 @@
       "add": "Wo xa projet sa a fari",
       "created": "{{name}} daxi."
     },
-    "back": "Wo gbilen banxi ti ma"
+    "back": "Wo gbilen banxi ti ma",
+    "protection": {
+      "days_one": "{{count}} lOxE",
+      "days_other": "{{count}} lOxE",
+      "globalDays_one": "Global default ( {{count}} day)",
+      "globalDays_other": "Global default ( {{count}} days)",
+      "globalDefault": "Global default",
+      "placeholder": "Makanta lOxE (fe fufafu = duniE birin)",
+      "saved": "Duplicate protection updated for {{name}} .",
+      "hint": "Duplicate protection: 1-3650 lOxE, xa na mu i lu na a ra ala ko i xa nO global default usi de Settings. Yi masarama lanma a xa raba sEbEli nEnE nan gbansan ma - naxan nu na a kui a xa waxati dangi ma."
+    },
+    "matching": {
+      "global": "Global default",
+      "globalWith": "Global default ( {{fields}} )",
+      "mobile": "Telefone kEdi",
+      "email": "Email",
+      "both": "Telefone kEdi + email",
+      "saved": "Duplicate matching updated for {{name}}",
+      "hint": "Na fe nde naxan a niyama mixi firin xa findi sare soe keren na projet keren ma. Fe masarama nE tEki firin nan ma kelife yakOsi; makantafe naxan na a mu kanama."
+    }
   }
 }

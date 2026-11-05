@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Diŋgojuvvon",
-    "pending": "Čoavdemeahttun"
+    "pending": "Čoavdemeahttun",
+    "status": {
+      "CONFIRMED": "Diŋgojuvvon",
+      "CANCELLED": "Diŋgojupmi heaittihuvvui"
+    }
   },
   "assign": {
     "unassigned": "Juolluduvvon",
@@ -58,7 +62,10 @@
   },
   "project": {
     "none": "Ii leat vuos prošeakta (ii čujuhuvvon)",
-    "notInList": "{{project}} (ii leat prošeaktalisttus)"
+    "notInList": "{{project}} (ii leat prošeaktalisttus)",
+    "protectionDays_one": "{{count}} -beaivvi suodjalus",
+    "protectionDays_two": "{{count}} -beaivvi suodjalus",
+    "protectionDays_other": "{{count}} -beaivvi suodjalus"
   },
   "journey": {
     "customer": "Áššehas",
@@ -76,7 +83,14 @@
     "progressHistory": "Ovdáneami historjá",
     "timesIn": "(áiggit {{timezone}} )",
     "backToMyLeads": "Ruovttoluotta mu johtui",
-    "editLead": "Rievdat jođiheaddji"
+    "editLead": "Rievdat jođiheaddji",
+    "disputeBanner": "Nubbi ovttasbargoguoibmi lea váidalan oamastanvuoigatvuođa dán kundarii. Leadrat admin lea dárkkisteamen dan - du suodjalus bissu sajis dassážii go sii mearridit.",
+    "booking": "Diŋgon",
+    "commission": "Bargogohčus",
+    "notBooked": "Ii diŋgojuvvon",
+    "cancelledOn": "Heaittihuvvon {{date}} .",
+    "cancelReason": "Sivva: {{reason}}",
+    "cancelledHint": "Huksejeaddji heaittihii diŋgojumi - doaibmaoamastanvuoigatvuohta lea fas du luhtte ja provišuvdnavuoigatvuohta lea heaittihuvvon. Dat fas faskkoduvvo jus johtolat lea fas diŋgojuvvon."
   },
   "referral": {
     "NOT_REFERRED": "Ii čujuhuvvon (ii leat prošeakta)",
@@ -162,7 +176,17 @@
       "REFERRAL_ACCEPTED": "Huksejeaddji dohkkehii čujuhusa",
       "REFERRAL_REJECTED": "Builder hilggui čujuhusa. Sivva: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Hálddašeaddji almmuhii duppalsuodjalusa árrat. Sivva: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin sirddii registrerema {{from}} :s {{to}} . Sivva: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin sirddii registrerema {{from}} :s {{to}} . Sivva: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Nuppi ovttasbargoguoimmi duppal registrerengeahččaleapmi hilgojuvvui",
+      "BOOKING_CANCELLED": "Diŋgojupmi heaittihuvvui. Sivva: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Doaibmaoamastanvuoigatvuohta máhcahuvvo ovttasbargoguoibmái",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kommišuvdnavuoigatvuohta heaittihuvvo diŋgoma bokte",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ođđa diŋgojumi ovddas fas biddjojuvvo provišuvdnavuoigatvuohta",
+      "OWNERSHIP_DISPUTE_RAISED": "Nubbi ovttasbargoguoibmi váiddii dán kundariid eaiggáduššama - Leadrat administráhtor geahččá dan",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Oamastanriidu dán kundarii váldojuvvui ruovttoluotta - du oamastanvuoigatvuohta ii rievdda",
+      "OWNERSHIP_DISPUTE_UPHELD": "Oamastanriidu dán kundaris lea guorahallojuvvon - du oamastanvuoigatvuohta lea duođaštuvvon",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Registrerejuvvon maŋŋel go du oamastanriidu mearriduvvui du ovdii. Fuomáš: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Suodjalus nogai: oamastanriidu mearriduvvui nuppi ovttasbargoguoimmi ovdii. Fuomáš: {{note}}"
     }
   },
   "columnsPanel": {
@@ -186,5 +210,116 @@
     "INVALID_FOR_COUNTRY": "Dát telefonnummir ii leat dohkálaš {{country}} .",
     "COUNTRY_MISMATCH": "Vállje rivttes riikkakoda.",
     "NOT_MOBILE": "Čále mobiilanummira, itge mátketelefuvnna."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Kommišuvdnavuoigatvuohta",
+      "PENDING": "Kommišuvdna lea vuordimis",
+      "CANCELLED": "Kommišuvdna heaittihuvvui"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Dutnje",
+      "DISPUTED": "Attribušuvdna váidaluvvon"
+    }
+  },
+  "result": {
+    "none": "Ii čájehuvvo registrerenbohtosa. Registrere vuos jođiheaddji.",
+    "acceptedTitle": "Jođiheaddji registrerejuvvon",
+    "rejectedTitle": "Johtti ii leat registrerejuvvon",
+    "protectionWindow": "Suodjalusráidu",
+    "protectedUntil": "Suodjaluvvon dassážii go",
+    "openLead": "Rabas jođiheaddji",
+    "addAnother": "Lasit eará johtti",
+    "duplicate": "Duppal - juo suodjaluvvon",
+    "duplicateHint": "Dát kunda lea juo suodjaluvvon dán prošektii eará registrerema bokte, nu ahte dan ii sáhttán registreret dutnje.",
+    "existingProtectedUntil": "Dálá registreren lea suodjaluvvon gitta"
+  },
+  "disputes": {
+    "title": "Mu riiddut",
+    "intro": "Oamastanriiddut maid ovddidit kundariid ovddas mat hilgojuvvojedje duppalaččat. Leadrat -administráhtor geahččá juohkehažžii.",
+    "empty": "Eai leat ovddidan makkárge riidduid. Jus kunda gean leat buktán sisa, hilgojuvvo duplikahtan, de sáhtát váidit dan registrerenbohtosa vuođul.",
+    "columns": {
+      "dispute": "Gižžu",
+      "reason": "Du sivva",
+      "outcome": "Boađus"
+    },
+    "status": {
+      "OPEN": "Geahčadeami vuolde",
+      "UPHELD": "Ii leat du bealis",
+      "OVERTURNED": "Mearriduvvon du ovdii",
+      "WITHDRAWN": "Váldojuvvon eret"
+    },
+    "awaitingReview": "Vuordin admin árvvoštallama",
+    "openNewLead": "Rahpat iežat čujuhusa {{id}}",
+    "withdraw": "Geassádit",
+    "withdrawConfirm": "Váldde ruovttoluotta riiddu {{name}} ovddas ? Dálá eaiggátvuohta bissu nu go lea.",
+    "raise": "Riidu oamasteamis",
+    "raiseTitle": "Riidu oamasteamis",
+    "raiseHint": "Jus dát kunda bođii du lusa vuosttaš geardde, de čilge manin. Leadrat administráhtor geahččá dan; jus sii mearridit du bealis, de lea jođiheaddji registrerejuvvon dutnje.",
+    "reasonLabel": "Manne dát kunda lea du?",
+    "reasonMin_one": "Unnimusat {{count}} mearka.",
+    "reasonMin_two": "Unnimusat {{count}} mearkka.",
+    "reasonMin_other": "Unnimusat {{count}} mearkka.",
+    "submit": "Sádde riiddu",
+    "notProtected": "Ii oktage šat suodjalit dán kundarii dán prošeavtta ovddas - sáhtát dál registreret jođiheaddji.",
+    "raised": "Riidu {{id}} sáddejuvvo geahčadeapmái.",
+    "viewAll": "Geahča mu riidduid"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Áigodat",
+    "lastDays_one": "{{count}} beaivi",
+    "lastDays_two": "{{count}} beaivvi",
+    "lastDays_other": "{{count}} beaivvi",
+    "emptyTitle": "Buresboahtin! Dus eai leat vuos johtolagat.",
+    "emptyHint": "Registrere vuosttaš čujuhus - du johtolat, diŋgojumit ja suodjalusáigemearit čájehuvvojit dáppe.",
+    "tiles": {
+      "leads": "Oktiibuot johtti",
+      "newInPeriod_one": "{{count}} ođđa dán áigodagas",
+      "newInPeriod_two": "{{count}} ođđa dán áigodagas",
+      "newInPeriod_other": "{{count}} ođđa dán áigodagas",
+      "accepted": "Dohkkehuvvon",
+      "booked": "Diŋgojuvvon",
+      "bookedInPeriod_one": "{{count}} diŋgojuvvon dán áigodagas",
+      "bookedInPeriod_two": "{{count}} diŋgojuvvon dán áigodagas",
+      "bookedInPeriod_other": "{{count}} diŋgojuvvon dán áigodagas",
+      "conversion": "Konverteren",
+      "conversionHint": "Diŋgojuvvon čujuhusat oassin dohkkehuvvon čujuhusain",
+      "protectedNow": "Suodjaluvvon dál",
+      "expiringSoon_one": "Suodjalus nohká {{count}} beaivvis",
+      "expiringSoon_two": "Suodjalus mii nohká {{count}} beaivvis",
+      "expiringSoon_other": "Suodjalus mii nohká {{count}} beaivvis",
+      "disputedNow": "Earáid váidaleapmi",
+      "disputedNowHint": "Du jođiheaddjit leat rabas oamastanriiddut nuppi ovttasbargoguoimmis",
+      "commissionEligible": "Kommišuvdnavuoigatvuohta",
+      "commissionCancelled_one": "{{count}} heaittihuvvon",
+      "commissionCancelled_two": "{{count}} heaittihuvvon",
+      "commissionCancelled_other": "{{count}} heaittihuvvon"
+    },
+    "chart": {
+      "title_one": "Dieđiheamit ja diŋgojumit beaivvis - maŋimuš {{count}} beaivi",
+      "title_two": "Dieđiheamit ja diŋgojumit beaivvis - maŋimuš {{count}} beaivvi",
+      "title_other": "Dieđiheamit ja diŋgojumit beaivvis - maŋimuš {{count}} beaivvi",
+      "registrations": "Registreremat",
+      "bookings": "Diŋgomat"
+    },
+    "byStage": "Jođiha stáhtusa mielde",
+    "bySource": "Johtolat gáldu mielde",
+    "byReferral": "Jođiheaddjit čujuhanstáhtusa mielde",
+    "myDisputes": "Riiddut maid ovddidit",
+    "noDisputes": "Ii leat ovdanbuktojuvvon riiddu.",
+    "unknown": "Ii biddjon",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Olggobeale CRM (simulerejuvvon)",
+      "PARTNER_CRM": "Du joavku lea lasihan",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integreren",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Suodjalus nohká boahtte {{count}} beaivvis",
+    "expiringTitle_two": "Suodjalus nohká čuovvovaš {{count}} beaivvi siste",
+    "expiringTitle_other": "Suodjalus nohká čuovvovaš {{count}} beaivvi siste",
+    "expiringEmpty": "Ii oktage čuovga masse suodjalusa dán uvssas."
   }
 }

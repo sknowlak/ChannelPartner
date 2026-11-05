@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Ku bukuteriwile",
-    "pending": "Rindzerile"
+    "pending": "Rindzerile",
+    "status": {
+      "CONFIRMED": "Ku bukuteriwile",
+      "CANCELLED": "Ku bukuta ku khanseliwile"
+    }
   },
   "assign": {
     "unassigned": "A swi averiwe",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Ku hava phurojeke ku fikela sweswi (a yi kongomisiwanga) .",
-    "notInList": "{{project}} (a hi eka nxaxamelo wa phurojeke)"
+    "notInList": "{{project}} (a hi eka nxaxamelo wa phurojeke)",
+    "protectionDays_one": "{{count}} -nsirhelelo wa siku",
+    "protectionDays_other": "{{count}} -nsirhelelo wa siku"
   },
   "journey": {
     "customer": "Khasimende",
@@ -76,7 +82,14 @@
     "progressHistory": "Matimu ya Nhluvuko",
     "timesIn": "(minkarhi eka {{timezone}} )",
     "backToMyLeads": "Ku Vuyela Eka Swiletelo Swa Mina",
-    "editLead": "Hlela Lead"
+    "editLead": "Hlela Lead",
+    "disputeBanner": "Mutirhisani un’wana u kanetile vun’wini bya muxavi loyi. Admin Leadrat yi le ku yi pfuxeteni - nsirhelelo wa wena wu tshama wu ri kona ku kondza va teka xiboho.",
+    "booking": "Ku bukuta",
+    "commission": "Khomixini",
+    "notBooked": "A swi bukuteriwanga",
+    "cancelledOn": "Ku khanseriwa hi {{date}} .",
+    "cancelReason": "Xivangelo: {{reason}}",
+    "cancelledHint": "Muaki u khansele ku bukuta - vun’wini bya ntirho byi vuyile na wena naswona ku faneleka ka khomixini ku khanseliwile. Yi vuyiseriwa loko lead yi bukuteriwile nakambe."
   },
   "referral": {
     "NOT_REFERRED": "A swi rhumeriwi (ku hava phurojeke) .",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Muaki u amukele ku rhumeriwa",
       "REFERRAL_REJECTED": "Builder u arile ku rhumeriwa. Xivangelo: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin u humesile nsirhelelo wa ti duplicate ka ha ri na nkarhi. Xivangelo: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin u avele nakambe ku tsarisa ku suka eka {{from}} ku ya eka {{to}} . Xivangelo: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin u avele nakambe ku tsarisa ku suka eka {{from}} ku ya eka {{to}} . Xivangelo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ku ringeta ku tsarisa ku phindha-phindha hi mutirhisani un’wana ku ariwile",
+      "BOOKING_CANCELLED": "Ku bukuta ku khanseliwile. Xivangelo: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Vun’wini bya ntirho byi tlhelele eka mutirhisani",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ku faneleka ka khomixini ku khanseliwile na ku bukuta",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ku faneleka ka khomixini ku vuyisiwile eka ku bukuta lokuntshwa",
+      "OWNERSHIP_DISPUTE_RAISED": "Mutirhisani un’wana u kanetile vun’wini bya khasimende leyi - admin Leadrat u ta yi kambisisa",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Mpfilumpfilu wa vun’wini eka khasimende leyi wu hoxiwile - vun’wini bya wena a byi cincanga",
+      "OWNERSHIP_DISPUTE_UPHELD": "Mpfilumpfilu wa vun’wini eka khasimende leyi wu kamberiwile - vun’wini bya wena byi tiyisisiwile",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Ku tsarisiwile endzhaku ka loko mpfilumpfilu wa wena wa vun’wini wu tekiwe xiboho lexi ku pfunaka. Xiya: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Nsirhelelo wu herile: mpfilumpfilu wa vun’wini wu tekiwile ku seketela mutirhisani un’wana. Xiya: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Nomboro leyi ya riqingho a yi tirhi eka {{country}} .",
     "COUNTRY_MISMATCH": "Hi kombela u hlawula khodi ya tiko leyi faneleke.",
     "NOT_MOBILE": "Hi kombela u nghenisa nomboro ya mobile, hayi landline."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Khomixini leyi faneleke",
+      "PENDING": "Khomixini yi yimerile",
+      "CANCELLED": "Khomixini yi khanseliwile"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Ku vuriwa leswaku u huma eka wena",
+      "DISPUTED": "Ku kanetiwa ka ku hambanisiwa"
+    }
+  },
+  "result": {
+    "none": "Ku hava mbuyelo wo tsarisa lowu nga ta kombisiwa. Tsarisa ku rhangela ku sungula.",
+    "acceptedTitle": "Ntsopfu wu tsarisiwile",
+    "rejectedTitle": "Lead a yi tsarisiwanga",
+    "protectionWindow": "Fasitere ra Nsirhelelo",
+    "protectedUntil": "Ku Sirheleriwa Ku fikela",
+    "openLead": "Vula Ntsonga",
+    "addAnother": "Engetelani Lead Yin’wana",
+    "duplicate": "Ku phindha - se swi sirhelelekile",
+    "duplicateHint": "Khasimende leyi se yi sirhelelekile eka phurojeke leyi hi ku tsarisiwa kun’wana, hikwalaho a yi nga ta swi kota ku tsarisiwa eka wena.",
+    "existingProtectedUntil": "Ku tsarisiwa loku nga kona ku sirheleriwa ku fikela"
+  },
+  "disputes": {
+    "title": "Minkanerisano ya Mina",
+    "intro": "Minkanerisano ya vun’wini leyi u yi tlakuseke eka vaxavi leyi a yi ariwile tanihi ti-duplicate. Admin ya Leadrat yi pfuxeta yin'wana na yin'wana.",
+    "empty": "A wu tlakusanga timholovo. Loko khasimende leyi u yi tiseke yi ariwa tanihi leyi phindhiweke, u nga ha kanetana na yona ku suka eka mbuyelo wa ntsariso.",
+    "columns": {
+      "dispute": "Nkwetlembetano",
+      "reason": "Xivangelo xa wena",
+      "outcome": "Mbuyelo"
+    },
+    "status": {
+      "OPEN": "Ehansi ka nkambisiso",
+      "UPHELD": "A hi ku ku pfuna",
+      "OVERTURNED": "Ku endle xiboho lexi ku pfunaka",
+      "WITHDRAWN": "Ku hoxiwa endzhaku"
+    },
+    "awaitingReview": "Ku yimele admin review",
+    "openNewLead": "Pfula lead ya wena {{id}}",
+    "withdraw": "Ku teka",
+    "withdrawConfirm": "Ku hoxa mpfilumpfilu wa wena hi {{name}} ? Vun’wini bya sweswi byi tshama tani hi leswi byi nga xiswona.",
+    "raise": "Vun’wini bya mpfilumpfilu",
+    "raiseTitle": "Vun’wini bya mpfilumpfilu",
+    "raiseHint": "Loko muxavi loyi a tile eka wena ku sungula, hlamusela leswaku ha yini. Admin Leadrat yi ta yi pfuxeta; loko va teka xiboho lexi ku pfunaka, lead yi tsarisiwile eka wena.",
+    "reasonLabel": "Ha yini muxavi loyi a ri wa wena?",
+    "reasonMin_one": "Hi xiringaniso {{count}} xihlawulekisi.",
+    "reasonMin_other": "Hi xiringaniso {{count}} swihlawulekisi.",
+    "submit": "Rhumela Mpfilumpfilu",
+    "notProtected": "Akuna munhu loyi a khomaka nsirhelelo eka khasimende leyi eka phurojeke leyi - unga tsarisa lead sweswi.",
+    "raised": "Mpfilumpfilu {{id}} wu rhumeriwile ku kamberiwa.",
+    "viewAll": "Languta timholovo ta mina"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Nkarhi",
+    "lastDays_one": "{{count}} siku",
+    "lastDays_other": "{{count}} masiku",
+    "emptyTitle": "Amukela! A wu na swiletelo ku fikela sweswi.",
+    "emptyHint": "Tsarisa lead ya wena yo sungula - phayiphi ya wena, ku bukuta na masiku yo hetelela ya nsirhelelo swi ta tikomba laha.",
+    "tiles": {
+      "leads": "Nhlayo hinkwayo ya swiletelo",
+      "newInPeriod_one": "{{count}} leyintshwa eka nkarhi lowu",
+      "newInPeriod_other": "{{count}} leyintshwa eka nkarhi lowu",
+      "accepted": "Ku amukeriwile",
+      "booked": "Ku bukuteriwile",
+      "bookedInPeriod_one": "{{count}} yi bukuteriwile eka nkarhi lowu",
+      "bookedInPeriod_other": "{{count}} yi bukuteriwile eka nkarhi lowu",
+      "conversion": "Ku hundzuka",
+      "conversionHint": "Ti leads leti bukuteriweke tani hi xiphemu xa ti leads leti amukeriweke",
+      "protectedNow": "Ku sirheleriwa sweswi",
+      "expiringSoon_one": "Nsirhelelo lowu helelaka hi siku ra {{count}}",
+      "expiringSoon_other": "Nsirhelelo lowu helelaka hi masiku ya {{count}}",
+      "disputedNow": "Ku kanetiwa hi van’wana",
+      "disputedNowHint": "U rhangela hi mpfilumpfilu wa vun’wini lowu pfulekeke ku suka eka mutirhisani un’wana",
+      "commissionEligible": "Khomixini leyi faneleke",
+      "commissionCancelled_one": "{{count}} yi khanseliwile",
+      "commissionCancelled_other": "{{count}} yi khanseliwile"
+    },
+    "chart": {
+      "title_one": "Ku tsarisa na ku bukuta hi siku - siku ro hetelela {{count}}",
+      "title_other": "Ku tsarisa na ku bukuta hi siku - masiku yo hetelela {{count}}",
+      "registrations": "Ku tsarisiwa",
+      "bookings": "Ku bukuta"
+    },
+    "byStage": "U rhangela hi xiyimo",
+    "bySource": "Ku rhangela hi xihlovo",
+    "byReferral": "Ku rhangela hi xiyimo xa ku rhumeriwa",
+    "myDisputes": "Minkanerisano leyi u yi pfuxeke",
+    "noDisputes": "Ku hava minjhekanjhekisano leyi tlakusiweke.",
+    "unknown": "A swi vekiwanga",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM ya le handle (leyi tekeleriweke) .",
+      "PARTNER_CRM": "Ku engeteriwile hi xipano xa wena",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Ku hlanganisiwa",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Nsirhelelo wu hela eka siku leri landzelaka ra {{count}}",
+    "expiringTitle_other": "Nsirhelelo wu hela eka masiku ya {{count}} lama landzelaka",
+    "expiringEmpty": "Ku hava ntsopfu lowu lahlekeriwa hi nsirhelelo wa wona eka fasitere leri."
   }
 }

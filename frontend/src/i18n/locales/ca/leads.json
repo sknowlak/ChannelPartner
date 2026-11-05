@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Reservat",
-    "pending": "Pendent"
+    "pending": "Pendent",
+    "status": {
+      "CONFIRMED": "Reservat",
+      "CANCELLED": "Reserva cancel·lada"
+    }
   },
   "assign": {
     "unassigned": "Sense assignar",
@@ -58,7 +62,10 @@
   },
   "project": {
     "none": "Encara no hi ha projecte (no referit)",
-    "notInList": "{{project}} (no a la llista de projectes)"
+    "notInList": "{{project}} (no a la llista de projectes)",
+    "protectionDays_one": "Protecció de {{count}} dies",
+    "protectionDays_many": "Protecció de {{count}} dies",
+    "protectionDays_other": "Protecció de {{count}} dies"
   },
   "journey": {
     "customer": "Client",
@@ -76,7 +83,14 @@
     "progressHistory": "Història de progrés",
     "timesIn": "(temps a {{timezone}} )",
     "backToMyLeads": "Torna a My Leads",
-    "editLead": "Edita el plom"
+    "editLead": "Edita el plom",
+    "disputeBanner": "Un altre soci ha impugnat la propietat d'aquest client. Un administrador Leadrat l'està revisant: la vostra protecció es manté al seu lloc fins que decideixin.",
+    "booking": "Reserva",
+    "commission": "Comissió",
+    "notBooked": "No reservat",
+    "cancelledOn": "Cancel·lat el dia {{date}} .",
+    "cancelReason": "Motiu: {{reason}}",
+    "cancelledHint": "El constructor ha cancel·lat la reserva: la propietat operativa ha tornat amb vosaltres i s'ha cancel·lat l'elegibilitat de les comissions. Es restaura si es torna a reservar l'avantatge."
   },
   "referral": {
     "NOT_REFERRED": "No referit (sense projecte)",
@@ -162,7 +176,17 @@
       "REFERRAL_ACCEPTED": "El constructor va acceptar la referència",
       "REFERRAL_REJECTED": "El constructor va rebutjar la referència. Motiu: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "L'administrador va llançar la protecció duplicada abans. Motiu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "L'administrador ha reassignat el registre de {{from}} a {{to}} . Motiu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "L'administrador ha reassignat el registre de {{from}} a {{to}} . Motiu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "S'ha rebutjat un intent de registre duplicat per part d'un altre soci",
+      "BOOKING_CANCELLED": "Reserva cancel·lada. Motiu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "La propietat operativa va retornar al soci",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "S'ha cancel·lat l'elegibilitat de la comissió amb la reserva",
+      "COMMISSION_ELIGIBILITY_RESTORED": "S'ha restaurat l'elegibilitat de la comissió per a la nova reserva",
+      "OWNERSHIP_DISPUTE_RAISED": "Un altre soci va disputar la propietat d'aquest client: un administrador Leadrat el revisarà",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "La disputa sobre la propietat d'aquest client s'ha retirat; la vostra propietat no ha canviat",
+      "OWNERSHIP_DISPUTE_UPHELD": "S'ha revisat la disputa sobre la propietat d'aquest client; la teva propietat està confirmada",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Registrat després que la vostra disputa de propietat es resolgués a favor vostre. Nota: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Protecció acabada: es va decidir un conflicte de propietat a favor d'un altre soci. Nota: {{note}}"
     }
   },
   "columnsPanel": {
@@ -186,5 +210,116 @@
     "INVALID_FOR_COUNTRY": "Aquest número de telèfon no és vàlid per a {{country}} .",
     "COUNTRY_MISMATCH": "Seleccioneu el codi de país correcte.",
     "NOT_MOBILE": "Introduïu un número de mòbil, no un telèfon fix."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Comissió elegible",
+      "PENDING": "Comissió pendent",
+      "CANCELLED": "Comissió cancel·lada"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Se t'atribueix",
+      "DISPUTED": "Atribució impugnada"
+    }
+  },
+  "result": {
+    "none": "No es mostra cap resultat del registre. Registreu primer un client potencial.",
+    "acceptedTitle": "Plom registrat",
+    "rejectedTitle": "Plom no registrat",
+    "protectionWindow": "Finestra de protecció",
+    "protectedUntil": "Protegit Fins",
+    "openLead": "Obre plom",
+    "addAnother": "Afegeix un altre contacte",
+    "duplicate": "Duplicat: ja està protegit",
+    "duplicateHint": "Aquest client ja està protegit per a aquest projecte per un altre registre, de manera que no s'ha pogut registrar per a vostè.",
+    "existingProtectedUntil": "Registre existent protegit fins a"
+  },
+  "disputes": {
+    "title": "Les meves disputes",
+    "intro": "Impugnacions de propietat que vau plantejar per als clients que es van rebutjar com a duplicats. Un administrador Leadrat revisa cadascun d'ells.",
+    "empty": "No heu plantejat cap controvèrsia. Si un client que vau introduir és rebutjat com a duplicat, podeu impugnar-lo des del resultat del registre.",
+    "columns": {
+      "dispute": "Disputa",
+      "reason": "La teva raó",
+      "outcome": "Resultat"
+    },
+    "status": {
+      "OPEN": "En revisió",
+      "UPHELD": "No al teu favor",
+      "OVERTURNED": "Decidit al teu favor",
+      "WITHDRAWN": "Retirada"
+    },
+    "awaitingReview": "Esperant la revisió de l'administrador",
+    "openNewLead": "Obre el teu client potencial {{id}}",
+    "withdraw": "Retirar",
+    "withdrawConfirm": "Vols retirar la teva disputa per {{name}} ? La propietat actual es manté com està.",
+    "raise": "Disputa la propietat",
+    "raiseTitle": "Disputa la propietat",
+    "raiseHint": "Si aquest client va venir a tu primer, explica per què. Un administrador Leadrat ho revisarà; si decideixen a favor vostre, el líder es registra per a vosaltres.",
+    "reasonLabel": "Per què aquest client és teu?",
+    "reasonMin_one": "Com a mínim {{count}} caràcter.",
+    "reasonMin_many": "Com a mínim {{count}} caràcters.",
+    "reasonMin_other": "Com a mínim {{count}} caràcters.",
+    "submit": "Envia disputa",
+    "notProtected": "Ja ningú no té protecció sobre aquest client per a aquest projecte: podeu registrar el client ara.",
+    "raised": "La disputa {{id}} s'ha enviat a revisió.",
+    "viewAll": "Veure les meves disputes"
+  },
+  "dashboard": {
+    "title": "Tauler de control",
+    "period": "Període",
+    "lastDays_one": "{{count}} dia",
+    "lastDays_many": "{{count}} dies",
+    "lastDays_other": "{{count}} dies",
+    "emptyTitle": "Benvingut! Encara no tens cap pista.",
+    "emptyHint": "Registreu el vostre primer client: el vostre pipeline, les reserves i els terminis de protecció es mostraran aquí.",
+    "tiles": {
+      "leads": "Total de clients potencials",
+      "newInPeriod_one": "{{count}} nous en aquest període",
+      "newInPeriod_many": "{{count}} nous en aquest període",
+      "newInPeriod_other": "{{count}} nous en aquest període",
+      "accepted": "Acceptat",
+      "booked": "Reservat",
+      "bookedInPeriod_one": "{{count}} reservats en aquest període",
+      "bookedInPeriod_many": "{{count}} reservats en aquest període",
+      "bookedInPeriod_other": "{{count}} reservats en aquest període",
+      "conversion": "Conversió",
+      "conversionHint": "Els clients potencials reservats com a quota dels clients potencials acceptats",
+      "protectedNow": "Protegit ara",
+      "expiringSoon_one": "La protecció acaba en {{count}} dies",
+      "expiringSoon_many": "La protecció finalitza en {{count}} dies",
+      "expiringSoon_other": "La protecció finalitza en {{count}} dies",
+      "disputedNow": "Impugnat per altres",
+      "disputedNowHint": "Els vostres clients potencials amb una disputa oberta sobre la propietat d'un altre soci",
+      "commissionEligible": "Comissió elegible",
+      "commissionCancelled_one": "{{count}} cancel·lats",
+      "commissionCancelled_many": "{{count}} cancel·lats",
+      "commissionCancelled_other": "{{count}} cancel·lats"
+    },
+    "chart": {
+      "title_one": "Inscripcions i reserves per dia: darrer {{count}} dia",
+      "title_many": "Inscripcions i reserves per dia: darrers {{count}} dies",
+      "title_other": "Inscripcions i reserves per dia: darrers {{count}} dies",
+      "registrations": "Inscripcions",
+      "bookings": "Reserves"
+    },
+    "byStage": "Lidera per estat",
+    "bySource": "Condueix per font",
+    "byReferral": "Condueix per estat de referència",
+    "myDisputes": "Les disputes que vau plantejar",
+    "noDisputes": "No s'han plantejat disputes.",
+    "unknown": "No configurat",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM extern (simulat)",
+      "PARTNER_CRM": "Afegit pel teu equip",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integració",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "La protecció caducarà en el proper {{count}} dia",
+    "expiringTitle_many": "La protecció caducarà en els propers {{count}} dies",
+    "expiringTitle_other": "La protecció caducarà en els propers {{count}} dies",
+    "expiringEmpty": "Cap plom perd la seva protecció en aquesta finestra."
   }
 }

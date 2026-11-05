@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Book a ni tawh",
-    "pending": "Hmabak"
+    "pending": "Hmabak",
+    "status": {
+      "CONFIRMED": "Book a ni tawh",
+      "CANCELLED": "Booking tihtawp a ni"
+    }
   },
   "assign": {
     "unassigned": "Unassigned a ni lo",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Project a la awm lo (refer a ni lo)",
-    "notInList": "{{project}} (project list-ah a awm lo)"
+    "notInList": "{{project}} (project list-ah a awm lo)",
+    "protectionDays_one": "{{count}} -ni humhalhna",
+    "protectionDays_other": "{{count}} -ni humhalhna"
   },
   "journey": {
     "customer": "Dawrtu",
@@ -76,7 +82,14 @@
     "progressHistory": "Hmasawnna chanchin",
     "timesIn": "( {{timezone}} -a hun hman dan )",
     "backToMyLeads": "Ka Hruaituteah kir leh rawh",
-    "editLead": "Edit Lead a ni"
+    "editLead": "Edit Lead a ni",
+    "disputeBanner": "Partner dang pakhat chuan he customer neitu nihna hi a sawisel a ni. Leadrat admin pakhatin a enfiah mek a - an thutlukna siam hma loh chuan i venhimna chu a awm reng a ni.",
+    "booking": "Booking tih a ni",
+    "commission": "Lachhawng",
+    "notBooked": "Book a ni lo",
+    "cancelledOn": "{{date}} ah cancel a ni.",
+    "cancelReason": "A chhan: {{reason}}",
+    "cancelledHint": "Builder chuan booking a cancel - operational ownership chu i hnenah a rawn let leh a, commission eligibility pawh cancel a ni. Lead book leh a nih chuan restored a ni."
   },
   "referral": {
     "NOT_REFERRED": "Refer a ni lo (project a awm lo) .",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Builder chuan referral chu a pawm ta a ni",
       "REFERRAL_REJECTED": "Builder chuan referral chu a hnawl ta a ni. A chhan: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin chuan duplicate protection a tichhuak hma hle. A chhan: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin chuan registration chu {{from}} atanga {{to}} ah a dah leh a. A chhan: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin chuan registration chu {{from}} atanga {{to}} ah a dah leh a. A chhan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Partner dangin duplicate registration an tum chu hnawlsak a ni",
+      "BOOKING_CANCELLED": "Booking tihtawp a ni. A chhan: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operational ownership chu partner hnenah a kir leh ta a ni",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Booking nen hian Commission eligibility cancel a ni",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Booking thar atan Commission eligibility a awm leh ta",
+      "OWNERSHIP_DISPUTE_RAISED": "Partner dang pakhat chuan he customer hi neitu nihna a sawisel - Leadrat admin pakhatin a enfiah ang",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "He customer chungchanga ownership dispute chu lak let a ni - i ownership chu a danglam lo",
+      "OWNERSHIP_DISPUTE_UPHELD": "He customer chungchanga ownership dispute hi enfiah a ni - i neitu nihna chu a dik tih a chiang tawh",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "I ownership dispute chu i duh zawnga thutlukna siam a nih hnuah registered. Hriat tur: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Protection a tawp ta: ownership dispute chu partner dang duh zawngin thutlukna siam a ni. Hriat tur: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "He phone number hi {{country}} tan a hman theih loh.",
     "COUNTRY_MISMATCH": "Khawngaihin ram code dik tak thlang rawh.",
     "NOT_MOBILE": "Khawngaihin mobile number, landline ni loin i ziak lut dawn nia."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Commission tling tur a ni",
+      "PENDING": "Commission la awm mek a ni",
+      "CANCELLED": "Commission cancel a ni"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Nangmah ah a innghat a ni",
+      "DISPUTED": "Attribution chungchangah inhnialna a awm"
+    }
+  },
+  "result": {
+    "none": "Registration result tarlan tur a awm lo. Lead register hmasa phawt ang che.",
+    "acceptedTitle": "Lead register a ni",
+    "rejectedTitle": "Lead register a ni lo",
+    "protectionWindow": "Hriselna Window a ni",
+    "protectedUntil": "Protected Until a ni",
+    "openLead": "Hruaitu hawng rawh",
+    "addAnother": "Lead dang dah belh leh rawh",
+    "duplicate": "Duplicate - venhim a ni tawh",
+    "duplicateHint": "He customer hi he project atan hian registration dangin a humhim tawh a, chuvangin i tan register theih a ni lo.",
+    "existingProtectedUntil": "Registration awmsa chu humhalh a ni ang"
+  },
+  "disputes": {
+    "title": "Ka Inhnialnate",
+    "intro": "Customer te tana ownership dispute i siam te chu duplicate anga hnawl a ni. Leadrat admin pakhatin a review vek a.",
+    "empty": "Inhnialna engmah i siam lo. Customer i rawn hruai luh chu duplicate anga hnawl a nih chuan registration result atang hian i dispute thei ang.",
+    "columns": {
+      "dispute": "Inremlohna",
+      "reason": "I chhan chu",
+      "outcome": "Rahchhuak"
+    },
+    "status": {
+      "OPEN": "Review hnuaiah a awm",
+      "UPHELD": "I duh zawng ni lo",
+      "OVERTURNED": "I duh zawnga thutlukna siam",
+      "WITHDRAWN": "Inhnukdawk a ni"
+    },
+    "awaitingReview": "Admin review nghah mek a ni",
+    "openNewLead": "I lead {{id}} kha hawng rawh.",
+    "withdraw": "Lachhuak",
+    "withdrawConfirm": "{{name}} avanga i inhnialna kha hnukkir ​​rawh ? Tuna neitu nihna chu a awm ang angin a awm reng a ni.",
+    "raise": "Inhnialna neitu nihna",
+    "raiseTitle": "Inhnialna neitu nihna",
+    "raiseHint": "He customer hi i hnenah a lo kal hmasa a nih chuan a chhan sawifiah rawh. Leadrat admin pakhatin a enfiah ang; i duh zawnga thutlukna an siam chuan lead chu i tan register a ni.",
+    "reasonLabel": "Engvangin nge he customer hi i ta a nih?",
+    "reasonMin_one": "A tlem berah {{count}} character.",
+    "reasonMin_other": "A tlem berah chuan {{count}} character a awm.",
+    "submit": "Dispute thawn rawh",
+    "notProtected": "He project atan hian tumahin he customer hi venhimna an nei tawh lo - tunah hian lead hi i register thei tawh ang.",
+    "raised": "Dispute {{id}} chu enfiah turin thawn a ni.",
+    "viewAll": "Ka inhnialnate hi en rawh"
+  },
+  "dashboard": {
+    "title": "Dashboard a ni",
+    "period": "Hunbi",
+    "lastDays_one": "{{count}} ni",
+    "lastDays_other": "{{count}} ni",
+    "emptyTitle": "Chibai! Leads i la nei lo.",
+    "emptyHint": "I lead hmasa ber kha register rawh - i pipeline, booking leh protection deadline te chu hetah hian a lang ang.",
+    "tiles": {
+      "leads": "Total hmahruaitu a ni",
+      "newInPeriod_one": "Hemi hun chhung hian {{count}} thar a ni",
+      "newInPeriod_other": "Hemi hun chhung hian {{count}} thar a ni",
+      "accepted": "A pawm a ni",
+      "booked": "Book a ni tawh",
+      "bookedInPeriod_one": "{{count}} he hun chhung hian booked a ni",
+      "bookedInPeriod_other": "{{count}} he hun chhung hian booked a ni",
+      "conversion": "Piantharna",
+      "conversionHint": "Booked leads chu accepted leads atanga share angin a awm",
+      "protectedNow": "Tunah chuan venhim a ni tawh",
+      "expiringSoon_one": "Protection chu {{count}} ni-ah a tawp ang",
+      "expiringSoon_other": "Protection chu ni {{count}} chhunga tawp tur",
+      "disputedNow": "Midangte inhnialna a awm",
+      "disputedNowHint": "I leads chu partner dang atanga open ownership dispute nen",
+      "commissionEligible": "Commission tling tur a ni",
+      "commissionCancelled_one": "{{count}} chu cancel a ni",
+      "commissionCancelled_other": "{{count}} chu cancel a ni"
+    },
+    "chart": {
+      "title_one": "Ni khata registration leh booking - ni {{count}} hnuhnung ber",
+      "title_other": "Ni khata registration leh booking - ni {{count}} hnuhnung ber",
+      "registrations": "Inziak lut tur a ni",
+      "bookings": "Booking a awm bawk"
+    },
+    "byStage": "Status hmangin hma a hruai thin",
+    "bySource": "Source hmangin hma a hruai thin",
+    "byReferral": "Referral status hmangin hma a hruai thin",
+    "myDisputes": "Disputes i siam chhuah te",
+    "noDisputes": "Inhnialna a awm lo.",
+    "unknown": "Set lo",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Pawn lam CRM (simulated) 1.1.",
+      "PARTNER_CRM": "I team ten an rawn belhchhah",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integration tih a ni",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Protection chu a hnu {{count}} ni ah a tawp dawn",
+    "expiringTitle_other": "Protection chu ni {{count}} lo awm tur ah a tawp dawn",
+    "expiringEmpty": "He window-ah hian lead engmahin a venhimna a hloh lo."
   }
 }

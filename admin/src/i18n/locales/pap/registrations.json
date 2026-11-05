@@ -49,8 +49,73 @@
       "newPartnerId": "ID di partner nobo",
       "reason": "Motibu (rekerí)",
       "apply": "Apliká Override",
-      "applying": "Aplikando..."
+      "applying": "Aplikando...",
+      "cancelBookingHint": "Kanselashon ta marka e reservashon i su komishon komo kanselá, ta debolbé propiedat operashonal na e partner, i ta laga e konstruktor reserva e lead aki atrobe.",
+      "cancelBookingConfirm": "Kanselá e reservashon aki? Su komishon ta kanselá tambe. Esaki ta registrá ku bo nòmber i motibu."
     },
-    "timelineTitle": "Liña di tempu di oudit (e registrashon aki)"
+    "timelineTitle": "Liña di tempu di oudit (e registrashon aki)",
+    "bookingStatus": "Status di Reservashon",
+    "commissionAttribution": "Atribushon di Komishon",
+    "disputeOpen": "Un disputa di propiedat ta habrí riba e kliente aki - un otro partner ta bisa ku e ta di nan. E ta wòrdu disidí riba e página di Disputa.",
+    "viewDisputes": "Mira disputanan",
+    "cancellation": {
+      "title": "Reservashon kanselá",
+      "hint": "E reservashon i su komishon ta wòrdu kanselá; propiedat operashonal ta bèk serka e partner i e konstruktor por reservá e lead aki atrobe.",
+      "at": "Kanselá pa",
+      "by": "Kanselá pa",
+      "reason": "Rason"
+    }
+  },
+  "disputes": {
+    "title": "Disputanan di Propiedat",
+    "hint": "Un partner kende su registrashon a wòrdu rechasá komo un duplikado por disputa ken ta doño di e kliente. Repasá tur dos banda i disidí.",
+    "statusFilter": "Status di disputa",
+    "allStatuses": "Tur status",
+    "empty": "No tin disputa ku e status aki.",
+    "columns": {
+      "dispute": "Disputa",
+      "customer": "Kliente",
+      "project": "Proyekto",
+      "raisedBy": "Lanta pa",
+      "heldBy": "Doño aktual",
+      "status": "Estado",
+      "raisedAt": "Lanta riba"
+    },
+    "detail": {
+      "title": "Disputa {{id}}",
+      "raisedOn": "Hisa {{date}}",
+      "raisingTitle": "Lanta pa",
+      "holderTitle": "Doño aktual",
+      "partner": "Pareha",
+      "raisedBy": "Entregá pa",
+      "customerName": "Kliente",
+      "mobile": "Selular",
+      "alternateMobile": "Móbil alterno",
+      "email": "Email",
+      "project": "Proyekto",
+      "reason": "Nan motibu",
+      "registration": "Inskripshon",
+      "registeredAt": "Registrá riba",
+      "referral": "Referensia",
+      "heldMissing": "No por a haña e registrashon ku tabata tin.",
+      "resolutionTitle": "Desishon",
+      "outcome": "Resultado",
+      "note": "Nota",
+      "decidedBy": "Disidí pa",
+      "decidedAt": "A disidí riba",
+      "newRegistration": "Inskripshon nobo",
+      "decideTitle": "Disidí e disputa aki",
+      "noteLabel": "Nota ku ta splika e desishon (rekerí)",
+      "noteRequired": "Skirbi un nota pa disidí.",
+      "uphold": "Sostené",
+      "overturn": "Boltu",
+      "upholdEffect": "{{holder}} ta warda e kliente. E disputa ta cera y nada mas ta cambia.",
+      "overturnEffect": "{{holder}} su protekshon di duplikado ta kaba ora e kliente ta registrá pa {{partner}} komo un registrashon nobo.",
+      "heldBookedHelp": "E kliente aki ta wòrdu reservá pa medio di e doño aktual. Kanselá e reservashon ei promé (Admin Override riba e registrashon), despues bolter:",
+      "confirmTitle": "Bo ta sigur?",
+      "confirmUphold": "Si, sostené",
+      "confirmOverturn": "Si, bòltu",
+      "back": "Bek na Disputanan"
+    }
   }
 }

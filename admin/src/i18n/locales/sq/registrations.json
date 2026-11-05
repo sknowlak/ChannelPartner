@@ -49,8 +49,73 @@
       "newPartnerId": "ID e re e partnerit",
       "reason": "Arsyeja (e detyrueshme)",
       "apply": "Zbato \"Override\".",
-      "applying": "Po aplikon..."
+      "applying": "Po aplikon...",
+      "cancelBookingHint": "Anulimi shënon rezervimin dhe komisionin e tij si të anuluar, ia kthen pronësinë operacionale partnerit dhe e lejon ndërtuesin të rezervojë sërish këtë drejtim.",
+      "cancelBookingConfirm": "Të anulohet ky rezervim? Komisioni i tij gjithashtu anulohet. Kjo është regjistruar me emrin dhe arsyen tuaj."
     },
-    "timelineTitle": "Afati kohor i auditimit (ky regjistrim)"
+    "timelineTitle": "Afati kohor i auditimit (ky regjistrim)",
+    "bookingStatus": "Statusi i rezervimit",
+    "commissionAttribution": "Atribuimi i Komisionit",
+    "disputeOpen": "Një mosmarrëveshje pronësie është e hapur për këtë klient - një partner tjetër thotë se është i tyre. Është vendosur në faqen e Mosmarrëveshjeve.",
+    "viewDisputes": "Shiko mosmarrëveshjet",
+    "cancellation": {
+      "title": "Rezervimi u anulua",
+      "hint": "Rezervimi dhe komisioni i tij anulohen; Pronësia operacionale është rikthyer me partnerin dhe ndërtuesi mund ta rezervojë sërish këtë drejtim.",
+      "at": "Anuluar në",
+      "by": "Anuluar nga",
+      "reason": "Arsyeja"
+    }
+  },
+  "disputes": {
+    "title": "Mosmarrëveshjet e Pronësisë",
+    "hint": "Një partner, regjistrimi i të cilit është refuzuar si dublikatë, mund të kundërshtojë se kush e zotëron klientin. Rishikoni të dyja palët dhe vendosni.",
+    "statusFilter": "Statusi i mosmarrëveshjes",
+    "allStatuses": "Të gjitha statuset",
+    "empty": "Nuk ka mosmarrëveshje me këtë status.",
+    "columns": {
+      "dispute": "mosmarrëveshje",
+      "customer": "Klienti",
+      "project": "Projekti",
+      "raisedBy": "E rritur nga",
+      "heldBy": "Pronari aktual",
+      "status": "Statusi",
+      "raisedAt": "E ngritur më"
+    },
+    "detail": {
+      "title": "Mosmarrëveshja {{id}}",
+      "raisedOn": "Rritur {{date}}",
+      "raisingTitle": "E rritur nga",
+      "holderTitle": "Pronari aktual",
+      "partner": "Partner",
+      "raisedBy": "Dorëzuar nga",
+      "customerName": "Klienti",
+      "mobile": "Celular",
+      "alternateMobile": "Celular alternativ",
+      "email": "Email",
+      "project": "Projekti",
+      "reason": "Arsyeja e tyre",
+      "registration": "Regjistrimi",
+      "registeredAt": "Regjistruar në",
+      "referral": "Referimi",
+      "heldMissing": "Regjistrimi i mbajtur nuk u gjet.",
+      "resolutionTitle": "Vendimi",
+      "outcome": "Rezultati",
+      "note": "Shënim",
+      "decidedBy": "E vendosur nga",
+      "decidedAt": "Vendosi për",
+      "newRegistration": "Regjistrim i ri",
+      "decideTitle": "Vendosni këtë mosmarrëveshje",
+      "noteLabel": "Shënim që shpjegon vendimin (kërkohet)",
+      "noteRequired": "Shkruani një shënim për të vendosur.",
+      "uphold": "Mbështet",
+      "overturn": "Përmbysja",
+      "upholdEffect": "{{holder}} mban klientin. Mosmarrëveshja është mbyllur dhe asgjë tjetër nuk ndryshon.",
+      "overturnEffect": "Mbrojtja e dyfishtë e {{holder}} përfundon tani dhe klienti është regjistruar për {{partner}} si një regjistrim i ri.",
+      "heldBookedHelp": "Ky klient është rezervuar përmes pronarit aktual. Anuloni fillimisht atë rezervim (Admin Anuloje regjistrimin), më pas anuloni:",
+      "confirmTitle": "je i sigurt?",
+      "confirmUphold": "Po, mbaj",
+      "confirmOverturn": "Po, përmbys",
+      "back": "Kthehu te Mosmarrëveshjet"
+    }
   }
 }

@@ -30,7 +30,8 @@
       "registered": "Yandikishijwe"
     },
     "booked": "Vyabutswe",
-    "empty": "Nta n’umwe ararungikwa."
+    "empty": "Nta n’umwe ararungikwa.",
+    "bookingCancelled": "Gusaba gusubirwamwo"
   },
   "detail": {
     "customer": "Umukiriya",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Ugutora kwemejwe.",
       "accepted": "Ugurungikwa kwemewe.",
-      "rejected": "Ukwoherezwa kwaranse."
+      "rejected": "Ukwoherezwa kwaranse.",
+      "bookingCancelled": "Gusaba gutora vyasubitswe."
     },
-    "backToReferrals": "Gusubira kuvyoherejwe"
+    "backToReferrals": "Gusubira kuvyoherejwe",
+    "bookingCancelled": "Gusaba gusubirwamwo",
+    "cancelBooking": "Gukuraho ububiko",
+    "cancelReasonLabel": "Impamvu yo gusubiramwo (yerekanwa ku mufatanyabikorwa) *",
+    "cancelBookingHint": "Ubutunzi bw’ibikorwa busubira ku mufatanyabikorwa kandi uburenganzira bwabo bwo guhabwa komisiyo burakurwaho. Ivyo bishobora gusubirwamwo mu nyuma.",
+    "cancelBookingConfirm": "Gukuraho ububiko"
   },
   "history": {
     "title": "Kahise",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Ukwemererwa kwa komisiyo kwaremewe",
       "HANDOVER_COMPLETED": "Gutanga vyarangiye",
       "ADMIN_PROTECTION_RELEASED": "Admin yasohoye uburinzi bubiri kare. Impamvu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Umuyobozi yasubiyemwo ukwandikisha kuva kuri {{from}} gushika kuri {{to}} . Impamvu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Umuyobozi yasubiyemwo ukwandikisha kuva kuri {{from}} gushika kuri {{to}} . Impamvu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Igerageza ry'ukwiyandikisha ry'uwundi mufatanyabikorwa ryaranse",
+      "BOOKING_CANCELLED": "Gusaba gutora vyasubitswe. Impamvu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ubutunzi bw'ibikorwa bwagarutse ku mufatanyabikorwa",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ukwemererwa kwa komisiyo kwasubitswe n'ugusaba",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ukwemererwa kwa komisiyo kwagarutse ku bijanye n'ugusaba gushasha"
     }
   }
 }

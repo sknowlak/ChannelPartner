@@ -29,7 +29,8 @@
       "registered": "បានចុះឈ្មោះ"
     },
     "booked": "បានកក់ទុក",
-    "empty": "មិនទាន់មានការណែនាំទេ។"
+    "empty": "មិនទាន់មានការណែនាំទេ។",
+    "bookingCancelled": "ការកក់ត្រូវបានលុបចោល"
   },
   "detail": {
     "customer": "អតិថិជន",
@@ -52,9 +53,15 @@
     "notice": {
       "booked": "ការកក់ត្រូវបានបញ្ជាក់។",
       "accepted": "ឯកសារយោងត្រូវបានទទួលយក។",
-      "rejected": "ការ​ណែនាំ​ត្រូវ​បាន​បដិសេធ។"
+      "rejected": "ការ​ណែនាំ​ត្រូវ​បាន​បដិសេធ។",
+      "bookingCancelled": "ការកក់ត្រូវបានលុបចោល។"
     },
-    "backToReferrals": "ត្រឡប់ទៅ ឯកសារយោង"
+    "backToReferrals": "ត្រឡប់ទៅ ឯកសារយោង",
+    "bookingCancelled": "ការកក់ត្រូវបានលុបចោល",
+    "cancelBooking": "បោះបង់ការកក់",
+    "cancelReasonLabel": "ហេតុផលសម្រាប់ការលុបចោល (បង្ហាញដល់ដៃគូ) *",
+    "cancelBookingHint": "ភាពជាម្ចាស់ប្រតិបត្តិការត្រលប់ទៅដៃគូវិញ ហើយសិទ្ធិទទួលបានកម្រៃជើងសាររបស់ពួកគេត្រូវបានលុបចោល។ ការនាំមុខអាចត្រូវបានកក់ម្តងទៀតនៅពេលក្រោយ។",
+    "cancelBookingConfirm": "បោះបង់ការកក់"
   },
   "history": {
     "title": "ប្រវត្តិសាស្ត្រ",
@@ -81,7 +88,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "សិទ្ធិទទួលបានគណៈកម្មាការត្រូវបានបង្កើតឡើង",
       "HANDOVER_COMPLETED": "ការប្រគល់ជូនបានបញ្ចប់",
       "ADMIN_PROTECTION_RELEASED": "Admin បញ្ចេញការការពារស្ទួនមុនគេ។ ហេតុផល៖ {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "អ្នកគ្រប់គ្រងបានចាត់តាំងការចុះឈ្មោះឡើងវិញពី {{from}} ទៅ {{to}} ។ ហេតុផល៖ {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "អ្នកគ្រប់គ្រងបានចាត់តាំងការចុះឈ្មោះឡើងវិញពី {{from}} ទៅ {{to}} ។ ហេតុផល៖ {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "ការប៉ុនប៉ងចុះឈ្មោះស្ទួនដោយដៃគូផ្សេងទៀតត្រូវបានបដិសេធ",
+      "BOOKING_CANCELLED": "ការកក់ត្រូវបានលុបចោល។ ហេតុផល៖ {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "កម្មសិទ្ធិប្រតិបត្តិការបានប្រគល់ជូនដៃគូវិញ។",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "សិទ្ធិទទួលបានគណៈកម្មាការត្រូវបានលុបចោលជាមួយនឹងការកក់",
+      "COMMISSION_ELIGIBILITY_RESTORED": "សិទ្ធិទទួលបានគណៈកម្មាការត្រូវបានស្ដារឡើងវិញសម្រាប់ការកក់ថ្មី។"
     }
   }
 }

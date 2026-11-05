@@ -49,8 +49,73 @@
       "newPartnerId": "ID mpiara-miasa vaovao",
       "reason": "Antony (takina)",
       "apply": "Ampiharo ny Override",
-      "applying": "Mampihatra..."
+      "applying": "Mampihatra...",
+      "cancelBookingHint": "Ny fanafoanana dia manamarika ny famandrihana sy ny vaomiera ho nofoanana, mamerina ny fananana miasa amin'ny mpiara-miombon'antoka, ary mamela ny mpanamboatra hanoratra izany fitarihana izany indray.",
+      "cancelBookingConfirm": "Foana ity famandrihana ity? Foanana koa ny vaomiera. Ity dia voarakitra miaraka amin'ny anaranao sy ny antony."
     },
-    "timelineTitle": "Timeline Audit (ity fisoratana anarana ity)"
+    "timelineTitle": "Timeline Audit (ity fisoratana anarana ity)",
+    "bookingStatus": "Status famandrihana",
+    "commissionAttribution": "Commission Attribution",
+    "disputeOpen": "Misokatra ny fifanolanana amin'ity mpanjifa ity - misy mpiara-miasa hafa milaza fa azy ireo. Tapaka ao amin'ny pejy Dispute izany.",
+    "viewDisputes": "Jereo ny fifandirana",
+    "cancellation": {
+      "title": "Nofoanana ny famandrihana",
+      "hint": "Foana ny famandrihana sy ny vaomiera; Miverina miaraka amin'ny mpiara-miombon'antoka ny tompon'andraikitra ary afaka mamandrika ity fitarihana ity indray ny mpanamboatra.",
+      "at": "Nofoanana tamin'ny",
+      "by": "Nofoanan'ny",
+      "reason": "antony"
+    }
+  },
+  "disputes": {
+    "title": "Fifandirana momba ny fananana",
+    "hint": "Ny mpiara-miasa izay nolavina ny fisoratana anarana ho dika mitovy dia afaka miady hevitra hoe iza no tompon'ny mpanjifa. Avereno jerena ny roa tonta ary manapaha hevitra.",
+    "statusFilter": "Satan'ny fifandirana",
+    "allStatuses": "Sata rehetra",
+    "empty": "Tsy misy fifandirana amin'ity sata ity.",
+    "columns": {
+      "dispute": "fifandirana",
+      "customer": "mpanjifa",
+      "project": "TETIKASA",
+      "raisedBy": "Natsangana tamin'ny",
+      "heldBy": "Tompona ankehitriny",
+      "status": "sata",
+      "raisedAt": "Natsangana tamin'ny"
+    },
+    "detail": {
+      "title": "Fifandirana {{id}}",
+      "raisedOn": "Natsangana {{date}}",
+      "raisingTitle": "Natsangana tamin'ny",
+      "holderTitle": "Tompona ankehitriny",
+      "partner": "mpiara-miasa",
+      "raisedBy": "Natolotr'i",
+      "customerName": "mpanjifa",
+      "mobile": "Mobile",
+      "alternateMobile": "Finday hafa",
+      "email": "mailaka",
+      "project": "TETIKASA",
+      "reason": "Ny anton'izy ireo",
+      "registration": "fisoratana anarana",
+      "registeredAt": "Nisoratra anarana tamin'ny",
+      "referral": "anarana",
+      "heldMissing": "Tsy hita ny fisoratana anarana notazonina.",
+      "resolutionTitle": "FANAPAHAN-KEVITRA",
+      "outcome": "vokatra",
+      "note": "Fanamarihana",
+      "decidedBy": "Nanapa-kevitra ny",
+      "decidedAt": "Nanapa-kevitra tamin'ny",
+      "newRegistration": "fisoratana anarana vaovao",
+      "decideTitle": "Tapaho ity disadisa ity",
+      "noteLabel": "Fanamarihana manazava ny fanapahan-kevitra (takina)",
+      "noteRequired": "Manorata naoty mba hanapahana hevitra.",
+      "uphold": "Tohano",
+      "overturn": "handravana",
+      "upholdEffect": "{{holder}} dia mitazona ny mpanjifa. Mihidy ny disadisa ary tsy misy fiovana hafa.",
+      "overturnEffect": "Mifarana izao ny fiarovan'i {{holder}} ary misoratra anarana amin'ny {{partner}} ho fisoratana anarana vaovao ny mpanjifa.",
+      "heldBookedHelp": "Ity mpanjifa ity dia mamandrika amin'ny alàlan'ny tompony ankehitriny. Foana aloha io famandrihana io (Admin Override amin'ny fisoratana anarana), dia avadika:",
+      "confirmTitle": "Azonao antoka ve izany?",
+      "confirmUphold": "Eny, tohano",
+      "confirmOverturn": "Eny, mivadika",
+      "back": "Hiverina any amin'ny Disputes"
+    }
   }
 }

@@ -43,7 +43,9 @@
       "name": "Ism",
       "city": "Shahar",
       "status": "Status",
-      "actions": "Harakatlar"
+      "actions": "Harakatlar",
+      "protection": "Ikki nusxadagi himoya",
+      "matchOn": "Dublikatlar mos keladi"
     },
     "closeReferrals": "Tavsiya qilish uchun yoping",
     "reopen": "Qayta oching",
@@ -55,6 +57,25 @@
       "add": "Loyiha qo'shish",
       "created": "Yaratilgan {{name}} ."
     },
-    "back": "Quruvchilar sahifasiga qaytish"
+    "back": "Quruvchilar sahifasiga qaytish",
+    "protection": {
+      "days_one": "{{count}} kun",
+      "days_other": "{{count}} kun",
+      "globalDays_one": "Global standart ( {{count}} kun)",
+      "globalDays_other": "Global standart ( {{count}} kun)",
+      "globalDefault": "Global standart",
+      "placeholder": "Himoya kunlari (bo'sh = global standart)",
+      "saved": "{{name}} uchun takroriy himoya yangilandi.",
+      "hint": "Takroriy himoya: 1-3650 kun yoki Sozlamalar orqali global standartdan foydalanish uchun bo‘sh qoldiring. O'zgartirish faqat yangi ro'yxatga olish uchun amal qiladi - mavjudlari o'z muddatini saqlab qoladi."
+    },
+    "matching": {
+      "global": "Global standart",
+      "globalWith": "Global standart ( {{fields}} )",
+      "mobile": "Mobil raqam",
+      "email": "Elektron pochta",
+      "both": "Mobil raqam + elektron pochta",
+      "saved": "{{name}} uchun takroriy moslik yangilandi",
+      "hint": "Qaysi tafsilotlar ikkita ro'yxatdan o'tishni loyiha uchun bitta mijozga aylantiradi. O'zgartirishlar bundan buyon takroriy cheklarga nisbatan qo'llaniladi; mavjud himoya ta'sir qilmaydi."
+    }
   }
 }

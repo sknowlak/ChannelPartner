@@ -49,8 +49,73 @@
       "newPartnerId": "ID ntswa ya Mufarisani",
       "reason": "Muhumbulo (u a ṱoḓea)",
       "apply": "Shumisani u fhirisa",
-      "applying": "U ita khumbelo..."
+      "applying": "U ita khumbelo...",
+      "cancelBookingHint": "U khansela zwi swaya u buka na khomishini yazwo sa zwo khanselwaho, zwi vhuisa vhuṋe ha mushumo kha mufarisani, na u tendela mufhaṱi u buka vhurangaphanḓa uhu hafhu.",
+      "cancelBookingConfirm": "Kha vha khantsele vhupo uhu? Khomishini yayo na yone yo khanselwa. Hezwi zwo ṅwaliwa na dzina ḽaṋu na tshiitisi."
     },
-    "timelineTitle": "Tshifhinga tsha odithi (u ṅwaliswa uhu)"
+    "timelineTitle": "Tshifhinga tsha odithi (u ṅwaliswa uhu)",
+    "bookingStatus": "Tshiimo tsha u buka",
+    "commissionAttribution": "U ṋewa ha Khomishini",
+    "disputeOpen": "Khanedzano ya vhuṋe yo vulea kha khasiṱama iyi - muṅwe mufarisi u ri ndi yawe. I dzhia tsheo kha siaṱari ḽa Dzikhakhathi.",
+    "viewDisputes": "Vhonani khanedzano",
+    "cancellation": {
+      "title": "U buka zwo khanselwa",
+      "hint": "U buka na khomishini yazwo zwi a khanselwa; vhuṋe ha mushumo ho vhuya na mufarisani nahone mufhaṱi a nga dovha a buka vhurangaphanḓa uhu.",
+      "at": "Yo khanselwa nga",
+      "by": "Zwo khanselwa nga",
+      "reason": "Tshiitisi"
+    }
+  },
+  "disputes": {
+    "title": "Khanedzano dza vhuṋe",
+    "hint": "Mufarisani we u ṅwaliswa hawe ha hanelwa sa kopi a nga hanedza uri ndi nnyi ane a vha muṋe wa khasiṱama. Vusulusani masia oṱhe nahone ni dzhie phetho.",
+    "statusFilter": "Tshiimo tsha khanedzano",
+    "allStatuses": "Maimo othe",
+    "empty": "Ahuna khanedzano na tshiimo itshi.",
+    "columns": {
+      "dispute": "Phambano",
+      "customer": "Murengi",
+      "project": "Thandela",
+      "raisedBy": "O aluswa nga .",
+      "heldBy": "Muṋe wa zwino",
+      "status": "Tshiimo",
+      "raisedAt": "O aluswa nga"
+    },
+    "detail": {
+      "title": "Khanedzano {{id}}",
+      "raisedOn": "Yo takuswa {{date}}",
+      "raisingTitle": "O aluswa nga .",
+      "holderTitle": "Muṋe wa zwino",
+      "partner": "Mufarisi",
+      "raisedBy": "Zwo rumelwa nga",
+      "customerName": "Murengi",
+      "mobile": "Thendeleki",
+      "alternateMobile": "Luṅwe luṱingothendeleki",
+      "email": "Imeili",
+      "project": "Thandela",
+      "reason": "Muhumbulo wavho .",
+      "registration": "U nwalisa",
+      "registeredAt": "Vho nwaliswa nga",
+      "referral": "U rumelwa",
+      "heldMissing": "U ṅwaliswa ho farwaho a ho ngo wanala.",
+      "resolutionTitle": "Tsheo",
+      "outcome": "Mvelelo",
+      "note": "Noti",
+      "decidedBy": "Zwo dzhiiwa nga .",
+      "decidedAt": "Ho dzhiiwa tsheo kha",
+      "newRegistration": "U ṅwaliswa huswa",
+      "decideTitle": "Kha vha dzhie tsheo kha khanedzano iyi .",
+      "noteLabel": "Notsi i ṱalutshedzaho tsheo (i ṱoḓeaho)",
+      "noteRequired": "Ṅwalani notsi u itela u dzhia phetho.",
+      "uphold": "Tikedza",
+      "overturn": "U rembulusa",
+      "upholdEffect": "{{holder}} u vhulunga khasiṱama. Khanedzano yo vala ahuna zwinwe zwine zwa shanduka.",
+      "overturnEffect": "Tsireledzo ya u dovholola {{holder}} i fhela zwino nahone khasiṱama yo ṅwaliswa kha {{partner}} sa u ṅwaliswa huswa.",
+      "heldBookedHelp": "Murengi uyu o bookiwa nga muṋe wa zwino. Kha vha thome nga u khansela u buka honoho (Admin Override kha u ṅwalisa), vha kone u fhirisela murahu:",
+      "confirmTitle": "Ni na vhuṱanzi?",
+      "confirmUphold": "Ee, tikedzani",
+      "confirmOverturn": "Ee, u rembulusa",
+      "back": "U vhuyelela kha dzikhakhathi"
+    }
   }
 }

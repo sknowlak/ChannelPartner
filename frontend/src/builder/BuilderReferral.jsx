@@ -3,11 +3,11 @@ import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { statusLabel } from '../i18n/dataLabels';
 import { formatDate, formatDateTime } from '../utils/timezone';
-import { bookReferral, decideReferral, getReferral, getReferralAudit } from './builderClient';
+import { bookReferral, cancelReferralBooking, decideReferral, getReferral, getReferralAudit } from './builderClient';
 import { REFERRAL_BADGE, actorLabel, describeEvent, referralLabel } from './referralLabels';
 
 // One referral: what the builder may see (field sharing), accept/reject,
-// confirm the booking, and the organization-level history.
+// confirm or cancel the booking, and the organization-level history.
 export default function BuilderReferral() {
   const { t } = useTranslation(['builder', 'common', 'data']);
   const { registrationId } = useParams();
@@ -17,6 +17,9 @@ export default function BuilderReferral() {
   const [busy, setBusy] = useState(false);
   const [rejecting, setRejecting] = useState(false);
   const [reason, setReason] = useState('');
+  // Cancelling a booking (section 62) needs a reason, shown to the partner.
+  const [cancelling, setCancelling] = useState(false);
+  const [cancelReason, setCancelReason] = useState('');
   // Holds a translation key so the notice follows a language switch.
   const [notice, setNotice] = useState(null);
 
@@ -39,6 +42,8 @@ export default function BuilderReferral() {
       await fn();
       setNotice(done);
       setRejecting(false);
+      setCancelling(false);
+      setCancelReason('');
       await load();
     } catch (err) {
       setError(err.response?.data?.reason || err.message);
@@ -75,8 +80,30 @@ export default function BuilderReferral() {
             <span className={`badge ${REFERRAL_BADGE[ref.referralStatus]}`}>{referralLabel(t, ref.referralStatus)}</span>
             {ref.referralDecision?.reason && <div className="hint">{t('builder:detail.reason', { reason: ref.referralDecision.reason })}</div>}
           </dd>
-          <dt>{t('builder:detail.booking')}</dt><dd>{ref.isBooked ? t('builder:detail.bookedOwner') : t('builder:detail.notBooked')}</dd>
+          <dt>{t('builder:detail.booking')}</dt>
+          <dd>
+            {ref.isBooked && t('builder:detail.bookedOwner')}
+            {!ref.isBooked && ref.bookingStatus === 'CANCELLED' && <span className="badge rejected">{t('builder:detail.bookingCancelled')}</span>}
+            {!ref.isBooked && ref.bookingStatus !== 'CANCELLED' && t('builder:detail.notBooked')}
+          </dd>
         </dl>
+
+        {ref.isBooked && !cancelling && (
+          <div style={{ display: 'flex', gap: '0.5rem', marginTop: '1rem', flexWrap: 'wrap' }}>
+            <button className="danger" disabled={busy} onClick={() => setCancelling(true)}>{t('builder:detail.cancelBooking')}</button>
+          </div>
+        )}
+        {cancelling && (
+          <div className="field" style={{ marginTop: '0.8rem' }}>
+            <label htmlFor="builder-cancel-reason">{t('builder:detail.cancelReasonLabel')}</label>
+            <textarea id="builder-cancel-reason" rows={2} maxLength={500} value={cancelReason} onChange={(e) => setCancelReason(e.target.value)} />
+            <span className="hint">{t('builder:detail.cancelBookingHint')}</span>
+            <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.4rem', flexWrap: 'wrap' }}>
+              <button className="danger" disabled={busy || !cancelReason.trim()} onClick={() => act(() => cancelReferralBooking(registrationId, cancelReason.trim()), 'builder:detail.notice.bookingCancelled')}>{t('builder:detail.cancelBookingConfirm')}</button>
+              <button className="secondary" onClick={() => setCancelling(false)}>{t('common:actions.cancel')}</button>
+            </div>
+          </div>
+        )}
 
         {!ref.isBooked && (
           <div style={{ display: 'flex', gap: '0.5rem', marginTop: '1rem', flexWrap: 'wrap' }}>

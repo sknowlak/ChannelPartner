@@ -29,7 +29,8 @@
       "registered": "Terdaftar"
     },
     "booked": "Dipesan",
-    "empty": "Belum ada referensi."
+    "empty": "Belum ada referensi.",
+    "bookingCancelled": "Pemesanan dibatalkan"
   },
   "detail": {
     "customer": "Pelanggan",
@@ -52,9 +53,15 @@
     "notice": {
       "booked": "Pemesanan dikonfirmasi.",
       "accepted": "Rujukan diterima.",
-      "rejected": "Rujukan ditolak."
+      "rejected": "Rujukan ditolak.",
+      "bookingCancelled": "Pemesanan dibatalkan."
     },
-    "backToReferrals": "Kembali ke Referensi"
+    "backToReferrals": "Kembali ke Referensi",
+    "bookingCancelled": "Pemesanan dibatalkan",
+    "cancelBooking": "Batalkan Pemesanan",
+    "cancelReasonLabel": "Alasan pembatalan (ditunjukkan kepada mitra) *",
+    "cancelBookingHint": "Kepemilikan operasional kembali ke mitra dan kelayakan komisi mereka dibatalkan. Prospeknya dapat dipesan lagi nanti.",
+    "cancelBookingConfirm": "Batalkan pemesanan"
   },
   "history": {
     "title": "Sejarah",
@@ -81,7 +88,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisi dibuat",
       "HANDOVER_COMPLETED": "Serah terima selesai",
       "ADMIN_PROTECTION_RELEASED": "Admin merilis perlindungan duplikat lebih awal. Alasan: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin menugaskan ulang pendaftaran dari {{from}} ke {{to}} . Alasan: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin menugaskan ulang pendaftaran dari {{from}} ke {{to}} . Alasan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Upaya pendaftaran duplikat oleh mitra lain ditolak",
+      "BOOKING_CANCELLED": "Pemesanan dibatalkan. Alasan: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Kepemilikan operasional dikembalikan kepada mitra",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kelayakan komisi dibatalkan dengan pemesanan",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kelayakan komisi dipulihkan untuk pemesanan baru"
     }
   }
 }

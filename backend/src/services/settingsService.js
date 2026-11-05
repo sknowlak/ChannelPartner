@@ -71,4 +71,4 @@ async function updateSettings(partial, actor) {
   return cache;
 }
 
-module.exports = { getSettings, updateSettings };
+module.exports = { getSettings, updateSettings, MATCH_FIELDS };

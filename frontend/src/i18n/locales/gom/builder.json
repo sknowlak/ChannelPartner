@@ -30,7 +30,8 @@
       "registered": "नोंदणी केल्ली"
     },
     "booked": "बुक केल्लें",
-    "empty": "अजून रेफरल ना."
+    "empty": "अजून रेफरल ना.",
+    "bookingCancelled": "बुकींग रद्द जालें"
   },
   "detail": {
     "customer": "गिरायक",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "बुकींग पुष्टी जाली.",
       "accepted": "रेफरल मान्य केला.",
-      "rejected": "रेफरल नाका म्हणलें."
+      "rejected": "रेफरल नाका म्हणलें.",
+      "bookingCancelled": "बुकींग रद्द जालें."
     },
-    "backToReferrals": "परत रेफरलांचेर"
+    "backToReferrals": "परत रेफरलांचेर",
+    "bookingCancelled": "बुकींग रद्द जालें",
+    "cancelBooking": "बुकींग रद्द करचें",
+    "cancelReasonLabel": "रद्द करपाचें कारण (साथीक दाखयलां) *",
+    "cancelBookingHint": "कार्यकारी मालकी परत भागीदाराक वता आनी तांची कमिशन पात्रताय रद्द जाता. फुडें आघाडी परतून बुक करूं येता.",
+    "cancelBookingConfirm": "बुकींग रद्द करचें"
   },
   "history": {
     "title": "इतिहास",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "आयोगाची पात्रताय निर्माण जाली",
       "HANDOVER_COMPLETED": "हॅन्डओव्हर पुराय जालें",
       "ADMIN_PROTECTION_RELEASED": "एडमिनान डुप्लीकेट संरक्षण बेगीन सोडलें. कारण: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "प्रशासकान {{from}} कडल्यान {{to}} कडेन नोंदणी परतून नेमली. कारण: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "प्रशासकान {{from}} कडल्यान {{to}} कडेन नोंदणी परतून नेमली. कारण: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "दुसऱ्या भागीदारान केल्लो डुप्लीकेट नोंदणी यत्न न्हयकारलो",
+      "BOOKING_CANCELLED": "बुकींग रद्द जालें. कारण: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "कार्यकारी मालकी भागीदाराक परतून मेळ्ळी",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "बुकींग वांगडा आयोगाची पात्रताय रद्द",
+      "COMMISSION_ELIGIBILITY_RESTORED": "नव्या बुकींगा खातीर आयोगाची पात्रताय परतून मेळ्ळी"
     }
   }
 }

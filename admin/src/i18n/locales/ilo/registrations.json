@@ -49,8 +49,73 @@
       "newPartnerId": "Baro ID ti Partner",
       "reason": "Rason (kasapulan) .",
       "apply": "Iyaplikar ti Override",
-      "applying": "Panag-apply ti..."
+      "applying": "Panag-apply ti...",
+      "cancelBookingHint": "Ti panagkansela ket mangmarka ti panag-book ken ti komisionna a kas nakansela, mangisubli ti operasional a panagtagikua iti kasosio, ken bay-anna ti managibangon a mangi-book manen iti daytoy a lead.",
+      "cancelBookingConfirm": "Kanselaen daytoy a panag-book? Makansela met ti komisionna. Daytoy ket nai-log babaen ti nagan ken rasonmo."
     },
-    "timelineTitle": "Oras ti Panag-audit (daytoy a panagrehistro) ."
+    "timelineTitle": "Oras ti Panag-audit (daytoy a panagrehistro) .",
+    "bookingStatus": "Kasasaad ti Panag-book",
+    "commissionAttribution": "Atribusion ti Komision",
+    "disputeOpen": "Silulukat ti panagsusupiat ti panagtagikua iti daytoy a kustomer - kuna ti sabali a kasosio a kukuada dayta. Maikeddeng dayta iti panid ti Panagsusupiat.",
+    "viewDisputes": "Kitaen dagiti panagsusupiat",
+    "cancellation": {
+      "title": "Nakansela ti panag-book",
+      "hint": "Makansela ti booking ken ti komisionna; operational ownership ket nagsubli iti partner ken ti builder ket mabalinna manen nga i-book daytoy a lead.",
+      "at": "Nakansela idi",
+      "by": "Nakansela ni...",
+      "reason": "Rason"
+    }
+  },
+  "disputes": {
+    "title": "Dagiti Panagsusupiat iti Panagtagikua",
+    "hint": "Ti partner a nailaksid ti rehistrasionna kas duplikado ket mabalin a makisuppiat no siasino ti makinkukua iti kustomer. Repasuen ti agsumbangir a dasig ket agdesision.",
+    "statusFilter": "Kasasaad ti panagsusupiat",
+    "allStatuses": "Amin a kasasaad",
+    "empty": "Awan ti panagsusupiat iti daytoy a kasasaad.",
+    "columns": {
+      "dispute": "Ergo",
+      "customer": "Kostumer",
+      "project": "Proyekto",
+      "raisedBy": "Napadakkel ni",
+      "heldBy": "Agdama nga akinkukua",
+      "status": "Estado",
+      "raisedAt": "Raised on"
+    },
+    "detail": {
+      "title": "Panagsusupiat {{id}}",
+      "raisedOn": "Naingato {{date}}",
+      "raisingTitle": "Napadakkel ni",
+      "holderTitle": "Agdama nga akinkukua",
+      "partner": "Kaasmang",
+      "raisedBy": "Insubmitir ni",
+      "customerName": "Kostumer",
+      "mobile": "Mobile",
+      "alternateMobile": "Alternatibo a mobile",
+      "email": "I-email",
+      "project": "Proyekto",
+      "reason": "Ti rasonda",
+      "registration": "Panagrehistro",
+      "registeredAt": "Nairehistro iti",
+      "referral": "Panangiturong",
+      "heldMissing": "Saan a nasarakan ti natengngel a rehistrasion.",
+      "resolutionTitle": "Desision",
+      "outcome": "Maad",
+      "note": "Lagipen",
+      "decidedBy": "Inkeddeng ni",
+      "decidedAt": "Inkeddeng ti",
+      "newRegistration": "Baro a panagrehistro",
+      "decideTitle": "Ikeddengyo daytoy a panagsusupiat",
+      "noteLabel": "Nota a mangilawlawag iti pangngeddeng (kasapulan) .",
+      "noteRequired": "Mangisurat iti nota tapno makaikeddeng.",
+      "uphold": "Itandudo",
+      "overturn": "Agbaliktad",
+      "upholdEffect": "{{holder}} ti pagtalinaedenna ti kustomer. Naserraan ti susik ket awanen ti sabali nga agbaliw.",
+      "overturnEffect": "Agpatingga itan ti duplikado a proteksion ti {{holder}} ken ti kustomer ket nairehistro para iti {{partner}} a kas baro a panagrehistro.",
+      "heldBookedHelp": "Daytoy a kustomer ket na-book babaen ti agdama a makinkukua. Kanselaen nga umuna dayta a booking (Admin Override iti panagrehistro), kalpasanna baliktaden:",
+      "confirmTitle": "Siguradoka kadi?",
+      "confirmUphold": "Wen, itandudo",
+      "confirmOverturn": "Wen, baliktaden",
+      "back": "Agsubli kadagiti Panagsusupiat"
+    }
   }
 }

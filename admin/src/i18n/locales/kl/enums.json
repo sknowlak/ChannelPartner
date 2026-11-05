@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Pisinnaatitaavoq",
-    "PENDING": "Utaqqivoq"
+    "PENDING": "Utaqqivoq",
+    "CANCELLED": "Taarserneqarpoq"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Marloqiusamik illersuineq siusinnerusukkut saqqummiukkit",
-    "REASSIGN_PARTNER": "Suleqatigiissitamut allamut tunniussineq"
+    "REASSIGN_PARTNER": "Suleqatigiissitamut allamut tunniussineq",
+    "CANCEL_BOOKING": "Inniminniineq unitsiguk"
   },
   "dataType": {
     "TEXT": "Allataq",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super Admin",
     "ADMIN": "Aqutsisoq"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Uppernarsarneqarpoq",
+    "CANCELLED": "Taarserneqarpoq"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Attributereq",
+    "DISPUTED": "Oqallinneq"
+  },
+  "disputeStatus": {
+    "OPEN": "Ammasoq",
+    "UPHELD": "Uppernarsarneqarpoq",
+    "OVERTURNED": "Utertinneqarpoq",
+    "WITHDRAWN": "Utertinneqarpoq"
   }
 }

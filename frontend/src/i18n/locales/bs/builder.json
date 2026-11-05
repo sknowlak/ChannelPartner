@@ -31,7 +31,8 @@
       "registered": "Registrovan"
     },
     "booked": "Rezervisano",
-    "empty": "Još nema preporuka."
+    "empty": "Još nema preporuka.",
+    "bookingCancelled": "Rezervacija je otkazana"
   },
   "detail": {
     "customer": "Kupac",
@@ -54,9 +55,15 @@
     "notice": {
       "booked": "Rezervacija potvrđena.",
       "accepted": "Preporuka prihvaćena.",
-      "rejected": "Preporuka odbijena."
+      "rejected": "Preporuka odbijena.",
+      "bookingCancelled": "Rezervacija je otkazana."
     },
-    "backToReferrals": "Povratak na preporuke"
+    "backToReferrals": "Povratak na preporuke",
+    "bookingCancelled": "Rezervacija je otkazana",
+    "cancelBooking": "Otkažite rezervaciju",
+    "cancelReasonLabel": "Razlog otkazivanja (prikazano partneru) *",
+    "cancelBookingHint": "Operativno vlasništvo se vraća partneru i njihova podobnost za proviziju je otkazana. Vodstvo se može ponovo rezervisati kasnije.",
+    "cancelBookingConfirm": "Otkažite rezervaciju"
   },
   "history": {
     "title": "Istorija",
@@ -87,7 +94,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Podobnost provizije stvorena",
       "HANDOVER_COMPLETED": "Primopredaja obavljena",
       "ADMIN_PROTECTION_RELEASED": "Administrator je ranije objavio zaštitu od duplikata. Razlog: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Administrator je ponovo dodijelio registraciju sa {{from}} na {{to}} . Razlog: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Administrator je ponovo dodijelio registraciju sa {{from}} na {{to}} . Razlog: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Pokušaj dupliranja registracije od strane drugog partnera je odbijen",
+      "BOOKING_CANCELLED": "Rezervacija je otkazana. Razlog: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operativno vlasništvo vraćeno partneru",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Prihvatljivost provizije otkazana je uz rezervaciju",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Podobnost provizije vraćena za novu rezervaciju"
     }
   }
 }

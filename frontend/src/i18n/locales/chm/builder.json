@@ -30,7 +30,8 @@
       "registered": "Регистрироватлыме"
     },
     "booked": "Бронироватлыме",
-    "empty": "Эше нимогай направлений уке."
+    "empty": "Эше нимогай направлений уке.",
+    "bookingCancelled": "Бронироватлымашым кораҥдыме"
   },
   "detail": {
     "customer": "Клиентна",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Бронироватлымаш пеҥгыдемдалтын.",
       "accepted": "Направлений приниматлалтеш.",
-      "rejected": "Направлений отказым пуэн."
+      "rejected": "Направлений отказым пуэн.",
+      "bookingCancelled": "Бронироватлымашым кораҥдыме."
     },
-    "backToReferrals": "Реферал-влак деке пӧртылаш"
+    "backToReferrals": "Реферал-влак деке пӧртылаш",
+    "bookingCancelled": "Бронироватлымашым кораҥдыме",
+    "cancelBooking": "Бронироватлымашым кораҥдаш",
+    "cancelReasonLabel": "Отмена амал (партнерлан ончыктымо) *",
+    "cancelBookingHint": "Оперативный собственность партнерлан пӧртылеш да нунын комиссий праваштым пытарат. Вӱдышӧ еҥым варарак уэш бронироватлаш лиеш.",
+    "cancelBookingConfirm": "Бронироватлымашым кораҥдаш"
   },
   "history": {
     "title": "Историй",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Комиссий правам ыштыме",
       "HANDOVER_COMPLETED": "Передаче пытен",
       "ADMIN_PROTECTION_RELEASED": "Админ дубликат аралыме йӧным ондак луктын. Шылташ: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Админ регистрацийым {{from}} гыч {{to}} -ыш кусарыме. Шылташ: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Админ регистрацийым {{from}} гыч {{to}} -ыш кусарыме. Шылташ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Вес партнерын дубликат регистрацийым эрташ тӧчымыжым шӧреныт",
+      "BOOKING_CANCELLED": "Бронироватлымашым кораҥдыме. Шылташ: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Операций собственность партнерлан пӧртылын",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Комиссий правам бронироватлыме дене кораҥдыме",
+      "COMMISSION_ELIGIBILITY_RESTORED": "У бронироватлымашлан комиссийлан правам пӧртылтымӧ"
     }
   }
 }

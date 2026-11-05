@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Bílagt",
-    "pending": "Sum liggur í óvissu"
+    "pending": "Sum liggur í óvissu",
+    "status": {
+      "CONFIRMED": "Bílagt",
+      "CANCELLED": "Bílegging avlýst"
+    }
   },
   "assign": {
     "unassigned": "Ótilskilað",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Eingin verkætlan enn (ikki víst)",
-    "notInList": "{{project}} (ikki í verkætlanarlistanum)"
+    "notInList": "{{project}} (ikki í verkætlanarlistanum)",
+    "protectionDays_one": "{{count}} -dagsvernd",
+    "protectionDays_other": "{{count}} -dagsvernd"
   },
   "journey": {
     "customer": "Viðskiftafólk",
@@ -76,7 +82,14 @@
     "progressHistory": "Framgongdarsøga",
     "timesIn": "(tíðir í {{timezone}} )",
     "backToMyLeads": "Aftur til mínar leiðarar",
-    "editLead": "Rætta leiðslu"
+    "editLead": "Rætta leiðslu",
+    "disputeBanner": "Ein annar samstarvsfelagi hevur ósemja um ognarrættin til hendan kunda. Ein Leadrat admin kannar tað - tín vernd heldur seg uppá pláss til tey taka avgerð.",
+    "booking": "Bílegging",
+    "commission": "Starv",
+    "notBooked": "Ikki bílagt",
+    "cancelledOn": "Avlýst tann {{date}} .",
+    "cancelReason": "Orsøk: {{reason}}",
+    "cancelledHint": "Byggiharrin avlýsti bíleggingina - rakstrarligi ognarrætturin er aftur hjá tær og provisjónsrætturin er avlýstur. Tað er endurreist, um leiðslan verður bíløgd aftur."
   },
   "referral": {
     "NOT_REFERRED": "Ikki víst (eingin verkætlan)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Byggiharri tók undir við tilvísingini",
       "REFERRAL_REJECTED": "Builder noktaði tilvísingini. Orsøk: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin gav út dupultverju tíðliga. Orsøk: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin hevur umskipað tilmeldingina frá {{from}} til {{to}} . Orsøk: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin hevur umskipað tilmeldingina frá {{from}} til {{to}} . Orsøk: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ein tvítøk av skrásetingarroynd hjá einum øðrum samstarvsfelaga varð avvíst.",
+      "BOOKING_CANCELLED": "Bílegging avlýst. Orsøk: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Rakstrarligi ognarrætturin aftur til samstarvsfelagan",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kommissiónsrættur avlýstur við bíleggingini",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kommissiónsrætturin endurreistur til nýggju bíleggingina",
+      "OWNERSHIP_DISPUTE_RAISED": "Ein annar samstarvsfelagi tvíhelt um ognarrættin til hendan kundan - ein Leadrat admin fer at ummæla hann",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Eigaraósemjan um henda kunda varð tikin aftur - tín ognarrættur er óbroyttur",
+      "OWNERSHIP_DISPUTE_UPHELD": "Eigaraósemjan um hendan kunda varð viðgjørd - tín ognarrættur er staðfestur",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Skrásett eftir at ognarósemjan hjá tær varð avgjørd til tín fyrimun. Viðmæli: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Verjan endaði: ognarósemja varð avgjørd til fyrimuns fyri annan samstarvsfelaga. Viðmæli: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Hetta telefonnummarið er ikki galdandi fyri {{country}} .",
     "COUNTRY_MISMATCH": "Vinarliga vel rætta landakotuna.",
     "NOT_MOBILE": "Vinarliga skriva eitt fartelefonnummar, ikki eitt fastnet."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Kommissiónsgóðkendur",
+      "PENDING": "Kommissiónin bíðar",
+      "CANCELLED": "Kommissiónin avlýst"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Tilskrivað tær",
+      "DISPUTED": "Tilskriving umstrídd"
+    }
+  },
+  "result": {
+    "none": "Einki tilmeldingarúrslit at vísa. Skráset ein leiðslu fyrst.",
+    "acceptedTitle": "Blý skrásett",
+    "rejectedTitle": "Blý ikki skrásett",
+    "protectionWindow": "Verjuvindeyga",
+    "protectedUntil": "Vard til 2019.",
+    "openLead": "Opna leiðslu",
+    "addAnother": "Legg eina aðra leiðslu til",
+    "duplicate": "Tvítøk - longu vart",
+    "duplicateHint": "Hesin kundin er longu vardur fyri hesi verkætlan við aðrari skráseting, so hon kundi ikki skrásetast fyri teg.",
+    "existingProtectedUntil": "Verandi skráseting vard til 2020."
+  },
+  "disputes": {
+    "title": "Mínar ósemjur",
+    "intro": "Ognartrætur, sum tú reisti fyri kundar, sum vórðu noktaðir sum tvítøk. Ein Leadrat admin ummælir hvønn einasta.",
+    "empty": "Tú hevur ikki reist nakrar ósemjur. Um ein kundi, sum tú hevði við tær, verður noktaður sum tvítøk, kanst tú tvíhalda um tað frá tilmeldingarúrslitinum.",
+    "columns": {
+      "dispute": "Stríð",
+      "reason": "Tín orsøk",
+      "outcome": "Úrslit"
+    },
+    "status": {
+      "OPEN": "Undir viðgerð",
+      "UPHELD": "Ikki til tín fyrimun",
+      "OVERTURNED": "Avgjørt til tín fyrimun",
+      "WITHDRAWN": "Tikið aftur"
+    },
+    "awaitingReview": "Bíða eftir admin ummæli",
+    "openNewLead": "Opna tína leiðslu {{id}}",
+    "withdraw": "Taka aftur",
+    "withdrawConfirm": "Tak tína ósemju aftur um {{name}} ? Verandi ognarskapur heldur seg sum hann er.",
+    "raise": "Ósemja ognarrætt",
+    "raiseTitle": "Ósemja ognarrætt",
+    "raiseHint": "Um hesin kundin kom til tín fyrst, greið so frá hví. Ein Leadrat admin fer at ummæla tað; um tey avgera til tín fyrimun, er leiðslan skrásett fyri teg.",
+    "reasonLabel": "Hví er hesin kundin tín?",
+    "reasonMin_one": "Í minsta lagi {{count}} stavilsi.",
+    "reasonMin_other": "Í minsta lagi {{count}} stavir.",
+    "submit": "Send ósemju",
+    "notProtected": "Eingin heldur verju á hesum kundanum til hesa verkætlan longur - tú kanst skráseta leiðsluna nú.",
+    "raised": "Ósemja {{id}} send til viðgerðar.",
+    "viewAll": "Síggj mínar ósemjur"
+  },
+  "dashboard": {
+    "title": "Stýriborð",
+    "period": "Tíðarskeið",
+    "lastDays_one": "{{count}} dag",
+    "lastDays_other": "{{count}} dagar",
+    "emptyTitle": "Vælkomin! Tú hevur ongar leiðslur enn.",
+    "emptyHint": "Skráset tín fyrsta leiðara - tín leiðsla, bíleggingar og verndarfreistir koma fram her.",
+    "tiles": {
+      "leads": "Samlað leiðsla",
+      "newInPeriod_one": "{{count}} nýtt í hesum tíðarskeiðnum",
+      "newInPeriod_other": "{{count}} nýtt í hesum tíðarskeiðnum",
+      "accepted": "Viðtikið",
+      "booked": "Bílagt",
+      "bookedInPeriod_one": "{{count}} bílagt í hesum tíðarskeiðnum",
+      "bookedInPeriod_other": "{{count}} bílagt í hesum tíðarskeiðnum",
+      "conversion": "Umlegging",
+      "conversionHint": "Bílagdar leiðarar sum partur av góðkendum leiðslum",
+      "protectedNow": "Vart nú",
+      "expiringSoon_one": "Vernd, sum endar við {{count}} degi",
+      "expiringSoon_other": "Vernd, sum endar við {{count}} dagar",
+      "disputedNow": "Umstrítt av øðrum",
+      "disputedNowHint": "Tínir leiðarar við opnari ognarósemju frá einum øðrum samstarvsfelaga",
+      "commissionEligible": "Kommissiónsgóðkendur",
+      "commissionCancelled_one": "{{count}} avlýst",
+      "commissionCancelled_other": "{{count}} avlýst"
+    },
+    "chart": {
+      "title_one": "Tilmeldingar og bíleggingar um dagin - seinasta {{count}} dag",
+      "title_other": "Tilmeldingar og bíleggingar um dagin - seinastu {{count}} dagar",
+      "registrations": "Tilmeldingar",
+      "bookings": "Bíleggingar"
+    },
+    "byStage": "Leiðir eftir støðu",
+    "bySource": "Leiðir eftir keldu",
+    "byReferral": "Leiðir eftir tilvísingarstøðu",
+    "myDisputes": "Ósemjur tú hevur reist",
+    "noDisputes": "Ongar ósemjur reistar.",
+    "unknown": "Ikki sett",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Uttanhýsis CRM (uppgerð)",
+      "PARTNER_CRM": "Lagt til av tínum toymi",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Samlegging",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Verjan gongur út næsta {{count}} dag",
+    "expiringTitle_other": "Verjan gongur út næstu {{count}} dagarnar",
+    "expiringEmpty": "Eingin blýggj missir sína verju í hesum vindeyganum."
   }
 }

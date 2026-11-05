@@ -25,7 +25,10 @@ const FIXED_EVENTS = [
   'OPERATIONAL_OWNERSHIP_TRANSFERRED',
   'PARTNER_ATTRIBUTION_PRESERVED',
   'COMMISSION_ELIGIBILITY_CREATED',
-  'HANDOVER_COMPLETED'
+  'HANDOVER_COMPLETED',
+  'OPERATIONAL_OWNERSHIP_RETURNED',
+  'COMMISSION_ELIGIBILITY_CANCELLED',
+  'COMMISSION_ELIGIBILITY_RESTORED'
 ];
 
 function stageText(raw) {
@@ -56,7 +59,11 @@ export function describeEvent(t, ev) {
       if ((m = /^Builder rejected the referral\. Reason: ([\s\S]*)$/.exec(text))) return key('REFERRAL_REJECTED', { reason: m[1] });
       break;
     case 'REGISTRATION_ATTEMPT_REJECTED':
+      if (text === 'A duplicate registration attempt by another partner was rejected') return key('REGISTRATION_ATTEMPT_REJECTED_ANON');
       if ((m = /^Duplicate registration attempt by (.+) rejected$/.exec(text))) return key('REGISTRATION_ATTEMPT_REJECTED', { partner: m[1] });
+      break;
+    case 'BOOKING_CANCELLED':
+      if ((m = /^Booking cancelled\. Reason: ([\s\S]*)$/.exec(text))) return key('BOOKING_CANCELLED', { reason: m[1] });
       break;
     case 'ADMIN_PROTECTION_RELEASED':
       if ((m = /^Admin released duplicate protection early\. Reason: ([\s\S]*)$/.exec(text))) return key('ADMIN_PROTECTION_RELEASED', { reason: m[1] });

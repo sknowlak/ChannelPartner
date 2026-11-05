@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "afaka",
-    "PENDING": "mbola miandry"
+    "PENDING": "mbola miandry",
+    "CANCELLED": "nofoanana ny"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Alefaso aloha ny fiarovana dika mitovy",
-    "REASSIGN_PARTNER": "Avereno amin'ny mpiara-miasa hafa"
+    "REASSIGN_PARTNER": "Avereno amin'ny mpiara-miasa hafa",
+    "CANCEL_BOOKING": "hanafoana ny famandrihana"
   },
   "dataType": {
     "TEXT": "Text",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super Admin",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "noraisina ho mpikambana",
+    "CANCELLED": "nofoanana ny"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "lazaina",
+    "DISPUTED": "niady hevitra"
+  },
+  "disputeStatus": {
+    "OPEN": "Misokatra",
+    "UPHELD": "nanohana",
+    "OVERTURNED": "nazerany",
+    "WITHDRAWN": "miaro"
   }
 }

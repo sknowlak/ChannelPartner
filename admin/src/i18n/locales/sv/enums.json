@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Berättigad",
-    "PENDING": "I avvaktan på"
+    "PENDING": "I avvaktan på",
+    "CANCELLED": "Avbruten"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Släpp dubblettskydd tidigt",
-    "REASSIGN_PARTNER": "Tilldela om till en annan partner"
+    "REASSIGN_PARTNER": "Tilldela om till en annan partner",
+    "CANCEL_BOOKING": "Avboka bokning"
   },
   "dataType": {
     "TEXT": "Text",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super Admin",
     "ADMIN": "Administration"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Bekräftad",
+    "CANCELLED": "Avbruten"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Tillskrivna",
+    "DISPUTED": "Omtvistad"
+  },
+  "disputeStatus": {
+    "OPEN": "Öppna",
+    "UPHELD": "Upprätthålls",
+    "OVERTURNED": "Vält",
+    "WITHDRAWN": "Indragen"
   }
 }

@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Чөпшээреп болур",
-    "PENDING": "Амда шиитпирде"
+    "PENDING": "Амда шиитпирде",
+    "CANCELLED": "Соксаткан"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Дубликат камгалалды эртежик үндүрер",
-    "REASSIGN_PARTNER": "Өске партнерга дамчыдар"
+    "REASSIGN_PARTNER": "Өске партнерга дамчыдар",
+    "CANCEL_BOOKING": "Бронированиени соксадыр"
   },
   "dataType": {
     "TEXT": "Текст",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Супер Админ",
     "ADMIN": "Админ"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Бадыткаан",
+    "CANCELLED": "Соксаткан"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Харылзаалыг",
+    "DISPUTED": "Маргылдаалыг"
+  },
+  "disputeStatus": {
+    "OPEN": "Ажыдар",
+    "UPHELD": "Деткиттинген",
+    "OVERTURNED": "Өскерилген",
+    "WITHDRAWN": "эгидип алган"
   }
 }

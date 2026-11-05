@@ -43,7 +43,9 @@
       "name": "Yaca",
       "city": "Korolevu",
       "status": "ITuvatuva",
-      "actions": "Cakacaka"
+      "actions": "Cakacaka",
+      "protection": "Veitaqomaki vakarua",
+      "matchOn": "Veisotari vakatautauvatataki ena"
     },
     "closeReferrals": "Voleka me baleta na veivakauqeti",
     "reopen": "Dolava tale",
@@ -55,6 +57,25 @@
       "add": "Kuria na cakacaka",
       "created": "Sa buli {{name}} ."
     },
-    "back": "Lesu tale ki na Daunivakadidike"
+    "back": "Lesu tale ki na Daunivakadidike",
+    "protection": {
+      "days_one": "{{count}} siga",
+      "days_other": "{{count}} siga",
+      "globalDays_one": "Na ivakarau raraba ( {{count}} siga)",
+      "globalDays_other": "Na ivakarau raraba ( {{count}} siga)",
+      "globalDefault": "Na ivakarau ni vuravura raraba",
+      "placeholder": "Siga ni veitaqomaki (lala = ivakarau ni vuravura raraba)",
+      "saved": "Vakavoutaki na veitaqomaki vakarua me baleta {{name}} .",
+      "hint": "Veitaqomaki vakarua: 1-3650 siga, se biuta lala me vakayagataki kina na ivakarau ni vuravura raraba mai na ituvatuva. E dua na veisau e baleta ga na rejisita vou - o ira era sa tu rawa era maroroya na nodra gauna ni vakaoti gauna."
+    },
+    "matching": {
+      "global": "Na ivakarau ni vuravura raraba",
+      "globalWith": "Na ivakarau raraba ( {{fields}} )",
+      "mobile": "Naba ni talevoni veikauyaki",
+      "email": "Imeli",
+      "both": "Naba ni talevoni veikauyaki + imeli",
+      "saved": "Vakatautauvatataki vakaruataki vakavoutaki me baleta na {{name}}",
+      "hint": "Na itukutuku cava e cakava e rua na rejisita na kasitama vata ga me baleta e dua na cakacaka. Na veisau e baleta na jeke vakarua mai na gauna oqo; e sega ni vakaleqai na veitaqomaki sa tu rawa."
+    }
   }
 }

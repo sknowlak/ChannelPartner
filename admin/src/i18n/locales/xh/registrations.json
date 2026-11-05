@@ -49,8 +49,73 @@
       "newPartnerId": "ID esitsha soMlingane",
       "reason": "Isizathu (siyafuneka)",
       "apply": "Faka isicelo sokuBhala ngaphezulu",
-      "applying": "Iyafaka..."
+      "applying": "Iyafaka...",
+      "cancelBookingHint": "Ukurhoxiswa kuphawula ukubhukisha kunye nekhomishini yayo njengokurhoxiswa, ibuyisela ubunini bokusebenza kwiqabane, kwaye kuvumela umakhi abhukishe oku kukhokela kwakhona.",
+      "cancelBookingConfirm": "Urhoxisa olu bhukisho? Ikhomishini yayo irhoxisiwe nayo. Oku kufakwe ngegama lakho kunye nesizathu."
     },
-    "timelineTitle": "Ixesha loPhicotho-zincwadi (olu bhaliso)"
+    "timelineTitle": "Ixesha loPhicotho-zincwadi (olu bhaliso)",
+    "bookingStatus": "Isimo sokubhukisha",
+    "commissionAttribution": "Ukunikezelwa kweKhomishini",
+    "disputeOpen": "Ingxabano yobunini ivuliwe kulo mthengi - elinye iqabane lithi yeyabo. Kugqitywe kwiphepha leeNgxaki.",
+    "viewDisputes": "Jonga iingxabano",
+    "cancellation": {
+      "title": "Ukubhukisha kurhoxisiwe",
+      "hint": "Ukubhukisha kunye nekhomishini yayo irhoxisiwe; ubunini bokusebenza bubuyile kunye neqabane kwaye umakhi angabhukisha olu khokelo kwakhona.",
+      "at": "Irhoxisiwe ngo",
+      "by": "Irhoxisiwe ngu",
+      "reason": "Isizathu"
+    }
+  },
+  "disputes": {
+    "title": "Iingxabano zobunini",
+    "hint": "Iqabane ekuye kwakhatywa ukubhaliswa kwalo njengempinda lingaphikisa ukuba ngubani umthengi ongumnini. Phonononga omabini amacala kwaye wenze isigqibo.",
+    "statusFilter": "Ubume bengxabano",
+    "allStatuses": "Zonke iimeko",
+    "empty": "Akukho mpikiswano ngesi simo.",
+    "columns": {
+      "dispute": "Ingxabano",
+      "customer": "Umthengi",
+      "project": "Iprojekthi",
+      "raisedBy": "Inyuswe ngu",
+      "heldBy": "Umnini wangoku",
+      "status": "Ubume",
+      "raisedAt": "Yanyuswa"
+    },
+    "detail": {
+      "title": "Ingxabano {{id}}",
+      "raisedOn": "Inyusiwe {{date}}",
+      "raisingTitle": "Inyuswe ngu",
+      "holderTitle": "Umnini wangoku",
+      "partner": "Iqabane",
+      "raisedBy": "Ithunyelwe ngu",
+      "customerName": "Umthengi",
+      "mobile": "Iselula",
+      "alternateMobile": "Enye imobile",
+      "email": "I-imeyile",
+      "project": "Iprojekthi",
+      "reason": "Isizathu sabo",
+      "registration": "Ubhaliso",
+      "registeredAt": "Ibhaliswe kwi",
+      "referral": "Ukudluliselwa",
+      "heldMissing": "Ubhaliso olubanjiweyo alufumanekanga.",
+      "resolutionTitle": "Isigqibo",
+      "outcome": "Isiphumo",
+      "note": "Phawula",
+      "decidedBy": "Igqitywe ngu",
+      "decidedAt": "Igqitywe",
+      "newRegistration": "Ubhaliso olutsha",
+      "decideTitle": "Thatha isigqibo ngale ngxabano",
+      "noteLabel": "Inqaku elichaza isigqibo (siyafuneka)",
+      "noteRequired": "Bhala inqaku ukwenza isigqibo.",
+      "uphold": "Ukuxhasa",
+      "overturn": "Ukubhukuqa",
+      "upholdEffect": "{{holder}} sigcina umthengi. Ingxabano ivaliwe kwaye akukho nto itshintshileyo.",
+      "overturnEffect": "{{holder}} 's ukhuseleko oluphindwe kabini luyaphela ngoku kwaye umthengi ubhalisele {{partner}} njengobhaliso olutsha.",
+      "heldBookedHelp": "Lo mthengi ubhukishwe ngomnini wangoku. Rhoxisa olo bhukisho kuqala (UMlawuli uBhalisa ngaphezulu kubhaliso), emva koko ubhukuqe:",
+      "confirmTitle": "Ingaba uqinisekile?",
+      "confirmUphold": "Ewe, bambelela",
+      "confirmOverturn": "Ewe, ukubhukuqa",
+      "back": "Buyela kwiiMbano"
+    }
   }
 }

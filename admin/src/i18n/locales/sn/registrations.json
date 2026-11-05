@@ -49,8 +49,73 @@
       "newPartnerId": "New Partner ID",
       "reason": "Chikonzero (chinodikanwa)",
       "apply": "Shandisa Override",
-      "applying": "Kushandisa..."
+      "applying": "Kushandisa...",
+      "cancelBookingHint": "Kukanzura kunoratidza kubhurocha uye komisheni yako sekukanzurwa, kunodzosera muridzi wekushanda kune waanoshanda naye, uye kunoita kuti muvaki atore basa iri zvakare.",
+      "cancelBookingConfirm": "Ukanzure bhuku iri? Komisheni yaro yakanzurwa futi. Izvi zvakarogwa nezita rako nechikonzero."
     },
-    "timelineTitle": "Audit Timeline (iyi kunyoresa)"
+    "timelineTitle": "Audit Timeline (iyi kunyoresa)",
+    "bookingStatus": "Booking Status",
+    "commissionAttribution": "Commission Attribution",
+    "disputeOpen": "Gakava remuridzi rakavhurika pamutengi uyu - mumwewo wake anoti ndewavo. Zvinosarudzwa papeji yeMakakatanwa.",
+    "viewDisputes": "Ona kupokana",
+    "cancellation": {
+      "title": "Kubhuka kwakanzurwa",
+      "hint": "Kubhurocha uye komisheni yaro yakanzurwa; muridzi wekushanda adzoka nemumwe uye muvaki anogona kubhuka uyu kutungamira zvakare.",
+      "at": "Yakanzurwa pa",
+      "by": "Yakanzurwa na",
+      "reason": "Chikonzero"
+    }
+  },
+  "disputes": {
+    "title": "Muridzi Makakatanwa",
+    "hint": "Mudiwa akarambwa kunyoreswa kwake seduplicate anogona kupokana kuti muridzi wemutengi ndiani. Ongorora mativi ese uye sarudza.",
+    "statusFilter": "Kukakavadzana chimiro",
+    "allStatuses": "All statuses",
+    "empty": "Hapana kupokana nechimiro ichi.",
+    "columns": {
+      "dispute": "Kukakavadzana",
+      "customer": "Mutengi",
+      "project": "Project",
+      "raisedBy": "Yakasimudzwa na",
+      "heldBy": "Iyezvino muridzi",
+      "status": "Status",
+      "raisedAt": "Yakasimudzwa mberi"
+    },
+    "detail": {
+      "title": "Gakava {{id}}",
+      "raisedOn": "Yakasimudzwa {{date}}",
+      "raisingTitle": "Yakasimudzwa na",
+      "holderTitle": "Iyezvino muridzi",
+      "partner": "Partner",
+      "raisedBy": "Yakatumirwa na",
+      "customerName": "Mutengi",
+      "mobile": "Vadivelu Comedy Mobile",
+      "alternateMobile": "Alternate mobile",
+      "email": "Email",
+      "project": "Project",
+      "reason": "Chikonzero chavo",
+      "registration": "Kunyoresa",
+      "registeredAt": "Registered on",
+      "referral": "Referral",
+      "heldMissing": "Chinyoreso chakaitwa hachina kuwanikwa.",
+      "resolutionTitle": "Sarudzo",
+      "outcome": "Mugumisiro",
+      "note": "Cherechedza",
+      "decidedBy": "Zvakasarudzwa na",
+      "decidedAt": "Zvakasarudza",
+      "newRegistration": "Kunyoresa kutsva",
+      "decideTitle": "Sarudza kupokana uku",
+      "noteLabel": "Chinyorwa chinotsanangura sarudzo (inodiwa)",
+      "noteRequired": "Nyora chinyorwa kuti usarudze.",
+      "uphold": "Uphold",
+      "overturn": "Kupidigura",
+      "upholdEffect": "{{holder}} inochengeta mutengi. Kupokana kwakavharwa uye hapana chimwe chinochinja.",
+      "overturnEffect": "{{holder}} 's duplicate protection inopera izvozvi uye mutengi anyoreswa ku {{partner}} sekunyoresa kutsva.",
+      "heldBookedHelp": "Mutengi uyu akarongerwa nemuridzi wazvino. Kanzura kubhuka ikoko kutanga (Admin Override pakunyoresa), wobva wapidigura:",
+      "confirmTitle": "Une chokwadi here?",
+      "confirmUphold": "Hongu, tsigira",
+      "confirmOverturn": "Hongu, kupidigura",
+      "back": "Back to Disputes"
+    }
   }
 }

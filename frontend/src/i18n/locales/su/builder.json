@@ -29,7 +29,8 @@
       "registered": "Kadaptar"
     },
     "booked": "dipesen",
-    "empty": "Teu acan aya rujukan."
+    "empty": "Teu acan aya rujukan.",
+    "bookingCancelled": "Booking dibolaykeun"
   },
   "detail": {
     "customer": "Palanggan",
@@ -52,9 +53,15 @@
     "notice": {
       "booked": "Booking dikonfirmasi.",
       "accepted": "Rujukan ditarima.",
-      "rejected": "Rujukan ditolak."
+      "rejected": "Rujukan ditolak.",
+      "bookingCancelled": "Booking dibolaykeun."
     },
-    "backToReferrals": "Balik deui ka Rujukan"
+    "backToReferrals": "Balik deui ka Rujukan",
+    "bookingCancelled": "Booking dibolaykeun",
+    "cancelBooking": "Ngabolaykeun Booking",
+    "cancelReasonLabel": "Alesan pikeun ngabatalkeun (ditémbongkeun ka pasangan) *",
+    "cancelBookingHint": "Kapamilikan operasional balik deui ka pasangan sareng hak komisina dibatalkeun. Timbel bisa dipesen deui engké.",
+    "cancelBookingConfirm": "Ngabolaykeun booking"
   },
   "history": {
     "title": "Sajarah",
@@ -81,7 +88,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Komisi eligibility dijieun",
       "HANDOVER_COMPLETED": "Handover réngsé",
       "ADMIN_PROTECTION_RELEASED": "Admin ngaluarkeun panyalindungan duplikat awal. Alesan: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin ngalihkeun pendaptaran ti {{from}} ka {{to}} . Alesan: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin ngalihkeun pendaptaran ti {{from}} ka {{to}} . Alesan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Usaha pendaptaran duplikat ku pasangan anu sanés ditolak",
+      "BOOKING_CANCELLED": "Booking dibolaykeun. Alesan: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Kapamilikan operasional balik deui ka pasangan",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "eligibility Komisi dibolaykeun kalawan booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Komisi eligibility disimpen deui pikeun booking anyar"
     }
   }
 }

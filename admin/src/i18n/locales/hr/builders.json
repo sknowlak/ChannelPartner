@@ -43,7 +43,9 @@
       "name": "Ime",
       "city": "Grad",
       "status": "Status",
-      "actions": "Radnje"
+      "actions": "Radnje",
+      "protection": "Duplicirana zaštita",
+      "matchOn": "Duplikati se podudaraju"
     },
     "closeReferrals": "Zatvori za preporuke",
     "reopen": "Ponovo otvoriti",
@@ -55,6 +57,27 @@
       "add": "Dodaj projekt",
       "created": "Kreiran {{name}} ."
     },
-    "back": "Povratak na Graditelje"
+    "back": "Povratak na Graditelje",
+    "protection": {
+      "days_one": "{{count}} dan",
+      "days_few": "{{count}} dana",
+      "days_other": "{{count}} dana",
+      "globalDays_one": "Globalno zadano ( {{count}} dan)",
+      "globalDays_few": "Globalno zadano ( {{count}} dana)",
+      "globalDays_other": "Globalno zadano ( {{count}} dana)",
+      "globalDefault": "Globalna zadana vrijednost",
+      "placeholder": "Dani zaštite (prazno = globalno zadano)",
+      "saved": "Zaštita od duplikata ažurirana za {{name}} .",
+      "hint": "Duplicirana zaštita: 1-3650 dana ili ostavite prazno za korištenje globalne zadane postavke iz Postavki. Promjena se odnosi samo na nove registracije - postojeće ostaju istekle."
+    },
+    "matching": {
+      "global": "Globalna zadana vrijednost",
+      "globalWith": "Globalno zadano ( {{fields}} )",
+      "mobile": "Broj mobitela",
+      "email": "E-mail",
+      "both": "Broj mobitela + email",
+      "saved": "Duplicirano podudaranje ažurirano za {{name}}",
+      "hint": "Koji detalji čine dvije registracije istog kupca za projekt. Promjene se od sada primjenjuju na dvostruke čekove; postojeća zaštita nije pogođena."
+    }
   }
 }

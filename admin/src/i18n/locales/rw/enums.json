@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Abemerewe",
-    "PENDING": "Bitegereje"
+    "PENDING": "Bitegereje",
+    "CANCELLED": "Yahagaritswe"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Kurekura uburinzi bubiri hakiri kare",
-    "REASSIGN_PARTNER": "Ohereza undi mufatanyabikorwa"
+    "REASSIGN_PARTNER": "Ohereza undi mufatanyabikorwa",
+    "CANCEL_BOOKING": "Kureka kubika"
   },
   "dataType": {
     "TEXT": "Inyandiko",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Umuyobozi mukuru",
     "ADMIN": "Umuyobozi"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Byemejwe",
+    "CANCELLED": "Yahagaritswe"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Yatanzwe",
+    "DISPUTED": "Impaka"
+  },
+  "disputeStatus": {
+    "OPEN": "Fungura",
+    "UPHELD": "Bishyigikiwe",
+    "OVERTURNED": "Kurengerwa",
+    "WITHDRAWN": "Yakuweho"
   }
 }

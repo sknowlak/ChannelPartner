@@ -30,7 +30,8 @@
       "registered": "Registered"
     },
     "booked": "Booked",
-    "empty": "No referrals yet."
+    "empty": "No referrals yet.",
+    "bookingCancelled": "Booking canceled"
   },
   "detail": {
     "customer": "Custama",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Booking confirmed.",
       "accepted": "Referral accepted.",
-      "rejected": "Referral rejected."
+      "rejected": "Referral rejected.",
+      "bookingCancelled": "Booking cancelled."
     },
-    "backToReferrals": "Back to Referrals"
+    "backToReferrals": "Back to Referrals",
+    "bookingCancelled": "Booking canceled",
+    "cancelBooking": "Cancel Booking",
+    "cancelReasonLabel": "Reason fi canceling (shown to di partner) *",
+    "cancelBookingHint": "Operational ownership go back to di partner an dem commission eligibility get cancel. Di lead can be booked again later.",
+    "cancelBookingConfirm": "Cancel di booking"
   },
   "history": {
     "title": "Histry",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Commission eligibility created",
       "HANDOVER_COMPLETED": "Handover completed",
       "ADMIN_PROTECTION_RELEASED": "Admin did release duplicate protection early. Reason: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin reassign registration fram {{from}} to {{to}} . Reason: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin reassign registration fram {{from}} to {{to}} . Reason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "A duplicate registration attempt by another partner was rejected",
+      "BOOKING_CANCELLED": "Booking cancelled. Reason: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operational ownership return to di partner",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Commission eligibility canceled wid di booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Commission eligibility restored fi di new booking"
     }
   }
 }

@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Na-book",
-    "pending": "Naisardeng biit"
+    "pending": "Naisardeng biit",
+    "status": {
+      "CONFIRMED": "Na-book",
+      "CANCELLED": "Nakansela ti panag-book"
+    }
   },
   "assign": {
     "unassigned": "Saan a naituding",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Awan pay ti proyekto (saan a naitudo) .",
-    "notInList": "{{project}} (saan nga iti listaan ​​ti proyekto) ."
+    "notInList": "{{project}} (saan nga iti listaan ​​ti proyekto) .",
+    "protectionDays_one": "{{count}} -aldaw a proteksion",
+    "protectionDays_other": "{{count}} -aldaw a proteksion"
   },
   "journey": {
     "customer": "Kostumer",
@@ -76,7 +82,14 @@
     "progressHistory": "Pakasaritaan ti Panagrang-ay",
     "timesIn": "(dagiti oras iti {{timezone}} )",
     "backToMyLeads": "Agsubli Kadagiti Mangiturongko",
-    "editLead": "Urnosen ti Lead"
+    "editLead": "Urnosen ti Lead",
+    "disputeBanner": "Sabali pay a kasosio ti nagsusupiat iti panagtagikua iti daytoy a kustomer. Maysa nga admin Leadrat ti mangrepaso iti dayta - agtalinaed ti proteksionmo agingga nga ikeddengda.",
+    "booking": "Panag-book",
+    "commission": "Komision",
+    "notBooked": "Saan a na-book",
+    "cancelledOn": "Nakansela idi {{date}} .",
+    "cancelReason": "Rason: {{reason}}",
+    "cancelledHint": "Kinansela ti builder ti booking - nagsubli ti operational ownership kenka ken nakansela ti commission eligibility. Maisubli dayta no ma-book manen ti lead."
   },
   "referral": {
     "NOT_REFERRED": "Saan a naitudo (awan ti proyekto) .",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Inawat ni Builder ti referral",
       "REFERRAL_REJECTED": "Inlaksid ni Builder ti referral. Rason: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Nasapa nga inruar ni Admin ti duplicate protection. Rason: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Intuding manen ti admin ti panagrehistro manipud iti {{from}} aginggana iti {{to}} . Rason: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Intuding manen ti admin ti panagrehistro manipud iti {{from}} aginggana iti {{to}} . Rason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Napagkedkedan ti duplicate registration attempt ti sabali a partner",
+      "BOOKING_CANCELLED": "Nakansela ti panag-book. Rason: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Nagsubli ti operational ownership iti partner",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Commission eligibility nakansela iti panag-book",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Naisubli ti Commission eligibility para iti baro a booking",
+      "OWNERSHIP_DISPUTE_RAISED": "Sabali pay a partner ti nangsuppiat iti panagtagikua iti daytoy a kostumer - maysa nga admin Leadrat ti mangrepaso iti dayta",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Ti panagsusupiat ti panagtagikua iti daytoy a kustomer ket naikkat - ti panagtagikua ket saan a nagbaliw",
+      "OWNERSHIP_DISPUTE_UPHELD": "Ti panagsusupiat ti panagtagikua iti daytoy a kustomer ket narepaso - ti panagtagikua ket napasingkedan",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Nairehistro kalpasan a naikeddeng a pabor kenka ti panagsusupiatmo iti panagtagikua. Pakaammo: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Nagpatingga ti proteksion: naikeddeng ti panagsusupiat iti panagtagikua a pabor iti sabali a kasosio. Pakaammo: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Daytoy a numero ti telepono ket saan a balido para iti {{country}} .",
     "COUNTRY_MISMATCH": "Pangngaasiyo ta pilien ti umno a kodigo ti pagilian.",
     "NOT_MOBILE": "Pangngaasiyo ta iserrekyo ti mobile number, saan a landline."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Kualipikado iti Komision",
+      "PENDING": "Komision ti nakasagana",
+      "CANCELLED": "Nakansela ti Komision"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Naipabigbig kenka",
+      "DISPUTED": "Attribution ti nasuppiatan"
+    }
+  },
+  "result": {
+    "none": "Awan ti resulta ti panagrehistro a maipakita. Irehistro nga umuna ti lead.",
+    "acceptedTitle": "Nairehistro ti lead",
+    "rejectedTitle": "Lead saan a nairehistro",
+    "protectionWindow": "Bintana ti Proteksion",
+    "protectedUntil": "Nasalakniban Agingga",
+    "openLead": "Luktan ti Lead",
+    "addAnother": "Inayon ti Sabali a Lead",
+    "duplicate": "Duplikado - nasalaknibanen",
+    "duplicateHint": "Daytoy a kustomer ket nasalaknibanen para iti daytoy a proyekto babaen ti sabali a panagrehistro, isu a saan a mabalin a nairehistro para kenka.",
+    "existingProtectedUntil": "Agdama a rehistrasion ti nasalakniban agingga"
+  },
+  "disputes": {
+    "title": "Dagiti Panagsusupiatko",
+    "intro": "Dagiti panagsusupiat iti panagtagikua nga inurnongmo para kadagiti kustomer a nagkedked kas duplikado. Maysa nga admin Leadrat ti mangrepaso iti tunggal maysa.",
+    "empty": "Awan ti naibangon a susik. No ti maysa a kostumer nga inyegmo ket agkedked kas duplikado, mabalinmo a supiatan dayta manipud iti resulta ti panagrehistro.",
+    "columns": {
+      "dispute": "Ergo",
+      "reason": "Ti rasonmo",
+      "outcome": "Maad"
+    },
+    "status": {
+      "OPEN": "Iti sidong ti pannakarepaso",
+      "UPHELD": "Saan a pabor kenka",
+      "OVERTURNED": "Inkeddeng a pabor kenka",
+      "WITHDRAWN": "Naikkat"
+    },
+    "awaitingReview": "Agur-uray ti admin review",
+    "openNewLead": "Luktam ti lead-mo {{id}}",
+    "withdraw": "Ibabawi",
+    "withdrawConfirm": "Ibaw-ingmo ti panagsusupiatmo para iti {{name}} ? Agtalinaed ti agdama a panagtagikua a kas iti kasasaadna.",
+    "raise": "Supiat ti panagtagikua",
+    "raiseTitle": "Supiat ti panagtagikua",
+    "raiseHint": "No immuna nga immay kenka daytoy a kustomer, ilawlawagmo no apay. Maysa nga admin Leadrat ti mangrepaso iti dayta; no pabor kenka ti mangikeddeng, nairehistro ti lead para kenka.",
+    "reasonLabel": "Apay a kukuam daytoy a kustomer?",
+    "reasonMin_one": "Di kumurang {{count}} a karakter.",
+    "reasonMin_other": "Di kumurang a {{count}} a karakter.",
+    "submit": "Ipatulod ti Panagsusupiat",
+    "notProtected": "Awan ti mangiggem iti proteksion iti daytoy a kustomer para iti daytoy a proyekto pay - mabalinmo nga irehistro ti lead ita.",
+    "raised": "Ti panagsusupiat {{id}} ket naipatulod para iti pannakarepaso.",
+    "viewAll": "Kitaenyo dagiti panagsusupiatko"
+  },
+  "dashboard": {
+    "title": "Dashboard ti Dashboard",
+    "period": "Panawen",
+    "lastDays_one": "{{count}} nga aldaw",
+    "lastDays_other": "{{count}} nga aldaw",
+    "emptyTitle": "Naragsak nga isasangbay! Awan pay ti leads-mo.",
+    "emptyHint": "Irehistro ti umuna a lead-mo - agparang ditoy ti pipeline, bookings ken protection deadline-mo.",
+    "tiles": {
+      "leads": "Dagup ti leads",
+      "newInPeriod_one": "{{count}} baro iti daytoy a panawen",
+      "newInPeriod_other": "{{count}} baro iti daytoy a panawen",
+      "accepted": "Naawat",
+      "booked": "Na-book",
+      "bookedInPeriod_one": "{{count}} ti na-book iti daytoy a panawen",
+      "bookedInPeriod_other": "{{count}} ti na-book iti daytoy a panawen",
+      "conversion": "Panagkomberte",
+      "conversionHint": "Na-booked leads kas bingay dagiti maawat a leads",
+      "protectedNow": "Nasalakniban itan",
+      "expiringSoon_one": "Proteksion nga agpatingga iti {{count}} nga aldaw",
+      "expiringSoon_other": "Proteksion nga agpatingga iti {{count}} nga aldaw",
+      "disputedNow": "Supiat ti dadduma",
+      "disputedNowHint": "Ti leads-mo nga addaan iti open ownership dispute manipud iti sabali a partner",
+      "commissionEligible": "Kualipikado iti Komision",
+      "commissionCancelled_one": "{{count}} nakansela",
+      "commissionCancelled_other": "{{count}} nakansela"
+    },
+    "chart": {
+      "title_one": "Dagiti panagrehistro ken panag-book iti kada aldaw - maudi a {{count}} nga aldaw",
+      "title_other": "Dagiti panagrehistro ken panag-book iti kada aldaw - maudi a {{count}} nga aldaw",
+      "registrations": "Dagiti panagrehistro",
+      "bookings": "Dagiti panag-book"
+    },
+    "byStage": "Mangidaulo babaen ti kasasaad",
+    "bySource": "Mangiturong babaen ti gubuayan",
+    "byReferral": "Mangidaulo babaen ti kasasaad ti pannakaiturong",
+    "myDisputes": "Supiat ti pinataudmo",
+    "noDisputes": "Awan ti naibangon a panagsusupiat.",
+    "unknown": "Saan a naikeddeng",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "External CRM (natulad) .",
+      "PARTNER_CRM": "Innayon ti team-yo",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Panagkaykaysa",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Agleppas ti proteksion iti sumaganad a {{count}} nga aldaw",
+    "expiringTitle_other": "Agleppas ti proteksion kadagiti sumaganad nga {{count}} nga aldaw",
+    "expiringEmpty": "Awan ti lead a mapukaw ti proteksionna iti daytoy a tawa."
   }
 }

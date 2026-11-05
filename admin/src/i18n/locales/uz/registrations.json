@@ -49,8 +49,73 @@
       "newPartnerId": "Yangi hamkor ID",
       "reason": "Sabab (majburiy)",
       "apply": "O'zgartirishni qo'llash",
-      "applying": "Murojaat qilinmoqda..."
+      "applying": "Murojaat qilinmoqda...",
+      "cancelBookingHint": "Bekor qilish bandlov va uning komissiyasini bekor qilingan deb belgilaydi, operatsion egalik huquqini hamkorga qaytaradi va quruvchiga buni qayta band qilish imkonini beradi.",
+      "cancelBookingConfirm": "Bu bandlov bekor qilinsinmi? Uning komissiyasi ham bekor qilinadi. Bu sizning ismingiz va sababingiz bilan qayd etilgan."
     },
-    "timelineTitle": "Audit xronologiyasi (ushbu ro'yxatga olish)"
+    "timelineTitle": "Audit xronologiyasi (ushbu ro'yxatga olish)",
+    "bookingStatus": "Bronlash holati",
+    "commissionAttribution": "Komissiya atributi",
+    "disputeOpen": "Bu mijozga nisbatan egalik to‘g‘risidagi nizo ochiq – boshqa hamkor bu ularniki ekanligini aytadi. Bu bahslar sahifasida hal qilinadi.",
+    "viewDisputes": "Bahslarni ko'rish",
+    "cancellation": {
+      "title": "Bandlov bekor qilindi",
+      "hint": "Rezervasyon va uning komissiyasi bekor qilinadi; Operatsion egalik hamkorga qaytadi va quruvchi bu yetakchini yana bron qilishi mumkin.",
+      "at": "Bekor qilingan:",
+      "by": "tomonidan bekor qilingan",
+      "reason": "Sabab"
+    }
+  },
+  "disputes": {
+    "title": "Egalik nizolari",
+    "hint": "Ro'yxatdan o'tish dublikat sifatida rad etilgan hamkor mijozga kim egalik qilishiga e'tiroz bildirishi mumkin. Ikkala tomonni ham ko'rib chiqing va qaror qabul qiling.",
+    "statusFilter": "Munozara holati",
+    "allStatuses": "Barcha holatlar",
+    "empty": "Bu maqom bo'yicha bahslar yo'q.",
+    "columns": {
+      "dispute": "Munozara",
+      "customer": "Mijoz",
+      "project": "Loyiha",
+      "raisedBy": "tomonidan tarbiyalangan",
+      "heldBy": "Hozirgi egasi",
+      "status": "Status",
+      "raisedAt": "Ko'tarilgan"
+    },
+    "detail": {
+      "title": "Eʼtiroz {{id}}",
+      "raisedOn": "Katta yoshli {{date}}",
+      "raisingTitle": "tomonidan tarbiyalangan",
+      "holderTitle": "Hozirgi egasi",
+      "partner": "Hamkor",
+      "raisedBy": "tomonidan yuborilgan",
+      "customerName": "Mijoz",
+      "mobile": "Mobil",
+      "alternateMobile": "Muqobil mobil",
+      "email": "Elektron pochta",
+      "project": "Loyiha",
+      "reason": "Ularning sababi",
+      "registration": "Roʻyxatdan oʻtish",
+      "registeredAt": "Roʻyxatdan oʻtgan",
+      "referral": "Yo'naltirish",
+      "heldMissing": "O'tkazilgan ro'yxatga olish topilmadi.",
+      "resolutionTitle": "Qaror",
+      "outcome": "Natija",
+      "note": "Eslatma",
+      "decidedBy": "tomonidan qaror qilingan",
+      "decidedAt": "Qaror qabul qildi",
+      "newRegistration": "Yangi ro'yxatdan o'tish",
+      "decideTitle": "Ushbu bahsni hal qiling",
+      "noteLabel": "Qarorni tushuntiruvchi eslatma (majburiy)",
+      "noteRequired": "Qaror qabul qilish uchun eslatma yozing.",
+      "uphold": "Qo'llab-quvvatlang",
+      "overturn": "To'ntarish",
+      "upholdEffect": "{{holder}} mijozni ushlab turadi. Bahs yopildi va boshqa hech narsa o'zgarmaydi.",
+      "overturnEffect": "{{holder}} ning takroriy himoyasi endi tugaydi va mijoz {{partner}} uchun yangi roʻyxatdan oʻtgan.",
+      "heldBookedHelp": "Bu mijoz joriy egasi orqali band qilingan. Avval o‘sha bandlovni bekor qiling (Ro‘yxatdan o‘tishda administrator bekor qiling), keyin bekor qiling:",
+      "confirmTitle": "Ishonchingiz komilmi?",
+      "confirmUphold": "Ha, ushlab turing",
+      "confirmOverturn": "Ha, ag'daring",
+      "back": "Bahslarga qaytish"
+    }
   }
 }

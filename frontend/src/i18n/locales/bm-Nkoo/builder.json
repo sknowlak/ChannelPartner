@@ -29,7 +29,8 @@
       "registered": "ߊ ߛߜ߭ߐߟߋ߲ ߘߏ߲"
     },
     "booked": "ߊ߬ ߓߘߊ߫ ߡߊߡߌ߬ߣߊ߬",
-    "empty": "ߟߊߛߋߟߌ ߝߏߛߊ ߕߋ߫ ߦߋ߬ ߝߟߐ߫."
+    "empty": "ߟߊߛߋߟߌ ߝߏߛߊ ߕߋ߫ ߦߋ߬ ߝߟߐ߫.",
+    "bookingCancelled": "ߡߊ߬ߡߌ߬ߣߊ߬ߟߌ ߓߘߊ߫ ߘߐߛߊ߬"
   },
   "detail": {
     "customer": "ߝߙߋ߬ߢߐߐߜ߭ߐ",
@@ -52,9 +53,15 @@
     "notice": {
       "booked": "ߡߊ߬ߡߌ߬ߘߊ߬ߟߌ ߓߘߊ߫ ߟߊߕߍ߰.",
       "accepted": "ߗߋߟߌ ߓߘߊ߫ ߛߐ߲߬.",
-      "rejected": "ߗߋߟߌ ߓߘߊ߫ ߓߊ߲߬."
+      "rejected": "ߗߋߟߌ ߓߘߊ߫ ߓߊ߲߬.",
+      "bookingCancelled": "ߡߊ߬ߡߌ߬ߣߊ߬ߟߌ ߓߘߊ߫ ߘߐߛߊ߬."
     },
-    "backToReferrals": "ߞߐߛߊ߬ߦߌ߲߬ ߟߊ߬ߛߌ߲߬ߠߌ߲ ߡߊ߬"
+    "backToReferrals": "ߞߐߛߊ߬ߦߌ߲߬ ߟߊ߬ߛߌ߲߬ߠߌ߲ ߡߊ߬",
+    "bookingCancelled": "ߡߊ߬ߡߌ߬ߣߊ߬ߟߌ ߓߘߊ߫ ߘߐߛߊ߬",
+    "cancelBooking": "ߡߊ߬ߡߌ߬ߘߊ߬ߟߌ ߘߐߛߊ߬",
+    "cancelReasonLabel": "ߘߐ߬ߛߊ߬ߟߌ ߞߎ߲߭ (ߊ߬ ߦߌ߬ߘߊ߬ߣߍ߲߫ ߘߝߊ߬ߢߐ߮ ߟߊ߫) *",
+    "cancelBookingHint": "ߓߊ߯ߙߊ ߕߌ߰ߦߊ ߦߋ߫ ߛߊ߬ߦߌ߬ ߟߊ߫ ߘߝߊ߬ߢߐ߮ ߟߋ߫ ߡߊ߬߸ ߊ߬ ߣߴߊ߬ߟߎ߬ ߟߊ߫ ߞߏߟߊߕߍ߮ ߖߏ ߘߌ߫ ߘߐߛߊ߬. ߢߍߡߌߘߊ ߘߌ߫ ߛߋ߫ ߡߊߡߌ߬ߣߊ߬ ߟߊ߫ ߞߐߟߊ߫.",
+    "cancelBookingConfirm": "ߡߊ߬ߡߌ߬ߘߊ߬ߟߌ ߘߐߛߊ߬"
   },
   "history": {
     "title": "ߕߊߙߌߞߎ",
@@ -81,7 +88,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "ߞߏߡߌߟߏ߲ ߞߊ ߖߊߜ߭ߏߦߊ ߘߊߓߐߙߊ",
       "HANDOVER_COMPLETED": "ߡߊ߬ߘߏ߬ߣߌ߲߬ߠߌ߲ ߓߘߊ߫ ߓߊ߲߫",
       "ADMIN_PROTECTION_RELEASED": "ߞߎ߲߬ߠߊ߬ߛߌ߰ߟߊ ߓߘߊ߫ ߡߊ߬ߞߊ߲߬ߞߊ߲߬ߠߌ߲߫ ߝߌ߬ߟߊ߬ߣߍ߲ ߠߎ߬ ߟߊߓߐ߫ ߖߏߣߊ߫. ߞߎ߲: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "ߡߙߊߞߍߟߊ ߦߋ߫ ߕߜ߭ߐ ߛߍߓߍ߲ ߞߊ ߓߐ߫ {{from}} ߞߊ ߕߊ {{to}} . ߞߎ߲: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "ߡߙߊߞߍߟߊ ߦߋ߫ ߕߜ߭ߐ ߛߍߓߍ߲ ߞߊ ߓߐ߫ {{from}} ߞߊ ߕߊ {{to}} . ߞߎ߲: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "ߘߝߊ߬ߢߐ߲߰ ߜߘߍ߫ ߟߊ߫ ߘߐ߬ߛߙߋ߬ ߡߛߊ߬ߦߌ߬ߟߌ ߡߊߝߍߣߍ߲ ߓߘߊ߫ ߓߊ߲߬",
+      "BOOKING_CANCELLED": "ߡߊ߬ߡߌ߬ߣߊ߬ߟߌ ߓߘߊ߫ ߘߐߛߊ߬. ߞߎ߲: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "ߟߊߓߊ߯ߙߊߟߌ ߕߌ߰ߦߊ ߓߘߊ߫ ߟߊߛߊ߬ߦߌ߲߬ ߘߝߊ߬ߢߐ߮ ߡߊ߬",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "ߞߏߡߌߟߏ߲ ߞߊ ߖߊߜ߭ߏߦߊ ߓߐߙߊ ߣߌ߲ ߡߊߡߌ߬ߣߍ߬ߟߌ ߦߋ߫",
+      "COMMISSION_ELIGIBILITY_RESTORED": "ߞߏߡߌߟߏ߲ ߞߊ ߖߊߜ߭ߏߦߊ ߟߊߓߍ߲ ߣߋ ߘߏ߲ ߡߊߡߌ߬ߣߍ ߞߎߙߊߥߵ ߞߊߡߊ߬"
     }
   }
 }

@@ -49,8 +49,73 @@
       "newPartnerId": "新合作夥伴ID",
       "reason": "原因（必填）",
       "apply": "應用覆蓋",
-      "applying": "正在申請..."
+      "applying": "正在申請...",
+      "cancelBookingHint": "取消會將預訂及其佣金標記為已取消，將營運所有權返還給合作夥伴，並讓建構商再次預訂此潛在客戶。",
+      "cancelBookingConfirm": "取消此預訂嗎？其佣金也被取消。這會記錄您的姓名和原因。"
     },
-    "timelineTitle": "審核時間表（本次註冊）"
+    "timelineTitle": "審核時間表（本次註冊）",
+    "bookingStatus": "預訂狀態",
+    "commissionAttribution": "佣金歸屬",
+    "disputeOpen": "該客戶存在所有權爭議 - 另一位合作夥伴稱這是他們的。這是在爭議頁面上決定的。",
+    "viewDisputes": "查看爭議",
+    "cancellation": {
+      "title": "預訂已取消",
+      "hint": "預訂及其佣金被取消；營運所有權重新歸合作夥伴所有，建築商可以再次預訂此線索。",
+      "at": "取消於",
+      "by": "取消日期：",
+      "reason": "原因"
+    }
+  },
+  "disputes": {
+    "title": "所有權糾紛",
+    "hint": "因重複註冊而被拒絕的合作夥伴可以對客戶的所有權提出爭議。雙方考察一下再決定。",
+    "statusFilter": "爭議狀態",
+    "allStatuses": "所有狀態",
+    "empty": "對此狀態沒有爭議。",
+    "columns": {
+      "dispute": "爭議",
+      "customer": "顧客",
+      "project": "專案",
+      "raisedBy": "提出者：",
+      "heldBy": "現任所有者",
+      "status": "地位",
+      "raisedAt": "提出於"
+    },
+    "detail": {
+      "title": "爭議{{id}}",
+      "raisedOn": "於{{date}}提出",
+      "raisingTitle": "提出者：",
+      "holderTitle": "現任所有者",
+      "partner": "夥伴",
+      "raisedBy": "提交者",
+      "customerName": "顧客",
+      "mobile": "移動的",
+      "alternateMobile": "備用手機",
+      "email": "電子郵件",
+      "project": "專案",
+      "reason": "他們的理由",
+      "registration": "登記",
+      "registeredAt": "註冊於",
+      "referral": "推薦",
+      "heldMissing": "無法找到所持有的註冊資訊。",
+      "resolutionTitle": "決定",
+      "outcome": "結果",
+      "note": "筆記",
+      "decidedBy": "決定於",
+      "decidedAt": "決定了",
+      "newRegistration": "新註冊",
+      "decideTitle": "決定本次糾紛",
+      "noteLabel": "解釋決定的註釋（必需）",
+      "noteRequired": "寫個便條來決定。",
+      "uphold": "堅持",
+      "overturn": "顛覆",
+      "upholdEffect": "{{holder}}留住顧客。爭議已經結束，沒有其他任何變化。",
+      "overturnEffect": "{{holder}}的重複保護現已結束，客戶將作為新註冊註冊到{{partner}} 。",
+      "heldBookedHelp": "該客戶是透過當前所有者預訂的。首先取消該預訂（管理員覆蓋註冊），然後推翻：",
+      "confirmTitle": "你確定嗎？",
+      "confirmUphold": "是的，堅持",
+      "confirmOverturn": "是的，推翻",
+      "back": "返回爭議"
+    }
   }
 }

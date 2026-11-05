@@ -30,7 +30,8 @@
       "registered": "Bakomisamaki nkombo"
     },
     "booked": "Ba réservé",
-    "empty": "Ba références moko te nanu."
+    "empty": "Ba références moko te nanu.",
+    "bookingCancelled": "Réservation elongolami"
   },
   "detail": {
     "customer": "Kiliya",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Réservation e confirmé.",
       "accepted": "Botindiki endimami.",
-      "rejected": "Botindiki eboyamaki."
+      "rejected": "Botindiki eboyamaki.",
+      "bookingCancelled": "Réservation elongolami."
     },
-    "backToReferrals": "Kozonga na ba Références"
+    "backToReferrals": "Kozonga na ba Références",
+    "bookingCancelled": "Réservation elongolami",
+    "cancelBooking": "Annuler Réservation",
+    "cancelReasonLabel": "Ntina ya koboya (elakisami na molongani) *",
+    "cancelBookingHint": "Propriété opérationnelle ezongaka na partenaire mpe eligibilité na bango ya commission e annulé. Liplome ekoki kozala lisusu na carnet na sima.",
+    "cancelBookingConfirm": "Annuler réservation oyo osali"
   },
   "history": {
     "title": "Lisolo",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Eligibilité ya Commission esalemi",
       "HANDOVER_COMPLETED": "Bopesi mosala esili",
       "ADMIN_PROTECTION_RELEASED": "Admin abimisi protection ya doublon tôt. Ntina: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin apesaki lisusu bokomisi nkombo uta {{from}} kino na {{to}} . Ntina: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin apesaki lisusu bokomisi nkombo uta {{from}} kino na {{to}} . Ntina: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Meka ya kokomisa nkombo mbala mibale na molongani mosusu eboyamaki",
+      "BOOKING_CANCELLED": "Réservation elongolami. Ntina: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Propriété opérationnelle ezongaki na partenaire",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Eligibilité ya Commission e annulé na réservation",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Eligibilité ya Commission ezongi pona réservation ya sika"
     }
   }
 }

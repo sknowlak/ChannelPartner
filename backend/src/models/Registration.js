@@ -74,6 +74,9 @@ const registrationSchema = new mongoose.Schema(
       default: 'PARTNER_CRM'
     },
     isBooked: { type: Boolean, default: false },
+    // 'OPEN' while another partner's ownership dispute on this lead awaits an
+    // admin (section 62); '' otherwise.
+    disputeStatus: { type: String, enum: ['', 'OPEN'], default: '' },
 
     // Which of the partner's own team members is working this lead
     // day-to-day - independent of partnerId (which never changes once

@@ -22,6 +22,13 @@ function fieldValue(def, registration, customer) {
 const REFERRAL_STATUSES = new Set(['NOT_REFERRED', 'PENDING_BUILDER', 'ACCEPTED', 'REJECTED']);
 const REFERRAL_BADGE = { NOT_REFERRED: 'pending', PENDING_BUILDER: 'pending', ACCEPTED: 'accepted', REJECTED: 'rejected' };
 
+// Booking / commission states (section 62: a booking can be cancelled, which
+// cancels the commission eligibility too). Labels are leads:booking.status.*
+// and leads:commission.*; unknown values are shown as sent.
+const BOOKING_BADGE = { CONFIRMED: 'accepted', CANCELLED: 'rejected' };
+const ELIGIBILITY_BADGE = { ELIGIBLE: 'accepted', PENDING: 'pending', CANCELLED: 'rejected' };
+const ATTRIBUTION_BADGE = { ATTRIBUTED: 'accepted', DISPUTED: 'pending' };
+
 function formatFieldValue(def, value) {
   if (value === undefined || value === null || value === '') return '-';
   if (def.dataType === 'LIST') return Array.isArray(value) ? value.map((v) => optionLabel(v)).join(', ') : String(optionLabel(value));
@@ -75,12 +82,16 @@ export default function PartnerJourney() {
   if (error) return <div className="page"><div className="error-box">{error}</div></div>;
   if (!detail || !fieldDefs) return <div className="page">{t('common:states.loading')}</div>;
 
-  const { registration, customer, ownership } = detail;
+  const { registration, customer, ownership, booking, commission } = detail;
+  const bookingCancelled = !registration.isBooked && booking?.status === 'CANCELLED';
+  const label = (prefix, value) => t(`${prefix}.${value}`, { defaultValue: value });
   const tabs = sortLeadTabs([...new Set(fieldDefs.map((f) => f.group))]);
 
   return (
     <div className="page page-wide">
       <h1>{registrationId}</h1>
+      {/* Another partner's dispute is under admin review - who raised it is never shown. */}
+      {registration.disputeStatus === 'OPEN' && <div className="warn-box" role="status">{t('leads:journey.disputeBanner')}</div>}
       <div className="card">
         <dl className="kv">
           <dt>{t('leads:journey.customer')}</dt>
@@ -106,11 +117,35 @@ export default function PartnerJourney() {
             <span className={`badge ${REFERRAL_BADGE[registration.referralStatus] || 'pending'}`}>{REFERRAL_STATUSES.has(registration.referralStatus) ? t(`leads:referral.${registration.referralStatus}`) : registration.referralStatus}</span>
             {registration.referralDecision?.reason && <div className="hint" style={{ marginTop: '0.3rem' }}>{t('leads:journey.builderReason', { reason: registration.referralDecision.reason })}</div>}
           </dd>
+          <dt>{t('leads:journey.booking')}</dt>
+          <dd>
+            {booking ? (
+              <>
+                <span className={`badge ${BOOKING_BADGE[booking.status] || 'pending'}`}>{label('leads:booking.status', booking.status)}</span>
+                {' '}<span className="hint">{booking.bookingId} · {formatDate(booking.bookingDate, partner.timezone)}</span>
+                {booking.status === 'CANCELLED' && (
+                  <div className="hint" style={{ marginTop: '0.3rem' }}>
+                    {t('leads:journey.cancelledOn', { date: formatDateTime(booking.cancelledAt, partner.timezone) })}
+                    {booking.cancellationReason ? ` ${t('leads:journey.cancelReason', { reason: booking.cancellationReason })}` : ''}
+                  </div>
+                )}
+              </>
+            ) : t('leads:journey.notBooked')}
+          </dd>
+          {commission && (
+            <>
+              <dt>{t('leads:journey.commission')}</dt>
+              <dd>
+                <span className={`badge ${ELIGIBILITY_BADGE[commission.eligibilityStatus] || 'pending'}`}>{label('leads:commission.eligibility', commission.eligibilityStatus)}</span>
+                {' '}<span className={`badge ${ATTRIBUTION_BADGE[commission.attributionStatus] || 'pending'}`}>{label('leads:commission.attribution', commission.attributionStatus)}</span>
+              </dd>
+            </>
+          )}
         </dl>
 
-        {registration.isBooked
-          ? <p className="hint">{t('leads:journey.bookedHint')}</p>
-          : <p className="hint">{t('leads:journey.notBookedHint')}</p>}
+        {registration.isBooked && <p className="hint">{t('leads:journey.bookedHint')}</p>}
+        {bookingCancelled && <p className="hint">{t('leads:journey.cancelledHint')}</p>}
+        {!registration.isBooked && !bookingCancelled && <p className="hint">{t('leads:journey.notBookedHint')}</p>}
       </div>
 
       <div className="card">

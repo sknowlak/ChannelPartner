@@ -43,7 +43,9 @@
       "name": "Nomme",
       "city": "Çittæ",
       "status": "Stato",
-      "actions": "Açioin"
+      "actions": "Açioin",
+      "protection": "Proteçion duplicâ",
+      "matchOn": "I duplici correspondan in sce"
     },
     "closeReferrals": "Serra pe-i referimenti",
     "reopen": "Arvî torna",
@@ -55,6 +57,25 @@
       "add": "Azzonta progetto",
       "created": "Creou {{name}} ."
     },
-    "back": "Torna a-i construttoî"
+    "back": "Torna a-i construttoî",
+    "protection": {
+      "days_one": "{{count}} giorno",
+      "days_other": "{{count}} giorni",
+      "globalDays_one": "Predefinio globale ( {{count}} giorno)",
+      "globalDays_other": "Predefinio globale ( {{count}} giorni)",
+      "globalDefault": "Predefinio globale",
+      "placeholder": "Giorni de proteçion (veuo = predefinio globale)",
+      "saved": "Proteçion duplicâ a l'é stæta aggiornâ pe {{name}} .",
+      "hint": "Proteçion duplicâ: 1-3650 giorni, ò lasciâ veuo pe deuviâ o predefinio globale da-e Impostaçioin. Un cangiamento o l'applica solo a-e neuve registraçioin - quelle ch'existe mantëgnan a seu scadensa."
+    },
+    "matching": {
+      "global": "Predefinio globale",
+      "globalWith": "Predefinio globale ( {{fields}} )",
+      "mobile": "Numero de mòbile",
+      "email": "E-mail",
+      "both": "Numero de mòbile + e-mail",
+      "saved": "Correspondensa duplicâ aggiornâ pe {{name}}",
+      "hint": "Quæ dettaggi fan doe registraçioin o mæximo cliente pe un progetto. I cangiamenti s'applican a-i contròlli duplicæ da-o momento in avanti; a proteçion existente a no l'é influensâ."
+    }
   }
 }

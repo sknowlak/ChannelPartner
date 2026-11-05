@@ -31,7 +31,8 @@
       "registered": "Registrat"
     },
     "booked": "Reservat",
-    "empty": "Encara no hi ha referències."
+    "empty": "Encara no hi ha referències.",
+    "bookingCancelled": "Reserva cancel·lada"
   },
   "detail": {
     "customer": "Client",
@@ -54,9 +55,15 @@
     "notice": {
       "booked": "Reserva confirmada.",
       "accepted": "Referència acceptada.",
-      "rejected": "Referència rebutjada."
+      "rejected": "Referència rebutjada.",
+      "bookingCancelled": "Reserva cancel·lada."
     },
-    "backToReferrals": "Tornar a Referències"
+    "backToReferrals": "Tornar a Referències",
+    "bookingCancelled": "Reserva cancel·lada",
+    "cancelBooking": "Cancel·la la reserva",
+    "cancelReasonLabel": "Motiu de la cancel·lació (mostrat a la parella) *",
+    "cancelBookingHint": "La propietat operativa torna al soci i la seva elegibilitat per a la comissió es cancel·la. L'avantatge es pot tornar a reservar més tard.",
+    "cancelBookingConfirm": "Cancel·la la reserva"
   },
   "history": {
     "title": "Història",
@@ -87,7 +94,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "S'ha creat l'elegibilitat de la comissió",
       "HANDOVER_COMPLETED": "Lliurament finalitzat",
       "ADMIN_PROTECTION_RELEASED": "L'administrador va llançar la protecció duplicada abans. Motiu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "L'administrador ha reassignat el registre de {{from}} a {{to}} . Motiu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "L'administrador ha reassignat el registre de {{from}} a {{to}} . Motiu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "S'ha rebutjat un intent de registre duplicat per part d'un altre soci",
+      "BOOKING_CANCELLED": "Reserva cancel·lada. Motiu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "La propietat operativa va retornar al soci",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "S'ha cancel·lat l'elegibilitat de la comissió amb la reserva",
+      "COMMISSION_ELIGIBILITY_RESTORED": "S'ha restaurat l'elegibilitat de la comissió per a la nova reserva"
     }
   }
 }

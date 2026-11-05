@@ -30,7 +30,8 @@
       "registered": "Qillqt’ata"
     },
     "booked": "Reservado ukhamawa",
-    "empty": "Janiw kuna referencias ukanakas utjkiti."
+    "empty": "Janiw kuna referencias ukanakas utjkiti.",
+    "bookingCancelled": "Reservacionajj cancelatäjjewa"
   },
   "detail": {
     "customer": "Kliyinti",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Reservacionax chiqapawa.",
       "accepted": "Referencia ukax katuqatawa.",
-      "rejected": "Referencia ukax janiw satawa."
+      "rejected": "Referencia ukax janiw satawa.",
+      "bookingCancelled": "Reservacionajj cancelatäjjewa."
     },
-    "backToReferrals": "Referencias ukar kutt’añamawa"
+    "backToReferrals": "Referencias ukar kutt’añamawa",
+    "bookingCancelled": "Reservacionajj cancelatäjjewa",
+    "cancelBooking": "Reservacionanak cancelaña",
+    "cancelReasonLabel": "Razón de cancelación (uñacht’ayata masiparu) * .",
+    "cancelBookingHint": "Propiedad operativa ukaxa socio ukarux kutt’awayxiwa ukatxa comisión ukarux cancelatarakiwa. Uka p’iqinchawix qhipatx wasitatw reservatäspa.",
+    "cancelBookingConfirm": "Uka reservacionajj cancelatäñapawa"
   },
   "history": {
     "title": "Isturya",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Comisión ukan uñt’ayasiñapataki utt’ayata",
       "HANDOVER_COMPLETED": "Handover ukax tukuyatawa",
       "ADMIN_PROTECTION_RELEASED": "Admin ukax duplicado jark’aqasiñ nayraqat apsuwayxi. Razón: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin ukax qillqantañax {{from}} ukat {{to}} ukar wasitat uñt’ayawayi. Razón: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin ukax qillqantañax {{from}} ukat {{to}} ukar wasitat uñt’ayawayi. Razón: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Yaqha socio ukan duplicado qillqantañ yant’awipax janiw satawa",
+      "BOOKING_CANCELLED": "Reservacionajj cancelatäjjewa. Razón: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Propiedad operativa ukaxa socio ukarux kutt’ayatarakiwa",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Comisión ukar mantañax reserva ukamp cancelatawa",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Comisión ukan elegibilidad ukax machaq reserva ukar kutt’ayatawa"
     }
   }
 }

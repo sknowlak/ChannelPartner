@@ -14,7 +14,7 @@ const { PERMISSIONS } = require('../config/permissions');
 const VALID_METHODS = ['POST', 'PUT', 'PATCH', 'GET', 'DELETE'];
 const VALID_UPDATE_METHODS = ['POST', 'PUT', 'PATCH', 'DELETE'];
 const VALID_FORMATS = ['JSON', 'FORM', 'CUSTOM'];
-const VALID_EVENTS = ['LEAD_CREATED', 'LEAD_UPDATED', 'STAGE_UPDATED', 'BOOKING_COMPLETED'];
+const VALID_EVENTS = ['LEAD_CREATED', 'LEAD_UPDATED', 'STAGE_UPDATED', 'BOOKING_COMPLETED', 'BOOKING_CANCELLED'];
 // Header values often hold a client CRM's credentials. Only someone who can
 // edit webhooks (MANAGE_SETTINGS) sees them in full - they need the real
 // values to edit the form; everyone else sees them masked.

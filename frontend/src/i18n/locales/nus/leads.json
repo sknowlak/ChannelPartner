@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Ca gɔ̱r",
-    "pending": "Ci duɔ̱th"
+    "pending": "Ci duɔ̱th",
+    "status": {
+      "CONFIRMED": "Ca gɔ̱r",
+      "CANCELLED": "Booking ca woc"
+    }
   },
   "assign": {
     "unassigned": "/Ka̱n la̱th lät",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "/Thiɛlɛ pröjek mi̱ ŋot (/ka̱nɛ la̱th lät)",
-    "notInList": "{{project}} (/cɛ te rɛy li̱thtä pröjek)"
+    "notInList": "{{project}} (/cɛ te rɛy li̱thtä pröjek)",
+    "protectionDays_one": "{{count}} -ga̱ŋ cäŋ",
+    "protectionDays_other": "{{count}} -ga̱ŋ cäŋ"
   },
   "journey": {
     "customer": "Ra̱̱m mi ko̱k",
@@ -76,7 +82,14 @@
     "progressHistory": "Prögi̱rɛth Ɣi̱thtöri̱",
     "timesIn": "(thaakni̱ rɛy {{timezone}} )",
     "backToMyLeads": "Luny kä Leadni̱kä",
-    "editLead": "Ɛdit Lead"
+    "editLead": "Ɛdit Lead",
+    "disputeBanner": "Ram in dɔ̱ŋ in lät kɛɛl kɛ jɛ cɛ ŋaknɔm ŋak kɛ kui̱ kuakni̱ ti̱ti̱. Ɛn Leadrat admin cɛ jɛ guic - ga̱ŋdu bɛ te thi̱n amäni mi ci kɛn ɛ lar.",
+    "booking": "Buɔk",
+    "commission": "Lua̱ŋ mi ca ka̱m buɔ̱n, lua̱ŋ mi ca ka̱m ra̱n",
+    "notBooked": "/Ka̱n jɛ gɔ̱r",
+    "cancelledOn": "Cua woc kɛ {{date}} .",
+    "cancelReason": "Luɔt: {{reason}}",
+    "cancelledHint": "Kä ram min lät duel cɛ booking woc - min te kɛ kui̱ lätni cɛ luny jɔk kä ji kä ca commission eligibility woc. Kä ba jɛ luɔ̱c jɔk mi̱ ca lead nyɔk kɛ book."
   },
   "referral": {
     "NOT_REFERRED": "/Ka̱n jɛ la̱th lät (thiɛlɛ pröjek)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Cu Builder ɛ nhɔk ɛn ɣöö ba jɛ la̱th lät",
       "REFERRAL_REJECTED": "Builder cuɛ lo̱k ɛn ɣöö ba jɛ la̱th lät. Luɔt: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin cɛ dupli̱kët protekciɔn ka̱m raar kɛ nhiam. Luɔt: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin cuɛ nyɔk kɛ läth lät kä {{from}} ɛ wä kä {{to}} . Luɔt: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin cuɛ nyɔk kɛ läth lät kä {{from}} ɛ wä kä {{to}} . Luɔt: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ɛn ɣɔ̱n kä ɣöö ba ciötdɛ gɔ̱r piny ɛ rami̱ dɔ̱diɛn cua lo̱k",
+      "BOOKING_CANCELLED": "Booking ca woc. Luɔt: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Öperɛcinal öwnɛri̱thi̱p cuɛ luny kä ram min lät kɛɛl",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kɔmmi̱ciɔn ɛli̱gi̱li̱ti̱ cua woc kɛ booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kɔmmi̱cin ɛli̱gi̱li̱ti̱ cua luɔ̱c jɔk kɛ kui̱ booking in pay tuɔɔk",
+      "OWNERSHIP_DISPUTE_RAISED": "Kä ram dɔ̱diɛn mi̱ lät kɛɛl kɛ jɛ cuɛ ruac kɛ kui̱ kuakni̱ ti̱ti̱ - ɛ Leadrat admin bɛ jɛ guic",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Kä ŋaknɔm kɛ kui̱ kuakni̱ kä cuɔ̱p ɛmɛ cua woc - kuak kuakni̱ku /ka̱nɛ gɛr",
+      "OWNERSHIP_DISPUTE_UPHELD": "Kä ŋaknɔm kɛ kui̱ kuakni̱ kä cuɔ̱p ɛmɛ cua nyɔk kɛ di̱l guec - kuak kuakni̱ku cua ŋa̱c",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Registered kɛ kɔr kä mëë ca ruac kɛ kui̱ kuakni̱ku lat kɛ kui̱du. Ŋäc: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Cuɛ thuɔ̱k kɛ ga̱ŋ: ɛn ŋaknɔm kɛ kui̱ kuakni̱ cua lar i̱ ba nhɔk ni̱ ram in dɔ̱ŋ. Ŋäc: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Ɛn nämbär tɛlɛpoonä ɛmɛ /cɛ lät kä {{country}} .",
     "COUNTRY_MISMATCH": "Ɣän göörä ɣöö bä kɔd wec in lot rɔ kuany.",
     "NOT_MOBILE": "Gɔ̱ri nämbär mobail, /ciɛ nämbär landline."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Kɔmmi̱ciɔn mi̱ ro̱ŋ",
+      "PENDING": "Kɔmmi̱cin ŋotdɛ",
+      "CANCELLED": "Kɔmmi̱cin cua woc"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Ca jɛ la̱th kä ji̱",
+      "DISPUTED": "Attribution cua ŋak"
+    }
+  },
+  "result": {
+    "none": "/Thiɛlɛ min ca jiek kä ri̱jithtɛciɔn mi̱ ba nyoth. Gɔ̱ri ciötdu piny kɛ nhiam.",
+    "acceptedTitle": "Lead ca gɔ̱r piny",
+    "rejectedTitle": "Lead /ka̱nɛ gɔ̱r piny",
+    "protectionWindow": "Prötɛkciɔn Wi̱ndöw",
+    "protectedUntil": "Cua gaŋ Amäni̱",
+    "openLead": "Lead mi̱ lɛp",
+    "addAnother": "Matdɛ Lead dɔ̱diɛn",
+    "duplicate": "Dupli̱kët - ca gaŋ ni̱ wal",
+    "duplicateHint": "Cuɔ̱thtɔm ɛmɛ ca kɔn gaŋ kɛ kui̱ pröjek ɛmɛ kɛ gɔ̱a̱r piny mi̱ dɔ̱ŋ, kɛ kui̱c ɛmɔ /cɛ rɔ lot ɛn ɣöö ba ji̱ gɔ̱r piny.",
+    "existingProtectedUntil": "Regi̱thti̱rɛciɔn min te thi̱n ca gaŋ amääni̱"
+  },
+  "disputes": {
+    "title": "Ruacdä",
+    "intro": "Ruac kɛ kui̱ kuakni̱ min ci̱ ji̱n ɛ jiɛc nhial kɛ kui̱ ji̱ kökä tin ca lo̱k i̱ kɛ dupli̱këtni̱. Ɛn Leadrat admin bɛ kɛl kɛl guic.",
+    "empty": "/Thilɛ ŋaknɔm mi cia jiɛc nhial. Mi ci customer mi ci nööŋ rɛy duel lo̱k ɛ la duŋdup, deri jɛ ŋak kɛ min ca jek kä registration result.",
+    "columns": {
+      "dispute": "Ga̱̱k",
+      "reason": "Luɔtdu",
+      "outcome": "Min bä raar thi̱n"
+    },
+    "status": {
+      "OPEN": "Under review",
+      "UPHELD": "/Ciɛ kui̱du",
+      "OVERTURNED": "Cuɛ ca̱r kɛ kui̱du",
+      "WITHDRAWN": "Ca woc"
+    },
+    "awaitingReview": "Li̱pä admin ri̱biäw",
+    "openNewLead": "Lep bo̱o̱thdu {{id}}",
+    "withdraw": "Wuɔ̱c kɛ rɔ kä duɔ̱r",
+    "withdrawConfirm": "Kämni ŋaknɔm raar kɛ kui̱ {{name}} ? Kä kuäär in thia̱k bɛ te thi̱n ce̱tkɛ min te thi̱n.",
+    "raise": "Di̱thpuɔt duŋ kuakni̱",
+    "raiseTitle": "Di̱thpuɔt duŋ kuakni̱",
+    "raiseHint": "Mi ci cuɔ̱th ɛmɛ ben kä ji kɛ nhiam, latdɛ luɔtdɛ. Ɛn admin Leadrat bɛ jɛ guic; mi ci kɛn ɛ lar kɛ kui̱du, ca lead gɔ̱r piny kɛ kui̱du.",
+    "reasonLabel": "Ɛŋu mi la cuthtɔm ɛmɛ ɛ duŋdu?",
+    "reasonMin_one": "Kä min tɔtdɛ {{count}} ciɛŋ.",
+    "reasonMin_other": "Kä min tɔt {{count}} ciɛŋni̱.",
+    "submit": "Jäkni ruac",
+    "notProtected": "/Thiɛlɛ ram mi tekɛ ga̱ŋ kä kuthtɔmä ɛmɛ kɛ kui̱ pröjek ɛmɛ ɛ nyɔk - deri ciötdu gɔ̱r piny ɛntäämɛ.",
+    "raised": "Ruac {{id}} cua ja̱k kɛ ɣöö ba guic.",
+    "viewAll": "Guɛc ŋaknɔmni̱kä"
+  },
+  "dashboard": {
+    "title": "Da̱thbörd",
+    "period": "Cuɔ̱ŋdɛ",
+    "lastDays_one": "{{count}} cäŋ",
+    "lastDays_other": "{{count}} ni̱n",
+    "emptyTitle": "Ca ji nho̱k bën! Kä thilɛ ji̱ bo̱o̱th ŋotdɛ.",
+    "emptyHint": "Gɔ̱ri ciötdu piny kɛ nhiam - pipeline du, bookings kɛnɛ gua̱th tin deri ga̱ŋ kɛ ji̱ bi kɛ jɔɔc ɛn wa̱nɛ.",
+    "tiles": {
+      "leads": "Kä matdiɛn kɛɛliw",
+      "newInPeriod_one": "{{count}} mi̱ pay ben rɛy gua̱th ɛmɛ",
+      "newInPeriod_other": "{{count}} mi̱ pay ben rɛy gua̱th ɛmɛ",
+      "accepted": "Ca nhɔk",
+      "booked": "Ca gɔ̱r",
+      "bookedInPeriod_one": "{{count}} ca gɔ̱r rɛy gua̱th ɛmɛ",
+      "bookedInPeriod_other": "{{count}} ca gɔ̱r rɛy gua̱th ɛmɛ",
+      "conversion": "Kɔnberciɔn",
+      "conversionHint": "Booked leads ɛ la nyuak kä nɛy tin ca nhɔk",
+      "protectedNow": "Caa gaŋ ɛntäämɛ",
+      "expiringSoon_one": "Ga̱ŋ mi̱ thuɔ̱k rɛy {{count}} cäŋ",
+      "expiringSoon_other": "Ga̱ŋ mi̱ thuɔ̱k rɛy {{count}} ni̱n",
+      "disputedNow": "Cua ŋak ɛ nɛy kɔ̱kiɛn",
+      "disputedNowHint": "Kä bo̱o̱thdu kɛ ŋaknɔm mi̱ ca lɛp kɛ kui̱ kuakni̱ kä ram mi̱ dɔ̱ŋ",
+      "commissionEligible": "Kɔmmi̱ciɔn mi̱ ro̱ŋ",
+      "commissionCancelled_one": "{{count}} ca woc",
+      "commissionCancelled_other": "{{count}} ca woc"
+    },
+    "chart": {
+      "title_one": "Gɔ̱ri ciötdä kɛnɛ booking kɛ cäŋ kɛl - cäŋ in jɔak {{count}}",
+      "title_other": "Gɔ̱ri ciötdä kɛnɛ booking kɛ cäŋ kɛl - ni̱n tin jɔak {{count}}",
+      "registrations": "Rejithtɛciɔni̱",
+      "bookings": "Buɔki̱ni̱"
+    },
+    "byStage": "Bo̱o̱thɛ kɛ ta̱a̱dɛ",
+    "bySource": "Bo̱o̱thɛ kɛ gua̱a̱th in tuɔɔkɛ thi̱n",
+    "byReferral": "Böth kɛ ta̱a̱ referral",
+    "myDisputes": "Ruacni̱ tin ci̱ ji̱n kɛ jiɛc nhial",
+    "noDisputes": "/Thiɛlɛ ŋaknɔm mi̱ ca jiɛc nhial.",
+    "unknown": "/Ka̱n jɛ la̱th",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM raar (mi̱ ca thɛm)",
+      "PARTNER_CRM": "Cua mat thi̱n ɛ buɔ̱ndu",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Intɛgrɛciɔn",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Ga̱ŋ bɛ thuɔ̱k rɛy {{count}} cäŋ in bëë",
+    "expiringTitle_other": "Ga̱ŋ bɛ thuɔ̱k rɛy ni̱n {{count}} tin bëë",
+    "expiringEmpty": "/Thiɛlɛ lead mi̱ ci̱ ga̱ŋdɛ bath rɛy wäär-nyiinä ɛmɛ."
   }
 }

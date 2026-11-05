@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Ki coyo",
-    "pending": "Otum ku"
+    "pending": "Otum ku",
+    "status": {
+      "CONFIRMED": "Ki coyo",
+      "CANCELLED": "Ki juku booking"
+    }
   },
   "assign": {
     "unassigned": "Pe ki miiyo",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Pe tye yub mo keken (pe ki cwalo)",
-    "notInList": "{{project}} (pe tye i kin yub)"
+    "notInList": "{{project}} (pe tye i kin yub)",
+    "protectionDays_one": "{{count}} -gwok me nino",
+    "protectionDays_other": "{{count}} -gwok me nino"
   },
   "journey": {
     "customer": "Kactoma",
@@ -76,7 +82,14 @@
     "progressHistory": "Lok me dongo lobo",
     "timesIn": "(cawa i {{timezone}} )",
     "backToMyLeads": "Dok cen bot lutela na",
-    "editLead": "Lok latela"
+    "editLead": "Lok latela",
+    "disputeBanner": "Larem mukene tye ka pyem i kom twero pa lawil man. Latela Leadrat tye ka nenone - gwok ni tye ka tic nio ka gumoko tam gi.",
+    "booking": "Buto",
+    "commission": "Magoba mo",
+    "notBooked": "Pe ki coyo",
+    "cancelledOn": "Ki juku i nino dwe {{date}} .",
+    "cancelReason": "Tyen lok: {{reason}}",
+    "cancelledHint": "Lagedo ot ni ojuko booking ni - twero me tic ni odwogo boti ki twero me nongo cul ni ki juku woko. Ki dwoko cen ka ki coyo gin ma ki lwongo ni lead ni odoco."
   },
   "referral": {
     "NOT_REFERRED": "Pe ki cwalo (pe ki yub)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Lagedo oye lok ma ki cwalo ni",
       "REFERRAL_REJECTED": "Lagedo okwero lok ma ki cwalo ni. Tyen lok: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Latela okati ki jami ma ki gwoko ma rwate con. Tyen lok: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Latela oloko rwom me coyo nying ki {{from}} me doko {{to}} . Tyen lok: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Latela oloko rwom me coyo nying ki {{from}} me doko {{to}} . Tyen lok: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Tem me coyo nying pa ngat mukene ki kwero",
+      "BOOKING_CANCELLED": "Ki juku booking. Tyen lok: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "twero me tic ki dwoko cen bot ngat ma tye ka tic kwede",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ki jwayo twero me nongo cente ki i buk",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ki dwoko twero me nongo cul pi buk manyen ni",
+      "OWNERSHIP_DISPUTE_RAISED": "Larem mukene oloko i kom bedo ki twero i kom lawil man - ladit me Leadrat obi neno ne",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Lok ma mako bedo ki twero i kom lawil ni ki kwanyo woko - twero ni pe ki loko",
+      "OWNERSHIP_DISPUTE_UPHELD": "Lok ma mako bedo ki twero i kom lawil ni ki neno - twero ni ki moko",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Ki coyo nying ni ingee lok ma mako bedo ki twero ni ki moko i komi. Ngec: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Gwoko otum: lok ma mako bedo ki twero ki moko i kom ngat mukene. Ngec: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Namba cim man pe tiyo pi {{country}} .",
     "COUNTRY_MISMATCH": "Walegi ni iyer namba me lobo ma opore.",
     "NOT_MOBILE": "Walegi ni i ket namba cim cingi, ento pe cim cingi."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "twero me nongo kony",
+      "PENDING": "Yub me tic tye ka kuro",
+      "CANCELLED": "Ki jwayo yub me tic"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Ki keto i komi",
+      "DISPUTED": "lok ma mako lok ma ki waco ni tye ma ki pyem iye"
+    }
+  },
+  "result": {
+    "none": "Pe tye adwogi me coyo nying ma ki bi nyutu. Co nying ngat ma ibi telo mukwongo.",
+    "acceptedTitle": "Latela ma ki coyo",
+    "rejectedTitle": "Latela pe ki coyo",
+    "protectionWindow": "Dirica me gwoko",
+    "protectedUntil": "Ki gwoko nio wa",
+    "openLead": "Yabo tela",
+    "addAnother": "Med Latela mukene",
+    "duplicate": "Ma rwate - dong ki gwoko",
+    "duplicateHint": "Lawil man dong ki gwoko pi yub man ki coyo nying mukene, pi meno pi ki twero coyo nyinge piri.",
+    "existingProtectedUntil": "Coc ma dong tye ki gwoko nio wa"
+  },
+  "disputes": {
+    "title": "Peko na",
+    "intro": "Lok ma mako bedo ki jami ma i kelo bot luwil ma ki kwero calo jami ma ki dwoko cen. Latela pa Leadrat neno gin acel acel.",
+    "empty": "Pe ikelo lok mo keken. Ka lawil ma ikelo ni ki kwero me bedo gin ma ki lwongo ni duplicate, ki in itwero pyem kwede ki adwogi me coyo nying.",
+    "columns": {
+      "dispute": "Kit da mo",
+      "reason": "tyen lok ni",
+      "outcome": "Adugi"
+    },
+    "status": {
+      "OPEN": "Kitye ka neno ne",
+      "UPHELD": "Pe tye piri",
+      "OVERTURNED": "Ki moko tam piri",
+      "WITHDRAWN": "Ki kwanyo woko"
+    },
+    "awaitingReview": "Tye ka kuro neno pa ladit tic",
+    "openNewLead": "Yab lok ni {{id}}",
+    "withdraw": "Aa iye",
+    "withdrawConfirm": "Kwanyo lok ni pi {{name}} ? Won kom ma tye i kare ni tye kit ma tye kwede.",
+    "raise": "Laro lok i kom bedo ki twero",
+    "raiseTitle": "Laro lok i kom bedo ki twero",
+    "raiseHint": "Ka lawil ni obino boti mukwongo, tit pingo. Latela pa Leadrat obi neno ne; ka gu moko tam gi maber piri, latela ni ki coyo piri.",
+    "reasonLabel": "Pingo lawil man obedo megi?",
+    "reasonMin_one": "Ma nok loyo {{count}} coc.",
+    "reasonMin_other": "Maromo {{count}} coc.",
+    "submit": "Cwal lok me apokapoka",
+    "notProtected": "Pe tye ngat mo ma tye ki gwok i kom lawil man pi yub man matwal - itwero coyo lacat wil ni kombedi.",
+    "raised": "Laro lok {{id}} ki cwalo me neno.",
+    "viewAll": "Nen apokapoka na"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Kare",
+    "lastDays_one": "{{count}} nino",
+    "lastDays_other": "{{count}} nino",
+    "emptyTitle": "Wa joli! Pe itye ki lanyut mo keken.",
+    "emptyHint": "Co nying dano ma ibi miini me acel - yub ni, buk ki kare me gwoko jami obi nyute kany.",
+    "tiles": {
+      "leads": "wel dano ma otelo ne",
+      "newInPeriod_one": "{{count}} manyen i kare ni",
+      "newInPeriod_other": "{{count}} manyen i kare ni",
+      "accepted": "Ki jolo",
+      "booked": "Ki coyo",
+      "bookedInPeriod_one": "{{count}} ki coyo i kare ni",
+      "bookedInPeriod_other": "{{count}} ki coyo i kare ni",
+      "conversion": "loko",
+      "conversionHint": "dano ma ki coyo ma calo dul pa dano ma ki yer",
+      "protectedNow": "Ki gwoko kombedi",
+      "expiringSoon_one": "Gwok ma gik i nino {{count}}",
+      "expiringSoon_other": "Gwok ma gik i {{count}} nino",
+      "disputedNow": "Dano mukene gi kwero",
+      "disputedNowHint": "Telo ni ki lok me bedo ki twero ma oyabe ki bot ngat mukene",
+      "commissionEligible": "twero me nongo kony",
+      "commissionCancelled_one": "{{count}} ki juku",
+      "commissionCancelled_other": "{{count}} ki juku"
+    },
+    "chart": {
+      "title_one": "Coyo nying ki coyo nying pi nino acel acel - nino me agiki {{count}}",
+      "title_other": "Coyo nying ki coyo nying pi nino acel acel - nino ma okato {{count}}",
+      "registrations": "Coyo nying",
+      "bookings": "Buko"
+    },
+    "byStage": "Telo dano ki kit ma gi tye kwede",
+    "bySource": "Telo ki kama aa ki iye",
+    "byReferral": "Telo ki kit ma ki cwalo kwede",
+    "myDisputes": "lok ma i kelo",
+    "noDisputes": "Pe tye lok mo ma ki kelo.",
+    "unknown": "Pe ki keto",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM ma woko (ma ki poro)",
+      "PARTNER_CRM": "ki medo ki dul ni",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Ribbe",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Gwoko tye ka gik i nino ma lubo {{count}}",
+    "expiringTitle_other": "Gwoko tye ka gik i nino {{count}} ma bino",
+    "expiringEmpty": "Pe tye gin mo ma rwenyo gwok ne i wang ot ni."
   }
 }

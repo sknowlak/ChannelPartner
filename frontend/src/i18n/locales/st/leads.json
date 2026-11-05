@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "E ngolisitsoe",
-    "pending": "E emetse"
+    "pending": "E emetse",
+    "status": {
+      "CONFIRMED": "E ngolisitsoe",
+      "CANCELLED": "Pehelo e hlakotsoe"
+    }
   },
   "assign": {
     "unassigned": "Ha ea ajoa",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Ha ho na projeke (ha e so boleloe)",
-    "notInList": "{{project}} (ha e lenaneng la merero)"
+    "notInList": "{{project}} (ha e lenaneng la merero)",
+    "protectionDays_one": "{{count}} -ts'ireletso ea letsatsi",
+    "protectionDays_other": "{{count}} -ts'ireletso ea letsatsi"
   },
   "journey": {
     "customer": "Moreki",
@@ -76,7 +82,14 @@
     "progressHistory": "Histori ea Tsoelo-pele",
     "timesIn": "(linako tsa {{timezone}} )",
     "backToMyLeads": "Khutlela ho Meeta-pele ea Ka",
-    "editLead": "Fetola Ketapele"
+    "editLead": "Fetola Ketapele",
+    "disputeBanner": "Molekane e mong o na le likhang mabapi le tokelo ea moreki enoa. Motsamaisi Leadrat oa e hlahloba - ts'ireletso ea hau e lula e le teng ho fihlela ba etsa qeto.",
+    "booking": "Booking",
+    "commission": "Komisi",
+    "notBooked": "Ha ea ngolisoa",
+    "cancelledOn": "E hlakotsoe ka {{date}} .",
+    "cancelReason": "Lebaka: {{reason}}",
+    "cancelledHint": "Moahi o hlakotse peheletso - mong'a hau o khutletse ho uena 'me ho ba le tokelo ea ho etsa kopo e hlakotsoe. E khutlisoa haeba lead e buuoe hape."
   },
   "referral": {
     "NOT_REFERRED": "Ha e boleletsoe (ha ho projeke)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Sehahi se amohetse phetisetso",
       "REFERRAL_REJECTED": "Sehahi se hanne phetisetso. Lebaka: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin o lokolotse ts'ireletso ea bobeli pele. Lebaka: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Mookameli o fane ka boingoliso bocha ho tloha {{from}} ho ea ho {{to}} . Lebaka: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Mookameli o fane ka boingoliso bocha ho tloha {{from}} ho ea ho {{to}} . Lebaka: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Teko ea ho ingolisa e entsoeng ke molekane e mong e ile ea hanoa",
+      "BOOKING_CANCELLED": "Pehelo e hlakotsoe. Lebaka: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Thepa ea ts'ebetso e khutliselitsoe ho molekane",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ho tšoaneleha ha Khomishene ho hlakotsoe ka peheletso",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Litokelo tsa Khomishene li khutliselitsoe bakeng sa peeletso e ncha",
+      "OWNERSHIP_DISPUTE_RAISED": "Molekane e mong o na le khang ka tokelo ea moreki enoa - Motsamaisi Leadrat o tla e hlahloba",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Khang ea mong'a moreki enoa e hlakotsoe - botho ba hau ha boa fetoha",
+      "OWNERSHIP_DISPUTE_UPHELD": "Khang ea mong'a moreki e hlahlobiloe - botho ba hau bo tiisitsoe",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "E ngolisitsoe ka mor'a hore phehisano ea hau ea mong'a ntlo e etsoe qeto molemong oa hau. Tlhokomeliso: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Tshireletso e felile: qabang ea beng e ile ea etsoa qeto molemong oa molekane e mong. Tlhokomeliso: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Nomoro ena ea mohala ha e sebetse {{country}} .",
     "COUNTRY_MISMATCH": "Ka kopo, khetha khoutu e nepahetseng ea naha.",
     "NOT_MOBILE": "Ka kopo, kenya nomoro ea mohala, eseng mohala oa mohala."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisi ea tšoanelehang",
+      "PENDING": "Khomishene e emetse",
+      "CANCELLED": "Komisi e hlakotsoe"
+    },
+    "attribution": {
+      "ATTRIBUTED": "E hlahisoa ke uena",
+      "DISPUTED": "Ho hanyetsanoa"
+    }
+  },
+  "result": {
+    "none": "Ha ho sephetho sa ngoliso se ka hlahisoang. Ngodisa moetapele pele.",
+    "acceptedTitle": "Ketapele e ngolisitsoe",
+    "rejectedTitle": "Keta ha ea ngolisoa",
+    "protectionWindow": "Tshireletso Fesetere",
+    "protectedUntil": "Sireletsoa Ho fihlela",
+    "openLead": "Bula Ketapele",
+    "addAnother": "Eketsa Moetapele e Mong",
+    "duplicate": "Ea bobeli - e se e sirelelitsoe",
+    "duplicateHint": "Moreki enoa o se a ntse a sirelelitsoe bakeng sa morero ona ke ngoliso e 'ngoe, kahoo ha e khone ho ngolisoa molemong oa hau.",
+    "existingProtectedUntil": "Ngoliso e teng e sirelelitsoe ho fihlela"
+  },
+  "disputes": {
+    "title": "Likhohlano Tsa ka",
+    "intro": "Likhohlano tsa beng ba tsona tseo u li hlahisitseng bakeng sa bareki tse hanngoeng ka hore ke likopi. Motsamaisi Leadrat o hlahloba e 'ngoe le e 'ngoe.",
+    "empty": "Ha ua hlahisa likhang leha e le life. Haeba moreki eo u mo tlisitseng a hanoa joalo ka kopokopi, o ka e hanyetsa ho tsoa sephethong sa ngoliso.",
+    "columns": {
+      "dispute": "Khang",
+      "reason": "Lebaka la hao",
+      "outcome": "Sephetho"
+    },
+    "status": {
+      "OPEN": "E ntse e hlahlojoa",
+      "UPHELD": "Eseng molemong oa hau",
+      "OVERTURNED": "E entse qeto molemong oa hau",
+      "WITHDRAWN": "E hutsoe"
+    },
+    "awaitingReview": "E emetse tlhahlobo ea admin",
+    "openNewLead": "Bula moetapele oa hau {{id}}",
+    "withdraw": "Tlosa",
+    "withdrawConfirm": "U hlakole khang ea hau bakeng sa {{name}} ? Thepa ea hajoale e ntse e le joalo.",
+    "raise": "Khohlano ea ho ba le thepa",
+    "raiseTitle": "Khohlano ea ho ba le thepa",
+    "raiseHint": "Haeba moreki enoa a tlile ho uena pele, hlalosa lebaka. Motsamaisi Leadrat o tla e hlahloba; haeba ba etsa qeto molemong oa hau, moetapele o ngolisitsoe bakeng sa hau.",
+    "reasonLabel": "Hobaneng ha moreki enoa e le oa hau?",
+    "reasonMin_one": "Bonyane litlhaku tse {{count}} .",
+    "reasonMin_other": "Bonyane litlhaku tse {{count}} .",
+    "submit": "Romela Khang",
+    "notProtected": "Ha ho na motho ea ts'ireletsong ho moreki enoa bakeng sa projeke ena - o ka ngolisa moetapele hona joale.",
+    "raised": "Khang {{id}} e rometsoe ho hlahlojoa.",
+    "viewAll": "Sheba likhang tsa ka"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Nako",
+    "lastDays_one": "{{count}} letsatsi",
+    "lastDays_other": "{{count}} matsatsi",
+    "emptyTitle": "Rea u amohela! Ha u na ba ka pele.",
+    "emptyHint": "Ngolisa moetapele oa hau oa pele - nako ea hau ea lipeipi, lipehelo le matsatsi a tšireletso a tla hlaha mona.",
+    "tiles": {
+      "leads": "Kakaretso e etellang pele",
+      "newInPeriod_one": "{{count}} e ncha nakong ena",
+      "newInPeriod_other": "{{count}} e ncha nakong ena",
+      "accepted": "E amohetsoe",
+      "booked": "E ngolisitsoe",
+      "bookedInPeriod_one": "{{count}} e ngolisitsoe nakong ena",
+      "bookedInPeriod_other": "{{count}} e ngolisitsoe nakong ena",
+      "conversion": "Phetoho",
+      "conversionHint": "Baeta-pele ba ngolisitsoeng e le karolo ea baeta-pele ba amohelehang",
+      "protectedNow": "E sirelelitsoe hona joale",
+      "expiringSoon_one": "Tshireletso e fela ka letsatsi le {{count}}",
+      "expiringSoon_other": "Tshireletso e fela ka matsatsi a {{count}}",
+      "disputedNow": "Ho tsekoa ke ba bang",
+      "disputedNowHint": "O etella pele ka khang e bulehileng ea botho ho tsoa ho molekane e mong",
+      "commissionEligible": "Komisi ea tšoanelehang",
+      "commissionCancelled_one": "{{count}} e hlakotsoe",
+      "commissionCancelled_other": "{{count}} e hlakotsoe"
+    },
+    "chart": {
+      "title_one": "Boingoliso le peeletso ka letsatsi - letsatsi le {{count}} la ho qetela",
+      "title_other": "Boingoliso le peeletso ka letsatsi - matsatsi a {{count}} a ho qetela",
+      "registrations": "Ngodiso",
+      "bookings": "Bookings"
+    },
+    "byStage": "E etella pele ka maemo",
+    "bySource": "E etella pele ka mohloli",
+    "byReferral": "E etella pele ka boemo ba phetisetso",
+    "myDisputes": "Liqabang tseo u li hlahisitseng",
+    "noDisputes": "Ha ho likhang tse hlahisitsoeng.",
+    "unknown": "Ha ea behoa",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM ea kantle (e etsisitsoeng)",
+      "PARTNER_CRM": "E kentsoe ke sehlopha sa hau",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Kopanyo",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Tšireletso e felloa ke nako ka letsatsi le {{count}} le tlang",
+    "expiringTitle_other": "Tšireletso e felloa ke nako ka mor'a matsatsi a {{count}} a latelang",
+    "expiringEmpty": "Ha ho loto e lahleheloang ke tšireletso ea eona fensetereng ena."
   }
 }

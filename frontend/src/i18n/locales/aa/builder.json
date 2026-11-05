@@ -30,7 +30,8 @@
       "registered": "Tunkuttubeh"
     },
     "booked": "Tibbixsimeh",
-    "empty": "Uxih tatrusso matan."
+    "empty": "Uxih tatrusso matan.",
+    "bookingCancelled": "Arac yaysibixeenim duugumteh"
   },
   "detail": {
     "customer": "Maqmiili",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Arac yaysibixeenim diggooweh.",
       "accepted": "Tatrusso oggolimteh.",
-      "rejected": "Tatrusso cinnimteh."
+      "rejected": "Tatrusso cinnimteh.",
+      "bookingCancelled": "Arac yaysibixeenim duugumteh."
     },
-    "backToReferrals": "Tabsiyyi fanah uduur"
+    "backToReferrals": "Tabsiyyi fanah uduur",
+    "bookingCancelled": "Arac yaysibixeenim duugumteh",
+    "cancelBooking": "Arac yaysibixeenim duuga",
+    "cancelReasonLabel": "Duugiyyi sabab ( wakliita taybulleem)*",
+    "cancelBookingHint": "taamah ikoytiinu wadirih gexam waklentit kee ken komiishinih xiqto duugumteh. miraaciino sarra qagitak yabbixem duudah.",
+    "cancelBookingConfirm": "arac yaysibixeenim duug"
   },
   "history": {
     "title": "Aydaadu",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "komishin xiqto ginnimteh",
       "HANDOVER_COMPLETED": "Tabsi gaba kaleh",
       "ADMIN_PROTECTION_RELEASED": "Saqal qagaaqagitak kalalu udurruteh ruube. Sabab: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Saqal qagitak mixxaagiseh maysarraqa {{from}} ilaa {{to}} . Sabab: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Saqal qagitak mixxaagiseh maysarraqa {{from}} ilaa {{to}} . Sabab: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "gersi wakliiti maysarraqa gibbati cinnimteh",
+      "BOOKING_CANCELLED": "Arac yaysibixeenim duugumteh. Sabab: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "taamah ikoytiinu wakliita fan yuduureh",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "komishin xiqto duugumteh arac yaysibixeenimih",
+      "COMMISSION_ELIGIBILITY_RESTORED": "komiishin xiqto qusba arac yaysibixeenim yuduureh"
     }
   }
 }

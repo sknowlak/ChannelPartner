@@ -49,8 +49,73 @@
       "newPartnerId": "Nouvo ID partener",
       "reason": "Rezon (oblize)",
       "apply": "Aplik ranplasman",
-      "applying": "Pe fer aplikasion..."
+      "applying": "Pe fer aplikasion...",
+      "cancelBookingHint": "Anilasion mark rezervasion ek so komision kouma anile, retourn propriete operasionel a partener-la, e les mason-la rezerv sa lead-la ankor enn fwa.",
+      "cancelBookingConfirm": "Anil sa rezervasion-la? So komision finn anile osi. Sa finn anrezistre avek ou nom ek rezon."
     },
-    "timelineTitle": "Kronolozi Odit (sa lanrezistreman-la)"
+    "timelineTitle": "Kronolozi Odit (sa lanrezistreman-la)",
+    "bookingStatus": "Stati rezervasion",
+    "commissionAttribution": "Atribision Komision",
+    "disputeOpen": "Enn diskision lor propriete ouver lor sa klian-la - enn lot partner dir ki li pou zot. Li deside lor paz Konfli.",
+    "viewDisputes": "Get bann diskision",
+    "cancellation": {
+      "title": "Rezervasion finn anile",
+      "hint": "Rezervasion ek so komision finn anile; propriete operasionel finn retourn kot partener-la e mason-la kapav rezerv sa lead-la ankor enn fwa.",
+      "at": "Finn anile a",
+      "by": "Finn anile par",
+      "reason": "Rezon"
+    }
+  },
+  "disputes": {
+    "title": "Bann diskision lor propriete",
+    "hint": "Enn partener ki so lanrezistreman finn rezete kouma enn doub kapav konteste kisannla proprieter klian-la. Reget toulede kote ek deside.",
+    "statusFilter": "Stati diskision",
+    "allStatuses": "Tou bann stati",
+    "empty": "Pena okenn diskision avek sa stati-la.",
+    "columns": {
+      "dispute": "Diskision",
+      "customer": "Klian",
+      "project": "Proze",
+      "raisedBy": "Leve par",
+      "heldBy": "Proprieter aktyel",
+      "status": "Stati",
+      "raisedAt": "Finn leve lor"
+    },
+    "detail": {
+      "title": "Konfli {{id}}",
+      "raisedOn": "Finn leve {{date}}",
+      "raisingTitle": "Leve par",
+      "holderTitle": "Proprieter aktyel",
+      "partner": "Partner",
+      "raisedBy": "Finn soumet par",
+      "customerName": "Klian",
+      "mobile": "Mobil",
+      "alternateMobile": "Portab alternativ",
+      "email": "Email",
+      "project": "Proze",
+      "reason": "Zot rezon",
+      "registration": "Lanrezistreman",
+      "registeredAt": "Finn anrezistre lor",
+      "referral": "Referans",
+      "heldMissing": "Pa finn kapav trouv lanrezistreman ki ti ena.",
+      "resolutionTitle": "Desizion",
+      "outcome": "Rezilta",
+      "note": "Not",
+      "decidedBy": "Finn deside par",
+      "decidedAt": "Finn desid lor",
+      "newRegistration": "Nouvo lanrezistreman",
+      "decideTitle": "Desid sa diskision-la",
+      "noteLabel": "Not ki explik desizion-la (obligatwar)",
+      "noteRequired": "Ekrir enn not pou deside.",
+      "uphold": "Soutenir",
+      "overturn": "Ranverse",
+      "upholdEffect": "{{holder}} gard klian-la. Dispit-la finn ferme e nanye pa finn sanze.",
+      "overturnEffect": "{{holder}} 's proteksion doub fini asterla e klian-la finn anrezistre pou {{partner}} kouma enn nouvo lanrezistreman.",
+      "heldBookedHelp": "Sa klian-la finn rezerve atraver proprieter aktyel. Anil sa rezervasion-la avan (Admin Override lor lanrezistreman), apre ranvers:",
+      "confirmTitle": "To sir?",
+      "confirmUphold": "Wi, soutenir",
+      "confirmOverturn": "Wi, ranverse",
+      "back": "Retourn lor bann diskision"
+    }
   }
 }

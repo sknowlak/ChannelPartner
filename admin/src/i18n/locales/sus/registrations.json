@@ -49,8 +49,73 @@
       "newPartnerId": "Wo xa walikE nEnE ID",
       "reason": "Xaxili (a lan ma)",
       "apply": "Override raba",
-      "applying": "Applying..."
+      "applying": "Applying...",
+      "cancelBookingHint": "Xa wo bara na buki kana a nun a xa wali bara kana, a fama nE a xa wali sare ra gbilen de wo bore ma, a man fama nE banxi tide ra gbilen de.",
+      "cancelBookingConfirm": "Wo yi booking kana? A xa wali fan bara kana. Yi sEbExi wo xili nun wo xa fe ra."
     },
-    "timelineTitle": "Audit waxati (yi sEbEli)"
+    "timelineTitle": "Audit waxati (yi sEbEli)",
+    "bookingStatus": "Booking Status",
+    "commissionAttribution": "Komisiyon sEbEli",
+    "disputeOpen": "Fe nde na yi sare soe tagi - bore gbEtE a falama a e gbe nan a ra. A ra tOxOxi Disputes page nan ma.",
+    "viewDisputes": "Wo lanlanteya mato",
+    "cancellation": {
+      "title": "Booking bara kana",
+      "hint": "Na buki nun a xa wali bara kana; wali kanyi bara gbilen a bore yi ra a nun banxi ti mixi nO ma yi wali sare sOtOde.",
+      "at": "A bara kana",
+      "by": "A bara kana",
+      "reason": "A ra kéli"
+    }
+  },
+  "disputes": {
+    "title": "Kanyie xa lan boreya",
+    "hint": "Mixi naxan xa sEbEli mu tinxi a xa findi duplicate ra a nO ma a falade a sare soe kanyi nan a ra. Wo yi yire firin birin mato wo xa natE tongo.",
+    "statusFilter": "lantareya xa fe",
+    "allStatuses": "Status birin",
+    "empty": "Fe yo mu na yi fe kui.",
+    "columns": {
+      "dispute": "Gnôkhôn sôssô",
+      "customer": "I magnakhoun",
+      "project": "Projè",
+      "raisedBy": "A rakelixi",
+      "heldBy": "Kanyi naxan na yakOsi",
+      "status": "Tonyi ya yèrèki",
+      "raisedAt": "A keli"
+    },
+    "detail": {
+      "title": "Dispute {{id}}",
+      "raisedOn": "Raised {{date}}",
+      "raisingTitle": "A rakelixi",
+      "holderTitle": "Kanyi naxan na yakOsi",
+      "partner": "Borémayi",
+      "raisedBy": "A rasanbaxi",
+      "customerName": "I magnakhoun",
+      "mobile": "Cé nakhan na makha",
+      "alternateMobile": "Telefone gbEtE",
+      "email": "Email",
+      "project": "Projè",
+      "reason": "E xa fe ra",
+      "registration": "Wo xili sEbE",
+      "registeredAt": "Wo xili sEbExi",
+      "referral": "Rasife",
+      "heldMissing": "Na sEbEli naxan suxuxi a mu nOma tode.",
+      "resolutionTitle": "Loufé fekerén khanbira",
+      "outcome": "Näkhan minima a koui",
+      "note": "Sèbè",
+      "decidedBy": "NatE tongoxi",
+      "decidedAt": "A bara natE tongo",
+      "newRegistration": "Wo xili sEbE fe nEnE",
+      "decideTitle": "Wo yi fe ra tOxO",
+      "noteLabel": "Yi sEbEli naxan yi ra tOxOxi (a lan ma)",
+      "noteRequired": "Wo sEbEli sEbE ala ko wo xa natE tongo.",
+      "uphold": "Wo suxu",
+      "overturn": "Overturn",
+      "upholdEffect": "{{holder}} sare soe ragata. Na gere bara ɲɔn, fe gbɛtɛ mu masarama.",
+      "overturnEffect": "{{holder}} 's duplicate protection bara ɲɔn yakOsi a nun sare soe bara a xili sEbE {{partner}} bE alo sEbEli nEnE.",
+      "heldBookedHelp": "Yi sare soe bara sEbE a kanyi nan saabui ra. Wo xa na booking ba a singe ra (Admin Override on the registration), na xanbi wo xa a ra gbilen:",
+      "confirmTitle": "Wo laxi ara?",
+      "confirmUphold": "Iyo, wo xa tin",
+      "confirmOverturn": "Iyo, a ra gbilen",
+      "back": "Wo xa gbilen geree ma"
+    }
   }
 }

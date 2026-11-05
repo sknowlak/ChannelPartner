@@ -30,7 +30,8 @@
       "registered": "Ma rehistra"
     },
     "booked": "Ma'apåsi",
-    "empty": "Taya' referral på'go."
+    "empty": "Taya' referral på'go.",
+    "bookingCancelled": "Ma kansela i reservasion"
   },
   "detail": {
     "customer": "Kustomer",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Ma konfitma i inayek.",
       "accepted": "Ma aksepta i riniferi.",
-      "rejected": "Ma na'suha i riniferi."
+      "rejected": "Ma na'suha i riniferi.",
+      "bookingCancelled": "Ma kansela i reservasion."
     },
-    "backToReferrals": "Tåtte gi i Manma'ayek"
+    "backToReferrals": "Tåtte gi i Manma'ayek",
+    "bookingCancelled": "Ma kansela i reservasion",
+    "cancelBooking": "Kansela i Reservasion",
+    "cancelReasonLabel": "Rason para u ma kansela (ma fa'nu'i i sosio) *",
+    "cancelBookingHint": "I propiedåt operasionåt ha bira gui' tatte gi i sosio ya i kualifikåsion-ña para i kumision ma kansela. I lead siña ma'ayek ta'lo despues.",
+    "cancelBookingConfirm": "Kansela i reservasion"
   },
   "history": {
     "title": "Ma'pos na tiempo",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Ma na'huyong i kualifikåsion para i kumision",
       "HANDOVER_COMPLETED": "Ma kumple i inayek",
       "ADMIN_PROTECTION_RELEASED": "Ha na'huyong i admin i pruteksion ni' duplikao gi i tutuhon. Rason: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "I Admin ha na'lå'la' i rehistrasion ginen {{from}} asta {{to}} . Rason: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "I Admin ha na'lå'la' i rehistrasion ginen {{from}} asta {{to}} . Rason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ma na'suha i dos na intension rehistrasion ni' otro na sosio",
+      "BOOKING_CANCELLED": "Ma kansela i reservasion. Rason: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "I propiedåt operasionåt ma bira tatte gi i sosio",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ma kansela i kualifikåsion para i kumision yanggen ma booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ma na'lå'la' ta'lo i kualifikao para i nuebu na booking"
     }
   }
 }

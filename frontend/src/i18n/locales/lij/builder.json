@@ -30,7 +30,8 @@
       "registered": "Registrou"
     },
     "booked": "Prenotou",
-    "empty": "Ancon nisciun referimento."
+    "empty": "Ancon nisciun referimento.",
+    "bookingCancelled": "Prenotaçion annullâ"
   },
   "detail": {
     "customer": "Cliente",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Prenotaçion confermâ.",
       "accepted": "Açettou o referimento.",
-      "rejected": "O referimento o l'é stæto refuou."
+      "rejected": "O referimento o l'é stæto refuou.",
+      "bookingCancelled": "Prenotaçion annullâ."
     },
-    "backToReferrals": "Torna a-i referimenti"
+    "backToReferrals": "Torna a-i referimenti",
+    "bookingCancelled": "Prenotaçion annullâ",
+    "cancelBooking": "Annulla a prenotaçion",
+    "cancelReasonLabel": "Motivo pe l'annullaçion (mostrou a-o compagno) *",
+    "cancelBookingHint": "A propietæ operativa a torna a-o sòçio e a seu idoneitæ a-a commiscion a vëgne annullâ. O lead o peu ëse prenotou torna ciù tardi.",
+    "cancelBookingConfirm": "Annulla a prenotaçion"
   },
   "history": {
     "title": "Stöia",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "L'ammiscion a-a commiscion a l'é stæta creâ",
       "HANDOVER_COMPLETED": "Consegna completâ",
       "ADMIN_PROTECTION_RELEASED": "L'amministratô o l'à pubricou tempoiamente a proteçion duplicâ. Raxon: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "L'amministratô o l'à assegnou torna a registraçion da {{from}} à {{to}} . Raxon: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "L'amministratô o l'à assegnou torna a registraçion da {{from}} à {{to}} . Raxon: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Un tentativo de registraçion duplicâ da parte de un atro compagno o l'é stæto refuou",
+      "BOOKING_CANCELLED": "Prenotaçion annullâ. Raxon: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "A propietæ operativa a l'é tornâ a-o sòçio",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "L'idoneitæ a-a commiscion a l'é stæta annullâ co-a prenotaçion",
+      "COMMISSION_ELIGIBILITY_RESTORED": "L'idoneitæ a-a commiscion a l'é restörâ pe-a neuva prenotaçion"
     }
   }
 }

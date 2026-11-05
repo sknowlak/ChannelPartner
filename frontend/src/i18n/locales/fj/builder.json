@@ -30,7 +30,8 @@
       "registered": "Rejisitataki"
     },
     "booked": "Sa vakarautaki",
-    "empty": "Se bera ni dua na veivakauqeti."
+    "empty": "Se bera ni dua na veivakauqeti.",
+    "bookingCancelled": "Sa bokoci na buking"
   },
   "detail": {
     "customer": "Kasitama",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Sa vakadeitaki na kena vakarautaki.",
       "accepted": "Sa ciqomi na veivakauqeti.",
-      "rejected": "E sega ni vakadonui na veivakauqeti."
+      "rejected": "E sega ni vakadonui na veivakauqeti.",
+      "bookingCancelled": "Sa bokoci na vakacuru ilavo."
     },
-    "backToReferrals": "Lesu tale ki na veivakauqeti"
+    "backToReferrals": "Lesu tale ki na veivakauqeti",
+    "bookingCancelled": "Sa bokoci na buking",
+    "cancelBooking": "Bokoca na ivola",
+    "cancelReasonLabel": "Vuna ni kena bokoci (vakaraitaki vua na itokani) *",
+    "cancelBookingHint": "Na taukeni ni cakacaka e lesu tale ki na itokani ka sa bokoci na nodra dodonu ni komisi. Na iliuliu e rawa ni vakarautaki tale e muri.",
+    "cancelBookingConfirm": "Bokoca na ivola"
   },
   "history": {
     "title": "Itukutuku makawa",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Sa buli na veivakadonui ni komisoni",
       "HANDOVER_COMPLETED": "Sa oti na soli",
       "ADMIN_PROTECTION_RELEASED": "Admin vagalalataka na itataqomaki vakarua ena gauna taumada. Vuna: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin sa lesia tale na rejisita mai na {{from}} ki na {{to}} . Vuna: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin sa lesia tale na rejisita mai na {{from}} ki na {{to}} . Vuna: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "E dua na sasaga ni rejisita vakarua mai vua e dua tale na itokani e a sega ni vakadonui .",
+      "BOOKING_CANCELLED": "Sa bokoci na vakacuru ilavo. Vuna: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Na taukeni ni cakacaka e lesu tale vua na itokani",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Sa bokoci na veivakadonui ni komisoni kei na kena vakarautaki",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Sa vakalesui mai na veivakadonui ni komisoni me baleta na ivola vou"
     }
   }
 }

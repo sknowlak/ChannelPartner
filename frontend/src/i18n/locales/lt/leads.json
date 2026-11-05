@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Užsakyta",
-    "pending": "Laukiama"
+    "pending": "Laukiama",
+    "status": {
+      "CONFIRMED": "Užsakyta",
+      "CANCELLED": "Užsakymas atšauktas"
+    }
   },
   "assign": {
     "unassigned": "Nepriskirta",
@@ -58,7 +62,11 @@
   },
   "project": {
     "none": "Projekto dar nėra (nereikalaujama)",
-    "notInList": "{{project}} (projektų sąraše nėra)"
+    "notInList": "{{project}} (projektų sąraše nėra)",
+    "protectionDays_one": "{{count}} dienų apsauga",
+    "protectionDays_few": "{{count}} dienų apsauga",
+    "protectionDays_many": "{{count}} dienų apsauga",
+    "protectionDays_other": "{{count}} dienų apsauga"
   },
   "journey": {
     "customer": "Klientas",
@@ -76,7 +84,14 @@
     "progressHistory": "Pažangos istorija",
     "timesIn": "(laikai {{timezone}} )",
     "backToMyLeads": "Grįžti į „Mano lyderiai“.",
-    "editLead": "Redaguoti pagrindinį klientą"
+    "editLead": "Redaguoti pagrindinį klientą",
+    "disputeBanner": "Kitas partneris užginčijo šio kliento nuosavybės teisę. Leadrat administratorius jį peržiūri – jūsų apsauga išlieka tol, kol nuspręs.",
+    "booking": "Užsakymas",
+    "commission": "Komisija",
+    "notBooked": "Neužsakyta",
+    "cancelledOn": "Atšaukta {{date}} .",
+    "cancelReason": "Priežastis: {{reason}}",
+    "cancelledHint": "Statytojas atšaukė užsakymą – jums grįžo eksploatacinės nuosavybės teisės, o komisinių teisė atšaukta. Jis atstatomas, jei potencialas vėl rezervuojamas."
   },
   "referral": {
     "NOT_REFERRED": "Nenurodyta (nėra projekto)",
@@ -164,7 +179,17 @@
       "REFERRAL_ACCEPTED": "Statybininkas priėmė siuntimą",
       "REFERRAL_REJECTED": "Statybininkas atmetė kreipimąsi. Priežastis: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Administratorius anksti išleido pasikartojančią apsaugą. Priežastis: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Administratorius perskyrė registraciją iš {{from}} į {{to}} . Priežastis: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Administratorius perskyrė registraciją iš {{from}} į {{to}} . Priežastis: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Kito partnerio bandymas užsiregistruoti dublikatas buvo atmestas",
+      "BOOKING_CANCELLED": "Užsakymas atšauktas. Priežastis: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Veiklos nuosavybė grąžinta partneriui",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Komisinio teisė panaikinta su užsakymu",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Atkurta teisė komisiniams už naują užsakymą",
+      "OWNERSHIP_DISPUTE_RAISED": "Kitas partneris užginčijo šio kliento nuosavybės teisę – jį peržiūrės Leadrat administratorius",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Ginčas dėl šio kliento nuosavybės teisės buvo atšauktas – jūsų nuosavybės teisė nepasikeitė",
+      "OWNERSHIP_DISPUTE_UPHELD": "Ginčas dėl šio kliento nuosavybės teisės buvo peržiūrėtas – jūsų nuosavybės teisė patvirtinta",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Užregistruota po to, kai ginčas dėl nuosavybės teisės buvo išspręstas jūsų naudai. Pastaba: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Apsauga baigėsi: ginčas dėl nuosavybės buvo išspręstas kito partnerio naudai. Pastaba: {{note}}"
     }
   },
   "columnsPanel": {
@@ -188,5 +213,124 @@
     "INVALID_FOR_COUNTRY": "Šis telefono numeris negalioja {{country}} .",
     "COUNTRY_MISMATCH": "Pasirinkite teisingą šalies kodą.",
     "NOT_MOBILE": "Įveskite ne fiksuotojo, o mobiliojo telefono numerį."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisinis tinkamas",
+      "PENDING": "Komisija laukia",
+      "CANCELLED": "Komisija atšaukta"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Priskiriama tau",
+      "DISPUTED": "Priskyrimas užginčytas"
+    }
+  },
+  "result": {
+    "none": "Nėra registracijos rezultato, kurį būtų galima parodyti. Pirmiausia užregistruokite laidą.",
+    "acceptedTitle": "Užregistruotas švinas",
+    "rejectedTitle": "Švinas neregistruotas",
+    "protectionWindow": "Apsaugos langas",
+    "protectedUntil": "Saugoma iki",
+    "openLead": "Atidarykite laidą",
+    "addAnother": "Pridėkite kitą laidą",
+    "duplicate": "Dublikatas – jau apsaugotas",
+    "duplicateHint": "Šis klientas jau yra apsaugotas šiam projektui kita registracija, todėl jo užregistruoti nepavyko.",
+    "existingProtectedUntil": "Esama registracija saugoma iki"
+  },
+  "disputes": {
+    "title": "Mano ginčai",
+    "intro": "Ginčai dėl nuosavybės teisių, kuriuos iškėlėte dėl klientų, kurie buvo atmesti kaip dublikatai. Leadrat administratorius peržiūri kiekvieną.",
+    "empty": "Jūs nekėlėte jokių ginčų. Jei jūsų atvežtas klientas atmetamas kaip dublikatas, galite jį užginčyti iš registracijos rezultatų.",
+    "columns": {
+      "dispute": "Ginčas",
+      "reason": "Jūsų priežastis",
+      "outcome": "Rezultatas"
+    },
+    "status": {
+      "OPEN": "Peržiūrima",
+      "UPHELD": "Ne tavo naudai",
+      "OVERTURNED": "Nuspręsta jūsų naudai",
+      "WITHDRAWN": "Atšauktas"
+    },
+    "awaitingReview": "Laukiu admin peržiūros",
+    "openNewLead": "Atidarykite savo potencialą {{id}}",
+    "withdraw": "Atsitraukti",
+    "withdrawConfirm": "Atšaukti ginčą dėl {{name}} ? Dabartinė nuosavybė išlieka tokia, kokia yra.",
+    "raise": "Ginčyti nuosavybės teises",
+    "raiseTitle": "Ginčyti nuosavybės teises",
+    "raiseHint": "Jei šis klientas atvyko pas jus pirmas, paaiškinkite, kodėl. Leadrat administratorius jį peržiūrės; jei jie nusprendžia jūsų naudai, užregistruojamas vedimas.",
+    "reasonLabel": "Kodėl šis klientas yra jūsų?",
+    "reasonMin_one": "Bent {{count}} simbolis.",
+    "reasonMin_few": "Bent {{count}} simbolių.",
+    "reasonMin_many": "Bent {{count}} simbolių.",
+    "reasonMin_other": "Bent {{count}} simbolių.",
+    "submit": "Siųsti ginčą",
+    "notProtected": "Niekas daugiau neapsaugo šio kliento dėl šio projekto – dabar galite užregistruoti potencialų klientą.",
+    "raised": "Ginčas {{id}} išsiųstas peržiūrėti.",
+    "viewAll": "Peržiūrėkite mano ginčus"
+  },
+  "dashboard": {
+    "title": "Prietaisų skydelis",
+    "period": "Laikotarpis",
+    "lastDays_one": "{{count}} diena",
+    "lastDays_few": "{{count}} dienų",
+    "lastDays_many": "{{count}} dienų",
+    "lastDays_other": "{{count}} dienų",
+    "emptyTitle": "Sveiki atvykę! Dar neturite potencialių klientų.",
+    "emptyHint": "Užregistruokite savo pirmąjį potencialų klientą – čia bus rodomas kanalas, užsakymai ir apsaugos terminai.",
+    "tiles": {
+      "leads": "Iš viso potencialių klientų",
+      "newInPeriod_one": "{{count}} naujų per šį laikotarpį",
+      "newInPeriod_few": "{{count}} naujų per šį laikotarpį",
+      "newInPeriod_many": "{{count}} naujų per šį laikotarpį",
+      "newInPeriod_other": "{{count}} naujų per šį laikotarpį",
+      "accepted": "Priimta",
+      "booked": "Užsakyta",
+      "bookedInPeriod_one": "Šiuo laikotarpiu užsakyta {{count}}",
+      "bookedInPeriod_few": "Šiuo laikotarpiu užsakyta {{count}}",
+      "bookedInPeriod_many": "Šiuo laikotarpiu užsakyta {{count}}",
+      "bookedInPeriod_other": "Šiuo laikotarpiu užsakyta {{count}}",
+      "conversion": "Konversija",
+      "conversionHint": "Užsakyti potencialūs klientai kaip priimtų potencialių klientų dalis",
+      "protectedNow": "Apsaugota dabar",
+      "expiringSoon_one": "Apsauga baigiasi po {{count}} d",
+      "expiringSoon_few": "Apsauga baigiasi po {{count}} d",
+      "expiringSoon_many": "Apsauga baigiasi po {{count}} d",
+      "expiringSoon_other": "Apsauga baigiasi po {{count}} d",
+      "disputedNow": "Ginčytis kitų",
+      "disputedNowHint": "Jūsų potencialūs klientai su atviru nuosavybės ginču iš kito partnerio",
+      "commissionEligible": "Komisinis tinkamas",
+      "commissionCancelled_one": "{{count}} atšaukta",
+      "commissionCancelled_few": "{{count}} atšaukta",
+      "commissionCancelled_many": "{{count}} atšaukta",
+      "commissionCancelled_other": "{{count}} atšaukta"
+    },
+    "chart": {
+      "title_one": "Registracijos ir užsakymai per dieną – paskutinė {{count}} diena",
+      "title_few": "Registracijos ir užsakymai per dieną – paskutinės {{count}} dienos",
+      "title_many": "Registracijos ir užsakymai per dieną – paskutinės {{count}} dienos",
+      "title_other": "Registracijos ir užsakymai per dieną – paskutinės {{count}} dienos",
+      "registrations": "Registracijos",
+      "bookings": "Užsakymai"
+    },
+    "byStage": "Pirmauja pagal statusą",
+    "bySource": "Veda pagal šaltinį",
+    "byReferral": "Pirmauja pagal persiuntimo būseną",
+    "myDisputes": "Ginčai, kuriuos iškėlėte",
+    "noDisputes": "Ginčų nekyla.",
+    "unknown": "Nenustatyta",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Išorinis CRM (imituojamas)",
+      "PARTNER_CRM": "Pridėjo jūsų komanda",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integracija",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Apsauga baigsis per kitą {{count}} d",
+    "expiringTitle_few": "Apsauga baigsis per kitas {{count}} dienas",
+    "expiringTitle_many": "Apsauga baigsis per kitas {{count}} dienas",
+    "expiringTitle_other": "Apsauga baigsis per kitas {{count}} dienas",
+    "expiringEmpty": "Šiame lange joks švinas nepraranda apsaugos."
   }
 }

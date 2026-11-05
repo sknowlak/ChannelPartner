@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Layak",
-    "PENDING": "Belum selesai"
+    "PENDING": "Belum selesai",
+    "CANCELLED": "Dibatalkan"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Lepaskan perlindungan pendua lebih awal",
-    "REASSIGN_PARTNER": "Tugaskan semula kepada rakan kongsi lain"
+    "REASSIGN_PARTNER": "Tugaskan semula kepada rakan kongsi lain",
+    "CANCEL_BOOKING": "Batalkan tempahan"
   },
   "dataType": {
     "TEXT": "Teks",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super Admin",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Disahkan",
+    "CANCELLED": "Dibatalkan"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Disifatkan",
+    "DISPUTED": "dipertikaikan"
+  },
+  "disputeStatus": {
+    "OPEN": "Buka",
+    "UPHELD": "Ditegakkan",
+    "OVERTURNED": "Terbalik",
+    "WITHDRAWN": "Ditarik balik"
   }
 }

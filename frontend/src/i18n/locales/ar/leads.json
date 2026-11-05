@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "حجزت",
-    "pending": "قيد الانتظار"
+    "pending": "قيد الانتظار",
+    "status": {
+      "CONFIRMED": "حجزت",
+      "CANCELLED": "تم إلغاء الحجز"
+    }
   },
   "assign": {
     "unassigned": "غير معين",
@@ -58,7 +62,13 @@
   },
   "project": {
     "none": "لا يوجد مشروع بعد (لم تتم الإشارة إليه)",
-    "notInList": "{{project}} (ليس في قائمة المشاريع)"
+    "notInList": "{{project}} (ليس في قائمة المشاريع)",
+    "protectionDays_zero": "{{count}} - حماية يومية",
+    "protectionDays_one": "{{count}} - حماية يومية",
+    "protectionDays_two": "{{count}} - حماية يومية",
+    "protectionDays_few": "{{count}} - حماية يومية",
+    "protectionDays_many": "{{count}} - حماية يومية",
+    "protectionDays_other": "{{count}} - حماية يومية"
   },
   "journey": {
     "customer": "عميل",
@@ -76,7 +86,14 @@
     "progressHistory": "تاريخ التقدم",
     "timesIn": "(الأوقات بتوقيت {{timezone}} )",
     "backToMyLeads": "العودة إلى يؤدي",
-    "editLead": "تحرير الرصاص"
+    "editLead": "تحرير الرصاص",
+    "disputeBanner": "لقد تنازع شريك آخر على ملكية هذا العميل. يقوم أحد مسؤولي Leadrat بمراجعتها - ستظل حمايتك سارية حتى يقرروا ذلك.",
+    "booking": "الحجز",
+    "commission": "عمولة",
+    "notBooked": "لم يتم حجزها",
+    "cancelledOn": "تم الإلغاء في {{date}} .",
+    "cancelReason": "السبب: {{reason}}",
+    "cancelledHint": "قامت شركة البناء بإلغاء الحجز - عادت الملكية التشغيلية معك وتم إلغاء أهلية العمولة. ويتم استعادته إذا تم حجز العميل المتوقع مرة أخرى."
   },
   "referral": {
     "NOT_REFERRED": "غير مُحال (لا يوجد مشروع)",
@@ -168,7 +185,17 @@
       "REFERRAL_ACCEPTED": "قبل البناء الإحالة",
       "REFERRAL_REJECTED": "رفض البناء الإحالة. السبب: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "أصدر المسؤول الحماية المكررة في وقت مبكر. السبب: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "قام المشرف بإعادة تعيين التسجيل من {{from}} إلى {{to}} . السبب: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "قام المشرف بإعادة تعيين التسجيل من {{from}} إلى {{to}} . السبب: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "تم رفض محاولة تسجيل مكررة من قبل شريك آخر",
+      "BOOKING_CANCELLED": "تم إلغاء الحجز. السبب: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "عادت الملكية التشغيلية إلى الشريك",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "تم إلغاء أهلية العمولة مع الحجز",
+      "COMMISSION_ELIGIBILITY_RESTORED": "تمت استعادة أهلية العمولة للحجز الجديد",
+      "OWNERSHIP_DISPUTE_RAISED": "هناك شريك آخر يتنازع على ملكية هذا العميل - وسيقوم مسؤول Leadrat بمراجعته",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "تم سحب نزاع الملكية على هذا العميل - ملكيتك لم تتغير",
+      "OWNERSHIP_DISPUTE_UPHELD": "تمت مراجعة النزاع على ملكية هذا العميل - وتم تأكيد ملكيتك",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "تم التسجيل بعد أن تم الفصل في نزاع الملكية الخاص بك لصالحك. ملحوظة: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "انتهت الحماية: تم الفصل في نزاع على الملكية لصالح شريك آخر. ملحوظة: {{note}}"
     }
   },
   "columnsPanel": {
@@ -192,5 +219,140 @@
     "INVALID_FOR_COUNTRY": "رقم الهاتف هذا غير صالح لـ {{country}} .",
     "COUNTRY_MISMATCH": "الرجاء تحديد رمز البلد الصحيح.",
     "NOT_MOBILE": "الرجاء إدخال رقم الجوال وليس الهاتف الثابت."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "اللجنة مؤهلة",
+      "PENDING": "اللجنة معلقة",
+      "CANCELLED": "تم إلغاء العمولة"
+    },
+    "attribution": {
+      "ATTRIBUTED": "منسوب إليك",
+      "DISPUTED": "الإسناد متنازع عليه"
+    }
+  },
+  "result": {
+    "none": "لا توجد نتيجة تسجيل لإظهارها. تسجيل الرصاص أولا.",
+    "acceptedTitle": "الرصاص المسجل",
+    "rejectedTitle": "الرصاص غير مسجل",
+    "protectionWindow": "نافذة الحماية",
+    "protectedUntil": "محمي حتى",
+    "openLead": "فتح الرصاص",
+    "addAnother": "إضافة عميل محتمل آخر",
+    "duplicate": "مكررة - محمية بالفعل",
+    "duplicateHint": "هذا العميل محمي بالفعل لهذا المشروع من خلال تسجيل آخر، لذلك لا يمكن تسجيله لك.",
+    "existingProtectedUntil": "التسجيل الحالي محمي حتى"
+  },
+  "disputes": {
+    "title": "نزاعاتي",
+    "intro": "نزاعات الملكية التي أثرتها للعملاء والتي تم رفضها باعتبارها نسخًا مكررة. يقوم مسؤول Leadrat بمراجعة كل واحد.",
+    "empty": "أنت لم تثير أي نزاعات. إذا تم رفض العميل الذي أحضرته باعتباره نسخة مكررة، فيمكنك الاعتراض عليه من نتيجة التسجيل.",
+    "columns": {
+      "dispute": "ينازع",
+      "reason": "السبب الخاص بك",
+      "outcome": "حصيلة"
+    },
+    "status": {
+      "OPEN": "قيد المراجعة",
+      "UPHELD": "ليس في صالحك",
+      "OVERTURNED": "قررت لصالحك",
+      "WITHDRAWN": "انسحبت"
+    },
+    "awaitingReview": "في انتظار مراجعة المشرف",
+    "openNewLead": "افتح عميلك المحتمل {{id}}",
+    "withdraw": "ينسحب",
+    "withdrawConfirm": "هل تريد سحب نزاعك بشأن {{name}} ؟ الملكية الحالية تبقى كما هي.",
+    "raise": "ملكية النزاع",
+    "raiseTitle": "ملكية النزاع",
+    "raiseHint": "إذا جاء هذا العميل إليك أولاً، فاشرح له السبب. سيقوم مسؤول Leadrat بمراجعته؛ إذا قرروا لصالحك، فسيتم تسجيل العميل المتوقع نيابةً عنك.",
+    "reasonLabel": "لماذا هذا العميل لك؟",
+    "reasonMin_zero": "على الأقل {{count}} حرفًا.",
+    "reasonMin_one": "على الأقل {{count}} حرف.",
+    "reasonMin_two": "على الأقل {{count}} حرفًا.",
+    "reasonMin_few": "على الأقل {{count}} حرفًا.",
+    "reasonMin_many": "على الأقل {{count}} حرفًا.",
+    "reasonMin_other": "على الأقل {{count}} حرفًا.",
+    "submit": "إرسال النزاع",
+    "notProtected": "لم يعد أحد يتمتع بالحماية لهذا العميل لهذا المشروع بعد الآن - يمكنك تسجيل العميل المتوقع الآن.",
+    "raised": "تم إرسال النزاع {{id}} للمراجعة.",
+    "viewAll": "عرض نزاعاتي"
+  },
+  "dashboard": {
+    "title": "لوحة القيادة",
+    "period": "فترة",
+    "lastDays_zero": "{{count}} يوم",
+    "lastDays_one": "{{count}} يوم",
+    "lastDays_two": "{{count}} يوم",
+    "lastDays_few": "{{count}} يوم",
+    "lastDays_many": "{{count}} يوم",
+    "lastDays_other": "{{count}} يوم",
+    "emptyTitle": "مرحباً! ليس لديك أي عملاء محتملين حتى الآن.",
+    "emptyHint": "قم بتسجيل عميلك المحتمل الأول - ستظهر هنا خط سير العمليات والحجوزات والمواعيد النهائية للحماية.",
+    "tiles": {
+      "leads": "إجمالي العملاء المتوقعين",
+      "newInPeriod_zero": "{{count}} جديد في هذه الفترة",
+      "newInPeriod_one": "{{count}} جديد في هذه الفترة",
+      "newInPeriod_two": "{{count}} جديد في هذه الفترة",
+      "newInPeriod_few": "{{count}} جديد في هذه الفترة",
+      "newInPeriod_many": "{{count}} جديد في هذه الفترة",
+      "newInPeriod_other": "{{count}} جديد في هذه الفترة",
+      "accepted": "مقبول",
+      "booked": "حجزت",
+      "bookedInPeriod_zero": "تم حجز {{count}} في هذه الفترة",
+      "bookedInPeriod_one": "تم حجز {{count}} في هذه الفترة",
+      "bookedInPeriod_two": "تم حجز {{count}} في هذه الفترة",
+      "bookedInPeriod_few": "تم حجز {{count}} في هذه الفترة",
+      "bookedInPeriod_many": "تم حجز {{count}} في هذه الفترة",
+      "bookedInPeriod_other": "تم حجز {{count}} في هذه الفترة",
+      "conversion": "تحويل",
+      "conversionHint": "العملاء المتوقعون المحجوزون كنسبة من العملاء المتوقعين المقبولين",
+      "protectedNow": "محمي الآن",
+      "expiringSoon_zero": "تنتهي الحماية خلال {{count}} من الأيام",
+      "expiringSoon_one": "تنتهي الحماية خلال {{count}} يوم",
+      "expiringSoon_two": "تنتهي الحماية خلال {{count}} من الأيام",
+      "expiringSoon_few": "تنتهي الحماية خلال {{count}} من الأيام",
+      "expiringSoon_many": "تنتهي الحماية خلال {{count}} من الأيام",
+      "expiringSoon_other": "تنتهي الحماية خلال {{count}} من الأيام",
+      "disputedNow": "المتنازع عليها من قبل الآخرين",
+      "disputedNowHint": "العملاء المتوقعون الذين لديهم نزاع ملكية مفتوح من شريك آخر",
+      "commissionEligible": "اللجنة مؤهلة",
+      "commissionCancelled_zero": "تم إلغاء {{count}}",
+      "commissionCancelled_one": "تم إلغاء {{count}}",
+      "commissionCancelled_two": "تم إلغاء {{count}}",
+      "commissionCancelled_few": "تم إلغاء {{count}}",
+      "commissionCancelled_many": "تم إلغاء {{count}}",
+      "commissionCancelled_other": "تم إلغاء {{count}}"
+    },
+    "chart": {
+      "title_zero": "التسجيلات والحجوزات يوميًا - آخر {{count}} يوم",
+      "title_one": "التسجيلات والحجوزات يوميًا - آخر {{count}} يوم",
+      "title_two": "التسجيلات والحجوزات يوميًا - آخر {{count}} يوم",
+      "title_few": "التسجيلات والحجوزات يوميًا - آخر {{count}} يوم",
+      "title_many": "التسجيلات والحجوزات يوميًا - آخر {{count}} يوم",
+      "title_other": "التسجيلات والحجوزات يوميًا - آخر {{count}} يوم",
+      "registrations": "التسجيلات",
+      "bookings": "الحجوزات"
+    },
+    "byStage": "يؤدي حسب الحالة",
+    "bySource": "يؤدي حسب المصدر",
+    "byReferral": "يؤدي حسب حالة الإحالة",
+    "myDisputes": "الخلافات التي أثارتها",
+    "noDisputes": "لم يتم إثارة أي نزاعات.",
+    "unknown": "لم يتم ضبطه",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM الخارجية (محاكاة)",
+      "PARTNER_CRM": "تمت إضافتها من قبل فريقك",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "اندماج",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_zero": "تنتهي صلاحية الحماية خلال {{count}} من الأيام القادمة",
+    "expiringTitle_one": "تنتهي الحماية في اليوم {{count}} التالي",
+    "expiringTitle_two": "تنتهي صلاحية الحماية خلال {{count}} من الأيام القادمة",
+    "expiringTitle_few": "تنتهي صلاحية الحماية خلال {{count}} من الأيام القادمة",
+    "expiringTitle_many": "تنتهي صلاحية الحماية خلال {{count}} من الأيام القادمة",
+    "expiringTitle_other": "تنتهي صلاحية الحماية خلال {{count}} من الأيام القادمة",
+    "expiringEmpty": "لا يفقد أي رصاص حمايته في هذه النافذة."
   }
 }

@@ -30,7 +30,8 @@
       "registered": "E ngwadišitšwe"
     },
     "booked": "E beakantšwe",
-    "empty": "Ga go na ditšhupetšo go fihla ga bjale."
+    "empty": "Ga go na ditšhupetšo go fihla ga bjale.",
+    "bookingCancelled": "Booking e phumotšwe"
   },
   "detail": {
     "customer": "Modiriši",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Booking e netefaditšwe.",
       "accepted": "Go fetišetšwa go amogetšwe.",
-      "rejected": "Go fetišetšwa go gannwe."
+      "rejected": "Go fetišetšwa go gannwe.",
+      "bookingCancelled": "Booking e phumotšwe."
     },
-    "backToReferrals": "Go boela morago go Ditšhupetšo"
+    "backToReferrals": "Go boela morago go Ditšhupetšo",
+    "bookingCancelled": "Booking e phumotšwe",
+    "cancelBooking": "Khansela Peeletšo",
+    "cancelReasonLabel": "Lebaka la go phumola (le bontšhitšwe molekane) * .",
+    "cancelBookingHint": "Bomong bja tshepedišo bo boela morago go molekane gomme maswanedi a bona a khomišene a a phumulwa. The etella pele ka booked hape hamorao.",
+    "cancelBookingConfirm": "Khansela go beakanya"
   },
   "history": {
     "title": "Histori",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Khomišene go swanelega go hlotšwe",
       "HANDOVER_COMPLETED": "Go fetišetšwa ga dilo go phethilwe",
       "ADMIN_PROTECTION_RELEASED": "Admin o lokollotše tšhireletšo ya go ipoeletša ka pela. Lebaka: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin o ile a abela gape ngwadišo go tšwa go {{from}} go ya go {{to}} . Lebaka: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin o ile a abela gape ngwadišo go tšwa go {{from}} go ya go {{to}} . Lebaka: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Boiteko bja go ingwadiša gabedi ke molekane yo mongwe bo ile bja ganwa",
+      "BOOKING_CANCELLED": "Booking e phumotšwe. Lebaka: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Beng ba tshebetso bo ile ba khutlela ho molekane",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Khomišene tšoaneleha hlakolwa le Booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Go swanelega ga Khomišene go bušeditšwe bakeng sa go beakanya mo gofsa"
     }
   }
 }

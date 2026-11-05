@@ -30,7 +30,8 @@
       "registered": "Skráður"
     },
     "booked": "Bókað",
-    "empty": "Engar tilvísanir ennþá."
+    "empty": "Engar tilvísanir ennþá.",
+    "bookingCancelled": "Bókun aflýst"
   },
   "detail": {
     "customer": "Viðskiptavinur",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Bókun staðfest.",
       "accepted": "Tilvísun samþykkt.",
-      "rejected": "Tilvísun hafnað."
+      "rejected": "Tilvísun hafnað.",
+      "bookingCancelled": "Bókun aflýst."
     },
-    "backToReferrals": "Aftur í Tilvísanir"
+    "backToReferrals": "Aftur í Tilvísanir",
+    "bookingCancelled": "Bókun aflýst",
+    "cancelBooking": "Hætta við bókun",
+    "cancelReasonLabel": "Ástæða afpöntunar (sýnt maka) *",
+    "cancelBookingHint": "Rekstrareign fer aftur til samstarfsaðilans og þóknunarhæfi þeirra fellur niður. Hægt er að bóka forystuna aftur síðar.",
+    "cancelBookingConfirm": "Hætta við bókun"
   },
   "history": {
     "title": "Saga",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Framkvæmdastjórnarhæfi skapað",
       "HANDOVER_COMPLETED": "Afhending lokið",
       "ADMIN_PROTECTION_RELEASED": "Stjórnandi gaf út tvítekna vernd snemma. Ástæða: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Stjórnandi endurúthlutaði skráningu frá {{from}} í {{to}} . Ástæða: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Stjórnandi endurúthlutaði skráningu frá {{from}} í {{to}} . Ástæða: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Tvítekinni skráningartilraun annars samstarfsaðila var hafnað",
+      "BOOKING_CANCELLED": "Bókun aflýst. Ástæða: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Rekstrareignarhaldið aftur til samstarfsaðilans",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Þóknunarhæfi hætt við bókunina",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Þóknunarhæfi endurheimt fyrir nýju bókunina"
     }
   }
 }

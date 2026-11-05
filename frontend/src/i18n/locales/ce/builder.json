@@ -30,7 +30,8 @@
       "registered": "Регистраци йина"
     },
     "booked": "Бронировать дина",
-    "empty": "Цкъачунна рефералаш яц."
+    "empty": "Цкъачунна рефералаш яц.",
+    "bookingCancelled": "Бронирование дӀаяьккхина"
   },
   "detail": {
     "customer": "Эцархо",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Бронирование тӀечӀагӀйина.",
       "accepted": "Направлени тӀеэцна.",
-      "rejected": "Направлени юхатоьхна."
+      "rejected": "Направлени юхатоьхна.",
+      "bookingCancelled": "Бронирование дӀаяьккхина."
     },
-    "backToReferrals": "Юха а хьажоргаш тӀе"
+    "backToReferrals": "Юха а хьажоргаш тӀе",
+    "bookingCancelled": "Бронирование дӀаяьккхина",
+    "cancelBooking": "Бронировка дӀаяккха",
+    "cancelReasonLabel": "ДӀаяккхаран бахьана (накъостана гойту) *",
+    "cancelBookingHint": "Оперативни доладар юха а накъосте дӀадоьду, церан комиссин хьакъ хилар дӀадоккху. Лид юха а тӀаьхьо дӀаязъян йиш ю.",
+    "cancelBookingConfirm": "Бронирование дӀаяккха"
   },
   "history": {
     "title": "Истори",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Комиссин хьакъ хилар кхоьллина .",
       "HANDOVER_COMPLETED": "ДӀадалар чекхдаьлла",
       "ADMIN_PROTECTION_RELEASED": "Админ хьалхе араяьккхина дубликат ларъяр. Бахьана: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Админа юха дӀаелла регистраци {{from}} тӀера {{to}} тӀе. Бахьана: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Админа юха дӀаелла регистраци {{from}} тӀера {{to}} тӀе. Бахьана: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Кхечу накъоста шалха регистраци ян гӀортар юхатоьхна .",
+      "BOOKING_CANCELLED": "Бронирование дӀаяьккхина. Бахьана: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Операционни доладар юхадерзийна накъостана .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Комиссин хьакъ хилар дӀадаьккхина броньца цхьаьна",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Керлачу бронь ян комиссин хьакъ хилар меттахӀоттийна"
     }
   }
 }

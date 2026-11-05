@@ -49,8 +49,73 @@
       "newPartnerId": "New Partner ID",
       "reason": "Reason (required)",
       "apply": "Apply Override",
-      "applying": "Applying..."
+      "applying": "Applying...",
+      "cancelBookingHint": "Canceling marks di booking an its commission as cancelled, return operational ownership to di partner, an mek di builder book dis lead again.",
+      "cancelBookingConfirm": "Cancel dis booking? It commission is canceled too. Dis is log wid yuh name an reason."
     },
-    "timelineTitle": "Audit Timeline (dis registration)"
+    "timelineTitle": "Audit Timeline (dis registration)",
+    "bookingStatus": "Booking Status",
+    "commissionAttribution": "Commission Attribution",
+    "disputeOpen": "An ownership dispute open pan dis customer - anodda partner seh a fi dem. It decide pan di Disputes page.",
+    "viewDisputes": "View disputes",
+    "cancellation": {
+      "title": "Booking canceled",
+      "hint": "Di booking an di commission dem cancel; operational ownership deh back wid di partner an di builder can book dis lead again.",
+      "at": "Canceled at",
+      "by": "Cancel by",
+      "reason": "Reason"
+    }
+  },
+  "disputes": {
+    "title": "Ownership Disputes",
+    "hint": "A partner whose registration did reject as a duplicate can dispute who own di customer. Review both sides an decide.",
+    "statusFilter": "Dispute status",
+    "allStatuses": "All statuses",
+    "empty": "No disputes wid dis status.",
+    "columns": {
+      "dispute": "Prablem",
+      "customer": "Custama",
+      "project": "Prajeck",
+      "raisedBy": "Raised by",
+      "heldBy": "Current owna",
+      "status": "Place",
+      "raisedAt": "Raised on"
+    },
+    "detail": {
+      "title": "Dispute {{id}}",
+      "raisedOn": "Raised {{date}}",
+      "raisingTitle": "Raised by",
+      "holderTitle": "Current owna",
+      "partner": "Partna",
+      "raisedBy": "Submitted by",
+      "customerName": "Custama",
+      "mobile": "Deh wan place",
+      "alternateMobile": "Alternate mobile",
+      "email": "Email",
+      "project": "Prajeck",
+      "reason": "Dem reason",
+      "registration": "Registration",
+      "registeredAt": "Registered pan",
+      "referral": "Referral",
+      "heldMissing": "Di registration weh did hold couldn't be found.",
+      "resolutionTitle": "Dicision",
+      "outcome": "Outcome",
+      "note": "Note",
+      "decidedBy": "Decided by",
+      "decidedAt": "Disaid pan",
+      "newRegistration": "New registration",
+      "decideTitle": "Decide dis dispute",
+      "noteLabel": "Note explaining di decision (required)",
+      "noteRequired": "Write a note fi decide.",
+      "uphold": "Uphold",
+      "overturn": "Overturn",
+      "upholdEffect": "{{holder}} keep di customer. Di dispute don an nutten else nuh change.",
+      "overturnEffect": "{{holder}} 's duplicate protection end now an di customer registered fi {{partner}} as a new registration.",
+      "heldBookedHelp": "Dis customer book chruu di current owna. Cancel dat deh booking fos (Admin Override pan di registration), den overturn:",
+      "confirmTitle": "Yuh sure?",
+      "confirmUphold": "Yes, uphold",
+      "confirmOverturn": "Yes, overturn",
+      "back": "Back to Disputes"
+    }
   }
 }

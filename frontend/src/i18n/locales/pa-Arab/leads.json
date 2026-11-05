@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "بک ہو گیا",
-    "pending": "التواء اچ"
+    "pending": "التواء اچ",
+    "status": {
+      "CONFIRMED": "بک ہو گیا",
+      "CANCELLED": "بکنگ منسوخ کر دتی گئی"
+    }
   },
   "assign": {
     "unassigned": "غیر تفویض شدہ",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "ہلے تیکر کوئی منصوبہ نئیں (حوالہ نئیں دتا گیا)",
-    "notInList": "{{project}} (پروجیکٹ لسٹ چ نئیں)"
+    "notInList": "{{project}} (پروجیکٹ لسٹ چ نئیں)",
+    "protectionDays_one": "{{count}} -دن دی حفاظت",
+    "protectionDays_other": "{{count}} -دن دی حفاظت"
   },
   "journey": {
     "customer": "صارف",
@@ -76,7 +82,14 @@
     "progressHistory": "ترقی دی تاریخ",
     "timesIn": "( {{timezone}} وچ ویلے)",
     "backToMyLeads": "میری لیڈز ول واپس جاؤ",
-    "editLead": "لیڈ چ ترمیم کرو"
+    "editLead": "لیڈ چ ترمیم کرو",
+    "disputeBanner": "اک ہور شراکت دار نے اس گاہک دی ملکیت تے تنازعہ کیتا اے۔ اک Leadrat ایڈمن اس دا جائزہ لے رہیا اے - تہاڈا تحفظ اودوں تک موجود اے جدوں تک اوہ فیصلہ نئیں کردے۔",
+    "booking": "بکنگ",
+    "commission": "کمیشن",
+    "notBooked": "بک نئیں کیتا گیا",
+    "cancelledOn": "{{date}} نوں منسوخ کیتا گیا۔",
+    "cancelReason": "وجہ: {{reason}}",
+    "cancelledHint": "بلڈر نے بکنگ منسوخ کر دتی - آپریشنل ملکیت تہاڈے کول واپس آ گئی اے تے کمیشن دی اہلیت منسوخ کر دتی گئی اے۔ جے لیڈ دوبارہ بک ہو جاندی اے تے ایہ بحال ہو جاندا اے۔"
   },
   "referral": {
     "NOT_REFERRED": "حوالہ نئیں دتا گیا (کوئی منصوبہ نئیں)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "بلڈر نے حوالہ قبول کر لیا",
       "REFERRAL_REJECTED": "بلڈر نے حوالہ مسترد کر دتا۔ وجہ: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "ایڈمن نے ڈپلیکیٹ پروٹیکشن جلدی جاری کر دتا۔ وجہ: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "ایڈمن نے رجسٹریشن نو {{from}} توں {{to}} تے دوبارہ تفویض کر دتا۔ وجہ: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "ایڈمن نے رجسٹریشن نو {{from}} توں {{to}} تے دوبارہ تفویض کر دتا۔ وجہ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "اک دوجے پارٹنر دی ڈپلیکیٹ رجسٹریشن دی کوشش مسترد کر دتی گئی",
+      "BOOKING_CANCELLED": "بکنگ منسوخ کر دتی گئی۔ وجہ: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "آپریشنل ملکیت پارٹنر نوں واپس کر دتی گئی",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "بکنگ دے نال کمیشن دی اہلیت منسوخ کر دتی گئی",
+      "COMMISSION_ELIGIBILITY_RESTORED": "نویں بکنگ لئی کمیشن دی اہلیت بحال کر دتی گئی",
+      "OWNERSHIP_DISPUTE_RAISED": "اک ہور شراکت دار نے اس گاہک دی ملکیت تے تنازعہ کیتا - اک Leadrat ایڈمن اس دا جائزہ لے گا",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "اس گاہک تے ملکیت دا تنازعہ واپس لے لیا گیا - تہاڈی ملکیت وچ کوئی تبدیلی نئیں آئی",
+      "OWNERSHIP_DISPUTE_UPHELD": "اس گاہک تے ملکیت دے تنازعہ دا جائزہ لیا گیا - تہاڈی ملکیت دی تصدیق ہو گئی اے",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "تہاڈے حق چ تہاڈے ملکیت دے تنازعے دا فیصلہ ہون دے بعد رجسٹرڈ کیتا گیا۔ نوٹ: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "تحفظ ختم ہو گیا: اک ملکیت دا تنازعہ کسی دوجے شراکت دار دے حق چ فیصلہ کیتا گیا۔ نوٹ: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "اے فون نمبر {{country}} لئی ٹھیک نئیں اے۔",
     "COUNTRY_MISMATCH": "مہربانی کر کے صحیح ملک دا کوڈ چنو۔",
     "NOT_MOBILE": "لینڈ لائن نئیں، موبائل نمبر درج کرو۔"
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "کمیشن اہل",
+      "PENDING": "کمیشن زیر التوا",
+      "CANCELLED": "کمیشن منسوخ"
+    },
+    "attribution": {
+      "ATTRIBUTED": "تہاڈے نال منسوب کیتا گیا",
+      "DISPUTED": "انتساب متنازعہ"
+    }
+  },
+  "result": {
+    "none": "کوئی رجسٹریشن دا نتیجہ وکھان لئی نئیں۔ پہلے اک لیڈ رجسٹر کرو۔",
+    "acceptedTitle": "لیڈ رجسٹرڈ",
+    "rejectedTitle": "لیڈ رجسٹرڈ نئیں",
+    "protectionWindow": "تحفظ دی کھڑکی",
+    "protectedUntil": "جدوں تک محفوظ اے",
+    "openLead": "اوپن لیڈ",
+    "addAnother": "اک ہور لیڈ شامل کرو",
+    "duplicate": "نقل - پہلے ای محفوظ اے",
+    "duplicateHint": "ایہ گاہک پہلے ای کسے ہور رجسٹریشن دے ذریعے ایس منصوبے لئی محفوظ اے، اس لیی ایہ تہاڈے لیی رجسٹرڈ نئیں ہو سکیا۔",
+    "existingProtectedUntil": "موجودہ رجسٹریشن محفوظ اے"
+  },
+  "disputes": {
+    "title": "میرے تنازعات",
+    "intro": "ملکیت دے تنازعات جہڑے تسی اوہناں گاہکاں لئی چُکے سن جہناں نو نقلاں دے طور تے مسترد کر دتا گیا سی۔ اک Leadrat ایڈمن ہر اک دا جائزہ لیندا اے۔",
+    "empty": "تسی کوئی جھگڑا نئیں چُکیا۔ جے تہاڈے ولوں لیایا گیا کوئی گاہک نقل دے طور تے انکار کر دتا جاندا اے، تے تسی رجسٹریشن دے نتیجے توں اس نوں تنازعہ کر سکدے او۔",
+    "columns": {
+      "dispute": "رپھڑ",
+      "reason": "تہاڈی وجہ",
+      "outcome": "نتیجہ"
+    },
+    "status": {
+      "OPEN": "زیر جائزہ",
+      "UPHELD": "تیرے حق وچ نہیں",
+      "OVERTURNED": "تہاڈے حق چ فیصلہ کیتا گیا",
+      "WITHDRAWN": "واپس لیا گیا"
+    },
+    "awaitingReview": "ایڈمن جائزے دا انتظار کر رئے آں",
+    "openNewLead": "اپنا لیڈ کھولو {{id}}",
+    "withdraw": "پچھے ہٹنا",
+    "withdrawConfirm": "{{name}} لئی اپنا تنازعہ واپس لوو؟ موجودہ ملکیت انج ای رہندی اے۔",
+    "raise": "تنازعہ ملکیت",
+    "raiseTitle": "تنازعہ ملکیت",
+    "raiseHint": "جے ایہ گاہک تہاڈے کول سب توں پہلاں آیا سی، تے ایہ دسو کہ کیوں۔ اک Leadrat ایڈمن اس دا جائزہ لے گا; جے اوہ تہاڈے حق چ فیصلہ کردے نیں، تے لیڈ تہاڈے لیی رجسٹرڈ اے۔",
+    "reasonLabel": "ایہہ گاہک تہاڈا کیوں اے؟",
+    "reasonMin_one": "گھٹ توں گھٹ {{count}} اکھر۔",
+    "reasonMin_other": "گھٹ توں گھٹ {{count}} اکھر۔",
+    "submit": "تنازعہ بھیجو",
+    "notProtected": "ایس منصوبے لئی ہن کوئی وی ایس گاہک تے تحفظ نئیں رکھدا - تسی ہن لیڈ رجسٹر کر سکدے او۔",
+    "raised": "تنازعہ {{id}} جائزے لئی بھیجیا گیا۔",
+    "viewAll": "میرے تنازعات ویکھو"
+  },
+  "dashboard": {
+    "title": "ڈیش بورڈ",
+    "period": "پیریڈ",
+    "lastDays_one": "{{count}} دن",
+    "lastDays_other": "{{count}} دن",
+    "emptyTitle": "جی آیاں نوں کہنا! تہاڈے کول ہلے تیکر کوئی سراغ نئیں اے۔",
+    "emptyHint": "اپنی پہلی لیڈ رجسٹر کرو - تہاڈی پائپ لائن، بکنگ تے تحفظ دی ڈیڈ لائنز ایتھے دکھائی دین گیاں۔",
+    "tiles": {
+      "leads": "کل لیڈز",
+      "newInPeriod_one": "{{count}} اس عرصے وچ نواں",
+      "newInPeriod_other": "{{count}} اس عرصے وچ نواں",
+      "accepted": "قبول کیتا گیا",
+      "booked": "بک ہو گیا",
+      "bookedInPeriod_one": "{{count}} اس عرصے وچ بک کیتا گیا",
+      "bookedInPeriod_other": "{{count}} اس عرصے وچ بک کیتا گیا",
+      "conversion": "تبدیلی",
+      "conversionHint": "قبول شدہ لیڈز دے حصے دے طور تے بک کیتے گئے لیڈز",
+      "protectedNow": "ہنڑ محفوظ اے",
+      "expiringSoon_one": "{{count}} دن تے ختم ہون آلا تحفظ",
+      "expiringSoon_other": "تحفظ {{count}} دناں چ ختم ہوندا اے",
+      "disputedNow": "دوجیاں ولوں متنازعہ",
+      "disputedNowHint": "کسے دوجے پارٹنر توں کھلی ملکیت دے تنازعے دے نال تہاڈی لیڈز",
+      "commissionEligible": "کمیشن اہل",
+      "commissionCancelled_one": "{{count}} منسوخ کر دتا گیا",
+      "commissionCancelled_other": "{{count}} منسوخ کر دتا گیا"
+    },
+    "chart": {
+      "title_one": "رجسٹریشن تے بکنگ فی دن - آخری {{count}} دن",
+      "title_other": "رجسٹریشن تے بکنگ فی دن - پچھلے {{count}} دن",
+      "registrations": "رجسٹریشن",
+      "bookings": "بکنگ"
+    },
+    "byStage": "حیثیت دے لحاظ نال لیڈز",
+    "bySource": "وسیلے دے لحاظ نال لیڈز",
+    "byReferral": "ریفرل سٹیٹس دے لحاظ نال لیڈز",
+    "myDisputes": "تہاڈے ولوں چُکے گئے تنازعات",
+    "noDisputes": "کوئی تنازعہ نئیں اٹھایا گیا۔",
+    "unknown": "سیٹ نئیں کیتا گیا",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "بیرونی CRM (نقلی)",
+      "PARTNER_CRM": "تہاڈی ٹیم نے شامل کیتا",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "انضمام",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "اگلے {{count}} دن وچ تحفظ ختم ہو رہیا اے",
+    "expiringTitle_other": "اگلے {{count}} دناں وچ تحفظ ختم ہو رہیا اے",
+    "expiringEmpty": "اس ونڈو وچ کوئی وی لیڈ اپنی حفاظت نئیں کھو دیندا۔"
   }
 }

@@ -43,7 +43,9 @@
       "name": "Nama",
       "city": "Kota",
       "status": "Status",
-      "actions": "Tindakan"
+      "actions": "Tindakan",
+      "protection": "Perlindungan duplikat",
+      "matchOn": "Duplikat cocok"
     },
     "closeReferrals": "Tutup untuk referensi",
     "reopen": "Buka kembali",
@@ -55,6 +57,23 @@
       "add": "Tambahkan Proyek",
       "created": "Dibuat {{name}} ."
     },
-    "back": "Kembali ke Pembangun"
+    "back": "Kembali ke Pembangun",
+    "protection": {
+      "days_other": "{{count}} hari",
+      "globalDays_other": "Default global ( {{count}} hari)",
+      "globalDefault": "standar global",
+      "placeholder": "Hari perlindungan (kosong = default global)",
+      "saved": "Perlindungan duplikat diperbarui untuk {{name}} .",
+      "hint": "Perlindungan duplikat: 1-3650 hari, atau biarkan kosong untuk menggunakan default global dari Pengaturan. Perubahan hanya berlaku untuk pendaftaran baru - pendaftaran yang sudah ada tetap memiliki masa berlakunya."
+    },
+    "matching": {
+      "global": "standar global",
+      "globalWith": "Default global ( {{fields}} )",
+      "mobile": "Nomor ponsel",
+      "email": "E-mail",
+      "both": "Nomor ponsel + email",
+      "saved": "Pencocokan duplikat diperbarui untuk {{name}}",
+      "hint": "Detail mana yang membuat dua pendaftaran pelanggan yang sama untuk suatu proyek. Perubahan berlaku untuk pemeriksaan duplikat mulai sekarang; perlindungan yang ada tidak terpengaruh."
+    }
   }
 }

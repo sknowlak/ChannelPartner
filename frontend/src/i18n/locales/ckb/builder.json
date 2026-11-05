@@ -30,7 +30,8 @@
       "registered": "تۆمارکراوە"
     },
     "booked": "حجز کراوە",
-    "empty": "هێشتا هیچ ڕەوانەکردنێک نییە."
+    "empty": "هێشتا هیچ ڕەوانەکردنێک نییە.",
+    "bookingCancelled": "حجزکردن هەڵوەشایەوە"
   },
   "detail": {
     "customer": "کڕیار",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "حجزکردن پشتڕاستکرایەوە.",
       "accepted": "ڕەوانەکردن وەرگیراوە.",
-      "rejected": "ڕەوانەکردن ڕەتکرایەوە."
+      "rejected": "ڕەوانەکردن ڕەتکرایەوە.",
+      "bookingCancelled": "حجزکردن هەڵوەشایەوە."
     },
-    "backToReferrals": "گەڕانەوە بۆ ڕەوانەکردنەکان"
+    "backToReferrals": "گەڕانەوە بۆ ڕەوانەکردنەکان",
+    "bookingCancelled": "حجزکردن هەڵوەشایەوە",
+    "cancelBooking": "هەڵوەشاندنەوەی حجزکردن",
+    "cancelReasonLabel": "هۆکاری هەڵوەشاندنەوە (پێشاندانی هاوبەش) *",
+    "cancelBookingHint": "خاوەندارێتی کارکردن دەگەڕێتەوە بۆ هاوبەشەکە و شایستەیی کۆمیسیۆنیان هەڵدەوەشێتەوە. دواتر دەتوانرێت جارێکی دیکە پێشەنگی یارییەکە بە کارتی سوور تۆماربکرێتەوە.",
+    "cancelBookingConfirm": "حجزکردنەکە هەڵبوەشێنەرەوە"
   },
   "history": {
     "title": "مێژوو",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "شایستەیی کۆمیسیۆن دروست بووە",
       "HANDOVER_COMPLETED": "ڕادەستکردنەوە تەواو بوو",
       "ADMIN_PROTECTION_RELEASED": "ئەدمین زوو پاراستنی دووبارە بڵاوکردەوە. هۆکار: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "بەڕێوەبەر تۆمارکردنی لە {{from}} بۆ {{to}} تەرخانکردەوە. هۆکار: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "بەڕێوەبەر تۆمارکردنی لە {{from}} بۆ {{to}} تەرخانکردەوە. هۆکار: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "هەوڵی دووبارە تۆمارکردن لەلایەن هاوبەشێکی دیکەوە ڕەتکرایەوە",
+      "BOOKING_CANCELLED": "حجزکردن هەڵوەشایەوە. هۆکار: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "خاوەندارێتی کارگێڕی گەڕایەوە بۆ هاوبەشەکە",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "شایستەیی کۆمیسیۆن لەگەڵ حجزکردنەکەدا هەڵوەشایەوە",
+      "COMMISSION_ELIGIBILITY_RESTORED": "شایستەیی کۆمیسیۆن بۆ حجزکردنی نوێ گەڕێنرایەوە"
     }
   }
 }

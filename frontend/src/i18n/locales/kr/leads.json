@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Booktəna",
-    "pending": "Kawudəro"
+    "pending": "Kawudəro",
+    "status": {
+      "CONFIRMED": "Booktəna",
+      "CANCELLED": "Booking dafkada"
+    }
   },
   "assign": {
     "unassigned": "Cida tǝkǝnyi",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Kuwamiyayi cida ba (waltəgənyi)",
-    "notInList": "{{project}} (suro cidadəyen ba)"
+    "notInList": "{{project}} (suro cidadəyen ba)",
+    "protectionDays_one": "{{count}} -kawu nzǝliwo",
+    "protectionDays_other": "{{count}} -kawu nzǝliwo"
   },
   "journey": {
     "customer": "Luwayama",
@@ -76,7 +82,14 @@
     "progressHistory": "Gargam Fuwutəbe",
     "timesIn": "(loktu suro {{timezone}} )",
     "backToMyLeads": "Fuwumawanyiro waltəgə",
-    "editLead": "Fuwuma sasarǝ"
+    "editLead": "Fuwuma sasarǝ",
+    "disputeBanner": "Gawilma gadeye kənganti kostoma adəyen kambiwuzəna. Admin Leadrat dəga wujin - nzəliwonzə nadən dajin hatta shawari gozaiya.",
+    "booking": "Booking",
+    "commission": "Lada",
+    "notBooked": "Bowotənyi",
+    "cancelledOn": "{{date}} lan daftəna.",
+    "cancelReason": "Dalil: {{reason}}",
+    "cancelledHint": "Gartəmadəye kitawudə dafkono - kənga cidabedə nyiro waltəna kuru nəm ngalwo komishinbedə dafkono. Shidə waltə kalaktəyin leaddə waltə booking tədiya."
   },
   "referral": {
     "NOT_REFERRED": "Refered gǝnyi (cida ba)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Gartǝmaye referraldǝga kasatsǝna",
       "REFERRAL_REJECTED": "Gartəmadə referraldə waano. Dalil: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin ye nzǝliwo indi datǝram lan kolzǝna. Dalil: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin ye waltə rajista {{from}} lan səta {{to}} ro kalaksəna. Dalil: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin ye waltə rajista {{from}} lan səta {{to}} ro kalaksəna. Dalil: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Rejista indi gawilma gadeye jarabtǝdǝ waada",
+      "BOOKING_CANCELLED": "Booking dǝga daftǝna. Dalil: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Kǝnga cidabe gawilmadǝro waltǝyin",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Nǝmngǝla komishinbedǝ dafkada",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Komishinbe raktǝnzǝ waltǝm gǝnatǝ bǝlinro",
+      "OWNERSHIP_DISPUTE_RAISED": "Gawilma gadeye kənganti kostoma adəyen kambiwuzəna - kam Leadrat admin ye waltə wujin",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Kambiwu kəngaye kəla kostoma adəyen tutuluwuna - kənganəmdə faltənyi",
+      "OWNERSHIP_DISPUTE_UPHELD": "Kambiwu kəngaye kəla customer adəyen waltə wutəna - kənganəm tawattəgəna",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Ngawo kambiyi kəngaye nyiro shawari gotənayen rajista tədən. Notə: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Nzəliwo dawono: kambiyi kəngayedə kam gadero shawari təna. Notə: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Lamba wayabe adə {{country}} ro faidajin ba.",
     "COUNTRY_MISMATCH": "Martəgəne lamba lardəbe kalkaldə karne.",
     "NOT_MOBILE": "Martəgəne lamba mobayilbe yike, waya cidibe gənyi."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komishin raktǝ",
+      "PENDING": "Komishin tǝmatǝnyi",
+      "CANCELLED": "Komishin dafkada"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Nyiro tǝkǝna",
+      "DISPUTED": "Attribution kambiwuwa"
+    }
+  },
+  "result": {
+    "none": "Jaza rajistabe fəletə ba. Buro salakkin fuwuma rajista diwo.",
+    "acceptedTitle": "Fuwuma rajista tǝdǝna",
+    "rejectedTitle": "Lead dǝ rajista tǝnyi",
+    "protectionWindow": "Taga Nzǝliwobe",
+    "protectedUntil": "Tǝliwo Hatta",
+    "openLead": "Lead katə",
+    "addAnother": "Lead gade yira",
+    "duplicate": "Nǝm indi - buron tǝliwo",
+    "duplicateHint": "Customer adə buroman cida adəro registration gadelan təkəna, adə nankaro nyiro registration tədinba.",
+    "existingProtectedUntil": "Rejista mbejidə nzəliwotəna har"
+  },
+  "disputes": {
+    "title": "Kambiwunyi",
+    "intro": "Kambiwu kəngaye nyiye luwayamaso nankaro səsangənadə sandi doni nəm indiro waazanadə. Admin Leadrat falnzawoso wujin.",
+    "empty": "Nyiye kambiwu laa səsangənyi. Customer do ne surodən gənatəna dəga təmowonyi ma, raksə jaza registration ye dəga gashiptəyin.",
+    "columns": {
+      "dispute": "Luwala",
+      "reason": "Dalilnǝm",
+      "outcome": "Tamoram"
+    },
+    "status": {
+      "OPEN": "Cidiya waltəm wutəyen",
+      "UPHELD": "Nyiro gǝnyi",
+      "OVERTURNED": "Nyiro shawari cina",
+      "WITHDRAWN": "Tutuluwuna"
+    },
+    "awaitingReview": "Kulashi adminbe jeyin",
+    "openNewLead": "Fuwuma {{id}} kagǝne",
+    "withdraw": "Luwo",
+    "withdrawConfirm": "Kambiwunǝm {{name}} dǝga tuluwuye ? Kəmanzə kərmabedə futu dagənaro kara.",
+    "raise": "Kambiwu kǝngaye",
+    "raiseTitle": "Kambiwu kǝngaye",
+    "raiseHint": "Customer adə buron nyiro isəna-a, dalildə bayantə. Admin Leadrat ye shiga wujin; sandiye shawari nyiro sadǝnaro waljiya, shi lead dǝ nyiro rajista tǝdin.",
+    "reasonLabel": "Abi nankaro customer adə nyiye?",
+    "reasonMin_one": "Gananzə yayi {{count}} alamawa.",
+    "reasonMin_other": "Gananzə yayi {{count}} alamawa.",
+    "submit": "Kambiwu zuzə",
+    "notProtected": "Nduma kəla customer adəben nzəliwo sədinba cida adəro - kərmadəro raknəm fuwumadəga rajista dimin.",
+    "raised": "Kambiwu {{id}} waltəm wutəro zutəna.",
+    "viewAll": "Kambiwunyi wune"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Zaman",
+    "lastDays_one": "{{count}} yim",
+    "lastDays_other": "{{count}} kawu",
+    "emptyTitle": "Wushe kənshero! Kuwamiyayi nyilan fuwuma bawo.",
+    "emptyHint": "Fuwuma buro salakbedə rajista diwo - pipelinenəm, bookings-a kuru loktu nzətkawo-adə na allan fəlejin.",
+    "tiles": {
+      "leads": "Jumla fuwumabe",
+      "newInPeriod_one": "{{count}} bǝlin suro loktu adǝben",
+      "newInPeriod_other": "{{count}} bǝlin suro loktu adǝben",
+      "accepted": "Kasatkata",
+      "booked": "Booktəna",
+      "bookedInPeriod_one": "{{count}} loktu allan gənaata",
+      "bookedInPeriod_other": "{{count}} loktu allan gənatəna",
+      "conversion": "Faltə",
+      "conversionHint": "Fuwuma do booked tǝdǝna dǝ shima share do fuwuma do kasattǝna ma wo",
+      "protectedNow": "Kǝrma dǝro tǝliwo",
+      "expiringSoon_one": "Nzəliwodə yim {{count}} lan dajin",
+      "expiringSoon_other": "Nzəliwodə kawu {{count}} lan dajin",
+      "disputedNow": "Am gadeye kambiwuzana",
+      "disputedNowHint": "Fuwuma nyiye gashiptə kəngaye kam gadeye",
+      "commissionEligible": "Komishin raktǝ",
+      "commissionCancelled_one": "{{count}} dafkada",
+      "commissionCancelled_other": "{{count}} dafkada"
+    },
+    "chart": {
+      "title_one": "Rajista-a kuru booking-a yim woson - yim dareye {{count}}",
+      "title_other": "Rajista-a kuru awo gǝnatǝ-a yim woson - kawu dareye {{count}}",
+      "registrations": "Rajista",
+      "bookings": "Booking"
+    },
+    "byStage": "Darajamen fuwuma",
+    "bySource": "Fuwuma futu sourceben",
+    "byReferral": "Daraja referralbe fuwuma",
+    "myDisputes": "Kambiwuwa nyiye ciwunadǝ",
+    "noDisputes": "Kambiwuwa təbandənyi.",
+    "unknown": "Set gǝnyi",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM diyabe (jaza)",
+      "PARTNER_CRM": "Teamnǝmbe sǝragǝna",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Kǝltǝ",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Nzəliwodə yim {{count}} fuwubedən dajin",
+    "expiringTitle_other": "Nzəliwodə kawu {{count}} fuwubedən dajin",
+    "expiringEmpty": "Lead ndasoma suro window adəyen nzəliwonzə ba."
   }
 }

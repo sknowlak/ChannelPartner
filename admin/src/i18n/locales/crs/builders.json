@@ -43,7 +43,9 @@
       "name": "Non",
       "city": "Lavil",
       "status": "Stati",
-      "actions": "Aksyon"
+      "actions": "Aksyon",
+      "protection": "proteksyon doub",
+      "matchOn": "bann doub i koresponn lo"
     },
     "closeReferrals": "fermen pou referans",
     "reopen": "reouver",
@@ -55,6 +57,25 @@
       "add": "azout proze",
       "created": "kree {{name}} ."
     },
-    "back": "retourn kot bann mason"
+    "back": "retourn kot bann mason",
+    "protection": {
+      "days_one": "{{count}} zour",
+      "days_other": "{{count}} zour",
+      "globalDays_one": "par defo global ( {{count}} zour)",
+      "globalDays_other": "par defo global ( {{count}} zour)",
+      "globalDefault": "defo global",
+      "placeholder": "zour proteksyon (vid = defo global)",
+      "saved": "proteksyon doub in ganny met azour pour {{name}} .",
+      "hint": "proteksyon doub: 1-3650 zour, oubyen kit vid pou servi defo global sorti dan laranzman. en sanzman i aplik zis pou bann nouvo lanrezistreman - bann ki egziste i gard zot ekspire."
+    },
+    "matching": {
+      "global": "defo global",
+      "globalWith": "defo global ( {{fields}} )",
+      "mobile": "nimero mobil",
+      "email": "imel",
+      "both": "nimero telefonn + imel",
+      "saved": "Koresponn doub in ganny met azour pour {{name}}",
+      "hint": "Ki bann detay ki fer de lanrezistreman menm kliyan pou en proze. bann sanzman i aplik pour bann tyek doub apartir la; proteksyon ki egziste pa ganny afekte."
+    }
   }
 }

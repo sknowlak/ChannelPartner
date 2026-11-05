@@ -49,8 +49,73 @@
       "newPartnerId": "Fini ID ti mba ti mo",
       "reason": "Raison (a hunda)",
       "apply": "Appliquer surride",
-      "applying": "Ti sara demande..."
+      "applying": "Ti sara demande...",
+      "cancelBookingHint": "Tongana a annulé ni, a yeke zia marque na ndo ti réservation ni nga na commission ti lo so a annulé ni awe, a yeke kiri na propriété ti kua ni na mba ti lo ni, na a yeke zia lege na zo ti lekengo da ni ti kiri ti book lead so.",
+      "cancelBookingConfirm": "Annulé réservation so? A zi nga commission ti lo. A sû iri ti mo nga na raison ti mo na mbeti."
     },
-    "timelineTitle": "Chronologie ti audit (enregistrement so)"
+    "timelineTitle": "Chronologie ti audit (enregistrement so)",
+    "bookingStatus": "Statut ti réservation",
+    "commissionAttribution": "Komite ti mungo ye na zo",
+    "disputeOpen": "Mbeni tënë ti propriété azi na ndo ti client so - mbeni mba ti lo nde atene so a yeke ti ala. A yeke mû desizion ni na ndo ti lembeti ti Disputes.",
+    "viewDisputes": "Bâ atënë ti kangbi .",
+    "cancellation": {
+      "title": "A annulé réservation ni awe",
+      "hint": "A yeke zi réservation ni nga na commission ti lo; propriété opérationnelle ni akiri na mba ti lo na zo ti lekengo da ni alingbi ti kiri ti sû iri ti lo na mbeti.",
+      "at": "A annulé ni na 10.00.",
+      "by": "A annulé ni na .",
+      "reason": "Nda ni"
+    }
+  },
+  "disputes": {
+    "title": "Akota tënë ti warango ye",
+    "hint": "Mbeni mba ti lo so a ke ti sû iri ti lo na mbeti tongana mbeni copie alingbi ti dë gaba na ndo zo so ayeke na client ni. Bâ ambage use kue na mû desizion.",
+    "statusFilter": "Statut ti tënë",
+    "allStatuses": "A-état kue",
+    "empty": "A yeke wara pëpe atënë ti kangbi na ndo ti statut so.",
+    "columns": {
+      "dispute": "Papa",
+      "customer": "Klient",
+      "project": "Kapa",
+      "raisedBy": "A bata lo na .",
+      "heldBy": "Wa ti fadeso",
+      "status": "Dutingo ti zo",
+      "raisedAt": "A leke lo na lango 1999."
+    },
+    "detail": {
+      "title": "Tënë ti kangbi {{id}}",
+      "raisedOn": "A zi {{date}}",
+      "raisingTitle": "A bata lo na .",
+      "holderTitle": "Wa ti fadeso",
+      "partner": "Mba ti lo",
+      "raisedBy": "A tokua ni na .",
+      "customerName": "Klient",
+      "mobile": "Singa",
+      "alternateMobile": "Mbeni téléphone nde",
+      "email": "Email",
+      "project": "Kapa",
+      "reason": "Raison ti ala .",
+      "registration": "Ti sû iri ti mo na mbeti",
+      "registeredAt": "A sû iri ti lo na mbeti na .",
+      "referral": "Tokuango",
+      "heldMissing": "A lingbi ti wara pëpe mbeti ti ziango iri ti zo na mbeti.",
+      "resolutionTitle": "Mbela",
+      "outcome": "Ye so asi",
+      "note": "Mbeti",
+      "decidedBy": "A mû desizion na .",
+      "decidedAt": "A mû desizion na ndo ti .",
+      "newRegistration": "Afini enregistrement .",
+      "decideTitle": "Desizion ti tënë so .",
+      "noteLabel": "Note so afa nda ti desizion ni (a hunda ni)",
+      "noteRequired": "Sû mbeni mbeti ti mû desizion na ndo ni.",
+      "uphold": "Bata",
+      "overturn": "Ti kiri na peko",
+      "upholdEffect": "{{holder}} ayeke bata aclient ni. A hunzi tënë ni na mbeni ye nde achangé pëpe.",
+      "overturnEffect": "{{holder}} 's batango a-duplicate ahunzi fadeso na client ni a sû iri ti lo na mbeti teti {{partner}} tongana mbeni fini mbeti.",
+      "heldBookedHelp": "A yeke réservé aclient so na lege ti zo so ayeke na ni fadeso. Annulé kozoni réservation so (Admin Override na ndo ti enregistrement ni), na pekoni zia:",
+      "confirmTitle": "Mo yeke na kite ape?",
+      "confirmUphold": "Biani, bata .",
+      "confirmOverturn": "Biani, turnê .",
+      "back": "Kiri na ndo ti atënë ti kangbi ."
+    }
   }
 }

@@ -30,7 +30,8 @@
       "registered": "Къайд этильген"
     },
     "booked": "Бронланды",
-    "empty": "Аля даа ёлланмалар ёкъ."
+    "empty": "Аля даа ёлланмалар ёкъ.",
+    "bookingCancelled": "Бронирование лягъу этильди"
   },
   "detail": {
     "customer": "Муштери",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Бронирование тасдыкъланды.",
       "accepted": "Реферат къабул этильди.",
-      "rejected": "Реферат ред этильди."
+      "rejected": "Реферат ред этильди.",
+      "bookingCancelled": "Бронирование лягъу этильди."
     },
-    "backToReferrals": "Рефералларгъа къайтмакъ ."
+    "backToReferrals": "Рефералларгъа къайтмакъ .",
+    "bookingCancelled": "Бронирование лягъу этильди",
+    "cancelBooking": "Бронированиени лягъу этинъиз",
+    "cancelReasonLabel": "Лягъу этмекнинъ себеби (ортакъкъа косьтериле) * .",
+    "cancelBookingHint": "Оператив саиплик шерикке къайта ве оларнынъ комиссия акъкъы лягъу этиле. Къуршунны сонъра кене яздырмакъ мумкюн.",
+    "cancelBookingConfirm": "Бронированиени лягъу этинъиз ."
   },
   "history": {
     "title": "Тарих",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Комиссиянынъ акъкъы яратылды .",
       "HANDOVER_COMPLETED": "Тапшырув битти",
       "ADMIN_PROTECTION_RELEASED": "Админ дубликаты къорчалавыны эрте чыкъарды. Себеп: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Админ язылувны {{from}} дан {{to}} ерине янъыдан тайинледи. Себеп: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Админ язылувны {{from}} дан {{to}} ерине янъыдан тайинледи. Себеп: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Башкъа шерикнинъ дубликаты язылув тырышмасы ред этильди .",
+      "BOOKING_CANCELLED": "Бронирование лягъу этильди. Себеп: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Оператив саиплик шерикке къайтарылды .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Комиссиягъа акъкъы броньнен берабер лягъу этильди",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Янъы бронь ичюн комиссия акъкъы тикленди ."
     }
   }
 }

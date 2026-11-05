@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Kuyafaneleka",
-    "PENDING": "Kusalindile"
+    "PENDING": "Kusalindile",
+    "CANCELLED": "Kukhanseliwe"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Khipha ukuvikela okuyimpinda kusenesikhathi",
-    "REASSIGN_PARTNER": "Yabela kabusha omunye uzakwethu"
+    "REASSIGN_PARTNER": "Yabela kabusha omunye uzakwethu",
+    "CANCEL_BOOKING": "Khansela ukubhuka"
   },
   "dataType": {
     "TEXT": "Umbhalo",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super Admin",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Kuqinisekisiwe",
+    "CANCELLED": "Kukhanseliwe"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Kubaluliwe",
+    "DISPUTED": "Ingxabano"
+  },
+  "disputeStatus": {
+    "OPEN": "Vula",
+    "UPHELD": "Kumisiwe",
+    "OVERTURNED": "Igingqikisiwe",
+    "WITHDRAWN": "Kuhoxisiwe"
   }
 }

@@ -49,8 +49,73 @@
       "newPartnerId": "Novo ID de parceiro",
       "reason": "Motivo (obrigatório)",
       "apply": "Aplicar substituição",
-      "applying": "Aplicando..."
+      "applying": "Aplicando...",
+      "cancelBookingHint": "O cancelamento marca a reserva e sua comissão como canceladas, devolve a propriedade operacional ao parceiro e permite que o construtor reserve esse lead novamente.",
+      "cancelBookingConfirm": "Cancelar esta reserva? Sua comissão também foi cancelada. Isso é registrado com seu nome e motivo."
     },
-    "timelineTitle": "Cronograma da auditoria (este registro)"
+    "timelineTitle": "Cronograma da auditoria (este registro)",
+    "bookingStatus": "Estado da reserva",
+    "commissionAttribution": "Atribuição de Comissão",
+    "disputeOpen": "Uma disputa de propriedade está aberta para este cliente – outro parceiro diz que é dele. É decidido na página Disputas.",
+    "viewDisputes": "Ver disputas",
+    "cancellation": {
+      "title": "Reserva cancelada",
+      "hint": "A reserva e a respetiva comissão são canceladas; a propriedade operacional está de volta ao parceiro e o construtor pode reservar esse lead novamente.",
+      "at": "Cancelado em",
+      "by": "Cancelado por",
+      "reason": "Razão"
+    }
+  },
+  "disputes": {
+    "title": "Disputas de propriedade",
+    "hint": "Um parceiro cujo registro foi rejeitado como duplicado pode contestar quem é o proprietário do cliente. Revise os dois lados e decida.",
+    "statusFilter": "Situação da disputa",
+    "allStatuses": "Todos os status",
+    "empty": "Não há disputas com este status.",
+    "columns": {
+      "dispute": "Disputa",
+      "customer": "Cliente",
+      "project": "Projeto",
+      "raisedBy": "Criado por",
+      "heldBy": "Proprietário atual",
+      "status": "Status",
+      "raisedAt": "Criado em"
+    },
+    "detail": {
+      "title": "Disputa {{id}}",
+      "raisedOn": "Aumentado em {{date}}",
+      "raisingTitle": "Criado por",
+      "holderTitle": "Proprietário atual",
+      "partner": "Parceiro",
+      "raisedBy": "Enviado por",
+      "customerName": "Cliente",
+      "mobile": "Móvel",
+      "alternateMobile": "Celular alternativo",
+      "email": "E-mail",
+      "project": "Projeto",
+      "reason": "A razão deles",
+      "registration": "Cadastro",
+      "registeredAt": "Registrado em",
+      "referral": "Referência",
+      "heldMissing": "O registro retido não foi encontrado.",
+      "resolutionTitle": "Decisão",
+      "outcome": "Resultado",
+      "note": "Observação",
+      "decidedBy": "Decidido por",
+      "decidedAt": "Decidido",
+      "newRegistration": "Novo registro",
+      "decideTitle": "Decida esta disputa",
+      "noteLabel": "Nota explicando a decisão (obrigatório)",
+      "noteRequired": "Escreva uma nota para decidir.",
+      "uphold": "Defender",
+      "overturn": "Reviravolta",
+      "upholdEffect": "{{holder}} mantém o cliente. A disputa está encerrada e nada mais muda.",
+      "overturnEffect": "A proteção duplicada de {{holder}} termina agora e o cliente é registrado em {{partner}} como um novo registro.",
+      "heldBookedHelp": "Este cliente está reservado através do proprietário atual. Cancele a reserva primeiro (substituição do administrador no registro) e depois anule:",
+      "confirmTitle": "Tem certeza?",
+      "confirmUphold": "Sim, defenda",
+      "confirmOverturn": "Sim, derrubar",
+      "back": "Voltar para disputas"
+    }
   }
 }

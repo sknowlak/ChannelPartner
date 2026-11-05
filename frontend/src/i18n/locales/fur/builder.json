@@ -30,7 +30,8 @@
       "registered": "Regjistrât"
     },
     "booked": "Prenotât",
-    "empty": "Ancjemò nissun riferiment."
+    "empty": "Ancjemò nissun riferiment.",
+    "bookingCancelled": "La prenotazion cancelade"
   },
   "detail": {
     "customer": "Client",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "La prenotazion e je confermade.",
       "accepted": "Il rinviament al è acetât.",
-      "rejected": "Il riferiment al è stât refudât."
+      "rejected": "Il riferiment al è stât refudât.",
+      "bookingCancelled": "La prenotazion cancelade."
     },
-    "backToReferrals": "Tornâ ai Riferiments"
+    "backToReferrals": "Tornâ ai Riferiments",
+    "bookingCancelled": "La prenotazion cancelade",
+    "cancelBooking": "Annulâ la prenotazion",
+    "cancelReasonLabel": "Motîf pe cancelazion (mostrât al compagn) *",
+    "cancelBookingHint": "La proprietât operative e torne al compagn e la lôr idoneitât ae comission e je cancelade. Il lead al pues jessi prenotât di gnûf plui indenant.",
+    "cancelBookingConfirm": "Annulâ la prenotazion"
   },
   "history": {
     "title": "Storie",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Idoneitât ae comission creade",
       "HANDOVER_COMPLETED": "La consegne completade",
       "ADMIN_PROTECTION_RELEASED": "L’aministradôr al à dât fûr une protezion dople adore. Motîf: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "L'aministradôr al à riassegnât la regjistrazion di {{from}} a {{to}} . Motîf: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "L'aministradôr al à riassegnât la regjistrazion di {{from}} a {{to}} . Motîf: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Un tentatîf di regjistrazion dopli di un altri colaboradôr al è stât refudât",
+      "BOOKING_CANCELLED": "La prenotazion cancelade. Motîf: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "La proprietât operative tornade al colaboradôr",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "La idoneitât pe comission e je cancelade cu la prenotazion",
+      "COMMISSION_ELIGIBILITY_RESTORED": "La idoneitât pe comission e je stade restaurade pe gnove prenotazion"
     }
   }
 }

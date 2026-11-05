@@ -49,8 +49,73 @@
       "newPartnerId": "Nei Partner ID",
       "reason": "Grond (obligatoresch)",
       "apply": "Gëlle Iwwerschreiden",
-      "applying": "Bewerbung..."
+      "applying": "Bewerbung...",
+      "cancelBookingHint": "Annuléierung markéiert d'Buchung a seng Kommissioun als annuléiert, bréngt operationell Besëtzer un de Partner zréck a léisst de Builder dës Lead erëm buchen.",
+      "cancelBookingConfirm": "Dës Buchung annuléieren? Seng Kommissioun ass och annuléiert. Dëst gëtt mat Ärem Numm a Grond protokolléiert."
     },
-    "timelineTitle": "Audit Timeline (dës Aschreiwung)"
+    "timelineTitle": "Audit Timeline (dës Aschreiwung)",
+    "bookingStatus": "Reservatioun Status",
+    "commissionAttribution": "Kommissioun Attributioun",
+    "disputeOpen": "E Besëtzer Sträit ass op dësem Client - en anere Partner seet et ass hir. Et gëtt op der Sträit Säit decidéiert.",
+    "viewDisputes": "View Sträitfäll",
+    "cancellation": {
+      "title": "Reservatioun annuléiert",
+      "hint": "D'Buchung a seng Kommissioun ginn annuléiert; operationell Proprietairen ass zréck mam Partner an de Builder kann dëse Lead erëm buchen.",
+      "at": "Annuléiert um",
+      "by": "Annuléiert vum",
+      "reason": "Grond"
+    }
+  },
+  "disputes": {
+    "title": "Besëtz Sträitfäll",
+    "hint": "E Partner deem seng Aschreiwung als Duplikat verworf gouf, kann streiden wien de Client gehéiert. Iwwerpréift béid Säiten an entscheeden.",
+    "statusFilter": "Sträit Status",
+    "allStatuses": "All Status",
+    "empty": "Keng Streidereien mat dësem Status.",
+    "columns": {
+      "dispute": "Sträit",
+      "customer": "Client",
+      "project": "Projet",
+      "raisedBy": "Opgewuess vun",
+      "heldBy": "Aktuelle Besëtzer",
+      "status": "Status",
+      "raisedAt": "Opgewuess"
+    },
+    "detail": {
+      "title": "Sträit {{id}}",
+      "raisedOn": "Opgehuewen {{date}}",
+      "raisingTitle": "Opgewuess vun",
+      "holderTitle": "Aktuelle Besëtzer",
+      "partner": "Partner",
+      "raisedBy": "Presentéiert vum",
+      "customerName": "Client",
+      "mobile": "Mobile",
+      "alternateMobile": "Alternativ Handy",
+      "email": "E-Mail",
+      "project": "Projet",
+      "reason": "Hire Grond",
+      "registration": "Aschreiwung",
+      "registeredAt": "Registréiert op",
+      "referral": "Referenz",
+      "heldMissing": "Déi ofgehalen Aschreiwung konnt net fonnt ginn.",
+      "resolutionTitle": "Entscheedung",
+      "outcome": "Resultat",
+      "note": "Note",
+      "decidedBy": "Entscheet vum",
+      "decidedAt": "Entscheet op",
+      "newRegistration": "Nei Aschreiwung",
+      "decideTitle": "Decidéieren dëse Sträit",
+      "noteLabel": "Notiz déi d'Entscheedung erkläert (obligatoresch)",
+      "noteRequired": "Schreift eng Notiz fir ze entscheeden.",
+      "uphold": "Erhaalen",
+      "overturn": "ëmdréinen",
+      "upholdEffect": "{{holder}} hält de Client. De Sträit ass zougemaach an näischt anescht ännert.",
+      "overturnEffect": "{{holder}} säin Duplikatschutz geet elo op en Enn an de Client ass fir {{partner}} als nei Aschreiwung registréiert.",
+      "heldBookedHelp": "Dëse Client gëtt duerch den aktuelle Besëtzer gebucht. Annulatioun déi Buchung fir d'éischt (Admin Override op der Aschreiwung), dann ëmdréinen:",
+      "confirmTitle": "Bass du secher?",
+      "confirmUphold": "Jo, behalen",
+      "confirmOverturn": "Jo, ëmdréinen",
+      "back": "Zréck op Streidereien"
+    }
   }
 }

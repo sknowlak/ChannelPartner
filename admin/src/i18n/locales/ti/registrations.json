@@ -49,8 +49,73 @@
       "newPartnerId": "ሓድሽ መሻርኽቲ ID",
       "reason": "ምኽንያት (ኣድላዪ)",
       "apply": "ምግዳፍ ተግባራዊ ምግባር",
-      "applying": "ኣብ ምምልካት..."
+      "applying": "ኣብ ምምልካት...",
+      "cancelBookingHint": "ምስራዝ ነቲ ምዝገባን ኮሚሽኑን ከም ዝተሰረዘ ምልክት ይገብሮ፣ ስርሒታዊ ዋንነት ናብቲ መሻርኽቲ ይመልሶ፣ እቲ ሃናጺ ድማ ነዚ መሪሕነት መሊሱ ክሕዞ ይገብሮ።",
+      "cancelBookingConfirm": "ነዚ ምዝገባ ስርዝዎ? ኮሚሽንኣ እውን ይስረዝ። እዚ ምስ ስምካን ምኽንያትካን ይምዝገብ።"
     },
-    "timelineTitle": "ናይ ኦዲት ግዜ መስመር (እዚ ምዝገባ)"
+    "timelineTitle": "ናይ ኦዲት ግዜ መስመር (እዚ ምዝገባ)",
+    "bookingStatus": "ኩነታት ምዝገባ",
+    "commissionAttribution": "ኮሚሽን ኣትሪብዩሽን",
+    "disputeOpen": "ኣብዚ ዓሚል ናይ ዋንነት ክርክር ክፉት እዩ - ካልእ መሻርኽቲ ናቶም እዩ ይብል። ኣብ ገጽ ክርክር እዩ ዝውሰን።",
+    "viewDisputes": "ክርክር ርአ",
+    "cancellation": {
+      "title": "ምዝገባ ተሰሪዙ",
+      "hint": "እቲ ምዝገባን ኮሚሽኑን ይስረዝ፤ ስርሒታዊ ዋንነት ምስቲ መሻርኽቲ ተመሊሱ ኣሎ፡ እቲ ሃናጺ ድማ ነዚ መሪሕነት እንደገና ክሕዝ ይኽእል።",
+      "at": "ተሰሪዙ ኣብ...",
+      "by": "ዝተሰረዘ ብ...",
+      "reason": "ምኽንያት"
+    }
+  },
+  "disputes": {
+    "title": "ናይ ዋንነት ክርክር",
+    "hint": "ምዝገባኡ ከም ድፕሊኬት ዝተነጽገ መሻርኽቲ መን ከም ዝውንኖ ዓሚል ክከራኸር ይኽእል። ንኽልቲኡ ወገን ዳግም ርአ እሞ ውሰድ።",
+    "statusFilter": "ኩነታት ክርክር",
+    "allStatuses": "ኩሉ ደረጃታት",
+    "empty": "ምስዚ ደረጃ ክርክር የለን።",
+    "columns": {
+      "dispute": "ዘይምስምዕማዕ",
+      "customer": "ዓሚል",
+      "project": "ፕሮጀክት",
+      "raisedBy": "ብ...",
+      "heldBy": "ናይ ሕጂ ዋና",
+      "status": "ኩነታት",
+      "raisedAt": "ኣብ ልዕሊ..."
+    },
+    "detail": {
+      "title": "ክርክር {{id}}",
+      "raisedOn": "ተላዒሉ {{date}}",
+      "raisingTitle": "ብ...",
+      "holderTitle": "ናይ ሕጂ ዋና",
+      "partner": "መሳርሕቲ",
+      "raisedBy": "ብ...",
+      "customerName": "ዓሚል",
+      "mobile": "ተንቀሳቓሲ",
+      "alternateMobile": "ኣማራጺ ሞባይል",
+      "email": "ኢመይል",
+      "project": "ፕሮጀክት",
+      "reason": "ምኽንያቶም",
+      "registration": "ምዝገባ",
+      "registeredAt": "ኣብ ዝተመዝገበ",
+      "referral": "ሪፈራል ምግባር",
+      "heldMissing": "እቲ ዝተሓዝአ ምዝገባ ክርከብ ኣይከኣለን።",
+      "resolutionTitle": "ውሳነ",
+      "outcome": "ውጽኢት",
+      "note": "መዝገብ",
+      "decidedBy": "ዝውሰን ብ...",
+      "decidedAt": "ወሲኑ ኣብ...",
+      "newRegistration": "ሓድሽ ምዝገባ",
+      "decideTitle": "ነዚ ክርክር ውሰድዎ።",
+      "noteLabel": "ነቲ ውሳነ ዝገልጽ መተሓሳሰቢ (ኣድላዪ)",
+      "noteRequired": "ንኽትውስን መዘኻኸሪ ጽሓፍ።",
+      "uphold": "ደጊፍካ ምጽናሕ",
+      "overturn": "ምግልባጥ",
+      "upholdEffect": "{{holder}} ነቲ ዓሚል ይሕዞ። እቲ ክርክር ተዓጽዩ ካልእ ዝቕየር ነገር የለን።",
+      "overturnEffect": "{{holder}} 's ተደጋጋሚ መከላኸሊ ሕጂ ይውዳእ እሞ እቲ ዓሚል ን {{partner}} ከም ሓድሽ ምዝገባ ይምዝገብ።",
+      "heldBookedHelp": "እዚ ዓሚል ብመንገዲ እቲ ሕጂ ዘሎ ዋና እዩ ዝሕዝ። መጀመርታ ነቲ ምዝገባ ስርዞ (ኣብ ምዝገባ ኣድሚን ኦቨርራይድ)፣ ድሕሪኡ ምግልባጥ፤",
+      "confirmTitle": "ርግጸኛ ዲኻ?",
+      "confirmUphold": "እወ ደግፍ",
+      "confirmOverturn": "እወ ምግልባጥ",
+      "back": "ናብ ክርክር ንመለስ"
+    }
   }
 }

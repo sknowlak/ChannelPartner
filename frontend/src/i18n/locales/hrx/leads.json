@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Reserwiirt",
-    "pending": "Am waarte"
+    "pending": "Am waarte",
+    "status": {
+      "CONFIRMED": "Reserwiirt",
+      "CANCELLED": "Reserweerung is kanseliert"
+    }
   },
   "assign": {
     "unassigned": "Unkeweenlich",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Noch khee proyekt (nicht referiert)",
-    "notInList": "{{project}} (net in te proyekt list)"
+    "notInList": "{{project}} (net in te proyekt list)",
+    "protectionDays_one": "{{count}} -taach xitsung",
+    "protectionDays_other": "{{count}} -taach xitsung"
   },
   "journey": {
     "customer": "Khuner",
@@ -76,7 +82,14 @@
     "progressHistory": "Fortxrit kexicht",
     "timesIn": "(tiit in {{timezone}} )",
     "backToMyLeads": "Zurück in Mayn Leerer",
-    "editLead": "Lead ënere"
+    "editLead": "Lead ënere",
+    "disputeBanner": "Een aner partnerxaft hot ti eyerlichkheet fon tiise kliënt kexprooch. En Leadrat admin is tas rexpekteere - tayn xitsung playpt uf em plats pis se ëntxlise.",
+    "booking": "Reserwierung",
+    "commission": "Komisyoon",
+    "notBooked": "Nicht gebookt",
+    "cancelledOn": "Annuller am {{date}} .",
+    "cancelReason": "Ursaach: {{reason}}",
+    "cancelledHint": "Te pauer hot ti reserwiirung kans kexlos - ti operatsioons ërepxaft is tsurik pay aych un ti komisioons kwalifikatsioon is kexlos. Es is tsurik kenom wën ti lët waase noch mool kexrip wëre."
   },
   "referral": {
     "NOT_REFERRED": "Nicht referiert (keen projëkt)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Builder hot ti referëns aan kenom .",
       "REFERRAL_REJECTED": "Builder hot ti referëns ferwort. Ursaach: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin hot friier duplikaat xitsung aus keprung. Ursaach: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin hot ti registratsioon fon {{from}} tsu {{to}} noch mool kexrip . Ursaach: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin hot ti registratsioon fon {{from}} tsu {{to}} noch mool kexrip . Ursaach: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Een duplikaat registratsioons fersuuchung fon een aner partnerxaft waar ferwort .",
+      "BOOKING_CANCELLED": "Reserweerung is annuliert. Ursaach: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operatsioons eigentum is tsurik fer te partnerxaft keprung .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Komisioon kwalifikatsioon is mit te reserwiirung kanseliert .",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Komisioon kwalifikatsioon fer ti nay reserwiirung tsurik kenom .",
+      "OWNERSHIP_DISPUTE_RAISED": "Een aner partnerxaft hot ti eyerlichkheet fon tëm kliënt kexproch - een Leadrat admin tuut tas noo kuke .",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Ti eyerlichkheet fon tëm kliënt is tsurik kenom kep - tayn eyerlichkheet is net keënert kep .",
+      "OWNERSHIP_DISPUTE_UPHELD": "Ti eyerlichkheet fon tëm kliënt is noo kekukt kep - tayn eyerlichkheet is pekhant kep .",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Registriert noo tas tayn aychne xprooch in tayn faynt pextimt kep waar. Nootwëntich: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Ti xitsung is ëntkeen: een xtroof iwer ti eyerlichkheet waar fer een aner partnerxaft pextimt kep. Nootwëntich: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Tiise telefoon numer is nët richtich fer {{country}} .",
     "COUNTRY_MISMATCH": "Tuu te richtiche lant kode raus suuche.",
     "NOT_MOBILE": "Tuu een mobiil numer in xraype, nët een lant numer."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisioon kwalifitsiert",
+      "PENDING": "Komisioon waarte",
+      "CANCELLED": "Komisioon is kanseelt"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Atribuiert fer tich",
+      "DISPUTED": "Attributsioon is um kexprooch"
+    }
+  },
+  "result": {
+    "none": "Keen registratsioons resultaat fer se tsayche. Registreer een leerer ëyerst.",
+    "acceptedTitle": "Ploos registriert",
+    "rejectedTitle": "Ploos nët registriert",
+    "protectionWindow": "Schutzfenster",
+    "protectedUntil": "Protektsioon Bis",
+    "openLead": "Open Lead",
+    "addAnother": "Tuu een aner Lead aan tuun",
+    "duplicate": "Duplikaat - xon kexitst",
+    "duplicateHint": "Tiise kliënt is xon fer tiise proyekt kexitst kep torich een aner registratsioon, soo, khont tee net fer aych registriirt wëre.",
+    "existingProtectedUntil": "Existiirente registratsioone sin kexitst pis 2019."
+  },
+  "disputes": {
+    "title": "Mayn Xtreete",
+    "intro": "Eigentums striite woos tuu fer ti kliënte kexproch host woo wii duplikaate ferpoot kep sin. En Leadrat -admin macht jede een.",
+    "empty": "Tuu host khee xwiirichkheete uf kextëlt. Wën een kliënt woos tuu in kenom host, is wii een duplikaat ap kexproch kep, khanst tuu tas fon tëm registratsioons resultaat xpoote.",
+    "columns": {
+      "dispute": "Xtrayt",
+      "reason": "Tayn uersach .",
+      "outcome": "Resultaat"
+    },
+    "status": {
+      "OPEN": "Uner rexpekt",
+      "UPHELD": "Niks in tayn fayer .",
+      "OVERTURNED": "Entxlos in tayn fayer .",
+      "WITHDRAWN": "Entgeholen"
+    },
+    "awaitingReview": "Warte uf admin-review",
+    "openNewLead": "Tuu tayn leet uf mache {{id}}",
+    "withdraw": "Aphewe",
+    "withdrawConfirm": "Tuu tayn xprooch fer {{name}} wech hoole ? Ti aktuaal ërepxaft playpt soo wii se is.",
+    "raise": "Striit eigentum",
+    "raiseTitle": "Striit eigentum",
+    "raiseHint": "Wën tiise kliënt ëyerst tsu tich khom is, erkhëne warom. En Leadrat admin tuut tas noo kuke; wën se in tayn faynt ëntxlise, is te lët waase fer tich kexrip.",
+    "reasonLabel": "Warom is tiise klaytung tayne?",
+    "reasonMin_one": "Te minste {{count}} karakter.",
+    "reasonMin_other": "Wenigstens {{count}} xrifte.",
+    "submit": "Send Striit",
+    "notProtected": "Niks halt mee xitsung uf tiise xprooch fer tiise proyekt - tuu khanst te leewe yets registriire.",
+    "raised": "Striit {{id}} is fer ti rexpekt kexikt kep.",
+    "viewAll": "Kuk mayn xtreet"
+  },
+  "dashboard": {
+    "title": "Dachboard",
+    "period": "Tsayt",
+    "lastDays_one": "{{count}} taach",
+    "lastDays_other": "{{count}} taache",
+    "emptyTitle": "Wilkhome! Tuu host noch khee lët waase.",
+    "emptyHint": "Registreer ayre eyerxte leerer - ayre picher, reserwiirunge un xitsungs tsayte wëre hier ketsaycht.",
+    "tiles": {
+      "leads": "Total lënter",
+      "newInPeriod_one": "{{count}} nay in tiise tsayt",
+      "newInPeriod_other": "{{count}} nay in tiise tsayt",
+      "accepted": "Aksepteyert",
+      "booked": "Reserwiirt",
+      "bookedInPeriod_one": "{{count}} in tiise tsayt reserwiirt",
+      "bookedInPeriod_other": "{{count}} in tiise tsayt reserwiirt",
+      "conversion": "Konwersatsioon",
+      "conversionHint": "Buchte leads als een teel fon akzeptierte leads .",
+      "protectedNow": "Protektiirt yets",
+      "expiringSoon_one": "Protektsioon woo ëntkeet im {{count}} taach",
+      "expiringSoon_other": "Protektsioon woo ëntkeet in {{count}} taache",
+      "disputedNow": "Disputt fon anere .",
+      "disputedNowHint": "Tayn lënter mit een oopne eere xpot fon een aner partnerxaft .",
+      "commissionEligible": "Komisioon kwalifitsiert",
+      "commissionCancelled_one": "{{count}} is kanseelt",
+      "commissionCancelled_other": "{{count}} is kanseelt"
+    },
+    "chart": {
+      "title_one": "Inxkriptsioone un reserwiirunge pro taach - letste {{count}} taach",
+      "title_other": "Inxkriptsioone un reserwiirunge pro taach - letste {{count}} taache",
+      "registrations": "Inxkriptsioone",
+      "bookings": "Reservações"
+    },
+    "byStage": "Führt noo status",
+    "bySource": "Leet fon te Quelle",
+    "byReferral": "Leet torich referëns status",
+    "myDisputes": "Striite woos tuu uf kehoop host",
+    "noDisputes": "Keen striite uf kehoop.",
+    "unknown": "Niet sets",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM auswënich (simuliert)",
+      "PARTNER_CRM": "Tas is fon tayn team hiner kelos kep",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integratsioon",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Te xitsung ëntkeet im neekste {{count}} taach",
+    "expiringTitle_other": "Te xitsung ëntkeet sich in te neekste {{count}} taache",
+    "expiringEmpty": "Keweenlich, tuut khee xlisel sayn xitsung in tiise fenster ferliire."
   }
 }

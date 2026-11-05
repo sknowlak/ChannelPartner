@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Wowɔ agbalẽ ɖe edzi",
-    "pending": "Le lalam"
+    "pending": "Le lalam",
+    "status": {
+      "CONFIRMED": "Wowɔ agbalẽ ɖe edzi",
+      "CANCELLED": "Wote fli ɖe agbalẽŋɔŋlɔ me"
+    }
   },
   "assign": {
     "unassigned": "Womede dɔ asi na ame o",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Dɔ aɖeke meli haɖe o (womeɖoe ɖe wo o) .",
-    "notInList": "{{project}} (menye le dɔwɔwɔ ƒe xexlẽdzesi me o)"
+    "notInList": "{{project}} (menye le dɔwɔwɔ ƒe xexlẽdzesi me o)",
+    "protectionDays_one": "{{count}} -ŋkeke takpɔkpɔ",
+    "protectionDays_other": "{{count}} -ŋkeke takpɔkpɔ"
   },
   "journey": {
     "customer": "Asisi",
@@ -76,7 +82,14 @@
     "progressHistory": "Ŋgɔyiyi Ŋutinya",
     "timesIn": "(ɣeyiɣiwo le {{timezone}} )",
     "backToMyLeads": "Trɔ Yi Nye Kplɔlawo Gbɔ",
-    "editLead": "Trɔ asi le Kplɔla Ŋu"
+    "editLead": "Trɔ asi le Kplɔla Ŋu",
+    "disputeBanner": "Dɔwɔhati bubu ʋli nya le asisi sia ƒe aƒetɔ nyenye ŋu. Leadrat admin aɖe le ŋku lém ɖe eŋu - wò takpɔkpɔ nɔa teƒea vaseɖe esime woatso nya me.",
+    "booking": "Agbalẽŋɔŋlɔ",
+    "commission": "Nuʋuʋu",
+    "notBooked": "Womewɔ agbalẽ ɖe wo dzi o",
+    "cancelledOn": "Wote fli ɖe eme le {{date}} dzi.",
+    "cancelReason": "Susu: {{reason}}",
+    "cancelledHint": "Xɔtula la te fli ɖe agbalẽŋɔŋlɔa me - dɔwɔwɔ ƒe aƒetɔ nyenye trɔ gbɔ na wò eye woɖe asi le kɔmiun ƒe dzedze ŋu. Wogbugbɔae ɖoa te ne wogaŋlɔ ŋkɔ ɖe ŋgɔdonya la me ake."
   },
   "referral": {
     "NOT_REFERRED": "Womeɖoe ɖe amewo o (dɔ aɖeke meli o) .",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Builder lɔ̃ ɖe ame si woɖo ɖee la dzi",
       "REFERRAL_REJECTED": "Builder gbe amedɔdɔa. Susu: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin ɖe asi le duplicate protection ŋu kaba. Susu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin gbugbɔ de ŋkɔ ŋɔŋlɔ tso {{from}} yi {{to}} . Susu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin gbugbɔ de ŋkɔ ŋɔŋlɔ tso {{from}} yi {{to}} . Susu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Wogbe agbagba si hadɔwɔla bubu dze be yeaŋlɔ ŋkɔ zi eve",
+      "BOOKING_CANCELLED": "Wote fli ɖe agbalẽŋɔŋlɔ me. Susu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Dɔwɔwɔ ƒe aƒetɔnyenye trɔ gbɔ va hadɔwɔla la si",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Wote fli ɖe dɔdzikpɔha ƒe dzedze me kple agbalẽŋɔŋlɔ",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Wogbugbɔ kɔmiun ƒe dzedze na agbalẽ yeyea wɔwɔ",
+      "OWNERSHIP_DISPUTE_RAISED": "Habɔbɔ bubu aɖe ʋli nya le asisi sia ƒe aƒetɔ nyenye ŋu - Leadrat dɔdzikpɔla aɖe alé ŋku ɖe eŋu",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Woɖe asi le nutɔnyenye ŋuti nyaʋiʋli si nɔ asisi sia ŋu la ɖa - wò nutɔnyenye metrɔ o",
+      "OWNERSHIP_DISPUTE_UPHELD": "Wolé ŋku ɖe nutɔnyenye ŋuti nyaʋiʋli si le asisi sia ŋu me - woɖo kpe wò aƒetɔ nyenye dzi",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Woŋlɔ ŋkɔ ɖe agbalẽ me esi wotso nya me le wò aƒetɔ nyenye ŋuti nyaʋiʋlia ŋu wònyo na wò vɔ megbe. De dzesii: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Ametakpɔkpɔ wu enu: wotso nya me le nutɔnyenye ŋuti nyaʋiʋli aɖe ŋu le hadɔwɔla bubu ƒe nyonyo me. De dzesii: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Telefon xexlẽdzesi sia mesɔ na {{country}} o.",
     "COUNTRY_MISMATCH": "Taflatse tia dukɔa ƒe ŋkɔ si sɔ.",
     "NOT_MOBILE": "Taflatse ŋlɔ asitelefon xexlẽdzesi, ke menye anyigbadzitelefon o."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Dɔdzikpɔha si dze",
+      "PENDING": "Dɔdzikpɔha si le lalam",
+      "CANCELLED": "Wote fli ɖe Dɔdzikpɔhaa me"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Wogblɔ be wòe",
+      "DISPUTED": "Woʋli nya le nusiwo wogblɔ be wogblɔ be wogblɔe ŋu"
+    }
+  },
+  "result": {
+    "none": "Womeɖe ŋkɔ ŋɔŋlɔ ƒe emetsonu aɖeke afia o. Ŋlɔ ŋgɔdonya aɖe ɖi gbã.",
+    "acceptedTitle": "Lead si woŋlɔ ŋkɔ na",
+    "rejectedTitle": "Lead si womede agbalẽ me o",
+    "protectionWindow": "Ametakpɔnu ƒe Fesre",
+    "protectedUntil": "Wokpɔ eta Vaseɖe esime",
+    "openLead": "Ʋu Kplɔla",
+    "addAnother": "Tsɔ Kplɔ Bubu Tsɔ Kpe Ðe Eŋu",
+    "duplicate": "Duplicate - wokpɔ ta na xoxo",
+    "duplicateHint": "Wokpɔ asisi sia ta xoxo na dɔ sia to ŋkɔ ŋɔŋlɔ bubu me, eyata womate ŋu ade agbalẽ me na wò o.",
+    "existingProtectedUntil": "Wokpɔ ŋkɔ ŋɔŋlɔ si li fifia ta vaseɖe esime"
+  },
+  "disputes": {
+    "title": "Nye Nyaʋiʋliwo",
+    "intro": "Nutɔnyenye ŋuti nyaʋiʋli siwo nèfɔ ɖe te na asisiwo siwo wogbe be woanye esiwo wogbugbɔ ŋlɔ. Leadrat admin aɖe léa ŋku ɖe wo dometɔ ɖesiaɖe ŋu.",
+    "empty": "Miefɔ nyaʋiʋli aɖeke ɖe te o. Ne wogbe asisi aɖe si nèkplɔ vɛ be wòanye esi wogbugbɔ ŋlɔ la, àte ŋu aʋli nya le eŋu tso ŋkɔ ŋɔŋlɔ ƒe nyatakakaa me.",
+    "columns": {
+      "dispute": "Nyahehe",
+      "reason": "Wò susu",
+      "outcome": "Metsonu"
+    },
+    "status": {
+      "OPEN": "Le ŋkuléle ɖe eŋu te",
+      "UPHELD": "Menye le wò nyonyo me o",
+      "OVERTURNED": "Wotso nya me le wò nyonyo me",
+      "WITHDRAWN": "Woɖe asi le eŋu"
+    },
+    "awaitingReview": "Lala na admin ƒe ŋkuléle ɖe eŋu",
+    "openNewLead": "Ʋu wò ŋgɔdonya {{id}}",
+    "withdraw": "Ɖee ɖa",
+    "withdrawConfirm": "Ðe wò nyaʋiʋlia ɖa le {{name}} ta ? Nutɔnyenye si li fifia nɔa anyi abe alesi wòle ene.",
+    "raise": "Nyaʋiʋli le aƒetɔ nyenye ŋu",
+    "raiseTitle": "Nyaʋiʋli le aƒetɔ nyenye ŋu",
+    "raiseHint": "Ne asisi sia va gbɔwò gbã la, ke ɖe nusitae me. Leadrat admin aɖe ato eme; ne wotso nya me le wò nyonyo me la, woŋlɔa ŋgɔdola la ɖe agbalẽ me na wò.",
+    "reasonLabel": "Nukatae asisi sia nye tɔwò?",
+    "reasonMin_one": "Ne mede ɖeke o la {{count}} ŋɔŋlɔdzesi.",
+    "reasonMin_other": "Ne mede ɖeke o la {{count}} ŋɔŋlɔdzesiwo.",
+    "submit": "Ðo Nyaʋiʋli ɖa",
+    "notProtected": "Ame aɖeke megaléa ametakpɔkpɔ ɖe asisi sia dzi na dɔ sia o - àte ŋu ade ŋgɔdola la ŋkɔ fifia.",
+    "raised": "Nyaʋiʋli {{id}} si woɖo ɖa be woalé ŋku ɖe eŋu.",
+    "viewAll": "Kpɔ nye nyaʋiʋliwo ɖa"
+  },
+  "dashboard": {
+    "title": "Dashboard ƒe ʋuƒo",
+    "period": "Ɣeyiɣi",
+    "lastDays_one": "{{count}} ŋkeke",
+    "lastDays_other": "{{count}} ŋkekewo",
+    "emptyTitle": "Woezɔ̃! Kplɔla aɖeke mele asiwò haɖe o.",
+    "emptyHint": "Ŋlɔ wò ŋgɔdonya gbãtɔ ɖi - wò pɔmpi, agbalẽŋɔŋlɔ kple ametakpɔkpɔ ƒe ɣeyiɣi mamlɛawo adze le afisia.",
+    "tiles": {
+      "leads": "Kplɔlawo katã ƒe ƒuƒoƒo",
+      "newInPeriod_one": "{{count}} yeye le ɣeyiɣi sia me",
+      "newInPeriod_other": "{{count}} yeye le ɣeyiɣi sia me",
+      "accepted": "Wolɔ̃ ɖe edzi",
+      "booked": "Wowɔ agbalẽ ɖe edzi",
+      "bookedInPeriod_one": "{{count}} ŋlɔ agbalẽ le ɣeyiɣi sia me",
+      "bookedInPeriod_other": "{{count}} ŋlɔ agbalẽ le ɣeyiɣi sia me",
+      "conversion": "Dzimetɔtrɔ",
+      "conversionHint": "Woŋlɔ agbalẽ na amewo abe ŋgɔdonya siwo woxɔ ƒe akpa ene",
+      "protectedNow": "Wokpɔ eta fifia",
+      "expiringSoon_one": "Takpɔkpɔ si wu enu le {{count}} ŋkeke dzi",
+      "expiringSoon_other": "Takpɔkpɔ si wu enu le {{count}} ŋkekewo me",
+      "disputedNow": "Ame bubuwo ʋlia nya le eŋu",
+      "disputedNowHint": "Wò kplɔa ame kple nutɔnyenye ŋuti nyaʋiʋli si le gaglãgbe tso hadɔwɔla bubu gbɔ",
+      "commissionEligible": "Dɔdzikpɔha si dze",
+      "commissionCancelled_one": "{{count}} te fli ɖe eme",
+      "commissionCancelled_other": "{{count}} te fli ɖe eme"
+    },
+    "chart": {
+      "title_one": "Ŋkɔ ŋɔŋlɔ kple agbalẽŋɔŋlɔ gbesiagbe - ŋkeke mamlɛtɔ {{count}}",
+      "title_other": "Ŋkɔ ŋɔŋlɔ kple agbalẽŋɔŋlɔ gbesiagbe - ŋkeke {{count}} mamlɛtɔ",
+      "registrations": "Ŋkɔŋlɔɖiwo",
+      "bookings": "Agbalẽŋɔŋlɔ"
+    },
+    "byStage": "Ekplɔa ame le ɖoƒe si wòle nu",
+    "bySource": "Kplɔa ame le dzɔtsoƒe nu",
+    "byReferral": "Ekplɔa ame to ameɖoɖo ƒe nɔnɔme dzi",
+    "myDisputes": "Nyaʋiʋli siwo nèfɔ ɖe te",
+    "noDisputes": "Nyaʋiʋli aɖeke mefɔ ɖe te o.",
+    "unknown": "Menye ɖe woɖoe o",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM si le egodo (si wowɔ abe ɖe wòle ene) .",
+      "PARTNER_CRM": "Wò ƒuƒoƒoae tsɔe kpee",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Ðekawɔwɔ ɖekae",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Takpɔkpɔ ƒe nuwuwu le {{count}} ŋkeke si kplɔe ɖo dzi",
+    "expiringTitle_other": "Takpɔkpɔ ƒe nuwuwu le ŋkeke {{count}} siwo gbɔna me",
+    "expiringEmpty": "Lifi aɖeke mebu eƒe ametakpɔkpɔ le fesre sia me o."
   }
 }

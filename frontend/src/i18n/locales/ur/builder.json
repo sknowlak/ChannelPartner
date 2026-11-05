@@ -30,7 +30,8 @@
       "registered": "رجسٹرڈ"
     },
     "booked": "بک کروایا",
-    "empty": "ابھی تک کوئی حوالہ نہیں ہے۔"
+    "empty": "ابھی تک کوئی حوالہ نہیں ہے۔",
+    "bookingCancelled": "بکنگ منسوخ کر دی گئی۔"
   },
   "detail": {
     "customer": "گاہک",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "بکنگ کی تصدیق ہوگئی۔",
       "accepted": "حوالہ قبول کر لیا گیا۔",
-      "rejected": "حوالہ مسترد کر دیا گیا۔"
+      "rejected": "حوالہ مسترد کر دیا گیا۔",
+      "bookingCancelled": "بکنگ منسوخ کر دی گئی۔"
     },
-    "backToReferrals": "حوالہ جات پر واپس جائیں۔"
+    "backToReferrals": "حوالہ جات پر واپس جائیں۔",
+    "bookingCancelled": "بکنگ منسوخ کر دی گئی۔",
+    "cancelBooking": "بکنگ منسوخ کریں۔",
+    "cancelReasonLabel": "منسوخ کرنے کی وجہ (پارٹنر کو دکھائی گئی) *",
+    "cancelBookingHint": "آپریشنل ملکیت پارٹنر کو واپس چلی جاتی ہے اور ان کی کمیشن کی اہلیت منسوخ ہو جاتی ہے۔ لیڈ کو بعد میں دوبارہ بک کیا جا سکتا ہے۔",
+    "cancelBookingConfirm": "بکنگ منسوخ کریں۔"
   },
   "history": {
     "title": "تاریخ",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "کمیشن کی اہلیت پیدا ہوئی۔",
       "HANDOVER_COMPLETED": "حوالگی مکمل",
       "ADMIN_PROTECTION_RELEASED": "ایڈمن نے ڈپلیکیٹ تحفظ جلد جاری کیا۔ وجہ: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "ایڈمن نے {{from}} سے {{to}} تک رجسٹریشن دوبارہ تفویض کی ہے۔ وجہ: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "ایڈمن نے {{from}} سے {{to}} تک رجسٹریشن دوبارہ تفویض کی ہے۔ وجہ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "دوسرے پارٹنر کی طرف سے نقل کی رجسٹریشن کی کوشش کو مسترد کر دیا گیا۔",
+      "BOOKING_CANCELLED": "بکنگ منسوخ کر دی گئی۔ وجہ: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "آپریشنل ملکیت پارٹنر کو واپس کر دی گئی۔",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "کمیشن کی اہلیت بکنگ کے ساتھ منسوخ کر دی گئی۔",
+      "COMMISSION_ELIGIBILITY_RESTORED": "نئی بکنگ کے لیے کمیشن کی اہلیت بحال ہو گئی۔"
     }
   }
 }

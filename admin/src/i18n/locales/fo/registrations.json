@@ -49,8 +49,73 @@
       "newPartnerId": "Nýtt samstarvsfelaga ID",
       "reason": "Orsøk (kravd)",
       "apply": "Søk yvirhála",
-      "applying": "Søkja..."
+      "applying": "Søkja...",
+      "cancelBookingHint": "Avlýsing merkir bíleggingina og provisjónina sum avlýsta, gevur rakstrarligan ognarrætt aftur til samstarvsfelagan, og letur byggiharran bíleggja hesa leiðsluna aftur.",
+      "cancelBookingConfirm": "Avlýsa hesa bíleggingina? Kommissiónin hjá henni er eisini avlýst. Hetta er skrásett við tínum navni og orsøk."
     },
-    "timelineTitle": "Grannskoðanartíðarlinja (henda skráseting)"
+    "timelineTitle": "Grannskoðanartíðarlinja (henda skráseting)",
+    "bookingStatus": "Bíleggingarstøða",
+    "commissionAttribution": "Kommissiónstilskriving",
+    "disputeOpen": "Eigaraósemja er opin á hesum kundanum - ein annar samstarvsfelagi sigur, at tað er teirra. Tað er avgjørt á síðuni Ósemjur.",
+    "viewDisputes": "Sí ósemjur",
+    "cancellation": {
+      "title": "Bílegging avlýst",
+      "hint": "Bíleggingin og provisiónin av henni eru avlýst; rakstrarligi ognarrætturin er aftur hjá samstarvsfelagnum og byggiharrin kann bíleggja hesa leiðsluna aftur.",
+      "at": "Avlýst klokkan 19.00.",
+      "by": "Avlýst av",
+      "reason": "Orsøk"
+    }
+  },
+  "disputes": {
+    "title": "Ognartrætur",
+    "hint": "Ein samstarvsfelagi, hvørs skráseting varð avvíst sum tvítøk, kann tvíhalda um, hvør eigur kundan. Gjøgnumganga báðar partar og tak støðu.",
+    "statusFilter": "Ósemjustøða",
+    "allStatuses": "Allar støður",
+    "empty": "Ongar ósemjur við hesi støðu.",
+    "columns": {
+      "dispute": "Stríð",
+      "customer": "Viðskiftafólk",
+      "project": "Verkætlan",
+      "raisedBy": "Uppvaksin av",
+      "heldBy": "Núverandi eigari",
+      "status": "Støða",
+      "raisedAt": "Uppvaksin á"
+    },
+    "detail": {
+      "title": "Ósemja {{id}}",
+      "raisedOn": "Hækkað {{date}}",
+      "raisingTitle": "Uppvaksin av",
+      "holderTitle": "Núverandi eigari",
+      "partner": "Maki",
+      "raisedBy": "Lagt inn av",
+      "customerName": "Viðskiftafólk",
+      "mobile": "Flytførur",
+      "alternateMobile": "Skiftandi fartelefon",
+      "email": "Teldupostur",
+      "project": "Verkætlan",
+      "reason": "Teirra orsøk",
+      "registration": "Tilmelding",
+      "registeredAt": "Skrásett á",
+      "referral": "Tilvísing",
+      "heldMissing": "Hildna skrásetingin var ikki at finna.",
+      "resolutionTitle": "Avgerð",
+      "outcome": "Úrslit",
+      "note": "Upprit",
+      "decidedBy": "Avgjørt av",
+      "decidedAt": "Avgjørt um",
+      "newRegistration": "Nýggj tilmelding",
+      "decideTitle": "Avgerð hesa ósemju",
+      "noteLabel": "Viðmerking, sum greiðir frá avgerðini (kravt)",
+      "noteRequired": "Skriva eitt notat fyri at taka støðu til.",
+      "uphold": "Haldið uppat",
+      "overturn": "Kollvelta",
+      "upholdEffect": "{{holder}} heldur kundan. Ósemjan er stongd og einki annað broytist.",
+      "overturnEffect": "Dupultverjan hjá {{holder}} endar nú og kundin er skrásettur fyri {{partner}} sum nýggj skráseting.",
+      "heldBookedHelp": "Hesin kundin er bílagdur gjøgnum núverandi eigara. Avlýs fyrst ta bíleggingina (Admin Override á tilmeldingini), og kollvelt síðani:",
+      "confirmTitle": "Ert tú vísur?",
+      "confirmUphold": "Ja, halt fast um",
+      "confirmOverturn": "Ja, kollvelta",
+      "back": "Aftur til ósemjur"
+    }
   }
 }

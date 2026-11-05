@@ -49,8 +49,73 @@
       "newPartnerId": "ID uflɛ",
       "reason": "Sa nga ti yɛ ɔ ti sɔ’n (ɔ fata kɛ)",
       "apply": "Appliquer le override",
-      "applying": "Be su di..."
+      "applying": "Be su di...",
+      "cancelBookingHint": "Kɛ be kanci like’n, ɔ kle kɛ be kacili like nga be fa sieli’n, ɔ nin junman nga be di’n, ɔ fa junman dilɛ’n i su mmla’n man sran ng’ɔ nin i be di junman’n, kpɛkun ɔ yaci sua kplanfuɛ’n i nun naan ɔ klɛ fluwa sɔ’n ekun.",
+      "cancelBookingConfirm": "?Amun kanngan lika sɔ’n nun? Be nunnun i junman’n wie. Be klɛ ndɛ sɔ’n su ɔ dunman’n nin like nga ti yɛ ɔ yo sɔ’n."
     },
-    "timelineTitle": "Audit blɛ’n (be klɛ be dunman’n)"
+    "timelineTitle": "Audit blɛ’n (be klɛ be dunman’n)",
+    "bookingStatus": "Statut de réservation",
+    "commissionAttribution": "Komisiɔn i like manlɛ",
+    "disputeOpen": "Be ti sran kun i like’n i su akplowa kasiɛnfuɛ sɔ’n su - i wiengu uflɛ se kɛ ɔ ti be liɛ. Be fa ajalɛ sɔ’n Disputes i bue’n su.",
+    "viewDisputes": "Nian ndɛnngan’m be su",
+    "cancellation": {
+      "title": "Be kpɛli lika’n i nun",
+      "hint": "Be kpɛ booking’n nin i su junman’n be nun; ɔ nin i wiengu’n be o lɛ ekun yɛ sran ng’ɔ kplan sua’n kwla book lead sɔ’n ekun.",
+      "at": "Be kpɛli i nun dɔ 10 su.",
+      "by": "Annulé par .",
+      "reason": "N'gatiɛ"
+    }
+  },
+  "disputes": {
+    "title": "Like’n i min’n i su akplowa",
+    "hint": "Sran ng’ɔ nin i be di junman’n, mɔ be kplinnin su kɛ ɔ klɛ i dunman’n kɛ ɔ ti i nɲɔn’n, ɔ kwla si akplowa kɛ sran ng’ɔ le like tofuɛ’n. Nian ndɛ akpasua nɲɔn sɔ’m be nun naan fa ajalɛ.",
+    "statusFilter": "Akplowa silɛ",
+    "allStatuses": "Status kwlaa",
+    "empty": "Be nin status sɔ’n be afiɛn ndɛnngan nunman lɛ.",
+    "columns": {
+      "dispute": "Utre",
+      "customer": "Like to fuɛ",
+      "project": "Nin'gue n'ga a won yo",
+      "raisedBy": "Be tali i .",
+      "heldBy": "Sran ng’ɔ le i dɔ nga su’n",
+      "status": "Wakasran",
+      "raisedAt": "Be tali i ."
+    },
+    "detail": {
+      "title": "Akplowa {{id}}",
+      "raisedOn": "Be yili {{date}}",
+      "raisingTitle": "Be tali i .",
+      "holderTitle": "Sran ng’ɔ le i dɔ nga su’n",
+      "partner": "Javuɛ",
+      "raisedBy": "Be nga be fa mannin’n, yɛle .",
+      "customerName": "Like to fuɛ",
+      "mobile": "N'ga nanti",
+      "alternateMobile": "Telefɔnu uflɛ",
+      "email": "Imeli",
+      "project": "Nin'gue n'ga a won yo",
+      "reason": "Be ndɛ’n .",
+      "registration": "Be dunman klɛlɛ",
+      "registeredAt": "Be klɛli be dunman .",
+      "referral": "Be fa sran kun kɔ lika uflɛ",
+      "heldMissing": "Be kwlá wunman fluwa nga be klɛli’n.",
+      "resolutionTitle": "Ajalɛ",
+      "outcome": "I vie wlɛ",
+      "note": "Klɛlɛ",
+      "decidedBy": "Be fali ajalɛ kɛ .",
+      "decidedAt": "Be fali ajalɛ kɛ .",
+      "newRegistration": "Be dunman klɛlɛ uflɛuflɛ",
+      "decideTitle": "Fa ndɛ sɔ’n i su ajalɛ .",
+      "noteLabel": "Note m’ɔ yiyi ajalɛ nga be fali’n nun’n (ɔ fata kɛ be yo sɔ)",
+      "noteRequired": "Klɛ ndɛ kun naan w’a fa ajalɛ.",
+      "uphold": "Suan",
+      "overturn": "Kaci",
+      "upholdEffect": "{{holder}} sie like tofuɛ’n. Akplowa’n w’a wie, like uflɛ w’a kaciman.",
+      "overturnEffect": "{{holder}} 's i nɲɔn su sasalɛ'n w'a wie siɛn'n yɛ be klɛ sran ng'ɔ to like'n i dunman {{partner}} su kɛ sran uflɛ sa.",
+      "heldBookedHelp": "Be fa klian sɔ’n i dunman’n be sin sran ng’ɔ le i dɔ nga su’n i lika. Dumua kan n'dɛ sɔ'n (Admin Override n'ga be klɛ be dunman'n su), kɔkun kaci:",
+      "confirmTitle": "?Amun lafi su kpa?",
+      "confirmUphold": "ɛɛ, jran .",
+      "confirmOverturn": "ɛɛ, kaci .",
+      "back": "Sɛ e sa e sin ndɛnngan’m be su’n"
+    }
   }
 }

@@ -30,7 +30,8 @@
       "registered": "Arregistratu"
     },
     "booked": "Riservatu",
-    "empty": "Nisun riferimentu ancora."
+    "empty": "Nisun riferimentu ancora.",
+    "bookingCancelled": "Riservazione annullata"
   },
   "detail": {
     "customer": "Cliente",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Riservazione cunfirmata.",
       "accepted": "Riferimentu accettatu.",
-      "rejected": "Riferimentu rifiutatu."
+      "rejected": "Riferimentu rifiutatu.",
+      "bookingCancelled": "Riservazione annullata."
     },
-    "backToReferrals": "Torna à Riferimenti"
+    "backToReferrals": "Torna à Riferimenti",
+    "bookingCancelled": "Riservazione annullata",
+    "cancelBooking": "Cancella a prenotazione",
+    "cancelReasonLabel": "Motivo di annullamentu (mostratu à u cumpagnu) *",
+    "cancelBookingHint": "A pruprietà operativa torna à u cumpagnu è a so eligibilità di cumissioni hè annullata. U piombu pò esse riservatu novu dopu.",
+    "cancelBookingConfirm": "Cancella a riservazione"
   },
   "history": {
     "title": "Storia",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Ammissibilità di a Cummissione creata",
       "HANDOVER_COMPLETED": "Trasferimentu finitu",
       "ADMIN_PROTECTION_RELEASED": "L'amministratore hà liberatu a prutezzione duplicata prima. Motivu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "L'amministratore hà riassignatu a registrazione da {{from}} à {{to}} . Motivu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "L'amministratore hà riassignatu a registrazione da {{from}} à {{to}} . Motivu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Un tentativu di registrazione duplicata da un altru cumpagnu hè statu rifiutatu",
+      "BOOKING_CANCELLED": "Riservazione annullata. Motivu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "A pruprietà operativa hè tornata à u cumpagnu",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ammissibilità di a Cummissione annullata cù a prenotazione",
+      "COMMISSION_ELIGIBILITY_RESTORED": "L'elegibilità di a Cummissione hè stata restaurata per a nova riservazione"
     }
   }
 }

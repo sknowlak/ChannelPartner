@@ -43,7 +43,9 @@
       "name": "Nume",
       "city": "Oraş",
       "status": "Stare",
-      "actions": "Acțiuni"
+      "actions": "Acțiuni",
+      "protection": "Protecție în duplicat",
+      "matchOn": "Duplicatele se potrivesc"
     },
     "closeReferrals": "Închideți pentru recomandări",
     "reopen": "Redeschide",
@@ -55,6 +57,27 @@
       "add": "Adăugați proiect",
       "created": "Creat {{name}} ."
     },
-    "back": "Înapoi la constructori"
+    "back": "Înapoi la constructori",
+    "protection": {
+      "days_one": "{{count}} zi",
+      "days_few": "{{count}} zile",
+      "days_other": "{{count}} zile",
+      "globalDays_one": "Implicit global ( {{count}} zi)",
+      "globalDays_few": "Implicit global ( {{count}} zile)",
+      "globalDays_other": "Implicit global ( {{count}} zile)",
+      "globalDefault": "Implicit global",
+      "placeholder": "Zile de protecție (gol = implicit global)",
+      "saved": "Protecția duplicat actualizată pentru {{name}} .",
+      "hint": "Duplicare de protecție: 1-3650 de zile sau lăsați necompletat pentru a utiliza valoarea implicită globală din Setări. O modificare se aplică numai înregistrărilor noi - cele existente își păstrează expirarea."
+    },
+    "matching": {
+      "global": "Implicit global",
+      "globalWith": "Implicit global ( {{fields}} )",
+      "mobile": "Număr de telefon mobil",
+      "email": "E-mail",
+      "both": "Numar de mobil + email",
+      "saved": "Potrivirea duplicat actualizată pentru {{name}}",
+      "hint": "Care detalii fac din două înregistrări același client pentru un proiect. Modificările se aplică verificărilor duplicate de acum înainte; protecția existentă nu este afectată."
+    }
   }
 }

@@ -30,7 +30,8 @@
       "registered": "Ukulembeshiwa"
     },
     "booked": "Icalembelwe",
-    "empty": "Tapali abatumwa nomba."
+    "empty": "Tapali abatumwa nomba.",
+    "bookingCancelled": "Ukupekanya kwakanshiwa"
   },
   "detail": {
     "customer": "Kashita",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Ukubuka kwashininkishiwa.",
       "accepted": "Ukutuma kwasuminishiwa.",
-      "rejected": "Ukutuma kwakanishiwa."
+      "rejected": "Ukutuma kwakanishiwa.",
+      "bookingCancelled": "Ukubuka kwakanshiwa."
     },
-    "backToReferrals": "Ukubwelela ku fyakutuma"
+    "backToReferrals": "Ukubwelela ku fyakutuma",
+    "bookingCancelled": "Ukupekanya kwakanshiwa",
+    "cancelBooking": "Ukukansha ukupekanya",
+    "cancelReasonLabel": "Icilengele ukukansha (icalangishiwa ku munankwe) *",
+    "cancelBookingHint": "Ubuteko bwakubomfya bulabwelela kuli uo balebomba nankwe kabili ukulingana kwabo ukwa komishini kulafumiishiwapo. Ukutungulula kuti kwalembeshiwa na kabili pa numa.",
+    "cancelBookingConfirm": "Ukukansha ukupekanya"
   },
   "history": {
     "title": "Ilyashi lyakale",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Ukulinga kwa Komishini kwapangwa",
       "HANDOVER_COMPLETED": "Ukupeela kwapwishiwa",
       "ADMIN_PROTECTION_RELEASED": "Admin alifumishe ubucingililo bwapalana bwangu. Umulandu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Katungulula alibwekeshepo ukulembesha ukufuma kuli {{from}} ukufika kuli {{to}} . Umulandu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Katungulula alibwekeshepo ukulembesha ukufuma kuli {{from}} ukufika kuli {{to}} . Umulandu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ukwesha kwa kwilembesha ukwabwekeshiwapo ukwa mubomfi umbi kwakanishiwe",
+      "BOOKING_CANCELLED": "Ukupekanya kwakanshiwa. Umulandu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ubunini bwa mibombele bwabweshiwa kuli uo balebomba nankwe",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ukulinga kwa komishoni kwafumiishiwapo pamo no kupekanya",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ukulinga kwa komishini kwabweshiwa ku kupekanya ukupya"
     }
   }
 }

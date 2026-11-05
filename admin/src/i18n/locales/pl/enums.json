@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Odpowiedni",
-    "PENDING": "Aż do"
+    "PENDING": "Aż do",
+    "CANCELLED": "Odwołany"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Wcześnie zwolnij ochronę przed duplikatami",
-    "REASSIGN_PARTNER": "Przypisz ponownie innemu partnerowi"
+    "REASSIGN_PARTNER": "Przypisz ponownie innemu partnerowi",
+    "CANCEL_BOOKING": "Anuluj rezerwację"
   },
   "dataType": {
     "TEXT": "Tekst",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Superadministrator",
     "ADMIN": "Administrator"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Potwierdzony",
+    "CANCELLED": "Odwołany"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Przypisane",
+    "DISPUTED": "Sporne"
+  },
+  "disputeStatus": {
+    "OPEN": "Otwarte",
+    "UPHELD": "Podtrzymany",
+    "OVERTURNED": "Wywrócony",
+    "WITHDRAWN": "Zamknięty w sobie"
   }
 }

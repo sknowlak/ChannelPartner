@@ -49,8 +49,73 @@
       "newPartnerId": "Nutaaq piliriqatigiiktunut ID",
       "reason": "Pijjutinga (pijariaqaqtuq)",
       "apply": "Tuksirautiliurniq qaangiutiluni",
-      "applying": "Tuksirautiliurniq..."
+      "applying": "Tuksirautiliurniq...",
+      "cancelBookingHint": "Nuqqaqtitauninga nalunaiqsivuq iniksaliuqtausimajumik amma kamisananga nuqqaqtitausimalirninganik, utiqtittilluni aulattinirmut nangminiqarniujumik piliriqatinganut, amma sanajiujuq iniksaliukkanniqullugu taassuminga tukimuaktittijimik.",
+      "cancelBookingConfirm": "Nuqqaqtitauviuk taanna iniksaliuqtausimajuq? Kamisananga nuqqaqtitaummijuq. Taanna titiraqtausimajuq atirnut pijjutinullu."
     },
-    "timelineTitle": "Tammaqsimajuqsiurniq qangakkuurninga (una atiliuqtauniq)"
+    "timelineTitle": "Tammaqsimajuqsiurniq qangakkuurninga (una atiliuqtauniq)",
+    "bookingStatus": "Iniksaliurniq qanuilingalirmangaat",
+    "commissionAttribution": "Kamisana tunijauninga",
+    "disputeOpen": "Nangminiqarniujumut akaunngiliurutaujuq matuingajuq taassumunga niuviqpaktumut - asia piliriqatigijanga uqaqtuq nangminiriniraqtuniuk. Isumaliurutauvappuq angiqatigiinnginniujunit mappiqtugarmit.",
+    "viewDisputes": "Takunnarlugit angiqatigiigutaunngittut",
+    "cancellation": {
+      "title": "Iniksaliurniq nuqqaqtitauvuq",
+      "hint": "Iniksaliuqtauninga ammalu kamisananga nuqqaqtitauvut; Aulattinirmut nangminiqarniq utiqsimaliqpuq piliriqatinganut amma sanajiujuq titirakkannirunnaqpuq taassuminga sivuliqtiunirmik.",
+      "at": "Nuqqaqtitaujuq uvani",
+      "by": "Nuqqaqtitaujuq ukununga",
+      "reason": "Pijjuti"
+    }
+  },
+  "disputes": {
+    "title": "Nangminiqarnirmut akaunngiliurutit",
+    "hint": "Katujjiqatigijaujuq atiliuqtausimaninga aaggaaqtaulauqtuq ajjigilluniuk aivautiqarunnaqtuq kinamut nangminirijaungmangaat niuviqpaktuq. Qimirrulugit tamakkiik isumaliurlutillu.",
+    "statusFilter": "Akaunngiliurutiup qanuilinganinga",
+    "allStatuses": "Tamarmik qanuilinganingit",
+    "empty": "Akaunngiliurutitaqanngilaq taassumunga qanuilinganiujumut.",
+    "columns": {
+      "dispute": "Angiqatigiinnginniq",
+      "customer": "Akiliqsuijuq",
+      "project": "Piliriaq",
+      "raisedBy": "Saqqitausimajuq ukununga",
+      "heldBy": "Maanna nangminiqaqtiujuq",
+      "status": "Qanuilinganinga",
+      "raisedAt": "Saqqitaulauqtuq uvani"
+    },
+    "detail": {
+      "title": "Akaunngiliuruti {{id}}",
+      "raisedOn": "Saqqitausimajuq {{date}}",
+      "raisingTitle": "Saqqitausimajuq ukununga",
+      "holderTitle": "Maanna nangminiqaqtiujuq",
+      "partner": "Aippaq",
+      "raisedBy": "Tunijaujuq ukununga",
+      "customerName": "Akiliqsuijuq",
+      "mobile": "Uqaalautiralaaq",
+      "alternateMobile": "Asiaguungajuq nuktauti",
+      "email": "Irngiinnaaqtaut",
+      "project": "Piliriaq",
+      "reason": "Pijjutigijangat",
+      "registration": "Atiliuqtauniq",
+      "registeredAt": "Atiliuqtausimajuq uvani",
+      "referral": "Tuniuqqaqtauniq",
+      "heldMissing": "Tigumiaqtausimajuq atiliuqtausimaninga nanijaujunnalaunngilaq.",
+      "resolutionTitle": "Isumaksaqsiurniq",
+      "outcome": "Qanuilinganinga",
+      "note": "Ujjirijarialik",
+      "decidedBy": "Isumaliurutaujuq ukununga",
+      "decidedAt": "Isumaliurutaujuq ukununga",
+      "newRegistration": "Nutaaq atiliuqtaujuq",
+      "decideTitle": "Isumaliurlugu taanna akaunngiliurutaujuq",
+      "noteLabel": "Titiraqsimajuq nalunaijaijuq isumaliurutausimajumik (pijariaqaqtuq)",
+      "noteRequired": "Titirarlutit titiraqsimajumik isumaliurutiginiaqtarnik.",
+      "uphold": "Makimatittiniq",
+      "overturn": "Kataktitauninga",
+      "upholdEffect": "{{holder}} niuviqtimik tigumiaqtuq. Akaunngiliurutaujuq matujausimaliqtuq ammalu asianik asijjiqtuqarunniiqtuni.",
+      "overturnEffect": "{{holder}} 's marruaqtiqsimajuq sapummijaujjutinga isulippuq maanna ammalu niuviqti atiliuqtausimaliqtuq {{partner}} nutaangulluni atiliuqtausimalluni.",
+      "heldBookedHelp": "Taanna niuviqtiujuq aaqqiktausimajuq maannaujuq nangminiqaqtiujukkut. Nuqqaqtitauqqaarlugu iniksaliuqtausimajuq (aulattiji qaangiutijuq atiliuqtausimaninganut), taimali nuqqaqtillugu:",
+      "confirmTitle": "Suliviit?",
+      "confirmUphold": "Ii, kajusititauluni",
+      "confirmOverturn": "Ii, kataktitauluni",
+      "back": "Utirluta angiqatigiinnginniujunut"
+    }
   }
 }

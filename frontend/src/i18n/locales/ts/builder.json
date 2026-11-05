@@ -30,7 +30,8 @@
       "registered": "Ku tsarisiwile"
     },
     "booked": "Ku bukuteriwile",
-    "empty": "Ku hava ti referrals ku fikela sweswi."
+    "empty": "Ku hava ti referrals ku fikela sweswi.",
+    "bookingCancelled": "Ku bukuta ku khanseliwile"
   },
   "detail": {
     "customer": "Khasimende",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Ku bukuta ku tiyisisiwile.",
       "accepted": "Ku rhumeriwa ku amukeriwile.",
-      "rejected": "Ku rhumeriwa ku ariwile."
+      "rejected": "Ku rhumeriwa ku ariwile.",
+      "bookingCancelled": "Ku bukuta ku khanseliwile."
     },
-    "backToReferrals": "Ku Vuyela eka Swirhumeriwa"
+    "backToReferrals": "Ku Vuyela eka Swirhumeriwa",
+    "bookingCancelled": "Ku bukuta ku khanseliwile",
+    "cancelBooking": "Khansela Ku Bukula",
+    "cancelReasonLabel": "Xivangelo xo khansela (xi kombisiwile eka mutirhisani) * .",
+    "cancelBookingHint": "Vun’wini bya ntirho byi tlhelela eka mutirhisani naswona ku faneleka ka vona ka khomixini ku khanseriwa. Ku rhangela ku nga tlhela ku bukuteriwa endzhaku.",
+    "cancelBookingConfirm": "Khansela ku bukuta"
   },
   "history": {
     "title": "Matimu",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Ku faneleka ka khomixini ku tumbuluxiwile",
       "HANDOVER_COMPLETED": "Ku nyiketiwa ka swilo ku hetisiwile",
       "ADMIN_PROTECTION_RELEASED": "Admin u humesile nsirhelelo wa ti duplicate ka ha ri na nkarhi. Xivangelo: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin u avele nakambe ku tsarisa ku suka eka {{from}} ku ya eka {{to}} . Xivangelo: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin u avele nakambe ku tsarisa ku suka eka {{from}} ku ya eka {{to}} . Xivangelo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ku ringeta ku tsarisa ku phindha-phindha hi mutirhisani un’wana ku ariwile",
+      "BOOKING_CANCELLED": "Ku bukuta ku khanseliwile. Xivangelo: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Vun’wini bya ntirho byi tlhelele eka mutirhisani",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ku faneleka ka khomixini ku khanseliwile na ku bukuta",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ku faneleka ka khomixini ku vuyisiwile eka ku bukuta lokuntshwa"
     }
   }
 }

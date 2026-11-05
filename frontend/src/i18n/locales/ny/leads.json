@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Yasungitsidwa",
-    "pending": "Ikuyembekezera"
+    "pending": "Ikuyembekezera",
+    "status": {
+      "CONFIRMED": "Yasungitsidwa",
+      "CANCELLED": "Kusungitsa kwathetsedwa"
+    }
   },
   "assign": {
     "unassigned": "Zosaperekedwa",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Palibe pulojekiti pano (yosatchulidwa)",
-    "notInList": "{{project}} (osati pamndandanda wantchito)"
+    "notInList": "{{project}} (osati pamndandanda wantchito)",
+    "protectionDays_one": "{{count}} -chitetezo cha tsiku",
+    "protectionDays_other": "{{count}} -chitetezo cha tsiku"
   },
   "journey": {
     "customer": "Makasitomala",
@@ -76,7 +82,14 @@
     "progressHistory": "Mbiri Yakale",
     "timesIn": "(nthawi mu {{timezone}} )",
     "backToMyLeads": "Bwererani ku Zotsogolera Zanga",
-    "editLead": "Sinthani Kutsogolera"
+    "editLead": "Sinthani Kutsogolera",
+    "disputeBanner": "Mnzake wina watsutsana ndi umwini wa kasitomalayu. Woyang'anira a Leadrat akuwunikanso - chitetezo chanu chimakhalabe mpaka atasankha.",
+    "booking": "Kusungitsa",
+    "commission": "Commission",
+    "notBooked": "Sanasungidwe",
+    "cancelledOn": "Analephereka pa {{date}} .",
+    "cancelReason": "Chifukwa: {{reason}}",
+    "cancelledHint": "Wopanga waletsa kusungitsa - umwini wabwerera ndi inu ndipo kuyeneretsedwa kwantchito kwathetsedwa. Imabwezeretsedwa ngati chitsogozo chasungidwanso."
   },
   "referral": {
     "NOT_REFERRED": "Sanatchulidwe (palibe projekiti)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Omanga adavomera kutumizidwa",
       "REFERRAL_REJECTED": "Womanga wakana kutumiza. Chifukwa: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin adatulutsa chitetezo chobwereza msanga. Chifukwa: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Woyang'anira adagawiranso kulembetsa kuchokera ku {{from}} kupita ku {{to}} . Chifukwa: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Woyang'anira adagawiranso kulembetsa kuchokera ku {{from}} kupita ku {{to}} . Chifukwa: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Kuyesa kobwereza kwa mnzako wina kunakanidwa",
+      "BOOKING_CANCELLED": "Kusungitsa kwathetsedwa. Chifukwa: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Eni ake ogwirira ntchito adabwerera kwa mnzako",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kuyenerera kwa Commission kwathetsedwa ndi kusungitsa",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kuyenerera kwa Commission kwabwezeredwa pakusungitsa kwatsopano",
+      "OWNERSHIP_DISPUTE_RAISED": "Mnzake wina adatsutsana ndi umwini wa kasitomala uyu - woyang'anira Leadrat aziwunikanso",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Mkangano wa umwini pa kasitomalayu wachotsedwa - umwini wanu sunasinthe",
+      "OWNERSHIP_DISPUTE_UPHELD": "Mkangano wa umwini pa kasitomalayu udawunikiridwa - umwini wanu watsimikizika",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Adalembetsedwa pambuyo poti mkangano wa umwini waganiziridwa mokomera inu. Chidziwitso: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Chitetezo chatha: mkangano wa umwini unaganiziridwa mokomera mnzake wina. Chidziwitso: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Nambala yafoni iyi siyovomerezeka ku {{country}} .",
     "COUNTRY_MISMATCH": "Chonde sankhani khodi yolondola ya dziko.",
     "NOT_MOBILE": "Chonde lowetsani nambala yam'manja, osati yanyumba."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Oyenerera Commission",
+      "PENDING": "Commission ikudikirira",
+      "CANCELLED": "Commission yathetsedwa"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Zachokera kwa inu",
+      "DISPUTED": "Kugawikana kwatsutsidwa"
+    }
+  },
+  "result": {
+    "none": "Palibe zotsatira zolembetsa zomwe zikuwonetsedwa. Lembani otsogolera poyamba.",
+    "acceptedTitle": "Mtsogoleri adalembetsedwa",
+    "rejectedTitle": "Kutsogolera sikunalembetsedwe",
+    "protectionWindow": "Chitetezo Chiwindi",
+    "protectedUntil": "Kutetezedwa Mpaka",
+    "openLead": "Tsegulani Kutsogolera",
+    "addAnother": "Onjezani Chitsogozo China",
+    "duplicate": "Zobwerezedwa - zotetezedwa kale",
+    "duplicateHint": "Makasitomalayu ndi otetezedwa kale pulojekitiyi polembetsanso wina, kotero siyingalembetsedwe kwa inu.",
+    "existingProtectedUntil": "Kulembetsa komwe kulipo kotetezedwa mpaka"
+  },
+  "disputes": {
+    "title": "Mikangano yanga",
+    "intro": "Mikangano ya umwini yomwe mudakweza kwa makasitomala omwe adakanidwa ngati obwereza. Woyang'anira a Leadrat amawunika chilichonse.",
+    "empty": "Simunadzutse makani. Ngati kasitomala amene mwabweretsa akakanidwa ngati chibwereza, mutha kutsutsa kuchokera pazotsatira zolembetsa.",
+    "columns": {
+      "dispute": "Mkangano",
+      "reason": "Chifukwa chanu",
+      "outcome": "Zotsatira"
+    },
+    "status": {
+      "OPEN": "Kuwunikiridwa",
+      "UPHELD": "Osati mokomera inu",
+      "OVERTURNED": "Ndinaganiza mokomera inu",
+      "WITHDRAWN": "Wachotsedwa"
+    },
+    "awaitingReview": "Tikudikirira kuunikanso kwa admin",
+    "openNewLead": "Tsegulani kutsogolera kwanu {{id}}",
+    "withdraw": "Chotsani",
+    "withdrawConfirm": "Chotsani mkangano wanu pa {{name}} ? Eni ake apano akhalabe momwe alili.",
+    "raise": "Mkangano umwini",
+    "raiseTitle": "Mkangano umwini",
+    "raiseHint": "Ngati kasitomalayu adabwera kwa inu poyamba, fotokozani chifukwa chake. Woyang'anira a Leadrat aziwunikanso; ngati asankha m'malo mwanu, otsogolera adalembetsedwa kwa inu.",
+    "reasonLabel": "Chifukwa chiyani kasitomalayu ndi wanu?",
+    "reasonMin_one": "Pafupifupi zilembo {{count}} .",
+    "reasonMin_other": "zilembo zosachepera {{count}} .",
+    "submit": "Tumizani Mkangano",
+    "notProtected": "Palibenso amene ali ndi chitetezo kwa kasitomala uyu pulojekitiyi - mutha kulembetsa otsogolera pano.",
+    "raised": "Mkangano {{id}} watumizidwa kuti awunikenso.",
+    "viewAll": "Onani mikangano yanga"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Nthawi",
+    "lastDays_one": "{{count}} tsiku",
+    "lastDays_other": "{{count}} masiku",
+    "emptyTitle": "Takulandirani! Mulibe otsogolera panobe.",
+    "emptyHint": "Lembetsani kutsogola kwanu koyamba - nthawi yanu yoyambira, kusungitsa malo ndi masiku omaliza achitetezo awonekera apa.",
+    "tiles": {
+      "leads": "Zotsogolera zonse",
+      "newInPeriod_one": "{{count}} zatsopano mu nthawi ino",
+      "newInPeriod_other": "{{count}} zatsopano mu nthawi ino",
+      "accepted": "Adalandiridwa",
+      "booked": "Yasungitsidwa",
+      "bookedInPeriod_one": "{{count}} adasungitsa nthawiyi",
+      "bookedInPeriod_other": "{{count}} adasungitsa nthawiyi",
+      "conversion": "Kutembenuka",
+      "conversionHint": "Zotsogola zosungitsidwa ngati gawo la otsogolera ovomerezeka",
+      "protectedNow": "Kutetezedwa tsopano",
+      "expiringSoon_one": "Chitetezo chidzatha pakadutsa tsiku {{count}}",
+      "expiringSoon_other": "Chitetezo chidzatha m'masiku {{count}}",
+      "disputedNow": "Kutsutsana ndi ena",
+      "disputedNowHint": "Amatsogolera ndi mikangano yotseguka ya umwini kuchokera kwa okondedwa wina",
+      "commissionEligible": "Oyenerera Commission",
+      "commissionCancelled_one": "{{count}} yalephereka",
+      "commissionCancelled_other": "{{count}} yalephereka"
+    },
+    "chart": {
+      "title_one": "Kulembetsa ndi kusungitsa pa tsiku - tsiku {{count}} lomaliza",
+      "title_other": "Kulembetsa ndi kusungitsa pa tsiku - masiku {{count}} otsiriza",
+      "registrations": "Kulembetsa",
+      "bookings": "Zosungitsa"
+    },
+    "byStage": "Amatsogolera ndi udindo",
+    "bySource": "Amatsogolera ndi gwero",
+    "byReferral": "Imatsogola potumiziridwa",
+    "myDisputes": "Mikangano yomwe mwadzutsa",
+    "noDisputes": "Palibe mikangano yomwe idadzutsidwa.",
+    "unknown": "Osayikidwa",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM Yakunja (yoyerekeza)",
+      "PARTNER_CRM": "Zowonjezedwa ndi gulu lanu",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Kuphatikiza",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Chitetezo chidzatha mu tsiku {{count}} lotsatira",
+    "expiringTitle_other": "Chitetezo chidzatha m'masiku {{count}} otsatirawa",
+    "expiringEmpty": "Palibe lead yomwe imataya chitetezo chake pawindo ili."
   }
 }

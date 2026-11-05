@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Inastahiki",
-    "PENDING": "Inasubiri"
+    "PENDING": "Inasubiri",
+    "CANCELLED": "Imeghairiwa"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Toa ulinzi unaorudiwa mapema",
-    "REASSIGN_PARTNER": "Mkabidhi mshirika mwingine"
+    "REASSIGN_PARTNER": "Mkabidhi mshirika mwingine",
+    "CANCEL_BOOKING": "Ghairi kuhifadhi"
   },
   "dataType": {
     "TEXT": "Maandishi",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Msimamizi Mkuu",
     "ADMIN": "Msimamizi"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Imethibitishwa",
+    "CANCELLED": "Imeghairiwa"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Imehusishwa",
+    "DISPUTED": "Iliyobishaniwa"
+  },
+  "disputeStatus": {
+    "OPEN": "Fungua",
+    "UPHELD": "Imezingatiwa",
+    "OVERTURNED": "Imepinduliwa",
+    "WITHDRAWN": "Imetolewa"
   }
 }

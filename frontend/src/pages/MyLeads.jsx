@@ -228,9 +228,14 @@ function buildColumns(fieldDefs, partnerTimezone, currency, users, canAssign, on
       key: 'booked',
       label: t('leads:columns.booked'),
       sortValue: (r) => (r.isBooked ? 1 : 0),
-      render: (r) => <span className={`badge ${r.isBooked ? 'accepted' : 'pending'}`}>{r.isBooked ? t('leads:booking.booked') : t('leads:booking.pending')}</span>,
-      title: (r) => (r.isBooked ? t('leads:booking.booked') : t('leads:booking.pending')),
-      text: (r) => (r.isBooked ? 'Yes' : 'No')
+      // A cancelled booking (section 62) is shown as such, not as "Pending".
+      render: (r) => {
+        const cancelled = !r.isBooked && r.bookingStatus === 'CANCELLED';
+        const label = r.isBooked ? t('leads:booking.booked') : cancelled ? t('leads:booking.status.CANCELLED') : t('leads:booking.pending');
+        return <span className={`badge ${r.isBooked ? 'accepted' : cancelled ? 'rejected' : 'pending'}`}>{label}</span>;
+      },
+      title: (r) => (r.isBooked ? t('leads:booking.booked') : r.bookingStatus === 'CANCELLED' ? t('leads:booking.status.CANCELLED') : t('leads:booking.pending')),
+      text: (r) => (r.isBooked ? 'Yes' : r.bookingStatus === 'CANCELLED' ? 'Cancelled' : 'No')
     },
     {
       key: 'protection',

@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Gin-book",
-    "pending": "Naghuhulat"
+    "pending": "Naghuhulat",
+    "status": {
+      "CONFIRMED": "Gin-book",
+      "CANCELLED": "Kanselado an pag-book"
+    }
   },
   "assign": {
     "unassigned": "Waray igtoka",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Waray pa proyekto (waray gintutudlok)",
-    "notInList": "{{project}} (waray ha talaan han proyekto)"
+    "notInList": "{{project}} (waray ha talaan han proyekto)",
+    "protectionDays_one": "{{count}} -adlaw nga panalipod",
+    "protectionDays_other": "{{count}} -adlaw nga panalipod"
   },
   "journey": {
     "customer": "Kustomer",
@@ -76,7 +82,14 @@
     "progressHistory": "Kasaysayan han Pag-uswag",
     "timesIn": "(mga oras ha {{timezone}} )",
     "backToMyLeads": "Balik ha Akon mga Lead .",
-    "editLead": "Igliwat an Tingga"
+    "editLead": "Igliwat an Tingga",
+    "disputeBanner": "Usa pa nga kapadis an nag-aragway han pagtag-iya hini nga kustomer. Usa nga admin Leadrat an nagrerepaso hini - an imo panalipod in nagpapabilin ha lugar tubtob nga magdesisyon hira.",
+    "booking": "Pag-book",
+    "commission": "Komisyon",
+    "notBooked": "Waray pa ma-book",
+    "cancelledOn": "Ginkansela han {{date}} .",
+    "cancelReason": "Rason: {{reason}}",
+    "cancelledHint": "Ginkansela han magtutukod an pag-book - an pagtag-iya han operasyon in bumalik na ha imo ngan an pagkakwalipikado ha komisyon in kanselado. Ginbabalik ini kun gin-book utro an lead."
   },
   "referral": {
     "NOT_REFERRED": "Waray gintudlok (waray proyekto)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Ginkarawat han magturukod an pagrefer .",
       "REFERRAL_REJECTED": "Ginsalikway han magturukod an pagrefer. Rason: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin nagpagawas hin doble nga panalipod hin temprano. Rason: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Gin-utro han Admin an pagrehistro tikang ha {{from}} ngadto ha {{to}} . Rason: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Gin-utro han Admin an pagrehistro tikang ha {{from}} ngadto ha {{to}} . Rason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ginsalikway an doble nga pagsari ha pagparehistro han iba nga kapadis .",
+      "BOOKING_CANCELLED": "Kanselado an pag-book. Rason: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "An pagtag-iya han operasyon iginbalik ha kasugbong .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kanselado an kwalipikado ha komisyon upod han pag-book .",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Iginbalik an kwalipikado ha komisyon para han bag-o nga pag-book .",
+      "OWNERSHIP_DISPUTE_RAISED": "Usa pa nga kapadis an nag-aragway han pagtag-iya hini nga kustomer - usa nga admin Leadrat an magrerepaso hini .",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Ginbawi an away han pagtag-iya hini nga kustomer - waray pagbag-o an imo pagtag-iya .",
+      "OWNERSHIP_DISPUTE_UPHELD": "Ginrepaso an away ha pagtag-iya hini nga kustomer - ginkumpirma an imo pagtag-iya .",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Ginrehistro kahuman nga madesisyonan an iyo away ha pagtag-iya nga pabor ha iyo. Tigamni: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Natapos an panalipod: usa nga araway ha pagtag-iya an gindesisyonan pabor ha iba nga kapadis. Tigamni: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Ini nga numero han telepono diri balido para han {{country}} .",
     "COUNTRY_MISMATCH": "Alayon pagpili han tama nga kodigo han nasod.",
     "NOT_MOBILE": "Alayon pagsulod hin mobile number, diri landline."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Kwalipikado nga komisyon",
+      "PENDING": "Komisyon nga ginhuhulat",
+      "CANCELLED": "Ginkansela an Komisyon"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Ginpapahinungod ha imo .",
+      "DISPUTED": "Ginlantugian an pag-atribwir"
+    }
+  },
+  "result": {
+    "none": "Waray resulta han panrehistro nga igpapakita. Pagrehistro anay hin lead.",
+    "acceptedTitle": "Tingga nga narehistro",
+    "rejectedTitle": "Waray pa rehistrado an tingga",
+    "protectionWindow": "Bintana han Panalipod",
+    "protectedUntil": "Ginpanalipdan Tubtob 2019.",
+    "openLead": "Abrihi nga Tingga",
+    "addAnother": "Dugangi hin Usa pa nga Tingga",
+    "duplicate": "Doble - napanalipdan na .",
+    "duplicateHint": "Ini nga suki in protektado na para hini nga proyekto pinaagi hin iba nga pagrehistro, salit waray ini maiparehistro para ha imo.",
+    "existingProtectedUntil": "An naeksister nga rehistro ginproproteksyonan tubtob 2020."
+  },
+  "disputes": {
+    "title": "An Akon mga Pag-aragway",
+    "intro": "Mga araway ha pagtag-iya nga imo iginbangon para ha mga kustomer nga ginbalibaran sugad nga mga duplikado. Usa nga admin Leadrat an nagrerepaso han kada usa.",
+    "empty": "Waray ka magbangon hin bisan ano nga mga araway. Kun an usa nga kustomer nga imo gindara in gindudumiri komo duplikado, pwede mo ini ig-away tikang han resulta han pagrehistro.",
+    "columns": {
+      "dispute": "Away",
+      "reason": "An imo rason .",
+      "outcome": "Resulta"
+    },
+    "status": {
+      "OPEN": "Ginrerepaso",
+      "UPHELD": "Diri ha imo pabor .",
+      "OVERTURNED": "Nagdesisyon ha imo pabor .",
+      "WITHDRAWN": "Ginbawi"
+    },
+    "awaitingReview": "Naghuhulat han pagrepaso han admin",
+    "openNewLead": "Abrihi an imo panguna {{id}}",
+    "withdraw": "Pagbaya",
+    "withdrawConfirm": "Bawia an imo pag-aragway para han {{name}} ? An yana nga pagtatag-iya in nagpapabilin sugad han iya kahimtang.",
+    "raise": "Pag-aragway han pagtag-iya .",
+    "raiseTitle": "Pag-aragway han pagtag-iya .",
+    "raiseHint": "Kon ini nga suki una nga kinadto ha imo, isaysay kon kay ano. Usa nga admin Leadrat an magrereview hini; kon magdesisyon hira pabor ha imo, an lead iginrehistro para ha imo.",
+    "reasonLabel": "Kay ano nga imo ini nga suki?",
+    "reasonMin_one": "Ha pinakaminos {{count}} nga kinaiya.",
+    "reasonMin_other": "Porlomenos {{count}} nga mga karakter.",
+    "submit": "Ipadara an Pag-aragway",
+    "notProtected": "Waray na nagkakapot hin proteksyon hini nga kustomer para hini nga proyekto - pwede ka na magrehistro han lead yana.",
+    "raised": "Pag-aragway {{id}} iginpadara para han pagrepaso.",
+    "viewAll": "Kitaa an akon mga araway ."
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Panahon",
+    "lastDays_one": "{{count}} adlaw",
+    "lastDays_other": "{{count}} mga adlaw",
+    "emptyTitle": "Maupay nga pag abot! Waray pa kamo mga lead.",
+    "emptyHint": "Magparehistro han imo syahan nga lead - an imo tubo, mga pag-book ngan mga petsa han pagpanalipod in makikita dinhi.",
+    "tiles": {
+      "leads": "Kabug-usan nga mga nangunguna",
+      "newInPeriod_one": "{{count}} bag-o hini nga panahon",
+      "newInPeriod_other": "{{count}} bag-o hini nga panahon",
+      "accepted": "Ginkarawat",
+      "booked": "Gin-book",
+      "bookedInPeriod_one": "{{count}} gin-book hini nga panahon",
+      "bookedInPeriod_other": "{{count}} gin-book hini nga panahon",
+      "conversion": "Pagkabig",
+      "conversionHint": "Gin-book nga mga lead komo bahin han ginkarawat nga mga lead .",
+      "protectedNow": "Ginpanalipdan yana .",
+      "expiringSoon_one": "Panalipod nga natatapos ha {{count}} nga adlaw",
+      "expiringSoon_other": "Panalipod nga natapos ha {{count}} ka adlaw",
+      "disputedNow": "Ginlalantugian han iba .",
+      "disputedNowHint": "An imo mga nangunguna nga may-ada abrido nga pag-aragway ha pagtag-iya tikang ha iba nga kapadis .",
+      "commissionEligible": "Kwalipikado nga komisyon",
+      "commissionCancelled_one": "{{count}} ginkansela",
+      "commissionCancelled_other": "{{count}} ginkansela"
+    },
+    "chart": {
+      "title_one": "Mga pagparehistro ngan pag-book kada adlaw - katapusan nga {{count}} nga adlaw",
+      "title_other": "Mga pagparehistro ngan pag-book kada adlaw - katapusan nga {{count}} nga mga adlaw",
+      "registrations": "Mga pagparehistro",
+      "bookings": "Mga pag-book"
+    },
+    "byStage": "Nangunguna pinaagi han kahimtang .",
+    "bySource": "Nangunguna pinaagi han surok .",
+    "byReferral": "Nangunguna pinaagi han kahimtang han pagrefer .",
+    "myDisputes": "Mga araway nga imo iginbangon .",
+    "noDisputes": "Waray mga araway nga iginbangon.",
+    "unknown": "Waray pa igbutang",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Gawas nga CRM (ginsubad)",
+      "PARTNER_CRM": "Gindugang han iyo team .",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Pag-usa",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "An panalipod nga matatapos ha sunod nga {{count}} nga adlaw",
+    "expiringTitle_other": "An panalipod nga matatapos ha masunod nga {{count}} nga mga adlaw",
+    "expiringEmpty": "Waray tingga nga nawawarayan hin panalipod hini nga bintana."
   }
 }

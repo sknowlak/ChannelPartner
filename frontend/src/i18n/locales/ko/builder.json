@@ -29,7 +29,8 @@
       "registered": "등기"
     },
     "booked": "예약됨",
-    "empty": "아직 추천이 없습니다."
+    "empty": "아직 추천이 없습니다.",
+    "bookingCancelled": "예약이 취소되었습니다"
   },
   "detail": {
     "customer": "고객",
@@ -52,9 +53,15 @@
     "notice": {
       "booked": "예약이 확인되었습니다.",
       "accepted": "추천이 승인되었습니다.",
-      "rejected": "추천이 거부되었습니다."
+      "rejected": "추천이 거부되었습니다.",
+      "bookingCancelled": "예약이 취소되었습니다."
     },
-    "backToReferrals": "추천으로 돌아가기"
+    "backToReferrals": "추천으로 돌아가기",
+    "bookingCancelled": "예약이 취소되었습니다",
+    "cancelBooking": "예약 취소",
+    "cancelReasonLabel": "취소 사유(파트너에게 표시됨) *",
+    "cancelBookingHint": "운영 소유권은 파트너에게 돌아가고 커미션 자격은 취소됩니다. 리드는 나중에 다시 예약될 수 있습니다.",
+    "cancelBookingConfirm": "예약 취소"
   },
   "history": {
     "title": "역사",
@@ -81,7 +88,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "커미션 자격이 생성되었습니다.",
       "HANDOVER_COMPLETED": "핸드오버 완료",
       "ADMIN_PROTECTION_RELEASED": "관리자가 중복 보호를 조기에 출시했습니다. 이유: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "관리자가 {{from}} 에서 {{to}} 로 등록을 재할당했습니다. 이유: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "관리자가 {{from}} 에서 {{to}} 로 등록을 재할당했습니다. 이유: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "다른 파트너의 중복 등록 시도가 거부되었습니다.",
+      "BOOKING_CANCELLED": "예약이 취소되었습니다. 이유: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "운영 소유권이 파트너에게 반환됨",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "예약으로 인해 커미션 자격이 취소됨",
+      "COMMISSION_ELIGIBILITY_RESTORED": "새 예약에 대한 수수료 자격이 복원되었습니다."
     }
   }
 }

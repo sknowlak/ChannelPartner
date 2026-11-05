@@ -30,7 +30,8 @@
       "registered": "ⵢⴻⵜⵜⵡⴰⵙⴽⴻⵍⵙⴻⵏ"
     },
     "booked": "ⵢⴻⵜⵜⵡⴰⵃⵔⴻⵣ",
-    "empty": "ⵓⵍⴰⵛ ⵜⵉⵡⵙⵉⵡⵉⵏ ⴰⵔ ⵜⵓⵔⴰ."
+    "empty": "ⵓⵍⴰⵛ ⵜⵉⵡⵙⵉⵡⵉⵏ ⴰⵔ ⵜⵓⵔⴰ.",
+    "bookingCancelled": "ⵜⵉⴽⵛⵉ ⵜⴻⵜⵜⵡⴰⴱⵟⴻⵍ"
   },
   "detail": {
     "customer": "ⴰⵎⵙⴰⵖ",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "ⵢⴻⵜⵜⵡⴰⵡⴻⴽⴽⴻⴷ ⵓⵙⵎⴻⵍ.",
       "accepted": "ⵜⵜⵡⴰⵇⴱⴻⵍ ⵓⵛⴻⴳⴳⴻⵄ.",
-      "rejected": "ⴰⵙⴻⵏⵇⴻⴷ ⵢⴻⵜⵜⵡⴰⵇⴱⴻⵍ."
+      "rejected": "ⴰⵙⴻⵏⵇⴻⴷ ⵢⴻⵜⵜⵡⴰⵇⴱⴻⵍ.",
+      "bookingCancelled": "ⵢⴻⵜⵜⵡⴰⴱⵟⴻⵍ ⵓⵙⵎⴻⵍ."
     },
-    "backToReferrals": "ⵜⵓⵖⴰⵍⵉⵏ ⵖⴻⵔ ⵓⵙⵎⴻⴽⵜⵉ"
+    "backToReferrals": "ⵜⵓⵖⴰⵍⵉⵏ ⵖⴻⵔ ⵓⵙⵎⴻⴽⵜⵉ",
+    "bookingCancelled": "ⵜⵉⴽⵛⵉ ⵜⴻⵜⵜⵡⴰⴱⵟⴻⵍ",
+    "cancelBooking": "ⴱⵟⴻⵍ ⵜⵉⴽⵛⵉ",
+    "cancelReasonLabel": "ⵙⵙⴻⴱⴱⴰ ⵏ ⵓⵙⴱⴻⴷⴷⵉ (ⵢⴻⵜⵜⵡⴰⵙⴽⴻⵏⴷ ⵉ ⵓⵛⵔⵉⴽ) *",
+    "cancelBookingHint": "ⵜⴰⴱⴰⴹⵏⵉⵜ ⵏ ⵓⵅⴻⴷⴷⵉⵎ ⵜⴻⵜⵜⵓⵖⴰⵍ ⵖⴻⵔ ⵓⵛⵔⵉⴽ ⵢⴻⵔⵏⴰ ⵢⴻⵜⵜⵡⴰⴱⵟⴻⵍ ⵍⵃⴻⵇⵇⵏⵙⴻⵏ ⵏ ⵜⵎⴻⵀⵍⴰ. ⵍⴻⴰⴷ ⵢⴻⵣⵎⴻⵔ ⴰⴷ ⵢⴻⵜⵜⵡⴰⵙⴱⴻⴷⴷ ⵜⵉⴽⴽⴻⵍⵜ ⵏⵏⵉⴹⴻⵏ ⵙⴷⴻⴼⴼⵉⵔⵙ.",
+    "cancelBookingConfirm": "ⴱⵟⴻⵍ ⵜⵉⴽⵛⵉⵏⵏⵉ"
   },
   "history": {
     "title": "ⴰⵎⴻⵣⵔⵓⵢ",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "ⵜⴻⵜⵜⵡⴰⵅⵍⴻⵇⴷ ⵜⵣⴻⵎⵎⴰⵔ ⵏ ⵜⵙⴻⵇⵇⴰⵎⵓⵜ",
       "HANDOVER_COMPLETED": "ⵢⴻⴽⴼⴰ ⵓⵙⵉⵡⴻⴹ",
       "ADMIN_PROTECTION_RELEASED": "ⴰⴷⵎⵉⵏ ⵢⴻⵙⵙⵓⴼⴻⵖⴷ ⴰⵃⴰⵔⴻⴱ ⵏ ⵜⵏⴻⵇⵇⵉⴹⵉⵏ ⵣⵉⴽ. ⵙⵙⴻⴱⴱⴰ: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "ⴰⴷⵎⵉⵏ ⵢⴻⵔⵔⴰ ⴰⵙⴻⴽⵍⴻⵙ ⵙⴻⴳ {{from}} ⵖⴻⵔ {{to}} . ⵙⵙⴻⴱⴱⴰ: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "ⴰⴷⵎⵉⵏ ⵢⴻⵔⵔⴰ ⴰⵙⴻⴽⵍⴻⵙ ⵙⴻⴳ {{from}} ⵖⴻⵔ {{to}} . ⵙⵙⴻⴱⴱⴰ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "ⴰⵄⵔⴰⴹ ⵏ ⵓⵙⴻⴽⵍⴻⵙ ⵢⴻⵜⵜⵡⴰⵄⴻⵔⴹⴻⵏ ⵙⵖⵓⵔ ⵓⵛⵔⵉⴽ ⵏⵏⵉⴹⴻⵏ ⵢⴻⵜⵜⵡⴰⵇⴱⴻⵍ",
+      "BOOKING_CANCELLED": "ⵢⴻⵜⵜⵡⴰⴱⵟⴻⵍ ⵓⵙⵎⴻⵍ. ⵙⵙⴻⴱⴱⴰ: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "ⵜⵓⵖⴰⵍⴷ ⵜⴱⴰⴹⵏⵉⵜ ⵏ ⵓⵅⴻⴷⴷⵉⵎ ⵉ ⵓⵛⵔⵉⴽ",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "ⵜⴰⵣⵔⴻⴼⵜ ⵏ ⵜⵙⴻⵇⵇⴰⵎⵓⵜ ⵜⴻⵜⵜⵡⴰⴱⵟⴻⵍ ⵙ ⵓⵙⵎⴻⵍ",
+      "COMMISSION_ELIGIBILITY_RESTORED": "ⵜⵓⵖⴰⵍⴷ ⵜⵣⴻⵎⵎⴰⵔ ⵏ Tesmilt ⵉ ⵓⵙⵎⴻⵍ ⴰⵎⴰⵢⵏⵓⵜ"
     }
   }
 }

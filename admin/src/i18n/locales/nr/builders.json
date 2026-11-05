@@ -43,7 +43,9 @@
       "name": "Ibizo",
       "city": "Idorobho",
       "status": "Ubujamo",
-      "actions": "Izenzo"
+      "actions": "Izenzo",
+      "protection": "Ukuvikelwa okuphindaphindiweko",
+      "matchOn": "Iimphindaphindo zifana"
     },
     "closeReferrals": "Vala ukuthunyelwa",
     "reopen": "Vula godu",
@@ -55,6 +57,25 @@
       "add": "Faka iphrojekthi",
       "created": "Yakhiwe {{name}} ."
     },
-    "back": "Buyela ebakhini"
+    "back": "Buyela ebakhini",
+    "protection": {
+      "days_one": "{{count}} ilanga",
+      "days_other": "{{count}} amalanga",
+      "globalDays_one": "Okuzenzakalelako kwephasi loke ( {{count}} ilanga)",
+      "globalDays_other": "Okuzenzakalelako kwephasi loke ( {{count}} amalanga)",
+      "globalDefault": "Okuzenzakalelako kwephasi loke",
+      "placeholder": "Amalanga wokuvikela (angenalutho = okuzenzakalelayo komhlaba wonke)",
+      "saved": "Ukuvikelwa okuphindaphindiweko kuvuselelwe ku {{name}} .",
+      "hint": "Ukuvikelwa okuphindaphindiweko: amalanga ayi-1-3650, nofana utjhiye unganalitho ukusebenzisa okuzenzakalelayo kwephasi loke okuvela kumaSethingi. Itjhuguluko lisebenza kwaphela ekutlolisweni okutjha - okukhona kugcina isikhathi sokuphelelwa sikhathi kwawo."
+    },
+    "matching": {
+      "global": "Okuzenzakalelako kwephasi loke",
+      "globalWith": "Okuzenzakalelako kwephasi loke ( {{fields}} )",
+      "mobile": "Inomboro yeselula",
+      "email": "I-imeyili",
+      "both": "Inomboro yeselula + i-imeyili",
+      "saved": "Ukumadanisa okuphindwe kabili kuvuselelwe ku {{name}}",
+      "hint": "Ngimiphi imininingwana eyenza ukutloliswa okubili kube likhasimende elifanako lephrojekthi. Amatjhuguluko asebenza emashekeni aphindaphindiweko kusukela nje; ukuvikeleka okukhona akuthinteki."
+    }
   }
 }

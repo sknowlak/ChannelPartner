@@ -27,7 +27,9 @@ export default function NavBar({ open = false }) {
       <span className="brand"><BrandLogo size={34} showName={false} /><span>{t('shell:nav.brandName')}<br />{t('shell:nav.brandSub')}</span></span>
       {partner ? (
         <>
+          <NavLink to="/dashboard" className={linkClass}>{t('shell:nav.dashboard')}</NavLink>
           <NavLink to="/my-leads" className={linkClass}>{t('shell:nav.myLeads')}</NavLink>
+          <NavLink to="/disputes" className={linkClass}>{t('shell:nav.disputes')}</NavLink>
           <NavLink to="/team" className={linkClass}>{t('shell:nav.manageTeam')}</NavLink>
           <NavLink to="/settings" className={linkClass}>{t('shell:nav.settings')}</NavLink>
           <span className="spacer" />

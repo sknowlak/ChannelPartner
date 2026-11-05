@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "ᐊᔪᙱᑦᑐᑦ",
-    "PENDING": "ᓇᓗᓇᐃᕆᐊᓖᑦ"
+    "PENDING": "ᓇᓗᓇᐃᕆᐊᓖᑦ",
+    "CANCELLED": "ᖁᔭᓈᖅᑕᐅᔪᖅ"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "ᓴᒃᑯᐃᓂᖅ ᒪᕐᕈᐊᖅᑎᖅᓯᒪᔪᒥᒃ ᓴᐳᒻᒥᔭᐅᔾᔪᑎᒥᒃ ᓯᕗᕐᖓᒍᑦ",
-    "REASSIGN_PARTNER": "ᑎᓕᔭᐅᒃᑲᓐᓂᕐᓗᓂ ᐊᓯᐊᓄᑦ ᐱᓕᕆᖃᑎᒋᔭᕐᓄᑦ"
+    "REASSIGN_PARTNER": "ᑎᓕᔭᐅᒃᑲᓐᓂᕐᓗᓂ ᐊᓯᐊᓄᑦ ᐱᓕᕆᖃᑎᒋᔭᕐᓄᑦ",
+    "CANCEL_BOOKING": "ᓄᖅᑲᖅᑎᓪᓗᒍ ᐃᓂᒃᓴᓕᐅᖅᑕᐅᓯᒪᔪᖅ"
   },
   "dataType": {
     "TEXT": "ᑎᑎᖅᑲᖅ",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "ᐊᐅᓚᑦᑎᔨᒻᒪᕆᒃ",
     "ADMIN": "ᐊᐅᓚᑦᑎᔨ"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "ᓇᓗᓇᐃᖅᑕᐅᓯᒪᔪᖅ",
+    "CANCELLED": "ᖁᔭᓈᖅᑕᐅᔪᖅ"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "ᑐᓂᔭᐅᓯᒪᔪᑦ",
+    "DISPUTED": "ᐊᐃᕙᔾᔪᑕᐅᔪᖅ"
+  },
+  "disputeStatus": {
+    "OPEN": "ᒪᑐᐃᙶᖅᑐᖅ",
+    "UPHELD": "ᑲᔪᓯᑎᑕᐅᔪᖅ",
+    "OVERTURNED": "ᑭᐳᑦᑎᑕᐅᓯᒪᔪᖅ",
+    "WITHDRAWN": "ᐲᖅᑕᐅᔪᖅ"
   }
 }

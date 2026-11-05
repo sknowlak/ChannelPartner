@@ -49,8 +49,73 @@
       "newPartnerId": "ID jɛɲɔgɔn kura",
       "reason": "Kun (a wajibiyalen don) .",
       "apply": "A’ ye Override (Override) waleya",
-      "applying": "Aplikasi ka..."
+      "applying": "Aplikasi ka...",
+      "cancelBookingHint": "Ni i ye jatebɔ kɛ, o bɛ taamasiyɛn kɛ ko jatebɔ n’a komisiyɔn tiɲɛna, o bɛ baarakɛcogo tigiyali segin jɛɲɔgɔn ma, wa a b’a to boonbatigi bila ka nin ɲɛmɔgɔya in sɛbɛn kokura.",
+      "cancelBookingConfirm": "Aw ye nin jatebɔ in tiɲɛ wa? A ka komisiyɔn fana bɛ ban. O bɛ sɛbɛn ni i tɔgɔ n’i ka dalilu ye."
     },
-    "timelineTitle": "Jateminɛ waatibolodacogo (nin sɛbɛnni in) ."
+    "timelineTitle": "Jateminɛ waatibolodacogo (nin sɛbɛnni in) .",
+    "bookingStatus": "Jatebla cogoya",
+    "commissionAttribution": "Komisiɔn ka jatebɔ",
+    "disputeOpen": "Dutigiya sɔsɔli dɔ dabɔra nin kiliyan in kan - jɛɲɔgɔn wɛrɛ ko olu ta don. A bɛ latigɛ sɔsɔliw ɲɛ kan.",
+    "viewDisputes": "Kɛlɛw lajɛ",
+    "cancellation": {
+      "title": "Booking (jatebɔ) tiɲɛna",
+      "hint": "Jatebɔ n’a komisiyɔn bɛ tiɲɛ; baarakɛcogo tigiyali seginna ni jɛɲɔgɔn ye ani boonbatigi bɛ se ka nin ɲɛmɔgɔya in sɛbɛn kokura.",
+      "at": "A ka kan ka kɛ",
+      "by": "Cancelled by",
+      "reason": "Kun"
+    }
+  },
+  "disputes": {
+    "title": "Dutigiya sɔsɔliw",
+    "hint": "Jɛɲɔgɔn min banna a tɔgɔ sɛbɛnni na iko duplicate, o bɛ se ka sɔsɔli kɛ jɔn ye kiliyan tigi ye. Aw ye fan fila bɛɛ lajɛ ani ka a latigɛ.",
+    "statusFilter": "Kɛlɛ cogoya",
+    "allStatuses": "Status bɛɛ",
+    "empty": "Kɛlɛ si tɛ yen ni nin jɔyɔrɔ in ye.",
+    "columns": {
+      "dispute": "Dalamankan",
+      "customer": "Sannikɛla",
+      "project": "Poroze",
+      "raisedBy": "Lamɔna ni",
+      "heldBy": "Sisan tigi",
+      "status": "Sigisariyaw",
+      "raisedAt": "Lamɔna kan"
+    },
+    "detail": {
+      "title": "Kɛlɛ {{id}}",
+      "raisedOn": "Kɔrɔtalen {{date}}",
+      "raisingTitle": "Lamɔna ni",
+      "holderTitle": "Sisan tigi",
+      "partner": "Jɛɲɔgɔn",
+      "raisedBy": "A bilala sen kan",
+      "customerName": "Sannikɛla",
+      "mobile": "Telefɔni",
+      "alternateMobile": "Telefɔni selilɛri wɛrɛ",
+      "email": "Email (Email) ci",
+      "project": "Poroze",
+      "reason": "U ka dalilu",
+      "registration": "I tɔgɔ sɛbɛnni",
+      "registeredAt": "A tɔgɔ sɛbɛnna kan",
+      "referral": "Ladilikan",
+      "heldMissing": "Sɛbɛn min minɛna, o ma se ka sɔrɔ.",
+      "resolutionTitle": "Latigɛ",
+      "outcome": "Jaabi",
+      "note": "Nɔti",
+      "decidedBy": "A latigɛra ni",
+      "decidedAt": "A latigɛra ka ɲɛsin",
+      "newRegistration": "I tɔgɔ sɛbɛnni kura",
+      "decideTitle": "Aw ye o sɔsɔli in latigɛ",
+      "noteLabel": "Kɔlɔsili min bɛ desizɔn ɲɛfɔ (a wajibiyalen don) .",
+      "noteRequired": "I ka sɛbɛn dɔ sɛbɛn walisa k’a latigɛ.",
+      "uphold": "A’ y’a sinsin",
+      "overturn": "Yɛlɛma don",
+      "upholdEffect": "{{holder}} bɛ kiliyan mara. Kὲlɛ in bɛ Dabɔ, foyi wɛrɛ tɛ Yɛlɛma.",
+      "overturnEffect": "{{holder}} ka lakanani ɲɔgɔndan bɛ ban sisan ani kiliyan tɔgɔ sɛbɛnna {{partner}} la i n’a fɔ tɔgɔsɛbɛn kura.",
+      "heldBookedHelp": "Nin kiliyan in bɛ jate minɛ sisan tigi fɛ. O jatebɔ in tiɲɛ fɔlɔ (Admin Override min bɛ sɛbɛnni kan), o kɔfɛ, i ka:",
+      "confirmTitle": "Yala i dalen b’a la wa?",
+      "confirmUphold": "Ɔwɔ, a’ y’a sinsin",
+      "confirmOverturn": "Ɔwɔ, wuli",
+      "back": "Segin ka na sɔsɔliw kan"
+    }
   }
 }

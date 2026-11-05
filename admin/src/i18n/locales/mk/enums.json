@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Подобни",
-    "PENDING": "Во очекување"
+    "PENDING": "Во очекување",
+    "CANCELLED": "Откажано"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Ослободете ја дупликатната заштита предвреме",
-    "REASSIGN_PARTNER": "Преназначете на друг партнер"
+    "REASSIGN_PARTNER": "Преназначете на друг партнер",
+    "CANCEL_BOOKING": "Откажете ја резервацијата"
   },
   "dataType": {
     "TEXT": "Текст",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Супер админ",
     "ADMIN": "Админ"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Потврдено",
+    "CANCELLED": "Откажано"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Припишани",
+    "DISPUTED": "Спорно"
+  },
+  "disputeStatus": {
+    "OPEN": "Отвори",
+    "UPHELD": "Потврдено",
+    "OVERTURNED": "Превртено",
+    "WITHDRAWN": "Повлечен"
   }
 }

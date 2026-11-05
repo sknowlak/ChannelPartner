@@ -30,7 +30,8 @@
       "registered": "Катталган"
     },
     "booked": "Заказдалган",
-    "empty": "Азырынча жолдомо жок."
+    "empty": "Азырынча жолдомо жок.",
+    "bookingCancelled": "Ээлеп коюу жокко чыгарылды"
   },
   "detail": {
     "customer": "Кардар",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Брондоо ырасталды.",
       "accepted": "Реферат кабыл алынды.",
-      "rejected": "Реферат четке кагылды."
+      "rejected": "Реферат четке кагылды.",
+      "bookingCancelled": "Ээлеп коюу жокко чыгарылды."
     },
-    "backToReferrals": "Referrals барагына кайтуу"
+    "backToReferrals": "Referrals барагына кайтуу",
+    "bookingCancelled": "Ээлеп коюу жокко чыгарылды",
+    "cancelBooking": "Ээлеп коюуну жокко чыгаруу",
+    "cancelReasonLabel": "Жокко чыгаруунун себеби (өнөктөшкө көрсөтүлөт) *",
+    "cancelBookingHint": "Операциялык менчик өнөктөшкө кайтып келет жана алардын комиссиялык укугу жокко чыгарылат. Жетекчиликти кийинчерээк кайра ээлеп коюуга болот.",
+    "cancelBookingConfirm": "Ээлеп коюуну жокко чыгаруу"
   },
   "history": {
     "title": "тарых",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Комиссия жарамдуулугу түзүлгөн",
       "HANDOVER_COMPLETED": "Өткөрүп берүү аяктады",
       "ADMIN_PROTECTION_RELEASED": "Админ дубликат коргоону эрте чыгарды. Себеби: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Админ каттоону {{from}} ордуна {{to}} чейин дайындады. Себеби: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Админ каттоону {{from}} ордуна {{to}} чейин дайындады. Себеби: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Башка өнөктөш тарабынан кайталанган каттоо аракети четке кагылды",
+      "BOOKING_CANCELLED": "Ээлеп коюу жокко чыгарылды. Себеби: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Операциялык менчик өнөктөшкө кайтарылды",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ээлеп коюу менен комиссиянын укугу жокко чыгарылат",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Жаңы ээлөө үчүн комиссиянын укугу калыбына келтирилди"
     }
   }
 }

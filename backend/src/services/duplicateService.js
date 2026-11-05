@@ -1,7 +1,7 @@
 const Customer = require('../models/Customer');
 const Registration = require('../models/Registration');
 const RegistrationClaim = require('../models/RegistrationClaim');
-const { getSettings } = require('./settingsService');
+const { matchFieldsFor } = require('./projectService');
 const { normalizeMobile } = require('../utils/phone');
 const { normalizeEmail } = require('../utils/email');
 const { nextId } = require('../utils/idGenerator');
@@ -48,7 +48,7 @@ function matchClauses({ mobiles, emails }) {
 // "would this collide with anyone else?".
 async function findDuplicate({ mobile, email, alternateMobile, projectId, excludeRegistrationId }) {
   projectId = String(projectId || ''); // leads with no project attached (section 33) share the '' bucket
-  const { duplicateMatchFields } = await getSettings();
+  const duplicateMatchFields = await matchFieldsFor(projectId); // per project (section 62), else global
   const clauses = matchClauses(identityKeys({ mobile, email, alternateMobile }, duplicateMatchFields));
   if (clauses.length === 0) return null;
 
@@ -101,11 +101,18 @@ async function findOrCreateCustomer({ name, mobile, email, alternateMobile }) {
 // racing with the same ALTERNATE number or email (but different primary
 // numbers -> different customerIds) never touched a shared key and could
 // both be ACCEPTED.
+// The customer key stands for the primary mobile number (one Customer per
+// number), so it is only taken when mobile is a match field - on an
+// email-only project (section 62) the same number with a different email is
+// a different person and must not be blocked by it.
 async function claimKeysFor({ customerId, projectId, mobile, email, alternateMobile }) {
   const project = String(projectId || '');
-  const keys = new Set([`${customerId}|${project}`]);
-  if (mobile || email || alternateMobile) {
-    const { duplicateMatchFields } = await getSettings();
+  const keys = new Set();
+  if (!(mobile || email || alternateMobile)) {
+    keys.add(`${customerId}|${project}`);
+  } else {
+    const duplicateMatchFields = await matchFieldsFor(project);
+    if (duplicateMatchFields.includes('mobile')) keys.add(`${customerId}|${project}`);
     const { mobiles, emails } = identityKeys({ mobile, email, alternateMobile }, duplicateMatchFields);
     for (const m of mobiles) keys.add(`m:${m}|${project}`);
     for (const e of emails) keys.add(`e:${e}|${project}`);

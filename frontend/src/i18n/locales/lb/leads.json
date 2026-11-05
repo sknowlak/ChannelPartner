@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Reservéiert",
-    "pending": "Erwaardung"
+    "pending": "Erwaardung",
+    "status": {
+      "CONFIRMED": "Reservéiert",
+      "CANCELLED": "Reservatioun annuléiert"
+    }
   },
   "assign": {
     "unassigned": "Net zougewisen",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Kee Projet nach (net bezeechent)",
-    "notInList": "{{project}} (net an der Projektlëscht)"
+    "notInList": "{{project}} (net an der Projektlëscht)",
+    "protectionDays_one": "{{count}} -Dag Schutz",
+    "protectionDays_other": "{{count}} -Dag Schutz"
   },
   "journey": {
     "customer": "Client",
@@ -76,7 +82,14 @@
     "progressHistory": "Fortschrëtt Geschicht",
     "timesIn": "(Zäiten an {{timezone}} )",
     "backToMyLeads": "Zréck op Meng Leads",
-    "editLead": "Féierung änneren"
+    "editLead": "Féierung änneren",
+    "disputeBanner": "En anere Partner huet d'Besëtzer vun dësem Client ëmstridden. E Leadrat Admin iwwerpréift et - Äre Schutz bleift op der Plaz bis se entscheeden.",
+    "booking": "Buchung",
+    "commission": "Kommissioun",
+    "notBooked": "Net gebucht",
+    "cancelledOn": "Annuléiert op {{date}} .",
+    "cancelReason": "Grond: {{reason}}",
+    "cancelledHint": "De Builder huet d'Buchung annuléiert - operationell Besëtzer ass zréck bei Iech an d'Kommissiounsqualitéit ass annuléiert. Et gëtt restauréiert wann de Virsprong erëm gebucht gëtt."
   },
   "referral": {
     "NOT_REFERRED": "Net bezeechent (kee Projet)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Builder huet d'Referenz ugeholl",
       "REFERRAL_REJECTED": "Builder huet d'Referenz refuséiert. Grond: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Den Admin huet duplizéiert Schutz fréi fräigelooss. Grond: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Den Administrateur huet d'Aschreiwung vun {{from}} op {{to}} ëmgezeechent. Grond: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Den Administrateur huet d'Aschreiwung vun {{from}} op {{to}} ëmgezeechent. Grond: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "En Duplikat Aschreiwungsversuch vun engem anere Partner gouf refuséiert",
+      "BOOKING_CANCELLED": "Reservatioun annuléiert. Grond: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operationell Besëtzer zréck op de Partner",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kommissioun Usproch mat der Buchung annuléiert",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kommissioun Zoulag restauréiert fir déi nei Buchung",
+      "OWNERSHIP_DISPUTE_RAISED": "En anere Partner huet d'Besëtzer vun dësem Client ëmstridden - e Leadrat Admin wäert et iwwerpréiwen",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "De Proprietär Sträit op dësem Client gouf zréckgezunn - Äert Besëtz ass onverännert",
+      "OWNERSHIP_DISPUTE_UPHELD": "De Proprietär Sträit op dësem Client gouf iwwerpréift - Äre Besëtz ass bestätegt",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Registréiert nodeems Äre Besëtzer Sträit zu Ärem Gonschten entscheet gouf. Notiz: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "De Schutz eriwwer: e Besëtzer Sträit gouf zugonschte vun engem anere Partner decidéiert. Notiz: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Dës Telefonsnummer ass net valabel fir {{country}} .",
     "COUNTRY_MISMATCH": "Wielt w.e.g. de richtege Landcode.",
     "NOT_MOBILE": "Gitt weg eng Handysnummer, net eng Festnetz."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Kommissioun berechtegt",
+      "PENDING": "Kommissioun amgaang",
+      "CANCELLED": "Kommissioun annuléiert"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Iech zougeschriwwen",
+      "DISPUTED": "Attributioun ëmstridden"
+    }
+  },
+  "result": {
+    "none": "Keng Aschreiwung Resultat ze weisen. Aschreiwen e Lead éischt.",
+    "acceptedTitle": "Lead registréiert",
+    "rejectedTitle": "Lead net registréiert",
+    "protectionWindow": "Schutzfenster",
+    "protectedUntil": "Geschützt bis",
+    "openLead": "Open Lead",
+    "addAnother": "Füügt en anere Lead",
+    "duplicate": "Duplizéiert - scho geschützt",
+    "duplicateHint": "Dëse Client ass scho fir dëse Projet duerch eng aner Aschreiwung geschützt, sou datt et net fir Iech registréiert ka ginn.",
+    "existingProtectedUntil": "Bestehend Aschreiwung geschützt bis"
+  },
+  "disputes": {
+    "title": "Meng Sträitfäll",
+    "intro": "Besëtzer Sträitfäll déi Dir fir Clienten opgeworf hutt, déi als Duplikate refuséiert goufen. E Leadrat Admin iwwerpréift all eenzel.",
+    "empty": "Dir hutt keng Streidereien opgeworf. Wann e Client deen Dir bruecht hutt als Duplikat refuséiert gëtt, kënnt Dir et aus dem Aschreiwungsresultat streiden.",
+    "columns": {
+      "dispute": "Sträit",
+      "reason": "Äre Grond",
+      "outcome": "Resultat"
+    },
+    "status": {
+      "OPEN": "Ënner review",
+      "UPHELD": "Net an Ärer Gonschten",
+      "OVERTURNED": "Entscheet an Ärer Gonschten",
+      "WITHDRAWN": "Entzéien"
+    },
+    "awaitingReview": "Waart op Admin Bewäertung",
+    "openNewLead": "Öffnen Äre Lead {{id}}",
+    "withdraw": "Zréckzéien",
+    "withdrawConfirm": "Äre Sträit fir {{name}} zréckzéien? Déi aktuell Besëtz bleift wéi et ass.",
+    "raise": "Sträit Proprietairen",
+    "raiseTitle": "Sträit Proprietairen",
+    "raiseHint": "Wann dëse Client fir d'éischt bei Iech komm ass, erkläert firwat. E Leadrat Admin wäert et iwwerpréiwen; wa se zu Ärem Gonschten entscheeden, gëtt de Lead fir Iech ugemellt.",
+    "reasonLabel": "Firwat ass dëse Client Är?",
+    "reasonMin_one": "Op d'mannst {{count}} Charakter.",
+    "reasonMin_other": "Op d'mannst {{count}} Zeechen.",
+    "submit": "Sträit schécken",
+    "notProtected": "Keen hält dëse Client méi Schutz fir dëse Projet - Dir kënnt de Lead elo registréieren.",
+    "raised": "Sträit {{id}} fir Iwwerpréiwung geschéckt.",
+    "viewAll": "Kuckt meng Streidereien"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Period",
+    "lastDays_one": "{{count}} Dag",
+    "lastDays_other": "{{count}} Deeg",
+    "emptyTitle": "Wëllkomm! Dir hutt nach keng Leads.",
+    "emptyHint": "Registréiert Ären éischte Lead - Är Pipeline, Buchungen a Schutzdeadline ginn hei op.",
+    "tiles": {
+      "leads": "Total Leads",
+      "newInPeriod_one": "{{count}} nei an dëser Period",
+      "newInPeriod_other": "{{count}} nei an dëser Period",
+      "accepted": "Akzeptéiert",
+      "booked": "Reservéiert",
+      "bookedInPeriod_one": "{{count}} an dëser Period gebucht",
+      "bookedInPeriod_other": "{{count}} an dëser Period gebucht",
+      "conversion": "Konversioun",
+      "conversionHint": "Reservéiert Leads als Undeel vun akzeptéierte Leads",
+      "protectedNow": "Elo geschützt",
+      "expiringSoon_one": "Schutz op {{count}} Dag",
+      "expiringSoon_other": "Schutz eriwwer an {{count}} Deeg",
+      "disputedNow": "Vun aneren ëmstridden",
+      "disputedNowHint": "Är féiert mat engem oppene Besëtzer Sträit vun engem anere Partner",
+      "commissionEligible": "Kommissioun berechtegt",
+      "commissionCancelled_one": "{{count}} annuléiert",
+      "commissionCancelled_other": "{{count}} annuléiert"
+    },
+    "chart": {
+      "title_one": "Umeldungen a Buchungen pro Dag - leschte {{count}} Dag",
+      "title_other": "Umeldungen a Buchungen pro Dag - lescht {{count}} Deeg",
+      "registrations": "Aschreiwungen",
+      "bookings": "Buchungen"
+    },
+    "byStage": "Leads vum Status",
+    "bySource": "Leads duerch Quell",
+    "byReferral": "Leads duerch Referratiounsstatus",
+    "myDisputes": "Sträitfäll Dir opgeworf",
+    "noDisputes": "Keng Streidereien opgeworf.",
+    "unknown": "Net gesat",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Extern CRM (simuléiert)",
+      "PARTNER_CRM": "Vun Ärem Team bäigefüügt",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integratioun",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "De Schutz leeft am nächsten {{count}} Dag of",
+    "expiringTitle_other": "De Schutz leeft an den nächsten {{count}} Deeg of",
+    "expiringEmpty": "Kee Lead verléiert säi Schutz an dëser Fënster."
   }
 }

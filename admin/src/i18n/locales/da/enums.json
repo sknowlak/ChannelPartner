@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Berettiget",
-    "PENDING": "Indtil"
+    "PENDING": "Indtil",
+    "CANCELLED": "Annulleret"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Frigiv duplikatbeskyttelse tidligt",
-    "REASSIGN_PARTNER": "Overdrag til en anden partner"
+    "REASSIGN_PARTNER": "Overdrag til en anden partner",
+    "CANCEL_BOOKING": "Annuller booking"
   },
   "dataType": {
     "TEXT": "Tekst",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super Admin",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Bekræftet",
+    "CANCELLED": "Annulleret"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Tilskrevet",
+    "DISPUTED": "Omstridt"
+  },
+  "disputeStatus": {
+    "OPEN": "Åben",
+    "UPHELD": "Opretholdt",
+    "OVERTURNED": "Væltede",
+    "WITHDRAWN": "trukket tilbage"
   }
 }

@@ -30,7 +30,8 @@
       "registered": "Rehistrado"
     },
     "booked": "Naka-book na",
-    "empty": "Mayo pang mga referral."
+    "empty": "Mayo pang mga referral.",
+    "bookingCancelled": "Kanselado an pagpareserba"
   },
   "detail": {
     "customer": "Kustomer",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Kumpirmado an pagpareserba.",
       "accepted": "Inako an referral.",
-      "rejected": "Sinayumahan an pagrefer."
+      "rejected": "Sinayumahan an pagrefer.",
+      "bookingCancelled": "Kanselado an pagpareserba."
     },
-    "backToReferrals": "Balik sa mga Referral"
+    "backToReferrals": "Balik sa mga Referral",
+    "bookingCancelled": "Kanselado an pagpareserba",
+    "cancelBooking": "Kanselaron an Pagpareserba",
+    "cancelReasonLabel": "Rason kan pagkanselar (ipinahiling sa kapadis) *",
+    "cancelBookingHint": "An pagsasadiri sa operasyon minabalik sa kasosyo asin an saindang kwalipikasyon sa komisyon kanselado. An lead pwedeng i-book giraray sa huri.",
+    "cancelBookingConfirm": "Kanselaron an pagpareserba"
   },
   "history": {
     "title": "Kasaysayan",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "An kwalipikasyon sa komisyon ginibo",
       "HANDOVER_COMPLETED": "Natapos an pag-abot",
       "ADMIN_PROTECTION_RELEASED": "Amay na pinaluwas kan admin an duplicate na proteksyon. Rason: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Ibinalik kan Admin an rehistrasyon gikan sa {{from}} pasiring sa {{to}} . Rason: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Ibinalik kan Admin an rehistrasyon gikan sa {{from}} pasiring sa {{to}} . Rason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "An dobleng pagprobar na magrehistro kan ibang kasosyo dai inako",
+      "BOOKING_CANCELLED": "Kanselado an pagpareserba. Rason: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "An pagsasadiri sa operasyon ibinalik sa kasosyo",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "An kwalipikasyon sa komisyon kinanselar sa pagpareserba",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ibinalik an kwalipikasyon sa komisyon para sa bagong booking"
     }
   }
 }

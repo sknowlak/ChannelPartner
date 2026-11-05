@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "काबिल",
-    "PENDING": "बकाया"
+    "PENDING": "बकाया",
+    "CANCELLED": "रद्द कर दी गई"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "डुप्लिकेट सुरक्षा जल्दी जारी करो",
-    "REASSIGN_PARTNER": "दूजे साथी गी दुबारा असाइन करो"
+    "REASSIGN_PARTNER": "दूजे साथी गी दुबारा असाइन करो",
+    "CANCEL_BOOKING": "बुकिंग रद्द करो"
   },
   "dataType": {
     "TEXT": "पाठ",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "सुपर एडमिन",
     "ADMIN": "एडमिन"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "पुष्टि कीती गेई",
+    "CANCELLED": "रद्द कर दी गई"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "एट्रिब्यूट कीता गेदा",
+    "DISPUTED": "विवादित"
+  },
+  "disputeStatus": {
+    "OPEN": "खु'ल्ला",
+    "UPHELD": "बरकरार रखेया",
+    "OVERTURNED": "पलट गया",
+    "WITHDRAWN": "वापस ले लिया"
   }
 }

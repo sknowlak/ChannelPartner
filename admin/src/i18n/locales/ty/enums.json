@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Ana",
-    "PENDING": "Tāʻei"
+    "PENDING": "Tāʻei",
+    "CANCELLED": "Ua faaorehia"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "A tuu oioi i te parururaa piti",
-    "REASSIGN_PARTNER": "A horo'a faahou i te tahi atu hoa"
+    "REASSIGN_PARTNER": "A horo'a faahou i te tahi atu hoa",
+    "CANCEL_BOOKING": "Faaore i te buka"
   },
   "dataType": {
     "TEXT": "Tu'atā",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Admin rahi",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Ua haapapûhia",
+    "CANCELLED": "Ua faaorehia"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Ua horo'ahia mai",
+    "DISPUTED": "Ua mârôhia"
+  },
+  "disputeStatus": {
+    "OPEN": "E'ere",
+    "UPHELD": "Ua paturuhia",
+    "OVERTURNED": "Ua faafariuhia",
+    "WITHDRAWN": "Ua faaru'ehia"
   }
 }

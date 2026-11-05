@@ -29,7 +29,8 @@
       "registered": "Edebara aha"
     },
     "booked": "Edere akwụkwọ",
-    "empty": "Enweghị ntụnye aka."
+    "empty": "Enweghị ntụnye aka.",
+    "bookingCancelled": "Kagbuo ntinye akwụkwọ"
   },
   "detail": {
     "customer": "Onye ahịa",
@@ -52,9 +53,15 @@
     "notice": {
       "booked": "Ekwenyere ntinye akwụkwọ.",
       "accepted": "Anabatara ntụnye aka.",
-      "rejected": "Ajụjụ ntụnye aka."
+      "rejected": "Ajụjụ ntụnye aka.",
+      "bookingCancelled": "Kagbuo ntinye akwụkwọ."
     },
-    "backToReferrals": "Laghachi na ntụnye aka"
+    "backToReferrals": "Laghachi na ntụnye aka",
+    "bookingCancelled": "Kagbuo ntinye akwụkwọ",
+    "cancelBooking": "Kagbuo ntinye akwụkwọ",
+    "cancelReasonLabel": "Ihe kpatara ịkagbu (gosipụtara onye mmekọ) *",
+    "cancelBookingHint": "Ịnwe ọrụ na-alaghachi na onye mmekọ ma kagbuo ntozu ọrụ ha. Enwere ike idobe ndu ọzọ ma emechaa.",
+    "cancelBookingConfirm": "Kagbuo ntinye akwụkwọ"
   },
   "history": {
     "title": "Akụkọ ihe mere eme",
@@ -81,7 +88,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Emepụtara ntozu nke kọmitii",
       "HANDOVER_COMPLETED": "Emechaala inyefe",
       "ADMIN_PROTECTION_RELEASED": "Admin weputara nchedo oyiri n'oge. Ihe kpatara ya: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin ekenyegharịrị ndebanye aha site na {{from}} gaa na {{to}} . Ihe kpatara ya: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin ekenyegharịrị ndebanye aha site na {{from}} gaa na {{to}} . Ihe kpatara ya: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ajụjụ mnwale ndebanye oyiri nke onye mmekọ ọzọ mere",
+      "BOOKING_CANCELLED": "Kagbuo ntinye akwụkwọ. Ihe kpatara ya: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Onye nwe ya laghachiri n'aka onye mmekọ",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "A kagbuo ntozu kọmishọna site na ntinye akwụkwọ ahụ",
+      "COMMISSION_ELIGIBILITY_RESTORED": "E weghachiri ntozu kọmishọna maka ntinye akwụkwọ ọhụrụ"
     }
   }
 }

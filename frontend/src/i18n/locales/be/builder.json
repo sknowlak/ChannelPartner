@@ -32,7 +32,8 @@
       "registered": "Зарэгістраваны"
     },
     "booked": "Забраніраваны",
-    "empty": "Рэфералаў пакуль няма."
+    "empty": "Рэфералаў пакуль няма.",
+    "bookingCancelled": "Браніраванне адменена"
   },
   "detail": {
     "customer": "Кліент",
@@ -55,9 +56,15 @@
     "notice": {
       "booked": "Браніраванне пацверджана.",
       "accepted": "Рэкамендацыя прынята.",
-      "rejected": "Накіраванне адхілена."
+      "rejected": "Накіраванне адхілена.",
+      "bookingCancelled": "Браніраванне адменена."
     },
-    "backToReferrals": "Вярнуцца да рэкамендацый"
+    "backToReferrals": "Вярнуцца да рэкамендацый",
+    "bookingCancelled": "Браніраванне адменена",
+    "cancelBooking": "Адмяніць браніраванне",
+    "cancelReasonLabel": "Прычына адмены (паказваецца партнёру) *",
+    "cancelBookingHint": "Аператыўная ўласнасць вяртаецца да партнёра, а іх права на камісію анулявана. Ліды можна забраніраваць пазней.",
+    "cancelBookingConfirm": "Адмяніць браніраванне"
   },
   "history": {
     "title": "Гісторыя",
@@ -90,7 +97,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Права на камісію створана",
       "HANDOVER_COMPLETED": "Перадача завершана",
       "ADMIN_PROTECTION_RELEASED": "Адміністратар раней выпусціў абарону ад дублікатаў. Прычына: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Адміністратар пераназначыў рэгістрацыю з {{from}} на {{to}} . Прычына: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Адміністратар пераназначыў рэгістрацыю з {{from}} на {{to}} . Прычына: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Спроба паўторнай рэгістрацыі іншым партнёрам была адхілена",
+      "BOOKING_CANCELLED": "Браніраванне адменена. Прычына: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Аператыўнае права ўласнасці вернута партнёру",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Права на камісію адменена разам з браніраваннем",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Права на камісію адноўлена для новага браніравання"
     }
   }
 }

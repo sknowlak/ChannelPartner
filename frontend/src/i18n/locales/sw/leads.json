@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Imehifadhiwa",
-    "pending": "Inasubiri"
+    "pending": "Inasubiri",
+    "status": {
+      "CONFIRMED": "Imehifadhiwa",
+      "CANCELLED": "Uhifadhi umeghairiwa"
+    }
   },
   "assign": {
     "unassigned": "Haijakabidhiwa",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Bado hakuna mradi (haujarejelewa)",
-    "notInList": "{{project}} (haiko katika orodha ya mradi)"
+    "notInList": "{{project}} (haiko katika orodha ya mradi)",
+    "protectionDays_one": "Ulinzi wa siku {{count}}",
+    "protectionDays_other": "Ulinzi wa siku {{count}}"
   },
   "journey": {
     "customer": "Mteja",
@@ -76,7 +82,14 @@
     "progressHistory": "Historia ya Maendeleo",
     "timesIn": "(mara katika {{timezone}} )",
     "backToMyLeads": "Rudi kwa Miongozo Yangu",
-    "editLead": "Hariri Kiongozi"
+    "editLead": "Hariri Kiongozi",
+    "disputeBanner": "Mshirika mwingine amepinga umiliki wa mteja huyu. Msimamizi wa Leadrat anaikagua - ulinzi wako utaendelea kuwepo hadi watakapoamua.",
+    "booking": "Kuhifadhi",
+    "commission": "Tume",
+    "notBooked": "Haijawekwa nafasi",
+    "cancelledOn": "Ilighairiwa tarehe {{date}} .",
+    "cancelReason": "Sababu: {{reason}}",
+    "cancelledHint": "Mjenzi alighairi uhifadhi - umiliki wa kiutendaji umerudishwa kwako na ustahiki wa tume umeghairiwa. Itarejeshwa ikiwa uongozi umehifadhiwa tena."
   },
   "referral": {
     "NOT_REFERRED": "Haijarejelewa (hakuna mradi)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Mjenzi alikubali rufaa",
       "REFERRAL_REJECTED": "Mjenzi amekataa rufaa. Sababu: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Msimamizi alitoa ulinzi unaorudiwa mapema. Sababu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Msimamizi alikabidhi upya usajili kutoka {{from}} hadi {{to}} . Sababu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Msimamizi alikabidhi upya usajili kutoka {{from}} hadi {{to}} . Sababu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Jaribio la nakala la usajili la mshirika mwingine lilikataliwa",
+      "BOOKING_CANCELLED": "Uhifadhi umeghairiwa. Sababu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Umiliki wa uendeshaji umerejeshwa kwa mshirika",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ustahiki wa tume umeghairiwa kwa kuweka nafasi",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ustahiki wa tume umerejeshwa kwa uhifadhi mpya",
+      "OWNERSHIP_DISPUTE_RAISED": "Mshirika mwingine aliyepinga umiliki wa mteja huyu - msimamizi wa Leadrat atakagua",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Mzozo wa umiliki kwa mteja huyu uliondolewa - umiliki wako haujabadilika",
+      "OWNERSHIP_DISPUTE_UPHELD": "Mzozo wa umiliki kwa mteja huyu ulikaguliwa - umiliki wako umethibitishwa",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Imesajiliwa baada ya mzozo wako wa umiliki kuamuliwa kwa niaba yako. Kumbuka: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Ulinzi umeisha: mzozo wa umiliki uliamuliwa kwa niaba ya mshirika mwingine. Kumbuka: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Nambari hii ya simu si halali kwa {{country}} .",
     "COUNTRY_MISMATCH": "Tafadhali chagua msimbo sahihi wa nchi.",
     "NOT_MOBILE": "Tafadhali weka nambari ya simu, sio simu ya mezani."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Tume inastahiki",
+      "PENDING": "Tume inasubiri",
+      "CANCELLED": "Tume imeghairiwa"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Imehusishwa na wewe",
+      "DISPUTED": "Uwasilishaji umepingwa"
+    }
+  },
+  "result": {
+    "none": "Hakuna matokeo ya usajili ya kuonyesha. Sajili kiongozi kwanza.",
+    "acceptedTitle": "Kiongozi amesajiliwa",
+    "rejectedTitle": "Uongozi haujasajiliwa",
+    "protectionWindow": "Dirisha la Ulinzi",
+    "protectedUntil": "Imelindwa Mpaka",
+    "openLead": "Fungua Kiongozi",
+    "addAnother": "Ongeza Mwongozo Mwingine",
+    "duplicate": "Nakala - tayari imelindwa",
+    "duplicateHint": "Mteja huyu tayari amelindwa kwa mradi huu na usajili mwingine, kwa hivyo haukuweza kusajiliwa kwa ajili yako.",
+    "existingProtectedUntil": "Usajili uliopo umelindwa hadi"
+  },
+  "disputes": {
+    "title": "Migogoro Yangu",
+    "intro": "Mizozo ya umiliki uliyoibua wateja ambayo ilikataliwa kama nakala. Msimamizi wa Leadrat hukagua kila moja.",
+    "empty": "Hujaibua mizozo yoyote. Iwapo mteja uliyemleta amekataliwa kama nakala, unaweza kupinga kutokana na matokeo ya usajili.",
+    "columns": {
+      "dispute": "Mzozo",
+      "reason": "Sababu yako",
+      "outcome": "Matokeo"
+    },
+    "status": {
+      "OPEN": "Inakaguliwa",
+      "UPHELD": "Si kwa niaba yako",
+      "OVERTURNED": "Imeamua kwa niaba yako",
+      "WITHDRAWN": "Imetolewa"
+    },
+    "awaitingReview": "Inasubiri ukaguzi wa msimamizi",
+    "openNewLead": "Fungua mwongozo wako {{id}}",
+    "withdraw": "Ondoa",
+    "withdrawConfirm": "Je, ungependa kuondoa mzozo wako wa {{name}} ? Umiliki wa sasa unabaki kama ulivyo.",
+    "raise": "Mzozo wa umiliki",
+    "raiseTitle": "Mzozo wa umiliki",
+    "raiseHint": "Ikiwa mteja huyu alikuja kwako kwanza, eleza kwa nini. Msimamizi wa Leadrat ataipitia; wakiamua kwa niaba yako, uongozi umesajiliwa kwa ajili yako.",
+    "reasonLabel": "Kwa nini mteja huyu ni wako?",
+    "reasonMin_one": "Angalau herufi {{count}} .",
+    "reasonMin_other": "Angalau vibambo {{count}} .",
+    "submit": "Tuma Mzozo",
+    "notProtected": "Hakuna mtu anayeshikilia ulinzi kwa mteja huyu kwa mradi huu tena - unaweza kusajili kiongozi sasa.",
+    "raised": "Mzozo {{id}} umetumwa kwa ukaguzi.",
+    "viewAll": "Tazama mizozo yangu"
+  },
+  "dashboard": {
+    "title": "Dashibodi",
+    "period": "Kipindi",
+    "lastDays_one": "siku {{count}}",
+    "lastDays_other": "Siku {{count}}",
+    "emptyTitle": "Karibu! Bado huna viongozi.",
+    "emptyHint": "Sajili kiongozi wako wa kwanza - tarehe ya mwisho ya kusambaza, kuhifadhi nafasi na makataa yako ya ulinzi yataonekana hapa.",
+    "tiles": {
+      "leads": "Jumla ya viongozi",
+      "newInPeriod_one": "{{count}} mpya katika kipindi hiki",
+      "newInPeriod_other": "{{count}} mpya katika kipindi hiki",
+      "accepted": "Imekubaliwa",
+      "booked": "Imehifadhiwa",
+      "bookedInPeriod_one": "{{count}} zimehifadhiwa katika kipindi hiki",
+      "bookedInPeriod_other": "{{count}} zimehifadhiwa katika kipindi hiki",
+      "conversion": "Uongofu",
+      "conversionHint": "Miongozo iliyohifadhiwa kama sehemu ya miongozo inayokubalika",
+      "protectedNow": "Imelindwa sasa",
+      "expiringSoon_one": "Ulinzi utaisha baada ya siku {{count}}",
+      "expiringSoon_other": "Ulinzi unaoisha baada ya siku {{count}}",
+      "disputedNow": "Imepingwa na wengine",
+      "disputedNowHint": "Unaongoza kwa mzozo wazi wa umiliki kutoka kwa mshirika mwingine",
+      "commissionEligible": "Tume inastahiki",
+      "commissionCancelled_one": "{{count}} imeghairiwa",
+      "commissionCancelled_other": "{{count}} imeghairiwa"
+    },
+    "chart": {
+      "title_one": "Usajili na uhifadhi kwa siku - siku {{count}} iliyopita",
+      "title_other": "Usajili na uhifadhi kwa siku - siku {{count}} zilizopita",
+      "registrations": "Usajili",
+      "bookings": "Uhifadhi"
+    },
+    "byStage": "Inaongoza kwa hali",
+    "bySource": "Inaongoza kwa chanzo",
+    "byReferral": "Inaongoza kwa hali ya rufaa",
+    "myDisputes": "Mizozo uliyoibua",
+    "noDisputes": "Hakuna mabishano yaliyotolewa.",
+    "unknown": "Haijawekwa",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM ya Nje (iliyoigwa)",
+      "PARTNER_CRM": "Imeongezwa na timu yako",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Kuunganisha",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Muda wa ulinzi utakwisha ndani ya siku {{count}} inayofuata",
+    "expiringTitle_other": "Muda wa ulinzi utakwisha ndani ya siku {{count}} zijazo",
+    "expiringEmpty": "Hakuna risasi inayopoteza ulinzi wake katika dirisha hili."
   }
 }

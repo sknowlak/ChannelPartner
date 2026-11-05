@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Zarezerwowane",
-    "pending": "Aże do"
+    "pending": "Aże do",
+    "status": {
+      "CONFIRMED": "Zarezerwowane",
+      "CANCELLED": "Rezerwacyjo pociepniynto"
+    }
   },
   "assign": {
     "unassigned": "Niyprzipisany",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Jeszcze brak projektu (niy ôdnoszōny)",
-    "notInList": "{{project}} (niyma na wykazie projektōw)"
+    "notInList": "{{project}} (niyma na wykazie projektōw)",
+    "protectionDays_one": "{{count}} -dniowo ôchrōna",
+    "protectionDays_other": "{{count}} -dniowo ôchrōna"
   },
   "journey": {
     "customer": "Klijynt",
@@ -76,7 +82,14 @@
     "progressHistory": "Historyjo postympu",
     "timesIn": "(czasy w {{timezone}} )",
     "backToMyLeads": "Nazod do mojich prowadzōncych",
-    "editLead": "Edytuj kliynta"
+    "editLead": "Edytuj kliynta",
+    "disputeBanner": "Inkszy partnyr zakwestiōnował włosność tego klienta. Admin Leadrat przeglōndo go - twoja ôchrōna ôstowo na placu do czasu, kej ôni decydujōm.",
+    "booking": "Rezerwacyjo",
+    "commission": "Ôbsztalować, kōmisyjo",
+    "notBooked": "Niy zarezerwowane",
+    "cancelledOn": "Pociepniynte w {{date}} .",
+    "cancelReason": "Powōd: {{reason}}",
+    "cancelledHint": "Baumajster pociepnōł rezerwacyjo - włosność ôperacyjno je znowu u Ciebie, a prawo do kōmisyje sōm pociepniynte. Je ôn prziwrocōny, jeźli prowadzynie je zaś zarezerwowane."
   },
   "referral": {
     "NOT_REFERRED": "Niy ôdnoszōne (brak projektu)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Baumajster zaakceptowoł ôdesłanie",
       "REFERRAL_REJECTED": "Builder ôdciepnōł ôdesłanie. Powōd: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin wczasnij uwolniōł duplikatowo ôchrōna. Powōd: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin zmiyniōł przipisany registracyjo z {{from}} na {{to}} . Powōd: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin zmiyniōł przipisany registracyjo z {{from}} na {{to}} . Powōd: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Prōba registracyje duplikatu bez inkszego partnyra była ôdciepniynto",
+      "BOOKING_CANCELLED": "Rezerwacyjo pociepniynto. Powōd: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Włosność ôperacyjno wrōciyła do partnyra",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kwalifikacyjo do kōmisyje pociepniynto z rezerwacyjōm",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Prziwrōcōno kwalifikacyjo do kōmisyje do nowyj rezerwacyje",
+      "OWNERSHIP_DISPUTE_RAISED": "Inkszy partnyr zakwestiōnowoł włosność tego klienta - admin Leadrat go przejzdrzi",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Spōr ô włosność tego kliynta bōł wycofany - twoja włosność je niyzmiyniōno",
+      "OWNERSHIP_DISPUTE_UPHELD": "Spōr ô włosności tego kliynta bōł przejzdrzōny - twoja włosność je potwierdzōno",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Zaregistrowany po tym, jak spōr ô włosność bōł rozstrzygniynty na twoja korzyść. Uwaga: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Ôchrōna zakōńczyła sie: spōr ô posiedzicielstwie bōł rozstrzygniynty na rzecz inkszego partnyra. Uwaga: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Tyn numer telefōnu niy ma ważny dlo {{country}} .",
     "COUNTRY_MISMATCH": "Proszōm wybrać ôdpedni kod kraju.",
     "NOT_MOBILE": "Proszōm wkludzić numer telefonu mobilnego, a niy linijo stacjōnarno."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Kwalifikowane do kōmisyje",
+      "PENDING": "W ôczekowaniu na kōmisyjo",
+      "CANCELLED": "Kōmisyjo pociepniynto"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Przipisowane ci",
+      "DISPUTED": "Przipisowanie kwestiōnowane"
+    }
+  },
+  "result": {
+    "none": "Brak wynikōw registracyje do pokozanio. Nojprzōd zaregistruj kliynta.",
+    "acceptedTitle": "Zaregistrowany prowadzynie",
+    "rejectedTitle": "Prowadzynie niyma zaregistrowane",
+    "protectionWindow": "Ôkno ôchrōny",
+    "protectedUntil": "Chrōniōne do",
+    "openLead": "Ôdewrzōny prowadzynie",
+    "addAnother": "Przidej inkszy kliynt",
+    "duplicate": "Duplikat - już chrōniōny",
+    "duplicateHint": "Tyn kliynt je już chrōniōny dlo tego projektu bez inkszo registracyjo, tōż niy mōg być zaregistrowany dlo Ciebie.",
+    "existingProtectedUntil": "Bydōnco registracyjo je chrōniōno do"
+  },
+  "disputes": {
+    "title": "Moje spory",
+    "intro": "Sprzyczki ô włosności, kere podniosłeś dlo kliyntōw, co ôstały ôdciepniynte jako duplikaty. Admin Leadrat przeglōndo kożdy z nich.",
+    "empty": "Niy podniosłeś żodnych sprzyczek. Jeźli kliyntowi, kerego prziwiydziōłeś, ôdmōwi sie jako duplikat, możesz to zakwestiōnować z wyniku registracyje.",
+    "columns": {
+      "dispute": "Spiyrka",
+      "reason": "Twōj powōd",
+      "outcome": "Wynik"
+    },
+    "status": {
+      "OPEN": "Pod przeglōndym",
+      "UPHELD": "Niy na twoja korzyść",
+      "OVERTURNED": "Decydowano na twoja korzyść",
+      "WITHDRAWN": "Wycofane"
+    },
+    "awaitingReview": "Czekajōm na recynzyjo admina",
+    "openNewLead": "Ôtwōrz swoja prowadzynie {{id}}",
+    "withdraw": "Wycofać",
+    "withdrawConfirm": "Wycofaj swoja spōr ô {{name}} ? Teroźne włosność ôstowo tak, jak je.",
+    "raise": "Spōr włosności",
+    "raiseTitle": "Spōr włosności",
+    "raiseHint": "Jeźli tyn kliynt prziszoł do Ciebie piyrszy, wyklaruj czymu. Admin Leadrat przejzdrzi go; jeźli decydujōm na twoja korzyść, to prowadzynie je zaregistrowane dlo ciebie.",
+    "reasonLabel": "Czymu tyn kliynt je twoj?",
+    "reasonMin_one": "Przynojmynij znak {{count}} .",
+    "reasonMin_other": "Przynojmynij {{count}} znakōw.",
+    "submit": "Wysyłaj spōr",
+    "notProtected": "Niykogo już niy ôchrōnio tego kliynta w tym projektie - możesz zaregistrować lead teroz.",
+    "raised": "Spōr {{id}} wysłany do przeglōndu.",
+    "viewAll": "Zobŏcz moje spory"
+  },
+  "dashboard": {
+    "title": "Tabula rozdzielczo",
+    "period": "Ôkres",
+    "lastDays_one": "{{count}} dziyń",
+    "lastDays_other": "{{count}} dni",
+    "emptyTitle": "Witej! Niy masz jeszcze żodnych prowadzyń.",
+    "emptyHint": "Zaregistruj swoja piyrszo kliynta - twoja pipeline, termyny rezerwacyje i ôchrōny pokożōm sie tutaj.",
+    "tiles": {
+      "leads": "Cołkość potencjalnych kliyntōw",
+      "newInPeriod_one": "{{count}} nowe w tym ôkresie",
+      "newInPeriod_other": "{{count}} nowe w tym ôkresie",
+      "accepted": "Zaakceptowane",
+      "booked": "Zarezerwowane",
+      "bookedInPeriod_one": "{{count}} zarezerwowane w tym ôkresie",
+      "bookedInPeriod_other": "{{count}} zarezerwowane w tym ôkresie",
+      "conversion": "Kōnwersyjo",
+      "conversionHint": "Zarezerwowane potencjalne kliynty jako udzioł w zaakceptowanych potencjalnych kliyntach",
+      "protectedNow": "Chrōniōny teroz",
+      "expiringSoon_one": "Ôchrōna kōńczōnco sie na dniu {{count}}",
+      "expiringSoon_other": "Ôchrōna kōńczōnco sie na {{count}} dniach",
+      "disputedNow": "Spōrne bez inkszych",
+      "disputedNowHint": "Twoje kliynty z ôtwartōm sprzyczkōm ô włosności ôd inkszego partnyra",
+      "commissionEligible": "Kwalifikowane do kōmisyje",
+      "commissionCancelled_one": "{{count}} pociepniynte",
+      "commissionCancelled_other": "{{count}} pociepniynte"
+    },
+    "chart": {
+      "title_one": "Registracyje i rezerwacyje na dziyń - ôstatni {{count}} dziyń",
+      "title_other": "Registracyje i rezerwacyje na dziyń - ôstatnie {{count}} dni",
+      "registrations": "Registracyje",
+      "bookings": "Rezerwacyje"
+    },
+    "byStage": "Prowadzi podle statusu",
+    "bySource": "Prowadzi po zdrzōdle",
+    "byReferral": "Prowadzi podle statusu ôdesłanio",
+    "myDisputes": "Spory, kere podniosłeś",
+    "noDisputes": "Niy podniysiōno żodnych sprzyczek.",
+    "unknown": "Niy ustawiōne",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Zewnyntrzny CRM (symulowany)",
+      "PARTNER_CRM": "Przidane bez twoja drużyna",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integracyjo",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Ôchrōna wygasowo w dalszym {{count}} dniu",
+    "expiringTitle_other": "Ôchrōna wygasuje w nastympujōncych {{count}} dniach",
+    "expiringEmpty": "Żodyn ôdwod niy traci swojij ôchrōny w tym ôknie."
   }
 }

@@ -30,7 +30,8 @@
       "registered": "Skrásett"
     },
     "booked": "Bílagt",
-    "empty": "Ongar tilvísingar enn."
+    "empty": "Ongar tilvísingar enn.",
+    "bookingCancelled": "Bílegging avlýst"
   },
   "detail": {
     "customer": "Viðskiftafólk",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Bílegging váttað.",
       "accepted": "Tilvísing góðtikin.",
-      "rejected": "Tilvísing vrakað."
+      "rejected": "Tilvísing vrakað.",
+      "bookingCancelled": "Bílegging avlýst."
     },
-    "backToReferrals": "Aftur til tilvísingar"
+    "backToReferrals": "Aftur til tilvísingar",
+    "bookingCancelled": "Bílegging avlýst",
+    "cancelBooking": "Avlýs bílegging",
+    "cancelReasonLabel": "Orsøk til at avlýsa (víst samstarvsfelaganum) *",
+    "cancelBookingHint": "Rakstrarligi ognarrætturin fer aftur til samstarvsfelagan og teirra provisjónsrættur er avtikin. Leiðslan kann bíleggjast aftur seinni.",
+    "cancelBookingConfirm": "Avlýs bíleggingina"
   },
   "history": {
     "title": "Søga",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kommissiónsrættur er stovnaður",
       "HANDOVER_COMPLETED": "Handanin liðug",
       "ADMIN_PROTECTION_RELEASED": "Admin gav út dupultverju tíðliga. Orsøk: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin hevur umskipað tilmeldingina frá {{from}} til {{to}} . Orsøk: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin hevur umskipað tilmeldingina frá {{from}} til {{to}} . Orsøk: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ein tvítøk av skrásetingarroynd hjá einum øðrum samstarvsfelaga varð avvíst.",
+      "BOOKING_CANCELLED": "Bílegging avlýst. Orsøk: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Rakstrarligi ognarrætturin aftur til samstarvsfelagan",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kommissiónsrættur avlýstur við bíleggingini",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kommissiónsrætturin endurreistur til nýggju bíleggingina"
     }
   }
 }

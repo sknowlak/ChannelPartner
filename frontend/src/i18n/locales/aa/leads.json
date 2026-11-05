@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Tibbixsimeh",
-    "pending": "Takkare kalah yaniinim"
+    "pending": "Takkare kalah yaniinim",
+    "status": {
+      "CONFIRMED": "Tibbixsimeh",
+      "CANCELLED": "Arac yaysibixeenim duugumteh"
+    }
   },
   "assign": {
     "unassigned": "Mixxaagime wayte",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Uxih cugayso matan (matrusinna)",
-    "notInList": "{{project}} (cugayso rortal matan)"
+    "notInList": "{{project}} (cugayso rortal matan)",
+    "protectionDays_one": "{{count}} -ayro kalalu",
+    "protectionDays_other": "{{count}} -ayro kalalu"
   },
   "journey": {
     "customer": "Maqmiili",
@@ -76,7 +82,14 @@
     "progressHistory": "Maysaasa Aydaadu",
     "timesIn": "(uddur addat {{timezone}} )",
     "backToMyLeads": "Yi miraaciinu fan uduur",
-    "editLead": "miraacisa ceysas"
+    "editLead": "miraacisa ceysas",
+    "disputeBanner": "gersi waklentit ta maqmiilwak ikoytiinul anaakarteh. Miraaciini Leadrat kusaaqisah yan- ku kalali aracal sugelem oson margaqa beyaanam fan.",
+    "booking": "arac yaysibixeenimi",
+    "commission": "Komishiini",
+    "notBooked": "Makibbiminna",
+    "cancelledOn": "Duugumteh {{date}} .",
+    "cancelReason": "Sabab: {{reason}}",
+    "cancelledHint": "xiso arac yaysibixeenim duugeh- abnisso lewanna kollih tuduureeh komiishin xiqto duugumteh. miraaciino qagitak yunkuttube kaa tekkek aduurele."
   },
   "referral": {
     "NOT_REFERRED": "Matanbulla ( cugayso mali)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "xisne tatrusso oggoleh",
       "REFERRAL_REJECTED": "Xise tatrusso cineh. Sabab: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Saqal qagaaqagitak kalalu udurruteh ruube. Sabab: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Saqal qagitak mixxaagiseh maysarraqa {{from}} ilaa {{to}} . Sabab: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Saqal qagitak mixxaagiseh maysarraqa {{from}} ilaa {{to}} . Sabab: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "gersi wakliiti maysarraqa gibbati cinnimteh",
+      "BOOKING_CANCELLED": "Arac yaysibixeenim duugumteh. Sabab: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "taamah ikoytiinu wakliita fan yuduureh",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "komishin xiqto duugumteh arac yaysibixeenimih",
+      "COMMISSION_ELIGIBILITY_RESTORED": "komiishin xiqto qusba arac yaysibixeenim yuduureh",
+      "OWNERSHIP_DISPUTE_RAISED": "gersi wakliiti ta maqmiilwak ikoytiinul tuhat- Leadrat xiinisso tet sekkaacisele",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "ikoytiinih tuhat ta maqmiil yewqeh- ku ikoytiinu mamilaagima",
+      "OWNERSHIP_DISPUTE_UPHELD": "ikoytiinu tuhat ta maqmil kusaaqimeh- ku ikoytiinu diggooweh",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "ku ikoytiinih tuhat ku fayxil faatacimeek lakal tunkuttube. Kassiisi: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "kalali gaba kaleh: ikoytiinu tuhat faatacimeh gersi waklentit fayxil. Kassiisi: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Ta silkih casri {{country}} gitat mayana.",
     "COUNTRY_MISMATCH": "Ku maganak gitat tan baaxoh bedu door.",
     "NOT_MOBILE": "Ku maganak mobaayil casri culus, baaxoh addah silki hinna."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "komishin xiqto le",
+      "PENDING": "komishin qammaala",
+      "CANCELLED": "komishin duugumteh"
+    },
+    "attribution": {
+      "ATTRIBUTED": "koh weeloysimte",
+      "DISPUTED": "weelo tuhat"
+    }
+  },
+  "result": {
+    "none": "Maysarraqa xali mayanbulla. Qimbol miraaciinu taysaqarrimeh.",
+    "acceptedTitle": "Miracsenta tunkuttubeh",
+    "rejectedTitle": "Miraaciino mankuttubinna",
+    "protectionWindow": "kalali xangabu",
+    "protectedUntil": "Dacayrime",
+    "openLead": "Miraaciinu Fak",
+    "addAnother": "Gersi miraaca edde osis",
+    "duplicate": "Qagaaqagitak - naharal elle daccarsimeh yan",
+    "duplicateHint": "Ta maqmiil ta cugaysoh gersi maysarraqal daccarsimeh yan, tonnal koh mayankuttube.",
+    "existingProtectedUntil": "Sugte Maysarraqa kalalimteh ilaa"
+  },
+  "disputes": {
+    "title": "Yi anaakar",
+    "intro": "ikoytiinu boodittey atu ugusse maqmilwa too cinnimteh qagaaqagitak. Leadrat saqal kulli tii kusaaqisa.",
+    "empty": "Atu wali daqwat ugusseh matan. atu bahte maqmiil cinnime kaa tekkek, atu maysarraqa xalootut anaakartam duddah.",
+    "columns": {
+      "dispute": "Qaduwwi",
+      "reason": "Ku sabab",
+      "outcome": "Xalu"
+    },
+    "status": {
+      "OPEN": "kusaq gubat yan",
+      "UPHELD": "ku fayxi hinna",
+      "OVERTURNED": "ku fayxil faaticiseh",
+      "WITHDRAWN": "Yewqeenih"
+    },
+    "awaitingReview": "Xiinissoh sekkacsa qammaala",
+    "openNewLead": "Isi miracsenta {{id}}",
+    "withdraw": "Ewqa",
+    "withdrawConfirm": "isi tuhat eyyeq {{name}} ? Awayih ikoytiinu elle yaninnal raaqele.",
+    "raise": "Anaakar ikoytiinu",
+    "raiseTitle": "Anaakar ikoytiinu",
+    "raiseHint": "Ta maqmiil qemmol kol yemeetek, macah kinnim baxxaqis. Leadrat saqal tet kusaaqisele; oson ku fayxil margaqa beenik, miraaciino koh tunkuttubeh.",
+    "reasonLabel": "Ta maqmiil kum macaay?",
+    "reasonMin_one": "Dagnal {{count}} weelo.",
+    "reasonMin_other": "Dagnal {{count}} kilqaaqi.",
+    "submit": "Anaakar ruuba",
+    "notProtected": "Faxe num kalalu ta maqmiilwak ta cugaysoh faxem takkay- atu miraaciino away taysaqarrimem duddah.",
+    "raised": "Anaakar {{id}} sekkacsuh ruube.",
+    "viewAll": "Yi tuhat wagita"
+  },
+  "dashboard": {
+    "title": "Daashborxi",
+    "period": "Sona qabala",
+    "lastDays_one": "{{count}} ayro",
+    "lastDays_other": "{{count}} ayroora",
+    "emptyTitle": "Arcib! Atu taham fan miraaciinu mantu.",
+    "emptyHint": "kok naharsi miraaciino taysaqarrime- kok paayip gita, arac yaysibixeenim kee kalali maymarraqah ayro takkel ambulleele.",
+    "tiles": {
+      "leads": "Ittat tan miraaciini",
+      "newInPeriod_one": "{{count}} qusba ta uddurut",
+      "newInPeriod_other": "{{count}} qusba ta uddurut",
+      "accepted": "oggolimteh",
+      "booked": "Tibbixsimeh",
+      "bookedInPeriod_one": "{{count}} ta uddurut yunkuttube",
+      "bookedInPeriod_other": "{{count}} ta uddurut yunkuttube",
+      "conversion": "korsiyyi",
+      "conversionHint": "tintibixe miraaciini oggol le miraaciini luddih innal",
+      "protectedNow": "Away daccarsimteh",
+      "expiringSoon_one": "kalali gaba kalti {{count}} ayro",
+      "expiringSoon_other": "kalali gaba kalti {{count}} ayroora",
+      "disputedNow": "Gersi marih gabat anaakar",
+      "disputedNowHint": "ku miraaciini fakut yan ikoytiinih tuhat gersi wakliiti",
+      "commissionEligible": "komishin xiqto le",
+      "commissionCancelled_one": "{{count}} duugumteh",
+      "commissionCancelled_other": "{{count}} duugumteh"
+    },
+    "chart": {
+      "title_one": "Maysarraqaa kee arac yaysibixeenim ayrol- ellecabo {{count}} ayro",
+      "title_other": "Maysarraqaa kee arac yaysibixeenim ayrol- ellecabo {{count}} ayroora",
+      "registrations": "Maysarraqa",
+      "bookings": "Arac yaysibixeenimi"
+    },
+    "byStage": "caalatal miraacisa",
+    "bySource": "Raceenak miraacisa",
+    "byReferral": "Tabsi caalatal miraacisa",
+    "myDisputes": "Atu ugusseh tan tuhat",
+    "noDisputes": "Wali tuhat matan.",
+    "unknown": "mabicinna",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Iroh CRM (celsis)",
+      "PARTNER_CRM": "Ku dokon ossimeh",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Asgaarawu",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "kalali gaba kalam ciggilta {{count}} ayro",
+    "expiringTitle_other": "kalali gaba kalam ciggilta {{count}} ayroorah addat",
+    "expiringEmpty": "Ta xangabul uli miracsenta kalalu weeh mayana."
   }
 }

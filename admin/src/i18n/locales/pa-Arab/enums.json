@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "اہل",
-    "PENDING": "التواء اچ"
+    "PENDING": "التواء اچ",
+    "CANCELLED": "منسوخ کر دتا گیا"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "نقلی تحفظ جلدی جاری کرو",
-    "REASSIGN_PARTNER": "کسے ہور ساتھی نوں دوبارہ تفویض کرو"
+    "REASSIGN_PARTNER": "کسے ہور ساتھی نوں دوبارہ تفویض کرو",
+    "CANCEL_BOOKING": "بکنگ منسوخ کرو"
   },
   "dataType": {
     "TEXT": "متن",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "سپر ایڈمن",
     "ADMIN": "ایڈمن"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "تصدیق ہو گئی",
+    "CANCELLED": "منسوخ کر دتا گیا"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "منسوب کیتا گیا",
+    "DISPUTED": "متنازعہ"
+  },
+  "disputeStatus": {
+    "OPEN": "کھولو",
+    "UPHELD": "برقرار رکھیا گیا",
+    "OVERTURNED": "الٹ دتا گیا",
+    "WITHDRAWN": "واپس لیا گیا"
   }
 }

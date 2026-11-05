@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Booked ta'eera",
-    "pending": "Eeggataa kan jiru"
+    "pending": "Eeggataa kan jiru",
+    "status": {
+      "CONFIRMED": "Booked ta'eera",
+      "CANCELLED": "Booking haqame"
+    }
   },
   "assign": {
     "unassigned": "Kan hin ramadamne",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Ammatti pirojektiin hin jiru (hin referred) .",
-    "notInList": "{{project}} (tarree pirojektii keessa hin jiru) ."
+    "notInList": "{{project}} (tarree pirojektii keessa hin jiru) .",
+    "protectionDays_one": "{{count}} -eegumsa guyyaa",
+    "protectionDays_other": "{{count}} -eegumsa guyyaa"
   },
   "journey": {
     "customer": "Maamila",
@@ -76,7 +82,14 @@
     "progressHistory": "Seenaa Guddinaa",
     "timesIn": "(yeroowwan {{timezone}} keessatti )",
     "backToMyLeads": "Gara Hooggantoota Kootti Deebi'aa",
-    "editLead": "Gulaali Hogganaa"
+    "editLead": "Gulaali Hogganaa",
+    "disputeBanner": "Michuu biraa abbummaa maamila kanaa falmeera. Admin Leadrat tokko ilaalaa jira - eegumsi kee hanga isaan murteessanitti bakka isaa jiraata.",
+    "booking": "Booking gochuu",
+    "commission": "Koomishinii",
+    "notBooked": "Booked hin taane",
+    "cancelledOn": "{{date}} irratti haqame.",
+    "cancelReason": "Sababni: {{reason}}",
+    "cancelledHint": "Ijaarsichi buukii haqee jira - abbummaan hojii sitti deebi'ee jira, ulaagaan komishiniis haqameera. Yoo liidiin ammas booked ta'e ni deebi'a."
   },
   "referral": {
     "NOT_REFERRED": "Hin referred (pirojektii hin qabu) .",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Ijaarsichi rifaralaa fudhate",
       "REFERRAL_REJECTED": "Builder rifaralaa kana dide. Sababni: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin eegumsa dachaa dafee gadhiise. Sababni: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Bulchaan galmee {{from}} irraa gara {{to}} tti irra deebi'ee ramade. Sababni: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Bulchaan galmee {{from}} irraa gara {{to}} tti irra deebi'ee ramade. Sababni: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Yaaliin galmee dachaa hiriyaa biraatiin godhame fudhatama dhabe",
+      "BOOKING_CANCELLED": "Booking haqame. Sababni: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Abbummaan hojii michuutti deebi’e",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ulaagaa komishinii buukii waliin haqame",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ulaagaa komishinii buukii haaraa kanaaf deebi'eera",
+      "OWNERSHIP_DISPUTE_RAISED": "Michuu biraa abbummaa maamila kanaa falme - admin Leadrat tokko ni ilaala",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Falmiin abbummaa maamila kana irratti ture ofirraa kaafame - abbummaan kee hin jijjiiramne",
+      "OWNERSHIP_DISPUTE_UPHELD": "Falmiin abbummaa maamila kana irratti mul'ate ilaalameera - abbummaan kee mirkanaa'eera",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Falmiin abbummaa keessan erga isin fayyadutti murtaa'ee booda galmaa'e. Hubachiisa: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Eegumsi xumurame: falmiin abbummaa michuu biraa fayyadu murtaa’e. Hubachiisa: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Lakkoofsi bilbilaa kun {{country}} tiif sirrii miti.",
     "COUNTRY_MISMATCH": "Mee koodii biyyaa sirrii filadhu.",
     "NOT_MOBILE": "Lakkoofsa mobaayilaa malee bilbila lafaa hin galchi."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komishiniin ulaagaa guutuu qaba",
+      "PENDING": "Komishiniin eegamaa jira",
+      "CANCELLED": "Komishiniin haqame"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Siif madda",
+      "DISPUTED": "Attribution falmisiisaa ta'e"
+    }
+  },
+  "result": {
+    "none": "Bu'aan galmee agarsiisuuf hin jiru. Dursa dursa galmeessi.",
+    "acceptedTitle": "Liidii galmaa'e",
+    "rejectedTitle": "Liidiin hin galmaa'in",
+    "protectionWindow": "Foddaa Eegumsaa",
+    "protectedUntil": "Eegamaa Hanga",
+    "openLead": "Hoggansa Banaa",
+    "addAnother": "Liidii Biraa Dabalaa",
+    "duplicate": "Dachaa - duraan eegameera",
+    "duplicateHint": "Maamiltoonni kun duraanuu pirojektii kanaaf galmee biraatiin eegumsa argataniiru, kanaaf isiniif galmaa'uu hin dandeenye.",
+    "existingProtectedUntil": "Galmeen jiru hanga..."
+  },
+  "disputes": {
+    "title": "Falmii Koo",
+    "intro": "Falmii abbummaa maamiltootaaf kaafte kan akka dachaatti dide. Admin Leadrat tokko tokkoon tokkoon isaanii gamaaggama.",
+    "empty": "Falmii tokkollee hin kaafne. Maamiltoonni ati fidde akka dachaatti yoo dide bu’aa galmee irraa falmuu dandeessa.",
+    "columns": {
+      "dispute": "Walitti bu'iinsa",
+      "reason": "Sababni kee",
+      "outcome": "Bu'aa"
+    },
+    "status": {
+      "OPEN": "Gamaaggama jala jira",
+      "UPHELD": "Si fayyadu miti",
+      "OVERTURNED": "Si fayyadu murteesse",
+      "WITHDRAWN": "Ofirraa baafame"
+    },
+    "awaitingReview": "Admin review eegaa jira",
+    "openNewLead": "Liidii kee bani {{id}}",
+    "withdraw": "Gidduutti dhaabuu",
+    "withdrawConfirm": "Falmii kee {{name}} ? Abbummaan amma jiru akkuma jirutti hafa.",
+    "raise": "Falmii abbummaa",
+    "raiseTitle": "Falmii abbummaa",
+    "raiseHint": "Maamiltoonni kun dursee yoo isinitti dhufe maaliif akka ta'e ibsi. Admin Leadrat tokko ni ilaala; yoo isin fayyadu murteessan, dursi siif galmaa’a.",
+    "reasonLabel": "Maamiltoonni kun maaliif kan keessan?",
+    "reasonMin_one": "Yoo xiqqaate arfii {{count}} .",
+    "reasonMin_other": "Yoo xiqqaate arfiilee {{count}} .",
+    "submit": "Falmii Ergaa",
+    "notProtected": "Kana booda namni pirojektii kanaaf maamila kana irratti eegumsa hin qabu - amma dursaa galmeessuu dandeessu.",
+    "raised": "Falmiin {{id}} gamaaggamaaf ergame.",
+    "viewAll": "Falmii koo ilaalaa"
+  },
+  "dashboard": {
+    "title": "Daashboordii",
+    "period": "Turtii",
+    "lastDays_one": "{{count}} guyyaa",
+    "lastDays_other": "{{count}} guyyoota",
+    "emptyTitle": "Baga nagaan dhufte! Hanga ammaatti leads hin qabdu.",
+    "emptyHint": "Dursa kee isa jalqabaa galmeessi - yeroon xumuraa ujummoo, buukii fi eegumsaa kee asitti ni mul'ata.",
+    "tiles": {
+      "leads": "Waliigala dursa",
+      "newInPeriod_one": "{{count}} yeroo kana keessatti haaraa",
+      "newInPeriod_other": "{{count}} yeroo kana keessatti haaraa",
+      "accepted": "Fudhatama qaba",
+      "booked": "Booked ta'eera",
+      "bookedInPeriod_one": "{{count}} yeroo kana keessatti booked",
+      "bookedInPeriod_other": "{{count}} yeroo kana keessatti booked",
+      "conversion": "Jijjiirama",
+      "conversionHint": "Booked leads akka qooda lead fudhatama qabuutti",
+      "protectedNow": "Amma eegumsa argate",
+      "expiringSoon_one": "Eegumsi guyyaa {{count}} keessatti xumurama",
+      "expiringSoon_other": "Eegumsi guyyoota {{count}} keessatti xumurama",
+      "disputedNow": "Namoota birootiin falmame",
+      "disputedNowHint": "Falmii abbummaa banaa hiriyaa biraa irraa dhufuun kee geggeessa",
+      "commissionEligible": "Komishiniin ulaagaa guutuu qaba",
+      "commissionCancelled_one": "{{count}} haqame",
+      "commissionCancelled_other": "{{count}} haqame"
+    },
+    "chart": {
+      "title_one": "Galmee fi buukii guyyaa tokkotti - guyyaa {{count}} isa dhumaa",
+      "title_other": "Galmee fi buukii guyyaatti - guyyoota {{count}} darbu",
+      "registrations": "Galmee",
+      "bookings": "Bookings gochuu"
+    },
+    "byStage": "Sadarkaadhaan dursa",
+    "bySource": "Madda isaatiin geggeessa",
+    "byReferral": "Haala rifaralaatiin ni geggeessa",
+    "myDisputes": "Falmii ati kaafte",
+    "noDisputes": "Falmiin ka'e hin jiru.",
+    "unknown": "Hin saagamne",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM alaa (fakkeessaa) .",
+      "PARTNER_CRM": "Garee keessaniin dabalameera",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Ida'amuu",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Eegumsi guyyaa itti aanu {{count}} keessatti xumurama",
+    "expiringTitle_other": "Eegumsi guyyoota {{count}} itti aanan keessatti xumurama",
+    "expiringEmpty": "Liidiin kamiyyuu foddaa kana keessatti eegumsa isaa hin dhabu."
   }
 }

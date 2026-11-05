@@ -30,7 +30,8 @@
       "registered": "Регистрируйтӧма"
     },
     "booked": "Бронируйтӧма",
-    "empty": "Направлениеяс абу на."
+    "empty": "Направлениеяс абу на.",
+    "bookingCancelled": "Бронирование бырӧдӧма ."
   },
   "detail": {
     "customer": "Вӧдитчысь",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Бронирование подтвержден.",
       "accepted": "Направление примитöма.",
-      "rejected": "Направлениеысь ӧткажитчис."
+      "rejected": "Направлениеысь ӧткажитчис.",
+      "bookingCancelled": "Бронирование аннулируйтӧма."
     },
-    "backToReferrals": "Бӧр локтӧны направлениеяс дорӧ ."
+    "backToReferrals": "Бӧр локтӧны направлениеяс дорӧ .",
+    "bookingCancelled": "Бронирование бырӧдӧма .",
+    "cancelBooking": "Отмена бронирования",
+    "cancelReasonLabel": "Отмена помка (петкӧдлӧма партнерлы) * .",
+    "cancelBookingHint": "Оперативнӧй власьт мунӧ бӧр партнерлы да налӧн комиссия вылӧ правоыс бырӧдӧма. Свинечсӧ позьӧ бронируйтны выльысь сёрӧнджык.",
+    "cancelBookingConfirm": "Отменитны бронирование ."
   },
   "history": {
     "title": "История",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Комиссия лӧсьӧдӧма .",
       "HANDOVER_COMPLETED": "Сдача помавсьӧ .",
       "ADMIN_PROTECTION_RELEASED": "Админ лэдзис дубликат дорйӧм водзджык. Причина: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Админ выльысь сетіс регистрациясӧ {{from}} дорысь {{to}} . Причина: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Админ выльысь сетіс регистрациясӧ {{from}} дорысь {{to}} . Причина: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Мӧд партнерсянь дубликатын регистрируйтчыны зільӧмысь ӧткажитчис .",
+      "BOOKING_CANCELLED": "Бронирование аннулируйтӧма. Причина: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Оперативнӧй власьт бергӧдӧма партнерлы .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Комиссия вылӧ право бырӧдӧма броньӧн .",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Выль бронь вылӧ комиссиялысь правосӧ восстановитісны ."
     }
   }
 }

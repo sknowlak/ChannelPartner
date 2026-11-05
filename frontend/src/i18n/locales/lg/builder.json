@@ -30,7 +30,8 @@
       "registered": "Bawandiisiddwa"
     },
     "booked": "Booked",
-    "empty": "Tewali referrals n'okutuusa kati."
+    "empty": "Tewali referrals n'okutuusa kati.",
+    "bookingCancelled": "Booking esaziddwamu"
   },
   "detail": {
     "customer": "Omuguzi",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Booking ekakasiddwa.",
       "accepted": "Okusindikibwa kukkirizibwa.",
-      "rejected": "Okusindikibwa kugaaniddwa."
+      "rejected": "Okusindikibwa kugaaniddwa.",
+      "bookingCancelled": "Booking esaziddwamu."
     },
-    "backToReferrals": "Okudda ku Referrals"
+    "backToReferrals": "Okudda ku Referrals",
+    "bookingCancelled": "Booking esaziddwamu",
+    "cancelBooking": "Sazaamu Booking",
+    "cancelReasonLabel": "Ensonga lwaki osazaamu (eragiddwa munno) *",
+    "cancelBookingHint": "Obwannannyini obw’emirimu budda eri omukwanaganya era ebisaanyizo byabwe eby’akakiiko bisazibwamu. Okukulembera osobola okuddamu okuteekebwako kaadi oluvannyuma.",
+    "cancelBookingConfirm": "Sazaamu okubuuka"
   },
   "history": {
     "title": "Ebyafaayo",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Ebisaanyizo by’akakiiko bitondeddwawo",
       "HANDOVER_COMPLETED": "Okukwasa abantu kuwedde",
       "ADMIN_PROTECTION_RELEASED": "Admin yafulumya duplicate protection nga bukyali. Ensonga: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin yazzeemu okugaba okwewandiisa okuva ku {{from}} okudda ku {{to}} . Ensonga: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin yazzeemu okugaba okwewandiisa okuva ku {{from}} okudda ku {{to}} . Ensonga: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Okugezaako okwewandiisa emirundi ebiri okwakolebwa munne omulala kwagaaniddwa",
+      "BOOKING_CANCELLED": "Booking esaziddwamu. Ensonga: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Obwannannyini obw’emirimu bwadda eri omukwanaganya",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ebisaanyizo by’akakiiko byasaziddwamu nga booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ebisaanyizo by’akakiiko bikomezeddwawo ku booking empya"
     }
   }
 }

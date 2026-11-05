@@ -30,7 +30,8 @@
       "registered": "Rekisteröity"
     },
     "booked": "Varattu",
-    "empty": "Ei vielä viittauksia."
+    "empty": "Ei vielä viittauksia.",
+    "bookingCancelled": "Varaus peruttu"
   },
   "detail": {
     "customer": "Asiakas",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Varaus vahvistettu.",
       "accepted": "Suositus hyväksytty.",
-      "rejected": "Suositus hylätty."
+      "rejected": "Suositus hylätty.",
+      "bookingCancelled": "Varaus peruttu."
     },
-    "backToReferrals": "Takaisin viittauksiin"
+    "backToReferrals": "Takaisin viittauksiin",
+    "bookingCancelled": "Varaus peruttu",
+    "cancelBooking": "Peruuta varaus",
+    "cancelReasonLabel": "Peruuttamisen syy (näytetään kumppanille) *",
+    "cancelBookingHint": "Operatiivinen omistusoikeus palautuu kumppanille ja hänen provisiokelpoisuus peruutetaan. Johdon voi varata uudelleen myöhemmin.",
+    "cancelBookingConfirm": "Peruuta varaus"
   },
   "history": {
     "title": "Historia",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Komission tukikelpoisuus luotu",
       "HANDOVER_COMPLETED": "Luovutus suoritettu",
       "ADMIN_PROTECTION_RELEASED": "Järjestelmänvalvoja julkaisi kaksoissuojauksen aikaisin. Syy: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Järjestelmänvalvoja määritti rekisteröinnin uudelleen osoitteesta {{from}} henkilölle {{to}} . Syy: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Järjestelmänvalvoja määritti rekisteröinnin uudelleen osoitteesta {{from}} henkilölle {{to}} . Syy: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Toisen kumppanin kaksoisrekisteröintiyritys hylättiin",
+      "BOOKING_CANCELLED": "Varaus peruttu. Syy: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operatiivinen omistusoikeus palautettiin kumppanille",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Välityskelpoisuus peruuntui varauksen yhteydessä",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Provisiokelpoisuus palautettiin uudelle varaukselle"
     }
   }
 }

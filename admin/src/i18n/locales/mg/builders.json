@@ -43,7 +43,9 @@
       "name": "Anarana",
       "city": "Tanàna",
       "status": "sata",
-      "actions": "asa"
+      "actions": "asa",
+      "protection": "Fiarovana dika mitovy",
+      "matchOn": "Mandeha ny dika mitovy"
     },
     "closeReferrals": "Akatona ho an'ny referral",
     "reopen": "mamerina",
@@ -55,6 +57,25 @@
       "add": "Ampio tetikasa",
       "created": "Noforonina {{name}} ."
     },
-    "back": "Hiverina any amin'ny Builders"
+    "back": "Hiverina any amin'ny Builders",
+    "protection": {
+      "days_one": "{{count}} andro",
+      "days_other": "{{count}} andro",
+      "globalDays_one": "Maneran-tany ( {{count}} andro)",
+      "globalDays_other": "Maneran-tany ( {{count}} andro)",
+      "globalDefault": "Global default",
+      "placeholder": "Andro fiarovana (foana = default maneran-tany)",
+      "saved": "Fiarovana dika mitovy nohavaozina ho an'ny {{name}} .",
+      "hint": "Fiarovana avo roa heny: 1-3650 andro, na avelao ho banga hampiasa ny default manerantany avy amin'ny Settings. Ny fanovana dia mihatra amin'ny fisoratana anarana vaovao ihany - ny efa misy dia mitazona ny lany daty."
+    },
+    "matching": {
+      "global": "Global default",
+      "globalWith": "Maneran-tany ( {{fields}} )",
+      "mobile": "Nomerao finday",
+      "email": "mailaka",
+      "both": "Laharana finday + mailaka",
+      "saved": "Havaozina ho an'ny {{name}} ny fampifanarahana dika mitovy",
+      "hint": "Izay antsipiriany manao fisoratana anarana roa ho mpanjifa iray ho an'ny tetikasa iray. Mihatra amin'ny fanamarinana dika mitovy ny fanovana manomboka izao; tsy misy fiantraikany ny fiarovana misy."
+    }
   }
 }

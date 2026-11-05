@@ -49,8 +49,73 @@
       "newPartnerId": "Bazkide ID berria",
       "reason": "Arrazoia (beharrezkoa)",
       "apply": "Aplikatu Gainditzea",
-      "applying": "Aplikatzen..."
+      "applying": "Aplikatzen...",
+      "cancelBookingHint": "Utziz gero, erreserba eta haren komisioa bertan behera utzita markatzen dira, bazkideari jabetza operatiboa itzultzen dio eta eraikitzaileari aukera ematen dio berriro berme hau erreserbatu.",
+      "cancelBookingConfirm": "Erreserba hau bertan behera utzi nahi duzu? Bere batzordea ere bertan behera utzi da. Hau zure izenarekin eta arrazoiarekin erregistratuta dago."
     },
-    "timelineTitle": "Ikuskaritza-kronologia (erregistro hau)"
+    "timelineTitle": "Ikuskaritza-kronologia (erregistro hau)",
+    "bookingStatus": "Erreserbaren egoera",
+    "commissionAttribution": "Batzordearen Esleipena",
+    "disputeOpen": "Bezero honen jabetza-gatazka bat irekita dago; beste bazkide batek dio berea dela. Gatazkak orrian erabakitzen da.",
+    "viewDisputes": "Ikusi gatazkak",
+    "cancellation": {
+      "title": "Erreserba bertan behera utzi da",
+      "hint": "Erreserba eta bere komisioa bertan behera geratzen dira; jabetza operatiboa bazkidearekin itzuli da eta eraikitzaileak berriro erreserbatu dezake berba hau.",
+      "at": "Bertan behera utzi da",
+      "by": "Ezeztatua",
+      "reason": "Arrazoia"
+    }
+  },
+  "disputes": {
+    "title": "Jabetza-gatazkak",
+    "hint": "Erregistroa bikoiztu gisa baztertu duen bazkide batek bezeroaren jabea norena den eztabaida dezake. Berrikusi bi aldeak eta erabaki.",
+    "statusFilter": "Gatazkaren egoera",
+    "allStatuses": "Egoera guztiak",
+    "empty": "Ez dago eztabaidarik egoera honekin.",
+    "columns": {
+      "dispute": "Gatazka",
+      "customer": "Bezeroa",
+      "project": "Proiektua",
+      "raisedBy": "by planteatua",
+      "heldBy": "Egungo jabea",
+      "status": "Egoera",
+      "raisedAt": "On altxatua"
+    },
+    "detail": {
+      "title": "{{id}}",
+      "raisedOn": "{{date}} sortu zen",
+      "raisingTitle": "by planteatua",
+      "holderTitle": "Egungo jabea",
+      "partner": "Bazkidea",
+      "raisedBy": "Nork bidalia",
+      "customerName": "Bezeroa",
+      "mobile": "Mugikorra",
+      "alternateMobile": "Ordezko mugikorra",
+      "email": "Posta elektronikoa",
+      "project": "Proiektua",
+      "reason": "Haien arrazoia",
+      "registration": "Izen ematea",
+      "registeredAt": "egunean erregistratuta",
+      "referral": "Erreferentzia",
+      "heldMissing": "Ezin izan da gordetako erregistroa aurkitu.",
+      "resolutionTitle": "Erabakia",
+      "outcome": "Emaitza",
+      "note": "Oharra",
+      "decidedBy": "Erabakita",
+      "decidedAt": "Erabakia",
+      "newRegistration": "Izen-emate berria",
+      "decideTitle": "Erabaki gatazka hau",
+      "noteLabel": "Erabakia azaltzen duen oharra (beharrezkoa)",
+      "noteRequired": "Idatzi ohar bat erabakitzeko.",
+      "uphold": "Eutsi",
+      "overturn": "Iraultzea",
+      "upholdEffect": "{{holder}} k bezeroa mantentzen du. Gatazka itxita dago eta ez da ezer aldatzen.",
+      "overturnEffect": "{{holder}} erabiltzailearen bikoiztutako babesa amaitzen da orain eta bezeroa {{partner}} -n erregistratuta dago erregistro berri gisa.",
+      "heldBookedHelp": "Bezero hau egungo jabearen bidez egiten da erreserba. Lehenik eta behin, bertan behera utzi erreserba hori (erregistroan administratzaileak gainidaztea), ondoren, baliogabetu:",
+      "confirmTitle": "Ziur al zaude?",
+      "confirmUphold": "Bai, eutsi",
+      "confirmOverturn": "Bai, irauli",
+      "back": "Itzuli Gatazkara"
+    }
   }
 }

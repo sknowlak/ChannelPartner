@@ -30,7 +30,8 @@
       "registered": "Narehistro"
     },
     "booked": "Gin-book",
-    "empty": "Wala pa sang mga referral."
+    "empty": "Wala pa sang mga referral.",
+    "bookingCancelled": "Kanselado ang booking"
   },
   "detail": {
     "customer": "Kustomer",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Nakumpirma ang booking.",
       "accepted": "Ginbaton ang referral.",
-      "rejected": "Ginsikway ang referral."
+      "rejected": "Ginsikway ang referral.",
+      "bookingCancelled": "Kanselado ang booking."
     },
-    "backToReferrals": "Balik sa mga Referral"
+    "backToReferrals": "Balik sa mga Referral",
+    "bookingCancelled": "Kanselado ang booking",
+    "cancelBooking": "Kanselahon ang Pag-book",
+    "cancelReasonLabel": "Rason sa pagkanselar (ginpakita sa kaupod) *",
+    "cancelBookingHint": "Ang pagpanag-iya sa operasyon nagabalik sa kaupod kag ang ila pagka-eligible sa komisyon ginakanselar. Ang lead mahimo nga ma-book liwat sa ulihi.",
+    "cancelBookingConfirm": "Kanselahon ang booking"
   },
   "history": {
     "title": "Historya",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Ang kwalipikasyon sa komisyon ginhimo",
       "HANDOVER_COMPLETED": "Natapos ang paghatag",
       "ADMIN_PROTECTION_RELEASED": "Ang admin nagpagawas sa duplicate nga proteksyon sayo. Rason: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Gin-assign liwat sang admin ang rehistrasyon halin sa {{from}} pakadto sa {{to}} . Rason: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Gin-assign liwat sang admin ang rehistrasyon halin sa {{from}} pakadto sa {{to}} . Rason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ang pagtinguha sa pagparehistro sang isa pa ka kaupod ginsikway",
+      "BOOKING_CANCELLED": "Kanselado ang booking. Rason: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ang pagpanag-iya sa operasyon ginbalik sa kaupod",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ang pagka-eligible sa komisyon ginkanselar sa booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ang kwalipikasyon sa komisyon ginbalik para sa bag-o nga booking"
     }
   }
 }

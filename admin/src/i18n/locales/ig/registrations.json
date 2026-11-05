@@ -49,8 +49,73 @@
       "newPartnerId": "ID onye mmekọ ọhụrụ",
       "reason": "Ihe kpatara (chọrọ)",
       "apply": "Tinye Mkpesa",
-      "applying": "Na-etinye..."
+      "applying": "Na-etinye...",
+      "cancelBookingHint": "Ịkagbu na-egosi ntinye akwụkwọ na ọrụ ya dị ka akagbuola, na-eweghachi onye ya na ya na-arụ ọrụ nwe, ma hapụ onye nrụpụta akwụkwọ ka ọ bụrụ ụzọ ọzọ.",
+      "cancelBookingConfirm": "Kagbuo ntinye akwụkwọ a? A kagbuola ọrụ ya. Edebanye aha a na ihe kpatara ya."
     },
-    "timelineTitle": "Audit Timeline (ndebanye aha a)"
+    "timelineTitle": "Audit Timeline (ndebanye aha a)",
+    "bookingStatus": "Ọnọdụ ntinye akwụkwọ",
+    "commissionAttribution": "Njirimara Commission",
+    "disputeOpen": "Esemokwu nwe meghere onye ahịa a - onye ọzọ na-ekwu na ọ bụ nke ha. A na-ekpebi ya na ibe esemokwu.",
+    "viewDisputes": "Lelee esemokwu",
+    "cancellation": {
+      "title": "Kagbuo ntinye akwụkwọ",
+      "hint": "A kagbuola ntinye akwụkwọ na ọrụ ya; Onye nwe ya na onye ya na ya na-arụkọ ọrụ alaghachila ma onye na-ewu ụlọ nwere ike idebe ụzọ a ọzọ.",
+      "at": "Kagbuo na",
+      "by": "Kagbuo site na",
+      "reason": "Ihe kpatara ya"
+    }
+  },
+  "disputes": {
+    "title": "Esemokwu Nwe",
+    "hint": "Onye mmekọ jụrụ ndebanye aha ya dị ka oyiri nwere ike ịrụ ụka onye nwe onye ahịa. Nyochaa akụkụ abụọ ahụ wee kpebie.",
+    "statusFilter": "Ọkwa esemokwu",
+    "allStatuses": "Ọnọdụ niile",
+    "empty": "Enweghị esemokwu na ọkwa a.",
+    "columns": {
+      "dispute": "Esemokwu",
+      "customer": "Onye ahịa",
+      "project": "Ihe oru ngo",
+      "raisedBy": "Onye tolitere",
+      "heldBy": "Onye nwe ugbu a",
+      "status": "Ọnọdụ",
+      "raisedAt": "Azụlitere na"
+    },
+    "detail": {
+      "title": "Esemokwu {{id}}",
+      "raisedOn": "ewelitere {{date}}",
+      "raisingTitle": "Onye tolitere",
+      "holderTitle": "Onye nwe ugbu a",
+      "partner": "Onye mmekọ",
+      "raisedBy": "Nyefere site na",
+      "customerName": "Onye ahịa",
+      "mobile": "Mobile",
+      "alternateMobile": "Ekwentị ọzọ",
+      "email": "Email",
+      "project": "Ihe oru ngo",
+      "reason": "Ihe kpatara ha",
+      "registration": "Ndebanye aha",
+      "registeredAt": "Edebara aha na",
+      "referral": "Ntugharị",
+      "heldMissing": "Enweghị ike ịchọta ndebanye aha ejidere.",
+      "resolutionTitle": "Mkpebi",
+      "outcome": "Nsonaazụ",
+      "note": "Rịba ama",
+      "decidedBy": "Ekpebiri site na",
+      "decidedAt": "Ekpebiri na",
+      "newRegistration": "Ndebanye aha ọhụrụ",
+      "decideTitle": "Kpebie esemokwu a",
+      "noteLabel": "Rịba ama na-akọwa mkpebi ahụ (chọrọ)",
+      "noteRequired": "Dee ndetu iji kpebie.",
+      "uphold": "Kwado",
+      "overturn": "tụgharịa",
+      "upholdEffect": "{{holder}} na-edobe onye ahịa. A na-emechi esemokwu ahụ ma ọ dịghị ihe ọzọ gbanwere.",
+      "overturnEffect": "Nchedo oyiri nke {{holder}} kwụsịrị ugbu a yana onye ahịa debanyere aha maka {{partner}} ka ndebanye aha ọhụrụ.",
+      "heldBookedHelp": "A na-edezi onye ahịa a site n'aka onye nwe ya ugbu a. Buru ụzọ kagbuo ntinye akwụkwọ ahụ (Onye nchịkwa kwụsịrị na ndebanye aha), wee tụgharịa:",
+      "confirmTitle": "O doro gị anya?",
+      "confirmUphold": "Ee, kwadoo",
+      "confirmOverturn": "Ee, tụgharịa",
+      "back": "Laghachi na Esemokwu"
+    }
   }
 }

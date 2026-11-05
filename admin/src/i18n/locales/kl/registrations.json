@@ -49,8 +49,73 @@
       "newPartnerId": "Suleqatigiissitaq ID nutaaq",
       "reason": "Pissutaasoq (piumasaqaataavoq)",
       "apply": "Override-mik atuineq",
-      "applying": "Qinnuteqarneq..."
+      "applying": "Qinnuteqarneq...",
+      "cancelBookingHint": "Annullerneq booking-imik aammalu kommissionimik unitsinneqarsimasutut nalunaarsuivoq, ingerlatsinermut piginnittuuneq suleqatigisamut utertittarpaa, aammalu sanaartortoq lead-imik taanna bookersinnaalerlugu.",
+      "cancelBookingConfirm": "Inniminniineq una unitsissava? Kommissionia aamma unitsinneqarpoq. Tamanna aqqit pissutaallu allattorsimaffianni allattorneqarpoq."
     },
-    "timelineTitle": "Kukkunersiuinermi piffissaq (nalunaarsuineq una)"
+    "timelineTitle": "Kukkunersiuinermi piffissaq (nalunaarsuineq una)",
+    "bookingStatus": "Inniminniinermi inissisimaneq",
+    "commissionAttribution": "Kommissionimik tunniussineq",
+    "disputeOpen": "Piginnittuunermut isumaqatigiinnginneq ataasiakkaaq taanna pillugu ammavoq - suleqatigisaq alla oqarpoq taakku pigigaat. Quppernermi Akerleriissutit aalajangerneqartarput.",
+    "viewDisputes": "Isumaqatigiinnginnerit takukkit",
+    "cancellation": {
+      "title": "Inniminniineq unitsinneqarpoq",
+      "hint": "Booking aamma taassuma kommissionia unitsinneqarpoq; ingerlatsinermi piginnittuuneq suleqatigisamut uteqqippoq sanaartortorlu lead-imik una bookersinnaavaa.",
+      "at": "Taarserneqarpoq nal",
+      "by": "Taarsiullugu unitsinneqarpoq",
+      "reason": "Pissutaa"
+    }
+  },
+  "disputes": {
+    "title": "Piginnittuuneq pillugu isumaqatigiinnginnerit",
+    "hint": "Suleqatigiissitap allattorsimaffia marloqiusamik itigartinneqarsimasup ataasiakkaaq kiap piginnittuunersoq uppernarsarsinnaavaa. Siuttut marluk misissoruk aalajangerlugulu.",
+    "statusFilter": "Isumaqatigiinnginnerup inissisimanera",
+    "allStatuses": "Status-it tamarmik",
+    "empty": "Status-imik taanna pillugu isumaqatigiinngissuteqanngilaq.",
+    "columns": {
+      "dispute": "Assortorpaa",
+      "customer": "Sullitaq",
+      "project": "Iluarsartuullugu pilersaarusiaq",
+      "raisedBy": "Raised by",
+      "heldBy": "Ullumikkut piginnittuusoq",
+      "status": "Inissisimanermik nalunaarut",
+      "raisedAt": "Raised on"
+    },
+    "detail": {
+      "title": "Akerleriinneq {{id}}",
+      "raisedOn": "Qaammat {{date}}",
+      "raisingTitle": "Raised by",
+      "holderTitle": "Ullumikkut piginnittuusoq",
+      "partner": "Aappaq",
+      "raisedBy": "Nassiunneqartoq uunga",
+      "customerName": "Sullitaq",
+      "mobile": "Oqarasuaat angallattagaq",
+      "alternateMobile": "Alternativ mobil",
+      "email": "Email",
+      "project": "Iluarsartuullugu pilersaarusiaq",
+      "reason": "Taakkua pissutaasut",
+      "registration": "Allattorsimaffik",
+      "registeredAt": "Nalunaarsorneqarsimavoq ulloq",
+      "referral": "Nassiussaq",
+      "heldMissing": "Allattorsimaffik tigummineqartoq nassaarineqarsinnaasimanngilaq.",
+      "resolutionTitle": "Aaliagerneq",
+      "outcome": "Inernera",
+      "note": "Eqqaamassatut allagaq",
+      "decidedBy": "Aalajangiunneqarpoq",
+      "decidedAt": "Aalajangerneqarpoq",
+      "newRegistration": "Nutaamik nalunaarsuineq",
+      "decideTitle": "Aalajangiiffigiuk una isumaqatigiinnginneq",
+      "noteLabel": "Aalajangernerup nassuiaataa nalunaarut (piumasaqaataavoq)",
+      "noteRequired": "Aalajangiinissamut allakkiaq allaguk.",
+      "uphold": "Tapersersorlugu",
+      "overturn": "Overtur",
+      "upholdEffect": "{{holder}} ataasiakkaaq pigiinnarpaa. Suliaq matuneqarpoq allamillu allanngortoqanngilaq.",
+      "overturnEffect": "{{holder}} 's marloqiusamik illersuineq maanna naammassivoq aammalu ataasiakkaaq {{partner}} -mut nutaamik nalunaarsorneqarpoq.",
+      "heldBookedHelp": "Ataasiakkaaq taanna ullumikkut piginnittuq aqqutigalugu bookerneqarpoq. Inniminniineq taanna siullermik unitsiguk (nalunaarsornermi Admin Override), taava unitsiguk:",
+      "confirmTitle": "Qularnanngilaq?",
+      "confirmUphold": "Aap, tapersersorlugu",
+      "confirmOverturn": "Aap, utertitsineq",
+      "back": "Uteqqilluni Isumaqatigiinnginnernut"
+    }
   }
 }

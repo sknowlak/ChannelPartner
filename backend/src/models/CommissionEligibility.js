@@ -9,7 +9,9 @@ const commissionEligibilitySchema = new mongoose.Schema(
     bookingId: { type: String, required: true },
     projectId: { type: String, default: '' },
     attributionStatus: { type: String, enum: ['ATTRIBUTED', 'DISPUTED'], default: 'ATTRIBUTED' },
-    eligibilityStatus: { type: String, enum: ['ELIGIBLE', 'PENDING'], default: 'ELIGIBLE' },
+    // CANCELLED: the booking was cancelled (section 62). The record stays, so
+    // the history shows it existed; re-booking makes it ELIGIBLE again.
+    eligibilityStatus: { type: String, enum: ['ELIGIBLE', 'PENDING', 'CANCELLED'], default: 'ELIGIBLE' },
     createdAt: { type: Date, default: Date.now }
   },
   { timestamps: true }

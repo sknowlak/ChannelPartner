@@ -30,7 +30,8 @@
       "registered": "पंजीकृत"
     },
     "booked": "बुक कीन गा है",
-    "empty": "अबहीं तक कौनो रेफरल नाहीं।"
+    "empty": "अबहीं तक कौनो रेफरल नाहीं।",
+    "bookingCancelled": "बुकिंग रद्द होइ गै"
   },
   "detail": {
     "customer": "गंहकी",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "बुकिंग पुष्टि होइ गै।",
       "accepted": "रेफरल स्वीकार कीन गा है।",
-      "rejected": "रेफरल खारिज होइ गवा।"
+      "rejected": "रेफरल खारिज होइ गवा।",
+      "bookingCancelled": "बुकिंग रद्द होइ गै।"
     },
-    "backToReferrals": "रेफरल पर वापस जावा"
+    "backToReferrals": "रेफरल पर वापस जावा",
+    "bookingCancelled": "बुकिंग रद्द होइ गै",
+    "cancelBooking": "बुकिंग रद्द करा",
+    "cancelReasonLabel": "रद्द करै का कारण (साथी का देखावा गा) *",
+    "cancelBookingHint": "परिचालन स्वामित्व साथी के पास वापस जात है अऊर ओनके कमीशन पात्रता रद्द होइ जात है। लीड बाद मा फिर से बुक कीन जा सकत है।",
+    "cancelBookingConfirm": "बुकिंग रद्द करा"
   },
   "history": {
     "title": "पुरानि कथा",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "कमीशन पात्रता बनाई गई",
       "HANDOVER_COMPLETED": "हैंडओवर पूरा होइगा",
       "ADMIN_PROTECTION_RELEASED": "व्यवस्थापक ने डुप्लिकेट सुरक्षा जल्दी जारी किहिन। कारण: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "व्यवस्थापक ने {{from}} से {{to}} मा पंजीकरण फिर से सौंपा है। कारण: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "व्यवस्थापक ने {{from}} से {{to}} मा पंजीकरण फिर से सौंपा है। कारण: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "एक अउर साथी द्वारा एक डुप्लिकेट पंजीकरण प्रयास अस्वीकार कर दीन गा रहा",
+      "BOOKING_CANCELLED": "बुकिंग रद्द होइ गै। कारण: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "परिचालन स्वामित्व भागीदार का लौटावा गा",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "बुकिंग के साथ कमीशन पात्रता रद्द कर दी गई",
+      "COMMISSION_ELIGIBILITY_RESTORED": "नई बुकिंग के लिए कमीशन पात्रता बहाल"
     }
   }
 }

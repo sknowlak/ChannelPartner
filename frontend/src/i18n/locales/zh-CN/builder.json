@@ -29,7 +29,8 @@
       "registered": "挂号的"
     },
     "booked": "已预订",
-    "empty": "还没有推荐。"
+    "empty": "还没有推荐。",
+    "bookingCancelled": "预订已取消"
   },
   "detail": {
     "customer": "顾客",
@@ -52,9 +53,15 @@
     "notice": {
       "booked": "预订已确认。",
       "accepted": "接受推荐。",
-      "rejected": "推荐被拒绝。"
+      "rejected": "推荐被拒绝。",
+      "bookingCancelled": "预订已取消。"
     },
-    "backToReferrals": "返回推荐"
+    "backToReferrals": "返回推荐",
+    "bookingCancelled": "预订已取消",
+    "cancelBooking": "取消预订",
+    "cancelReasonLabel": "取消原因（向合作伙伴显示）*",
+    "cancelBookingHint": "运营所有权归还给合作伙伴，并且他们的佣金资格被取消。稍后可以再次预订线索。",
+    "cancelBookingConfirm": "取消预订"
   },
   "history": {
     "title": "历史",
@@ -81,7 +88,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "创建佣金资格",
       "HANDOVER_COMPLETED": "交接完成",
       "ADMIN_PROTECTION_RELEASED": "管理员提前发布了重复保护。原因： {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "管理员将注册从{{from}}重新分配到{{to}} 。原因： {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "管理员将注册从{{from}}重新分配到{{to}} 。原因： {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "其他合作伙伴的重复注册尝试被拒绝",
+      "BOOKING_CANCELLED": "预订已取消。原因： {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "运营所有权归还给合作伙伴",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "预订后佣金资格取消",
+      "COMMISSION_ELIGIBILITY_RESTORED": "新预订的佣金资格已恢复"
     }
   }
 }

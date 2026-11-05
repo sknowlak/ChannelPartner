@@ -30,7 +30,8 @@
       "registered": "Didaftarkan"
     },
     "booked": "Dipesan",
-    "empty": "Alun ado rujukan lai."
+    "empty": "Alun ado rujukan lai.",
+    "bookingCancelled": "Pemesanan dibatalkan"
   },
   "detail": {
     "customer": "Palanggan",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Pemesanan lah dikonfirmasi.",
       "accepted": "Rujukan ditarimo.",
-      "rejected": "Rujukan ditulak."
+      "rejected": "Rujukan ditulak.",
+      "bookingCancelled": "Pemesanan dibatalkan."
     },
-    "backToReferrals": "Baliak ka Rujukan"
+    "backToReferrals": "Baliak ka Rujukan",
+    "bookingCancelled": "Pemesanan dibatalkan",
+    "cancelBooking": "Batal Pamasanan",
+    "cancelReasonLabel": "Alasan untuak mambatalkan (ditunjuakkan ka pasangan) *",
+    "cancelBookingHint": "Kepemilikan operasional babaliak ka mitra dan kelayakan komisi mereka dibatalkan. Lead tu bisa di booking baliak beko.",
+    "cancelBookingConfirm": "Batalkan pamasanan"
   },
   "history": {
     "title": "Sajarah",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisi dibuek",
       "HANDOVER_COMPLETED": "Penyerahan salasai",
       "ADMIN_PROTECTION_RELEASED": "Admin malapehan duplikat perlindungan awal. Alasan: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin manugaskan baliak pendaftaran dari {{from}} manjadi {{to}} . Alasan: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin manugaskan baliak pendaftaran dari {{from}} manjadi {{to}} . Alasan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Usaho pendaftaran duplikat dek pasangan lain ditolak",
+      "BOOKING_CANCELLED": "Pemesanan dibatalkan. Alasan: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Kepemilikan operasional dibaliakkan kapado mitra .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kelayakan komisi dibatalkan jo pamasanan",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kelayakan komisi dipulihkan untuak pamasanan baru"
     }
   }
 }

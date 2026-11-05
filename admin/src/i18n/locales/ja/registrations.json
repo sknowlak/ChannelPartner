@@ -49,8 +49,73 @@
       "newPartnerId": "新しいパートナーID",
       "reason": "理由 (必須)",
       "apply": "オーバーライドを適用",
-      "applying": "申請中..."
+      "applying": "申請中...",
+      "cancelBookingHint": "キャンセルすると、予約とそのコミッションがキャンセル済みとしてマークされ、運用所有権がパートナーに返され、ビルダーがこのリードを再度予約できるようになります。",
+      "cancelBookingConfirm": "この予約をキャンセルしますか?その手数料もキャンセルされます。これはあなたの名前と理由とともに記録されます。"
     },
-    "timelineTitle": "監査タイムライン (この登録)"
+    "timelineTitle": "監査タイムライン (この登録)",
+    "bookingStatus": "予約状況",
+    "commissionAttribution": "コミッションの帰属",
+    "disputeOpen": "この顧客に関して所有権に関する紛争が進行中です。別のパートナーが、それは自分たちのものだと主張しています。紛争ページで決定されます。",
+    "viewDisputes": "紛争を表示する",
+    "cancellation": {
+      "title": "予約がキャンセルされました",
+      "hint": "予約とその手数料はキャンセルされます。運用上の所有権はパートナーに戻り、ビルダーはこのリードを再度予約できるようになります。",
+      "at": "でキャンセルされました",
+      "by": "キャンセル者",
+      "reason": "理由"
+    }
+  },
+  "disputes": {
+    "title": "所有権紛争",
+    "hint": "重複として登録が拒否されたパートナーは、顧客の所有者が誰であるかを争うことができます。双方を検討して決定してください。",
+    "statusFilter": "紛争状況",
+    "allStatuses": "すべてのステータス",
+    "empty": "このステータスについては異論はありません。",
+    "columns": {
+      "dispute": "紛争",
+      "customer": "お客様",
+      "project": "プロジェクト",
+      "raisedBy": "育ての親",
+      "heldBy": "現在の所有者",
+      "status": "状態",
+      "raisedAt": "育った日"
+    },
+    "detail": {
+      "title": "{{id}}異議申し立て",
+      "raisedOn": "{{date}}を上げました",
+      "raisingTitle": "育ての親",
+      "holderTitle": "現在の所有者",
+      "partner": "パートナー",
+      "raisedBy": "によって提出されました",
+      "customerName": "お客様",
+      "mobile": "携帯",
+      "alternateMobile": "代替携帯電話",
+      "email": "電子メール",
+      "project": "プロジェクト",
+      "reason": "彼らの理由",
+      "registration": "登録",
+      "registeredAt": "に登録されています",
+      "referral": "紹介",
+      "heldMissing": "保持されている登録が見つかりませんでした。",
+      "resolutionTitle": "決断",
+      "outcome": "結果",
+      "note": "注記",
+      "decidedBy": "によって決定されました",
+      "decidedAt": "決定しました",
+      "newRegistration": "新規登録",
+      "decideTitle": "この争いに決着を付ける",
+      "noteLabel": "決定を説明するメモ (必須)",
+      "noteRequired": "決定するためにメモを書きます。",
+      "uphold": "支持する",
+      "overturn": "覆す",
+      "upholdEffect": "{{holder}}顧客を維持します。論争は終了し、他には何も変わりません。",
+      "overturnEffect": "{{holder}}の重複保護は終了し、顧客は新規登録として{{partner}}に登録されます。",
+      "heldBookedHelp": "この顧客は現在の所有者を通じて予約されています。まずその予約をキャンセルし (管理者による登録のオーバーライド)、その後で予約を取り消します。",
+      "confirmTitle": "本気ですか？",
+      "confirmUphold": "はい、守ってください",
+      "confirmOverturn": "はい、ひっくり返します",
+      "back": "紛争に戻る"
+    }
   }
 }

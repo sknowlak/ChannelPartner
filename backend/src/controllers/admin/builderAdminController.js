@@ -1,6 +1,7 @@
 const Builder = require('../../models/Builder');
 const BuilderUser = require('../../models/BuilderUser');
 const Project = require('../../models/Project');
+const { parseProtectionDays, parseMatchFields } = require('../../services/projectService');
 const Registration = require('../../models/Registration');
 const { nextId } = require('../../utils/idGenerator');
 const { hashPassword, passwordProblem } = require('../../services/partnerAuthService');
@@ -153,7 +154,11 @@ async function createProject(req, res, next) {
     if (!(await Builder.exists({ builderId }))) return res.status(400).json({ reason: 'Unknown builder', fieldKey: 'builderId' });
     if (await Project.exists({ projectId })) return res.status(409).json({ reason: 'A project with this code already exists', fieldKey: 'projectId' });
 
-    const project = await Project.create({ projectId, name, builderId, city: str(req.body.city, 100) });
+    const days = parseProtectionDays(req.body.protectionDays);
+    if (days.error) return res.status(400).json({ reason: days.error, fieldKey: 'protectionDays' });
+    const match = parseMatchFields(req.body.duplicateMatchFields);
+    if (match.error) return res.status(400).json({ reason: match.error, fieldKey: 'duplicateMatchFields' });
+    const project = await Project.create({ projectId, name, builderId, city: str(req.body.city, 100), protectionDays: days.value, duplicateMatchFields: match.value });
     // Leads already registered with this project code start waiting for the builder's decision.
     const linked = await Registration.updateMany({ projectId, referralStatus: 'NOT_REFERRED' }, { $set: { referralStatus: 'PENDING_BUILDER' } });
     await audit(req, 'PROJECT_CREATED', `Created project ${name} (${projectId})`, { projectId, builderId, linkedLeads: linked.modifiedCount });
@@ -178,8 +183,20 @@ async function updateProject(req, res, next) {
       if (!STATUSES.includes(req.body.status)) return res.status(400).json({ reason: 'status must be ACTIVE or INACTIVE' });
       project.status = req.body.status;
     }
+    if (req.body.protectionDays !== undefined) {
+      // Applies to registrations made from now on; existing protection keeps its expiry.
+      const days = parseProtectionDays(req.body.protectionDays);
+      if (days.error) return res.status(400).json({ reason: days.error, fieldKey: 'protectionDays' });
+      project.protectionDays = days.value;
+    }
+    if (req.body.duplicateMatchFields !== undefined) {
+      // Like the window: applies to duplicate checks from now on.
+      const match = parseMatchFields(req.body.duplicateMatchFields);
+      if (match.error) return res.status(400).json({ reason: match.error, fieldKey: 'duplicateMatchFields' });
+      project.duplicateMatchFields = match.value;
+    }
     await project.save();
-    await audit(req, 'PROJECT_UPDATED', `Updated project ${project.name}`, { projectId: project.projectId, status: project.status });
+    await audit(req, 'PROJECT_UPDATED', `Updated project ${project.name}`, { projectId: project.projectId, status: project.status, protectionDays: project.protectionDays, duplicateMatchFields: project.duplicateMatchFields || null });
     return res.json(project);
   } catch (err) {
     next(err);

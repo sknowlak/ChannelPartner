@@ -30,7 +30,8 @@
       "registered": "ثبت شوی"
     },
     "booked": "بک شوی",
-    "empty": "تر اوسه هیڅ حواله نشته."
+    "empty": "تر اوسه هیڅ حواله نشته.",
+    "bookingCancelled": "بکنګ لغوه شو"
   },
   "detail": {
     "customer": "پیرودونکي",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "بکینګ تایید شو.",
       "accepted": "حواله ومنل شوه.",
-      "rejected": "حواله رد شوه."
+      "rejected": "حواله رد شوه.",
+      "bookingCancelled": "بکنګ لغوه شو."
     },
-    "backToReferrals": "بیرته حوالې ته"
+    "backToReferrals": "بیرته حوالې ته",
+    "bookingCancelled": "بکنګ لغوه شو",
+    "cancelBooking": "بکینګ لغوه کړئ",
+    "cancelReasonLabel": "د لغوه کولو دلیل (ملګري ته ښودل شوی) *",
+    "cancelBookingHint": "عملیاتي ملکیت بیرته ملګري ته ځي او د دوی د کمیسیون وړتیا لغوه کیږي. لیډ بیا وروسته بک کیدی شي.",
+    "cancelBookingConfirm": "بکینګ لغوه کړئ"
   },
   "history": {
     "title": "تاریخ",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "د کمیسیون وړتیا رامنځته شوه",
       "HANDOVER_COMPLETED": "سپارل بشپړ شول",
       "ADMIN_PROTECTION_RELEASED": "اډمین د نقل محافظت دمخه خپور کړ. لامل: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "اډمین له {{from}} څخه {{to}} ته راجسټریشن بیا وټاکه. لامل: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "اډمین له {{from}} څخه {{to}} ته راجسټریشن بیا وټاکه. لامل: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "د بل ملګري لخوا د نقل راجسټریشن هڅه رد شوه",
+      "BOOKING_CANCELLED": "بکنګ لغوه شو. لامل: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "عملیاتي ملکیت بیرته ملګري ته راستانه شوی",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "د کمیسیون وړتیا د بکینګ سره لغوه شوه",
+      "COMMISSION_ELIGIBILITY_RESTORED": "د نوي بکینګ لپاره د کمیسیون وړتیا بحال شوې"
     }
   }
 }

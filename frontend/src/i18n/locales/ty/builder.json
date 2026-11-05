@@ -30,7 +30,8 @@
       "registered": "Ua papa'ihia"
     },
     "booked": "Ua papa'ihia",
-    "empty": "Aita â e faahororaa."
+    "empty": "Aita â e faahororaa.",
+    "bookingCancelled": "Ua faaorehia te buka"
   },
   "detail": {
     "customer": "Fanaua",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Ua haapapuhia te buka.",
       "accepted": "Ua fariihia te tonoraa.",
-      "rejected": "Ua patoihia te faahororaa."
+      "rejected": "Ua patoihia te faahororaa.",
+      "bookingCancelled": "Ua faaorehia te buka."
     },
-    "backToReferrals": "Ho'i i te mau faahororaa"
+    "backToReferrals": "Ho'i i te mau faahororaa",
+    "bookingCancelled": "Ua faaorehia te buka",
+    "cancelBooking": "Faaore i te buka",
+    "cancelReasonLabel": "Te tumu no te faaoreraa (a faaitehia i te hoa) *",
+    "cancelBookingHint": "E ho'i te ti'araa faatere i te hoa faaipoipo, e e faaorehia ta ratou ti'araa toro'a. E nehenehe e buka faahou i te aratairaa i muri iho.",
+    "cancelBookingConfirm": "A faaore i te buka"
   },
   "history": {
     "title": "Ōna'ō",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Ua hamanihia mai te ti'araa tomite",
       "HANDOVER_COMPLETED": "Ua oti te horo'araa",
       "ADMIN_PROTECTION_RELEASED": "Ua faaite oioi o Admin i na parururaa taa ê. Te tumu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Ua faaho'i-faahou-hia mai {{from}} e tae atu i {{to}} . Te tumu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Ua faaho'i-faahou-hia mai {{from}} e tae atu i {{to}} . Te tumu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ua patoihia te hoê tamataraa taa ê a te tahi atu hoa no te papai i te i'oa",
+      "BOOKING_CANCELLED": "Ua faaorehia te buka. Te tumu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ua faaho'i-faahou-hia mai te ti'araa faatere i te hoa",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ua faaorehia te ti'araa tomite na roto i te buka",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ua faaho'i-faahou-hia mai te ti'araa o te tomite no te buka apî"
     }
   }
 }

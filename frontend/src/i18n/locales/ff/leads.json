@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Deftere",
-    "pending": "Joddi"
+    "pending": "Joddi",
+    "status": {
+      "CONFIRMED": "Deftere",
+      "CANCELLED": "Booking oo dartinaama"
+    }
   },
   "assign": {
     "unassigned": "Toɗɗaaka",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Alaa eɓɓoore tawo (rewnaaka)",
-    "notInList": "{{project}} (alaa e doggol eɓɓooje)"
+    "notInList": "{{project}} (alaa e doggol eɓɓooje)",
+    "protectionDays_one": "{{count}} -reende ñalngu",
+    "protectionDays_other": "{{count}} -reende ñalngu"
   },
   "journey": {
     "customer": "Sodowo",
@@ -76,7 +82,14 @@
     "progressHistory": "Daartol yahrude yeeso",
     "timesIn": "(waktuuji nder {{timezone}} )",
     "backToMyLeads": "Wartu e Ardorde am",
-    "editLead": "Waylu Lead"
+    "editLead": "Waylu Lead",
+    "disputeBanner": "Sehil goɗɗo luulndiima jeyi oo soodoowo. Admin Leadrat ina ƴeewtoo ɗum - ndeenka maa ina heddii e nokku mum haa ɓe pellita.",
+    "booking": "Deftere",
+    "commission": "Kugal",
+    "notBooked": "Ko bookaaka",
+    "cancelledOn": "Woppitaama ñalnde {{date}} .",
+    "cancelReason": "Sabaabu: {{reason}}",
+    "cancelledHint": "Mahoowo oo woppii deftere ndee - jeyi gollorɗo oo artii e maa kadi fotde komisoŋ oo woppitaama. Ina artiree so tawii lefol ngol ina deftee kadi."
   },
   "referral": {
     "NOT_REFERRED": "Rewnaaka (alaa eɓɓoore)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Builder jaɓi neldal ngal",
       "REFERRAL_REJECTED": "Builder salii neldugol ngol. Sabaabu: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin yaltinii ndeenka duppite ko yaawi. Sabaabu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin wayli binnditagol gila {{from}} haa {{to}} . Sabaabu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin wayli binnditagol gila {{from}} haa {{to}} . Sabaabu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Enndugol binnditagol ɗiɗmol ngol gollodiiɗo goɗɗo waɗi, saliima",
+      "BOOKING_CANCELLED": "Booking oo dartinaama. Sabaabu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Jeyi gollorɗo artii e gollodiiɗo oo",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Hakke komisoŋ ustaama e booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Hakke komisoŋ artiraa ngam booking keso oo",
+      "OWNERSHIP_DISPUTE_RAISED": "Goɗɗo gollodiiɗo luulndiima jeyi oo soodoowo - admin Leadrat maa ƴeewto ɗum",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Luural jeyi e oo soodoowo ittaama - jeyi maa waylaaki",
+      "OWNERSHIP_DISPUTE_UPHELD": "Luural jeyi e oo soodoowo ƴeewtaama - jeyi maa tabitinaama",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Winnditaama caggal nde luural jeyi maa fellitii e dow maa. Tesko: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Reende joofi : luural jeyi leydi fellitaama e dow ballal gollodiiɗo goɗɗo. Tesko: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Tonngoode telefoŋ ndee nanaa e {{country}} .",
     "COUNTRY_MISMATCH": "Suɓo kodde leydi moƴƴere.",
     "NOT_MOBILE": "Winndu limoore telefoŋ, wonaa telefoŋ leydi."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisoŋ ina waawi",
+      "PENDING": "Komisoŋ ina jokki",
+      "CANCELLED": "Komisoŋ oo dartinaama"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Sifaa ko e maa",
+      "DISPUTED": "Sifaa ina luulndii"
+    }
+  },
+  "result": {
+    "none": "Alaa njeñtudi binnditagol ngam hollirde. Winndito ardorde ko adii.",
+    "acceptedTitle": "Lead winnditaama",
+    "rejectedTitle": "Lead winnditaaki",
+    "protectionWindow": "Winndannde ndeenka",
+    "protectedUntil": "Reenaaɗo Haa...",
+    "openLead": "Uddit Lead",
+    "addAnother": "Ɓeydu heen Ardorde Goɗnde",
+    "duplicate": "Duppit - ina reeni tawo",
+    "duplicateHint": "Oo soodoowo ina reenaa tawo e ndee eɓɓoore e binnditagol goɗɗol, ɗum noon o waawaano winnditeede e maa.",
+    "existingProtectedUntil": "Binnditagol gonngol reeneede haa..."
+  },
+  "disputes": {
+    "title": "Luural am",
+    "intro": "Luural jeyi ngal ƴettu-ɗaa ngam soodooɓe ɓe njaɓaaka ko duppiteeji. Admin Leadrat ina ƴeewtoo heen kala.",
+    "empty": "A umminaani hay luural gootal. So tawii soodoowo mo ngaddu-ɗaa oo saliima wonde duppitiiɗo, aɗa waawi luulndaade ɗum gila e njeñtudi binnditagol ngol.",
+    "columns": {
+      "dispute": "Haraka",
+      "reason": "Daliilu maa",
+      "outcome": "Keeɓal"
+    },
+    "status": {
+      "OPEN": "E nder ƴeewndo",
+      "UPHELD": "Wonaa e moƴƴere maa",
+      "OVERTURNED": "Fellitde e moƴƴere maa",
+      "WITHDRAWN": "Ittiraama"
+    },
+    "awaitingReview": "Eɗen ɗaminii ƴeewndo admin",
+    "openNewLead": "Uddit ardorde maa {{id}}",
+    "withdraw": "Ittugo",
+    "withdrawConfirm": "Ittu luural maa ngam {{name}} ? Jeyi jooni oo ina heddii no woniri nii.",
+    "raise": "Jeyi luural",
+    "raiseTitle": "Jeyi luural",
+    "raiseHint": "So tawii oo soodoowo arii e maa ko adii, paamtin ko waɗi ɗum. Admin Leadrat gooto maa ƴeewto ɗum; so ɓe pellitii e dow maa, ardorde ndee winnditaama e maa.",
+    "reasonLabel": "Hol ko waɗi oo soodoowo ko maa?",
+    "reasonMin_one": "Ko famɗi fof {{count}} alkulal.",
+    "reasonMin_other": "Ko famɗi fof alkule {{count}} .",
+    "submit": "Neldu Luural",
+    "notProtected": "Hay gooto jogaaki ndeenka e oo soodoowo ngam ndee eɓɓoore kadi - aɗa waawi winnditaade ardorde ndee jooni.",
+    "raised": "Luural {{id}} neldaama ngam ƴeewteede.",
+    "viewAll": "Yiylo luure am"
+  },
+  "dashboard": {
+    "title": "Tablo",
+    "period": "Wakati",
+    "lastDays_one": "{{count}} ñalawma",
+    "lastDays_other": "{{count}} balɗe",
+    "emptyTitle": "Jabbama! A alaa ardorde tawo.",
+    "emptyHint": "Winndito ardorde maa adannde - pipeline maa, bookings maa e laabi ndeenka maa kollite ɗoo.",
+    "tiles": {
+      "leads": "Total ardiiɓe",
+      "newInPeriod_one": "{{count}} keso e ooɗoo sahaa",
+      "newInPeriod_other": "{{count}} keso e ooɗoo sahaa",
+      "accepted": "Jaɓaama",
+      "booked": "Deftere",
+      "bookedInPeriod_one": "{{count}} deftinaama e ooɗoo sahaa",
+      "bookedInPeriod_other": "{{count}} deftinaama e ooɗoo sahaa",
+      "conversion": "Waylude",
+      "conversionHint": "Booked leads ko geɗal e leads jaɓaaɗi",
+      "protectedNow": "Reenaama jooni",
+      "expiringSoon_one": "Reende joofnde e {{count}} ñalawma",
+      "expiringSoon_other": "Reende joofnde e {{count}} balɗe",
+      "disputedNow": "Woɗɓe luulndii ɗum",
+      "disputedNowHint": "Ardii ma e luural jeyi udditiingal ummoraade e gollodiiɗo goɗɗo",
+      "commissionEligible": "Komisoŋ ina waawi",
+      "commissionCancelled_one": "{{count}} momtaama",
+      "commissionCancelled_other": "{{count}} momtaama"
+    },
+    "chart": {
+      "title_one": "Binnditagol e defte ñalnde kala - ñalawma {{count}} cakkitiiɗo",
+      "title_other": "Binnditagol e jokkondire ñalnde kala - balɗe {{count}} cakkitiiɗe",
+      "registrations": "Binnditagol",
+      "bookings": "Defte"
+    },
+    "byStage": "Ardii ko e ngonka",
+    "bySource": "Ardii ko iwdi",
+    "byReferral": "Ardii ko e ngonka jokkondire",
+    "myDisputes": "Luural ngal ƴettu-ɗaa",
+    "noDisputes": "Alaa luural umminaa.",
+    "unknown": "Settaaka",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM yaajɗo (siimtol)",
+      "PARTNER_CRM": "Ɓeydi ɗum ko ekipaaji maa",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Naatgol",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Reende ina joofna e ñalawma {{count}} garoowo oo",
+    "expiringTitle_other": "Ndeenka ina joofna e balɗe {{count}} garooje ɗee",
+    "expiringEmpty": "Alaa lefol majjungol ndeenka mum e nder ndee windo."
   }
 }

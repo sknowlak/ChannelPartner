@@ -33,7 +33,8 @@
       "registered": "Cláraithe"
     },
     "booked": "Curtha in áirithe",
-    "empty": "Níl aon atreoruithe fós."
+    "empty": "Níl aon atreoruithe fós.",
+    "bookingCancelled": "Cuireadh an áirithint ar ceal"
   },
   "detail": {
     "customer": "Custaiméir",
@@ -56,9 +57,15 @@
     "notice": {
       "booked": "Áirithint deimhnithe.",
       "accepted": "Glacadh leis an tarchur.",
-      "rejected": "Diúltaíodh don tarchur."
+      "rejected": "Diúltaíodh don tarchur.",
+      "bookingCancelled": "Cuireadh an áirithint ar ceal."
     },
-    "backToReferrals": "Ar Ais go Atreoruithe"
+    "backToReferrals": "Ar Ais go Atreoruithe",
+    "bookingCancelled": "Cuireadh an áirithint ar ceal",
+    "cancelBooking": "Cealaigh Áirithint",
+    "cancelReasonLabel": "An chúis le cealú (léirithe don chomhpháirtí) *",
+    "cancelBookingHint": "Téann úinéireacht oibríochtúil ar ais chuig an gcomhpháirtí agus cuirtear a n-incháilitheacht don choimisiún ar ceal. Is féidir an luaidhe a chur in áirithe arís níos déanaí.",
+    "cancelBookingConfirm": "Cealaigh an áirithint"
   },
   "history": {
     "title": "Stair",
@@ -93,7 +100,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Cruthaíodh incháilitheacht an Choimisiúin",
       "HANDOVER_COMPLETED": "An t-aistriú críochnaithe",
       "ADMIN_PROTECTION_RELEASED": "Scaoileadh admin cosaint dhúbailt go luath. Cúis: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Rinne an riarthóir an clárú a athshannadh ó {{from}} go {{to}} . Cúis: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Rinne an riarthóir an clárú a athshannadh ó {{from}} go {{to}} . Cúis: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Diúltaíodh d’iarracht chlárúcháin dhúblach ó chomhpháirtí eile",
+      "BOOKING_CANCELLED": "Cuireadh an áirithint ar ceal. Cúis: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Tháinig úinéireacht oibriúcháin ar ais chuig an gcomhpháirtí",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Cealaíodh incháilitheacht an Choimisiúin leis an áirithint",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Athbhunaíodh incháilitheacht an Choimisiúin don áirithint nua"
     }
   }
 }

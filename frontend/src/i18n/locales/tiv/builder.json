@@ -30,7 +30,8 @@
       "registered": "I nger iti"
     },
     "booked": "I nger iti",
-    "empty": "Ior mba i tindi ve la mba ga."
+    "empty": "Ior mba i tindi ve la mba ga.",
+    "bookingCancelled": "I de u eren booking"
   },
   "detail": {
     "customer": "Orkasua",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "I nger booking.",
       "accepted": "I lumun ér i tindi un.",
-      "rejected": "I venda u tindin un."
+      "rejected": "I venda u tindin un.",
+      "bookingCancelled": "I vihi booking."
     },
-    "backToReferrals": "Hide hen mba i tindi ve la"
+    "backToReferrals": "Hide hen mba i tindi ve la",
+    "bookingCancelled": "I de u eren booking",
+    "cancelBooking": "De u eren kwagh u u soo la",
+    "cancelReasonLabel": "Ityôkyaa i u de u eren tom ne yô (tese or u u lu eren tom a nan la) *",
+    "cancelBookingHint": "Ior mba ve lu a ityom la ka ve hide ve yem hen or u nan lu a nan la, nahan i de u nan ve ian i eren tom u i yer ér commission la. Ior vea hide vea nger lead la ken hemen.",
+    "cancelBookingConfirm": "Cancel kwagh u u soo u eren la ."
   },
   "history": {
     "title": "Yiase",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "I ver ian i eren tom u i yer ér commission la.",
       "HANDOVER_COMPLETED": "I na or kwagh been",
       "ADMIN_PROTECTION_RELEASED": "Orvesen due a kwagh u kuran iyol sha shighe vough. Ityôkyaa: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Orvesen hide ver iti i ngeren iti sha {{from}} hingir {{to}} . Ityôkyaa: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Orvesen hide ver iti i ngeren iti sha {{from}} hingir {{to}} . Ityôkyaa: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "I venda kwagh u orgen u nan lu eren tom imôngo la nan nôngo ér nana nger iti i nan yô.",
+      "BOOKING_CANCELLED": "I vihi booking. Ityôkyaa: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "I hide a kwagh u eren tom a mi la hen or u nan lu a mi la.",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "I vihi mlu u eren tom u i yer ér commission la sha u eren booking.",
+      "COMMISSION_ELIGIBILITY_RESTORED": "I hide i ver ian i eren tom sha ci u mzough u he la."
     }
   }
 }

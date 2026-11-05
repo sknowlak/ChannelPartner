@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Booked",
-    "pending": "A wait"
+    "pending": "A wait",
+    "status": {
+      "CONFIRMED": "Booked",
+      "CANCELLED": "Booking canceled"
+    }
   },
   "assign": {
     "unassigned": "No assigned",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "No project yet (not referred)",
-    "notInList": "{{project}} (not inna di project list)"
+    "notInList": "{{project}} (not inna di project list)",
+    "protectionDays_one": "{{count}} -day protection",
+    "protectionDays_other": "{{count}} -day protection"
   },
   "journey": {
     "customer": "Custama",
@@ -76,7 +82,14 @@
     "progressHistory": "Progress History",
     "timesIn": "(times in {{timezone}} )",
     "backToMyLeads": "Back to My Leads",
-    "editLead": "Edit Lead"
+    "editLead": "Edit Lead",
+    "disputeBanner": "Wan neda partner did a dispute ownership a dis customer. A Leadrat admin a review it - yuh protection stay in place until dem decide.",
+    "booking": "Booking",
+    "commission": "Comishan",
+    "notBooked": "No booked",
+    "cancelledOn": "Cancel pan {{date}} .",
+    "cancelReason": "Reason: {{reason}}",
+    "cancelledHint": "Di builder cancel di booking - operational ownership deh back wid yuh an commission eligibility cancel. It get restore if di lead get book again."
   },
   "referral": {
     "NOT_REFERRED": "Not referred (no project)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Builder accept di referral",
       "REFERRAL_REJECTED": "Builder did reject di referral. Reason: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin did release duplicate protection early. Reason: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin reassign registration fram {{from}} to {{to}} . Reason: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin reassign registration fram {{from}} to {{to}} . Reason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "A duplicate registration attempt by another partner was rejected",
+      "BOOKING_CANCELLED": "Booking cancelled. Reason: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operational ownership return to di partner",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Commission eligibility canceled wid di booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Commission eligibility restored fi di new booking",
+      "OWNERSHIP_DISPUTE_RAISED": "Wan neda partner disputed ownership a dis customer - a Leadrat admin ago review it",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Di ownaship dispute pan dis customer did tek weh - yuh ownership neva change",
+      "OWNERSHIP_DISPUTE_UPHELD": "Di ownaship dispute pan dis customer did review - yuh ownership is confirmed",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Registered afta yuh ownership dispute did decide inna yuh favour. Note: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Protection did end: an ownership dispute did decide inna favor a anodda partner. Note: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Dis fuonomba no valid fi {{country}} .",
     "COUNTRY_MISMATCH": "Please select di right country code.",
     "NOT_MOBILE": "Please put in a mobile numba, not a landline."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Commission eligible",
+      "PENDING": "Commission pending",
+      "CANCELLED": "Commission canceled"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Attributed to yuh",
+      "DISPUTED": "Attribution disputed"
+    }
+  },
+  "result": {
+    "none": "No registration result fi show. Register a lead fos.",
+    "acceptedTitle": "Lead registered",
+    "rejectedTitle": "Lead not registered",
+    "protectionWindow": "Protection Window",
+    "protectedUntil": "Protected Until",
+    "openLead": "Open Lead",
+    "addAnother": "Add Anodda Lead",
+    "duplicate": "Duplicate - already protected",
+    "duplicateHint": "Dis customer already protected fi dis project by anodda registration, so it couldn't be registered fi yuh.",
+    "existingProtectedUntil": "Existing registration protected until"
+  },
+  "disputes": {
+    "title": "Mi Disputes",
+    "intro": "Ownership disputes yuh did raise fi customers weh dem did refuse as duplicates. A Leadrat admin review each one.",
+    "empty": "Yuh neva raise no dispute. If a customer weh yuh bring in get refuse as a duplicate, yuh can dispute it fram di registration result.",
+    "columns": {
+      "dispute": "Prablem",
+      "reason": "Yuh reason",
+      "outcome": "Outcome"
+    },
+    "status": {
+      "OPEN": "Anda review",
+      "UPHELD": "Not inna yuh favor",
+      "OVERTURNED": "Decided inna yuh favor",
+      "WITHDRAWN": "Withdrawn"
+    },
+    "awaitingReview": "Waiting fi admin review",
+    "openNewLead": "Open yuh lead {{id}}",
+    "withdraw": "Tek out",
+    "withdrawConfirm": "Widdraw yuh dispute fi {{name}} ? Di current ownership stay as it deh.",
+    "raise": "Dispute ownership",
+    "raiseTitle": "Dispute ownership",
+    "raiseHint": "If dis customer come to yuh first, explain why. A Leadrat admin ago review it; if dem decide inna yuh favour, di lead registered fi yuh.",
+    "reasonLabel": "Wa mek dis customer a fi yuh?",
+    "reasonMin_one": "At liis {{count}} kiarakta.",
+    "reasonMin_other": "At liis {{count}} kiarakta.",
+    "submit": "Send Dispute",
+    "notProtected": "Nobody hold protection pan dis customer fi dis project no more - yuh can register di lead now.",
+    "raised": "Dispute {{id}} sen fi review.",
+    "viewAll": "View mi disputes"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Period",
+    "lastDays_one": "{{count}} day",
+    "lastDays_other": "{{count}} days",
+    "emptyTitle": "Welcum! Yuh nuh have no lead yet.",
+    "emptyHint": "Register yuh first lead - yuh pipeline, bookings an protection deadlines ago show up yah.",
+    "tiles": {
+      "leads": "Total leads",
+      "newInPeriod_one": "{{count}} new inna dis period",
+      "newInPeriod_other": "{{count}} new inna dis period",
+      "accepted": "Accepted",
+      "booked": "Booked",
+      "bookedInPeriod_one": "{{count}} booked inna dis period",
+      "bookedInPeriod_other": "{{count}} booked inna dis period",
+      "conversion": "Conversion",
+      "conversionHint": "Booked leads as a share of accepted leads",
+      "protectedNow": "Protected now",
+      "expiringSoon_one": "Protection end inna {{count}} day",
+      "expiringSoon_other": "Protection end inna {{count}} days",
+      "disputedNow": "Disputed by others",
+      "disputedNowHint": "Yuh leads wid a open ownership dispute fram anodda partner",
+      "commissionEligible": "Commission eligible",
+      "commissionCancelled_one": "{{count}} canceled",
+      "commissionCancelled_other": "{{count}} canceled"
+    },
+    "chart": {
+      "title_one": "Registrations an bookings per day - last {{count}} day",
+      "title_other": "Registrations an bookings per day - last {{count}} days",
+      "registrations": "Registrations",
+      "bookings": "Bookings"
+    },
+    "byStage": "Lead by status",
+    "bySource": "Lead by source",
+    "byReferral": "Leads by referral status",
+    "myDisputes": "Disputes yuh raise",
+    "noDisputes": "No disputes raised.",
+    "unknown": "Not set",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "External CRM (simulated)",
+      "PARTNER_CRM": "Add by yuh team",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integration",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Protection expiring inna di next {{count}} day",
+    "expiringTitle_other": "Protection expiring inna di next {{count}} days",
+    "expiringEmpty": "No lead no lose it protection inna dis window."
   }
 }

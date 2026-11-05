@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Yakabhukwa",
-    "pending": "Zvakayima"
+    "pending": "Zvakayima",
+    "status": {
+      "CONFIRMED": "Yakabhukwa",
+      "CANCELLED": "Kubhuka kwakakanzurwa"
+    }
   },
   "assign": {
     "unassigned": "Hazvina kugoverwa",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Hapana chirongwa chisati chaitika (chisina kunyorwa)",
-    "notInList": "{{project}} (kwete muchirongwa chechirongwa)"
+    "notInList": "{{project}} (kwete muchirongwa chechirongwa)",
+    "protectionDays_one": "{{count}} -zuwa rekudzivirira",
+    "protectionDays_other": "{{count}} -zuwa rekudzivirira"
   },
   "journey": {
     "customer": "Mutengi",
@@ -76,7 +82,14 @@
     "progressHistory": "Nhoroondo yeKubudirira",
     "timesIn": "(nguwa mu {{timezone}} )",
     "backToMyLeads": "Kudzokera kune Vanotungamira",
-    "editLead": "Kugadzirisa Kutungamira"
+    "editLead": "Kugadzirisa Kutungamira",
+    "disputeBanner": "Umweni mudiwa akapokana muridzi wemutengi uyu. A Leadrat admin ari kuzviongorora - kudzivirira kwako kunogara munzvimbo kuguma vasarudza.",
+    "booking": "Kubhuka",
+    "commission": "Chikwata",
+    "notBooked": "Hazvina kubhukwa .",
+    "cancelledOn": "Yakakanzurwa pa {{date}} .",
+    "cancelReason": "Chikonzero: {{reason}}",
+    "cancelledHint": "Muvaki wakakanzura kubhuka - muridzi wekushanda wadzoka newe uye kukodzera kwekomisheni kwakakanzurwa. Inodzoserwa kana kutungamirira kwakabhukwa zvakare."
   },
   "referral": {
     "NOT_REFERRED": "Hazvina kunyorwa (hapana chirongwa)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Muvaki akagamuchira kutumirwa",
       "REFERRAL_REJECTED": "Muvaki wakaramba kutumirwa. Chikonzero: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin yakabudisa kudzivirira kwakadzokororwa mangwanani. Chikonzero: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin yakagoverwazve kunyoreswa kubva {{from}} kusvika {{to}} . Chikonzero: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin yakagoverwazve kunyoreswa kubva {{from}} kusvika {{to}} . Chikonzero: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Kuedza kwekunyoreswa kwakadzokororwa nemumwe mudiwa kwakarambwa",
+      "BOOKING_CANCELLED": "Kubhuka kwakakanzurwa. Chikonzero: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Muridzi wekushanda akadzokera kune mumwe .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kukodzera kweKomishini kwakadzimwa nekubhuka",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kukodzera kweKomishini kwakadzoserwa kune itsva yekubhuka",
+      "OWNERSHIP_DISPUTE_RAISED": "Umweni mudikani wakapokana ngemuridzi wemutsigiri uyu - mutungamiri Leadrat uchazviongorora",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Kukakavadzana kwemuridzi pamutengi uyu kwakabviswa - muridzi wako hauna kuchinjwa",
+      "OWNERSHIP_DISPUTE_UPHELD": "Kukakavadzana kwemuridzi wemutengi uyu kwakaongororwa - muridzi wako wakasimbiswa",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Yakanyoreswa mushure mekunge kukakavadzana kwako kwemuridzi kwasarudzwa mukuda kwako. Cherekedza: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Kudzivirira kwakapera: kukakavara kwemuridzi kwakasarudzwa mukuda kweumweni mudiwa. Cherekedza: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Nhamba yefoni iyi haishandi kune {{country}} .",
     "COUNTRY_MISMATCH": "Ndapota sarudza kodhi yenyika yakarurama.",
     "NOT_MOBILE": "Ndapota pinda nhamba yefoni, kwete nhare yepasi."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisheni inokodzera",
+      "PENDING": "Komisheni iri kuemera",
+      "CANCELLED": "Komisheni yakakanzurwa"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Zvinonzi iwe .",
+      "DISPUTED": "Kupa chirevo kunokakavadzana"
+    }
+  },
+  "result": {
+    "none": "Hapana mhedzisiro yekunyoreswa inoratidza. Nyoresa mutungamiri kutanga.",
+    "acceptedTitle": "Lead yakanyoreswa",
+    "rejectedTitle": "Lead haina kunyoreswa .",
+    "protectionWindow": "Fafitera yekudzivirira .",
+    "protectedUntil": "Kudzivirirwa Kuguma .",
+    "openLead": "Vhura Lead",
+    "addAnother": "Wedzera Umweni Mutungamiriri .",
+    "duplicate": "Kudzokorora - kwatochengetedzwa .",
+    "duplicateHint": "Mutsigiri uyu atodzivirirwa ngendaa iyi ngekunyoreswa kumweni, saka azvizi kukwanisa kunyoreswa kwauri.",
+    "existingProtectedUntil": "Kunyoreswa kuripo kwakachengetedzwa kusvika 2019."
+  },
+  "disputes": {
+    "title": "Kukakavadzana kwangu",
+    "intro": "Kukakavadzana kwehukama hwawakasimudza kune vatengi vakarambwa sezvinyorwa zvakadzokororwa. Mutungamiri Leadrat anoongorora imwe neimwe.",
+    "empty": "Hauna kumutsa chero kukakavara. Kana mutsigiri wawakaunza akarambwa se duplicate, unokwanisa kuzvipokana kubva pamugumisiro wekunyoreswa.",
+    "columns": {
+      "dispute": "Kuyita muphikisano",
+      "reason": "Chikonzero chako .",
+      "outcome": "Zvokugumisira"
+    },
+    "status": {
+      "OPEN": "Pasi pekuongororwa",
+      "UPHELD": "Kwete mukuda kwako .",
+      "OVERTURNED": "Yakasarudzwa mukuda kwako .",
+      "WITHDRAWN": "Kubviswa"
+    },
+    "awaitingReview": "Kuemera kuongororwa kweadmin",
+    "openNewLead": "Vhura mutungamiri wako {{id}}",
+    "withdraw": "Kuvhisa",
+    "withdrawConfirm": "Bvisa gakava rako ngendaa ye {{name}} ? Muridzi wemazuva ano anogara sezvaari.",
+    "raise": "Kukakavadzana muridzi .",
+    "raiseTitle": "Kukakavadzana muridzi .",
+    "raiseHint": "Kana mutengi uyu akauya kwauri kutanga, tsanangura kuti nei. Mutungamiri Leadrat uchazviongorora; kana vakasarudza mukufarira kwako, kutungamirira kunonyoreswa kwauri.",
+    "reasonLabel": "Ngei mutsigiri uyu ari wako?",
+    "reasonMin_one": "Zvishoma {{count}} hunhu.",
+    "reasonMin_other": "Zvishoma {{count}} mavara.",
+    "submit": "Tumira Kukakavadzana",
+    "notProtected": "Apana unobata kudzivirirwa pamutsigiri uyu weprojekiti iyizve - unokwanisa kunyoresa kutungamira zvino.",
+    "raised": "Kukakavadzana {{id}} yakatumwa kuti iongororwe.",
+    "viewAll": "Ona kukakavadzana kwangu ."
+  },
+  "dashboard": {
+    "title": "Dhishibhodhi",
+    "period": "Mazuva",
+    "lastDays_one": "{{count}} zuwa",
+    "lastDays_other": "{{count}} mazuwa",
+    "emptyTitle": "Gumanyi ushoni! Iwewe hausati wava ne leads.",
+    "emptyHint": "Nyoresa kutungamira kwako kwekutanga - pipeline yako, kubhuka uye nguwa dzekudzivirira dzinozooneka pano.",
+    "tiles": {
+      "leads": "Zvese zvinotungamira",
+      "newInPeriod_one": "{{count}} itsva munguwa ino",
+      "newInPeriod_other": "{{count}} itsva munguwa ino",
+      "accepted": "Zvakaashirwa",
+      "booked": "Yakabhukwa",
+      "bookedInPeriod_one": "{{count}} yakabhukwa munguwa ino",
+      "bookedInPeriod_other": "{{count}} yakabhukwa munguwa ino",
+      "conversion": "Kutendeuka",
+      "conversionHint": "Kutungamira kwakabhukwa semugove wekutungamira kwakagamuchirwa",
+      "protectedNow": "Yakachengetedzwa zvino .",
+      "expiringSoon_one": "Kudzivirirwa kunopera mu {{count}} zuva",
+      "expiringSoon_other": "Kudzivirirwa kunopera mu {{count}} mazuva",
+      "disputedNow": "Inopokanwa ngevamweni .",
+      "disputedNowHint": "Kutungamira kwako nekukakavadzana kwemuridzi wakasununguka kubva kune mumwe mudiwa .",
+      "commissionEligible": "Komisheni inokodzera",
+      "commissionCancelled_one": "{{count}} yakakanzurwa",
+      "commissionCancelled_other": "{{count}} yakakanzurwa"
+    },
+    "chart": {
+      "title_one": "Kunyoresa uye kubhuka zuva ngezuva - zuva rekupeisira {{count}}",
+      "title_other": "Kunyoresa nekubhuka pazuwa - mazuwa ekupeisira {{count}}",
+      "registrations": "Kunyoreswa",
+      "bookings": "Kubhuka"
+    },
+    "byStage": "Inotungamira ngemamiriro",
+    "bySource": "Inotungamira ngekwakabva .",
+    "byReferral": "Inotungamira ngemamiriro ekutumira",
+    "myDisputes": "Kukakavadzana kwawakamutsa .",
+    "noDisputes": "Apana kukakavara kwakabudiswa.",
+    "unknown": "Hazvina kuiswa .",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM yekunze (yakafananidzirwa)",
+      "PARTNER_CRM": "Yakawedzerwa ngechikwata chako .",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Kubatanidzwa",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Kudzivirirwa kunopera muzuwa rinotevera {{count}}",
+    "expiringTitle_other": "Kudzivirirwa kunopera mumazuva anotevera {{count}}",
+    "expiringEmpty": "Hapana mutungamiri anorasikirwa nekudzivirirwa kwayo pahwindo iri."
   }
 }

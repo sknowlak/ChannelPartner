@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Reservado ukhamawa",
-    "pending": "Manqha"
+    "pending": "Manqha",
+    "status": {
+      "CONFIRMED": "Reservado ukhamawa",
+      "CANCELLED": "Reservacionajj cancelatäjjewa"
+    }
   },
   "assign": {
     "unassigned": "Jan asignata",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Janiw kuna proyectos utjkiti (janiw referido) .",
-    "notInList": "{{project}} (janiw proyecto lista ukankiti)"
+    "notInList": "{{project}} (janiw proyecto lista ukankiti)",
+    "protectionDays_one": "{{count}} -uru jark’aqasiña",
+    "protectionDays_other": "{{count}} -uru jark’aqasiña"
   },
   "journey": {
     "customer": "Kliyinti",
@@ -76,7 +82,14 @@
     "progressHistory": "Nayrar sartañ Sarnaqäwi",
     "timesIn": "(tiempos ukax {{timezone}} ukankiwa )",
     "backToMyLeads": "Nayan p’iqinchirinakajaru kutt’añamawa",
-    "editLead": "Editar P’iqinchawi"
+    "editLead": "Editar P’iqinchawi",
+    "disputeBanner": "Yaqha sociox aka aljirin dueñopat ch’axwawayiwa. Mä Leadrat admin ukax uñakipaskiw - jark’aqasiñamax jupanakan amtapkamaw qhiparaski.",
+    "booking": "Reservaciona luraña",
+    "commission": "Khita",
+    "notBooked": "Janiw reservatäkiti",
+    "cancelledOn": "{{date}} urux cancelatawa.",
+    "cancelReason": "Razón: {{reason}}",
+    "cancelledHint": "Uta lurañ yatirix reserva cancelawayi - propiedad operativa ukax jumamp kutt’anxiwa ukatx comisión ukar mantañax cancelatawa. Ukax wasitat utt’ayatawa, plomo ukax wasitat reservatäxi ukhaxa."
   },
   "referral": {
     "NOT_REFERRED": "Janiw referido (janiw proyecto) .",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Builder ukax uka referencia ukarux iyaw sataynawa",
       "REFERRAL_REJECTED": "Builder ukax uka referencia ukarux janiw sasaw arsuwayi. Razón: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin ukax duplicado jark’aqasiñ nayraqat apsuwayxi. Razón: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin ukax qillqantañax {{from}} ukat {{to}} ukar wasitat uñt’ayawayi. Razón: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin ukax qillqantañax {{from}} ukat {{to}} ukar wasitat uñt’ayawayi. Razón: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Yaqha socio ukan duplicado qillqantañ yant’awipax janiw satawa",
+      "BOOKING_CANCELLED": "Reservacionajj cancelatäjjewa. Razón: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Propiedad operativa ukaxa socio ukarux kutt’ayatarakiwa",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Comisión ukar mantañax reserva ukamp cancelatawa",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Comisión ukan elegibilidad ukax machaq reserva ukar kutt’ayatawa",
+      "OWNERSHIP_DISPUTE_RAISED": "Yaqha sociox aka aljirin propiedad ukat ch’axwawayiwa - mä admin Leadrat ukax uñakipañapawa",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Aka aljirit propiedad ukan ch’axwawipax apsutawa - propiedad ukax janiw mayjt’kiti",
+      "OWNERSHIP_DISPUTE_UPHELD": "Aka aljirit propiedad ukan ch’axwawipax uñakipatawa - propiedad ukax chiqapawa",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Qillqt’ata ukatxa propiedad ukan ch’axwawimax jumatakiw amtatäxi. Qhanacht’awi: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Arxatäwix tukuyxänwa: mä propiedad ukan ch’axwawipax yaqha socio ukan askipatakiw amtasïna. Qhanacht’awi: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Aka telefono jakhux janiw {{country}} ukatakix askïkiti.",
     "COUNTRY_MISMATCH": "Ukhamaraki, chiqapa markana chimpupa ajlliñani.",
     "NOT_MOBILE": "Mä móvil numero qillqt’añamawa, janiw fijo ukar qillqt’añati."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Comisión ukaru mantañataki",
+      "PENDING": "Comisión ukax pendiente ukhamawa",
+      "CANCELLED": "Comisión ukax cancelatawa"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Jumaruw uñt’ayasi",
+      "DISPUTED": "Atribución ukax ch’axwatawa"
+    }
+  },
+  "result": {
+    "none": "Janiwa registro resultado uñacht’ayañakiti. Nayraqatax mä p’iqinchaw qillqantañamawa.",
+    "acceptedTitle": "Plomo qillqantatawa",
+    "rejectedTitle": "Plomo ukaxa janiwa qillqantatäkiti",
+    "protectionWindow": "Jark’aqaña Ventana",
+    "protectedUntil": "Jark’aqaña Jisk’a",
+    "openLead": "Jisk’a Plomo",
+    "addAnother": "Yaqha Plomo yapxataña",
+    "duplicate": "Duplicado - nayratpach jark’aqatawa",
+    "duplicateHint": "Aka aljirix nayratpach aka proyecto ukatakix yaqha qillqantayawimpiw jark’aqasi, ukhamax janiw jumatakix qillqantatäkaspati.",
+    "existingProtectedUntil": "Jichha utjki uka qillqantayawixa jark’aqatawa"
+  },
+  "disputes": {
+    "title": "Nayan Ch’axwawinakaja",
+    "intro": "Propiedad tuqit ch’axwawinakaw aljirinakatakix sartayawaytan ukax duplicados ukham jan iyawsatänwa. Mä Leadrat admin sapa mayniruw uñakipi.",
+    "empty": "Jumax janiw kuna ch’axwañanaksa sartayktati. Mä aljiriru apanita ukaxa duplicado ukhamxa jani iyawsatächi ukhaxa, registro ukana resultadopatxa ch’axwañawa.",
+    "columns": {
+      "dispute": "Qhuruchasiña",
+      "reason": "Juman amuyumaxa",
+      "outcome": "Utjiri"
+    },
+    "status": {
+      "OPEN": "Uñakipt’atäski",
+      "UPHELD": "Janiw jumanakan askimatakjamäkiti",
+      "OVERTURNED": "Juman askimatak amtawayta",
+      "WITHDRAWN": "Ukax apsutawa"
+    },
+    "awaitingReview": "Admin ukan uñakipañ suyt’askta",
+    "openNewLead": "Jisk’a p’iqinchawi {{id}}",
+    "withdraw": "Aptaña",
+    "withdrawConfirm": "{{name}} ukatakix ch’axwawim apsuñamawa ? Jichhax dueñox kunjamtix utjki ukhamarjamaw qhiparaski.",
+    "raise": "Ch’axwaña propiedad ukanaka",
+    "raiseTitle": "Ch’axwaña propiedad ukanaka",
+    "raiseHint": "Aka aljirix nayraqat jumar jutchi ukhaxa, kunatsa juti uk qhanañcht’añamawa. Mä Leadrat admin ukax uñakipañapawa; jupanakax jumatakix askinjam amtapxani ukhaxa, p’iqinchirix jumatakiw qillqantatäni.",
+    "reasonLabel": "¿Kunatsa aka aljirix jumankpacha?",
+    "reasonMin_one": "Ukhamaraki {{count}} chimpu.",
+    "reasonMin_other": "Ukhamaraki {{count}} chimpunaka.",
+    "submit": "Ch’axwaña apayaniña",
+    "notProtected": "Janiw khitis aka aljirirux aka proyectotakix jark’aqasiñx katxaskiti - jichhax p’iqinchirirux qillqantasipxasmawa.",
+    "raised": "Ch’axwawix {{id}} uñakipañatakiw apayata.",
+    "viewAll": "Nayan ch’axwawinakaj uñakipt’añäni"
+  },
+  "dashboard": {
+    "title": "Tablero de instrumentos ukax mä juk’a pachanakanwa",
+    "period": "Pacha",
+    "lastDays_one": "{{count}} uru",
+    "lastDays_other": "{{count}} urunaka",
+    "emptyTitle": "Aski jutäwi! Jumax janiw kuna p’iqinchawinakas utjkiti.",
+    "emptyHint": "Nayrïr irpirim qillqantañamawa - gasoducto, reservas ukat jark’aqasiñ urunakaw akan uñacht’ayasini.",
+    "tiles": {
+      "leads": "Taqi kunas p’iqinchatawa",
+      "newInPeriod_one": "{{count}} machaq aka pachanxa",
+      "newInPeriod_other": "{{count}} machaq aka pachanxa",
+      "accepted": "Iyaw satawa",
+      "booked": "Reservado ukhamawa",
+      "bookedInPeriod_one": "{{count}} aka pachanx reservado ukhamawa",
+      "bookedInPeriod_other": "{{count}} aka pachanx reservado ukhamawa",
+      "conversion": "Jaqiru jaqukipaña",
+      "conversionHint": "Reservado leads ukax mä parte de leads aceptadas ukhamawa",
+      "protectedNow": "Jichhax jark’aqatäxiwa",
+      "expiringSoon_one": "Jark’aqasiñax {{count}} urun tukuyatawa",
+      "expiringSoon_other": "Jark’aqasiñax {{count}} urunak tukuyatawa",
+      "disputedNow": "Mayninakan ch’axwatapa",
+      "disputedNowHint": "Juman p’iqinchawimax mä jist’arat propiedad ch’axwawimpiw yaqha masipat",
+      "commissionEligible": "Comisión ukaru mantañataki",
+      "commissionCancelled_one": "{{count}} ukax chhaqtayatawa",
+      "commissionCancelled_other": "{{count}} ukax chhaqtayatawa"
+    },
+    "chart": {
+      "title_one": "Inscripción ukat reservas ukanakax sapa uru - qhipa {{count}} uru",
+      "title_other": "Inscripción ukat reservas ukanakax sapa uru - qhipa {{count}} urunaka",
+      "registrations": "Qillqantayasiñanaka",
+      "bookings": "Reservacionanaka luraña"
+    },
+    "byStage": "Estado ukarjam irpxaruwayi",
+    "bySource": "Ukax mä phunchhawi tuqiw irpxaruwayi",
+    "byReferral": "Estado de referencia ukarjam irpxaruwayi",
+    "myDisputes": "Ch’axwawinakaw uñstayata",
+    "noDisputes": "Janiw kuna ch’axwawinakas utjkänti.",
+    "unknown": "Janiwa utt’ayatakiti",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Anqa CRM (simulado) ukax 1.1.",
+      "PARTNER_CRM": "Ukax equipoman yapxatatawa",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integración ukaxa",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Jark’aqasiñax jutir {{count}} urunw tukusxi",
+    "expiringTitle_other": "Jark’aqasiñax jutir {{count}} urunakan tukusiñapataki",
+    "expiringEmpty": "Janiw kuna plomos uka ventananx jark’aqasiñap chhaqhaykiti."
   }
 }

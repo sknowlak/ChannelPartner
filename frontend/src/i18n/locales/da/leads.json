@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Booket",
-    "pending": "Indtil"
+    "pending": "Indtil",
+    "status": {
+      "CONFIRMED": "Booket",
+      "CANCELLED": "Booking annulleret"
+    }
   },
   "assign": {
     "unassigned": "Ikke tildelt",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Intet projekt endnu (ikke henvist)",
-    "notInList": "{{project}} (ikke på projektlisten)"
+    "notInList": "{{project}} (ikke på projektlisten)",
+    "protectionDays_one": "{{count}} dages beskyttelse",
+    "protectionDays_other": "{{count}} dages beskyttelse"
   },
   "journey": {
     "customer": "Kunde",
@@ -76,7 +82,14 @@
     "progressHistory": "Fremskridtshistorie",
     "timesIn": "(tider i {{timezone}} )",
     "backToMyLeads": "Tilbage til Mine kundeemner",
-    "editLead": "Rediger kundeemne"
+    "editLead": "Rediger kundeemne",
+    "disputeBanner": "En anden partner har bestridt ejerskabet af denne kunde. En Leadrat administrator gennemgår det - din beskyttelse forbliver på plads, indtil de beslutter sig.",
+    "booking": "Booking",
+    "commission": "Provision",
+    "notBooked": "Ikke booket",
+    "cancelledOn": "Annulleret den {{date}} .",
+    "cancelReason": "Årsag: {{reason}}",
+    "cancelledHint": "Bygherren annullerede reservationen - operationelt ejerskab er tilbage hos dig, og kommissionsberettigelse er annulleret. Den genoprettes, hvis føringen bookes igen."
   },
   "referral": {
     "NOT_REFERRED": "Ikke henvist (intet projekt)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Builder accepterede henvisningen",
       "REFERRAL_REJECTED": "Builder afviste henvisningen. Årsag: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin frigav dubletbeskyttelse tidligt. Årsag: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Administrator omfordelte registreringen fra {{from}} til {{to}} . Årsag: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Administrator omfordelte registreringen fra {{from}} til {{to}} . Årsag: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Et dublet registreringsforsøg fra en anden partner blev afvist",
+      "BOOKING_CANCELLED": "Booking annulleret. Årsag: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Det operationelle ejerskab tilbage til partneren",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kommissionsberettigelse annulleret med reservationen",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kommissionsberettigelse genoprettet for den nye reservation",
+      "OWNERSHIP_DISPUTE_RAISED": "En anden partner bestridte ejerskabet af denne kunde - en Leadrat administrator vil gennemgå det",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Ejerskabstvisten på denne kunde blev trukket tilbage - dit ejerskab er uændret",
+      "OWNERSHIP_DISPUTE_UPHELD": "Ejerskabstvisten på denne kunde blev gennemgået - dit ejerskab er bekræftet",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Registreret efter at din ejertvist blev afgjort til din fordel. Bemærk: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Beskyttelsen ophørte: en ejertvist blev afgjort til fordel for en anden partner. Bemærk: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Dette telefonnummer er ikke gyldigt for {{country}} .",
     "COUNTRY_MISMATCH": "Vælg venligst den korrekte landekode.",
     "NOT_MOBILE": "Indtast venligst et mobilnummer, ikke en fastnettelefon."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Kommissionen berettiget",
+      "PENDING": "Kommissionen afventer",
+      "CANCELLED": "Kommissionen annulleret"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Tilskrevet dig",
+      "DISPUTED": "Tilskrivning bestridt"
+    }
+  },
+  "result": {
+    "none": "Intet registreringsresultat at vise. Registrer et kundeemne først.",
+    "acceptedTitle": "Bly registreret",
+    "rejectedTitle": "Bly ikke registreret",
+    "protectionWindow": "Beskyttelsesvindue",
+    "protectedUntil": "Beskyttet indtil",
+    "openLead": "Åbent lead",
+    "addAnother": "Tilføj endnu et kundeemne",
+    "duplicate": "Duplikat - allerede beskyttet",
+    "duplicateHint": "Denne kunde er allerede beskyttet for dette projekt af en anden registrering, så den kunne ikke registreres for dig.",
+    "existingProtectedUntil": "Eksisterende registrering beskyttet indtil"
+  },
+  "disputes": {
+    "title": "Mine tvister",
+    "intro": "Ejerskabstvister, du rejste for kunder, der blev afvist som dubletter. En Leadrat administrator gennemgår hver enkelt.",
+    "empty": "Du har ikke rejst nogen tvister. Hvis en kunde, du har hentet, bliver afvist som dublet, kan du bestride det fra registreringsresultatet.",
+    "columns": {
+      "dispute": "Bestride",
+      "reason": "Din grund",
+      "outcome": "Resultat"
+    },
+    "status": {
+      "OPEN": "Under revision",
+      "UPHELD": "Ikke til din fordel",
+      "OVERTURNED": "Besluttet til din fordel",
+      "WITHDRAWN": "trukket tilbage"
+    },
+    "awaitingReview": "Venter på admingennemgang",
+    "openNewLead": "Åbn dit kundeemne {{id}}",
+    "withdraw": "Træk tilbage",
+    "withdrawConfirm": "Vil du trække din tvist for {{name}} tilbage? Det nuværende ejerskab forbliver som det er.",
+    "raise": "Bestride ejerskab",
+    "raiseTitle": "Bestride ejerskab",
+    "raiseHint": "Hvis denne kunde kom til dig først, så forklar hvorfor. En Leadrat administrator vil gennemgå det; hvis de beslutter sig til din fordel, registreres leadet for dig.",
+    "reasonLabel": "Hvorfor er denne kunde din?",
+    "reasonMin_one": "Mindst {{count}} tegn.",
+    "reasonMin_other": "Mindst {{count}} tegn.",
+    "submit": "Send tvist",
+    "notProtected": "Ingen har længere beskyttelse af denne kunde for dette projekt - du kan registrere kundeemnet nu.",
+    "raised": "Tvist {{id}} sendt til gennemgang.",
+    "viewAll": "Se mine tvister"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Periode",
+    "lastDays_one": "{{count}} dag",
+    "lastDays_other": "{{count}} dage",
+    "emptyTitle": "Velkomst! Du har ingen kundeemner endnu.",
+    "emptyHint": "Registrer dit første lead - din pipeline, bookinger og beskyttelsesfrister vil dukke op her.",
+    "tiles": {
+      "leads": "Samlet kundeemner",
+      "newInPeriod_one": "{{count}} nye i denne periode",
+      "newInPeriod_other": "{{count}} nye i denne periode",
+      "accepted": "Accepteret",
+      "booked": "Booket",
+      "bookedInPeriod_one": "{{count}} reserveret i denne periode",
+      "bookedInPeriod_other": "{{count}} reserveret i denne periode",
+      "conversion": "Omdannelse",
+      "conversionHint": "Bookede kundeemner som andel af accepterede kundeemner",
+      "protectedNow": "Beskyttet nu",
+      "expiringSoon_one": "Beskyttelse slutter om {{count}} dag",
+      "expiringSoon_other": "Beskyttelse slutter om {{count}} dage",
+      "disputedNow": "Bestrides af andre",
+      "disputedNowHint": "Dine kundeemner med en åben ejertvist fra en anden partner",
+      "commissionEligible": "Kommissionen berettiget",
+      "commissionCancelled_one": "{{count}} annulleret",
+      "commissionCancelled_other": "{{count}} annulleret"
+    },
+    "chart": {
+      "title_one": "Registreringer og bookinger pr. dag - sidste {{count}} dag",
+      "title_other": "Registreringer og bookinger pr. dag - sidste {{count}} dage",
+      "registrations": "Registreringer",
+      "bookings": "Bestillinger"
+    },
+    "byStage": "Leder efter status",
+    "bySource": "Leder efter kilde",
+    "byReferral": "Leder efter henvisningsstatus",
+    "myDisputes": "Tvister du rejste",
+    "noDisputes": "Ingen rejst tvister.",
+    "unknown": "Ikke indstillet",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Ekstern CRM (simuleret)",
+      "PARTNER_CRM": "Tilføjet af dit team",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integration",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Beskyttelsen udløber inden for den næste {{count}} dag",
+    "expiringTitle_other": "Beskyttelsen udløber inden for de næste {{count}} dage",
+    "expiringEmpty": "Intet bly mister sin beskyttelse i dette vindue."
   }
 }

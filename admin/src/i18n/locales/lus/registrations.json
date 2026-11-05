@@ -49,8 +49,73 @@
       "newPartnerId": "Partner ID thar a ni",
       "reason": "Chhan (a tul) .",
       "apply": "Override tih hi hmang rawh",
-      "applying": "Apply lai hian..."
+      "applying": "Apply lai hian...",
+      "cancelBookingHint": "Canceling hian booking leh a commission chu cancel a nih thu a tarlang a, operational ownership chu partner hnenah a pe kir leh a, builder chuan he lead hi a book leh thei a ni.",
+      "cancelBookingConfirm": "He booking hi cancel mai rawh? A commission pawh cancel a ni bawk. Hei hi i hming leh chhan nen logged a ni."
     },
-    "timelineTitle": "Audit Hun kal tawh (he registration hi) 1.1."
+    "timelineTitle": "Audit Hun kal tawh (he registration hi) 1.1.",
+    "bookingStatus": "Booking Status a awm",
+    "commissionAttribution": "Commission Attribution chungchang a ni",
+    "disputeOpen": "He customer chungah hian ownership dispute a inhawng a - partner dang chuan anmahni ta a ni a ti. Disputes page-ah thutlukna siam a ni.",
+    "viewDisputes": "Inhnialna awmte en rawh",
+    "cancellation": {
+      "title": "Booking tihtawp a ni",
+      "hint": "Booking leh a commission chu cancel a ni a; operational ownership chu partner nen an rawn kir leh a, builder chuan he lead hi a book leh thei tawh ang.",
+      "at": "Cancel a ni a",
+      "by": "Cancel a ni a",
+      "reason": "Chhan"
+    }
+  },
+  "disputes": {
+    "title": "Ownership chungchanga inhnialna awm thei",
+    "hint": "Partner chuan a registration chu duplicate anga hnawl a nih chuan customer neitu chu tu nge tih a sawisel thei a ni. A sir lehlamah enfiah la, thutlukna siam rawh.",
+    "statusFilter": "Dispute dinhmun",
+    "allStatuses": "Status zawng zawng",
+    "empty": "He status nen hian inhnialna a awm lo.",
+    "columns": {
+      "dispute": "Inremlohna",
+      "customer": "Dawrtu",
+      "project": "Ruahmanna",
+      "raisedBy": "Raised by",
+      "heldBy": "Tuna a neitu",
+      "status": "Nihna",
+      "raisedAt": "Raised on a ni"
+    },
+    "detail": {
+      "title": "Inhnialna {{id}}",
+      "raisedOn": "Raised {{date}}",
+      "raisingTitle": "Raised by",
+      "holderTitle": "Tuna a neitu",
+      "partner": "Kawppui",
+      "raisedBy": "Thu thehluh a ni",
+      "customerName": "Dawrtu",
+      "mobile": "Chesawn thei",
+      "alternateMobile": "Mobile danglam tak a ni",
+      "email": "Email hmanga thawn theih a ni",
+      "project": "Ruahmanna",
+      "reason": "An chhan chu",
+      "registration": "Inziahluh theih a ni",
+      "registeredAt": "Registered a ni tawh",
+      "referral": "Referral a ni",
+      "heldMissing": "Held registration hi hmuh theih a ni lo.",
+      "resolutionTitle": "Thutlukna",
+      "outcome": "Rahchhuak",
+      "note": "Thil chhinchhiah",
+      "decidedBy": "Thutlukna siamin",
+      "decidedAt": "Thutlukna siam a ni",
+      "newRegistration": "Registration thar a awm",
+      "decideTitle": "He buaina hi thutlukna siam rawh",
+      "noteLabel": "Thutlukna siam dan sawifiahna Note (a tul) .",
+      "noteRequired": "Thutlukna siam turin note ziak rawh.",
+      "uphold": "Uphold rawh",
+      "overturn": "Overturn a ni",
+      "upholdEffect": "{{holder}} hian customer chu a vawng reng thin. Inhnialna chu khar a ni a, thil dang a danglam lo.",
+      "overturnEffect": "{{holder}} 's duplicate protection chu tunah chuan a tawp tawh a, customer chu {{partner}} atan registration thar angin a register ta a ni.",
+      "heldBookedHelp": "He customer hi tuna neitu kaltlangin booked a ni. Chu booking chu cancel hmasa phawt ang che (Registration-ah Admin Override la), chutah chuan overturn rawh:",
+      "confirmTitle": "I chiang em?",
+      "confirmUphold": "Ni e, vawng tlat rawh",
+      "confirmOverturn": "Ni e, overturn rawh",
+      "back": "Inhnialna lam hawi leh rawh"
+    }
   }
 }

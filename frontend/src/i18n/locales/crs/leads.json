@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Rezerve",
-    "pending": "An atandan"
+    "pending": "An atandan",
+    "status": {
+      "CONFIRMED": "Rezerve",
+      "CANCELLED": "rezervasyon in ganny kennsel"
+    }
   },
   "assign": {
     "unassigned": "pa'n ganny donnen",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "napa proze ankor (pa refer)",
-    "notInList": "{{project}} (pa dan lalis proze)"
+    "notInList": "{{project}} (pa dan lalis proze)",
+    "protectionDays_one": "{{count}} -zour proteksyon",
+    "protectionDays_other": "{{count}} -zour proteksyon"
   },
   "journey": {
     "customer": "Konsomater",
@@ -76,7 +82,14 @@
     "progressHistory": "Listwar Progre",
     "timesIn": "(bann ler dan {{timezone}} )",
     "backToMyLeads": "retourn lo mon bann lendikasyon",
-    "editLead": "edit lead"
+    "editLead": "edit lead",
+    "disputeBanner": "en lot partener in dispit lo propriyete sa kliyan. en admin Leadrat pe revwar li - ou proteksyon i reste an plas ziska ler zot deside.",
+    "booking": "Rezervasyon",
+    "commission": "Komisyon",
+    "notBooked": "pa'n ganny rezerve",
+    "cancelledOn": "kennsel lo {{date}} .",
+    "cancelReason": "Rezon: {{reason}}",
+    "cancelledHint": "sa mason in kennsel sa rezervasyon - propriyete operasyonnel i retourn avek ou e kalifikasyon komisyon in ganny kennsel. i ganny remete si sa lead i ganny rezerve ankor."
   },
   "referral": {
     "NOT_REFERRED": "pa'n ganny refer (napa proze)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "mason in aksepte referans",
       "REFERRAL_REJECTED": "mason in rezet sa referans. Rezon: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "admin in lans proteksyon doub boner. Rezon: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin in re-asiyen lanrezistreman sorti {{from}} pou al {{to}} . Rezon: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin in re-asiyen lanrezistreman sorti {{from}} pou al {{to}} . Rezon: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "en lesey lanrezistreman doub par en lot partener in ganny rezete",
+      "BOOKING_CANCELLED": "rezervasyon in ganny kennsel. Rezon: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "propriyete operasyonnel in ganny retournen avek partener",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "kalifikasyon komisyon in ganny kennsel avek rezervasyon",
+      "COMMISSION_ELIGIBILITY_RESTORED": "kalifikasyon komisyon in ganny remete pou nouvo rezervasyon",
+      "OWNERSHIP_DISPUTE_RAISED": "en lot partener in dispit lo propriyete sa kliyan - en admin Leadrat pou revwar li",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "sa diskisyon lo propriyete lo sa kliyan in ganny retire - ou propriyete pa'n sanze",
+      "OWNERSHIP_DISPUTE_UPHELD": "sa diskisyon lo propriyete lo sa kliyan in ganny revwar - ou propriyete in ganny konfirmen",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "anrezistre apre ki ou diskisyon lo propriyete in ganny deside dan ou faver. Not: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "proteksyon in fini: en diskisyon lo propriyete in ganny deside an faver en lot partener. Not: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "sa nimero telefonn pa valid pou {{country}} .",
     "COUNTRY_MISMATCH": "silvouple selekte kod pei korek.",
     "NOT_MOBILE": "silvouple antre en nimero mobil, pa en telefonn fix."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisyon ki kalifye",
+      "PENDING": "Komisyon an atant",
+      "CANCELLED": "Komisyon in ganny kennsel"
+    },
+    "attribution": {
+      "ATTRIBUTED": "atribiye avek ou",
+      "DISPUTED": "atribisyon i ganny konteste"
+    }
+  },
+  "result": {
+    "none": "napa rezilta lanrezistreman pou montre. anrezistre en lead avan.",
+    "acceptedTitle": "plon anrezistre",
+    "rejectedTitle": "Lead pa'n anrezistre",
+    "protectionWindow": "Lafnet Proteksyon",
+    "protectedUntil": "Proteze Ziska",
+    "openLead": "ouver lead",
+    "addAnother": "azout en lot lead",
+    "duplicate": "doub - deza proteze",
+    "duplicateHint": "sa kliyan i deza ganny proteze pou sa proze par en lot lanrezistreman, alor i pa'n kapab ganny anrezistre pou ou.",
+    "existingProtectedUntil": "lanrezistreman egzistan i ganny proteze ziska"
+  },
+  "disputes": {
+    "title": "Mon bann diskisyon",
+    "intro": "bann diskisyon lo propriyete ki ou'n souleve pour bann kliyan ki'n ganny refize koman bann doub. en admin Leadrat i revwar sakenn.",
+    "empty": "Ou pa’n lev okenn diskisyon. si en kliyan ki ou'n anmennen i ganny refize koman en doub, ou kapab konteste li avek rezilta lanrezistreman.",
+    "columns": {
+      "dispute": "Dispit",
+      "reason": "ou rezon",
+      "outcome": "Rezilta"
+    },
+    "status": {
+      "OPEN": "anba revizyon",
+      "UPHELD": "Pa dan ou faver",
+      "OVERTURNED": "deside dan ou faver",
+      "WITHDRAWN": "in ganny retire"
+    },
+    "awaitingReview": "pe esper revi admin",
+    "openNewLead": "ouver ou lead {{id}}",
+    "withdraw": "Retire",
+    "withdrawConfirm": "retir ou diskisyon pour {{name}} ? propriyete aktyel i reste parey i ete.",
+    "raise": "Konfli lo propriyete",
+    "raiseTitle": "Konfli lo propriyete",
+    "raiseHint": "si sa kliyan in vin kot ou avan, eksplike akoz. en admin Leadrat pou revwar li; si zot deside dan ou faver, sa lead i ganny anrezistre pour ou.",
+    "reasonLabel": "akoz sa kliyan i pour ou?",
+    "reasonMin_one": "omwen {{count}} karakter.",
+    "reasonMin_other": "omwen {{count}} karakter.",
+    "submit": "Anvoy Konfli",
+    "notProtected": "personn nepli annan proteksyon lo sa kliyan pou sa proze - ou kapab anrezistre sa lead la konmela.",
+    "raised": "diskisyon {{id}} in ganny anvoye pou revwar.",
+    "viewAll": "vwar mon bann diskisyon"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Peryod",
+    "lastDays_one": "{{count}} zour",
+    "lastDays_other": "{{count}} zour",
+    "emptyTitle": "Byenveni! ou napa okenn lendikasyon pour le moman.",
+    "emptyHint": "anrezistre ou premye lead - ou pipeline, rezervasyon ek dele letan proteksyon pou aparet isi.",
+    "tiles": {
+      "leads": "Total lead",
+      "newInPeriod_one": "{{count}} nouvo dan sa peryod",
+      "newInPeriod_other": "{{count}} nouvo dan sa peryod",
+      "accepted": "Aksepte",
+      "booked": "Rezerve",
+      "bookedInPeriod_one": "{{count}} in ganny rezerve dan sa peryod",
+      "bookedInPeriod_other": "{{count}} in ganny rezerve dan sa peryod",
+      "conversion": "konversyon",
+      "conversionHint": "bann lead ki'n ganny rezerve koman en par dan bann lead ki'n ganny aksepte",
+      "protectedNow": "proteze la konmela",
+      "expiringSoon_one": "proteksyon pe fini dan {{count}} zour",
+      "expiringSoon_other": "Proteksyon ki fini dan {{count}} zour",
+      "disputedNow": "Diskite par lezot",
+      "disputedNowHint": "ou bann lead avek en diskisyon propriyete ouver sorti kot en lot partener",
+      "commissionEligible": "Komisyon ki kalifye",
+      "commissionCancelled_one": "{{count}} in ganny kennsel",
+      "commissionCancelled_other": "{{count}} in ganny kennsel"
+    },
+    "chart": {
+      "title_one": "lanrezistreman ek rezervasyon par zour - dernyen {{count}} zour",
+      "title_other": "lanrezistreman ek rezervasyon par zour - dernyen {{count}} zour",
+      "registrations": "Lanrezistreman",
+      "bookings": "Rezervasyon"
+    },
+    "byStage": "bann lead par stati",
+    "bySource": "bann lead par sours",
+    "byReferral": "bann lead par stati referans",
+    "myDisputes": "bann diskisyon ki ou'n souleve",
+    "noDisputes": "napa okenn diskisyon ki'n ganny souleve.",
+    "unknown": "pa'n ganny mete",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM eksteryer (simile)",
+      "PARTNER_CRM": "azoute par ou lekip",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "lentegrasyon",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "proteksyon pe ekspire dan prosen {{count}} zour",
+    "expiringTitle_other": "proteksyon pe ekspire dan prosen {{count}} zour",
+    "expiringEmpty": "napa diplon ki perdi son proteksyon dan sa lafnet."
   }
 }

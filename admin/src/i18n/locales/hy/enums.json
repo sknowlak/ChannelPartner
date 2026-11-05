@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Իրավասու",
-    "PENDING": "Սպասվում է"
+    "PENDING": "Սպասվում է",
+    "CANCELLED": "Չեղարկված է"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Վաղ թողարկեք կրկնօրինակ պաշտպանությունը",
-    "REASSIGN_PARTNER": "Վերահանձնարարել մեկ այլ գործընկերոջ"
+    "REASSIGN_PARTNER": "Վերահանձնարարել մեկ այլ գործընկերոջ",
+    "CANCEL_BOOKING": "Չեղարկել ամրագրումը"
   },
   "dataType": {
     "TEXT": "Տեքստ",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Սուպեր ադմին",
     "ADMIN": "Ադմին"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Հաստատված է",
+    "CANCELLED": "Չեղարկված է"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Վերագրվում է",
+    "DISPUTED": "Վիճելի"
+  },
+  "disputeStatus": {
+    "OPEN": "Բաց",
+    "UPHELD": "Պահպանվել է",
+    "OVERTURNED": "Շրջվել է",
+    "WITHDRAWN": "Վերցված"
   }
 }

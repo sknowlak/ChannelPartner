@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "E beakantšwe",
-    "pending": "Letetšwe"
+    "pending": "Letetšwe",
+    "status": {
+      "CONFIRMED": "E beakantšwe",
+      "CANCELLED": "Booking e phumotšwe"
+    }
   },
   "assign": {
     "unassigned": "E sa abelwa",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Ga go na projeke ga bjale (ga se ya romelwa) .",
-    "notInList": "{{project}} (e sego lenaneong la projeke) ."
+    "notInList": "{{project}} (e sego lenaneong la projeke) .",
+    "protectionDays_one": "{{count}} -tšireletso ya letsatsi",
+    "protectionDays_other": "{{count}} -tšireletso ya letsatsi"
   },
   "journey": {
     "customer": "Modiriši",
@@ -76,7 +82,14 @@
     "progressHistory": "Histori ya Kgatelopele",
     "timesIn": "(dinako ka go {{timezone}} )",
     "backToMyLeads": "Go Boela Go Dihlohlo tša Ka",
-    "editLead": "Edita Eta pele"
+    "editLead": "Edita Eta pele",
+    "disputeBanner": "Molekane yo mongwe o ganeditše beng ba moreki yo. A Leadrat admin is reviewing it - tšhireletšo ya gago e dula e le gona go fihlela ba tšea sephetho.",
+    "booking": "Go beakanya",
+    "commission": "Khomišene",
+    "notBooked": "Ga se ya bewa",
+    "cancelledOn": "E phumotšwe ka {{date}} .",
+    "cancelReason": "Lebaka: {{reason}}",
+    "cancelledHint": "Moagi o phumotše peeletšo - beng ba tshepedišo bo boile le wena gomme go swanelega ga khomišene go phumotšwe. E bušetšwa ge e ba lead e beakantšwe gape."
   },
   "referral": {
     "NOT_REFERRED": "Ga se ya romelwa (ga go na projeke) .",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Moagi o ile a amogela go fetišetšwa",
       "REFERRAL_REJECTED": "Builder o ile a gana go fetišetšwa. Lebaka: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin o lokollotše tšhireletšo ya go ipoeletša ka pela. Lebaka: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin o ile a abela gape ngwadišo go tšwa go {{from}} go ya go {{to}} . Lebaka: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin o ile a abela gape ngwadišo go tšwa go {{from}} go ya go {{to}} . Lebaka: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Boiteko bja go ingwadiša gabedi ke molekane yo mongwe bo ile bja ganwa",
+      "BOOKING_CANCELLED": "Booking e phumotšwe. Lebaka: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Beng ba tshebetso bo ile ba khutlela ho molekane",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Khomišene tšoaneleha hlakolwa le Booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Go swanelega ga Khomišene go bušeditšwe bakeng sa go beakanya mo gofsa",
+      "OWNERSHIP_DISPUTE_RAISED": "Molekane yo mongwe o ile a ganetša beng ba moreki yo - molaodi Leadrat o tla e hlahloba",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Kgang ya beng go moreki yo e ile ya gogwa morago - beng ba gago ga se bja fetoga",
+      "OWNERSHIP_DISPUTE_UPHELD": "Kgang ya beng go moreki yo e ile ya hlahlobja - beng ba gago bo tiišeditšwe",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "E ngwadišitšwe ka morago ga ge ngangišano ya gago ya beng e tšerwe sephetho ka go go hola. Ela hloko: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Tšhireletšo e ile ya fela: ngangišano ya beng e ile ya tšewa sephetho ka go thekga molekane yo mongwe. Ela hloko: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Nomoro ye ya mogala ga e šome go {{country}} .",
     "COUNTRY_MISMATCH": "Hle kgetha khoutu ya naga ye e nepagetšego.",
     "NOT_MOBILE": "Hle tsenya nomoro ya sellathekeng, e sego mogala wa motheo."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Khomišene e swanelega",
+      "PENDING": "Khomišene e sa emetše",
+      "CANCELLED": "Khomišene e phumotšwe"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Go bolelwa gore ke wena",
+      "DISPUTED": "Attribution e ngangišanwa"
+    }
+  },
+  "result": {
+    "none": "Ga go na sephetho sa ngwadišo seo se swanetšego go bontšhwa. Ngwadiša ketapele pele.",
+    "acceptedTitle": "Lloto e ngwadišitšwego",
+    "rejectedTitle": "Lloto ga se ya ngwadišwa",
+    "protectionWindow": "Lefasetere la Tšhireletšo",
+    "protectedUntil": "E šireleditšwe Go fihla",
+    "openLead": "Bula Lead",
+    "addAnother": "Oketša Lead e Nngwe",
+    "duplicate": "Pheta - e se e sireleditswe",
+    "duplicateHint": "Moreki yo o šetše a šireleditšwe bakeng sa projeke ye ka ngwadišo ye nngwe, ka fao e be e sa kgone go ngwadišetšwa wena.",
+    "existingProtectedUntil": "Boingwadišo bjo bo lego gona bo šireleditšwe go fihla"
+  },
+  "disputes": {
+    "title": "Dingangišano tša ka",
+    "intro": "Dingangišano tša beng tšeo o di rotošeditšego bareki tšeo di gannwego bjalo ka diphetolelo. Admin Leadrat e hlahloba e nngwe le e nngwe.",
+    "empty": "Ga se wa rotoša dingangišano le ge e le dife. Ge moreki yo o mo tlišitšego a gannwe bjalo ka kopi, o ka mo ganetša go tšwa go sephetho sa ngwadišo.",
+    "columns": {
+      "dispute": "Kgakgano",
+      "reason": "Lebaka la gago",
+      "outcome": "Dipoelo"
+    },
+    "status": {
+      "OPEN": "Ka tlase ga tshekatsheko",
+      "UPHELD": "E sego ka go go hola",
+      "OVERTURNED": "E dirile phetho yeo e go holago",
+      "WITHDRAWN": "E gogetšwe morago"
+    },
+    "awaitingReview": "E emetše go hlahlobja ga admin",
+    "openNewLead": "Bula lead ya gago {{id}}",
+    "withdraw": "Gogela morago",
+    "withdrawConfirm": "Gogela morago ngangišano ya gago bakeng sa {{name}} ? Bomong bja bjale bo dula bo le bjalo.",
+    "raise": "Beng ba ngangišano",
+    "raiseTitle": "Beng ba ngangišano",
+    "raiseHint": "Ge e ba moreki yo a tlile go wena pele, hlalosa lebaka. Admin Leadrat o tla e hlahloba; ge ba tšea sephetho ka go go hola, ketapele e ngwadišetšwa wena.",
+    "reasonLabel": "Ke ka baka la’ng moreki yo e le wa gago?",
+    "reasonMin_one": "Bonyane {{count}} semelo.",
+    "reasonMin_other": "Bonyane {{count}} ditlhaka.",
+    "submit": "Romela Kgang",
+    "notProtected": "Ga go na motho yo a swerego tšhireletšo go moreki yo bakeng sa projeke ye gape - o ka ngwadiša moetapele bjale.",
+    "raised": "Kgang {{id}} e rometšwe go hlahlobja.",
+    "viewAll": "Lebelela dingangišano tša ka"
+  },
+  "dashboard": {
+    "title": "Dashboard ya",
+    "period": "Paka",
+    "lastDays_one": "{{count}} letšatši",
+    "lastDays_other": "{{count}} matšatši",
+    "emptyTitle": "Le amogetšwe! Ga o na di-lead go fihla ga bjale.",
+    "emptyHint": "Ngwadiša lead ya gago ya mathomo - phaephe ya gago, dipeeletšo le matšatši a mafelelo a tšhireletšo di tla bontšha mo.",
+    "tiles": {
+      "leads": "Palomoka ya go eta pele",
+      "newInPeriod_one": "{{count}} e mpsha mo nakong ye",
+      "newInPeriod_other": "{{count}} e mpsha mo nakong ye",
+      "accepted": "E amogetšwe",
+      "booked": "E beakantšwe",
+      "bookedInPeriod_one": "{{count}} e beakantšwe nakong ye",
+      "bookedInPeriod_other": "{{count}} e beakantšwe nakong ye",
+      "conversion": "Phetolelo",
+      "conversionHint": "Booked leads bjalo ka karolo ya di-lead tše di amogetšwego",
+      "protectedNow": "E šireleditšwe bjale",
+      "expiringSoon_one": "Tšhireletšo e felela ka letšatši la {{count}}",
+      "expiringSoon_other": "Tšhireletšo e felela ka matšatši a {{count}}",
+      "disputedNow": "E ganetšwa ke ba bangwe",
+      "disputedNowHint": "O etelela pele ka ngangišano ya beng ye e bulegilego go tšwa go molekane yo mongwe",
+      "commissionEligible": "Khomišene e swanelega",
+      "commissionCancelled_one": "{{count}} e phumotšwe",
+      "commissionCancelled_other": "{{count}} e phumotšwe"
+    },
+    "chart": {
+      "title_one": "Dingwadišo le dipeeletšo ka letšatši - letšatši la mafelelo la {{count}}",
+      "title_other": "Boingwadišo le dipeeletšo ka letšatši - matšatši a mafelelo {{count}}",
+      "registrations": "Dingwadišo",
+      "bookings": "Dipeeletšo"
+    },
+    "byStage": "E etelela pele ka maemo",
+    "bySource": "E etelela pele ka mohlodi",
+    "byReferral": "E etelela pele ka boemo bja go fetišetša",
+    "myDisputes": "Dingangišano tšeo o di rotošitšego",
+    "noDisputes": "Ga go na dingangišano tšeo di rotošitšwego.",
+    "unknown": "Ga se ya bewa",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM ya ka ntle (e ekišitšwego) .",
+      "PARTNER_CRM": "E okeditšwe ke sehlopha sa gago",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Kopanyo",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Tšhireletšo e fela letšatšing le le latelago la {{count}}",
+    "expiringTitle_other": "Tšhireletšo e fela matšatšing a {{count}} a latelago",
+    "expiringEmpty": "Ga go na lloto yeo e lahlegelwago ke tšhireletšo ya yona ka lefasetereng le."
   }
 }

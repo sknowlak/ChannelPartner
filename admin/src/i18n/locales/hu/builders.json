@@ -43,7 +43,9 @@
       "name": "Név",
       "city": "Város",
       "status": "Állapot",
-      "actions": "Akciók"
+      "actions": "Akciók",
+      "protection": "Duplikált védelem",
+      "matchOn": "Az ismétlődések egyeznek"
     },
     "closeReferrals": "Az ajánlások bezárása",
     "reopen": "Nyissa meg újra",
@@ -55,6 +57,25 @@
       "add": "Projekt hozzáadása",
       "created": "Létrehozva: {{name}} ."
     },
-    "back": "Vissza az Építőkhöz"
+    "back": "Vissza az Építőkhöz",
+    "protection": {
+      "days_one": "{{count}} nap",
+      "days_other": "{{count}} nap",
+      "globalDays_one": "Globális alapértelmezett ( {{count}} nap)",
+      "globalDays_other": "Globális alapértelmezett ( {{count}} nap)",
+      "globalDefault": "Globális alapértelmezett",
+      "placeholder": "Védelmi napok (üres = globális alapértelmezett)",
+      "saved": "Ismétlődő védelem frissítve a következőhöz: {{name}} .",
+      "hint": "Ismétlődő védelem: 1-3650 nap, vagy hagyja üresen, hogy használja a globális alapértelmezett beállításokat. A változás csak az új regisztrációkra vonatkozik - a meglévők megtartják a lejáratukat."
+    },
+    "matching": {
+      "global": "Globális alapértelmezett",
+      "globalWith": "Globális alapértelmezett ( {{fields}} )",
+      "mobile": "Mobilszám",
+      "email": "Email",
+      "both": "Mobilszám + email",
+      "saved": "Ismétlődő egyezés frissítve a következőhöz: {{name}}",
+      "hint": "Mely adatok két regisztrációt tesznek ugyanarra a projekthez. A változtatások mostantól az ismétlődő ellenőrzésekre vonatkoznak; a meglévő védelmet nem érinti."
+    }
   }
 }

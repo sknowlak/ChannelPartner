@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "È bló tuto",
-    "pending": "E ɖò te"
+    "pending": "E ɖò te",
+    "status": {
+      "CONFIRMED": "È bló tuto",
+      "CANCELLED": "È ɖó tɛnmɛ e è sɔ́ ɖó te é te"
+    }
   },
   "assign": {
     "unassigned": "È ma sɔ́ azɔ̌ nú mɛ ǎ",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Projet ɖebu ko jɛ (è ma jla ǎ)",
-    "notInList": "{{project}} (é ɖò azɔ̌ ɔ sín wěma mɛ ǎ)"
+    "notInList": "{{project}} (é ɖò azɔ̌ ɔ sín wěma mɛ ǎ)",
+    "protectionDays_one": "{{count}} -azan alɔcyɔnmɛji",
+    "protectionDays_other": "{{count}} -azan alɔcyɔnmɛji"
   },
   "journey": {
     "customer": "Xɔtɔ́",
@@ -76,7 +82,14 @@
     "progressHistory": "Nukɔnyiyi sín Tan",
     "timesIn": "(ganmɛ ɖo {{timezone}} )",
     "backToMyLeads": "Lɛkɔ yì Alixlɛ́mɛ ce lɛ jí",
-    "editLead": "Ðyɔ Lead"
+    "editLead": "Ðyɔ Lead",
+    "disputeBanner": "Azɔ̌gbɛ́ ɖevo ko dɔn nǔ dó nǔ e nyí axisinɔ enɛ tɔn é jí. Admin Leadrat ɖokpo ɖo kpɔ́n wɛ - alɔcyɔnmɛji towe nɔ nɔ tɛn tɔn mɛ kaka jɛ hwenu e ye na wá gbeta ɔ kɔn é.",
+    "booking": "Akwɛzinzan",
+    "commission": "Azɔwanú",
+    "notBooked": "È sɔ́ tɛnmɛ ɖ’ayǐ ǎ",
+    "cancelledOn": "E hɛn gble ɖo {{date}} .",
+    "cancelReason": "Hwɛjijɔ: {{reason}}",
+    "cancelledHint": "Xɔgbátɔ́ ɔ gɔn tɛnmɛ e é sɔ́ ɖ’ayǐ é - nǔɖokan azɔ̌wiwa tɔn ɔ lɛ́vɔ wá gɔ̌n towe bɔ è ɖè acɛ e è ɖó bo na yí azɔ̌ ɔ é síìn. È nɔ vɔ́ ɛ blóɖó enyi è lɛ́vɔ bló tuto nú mɛ e è kplá é ɔ nɛ."
   },
   "referral": {
     "NOT_REFERRED": "È ma jla ǎ (projet ɖebu)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Xɔgbátɔ́ ɔ yí gbè nú wěɖexámɛ ɔ",
       "REFERRAL_REJECTED": "Builder gbɛ́ mɛ e è sɛ́dó é. Hwɛjijɔ: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin ɖe alɔcyɔnmɛji we tɔ́n tlolo. Hwɛjijɔ: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Mɛ e nɔ kpé nukún dó nǔ lɛ wu é ɖyɔ nyikɔ sín {{from}} jí bo sɔ́ ɖó {{to}} jí . Hwɛjijɔ: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Mɛ e nɔ kpé nukún dó nǔ lɛ wu é ɖyɔ nyikɔ sín {{from}} jí bo sɔ́ ɖó {{to}} jí . Hwɛjijɔ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "È gbɛ́ tɛnkpɔn e mɛ ɖevo tɛ́n kpɔ́n bo na wlan nyikɔ dó wema mɛ é we .",
+      "BOOKING_CANCELLED": "È ɖó tɛnmɛ e è bló é te. Hwɛjijɔ: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Azɔ̌wiwa sín nǔ lɛ lɛ́vɔ wá alɔdótɔ́ ɔ sí .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "È ɖè nǔ e jɛxa bɔ è na yí akwɛ é síìn kpo fí e è bló tuto ɔ ɖó é kpo",
+      "COMMISSION_ELIGIBILITY_RESTORED": "È lɛ́vɔ yí gbè nú mɛ e jɛxa lɛ é nú tɛnmɛ yɔyɔ̌ ɔ",
+      "OWNERSHIP_DISPUTE_RAISED": "Mɛ ɖevo e nɔ w'azɔ̌ xá ɛ é dɔn nǔ dó axisinɔ élɔ́ jí - Leadrat gǎn ɖé na gbéjé kpɔ́n",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "È ɖè nǔɖotɔ́ sín hwɛgbe e ɖò axisinɔ élɔ́ jí é síìn - nǔɖotɔ́ towe ɖyɔ ǎ",
+      "OWNERSHIP_DISPUTE_UPHELD": "È kpɔ́n nǔ e nyí mɛtɔn é sín xó dó axisinɔ élɔ́ wú - è ɖexlɛ́ ɖɔ nǔ e nyí mɛtɔn é nyí nǔjɔnǔ",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "È wlan nyikɔ dó wema mɛ hwenu e è wá gbeta ɔ kɔn dó nǔ e nyí towe é jí ɖò alɔ towe mɛ gudo é. Nùxlɛ́mɛ: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Alɔcyɔnmɛji ɔ fó: è wá gbeta ɔ kɔn dó nǔɖokan ɔ sín xó ɖé jí bo na dó hɛn alɔdótɔ́ ɖevo sín alɔ. Nùxlɛ́mɛ: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Numɛro alokan tɔn sɔgbe nu {{country}} .",
     "COUNTRY_MISMATCH": "Mi kɛnklɛn bo sɔ́ tò sín kodɛ e sɔgbe é.",
     "NOT_MOBILE": "Mi kɛnklɛn bo wlan alokan sín kɛ́n, é nyí alokan tò tɔn tɔn ǎ."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Kɔmisɔn e jɛxa é",
+      "PENDING": "Kɔmisun ɖo te kpɔn",
+      "CANCELLED": "È ɖè azɔ̌ e è sɔ́ d’así nú mɛ é síìn"
+    },
+    "attribution": {
+      "ATTRIBUTED": "È sɔ́ ɖó hwi jí",
+      "DISPUTED": "È dɔn nǔ dó nǔ e è sɔ́ ɖó tɛn tɔn mɛ é jí"
+    }
+  },
+  "result": {
+    "none": "Nǔ e è wlan nyikɔ dó wema mɛ é ɖě ɖè bo na xlɛ́ ǎ. Sɔ́ nyikɔ mɛ e è na kplá é tɔn dó wema mɛ jɛ nukɔn.",
+    "acceptedTitle": "È wlan nyikɔ dó wema mɛ",
+    "rejectedTitle": "È wlan plɔn dó wema mɛ ǎ",
+    "protectionWindow": "Flɛtɛ́li Acɛkpikpa Tɔn",
+    "protectedUntil": "È Cɔ́ É Kaka jɛ 2019.",
+    "openLead": "Hun Lead",
+    "addAnother": "Gɔ́ Nukúnnúmɔjɛnǔmɛ Ðevo",
+    "duplicate": "Nǔ we - è ko cyɔn alɔ jí",
+    "duplicateHint": "Asi elɔ ko ɖo alɔcyɔnmɛji nu azɔ enɛ ɔ gbɔn wema ɖevo mɛ, enɛ wu ɔ, e sixu wlan nyikɔ tɔn nu we ǎ.",
+    "existingProtectedUntil": "È cyɔn alɔ nyikɔ e è wlan ɖ’ayǐ é jí kaka jɛ 2019 jí."
+  },
+  "disputes": {
+    "title": "Jlɛɖiɖɔ ce lɛ",
+    "intro": "Nǔɖokan sín hwɛgbe e a fɔ́n nú axisinɔ lɛ bɔ è gbɛ́ ɖɔ ye kún nyí nǔ we ó lɛ é. Admin Leadrat ɖé nɔ gbéjé ɖokpo ɖokpo kpɔ́n.",
+    "empty": "Mi fɔ́n jlɛ ɖěbǔ dó te ǎ. Enyi è gbɛ́ ɖɔ axisinɔ e a hɛn wá é kún nyí ɖiɖe we ó ɔ, a sixu xò nǔ kpɔ́n dó nǔ e è wlan nyikɔ dó wema mɛ é jí.",
+    "columns": {
+      "dispute": "Kpò",
+      "reason": "Hwɛjijɔ towe .",
+      "outcome": "Ledudu"
+    },
+    "status": {
+      "OPEN": "È ɖò nǔ gbéjé kpɔ́n wɛ",
+      "UPHELD": "É ɖò ɖagbe towe mɛ ǎ .",
+      "OVERTURNED": "È wá gbeta ɔ kɔn ɖò ɖagbe towe mɛ .",
+      "WITHDRAWN": "È ɖè è síìn"
+    },
+    "awaitingReview": "Mi ɖo te kpɔn nukɔntɔ ɔ sin nukpɔn",
+    "openNewLead": "Hùn nukɔntɔ́ towe {{id}}",
+    "withdraw": "Ɖè sín tò ɔ mɛ",
+    "withdrawConfirm": "Mi ɖe hwɛ mitɔn sin {{name}} ? Nǔ e nyí mɛtɔn dìn é nɔ nɔ lee é ɖè gbɔn é.",
+    "raise": "Nǔɖokan ɔ sín hwɛɖiɖɔ",
+    "raiseTitle": "Nǔɖokan ɔ sín hwɛɖiɖɔ",
+    "raiseHint": "Enyi axisinɔ enɛ wɛ wá gɔ̌n towe jɛ nukɔn hǔn, tinmɛ nǔ e wu wɛ é. Admin Leadrat ɖé na gbéjé kpɔ́n; enyi ye wá gbeta ɔ kɔn ɖɔ é nyɔ́ nú we ɔ, è nɔ wlan nyikɔ mɛ e ɖò nukɔn nú we é tɔn dó wema mɛ nú we.",
+    "reasonLabel": "Etɛwu axisinɔ elɔ ka nyí towe?",
+    "reasonMin_one": "É hwe bǐ ɔ, wuntun {{count}} .",
+    "reasonMin_other": "É hwe bǐ ɔ, {{count}} sín wekwín lɛ.",
+    "submit": "Sɔ́ Xóɖɔɖókpɔ́ Sɔ́",
+    "notProtected": "Mɛɖebu sɔ hɛn alɔcyɔnmɛji ɖo axisinɔ enɛ ɔ ji nu azɔ enɛ ɔ - mi hɛn ɔ mi na wlan nyikɔ nu nukɔntɔ ɔ din.",
+    "raised": "È sɛ́ xó {{id}} dó nú è na gbéjé kpɔ́n.",
+    "viewAll": "Kpɔ́n jlɛ ce lɛ ."
+  },
+  "dashboard": {
+    "title": "Tablo",
+    "period": "Xwè",
+    "lastDays_one": "{{count}} azǎn",
+    "lastDays_other": "{{count}} azǎn lɛ",
+    "emptyTitle": "Yí mε! A ko ɖó alixlɛ́mɛ ɖě ǎ.",
+    "emptyHint": "Mi wlan nyikɔ mitɔn nukɔntɔn ɔ - pipeline mitɔn, booking mitɔn lɛ kpodo hwenu e mi na hɛn alɔnu mitɔn ján lɛ é kpo na tɔ́n ɖò fí.",
+    "tiles": {
+      "leads": "Mɛ e kplá mɛ lɛ é bǐ kplékplé",
+      "newInPeriod_one": "{{count}} yɔyɔ ɖo hwe elɔ nu",
+      "newInPeriod_other": "{{count}} yɔyɔ ɖo hwe elɔ nu",
+      "accepted": "È yí gbè na",
+      "booked": "È bló tuto",
+      "bookedInPeriod_one": "{{count}} e è bló tuto na ɖò hwe elɔ nu é",
+      "bookedInPeriod_other": "{{count}} e è bló tuto na ɖò hwe elɔ nu é",
+      "conversion": "Huzuhuzu",
+      "conversionHint": "Mɛ e è wlan nyikɔ na lɛ é ɖi mɛ e è yí gbè na lɛ é sín akpáxwé ɖé",
+      "protectedNow": "È cyɔn alɔ jí dìn",
+      "expiringSoon_one": "Acɛkpikpa e nɔ fó ɖò {{count}} azǎn jí é",
+      "expiringSoon_other": "Acɛkpikpa e nɔ fó ɖò {{count}} azǎn lɛ mɛ é",
+      "disputedNow": "Mɛ ɖevo lɛ ɖò nǔ dɔn wɛ .",
+      "disputedNowHint": "Nukúnnúmɔjɛnǔmɛ towe lɛ kpodo nǔɖokan ɔ sín hwɛgbe ɖé kpo sín hagbɛ̌ ɖevo gɔ́n",
+      "commissionEligible": "Kɔmisɔn e jɛxa é",
+      "commissionCancelled_one": "{{count}} è súnsún",
+      "commissionCancelled_other": "{{count}} è súnsún"
+    },
+    "chart": {
+      "title_one": "Nyikɔ wlanwlan kpodo tɛnmɛ yiyi kpo gbe ɖokpo ɖokpo - azǎn gudo tɔn {{count}}",
+      "title_other": "Nyikɔ wlanwlan kpodo tɛnmɛ yiyi kpo gbe ɖokpo ɖokpo - azan gudo {{count}} lɛ",
+      "registrations": "Nyikɔ wlanwlan",
+      "bookings": "Nǔ e è sɔ́ ɖ’ayǐ lɛ é"
+    },
+    "byStage": "Nɔ kplá mɛ gbɔn ninɔmɛ mɛ",
+    "bySource": "É nɔ kplá mɛ yì fí e é gosin é",
+    "byReferral": "É nɔ kplá mɛ gbɔn ninɔmɛ mɛsɛ́dó tɔn gblamɛ",
+    "myDisputes": "Jlɛ e a fɔ́n lɛ é .",
+    "noDisputes": "È sɔ́ jlɛ ɖě wá ǎ.",
+    "unknown": "È sɔ́ ɖó te ǎ",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM hɛnnu tɔn (è jlɛ)",
+      "PARTNER_CRM": "Gbɛ̌ta mitɔn wɛ sɔ́ gɔ́ na",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Bǔninɔ",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Acɛkpikpa ɔ na fó ɖò {{count}} azǎn e bɔ d'ewu é mɛ",
+    "expiringTitle_other": "Acɛkpikpa ɔ na fó ɖò {{count}} azǎn e bɔ d’ewu lɛ é mɛ",
+    "expiringEmpty": "Plɔn ɖebǔ nɔ hɛn alɔcyɔnmɛji tɔn bú ɖò flɛtɛli enɛ nu ǎ."
   }
 }

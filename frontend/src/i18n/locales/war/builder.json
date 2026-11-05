@@ -30,7 +30,8 @@
       "registered": "Narehistro"
     },
     "booked": "Gin-book",
-    "empty": "Waray pa mga referral."
+    "empty": "Waray pa mga referral.",
+    "bookingCancelled": "Kanselado an pag-book"
   },
   "detail": {
     "customer": "Kustomer",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Kumpirmado an pag-book.",
       "accepted": "Ginkarawat an pagrefer.",
-      "rejected": "Ginsalikway an pagrefer."
+      "rejected": "Ginsalikway an pagrefer.",
+      "bookingCancelled": "Kanselado an pag-book."
     },
-    "backToReferrals": "Balik ha mga Refer"
+    "backToReferrals": "Balik ha mga Refer",
+    "bookingCancelled": "Kanselado an pag-book",
+    "cancelBooking": "Kanselaha an Pag-book",
+    "cancelReasonLabel": "Rason han pagkansela (iginpapakita ha kapadis) * .",
+    "cancelBookingHint": "An pagtag-iya han operasyon in mabalik ha kapadis ngan an ira pagkakwalipikado ha komisyon in ginkansela. Pwede na liwat ig-book an lead ha urhi.",
+    "cancelBookingConfirm": "Kanselahon an pag-book ."
   },
   "history": {
     "title": "Kasaysayan",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Ginhimo an pagkakwalipikado ha komisyon .",
       "HANDOVER_COMPLETED": "Natapos an paghatag",
       "ADMIN_PROTECTION_RELEASED": "Admin nagpagawas hin doble nga panalipod hin temprano. Rason: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Gin-utro han Admin an pagrehistro tikang ha {{from}} ngadto ha {{to}} . Rason: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Gin-utro han Admin an pagrehistro tikang ha {{from}} ngadto ha {{to}} . Rason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ginsalikway an doble nga pagsari ha pagparehistro han iba nga kapadis .",
+      "BOOKING_CANCELLED": "Kanselado an pag-book. Rason: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "An pagtag-iya han operasyon iginbalik ha kasugbong .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kanselado an kwalipikado ha komisyon upod han pag-book .",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Iginbalik an kwalipikado ha komisyon para han bag-o nga pag-book ."
     }
   }
 }

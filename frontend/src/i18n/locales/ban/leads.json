@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Kapesen",
-    "pending": "Matunda"
+    "pending": "Matunda",
+    "status": {
+      "CONFIRMED": "Kapesen",
+      "CANCELLED": "Pemesanan sampun kakancel"
+    }
   },
   "assign": {
     "unassigned": "Nénten katetapang",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Durung wénten proyek (nénten karujuk)",
-    "notInList": "{{project}} (nénten wénten ring daftar proyek)"
+    "notInList": "{{project}} (nénten wénten ring daftar proyek)",
+    "protectionDays_one": "{{count}} -rahina perlindungan",
+    "protectionDays_other": "{{count}} -rahina perlindungan"
   },
   "journey": {
     "customer": "Palanggan",
@@ -76,7 +82,14 @@
     "progressHistory": "Riwayat Panglimbak",
     "timesIn": "(galah ring {{timezone}} )",
     "backToMyLeads": "Mawali ka Lead Tiang",
-    "editLead": "Edit Pimpinan"
+    "editLead": "Edit Pimpinan",
+    "disputeBanner": "Mitra sané tiosan sampun matungkasan indik padruén pelanggan puniki. Admin Leadrat sedek nureksain - perlindungan Sametoné tetep ring genahnyané ngantos ipun mutusang.",
+    "booking": "Pemesanan",
+    "commission": "Komisi",
+    "notBooked": "Nénten kapesen",
+    "cancelledOn": "Kakancel ring {{date}} .",
+    "cancelReason": "Alasan: {{reason}}",
+    "cancelledHint": "Pembangun ngingsirang pemesanan - kepemilikan operasional mawali sareng semeton lan kelayakan komisi ngingsirang. Punika kawaliang yening timbal punika kapesen malih."
   },
   "referral": {
     "NOT_REFERRED": "Nénten karujuk (tan wénten proyek)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Tukang wangunan nerima rujukan",
       "REFERRAL_REJECTED": "Tukang nulak rujukan punika. Alasan: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin sampun ngamedalang perlindungan duplikat dumunan. Alasan: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin netepang malih pendaftaran saking {{from}} ka {{to}} . Alasan: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin netepang malih pendaftaran saking {{from}} ka {{to}} . Alasan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Utsaha pendaftaran duplikat olih mitra tiosan katulak",
+      "BOOKING_CANCELLED": "Pemesanan sampun kakancel. Alasan: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Padruwen operasional kawaliang ring mitra",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kelayakan komisi kacancel antuk pemesanan",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kelayakan komisi kawaliang antuk pemesanan anyar",
+      "OWNERSHIP_DISPUTE_RAISED": "Mitra tiosan nglawan padruwé palanggan puniki - admin Leadrat pacang nureksain",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Sengketa padruén ring palanggan puniki kacabut - padruwén Sametoné nénten kauwah",
+      "OWNERSHIP_DISPUTE_UPHELD": "Sengketa padruén ring palanggan puniki sampun katureksa - padruén Sametoné sampun kakonfirmasi",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Kadaftarang sesampun sengketa padruwen semetone kaputusang sane mendukung semeton. Catetan: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Perlindungan puput: sengketa padruwen kaputusang antuk ngadukung mitra sane tiosan. Catetan: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Nomer telpon puniki nénten patut anggén {{country}} .",
     "COUNTRY_MISMATCH": "Pilih kode negara sané patut.",
     "NOT_MOBILE": "Ketik nomer ponsel, boya ja nomer darat."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisi sané patut",
+      "PENDING": "Komisi sané kantun katunggu",
+      "CANCELLED": "Komisi kakancel"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Kahubungan sareng Sameton",
+      "DISPUTED": "Atribusi sané kabantah"
+    }
+  },
+  "result": {
+    "none": "Nénten wénten hasil pendaftaran sané jagi kasinahang. Daftar timbal balik dumun.",
+    "acceptedTitle": "Timbal sampun kadaftarang",
+    "rejectedTitle": "Timbal nénten kadaftarang",
+    "protectionWindow": "Jendéla Perlindungan",
+    "protectedUntil": "Kalindungin Ngantos",
+    "openLead": "Bukak Lead",
+    "addAnother": "Wewehin Lead Lianan",
+    "duplicate": "Duplikat - sampun kalindungin",
+    "duplicateHint": "Pelanggan puniki sampun kalindungin antuk proyek puniki antuk pendaftaran sane lianan, dadosnyane nenten prasida kadaftarang antuk semeton.",
+    "existingProtectedUntil": "Pendaftaran sane sampun wenten kalindungin ngantos"
+  },
+  "disputes": {
+    "title": "Wicara tiangé",
+    "intro": "Sengketa padruén sané kaunggahang olih Sameton majeng ring palanggan sané katulak pinaka duplikat. Admin Leadrat sané nureksain soang-soang.",
+    "empty": "Semeton nenten ngawetuang wicara. Yéning pelanggan sané kabakta olih Sameton katulak dados duplikat, Sameton dados nglawan saking hasil pendaftaran.",
+    "columns": {
+      "dispute": "Majugjagan",
+      "reason": "Alasan Sametoné",
+      "outcome": "Keluaran"
+    },
+    "status": {
+      "OPEN": "Sané katureksa",
+      "UPHELD": "Nenten mendukung semeton",
+      "OVERTURNED": "Kaputusang sané becik ring Sameton",
+      "WITHDRAWN": "Kacabut"
+    },
+    "awaitingReview": "Ngantosang ulasan admin",
+    "openNewLead": "Bukak prospek Sametoné {{id}}",
+    "withdraw": "Narik",
+    "withdrawConfirm": "Ngingsirang sengketa Sametoné anggén {{name}} ? Padruwén sané mangkin tetep sakadi mangkin.",
+    "raise": "Padruwen sengketa",
+    "raiseTitle": "Sengketa padruén",
+    "raiseHint": "Yening pelanggan puniki rauh dumun ring ragane, terangang napi mawinan. Admin Leadrat pacang nyelehin; yening ipun mutusang sane mendukung semeton, timbal balik punika kadaftarang antuk semeton.",
+    "reasonLabel": "Napi mawinan pelanggan puniki druene?",
+    "reasonMin_one": "Sane pinih kidik karakter {{count}} .",
+    "reasonMin_other": "Sane pinih kidik {{count}} aksara.",
+    "submit": "Kirim Sengketa",
+    "notProtected": "Nenten wenten sane ngambel perlindungan ring pelanggan puniki antuk proyek puniki malih - semeton dados ngdaftar timbal mangkin.",
+    "raised": "Wicara {{id}} kakirim jagi katureksa.",
+    "viewAll": "Cingakin wicara tiangé"
+  },
+  "dashboard": {
+    "title": "Dasbor",
+    "period": "Titik",
+    "lastDays_one": "{{count}} rahina",
+    "lastDays_other": "{{count}} rahina",
+    "emptyTitle": "Rahajeng rauh! Sameton durung madué tuntunan.",
+    "emptyHint": "Daftar prospek pertama Sametoné - pipeline, pemesanan, lan wates galah perlindungan Sametoné pacang kasinahang iriki.",
+    "tiles": {
+      "leads": "Jumlah prospek",
+      "newInPeriod_one": "{{count}} anyar ring periode puniki",
+      "newInPeriod_other": "{{count}} anyar ring periode puniki",
+      "accepted": "Katrima",
+      "booked": "Kapesen",
+      "bookedInPeriod_one": "{{count}} sané kapesen ring periode puniki",
+      "bookedInPeriod_other": "{{count}} sané kapesen ring periode puniki",
+      "conversion": "Konversi",
+      "conversionHint": "Lead sané sampun kapesen pinaka pahan saking prospek sané katerima",
+      "protectedNow": "Kalindungin mangkin",
+      "expiringSoon_one": "Perlindungan sane puput ring {{count}} rahina",
+      "expiringSoon_other": "Perlindungan sane puput ring {{count}} rahina",
+      "disputedNow": "Kasangsiang olih anak tiosan",
+      "disputedNowHint": "Pamimpin Sametoné madué sengketa padruén sané mabuka saking mitra tiosan",
+      "commissionEligible": "Komisi sané patut",
+      "commissionCancelled_one": "{{count}} kakancel",
+      "commissionCancelled_other": "{{count}} kakancel"
+    },
+    "chart": {
+      "title_one": "Pendaftaran lan pemesanan nyabran rahina - {{count}} rahina sané kaping untat",
+      "title_other": "Pendaftaran lan pemesanan nyabran rahina - {{count}} rahina sané lintang",
+      "registrations": "Pendaftaran",
+      "bookings": "Pemesanan"
+    },
+    "byStage": "Pimpinan manut status",
+    "bySource": "Pimpinan manut sumber",
+    "byReferral": "Pimpin manut status rujukan",
+    "myDisputes": "Wicara sané kaunggahang olih Sameton",
+    "noDisputes": "Nénten wénten sengketa sané kaunggahang.",
+    "unknown": "Nénten kaatur",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM eksternal (kasimulasiang)",
+      "PARTNER_CRM": "Kawewehin olih tim Sametoné",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integrasi",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Perlindungan kadaluwarsa ring {{count}} rahina selanturnyané",
+    "expiringTitle_other": "Perlindungan kadaluwarsa ring {{count}} rahina selanturnyané",
+    "expiringEmpty": "Nénten wénten timah sané kilangan perlindungan ring jendela puniki."
   }
 }

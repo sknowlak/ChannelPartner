@@ -34,7 +34,8 @@
       "registered": "مسجل"
     },
     "booked": "حجزت",
-    "empty": "لا الإحالات حتى الآن."
+    "empty": "لا الإحالات حتى الآن.",
+    "bookingCancelled": "تم إلغاء الحجز"
   },
   "detail": {
     "customer": "عميل",
@@ -57,9 +58,15 @@
     "notice": {
       "booked": "تم تأكيد الحجز.",
       "accepted": "تم قبول الإحالة.",
-      "rejected": "تم رفض الإحالة."
+      "rejected": "تم رفض الإحالة.",
+      "bookingCancelled": "تم إلغاء الحجز."
     },
-    "backToReferrals": "العودة إلى الإحالات"
+    "backToReferrals": "العودة إلى الإحالات",
+    "bookingCancelled": "تم إلغاء الحجز",
+    "cancelBooking": "إلغاء الحجز",
+    "cancelReasonLabel": "سبب الإلغاء (موضح للشريك) *",
+    "cancelBookingHint": "تعود الملكية التشغيلية إلى الشريك ويتم إلغاء أهليته للعمولة. يمكن حجز العميل المحتمل مرة أخرى لاحقًا.",
+    "cancelBookingConfirm": "إلغاء الحجز"
   },
   "history": {
     "title": "تاريخ",
@@ -96,7 +103,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "تم إنشاء أهلية العمولة",
       "HANDOVER_COMPLETED": "اكتمل التسليم",
       "ADMIN_PROTECTION_RELEASED": "أصدر المسؤول الحماية المكررة في وقت مبكر. السبب: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "قام المشرف بإعادة تعيين التسجيل من {{from}} إلى {{to}} . السبب: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "قام المشرف بإعادة تعيين التسجيل من {{from}} إلى {{to}} . السبب: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "تم رفض محاولة تسجيل مكررة من قبل شريك آخر",
+      "BOOKING_CANCELLED": "تم إلغاء الحجز. السبب: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "عادت الملكية التشغيلية إلى الشريك",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "تم إلغاء أهلية العمولة مع الحجز",
+      "COMMISSION_ELIGIBILITY_RESTORED": "تمت استعادة أهلية العمولة للحجز الجديد"
     }
   }
 }

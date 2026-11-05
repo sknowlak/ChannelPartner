@@ -8,6 +8,29 @@
     "rejectedRegistrations": "Afvist (dublet)",
     "pendingBookings": "Afventer reservation",
     "totalBookings": "Samlede reservationer",
-    "totalCommissionEligible": "Kommissionsberettiget"
+    "totalCommissionEligible": "Kommissionsberettiget",
+    "openDisputes": "Åbne tvister",
+    "cancelledBookings": "Annullerede reservationer"
+  },
+  "trend": {
+    "title": "Tilmeldinger - sidste 30 dage",
+    "hint_one": "{{count}} registrering inden for de sidste 30 dage (dage i UTC ).",
+    "hint_other": "{{count}} registreringer inden for de sidste 30 dage (dage i UTC ).",
+    "chartLabel_one": "Søjlediagram over registreringer pr. dag i løbet af de sidste 30 dage, {{count}} i alt",
+    "chartLabel_other": "Søjlediagram over registreringer pr. dag i løbet af de sidste 30 dage, {{count}} i alt",
+    "barTitle": "{{date}} : {{count}}"
+  },
+  "leaderboard": {
+    "title": "Top partnere",
+    "hint": "De 10 partnere med flest bookinger, derefter flest kundeemner. Konvertering = reserveret / accepteret.",
+    "empty": "Ingen tilmeldinger endnu.",
+    "columns": {
+      "rank": "#",
+      "partner": "Partner",
+      "leads": "Leder",
+      "accepted": "Accepteret",
+      "booked": "Booket",
+      "conversion": "Omdannelse"
+    }
   }
 }

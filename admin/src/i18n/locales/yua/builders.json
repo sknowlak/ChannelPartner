@@ -43,7 +43,9 @@
       "name": "K'aaba",
       "city": "Nojkaaj",
       "status": "Estaado",
-      "actions": "Ba'alo'ob"
+      "actions": "Ba'alo'ob",
+      "protection": "Protección duplicada",
+      "matchOn": "Le duplicado'obo' ku nupikubáo'ob"
     },
     "closeReferrals": "Muts'ik uti'al u túuxta'al",
     "reopen": "Ka'a je'ek'abt",
@@ -55,6 +57,25 @@
       "add": "Añadir proyecto",
       "created": "Beeta'ab {{name}} ."
     },
-    "back": "Ka'a suut ti' le constructores"
+    "back": "Ka'a suut ti' le constructores",
+    "protection": {
+      "days_one": "{{count}} k'iin",
+      "days_other": "{{count}} k'iino'ob",
+      "globalDays_one": "Global defecto ( {{count}} k'iin)",
+      "globalDays_other": "Global predeterminado ( {{count}} k'iino'ob)",
+      "globalDefault": "Global tumen defecto",
+      "placeholder": "K'iino'ob ti' protección (vacío = tumen defecto global)",
+      "saved": "Protección duplicada actualizada utia'al u {{name}} .",
+      "hint": "Protección duplicada: 1-3650 k'iino'ob, wa p'atik vacío utia'al u utilizar le predeterminado global u Configuración. jump'éel k'eexil chéen ku meyaj ti' túumben registros - le yaan ka'acho' ku p'áatal u k'iinilo'ob."
+    },
+    "matching": {
+      "global": "Global tumen defecto",
+      "globalWith": "Global default ( {{fields}} )",
+      "mobile": "Meyaj ku u nu'ukul t'aan",
+      "email": "Correo electrónico",
+      "both": "Meyaj ku nu'ukul t'aan + correo electrónico",
+      "saved": "Le coincidencia duplicada actualizada utia'al u {{name}}",
+      "hint": "Ba'ax detalles ku beetiko'ob ka'ap'éel registros le k'iino' je'el xano' cliente utia'al jump'éel proyecto. Le k'eexo'obo' ku meyaj ti' le cheques duplicados tak bejla'e'; le kanáanil yaan ma' u k'astal."
+    }
   }
 }

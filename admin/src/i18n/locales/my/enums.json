@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "အကျုံးဝင်သည်။",
-    "PENDING": "ဆိုင်းငံ့ထားသည်။"
+    "PENDING": "ဆိုင်းငံ့ထားသည်။",
+    "CANCELLED": "ဖျက်သိမ်းလိုက်သည်။"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "ပွားနေသော အကာအကွယ်ကို စောစီးစွာ ထုတ်ပါ။",
-    "REASSIGN_PARTNER": "အခြားလုပ်ဖော်ကိုင်ဖက်ထံ ပြန်လည်အပ်နှံပါ။"
+    "REASSIGN_PARTNER": "အခြားလုပ်ဖော်ကိုင်ဖက်ထံ ပြန်လည်အပ်နှံပါ။",
+    "CANCEL_BOOKING": "ကြိုတင်မှာယူမှုကို ပယ်ဖျက်ပါ။"
   },
   "dataType": {
     "TEXT": "စာသား",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super Admin",
     "ADMIN": "အက်မင်"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "အတည်ပြုခဲ့သည်။",
+    "CANCELLED": "ဖျက်သိမ်းလိုက်သည်။"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "သတ်ရတာလဲ",
+    "DISPUTED": "အငြင်းပွားသည်။"
+  },
+  "disputeStatus": {
+    "OPEN": "ဖွင့်သည်။",
+    "UPHELD": "ထောက်ထား",
+    "OVERTURNED": "မှောက်တယ်။",
+    "WITHDRAWN": "ထုတ်ယူသည်။"
   }
 }

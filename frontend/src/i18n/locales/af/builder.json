@@ -30,7 +30,8 @@
       "registered": "Geregistreer"
     },
     "booked": "Bespreek",
-    "empty": "Nog geen verwysings nie."
+    "empty": "Nog geen verwysings nie.",
+    "bookingCancelled": "Bespreking gekanselleer"
   },
   "detail": {
     "customer": "Kliënt",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Bespreking bevestig.",
       "accepted": "Verwysing aanvaar.",
-      "rejected": "Verwysing afgekeur."
+      "rejected": "Verwysing afgekeur.",
+      "bookingCancelled": "Bespreking gekanselleer."
     },
-    "backToReferrals": "Terug na Verwysings"
+    "backToReferrals": "Terug na Verwysings",
+    "bookingCancelled": "Bespreking gekanselleer",
+    "cancelBooking": "Kanselleer bespreking",
+    "cancelReasonLabel": "Rede vir kansellasie (aan die maat gewys) *",
+    "cancelBookingHint": "Operasionele eienaarskap gaan terug na die vennoot en hul kommissie-kwalifikasie word gekanselleer. Die lood kan later weer bespreek word.",
+    "cancelBookingConfirm": "Kanselleer die bespreking"
   },
   "history": {
     "title": "Geskiedenis",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kommissie-kwalifikasie geskep",
       "HANDOVER_COMPLETED": "Oorhandiging voltooi",
       "ADMIN_PROTECTION_RELEASED": "Admin het vroegtydig duplikaatbeskerming vrygestel. Rede: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin het registrasie van {{from}} na {{to}} hertoegewys. Rede: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin het registrasie van {{from}} na {{to}} hertoegewys. Rede: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "'n Duplikaatregistrasiepoging deur 'n ander vennoot is afgekeur",
+      "BOOKING_CANCELLED": "Bespreking gekanselleer. Rede: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operasionele eienaarskap het aan die vennoot teruggekeer",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kommissie-kwalifikasie gekanselleer met die bespreking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kommissie-kwalifikasie vir die nuwe bespreking herstel"
     }
   }
 }

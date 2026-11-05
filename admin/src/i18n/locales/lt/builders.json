@@ -43,7 +43,9 @@
       "name": "Vardas",
       "city": "Miestas",
       "status": "Būsena",
-      "actions": "Veiksmai"
+      "actions": "Veiksmai",
+      "protection": "Pasikartojanti apsauga",
+      "matchOn": "Pasikartojantys atitikmenys įjungti"
     },
     "closeReferrals": "Uždaryti persiuntimams",
     "reopen": "Atidarykite iš naujo",
@@ -55,6 +57,29 @@
       "add": "Pridėti projektą",
       "created": "Sukurta {{name}} ."
     },
-    "back": "Atgal į statybininkus"
+    "back": "Atgal į statybininkus",
+    "protection": {
+      "days_one": "{{count}} diena",
+      "days_few": "{{count}} dienų",
+      "days_many": "{{count}} dienų",
+      "days_other": "{{count}} dienų",
+      "globalDays_one": "Pasaulinis numatytasis ( {{count}} d.)",
+      "globalDays_few": "Pasaulinis numatytasis ( {{count}} d.)",
+      "globalDays_many": "Pasaulinis numatytasis ( {{count}} d.)",
+      "globalDays_other": "Pasaulinis numatytasis ( {{count}} d.)",
+      "globalDefault": "Pasaulinis numatytasis",
+      "placeholder": "Apsaugos dienos (tuščios = visuotinis numatytasis)",
+      "saved": "Atnaujinta {{name}} pasikartojanti apsauga.",
+      "hint": "Pasikartojanti apsauga: 1–3650 dienų arba palikite tuščią, kad galėtumėte naudoti visuotinį numatytąjį nustatymą. Pakeitimas taikomas tik naujoms registracijoms – esamų galiojimo laikas išsaugomas."
+    },
+    "matching": {
+      "global": "Pasaulinis numatytasis",
+      "globalWith": "Visuotiniai numatytieji ( {{fields}} )",
+      "mobile": "Mobiliojo telefono numeris",
+      "email": "El. paštas",
+      "both": "Mobiliojo telefono numeris + el",
+      "saved": "Atnaujinta {{name}} atitiktis",
+      "hint": "Dėl šių duomenų dvi registracijos yra tas pats projekto klientas. Nuo šiol pakeitimai taikomi pasikartojantiems patikrinimams; esama apsauga neturi įtakos."
+    }
   }
 }

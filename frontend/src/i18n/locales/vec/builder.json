@@ -31,7 +31,8 @@
       "registered": "Iscritto"
     },
     "booked": "Prenotà",
-    "empty": "No ghe xe gnancora rinvii."
+    "empty": "No ghe xe gnancora rinvii.",
+    "bookingCancelled": "Prenotasion cancełada"
   },
   "detail": {
     "customer": "Cliente",
@@ -54,9 +55,15 @@
     "notice": {
       "booked": "Prenotasion confermà.",
       "accepted": "El rinvio acetà.",
-      "rejected": "El rinvio rifiutà."
+      "rejected": "El rinvio rifiutà.",
+      "bookingCancelled": "Prenotasion cancełada."
     },
-    "backToReferrals": "Torna ai rinvii"
+    "backToReferrals": "Torna ai rinvii",
+    "bookingCancelled": "Prenotasion cancełada",
+    "cancelBooking": "Canseła ła prenotasion",
+    "cancelReasonLabel": "Motivo de ła cancełasion (mostrà al socio) *",
+    "cancelBookingHint": "Ła proprietà operativa ła torna al socio e ła so idoneità a ła comision ła vien cancełada. El lead el pol esar prenotà da novo dopo.",
+    "cancelBookingConfirm": "Anula la prenotasion"
   },
   "history": {
     "title": "Storia",
@@ -87,7 +94,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Idoneità a ła comision xe stà creà",
       "HANDOVER_COMPLETED": "Consegna finìa",
       "ADMIN_PROTECTION_RELEASED": "L’aministrador el ga rilascià in anticipo ła protesion dei dopi. Motivo: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "L’aministrador el ga riasegnà l’iscrision da {{from}} a {{to}} . Motivo: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "L’aministrador el ga riasegnà l’iscrision da {{from}} a {{to}} . Motivo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Un tentativo de registrasion dopio da parte de n’altro partner el xe stà rifiutà",
+      "BOOKING_CANCELLED": "Prenotasion cancełada. Motivo: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ła proprietà operativa ła xe tornà al socio",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Idoneità a ła comision cancełada co ła prenotasion",
+      "COMMISSION_ELIGIBILITY_RESTORED": "L’ełegibiłità a ła comision ła xe stà restaurà pa ła nova prenotasion"
     }
   }
 }

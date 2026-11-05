@@ -2,7 +2,7 @@ import { useCallback, useState } from 'react';
 import { useFocusEffect } from '@react-navigation/native';
 import { ActivityIndicator, FlatList, RefreshControl, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
-import { clearSession, listMyLeads } from '../api/client';
+import { clearSession, listMyLeads, logoutOnServer } from '../api/client';
 import LanguagePicker from '../components/LanguagePicker';
 import { useDataLabels } from '../i18n/dataLabels';
 import { errorMessage } from '../i18n/errors';
@@ -34,6 +34,7 @@ export default function MyLeadsScreen({ navigation, onSignedOut }) {
   };
 
   const signOut = async () => {
+    await logoutOnServer();
     try { await clearSession(); } catch { /* keychain error: still leave the session */ }
     onSignedOut();
   };

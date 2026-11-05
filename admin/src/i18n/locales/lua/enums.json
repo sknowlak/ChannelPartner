@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Mwanyishibua",
-    "PENDING": "Mu nkatshi mua kwindila"
+    "PENDING": "Mu nkatshi mua kwindila",
+    "CANCELLED": "Bakalekela"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Patula bukubi bua misangu ibidi kumpala kua dîba",
-    "REASSIGN_PARTNER": "Upingaje kudi muena mudimu mukuabu"
+    "REASSIGN_PARTNER": "Upingaje kudi muena mudimu mukuabu",
+    "CANCEL_BOOKING": "Kulekela dilomba"
   },
   "dataType": {
     "TEXT": "Mifundu",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Mulombodi munene",
     "ADMIN": "Mulombodi"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Bijadika",
+    "CANCELLED": "Bakalekela"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Bifila",
+    "DISPUTED": "Dikokangana"
+  },
+  "disputeStatus": {
+    "OPEN": "Kukangula",
+    "UPHELD": "Kujadikibua",
+    "OVERTURNED": "Mukudimuna",
+    "WITHDRAWN": "Kumbushibua"
   }
 }

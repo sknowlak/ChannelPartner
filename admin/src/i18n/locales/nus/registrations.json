@@ -49,8 +49,73 @@
       "newPartnerId": "ID Partnɛr mi̱ pay ben",
       "reason": "Luɔt (mi̱ görkɛ)",
       "apply": "Apply Ɣɔbɛrid",
-      "applying": "La̱tdɛ..."
+      "applying": "La̱tdɛ...",
+      "cancelBookingHint": "Kä min ca woc(cancelling) nyothɛ ni ɣöö ca booking kɛnɛ kɔmmi̱ciɔndɛ woc, bɛ kuak tin lät kɛ naath luɔ̱c ram min lät kɛ jɛ, kä bɛ ram min lät duel jakä ɣöö bɛ bok ɛmɛ nyɔk kɛ lätni.",
+      "cancelBookingConfirm": "Kä booking ɛmɛ ca woc? Kä kɔmmi̱ciɔndɛ cua woc bä. Nɛmɛ ca gɔ̱r kɛ ciötdu kɛnɛ luɔtdɛ."
     },
-    "timelineTitle": "Gua̱th in la thɛmkɛ ŋɔak thi̱n (kɛ gɔ̱a̱r piny)"
+    "timelineTitle": "Gua̱th in la thɛmkɛ ŋɔak thi̱n (kɛ gɔ̱a̱r piny)",
+    "bookingStatus": "Kä ta̱a̱ Boo̱kiŋä",
+    "commissionAttribution": "Kɔmmi̱cin Atti̱ribuciɔn",
+    "disputeOpen": "Ɛn ŋaknɔm kɛ kui̱ kuakni̱ cɛ rɔ lɛp kä kuthtɔmä ɛmɛ - ɛn ram in dɔ̱ŋ in lät kɛ jɛ laarɛ jɛ ɛn ɣöö ɛ duŋdiɛn. Jɛn ca lat kä wargak Disputes.",
+    "viewDisputes": "Guɛc ŋaknɔmni̱",
+    "cancellation": {
+      "title": "Booking ca woc",
+      "hint": "Kä booking kɛnɛ kɔmmi̱ciɔndɛ ca kɛ woc; operational ownership cɛ luny jɔk kɛ ram min lät kɛ jɛ kä ram min lät duel derɛ nyɔk kɛ book lead ɛmɛ.",
+      "at": "Cua jɛ woc kɛ",
+      "by": "Cua woc ɛ",
+      "reason": "Luɔ̱̱t"
+    }
+  },
+  "disputes": {
+    "title": "Ruac kɛ kui̱ kuakni̱",
+    "hint": "Ram min ca gɔ̱r piny kä ca lo̱k i̱ ɛ duplikɛt derɛ ŋaknɔm ŋak kɛ ram min tekɛ kuak. Guɛc kui̱c da̱ŋ rɛw kä ca̱r.",
+    "statusFilter": "I̱thta̱th di̱thput",
+    "allStatuses": "I̱thtati̱thni̱ diaal",
+    "empty": "/Thiɛlɛ ŋaknɔm kɛ ta̱a̱ ɛmɛ.",
+    "columns": {
+      "dispute": "Ga̱̱k",
+      "customer": "Ra̱̱m mi ko̱k",
+      "project": "La̱t in la̱tkɛ",
+      "raisedBy": "Cua jiɛc ɛ",
+      "heldBy": "Kä gua̱ndɛ ɛntäämɛ",
+      "status": "Ta̱̱a̱dɛ",
+      "raisedAt": "Cua jiɛc nhial kɛ"
+    },
+    "detail": {
+      "title": "Ruac {{id}}",
+      "raisedOn": "Ca jiɛc nhial {{date}}",
+      "raisingTitle": "Cua jiɛc ɛ",
+      "holderTitle": "Kä gua̱ndɛ ɛntäämɛ",
+      "partner": "Rɛw pua̱ny",
+      "raisedBy": "Cua thöp ɛ",
+      "customerName": "Ra̱̱m mi ko̱k",
+      "mobile": "Mi tëë jäl",
+      "alternateMobile": "Mobail mi̱ dɔ̱ŋ",
+      "email": "Imeel",
+      "project": "La̱t in la̱tkɛ",
+      "reason": "Luɔtdiɛn",
+      "registration": "Rejithtɛciɔn",
+      "registeredAt": "Caa jɛ gɔ̱r piny kɛ cäŋ kä",
+      "referral": "Repɛral",
+      "heldMissing": "Kä ri̱jithtɛciɔn ëë ca yiath piny /ka̱nɛ luäŋ kɛ jek.",
+      "resolutionTitle": "Na̱ŋ cärä",
+      "outcome": "Min bä raar thi̱n",
+      "note": "Na̱ŋ ŋäcä",
+      "decidedBy": "Cua lar ɛ",
+      "decidedAt": "Cua ca̱r kɛ",
+      "newRegistration": "Rejithtɛciɔn mi̱ pay ben",
+      "decideTitle": "La̱t ŋaknɔmä ɛmɛ",
+      "noteLabel": "Ŋäc min lat min ca mat (mi̱ görkɛ)",
+      "noteRequired": "Gɔ̱r wargak kɛ ɣöö biɛ lar.",
+      "uphold": "Käp",
+      "overturn": "Öbɛrturn",
+      "upholdEffect": "{{holder}} la gaŋɛ kuak. Kä ŋaknɔm ɛmɔ ca thuɔ̱k kä thilɛ mi dɔ̱ŋ mi ci rɔ gɛr.",
+      "overturnEffect": "{{holder}} 's dupli̱kët ga̱ŋ cɛ thuɔ̱k ɛntäämɛ kä cu kɔthtɔmär rɔ gɔ̱r piny kɛ kui̱ {{partner}} cie mi̱ ɛ gɔ̱a̱r piny mi̱ pay ben.",
+      "heldBookedHelp": "Käthtɔm ɛmɛ ca book kɛ rɛy gua̱ndɛ ɛntäämɛ. Kämni booking ɛmɔ raar kɛ nhiam (Admin Override kä min ca gɔ̱r piny), kɛ kɔrɛ biɛ nyɔk kɛ loc jɔk:",
+      "confirmTitle": "Kä ji̱n ŋäci jɛ?",
+      "confirmUphold": "Ɣɔ̱ɔ̱n, luäk",
+      "confirmOverturn": "Ɣɔ̱ɔ̱n, ri̱tdɛ piny",
+      "back": "Luny kä Di̱thputeth"
+    }
   }
 }

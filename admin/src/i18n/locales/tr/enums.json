@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Hak sahibi",
-    "PENDING": "Askıda olması"
+    "PENDING": "Askıda olması",
+    "CANCELLED": "İptal edildi"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Yinelenen korumayı erkenden serbest bırakın",
-    "REASSIGN_PARTNER": "Başka bir ortağa yeniden atayın"
+    "REASSIGN_PARTNER": "Başka bir ortağa yeniden atayın",
+    "CANCEL_BOOKING": "Rezervasyonu iptal et"
   },
   "dataType": {
     "TEXT": "Metin",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Süper Yönetici",
     "ADMIN": "Yönetici"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Onaylandı",
+    "CANCELLED": "İptal edildi"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Atfedilen",
+    "DISPUTED": "İhtilaflı"
+  },
+  "disputeStatus": {
+    "OPEN": "Açık",
+    "UPHELD": "Onaylandı",
+    "OVERTURNED": "Devrildi",
+    "WITHDRAWN": "Geri çekildi"
   }
 }

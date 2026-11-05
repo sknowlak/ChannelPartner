@@ -49,8 +49,73 @@
       "newPartnerId": "Nov ID partnerja",
       "reason": "Razlog (obvezno)",
       "apply": "Uporabi preglasitev",
-      "applying": "Uveljavljanje ..."
+      "applying": "Uveljavljanje ...",
+      "cancelBookingHint": "Preklic označi rezervacijo in njeno provizijo kot preklicano, operativno lastništvo vrne partnerju in graditelju omogoči, da to potencialno stranko ponovno rezervira.",
+      "cancelBookingConfirm": "Želite preklicati to rezervacijo? Tudi njegova provizija je preklicana. To se zabeleži z vašim imenom in razlogom."
     },
-    "timelineTitle": "Časovnica revizije (ta registracija)"
+    "timelineTitle": "Časovnica revizije (ta registracija)",
+    "bookingStatus": "Status rezervacije",
+    "commissionAttribution": "Pripis provizije",
+    "disputeOpen": "Za to stranko je odprt lastniški spor - drugi partner pravi, da je njihova. Odloča se na strani za spore.",
+    "viewDisputes": "Ogled sporov",
+    "cancellation": {
+      "title": "Rezervacija preklicana",
+      "hint": "Rezervacija in njena provizija sta preklicani; operativno lastništvo je spet pri partnerju in gradbenik lahko ponovno rezervira to prednost.",
+      "at": "Preklicano ob",
+      "by": "Preklical",
+      "reason": "Razlog"
+    }
+  },
+  "disputes": {
+    "title": "Lastniški spori",
+    "hint": "Partner, katerega registracija je bila zavrnjena kot dvojnik, lahko oporeka, kdo je lastnik stranke. Preglejte obe strani in se odločite.",
+    "statusFilter": "Stanje spora",
+    "allStatuses": "Vsi statusi",
+    "empty": "S tem statusom ni sporov.",
+    "columns": {
+      "dispute": "Spor",
+      "customer": "Stranka",
+      "project": "Projekt",
+      "raisedBy": "Vzgojil",
+      "heldBy": "Trenutni lastnik",
+      "status": "Stanje",
+      "raisedAt": "Vzgojen na"
+    },
+    "detail": {
+      "title": "Izpodbijaj {{id}}",
+      "raisedOn": "Dvignjeno {{date}}",
+      "raisingTitle": "Vzgojil",
+      "holderTitle": "Trenutni lastnik",
+      "partner": "Partner",
+      "raisedBy": "Predložil",
+      "customerName": "Stranka",
+      "mobile": "Mobilni",
+      "alternateMobile": "Nadomestni mobilni telefon",
+      "email": "E-pošta",
+      "project": "Projekt",
+      "reason": "Njihov razlog",
+      "registration": "Registracija",
+      "registeredAt": "Registriran dne",
+      "referral": "Napotitev",
+      "heldMissing": "Zadržane registracije ni bilo mogoče najti.",
+      "resolutionTitle": "Odločitev",
+      "outcome": "Izid",
+      "note": "Opomba",
+      "decidedBy": "Odločil",
+      "decidedAt": "Odločen za",
+      "newRegistration": "Nova registracija",
+      "decideTitle": "Odločite se o tem sporu",
+      "noteLabel": "Opomba z obrazložitvijo odločitve (obvezno)",
+      "noteRequired": "Napišite opombo, da se odločite.",
+      "uphold": "Podpirati",
+      "overturn": "Prevrnitev",
+      "upholdEffect": "{{holder}} obdrži stranko. Spor je zaključen in nič drugega se ne spremeni.",
+      "overturnEffect": "Zaščita dvojnika {{holder}} se zdaj konča in stranka je registrirana za {{partner}} kot nova registracija.",
+      "heldBookedHelp": "Ta stranka je rezervirana prek trenutnega lastnika. Najprej prekličite to rezervacijo (skrbniška preglasitev pri registraciji), nato razveljavite:",
+      "confirmTitle": "Ste prepričani?",
+      "confirmUphold": "Da, podpiram",
+      "confirmOverturn": "Da, prevrnitev",
+      "back": "Nazaj na spore"
+    }
   }
 }

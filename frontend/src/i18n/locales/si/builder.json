@@ -30,7 +30,8 @@
       "registered": "ලියාපදිංචි කර ඇත"
     },
     "booked": "වෙන්කර ඇත",
-    "empty": "තවමත් යොමු කිරීම් නොමැත."
+    "empty": "තවමත් යොමු කිරීම් නොමැත.",
+    "bookingCancelled": "වෙන්කරවා ගැනීම අවලංගු කරන ලදී"
   },
   "detail": {
     "customer": "පාරිභෝගිකයා",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "වෙන්කරවා ගැනීම තහවුරු කර ඇත.",
       "accepted": "යොමු කිරීම පිළිගනු ලැබේ.",
-      "rejected": "යොමු කිරීම ප්‍රතික්ෂේප විය."
+      "rejected": "යොමු කිරීම ප්‍රතික්ෂේප විය.",
+      "bookingCancelled": "වෙන්කරවා ගැනීම අවලංගු කරන ලදී."
     },
-    "backToReferrals": "Referrals වෙත නැවත යන්න"
+    "backToReferrals": "Referrals වෙත නැවත යන්න",
+    "bookingCancelled": "වෙන්කරවා ගැනීම අවලංගු කරන ලදී",
+    "cancelBooking": "වෙන්කරවා ගැනීම අවලංගු කරන්න",
+    "cancelReasonLabel": "අවලංගු කිරීමට හේතුව (සහකරුට පෙන්වා ඇත) *",
+    "cancelBookingHint": "මෙහෙයුම් හිමිකම හවුල්කරු වෙත ආපසු යන අතර ඔවුන්ගේ කොමිස් සුදුසුකම් අවලංගු වේ. නායකත්වය පසුව නැවත වෙන්කරවා ගත හැක.",
+    "cancelBookingConfirm": "වෙන්කරවා ගැනීම අවලංගු කරන්න"
   },
   "history": {
     "title": "ඉතිහාසය",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "කොමිෂන් සභා සුදුසුකම් නිර්මාණය කර ඇත",
       "HANDOVER_COMPLETED": "භාරදීම අවසන්",
       "ADMIN_PROTECTION_RELEASED": "පරිපාලක අනුපිටපත් ආරක්ෂාව කලින් නිකුත් කළේය. හේතුව: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "පරිපාලක විසින් {{from}} සිට {{to}} දක්වා ලියාපදිංචිය නැවත පවරා ඇත. හේතුව: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "පරිපාලක විසින් {{from}} සිට {{to}} දක්වා ලියාපදිංචිය නැවත පවරා ඇත. හේතුව: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "වෙනත් හවුල්කරුවෙකුගේ අනුපිටපත් ලියාපදිංචි කිරීමේ උත්සාහයක් ප්‍රතික්ෂේප විය",
+      "BOOKING_CANCELLED": "වෙන්කරවා ගැනීම අවලංගු කරන ලදී. හේතුව: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "මෙහෙයුම් හිමිකාරිත්වය සහකරු වෙත ආපසු ලබා දෙන ලදී",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "වෙන්කරවා ගැනීමත් සමඟ කොමිස් සුදුසුකම් අවලංගු විය",
+      "COMMISSION_ELIGIBILITY_RESTORED": "නව වෙන්කරවා ගැනීම සඳහා කොමිෂන් සභා සුදුසුකම් ප්‍රතිසාධනය කරන ලදී"
     }
   }
 }

@@ -49,8 +49,73 @@
       "newPartnerId": "Nowy ID partnera",
       "reason": "Powód (wymagany)",
       "apply": "Zastosuj zastąpienie",
-      "applying": "Stosowanie..."
+      "applying": "Stosowanie...",
+      "cancelBookingHint": "Anulowanie oznacza anulowanie rezerwacji i związanej z nią prowizji, zwraca partnerowi własność operacyjną i umożliwia konstruktorowi ponowną rezerwację tego potencjalnego klienta.",
+      "cancelBookingConfirm": "Anulować tę rezerwację? Jego prowizja również zostaje anulowana. Jest to rejestrowane z Twoim imieniem i nazwiskiem oraz powodem."
     },
-    "timelineTitle": "Harmonogram audytu (ta rejestracja)"
+    "timelineTitle": "Harmonogram audytu (ta rejestracja)",
+    "bookingStatus": "Stan rezerwacji",
+    "commissionAttribution": "Przypisanie prowizji",
+    "disputeOpen": "W przypadku tego klienta toczy się spór własnościowy – inny partner twierdzi, że należy do niego. Decyzję podejmuje się na stronie Spory.",
+    "viewDisputes": "Zobacz spory",
+    "cancellation": {
+      "title": "Rezerwacja anulowana",
+      "hint": "Rezerwacja i jej prowizja zostają anulowane; własność operacyjna powróciła do partnera, a konstruktor może ponownie zarezerwować tego potencjalnego klienta.",
+      "at": "Anulowano o godz",
+      "by": "Anulowane przez",
+      "reason": "Powód"
+    }
+  },
+  "disputes": {
+    "title": "Spory własnościowe",
+    "hint": "Partner, którego rejestracja została odrzucona jako duplikat, może spierać się, kto jest właścicielem klienta. Przeanalizuj obie strony i podejmij decyzję.",
+    "statusFilter": "Stan sporu",
+    "allStatuses": "Wszystkie statusy",
+    "empty": "Brak sporów z tym statusem.",
+    "columns": {
+      "dispute": "Spór",
+      "customer": "Klient",
+      "project": "Projekt",
+      "raisedBy": "Wychowany przez",
+      "heldBy": "Obecny właściciel",
+      "status": "Status",
+      "raisedAt": "Wychowany"
+    },
+    "detail": {
+      "title": "Spór {{id}}",
+      "raisedOn": "Wychowany {{date}}",
+      "raisingTitle": "Wychowany przez",
+      "holderTitle": "Obecny właściciel",
+      "partner": "Partner",
+      "raisedBy": "Przesłane przez",
+      "customerName": "Klient",
+      "mobile": "Przenośny",
+      "alternateMobile": "Alternatywny telefon komórkowy",
+      "email": "E-mail",
+      "project": "Projekt",
+      "reason": "Ich powód",
+      "registration": "Rejestracja",
+      "registeredAt": "Zarejestrowano",
+      "referral": "Skierowanie",
+      "heldMissing": "Nie udało się znaleźć wstrzymanej rejestracji.",
+      "resolutionTitle": "Decyzja",
+      "outcome": "Wynik",
+      "note": "Notatka",
+      "decidedBy": "Zdecydował",
+      "decidedAt": "Zdecydowałem się",
+      "newRegistration": "Nowa rejestracja",
+      "decideTitle": "Rozstrzygnij ten spór",
+      "noteLabel": "Notatka wyjaśniająca decyzję (wymagane)",
+      "noteRequired": "Napisz notatkę, aby podjąć decyzję.",
+      "uphold": "Podtrzymywać",
+      "overturn": "Obalić",
+      "upholdEffect": "{{holder}} zatrzymuje klienta. Spór zostaje zamknięty i nic więcej się nie zmienia.",
+      "overturnEffect": "Ochrona przed duplikatami firmy {{holder}} kończy się teraz i klient jest zarejestrowany w firmie {{partner}} w ramach nowej rejestracji.",
+      "heldBookedHelp": "Ten klient jest zarezerwowany przez obecnego właściciela. Najpierw anuluj tę rezerwację (Zastąpienie administratora podczas rejestracji), a następnie unieważnij:",
+      "confirmTitle": "Czy jesteś pewien?",
+      "confirmUphold": "Tak, podtrzymuj",
+      "confirmOverturn": "Tak, obalić",
+      "back": "Powrót do Sporów"
+    }
   }
 }

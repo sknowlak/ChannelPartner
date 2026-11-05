@@ -49,8 +49,73 @@
       "newPartnerId": "Nouvel ID de partenaire",
       "reason": "Raison (obligatoire)",
       "apply": "Appliquer le remplacement",
-      "applying": "Candidature..."
+      "applying": "Candidature...",
+      "cancelBookingHint": "L'annulation marque la réservation et sa commission comme annulées, renvoie la propriété opérationnelle au partenaire et permet au constructeur de réserver à nouveau ce prospect.",
+      "cancelBookingConfirm": "Annuler cette réservation ? Sa commission est aussi annulée. Ceci est enregistré avec votre nom et votre raison."
     },
-    "timelineTitle": "Chronologie de l'audit (cette inscription)"
+    "timelineTitle": "Chronologie de l'audit (cette inscription)",
+    "bookingStatus": "Statut de la réservation",
+    "commissionAttribution": "Attribution des commissions",
+    "disputeOpen": "Un litige de propriété est en suspens concernant ce client. Un autre partenaire dit que c'est le leur. Ça se décide sur la page Litiges.",
+    "viewDisputes": "Afficher les différends",
+    "cancellation": {
+      "title": "Réservation annulée",
+      "hint": "La réservation et sa commission sont annulées ; la propriété opérationnelle revient au partenaire et le constructeur peut à nouveau réserver ce prospect.",
+      "at": "Annulé à",
+      "by": "Annulé par",
+      "reason": "Raison"
+    }
+  },
+  "disputes": {
+    "title": "Litiges de propriété",
+    "hint": "Un partenaire dont l'inscription a été rejetée comme doublon peut contester à qui appartient le client. Examinez les deux côtés et décidez.",
+    "statusFilter": "État du litige",
+    "allStatuses": "Tous les statuts",
+    "empty": "Aucun litige avec ce statut.",
+    "columns": {
+      "dispute": "Dispute",
+      "customer": "Client",
+      "project": "Projet",
+      "raisedBy": "Élevé par",
+      "heldBy": "Propriétaire actuel",
+      "status": "Statut",
+      "raisedAt": "Élevé le"
+    },
+    "detail": {
+      "title": "Litige {{id}}",
+      "raisedOn": "Élevé {{date}}",
+      "raisingTitle": "Élevé par",
+      "holderTitle": "Propriétaire actuel",
+      "partner": "Partenaire",
+      "raisedBy": "Soumis par",
+      "customerName": "Client",
+      "mobile": "Portable",
+      "alternateMobile": "Mobile alternatif",
+      "email": "Courriel",
+      "project": "Projet",
+      "reason": "Leur raison",
+      "registration": "Inscription",
+      "registeredAt": "Inscrit le",
+      "referral": "Référence",
+      "heldMissing": "L'enregistrement retenu est introuvable.",
+      "resolutionTitle": "Décision",
+      "outcome": "Résultat",
+      "note": "Remarque",
+      "decidedBy": "Décidé par",
+      "decidedAt": "Décidé",
+      "newRegistration": "Nouvelle inscription",
+      "decideTitle": "Décider de ce litige",
+      "noteLabel": "Note expliquant la décision (obligatoire)",
+      "noteRequired": "Écrivez une note pour décider.",
+      "uphold": "Maintenir",
+      "overturn": "Renverser",
+      "upholdEffect": "{{holder}} conserve le client. Le litige est terminé et rien d'autre ne change.",
+      "overturnEffect": "La protection contre les doublons {{holder}} prend fin maintenant et le client est enregistré auprès de {{partner}} en tant que nouvel enregistrement.",
+      "heldBookedHelp": "Ce client est réservé par l'entremise du propriétaire actuel. Annulez d'abord cette réservation (Admin Override sur l'inscription), puis annulez :",
+      "confirmTitle": "Es-tu certain?",
+      "confirmUphold": "Oui, maintiens",
+      "confirmOverturn": "Oui, renverse",
+      "back": "Retour aux différends"
+    }
   }
 }

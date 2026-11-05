@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Buk akana",
-    "pending": "Sarec̕ menak̕ak̕"
+    "pending": "Sarec̕ menak̕ak̕",
+    "status": {
+      "CONFIRMED": "Buk akana",
+      "CANCELLED": "Buking baṅ hoe akana"
+    }
   },
   "assign": {
     "unassigned": "Be̱e em akana",
@@ -58,7 +62,10 @@
   },
   "project": {
     "none": "Nit hạbic’ jahãn pro̱jekṭ (baṅ sodor akana)",
-    "notInList": "{{project}} (projekṭ suci re̱ baṅ)"
+    "notInList": "{{project}} (projekṭ suci re̱ baṅ)",
+    "protectionDays_one": "{{count}} -din reaḱ rukhiạ",
+    "protectionDays_two": "{{count}} -din reaḱ rukhiạ",
+    "protectionDays_other": "{{count}} -din reaḱ rukhiạ"
   },
   "journey": {
     "customer": "Grahak",
@@ -76,7 +83,14 @@
     "progressHistory": "Progress Itihas",
     "timesIn": "( {{timezone}} re̠ o̠kte̠ )",
     "backToMyLeads": "Ińak̕ Lead re ruạṛ hijuk̕",
-    "editLead": "Lead sọdọr me̱"
+    "editLead": "Lead sọdọr me̱",
+    "disputeBanner": "Eṭaḱ mit́ṭen hạṭiń do̠ noa gạhki reaḱ mạlik reaḱe jạṛuṛ akada. Mit̕ṭen Leadrat admin do̠ onae biḍạuet̕ kana - amak̕ rukhiạ do̠ ona jaega re̠ge̠ tahẽna tinạk̕ hạbić onko do̠ bako bicạr daṛeak̕.",
+    "booking": "Buking kana",
+    "commission": "Kamison",
+    "notBooked": "Book do bang akana",
+    "cancelledOn": "{{date}} re baṅ hoe akana.",
+    "cancelReason": "Karna: {{reason}}",
+    "cancelledHint": "Bilḍar do̠ booking bạtil akada - kạmiạ mạlik am ṭhen ruạṛ heć akana ar ayog joggak’ bạtil akana. Lead do arho booking len khan ona do thik huyuk kana."
   },
   "referral": {
     "NOT_REFERRED": "Baṅ uduḱ akana (baṅ projekṭ)",
@@ -162,7 +176,17 @@
       "REFERRAL_ACCEPTED": "Bilder do̠ referral ko aṅgoć keda",
       "REFERRAL_REJECTED": "Bilder do̠ ona referral do̠ bae aṅgoc keda. Karna: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin dọ ḍupliket rukhiạ lọgọn jọrọk’ akada. Karna: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin {{from}} khọn {{to}} re̱ rejisṭrọn arhõe emkeda. Karna: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin {{from}} khọn {{to}} re̱ rejisṭrọn arhõe emkeda. Karna: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Eṭaḱ mit́ṭen hạṭiń reaḱ ḍupliket registration reaḱ kurumuṭu do̠ baṅ hoelena",
+      "BOOKING_CANCELLED": "Buking baṅ hoe akana. Karna: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "O̠pe̠raṭiạl mạlik do̠ pạṭhuạ ṭhen ruạṛ heć ena",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Buking sãote ayog reaḱ joggo do̠ baṅ hoe akana",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Nawa booking lạgit̕ ayog reak̕ ạidạri do̠ arhõ̠ ạḍi jạruṛ gea",
+      "OWNERSHIP_DISPUTE_RAISED": "Eṭak’ mit’ gạhki reak’ mạlik’ reak’ bichnạo akada - mit’ Leadrat admin noa reak’ biḍạue hataoa",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Noa gạhki reaḱ mạlik reaḱ biḍạu do̠ ạḍi jạruṛ gea - amaḱ mạlik do̠ baṅ bo̠do̠l akana",
+      "OWNERSHIP_DISPUTE_UPHELD": "Noa gạhki cetan reaḱ mạlik bipod reaḱ biḍạu hoe akana - amaḱ mạlik do̠ pustạu akana",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Apeak̕ mạlik̕ biḍạu apeak̕ pạtiạu re bicạr hoelen tayom registration hoe akana. Note: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Protection do̠ cabaena: eṭaḱ hạṭiń reaḱ pạtiạu reaḱ mit́ṭen mạlik biḍạu reaḱ bicạr hoelena. Note: {{note}}"
     }
   },
   "columnsPanel": {
@@ -186,5 +210,116 @@
     "INVALID_FOR_COUNTRY": "Noa phone nombor do {{country}} lạgit’ baṅ manak’a .",
     "COUNTRY_MISMATCH": "Daya kate thik disom code bachao me.",
     "NOT_MOBILE": "Daya kate̱ mobile nọmbọr enmet’ me̱, landline dọ baṅ."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Ayog lakti kana",
+      "PENDING": "Ayog do̠ kạmi lạgit́ kạmi kana",
+      "CANCELLED": "Ayog do̠ baṅ hoe akana"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Ape ṭhen ạidạri ńam akana",
+      "DISPUTED": "Atribuson re̱ bipod akana"
+    }
+  },
+  "result": {
+    "none": "Rejistreson reak̕ jo̠ do̠ baṅ so̠do̠rok̕a. Pạhil re mit̕ṭen ạyur registration me.",
+    "acceptedTitle": "Sisa rejisṭr hoe akana",
+    "rejectedTitle": "Lead do̠ baṅ registration akana",
+    "protectionWindow": "Raksha jhạli",
+    "protectedUntil": "Raksha Rakhya Habi",
+    "openLead": "Sisa khula",
+    "addAnother": "Ar Mit̕ṭen Lead Joṛao Me",
+    "duplicate": "Duplikat - laha khon ge rukhiạ akana",
+    "duplicateHint": "Noa gạhki do̠ eṭaḱ registration hotete noa pro̠jekṭ lạgit́ laha kho̠ngeye rukhiạ akana, onate noa do̠ am lạgit́ registration do̠ baṅ hoe daṛeaḱa.",
+    "existingProtectedUntil": "Menak̕ registration hạbic̕ kạmi lạgit̕"
+  },
+  "disputes": {
+    "title": "Ińak̕ Bipod",
+    "intro": "Ape do̠ gạhki ko lạgit́pe udgạu akada mạlik bipod oka do̠ duplicate lekate baṅ aṅgoc akana. Mit̕ṭen Leadrat admin do̠ mimit̕koak̕ biḍạue kạmieda.",
+    "empty": "Ape do̠ jãhãn jạṛuṛ do̠ bape udgạu akada. Judi am oka gạhki em ạgu akat́ uni do̠ duplicate lekate bae aṅgoc lekhan ona do̠ registration reaḱ jo̠ khon ge̠m biḍạu daṛeaḱa.",
+    "columns": {
+      "dispute": "Bibạd",
+      "reason": "Amak̕ karon",
+      "outcome": "Natija"
+    },
+    "status": {
+      "OPEN": "Biniḍạo reaḱ latar re",
+      "UPHELD": "Apeak̕ pạtiạu re do̠ baṅ",
+      "OVERTURNED": "Apeak̕ pạtiạu re bicạr hoe akana",
+      "WITHDRAWN": "Uṭao akana"
+    },
+    "awaitingReview": "Admin reak̕ biḍạu lạgit̕ tear menak̕a",
+    "openNewLead": "Amak’ ạyur {{id}} jhić me̱",
+    "withdraw": "Uṭhạu",
+    "withdrawConfirm": "{{name}} lạgit́ amaḱ bipod ạgu me ? Nit̕ reak̕ mạlik do̠ oka leka menak̕ ona lekage tahena.",
+    "raise": "Bipod mạlik̕",
+    "raiseTitle": "Bipod mạlik̕",
+    "raiseHint": "Judi noa gạhki do̠ pạhilre am ṭhen hećlen khan, cedak̕ ona do̠ baḍae ocope. Mit̕ṭen Leadrat admin ona reak̕ sạbud; judi onko do amaḱ pạtiạu reaḱ ko bicạr lekhan, lead do amaḱ lạgit́ registration hoe akana.",
+    "reasonLabel": "Noa gạhki do̠ ce̠dak̕ amren kanae?",
+    "reasonMin_one": "Kom se kom {{count}} akhor.",
+    "reasonMin_two": "Kom se kom {{count}} akhor.",
+    "reasonMin_other": "Kom se kom {{count}} akhor.",
+    "submit": "Bipod ko kol me",
+    "notProtected": "Noa pro̠jekṭ lạgit́ noa gạhki cetanre okoe hõ bako ḍahar ạguet́ kana - niạ okte do̠ lead registration daṛeaḱa.",
+    "raised": "Bipod {{id}} bichnạo lạgit́ ko kol akada.",
+    "viewAll": "Ińak̕ bipod ko ńelpe"
+  },
+  "dashboard": {
+    "title": "ḍēsābōrḍa",
+    "period": "Naṅ",
+    "lastDays_one": "{{count}} din",
+    "lastDays_two": "{{count}} din",
+    "lastDays_other": "{{count}} din",
+    "emptyTitle": "Ataṅ daram! Apeak̕ nit hạbic̕ lead do̠ bạnuk̕a.",
+    "emptyHint": "Apeak̕ pạhil lead registration me - apeak̕ pipeline, booking ar rukhiạ reak̕ ạn ạri do̠ no̠ṇde̠ ńelok̕a.",
+    "tiles": {
+      "leads": "Mucạt́ lead",
+      "newInPeriod_one": "{{count}} noa okte re nãwã",
+      "newInPeriod_two": "{{count}} noa okte re nãwã",
+      "newInPeriod_other": "{{count}} noa okte re nãwã",
+      "accepted": "Sikạr akana",
+      "booked": "Buk akana",
+      "bookedInPeriod_one": "{{count}} noa okte re̱ buki akana",
+      "bookedInPeriod_two": "{{count}} noa okte re̱ buki akana",
+      "bookedInPeriod_other": "{{count}} noa okte re̱ buki akana",
+      "conversion": "Pọdọl bọdọlọk’",
+      "conversionHint": "Sạbit lead reaḱ hisạb lekate booking lead",
+      "protectedNow": "Nit do̠ bańcao akana",
+      "expiringSoon_one": "{{count}} din re mucạt̕ok̕kan rukhiạ",
+      "expiringSoon_two": "{{count}} dinre mucạt̕ok̕kan rukhiạ",
+      "expiringSoon_other": "{{count}} dinre mucạt̕ok̕kan rukhiạ",
+      "disputedNow": "Eṭaḱ ko hotete biḍạu",
+      "disputedNowHint": "Eṭak̕ hạṭiń khon jhilik̕ mạlik̕ biḍạu sãote amak̕ ạidạri",
+      "commissionEligible": "Ayog lakti kana",
+      "commissionCancelled_one": "{{count}} bạtil akana",
+      "commissionCancelled_two": "{{count}} bạtil akana",
+      "commissionCancelled_other": "{{count}} bạtil akana"
+    },
+    "chart": {
+      "title_one": "Mit’ din reak’ registration ar buking - mucạt’ {{count}} din",
+      "title_two": "Mit’ din reak’ registration ar buking - mucạt’ {{count}} din",
+      "title_other": "Mit’ din reak’ registration ar buking - mucạt’ {{count}} din",
+      "registrations": "Rejistreson ko",
+      "bookings": "Buking ko"
+    },
+    "byStage": "Status lekate ạyur kana",
+    "bySource": "So̠ro̠s hote̠te̠ ạyur",
+    "byReferral": "Referal sṭeṭas lekate ạyur",
+    "myDisputes": "Ape ko udgạu akat́ bipod ko",
+    "noDisputes": "Jahan bipod do̠ baṅ uṭhạu akana.",
+    "unknown": "Set baṅ akana",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Bahre̱ CRM (nọṅka)",
+      "PARTNER_CRM": "Apeak̕ team hotete joṛao akana",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Mit̕-mit̕",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Rakha do̠ daraekan {{count}} dinre̠ mucạt̕ok̕ kana",
+    "expiringTitle_two": "Dạṛean {{count}} dinkọ re̱ rukhiạ mucạt’ huyuk’ kana",
+    "expiringTitle_other": "Dạṛean {{count}} dinkọ re̱ rukhiạ mucạt’ huyuk’ kana",
+    "expiringEmpty": "Noa window re jãhãn lead do̠ apnaraḱ rukhiạ do̠ bae bạgiaḱa."
   }
 }

@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Band qilingan",
-    "pending": "Kutilmoqda"
+    "pending": "Kutilmoqda",
+    "status": {
+      "CONFIRMED": "Band qilingan",
+      "CANCELLED": "Bandlov bekor qilindi"
+    }
   },
   "assign": {
     "unassigned": "Tayinlanmagan",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Hozircha hech qanday loyiha yo'q (tariflanmagan)",
-    "notInList": "{{project}} (loyihalar roʻyxatida yoʻq)"
+    "notInList": "{{project}} (loyihalar roʻyxatida yoʻq)",
+    "protectionDays_one": "{{count}} kunlik himoya",
+    "protectionDays_other": "{{count}} kunlik himoya"
   },
   "journey": {
     "customer": "Mijoz",
@@ -76,7 +82,14 @@
     "progressHistory": "Taraqqiyot tarixi",
     "timesIn": "(vaqt {{timezone}} )",
     "backToMyLeads": "Mening yetakchilarim sahifasiga qaytish",
-    "editLead": "Etakchini tahrirlash"
+    "editLead": "Etakchini tahrirlash",
+    "disputeBanner": "Boshqa hamkor bu mijozning egaligi haqida bahslashmoqda. Leadrat administratori buni ko'rib chiqmoqda - ular qaror qilmaguncha sizning himoyangiz o'z joyida qoladi.",
+    "booking": "Rezervasyon",
+    "commission": "Komissiya",
+    "notBooked": "Band qilinmagan",
+    "cancelledOn": "{{date}} kuni bekor qilingan.",
+    "cancelReason": "Sababi: {{reason}}",
+    "cancelledHint": "Quruvchi bandlovni bekor qildi - operatsion egalik sizga qaytadi va komissiya huquqi bekor qilindi. Etakchi yana bron qilingan bo'lsa, u tiklanadi."
   },
   "referral": {
     "NOT_REFERRED": "Tavsiya qilinmagan (loyiha yo'q)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Quruvchi taklifni qabul qildi",
       "REFERRAL_REJECTED": "Quruvchi tavsiyanomani rad etdi. Sabab: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin dublikat himoyasini erta chiqardi. Sabab: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin roʻyxatdan oʻtishni {{from}} dan {{to}} ga oʻzgartirdi. Sabab: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin roʻyxatdan oʻtishni {{from}} dan {{to}} ga oʻzgartirdi. Sabab: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Boshqa hamkor tomonidan takroriy roʻyxatdan oʻtishga urinish rad etildi",
+      "BOOKING_CANCELLED": "Bandlov bekor qilindi. Sababi: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operatsion egalik hamkorga qaytarildi",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Komissiya huquqi bron bilan bekor qilinadi",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Yangi bandlov uchun komissiya huquqi tiklandi",
+      "OWNERSHIP_DISPUTE_RAISED": "Yana bir hamkor bu mijozning egaligi haqida bahslashmoqda - Leadrat administratori uni ko'rib chiqadi",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Bu mijozga nisbatan egalik nizosi olib tashlandi - sizning egaligingiz oʻzgarmadi",
+      "OWNERSHIP_DISPUTE_UPHELD": "Bu mijozga nisbatan egalik nizosi koʻrib chiqildi – egaligingiz tasdiqlandi",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Egalik haqidagi nizo sizning foydangizga hal qilinganidan keyin roʻyxatga olingan. Eslatma: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Himoya tugadi: mulkka oid nizo boshqa sherik foydasiga hal qilindi. Eslatma: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Bu telefon raqami {{country}} uchun yaroqsiz.",
     "COUNTRY_MISMATCH": "Toʻgʻri mamlakat kodini tanlang.",
     "NOT_MOBILE": "Iltimos, statsionar emas, mobil raqamni kiriting."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komissiya huquqiga ega",
+      "PENDING": "Komissiya kutilmoqda",
+      "CANCELLED": "Komissiya bekor qilindi"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Sizga tegishli",
+      "DISPUTED": "Atributga eʼtiroz bildirildi"
+    }
+  },
+  "result": {
+    "none": "Roʻyxatga olish natijasi koʻrsatilmagan. Avval potentsialni ro'yxatdan o'tkazing.",
+    "acceptedTitle": "Rahbar ro'yxatdan o'tgan",
+    "rejectedTitle": "Etakchi ro'yxatdan o'tmagan",
+    "protectionWindow": "Himoya oynasi",
+    "protectedUntil": "gacha himoyalangan",
+    "openLead": "Qo'rg'oshinni ochish",
+    "addAnother": "Boshqa etakchi qo'shing",
+    "duplicate": "Dublikat - allaqachon himoyalangan",
+    "duplicateHint": "Bu mijoz allaqachon boshqa ro‘yxatdan o‘tish orqali ushbu loyiha uchun himoyalangan, shuning uchun uni siz uchun ro‘yxatdan o‘tkazib bo‘lmadi.",
+    "existingProtectedUntil": "Mavjud ro'yxatga olish himoyalangan"
+  },
+  "disputes": {
+    "title": "Mening bahslarim",
+    "intro": "Takroriy nusxa sifatida rad etilgan mijozlar uchun siz ko'targan egalik nizolari. Leadrat administratori har birini ko'rib chiqadi.",
+    "empty": "Siz hech qanday bahs-munozara ko'tarmadingiz. Agar siz olib kelgan mijoz dublikat sifatida rad etilsa, siz ro'yxatdan o'tish natijasiga e'tiroz bildirishingiz mumkin.",
+    "columns": {
+      "dispute": "Munozara",
+      "reason": "Sizning sababingiz",
+      "outcome": "Natija"
+    },
+    "status": {
+      "OPEN": "Ko'rib chiqilmoqda",
+      "UPHELD": "Sizning foydangizga emas",
+      "OVERTURNED": "Sizning foydangizga qaror qildi",
+      "WITHDRAWN": "Olib tashlangan"
+    },
+    "awaitingReview": "Administrator tekshiruvi kutilmoqda",
+    "openNewLead": "Pochtangizni oching {{id}}",
+    "withdraw": "Olib tashlash",
+    "withdrawConfirm": "{{name}} uchun eʼtirozingizni qaytarib olasizmi? Hozirgi egalik avvalgidek qoladi.",
+    "raise": "Egalik haqida bahslashing",
+    "raiseTitle": "Egalik haqida bahslashing",
+    "raiseHint": "Agar bu mijoz sizga birinchi bo'lib kelgan bo'lsa, sababini tushuntiring. Leadrat administratori uni ko'rib chiqadi; agar ular sizning foydangizga qaror qilsalar, etakchi siz uchun ro'yxatga olinadi.",
+    "reasonLabel": "Nega bu mijoz sizniki?",
+    "reasonMin_one": "Kamida {{count}} ta belgi.",
+    "reasonMin_other": "Kamida {{count}} ta belgi.",
+    "submit": "Disputni yuborish",
+    "notProtected": "Endi hech kim ushbu loyiha uchun mijozni himoya qilmaydi - siz hoziroq yetakchini ro‘yxatdan o‘tkazishingiz mumkin.",
+    "raised": "Eʼtiroz {{id}} koʻrib chiqish uchun yuborildi.",
+    "viewAll": "Mening bahslarimni ko'ring"
+  },
+  "dashboard": {
+    "title": "Boshqaruv paneli",
+    "period": "Davr",
+    "lastDays_one": "{{count}} kun",
+    "lastDays_other": "{{count}} kun",
+    "emptyTitle": "Xush kelibsiz! Sizda hali hech qanday yetakchi yo‘q.",
+    "emptyHint": "Birinchi taklifingizni ro'yxatdan o'tkazing - quvur liniyasi, bandlovlar va himoya qilish muddatlari shu yerda ko'rinadi.",
+    "tiles": {
+      "leads": "Jami yetakchilar",
+      "newInPeriod_one": "Bu davrda {{count}} ta yangi",
+      "newInPeriod_other": "Bu davrda {{count}} ta yangi",
+      "accepted": "Qabul qilingan",
+      "booked": "Band qilingan",
+      "bookedInPeriod_one": "Bu davrda {{count}} ta band qilingan",
+      "bookedInPeriod_other": "Bu davrda {{count}} ta band qilingan",
+      "conversion": "Konvertatsiya",
+      "conversionHint": "Qabul qilingan takliflar ulushi sifatida band qilingan takliflar",
+      "protectedNow": "Hozir himoyalangan",
+      "expiringSoon_one": "Himoya {{count}} kundan keyin tugaydi",
+      "expiringSoon_other": "Himoya {{count}} kundan keyin tugaydi",
+      "disputedNow": "Boshqalar tomonidan bahsli",
+      "disputedNowHint": "Boshqa hamkordan ochiq egalik nizosi bilan yetakchilik qilmoqdasiz",
+      "commissionEligible": "Komissiya huquqiga ega",
+      "commissionCancelled_one": "{{count}} bekor qilindi",
+      "commissionCancelled_other": "{{count}} bekor qilindi"
+    },
+    "chart": {
+      "title_one": "Kuniga ro'yxatdan o'tish va bron qilish - oxirgi {{count}} kun",
+      "title_other": "Kuniga ro'yxatdan o'tish va bron qilish - oxirgi {{count}} kun",
+      "registrations": "Ro'yxatga olish",
+      "bookings": "Bandlovlar"
+    },
+    "byStage": "Status bo'yicha yetakchilik qiladi",
+    "bySource": "Manba bo'yicha yetakchilik qiladi",
+    "byReferral": "Yo'llanma holati bo'yicha yetakchilik qiladi",
+    "myDisputes": "Siz ko'targan bahslar",
+    "noDisputes": "Hech qanday bahs ko'tarilmagan.",
+    "unknown": "Belgilanmagan",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Tashqi CRM (simulyatsiya qilingan)",
+      "PARTNER_CRM": "Sizning jamoangiz tomonidan qo'shilgan",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integratsiya",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Himoya muddati keyingi {{count}} kunda tugaydi",
+    "expiringTitle_other": "Himoya muddati keyingi {{count}} kunda tugaydi",
+    "expiringEmpty": "Ushbu oynada hech qanday qo'rg'oshin himoyasini yo'qotmaydi."
   }
 }

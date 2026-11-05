@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Rezerve edildi",
-    "pending": "Askıda olması"
+    "pending": "Askıda olması",
+    "status": {
+      "CONFIRMED": "Rezerve edildi",
+      "CANCELLED": "Rezervasyon iptal edildi"
+    }
   },
   "assign": {
     "unassigned": "Atanmamış",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Henüz proje yok (yönlendirilmedi)",
-    "notInList": "{{project}} (proje listesinde değil)"
+    "notInList": "{{project}} (proje listesinde değil)",
+    "protectionDays_one": "{{count}} günlük koruma",
+    "protectionDays_other": "{{count}} günlük koruma"
   },
   "journey": {
     "customer": "Müşteri",
@@ -76,7 +82,14 @@
     "progressHistory": "İlerleme Geçmişi",
     "timesIn": "( {{timezone}} cinsinden zamanlar)",
     "backToMyLeads": "Potansiyel Müşterilerime Geri Dön",
-    "editLead": "Potansiyel Müşteriyi Düzenle"
+    "editLead": "Potansiyel Müşteriyi Düzenle",
+    "disputeBanner": "Başka bir iş ortağı bu müşterinin sahipliğine itiraz etti. Bir Leadrat yöneticisi bunu inceliyor; korumanız onlar karar verene kadar yürürlükte kalacak.",
+    "booking": "Rezervasyon",
+    "commission": "Komisyon",
+    "notBooked": "Rezervasyon yapılmadı",
+    "cancelledOn": "{{date}} tarihinde iptal edildi.",
+    "cancelReason": "Sebep: {{reason}}",
+    "cancelledHint": "İnşaatçı rezervasyonu iptal etti; operasyonel mülkiyet size geri döndü ve komisyona uygunluk iptal edildi. Potansiyel müşteri tekrar rezerve edilirse geri yüklenir."
   },
   "referral": {
     "NOT_REFERRED": "Yönlendirilmedi (proje yok)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "İnşaatçı tavsiyeyi kabul etti",
       "REFERRAL_REJECTED": "İnşaatçı yönlendirmeyi reddetti. Sebep: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Yönetici yinelenen korumayı erken yayınladı. Sebep: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Yönetici, kaydı {{from}} yerine {{to}} olarak yeniden atadı. Sebep: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Yönetici, kaydı {{from}} yerine {{to}} olarak yeniden atadı. Sebep: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Başka bir iş ortağının mükerrer kayıt girişimi reddedildi",
+      "BOOKING_CANCELLED": "Rezervasyon iptal edildi. Sebep: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operasyonel mülkiyet ortağa iade edildi",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Rezervasyonla birlikte komisyon uygunluğu iptal edildi",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Yeni rezervasyon için komisyon uygunluğu geri getirildi",
+      "OWNERSHIP_DISPUTE_RAISED": "Başka bir iş ortağı bu müşterinin sahipliğine itiraz etti; bir Leadrat yöneticisi bunu inceleyecek",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Bu müşteriyle ilgili sahiplik anlaşmazlığı geri çekildi; sahipliğiniz değişmedi",
+      "OWNERSHIP_DISPUTE_UPHELD": "Bu müşteriyle ilgili sahiplik anlaşmazlığı incelendi; sahipliğiniz onaylandı",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Mülkiyet anlaşmazlığınız lehinize karar verildikten sonra kaydedildi. Not: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Koruma sona erdi: Mülkiyet anlaşmazlığının başka bir ortak lehine karara bağlanmasına karar verildi. Not: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Bu telefon numarası {{country}} için geçerli değil.",
     "COUNTRY_MISMATCH": "Lütfen doğru ülke kodunu seçin.",
     "NOT_MOBILE": "Lütfen sabit hat değil cep telefonu numarası giriniz."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisyon uygun",
+      "PENDING": "Komisyon beklemede",
+      "CANCELLED": "Komisyon iptal edildi"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Sana atfedilen",
+      "DISPUTED": "İlişkilendirmeye itiraz edildi"
+    }
+  },
+  "result": {
+    "none": "Gösterilecek kayıt sonucu yok. Önce bir potansiyel müşteri kaydedin.",
+    "acceptedTitle": "Potansiyel müşteri kayıtlı",
+    "rejectedTitle": "Potansiyel müşteri kayıtlı değil",
+    "protectionWindow": "Koruma Penceresi",
+    "protectedUntil": "Şu Kadar Korumalı",
+    "openLead": "Açık Potansiyel Müşteri",
+    "addAnother": "Başka Bir Potansiyel Müşteri Ekle",
+    "duplicate": "Kopya - zaten korunuyor",
+    "duplicateHint": "Bu müşteri zaten bu proje için başka bir kayıtla korunuyor, dolayısıyla sizin adınıza kaydedilemedi.",
+    "existingProtectedUntil": "Mevcut kayıt şu tarihe kadar korunmaktadır:"
+  },
+  "disputes": {
+    "title": "Anlaşmazlıklarım",
+    "intro": "Kopya olduğu gerekçesiyle reddedilen müşteriler için ilettiğiniz sahiplik anlaşmazlıkları. Bir Leadrat yöneticisi her birini inceler.",
+    "empty": "Herhangi bir anlaşmazlık dile getirmediniz. Getirdiğiniz bir müşteri kopya olarak reddedilirse kayıt sonucundan itiraz edebilirsiniz.",
+    "columns": {
+      "dispute": "Anlaşmazlık",
+      "reason": "Sebebiniz",
+      "outcome": "Sonuç"
+    },
+    "status": {
+      "OPEN": "İnceleniyor",
+      "UPHELD": "Senin lehine değil",
+      "OVERTURNED": "Senin lehine karar verildi",
+      "WITHDRAWN": "Geri çekildi"
+    },
+    "awaitingReview": "Yönetici incelemesi bekleniyor",
+    "openNewLead": "{{id}} potansiyel müşterinizi açın",
+    "withdraw": "Geri çekilmek",
+    "withdrawConfirm": "{{name}} ile ilgili anlaşmazlığınız geri çekilsin mi? Mevcut mülkiyet aynı kalır.",
+    "raise": "Sahiplik anlaşmazlığı",
+    "raiseTitle": "Sahiplik anlaşmazlığı",
+    "raiseHint": "Bu müşteri ilk önce size geldiyse nedenini açıklayın. Bir Leadrat yöneticisi bunu inceleyecektir; Eğer sizin lehinize karar verirlerse, lider sizin adınıza kaydedilir.",
+    "reasonLabel": "Bu müşteri neden sizin?",
+    "reasonMin_one": "En az {{count}} karakter.",
+    "reasonMin_other": "En az {{count}} karakter.",
+    "submit": "İtiraz Gönder",
+    "notProtected": "Bu proje için artık hiç kimse bu müşteriyi koruma altına almıyor; liderliği şimdi kaydedebilirsiniz.",
+    "raised": "{{id}} ile ilgili itiraz incelenmek üzere gönderildi.",
+    "viewAll": "İtirazlarımı görüntüle"
+  },
+  "dashboard": {
+    "title": "Kontrol Paneli",
+    "period": "Dönem",
+    "lastDays_one": "{{count}} gün",
+    "lastDays_other": "{{count}} gün",
+    "emptyTitle": "Hoş geldin! Henüz potansiyel müşteriniz yok.",
+    "emptyHint": "İlk potansiyel müşterinizi kaydedin; satış hattınız, rezervasyonlarınız ve koruma son tarihleriniz burada gösterilecektir.",
+    "tiles": {
+      "leads": "Toplam potansiyel müşteri",
+      "newInPeriod_one": "Bu dönemde {{count}} yeni",
+      "newInPeriod_other": "Bu dönemde {{count}} yeni",
+      "accepted": "Kabul edildi",
+      "booked": "Rezerve edildi",
+      "bookedInPeriod_one": "Bu dönemde {{count}} rezervasyon yapıldı",
+      "bookedInPeriod_other": "Bu dönemde {{count}} rezervasyon yapıldı",
+      "conversion": "Dönüşüm",
+      "conversionHint": "Kabul edilen potansiyel müşterilerin payı olarak ayrılan potansiyel müşteriler",
+      "protectedNow": "Artık korunuyor",
+      "expiringSoon_one": "Koruma {{count}} gün içinde sona eriyor",
+      "expiringSoon_other": "Koruma {{count}} gün içinde sona eriyor",
+      "disputedNow": "Başkaları tarafından tartışıldı",
+      "disputedNowHint": "Başka bir iş ortağıyla açık bir sahiplik anlaşmazlığı bulunan potansiyel müşterileriniz",
+      "commissionEligible": "Komisyon uygun",
+      "commissionCancelled_one": "{{count}} iptal edildi",
+      "commissionCancelled_other": "{{count}} iptal edildi"
+    },
+    "chart": {
+      "title_one": "Günlük kayıtlar ve rezervasyonlar - son {{count}} gün",
+      "title_other": "Günlük kayıtlar ve rezervasyonlar - son {{count}} gün",
+      "registrations": "Kayıtlar",
+      "bookings": "Rezervasyonlar"
+    },
+    "byStage": "Duruma göre potansiyel müşteriler",
+    "bySource": "Kaynağa göre potansiyel müşteriler",
+    "byReferral": "Yönlendirme durumuna göre potansiyel müşteriler",
+    "myDisputes": "Ortaya çıkardığınız anlaşmazlıklar",
+    "noDisputes": "Hiçbir anlaşmazlık ortaya çıkmadı.",
+    "unknown": "Ayarlanmadı",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Harici CRM (simüle edilmiş)",
+      "PARTNER_CRM": "Ekibiniz tarafından eklendi",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Entegrasyon",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Korumanın süresi önümüzdeki {{count}} gün içinde doluyor",
+    "expiringTitle_other": "Korumanın süresi önümüzdeki {{count}} gün içinde doluyor",
+    "expiringEmpty": "Bu pencerede hiçbir kurşun korumasını kaybetmez."
   }
 }

@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Vælbarur",
-    "PENDING": "Sum liggur í óvissu"
+    "PENDING": "Sum liggur í óvissu",
+    "CANCELLED": "Avlýst"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Slepp dupultverju tíðliga",
-    "REASSIGN_PARTNER": "Umskipa til ein annan samstarvsfelaga"
+    "REASSIGN_PARTNER": "Umskipa til ein annan samstarvsfelaga",
+    "CANCEL_BOOKING": "Avlýs bílegging"
   },
   "dataType": {
     "TEXT": "Tekstur",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super umsitari",
     "ADMIN": "Umsitari"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Staðfest",
+    "CANCELLED": "Avlýst"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Tilskrivað",
+    "DISPUTED": "Umstrítt"
+  },
+  "disputeStatus": {
+    "OPEN": "Opin",
+    "UPHELD": "Viðhildið",
+    "OVERTURNED": "Kollvelt",
+    "WITHDRAWN": "Tikið aftur"
   }
 }

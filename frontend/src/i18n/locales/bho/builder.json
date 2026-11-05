@@ -30,7 +30,8 @@
       "registered": "पंजीकृत हो गइल बा"
     },
     "booked": "बुकिंग हो गइल बा",
-    "empty": "अबहीं ले कवनो रेफरल नइखे भइल."
+    "empty": "अबहीं ले कवनो रेफरल नइखे भइल.",
+    "bookingCancelled": "बुकिंग रद्द हो गइल"
   },
   "detail": {
     "customer": "गहकी",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "बुकिंग के पुष्टि हो गईल।",
       "accepted": "रेफरल स्वीकार कइल गइल.",
-      "rejected": "रेफरल खारिज कर दिहल गइल."
+      "rejected": "रेफरल खारिज कर दिहल गइल.",
+      "bookingCancelled": "बुकिंग रद्द हो गइल."
     },
-    "backToReferrals": "रेफरल पर वापस आ जाईं"
+    "backToReferrals": "रेफरल पर वापस आ जाईं",
+    "bookingCancelled": "बुकिंग रद्द हो गइल",
+    "cancelBooking": "बुकिंग रद्द कर दीं",
+    "cancelReasonLabel": "रद्द करे के कारण (साथी के देखावल गइल) *",
+    "cancelBookingHint": "परिचालन स्वामित्व वापस साझेदार के मिल जाला आ ओह लोग के कमीशन के पात्रता रद्द कर दिहल जाला. बाद में फेर से बढ़त के बुकिंग करावल जा सकेला.",
+    "cancelBookingConfirm": "बुकिंग रद्द कर दीं"
   },
   "history": {
     "title": "इतिहास",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "आयोग के पात्रता पैदा भइल",
       "HANDOVER_COMPLETED": "हस्तान्तरण पूरा हो गइल",
       "ADMIN_PROTECTION_RELEASED": "एडमिन डुप्लिकेट प्रोटेक्शन जल्दी जारी कर दिहले. कारण: {{reason}} बा।",
-      "ADMIN_PARTNER_REASSIGNED": "एडमिन रजिस्ट्रेशन के {{from}} से {{to}} में फिर से सौंप दिहले। कारण: {{reason}} बा।"
+      "ADMIN_PARTNER_REASSIGNED": "एडमिन रजिस्ट्रेशन के {{from}} से {{to}} में फिर से सौंप दिहले। कारण: {{reason}} बा।",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "दोसरा साझीदार के ओर से डुप्लिकेट रजिस्ट्रेशन के कोशिश खारिज हो गईल",
+      "BOOKING_CANCELLED": "बुकिंग रद्द हो गइल. कारण: {{reason}} बा।",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "परिचालन स्वामित्व साझेदार के वापस आ गईल",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "बुकिंग के संगे कमीशन के पात्रता रद्द हो गईल",
+      "COMMISSION_ELIGIBILITY_RESTORED": "नया बुकिंग खातिर कमीशन के पात्रता बहाल हो गइल"
     }
   }
 }

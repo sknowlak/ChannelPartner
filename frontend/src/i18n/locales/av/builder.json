@@ -30,7 +30,8 @@
       "registered": "Регистрация гьабуна"
     },
     "booked": "Заказ гьабуна",
-    "empty": "Жеги рефералал гьечӀо."
+    "empty": "Жеги рефералал гьечӀо.",
+    "bookingCancelled": "Бронирование отменено"
   },
   "detail": {
     "customer": "Бичун босулев чи",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Бронирование тасдикъ гьабуна.",
       "accepted": "Направление къабул гьабуна.",
-      "rejected": "Направление нахъ чӀвана."
+      "rejected": "Направление нахъ чӀвана.",
+      "bookingCancelled": "Бронирование отменено."
     },
-    "backToReferrals": "Рефералазде нахъе ине"
+    "backToReferrals": "Рефералазде нахъе ине",
+    "bookingCancelled": "Бронирование отменено",
+    "cancelBooking": "Отменить бронирование",
+    "cancelReasonLabel": "ГӀилла нахъе бахъиялъе (партнерасда бихьула) *",
+    "cancelBookingHint": "Оперативияб бетӀергьанлъи нахъе уна партнерасухъе ва гьезул комиссиялъул ихтияр нахъе бахъула. Лид хадуб цӀидасан хъвазе бегьула.",
+    "cancelBookingConfirm": "Отмена бронирования"
   },
   "history": {
     "title": "История",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Комиссиялъул ихтияр гӀуцӀун букӀана",
       "HANDOVER_COMPLETED": "Кьей лъугӀана",
       "ADMIN_PROTECTION_RELEASED": "Админ цебего биччана дубликат цӀуни. ГӀилла: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Админ переназначил регистрацию с {{from}} на {{to}} . ГӀилла: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Админ переназначил регистрацию с {{from}} на {{to}} . ГӀилла: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Цогидав партнерас хъвай-хъвагӀай гьабизе гьабураб дубликат нахъ чӀвана .",
+      "BOOKING_CANCELLED": "Бронирование отменено. ГӀилла: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Оперативияб бетӀергьанлъи партнерасухъе тӀадбуссинабуна .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Комиссиялъул ихтияр аннулирован с бронированием",
+      "COMMISSION_ELIGIBILITY_RESTORED": "ЦӀияб бронь гьабизе комиссиялъул ихтияр цӀигьабуна"
     }
   }
 }

@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Riservatu",
-    "pending": "In attesa"
+    "pending": "In attesa",
+    "status": {
+      "CONFIRMED": "Riservatu",
+      "CANCELLED": "Riservazione annullata"
+    }
   },
   "assign": {
     "unassigned": "Unassigned",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Nisun prughjettu ancora (micca riferitu)",
-    "notInList": "{{project}} (micca in a lista di prughjetti)"
+    "notInList": "{{project}} (micca in a lista di prughjetti)",
+    "protectionDays_one": "{{count}} -ghjornu prutezzione",
+    "protectionDays_other": "{{count}} -ghjornu prutezzione"
   },
   "journey": {
     "customer": "Cliente",
@@ -76,7 +82,14 @@
     "progressHistory": "Storia di u prugressu",
     "timesIn": "(tempi in {{timezone}} )",
     "backToMyLeads": "Torna à My Leads",
-    "editLead": "Edit Lead"
+    "editLead": "Edit Lead",
+    "disputeBanner": "Un altru cumpagnu hà disputatu a pruprietà di stu cliente. Un amministratore Leadrat a riviseghja - a vostra prutezzione ferma in locu finu à ch'elli decidenu.",
+    "booking": "Riserva",
+    "commission": "Cummissione",
+    "notBooked": "Ùn hè micca riservatu",
+    "cancelledOn": "Annulatu u {{date}} .",
+    "cancelReason": "Motivu: {{reason}}",
+    "cancelledHint": "U custruttore hà annullatu a prenotazione - a pruprietà operativa hè tornata cun voi è l'elegibilità di a cumissioni hè annullata. Hè restauratu se u piombu hè riservatu di novu."
   },
   "referral": {
     "NOT_REFERRED": "Micca riferitu (senza prughjettu)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Builder hà accettatu u riferimentu",
       "REFERRAL_REJECTED": "Builder hà rifiutatu u riferimentu. Motivu: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "L'amministratore hà liberatu a prutezzione duplicata prima. Motivu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "L'amministratore hà riassignatu a registrazione da {{from}} à {{to}} . Motivu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "L'amministratore hà riassignatu a registrazione da {{from}} à {{to}} . Motivu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Un tentativu di registrazione duplicata da un altru cumpagnu hè statu rifiutatu",
+      "BOOKING_CANCELLED": "Riservazione annullata. Motivu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "A pruprietà operativa hè tornata à u cumpagnu",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ammissibilità di a Cummissione annullata cù a prenotazione",
+      "COMMISSION_ELIGIBILITY_RESTORED": "L'elegibilità di a Cummissione hè stata restaurata per a nova riservazione",
+      "OWNERSHIP_DISPUTE_RAISED": "Un altru partner hà disputatu a pruprietà di stu cliente - un amministratore Leadrat u revisarà",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "A disputa di pruprietà nantu à stu cliente hè stata ritirata - a vostra pruprietà ùn hè micca cambiata",
+      "OWNERSHIP_DISPUTE_UPHELD": "A disputa di pruprietà nantu à stu cliente hè stata rivista - a vostra pruprietà hè cunfirmata",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Registratu dopu chì a vostra disputa di pruprietà hè stata decisa in u vostru favore. Nota: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Prutezzione finita : una disputa di pruprietà hè stata decisa in favore di un altru cumpagnu. Nota: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Stu numeru di telefunu ùn hè micca validu per {{country}} .",
     "COUNTRY_MISMATCH": "Per piacè selezziunate u codice di paese currettu.",
     "NOT_MOBILE": "Per piacè inserite un numeru di telefuninu, micca una linea fissa."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Cummissione eligibile",
+      "PENDING": "Cummissione pendente",
+      "CANCELLED": "Cummissione annullata"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Attribuitu à voi",
+      "DISPUTED": "Attribuzione contestata"
+    }
+  },
+  "result": {
+    "none": "Nisun risultatu di registrazione per vede. Registrate prima un lead.",
+    "acceptedTitle": "Piombu registratu",
+    "rejectedTitle": "Lead ùn hè micca registratu",
+    "protectionWindow": "Finestra di prutezzione",
+    "protectedUntil": "Prutettu Finu à",
+    "openLead": "Piombo Apertu",
+    "addAnother": "Aghjunghjite un altru Piombo",
+    "duplicate": "Duplicate - digià prutettu",
+    "duplicateHint": "Stu cliente hè digià prutettu per stu prughjettu da un altru iscrizzione, cusì ùn puderia micca esse registratu per voi.",
+    "existingProtectedUntil": "Registrazione esistente prutetta finu à"
+  },
+  "disputes": {
+    "title": "I mo disputa",
+    "intro": "I disputi di pruprietà chì avete suscitatu per i clienti chì sò stati rifiutati cum'è duplicati. Un amministratore Leadrat revisa ognunu.",
+    "empty": "Ùn avete micca suscitatu alcuna disputa. Se un cliente chì avete purtatu hè rifiutatu cum'è un duplicatu, pudete disputà da u risultatu di registrazione.",
+    "columns": {
+      "dispute": "Dispute",
+      "reason": "U vostru mutivu",
+      "outcome": "Risultatu"
+    },
+    "status": {
+      "OPEN": "In rivisione",
+      "UPHELD": "Micca in u vostru favore",
+      "OVERTURNED": "Decisu in u vostru favore",
+      "WITHDRAWN": "Ritirata"
+    },
+    "awaitingReview": "Aspittendu a rivista di l'amministratore",
+    "openNewLead": "Aprite u vostru capu {{id}}",
+    "withdraw": "Ritirate",
+    "withdrawConfirm": "Ritirate a vostra disputa per {{name}} ? A pruprietà attuale ferma cum'è hè.",
+    "raise": "Dispute a pruprietà",
+    "raiseTitle": "Dispute a pruprietà",
+    "raiseHint": "Se stu cliente hè vinutu à voi prima, spiegà perchè. Un amministratore Leadrat a riviserà; s'elli decidenu in u vostru favore, u capu hè registratu per voi.",
+    "reasonLabel": "Perchè stu cliente hè u vostru?",
+    "reasonMin_one": "Almenu {{count}} caratteru.",
+    "reasonMin_other": "Almenu {{count}} caratteri.",
+    "submit": "Mandate una disputa",
+    "notProtected": "Nimu ùn hà più prutezzione di stu cliente per stu prughjettu - pudete registrà a guida avà.",
+    "raised": "Dispute {{id}} mandatu per rivisione.",
+    "viewAll": "Vede i mo disputi"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Periodu",
+    "lastDays_one": "{{count}} ghjornu",
+    "lastDays_other": "{{count}} ghjorni",
+    "emptyTitle": "Benvenuti! Ùn avete ancora guida.",
+    "emptyHint": "Registrate u vostru primu lead - u vostru pipeline, e riservazioni è i termini di prutezzione si mostraranu quì.",
+    "tiles": {
+      "leads": "Cunduce totali",
+      "newInPeriod_one": "{{count}} novu in stu periodu",
+      "newInPeriod_other": "{{count}} novu in stu periodu",
+      "accepted": "Acceptatu",
+      "booked": "Riservatu",
+      "bookedInPeriod_one": "{{count}} riservatu in stu periodu",
+      "bookedInPeriod_other": "{{count}} riservatu in stu periodu",
+      "conversion": "Cunversione",
+      "conversionHint": "I guidati prenotati cum'è una parte di i portati accettati",
+      "protectedNow": "Prutettu avà",
+      "expiringSoon_one": "Prutezzione chì finisce in {{count}} ghjornu",
+      "expiringSoon_other": "Prutezzione finisce in {{count}} ghjorni",
+      "disputedNow": "Disputatu da altri",
+      "disputedNowHint": "I vostri conduce cù una disputa di pruprietà aperta da un altru cumpagnu",
+      "commissionEligible": "Cummissione eligibile",
+      "commissionCancelled_one": "{{count}} annullatu",
+      "commissionCancelled_other": "{{count}} annullatu"
+    },
+    "chart": {
+      "title_one": "Registrazioni è riservazioni per ghjornu - l'ultimu {{count}} ghjornu",
+      "title_other": "Registrazioni è riservazioni per ghjornu - ultimi {{count}} ghjorni",
+      "registrations": "Iscrizzione",
+      "bookings": "Riservazioni"
+    },
+    "byStage": "Conduce per status",
+    "bySource": "Conduce per fonte",
+    "byReferral": "Conduce per status di riferimentu",
+    "myDisputes": "Dispute chì avete suscitatu",
+    "noDisputes": "Nisuna disputa suscitata.",
+    "unknown": "Micca stabilitu",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM esternu (simulatu)",
+      "PARTNER_CRM": "Aggiuntu da a vostra squadra",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integrazione",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "A prutezzione scade in u prossimu {{count}} ghjornu",
+    "expiringTitle_other": "A prutezzione scade in i prossimi {{count}} ghjorni",
+    "expiringEmpty": "Nisun piombu perde a so prutezzione in questa finestra."
   }
 }

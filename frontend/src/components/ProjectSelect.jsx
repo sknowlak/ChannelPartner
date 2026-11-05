@@ -5,6 +5,7 @@ import { listProjects } from '../api/client';
 // Projects come from the builder catalogue (section 52) - the project
 // decides which builder a lead is referred to, so it's picked from a list
 // instead of typed. Fetched once per page load and shared between fields.
+// Each option also shows the project's duplicate-protection window (section 62).
 let cache;
 function loadProjects() {
   if (!cache) cache = listProjects().then(({ data }) => data.projects).catch((err) => { cache = undefined; throw err; });
@@ -22,7 +23,9 @@ export default function ProjectSelect({ value, onChange, required }) {
       <option value="">{t('project.none')}</option>
       {!known && value && <option value={value}>{t('project.notInList', { project: value })}</option>}
       {projects.map((p) => (
-        <option key={p.projectId} value={p.projectId}>{p.name} - {p.builderName}{p.city ? ` (${p.city})` : ''}</option>
+        <option key={p.projectId} value={p.projectId}>
+          {p.name} - {p.builderName}{p.city ? ` (${p.city})` : ''}{p.protectionDays ? ` · ${t('project.protectionDays', { count: p.protectionDays })}` : ''}
+        </option>
       ))}
     </select>
   );

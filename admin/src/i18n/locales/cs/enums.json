@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Oprávněný",
-    "PENDING": "Čeká na vyřízení"
+    "PENDING": "Čeká na vyřízení",
+    "CANCELLED": "Zrušeno"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Předčasně uvolněte ochranu proti duplicitě",
-    "REASSIGN_PARTNER": "Přeřadit na jiného partnera"
+    "REASSIGN_PARTNER": "Přeřadit na jiného partnera",
+    "CANCEL_BOOKING": "Zrušit rezervaci"
   },
   "dataType": {
     "TEXT": "Text",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super správce",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Potvrzeno",
+    "CANCELLED": "Zrušeno"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Připsáno",
+    "DISPUTED": "Sporný"
+  },
+  "disputeStatus": {
+    "OPEN": "OTEVŘENO",
+    "UPHELD": "Podporováno",
+    "OVERTURNED": "Převrácený",
+    "WITHDRAWN": "Staženo"
   }
 }

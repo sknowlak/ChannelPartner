@@ -30,7 +30,8 @@
       "registered": "Moijkuilok"
     },
     "booked": "Ki ijkuilok",
-    "empty": "Ayokmo onka tlajtoli."
+    "empty": "Ayokmo onka tlajtoli.",
+    "bookingCancelled": "Nopa tlanemakalistli tlami"
   },
   "detail": {
     "customer": "Tlakoketl",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Ya mosentlalijtok.",
       "accepted": "Tlatitlanili tlen kiselijtokej.",
-      "rejected": "Tlatitlanili amo kiselijkej."
+      "rejected": "Tlatitlanili amo kiselijkej.",
+      "bookingCancelled": "Nopa tlanemakalistli tlami."
     },
-    "backToReferrals": "Ximokuepa kampa titetitlanij"
+    "backToReferrals": "Ximokuepa kampa titetitlanij",
+    "bookingCancelled": "Nopa tlanemakalistli tlami",
+    "cancelBooking": "Xijtlamiltika tlen tijtlapejpenijtok",
+    "cancelReasonLabel": "Tlen ika tijtlamis (kinextis nopa tlapaleuijketl) *",
+    "cancelBookingHint": "Nopa tekitl tlen iaxka mokuepa ipan nopa tlapaleuijketl uan inin eligibilidad tlen comisión moixpoloua. Nopa tlayacanalistli uelis sampa tijtlapejpenisej teipa.",
+    "cancelBookingConfirm": "Xikixpolo nopa tlanemakalistli"
   },
   "history": {
     "title": "Nemiliskayotl",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Tlapaleuilistli tlen comisión tlen kichijchijkej",
       "HANDOVER_COMPLETED": "Tlamilistli tlanki",
       "ADMIN_PROTECTION_RELEASED": "Admin kikixtik tlamokuitlauilistli tlen ome tlamantli achtoui. Tlen: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin ki tlalik nopa registro tlen {{from}} ika {{to}} . Tlen: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin ki tlalik nopa registro tlen {{from}} ika {{to}} . Tlen: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Se tlajkuiloli tlen seyok iuampo tlen kinekiyaya kichiuas amo kiselijkej",
+      "BOOKING_CANCELLED": "Nopa tlanemakalistli tlami. Tlen: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Nopa tekitl tlen iaxka mokuepa ika nopa tlapaleuijketl",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Nopa tlapaleuilistli tlen comisión tlami ika nopa reservación",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Nopa comisión tlen ika timo tlaxtlauas mokuepki pampa nopa yankuik tlanemakalistli"
     }
   }
 }

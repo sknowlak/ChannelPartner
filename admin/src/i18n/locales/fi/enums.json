@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Tukikelpoinen",
-    "PENDING": "Odottaa"
+    "PENDING": "Odottaa",
+    "CANCELLED": "Peruutettu"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Vapauta päällekkäinen suojaus ajoissa",
-    "REASSIGN_PARTNER": "Siirrä toiselle kumppanille"
+    "REASSIGN_PARTNER": "Siirrä toiselle kumppanille",
+    "CANCEL_BOOKING": "Peruuta varaus"
   },
   "dataType": {
     "TEXT": "Teksti",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super Admin",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Vahvistettu",
+    "CANCELLED": "Peruutettu"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Tunnustettu",
+    "DISPUTED": "Kiistanalainen"
+  },
+  "disputeStatus": {
+    "OPEN": "Avata",
+    "UPHELD": "Hyväksyttiin",
+    "OVERTURNED": "Kaatunut",
+    "WITHDRAWN": "Peruutettu"
   }
 }

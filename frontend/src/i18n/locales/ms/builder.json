@@ -29,7 +29,8 @@
       "registered": "Berdaftar"
     },
     "booked": "Tempah",
-    "empty": "Tiada rujukan lagi."
+    "empty": "Tiada rujukan lagi.",
+    "bookingCancelled": "Tempahan dibatalkan"
   },
   "detail": {
     "customer": "Pelanggan",
@@ -52,9 +53,15 @@
     "notice": {
       "booked": "Tempahan disahkan.",
       "accepted": "Rujukan diterima.",
-      "rejected": "Rujukan ditolak."
+      "rejected": "Rujukan ditolak.",
+      "bookingCancelled": "Tempahan dibatalkan."
     },
-    "backToReferrals": "Kembali ke Rujukan"
+    "backToReferrals": "Kembali ke Rujukan",
+    "bookingCancelled": "Tempahan dibatalkan",
+    "cancelBooking": "Batalkan Tempahan",
+    "cancelReasonLabel": "Sebab pembatalan (ditunjukkan kepada pasangan) *",
+    "cancelBookingHint": "Pemilikan operasi kembali kepada rakan kongsi dan kelayakan komisen mereka dibatalkan. Petunjuk boleh ditempah semula kemudian.",
+    "cancelBookingConfirm": "Batalkan tempahan"
   },
   "history": {
     "title": "Sejarah",
@@ -81,7 +88,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisen diwujudkan",
       "HANDOVER_COMPLETED": "Penyerahan selesai",
       "ADMIN_PROTECTION_RELEASED": "Admin mengeluarkan perlindungan pendua awal. Sebab: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Pentadbir menugaskan semula pendaftaran daripada {{from}} kepada {{to}} . Sebab: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Pentadbir menugaskan semula pendaftaran daripada {{from}} kepada {{to}} . Sebab: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Percubaan pendaftaran pendua oleh rakan kongsi lain telah ditolak",
+      "BOOKING_CANCELLED": "Tempahan dibatalkan. Sebab: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Pemilikan operasi dikembalikan kepada rakan kongsi",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kelayakan komisen dibatalkan dengan tempahan",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kelayakan komisen dipulihkan untuk tempahan baharu"
     }
   }
 }

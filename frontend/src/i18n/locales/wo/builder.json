@@ -29,7 +29,8 @@
       "registered": "Bindu"
     },
     "booked": "Reservé",
-    "empty": "Ba leegi kenn deful."
+    "empty": "Ba leegi kenn deful.",
+    "bookingCancelled": "Fomm nañu reservation bi"
   },
   "detail": {
     "customer": "Kilimaa",
@@ -52,9 +53,15 @@
     "notice": {
       "booked": "Reservation bi firndeel nañu ko.",
       "accepted": "Nanngu nañu yónnee.",
-      "rejected": "Referral bi dañu ko bañ."
+      "rejected": "Referral bi dañu ko bañ.",
+      "bookingCancelled": "Fomm nañu reservation bi."
     },
-    "backToReferrals": "Dellu ci Yonneef yi"
+    "backToReferrals": "Dellu ci Yonneef yi",
+    "bookingCancelled": "Fomm nañu reservation bi",
+    "cancelBooking": "Fomm reservation",
+    "cancelReasonLabel": "Sabab bi tax ñu fomm (ñu wane ko jàppante bi) *",
+    "cancelBookingHint": "Boroom liggéey bi dafay dellu ci àndadoo bi ba noppi ñu fomm seen yelleefu komisioŋ. Mën nañu bookwaat lead bi ginaaw.",
+    "cancelBookingConfirm": "Fomm reservation bi"
   },
   "history": {
     "title": "Jaar-jaar",
@@ -81,7 +88,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Sos nañu yelleefu komisioŋ",
       "HANDOVER_COMPLETED": "Joxe bi jeexna",
       "ADMIN_PROTECTION_RELEASED": "Admin bi teela genne ñaari aar. Sabab: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin bi dafa soppi bindu bi ci {{from}} dem ci {{to}} . Sabab: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin bi dafa soppi bindu bi ci {{from}} dem ci {{to}} . Sabab: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Benn jéego bu beneen àndadoo def ñaari yoon, dañu ko bañ",
+      "BOOKING_CANCELLED": "Fomm nañu reservation bi. Sabab: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Delloosi na boroom liggéey bi ci naataango bi",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Fomm nañu yelleefu komisoŋ bi ci reservation bi",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Delloosi yelleefu komisioŋ ngir reservaasioŋ bu bees bi"
     }
   }
 }

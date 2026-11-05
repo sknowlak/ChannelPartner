@@ -29,7 +29,8 @@
       "registered": "Lesisita"
     },
     "booked": "Puke",
-    "empty": "'Oku te'eki ke 'iai ha referral."
+    "empty": "'Oku te'eki ke 'iai ha referral.",
+    "bookingCancelled": "Kuo kaniseli 'a e puke"
   },
   "detail": {
     "customer": "Kasitomā",
@@ -52,9 +53,15 @@
     "notice": {
       "booked": "Kuo fakapapau'i 'a e booking.",
       "accepted": "Kuo tali 'a e fakahinohino.",
-      "rejected": "Naʻe fakafisingaʻi ʻa e fakahinohinó."
+      "rejected": "Naʻe fakafisingaʻi ʻa e fakahinohinó.",
+      "bookingCancelled": "Kuo kaniseli 'a e booking."
     },
-    "backToReferrals": "Foki ki he Ngaahi Fakahinohino"
+    "backToReferrals": "Foki ki he Ngaahi Fakahinohino",
+    "bookingCancelled": "Kuo kaniseli 'a e puke",
+    "cancelBooking": "Kaniseli 'a e Puke",
+    "cancelReasonLabel": "'Uhinga 'o e kaniseli (fakahaa'i ki he hoa) *",
+    "cancelBookingHint": "‘Oku foki ‘a e ‘ea fakangaue ki he hoa ngaue pea ‘oku kaniseli ‘enau taau ki he komisoni. 'E lava ke toe book 'a e lead 'amui ange.",
+    "cancelBookingConfirm": "Kaniseli 'a e puke"
   },
   "history": {
     "title": "Hisitōlia",
@@ -81,7 +88,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Na'e fa'u 'a e taau ki he Komisoni",
       "HANDOVER_COMPLETED": "Kuo fakakakato hono tu'uaki",
       "ADMIN_PROTECTION_RELEASED": "Na'e tukuange vave 'e he Admin 'a e malu'i 'o e duplicate. 'Uhinga: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Na'e toe vahevahe 'e he pule 'a e lesisita mei he {{from}} ki he {{to}} . 'Uhinga: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Na'e toe vahevahe 'e he pule 'a e lesisita mei he {{from}} ki he {{to}} . 'Uhinga: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Naʻe ʻikai tali ha feinga lesisita ʻe taha ʻe ha hoa ʻe taha .",
+      "BOOKING_CANCELLED": "Kuo kaniseli 'a e booking. 'Uhinga: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Na'e fakafoki 'a e 'ea fakangaue ki he hoa ngaue .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kaniseli 'a e taau 'o e komisoni 'i he booking .",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kuo toe fakafoki mai 'a e taau 'o e komisoni ki he booking fo'ou"
     }
   }
 }

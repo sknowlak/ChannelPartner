@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Oketi",
-    "pending": "Pok otimore"
+    "pending": "Pok otimore",
+    "status": {
+      "CONFIRMED": "Oketi",
+      "CANCELLED": "Buk osekansi"
+    }
   },
   "assign": {
     "unassigned": "Ok omiye",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Onge chenro ma pod (ok ondiki)",
-    "notInList": "{{project}} (ok ni e listi mar chenro)"
+    "notInList": "{{project}} (ok ni e listi mar chenro)",
+    "protectionDays_one": "{{count}} arita mar odiechieng'",
+    "protectionDays_other": "{{count}} arita mar odiechieng'"
   },
   "journey": {
     "customer": "Jang'iepo",
@@ -76,7 +82,14 @@
     "progressHistory": "Sigana mar dhi nyime",
     "timesIn": "(seche e {{timezone}} )",
     "backToMyLeads": "Dwogo e Joma Atelo",
-    "editLead": "Loki Jatelo"
+    "editLead": "Loki Jatelo",
+    "disputeBanner": "Jawete machielo osebedo gi ywak kuom wuon janyiewo ni. Jatend Leadrat ng’iyo wachno - rito mari bedo e kabedo nyaka gikaw okang’.",
+    "booking": "Buk",
+    "commission": "Komison",
+    "notBooked": "Ok ondiki",
+    "cancelledOn": "Ne ogol e {{date}} .",
+    "cancelReason": "Gimomiyo: {{reason}}",
+    "cancelledHint": "Jagedo noweyo ng'iewo ot - wuon ot oseduokore kodi kendo ratiro mar yudo komison oseket oko. Odwoko ka ng’at ma otelo osebook kendo."
   },
   "referral": {
     "NOT_REFERRED": "Ok oter (onge chenro)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Jagedo noyie gi ng'at mane oorone",
       "REFERRAL_REJECTED": "Jagedo nodagi ng’ado burano. Gimomiyo: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin nogolo arita maromre mapiyo. Gimomiyo: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Jatend piny noloko nying’ kowuok e {{from}} nyaka {{to}} . Gimomiyo: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Jatend piny noloko nying’ kowuok e {{from}} nyaka {{to}} . Gimomiyo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Tem mar ndiko nying’ mar jaoda machielo ne ok oyie",
+      "BOOKING_CANCELLED": "Ne okethore ng’ado thuolo. Gimomiyo: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Owruok mar tich noduok ne jawete",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ochungi bedo gi ratiro mar yudo komison bang' ng'ado buo",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Odwoko ratiro mar yudo komison mar ng'iewo thuolo manyien",
+      "OWNERSHIP_DISPUTE_RAISED": "Jahera machielo nokwedo wuon janyiewo ni - jatend Leadrat biro nono wachno",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Ywak mar wuon japur ni ne ogol oko - wuon mari ok oloki",
+      "OWNERSHIP_DISPUTE_UPHELD": "Ywak mar wuon gi janyiewo ni ne otimne nonro - wuon mari oyangore",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Ne ondiki bang’ ka ywak mari mar bedo wuon ot osetimre maber. Par: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Chik ma rito ne otieko: ne ong’ad bura e wi wach mar bedo gi mwandu ma ne ochung’ ne ng’at machielo ma ne odhi loso gi ng’at machielo. Par: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Namba mar simu ni ok owinjore ne {{country}} .",
     "COUNTRY_MISMATCH": "Yie kod mar piny ma owinjore.",
     "NOT_MOBILE": "Yie mondo iket namba mar simu, to ok mar simu ma itiyogo."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komison owinjore",
+      "PENDING": "Komison pod rito",
+      "CANCELLED": "Komison ogol oko"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Oket kuomi",
+      "DISPUTED": "Oketo ywak kuom weche mag ng'ado bura"
+    }
+  },
+  "result": {
+    "none": "Onge duoko mar ndiko nying’ ma ibiro nyiso. Inyalo ndiko nying’ mar ng’at ma biro telo mokuongo.",
+    "acceptedTitle": "Jotelo osendiki nyinge",
+    "rejectedTitle": "Lead pok ondik nyinge",
+    "protectionWindow": "Dirisa mar Rieko",
+    "protectedUntil": "Oriti nyaka",
+    "openLead": "Yawo Otelo",
+    "addAnother": "Med Jatelo Machielo",
+    "duplicate": "Duplikat - oseriti",
+    "duplicateHint": "Kastoma ni osebedo ka orite kuom chenro ni kuom ndiko machielo, omiyo ne ok onyal ndiko nyinge kuomi.",
+    "existingProtectedUntil": "Rejistreson ma osebedo ka nitie oriti nyaka"
+  },
+  "disputes": {
+    "title": "Ywak maga",
+    "intro": "Ywak mag wuon mwandu ma ne iketo ne jonyiewo ma ne odagi kaka dupliket. Jatend Leadrat nono ng’ato ka ng’ato kuomgi.",
+    "empty": "Ne ok okelo ywak moro amora. Kapo ni kasitoma ma ne ikelo odagi kaka kopi, inyalo ng’ado bura kuom duoko mar ndiko nying’.",
+    "columns": {
+      "dispute": "Dhawo",
+      "reason": "Gimomiyo",
+      "outcome": "Gima otimore e giko mar gimoro"
+    },
+    "status": {
+      "OPEN": "E bwo nonro",
+      "UPHELD": "Ok en e ber mari",
+      "OVERTURNED": "Ne ong’ado wach maber kuomi",
+      "WITHDRAWN": "Ogol oko"
+    },
+    "awaitingReview": "Arito paro mar admin",
+    "openNewLead": "Yar jotelo mari {{id}}",
+    "withdraw": "Golo",
+    "withdrawConfirm": "Gol oko ywak mari kuom {{name}} ? Owruok ma sani nitie pod odong’ kaka en.",
+    "raise": "Weche mag wuon weche",
+    "raiseTitle": "Weche mag wuon weche",
+    "raiseHint": "Kapo ni kasitoma no nobiro iri mokwongo, lere gimomiyo. Jatend Leadrat biro nono wachno; ka gikawo okang’ ma dhi maber kodi, lead ondiki ni in.",
+    "reasonLabel": "Ang’o momiyo kasitoma ni en mari?",
+    "reasonMin_one": "Kaka {{count}} kido.",
+    "reasonMin_other": "Kaka {{count}} weche.",
+    "submit": "Ooro ywak",
+    "notProtected": "Onge ng’at ma nigi arita kuom janyiewo ni kuom chenro ni kendo - inyalo ndiko nying’ ng’at ma tayo sani.",
+    "raised": "Ywak {{id}} ooro mondo otimne nonro.",
+    "viewAll": "Neno ywak maga"
+  },
+  "dashboard": {
+    "title": "Dasbod",
+    "period": "Kinde",
+    "lastDays_one": "{{count}} odiechieng'",
+    "lastDays_other": "{{count}} ndalo",
+    "emptyTitle": "Machiegni! Onge ng’at ma nyalo konyi nyaka sani.",
+    "emptyHint": "Ndik nying’ ng’at ma ibiro telo mokwongo - paip mari, ng’ado buo kod ndalo mag rito biro nyisore kae.",
+    "tiles": {
+      "leads": "Kwan duto mar jotelo",
+      "newInPeriod_one": "{{count}} manyien e kindeni",
+      "newInPeriod_other": "{{count}} manyien e kindeni",
+      "accepted": "Oyie",
+      "booked": "Oketi",
+      "bookedInPeriod_one": "{{count}} osebuki e kindeni",
+      "bookedInPeriod_other": "{{count}} osebuki e kindeni",
+      "conversion": "Loki",
+      "conversionHint": "Jotelo ma ondiki kaka pok mar jotelo ma oyiego",
+      "protectedNow": "Oriti sani",
+      "expiringSoon_one": "Rieko ma rumo e {{count}} odiechieng'",
+      "expiringSoon_other": "Rito ma rumo e {{count}} ndalo",
+      "disputedNow": "Okwedo gi jomoko",
+      "disputedNowHint": "Jotelo mari gi ywak maler mar wuon wuon gik moko kowuok kuom jaoda machielo",
+      "commissionEligible": "Komison owinjore",
+      "commissionCancelled_one": "{{count}} ogol oko",
+      "commissionCancelled_other": "{{count}} ogol oko"
+    },
+    "chart": {
+      "title_one": "Ndiko nying’ kod ng’ado thuolo e odiechieng’ - odiechieng’ mogik {{count}}",
+      "title_other": "Ndiko nying’ kod ng’ado thuolo e odiechieng’ achiel - ndalo mogik {{count}}",
+      "registrations": "Ndiko",
+      "bookings": "Buk"
+    },
+    "byStage": "Otelo kaluwore gi chal",
+    "bySource": "Otelo kaluwore gi kama owuokie",
+    "byReferral": "Otelo kaluwore gi chal mar oro",
+    "myDisputes": "Ywak ma ne ikelo",
+    "noDisputes": "Onge ywak ma ne okelo.",
+    "unknown": "Ok oket",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM ma oko (otimre)",
+      "PARTNER_CRM": "Omedore gi timbeu",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Riwruok",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Chik ma rito biro rumo e odiechieng’ mabiro {{count}}",
+    "expiringTitle_other": "Chik ma rito biro rumo e odiochienge mabiro {{count}}",
+    "expiringEmpty": "Onge lead ma wito rito mare e dirisani."
   }
 }

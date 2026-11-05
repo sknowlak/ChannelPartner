@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Kwalifiseer",
-    "PENDING": "Hangende"
+    "PENDING": "Hangende",
+    "CANCELLED": "Gekanselleer"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Laat duplikaatbeskerming vroeg vry",
-    "REASSIGN_PARTNER": "Herken dit aan 'n ander maat"
+    "REASSIGN_PARTNER": "Herken dit aan 'n ander maat",
+    "CANCEL_BOOKING": "Kanselleer bespreking"
   },
   "dataType": {
     "TEXT": "Teks",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super Admin",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Bevestig",
+    "CANCELLED": "Gekanselleer"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Toegeskryf",
+    "DISPUTED": "Betwis"
+  },
+  "disputeStatus": {
+    "OPEN": "Maak oop",
+    "UPHELD": "Gehandhaaf",
+    "OVERTURNED": "Omgekeer",
+    "WITHDRAWN": "Onttrek"
   }
 }

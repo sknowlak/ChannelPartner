@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Dɛn dɔn buk am",
-    "pending": "De wet"
+    "pending": "De wet",
+    "status": {
+      "CONFIRMED": "Dɛn dɔn buk am",
+      "CANCELLED": "Dɛn dɔn kansel di bukin"
+    }
   },
   "assign": {
     "unassigned": "Dɛn nɔ gi am di wok",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "No projɛkt yet (nɔ rifer am)",
-    "notInList": "{{project}} (nɔ de na di projɛkt list)"
+    "notInList": "{{project}} (nɔ de na di projɛkt list)",
+    "protectionDays_one": "{{count}} -de protɛkshɔn",
+    "protectionDays_other": "{{count}} -de protɛkshɔn"
   },
   "journey": {
     "customer": "Kɔstɔma",
@@ -76,7 +82,14 @@
     "progressHistory": "Istri bɔt di prɔgrɛs",
     "timesIn": "(tɛm dɛn na {{timezone}} )",
     "backToMyLeads": "Bak to Mi Lid dɛn",
-    "editLead": "Ɛdit Lid"
+    "editLead": "Ɛdit Lid",
+    "disputeBanner": "Wan ɔda patna dɔn agyu bɔt udat gɛt dis kɔstɔma. Wan Leadrat admin de rivyu am - yu protɛkshɔn de de te dɛn disayd.",
+    "booking": "Fɔ buk",
+    "commission": "Wok",
+    "notBooked": "Nɔ buk",
+    "cancelledOn": "Dɛn kin kansel am pan {{date}} .",
+    "cancelReason": "Rizin: {{reason}}",
+    "cancelledHint": "Di bilda kansel di bukin - di opareshɔnal ɔnaship dɔn kam bak wit yu ɛn di kɔmishɔn ɛligibiliti dɔn kansel. I kin kam bak if dɛn buk di lid bak."
   },
   "referral": {
     "NOT_REFERRED": "Nɔ rifer (nɔ gɛt prɔjek) .",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Bilda bin aksept di riferal",
       "REFERRAL_REJECTED": "Builder nɔ bin gri fɔ tek di riferal. Rizin: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin bin rilis dupliket protɛkshɔn ali. Rizin: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin riasayn rɛjista frɔm {{from}} to {{to}} . Rizin: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin riasayn rɛjista frɔm {{from}} to {{to}} . Rizin: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Wan dupliket rɛjista we ɔda patna bin tray fɔ rɛjista nɔ bin gri",
+      "BOOKING_CANCELLED": "Dɛn dɔn kansel di bukin. Rizin: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Opareshɔnal ɔnaship bin kam bak to di patna",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kɔmishɔn ɛligibiliti kansel wit di bukin",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kɔmishɔn ɛligibiliti dɔn kam bak fɔ di nyu bukin",
+      "OWNERSHIP_DISPUTE_RAISED": "Wan ɔda patna bin dispyut ɔnaship fɔ dis kɔstɔma - wan Leadrat admin go rivyu am",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Dɛn pul di ɔnaship dispyut pan dis kɔstɔma - yu ɔnaship nɔ chenj",
+      "OWNERSHIP_DISPUTE_UPHELD": "Dɛn bin rivyu di ɔnaship dispyut pan dis kɔstɔma - dɛn dɔn kɔnfyus yu ɔnaship",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Dɛn rɛjista afta dɛn dɔn disayd fɔ yu ɔnaship dispyut fɔ yu. Notis: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Protɛkshɔn dɔn: dɛn disayd fɔ gɛt ɔnaship dispyut fɔ ɔda patna. Notis: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Dis fon nɔmba nɔ valid fɔ {{country}} .",
     "COUNTRY_MISMATCH": "Duya pik di kɔrɛkt kɔntri kɔd.",
     "NOT_MOBILE": "Duya, rayt mobayl nɔmba, nɔto landlayn."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Kɔmishɔn we fit fɔ gɛt",
+      "PENDING": "Kɔmishɔn de wet",
+      "CANCELLED": "Kɔmishɔn dɔn kansel"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Dɛn se na yu rayt am",
+      "DISPUTED": "Atribiushɔn we dɛn bin de agyu bɔt"
+    }
+  },
+  "result": {
+    "none": "No rɛjista rizɔlt fɔ sho. Rɛjista wan lid fɔs.",
+    "acceptedTitle": "Lid we dɛn dɔn rɛjista",
+    "rejectedTitle": "Lid nɔ rɛjista",
+    "protectionWindow": "Windo we de protɛkt pɔsin",
+    "protectedUntil": "Protɛkt Te",
+    "openLead": "Opin Lid",
+    "addAnother": "Ad Wan Ɔda Lid",
+    "duplicate": "Dupliket - dɛn dɔn ɔlrɛdi protɛkt am",
+    "duplicateHint": "Dis kɔstɔma dɔn ɔlrɛdi protɛkt fɔ dis prɔjek bay ɔda rɛjista, so dɛn nɔ bin ebul fɔ rɛjista am fɔ yu.",
+    "existingProtectedUntil": "Di rɛjista we dɔn de, dɛn protɛkt am te"
+  },
+  "disputes": {
+    "title": "Mi Disput dɛn",
+    "intro": "Ɔnaship dispyut dɛn we yu rayz fɔ kɔstɔma dɛn we dɛn nɔ gri fɔ bi dupliket. Wan Leadrat admin de rivyu ɛni wan pan dɛn.",
+    "empty": "Yu nɔ rayz ɛni agyumɛnt. If dɛn nɔ gri fɔ tek wan kɔstɔma we yu briŋ kam as dupliket, yu kin agyu bɔt am frɔm di rɛjista rizɔlt.",
+    "columns": {
+      "dispute": "Cham-mɔt",
+      "reason": "Yu rizin",
+      "outcome": "Rizɔlt"
+    },
+    "status": {
+      "OPEN": "Ɔnda rivyu",
+      "UPHELD": "Nɔto fɔ yu",
+      "OVERTURNED": "Disid in yu favɔ",
+      "WITHDRAWN": "Dɛn dɔn pul am kɔmɔt"
+    },
+    "awaitingReview": "Wet fɔ admin rivyu",
+    "openNewLead": "Opin yu lid {{id}}",
+    "withdraw": "Pul an pan",
+    "withdrawConfirm": "Witdraw yu dispyut fɔ {{name}} ? Di ɔna we de naw de kɔntinyu fɔ de lɛk aw i de.",
+    "raise": "Disput ɔnaship",
+    "raiseTitle": "Disput ɔnaship",
+    "raiseHint": "If dis kɔstɔma kam to yu fɔs, ɛksplen wetin mek. Wan Leadrat admin go rivyu am; if dɛn disayd fɔ yu, dɛn kin rɛjista di lida fɔ yu.",
+    "reasonLabel": "Wetin mek dis kɔstɔma na yu yon?",
+    "reasonMin_one": "At least {{count}} karakta.",
+    "reasonMin_other": "At least {{count}} karakta dɛn.",
+    "submit": "Send Disput we dɛn de mek",
+    "notProtected": "Nɔbɔdi nɔ de ol protɛkshɔn pan dis kɔstɔma fɔ dis prɔjek igen - yu kin rɛjista di lida naw.",
+    "raised": "Disput {{id}} we dɛn sɛn fɔ rivyu.",
+    "viewAll": "Luk di prɔblɛm dɛn we a gɛt"
+  },
+  "dashboard": {
+    "title": "Dashbɔd we dɛn kɔl",
+    "period": "Tɛm",
+    "lastDays_one": "{{count}} de",
+    "lastDays_other": "{{count}} dez",
+    "emptyTitle": "Wɛlkɔm! Yu nɔ gɛt ɛni lid yet.",
+    "emptyHint": "Rɛjista yu fɔs lida - yu paip, bukin ɛn protɛkshɔn dedlayn go sho ya.",
+    "tiles": {
+      "leads": "Tɔtɔl lid dɛn",
+      "newInPeriod_one": "{{count}} nyu insay dis tɛm",
+      "newInPeriod_other": "{{count}} nyu insay dis tɛm",
+      "accepted": "Dɛn kin aksept am",
+      "booked": "Dɛn dɔn buk am",
+      "bookedInPeriod_one": "{{count}} buk insay dis tɛm",
+      "bookedInPeriod_other": "{{count}} buk insay dis tɛm",
+      "conversion": "Kɔnvɛnshɔn",
+      "conversionHint": "Buk lida dɛn as shea pan di lida dɛn we dɛn aksept",
+      "protectedNow": "Protekt naw",
+      "expiringSoon_one": "Protekshɔn we de dɔn insay {{count}} de",
+      "expiringSoon_other": "Protekshɔn we de dɔn insay {{count}} dez",
+      "disputedNow": "Ɔda pipul dɛn kin agyu bɔt am",
+      "disputedNowHint": "Yu de lid wit wan opin ɔnaship dispyut frɔm ɔda patna",
+      "commissionEligible": "Kɔmishɔn we fit fɔ gɛt",
+      "commissionCancelled_one": "{{count}} dɔn kansel",
+      "commissionCancelled_other": "{{count}} dɔn kansel"
+    },
+    "chart": {
+      "title_one": "Rejista ɛn bukin fɔ wan de - las {{count}} de",
+      "title_other": "Rejista ɛn bukin fɔ wan de - las {{count}} dez",
+      "registrations": "Di we aw dɛn kin rɛjista",
+      "bookings": "Bukin dɛn"
+    },
+    "byStage": "Lid bay di stetɔs",
+    "bySource": "Lid bay di say we i kɔmɔt",
+    "byReferral": "Lid bay di riferal stetɔs",
+    "myDisputes": "Disput dɛn we yu bin rayz",
+    "noDisputes": "Nɔ agyumɛnt nɔ bin de.",
+    "unknown": "Nɔto we dɛn dɔn sɛt",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Ekstanshal CRM (simul) .",
+      "PARTNER_CRM": "Na yu tim ad am",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integreshɔn",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Protɛkshɔn we de dɔn insay di nɛks {{count}} de",
+    "expiringTitle_other": "Protɛkshɔn we de dɔn insay di nɛks {{count}} dez",
+    "expiringEmpty": "No lid nɔ de lɔs in protɛkshɔn na dis winda."
   }
 }

@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Domma ipesan",
-    "pending": "Lang saud"
+    "pending": "Lang saud",
+    "status": {
+      "CONFIRMED": "Domma ipesan",
+      "CANCELLED": "Pemesanan ibatasi"
+    }
   },
   "assign": {
     "unassigned": "Lang itugaskon",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Lang dong ope proyek (lang i rujuk)",
-    "notInList": "{{project}} (lang dong bani daftar proyek)"
+    "notInList": "{{project}} (lang dong bani daftar proyek)",
+    "protectionDays_one": "{{count}} -ari perlindungan",
+    "protectionDays_other": "{{count}} -ari perlindungan"
   },
   "journey": {
     "customer": "Pamboli",
@@ -76,7 +82,14 @@
     "progressHistory": "Sejarah Kemajuan",
     "timesIn": "(panorang ibagas {{timezone}} )",
     "backToMyLeads": "Mulak hubani Pambobaihu",
-    "editLead": "Sunting Pimpinan"
+    "editLead": "Sunting Pimpinan",
+    "disputeBanner": "Mitra na legan domma manlawan kepemilikan ni pelanggan on. Sada admin Leadrat mantinjau ai - perlindungan nassiam totap do i ianan ni ronsi sidea mamutuskon.",
+    "booking": "Pemesanan",
+    "commission": "Komisi",
+    "notBooked": "Lang ipesan",
+    "cancelledOn": "Ibatalhon bani {{date}} .",
+    "cancelReason": "Alasan: {{reason}}",
+    "cancelledHint": "Tukang mambatalhon pemesanan - kepemilikan operasional domma mulak hubani nassiam pakon kelayakan komisi domma ibatasi. Iulakkon do ai anggo lead ai ipesan use."
   },
   "referral": {
     "NOT_REFERRED": "Lang i rujuk (lang dong proyek)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Tukang manjalo rujukan ai",
       "REFERRAL_REJECTED": "Tukang bangunan manolak rujukan ai. Alasan: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin padaskon perlindungan duplikat humbani mungkahni. Alasan: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin mambahen pendaftaran use humbani {{from}} hu {{to}} . Alasan: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin mambahen pendaftaran use humbani {{from}} hu {{to}} . Alasan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Upaya pendaftaran duplikat humbani mitra na legan itulak",
+      "BOOKING_CANCELLED": "Pemesanan ibatasi. Alasan: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Kepemilikan operasional iulakkon hubani mitra",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kelayakan komisi ibatasi pakon pemesanan",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kelayakan komisi iulakkon bani pemesanan na baru",
+      "OWNERSHIP_DISPUTE_RAISED": "Mitra na legan manlawan kepemilikan ni pelanggan on - admin Leadrat do na mantinjau ai",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Parsalisihan kepemilikan bani pelanggan on domma itarik - kepemilikan nassiam lang marubah",
+      "OWNERSHIP_DISPUTE_UPHELD": "Parsalisihan kepemilikan bani pelanggan on domma ipareksa - kepemilikan nassiam domma isahkon",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Idaftarhon dobkonsi parsalisihan kepemilikan nassiam iputushon na mendukung nassiam. Catatan: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Perlindungan berakhir: sada parsalisihan kepemilikan iputushon mendukung mitra na legan. Catatan: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Nomor telepon on lang sah bani {{country}} .",
     "COUNTRY_MISMATCH": "Pilih ma kode negara na sintong.",
     "NOT_MOBILE": "Masukkon ma nomor handphone, lang nomor darat."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisi na talup",
+      "PENDING": "Komisi na tartunda",
+      "CANCELLED": "Komisi ibatasi"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Ihubungkon hubani nasiam",
+      "DISPUTED": "Atribusi na iparsoalhon"
+    }
+  },
+  "result": {
+    "none": "Lang dong hasil pendaftaran na laho ipatuduh. Daftarhon ma lobei sada lead.",
+    "acceptedTitle": "Lead na tardaftar",
+    "rejectedTitle": "Lead lang terdaftar",
+    "protectionWindow": "Jendela Perlindungan",
+    "protectedUntil": "Ilindungi das hubani",
+    "openLead": "Buka Pimpinan",
+    "addAnother": "Tambahkon Lead na legan",
+    "duplicate": "Duplikat - domma ilindungi",
+    "duplicateHint": "Pelanggan on domma ilindungi bani proyek on marhitei pendaftaran na legan, jadi lang boi i daftarhon bani nassiam.",
+    "existingProtectedUntil": "Pendaftaran na dong ijaga ronsi"
+  },
+  "disputes": {
+    "title": "Parsalisihanku",
+    "intro": "Parsalisihan kepemilikan na ipadas nassiam hubani pelanggan na itolak sebagai duplikat. Sada admin Leadrat mantinjau ganupan ai.",
+    "empty": "Lang dong parsalisihan na ibahen nasiam. Anggo dong pelanggan na iboan nassiam na lang ra gabe duplikat, boi do nassiam manlawan ai humbani hasil pendaftaran.",
+    "columns": {
+      "dispute": "Parmunsuhon",
+      "reason": "alasanmu",
+      "outcome": "Pandapotan"
+    },
+    "status": {
+      "OPEN": "Ibagas tinjauan",
+      "UPHELD": "Lang mendukung ham",
+      "OVERTURNED": "Iputuskon do ai bani nasiam",
+      "WITHDRAWN": "Itarik"
+    },
+    "awaitingReview": "Paimahon ulasan admin",
+    "openNewLead": "Buka ma lead nasiam {{id}}",
+    "withdraw": "Mambuat",
+    "withdrawConfirm": "Tarik ham ma parsalisihanmu pasal {{name}} ? Kepemilikan sonari totap do songon na adong.",
+    "raise": "Parsalisihan pasal kepemilikan",
+    "raiseTitle": "Parsalisihan pasal kepemilikan",
+    "raiseHint": "Anggo pelanggan on do na parlobei roh hu bamu, patorang ma mase. Admin Leadrat do na mantinjau ai; anggo sidea mamutuskon na mendukung ham, lead ai domma idaftarhon bamu.",
+    "reasonLabel": "Mase pelanggan on gabe milikmu?",
+    "reasonMin_one": "Saotikni {{count}} karakter.",
+    "reasonMin_other": "Saotikni {{count}} karakter.",
+    "submit": "Kirim Parsalisihan",
+    "notProtected": "Lang dong be na manlinggomi pelanggan on bani proyek on - boi do nassiam mandaftarhon prospek sonari.",
+    "raised": "Parsalisihan {{id}} itongos laho ipareksa.",
+    "viewAll": "Tonggor ma parsalisihanku"
+  },
+  "dashboard": {
+    "title": "Dasbor",
+    "period": "Masa",
+    "lastDays_one": "{{count}} ari",
+    "lastDays_other": "{{count}} ari",
+    "emptyTitle": "Selamat datang! Lang dong ope petunjuk bamu.",
+    "emptyHint": "Daftarhon ma prospek na parlobei - pipeline, pemesanan pakon deadline perlindungan nassiam taridah ijon.",
+    "tiles": {
+      "leads": "Total prospek",
+      "newInPeriod_one": "{{count}} na baru bani periode on",
+      "newInPeriod_other": "{{count}} na baru bani periode on",
+      "accepted": "Ijalo",
+      "booked": "Domma ipesan",
+      "bookedInPeriod_one": "{{count}} ipesan bani periode on",
+      "bookedInPeriod_other": "{{count}} ipesan bani periode on",
+      "conversion": "Parubahan",
+      "conversionHint": "Lead na dob ipesan sebagai bagian humbani lead na dob ijalo",
+      "protectedNow": "Ilindungi sonari",
+      "expiringSoon_one": "Parlinggoman marujung bani {{count}} ari",
+      "expiringSoon_other": "Parlinggoman marujung bani {{count}} ari",
+      "disputedNow": "Iparsoalhon halak na legan",
+      "disputedNowHint": "Pimpinan nassiam marhiteihon parsalisihan kepemilikan na terbuka humbani mitra na legan",
+      "commissionEligible": "Komisi na talup",
+      "commissionCancelled_one": "{{count}} ibatasi",
+      "commissionCancelled_other": "{{count}} ibatasi"
+    },
+    "chart": {
+      "title_one": "Pendaftaran pakon pemesanan per ari - {{count}} ari terakhir",
+      "title_other": "Pendaftaran pakon pemesanan per hari - {{count}} ari terakhir",
+      "registrations": "Pendaftaran",
+      "bookings": "Pemesanan"
+    },
+    "byStage": "Mambobahon mangihutkon status",
+    "bySource": "Mambobai humbani sumber",
+    "byReferral": "Mambobai mangihutkon status rujukan",
+    "myDisputes": "Parsalisihan na ipajongjong nasiam",
+    "noDisputes": "Lang dong parsalisihan na ipajongjong.",
+    "unknown": "Lang iatur",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM eksternal (isimulasi)",
+      "PARTNER_CRM": "Itambahkon tim nassiam",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integrasi",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Perlindungan berakhir bani {{count}} ari na mangihut",
+    "expiringTitle_other": "Perlindungan berakhir bani {{count}} ari na mangihut",
+    "expiringEmpty": "Lang dong timah na magou perlindunganni i jendela on."
   }
 }

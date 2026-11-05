@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "me-book na",
-    "pending": "E tapus"
+    "pending": "E tapus",
+    "status": {
+      "CONFIRMED": "me-book na",
+      "CANCELLED": "Kanseladu ya ing booking"
+    }
   },
   "assign": {
     "unassigned": "E miyabe",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Ala pang proyektu (e mipabalu)",
-    "notInList": "{{project}} (ali ya keng listahan ning proyektu)"
+    "notInList": "{{project}} (ali ya keng listahan ning proyektu)",
+    "protectionDays_one": "{{count}} -day proteksyun",
+    "protectionDays_other": "{{count}} -day proteksyun"
   },
   "journey": {
     "customer": "Suki",
@@ -76,7 +82,14 @@
     "progressHistory": "Kasaysayan ning Panyulung",
     "timesIn": "(times in {{timezone}} )",
     "backToMyLeads": "mibalik ku kareng leads ku",
-    "editLead": "I-edit ing Lead"
+    "editLead": "I-edit ing Lead",
+    "disputeBanner": "Atin pang metung a partner a makipaglaban keng pamanyakup na niting customer. Ing Leadrat admin magreview ya - ing kekang proteksyun manatili ya keng lugal na anggang e la magdesisyun.",
+    "booking": "Booking",
+    "commission": "Pampamulan",
+    "notBooked": "Eku me-book",
+    "cancelledOn": "Mekansela ya keng {{date}} .",
+    "cancelReason": "sangkan: {{reason}}",
+    "cancelledHint": "Ing builder kinansela ne ing booking - ing operational ownership mibalik ya keka at ing commission eligibility mekansela ya. Mibalik ya nung ing lead mi-book yang pasibayu."
   },
   "referral": {
     "NOT_REFERRED": "E ya mipabalu (ala yang proyektu)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "tinggap ne ning builder ing referral",
       "REFERRAL_REJECTED": "E na builder ing referral. sangkan: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin pepalwal na ing duplicate protection maaga. sangkan: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Ing admin binili ne ing pamagrehistru manibat {{from}} papunta {{to}} . sangkan: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Ing admin binili ne ing pamagrehistru manibat {{from}} papunta {{to}} . sangkan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ing duplicate registration attempt ning aliwang partner me-reject ya",
+      "BOOKING_CANCELLED": "Kanseladu ing booking. sangkan: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ing pamag-ari king operasyun mibalik ya king partner",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ing karapatan keng komisyun mekansela ya keng booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Mibalik ing karapatan keng komisyun para keng bayung booking",
+      "OWNERSHIP_DISPUTE_RAISED": "Ing metung pang partner linaban ya keng pamanyakup na niting customer - ing Leadrat admin ing magreview kaniti",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Ing pamisalangsangan king pamanyakup king customer ayni mebawi ya - ing kekang pamanyakup e ya mibayu",
+      "OWNERSHIP_DISPUTE_UPHELD": "Ing pamipatepate king pamanyakup king customer ayni me-review ya - ing kekang pamanyakup mekumpirma ya",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "me-register ya kaybat ing kekang pamipatepate keng pamanyakup me-desisyun ya para keka. Tandanan: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Meyari ing proteksyun: ing pamipatepate king pamanyakup meyari ya pabor king aliwang partner. Tandanan: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "E ya validu ing bilang a ini ning teleponu para king {{country}} .",
     "COUNTRY_MISMATCH": "Pakipili me ing ustung code ning bangsa.",
     "NOT_MOBILE": "Mag mobile number kayu, ali landline."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "karapatdapat keng komisyun",
+      "PENDING": "Pending ing komisyun",
+      "CANCELLED": "Kanseladu ing komisyun"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Iugne na keka",
+      "DISPUTED": "Attribution disputed"
+    }
+  },
+  "result": {
+    "none": "Ala yang resulta ning pamagrehistru. Magrehistru kang lead muna.",
+    "acceptedTitle": "Lead registered",
+    "rejectedTitle": "E ya merehistru ing lead",
+    "protectionWindow": "Bintana ning Proteksyun",
+    "protectedUntil": "Protektadu anggang",
+    "openLead": "Open Lead",
+    "addAnother": "Dagdagan me ing aliwang lead",
+    "duplicate": "Duplicate - protektadu na",
+    "duplicateHint": "Ing customer ayni protektadu ne para kening proyektu kapamilatan ning aliwang registration, inya e ya malyaring i-register para keka.",
+    "existingProtectedUntil": "Ing existing registration protektadu ya anggang"
+  },
+  "disputes": {
+    "title": "Deng kanakung pamipatepate",
+    "intro": "Deng pamipatepate keng pamanyakup a pepalwal mu para kareng customer na e metanggap bilang duplicate. Ing Leadrat admin magreview ya balang metung.",
+    "empty": "Ala kang pepalwal a pamipatepate. nung ing metung a customer a dela mu e ya metanggap bilang duplicate, malyari meng i-dispute ibat keng resulta ning pamagrehistru.",
+    "columns": {
+      "dispute": "Tatua",
+      "reason": "Ing dahilan mu",
+      "outcome": "Kelabasan"
+    },
+    "status": {
+      "OPEN": "Lalam ning pamagrepasu",
+      "UPHELD": "ali ya pabor keka",
+      "OVERTURNED": "Megdesisyun kung pabor keka",
+      "WITHDRAWN": "Mebawi ya"
+    },
+    "awaitingReview": "manaya keng admin review",
+    "openNewLead": "buklat me ing lead mu {{id}}",
+    "withdraw": "Murung",
+    "withdrawConfirm": "Ibawi me ing kekang pamipatepate para keng {{name}} ? Ing kasalukuyan a pamanyakup manatili ya nung makananu ya.",
+    "raise": "Pamipatepate king pamanyakup",
+    "raiseTitle": "Pamipatepate king pamanyakup",
+    "raiseHint": "nung ining customer minunang dinatang keka, ipaliwanag mu nung bakit. Ing Leadrat admin ing magreview kaniti; nung magdesisyun lang pabor keka, ing lead makalista ya para keka.",
+    "reasonLabel": "bakit keka ya ining suki?",
+    "reasonMin_one": "At least {{count}} character.",
+    "reasonMin_other": "E mu ditak a {{count}} a letra.",
+    "submit": "Magpadala yang pamipatepate",
+    "notProtected": "Ala nang tatalan proteksyun keng customer ayni para kening proyektu - malyari meng irehistro ing lead ngeni.",
+    "raised": "Ing pamisalangsangan {{id}} peparala ya para king pamagrepasu.",
+    "viewAll": "lawan mu ing kanakung pamipatepate"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Tulduk",
+    "lastDays_one": "{{count}} aldo",
+    "lastDays_other": "{{count}} aldo",
+    "emptyTitle": "Salangi! Ala kang lead pa.",
+    "emptyHint": "I-register me ing mumunang lead mu - ing kekang pipeline, bookings ampo deadlines ning proteksyun mipalabas la keni.",
+    "tiles": {
+      "leads": "Kabuuang lead",
+      "newInPeriod_one": "{{count}} bayu keng panaun ayni",
+      "newInPeriod_other": "{{count}} bayu keng panaun ayni",
+      "accepted": "tinggap",
+      "booked": "me-book na",
+      "bookedInPeriod_one": "{{count}} me-book ya keng period ayni",
+      "bookedInPeriod_other": "{{count}} me-book ya keng period ayni",
+      "conversion": "Pamagbayu",
+      "conversionHint": "Me-book a lead bilang dake da reng tinggap a lead",
+      "protectedNow": "Protektadu na ngeni",
+      "expiringSoon_one": "Proteksyun mapupus ya keng {{count}} aldo",
+      "expiringSoon_other": "Proteksyun mapupus ya keng {{count}} aldo",
+      "disputedNow": "Mipapagsalita la reng aliwa",
+      "disputedNowHint": "Ing kekang lead keng open ownership dispute ibat keng aliwang partner",
+      "commissionEligible": "karapatdapat keng komisyun",
+      "commissionCancelled_one": "{{count}} mekansela ya",
+      "commissionCancelled_other": "{{count}} mekansela ya"
+    },
+    "chart": {
+      "title_one": "Registrations ampo bookings balang aldo - tauling {{count}} aldo",
+      "title_other": "Registrations ampo bookings balang aldo - tauling {{count}} aldo",
+      "registrations": "Registrations",
+      "bookings": "Bookings"
+    },
+    "byStage": "manimuna ya keng katayuan",
+    "bySource": "manimuna keng panibatan",
+    "byReferral": "Leads by referral status",
+    "myDisputes": "Ding pamipatepate a pepalwal mu",
+    "noDisputes": "alang pamipatepate.",
+    "unknown": "E ya mitakda",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "External CRM (simulated)",
+      "PARTNER_CRM": "Dinagdag ne ning kekang grupu",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Pamisanmetung",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Ing proteksyun mawawala ya keng tutuking {{count}} aldo",
+    "expiringTitle_other": "Ing proteksyun mapupus ya keng tutuking {{count}} aldo",
+    "expiringEmpty": "alang lead a mawawala keng proteksyun na keng bintana ayni."
   }
 }

@@ -49,8 +49,73 @@
       "newPartnerId": "Nou ID de soci",
       "reason": "Motiu (obligatori)",
       "apply": "Aplica l'anul·lació",
-      "applying": "S'està aplicant..."
+      "applying": "S'està aplicant...",
+      "cancelBookingHint": "La cancel·lació marca la reserva i la seva comissió com a cancel·lada, retorna la propietat operativa al soci i permet que el constructor torni a reservar aquesta oportunitat.",
+      "cancelBookingConfirm": "Cancel·lar aquesta reserva? També es cancel·la la seva comissió. Això està registrat amb el vostre nom i motiu."
     },
-    "timelineTitle": "Cronologia de l'auditoria (aquest registre)"
+    "timelineTitle": "Cronologia de l'auditoria (aquest registre)",
+    "bookingStatus": "Estat de la reserva",
+    "commissionAttribution": "Comissió d'atribució",
+    "disputeOpen": "Hi ha obert un conflicte de propietat sobre aquest client; un altre soci diu que és seu. Es decideix a la pàgina de Conflictes.",
+    "viewDisputes": "Veure disputes",
+    "cancellation": {
+      "title": "Reserva cancel·lada",
+      "hint": "S'anul·len la reserva i la seva comissió; La propietat operativa ha tornat amb el soci i el constructor pot tornar a reservar aquest avantatge.",
+      "at": "Cancel·lat a les",
+      "by": "Cancel·lat per",
+      "reason": "Raó"
+    }
+  },
+  "disputes": {
+    "title": "Conflictes de titularitat",
+    "hint": "Un soci el registre del qual s'ha rebutjat com a duplicat pot disputar qui és el propietari del client. Revisa ambdues parts i decideix.",
+    "statusFilter": "Estat de la disputa",
+    "allStatuses": "Tots els estats",
+    "empty": "No hi ha disputes amb aquest estat.",
+    "columns": {
+      "dispute": "Disputa",
+      "customer": "Client",
+      "project": "Projecte",
+      "raisedBy": "Criat per",
+      "heldBy": "Propietari actual",
+      "status": "Estat",
+      "raisedAt": "Criat en"
+    },
+    "detail": {
+      "title": "Disputa {{id}}",
+      "raisedOn": "Criat {{date}}",
+      "raisingTitle": "Criat per",
+      "holderTitle": "Propietari actual",
+      "partner": "Soci",
+      "raisedBy": "Presentat per",
+      "customerName": "Client",
+      "mobile": "Mòbil",
+      "alternateMobile": "Mòbil alternatiu",
+      "email": "Correu electrònic",
+      "project": "Projecte",
+      "reason": "La seva raó",
+      "registration": "Inscripció",
+      "registeredAt": "Registrat a",
+      "referral": "Referència",
+      "heldMissing": "No s'ha pogut trobar el registre retingut.",
+      "resolutionTitle": "Decisió",
+      "outcome": "Resultat",
+      "note": "Nota",
+      "decidedBy": "Decidit per",
+      "decidedAt": "Decidit",
+      "newRegistration": "Nova inscripció",
+      "decideTitle": "Decidiu aquesta disputa",
+      "noteLabel": "Nota que explica la decisió (obligatori)",
+      "noteRequired": "Escriu una nota per decidir.",
+      "uphold": "Mantenir",
+      "overturn": "bolcar",
+      "upholdEffect": "{{holder}} manté el client. La disputa està tancada i no canvia res més.",
+      "overturnEffect": "La protecció duplicada de {{holder}} acaba ara i el client està registrat per a {{partner}} com a registre nou.",
+      "heldBookedHelp": "Aquest client es reserva a través del propietari actual. Primer cancel·leu aquesta reserva (anul·lació de l'administrador al registre) i després anul·leu:",
+      "confirmTitle": "N'estàs segur?",
+      "confirmUphold": "Sí, mantén",
+      "confirmOverturn": "Sí, tombar",
+      "back": "Tornar a Disputes"
+    }
   }
 }

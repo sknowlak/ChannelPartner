@@ -30,7 +30,8 @@
       "registered": "Rajista tǝdǝna"
     },
     "booked": "Booktəna",
-    "empty": "Kuwa yayi referrals ba."
+    "empty": "Kuwa yayi referrals ba.",
+    "bookingCancelled": "Booking dafkada"
   },
   "detail": {
     "customer": "Luwayama",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Booking tawattəgəna.",
       "accepted": "Referral kasatkata.",
-      "rejected": "Referraldə waatə."
+      "rejected": "Referraldə waatə.",
+      "bookingCancelled": "Booking dǝga daftǝna."
     },
-    "backToReferrals": "Waltə Referralsro"
+    "backToReferrals": "Waltə Referralsro",
+    "bookingCancelled": "Booking dafkada",
+    "cancelBooking": "Booking dafne",
+    "cancelReasonLabel": "Dalil daftǝbe (kam gawilmadǝro fǝlezǝna) *",
+    "cancelBookingHint": "Kənganzə cidabedə gawilmadəro waljin kuru nəmzawalnza komishinbedə daftin. Lead də waltə dare booktin.",
+    "cancelBookingConfirm": "Booking dəga dabne"
   },
   "history": {
     "title": "Gargam",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Komishinbe raktǝnzǝ tǝdǝna",
       "HANDOVER_COMPLETED": "Handover tamotǝna",
       "ADMIN_PROTECTION_RELEASED": "Admin ye nzǝliwo indi datǝram lan kolzǝna. Dalil: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin ye waltə rajista {{from}} lan səta {{to}} ro kalaksəna. Dalil: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin ye waltə rajista {{from}} lan səta {{to}} ro kalaksəna. Dalil: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Rejista indi gawilma gadeye jarabtǝdǝ waada",
+      "BOOKING_CANCELLED": "Booking dǝga daftǝna. Dalil: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Kǝnga cidabe gawilmadǝro waltǝyin",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Nǝmngǝla komishinbedǝ dafkada",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Komishinbe raktǝnzǝ waltǝm gǝnatǝ bǝlinro"
     }
   }
 }

@@ -43,7 +43,9 @@
       "name": "Ishina",
       "city": "Umusumba",
       "status": "Imibele",
-      "actions": "Imilimo"
+      "actions": "Imilimo",
+      "protection": "Ukucingililwa ukwapalana",
+      "matchOn": "Ifyakubwekeshapo filapalana pa"
     },
     "closeReferrals": "Isaleni ku kutuma",
     "reopen": "Isuleni nakabili",
@@ -55,6 +57,25 @@
       "add": "Lundako Imilimo",
       "created": "Icapangwa {{name}} ."
     },
-    "back": "Ukubwelela ku Bakuula"
+    "back": "Ukubwelela ku Bakuula",
+    "protection": {
+      "days_one": "{{count}} ubushiku",
+      "days_other": "{{count}} inshiku",
+      "globalDays_one": "Icilangililo ca calo conse ( {{count}} ubushiku)",
+      "globalDays_other": "Icilangililo ca calo conse ( {{count}} inshiku)",
+      "globalDefault": "Icikomo ica calo conse",
+      "placeholder": "Inshiku sha bucingililo (ishabulamo = icalinga ica calo conse)",
+      "saved": "Ukucingililwa ukwabwekeshiwapo ukwa {{name}} .",
+      "hint": "Ukucingililwa ukwabili: Inshiku 1-3650, nangu ukusha ukwabulamo ukubomfya ifyakubalilapo ifya calo conse ukufuma ku Fibikilo. Ukupilibula kulabomba fye ku kulembwa ukupya - ukwaliko kale kulasunga ukupwa kwa iko."
+    },
+    "matching": {
+      "global": "Icikomo ica calo conse",
+      "globalWith": "Icilangililo ca calo conse ( {{fields}} )",
+      "mobile": "Namba ya foni",
+      "email": "Imeli",
+      "both": "Namba ya foni + imelo",
+      "saved": "Ukupalanya ukwabwekeshiwapo ukwa {{name}}",
+      "hint": "Ifishinka ifilenga ukulembesha kwabili ukuba kasitoma umo wine uwa mulimo. Ukupilibula kulabomba ku kuceeceeta kwabili ukufuma nomba; ukucingililwa ukwaliko takukuma."
+    }
   }
 }

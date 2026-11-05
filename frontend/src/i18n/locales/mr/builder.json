@@ -30,7 +30,8 @@
       "registered": "नोंदणीकृत"
     },
     "booked": "बुक केले",
-    "empty": "अद्याप कोणतेही संदर्भ नाहीत."
+    "empty": "अद्याप कोणतेही संदर्भ नाहीत.",
+    "bookingCancelled": "बुकिंग रद्द"
   },
   "detail": {
     "customer": "ग्राहक",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "बुकिंग निश्चित झाले.",
       "accepted": "रेफरल स्वीकारले.",
-      "rejected": "रेफरल नाकारले."
+      "rejected": "रेफरल नाकारले.",
+      "bookingCancelled": "बुकिंग रद्द केले."
     },
-    "backToReferrals": "संदर्भांकडे परत"
+    "backToReferrals": "संदर्भांकडे परत",
+    "bookingCancelled": "बुकिंग रद्द",
+    "cancelBooking": "बुकिंग रद्द करा",
+    "cancelReasonLabel": "रद्द करण्याचे कारण (भागीदाराला दाखवले आहे) *",
+    "cancelBookingHint": "ऑपरेशनल मालकी भागीदाराकडे परत जाते आणि त्यांची कमिशन पात्रता रद्द केली जाते. लीड नंतर पुन्हा बुक करता येईल.",
+    "cancelBookingConfirm": "बुकिंग रद्द करा"
   },
   "history": {
     "title": "इतिहास",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "आयोगाची पात्रता निर्माण केली",
       "HANDOVER_COMPLETED": "हस्तांतर पूर्ण झाले",
       "ADMIN_PROTECTION_RELEASED": "प्रशासकाने डुप्लिकेट संरक्षण लवकर सोडले. कारण: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "प्रशासकाने {{from}} पासून {{to}} पर्यंत नोंदणी पुन्हा नियुक्त केली. कारण: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "प्रशासकाने {{from}} पासून {{to}} पर्यंत नोंदणी पुन्हा नियुक्त केली. कारण: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "दुसऱ्या भागीदाराने डुप्लिकेट नोंदणी करण्याचा प्रयत्न नाकारला",
+      "BOOKING_CANCELLED": "बुकिंग रद्द केले. कारण: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "ऑपरेशनल मालकी भागीदाराकडे परत आली",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "बुकिंगसह आयोगाची पात्रता रद्द केली",
+      "COMMISSION_ELIGIBILITY_RESTORED": "नवीन बुकिंगसाठी कमिशन पात्रता पुनर्संचयित केली"
     }
   }
 }

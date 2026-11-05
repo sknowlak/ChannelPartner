@@ -43,7 +43,9 @@
       "name": "Nafn",
       "city": "Borg",
       "status": "Staða",
-      "actions": "Aðgerðir"
+      "actions": "Aðgerðir",
+      "protection": "Tvítekin vörn",
+      "matchOn": "Tvítekningar passa á"
     },
     "closeReferrals": "Loka fyrir tilvísanir",
     "reopen": "Opna aftur",
@@ -55,6 +57,25 @@
       "add": "Bæta við verkefni",
       "created": "Búið til {{name}} ."
     },
-    "back": "Aftur í smiðirnir"
+    "back": "Aftur í smiðirnir",
+    "protection": {
+      "days_one": "{{count}} dagur",
+      "days_other": "{{count}} dagar",
+      "globalDays_one": "Alþjóðlegt sjálfgefið ( {{count}} dagur)",
+      "globalDays_other": "Alþjóðlegt sjálfgefið ( {{count}} dagar)",
+      "globalDefault": "Alþjóðlegt sjálfgefið",
+      "placeholder": "Verndardaga (tómt = alþjóðlegt sjálfgefið)",
+      "saved": "Tvítekin vörn uppfærð fyrir {{name}} .",
+      "hint": "Tvítekin vörn: 1-3650 dagar, eða skildu eftir autt til að nota alþjóðlegt sjálfgefið úr Stillingar. Breyting á aðeins við um nýjar skráningar - þær sem fyrir eru halda gildistíma sínum."
+    },
+    "matching": {
+      "global": "Alþjóðlegt sjálfgefið",
+      "globalWith": "Alþjóðlegt sjálfgefið ( {{fields}} )",
+      "mobile": "Farsímanúmer",
+      "email": "Tölvupóstur",
+      "both": "Farsímanúmer + netfang",
+      "saved": "Tvítekin samsvörun uppfærð fyrir {{name}}",
+      "hint": "Hvaða upplýsingar gera tvær skráningar að sama viðskiptavininum fyrir verkefni. Breytingar gilda um tvíteknar athuganir héðan í frá; núverandi vernd hefur ekki áhrif."
+    }
   }
 }

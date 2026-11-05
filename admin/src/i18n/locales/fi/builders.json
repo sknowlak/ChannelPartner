@@ -43,7 +43,9 @@
       "name": "Nimi",
       "city": "Kaupunki",
       "status": "Status",
-      "actions": "Toiminnot"
+      "actions": "Toiminnot",
+      "protection": "Kaksinkertainen suojaus",
+      "matchOn": "Kaksoiskappaleet täsmäävät"
     },
     "closeReferrals": "Sulje viittauksille",
     "reopen": "Avaa uudelleen",
@@ -55,6 +57,25 @@
       "add": "Lisää projekti",
       "created": "Luotu {{name}} ."
     },
-    "back": "Takaisin Buildersiin"
+    "back": "Takaisin Buildersiin",
+    "protection": {
+      "days_one": "{{count}} päivä",
+      "days_other": "{{count}} päivää",
+      "globalDays_one": "Maailmanlaajuinen oletus ( {{count}} päivä)",
+      "globalDays_other": "Maailmanlaajuinen oletus ( {{count}} päivää)",
+      "globalDefault": "Globaali oletus",
+      "placeholder": "Suojauspäivät (tyhjä = yleinen oletus)",
+      "saved": "Päällekkäinen suojaus päivitetty kohteelle {{name}} .",
+      "hint": "Päällekkäinen suojaus: 1-3650 päivää tai jätä tyhjäksi, jos haluat käyttää yleistä oletusasetusta asetuksista. Muutos koskee vain uusia rekisteröintejä - olemassa olevat säilyttävät voimassaolon."
+    },
+    "matching": {
+      "global": "Globaali oletus",
+      "globalWith": "Yleinen oletus ( {{fields}} )",
+      "mobile": "Matkapuhelinnumero",
+      "email": "Sähköposti",
+      "both": "Matkapuhelinnumero + sähköposti",
+      "saved": "Päällekkäinen vastaavuus päivitetty kohteelle {{name}}",
+      "hint": "Mitkä tiedot tekevät kahdesta rekisteröinnistä saman asiakkaan projektille. Muutokset koskevat tästä lähtien päällekkäisiä tarkastuksia; olemassa oleva suoja ei vaikuta."
+    }
   }
 }

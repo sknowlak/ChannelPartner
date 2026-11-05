@@ -49,8 +49,73 @@
       "newPartnerId": "ID Mitra anyar",
       "reason": "Alasan (dibutuhake)",
       "apply": "Aplikasi Override",
-      "applying": "Nglamar..."
+      "applying": "Nglamar...",
+      "cancelBookingHint": "Pembatalan menehi tandha pesenan lan komisi kasebut dibatalake, ngasilake kepemilikan operasional menyang mitra, lan ngidini tukang nggawe buku iki maneh.",
+      "cancelBookingConfirm": "Batal pesenan iki? Komisi kasebut uga dibatalake. Iki dicathet nganggo jeneng lan alesan sampeyan."
     },
-    "timelineTitle": "Timeline Audit (registrasi iki)"
+    "timelineTitle": "Timeline Audit (registrasi iki)",
+    "bookingStatus": "Status Booking",
+    "commissionAttribution": "Atribusi Komisi",
+    "disputeOpen": "Sengketa kepemilikan mbukak kanggo pelanggan iki - mitra liyane ujar manawa duweke. Diputusake ing kaca Sengketa.",
+    "viewDisputes": "Ndeleng regejegan",
+    "cancellation": {
+      "title": "Booking dibatalake",
+      "hint": "Pesenan lan komisi dibatalake; kepemilikan operasional bali karo partner lan tukang bisa Book timbal iki maneh.",
+      "at": "dibatalake ing",
+      "by": "dibatalake dening",
+      "reason": "alesan"
+    }
+  },
+  "disputes": {
+    "title": "Sengketa Kepemilikan",
+    "hint": "Mitra sing registrasi ditolak minangka duplikat bisa mbantah sapa sing duwe pelanggan. Deleng loro-lorone lan mutusake.",
+    "statusFilter": "Status sengketa",
+    "allStatuses": "Kabeh status",
+    "empty": "Ora ana sengketa karo status iki.",
+    "columns": {
+      "dispute": "regejegan",
+      "customer": "Pelanggan",
+      "project": "Proyek",
+      "raisedBy": "Digedhekake dening",
+      "heldBy": "Pamilik saiki",
+      "status": "Status",
+      "raisedAt": "Diunggahake"
+    },
+    "detail": {
+      "title": "Sengketa {{id}}",
+      "raisedOn": "Diunggahake {{date}}",
+      "raisingTitle": "Digedhekake dening",
+      "holderTitle": "Pamilik saiki",
+      "partner": "mitra",
+      "raisedBy": "Dikirim dening",
+      "customerName": "Pelanggan",
+      "mobile": "Mobile",
+      "alternateMobile": "Mobile sulih",
+      "email": "Email",
+      "project": "Proyek",
+      "reason": "Alasane",
+      "registration": "Registrasi",
+      "registeredAt": "Kadhaftar ing",
+      "referral": "Rujukan",
+      "heldMissing": "Registrasi sing ditahan ora bisa ditemokake.",
+      "resolutionTitle": "Kaputusan",
+      "outcome": "Asil",
+      "note": "Cathetan",
+      "decidedBy": "Diputusake dening",
+      "decidedAt": "Diputusake",
+      "newRegistration": "Pendaftaran anyar",
+      "decideTitle": "Mutusake regejegan iki",
+      "noteLabel": "Cathetan nerangake keputusan (dibutuhake)",
+      "noteRequired": "Tulis cathetan kanggo mutusake.",
+      "uphold": "Njunjung",
+      "overturn": "mbalikke",
+      "upholdEffect": "{{holder}} njaga pelanggan. Perselisihan wis ditutup lan ora ana owah-owahan liyane.",
+      "overturnEffect": "Proteksi duplikat {{holder}} wis rampung saiki lan pelanggan wis kadhaptar kanggo {{partner}} minangka registrasi anyar.",
+      "heldBookedHelp": "Pelanggan iki dipesen liwat pemilik saiki. Batal pesen kasebut dhisik (Admin Override nalika registrasi), banjur gulungake:",
+      "confirmTitle": "Apa sampeyan yakin?",
+      "confirmUphold": "Ya, njaga",
+      "confirmOverturn": "Ya, mbalikke",
+      "back": "Bali menyang Sengketa"
+    }
   }
 }

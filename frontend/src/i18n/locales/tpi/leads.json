@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Buk pinis",
-    "pending": "I no konfem yet"
+    "pending": "I no konfem yet",
+    "status": {
+      "CONFIRMED": "Buk pinis",
+      "CANCELLED": "Ol i kenselim buking"
+    }
   },
   "assign": {
     "unassigned": "Nogat wok",
@@ -58,7 +62,8 @@
   },
   "project": {
     "none": "Nogat projek yet (ol i no salim)",
-    "notInList": "{{project}} (i no stap long lista bilong projek)"
+    "notInList": "{{project}} (i no stap long lista bilong projek)",
+    "protectionDays_other": "{{count}} -de proteksen"
   },
   "journey": {
     "customer": "Kastoma",
@@ -76,7 +81,14 @@
     "progressHistory": "Histri bilong Progres",
     "timesIn": "(taim insait long {{timezone}} )",
     "backToMyLeads": "Go bek long ol lida bilong mi",
-    "editLead": "Stretim Lida"
+    "editLead": "Stretim Lida",
+    "disputeBanner": "Narapela patna i bin tok pait long papa bilong dispela kastoma. Wanpela Leadrat edmin i wok long glasim - proteksen bilong yu i stap inap long taim ol i mekim disisen.",
+    "booking": "Buking",
+    "commission": "Komisen",
+    "notBooked": "No bin bukim",
+    "cancelledOn": "Ol i kenselim long {{date}} .",
+    "cancelReason": "As: {{reason}}",
+    "cancelledHint": "Bilda i kenselim buking - operesenel onasip i kam bek wantaim yu na komisen eligibiliti i kenselim. Em bai kamap bek sapos ol i bukim gen 'lead'."
   },
   "referral": {
     "NOT_REFERRED": "Nogat (nogat projek)",
@@ -158,7 +170,17 @@
       "REFERRAL_ACCEPTED": "Bilda i kisim riferal",
       "REFERRAL_REJECTED": "Builder i sakim dispela riferal. As: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Edmin i bin rilisim 'duplicate protection' pastaim. As: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Edmin i senisim rejistresen long {{from}} i go long {{to}} . As: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Edmin i senisim rejistresen long {{from}} i go long {{to}} . As: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Wanpela narapela patna i traim long rejistretim tupela taim i no bin kamap",
+      "BOOKING_CANCELLED": "Ol i kenselim buking. As: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operesenel onasip i go bek long patna",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ol i kenselim wok bilong kisim komisen wantaim buking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Komisin eligibiliti i kamap gen long nupela buking",
+      "OWNERSHIP_DISPUTE_RAISED": "Narapela patna i tok pait long papa bilong dispela kastoma - wanpela Leadrat edmin bai glasim",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Ol i rausim tok pait bilong papa bilong dispela kastoma - onasip bilong yu i no senis",
+      "OWNERSHIP_DISPUTE_UPHELD": "Ol i glasim tok pait bilong papa bilong dispela kastoma - ol i konfemim onasip bilong yu",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Rejistresen bihain long ol i pasim tok bilong yu long sait bilong onasip. Toksave: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Proteksen i pinis: ol i pasim tok long wanpela onasip tok pait long narapela patna. Toksave: {{note}}"
     }
   },
   "columnsPanel": {
@@ -182,5 +204,100 @@
     "INVALID_FOR_COUNTRY": "Dispela fon namba i no stret long {{country}} .",
     "COUNTRY_MISMATCH": "Plis makim stretpela kantri kod.",
     "NOT_MOBILE": "Plis putim wanpela mobail namba, i no wanpela lanlain."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Yu ken kisim komisen",
+      "PENDING": "Komisin i stap yet",
+      "CANCELLED": "Komisin i kenselim"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Ol i tok em i bilong yu",
+      "DISPUTED": "Atribiusen i no stret"
+    }
+  },
+  "result": {
+    "none": "Nogat rejistresen risal long soim. Rejistretim wanpela 'lead' pastaim.",
+    "acceptedTitle": "Lida i rejista",
+    "rejectedTitle": "Lida i no rejista",
+    "protectionWindow": "Proteksen Windo",
+    "protectedUntil": "Lukautim Inap",
+    "openLead": "Opim Lid",
+    "addAnother": "Putim narapela lida",
+    "duplicate": "Dupliket - i gat lukaut pinis",
+    "duplicateHint": "Dispela kastoma i gat proteksen pinis long dispela projek long narapela rejistresen, olsem na em i no inap rejista bilong yu.",
+    "existingProtectedUntil": "Rejistresen we i stap pinis i stap gut inap long"
+  },
+  "disputes": {
+    "title": "Ol tok pait bilong mi",
+    "intro": "Ol tok pait bilong onasip yu bin kamapim long ol kastoma we ol i no bin kisim olsem tupela kopi. Wanpela Leadrat edmin i save glasim olgeta wan wan.",
+    "empty": "Yu no bin kamapim wanpela tok pait. Sapos ol i no laikim wanpela kastoma yu bringim i kam olsem wanpela kopi, yu ken tok pait long en long risal bilong rejistresen.",
+    "columns": {
+      "dispute": "Hevi",
+      "reason": "As tingting bilong yu",
+      "outcome": "Autkam"
+    },
+    "status": {
+      "OPEN": "Aninit long riviu",
+      "UPHELD": "Nogat long sait bilong yu",
+      "OVERTURNED": "Mi bin mekim disisen long helpim yu",
+      "WITHDRAWN": "Rausim"
+    },
+    "awaitingReview": "Wetim admin riviu",
+    "openNewLead": "Opim 'lead' bilong yu {{id}}",
+    "withdraw": "Witdro",
+    "withdrawConfirm": "Rausim tok pait bilong yu long {{name}} ? Onasip bilong nau i stap olsem em i stap.",
+    "raise": "Tok pait long onasip",
+    "raiseTitle": "Tok pait long onasip",
+    "raiseHint": "Sapos dispela kastoma i kam long yu pastaim, tokim em long as bilong en. Wanpela Leadrat edmin bai glasim; sapos ol i mekim disisen long fever bilong yu, ol i rejistaim 'lead' bilong yu.",
+    "reasonLabel": "Bilong wanem dispela kastoma em i bilong yu?",
+    "reasonMin_other": "I no moa long {{count}} leta.",
+    "submit": "Salim tok pait",
+    "notProtected": "Nogat wanpela man i holim dispela kastoma bilong dispela projek moa - yu ken rejistaim 'lead' nau.",
+    "raised": "Tok pait {{id}} salim i go long lukluk gen.",
+    "viewAll": "Lukim ol tok pait bilong mi"
+  },
+  "dashboard": {
+    "title": "Dasbod",
+    "period": "Taim",
+    "lastDays_other": "{{count}} de",
+    "emptyTitle": "Welkam! Yu no gat ol 'lead' yet.",
+    "emptyHint": "Rejistretim namba wan 'lead' bilong yu - ol 'pipeline', 'booking' na 'protection deadlines' bilong yu bai kamap hia.",
+    "tiles": {
+      "leads": "Olgeta lid",
+      "newInPeriod_other": "{{count}} nupela long dispela taim",
+      "accepted": "Ol i kisim",
+      "booked": "Buk pinis",
+      "bookedInPeriod_other": "{{count}} bukim long dispela taim",
+      "conversion": "Konvesen",
+      "conversionHint": "Ol 'lead' we ol i bin bukim olsem wanpela sea bilong ol 'lead' we ol i bin kisim",
+      "protectedNow": "Protektim nau",
+      "expiringSoon_other": "Proteksen bai pinis long {{count}} de",
+      "disputedNow": "Ol narapela i tok pait long en",
+      "disputedNowHint": "Ol lida bilong yu wantaim wanpela open onasip tok pait i kam long narapela patna",
+      "commissionEligible": "Yu ken kisim komisen",
+      "commissionCancelled_other": "{{count}} i kenselim"
+    },
+    "chart": {
+      "title_other": "Rejistresen na buking long wan wan de - las {{count}} de",
+      "registrations": "Ol rejistresen",
+      "bookings": "Ol buking"
+    },
+    "byStage": "Ol lida long status",
+    "bySource": "Ol lida long as bilong en",
+    "byReferral": "Ol lida long riferal status",
+    "myDisputes": "Ol tok pait yu bin kamapim",
+    "noDisputes": "Nogat tok pait i kamap.",
+    "unknown": "Nogat set",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Ekstenel CRM (simulated)",
+      "PARTNER_CRM": "Tim bilong yu i putim",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integresen",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_other": "Proteksen bai pinis insait long {{count}} de bihain",
+    "expiringEmpty": "Nogat 'lead' i lusim proteksen bilong en insait long dispela windo."
   }
 }

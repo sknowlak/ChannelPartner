@@ -43,7 +43,9 @@
       "name": "Nazwa",
       "city": "Miasto",
       "status": "Status",
-      "actions": "Działania"
+      "actions": "Działania",
+      "protection": "Zduplikowana ochrona",
+      "matchOn": "Duplikaty pasują"
     },
     "closeReferrals": "Zamknięte dla poleceń",
     "reopen": "Otworzyć na nowo",
@@ -55,6 +57,29 @@
       "add": "Dodaj projekt",
       "created": "Utworzono {{name}} ."
     },
-    "back": "Wracając do Konstruktorów"
+    "back": "Wracając do Konstruktorów",
+    "protection": {
+      "days_one": "{{count}} dzień",
+      "days_few": "{{count}} dni",
+      "days_many": "{{count}} dni",
+      "days_other": "{{count}} dni",
+      "globalDays_one": "Globalne ustawienie domyślne ( {{count}} dzień)",
+      "globalDays_few": "Globalne ustawienie domyślne ( {{count}} dni)",
+      "globalDays_many": "Globalne ustawienie domyślne ( {{count}} dni)",
+      "globalDays_other": "Globalne ustawienie domyślne ( {{count}} dni)",
+      "globalDefault": "Globalne ustawienie domyślne",
+      "placeholder": "Dni ochrony (puste = ustawienie domyślne globalne)",
+      "saved": "Zaktualizowano ochronę przed duplikatami dla {{name}} .",
+      "hint": "Ochrona przed duplikatami: 1–3650 dni lub pozostaw puste, aby użyć globalnych ustawień domyślnych w Ustawieniach. Zmiana dotyczy wyłącznie nowych rejestracji – istniejące zachowują ważność."
+    },
+    "matching": {
+      "global": "Globalne ustawienie domyślne",
+      "globalWith": "Globalne ustawienie domyślne ( {{fields}} )",
+      "mobile": "Numer telefonu komórkowego",
+      "email": "E-mail",
+      "both": "Numer telefonu komórkowego + e-mail",
+      "saved": "Zaktualizowano zduplikowane dopasowanie dla {{name}}",
+      "hint": "Które szczegóły sprawiają, że dwie rejestracje są tym samym klientem projektu. Od teraz zmiany dotyczą duplikatów czeków; nie ma to wpływu na istniejącą ochronę."
+    }
   }
 }

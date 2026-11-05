@@ -30,7 +30,8 @@
       "registered": "નોંધાયેલ"
     },
     "booked": "બુક કરાવ્યું",
-    "empty": "હજુ સુધી કોઈ રેફરલ્સ નથી."
+    "empty": "હજુ સુધી કોઈ રેફરલ્સ નથી.",
+    "bookingCancelled": "બુકિંગ કેન્સલ"
   },
   "detail": {
     "customer": "ગ્રાહક",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "બુકિંગ કન્ફર્મ.",
       "accepted": "રેફરલ સ્વીકાર્યું.",
-      "rejected": "રેફરલ નકારવામાં આવ્યો."
+      "rejected": "રેફરલ નકારવામાં આવ્યો.",
+      "bookingCancelled": "બુકિંગ કેન્સલ."
     },
-    "backToReferrals": "રેફરલ્સ પર પાછા જાઓ"
+    "backToReferrals": "રેફરલ્સ પર પાછા જાઓ",
+    "bookingCancelled": "બુકિંગ કેન્સલ",
+    "cancelBooking": "બુકિંગ રદ કરો",
+    "cancelReasonLabel": "રદ કરવાનું કારણ (પાર્ટનરને બતાવ્યું) *",
+    "cancelBookingHint": "ઓપરેશનલ માલિકી ભાગીદાર પાસે પાછી જાય છે અને તેમની કમિશનની પાત્રતા રદ કરવામાં આવે છે. લીડ પછીથી ફરીથી બુક કરી શકાય છે.",
+    "cancelBookingConfirm": "બુકિંગ કેન્સલ કરો"
   },
   "history": {
     "title": "ઈતિહાસ",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "કમિશન પાત્રતા બનાવી",
       "HANDOVER_COMPLETED": "હેન્ડઓવર પૂર્ણ",
       "ADMIN_PROTECTION_RELEASED": "એડમિને ડુપ્લિકેટ સંરક્ષણ વહેલું બહાર પાડ્યું. કારણ: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "એડમિને {{from}} થી {{to}} સુધી નોંધણી ફરીથી સોંપી. કારણ: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "એડમિને {{from}} થી {{to}} સુધી નોંધણી ફરીથી સોંપી. કારણ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "અન્ય ભાગીદાર દ્વારા ડુપ્લિકેટ નોંધણીનો પ્રયાસ નકારવામાં આવ્યો હતો",
+      "BOOKING_CANCELLED": "બુકિંગ કેન્સલ. કારણ: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "ઓપરેશનલ માલિકી ભાગીદારને પાછી આપી",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "બુકિંગ સાથે કમિશનની પાત્રતા રદ કરવામાં આવી છે",
+      "COMMISSION_ELIGIBILITY_RESTORED": "નવા બુકિંગ માટે કમિશન પાત્રતા પુનઃસ્થાપિત"
     }
   }
 }

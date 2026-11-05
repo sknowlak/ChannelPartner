@@ -30,7 +30,8 @@
       "registered": "पंजीकृत"
     },
     "booked": "बुक कर दियो",
-    "empty": "अबार तांई कोई रेफरल कोनी।"
+    "empty": "अबार तांई कोई रेफरल कोनी।",
+    "bookingCancelled": "बुकिंग रद्द कर दी गई"
   },
   "detail": {
     "customer": "गिराक",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "बुकिंग री पुष्टि हो गी।",
       "accepted": "रेफरल स्वीकार कर लियो गयो।",
-      "rejected": "रेफरल खारिज कर दियो गयो।"
+      "rejected": "रेफरल खारिज कर दियो गयो।",
+      "bookingCancelled": "बुकिंग रद्द कर दी गई।"
     },
-    "backToReferrals": "रेफरल माथै पाछा जावो"
+    "backToReferrals": "रेफरल माथै पाछा जावो",
+    "bookingCancelled": "बुकिंग रद्द कर दी गई",
+    "cancelBooking": "बुकिंग रद्द करो",
+    "cancelReasonLabel": "रद्द करण रो कारण (साथी नै दिखायो गयो) *",
+    "cancelBookingHint": "परिचालन स्वामित्व साझेदार रै कनै पाछो जावै है अर बांरी कमीशन री पात्रता रद्द कर दी जावै है। लीड नै बाद मांय फेरूं बुक कर सकां।",
+    "cancelBookingConfirm": "बुकिंग रद्द कर दो"
   },
   "history": {
     "title": "इतिहास",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "आयोग री पात्रता बणाई गई",
       "HANDOVER_COMPLETED": "हैंडओवर पूरा होग्यो",
       "ADMIN_PROTECTION_RELEASED": "एडमिन नै डुप्लिकेट प्रोटेक्शन पैली जारी कर दियो। कारण: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "प्रशासक पंजीकरण नै {{from}} सूं {{to}} माथै फेर सूं असाइन कर दियो। कारण: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "प्रशासक पंजीकरण नै {{from}} सूं {{to}} माथै फेर सूं असाइन कर दियो। कारण: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "दूजा साथी री डुप्लीकेट पंजीकरण री कोशिश खारिज कर दी गई",
+      "BOOKING_CANCELLED": "बुकिंग रद्द कर दी गई। कारण: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "परिचालन स्वामित्व साझेदार नै पाछो कर दियो गयो",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "बुकिंग रै साथै कमीशन री पात्रता रद्द कर दी गई",
+      "COMMISSION_ELIGIBILITY_RESTORED": "नयी बुकिंग रै वास्तै कमीशन री पात्रता बहाल कर दी गई"
     }
   }
 }

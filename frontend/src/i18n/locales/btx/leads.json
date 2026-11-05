@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Enggo ipesan",
-    "pending": "Man timaan"
+    "pending": "Man timaan",
+    "status": {
+      "CONFIRMED": "Enggo ipesan",
+      "CANCELLED": "Pemesanan enggo ibatasi"
+    }
   },
   "assign": {
     "unassigned": "La itugasken",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "La lit proyekna (la rujuk)",
-    "notInList": "{{project}} (labo lit ibas daftar proyek)"
+    "notInList": "{{project}} (labo lit ibas daftar proyek)",
+    "protectionDays_one": "{{count}} -perlindungen wari",
+    "protectionDays_other": "{{count}} -perlindungen wari"
   },
   "journey": {
     "customer": "Si nukur",
@@ -76,7 +82,14 @@
     "progressHistory": "Sejarah Kemajun .",
     "timesIn": "(waktu i bas {{timezone}} )",
     "backToMyLeads": "Mulihken ku Petunjukku .",
-    "editLead": "Edit Lead"
+    "editLead": "Edit Lead",
+    "disputeBanner": "Mitra si deban enggo mpersoalken kepemiliken pelanggan enda. Sekalak admin Leadrat sangana meninjausa - perlindungenndu tetap i bas inganna seh maka iputuskenna.",
+    "booking": "Pemesanan",
+    "commission": "Upah",
+    "notBooked": "Labo ipesan .",
+    "cancelledOn": "Ibatasi ibas {{date}} .",
+    "cancelReason": "Alasenna: {{reason}}",
+    "cancelledHint": "Pembangun membatalken pemesanan - kepemiliken operasional enggo mulihken ras kam ras kelayaken komisi enggo ibatasi. Ipulihken adi lead e ipesan mulihi."
   },
   "referral": {
     "NOT_REFERRED": "Labo rujuk (labo proyek) .",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Pembangun ngaloken rujuken e .",
       "REFERRAL_REJECTED": "Pembangun nulak rujuken e. Alasenna: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin ngelepasken perlindungen duplikat awal. Alasenna: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin netapken mulihi pendaftaren i bas {{from}} ku {{to}} . Alasenna: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin netapken mulihi pendaftaren i bas {{from}} ku {{to}} . Alasenna: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Usaha pendaftaren duplikat si ilakoken mitra si deban itulak .",
+      "BOOKING_CANCELLED": "Pemesanan enggo ibatasi. Alasenna: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Kepemiliken operasional mulihken man mitra .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kelayaken komisi ibatasi alu pemesan .",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kelayaken komisi ipulihken guna pemesan si mbaru .",
+      "OWNERSHIP_DISPUTE_RAISED": "Mitra si deban mpersoalken kepemiliken pelanggan enda - sekalak admin Leadrat mereksasa .",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Perselisihen kepemiliken nandangi pelanggan enda itarik - kepemilikenndu la berubah .",
+      "OWNERSHIP_DISPUTE_UPHELD": "Perselisihen kepemiliken nandangi pelanggan enda enggo itinjau - kepemilikenndu enggo ikonfirmasi .",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Idaftarken kenca perselisihen kepemilikenndu iputusken alu memihak man bandu. Cataten: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Perlindungen enggo dung: sada perselisihen kepemiliken iputusken guna memihak pasangan si deban. Cataten: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Nomor telepon enda labo sah man {{country}} .",
     "COUNTRY_MISMATCH": "Pilihlah kode negara si benar.",
     "NOT_MOBILE": "Tolong masukken nomor handphone, labo telepon darat."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisi si layak .",
+      "PENDING": "Komisi si tertunda",
+      "CANCELLED": "Komisi si ibatasi ."
+    },
+    "attribution": {
+      "ATTRIBUTED": "Ihubungken ras kam .",
+      "DISPUTED": "Atribusi si ipersoalken ."
+    }
+  },
+  "result": {
+    "none": "La lit hasil pendaftaren si man cidahken. Daftarken lebe sada lead.",
+    "acceptedTitle": "Timbal si enggo terdaftar .",
+    "rejectedTitle": "Timbal si la terdaftar .",
+    "protectionWindow": "Jendela Perlindungen .",
+    "protectedUntil": "Ilindungi Seh 2019.",
+    "openLead": "Bukalah Timbal .",
+    "addAnother": "Tambahken sada nari Lead .",
+    "duplicate": "Duplikat - enggo ilindungi .",
+    "duplicateHint": "Pelanggan enda enggo ilindungi guna proyek enda alu pendaftaren si deban, emaka la banci idaftarken man bandu.",
+    "existingProtectedUntil": "Pendaftaren si enggo lit ilindungi seh tahun 2019."
+  },
+  "disputes": {
+    "title": "Perjengilenku",
+    "intro": "Perselisihen kepemiliken si ipedaratndu man pelanggan si itulak jadi duplikat. Sekalak admin Leadrat si mereksa sada-sada.",
+    "empty": "La lit perjengilen si ipeturahndu. Adi lit pelanggan si ibabandu itulak jadi duplikat, banci ipersoalkenndu arah hasil pendaftaren.",
+    "columns": {
+      "dispute": "Sengketa",
+      "reason": "Alasenndu .",
+      "outcome": "Pekeriken"
+    },
+    "status": {
+      "OPEN": "I bas peninjauen",
+      "UPHELD": "Labo i bas pihakndu .",
+      "OVERTURNED": "Iputusken alu mehuli man bandu .",
+      "WITHDRAWN": "Itarik"
+    },
+    "awaitingReview": "Nimai ulasen admin .",
+    "openNewLead": "Bukalah leadndu {{id}}",
+    "withdraw": "Ndarat",
+    "withdrawConfirm": "Tariklah perjengilenndu kerna {{name}} ? Kepemiliken si genduari tetap bagi si lit.",
+    "raise": "Perselisihen kerna kepemiliken .",
+    "raiseTitle": "Perselisihen kerna kepemiliken .",
+    "raiseHint": "Adi pelanggan enda reh lebe ndahi kam, turiken ngkai maka bage. Sekalak admin Leadrat si mereksasa; adi iputuskenna si mendukung kam, timbal balik e terdaftar man bandu.",
+    "reasonLabel": "Engkai maka pelanggan enda jadi sikerajangenndu?",
+    "reasonMin_one": "Sitikna {{count}} karakterna.",
+    "reasonMin_other": "Sitikna {{count}} karakterna.",
+    "submit": "Kirimken Perjengilen .",
+    "notProtected": "Lanai lit si ncikep perlindungen nandangi pelanggan enda guna proyek enda - banci idaftarkenndu lead gundari.",
+    "raised": "Perselisihen {{id}} ikirimken guna iperiksa.",
+    "viewAll": "Nehenlah perjengilenku ."
+  },
+  "dashboard": {
+    "title": "Dasbor",
+    "period": "Paksa",
+    "lastDays_one": "{{count}} wari",
+    "lastDays_other": "{{count}} wari",
+    "emptyTitle": "Selamat datang! La lit denga petunjukndu.",
+    "emptyHint": "Daftarkenlah leadndu si pemena - pipelinendu, pemesan ras batas waktu perlindungenndu teridah i jenda.",
+    "tiles": {
+      "leads": "Jumlah si memimpin",
+      "newInPeriod_one": "{{count}} si mbaru i bas periode enda",
+      "newInPeriod_other": "{{count}} si mbaru i bas periode enda",
+      "accepted": "Ialoken",
+      "booked": "Enggo ipesan",
+      "bookedInPeriod_one": "{{count}} si ipesanken i bas periode enda",
+      "bookedInPeriod_other": "{{count}} si ipesanken i bas periode enda",
+      "conversion": "Pertobaten",
+      "conversionHint": "Lead si ipesan jadi bagin i bas lead si ialoken .",
+      "protectedNow": "Ilindungi genduari .",
+      "expiringSoon_one": "Perlindungen si dungna i bas {{count}} wari .",
+      "expiringSoon_other": "Perlindungen si dungna i bas {{count}} wari .",
+      "disputedNow": "Ipersoalken kalak si deban .",
+      "disputedNowHint": "Pimpinenndu alu perselisihen kepemiliken si terbuka i bas mitra si deban nari .",
+      "commissionEligible": "Komisi si layak .",
+      "commissionCancelled_one": "{{count}} enggo ibatasi",
+      "commissionCancelled_other": "{{count}} enggo ibatasi"
+    },
+    "chart": {
+      "title_one": "Pendaftaren ras pemesan per wari - wari {{count}} terakhir",
+      "title_other": "Pendaftaren ras pemesan per wari - terakhir {{count}} wari",
+      "registrations": "Pendaftaren",
+      "bookings": "Pemesanan"
+    },
+    "byStage": "Memimpin alu status .",
+    "bySource": "Memimpin alu sumber .",
+    "byReferral": "Memimpin alu status rujuken .",
+    "myDisputes": "Perselisihen si ipedaratndu .",
+    "noDisputes": "La lit perjengilen si turah.",
+    "unknown": "Labo iaturken .",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM luar (isimulasiken) .",
+      "PARTNER_CRM": "Itambahi timndu .",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integrasi",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Perlindungen si dung i bas wari {{count}} berikutna",
+    "expiringTitle_other": "Perlindungen si dung i bas {{count}} wari si reh",
+    "expiringEmpty": "La lit timah si bene perlindungenna i bas jendela enda."
   }
 }

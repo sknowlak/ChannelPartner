@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Inap long",
-    "PENDING": "I no konfem yet"
+    "PENDING": "I no konfem yet",
+    "CANCELLED": "Ol i kenselim"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Rilisim dupliket proteksen hariap",
-    "REASSIGN_PARTNER": "Givim gen long narapela patna"
+    "REASSIGN_PARTNER": "Givim gen long narapela patna",
+    "CANCEL_BOOKING": "Kenselim buking"
   },
   "dataType": {
     "TEXT": "Teks",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Gutpela Edmin",
     "ADMIN": "Edmin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Konfem",
+    "CANCELLED": "Ol i kenselim"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Attributed",
+    "DISPUTED": "Ol i tok pait"
+  },
+  "disputeStatus": {
+    "OPEN": "Open",
+    "UPHELD": "Ol i strongim",
+    "OVERTURNED": "I kapsait",
+    "WITHDRAWN": "Rausim"
   }
 }

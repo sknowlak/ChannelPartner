@@ -9,9 +9,12 @@ import { fieldLabel, optionLabel, statusLabel, subStatusLabel } from '../i18n/da
 const CATEGORY_TABS = ['all', 'status', 'assignment', 'notes'];
 
 const STATUS_EVENT_TYPES = new Set([
-  'STAGE_UPDATED', 'REGISTRATION_ACCEPTED', 'REGISTRATION_ATTEMPT_REJECTED', 'BOOKING_COMPLETED', 'HANDOVER_COMPLETED'
+  'STAGE_UPDATED', 'REGISTRATION_ACCEPTED', 'REGISTRATION_ATTEMPT_REJECTED', 'BOOKING_COMPLETED', 'BOOKING_CANCELLED', 'HANDOVER_COMPLETED'
 ]);
-const ASSIGNMENT_EVENT_TYPES = new Set(['LEAD_ASSIGNED', 'OPERATIONAL_OWNERSHIP_TRANSFERRED', 'PARTNER_ATTRIBUTION_PRESERVED']);
+const ASSIGNMENT_EVENT_TYPES = new Set([
+  'LEAD_ASSIGNED', 'OPERATIONAL_OWNERSHIP_TRANSFERRED', 'OPERATIONAL_OWNERSHIP_RETURNED', 'PARTNER_ATTRIBUTION_PRESERVED',
+  'OWNERSHIP_DISPUTE_RAISED', 'OWNERSHIP_DISPUTE_CLOSED', 'OWNERSHIP_DISPUTE_OVERTURNED', 'PROTECTION_ENDED_BY_DISPUTE'
+]);
 
 function matchesCategory(ev, category) {
   if (category === 'all') return true;
@@ -81,11 +84,16 @@ export function describeEvent(ev) {
     case 'COMMISSION_ELIGIBILITY_CREATED':
     case 'HANDOVER_COMPLETED':
     case 'REFERRAL_ACCEPTED':
+    case 'OPERATIONAL_OWNERSHIP_RETURNED':
+    case 'COMMISSION_ELIGIBILITY_CANCELLED':
+    case 'COMMISSION_ELIGIBILITY_RESTORED':
+    case 'OWNERSHIP_DISPUTE_RAISED':
       return k(ev.eventType);
     case 'PROTECTION_GRANTED':
       m = /^(\d+)-day protection granted$/.exec(d);
       return m ? k('PROTECTION_GRANTED', { count: Number(m[1]) }) : d;
     case 'REGISTRATION_ATTEMPT_REJECTED':
+      if (d === 'A duplicate registration attempt by another partner was rejected') return k('REGISTRATION_ATTEMPT_REJECTED_ANON');
       m = /^Duplicate registration attempt by (.+) rejected$/.exec(d);
       return m ? k('REGISTRATION_ATTEMPT_REJECTED', { partnerId: m[1] }) : d;
     case 'LEAD_DETAILS_UPDATED':
@@ -107,6 +115,20 @@ export function describeEvent(ev) {
     case 'REFERRAL_REJECTED':
       m = /^Builder rejected the referral\. Reason: ([\s\S]*)$/.exec(d);
       return m ? k('REFERRAL_REJECTED', { reason: m[1] }) : d;
+    // Booking cancellation and ownership disputes (section 62).
+    case 'BOOKING_CANCELLED':
+      m = /^Booking cancelled\. Reason: ([\s\S]*)$/.exec(d);
+      return m ? k('BOOKING_CANCELLED', { reason: m[1] }) : d;
+    case 'OWNERSHIP_DISPUTE_CLOSED':
+      if (d.includes('was withdrawn')) return k('OWNERSHIP_DISPUTE_WITHDRAWN');
+      if (d.includes('ownership is confirmed')) return k('OWNERSHIP_DISPUTE_UPHELD');
+      return d;
+    case 'OWNERSHIP_DISPUTE_OVERTURNED':
+      m = /^Registered after your ownership dispute was decided in your favour\. Note: ([\s\S]*)$/.exec(d);
+      return m ? k('OWNERSHIP_DISPUTE_OVERTURNED', { note: m[1] }) : d;
+    case 'PROTECTION_ENDED_BY_DISPUTE':
+      m = /^Protection ended: an ownership dispute was decided in favour of another partner\. Note: ([\s\S]*)$/.exec(d);
+      return m ? k('PROTECTION_ENDED_BY_DISPUTE', { note: m[1] }) : d;
     case 'ADMIN_PROTECTION_RELEASED':
       m = /^Admin released duplicate protection early\. Reason: ([\s\S]*)$/.exec(d);
       return m ? k('ADMIN_PROTECTION_RELEASED', { reason: m[1] }) : d;

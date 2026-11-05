@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "fowo si",
-    "pending": "Ni isunmọtosi"
+    "pending": "Ni isunmọtosi",
+    "status": {
+      "CONFIRMED": "fowo si",
+      "CANCELLED": "Ifiweranṣẹ ti fagile"
+    }
   },
   "assign": {
     "unassigned": "Ti ko ni ipin",
@@ -58,7 +62,8 @@
   },
   "project": {
     "none": "Ko si iṣẹ akanṣe sibẹsibẹ (ko tọka si)",
-    "notInList": "{{project}} (kii ṣe ninu atokọ iṣẹ akanṣe)"
+    "notInList": "{{project}} (kii ṣe ninu atokọ iṣẹ akanṣe)",
+    "protectionDays_other": "{{count}} -ọjọ Idaabobo"
   },
   "journey": {
     "customer": "Onibara",
@@ -76,7 +81,14 @@
     "progressHistory": "Itan ilọsiwaju",
     "timesIn": "(igba ni {{timezone}} )",
     "backToMyLeads": "Pada si Awọn itọsọna Mi",
-    "editLead": "Ṣatunkọ Lead"
+    "editLead": "Ṣatunkọ Lead",
+    "disputeBanner": "Alabaṣepọ miiran ti jiyan nini nini alabara yii. Abojuto Leadrat n ṣe atunwo rẹ - aabo rẹ duro ni aaye titi wọn o fi pinnu.",
+    "booking": "Fowo si",
+    "commission": "Igbimọ",
+    "notBooked": "Ko fowo si",
+    "cancelledOn": "Fagilee ni {{date}} .",
+    "cancelReason": "Idi: {{reason}}",
+    "cancelledHint": "Akọle ti fagile ifiṣura naa - nini iṣiṣẹ ti pada pẹlu rẹ ati pe yiyan yiyan igbimọ ti fagile. O ti wa ni pada ti o ba ti asiwaju ti wa ni kọnputa lẹẹkansi."
   },
   "referral": {
     "NOT_REFERRED": "Ko tọka (ko si iṣẹ akanṣe)",
@@ -158,7 +170,17 @@
       "REFERRAL_ACCEPTED": "Akole gba itọkasi naa",
       "REFERRAL_REJECTED": "Akole kọ itọkasi naa. Idi: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin tu idabobo ẹda-ẹda silẹ ni kutukutu. Idi: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Abojuto tun yan iforukọsilẹ lati {{from}} si {{to}} . Idi: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Abojuto tun yan iforukọsilẹ lati {{from}} si {{to}} . Idi: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Igbiyanju iforukọsilẹ ẹda ẹda nipasẹ alabaṣepọ miiran ni a kọ",
+      "BOOKING_CANCELLED": "Ifiweranṣẹ ti fagile. Idi: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Nini iṣiṣẹ pada si alabaṣepọ",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Yiyẹ ni yiyan igbimọ pẹlu ifiṣura naa",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Yiyẹ ni Commission pada fun titun fowo si",
+      "OWNERSHIP_DISPUTE_RAISED": "Alabaṣepọ miiran jiyan nini nini alabara yii - alabojuto Leadrat kan yoo ṣe atunyẹwo rẹ",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Awọn ariyanjiyan nini lori alabara yii ti yọkuro - nini rẹ ko yipada",
+      "OWNERSHIP_DISPUTE_UPHELD": "A ṣe atunyẹwo ariyanjiyan nini lori alabara yii - ti jẹri nini nini rẹ",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Ti forukọsilẹ lẹhin ti a ti pinnu ariyanjiyan nini rẹ ni ojurere rẹ. Akiyesi: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Idaabobo pari: ariyanjiyan nini ni a pinnu ni ojurere ti alabaṣepọ miiran. Akiyesi: {{note}}"
     }
   },
   "columnsPanel": {
@@ -182,5 +204,100 @@
     "INVALID_FOR_COUNTRY": "Nọmba foonu yi ko wulo fun {{country}} .",
     "COUNTRY_MISMATCH": "Jọwọ yan koodu orilẹ-ede to pe.",
     "NOT_MOBILE": "Jọwọ tẹ nọmba alagbeka kan sii, kii ṣe laini ilẹ."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Igbimọ yẹ",
+      "PENDING": "Commission ni isunmọtosi ni",
+      "CANCELLED": "Igbimo fagile"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Ti sọ si ọ",
+      "DISPUTED": "Àríyànjiyàn"
+    }
+  },
+  "result": {
+    "none": "Ko si abajade iforukọsilẹ lati ṣafihan. Forukọsilẹ asiwaju akọkọ.",
+    "acceptedTitle": "Asiwaju ti forukọsilẹ",
+    "rejectedTitle": "Asiwaju ko forukọsilẹ",
+    "protectionWindow": "Ferese Idaabobo",
+    "protectedUntil": "Ni idaabobo Titi",
+    "openLead": "Ṣii Asiwaju",
+    "addAnother": "Fi Asiwaju miiran kun",
+    "duplicate": "Pidánpidán - tẹlẹ ni idaabobo",
+    "duplicateHint": "Onibara yii ti ni aabo tẹlẹ fun iṣẹ akanṣe nipasẹ iforukọsilẹ miiran, nitorinaa ko le forukọsilẹ fun ọ.",
+    "existingProtectedUntil": "Iforukọsilẹ to wa ni aabo titi di"
+  },
+  "disputes": {
+    "title": "Awọn ariyanjiyan Mi",
+    "intro": "Awọn ariyanjiyan nini ti o gbe dide fun awọn alabara ti a kọ bi awọn ẹda-ẹda. A Leadrat admin agbeyewo kọọkan ọkan.",
+    "empty": "Iwọ ko ti gbe ariyanjiyan eyikeyi dide. Ti o ba kọ alabara ti o mu wọle bi ẹda ẹda, o le jiyan lati abajade iforukọsilẹ.",
+    "columns": {
+      "dispute": "Àríyànjiyàn",
+      "reason": "Idi rẹ",
+      "outcome": "Abajade"
+    },
+    "status": {
+      "OPEN": "Labẹ awotẹlẹ",
+      "UPHELD": "Ko si ni ojurere rẹ",
+      "OVERTURNED": "Ṣe ipinnu ni ojurere rẹ",
+      "WITHDRAWN": "Yiyọ kuro"
+    },
+    "awaitingReview": "Nduro fun abojuto awotẹlẹ",
+    "openNewLead": "Ṣii itọsọna rẹ {{id}}",
+    "withdraw": "Yiyọ kuro",
+    "withdrawConfirm": "Fa ariyanjiyan rẹ kuro fun {{name}} ? Ohun-ini lọwọlọwọ duro bi o ti jẹ.",
+    "raise": "Nini ariyanjiyan",
+    "raiseTitle": "Nini ariyanjiyan",
+    "raiseHint": "Ti alabara yii ba wa ni akọkọ, ṣalaye idi. Alakoso Leadrat yoo ṣe ayẹwo rẹ; ti wọn ba pinnu ni ojurere rẹ, a forukọsilẹ fun ọ.",
+    "reasonLabel": "Kini idi ti alabara yii jẹ tirẹ?",
+    "reasonMin_other": "O kere ju awọn ẹyọ {{count}} .",
+    "submit": "Firanṣẹ ariyanjiyan",
+    "notProtected": "Ko si ẹnikan ti o ni aabo lori alabara yii fun iṣẹ akanṣe yii mọ - o le forukọsilẹ asiwaju ni bayi.",
+    "raised": "Ariyanjiyan {{id}} ranṣẹ fun atunyẹwo.",
+    "viewAll": "Wo awọn ariyanjiyan mi"
+  },
+  "dashboard": {
+    "title": "Dasibodu",
+    "period": "Akoko",
+    "lastDays_other": "{{count}} ọjọ́",
+    "emptyTitle": "Kaabo! O ko ni awọn itọsọna sibẹsibẹ.",
+    "emptyHint": "Forukọsilẹ asiwaju akọkọ rẹ - opo gigun ti epo, awọn iwe aṣẹ ati awọn akoko ipari aabo yoo han nibi.",
+    "tiles": {
+      "leads": "Lapapọ awọn itọsọna",
+      "newInPeriod_other": "{{count}} tuntun ni asiko yi",
+      "accepted": "Ti gba",
+      "booked": "fowo si",
+      "bookedInPeriod_other": "{{count}} fowo si ni asiko yii",
+      "conversion": "Iyipada",
+      "conversionHint": "Awọn itọsọna kọnputa bi ipin ti awọn itọsọna ti o gba",
+      "protectedNow": "Ni idaabobo ni bayi",
+      "expiringSoon_other": "Idaabobo pari ni awọn ọjọ {{count}}",
+      "disputedNow": "Àríyànjiyàn nipa elomiran",
+      "disputedNowHint": "Awọn itọsọna rẹ pẹlu ariyanjiyan nini nini lati ọdọ alabaṣepọ miiran",
+      "commissionEligible": "Igbimọ yẹ",
+      "commissionCancelled_other": "{{count}} fagilee"
+    },
+    "chart": {
+      "title_other": "Awọn iforukọsilẹ ati awọn ifiṣura fun ọjọ kan - awọn ọjọ {{count}} kẹhin",
+      "registrations": "Awọn iforukọsilẹ",
+      "bookings": "Awọn ifiṣura"
+    },
+    "byStage": "Ṣe itọsọna nipasẹ ipo",
+    "bySource": "Awọn itọsọna nipasẹ orisun",
+    "byReferral": "Ṣe itọsọna nipasẹ ipo itọkasi",
+    "myDisputes": "Awọn ariyanjiyan ti o dide",
+    "noDisputes": "Ko si ariyanjiyan dide.",
+    "unknown": "Ko ṣeto",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM ita (afarawe)",
+      "PARTNER_CRM": "Ṣe afikun nipasẹ ẹgbẹ rẹ",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Ijọpọ",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_other": "Idaabobo n pari ni awọn ọjọ {{count}} to nbọ",
+    "expiringEmpty": "Ko si asiwaju ti o padanu aabo rẹ ni window yii."
   }
 }

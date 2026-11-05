@@ -49,8 +49,73 @@
       "newPartnerId": "Ny partner ID",
       "reason": "Årsak (obligatorisk)",
       "apply": "Bruk overstyring",
-      "applying": "Søker..."
+      "applying": "Søker...",
+      "cancelBookingHint": "Kansellering markerer bestillingen og dens provisjon som kansellert, returnerer operasjonelt eierskap til partneren, og lar byggherren bestille denne kundeemnet på nytt.",
+      "cancelBookingConfirm": "Kansellere denne bestillingen? Provisjonen kanselleres også. Dette logges med ditt navn og årsak."
     },
-    "timelineTitle": "Revisjonstidslinje (denne registreringen)"
+    "timelineTitle": "Revisjonstidslinje (denne registreringen)",
+    "bookingStatus": "Bestillingsstatus",
+    "commissionAttribution": "Kommisjonsattribusjon",
+    "disputeOpen": "En eiertvist er åpen for denne kunden - en annen partner sier at den er deres. Det avgjøres på Tvister-siden.",
+    "viewDisputes": "Se tvister",
+    "cancellation": {
+      "title": "Bestilling kansellert",
+      "hint": "Bestillingen og dens provisjon kanselleres; operativt eierskap er tilbake hos partneren og byggherren kan booke dette leadet på nytt.",
+      "at": "Kansellert kl",
+      "by": "Kansellert av",
+      "reason": "Grunn"
+    }
+  },
+  "disputes": {
+    "title": "Eierskapstvister",
+    "hint": "En partner hvis registrering ble avvist som duplikat kan bestride hvem som eier kunden. Gå gjennom begge sider og avgjør.",
+    "statusFilter": "Tviststatus",
+    "allStatuses": "Alle statuser",
+    "empty": "Ingen tvister med denne statusen.",
+    "columns": {
+      "dispute": "Konflikt",
+      "customer": "Kunde",
+      "project": "Prosjekt",
+      "raisedBy": "Oppvokst av",
+      "heldBy": "Nåværende eier",
+      "status": "Status",
+      "raisedAt": "Oppvokst på"
+    },
+    "detail": {
+      "title": "Tvist {{id}}",
+      "raisedOn": "Oppvokst {{date}}",
+      "raisingTitle": "Oppvokst av",
+      "holderTitle": "Nåværende eier",
+      "partner": "Partner",
+      "raisedBy": "Innsendt av",
+      "customerName": "Kunde",
+      "mobile": "Mobil",
+      "alternateMobile": "Alternativ mobil",
+      "email": "E-post",
+      "project": "Prosjekt",
+      "reason": "Deres grunn",
+      "registration": "Registrering",
+      "registeredAt": "Registrert på",
+      "referral": "Henvisning",
+      "heldMissing": "Den holdte registreringen ble ikke funnet.",
+      "resolutionTitle": "Avgjørelse",
+      "outcome": "Utfall",
+      "note": "Note",
+      "decidedBy": "Bestemt av",
+      "decidedAt": "Bestemte seg for",
+      "newRegistration": "Ny registrering",
+      "decideTitle": "Avgjør denne tvisten",
+      "noteLabel": "Merknad som forklarer avgjørelsen (obligatorisk)",
+      "noteRequired": "Skriv et notat for å bestemme.",
+      "uphold": "opprettholde",
+      "overturn": "Velte",
+      "upholdEffect": "{{holder}} beholder kunden. Tvisten er avsluttet og ingenting annet endres.",
+      "overturnEffect": "{{holder}} sin duplikatbeskyttelse avsluttes nå og kunden er registrert for {{partner}} som en ny registrering.",
+      "heldBookedHelp": "Denne kunden bestilles gjennom nåværende eier. Avbryt den bestillingen først (Admin Override på registreringen), og velter deretter:",
+      "confirmTitle": "Er du sikker?",
+      "confirmUphold": "Ja, hold fast",
+      "confirmOverturn": "Ja, velte",
+      "back": "Tilbake til Tvister"
+    }
   }
 }

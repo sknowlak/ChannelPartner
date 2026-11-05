@@ -43,7 +43,9 @@
       "name": "Erinnya",
       "city": "Ekibuga",
       "status": "Ennyimirira",
-      "actions": "Ebikolwa"
+      "actions": "Ebikolwa",
+      "protection": "Obukuumi obukoppa",
+      "matchOn": "Ebikoppi bikwatagana ku"
     },
     "closeReferrals": "Ggalawo okusobola okusindikibwa",
     "reopen": "Ddamu okuggulawo",
@@ -55,6 +57,25 @@
       "add": "Yongera ku Pulojekiti",
       "created": "Yatondebwawo {{name}} ."
     },
-    "back": "Okudda ku Bazimbi"
+    "back": "Okudda ku Bazimbi",
+    "protection": {
+      "days_one": "{{count}} olunaku",
+      "days_other": "{{count}} ennaku",
+      "globalDays_one": "Ensi yonna okusookerwako ( {{count}} olunaku)",
+      "globalDays_other": "Ennaku ezisookerwako mu nsi yonna ( {{count}} )",
+      "globalDefault": "Global default",
+      "placeholder": "Ennaku z'obukuumi (empty = global default) .",
+      "saved": "Obukuumi obukoppa butereezeddwa ku {{name}} .",
+      "hint": "Obukuumi obukoppa: ennaku 1-3650, oba leka nga bwereere okukozesa ekisookerwako eky'ensi yonna okuva mu Nteekateeka. Enkyukakyuka ekola ku kwewandiisa okupya kwokka - okuliwo zikuuma okuggwaako kwazo."
+    },
+    "matching": {
+      "global": "Global default",
+      "globalWith": "Ensi yonna esookerwako ( {{fields}} ) .",
+      "mobile": "Ennamba y’essimu",
+      "email": "Email",
+      "both": "Ennamba y'essimu + email",
+      "saved": "Okukwatagana okuddiŋŋana kulongooseddwa ku {{name}}",
+      "hint": "Ebintu ki ebifuula okwewandiisa bbiri kasitoma omu ku pulojekiti. Enkyukakyuka zikwata ku kukebera okuddirira okuva kati; obukuumi obuliwo tebukosebwa."
+    }
   }
 }

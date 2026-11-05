@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "berechtegt",
-    "PENDING": "Erwaardung"
+    "PENDING": "Erwaardung",
+    "CANCELLED": "Annuléiert"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Fräisetzung duplizéiert Schutz fréi",
-    "REASSIGN_PARTNER": "Gitt en anere Partner zréck"
+    "REASSIGN_PARTNER": "Gitt en anere Partner zréck",
+    "CANCEL_BOOKING": "Buchung annuléieren"
   },
   "dataType": {
     "TEXT": "Text",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super Admin",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Confirméiert",
+    "CANCELLED": "Annuléiert"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Zougeschriwwen",
+    "DISPUTED": "ëmstridden"
+  },
+  "disputeStatus": {
+    "OPEN": "Oppen",
+    "UPHELD": "Opgehalen",
+    "OVERTURNED": "ëmgedréint",
+    "WITHDRAWN": "Entzéien"
   }
 }

@@ -1,3 +1,4 @@
+const crypto = require('crypto');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
@@ -25,7 +26,9 @@ function issueToken({ partnerId, username }) {
   return jwt.sign(
     { type: 'PARTNER', partnerId, username },
     JWT_SECRET,
-    { expiresIn: TOKEN_TTL }
+    // jwtid: each login is its own session, so logging one out (section 62)
+    // never ends another that happened to be issued in the same second.
+    { expiresIn: TOKEN_TTL, jwtid: crypto.randomUUID() }
   );
 }
 

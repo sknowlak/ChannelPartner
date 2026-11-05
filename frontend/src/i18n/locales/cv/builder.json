@@ -31,7 +31,8 @@
       "registered": "Регистрациленӗ"
     },
     "booked": "Ҫырӑннӑ",
-    "empty": "Хальлӗхе ҫыхӑну ҫук-ха."
+    "empty": "Хальлӗхе ҫыхӑну ҫук-ха.",
+    "bookingCancelled": "Бронирование пӑрахӑҫланӑ"
   },
   "detail": {
     "customer": "Заказчик",
@@ -54,9 +55,15 @@
     "notice": {
       "booked": "Бронирование ҫирӗплетнӗ.",
       "accepted": "Направлени йышӑннӑ.",
-      "rejected": "Направлени йышӑнман."
+      "rejected": "Направлени йышӑнман.",
+      "bookingCancelled": "Бронирование пӑрахӑҫланӑ."
     },
-    "backToReferrals": "Рефералсем патне таврӑнӑр"
+    "backToReferrals": "Рефералсем патне таврӑнӑр",
+    "bookingCancelled": "Бронирование пӑрахӑҫланӑ",
+    "cancelBooking": "Бронирование пӑрахӑҫла",
+    "cancelReasonLabel": "Пӑрахӑҫланин сӑлтавӗ (партнера кӑтартнӑ) *",
+    "cancelBookingHint": "Операци харпӑрлӑхӗ партнер патне таврӑнать те вӗсен комисси тивӗҫлӗхне пӑрахӑҫлаҫҫӗ. Тӗп ҫынна каярахпа тепӗр хут ҫырӑнма пулать.",
+    "cancelBookingConfirm": "Бронирование пӑрахӑҫла"
   },
   "history": {
     "title": "Истори",
@@ -87,7 +94,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Комисси тивӗҫлӗхне йӗркеленӗ",
       "HANDOVER_COMPLETED": "Ҫитерсе пӗтернӗ",
       "ADMIN_PROTECTION_RELEASED": "Админ дубликатсене хӳтӗлеме маларах кӑларнӑ. Сӑлтавӗ: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Админ регистрацие {{from}} -ран {{to}} ҫине куҫарнӑ. Сӑлтавӗ: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Админ регистрацие {{from}} -ран {{to}} ҫине куҫарнӑ. Сӑлтавӗ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Тепӗр партнерӑн тепӗр хут регистрациленме хӑтланнине йышӑнман",
+      "BOOKING_CANCELLED": "Бронирование пӑрахӑҫланӑ. Сӑлтавӗ: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ӗҫ харпӑрлӑхӗ партнера тавӑрӑннӑ",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Комисси илме ирӗк пурри броньпа пӗрлех пӑрахӑҫланнӑ",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ҫӗнӗ бронь валли комисси тивӗҫлӗхне тавӑрнӑ"
     }
   }
 }

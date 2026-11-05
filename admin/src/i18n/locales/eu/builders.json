@@ -43,7 +43,9 @@
       "name": "Izena",
       "city": "Hiria",
       "status": "Egoera",
-      "actions": "Ekintzak"
+      "actions": "Ekintzak",
+      "protection": "Bikoiztutako babesa",
+      "matchOn": "Bikoiztuak bat datoz aktibatuta"
     },
     "closeReferrals": "Itxi erreferentzietarako",
     "reopen": "Berriro ireki",
@@ -55,6 +57,25 @@
       "add": "Gehitu proiektua",
       "created": "{{name}} sortu da."
     },
-    "back": "Itzuli Eraikitzaileetara"
+    "back": "Itzuli Eraikitzaileetara",
+    "protection": {
+      "days_one": "{{count}} egun",
+      "days_other": "{{count}} egun",
+      "globalDays_one": "Lehenetsi globala ( {{count}} egun)",
+      "globalDays_other": "Lehenetsi globala ( {{count}} egun)",
+      "globalDefault": "Lehenetsi globala",
+      "placeholder": "Babes-egunak (hutsik = lehenetsi globala)",
+      "saved": "Bikoiztutako babesa eguneratu da {{name}} rentzat.",
+      "hint": "Bikoiztutako babesa: 1-3650 egun, edo utzi hutsik Ezarpenetako lehenetsi globala erabiltzeko. Aldaketa erregistro berriei soilik aplikatzen zaie; lehendik daudenek iraungitzen dute."
+    },
+    "matching": {
+      "global": "Lehenetsi globala",
+      "globalWith": "Lehenetsi orokorra ( {{fields}} )",
+      "mobile": "Sakelako zenbakia",
+      "email": "Posta elektronikoa",
+      "both": "Mugikorra + posta elektronikoa",
+      "saved": "Bikoiztutako bat-etortzea eguneratu da {{name}} rentzat",
+      "hint": "Zein xehetasunek bi izen-emate proiektu baterako bezero bera bihurtzen dute. Aldaketak bikoiztutako egiaztapenei aplikatuko zaizkie hemendik aurrera; indarrean dagoen babesa ez du eraginik."
+    }
   }
 }

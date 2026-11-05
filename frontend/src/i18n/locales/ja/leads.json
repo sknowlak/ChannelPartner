@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "予約済み",
-    "pending": "保留中"
+    "pending": "保留中",
+    "status": {
+      "CONFIRMED": "予約済み",
+      "CANCELLED": "予約がキャンセルされました"
+    }
   },
   "assign": {
     "unassigned": "未割り当て",
@@ -58,7 +62,8 @@
   },
   "project": {
     "none": "まだプロジェクトがありません（参照されていません）",
-    "notInList": "{{project}} (プロジェクトリストにありません)"
+    "notInList": "{{project}} (プロジェクトリストにありません)",
+    "protectionDays_other": "{{count}}日間の保護"
   },
   "journey": {
     "customer": "お客様",
@@ -76,7 +81,14 @@
     "progressHistory": "進捗履歴",
     "timesIn": "( {{timezone}}の時間)",
     "backToMyLeads": "私のリードに戻る",
-    "editLead": "リードの編集"
+    "editLead": "リードの編集",
+    "disputeBanner": "別のパートナーがこの顧客の所有権に異議を唱えています。 Leadrat管理者がそれを検討中です。管理者が決定するまで、保護は維持されます。",
+    "booking": "予約",
+    "commission": "手数料",
+    "notBooked": "予約されていません",
+    "cancelledOn": "{{date}}にキャンセルされました。",
+    "cancelReason": "理由: {{reason}}",
+    "cancelledHint": "建設業者が予約をキャンセルしました - 運営所有権はあなたに戻り、コミッション資格はキャンセルされます。リードが再度予約されると復元されます。"
   },
   "referral": {
     "NOT_REFERRED": "参照されない（プロジェクトがない）",
@@ -158,7 +170,17 @@
       "REFERRAL_ACCEPTED": "ビルダーは紹介を受け入れました",
       "REFERRAL_REJECTED": "ビルダーは紹介を拒否しました。理由: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "管理者は重複保護を早期に解除しました。理由: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "管理者は登録を{{from}}から{{to}}に再割り当てしました。理由: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "管理者は登録を{{from}}から{{to}}に再割り当てしました。理由: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "別のパートナーによる重複登録の試行が拒否されました",
+      "BOOKING_CANCELLED": "予約がキャンセルされました。理由: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "運営上の所有権がパートナーに返還される",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "予約によりコミッション資格がキャンセルされました",
+      "COMMISSION_ELIGIBILITY_RESTORED": "新規予約のコミッション資格が回復されました",
+      "OWNERSHIP_DISPUTE_RAISED": "別のパートナーがこの顧客の所有権に異議を申し立てました - Leadrat管理者がそれを確認します",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "この顧客に関する所有権に関する紛争は取り下げられました - あなたの所有権は変更されません",
+      "OWNERSHIP_DISPUTE_UPHELD": "この顧客に関する所有権に関する異議申し立てが検討されました - あなたの所有権が確認されました",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "所有権紛争があなたに有利な決定を下した後に登録されました。注: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "保護が終了しました: 所有権に関する紛争が別のパートナーに有利に決定されました。注: {{note}}"
     }
   },
   "columnsPanel": {
@@ -182,5 +204,100 @@
     "INVALID_FOR_COUNTRY": "この電話番号は{{country}}では無効です。",
     "COUNTRY_MISMATCH": "正しい国コードを選択してください。",
     "NOT_MOBILE": "固定電話ではなく、携帯電話の番号を入力してください。"
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "対象となる手数料",
+      "PENDING": "コミッションは保留中",
+      "CANCELLED": "コミッションがキャンセルされました"
+    },
+    "attribution": {
+      "ATTRIBUTED": "あなたに帰属します",
+      "DISPUTED": "帰属が争われている"
+    }
+  },
+  "result": {
+    "none": "表示される登録結果はありません。まずリードを登録します。",
+    "acceptedTitle": "リードが登録されました",
+    "rejectedTitle": "リードが登録されていません",
+    "protectionWindow": "保護ウィンドウ",
+    "protectedUntil": "まで保護されます",
+    "openLead": "オープンリード",
+    "addAnother": "別のリードを追加する",
+    "duplicate": "重複 - すでに保護されています",
+    "duplicateHint": "この顧客はすでに別の登録によってこのプロジェクトに対して保護されているため、あなたのために登録できませんでした。",
+    "existingProtectedUntil": "既存の登録は次の期限まで保護されます"
+  },
+  "disputes": {
+    "title": "私の論争",
+    "intro": "顧客に対して提起した所有権に関する紛争で、重複として拒否されました。 Leadrat管理者がそれぞれをレビューします。",
+    "empty": "あなたは何も異議を唱えていません。連れてきた顧客が重複として拒否された場合、登録結果から異議を申し立てることができます。",
+    "columns": {
+      "dispute": "紛争",
+      "reason": "あなたの理由",
+      "outcome": "結果"
+    },
+    "status": {
+      "OPEN": "検討中",
+      "UPHELD": "あなたに有利ではありません",
+      "OVERTURNED": "あなたに有利に決定しました",
+      "WITHDRAWN": "撤回されました"
+    },
+    "awaitingReview": "管理者のレビューを待っています",
+    "openNewLead": "見込み客{{id}}を開きます",
+    "withdraw": "撤回する",
+    "withdrawConfirm": "{{name}}に対する異議申し立てを取り下げますか?現在の所有権はそのまま残ります。",
+    "raise": "所有権を争う",
+    "raiseTitle": "所有権を争う",
+    "raiseHint": "この顧客が最初にあなたのところに来た場合は、その理由を説明してください。 Leadrat管理者がそれをレビューします。彼らがあなたに有利な決定をした場合、見込み客はあなたのために登録されます。",
+    "reasonLabel": "なぜこの顧客があなたのものなのでしょうか？",
+    "reasonMin_other": "少なくとも{{count}}文字以上。",
+    "submit": "異議申し立てを送信する",
+    "notProtected": "このプロジェクトに関してこの顧客を保護する人はもういません。今すぐリードを登録できます。",
+    "raised": "異議申し立て{{id}}が審査のために送信されました。",
+    "viewAll": "私の論争を見る"
+  },
+  "dashboard": {
+    "title": "ダッシュボード",
+    "period": "期間",
+    "lastDays_other": "{{count}}日",
+    "emptyTitle": "いらっしゃいませ！まだリードがありません。",
+    "emptyHint": "最初のリードを登録します。パイプライン、予約、保護期限がここに表示されます。",
+    "tiles": {
+      "leads": "リードの合計",
+      "newInPeriod_other": "この期間の{{count}}の新規",
+      "accepted": "承認されました",
+      "booked": "予約済み",
+      "bookedInPeriod_other": "この期間に{{count}}件が予約されました",
+      "conversion": "変換",
+      "conversionHint": "受け入れられたリードのシェアとしての予約済みリード",
+      "protectedNow": "現在保護されています",
+      "expiringSoon_other": "保護はあと{{count}}日で終了します",
+      "disputedNow": "他人から反論された",
+      "disputedNowHint": "別のパートナーから所有権に関する未解決の紛争が発生している見込み客",
+      "commissionEligible": "対象となる手数料",
+      "commissionCancelled_other": "{{count}}個がキャンセルされました"
+    },
+    "chart": {
+      "title_other": "1 日あたりの登録と予約 - 過去{{count}}日間",
+      "registrations": "登録",
+      "bookings": "予約"
+    },
+    "byStage": "ステータス別のリード",
+    "bySource": "情報源別の見込み客",
+    "byReferral": "紹介ステータス別の見込み客",
+    "myDisputes": "あなたが提起した紛争",
+    "noDisputes": "異議は提起されませんでした。",
+    "unknown": "未設定",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "外部CRM （模擬）",
+      "PARTNER_CRM": "あなたのチームによって追加されました",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "統合",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_other": "保護期間は今後{{count}}日以内に期限切れになります",
+    "expiringEmpty": "このウィンドウでは、リードが保護を失うことはありません。"
   }
 }

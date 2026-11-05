@@ -30,7 +30,8 @@
       "registered": "Anrezistre"
     },
     "booked": "Finn rezerve",
-    "empty": "Pena okenn referans ankor."
+    "empty": "Pena okenn referans ankor.",
+    "bookingCancelled": "Rezervasion finn anile"
   },
   "detail": {
     "customer": "Klian",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Rezervasion finn konfirme.",
       "accepted": "Referans finn aksepte.",
-      "rejected": "Referans finn rezete."
+      "rejected": "Referans finn rezete.",
+      "bookingCancelled": "Rezervasion finn anile."
     },
-    "backToReferrals": "Retourn lor bann referans"
+    "backToReferrals": "Retourn lor bann referans",
+    "bookingCancelled": "Rezervasion finn anile",
+    "cancelBooking": "Anile Rezervasion",
+    "cancelReasonLabel": "Rezon pou anilasion (montre partner-la) *",
+    "cancelBookingHint": "Propriete operasionel retourn a partener-la e zot kalifikasion pou komision anile. Kapav rezerv lead-la ankor plitar.",
+    "cancelBookingConfirm": "Anile rezervasion-la"
   },
   "history": {
     "title": "Zistwar",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Finn kree elizibilite pou komision",
       "HANDOVER_COMPLETED": "Remet finn konplete",
       "ADMIN_PROTECTION_RELEASED": "Admin finn pibliye proteksion doub boner. Rezon: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin finn re-asign lanrezistreman depi {{from}} ziska {{to}} . Rezon: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin finn re-asign lanrezistreman depi {{from}} ziska {{to}} . Rezon: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Enn tantativ lanrezistreman doub par enn lot partener finn rezete",
+      "BOOKING_CANCELLED": "Rezervasion finn anile. Rezon: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Propriete operasionel finn retourn a partener-la",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kalifikasion komision finn anile avek rezervasion",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kalifikasion pou komision finn retourne pou nouvo rezervasion"
     }
   }
 }

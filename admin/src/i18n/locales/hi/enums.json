@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "पात्र",
-    "PENDING": "लंबित"
+    "PENDING": "लंबित",
+    "CANCELLED": "रद्द"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "डुप्लिकेट सुरक्षा समय से पहले हटाएँ",
-    "REASSIGN_PARTNER": "किसी दूसरे पार्टनर को सौंपें"
+    "REASSIGN_PARTNER": "किसी दूसरे पार्टनर को सौंपें",
+    "CANCEL_BOOKING": "बुकिंग रद्द करें"
   },
   "dataType": {
     "TEXT": "टेक्स्ट",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "सुपर एडमिन",
     "ADMIN": "एडमिन"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "पुष्ट",
+    "CANCELLED": "रद्द"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "श्रेय दिया गया",
+    "DISPUTED": "विवादित"
+  },
+  "disputeStatus": {
+    "OPEN": "खुला",
+    "UPHELD": "बरकरार रखा गया",
+    "OVERTURNED": "पलटा गया",
+    "WITHDRAWN": "वापस लिया गया"
   }
 }

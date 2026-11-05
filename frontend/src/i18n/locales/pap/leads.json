@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Reservá",
-    "pending": "Na espera di"
+    "pending": "Na espera di",
+    "status": {
+      "CONFIRMED": "Reservá",
+      "CANCELLED": "Reservashon kanselá"
+    }
   },
   "assign": {
     "unassigned": "No asigná",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "No tin proyekto ainda (no a referí)",
-    "notInList": "{{project}} (no ta den e lista di proyekto)"
+    "notInList": "{{project}} (no ta den e lista di proyekto)",
+    "protectionDays_one": "{{count}} -protekshon di dia",
+    "protectionDays_other": "{{count}} -protekshon di dia"
   },
   "journey": {
     "customer": "Kliente",
@@ -76,7 +82,14 @@
     "progressHistory": "Historia di Progreso",
     "timesIn": "(ora den {{timezone}} )",
     "backToMyLeads": "Bek na Mi Leadnan",
-    "editLead": "Editá Lead"
+    "editLead": "Editá Lead",
+    "disputeBanner": "Un otro partner a disputa propiedat di e kliente aki. Un atministradó Leadrat ta revisá esaki - bo protekshon ta keda na su lugá te ora nan disidí.",
+    "booking": "Reservashon",
+    "commission": "Komishon",
+    "notBooked": "No a reservá",
+    "cancelledOn": "Kanselá riba {{date}} .",
+    "cancelReason": "Motibu: {{reason}}",
+    "cancelledHint": "E konstruktor a kanselá e reservashon - propiedat operashonal ta bèk serka bo i eligibilidat pa komishon ta kanselá. E ta wòrdu restourá si e lead wòrdu reservá atrobe."
   },
   "referral": {
     "NOT_REFERRED": "No a referí (no tin proyekto)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Konstruktor a aseptá e referensia",
       "REFERRAL_REJECTED": "Konstruktor a rechasá e referensia. Motibu: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Atministradó a lansa protekshon di duplikado trempan. Motibu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin a reasigná registrashon di {{from}} pa {{to}} . Motibu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin a reasigná registrashon di {{from}} pa {{to}} . Motibu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Un intento di registrashon dupliká di un otro partner a wòrdu rechasá",
+      "BOOKING_CANCELLED": "Reservashon kanselá. Motibu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Propiedat operashonal debolbí na e partner",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Eligibilidat pa komishon kanselá ku e reservashon",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Eligibilidat di komishon a wòrdu restourá pa e reservashon nobo",
+      "OWNERSHIP_DISPUTE_RAISED": "Un otro partner a disputa propiedat di e kliente aki - un atministradó Leadrat lo revisá esaki",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "E disputa di propiedat riba e kliente aki a wòrdu retirá - bo propiedat no a kambia",
+      "OWNERSHIP_DISPUTE_UPHELD": "E disputa di propiedat riba e kliente aki a wòrdu revisá - bo propiedat ta konfirmá",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Registrá despues ku bo disputa di propiedat a wòrdu disidí na bo fabor. Nota: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Protekshon a terminá: un disputa di propiedat a wòrdu disidí na fabor di un otro partner. Nota: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "E number di telefon aki no ta bálido pa {{country}} .",
     "COUNTRY_MISMATCH": "Por fabor selektá e kódigo di pais korekto.",
     "NOT_MOBILE": "Por fabor introdusí un number di telefòn selular, no un telefon fiho."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komishon eligibel",
+      "PENDING": "Komishon pendiente",
+      "CANCELLED": "Komishon kanselá"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Atribuí na bo",
+      "DISPUTED": "Atribushon disputá"
+    }
+  },
+  "result": {
+    "none": "No tin resultado di inskripshon pa mustra. Registrá un lead promé.",
+    "acceptedTitle": "Plomo registrá",
+    "rejectedTitle": "Lead no ta registrá",
+    "protectionWindow": "Bentana di Protekshon",
+    "protectedUntil": "Protehá Te",
+    "openLead": "Habri Lead",
+    "addAnother": "Agregá un otro Lead",
+    "duplicate": "Duplikado - ya kaba protehá",
+    "duplicateHint": "E kliente aki ta protehá kaba pa e proyekto aki dor di un otro registrashon, pues e no por a wòrdu registrá pa bo.",
+    "existingProtectedUntil": "Registrashon eksistente protehá te"
+  },
+  "disputes": {
+    "title": "Mi Disputanan",
+    "intro": "Disputanan di propiedat ku bo a lanta pa klientenan ku a wòrdu nenga komo duplikado. Un atministradó Leadrat ta revisá kada un.",
+    "empty": "Bo no a lanta ningun disputa. Si un kliente ku bo a trese ta wòrdu nenga komo un duplikado, bo por disputá esaki for di e resultado di registrashon.",
+    "columns": {
+      "dispute": "Disputa",
+      "reason": "Bo motibu",
+      "outcome": "Resultado"
+    },
+    "status": {
+      "OPEN": "Bou di revishon",
+      "UPHELD": "No na bo fabor",
+      "OVERTURNED": "Disidí na bo fabor",
+      "WITHDRAWN": "Retirá"
+    },
+    "awaitingReview": "Wardando riba revishon di atministradó",
+    "openNewLead": "Habri bo lead {{id}}",
+    "withdraw": "Retirá",
+    "withdrawConfirm": "Retirá bo disputa pa {{name}} ? E propiedat aktual ta keda manera e ta.",
+    "raise": "Disputa di propiedat",
+    "raiseTitle": "Disputa di propiedat",
+    "raiseHint": "Si e kliente aki a bin serka bo promé, splika dikon. Un atministradó Leadrat lo revisá esaki; si nan disidí na bo fabor, e lead ta registrá pa bo.",
+    "reasonLabel": "Dikon e kliente aki ta di bo?",
+    "reasonMin_one": "Por lo ménos {{count}} karakter.",
+    "reasonMin_other": "Por lo ménos {{count}} karakter.",
+    "submit": "Manda Disputa",
+    "notProtected": "Niun hende no ta tene protekshon riba e kliente aki pa e proyekto aki mas - bo por registrá e lead awor.",
+    "raised": "Disputa {{id}} a wòrdu mandá pa revishon.",
+    "viewAll": "Wak mi disputanan"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Punto",
+    "lastDays_one": "{{count}} dia",
+    "lastDays_other": "{{count}} dia",
+    "emptyTitle": "Bon bini! Bo no tin pista ainda.",
+    "emptyHint": "Registrá bo promé lead - bo pipeline, reservashonnan i fechanan límite di protekshon lo aparesé aki.",
+    "tiles": {
+      "leads": "Total di lead",
+      "newInPeriod_one": "{{count}} nobo den e periodo aki",
+      "newInPeriod_other": "{{count}} nobo den e periodo aki",
+      "accepted": "Aseptá",
+      "booked": "Reservá",
+      "bookedInPeriod_one": "{{count}} reservá den e periodo aki",
+      "bookedInPeriod_other": "{{count}} reservá den e periodo aki",
+      "conversion": "Kombershon",
+      "conversionHint": "Leadnan reservá komo un parti di leadnan aseptá",
+      "protectedNow": "Protehá awor",
+      "expiringSoon_one": "Protekshon ta kaba den {{count}} dia",
+      "expiringSoon_other": "Protekshon ta kaba den {{count}} dia",
+      "disputedNow": "Disputá pa otronan",
+      "disputedNowHint": "Bo ta kondusí ku un disputa di propiedat habrí di un otro partner",
+      "commissionEligible": "Komishon eligibel",
+      "commissionCancelled_one": "{{count}} kanselá",
+      "commissionCancelled_other": "{{count}} kanselá"
+    },
+    "chart": {
+      "title_one": "Inskripshon i reservashon pa dia - último {{count}} dia",
+      "title_other": "Inskripshon i reservashon pa dia - último {{count}} dianan",
+      "registrations": "Inskripshonnan",
+      "bookings": "Reservashonnan"
+    },
+    "byStage": "Lider pa status",
+    "bySource": "Lider pa fuente",
+    "byReferral": "Lidernan pa status di referensia",
+    "myDisputes": "Disputanan ku bo a lanta",
+    "noDisputes": "No tin disputa lanta.",
+    "unknown": "No ta set",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM eksterno (simulá)",
+      "PARTNER_CRM": "Agregá pa bo tim",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integrashon",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Protekshon ta kaduká den e siguiente {{count}} dia",
+    "expiringTitle_other": "Protekshon ta kaduká den e próksimo {{count}} dianan",
+    "expiringEmpty": "Ningun plomo ta pèrdè su protekshon den e bentana aki."
   }
 }

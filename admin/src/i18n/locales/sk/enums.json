@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Oprávnené",
-    "PENDING": "Čaká na spracovanie"
+    "PENDING": "Čaká na spracovanie",
+    "CANCELLED": "Zrušené"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Uvoľnite ochranu duplikátov včas",
-    "REASSIGN_PARTNER": "Preradenie na iného partnera"
+    "REASSIGN_PARTNER": "Preradenie na iného partnera",
+    "CANCEL_BOOKING": "Zrušiť rezerváciu"
   },
   "dataType": {
     "TEXT": "Text",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super správca",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Potvrdené",
+    "CANCELLED": "Zrušené"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Pripísané",
+    "DISPUTED": "Sporný"
+  },
+  "disputeStatus": {
+    "OPEN": "OTVORENÉ",
+    "UPHELD": "Podporené",
+    "OVERTURNED": "Prevrátený",
+    "WITHDRAWN": "Stiahnuté"
   }
 }

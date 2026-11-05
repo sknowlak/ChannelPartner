@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "യോഗ്യൻ",
-    "PENDING": "തീർപ്പാക്കാത്തത്"
+    "PENDING": "തീർപ്പാക്കാത്തത്",
+    "CANCELLED": "റദ്ദാക്കി"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "ഡ്യൂപ്ലിക്കേറ്റ് പരിരക്ഷ നേരത്തെ റിലീസ് ചെയ്യുക",
-    "REASSIGN_PARTNER": "മറ്റൊരു പങ്കാളിക്ക് വീണ്ടും അസൈൻ ചെയ്യുക"
+    "REASSIGN_PARTNER": "മറ്റൊരു പങ്കാളിക്ക് വീണ്ടും അസൈൻ ചെയ്യുക",
+    "CANCEL_BOOKING": "ബുക്കിംഗ് റദ്ദാക്കുക"
   },
   "dataType": {
     "TEXT": "വാചകം",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "സൂപ്പർ അഡ്മിൻ",
     "ADMIN": "അഡ്മിൻ"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "സ്ഥിരീകരിച്ചു",
+    "CANCELLED": "റദ്ദാക്കി"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "ആട്രിബ്യൂട്ട് ചെയ്തത്",
+    "DISPUTED": "തർക്കം"
+  },
+  "disputeStatus": {
+    "OPEN": "തുറക്കുക",
+    "UPHELD": "ഉയർത്തിപ്പിടിച്ചു",
+    "OVERTURNED": "മറിഞ്ഞു",
+    "WITHDRAWN": "പിൻവലിച്ചു"
   }
 }

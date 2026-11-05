@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Naka-book",
-    "pending": "Nakabinbin"
+    "pending": "Nakabinbin",
+    "status": {
+      "CONFIRMED": "Naka-book",
+      "CANCELLED": "Kinansela ang booking"
+    }
   },
   "assign": {
     "unassigned": "Hindi nakatalaga",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Wala pang proyekto (hindi tinutukoy)",
-    "notInList": "{{project}} (wala sa listahan ng proyekto)"
+    "notInList": "{{project}} (wala sa listahan ng proyekto)",
+    "protectionDays_one": "{{count}} -araw na proteksyon",
+    "protectionDays_other": "{{count}} -araw na proteksyon"
   },
   "journey": {
     "customer": "Customer",
@@ -76,7 +82,14 @@
     "progressHistory": "Kasaysayan ng Pag-unlad",
     "timesIn": "(mga oras sa {{timezone}} )",
     "backToMyLeads": "Bumalik sa Aking Mga Lead",
-    "editLead": "I-edit ang Lead"
+    "editLead": "I-edit ang Lead",
+    "disputeBanner": "Ang isa pang kasosyo ay nag-dispute sa pagmamay-ari ng customer na ito. Sinusuri ito ng admin Leadrat - nananatili ang iyong proteksyon hanggang sa magpasya sila.",
+    "booking": "Pagbu-book",
+    "commission": "Komisyon",
+    "notBooked": "Hindi naka-book",
+    "cancelledOn": "Kinansela noong {{date}} .",
+    "cancelReason": "Dahilan: {{reason}}",
+    "cancelledHint": "Kinansela ng tagabuo ang booking - ang pagmamay-ari sa pagpapatakbo ay bumalik sa iyo at kinansela ang pagiging kwalipikado ng komisyon. Ito ay naibalik kung ang lead ay nai-book muli."
   },
   "referral": {
     "NOT_REFERRED": "Hindi isinangguni (walang proyekto)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Tinanggap ng Builder ang referral",
       "REFERRAL_REJECTED": "Tinanggihan ng Builder ang referral. Dahilan: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Maagang naglabas ng duplicate na proteksyon ang admin. Dahilan: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Muling itinalaga ng admin ang pagpaparehistro mula {{from}} hanggang {{to}} . Dahilan: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Muling itinalaga ng admin ang pagpaparehistro mula {{from}} hanggang {{to}} . Dahilan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ang isang dobleng pagtatangka sa pagpaparehistro ng isa pang kasosyo ay tinanggihan",
+      "BOOKING_CANCELLED": "Kinansela ang booking. Dahilan: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ibinalik sa partner ang operational ownership",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kinansela ang pagiging karapat-dapat sa komisyon kasama ng booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Naibalik ang pagiging kwalipikado ng komisyon para sa bagong booking",
+      "OWNERSHIP_DISPUTE_RAISED": "Isa pang partner ang nag-dispute sa pagmamay-ari ng customer na ito - susuriin ito ng isang Leadrat admin",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Ang hindi pagkakaunawaan sa pagmamay-ari sa customer na ito ay binawi - ang iyong pagmamay-ari ay hindi nabago",
+      "OWNERSHIP_DISPUTE_UPHELD": "Ang hindi pagkakaunawaan sa pagmamay-ari sa customer na ito ay nasuri - nakumpirma ang iyong pagmamay-ari",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Nakarehistro pagkatapos mapagpasyahan ang iyong hindi pagkakaunawaan sa pagmamay-ari na pabor sa iyo. Tandaan: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Natapos ang proteksyon: isang hindi pagkakaunawaan sa pagmamay-ari ang napagpasyahan pabor sa isa pang kasosyo. Tandaan: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Ang numero ng teleponong ito ay hindi wasto para sa {{country}} .",
     "COUNTRY_MISMATCH": "Pakipili ang tamang country code.",
     "NOT_MOBILE": "Mangyaring maglagay ng mobile number, hindi landline."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Kwalipikado sa komisyon",
+      "PENDING": "Nakabinbin ang komisyon",
+      "CANCELLED": "Kinansela ang komisyon"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Na-attribute sa iyo",
+      "DISPUTED": "Pinagtatalunan ang pagpapatungkol"
+    }
+  },
+  "result": {
+    "none": "Walang ipapakitang resulta ng pagpaparehistro. Magrehistro muna ng lead.",
+    "acceptedTitle": "Nakarehistro ang lead",
+    "rejectedTitle": "Hindi nakarehistro ang lead",
+    "protectionWindow": "Proteksyon Window",
+    "protectedUntil": "Pinoprotektahan Hanggang",
+    "openLead": "Buksan ang Lead",
+    "addAnother": "Magdagdag ng Isa pang Lead",
+    "duplicate": "Duplicate - protektado na",
+    "duplicateHint": "Ang customer na ito ay protektado na para sa proyektong ito ng isa pang pagpaparehistro, kaya hindi ito mairehistro para sa iyo.",
+    "existingProtectedUntil": "Ang kasalukuyang pagpaparehistro ay protektado hanggang"
+  },
+  "disputes": {
+    "title": "Aking Mga Pagtatalo",
+    "intro": "Mga hindi pagkakaunawaan sa pagmamay-ari na ibinangon mo para sa mga customer na tinanggihan bilang mga duplicate. Sinusuri ng admin Leadrat ang bawat isa.",
+    "empty": "Hindi ka nagtaas ng anumang mga hindi pagkakaunawaan. Kung ang isang customer na dinala mo ay tinanggihan bilang isang duplicate, maaari mo itong i-dispute mula sa resulta ng pagpaparehistro.",
+    "columns": {
+      "dispute": "pagtatalo",
+      "reason": "Ang iyong dahilan",
+      "outcome": "kinalabasan"
+    },
+    "status": {
+      "OPEN": "Sinusuri",
+      "UPHELD": "Hindi pabor sayo",
+      "OVERTURNED": "Nagpasya sa iyong pabor",
+      "WITHDRAWN": "Binawi"
+    },
+    "awaitingReview": "Naghihintay para sa pagsusuri ng admin",
+    "openNewLead": "Buksan ang iyong lead {{id}}",
+    "withdraw": "Mag-withdraw",
+    "withdrawConfirm": "Bawiin ang iyong hindi pagkakaunawaan para kay {{name}} ? Ang kasalukuyang pagmamay-ari ay nananatili sa dati.",
+    "raise": "Pagtatalunan ang pagmamay-ari",
+    "raiseTitle": "Pagtatalunan ang pagmamay-ari",
+    "raiseHint": "Kung unang dumating sa iyo ang customer na ito, ipaliwanag kung bakit. Susuriin ito ng isang Leadrat admin; kung magpasya sila sa iyong pabor, ang lead ay nakarehistro para sa iyo.",
+    "reasonLabel": "Bakit sa iyo ang customer na ito?",
+    "reasonMin_one": "Hindi bababa sa {{count}} character.",
+    "reasonMin_other": "Hindi bababa sa {{count}} na mga character.",
+    "submit": "Ipadala ang Dispute",
+    "notProtected": "Wala nang humahawak ng proteksyon sa customer na ito para sa proyektong ito - maaari mong irehistro ang lead ngayon.",
+    "raised": "Ipinadala ang hindi pagkakaunawaan {{id}} para sa pagsusuri.",
+    "viewAll": "Tingnan ang aking mga hindi pagkakaunawaan"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Panahon",
+    "lastDays_one": "{{count}} araw",
+    "lastDays_other": "{{count}} araw",
+    "emptyTitle": "Maligayang pagdating! Wala ka pang lead.",
+    "emptyHint": "Irehistro ang iyong unang lead - lalabas dito ang iyong pipeline, mga booking at mga deadline ng proteksyon.",
+    "tiles": {
+      "leads": "Kabuuang mga lead",
+      "newInPeriod_one": "{{count}} bago sa panahong ito",
+      "newInPeriod_other": "{{count}} bago sa panahong ito",
+      "accepted": "Tinanggap",
+      "booked": "Naka-book",
+      "bookedInPeriod_one": "{{count}} ang na-book sa panahong ito",
+      "bookedInPeriod_other": "{{count}} ang na-book sa panahong ito",
+      "conversion": "Pagbabalik-loob",
+      "conversionHint": "Nag-book ng mga lead bilang bahagi ng mga tinatanggap na lead",
+      "protectedNow": "Protektado ngayon",
+      "expiringSoon_one": "Proteksyon na magtatapos sa {{count}} araw",
+      "expiringSoon_other": "Proteksyon na magtatapos sa {{count}} na) araw",
+      "disputedNow": "Pinagtatalunan ng iba",
+      "disputedNowHint": "Ang iyong mga lead na may bukas na hindi pagkakaunawaan sa pagmamay-ari mula sa isa pang kasosyo",
+      "commissionEligible": "Kwalipikado sa komisyon",
+      "commissionCancelled_one": "{{count}} kinansela",
+      "commissionCancelled_other": "{{count}} kinansela"
+    },
+    "chart": {
+      "title_one": "Mga pagpaparehistro at booking bawat araw - huling {{count}} araw",
+      "title_other": "Mga pagpaparehistro at booking bawat araw - huling {{count}} na araw",
+      "registrations": "Mga pagpaparehistro",
+      "bookings": "Mga booking"
+    },
+    "byStage": "Nangunguna ayon sa katayuan",
+    "bySource": "Nangunguna ayon sa pinagmulan",
+    "byReferral": "Nangunguna ayon sa katayuan ng referral",
+    "myDisputes": "Mga pagtatalo na ibinangon mo",
+    "noDisputes": "Walang mga pagtatalo.",
+    "unknown": "Hindi nakatakda",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Panlabas na CRM (simulate)",
+      "PARTNER_CRM": "Idinagdag ng iyong koponan",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Pagsasama",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Mag-e-expire ang proteksyon sa susunod na {{count}} araw",
+    "expiringTitle_other": "Mag-e-expire ang proteksyon sa susunod na {{count}} na araw",
+    "expiringEmpty": "Walang lead ang mawawalan ng proteksyon sa window na ito."
   }
 }

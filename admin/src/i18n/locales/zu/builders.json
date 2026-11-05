@@ -43,7 +43,9 @@
       "name": "Igama",
       "city": "Idolobha",
       "status": "Isimo",
-      "actions": "Izenzo"
+      "actions": "Izenzo",
+      "protection": "Ukuvikela okuyimpinda",
+      "matchOn": "Ukufana okuphindiwe kuvuliwe"
     },
     "closeReferrals": "Vala ukuze uthole ukudluliselwa",
     "reopen": "Vula futhi",
@@ -55,6 +57,25 @@
       "add": "Engeza iphrojekthi",
       "created": "Kudalwe i- {{name}} ."
     },
-    "back": "Buyela Kumakhi"
+    "back": "Buyela Kumakhi",
+    "protection": {
+      "days_one": "{{count}} usuku",
+      "days_other": "{{count}} izinsuku",
+      "globalDays_one": "Okuzenzakalelayo komhlaba wonke ( {{count}} usuku)",
+      "globalDays_other": "Okuzenzakalelayo komhlaba wonke ( {{count}} izinsuku)",
+      "globalDefault": "Okuzenzakalelayo komhlaba wonke",
+      "placeholder": "Izinsuku zokuvikela (akunalutho = okuzenzakalelayo komhlaba wonke)",
+      "saved": "Ukuvikela okuyimpinda kubuyekezwe kokuthi {{name}} .",
+      "hint": "Ukuvikela okuyimpinda: izinsuku ezingu-1-3650, noma shiya kungenalutho ukuze usebenzise okuzenzakalelayo komhlaba wonke kokuthi Izilungiselelo. Ushintsho lusebenza kuphela ekubhaliseni okusha - okukhona kugcina ukuphelelwa yisikhathi."
+    },
+    "matching": {
+      "global": "Okuzenzakalelayo komhlaba wonke",
+      "globalWith": "Okuzenzakalelayo komhlaba wonke ( {{fields}} )",
+      "mobile": "Inombolo yeselula",
+      "email": "I-imeyili",
+      "both": "Inombolo yeselula + i-imeyili",
+      "saved": "Ukufanisa okuyimpinda kubuyekeziwe kokuthi {{name}}",
+      "hint": "Imiphi imininingwane eyenza ukubhaliswa okubili kube ikhasimende elifanayo lephrojekthi. Izinguquko ziyasebenza ekuhloleni okuyimpinda kusukela manje kuqhubeke; ukuvikeleka okukhona akuthinteki."
+    }
   }
 }

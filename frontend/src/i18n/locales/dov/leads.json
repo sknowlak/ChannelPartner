@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "wakabbuku",
-    "pending": "Zichilindidwe"
+    "pending": "Zichilindidwe",
+    "status": {
+      "CONFIRMED": "wakabbuku",
+      "CANCELLED": "Kubhuka kwakachilwa"
+    }
   },
   "assign": {
     "unassigned": "Kakwiina kupegwa",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Taakwe pulojekiti pe (tanatuminwa)",
-    "notInList": "{{project}} (kutali mumulongo wamapulojekiti)"
+    "notInList": "{{project}} (kutali mumulongo wamapulojekiti)",
+    "protectionDays_one": "{{count}} -buzuba bwakukwabililwa",
+    "protectionDays_other": "{{count}} -buzuba bwakukwabililwa"
   },
   "journey": {
     "customer": "Sikuula",
@@ -76,7 +82,14 @@
     "progressHistory": "Makani aakaindi aakuyaambele",
     "timesIn": "(ziindi mu {{timezone}} )",
     "backToMyLeads": "Kujokela kuzyintu zyangu",
-    "editLead": "Bambulula Musololi"
+    "editLead": "Bambulula Musololi",
+    "disputeBanner": "Umwi mweenzinyina wakakazya bweendelezi bwa kasitoma ooyu. Mweendelezi Leadrat uli mukulanga-langa - lukwabililo lwako lulakkala kusikila mane basale.",
+    "booking": "Kubhuka",
+    "commission": "Mulawu wakutobelezya , kabunga kasalidwe",
+    "notBooked": "Tazina bbuku",
+    "cancelledOn": "Zyakagwisigwa mu {{date}} .",
+    "cancelReason": "Kaambo: {{reason}}",
+    "cancelledHint": "Sikuyaka wakacileka kubbukula - bulelo bwakubelesya bwajokela kuli nduwe mpawo kweelela kutambula mali kwakachilwa. Chilajokezyegwa kuti naa ntalisyo yabikkwa alimwi."
   },
   "referral": {
     "NOT_REFERRED": "tiikwatumwa pe (kunyina pulojekiti)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Muyaki wakazumina kutuminwa",
       "REFERRAL_REJECTED": "Muyaki wakakaka kutuminwa. Kaambo: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Mweendelezi wakagwisya lukwabililo lwazintu zyobile kakuchili chiindi. Kaambo: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Mweendelezi wakabikka kulembwa kuzwa ku {{from}} kuya ku {{to}} . Kaambo: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Mweendelezi wakabikka kulembwa kuzwa ku {{from}} kuya ku {{to}} . Kaambo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Kusoleka kulilembya lubo kwakachitwa awumwi mweenzinyina kwakakilwa",
+      "BOOKING_CANCELLED": "Kubhuka kwakachilwa. Kaambo: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Bulelo bwakubeleka bwakajokezyegwa kuli yooyo mweenzinyina",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kweelela kwakutambula mali kwakachilwa aawo nowakabikka",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kweelela kwakutambula mali kwakapilusyigwa akaambo kabbuku lipya",
+      "OWNERSHIP_DISPUTE_RAISED": "Umwi mweenzinyina wakakazya bulelo bwa kasitoma ooyu - mweendelezi Leadrat ulalanga-langa",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Kukazyanya kwabweendelezi bwa kasitoma ooyu kwakagwisigwa - bulelo bwako tabunachinchi pe",
+      "OWNERSHIP_DISPUTE_UPHELD": "Kukazyanya kwabweendelezi bwa kasitoma ooyu kwakalangwa-langwa - bulelo bwako bwasinizyigwa",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Yakalembesegwa nikwakamana kukazyania kwako kwabulelo kwakakosolwa munzila yakugwasya. chiyanza: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Kukwabililwa kwakamana: kukazyania kwabulelo kwakakosolwa kuti kube umwi mweenzinyina. chiyanza: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Eeyi namba yafooni tiibeleki pe ku {{country}} .",
     "COUNTRY_MISMATCH": "Twalomba kuti usale kkodi yanyika iiluzi.",
     "NOT_MOBILE": "Twalomba kuti ulembe namba yafooni, kutali yafooni yamuŋanda."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Kkomishini yeelela",
+      "PENDING": "Mulimo uulindila",
+      "CANCELLED": "Mulimo wakagwisigwa"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Zyakapegwa kuli nduwe",
+      "DISPUTED": "Kupegwa kwakazyigwa"
+    }
+  },
+  "result": {
+    "none": "Kunyina mpindu yakulembesya itondezyedwe. Kosaanguna kulemba muntu uusololela.",
+    "acceptedTitle": "Musololi wakalembwa",
+    "rejectedTitle": "Musololi taulembedwe pe",
+    "protectionWindow": "Iwindo lyakukwabilila",
+    "protectedUntil": "Kukwabililwa Kusikila",
+    "openLead": "Jula Musololi",
+    "addAnother": "Koyungizya bumbi busolozi",
+    "duplicate": "Kukozyanya - kwakwabililwa kale",
+    "duplicateHint": "Ooyu kasitoma ulikwabilidwe kale kupulojekiti eeyi kwiinda mukulembesya kumbi, aboobo teensi wakakonzya kulembwa kuli nduwe.",
+    "existingProtectedUntil": "Kulembesya kuliwo kwakwabililwa kusikila"
+  },
+  "disputes": {
+    "title": "Mazwanga aangu",
+    "intro": "Kukazyanya kwabweendelezi nkowakabusya kuli basikuula kwalo kwakakilwa kuti nzintu zyobile. Mweendelezi Leadrat ulalanga-langa chimwi achimwi.",
+    "empty": "Tokwe nowakabusya mazwanga aali woonse. Kuti kasitoma ngowakaleta wakakilwa kuba nduwe, ulakonzya kukazya kuzwa kukulembesya.",
+    "columns": {
+      "dispute": "Kutamvwanana",
+      "reason": "Kaambo kako",
+      "outcome": "Zyazwa"
+    },
+    "status": {
+      "OPEN": "Mukulanga-langa",
+      "UPHELD": "Takuli kabotu pe",
+      "OVERTURNED": "twasala munzila iigwasya",
+      "WITHDRAWN": "wakagwisigwa"
+    },
+    "awaitingReview": "Kulindila kulanga-langa kwamweendelezi",
+    "openNewLead": "Jula nzila yako {{id}}",
+    "withdraw": "Kugwisya",
+    "withdrawConfirm": "Kogwisya kukazyania kwako kwa {{name}} ? Bweendelezi buliwo lino buli mbuli mbububede.",
+    "raise": "Kukazyania aatala abulelo",
+    "raiseTitle": "Kukazyania aatala abulelo",
+    "raiseHint": "Kuti kasitoma ooyu wakasaanguna kuboola kuli nduwe, kopandulula kaambo. Mweendelezi Leadrat ulalanga-langa; kuti basala munzila iigwasya, musololi ulalembedwe kuli nduwe.",
+    "reasonLabel": "Nkaambo nzi kasitoma ooyu nkako?",
+    "reasonMin_one": "Kucheya kwa {{count}} bbala.",
+    "reasonMin_other": "Kucheya {{count}} mabala.",
+    "submit": "Tuma kukazyania",
+    "notProtected": "Taakwe uukwabilila kasitoma ooyu mumulimo ooyu limbi - ulakonzya kulilembya sikusololela lino.",
+    "raised": "Kukazyanya {{id}} kwakatuminwa kuti kulangululwe.",
+    "viewAll": "Langa mazwanga aangu"
+  },
+  "dashboard": {
+    "title": "Dashibbodi",
+    "period": "Muchiindi",
+    "lastDays_one": "{{count}} buzuba",
+    "lastDays_other": "{{count}} mazuba",
+    "emptyTitle": "Watambulwa! Tokwe nzila zyakusololela pe.",
+    "emptyHint": "Lemba mpuwo yako yakusaanguna - nzila yako, mabbuku alimwi amazuba aakumanizya aakukwabililwa ziyootondezyegwa aawa.",
+    "tiles": {
+      "leads": "mweelwe woonse",
+      "newInPeriod_one": "{{count}} mpya muchiindi eechi",
+      "newInPeriod_other": "{{count}} mpya muchiindi eechi",
+      "accepted": "Zyakazuminwa",
+      "booked": "wakabbuku",
+      "bookedInPeriod_one": "{{count}} yakabbukwa muchiindi eechi",
+      "bookedInPeriod_other": "{{count}} yakabbukwa muchiindi eechi",
+      "conversion": "Kusanduka",
+      "conversionHint": "Basikusololela bakabikkwa mbuli chibeela chabasikusololela bakatambulwa",
+      "protectedNow": "Chikwabilidwe lino",
+      "expiringSoon_one": "Lukwabililo lumana mubuzuba bwa {{count}}",
+      "expiringSoon_other": "Lukwabililo lumana mumazuba aali {{count}}",
+      "disputedNow": "wakakazyigwa abamwi",
+      "disputedNowHint": "Kusololela kwako akukazyania kwabulelo kuzwa kuli umwi mweenzinyokwe",
+      "commissionEligible": "Kkomishini yeelela",
+      "commissionCancelled_one": "{{count}} kwakachilwa",
+      "commissionCancelled_other": "{{count}} kwakachilwa"
+    },
+    "chart": {
+      "title_one": "Kulilembya akubikka mabbuku abuzuba - buzuba bwamamanino {{count}}",
+      "title_other": "Kulilembya akubikka mabbuku abuzuba - mazuba aamamanino {{count}}",
+      "registrations": "Kulembesya",
+      "bookings": "Kubhuka"
+    },
+    "byStage": "Kusololela kweelana abukkale",
+    "bySource": "Kusololela kwiinda aawo mpokuzwa",
+    "byReferral": "Kusololela kwiinda muchiimo chakutuminwa",
+    "myDisputes": "Mazwanga ngowakabusya",
+    "noDisputes": "Taakwe kukazyania kwakabusyigwa.",
+    "unknown": "Tazibikkidwe pe",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM yakunze (yakakozyanisigwa)",
+      "PARTNER_CRM": "Yakayungizyigwa akabunga kako",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Kuswaanganya",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Lukwabililo luyoomana mubuzuba butobela {{count}}",
+    "expiringTitle_other": "Lukwabililo luyoomana mumazuba aatobela {{count}}",
+    "expiringEmpty": "Taakwe nsingo isweekelwa lukwabililo lwayo muwindo eeli."
   }
 }

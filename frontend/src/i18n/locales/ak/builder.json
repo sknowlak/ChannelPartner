@@ -30,7 +30,8 @@
       "registered": "Wɔakyerɛw wɔn din"
     },
     "booked": "Wɔakyerɛw wɔn din",
-    "empty": "No referrals biara de besi nnɛ."
+    "empty": "No referrals biara de besi nnɛ.",
+    "bookingCancelled": "Wɔatwa booking no mu"
   },
   "detail": {
     "customer": "Adetɔni",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Booking no sii so dua.",
       "accepted": "Wɔgye toom sɛ wɔde obi bɛkɔ akɔma obi.",
-      "rejected": "Wɔpow sɛ wɔde no kɔma nkurɔfo."
+      "rejected": "Wɔpow sɛ wɔde no kɔma nkurɔfo.",
+      "bookingCancelled": "Wɔatwa booking no mu."
     },
-    "backToReferrals": "San Kɔ Referrals so"
+    "backToReferrals": "San Kɔ Referrals so",
+    "bookingCancelled": "Wɔatwa booking no mu",
+    "cancelBooking": "Twa Booking no mu",
+    "cancelReasonLabel": "Nea enti a wɔtwa mu (wɔakyerɛ ɔhokafo no) * .",
+    "cancelBookingHint": "Operational ownership san kɔ ɔhokafoɔ no nkyɛn na wɔtwa wɔn commission eligibility no mu. Wobetumi asan akyerɛw nea edi kan no bio akyiri yi.",
+    "cancelBookingConfirm": "Twa krataa a woakyerɛw no mu"
   },
   "history": {
     "title": "Abakɔsɛm",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Commission eligibility a wɔayɛ",
       "HANDOVER_COMPLETED": "Wɔawie handover no",
       "ADMIN_PROTECTION_RELEASED": "Admin yii duplicate ahobammɔ adi ntɛm. Nea enti a ɛte saa: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin san de dinkyerɛw fii {{from}} kɔɔ {{to}} . Nea enti a ɛte saa: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin san de dinkyerɛw fii {{from}} kɔɔ {{to}} . Nea enti a ɛte saa: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Wɔpoo mmɔden a ɔhokafo foforo bɔe sɛ ɔbɛkyerɛw ne din mpɛn abien",
+      "BOOKING_CANCELLED": "Wɔatwa booking no mu. Nea enti a ɛte saa: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operational ownership san baa ɔhokafo no nkyɛn",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Commission eligibility twaa mu ne booking no",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Commission eligibility san de bae ma booking foforo no"
     }
   }
 }

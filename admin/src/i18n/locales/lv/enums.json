@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Piemērots",
-    "PENDING": "Gaida"
+    "PENDING": "Gaida",
+    "CANCELLED": "Atcelts"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Agri atlaidiet dublikātu aizsardzību",
-    "REASSIGN_PARTNER": "Piešķirt citam partnerim"
+    "REASSIGN_PARTNER": "Piešķirt citam partnerim",
+    "CANCEL_BOOKING": "Atcelt rezervāciju"
   },
   "dataType": {
     "TEXT": "Teksts",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super administrators",
     "ADMIN": "Administrators"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Apstiprināts",
+    "CANCELLED": "Atcelts"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Attiecināts",
+    "DISPUTED": "Apstrīdēts"
+  },
+  "disputeStatus": {
+    "OPEN": "Atvērt",
+    "UPHELD": "Atbalstīts",
+    "OVERTURNED": "Apgāzās",
+    "WITHDRAWN": "Izņemts"
   }
 }

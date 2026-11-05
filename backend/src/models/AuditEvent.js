@@ -14,7 +14,10 @@ const auditEventSchema = new mongoose.Schema(
     timestamp: { type: Date, default: Date.now },
     previousValue: mongoose.Schema.Types.Mixed,
     newValue: mongoose.Schema.Types.Mixed,
-    description: String
+    description: String,
+    // The API request that wrote this entry (section 62) - matches the
+    // X-Request-Id the caller got back. Empty for scheduler-made entries.
+    requestId: { type: String, default: '' }
   },
   { timestamps: true }
 );

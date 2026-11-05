@@ -56,7 +56,7 @@ export default function BuilderReferrals() {
                   <td>{r.projectName}</td>
                   <td>{r.sourcePartner?.name}</td>
                   <td><span className={`badge ${REFERRAL_BADGE[r.referralStatus]}`}>{referralLabel(t, r.referralStatus)}</span></td>
-                  <td>{r.isBooked ? t('builder:list.booked') : '-'}</td>
+                  <td>{r.isBooked ? t('builder:list.booked') : r.bookingStatus === 'CANCELLED' ? t('builder:list.bookingCancelled') : '-'}</td>
                   <td className="secondary-cell">{formatDate(r.registeredAt)}</td>
                 </tr>
               ))}

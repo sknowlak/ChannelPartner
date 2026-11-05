@@ -49,8 +49,73 @@
       "newPartnerId": "ID nou de partener",
       "reason": "Motiv (obligatoriu)",
       "apply": "Aplicați Override",
-      "applying": "Se aplică..."
+      "applying": "Se aplică...",
+      "cancelBookingHint": "Anularea marchează rezervarea și comisionul acesteia ca fiind anulate, returnează proprietatea operațională partenerului și permite constructorului să rezerve din nou acest client.",
+      "cancelBookingConfirm": "Anulați această rezervare? Se anulează și comisionul acestuia. Acesta este înregistrat cu numele și motivul dvs."
     },
-    "timelineTitle": "Cronologia auditului (această înregistrare)"
+    "timelineTitle": "Cronologia auditului (această înregistrare)",
+    "bookingStatus": "Starea rezervării",
+    "commissionAttribution": "Atribuirea comisiei",
+    "disputeOpen": "Este deschisă o dispută privind proprietatea asupra acestui client - un alt partener spune că este al lor. Se decide pe pagina Litigii.",
+    "viewDisputes": "Vedeți disputele",
+    "cancellation": {
+      "title": "Rezervarea a fost anulată",
+      "hint": "Rezervarea și comisionul acesteia sunt anulate; Proprietatea operațională a revenit la partener și constructorul poate rezerva din nou acest client potențial.",
+      "at": "Anulat la",
+      "by": "Anulat de",
+      "reason": "Motiv"
+    }
+  },
+  "disputes": {
+    "title": "Litigii de proprietate",
+    "hint": "Un partener a cărui înregistrare a fost respinsă ca duplicat poate contesta cine deține clientul. Examinați ambele părți și decideți.",
+    "statusFilter": "Starea litigiului",
+    "allStatuses": "Toate stările",
+    "empty": "Nu există dispute cu acest statut.",
+    "columns": {
+      "dispute": "Disputa",
+      "customer": "Client",
+      "project": "Proiect",
+      "raisedBy": "Crescut de",
+      "heldBy": "Actual proprietar",
+      "status": "Stare",
+      "raisedAt": "Crescut pe"
+    },
+    "detail": {
+      "title": "Dispute {{id}}",
+      "raisedOn": "Ridicat {{date}}",
+      "raisingTitle": "Crescut de",
+      "holderTitle": "Actual proprietar",
+      "partner": "Partener",
+      "raisedBy": "Trimis de",
+      "customerName": "Client",
+      "mobile": "Mobil",
+      "alternateMobile": "Mobil alternativ",
+      "email": "E-mail",
+      "project": "Proiect",
+      "reason": "Motivul lor",
+      "registration": "Înregistrare",
+      "registeredAt": "Înregistrat pe",
+      "referral": "Sesizare",
+      "heldMissing": "Înregistrarea reținută nu a putut fi găsită.",
+      "resolutionTitle": "Decizie",
+      "outcome": "Rezultat",
+      "note": "Nota",
+      "decidedBy": "Hotărât de",
+      "decidedAt": "Hotărât",
+      "newRegistration": "Înregistrare nouă",
+      "decideTitle": "Decideți această dispută",
+      "noteLabel": "Notă care explică decizia (obligatoriu)",
+      "noteRequired": "Scrieți o notă pentru a decide.",
+      "uphold": "Susține",
+      "overturn": "Răsturna",
+      "upholdEffect": "{{holder}} păstrează clientul. Disputa este închisă și nimic altceva nu se schimbă.",
+      "overturnEffect": "Protecția dublură a lui {{holder}} se încheie acum și clientul este înregistrat pentru {{partner}} ca o nouă înregistrare.",
+      "heldBookedHelp": "Acest client este rezervat prin proprietarul actual. Anulați mai întâi acea rezervare (Anularea administratorului la înregistrare), apoi anulați:",
+      "confirmTitle": "esti sigur?",
+      "confirmUphold": "Da, susține",
+      "confirmOverturn": "Da, răsturna",
+      "back": "Înapoi la dispute"
+    }
   }
 }

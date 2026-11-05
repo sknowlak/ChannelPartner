@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Rezervisano",
-    "pending": "Na čekanju"
+    "pending": "Na čekanju",
+    "status": {
+      "CONFIRMED": "Rezervisano",
+      "CANCELLED": "Rezervacija je otkazana"
+    }
   },
   "assign": {
     "unassigned": "Nedodijeljeno",
@@ -58,7 +62,10 @@
   },
   "project": {
     "none": "Još nema projekta (nije upućen)",
-    "notInList": "{{project}} (nije na listi projekata)"
+    "notInList": "{{project}} (nije na listi projekata)",
+    "protectionDays_one": "{{count}} -dnevna zaštita",
+    "protectionDays_few": "{{count}} -dnevna zaštita",
+    "protectionDays_other": "{{count}} -dnevna zaštita"
   },
   "journey": {
     "customer": "Kupac",
@@ -76,7 +83,14 @@
     "progressHistory": "Progress History",
     "timesIn": "(puta u {{timezone}} )",
     "backToMyLeads": "Nazad na Moje potencijalne strane",
-    "editLead": "Edit Lead"
+    "editLead": "Edit Lead",
+    "disputeBanner": "Drugi partner je osporio vlasništvo nad ovim kupcem. Leadrat administrator ga pregledava - vaša zaštita ostaje na mjestu dok ne odluče.",
+    "booking": "Rezervacija",
+    "commission": "Komisija",
+    "notBooked": "Nije rezervisano",
+    "cancelledOn": "Otkazano {{date}} .",
+    "cancelReason": "Razlog: {{reason}}",
+    "cancelledHint": "Graditelj je otkazao rezervaciju - operativno vlasništvo je ponovo kod vas i pravo na proviziju je otkazano. Vraća se ako se kontakt ponovo rezerviše."
   },
   "referral": {
     "NOT_REFERRED": "Nije upućen (bez projekta)",
@@ -162,7 +176,17 @@
       "REFERRAL_ACCEPTED": "Graditelj je prihvatio preporuku",
       "REFERRAL_REJECTED": "Graditelj je odbio uputnicu. Razlog: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Administrator je ranije objavio zaštitu od duplikata. Razlog: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Administrator je ponovo dodijelio registraciju sa {{from}} na {{to}} . Razlog: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Administrator je ponovo dodijelio registraciju sa {{from}} na {{to}} . Razlog: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Pokušaj dupliranja registracije od strane drugog partnera je odbijen",
+      "BOOKING_CANCELLED": "Rezervacija je otkazana. Razlog: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operativno vlasništvo vraćeno partneru",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Prihvatljivost provizije otkazana je uz rezervaciju",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Podobnost provizije vraćena za novu rezervaciju",
+      "OWNERSHIP_DISPUTE_RAISED": "Drugi partner je osporio vlasništvo nad ovim klijentom - Leadrat administrator će ga pregledati",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Spor o vlasništvu nad ovim kupcem je povučen - vaše vlasništvo je nepromijenjeno",
+      "OWNERSHIP_DISPUTE_UPHELD": "Spor o vlasništvu nad ovim kupcem je pregledan - vaše vlasništvo je potvrđeno",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Registriran nakon što je vaš vlasnički spor riješen u vašu korist. Napomena: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Zaštita je okončana: vlasnički spor je riješen u korist drugog partnera. Napomena: {{note}}"
     }
   },
   "columnsPanel": {
@@ -186,5 +210,116 @@
     "INVALID_FOR_COUNTRY": "Ovaj broj telefona nije važeći za {{country}} .",
     "COUNTRY_MISMATCH": "Molimo odaberite ispravan kod zemlje.",
     "NOT_MOBILE": "Unesite broj mobilnog telefona, a ne fiksnog."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Prihvatljivo za proviziju",
+      "PENDING": "Komisija na čekanju",
+      "CANCELLED": "Komisija otkazana"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Pripisano vama",
+      "DISPUTED": "Atribucija je osporena"
+    }
+  },
+  "result": {
+    "none": "Nema rezultata registracije za prikaz. Prvo registrirajte potencijalnog klijenta.",
+    "acceptedTitle": "Lead registered",
+    "rejectedTitle": "Potencijalni potencijal nije registrovan",
+    "protectionWindow": "Zaštitni prozor",
+    "protectedUntil": "Zaštićeno do",
+    "openLead": "Open Lead",
+    "addAnother": "Dodajte još jednog potencijalnog klijenta",
+    "duplicate": "Duplikat - već zaštićen",
+    "duplicateHint": "Ovaj korisnik je već zaštićen za ovaj projekat drugom registracijom, tako da se ne može registrovati za vas.",
+    "existingProtectedUntil": "Postojeća registracija zaštićena do"
+  },
+  "disputes": {
+    "title": "Moji sporovi",
+    "intro": "Vlasnički sporovi koje ste pokrenuli za klijente koji su odbijeni kao duplikati. Leadrat administrator pregleda svaku od njih.",
+    "empty": "Niste pokrenuli nikakve sporove. Ako je kupac kojeg ste doveli odbijen kao duplikat, možete ga osporiti iz rezultata registracije.",
+    "columns": {
+      "dispute": "Spor",
+      "reason": "Tvoj razlog",
+      "outcome": "Ishod"
+    },
+    "status": {
+      "OPEN": "Pod pregledom",
+      "UPHELD": "Ne u tvoju korist",
+      "OVERTURNED": "Odlučeno u tvoju korist",
+      "WITHDRAWN": "Povučen"
+    },
+    "awaitingReview": "Čeka se pregled od strane administratora",
+    "openNewLead": "Otvorite svoj kontakt {{id}}",
+    "withdraw": "Povuci se",
+    "withdrawConfirm": "Povući svoj spor za {{name}} ? Sadašnje vlasništvo ostaje takvo kakvo je.",
+    "raise": "Osporite vlasništvo",
+    "raiseTitle": "Osporite vlasništvo",
+    "raiseHint": "Ako vam je ovaj kupac prvi došao, objasnite zašto. Leadrat administrator će ga pregledati; ako odluče u vašu korist, vodeći se registrira za vas.",
+    "reasonLabel": "Zašto je ovaj kupac vaš?",
+    "reasonMin_one": "Najmanje {{count}} znak.",
+    "reasonMin_few": "Najmanje {{count}} znakova.",
+    "reasonMin_other": "Najmanje {{count}} znakova.",
+    "submit": "Pošalji osporavanje",
+    "notProtected": "Više niko ne štiti ovog kupca za ovaj projekat - možete registrirati potencijalnog klijenta sada.",
+    "raised": "Spor {{id}} poslan na razmatranje.",
+    "viewAll": "Pogledajte moje sporove"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Period",
+    "lastDays_one": "{{count}} dan",
+    "lastDays_few": "{{count}} dana",
+    "lastDays_other": "{{count}} dana",
+    "emptyTitle": "Dobrodošli! Još nemate tragove.",
+    "emptyHint": "Registrirajte svoj prvi potencijal - ovdje će se prikazati vaš kanal, rezervacije i rokovi zaštite.",
+    "tiles": {
+      "leads": "Ukupni tragovi",
+      "newInPeriod_one": "{{count}} novih u ovom periodu",
+      "newInPeriod_few": "{{count}} novih u ovom periodu",
+      "newInPeriod_other": "{{count}} novih u ovom periodu",
+      "accepted": "Prihvaćeno",
+      "booked": "Rezervisano",
+      "bookedInPeriod_one": "{{count}} rezervirano u ovom periodu",
+      "bookedInPeriod_few": "{{count}} rezervirano u ovom periodu",
+      "bookedInPeriod_other": "{{count}} rezervirano u ovom periodu",
+      "conversion": "Konverzija",
+      "conversionHint": "Rezervirani potencijalni klijenti kao udio prihvaćenih potencijalnih klijenata",
+      "protectedNow": "Zaštićeno sada",
+      "expiringSoon_one": "Zaštita završava za {{count}} dan",
+      "expiringSoon_few": "Zaštita završava za {{count}} dana",
+      "expiringSoon_other": "Zaštita završava za {{count}} dana",
+      "disputedNow": "Osporavan od strane drugih",
+      "disputedNowHint": "Vaši potencijalni klijenti sa otvorenim vlasničkim sporom od drugog partnera",
+      "commissionEligible": "Prihvatljivo za proviziju",
+      "commissionCancelled_one": "Otkazano je {{count}}",
+      "commissionCancelled_few": "Otkazano je {{count}}",
+      "commissionCancelled_other": "Otkazano je {{count}}"
+    },
+    "chart": {
+      "title_one": "Registracije i rezervacije po danu - posljednji {{count}} dan",
+      "title_few": "Registracije i rezervacije po danu - zadnjih {{count}} dana",
+      "title_other": "Registracije i rezervacije po danu - zadnjih {{count}} dana",
+      "registrations": "Registracije",
+      "bookings": "Rezervacije"
+    },
+    "byStage": "Vodi po statusu",
+    "bySource": "Vodi prema izvoru",
+    "byReferral": "Vodi prema statusu preporuke",
+    "myDisputes": "Sporovi koje ste pokrenuli",
+    "noDisputes": "Nema pokrenutih sporova.",
+    "unknown": "Nije postavljeno",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Eksterni CRM (simulirani)",
+      "PARTNER_CRM": "Dodao vaš tim",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integracija",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Zaštita ističe u sljedećih {{count}} dana",
+    "expiringTitle_few": "Zaštita ističe u sljedećih {{count}} dana",
+    "expiringTitle_other": "Zaštita ističe u sljedećih {{count}} dana",
+    "expiringEmpty": "Nijedan olovo ne gubi svoju zaštitu u ovom prozoru."
   }
 }

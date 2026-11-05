@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Prenotà",
-    "pending": "In atesa"
+    "pending": "In atesa",
+    "status": {
+      "CONFIRMED": "Prenotà",
+      "CANCELLED": "Prenotazione annullata"
+    }
   },
   "assign": {
     "unassigned": "Minga asegnà",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Ancamò nissun pruget (minga riferì)",
-    "notInList": "{{project}} (minga in de la lista di pruget)"
+    "notInList": "{{project}} (minga in de la lista di pruget)",
+    "protectionDays_one": "{{count}} -proteziun del dì",
+    "protectionDays_other": "{{count}} -proteziun del dì"
   },
   "journey": {
     "customer": "Client",
@@ -76,7 +82,14 @@
     "progressHistory": "Storia del prugress",
     "timesIn": "(ora in {{timezone}} )",
     "backToMyLeads": "Torna ai me leads",
-    "editLead": "Modifica lead"
+    "editLead": "Modifica lead",
+    "disputeBanner": "Un olter partner g’ha cuntestà la proprietà de chestu client. Un amministratur Leadrat l’è drée a esaminarlo: la vòstra pruteziun resta in post fin quand che deciden.",
+    "booking": "Prenotazion",
+    "commission": "Comission",
+    "notBooked": "Minga prenotà",
+    "cancelledOn": "Annullad el {{date}} .",
+    "cancelReason": "Motif: {{reason}}",
+    "cancelledHint": "El costrutur g’ha annullà la prenutaziun: la proprietà operativa l’è turnada cun te e l’idoneità a la comisiun l’è annullada. L’è restaurad se el lead l’è prenotà ancamò."
   },
   "referral": {
     "NOT_REFERRED": "Minga riferì (nissun pruget)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "El costrutur g’ha acettà el riferiment",
       "REFERRAL_REJECTED": "El costrutur g’ha refudà el riferiment. Motif: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "L'amministratur g’ha pubblicà a bon temp la pruteziun duplicada. Motif: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "L'amministratur g'ha riassegnà la registraziun de {{from}} a {{to}} . Motif: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "L'amministratur g'ha riassegnà la registraziun de {{from}} a {{to}} . Motif: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Un tentatif de registraziun duplicà de part de un olter partner l’è stà refüdà",
+      "BOOKING_CANCELLED": "La prenotazione annullata. Motif: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "La proprietà operativa restituida al soci",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "L'idoneità a la cumisiun annullada cun la prenutaziun",
+      "COMMISSION_ELIGIBILITY_RESTORED": "L’idoneità a la cumisiun restaurada per la nœuva prenutaziun",
+      "OWNERSHIP_DISPUTE_RAISED": "Un olter partner g’ha disputaa la proprietà de chestu cliént: un amministratur Leadrat el revisarà",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "La disputa sü la proprietà sü chestu cliént l’è stada ritirada: la vòstra proprietà l’è invariada",
+      "OWNERSHIP_DISPUTE_UPHELD": "La disputa sü la proprietà sü chestu cliént l’è stada esaminada: la vòstra proprietà l’è cunfermada",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Registrà dopu che la vòstra disputa de proprietà l’è stada decidüda a vòster favur. Nota: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "La pruteziun l’è terminada: una disputa de proprietà l’è stada decidüda a favur de un olter partner. Nota: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Chestu numer di telefon l’è minga valid per {{country}} .",
     "COUNTRY_MISMATCH": "Per piasé seleziuna el giüst codes del pais.",
     "NOT_MOBILE": "Per piasé inserisci un numer celular, minga una linea fissa."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Elegibil a la cumisiun",
+      "PENDING": "Cumisiun pendent",
+      "CANCELLED": "La cumisiun annullada"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Atribuì a ti",
+      "DISPUTED": "L'attribuziun cuntestada"
+    }
+  },
+  "result": {
+    "none": "Nissun resultà de registraziun da mustrar. Registra prima un lead.",
+    "acceptedTitle": "Plomb registrà",
+    "rejectedTitle": "Plomb minga registrà",
+    "protectionWindow": "Finestra de pruteziun",
+    "protectedUntil": "Protett fin a",
+    "openLead": "Lead avert",
+    "addAnother": "Aggiungi un olter lead",
+    "duplicate": "Duplicà - giamò prutètt",
+    "duplicateHint": "Chestu client l’è giamò prutett per chestu pruget de un’oltra registraziun, donca l’è minga stà pusibel registrà per ti.",
+    "existingProtectedUntil": "La registraziun esistent prutetta fin al"
+  },
+  "disputes": {
+    "title": "I me cuntraversi",
+    "intro": "I cuntravers de proprietà che g’he stà sullevà per i client che sun stà refudà cuma duplicat. Un amministratur Leadrat recension tüt.",
+    "empty": "G’he minga sullevà nissuna controversia. Se un client che g’he purtà l’è refudà cuma duplicat, pœu contestarlo dal resultà de la registraziun.",
+    "columns": {
+      "dispute": "Disputa",
+      "reason": "La tò rason",
+      "outcome": "Resultad"
+    },
+    "status": {
+      "OPEN": "Sotta revisiun",
+      "UPHELD": "Minga a tò favur",
+      "OVERTURNED": "Decidü a tò favur",
+      "WITHDRAWN": "Ritirà"
+    },
+    "awaitingReview": "En attesa de la recensiun del amministratur",
+    "openNewLead": "Dervi el tò lead {{id}}",
+    "withdraw": "Ritirar",
+    "withdrawConfirm": "Ritirar la tò disputa per {{name}} ? La proprietà d’incœu la resta inscì cuma l’è.",
+    "raise": "Proprietà cuntesta",
+    "raiseTitle": "Proprietà cuntesta",
+    "raiseHint": "Se chestu client l’è rivà prima, spiega perché. Un amministratur Leadrat el revisarà; se deciden a vòster favur, el lead l’è registrà per vòster.",
+    "reasonLabel": "Perché chestu client l’è tò?",
+    "reasonMin_one": "Almen {{count}} caratter.",
+    "reasonMin_other": "Almen {{count}} carater.",
+    "submit": "Invia disputa",
+    "notProtected": "Nessun g’ha püsee pruteziun sü chestu client per chestu pruget: pœdet registrar el lead incœu.",
+    "raised": "Disputa {{id}} inviada per revisiun.",
+    "viewAll": "Visualizzà i me cuntraversi"
+  },
+  "dashboard": {
+    "title": "Cruscott",
+    "period": "Fas",
+    "lastDays_one": "{{count}} dì",
+    "lastDays_other": "{{count}} dì",
+    "emptyTitle": "Benvegnud! G’he ancamò no di indizi.",
+    "emptyHint": "Registra el tò prim lead: el tò pipeline, i tò prenotaziun e i scadenz de pruteziun cumpariran chi.",
+    "tiles": {
+      "leads": "Total di leads",
+      "newInPeriod_one": "{{count}} nœuf en chestu periud",
+      "newInPeriod_other": "{{count}} nœuf en chestu periud",
+      "accepted": "Acetà",
+      "booked": "Prenotà",
+      "bookedInPeriod_one": "{{count}} prenotà en chestu periud",
+      "bookedInPeriod_other": "{{count}} prenotà en chestu periud",
+      "conversion": "Cunversiun",
+      "conversionHint": "Leads prenotà cuma part di leads acetà",
+      "protectedNow": "Protett adess",
+      "expiringSoon_one": "Proteziun che finìs en {{count}} dì",
+      "expiringSoon_other": "Proteziun che finìs en {{count}} dì",
+      "disputedNow": "Contestad de olter",
+      "disputedNowHint": "I tò lead cunt una controversia de proprietà avèrta de part de un olter partner",
+      "commissionEligible": "Elegibil a la cumisiun",
+      "commissionCancelled_one": "{{count}} annullà",
+      "commissionCancelled_other": "{{count}} annullà"
+    },
+    "chart": {
+      "title_one": "Iscriziun e prenutaziun al dì - ültem {{count}} dì",
+      "title_other": "Iscriziun e prenutaziun al dì - ültem {{count}} dì",
+      "registrations": "Iscriziun",
+      "bookings": "Prenotaziun"
+    },
+    "byStage": "Leads per stat",
+    "bySource": "Leads per funt",
+    "byReferral": "Lead per stat de riferiment",
+    "myDisputes": "Controversi che g’he stà sullevà",
+    "noDisputes": "Nissun cunflit sulevà.",
+    "unknown": "Minga impostà",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM estern (simulà)",
+      "PARTNER_CRM": "Aggiunto dal tuo team",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integraziun",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "La pruteziun scade in del dì sucesif {{count}}",
+    "expiringTitle_other": "La pruteziun scade in di sucesif {{count}} dì",
+    "expiringEmpty": "Nissun plomb perd la sò pruteziun en chesta finestra."
   }
 }

@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "הוזמן",
-    "pending": "תָלוּי וְעוֹמֵד"
+    "pending": "תָלוּי וְעוֹמֵד",
+    "status": {
+      "CONFIRMED": "הוזמן",
+      "CANCELLED": "ההזמנה בוטלה"
+    }
   },
   "assign": {
     "unassigned": "לא הוקצה",
@@ -58,7 +62,10 @@
   },
   "project": {
     "none": "אין עדיין פרויקט (לא התייחס)",
-    "notInList": "{{project}} (לא ברשימת הפרויקטים)"
+    "notInList": "{{project}} (לא ברשימת הפרויקטים)",
+    "protectionDays_one": "הגנה של {{count}} ימים",
+    "protectionDays_two": "הגנה של {{count}} ימים",
+    "protectionDays_other": "הגנה של {{count}} ימים"
   },
   "journey": {
     "customer": "לָקוּחַ",
@@ -76,7 +83,14 @@
     "progressHistory": "היסטוריית התקדמות",
     "timesIn": "(זמנים ב {{timezone}} )",
     "backToMyLeads": "חזרה ללידים שלי",
-    "editLead": "ערוך ליד"
+    "editLead": "ערוך ליד",
+    "disputeBanner": "שותף אחר ערער על בעלות על לקוח זה. מנהל Leadrat בוחן את זה - ההגנה שלך נשארת במקומה עד שהוא מחליט.",
+    "booking": "הזמנה",
+    "commission": "עֲמָלָה",
+    "notBooked": "לא הוזמן",
+    "cancelledOn": "בוטל בתאריך {{date}} .",
+    "cancelReason": "סיבה: {{reason}}",
+    "cancelledHint": "הקבלן ביטל את ההזמנה - הבעלות התפעולית חזרה אליכם והזכאות לעמלה מתבטלת. הוא משוחזר אם ההובלה תוזמן שוב."
   },
   "referral": {
     "NOT_REFERRED": "לא מופנה (ללא פרויקט)",
@@ -162,7 +176,17 @@
       "REFERRAL_ACCEPTED": "בונה קיבל את ההפניה",
       "REFERRAL_REJECTED": "בונה דחה את הפניה. סיבה: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "מנהל מערכת שחרר הגנה כפולה מוקדם. סיבה: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "מנהל המערכת הקצה מחדש את הרישום מ {{from}} ל- {{to}} . סיבה: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "מנהל המערכת הקצה מחדש את הרישום מ {{from}} ל- {{to}} . סיבה: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "ניסיון רישום כפול על ידי שותף אחר נדחה",
+      "BOOKING_CANCELLED": "ההזמנה בוטלה. סיבה: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "הבעלות התפעולית חזרה לשותף",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "זכאות העמלה בוטלה עם ההזמנה",
+      "COMMISSION_ELIGIBILITY_RESTORED": "הוחזרה זכאות הנציבות להזמנה החדשה",
+      "OWNERSHIP_DISPUTE_RAISED": "שותף אחר ערער על בעלות על לקוח זה - מנהל Leadrat יבדוק זאת",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "מחלוקת הבעלות על לקוח זה בוטלה - הבעלות שלך לא השתנתה",
+      "OWNERSHIP_DISPUTE_UPHELD": "מחלוקת הבעלות על לקוח זה נבדקה - הבעלות שלך אושרה",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "נרשם לאחר שמחלוקת הבעלות שלך הוכרעה לטובתך. הערה: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "ההגנה הסתיימה: הוכרעה סכסוך בעלות לטובת שותף אחר. הערה: {{note}}"
     }
   },
   "columnsPanel": {
@@ -186,5 +210,116 @@
     "INVALID_FOR_COUNTRY": "מספר הטלפון הזה אינו תקף עבור {{country}} .",
     "COUNTRY_MISMATCH": "אנא בחר את קוד המדינה הנכון.",
     "NOT_MOBILE": "נא להזין מספר נייד, לא טלפון קווי."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "זכאי לוועדה",
+      "PENDING": "עמלה בהמתנה",
+      "CANCELLED": "הוועדה בוטלה"
+    },
+    "attribution": {
+      "ATTRIBUTED": "מיוחס לך",
+      "DISPUTED": "ייחוס שנוי במחלוקת"
+    }
+  },
+  "result": {
+    "none": "אין תוצאת רישום להצגה. תחילה רשום לידים.",
+    "acceptedTitle": "עופרת רשומה",
+    "rejectedTitle": "עופרת לא רשומה",
+    "protectionWindow": "חלון הגנה",
+    "protectedUntil": "מוגן עד",
+    "openLead": "פתח ליד",
+    "addAnother": "הוסף עוד ליד",
+    "duplicate": "שכפול - כבר מוגן",
+    "duplicateHint": "לקוח זה כבר מוגן עבור פרויקט זה על ידי רישום אחר, כך שלא ניתן היה לרשום אותו עבורך.",
+    "existingProtectedUntil": "רישום קיים מוגן עד"
+  },
+  "disputes": {
+    "title": "המחלוקות שלי",
+    "intro": "מחלוקות בעלות שהעלית עבור לקוחות שסורבו ככפילים. מנהל Leadrat סוקר כל אחד מהם.",
+    "empty": "לא העלית שום מחלוקת. אם לקוח שהבאת סורב ככפיל, תוכל לערער על כך מתוצאת הרישום.",
+    "columns": {
+      "dispute": "מַחֲלוֹקֶת",
+      "reason": "הסיבה שלך",
+      "outcome": "תוֹצָאָה"
+    },
+    "status": {
+      "OPEN": "בבדיקה",
+      "UPHELD": "לא לטובתך",
+      "OVERTURNED": "הוחלט לטובתך",
+      "WITHDRAWN": "נסוג"
+    },
+    "awaitingReview": "ממתין לביקורת מנהל",
+    "openNewLead": "פתח את הליד שלך {{id}}",
+    "withdraw": "לָסֶגֶת",
+    "withdrawConfirm": "לבטל את המחלוקת שלך עבור {{name}} ? הבעלות הנוכחית נשארת כפי שהיא.",
+    "raise": "מחלוקת בעלות",
+    "raiseTitle": "מחלוקת בעלות",
+    "raiseHint": "אם הלקוח הזה הגיע אליכם ראשון, הסבירו מדוע. מנהל Leadrat יבדוק את זה; אם יחליטו לטובתך, ההובלה רשומה עבורך.",
+    "reasonLabel": "למה הלקוח הזה שלך?",
+    "reasonMin_one": "לפחות {{count}} תו.",
+    "reasonMin_two": "לפחות {{count}} תווים.",
+    "reasonMin_other": "לפחות {{count}} תווים.",
+    "submit": "שלח מחלוקת",
+    "notProtected": "אף אחד לא מחזיק יותר בהגנה על הלקוח הזה עבור הפרויקט הזה - אתה יכול לרשום את הליד עכשיו.",
+    "raised": "ערעור {{id}} נשלח לבדיקה.",
+    "viewAll": "ראה את המחלוקות שלי"
+  },
+  "dashboard": {
+    "title": "לוּחַ מַחווָנִים",
+    "period": "תְקוּפָה",
+    "lastDays_one": "יום {{count}}",
+    "lastDays_two": "{{count}} ימים",
+    "lastDays_other": "{{count}} ימים",
+    "emptyTitle": "קַבָּלַת פָּנִים! עדיין אין לך לידים.",
+    "emptyHint": "רשום את הליד הראשון שלך - הצינור, ההזמנות ומועדי ההגנה שלך יופיעו כאן.",
+    "tiles": {
+      "leads": "סך כל הפניות",
+      "newInPeriod_one": "{{count}} חדשים בתקופה זו",
+      "newInPeriod_two": "{{count}} חדשים בתקופה זו",
+      "newInPeriod_other": "{{count}} חדשים בתקופה זו",
+      "accepted": "מְקוּבָּל",
+      "booked": "הוזמן",
+      "bookedInPeriod_one": "{{count}} הוזמנו בתקופה זו",
+      "bookedInPeriod_two": "{{count}} הוזמנו בתקופה זו",
+      "bookedInPeriod_other": "{{count}} הוזמנו בתקופה זו",
+      "conversion": "הֲמָרָה",
+      "conversionHint": "לידים שהוזמנו כחלק מהלידים שהתקבלו",
+      "protectedNow": "מוגן עכשיו",
+      "expiringSoon_one": "הגנה מסתיימת בעוד {{count}} יום",
+      "expiringSoon_two": "ההגנה מסתיימת בעוד {{count}} ימים",
+      "expiringSoon_other": "ההגנה מסתיימת בעוד {{count}} ימים",
+      "disputedNow": "שנוי במחלוקת על ידי אחרים",
+      "disputedNowHint": "הלידים שלך עם מחלוקת בעלות פתוחה משותף אחר",
+      "commissionEligible": "זכאי לוועדה",
+      "commissionCancelled_one": "{{count}} בוטל",
+      "commissionCancelled_two": "{{count}} בוטל",
+      "commissionCancelled_other": "{{count}} בוטל"
+    },
+    "chart": {
+      "title_one": "הרשמות והזמנות ליום - {{count}} היום האחרון",
+      "title_two": "הרשמות והזמנות ליום - {{count}} הימים האחרונים",
+      "title_other": "הרשמות והזמנות ליום - {{count}} הימים האחרונים",
+      "registrations": "רישומים",
+      "bookings": "הזמנות"
+    },
+    "byStage": "מוביל לפי סטטוס",
+    "bySource": "מוביל לפי מקור",
+    "byReferral": "מוביל לפי סטטוס הפניה",
+    "myDisputes": "מחלוקות שהעלית",
+    "noDisputes": "לא הועלו מחלוקות.",
+    "unknown": "לא מוגדר",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM חיצוני (מדומה)",
+      "PARTNER_CRM": "נוסף על ידי הצוות שלך",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "הִשׁתַלְבוּת",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "תוקף ההגנה יפוג ביום {{count}} הבא",
+    "expiringTitle_two": "תוקף ההגנה יפוג ב {{count}} הימים הבאים",
+    "expiringTitle_other": "תוקף ההגנה יפוג ב {{count}} הימים הבאים",
+    "expiringEmpty": "שום עופרת לא מאבדת את ההגנה שלה בחלון הזה."
   }
 }

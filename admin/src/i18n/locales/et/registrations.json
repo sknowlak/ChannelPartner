@@ -49,8 +49,73 @@
       "newPartnerId": "Uus partneri ID",
       "reason": "Põhjus (nõutav)",
       "apply": "Rakenda alistamine",
-      "applying": "Rakendamine..."
+      "applying": "Rakendamine...",
+      "cancelBookingHint": "Tühistamisel märgitakse broneering ja selle vahendustasu tühistatuks, tagastatakse partnerile operatiivomandiõigus ja laseb ehitajal see müügivihje uuesti broneerida.",
+      "cancelBookingConfirm": "Kas tühistada see broneering? Ka selle vahendustasu tühistatakse. See logitakse teie nime ja põhjusega."
     },
-    "timelineTitle": "Auditi ajaskaala (see registreerimine)"
+    "timelineTitle": "Auditi ajaskaala (see registreerimine)",
+    "bookingStatus": "Broneeringu olek",
+    "commissionAttribution": "Komisjonitasu omistamine",
+    "disputeOpen": "Selle kliendi suhtes on omandivaidlus avatud – teine ​​partner ütleb, et see on tema oma. Otsustatakse vaidluste lehel.",
+    "viewDisputes": "Vaata vaidlusi",
+    "cancellation": {
+      "title": "Broneering tühistatud",
+      "hint": "Broneering ja selle vahendustasu tühistatakse; operatiivomandiõigus on partneril tagasi ja ehitaja saab selle müügivihje uuesti broneerida.",
+      "at": "Tühistatud kell",
+      "by": "Tühistatud",
+      "reason": "Põhjus"
+    }
+  },
+  "disputes": {
+    "title": "Omandivaidlused",
+    "hint": "Partner, kelle registreering lükati tagasi duplikaadina, saab vaidlustada, kellele klient kuulub. Vaadake mõlemad pooled üle ja otsustage.",
+    "statusFilter": "Vaidluse olek",
+    "allStatuses": "Kõik olekud",
+    "empty": "Selle staatusega pole vaidlusi.",
+    "columns": {
+      "dispute": "Vaidlus",
+      "customer": "Klient",
+      "project": "Projekt",
+      "raisedBy": "Kasvatanud",
+      "heldBy": "Praegune omanik",
+      "status": "Olek",
+      "raisedAt": "Kasvatatud"
+    },
+    "detail": {
+      "title": "Vaidlus {{id}}",
+      "raisedOn": "Kasvatatud {{date}}",
+      "raisingTitle": "Kasvatanud",
+      "holderTitle": "Praegune omanik",
+      "partner": "Partner",
+      "raisedBy": "Esitanud",
+      "customerName": "Klient",
+      "mobile": "Mobiilne",
+      "alternateMobile": "Alternatiivne mobiiltelefon",
+      "email": "Meil",
+      "project": "Projekt",
+      "reason": "Nende põhjus",
+      "registration": "Registreerimine",
+      "registeredAt": "Registreeritud",
+      "referral": "Suunamine",
+      "heldMissing": "Oodatud registreeringut ei leitud.",
+      "resolutionTitle": "Otsus",
+      "outcome": "Tulemus",
+      "note": "Märkus",
+      "decidedBy": "Otsustas",
+      "decidedAt": "Otsustati",
+      "newRegistration": "Uus registreerimine",
+      "decideTitle": "Otsustage see vaidlus",
+      "noteLabel": "Otsust selgitav märkus (nõutav)",
+      "noteRequired": "Otsustamiseks kirjutage märge.",
+      "uphold": "Toetage",
+      "overturn": "Ümberminek",
+      "upholdEffect": "{{holder}} hoiab klienti. Vaidlus on lõpetatud ja midagi muud ei muutu.",
+      "overturnEffect": "{{holder}} duplikaatkaitse lõppeb nüüd ja klient on registreeritud kasutajaks {{partner}} uue registreerijana.",
+      "heldBookedHelp": "See klient on broneeritud praeguse omaniku kaudu. Tühista see broneering esmalt (administraatori tühistamine registreerimisel), seejärel tühista:",
+      "confirmTitle": "Oled sa kindel?",
+      "confirmUphold": "Jah, toeta",
+      "confirmOverturn": "Jah, kummuta",
+      "back": "Tagasi vaidluste juurde"
+    }
   }
 }

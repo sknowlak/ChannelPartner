@@ -1,3 +1,4 @@
+const crypto = require('crypto');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
@@ -20,7 +21,7 @@ function issueToken(admin) {
   return jwt.sign(
     { type: 'ADMIN', adminId: admin.adminId, email: admin.email, role: admin.role },
     JWT_SECRET,
-    { expiresIn: TOKEN_TTL }
+    { expiresIn: TOKEN_TTL, jwtid: crypto.randomUUID() } // one ID per session (section 62)
   );
 }
 

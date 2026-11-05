@@ -43,7 +43,9 @@
       "name": "Ngalan",
       "city": "Syudd",
       "status": "Estado",
-      "actions": "Mga Aksyon"
+      "actions": "Mga Aksyon",
+      "protection": "Pagdoble nga proteksyon",
+      "matchOn": "Ang mga duplikado nagasanto sa"
     },
     "closeReferrals": "Sirado para sa mga referral",
     "reopen": "Buksi liwat",
@@ -55,6 +57,25 @@
       "add": "Idugang ang Proyekto",
       "created": "Ginhimo ang {{name}} ."
     },
-    "back": "Balik sa mga Builder"
+    "back": "Balik sa mga Builder",
+    "protection": {
+      "days_one": "{{count}} nga adlaw",
+      "days_other": "{{count}} ka adlaw",
+      "globalDays_one": "Global default ( {{count}} day)",
+      "globalDays_other": "Global default ( {{count}} ka adlaw)",
+      "globalDefault": "Global nga default",
+      "placeholder": "Mga adlaw sang proteksyon (wala sing unod = pangkalibutanon nga default)",
+      "saved": "Ang doble nga proteksyon gin-update para sa {{name}} .",
+      "hint": "Duplicate nga proteksyon: 1-3650 ka adlaw, ukon ibilin nga wala sing unod para magamit ang global default gikan sa Settings. Ang pagbag-o nagakadapat lamang sa bag-o nga mga rehistrasyon - ang mga nagaluntad na nagahupot sang ila pag-expire."
+    },
+    "matching": {
+      "global": "Global nga default",
+      "globalWith": "Global default ( {{fields}} )",
+      "mobile": "Numero sang telepono",
+      "email": "Email",
+      "both": "Numero sang mobile + email",
+      "saved": "Ang doble nga pagtupong gin-update para sa {{name}}",
+      "hint": "Ano nga mga detalye ang nagahimo sang duha ka rehistrasyon nga pareho nga kustomer para sa isa ka proyekto. Ang mga pagbag-o naaplikar sa mga doble nga tseke sugod karon; ang nagaluntad nga proteksyon wala maapektuhan."
+    }
   }
 }

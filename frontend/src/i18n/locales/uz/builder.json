@@ -30,7 +30,8 @@
       "registered": "Roʻyxatdan oʻtgan"
     },
     "booked": "Band qilingan",
-    "empty": "Hali tavsiyalar yo'q."
+    "empty": "Hali tavsiyalar yo'q.",
+    "bookingCancelled": "Bandlov bekor qilindi"
   },
   "detail": {
     "customer": "Mijoz",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Bandlov tasdiqlandi.",
       "accepted": "Referat qabul qilindi.",
-      "rejected": "Yo'naltirish rad etildi."
+      "rejected": "Yo'naltirish rad etildi.",
+      "bookingCancelled": "Bandlov bekor qilindi."
     },
-    "backToReferrals": "Referallar sahifasiga qaytish"
+    "backToReferrals": "Referallar sahifasiga qaytish",
+    "bookingCancelled": "Bandlov bekor qilindi",
+    "cancelBooking": "Buyurtmani bekor qilish",
+    "cancelReasonLabel": "Bekor qilish sababi (hamkorga ko'rsatilgan) *",
+    "cancelBookingHint": "Operatsion egalik sherikga qaytadi va ularning komissiya olish huquqi bekor qilinadi. Etakchini keyinroq yana bron qilish mumkin.",
+    "cancelBookingConfirm": "Bandlovni bekor qiling"
   },
   "history": {
     "title": "Tarix",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Komissiya huquqi yaratildi",
       "HANDOVER_COMPLETED": "O'tkazish tugallandi",
       "ADMIN_PROTECTION_RELEASED": "Admin dublikat himoyasini erta chiqardi. Sabab: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin roʻyxatdan oʻtishni {{from}} dan {{to}} ga oʻzgartirdi. Sabab: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin roʻyxatdan oʻtishni {{from}} dan {{to}} ga oʻzgartirdi. Sabab: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Boshqa hamkor tomonidan takroriy roʻyxatdan oʻtishga urinish rad etildi",
+      "BOOKING_CANCELLED": "Bandlov bekor qilindi. Sababi: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operatsion egalik hamkorga qaytarildi",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Komissiya huquqi bron bilan bekor qilinadi",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Yangi bandlov uchun komissiya huquqi tiklandi"
     }
   }
 }

@@ -49,8 +49,73 @@
       "newPartnerId": "ID Comhpháirtí Nua",
       "reason": "Cúis (riachtanach)",
       "apply": "Iarratas a Sárú",
-      "applying": "Ag cur i bhfeidhm..."
+      "applying": "Ag cur i bhfeidhm...",
+      "cancelBookingHint": "Nuair a chuirtear an áirithint agus an coimisiún ar ceal cuirtear ar ceal é, tugann sé úinéireacht oibriúcháin ar ais don chomhpháirtí, agus ligeann don tógálaí é seo a chur in áirithe arís.",
+      "cancelBookingConfirm": "Cealaigh an áirithint seo? Cuirtear a choimisiún ar ceal freisin. Tá sé seo logáilte le d'ainm agus fáth."
     },
-    "timelineTitle": "Amlíne Iniúchta (an clárú seo)"
+    "timelineTitle": "Amlíne Iniúchta (an clárú seo)",
+    "bookingStatus": "Stádas Áirithinte",
+    "commissionAttribution": "Leithdháileadh an Choimisiúin",
+    "disputeOpen": "Tá díospóid úinéireachta oscailte don chustaiméir seo - deir comhpháirtí eile gur leo féin é. Déantar cinneadh ar an leathanach Díospóidí.",
+    "viewDisputes": "Féach ar aighnis",
+    "cancellation": {
+      "title": "Cuireadh an áirithint ar ceal",
+      "hint": "Cuirtear an áirithint agus a choimisiún ar ceal; tá úinéireacht oibríochtúil ar ais ag an gcomhpháirtí agus is féidir leis an tógálaí an treoir seo a chur in áirithe arís.",
+      "at": "Ar ceal ag",
+      "by": "Ar ceal ag",
+      "reason": "Cúis"
+    }
+  },
+  "disputes": {
+    "title": "Díospóidí Úinéireachta",
+    "hint": "Is féidir le comhpháirtí ar diúltaíodh a chlárú mar dhúblach agóid a dhéanamh maidir le cé leis an gcustaiméir. Déan athbhreithniú ar an dá thaobh agus cinneadh a dhéanamh.",
+    "statusFilter": "Stádas díospóide",
+    "allStatuses": "Gach stádas",
+    "empty": "Níl aon díospóid ann leis an stádas seo.",
+    "columns": {
+      "dispute": "Díospóid",
+      "customer": "Custaiméir",
+      "project": "Tionscadal",
+      "raisedBy": "Ardaithe ag",
+      "heldBy": "Úinéir reatha",
+      "status": "Stádas",
+      "raisedAt": "Ardaithe ar"
+    },
+    "detail": {
+      "title": "Díospóid {{id}}",
+      "raisedOn": "Ardaíodh {{date}}",
+      "raisingTitle": "Ardaithe ag",
+      "holderTitle": "Úinéir reatha",
+      "partner": "Comhpháirtí",
+      "raisedBy": "Arna chur isteach ag",
+      "customerName": "Custaiméir",
+      "mobile": "Soghluaiste",
+      "alternateMobile": "Soghluaiste malartach",
+      "email": "Ríomhphost",
+      "project": "Tionscadal",
+      "reason": "An chúis atá leo",
+      "registration": "Clárú",
+      "registeredAt": "Cláraithe ar",
+      "referral": "Atreorú",
+      "heldMissing": "Níorbh fhéidir an clárú coinnithe a aimsiú.",
+      "resolutionTitle": "Cinneadh",
+      "outcome": "Toradh",
+      "note": "Nóta",
+      "decidedBy": "Chinneadh ag",
+      "decidedAt": "Cinneadh ar",
+      "newRegistration": "Clárú nua",
+      "decideTitle": "Déan cinneadh ar an aighneas seo",
+      "noteLabel": "Nóta ag míniú an chinnidh (riachtanach)",
+      "noteRequired": "Scríobh nóta le cinneadh a dhéanamh.",
+      "uphold": "Seasamh",
+      "overturn": "Cur ar ceal",
+      "upholdEffect": "Coinníonn {{holder}} an custaiméir. Tá an t-aighneas dúnta agus ní athraíonn aon rud eile.",
+      "overturnEffect": "Tagann deireadh le cosaint dhúblach {{holder}} anois agus tá an custaiméir cláraithe le haghaidh {{partner}} mar chlárúchán nua.",
+      "heldBookedHelp": "Cuirtear an custaiméir seo in áirithe tríd an úinéir reatha. Cealaigh an áirithint sin ar dtús (Sáraigh an Riarachán ar an gclárú), ansin cas ar ceal:",
+      "confirmTitle": "An bhfuil tú cinnte?",
+      "confirmUphold": "Sea, seas leis",
+      "confirmOverturn": "Sea, cealaigh",
+      "back": "Ar Ais go Díospóidí"
+    }
   }
 }

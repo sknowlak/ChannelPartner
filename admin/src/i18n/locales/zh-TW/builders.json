@@ -43,7 +43,9 @@
       "name": "姓名",
       "city": "城市",
       "status": "地位",
-      "actions": "行動"
+      "actions": "行動",
+      "protection": "重複保護",
+      "matchOn": "重複匹配"
     },
     "closeReferrals": "關閉推薦",
     "reopen": "重新開放",
@@ -55,6 +57,23 @@
       "add": "新增項目",
       "created": "創建了{{name}} 。"
     },
-    "back": "返回建設者"
+    "back": "返回建設者",
+    "protection": {
+      "days_other": "{{count}}天",
+      "globalDays_other": "全域預設（ {{count}}天）",
+      "globalDefault": "全域預設",
+      "placeholder": "保護天數（空=全域預設）",
+      "saved": "更新了{{name}}的重複保護。",
+      "hint": "重複保護：1-3650 天，或留空以使用「設定」中的全域預設值。變更僅適用於新註冊 - 現有註冊將保持到期狀態。"
+    },
+    "matching": {
+      "global": "全域預設",
+      "globalWith": "全域預設值 ( {{fields}} )",
+      "mobile": "手機號碼",
+      "email": "電子郵件",
+      "both": "手機號碼+信箱",
+      "saved": "已更新{{name}}的重複匹配",
+      "hint": "哪些詳細資訊使兩個註冊成為專案的同一客戶。從現在開始，更改適用於重複支票；現有的保護不受影響。"
+    }
   }
 }

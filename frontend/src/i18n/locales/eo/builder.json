@@ -30,7 +30,8 @@
       "registered": "Registrita"
     },
     "booked": "Rezervita",
-    "empty": "Ankoraŭ neniuj referencoj."
+    "empty": "Ankoraŭ neniuj referencoj.",
+    "bookingCancelled": "Rezervado nuligita"
   },
   "detail": {
     "customer": "Kliento",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Rezervo konfirmita.",
       "accepted": "Referenco akceptita.",
-      "rejected": "Referenco malakceptita."
+      "rejected": "Referenco malakceptita.",
+      "bookingCancelled": "Rezervado nuligita."
     },
-    "backToReferrals": "Reen al Referencoj"
+    "backToReferrals": "Reen al Referencoj",
+    "bookingCancelled": "Rezervado nuligita",
+    "cancelBooking": "Nuligi Rezervon",
+    "cancelReasonLabel": "Kialo de nuligo (montrita al la partnero) *",
+    "cancelBookingHint": "Funkcia proprieto revenas al la partnero kaj ilia komisionkvalifiko estas nuligita. La antaŭeco povas esti rezervita denove poste.",
+    "cancelBookingConfirm": "Nuligi la rezervon"
   },
   "history": {
     "title": "Historio",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Komisiona kvalifiko kreita",
       "HANDOVER_COMPLETED": "Transdono finiĝis",
       "ADMIN_PROTECTION_RELEASED": "Administranto liberigis duplikatan protekton frue. Kialo: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Administranto reasignis registradon de {{from}} al {{to}} . Kialo: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Administranto reasignis registradon de {{from}} al {{to}} . Kialo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Duplikata registriĝoprovo de alia partnero estis malakceptita",
+      "BOOKING_CANCELLED": "Rezervado nuligita. Kialo: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Funkcia proprieto resendita al la partnero",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Komisiona kvalifiko nuligita kun la rezervo",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Komisiona kvalifiko restarigita por la nova rezervo"
     }
   }
 }

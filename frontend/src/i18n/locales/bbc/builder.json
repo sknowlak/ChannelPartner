@@ -30,7 +30,8 @@
       "registered": "Terdaftar"
     },
     "booked": "Dipesan",
-    "empty": "Dang adong dope rujukan."
+    "empty": "Dang adong dope rujukan.",
+    "bookingCancelled": "Pemesanan dibatalhon"
   },
   "detail": {
     "customer": "Partobo",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Pemesanan nunga dikonfirmasi.",
       "accepted": "Dijalo do rujukan.",
-      "rejected": "Rujukan ditolak."
+      "rejected": "Rujukan ditolak.",
+      "bookingCancelled": "Pemesanan dibatalhon."
     },
-    "backToReferrals": "Mulak tu Rujukan ."
+    "backToReferrals": "Mulak tu Rujukan .",
+    "bookingCancelled": "Pemesanan dibatalhon",
+    "cancelBooking": "Batal Pemesanan",
+    "cancelReasonLabel": "Alasan pembatalan (dipatuduhon tu pasangan) * .",
+    "cancelBookingHint": "Kepemilikan operasional mulak tu mitra jala kelayakan komisi nasida dibatalhon. Boi do dipesan muse lead i di pudian ni ari.",
+    "cancelBookingConfirm": "Batalhon ma pemesanan ."
   },
   "history": {
     "title": "Turi turian",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisi dibahen .",
       "HANDOVER_COMPLETED": "Selesai penyerahan",
       "ADMIN_PROTECTION_RELEASED": "Admin mangalehon perlindungan ganda awal. Alasan: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin mambahen pendaftaran sian {{from}} gabe {{to}} . Alasan: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin mambahen pendaftaran sian {{from}} gabe {{to}} . Alasan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Usaha pendaftaran duplikat sian pasangan na asing ditolak .",
+      "BOOKING_CANCELLED": "Pemesanan dibatalhon. Alasan: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Kepemilikan operasional diulakhon tu mitra .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kelayakan komisi dibatalhon dohot pemesanan .",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Dipaulak ma kelayakan komisi tu pemesanan na baru ."
     }
   }
 }

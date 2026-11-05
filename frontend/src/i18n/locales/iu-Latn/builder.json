@@ -31,7 +31,8 @@
       "registered": "Atiliuqtausimajuq"
     },
     "booked": "Iniksaliuqtausimajuq",
-    "empty": "Suli tunijaujuqalaunngittuq."
+    "empty": "Suli tunijaujuqalaunngittuq.",
+    "bookingCancelled": "Iniksaliurniq nuqqaqtitauvuq"
   },
   "detail": {
     "customer": "Akiliqsuijuq",
@@ -54,9 +55,15 @@
     "notice": {
       "booked": "Iniksaliurniq nalunaiqtausimajuq.",
       "accepted": "Tunijaujuq angiqtaujuq.",
-      "rejected": "Tunijauninga aaggaaqtaujuq."
+      "rejected": "Tunijauninga aaggaaqtaujuq.",
+      "bookingCancelled": "Iniksaliurniq nuqqaqtitauvuq."
     },
-    "backToReferrals": "Utirluta tunijaujunut"
+    "backToReferrals": "Utirluta tunijaujunut",
+    "bookingCancelled": "Iniksaliurniq nuqqaqtitauvuq",
+    "cancelBooking": "Nuqqaqtillugu iniksaliurniq",
+    "cancelReasonLabel": "Pijjutinga nuqqaqtitauningata (takuksautittijuq piliriqatimut) *",
+    "cancelBookingHint": "Aulattinirmut namminiqarniujuq utiqpappuq katujjiqatinganut amma kamisankut pijunnarningit nuqqaqtitauvapput. Sivuliqtiuniaqtuq aaqqiktaukkannirunnaqtuq uattiarukkanniq.",
+    "cancelBookingConfirm": "Nuqqaqtitauluni iniksaliuqtausimajuq"
   },
   "history": {
     "title": "Piusirijauvalauqtut",
@@ -87,7 +94,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kamisanamut pijunnarniq saqqitaujuq",
       "HANDOVER_COMPLETED": "Tunisiniq pijariiqtuq",
       "ADMIN_PROTECTION_RELEASED": "Aulattiji saqqittilauqtuq ajjinganik sapummijaujjutimik sivuniagut. Pijjutinga: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Aulattiji tunisikkanniqtuq atiliuqtausimanirmik {{from}} tavvunga {{to}} . Pijjutinga: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Aulattiji tunisikkanniqtuq atiliuqtausimanirmik {{from}} tavvunga {{to}} . Pijjutinga: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ajjigiiktumik atiliurasuarniq asianut piliriqatigijaujumut aaggaaqtaulauqtuq",
+      "BOOKING_CANCELLED": "Iniksaliurniq nuqqaqtitauvuq. Pijjutinga: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Aulattinirmut nangminiqarniq utiqtitauvuq piliriqatigijaujumut",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kamisanamut pijunnarniq nuqqaqtitauvuq iniksaliuqtautillugu",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kamisankut pijunnarningit utiqtitauvut nutaamut iniksaliurnirmut"
     }
   }
 }

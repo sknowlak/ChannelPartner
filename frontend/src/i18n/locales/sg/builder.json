@@ -29,7 +29,8 @@
       "registered": "A sû iri ti lo na mbeti"
     },
     "booked": "A réservé ni awe",
-    "empty": "Azo ti referral ayeke dä pëpe."
+    "empty": "Azo ti referral ayeke dä pëpe.",
+    "bookingCancelled": "A annulé réservation ni awe"
   },
   "detail": {
     "customer": "Klient",
@@ -52,9 +53,15 @@
     "notice": {
       "booked": "A confirmé réservation ni awe.",
       "accepted": "A yeda na referral ni.",
-      "rejected": "A ke referral ni."
+      "rejected": "A ke referral ni.",
+      "bookingCancelled": "A annulé réservation ni."
     },
-    "backToReferrals": "Kiri na ndo ti azo so a tokua ala"
+    "backToReferrals": "Kiri na ndo ti azo so a tokua ala",
+    "bookingCancelled": "A annulé réservation ni awe",
+    "cancelBooking": "Annuler réservation",
+    "cancelReasonLabel": "Raison ti annulation ni (a fa ni na mba ti mo ni) * .",
+    "cancelBookingHint": "Azo so ayeke sara kua na ni ayeke kiri na mba ti ala na a yeke zi lege na ala ti wara commission. A lingbi ti kiri ti sû iri ti azo ni na mbeti na pekoni.",
+    "cancelBookingConfirm": "Annulé réservation ni ."
   },
   "history": {
     "title": "Lisoro",
@@ -81,7 +88,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "A leke a-équipement ti commission ni .",
       "HANDOVER_COMPLETED": "A hunzi ti mû ni awe",
       "ADMIN_PROTECTION_RELEASED": "Admin azia na sese double ti batango tele. Raison: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin a kiri a zia iri ti zo na mbeti ti londo na {{from}} ti si na {{to}} . Raison: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin a kiri a zia iri ti zo na mbeti ti londo na {{from}} ti si na {{to}} . Raison: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "A ke mbeni tara ti sû iri ti zo na mbeti use so mbeni mba ti lo nde asara .",
+      "BOOKING_CANCELLED": "A annulé réservation ni. Raison: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "A kiri na propriété ti kua ni na mba ti lo .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "A zi lege ti warango commission na réservation ni .",
+      "COMMISSION_ELIGIBILITY_RESTORED": "A kiri a mû lege na azo ti wara commission ndali ti fini réservation ni ."
     }
   }
 }

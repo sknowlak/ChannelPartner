@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Book tuahmi",
-    "pending": "Hmai lei ah tuah ding in chiahmi"
+    "pending": "Hmai lei ah tuah ding in chiahmi",
+    "status": {
+      "CONFIRMED": "Book tuahmi",
+      "CANCELLED": "Booking cancel a si cang"
+    }
   },
   "assign": {
     "unassigned": "Rianpek lomi",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Project a um rih lo (chim rih lo)",
-    "notInList": "{{project}} (project cazin ah a um lo)"
+    "notInList": "{{project}} (project cazin ah a um lo)",
+    "protectionDays_one": "{{count}} -ni kilvennak",
+    "protectionDays_other": "{{count}} -ni kilvennak"
   },
   "journey": {
     "customer": "Thil cawtu",
@@ -76,7 +82,14 @@
     "progressHistory": "Tthanchonak Tuanbia",
     "timesIn": "( {{timezone}} chung i caan)",
     "backToMyLeads": "Ka hruainak ah kir tthan",
-    "editLead": "Hruaitu remh"
+    "editLead": "Hruaitu remh",
+    "disputeBanner": "A dang hawikom pakhat nih hi customer ngeihnak kongah a al. Leadrat admin nih a zohfel cuahmah lio a si - biakhiahnak an tuah hlan tiang na kilvennak cu a hmun ah a um.",
+    "booking": "Booking",
+    "commission": "Puaisa man",
+    "notBooked": "Cawk a si lo",
+    "cancelledOn": "{{date}} ah phih a si.",
+    "cancelReason": "A ruang: {{reason}}",
+    "cancelledHint": "Inn saktu nih booking cu a hrawh - riantuannak ngeihnak cu na sinah a kir tthan i commission hmuh khawhnak cu a hrawh. Hruaitu cu book tthan a si ahcun a ttha tthan."
   },
   "referral": {
     "NOT_REFERRED": "A si lo (project a um lo)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Innsaktu nih kuatnak cu a cohlan",
       "REFERRAL_REJECTED": "Builder nih kuatnak cu a cohlang lo. A ruang: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin nih aa khatmi kilvennak kha tuan tein a chuah. A ruang: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin nih {{from}} in {{to}} ah min cazin a thlen. A ruang: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin nih {{from}} in {{to}} ah min cazin a thlen. A ruang: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Hawikom dang nih aa khatmi min cazin khumh aa zuammi cu cohlan a si lo",
+      "BOOKING_CANCELLED": "Booking cancel a si. A ruang: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Riantuannak ngeihnak cu hawikom sinah pek tthan a si",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Booking tuahnak he commission hmuh khawhnak cu hrawh a si",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Booking thar caah commission tlamtlinnak pek tthan a si",
+      "OWNERSHIP_DISPUTE_RAISED": "A dang hawikom pakhat nih hi cawtu ngeihnak kongah a al - Leadrat admin nih a zohfel lai",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Hi thil cawtu cung i ngeitu kong buainak cu lak than a si cang - na ngeihnak cu aa thleng lo",
+      "OWNERSHIP_DISPUTE_UPHELD": "Hi thil cawtu cung i ngeitu kong buainak cu zohfel a si cang - na ngeihnak cu fehter a si cang",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Na ngeihmi kong buainak cu nangmah lei in biakhiahnak tuah a si hnu ah min cazin ah khumh a si. Note: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Huhphenhnak a dih: ngeitu kong buainak cu hawikom dang caah biakhiahnak tuah a si. Note: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Hi phone nambar hi {{country}} caah a hman lo.",
     "COUNTRY_MISMATCH": "A dikmi ram code kha thim.",
     "NOT_MOBILE": "Hmunhma siloin mobile nambar rak khumh."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Commission hmuh khawhmi",
+      "PENDING": "Commission a hngak rih",
+      "CANCELLED": "Commission cu cancel a si cang"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Nangmah nih na pekmi a si",
+      "DISPUTED": "Pekchanhnak cu al a si"
+    }
+  },
+  "result": {
+    "none": "Min cazin khumhnak phichuak langhter ding a um lo. Hmasa bik ah hruaitu min cazin khumh.",
+    "acceptedTitle": "Hruaitu min cazin",
+    "rejectedTitle": "Hruaitu cu min cazin ah khumh a si lo",
+    "protectionWindow": "Huhphenhnak Tlanglangawng",
+    "protectedUntil": "tiang kilven a si",
+    "openLead": "Hruaitu On",
+    "addAnother": "Hruaitu dang pakhat chap",
+    "duplicate": "Aa khatmi - a kilven cangmi",
+    "duplicateHint": "Hi riantuanpi hawi cu hi project caah min cazin dang in huhphenh a si cang caah nangmah caah min cazin pek khawh a si lo.",
+    "existingProtectedUntil": "A um cangmi min cazin cu"
+  },
+  "disputes": {
+    "title": "Ka I alnak",
+    "intro": "Chawlettu hna caah na chuahpimi ngeitu kong buainak hna cu aa khatmi ah cohlan an si lo. Leadrat admin nih pakhat cio a zohfel hna.",
+    "empty": "Bia alnak zeihmanh na chuahpi lo. Na rak putmi riantuanpi hawi pakhatkhat cu aa khatmi ah an cohlan lo ahcun, min cazin khumhnak phichuak in na al khawh.",
+    "columns": {
+      "dispute": "Bia i el",
+      "reason": "Na a ruang",
+      "outcome": "A phichuak"
+    },
+    "status": {
+      "OPEN": "Zohfelnak tang ah",
+      "UPHELD": "Nangmah lei ah a si lo",
+      "OVERTURNED": "Na caah biakhiahnak tuah a si",
+      "WITHDRAWN": "Hnuh"
+    },
+    "awaitingReview": "Admin zohfelnak hngak",
+    "openNewLead": "Na hruaitu {{id}} kha on",
+    "withdraw": "Laak than",
+    "withdrawConfirm": "{{name}} caah na alnak kha lak than? A tu ngeitu cu a um bantuk tein a um ko.",
+    "raise": "Ngeihmi kongah alnak",
+    "raiseTitle": "Ngeihmi kongah alnak",
+    "raiseHint": "Hi thil cawtu hi na sinah a ra hmasa ahcun, a ruang kha fianter. Leadrat admin nih a zohfel lai; nangmah lei ah biakhiahnak an tuah ahcun, hruaitu cu nangmah caah min cazin ah khumh a si.",
+    "reasonLabel": "Zeicahdah hi thil cawtu hi nangmah ta a si?",
+    "reasonMin_one": "A tlawmbik {{count}} cafang.",
+    "reasonMin_other": "A tlawmbik {{count}} cafang.",
+    "submit": "I alnak kuat",
+    "notProtected": "Hi project caah hi customer hi ahohmanh nih huhphenhnak an ngei ti lo - a tu ah hruaitu kha na khumh khawh cang.",
+    "raised": "Bia alnak {{id}} zohfelnak caah kuat a si.",
+    "viewAll": "Ka alnak pawl zoh"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Caan",
+    "lastDays_one": "{{count}} ni",
+    "lastDays_other": "{{count}} ni",
+    "emptyTitle": "Don! Hruaitu na ngei rih lo.",
+    "emptyHint": "Na hruaitu hmasa bik kha khumh - na pipeline, booking le kilvennak caan donghnak hna cu hika ah a lang lai.",
+    "tiles": {
+      "leads": "A hruaitu dihlak",
+      "newInPeriod_one": "{{count}} hi caan chung ah a thar",
+      "newInPeriod_other": "{{count}} hi caan chung ah a thar",
+      "accepted": "Cohlan",
+      "booked": "Book tuahmi",
+      "bookedInPeriod_one": "{{count}} hi caan chung ah booking tuah a si",
+      "bookedInPeriod_other": "{{count}} hi caan chung ah booking tuah a si",
+      "conversion": "Piantharnak",
+      "conversionHint": "Cohlanmi lamhruainak hna i hrawm in hruaitu hna cu",
+      "protectedNow": "A tu ah kilven a si cang",
+      "expiringSoon_one": "{{count}} ni ah a dongmi kilvennak",
+      "expiringSoon_other": "{{count}} ni ah a dongmi kilvennak",
+      "disputedNow": "Midang nih an al",
+      "disputedNowHint": "Na hawikom dang sin in a ongmi ngeihnak kong he pehtlai in na hruaitu hna",
+      "commissionEligible": "Commission hmuh khawhmi",
+      "commissionCancelled_one": "{{count}} cancel",
+      "commissionCancelled_other": "{{count}} cancel"
+    },
+    "chart": {
+      "title_one": "Nikhat ah min cazin peknak le booking tuahnak - a donghnak {{count}} ni",
+      "title_other": "Nikhat ah min cazin peknak le booking tuahnak - a donghnak {{count}} ni",
+      "registrations": "Min cazin",
+      "bookings": "Booking tuahnak"
+    },
+    "byStage": "Dirhmun in a hruai hna",
+    "bySource": "Hramthawknak in a hruai hna",
+    "byReferral": "Referral dirhmun in a hruai hna",
+    "myDisputes": "Na chuahpimi buainak hna",
+    "noDisputes": "Bia alnak a um lo.",
+    "unknown": "A um lo",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Lenglei CRM (a zohchunhmi)",
+      "PARTNER_CRM": "Na team nih an chap",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Fonhnak",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "A ra laimi {{count}} ni ah kilvennak a dih lai",
+    "expiringTitle_other": "A ra laimi {{count}} ni chungah kilvennak a dih cang lai",
+    "expiringEmpty": "Hi window ah hin lead pakhat hmanh nih a huhphenhnak a sung lo."
   }
 }

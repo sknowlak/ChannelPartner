@@ -43,7 +43,9 @@
       "name": "Ngaran",
       "city": "Kota",
       "status": "Status",
-      "actions": "lampah"
+      "actions": "lampah",
+      "protection": "Duplikat panyalindungan",
+      "matchOn": "Duplikat cocog dina"
     },
     "closeReferrals": "Tutup pikeun rujukan",
     "reopen": "Buka deui",
@@ -55,6 +57,23 @@
       "add": "Tambahkeun Proyék",
       "created": "Dijieun {{name}} ."
     },
-    "back": "Balik deui ka Tukang"
+    "back": "Balik deui ka Tukang",
+    "protection": {
+      "days_other": "{{count}} poé",
+      "globalDays_other": "Standar global ( {{count}} poé)",
+      "globalDefault": "standar global",
+      "placeholder": "Dinten panyalindungan (kosong = standar global)",
+      "saved": "Protéksi duplikat diropéa pikeun {{name}} .",
+      "hint": "Perlindungan duplikat: 1-3650 dinten, atanapi kosongkeun kanggo nganggo standar global tina Setélan. Parobahan ngan lumaku pikeun pendaptaran anyar - anu aya tetep kadaluwarsa."
+    },
+    "matching": {
+      "global": "standar global",
+      "globalWith": "Standar global ( {{fields}} )",
+      "mobile": "Nomer hapé",
+      "email": "Surélék",
+      "both": "Nomer handphone + email",
+      "saved": "Duplikat cocog diropéa pikeun {{name}}",
+      "hint": "Rincian mana anu ngajantenkeun dua pendaptaran janten palanggan anu sami pikeun hiji proyék. Parobahan dilarapkeun ka duplikat cék ti ayeuna; panyalindungan aya teu kapangaruhan."
+    }
   }
 }

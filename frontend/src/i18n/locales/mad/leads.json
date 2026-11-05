@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "èpesen",
-    "pending": "Terjeda"
+    "pending": "Terjeda",
+    "status": {
+      "CONFIRMED": "èpesen",
+      "CANCELLED": "Pemesanan èbatallaghi"
+    }
   },
   "assign": {
     "unassigned": "ta' ètugasaghi",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "ghi' tadâ' proyek (ta' èrujuk)",
-    "notInList": "{{project}} (ta' bâdâ è dhaftar proyek)"
+    "notInList": "{{project}} (ta' bâdâ è dhaftar proyek)",
+    "protectionDays_one": "{{count}} -are pangaoban",
+    "protectionDays_other": "{{count}} -are pangaoban"
   },
   "journey": {
     "customer": "Oreng se eladin",
@@ -76,7 +82,14 @@
     "progressHistory": "Riwayat Kamajuan",
     "timesIn": "(bâkto è {{timezone}} )",
     "backToMyLeads": "abali ka pimpinan kaulâh",
-    "editLead": "Edit Lead"
+    "editLead": "Edit Lead",
+    "disputeBanner": "Mitra laèn ampon aperrang ghâbây aghâdhui pelanggan panèka. Admin Leadrat èparèksa - perlindungan panjhennengngan pagghun è kennengnganna kantos rèng-orèng panèka motossaghi.",
+    "booking": "Pemesanan",
+    "commission": "Komisi",
+    "notBooked": "ta' èpesen",
+    "cancelledOn": "èbatallaghi è {{date}} .",
+    "cancelReason": "Alasan: {{reason}}",
+    "cancelledHint": "Pembangun èbatallaghi pemesanan - kepemilikan operasional abali ka panjhennengngan bân kelayakan komisi èbatallaghi. èpabâliaghi mon lead èpesen polè."
   },
   "referral": {
     "NOT_REFERRED": "ta' èrujuk (tadâ' proyek)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Tukang bangunan narèma rujukan",
       "REFERRAL_REJECTED": "Tukang bangunan nolak rujukan. Alasan: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin makalowar perlindungan duplikat awal. Alasan: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin aghâbây polè pendaftaran dâri {{from}} ka {{to}} . Alasan: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin aghâbây polè pendaftaran dâri {{from}} ka {{to}} . Alasan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Usaha pendaftaran duplikat sareng mitra laèn ètolak",
+      "BOOKING_CANCELLED": "Pemesanan èbatallaghi. Alasan: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Kepemilikan operasional èbâliaghi ka mitra",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kelayakan komisi èbatallaghi kalabân pemesanan",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kelayakan komisi èbâliaghi ghâbây pemesanan anyar",
+      "OWNERSHIP_DISPUTE_RAISED": "Mitra laèn èbantah ghâbây aghâdhui pelanggan panèka - admin Leadrat bhâkal marèksa",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Perselisihan kepemilikan pelanggan panèka ètarik - kepemilikan panjhennengngan ta' aoba",
+      "OWNERSHIP_DISPUTE_UPHELD": "Perselisihan kepemilikan è pelanggan panèka èparèksa - kepemilikan panèka èkonfirmasi",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Èdaftaraghi saamponna sengketa kepemilikan panjhennengngan èputusaghi è bâbâna panjhennengngan. Cathet: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Perlindungan èsambhât: sengketa kepemilikan èputusaghi ghâbây mitra laènna. Cathet: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Nomer telpon paneka ta' sah kaangguy {{country}} .",
     "COUNTRY_MISMATCH": "Ngereng pilih kode nagara se teppa'.",
     "NOT_MOBILE": "Ngereng maso'aghi nomer ponsel, bânnè telpon darat."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisi sè layak",
+      "PENDING": "Komisi sè èpènter",
+      "CANCELLED": "Komisi èbatallaghi"
+    },
+    "attribution": {
+      "ATTRIBUTED": "èkabâsaaghi ghâbây panjhennengngan",
+      "DISPUTED": "Atribusi èperbantahkan"
+    }
+  },
+  "result": {
+    "none": "Tadha' hasil pendaftaran sè ètonjhuaghi. Daftaraghi lead dhimen.",
+    "acceptedTitle": "Lead èdaftaraghi",
+    "rejectedTitle": "Lead ta' èdaftaraghi",
+    "protectionWindow": "Jendela Perlindungan",
+    "protectedUntil": "èlindungi kantos",
+    "openLead": "Buka' Lead",
+    "addAnother": "Tambahaghi Lead Laènna",
+    "duplicate": "Duplikat - ampon èlindungi",
+    "duplicateHint": "Pelanggan panèka ampon èlindungi ghâbây proyek panèka sareng pendaftaran laèn, saènggâna ta' bisa èdaftaraghi ghâbây panjhennengngan.",
+    "existingProtectedUntil": "Pendaftaran sè bâdâ èlindungi kantos"
+  },
+  "disputes": {
+    "title": "Perselisihan kaulâh",
+    "intro": "Perselisihan kepemilikan sè èangkat ghâbây pelanggan sè ètolak mènangka duplikat. Admin Leadrat mareksa bhân-sabbhân.",
+    "empty": "Sampeyan ta’ madhateng parkara ponapa’a saos. Manabi pelanggan sè èbâkta ètolak mènangka duplikat, panjhennengngan bisa èbantah dâri hasil pendaftaran.",
+    "columns": {
+      "dispute": "Aparkara",
+      "reason": "alasanna be'na",
+      "outcome": "Hasel"
+    },
+    "status": {
+      "OPEN": "èbâdâ'aghi èparèksa",
+      "UPHELD": "ta' èkasennengi be'na",
+      "OVERTURNED": "èpotossaghi ghâbây be'na",
+      "WITHDRAWN": "ètarik"
+    },
+    "awaitingReview": "Ngantos ulasan admin",
+    "openNewLead": "Bukka' lead {{id}}",
+    "withdraw": "Narek",
+    "withdrawConfirm": "Cabut sengketa sampeyan kaangguy {{name}} ? Pemilik sè samangkèn pagghun akadhi sè bâdâ.",
+    "raise": "Perselisihan kepemilikan",
+    "raiseTitle": "Perselisihan kepemilikan",
+    "raiseHint": "Manabi pelanggan panèka dhâtâng ka panjhennengngan sabellunna, jhârbâ'aghi arapa. Admin Leadrat bhâkal marèksa; mon rèng-orèng rowa motossaghi ghâbây be'na, lead èdaftaraghi ghâbây be'na.",
+    "reasonLabel": "arapa pelanggan rèya andhi'na ba'na?",
+    "reasonMin_one": "Paleng sakonè'na {{count}} aksara.",
+    "reasonMin_other": "Paleng sakonè'na {{count}} aksara.",
+    "submit": "Kirim Perselisihan",
+    "notProtected": "Tadha' orèng sè aghâdhui perlindungan ghâbây pelanggan rèya ghâbây proyek rèya polè - be'na bisa ndaftar lead satèya.",
+    "raised": "Sengketa {{id}} èkirim kaangghuy èparèksa.",
+    "viewAll": "abassaghi tang parkara"
+  },
+  "dashboard": {
+    "title": "Dasbor",
+    "period": "Bhekto",
+    "lastDays_one": "{{count}} arè",
+    "lastDays_other": "{{count}} arè",
+    "emptyTitle": "Salamet deteng! be'na ghi' ta' andi' petodu.",
+    "emptyHint": "Daftaraghi prospek pertama - pipeline, pemesanan bân tenggat perlindungan bhâkal ètonjhuaghi è dinna'.",
+    "tiles": {
+      "leads": "Total prospek",
+      "newInPeriod_one": "{{count}} anyar è periode panèka",
+      "newInPeriod_other": "{{count}} anyar è periode panèka",
+      "accepted": "ètarèma",
+      "booked": "èpesen",
+      "bookedInPeriod_one": "{{count}} èpesen è bâkto rèya",
+      "bookedInPeriod_other": "{{count}} èpesen è bâkto rèya",
+      "conversion": "Konversi",
+      "conversionHint": "Lead sè èpesen mènangka bagiyân dâri lead sè ètarèma",
+      "protectedNow": "èlindungi satèya",
+      "expiringSoon_one": "Perlindungan sè èsambhât è {{count}} arè",
+      "expiringSoon_other": "Perlindungan sè èsambhât è {{count}} arè",
+      "disputedNow": "èbantah sareng orèng laèn",
+      "disputedNowHint": "Sampèyan aghâdhui sengketa kepemilikan terbuka dâri mitra laènna",
+      "commissionEligible": "Komisi sè layak",
+      "commissionCancelled_one": "{{count}} èbatallaghi",
+      "commissionCancelled_other": "{{count}} èbatallaghi"
+    },
+    "chart": {
+      "title_one": "Pendaftaran bân pemesanan per arè - {{count}} arè sè kapèng tello'",
+      "title_other": "Pendaftaran bân pemesanan per arè - {{count}} arè sè tapongkor",
+      "registrations": "Pendaftaran",
+      "bookings": "Pemesanan"
+    },
+    "byStage": "mimpin menorot status",
+    "bySource": "Pimpinan menorot sumber",
+    "byReferral": "Pimpinan menorot status rujukan",
+    "myDisputes": "Pertikaian sè èangkat",
+    "noDisputes": "Tadha' parkara sè èangkat.",
+    "unknown": "ta' èset",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM è lowar (simulasi)",
+      "PARTNER_CRM": "ètambâi sareng timna",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integrasi",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Perlindungan kadaluarsa è {{count}} arè se bakal dhâtâng",
+    "expiringTitle_other": "Perlindungan kadaluarsa è {{count}} arè se bakal dhâtâng",
+    "expiringEmpty": "Tadha' timah sè kaèlangan perlindungan è candhela panèka."
   }
 }

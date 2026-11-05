@@ -49,8 +49,73 @@
       "newPartnerId": "Túumben ID u socio",
       "reason": "O'olal (k'a'abéet)",
       "apply": "Aplicar Override",
-      "applying": "Táan in k'áatik..."
+      "applying": "Táan in k'áatik...",
+      "cancelBookingHint": "U xu'ulsa'al ku ye'esik le reserva yéetel u comisión bey cancelado, ku suut propiedad operacional ti' le socio, ka Cha' u le constructor reservar le plomo tu ka'atéen.",
+      "cancelBookingConfirm": "¿Ka xu'ulsik le reservaa'? U comisión xan u cancelado. Le je'ela' ku ts'íibta'al yéetel a k'aaba' yéetel a o'olal."
     },
-    "timelineTitle": "K'iinil auditoría (le registro)"
+    "timelineTitle": "K'iinil auditoría (le registro)",
+    "bookingStatus": "Estado u reserva",
+    "commissionAttribution": "Atribución ti' le Comisión",
+    "disputeOpen": "Yaan jump'éel ba'atelil ti' propiedad je'ek'abta'an ti' le clientea' - uláak' socio ku ya'alik u leti'ob. ku ch'a'atukulta'al te' linki abas kaambal ti' disputas.",
+    "viewDisputes": "Ilawil le ba'atelilo'obo'",
+    "cancellation": {
+      "title": "Ts'o'ok u xu'ulul u reserva",
+      "hint": "Le reserva yéetel u comisión ku cancelan; u yuumil meyaj ts'o'ok u suut yéetel le socio yéetel le constructor je'el u páajtal u reservar le plomo tu ka'atéen.",
+      "at": "Cancelado ti'",
+      "by": "Cancelado tumen",
+      "reason": "Ráason"
+    }
+  },
+  "disputes": {
+    "title": "Ba'atelil ti' propiedad",
+    "hint": "Juntúul socio u registro bin rechazado bey jump'éel duplicado je'el u páajtal u disputar máax u yuumil le cliente. Ilawil ka'ap'éel tséel ka ch'a'atukult.",
+    "statusFilter": "U noj ba'atelil",
+    "allStatuses": "Tuláakal le noj",
+    "empty": "Mina'an ba'atelil yéetel le noj je'ela'.",
+    "columns": {
+      "dispute": "Ba'ate'il",
+      "customer": "Cliyeente",
+      "project": "Nojmeyajil",
+      "raisedBy": "Líik'sa'an tumen",
+      "heldBy": "U yuumil bejla'e'",
+      "status": "Estaado",
+      "raisedAt": "Líik'sa'an yóok'ol"
+    },
+    "detail": {
+      "title": "Ba'atelil {{id}}",
+      "raisedOn": "líik'esaj {{date}}",
+      "raisingTitle": "Líik'sa'an tumen",
+      "holderTitle": "U yuumil bejla'e'",
+      "partner": "Sosyóo",
+      "raisedBy": "Túuxta'an tumen",
+      "customerName": "Cliyeente",
+      "mobile": "Séelular",
+      "alternateMobile": "Móvil alternativo",
+      "email": "Correo electrónico",
+      "project": "Nojmeyajil",
+      "reason": "u o'olal",
+      "registration": "Inscripción",
+      "registeredAt": "Registrado ti'",
+      "referral": "Referencia",
+      "heldMissing": "Ma' páajchaj u kaxta'al le registro yaan ka'acho'.",
+      "resolutionTitle": "Déesision",
+      "outcome": "Resuultado",
+      "note": "Ch'a' ts'íib",
+      "decidedBy": "Decidido tumen",
+      "decidedAt": "ts'o'ok u ch'a'atukulta'al",
+      "newRegistration": "Túumben registro",
+      "decideTitle": "Ch'a'atukult le ba'atelilo'",
+      "noteLabel": "Nota ku tsolik le k'alt'aan (k'a'abéet)",
+      "noteRequired": "Ts'íibt jump'éel ts'íib uti'al a ch'a'tuklik.",
+      "uphold": "Sostener",
+      "overturn": "Sutk'esiko'ob",
+      "upholdEffect": "{{holder}} ku p'áatal ti' le cliente. Le ba'atelilo' ts'o'ok u k'a'alal yéetel mixba'al uláak' ku jelpajal.",
+      "overturnEffect": "{{holder}} 's duplicado protección ts'o'oks bejla'e' yéetel le cliente táan registrado utia'al u {{partner}} bey jump'éel túumben registro.",
+      "heldBookedHelp": "Le clientea' ku reservarta'al tumen u yuumil bejla'e'. Cancelar le reserva yáax (Admin Anulación ti' le registro), ts'o'okole' sutk'esiko'ob:",
+      "confirmTitle": "¿Jach wa jaaj?",
+      "confirmUphold": "Jaaj, apoyar",
+      "confirmOverturn": "Jaaj, suut",
+      "back": "Ka'a suut ti' disputas"
+    }
   }
 }

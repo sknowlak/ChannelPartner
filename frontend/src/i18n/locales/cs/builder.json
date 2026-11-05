@@ -32,7 +32,8 @@
       "registered": "Registrovaný"
     },
     "booked": "Zarezervováno",
-    "empty": "Zatím žádné doporučení."
+    "empty": "Zatím žádné doporučení.",
+    "bookingCancelled": "Rezervace zrušena"
   },
   "detail": {
     "customer": "Zákazník",
@@ -55,9 +56,15 @@
     "notice": {
       "booked": "Rezervace potvrzena.",
       "accepted": "Doporučení přijato.",
-      "rejected": "Doporučení zamítnuto."
+      "rejected": "Doporučení zamítnuto.",
+      "bookingCancelled": "Rezervace zrušena."
     },
-    "backToReferrals": "Zpět na doporučení"
+    "backToReferrals": "Zpět na doporučení",
+    "bookingCancelled": "Rezervace zrušena",
+    "cancelBooking": "Zrušit rezervaci",
+    "cancelReasonLabel": "Důvod zrušení (ukázán partnerovi) *",
+    "cancelBookingHint": "Provozní vlastnictví přechází zpět na partnera a jeho nárok na provizi je zrušen. Vedení lze později znovu zarezervovat.",
+    "cancelBookingConfirm": "Zrušit rezervaci"
   },
   "history": {
     "title": "Dějiny",
@@ -90,7 +97,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Způsobilost provize vytvořena",
       "HANDOVER_COMPLETED": "Předání dokončeno",
       "ADMIN_PROTECTION_RELEASED": "Admin předčasně uvolnil ochranu proti duplicitě. Důvod: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Administrátor přeřadil registraci z {{from}} na {{to}} . Důvod: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Administrátor přeřadil registraci z {{from}} na {{to}} . Důvod: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Pokus o duplicitní registraci od jiného partnera byl zamítnut",
+      "BOOKING_CANCELLED": "Rezervace zrušena. Důvod: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Provozní vlastnictví se vrátilo partnerovi",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Nárok na provizi byl zrušen s rezervací",
+      "COMMISSION_ELIGIBILITY_RESTORED": "U nové rezervace byla obnovena způsobilost provize"
     }
   }
 }

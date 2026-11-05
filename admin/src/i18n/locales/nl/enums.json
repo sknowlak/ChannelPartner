@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "In aanmerking komend",
-    "PENDING": "In behandeling"
+    "PENDING": "In behandeling",
+    "CANCELLED": "Geannuleerd"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Geef de dubbele bescherming vroegtijdig vrij",
-    "REASSIGN_PARTNER": "Opnieuw toewijzen aan een andere partner"
+    "REASSIGN_PARTNER": "Opnieuw toewijzen aan een andere partner",
+    "CANCEL_BOOKING": "Boeking annuleren"
   },
   "dataType": {
     "TEXT": "Tekst",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super beheerder",
     "ADMIN": "Beheerder"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Bevestigd",
+    "CANCELLED": "Geannuleerd"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Toegeschreven",
+    "DISPUTED": "Twijfelachtig"
+  },
+  "disputeStatus": {
+    "OPEN": "Open",
+    "UPHELD": "Gehandhaafd",
+    "OVERTURNED": "Omgevallen",
+    "WITHDRAWN": "Ingetrokken"
   }
 }

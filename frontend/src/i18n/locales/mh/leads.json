@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Booked",
-    "pending": "Kattar"
+    "pending": "Kattar",
+    "status": {
+      "CONFIRMED": "Booked",
+      "CANCELLED": "Booking eo emoj kansela"
+    }
   },
   "assign": {
     "unassigned": "Ejelok lelok",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Ejelok jerbal kiõ (jab kwalok)",
-    "notInList": "{{project}} (jab ilo laajrak in project eo)"
+    "notInList": "{{project}} (jab ilo laajrak in project eo)",
+    "protectionDays_one": "{{count}} -raan in kōjparok",
+    "protectionDays_other": "{{count}} -raan in kōjparok"
   },
   "journey": {
     "customer": "Riwia",
@@ -76,7 +82,14 @@
     "progressHistory": "Bwebwenato in Wōnm̧aanļo̧k",
     "timesIn": "(ien ko ilo {{timezone}} )",
     "backToMyLeads": "Bar jeblak ñan tel ko ao",
-    "editLead": "Edit Lead"
+    "editLead": "Edit Lead",
+    "disputeBanner": "Bar juon ri jerbal ibben ear aitwerõk kin an ri wia in. Juon Leadrat admin ej etale - kōjparok eo am ej bed wōt ilo jikin mae ien eo rej bebe.",
+    "booking": "Booking",
+    "commission": "Kamijen",
+    "notBooked": "Ejelok book",
+    "cancelledOn": "Kar kanne ilo {{date}} .",
+    "cancelReason": "Un: {{reason}}",
+    "cancelledHint": "Ri kalōk eo ear kansela booking eo - operational ownership ej bar jeblak ippam im commission eligibility emoj kansela. Ej bar jeblak elañe lead eo ej bar book."
   },
   "referral": {
     "NOT_REFERRED": "Ejjab jilkintok (ejjelok jerbal)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Ri kalōk eo ear bōk referral eo",
       "REFERRAL_REJECTED": "Builder eo ear jolok referral eo. Un: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin ear kōtlok kein kōjparok ko ruo ilo ien eo mokta. Un: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin ear bar lelok registration jen {{from}} ñan {{to}} . Un: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin ear bar lelok registration jen {{from}} ñan {{to}} . Un: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Juon bar juon alen kar kajeoñ in register jen bar juon partner kar bōjrak",
+      "BOOKING_CANCELLED": "Booking eo emoj kansela. Un: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Jerbal in bōk eddo eo ej bar jeblak ñan ri jerbal eo",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kōttōpar in bōk koņaan kar kansela ippān booking eo",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Emōj an bar jeblak maroñ in bōk koņaan ilo booking eo ekãl",
+      "OWNERSHIP_DISPUTE_RAISED": "Bar juon ri jerbal ear aitwerõk kin an ri wia in - juon Leadrat admin enaj etale",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Aitwerõk eo kin wōnan ri wia in kar jolok - wōnan eo am ejjab oktak",
+      "OWNERSHIP_DISPUTE_UPHELD": "Aitwerõk eo kin an ri wia in kar etale - am make ej kamool",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Kar register elikin an kar kōmman pepe kin am aitwerõk kin am make. Kakōļļe: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Kōjparok eo ear jemlok: juon akwāāl kin wōnan eo ear kōmmane ñan bar juon ri jerbal. Kakōļļe: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Nōmba in talboon in ejjab jerbal ñan {{country}} .",
     "COUNTRY_MISMATCH": "Jouj im kālet code in aelõñ eo ejimwe.",
     "NOT_MOBILE": "Jouj im likit juon am mobile number, jab juon landline."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Emaroñ bōk koņaan",
+      "PENDING": "Jerbal in kōmmane ej bed wot",
+      "CANCELLED": "Kōmijen eo emoj kansela"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Ej itok jen kwe",
+      "DISPUTED": "Attribution disputed"
+    }
+  },
+  "result": {
+    "none": "Ejelok tokjen in register ñan kwalok. Kōmman juon lead mokta.",
+    "acceptedTitle": "Lead registered",
+    "rejectedTitle": "Lead ejjab registered",
+    "protectionWindow": "Wintō in Kōjparok",
+    "protectedUntil": "Kōjparok mae",
+    "openLead": "Open Lead",
+    "addAnother": "Kobaik bar juon lead",
+    "duplicate": "Bar juon alen - emōj an kōjparok",
+    "duplicateHint": "Ri wia in emoj an kejbãrok e ñan jerbal in ikijen bar juon registration, innem ear jab maroñ in register ñan yuk.",
+    "existingProtectedUntil": "Registration eo ej bed ej kejbãrok mae"
+  },
+  "disputes": {
+    "title": "Aō akwāāl",
+    "intro": "Aitwerõk ko kin mweiuk ko kwar kwaloki ñan ri wia ro rar jab bōk ir einwõt men ko jet. Juon Leadrat admin ej etale kajjojo iaer.",
+    "empty": "Kwojjab kar kwalok jabdrewot aitwerõk. Elañe juon ri wia eo kwar bōktok ej bōjrak jen an bar bōke, kwomaroñ jumae jen tokjen registration eo.",
+    "columns": {
+      "dispute": "Jumae",
+      "reason": "Un eo am",
+      "outcome": "Jemlok"
+    },
+    "status": {
+      "OPEN": "Iumin etale",
+      "UPHELD": "Ejjab ilo am kōnan",
+      "OVERTURNED": "Kar pepe ilo am kōnan",
+      "WITHDRAWN": "Kar jolok"
+    },
+    "awaitingReview": "Kōttar an admin etale",
+    "openNewLead": "Kōpeļļo̧k lead eo am̧ {{id}}",
+    "withdraw": "Jolok",
+    "withdrawConfirm": "Kōtlok am aitwerõk kin {{name}} ? Ri wia eo kiõ ej bed wot einwot an bed.",
+    "raise": "Akwāāl kin wōnan",
+    "raiseTitle": "Akwāāl kin wōnan",
+    "raiseHint": "Elañe ri wia in ear itok ñan kwe mokta, kwalok unin. Juon Leadrat admin enaj etale; elañe rej bebe ilo am kōnan, lead eo ej register ñan kwe.",
+    "reasonLabel": "Etke ri wia in ej am?",
+    "reasonMin_one": "Enañin {{count}} letter.",
+    "reasonMin_other": "Enañin {{count}} letter ko.",
+    "submit": "Jilkinlok Dispute",
+    "notProtected": "Ejelok armij ej kejbãrok ri wia in ñan jerbal in bar juon alen - kwomaroñ register lead eo kiõ.",
+    "raised": "Dispute {{id}} kar jilkintok ñan etale.",
+    "viewAll": "Lale aō aitwerõk"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Ien",
+    "lastDays_one": "{{count}} raan",
+    "lastDays_other": "{{count}} raan ko",
+    "emptyTitle": "Karuwainene! Ejelok am maroñ kiõ.",
+    "emptyHint": "Register lead eo am moktata - pipeline eo am, booking ko im deadline ko ñan kejbãrok renaj walok ijin.",
+    "tiles": {
+      "leads": "Oran lead ko",
+      "newInPeriod_one": "{{count}} ekāāl ilo tōre in",
+      "newInPeriod_other": "{{count}} ekāāl ilo tōre in",
+      "accepted": "Emōj an bōk",
+      "booked": "Booked",
+      "bookedInPeriod_one": "{{count}} book ilo ien in",
+      "bookedInPeriod_other": "{{count}} book ilo ien in",
+      "conversion": "Oktak",
+      "conversionHint": "Book lead ko einwot juon mõttan in lead ko kar bōki",
+      "protectedNow": "Kōjparok kiiō",
+      "expiringSoon_one": "Kōjparok ej jemlok ilo {{count}} raan",
+      "expiringSoon_other": "Kōjparok ej jemlok ilo {{count}} raan ko",
+      "disputedNow": "Kar akwāāle jān ro jet",
+      "disputedNowHint": "Lead ko am kin juon aitwerõk kin mweiuk jen bar juon ri jerbal",
+      "commissionEligible": "Emaroñ bōk koņaan",
+      "commissionCancelled_one": "{{count}} kar kanne",
+      "commissionCancelled_other": "{{count}} kar kanne"
+    },
+    "chart": {
+      "title_one": "Registration im booking ko ilo juon raan - raan eo eliktata {{count}}",
+      "title_other": "Registration im booking ko ilo juon raan - {{count}} raan ko eliktata",
+      "registrations": "Rejistre ko",
+      "bookings": "Book ko"
+    },
+    "byStage": "Ej tellok kin joñan",
+    "bySource": "Ej tellok jen ijo ej itok jen e",
+    "byReferral": "Tōl ko ikijen jekjek in referral",
+    "myDisputes": "Akwāāl ko kwar kwaloki",
+    "noDisputes": "Ejelok aitwerõk ko rar walok.",
+    "unknown": "Ejjab set",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "External CRM (simulated)",
+      "PARTNER_CRM": "Kar kobaiktok jen tiim eo am",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Kobaik",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Kōjparok ej jemlok ilo raan eo tok juon {{count}}",
+    "expiringTitle_other": "Kōjparok eo enaj jemlok ilo {{count}} raan ko rej itok",
+    "expiringEmpty": "Ejelok lead ej luuji an kejbãrok ilo window in."
   }
 }

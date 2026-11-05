@@ -30,7 +30,8 @@
       "registered": "Тіркелген"
     },
     "booked": "Брондалды",
-    "empty": "Әзірге сілтемелер жоқ."
+    "empty": "Әзірге сілтемелер жоқ.",
+    "bookingCancelled": "Брондау тоқтатылды"
   },
   "detail": {
     "customer": "Тұтынушы",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Брондау расталды.",
       "accepted": "Реферат қабылданды.",
-      "rejected": "Реферат қабылданбады."
+      "rejected": "Реферат қабылданбады.",
+      "bookingCancelled": "Брондау тоқтатылды."
     },
-    "backToReferrals": "Анықтамалар дегенге қайта келу"
+    "backToReferrals": "Анықтамалар дегенге қайта келу",
+    "bookingCancelled": "Брондау тоқтатылды",
+    "cancelBooking": "Брондаудан бас тарту",
+    "cancelReasonLabel": "Бас тарту себебі (серіктеске көрсетіледі) *",
+    "cancelBookingHint": "Операциялық меншік серіктеске қайтарылады және олардың комиссиялық құқығы жойылады. Жетекшіге кейінірек қайта тапсырыс беруге болады.",
+    "cancelBookingConfirm": "Брондаудан бас тарту"
   },
   "history": {
     "title": "Тарих",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Комиссия жарамдылығы құрылды",
       "HANDOVER_COMPLETED": "Беру аяқталды",
       "ADMIN_PROTECTION_RELEASED": "Әкімші қайталанатын қорғауды ерте шығарды. Себебі: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Әкімші тіркеуді {{from}} орнына {{to}} етіп қайта тағайындады. Себебі: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Әкімші тіркеуді {{from}} орнына {{to}} етіп қайта тағайындады. Себебі: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Басқа серіктестің қайталанатын тіркеу әрекеті қабылданбады",
+      "BOOKING_CANCELLED": "Брондау тоқтатылды. Себебі: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Операциялық меншік серіктеске қайтарылды",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Комиссия құқығы брондау арқылы жойылды",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Жаңа брондау үшін комиссия құқығы қалпына келтірілді"
     }
   }
 }

@@ -29,7 +29,8 @@
       "registered": "登録済み"
     },
     "booked": "予約済み",
-    "empty": "まだ紹介はありません。"
+    "empty": "まだ紹介はありません。",
+    "bookingCancelled": "予約がキャンセルされました"
   },
   "detail": {
     "customer": "お客様",
@@ -52,9 +53,15 @@
     "notice": {
       "booked": "予約が確認されました。",
       "accepted": "紹介を受け付けました。",
-      "rejected": "紹介が拒否されました。"
+      "rejected": "紹介が拒否されました。",
+      "bookingCancelled": "予約がキャンセルされました。"
     },
-    "backToReferrals": "紹介に戻る"
+    "backToReferrals": "紹介に戻る",
+    "bookingCancelled": "予約がキャンセルされました",
+    "cancelBooking": "予約をキャンセルする",
+    "cancelReasonLabel": "キャンセル理由（パートナーに表示）*",
+    "cancelBookingHint": "運用の所有権はパートナーに戻り、コミッション資格は取り消されます。リードは後で再度予約できます。",
+    "cancelBookingConfirm": "予約をキャンセルする"
   },
   "history": {
     "title": "歴史",
@@ -81,7 +88,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "コミッション資格が作成されました",
       "HANDOVER_COMPLETED": "引き継ぎ完了",
       "ADMIN_PROTECTION_RELEASED": "管理者は重複保護を早期に解除しました。理由: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "管理者は登録を{{from}}から{{to}}に再割り当てしました。理由: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "管理者は登録を{{from}}から{{to}}に再割り当てしました。理由: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "別のパートナーによる重複登録の試行が拒否されました",
+      "BOOKING_CANCELLED": "予約がキャンセルされました。理由: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "運営上の所有権がパートナーに返還される",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "予約によりコミッション資格がキャンセルされました",
+      "COMMISSION_ELIGIBILITY_RESTORED": "新規予約のコミッション資格が回復されました"
     }
   }
 }

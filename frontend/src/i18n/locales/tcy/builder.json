@@ -30,7 +30,8 @@
       "registered": "ನೋಂದಾಯಿತ ಆತ್ಂಡ್"
     },
     "booked": "ಬುಕ್ ಮಲ್ತೆರ್",
-    "empty": "ಇತ್ತೆ ರೆಫರಲ್ ಇಜ್ಜಿ."
+    "empty": "ಇತ್ತೆ ರೆಫರಲ್ ಇಜ್ಜಿ.",
+    "bookingCancelled": "ಬುಕ್ಕಿಂಗ್ ರದ್ದು ಆತ್ಂಡ್"
   },
   "detail": {
     "customer": "ಗ್ರಾಹಕೆ",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "ಬುಕ್ಕಿಂಗ್ ಖಚಿತ ಆತ್ಂಡ್.",
       "accepted": "ರೆಫರಲ್ ಸ್ವೀಕಾರ ಆತ್ಂಡ್.",
-      "rejected": "ರೆಫರಲ್ ರಿಜೆಕ್ಟ್ ಆತ್ಂಡ್."
+      "rejected": "ರೆಫರಲ್ ರಿಜೆಕ್ಟ್ ಆತ್ಂಡ್.",
+      "bookingCancelled": "ಬುಕ್ಕಿಂಗ್ ರದ್ದು ಆತ್ಂಡ್."
     },
-    "backToReferrals": "ರೆಫರಲ್ ಲೆಗ್ ಪಿರ ಬಲೆ"
+    "backToReferrals": "ರೆಫರಲ್ ಲೆಗ್ ಪಿರ ಬಲೆ",
+    "bookingCancelled": "ಬುಕ್ಕಿಂಗ್ ರದ್ದು ಆತ್ಂಡ್",
+    "cancelBooking": "ಬುಕ್ಕಿಂಗ್ ರದ್ದು ಮಲ್ಪುಲೆ",
+    "cancelReasonLabel": "ರದ್ದು ಮಲ್ಪುನ ಕಾರಣ (ಪಾರ್ಟ್ ನರ್ ಗ್ ತೋಜಾವೊಡು) *",
+    "cancelBookingHint": "ಕಾರ್ಯಾಚರಣಾ ಮಾಲೀಕತ್ವ ಪಾಲುದಾರೆರೆಗ್ ಪಿರ ಪೋಪುಂಡು ಬೊಕ್ಕ ಅಕ್ಲೆನ ಆಯೋಗದ ಅರ್ಹತೆನ್ ರದ್ದು ಮಲ್ಪುವೆರ್. ಲೀಡ್ ನ್ ನನೊಂಜಿ ಸರ್ತಿ ಬುಕ್ ಮಲ್ಪೊಲಿ.",
+    "cancelBookingConfirm": "ಬುಕ್ಕಿಂಗ್ ರದ್ದು ಮಲ್ಪುಲೆ"
   },
   "history": {
     "title": "ಚರಿತ್ರೆ",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "ಆಯೋಗದ ಅರ್ಹತೆ ಸೃಷ್ಟಿ ಆತ್ಂಡ್",
       "HANDOVER_COMPLETED": "ಹಸ್ತಾಂತರ ಪೂರ್ಣ ಆಂಡ್",
       "ADMIN_PROTECTION_RELEASED": "ಆಡ್ಮಿನ್ ನಕಲು ರಕ್ಷಣೆನ್ ದುಂಬು ಬಿಡುಗಡೆ ಮಲ್ತೆರ್. ಕಾರಣ: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "ನಿರ್ವಾಹಕೆರ್ {{from}} ಡ್ದ್ {{to}} ಗ್ ನೋಂದಣಿನ್ ಮರುನಿಯೋಜಿಸಯೆರ್. ಕಾರಣ: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "ನಿರ್ವಾಹಕೆರ್ {{from}} ಡ್ದ್ {{to}} ಗ್ ನೋಂದಣಿನ್ ಮರುನಿಯೋಜಿಸಯೆರ್. ಕಾರಣ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "ಬೇತೆ ಒರಿ ಪಾಲುದಾರೆರ್ನ ನಕಲಿ ನೋಂದಣಿ ಪ್ರಯತ್ನೊನು ನಿರಾಕರಣೆ ಮಲ್ತೆರ್",
+      "BOOKING_CANCELLED": "ಬುಕ್ಕಿಂಗ್ ರದ್ದು ಆತ್ಂಡ್. ಕಾರಣ: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "ಕಾರ್ಯಾಚರಣಾ ಮಾಲೀಕತ್ವ ಪಾಲುದಾರೆರೆಗ್ ವಾಪಸ್ ಬತ್ತ್ಂಡ್",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "ಬುಕ್ಕಿಂಗ್ ದ ಒಟ್ಟುಗು ಕಮಿಷನ್ ಅರ್ಹತೆನ್ ರದ್ದು ಮಲ್ತೆರ್",
+      "COMMISSION_ELIGIBILITY_RESTORED": "ಪೊಸ ಬುಕ್ಕಿಂಗ್ ಗ್ ಕಮಿಷನ್ ಅರ್ಹತೆನ್ ಪುನಃಸ್ಥಾಪನೆ ಮಲ್ತೆರ್"
     }
   }
 }

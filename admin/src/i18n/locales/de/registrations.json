@@ -49,8 +49,73 @@
       "newPartnerId": "Neue Partner- ID",
       "reason": "Grund (erforderlich)",
       "apply": "Überschreibung anwenden",
-      "applying": "Bewerben..."
+      "applying": "Bewerben...",
+      "cancelBookingHint": "Durch die Stornierung wird die Buchung und deren Provision als storniert markiert, das operative Eigentum geht an den Partner zurück und der Bauträger kann diesen Lead erneut buchen.",
+      "cancelBookingConfirm": "Diese Buchung stornieren? Auch die Provision wird gestrichen. Dies wird mit Ihrem Namen und Grund protokolliert."
     },
-    "timelineTitle": "Audit-Zeitleiste (diese Registrierung)"
+    "timelineTitle": "Audit-Zeitleiste (diese Registrierung)",
+    "bookingStatus": "Buchungsstatus",
+    "commissionAttribution": "Namensnennung der Provision",
+    "disputeOpen": "Für diesen Kunden besteht ein Eigentumsstreit – ein anderer Partner sagt, es gehöre ihm. Die Entscheidung wird auf der Seite „Streitigkeiten“ getroffen.",
+    "viewDisputes": "Streitigkeiten anzeigen",
+    "cancellation": {
+      "title": "Buchung storniert",
+      "hint": "Die Buchung und ihre Provision werden storniert; Die operative Eigentümerschaft liegt wieder beim Partner und der Bauherr kann diesen Vorsprung wieder buchen.",
+      "at": "Abgesagt um",
+      "by": "Storniert von",
+      "reason": "Grund"
+    }
+  },
+  "disputes": {
+    "title": "Eigentumsstreitigkeiten",
+    "hint": "Ein Partner, dessen Registrierung als Duplikat abgelehnt wurde, kann bestreiten, wem der Kunde gehört. Überprüfen Sie beide Seiten und entscheiden Sie.",
+    "statusFilter": "Streitstatus",
+    "allStatuses": "Alle Status",
+    "empty": "Keine Streitigkeiten mit diesem Status.",
+    "columns": {
+      "dispute": "Disput",
+      "customer": "Kunde",
+      "project": "Projekt",
+      "raisedBy": "Aufgewachsen von",
+      "heldBy": "Aktueller Besitzer",
+      "status": "Status",
+      "raisedAt": "Aufgewachsen"
+    },
+    "detail": {
+      "title": "Streit {{id}}",
+      "raisedOn": "Aufgewachsen am {{date}}",
+      "raisingTitle": "Aufgewachsen von",
+      "holderTitle": "Aktueller Besitzer",
+      "partner": "Partner",
+      "raisedBy": "Eingereicht von",
+      "customerName": "Kunde",
+      "mobile": "Mobile",
+      "alternateMobile": "Alternatives Handy",
+      "email": "E-Mail",
+      "project": "Projekt",
+      "reason": "Ihr Grund",
+      "registration": "Anmeldung",
+      "registeredAt": "Registriert am",
+      "referral": "Verweisung",
+      "heldMissing": "Die zurückgehaltene Registrierung konnte nicht gefunden werden.",
+      "resolutionTitle": "Entscheidung",
+      "outcome": "Ergebnis",
+      "note": "Notiz",
+      "decidedBy": "Beschlossen von",
+      "decidedAt": "Beschlossen",
+      "newRegistration": "Neuanmeldung",
+      "decideTitle": "Entscheiden Sie diesen Streit",
+      "noteLabel": "Hinweis zur Begründung der Entscheidung (erforderlich)",
+      "noteRequired": "Schreiben Sie eine Notiz, um zu entscheiden.",
+      "uphold": "Aufrecht erhalten",
+      "overturn": "Umkippen",
+      "upholdEffect": "{{holder}} behält den Kunden. Der Streit ist beigelegt und sonst ändert sich nichts.",
+      "overturnEffect": "Der Duplikatschutz von {{holder}} endet nun und der Kunde wird für {{partner}} als Neuregistrierung registriert.",
+      "heldBookedHelp": "Dieser Kunde wird über den aktuellen Eigentümer gebucht. Stornieren Sie zuerst die Buchung (Admin-Überschreibung bei der Registrierung) und stornieren Sie sie dann:",
+      "confirmTitle": "Bist du sicher?",
+      "confirmUphold": "Ja, haltet fest",
+      "confirmOverturn": "Ja, umkippen",
+      "back": "Zurück zu Streitigkeiten"
+    }
   }
 }

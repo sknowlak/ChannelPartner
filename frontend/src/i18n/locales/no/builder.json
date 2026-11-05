@@ -30,7 +30,8 @@
       "registered": "Registrert"
     },
     "booked": "Bestilt",
-    "empty": "Ingen henvisninger ennå."
+    "empty": "Ingen henvisninger ennå.",
+    "bookingCancelled": "Bestilling kansellert"
   },
   "detail": {
     "customer": "Kunde",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Bestilling bekreftet.",
       "accepted": "Henvisning godtatt.",
-      "rejected": "Henvisning avvist."
+      "rejected": "Henvisning avvist.",
+      "bookingCancelled": "Bestilling kansellert."
     },
-    "backToReferrals": "Tilbake til henvisninger"
+    "backToReferrals": "Tilbake til henvisninger",
+    "bookingCancelled": "Bestilling kansellert",
+    "cancelBooking": "Kanseller bestilling",
+    "cancelReasonLabel": "Årsak til avbestilling (vises til partneren) *",
+    "cancelBookingHint": "Operasjonelt eierskap går tilbake til partneren og deres provisjonsberettigelse blir kansellert. Ledelsen kan bestilles på nytt senere.",
+    "cancelBookingConfirm": "Kanseller bestillingen"
   },
   "history": {
     "title": "Historie",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kommisjonsberettigelse opprettet",
       "HANDOVER_COMPLETED": "Overlevering fullført",
       "ADMIN_PROTECTION_RELEASED": "Admin ga ut duplikatbeskyttelse tidlig. Årsak: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Administrator tilordnet registreringen fra {{from}} til {{to}} . Årsak: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Administrator tilordnet registreringen fra {{from}} til {{to}} . Årsak: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Et duplikatregistreringsforsøk fra en annen partner ble avvist",
+      "BOOKING_CANCELLED": "Bestilling kansellert. Årsak: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operasjonelt eierskap tilbake til partneren",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kommisjonsberettigelse kansellert med bestillingen",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Provisjonsberettigelse gjenopprettet for den nye bestillingen"
     }
   }
 }

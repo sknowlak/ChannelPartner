@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Bo me bumba yo",
-    "pending": "Ya me mana ve"
+    "pending": "Ya me mana ve",
+    "status": {
+      "CONFIRMED": "Bo me bumba yo",
+      "CANCELLED": "Bo me katula reservation"
+    }
   },
   "assign": {
     "unassigned": "Bo me pesa yo ve",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Ata projet mosi ve (bo me pesa yo ve)",
-    "notInList": "{{project}} (kele ve na liste ya bisalu)"
+    "notInList": "{{project}} (kele ve na liste ya bisalu)",
+    "protectionDays_one": "{{count}} -kilumbu ya lutaninu",
+    "protectionDays_other": "{{count}} -kilumbu ya lutaninu"
   },
   "journey": {
     "customer": "Kiliya",
@@ -76,7 +82,14 @@
     "progressHistory": "Disolo ya Kuyela",
     "timesIn": "(ntangu na {{timezone}} )",
     "backToMyLeads": "Vutuka na ba nzila na mono",
-    "editLead": "Soba ntuadisi"
+    "editLead": "Soba ntuadisi",
+    "disputeBanner": "Muntu ya nkaka ya kisalu me tula ntembe na yina me tala kimvwama ya kiliya yai. Admin mosi Leadrat ke tadila yo - lutaninu na nge ke bikala na kisika tii kuna bo ta baka lukanu.",
+    "booking": "Kusala kisika",
+    "commission": "Kisalu, mukumba",
+    "notBooked": "Bo me bumba yo ve",
+    "cancelledOn": "Bo me katula yo na {{date}} .",
+    "cancelReason": "Kikuma: {{reason}}",
+    "cancelledHint": "Muntu yina tungaka nzo yina katulaka reservation - kimvwama ya kisalu me vutuka na nge mpi bo me katula nswa ya kubaka komisio. Yo ke vutulaka kana bo me bumba diaka ntu-diambu yina."
   },
   "referral": {
     "NOT_REFERRED": "Bo me songa yo ve (projet mosi ve)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Muntu ya ke tungaka ndimaka nsangu yina",
       "REFERRAL_REJECTED": "Builder buyaka nsangu yina bo tindaka yandi. Kikuma: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin basisaka lutaninu ya zole na ntwala. Kikuma: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Ntwadisi me pesa zina ya nkaka katuka na {{from}} tii na {{to}} . Kikuma: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Ntwadisi me pesa zina ya nkaka katuka na {{from}} tii na {{to}} . Kikuma: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Bo buyaka kumeka kusonikisa zina ya mbala zole yina nduku ya nkaka salaka",
+      "BOOKING_CANCELLED": "Bo me katula reservation. Kikuma: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Kimfumu ya kisalu me vutuka na nduku",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Bo me katula nswa ya kubaka komisio ti reservation",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Bo me vutula nswa ya kusala kisalu sambu na reservation ya mpa",
+      "OWNERSHIP_DISPUTE_RAISED": "Muntu ya nkaka ya ke salaka ti yandi me tula ntembe na yina me tala kimvwama ya kiliya yai - mfumu mosi Leadrat ta tadila yo",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Kukonda kuwakana ya kimvwama ya kiliya yai me katuka - kimvwama na nge me soba ve",
+      "OWNERSHIP_DISPUTE_UPHELD": "Mavwanga ya kimvwama ya kiliya yai me tadilama - kimvwama na nge me ndimama",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Kusonikisa zina na nima ya kubaka lukanu ya kukonda kuwakana na nge ya kimvwama na faveur na nge. Noti: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Lutaninu sukaka: bo zengaka ntembe ya kimvwama na lusadisu ya nduku ya nkaka. Noti: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Nimero yayi ya telefone kele mbote ve samu na {{country}} .",
     "COUNTRY_MISMATCH": "Pona code ya insi ya mbote.",
     "NOT_MOBILE": "Pardo sonika nimero ya telefone, kansi ya telefone ve."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisio me fwana",
+      "PENDING": "Komisio ke vingila",
+      "CANCELLED": "Bo me katula kisalu"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Bo me pesa yo na nge",
+      "DISPUTED": "Bo ke tula ntembe na mambu yina bo me pesa"
+    }
+  },
+  "result": {
+    "none": "Ata mvutu mosi ve ya kusonikisa zina fwete monisa. Sonikisa ntete ntuadisi.",
+    "acceptedTitle": "Bo me sonikisaka bazina",
+    "rejectedTitle": "Plomb me sonikama ve",
+    "protectionWindow": "Fenêtre ya Lutaninu",
+    "protectedUntil": "Kutanina Tii",
+    "openLead": "Kangula nzila",
+    "addAnother": "Yika muntu ya nkaka",
+    "duplicate": "Kuvutukila - me taninama dezia",
+    "duplicateHint": "Kiliya yai me taninama dezia sambu na kisalu yai na nsadisa ya kusonikisa zina ya nkaka, yo yina bo lendaka ve kusonikisa zina sambu na nge.",
+    "existingProtectedUntil": "Kusonikisa zina yina kele dezia me taninama tii na 2019."
+  },
+  "disputes": {
+    "title": "Mavwanga na mono",
+    "intro": "Mavwanga ya kimvwama yina nge basisaka sambu na bakiliya yina bo buyaka bonso bakopi. Admin mosi Leadrat ke tadilaka konso kima.",
+    "empty": "Ke nutekele ntantani ko. Kana bo me buya kiliya mosi ya nge nataka bonso kopi, nge lenda tula ntembe na yo na kutadila mvutu ya kusonikisa zina.",
+    "columns": {
+      "dispute": "Kukonda kuwakana",
+      "reason": "Kikuma na nge",
+      "outcome": "Malanda"
+    },
+    "status": {
+      "OPEN": "Na nsi ya kutadila",
+      "UPHELD": "Ke mu wete diaku ko",
+      "OVERTURNED": "Babaka lukanu na mambote na nge",
+      "WITHDRAWN": "Kukatula"
+    },
+    "awaitingReview": "Kuvingila mvutu ya admin",
+    "openNewLead": "Kangula nzila na nge {{id}}",
+    "withdraw": "Kukatuka",
+    "withdrawConfirm": "Katula ntembe na nge sambu na {{name}} ? Kimfumu ya ntangu yai ke bikala mutindu yo kele.",
+    "raise": "Kukonda kuwakana na yina me tala kimvwama",
+    "raiseTitle": "Kukonda kuwakana na yina me tala kimvwama",
+    "raiseHint": "Avo nsumbidi ndioyo wayiza ntete kwa ngeye, sasila e kuma. Admin mosi Leadrat ta tadila yo; avo babakidi nzengo muna wete diaku, e nkumbu a mfumu isonekwa kwa ngeye.",
+    "reasonLabel": "Ekuma kiliya kiaki kiaku?",
+    "reasonMin_one": "Ata {{count}} kisono.",
+    "reasonMin_other": "Ata {{count}} bisono.",
+    "submit": "Tinda Mavwanga",
+    "notProtected": "Muntu mosi ve kele na lutaninu na zulu ya kiliya yai sambu na kisalu yai diaka - nge lenda sonikisa ntuadisi ntangu yai.",
+    "raised": "Kukonda kuwakana {{id}} me tindama sambu na kutadila.",
+    "viewAll": "Tala mavwanga na mono"
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "period": "Nsungi",
+    "lastDays_one": "{{count}} kilumbu",
+    "lastDays_other": "{{count}} bilumbu",
+    "emptyTitle": "Kukwisa ya mbote! Nge kele ntete ve ti ba nzila.",
+    "emptyHint": "Sonikisa zina na nge ya ntete - pipeline na nge, ba réservations ti ba dati ya nsuka ya lutaninu ta monana awa.",
+    "tiles": {
+      "leads": "Ntalu ya bantu yonso",
+      "newInPeriod_one": "{{count}} ya mpa na nsungi yai",
+      "newInPeriod_other": "{{count}} ya mpa na nsungi yai",
+      "accepted": "Ndimamaka",
+      "booked": "Bo me bumba yo",
+      "bookedInPeriod_one": "{{count}} me bumbana na nsungi yai",
+      "bookedInPeriod_other": "{{count}} me bumbana na nsungi yai",
+      "conversion": "Kubalula",
+      "conversionHint": "Ba leads ya bo me bumba bonso ndambu ya ba leads ya bo me ndima",
+      "protectedNow": "Bo me tanina yo sesepi",
+      "expiringSoon_one": "Lutaninu ke suka na {{count}} kilumbu",
+      "expiringSoon_other": "Lutaninu ke suka na {{count}} bilumbu",
+      "disputedNow": "Bantu ya nkaka ke tula ntembe",
+      "disputedNowHint": "Ba ntuadisi na nge na ntembe ya kukangula ya kimvwama ya nduku ya nkaka",
+      "commissionEligible": "Komisio me fwana",
+      "commissionCancelled_one": "{{count}} me katuka",
+      "commissionCancelled_other": "{{count}} me katuka"
+    },
+    "chart": {
+      "title_one": "Kusonikisa bazina mpi kukanga bisika na kilumbu - kilumbu ya nsuka {{count}}",
+      "title_other": "Kusonikisa bazina mpi kukanga bisika konso kilumbu - bilumbu ya nsuka {{count}}",
+      "registrations": "Kusonikisa bazina",
+      "bookings": "Ba reservation"
+    },
+    "byStage": "Kutwadisa na kulanda kisika",
+    "bySource": "Ba nzila na nzila ya kisina",
+    "byReferral": "Ba ntuadisi na nzila ya kisika ya bo me tinda",
+    "myDisputes": "Mavwanga ya nge me basisa",
+    "noDisputes": "Ke vena ntantani ko zavaikiswa.",
+    "unknown": "Ke yasikidiswa ko",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM ya nganda (ya bo me landa)",
+      "PARTNER_CRM": "Bo yikaka yo na kimvuka na beno",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Kuvukisa",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Lutaninu ke mana na kilumbu ke landa {{count}}",
+    "expiringTitle_other": "Lutaninu ke mana na bilumbu {{count}} ke landa",
+    "expiringEmpty": "Ata plomb mosi ve kevidisaka lutaninu na yo na fenetre yai."
   }
 }

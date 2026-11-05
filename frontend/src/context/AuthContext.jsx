@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import i18n from 'i18next';
-import { getMyProfile, loginPartner, registerPartner, updateMyProfile } from '../api/client';
+import { getMyProfile, loginPartner, logoutPartner, registerPartner, updateMyProfile } from '../api/client';
 import { rememberLanguage } from '../i18n/language';
 import { isSupportedLocale } from '../i18n/locales';
 
@@ -108,7 +108,11 @@ export function AuthProvider({ children }) {
 
   const hasPermission = (permission) => Boolean(partner?.permissions?.includes(permission));
 
+  // Revokes the token on the server too (section 62); a failure there (offline,
+  // already expired) must never keep the user signed in on this device.
   const logout = () => {
+    const token = localStorage.getItem('partnerToken');
+    if (token) logoutPartner(token).catch(() => {});
     localStorage.removeItem('partnerToken');
     localStorage.removeItem('partnerUser');
     setPartner(null);

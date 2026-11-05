@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Ibhukhiwe",
-    "pending": "Kusalindile"
+    "pending": "Kusalindile",
+    "status": {
+      "CONFIRMED": "Ibhukhiwe",
+      "CANCELLED": "Ukubhuka kukhanseliwe"
+    }
   },
   "assign": {
     "unassigned": "Akunikeziwe",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Awekho iphrojekthi okwamanje (akushiwo)",
-    "notInList": "{{project}} (hhayi ohlwini lwamaphrojekthi)"
+    "notInList": "{{project}} (hhayi ohlwini lwamaphrojekthi)",
+    "protectionDays_one": "{{count}} -ukuvikelwa kosuku",
+    "protectionDays_other": "{{count}} -ukuvikelwa kosuku"
   },
   "journey": {
     "customer": "Ikhasimende",
@@ -76,7 +82,14 @@
     "progressHistory": "Umlando Wenqubekelaphambili",
     "timesIn": "(izikhathi ku- {{timezone}} )",
     "backToMyLeads": "Buyela Ekuholeni Kwami",
-    "editLead": "Hlela Ukuhola"
+    "editLead": "Hlela Ukuhola",
+    "disputeBanner": "Omunye uzakwethu uphikise ubunikazi baleli khasimende. Umlawuli Leadrat uyayibuyekeza - ukuvikela kwakho kuhlala kusendaweni baze banqume.",
+    "booking": "Ukubhuka",
+    "commission": "Ikhomishini",
+    "notBooked": "Akubhukhiwe",
+    "cancelledOn": "Kukhanselwe ngomhla ka {{date}} .",
+    "cancelReason": "Isizathu: {{reason}}",
+    "cancelledHint": "Umakhi ukhansele ukubhukha - ubunikazi bokusebenza bubuyile kuwe futhi ukufaneleka kwekhomishini kukhanseliwe. Iyabuyiselwa uma ukuhola kubhukhwa futhi."
   },
   "referral": {
     "NOT_REFERRED": "Akukhulunywa (ayikho iphrojekthi)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Umakhi wamukele ukudluliselwa",
       "REFERRAL_REJECTED": "Umakhi ukunqabele ukudluliselwa. Isizathu: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "U-Admin ukhiphe isivikelo esiyimpinda kusenesikhathi. Isizathu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Umlawuli ukwabele kabusha ukubhaliswa kusukela ku {{from}} kuya ku {{to}} . Isizathu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Umlawuli ukwabele kabusha ukubhaliswa kusukela ku {{from}} kuya ku {{to}} . Isizathu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Umzamo wokubhalisa oyimpinda ngomunye uzakwethu unqatshiwe",
+      "BOOKING_CANCELLED": "Ukubhuka kukhanseliwe. Isizathu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ubunikazi bokusebenza bubuyiselwe kuzakwethu",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ukufaneleka kwekhomishini kukhanseliwe ngokubhukha",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ukufaneleka kwekhomishini kubuyiselwe ekubhukheni okusha",
+      "OWNERSHIP_DISPUTE_RAISED": "Omunye uzakwethu uphikise ubunikazi baleli khasimende - umlawuli we Leadrat uzobubuyekeza",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Ingxabano yobunikazi kuleli khasimende ihoxisiwe - ubunikazi bakho abukashintshile",
+      "OWNERSHIP_DISPUTE_UPHELD": "Ingxabano yobunikazi kuleli khasimende ibuyekeziwe - ubunikazi bakho buqinisekisiwe",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Ibhaliswe ngemuva kokuthi ingxabano yakho yobunikazi isinqunyiwe esivuna wena. Qaphela: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Ukuvikela kuphelile: ingxabano yobunikazi inqunywe ngokuvumelana nomunye uzakwethu. Qaphela: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Le nombolo yocingo ayivumelekile {{country}} .",
     "COUNTRY_MISMATCH": "Sicela ukhethe ikhodi yezwe efanele.",
     "NOT_MOBILE": "Sicela ufake inombolo yeselula, hhayi ucingo lwasendlini."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Ikhomishini iyafaneleka",
+      "PENDING": "Ikhomishini ilindile",
+      "CANCELLED": "Ikhomishini ikhanseliwe"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Kuthiwa ngawe",
+      "DISPUTED": "Isichasiso siphikisiwe"
+    }
+  },
+  "result": {
+    "none": "Awukho umphumela wokubhalisa ongaboniswa. Bhalisa ukuhola kuqala.",
+    "acceptedTitle": "Umkhokheli ubhalisiwe",
+    "rejectedTitle": "Umthofu awubhalisiwe",
+    "protectionWindow": "Iwindi Lokuvikela",
+    "protectedUntil": "Kuvikelwe Kuze",
+    "openLead": "Vula Ukuhola",
+    "addAnother": "Engeza Omunye Umholi",
+    "duplicate": "Impinda - isivele ivikelwe",
+    "duplicateHint": "Leli khasimende selivele livikelwe le phrojekthi ngokunye ukubhaliswa, ngakho alikwazanga ukubhaliswa kuwe.",
+    "existingProtectedUntil": "Ukubhaliswa okukhona kuvikelwe kuze kube"
+  },
+  "disputes": {
+    "title": "Izingxabano Zami",
+    "intro": "Izingxabano zobunikazi oziphakamisele amakhasimende ezenqatshiwe njengezimpinda. Umphathi we Leadrat ubuyekeza ngayinye.",
+    "empty": "Awuzange uphakamise izingxabano. Uma ikhasimende ozilethile linqatshwa njengempinda, ungaliphikisa ngomphumela wokubhalisa.",
+    "columns": {
+      "dispute": "Ingxabano",
+      "reason": "Isizathu sakho",
+      "outcome": "Umphumela"
+    },
+    "status": {
+      "OPEN": "Iyabuyekezwa",
+      "UPHELD": "Hhayi ekuvuneni kwakho",
+      "OVERTURNED": "Inqume ngokuvuna wena",
+      "WITHDRAWN": "Kuhoxisiwe"
+    },
+    "awaitingReview": "Ilinde isibuyekezo somqondisi",
+    "openNewLead": "Vula ukuhola kwakho {{id}}",
+    "withdraw": "Hoxisa",
+    "withdrawConfirm": "Hoxisa ingxabano yakho ka {{name}} ? Ubunikazi bamanje buhlala bunjengoba bunjalo.",
+    "raise": "Phikisana ngobunikazi",
+    "raiseTitle": "Phikisana ngobunikazi",
+    "raiseHint": "Uma leli khasimende lize kuwe kuqala, chaza ukuthi kungani. Umphathi Leadrat uzoyibuyekeza; uma benquma ngokuvuna wena, abaholayo babhaliselwe wena.",
+    "reasonLabel": "Kungani leli khasimende kungelakho?",
+    "reasonMin_one": "Okungenani uhlamvu olungu {{count}} .",
+    "reasonMin_other": "Okungenani izinhlamvu ezingu {{count}} .",
+    "submit": "Thumela Ingxabano",
+    "notProtected": "Akekho obambe isivikelo kuleli khasimende lale phrojekthi - ungabhalisa abaholayo manje.",
+    "raised": "Ingxabano {{id}} ithunyelwe ukuze ibuyekezwe.",
+    "viewAll": "Buka izingxabano zami"
+  },
+  "dashboard": {
+    "title": "Ideshibhodi",
+    "period": "Isikhathi",
+    "lastDays_one": "{{count}} usuku",
+    "lastDays_other": "{{count}} izinsuku",
+    "emptyTitle": "Siyakwamukela! Awunawo umkhondo okwamanje.",
+    "emptyHint": "Bhalisa ukuhola kwakho kokuqala - umnqamulajuqu wakho wepayipi, ukubhukha kanye nokuvikela kuzovela lapha.",
+    "tiles": {
+      "leads": "Isamba sokuhola",
+      "newInPeriod_one": "{{count}} okusha kulesi sikhathi",
+      "newInPeriod_other": "{{count}} okusha kulesi sikhathi",
+      "accepted": "Kwamukelwe",
+      "booked": "Ibhukhiwe",
+      "bookedInPeriod_one": "{{count}} ibhukwe kulesi sikhathi",
+      "bookedInPeriod_other": "{{count}} ibhukwe kulesi sikhathi",
+      "conversion": "Ukuguqulwa",
+      "conversionHint": "Abaphambili ababhukhiwe njengesabelo sabaqondisi abamukelwe",
+      "protectedNow": "Kuvikelwe manje",
+      "expiringSoon_one": "Ukuvikela kuphela osukwini olungu {{count}}",
+      "expiringSoon_other": "Ukuvikela kugcina ezinsukwini ezingu {{count}}",
+      "disputedNow": "Ukuphikiswa abanye",
+      "disputedNowHint": "Ukuhola kwakho ngengxabano evulekile yobunikazi evela komunye uzakwethu",
+      "commissionEligible": "Ikhomishini iyafaneleka",
+      "commissionCancelled_one": "{{count}} ikhanseliwe",
+      "commissionCancelled_other": "{{count}} ikhanseliwe"
+    },
+    "chart": {
+      "title_one": "Ukubhalisa nokubhukha ngosuku - usuku olungu- {{count}} lokugcina",
+      "title_other": "Ukubhalisa nokubhukha ngosuku - izinsuku ezingu {{count}} zokugcina",
+      "registrations": "Ukubhalisa",
+      "bookings": "Ukubhuka"
+    },
+    "byStage": "Ihola ngokwesimo",
+    "bySource": "Ihola ngomthombo",
+    "byReferral": "Ihola ngesimo sokudluliselwa",
+    "myDisputes": "Izingxabano oziphakamisile",
+    "noDisputes": "Azikho izingxabano eziphakanyisiwe.",
+    "unknown": "Akusethiwe",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM Yangaphandle (ilingisiwe)",
+      "PARTNER_CRM": "Kwengezwe ithimba lakho",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Ukuhlanganisa",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Ukuvikela kuphelelwa yisikhathi osukwini olungu {{count}} olulandelayo",
+    "expiringTitle_other": "Ukuvikela kuphelelwa yisikhathi ezinsukwini ezingu {{count}} ezilandelayo",
+    "expiringEmpty": "Awukho umthofu olahlekelwa ukuvikeleka kwawo kuleli windi."
   }
 }

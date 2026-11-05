@@ -31,7 +31,8 @@
       "registered": "Inscrit"
     },
     "booked": "Réservé",
-    "empty": "Aucune référence pour l'instant."
+    "empty": "Aucune référence pour l'instant.",
+    "bookingCancelled": "Réservation annulée"
   },
   "detail": {
     "customer": "Client",
@@ -54,9 +55,15 @@
     "notice": {
       "booked": "Réservation confirmée.",
       "accepted": "Référence acceptée.",
-      "rejected": "Référence rejetée."
+      "rejected": "Référence rejetée.",
+      "bookingCancelled": "Réservation annulée."
     },
-    "backToReferrals": "Retour aux références"
+    "backToReferrals": "Retour aux références",
+    "bookingCancelled": "Réservation annulée",
+    "cancelBooking": "Annuler la réservation",
+    "cancelReasonLabel": "Raison de l'annulation (montrée au partenaire) *",
+    "cancelBookingHint": "La propriété opérationnelle revient au partenaire et son éligibilité à la commission est annulée. Le lead peut être réservé à nouveau plus tard.",
+    "cancelBookingConfirm": "Annuler la réservation"
   },
   "history": {
     "title": "Histoire",
@@ -87,7 +94,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Admissibilité à la commission créée",
       "HANDOVER_COMPLETED": "Remise terminée",
       "ADMIN_PROTECTION_RELEASED": "L'administrateur a publié la protection contre les doublons plus tôt. Raison : {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "L'administrateur a réaffecté l'inscription de {{from}} à {{to}} . Raison : {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "L'administrateur a réaffecté l'inscription de {{from}} à {{to}} . Raison : {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Une tentative d'enregistrement en double par un autre partenaire a été rejetée",
+      "BOOKING_CANCELLED": "Réservation annulée. Raison : {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Propriété opérationnelle restituée au partenaire",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Éligibilité à la commission annulée avec la réservation",
+      "COMMISSION_ELIGIBILITY_RESTORED": "L’éligibilité à la commission rétablie pour la nouvelle réservation"
     }
   }
 }

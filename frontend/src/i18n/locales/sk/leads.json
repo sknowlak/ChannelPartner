@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Rezervované",
-    "pending": "Čaká na spracovanie"
+    "pending": "Čaká na spracovanie",
+    "status": {
+      "CONFIRMED": "Rezervované",
+      "CANCELLED": "Rezervácia zrušená"
+    }
   },
   "assign": {
     "unassigned": "Nepriradené",
@@ -58,7 +62,11 @@
   },
   "project": {
     "none": "Zatiaľ žiadny projekt (neodporúčané)",
-    "notInList": "{{project}} (nie je v zozname projektov)"
+    "notInList": "{{project}} (nie je v zozname projektov)",
+    "protectionDays_one": "{{count}} -dňová ochrana",
+    "protectionDays_few": "{{count}} -dňová ochrana",
+    "protectionDays_many": "{{count}} -dňová ochrana",
+    "protectionDays_other": "{{count}} -dňová ochrana"
   },
   "journey": {
     "customer": "Zákazník",
@@ -76,7 +84,14 @@
     "progressHistory": "História pokroku",
     "timesIn": "(krát v {{timezone}} )",
     "backToMyLeads": "Späť na My Leads",
-    "editLead": "Upraviť potenciálneho zákazníka"
+    "editLead": "Upraviť potenciálneho zákazníka",
+    "disputeBanner": "Iný partner spochybnil vlastníctvo tohto zákazníka. Správca Leadrat to kontroluje – vaša ochrana zostane na svojom mieste, kým sa nerozhodne.",
+    "booking": "Rezervácia",
+    "commission": "Komisia",
+    "notBooked": "Nie je rezervované",
+    "cancelledOn": "Zrušené dňa {{date}} .",
+    "cancelReason": "Dôvod: {{reason}}",
+    "cancelledHint": "Staviteľ zrušil rezerváciu - prevádzkové vlastníctvo je späť u vás a nárok na províziu je zrušený. Obnoví sa, ak je potenciálny zákazník znova rezervovaný."
   },
   "referral": {
     "NOT_REFERRED": "Neodporúčané (žiadny projekt)",
@@ -164,7 +179,17 @@
       "REFERRAL_ACCEPTED": "Stavebník prijal odporúčanie",
       "REFERRAL_REJECTED": "Stavebník odporúčanie odmietol. Dôvod: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Administrátor predčasne uvoľnil ochranu proti duplicite. Dôvod: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Administrátor zmenil pridelenie registrácie z {{from}} na {{to}} . Dôvod: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Administrátor zmenil pridelenie registrácie z {{from}} na {{to}} . Dôvod: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Pokus o duplicitnú registráciu iného partnera bol odmietnutý",
+      "BOOKING_CANCELLED": "Rezervácia zrušená. Dôvod: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Prevádzkové vlastníctvo sa vrátilo partnerovi",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Oprávnenosť na províziu bola zrušená s rezerváciou",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Oprávnenosť na províziu bola obnovená pre novú rezerváciu",
+      "OWNERSHIP_DISPUTE_RAISED": "Iný partner spochybnil vlastníctvo tohto zákazníka – správca Leadrat ho posúdi",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Spor o vlastníctvo tohto zákazníka bol stiahnutý – vaše vlastníctvo zostáva nezmenené",
+      "OWNERSHIP_DISPUTE_UPHELD": "Spor týkajúci sa vlastníctva tohto zákazníka bol skontrolovaný – vaše vlastníctvo je potvrdené",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Registrované po tom, čo bol váš spor o vlastníctvo rozhodnutý vo váš prospech. Poznámka: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Ochrana skončila: vlastnícky spor bol rozhodnutý v prospech iného spoločníka. Poznámka: {{note}}"
     }
   },
   "columnsPanel": {
@@ -188,5 +213,124 @@
     "INVALID_FOR_COUNTRY": "Toto telefónne číslo nie je platné pre {{country}} .",
     "COUNTRY_MISMATCH": "Vyberte správny kód krajiny.",
     "NOT_MOBILE": "Zadajte mobilné číslo, nie pevnú linku."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "oprávnená na províziu",
+      "PENDING": "Komisia čaká",
+      "CANCELLED": "Komisia zrušená"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Pripísané vám",
+      "DISPUTED": "Pripisovanie bolo spochybnené"
+    }
+  },
+  "result": {
+    "none": "Žiadny výsledok registrácie na zobrazenie. Najprv zaregistrujte potenciálneho zákazníka.",
+    "acceptedTitle": "Potenciálny zákazník bol zaregistrovaný",
+    "rejectedTitle": "Potenciálny zákazník nie je zaregistrovaný",
+    "protectionWindow": "Ochranné okno",
+    "protectedUntil": "Chránené do",
+    "openLead": "Otvorte potenciálneho zákazníka",
+    "addAnother": "Pridať ďalšieho potenciálneho zákazníka",
+    "duplicate": "Duplikát – už chránený",
+    "duplicateHint": "Tento zákazník je už pre tento projekt chránený inou registráciou, takže ho nebolo možné za vás zaregistrovať.",
+    "existingProtectedUntil": "Existujúca registrácia chránená do"
+  },
+  "disputes": {
+    "title": "Moje spory",
+    "intro": "Spory o vlastníctvo, ktoré ste vzniesli pre zákazníkov, ktoré boli odmietnuté ako duplikáty. Každý z nich kontroluje správca Leadrat .",
+    "empty": "Neuviedli ste žiadne námietky. Ak je zákazník, ktorého ste priviedli, odmietnutý ako duplikát, môžete proti tomu podať námietku z výsledku registrácie.",
+    "columns": {
+      "dispute": "Spor",
+      "reason": "Váš dôvod",
+      "outcome": "Výsledok"
+    },
+    "status": {
+      "OPEN": "Prebieha kontrola",
+      "UPHELD": "Nie vo váš prospech",
+      "OVERTURNED": "Rozhodnuté vo váš prospech",
+      "WITHDRAWN": "Stiahnuté"
+    },
+    "awaitingReview": "Čaká sa na kontrolu správcu",
+    "openNewLead": "Otvorte svojho potenciálneho zákazníka {{id}}",
+    "withdraw": "Odstúpiť",
+    "withdrawConfirm": "Chcete stiahnuť námietku pre {{name}} ? Súčasné vlastníctvo zostáva tak, ako je.",
+    "raise": "Spor o vlastníctvo",
+    "raiseTitle": "Spor o vlastníctvo",
+    "raiseHint": "Ak k vám tento zákazník prišiel ako prvý, vysvetlite prečo. Správca Leadrat to skontroluje; ak rozhodnú vo váš prospech, potenciálny zákazník je zaregistrovaný pre vás.",
+    "reasonLabel": "Prečo je tento zákazník váš?",
+    "reasonMin_one": "Minimálny počet znakov: {{count}} .",
+    "reasonMin_few": "Minimálny počet znakov: {{count}} .",
+    "reasonMin_many": "Minimálny počet znakov: {{count}} .",
+    "reasonMin_other": "Minimálny počet znakov: {{count}} .",
+    "submit": "Odoslať námietku",
+    "notProtected": "Nikto už nemá ochranu tohto zákazníka pre tento projekt – teraz môžete zaregistrovať potenciálneho zákazníka.",
+    "raised": "Námietka {{id}} odoslaná na posúdenie.",
+    "viewAll": "Pozrite si moje spory"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Obdobie",
+    "lastDays_one": "{{count}} deň",
+    "lastDays_few": "{{count}} dní",
+    "lastDays_many": "{{count}} dní",
+    "lastDays_other": "{{count}} dní",
+    "emptyTitle": "Vitajte! Zatiaľ nemáte žiadnych potenciálnych zákazníkov.",
+    "emptyHint": "Zaregistrujte svojho prvého potenciálneho zákazníka – tu sa zobrazia vaše kanály, rezervácie a termíny ochrany.",
+    "tiles": {
+      "leads": "Celkový počet potenciálnych zákazníkov",
+      "newInPeriod_one": "{{count}} nových v tomto období",
+      "newInPeriod_few": "{{count}} nových v tomto období",
+      "newInPeriod_many": "{{count}} nových v tomto období",
+      "newInPeriod_other": "{{count}} nových v tomto období",
+      "accepted": "Prijaté",
+      "booked": "Rezervované",
+      "bookedInPeriod_one": "{{count}} rezervovaných v tomto období",
+      "bookedInPeriod_few": "{{count}} rezervovaných v tomto období",
+      "bookedInPeriod_many": "{{count}} rezervovaných v tomto období",
+      "bookedInPeriod_other": "{{count}} rezervovaných v tomto období",
+      "conversion": "Konverzia",
+      "conversionHint": "Rezervovaní potenciálni zákazníci ako podiel prijatých potenciálnych zákazníkov",
+      "protectedNow": "Teraz chránené",
+      "expiringSoon_one": "Ochrana končí o {{count}} deň",
+      "expiringSoon_few": "Ochrana sa končí o {{count}} dní",
+      "expiringSoon_many": "Ochrana sa končí o {{count}} dní",
+      "expiringSoon_other": "Ochrana sa končí o {{count}} dní",
+      "disputedNow": "Spochybňované inými",
+      "disputedNowHint": "Vaši potenciálni zákazníci s otvoreným sporom o vlastníctvo od iného partnera",
+      "commissionEligible": "oprávnená na províziu",
+      "commissionCancelled_one": "{{count}} zrušené",
+      "commissionCancelled_few": "{{count}} zrušené",
+      "commissionCancelled_many": "{{count}} zrušené",
+      "commissionCancelled_other": "{{count}} zrušené"
+    },
+    "chart": {
+      "title_one": "Registrácie a rezervácie za deň – posledný {{count}} deň",
+      "title_few": "Registrácie a rezervácie za deň – posledných {{count}} dní",
+      "title_many": "Registrácie a rezervácie za deň – posledných {{count}} dní",
+      "title_other": "Registrácie a rezervácie za deň – posledných {{count}} dní",
+      "registrations": "Registrácie",
+      "bookings": "Rezervácie"
+    },
+    "byStage": "Vedie podľa stavu",
+    "bySource": "Vedie podľa zdroja",
+    "byReferral": "Vedie podľa stavu odporúčania",
+    "myDisputes": "Spory, ktoré ste vzniesli",
+    "noDisputes": "Neboli vznesené žiadne spory.",
+    "unknown": "Nie je nastavené",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Externé CRM (simulované)",
+      "PARTNER_CRM": "Pridané vaším tímom",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "integrácia",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Platnosť ochrany vyprší o {{count}} deň",
+    "expiringTitle_few": "Platnosť ochrany vyprší počas nasledujúcich {{count}} dní",
+    "expiringTitle_many": "Platnosť ochrany vyprší počas nasledujúcich {{count}} dní",
+    "expiringTitle_other": "Platnosť ochrany vyprší počas nasledujúcich {{count}} dní",
+    "expiringEmpty": "Žiadne olovo v tomto okienku nestráca svoju ochranu."
   }
 }

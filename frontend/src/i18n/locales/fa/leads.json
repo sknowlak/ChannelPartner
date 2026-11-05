@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "رزرو شده است",
-    "pending": "در انتظار"
+    "pending": "در انتظار",
+    "status": {
+      "CONFIRMED": "رزرو شده است",
+      "CANCELLED": "رزرو لغو شد"
+    }
   },
   "assign": {
     "unassigned": "واگذار نشده است",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "هنوز پروژه ای وجود ندارد (ارجاع نشده است)",
-    "notInList": "{{project}} (در لیست پروژه نیست)"
+    "notInList": "{{project}} (در لیست پروژه نیست)",
+    "protectionDays_one": "{{count}} حفاظت روز",
+    "protectionDays_other": "{{count}} حفاظت روز"
   },
   "journey": {
     "customer": "مشتری",
@@ -76,7 +82,14 @@
     "progressHistory": "تاریخچه پیشرفت",
     "timesIn": "(زمان در {{timezone}} )",
     "backToMyLeads": "بازگشت به سرنخ های من",
-    "editLead": "ویرایش سرنخ"
+    "editLead": "ویرایش سرنخ",
+    "disputeBanner": "شریک دیگری مالکیت این مشتری را به چالش کشیده است. یک سرپرست Leadrat در حال بررسی آن است - حفاظت شما تا زمانی که آنها تصمیم بگیرند در جای خود باقی می ماند.",
+    "booking": "رزرو",
+    "commission": "کمیسیون",
+    "notBooked": "رزرو نشده است",
+    "cancelledOn": "در {{date}} لغو شد.",
+    "cancelReason": "دلیل: {{reason}}",
+    "cancelledHint": "سازنده رزرو را لغو کرد - مالکیت عملیاتی با شما بازگشته است و واجد شرایط بودن کمیسیون لغو شده است. در صورت رزرو مجدد امتیاز، بازیابی می شود."
   },
   "referral": {
     "NOT_REFERRED": "ارجاع نشده (بدون پروژه)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "سازنده ارجاع را پذیرفت",
       "REFERRAL_REJECTED": "سازنده ارجاع را رد کرد. دلیل: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "ادمین حفاظت تکراری را زودتر منتشر کرد. دلیل: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "ادمین ثبت نام را از {{from}} به {{to}} واگذار کرد. دلیل: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "ادمین ثبت نام را از {{from}} به {{to}} واگذار کرد. دلیل: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "تلاش ثبت نام تکراری توسط شریک دیگر رد شد",
+      "BOOKING_CANCELLED": "رزرو لغو شد. دلیل: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "مالکیت عملیاتی به شریک بازگشت",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "واجد شرایط بودن کمیسیون با رزرو لغو شد",
+      "COMMISSION_ELIGIBILITY_RESTORED": "واجد شرایط بودن کمیسیون برای رزرو جدید بازیابی شد",
+      "OWNERSHIP_DISPUTE_RAISED": "شریک دیگری مالکیت این مشتری را مورد مناقشه قرار داد - یک سرپرست Leadrat آن را بررسی خواهد کرد",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "اختلاف مالکیت این مشتری لغو شد - مالکیت شما بدون تغییر است",
+      "OWNERSHIP_DISPUTE_UPHELD": "اختلاف مالکیت این مشتری بررسی شد - مالکیت شما تأیید شد",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "پس از تصمیم گیری در مورد اختلاف مالکیت شما به نفع شما ثبت شد. توجه: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "حفاظت به پایان رسید: اختلاف مالکیت به نفع شریک دیگر تصمیم گیری شد. توجه: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "این شماره تلفن برای {{country}} معتبر نیست.",
     "COUNTRY_MISMATCH": "لطفا کد کشور صحیح را انتخاب کنید.",
     "NOT_MOBILE": "لطفا شماره موبایل را وارد کنید نه تلفن ثابت."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "کمیسیون واجد شرایط",
+      "PENDING": "کمیسیون در انتظار",
+      "CANCELLED": "کمیسیون لغو شد"
+    },
+    "attribution": {
+      "ATTRIBUTED": "منتسب به شما",
+      "DISPUTED": "انتساب مورد مناقشه است"
+    }
+  },
+  "result": {
+    "none": "هیچ نتیجه ثبت نامی برای نمایش وجود ندارد. ابتدا یک سرنخ ثبت کنید.",
+    "acceptedTitle": "سرب ثبت شد",
+    "rejectedTitle": "سرب ثبت نشده است",
+    "protectionWindow": "پنجره حفاظتی",
+    "protectedUntil": "محافظت شده تا",
+    "openLead": "سرب را باز کنید",
+    "addAnother": "یک سرنخ دیگر اضافه کنید",
+    "duplicate": "تکراری - قبلا محافظت شده است",
+    "duplicateHint": "این مشتری قبلاً با ثبت نام دیگری برای این پروژه محافظت شده است، بنابراین برای شما ثبت نشد.",
+    "existingProtectedUntil": "ثبت نام موجود تا زمان محافظت می شود"
+  },
+  "disputes": {
+    "title": "اختلافات من",
+    "intro": "اختلافات مالکیتی که برای مشتریانی مطرح کردید که به عنوان تکراری رد شدند. یک مدیر Leadrat هر یک را بررسی می کند.",
+    "empty": "شما هیچ اختلافی را مطرح نکرده اید. اگر مشتری که وارد کردید به عنوان تکراری رد شد، می توانید آن را از نتیجه ثبت اعتراض کنید.",
+    "columns": {
+      "dispute": "اختلاف",
+      "reason": "دلیل شما",
+      "outcome": "نتیجه"
+    },
+    "status": {
+      "OPEN": "در دست بررسی",
+      "UPHELD": "به نفع شما نیست",
+      "OVERTURNED": "به نفع شما تصمیم گرفت",
+      "WITHDRAWN": "برداشته شد"
+    },
+    "awaitingReview": "منتظر بررسی مدیر",
+    "openNewLead": "سرنخ خود را باز کنید {{id}}",
+    "withdraw": "برداشت",
+    "withdrawConfirm": "اعتراض خود را برای {{name}} پس بگیرید؟ مالکیت فعلی به همان شکلی که هست باقی می ماند.",
+    "raise": "اختلاف مالکیت",
+    "raiseTitle": "اختلاف مالکیت",
+    "raiseHint": "اگر این مشتری ابتدا به شما مراجعه کرد، دلیل آن را توضیح دهید. یک مدیر Leadrat آن را بررسی خواهد کرد. اگر آنها به نفع شما تصمیم بگیرند، رهبری برای شما ثبت می شود.",
+    "reasonLabel": "چرا این مشتری مال شماست؟",
+    "reasonMin_one": "حداقل {{count}} نویسه.",
+    "reasonMin_other": "حداقل {{count}} کاراکتر.",
+    "submit": "ارسال اختلاف",
+    "notProtected": "هیچ کس دیگر از این مشتری برای این پروژه محافظت نمی کند - اکنون می توانید پیشرو را ثبت کنید.",
+    "raised": "اختلاف {{id}} برای بررسی ارسال شد.",
+    "viewAll": "اختلافات من را مشاهده کنید"
+  },
+  "dashboard": {
+    "title": "داشبورد",
+    "period": "دوره",
+    "lastDays_one": "{{count}} روز",
+    "lastDays_other": "{{count}} روز",
+    "emptyTitle": "خوش آمدید! شما هنوز سرنخ ندارید.",
+    "emptyHint": "اولین سرنخ خود را ثبت کنید - خط لوله، رزروها و مهلت های حفاظتی شما در اینجا نشان داده می شود.",
+    "tiles": {
+      "leads": "کل سرنخ ها",
+      "newInPeriod_one": "{{count}} جدید در این دوره",
+      "newInPeriod_other": "{{count}} جدید در این دوره",
+      "accepted": "پذیرفته شد",
+      "booked": "رزرو شده است",
+      "bookedInPeriod_one": "{{count}} در این دوره رزرو شده است",
+      "bookedInPeriod_other": "{{count}} در این دوره رزرو شده است",
+      "conversion": "تبدیل",
+      "conversionHint": "سرنخ های رزرو شده به عنوان سهمی از سرنخ های پذیرفته شده",
+      "protectedNow": "اکنون محافظت شده است",
+      "expiringSoon_one": "حفاظت در {{count}} روز به پایان می‌رسد",
+      "expiringSoon_other": "حفاظت در {{count}} روز به پایان می‌رسد",
+      "disputedNow": "مورد مناقشه دیگران",
+      "disputedNowHint": "شما با یک اختلاف مالکیت آشکار از شریک دیگر هدایت می‌شوید",
+      "commissionEligible": "کمیسیون واجد شرایط",
+      "commissionCancelled_one": "{{count}} لغو شد",
+      "commissionCancelled_other": "{{count}} لغو شد"
+    },
+    "chart": {
+      "title_one": "ثبت نام و رزرو در روز - {{count}} روز گذشته",
+      "title_other": "ثبت نام و رزرو در روز - {{count}} روز گذشته است",
+      "registrations": "ثبت نام ها",
+      "bookings": "رزروها"
+    },
+    "byStage": "بر اساس وضعیت پیشتاز است",
+    "bySource": "توسط منبع هدایت می شود",
+    "byReferral": "بر اساس وضعیت ارجاع منجر می شود",
+    "myDisputes": "اختلافاتی که شما مطرح کردید",
+    "noDisputes": "هیچ اختلافی مطرح نشد",
+    "unknown": "تنظیم نشده است",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM خارجی (شبیه سازی شده)",
+      "PARTNER_CRM": "توسط تیم شما اضافه شده است",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "یکپارچه سازی",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "حفاظت در {{count}} روز آینده منقضی می‌شود",
+    "expiringTitle_other": "حفاظت در {{count}} روز آینده منقضی می‌شود",
+    "expiringEmpty": "هیچ سربی محافظت خود را در این پنجره از دست نمی دهد."
   }
 }

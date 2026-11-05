@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "ਯੋਗ",
-    "PENDING": "ਬਕਾਇਆ"
+    "PENDING": "ਬਕਾਇਆ",
+    "CANCELLED": "ਰੱਦ ਕਰ ਦਿੱਤਾ"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "ਡੁਪਲੀਕੇਟ ਸੁਰੱਖਿਆ ਨੂੰ ਜਲਦੀ ਜਾਰੀ ਕਰੋ",
-    "REASSIGN_PARTNER": "ਕਿਸੇ ਹੋਰ ਸਾਥੀ ਨੂੰ ਦੁਬਾਰਾ ਜ਼ਿੰਮੇ ਲਗਾਓ"
+    "REASSIGN_PARTNER": "ਕਿਸੇ ਹੋਰ ਸਾਥੀ ਨੂੰ ਦੁਬਾਰਾ ਜ਼ਿੰਮੇ ਲਗਾਓ",
+    "CANCEL_BOOKING": "ਬੁਕਿੰਗ ਰੱਦ ਕਰੋ"
   },
   "dataType": {
     "TEXT": "ਟੈਕਸਟ",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "ਸੁਪਰ ਐਡਮਿਨ",
     "ADMIN": "ਐਡਮਿਨ"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "ਪੁਸ਼ਟੀ ਕੀਤੀ",
+    "CANCELLED": "ਰੱਦ ਕਰ ਦਿੱਤਾ"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "ਵਿਸ਼ੇਸ਼ਤਾ",
+    "DISPUTED": "ਵਿਵਾਦਿਤ"
+  },
+  "disputeStatus": {
+    "OPEN": "ਖੋਲ੍ਹੋ",
+    "UPHELD": "ਬਰਕਰਾਰ ਰੱਖਿਆ",
+    "OVERTURNED": "ਉਲਟਾ ਦਿੱਤਾ",
+    "WITHDRAWN": "ਵਾਪਸ ਲੈ ਲਿਆ"
   }
 }

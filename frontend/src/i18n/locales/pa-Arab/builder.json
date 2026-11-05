@@ -30,7 +30,8 @@
       "registered": "رجسٹرڈ"
     },
     "booked": "بک ہو گیا",
-    "empty": "ہلے تیکر کوئی حوالہ نئیں۔"
+    "empty": "ہلے تیکر کوئی حوالہ نئیں۔",
+    "bookingCancelled": "بکنگ منسوخ کر دتی گئی"
   },
   "detail": {
     "customer": "صارف",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "بکنگ دی تصدیق ہو گئی۔",
       "accepted": "حوالہ قبول کر لیا گیا۔",
-      "rejected": "حوالہ مسترد کر دتا گیا۔"
+      "rejected": "حوالہ مسترد کر دتا گیا۔",
+      "bookingCancelled": "بکنگ منسوخ کر دتی گئی۔"
     },
-    "backToReferrals": "حوالہ جات تے واپس جاؤ"
+    "backToReferrals": "حوالہ جات تے واپس جاؤ",
+    "bookingCancelled": "بکنگ منسوخ کر دتی گئی",
+    "cancelBooking": "بکنگ منسوخ کرو",
+    "cancelReasonLabel": "منسوخ کرن دی وجہ (پارٹنر نوں وکھائی گئی) *",
+    "cancelBookingHint": "آپریشنل ملکیت پارٹنر نوں واپس جاندی اے تے اوہناں دی کمیشن دی اہلیت منسوخ کر دتی جاندی اے۔ لیڈ نو بعد چ دوبارہ بک کیتا جا سکدا اے۔",
+    "cancelBookingConfirm": "بکنگ منسوخ کرو"
   },
   "history": {
     "title": "تریخ",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "کمیشن دی اہلیت بنائی گئی",
       "HANDOVER_COMPLETED": "ہینڈ اوور مکمل ہو گیا",
       "ADMIN_PROTECTION_RELEASED": "ایڈمن نے ڈپلیکیٹ پروٹیکشن جلدی جاری کر دتا۔ وجہ: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "ایڈمن نے رجسٹریشن نو {{from}} توں {{to}} تے دوبارہ تفویض کر دتا۔ وجہ: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "ایڈمن نے رجسٹریشن نو {{from}} توں {{to}} تے دوبارہ تفویض کر دتا۔ وجہ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "اک دوجے پارٹنر دی ڈپلیکیٹ رجسٹریشن دی کوشش مسترد کر دتی گئی",
+      "BOOKING_CANCELLED": "بکنگ منسوخ کر دتی گئی۔ وجہ: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "آپریشنل ملکیت پارٹنر نوں واپس کر دتی گئی",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "بکنگ دے نال کمیشن دی اہلیت منسوخ کر دتی گئی",
+      "COMMISSION_ELIGIBILITY_RESTORED": "نویں بکنگ لئی کمیشن دی اہلیت بحال کر دتی گئی"
     }
   }
 }

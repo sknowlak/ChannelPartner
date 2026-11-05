@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Йәтеш",
-    "PENDING": "Көтә-көтә"
+    "PENDING": "Көтә-көтә",
+    "CANCELLED": "Отмененный"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Дубликаттарҙы һаҡлауҙы ваҡытынан алда сығарығыҙ",
-    "REASSIGN_PARTNER": "Икенсе партнерға үҙгәртеп тәғәйенләү"
+    "REASSIGN_PARTNER": "Икенсе партнерға үҙгәртеп тәғәйенләү",
+    "CANCEL_BOOKING": "Бронированиены юҡҡа сығарыу"
   },
   "dataType": {
     "TEXT": "Текст",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Супер Админ",
     "ADMIN": "Админ"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Раҫланған",
+    "CANCELLED": "Отмененный"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Атрибутланған",
+    "DISPUTED": "Бәхәсле"
+  },
+  "disputeStatus": {
+    "OPEN": "Асыҡ",
+    "UPHELD": "Ҡулланылған",
+    "OVERTURNED": "Түңкәрелгән",
+    "WITHDRAWN": "Кире алынған"
   }
 }

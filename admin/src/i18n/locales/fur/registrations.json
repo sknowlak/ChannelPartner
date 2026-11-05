@@ -49,8 +49,73 @@
       "newPartnerId": "Gnûf ID dal compagn",
       "reason": "Motîf (obligât)",
       "apply": "Aplica la sostituzion",
-      "applying": "Aplicazion..."
+      "applying": "Aplicazion...",
+      "cancelBookingHint": "La cancelazion e segne la prenotazion e la sô comission come canceladis, e torne la proprietât operative al compagn e e permet al costrutôr di prenotâ di gnûf chest lead.",
+      "cancelBookingConfirm": "Annulâ cheste prenotazion? Ancje la sô comission e je cancelade. Chest al è regjstrât cul to non e la reson."
     },
-    "timelineTitle": "Cronologjie dal audit (cheste regjistrazion)"
+    "timelineTitle": "Cronologjie dal audit (cheste regjistrazion)",
+    "bookingStatus": "Stat de prenotazion",
+    "commissionAttribution": "Atribuzion de comission",
+    "disputeOpen": "Une dispute di proprietât e je vierte su chest client - un altri compagn al dîs che e je lôr. Al è decidût su la pagjine Disputis.",
+    "viewDisputes": "Viôt lis disputis",
+    "cancellation": {
+      "title": "La prenotazion cancelade",
+      "hint": "La prenotazion e la sô comission a son canceladis; la proprietât operative e je tornade cul compagn e il costrutôr al pues prenotâ di gnûf chest lead.",
+      "at": "Cancelât a",
+      "by": "Cancelât di",
+      "reason": "Reson"
+    }
+  },
+  "disputes": {
+    "title": "Disputis di proprietât",
+    "hint": "Un compagn che la sô regjistrazion e je stade refudade come duplicat al pues disputâ cui che al è il proprietari dal client. Revisionâ dutis dôs lis bandis e decidi.",
+    "statusFilter": "Statût de dispute",
+    "allStatuses": "Ducj i stâts",
+    "empty": "Nissune dispute cun chest status.",
+    "columns": {
+      "dispute": "Dispute",
+      "customer": "Client",
+      "project": "Progjet",
+      "raisedBy": "Cressût di",
+      "heldBy": "Proprietari corint",
+      "status": "Stât",
+      "raisedAt": "Alçât su"
+    },
+    "detail": {
+      "title": "Dispute {{id}}",
+      "raisedOn": "Alçât {{date}}",
+      "raisingTitle": "Cressût di",
+      "holderTitle": "Proprietari corint",
+      "partner": "Compagn",
+      "raisedBy": "Inviât di",
+      "customerName": "Client",
+      "mobile": "Celulâr",
+      "alternateMobile": "Celulâr alternatîf",
+      "email": "Email",
+      "project": "Progjet",
+      "reason": "La lôr reson",
+      "registration": "Iscrizion",
+      "registeredAt": "Regjistrât su",
+      "referral": "Riferiment",
+      "heldMissing": "La regjistrazion tignude no si è cjatade.",
+      "resolutionTitle": "Decision",
+      "outcome": "Esit",
+      "note": "Note",
+      "decidedBy": "Decidût di",
+      "decidedAt": "Decidût su",
+      "newRegistration": "Gnove iscrizion",
+      "decideTitle": "Decidi cheste dispute",
+      "noteLabel": "Note che e spieghe la decision (obligatorie)",
+      "noteRequired": "Scrîf une note par decidi.",
+      "uphold": "Sostignî",
+      "overturn": "Cambiâ",
+      "upholdEffect": "{{holder}} al manten il client. La dispute e je sierade e nuie altri al cambie.",
+      "overturnEffect": "La protezion dal dopli di {{holder}} e finìs cumò e il client al è regjistrât par {{partner}} come gnove regjistrazion.",
+      "heldBookedHelp": "Chest client al è prenotât midiant dal proprietari corint. Annulâ prime chê prenotazion (Admin Override su la regjistrazion), daspò annulâ:",
+      "confirmTitle": "Siet sigûr?",
+      "confirmUphold": "Si, sostignî",
+      "confirmOverturn": "Si, ribaltâ",
+      "back": "Tornâ aes Disputis"
+    }
   }
 }

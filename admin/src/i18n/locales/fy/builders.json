@@ -43,7 +43,9 @@
       "name": "Namme",
       "city": "Stêd",
       "status": "Status",
-      "actions": "Aksjes"
+      "actions": "Aksjes",
+      "protection": "Duplikaat beskerming",
+      "matchOn": "Duplikaten oerienkomme op"
     },
     "closeReferrals": "Slút foar ferwizings",
     "reopen": "Reiepenje",
@@ -55,6 +57,25 @@
       "add": "Add Project",
       "created": "{{name}} makke."
     },
-    "back": "Werom nei Bouwers"
+    "back": "Werom nei Bouwers",
+    "protection": {
+      "days_one": "{{count}} dei",
+      "days_other": "{{count}} dagen",
+      "globalDays_one": "Globale standert ( {{count}} dei)",
+      "globalDays_other": "Globale standert ( {{count}} dagen)",
+      "globalDefault": "Global standert",
+      "placeholder": "Beskermingsdagen (leech = globale standert)",
+      "saved": "Dûbele beskerming bywurke foar {{name}} .",
+      "hint": "Duplikaatbeskerming: 1-3650 dagen, of lit leech om de globale standert te brûken fan Ynstellings. In feroaring jildt allinich foar nije registraasjes - besteande behâlde har ferfaldatum."
+    },
+    "matching": {
+      "global": "Global standert",
+      "globalWith": "Globale standert ( {{fields}} )",
+      "mobile": "Mobyl nûmer",
+      "email": "Email",
+      "both": "Mobyl nûmer + e-post",
+      "saved": "Duplikaat oerienkomst bywurke foar {{name}}",
+      "hint": "Hokker details meitsje twa registraasjes deselde klant foar in projekt. Feroarings jilde foar dûbele kontrôles fan no ôf; besteande beskerming wurdt net beynfloede."
+    }
   }
 }

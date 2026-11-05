@@ -30,7 +30,8 @@
       "registered": "makarehistru"
     },
     "booked": "me-book na",
-    "empty": "Ala pang referral."
+    "empty": "Ala pang referral.",
+    "bookingCancelled": "Kanseladu ya ing booking"
   },
   "detail": {
     "customer": "Suki",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Kumpirmadu ing booking.",
       "accepted": "Referral tanggapan.",
-      "rejected": "Ing referral e ya me-reject."
+      "rejected": "Ing referral e ya me-reject.",
+      "bookingCancelled": "Kanseladu ing booking."
     },
-    "backToReferrals": "Balik kareng Referrals"
+    "backToReferrals": "Balik kareng Referrals",
+    "bookingCancelled": "Kanseladu ya ing booking",
+    "cancelBooking": "Kansela ing Pamag-book",
+    "cancelReasonLabel": "sangkan ning pamagkansela (pepakit ya keng partner) *",
+    "cancelBookingHint": "Ing operational ownership mibalik ya keng partner at ing karelang commission eligibility mekansela ya. Ing lead malyari yang i-book pasibayu mamaya.",
+    "cancelBookingConfirm": "Ikansela me ing booking"
   },
   "history": {
     "title": "Historia",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Megawa ya ing karapatan king komisyun",
       "HANDOVER_COMPLETED": "Meyari na ing pamag-handover",
       "ADMIN_PROTECTION_RELEASED": "Admin pepalwal na ing duplicate protection maaga. sangkan: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Ing admin binili ne ing pamagrehistru manibat {{from}} papunta {{to}} . sangkan: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Ing admin binili ne ing pamagrehistru manibat {{from}} papunta {{to}} . sangkan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ing duplicate registration attempt ning aliwang partner me-reject ya",
+      "BOOKING_CANCELLED": "Kanseladu ing booking. sangkan: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ing pamag-ari king operasyun mibalik ya king partner",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ing karapatan keng komisyun mekansela ya keng booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Mibalik ing karapatan keng komisyun para keng bayung booking"
     }
   }
 }

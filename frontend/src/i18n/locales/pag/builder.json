@@ -30,7 +30,8 @@
       "registered": "Rehistrado"
     },
     "booked": "Aka-book la",
-    "empty": "Anggapo ni ray referral."
+    "empty": "Anggapo ni ray referral.",
+    "bookingCancelled": "Kanselado so booking"
   },
   "detail": {
     "customer": "Kustomer",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Akumpirma so booking.",
       "accepted": "Inawat so referral.",
-      "rejected": "Ag-inawat so referral."
+      "rejected": "Ag-inawat so referral.",
+      "bookingCancelled": "Kanselado so booking."
     },
-    "backToReferrals": "Pawil ed saray Referral"
+    "backToReferrals": "Pawil ed saray Referral",
+    "bookingCancelled": "Kanselado so booking",
+    "cancelBooking": "Kanselaen so Booking",
+    "cancelReasonLabel": "Rason na impankansela (nipanengneng ed kapareha) *",
+    "cancelBookingHint": "Say operational ownership et ompawil ed partner tan nakansela so commission eligibility da. Say lead et nayarin i-book lamet ed saginonor.",
+    "cancelBookingConfirm": "Kanselaen so booking"
   },
   "history": {
     "title": "Awaran",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Nagawa so kualipikasyon ed komisyon",
       "HANDOVER_COMPLETED": "Asumpal so pangiter",
       "ADMIN_PROTECTION_RELEASED": "Masakbay ya impaway na admin so duplicate protection. Rason: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Inuman na Admin so rehistrasyon manlapud {{from}} ya anggad {{to}} . Rason: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Inuman na Admin so rehistrasyon manlapud {{from}} ya anggad {{to}} . Rason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Say pansasagpot na sananey a kapareha ya manrehistro na duplicate et ag-inawat",
+      "BOOKING_CANCELLED": "Kanselado so booking. Rason: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Say panagkayarian ed operasyon et nipawil ed kapareha",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Say kualipikasyon ed komisyon et kinansela ed panag-book",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Nipawil so kualipikasyon ed komisyon parad balon booking"
     }
   }
 }

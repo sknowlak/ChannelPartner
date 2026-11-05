@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "자격이 있는",
-    "PENDING": "보류 중"
+    "PENDING": "보류 중",
+    "CANCELLED": "취소"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "중복 방지 조기 출시",
-    "REASSIGN_PARTNER": "다른 파트너에게 재할당"
+    "REASSIGN_PARTNER": "다른 파트너에게 재할당",
+    "CANCEL_BOOKING": "예약 취소"
   },
   "dataType": {
     "TEXT": "텍스트",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "최고 관리자",
     "ADMIN": "관리자"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "확인됨",
+    "CANCELLED": "취소"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "귀속됨",
+    "DISPUTED": "논쟁의 여지가 있는"
+  },
+  "disputeStatus": {
+    "OPEN": "열려 있는",
+    "UPHELD": "지지됨",
+    "OVERTURNED": "전복됨",
+    "WITHDRAWN": "빼는"
   }
 }

@@ -43,7 +43,9 @@
       "name": "Nome",
       "city": "Cità",
       "status": "Status",
-      "actions": "Azzioni"
+      "actions": "Azzioni",
+      "protection": "Prutezzione duplicata",
+      "matchOn": "Duplicates match on"
     },
     "closeReferrals": "Chiudi per i riferimenti",
     "reopen": "Riaprite",
@@ -55,6 +57,25 @@
       "add": "Aghjunghjite u prughjettu",
       "created": "Creatu {{name}} ."
     },
-    "back": "Torna à i Costruttori"
+    "back": "Torna à i Costruttori",
+    "protection": {
+      "days_one": "{{count}} ghjornu",
+      "days_other": "{{count}} ghjorni",
+      "globalDays_one": "Predeterminatu globale ( {{count}} ghjornu)",
+      "globalDays_other": "Predefinitu globale ( {{count}} ghjorni)",
+      "globalDefault": "Predefinitu globale",
+      "placeholder": "Ghjorni di prutezzione (viotu = predefinitu globale)",
+      "saved": "Prutezzione duplicata aghjurnata per {{name}} .",
+      "hint": "Prutezzione duplicata: 1-3650 ghjorni, o lasciate viotu per aduprà u predefinitu globale da Settings. Un cambiamentu s'applica solu à i novi registrazioni - quelli esistenti mantenenu a so scadenza."
+    },
+    "matching": {
+      "global": "Predefinitu globale",
+      "globalWith": "Predefinitu globale ( {{fields}} )",
+      "mobile": "Numeru mobile",
+      "email": "E-mail",
+      "both": "Numeru mobile + email",
+      "saved": "Corrispondenza duplicata aghjurnata per {{name}}",
+      "hint": "Chì dettagli facenu dui registrazioni u stessu cliente per un prughjettu. I cambiamenti si applicanu à i cuntrolli duplicati da avà; a prutezzione esistenti ùn hè micca affettata."
+    }
   }
 }

@@ -30,7 +30,8 @@
       "registered": "èdaftaraghi"
     },
     "booked": "èpesen",
-    "empty": "ghi' tadâ' rujukan."
+    "empty": "ghi' tadâ' rujukan.",
+    "bookingCancelled": "Pemesanan èbatallaghi"
   },
   "detail": {
     "customer": "Oreng se eladin",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Pemesanan èkonfirmasi.",
       "accepted": "Rujukan ètarèma.",
-      "rejected": "Rujukan ètolak."
+      "rejected": "Rujukan ètolak.",
+      "bookingCancelled": "Pemesanan èbatallaghi."
     },
-    "backToReferrals": "abali ka rujukan"
+    "backToReferrals": "abali ka rujukan",
+    "bookingCancelled": "Pemesanan èbatallaghi",
+    "cancelBooking": "Batalkan Pemesanan",
+    "cancelReasonLabel": "Alasan èbatallaghi (ètonjhuaghi ka pasangan) *",
+    "cancelBookingHint": "Kepemilikan operasional abali ka mitra bân kelayakan komisina èbatallaghi. Lead bisa èpesen polè è budhi arè.",
+    "cancelBookingConfirm": "Batalkan pemesanan"
   },
   "history": {
     "title": "Sejarah",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisi ècèptaaghi",
       "HANDOVER_COMPLETED": "Penyerahan ampon lastare",
       "ADMIN_PROTECTION_RELEASED": "Admin makalowar perlindungan duplikat awal. Alasan: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin aghâbây polè pendaftaran dâri {{from}} ka {{to}} . Alasan: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin aghâbây polè pendaftaran dâri {{from}} ka {{to}} . Alasan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Usaha pendaftaran duplikat sareng mitra laèn ètolak",
+      "BOOKING_CANCELLED": "Pemesanan èbatallaghi. Alasan: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Kepemilikan operasional èbâliaghi ka mitra",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kelayakan komisi èbatallaghi kalabân pemesanan",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kelayakan komisi èbâliaghi ghâbây pemesanan anyar"
     }
   }
 }

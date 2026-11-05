@@ -30,7 +30,8 @@
       "registered": "Nalunaarsorneqarsimasoq"
     },
     "booked": "Inniminniisoqarsimavoq",
-    "empty": "Suli innersuussisoqanngilaq."
+    "empty": "Suli innersuussisoqanngilaq.",
+    "bookingCancelled": "Inniminniineq unitsinneqarpoq"
   },
   "detail": {
     "customer": "Sullitaq",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Inniminniineq uppernarsarneqarpoq.",
       "accepted": "Nassiussaq akuerineqarpoq.",
-      "rejected": "Nassiussaq itigartinneqarpoq."
+      "rejected": "Nassiussaq itigartinneqarpoq.",
+      "bookingCancelled": "Inniminniineq unitsinneqarpoq."
     },
-    "backToReferrals": "Uteqqilluni Nassiussanut"
+    "backToReferrals": "Uteqqilluni Nassiussanut",
+    "bookingCancelled": "Inniminniineq unitsinneqarpoq",
+    "cancelBooking": "Inniminniineq unitsiguk",
+    "cancelReasonLabel": "Pissutaasoq unitsinneqarnermut (suleqatigiissitamut takutinneqartoq) *",
+    "cancelBookingHint": "Ingerlatsinermi piginnittuuneq suleqatigisamut uteqqittarpoq aammalu kommissionimik pisinnaatitaaffitik unitsinneqarluni. Lead kingusinnerusukkut bookerneqarsinnaavoq.",
+    "cancelBookingConfirm": "Inniminniineq unitsiguk"
   },
   "history": {
     "title": "Oqaluttuaq",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kommissionimut pisinnaatitaaffiit pilersinneqarput",
       "HANDOVER_COMPLETED": "Tunissuteqarneq naammassineqarpoq",
       "ADMIN_PROTECTION_RELEASED": "Adminip marloqiusamik illersuineq siusinnerusukkut saqqummiuppaa. Pissutaasoq: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin-ip allattorsimaffik {{from}} -imiit {{to}} mut allanngortippaa. Pissutaasoq: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin-ip allattorsimaffik {{from}} -imiit {{to}} mut allanngortippaa. Pissutaasoq: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Suleqatigiissitamit allamit marloqiusamik nalunaarsorneqarnissamik misileraaneq itigartinneqarpoq",
+      "BOOKING_CANCELLED": "Inniminniineq unitsinneqarpoq. Pissutaasoq: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ingerlatsinermi piginnittuuneq suleqatigisamut uteqqippoq",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kommissionimut pisinnaatitaaffik inniminniinermi unitsinneqarpoq",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kommissionimut pisinnaatitaaffiit nutaamik inniminniinermut taarserneqarput"
     }
   }
 }

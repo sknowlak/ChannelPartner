@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import i18n from 'i18next';
-import { getMe, login as loginRequest, updateMe } from '../api/client';
+import { getMe, login as loginRequest, logout as logoutRequest, updateMe } from '../api/client';
 import { detectBrowserTimezone } from '../utils/timezone';
 import { rememberLanguage } from '../i18n/language';
 import { isSupportedLocale } from '../i18n/locales';
@@ -80,7 +80,10 @@ export function AuthProvider({ children }) {
     return updateMe({ language: code }).catch(() => {});
   };
 
-  const logout = () => {
+  // Revokes the token server-side first (while it is still attached to the
+  // request); a failure there never keeps anyone signed in.
+  const logout = async () => {
+    if (localStorage.getItem('adminToken')) await logoutRequest().catch(() => {});
     localStorage.removeItem('adminToken');
     localStorage.removeItem('adminUser');
     setAdmin(null);

@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Ajunngittut",
-    "PENDING": "Nalunairialiit"
+    "PENDING": "Nalunairialiit",
+    "CANCELLED": "Nuqqaqtitaujuq"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Saqqittilutit ajjigiiktunik sapummijaujjutinik sivurngagut",
-    "REASSIGN_PARTNER": "Tilijaukkannirluni asianut piliriqatigijarnut"
+    "REASSIGN_PARTNER": "Tilijaukkannirluni asianut piliriqatigijarnut",
+    "CANCEL_BOOKING": "Nuqqaqtitauluni iniksaliuqtausimajuq"
   },
   "dataType": {
     "TEXT": "Titiqqaq",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Aulattijimmarik",
     "ADMIN": "Aulattiji"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Nalunaiqtaujuq",
+    "CANCELLED": "Nuqqaqtitaujuq"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Tunijausimajut",
+    "DISPUTED": "Aivajjutaujuq"
+  },
+  "disputeStatus": {
+    "OPEN": "Matuinngaaqtuq",
+    "UPHELD": "Kangiititaujuq",
+    "OVERTURNED": "Qujanaaqtaujuq",
+    "WITHDRAWN": "Piiqtaujuq"
   }
 }

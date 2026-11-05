@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "شایستە",
-    "PENDING": "هەڵپەسێردراو"
+    "PENDING": "هەڵپەسێردراو",
+    "CANCELLED": "هەڵوەشایەوە"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "زوو پاراستنی دووبارە ئازاد بکە",
-    "REASSIGN_PARTNER": "دووبارە تەرخان بکە بۆ هاوبەشێکی تر"
+    "REASSIGN_PARTNER": "دووبارە تەرخان بکە بۆ هاوبەشێکی تر",
+    "CANCEL_BOOKING": "هەڵوەشاندنەوەی حجزکردن"
   },
   "dataType": {
     "TEXT": "دەق",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "سوپەر ئەدمین",
     "ADMIN": "ئەدمین"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "پشتڕاستکراوەتەوە",
+    "CANCELLED": "هەڵوەشایەوە"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "پەیوەست کراوە",
+    "DISPUTED": "ناکۆکی لەسەرە"
+  },
+  "disputeStatus": {
+    "OPEN": "کردنەوە",
+    "UPHELD": "پشتگیری لێکرا",
+    "OVERTURNED": "وەرگەڕاوە",
+    "WITHDRAWN": "کشاوەتەوە"
   }
 }

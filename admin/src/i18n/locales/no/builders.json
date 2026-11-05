@@ -43,7 +43,9 @@
       "name": "Navn",
       "city": "By",
       "status": "Status",
-      "actions": "Handlinger"
+      "actions": "Handlinger",
+      "protection": "Duplikatbeskyttelse",
+      "matchOn": "Duplikater samsvarer på"
     },
     "closeReferrals": "Lukk for henvisninger",
     "reopen": "Åpne igjen",
@@ -55,6 +57,25 @@
       "add": "Legg til prosjekt",
       "created": "Opprettet {{name}} ."
     },
-    "back": "Tilbake til Builders"
+    "back": "Tilbake til Builders",
+    "protection": {
+      "days_one": "{{count}} dag",
+      "days_other": "{{count}} dager",
+      "globalDays_one": "Global standard ( {{count}} dag)",
+      "globalDays_other": "Global standard ( {{count}} dager)",
+      "globalDefault": "Global standard",
+      "placeholder": "Beskyttelsesdager (tom = global standard)",
+      "saved": "Duplikatbeskyttelse oppdatert for {{name}} .",
+      "hint": "Duplikatbeskyttelse: 1-3650 dager, eller la stå tomt for å bruke den globale standarden fra Innstillinger. En endring gjelder kun for nye registreringer - eksisterende beholder utløpet."
+    },
+    "matching": {
+      "global": "Global standard",
+      "globalWith": "Global standard ( {{fields}} )",
+      "mobile": "Mobilnummer",
+      "email": "E-post",
+      "both": "Mobilnummer + epost",
+      "saved": "Duplikatsamsvar oppdatert for {{name}}",
+      "hint": "Hvilke detaljer gjør to registreringer til samme kunde for et prosjekt. Endringer gjelder duplikatsjekker fra nå av; eksisterende vern påvirkes ikke."
+    }
   }
 }

@@ -43,7 +43,9 @@
       "name": "Jina",
       "city": "Jiji",
       "status": "Hali",
-      "actions": "Vitendo"
+      "actions": "Vitendo",
+      "protection": "Ulinzi unaorudiwa",
+      "matchOn": "Nakala za mechi zimewashwa"
     },
     "closeReferrals": "Funga kwa marejeleo",
     "reopen": "Fungua upya",
@@ -55,6 +57,25 @@
       "add": "Ongeza Mradi",
       "created": "Imeundwa {{name}} ."
     },
-    "back": "Rudi kwa Wajenzi"
+    "back": "Rudi kwa Wajenzi",
+    "protection": {
+      "days_one": "siku {{count}}",
+      "days_other": "Siku {{count}}",
+      "globalDays_one": "Chaguomsingi ya kimataifa (siku {{count}} )",
+      "globalDays_other": "Chaguomsingi ya kimataifa ( siku {{count}} )",
+      "globalDefault": "Chaguomsingi ya kimataifa",
+      "placeholder": "Siku za ulinzi (tupu = chaguomsingi la kimataifa)",
+      "saved": "Ulinzi unaorudiwa umesasishwa kwa {{name}} .",
+      "hint": "Ulinzi unaorudiwa: siku 1-3650, au uache tupu ili kutumia chaguomsingi la kimataifa kutoka kwa Mipangilio. Mabadiliko yanatumika kwa usajili mpya pekee - uliopo huhifadhi muda wao wa kuisha."
+    },
+    "matching": {
+      "global": "Chaguomsingi ya kimataifa",
+      "globalWith": "Chaguomsingi ya kimataifa ( {{fields}} )",
+      "mobile": "Nambari ya simu",
+      "email": "Barua pepe",
+      "both": "Nambari ya simu + barua pepe",
+      "saved": "Ulinganishaji unaorudiwa umesasishwa kwa {{name}}",
+      "hint": "Ambayo maelezo hufanya usajili mbili kuwa mteja sawa kwa mradi. Mabadiliko yatatumika kwa ukaguzi unaorudiwa kuanzia sasa na kuendelea; ulinzi uliopo hauathiriwi."
+    }
   }
 }

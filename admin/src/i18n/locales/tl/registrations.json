@@ -49,8 +49,73 @@
       "newPartnerId": "Bagong Partner ID",
       "reason": "Dahilan (kinakailangan)",
       "apply": "Ilapat ang Override",
-      "applying": "Nag-aaplay..."
+      "applying": "Nag-aaplay...",
+      "cancelBookingHint": "Ang pagkansela ay minarkahan ang booking at ang komisyon nito bilang nakansela, ibinabalik ang pagpapatakbo ng pagmamay-ari sa kasosyo, at hinahayaan ang tagabuo na i-book itong muli ng lead.",
+      "cancelBookingConfirm": "Kanselahin ang booking na ito? Kinansela din ang komisyon nito. Ito ay naka-log gamit ang iyong pangalan at dahilan."
     },
-    "timelineTitle": "Timeline ng Audit (rehistrasyon na ito)"
+    "timelineTitle": "Timeline ng Audit (rehistrasyon na ito)",
+    "bookingStatus": "Katayuan ng Pag-book",
+    "commissionAttribution": "Pagpapatungkol sa Komisyon",
+    "disputeOpen": "Ang isang hindi pagkakaunawaan sa pagmamay-ari ay bukas sa customer na ito - isa pang kasosyo ang nagsasabing sa kanila ito. Napagpasyahan ito sa pahina ng Mga Dispute.",
+    "viewDisputes": "Tingnan ang mga hindi pagkakaunawaan",
+    "cancellation": {
+      "title": "Kinansela ang booking",
+      "hint": "Kinansela ang booking at ang komisyon nito; ang pagmamay-ari sa pagpapatakbo ay bumalik sa kasosyo at maaaring i-book muli ng tagabuo ang lead na ito.",
+      "at": "Kinansela noong",
+      "by": "Kinansela ni",
+      "reason": "Dahilan"
+    }
+  },
+  "disputes": {
+    "title": "Mga Pagtatalo sa Pagmamay-ari",
+    "hint": "Ang isang kasosyo na ang pagpaparehistro ay tinanggihan bilang isang duplicate ay maaaring i-dispute kung sino ang nagmamay-ari ng customer. Suriin ang magkabilang panig at magpasya.",
+    "statusFilter": "Katayuan ng pagtatalo",
+    "allStatuses": "Lahat ng status",
+    "empty": "Walang mga pagtatalo sa status na ito.",
+    "columns": {
+      "dispute": "pagtatalo",
+      "customer": "Customer",
+      "project": "Proyekto",
+      "raisedBy": "Itinaas ng",
+      "heldBy": "Kasalukuyang may-ari",
+      "status": "Katayuan",
+      "raisedAt": "Nakataas sa"
+    },
+    "detail": {
+      "title": "Hindi pagkakaunawaan {{id}}",
+      "raisedOn": "Itinaas {{date}}",
+      "raisingTitle": "Itinaas ng",
+      "holderTitle": "Kasalukuyang may-ari",
+      "partner": "Kasosyo",
+      "raisedBy": "Ipinasa ni",
+      "customerName": "Customer",
+      "mobile": "Mobile",
+      "alternateMobile": "Kahaliling mobile",
+      "email": "Email",
+      "project": "Proyekto",
+      "reason": "Ang kanilang dahilan",
+      "registration": "Pagpaparehistro",
+      "registeredAt": "Nakarehistro sa",
+      "referral": "Referral",
+      "heldMissing": "Hindi mahanap ang hawak na pagpaparehistro.",
+      "resolutionTitle": "Desisyon",
+      "outcome": "kinalabasan",
+      "note": "Tandaan",
+      "decidedBy": "Napagdesisyunan ni",
+      "decidedAt": "Nagpasya sa",
+      "newRegistration": "Bagong pagpaparehistro",
+      "decideTitle": "Magpasya sa hindi pagkakaunawaan na ito",
+      "noteLabel": "Tala na nagpapaliwanag ng desisyon (kinakailangan)",
+      "noteRequired": "Sumulat ng isang tala upang magpasya.",
+      "uphold": "Panindigan",
+      "overturn": "Baliktarin",
+      "upholdEffect": "Pinapanatili ng {{holder}} ang customer. Ang hindi pagkakaunawaan ay sarado at walang ibang magbabago.",
+      "overturnEffect": "Ang duplicate na proteksyon ng {{holder}} ay magtatapos ngayon at ang customer ay nakarehistro para sa {{partner}} bilang isang bagong pagpaparehistro.",
+      "heldBookedHelp": "Na-book ang customer na ito sa pamamagitan ng kasalukuyang may-ari. Kanselahin muna ang booking na iyon (Admin Override sa pagpaparehistro), pagkatapos ay i-overturn:",
+      "confirmTitle": "Sigurado ka ba?",
+      "confirmUphold": "Oo, panindigan",
+      "confirmOverturn": "Oo, baligtarin",
+      "back": "Bumalik sa Mga Hindi pagkakaunawaan"
+    }
   }
 }

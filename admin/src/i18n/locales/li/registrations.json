@@ -49,8 +49,73 @@
       "newPartnerId": "Nuuj partner ID",
       "reason": "Reie (verpliech)",
       "apply": "Override toepasse",
-      "applying": "Toepas..."
+      "applying": "Toepas...",
+      "cancelBookingHint": "Annulere markeert de reservering en de commissie es geannuleerd, gief ‘t operationeel eigendom trök aon de partner en laot de bouwer deze lead weer boeke.",
+      "cancelBookingConfirm": "Dit boeking annulere? De commissie is ouch geannuleerd. Dit is geregistreerd mit eur naam en reie."
     },
-    "timelineTitle": "Audit Timeline (deze registratie)"
+    "timelineTitle": "Audit Timeline (deze registratie)",
+    "bookingStatus": "Reserveringsstatus",
+    "commissionAttribution": "Toewijzing vaan commissie",
+    "disputeOpen": "‘n Eigenaarsjapsgesjèl is open veur dees klant - ‘n aandere partner zeet dat ‘t vaan hun is. ‘t Weurt beslis op de pagina Gesjèlle.",
+    "viewDisputes": "Gesjèlle bekieke",
+    "cancellation": {
+      "title": "Reservering geannuleerd",
+      "hint": "De boeking en de commissie zien geannuleerd; operationeel eigenaarsjap is trök bij de partner en de bouwer kin deze lead weer boeke.",
+      "at": "Geannuleerd op",
+      "by": "Geannuleerd door",
+      "reason": "Reije"
+    }
+  },
+  "disputes": {
+    "title": "Eigenaarsjapsgesjille",
+    "hint": "‘n Partner wiens registratie es dubbele is aafgeweze, kin betwiste wee de eigenaer is vaan de klant. Bekiek allebei kante en beslis.",
+    "statusFilter": "Gesjèlstatus",
+    "allStatuses": "Alle statusse",
+    "empty": "Geen gesjille mit dees status.",
+    "columns": {
+      "dispute": "Oneinigheid",
+      "customer": "Klant",
+      "project": "Projèk",
+      "raisedBy": "Opgevood door",
+      "heldBy": "Huidige eigenaer",
+      "status": "Sjtatus",
+      "raisedAt": "Opgegreujd op"
+    },
+    "detail": {
+      "title": "Gesjèl {{id}}",
+      "raisedOn": "Verheug {{date}}",
+      "raisingTitle": "Opgevood door",
+      "holderTitle": "Huidige eigenaer",
+      "partner": "Partner",
+      "raisedBy": "Ingediend door",
+      "customerName": "Klant",
+      "mobile": "Mobiel",
+      "alternateMobile": "Alternatief mobiel",
+      "email": "E-mail",
+      "project": "Projèk",
+      "reason": "Hun reie",
+      "registration": "Registratie",
+      "registeredAt": "Geregistreerd op",
+      "referral": "Verwiezing",
+      "heldMissing": "De gehawwe registratie koos neet weure gevoonde.",
+      "resolutionTitle": "Besjlissing",
+      "outcome": "Oetkomst",
+      "note": "Nootiesie",
+      "decidedBy": "Besjlaote door",
+      "decidedAt": "Besjlaote op",
+      "newRegistration": "Nuie registratie",
+      "decideTitle": "Beslis dit geschil",
+      "noteLabel": "Opmerking die de beslissing oetlègk (verpliech)",
+      "noteRequired": "Sjrijf un nootje um te beslisse.",
+      "uphold": "Onderhawwe",
+      "overturn": "Umkier",
+      "upholdEffect": "{{holder}} houdt de klant. ‘t Gesjèl is geslote en niks anders verandert.",
+      "overturnEffect": "De dubbele besjerming vaan {{holder}} eindigt noe en de klant is geregistreerd veur {{partner}} es nuuj registratie.",
+      "heldBookedHelp": "Deze klant is gebook door de huidige eigenaer. Annuleer dee reservering iers (Admin Override op de registratie), daan umkier:",
+      "confirmTitle": "Bis se zeker?",
+      "confirmUphold": "Jao, onderhaww",
+      "confirmOverturn": "Jao, umkier",
+      "back": "Terug nao gesjille"
+    }
   }
 }

@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "A fen puk",
-    "pending": "Utiwit"
+    "pending": "Utiwit",
+    "status": {
+      "CONFIRMED": "A fen puk",
+      "CANCELLED": "Ewe booking a kansel"
+    }
   },
   "assign": {
     "unassigned": "Ese kefilita",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Ese wor prokram iei (ese mwo fis)",
-    "notInList": "{{project}} (ese nom non ewe list ren prokram)"
+    "notInList": "{{project}} (ese nom non ewe list ren prokram)",
+    "protectionDays_one": "{{count}} -ran tumun",
+    "protectionDays_other": "{{count}} -ran tumun"
   },
   "journey": {
     "customer": "Kastomer",
@@ -76,7 +82,14 @@
     "progressHistory": "Uruon Feffeita",
     "timesIn": "(fansoun non {{timezone}} )",
     "backToMyLeads": "Pwan ngeni Ai kewe Lead .",
-    "editLead": "Ewiti ewe Lead"
+    "editLead": "Ewiti ewe Lead",
+    "disputeBanner": "Pwal emon chienan we a anini won an epwe nemeni ei chon kamo. Emon chon Leadrat a nenengeni - omw tumun epwe chok nomw non nenian tori ar repwe finata.",
+    "booking": "Puk",
+    "commission": "Niwinin",
+    "notBooked": "Ese book .",
+    "cancelledOn": "A kansel non {{date}} .",
+    "cancelReason": "Popun: {{reason}}",
+    "cancelledHint": "Ewe chon kau imw a kanselli ewe booking - ewe tufichin angang a niwin ngonuk me ewe mumuta ngeni ewe komisin a kanselli. A niwinsefan ika ewe lead a book sefan."
   },
   "referral": {
     "NOT_REFERRED": "Ese wor (ese wor prokram)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Ewe chon kau imw a etiwa ewe tingor .",
       "REFERRAL_REJECTED": "Builder a tunalo ewe refer. Popun: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin a fori ewe tumun mi fitikoko. Popun: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Ewe chon nemenem a siwini ewe taropwen mak seni {{from}} ngeni {{to}} . Popun: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Ewe chon nemenem a siwini ewe taropwen mak seni {{from}} ngeni {{to}} . Popun: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ew sossotun rejister mi fis fan ruu ren pwan emon chienan we a poutano .",
+      "BOOKING_CANCELLED": "A kansel ewe booking. Popun: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ewe nemenem mi angang a niwin ngeni ewe chon angang .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ewe tufichin angei ewe komisin a kansel ren ewe booking .",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ewe tufichin komiti a niwinsefan ngeni ewe minefoon puk .",
+      "OWNERSHIP_DISPUTE_RAISED": "Pwal emon chienan we a anini ngeni an epwe nemeni ei chon kamo - emon chon nemeni Leadrat epwe nengeni .",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Ewe osukosuken pisek won ei chon kamo a fen katonong - om pisek ese siwin .",
+      "OWNERSHIP_DISPUTE_UPHELD": "Ewe osukosuken pisek won ei chon kamo a fen nenengeni - om pisek a fen affat .",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Register mwirin an omw ewe osukosuken pisek a finata non omw famini. Nengeni: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Tumun a muchulo: eu osukosuken pisek a kefilita fan iten pwal emon chiechian. Nengeni: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Ei nampaan fon ese fich ngeni {{country}} .",
     "COUNTRY_MISMATCH": "Kopwe finata ewe koten fonu mi pung.",
     "NOT_MOBILE": "Kopwe makkei ew nampaan mobile, esap ew nampaan fonu."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisin mi fich",
+      "PENDING": "Komisin a witiwit",
+      "CANCELLED": "Komisin a kansel"
+    },
+    "attribution": {
+      "ATTRIBUTED": "A fis ngenikemi .",
+      "DISPUTED": "A wor anini won ewe popun"
+    }
+  },
+  "result": {
+    "none": "Ese wor repotun rejister epwe pwarata. Registerini ew lead akkomw.",
+    "acceptedTitle": "Lead a register",
+    "rejectedTitle": "Lead ese makketiw .",
+    "protectionWindow": "Winto mi Tumun .",
+    "protectedUntil": "Pworaus Tori .",
+    "openLead": "Kopwe Lead",
+    "addAnother": "Apacha ngeni Pwal Eú Lead .",
+    "duplicate": "Kopwe - a fen tumunu .",
+    "duplicateHint": "Ei chon kamo a fen tumun ren ei angang ren pwan ew taropwen makketiw, ina minne ese tongeni makketiw fan itom.",
+    "existingProtectedUntil": "Ekkewe register mi nomw ra tumun tori 2019."
+  },
+  "disputes": {
+    "title": "Ai kewe osukosuk",
+    "intro": "Ekkewe osukosuken pisek ka efisata fan iten ekkewe chon kamo rese etiwa pwe repwe duplicate. Emon chon tumunu Leadrat a nenengeni ew me ew.",
+    "empty": "Ouse fen efisata och anini. Ika emon chon kamo ka uweato ese etiwa pwe epwe emon chon kamo, iwe ka tongeni anini seni ewe taropwen rejister.",
+    "columns": {
+      "dispute": "Epwungu",
+      "reason": "Iwe popun .",
+      "outcome": "Porousan mwirinon"
+    },
+    "status": {
+      "OPEN": "Fan nemenien .",
+      "UPHELD": "Esap non om famini .",
+      "OVERTURNED": "A finata non om famini .",
+      "WITHDRAWN": "A tou"
+    },
+    "awaitingReview": "A witiwiti ewe admin epwe nengeni",
+    "openNewLead": "Kopwe suuki omw ewe lead {{id}}",
+    "withdraw": "Angei sefan",
+    "withdrawConfirm": "Kopwe angei om osukosuk ren {{name}} ? Ewe nemenem ikenai a chok nonnom usun chok a nom.",
+    "raise": "Pworausfengen",
+    "raiseTitle": "Pworausfengen",
+    "raiseHint": "Ika ei chon kamo a akkomw feito reom, kopwe awewei pwata. Emon chon nemeni Leadrat epwe nenengeni; ika ra finata non om tufich, ewe lead a register fan itom.",
+    "reasonLabel": "Pwata ei chon kamo a nom reom?",
+    "reasonMin_one": "Ewe {{count}} epwe fis.",
+    "reasonMin_other": "A wor {{count}} ekkewe taropwe.",
+    "submit": "Tinalo Osukosuk",
+    "notProtected": "Ese chiwen wor emon a amwochu tumun won ei chon kamo ren ei angang - ka tongeni registerini ewe lead iei.",
+    "raised": "Ewe osukosuk {{id}} a titito pwe epwe nengeni.",
+    "viewAll": "Nengeni ai kewe anini ."
+  },
+  "dashboard": {
+    "title": "Dasboard",
+    "period": "Fanoun",
+    "lastDays_one": "{{count}} ran",
+    "lastDays_other": "{{count}} ran",
+    "emptyTitle": "Welkam! Ese wor leads iei.",
+    "emptyHint": "Kopwe makketiw omw ewe aewin lead - omw ewe pekin, booking me fansoun tumun epwe pwa ikei.",
+    "tiles": {
+      "leads": "Unusen ekkewe chon emwen",
+      "newInPeriod_one": "{{count}} minefo non ei fansoun",
+      "newInPeriod_other": "{{count}} minefo non ei fansoun",
+      "accepted": "A etiwa",
+      "booked": "A fen puk",
+      "bookedInPeriod_one": "{{count}} a mak non ei fansoun",
+      "bookedInPeriod_other": "{{count}} a mak non ei fansoun",
+      "conversion": "Siwin",
+      "conversionHint": "Ekkewe lead mi booking usun eu kinikinin ekkewe lead mi etiwa .",
+      "protectedNow": "A tumunuoch iei .",
+      "expiringSoon_one": "Tumun epwe much non {{count}} ran",
+      "expiringSoon_other": "Tumun epwe much non {{count}} ran",
+      "disputedNow": "A anini ngeni ekkewe ekkoch .",
+      "disputedNowHint": "Omw kewe lead ren ew osukosuken pisek mi suk seni pwan emon chienomw .",
+      "commissionEligible": "Komisin mi fich",
+      "commissionCancelled_one": "{{count}} a kansel",
+      "commissionCancelled_other": "{{count}} a kansel"
+    },
+    "chart": {
+      "title_one": "Ekkewe taropwen makketiw me booking iteiten ran - amuchunon {{count}} ran",
+      "title_other": "Ekkewe chon makketiw me booking iteiten ran - ekkewe ran mi {{count}}",
+      "registrations": "Ekkewe chon makketiw",
+      "bookings": "Puk"
+    },
+    "byStage": "A emmweni ren napanapan .",
+    "bySource": "A emmweni ren ewe popun .",
+    "byReferral": "A emmweni ren ewe napanapen referral",
+    "myDisputes": "Ekkewe osukosuk ka efisata .",
+    "noDisputes": "Ese wor anini a fis.",
+    "unknown": "Ese set .",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM me nukun (mi siwin)",
+      "PARTNER_CRM": "A kapachelong ren om team .",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Kopwe ririfengen",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Ewe tumun epwe much non ewe {{count}} ran mwirin",
+    "expiringTitle_other": "Ewe tumun epwe much non ekkewe {{count}} ran mwirin",
+    "expiringEmpty": "Ese wor lead a poutano an tumun non ei winnach."
   }
 }

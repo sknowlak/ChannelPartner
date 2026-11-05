@@ -43,3 +43,14 @@ export function formatDate(value, timezone) {
     return new Date(value).toLocaleDateString(intlLocale());
   }
 }
+
+// Compact day label for chart axes ("11 Oct"); same zone/locale rules.
+export function formatDayMonth(value, timezone) {
+  if (!value) return '-';
+  const tz = timezone || detectBrowserTimezone();
+  try {
+    return new Intl.DateTimeFormat(intlLocale(), { timeZone: tz, day: 'numeric', month: 'short' }).format(new Date(value));
+  } catch {
+    return new Date(value).toLocaleDateString(intlLocale());
+  }
+}

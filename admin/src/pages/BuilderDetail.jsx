@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { createBuilderUser, createProject, getBuilder, updateBuilder, updateBuilderUser, updateProject } from '../api/client';
+import { createBuilderUser, createProject, getBuilder, getSettings, updateBuilder, updateBuilderUser, updateProject } from '../api/client';
 import { useAuth } from '../context/AuthContext';
 import { errorMessage } from '../utils/errors';
 import { formatDateTime } from '../utils/timezone';
@@ -17,11 +17,36 @@ export default function BuilderDetail() {
   const [error, setError] = useState(null);
   const [notice, setNotice] = useState(null);
   const [user, setUser] = useState({ name: '', email: '', password: '' });
-  const [project, setProject] = useState({ projectId: '', name: '', city: '' });
+  const [project, setProject] = useState({ projectId: '', name: '', city: '', protectionDays: '' });
+  // Per-project protection window (section 62): empty = the global setting.
+  const [globalDays, setGlobalDays] = useState(null);
+  const [editingDays, setEditingDays] = useState(null); // { projectId, value }
+  // Per-project duplicate match fields (section 62): unset = the global setting.
+  const [globalMatch, setGlobalMatch] = useState(null);
 
   const load = () => getBuilder(builderId).then(({ data: d }) => setData(d)).catch((err) => setError(errorMessage(err)));
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => { load(); }, [builderId]);
+  useEffect(() => {
+    getSettings().then(({ data: s }) => { setGlobalDays(s.duplicateProtectionDays); setGlobalMatch(s.duplicateMatchFields); }).catch(() => {});
+  }, []);
+
+  // '' clears the override (the API takes null for "use the global default").
+  const daysPayload = (value) => (String(value).trim() === '' ? null : Number(value));
+  const effectiveDays = (p) => (p.protectionDays
+    ? t('builders:detail.protection.days', { count: p.protectionDays })
+    : globalDays ? t('builders:detail.protection.globalDays', { count: globalDays }) : t('builders:detail.protection.globalDefault'));
+
+  // Select value <-> API list: '' = global default (null), else one choice.
+  const MATCH_CHOICES = { mobile: ['mobile'], email: ['email'], both: ['mobile', 'email'] };
+  const matchChoice = (fields) => {
+    if (!fields?.length) return '';
+    const set = new Set(fields);
+    return set.has('mobile') && set.has('email') ? 'both' : set.has('email') ? 'email' : 'mobile';
+  };
+  const globalMatchLabel = globalMatch?.length
+    ? t('builders:detail.matching.globalWith', { fields: t(`builders:detail.matching.${matchChoice(globalMatch)}`) })
+    : t('builders:detail.matching.global');
 
   const run = async (fn, done) => {
     setError(null);
@@ -96,14 +121,51 @@ export default function BuilderDetail() {
       <div className="card">
         <h3 style={{ marginTop: 0 }}>{t('builders:detail.projectsTitle')}</h3>
         <p className="hint">{t('builders:detail.projectsHint')}</p>
+        <div className="table-scroll">
         <table className="pro-table">
-          <thead><tr>{['code', 'name', 'city', 'status', 'actions'].map((k) => <th key={k}>{t(`builders:detail.projectColumns.${k}`)}</th>)}</tr></thead>
+          <thead><tr>{['code', 'name', 'city', 'protection', 'matchOn', 'status', 'actions'].map((k) => <th key={k}>{t(`builders:detail.projectColumns.${k}`)}</th>)}</tr></thead>
           <tbody>
             {projects.map((p) => (
               <tr key={p.projectId}>
                 <td style={{ fontFamily: 'monospace' }}>{p.projectId}</td>
                 <td>{p.name}</td>
                 <td>{p.city || '-'}</td>
+                <td>
+                  {editingDays?.projectId === p.projectId ? (
+                    <form
+                      className="inline-edit"
+                      onSubmit={(e) => { e.preventDefault(); run(() => updateProject(p.projectId, { protectionDays: daysPayload(editingDays.value) }), t('builders:detail.protection.saved', { name: p.name })).then((ok) => ok && setEditingDays(null)); }}
+                    >
+                      <input
+                        type="number" min={1} max={3650} step={1}
+                        value={editingDays.value}
+                        placeholder={t('builders:detail.protection.placeholder')}
+                        aria-label={t('builders:detail.projectColumns.protection')}
+                        onChange={(e) => setEditingDays((d) => ({ ...d, value: e.target.value }))}
+                      />
+                      <button className="primary" type="submit">{t('common:actions.save')}</button>
+                      <button className="secondary" type="button" onClick={() => setEditingDays(null)}>{t('common:actions.cancel')}</button>
+                    </form>
+                  ) : (
+                    <>
+                      {effectiveDays(p)}{' '}
+                      <button className="link-button" onClick={() => setEditingDays({ projectId: p.projectId, value: p.protectionDays ?? '' })}>{t('common:actions.edit')}</button>
+                    </>
+                  )}
+                </td>
+                <td>
+                  <select
+                    value={matchChoice(p.duplicateMatchFields)}
+                    aria-label={t('builders:detail.projectColumns.matchOn')}
+                    onChange={(e) => run(
+                      () => updateProject(p.projectId, { duplicateMatchFields: MATCH_CHOICES[e.target.value] || null }),
+                      t('builders:detail.matching.saved', { name: p.name })
+                    )}
+                  >
+                    <option value="">{globalMatchLabel}</option>
+                    {Object.keys(MATCH_CHOICES).map((k) => <option key={k} value={k}>{t(`builders:detail.matching.${k}`)}</option>)}
+                  </select>
+                </td>
                 <td><span className={`badge ${p.status === 'ACTIVE' ? 'active' : 'inactive'}`}>{enumLabel('status', p.status)}</span></td>
                 <td>
                   <button className="secondary" onClick={() => run(() => updateProject(p.projectId, { status: nextStatus(p.status) }))}>
@@ -112,18 +174,29 @@ export default function BuilderDetail() {
                 </td>
               </tr>
             ))}
-            {projects.length === 0 && <tr><td colSpan={5} className="hint">{t('builders:detail.noProjects')}</td></tr>}
+            {projects.length === 0 && <tr><td colSpan={7} className="hint">{t('builders:detail.noProjects')}</td></tr>}
           </tbody>
         </table>
+        </div>
         <form
-          onSubmit={(e) => { e.preventDefault(); run(() => createProject({ ...project, builderId }), t('builders:detail.projectForm.created', { name: project.name })).then((ok) => ok && setProject({ projectId: '', name: '', city: '' })); }}
+          onSubmit={(e) => { e.preventDefault(); run(() => createProject({ ...project, protectionDays: daysPayload(project.protectionDays), builderId }), t('builders:detail.projectForm.created', { name: project.name })).then((ok) => ok && setProject({ projectId: '', name: '', city: '', protectionDays: '' })); }}
           style={{ display: 'flex', gap: '0.5rem', marginTop: '0.8rem', flexWrap: 'wrap' }}
         >
           <input placeholder={t('builders:detail.projectForm.code')} aria-label={t('builders:detail.projectForm.code')} value={project.projectId} onChange={(e) => setProject((p) => ({ ...p, projectId: e.target.value }))} required />
           <input placeholder={t('builders:detail.projectForm.name')} aria-label={t('builders:detail.projectForm.name')} value={project.name} onChange={(e) => setProject((p) => ({ ...p, name: e.target.value }))} required />
           <input placeholder={t('builders:detail.projectForm.city')} aria-label={t('builders:detail.projectForm.city')} value={project.city} onChange={(e) => setProject((p) => ({ ...p, city: e.target.value }))} />
+          <input
+            type="number" min={1} max={3650} step={1}
+            placeholder={t('builders:detail.protection.placeholder')}
+            aria-label={t('builders:detail.projectColumns.protection')}
+            title={t('builders:detail.projectColumns.protection')}
+            value={project.protectionDays}
+            onChange={(e) => setProject((p) => ({ ...p, protectionDays: e.target.value }))}
+          />
           <button className="primary" type="submit">{t('builders:detail.projectForm.add')}</button>
         </form>
+        <p className="hint">{t('builders:detail.protection.hint')}</p>
+        <p className="hint">{t('builders:detail.matching.hint')}</p>
       </div>
       <Link to="/builders"><button className="secondary">{t('builders:detail.back')}</button></Link>
     </div>

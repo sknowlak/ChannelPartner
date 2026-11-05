@@ -49,8 +49,73 @@
       "newPartnerId": "ID in ri jerbal eo ekãl",
       "reason": "Un (ej aikuj)",
       "apply": "Kōjerbal Override",
-      "applying": "Apply..."
+      "applying": "Apply...",
+      "cancelBookingHint": "Kansela ej kakōlkōl booking eo im commission eo an einwot kansela, ej bar jeblak ñan ri jerbal eo, im kōtlok bwe ri kalōk eo en bar book lead in.",
+      "cancelBookingConfirm": "Kansela booking in ke? Jerbal eo an ej barāinwōt kansela. Menin ej bed ippāñ etam im unin am."
     },
-    "timelineTitle": "Iien Audit (registration in)"
+    "timelineTitle": "Iien Audit (registration in)",
+    "bookingStatus": "Jekjek in Booking",
+    "commissionAttribution": "Commission Attribution",
+    "disputeOpen": "Juon aitwerõk kin wōnan ej bellok ion ri wia in - bar juon ri jerbal ej ba bwe ej an. Ej kōmmane ilo peij in Disputes.",
+    "viewDisputes": "Lale aitwerõk ko",
+    "cancellation": {
+      "title": "Booking eo emoj kansela",
+      "hint": "Booking eo im commission eo an rej kansela; maroñ in jerbal ej bar jeblak ibben ri jerbal eo im ri kalek eo emaron bar book lead in.",
+      "at": "Kar kansela ilo",
+      "by": "Kar kansela jen",
+      "reason": "Wūnin"
+    }
+  },
+  "disputes": {
+    "title": "Aitwerõk ko kin an mweiuk",
+    "hint": "Juon ri jerbal eo me kar jolok registration eo an einwot juon men eo ej bar kōmmane emaron akwāāl wōn eo ej bōk customer eo. Lale jikin ko ruo im bebe.",
+    "statusFilter": "Jekjek in akwāāl",
+    "allStatuses": "Aolep jekjek ko",
+    "empty": "Ejelok aitwerõk kin jekjek in.",
+    "columns": {
+      "dispute": "Jumae",
+      "customer": "Riwia",
+      "project": "Burojeek",
+      "raisedBy": "Kar eddeklok jen",
+      "heldBy": "Ri-bōk eo kiiō",
+      "status": "Jōñan",
+      "raisedAt": "kar eddeklok ilo"
+    },
+    "detail": {
+      "title": "Dispute {{id}}",
+      "raisedOn": "Raised {{date}}",
+      "raisingTitle": "Kar eddeklok jen",
+      "holderTitle": "Ri-bōk eo kiiō",
+      "partner": "Mōttan",
+      "raisedBy": "Kar jilkintok jen",
+      "customerName": "Riwia",
+      "mobile": "Kein jerbal kwōmaron makūtkūt kake",
+      "alternateMobile": "Mobile eo juon",
+      "email": "Email",
+      "project": "Burojeek",
+      "reason": "Un eo air",
+      "registration": "Rejistre",
+      "registeredAt": "Kar register ilo",
+      "referral": "Referral",
+      "heldMissing": "Register eo kar dāpij ear jab maroñ in loe.",
+      "resolutionTitle": "Kelet",
+      "outcome": "Jemlok",
+      "note": "Jeje",
+      "decidedBy": "Kar pepe kake",
+      "decidedAt": "Kar pepe kake",
+      "newRegistration": "Rejistret ekãl",
+      "decideTitle": "Kōmmane pepe kin aitwerõk in",
+      "noteLabel": "Noot eo ej kwalok kin bebe eo (ej aikuj)",
+      "noteRequired": "Je juon melele ñan kōmman bebe.",
+      "uphold": "Kōjparok",
+      "overturn": "Ukōt",
+      "upholdEffect": "{{holder}} ej kejbãrok ri wia eo. Akwāāl eo ej jemlok im ejelok bar oktak.",
+      "overturnEffect": "{{holder}} 's duplicate protection ej jemlok kiō im customer eo ej register ñan {{partner}} einwot juon register ekãl.",
+      "heldBookedHelp": "Ri wia in ej book ikijen ri wia eo kiõ. Kansela booking eo mokta (Admin Override ilo registration eo), innem ukōte:",
+      "confirmTitle": "Kwoj ke mol?",
+      "confirmUphold": "Aet, kōjparok",
+      "confirmOverturn": "Aet, ukōt",
+      "back": "Bar jeblak ñan aitwerõk ko"
+    }
   }
 }

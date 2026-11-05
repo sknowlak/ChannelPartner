@@ -43,7 +43,9 @@
       "name": "Nomen",
       "city": "urbs",
       "status": "Status",
-      "actions": "Actiones"
+      "actions": "Actiones",
+      "protection": "Duplicare praesidium",
+      "matchOn": "Effingo par on"
     },
     "closeReferrals": "Claudere ad referrals",
     "reopen": "Rescissa",
@@ -55,6 +57,25 @@
       "add": "Add Project",
       "created": "Creatum {{name}} ."
     },
-    "back": "Ad conditores"
+    "back": "Ad conditores",
+    "protection": {
+      "days_one": "{{count}} dies",
+      "days_other": "{{count}} dies",
+      "globalDays_one": "Global default ( {{count}} dies)",
+      "globalDays_other": "Global default ( {{count}} dies)",
+      "globalDefault": "Global default",
+      "placeholder": "Tutela dies (inanis = global default)",
+      "saved": "Tutela duplicata pro {{name}} renovata.",
+      "hint": "Tutela duplicata: 1-3650 dies, vel vacua relinque ut defaltam globalis ab Occasus utaris. Mutatio tantum valet in novis registrations - exsistentibus expletum servare."
+    },
+    "matching": {
+      "global": "Global default",
+      "globalWith": "Global default ( {{fields}} )",
+      "mobile": "Mobile numerus",
+      "email": "Email",
+      "both": "Mobile numerus + email",
+      "saved": "Duplicare matching renovatio pro {{name}}",
+      "hint": "Quae singula faciunt duas adnotationes eundem emptorem in incepto. Mutationes duplicatae compescit posthac; existentium praesidio non affectus est."
+    }
   }
 }

@@ -32,7 +32,8 @@
       "registered": "Registriran"
     },
     "booked": "Rezervirano",
-    "empty": "Še ni priporočil."
+    "empty": "Še ni priporočil.",
+    "bookingCancelled": "Rezervacija preklicana"
   },
   "detail": {
     "customer": "Stranka",
@@ -55,9 +56,15 @@
     "notice": {
       "booked": "Rezervacija potrjena.",
       "accepted": "Napotnica sprejeta.",
-      "rejected": "Napotitev zavrnjena."
+      "rejected": "Napotitev zavrnjena.",
+      "bookingCancelled": "Rezervacija preklicana."
     },
-    "backToReferrals": "Nazaj na priporočila"
+    "backToReferrals": "Nazaj na priporočila",
+    "bookingCancelled": "Rezervacija preklicana",
+    "cancelBooking": "Prekliči rezervacijo",
+    "cancelReasonLabel": "Razlog za odpoved (prikazano partnerju) *",
+    "cancelBookingHint": "Operativno lastništvo se vrne partnerju in njegova upravičenost do provizije je preklicana. Vodstvo je mogoče ponovno rezervirati pozneje.",
+    "cancelBookingConfirm": "Prekliči rezervacijo"
   },
   "history": {
     "title": "Zgodovina",
@@ -90,7 +97,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Upravičenost do provizije je ustvarjena",
       "HANDOVER_COMPLETED": "Primopredaja opravljena",
       "ADMIN_PROTECTION_RELEASED": "Skrbnik je predčasno izdal zaščito pred dvojniki. Razlog: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Skrbnik je predodelil registracijo iz {{from}} v {{to}} . Razlog: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Skrbnik je predodelil registracijo iz {{from}} v {{to}} . Razlog: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Poskus dvojne registracije drugega partnerja je bil zavrnjen",
+      "BOOKING_CANCELLED": "Rezervacija preklicana. Razlog: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operativno lastništvo vrnjeno partnerju",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Upravičenost do provizije preklicana z rezervacijo",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Upravičenost provizije za novo rezervacijo je obnovljena"
     }
   }
 }

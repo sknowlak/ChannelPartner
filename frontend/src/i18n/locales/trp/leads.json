@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Book khaijak",
-    "pending": "Chabna tongrwkma"
+    "pending": "Chabna tongrwkma",
+    "status": {
+      "CONFIRMED": "Book khaijak",
+      "CANCELLED": "Book khaijak kha"
+    }
   },
   "assign": {
     "unassigned": "Samung rwjakya",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Tabuk jorao project kwrwi (sajakya)",
-    "notInList": "{{project}} (samung list o kwrwi)"
+    "notInList": "{{project}} (samung list o kwrwi)",
+    "protectionDays_one": "{{count}} -salni mwthangmung",
+    "protectionDays_other": "{{count}} -salni mwthangmung"
   },
   "journey": {
     "customer": "Painai",
@@ -76,7 +82,14 @@
     "progressHistory": "Swkang thangmani koktwma",
     "timesIn": "( {{timezone}} o jora)",
     "backToMyLeads": "Ani Leads ni thani kiphilwi phaidi",
-    "editLead": "Lead swlaidi"
+    "editLead": "Lead swlaidi",
+    "disputeBanner": "Tei kaisa partner o borok ni borok no twiwi kok salai kha. Leadrat admin khoroksa abono naikolwi tongkha - bohrok uansukma jorao nini mwthangwi tongmani jagao tongnai.",
+    "booking": "Book khaimani",
+    "commission": "Commission",
+    "notBooked": "Book wngya kho",
+    "cancelledOn": "{{date}} o rwjak kha .",
+    "cancelReason": "Kaham: {{reason}}",
+    "cancelledHint": "Nok tangnai borok booking no swkak kha- samung tangnai borok nini thani kiphilwi phai kha tei commission manthai swkak kha. Lead book khai khe restore wngnai."
   },
   "referral": {
     "NOT_REFERRED": "Refer khlaijakya (project kwrwi)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Nok tangnai rohorjakmano yachakkha",
       "REFERRAL_REJECTED": "Builder rok abono reject khaikha. Kaham: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin duplicate mwthangmung swkangno rwkha. Kaham: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin {{from}} ni simi {{to}} simi swimungno swlaiwi rwkha. Kaham: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin {{from}} ni simi {{to}} simi swimungno swlaiwi rwkha. Kaham: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Tei kaisa hamjaknai bai swijaknani chaitokma reject wngliya",
+      "BOOKING_CANCELLED": "Booking khaijak kha. Kaham: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Samung tangnai borokni thani kiphilwi phaikha",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Buking khaimani bai komison ni manthai sokomorjak kha",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kwtal booking ni bagwi commission ni rwngthoma kiphilwi tubujak kha",
+      "OWNERSHIP_DISPUTE_RAISED": "Tei kaisa samung tangnairok o borokni malkhungno twiwi kok salaikha- khoroksa Leadrat admin abono naiwi naikha",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "O borokni sakao malkhungni kok salaijak kha- nini malkhung swlaijakya",
+      "OWNERSHIP_DISPUTE_UPHELD": "O customer ni malkhung ni kok no naikoljak kha - nini malkhung ni kok no saimanjak kha",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Nini sakni mungwi kok salaimani ulo register khlaijak. Kokborok: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Raktharmung paijak kha: kaisa malkhungni kok salaimani kok tei kaisa partnerni thani chongjak kha. Kokborok: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "O phone number {{country}} ni bagwi wngya .",
     "COUNTRY_MISMATCH": "Khapang srangwi thik khe haste ni code no select khai di.",
     "NOT_MOBILE": "Mobile number rwdi, Landline ya."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komison rwngjak",
+      "PENDING": "Komison naisingwi tongmani",
+      "CANCELLED": "Komison swbaijak kha"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Nini thani rwjak",
+      "DISPUTED": "Sichamungni kok salaijak"
+    }
+  },
+  "result": {
+    "none": "Registeration ni result phunukna bagwi kwrwi. Puila khoroksa lead no registration khai di.",
+    "acceptedTitle": "Register wngkha",
+    "rejectedTitle": "Lead mung swijakya",
+    "protectionWindow": "Raktharmani window",
+    "protectedUntil": "2019 jora mwthangjak.",
+    "openLead": "Lead khulokdi",
+    "addAnother": "Tei kaisa lead tubudi",
+    "duplicate": "Duplicate - swkangni simino mwthangjak",
+    "duplicateHint": "O customer no swkangni simi no o project ni bagwi tei kaisa registration bai mwthangjak, aboni bagwi norokni bagwi registration wngwi manliya.",
+    "existingProtectedUntil": "2019 bisi jora tongnai registration no mwthangjak."
+  },
+  "disputes": {
+    "title": "Ani kok salaimung",
+    "intro": "Nwng borokni bagwi tubumani malkhungni kok salaimani abo duplicate wngwi rwjakya. Leadrat admin khoroksa khoroksa no naikolnai.",
+    "empty": "Nwng mungsa phano wngwi man ya. Nwng tubumani khoroksa customer no duplicate wngwi rwjakya hwnkhe, nwng abono registration ni result ni simi no wngwi mano.",
+    "columns": {
+      "dispute": "Kok banglaimani",
+      "reason": "Nini karon",
+      "outcome": "Bwthai"
+    },
+    "status": {
+      "OPEN": "Naikoljak tongmani",
+      "UPHELD": "Nini hamjakmao wngya",
+      "OVERTURNED": "Nini thani chongjak",
+      "WITHDRAWN": "Yakarjak"
+    },
+    "awaitingReview": "Admin ni naikolmungni bagwi naisingwi tongo",
+    "openNewLead": "Nini bwkhak {{id}} phuardi",
+    "withdraw": "Rosai naharma",
+    "withdrawConfirm": "{{name}} ni bagwi nini koktwma no swkak di ? Tabukni ownership abo hai kheno tongnai.",
+    "raise": "Kwplaisa malkhungni borok",
+    "raiseTitle": "Kwplaisa malkhungni borok",
+    "raiseHint": "O customer nini thani swkang phaimani hwnkhe, tamoni bagwi phaikha hwnwi sa di. Khoroksa Leadrat admin no naiwi nai nai; bohrok nini thani chongkhe, lead nini thani register khlaijak.",
+    "reasonLabel": "O customer tamoni bagwi nini?",
+    "reasonMin_one": "Kwbangkuk {{count}} wngkha.",
+    "reasonMin_other": "Kwbangkuk {{count}} lekhajak.",
+    "submit": "Kok salaimung rohor di",
+    "notProtected": "O samungni bagwi khoroksa phano o customerni sakao mwthangwi narwkya - nwng tabuk lead no register khlaiwi mano.",
+    "raised": "Kok salaimung {{id}} naikolna bagwi rohorjak kha.",
+    "viewAll": "Ani chobarokno naidi"
+  },
+  "dashboard": {
+    "title": "Dasbord",
+    "period": "Jora",
+    "lastDays_one": "{{count}} sal",
+    "lastDays_other": "{{count}} sal",
+    "emptyTitle": "Lamsogo! Tabuk jorao nini leads kwrwi.",
+    "emptyHint": "Nini puila lead no mung swi di - nini pipeline, booking tei mwthangjakmani salrok aro nukjaknai.",
+    "tiles": {
+      "leads": "Joto leads",
+      "newInPeriod_one": "{{count}} o jorao kwtal",
+      "newInPeriod_other": "{{count}} o jorao kwtal",
+      "accepted": "Yachakjak",
+      "booked": "Book khaijak",
+      "bookedInPeriod_one": "{{count}} o jorao book khlaijak",
+      "bookedInPeriod_other": "{{count}} o jorao book khlaijak",
+      "conversion": "swlaijakma",
+      "conversionHint": "Book khaijak lead rok yachakjak lead rok ni share wngwi",
+      "protectedNow": "Tabuk mwthangjak",
+      "expiringSoon_one": "{{count}} salni bisingo mwthangjakmani",
+      "expiringSoon_other": "{{count}} salni bisingo mwthangjakmani",
+      "disputedNow": "Buini bai choba khlaijak",
+      "disputedNowHint": "Nini leaders rok tei kaisa partner ni thani phunukjak malkhungni kok salaimung bai",
+      "commissionEligible": "Komison rwngjak",
+      "commissionCancelled_one": "{{count}} swkakjak kha",
+      "commissionCancelled_other": "{{count}} swkakjak kha"
+    },
+    "chart": {
+      "title_one": "Salbrum mung swijakma tei booking - paithago {{count}} sal",
+      "title_other": "Salo mung swijakmani tei book wngmani - paithago {{count}} sal",
+      "registrations": "mung swijakmani",
+      "bookings": "Book khaimani"
+    },
+    "byStage": "Status bai lead khlaio",
+    "bySource": "Source ni bisingtwi tubuo",
+    "byReferral": "Referral tongmung bai bwkhak tubuo",
+    "myDisputes": "Nwng tubumani kok salaimung",
+    "noDisputes": "Dispute wngliya.",
+    "unknown": "Set wngya kho",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Phatarni CRM (swnamjak)",
+      "PARTNER_CRM": "Nini team bai add wngkha",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Kwthalaimani",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Kwtal {{count}} salni bisingo mwthangjakmani jora páinai",
+    "expiringTitle_other": "Kwtal {{count}} salrogo mwthangjakmani jora páinai",
+    "expiringEmpty": "O window o khoroksa phano lead bini mwthangwi manliya."
   }
 }

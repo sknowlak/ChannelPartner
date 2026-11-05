@@ -30,7 +30,8 @@
       "registered": "Imesajiliwa"
     },
     "booked": "Imehifadhiwa",
-    "empty": "Bado hakuna marejeleo."
+    "empty": "Bado hakuna marejeleo.",
+    "bookingCancelled": "Uhifadhi umeghairiwa"
   },
   "detail": {
     "customer": "Mteja",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Uhifadhi umethibitishwa.",
       "accepted": "Rufaa imekubaliwa.",
-      "rejected": "Rufaa imekataliwa."
+      "rejected": "Rufaa imekataliwa.",
+      "bookingCancelled": "Uhifadhi umeghairiwa."
     },
-    "backToReferrals": "Rudi kwa Marejeleo"
+    "backToReferrals": "Rudi kwa Marejeleo",
+    "bookingCancelled": "Uhifadhi umeghairiwa",
+    "cancelBooking": "Ghairi Kuhifadhi",
+    "cancelReasonLabel": "Sababu ya kughairi (imeonyeshwa kwa mshirika) *",
+    "cancelBookingHint": "Umiliki wa kiutendaji unarudi kwa mshirika na ustahiki wao wa tume umeghairiwa. Uongozi unaweza kuhifadhiwa tena baadaye.",
+    "cancelBookingConfirm": "Ghairi uhifadhi"
   },
   "history": {
     "title": "Historia",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Ustahiki wa tume umeundwa",
       "HANDOVER_COMPLETED": "Makabidhiano yamekamilika",
       "ADMIN_PROTECTION_RELEASED": "Msimamizi alitoa ulinzi unaorudiwa mapema. Sababu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Msimamizi alikabidhi upya usajili kutoka {{from}} hadi {{to}} . Sababu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Msimamizi alikabidhi upya usajili kutoka {{from}} hadi {{to}} . Sababu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Jaribio la nakala la usajili la mshirika mwingine lilikataliwa",
+      "BOOKING_CANCELLED": "Uhifadhi umeghairiwa. Sababu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Umiliki wa uendeshaji umerejeshwa kwa mshirika",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ustahiki wa tume umeghairiwa kwa kuweka nafasi",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ustahiki wa tume umerejeshwa kwa uhifadhi mpya"
     }
   }
 }

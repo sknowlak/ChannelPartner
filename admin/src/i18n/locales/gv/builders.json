@@ -43,7 +43,9 @@
       "name": "Ennym",
       "city": "Ardvalley",
       "status": "Keimeeaght",
-      "actions": "Ghooishyn."
+      "actions": "Ghooishyn.",
+      "protection": "Coadey daa-heuagh",
+      "matchOn": "Co-choardail rish"
     },
     "closeReferrals": "Cloie son ymmyd",
     "reopen": "Foshlit reesht",
@@ -55,6 +57,31 @@
       "add": "Cur Projekt rish",
       "created": "Er ny chroo {{name}} ."
     },
-    "back": "Arraght gys ny Toiggal"
+    "back": "Arraght gys ny Toiggal",
+    "protection": {
+      "days_one": "{{count}} laa",
+      "days_two": "{{count}} laa",
+      "days_few": "{{count}} laa",
+      "days_many": "{{count}} laa",
+      "days_other": "{{count}} laa",
+      "globalDays_one": "Bun-chowrey cruinney ( {{count}} laa)",
+      "globalDays_two": "Bun-chowrey cruinney ( {{count}} laa)",
+      "globalDays_few": "Bun-chowrey cruinney ( {{count}} laa)",
+      "globalDays_many": "Bun-chowrey cruinney ( {{count}} laa)",
+      "globalDays_other": "Bun-chowrey cruinney ( {{count}} laa)",
+      "globalDefault": "Bun-chowrey cruinney",
+      "placeholder": "Laghyn coadey (folley = staydys cruinney)",
+      "saved": "Cooishyn coadey er ny h-aarloo son {{name}} .",
+      "hint": "Cooishyn daa-heu: 1-3650 laa, ny lhig da'n 'default' global 'sy 'Settings'. Ta athrey ry-gheddyn rish cláryssyn noa - ta'n cláryssyn ta ry-gheddyn ry-gheddyn rish y traa t'er-dy-heet."
+    },
+    "matching": {
+      "global": "Bun-chowrey cruinney",
+      "globalWith": "Bunnys cruinney ( {{fields}} )",
+      "mobile": "Uimmir phone",
+      "email": "E-mail",
+      "both": "Uimmir phone + e-mail",
+      "saved": "Co-chosney daa-heuagh er ny h-aarloo son {{name}}",
+      "hint": "C'raad t'ad jannoo daa chlashtyn yr un customer son projekt. Ta athjaghey ry-gheddyn son checkaghyn duplicate veih'n traa t'ayn; cha nel y coadey t’ayn ry-gheddyn."
+    }
   }
 }

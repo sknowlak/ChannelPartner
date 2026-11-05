@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Rezervirime",
-    "pending": "Ando aźukeripen"
+    "pending": "Ando aźukeripen",
+    "status": {
+      "CONFIRMED": "Rezervirime",
+      "CANCELLED": "O rezervàcia sas phandli"
+    }
   },
   "assign": {
     "unassigned": "Bi-dino",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Akana naj projekto (na si bičhaldo)",
-    "notInList": "{{project}} (na si anθ-i lista e projèktosqi)"
+    "notInList": "{{project}} (na si anθ-i lista e projèktosqi)",
+    "protectionDays_one": "{{count}} -divesutni protekcia",
+    "protectionDays_other": "{{count}} -divesutni protekcia"
   },
   "journey": {
     "customer": "Kliènto",
@@ -76,7 +82,14 @@
     "progressHistory": "Historia e progresosqi",
     "timesIn": "(vrama anθ-o {{timezone}} )",
     "backToMyLeads": "Iriv man k-e mire śerutne",
-    "editLead": "Editisaren o śerutno"
+    "editLead": "Editisaren o śerutno",
+    "disputeBanner": "Aver partneri si les disputàcia pal-o gazda kadale klièntosqo. O Leadrat admin dikhel les - tumari protekcia ačhel pe than źi kana von ka den decizia.",
+    "booking": "Rezervàcia",
+    "commission": "Komìsia",
+    "notBooked": "Na si rezervirime",
+    "cancelledOn": "Anulirime pe {{date}} .",
+    "cancelReason": "Motivo: {{reason}}",
+    "cancelledHint": "O xramosardo ćhinavdăs i rezervàcia - o operativno barvalimos si palpale tumenθar thaj i eligibilitèta vaś e komisia si ćhinavdi. Si restaurime kana o śerutno si pale rezervisardo."
   },
   "referral": {
     "NOT_REFERRED": "Na si bičhaldo (na si projekto)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "O xramosaripen akceptisardas o referenso",
       "REFERRAL_REJECTED": "O Builder naśti te lel o bićhaldipen. Motivo: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "O Admin mukhlja avri protekcia e duplikàturenqi maj anglal. Motivo: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "O Admin paruvel i registracia katar {{from}} ko {{to}} . Motivo: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "O Admin paruvel i registracia katar {{from}} ko {{to}} . Motivo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Jekh dujto zumavipen te kerel pes i registracia katar aver partneri sas nakhlo",
+      "BOOKING_CANCELLED": "I rezervàcia sas phangli. Motivo: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "O operativno barvalipe si dino palpale e partnereske",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "E komisiaki eligibilitèta si anulisardi kana sas kerdini i rezervàcia",
+      "COMMISSION_ELIGIBILITY_RESTORED": "E komisiaki eligibilitèta si restaurime vaś i nevi rezervàcia",
+      "OWNERSHIP_DISPUTE_RAISED": "Aver partneri marda pes pal-o gazda kadale klièntosqo - jekh Leadrat admin ka dikhel les",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "O maripe vash o barvalipe pe akava kliènto sas lino palpale - tumaro barvalipe na si paruvdo",
+      "OWNERSHIP_DISPUTE_UPHELD": "O maripe vash o barvalipe pe akava klienti sas dikhlino - tumaro barvalipe si konfirmimo",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Registrime palal so tumaro maripe pal-o barvalipe sas decidisardo anθ-o tumaro laćhipen. Nota: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "I protekcia agorisardi: jekh maripe pal-o barvalipe sas decidisardo anθ-i favòra e avere partneresqi. Nota: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Kado telefonosko numero nai lasho vash o {{country}} .",
     "COUNTRY_MISMATCH": "Mangav tumen te alosaren o ćaćutno them.",
     "NOT_MOBILE": "Mangav tumen te xramosaren jekh mobilno gin, na jekh fixno telefono."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisia eligibilo",
+      "PENDING": "Komisia aźukerel pes",
+      "CANCELLED": "Komisia sas phangli"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Atribuime tumenqe",
+      "DISPUTED": "Atribucia si diskutirime"
+    }
+  },
+  "result": {
+    "none": "Naj sikavdo rezultato e registraciako. Registrisar jekh śerutno anglal.",
+    "acceptedTitle": "Registrime o śerutno",
+    "rejectedTitle": "O śerutno na si registrime",
+    "protectionWindow": "Protekciaqo Projekto",
+    "protectedUntil": "Protektirime źi ko",
+    "openLead": "putardo śerutno",
+    "addAnother": "Thov aver śerutno",
+    "duplicate": "Duplikato - aba protektuime",
+    "duplicateHint": "Akava kliènto si aba garavdo vaś kadava projèkto katar aver registracia, kadja ke naśti te avel registrime vaś tumende.",
+    "existingProtectedUntil": "E registracia savi si akana si garavdi źi ko"
+  },
+  "disputes": {
+    "title": "Mire marimata",
+    "intro": "Le marimata pal-o barvalipe so vazden tumen vaś le kliènturã save sas naśarde sar duplikàturǎ. Jekh Leadrat admin dikhel sako jekh.",
+    "empty": "Tu na vazdes nisave marimata. Te si ke jekh kliènto savo andine les si naśardo sar duplikàto, śaj te disputisares les katar o rezultàto e registraciaqo.",
+    "columns": {
+      "dispute": "Ćingar",
+      "reason": "Tumaro ćàso",
+      "outcome": "Rezultàto"
+    },
+    "status": {
+      "OPEN": "Telal o dikhipen",
+      "UPHELD": "Na ko tumaro lačhipen",
+      "OVERTURNED": "Decidime ande tumaro laćhipen",
+      "WITHDRAWN": "Iklilo"
+    },
+    "awaitingReview": "Aźukerel pes o admin recenzia",
+    "openNewLead": "Puter tiro lil {{id}}",
+    "withdraw": "Ankalavel",
+    "withdrawConfirm": "Te lel pes o maripe vash {{name}} ? O akanutno barvalipe ačhol sar si.",
+    "raise": "Disputo pal-o barvalipe",
+    "raiseTitle": "Disputo pal-o barvalipe",
+    "raiseHint": "Te akava kliènto avilo tumende maj anglal, phenen sostar. O Leadrat admin ka dikhel les; te von decidin ande tumari favòra, o śerutno si registrime vaś tumende.",
+    "reasonLabel": "Sostar si akava kliènto tiro?",
+    "reasonMin_one": "Maj cerra {{count}} karaktero.",
+    "reasonMin_other": "Maj cerra {{count}} karakterura.",
+    "submit": "Bičhalen o maripe",
+    "notProtected": "Khonik na inkrel protekcia pe akava kliènto vaś kadava projèkto maj but - śaj te registris o śerutno akana.",
+    "raised": "O maripe {{id}} bičhaldo te dikhel pes.",
+    "viewAll": "Dikh mire marimata"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Periòda",
+    "lastDays_one": "{{count}} dives",
+    "lastDays_other": "{{count}} divesa",
+    "emptyTitle": "Miśto avilăn! Tu inke naj tut drom.",
+    "emptyHint": "Registrisar tiro angluno śerutno - tiro pipeline, rezervàcie thaj protekciaqe terminură ka sikaven pes kathe.",
+    "tiles": {
+      "leads": "Totalno śerutne",
+      "newInPeriod_one": "{{count}} nevo anθ-i kadaja perìoda",
+      "newInPeriod_other": "{{count}} nevo anθ-i kadaja perìoda",
+      "accepted": "Akceptirime",
+      "booked": "Rezervirime",
+      "bookedInPeriod_one": "{{count}} xramosardo anθ-i kadaja perìoda",
+      "bookedInPeriod_other": "{{count}} xramosardo anθ-i kadaja perìoda",
+      "conversion": "Konverzia",
+      "conversionHint": "Rezervirime leadǎ sar jekh kotor e akceptisarde leadǎripnasqo",
+      "protectedNow": "Akana garavdo",
+      "expiringSoon_one": "Protekcia agorisarel pes anθ-o {{count}} dives",
+      "expiringSoon_other": "Protekcia agorisarel pes anθ-e {{count}} divesa",
+      "disputedNow": "Disputime katar aver",
+      "disputedNowHint": "Tumare śajutnimata si len jekh putardo maripe pal-o barvalimos katar aver partneri",
+      "commissionEligible": "Komisia eligibilo",
+      "commissionCancelled_one": "{{count}} sas phandlo",
+      "commissionCancelled_other": "{{count}} sas phandlo"
+    },
+    "chart": {
+      "title_one": "Registracie thaj rezervàcie anθ-o jekh dives - o paluno {{count}} dives",
+      "title_other": "Registracie thaj rezervàcie anθ-o jekh dives - palune {{count}} divesa",
+      "registrations": "Registracie",
+      "bookings": "Rezervàcie"
+    },
+    "byStage": "Ćhivel pes palal o statuso",
+    "bySource": "Ćhivel pes palal o źanglipe",
+    "byReferral": "Ćhivel pes palal o statuso e referèncaqo",
+    "myDisputes": "Disputi save vazden",
+    "noDisputes": "Na sas vazdine disputi.",
+    "unknown": "Na si thodino",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Eksterno CRM (simulime)",
+      "PARTNER_CRM": "Thovdo katar tumaro timo",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integracia",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "I protekcia agorisarel pes ko avutno {{count}} dives",
+    "expiringTitle_other": "I protekcia agorisarel pes anθ-e avutne {{count}} divesa",
+    "expiringEmpty": "Khonik na xasarel peski protekcia ano akava phani."
   }
 }

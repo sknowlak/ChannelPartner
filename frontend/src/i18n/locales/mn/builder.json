@@ -30,7 +30,8 @@
       "registered": "Бүртгүүлсэн"
     },
     "booked": "Захиалагдсан",
-    "empty": "Одоогоор лавлагаа алга."
+    "empty": "Одоогоор лавлагаа алга.",
+    "bookingCancelled": "Захиалгыг цуцалсан"
   },
   "detail": {
     "customer": "Хэрэглэгч",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Захиалгыг баталгаажууллаа.",
       "accepted": "Лавлагаа хүлээн авлаа.",
-      "rejected": "Лавлагаа татгалзсан."
+      "rejected": "Лавлагаа татгалзсан.",
+      "bookingCancelled": "Захиалгыг цуцалсан."
     },
-    "backToReferrals": "Лавлагаа руу буцах"
+    "backToReferrals": "Лавлагаа руу буцах",
+    "bookingCancelled": "Захиалгыг цуцалсан",
+    "cancelBooking": "Захиалгыг цуцлах",
+    "cancelReasonLabel": "Цуцлах болсон шалтгаан (хамтрагчид харуулсан) *",
+    "cancelBookingHint": "Үйл ажиллагааны эзэмшил нь түнш рүү буцаж очих бөгөөд тэдний шимтгэлийн эрхийг цуцална. Тэргүүлэгчийг дараа дахин захиалж болно.",
+    "cancelBookingConfirm": "Захиалгаа цуцлах"
   },
   "history": {
     "title": "Түүх",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Комиссын эрх бий болсон",
       "HANDOVER_COMPLETED": "Хүлээн авалт дууссан",
       "ADMIN_PROTECTION_RELEASED": "Админ давхардсан хамгаалалтыг эрт гаргасан. Шалтгаан: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Админ бүртгэлийг {{from}} -с {{to}} болгон өөрчилсөн. Шалтгаан: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Админ бүртгэлийг {{from}} -с {{to}} болгон өөрчилсөн. Шалтгаан: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Өөр түншийн давхардсан бүртгэлийн оролдлогоос татгалзсан",
+      "BOOKING_CANCELLED": "Захиалгыг цуцалсан. Шалтгаан: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Үйл ажиллагааны өмчлөлийг түншдээ буцааж өгсөн",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Захиалга хийснээр комиссын эрхийг цуцалсан",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Шинэ захиалга авах комиссын эрхийг сэргээв"
     }
   }
 }

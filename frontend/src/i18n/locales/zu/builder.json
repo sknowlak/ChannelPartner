@@ -30,7 +30,8 @@
       "registered": "Ibhalisiwe"
     },
     "booked": "Ibhukhiwe",
-    "empty": "Akukho ukudluliselwa okwamanje."
+    "empty": "Akukho ukudluliselwa okwamanje.",
+    "bookingCancelled": "Ukubhuka kukhanseliwe"
   },
   "detail": {
     "customer": "Ikhasimende",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Ukubhukha kuqinisekisiwe.",
       "accepted": "Ukudluliselwa kwamukelwe.",
-      "rejected": "Ukudluliselwa kunqatshiwe."
+      "rejected": "Ukudluliselwa kunqatshiwe.",
+      "bookingCancelled": "Ukubhuka kukhanseliwe."
     },
-    "backToReferrals": "Emuva Kokudluliswa"
+    "backToReferrals": "Emuva Kokudluliswa",
+    "bookingCancelled": "Ukubhuka kukhanseliwe",
+    "cancelBooking": "Khansela Ukubhuka",
+    "cancelReasonLabel": "Isizathu sokukhansela (siboniswe uzakwethu) *",
+    "cancelBookingHint": "Ubunikazi bokusebenza bubuyela kuzakwethu futhi ukufaneleka kwekhomishini yakhe kukhanseliwe. Ukuhola kungabhukwa futhi ngokuhamba kwesikhathi.",
+    "cancelBookingConfirm": "Khansela ukubhukha"
   },
   "history": {
     "title": "Umlando",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Ukufaneleka kwekhomishini kudaliwe",
       "HANDOVER_COMPLETED": "Ukunikezela kuqediwe",
       "ADMIN_PROTECTION_RELEASED": "U-Admin ukhiphe isivikelo esiyimpinda kusenesikhathi. Isizathu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Umlawuli ukwabele kabusha ukubhaliswa kusukela ku {{from}} kuya ku {{to}} . Isizathu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Umlawuli ukwabele kabusha ukubhaliswa kusukela ku {{from}} kuya ku {{to}} . Isizathu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Umzamo wokubhalisa oyimpinda ngomunye uzakwethu unqatshiwe",
+      "BOOKING_CANCELLED": "Ukubhuka kukhanseliwe. Isizathu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ubunikazi bokusebenza bubuyiselwe kuzakwethu",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ukufaneleka kwekhomishini kukhanseliwe ngokubhukha",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ukufaneleka kwekhomishini kubuyiselwe ekubhukheni okusha"
     }
   }
 }

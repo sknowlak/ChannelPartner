@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "सक्षम",
-    "PENDING": "रूक्योड़ो"
+    "PENDING": "रूक्योड़ो",
+    "CANCELLED": "रद्द कर दियो गयो"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "डुप्लिकेट सुरक्षा नै जल्दी जारी करो",
-    "REASSIGN_PARTNER": "दूजा साथी नै फेर सूं सौंपो"
+    "REASSIGN_PARTNER": "दूजा साथी नै फेर सूं सौंपो",
+    "CANCEL_BOOKING": "बुकिंग रद्द करो"
   },
   "dataType": {
     "TEXT": "सन्देस",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "सुपर एडमिन",
     "ADMIN": "व्यवस्थापक"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "पुष्टि कर दी गई",
+    "CANCELLED": "रद्द कर दियो गयो"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "जिम्मेदार ठहरायो गयो",
+    "DISPUTED": "विवादित"
+  },
+  "disputeStatus": {
+    "OPEN": "खुल्योड़ो",
+    "UPHELD": "बरकरार राख्यो गयो",
+    "OVERTURNED": "पलट दियो गयो",
+    "WITHDRAWN": "पाछो ले लियो गयो"
   }
 }

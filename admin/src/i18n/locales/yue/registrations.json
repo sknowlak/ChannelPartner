@@ -49,8 +49,73 @@
       "newPartnerId": "新嘅合作夥伴ID",
       "reason": "原因（必填）",
       "apply": "套用覆寫",
-      "applying": "申請緊 ..."
+      "applying": "申請緊 ...",
+      "cancelBookingHint": "取消會標記預訂同埋佢嘅佣金為取消，將營運所有權交返畀合作夥伴，同埋畀建築商再次預訂呢個潛在客戶。",
+      "cancelBookingConfirm": "取消呢個預訂？ Its commission is cancelled too. This is logged with your name and reason."
     },
-    "timelineTitle": "審計時間表（呢個登記）"
+    "timelineTitle": "審計時間表（呢個登記）",
+    "bookingStatus": "預訂狀態",
+    "commissionAttribution": "委員會歸因",
+    "disputeOpen": "呢個客戶有擁有權爭議 - 另一個合作夥伴話係佢哋嘅。 It is decided on the Disputes page.",
+    "viewDisputes": "睇返爭議",
+    "cancellation": {
+      "title": "預訂取消咗",
+      "hint": "The booking and its commission are cancelled;營運擁有權返咗畀合作夥伴，而建築師可以再次預約呢個潛在客戶。",
+      "at": "喺",
+      "by": "取消咗",
+      "reason": "原因"
+    }
+  },
+  "disputes": {
+    "title": "所有權爭議",
+    "hint": "如果個合作夥伴嘅註冊被拒絕為重複，佢可以爭議邊個擁有個客戶。 Review both sides and decide.",
+    "statusFilter": "爭議狀態",
+    "allStatuses": "所有狀態",
+    "empty": "呢個狀態冇任何爭議。",
+    "columns": {
+      "dispute": "糾紛",
+      "customer": "顧客",
+      "project": "計劃",
+      "raisedBy": "由",
+      "heldBy": "而家嘅擁有者",
+      "status": "地位",
+      "raisedAt": "長大咗"
+    },
+    "detail": {
+      "title": "爭議{{id}}",
+      "raisedOn": "養咗{{date}}",
+      "raisingTitle": "由",
+      "holderTitle": "而家嘅擁有者",
+      "partner": "拍檔",
+      "raisedBy": "由",
+      "customerName": "顧客",
+      "mobile": "手提電話",
+      "alternateMobile": "替代手機",
+      "email": "電郵",
+      "project": "計劃",
+      "reason": "佢哋嘅原因",
+      "registration": "註冊",
+      "registeredAt": "喺",
+      "referral": "推薦",
+      "heldMissing": "搵唔到保留咗嘅註冊。",
+      "resolutionTitle": "決定",
+      "outcome": "結果",
+      "note": "筆記薄",
+      "decidedBy": "由",
+      "decidedAt": "決定咗",
+      "newRegistration": "新註冊",
+      "decideTitle": "決定呢個爭議",
+      "noteLabel": "解釋決定嘅筆記（必填）",
+      "noteRequired": "寫張筆記嚟決定。",
+      "uphold": "維持",
+      "overturn": "翻車",
+      "upholdEffect": "{{holder}}保留住個客。爭議已經結束，其他嘢都冇改變。",
+      "overturnEffect": "{{holder}}嘅重複保護現已結束，而客戶已經註冊咗{{partner}}作為新註冊。",
+      "heldBookedHelp": "呢個客戶係透過而家嘅擁有者預訂嘅。先取消嗰個預訂（註冊時嘅管理員覆寫），然後推翻：",
+      "confirmTitle": "你肯定？",
+      "confirmUphold": "係呀，維持",
+      "confirmOverturn": "係，翻車",
+      "back": "返去爭議"
+    }
   }
 }

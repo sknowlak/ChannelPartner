@@ -30,7 +30,8 @@
       "registered": "Anrejistre"
     },
     "booked": "Anrezève",
-    "empty": "Pa gen okenn referans ankò."
+    "empty": "Pa gen okenn referans ankò.",
+    "bookingCancelled": "Anile anile"
   },
   "detail": {
     "customer": "Kliyan",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Anrjistreman konfime.",
       "accepted": "Rekòmandasyon aksepte.",
-      "rejected": "Rekòmandasyon rejte."
+      "rejected": "Rekòmandasyon rejte.",
+      "bookingCancelled": "Anile anile."
     },
-    "backToReferrals": "Retounen nan Referans"
+    "backToReferrals": "Retounen nan Referans",
+    "bookingCancelled": "Anile anile",
+    "cancelBooking": "Anile anrjistreman",
+    "cancelReasonLabel": "Rezon pou anile (yo montre patnè a) *",
+    "cancelBookingHint": "Pwopriyete operasyon an tounen nan patnè a epi yo anile kalifikasyon komisyon yo. Plon an ka rezerve ankò pita.",
+    "cancelBookingConfirm": "Anile rezèvasyon an"
   },
   "history": {
     "title": "Istwa",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Elijiblite komisyon kreye",
       "HANDOVER_COMPLETED": "Transmisyon fini",
       "ADMIN_PROTECTION_RELEASED": "Admin lage pwoteksyon kopi bonè. Rezon ki fè: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin reassigne enskripsyon soti nan {{from}} a {{to}} . Rezon ki fè: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin reassigne enskripsyon soti nan {{from}} a {{to}} . Rezon ki fè: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Yon lòt patnè te rejte yon tantativ enskripsyon kopi",
+      "BOOKING_CANCELLED": "Anile anile. Rezon ki fè: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Pwopriyete operasyon an te retounen bay patnè a",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Elijiblite komisyon an anile ak anrjistreman an",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Elijiblite komisyon an retabli pou nouvo anrjistreman an"
     }
   }
 }

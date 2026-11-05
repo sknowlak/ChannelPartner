@@ -30,7 +30,8 @@
       "registered": "Udah direjista"
     },
     "booked": "Ditempah",
-    "empty": "Nadai rujukan agi."
+    "empty": "Nadai rujukan agi.",
+    "bookingCancelled": "Tempahan udah dikinsil"
   },
   "detail": {
     "customer": "Pelangan",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Booking udah disah.",
       "accepted": "Rujukan udah diterima.",
-      "rejected": "Rujukan ditulak."
+      "rejected": "Rujukan ditulak.",
+      "bookingCancelled": "Booking udah dikinsil."
     },
-    "backToReferrals": "Pulai ngagai Rujukan"
+    "backToReferrals": "Pulai ngagai Rujukan",
+    "bookingCancelled": "Tempahan udah dikinsil",
+    "cancelBooking": "Kinsil Tempahan",
+    "cancelReasonLabel": "Kebuah nginsil (ditunjukka ngagai kaling) *",
+    "cancelBookingHint": "Pengempu operasyen pulai ngagai kaling lalu pematut komisyen sida dikinsil. Lead tau di booking baru ila.",
+    "cancelBookingConfirm": "Kinsil tempahan"
   },
   "history": {
     "title": "Sejarah",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisyen digaga",
       "HANDOVER_COMPLETED": "Pengawa nyerah udah tembu",
       "ADMIN_PROTECTION_RELEASED": "Admin ngeluarka duplikat pelindung tumu. Kebuah: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin ngagihka baru pengawa ngerejista ari {{from}} ngagai {{to}} . Kebuah: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin ngagihka baru pengawa ngerejista ari {{from}} ngagai {{to}} . Kebuah: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Uji ngerejista duplikat ari kaling bukai ditulak .",
+      "BOOKING_CANCELLED": "Booking udah dikinsil. Kebuah: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Pengempu operasyen dipulaika ngagai kaling .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kelayakan komisyen dikinsil enggau booking .",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kelayakan komisyen dipulaika baru ungkup booking baru ."
     }
   }
 }

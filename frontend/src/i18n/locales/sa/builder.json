@@ -30,7 +30,8 @@
       "registered": "पञ्जीकृत"
     },
     "booked": "बुक किया गया",
-    "empty": "अद्यापि कोऽपि रेफरल् नास्ति।"
+    "empty": "अद्यापि कोऽपि रेफरल् नास्ति।",
+    "bookingCancelled": "बुकिंग् रद्दम्"
   },
   "detail": {
     "customer": "ग्राहकः",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "बुकिंग् पुष्टिः अभवत्।",
       "accepted": "सन्दर्भः स्वीकृतः।",
-      "rejected": "सन्दर्भः अङ्गीकृतः।"
+      "rejected": "सन्दर्भः अङ्गीकृतः।",
+      "bookingCancelled": "बुकिंग् रद्दम्।"
     },
-    "backToReferrals": "पुनः सन्दर्भं प्रति"
+    "backToReferrals": "पुनः सन्दर्भं प्रति",
+    "bookingCancelled": "बुकिंग् रद्दम्",
+    "cancelBooking": "बुकिंग रद्द करें",
+    "cancelReasonLabel": "रद्दीकरणस्य कारणम् (सहभागिने दर्शितम्) * .",
+    "cancelBookingHint": "परिचालनस्वामित्वं पुनः भागीदारं प्रति गच्छति तथा च तेषां आयोगस्य पात्रता रद्दं भवति। अग्रतां पश्चात् पुनः बुकं कर्तुं शक्यते।",
+    "cancelBookingConfirm": "बुकिंग् रद्दं कुर्वन्तु"
   },
   "history": {
     "title": "इतिहास",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "आयोग पात्रता निर्मित",
       "HANDOVER_COMPLETED": "हस्तान्तरणं सम्पन्नम्",
       "ADMIN_PROTECTION_RELEASED": "एड्मिन् डुप्लिकेट् प्रोटेक्शन् पूर्वमेव मुक्तवान्। कारणम् : {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "व्यवस्थापकेन {{from}} तः {{to}} यावत् पञ्जीकरणं पुनः नियुक्तम् । कारणम् : {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "व्यवस्थापकेन {{from}} तः {{to}} यावत् पञ्जीकरणं पुनः नियुक्तम् । कारणम् : {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "अन्येन सहभागिना द्वितीयकपञ्जीकरणप्रयासः अङ्गीकृतः",
+      "BOOKING_CANCELLED": "बुकिंग् रद्दम्। कारणम् : {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "परिचालनस्वामित्वं भागीदाराय पुनः आगतं",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "बुकिंग् इत्यनेन सह आयोगस्य पात्रता रद्दीकृता",
+      "COMMISSION_ELIGIBILITY_RESTORED": "नूतनबुकिंग् कृते आयोगस्य पात्रता पुनः स्थापिता"
     }
   }
 }

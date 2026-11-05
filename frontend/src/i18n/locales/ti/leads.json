@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "ተሓዚኡ",
-    "pending": "ኣብ ከይዲ"
+    "pending": "ኣብ ከይዲ",
+    "status": {
+      "CONFIRMED": "ተሓዚኡ",
+      "CANCELLED": "ምዝገባ ተሰሪዙ"
+    }
   },
   "assign": {
     "unassigned": "ዘይተመደበ",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "ገና ፕሮጀክት የለን (ኣይተወከሰን)",
-    "notInList": "{{project}} (ኣብ ዝርዝር ፕሮጀክት የለን)"
+    "notInList": "{{project}} (ኣብ ዝርዝር ፕሮጀክት የለን)",
+    "protectionDays_one": "{{count}} -መዓልቲ ምክልኻል",
+    "protectionDays_other": "{{count}} -መዓልቲ ምክልኻል"
   },
   "journey": {
     "customer": "ዓሚል",
@@ -76,7 +82,14 @@
     "progressHistory": "ታሪኽ ምዕባለ",
     "timesIn": "(ግዜታት ኣብ {{timezone}} )",
     "backToMyLeads": "ናብ መሪሕነተይ ንመለስ",
-    "editLead": "ኣርትዕ መሪሕነት"
+    "editLead": "ኣርትዕ መሪሕነት",
+    "disputeBanner": "ካልእ መሻርኽቲ ድማ ዋንነት ናይዚ ዓሚል ተኻቲዑ ኣሎ። ሓደ Leadrat ኣድሚን ይግምግሞ ኣሎ - ክሳብ ዝውስኑ መከላኸሊኻ ኣብ ቦታኡ ይጸንሕ።",
+    "booking": "ምዝገባ",
+    "commission": "ኮምሽን",
+    "notBooked": "ኣይተሓዙን።",
+    "cancelledOn": "ኣብ {{date}} ተሰሪዙ።",
+    "cancelReason": "ምኽንያት {{reason}}",
+    "cancelledHint": "እቲ ሃናጺ ነቲ ምዝገባ ሰሪዝዎ - ስርሒታዊ ዋንነት ምሳኻ ተመሊሱ ኣሎ፡ ብቕዓት ኮሚሽን ድማ ተሰሪዙ። መሪሕነት ዳግማይ እንተተመዝጊቡ ይምለስ።"
   },
   "referral": {
     "NOT_REFERRED": "ኣይተመሓላለፈን (ፕሮጀክት የለን)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "ሃናጺ ነቲ ሪፈራል ተቐቢልዎ።",
       "REFERRAL_REJECTED": "ሃናጺ ነቲ ሪፈራል ነጺግዎ። ምኽንያት {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "ኣድሚን ብኣግኡ ድፕሊኬት መከላኸሊ ኣውጺኡ። ምኽንያት {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "ኣድሚን ምዝገባ ካብ {{from}} ናብ {{to}} ዳግማይ መደቦ። ምኽንያት {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "ኣድሚን ምዝገባ ካብ {{from}} ናብ {{to}} ዳግማይ መደቦ። ምኽንያት {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "ብኻልእ መሻርኽቲ ዝተገብረ ተደጋጋሚ ናይ ምዝገባ ፈተነ ተነጺጉ",
+      "BOOKING_CANCELLED": "ምዝገባ ተሰሪዙ። ምኽንያት {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "ስርሒታዊ ዋንነት ናብቲ መሻርኽቲ ተመሊሱ",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "ብቕዓት ኮሚሽን ምስቲ ምዝገባ ተሰሪዙ",
+      "COMMISSION_ELIGIBILITY_RESTORED": "ንሓድሽ ምዝገባ ብቑዕነት ኮሚሽን ተመሊሱ",
+      "OWNERSHIP_DISPUTE_RAISED": "ካልእ መሻርኽቲ ዋንነት ናይዚ ዓሚል ተኻቲዑ - ሓደ Leadrat ኣድሚን ክግምግሞ እዩ።",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "ኣብ ልዕሊ እዚ ዓሚል ዝነበረ ናይ ዋንነት ክርክር ተሰሒቡ - ዋንነትካ ኣይተቐየረን።",
+      "OWNERSHIP_DISPUTE_UPHELD": "ኣብዚ ዓሚል ዝነበረ ናይ ዋንነት ክርክር ተገምጊሙ - ዋንነትካ ተረጋጊጹ ኣሎ።",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "ናይ ዋንነት ክርክርካ ንዓኻ ዝጠቅም ምስተወሰነ ዝተመዝገበ። መተሓሳሰቢ {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "ሓለዋ ተዛዚሙ: ናይ ዋንነት ክርክር ንኻልእ መሻርኽቲ ዝጠቅም ውሳነ ተዋሂቡ። መተሓሳሰቢ {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "እዚ ቁጽሪ ተሌፎን ን {{country}} ቅኑዕ ኣይኮነን።",
     "COUNTRY_MISMATCH": "በጃኹም ቅኑዕ ናይ ሃገር ኮድ ምረጹ።",
     "NOT_MOBILE": "ናይ ሞባይል ቁጽሪ እምበር መደበኛ ስልኪ ኣእትዉ።"
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "ኮሚሽን ብቑዕ",
+      "PENDING": "ኮሚሽን ኣብ ምጽባይ ይርከብ።",
+      "CANCELLED": "ኮሚሽን ተሰሪዙ"
+    },
+    "attribution": {
+      "ATTRIBUTED": "ንዓኻ ዝምልከት እዩ።",
+      "DISPUTED": "ኣትሪብዩሽን ተኻቲዑ"
+    }
+  },
+  "result": {
+    "none": "ውጽኢት ምዝገባ ንምርኣይ የለን። መጀመርታ መሪሕነት ምዝገባ።",
+    "acceptedTitle": "መሪሕነት ተመዝጊቡ።",
+    "rejectedTitle": "መሪሕነት ኣይተመዝገበን።",
+    "protectionWindow": "መስኮት መከላኸሊ",
+    "protectedUntil": "ዝተሓለወ ክሳብ...",
+    "openLead": "ክፉት መሪሕነት",
+    "addAnother": "ካልእ መሪሕነት ወስኸሉ።",
+    "duplicate": "ተደጋጋሚ - ድሮ ተሓልዩ ኣሎ።",
+    "duplicateHint": "እዚ ዓሚል ድሮ ነዚ ፕሮጀክት ብኻልእ ምዝገባ ተሓልዩ ስለዘሎ፡ ንዓኻ ክምዝገብ ኣይከኣለን።",
+    "existingProtectedUntil": "ዝጸንሐ ምዝገባ ክሳብ..."
+  },
+  "disputes": {
+    "title": "ናተይ ክርክር",
+    "intro": "ንዓማዊል ዘልዓልካዮም ናይ ዋንነት ክርክር ከም ድፕሊኬት ዝተነጽጉ። ሓደ Leadrat ኣድሚን ንነፍሲ ​​ወከፎም ይግምግሞም።",
+    "empty": "ዝኾነ ክርክር ኣየልዓልኩምን። ዘምጻእካዮ ዓሚል ከም ድፕሊኬት እንተተነጺጉ፡ ካብ ውጽኢት ምዝገባ ክትከራኸር ትኽእል ኢኻ።",
+    "columns": {
+      "dispute": "ዘይምስምዕማዕ",
+      "reason": "ምኽንያትካ",
+      "outcome": "ውጽኢት"
+    },
+    "status": {
+      "OPEN": "ኣብ ትሕቲ ምግምጋም ይርከብ።",
+      "UPHELD": "ንረብሓኻ ኣይኮነን።",
+      "OVERTURNED": "ንዓኻ ዝጠቅም ወሲኑ",
+      "WITHDRAWN": "ተሰሒቡ።"
+    },
+    "awaitingReview": "ኣድሚን ሪቪው ንጽበ",
+    "openNewLead": "መሪሕነትካ ክፈት {{id}}",
+    "withdraw": "ምቁራፅ",
+    "withdrawConfirm": "ን {{name}} ዝብል ክርክርካ ስሓብ ? እቲ ሕጂ ዘሎ ዋንነት ከም ዘለዎ ይጸንሕ።",
+    "raise": "ዋንነት ክርክር",
+    "raiseTitle": "ዋንነት ክርክር",
+    "raiseHint": "እዚ ዓሚል መጀመርታ ናባኻ እንተመጺኡ፡ ስለምንታይ ከምኡ ከም ዝኾነ ግለጽ። ሓደ Leadrat ኣድሚን ክግምግሞ እዩ፤ ንዓኻ ዝጠቅም እንተ ወሲኖም እቲ መሪሕነት ይምዝገበልካ።",
+    "reasonLabel": "ስለምንታይ እዚ ዓሚል ናትካ ኮይኑ?",
+    "reasonMin_one": "እንተወሓደ {{count}} ፊደል።",
+    "reasonMin_other": "እንተወሓደ {{count}} ፊደላት።",
+    "submit": "ስደድ ክርክር",
+    "notProtected": "ድሕሪ ሕጂ ነዚ ዓሚል ነዚ ፕሮጀክት መከላኸሊ ዝሕዝ ሰብ የለን - ሕጂ ነቲ መሪሕነት ክትምዝግቦ ትኽእል ኢኻ።",
+    "raised": "ክርክር {{id}} ንኽግምገም ተላኢኹ።",
+    "viewAll": "ናተይ ክርክር ርኣዩ።"
+  },
+  "dashboard": {
+    "title": "ዳሽቦርድ",
+    "period": "ግዘ",
+    "lastDays_one": "{{count}} መዓልቲ",
+    "lastDays_other": "{{count}} መዓልታት",
+    "emptyTitle": "እንኳዕ ደሓን መፁ! ክሳብ ሕጂ ዝኾነ መሪሕነት የብልካን።",
+    "emptyHint": "ናይ መጀመርታ መሪሕነትኩም ኣመዝግቡ - ናይ ሻምብቆኹም፣ ናይ ምዝገባን ናይ ምክልኻል ናይ መወዳእታ ግዜኹምን ኣብዚ ክረአ እዩ።",
+    "tiles": {
+      "leads": "ጠቕላላ መሪሕነት",
+      "newInPeriod_one": "{{count}} ኣብዚ እዋን ሓድሽ",
+      "newInPeriod_other": "{{count}} ኣብዚ እዋን ሓድሽ",
+      "accepted": "ተቐባልነት ኣለዎ።",
+      "booked": "ተሓዚኡ",
+      "bookedInPeriod_one": "{{count}} ኣብዚ ግዜ እዚ ተሓዚኡ",
+      "bookedInPeriod_other": "{{count}} ኣብዚ ግዜ እዚ ተሓዚኡ",
+      "conversion": "ምልዋጥ",
+      "conversionHint": "ከም ብጽሒት ናይ ቅቡል መሪሕነት ዝተሓዝአ መሪሕነት",
+      "protectedNow": "ሕጂ ተሓልዩ ኣሎ።",
+      "expiringSoon_one": "ኣብ {{count}} መዓልቲ ዝውዳእ መከላኸሊ",
+      "expiringSoon_other": "ኣብ {{count}} መዓልታት ዝውዳእ መከላኸሊ",
+      "disputedNow": "ብኻልኦት ዘካትዕ",
+      "disputedNowHint": "ናትካ ካብ ካልእ መሻርኽቲ ብዝመጽእ ክፉት ናይ ዋንነት ክርክር ይመርሕ",
+      "commissionEligible": "ኮሚሽን ብቑዕ",
+      "commissionCancelled_one": "{{count}} ተሰሪዙ",
+      "commissionCancelled_other": "{{count}} ተሰሪዙ"
+    },
+    "chart": {
+      "title_one": "ምዝገባን ምዝገባን ኣብ መዓልቲ - ናይ መወዳእታ {{count}} መዓልቲ",
+      "title_other": "ምዝገባን ምዝገባን ኣብ መዓልቲ - ናይ መወዳእታ {{count}} መዓልታት",
+      "registrations": "ምዝገባ",
+      "bookings": "ምዝገባ"
+    },
+    "byStage": "ብደረጃ ይመርሕ",
+    "bySource": "ብፍልፍል ይመርሕ",
+    "byReferral": "ብናይ ሪፈራል ኩነታት ይመርሕ",
+    "myDisputes": "ዘልዓልካዮም ክርክር",
+    "noDisputes": "ዝኾነ ክርክር ኣይተላዕለን።",
+    "unknown": "ኣይተቐመጠን።",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "ናይ ደገ CRM (ተመሳሳሊ)",
+      "PARTNER_CRM": "ብጋንታኹም ዝተወሰኸ",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "ውህደት",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "ኣብ ዝቕጽል {{count}} መዓልቲ ዝውዳእ መከላኸሊ",
+    "expiringTitle_other": "ኣብ ዝቕጽሉ {{count}} መዓልታት ዝውዳእ መከላኸሊ",
+    "expiringEmpty": "ኣብዚ መስኮት ዝኾነ መሪሕነት መከላኸሊኡ ዝስእን።"
   }
 }

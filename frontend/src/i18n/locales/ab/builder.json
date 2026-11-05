@@ -30,7 +30,8 @@
       "registered": "Ашәҟәы иҭаҩуп"
     },
     "booked": "Иаанкылоуп",
-    "empty": "Макьаназы анапынҵақәа ыҟам."
+    "empty": "Макьаназы анапынҵақәа ыҟам.",
+    "bookingCancelled": "Аԥхьакра аанкылоуп"
   },
   "detail": {
     "customer": "Аклиент",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Абжьаҟазара шьақәырӷәӷәоуп.",
       "accepted": "Ашьҭра рыдыркылеит.",
-      "rejected": "Ашьҭра мап ацәкуп."
+      "rejected": "Ашьҭра мап ацәкуп.",
+      "bookingCancelled": "Абжьаҟазара аанкылоуп."
     },
-    "backToReferrals": "Ашьҭрақәа рахь ашьҭахьҟа"
+    "backToReferrals": "Ашьҭрақәа рахь ашьҭахьҟа",
+    "bookingCancelled": "Аԥхьакра аанкылоуп",
+    "cancelBooking": "Аԥхьакра аԥыхра",
+    "cancelReasonLabel": "Аԥыхра амзыз (апартниор идырбоит) *",
+    "cancelBookingHint": "Аоперациатә хатәра апартниор иахь ицоит, насгьы урҭ ркомиссиа азин ԥыххоит. Аԥхьагылаҩ нас даҽазнык аанкылара ауеит.",
+    "cancelBookingConfirm": "Аԥхьакра аԥыхтәуп"
   },
   "history": {
     "title": "Ахҭыс",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Акомиссиа азин аԥҵоуп",
       "HANDOVER_COMPLETED": "Анапынҵара хыркәшоуп",
       "ADMIN_PROTECTION_RELEASED": "Админ ахьчара дубликат заанаҵ иҭижьит. Аҵаҵӷәы: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Админ еиҭеиҭеит аҽҭаҩра {{from}} ахьтә {{to}} ахь. Аҵаҵӷәы: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Админ еиҭеиҭеит аҽҭаҩра {{from}} ахьтә {{to}} ахь. Аҵаҵӷәы: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Даҽа партниорк иҩынтәны ашәҟәҭагалара аҽазышәара мап ацәкын",
+      "BOOKING_CANCELLED": "Абжьаҟазара аанкылоуп. Аҵаҵӷәы: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Аоперациатә хатәра апартниор иахь ихынҳәит",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Акомиссиа азин аанкылоуп абронирование ацны",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Абронирование ҿыц азы акомиссиа азин еиҭашьақәыргылоуп"
     }
   }
 }

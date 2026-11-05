@@ -30,7 +30,8 @@
       "registered": "La pynrung kyrteng"
     },
     "booked": "La buh",
-    "empty": "Ym pat don ki jingpynkylla."
+    "empty": "Ym pat don ki jingpynkylla.",
+    "bookingCancelled": "La weng noh ia ka jingbuh jaka"
   },
   "detail": {
     "customer": "Nongtheid",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "La pynthikna ia ka jingbuh.",
       "accepted": "La pdiang ia ka jingpynkylla.",
-      "rejected": "Ka jingpynkylla ka la shah kyntait."
+      "rejected": "Ka jingpynkylla ka la shah kyntait.",
+      "bookingCancelled": "Ka jingpynrung kyrteng la pynsangeh noh."
     },
-    "backToReferrals": "Phai biang sha ki jingpynkylla"
+    "backToReferrals": "Phai biang sha ki jingpynkylla",
+    "bookingCancelled": "La weng noh ia ka jingbuh jaka",
+    "cancelBooking": "Pynsangeh ia ka jingbuh jaka",
+    "cancelReasonLabel": "Ka daw jong ka jingpynsangeh (la pyni sha u paralok) *",
+    "cancelBookingHint": "Ka jinglong trai treikam ka leit biang sha u paralok bad ka jinglong hok jong ki ban ioh komishon la pynduh noh. Ia ka lead lah ban book biang hadien.",
+    "cancelBookingConfirm": "Pynsangeh noh ia ka jingbuh jaka"
   },
   "history": {
     "title": "Histori",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "La thaw ia ka jingbit ban ioh ia ka komishon",
       "HANDOVER_COMPLETED": "La pyndep ia ka jingaiti",
       "ADMIN_PROTECTION_RELEASED": "U Admin u la pyllait kloi ia ka jingiada kaba arsien. Ka daw: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "U Admin u la pynkylla ia ka jingpynrung kyrteng na {{from}} sha {{to}} . Ka daw: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "U Admin u la pynkylla ia ka jingpynrung kyrteng na {{from}} sha {{to}} . Ka daw: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ka jingpyrshang ban pynrung kyrteng arsien da uwei pat u paralok la kyntait .",
+      "BOOKING_CANCELLED": "Ka jingpynrung kyrteng la pynsangeh noh. Ka daw: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ka jinglong trai ba treikam ka la wanphai biang sha u paralok",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "La pynsangeh noh ia ka jingioh komishon ryngkat bad ka jingpynrung kyrteng",
+      "COMMISSION_ELIGIBILITY_RESTORED": "La pynphai biang ia ka hok jong ka komishon na ka bynta ka jingpynrung kyrteng kaba thymmai"
     }
   }
 }

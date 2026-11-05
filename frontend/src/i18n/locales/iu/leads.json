@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "ᐃᓂᒃᓴᓕᐅᖅᑕᐅᓯᒪᔪᖅ",
-    "pending": "ᓇᓗᓇᐃᕆᐊᓖᑦ"
+    "pending": "ᓇᓗᓇᐃᕆᐊᓖᑦ",
+    "status": {
+      "CONFIRMED": "ᐃᓂᒃᓴᓕᐅᖅᑕᐅᓯᒪᔪᖅ",
+      "CANCELLED": "ᐃᓂᒃᓴᓕᐅᕐᓂᖅ ᓄᖅᑲᖅᑎᑕᐅᕗᖅ"
+    }
   },
   "assign": {
     "unassigned": "ᑎᓕᔭᐅᓯᒪᙱᑦᑐᖅ",
@@ -58,7 +62,10 @@
   },
   "project": {
     "none": "ᐱᓕᕆᐊᒃᓴᖅᑕᖃᙱᑦᑐᖅ ᓱᓕ (ᑐᕌᖅᑎᑕᐅᓯᒪᙱᑦᑐᖅ)",
-    "notInList": "{{project}} (ᐱᓕᕆᐊᒃᓴᑦ ᑎᑎᕋᖅᓯᒪᔪᖁᑎᖏᓐᓃᙱᑦᑐᖅ)"
+    "notInList": "{{project}} (ᐱᓕᕆᐊᒃᓴᑦ ᑎᑎᕋᖅᓯᒪᔪᖁᑎᖏᓐᓃᙱᑦᑐᖅ)",
+    "protectionDays_one": "{{count}} -ᐅᓪᓗᕐᒧᑦ ᓴᐳᒻᒥᔭᐅᔾᔪᑎ",
+    "protectionDays_two": "{{count}} -ᐅᓪᓗᕐᒧᑦ ᓴᐳᒻᒥᔭᐅᔾᔪᑎ",
+    "protectionDays_other": "{{count}} -ᐅᓪᓗᕐᒧᑦ ᓴᐳᒻᒥᔭᐅᔾᔪᑎ"
   },
   "journey": {
     "customer": "ᐊᑭᓕᖅᓱᐃᔪᖅ",
@@ -76,7 +83,14 @@
     "progressHistory": "ᐱᕙᓪᓕᐊᓂᕆᓯᒪᔭᖏᑦ",
     "timesIn": "(ᓯᕿᙳᔭᐃᑦ {{timezone}} )",
     "backToMyLeads": "ᐅᑎᕐᓗᑕ ᑐᑭᒧᐊᒃᑎᑦᑎᔨᓐᓄᑦ",
-    "editLead": "ᐋᖅᑭᒋᐊᕆᓂᖅ ᓯᕗᓕᖅᑎᒥᒃ"
+    "editLead": "ᐋᖅᑭᒋᐊᕆᓂᖅ ᓯᕗᓕᖅᑎᒥᒃ",
+    "disputeBanner": "ᐊᓯᐊᑦᑕᐅᖅ ᐱᓕᕆᖃᑎᒋᔭᐅᔪᖅ ᐊᐃᕙᐅᑎᖃᖅᓯᒪᖕᒥᔪᖅ ᓇᖕᒥᓂᖃᕐᓂᐅᔪᒥᒃ ᑖᔅᓱᒥᖓ ᓂᐅᕕᖅᐸᒃᑐᒥᒃ. Leadrat ᐊᐅᓚᑦᑎᔨᖓᑦ ᕿᒥᕐᕈᓇᒃᐳᖅ - ᓴᐳᒻᒥᔭᐅᔾᔪᑎᒋᔭᐃᑦ ᐋᖅᑭᒃᓯᒪᐃᓐᓇᕐᓂᐊᖅᑐᖅ ᐃᓱᒪᓕᐅᕋᓱᐊᕐᓂᖏᓐᓂ.",
+    "booking": "ᐃᓂᒃᓴᓕᐅᕐᓂᖅ",
+    "commission": "ᑲᑎᒪᔩᑦ",
+    "notBooked": "ᐃᓂᒃᓴᓕᐅᖅᑕᐅᓯᒪᙱᑦᑐᖅ",
+    "cancelledOn": "ᓄᖅᑲᖅᑎᑕᐅᔪᖅ {{date}} .",
+    "cancelReason": "ᐱᔾᔪᑎᖓ: {{reason}}",
+    "cancelledHint": "ᓴᓇᔨ ᓄᖅᑲᖅᑎᑦᑎᓚᐅᖅᑐᖅ ᐃᓂᒃᓴᓕᐅᕐᓂᕐᒥᒃ - ᐊᐅᓚᑦᑎᓂᕐᒧᑦ ᓇᖕᒥᓂᖃᕐᓂᖅ ᐅᑎᖅᓯᒪᓕᖅᐳᖅ ᐃᓕᖕᓄᑦ ᐊᒻᒪ ᑲᒥᓴᓇᒧᑦ ᐱᔪᓐᓇᕐᓂᖅ ᓄᖅᑲᖅᑎᑕᐅᓪᓗᓂ. ᐅᑎᖅᑎᑕᐅᕙᑉᐳᖅ ᓯᕗᓪᓕᐅᔾᔭᐅᒃᑲᓐᓂᖅᐸᑦ."
   },
   "referral": {
     "NOT_REFERRED": "ᑐᓂᔭᐅᓯᒪᙱᑦᑐᖅ (ᐱᓕᕆᐊᒃᓴᖅᑕᖃᙱᑦᑐᖅ)",
@@ -162,7 +176,17 @@
       "REFERRAL_ACCEPTED": "ᓴᓇᔨ ᐊᖏᓚᐅᖅᑐᖅ ᑐᓂᔭᐅᔪᒥᒃ",
       "REFERRAL_REJECTED": "ᓴᓇᔨ ᕿᐱᓗᓚᐅᖅᑐᖅ ᑐᓂᔭᐅᔪᒥᒃ. ᐱᔾᔪᑎᖓ: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "ᐊᐅᓚᑦᑎᔨ ᓴᖅᑭᑦᑎᓚᐅᖅᑐᖅ ᐊᔾᔨᖓᓂᒃ ᓴᐳᒻᒥᔭᐅᔾᔪᑎᒥᒃ ᓯᕗᕐᖓᒍᑦ. ᐱᔾᔪᑎᖓ: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "ᐊᐅᓚᑦᑎᔨ ᑐᓂᓯᒃᑲᓐᓂᖅᑐᖅ ᐊᑎᓕᐅᖅᑕᐅᓯᒪᓂᕐᒥᒃ {{from}} ᑕᕝᕗᖓ {{to}} . ᐱᔾᔪᑎᖓ: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "ᐊᐅᓚᑦᑎᔨ ᑐᓂᓯᒃᑲᓐᓂᖅᑐᖅ ᐊᑎᓕᐅᖅᑕᐅᓯᒪᓂᕐᒥᒃ {{from}} ᑕᕝᕗᖓ {{to}} . ᐱᔾᔪᑎᖓ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "ᐊᔾᔨᖓᓂᒃ ᐊᑎᓕᐅᕆᓇᓱᐊᕐᓂᖅ ᐊᓯᐊᓄᑦ ᐱᓕᕆᖃᑎᒧᑦ ᕿᐱᓗᒃᑕᐅᓚᐅᖅᑐᖅ",
+      "BOOKING_CANCELLED": "ᐃᓂᒃᓴᓕᐅᕐᓂᖅ ᓄᖅᑲᖅᑎᑕᐅᕗᖅ. ᐱᔾᔪᑎᖓ: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "ᐊᐅᓚᓂᕐᒧᑦ ᓇᖕᒥᓂᖃᕐᓂᐅᔪᖅ ᐅᑎᖅᑎᑕᐅᕗᖅ ᑲᑐᔾᔨᖃᑎᒧᑦ",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "ᑲᒥᓴᓇᒧᑦ ᐱᔪᓐᓇᕐᓂᖅ ᓄᖅᑲᖅᑎᑕᐅᕗᖅ ᐃᓂᒃᓴᓕᐅᖅᑕᐅᑎᓪᓗᒍ",
+      "COMMISSION_ELIGIBILITY_RESTORED": "ᑲᒥᓴᓇᐅᑉ ᐱᔪᓐᓇᕐᓂᖓ ᐅᑎᖅᑎᑕᐅᕗᖅ ᓄᑖᒧᑦ ᐃᓂᒃᓴᓕᐅᕐᓂᕐᒧᑦ",
+      "OWNERSHIP_DISPUTE_RAISED": "ᐊᓯᐊ ᐱᓕᕆᖃᑎᒋᔭᖓ ᐊᐃᕙᐅᑎᖃᓚᐅᖅᑐᖅ ᓇᖕᒥᓂᖃᕐᓂᕐᒥᒃ ᑖᔅᓱᒥᖓ ᓂᐅᕕᖅᐸᒃᑐᒥᒃ - Leadrat ᐊᐅᓚᑦᑎᔨᖓᑦ ᕿᒥᕐᕈᓂᐊᖅᑐᖅ ᑖᔅᓱᒥᖓ",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "ᓇᖕᒥᓂᖃᕐᓂᕐᒧᑦ ᐊᑲᐅᙱᓕᐅᕈᑕᐅᔪᖅ ᑖᔅᓱᒧᖓ ᓂᐅᕕᖅᐸᒃᑐᒧᑦ ᐲᖅᑕᐅᓚᐅᖅᐳᖅ - ᓇᖕᒥᓂᖃᕐᓂᕆᔭᐃᑦ ᐊᓯᔾᔨᖅᓯᒪᙱᓚᖅ",
+      "OWNERSHIP_DISPUTE_UPHELD": "ᓇᖕᒥᓂᖃᕐᓂᐅᔪᖅ ᐊᑲᐅᙱᓕᐅᕈᑕᐅᔪᖅ ᑖᔅᓱᒧᖓ ᓂᐅᕕᖅᐸᒃᑐᒧᑦ ᕿᒥᕐᕈᔭᐅᓚᐅᖅᐳᖅ - ᓇᖕᒥᓂᖃᕐᓂᕆᔭᐃᑦ ᓇᓗᓇᐃᖅᑕᐅᕗᖅ",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "ᐊᑎᓕᐅᖅᑕᐅᓯᒪᔪᖅ ᓇᖕᒥᓂᖃᕐᓂᕆᔭᐃᑦ ᐊᑲᐅᙱᓕᐅᕈᑎᒋᔭᐃᑦ ᐃᓱᒪᓕᐅᕈᑕᐅᓚᐅᖅᑎᓪᓗᒍ ᐃᓕᖕᓄᑦ ᐃᑲᔪᖅᑐᐃᓪᓗᓂ. ᖃᐅᔨᒪᒋᑦ: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "ᓴᐳᒻᒥᔭᐅᓂᖅ ᐃᓱᓕᓚᐅᖅᑐᖅ: ᓇᖕᒥᓂᖃᕐᓂᕐᒧᑦ ᐊᑲᐅᙱᓕᐅᕈᑕᐅᔪᖅ ᐃᓱᒪᓕᐅᕈᑕᐅᓚᐅᖅᑐᖅ ᐊᓯᐊᓄᑦ ᐱᓕᕆᖃᑎᒋᔭᐅᔪᒧᑦ. ᖃᐅᔨᒪᒋᑦ: {{note}}"
     }
   },
   "columnsPanel": {
@@ -186,5 +210,116 @@
     "INVALID_FOR_COUNTRY": "ᑖᓐᓇ ᐅᖄᓚᐅᑎᐅᑉ ᓈᓴᐅᑎᖓ ᐊᑐᙱᓚᖅ {{country}} .",
     "COUNTRY_MISMATCH": "ᐊᑏ ᓂᕈᐊᕐᓗᒍ ᑕᒻᒪᖅᓯᒪᙱᑦᑐᖅ ᓄᓇᕐᔪᐊᑉ ᓇᓗᓇᐃᒃᑯᑕᖓ.",
     "NOT_MOBILE": "ᐊᑏ ᑎᑎᕋᕐᓗᒍ ᓄᒃᑕᕋᐅᑎᐅᑉ ᓈᓴᐅᑎᖓ, ᓄᓇᒥ ᐅᖄᓚᐅᑎᐅᖏᑦᑐᖅ."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "ᑲᒥᓴᓇ ᐱᔪᓐᓇᖅᑎᑕᐅᔪᖅ",
+      "PENDING": "ᑲᒥᓴᓇ ᐅᑕᖅᑭᔪᖅ",
+      "CANCELLED": "ᑲᒥᓴᓇ ᓄᖅᑲᖅᑎᑕᐅᕗᖅ"
+    },
+    "attribution": {
+      "ATTRIBUTED": "ᐃᓕᖕᓄᑦ ᑐᕌᖓᔪᖅ",
+      "DISPUTED": "ᑐᓂᔭᐅᓂᖓ ᐊᐃᕙᐅᑕᐅᕗᖅ"
+    }
+  },
+  "result": {
+    "none": "ᐊᑎᓕᐅᖅᑕᐅᓯᒪᔪᓂᒃ ᑕᑯᒃᓴᐅᑎᑦᑎᔪᖃᙱᓚᖅ. ᐊᑎᓕᐅᕆᖅᑳᕐᓗᑎᑦ ᓯᕗᓕᖅᑎᐅᓂᐊᖅᑐᒥᒃ.",
+    "acceptedTitle": "ᓯᕗᓕᖅᑎᐅᓂᕐᒧᑦ ᐊᑎᓕᐅᖅᑕᐅᓯᒪᔪᖅ",
+    "rejectedTitle": "ᓯᕗᓕᖅᑎᐅᓂᕐᒧᑦ ᐊᑎᓕᐅᖅᑕᐅᓯᒪᙱᑦᑐᖅ",
+    "protectionWindow": "ᓴᐳᒻᒥᔭᐅᓯᒪᓂᕐᒧᑦ ᐃᒐᓛᖅ",
+    "protectedUntil": "ᓴᐳᔾᔭᐅᓯᒪᔪᖅ ᑎᑭᓪᓗᒍ",
+    "openLead": "ᒪᑐᐃᖓᔪᖅ ᓯᕗᓕᖅᑎ",
+    "addAnother": "ᐃᓚᓯᒃᑲᓐᓂᕆᑦ ᓯᕗᓕᖅᑎᒥᒃ",
+    "duplicate": "ᐊᔾᔨᖓ - ᓴᐳᔾᔭᐅᓯᒪᓕᕇᖅᑐᖅ",
+    "duplicateHint": "ᑖᓐᓇ ᓂᐅᕕᖅᑎᐅᔪᖅ ᓴᐳᔾᔭᐅᓯᒪᓕᕇᖅᑐᖅ ᑖᔅᓱᒧᖓ ᐱᓕᕆᐊᒧᑦ ᐊᓯᐊᒍᑦ ᐊᑎᓕᐅᖅᑕᐅᓯᒪᓂᒃᑯᑦ, ᑕᐃᒪᐃᒻᒪᑦ ᐃᓕᓐᓄᑦ ᐊᑎᓕᐅᖅᑕᐅᔪᓐᓇᓚᐅᙱᓚᖅ.",
+    "existingProtectedUntil": "ᐱᑕᖃᕇᖅᑐᑦ ᐊᑎᓕᐅᖅᑕᐅᓯᒪᓂᖏᑦ ᓴᐳᒻᒥᔭᐅᓯᒪᔪᑦ ᑎᑭᓪᓗᒍ 2020 ."
+  },
+  "disputes": {
+    "title": "ᐊᑲᐅᙱᓕᐅᕈᑎᒃᑲ",
+    "intro": "ᓇᒻᒥᓂᖃᕐᓂᕐᒧᑦ ᐊᑲᐅᙱᓕᐅᕈᑕᐅᔪᑦ ᓴᖅᑭᓚᐅᖅᑕᑎᑦ ᓂᐅᕕᖅᐸᒃᑐᓄᑦ ᕿᐱᓗᒃᑕᐅᓚᐅᖅᑐᓄᑦ ᐊᔾᔨᒌᙱᓐᓂᖏᓐᓄᑦ. Leadrat ᕿᒥᕐᕈᕙᒃᑐᖅ ᐊᑐᓂ.",
+    "empty": "ᐊᑲᐅᙱᓕᐅᕈᑎᓂᒃ ᓴᖅᑭᑦᑎᓯᒪᙱᓚᑎᑦ. ᓂᐅᕕᖅᑎᐅᔪᖅ ᑎᑭᑎᓚᐅᖅᑕᐃᑦ ᐋᒡᒑᖅᑕᐅᑉᐸᑦ ᐊᔾᔨᖓᓂᒃ, ᐊᑭᕋᖅᑐᕈᓐᓇᖅᑕᐃᑦ ᐊᑎᓕᐅᖅᑕᐅᓯᒪᓂᖓᓄᑦ.",
+    "columns": {
+      "dispute": "ᐊᖏᖃᑎᒌᙱᓐᓂᖅ",
+      "reason": "ᐱᔾᔪᑎᒋᔭᐃᑦ",
+      "outcome": "ᖃᓄᐃᓕᖓᓂᖓ"
+    },
+    "status": {
+      "OPEN": "ᕿᒥᕐᕈᔭᐅᕙᓪᓕᐊᔪᖅ",
+      "UPHELD": "ᐃᓕᖕᓂᒃ ᐃᑲᔪᖅᑐᐃᙱᑦᑐᖅ",
+      "OVERTURNED": "ᐃᓱᒪᓕᐅᕈᑕᐅᓯᒪᔪᖅ ᐃᓕᖕᓄᑦ ᐃᑲᔪᖅᑐᐃᓪᓗᓂ",
+      "WITHDRAWN": "ᐲᖅᑕᐅᔪᖅ"
+    },
+    "awaitingReview": "ᐅᑕᖅᑭᔪᖅ ᐊᐅᓚᑦᑎᔨᐅᑉ ᕿᒥᕐᕈᔭᐅᓂᖓᓂᒃ",
+    "openNewLead": "ᒪᑐᐃᕐᓗᒍ ᑐᑭᒧᐊᒍᑎᒋᔭᐃᑦ {{id}}",
+    "withdraw": "ᖁᔭᓈᖅᓯ",
+    "withdrawConfirm": "ᐲᖅᓯᓗᑎᑦ ᐊᑲᐅᙱᓕᐅᕈᑎᒋᔭᕐᓂᒃ {{name}} ? ᒫᓐᓇᐅᔪᖅ ᓇᒻᒥᓂᕆᔭᐅᔪᖅ ᑕᐃᒪᐃᓕᖓᐃᓐᓇᖅᑐᖅ.",
+    "raise": "ᐊᖏᖃᑎᒌᙱᓐᓂᖅ ᓇᖕᒥᓂᖃᕐᓂᕐᒧᑦ",
+    "raiseTitle": "ᐊᖏᖃᑎᒌᙱᓐᓂᖅ ᓇᖕᒥᓂᖃᕐᓂᕐᒧᑦ",
+    "raiseHint": "ᑖᓐᓇ ᓂᐅᕕᖅᑎᐅᔪᖅ ᐃᓕᓐᓄᑦ ᓯᕗᓪᓕᐅᓐᓂᖅᐸᑦ, ᓇᓗᓇᐃᖅᓯᓗᑎᑦ ᓱᒻᒪᑦ. Leadrat ᐊᐅᓚᑦᑎᔨᖓ ᕿᒥᕐᕈᓂᐊᖅᑐᖅ; ᐃᓱᒪᓕᐅᕈᑎᖃᖅᐸᑕ ᐃᓕᓐᓂᒃ ᐃᑲᔪᖅᑐᐃᓗᑎᒃ, ᓯᕗᓕᖅᑎᐅᔪᖅ ᐃᓕᓐᓄᑦ ᐊᑎᓕᐅᖅᑕᐅᓯᒪᕗᖅ.",
+    "reasonLabel": "ᓱᒻᒪᑦ ᑖᓐᓇ ᓂᐅᕕᖅᑎᐅᔪᖅ ᐃᓕᔅᓯᓐᓄᑦ?",
+    "reasonMin_one": "ᒥᑭᓛᖑᔪᖅ {{count}} ᑎᑎᕋᖅᓯᒪᔪᖅ.",
+    "reasonMin_two": "ᒥᑭᓛᖑᔪᖅ {{count}} ᑎᑎᕋᖅᓯᒪᔪᑦ.",
+    "reasonMin_other": "ᒥᑭᓛᖑᔪᖅ {{count}} ᑎᑎᕋᖅᓯᒪᔪᑦ.",
+    "submit": "ᓇᒃᓯᐅᔾᔨᓂᖅ ᐊᑲᐅᙱᓕᐅᕈᑎᒥᒃ",
+    "notProtected": "ᑭᓇᑐᐃᓐᓇᖅ ᓴᐳᔾᔨᓯᒪᒍᓐᓃᕐᒪᑦ ᑖᔅᓱᒥᖓ ᓂᐅᕕᖅᐸᒃᑐᒥᒃ ᑖᔅᓱᒧᖓ ᐱᓕᕆᐊᒧᑦ - ᐊᑎᓕᐅᕈᓐᓇᖅᓯᕗᑎᑦ ᒫᓐᓇᐅᔪᖅ.",
+    "raised": "ᐊᑲᐅᙱᓕᐅᕈᑕᐅᔪᖅ {{id}} ᓇᒃᓯᐅᔾᔭᐅᔪᖅ ᕿᒥᕐᕈᔭᐅᖁᓪᓗᒍ.",
+    "viewAll": "ᑕᑯᒋᐊᕐᓗᒋᑦ ᐊᑲᐅᙱᓕᐅᕈᑎᒃᑲ"
+  },
+  "dashboard": {
+    "title": "ᖃᕋᓴᐅᔭᒃᑯᑦ ᑎᑎᕋᕐᕕᒃ",
+    "period": "ᓄᖅᑲᕈᑎ",
+    "lastDays_one": "{{count}} ᐅᓪᓗᖅ",
+    "lastDays_two": "{{count}} ᐅᓪᓗᐃᑦ",
+    "lastDays_other": "{{count}} ᐅᓪᓗᐃᑦ",
+    "emptyTitle": "ᑐᙵᓱᒋᑦ! ᓱᓕ ᑐᑭᓯᒋᐊᕈᑎᒃᓴᖃᙱᓚᑎᑦ.",
+    "emptyHint": "ᐊᑎᓕᐅᕆᑦ ᓯᕗᓪᓕᖅᐹᒥ ᓯᕗᓕᖅᑎᐅᓂᐊᖅᑐᒥᒃ - ᓱᓪᓗᓕᒃ, ᐃᓂᒃᓴᓕᐅᕐᓂᖅ ᐊᒻᒪ ᓴᐳᒻᒥᔭᐅᓯᒪᓂᕐᒧᑦ ᐃᓱᓕᕝᕕᒃᓴᐃᑦ ᑕᑯᒃᓴᐅᓂᐊᖅᐳᑦ ᐅᕙᓂ.",
+    "tiles": {
+      "leads": "ᑲᑎᖦᖢᒋᑦ ᑐᕌᒐᒃᓴᑦ",
+      "newInPeriod_one": "{{count}} ᓄᑖᖅ ᑕᕝᕙᓂ ᐊᑯᓂᐅᑎᒋᔪᒥ",
+      "newInPeriod_two": "{{count}} ᓄᑖᖅ ᑕᕝᕙᓂ ᐊᑯᓂᐅᑎᒋᔪᒥ",
+      "newInPeriod_other": "{{count}} ᓄᑖᖅ ᑕᕝᕙᓂ ᐊᑯᓂᐅᑎᒋᔪᒥ",
+      "accepted": "ᐊᖏᖅᑕᐅᓯᒪᔪᖅ",
+      "booked": "ᐃᓂᒃᓴᓕᐅᖅᑕᐅᓯᒪᔪᖅ",
+      "bookedInPeriod_one": "{{count}} ᐃᓂᒃᓴᓕᐅᖅᑕᐅᓯᒪᔪᑦ ᑕᕝᕙᓂ ᐱᕕᒃᓴᒥ",
+      "bookedInPeriod_two": "{{count}} ᐃᓂᒃᓴᓕᐅᖅᑕᐅᓯᒪᔪᑦ ᑕᕝᕙᓂ ᐱᕕᒃᓴᒥ",
+      "bookedInPeriod_other": "{{count}} ᐃᓂᒃᓴᓕᐅᖅᑕᐅᓯᒪᔪᑦ ᑕᕝᕙᓂ ᐱᕕᒃᓴᒥ",
+      "conversion": "ᐊᓯᔾᔨᖅᑕᐅᓂᖓ",
+      "conversionHint": "ᐋᖅᑭᒃᑕᐅᓯᒪᔪᑦ ᑐᕌᒐᒃᓴᐃᑦ ᑲᑐᔾᔭᐅᓪᓗᑎᒃ ᐊᖏᖅᑕᐅᓯᒪᔪᓄᑦ ᑐᕌᒐᒃᓴᓄᑦ",
+      "protectedNow": "ᓴᐳᔾᔭᐅᓯᒪᔪᖅ ᒫᓐᓇ",
+      "expiringSoon_one": "ᓴᐳᔾᔭᐅᓯᒪᔪᖅ ᐃᓱᓕᕝᕕᖃᖅᑐᖅ {{count}} ᐅᓪᓗᖅ",
+      "expiringSoon_two": "ᓴᐳᔾᔭᐅᓯᒪᓂᖅ ᐃᓱᓕᕝᕕᓕᒃ {{count}} ᐅᓪᓗᐃᑦ",
+      "expiringSoon_other": "ᓴᐳᔾᔭᐅᓯᒪᓂᖅ ᐃᓱᓕᕝᕕᓕᒃ {{count}} ᐅᓪᓗᐃᑦ",
+      "disputedNow": "ᐊᐃᕙᔾᔪᑕᐅᔪᖅ ᐊᓯᖏᓐᓄᑦ",
+      "disputedNowHint": "ᓯᕗᓕᖅᑎᐅᓂᑎᑦ ᒪᑐᐃᖓᔪᒥᒃ ᓇᖕᒥᓂᖃᕐᓂᕐᒥᒃ ᐊᑲᐅᙱᓕᐅᕈᑎᖃᕐᓂᕐᒥᒃ ᐊᓯᐊᓂᒃ ᐱᓕᕆᖃᑎᒋᔭᕐᓂᒃ",
+      "commissionEligible": "ᑲᒥᓴᓇ ᐱᔪᓐᓇᖅᑎᑕᐅᔪᖅ",
+      "commissionCancelled_one": "{{count}} ᖁᔭᓈᖅᑕᐅᔪᖅ",
+      "commissionCancelled_two": "{{count}} ᖁᔭᓈᖅᑕᐅᔪᖅ",
+      "commissionCancelled_other": "{{count}} ᖁᔭᓈᖅᑕᐅᔪᖅ"
+    },
+    "chart": {
+      "title_one": "ᐊᑎᓕᐅᖅᑕᐅᔪᑦ ᐊᒻᒪᓗ ᐃᓂᒃᓴᓕᐅᖅᑕᐅᔪᑦ ᐅᓪᓗᑕᒫᑦ - ᑭᖑᓪᓕᖅᐹᖅ {{count}} ᐅᓪᓗᖅ",
+      "title_two": "ᐊᑎᓕᐅᖅᑕᐅᔪᑦ ᐊᒻᒪᓗ ᐃᓂᒃᓴᓕᐅᖅᑕᐅᔪᑦ ᐅᓪᓗᑕᒫᑦ - ᑭᖑᓪᓕᖅᐹᑦ {{count}} ᐅᓪᓗᐃᑦ",
+      "title_other": "ᐊᑎᓕᐅᖅᑕᐅᔪᑦ ᐊᒻᒪᓗ ᐃᓂᒃᓴᓕᐅᖅᑕᐅᔪᑦ ᐅᓪᓗᑕᒫᑦ - ᑭᖑᓪᓕᖅᐹᑦ {{count}} ᐅᓪᓗᐃᑦ",
+      "registrations": "ᐊᑎᓕᐅᖅᑕᐅᔪᑦ",
+      "bookings": "ᐃᓂᒃᓴᓕᐅᕐᓂᖅ"
+    },
+    "byStage": "ᓯᕗᓕᖅᑎᐅᕗᑦ ᖃᓄᐃᓕᖓᓂᖏᑎᒍᑦ",
+    "bySource": "ᓯᕗᓕᖅᑎᐅᔪᑦ ᓇᑭᙶᕐᓂᖏᑦ ᒪᓕᒃᖢᒋᑦ",
+    "byReferral": "ᓯᕗᓕᖅᑎᐅᕗᖅ ᑐᓂᔭᐅᓂᖏᓐᓄᑦ ᖃᓄᐃᓕᖓᓂᖏᓐᓄᑦ",
+    "myDisputes": "ᐊᑲᐅᙱᓕᐅᕈᑏᑦ ᓴᖅᑭᓚᐅᖅᑕᑎᑦ",
+    "noDisputes": "ᐊᑲᐅᙱᓕᐅᕈᑎᑕᖃᙱᓚᖅ.",
+    "unknown": "ᐋᖅᑭᒃᑕᐅᓯᒪᙱᑦᑐᖅ",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "ᓯᓚᑖᓂ CRM (ᐊᔾᔨᓕᐅᕆᓂᖅ)",
+      "PARTNER_CRM": "ᐃᓚᓕᐅᔾᔭᐅᓯᒪᔪᖅ ᐃᓕᔅᓯᓐᓄᑦ",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "ᑲᑎᑕᐅᓂᖏᑦ",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "ᓴᐳᒻᒥᔭᐅᔾᔪᑎ ᐃᓱᓕᓐᓂᐊᖅᑐᖅ ᑭᖑᓪᓕᕐᒥ {{count}} ᐅᓪᓗᕐᒥ",
+    "expiringTitle_two": "ᓴᐳᒻᒥᔭᐅᔾᔪᑎ ᐃᓱᓕᓐᓂᐊᖅᑐᖅ ᑭᖑᓪᓕᕐᒥ {{count}} ᐅᓪᓗᓂ",
+    "expiringTitle_other": "ᓴᐳᒻᒥᔭᐅᔾᔪᑎ ᐃᓱᓕᓐᓂᐊᖅᑐᖅ ᑭᖑᓪᓕᕐᒥ {{count}} ᐅᓪᓗᓂ",
+    "expiringEmpty": "ᓴᐳᒻᒥᔭᐅᔾᔪᑎᒥᓂᒃ ᔭᒐᐃᔪᖃᙱᓚᖅ ᑕᕝᕙᓂ ᐃᒐᓛᒥ."
   }
 }

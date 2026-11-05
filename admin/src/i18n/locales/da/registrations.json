@@ -49,8 +49,73 @@
       "newPartnerId": "Nyt partner ID",
       "reason": "Årsag (påkrævet)",
       "apply": "Anvend tilsidesættelse",
-      "applying": "Ansøger..."
+      "applying": "Ansøger...",
+      "cancelBookingHint": "Annullering markerer reservationen og dens kommission som annulleret, returnerer operationelt ejerskab til partneren og lader bygherren booke dette kundeemne igen.",
+      "cancelBookingConfirm": "Vil du annullere denne reservation? Dens provision er også annulleret. Dette logges med dit navn og årsag."
     },
-    "timelineTitle": "Revisionstidslinje (denne registrering)"
+    "timelineTitle": "Revisionstidslinje (denne registrering)",
+    "bookingStatus": "Bestillingsstatus",
+    "commissionAttribution": "Kommissionen Tilskrivning",
+    "disputeOpen": "En ejertvist er åben for denne kunde - en anden partner siger, at den er deres. Det afgøres på siden Tvister.",
+    "viewDisputes": "Se tvister",
+    "cancellation": {
+      "title": "Booking annulleret",
+      "hint": "Reservationen og dens kommission annulleres; det operationelle ejerskab er tilbage hos partneren, og bygherren kan booke dette kundeemne igen.",
+      "at": "Aflyst kl",
+      "by": "Aflyst af",
+      "reason": "Årsag"
+    }
+  },
+  "disputes": {
+    "title": "Ejerskabstvister",
+    "hint": "En partner, hvis registrering blev afvist som en duplikat, kan bestride, hvem der ejer kunden. Gennemgå begge sider og afgør.",
+    "statusFilter": "Tvist status",
+    "allStatuses": "Alle statusser",
+    "empty": "Ingen tvister med denne status.",
+    "columns": {
+      "dispute": "Bestride",
+      "customer": "Kunde",
+      "project": "Projekt",
+      "raisedBy": "Opvokset af",
+      "heldBy": "Nuværende ejer",
+      "status": "Status",
+      "raisedAt": "Opvokset på"
+    },
+    "detail": {
+      "title": "Bestridelse {{id}}",
+      "raisedOn": "Opvokset {{date}}",
+      "raisingTitle": "Opvokset af",
+      "holderTitle": "Nuværende ejer",
+      "partner": "Partner",
+      "raisedBy": "Indsendt af",
+      "customerName": "Kunde",
+      "mobile": "Mobil",
+      "alternateMobile": "Alternativ mobil",
+      "email": "E-mail",
+      "project": "Projekt",
+      "reason": "Deres grund",
+      "registration": "Registrering",
+      "registeredAt": "Registreret d",
+      "referral": "Henvisning",
+      "heldMissing": "Den tilbageholdte registrering kunne ikke findes.",
+      "resolutionTitle": "Afgørelse",
+      "outcome": "Resultat",
+      "note": "Note",
+      "decidedBy": "Besluttet af",
+      "decidedAt": "Besluttede sig for",
+      "newRegistration": "Ny registrering",
+      "decideTitle": "Afgør denne tvist",
+      "noteLabel": "Note, der forklarer beslutningen (påkrævet)",
+      "noteRequired": "Skriv en note for at bestemme.",
+      "uphold": "opretholde",
+      "overturn": "Vælte",
+      "upholdEffect": "{{holder}} beholder kunden. Tvisten er afsluttet, og intet andet ændrer sig.",
+      "overturnEffect": "{{holder}} 's duplikatbeskyttelse slutter nu, og kunden er registreret for {{partner}} som en ny registrering.",
+      "heldBookedHelp": "Denne kunde er booket gennem den nuværende ejer. Annuller den reservation først (Admin Tilsidesættelse af registreringen), og vælt derefter:",
+      "confirmTitle": "Er du sikker?",
+      "confirmUphold": "Ja, hold op",
+      "confirmOverturn": "Ja, vælte",
+      "back": "Tilbage til Tvister"
+    }
   }
 }

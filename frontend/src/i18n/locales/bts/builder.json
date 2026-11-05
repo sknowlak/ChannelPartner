@@ -30,7 +30,8 @@
       "registered": "Domma tardaftar"
     },
     "booked": "Domma ipesan",
-    "empty": "Lang dong ope rujukan."
+    "empty": "Lang dong ope rujukan.",
+    "bookingCancelled": "Pemesanan ibatasi"
   },
   "detail": {
     "customer": "Pamboli",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Pemesanan domma isahkon.",
       "accepted": "Rujukan domma ijalo.",
-      "rejected": "Rujukan itulak."
+      "rejected": "Rujukan itulak.",
+      "bookingCancelled": "Pemesanan ibatasi."
     },
-    "backToReferrals": "Mulak hubani Rujukan"
+    "backToReferrals": "Mulak hubani Rujukan",
+    "bookingCancelled": "Pemesanan ibatasi",
+    "cancelBooking": "Batalhon Pemesanan",
+    "cancelReasonLabel": "Alasan mambatalhon (ipatuduh hubani mitra) *",
+    "cancelBookingHint": "Kepemilikan operasional mulak hubani mitra janah kelayakan komisi ni sidea ibatasi. Lead boi ipesan use i pudian ni ari.",
+    "cancelBookingConfirm": "Batalhon ma pemesanan ai"
   },
   "history": {
     "title": "Turi turian",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisi domma ibahen",
       "HANDOVER_COMPLETED": "Penyerahan domma salosei",
       "ADMIN_PROTECTION_RELEASED": "Admin padaskon perlindungan duplikat humbani mungkahni. Alasan: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin mambahen pendaftaran use humbani {{from}} hu {{to}} . Alasan: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin mambahen pendaftaran use humbani {{from}} hu {{to}} . Alasan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Upaya pendaftaran duplikat humbani mitra na legan itulak",
+      "BOOKING_CANCELLED": "Pemesanan ibatasi. Alasan: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Kepemilikan operasional iulakkon hubani mitra",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kelayakan komisi ibatasi pakon pemesanan",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kelayakan komisi iulakkon bani pemesanan na baru"
     }
   }
 }

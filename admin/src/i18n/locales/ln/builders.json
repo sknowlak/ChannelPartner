@@ -43,7 +43,9 @@
       "name": "Nkombo",
       "city": "Engumba",
       "status": "Statut",
-      "actions": "Misala"
+      "actions": "Misala",
+      "protection": "Bobateli ya kosala ba doublons",
+      "matchOn": "Ba doublons ezo correspondre na"
     },
     "closeReferrals": "Bokanga mpo na ba références",
     "reopen": "Fungola lisusu",
@@ -55,6 +57,25 @@
       "add": "Bakisa Projet",
       "created": "Esalemi {{name}} ."
     },
-    "back": "Kozonga na Batongi"
+    "back": "Kozonga na Batongi",
+    "protection": {
+      "days_one": "{{count}} mokolo",
+      "days_other": "{{count}} mikolo",
+      "globalDays_one": "Mokolo ya mokili mobimba ( {{count}} mokolo)",
+      "globalDays_other": "Mikolo ya mokili mobimba ( {{count}} mikolo)",
+      "globalDefault": "Défaut ya mokili mobimba",
+      "placeholder": "Mikolo ya bobateli (mpamba = default mondial) .",
+      "saved": "Bobateli ya mbala mibale ebongwani mpo na {{name}} .",
+      "hint": "Bobateli ya kozongela: mikolo 1-3650, to tika mpamba mpo na kosalela default ya mokili mobimba uta na Paramètres. Mbongwana etali kaka ba inscriptions ya sika - oyo ezali ebatelaka expiration na yango."
+    },
+    "matching": {
+      "global": "Défaut ya mokili mobimba",
+      "globalWith": "Liboso ya mokili mobimba ( {{fields}} ) .",
+      "mobile": "Nimero ya telefone ya mabɔkɔ",
+      "email": "Email na nzela ya email",
+      "both": "Numéro ya téléphone portable + email",
+      "saved": "Bokokani ya mibale ebongwani mpo na {{name}}",
+      "hint": "Ba détails nini esalaka que ba enregistrements mibale ezala client moko pona projet moko. Mbongwana etali ba chèques doubles kobanda sikoyo; bobateli oyo ezali naino esimbami te."
+    }
   }
 }

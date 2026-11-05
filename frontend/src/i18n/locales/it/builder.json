@@ -31,7 +31,8 @@
       "registered": "Registrato"
     },
     "booked": "Prenotato",
-    "empty": "Nessun riferimento ancora."
+    "empty": "Nessun riferimento ancora.",
+    "bookingCancelled": "Prenotazione annullata"
   },
   "detail": {
     "customer": "Cliente",
@@ -54,9 +55,15 @@
     "notice": {
       "booked": "Prenotazione confermata.",
       "accepted": "Rinvio accettato.",
-      "rejected": "Rinvio rifiutato."
+      "rejected": "Rinvio rifiutato.",
+      "bookingCancelled": "Prenotazione annullata."
     },
-    "backToReferrals": "Torniamo ai Referral"
+    "backToReferrals": "Torniamo ai Referral",
+    "bookingCancelled": "Prenotazione annullata",
+    "cancelBooking": "Annulla prenotazione",
+    "cancelReasonLabel": "Motivo dell'annullamento (mostrato al partner) *",
+    "cancelBookingHint": "La proprietà operativa torna al partner e la sua idoneità alla commissione viene annullata. Il vantaggio può essere prenotato nuovamente in seguito.",
+    "cancelBookingConfirm": "Annulla la prenotazione"
   },
   "history": {
     "title": "Storia",
@@ -87,7 +94,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Idoneità alla Commissione creata",
       "HANDOVER_COMPLETED": "Consegna completata",
       "ADMIN_PROTECTION_RELEASED": "L'amministratore ha rilasciato in anticipo la protezione duplicata. Motivo: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "L'amministratore ha riassegnato la registrazione da {{from}} a {{to}} . Motivo: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "L'amministratore ha riassegnato la registrazione da {{from}} a {{to}} . Motivo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Un tentativo di registrazione duplicato da parte di un altro partner è stato rifiutato",
+      "BOOKING_CANCELLED": "Prenotazione annullata. Motivo: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "La proprietà operativa è stata restituita al partner",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Idoneità alla commissione annullata con la prenotazione",
+      "COMMISSION_ELIGIBILITY_RESTORED": "L'idoneità della commissione è stata ripristinata per la nuova prenotazione"
     }
   }
 }

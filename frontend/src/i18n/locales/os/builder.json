@@ -30,7 +30,8 @@
       "registered": "Регистрацигонд"
     },
     "booked": "Бронгонд",
-    "empty": "Нырма æрвыст нæй."
+    "empty": "Нырма æрвыст нæй.",
+    "bookingCancelled": "Брон кæнын æрцыд æрæхгæд"
   },
   "detail": {
     "customer": "Клиент",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Брон кæнын сбæлвырд.",
       "accepted": "Æрвыст æрцыд райст.",
-      "rejected": "Æрвитæггаг нæ райстой."
+      "rejected": "Æрвитæггаг нæ райстой.",
+      "bookingCancelled": "Брон кæнын æрцыд æрæхгæд."
     },
-    "backToReferrals": "Фæстæмæ æрвитæнтæм"
+    "backToReferrals": "Фæстæмæ æрвитæнтæм",
+    "bookingCancelled": "Брон кæнын æрцыд æрæхгæд",
+    "cancelBooking": "Брон кæнын ныууадзын",
+    "cancelReasonLabel": "Æрурæды аххосаг (æвдыст цæуы партнерæн) *",
+    "cancelBookingHint": "Операцион хицаудзинад фæстæмæ ацæуы партнермæ æмæ сæ къамисы бартæ æрцæуынц аннулиргонд. Фæстæдæр ногæй æрбадæттæн ис гæнæн.",
+    "cancelBookingConfirm": "Брон кæнын ныууадзын"
   },
   "history": {
     "title": "Истори",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Къамисы бартæ арæзт æрцыдысты",
       "HANDOVER_COMPLETED": "Æххæстгонд æрцыд",
       "ADMIN_PROTECTION_RELEASED": "Админ рагацау рауагъта дубликаты хъахъхъæнынад. Аххосаг: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Админ ногæй снысан кодта регистраци {{from}} -æй {{to}} . Аххосаг: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Админ ногæй снысан кодта регистраци {{from}} -æй {{to}} . Аххосаг: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Æндæр партнеры дывæр регистрацийы бафæлвæрд нæ райстой",
+      "BOOKING_CANCELLED": "Брон кæнын æрцыд æрæхгæд. Аххосаг: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Операцион хицаудзинад æрыздæхт партнермæ",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Къамисы бартæ æрцыдысты аннулиргонд брон кæнынимæ",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ног брон кæныны тыххæй къамисы бартæ сног сты"
     }
   }
 }

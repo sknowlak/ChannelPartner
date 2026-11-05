@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "ବୁକ୍ ହୋଇଛି |",
-    "pending": "ବିଚାରାଧୀନ ଅଛି"
+    "pending": "ବିଚାରାଧୀନ ଅଛି",
+    "status": {
+      "CONFIRMED": "ବୁକ୍ ହୋଇଛି |",
+      "CANCELLED": "ବୁକିଂ ବାତିଲ ହୋଇଛି |"
+    }
   },
   "assign": {
     "unassigned": "ଅଣସଂରକ୍ଷିତ |",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "ଏପର୍ଯ୍ୟନ୍ତ କ project ଣସି ପ୍ରକଳ୍ପ ନାହିଁ (ରେଫର୍ ହୋଇନାହିଁ)",
-    "notInList": "{{project}} (ପ୍ରକଳ୍ପ ତାଲିକାରେ ନୁହେଁ)"
+    "notInList": "{{project}} (ପ୍ରକଳ୍ପ ତାଲିକାରେ ନୁହେଁ)",
+    "protectionDays_one": "{{count}} ଦିନିକିଆ ସୁରକ୍ଷା |",
+    "protectionDays_other": "{{count}} ଦିନିକିଆ ସୁରକ୍ଷା |"
   },
   "journey": {
     "customer": "ଗ୍ରାହକ",
@@ -76,7 +82,14 @@
     "progressHistory": "ପ୍ରଗତି ଇତିହାସ |",
     "timesIn": "( {{timezone}} ରେ ସମୟ)",
     "backToMyLeads": "ମୋ ନେତୃତ୍ୱକୁ ଫେରନ୍ତୁ |",
-    "editLead": "ଲିଡ୍ ସଂପାଦନ କରନ୍ତୁ |"
+    "editLead": "ଲିଡ୍ ସଂପାଦନ କରନ୍ତୁ |",
+    "disputeBanner": "ଅନ୍ୟ ଜଣେ ଅଂଶୀଦାର ଏହି ଗ୍ରାହକଙ୍କ ମାଲିକାନାକୁ ନେଇ ବିବାଦ ସୃଷ୍ଟି କରିଛନ୍ତି | ଜଣେ Leadrat ଆଡମିନି ଏହାକୁ ସମୀକ୍ଷା କରୁଛନ୍ତି - ଯେପର୍ଯ୍ୟନ୍ତ ସେମାନେ ନିଷ୍ପତ୍ତି ନେବେ ସେ ପର୍ଯ୍ୟନ୍ତ ଆପଣଙ୍କର ସୁରକ୍ଷା ରହିଥାଏ |",
+    "booking": "ବୁକିଂ",
+    "commission": "ଆୟୋଗ",
+    "notBooked": "ବୁକ୍ ହୋଇନାହିଁ |",
+    "cancelledOn": "{{date}} on ରେ ବାତିଲ୍ |",
+    "cancelReason": "କାରଣ: {{reason}}",
+    "cancelledHint": "ବିଲଡର ବୁକିଂକୁ ବାତିଲ କରିଦେଲେ - କାର୍ଯ୍ୟକ୍ଷମ ମାଲିକାନା ଆପଣଙ୍କ ସହିତ ଫେରି ଆସିଛି ଏବଂ କମିଶନ ଯୋଗ୍ୟତା ବାତିଲ ହୋଇଛି | ଯଦି ଲିଡ୍ ପୁନର୍ବାର ବୁକ୍ ହୁଏ ତେବେ ଏହା ପୁନ restored ସ୍ଥାପିତ ହୁଏ |"
   },
   "referral": {
     "NOT_REFERRED": "ରେଫର୍ ହୋଇନାହିଁ (କ project ଣସି ପ୍ରୋଜେକ୍ଟ ନାହିଁ)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "ବିଲଡର୍ ରେଫରାଲ୍ ଗ୍ରହଣ କଲେ |",
       "REFERRAL_REJECTED": "ବିଲଡର ରେଫରାଲକୁ ପ୍ରତ୍ୟାଖ୍ୟାନ କଲେ | କାରଣ: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "ଆଡମିନ୍ ନକଲ ସୁରକ୍ଷା ଶୀଘ୍ର ମୁକ୍ତ କଲା | କାରଣ: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "ଆଡମିନ୍ ପଞ୍ଜିକରଣକୁ {{from}} ରୁ {{to}} ପର୍ଯ୍ୟନ୍ତ ପୁନ ass ନିଯୁକ୍ତ କଲେ | କାରଣ: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "ଆଡମିନ୍ ପଞ୍ଜିକରଣକୁ {{from}} ରୁ {{to}} ପର୍ଯ୍ୟନ୍ତ ପୁନ ass ନିଯୁକ୍ତ କଲେ | କାରଣ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "ଅନ୍ୟ ଜଣେ ସହଯୋଗୀଙ୍କ ଦ୍ୱାରା ନକଲ ପ registration ୍ଜୀକରଣ ଉଦ୍ୟମ ପ୍ରତ୍ୟାଖ୍ୟାନ କରାଯାଇଥିଲା",
+      "BOOKING_CANCELLED": "ବୁକିଂ ବାତିଲ ହୋଇଛି | କାରଣ: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "ଅପରେସନ ମାଲିକାନା ସାଥୀକୁ ଫେରିଗଲା |",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "ବୁକିଂ ସହିତ ଆୟୋଗର ଯୋଗ୍ୟତା ବାତିଲ ହୋଇଛି |",
+      "COMMISSION_ELIGIBILITY_RESTORED": "ନୂତନ ବୁକିଂ ପାଇଁ ଆୟୋଗର ଯୋଗ୍ୟତା ପୁନ restored ସ୍ଥାପିତ ହୋଇଛି |",
+      "OWNERSHIP_DISPUTE_RAISED": "ଅନ୍ୟ ଜଣେ ଅଂଶୀଦାର ଏହି ଗ୍ରାହକଙ୍କ ବିବାଦୀୟ ମାଲିକାନା - ଜଣେ Leadrat ଆଡମିନି ଏହାକୁ ସମୀକ୍ଷା କରିବେ |",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "ଏହି ଗ୍ରାହକଙ୍କ ଉପରେ ମାଲିକାନା ବିବାଦ ପ୍ରତ୍ୟାହାର ହେଲା - ଆପଣଙ୍କର ମାଲିକାନା ଅପରିବର୍ତ୍ତିତ |",
+      "OWNERSHIP_DISPUTE_UPHELD": "ଏହି ଗ୍ରାହକଙ୍କ ଉପରେ ମାଲିକାନା ବିବାଦର ସମୀକ୍ଷା କରାଯାଇଥିଲା - ଆପଣଙ୍କର ମାଲିକାନା ନିଶ୍ଚିତ ହୋଇଛି |",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "ତୁମର ସପକ୍ଷରେ ତୁମର ମାଲିକାନା ବିବାଦ ସ୍ଥିର ହେବା ପରେ ପଞ୍ଜିକୃତ | ଟିପ୍ପଣୀ: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "ସୁରକ୍ଷା ସମାପ୍ତ ହେଲା: ଅନ୍ୟ ମାଲିକଙ୍କ ସପକ୍ଷରେ ଏକ ମାଲିକାନା ବିବାଦ ସ୍ଥିର ହେଲା | ଟିପ୍ପଣୀ: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "ଏହି ଫୋନ୍ ନମ୍ବର {{country}} for ପାଇଁ ବ valid ଧ ନୁହେଁ |",
     "COUNTRY_MISMATCH": "ଦୟାକରି ସଠିକ୍ ଦେଶ କୋଡ୍ ଚୟନ କରନ୍ତୁ |",
     "NOT_MOBILE": "ଦୟାକରି ଏକ ମୋବାଇଲ୍ ନମ୍ବର ପ୍ରବେଶ କରନ୍ତୁ, ଏକ ଲ୍ୟାଣ୍ଡଲାଇନ ନୁହେଁ |"
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "ଆୟୋଗ ଯୋଗ୍ୟ",
+      "PENDING": "ଆୟୋଗ ବିଚାରାଧୀନ ଅଛି",
+      "CANCELLED": "ଆୟୋଗ ବାତିଲ ହୋଇଛି |"
+    },
+    "attribution": {
+      "ATTRIBUTED": "ତୁମ ପାଇଁ ଗୁଣବତ୍ତା |",
+      "DISPUTED": "ଗୁଣ ବିବାଦ |"
+    }
+  },
+  "result": {
+    "none": "ଦେଖାଇବାକୁ କ registration ଣସି ପଞ୍ଜୀକରଣ ଫଳାଫଳ ନାହିଁ | ପ୍ରଥମେ ଏକ ଲିଡ୍ ପଞ୍ଜିକରଣ କର |",
+    "acceptedTitle": "ଲିଡ୍ ପଞ୍ଜିକୃତ |",
+    "rejectedTitle": "ଲିଡ୍ ପଞ୍ଜିକୃତ ନୁହେଁ |",
+    "protectionWindow": "ସୁରକ୍ଷା ୱିଣ୍ଡୋ |",
+    "protectedUntil": "ପର୍ଯ୍ୟନ୍ତ ସୁରକ୍ଷିତ |",
+    "openLead": "ଲିଡ୍ ଖୋଲନ୍ତୁ |",
+    "addAnother": "ଅନ୍ୟ ଏକ ଲିଡ୍ ଯୋଡନ୍ତୁ |",
+    "duplicate": "ନକଲ - ପୂର୍ବରୁ ସୁରକ୍ଷିତ |",
+    "duplicateHint": "ଏହି ଗ୍ରାହକ ଅନ୍ୟ ଏକ ପଞ୍ଜୀକରଣ ଦ୍ୱାରା ଏହି ପ୍ରକଳ୍ପ ପାଇଁ ପୂର୍ବରୁ ସୁରକ୍ଷିତ, ତେଣୁ ଏହା ଆପଣଙ୍କ ପାଇଁ ପଞ୍ଜୀକୃତ ହୋଇପାରିବ ନାହିଁ |",
+    "existingProtectedUntil": "ବିଦ୍ୟମାନ ପଞ୍ଜୀକରଣ ପର୍ଯ୍ୟନ୍ତ ସୁରକ୍ଷିତ ଅଛି |"
+  },
+  "disputes": {
+    "title": "ମୋର ବିବାଦ |",
+    "intro": "ଗ୍ରାହକଙ୍କ ପାଇଁ ମାଲିକାନା ବିବାଦ ଯାହା ତୁମେ ନକଲ ଭାବରେ ପ୍ରତ୍ୟାଖ୍ୟାନ କରାଯାଇଥିଲା | ଜଣେ Leadrat ଆଡମିନି ପ୍ରତ୍ୟେକଙ୍କୁ ସମୀକ୍ଷା କରନ୍ତି |",
+    "empty": "ଆପଣ କ any ଣସି ବିବାଦ ଉଠାଇ ନାହାଁନ୍ତି। ଯଦି ଆପଣ ଆଣିଥିବା ଗ୍ରାହକ ନକଲ ଭାବରେ ମନା କରନ୍ତି, ତେବେ ଆପଣ ଏହାକୁ ପଞ୍ଜୀକରଣ ଫଳାଫଳରୁ ବିବାଦ କରିପାରିବେ |",
+    "columns": {
+      "dispute": "ବିବାଦ |",
+      "reason": "ତୁମର କାରଣ",
+      "outcome": "ଫଳାଫଳ"
+    },
+    "status": {
+      "OPEN": "ସମୀକ୍ଷା ଅଧୀନରେ |",
+      "UPHELD": "ଆପଣଙ୍କ ସପକ୍ଷରେ ନୁହେଁ",
+      "OVERTURNED": "ଆପଣଙ୍କ ସପକ୍ଷରେ ନିଷ୍ପତ୍ତି ହୋଇଛି",
+      "WITHDRAWN": "ପ୍ରତ୍ୟାହାର"
+    },
+    "awaitingReview": "ଆଡମିନି ସମୀକ୍ଷା ପାଇଁ ଅପେକ୍ଷା |",
+    "openNewLead": "ତୁମର ଲିଡ୍ {{id}} ଖୋଲ |",
+    "withdraw": "ପ୍ରତ୍ୟାହାର",
+    "withdrawConfirm": "{{name}} for ପାଇଁ ତୁମର ବିବାଦ ପ୍ରତ୍ୟାହାର କର? ବର୍ତ୍ତମାନର ମାଲିକାନା ଯେପରି ରହିଥାଏ |",
+    "raise": "ବିବାଦ ମାଲିକାନା |",
+    "raiseTitle": "ବିବାଦ ମାଲିକାନା |",
+    "raiseHint": "ଯଦି ଏହି ଗ୍ରାହକ ପ୍ରଥମେ ଆପଣଙ୍କ ନିକଟକୁ ଆସିଲେ, ଏହାର କାରଣ ବୁ explain ାନ୍ତୁ | ଜଣେ Leadrat ଆଡମିନି ଏହାକୁ ସମୀକ୍ଷା କରିବେ; ଯଦି ସେମାନେ ତୁମ ସପକ୍ଷରେ ନିଷ୍ପତ୍ତି ନିଅନ୍ତି, ଲିଡ୍ ତୁମ ପାଇଁ ପଞ୍ଜିକୃତ |",
+    "reasonLabel": "ଏହି ଗ୍ରାହକ ତୁମର କାହିଁକି?",
+    "reasonMin_one": "ଅତିକମରେ {{count}} ବର୍ଣ୍ଣ |",
+    "reasonMin_other": "ଅତିକମରେ {{count}} ବର୍ଣ୍ଣଗୁଡିକ |",
+    "submit": "ବିବାଦ ପଠାନ୍ତୁ |",
+    "notProtected": "ଏହି ପ୍ରୋଜେକ୍ଟ ପାଇଁ ଏହି ଗ୍ରାହକଙ୍କ ଉପରେ ଆଉ କେହି ସୁରକ୍ଷା ରଖନ୍ତି ନାହିଁ - ଆପଣ ବର୍ତ୍ତମାନ ଲିଡ୍ ପଞ୍ଜିକରଣ କରିପାରିବେ |",
+    "raised": "ବିବାଦ {{id}} review ସମୀକ୍ଷା ପାଇଁ ପଠାଯାଇଛି |",
+    "viewAll": "ମୋର ବିବାଦ ଦେଖନ୍ତୁ |"
+  },
+  "dashboard": {
+    "title": "ଡ୍ୟାସବୋର୍ଡ |",
+    "period": "ସମୟ",
+    "lastDays_one": "{{count}} ଦିନ |",
+    "lastDays_other": "{{count}} ଦିନ |",
+    "emptyTitle": "ସ୍ Welcome ାଗତ! ଆପଣଙ୍କର ଏପର୍ଯ୍ୟନ୍ତ କ leads ଣସି ଲିଡ୍ ନାହିଁ |",
+    "emptyHint": "ତୁମର ପ୍ରଥମ ଲିଡ୍ ପଞ୍ଜିକରଣ କର - ତୁମର ପାଇପଲାଇନ, ବୁକିଂ ଏବଂ ସୁରକ୍ଷା ସମୟସୀମା ଏଠାରେ ଦେଖାଯିବ |",
+    "tiles": {
+      "leads": "ସମୁଦାୟ ଅଗ୍ରଣୀ |",
+      "newInPeriod_one": "ଏହି ଅବଧିରେ {{count}} ନୂତନ |",
+      "newInPeriod_other": "ଏହି ଅବଧିରେ {{count}} ନୂତନ |",
+      "accepted": "ଗ୍ରହଣ କରାଯାଇଛି",
+      "booked": "ବୁକ୍ ହୋଇଛି |",
+      "bookedInPeriod_one": "period {{count}} ଏହି ଅବଧିରେ ବୁକ୍ ହୋଇଛି |",
+      "bookedInPeriod_other": "period {{count}} ଏହି ଅବଧିରେ ବୁକ୍ ହୋଇଛି |",
+      "conversion": "ରୂପାନ୍ତର",
+      "conversionHint": "ଗ୍ରହଣୀୟ ଲିଡର ଏକ ଅଂଶ ଭାବରେ ବୁକ୍ ହୋଇଥିବା ଲିଡ୍ |",
+      "protectedNow": "ବର୍ତ୍ତମାନ ସୁରକ୍ଷିତ |",
+      "expiringSoon_one": "ସୁରକ୍ଷା {{count}} ଦିନରେ ସମାପ୍ତ |",
+      "expiringSoon_other": "ସୁରକ୍ଷା {{count}} ଦିନରେ ସମାପ୍ତ |",
+      "disputedNow": "ଅନ୍ୟମାନଙ୍କ ଦ୍ୱାରା ବିବାଦ |",
+      "disputedNowHint": "ଅନ୍ୟ ଅଂଶୀଦାରଙ୍କ ଠାରୁ ଏକ ଖୋଲା ମାଲିକାନା ବିବାଦ ସହିତ ତୁମର ଲିଡ୍ |",
+      "commissionEligible": "ଆୟୋଗ ଯୋଗ୍ୟ",
+      "commissionCancelled_one": "{{count}} ବାତିଲ ହୋଇଛି |",
+      "commissionCancelled_other": "{{count}} ବାତିଲ ହୋଇଛି |"
+    },
+    "chart": {
+      "title_one": "ପ୍ରତିଦିନ ପଞ୍ଜୀକରଣ ଏବଂ ବୁକିଂ - ଶେଷ {{count}} ଦିନ |",
+      "title_other": "ପ୍ରତିଦିନ ପଞ୍ଜୀକରଣ ଏବଂ ବୁକିଂ - ଶେଷ {{count}} ଦିନ |",
+      "registrations": "ପଞ୍ଜୀକରଣ |",
+      "bookings": "ବୁକିଂ"
+    },
+    "byStage": "ସ୍ଥିତି ଅନୁଯାୟୀ ଆଗେଇଥାଏ |",
+    "bySource": "ଉତ୍ସ ଦ୍ୱାରା ଆଗେଇଥାଏ |",
+    "byReferral": "ରେଫରାଲ୍ ସ୍ଥିତି ଦ୍ୱାରା ଆଗେଇଥାଏ |",
+    "myDisputes": "ତୁମେ ଉଠାଇଥିବା ବିବାଦ |",
+    "noDisputes": "କ No ଣସି ବିବାଦ ଉଠିନାହିଁ |",
+    "unknown": "ସେଟ୍ ହୋଇନାହିଁ |",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "ବାହ୍ୟ CRM (ଅନୁକରଣ)",
+      "PARTNER_CRM": "ଆପଣଙ୍କ ଦଳ ଦ୍ୱାରା ଯୋଡା ଯାଇଛି |",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "ଏକୀକରଣ",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "ପରବର୍ତ୍ତୀ {{count}} ଦିନରେ ସୁରକ୍ଷା ସମାପ୍ତ ହେବ |",
+    "expiringTitle_other": "ପରବର୍ତ୍ତୀ {{count}} ଦିନରେ ସୁରକ୍ଷା ସମାପ୍ତ ହେବ |",
+    "expiringEmpty": "ଏହି ୱିଣ୍ଡୋରେ କ lead ଣସି ସୀସା ଏହାର ସୁରକ୍ଷା ହରାଇବ ନାହିଁ |"
   }
 }

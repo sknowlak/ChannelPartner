@@ -30,7 +30,8 @@
       "registered": "Теркәлгән"
     },
     "booked": "Броньланган",
-    "empty": "Yetлламалар юк."
+    "empty": "Yetлламалар юк.",
+    "bookingCancelled": "Броньлау юкка чыгарылды"
   },
   "detail": {
     "customer": "Клиент",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Броньлау расланды.",
       "accepted": "Ferибәрү кабул ителде.",
-      "rejected": "Reибәрү кире кагылды."
+      "rejected": "Reибәрү кире кагылды.",
+      "bookingCancelled": "Броньлау юкка чыгарылды."
     },
-    "backToReferrals": "Ferлламаларга кире кайту"
+    "backToReferrals": "Ferлламаларга кире кайту",
+    "bookingCancelled": "Броньлау юкка чыгарылды",
+    "cancelBooking": "Броньны кире кагарга",
+    "cancelReasonLabel": "Бетерүнең сәбәбе (партнерга күрсәтелә) *",
+    "cancelBookingHint": "Оператив милек партнерга кире кайта һәм аларның комиссия хокукы юкка чыгарыла. Лидерны соңрак броньларга мөмкин.",
+    "cancelBookingConfirm": "Броньны кире кагарга"
   },
   "history": {
     "title": "Тарих",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Комиссия хокукы булдырылды",
       "HANDOVER_COMPLETED": "Тапшыру тәмамланды",
       "ADMIN_PROTECTION_RELEASED": "Администратор икеләтә саклауны иртә чыгарды. Сәбәп: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Администратор теркәлүне {{from}} дан {{to}} га билгеләде. Сәбәп: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Администратор теркәлүне {{from}} дан {{to}} га билгеләде. Сәбәп: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Башка партнерның икеләтә теркәлү омтылышы кире кагылды",
+      "BOOKING_CANCELLED": "Броньлау юкка чыгарылды. Сәбәп: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Оператив милек партнерга кайтты",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Комиссия хокукы бронь белән юкка чыгарылды",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Яңа бронь өчен комиссия хокукы торгызылды"
     }
   }
 }

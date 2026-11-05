@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Reservado",
-    "pending": "Pendiente"
+    "pending": "Pendiente",
+    "status": {
+      "CONFIRMED": "Reservado",
+      "CANCELLED": "Reserva cancelada"
+    }
   },
   "assign": {
     "unassigned": "No asignado",
@@ -58,7 +62,10 @@
   },
   "project": {
     "none": "Ningún proyecto aún (no referido)",
-    "notInList": "{{project}} (no en la lista de proyectos)"
+    "notInList": "{{project}} (no en la lista de proyectos)",
+    "protectionDays_one": "{{count}} -día de protección",
+    "protectionDays_many": "{{count}} -día de protección",
+    "protectionDays_other": "{{count}} -día de protección"
   },
   "journey": {
     "customer": "Cliente",
@@ -76,7 +83,14 @@
     "progressHistory": "Historial de progreso",
     "timesIn": "(veces en {{timezone}} )",
     "backToMyLeads": "Volver a Mis clientes potenciales",
-    "editLead": "Editar cliente potencial"
+    "editLead": "Editar cliente potencial",
+    "disputeBanner": "Otro socio ha disputado la propiedad de este cliente. Un administrador Leadrat lo está revisando: su protección permanece vigente hasta que él decida.",
+    "booking": "Reserva",
+    "commission": "Comisión",
+    "notBooked": "No reservado",
+    "cancelledOn": "Cancelado el {{date}} .",
+    "cancelReason": "Razón: {{reason}}",
+    "cancelledHint": "El constructor canceló la reserva: la propiedad operativa vuelve a ser suya y se cancela la elegibilidad para la comisión. Se restablece si el líder se reserva nuevamente."
   },
   "referral": {
     "NOT_REFERRED": "No referido (sin proyecto)",
@@ -162,7 +176,17 @@
       "REFERRAL_ACCEPTED": "El constructor aceptó la referencia.",
       "REFERRAL_REJECTED": "El constructor rechazó la remisión. Razón: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "El administrador lanzó la protección duplicada anticipadamente. Razón: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "El administrador reasignó el registro de {{from}} a {{to}} . Razón: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "El administrador reasignó el registro de {{from}} a {{to}} . Razón: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Se rechazó un intento de registro duplicado por parte de otro socio",
+      "BOOKING_CANCELLED": "Reserva cancelada. Razón: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "La propiedad operativa se devuelve al socio.",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Elegibilidad para la comisión cancelada con la reserva.",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Se restablece la elegibilidad para la comisión para la nueva reserva",
+      "OWNERSHIP_DISPUTE_RAISED": "Otro socio disputó la propiedad de este cliente: un administrador Leadrat lo revisará",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Se retiró la disputa de propiedad de este cliente; su propiedad no ha cambiado.",
+      "OWNERSHIP_DISPUTE_UPHELD": "Se revisó la disputa de propiedad de este cliente; su propiedad está confirmada",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Registrado después de que su disputa de propiedad se decidió a su favor. Nota: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Terminó la protección: una disputa de propiedad se decidió a favor de otro socio. Nota: {{note}}"
     }
   },
   "columnsPanel": {
@@ -186,5 +210,116 @@
     "INVALID_FOR_COUNTRY": "Este número de teléfono no es válido para {{country}} .",
     "COUNTRY_MISMATCH": "Seleccione el código de país correcto.",
     "NOT_MOBILE": "Ingrese un número de teléfono móvil, no un teléfono fijo."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Elegible para la comisión",
+      "PENDING": "Comisión pendiente",
+      "CANCELLED": "Comisión cancelada"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Atribuido a ti",
+      "DISPUTED": "Atribución disputada"
+    }
+  },
+  "result": {
+    "none": "No hay resultados de registro para mostrar. Primero registre un cliente potencial.",
+    "acceptedTitle": "Plomo registrado",
+    "rejectedTitle": "Cliente potencial no registrado",
+    "protectionWindow": "Ventana de protección",
+    "protectedUntil": "Protegido hasta",
+    "openLead": "Plomo abierto",
+    "addAnother": "Agregar otro cliente potencial",
+    "duplicate": "Duplicado - ya protegido",
+    "duplicateHint": "Este cliente ya está protegido para este proyecto por otro registro, por lo que no se pudo registrar para usted.",
+    "existingProtectedUntil": "Registro existente protegido hasta"
+  },
+  "disputes": {
+    "title": "Mis disputas",
+    "intro": "Disputas de propiedad que planteó para clientes que fueron rechazados como duplicados. Un administrador Leadrat revisa cada uno.",
+    "empty": "No has planteado ninguna disputa. Si un cliente que usted trajo es rechazado como duplicado, puede disputarlo desde el resultado del registro.",
+    "columns": {
+      "dispute": "Disputar",
+      "reason": "tu razon",
+      "outcome": "Resultado"
+    },
+    "status": {
+      "OPEN": "En revisión",
+      "UPHELD": "No a tu favor",
+      "OVERTURNED": "Decidido a tu favor",
+      "WITHDRAWN": "Retirado"
+    },
+    "awaitingReview": "Esperando revisión del administrador",
+    "openNewLead": "Abra su cliente potencial {{id}}",
+    "withdraw": "Retirar",
+    "withdrawConfirm": "¿Retirar su disputa para {{name}} ? La propiedad actual permanece como está.",
+    "raise": "Propiedad en disputa",
+    "raiseTitle": "Propiedad en disputa",
+    "raiseHint": "Si este cliente acudió a usted primero, explique por qué. Un administrador Leadrat lo revisará; Si deciden a tu favor, el cliente potencial queda registrado para ti.",
+    "reasonLabel": "¿Por qué este cliente es tuyo?",
+    "reasonMin_one": "Al menos {{count}} carácter.",
+    "reasonMin_many": "Al menos {{count}} caracteres.",
+    "reasonMin_other": "Al menos {{count}} caracteres.",
+    "submit": "Enviar disputa",
+    "notProtected": "Ya nadie tiene protección para este cliente para este proyecto; puede registrar el cliente potencial ahora.",
+    "raised": "Disputa {{id}} enviada para revisión.",
+    "viewAll": "Ver mis disputas"
+  },
+  "dashboard": {
+    "title": "Panel",
+    "period": "Período",
+    "lastDays_one": "{{count}} día",
+    "lastDays_many": "{{count}} días",
+    "lastDays_other": "{{count}} días",
+    "emptyTitle": "¡Bienvenido! Aún no tienes pistas.",
+    "emptyHint": "Registre su primer cliente potencial: su canalización, reservas y plazos de protección se mostrarán aquí.",
+    "tiles": {
+      "leads": "Clientes potenciales totales",
+      "newInPeriod_one": "{{count}} nuevo en este período",
+      "newInPeriod_many": "{{count}} nuevo en este período",
+      "newInPeriod_other": "{{count}} nuevo en este período",
+      "accepted": "Aceptado",
+      "booked": "Reservado",
+      "bookedInPeriod_one": "{{count}} reservado en este período",
+      "bookedInPeriod_many": "{{count}} reservado en este período",
+      "bookedInPeriod_other": "{{count}} reservado en este período",
+      "conversion": "Conversión",
+      "conversionHint": "Clientes potenciales reservados como porcentaje de los clientes potenciales aceptados",
+      "protectedNow": "Protegido ahora",
+      "expiringSoon_one": "La protección finaliza en {{count}} día",
+      "expiringSoon_many": "La protección finaliza en {{count}} días",
+      "expiringSoon_other": "La protección finaliza en {{count}} días",
+      "disputedNow": "Disputado por otros",
+      "disputedNowHint": "Sus clientes potenciales con una disputa de propiedad abierta de otro socio",
+      "commissionEligible": "Elegible para la comisión",
+      "commissionCancelled_one": "{{count}} cancelado",
+      "commissionCancelled_many": "{{count}} cancelado",
+      "commissionCancelled_other": "{{count}} cancelado"
+    },
+    "chart": {
+      "title_one": "Inscripciones y reservas por día - último {{count}} día",
+      "title_many": "Inscripciones y reservas por día - últimos {{count}} días",
+      "title_other": "Inscripciones y reservas por día - últimos {{count}} días",
+      "registrations": "Inscripciones",
+      "bookings": "Reservas"
+    },
+    "byStage": "Lidera por estatus",
+    "bySource": "Clientes potenciales por fuente",
+    "byReferral": "Clientes potenciales por estado de referencia",
+    "myDisputes": "Disputas que planteaste",
+    "noDisputes": "No se plantearon disputas.",
+    "unknown": "No establecido",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM externo (simulado)",
+      "PARTNER_CRM": "Agregado por tu equipo",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integración",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "La protección vence en el próximo {{count}} día",
+    "expiringTitle_many": "La protección vence en los próximos {{count}} días",
+    "expiringTitle_other": "La protección vence en los próximos {{count}} días",
+    "expiringEmpty": "Ningún plomo pierde su protección en esta ventana."
   }
 }

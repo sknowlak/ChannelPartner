@@ -30,7 +30,8 @@
       "registered": "Kayıtlı"
     },
     "booked": "Rezerve edildi",
-    "empty": "Henüz yönlendirme yok."
+    "empty": "Henüz yönlendirme yok.",
+    "bookingCancelled": "Rezervasyon iptal edildi"
   },
   "detail": {
     "customer": "Müşteri",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Rezervasyon onaylandı.",
       "accepted": "Yönlendirme kabul edildi.",
-      "rejected": "Yönlendirme reddedildi."
+      "rejected": "Yönlendirme reddedildi.",
+      "bookingCancelled": "Rezervasyon iptal edildi."
     },
-    "backToReferrals": "Tavsiyelere Geri Dön"
+    "backToReferrals": "Tavsiyelere Geri Dön",
+    "bookingCancelled": "Rezervasyon iptal edildi",
+    "cancelBooking": "Rezervasyonu İptal Et",
+    "cancelReasonLabel": "İptal nedeni (ortağa gösterilir) *",
+    "cancelBookingHint": "Operasyonel mülkiyet ortağa geri döner ve komisyon uygunluğu iptal edilir. Liderlik daha sonra tekrar rezerve edilebilir.",
+    "cancelBookingConfirm": "Rezervasyonu iptal et"
   },
   "history": {
     "title": "Tarih",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Komisyon uygunluğu oluşturuldu",
       "HANDOVER_COMPLETED": "Devir teslim tamamlandı",
       "ADMIN_PROTECTION_RELEASED": "Yönetici yinelenen korumayı erken yayınladı. Sebep: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Yönetici, kaydı {{from}} yerine {{to}} olarak yeniden atadı. Sebep: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Yönetici, kaydı {{from}} yerine {{to}} olarak yeniden atadı. Sebep: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Başka bir iş ortağının mükerrer kayıt girişimi reddedildi",
+      "BOOKING_CANCELLED": "Rezervasyon iptal edildi. Sebep: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operasyonel mülkiyet ortağa iade edildi",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Rezervasyonla birlikte komisyon uygunluğu iptal edildi",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Yeni rezervasyon için komisyon uygunluğu geri getirildi"
     }
   }
 }

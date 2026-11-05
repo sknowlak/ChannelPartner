@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Jogosult",
-    "PENDING": "Függőben levő"
+    "PENDING": "Függőben levő",
+    "CANCELLED": "Törölve"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Korábban oldja fel a duplikált védelmet",
-    "REASSIGN_PARTNER": "Átrendelés másik partnerhez"
+    "REASSIGN_PARTNER": "Átrendelés másik partnerhez",
+    "CANCEL_BOOKING": "Foglalás lemondása"
   },
   "dataType": {
     "TEXT": "Szöveg",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Szuper Admin",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Megerősített",
+    "CANCELLED": "Törölve"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Hozzárendelt",
+    "DISPUTED": "Vitatott"
+  },
+  "disputeStatus": {
+    "OPEN": "Nyitott",
+    "UPHELD": "helybenhagyva",
+    "OVERTURNED": "Felborult",
+    "WITHDRAWN": "Visszavont"
   }
 }

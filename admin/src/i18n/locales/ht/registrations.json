@@ -49,8 +49,73 @@
       "newPartnerId": "Nouvo ID patnè",
       "reason": "Rezon ki fè (obligatwa)",
       "apply": "Aplike Override",
-      "applying": "Ap aplike..."
+      "applying": "Ap aplike...",
+      "cancelBookingHint": "Anile make rezèrvasyon an ak komisyon li kòm anile, retounen pwopriyetè operasyonèl bay patnè a, epi kite mason an rezève plon sa a ankò.",
+      "cancelBookingConfirm": "Anile rezèvasyon sa a? Komisyon li anile tou. Sa a se konekte ak non ou ak rezon."
     },
-    "timelineTitle": "Odit Timeline (enskripsyon sa a)"
+    "timelineTitle": "Odit Timeline (enskripsyon sa a)",
+    "bookingStatus": "Estati anrjistreman",
+    "commissionAttribution": "Komisyon Attribution",
+    "disputeOpen": "An ownership dispute is open on this customer - another partner says it is theirs. Li deside sou paj Disputes.",
+    "viewDisputes": "Gade diskisyon yo",
+    "cancellation": {
+      "title": "Anile anile",
+      "hint": "Yo anile rezèrvasyon an ak komisyon li; operational ownership is back with the partner and the builder can book this lead again.",
+      "at": "Anile nan",
+      "by": "Anile pa",
+      "reason": "Rezon"
+    }
+  },
+  "disputes": {
+    "title": "Konfli pwopriyetè",
+    "hint": "A partner whose registration was rejected as a duplicate can dispute who owns the customer. Revize tou de bò yo epi deside.",
+    "statusFilter": "Estati diskisyon",
+    "allStatuses": "Tout estati",
+    "empty": "Pa gen diskisyon ak estati sa a.",
+    "columns": {
+      "dispute": "Dispitisyon",
+      "customer": "Kliyan",
+      "project": "Pwojè",
+      "raisedBy": "Leve pa",
+      "heldBy": "Pwopriyetè aktyèl la",
+      "status": "Estati",
+      "raisedAt": "Leve sou"
+    },
+    "detail": {
+      "title": "Konteste {{id}}",
+      "raisedOn": "Leve {{date}}",
+      "raisingTitle": "Leve pa",
+      "holderTitle": "Pwopriyetè aktyèl la",
+      "partner": "Patnè",
+      "raisedBy": "Soumèt pa",
+      "customerName": "Kliyan",
+      "mobile": "Mobile",
+      "alternateMobile": "Altènatif mobil",
+      "email": "Imèl",
+      "project": "Pwojè",
+      "reason": "Rezon yo",
+      "registration": "Enskripsyon",
+      "registeredAt": "Anrejistre sou",
+      "referral": "Referans",
+      "heldMissing": "Enskripsyon ki te fèt la pa t 'kapab jwenn.",
+      "resolutionTitle": "Desizyon",
+      "outcome": "Rezilta",
+      "note": "Remak",
+      "decidedBy": "Deside pa",
+      "decidedAt": "Deside sou",
+      "newRegistration": "Nouvo enskripsyon",
+      "decideTitle": "Deside diskisyon sa a",
+      "noteLabel": "Nòt ki eksplike desizyon an (obligatwa)",
+      "noteRequired": "Ekri yon nòt pou deside.",
+      "uphold": "Defann",
+      "overturn": "Ranvèse",
+      "upholdEffect": "{{holder}} kenbe kliyan an. Se diskisyon an fèmen e pa gen anyen lòt chanje.",
+      "overturnEffect": "Pwoteksyon kopi {{holder}} fini kounye a epi kliyan an anrejistre pou {{partner}} kòm yon nouvo anrejistreman.",
+      "heldBookedHelp": "Kliyan sa a rezève atravè pwopriyetè aktyèl la. Anile rezèvasyon sa a an premye (Anile admin sou enskripsyon an), apresa ranvèse:",
+      "confirmTitle": "Èske w sèten?",
+      "confirmUphold": "Wi, defann",
+      "confirmOverturn": "Wi, ranvèse",
+      "back": "Retounen nan Konfli"
+    }
   }
 }

@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "ብቁ",
-    "PENDING": "በመጠባበቅ ላይ"
+    "PENDING": "በመጠባበቅ ላይ",
+    "CANCELLED": "ተሰርዟል።"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "የተባዛ ጥበቃን ቀደም ብለው ይልቀቁ",
-    "REASSIGN_PARTNER": "ለሌላ አጋር እንደገና ይመድቡ"
+    "REASSIGN_PARTNER": "ለሌላ አጋር እንደገና ይመድቡ",
+    "CANCEL_BOOKING": "ቦታ ማስያዝ ይሰርዙ"
   },
   "dataType": {
     "TEXT": "ጽሑፍ",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "ሱፐር አስተዳዳሪ",
     "ADMIN": "አስተዳዳሪ"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "ተረጋግጧል",
+    "CANCELLED": "ተሰርዟል።"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "ተሰጥቷል።",
+    "DISPUTED": "ክርክር"
+  },
+  "disputeStatus": {
+    "OPEN": "ክፈት",
+    "UPHELD": "ተደግፏል",
+    "OVERTURNED": "ተገልብጧል",
+    "WITHDRAWN": "የተወሰደ"
   }
 }

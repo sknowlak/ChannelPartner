@@ -11,7 +11,13 @@ const bookingSchema = new mongoose.Schema(
     projectId: { type: String, default: '' },
     bookingDate: { type: Date, default: Date.now },
     status: { type: String, enum: ['CONFIRMED', 'CANCELLED'], default: 'CONFIRMED' },
-    externalEventId: { type: String, index: true }
+    externalEventId: { type: String, index: true },
+    // The partner's stage just before booking - restored if the booking is
+    // cancelled (section 62), so the lead doesn't keep showing "Booked".
+    stageBeforeBooking: { type: String, default: '' },
+    cancelledAt: Date,
+    cancelledBy: String,
+    cancellationReason: String
   },
   { timestamps: true }
 );

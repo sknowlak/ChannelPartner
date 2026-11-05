@@ -29,7 +29,8 @@
       "registered": "ລົງທະບຽນ"
     },
     "booked": "ຈອງແລ້ວ",
-    "empty": "ບໍ່ມີການອ້າງອີງເທື່ອ."
+    "empty": "ບໍ່ມີການອ້າງອີງເທື່ອ.",
+    "bookingCancelled": "ຍົກເລີກການຈອງແລ້ວ"
   },
   "detail": {
     "customer": "ລູກຄ້າ",
@@ -52,9 +53,15 @@
     "notice": {
       "booked": "ຢືນຢັນການຈອງ.",
       "accepted": "ຍອມຮັບການອ້າງອີງ.",
-      "rejected": "ປະຕິເສດການອ້າງອີງ."
+      "rejected": "ປະຕິເສດການອ້າງອີງ.",
+      "bookingCancelled": "ຍົກເລີກການຈອງແລ້ວ."
     },
-    "backToReferrals": "ກັບໄປທີ່ການອ້າງອີງ"
+    "backToReferrals": "ກັບໄປທີ່ການອ້າງອີງ",
+    "bookingCancelled": "ຍົກເລີກການຈອງແລ້ວ",
+    "cancelBooking": "ຍົກເລີກການຈອງ",
+    "cancelReasonLabel": "ເຫດຜົນສໍາລັບການຍົກເລີກ (ສະແດງໃຫ້ເຫັນກັບຄູ່ຮ່ວມງານ) *",
+    "cancelBookingHint": "ສິດຄວາມເປັນເຈົ້າຂອງໃນການປະຕິບັດງານຈະກັບຄືນໄປຫາຄູ່ຮ່ວມງານ ແລະສິດຂອງຄະນະກໍາມະຂອງເຂົາເຈົ້າຖືກຍົກເລີກ. ຜູ້ ນຳ ສາມາດຈອງໄດ້ອີກຄັ້ງໃນພາຍຫຼັງ.",
+    "cancelBookingConfirm": "ຍົກເລີກການຈອງ"
   },
   "history": {
     "title": "ປະຫວັດສາດ",
@@ -81,7 +88,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "ສ້າງການມີສິດໄດ້ຮັບຄະນະກໍາມະການ",
       "HANDOVER_COMPLETED": "ການມອບສຳເລັດແລ້ວ",
       "ADMIN_PROTECTION_RELEASED": "Admin ປ່ອຍການປົກປ້ອງຊໍ້າກັນກ່ອນໄວ. ເຫດຜົນ: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "ຜູ້ເບິ່ງແຍງໄດ້ມອບໝາຍການລົງທະບຽນຄືນໃໝ່ຈາກ {{from}} ເປັນ {{to}} . ເຫດຜົນ: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "ຜູ້ເບິ່ງແຍງໄດ້ມອບໝາຍການລົງທະບຽນຄືນໃໝ່ຈາກ {{from}} ເປັນ {{to}} . ເຫດຜົນ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "ຄວາມພະຍາຍາມລົງທະບຽນຊໍ້າກັນໂດຍຄູ່ຮ່ວມງານອື່ນໄດ້ຖືກປະຕິເສດ",
+      "BOOKING_CANCELLED": "ຍົກເລີກການຈອງແລ້ວ. ເຫດຜົນ: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "ສິດຄວາມເປັນເຈົ້າຂອງການປະຕິບັດງານໄດ້ສົ່ງຄືນໃຫ້ຄູ່ຮ່ວມງານ",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "ການມີສິດໄດ້ຮັບຄະນະກໍາມະການຖືກຍົກເລີກດ້ວຍການຈອງ",
+      "COMMISSION_ELIGIBILITY_RESTORED": "ການມີສິດໄດ້ຮັບຄ່ານາຍໜ້າຄືນມາສຳລັບການຈອງໃໝ່"
     }
   }
 }

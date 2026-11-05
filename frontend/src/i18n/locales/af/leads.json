@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Bespreek",
-    "pending": "Hangende"
+    "pending": "Hangende",
+    "status": {
+      "CONFIRMED": "Bespreek",
+      "CANCELLED": "Bespreking gekanselleer"
+    }
   },
   "assign": {
     "unassigned": "Ontoegewys",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Nog geen projek nie (nie verwys nie)",
-    "notInList": "{{project}} (nie in die projeklys nie)"
+    "notInList": "{{project}} (nie in die projeklys nie)",
+    "protectionDays_one": "{{count}} dae beskerming",
+    "protectionDays_other": "{{count}} dae beskerming"
   },
   "journey": {
     "customer": "Kliënt",
@@ -76,7 +82,14 @@
     "progressHistory": "Vorderingsgeskiedenis",
     "timesIn": "(tye in {{timezone}} )",
     "backToMyLeads": "Terug na My Leads",
-    "editLead": "Wysig lood"
+    "editLead": "Wysig lood",
+    "disputeBanner": "'n Ander vennoot het eienaarskap van hierdie kliënt betwis. 'n Leadrat administrateur hersien dit - jou beskerming bly in plek totdat hulle besluit.",
+    "booking": "Bespreking",
+    "commission": "Kommissie",
+    "notBooked": "Nie bespreek nie",
+    "cancelledOn": "Gekanselleer op {{date}} .",
+    "cancelReason": "Rede: {{reason}}",
+    "cancelledHint": "Die bouer het die bespreking gekanselleer - operasionele eienaarskap is terug by jou en kommissie-kwalifikasie is gekanselleer. Dit word herstel as die lood weer bespreek word."
   },
   "referral": {
     "NOT_REFERRED": "Nie verwys nie (geen projek)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Bouer het die verwysing aanvaar",
       "REFERRAL_REJECTED": "Bouer het die verwysing verwerp. Rede: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin het vroegtydig duplikaatbeskerming vrygestel. Rede: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin het registrasie van {{from}} na {{to}} hertoegewys. Rede: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin het registrasie van {{from}} na {{to}} hertoegewys. Rede: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "'n Duplikaatregistrasiepoging deur 'n ander vennoot is afgekeur",
+      "BOOKING_CANCELLED": "Bespreking gekanselleer. Rede: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operasionele eienaarskap het aan die vennoot teruggekeer",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kommissie-kwalifikasie gekanselleer met die bespreking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kommissie-kwalifikasie vir die nuwe bespreking herstel",
+      "OWNERSHIP_DISPUTE_RAISED": "'n Ander vennoot het eienaarskap van hierdie kliënt betwis - 'n Leadrat -administrateur sal dit hersien",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Die eienaarskapdispuut op hierdie kliënt is teruggetrek – jou eienaarskap is onveranderd",
+      "OWNERSHIP_DISPUTE_UPHELD": "Die eienaarskapdispuut op hierdie klant is hersien - jou eienaarskap is bevestig",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Geregistreer nadat u eienaarskapdispuut in u guns beslis is. Let wel: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Beskerming het geëindig: 'n eienaarskapdispuut is ten gunste van 'n ander vennoot beslis. Let wel: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Hierdie foonnommer is nie geldig vir {{country}} .",
     "COUNTRY_MISMATCH": "Kies asseblief die korrekte landkode.",
     "NOT_MOBILE": "Voer asseblief 'n selfoonnommer in, nie 'n landlyn nie."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Kommissie in aanmerking kom",
+      "PENDING": "Kommissie hangende",
+      "CANCELLED": "Kommissie gekanselleer"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Aan jou toegeskryf",
+      "DISPUTED": "Erkenning betwis"
+    }
+  },
+  "result": {
+    "none": "Geen registrasieresultaat om te wys nie. Registreer eers 'n lood.",
+    "acceptedTitle": "Lood geregistreer",
+    "rejectedTitle": "Lood nie geregistreer nie",
+    "protectionWindow": "Beskermingsvenster",
+    "protectedUntil": "Beskerm tot",
+    "openLead": "Oop lood",
+    "addAnother": "Voeg nog 'n lood by",
+    "duplicate": "Duplikaat - reeds beskerm",
+    "duplicateHint": "Hierdie kliënt is reeds deur 'n ander registrasie vir hierdie projek beskerm, so dit kon nie vir jou geregistreer word nie.",
+    "existingProtectedUntil": "Bestaande registrasie beskerm tot"
+  },
+  "disputes": {
+    "title": "My dispute",
+    "intro": "Eienaarskapdispute wat jy geopper het vir kliënte wat as duplikate geweier is. 'n Leadrat -administrateur beoordeel elkeen.",
+    "empty": "Jy het geen dispute geopper nie. As 'n kliënt wat jy ingebring het as 'n duplikaat geweier word, kan jy dit uit die registrasieresultaat betwis.",
+    "columns": {
+      "dispute": "Dispuut",
+      "reason": "Jou rede",
+      "outcome": "Uitkoms"
+    },
+    "status": {
+      "OPEN": "Onder hersiening",
+      "UPHELD": "Nie in jou guns nie",
+      "OVERTURNED": "Besluit in jou guns",
+      "WITHDRAWN": "Onttrek"
+    },
+    "awaitingReview": "Wag vir admin hersiening",
+    "openNewLead": "Maak jou lood oop {{id}}",
+    "withdraw": "Onttrek",
+    "withdrawConfirm": "Onttrek jou dispuut vir {{name}} ? Die huidige eienaarskap bly soos dit is.",
+    "raise": "Dispuut eienaarskap",
+    "raiseTitle": "Dispuut eienaarskap",
+    "raiseHint": "As hierdie kliënt eerste na jou toe gekom het, verduidelik hoekom. 'n Leadrat -administrateur sal dit hersien; as hulle in jou guns besluit, word die lood vir jou geregistreer.",
+    "reasonLabel": "Hoekom is hierdie kliënt joune?",
+    "reasonMin_one": "Ten minste {{count}} karakter.",
+    "reasonMin_other": "Ten minste {{count}} karakters.",
+    "submit": "Stuur dispuut",
+    "notProtected": "Niemand hou meer beskerming op hierdie kliënt vir hierdie projek nie - jy kan nou die lood registreer.",
+    "raised": "Dispuut {{id}} gestuur vir hersiening.",
+    "viewAll": "Kyk na my geskille"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Tydperk",
+    "lastDays_one": "{{count}} dag",
+    "lastDays_other": "{{count}} dae",
+    "emptyTitle": "Welkom! Jy het nog geen leidrade nie.",
+    "emptyHint": "Registreer jou eerste lood – jou pyplyn, besprekings en beskermingspertye sal hier verskyn.",
+    "tiles": {
+      "leads": "Totale leidrade",
+      "newInPeriod_one": "{{count}} nuut in hierdie tydperk",
+      "newInPeriod_other": "{{count}} nuut in hierdie tydperk",
+      "accepted": "Aanvaar",
+      "booked": "Bespreek",
+      "bookedInPeriod_one": "{{count}} het in hierdie tydperk bespreek",
+      "bookedInPeriod_other": "{{count}} het in hierdie tydperk bespreek",
+      "conversion": "Omskakeling",
+      "conversionHint": "Bespreekte leidrade as 'n deel van aanvaarde leidrade",
+      "protectedNow": "Nou beskerm",
+      "expiringSoon_one": "Beskerming eindig oor {{count}} dag",
+      "expiringSoon_other": "Beskerming eindig oor {{count}} dae",
+      "disputedNow": "Betwis deur ander",
+      "disputedNowHint": "Jou lei met 'n oop eienaarskap dispuut van 'n ander vennoot",
+      "commissionEligible": "Kommissie in aanmerking kom",
+      "commissionCancelled_one": "{{count}} gekanselleer",
+      "commissionCancelled_other": "{{count}} gekanselleer"
+    },
+    "chart": {
+      "title_one": "Registrasies en besprekings per dag - laaste {{count}} dag",
+      "title_other": "Registrasies en besprekings per dag - laaste {{count}} dae",
+      "registrations": "Registrasies",
+      "bookings": "Besprekings"
+    },
+    "byStage": "Lei volgens status",
+    "bySource": "Lei deur bron",
+    "byReferral": "Lei deur verwysingstatus",
+    "myDisputes": "Dispute wat jy geopper het",
+    "noDisputes": "Geen dispute geopper nie.",
+    "unknown": "Nie gestel nie",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Eksterne CRM (gesimuleerd)",
+      "PARTNER_CRM": "Bygevoeg deur jou span",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integrasie",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Beskerming verval in die volgende {{count}} dag",
+    "expiringTitle_other": "Beskerming verval in die volgende {{count}} dae",
+    "expiringEmpty": "Geen lood verloor sy beskerming in hierdie venster nie."
   }
 }

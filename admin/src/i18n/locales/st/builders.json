@@ -43,7 +43,9 @@
       "name": "Lebitso",
       "city": "Motse",
       "status": "Boemo",
-      "actions": "Liketso"
+      "actions": "Liketso",
+      "protection": "Tšireletso e habeli",
+      "matchOn": "Likopi li bapaloa"
     },
     "closeReferrals": "Koala bakeng sa liphetiso",
     "reopen": "Bula hape",
@@ -55,6 +57,25 @@
       "add": "Eketsa Morero",
       "created": "E entsoe {{name}} ."
     },
-    "back": "Khutlela ho Bahahi"
+    "back": "Khutlela ho Bahahi",
+    "protection": {
+      "days_one": "{{count}} letsatsi",
+      "days_other": "{{count}} matsatsi",
+      "globalDays_one": "Kakaretso ea lefatše lohle (letsatsi le {{count}} )",
+      "globalDays_other": "Kakaretso ea lefatše lohle (matsatsi a {{count}} )",
+      "globalDefault": "Kakaretso ea lefatše lohle",
+      "placeholder": "Matsatsi a ts'ireletso (ho se na letho = kamehla lefats'e)",
+      "saved": "Tšireletso e ntlafalitsoeng bakeng sa {{name}} .",
+      "hint": "Tšireletso e kopitsoang: matsatsi a 1-3650, kapa u tlohele letho ho sebelisa maemo a lefats'e a tsoang ho Litlhophiso. Phetoho e sebetsa feela ho ngoliso e ncha - tse seng li ntse li le teng li boloka nako ea tsona e felile."
+    },
+    "matching": {
+      "global": "Kakaretso ea lefatše lohle",
+      "globalWith": "Kakaretso ea lefatše lohle ( {{fields}} )",
+      "mobile": "Nomoro ea lekolulo",
+      "email": "Email",
+      "both": "Nomoro ea mohala + imeile",
+      "saved": "Lipapiso tse tšoanang li ntlafalitsoe bakeng sa {{name}}",
+      "hint": "Ke lintlha life tse etsang hore ngoliso e 'meli e be moreki a le mong bakeng sa morero. Liphetoho li sebetsa ho licheke tse peli ho tloha joale ho ea pele; tshireletso e teng ha e amehe."
+    }
   }
 }

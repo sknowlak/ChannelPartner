@@ -49,8 +49,73 @@
       "newPartnerId": "ID yamweenzinyina mupya",
       "reason": "Kaambo (kayandika)",
       "apply": "Bikka Kugwisya",
-      "applying": "Kubelesya..."
+      "applying": "Kubelesya...",
+      "cancelBookingHint": "Kucileka kutondezya kuti bbuku amali aayo akagwisigwa, kupilusya bulelo bwakubeleka kuli yooyo ngomukwetene limwi, mpawo kupa kuti sikuyaka abweze bbuku eeli alimwi.",
+      "cancelBookingConfirm": "Kuleka bbuku eeli? Imulimo wayo wakagwisigwa awalo. Eezi zilembedwe azina lyako akaambo."
     },
-    "timelineTitle": "Chiindi chakuvwuntauzya (kulembesya ooku)"
+    "timelineTitle": "Chiindi chakuvwuntauzya (kulembesya ooku)",
+    "bookingStatus": "Chiimo chakubbukula",
+    "commissionAttribution": "Kupegwa kwaKkomishini",
+    "disputeOpen": "Kukazyanya kwabulelo kuliwo kuli kasitoma ooyu - umwi mweenzinyina waamba kuti ngwabo. Zyakasalwa apeeji lyakukazyania.",
+    "viewDisputes": "Langa mazwanga",
+    "cancellation": {
+      "title": "Kubhuka kwakachilwa",
+      "hint": "Kubhuka antoomwe amali aayo zyakagwisigwa; bulelo bwakubeleka bwajokela kuli mweenzinyina mpawo sikuyaka ulakonzya kubbukka lubo.",
+      "at": "Kwakachilwa a",
+      "by": "Yakagwisigwa a",
+      "reason": "Cheetelezya"
+    }
+  },
+  "disputes": {
+    "title": "Kukazyania aatala abulelo",
+    "hint": "Mweenzinyina ooyo wakakakwa kulembwa kwakwe mbuli chintu chikozyano ulakonzya kukazya kuti nguni mukamwini kasitoma. Langa mbazu zyoonse zyobile mpawo usale.",
+    "statusFilter": "Chiimo chakukazyania",
+    "allStatuses": "Ziimo zyoonse",
+    "empty": "Kunyina kukazyania aachiimo eechi.",
+    "columns": {
+      "dispute": "Kutamvwanana",
+      "customer": "Sikuula",
+      "project": "Mabambe",
+      "raisedBy": "wakakomezyegwa a",
+      "heldBy": "Mukamwini lino",
+      "status": "Chiimo",
+      "raisedAt": "wakakomezyegwa"
+    },
+    "detail": {
+      "title": "Kukazyanya {{id}}",
+      "raisedOn": "Yakasumpulwa {{date}}",
+      "raisingTitle": "wakakomezyegwa a",
+      "holderTitle": "Mukamwini lino",
+      "partner": "Mwenzuma",
+      "raisedBy": "Zyakatumwa a",
+      "customerName": "Sikuula",
+      "mobile": "Kweenda",
+      "alternateMobile": "luwaile lumbi",
+      "email": "Imeyili",
+      "project": "Mabambe",
+      "reason": "Kaambo kabo",
+      "registration": "Kulembesya",
+      "registeredAt": "wakalembwa a",
+      "referral": "Kutuminwa",
+      "heldMissing": "Ikulembesya kwakajatwa tiikwakajanika pe.",
+      "resolutionTitle": "Musalo",
+      "outcome": "Zyazwa",
+      "note": "Kagwalo",
+      "decidedBy": "Chakasalwa a",
+      "decidedAt": "Bakayeeya kuti",
+      "newRegistration": "Kulembesya kupya",
+      "decideTitle": "Amusale makani aaya",
+      "noteLabel": "chilembedwe chipandulula kusala (kuyandika)",
+      "noteRequired": "Lemba lugwalo lwakusala.",
+      "uphold": "Kozumanana",
+      "overturn": "Kuvwungulula",
+      "upholdEffect": "{{holder}} ulabamba kasitoma. Kukazyanya kwakamana mpo taakwe chintu chakachincha pe.",
+      "overturnEffect": "{{holder}} 's lukwabililo lwazintu zyobile lwamana lino mpawo kasitoma walembesegwa kuli {{partner}} mbuli muntu mupya.",
+      "heldBookedHelp": "Ooyu kasitoma wakabikkwa kwiinda muli mukamwini uuliko lino. Kosaanguna kuzima bbuku eeli (Admin Override on the registration), mpawo ubweze:",
+      "confirmTitle": "Uli masimpe na?",
+      "confirmUphold": "Iyi, kozumanana",
+      "confirmOverturn": "Iyi, kuvwungulula",
+      "back": "Kujokela kukukazyania"
+    }
   }
 }

@@ -49,8 +49,73 @@
       "newPartnerId": "Bag-o nga ID han Kasosyo",
       "reason": "Rason (kinahanglan)",
       "apply": "Pag-aplikar hin Pagbag-o",
-      "applying": "Pag-aplay..."
+      "applying": "Pag-aplay...",
+      "cancelBookingHint": "An pagkansela in nagtitigaman han pag-book ngan han komisyon hini nga kanselado, nagbabalik han pagtag-iya han operasyon ngadto han kapadis, ngan gintutugotan an magtutukod nga mag-book utro hini nga lead.",
+      "cancelBookingConfirm": "Kanselahon ba ini nga pag-book? Kanselado liwat an komisyon hini. Gin-log ini nga mayda imo ngaran ngan rason."
     },
-    "timelineTitle": "Audit Timeline (ini nga pagrehistro)"
+    "timelineTitle": "Audit Timeline (ini nga pagrehistro)",
+    "bookingStatus": "Kahimtang han Pag-book",
+    "commissionAttribution": "Pag-atribwir han Komisyon",
+    "disputeOpen": "Abrido an pag-aragway han pagtag-iya hini nga kustomer - usa pa nga kapadis an nasiring nga ira ini. Gindedesisyonan ito ha pahina han Mga Pag-aragway.",
+    "viewDisputes": "Kitaa an mga araway",
+    "cancellation": {
+      "title": "Kanselado an pag-book",
+      "hint": "Kanselado an pag-book ngan an komisyon hini; an pagtag-iya han operasyon in bumalik na ha kapadis ngan an magtutukod in pwede na liwat mag-book hini nga lead.",
+      "at": "Kanselado ha",
+      "by": "Ginkansela han",
+      "reason": "Hinungdan"
+    }
+  },
+  "disputes": {
+    "title": "Mga Pag-aragway ha Pagtag-iya",
+    "hint": "An kapadis nga an iya pagrehistro waray karawata sugad nga duplikado mahimo mag-aragway kon hin-o an tag-iya han kustomer. Repasuha an duha nga bahin ngan pagdesisyon.",
+    "statusFilter": "Kahimtang han pag-aragway",
+    "allStatuses": "Tanan nga kahimtang",
+    "empty": "Waray mga pag-aragway hini nga kahimtang.",
+    "columns": {
+      "dispute": "Away",
+      "customer": "Kustomer",
+      "project": "Proyekto",
+      "raisedBy": "Ginpadako ni .",
+      "heldBy": "Yana nga tag-iya .",
+      "status": "Kahimtang",
+      "raisedAt": "Ginpadaku han 1999."
+    },
+    "detail": {
+      "title": "Paglantugi {{id}}",
+      "raisedOn": "Gin-alsa {{date}}",
+      "raisingTitle": "Ginpadako ni .",
+      "holderTitle": "Yana nga tag-iya .",
+      "partner": "Kaupod",
+      "raisedBy": "Ginpasa ni",
+      "customerName": "Kustomer",
+      "mobile": "Makakagios",
+      "alternateMobile": "Kaliwan nga mobile .",
+      "email": "Email",
+      "project": "Proyekto",
+      "reason": "An ira rason .",
+      "registration": "Pagrehistro",
+      "registeredAt": "Narehistro ha",
+      "referral": "Pagrefer",
+      "heldMissing": "Waray mabilngi an gindumara nga rehistro.",
+      "resolutionTitle": "Desisyon",
+      "outcome": "Resulta",
+      "note": "Nota",
+      "decidedBy": "Gindesisyonan han .",
+      "decidedAt": "Nagdesisyon ha .",
+      "newRegistration": "Bag-o nga rehistro .",
+      "decideTitle": "Desisyoni ini nga araway .",
+      "noteLabel": "Tigamni nga nagsasaysay han desisyon (kinahanglanon)",
+      "noteRequired": "Pagsurat hin surat basi magdesisyon.",
+      "uphold": "Pag-undong .",
+      "overturn": "Pagbaliskad",
+      "upholdEffect": "{{holder}} nagtitipig han suki. Sarado na an araway ngan waray na iba nga nagbabag-o.",
+      "overturnEffect": "An doble nga panalipod han {{holder}} natapos yana ngan an suki in nahirehistro para han {{partner}} komo bag-o nga pagrehistro.",
+      "heldBookedHelp": "Ini nga suki in gin-book pinaagi han yana nga tag-iya. Kanselahon anay ito nga pag-book (Admin Override ha rehistro), katapos baliktaron:",
+      "confirmTitle": "Sigurado ka ba?",
+      "confirmUphold": "Oo, suportahan .",
+      "confirmOverturn": "Oo, pagbaliskad .",
+      "back": "Balik ha mga Pag-aragway ."
+    }
   }
 }

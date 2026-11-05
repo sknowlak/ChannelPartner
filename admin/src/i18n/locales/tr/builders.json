@@ -43,7 +43,9 @@
       "name": "İsim",
       "city": "Şehir",
       "status": "Durum",
-      "actions": "Eylemler"
+      "actions": "Eylemler",
+      "protection": "Yinelenen koruma",
+      "matchOn": "Kopyalar eşleşiyor"
     },
     "closeReferrals": "Yönlendirmeler için kapat",
     "reopen": "Yeniden aç",
@@ -55,6 +57,25 @@
       "add": "Proje Ekle",
       "created": "{{name}} oluşturuldu."
     },
-    "back": "İnşaatçılar'a geri dön"
+    "back": "İnşaatçılar'a geri dön",
+    "protection": {
+      "days_one": "{{count}} gün",
+      "days_other": "{{count}} gün",
+      "globalDays_one": "Genel varsayılan ( {{count}} gün)",
+      "globalDays_other": "Genel varsayılan ( {{count}} gün)",
+      "globalDefault": "Genel varsayılan",
+      "placeholder": "Koruma günleri (boş = genel varsayılan)",
+      "saved": "{{name}} için kopya koruması güncellendi.",
+      "hint": "Yinelenen koruma: 1-3650 gün veya Ayarlar'dan genel varsayılanı kullanmak için boş bırakın. Değişiklik yalnızca yeni kayıtlar için geçerlidir; mevcut kayıtların geçerlilik süresi devam eder."
+    },
+    "matching": {
+      "global": "Genel varsayılan",
+      "globalWith": "Genel varsayılan ( {{fields}} )",
+      "mobile": "Cep numarası",
+      "email": "E-posta",
+      "both": "Cep telefonu numarası + e-posta",
+      "saved": "{{name}} için yinelenen eşleştirme güncellendi",
+      "hint": "Hangi ayrıntılar, iki kaydın bir proje için aynı müşteri olmasını sağlar. Değişiklikler artık mükerrer çeklere uygulanacaktır; mevcut koruma etkilenmez."
+    }
   }
 }

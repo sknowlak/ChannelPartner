@@ -49,8 +49,73 @@
       "newPartnerId": "Yeni İş Ortağı ID",
       "reason": "Sebep (gerekli)",
       "apply": "Geçersiz Kılmayı Uygula",
-      "applying": "Başvuruluyor..."
+      "applying": "Başvuruluyor...",
+      "cancelBookingHint": "İptal, rezervasyonu ve komisyonunu iptal edilmiş olarak işaretler, operasyonel mülkiyeti ortağa iade eder ve inşaatçının bu müşteri adayını yeniden ayırtmasına olanak tanır.",
+      "cancelBookingConfirm": "Bu rezervasyon iptal edilsin mi? Onun komisyonu da iptal edildi. Bu, adınız ve nedeninizle birlikte günlüğe kaydedilir."
     },
-    "timelineTitle": "Denetim Zaman Çizelgesi (bu kayıt)"
+    "timelineTitle": "Denetim Zaman Çizelgesi (bu kayıt)",
+    "bookingStatus": "Rezervasyon Durumu",
+    "commissionAttribution": "Komisyon Atıfı",
+    "disputeOpen": "Bu müşteriyle ilgili bir mülkiyet anlaşmazlığı var; başka bir ortak bunun kendisine ait olduğunu söylüyor. Anlaşmazlıklar sayfasında karara bağlanır.",
+    "viewDisputes": "Anlaşmazlıkları görüntüle",
+    "cancellation": {
+      "title": "Rezervasyon iptal edildi",
+      "hint": "Rezervasyon ve komisyonu iptal edilir; operasyonel mülkiyet tekrar ortağa aittir ve inşaatçı bu fırsatı tekrar rezerve edebilir.",
+      "at": "İptal tarihi:",
+      "by": "Tarafından iptal edildi",
+      "reason": "Sebep"
+    }
+  },
+  "disputes": {
+    "title": "Mülkiyet Anlaşmazlıkları",
+    "hint": "Kaydı kopya olarak reddedilen bir iş ortağı, müşterinin sahibinin kim olduğuna itiraz edebilir. Her iki tarafı da inceleyip karar verin.",
+    "statusFilter": "Anlaşmazlık durumu",
+    "allStatuses": "Tüm durumlar",
+    "empty": "Bu statüyle ilgili hiçbir anlaşmazlık yok.",
+    "columns": {
+      "dispute": "Anlaşmazlık",
+      "customer": "Müşteri",
+      "project": "Proje",
+      "raisedBy": "tarafından büyütüldü",
+      "heldBy": "Şu anki sahibi",
+      "status": "Durum",
+      "raisedAt": "Yükseltilmiş"
+    },
+    "detail": {
+      "title": "Anlaşmazlık {{id}}",
+      "raisedOn": "Yükseltilmiş {{date}}",
+      "raisingTitle": "tarafından büyütüldü",
+      "holderTitle": "Şu anki sahibi",
+      "partner": "Ortak",
+      "raisedBy": "Gönderen",
+      "customerName": "Müşteri",
+      "mobile": "Mobil",
+      "alternateMobile": "Alternatif mobil",
+      "email": "E-posta",
+      "project": "Proje",
+      "reason": "Onların nedeni",
+      "registration": "Kayıt",
+      "registeredAt": "Kayıt tarihi",
+      "referral": "Yönlendirme",
+      "heldMissing": "Düzenlenen kayıt bulunamadı.",
+      "resolutionTitle": "Karar",
+      "outcome": "Sonuç",
+      "note": "Not",
+      "decidedBy": "Karar veren",
+      "decidedAt": "Karar verildi",
+      "newRegistration": "Yeni kayıt",
+      "decideTitle": "Bu anlaşmazlığa karar verin",
+      "noteLabel": "Kararı açıklayan not (gerekli)",
+      "noteRequired": "Karar vermek için bir not yazın.",
+      "uphold": "Destekle",
+      "overturn": "Devirmek",
+      "upholdEffect": "{{holder}} müşteriyi elinde tutuyor. Anlaşmazlık kapandı ve başka hiçbir şey değişmedi.",
+      "overturnEffect": "{{holder}} kullanıcısının kopya koruması artık sona ermektedir ve müşteri {{partner}} adına yeni bir kayıt olarak kayıtlıdır.",
+      "heldBookedHelp": "Bu müşteri mevcut sahibi aracılığıyla rezerve edildi. Önce bu rezervasyonu iptal edin (kayıt sırasında Yöneticinin Geçersiz Kılması), ardından iptal edin:",
+      "confirmTitle": "Emin misin?",
+      "confirmUphold": "Evet, destekle",
+      "confirmOverturn": "Evet, devril",
+      "back": "Anlaşmazlıklara Geri Dön"
+    }
   }
 }

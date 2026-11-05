@@ -30,7 +30,8 @@
       "registered": "Winnditaama"
     },
     "booked": "Deftere",
-    "empty": "Alaa ko neldaa tawo."
+    "empty": "Alaa ko neldaa tawo.",
+    "bookingCancelled": "Booking oo dartinaama"
   },
   "detail": {
     "customer": "Sodowo",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Booking ina tabitinaa.",
       "accepted": "Neldugol jaɓaama.",
-      "rejected": "Neldugol jaɓaaka."
+      "rejected": "Neldugol jaɓaaka.",
+      "bookingCancelled": "Booking oo dartinaama."
     },
-    "backToReferrals": "Hoto ngartu e Neldooji"
+    "backToReferrals": "Hoto ngartu e Neldooji",
+    "bookingCancelled": "Booking oo dartinaama",
+    "cancelBooking": "Woppude deftere",
+    "cancelReasonLabel": "Sabaabu ustude (hollitaaɗo e gollodiiɗo) *",
+    "cancelBookingHint": "Jeyi gollorɗo ina hoota to gollodiiɗo oo, kadi hakkeeji maɓɓe komisoŋ ina ustee. Lead ina waawi bookeede kadi caggal.",
+    "cancelBookingConfirm": "Woppude deftere ndee"
   },
   "history": {
     "title": "Tariya",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Hakke komisoŋ sosaa",
       "HANDOVER_COMPLETED": "Hando timmi",
       "ADMIN_PROTECTION_RELEASED": "Admin yaltinii ndeenka duppite ko yaawi. Sabaabu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin wayli binnditagol gila {{from}} haa {{to}} . Sabaabu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin wayli binnditagol gila {{from}} haa {{to}} . Sabaabu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Enndugol binnditagol ɗiɗmol ngol gollodiiɗo goɗɗo waɗi, saliima",
+      "BOOKING_CANCELLED": "Booking oo dartinaama. Sabaabu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Jeyi gollorɗo artii e gollodiiɗo oo",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Hakke komisoŋ ustaama e booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Hakke komisoŋ artiraa ngam booking keso oo"
     }
   }
 }

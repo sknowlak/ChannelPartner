@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Εκλέξιμος",
-    "PENDING": "Εκκρεμής"
+    "PENDING": "Εκκρεμής",
+    "CANCELLED": "Ακυρώθηκε"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Απελευθερώστε έγκαιρα την διπλή προστασία",
-    "REASSIGN_PARTNER": "Εκ νέου ανάθεση σε άλλο συνεργάτη"
+    "REASSIGN_PARTNER": "Εκ νέου ανάθεση σε άλλο συνεργάτη",
+    "CANCEL_BOOKING": "Ακύρωση κράτησης"
   },
   "dataType": {
     "TEXT": "Κείμενο",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super Admin",
     "ADMIN": "Διαχειρ"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Επιβεβαιωμένος",
+    "CANCELLED": "Ακυρώθηκε"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Αποδίδεται",
+    "DISPUTED": "αμφισβητείται"
+  },
+  "disputeStatus": {
+    "OPEN": "Ανοιχτό",
+    "UPHELD": "Υπεγειρώ",
+    "OVERTURNED": "Ανατράπηκε",
+    "WITHDRAWN": "Αποτραβηγμένος"
   }
 }

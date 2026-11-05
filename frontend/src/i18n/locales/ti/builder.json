@@ -30,7 +30,8 @@
       "registered": "ተመዝጊቡ ኣሎ።"
     },
     "booked": "ተሓዚኡ",
-    "empty": "ገና ሪፈራል የለን።"
+    "empty": "ገና ሪፈራል የለን።",
+    "bookingCancelled": "ምዝገባ ተሰሪዙ"
   },
   "detail": {
     "customer": "ዓሚል",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "ምዝገባ ተረጋጊጹ።",
       "accepted": "ሪፈራል ተቐባልነት ኣለዎ።",
-      "rejected": "ሪፈራል ተነጺጉ።"
+      "rejected": "ሪፈራል ተነጺጉ።",
+      "bookingCancelled": "ምዝገባ ተሰሪዙ።"
     },
-    "backToReferrals": "ናብ ሪፈራል ንመለስ"
+    "backToReferrals": "ናብ ሪፈራል ንመለስ",
+    "bookingCancelled": "ምዝገባ ተሰሪዙ",
+    "cancelBooking": "ምዝገባ ስርዝ ድልዝ",
+    "cancelReasonLabel": "ምኽንያት ምስራዝ (ንመጻምድቲ ተራእዩ) *",
+    "cancelBookingHint": "ስርሒታዊ ዋንነት ናብቲ መሻርኽቲ ይምለስ እሞ ብቑዕ ኮሚሽንኦም ይስረዝ። መሪሕነት ድሒሩ ዳግማይ ክሕተም ይኽእል እዩ።",
+    "cancelBookingConfirm": "ነቲ ምዝገባ ስርዝዎ።"
   },
   "history": {
     "title": "ታሪኽ",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "ብቕዓት ኮሚሽን ተፈጢሩ",
       "HANDOVER_COMPLETED": "ምትሕልላፍ ተዛዚሙ",
       "ADMIN_PROTECTION_RELEASED": "ኣድሚን ብኣግኡ ድፕሊኬት መከላኸሊ ኣውጺኡ። ምኽንያት {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "ኣድሚን ምዝገባ ካብ {{from}} ናብ {{to}} ዳግማይ መደቦ። ምኽንያት {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "ኣድሚን ምዝገባ ካብ {{from}} ናብ {{to}} ዳግማይ መደቦ። ምኽንያት {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "ብኻልእ መሻርኽቲ ዝተገብረ ተደጋጋሚ ናይ ምዝገባ ፈተነ ተነጺጉ",
+      "BOOKING_CANCELLED": "ምዝገባ ተሰሪዙ። ምኽንያት {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "ስርሒታዊ ዋንነት ናብቲ መሻርኽቲ ተመሊሱ",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "ብቕዓት ኮሚሽን ምስቲ ምዝገባ ተሰሪዙ",
+      "COMMISSION_ELIGIBILITY_RESTORED": "ንሓድሽ ምዝገባ ብቑዕነት ኮሚሽን ተመሊሱ"
     }
   }
 }

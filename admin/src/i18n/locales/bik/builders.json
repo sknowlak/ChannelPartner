@@ -43,7 +43,9 @@
       "name": "Pangaran",
       "city": "Siyudad",
       "status": "Estado",
-      "actions": "Mga Aksyon"
+      "actions": "Mga Aksyon",
+      "protection": "Proteksyon sa dobleng",
+      "matchOn": "An mga duplikado magkapareho sa"
     },
     "closeReferrals": "Isara para sa mga referral",
     "reopen": "Buksan giraray",
@@ -55,6 +57,25 @@
       "add": "Magdagdag nin Proyekto",
       "created": "Nagmukna nin {{name}} ."
     },
-    "back": "Balik sa mga Paratogdok"
+    "back": "Balik sa mga Paratogdok",
+    "protection": {
+      "days_one": "{{count}} aldaw",
+      "days_other": "{{count}} aldaw",
+      "globalDays_one": "Pankinaban na default ( {{count}} aldaw)",
+      "globalDays_other": "Pankinaban na default ( {{count}} aldaw)",
+      "globalDefault": "Pankinaban na default",
+      "placeholder": "Mga aldaw nin proteksyon (daing laog = pankinaban na default)",
+      "saved": "An duplikadong proteksyon pinag-update para sa {{name}} .",
+      "hint": "Proteksyon sa pagdoble: 1-3650 aldaw, o bayaan na mayong laog tanganing gamiton an pankinaban na default gikan sa Mga Setting. An pagbabago aplikado sana sa mga bagong rehistrasyon - an mga yaon na nagpapadanay kan saindang expiry."
+    },
+    "matching": {
+      "global": "Pankinaban na default",
+      "globalWith": "Pankinaban na default ( {{fields}} )",
+      "mobile": "Numero nin telepono",
+      "email": "Email",
+      "both": "Numero nin cellphone + email",
+      "saved": "An dobleng pagtugma pig-update para sa {{name}}",
+      "hint": "Kun arin na mga detalye an naggigibo kan duwang rehistrasyon na parehong parokyano para sa sarong proyekto. An mga pagbabago aplikado sa mga dobleng tseke poon ngonian; an eksistidong proteksyon dai apektado."
+    }
   }
 }

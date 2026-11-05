@@ -31,7 +31,8 @@
       "registered": "רָשׁוּם"
     },
     "booked": "הוזמן",
-    "empty": "אין עדיין הפניות."
+    "empty": "אין עדיין הפניות.",
+    "bookingCancelled": "ההזמנה בוטלה"
   },
   "detail": {
     "customer": "לָקוּחַ",
@@ -54,9 +55,15 @@
     "notice": {
       "booked": "ההזמנה אושרה.",
       "accepted": "הפנייה התקבלה.",
-      "rejected": "הפניה נדחתה."
+      "rejected": "הפניה נדחתה.",
+      "bookingCancelled": "ההזמנה בוטלה."
     },
-    "backToReferrals": "חזרה להפניות"
+    "backToReferrals": "חזרה להפניות",
+    "bookingCancelled": "ההזמנה בוטלה",
+    "cancelBooking": "בטל את ההזמנה",
+    "cancelReasonLabel": "סיבת הביטול (מוצגת לשותף) *",
+    "cancelBookingHint": "הבעלות התפעולית חוזרת לשותף וזכאותו לעמלה מתבטלת. ניתן להזמין שוב את ההובלה מאוחר יותר.",
+    "cancelBookingConfirm": "בטל את ההזמנה"
   },
   "history": {
     "title": "הִיסטוֹרִיָה",
@@ -87,7 +94,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "נוצרה זכאות לנציבות",
       "HANDOVER_COMPLETED": "המסירה הושלמה",
       "ADMIN_PROTECTION_RELEASED": "מנהל מערכת שחרר הגנה כפולה מוקדם. סיבה: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "מנהל המערכת הקצה מחדש את הרישום מ {{from}} ל- {{to}} . סיבה: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "מנהל המערכת הקצה מחדש את הרישום מ {{from}} ל- {{to}} . סיבה: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "ניסיון רישום כפול על ידי שותף אחר נדחה",
+      "BOOKING_CANCELLED": "ההזמנה בוטלה. סיבה: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "הבעלות התפעולית חזרה לשותף",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "זכאות העמלה בוטלה עם ההזמנה",
+      "COMMISSION_ELIGIBILITY_RESTORED": "הוחזרה זכאות הנציבות להזמנה החדשה"
     }
   }
 }

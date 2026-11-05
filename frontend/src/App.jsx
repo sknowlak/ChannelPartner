@@ -20,6 +20,9 @@ import IntegrationSources from './pages/IntegrationSources';
 import IntegrationApi from './pages/IntegrationApi';
 import EditTeamMember from './pages/EditTeamMember';
 import PartnerJourney from './pages/PartnerJourney';
+import RegistrationResult from './pages/RegistrationResult';
+import Dashboard from './pages/Dashboard';
+import MyDisputes from './pages/MyDisputes';
 import BuilderApp from './builder/BuilderApp';
 import { NavBackdrop, useNavDrawer } from './components/MenuButton';
 import Connectors from './pages/Connectors';
@@ -27,7 +30,7 @@ import LinkedInConnector from './pages/LinkedInConnector';
 
 function Home() {
   const { partner } = useAuth();
-  return <Navigate to={partner ? '/my-leads' : '/login'} replace />;
+  return <Navigate to={partner ? '/dashboard' : '/login'} replace />;
 }
 
 function RedirectToEditTeamMember() {
@@ -59,7 +62,9 @@ function PartnerApp() {
           <Route path="/login" element={<PartnerLogin />} />
           <Route path="/signup" element={<PartnerSignup />} />
 
+          <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
           <Route path="/my-leads" element={<ProtectedRoute><MyLeads /></ProtectedRoute>} />
+          <Route path="/disputes" element={<ProtectedRoute><MyDisputes /></ProtectedRoute>} />
           <Route path="/register-lead" element={<ProtectedRoute><RegisterLead /></ProtectedRoute>} />
           <Route path="/registrations/:registrationId/edit" element={<ProtectedRoute><EditLead /></ProtectedRoute>} />
           {/* Manage Team is its own top-level module, separate from Settings
@@ -88,6 +93,9 @@ function PartnerApp() {
           <Route path="/settings/team/roles" element={<Navigate to="/team/roles" replace />} />
           <Route path="/settings/profile" element={<Navigate to="/team/profile" replace />} />
           <Route path="/settings/team/:memberId/edit" element={<RedirectToEditTeamMember />} />
+          {/* Register Lead's outcome (accepted, or refused as a duplicate with
+              the option to dispute it) - more specific than :registrationId. */}
+          <Route path="/registrations/result" element={<ProtectedRoute><RegistrationResult /></ProtectedRoute>} />
           <Route path="/registrations/:registrationId" element={<ProtectedRoute><PartnerJourney /></ProtectedRoute>} />
         </Routes>
       </main>

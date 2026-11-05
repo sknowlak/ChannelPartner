@@ -29,7 +29,8 @@
       "registered": "Đăng ký"
     },
     "booked": "Đã đặt",
-    "empty": "Chưa có giới thiệu nào."
+    "empty": "Chưa có giới thiệu nào.",
+    "bookingCancelled": "Đã hủy đặt chỗ"
   },
   "detail": {
     "customer": "Khách hàng",
@@ -52,9 +53,15 @@
     "notice": {
       "booked": "Đặt phòng đã được xác nhận.",
       "accepted": "Lời giới thiệu được chấp nhận.",
-      "rejected": "Lời giới thiệu bị từ chối."
+      "rejected": "Lời giới thiệu bị từ chối.",
+      "bookingCancelled": "Đặt phòng bị hủy."
     },
-    "backToReferrals": "Quay lại giới thiệu"
+    "backToReferrals": "Quay lại giới thiệu",
+    "bookingCancelled": "Đã hủy đặt chỗ",
+    "cancelBooking": "Hủy đặt chỗ",
+    "cancelReasonLabel": "Lý do hủy (hiển thị cho đối tác) *",
+    "cancelBookingHint": "Quyền sở hữu hoạt động sẽ được trả lại cho đối tác và tính đủ điều kiện hưởng hoa hồng của họ sẽ bị hủy bỏ. Khách hàng tiềm năng có thể được đặt lại sau.",
+    "cancelBookingConfirm": "Hủy đặt chỗ"
   },
   "history": {
     "title": "Lịch sử",
@@ -81,7 +88,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Đã tạo đủ điều kiện hoa hồng",
       "HANDOVER_COMPLETED": "Bàn giao hoàn tất",
       "ADMIN_PROTECTION_RELEASED": "Quản trị viên đã phát hành tính năng bảo vệ trùng lặp sớm. Lý do: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Quản trị viên đã chỉ định lại đăng ký từ {{from}} thành {{to}} . Lý do: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Quản trị viên đã chỉ định lại đăng ký từ {{from}} thành {{to}} . Lý do: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Nỗ lực đăng ký trùng lặp của một đối tác khác đã bị từ chối",
+      "BOOKING_CANCELLED": "Đặt phòng bị hủy. Lý do: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Quyền sở hữu hoạt động được trả lại cho đối tác",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Tính đủ điều kiện hoa hồng bị hủy khi đặt phòng",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Tính đủ điều kiện hoa hồng được khôi phục cho lượt đặt phòng mới"
     }
   }
 }

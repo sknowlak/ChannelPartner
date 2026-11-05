@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Kubhukiwe",
-    "pending": "Lokulindzelwe"
+    "pending": "Lokulindzelwe",
+    "status": {
+      "CONFIRMED": "Kubhukiwe",
+      "CANCELLED": "Kubhuka kukhanseliwe"
+    }
   },
   "assign": {
     "unassigned": "Akukabelwa",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Kute iphrojekthi (ayikadluliselwa)",
-    "notInList": "{{project}} (hhayi eluhlwini lwephrojekthi)"
+    "notInList": "{{project}} (hhayi eluhlwini lwephrojekthi)",
+    "protectionDays_one": "{{count}} -kuvikelwa kwelilanga",
+    "protectionDays_other": "{{count}} -kuvikelwa kwelilanga"
   },
   "journey": {
     "customer": "Likhasimende",
@@ -76,7 +82,14 @@
     "progressHistory": "Umlandvo Wenchubekelembili",
     "timesIn": "(tikhatsi ku {{timezone}} )",
     "backToMyLeads": "Emuva ku Leads Yami",
-    "editLead": "Hlela Umholi"
+    "editLead": "Hlela Umholi",
+    "disputeBanner": "Lomunye umlingani uphikisane nebunikati baleli khasimende. Umphatsi Leadrat uyayibuyeketa - kuvikeleka kwakho kuhlala kukhona kuze kube ngulapho bancuma.",
+    "booking": "Kubhuka",
+    "commission": "Inzuzo, thuma",
+    "notBooked": "Akukabhukwa",
+    "cancelledOn": "Kukhanseliwe nga {{date}} .",
+    "cancelReason": "Sizatfu: {{reason}}",
+    "cancelledHint": "Umakhi ukhansele kubhuka - bunikati bekusebenta bubuyile kuwe futsi kufaneleka kwekhomishini kukhanseliwe. Ibuyiselwa uma umholi uphindze wabhukwa."
   },
   "referral": {
     "NOT_REFERRED": "Akudluliselwa (kute iphrojekthi)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Umakhi wemukele lokudluliselwa",
       "REFERRAL_REJECTED": "Builder wala lokudluliselwa. Sizatfu: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin ukhiphe kuvikeleka lokuphindvwe kabili kusenesikhatsi. Sizatfu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Umphatsi wabela kabusha kubhalisa kusuka ku {{from}} kuya ku {{to}} . Sizatfu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Umphatsi wabela kabusha kubhalisa kusuka ku {{from}} kuya ku {{to}} . Sizatfu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Umtamo wekubhalisa lophindvwe kabili lowentiwa ngulomunye umlingani waliwa",
+      "BOOKING_CANCELLED": "Kubhukha sekukhanseliwe. Sizatfu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Bunikazi bekusebenta bubuyiselwe kumlingani",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kufaneleka kweKhomishini kukhanseliwe ngekubhuka",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kufaneleka kweKhomishini kubuyiselwe ekubhukheni lokusha",
+      "OWNERSHIP_DISPUTE_RAISED": "Lomunye umlingani waphikisana nebunikati balelikhasimende - umphatsi we Leadrat utawubuyeketa",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Lencabano yebunikati kulelikhasimende ihoxisiwe - bunikati bakho abushintjwa",
+      "OWNERSHIP_DISPUTE_UPHELD": "Lencabano yebunikati balelikhasimende ibuyeketiwe - bunikati bakho bucinisekisiwe",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Ibhalisiwe ngemuva kwekutsi incabano yakho yebunikati incunywe ngekuvuna kwakho. Caphela: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Kuvikelwa kwaphela: incabano yebunikati yancunywa ngekuvuna lomunye umlingani. Caphela: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Lenombolo yelucingo ayisebenti ku {{country}} .",
     "COUNTRY_MISMATCH": "Sicela ukhetse ikhodi yelive lefanele.",
     "NOT_MOBILE": "Ucelwa kutsi ufake inombolo yeselula, hhayi lucingo lwasekhaya."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Ikhomishini iyafaneleka",
+      "PENDING": "Ikhomishini isalindzelwe",
+      "CANCELLED": "Ikhomishini ikhanseliwe"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Kushiwo nguwe",
+      "DISPUTED": "Kuphikiswana ngekubeka"
+    }
+  },
+  "result": {
+    "none": "Kute umphumela wekubhalisa lokutawukhonjiswa. Bhalisa umholi kucala.",
+    "acceptedTitle": "Kubhalisiwe",
+    "rejectedTitle": "Umholi akabhalisiwe",
+    "protectionWindow": "Lifasitelo Lekuvikela",
+    "protectedUntil": "Kuvikelwe Kuze kube ngu-2019.",
+    "openLead": "Vula umholi",
+    "addAnother": "Ngeta Lomunye Umholi",
+    "duplicate": "Kuphindzaphindza - sekuvele kuvikelekile",
+    "duplicateHint": "Lelikhasimende selivele livikelekile kulephrojekthi ngulenye indlela yekubhalisa, ngako-ke akuzange kubhaliswe wena.",
+    "existingProtectedUntil": "Kubhalisa lokukhona kuvikelekile kuze kube ngu-2019."
+  },
+  "disputes": {
+    "title": "Tincabano tami",
+    "intro": "Tingcoco tebunikati lotiphakamisele emakhasimende letaliwa njengetiphindvwe kabili. Umphatsi Leadrat ubuyeketa ngamunye.",
+    "empty": "Awuzange uphakamise tincabano. Uma ngabe likhasimende loliletse liyalelwa njengekuphindzaphindza, ungaliphikisana kusuka kumphumela wekubhaliswa.",
+    "columns": {
+      "dispute": "Phikisana",
+      "reason": "Sizatfu sakho",
+      "outcome": "Mphumela"
+    },
+    "status": {
+      "OPEN": "Kuyabuyeketwa",
+      "UPHELD": "Hhayi ngekuvumelana nawe",
+      "OVERTURNED": "Kuncunywe ngendlela levumelana nawe",
+      "WITHDRAWN": "Kuhoxisiwe"
+    },
+    "awaitingReview": "Ngilindzele kubuyeketwa ngumphatsi",
+    "openNewLead": "Vula umholi wakho {{id}}",
+    "withdraw": "Buyisa",
+    "withdrawConfirm": "Hocisa impikiswano yakho ye {{name}} ? Ubunikati lobukhona nyalo buhlala njengobe bunjalo.",
+    "raise": "Kuphikisana ngebunikati",
+    "raiseTitle": "Kuphikisana ngebunikati",
+    "raiseHint": "Nangabe lelikhasimende lifike kuwe kucala, chaza kutsi kungani. Umphatsi Leadrat utawuyibuyeketa; uma bancuma ngekuvumelana nawe, umholi ubhaliselwe wena.",
+    "reasonLabel": "Yini leyenta leli khasimende libe lakho?",
+    "reasonMin_one": "Okungenani {{count}} umlingisi.",
+    "reasonMin_other": "Okungenani {{count}} tinhlavu.",
+    "submit": "Tfumela Impikiswano",
+    "notProtected": "Kute umuntfu lophetse kuvikeleka kulelikhasimende lalephrojekthi - ungabhalisa umholi nyalo.",
+    "raised": "Impikiswano {{id}} itfunyelwe kutsi ibuyeketwe.",
+    "viewAll": "Buka tincabano tami"
+  },
+  "dashboard": {
+    "title": "Ideshibhodi",
+    "period": "Inkhatsi",
+    "lastDays_one": "{{count}} lilanga",
+    "lastDays_other": "{{count}} emalanga",
+    "emptyTitle": "Kwemukela! Awunato imikhondo kwanyalo.",
+    "emptyHint": "Bhalisa umholi wakho wekucala - umgca wakho wemaphayiphi, kubhukha kanye netinsuku tekuvikela titawuvela lapha.",
+    "tiles": {
+      "leads": "Linani selilonkhe lebantfu labaholako",
+      "newInPeriod_one": "{{count}} lokusha kulesikhatsi",
+      "newInPeriod_other": "{{count}} lokusha kulesikhatsi",
+      "accepted": "Kwemukelekile",
+      "booked": "Kubhukiwe",
+      "bookedInPeriod_one": "{{count}} kubhukwe ngalesikhatsi",
+      "bookedInPeriod_other": "{{count}} kubhukwe ngalesikhatsi",
+      "conversion": "Kugucula",
+      "conversionHint": "Ema-leads labhukiwe njengesabelo sema-leads lamukelekile",
+      "protectedNow": "Kuvikelekile nyalo",
+      "expiringSoon_one": "Kuvikeleka lokuphela ngelilanga {{count}}",
+      "expiringSoon_other": "Kuvikeleka lokuphela ngemalanga {{count}}",
+      "disputedNow": "Kuphikiswa ngulabanye",
+      "disputedNowHint": "Imihola yakho ngemphikiswano yebunikati levulekile levela kulomunye umlingani",
+      "commissionEligible": "Ikhomishini iyafaneleka",
+      "commissionCancelled_one": "{{count}} kukhanseliwe",
+      "commissionCancelled_other": "{{count}} kukhanseliwe"
+    },
+    "chart": {
+      "title_one": "Kubhalisa nekubhuka ngelilanga - lilanga lekugcina {{count}}",
+      "title_other": "Kubhalisa nekubhuka ngelilanga - emalanga ekugcina {{count}}",
+      "registrations": "Kubhalisa",
+      "bookings": "Kubhuka"
+    },
+    "byStage": "Uhola ngesimo",
+    "bySource": "Uhola ngemtfombo",
+    "byReferral": "Uhola ngesimo sekudluliselwa",
+    "myDisputes": "Tingcoco lotiphakamise",
+    "noDisputes": "Kute tincabano letiphakanyisiwe.",
+    "unknown": "Akusetwa",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM yangaphandle (lelingiswako)",
+      "PARTNER_CRM": "Kwengetwe licembu lakho",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Kuhlanganiswa",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Kuvikeleka kuphelelwa sikhatsi ngelilanga lelilandzelako {{count}}",
+    "expiringTitle_other": "Kuvikeleka kuphelelwa sikhatsi emalangeni lalandzelako {{count}}",
+    "expiringEmpty": "Kute umholi lolahlekelwa kuvikeleka kwawo kulelifasitela."
   }
 }

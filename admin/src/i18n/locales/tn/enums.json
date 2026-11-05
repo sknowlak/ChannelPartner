@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Senkega",
-    "PENDING": "Letetse"
+    "PENDING": "Letetse",
+    "CANCELLED": "E khansetswe"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Golola tshireletso ya dipoeletso go sa le gale",
-    "REASSIGN_PARTNER": "Abela molekane yo mongwe gape"
+    "REASSIGN_PARTNER": "Abela molekane yo mongwe gape",
+    "CANCEL_BOOKING": "Khansela peeletso"
   },
   "dataType": {
     "TEXT": "Sekwalwa",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Motsamaisi yo Mogolo",
     "ADMIN": "Motsamaisi"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Go netefaditswe",
+    "CANCELLED": "E khansetswe"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "E amana le",
+    "DISPUTED": "Go ganetsanwa"
+  },
+  "disputeStatus": {
+    "OPEN": "Bula",
+    "UPHELD": "E tshegeditswe",
+    "OVERTURNED": "E menotswe",
+    "WITHDRAWN": "E gogetswe morago"
   }
 }

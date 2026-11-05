@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Reservé",
-    "pending": "Xaarandi"
+    "pending": "Xaarandi",
+    "status": {
+      "CONFIRMED": "Reservé",
+      "CANCELLED": "Fomm nañu reservation bi"
+    }
   },
   "assign": {
     "unassigned": "joxu ñu ko",
@@ -58,7 +62,8 @@
   },
   "project": {
     "none": "Ba leegi amul projet (joxe wuñu ko)",
-    "notInList": "{{project}} (nekkul ci limu projet yi)"
+    "notInList": "{{project}} (nekkul ci limu projet yi)",
+    "protectionDays_other": "{{count}} -aar bis"
   },
   "journey": {
     "customer": "Kilimaa",
@@ -76,7 +81,14 @@
     "progressHistory": "Taarixu yokkute",
     "timesIn": "(waxtu yi ci {{timezone}} )",
     "backToMyLeads": "Dellu ci samay njiit",
-    "editLead": "Soppi njiit li"
+    "editLead": "Soppi njiit li",
+    "disputeBanner": "Beneen jàppantekat dafa xëccoo boroom kiliyaan bi. Admin Leadrat moo koy xoolaat - sa aar dina des ci barab bi ba ñuy jël dogal.",
+    "booking": "Reservation",
+    "commission": "Yónni",
+    "notBooked": "Reserve wuñu ko",
+    "cancelledOn": "Fomm nañu ko ci {{date}} .",
+    "cancelReason": "Sabab: {{reason}}",
+    "cancelledHint": "Tabaxkat bi dafa fomm reservation bi - boroom liggéey bi dellu na ci yaw te yelleefu komisioŋ bi dafa fomm. Dañu koy delloo sudee dañu bookwaat lead bi."
   },
   "referral": {
     "NOT_REFERRED": "Defu ñu ko (amul projet)",
@@ -158,7 +170,17 @@
       "REFERRAL_ACCEPTED": "Tabaxkat bi nanguna ñu yónnee ko",
       "REFERRAL_REJECTED": "Tabaxkat bi dafa bañ yónnee ko. Sabab: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin bi teela genne ñaari aar. Sabab: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin bi dafa soppi bindu bi ci {{from}} dem ci {{to}} . Sabab: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin bi dafa soppi bindu bi ci {{from}} dem ci {{to}} . Sabab: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Benn jéego bu beneen àndadoo def ñaari yoon, dañu ko bañ",
+      "BOOKING_CANCELLED": "Fomm nañu reservation bi. Sabab: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Delloosi na boroom liggéey bi ci naataango bi",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Fomm nañu yelleefu komisoŋ bi ci reservation bi",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Delloosi yelleefu komisioŋ ngir reservaasioŋ bu bees bi",
+      "OWNERSHIP_DISPUTE_RAISED": "Beneen naataango bi werante na boroom kiliyaan bii - admin Leadrat dina ko xoolaat",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Xeex bi amoon ci kiliyaan bi dindi nañu ko - sa moomeel soppikuwul",
+      "OWNERSHIP_DISPUTE_UPHELD": "Xoolaat nañu xëccoo bi am ci kiliyaan bi - sa moomeel firndeel nañu ko",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Bindu nañu ko ginaaw biñu dogalee sa xëccoo moomeel ci sa njariñ. Tegtal: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Aar bi jeexna: ñu dogal xëccoo moomeel bi ci njariñu beneen àndadoo. Tegtal: {{note}}"
     }
   },
   "columnsPanel": {
@@ -182,5 +204,100 @@
     "INVALID_FOR_COUNTRY": "Nimero telefon bii baaxul ci {{country}} .",
     "COUNTRY_MISMATCH": "Tannal kodu réew mi war.",
     "NOT_MOBILE": "Baalnu nga dugal sa nimero telefon, du nimero fixe."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisoŋ bi",
+      "PENDING": "Komisoŋ bi ñuy xaar",
+      "CANCELLED": "Fomm nañu komisioŋ bi"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Dañu ko jox",
+      "DISPUTED": "attribusioŋ bi ñuy werante"
+    }
+  },
+  "result": {
+    "none": "Amul benn resultaa bindu buñu wara wane. Bindal prospect bi njëkk.",
+    "acceptedTitle": "Lead biñ bind",
+    "rejectedTitle": "Lead bindul",
+    "protectionWindow": "Palanteer aar",
+    "protectedUntil": "Aar Ba",
+    "openLead": "Ubbi Lead",
+    "addAnother": "Yokk beneen njiit",
+    "duplicate": "Ñaari yoon - ñu jota aar",
+    "duplicateHint": "Kiliyaan bi amna beneen bindu buñu aaree ci projet bii, moo tax mënu ñu ko bindu ngir yaw.",
+    "existingProtectedUntil": "Bindu bi fi nekk ñu ngi koy aar ba"
+  },
+  "disputes": {
+    "title": "Samay xuloo",
+    "intro": "Tuutma ci wàllu moomeel gi nga taxawal ngir kiliyaan yi nga bañoon ñu def ko ñaari yoon. Admin Leadrat mooy xoolaat bu nekk ci ñoom.",
+    "empty": "Du ngeen indi benn xëccoo. Sudee kiliyaan bi nga indi dañu ko bañ ni ñaari yoon, mën nga ko weddi ci resultaa bindu bi.",
+    "columns": {
+      "dispute": "Xulóo",
+      "reason": "Sa sabab",
+      "outcome": "Njureef"
+    },
+    "status": {
+      "OPEN": "ñu ngi ciy xoolaat",
+      "UPHELD": "Du ci sa njariñ",
+      "OVERTURNED": "Dañu jël dogal ci sa njariñ",
+      "WITHDRAWN": "ñu dindi ko"
+    },
+    "awaitingReview": "Xaar admin xoolaat",
+    "openNewLead": "Ubbi sa prospect {{id}}",
+    "withdraw": "Jël",
+    "withdrawConfirm": "Delloosi sa xëccoo ngir {{name}} ? Boroom bi fi nekk mingi des nimu mel.",
+    "raise": "Tuutma ci moomeel",
+    "raiseTitle": "Tuutma ci moomeel",
+    "raiseHint": "Sudee kiliyaan bi moo njëkka ñëw ci yaw, wax ko luko waral. Admin Leadrat moo koy xoolaat; suñu jëlee dogal ci yaw, dañu la bindal kilifa gi.",
+    "reasonLabel": "Lu tax kiliyaan bi nekk sa kiliyaan?",
+    "reasonMin_other": "Lu mu néew {{count}} araf.",
+    "submit": "Yonnee Juuyoo",
+    "notProtected": "Kenn amatul kaaraange ci kiliyaan bi ci projet bii - mën nga bindu prospekt bi leegi.",
+    "raised": "Yonnee nañu tuuma {{id}} ngir ñu xoolaat ko.",
+    "viewAll": "Xoolal samay xëccoo"
+  },
+  "dashboard": {
+    "title": "Tablo dashboard",
+    "period": "Waxtu mbaax",
+    "lastDays_other": "{{count}} fan",
+    "emptyTitle": "Dalal ak jàmm! Ba leegi amul benn njiit.",
+    "emptyHint": "Bindal sa prospekt bu njëkk - sa pipeline, sa reservation ak sa waxtu aar dina ñu feeñ fii.",
+    "tiles": {
+      "leads": "Tolluwaayu prospect yi",
+      "newInPeriod_other": "{{count}} bu bees ci jamono jii",
+      "accepted": "Nanngu nañu ko",
+      "booked": "Reservé",
+      "bookedInPeriod_other": "{{count}} reservé ci diir bii",
+      "conversion": "Soppi",
+      "conversionHint": "Lead yiñ reserve ñu bokk ci prospect yiñ nangu",
+      "protectedNow": "Aar nañu leen leegi",
+      "expiringSoon_other": "Aar buy jeex ci {{count}} fan",
+      "disputedNow": "Ñeneen ñi dañu ko werante",
+      "disputedNowHint": "Sa njiit yi am xëccoo bu ubbeeku ci moomeel bu bawoo ci beneen jàppante",
+      "commissionEligible": "Komisoŋ bi",
+      "commissionCancelled_other": "{{count}} fomm"
+    },
+    "chart": {
+      "title_other": "Bindu ak reservation bis bu nekk - {{count}} fan yu mujj",
+      "registrations": "Bindu",
+      "bookings": "Réservations"
+    },
+    "byStage": "Leads ci statut",
+    "bySource": "Leads ci balluwaay bi",
+    "byReferral": "Leads ci anam wu ñuy yónnee",
+    "myDisputes": "Juuyoo yi nga indi",
+    "noDisputes": "Amul benn xëccoo buñ jog.",
+    "unknown": "defaruñu ko",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM bu biti (ñu simulé)",
+      "PARTNER_CRM": "Sa ekip moo ko yokk",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "boole",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_other": "Aar bi dina jeex ci {{count}} fan yii ci topp",
+    "expiringEmpty": "Amul benn plomb bu ñàkk kaaraangeem ci palanteer bii."
   }
 }

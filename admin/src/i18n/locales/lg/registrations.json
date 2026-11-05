@@ -49,8 +49,73 @@
       "newPartnerId": "ID Empya ey’Omukwanaganya",
       "reason": "Ensonga (ekyetaagisa) .",
       "apply": "Teeka mu nkola Override",
-      "applying": "Okusaba..."
+      "applying": "Okusaba...",
+      "cancelBookingHint": "Okusazaamu kiraga nti booking n’akakiiko kaayo nga byasaziddwamu, kizzaayo obwannannyini obw’emirimu eri omukwanaganya, era kireka omuzimbi okuddamu okubookinga okukulembera kuno.",
+      "cancelBookingConfirm": "Sazaamu booking eno? Akakiiko kaayo nako kasaziddwamu. Kino kiwandiikibwa n’erinnya lyo n’ensonga yo."
     },
-    "timelineTitle": "Ebiseera by’okubala ebitabo (okwewandiisa kuno) ."
+    "timelineTitle": "Ebiseera by’okubala ebitabo (okwewandiisa kuno) .",
+    "bookingStatus": "Embeera y'okubuuka",
+    "commissionAttribution": "Ebiwandiiko by’akakiiko",
+    "disputeOpen": "Enkaayana ku bwannannyini ziggule ku kasitoma ono - munne omulala agamba nti eyiye. Kisalibwawo ku lupapula lwa Enkaayana.",
+    "viewDisputes": "Laba enkaayana",
+    "cancellation": {
+      "title": "Booking esaziddwamu",
+      "hint": "Booking ne commission yaayo bisazibwamu; operational ownership ekomyewo ne partner era omuzimbi asobola okuddamu booking lead eno.",
+      "at": "Yasaziddwamu ku...",
+      "by": "Yasaziddwamu nga...",
+      "reason": "Ensonga"
+    }
+  },
+  "disputes": {
+    "title": "Enkaayana ku bwannannyini",
+    "hint": "Omubeezi eyagaanibwa okuwandiisa kwe ng’okukoppa asobola okukaayana ani nnannyini kasitoma. Weekenneenye enjuyi zombi osalewo.",
+    "statusFilter": "Embeera y’okukaayana",
+    "allStatuses": "Embeera zonna",
+    "empty": "Tewali nkaayana na mbeera eno.",
+    "columns": {
+      "dispute": "Empaka",
+      "customer": "Omuguzi",
+      "project": "Pulojekiti",
+      "raisedBy": "Yakuzibwa nga...",
+      "heldBy": "Nnannyini yo mu kiseera kino",
+      "status": "Ennyimirira",
+      "raisedAt": "Yakuzibwa ku..."
+    },
+    "detail": {
+      "title": "Enkaayana {{id}}",
+      "raisedOn": "Yasituddwa {{date}}",
+      "raisingTitle": "Yakuzibwa nga...",
+      "holderTitle": "Nnannyini yo mu kiseera kino",
+      "partner": "Munno",
+      "raisedBy": "Yaweereddwayo...",
+      "customerName": "Omuguzi",
+      "mobile": "Essimu",
+      "alternateMobile": "Essimu ey’enjawulo",
+      "email": "Email",
+      "project": "Pulojekiti",
+      "reason": "Ensonga yaabwe",
+      "registration": "Okwewandiisa",
+      "registeredAt": "Ewandiisiddwa ku...",
+      "referral": "Okusindikibwa",
+      "heldMissing": "Okwewandiisa okwakwatiddwa tekwazuuliddwa.",
+      "resolutionTitle": "Okusalawo",
+      "outcome": "Ebivudemu",
+      "note": "Ebbaluwa",
+      "decidedBy": "Esaliddwawo nga...",
+      "decidedAt": "Yasazeewo ku...",
+      "newRegistration": "Okwewandiisa okupya",
+      "decideTitle": "Salawo enkaayana zino",
+      "noteLabel": "Weetegereze nga onnyonnyola okusalawo (ekyetaagisa) .",
+      "noteRequired": "Wandiika akawandiiko okusalawo.",
+      "uphold": "Munywerere ku nsonga eno",
+      "overturn": "Okukyusakyusa",
+      "upholdEffect": "{{holder}} akuuma kasitoma. Enkaayana ziggaddwa era tewali kirala kikyuka.",
+      "overturnEffect": "Obukuumi bwa {{holder}} obw'okuddiŋŋana bukoma kati era kasitoma awandiisiddwa ku {{partner}} ng'okwewandiisa okupya.",
+      "heldBookedHelp": "Kasitoma ono abookinga ng’ayita mu nnannyini yo aliwo kati. Sooka osazeeko booking eyo (Admin Override ku registration), olwo okyuse:",
+      "confirmTitle": "Okakasa?",
+      "confirmUphold": "Yee, nyweza",
+      "confirmOverturn": "Yee, okukyusakyusa",
+      "back": "Okudda ku nkaayana"
+    }
   }
 }

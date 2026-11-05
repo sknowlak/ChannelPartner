@@ -8,6 +8,29 @@
     "rejectedRegistrations": "Rejected (Duplicate)",
     "pendingBookings": "Pending Booking",
     "totalBookings": "Total Bookings",
-    "totalCommissionEligible": "Commission Eligible"
+    "totalCommissionEligible": "Commission Eligible",
+    "openDisputes": "Open Disputes",
+    "cancelledBookings": "Cancelled Bookings"
+  },
+  "trend": {
+    "title": "Registrations - last 30 days",
+    "hint_one": "{{count}} registration in the last 30 days (days in UTC).",
+    "hint_other": "{{count}} registrations in the last 30 days (days in UTC).",
+    "chartLabel_one": "Bar chart of registrations per day over the last 30 days, {{count}} in total",
+    "chartLabel_other": "Bar chart of registrations per day over the last 30 days, {{count}} in total",
+    "barTitle": "{{date}}: {{count}}"
+  },
+  "leaderboard": {
+    "title": "Top partners",
+    "hint": "The 10 partners with the most bookings, then the most leads. Conversion = booked / accepted.",
+    "empty": "No registrations yet.",
+    "columns": {
+      "rank": "#",
+      "partner": "Partner",
+      "leads": "Leads",
+      "accepted": "Accepted",
+      "booked": "Booked",
+      "conversion": "Conversion"
+    }
   }
 }

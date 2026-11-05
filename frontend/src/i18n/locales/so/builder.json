@@ -30,7 +30,8 @@
       "registered": "diiwaan gashan"
     },
     "booked": "Boossaday",
-    "empty": "Wali lama soo gudbin"
+    "empty": "Wali lama soo gudbin",
+    "bookingCancelled": "Boos-dhigista waa la joojiyay"
   },
   "detail": {
     "customer": "Macmiil",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Ballanqaadku waa la xaqiijiyay.",
       "accepted": "Gudbinta waa la aqbalay",
-      "rejected": "Gudbinta waa la diiday."
+      "rejected": "Gudbinta waa la diiday.",
+      "bookingCancelled": "Boos qabsi waa la joojiyay"
     },
-    "backToReferrals": "Ku laabo tixraacyada"
+    "backToReferrals": "Ku laabo tixraacyada",
+    "bookingCancelled": "Boos-dhigista waa la joojiyay",
+    "cancelBooking": "Jooji Booska",
+    "cancelReasonLabel": "Sababta burinta (la tusay lamaanaha) *",
+    "cancelBookingHint": "Lahaanshaha hawlgalka waxay ku noqotaa lammaanaha oo u-qalmitaanka komishanka waa la joojiyay. Hogaanka ayaa mar kale ballansan kara hadhow.",
+    "cancelBookingConfirm": "Jooji ballansashada"
   },
   "history": {
     "title": "Taariikhda",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "U qalmida komishanka ayaa la abuuray",
       "HANDOVER_COMPLETED": "Xilwareejintu way dhammaatay",
       "ADMIN_PROTECTION_RELEASED": "Maamulka ayaa goor hore sii daayay ilaalin nuqul ah. Sababta: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Maamulku waxa uu dib u wakiishay diiwaangelinta {{from}} una wareejiyay {{to}} . Sababta: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Maamulku waxa uu dib u wakiishay diiwaangelinta {{from}} una wareejiyay {{to}} . Sababta: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Isku dayga diiwaan gelinta nuqul ka mid ah ee lammaane kale waa la diiday",
+      "BOOKING_CANCELLED": "Boos qabsi waa la joojiyay Sababta: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Lahaanshaha hawlgalka ayaa lagu soo celiyay lammaanaha",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "U-qalmitaanka komishanka waa la joojiyay ballanta",
+      "COMMISSION_ELIGIBILITY_RESTORED": "U-qalmitaanka komishanka ayaa dib loogu soo celiyay ballan-qaadka cusub"
     }
   }
 }

@@ -21,6 +21,8 @@ const { getSettingsHandler, updateSettingsHandler } = require('../controllers/ad
 const { getDashboardSummary } = require('../controllers/admin/dashboardController');
 const fieldDefinitionController = require('../controllers/admin/fieldDefinitionController');
 const builderAdmin = require('../controllers/admin/builderAdminController');
+const disputeAdmin = require('../controllers/admin/disputeAdminController');
+const { logoutHandler } = require('../services/tokenRevocation');
 
 const router = express.Router();
 
@@ -36,6 +38,7 @@ router.post('/auth/login', loginRateLimit, login);
 // Everything below requires a valid admin bearer token
 router.use(adminAuth);
 
+router.post('/auth/logout', logoutHandler);
 router.get('/auth/me', me);
 router.patch('/auth/me', updateMe);
 
@@ -58,6 +61,11 @@ router.get('/registrations/:registrationId/audit', getRegistrationAudit);
 router.post('/registrations/:registrationId/override', overrideRegistration);
 
 router.get('/audit', listAudit);
+
+// Ownership disputes (section 62) - any admin may look, resolving is audited.
+router.get('/disputes', disputeAdmin.listDisputes);
+router.get('/disputes/:disputeId', disputeAdmin.getDispute);
+router.post('/disputes/:disputeId/resolve', disputeAdmin.resolveDispute);
 
 // Builders, their portal users and projects (section 52) - Super Admin only
 // for changes, since they decide who can see which referrals.

@@ -29,7 +29,8 @@
       "registered": "Kadhaftar"
     },
     "booked": "dipesen",
-    "empty": "Durung ana pitunjuk."
+    "empty": "Durung ana pitunjuk.",
+    "bookingCancelled": "Booking dibatalake"
   },
   "detail": {
     "customer": "Pelanggan",
@@ -52,9 +53,15 @@
     "notice": {
       "booked": "Booking dikonfirmasi.",
       "accepted": "Rujukan ditampa.",
-      "rejected": "Rujukan ditolak."
+      "rejected": "Rujukan ditolak.",
+      "bookingCancelled": "Booking dibatalake."
     },
-    "backToReferrals": "Bali menyang Rujukan"
+    "backToReferrals": "Bali menyang Rujukan",
+    "bookingCancelled": "Booking dibatalake",
+    "cancelBooking": "Batal Booking",
+    "cancelReasonLabel": "Alesan kanggo mbatalake (dituduhake menyang partner) *",
+    "cancelBookingHint": "Kepemilikan operasional bali menyang mitra lan hak komisi dibatalake. Timbal bisa dipesen maneh mengko.",
+    "cancelBookingConfirm": "Batal pesenan"
   },
   "history": {
     "title": "Sajarah",
@@ -81,7 +88,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kelayakan komisi digawe",
       "HANDOVER_COMPLETED": "Handover rampung",
       "ADMIN_PROTECTION_RELEASED": "Admin ngeculake proteksi duplikat luwih awal. Alesan: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin ngganti registrasi saka {{from}} menyang {{to}} . Alesan: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin ngganti registrasi saka {{from}} menyang {{to}} . Alesan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Upaya registrasi duplikat dening mitra liya ditolak",
+      "BOOKING_CANCELLED": "Booking dibatalake. Alesan: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Kepemilikan operasional bali menyang mitra",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kelayakan komisi dibatalake kanthi pesenan",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kelayakan Komisi dibalekake kanggo pesenan anyar"
     }
   }
 }

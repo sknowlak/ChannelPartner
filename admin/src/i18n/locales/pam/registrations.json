@@ -49,8 +49,73 @@
       "newPartnerId": "Bayung Partner ID",
       "reason": "sangkan (kailangan)",
       "apply": "I-apply ing Override",
-      "applying": "Mag apply..."
+      "applying": "Mag apply...",
+      "cancelBookingHint": "Ing pamagkansela tatanda ne ing booking ampo ing kayang komisyun bilang mekansela, magbalik ya ing operational ownership keng partner, ampo paburen neng magbook pasibayu ing builder ining lead.",
+      "cancelBookingConfirm": "Ikansela me ing booking ayni? Kanseladu ya naman ing komisyun na. Maka-log ya ini keng kekang lagyu ampo sangkan."
     },
-    "timelineTitle": "Audit Timeline (ini registration)"
+    "timelineTitle": "Audit Timeline (ini registration)",
+    "bookingStatus": "Status ning Pamag-book",
+    "commissionAttribution": "Commission Attribution",
+    "disputeOpen": "Ing pamipatepate keng pamanyakup makabuklat ya keng customer ayni - ing aliwang partner sasabyan na karela ya. Iti metung yang desisyun keng Disputes page.",
+    "viewDisputes": "lawan la reng pamipatepate",
+    "cancellation": {
+      "title": "Kanseladu ya ing booking",
+      "hint": "Ing booking ampo ing komisyun na kanseladu la; ing operational ownership mibalik ya keng partner at ing builder malyari neng i-book pasibayu ing lead a ini.",
+      "at": "mekansela ya keng",
+      "by": "mekansela ya keng",
+      "reason": "Rasun"
+    }
+  },
+  "disputes": {
+    "title": "Pamipatepate king Pamag-ari",
+    "hint": "Ing partner na ing kayang registration me-reject ya bilang duplicate malyari yang makipag-dispute nung ninu ing makibandi keng customer. lawan la reng adwang panig at magdesisyun ka.",
+    "statusFilter": "katayuan ning pamipatepate",
+    "allStatuses": "Deng eganaganang status",
+    "empty": "Ala kung pamipatepate keng katayuan ayni.",
+    "columns": {
+      "dispute": "Tatua",
+      "customer": "Suki",
+      "project": "Proyektu",
+      "raisedBy": "Peparagul neng",
+      "heldBy": "Kasalukuyan a makibandi",
+      "status": "Kabilyan",
+      "raisedAt": "Meragul ya keng"
+    },
+    "detail": {
+      "title": "Dispute {{id}}",
+      "raisedOn": "Mitas ya {{date}}",
+      "raisingTitle": "Peparagul neng",
+      "holderTitle": "Kasalukuyan a makibandi",
+      "partner": "Sangga",
+      "raisedBy": "Pepadala neng",
+      "customerName": "Suki",
+      "mobile": "Makabungcal",
+      "alternateMobile": "Alternative mobile",
+      "email": "Email",
+      "project": "Proyektu",
+      "reason": "Ing sangkan da",
+      "registration": "Pamaglista",
+      "registeredAt": "makalista ya keng",
+      "referral": "Referral",
+      "heldMissing": "E ya mayakit ing registration.",
+      "resolutionTitle": "Desisyun",
+      "outcome": "Kelabasan",
+      "note": "Kasurat",
+      "decidedBy": "Megdesisyun ya keng",
+      "decidedAt": "Megdesisyun ya keng",
+      "newRegistration": "Bayung registration",
+      "decideTitle": "Desisyunan me ining pamipatepate",
+      "noteLabel": "Tandanan na magpaliwanag keng desisyun (kailangan)",
+      "noteRequired": "Sumulat kang tala para magdesisyun.",
+      "uphold": "I-uphold",
+      "overturn": "Baligtad",
+      "upholdEffect": "{{holder}} ing tatalan keng customer. Ing pamipatepate mesara ya at ala nang aliwa pang magbayu.",
+      "overturnEffect": "{{holder}} 's duplicate protection meyari ne ngeni at ing customer makarehistru ya para keng {{partner}} bilang bayung pamagrehistru.",
+      "heldBookedHelp": "Ing customer ayni me-book ya kapamilatan ning kasalukuyan a makibandi. I-cancel me ing booking mu (Admin Override ing registration), kaybat i-overturn me:",
+      "confirmTitle": "Siguradu ka?",
+      "confirmUphold": "Wa, suportan",
+      "confirmOverturn": "Wa, mibaliktad",
+      "back": "Mibalik kareng Disputes"
+    }
   }
 }

@@ -30,7 +30,8 @@
       "registered": "నమోదైంది"
     },
     "booked": "బుక్ చేసుకున్నారు",
-    "empty": "ఇంకా సిఫార్సులు లేవు."
+    "empty": "ఇంకా సిఫార్సులు లేవు.",
+    "bookingCancelled": "బుకింగ్ రద్దు చేయబడింది"
   },
   "detail": {
     "customer": "కస్టమర్",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "బుకింగ్ నిర్ధారించబడింది.",
       "accepted": "రెఫరల్ ఆమోదించబడింది.",
-      "rejected": "రెఫరల్ తిరస్కరించబడింది."
+      "rejected": "రెఫరల్ తిరస్కరించబడింది.",
+      "bookingCancelled": "బుకింగ్ రద్దు చేయబడింది."
     },
-    "backToReferrals": "తిరిగి రెఫరల్స్కి"
+    "backToReferrals": "తిరిగి రెఫరల్స్కి",
+    "bookingCancelled": "బుకింగ్ రద్దు చేయబడింది",
+    "cancelBooking": "బుకింగ్ రద్దు చేయండి",
+    "cancelReasonLabel": "రద్దు చేయడానికి కారణం (భాగస్వామికి చూపబడింది) *",
+    "cancelBookingHint": "కార్యాచరణ యాజమాన్యం భాగస్వామికి తిరిగి వెళుతుంది మరియు వారి కమీషన్ అర్హత రద్దు చేయబడుతుంది. లీడ్‌ని తర్వాత మళ్లీ బుక్ చేసుకోవచ్చు.",
+    "cancelBookingConfirm": "బుకింగ్‌ని రద్దు చేయండి"
   },
   "history": {
     "title": "చరిత్ర",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "కమిషన్ అర్హత సృష్టించబడింది",
       "HANDOVER_COMPLETED": "అప్పగింత పూర్తయింది",
       "ADMIN_PROTECTION_RELEASED": "అడ్మిన్ ముందుగానే నకిలీ రక్షణను విడుదల చేసారు. కారణం: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "నిర్వాహకుడు రిజిస్ట్రేషన్‌ని {{from}} నుండి {{to}} కి తిరిగి కేటాయించారు. కారణం: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "నిర్వాహకుడు రిజిస్ట్రేషన్‌ని {{from}} నుండి {{to}} కి తిరిగి కేటాయించారు. కారణం: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "మరొక భాగస్వామి చేసిన నకిలీ నమోదు ప్రయత్నం తిరస్కరించబడింది",
+      "BOOKING_CANCELLED": "బుకింగ్ రద్దు చేయబడింది. కారణం: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "కార్యాచరణ యాజమాన్యం భాగస్వామికి తిరిగి వచ్చింది",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "బుకింగ్‌తో కమీషన్ అర్హత రద్దు చేయబడింది",
+      "COMMISSION_ELIGIBILITY_RESTORED": "కొత్త బుకింగ్ కోసం కమిషన్ అర్హత పునరుద్ధరించబడింది"
     }
   }
 }

@@ -49,8 +49,73 @@
       "newPartnerId": "Nýtt ID samstarfsaðila",
       "reason": "Ástæða (krafist)",
       "apply": "Notaðu hnekkja",
-      "applying": "Er að sækja um..."
+      "applying": "Er að sækja um...",
+      "cancelBookingHint": "Afpöntun merkir bókunina og þóknun hennar sem ógilda, skilar rekstrareignarhaldi til samstarfsaðilans og gerir byggingaraðilanum kleift að bóka þetta kaup aftur.",
+      "cancelBookingConfirm": "Hætta við þessa bókun? Þóknun þess fellur líka niður. Þetta er skráð með nafni þínu og ástæðu."
     },
-    "timelineTitle": "Tímalína endurskoðunar (þessi skráning)"
+    "timelineTitle": "Tímalína endurskoðunar (þessi skráning)",
+    "bookingStatus": "Bókunarstaða",
+    "commissionAttribution": "Úthlutun þóknunar",
+    "disputeOpen": "Ágreiningur um eignarhald er opinn á þessum viðskiptavini - annar samstarfsaðili segir að hann sé þeirra. Það er ákveðið á síðunni Deilur.",
+    "viewDisputes": "Skoða deilur",
+    "cancellation": {
+      "title": "Bókun aflýst",
+      "hint": "Bókunin og þóknun hennar falla niður; rekstrarlegt eignarhald er aftur hjá samstarfsaðilanum og byggingaraðili getur bókað þetta forskot aftur.",
+      "at": "Hætt við kl",
+      "by": "Hætt við af",
+      "reason": "Ástæða"
+    }
+  },
+  "disputes": {
+    "title": "Deilur um eignarhald",
+    "hint": "Samstarfsaðili þar sem skráningu var hafnað sem afrit getur deilt um hver á viðskiptavininn. Farið yfir báðar hliðar og ákveðið.",
+    "statusFilter": "Staða deilumála",
+    "allStatuses": "Allar stöður",
+    "empty": "Enginn ágreiningur um þessa stöðu.",
+    "columns": {
+      "dispute": "Ágreiningur",
+      "customer": "Viðskiptavinur",
+      "project": "Verkefni",
+      "raisedBy": "Alinn upp við",
+      "heldBy": "Núverandi eigandi",
+      "status": "Staða",
+      "raisedAt": "Alinn upp á"
+    },
+    "detail": {
+      "title": "Ágreiningur {{id}}",
+      "raisedOn": "Uppalinn {{date}}",
+      "raisingTitle": "Alinn upp við",
+      "holderTitle": "Núverandi eigandi",
+      "partner": "Félagi",
+      "raisedBy": "Lagt fram af",
+      "customerName": "Viðskiptavinur",
+      "mobile": "Farsími",
+      "alternateMobile": "Varamaður farsíma",
+      "email": "Tölvupóstur",
+      "project": "Verkefni",
+      "reason": "Ástæða þeirra",
+      "registration": "Skráning",
+      "registeredAt": "Skráð á",
+      "referral": "Tilvísun",
+      "heldMissing": "Skráningin sem haldið var fannst ekki.",
+      "resolutionTitle": "Ákvörðun",
+      "outcome": "Niðurstaða",
+      "note": "Athugið",
+      "decidedBy": "Ákveðið af",
+      "decidedAt": "Ákveðið",
+      "newRegistration": "Ný skráning",
+      "decideTitle": "Ákveða þessa deilu",
+      "noteLabel": "Athugasemd sem útskýrir ákvörðunina (áskilið)",
+      "noteRequired": "Skrifaðu minnismiða til að ákveða.",
+      "uphold": "Halda uppi",
+      "overturn": "Hvolft",
+      "upholdEffect": "{{holder}} heldur viðskiptavininum. Deilunni er lokið og ekkert annað breytist.",
+      "overturnEffect": "Tvítekningarvernd {{holder}} lýkur núna og viðskiptavinurinn er skráður fyrir {{partner}} sem nýskráning.",
+      "heldBookedHelp": "Þessi viðskiptavinur er bókaður í gegnum núverandi eiganda. Hættu við þá bókun fyrst (Hneka stjórnanda á skráningu) og hnekktu síðan:",
+      "confirmTitle": "Ertu viss?",
+      "confirmUphold": "Já, haltu",
+      "confirmOverturn": "Já, velta",
+      "back": "Aftur í Deilur"
+    }
   }
 }

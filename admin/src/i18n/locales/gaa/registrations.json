@@ -49,8 +49,73 @@
       "newPartnerId": "Hefatalɔ ID hee",
       "reason": "Yiŋtoo (he hia)",
       "apply": "Kɛ Override Atsu Nii",
-      "applying": "Miitsu nii..."
+      "applying": "Miitsu nii...",
+      "cancelBookingHint": "Kɛji akɛ afo mli lɛ, ekadiɔ he ni ato lɛ kɛ nitsumɔ ni etsuɔ ​​lɛ akɛ afo mli, ekɛ nitsumɔ lɛ nɔyeli lɛ kuɔ sɛɛ ehaa hefatalɔ lɛ, ni ehaa tsumalɔ lɛ ŋmaa gbɛtsɔɔmɔ nɛɛ ekoŋŋ.",
+      "cancelBookingConfirm": "Ani obaafo nɛkɛ be nɛɛ mli? Afoɔ enitsumɔ lɛ hu mli. Akɛ ogbɛi kɛ yiŋtoo lɛ woɔ enɛ mli."
     },
-    "timelineTitle": "Akɔntaabuu be (gbɛi aŋmalamɔ nɛɛ)"
+    "timelineTitle": "Akɔntaabuu be (gbɛi aŋmalamɔ nɛɛ)",
+    "bookingStatus": "Shihilɛ ni Akɛtoɔ He",
+    "commissionAttribution": "Nitsumɔ ni Akɛhaa",
+    "disputeOpen": "Nɔyeli he ŋwanejee ko egbele yɛ nɛkɛ jarayelɔ nɛɛ he - hefatalɔ kroko kɛɛ amɛ nɔ ni. Akpɛɔ yiŋ yɛ Disputes baafa lɛ nɔ.",
+    "viewDisputes": "Kwɛmɔ béi",
+    "cancellation": {
+      "title": "Afo he ni ato lɛ mli",
+      "hint": "Afoɔ booking lɛ kɛ e-commission lɛ mli; nitsumɔ mli nyɔŋyeli lɛ eku esɛɛ kɛba hefatalɔ lɛ ŋɔɔ ni tsumalɔ lɛ baanyɛ aŋmala nɛkɛ gbɛtsɔɔmɔ nɛɛ ekoŋŋ.",
+      "at": "Afo mli yɛ",
+      "by": "Afo mli kɛtsɔ",
+      "reason": "Nɔhewɔ"
+    }
+  },
+  "disputes": {
+    "title": "Nɔyeli He ŋwanejeei",
+    "hint": "Hefatalɔ ni akpoo egbɛi aŋmalamɔ akɛ eji nɔ ni ji enyɔ lɛ baanyɛ aje mɔ ni ji jarayelɔ lɛ he ŋwane. Kwɛmɔ fãi enyɔ lɛ fɛɛ mli ni okpɛ oyiŋ.",
+    "statusFilter": "ŋwanejee shihilɛ",
+    "allStatuses": "Shihilɛi fɛɛ",
+    "empty": "ŋwanejee ko bɛ kɛ shihilɛ nɛɛ.",
+    "columns": {
+      "dispute": "Bei",
+      "customer": "Kɔstɔma",
+      "project": "Projɛti",
+      "raisedBy": "Atsɔse lɛ kɛtsɔ",
+      "heldBy": "Amrɔ nɛɛ nuŋtsɔ",
+      "status": "Heni odamɔ",
+      "raisedAt": "Atsɔse lɛ nɔ"
+    },
+    "detail": {
+      "title": "ŋwanejee {{id}}",
+      "raisedOn": "Awo nɔ {{date}}",
+      "raisingTitle": "Atsɔse lɛ kɛtsɔ",
+      "holderTitle": "Amrɔ nɛɛ nuŋtsɔ",
+      "partner": "Hefatalɔ",
+      "raisedBy": "Akɛmaje kɛtsɔ",
+      "customerName": "Kɔstɔma",
+      "mobile": "Mobail",
+      "alternateMobile": "Mobail kroko",
+      "email": "Email",
+      "project": "Projɛti",
+      "reason": "Amɛyiŋtoo lɛ",
+      "registration": "Woloŋmaa",
+      "registeredAt": "Akɛ gbɛi wo mli yɛ",
+      "referral": "Tsɔɔmɔ",
+      "heldMissing": "Anaaa wolo ni aŋmalaa mɛi agbɛi awoɔ mli lɛ.",
+      "resolutionTitle": "Feemɔ jweimɔ yɛ noko he",
+      "outcome": "Sɛɛnamɔ",
+      "note": "Niŋmaa",
+      "decidedBy": "Akpɛ yiŋ kɛtsɔ",
+      "decidedAt": "Akpɛ yiŋ yɛ he",
+      "newRegistration": "Niŋmaa hee",
+      "decideTitle": "Kpeemɔ sanegbaa nɛɛ he yiŋ",
+      "noteLabel": "Kaadimɔ ni tsɔɔ yiŋkpɛɛ lɛ mli (ehe miihia)",
+      "noteRequired": "Ŋmaa nɔ ko ni okɛkpɛ oyiŋ.",
+      "uphold": "Fiɔ sɛɛ",
+      "overturn": "Tsɔɔmɔ",
+      "upholdEffect": "{{holder}} hiɛɔ jarayelɔ lɛ. Agbe béi lɛ naa ni nɔ kroko tsakeee.",
+      "overturnEffect": "{{holder}} 's hebuu ni ji enyɔ lɛ baa naagbee bianɛ ni aŋmala jarayelɔ lɛ gbɛi awo {{partner}} akɛ gbɛi hee.",
+      "heldBookedHelp": "Akɛ nɛkɛ jarayelɔ nɛɛ he gbɛjianɔtoo haa kɛtsɔ nuŋtsɔ ni yɔɔ amrɔ nɛɛ nɔ. Fo nakai be lɛ mli klɛŋklɛŋ (Admin Override yɛ woloŋmaa lɛ nɔ), ni otsake:",
+      "confirmTitle": "Ani oyɛ nɔmimaa?",
+      "confirmUphold": "Hɛɛ, fimɔ sɛɛ",
+      "confirmOverturn": "Hɛɛ, sɛɛkuu",
+      "back": "Ku sɛɛ kɛya ŋwanejeei lɛ anɔ"
+    }
   }
 }

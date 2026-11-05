@@ -30,7 +30,8 @@
       "registered": "ਰਜਿਸਟਰਡ"
     },
     "booked": "ਬੁੱਕ ਕੀਤਾ",
-    "empty": "ਅਜੇ ਕੋਈ ਰੈਫਰਲ ਨਹੀਂ।"
+    "empty": "ਅਜੇ ਕੋਈ ਰੈਫਰਲ ਨਹੀਂ।",
+    "bookingCancelled": "ਬੁਕਿੰਗ ਰੱਦ ਕੀਤੀ ਗਈ"
   },
   "detail": {
     "customer": "ਗਾਹਕ",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "ਬੁਕਿੰਗ ਦੀ ਪੁਸ਼ਟੀ ਹੋਈ।",
       "accepted": "ਰੈਫਰਲ ਸਵੀਕਾਰ ਕਰ ਲਿਆ ਗਿਆ।",
-      "rejected": "ਰੈਫਰਲ ਅਸਵੀਕਾਰ ਕੀਤਾ ਗਿਆ।"
+      "rejected": "ਰੈਫਰਲ ਅਸਵੀਕਾਰ ਕੀਤਾ ਗਿਆ।",
+      "bookingCancelled": "ਬੁਕਿੰਗ ਰੱਦ ਕੀਤੀ ਗਈ।"
     },
-    "backToReferrals": "ਰੈਫ਼ਰਲ 'ਤੇ ਵਾਪਸ ਜਾਓ"
+    "backToReferrals": "ਰੈਫ਼ਰਲ 'ਤੇ ਵਾਪਸ ਜਾਓ",
+    "bookingCancelled": "ਬੁਕਿੰਗ ਰੱਦ ਕੀਤੀ ਗਈ",
+    "cancelBooking": "ਬੁਕਿੰਗ ਰੱਦ ਕਰੋ",
+    "cancelReasonLabel": "ਰੱਦ ਕਰਨ ਦਾ ਕਾਰਨ (ਸਾਥੀ ਨੂੰ ਦਿਖਾਇਆ ਗਿਆ) *",
+    "cancelBookingHint": "ਸੰਚਾਲਨ ਮਲਕੀਅਤ ਪਾਰਟਨਰ ਕੋਲ ਵਾਪਸ ਚਲੀ ਜਾਂਦੀ ਹੈ ਅਤੇ ਉਹਨਾਂ ਦੀ ਕਮਿਸ਼ਨ ਯੋਗਤਾ ਰੱਦ ਕਰ ਦਿੱਤੀ ਜਾਂਦੀ ਹੈ। ਲੀਡ ਨੂੰ ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਬੁੱਕ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।",
+    "cancelBookingConfirm": "ਬੁਕਿੰਗ ਰੱਦ ਕਰੋ"
   },
   "history": {
     "title": "ਇਤਿਹਾਸ",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "ਕਮਿਸ਼ਨ ਦੀ ਯੋਗਤਾ ਬਣਾਈ ਗਈ ਹੈ",
       "HANDOVER_COMPLETED": "ਹੈਂਡਓਵਰ ਪੂਰਾ ਹੋਇਆ",
       "ADMIN_PROTECTION_RELEASED": "ਐਡਮਿਨ ਨੇ ਡੁਪਲੀਕੇਟ ਸੁਰੱਖਿਆ ਨੂੰ ਜਲਦੀ ਜਾਰੀ ਕੀਤਾ। ਕਾਰਨ: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "ਪ੍ਰਸ਼ਾਸਕ ਨੇ {{from}} ਤੋਂ {{to}} ਤੱਕ ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਦੁਬਾਰਾ ਸੌਂਪੀ। ਕਾਰਨ: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "ਪ੍ਰਸ਼ਾਸਕ ਨੇ {{from}} ਤੋਂ {{to}} ਤੱਕ ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਦੁਬਾਰਾ ਸੌਂਪੀ। ਕਾਰਨ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "ਕਿਸੇ ਹੋਰ ਸਾਥੀ ਦੁਆਰਾ ਡੁਪਲੀਕੇਟ ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਨੂੰ ਰੱਦ ਕਰ ਦਿੱਤਾ ਗਿਆ ਸੀ",
+      "BOOKING_CANCELLED": "ਬੁਕਿੰਗ ਰੱਦ ਕੀਤੀ ਗਈ। ਕਾਰਨ: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "ਸੰਚਾਲਨ ਮਲਕੀਅਤ ਪਾਰਟਨਰ ਨੂੰ ਵਾਪਸ ਕਰ ਦਿੱਤੀ ਗਈ ਹੈ",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "ਬੁਕਿੰਗ ਦੇ ਨਾਲ ਕਮਿਸ਼ਨ ਯੋਗਤਾ ਰੱਦ ਕਰ ਦਿੱਤੀ ਗਈ ਹੈ",
+      "COMMISSION_ELIGIBILITY_RESTORED": "ਨਵੀਂ ਬੁਕਿੰਗ ਲਈ ਕਮਿਸ਼ਨ ਯੋਗਤਾ ਬਹਾਲ ਕੀਤੀ ਗਈ"
     }
   }
 }

@@ -43,7 +43,9 @@
       "name": "Naam",
       "city": "Stad",
       "status": "Status",
-      "actions": "Aksies"
+      "actions": "Aksies",
+      "protection": "Duplikaatbeskerming",
+      "matchOn": "Duplikate pas aan"
     },
     "closeReferrals": "Sluit vir verwysings",
     "reopen": "Heropen",
@@ -55,6 +57,25 @@
       "add": "Voeg projek by",
       "created": "Geskep {{name}} ."
     },
-    "back": "Terug na Bouers"
+    "back": "Terug na Bouers",
+    "protection": {
+      "days_one": "{{count}} dag",
+      "days_other": "{{count}} dae",
+      "globalDays_one": "Wêreldwye verstek ( {{count}} dag)",
+      "globalDays_other": "Wêreldwye verstek ( {{count}} dae)",
+      "globalDefault": "Wêreldwye verstek",
+      "placeholder": "Beskermingsdae (leeg = globale verstek)",
+      "saved": "Duplikaatbeskerming opgedateer vir {{name}} .",
+      "hint": "Duplikaatbeskerming: 1-3650 dae, of laat leeg om die globale verstek van Instellings te gebruik. 'n Verandering is slegs van toepassing op nuwe registrasies - bestaandes hou hul vervaldatum."
+    },
+    "matching": {
+      "global": "Wêreldwye verstek",
+      "globalWith": "Globale verstek ( {{fields}} )",
+      "mobile": "Selfoonnommer",
+      "email": "E-pos",
+      "both": "Selfoonnommer + e-pos",
+      "saved": "Duplikaatpassing opgedateer vir {{name}}",
+      "hint": "Watter besonderhede maak twee registrasies dieselfde kliënt vir 'n projek. Veranderinge is van nou af van toepassing op duplikaattjeks; bestaande beskerming nie geraak word nie."
+    }
   }
 }

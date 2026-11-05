@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Ro bukwa",
-    "pending": "Shumisa"
+    "pending": "Shumisa",
+    "status": {
+      "CONFIRMED": "Ro bukwa",
+      "CANCELLED": "U buka zwo khanselwa"
+    }
   },
   "assign": {
     "unassigned": "A yo ngo avhelwa",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "A hu athu vha na phurojeke (a i athu rumelwa)",
-    "notInList": "{{project}} (a si kha mutevhe wa phurojeke)"
+    "notInList": "{{project}} (a si kha mutevhe wa phurojeke)",
+    "protectionDays_one": "{{count}} -tsireledzo ya duvha",
+    "protectionDays_other": "{{count}} -tsireledzo ya duvha"
   },
   "journey": {
     "customer": "Murengi",
@@ -76,7 +82,14 @@
     "progressHistory": "Ḓivhazwakale ya Mvelaphanḓa",
     "timesIn": "(zwifhinga kha {{timezone}} )",
     "backToMyLeads": "U vhuyelela kha vhurangaphanḓa hanga",
-    "editLead": "Swaya Lead"
+    "editLead": "Swaya Lead",
+    "disputeBanner": "Muṅwe mufarisani o hanedzana na vhuṋe ha khasiṱama iyi. Admin Leadrat u khou i sedzulusa - tsireledzo yaṋu i dzula i hone u swika vha tshi dzhia tsheo.",
+    "booking": "U buka",
+    "commission": "Khomishini",
+    "notBooked": "Ahuna bookiwa",
+    "cancelledOn": "Yo khanselwa nga {{date}} .",
+    "cancelReason": "Muhumbulo: {{reason}}",
+    "cancelledHint": "Mufhaṱi o khansela u buka - vhuṋe ha mushumo ho vhuya na inwi nahone u tea ha khomishini zwo khanselwa. I vhuyedzedzwa arali lead ya dovha ya bookiwa."
   },
   "referral": {
     "NOT_REFERRED": "A zwo ngo rumelwa (a hu na phurojeke)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Mufhaṱi o ṱanganedza u rumelwa",
       "REFERRAL_REJECTED": "Mufhaṱi o hana u rumelwa. Muhumbulo: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin o bvisa tsireledzo ya duplicate hu tshe na tshifhinga. Muhumbulo: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Mulanguli o ṋea hafhu u ṅwaliswa u bva kha {{from}} u ya kha {{to}} . Muhumbulo: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Mulanguli o ṋea hafhu u ṅwaliswa u bva kha {{from}} u ya kha {{to}} . Muhumbulo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ndingedzo ya u ṅwalisa yo dovhololwaho nga muṅwe mufarisi yo hanedzwa",
+      "BOOKING_CANCELLED": "Booking yo khanselwa. Muhumbulo: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Vhuṋe ha mushumo ho vhuyelela kha mufarisani",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "U fanelea ha khomishini zwo khanselwa nga u buka",
+      "COMMISSION_ELIGIBILITY_RESTORED": "U tea ha khomishini zwo vhuyedzedzwa kha u buka huswa",
+      "OWNERSHIP_DISPUTE_RAISED": "Muṅwe mufarisani o hanedzana na vhuṋe ha khasiṱama iyi - mulanguli wa Leadrat u ḓo i sedzulusa",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Khanedzano ya vhuṋe kha khasiṱama iyi yo bviswa - vhuṋe haṋu a ho ngo shandukiswa",
+      "OWNERSHIP_DISPUTE_UPHELD": "Khanedzano ya vhuṋe kha khasiṱama iyi yo sedzuluswa - vhuṋe havho ho khwaṱhisedzwa",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Yo ṅwaliswa nga murahu ha musi khanedzano ya vhuṋe haṋu yo dzhiiwa tsheo i tshi ni takalela. Nḓivhadzo: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Tsireledzo yo fhela: khanedzano ya vhuṋe yo dzhiiwa tsheo ya u tikedza muṅwe mufarisani. Nḓivhadzo: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Nomboro iyi ya luṱingo a i shumi kha {{country}} .",
     "COUNTRY_MISMATCH": "Kha vha khethe khoudu ya shango yo teaho.",
     "NOT_MOBILE": "Kha vha ṅwale nomboro ya luṱingothendeleki, hu si luṱingo lwa hayani."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Khomishini yo tea",
+      "PENDING": "Khomishini yo lindela",
+      "CANCELLED": "Khomishini yo khanselwa"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Zwo itiswa nga inwi",
+      "DISPUTED": "U ṋea vhuṱanzi hu khou hanedzana"
+    }
+  },
+  "result": {
+    "none": "Ahuna mvelelo ya u ṅwalisa ine ya ḓo sumbedzwa. U thoma wa ṅwalisa lead.",
+    "acceptedTitle": "Lead yo nwaliswa",
+    "rejectedTitle": "Lead a yo ngo ṅwaliswa",
+    "protectionWindow": "Fasitere ḽa Tsireledzo",
+    "protectedUntil": "Tsireledzwa U swika .",
+    "openLead": "Vula Lead",
+    "addAnother": "Engedza Muṅwe Murangaphanḓa",
+    "duplicate": "U dovholola - zwo tsireledzwa",
+    "duplicateHint": "Murengi uyu o tsireledzwa kale kha heyi phurojeke nga iṅwe nḓivhadzo, ngauralo a yo ngo kona u ṅwaliswa kha inwi.",
+    "existingProtectedUntil": "U ṅwaliswa hu re hone ho tsireledzwa u swika nga 2020."
+  },
+  "disputes": {
+    "title": "Khanedzano dzanga",
+    "intro": "Khanedzano dza vhuṋe dze na dzi bveledza kha vharengi dze dza hanelwa sa dzi duplicate. Admin Leadrat u sedzulusa inwe na inwe.",
+    "empty": "A no ngo vusa khanedzano naho dzi dzifhio. Arali khasiṱama ye na i ḓisa ya hanelwa sa duplicate, ni nga i hanedza u bva kha mvelelo ya u ṅwalisa.",
+    "columns": {
+      "dispute": "Phambano",
+      "reason": "Muhumbulo wanu .",
+      "outcome": "Mvelelo"
+    },
+    "status": {
+      "OPEN": "Nga fhasi ha tsedzuluso",
+      "UPHELD": "A si kha inwi .",
+      "OVERTURNED": "Ho dzhia tsheo ine ya ni takalela .",
+      "WITHDRAWN": "Yo bviswa"
+    },
+    "awaitingReview": "Ndi khou lindela tsedzuluso ya admin",
+    "openNewLead": "Vulani vhurangaphanḓa haṋu {{id}}",
+    "withdraw": "Humisela murahu",
+    "withdrawConfirm": "Kha vha bvise khanedzano yavho ya {{name}} ? Vhuṋe ha zwino vhu dzula vhu nga nḓila ine ha vha ngayo.",
+    "raise": "Vhuṋe ha khanedzano",
+    "raiseTitle": "Vhuṋe ha khanedzano",
+    "raiseHint": "Arali murengi uyu o thoma a ḓa kha inwi, ṱalutshedzani uri ndi ngani. Admin Leadrat u do i sedzulusa; arali vha dzhia tsheo ine ya ni takalela, vhurangaphanḓa vhu ṅwaliswa kha inwi.",
+    "reasonLabel": "Ndi ngani khasiṱama iyi i yaṋu?",
+    "reasonMin_one": "Hu si fhasi ha {{count}} tshiga.",
+    "reasonMin_other": "Hu si fhasi ha {{count}} maḽeḓere.",
+    "submit": "Rumelani Khanedzano",
+    "notProtected": "Ahuna muthu ane a vha na tsireledzo kha khasiṱama iyi kha heyi phurojeke hafhu - ni nga ṅwalisa murangaphanḓa zwino.",
+    "raised": "Khanedzano {{id}} yo rumelwa u sedzuluswa.",
+    "viewAll": "Vhonani khanedzano dzanga"
+  },
+  "dashboard": {
+    "title": "Dashibodo",
+    "period": "Tshifhinga",
+    "lastDays_one": "{{count}} duvha",
+    "lastDays_other": "{{count}} maduvha",
+    "emptyTitle": "Ṱanganedzwa! A hu athu vha na dzi leads.",
+    "emptyHint": "Kha vha ṅwalise lead yavho ya u thoma - phaiphi yavho, u buka na maḓuvha a u fhedzisela a tsireledzo zwi ḓo vhonala hafha.",
+    "tiles": {
+      "leads": "Vharangaphanḓa vhoṱhe",
+      "newInPeriod_one": "{{count}} zwiswa kha tshifhinga itshi",
+      "newInPeriod_other": "{{count}} zwiswa kha tshifhinga itshi",
+      "accepted": "Zwo ṱanganedzwa",
+      "booked": "Ro bukwa",
+      "bookedInPeriod_one": "{{count}} yo ṅwaliwa nga tshifhinga itshi",
+      "bookedInPeriod_other": "{{count}} yo ṅwaliwa nga tshifhinga itshi",
+      "conversion": "U rembuluwa",
+      "conversionHint": "Vhurangaphanḓa ho ṅwaliwaho sa mukovhe wa vhurangaphanḓa ho ṱanganedzwaho",
+      "protectedNow": "Yo tsireledzwa zwino",
+      "expiringSoon_one": "Tsireledzo ine ya fhela nga {{count}} duvha",
+      "expiringSoon_other": "Tsireledzo i fhela nga maḓuvha a {{count}}",
+      "disputedNow": "Zwo hanedzana nga vhanwe .",
+      "disputedNowHint": "Vharangaphanḓa vhaṋu vha na khanedzano ya vhuṋe yo vuleaho u bva kha muṅwe mufarisi",
+      "commissionEligible": "Khomishini yo tea",
+      "commissionCancelled_one": "{{count}} yo khanselwa",
+      "commissionCancelled_other": "{{count}} yo khanselwa"
+    },
+    "chart": {
+      "title_one": "U nwalisa na u buka nga duvha - duvha la u fhedzisela {{count}}",
+      "title_other": "U ṅwaliswa na u buka nga ḓuvha - maḓuvha a u fhedzisela {{count}}",
+      "registrations": "U nwalisa",
+      "bookings": "U buka"
+    },
+    "byStage": "U ranga phanḓa nga tshiimo",
+    "bySource": "U ranga phanḓa nga tshisima",
+    "byReferral": "U ranga phanḓa nga tshiimo tsha u rumelwa",
+    "myDisputes": "Khanedzano dze na dzi bveledza",
+    "noDisputes": "A hu na khanedzano dzo vuswaho.",
+    "unknown": "A zwo ngo vhewa",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM ya nnḓa (yo edziswaho)",
+      "PARTNER_CRM": "Zwo engedzwa nga thimu yavho",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "U ṱanganya",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Tsireledzo i khou fhela nga duvha li tevhelaho {{count}}",
+    "expiringTitle_other": "Tsireledzo i khou fhela nga maḓuvha a tevhelaho a {{count}}",
+    "expiringEmpty": "Ahuna lead ine ya xelelwa nga tsireledzo yayo kha heḽi fasiṱere."
   }
 }

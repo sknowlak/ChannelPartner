@@ -49,8 +49,73 @@
       "newPartnerId": "አዲስ የአጋር ID",
       "reason": "ምክንያት (የሚያስፈልግ)",
       "apply": "መሻርን ተግብር",
-      "applying": "በማመልከት ላይ..."
+      "applying": "በማመልከት ላይ...",
+      "cancelBookingHint": "መሰረዝ ቦታ ማስያዣው እና ኮሚሽኑ እንደተሰረዘ ያመላክታል፣ የተግባር ባለቤትነትን ለአጋር ይመልሳል፣ እና ግንበኛ ይህንን እንደገና እንዲይዝ ያስችለዋል።",
+      "cancelBookingConfirm": "ይህ ቦታ ማስያዝ ይሰረዝ? ኮሚሽኑም ተሰርዟል። ይህ በእርስዎ ስም እና ምክንያት ተመዝግቧል።"
     },
-    "timelineTitle": "የኦዲት የጊዜ መስመር (ይህ ምዝገባ)"
+    "timelineTitle": "የኦዲት የጊዜ መስመር (ይህ ምዝገባ)",
+    "bookingStatus": "የቦታ ማስያዝ ሁኔታ",
+    "commissionAttribution": "የኮሚሽኑ ባለቤትነት",
+    "disputeOpen": "የባለቤትነት ሙግት በዚህ ደንበኛ ላይ ክፍት ነው - ሌላ አጋር የእነሱ ነው ይላል። በግጭቶች ገጽ ላይ ተወስኗል.",
+    "viewDisputes": "ክርክሮችን ይመልከቱ",
+    "cancellation": {
+      "title": "ቦታ ማስያዝ ተሰርዟል።",
+      "hint": "ቦታ ማስያዝ እና ኮሚሽኑ ተሰርዘዋል፤ የተግባር ባለቤትነት ከባልደረባው ጋር ተመልሶ ገንቢው ይህንን መሪ እንደገና መያዝ ይችላል።",
+      "at": "በ ተሰርዟል።",
+      "by": "በ ተሰርዟል።",
+      "reason": "ምክንያት"
+    }
+  },
+  "disputes": {
+    "title": "የባለቤትነት አለመግባባቶች",
+    "hint": "የተባዛ ተብሎ ምዝገባው ውድቅ የተደረገበት አጋር የደንበኛው ባለቤት ማን እንደሆነ ሊከራከር ይችላል። ሁለቱንም ወገኖች ይከልሱ እና ይወስኑ.",
+    "statusFilter": "የክርክር ሁኔታ",
+    "allStatuses": "ሁሉም ሁኔታዎች",
+    "empty": "ከዚህ ሁኔታ ጋር ምንም ክርክር የለም።",
+    "columns": {
+      "dispute": "ክርክር",
+      "customer": "ደንበኛ",
+      "project": "ፕሮጀክት",
+      "raisedBy": "ያደገው በ",
+      "heldBy": "የአሁኑ ባለቤት",
+      "status": "ሁኔታ",
+      "raisedAt": "ላይ ተነስቷል።"
+    },
+    "detail": {
+      "title": "ሙግት {{id}}",
+      "raisedOn": "የተነሳው {{date}}",
+      "raisingTitle": "ያደገው በ",
+      "holderTitle": "የአሁኑ ባለቤት",
+      "partner": "አጋር",
+      "raisedBy": "የቀረበው በ",
+      "customerName": "ደንበኛ",
+      "mobile": "ሞባይል",
+      "alternateMobile": "ተለዋጭ ሞባይል",
+      "email": "ኢሜይል",
+      "project": "ፕሮጀክት",
+      "reason": "ምክንያታቸው",
+      "registration": "ምዝገባ",
+      "registeredAt": "ላይ ተመዝግቧል",
+      "referral": "ሪፈራል",
+      "heldMissing": "የተያዘው ምዝገባ ሊገኝ አልቻለም።",
+      "resolutionTitle": "ውሳኔ",
+      "outcome": "ውጤት",
+      "note": "ማስታወሻ",
+      "decidedBy": "ተወስኗል",
+      "decidedAt": "ላይ ወስኗል",
+      "newRegistration": "አዲስ ምዝገባ",
+      "decideTitle": "ይህንን ክርክር ይወስኑ",
+      "noteLabel": "ውሳኔውን የሚያብራራ ማስታወሻ (አስፈላጊ)",
+      "noteRequired": "ለመወሰን ማስታወሻ ይጻፉ.",
+      "uphold": "አቆይ",
+      "overturn": "መገለባበጥ",
+      "upholdEffect": "{{holder}} ደንበኛውን ይጠብቃል። ክርክሩ ተዘግቷል እና ሌላ ምንም ነገር አይቀየርም.",
+      "overturnEffect": "{{holder}} የተባዛ ጥበቃ አሁን ያበቃል እና ደንበኛው ለ {{partner}} እንደ አዲስ ምዝገባ ተመዝግቧል።",
+      "heldBookedHelp": "ይህ ደንበኛ አሁን ባለው ባለቤት በኩል ተይዟል። ያንን ቦታ ማስያዝ መጀመሪያ ይሰርዙ (አስተዳዳሪ በምዝገባ ላይ ይሽረዋል)፣ ከዚያ ይሽሩት፡-",
+      "confirmTitle": "ኧረ",
+      "confirmUphold": "አዎ ጠብቅ",
+      "confirmOverturn": "አዎ ገለባበጥ",
+      "back": "ወደ ክርክሮች ተመለስ"
+    }
   }
 }

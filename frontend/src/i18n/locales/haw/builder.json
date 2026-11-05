@@ -30,7 +30,8 @@
       "registered": "Kakau inoa"
     },
     "booked": "Hoʻopaʻa ʻia",
-    "empty": "ʻAʻohe mea kuhikuhi."
+    "empty": "ʻAʻohe mea kuhikuhi.",
+    "bookingCancelled": "Hoʻopau ʻia ka hoʻopaʻa ʻana"
   },
   "detail": {
     "customer": "Mea kūʻai",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Hoʻopaʻa ʻia ka hoʻopaʻa ʻana.",
       "accepted": "Ua ʻae ʻia ka hāʻawi ʻana.",
-      "rejected": "Hōʻole ʻia ka hāʻawi ʻana."
+      "rejected": "Hōʻole ʻia ka hāʻawi ʻana.",
+      "bookingCancelled": "Hoʻopau ʻia ka hoʻopaʻa ʻana."
     },
-    "backToReferrals": "Hoʻi i nā Referrals"
+    "backToReferrals": "Hoʻi i nā Referrals",
+    "bookingCancelled": "Hoʻopau ʻia ka hoʻopaʻa ʻana",
+    "cancelBooking": "Hoʻopau i ka hoʻopaʻa ʻana",
+    "cancelReasonLabel": "Ke kumu o ke kāpae ʻana (hōʻike ʻia i ka hoa) *",
+    "cancelBookingHint": "Hoʻihoʻi ka mana hana i ka hoa a ua kāpae ʻia ko lākou kuleana komisina. Hiki ke hoʻopaʻa hou ʻia ke alakaʻi ma hope.",
+    "cancelBookingConfirm": "Hoʻopau i ka hoʻopaʻa ʻana"
   },
   "history": {
     "title": "Moolelo",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Hoʻokumu ʻia ke kuleana o ke Komisina",
       "HANDOVER_COMPLETED": "Ua pau ka haawi ana",
       "ADMIN_PROTECTION_RELEASED": "Ua hoʻokuʻu mua ʻo Admin i kahi pale pālua. Ke kumu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Ua hāʻawi hou ke kahu i ke kākau inoa mai {{from}} iā {{to}} . Ke kumu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Ua hāʻawi hou ke kahu i ke kākau inoa mai {{from}} iā {{to}} . Ke kumu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ua hōʻole ʻia ka hoʻāʻo ʻana e kākau inoa ʻia e kekahi hoa",
+      "BOOKING_CANCELLED": "Hoʻopau ʻia ka hoʻopaʻa ʻana. Ke kumu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Hoʻihoʻi ka mana hana i ka hoa",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ua kāpae ʻia ke kuleana o ke Komisina me ka hoʻopaʻa ʻana",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Hoʻihoʻi hou ʻia ke kuleana o ke Komisina no ka hoʻopaʻa ʻana hou"
     }
   }
 }

@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "layak",
-    "PENDING": "Ditunggu"
+    "PENDING": "Ditunggu",
+    "CANCELLED": "Dibolaykeun"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Ngaleupaskeun duplikat panyalindungan awal",
-    "REASSIGN_PARTNER": "Reassign ka pasangan séjén"
+    "REASSIGN_PARTNER": "Reassign ka pasangan séjén",
+    "CANCEL_BOOKING": "Ngabolaykeun booking"
   },
   "dataType": {
     "TEXT": "Téks",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super Admin",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Dipastikeun",
+    "CANCELLED": "Dibolaykeun"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Dikaitkeun",
+    "DISPUTED": "Dibantah"
+  },
+  "disputeStatus": {
+    "OPEN": "Buka",
+    "UPHELD": "Dijungjung",
+    "OVERTURNED": "Dibalikkeun",
+    "WITHDRAWN": "Ditarik"
   }
 }

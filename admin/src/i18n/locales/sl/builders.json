@@ -43,7 +43,9 @@
       "name": "Ime",
       "city": "Mesto",
       "status": "Stanje",
-      "actions": "Dejanja"
+      "actions": "Dejanja",
+      "protection": "Dvojna zaščita",
+      "matchOn": "Dvojniki se ujemajo"
     },
     "closeReferrals": "Zapri za napotitve",
     "reopen": "Ponovno odpri",
@@ -55,6 +57,29 @@
       "add": "Dodaj projekt",
       "created": "Ustvaril {{name}} ."
     },
-    "back": "Nazaj k gradbenikom"
+    "back": "Nazaj k gradbenikom",
+    "protection": {
+      "days_one": "{{count}} dan",
+      "days_two": "{{count}} dni",
+      "days_few": "{{count}} dni",
+      "days_other": "{{count}} dni",
+      "globalDays_one": "Globalna privzeta vrednost ( {{count}} dan)",
+      "globalDays_two": "Globalno privzeto ( {{count}} dni)",
+      "globalDays_few": "Globalno privzeto ( {{count}} dni)",
+      "globalDays_other": "Globalno privzeto ( {{count}} dni)",
+      "globalDefault": "Globalna privzeta vrednost",
+      "placeholder": "Dnevi zaščite (prazno = globalno privzeto)",
+      "saved": "Posodobljena podvojena zaščita za {{name}} .",
+      "hint": "Zaščita pred dvojniki: 1–3650 dni ali pustite prazno, če želite uporabiti globalno privzeto iz nastavitev. Sprememba velja le za nove registracije - obstoječe ohranijo veljavnost."
+    },
+    "matching": {
+      "global": "Globalna privzeta vrednost",
+      "globalWith": "Globalna privzeta vrednost ( {{fields}} )",
+      "mobile": "Mobilna številka",
+      "email": "E-pošta",
+      "both": "Mobilna številka + email",
+      "saved": "Podvojeno ujemanje je posodobljeno za {{name}}",
+      "hint": "Zaradi katerih podrobnosti sta dve registraciji iste stranke za projekt. Spremembe odslej veljajo za podvojene čeke; obstoječa zaščita ni prizadeta."
+    }
   }
 }

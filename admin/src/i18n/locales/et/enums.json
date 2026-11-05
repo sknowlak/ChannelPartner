@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Sobilik",
-    "PENDING": "Ootel"
+    "PENDING": "Ootel",
+    "CANCELLED": "Tühistatud"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Vabastage dubleeritud kaitse varakult",
-    "REASSIGN_PARTNER": "Määrake ümber teisele partnerile"
+    "REASSIGN_PARTNER": "Määrake ümber teisele partnerile",
+    "CANCEL_BOOKING": "Tühista broneering"
   },
   "dataType": {
     "TEXT": "Tekst",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Superadministraator",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Kinnitatud",
+    "CANCELLED": "Tühistatud"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Omistatud",
+    "DISPUTED": "Vaidlustatud"
+  },
+  "disputeStatus": {
+    "OPEN": "Avatud",
+    "UPHELD": "Kinnitati",
+    "OVERTURNED": "Ümber lükatud",
+    "WITHDRAWN": "Tagasi võetud"
   }
 }

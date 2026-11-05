@@ -49,8 +49,73 @@
       "newPartnerId": "Yañı şerik ID",
       "reason": "Sebebi (kerek)",
       "apply": "Överraydnı qullanıñız",
-      "applying": "Muracaat etmek..."
+      "applying": "Muracaat etmek...",
+      "cancelBookingHint": "Lâğu etmek bronnı ve onıñ komissiyasını lâğu etilgen dep qayd ete, operativ mülkni şerikke qaytara ve qurucığa bu lidni kene bron etmege ruhset ete.",
+      "cancelBookingConfirm": "Bu bronnı lâğu etmek kerekmi? Onıñ komissiyası da lâğu etile. Bu siziñ adıñız ve sebepiñiznen yazıla."
     },
-    "timelineTitle": "Tekşirüv vaqtı (bu yazıluv)"
+    "timelineTitle": "Tekşirüv vaqtı (bu yazıluv)",
+    "bookingStatus": "Bronirovaniye statusı",
+    "commissionAttribution": "Komissiyanıñ atributsiyası",
+    "disputeOpen": "Bu müşteri üzerinde saiplik davaları açıq - başqa şerik bu olarnıñki dey. O, «Davalar» saifesinde qararlaştırıla.",
+    "viewDisputes": "Davalarnı körmek",
+    "cancellation": {
+      "title": "Bronirovaniye lâğu etildi",
+      "hint": "Bronirovaniye ve onıñ komissiyası lâğu etile; operativ saiplik şeriknen qaytıp keldi ve qurucı bu lidni kene de bron ete bile.",
+      "at": "saatte lâğu etildi",
+      "by": "tarafından lâğu etildi",
+      "reason": "Sebep"
+    }
+  },
+  "disputes": {
+    "title": "Mülk davaları",
+    "hint": "Dublikatı olaraq cedvelge alınması red etilgen şerik müşteriniñ saibi kim olğanını dava ete bile. Er eki tarafnı da közden keçiriñiz ve qarar çıqarıñız.",
+    "statusFilter": "Dava statusı",
+    "allStatuses": "Bütün statuslar",
+    "empty": "Bu statusnen dava yoq.",
+    "columns": {
+      "dispute": "Munaqaşa",
+      "customer": "Müşteri",
+      "project": "Leyha",
+      "raisedBy": "tarafından östürildi",
+      "heldBy": "Şimdiki saibi",
+      "status": "Vaziyet",
+      "raisedAt": "1990 senesi köterildi"
+    },
+    "detail": {
+      "title": "Dava {{id}}",
+      "raisedOn": "Köterildi {{date}}",
+      "raisingTitle": "tarafından östürildi",
+      "holderTitle": "Şimdiki saibi",
+      "partner": "Ortaq",
+      "raisedBy": "tarafından yollanıldı",
+      "customerName": "Müşteri",
+      "mobile": "Areketli",
+      "alternateMobile": "Alternativ mobil",
+      "email": "Elektron poçta",
+      "project": "Leyha",
+      "reason": "Olarnıñ sebebi",
+      "registration": "Qayd etilmek",
+      "registeredAt": "2019 senesi cedvelge alındı",
+      "referral": "Yollanma",
+      "heldMissing": "Keçirilgen yazıluvnı tapıp olamadılar.",
+      "resolutionTitle": "Qarar",
+      "outcome": "Aqibet",
+      "note": "Tezkere",
+      "decidedBy": "tarafından qarar çıqarıldı",
+      "decidedAt": "aqqında qarar çıqarıldı",
+      "newRegistration": "Yañı yazıluv",
+      "decideTitle": "Bu davanıñ qararını çıqarıñız",
+      "noteLabel": "Qararnı añlatqan qayd (kerek)",
+      "noteRequired": "Qarar çıqarmaq içün qayd yazıñız.",
+      "uphold": "Yaqlamaq",
+      "overturn": "Avdarmaq",
+      "upholdEffect": "{{holder}} müşterini saqlay. Dava qapalı ve başqa bir şey deñişmey.",
+      "overturnEffect": "{{holder}} 'niñ dublikatı qorçalavı şimdi bite ve müşteri {{partner}} içün yañı yazıluv olaraq yazıla.",
+      "heldBookedHelp": "Bu müşteri şimdiki saibi vastasınen bron etile. Başta o bronnı lâğu etiñiz (Registratsiyada Admin Överrayd), soñra lâğu etiñiz:",
+      "confirmTitle": "Sen eminsiñmi?",
+      "confirmUphold": "Ebet, tutıñız",
+      "confirmOverturn": "Ebet, avdarmaq",
+      "back": "Davalarğa qaytmaq"
+    }
   }
 }

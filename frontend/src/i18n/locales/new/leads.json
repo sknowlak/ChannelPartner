@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "बुक जुल",
-    "pending": "बाँकी"
+    "pending": "बाँकी",
+    "status": {
+      "CONFIRMED": "बुक जुल",
+      "CANCELLED": "बुकिङ्ग रद्द जुल"
+    }
   },
   "assign": {
     "unassigned": "असाइन मजूगु",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "आःतकं छुं नं प्रोजेक्ट मदु (सक्षेप मजूनि)",
-    "notInList": "{{project}} (प्रोजेक्ट धलखय् मदु)"
+    "notInList": "{{project}} (प्रोजेक्ट धलखय् मदु)",
+    "protectionDays_one": "{{count}} -न्हि संरक्षण",
+    "protectionDays_other": "{{count}} -न्हि संरक्षण"
   },
   "journey": {
     "customer": "ग्राहक",
@@ -76,7 +82,14 @@
     "progressHistory": "प्रगति इतिहास",
     "timesIn": "( {{timezone}} य् ई)",
     "backToMyLeads": "जिगु नेतृत्वय् लिहां हुँ",
-    "editLead": "लीड सम्पादन या"
+    "editLead": "लीड सम्पादन या",
+    "disputeBanner": "मेम्ह पार्टनरं थुम्ह गाहाकिया स्वामित्वय् विवाद यात । छम्ह Leadrat एडमिनं थुकियात समीक्षा यानाच्वंगु दु - इमिसं निर्णय मयाःतले छिगु सुरक्षा थासय् हे च्वनी ।",
+    "booking": "बुकिङ्ग",
+    "commission": "आयोग",
+    "notBooked": "बुक मजूनि ।",
+    "cancelledOn": "{{date}} खुन्हु रद्द यात ।",
+    "cancelReason": "हुनि : {{reason}}",
+    "cancelledHint": "बिल्डरं बुकिङ्ग रद्द यात - परिचालन स्वामित्व छिके लिहां वःगु दु व कमिशनया योग्यता रद्द जूगु दु । लीड हानं बुक यात धाःसा थ्व पुनःस्थापना जुइ ।"
   },
   "referral": {
     "NOT_REFERRED": "रेफर मजू (प्रोजेक्ट मदु)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "बिल्डरं रेफरलयात स्वीकार यात ।",
       "REFERRAL_REJECTED": "बिल्डरं रेफरलयात अस्वीकार यात । हुनि : {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "एडमिनं डुप्लिकेट प्रोटेक्सन न्ह्यः हे सार्वजनिक यात । हुनि : {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "एडमिनं {{from}} निसें {{to}} तक दर्तायात हानं लःल्हात । हुनि : {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "एडमिनं {{from}} निसें {{to}} तक दर्तायात हानं लःल्हात । हुनि : {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "मेम्ह पार्टनरं याःगु डुप्लिकेट दर्ता यायेगु कुतःयात अस्वीकार यात ।",
+      "BOOKING_CANCELLED": "बुकिङ्ग रद्द जुल । हुनि : {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "पार्टनरयात संचालन स्वामित्व लित बिल ।",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "बुकिङ्गलिसें कमिशनया योग्यता रद्द जुल ।",
+      "COMMISSION_ELIGIBILITY_RESTORED": "न्हूगु बुकिङ्गया निंतिं कमिशनया योग्यता हानं काल ।",
+      "OWNERSHIP_DISPUTE_RAISED": "मेम्ह पार्टनरं थुम्ह गाहाकिया स्वामित्वय् विवाद यात - Leadrat एडमिनं थुकियात समीक्षा याइ ।",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "थुम्ह गाहाकिया स्वामित्वया विवाद लित काल - छिगु स्वामित्व हिले मफुत ।",
+      "OWNERSHIP_DISPUTE_UPHELD": "थुम्ह गाहाकिया स्वामित्वया विवादयात समीक्षा यात - छिगु स्वामित्व पक्का जुल",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "छिगु स्वामित्व विवाद छिगु पक्षय् क्वःछीधुंकाः दर्ता जुल । नोट : {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "संरक्षण क्वचाल : स्वामित्व विवाद मेम्ह साझेदारया पक्षय् क्वःछित । नोट : {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "थ्व फोन ल्याः {{country}} या निंतिं मान्य मजू ।",
     "COUNTRY_MISMATCH": "पाय् छिगु देय् या कोड ल्ययादिसँ ।",
     "NOT_MOBILE": "ल्याण्डलाइन मखु, मोबाइल ल्याः दुथ्याकादिसँ ।"
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "आयोग योग्य",
+      "PENDING": "आयोग ल्यनाच्वंगु दु",
+      "CANCELLED": "आयोग रद्द ४."
+    },
+    "attribution": {
+      "ATTRIBUTED": "छितः श्रद्धाञ्जलि",
+      "DISPUTED": "एट्रिब्यूशन विवादित"
+    }
+  },
+  "result": {
+    "none": "दर्ताया लिच्वः क्यने मते । न्हापां लीड दर्ता या ।",
+    "acceptedTitle": "लीड दर्ता जुल",
+    "rejectedTitle": "लीड दर्ता मजूनि",
+    "protectionWindow": "संरक्षण झ्याः",
+    "protectedUntil": "१ तक संरक्षित ।",
+    "openLead": "लीड चायेकि",
+    "addAnother": "मेम्ह लीड तनादिसँ",
+    "duplicate": "डुप्लिकेट - न्हापा हे संरक्षण जुइधुंकल",
+    "duplicateHint": "थुम्ह गाहाकियात थुगु परियोजनाया निंतिं मेगु दर्तापाखें सुरक्षित यायेधुंकूगु दु, उकिं थुकियात छिगु निंतिं दर्ता याये मफुत ।",
+    "existingProtectedUntil": "आः दुगु दर्तायात सन् २०१५ तक संरक्षण यानातःगु दु ।"
+  },
+  "disputes": {
+    "title": "जिगु विवाद",
+    "intro": "डुप्लिकेटया रुपय् अस्वीकार याःगु गाहाकितय् निंतिं छिं ल्ह्वनादीगु स्वामित्वया विवाद । छम्ह Leadrat एडमिनं प्रत्येकया समीक्षा याइ ।",
+    "empty": "छिं छुं नं विवाद ल्ह्वनादीगु मदु । छिं हयादीम्ह गाहाकियात डुप्लिकेटया रुपय् अस्वीकार यात धाःसा दर्ता लिच्वःपाखें विवाद यायेफइ ।",
+    "columns": {
+      "dispute": "कचवं",
+      "reason": "छिगु हुनि",
+      "outcome": "नतिजा"
+    },
+    "status": {
+      "OPEN": "समीक्षाया अन्तर्गत",
+      "UPHELD": "छिगु पक्षय् मखु ।",
+      "OVERTURNED": "छिगु पक्षय् क्वःछित ।",
+      "WITHDRAWN": "लित काःगु"
+    },
+    "awaitingReview": "एडमिनया समीक्षाया निंतिं पियाच्वना ।",
+    "openNewLead": "छिगु लीड {{id}} चायेकादिसँ",
+    "withdraw": "लिक्याउ",
+    "withdrawConfirm": "{{name}} या निंतिं छिगु विवाद लित का ? आःया स्वामित्व गथे खः अथे हे च्वनी ।",
+    "raise": "स्वामित्व विवाद",
+    "raiseTitle": "स्वामित्व विवाद",
+    "raiseHint": "थुम्ह गाहाकि छिथाय् न्हापां वःसा, छाय् धकाः कनादिसँ । छम्ह Leadrat एडमिनं थुकियात समीक्षा याइ; इमिसं छिगु पक्षय् निर्णय यात धाःसा, छिगु निंतिं लीड दर्ता जुइ ।",
+    "reasonLabel": "थ्व गाहाकि छाय् छिम्ह खः ?",
+    "reasonMin_one": "म्ह्व निं {{count}} वर्ण ।",
+    "reasonMin_other": "म्ह्व निं {{count}} आखःग्वःत ।",
+    "submit": "विवाद छ्वयादिसँ",
+    "notProtected": "थुगु परियोजनाया निंतिं थुम्ह गाहाकियात आः सुनानं संरक्षण याइमखु - छिं आः हे लीड दर्ता यायेफइ ।",
+    "raised": "विवाद {{id}} समीक्षाया निंतिं छ्वयाहल ।",
+    "viewAll": "जिगु विवाद स्व ।"
+  },
+  "dashboard": {
+    "title": "ड्यासबोर्ड",
+    "period": "ई",
+    "lastDays_one": "{{count}} न्हि",
+    "lastDays_other": "{{count}} न्हि",
+    "emptyTitle": "लशकुश! छिके आःतकं छुं नं लीड मदुनि ।",
+    "emptyHint": "छिगु न्हापांगु लीड दर्ता यानादिसँ - छिगु पाइपलाइन, बुकिङ्ग व संरक्षणया म्याद थन क्यनी ।",
+    "tiles": {
+      "leads": "मुक्कं लीड",
+      "newInPeriod_one": "{{count}} थुगु इलय् न्हूगु",
+      "newInPeriod_other": "{{count}} थुगु इलय् न्हूगु",
+      "accepted": "स्वीकार यात",
+      "booked": "बुक जुल",
+      "bookedInPeriod_one": "{{count}} थुगु इलय् बुक यात",
+      "bookedInPeriod_other": "{{count}} थुगु इलय् बुक यात",
+      "conversion": "रुपान्तरण",
+      "conversionHint": "स्वीकृत लीडया ब्वकथं बुक यानातःगु लीड",
+      "protectedNow": "आः संरक्षण जुल",
+      "expiringSoon_one": "संरक्षण {{count}} न्हिइ क्वचाइ",
+      "expiringSoon_other": "संरक्षण {{count}} न्हिइ क्वचाइ",
+      "disputedNow": "मेपिन्सं विवाद याःगु",
+      "disputedNowHint": "मेम्ह पार्टनरपाखें खुल्ला स्वामित्व विवादय् छिगु नेतृत्व",
+      "commissionEligible": "आयोग योग्य",
+      "commissionCancelled_one": "{{count}} रद्द जुल",
+      "commissionCancelled_other": "{{count}} रद्द जुल"
+    },
+    "chart": {
+      "title_one": "न्हिथंया दर्ता व बुकिङ्ग - लिपांगु {{count}} न्हि",
+      "title_other": "न्हिथंया दर्ता व बुकिङ्ग - लिपांगु {{count}} न्हि",
+      "registrations": "दर्ता",
+      "bookings": "बुकिङ्ग"
+    },
+    "byStage": "स्थितिकथं नेतृत्व याइ",
+    "bySource": "स्रोतकथं नेतृत्व याइ",
+    "byReferral": "रेफरल अवस्थां नेतृत्व याइ",
+    "myDisputes": "छिं ल्ह्वनादीगु विवाद",
+    "noDisputes": "छुं नं विवाद ब्वलंगु मदु ।",
+    "unknown": "सेट मजूनि",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "पिनेया CRM (नक्कल)",
+      "PARTNER_CRM": "छिगु पुचलं तनाबिल",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "एकीकरण",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "संरक्षणया ई मेगु {{count}} न्हिइ फुइ",
+    "expiringTitle_other": "मेगु {{count}} न्हिइ संरक्षणया ई फुइ",
+    "expiringEmpty": "थुगु झ्यालय् गुगुं नं सीसाया सुरक्षा तंकी मखु ।"
   }
 }

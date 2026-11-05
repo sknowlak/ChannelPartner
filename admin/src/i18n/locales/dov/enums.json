@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Kweelela",
-    "PENDING": "Zichilindidwe"
+    "PENDING": "Zichilindidwe",
+    "CANCELLED": "Kwakachilwa"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Amugwisye lukwabililo lukozyenye kakuchili chiindi",
-    "REASSIGN_PARTNER": "Amubweze kuli umwi mweenzinyokwe"
+    "REASSIGN_PARTNER": "Amubweze kuli umwi mweenzinyokwe",
+    "CANCEL_BOOKING": "Leka kubbukula"
   },
   "dataType": {
     "TEXT": "Mulumbe",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Mweendelezi Mupati",
     "ADMIN": "Mweendelezi"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Zyakasinizyigwa",
+    "CANCELLED": "Kwakachilwa"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Zyakapegwa",
+    "DISPUTED": "Kwakazigwa"
+  },
+  "disputeStatus": {
+    "OPEN": "Jula",
+    "UPHELD": "Zyakazumizyigwa",
+    "OVERTURNED": "Yakavwungululwa",
+    "WITHDRAWN": "wakagwisigwa"
   }
 }

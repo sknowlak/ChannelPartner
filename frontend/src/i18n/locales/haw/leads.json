@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Hoʻopaʻa ʻia",
-    "pending": "Ke kali nei"
+    "pending": "Ke kali nei",
+    "status": {
+      "CONFIRMED": "Hoʻopaʻa ʻia",
+      "CANCELLED": "Hoʻopau ʻia ka hoʻopaʻa ʻana"
+    }
   },
   "assign": {
     "unassigned": "Hāʻawi ʻole ʻia",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "ʻAʻohe papahana i kēia manawa (ʻaʻole i kuhikuhi ʻia)",
-    "notInList": "{{project}} (ʻaʻole ma ka papa inoa papahana)"
+    "notInList": "{{project}} (ʻaʻole ma ka papa inoa papahana)",
+    "protectionDays_one": "{{count}} -lā pale",
+    "protectionDays_other": "{{count}} -lā pale"
   },
   "journey": {
     "customer": "Mea kūʻai",
@@ -76,7 +82,14 @@
     "progressHistory": "Moolelo Holomua",
     "timesIn": "(nā manawa ma {{timezone}} )",
     "backToMyLeads": "Hoʻi i kaʻu mau alakaʻi",
-    "editLead": "Hoʻoponopono Lead"
+    "editLead": "Hoʻoponopono Lead",
+    "disputeBanner": "Ua hoʻopaʻapaʻa kekahi hoa pili i ke kuleana o kēia mea kūʻai. Ke nānā nei ke alakaʻi Leadrat iā ia - e hoʻomau ʻia kou pale a hiki i ko lākou hoʻoholo ʻana.",
+    "booking": "Hoʻopaʻa",
+    "commission": "Komisina",
+    "notBooked": "ʻAʻole i hoʻopaʻa ʻia",
+    "cancelledOn": "Hoʻopau ʻia ma {{date}} .",
+    "cancelReason": "Ke kumu: {{reason}}",
+    "cancelledHint": "Ua hoʻopau ka mea kūkulu hale i ka hoʻopaʻa ʻana - ua hoʻi mai ka kuleana o ka hana me ʻoe a ua kāpae ʻia ke kuleana kōmike. Hoʻihoʻi ʻia inā hoʻopaʻa ʻia ke alakaʻi."
   },
   "referral": {
     "NOT_REFERRED": "ʻAʻole i kuhikuhi ʻia (ʻaʻohe papahana)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Ua ʻae ʻo Builder i ka hāʻawi ʻana",
       "REFERRAL_REJECTED": "Ua hōʻole ʻo Builder i ka hāʻawi ʻana. Ke kumu: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Ua hoʻokuʻu mua ʻo Admin i kahi pale pālua. Ke kumu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Ua hāʻawi hou ke kahu i ke kākau inoa mai {{from}} iā {{to}} . Ke kumu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Ua hāʻawi hou ke kahu i ke kākau inoa mai {{from}} iā {{to}} . Ke kumu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ua hōʻole ʻia ka hoʻāʻo ʻana e kākau inoa ʻia e kekahi hoa",
+      "BOOKING_CANCELLED": "Hoʻopau ʻia ka hoʻopaʻa ʻana. Ke kumu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Hoʻihoʻi ka mana hana i ka hoa",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Hoʻopau ʻia ke kuleana o ke Komisina me ka hoʻopaʻa ʻana",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Hoʻihoʻi hou ʻia ke kuleana o ke Komisina no ka hoʻopaʻa ʻana hou",
+      "OWNERSHIP_DISPUTE_RAISED": "Ua hoʻopaʻapaʻa kekahi hoa i ka kuleana o kēia mea kūʻai - e nānā ke alakaʻi Leadrat iā ia",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Ua hoʻihoʻi ʻia ka hoʻopaʻapaʻa kuleana ma kēia mea kūʻai - ʻaʻole i loli kou kuleana",
+      "OWNERSHIP_DISPUTE_UPHELD": "Ua nānā ʻia ka hoʻopaʻapaʻa kuleana ma kēia mea kūʻai - ua hōʻoia ʻia kou kuleana",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Hoʻopaʻa inoa ʻia ma hope o ka hoʻoholo ʻia ʻana o kāu hoʻopaʻapaʻa kuleana no kou makemake. Nānā: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Ua pau ka pale ʻana: ua hoʻoholo ʻia kahi hoʻopaʻapaʻa kuleana no kekahi hoa ʻē aʻe. Nānā: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "ʻAʻole kūpono kēia helu kelepona no {{country}} .",
     "COUNTRY_MISMATCH": "E ʻoluʻolu e koho i ke code ʻāina kūpono.",
     "NOT_MOBILE": "E ʻoluʻolu e hoʻokomo i ka helu kelepona, ʻaʻole ka laina ʻāina."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Ua kūpono ke Komisina",
+      "PENDING": "Ke kali nei ke Komisina",
+      "CANCELLED": "Ua kāpae ʻia ke Komisina"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Hāʻawi ʻia iā ʻoe",
+      "DISPUTED": "Hoʻopaʻapaʻa ʻia ka hoʻohui ʻana"
+    }
+  },
+  "result": {
+    "none": "ʻAʻohe hopena hoʻopaʻa inoa e hōʻike. E hoʻopaʻa inoa i kahi alakaʻi mua.",
+    "acceptedTitle": "Hoʻopaʻa ʻia ke alakaʻi",
+    "rejectedTitle": "ʻAʻole i kākau inoa ʻia ke alakaʻi",
+    "protectionWindow": "pukaaniani pale",
+    "protectedUntil": "Mālama ʻia a hiki i",
+    "openLead": "Wehe Lead",
+    "addAnother": "Hoʻohui i kahi alakaʻi ʻē aʻe",
+    "duplicate": "Hoʻopālua - ua pale ʻia",
+    "duplicateHint": "Ua pale ʻia kēia mea kūʻai no kēia pāhana e kekahi inoa inoa ʻē aʻe, no laila ʻaʻole hiki ke hoʻopaʻa inoa iā ʻoe.",
+    "existingProtectedUntil": "Hoʻopaʻa inoa ʻia i mālama ʻia a hiki i"
+  },
+  "disputes": {
+    "title": "ʻO kaʻu mau hoʻopaʻapaʻa",
+    "intro": "Nā hoʻopaʻapaʻa kuleana āu i hāpai ai no nā mea kūʻai i hōʻole ʻia ma ke ʻano he kope. Nānā ka luna Leadrat i kēlā me kēia.",
+    "empty": "ʻAʻole ʻoe i hāpai i nā hoʻopaʻapaʻa. Inā hōʻole ʻia kahi mea kūʻai āu i lawe mai ai ma ke ʻano he kope, hiki iā ʻoe ke hoʻopaʻapaʻa mai ka hopena o ke kākau inoa ʻana.",
+    "columns": {
+      "dispute": "Hoʻopaʻapaʻa",
+      "reason": "ʻO kāu kumu",
+      "outcome": "Ka hopena"
+    },
+    "status": {
+      "OPEN": "Ke nānā ʻia nei",
+      "UPHELD": "ʻAʻole i kou makemake",
+      "OVERTURNED": "Hoʻoholo i kou makemake",
+      "WITHDRAWN": "Hoʻihoʻi ʻia"
+    },
+    "awaitingReview": "Ke kali nei no ka loiloi admin",
+    "openNewLead": "E wehe i kāu alakaʻi {{id}}",
+    "withdraw": "Hoʻihoʻi",
+    "withdrawConfirm": "E hoʻihoʻi i kāu hoʻopaʻapaʻa no {{name}} ? Ke noho nei ka kuleana o kēia manawa e like me ia.",
+    "raise": "Hoʻopaʻapaʻa kuleana",
+    "raiseTitle": "Hoʻopaʻapaʻa kuleana",
+    "raiseHint": "Inā hele mua kēia mea kūʻai iā ʻoe, e wehewehe i ke kumu. E nānā ka luna Leadrat iā ia; inā hoʻoholo lākou i kou makemake, ua hoʻopaʻa inoa ʻia ke alakaʻi iā ʻoe.",
+    "reasonLabel": "No ke aha kēia mea kūʻai iā ʻoe?",
+    "reasonMin_one": "{{count}} ano.",
+    "reasonMin_other": "Ma ka liʻiliʻi he {{count}} huapalapala.",
+    "submit": "Hoʻouna i ka hoʻopaʻapaʻa",
+    "notProtected": "ʻAʻohe mea mālama i kēia mea kūʻai aku no kēia papahana - hiki iā ʻoe ke hoʻopaʻa inoa i ke alakaʻi i kēia manawa.",
+    "raised": "Hoʻouna ʻia ka hoʻopaʻapaʻa {{id}} no ka nānā ʻana.",
+    "viewAll": "E nana i ka'u mau hoopaapaa"
+  },
+  "dashboard": {
+    "title": "Papa kuhikuhi",
+    "period": "Kau",
+    "lastDays_one": "{{count}} lā",
+    "lastDays_other": "{{count}} lā",
+    "emptyTitle": "Welina! ʻAʻohe āu alakaʻi i kēia manawa.",
+    "emptyHint": "E hoʻopaʻa inoa i kāu alakaʻi mua - e hōʻike ʻia kāu pipeline, ka hoʻopaʻa ʻana a me nā lā palena palekana.",
+    "tiles": {
+      "leads": "huina alakai",
+      "newInPeriod_one": "{{count}} hou i kēia manawa",
+      "newInPeriod_other": "{{count}} hou i kēia manawa",
+      "accepted": "Ua ʻae ʻia",
+      "booked": "Hoʻopaʻa ʻia",
+      "bookedInPeriod_one": "{{count}} i hoʻopaʻa ʻia i kēia manawa",
+      "bookedInPeriod_other": "{{count}} i hoʻopaʻa ʻia i kēia manawa",
+      "conversion": "Ka hoohuli ana",
+      "conversionHint": "Nā alakaʻi i hoʻopaʻa ʻia ma ke ʻano he mahele o nā alakaʻi i ʻae ʻia",
+      "protectedNow": "Mālama ʻia i kēia manawa",
+      "expiringSoon_one": "Hoʻopau ka pale i ka {{count}} lā",
+      "expiringSoon_other": "Hoʻopau ka pale i loko o {{count}} lā",
+      "disputedNow": "Hoʻopaʻapaʻa ʻia e nā poʻe ʻē aʻe",
+      "disputedNowHint": "ʻO kāu mau alakaʻi me ka hoʻopaʻapaʻa hoʻopaʻapaʻa wehe ʻia mai kekahi hoa ʻē aʻe",
+      "commissionEligible": "Ua kūpono ke Komisina",
+      "commissionCancelled_one": "{{count}} ua kāpae ʻia",
+      "commissionCancelled_other": "{{count}} ua kāpae ʻia"
+    },
+    "chart": {
+      "title_one": "Hoʻopaʻa inoa a hoʻopaʻa inoa i kēlā me kēia lā - {{count}} lā i hala",
+      "title_other": "Hoʻopaʻa inoa a hoʻopaʻa inoa i kēlā me kēia lā - {{count}} lā i hala",
+      "registrations": "Kakau inoa",
+      "bookings": "Hoʻopaʻa puke"
+    },
+    "byStage": "Alakaʻi ma ke kūlana",
+    "bySource": "Alakaʻi ma ke kumu",
+    "byReferral": "Alakaʻi ma ke kūlana kuhikuhi",
+    "myDisputes": "Nā hoʻopaʻapaʻa āu i hāpai ai",
+    "noDisputes": "ʻAʻohe hoʻopaʻapaʻa i hāpai ʻia.",
+    "unknown": "ʻAʻole i hoʻonohonoho ʻia",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM waho (hoʻohālikelike)",
+      "PARTNER_CRM": "Hoʻohui ʻia e kāu hui",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Hoʻohui",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "E pau ana ka palekana i ka lā {{count}} aʻe",
+    "expiringTitle_other": "E pau ana ka palekana i nā lā {{count}} e hiki mai ana",
+    "expiringEmpty": "ʻAʻohe kēpau e nalowale kona pale ma kēia pukaaniani."
   }
 }

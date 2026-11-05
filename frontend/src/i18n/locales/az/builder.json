@@ -30,7 +30,8 @@
       "registered": "Qeydiyyatdan keçib"
     },
     "booked": "bron edildi",
-    "empty": "Hələ referal yoxdur."
+    "empty": "Hələ referal yoxdur.",
+    "bookingCancelled": "Rezervasiya ləğv edildi"
   },
   "detail": {
     "customer": "Müştəri",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Rezervasiya təsdiqləndi.",
       "accepted": "Referans qəbul edildi.",
-      "rejected": "İstinad rədd edildi."
+      "rejected": "İstinad rədd edildi.",
+      "bookingCancelled": "Rezervasiya ləğv edildi."
     },
-    "backToReferrals": "İstinadlar səhifəsinə qayıt"
+    "backToReferrals": "İstinadlar səhifəsinə qayıt",
+    "bookingCancelled": "Rezervasiya ləğv edildi",
+    "cancelBooking": "Rezervasyonu ləğv edin",
+    "cancelReasonLabel": "Ləğv etmə səbəbi (şərikə göstərilir) *",
+    "cancelBookingHint": "Əməliyyat mülkiyyəti tərəfdaşa qayıdır və onların komissiya hüququ ləğv edilir. Aparıcı daha sonra yenidən sifariş edilə bilər.",
+    "cancelBookingConfirm": "Rezervasyonu ləğv edin"
   },
   "history": {
     "title": "Tarix",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Komissiya uyğunluğu yaradıldı",
       "HANDOVER_COMPLETED": "Təhvil-təslim tamamlandı",
       "ADMIN_PROTECTION_RELEASED": "Admin dublikat qorumasını erkən buraxdı. Səbəb: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin qeydiyyatı {{from}} dən {{to}} a təyin etdi. Səbəb: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin qeydiyyatı {{from}} dən {{to}} a təyin etdi. Səbəb: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Başqa tərəfdaş tərəfindən dublikat qeydiyyat cəhdi rədd edildi",
+      "BOOKING_CANCELLED": "Rezervasiya ləğv edildi. Səbəb: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Əməliyyat mülkiyyəti tərəfdaşa qaytarıldı",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Komissiya uyğunluğu rezervasiya ilə ləğv edilir",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Yeni rezervasiya üçün komissiya hüququ bərpa edildi"
     }
   }
 }

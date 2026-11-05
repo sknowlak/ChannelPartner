@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Ma'apåsi",
-    "pending": "Pepehna"
+    "pending": "Pepehna",
+    "status": {
+      "CONFIRMED": "Ma'apåsi",
+      "CANCELLED": "Ma kansela i reservasion"
+    }
   },
   "assign": {
     "unassigned": "Ti ma'ayek",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Taya' prohekto på'go (ti ma'a'agang)",
-    "notInList": "{{project}} (ti gaige gi i lista gi i prohektos)"
+    "notInList": "{{project}} (ti gaige gi i lista gi i prohektos)",
+    "protectionDays_one": "{{count}} -dihas na pruteksion",
+    "protectionDays_other": "{{count}} -dihas na pruteksion"
   },
   "journey": {
     "customer": "Kustomer",
@@ -76,7 +82,14 @@
     "progressHistory": "Historia put i Inadelanta",
     "timesIn": "(tiempos gi {{timezone}} )",
     "backToMyLeads": "Tåtte gi i Lina'la'-hu",
-    "editLead": "Na'lå'la' i Lina'la'"
+    "editLead": "Na'lå'la' i Lina'la'",
+    "disputeBanner": "Guaha otro na sosio ni' ha kuestiona i ga'chong-ña este na kustombre. I Leadrat admin ha ribisa este - i proteksion-mu gaige gi i lugat-ña astaki ma disidi.",
+    "booking": "Manma'ayek",
+    "commission": "Komision",
+    "notBooked": "Ti ma'apåsi",
+    "cancelledOn": "Ma kansela gi {{date}} .",
+    "cancelReason": "Rason: {{reason}}",
+    "cancelledHint": "I tåotåo ni' ha cho'gue i gima' ha kansela i booking - i propiedåt operasionåt esta gaige giya hagu yan i kualifikåsion para i kumision ma kansela. Ma na'lå'la' ta'lo yanggen ma na'setbe i lead ta'lo."
   },
   "referral": {
     "NOT_REFERRED": "Ti ma'a'agang (taya' prohekto)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Ha ayek i manma'titinas i guma'",
       "REFERRAL_REJECTED": "Ha na'suha i konstruksion i referensia. Rason: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Ha na'huyong i admin i pruteksion ni' duplikao gi i tutuhon. Rason: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "I Admin ha na'lå'la' i rehistrasion ginen {{from}} asta {{to}} . Rason: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "I Admin ha na'lå'la' i rehistrasion ginen {{from}} asta {{to}} . Rason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ma na'suha i dos na intension rehistrasion ni' otro na sosio",
+      "BOOKING_CANCELLED": "Ma kansela i reservasion. Rason: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "I propiedåt operasionåt ma bira tatte gi i sosio",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ma kansela i kualifikåsion para i kumision yanggen ma booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ma na'lå'la' ta'lo i kualifikao para i nuebu na booking",
+      "OWNERSHIP_DISPUTE_RAISED": "I otro na sosio ha kuestiona i ga'chong-ña este na kustombre - un Leadrat admin para u ribisa",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "I kuestion put i ga'chong-mu gi este na kustombre ma na'suha - ti ma na'lå'la' i ga'ga'-mu",
+      "OWNERSHIP_DISPUTE_UPHELD": "I kuestion put i ga'chong-mu gi este na kustombre ma'aprueba - i ga'ga'-mu ma'konfitma",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Ma rehistra despues di ma disidi i kuestion-mu put i ga'ga'-mu. Nota: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Ma tutuhon i pruteksion: ma disidi i chinatsaga put i ga'ga'-ña gi i fabor otro na sosio. Nota: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Ti bali este na numeron tilifon para {{country}} .",
     "COUNTRY_MISMATCH": "På'go, selekta i maolek na kodun nasion.",
     "NOT_MOBILE": "På'go, na'halom un numeron tilifon, ti un landline."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Siña ma'ayek para i kumision",
+      "PENDING": "Manma'a'atan i Kumision",
+      "CANCELLED": "Ma kansela i kumision"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Ma nå'i hao",
+      "DISPUTED": "Ma kuestiona i atribusion"
+    }
+  },
+  "result": {
+    "none": "Ti ma fa'nu'i i risultan rehistrasion. Rehistra un lead fine'nina.",
+    "acceptedTitle": "Ma rehistra i lead",
+    "rejectedTitle": "Ti ma rehistra i lead",
+    "protectionWindow": "Bentana Proteksion",
+    "protectedUntil": "Maprotehi asta",
+    "openLead": "Na'lå'la' i Lina'la'",
+    "addAnother": "Na'i otro na lead",
+    "duplicate": "Duplikao - esta maprotehi",
+    "duplicateHint": "Este na kustomer esta maprotehi para este na prohekto ni' otro na rehistrasion, pues ti siña ma rehistra para hagu.",
+    "existingProtectedUntil": "I rehistrasion ni' esta gaige maprotehi asta"
+  },
+  "disputes": {
+    "title": "I Dispetdisia-ku siha",
+    "intro": "I kuestion put i ga'ga' ni' un na'huyong para i kustombre siha ni' manma'abandona komo duplikat. I Leadrat admin ha ribisa kada unu.",
+    "empty": "Ti un na'fanhuyong ni' hafa na chinatsaga. Yanggen ma na'suha i kustomer ni' un chule' komo duplikao, siña un kuestiona ginen i risultan i rehistrasion.",
+    "columns": {
+      "dispute": "Kontra",
+      "reason": "I rason-mu",
+      "outcome": "Finatinas"
+    },
+    "status": {
+      "OPEN": "Gi papa' i inestudia",
+      "UPHELD": "Ti gi fabor-mu",
+      "OVERTURNED": "Ma disidi para hagu",
+      "WITHDRAWN": "Ma na'suha"
+    },
+    "awaitingReview": "Manhahasso para i ribiyu ginen i admin",
+    "openNewLead": "Na'lå'la' i lead-mu {{id}}",
+    "withdraw": "Latngus",
+    "withdrawConfirm": "Na'suha i chinatsaga-mu put {{name}} ? I ga'ga'-ña på'go gaige ha' taimanu ha'.",
+    "raise": "Dispues put i ga'ga'",
+    "raiseTitle": "Dispues put i ga'ga'",
+    "raiseHint": "yanggen este na kustomer måtto giya hagu fine'nina, esplåra sa' hafa. I Leadrat admin para u ribisa este; yanggen ma disidi para hagu, i lead ma rehistra para hagu.",
+    "reasonLabel": "Sa' hafa na iyo-mu este na kustombre?",
+    "reasonMin_one": "Maseha {{count}} na letra.",
+    "reasonMin_other": "Mas ki {{count}} na letra siha.",
+    "submit": "Na'hanao i Dispute",
+    "notProtected": "Taya' siña ha prutehi este na kustomer para este na prohekto - siña un rehistra i lead på'go.",
+    "raised": "I {{id}} na kuestion ma na'hanao para i ribisa.",
+    "viewAll": "Atan i chinatsaga-ku siha"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Tiempo",
+    "lastDays_one": "{{count}} diha",
+    "lastDays_other": "{{count}} dihas",
+    "emptyTitle": "Buen binidu! Ti guaha siñat-mu på'go.",
+    "emptyHint": "Rehistra i fine'nina na lead-mu - i pipeline-mu, i booking-mu yan i proteksion-mu para u fanmafa'nu'i guini.",
+    "tiles": {
+      "leads": "Todu i manma'ayek",
+      "newInPeriod_one": "{{count}} nuebu gi este na tiempo",
+      "newInPeriod_other": "{{count}} nuebu gi este na tiempo",
+      "accepted": "Ma aksepta",
+      "booked": "Ma'apåsi",
+      "bookedInPeriod_one": "{{count}} ma'apåsi gi este na tiempo",
+      "bookedInPeriod_other": "{{count}} ma'apåsi gi este na tiempo",
+      "conversion": "Konbetsasion",
+      "conversionHint": "I manma'ayek na kliente siha komo un påtten i manma'aksepta na kliente siha",
+      "protectedNow": "Maprotehi på'go",
+      "expiringSoon_one": "Proteksion ni' ma'pos gi {{count}} diha",
+      "expiringSoon_other": "Proteksion ni' ma'pos gi {{count}} dihas",
+      "disputedNow": "Ma diskuti ni' otro siha",
+      "disputedNowHint": "I lina'la'-mu ni' guaha difirensia gi i propiedåt ginen otro na sosio",
+      "commissionEligible": "Siña ma'ayek para i kumision",
+      "commissionCancelled_one": "{{count}} ma kansela",
+      "commissionCancelled_other": "{{count}} ma kansela"
+    },
+    "chart": {
+      "title_one": "Rehistrasion yan inayek kada diha - i uttimo na {{count}} diha",
+      "title_other": "Rehistrasion yan inayek kada diha - i uttimo na {{count}} dihas",
+      "registrations": "Rehistrasion siha",
+      "bookings": "Manma'ayek"
+    },
+    "byStage": "Manma'gås-ñiha gi estao",
+    "bySource": "Manma'gås-ñiha gi i fuetsan-ñiha",
+    "byReferral": "Manma'gås-ñiha gi i estao i referral",
+    "myDisputes": "I kuestion siha ni' un na'fanhuyong",
+    "noDisputes": "Ti ma na'huyong kuestion siha.",
+    "unknown": "Ti ma setbe",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM gi sanhiyong (ma'a'atan)",
+      "PARTNER_CRM": "Ma addåpta ni' i gurupu-mu",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Inetgrasion",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "I proteksion para u ma'pos gi i sigiente {{count}} diha",
+    "expiringTitle_other": "I proteksion para u ma'pos gi i mamaila' na {{count}} dihas",
+    "expiringEmpty": "ni' hayi na plomo ha na'suha i proteksion-ña gi este na bentanå-ña."
   }
 }

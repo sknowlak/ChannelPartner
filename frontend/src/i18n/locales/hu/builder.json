@@ -30,7 +30,8 @@
       "registered": "Bejegyzett"
     },
     "booked": "Lefoglalt",
-    "empty": "Még nincsenek ajánlások."
+    "empty": "Még nincsenek ajánlások.",
+    "bookingCancelled": "A foglalás törölve"
   },
   "detail": {
     "customer": "Vevő",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "A foglalás megerősítve.",
       "accepted": "Beutaló elfogadva.",
-      "rejected": "A beutaló elutasítva."
+      "rejected": "A beutaló elutasítva.",
+      "bookingCancelled": "A foglalás törölve."
     },
-    "backToReferrals": "Vissza a hivatkozásokhoz"
+    "backToReferrals": "Vissza a hivatkozásokhoz",
+    "bookingCancelled": "A foglalás törölve",
+    "cancelBooking": "Foglalás lemondása",
+    "cancelReasonLabel": "A lemondás oka (megmutatva a partnernek) *",
+    "cancelBookingHint": "A működési tulajdonjog visszaszáll a partnerre, és a jutalékjogosultsága megszűnik. A vezetés később újra lefoglalható.",
+    "cancelBookingConfirm": "Törölje a foglalást"
   },
   "history": {
     "title": "Történelem",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Jutalékjogosultság létrejött",
       "HANDOVER_COMPLETED": "Az átadás befejeződött",
       "ADMIN_PROTECTION_RELEASED": "A rendszergazda korán kiadta a duplikált védelmet. Ok: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Az adminisztrátor átadta a regisztrációt a következőről: {{from}} a következőre: {{to}} . Ok: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Az adminisztrátor átadta a regisztrációt a következőről: {{from}} a következőre: {{to}} . Ok: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Egy másik partner ismétlődő regisztrációs kísérlete elutasításra került",
+      "BOOKING_CANCELLED": "A foglalás törölve. Ok: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "A működési tulajdonjog visszakerült a partnerhez",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "A jutalékjogosultság a foglalással törölve",
+      "COMMISSION_ELIGIBILITY_RESTORED": "A jutalékjogosultság visszaállt az új foglaláshoz"
     }
   }
 }

@@ -2174,13 +2174,13 @@ What remains from the product-gap review (the separate review prompt was retired
 
 ## P1.2 Duplicate protection and ownership
 
-- Duplicate-protection rules configurable per builder/project (window length, match fields), not only globally.
+- Duplicate-protection rules configurable per builder/project (window length, match fields), not only globally. **Done in section 62** (window length and match fields).
 - Decide what happens when protection expires: whether the same partner may re-register immediately, or after a configurable cooldown (document the choice either way).
-- Dispute handling for legitimate ownership disagreements (a `DISPUTED` state, who can raise and resolve it, audit of the outcome), keeping original attribution and history whatever the result.
+- Dispute handling for legitimate ownership disagreements (a `DISPUTED` state, who can raise and resolve it, audit of the outcome), keeping original attribution and history whatever the result. **Done in section 62.**
 
 ## P1.3 Booking handover
 
-- Done in sections 50 and 52 (builder-only, after acceptance, atomic, idempotent, one booking and one commission). Remaining: a `CANCELLED` booking path and what it does to commission eligibility.
+- Done in sections 50 and 52 (builder-only, after acceptance, atomic, idempotent, one booking and one commission). A `CANCELLED` booking path and what it does to commission eligibility: **done in section 62.**
 
 ## P1.4 Two-way CRM synchronization
 
@@ -2214,13 +2214,13 @@ What remains from the product-gap review (the separate review prompt was retired
 ## P2.3 Errors and observability
 
 - One consistent API error shape (`{ reason, fieldKey?, code? }`) on every route.
-- Request/correlation IDs carried through API calls, audit entries and integration deliveries.
+- Request/correlation IDs carried through API calls, audit entries and integration deliveries. **Done in section 62** (API responses, errors, audit entries and outgoing webhook deliveries).
 - Pagination and limits on every list, search and export (My Leads still returns everything).
 - Cleanup, retry and resync jobs safe under repeated execution (largely done in sections 50-51; re-verify when adding new jobs).
 
 ## Other known gaps
 
-- Partner logout doesn't revoke the token server-side (password change and deactivation do).
+- ~~Partner logout doesn't revoke the token server-side~~ - done in section 62 for partners, team members, builders and admins.
 - The mobile app has been compile-checked but not run on a device/emulator since section 52.
 - No lint configuration exists in any of the four apps.
 
@@ -2442,6 +2442,108 @@ Prompted by "entire system: app background colour, 3-4 types of view, and a more
 - **Polish** (all themes): 12px cards with a soft border and shadow, frosted sticky top bar, consistent inputs with a coloured focus ring, gentle hover lift on buttons, table row hover, theme-coloured thin scrollbars, fluid page titles, smooth colour transitions (off with reduced motion). Phones: larger tap targets, tighter card padding; the admin top menu wraps instead of overflowing.
 - New text (`common:theme.*`) hand-written in en/hi/bn, machine-translated for the other languages.
 - Not covered: the mobile (Expo) app keeps its current look.
+
+# 62. Gap Closure: Dashboards, Ownership Disputes, Booking Cancellation, Per-Project Protection, Logout, Request IDs
+
+Prompted by "identify all the gaps and enhance and add more features". The gaps came from section 53's backlog and section 24's stretch scope (advanced partner dashboards, conflict/dispute workflow, partner performance analytics). Each item below closes one of them.
+
+## 62.1 Partner dashboard
+
+- **Screen**: Dashboard (`/dashboard`), the first item in the partner app's menu. Signed-in partners opening `/` land here; login and signup still go to My Leads. KPI tiles: total leads, accepted, booked, conversion (booked ÷ accepted), protected now, protection expiring in 7 days, leads under dispute, commission eligible. A 7/30/90-day period selector, a registrations-vs-bookings per-day chart, breakdowns by stage, source and referral status, and a "Protection expiring soon" table linking to each lead.
+- **API**: `GET /api/channel-partner/my/dashboard?days=30&tz=<IANA>`. `days` is clamped to 7-365, and an unknown `tz` falls back to UTC. Days are bucketed in that timezone. Scoped to the partner's own registrations, like My Leads. Returns `totals { leads, accepted, booked, protectedNow, expiringSoon, disputedNow, newInPeriod, bookedInPeriod, conversionRate }`, `commission` and `disputes` counts by status, `byStage`, `bySource`, `byReferral`, `trend { registrations, bookings }`, and `expiringSoon` (up to 10, soonest first).
+
+## 62.2 Admin dashboard additions
+
+`GET /api/admin/dashboard` also returns `openDisputes`, `cancelledBookings`, `registrationTrend` (last 30 days, UTC) and `leaderboard`: the top 10 partners by bookings, then by leads, with accepted count and conversion %. `totalBookings` no longer counts cancelled bookings. The Dashboard screen shows them as tiles, a trend chart and a "Top partners" table.
+
+## 62.3 Ownership disputes
+
+The "conflict/dispute workflow" from section 24 and P1.2. Decisions taken:
+
+- **Who raises it**: a partner whose registration was refused as a duplicate. On the rejected result, **Dispute ownership** opens a reason box (at least 10 characters) and re-sends the customer and project the partner just entered. The server finds the protecting registration itself, so a dispute can only target a lead that really blocks this customer. Refused with `NOT_PROTECTED` (nobody holds it, register it now), `ALREADY_YOURS` or `ALREADY_OPEN`. Requires **Manage Leads** and is rate-limited like the duplicate check.
+- **Who sees what** (section 52 rules apply):
+  - The raising partner sees only their own submission and the outcome (**My Disputes**, `/disputes`), never who holds the customer.
+  - The holder sees a "under review" banner on the lead (`Registration.disputeStatus = 'OPEN'`) and a timeline entry, never who disputed or why.
+  - A commission on a disputed lead is `attributionStatus: DISPUTED` until the dispute closes. This includes a booking made while the dispute is open.
+- **Who decides**: a Leadrat admin (Admin Portal → **Disputes**, filter by status) sees both sides: the raising partner with their submission and reason, and the holder with the held registration's dates, stage, referral and booking state. A note is required for either outcome.
+  - **Upheld**: the current owner keeps the customer and nothing changes.
+  - **Overturned**: the holder's protection ends now (audited as `PROTECTION_ENDED_BY_DISPUTE`), and the customer is registered for the raising partner through the normal create path, with that partner's own contact copy (`resultRegistrationId`, `OWNERSHIP_DISPUTE_OVERTURNED`). Only the core fields are required, as for an import. Refused while the held lead is **booked** (`HELD_BOOKED`, cancel the booking first, so commission is never paid twice) or when another registration also protects the customer (`OTHER_HOLDER`).
+  - **Withdrawn**: the raising partner can withdraw an open dispute.
+- **Always kept**: the original registration, its attribution and its full history, whatever the outcome.
+- **Builders don't see disputes**: the dispute events are left out of the builder portal's referral history. A dispute is between the partners and Leadrat.
+- **Register Lead result page**: the refused-duplicate result now has its own page (`/registrations/result`). Since an earlier change, Register Lead had been sending users to a route with no page, which then tried to load a lead called "result". The page shows the accepted outcome or the refusal, and hosts **Dispute ownership**.
+- **APIs**:
+  - Partner: `POST /my/disputes`, `GET /my/disputes`, `POST /my/disputes/:id/withdraw`.
+  - Admin: `GET /api/admin/disputes?status=`, `GET /api/admin/disputes/:id`, `POST /api/admin/disputes/:id/resolve { outcome: UPHELD|OVERTURNED, note }`.
+- **Data model**: new `Dispute` (`disputeId`, raising `partnerId` and `raisedBy`, `projectId`, `customer {name, mobile, email, alternateMobile}`, `reason`, `heldRegistrationId`, `heldPartnerId`, `status OPEN|UPHELD|OVERTURNED|WITHDRAWN`, `resolution {note, by, at}`, `resultRegistrationId`). New `Registration.disputeStatus` (`'' | 'OPEN'`).
+- **Timeline events**: `OWNERSHIP_DISPUTE_RAISED`, `OWNERSHIP_DISPUTE_CLOSED` (upheld or withdrawn), `PROTECTION_ENDED_BY_DISPUTE`, `OWNERSHIP_DISPUTE_OVERTURNED`.
+
+## 62.4 Booking cancellation
+
+The P1.3 remainder. A buyer backs out after booking.
+
+- **Who**: the builder (builder portal → referral → **Cancel booking**, `POST /api/builder/referrals/:id/booking/cancel { reason }`), or an admin (`override` action `CANCEL_BOOKING`). Partners can't cancel, just as they can't confirm. The reason is required.
+- **Effect**, atomic on `isBooked` so a double cancel gets 409:
+  - The `Booking` becomes `CANCELLED` (with `cancelledAt`, `cancelledBy` and `cancellationReason`).
+  - `CommissionEligibility.eligibilityStatus` becomes `CANCELLED`. The record stays, so the history shows it existed.
+  - Operational ownership returns to the partner (`PARTNER_OWNED`). Attribution is unchanged.
+  - The lead returns to the stage it had before booking (`Booking.stageBeforeBooking`). My Leads shows it as "Booking cancelled" (`bookingStatus` in the list response), not as pending.
+  - The builder again sees only pre-booking fields.
+  - A permanent "booked" protection ends: the lead is protected only until its original `protectionExpiry`.
+  - Timeline: `BOOKING_CANCELLED`, `OPERATIONAL_OWNERSHIP_RETURNED`, `COMMISSION_ELIGIBILITY_CANCELLED`.
+  - New outgoing webhook event `BOOKING_CANCELLED`, selectable on webhooks and in the Open API subscriptions.
+- **Re-booking**: the builder can book the lead again. It re-uses the same booking and commission records, which become `CONFIRMED` and `ELIGIBLE` (`COMMISSION_ELIGIBILITY_RESTORED`), so there is still one booking and one commission per lead.
+
+## 62.5 Duplicate rules per project
+
+P1.2's per-project rules. Both are set by Super Admins in Admin Portal → Builder → Projects (columns "Duplicate protection" and "Duplicates match on").
+
+- **Window**: `Project.protectionDays` takes 1-3650, or empty to use the global `Settings.duplicateProtectionDays`. It applies to registrations made from then on; existing protection keeps its expiry.
+- **Match fields**: `Project.duplicateMatchFields` is mobile, email or both, or unset to use the global `Settings.duplicateMatchFields`. Duplicate checks and protection claims for the project use it from then on. Example: on an email-only project, the same email with a different mobile is a duplicate, and the same mobile with a different email is not. The "already booked" check always matches on both, whatever the setting, so one buyer still earns only one commission.
+- `GET /my/projects` returns each project's effective `protectionDays` and `matchFields`; partners see the window when picking a project.
+- Invalid input is refused with `fieldKey` `protectionDays` / `duplicateMatchFields`.
+
+## 62.6 Server-side logout
+
+`POST /api/channel-partner/my/logout` (partners and team members), `POST /api/builder/auth/logout` and `POST /api/admin/auth/logout` revoke the current token. Every auth middleware refuses it from then on. The web apps, builder portal, admin portal and mobile app call it on sign-out (best effort, so signing out never waits on the network).
+
+- Only a SHA-256 of the token is stored (`RevokedToken`, with a TTL index that drops it once the token would have expired anyway).
+- Each login now carries a unique token ID (`jti`), so ending one session never ends another, even one issued in the same second.
+- Password changes and deactivation still sign out everywhere, as before.
+
+## 62.7 Request IDs
+
+Every API response carries `X-Request-Id`. This is the caller's own value when it is a safe token (8-64 characters of `A-Z a-z 0-9 . _ : -`), otherwise a new UUID. The header is exposed to browsers through CORS. The same ID is:
+
+- added to every error body (`{ reason, fieldKey?, code?, requestId }`), whether the error comes from the error handler, a controller or the 404 handler. The admin portal shows it as "(Ref: ...)" after error messages;
+- printed on the server's error log line;
+- stored on every audit entry the request writes (`AuditEvent.requestId`).
+
+- stored on every outgoing webhook delivery the request causes (`WebhookDelivery.requestId`), and sent to the target as `X-Leadrat-Request-Id`. A retry re-sends the same ID; pushes made by schedulers have none.
+
+A failure a user reports can therefore be traced to the log, the history and the receiving system.
+
+## 62.8 Tests
+
+`backend/tests/e2e/disputesBookings.e2e.mjs` (65 checks, part of `npm run test:e2e`) covers:
+
+- request IDs;
+- per-project windows and match fields;
+- cancel, double cancel, re-book, admin cancel, and the visibility after a cancel;
+- the dispute lifecycle: raise, every refusal code, no leaks either way, withdraw, uphold, the booked-holder refusal, overturn, and the effects on both partners;
+- both dashboards;
+- logout for all three token types, including that a second session survives;
+- request IDs on controller-sent errors, and builders not seeing dispute events.
+
+`integrations.e2e.mjs` also checks that a push carries `X-Leadrat-Request-Id`.
+
+While building these, two bugs were found and fixed:
+
+- A commission created while a dispute was open was marked `ATTRIBUTED`.
+- Two logins in the same second produced an identical token, so one logout ended both.
+- With matching set to email only, the same mobile number with a different email was still refused. The legacy per-customer claim key (one customer per phone number) blocked it regardless. That key is now taken only when mobile is a match field. This also affected the global email-only setting before section 62.
+
+New UI text is hand-written in en/hi/bn and machine-translated for the other languages (section 55).
 
 # Appendix A. Original Multilingual (i18n) Requirements
 

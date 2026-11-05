@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Gebook",
-    "pending": "In aafwachting"
+    "pending": "In aafwachting",
+    "status": {
+      "CONFIRMED": "Gebook",
+      "CANCELLED": "Reservering geannuleerd"
+    }
   },
   "assign": {
     "unassigned": "Neet toegeweze",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Nog gein projek (neet verweze)",
-    "notInList": "{{project}} (neet in de projeklies)"
+    "notInList": "{{project}} (neet in de projeklies)",
+    "protectionDays_one": "{{count}} -daag besjerming",
+    "protectionDays_other": "{{count}} -daag besjerming"
   },
   "journey": {
     "customer": "Klant",
@@ -76,7 +82,14 @@
     "progressHistory": "Vooruitgangsgesjiedenis",
     "timesIn": "(tieden in {{timezone}} )",
     "backToMyLeads": "Terug nao mien leiding",
-    "editLead": "Lead bewerke"
+    "editLead": "Lead bewerke",
+    "disputeBanner": "‘n Aandere partner heet ‘t eigendom vaan deze klant betwist. ‘n Leadrat admin beoordeilt ‘t - eur besjerming blief op zien plaots totdat ze beslisse.",
+    "booking": "Reservering",
+    "commission": "Kommissie",
+    "notBooked": "Neet gebook",
+    "cancelledOn": "Geannuleerd op {{date}} .",
+    "cancelReason": "Reie: {{reason}}",
+    "cancelledHint": "De bouwer heet de boeking geannuleerd - de operationele eigenaarsjap is trök bij uch en de insjtelling veur de commissie is geannuleerd. ‘t Weert hersjtèld es de lead weer is gebook."
   },
   "referral": {
     "NOT_REFERRED": "Neet verweze (geen projek)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Bouwer heet de verwiezing geaccepteerd",
       "REFERRAL_REJECTED": "Builder heet de verwiezing aafgeweze. Reie: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin heet dubbele besjerming vreug oetgebrach. Reie: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin heet de registratie hertoegeweze vaan {{from}} nao {{to}} . Reie: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin heet de registratie hertoegeweze vaan {{from}} nao {{to}} . Reie: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "‘n Dubbele registratiepoging door ‘n aandere partner woort aafgeweze",
+      "BOOKING_CANCELLED": "Reservering geannuleerd. Reie: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operationeel eigenaarsjap is trökgegeve aon de partner",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Commissie-kwalificatie geannuleerd bij de reservering",
+      "COMMISSION_ELIGIBILITY_RESTORED": "De insjakelbaarheid veur de commissie is hersjtèld veur de nuie reservering",
+      "OWNERSHIP_DISPUTE_RAISED": "‘n Aandere partner betwiste ‘t eigendom vaan deze klant - ‘n Leadrat -admin zal ‘t bekieke",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "‘t Eigenaarsjapsgesjèl euver dees klant is ingetrokke - eur eigenaarsjap is onveranderd",
+      "OWNERSHIP_DISPUTE_UPHELD": "‘t Eigenaarsjapsgesjèl euver dees klant is beoordeild - eur eigendom is bevesteg",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Geregistreerd naodet eur eigendomsgesjèl in eur veurdeil is beslis. Opmerking: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "De besjerming beëindigde: un eigendomsgesjèl woort beslis ten gunste vaan un aander partner. Opmerking: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Dit tillefoonnummer is neet geldig veur {{country}} .",
     "COUNTRY_MISMATCH": "Selecteer de juiste landcode.",
     "NOT_MOBILE": "Voer un mobielnummer in, gein vaste telefoon."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "In aanmerking kommen veur commissie",
+      "PENDING": "Commissie in afwachting",
+      "CANCELLED": "Commissie geannuleerd"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Aan dich touwgesjreve",
+      "DISPUTED": "Toesjrieving betwist"
+    }
+  },
+  "result": {
+    "none": "Geen registratieresultaat te zeen. Registreer iers un lead.",
+    "acceptedTitle": "Lead geregistreerd",
+    "rejectedTitle": "Lead neet geregistreerd",
+    "protectionWindow": "Besjermingsvenster",
+    "protectedUntil": "Besjermd tot",
+    "openLead": "Open Lead",
+    "addAnother": "Voeg nog ‘n lead toe",
+    "duplicate": "Duplicate - al besjermp",
+    "duplicateHint": "Dees klant is al besjermp veur dit projek door ‘n aandere registratie, dus ‘t koos neet veur uch were geregistreerd.",
+    "existingProtectedUntil": "Bestaonde registratie besjermp tot"
+  },
+  "disputes": {
+    "title": "Mien gesjille",
+    "intro": "Eigenaarsjapsgesjille die geer heet opgewèk veur klante die es dubbele woorte geweigerd. ‘n Leadrat admin beoordeilt eder.",
+    "empty": "Geer heet gein gesjille gereze. Es ‘n klant die geer hebt ingebrach weurt geweigerd es duplicaat, kin geer ‘t betwiste op basis vaan ‘t registratieresultaat.",
+    "columns": {
+      "dispute": "Oneinigheid",
+      "reason": "Uw reie",
+      "outcome": "Oetkomst"
+    },
+    "status": {
+      "OPEN": "Onder beoordeiling",
+      "UPHELD": "Neet in eur guns",
+      "OVERTURNED": "Besjlaote in eur guns",
+      "WITHDRAWN": "Ingetrokken"
+    },
+    "awaitingReview": "Wach op admin-review",
+    "openNewLead": "Open eur lead {{id}}",
+    "withdraw": "Teruuktrikke",
+    "withdrawConfirm": "Trek eur geschil veur {{name}} ? ‘t Huidige eigendom blief wie ‘t is.",
+    "raise": "Besjtrijd euver eigendom",
+    "raiseTitle": "Besjtrijd euver eigendom",
+    "raiseHint": "Es dees klant iers nao uch kaom, verklaor dan worom. ‘n Leadrat admin zal ‘t bekieke; es ze in eur veurdeil beslisse, is de lead veur uch geregistreerd.",
+    "reasonLabel": "Boeum is deze klant vaan dien?",
+    "reasonMin_one": "Op z’n mins {{count}} teiken.",
+    "reasonMin_other": "Op z’n mins {{count}} teikens.",
+    "submit": "Gesjèl sjikke",
+    "notProtected": "Niemand besjermp deze klant veur dit projek mie - geer kin de lead noe registrere.",
+    "raised": "Gesjèl {{id}} gestuurd veur herziening.",
+    "viewAll": "Bekiek mien gesjille"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Periode",
+    "lastDays_one": "{{count}} daag",
+    "lastDays_other": "{{count}} daag",
+    "emptyTitle": "Welkom! Geer höb nog gein leidinge.",
+    "emptyHint": "Registreer eur ierste lead - eur pijplijn, boekinge en besjermingsdeadlines zulle hei weergegeve weure.",
+    "tiles": {
+      "leads": "Totaal leads",
+      "newInPeriod_one": "{{count}} nuuj in deze periode",
+      "newInPeriod_other": "{{count}} nuuj in deze periode",
+      "accepted": "Geaccepteerd",
+      "booked": "Gebook",
+      "bookedInPeriod_one": "{{count}} gebookt in deze periode",
+      "bookedInPeriod_other": "{{count}} gebookt in deze periode",
+      "conversion": "Umzetting",
+      "conversionHint": "Gebookte leads es aandeil vaan geaccepteerde leads",
+      "protectedNow": "Noe besjermp",
+      "expiringSoon_one": "Besjerming die eindigt op {{count}} daag",
+      "expiringSoon_other": "Besjerming die eindigt op {{count}} daag",
+      "disputedNow": "Bestrijt door andere",
+      "disputedNowHint": "Uw leads mit un open eigendomsgesjèl vaan un aander partner",
+      "commissionEligible": "In aanmerking kommen veur commissie",
+      "commissionCancelled_one": "{{count}} geannuleerd",
+      "commissionCancelled_other": "{{count}} geannuleerd"
+    },
+    "chart": {
+      "title_one": "Registraties en boekinge per daag - lètste {{count}} daag",
+      "title_other": "Registraties en boekinge per daag - aafgeloupe {{count}} daag",
+      "registrations": "Registraties",
+      "bookings": "Reserveringe"
+    },
+    "byStage": "Leads op status",
+    "bySource": "Leads volgens bron",
+    "byReferral": "Leads volgens verwiezingsstatus",
+    "myDisputes": "Gesjèlle die geer heet opgewèk",
+    "noDisputes": "Gein gesjille gereze.",
+    "unknown": "Neet ingesteld",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Extern CRM (gesimuleerd)",
+      "PARTNER_CRM": "Toegeveug door eur team",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integratie",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Besjerming vervalt in de volgende {{count}} daag",
+    "expiringTitle_other": "Besjerming vervalt in de volgende {{count}} daag",
+    "expiringEmpty": "Gein lood verliest zien besjerming in dit venster."
   }
 }

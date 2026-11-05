@@ -7,6 +7,8 @@ const { getTimeline, logEvent } = require('../../services/auditService');
 const Partner = require('../../models/Partner');
 const Ownership = require('../../models/Ownership');
 const { releaseClaim, reassignClaim } = require('../../services/duplicateService');
+const { cancelBooking } = require('../../services/bookingService');
+const { triggerWebhooks } = require('../../services/webhookService');
 
 // GET /api/admin/registrations?partnerId=&projectId=&status=&isBooked=
 async function listRegistrations(req, res, next) {
@@ -114,7 +116,18 @@ async function overrideRegistration(req, res, next) {
       return res.json({ registrationId, partnerId: registration.partnerId });
     }
 
-    return res.status(400).json({ reason: 'Unsupported action. Use RELEASE_PROTECTION or REASSIGN_PARTNER' });
+    if (action === 'CANCEL_BOOKING') {
+      // Same path as the builder's cancellation (section 62).
+      const result = await cancelBooking({
+        registration,
+        actorLabel: `ADMIN:${req.admin.email}`,
+        reason,
+        afterCancelled: (lead) => triggerWebhooks(lead.partnerId, 'BOOKING_CANCELLED', lead)
+      });
+      return res.json(result);
+    }
+
+    return res.status(400).json({ reason: 'Unsupported action. Use RELEASE_PROTECTION, REASSIGN_PARTNER or CANCEL_BOOKING' });
   } catch (err) {
     next(err);
   }

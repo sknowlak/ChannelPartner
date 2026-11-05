@@ -32,7 +32,8 @@
       "registered": "Registruotas"
     },
     "booked": "Užsakyta",
-    "empty": "Siuntimų dar nėra."
+    "empty": "Siuntimų dar nėra.",
+    "bookingCancelled": "Užsakymas atšauktas"
   },
   "detail": {
     "customer": "Klientas",
@@ -55,9 +56,15 @@
     "notice": {
       "booked": "Užsakymas patvirtintas.",
       "accepted": "Siuntimas priimtas.",
-      "rejected": "Siuntimas atmestas."
+      "rejected": "Siuntimas atmestas.",
+      "bookingCancelled": "Užsakymas atšauktas."
     },
-    "backToReferrals": "Atgal į Referals"
+    "backToReferrals": "Atgal į Referals",
+    "bookingCancelled": "Užsakymas atšauktas",
+    "cancelBooking": "Atšaukti užsakymą",
+    "cancelReasonLabel": "Atšaukimo priežastis (parodyti partneriui) *",
+    "cancelBookingHint": "Veiklos nuosavybės teisė grąžinama partneriui ir jo teisė komisiniams atšaukiama. Pokytį galima vėl rezervuoti vėliau.",
+    "cancelBookingConfirm": "Atšaukti užsakymą"
   },
   "history": {
     "title": "Istorija",
@@ -90,7 +97,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Sukurtas Komisijos tinkamumas",
       "HANDOVER_COMPLETED": "Perdavimas baigtas",
       "ADMIN_PROTECTION_RELEASED": "Administratorius anksti išleido pasikartojančią apsaugą. Priežastis: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Administratorius perskyrė registraciją iš {{from}} į {{to}} . Priežastis: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Administratorius perskyrė registraciją iš {{from}} į {{to}} . Priežastis: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Kito partnerio bandymas užsiregistruoti dublikatas buvo atmestas",
+      "BOOKING_CANCELLED": "Užsakymas atšauktas. Priežastis: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Veiklos nuosavybė grąžinta partneriui",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Komisinio teisė panaikinta su užsakymu",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Atkurta teisė komisiniams už naują užsakymą"
     }
   }
 }

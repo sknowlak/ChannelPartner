@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Booked",
-    "pending": "Eviewray"
+    "pending": "Eviewray",
+    "status": {
+      "CONFIRMED": "Booked",
+      "CANCELLED": "Booking cancellatam"
+    }
   },
   "assign": {
     "unassigned": "Unssigned",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "No project yet (not referred)",
-    "notInList": "{{project}} (non in indice project)"
+    "notInList": "{{project}} (non in indice project)",
+    "protectionDays_one": "{{count}} -day protection",
+    "protectionDays_other": "{{count}} -day protection"
   },
   "journey": {
     "customer": "Customer",
@@ -76,7 +82,14 @@
     "progressHistory": "Progressus Historia",
     "timesIn": "(tempus in {{timezone}} )",
     "backToMyLeads": "Back to My Leads",
-    "editLead": "Edit plumbum"
+    "editLead": "Edit plumbum",
+    "disputeBanner": "Alius particeps de possessione huius mos disputavit. A Leadrat admin illud recognoscit - tutela tua in loco manet donec statuant.",
+    "booking": "Booking",
+    "commission": "Commissio",
+    "notBooked": "Non corruptela",
+    "cancelledOn": "Cancellato in {{date}} .",
+    "cancelReason": "Ratio: {{reason}}",
+    "cancelledHint": "Hic aedificator remisit libri - possessionis operationalis tecum est et commissio eligibilitas instat. Restituitur plumbum si denuo corruptela."
   },
   "referral": {
     "NOT_REFERRED": "Not referred (non project)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Architecto recusandae deferre",
       "REFERRAL_REJECTED": "Architecto repudiandae eget. Ratio: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin mane praesidium duplicatum dimisit. Ratio: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin resignavit adnotationem ab {{from}} ad {{to}} . Ratio: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin resignavit adnotationem ab {{from}} ad {{to}} . Ratio: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Duplex adnotatione conatus ab alio socio repulsus est",
+      "BOOKING_CANCELLED": "Cras instat. Ratio: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Res rediit ad socium operational",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Commissio eligibility cassatur cum libri",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Commissio eligibility pro novo libro restituitur",
+      "OWNERSHIP_DISPUTE_RAISED": "Alius particeps de possessione huius emptoris disputavit - a Leadrat admin recensebit",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Disceptatio dominii in hoc emptore subtrahitur - dominium tuum non mutatum est",
+      "OWNERSHIP_DISPUTE_UPHELD": "Disceptatio possessionis de hoc emptore recognita est - dominium tuum confirmatum est",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Relatus post dominium tuum in favorem vestrum disceptatum est. Nota: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Praesidium finivit: disceptatio dominii in favorem alterius particeps facta est. Nota: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Numerus telephonicus hic pro {{country}} non valet.",
     "COUNTRY_MISMATCH": "Placere eligere rectam regionem codice.",
     "NOT_MOBILE": "Please enter a number of mobile, not landline."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Commissio eligibile",
+      "PENDING": "Commissio pendente",
+      "CANCELLED": "Commissio cancellata"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Attribuitur tibi",
+      "DISPUTED": "Attributionis disputatum est"
+    }
+  },
+  "result": {
+    "none": "Nullam adnotationem eventum ostendere. Primum subcriptio plumbeum.",
+    "acceptedTitle": "plumbum descripserunt",
+    "rejectedTitle": "Ne descripserunt",
+    "protectionWindow": "Praesidium Fenestra",
+    "protectedUntil": "Donec donec",
+    "openLead": "Apertum plumbum",
+    "addAnother": "Add Alius plumbum",
+    "duplicate": "Effingo - iam protected",
+    "duplicateHint": "Hic mos iam ab alia adnotatione ad hanc rem munitus est, ut describi pro te non posset.",
+    "existingProtectedUntil": "Existens adnotatione tutis donec"
+  },
+  "disputes": {
+    "title": "Controversiae meae",
+    "intro": "Occupatio controversias clientibus duplicatis denegata negavit. A Leadrat admin unumquemque recenset.",
+    "empty": "Nihil controversiae habes. Si emptorem intuleris, ut duplicatum recusatur, ex electronico proventu disputare potes.",
+    "columns": {
+      "dispute": "Disceptatio",
+      "reason": "Ratio tua",
+      "outcome": "Exitus"
+    },
+    "status": {
+      "OPEN": "Sub review",
+      "UPHELD": "Non in gratiam tuam",
+      "OVERTURNED": "Placuit in gratiam tuam",
+      "WITHDRAWN": "abductus"
+    },
+    "awaitingReview": "Expectans admin review",
+    "openNewLead": "Aperi plumbum tuum {{id}}",
+    "withdraw": "recedere",
+    "withdrawConfirm": "Retrahe controversiam tuam pro {{name}} ? Praesens dominium sic manet.",
+    "raise": "Disceptatio possessionis",
+    "raiseTitle": "Disceptatio possessionis",
+    "raiseHint": "Si hic mos ad te primum venit, explica cur. A Leadrat admin recensebit; si tibi placuerint, plumbum relatus est tibi.",
+    "reasonLabel": "Cur hic mos tuus est?",
+    "reasonMin_one": "Ingenium saltim {{count}} .",
+    "reasonMin_other": "Ingenia saltem {{count}} .",
+    "submit": "Mitte controversiam",
+    "notProtected": "Nemo tutelam huius emptoris huius incepti plus tenet - plumbum nunc subcriptio potes.",
+    "raised": "Lites {{id}} recognoscendae missae sunt.",
+    "viewAll": "View my lites"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Tempus",
+    "lastDays_one": "{{count}} dies",
+    "lastDays_other": "{{count}} dies",
+    "emptyTitle": "salve! Aliquam nec porta nisi.",
+    "emptyHint": "Primum plumbum tuum subcriptio - pipelines, libri et tutelae deadlines tuos hic monstrabunt.",
+    "tiles": {
+      "leads": "Totalis leads",
+      "newInPeriod_one": "{{count}} novam in hoc tempore",
+      "newInPeriod_other": "{{count}} novam in hoc tempore",
+      "accepted": "Accepit",
+      "booked": "Booked",
+      "bookedInPeriod_one": "{{count}} libri hoc tempore",
+      "bookedInPeriod_other": "{{count}} libri hoc tempore",
+      "conversion": "Conversio",
+      "conversionHint": "Corruptela ducit ut partem accepti ducit",
+      "protectedNow": "Tutus nunc",
+      "expiringSoon_one": "Praesidium desinens in {{count}} diem",
+      "expiringSoon_other": "Praesidium ending in {{count}} dierum",
+      "disputedNow": "Disputatum ab aliis",
+      "disputedNowHint": "Tuum ducit cum aperta possessione controversia ab alio socio",
+      "commissionEligible": "Commissio eligibile",
+      "commissionCancelled_one": "{{count}} cancellatam",
+      "commissionCancelled_other": "{{count}} cancellatam"
+    },
+    "chart": {
+      "title_one": "Adnotationes et libelli per diem - novissimum {{count}} diem",
+      "title_other": "Adnotationes et libelli diurni - novissimi {{count}} dierum",
+      "registrations": "Registrations",
+      "bookings": "Bookings"
+    },
+    "byStage": "Ducit per statum",
+    "bySource": "Ducit per fontem",
+    "byReferral": "Ducit deferre status",
+    "myDisputes": "Lites erexisti",
+    "noDisputes": "Nullas controversias movebat.",
+    "unknown": "Non posuit",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Externi CRM (simulati)",
+      "PARTNER_CRM": "Addita tua bigas",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integration",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Tutela exspirans in proximo {{count}} die",
+    "expiringTitle_other": "Praesidium exspirare in proximis {{count}} diebus",
+    "expiringEmpty": "Nulla plumbi protectionem in hac fenestra amittit."
   }
 }

@@ -43,7 +43,9 @@
       "name": "Areng",
       "city": "Kota",
       "status": "Status",
-      "actions": "Panggaukang"
+      "actions": "Panggaukang",
+      "protection": "Perlindungan duplikat",
+      "matchOn": "Duplikat cocok ri"
     },
     "closeReferrals": "Tutui untuk rujukan",
     "reopen": "Bukai pole",
@@ -55,6 +57,25 @@
       "add": "tambai proyek",
       "created": "Ni paenteng {{name}} ."
     },
-    "back": "ammotere mange ri tukang bangunang"
+    "back": "ammotere mange ri tukang bangunang",
+    "protection": {
+      "days_one": "{{count}} allo",
+      "days_other": "{{count}} allo",
+      "globalDays_one": "Default global ( {{count}} allo)",
+      "globalDays_other": "Global default ( {{count}} allo)",
+      "globalDefault": "Default global",
+      "placeholder": "Allo-allo pajagaang (kosong = default global)",
+      "saved": "Perlindungan duplikat ni update untuk {{name}} .",
+      "hint": "Perlindungan duplikat: 1-3650 allo, atau nibokoi kosong untuk ampakei default global battu ri pengaturan. Pa'pinraang ni pakeji bawang ri pendaftaran beru - yang rie' memangi anjagai kadaluarsana."
+    },
+    "matching": {
+      "global": "Default global",
+      "globalWith": "Default global ( {{fields}} )",
+      "mobile": "Nomor ponsel",
+      "email": "Email",
+      "both": "Nomor ponsel + email",
+      "saved": "Duplikat cocok ni update untuk {{name}}",
+      "hint": "Rincian apa ampa'jari rua pendaftaran pelanggan yang sama untuk se're proyek. Pa'pinraang ni pake ri cek duplikat battu ri kamma-kammaya anne; perlindungan yang ada tidak terpengaruh."
+    }
   }
 }

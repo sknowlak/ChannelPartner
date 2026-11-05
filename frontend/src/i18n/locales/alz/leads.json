@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Jugoro",
-    "pending": "Podi"
+    "pending": "Podi",
+    "status": {
+      "CONFIRMED": "Jugoro",
+      "CANCELLED": "Juweko booking"
+    }
   },
   "assign": {
     "unassigned": "Jupoko ngo",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Tic moko epe podi (judwoko ngo)",
-    "notInList": "{{project}} (epe i kind tic)"
+    "notInList": "{{project}} (epe i kind tic)",
+    "protectionDays_one": "{{count}} -gwok pa ceng",
+    "protectionDays_other": "{{count}} -gwok pa ceng"
   },
   "journey": {
     "customer": "Kastuma",
@@ -76,7 +82,14 @@
     "progressHistory": "Lembe mukadho mi dongo",
     "timesIn": "(sawa in {{timezone}} )",
     "backToMyLeads": "Dok cen i telowic para",
-    "editLead": "Lok telowic"
+    "editLead": "Lok telowic",
+    "disputeBanner": "Jaratic mange uketho lembe iwi bedo won piny pa juruwil eni. Jatel wi tic Leadrat ube neno - gwok peri bibedo nuti nitundu gi moko tam.",
+    "booking": "Bedo",
+    "commission": "Yabo dhog",
+    "notBooked": "Jugoro ngo",
+    "cancelledOn": "Juweko in {{date}} .",
+    "cancelReason": "The lembe: {{reason}}",
+    "cancelledHint": "Jayub ot ugam uturo booking - bedo ku twero mi tic udwogo iri man twero mi cul ujuko. Edwoko ka lead udok kendu."
   },
   "referral": {
     "NOT_REFERRED": "Juoro ngo (project epe)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Jagedo uyio lembe ma juoro ire",
       "REFERRAL_REJECTED": "Jagedo okwero lwongo ne. The lembe: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin uweko gwoko piny ma rom con. The lembe: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Jatel wi tic uloko rwom mi kiewo nying kud i {{from}} ni {{to}} . The lembe: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Jatel wi tic uloko rwom mi kiewo nying kud i {{from}} ni {{to}} . The lembe: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Tembe mi goyo nying pa wadi mukende jukwero",
+      "BOOKING_CANCELLED": "Judaro booking. The lembe: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Bedo ku twero mi tic udwogo ibang wadi",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Bedo ku twero mi tic juweko ku booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Bedo ku twero mi cul judwoku pi booking manyen",
+      "OWNERSHIP_DISPUTE_RAISED": "Jaratic mange ukwero twero pa juruwil eni - jatel wi tic Leadrat bi neno",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Lembe mi bedo ku piny pa juruwil eni juwodho woko - bedo ku piny peri ulokore ngo",
+      "OWNERSHIP_DISPUTE_UPHELD": "Lembe mi bedo ku piny ikum juruwil eni judaru neno - bedo ku piny peri jumoko",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Jugoro nying peri i ngei ma lembe peri mi bedo rwodh piny ungiyu i bero peri. Poi: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Gwoko uthum: lembe mi bedo ku piny uthum pi bero pa wadi mukende. Poi: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Namba cim eni epe pi {{country}} .",
     "COUNTRY_MISMATCH": "Kwayu iyer namba mi ngom maber.",
     "NOT_MOBILE": "Kwayu iketh namba peri mi cim, ento ungo namba mi cim."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Commission eligible",
+      "PENDING": "Tic podi ubekuru",
+      "CANCELLED": "Juweko tic mi tic"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Juyero ni in",
+      "DISPUTED": "Lembe ma jupoko"
+    }
+  },
+  "result": {
+    "none": "Adwogi mi kiewo nying epe. Kyewo nying ngati mir acel.",
+    "acceptedTitle": "Jatel wi dhanu jugoro nyinge",
+    "rejectedTitle": "Jatel wi dhanu ma jugoro ngo",
+    "protectionWindow": "Dirisa mi gwoko",
+    "protectedUntil": "Jugwoko nitundo",
+    "openLead": "Yab telowic",
+    "addAnother": "Med telowic mange",
+    "duplicate": "Duplicate - dong jugwoko",
+    "duplicateHint": "Jarawil eni dong jugwoko pi tic eni ku karatasi mange, ci ecopu bedu ngo piri.",
+    "existingProtectedUntil": "Registration ma con jugwoko nitundu"
+  },
+  "disputes": {
+    "title": "Lembe para",
+    "intro": "Lembe mi bedo ku piny ma ikelo pi juruwil ma jukwero ni bedu piny marom. Jatel wi tic Leadrat neno wi acel acel.",
+    "empty": "Ikelo ngo lembe moku cii. Ka jarawil moko ma ikelo jukwero ni bedu piny marom, icopo pyemo kudu kud i adwogi mi goro nying.",
+    "columns": {
+      "dispute": "Laro lembe",
+      "reason": "The lembe peri",
+      "outcome": "Adwogi"
+    },
+    "status": {
+      "OPEN": "I the neno",
+      "UPHELD": "Epe i bero peri",
+      "OVERTURNED": "Jumoko tam peri",
+      "WITHDRAWN": "Juwodhu"
+    },
+    "awaitingReview": "Kuru neno pa jatel wi tic",
+    "openNewLead": "Yab rwom peri {{id}}",
+    "withdraw": "Wodh cen",
+    "withdrawConfirm": "Woth lembe peri pi {{name}} ? Wegi piny ma kawoni udong kudu.",
+    "raise": "Pyem ikum bedo ku piny",
+    "raiseTitle": "Pyem ikum bedo ku piny",
+    "raiseHint": "Ka juruwil eni ubinu iri mir acel, tito pirango. Jatel wi tic Leadrat bi neno; ka gimoko tam peri, ju ma telo wigi jukyewo piri.",
+    "reasonLabel": "Pirango ma juruwil eni ubedo peri?",
+    "reasonMin_one": "Ma nok {{count}} coc.",
+    "reasonMin_other": "Ma nok {{count}} kyeu.",
+    "submit": "Cwal lembe",
+    "notProtected": "Ngati moku ope ma gwoko juruwil eni pi tic eni kendu - icopo ketho nying peri kawoni.",
+    "raised": "Lembe {{id}} juoro pi neno.",
+    "viewAll": "Nen lembe para"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Sawa",
+    "lastDays_one": "{{count}} ceng",
+    "lastDays_other": "{{count}} nindu",
+    "emptyTitle": "Wofoyo bino! Ipe ku lembe moko podi.",
+    "emptyHint": "Kyewo nying peri mir acel - pipeline peri, bookings man kare mi gwoko piny peri bi nyuthiri kany.",
+    "tiles": {
+      "leads": "wel pa dhanu",
+      "newInPeriod_one": "{{count}} manyen i kare eni",
+      "newInPeriod_other": "{{count}} manyen i kare eni",
+      "accepted": "Juyio",
+      "booked": "Jugoro",
+      "bookedInPeriod_one": "{{count}} ju goyo i kare eni",
+      "bookedInPeriod_other": "{{count}} ju goyo i kare eni",
+      "conversion": "Lokruok",
+      "conversionHint": "Lembe ma jugoro calu dul pa dhanu ma juyio",
+      "protectedNow": "Jugwoko kawoni",
+      "expiringSoon_one": "Gwok ma thum i {{count}} ceng",
+      "expiringSoon_other": "Gwok ma thum i {{count}} nindu",
+      "disputedNow": "Jumoko gi nyayu lembe i wigi",
+      "disputedNowHint": "Jutelwic peri ku lembe mi bedo rwodh piny kud i bang wadi mukende",
+      "commissionEligible": "Commission eligible",
+      "commissionCancelled_one": "{{count}} juweko",
+      "commissionCancelled_other": "{{count}} juweko"
+    },
+    "chart": {
+      "title_one": "Kyewo nying man booking kubang ceng - ceng {{count}} ma tok cen",
+      "title_other": "Kyewo nying man booking kubang ceng - nindo {{count}} ma ukadhu",
+      "registrations": "Kyewo nying",
+      "bookings": "Kabedo"
+    },
+    "byStage": "Telo ku rwom",
+    "bySource": "Telo ku kabedo",
+    "byReferral": "Telo ku rwom pa dhanu",
+    "myDisputes": "Lembe ma ikelo",
+    "noDisputes": "Laro lembe moko ope.",
+    "unknown": "Juyike ngo",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM ma woko (ma juporo)",
+      "PARTNER_CRM": "Jumedu ku jutic peri",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Dikiri",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Gwok ube thum in ceng {{count}} mukende",
+    "expiringTitle_other": "Gwok ube thum i nindu {{count}} ma ubebinu",
+    "expiringEmpty": "Lead moko ope ma rwinyo gwok pare i dirisa eni."
   }
 }

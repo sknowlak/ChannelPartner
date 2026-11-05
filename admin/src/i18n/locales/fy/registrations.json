@@ -49,8 +49,73 @@
       "newPartnerId": "Nije Partner ID",
       "reason": "Reden (ferplicht)",
       "apply": "Override tapasse",
-      "applying": "Oanfreegje..."
+      "applying": "Oanfreegje...",
+      "cancelBookingHint": "It annulearjen markearret de boeking en syn kommisje as annulearre, jout operasjoneel eigendom werom nei de partner, en lit de bouwer dizze lead opnij boeke.",
+      "cancelBookingConfirm": "Dizze boeking annulearje? Syn kommisje wurdt ek annulearre. Dit wurdt oanmeld mei jo namme en reden."
     },
-    "timelineTitle": "Audit Timeline (dizze registraasje)"
+    "timelineTitle": "Audit Timeline (dizze registraasje)",
+    "bookingStatus": "Reservearring Status",
+    "commissionAttribution": "Kommisje Attribution",
+    "disputeOpen": "Der is in skeel oer eigendom iepen foar dizze klant - in oare partner seit dat it fan har is. It wurdt besletten op de side Disputes.",
+    "viewDisputes": "Besjoch skelen",
+    "cancellation": {
+      "title": "Booking annulearre",
+      "hint": "De boeking en syn kommisje wurde annulearre; operasjoneel eigendom is werom by de partner en de bouwer kin dizze lead opnij boeke.",
+      "at": "Annulearre at",
+      "by": "Annulearre troch",
+      "reason": "Reden"
+    }
+  },
+  "disputes": {
+    "title": "Ownership Disputes",
+    "hint": "In partner waans registraasje waard ôfwiisd as duplikaat kin bestride wa't eigner fan de klant. Besjoch beide kanten en beslute.",
+    "statusFilter": "Dispute status",
+    "allStatuses": "Alle statusen",
+    "empty": "Gjin skeel mei dizze status.",
+    "columns": {
+      "dispute": "Dispute",
+      "customer": "Klant",
+      "project": "Projekt",
+      "raisedBy": "Opbrocht troch",
+      "heldBy": "Aktuele eigner",
+      "status": "Status",
+      "raisedAt": "Opgroeid op"
+    },
+    "detail": {
+      "title": "Dispute {{id}}",
+      "raisedOn": "Ophege {{date}}",
+      "raisingTitle": "Opbrocht troch",
+      "holderTitle": "Aktuele eigner",
+      "partner": "Partner",
+      "raisedBy": "Yntsjinne troch",
+      "customerName": "Klant",
+      "mobile": "Mobyl",
+      "alternateMobile": "Alternatyf mobyl",
+      "email": "Email",
+      "project": "Projekt",
+      "reason": "Har reden",
+      "registration": "Ynskriuwing",
+      "registeredAt": "Registrearre op",
+      "referral": "Ferwizing",
+      "heldMissing": "De holden registraasje koe net fûn wurde.",
+      "resolutionTitle": "Beslút",
+      "outcome": "Útkomst",
+      "note": "Noat",
+      "decidedBy": "Besletten troch",
+      "decidedAt": "Besletten oer",
+      "newRegistration": "Nije registraasje",
+      "decideTitle": "Beslute dit skeel",
+      "noteLabel": "Notysje om it beslút út te lizzen (ferplicht)",
+      "noteRequired": "Skriuw in notysje om te besluten.",
+      "uphold": "Ophâlde",
+      "overturn": "Omkeare",
+      "upholdEffect": "{{holder}} hâldt de klant. It skeel is sletten en oars feroaret neat.",
+      "overturnEffect": "De duplikaatbeskerming fan {{holder}} einiget no en de klant is registrearre foar {{partner}} as in nije registraasje.",
+      "heldBookedHelp": "Dizze klant is boekt fia de hjoeddeistige eigner. Annulearje dy boeking earst (Admin Override op 'e registraasje), en keare dan om:",
+      "confirmTitle": "Bisto wis?",
+      "confirmUphold": "Ja, ophâlde",
+      "confirmOverturn": "Ja, omslaan",
+      "back": "Werom nei Disputes"
+    }
   }
 }

@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Broneeritud",
-    "pending": "Ootel"
+    "pending": "Ootel",
+    "status": {
+      "CONFIRMED": "Broneeritud",
+      "CANCELLED": "Broneering tühistatud"
+    }
   },
   "assign": {
     "unassigned": "Määramata",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Projekti veel pole (pole viidatud)",
-    "notInList": "{{project}} (ei ole projektiloendis)"
+    "notInList": "{{project}} (ei ole projektiloendis)",
+    "protectionDays_one": "{{count}} päevane kaitse",
+    "protectionDays_other": "{{count}} päevane kaitse"
   },
   "journey": {
     "customer": "Klient",
@@ -76,7 +82,14 @@
     "progressHistory": "Edusammude ajalugu",
     "timesIn": "(ajad {{timezone}} )",
     "backToMyLeads": "Tagasi Minu müügivihjete juurde",
-    "editLead": "Redigeeri müügivihjet"
+    "editLead": "Redigeeri müügivihjet",
+    "disputeBanner": "Teine partner on selle kliendi omandiõiguse vaidlustanud. Leadrat administraator vaatab seda üle – teie kaitse jääb kehtima seni, kuni nad otsustavad.",
+    "booking": "Broneerimine",
+    "commission": "komisjon",
+    "notBooked": "Pole broneeritud",
+    "cancelledOn": "Tühistatud {{date}} .",
+    "cancelReason": "Põhjus: {{reason}}",
+    "cancelledHint": "Ehitaja tühistas broneeringu – operatiivomandiõigus on tagasi teie juures ja vahendustasu abikõlblikkus on tühistatud. See taastatakse, kui müügivihje uuesti broneeritakse."
   },
   "referral": {
     "NOT_REFERRED": "Ei suunata (projekti pole)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Ehitaja võttis soovituse vastu",
       "REFERRAL_REJECTED": "Builder lükkas suunamise tagasi. Põhjus: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Administraator vabastas duplikaatkaitse varakult. Põhjus: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Administraator määras registreerimise ümber asukohalt {{from}} kasutajaks {{to}} . Põhjus: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Administraator määras registreerimise ümber asukohalt {{from}} kasutajaks {{to}} . Põhjus: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Teise partneri duplikaatregistreerimiskatse lükati tagasi",
+      "BOOKING_CANCELLED": "Broneering tühistatud. Põhjus: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Tegevusomandiõigus tagastati partnerile",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Broneeringuga tühistati komisjonitasu kehtivus",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Komisjonitasu kõlblikkus uue broneeringu jaoks taastatud",
+      "OWNERSHIP_DISPUTE_RAISED": "Teine partner vaidlustas selle kliendi omandiõiguse – Leadrat administraator vaatab selle üle",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Selle kliendi omandiõiguse vaidlus võeti tagasi – teie omandiõigus on muutumatu",
+      "OWNERSHIP_DISPUTE_UPHELD": "Selle kliendi omandilise kuuluvuse vaidlus vaadati üle – teie kuuluvus on kinnitatud",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Registreeritud pärast seda, kui teie omandivaidlus oli teie kasuks otsustatud. Märkus: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Kaitse lõppes: omandivaidlus otsustati teise partneri kasuks. Märkus: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "See telefoninumber ei kehti riigis {{country}} .",
     "COUNTRY_MISMATCH": "Valige õige riigikood.",
     "NOT_MOBILE": "Sisestage mobiiltelefoni number, mitte lauatelefon."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "vahendustasu",
+      "PENDING": "Komisjon on pooleli",
+      "CANCELLED": "Komisjon tühistati"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Sulle omistatud",
+      "DISPUTED": "Omistamine vaidlustatud"
+    }
+  },
+  "result": {
+    "none": "Registreerimistulemust ei näidata. Registreerige esmalt müügivihje.",
+    "acceptedTitle": "Müügivihje registreeritud",
+    "rejectedTitle": "Plii registreerimata",
+    "protectionWindow": "Kaitse aken",
+    "protectedUntil": "Kaitstud kuni",
+    "openLead": "Ava müügivihje",
+    "addAnother": "Lisage veel üks müügivihje",
+    "duplicate": "Duplikaat – juba kaitstud",
+    "duplicateHint": "See klient on selle projekti jaoks juba teise registreeringuga kaitstud, seega ei saanud seda teie jaoks registreerida.",
+    "existingProtectedUntil": "Olemasolev registreering on kaitstud kuni"
+  },
+  "disputes": {
+    "title": "Minu vaidlused",
+    "intro": "Teie tõstatatud klientide omandivaidlused, millest keelduti duplikaatidena. Leadrat administraator vaatab igaüks neist üle.",
+    "empty": "Te pole vaidlusi tõstatanud. Kui teie toodud klient keeldutakse duplikaadi esitamisest, saate selle vaidlustada registreerimistulemustes.",
+    "columns": {
+      "dispute": "Vaidlus",
+      "reason": "Sinu põhjus",
+      "outcome": "Tulemus"
+    },
+    "status": {
+      "OPEN": "Ülevaatamisel",
+      "UPHELD": "Mitte sinu kasuks",
+      "OVERTURNED": "Otsustati teie kasuks",
+      "WITHDRAWN": "Tagasi võetud"
+    },
+    "awaitingReview": "Ootan administraatori arvustust",
+    "openNewLead": "Ava oma müügivihje {{id}}",
+    "withdraw": "Tõmba tagasi",
+    "withdrawConfirm": "Kas soovite oma vaidlustuse {{name}} kohta tagasi võtta? Praegune omand jääb samaks.",
+    "raise": "Vaidle omandiõigus",
+    "raiseTitle": "Vaidle omandiõigus",
+    "raiseHint": "Kui see klient tuli teie juurde esimesena, selgitage, miks. Leadrat administraator vaatab selle üle; kui nad otsustavad teie kasuks, registreeritakse müügivihje teie jaoks.",
+    "reasonLabel": "Miks on see klient teie oma?",
+    "reasonMin_one": "Vähemalt {{count}} tähemärki.",
+    "reasonMin_other": "Vähemalt {{count}} tähemärki.",
+    "submit": "Saada vaidlus",
+    "notProtected": "Keegi ei kaitse enam selle kliendi eest selle projekti eest – saate müügivihje kohe registreerida.",
+    "raised": "Vaidlus {{id}} saadeti ülevaatamiseks.",
+    "viewAll": "Vaadake minu vaidlusi"
+  },
+  "dashboard": {
+    "title": "Armatuurlaud",
+    "period": "Periood",
+    "lastDays_one": "{{count}} päev",
+    "lastDays_other": "{{count}} päeva",
+    "emptyTitle": "Tere tulemast! Teil pole veel müügivihjeid.",
+    "emptyHint": "Registreerige oma esimene müügivihje – siin kuvatakse teie kanal, broneeringud ja kaitse tähtajad.",
+    "tiles": {
+      "leads": "Müügivihjed kokku",
+      "newInPeriod_one": "{{count}} uut sellel perioodil",
+      "newInPeriod_other": "{{count}} uut sellel perioodil",
+      "accepted": "Vastu võetud",
+      "booked": "Broneeritud",
+      "bookedInPeriod_one": "{{count}} broneeritud sel perioodil",
+      "bookedInPeriod_other": "{{count}} broneeritud sel perioodil",
+      "conversion": "Teisendamine",
+      "conversionHint": "Broneeritud müügivihjed aktsepteeritud müügivihjete osakaaluna",
+      "protectedNow": "Nüüd kaitstud",
+      "expiringSoon_one": "Kaitse lõpeb {{count}} päeva pärast",
+      "expiringSoon_other": "Kaitse lõpeb {{count}} päeva pärast",
+      "disputedNow": "Teiste poolt vaidlustatud",
+      "disputedNowHint": "Teie müügivihjed teise partneri avatud omandivaidlusega",
+      "commissionEligible": "vahendustasu",
+      "commissionCancelled_one": "{{count}} tühistati",
+      "commissionCancelled_other": "{{count}} tühistati"
+    },
+    "chart": {
+      "title_one": "Registreerimised ja broneeringud päevas – viimane {{count}} päev",
+      "title_other": "Registreerimised ja broneeringud päevas – viimased {{count}} päeva",
+      "registrations": "Registreerimised",
+      "bookings": "Broneeringud"
+    },
+    "byStage": "Juhib staatuse järgi",
+    "bySource": "Juhib allika järgi",
+    "byReferral": "Juhib suunamise staatuse järgi",
+    "myDisputes": "Teie tõstatatud vaidlused",
+    "noDisputes": "Vaidlusi ei tõstatatud.",
+    "unknown": "Pole määratud",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Väline CRM (simuleeritud)",
+      "PARTNER_CRM": "Lisas teie meeskond",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integratsioon",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Kaitse aegub järgmise {{count}} päeva pärast",
+    "expiringTitle_other": "Kaitse aegub järgmise {{count}} päeva pärast",
+    "expiringEmpty": "Ükski plii ei kaota selles aknas kaitset."
   }
 }

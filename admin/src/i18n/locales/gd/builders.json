@@ -43,7 +43,9 @@
       "name": "Ainm",
       "city": "Cathair-bhaile",
       "status": "Inbhe",
-      "actions": "Gnìomhan"
+      "actions": "Gnìomhan",
+      "protection": "Dìon dùblaichte",
+      "matchOn": "Bidh dùblaidhean a 'maidseadh air"
     },
     "closeReferrals": "Dùin airson iomraidhean",
     "reopen": "Fosgail a-rithist",
@@ -55,6 +57,29 @@
       "add": "Cuir Pròiseact ris",
       "created": "Chaidh {{name}} a chruthachadh ."
     },
-    "back": "Air ais gu Luchd-togail"
+    "back": "Air ais gu Luchd-togail",
+    "protection": {
+      "days_one": "{{count}} latha",
+      "days_two": "{{count}} làithean",
+      "days_few": "{{count}} làithean",
+      "days_other": "{{count}} làithean",
+      "globalDays_one": "Bun-tomhas cruinne ( {{count}} latha)",
+      "globalDays_two": "Bun-tomhas cruinne ( {{count}} làithean)",
+      "globalDays_few": "Bun-tomhas cruinne ( {{count}} làithean)",
+      "globalDays_other": "Bun-tomhas cruinne ( {{count}} làithean)",
+      "globalDefault": "Ro-shealladh cruinne",
+      "placeholder": "Làithean dìon (falamh = bunaiteach cruinneil)",
+      "saved": "Dìon dùblaichte air ùrachadh airson {{name}} .",
+      "hint": "Dìon dùblaichte: 1-3650 latha, no fàg falamh gus an cleachdadh cruinneil bunaiteach bho Settings. Chan eil atharrachadh a’ buntainn ach ri clàraidhean ùra - bidh an fheadhainn a th’ ann mar-thà a’ cumail a’ tighinn gu crìch."
+    },
+    "matching": {
+      "global": "Ro-shealladh cruinne",
+      "globalWith": "Bun-tomhas cruinne ( {{fields}} )",
+      "mobile": "Àireamh fòn-làimhe",
+      "email": "Post-d",
+      "both": "Àireamh fòn-làimhe + post-d",
+      "saved": "Chaidh maids dùblaichte ùrachadh airson {{name}}",
+      "hint": "Dè am mion-fhiosrachadh a tha a’ dèanamh dà chlàradh an aon neach-ceannach airson pròiseact. Bidh atharrachaidhean a’ buntainn ri sgrùdaidhean dùblaichte bho seo a-mach; chan eil buaidh air an dìon a th’ ann mar-thà."
+    }
   }
 }

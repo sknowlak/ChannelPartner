@@ -43,7 +43,9 @@
       "name": "Tên",
       "city": "Thành phố",
       "status": "Trạng thái",
-      "actions": "hành động"
+      "actions": "hành động",
+      "protection": "Bảo vệ trùng lặp",
+      "matchOn": "Các bản sao trùng khớp trên"
     },
     "closeReferrals": "Đóng để được giới thiệu",
     "reopen": "Mở lại",
@@ -55,6 +57,23 @@
       "add": "Thêm dự án",
       "created": "Đã tạo {{name}} ."
     },
-    "back": "Quay lại Nhà xây dựng"
+    "back": "Quay lại Nhà xây dựng",
+    "protection": {
+      "days_other": "{{count}} ngày",
+      "globalDays_other": "Mặc định toàn cầu ( {{count}} ngày)",
+      "globalDefault": "Mặc định toàn cầu",
+      "placeholder": "Ngày bảo vệ (trống = mặc định chung)",
+      "saved": "Đã cập nhật tính năng bảo vệ trùng lặp cho {{name}} .",
+      "hint": "Bảo vệ trùng lặp: 1-3650 ngày hoặc để trống để sử dụng mặc định chung từ Cài đặt. Thay đổi chỉ áp dụng cho đăng ký mới - những đăng ký hiện tại sẽ hết hạn."
+    },
+    "matching": {
+      "global": "Mặc định toàn cầu",
+      "globalWith": "Mặc định toàn cầu ( {{fields}} )",
+      "mobile": "Số điện thoại di động",
+      "email": "E-mail",
+      "both": "Số di động + email",
+      "saved": "Đã cập nhật kết quả trùng lặp cho {{name}}",
+      "hint": "Chi tiết nào khiến hai người đăng ký cùng một khách hàng cho một dự án. Các thay đổi sẽ áp dụng cho các lần kiểm tra trùng lặp kể từ bây giờ; bảo vệ hiện có không bị ảnh hưởng."
+    }
   }
 }

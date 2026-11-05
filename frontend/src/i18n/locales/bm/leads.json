@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "A ye gafe sɔrɔ",
-    "pending": "Makɔnɔlila"
+    "pending": "Makɔnɔlila",
+    "status": {
+      "CONFIRMED": "A ye gafe sɔrɔ",
+      "CANCELLED": "Booking (jatebɔ) tiɲɛna"
+    }
   },
   "assign": {
     "unassigned": "A ma baara kɛ ni a ye",
@@ -58,7 +62,8 @@
   },
   "project": {
     "none": "Porozɛ si ma kɛ fɔlɔ (a ma fɔ) .",
-    "notInList": "{{project}} (a tɛ poroze lisi kɔnɔ) ."
+    "notInList": "{{project}} (a tɛ poroze lisi kɔnɔ) .",
+    "protectionDays_other": "{{count}} -don lakanani"
   },
   "journey": {
     "customer": "Sannikɛla",
@@ -76,7 +81,14 @@
     "progressHistory": "Ɲɛtaa tariku",
     "timesIn": "(waati minnu bɛ {{timezone}} kɔnɔ )",
     "backToMyLeads": "Segin ka na Ne ka ɲɛminɛbagaw kan",
-    "editLead": "Edit Lead la"
+    "editLead": "Edit Lead la",
+    "disputeBanner": "Jɛɲɔgɔn wɛrɛ ye sɔsɔli kɛ nin kiliyan in tigiyali kan. Leadrat ɲɛmɔgɔ dɔ bɛ k'a lajɛ - i ka lakanani bɛ to a nɔ na fo u k'a latigɛ.",
+    "booking": "Jatebɔ kɛli",
+    "commission": "Ci",
+    "notBooked": "A ma jate",
+    "cancelledOn": "A dabilalen don {{date}} .",
+    "cancelReason": "Kun: {{reason}}",
+    "cancelledHint": "So jɔbaga ye jatebɔ tiɲɛ - baarakɛcogo tigiya seginna i fɛ ani komisiyɔn sɔrɔli tiɲɛna. A bɛ segin a cogo kɔrɔ la ni ɲɛmɔgɔya sɛbɛnna tuguni."
   },
   "referral": {
     "NOT_REFERRED": "A ma refer (projet tɛ) .",
@@ -158,7 +170,17 @@
       "REFERRAL_ACCEPTED": "Builder sɔnna o cikan ma",
       "REFERRAL_REJECTED": "Builder banna o cikan na. Kun: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin ye duplicate protection bɔ joona. Kun: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin ye sɛbɛnni bila kokura ka bɔ {{from}} ka taa {{to}} . Kun: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin ye sɛbɛnni bila kokura ka bɔ {{from}} ka taa {{to}} . Kun: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "A jɛɲɔgɔn wɛrɛ ye a ɲini ka a tɔgɔ sɛbɛn siɲɛ fila, o banna",
+      "BOOKING_CANCELLED": "Booking (jatebɔ) tiɲɛna. Kun: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Baarakɛcogo tigiyali seginna jɛɲɔgɔn ma",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Komisiɔn ka setigiya tiɲɛna ni jatebɔ ye",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Komisiɔn ka setigiya seginna ka kɛ jatebɔ kura in na",
+      "OWNERSHIP_DISPUTE_RAISED": "Jɛɲɔgɔn wɛrɛ ye sɔsɔli kɛ nin kiliyan in tigiyali kan - Leadrat ɲɛmɔgɔ dɔ bɛna a lajɛ",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Dutigiya sɔsɔli min tun bɛ nin kiliyan in kan, o bɔra - i ka tigiya ma Changé",
+      "OWNERSHIP_DISPUTE_UPHELD": "Dutigiya sɔsɔli min kɛra nin kiliyan in kan, o lajɛra - i ka tigiya dafara",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "A tɔgɔ sɛbɛnna i ka tigiya sɔsɔli latigɛlen kɔfɛ i ka nafa kama. Kɔlɔsili: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Lakanali banna : tigiya sɔsɔli dɔ latigɛra ka ɲɛsin jɛɲɔgɔn wɛrɛ ma. Kɔlɔsili: {{note}}"
     }
   },
   "columnsPanel": {
@@ -182,5 +204,100 @@
     "INVALID_FOR_COUNTRY": "Nin telefɔni nimɔrɔ in tɛ baara kɛ {{country}} .",
     "COUNTRY_MISMATCH": "Aw ye jamana kode ɲuman sugandi.",
     "NOT_MOBILE": "Aw ye telefɔni selilɛri nimɔrɔ sɛbɛn, aw kana telefɔni jɔlen sɛbɛn."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisiɔn ka kan",
+      "PENDING": "Komisiɔn bɛ ka jɔ",
+      "CANCELLED": "Komisiɔn ye a ka baara kɛ"
+    },
+    "attribution": {
+      "ATTRIBUTED": "A bɛ fɔ i ma",
+      "DISPUTED": "Attribution sɔsɔli bɛ kɛ"
+    }
+  },
+  "result": {
+    "none": "I tɔgɔ sɛbɛnni jaabi si ma jira. Aw bɛ ɲɛmɔgɔya dɔ sɛbɛn fɔlɔ.",
+    "acceptedTitle": "Plomb sɛbɛnnen don",
+    "rejectedTitle": "Plomb ma sɛbɛn",
+    "protectionWindow": "Lakanali Fenɛtiri",
+    "protectedUntil": "Lakanali Fo",
+    "openLead": "Plomb da wuli",
+    "addAnother": "Aw bɛ Plomb wɛrɛ fara a kan",
+    "duplicate": "Duplicate - lakananen don kaban",
+    "duplicateHint": "Nin kiliyan in lakananen don kaban nin porozɛ in na ni tɔgɔsɛbɛn wɛrɛ ye, o la a ma se ka tɔgɔ sɛbɛn i ye.",
+    "existingProtectedUntil": "Sɛbɛnni min bɛ yen, o lakananen don fo"
+  },
+  "disputes": {
+    "title": "Ne ka sɔsɔliw",
+    "intro": "I ye tigiya sɔsɔli minnu lawuli kiliyanw ye minnu banna i n’a fɔ duplicate. Leadrat ɲɛmɔgɔ dɔ bɛ u kelen-kelen bɛɛ lajɛ.",
+    "empty": "Aw ma sɔsɔli si lawuli. Ni i nana ni kiliyan min ye, n’o banna k’a kɛ duplicate ye, i bɛ se ka sɔsɔli kɛ o la ka bɔ i tɔgɔ sɛbɛnni jaabi la.",
+    "columns": {
+      "dispute": "Dalamankan",
+      "reason": "Aw ka dalilu",
+      "outcome": "Jaabi"
+    },
+    "status": {
+      "OPEN": "Segin-ka-bɔnye kɔnɔ",
+      "UPHELD": "A tɛ kɛ i ka nafa la",
+      "OVERTURNED": "A latigɛra i ka nafa kama",
+      "WITHDRAWN": "A bɔra a la"
+    },
+    "awaitingReview": "A bɛ ka admin ka seginnkanni makɔnɔ",
+    "openNewLead": "Aw ye aw ka ɲɛmɔgɔya da wuli {{id}}",
+    "withdraw": "Bɔsili",
+    "withdrawConfirm": "Aw ka sɔsɔli bɔ {{name}} ko la ? Sisan tigiya bɛ to a cogo la.",
+    "raise": "Kɛlɛw bɛ kɛ fɛntigiya la",
+    "raiseTitle": "Kɛlɛw bɛ kɛ fɛntigiya la",
+    "raiseHint": "Ni nin kiliyan in nana i fɛ fɔlɔ, i k’a ɲɛfɔ mun na. Leadrat ɲɛmɔgɔ dɔ bɛna a lajɛ; n' u y' a latigɛ i nafa la , ɲɛmɔgɔya sɛbɛnnen bɛ i ye .",
+    "reasonLabel": "Mun na nin kiliyan in ye i ta ye?",
+    "reasonMin_other": "A ka dɔgɔn {{count}} taamasiyɛnw.",
+    "submit": "Cikan ka sɔsɔli",
+    "notProtected": "Mɔgɔ si tɛ lakana minɛ nin kiliyan in kan nin porozɛ in kama tugun - i bɛ se ka ɲɛmɔgɔya tɔgɔ sɛbɛn sisan.",
+    "raised": "Kɛlɛ {{id}} cilen don walasa ka segin a kan.",
+    "viewAll": "Ne ka sɔsɔliw lajɛ"
+  },
+  "dashboard": {
+    "title": "Dashboard (Dashboard) ye",
+    "period": "Kuntaala",
+    "lastDays_other": "{{count}} tile",
+    "emptyTitle": "I danse! Aw ma ɲɛminɛni si sɔrɔ fɔlɔ.",
+    "emptyHint": "Aw ye aw ka ɲɛmɔgɔya fɔlɔ sɛbɛn - aw ka pibiliki, jatebɔ ani lakanani waati dantigɛlenw bɛna jira yan.",
+    "tiles": {
+      "leads": "Total ɲɛminɛbagaw",
+      "newInPeriod_other": "{{count}} kura don nin waati in na",
+      "accepted": "Sɔnna a ma",
+      "booked": "A ye gafe sɔrɔ",
+      "bookedInPeriod_other": "{{count}} ye jatebɔ kɛ nin waati in na",
+      "conversion": "Yɛlɛma donna mɔgɔ la",
+      "conversionHint": "Booked leads i n’a fɔ leads sɔnlenw niyɔrɔ",
+      "protectedNow": "Lakanali sisan",
+      "expiringSoon_other": "Lakanali bɛ ban {{count}} tile kɔnɔ",
+      "disputedNow": "Sɔsɔli bɛ kɛ mɔgɔ wɛrɛw fɛ",
+      "disputedNowHint": "I bɛ ɲɛminɛ ni tigiya sɔsɔli dafalen ye ka bɔ jɛɲɔgɔn wɛrɛ fɛ",
+      "commissionEligible": "Komisiɔn ka kan",
+      "commissionCancelled_other": "{{count}} dabilalen don"
+    },
+    "chart": {
+      "title_other": "I tɔgɔ sɛbɛnni ni jatebɔ tile kɔnɔ - {{count}} tile labanw",
+      "registrations": "Mɔgɔw ​​tɔgɔ sɛbɛnni",
+      "bookings": "Jateblaw"
+    },
+    "byStage": "A bɛ ɲɛminɛ ka kɛɲɛ ni jɔyɔrɔ ye",
+    "bySource": "A bɛ ɲɛminɛ ka kɛɲɛ ni sɔrɔyɔrɔ ye",
+    "byReferral": "A bɛ ɲɛminɛ ka kɛɲɛ ni cikan cogoya ye",
+    "myDisputes": "I ye sɔsɔli minnu lawuli",
+    "noDisputes": "Kɛlɛ si ma lawuli.",
+    "unknown": "A ma sigi sen kan",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM kɛnɛma (simulatɛri) .",
+      "PARTNER_CRM": "A farala a kan i ka ekipu fɛ",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integration (jὲɲɔgɔnya) (integration).",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_other": "Lakanali bɛ ban tile {{count}} nataw la",
+    "expiringEmpty": "Plɔmu si tɛ bɔnɛ a lakanani na o finɛtiri in na."
   }
 }

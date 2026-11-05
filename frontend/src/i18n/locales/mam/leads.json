@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "O tz´ok q´o´n",
-    "pending": "Na´m"
+    "pending": "Na´m",
+    "status": {
+      "CONFIRMED": "O tz´ok q´o´n",
+      "CANCELLED": "Ma tz´el tpa´n t-xnaq´tzb´il"
+    }
   },
   "assign": {
     "unassigned": "mya tzaj q´o´n",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Myia jun aq´untl na´mx (myia tzaj q´ama´n)",
-    "notInList": "{{project}} (myia toj tajlal aq´untl)"
+    "notInList": "{{project}} (myia toj tajlal aq´untl)",
+    "protectionDays_one": "{{count}} -q´ij kolb´il",
+    "protectionDays_other": "{{count}} -q´ij kolb´il"
   },
   "journey": {
     "customer": "Loq´el",
@@ -76,7 +82,14 @@
     "progressHistory": "Tqanil ti´j b´inchb´en",
     "timesIn": "(q´ij toj {{timezone}} )",
     "backToMyLeads": "Tzaj meltz´aja kyi´j n-xnaq´tzb´ene",
-    "editLead": "B´inchama t-xilen"
+    "editLead": "B´inchama t-xilen",
+    "disputeBanner": "Juntl tuk´il o tz´ok t-xob´il ti´j tajaw aju´ k´ayil lu. Jun ajkawil Leadrat n-chi tka´yin - a t-xq´uqb´ila n-ten toj t-xilen tzmaxi aj t-xi ky-ximana.",
+    "booking": "Reservación",
+    "commission": "Taqʼun",
+    "notBooked": "mya b´aj t-ximan",
+    "cancelledOn": "N-el tpa´n toj {{date}} .",
+    "cancelReason": "Tiqu´n: {{reason}}",
+    "cancelledHint": "A b´inchal ja tzaj t-ximan aju´ t-xilen - aju´ t-xilen aq´untl tzaj juntl majl tuk´ila extzen aju´ t-xilen aq´untl ma tz´el tpa´n. N-ok q´o´n juntl majl qa ma tz´ok q´o´n juntl majl aju´ plomo."
   },
   "referral": {
     "NOT_REFERRED": "mya tzaj q´o´n (myia proyecto)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "A b´inchal ja tzaj tk´amo´n aju´ t-xilen",
       "REFERRAL_REJECTED": "A b´inchal ja tzaj ttzaqpi´n aju´ t-xilen. Tiqu´n: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "A Admin etz t-xo´n jun t-xq´uqb´il te tnejel. Tiqu´n: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "A Admin n-chi tzaj tqona t-xilen t-tz´ib´b´il te {{from}} te {{to}} . Tiqu´n: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "A Admin n-chi tzaj tqona t-xilen t-tz´ib´b´il te {{from}} te {{to}} . Tiqu´n: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "jun tajlal t-xilen t-xnaq´tzb´il tu´n juntl tuk´e mya b´ant t-xnaq´tza´n",
+      "BOOKING_CANCELLED": "Ma tz´el q´i´n t-xilen. Tiqu´n: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "A t-xilen aq´untl n-meltz´aj te t-xjalil",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Aju´ t-xilen aq´untl n-el tpa´n tib´ tuk´e aju´ t-xilen",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Aju t-xilen comisión tzaj q´o´n juntl majl te ak´aj reservación",
+      "OWNERSHIP_DISPUTE_RAISED": "Juntl t-xjalil n-chi yolin ti´j tajaw aju´ xjal lu - jun ajkawil Leadrat k-xel t-xnaq´tza´n",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Aju´ nya b´a´n ti´j tajaw aq´untl ti´j aju´ xjal lu´ tzaj q´i´n - aju´ tajaw mya b´aj tch´ixpu´n tib´",
+      "OWNERSHIP_DISPUTE_UPHELD": "Aju´ nya b´a´n ti´j tajaw aq´untl ti´j aju´ xjal lu´ n-ok q´o´n twitz ti´j - aju´ tajaw aq´untl lu ma tz´ok q´o´n toklen",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Tzaj tz´ib´et t-xilen t-xe t-xilen t-xilen t-xilen t-xilen t-xilen t-xilen t-xilen. Nota: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "A kolb´il b´aj: jun nya b´a´n ti´j tajaw b´aj b´incha´n toj t-xilen juntl tuk´e. Nota: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "A tajlal t-telefona lu mya b´a´n te {{country}} .",
     "COUNTRY_MISMATCH": "B´a´n tu´n t-xi t-sk´o´na aju´ t-xilen tnam.",
     "NOT_MOBILE": "B´a´n tu´n t-xi ttz´ib´in jun tajlal te t-telefona, mya jun te t-telefona."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "A comisión elegible",
+      "PENDING": "A comisión n-chi b´et",
+      "CANCELLED": "A comisión b´aj t-ximan"
+    },
+    "attribution": {
+      "ATTRIBUTED": "tzaj q´o´n teya",
+      "DISPUTED": "Atribución disputada"
+    }
+  },
+  "result": {
+    "none": "Myia jun t-xilen t-xnaq´tzb´il tun t-xi yek´un. tz´ib´inxa jun t-xilen tnejel.",
+    "acceptedTitle": "Plomo registrado",
+    "rejectedTitle": "A plomo mya tz´ib´an",
+    "protectionWindow": "Ventan te kolb´il",
+    "protectedUntil": "N-xq´uqin tzmaxi",
+    "openLead": "jaqet t-xaq",
+    "addAnother": "Q´onxa juntl t-xilen",
+    "duplicate": "Duplicado - ya xq´uqin",
+    "duplicateHint": "A xjal lu ya otaq tz´ok xq´uqit te aq´untl lu tu´n juntl tz´ib´il, kyja´tzun mya b´ant t-xi tz´ib´et teya.",
+    "existingProtectedUntil": "A tz´ib´b´il t-xi´n t-xq´uqin tzmaxi"
+  },
+  "disputes": {
+    "title": "N-xjelb´itze",
+    "intro": "Aye nya b´a´n ti´j tajaw aq´untl n-chi tzaj tqona kye xjal n-chi k´ayin aye mya b´a´n t-xi q´o´n te t-xilen. Jun ajkawil Leadrat n-chi tka´yin junjun.",
+    "empty": "Ma tzaj tqona junjun nya b´a´n. Qa jun k´ayil tzaj ti´na mya b´a´n t-xi q´o´n te jun t-xilen, b´a´n tu´n t-xi t-ximana ti´j t-xilen t-xnaq´tzb´il.",
+    "columns": {
+      "dispute": "Txi tiret",
+      "reason": "t-xim",
+      "outcome": "Tuʼntzunju"
+    },
+    "status": {
+      "OPEN": "Toj t-xnaq´tzb´il",
+      "UPHELD": "mya toj t-xtalb´ila",
+      "OVERTURNED": "Ma kub´ t-ximan toj t-xtalb´ila",
+      "WITHDRAWN": "Tzaj q´i´n"
+    },
+    "awaitingReview": "N-chi ayon ti´j t-xnaq´tzb´il te ajkawil",
+    "openNewLead": "Jaqet t-xaq u´j {{id}}",
+    "withdraw": "Q'imila",
+    "withdrawConfirm": "Q´onk t-xilen t-xjelb´itza ti´j {{name}} ? A t-xilen t-xilen t-xilen t-xilen t-xilen.",
+    "raise": "q´oj ti´j tajaw",
+    "raiseTitle": "q´oj ti´j tajaw",
+    "raiseHint": "Qa a xjal lu tnejel ul tuk´ila, q´manxa tiqu´n. jun ajkawil Leadrat k-xel t-xnaq´tza´n; qa ma kub´ kyximin toj t-xtalb´ila, aju´ t-xilen t-xi´ tz´ib´et teya.",
+    "reasonLabel": "¿Tiqu´n teya aju´ k´ayil lu?",
+    "reasonMin_one": "Noq {{count}} tz´ib´.",
+    "reasonMin_other": "Noq {{count}} tz´ib´b´il.",
+    "submit": "t-sama´n jun nya b´a´n",
+    "notProtected": "Mix a´l jun xjal n-ok t-xq´uqin aju´ xjal lu te aq´untl lu´ - b´a´n tu´n t-xi ttz´ib´ina aju´ xjal jalin.",
+    "raised": "A nya b´a´n {{id}} n-xi sama´n tun t-xi b´inchet t-xnaq´tzb´il.",
+    "viewAll": "Q´onka twitza kyi´j n-q´oj"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Amb´el",
+    "lastDays_one": "{{count}} q´ij",
+    "lastDays_other": "{{count}} q´ij",
+    "emptyTitle": "Bánkulene´! Na´mx t-xi t-ximana.",
+    "emptyHint": "tz´ib´inxa tnejel t-xnaq´tzb´ila - t-pipeline, t-xnaq´tzb´il ex t-xilen t-xnaq´tzb´il n-chi yek´un tzalu.",
+    "tiles": {
+      "leads": "tkyaqil t-xilen",
+      "newInPeriod_one": "{{count}} ak´aj toj amb´il lu",
+      "newInPeriod_other": "{{count}} ak´aj toj amb´il lu",
+      "accepted": "tzaj k´amo´n",
+      "booked": "O tz´ok q´o´n",
+      "bookedInPeriod_one": "{{count}} b´aj t-ximan toj amb´il lu",
+      "bookedInPeriod_other": "{{count}} b´aj t-ximan toj amb´il lu",
+      "conversion": "Ch´ixpub´il",
+      "conversionHint": "Aye t-xilen t-xilen t-xilen t-xilen t-xilen t-xilen t-xilen",
+      "protectedNow": "N-xq´uqin jalin",
+      "expiringSoon_one": "A kolb´il n-b´aj toj {{count}} q´ij",
+      "expiringSoon_other": "A kolb´il n-b´aj toj {{count}} q´ij",
+      "disputedNow": "N-chi q´ojle kyu´n txqantl",
+      "disputedNowHint": "Aye t-xilen tuk´e jun q´oj ti´j t-xilen t-xilen juntl t-xjalil",
+      "commissionEligible": "A comisión elegible",
+      "commissionCancelled_one": "{{count}} b´aj t-ximan",
+      "commissionCancelled_other": "{{count}} b´aj t-ximan"
+    },
+    "chart": {
+      "title_one": "Inscripciones ex reservas toj junjun q´ij - t-xe {{count}} q´ij",
+      "title_other": "Inscripciones ex reservas toj jun q´ij - t-xe {{count}} q´ij",
+      "registrations": "Inscripciones",
+      "bookings": "Reservas"
+    },
+    "byStage": "N-chi b´et tu´n t-xilen",
+    "bySource": "N-chi tzaj tqona t-xe´chil",
+    "byReferral": "N-chi tzaj tqona t-xilen t-xilen",
+    "myDisputes": "Qe nya b´a´n tzaj t-ximana",
+    "noDisputes": "Myia jun nya b´a´n tzaj q´o´n.",
+    "unknown": "mya b´aj q´o´n",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM externo (simulado)",
+      "PARTNER_CRM": "tzaj q´o´n tu´n t-xjalila",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integración",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "A kolb´il n-chi b´aj toj juntl q´ij {{count}}",
+    "expiringTitle_other": "A kolb´il n-chi b´aj toj juntl {{count}} q´ij",
+    "expiringEmpty": "Myia jun plomo n-el t-xilen t-xq´uqb´il toj ventan lu."
   }
 }

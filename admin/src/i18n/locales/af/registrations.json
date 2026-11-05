@@ -49,8 +49,73 @@
       "newPartnerId": "Nuwe vennoot ID",
       "reason": "Rede (vereis)",
       "apply": "Pas ignorering toe",
-      "applying": "Doen tans aansoek..."
+      "applying": "Doen tans aansoek...",
+      "cancelBookingHint": "Kansellasie merk die bespreking en sy kommissie as gekanselleer, gee operasionele eienaarskap aan die vennoot terug en laat die bouer weer hierdie lood bespreek.",
+      "cancelBookingConfirm": "Kanselleer hierdie bespreking? Die kommissie word ook gekanselleer. Dit word aangeteken met jou naam en rede."
     },
-    "timelineTitle": "Oudittydlyn (hierdie registrasie)"
+    "timelineTitle": "Oudittydlyn (hierdie registrasie)",
+    "bookingStatus": "Bespreking Status",
+    "commissionAttribution": "Kommissie Erkenning",
+    "disputeOpen": "'n Eienaarskapdispuut is oop vir hierdie kliënt - 'n ander vennoot sê dit is hulle s'n. Dit word op die Dispute-bladsy beslis.",
+    "viewDisputes": "Bekyk dispute",
+    "cancellation": {
+      "title": "Bespreking gekanselleer",
+      "hint": "Die bespreking en sy kommissie word gekanselleer; operasionele eienaarskap is terug by die vennoot en die bouer kan hierdie lood weer bespreek.",
+      "at": "Gekanselleer om",
+      "by": "Gekanselleer deur",
+      "reason": "Rede"
+    }
+  },
+  "disputes": {
+    "title": "Eienaarskapgeskille",
+    "hint": "'n Vennoot wie se registrasie as 'n duplikaat afgekeur is, kan betwis wie die kliënt besit. Hersien beide kante en besluit.",
+    "statusFilter": "Dispuut status",
+    "allStatuses": "Alle statusse",
+    "empty": "Geen dispute met hierdie status nie.",
+    "columns": {
+      "dispute": "Dispuut",
+      "customer": "Kliënt",
+      "project": "Projek",
+      "raisedBy": "Opgewek deur",
+      "heldBy": "Huidige eienaar",
+      "status": "Status",
+      "raisedAt": "Opgewek op"
+    },
+    "detail": {
+      "title": "Dispuut {{id}}",
+      "raisedOn": "Opgegroei {{date}}",
+      "raisingTitle": "Opgewek deur",
+      "holderTitle": "Huidige eienaar",
+      "partner": "Vennoot",
+      "raisedBy": "Ingesit deur",
+      "customerName": "Kliënt",
+      "mobile": "Selfoon",
+      "alternateMobile": "Alternatiewe selfoon",
+      "email": "E-pos",
+      "project": "Projek",
+      "reason": "Hulle rede",
+      "registration": "Registrasie",
+      "registeredAt": "Geregistreer op",
+      "referral": "Verwysing",
+      "heldMissing": "Die gehoue ​​registrasie kon nie gevind word nie.",
+      "resolutionTitle": "Besluit",
+      "outcome": "Uitkoms",
+      "note": "Let wel",
+      "decidedBy": "Besluit deur",
+      "decidedAt": "Besluit op",
+      "newRegistration": "Nuwe registrasie",
+      "decideTitle": "Besluit hierdie dispuut",
+      "noteLabel": "Nota wat die besluit verduidelik (vereis)",
+      "noteRequired": "Skryf 'n nota om te besluit.",
+      "uphold": "Handhaaf",
+      "overturn": "Omslaan",
+      "upholdEffect": "{{holder}} hou die kliënt. Die dispuut is gesluit en niks anders verander nie.",
+      "overturnEffect": "{{holder}} se duplikaatbeskerming eindig nou en die kliënt is geregistreer vir {{partner}} as 'n nuwe registrasie.",
+      "heldBookedHelp": "Hierdie kliënt word deur die huidige eienaar bespreek. Kanselleer eers daardie bespreking (Admin ignoreer op die registrasie), keer dan om:",
+      "confirmTitle": "Is jy seker?",
+      "confirmUphold": "Ja, handhaaf",
+      "confirmOverturn": "Ja, omslaan",
+      "back": "Terug na Dispute"
+    }
   }
 }

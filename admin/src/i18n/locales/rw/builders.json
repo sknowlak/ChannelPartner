@@ -43,7 +43,9 @@
       "name": "Izina",
       "city": "Umujyi",
       "status": "Imiterere",
-      "actions": "Ibikorwa"
+      "actions": "Ibikorwa",
+      "protection": "Kurinda kwigana",
+      "matchOn": "Amakopi ahuye kuri"
     },
     "closeReferrals": "Funga kubohereza",
     "reopen": "Fungura",
@@ -55,6 +57,25 @@
       "add": "Ongeraho Umushinga",
       "created": "Byaremwe {{name}} ."
     },
-    "back": "Subira Kububaka"
+    "back": "Subira Kububaka",
+    "protection": {
+      "days_one": "{{count}} umunsi",
+      "days_other": "{{count}} iminsi",
+      "globalDays_one": "Isi yose ( {{count}} umunsi)",
+      "globalDays_other": "Isi yose ( {{count}} iminsi)",
+      "globalDefault": "Mburabuzi",
+      "placeholder": "Iminsi yo gukingira (ubusa = isi isanzwe)",
+      "saved": "Kurinda kwigana bigezweho kuri {{name}} .",
+      "hint": "Kurinda kwigana: iminsi 1-3650, cyangwa usige ubusa kugirango ukoreshe isi yose kuva Igenamiterere. Impinduka ireba gusa kwiyandikisha gushya - ibihari bikomeza kurangira."
+    },
+    "matching": {
+      "global": "Mburabuzi",
+      "globalWith": "Isi isanzwe ( {{fields}} )",
+      "mobile": "Numero ya terefone",
+      "email": "Imeri",
+      "both": "Inomero ya terefone + imeri",
+      "saved": "Gukoporora guhuza bigezweho kuri {{name}}",
+      "hint": "Nibihe bisobanuro bituma kwiyandikisha bibiri umukiriya umwe kumushinga. Impinduka zikurikizwa kuri duplicate cheque guhera ubu; kurinda bihari ntabwo bigira ingaruka."
+    }
   }
 }

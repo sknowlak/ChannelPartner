@@ -49,8 +49,73 @@
       "newPartnerId": "Novèl ID de partenari",
       "reason": "Motiu (obligatòri)",
       "apply": "Aplicar la substitucion",
-      "applying": "En demandant..."
+      "applying": "En demandant...",
+      "cancelBookingHint": "L'anullacion marca la reservacion e sa comission coma anulladas, torna la proprietat operacionala al partenari, e daissa lo constructor tornar reservar aqueste client.",
+      "cancelBookingConfirm": "Anullar aquesta reservacion? Sa comission es tanben anullada. Aquò es enregistrat amb vòstre nom e rason."
     },
-    "timelineTitle": "Cronologia d'auditoria (aquesta inscripcion)"
+    "timelineTitle": "Cronologia d'auditoria (aquesta inscripcion)",
+    "bookingStatus": "Estat de reservacion",
+    "commissionAttribution": "Atribucion de la comission",
+    "disputeOpen": "Un litigi de proprietat es dobèrt sus aquel client - un autre partenari ditz qu'es lo sieu. Se decide en la pagina de Disputas.",
+    "viewDisputes": "Veire las disputas",
+    "cancellation": {
+      "title": "Reservacion anullada",
+      "hint": "La reservacion e sa comission son anulladas; la proprietat operacionala es de retorn amb lo partenari e lo constructor pòt tornar reservar aqueste client.",
+      "at": "Anullat a",
+      "by": "Anullat per",
+      "reason": "Rason"
+    }
+  },
+  "disputes": {
+    "title": "Disputas de proprietat",
+    "hint": "Un partenari que son inscripcion foguèt refusada coma un doble pòt contestar qui possedís lo client. Revisatz los dos costats e decidissètz.",
+    "statusFilter": "Estatut de la disputa",
+    "allStatuses": "Totes los estatuts",
+    "empty": "Pas de disputas amb aqueste estatut.",
+    "columns": {
+      "dispute": "Disputar",
+      "customer": "Client",
+      "project": "Projècte",
+      "raisedBy": "Levat per",
+      "heldBy": "Proprietari actual",
+      "status": "Estatut",
+      "raisedAt": "Levat sus"
+    },
+    "detail": {
+      "title": "Disputa {{id}}",
+      "raisedOn": "Levada {{date}}",
+      "raisingTitle": "Levat per",
+      "holderTitle": "Proprietari actual",
+      "partner": "Companh",
+      "raisedBy": "Somés per",
+      "customerName": "Client",
+      "mobile": "Mobil",
+      "alternateMobile": "Mobil alternatiu",
+      "email": "Corrièl",
+      "project": "Projècte",
+      "reason": "Lor rason",
+      "registration": "Inscripcion",
+      "registeredAt": "Inscrich sus",
+      "referral": "Referéncia",
+      "heldMissing": "L'enregistrament tengut a pas pogut èsser trobat.",
+      "resolutionTitle": "Decision",
+      "outcome": "Resultat",
+      "note": "Nòta",
+      "decidedBy": "Decidit per",
+      "decidedAt": "Decidit sus",
+      "newRegistration": "Novèla inscripcion",
+      "decideTitle": "Decidir aqueste litigi",
+      "noteLabel": "Nòta explicant la decision (obligatòria)",
+      "noteRequired": "Escrivètz una nòta per decidir.",
+      "uphold": "Sosténer",
+      "overturn": "Revirar",
+      "upholdEffect": "{{holder}} garda lo client. Lo litigi es barrat e res mai càmbia pas.",
+      "overturnEffect": "La proteccion del doble de {{holder}} s'acaba ara e lo client es enregistrat per {{partner}} coma enregistrament novèl.",
+      "heldBookedHelp": "Aqueste client es reservat pel proprietari actual. Anullatz d'en primièr aquela reservacion (Admin Substitute sus l'inscripcion), puèi reviratz :",
+      "confirmTitle": "N'ètz segur?",
+      "confirmUphold": "Òc, sostenètz",
+      "confirmOverturn": "Òc, capvirar",
+      "back": "Tornar a las disputas"
+    }
   }
 }

@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Zakaz edildi",
-    "pending": "Garaşylýar"
+    "pending": "Garaşylýar",
+    "status": {
+      "CONFIRMED": "Zakaz edildi",
+      "CANCELLED": "Zakaz bermek ýatyryldy"
+    }
   },
   "assign": {
     "unassigned": "Bellenmedik",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Entek taslama ýok (salgylanmaýar)",
-    "notInList": "{{project}} (taslama sanawynda däl)"
+    "notInList": "{{project}} (taslama sanawynda däl)",
+    "protectionDays_one": "{{count}} day gündelik gorag",
+    "protectionDays_other": "{{count}} day gündelik gorag"
   },
   "journey": {
     "customer": "Müşderi",
@@ -76,7 +82,14 @@
     "progressHistory": "Ösüş taryhy",
     "timesIn": "( {{timezone}} )",
     "backToMyLeads": "Leadolbaşçylarymyza dolan",
-    "editLead": "Gurşuny redaktirläň"
+    "editLead": "Gurşuny redaktirläň",
+    "disputeBanner": "Başga bir hyzmatdaş, bu müşderiniň eýeçiligi barada jedel etdi. Leadrat administratory ony gözden geçirýär - goragyňyz karar berýänçä ýerinde galar.",
+    "booking": "Zakaz bermek",
+    "commission": "Komissiýa",
+    "notBooked": "Zakaz edilmedi",
+    "cancelledOn": "{{date}} on-da ýatyryldy.",
+    "cancelReason": "Sebäp: {{reason}}",
+    "cancelledHint": "Gurluşykçy bron etmegi ýatyrdy - amaly eýeçilik siziň bilen gaýdyp geldi we komissiýa hukugy ýatyryldy. Gurşun täzeden bron edilse dikeldilýär."
   },
   "referral": {
     "NOT_REFERRED": "Salgylanmaýar (taslama ýok)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Gurluşykçy ugrukdyrmany kabul etdi",
       "REFERRAL_REJECTED": "Gurluşykçy ugrukdyrmany ret etdi. Sebäp: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin dublikat goragy ir goýberdi. Sebäp: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin bellige alnyşy {{from}} dan {{to}} çenli belledi. Sebäp: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin bellige alnyşy {{from}} dan {{to}} çenli belledi. Sebäp: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Başga hyzmatdaşyň iki gezek hasaba alyş synanyşygy ret edildi",
+      "BOOKING_CANCELLED": "Zakaz bermek ýatyryldy Sebäp: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Amal eýeçiligi partnýora gaýdyp geldi",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Zakaz bermek bilen komissiýanyň hukugy ýatyryldy",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Täze bron etmek üçin komissiýanyň hukugy dikeldildi",
+      "OWNERSHIP_DISPUTE_RAISED": "Başga bir hyzmatdaş, bu müşderiniň eýeçiligi barada jedelli - Leadrat administratory ony gözden geçirer",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Bu müşderiniň eýeçilik dawasy yzyna alyndy - eýeçiligiňiz üýtgemez",
+      "OWNERSHIP_DISPUTE_UPHELD": "Bu müşderiniň eýeçilik dawasy gözden geçirildi - eýeçiligiňiz tassyklandy",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Eýeçilik jedeliňiz siziň peýdasyna çözülenden soň hasaba alyndy. Bellik: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Gorag gutardy: eýeçilik dawasy başga bir hyzmatdaşyň peýdasyna çözüldi. Bellik: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Bu telefon belgisi {{country}} for üçin dogry däl.",
     "COUNTRY_MISMATCH": "Dogry ýurt koduny saýlaň.",
     "NOT_MOBILE": "Öý telefonyna däl-de, jübi telefonyna girmegiňizi haýyş edýäris."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komissiýa hukugy bar",
+      "PENDING": "Komissiýa garaşýar",
+      "CANCELLED": "Komissiýa ýatyryldy"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Size degişlidir",
+      "DISPUTED": "Aýratynlyk jedelli"
+    }
+  },
+  "result": {
+    "none": "Görkezmek üçin hasaba alyş netijesi ýok. Ilki bilen gurşuny bellige al.",
+    "acceptedTitle": "Gurşun hasaba alyndy",
+    "rejectedTitle": "Gurşun hasaba alynmady",
+    "protectionWindow": "Gorag penjiresi",
+    "protectedUntil": "Şu wagta çenli goralýar",
+    "openLead": "Gurşuny açyň",
+    "addAnother": "Başga gurşun goşuň",
+    "duplicate": "Dublikat - eýýäm goralandyr",
+    "duplicateHint": "Bu müşderi bu taslama üçin eýýäm başga bir hasaba alyş bilen goralýar, şonuň üçin bu siziň üçin hasaba alynmady.",
+    "existingProtectedUntil": "Bar bolan hasaba alyş şu wagta çenli goralýar"
+  },
+  "disputes": {
+    "title": "Jedellerim",
+    "intro": "Müşderi üçin dublikat hökmünde ret edilen eýeçilik jedelleri. Leadrat administratory her birini gözden geçirýär.",
+    "empty": "Jedel etmediňiz. Eger getiren müşderiňiz dublikat hökmünde ret edilse, hasaba alyş netijesinden jedel edip bilersiňiz.",
+    "columns": {
+      "dispute": "Jedel",
+      "reason": "Sebäbiňiz",
+      "outcome": "Netije"
+    },
+    "status": {
+      "OPEN": "Gözden geçirilýär",
+      "UPHELD": "Siziň peýdasyna däl",
+      "OVERTURNED": "Siziň peýdasyna karar berdi",
+      "WITHDRAWN": "Yza çekildi"
+    },
+    "awaitingReview": "Admin synyna garaşýaryn",
+    "openNewLead": "Lead {{id}} açyň",
+    "withdraw": "Yza çek",
+    "withdrawConfirm": "Jedeliňizi {{name}} for üçin yzyna alyň? Häzirki eýeçilik bolşy ýaly galýar.",
+    "raise": "Jedeliň eýeçiligi",
+    "raiseTitle": "Jedeliň eýeçiligi",
+    "raiseHint": "Bu müşderi ilki size gelen bolsa, sebäbini düşündiriň. Leadrat administratory ony gözden geçirer; siziň peýdasyna karar berseler, gurşun siziň üçin hasaba alyndy.",
+    "reasonLabel": "Bu müşderi näme üçin siziňki?",
+    "reasonMin_one": "Iň bolmanda {{count}} nyşan.",
+    "reasonMin_other": "Iň bolmanda {{count}} nyşanlary.",
+    "submit": "Jedel iber",
+    "notProtected": "Mundan beýläk bu taslama üçin hiç kim bu müşderini gorap bilmeýär - indi öňdebaryjy bellige alyp bilersiňiz.",
+    "raised": "Jedel {{id}} review gözden geçirmek üçin iberildi.",
+    "viewAll": "Jedellerime serediň"
+  },
+  "dashboard": {
+    "title": "Dolandyryş paneli",
+    "period": "Döwür",
+    "lastDays_one": "{{count}} gün",
+    "lastDays_other": "{{count}} günler",
+    "emptyTitle": "Hoş geldiňiz! Entek öňde baryjy ýok.",
+    "emptyHint": "Ilkinji gurşuňyzy bellige alyň - turbageçirijiňiz, bronlamalar we gorag möhletleri şu ýerde görkeziler.",
+    "tiles": {
+      "leads": "Jemi öňde barýar",
+      "newInPeriod_one": "{{count}} bu döwürde täze",
+      "newInPeriod_other": "{{count}} bu döwürde täze",
+      "accepted": "Kabul edildi",
+      "booked": "Zakaz edildi",
+      "bookedInPeriod_one": "{{count}} bu döwürde bron edildi",
+      "bookedInPeriod_other": "{{count}} bu döwürde bron edildi",
+      "conversion": "Öwürmek",
+      "conversionHint": "Kabul edilen öňdebaryjy paý hökmünde paýlaşylýar",
+      "protectedNow": "Häzir goralýar",
+      "expiringSoon_one": "{{count}} güni gutarýan gorag",
+      "expiringSoon_other": "{{count}} günlerde gutarýan gorag",
+      "disputedNow": "Başgalar tarapyndan jedelli",
+      "disputedNowHint": "Başga hyzmatdaşdan açyk eýeçilik jedeli bilen alyp barýarsyňyz",
+      "commissionEligible": "Komissiýa hukugy bar",
+      "commissionCancelled_one": "{{count}} ýatyryldy",
+      "commissionCancelled_other": "{{count}} ýatyryldy"
+    },
+    "chart": {
+      "title_one": "Her gün hasaba alyş we bronlamak - iň soňky {{count}} gün",
+      "title_other": "Her gün hasaba alyş we bronlamak - soňky {{count}} gün",
+      "registrations": "Hasaba alyş",
+      "bookings": "Zakazlar"
+    },
+    "byStage": "Status boýunça ýolbaşçylyk edýär",
+    "bySource": "Çeşme boýunça ýolbaşçylyk edýär",
+    "byReferral": "Ralollama ýagdaýy boýunça öňde barýar",
+    "myDisputes": "Jedeller",
+    "noDisputes": "Jedeller gozgalmady.",
+    "unknown": "Bellenmedi",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Daşarky CRM (simulirlenen)",
+      "PARTNER_CRM": "Toparyňyz tarapyndan goşuldy",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integrasiýa",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Gorag indiki {{count}} günde gutarar",
+    "expiringTitle_other": "Gorag indiki {{count}} günlerde gutarar",
+    "expiringEmpty": "Hiç bir gurşun bu penjirede goragyny ýitirmeýär."
   }
 }

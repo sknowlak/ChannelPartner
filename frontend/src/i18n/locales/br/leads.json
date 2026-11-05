@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Prenet",
-    "pending": "War c'hortoz"
+    "pending": "War c'hortoz",
+    "status": {
+      "CONFIRMED": "Prenet",
+      "CANCELLED": "Nullet eo bet ar c'houmanant"
+    }
   },
   "assign": {
     "unassigned": "N'eo ket bet roet",
@@ -58,7 +62,12 @@
   },
   "project": {
     "none": "Raktres ebet c'hoazh (n'eo ket bet kaset)",
-    "notInList": "{{project}} (n'emañ ket e roll ar raktresoù)"
+    "notInList": "{{project}} (n'emañ ket e roll ar raktresoù)",
+    "protectionDays_one": "{{count}} -devezh gwarez",
+    "protectionDays_two": "{{count}} -devezh gwarez",
+    "protectionDays_few": "{{count}} -devezh gwarez",
+    "protectionDays_many": "{{count}} -devezh gwarez",
+    "protectionDays_other": "{{count}} -devezh gwarez"
   },
   "journey": {
     "customer": "Arval",
@@ -76,7 +85,14 @@
     "progressHistory": "Istor an araokadennoù",
     "timesIn": "(amzeroù e {{timezone}} )",
     "backToMyLeads": "Distreiñ d'am pennadoù",
-    "editLead": "Kemmañ ar penn"
+    "editLead": "Kemmañ ar penn",
+    "disputeBanner": "Ur c'hevread all en deus disklêriet perc'henniezh ar c'hlient-mañ. Ur merour Leadrat a zo o sellet outañ - chom a raio ho gwarez e plas betek ma vo divizet ganto.",
+    "booking": "Prenañ",
+    "commission": "Urzhiadenn, urzhiañ, bodad",
+    "notBooked": "N'eo ket bet prenet",
+    "cancelledOn": "Nullet d'an {{date}} .",
+    "cancelReason": "Abeg : {{reason}}",
+    "cancelledHint": "Nullet eo bet ar c'houmanant gant ar saver - distroet eo ar perc'henniezh oberiant ganeoc'h ha nullet eo bet ar gwir da gaout ur gomision. Adsavet e vez ma vez prenet ar c'heflusker en-dro."
   },
   "referral": {
     "NOT_REFERRED": "N'eo ket bet kaset (raktres ebet)",
@@ -166,7 +182,17 @@
       "REFERRAL_ACCEPTED": "Degemeret eo bet ar c'hemennadenn gant ar Saver",
       "REFERRAL_REJECTED": "Nac'het en deus ar Saver ar c'hemennadenn. Abeg : {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Embannet en deus ar merour gwarez an doublennoù a-raok. Abeg : {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Adlakaet eo bet an enskrivadur gant merour eus {{from}} da {{to}} . Abeg : {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Adlakaet eo bet an enskrivadur gant merour eus {{from}} da {{to}} . Abeg : {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Nac'het eo bet ur c'hlask enskrivañ eilet gant ur c'hevread all",
+      "BOOKING_CANCELLED": "Nullet eo bet ar c'houmanant. Abeg : {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Distreiñ a ra ar perc'henniezh oberiant d'ar c'hevread",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Nullet eo bet ar gopr gant ar c'houmanant",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Adlakaet eo bet ar gwir da gaout ur gomision evit ar c'houmanant nevez",
+      "OWNERSHIP_DISPUTE_RAISED": "Ur c'hevread all en deus disklêriet perc'henniezh ar c'hlient-mañ - un merour Leadrat a eveshaio anezhañ",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Tennet eo bet an tabut perc'henniezh war ar c'hlient-mañ - n'eo ket cheñchet ho perc'henniezh",
+      "OWNERSHIP_DISPUTE_UPHELD": "Adwelet eo bet an tabut perc'henniezh war ar c'hlient-mañ - kadarnaet eo ho perc'henniezh",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Enrollet goude ma oa bet divizet ho tabut perc'henniezh en ho fav. Notenn : {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Echuet eo bet ar gwareziñ : divizet eo bet un tabut perc'henniezh a-du gant ur c'hevread all. Evezhiadenn : {{note}}"
     }
   },
   "columnsPanel": {
@@ -190,5 +216,132 @@
     "INVALID_FOR_COUNTRY": "N'eo ket talvoudek an niverenn bellgomz-mañ evit {{country}} .",
     "COUNTRY_MISMATCH": "Dibabit ar c'hod bro dereat mar plij.",
     "NOT_MOBILE": "Lakait un niverenn hezoug, ha n'eo ket ur pellgomzer hezoug."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Degemeret evit ar gomisionoù",
+      "PENDING": "Gortoz a ra ar gomision",
+      "CANCELLED": "Nullet eo bet ar gomision"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Roet deoc'h",
+      "DISPUTED": "Tabutet eo an deskrivadur"
+    }
+  },
+  "result": {
+    "none": "Disoc'h enskrivadur ebet da ziskouez. Enskrivit un den da gentañ.",
+    "acceptedTitle": "Plom enrollet",
+    "rejectedTitle": "N'eo ket enrollet ar plom",
+    "protectionWindow": "Prenestr gwareziñ",
+    "protectedUntil": "Gwarezet betek",
+    "openLead": "Digeriñ ar penn",
+    "addAnother": "Ouzhpennañ un den all",
+    "duplicate": "Doublet - gwarezet dija",
+    "duplicateHint": "Gwarezet eo ar c'hlient-mañ dija evit ar raktres-mañ gant un enskrivadur all, neuze n'hall ket bezañ enrollet evidoc'h.",
+    "existingProtectedUntil": "Gwarezet eo an enskrivadurioù zo anezho dija betek"
+  },
+  "disputes": {
+    "title": "Ma tabutoù",
+    "intro": "Tabutoù perc'henniezh hoc'h eus savet evit ar c'hliented a oa bet nac'het evel eilennoù. Ur merour Leadrat a evesha pep hini anezho.",
+    "empty": "N'hoc'h eus savet tabut ebet. Ma vez nac'het ur c'hlient hoc'h eus degaset evel eiladenn e c'hallit e nac'hañ diwar disoc'h an enskrivadur.",
+    "columns": {
+      "dispute": "Tabut",
+      "reason": "Ho abeg",
+      "outcome": "Disoc'h"
+    },
+    "status": {
+      "OPEN": "O vezañ adwelet",
+      "UPHELD": "N'eo ket a-du ganeoc'h",
+      "OVERTURNED": "Divizet en ho fav",
+      "WITHDRAWN": "Tennet kuit"
+    },
+    "awaitingReview": "O c'hortoz evezhiadennoù ar merour",
+    "openNewLead": "Digeriñ ho pennad {{id}}",
+    "withdraw": "Tennañ kuit",
+    "withdrawConfirm": "Dilemel ho tabut evit {{name}} ? Chom a ra ar perc'henniezh bremañ evel m'emañ.",
+    "raise": "Tabut war ar perc'henniezh",
+    "raiseTitle": "Tabut war ar perc'henniezh",
+    "raiseHint": "Mard eo deuet ar c'hlient-mañ da'z kavout da gentañ, displegañ perak. Un merour Leadrat a adwelet anezhañ ; ma tivizont en ho fav, e vo enrollet ar c'hefridi evidoc'h.",
+    "reasonLabel": "Perak eo ar c'hlient-mañ deoc'h ?",
+    "reasonMin_one": "{{count}} arouezenn da nebeutañ.",
+    "reasonMin_two": "{{count}} arouezenn da nebeutañ.",
+    "reasonMin_few": "{{count}} arouezenn da nebeutañ.",
+    "reasonMin_many": "{{count}} arouezenn da nebeutañ.",
+    "reasonMin_other": "{{count}} arouezenn da nebeutañ.",
+    "submit": "Kas tabut",
+    "notProtected": "Den ebet ne zalc'h gwarez war ar c'hlient-mañ evit ar raktres-mañ ken - gallout a rit enrollañ ar c'hlient bremañ.",
+    "raised": "Tabut {{id}} kaset da adwelet.",
+    "viewAll": "Gwelet ma tabutoù"
+  },
+  "dashboard": {
+    "title": "Penn-stur",
+    "period": "Marevezh",
+    "lastDays_one": "{{count}} devezh",
+    "lastDays_two": "{{count}} devezhioù",
+    "lastDays_few": "{{count}} devezhioù",
+    "lastDays_many": "{{count}} devezhioù",
+    "lastDays_other": "{{count}} devezhioù",
+    "emptyTitle": "Degemer mat! N'hoc'h eus titouroù ebet c'hoazh.",
+    "emptyHint": "Enskrivit ho lec'hienn gentañ - ho treuzkasoù, ho prenadennoù hag ho termenoù gwareziñ a vo diskouezet amañ.",
+    "tiles": {
+      "leads": "Hollad ar c'hemennadennoù",
+      "newInPeriod_one": "{{count}} nevez er prantad-mañ",
+      "newInPeriod_two": "{{count}} nevez er prantad-mañ",
+      "newInPeriod_few": "{{count}} nevez er prantad-mañ",
+      "newInPeriod_many": "{{count}} nevez er prantad-mañ",
+      "newInPeriod_other": "{{count}} nevez er prantad-mañ",
+      "accepted": "Degemeret",
+      "booked": "Prenet",
+      "bookedInPeriod_one": "{{count}} prenet er prantad-mañ",
+      "bookedInPeriod_two": "{{count}} prenet er prantad-mañ",
+      "bookedInPeriod_few": "{{count}} prenet er prantad-mañ",
+      "bookedInPeriod_many": "{{count}} prenet er prantad-mañ",
+      "bookedInPeriod_other": "{{count}} prenet er prantad-mañ",
+      "conversion": "Treiñ",
+      "conversionHint": "Ar c'hemennadennoù prenet evel ul lodenn eus ar c'hemennadennoù degemeret",
+      "protectedNow": "Gwarezet bremañ",
+      "expiringSoon_one": "Gwarez a echu gant {{count}} devezh",
+      "expiringSoon_two": "Gwarez a echu gant {{count}} devezh",
+      "expiringSoon_few": "Gwarez a echu gant {{count}} devezh",
+      "expiringSoon_many": "Gwarez a echu gant {{count}} devezh",
+      "expiringSoon_other": "Gwarez a echu gant {{count}} devezh",
+      "disputedNow": "Tabutet gant tud all",
+      "disputedNowHint": "Ho titouroù gant un tabut perc'henniezh digor gant ur c'hevread all",
+      "commissionEligible": "Degemeret evit ar gomisionoù",
+      "commissionCancelled_one": "{{count}} nullet",
+      "commissionCancelled_two": "{{count}} nullet",
+      "commissionCancelled_few": "{{count}} nullet",
+      "commissionCancelled_many": "{{count}} nullet",
+      "commissionCancelled_other": "{{count}} nullet"
+    },
+    "chart": {
+      "title_one": "Enskrivadurioù ha prenadennoù dre zevezh - devezh {{count}} diwezhañ",
+      "title_two": "Enskrivadurioù ha prenadennoù dre zevezh - {{count}} devezh diwezhañ",
+      "title_few": "Enskrivadurioù ha prenadennoù dre zevezh - {{count}} devezh diwezhañ",
+      "title_many": "Enskrivadurioù ha prenadennoù dre zevezh - {{count}} devezh diwezhañ",
+      "title_other": "Enskrivadurioù ha prenadennoù dre zevezh - {{count}} devezh diwezhañ",
+      "registrations": "Enskrivadurioù",
+      "bookings": "Prenadennoù"
+    },
+    "byStage": "Pennoù dre statud",
+    "bySource": "Pennadoù dre vammenn",
+    "byReferral": "Led dre statud ar c'hemennadennoù",
+    "myDisputes": "Tabutoù savet ganeoc'h",
+    "noDisputes": "Tabut ebet savet.",
+    "unknown": "N'eo ket lakaet",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM diavaez (simulaet)",
+      "PARTNER_CRM": "Ouzhpennet gant ho skipailh",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Enframmañ",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Echuiñ a ra ar gwarez a-benn an {{count}} devezh da zont",
+    "expiringTitle_two": "Echuiñ a ra ar gwarez a-benn {{count}} devezh da zont",
+    "expiringTitle_few": "Echuiñ a ra ar gwarez a-benn {{count}} devezh da zont",
+    "expiringTitle_many": "Echuiñ a ra ar gwarez a-benn {{count}} devezh da zont",
+    "expiringTitle_other": "Echuiñ a ra ar gwarez a-benn {{count}} devezh da zont",
+    "expiringEmpty": "Ne goll plom ebet e warez er prenestr-mañ."
   }
 }

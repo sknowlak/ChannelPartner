@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "已预订",
-    "pending": "待办的"
+    "pending": "待办的",
+    "status": {
+      "CONFIRMED": "已预订",
+      "CANCELLED": "预订已取消"
+    }
   },
   "assign": {
     "unassigned": "未分配",
@@ -58,7 +62,8 @@
   },
   "project": {
     "none": "还没有项目（未提及）",
-    "notInList": "{{project}} （不在项目列表中）"
+    "notInList": "{{project}} （不在项目列表中）",
+    "protectionDays_other": "{{count}}天保护"
   },
   "journey": {
     "customer": "顾客",
@@ -76,7 +81,14 @@
     "progressHistory": "进展历程",
     "timesIn": "（时间为{{timezone}} ）",
     "backToMyLeads": "返回我的线索",
-    "editLead": "编辑线索"
+    "editLead": "编辑线索",
+    "disputeBanner": "另一位合作伙伴对该客户的所有权存在争议。 Leadrat管理员正在审核它 - 在他们做出决定之前，您的保护将保持不变。",
+    "booking": "预订",
+    "commission": "委员会",
+    "notBooked": "未预订",
+    "cancelledOn": "已于{{date}}取消。",
+    "cancelReason": "原因： {{reason}}",
+    "cancelledHint": "建筑商取消了预订 - 运营所有权又归您所有，佣金资格也被取消。如果再次预订潜在顾客，该信息将恢复。"
   },
   "referral": {
     "NOT_REFERRED": "未提及（无项目）",
@@ -158,7 +170,17 @@
       "REFERRAL_ACCEPTED": "建造商接受了推荐",
       "REFERRAL_REJECTED": "建造者拒绝了推荐。原因： {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "管理员提前发布了重复保护。原因： {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "管理员将注册从{{from}}重新分配到{{to}} 。原因： {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "管理员将注册从{{from}}重新分配到{{to}} 。原因： {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "其他合作伙伴的重复注册尝试被拒绝",
+      "BOOKING_CANCELLED": "预订已取消。原因： {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "运营所有权归还给合作伙伴",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "预订后佣金资格取消",
+      "COMMISSION_ELIGIBILITY_RESTORED": "新预订的佣金资格已恢复",
+      "OWNERSHIP_DISPUTE_RAISED": "另一合作伙伴对此客户的所有权提出异议 - Leadrat管理员将对其进行审核",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "该客户的所有权争议已撤回 - 您的所有权未改变",
+      "OWNERSHIP_DISPUTE_UPHELD": "该客户的所有权争议已审核 - 您的所有权已确认",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "在您的所有权纠纷得到对您有利的裁决后进行注册。注意： {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "保护结束：所有权纠纷的裁决有利于另一位合伙人。注意： {{note}}"
     }
   },
   "columnsPanel": {
@@ -182,5 +204,100 @@
     "INVALID_FOR_COUNTRY": "此电话号码对于{{country}}无效。",
     "COUNTRY_MISMATCH": "请选择正确的国家代码。",
     "NOT_MOBILE": "请输入手机号码，而不是固定电话号码。"
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "符合佣金资格",
+      "PENDING": "佣金待定",
+      "CANCELLED": "佣金取消"
+    },
+    "attribution": {
+      "ATTRIBUTED": "归功于你",
+      "DISPUTED": "归属有争议"
+    }
+  },
+  "result": {
+    "none": "没有显示注册结果。先注册一个潜在客户。",
+    "acceptedTitle": "已注册潜在客户",
+    "rejectedTitle": "潜在客户未注册",
+    "protectionWindow": "防护窗",
+    "protectedUntil": "受保护直至",
+    "openLead": "开路引线",
+    "addAnother": "添加另一条线索",
+    "duplicate": "重复 - 已受保护",
+    "duplicateHint": "该客户已通过其他注册对该项目进行保护，因此无法为您注册。",
+    "existingProtectedUntil": "现有注册受保护直至"
+  },
+  "disputes": {
+    "title": "我的纠纷",
+    "intro": "您为因重复而被拒绝的客户提出的所有权争议。 Leadrat管理员会审核每一项。",
+    "empty": "您没有提出任何争议。如果您引入的客户因重复而被拒绝，您可以从注册结果中提出异议。",
+    "columns": {
+      "dispute": "争议",
+      "reason": "你的理由",
+      "outcome": "结果"
+    },
+    "status": {
+      "OPEN": "审核中",
+      "UPHELD": "不利于你",
+      "OVERTURNED": "做出了对你有利的决定",
+      "WITHDRAWN": "撤回"
+    },
+    "awaitingReview": "等待管理员审核",
+    "openNewLead": "打开您的潜在客户{{id}}",
+    "withdraw": "提取",
+    "withdrawConfirm": "撤回对{{name}}的争议？目前的所有权保持原样。",
+    "raise": "所有权争议",
+    "raiseTitle": "所有权争议",
+    "raiseHint": "如果该客户先来找您，请解释原因。 Leadrat管理员将对其进行审核；如果他们做出对您有利的决定，则会为您注册潜在客户。",
+    "reasonLabel": "为什么这个客户是你的？",
+    "reasonMin_other": "至少{{count}}个字符。",
+    "submit": "发送争议",
+    "notProtected": "没有人再对该项目的该客户提供保护 - 您现在可以注册潜在客户。",
+    "raised": "争议{{id}}已发送以供审核。",
+    "viewAll": "查看我的争议"
+  },
+  "dashboard": {
+    "title": "仪表板",
+    "period": "时期",
+    "lastDays_other": "{{count}}天",
+    "emptyTitle": "欢迎！您还没有任何线索。",
+    "emptyHint": "注册您的第一个潜在客户 - 您的渠道、预订和保护截止日期将显示在这里。",
+    "tiles": {
+      "leads": "总销售线索",
+      "newInPeriod_other": "此期间新增{{count}}",
+      "accepted": "公认",
+      "booked": "已预订",
+      "bookedInPeriod_other": "在此期间预订了{{count}}",
+      "conversion": "转换",
+      "conversionHint": "已预订的潜在客户占已接受潜在客户的比例",
+      "protectedNow": "现已受保护",
+      "expiringSoon_other": "保护将在{{count}}天后结束",
+      "disputedNow": "受到他人争议",
+      "disputedNowHint": "您的潜在客户与其他合作伙伴存在公开的所有权纠纷",
+      "commissionEligible": "符合佣金资格",
+      "commissionCancelled_other": "{{count}}已取消"
+    },
+    "chart": {
+      "title_other": "每天的注册和预订量 - 过去{{count}}天",
+      "registrations": "注册",
+      "bookings": "预订"
+    },
+    "byStage": "按状态引导",
+    "bySource": "按来源引导",
+    "byReferral": "按推荐状态引导",
+    "myDisputes": "您提出的争议",
+    "noDisputes": "没有提出任何争议。",
+    "unknown": "未设置",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "外部CRM （模拟）",
+      "PARTNER_CRM": "由您的团队添加",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "一体化",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_other": "保护将在接下来的{{count}}天后到期",
+    "expiringEmpty": "在此窗口中，任何铅都不会失去其保护。"
   }
 }

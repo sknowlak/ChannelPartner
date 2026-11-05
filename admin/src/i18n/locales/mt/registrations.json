@@ -49,8 +49,73 @@
       "newPartnerId": "ID tas-sieħeb ġdid",
       "reason": "Raġuni (meħtieġa)",
       "apply": "Applika Override",
-      "applying": "Applika..."
+      "applying": "Applika...",
+      "cancelBookingHint": "Il-kanċellazzjoni timmarka l-prenotazzjoni u l-kummissjoni tagħha bħala kkanċellata, tagħti lura s-sjieda operattiva lis-sieħeb, u tħalli lill-bennej jibbukkja dan iċ-ċomb mill-ġdid.",
+      "cancelBookingConfirm": "Ikkanċella din il-prenotazzjoni? Il-kummissjoni tagħha hija kkanċellata wkoll. Dan huwa illoggjat b'ismek u r-raġuni."
     },
-    "timelineTitle": "Kronoloġija tal-Verifika (din ir-reġistrazzjoni)"
+    "timelineTitle": "Kronoloġija tal-Verifika (din ir-reġistrazzjoni)",
+    "bookingStatus": "Status tal-Booking",
+    "commissionAttribution": "Kummissjoni Attribuzzjoni",
+    "disputeOpen": "Tilwima dwar is-sjieda hija miftuħa fuq dan il-klijent - sieħeb ieħor jgħid li hija tagħhom. Huwa deċiż fuq il-paġna Tilwim.",
+    "viewDisputes": "Ara t-tilwim",
+    "cancellation": {
+      "title": "Booking ikkanċellat",
+      "hint": "Il-prenotazzjoni u l-kummissjoni tagħha huma kkanċellati; sjieda operattiva hija lura mas-sieħeb u l-bennej jista 'jibbukkja dan iċ-ċomb mill-ġdid.",
+      "at": "Ikkanċellat fi",
+      "by": "Ikkanċellat minn",
+      "reason": "Raġuni"
+    }
+  },
+  "disputes": {
+    "title": "Tilwim ta' Sjieda",
+    "hint": "Imsieħeb li r-reġistrazzjoni tiegħu ġiet miċħuda bħala duplikat jista' jikkontesta min hu s-sid tal-klijent. Irrevedi ż-żewġ naħat u tiddeċiedi.",
+    "statusFilter": "Status ta' tilwima",
+    "allStatuses": "L-istatus kollu",
+    "empty": "Ebda tilwim b'dan l-istatus.",
+    "columns": {
+      "dispute": "Tilwima",
+      "customer": "Klijent",
+      "project": "Proġett",
+      "raisedBy": "Mqajma minn",
+      "heldBy": "Sid attwali",
+      "status": "Status",
+      "raisedAt": "Imqajjem fuq"
+    },
+    "detail": {
+      "title": "Tilwima {{id}}",
+      "raisedOn": "Imqajjem {{date}}",
+      "raisingTitle": "Mqajma minn",
+      "holderTitle": "Sid attwali",
+      "partner": "Imsieħeb",
+      "raisedBy": "Mibgħuta minn",
+      "customerName": "Klijent",
+      "mobile": "Mobbli",
+      "alternateMobile": "Mowbajl alternattiv",
+      "email": "Email",
+      "project": "Proġett",
+      "reason": "Ir-raġuni tagħhom",
+      "registration": "Reġistrazzjoni",
+      "registeredAt": "Irreġistrat fuq",
+      "referral": "Riferiment",
+      "heldMissing": "Ir-reġistrazzjoni miżmuma ma setgħetx tinstab.",
+      "resolutionTitle": "Deċiżjoni",
+      "outcome": "Riżultat",
+      "note": "Nota",
+      "decidedBy": "Iddeċieda minn",
+      "decidedAt": "Iddeċieda dwar",
+      "newRegistration": "Reġistrazzjoni ġdida",
+      "decideTitle": "Iddeċiedi din it-tilwima",
+      "noteLabel": "Nota li tispjega d-deċiżjoni (meħtieġa)",
+      "noteRequired": "Ikteb nota biex tiddeċiedi.",
+      "uphold": "Sostnew",
+      "overturn": "Qlib",
+      "upholdEffect": "{{holder}} iżomm il-klijent. It-tilwima hija magħluqa u xejn aktar jinbidel.",
+      "overturnEffect": "Il-protezzjoni duplikata ta {{holder}} tispiċċa issa u l-klijent huwa rreġistrat għal {{partner}} bħala reġistrazzjoni ġdida.",
+      "heldBookedHelp": "Dan il-klijent huwa bbukkjat permezz tas-sid attwali. Ikkanċella dik il-prenotazzjoni l-ewwel (Admin Override fuq ir-reġistrazzjoni), imbagħad taqleb:",
+      "confirmTitle": "Int żgur?",
+      "confirmUphold": "Iva, ssostni",
+      "confirmOverturn": "Iva, taqleb",
+      "back": "Lura għat-Tilwim"
+    }
   }
 }

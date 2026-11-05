@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Iniksaliuqtausimajuq",
-    "pending": "Nalunairialiit"
+    "pending": "Nalunairialiit",
+    "status": {
+      "CONFIRMED": "Iniksaliuqtausimajuq",
+      "CANCELLED": "Iniksaliurniq nuqqaqtitauvuq"
+    }
   },
   "assign": {
     "unassigned": "Tilijausimanngittuq",
@@ -58,7 +62,10 @@
   },
   "project": {
     "none": "Piliriaksaqtaqanngilaq suli (turaaqtausimanngittuq)",
-    "notInList": "{{project}} (piliriaksaq titiraqsimajuniinngittuq)"
+    "notInList": "{{project}} (piliriaksaq titiraqsimajuniinngittuq)",
+    "protectionDays_one": "{{count}} -ullurmut sapummijaujjuti",
+    "protectionDays_two": "{{count}} -ullurmut sapummijaujjuti",
+    "protectionDays_other": "{{count}} -ullurmut sapummijaujjuti"
   },
   "journey": {
     "customer": "Akiliqsuijuq",
@@ -76,7 +83,14 @@
     "progressHistory": "Pivallianirisimajanga",
     "timesIn": "(siqinngujait {{timezone}} )",
     "backToMyLeads": "Utirlunga tukimuaktittijinnut",
-    "editLead": "Aaqqigiarlugu sivuliqti"
+    "editLead": "Aaqqigiarlugu sivuliqti",
+    "disputeBanner": "Asiattauq piliriqatigijaujuq aivautiqaqsimammijuq namminiqarnirmik taassuminga niuviqtimik. Leadrat aulattijingat qimirrunakpuq - sapummijaujjutigijait aaqqiksimainnarniaqtuq isumaliurasuarninginni.",
+    "booking": "Iniksaliurniq",
+    "commission": "Katimajiit",
+    "notBooked": "Iniksaliuqtausimanngittuq",
+    "cancelledOn": "Nuqqaqtitausimajuq {{date}} .",
+    "cancelReason": "Pijjutinga: {{reason}}",
+    "cancelledHint": "Sanaji nuqqaqtittilauqtuq iniksaliuqtausimajumik - aulattinirmut nangminiqarniq utiqsimaliqpuq ilingnut amma kamisanamut pijunnarniq nuqqaqtitaulluni. Utiqtitauvappuq sivulliujjijuq aaqqittaukkanniqpat."
   },
   "referral": {
     "NOT_REFERRED": "Tunijausimanngittuq (piliriangunngittuq)",
@@ -162,7 +176,17 @@
       "REFERRAL_ACCEPTED": "Sanaji angilauqtuq tunijaujumik",
       "REFERRAL_REJECTED": "Sanaji aaggaalauqtuq tunijaujumik. Pijjutinga: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Aulattiji saqqittilauqtuq ajjinganik sapummijaujjutimik sivuniagut. Pijjutinga: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Aulattiji tunisikkanniqtuq atiliuqtausimanirmik {{from}} tavvunga {{to}} . Pijjutinga: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Aulattiji tunisikkanniqtuq atiliuqtausimanirmik {{from}} tavvunga {{to}} . Pijjutinga: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ajjigiiktumik atiliurasuarniq asianut piliriqatigijaujumut aaggaaqtaulauqtuq",
+      "BOOKING_CANCELLED": "Iniksaliurniq nuqqaqtitauvuq. Pijjutinga: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Aulattinirmut nangminiqarniq utiqtitauvuq piliriqatigijaujumut",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kamisanamut pijunnarniq nuqqaqtitauvuq iniksaliuqtautillugu",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kamisankut pijunnarningit utiqtitauvut nutaamut iniksaliurnirmut",
+      "OWNERSHIP_DISPUTE_RAISED": "Asia piliriqatigijaujuq aivautiqalauqtuq nangminiqarnirmik taassuminga niuviqpaktumik - Leadrat aulattijingat qimirruniaqtuq taassuminga",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Nangminiqarniujumut akaunngiliurutaujuq taassumunga niuviqpaktumut piiqtaulauqpuq - nangminiqarnirijait asijjiqsimanngilaq",
+      "OWNERSHIP_DISPUTE_UPHELD": "Nangminiqarniujumut akaunngiliurutaujuq taassumunga niuviqpaktumut qimirrujaulauqpuq - nangminirijaunirijait nalunaiqtausimavuq",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Atiliuqtausimajuq nangminiqarnirijait akaunngiliurutigijait isumaliurutaulauqtillugu ilingnut ikajuqtuilluni. Qaujimagiarlugu: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Sapummijauniq isulilauqtuq: nangminiqarnirmut akaunngiliurutaujuq isumaliurutaulauqtuq ikajuqtuilluni asianik piliriqatigijaujumik. Qaujimagiarlugu: {{note}}"
     }
   },
   "columnsPanel": {
@@ -186,5 +210,116 @@
     "INVALID_FOR_COUNTRY": "Taanna uqaalautiup naasautinga atunngilaq {{country}} -mut.",
     "COUNTRY_MISMATCH": "Atii niruarlugu tammaqsimanngittuq nunarjuap nalunaikkutanga.",
     "NOT_MOBILE": "Atii titirarlugu uqaalautiralaaq naasautinga, nunami uqaalautiungittuq."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Kamisana pijunnaqtitaujuq",
+      "PENDING": "Kamisankut utaqqijut",
+      "CANCELLED": "Kamisana nuqqaqtitauvuq"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Ilingnut turaangajuq",
+      "DISPUTED": "Tunijauninga aivautauvuq"
+    }
+  },
+  "result": {
+    "none": "Atiliuqtausimaningit takuksaunngilat. Atiliuqqaarlutit sivuliqtiuniaqtumik.",
+    "acceptedTitle": "Sivuliqtiunirmut atiliuqtausimajuq",
+    "rejectedTitle": "Sivulliqpaaq atiliuqtausimanngittuq",
+    "protectionWindow": "Sapummijaujjuti igalaaq",
+    "protectedUntil": "Sapujjausimajut tikillugu",
+    "openLead": "Matuingajuq sivuliqti",
+    "addAnother": "Ilasikkannirlutit sivuliqtimik",
+    "duplicate": "Ajjinga - sapujjausimaliriiqtuq",
+    "duplicateHint": "Taanna niuviqtiujuq sapujjausimaliriiqtuq taassumunga piliriamut asiagut atiliuqtausimanikkut, taimaimmat ilingnut atiliuqtaujunnalaunngilaq.",
+    "existingProtectedUntil": "Maannaujuq atiliuqtausimaningit sapujjausimajut tikillugu"
+  },
+  "disputes": {
+    "title": "Akaunngiliurutikka",
+    "intro": "Namminiqarnirmut akaunngiliurutaujut saqqilauqtatit niuviqpaktunut qipiluktaulauqtunut ajjiliuqtauninginnut. Leadrat qimirruvaktuq atuni.",
+    "empty": "Akaunngiliurutiksanik saqqittisimanngilatit. Niuviqtiujuq tikitilauqtait qipiluktauppat ajjinganik, akiraqturunnaqtait atiliuqtausimaninganut.",
+    "columns": {
+      "dispute": "Angiqatigiinnginniq",
+      "reason": "Pijjutigijait",
+      "outcome": "Qanuilinganinga"
+    },
+    "status": {
+      "OPEN": "Qimirrujauvalliajuq",
+      "UPHELD": "Ilingnut ikajuqtuinngittuq",
+      "OVERTURNED": "Isumaliurutausimajuq ilingnut ikajuqtuilluni",
+      "WITHDRAWN": "Piiqtaujuq"
+    },
+    "awaitingReview": "Utaqqijuq aulattijiup qimirrunaktauninganik",
+    "openNewLead": "Matuiqsilutit tukimuaktittijjutigijarnik {{id}}",
+    "withdraw": "Qujanaaqsi",
+    "withdrawConfirm": "Piiqsilutit akaunngiliurutigijarnik {{name}} ? Maannaujuq namminirijaujuq taimailingainnaqtuq.",
+    "raise": "Akaunngiliurutiqarniq nangminiqarnirmik",
+    "raiseTitle": "Akaunngiliurutiqarniq nangminiqarnirmik",
+    "raiseHint": "Taanna niuviqtiujuq ilinnut sivulliqpaami tikinniqpat, nalunaiqsilutit summat. Leadrat aulattijinga qimirruniaqtuq; Isumaliurutiqaqpata ilinnik ikajuqtuilutik, sivuliqtiuniaqtuq ilinnut atiliuqtausimavuq.",
+    "reasonLabel": "Summat taanna niuviqtiujuq iliksinnut?",
+    "reasonMin_one": "Mikilaanga {{count}} titiraqsimajuq.",
+    "reasonMin_two": "Mikilaangujuq {{count}} titiraqsimajut.",
+    "reasonMin_other": "Mikilaangujuq {{count}} titiraqsimajut.",
+    "submit": "Aullaqtittiniq akaunngiliurutimik",
+    "notProtected": "Kinatuinnaq sapujjisimagunniirmat taassuminga niuviqpaktumik taassumunga piliriamut - atiliurunnaqsivutit maannaujuq.",
+    "raised": "Akaunngiliuruti {{id}} aullaqtitauvuq qimirrujauqullugu.",
+    "viewAll": "Takulugit akaunngiliurutikka"
+  },
+  "dashboard": {
+    "title": "Takuksautittijjuti",
+    "period": "Nuqqaruti",
+    "lastDays_one": "{{count}} ulluq",
+    "lastDays_two": "{{count}} ulluit",
+    "lastDays_other": "{{count}} ulluit",
+    "emptyTitle": "Tunngasugit! Suli tukisigiarutiksaqanngilatit.",
+    "emptyHint": "Atiliurilutit sivulliqpaami tukimuaktittijiuniaqtumik - sulluliqutitit, iniksaliurutitit amma sapummijaujjutiksait isulivviksangit takuksauniaqput uvani.",
+    "tiles": {
+      "leads": "Katillugit sivuliqtiujunnaqtut",
+      "newInPeriod_one": "{{count}} nutaaq tavvani piviksami",
+      "newInPeriod_two": "{{count}} nutaaq tavvani piviksami",
+      "newInPeriod_other": "{{count}} nutaaq tavvani piviksami",
+      "accepted": "Angiqtaujuq",
+      "booked": "Iniksaliuqtausimajuq",
+      "bookedInPeriod_one": "{{count}} aaqqiktausimajut tavvani piviksami",
+      "bookedInPeriod_two": "{{count}} aaqqiktausimajut tavvani piviksami",
+      "bookedInPeriod_other": "{{count}} aaqqiktausimajut tavvani piviksami",
+      "conversion": "Asijjiqtauninga",
+      "conversionHint": "Aaqqiksuqtausimajut tukimuaktittijiuqataullutik angiqtausimajunut tukimuaktittijinut",
+      "protectedNow": "Sapujjausimajuq maanna",
+      "expiringSoon_one": "Sapummijaujjuti isulivviqaqtuq {{count}} ullungani",
+      "expiringSoon_two": "Sapummijaujjuti isulivviqaqtuq {{count}} ulluni",
+      "expiringSoon_other": "Sapummijaujjuti isulivviqaqtuq {{count}} ulluni",
+      "disputedNow": "Aivajjutaujuq asinginnut",
+      "disputedNowHint": "Tukimuaktittijitit matuingajumik nangminiqarnirmut akaunngiliurutimik asianik piliriqatigijarnik",
+      "commissionEligible": "Kamisana pijunnaqtitaujuq",
+      "commissionCancelled_one": "{{count}} nuqqaqtitaujuq",
+      "commissionCancelled_two": "{{count}} nuqqaqtitaujuq",
+      "commissionCancelled_other": "{{count}} nuqqaqtitaujuq"
+    },
+    "chart": {
+      "title_one": "Atiliuqtaujut ammalu iniksaliuqtaujut ulluq atausiq - kingulliqpaaq {{count}} ulluq",
+      "title_two": "Atiliuqtaujut ammalu iniksaliuqtaujut ullutamaat - kingulliqpaat {{count}} ulluit",
+      "title_other": "Atiliuqtaujut ammalu iniksaliuqtaujut ullutamaat - kingulliqpaat {{count}} ulluit",
+      "registrations": "Atiliuqtauningit",
+      "bookings": "Iniksaliurniq"
+    },
+    "byStage": "Sivuliqtiuvuq qanuilinganingagut",
+    "bySource": "Sivuliqtiujut nakinngaarmangaata",
+    "byReferral": "Sivuliqtiuvuq tunijauninginnut qanuilinganinginnut",
+    "myDisputes": "Akaunngiliurutit saqqilauqtatit",
+    "noDisputes": "Akaunngiliurutitaqalaunngittuq.",
+    "unknown": "Aaqqiktausimanngittuq",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Silataani CRM (ajjiliuqtausimajuq)",
+      "PARTNER_CRM": "Ilaliujjausimajuq tapiriiqutinnut",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Katitauningit",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Sapummijaujjuti isulinniaqtuq kingullirmi {{count}} ullungani",
+    "expiringTitle_two": "Sapummijaujjuti isulinniaqtuq kingullirmi {{count}} ulluni",
+    "expiringTitle_other": "Sapummijaujjuti isulinniaqtuq kingullirmi {{count}} ulluni",
+    "expiringEmpty": "Sapummijaujjutinga jagaijaunngilaq tavvani igalaami."
   }
 }

@@ -30,7 +30,8 @@
       "registered": "Registered"
     },
     "booked": "Booked",
-    "empty": "Hapasati pari kutumirwa."
+    "empty": "Hapasati pari kutumirwa.",
+    "bookingCancelled": "Kubhuka kwakanzurwa"
   },
   "detail": {
     "customer": "Mutengi",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Kubhuka kwasimbiswa.",
       "accepted": "Referral yakagamuchirwa.",
-      "rejected": "Referral yaramba."
+      "rejected": "Referral yaramba.",
+      "bookingCancelled": "Kubhuka kwakanzurwa."
     },
-    "backToReferrals": "Back to Referrals"
+    "backToReferrals": "Back to Referrals",
+    "bookingCancelled": "Kubhuka kwakanzurwa",
+    "cancelBooking": "Cancel Booking",
+    "cancelReasonLabel": "Chikonzero chekukanzura (chakaratidzwa kune mumwe wake) *",
+    "cancelBookingHint": "Uridzi hwekushanda hunodzokera kune waunoshanda naye uye kukodzera kwekomisheni yavo kwakadzimwa. Iyo inotungamira inogona kubhukwa zvakare gare gare.",
+    "cancelBookingConfirm": "Kanzura kubhuka"
   },
   "history": {
     "title": "Nhoroondo",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Komisheni yekukodzera yakagadzirwa",
       "HANDOVER_COMPLETED": "Handover yapera",
       "ADMIN_PROTECTION_RELEASED": "Admin akaburitsa duplicate dziviriro kare. Chikonzero: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin akapazve kunyoresa kubva {{from}} kuenda ku {{to}} . Chikonzero: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin akapazve kunyoresa kubva {{from}} kuenda ku {{to}} . Chikonzero: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Kuedza kunyoreswa kwemumwe mubatsiri kwakarambwa",
+      "BOOKING_CANCELLED": "Kubhuka kwakanzurwa. Chikonzero: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operational ownership yakadzokera kune mumwe wake",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kukodzera kuKomisheni kwakanzurwa nekurongeka",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Komisheni yekukodzera yadzoserwa pakurongeka kutsva"
     }
   }
 }

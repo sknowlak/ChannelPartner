@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Edere akwụkwọ",
-    "pending": "Na-echere"
+    "pending": "Na-echere",
+    "status": {
+      "CONFIRMED": "Edere akwụkwọ",
+      "CANCELLED": "Kagbuo ntinye akwụkwọ"
+    }
   },
   "assign": {
     "unassigned": "Ekenyeghi ya",
@@ -58,7 +62,8 @@
   },
   "project": {
     "none": "Enweghị oru ngo (anaghị ezo aka)",
-    "notInList": "{{project}} (ọ bụghị na ndepụta oru ngo)"
+    "notInList": "{{project}} (ọ bụghị na ndepụta oru ngo)",
+    "protectionDays_other": "{{count}} - nchekwa ụbọchị"
   },
   "journey": {
     "customer": "Onye ahịa",
@@ -76,7 +81,14 @@
     "progressHistory": "Akụkọ ọganihu",
     "timesIn": "(oge na {{timezone}} )",
     "backToMyLeads": "Laghachi na ndu m",
-    "editLead": "Dezie ndu"
+    "editLead": "Dezie ndu",
+    "disputeBanner": "Onye mmekọ ọzọ arụrịtala ụka maka nwe onye ahịa a. Onye nchịkwa Leadrat na-enyocha ya - nchedo gị na-anọ ebe ahụ ruo mgbe ha kpebiri.",
+    "booking": "Ịnye akwụkwọ",
+    "commission": "Commission",
+    "notBooked": "Edebeghị akwụkwọ",
+    "cancelledOn": "Kagbuo na {{date}} .",
+    "cancelReason": "Ihe kpatara ya: {{reason}}",
+    "cancelledHint": "Onye na-ewu ụlọ akagbuola ntinye akwụkwọ ahụ - ikike ịrụ ọrụ alaghachitela gị ma kagbuo ntozu ọrụ. A na-eweghachi ya ma ọ bụrụ na edokwa ụzọ ọzọ."
   },
   "referral": {
     "NOT_REFERRED": "A naghị ezo aka (enweghị ọrụ)",
@@ -158,7 +170,17 @@
       "REFERRAL_ACCEPTED": "Onye nrụpụta nabatara ntụnye aka",
       "REFERRAL_REJECTED": "Onye nrụpụta jụrụ ntụnye aka. Ihe kpatara ya: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin weputara nchedo oyiri n'oge. Ihe kpatara ya: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin ekenyegharịrị ndebanye aha site na {{from}} gaa na {{to}} . Ihe kpatara ya: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin ekenyegharịrị ndebanye aha site na {{from}} gaa na {{to}} . Ihe kpatara ya: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ajụjụ mnwale ndebanye oyiri nke onye mmekọ ọzọ mere",
+      "BOOKING_CANCELLED": "Kagbuo ntinye akwụkwọ. Ihe kpatara ya: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Onye nwe ya laghachiri n'aka onye mmekọ",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "A kagbuo ntozu kọmishọna site na ntinye akwụkwọ ahụ",
+      "COMMISSION_ELIGIBILITY_RESTORED": "E weghachiri ntozu kọmishọna maka ntinye akwụkwọ ọhụrụ",
+      "OWNERSHIP_DISPUTE_RAISED": "Onye mmekọ ọzọ rụrụ ụka maka nwe onye ahịa a - onye nchịkwa Leadrat ga-enyocha ya",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Ewepụrụ esemokwu nwe na onye ahịa a - ikike gị agbanwebeghị",
+      "OWNERSHIP_DISPUTE_UPHELD": "A tụlere esemokwu nwe na onye ahịa a - ekwenyela na ikike gị nwere",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Debanye aha ka emechara esemokwu nwe gị maka ọdịmma gị. Mara: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Nchedo kwụsịrị: ekpebiri esemokwu nwe maka onye mmekọ ọzọ. Mara: {{note}}"
     }
   },
   "columnsPanel": {
@@ -182,5 +204,100 @@
     "INVALID_FOR_COUNTRY": "Nọmba ekwentị a abaghị uru maka {{country}} .",
     "COUNTRY_MISMATCH": "Biko họrọ koodu obodo ziri ezi.",
     "NOT_MOBILE": "Biko tinye nọmba ekwentị mkpanaaka, ọ bụghị akara ala."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Commission tozuru oke",
+      "PENDING": "Commission na-echere",
+      "CANCELLED": "Kọmishọna akagbuola"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Enyere gị aka",
+      "DISPUTED": "Esemokwu gbasara njiri mara"
+    }
+  },
+  "result": {
+    "none": "Enweghị nsonaazụ ndebanye ego iji gosi. Buru ụzọ deba aha ndu.",
+    "acceptedTitle": "Edebanye aha ndu",
+    "rejectedTitle": "Edebanyeghị aha ndu",
+    "protectionWindow": "Ohere nchekwa",
+    "protectedUntil": "Echebere ruo",
+    "openLead": "Mepee ụzọ",
+    "addAnother": "Tinye ndu ọzọ",
+    "duplicate": "oyiri - echedolarị",
+    "duplicateHint": "Edobelarị onye ahịa a maka ọrụ a site na ndebanye aha ọzọ, yabụ enweghị ike ịdebanye aha ya maka gị.",
+    "existingProtectedUntil": "echekwabara ndebanye aha dị adị ruo mgbe"
+  },
+  "disputes": {
+    "title": "Esemokwu m",
+    "intro": "Esemokwu Nwe nke ị welitere maka ndị ahịa jụrụ ka oyiri. Onye nchịkwa Leadrat na-enyocha nke ọ bụla.",
+    "empty": "Ị welibeghị esemokwu ọ bụla. Ọ bụrụ na ajụrụ onye ahịa ị butere dị ka oyiri, ị nwere ike ịgbagha ya site na nsonaazụ ndebanye aha.",
+    "columns": {
+      "dispute": "Esemokwu",
+      "reason": "Ihe kpatara gị",
+      "outcome": "Nsonaazụ"
+    },
+    "status": {
+      "OPEN": "N'okpuru nyocha",
+      "UPHELD": "Ọ bụghị maka ihu ọma gị",
+      "OVERTURNED": "Kpebie na ihu ọma gị",
+      "WITHDRAWN": "ewepụrụ"
+    },
+    "awaitingReview": "Na-eche nlele nchịkwa",
+    "openNewLead": "Mepee ụzọ gị {{id}}",
+    "withdraw": "Wepụ",
+    "withdrawConfirm": "Wepụ esemokwu gị maka {{name}} ? Ihe nwe ugbu a ka ọ dị.",
+    "raise": "nwe esemokwu",
+    "raiseTitle": "nwe esemokwu",
+    "raiseHint": "Ọ bụrụ na onye ahịa a bịara na mbụ, kọwaa ihe kpatara ya. Onye nchịkwa Leadrat ga-enyocha ya; ọ bụrụ na ha ekpebie n'ọdịmma gị, a ga-edebanye aha ndu ahụ maka gị.",
+    "reasonLabel": "Gịnị kpatara onye ahịa a ji bụrụ nke gị?",
+    "reasonMin_other": "Opekempe {{count}} mkpụrụedemede.",
+    "submit": "Zipụ esemokwu",
+    "notProtected": "Ọ dịghị onye na-echebe ndị ahịa a maka ọrụ a ọzọ - ị nwere ike ịdebanye aha ndị ndu ugbu a.",
+    "raised": "Esemokwu {{id}} ezitere maka nyocha.",
+    "viewAll": "Lelee esemokwu m"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Oge",
+    "lastDays_other": "{{count}} ụbọchị",
+    "emptyTitle": "Nnọọ! Ị nwebeghị ndị ndu ma.",
+    "emptyHint": "Debanye aha ụzọ mbụ gị - pipeline gị, ntinye akwụkwọ na oge nchebe ga-apụta ebe a.",
+    "tiles": {
+      "leads": "Mgbakọta eduga",
+      "newInPeriod_other": "{{count}} ọhụrụ n'ime oge a",
+      "accepted": "anabatara",
+      "booked": "Edere akwụkwọ",
+      "bookedInPeriod_other": "Edere akwụkwọ {{count}} n'ime oge a",
+      "conversion": "Ntughari",
+      "conversionHint": "Nduzi agbadoro dị ka òkè nke ndị ndu anabatara",
+      "protectedNow": "Echekwara ugbu a",
+      "expiringSoon_other": "Nchedo na-agwụ n'ime ụbọchị {{count}}",
+      "disputedNow": "Ndị ọzọ na-arụrịta ụka",
+      "disputedNowHint": "Ndị ndu gị nwere esemokwu nwe mepere emepe sitere n'aka onye mmekọ ọzọ",
+      "commissionEligible": "Commission tozuru oke",
+      "commissionCancelled_other": "{{count}} akagbuola"
+    },
+    "chart": {
+      "title_other": "Ndebanye aha na ntinye akwụkwọ kwa ụbọchị - ụbọchị {{count}} ikpeazụ",
+      "registrations": "Ndebanye aha",
+      "bookings": "Ntinye akwụkwọ"
+    },
+    "byStage": "Na-eduga site na ọkwa",
+    "bySource": "Na-edu site na isi iyi",
+    "byReferral": "Na-eduga site na ọkwa ntụnye aka",
+    "myDisputes": "Esemokwu ị welitere",
+    "noDisputes": "Enweghị esemokwu ewelitere.",
+    "unknown": "Edobeghị",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Mpụga CRM (simulated)",
+      "PARTNER_CRM": "Ndị otu gị gbakwunyere",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Njikọta",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_other": "Nchedo na-ekubi ume n'ime ụbọchị {{count}} na-abịa",
+    "expiringEmpty": "Ọ dịghị ụzọ na-atụfu nchebe ya na windo a."
   }
 }

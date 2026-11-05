@@ -6,7 +6,7 @@ import MenuButton, { NavBackdrop, useNavDrawer } from '../components/MenuButton'
 import ThemeSelect from '../components/ThemeSelect';
 import { rememberLanguage } from '../i18n/language';
 import { isSupportedLocale } from '../i18n/locales';
-import { clearBuilderSession, getBuilderMe, getBuilderSession, updateBuilderMe, updateBuilderSessionUser } from './builderClient';
+import { builderLogout, clearBuilderSession, getBuilderMe, getBuilderSession, updateBuilderMe, updateBuilderSessionUser } from './builderClient';
 import BuilderLogin from './BuilderLogin';
 import BuilderReferrals from './BuilderReferrals';
 import BuilderReferral from './BuilderReferral';
@@ -48,7 +48,10 @@ export default function BuilderApp() {
     updateBuilderMe({ language: code }).catch(() => {});
   };
 
+  // Revoke the token server-side as well; failures are ignored.
   const logout = () => {
+    const token = localStorage.getItem('builderToken');
+    if (token) builderLogout(token).catch(() => {});
     clearBuilderSession();
     navigate('/builder/login');
   };

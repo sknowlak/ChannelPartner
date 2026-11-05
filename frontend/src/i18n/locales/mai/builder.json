@@ -30,7 +30,8 @@
       "registered": "पंजीकृत"
     },
     "booked": "बुक कएल गेल",
-    "empty": "एखन धरि कोनो रेफरल नहि।"
+    "empty": "एखन धरि कोनो रेफरल नहि।",
+    "bookingCancelled": "बुकिंग रद्द भ गेल"
   },
   "detail": {
     "customer": "ग्राहक",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "बुकिंग पुष्टि भेल।",
       "accepted": "रेफरल स्वीकार कयल गेल।",
-      "rejected": "रेफरल खारिज क देल गेल।"
+      "rejected": "रेफरल खारिज क देल गेल।",
+      "bookingCancelled": "बुकिंग रद्द।"
     },
-    "backToReferrals": "रेफरल पर वापस जाएँ"
+    "backToReferrals": "रेफरल पर वापस जाएँ",
+    "bookingCancelled": "बुकिंग रद्द भ गेल",
+    "cancelBooking": "बुकिंग रद्द करू",
+    "cancelReasonLabel": "रद्द करबाक कारण (साथी केँ देखाओल गेल) *",
+    "cancelBookingHint": "परिचालन स्वामित्व वापस भागीदार कें पास भ जायत छै आ ओकर कमीशन कें पात्रता रद्द भ जायत छै. बाद मे फेर सं लीड बुक कएल जा सकैत अछि.",
+    "cancelBookingConfirm": "बुकिंग रद्द करू"
   },
   "history": {
     "title": "इतिहास",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "आयोग के पात्रता सृजित",
       "HANDOVER_COMPLETED": "हस्तान्तरण पूरा",
       "ADMIN_PROTECTION_RELEASED": "एडमिन डुप्लिकेट प्रोटेक्शन जल्दी जारी क देलक। कारण: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "व्यवस्थापक पंजीकरण केँ {{from}} सँ {{to}} मे पुनः नियुक्त केलक. कारण: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "व्यवस्थापक पंजीकरण केँ {{from}} सँ {{to}} मे पुनः नियुक्त केलक. कारण: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "दोसर पार्टनर द्वारा डुप्लिकेट रजिस्ट्रेशन क प्रयास खारिज क देल गेल",
+      "BOOKING_CANCELLED": "बुकिंग रद्द। कारण: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "परिचालन स्वामित्व साझेदार पर वापस आबि गेल",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "बुकिंग के साथ कमीशन के पात्रता रद्द",
+      "COMMISSION_ELIGIBILITY_RESTORED": "नव बुकिंग के लेल आयोग के पात्रता बहाल"
     }
   }
 }

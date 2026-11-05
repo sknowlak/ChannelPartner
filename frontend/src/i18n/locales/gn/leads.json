@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Ojerreserva",
-    "pending": "Oha'arõva"
+    "pending": "Oha'arõva",
+    "status": {
+      "CONFIRMED": "Ojerreserva",
+      "CANCELLED": "Reserva oñemboyke"
+    }
   },
   "assign": {
     "unassigned": "Noñeasignaiva’ekue",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Ndaipóri gueteri proyecto (noñembohasái) .",
-    "notInList": "{{project}} (ndaipóri proyecto lista-pe)"
+    "notInList": "{{project}} (ndaipóri proyecto lista-pe)",
+    "protectionDays_one": "{{count}} -ára ñeñangareko",
+    "protectionDays_other": "{{count}} -ára ñeñangareko"
   },
   "journey": {
     "customer": "Ñemuhára",
@@ -76,7 +82,14 @@
     "progressHistory": "Tembiasakue Progreso rehegua",
     "timesIn": "(aravo oĩva {{timezone}} -pe )",
     "backToMyLeads": "Ojevy Che Liderazgo-pe",
-    "editLead": "Editar Plomo rehegua"
+    "editLead": "Editar Plomo rehegua",
+    "disputeBanner": "Ambue socio odisputa propiedad ko cliente rehe. Peteĩ Leadrat admin ohesa’ỹijo hína - ne protección opyta hendaitépe odesidi peve hikuái.",
+    "booking": "Reserva rehegua",
+    "commission": "Aty motendeha",
+    "notBooked": "Ndojejapói reservado",
+    "cancelledOn": "Oñembogue {{date}} -pe.",
+    "cancelReason": "Motivo: {{reason}}",
+    "cancelledHint": "Pe constructor omboyke reserva - propiedad operativa ou jey nendive ha oñemboyke elegibilidad comisión-pe. Oñemoĩ jey ojerreserva jeýramo pe plomo."
   },
   "referral": {
     "NOT_REFERRED": "Noñembohasái (ndaipóri proyecto) .",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Constructor oasepta pe referencia",
       "REFERRAL_REJECTED": "Constructor ombotove referencia. Motivo: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin oguenohẽ protección duplicada iñepyrũrã. Motivo: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin oasigna jey registro {{from}} guive {{to}} peve. Motivo: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin oasigna jey registro {{from}} guive {{to}} peve. Motivo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Oñembotove intento de registro duplicado ambue socio",
+      "BOOKING_CANCELLED": "Reserva oñemboyke. Motivo: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Propiedad operativa ojevy socio-pe",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Elegibilidad Comisión-pe oñemboykéva reserva ndive",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Elegibilidad Comisión-pe oñemoî jey reserva pyahúpe guarã",
+      "OWNERSHIP_DISPUTE_RAISED": "Ambue socio odisputa propiedad ko cliente - peteî admin Leadrat ohesa'ÿijóta",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Ojeretira pe disputa propiedad rehegua ko cliente rehe - nde propiedad noñemoambuéi",
+      "OWNERSHIP_DISPUTE_UPHELD": "Ojehecha jey pe disputa propiedad rehegua ko cliente rehe - oñemoañete nde propiedad",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Ojeregistra ojedesidi rire nde favor-pe nde disputa de propiedad. Ñe’ẽñemi: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Oñemohu'ã protección: ojedesidi peteî disputa de propiedad ambue socio favor-pe. Ñe’ẽñemi: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Ko teléfono número ndojeporúi {{country}} -pe g̃uarã.",
     "COUNTRY_MISMATCH": "Eiporavo tetã kódigo hekopete.",
     "NOT_MOBILE": "Emoinge peteĩ número móvil, ndaha’éi peteĩ teléfono fijo."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Comisión-pe oîva eligible",
+      "PENDING": "Comisión pendiente",
+      "CANCELLED": "Comisión oñemboyke"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Ojeatribui ndéve",
+      "DISPUTED": "Atribución ojedisputa"
+    }
+  },
+  "result": {
+    "none": "Ndaipóri resultado inscripción ohechauka haguã. Eregistra raẽ peteĩ plomo.",
+    "acceptedTitle": "Plomo ojeregistráva",
+    "rejectedTitle": "Plomo ndojeregistráiva",
+    "protectionWindow": "Ventana Ñangareko rehegua",
+    "protectedUntil": "Oñangarekóva Peve",
+    "openLead": "Plomo Abierto rehegua",
+    "addAnother": "Oñemoĩve Ambue Plomo",
+    "duplicate": "Duplicado - oñeñangarekóma",
+    "duplicateHint": "Ko cliente oñeñangarekóma ko proyecto-pe g̃uarã ambue registro rupive, upévare ndaikatúi oñeinskrivi ndéve g̃uarã.",
+    "existingProtectedUntil": "Inscripción oîva oñeñangarekóva peve"
+  },
+  "disputes": {
+    "title": "Che Disputakuéra",
+    "intro": "Umi disputa propiedad rehegua pemopu’ãva’ekue cliente-kuérape ĝuarã oñembotovéva duplicado ramo. Peteĩ Leadrat admin ohesa’ỹijo peteĩteĩ.",
+    "empty": "Nde neremopu'ãi mba'eveichagua ñorairõ. Oñembotovéramo peteî cliente reguerúva duplicado ramo, ikatu odisputa resultado de registro-gui.",
+    "columns": {
+      "dispute": "Ñorãirõ",
+      "reason": "Nde razón",
+      "outcome": "Sẽ"
+    },
+    "status": {
+      "OPEN": "Ojehechávo",
+      "UPHELD": "Ndaha'éi nde favor-pe",
+      "OVERTURNED": "Ojedesidi nde favor-pe",
+      "WITHDRAWN": "Ojeretira"
+    },
+    "awaitingReview": "Oha'ãrõvo admin revisión",
+    "openNewLead": "Eipe'a nde rape {{id}}",
+    "withdraw": "Pe'a",
+    "withdrawConfirm": "Eipe'a nde ñorairõ {{name}} rehe ? Pe propiedad ko'ágãgua opyta oîháicha.",
+    "raise": "Disputa propiedad rehegua",
+    "raiseTitle": "Disputa propiedad rehegua",
+    "raiseHint": "Oiméramo ou raẽ ndéve ko kliénte, emombeʼu mbaʼérepa. Peteĩ Leadrat admin ohesa’ỹijóta; odesidíramo hikuái nde favor-pe, pe plomo ojeregistra ndéve g̃uarã.",
+    "reasonLabel": "Mba'ére piko ko cliente nde mba'e?",
+    "reasonMin_one": "Por lo menos {{count}} karameg̃ua.",
+    "reasonMin_other": "Por lo menos {{count}} karameg̃ua.",
+    "submit": "Omondo Disputa rehegua",
+    "notProtected": "Avave ndoguerekovéima protección ko cliente rehe ko proyecto-pe guarã - ikatu reregistra plomo ko'ágã.",
+    "raised": "Ñembohovái {{id}} oñemondova’ekue ojehecha jey hag̃ua.",
+    "viewAll": "Ehecha che disputakuéra"
+  },
+  "dashboard": {
+    "title": "Tabla de mando",
+    "period": "Arapa'ũ",
+    "lastDays_one": "{{count}} ára",
+    "lastDays_other": "{{count}} ára",
+    "emptyTitle": "Tapeg̃uahẽporãite! Ndereguerekói gueteri pista.",
+    "emptyHint": "Eregistra nde primer lead - nde pipeline, reserva ha protección plazo ojehechaukáta ko’ápe.",
+    "tiles": {
+      "leads": "Total umi plomo",
+      "newInPeriod_one": "{{count}} pyahu ko periodo-pe",
+      "newInPeriod_other": "{{count}} pyahu ko periodo-pe",
+      "accepted": "Ojeacepta",
+      "booked": "Ojerreserva",
+      "bookedInPeriod_one": "{{count}} ojereserva ko periodo-pe",
+      "bookedInPeriod_other": "{{count}} ojereserva ko periodo-pe",
+      "conversion": "Conversión rehegua",
+      "conversionHint": "Umi leads reservado peteĩ parte ramo umi leads ojeaceptávagui",
+      "protectedNow": "Oñeñangarekóva ko'ágã",
+      "expiringSoon_one": "Ñangareko oñemohu’ãva {{count}} ára",
+      "expiringSoon_other": "Ñangareko oñemohu’ãva {{count}} ára",
+      "disputedNow": "Odisputáva ambue tapicha",
+      "disputedNowHint": "Nde liderazgo peteĩ disputa de propiedad abierto reheve ambue socio-gui",
+      "commissionEligible": "Comisión-pe oîva eligible",
+      "commissionCancelled_one": "{{count}} oñembogue",
+      "commissionCancelled_other": "{{count}} oñembogue"
+    },
+    "chart": {
+      "title_one": "Inscripción ha reserva por día - ára paha {{count}}",
+      "title_other": "Umi inscripción ha reserva peteĩ árape - {{count}} ára paha",
+      "registrations": "Umi inscripción rehegua",
+      "bookings": "Reservas rehegua"
+    },
+    "byStage": "Omotenonde estatus rupive",
+    "bySource": "Omotenonde fuente rupive",
+    "byReferral": "Omotenonde estado de referencia rupive",
+    "myDisputes": "Disputa peẽ pemopu’ãva’ekue",
+    "noDisputes": "Ndaipóri disputa oñemopu'ãva.",
+    "unknown": "Noñemoĩri",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM okapegua (simulado) .",
+      "PARTNER_CRM": "Ombojoapýva nde equipo",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integración rehegua",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Ñangareko oñemohu’ãva ára oúvape {{count}}",
+    "expiringTitle_other": "Ñangareko oñemohu’ãva ára oúvape {{count}}",
+    "expiringEmpty": "Ndaipóri plomo operde iprotección ko ventána-pe."
   }
 }

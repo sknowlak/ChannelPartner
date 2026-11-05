@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "बुक केल्लें",
-    "pending": "अनिर्णित"
+    "pending": "अनिर्णित",
+    "status": {
+      "CONFIRMED": "बुक केल्लें",
+      "CANCELLED": "बुकींग रद्द जालें"
+    }
   },
   "assign": {
     "unassigned": "असाइन केल्लें ना",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "अजून प्रकल्प ना (संदर्भीत ना)",
-    "notInList": "{{project}} (प्रकल्प वळेरेंत ना)"
+    "notInList": "{{project}} (प्रकल्प वळेरेंत ना)",
+    "protectionDays_one": "{{count}} -दिसाची राखण",
+    "protectionDays_other": "{{count}} -दिसाची राखण"
   },
   "journey": {
     "customer": "गिरायक",
@@ -76,7 +82,14 @@
     "progressHistory": "प्रगतीचो इतिहास",
     "timesIn": "( {{timezone}} मदले वेळ )",
     "backToMyLeads": "परत माझ्या लीड्स कडेन",
-    "editLead": "लीड संपादीत करचें"
+    "editLead": "लीड संपादीत करचें",
+    "disputeBanner": "दुसर् या भागीदारान ह्या गिरायकाचे मालकीचेर वाद घाला. एक Leadrat एडमिन ताचो नियाळ घेता - ते निर्णय घेतले मेरेन तुमची संरक्षण जाग्यार उरता.",
+    "booking": "बुकींग करप",
+    "commission": "कमीशन",
+    "notBooked": "बुकिंग जावंक ना",
+    "cancelledOn": "{{date}} दिसा रद्द केलां.",
+    "cancelReason": "कारण: {{reason}}",
+    "cancelledHint": "बिल्डरान बुकींग रद्द केलें - ऑपरेशनल मालकी तुमचे कडेन परतून आयल्या आनी कमिशनाची पात्रताय रद्द जाल्या. परतून लीड बुक केल्यार ती परतून मेळटा."
   },
   "referral": {
     "NOT_REFERRED": "संदर्भित ना (प्रकल्प ना)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "बिल्डरान रेफरल मान्य केलो",
       "REFERRAL_REJECTED": "बिल्डरान रेफरल न्हयकारलो. कारण: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "एडमिनान डुप्लीकेट संरक्षण बेगीन सोडलें. कारण: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "प्रशासकान {{from}} कडल्यान {{to}} कडेन नोंदणी परतून नेमली. कारण: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "प्रशासकान {{from}} कडल्यान {{to}} कडेन नोंदणी परतून नेमली. कारण: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "दुसऱ्या भागीदारान केल्लो डुप्लीकेट नोंदणी यत्न न्हयकारलो",
+      "BOOKING_CANCELLED": "बुकींग रद्द जालें. कारण: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "कार्यकारी मालकी भागीदाराक परतून मेळ्ळी",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "बुकींग वांगडा आयोगाची पात्रताय रद्द",
+      "COMMISSION_ELIGIBILITY_RESTORED": "नव्या बुकींगा खातीर आयोगाची पात्रताय परतून मेळ्ळी",
+      "OWNERSHIP_DISPUTE_RAISED": "आन्येक भागीदारान ह्या गिरायकाच्या मालकीचेर वाद घालो - एक Leadrat एडमिन ताचो नियाळ घेतलो",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "ह्या गिरायकाचेर आशिल्लो मालकी वाद फाटीं घेतलो - तुमची मालकी बदलूंक ना",
+      "OWNERSHIP_DISPUTE_UPHELD": "ह्या गिरायकाचेर आशिल्ल्या मालकी वादाची नियाळ घेतली - तुमची मालकी पुष्टी जाल्या",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "तुमच्या मालकी वादाचेर तुमच्या फायद्या खातीर निर्णय जाले उपरांत नोंदणी केल्ली. टिप: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "संरक्षण सोंपलें: मालकीचो वाद दुसऱ्या भागीदाराच्या फायद्या खातीर थारायलो. टिप: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "हो फोन क्रमांक {{country}} खातीर वैध ना.",
     "COUNTRY_MISMATCH": "उपकार करून योग्य देश कोड निवडात.",
     "NOT_MOBILE": "उपकार करून लॅंडलायन न्हय तर मोबायल नंबर घालचो."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "आयोगाक पात्र",
+      "PENDING": "आयोग प्रलंबीत आसा",
+      "CANCELLED": "आयोग रद्द केलो"
+    },
+    "attribution": {
+      "ATTRIBUTED": "तुमकां आश्रित केल्लें",
+      "DISPUTED": "एट्रिब्यूशन वादग्रस्त"
+    }
+  },
+  "result": {
+    "none": "नोंदणीचो निकाल दाखोवपाक ना. पयलीं एक लीड नोंद करात.",
+    "acceptedTitle": "शिंशें नोंदणी केल्ली",
+    "rejectedTitle": "शिंशें नोंद जावंक ना",
+    "protectionWindow": "संरक्षण विंडो",
+    "protectedUntil": "संरक्षित जो मेरेन",
+    "openLead": "उक्ते शिंशें",
+    "addAnother": "आनीक एक शिंशें घालचें",
+    "duplicate": "डुप्लीकेट - पयलींच संरक्षित",
+    "duplicateHint": "हो गिरायक ह्या प्रकल्पा खातीर पयलींच दुसऱ्या नोंदणी वरवीं संरक्षित आसा, देखून तो तुमचे खातीर नोंदणी करूंक शकलो ना.",
+    "existingProtectedUntil": "सद्याची नोंदणी संरक्षित केल्या मेरेन"
+  },
+  "disputes": {
+    "title": "म्हजे वाद",
+    "intro": "तुमी गिरायकां खातीर उबारलेले मालकी वाद जे डुप्लीकेट म्हणून न्हयकारले. एक Leadrat एडमिन दरेकल्याचो नियाळ घेता.",
+    "empty": "तुमी कसलेच वाद मांडले नात. तुमी हाडिल्ल्या गिरायकाक डुप्लीकेट म्हणून न्हयकार दिलो जाल्यार नोंदणी निकालांतल्यान तुमी ताचेर वाद घालूंक शकतात.",
+    "columns": {
+      "dispute": "किजील",
+      "reason": "तुमचें कारण",
+      "outcome": "निष्पत्ती"
+    },
+    "status": {
+      "OPEN": "नियाळांत आसा",
+      "UPHELD": "तुमच्या फायद्याक न्हय",
+      "OVERTURNED": "तुमच्या फायद्याक थारायलें",
+      "WITHDRAWN": "फाटीं घेतिल्लें"
+    },
+    "awaitingReview": "एडमिन रिव्युची वाट पळयतात",
+    "openNewLead": "तुमची लीड उगडात {{id}}",
+    "withdraw": "काडप",
+    "withdrawConfirm": "{{name}} खातीर तुमचो वाद फाटीं घेवचो ? सद्याची मालकी आसा तशीच उरता.",
+    "raise": "वाद मालकी",
+    "raiseTitle": "वाद मालकी",
+    "raiseHint": "हो गिरायक पयलीं तुमचे कडेन आयलो जाल्यार कित्याक तें सांगात. एक Leadrat एडमिन ताचो नियाळ घेतलो; तांणी तुमच्या फायद्या खातीर थारायल्यार लीड तुमचे खातीर नोंद जाता.",
+    "reasonLabel": "हो गिरायक तुमचो कित्याक?",
+    "reasonMin_one": "उण्यांत उणें {{count}} अक्षर.",
+    "reasonMin_other": "उण्यांत उणें {{count}} अक्षरां.",
+    "submit": "वाद धाडप",
+    "notProtected": "ह्या प्रकल्पा खातीर ह्या गिरायकाचेर आतां कोणूच संरक्षण दवरना - तुमी आतां लीड नोंद करूंक शकतात.",
+    "raised": "वाद {{id}} पुनरावलोकना खातीर धाडला.",
+    "viewAll": "म्हजे वाद पळयात"
+  },
+  "dashboard": {
+    "title": "डॅशबोर्ड",
+    "period": "कालावधी",
+    "lastDays_one": "{{count}} दीस",
+    "lastDays_other": "{{count}} दीस",
+    "emptyTitle": "येवकार! तुमकां अजून लीड्स नात.",
+    "emptyHint": "तुमची पयली लीड नोंद करात - तुमची पायपलायन, बुकींग आनी संरक्षण मुजतवाड हांगा दाखयतले.",
+    "tiles": {
+      "leads": "एकूण लीड्स",
+      "newInPeriod_one": "{{count}} ह्या काळांत नवें",
+      "newInPeriod_other": "{{count}} ह्या काळांत नवें",
+      "accepted": "मान्य केलें",
+      "booked": "बुक केल्लें",
+      "bookedInPeriod_one": "{{count}} ह्या काळांत बुकिंग केलां",
+      "bookedInPeriod_other": "{{count}} ह्या काळांत बुकिंग केलां",
+      "conversion": "धर्मांतर करप",
+      "conversionHint": "मान्य केल्ल्या लीडांचो वाटो म्हूण बुक केल्लीं लीड्स",
+      "protectedNow": "आतां संरक्षित जालां",
+      "expiringSoon_one": "{{count}} दिसा सोंपपी संरक्षण",
+      "expiringSoon_other": "{{count}} दिसांनी सोंपपी संरक्षण",
+      "disputedNow": "हेरां कडल्यान वादग्रस्त",
+      "disputedNowHint": "दुसर् या भागीदाराकडल्यान उक्त्या मालकी वादासयत तुमचे लीड",
+      "commissionEligible": "आयोगाक पात्र",
+      "commissionCancelled_one": "{{count}} रद्द केलां",
+      "commissionCancelled_other": "{{count}} रद्द केलां"
+    },
+    "chart": {
+      "title_one": "दर दिसा नोंदणी आनी बुकींग - निमाणो {{count}} दीस",
+      "title_other": "दर दिसा नोंदणी आनी बुकींग - निमाणे {{count}} दीस",
+      "registrations": "नोंदणी करप",
+      "bookings": "बुकींग करप"
+    },
+    "byStage": "दर्ज्या प्रमाण फुडाकार घेता",
+    "bySource": "स्रोता प्रमाण फुडाकार घेता",
+    "byReferral": "रेफरल स्थिती प्रमाण फुडाकार घेता",
+    "myDisputes": "तुमी मांडलेले वाद",
+    "noDisputes": "कसलेच वाद उक्तायले नात.",
+    "unknown": "सेट केल्लें ना",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "बाह्य CRM (सिमुलेटेड) 1.1.",
+      "PARTNER_CRM": "तुमच्या पंगडान जोडलां",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "एकात्मता",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "फुडल्या {{count}} दिसा संरक्षण कालबाह्य जाता",
+    "expiringTitle_other": "फुडल्या {{count}} दिसांनी संरक्षण कालबाह्य जाता",
+    "expiringEmpty": "ह्या जनेला वयल्यान खंयचोच शिंशें आपली राखण सोडना."
   }
 }

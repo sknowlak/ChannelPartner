@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Ua papa'ihia",
-    "pending": "Tāʻei"
+    "pending": "Tāʻei",
+    "status": {
+      "CONFIRMED": "Ua papa'ihia",
+      "CANCELLED": "Ua faaorehia te buka"
+    }
   },
   "assign": {
     "unassigned": "Aita i faataahia",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Aita e opuaraa (aita i faahitihia)",
-    "notInList": "{{project}} (aita i roto i te tabula o te opuaraa)"
+    "notInList": "{{project}} (aita i roto i te tabula o te opuaraa)",
+    "protectionDays_one": "{{count}} -mahana parururaa",
+    "protectionDays_other": "{{count}} -mahana parururaa"
   },
   "journey": {
     "customer": "Fanaua",
@@ -76,7 +82,14 @@
     "progressHistory": "Aamu no te haereraa i mua",
     "timesIn": "(te mau taime i roto i {{timezone}} )",
     "backToMyLeads": "Ho'i i to'u mau arata'iraa",
-    "editLead": "Whakatika i te Lead"
+    "editLead": "Whakatika i te Lead",
+    "disputeBanner": "Ua mârô te tahi atu hoa no nia i te fatu o teie taata hoo. E hi'opo'a te hoê faatere Leadrat i te reira, e vai noa to outou parururaa e tae roa'tu i te taime ua faaoti ratou.",
+    "booking": "Te buka",
+    "commission": "Ture",
+    "notBooked": "Aita i buka",
+    "cancelledOn": "Ua faaorehia i te {{date}} .",
+    "cancelReason": "Te tumu: {{reason}}",
+    "cancelledHint": "Ua faaore te taata patu fare i te buka, ua ho'i mai te ti'araa faatere ia outou, e ua faaorehia te ti'araa toro'a. E faaho'i-faahou-hia mai te peu e e buka faahou te aratairaa."
   },
   "referral": {
     "NOT_REFERRED": "Aita i faahitihia (aita hoê opuaraa)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Ua farii te taata patu i te tonoraa",
       "REFERRAL_REJECTED": "Ua patoi te taata patu i te reira. Te tumu: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Ua faaite oioi o Admin i na parururaa taa ê. Te tumu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Ua faaho'i-faahou-hia mai {{from}} e tae atu i {{to}} . Te tumu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Ua faaho'i-faahou-hia mai {{from}} e tae atu i {{to}} . Te tumu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ua patoihia te hoê tamataraa taa ê a te tahi atu hoa no te papai i te i'oa",
+      "BOOKING_CANCELLED": "Ua faaorehia te buka. Te tumu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ua faaho'i-faahou-hia mai te ti'araa faatere i te hoa",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ua faaorehia te ti'araa tomite na roto i te buka",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ua faaho'i-faahou-hia mai te ti'araa o te tomite no te buka apî",
+      "OWNERSHIP_DISPUTE_RAISED": "E hi'opo'a te tahi atu hoa no ni'a i te fatu o teie taata hoo, e hi'opo'a te hoê taata faatere Leadrat",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Ua faaorehia te aimârôraa no ni'a i teie taata hoo, e aita to outou ti'araa i taui",
+      "OWNERSHIP_DISPUTE_UPHELD": "Ua hi'opo'a-faahou-hia te aimârôraa no ni'a i teie taata hoo, e ua haapapûhia to outou ti'araa",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Ua papaihia te reira i muri a'e i to outou faaotiraahia to outou aimârôraa no nia i te faturaa. Faahanahana: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Ua hope te parururaa: ua faaotihia te hoê aimârôraa no nia i te fatu no te tahi atu hoa. Faahanahana: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Aita teie numera niuniu e tano no {{country}} .",
     "COUNTRY_MISMATCH": "A maiti na i te waehere fenua ti'a.",
     "NOT_MOBILE": "A tomo i te hoê niuniu afa'ifa'i, eiaha râ te hoê niuniu afa'ifa'i."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "E fariihia te tomite",
+      "PENDING": "Te tatari ra te tomite",
+      "CANCELLED": "Ua faaorehia te tomite"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Ua horo'ahia ia outou",
+      "DISPUTED": "Ua mârôhia te faahitiraa parau"
+    }
+  },
+  "result": {
+    "none": "Aita e faahopearaa no te papa'iraa. A papa'i na mua i te hoê arata'iraa.",
+    "acceptedTitle": "Ua papa'ihia te Lead",
+    "rejectedTitle": "Aita te Lead i tapa'ohia",
+    "protectionWindow": "Matapihi parururaa",
+    "protectedUntil": "Paruruhia e tae roa'tu i te",
+    "openLead": "A tatara i te Lead",
+    "addAnother": "Tāpiri i te tahi atu arata'iraa",
+    "duplicate": "Te tata'uraa - ua paruruhia a'ena",
+    "duplicateHint": "Ua paruru-a'ena-hia teie taata hoo no teie opuaraa na roto i te tahi atu faanahoraa, no reira eita ta te reira e nehenehe e haamanahia no outou.",
+    "existingProtectedUntil": "Ua paruruhia te mau faanahoraa e vai ra e tae roa ' tu i te"
+  },
+  "disputes": {
+    "title": "To'u mau aimârôraa",
+    "intro": "Te mau aimârôraa no nia i te faturaa o ta outou i faahiti no te feia hoo, o tei patoihia ei mau tata'uraa. E hi'opoa te hoê faatere Leadrat i te mau mea atoa.",
+    "empty": "Aita outou i faahiti i te mau aimârôraa. Mai te peu e e patoihia te hoê taata hoo tao'a ta outou i afai mai ei tata'uraa, e nehenehe outou e patoi i te reira na roto i te mau faahopearaa o te aamu.",
+    "columns": {
+      "dispute": "Fa'a'au'au",
+      "reason": "To outou tumu",
+      "outcome": "Fā'ahorara'a"
+    },
+    "status": {
+      "OPEN": "I raro a'e i te hi'opo'araa",
+      "UPHELD": "Eiaha no to oe maitai",
+      "OVERTURNED": "Ua faaotihia no to oe mana'o",
+      "WITHDRAWN": "Ua faaru'ehia"
+    },
+    "awaitingReview": "Te tatari ra i te hi'opo'araa admin",
+    "openNewLead": "A tatara i to outou arata'iraa {{id}}",
+    "withdraw": "Haʻatu",
+    "withdrawConfirm": "A faaore i ta outou aimârôraa no ni'a i {{name}} ? E vai noa te fatu i teie nei.",
+    "raise": "Te mana'o fatu",
+    "raiseTitle": "Te mana'o fatu",
+    "raiseHint": "A faataa na no te aha mai te peu e ua haere mai teie taata hoo ia outou na mua roa. E hi'opo'a te hoê taata faatere Leadrat i te reira; mai te mea e, e faaoti ratou i to outou mana'o, ua papa'ihia te arata'iraa no outou.",
+    "reasonLabel": "No te aha teie taata hoo?",
+    "reasonMin_one": "Te vahi iti a'e {{count}} .",
+    "reasonMin_other": "Te mau tapa'o {{count}} .",
+    "submit": "A tono i te aimârôraa",
+    "notProtected": "Eita roa'tu te hoê taata e paruru i teie taata hoo no teie opuaraa - e nehenehe ta outou e papa'i i te arata'iraa i teie nei.",
+    "raised": "Ua tonohia te aimârôraa {{id}} no te hi'opo'araa.",
+    "viewAll": "Hi'o i to'u mau aimârôraa"
+  },
+  "dashboard": {
+    "title": "Papa'i parau",
+    "period": "Taime",
+    "lastDays_one": "{{count}} mahana",
+    "lastDays_other": "{{count}} mahana",
+    "emptyTitle": "Manava! Aita â ta outou e arata'iraa.",
+    "emptyHint": "A papa'i i ta outou arata'iraa matamua - ta outou pipeline, ta outou mau buka, e ta outou mau taime hopea no te parururaa.",
+    "tiles": {
+      "leads": "Taato'araa o te mau arata'iraa",
+      "newInPeriod_one": "{{count}} apî i roto i teie tau",
+      "newInPeriod_other": "{{count}} apî i roto i teie tau",
+      "accepted": "Ua fariihia",
+      "booked": "Ua papa'ihia",
+      "bookedInPeriod_one": "{{count}} tei papa'ihia i roto i teie tau",
+      "bookedInPeriod_other": "{{count}} tei papa'ihia i roto i teie tau",
+      "conversion": "Faafariuraa",
+      "conversionHint": "Te mau arata'iraa i papa'ihia ei tuhaa no te mau arata'iraa i fariihia",
+      "protectedNow": "Ua paruruhia i teie nei",
+      "expiringSoon_one": "Te parururaa e hope i te {{count}} mahana",
+      "expiringSoon_other": "Te parururaa e hope i roto i te {{count}} mahana",
+      "disputedNow": "Ua tata'uhia e te tahi atu mau taata",
+      "disputedNowHint": "Te arata'i nei outou i te hoê aimârôraa no ni'a i te fatu no roto mai i te tahi atu hoa",
+      "commissionEligible": "E fariihia te tomite",
+      "commissionCancelled_one": "{{count}}",
+      "commissionCancelled_other": "{{count}}"
+    },
+    "chart": {
+      "title_one": "Te mau faanahoraa e te mau buka i te mahana hoê - te mahana hopea {{count}}",
+      "title_other": "Te mau faanahoraa e te mau buka i te mahana hoê - te mau mahana hopea {{count}}",
+      "registrations": "Te mau faanahoraa",
+      "bookings": "Te mau buka"
+    },
+    "byStage": "E arata'i na roto i te ti'araa",
+    "bySource": "E arata'i na roto i te puna",
+    "byReferral": "E arata'i na roto i te ti'araa tonoraa",
+    "myDisputes": "Te mau aimârôraa ta outou i faahiti",
+    "noDisputes": "Aita e aimârôraa i faahitihia.",
+    "unknown": "Aita i haamauhia",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM i vaho (faanahoraa)",
+      "PARTNER_CRM": "Ua amuihia'tu e to outou pŭpŭ",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Te taamuraa",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "E hope te parururaa i te mahana {{count}} i muri iho",
+    "expiringTitle_other": "E hope te parururaa i roto i te mau mahana {{count}} i muri iho",
+    "expiringEmpty": "I roto i teie matapihi, aita e mata e ere i to ' na parururaa."
   }
 }

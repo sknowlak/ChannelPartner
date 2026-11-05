@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "योग्य",
-    "PENDING": "फँसल"
+    "PENDING": "फँसल",
+    "CANCELLED": "रद्द कर दिहल गइल"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "डुप्लिकेट सुरक्षा जल्दी छोड़ दीं",
-    "REASSIGN_PARTNER": "दोसरा साथी के फेर से असाइन करीं"
+    "REASSIGN_PARTNER": "दोसरा साथी के फेर से असाइन करीं",
+    "CANCEL_BOOKING": "बुकिंग रद्द कर दीं"
   },
   "dataType": {
     "TEXT": "पाठ",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "सुपर एडमिन के बा",
     "ADMIN": "एडमिन के ह"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "पुष्टि हो गइल बा",
+    "CANCELLED": "रद्द कर दिहल गइल"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "श्रेय दिहल गइल बा",
+    "DISPUTED": "विवादित बा"
+  },
+  "disputeStatus": {
+    "OPEN": "खुला",
+    "UPHELD": "समर्थन कइल गइल",
+    "OVERTURNED": "पलट दिहल गइल",
+    "WITHDRAWN": "वापस ले लिहल गइल"
   }
 }

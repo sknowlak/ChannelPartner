@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Vyabutswe",
-    "pending": "Birarindiriye"
+    "pending": "Birarindiriye",
+    "status": {
+      "CONFIRMED": "Vyabutswe",
+      "CANCELLED": "Gusaba gusubirwamwo"
+    }
   },
   "assign": {
     "unassigned": "Ntiyashizweho",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Nta mugambi n'ubu (ntiwarungitswe)",
-    "notInList": "{{project}} (ntibiri ku rutonde rw'umugambi)"
+    "notInList": "{{project}} (ntibiri ku rutonde rw'umugambi)",
+    "protectionDays_one": "{{count}} -uburinzi bw'umunsi",
+    "protectionDays_other": "{{count}} -uburinzi bw'umunsi"
   },
   "journey": {
     "customer": "Umukiriya",
@@ -76,7 +82,14 @@
     "progressHistory": "Amateka y'iterambere",
     "timesIn": "(ibihe muri {{timezone}} )",
     "backToMyLeads": "Gusubira ku Burongozi bwanje",
-    "editLead": "Guhindura uburongozi"
+    "editLead": "Guhindura uburongozi",
+    "disputeBanner": "Uwundi mufatanyabikorwa yarahakanye ko ari we afise uwo mukiriya. Umuyobozi Leadrat ariko arabisubiramwo - uburinzi bwawe buragumaho gushika bafashe ingingo.",
+    "booking": "Gusaba",
+    "commission": "Komisiyo",
+    "notBooked": "Ntiyashizweho",
+    "cancelledOn": "Yasambutse ku {{date}} .",
+    "cancelReason": "Impamvu: {{reason}}",
+    "cancelledHint": "Uwuwubaka yarasubiyemwo ivy’ugusaba - uburenganzira bwo gukora buragarutse kuri wewe kandi uburenganzira bwo guhabwa komisiyo burasubirwamwo. Birasubirwamwo iyo umurongozi asubiye gufata."
   },
   "referral": {
     "NOT_REFERRED": "Ntiyarungitswe (nta mugambi)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Uwuwubaka yaremeye ko yoherezwa",
       "REFERRAL_REJECTED": "Builder yaranse iyo nzira. Impamvu: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin yasohoye uburinzi bubiri kare. Impamvu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Umuyobozi yasubiyemwo ukwandikisha kuva kuri {{from}} gushika kuri {{to}} . Impamvu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Umuyobozi yasubiyemwo ukwandikisha kuva kuri {{from}} gushika kuri {{to}} . Impamvu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Igerageza ry'ukwiyandikisha ry'uwundi mufatanyabikorwa ryaranse",
+      "BOOKING_CANCELLED": "Gusaba gutora vyasubitswe. Impamvu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ubutunzi bw'ibikorwa bwagarutse ku mufatanyabikorwa",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ukwemererwa kwa komisiyo kwasubitswe n'ugusaba",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ukwemererwa kwa komisiyo kwagarutse ku bijanye n'ugusaba gushasha",
+      "OWNERSHIP_DISPUTE_RAISED": "Uwundi mufatanyabikorwa yarahakanye ko ari we afise uwo mukiriya - umuyobozi Leadrat azobisuzuma",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Intambara y'ubunywanyi kuri uyu mukiriya yarakuweho - ubunywanyi bwawe ntibwahindutse",
+      "OWNERSHIP_DISPUTE_UPHELD": "Intambara y'ubunywanyi kuri uyu mukiriya yasubiwemwo - ubunywanyi bwawe buraremejwe",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Yandikishijwe inyuma y’aho impaka zawe z’ubutunzi ziciwe mu nyungu zawe. Iciyumviro: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Uburinzi bwarangiye: impaka z’ubutunzi zaciwe ku neza y’uwundi mufatanyabikorwa. Iciyumviro: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Iyi nimero ya telefone ntikora kuri {{country}} .",
     "COUNTRY_MISMATCH": "Urasabwa guhitamwo kode y'igihugu ibereye.",
     "NOT_MOBILE": "Urasabwa kwinjiza inomero ya telefone ngendanwa, ntushiremwo inomero yo mu nzu."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisiyo yemerewe",
+      "PENDING": "Komisiyo irindiriye",
+      "CANCELLED": "Komisiyo yasambutse"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Bishizwe kuri wewe",
+      "DISPUTED": "Ugushingira intahe biraharirwa"
+    }
+  },
+  "result": {
+    "none": "Nta gisubizo c’ukwiyandikisha co kwerekana. Ubanze wandike umurongozi.",
+    "acceptedTitle": "Uburongozi bwanditswe",
+    "rejectedTitle": "Lead ntiyandikishijwe",
+    "protectionWindow": "Idirisha ry'uburinzi",
+    "protectedUntil": "Ikingiwe gushika 2019.",
+    "openLead": "Gufungura Uburongozi",
+    "addAnother": "Kwongerako uwundi murongozi",
+    "duplicate": "Ivyisubiriza - vyaramaze kurindwa",
+    "duplicateHint": "Uyu mukiriya asanzwe akinzwe n’uyu mugambi n’iyindi nzira, rero ntiyashobora kwandikwa kuri wewe.",
+    "existingProtectedUntil": "Ukwandikisha kuriho kurindwa gushika 2019."
+  },
+  "disputes": {
+    "title": "Intambara zanje",
+    "intro": "Amatati y’ubutunzi mwavyuriye abakiriya yanse nk’ibisubizo. Umuyobozi Leadrat arasubiramwo kimwe cose.",
+    "empty": "Nta mpari mwavyuriye. Iyo umukiriya wazanye yanse nk’iyindi, urashobora kuyihakana uhereye ku ciyumviro c’iyandikisha.",
+    "columns": {
+      "dispute": "Amatati",
+      "reason": "Impamvu yawe",
+      "outcome": "Ingaruka"
+    },
+    "status": {
+      "OPEN": "Muri isuzuma",
+      "UPHELD": "Si mu neza yawe",
+      "OVERTURNED": "Yafashe ingingo mu neza yawe",
+      "WITHDRAWN": "Gukurwamwo"
+    },
+    "awaitingReview": "Ndindiriye isuzuma ry'umuyobozi",
+    "openNewLead": "Gufungura uburongozi bwawe {{id}}",
+    "withdraw": "Guhagarika",
+    "withdrawConfirm": "Gukuraho impaka yawe kubera {{name}} ? Ubuhinga buriho ubu buraguma uko buri.",
+    "raise": "Amatati y'ubunywanyi",
+    "raiseTitle": "Amatati y'ubunywanyi",
+    "raiseHint": "Nimba uwo mukiriya ari we yaje kuri wewe ubwa mbere, numusigurire igituma. Umuyobozi Leadrat azobisubiramwo; iyo bafashe ingingo igufasha, uburongozi burakwandikishwa.",
+    "reasonLabel": "Ni kuki uwo mukiriya ari uwawe?",
+    "reasonMin_one": "Nibura {{count}} ikimenyetso.",
+    "reasonMin_other": "Nibura {{count}} inyuguti.",
+    "submit": "Wohereze impaka",
+    "notProtected": "Nta n'umwe agifise uburinzi kuri uyu mukiriya kuri uyu mugambi - ushobora kwandika umurongozi ubu.",
+    "raised": "Intambara {{id}} yoherejwe kugira ngo isubirwemwo.",
+    "viewAll": "Raba impaka zanje"
+  },
+  "dashboard": {
+    "title": "Urubaho",
+    "period": "Ikiringo",
+    "lastDays_one": "{{count}} umusi",
+    "lastDays_other": "{{count}} imisi",
+    "emptyTitle": "Muratumiwe! Nta n’ivyo murongora mufise.",
+    "emptyHint": "Andika abarongozi bawe ba mbere - umurongo wawe, amasaha y’ugusaba n’ugukingirwa bizokwerekanwa hano.",
+    "tiles": {
+      "leads": "Igitigiri cose c'abarongoye",
+      "newInPeriod_one": "{{count}} nshasha muri iki gihe",
+      "newInPeriod_other": "{{count}} nshasha muri iki gihe",
+      "accepted": "Vyemerewe",
+      "booked": "Vyabutswe",
+      "bookedInPeriod_one": "{{count}} ryabitswe muri iki gihe",
+      "bookedInPeriod_other": "{{count}} ryabitswe muri iki gihe",
+      "conversion": "Guhinduka",
+      "conversionHint": "Abarongozi bashizweho nk'umugabane w'abarongozi bemerewe",
+      "protectedNow": "Irindwa ubu",
+      "expiringSoon_one": "Uburinzi burangira ku musi {{count}}",
+      "expiringSoon_other": "Uburinzi burangira mu {{count}} imisi",
+      "disputedNow": "Bihakanwa n'abandi",
+      "disputedNowHint": "Uburongozi bwawe n'impaka z'ubutunzi zivuye ku wundi mufatanije",
+      "commissionEligible": "Komisiyo yemerewe",
+      "commissionCancelled_one": "{{count}} ryasubiwemwo",
+      "commissionCancelled_other": "{{count}} ryasubiwemwo"
+    },
+    "chart": {
+      "title_one": "Ukwiyandikisha n'ugusaba ku musi - umusi wa nyuma {{count}}",
+      "title_other": "Ukwiyandikisha n'ugusaba ku musi - {{count}}",
+      "registrations": "Ukwiyandikisha",
+      "bookings": "Gusaba"
+    },
+    "byStage": "Kurongora hakurikijwe ikibanza",
+    "bySource": "Uburongozi n'inkomoko",
+    "byReferral": "Kurongora n'aho umuntu yoherezwa",
+    "myDisputes": "Amatati mwavyuriye",
+    "noDisputes": "Nta mpari zavyuwe.",
+    "unknown": "Ntiyashizweho",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM yo hanze (yigereranywa)",
+      "PARTNER_CRM": "Kwongerwa n'ikipe yawe",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Ubufatanye",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Uburinzi buzohera ku musi ukurikira {{count}}",
+    "expiringTitle_other": "Uburinzi buzohera mu {{count}} ikurikira",
+    "expiringEmpty": "Nta n’imwe itakaza uburinzi bwayo muri iri dirisha."
   }
 }

@@ -30,7 +30,8 @@
       "registered": "Kulembeska"
     },
     "booked": "Kusungika",
-    "empty": "Palije vyakutumizgika pa nyengo iyi."
+    "empty": "Palije vyakutumizgika pa nyengo iyi.",
+    "bookingCancelled": "Kusunga kwakanizgika"
   },
   "detail": {
     "customer": "Kasitomala",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Kusunga malo kwakhozgeka.",
       "accepted": "Kutumizgika kwazomerezgeka.",
-      "rejected": "Kutumizgika kukakanizgika."
+      "rejected": "Kutumizgika kukakanizgika.",
+      "bookingCancelled": "Kusunga buku kwakanizgika."
     },
-    "backToReferrals": "Kuwelera ku vyakutumizgika"
+    "backToReferrals": "Kuwelera ku vyakutumizgika",
+    "bookingCancelled": "Kusunga kwakanizgika",
+    "cancelBooking": "Kukanizga malo",
+    "cancelReasonLabel": "Chifukwa chakukanizgirako (kulongoreka kwa mnyako) *",
+    "cancelBookingHint": "Uŵenecho wakugwira ntchito ukuwelera kwa mnyake ndipo kuzomerezgeka kwawo kwa komishoni kukufumiskikapo. Lead yingalembekaso pamanyuma.",
+    "cancelBookingConfirm": "Kukankhira buku"
   },
   "history": {
     "title": "Mbiri",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kuzomerezgeka kwa komiti kwapangika",
       "HANDOVER_COMPLETED": "Kupeleka kwamalizgika",
       "ADMIN_PROTECTION_RELEASED": "Admin wakafumiska chitetezo chakukopera mwaluwiro. Chifukwa: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin wakagaŵiraso kulembeska kufuma ku {{from}} ku {{to}} . Chifukwa: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin wakagaŵiraso kulembeska kufuma ku {{from}} ku {{to}} . Chifukwa: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Kuyezga kulembeska kwakuwerezgawerezga kwa munyake kukakanizgika",
+      "BOOKING_CANCELLED": "Kusunga buku kwakanizgika. Chifukwa: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Uŵeneco wa ntchito wakawelera kwa munyake",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kuzomerezgeka kwa komiti kwafumiskikapo na kusunga malo",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kuzomerezgeka kwa komiti kwawezgeka kwa buku liphya"
     }
   }
 }

@@ -43,7 +43,9 @@
       "name": "Vārds",
       "city": "Pilsēta",
       "status": "Statuss",
-      "actions": "Darbības"
+      "actions": "Darbības",
+      "protection": "Dublēta aizsardzība",
+      "matchOn": "Dublikātu atbilstība ieslēgta"
     },
     "closeReferrals": "Aizveriet nodošanu",
     "reopen": "Atkārtoti atvērt",
@@ -55,6 +57,27 @@
       "add": "Pievienot projektu",
       "created": "Izveidots {{name}} ."
     },
-    "back": "Atpakaļ pie Builders"
+    "back": "Atpakaļ pie Builders",
+    "protection": {
+      "days_zero": "{{count}} dienas",
+      "days_one": "{{count}} diena",
+      "days_other": "{{count}} dienas",
+      "globalDays_zero": "Globālais noklusējuma ( {{count}} dienas)",
+      "globalDays_one": "Globālais noklusējuma ( {{count}} diena)",
+      "globalDays_other": "Globālais noklusējuma ( {{count}} dienas)",
+      "globalDefault": "Globālais noklusējums",
+      "placeholder": "Aizsardzības dienas (tukšs = globālais noklusējums)",
+      "saved": "Aizsardzības dublikāts atjaunināts vietnei {{name}} .",
+      "hint": "Dublēta aizsardzība: 1–3650 dienas vai atstājiet tukšu, lai izmantotu globālo noklusējuma iestatījumu sadaļā Iestatījumi. Izmaiņas attiecas tikai uz jaunām reģistrācijām – esošajām saglabā savu derīguma termiņu."
+    },
+    "matching": {
+      "global": "Globālais noklusējums",
+      "globalWith": "Globālais noklusējuma ( {{fields}} )",
+      "mobile": "Mobilā tālruņa numurs",
+      "email": "E-pasts",
+      "both": "Mobilā tālruņa numurs + e-pasts",
+      "saved": "Atbilstības dublikāts atjaunināts vietnei {{name}}",
+      "hint": "Kuras detaļas padara divas reģistrācijas vienam projektam klientam. Turpmāk izmaiņas attiecas uz dublētām pārbaudēm; esošā aizsardzība netiek ietekmēta."
+    }
   }
 }

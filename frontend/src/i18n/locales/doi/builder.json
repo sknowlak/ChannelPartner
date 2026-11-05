@@ -30,7 +30,8 @@
       "registered": "पंजीकृत कीता गेआ"
     },
     "booked": "बुक हो गया",
-    "empty": "अजे तक कोई रेफरल नहीं।"
+    "empty": "अजे तक कोई रेफरल नहीं।",
+    "bookingCancelled": "बुकिंग रद्द हो गई"
   },
   "detail": {
     "customer": "गाह्क",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "बुकिंग दी पुष्टि होई।",
       "accepted": "रेफरल स्वीकार कीता गेआ।",
-      "rejected": "रेफरल खारिज कर दित्ता गेआ।"
+      "rejected": "रेफरल खारिज कर दित्ता गेआ।",
+      "bookingCancelled": "बुकिंग रद्द हो गई।"
     },
-    "backToReferrals": "वापस रेफरल पर"
+    "backToReferrals": "वापस रेफरल पर",
+    "bookingCancelled": "बुकिंग रद्द हो गई",
+    "cancelBooking": "बुकिंग रद्द करो",
+    "cancelReasonLabel": "रद्द करने दा कारण (साथी गी दस्सेआ गेआ) *",
+    "cancelBookingHint": "परिचालन स्वामित्व साझेदार गी वापस चली जंदी ऐ ते उंदी कमीशन दी पात्रता रद्द करी दित्ती जंदी ऐ। लीड बाद च दुबारा बुक कीती जाई सकदी ऐ।",
+    "cancelBookingConfirm": "बुकिंग रद्द करो"
   },
   "history": {
     "title": "इतेहास",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "आयोग दी पात्रता पैदा कीती",
       "HANDOVER_COMPLETED": "हैंडओवर पूरा हो गया",
       "ADMIN_PROTECTION_RELEASED": "एडमिन ने डुप्लीकेट प्रोटेक्शन जल्दी जारी कर दित्ता। कारण: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "एडमिन ने रजिस्ट्रेशन गी {{from}} थमां {{to}} च दुबारा असाइन कीता। कारण: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "एडमिन ने रजिस्ट्रेशन गी {{from}} थमां {{to}} च दुबारा असाइन कीता। कारण: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "इक होर पार्टनर आसेआ डुप्लीकेट रजिस्ट्रेशन दी कोशश गी खारिज करी दित्ता गेआ",
+      "BOOKING_CANCELLED": "बुकिंग रद्द हो गई। कारण: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "परिचालन स्वामित्व साझेदार गी वापस आई गेई",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "बुकिंग कन्नै कमीशन दी पात्रता रद्द होई गेई",
+      "COMMISSION_ELIGIBILITY_RESTORED": "नमीं बुकिंग लेई कमीशन दी पात्रता बहाल होई गेई"
     }
   }
 }

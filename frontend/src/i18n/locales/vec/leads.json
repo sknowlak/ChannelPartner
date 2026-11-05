@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Prenotà",
-    "pending": "Drio spetar"
+    "pending": "Drio spetar",
+    "status": {
+      "CONFIRMED": "Prenotà",
+      "CANCELLED": "Prenotasion cancełada"
+    }
   },
   "assign": {
     "unassigned": "No assegnà",
@@ -58,7 +62,10 @@
   },
   "project": {
     "none": "Nessun progetto ancora (non riferito)",
-    "notInList": "{{project}} (no inte ła lista dei projeti)"
+    "notInList": "{{project}} (no inte ła lista dei projeti)",
+    "protectionDays_one": "{{count}} -protesion de dì",
+    "protectionDays_many": "{{count}} -protesion de dì",
+    "protectionDays_other": "{{count}} -protesion de dì"
   },
   "journey": {
     "customer": "Cliente",
@@ -76,7 +83,14 @@
     "progressHistory": "Storia del progreso",
     "timesIn": "(tempi in {{timezone}} )",
     "backToMyLeads": "Torna ai me leads",
-    "editLead": "Modifega el lead"
+    "editLead": "Modifega el lead",
+    "disputeBanner": "N’altro socio el ga contestà ła proprietà de sto cliente. Un aministrador Leadrat el xe drìo vardarlo - ła protesion ła resta in vigore fin che no i decide.",
+    "booking": "Prenotasion",
+    "commission": "Comission",
+    "notBooked": "No prenotà",
+    "cancelledOn": "Cancełà el {{date}} .",
+    "cancelReason": "Motivo: {{reason}}",
+    "cancelledHint": "El costrutor el ga cancełà ła prenotasion - ła proprietà operativa ła xe tornà co ti e ła idoneità pa ła comision ła xe cancełà. El vien restaurà se el piombo el vien prenotà da novo."
   },
   "referral": {
     "NOT_REFERRED": "No riferìo (no progeto)",
@@ -162,7 +176,17 @@
       "REFERRAL_ACCEPTED": "El costrutor el ga acetà el rinvio",
       "REFERRAL_REJECTED": "El costruttor el ga rifiutà el rinvio. Motivo: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "L’aministrador el ga rilascià in anticipo ła protesion dei dopi. Motivo: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "L’aministrador el ga riasegnà l’iscrision da {{from}} a {{to}} . Motivo: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "L’aministrador el ga riasegnà l’iscrision da {{from}} a {{to}} . Motivo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Un tentativo de registrasion dopio da parte de n’altro partner el xe stà rifiutà",
+      "BOOKING_CANCELLED": "Prenotasion cancełada. Motivo: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ła proprietà operativa ła xe tornà al socio",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Idoneità a ła comision cancełada co ła prenotasion",
+      "COMMISSION_ELIGIBILITY_RESTORED": "L’ełegibiłità a ła comision ła xe stà restaurà pa ła nova prenotasion",
+      "OWNERSHIP_DISPUTE_RAISED": "N’altro partner el ga contestà ła proprietà de sto cliente - un aministrador Leadrat el ło vardarà",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Ła disputa de proprietà de sto cliente ła xe stà ritirà - ła vostra proprietà no ła xe canbià",
+      "OWNERSHIP_DISPUTE_UPHELD": "Ła disputa de proprietà de sto cliente ła xe stà rivistà - ła vostra proprietà ła xe stà confermà",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Registrato dopo che ła vostra disputa de proprietà ła xe stà decixa in vostro favor. Nota: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Terminata la tutela: è stata decisa una disputa de proprietà a favore di un altro socio. Nota: {{note}}"
     }
   },
   "columnsPanel": {
@@ -186,5 +210,116 @@
     "INVALID_FOR_COUNTRY": "Sto nùmaro de tełefono no l'è vałido par {{country}} .",
     "COUNTRY_MISMATCH": "Selesiona el codice paexe giusto.",
     "NOT_MOBILE": "Par piaser, inserì un nùmaro de tełefono, no un tełefono fiso."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Idoneo a ła comision",
+      "PENDING": "Comision in corso",
+      "CANCELLED": "Comision cancełada"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Atribuìo a ti",
+      "DISPUTED": "Atribusion contestà"
+    }
+  },
+  "result": {
+    "none": "Nisun risultato de iscrision da mostrar. Prima registra un lead.",
+    "acceptedTitle": "Piombo registrà",
+    "rejectedTitle": "Lead no registrà",
+    "protectionWindow": "Finestra de protesion",
+    "protectedUntil": "Proteto fin a",
+    "openLead": "Verto el lead",
+    "addAnother": "Xonta n’altro lead",
+    "duplicate": "Dopio - xà proteto",
+    "duplicateHint": "Sto cliente el xe xà proteto pa sto progeto da n’altra registrasion, quindi no’l ga podesto esar registrà pa ti.",
+    "existingProtectedUntil": "L’iscrision esistente ła xe proteta fin a"
+  },
+  "disputes": {
+    "title": "I me disputi",
+    "intro": "Dispute de proprietà che te ga sołevà pa i clienti che xe stà rifiutà come dopi. Un aministrador Leadrat el varda ognuna.",
+    "empty": "No te ga fato gnente de disputa. Se un cliente che te ga portà el vien rifiutà come dopio, te pol contestarlo dal risultato de l’iscrision.",
+    "columns": {
+      "dispute": "Bega",
+      "reason": "La vostra ragion",
+      "outcome": "Resultado"
+    },
+    "status": {
+      "OPEN": "In revision",
+      "UPHELD": "No a vostro favore",
+      "OVERTURNED": "Deciso a vostro favore",
+      "WITHDRAWN": "Ritirà"
+    },
+    "awaitingReview": "In attesa de recension de l'aministrador",
+    "openNewLead": "Apri el vostro lead {{id}}",
+    "withdraw": "Retirar",
+    "withdrawConfirm": "Ritirà el controło par {{name}} ? La proprietà attuale rimane come è.",
+    "raise": "Contesa de proprietà",
+    "raiseTitle": "Contesa de proprietà",
+    "raiseHint": "Se sto cliente el xe rivà da ti par primo, spiega parché. Un aministrador Leadrat el ło vardarà; se decideno a vostro favore, il lead è registrato per voi.",
+    "reasonLabel": "Perchè sto cliente xe vostro?",
+    "reasonMin_one": "Almanco {{count}} caratere.",
+    "reasonMin_many": "Almanco {{count}} carateri.",
+    "reasonMin_other": "Almanco {{count}} carateri.",
+    "submit": "Manda Contesta",
+    "notProtected": "Nissun ga pì protesion su sto cliente pa sto progeto - te pol registrar el lead deso.",
+    "raised": "Disputa {{id}} mandà a revision.",
+    "viewAll": "Varda łe me dispute"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Ponto",
+    "lastDays_one": "{{count}} dì",
+    "lastDays_many": "{{count}} dì",
+    "lastDays_other": "{{count}} dì",
+    "emptyTitle": "Benvegnesto! No te ghè gnancora indicasión.",
+    "emptyHint": "Iscrivite el vostro primo cliente - łe vostre pipeline, łe prenotasion e łe scadense de protesion łe vegnarà fora qua.",
+    "tiles": {
+      "leads": "Totałe de punti",
+      "newInPeriod_one": "{{count}} novo in sto periodo",
+      "newInPeriod_many": "{{count}} novo in sto periodo",
+      "newInPeriod_other": "{{count}} novo in sto periodo",
+      "accepted": "Acetà",
+      "booked": "Prenotà",
+      "bookedInPeriod_one": "{{count}} prenotà in sto periodo",
+      "bookedInPeriod_many": "{{count}} prenotà in sto periodo",
+      "bookedInPeriod_other": "{{count}} prenotà in sto periodo",
+      "conversion": "Conversion",
+      "conversionHint": "I clienti prenotài come parte dei clienti acetài",
+      "protectedNow": "Proteto deso",
+      "expiringSoon_one": "Protesion che finise in {{count}} dì",
+      "expiringSoon_many": "Protesion che finise in {{count}} dì",
+      "expiringSoon_other": "Protesion che finise in {{count}} dì",
+      "disputedNow": "Contestà da altri",
+      "disputedNowHint": "I vostri leads co na disputa de proprietà verta da n’altro partner",
+      "commissionEligible": "Idoneo a ła comision",
+      "commissionCancelled_one": "{{count}} cancełà",
+      "commissionCancelled_many": "{{count}} cancełà",
+      "commissionCancelled_other": "{{count}} cancełà"
+    },
+    "chart": {
+      "title_one": "Iscrizioni e prenotazioni al giorno - ultimo {{count}} giorno",
+      "title_many": "Iscrizioni e prenotazioni al giorno - ultimi {{count}} giorni",
+      "title_other": "Iscrizioni e prenotazioni al giorno - ultimi {{count}} giorni",
+      "registrations": "Iscrision",
+      "bookings": "Prenotasion"
+    },
+    "byStage": "Lead par status",
+    "bySource": "Lead par fonte",
+    "byReferral": "Lead par stato de rinvio",
+    "myDisputes": "Dispute che te ga sołevà",
+    "noDisputes": "No ghe xe stà dispute.",
+    "unknown": "No stà meso",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM esterno (simułà)",
+      "PARTNER_CRM": "Xontà dal vostro grupo",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integrasion",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Ła protesion ła scade nel prossimo {{count}} dì",
+    "expiringTitle_many": "Ła protesion ła scade nei prossimi {{count}} dì",
+    "expiringTitle_other": "Ła protesion ła scade nei prossimi {{count}} dì",
+    "expiringEmpty": "Nisun piombo el perde ła so protesion in sta finestra."
   }
 }

@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "ተይዟል።",
-    "pending": "በመጠባበቅ ላይ"
+    "pending": "በመጠባበቅ ላይ",
+    "status": {
+      "CONFIRMED": "ተይዟል።",
+      "CANCELLED": "ቦታ ማስያዝ ተሰርዟል።"
+    }
   },
   "assign": {
     "unassigned": "ያልተመደበ",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "እስካሁን ምንም ፕሮጀክት የለም (አልተገለጸም)",
-    "notInList": "{{project}} (በፕሮጀክቱ ዝርዝር ውስጥ የለም)"
+    "notInList": "{{project}} (በፕሮጀክቱ ዝርዝር ውስጥ የለም)",
+    "protectionDays_one": "{{count}} ቀን ጥበቃ",
+    "protectionDays_other": "{{count}} ቀን ጥበቃ"
   },
   "journey": {
     "customer": "ደንበኛ",
@@ -76,7 +82,14 @@
     "progressHistory": "የሂደት ታሪክ",
     "timesIn": "(በ {{timezone}} ውስጥ ያሉ ጊዜያት)",
     "backToMyLeads": "ወደ መሪዎቼ ተመለስ",
-    "editLead": "መሪን ያርትዑ"
+    "editLead": "መሪን ያርትዑ",
+    "disputeBanner": "ሌላ አጋር የዚህን ደንበኛ ባለቤትነት ተከራክሯል። Leadrat አስተዳዳሪ እየገመገመው ነው - እስኪወስኑ ድረስ የእርስዎ ጥበቃ በቦታው ይቆያል።",
+    "booking": "ቦታ ማስያዝ",
+    "commission": "ኮሚሽን",
+    "notBooked": "አልተያዘም።",
+    "cancelledOn": "በ {{date}} ተሰርዟል።",
+    "cancelReason": "ምክንያት {{reason}}",
+    "cancelledHint": "ግንበኛ ቦታ ማስያዙን ሰርዟል - የስራ ማስኬጃ ባለቤትነት ከእርስዎ ጋር ነው እና የኮሚሽን ብቁነት ተሰርዟል። መሪው እንደገና ከተያዘ ወደነበረበት ይመለሳል።"
   },
   "referral": {
     "NOT_REFERRED": "አልተጠቀሰም (ፕሮጀክት የለም)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "ግንበኛ ሪፈራሉን ተቀብሏል።",
       "REFERRAL_REJECTED": "ግንበኛ ሪፈራሉን አልተቀበለውም። ምክንያት {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "አስተዳዳሪ ቀደም ብሎ የተባዛ ጥበቃን ለቋል። ምክንያት {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "አስተዳዳሪ ምዝገባን ከ {{from}} ወደ {{to}} መድቧል። ምክንያት {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "አስተዳዳሪ ምዝገባን ከ {{from}} ወደ {{to}} መድቧል። ምክንያት {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "በሌላ አጋር የተደረገ የተባዛ የምዝገባ ሙከራ ውድቅ ተደርጓል",
+      "BOOKING_CANCELLED": "ቦታ ማስያዝ ተሰርዟል። ምክንያት {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "የተግባር ባለቤትነት ወደ አጋር ተመልሷል",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "ከቦታ ማስያዣው ጋር የኮሚሽኑ ብቁነት ተሰርዟል።",
+      "COMMISSION_ELIGIBILITY_RESTORED": "ለአዲሱ ቦታ ማስያዝ የኮሚሽኑ ብቁነት ተመልሷል",
+      "OWNERSHIP_DISPUTE_RAISED": "የሌላ አጋር የዚህ ደንበኛ ባለቤትነት አከራካሪ - የ Leadrat አስተዳዳሪ ይገመግመዋል",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "በዚህ ደንበኛ ላይ ያለው የባለቤትነት ክርክር ተነስቷል - ባለቤትነትዎ አልተለወጠም።",
+      "OWNERSHIP_DISPUTE_UPHELD": "በዚህ ደንበኛ ላይ ያለው የባለቤትነት ክርክር ተገምግሟል - ባለቤትነትዎ ተረጋግጧል",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "የተመዘገበው የባለቤትነት ሙግትዎ ለእርስዎ ጥቅም ከተወሰነ በኋላ ነው። ማስታወሻ {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "ጥበቃው አልቋል፡ የባለቤትነት ሙግት ለሌላ አጋር ድጋፍ ተወሰነ። ማስታወሻ {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "ይህ ስልክ ቁጥር ለ {{country}} የሚሰራ አይደለም።",
     "COUNTRY_MISMATCH": "እባክዎ ትክክለኛውን የአገር ኮድ ይምረጡ።",
     "NOT_MOBILE": "እባኮትን የተንቀሳቃሽ ስልክ ቁጥር ያስገቡ እንጂ መደበኛ ስልክ አይደለም።"
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "ኮሚሽን ብቁ",
+      "PENDING": "ኮሚሽን በመጠባበቅ ላይ",
+      "CANCELLED": "ኮሚሽን ተሰርዟል።"
+    },
+    "attribution": {
+      "ATTRIBUTED": "ላንተ ተሰጥቷል።",
+      "DISPUTED": "የባለቤትነት መብት ተከራክሯል።"
+    }
+  },
+  "result": {
+    "none": "ምንም የሚታይ የምዝገባ ውጤት የለም። መጀመሪያ መሪ ያስመዝግቡ።",
+    "acceptedTitle": "አመራር ተመዝግቧል",
+    "rejectedTitle": "እርሳስ አልተመዘገበም።",
+    "protectionWindow": "የመከላከያ መስኮት",
+    "protectedUntil": "ድረስ የተጠበቀ",
+    "openLead": "መሪን ክፈት",
+    "addAnother": "ሌላ መሪ ጨምር",
+    "duplicate": "የተባዛ - አስቀድሞ የተጠበቀ",
+    "duplicateHint": "ይህ ደንበኛ አስቀድሞ ለዚህ ፕሮጀክት በሌላ ምዝገባ የተጠበቀ ነው፣ ስለዚህ ለእርስዎ መመዝገብ አልቻለም።",
+    "existingProtectedUntil": "ነባር ምዝገባ የተጠበቀ ነው።"
+  },
+  "disputes": {
+    "title": "የእኔ ክርክሮች",
+    "intro": "እንደ ብዜት ውድቅ ለሆኑ ደንበኞች ያነሷቸው የባለቤትነት አለመግባባቶች። የ Leadrat አስተዳዳሪ እያንዳንዳቸውን ይገመግማሉ።",
+    "empty": "ምንም ክርክር አላነሳህም። ያመጡት ደንበኛ እንደ ብዜት ውድቅ ከተደረገ፣ ከምዝገባ ውጤቱ ሊከራከሩ ይችላሉ።",
+    "columns": {
+      "dispute": "ክርክር",
+      "reason": "ምክንያትህ",
+      "outcome": "ውጤት"
+    },
+    "status": {
+      "OPEN": "በግምገማ ላይ",
+      "UPHELD": "ለእርስዎ ሞገስ አይደለም",
+      "OVERTURNED": "በእርስዎ ሞገስ ወስኗል",
+      "WITHDRAWN": "የተወሰደ"
+    },
+    "awaitingReview": "የአስተዳዳሪ ግምገማን በመጠበቅ ላይ",
+    "openNewLead": "መሪዎን {{id}} ይክፈቱ",
+    "withdraw": "ማውጣት",
+    "withdrawConfirm": "ለ {{name}} ሙግትዎን ያነሱት? አሁን ያለው ባለቤትነት እንዳለ ይቆያል።",
+    "raise": "የባለቤትነት ክርክር",
+    "raiseTitle": "የባለቤትነት ክርክር",
+    "raiseHint": "ይህ ደንበኛ መጀመሪያ ወደ እርስዎ ከመጣ ለምን እንደሆነ ያብራሩ። Leadrat አስተዳዳሪ ይገመግመዋል; እነሱ ለእርስዎ ከወሰኑ, መሪው ለእርስዎ ተመዝግቧል.",
+    "reasonLabel": "ለምንድነው ይሄ ደንበኛ ያንተ የሆነው?",
+    "reasonMin_one": "ቢያንስ {{count}} ቁምፊ።",
+    "reasonMin_other": "ቢያንስ {{count}} ቁምፊዎች።",
+    "submit": "ክርክር ላክ",
+    "notProtected": "ለዚህ ፕሮጀክት ማንም በዚህ ደንበኛ ላይ ጥበቃ አይኖረውም - አሁን መሪውን መመዝገብ ይችላሉ።",
+    "raised": "ክርክር {{id}} ለግምገማ ተልኳል።",
+    "viewAll": "ክርክሮችን ተመልከት"
+  },
+  "dashboard": {
+    "title": "ዳሽቦርድ",
+    "period": "ጊዜ",
+    "lastDays_one": "{{count}} ቀን",
+    "lastDays_other": "{{count}} ቀናት",
+    "emptyTitle": "እንኳን ደህና መጣህ! እስካሁን ምንም መሪ የሎትም።",
+    "emptyHint": "የመጀመሪያውን እርሳስዎን ያስመዝግቡ - የቧንቧ መስመርዎ, ቦታ ማስያዝ እና የጥበቃ ጊዜዎች እዚህ ይታያሉ.",
+    "tiles": {
+      "leads": "ጠቅላላ እርሳሶች",
+      "newInPeriod_one": "በዚህ ጊዜ ውስጥ {{count}} አዲስ",
+      "newInPeriod_other": "በዚህ ጊዜ ውስጥ {{count}} አዲስ",
+      "accepted": "ተቀባይነት አግኝቷል",
+      "booked": "ተይዟል።",
+      "bookedInPeriod_one": "በዚህ ጊዜ ውስጥ {{count}} ተይዟል።",
+      "bookedInPeriod_other": "በዚህ ጊዜ ውስጥ {{count}} ተይዟል።",
+      "conversion": "ልወጣ",
+      "conversionHint": "የተያዙ እርሳሶች እንደ ተቀባይነት እርሳሶች ድርሻ",
+      "protectedNow": "አሁን የተጠበቀ",
+      "expiringSoon_one": "ጥበቃ በ {{count}} ቀን ያበቃል",
+      "expiringSoon_other": "ጥበቃ በ {{count}} ቀናት ውስጥ ያበቃል",
+      "disputedNow": "በሌሎች ተጨቃጨቁ",
+      "disputedNowHint": "ከሌላ አጋር ግልጽ የባለቤትነት ክርክር ጋር የእርስዎ መሪዎች",
+      "commissionEligible": "ኮሚሽን ብቁ",
+      "commissionCancelled_one": "{{count}} ተሰርዟል።",
+      "commissionCancelled_other": "{{count}} ተሰርዟል።"
+    },
+    "chart": {
+      "title_one": "ምዝገባዎች እና ምዝገባዎች በቀን - የመጨረሻው {{count}} ቀን",
+      "title_other": "ምዝገባዎች እና ምዝገባዎች በቀን - የመጨረሻዎቹ {{count}} ቀናት",
+      "registrations": "ምዝገባዎች",
+      "bookings": "ቦታ ማስያዝ"
+    },
+    "byStage": "በሁኔታ ይመራል።",
+    "bySource": "በምንጭ ይመራል።",
+    "byReferral": "በሪፈራል ሁኔታ ይመራል።",
+    "myDisputes": "ያነሱዋቸው አለመግባባቶች",
+    "noDisputes": "ምንም አለመግባባቶች አልተነሱም።",
+    "unknown": "አልተዘጋጀም።",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "ውጫዊ CRM (የተመሰለ)",
+      "PARTNER_CRM": "በቡድንህ ታክሏል።",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "ውህደት",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "ጥበቃ በሚቀጥለው {{count}} ቀን ጊዜው ያልፍበታል።",
+    "expiringTitle_other": "ጥበቃ በሚቀጥሉት {{count}} ቀናት ውስጥ ጊዜው ያበቃል",
+    "expiringEmpty": "በዚህ መስኮት ውስጥ ምንም እርሳስ ጥበቃውን አያጣም."
   }
 }

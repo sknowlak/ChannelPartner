@@ -201,7 +201,7 @@ function openApiSpec(req, res) {
           required: ['targetUrl'],
           properties: {
             targetUrl: { type: 'string', format: 'uri' },
-            events: { type: 'array', items: { type: 'string', enum: ['LEAD_CREATED', 'LEAD_UPDATED', 'STAGE_UPDATED', 'BOOKING_COMPLETED'] } }
+            events: { type: 'array', items: { type: 'string', enum: ['LEAD_CREATED', 'LEAD_UPDATED', 'STAGE_UPDATED', 'BOOKING_COMPLETED', 'BOOKING_CANCELLED'] } }
           }
         }
       }

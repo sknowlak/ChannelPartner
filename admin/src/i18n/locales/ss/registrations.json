@@ -49,8 +49,73 @@
       "newPartnerId": "ID lensha yemlingani",
       "reason": "Sizatfu (siyadzingeka)",
       "apply": "Faka sicelo sekucitsa",
-      "applying": "Kufaka sicelo..."
+      "applying": "Kufaka sicelo...",
+      "cancelBookingHint": "Kukhansela kumaka kubhukha kanye nekhomishini yayo njengalekhanseliwe, kubuyisela bunikazi bekusebenta kumlingani, futsi kuvumela umakhi kutsi abhukhe lokuhola futsi.",
+      "cancelBookingConfirm": "Khansela lokubhukha? Ikhomishini yayo iyakhanselwa futsi. Loku kubhaliwe ngeligama lakho nesizatfu."
     },
-    "timelineTitle": "Sikhatsi sekuhlola (lokubhalisa)"
+    "timelineTitle": "Sikhatsi sekuhlola (lokubhalisa)",
+    "bookingStatus": "Simo sekubhukha",
+    "commissionAttribution": "Kubekwa kweKhomishini",
+    "disputeOpen": "Impikiswano yebunikati ivulekile kulelikhasimende - lomunye umlingani utsi ngeyabo. Kuncunywa ekhasini leTingcoco.",
+    "viewDisputes": "Buka tincabano",
+    "cancellation": {
+      "title": "Kubhuka kukhanseliwe",
+      "hint": "Kubhukha kanye nekhomishini yayo kuyakhanselwa; bunikati bekusebenta bubuyele kumlingani futsi umakhi angaphindze abhukhe lomholi.",
+      "at": "Kukhanseliwe nga",
+      "by": "Kukhanseliwe ngu",
+      "reason": "Sizatfu"
+    }
+  },
+  "disputes": {
+    "title": "Tingcoco tebunikati",
+    "hint": "Umlingani lokubhaliswa kwakhe kwalahlwa njengekuphindzaphindza angaphikisa kutsi ngubani umnikati welikhasimende. Buyeketa totimbili tinhlangotsi bese uncuma.",
+    "statusFilter": "Simo sekuphikisana",
+    "allStatuses": "Tonkhe timo",
+    "empty": "Kute timphikiswano ngalesi simo.",
+    "columns": {
+      "dispute": "Phikisana",
+      "customer": "Likhasimende",
+      "project": "Liphrojekthi",
+      "raisedBy": "Wakhuliswa ngu",
+      "heldBy": "Umnikati lokhona nyalo",
+      "status": "Sikhundla",
+      "raisedAt": "Wakhuliswa nga"
+    },
+    "detail": {
+      "title": "Impikiswano {{id}}",
+      "raisedOn": "Kuphakanyisiwe {{date}}",
+      "raisingTitle": "Wakhuliswa ngu",
+      "holderTitle": "Umnikati lokhona nyalo",
+      "partner": "Umhlanganyeli",
+      "raisedBy": "Kuhanjiswe ngu",
+      "customerName": "Likhasimende",
+      "mobile": "Hambako",
+      "alternateMobile": "Lenye iselula",
+      "email": "Imeyili",
+      "project": "Liphrojekthi",
+      "reason": "Sizatfu sabo .",
+      "registration": "Kubhalisa",
+      "registeredAt": "Ubhalisiwe ku",
+      "referral": "Kudluliselwa",
+      "heldMissing": "Lokubhalisa lokubanjiwe akuzange kutfolakale.",
+      "resolutionTitle": "Sicumo",
+      "outcome": "Mphumela",
+      "note": "Phawula",
+      "decidedBy": "Kuncunywe ngu",
+      "decidedAt": "Kuncunywe kutsi",
+      "newRegistration": "Kubhalisa lokusha",
+      "decideTitle": "Ncuma ngalencabano",
+      "noteLabel": "Caphela kuchaza sincumo (kuyadzingeka)",
+      "noteRequired": "Bhala incwadzi kute uncume.",
+      "uphold": "Sekela",
+      "overturn": "Gucula",
+      "upholdEffect": "{{holder}} ugcina likhasimende. Lencabano ivaliwe futsi kute lokunye lokushintjako.",
+      "overturnEffect": "{{holder}} 's kuvikelwa lokuphindvwe kabili kuyaphela nyalo futsi likhasimende libhaliselwe {{partner}} njengekubhalisa lokusha.",
+      "heldBookedHelp": "Lelikhasimende libhukwe ngemnikati lokhona nyalo. Khansela loko kubhukha kucala (Admin Override ekubhaliseni), bese uyagucula:",
+      "confirmTitle": "Ucinisekile yini?",
+      "confirmUphold": "Yebo, sekela",
+      "confirmOverturn": "Yebo, gucula",
+      "back": "Emuva eTimphikiswaneni"
+    }
   }
 }

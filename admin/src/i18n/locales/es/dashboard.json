@@ -8,6 +8,31 @@
     "rejectedRegistrations": "Rechazado (Duplicado)",
     "pendingBookings": "Reserva Pendiente",
     "totalBookings": "Reservas totales",
-    "totalCommissionEligible": "Elegible para la comisión"
+    "totalCommissionEligible": "Elegible para la comisión",
+    "openDisputes": "Disputas abiertas",
+    "cancelledBookings": "Reservas canceladas"
+  },
+  "trend": {
+    "title": "Inscripciones - últimos 30 días",
+    "hint_one": "{{count}} registro en los últimos 30 días (días en UTC ).",
+    "hint_many": "{{count}} registros en los últimos 30 días (días en UTC ).",
+    "hint_other": "{{count}} registros en los últimos 30 días (días en UTC ).",
+    "chartLabel_one": "Gráfico de barras de registros por día durante los últimos 30 días, {{count}} en total",
+    "chartLabel_many": "Gráfico de barras de registros por día durante los últimos 30 días, {{count}} en total",
+    "chartLabel_other": "Gráfico de barras de registros por día durante los últimos 30 días, {{count}} en total",
+    "barTitle": "{{date}} : {{count}}"
+  },
+  "leaderboard": {
+    "title": "Socios principales",
+    "hint": "Los 10 socios con más reservas, luego los que tienen más clientes potenciales. Conversión = reservado / aceptado.",
+    "empty": "Aún no hay inscripciones.",
+    "columns": {
+      "rank": "#",
+      "partner": "Pareja",
+      "leads": "Dirige",
+      "accepted": "Aceptado",
+      "booked": "Reservado",
+      "conversion": "Conversión"
+    }
   }
 }

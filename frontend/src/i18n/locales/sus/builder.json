@@ -30,7 +30,8 @@
       "registered": "A xili sEbExi"
     },
     "booked": "Booked",
-    "empty": "Mixi yo mu na naxan mixi rasigaxi sinden."
+    "empty": "Mixi yo mu na naxan mixi rasigaxi sinden.",
+    "bookingCancelled": "Booking bara kana"
   },
   "detail": {
     "customer": "I magnakhoun",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Booking bara tin.",
       "accepted": "Referral tinxi.",
-      "rejected": "Referral bara tondi."
+      "rejected": "Referral bara tondi.",
+      "bookingCancelled": "Booking bara kana."
     },
-    "backToReferrals": "Wo gbilen wo xa masen gni ma"
+    "backToReferrals": "Wo gbilen wo xa masen gni ma",
+    "bookingCancelled": "Booking bara kana",
+    "cancelBooking": "Wo xa booking kana",
+    "cancelReasonLabel": "Naxan a niyama a xa kana (a masenxi a bore bE) *",
+    "cancelBookingHint": "Yi wali sOtOxi gbilen ma a bore nan ma a nun e xa wali sOtOxi bara kana. Na xunmatie nOma gbilen de a ra xanbi.",
+    "cancelBookingConfirm": "Wo xa booking ba"
   },
   "history": {
     "title": "Féfori",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Komisiyon lanma a xa raba",
       "HANDOVER_COMPLETED": "Handover bara kamali",
       "ADMIN_PROTECTION_RELEASED": "Admin bara duplicate protection ra mini a singe ra. Xaxili: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin bara xili sa {{from}} ma sigafe {{to}} . Xaxili: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin bara xili sa {{from}} ma sigafe {{to}} . Xaxili: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Wo xa wo xili sEbE fe firin nde naxan nabaxi wo bore ra a mu tinxi",
+      "BOOKING_CANCELLED": "Booking bara kana. Xaxili: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Yi wali sOtOxi gbilen ma nE a bore yi ra",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Komisi sOtOxi bara kana a nun booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Komisiyon lanma a xa gbilen buki nEnE ma"
     }
   }
 }

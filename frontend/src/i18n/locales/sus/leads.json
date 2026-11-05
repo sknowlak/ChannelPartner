@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Booked",
-    "pending": "Ana mamètifé"
+    "pending": "Ana mamètifé",
+    "status": {
+      "CONFIRMED": "Booked",
+      "CANCELLED": "Booking bara kana"
+    }
   },
   "assign": {
     "unassigned": "Unassigned",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Projet yo mu na sinden (a mu falaxi)",
-    "notInList": "{{project}} (naxan mu na projet lisi kui)"
+    "notInList": "{{project}} (naxan mu na projet lisi kui)",
+    "protectionDays_one": "{{count}} -lOxE makanta",
+    "protectionDays_other": "{{count}} -lOxE makanta"
   },
   "journey": {
     "customer": "I magnakhoun",
@@ -76,7 +82,14 @@
     "progressHistory": "Taruxui naxan sigaxi yare",
     "timesIn": "(waxati {{timezone}} )",
     "backToMyLeads": "Wo gbilen n ma kirayae ma",
-    "editLead": "Edit Lead"
+    "editLead": "Edit Lead",
+    "disputeBanner": "Bore gbEtE bara yi sare soe xa fe matandi. Leadrat admin na a matofe - wo xa makantafe na a yire han e natE tongo.",
+    "booking": "Booking",
+    "commission": "Khèra",
+    "notBooked": "A mu sEbExi",
+    "cancelledOn": "A bara kana {{date}} .",
+    "cancelReason": "Xaxili: {{reason}}",
+    "cancelledHint": "Banxi ti mixi bara a xa buki kana - a xa wali sare bara gbilen wo yire a nun a xa wali sare bara kana. A gbilen ma nE xa a sa li a singe bara gbilen."
   },
   "referral": {
     "NOT_REFERRED": "A mu rasanbaxi (projet yo mu na)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Builder bara tin na referansi ra",
       "REFERRAL_REJECTED": "Builder naxa na referansi tondi. Xaxili: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin bara duplicate protection ra mini a singe ra. Xaxili: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin bara xili sa {{from}} ma sigafe {{to}} . Xaxili: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin bara xili sa {{from}} ma sigafe {{to}} . Xaxili: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Wo xa wo xili sEbE fe firin nde naxan nabaxi wo bore ra a mu tinxi",
+      "BOOKING_CANCELLED": "Booking bara kana. Xaxili: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Yi wali sOtOxi gbilen ma nE a bore yi ra",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Komisi sOtOxi bara kana a nun booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Komisiyon lanma a xa gbilen buki nEnE ma",
+      "OWNERSHIP_DISPUTE_RAISED": "Wo xa walikE gbEtE bara yi sare soe xa fe fala - Leadrat xunmati nan a mato ma",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Yi sare soe xa fe bara ba - wo xa fe mu masarama",
+      "OWNERSHIP_DISPUTE_UPHELD": "Yi sare soe xa lan boreya bara mato - wo xa lanlanteya bara lan a ma",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "A sEbExi nE wo xa kOntOfili fe to gbata wo bE. Note: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Makantafe bara ɲɔn: kanyi xa fe bara lan a ma a xa findi mixi gbɛtɛ xa fe ra. Note: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Yi telefone kEdi mu lanma {{country}} bE.",
     "COUNTRY_MISMATCH": "Wo xa bOxi kOde sugandi.",
     "NOT_MOBILE": "Wo xa wo xa telefone kEdi sa, wo naxa kObiri sa."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisiyon lan ma",
+      "PENDING": "Komisiyon na walife",
+      "CANCELLED": "Komisi bara kana"
+    },
+    "attribution": {
+      "ATTRIBUTED": "A fixi wo nan ma",
+      "DISPUTED": "Attribution disputed"
+    }
+  },
+  "result": {
+    "none": "Sɛbɛli yo mu na naxan fama minide. Wo xa mixi xili sEbE sinden.",
+    "acceptedTitle": "Lead naxan xili sEbExi",
+    "rejectedTitle": "Lead mu sEbExi",
+    "protectionWindow": "FenEtr makanta",
+    "protectedUntil": "A makanta han",
+    "openLead": "Lead rabi",
+    "addAnother": "Wo xa mixi gbEtE sa a fari",
+    "duplicate": "Duplicate - a bara makanta",
+    "duplicateHint": "Yi sare soe bara makanta yi wali ra sEbEli gbEtE ra, na nan a ra a mu nOma sEbEde wo bE.",
+    "existingProtectedUntil": "Sɛbɛli naxan na a kui a makantaxi han"
+  },
+  "disputes": {
+    "title": "N ma lantareya",
+    "intro": "Wo naxan falaxi wo xa sare soe bE naxan mu tinxi a xa findi duplicate ra. Leadrat xunmati nan e birin mato ma.",
+    "empty": "Wo mu gere yo rakelixi. Xa sare soe wo naxan xaninxi a mu tinxi a xa findi duplicate ra, wo nOma a matandide wo xa sEbEli kui.",
+    "columns": {
+      "dispute": "Gnôkhôn sôssô",
+      "reason": "Wo xa fe ra",
+      "outcome": "Näkhan minima a koui"
+    },
+    "status": {
+      "OPEN": "A na matofe",
+      "UPHELD": "Wo xa fe mu a ra",
+      "OVERTURNED": "NatE tongoxi wo bE",
+      "WITHDRAWN": "A bara mini"
+    },
+    "awaitingReview": "Admin mamE tife",
+    "openNewLead": "Wo xa wo xa lead rabi {{id}}",
+    "withdraw": "Firifirin yi",
+    "withdrawConfirm": "Wo xa wo xa kOntOfili ba {{name}} ? Yi waxati kanyi na na ki nE.",
+    "raise": "lanlanteya sOtO fe",
+    "raiseTitle": "lanlanteya sOtO fe",
+    "raiseHint": "Xa yi sare soe nan singe fa wo yire, wo a yaba munfe ra. Leadrat xunmati nan a mato ma; xa e natE tongo wo bE, wo xa yarerati sEbExi nE.",
+    "reasonLabel": "Munfe ra yi sare soe findixi i gbe ra?",
+    "reasonMin_one": "A lanma {{count}} sEbEli.",
+    "reasonMin_other": "A lanma {{count}} sEbEli.",
+    "submit": "Dispute rasanba",
+    "notProtected": "Mixi yo mu yi sare soe makantama yi wali ma sOnOn - wo nOma yi sare soe xili sEbEde yakOsi.",
+    "raised": "Dispute {{id}} xEnE ma tofe ra.",
+    "viewAll": "N ma geree mato"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Wakhati",
+    "lastDays_one": "{{count}} lOxE",
+    "lastDays_other": "{{count}} lOxE",
+    "emptyTitle": "Ara lanfé! Wo mu kira yo sOtOxi sinden.",
+    "emptyHint": "Wo xa wo xa mixi singe sEbE - wo xa pipeline, wo xa bukie a nun wo xa makanta waxati fama nE minide be.",
+    "tiles": {
+      "leads": "Lead birin",
+      "newInPeriod_one": "{{count}} nEnE yi waxati kui",
+      "newInPeriod_other": "{{count}} nEnE yi waxati kui",
+      "accepted": "A tinxi",
+      "booked": "Booked",
+      "bookedInPeriod_one": "{{count}} booked yi waxati nan kui",
+      "bookedInPeriod_other": "{{count}} booked yi waxati nan kui",
+      "conversion": "mafindi",
+      "conversionHint": "Booked leads as share of accepted leads",
+      "protectedNow": "A makantaxi yakOsi",
+      "expiringSoon_one": "Ɲama makantafe naxan ɲɔnma {{count}} lɔxɔɛ",
+      "expiringSoon_other": "Makantafe naxan na {{count}} lOxE",
+      "disputedNow": "Mixi gbEtee nan a matandixi",
+      "disputedNowHint": "Wo xa yarerati nun wo xa lanlanteya naxan fatanxi wo bore ra",
+      "commissionEligible": "Komisiyon lan ma",
+      "commissionCancelled_one": "{{count}} bara kana",
+      "commissionCancelled_other": "{{count}} bara kana"
+    },
+    "chart": {
+      "title_one": "Wo xa wo xili sEbE a nun wo xa wo xa bukie tongo lOxOE birin - lOxE dOnxE {{count}}",
+      "title_other": "Wo xili sEbE a nun wo xa buki tongo lOxOE birin - lOxun dOnxE {{count}}",
+      "registrations": "Wo xili sEbE",
+      "bookings": "Bookings"
+    },
+    "byStage": "A ra tima a xa tide nan ma",
+    "bySource": "A ra tima a kelide nan ma",
+    "byReferral": "A ra tima referansi ki ma",
+    "myDisputes": "Wo naxan falaxi",
+    "noDisputes": "Fe yo mu minixi.",
+    "unknown": "A mu saxi",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM (simulated)",
+      "PARTNER_CRM": "Wo xa mixie nan a sa a fari",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integration",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "makantafe fama nE {{count}} lOxE naxan fama",
+    "expiringTitle_other": "makantafe fama nE {{count}} lOxE naxan fama",
+    "expiringEmpty": "Plomb yo mu a xa makantaxi lOE ma yi fenEtr kui."
   }
 }

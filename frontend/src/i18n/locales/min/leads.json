@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Dipesan",
-    "pending": "Tatundo"
+    "pending": "Tatundo",
+    "status": {
+      "CONFIRMED": "Dipesan",
+      "CANCELLED": "Pemesanan dibatalkan"
+    }
   },
   "assign": {
     "unassigned": "Indak ditugaskan",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Alun ado proyek lai (indak dirujuak)",
-    "notInList": "{{project}} (indak ado dalam daftar proyek)"
+    "notInList": "{{project}} (indak ado dalam daftar proyek)",
+    "protectionDays_one": "{{count}} -palinduangan hari",
+    "protectionDays_other": "{{count}} -palinduangan hari"
   },
   "journey": {
     "customer": "Palanggan",
@@ -76,7 +82,14 @@
     "progressHistory": "Riwayat Kamajuan",
     "timesIn": "(wakatu dalam {{timezone}} )",
     "backToMyLeads": "Baliak ka Pamimpin Ambo",
-    "editLead": "Suntiang Timbal"
+    "editLead": "Suntiang Timbal",
+    "disputeBanner": "Mitra lain alah mambantah kapamilikan palanggan ko. Saurang admin Leadrat sadang maninjaunyo - perlindungan sanak tatap di tampeknyo sampai mereka mamutuihkan.",
+    "booking": "Pamasanan",
+    "commission": "Komisi",
+    "notBooked": "Indak dipesan",
+    "cancelledOn": "Dibatalkan pado {{date}} .",
+    "cancelReason": "Alasan: {{reason}}",
+    "cancelledHint": "Tukang bangunan mambatalkan pemesanan - kepemilikan operasional baliak jo sanak dan kelayakan komisi dibatalkan. Hal iko dipulihkan kalau timbal baliknyo dipesan baliak."
   },
   "referral": {
     "NOT_REFERRED": "Indak dirujuak (indak ado proyek)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Tukang bangunan manarimo rujukan",
       "REFERRAL_REJECTED": "Tukang bangunan manulak rujukan tu. Alasan: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin malapehan duplikat perlindungan awal. Alasan: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin manugaskan baliak pendaftaran dari {{from}} manjadi {{to}} . Alasan: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin manugaskan baliak pendaftaran dari {{from}} manjadi {{to}} . Alasan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Usaho pendaftaran duplikat dek pasangan lain ditolak",
+      "BOOKING_CANCELLED": "Pemesanan dibatalkan. Alasan: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Kepemilikan operasional dibaliakkan kapado mitra .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kelayakan komisi dibatalkan jo pamasanan",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kelayakan komisi dipulihkan untuak pamasanan baru",
+      "OWNERSHIP_DISPUTE_RAISED": "Mitra lain mambantah kapamilikan palanggan ko - admin Leadrat akan maninjaunyo",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Salisiah kapamilikan pado palanggan ko ditarik baliak - kapamilikan Sanak indak barubah",
+      "OWNERSHIP_DISPUTE_UPHELD": "Sangketo kapamilikan pado palanggan ko ditinjau - kapamilikan Sanak dikonfirmasi",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Didaftarkan sasudah sangketo kapamilikan Sanak diputuihkan nan mandukuang Sanak. Catatan: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Perlindungan barakhia: sangketo kapamilikan diputuihkan untuak mandukuang pasangan lain. Catatan: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Nomor talepon ko indak balaku untuak {{country}} .",
     "COUNTRY_MISMATCH": "Silahkan piliah kode nagari nan tapek.",
     "NOT_MOBILE": "Tolong masuakkan nomor handphone, bukan talipon darat."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisi nan layak",
+      "PENDING": "Komisi nan sadang ditunggu",
+      "CANCELLED": "Komisi dibatalkan"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Dikaitkan jo sanak",
+      "DISPUTED": "Atribusi dibantahan"
+    }
+  },
+  "result": {
+    "none": "Indak ado hasil pendaftaran nan ka ditunjukkan. Daftarlah timbal balik dulu.",
+    "acceptedTitle": "Timbal didaftarkan",
+    "rejectedTitle": "Timbal indak didaftarkan",
+    "protectionWindow": "Jendela Palinduangan",
+    "protectedUntil": "Dilindungi Sampai",
+    "openLead": "Bukak Timah",
+    "addAnother": "Tambah Timbal Lain",
+    "duplicate": "Duplikat - alah dilinduangi",
+    "duplicateHint": "Palanggan ko alah dilindungi untuak proyek ko jo pendaftaran lain, sahinggo indak bisa didaftarkan untuak Sanak.",
+    "existingProtectedUntil": "Pendaftaran nan alah ado dilindungi sampai 2019."
+  },
+  "disputes": {
+    "title": "Sangketo ambo",
+    "intro": "Perselisihan kepemilikan nan sanak angkek untuak nasabah nan ditulak sabagai duplikat. Saurang admin Leadrat maninjau masiang-masiang.",
+    "empty": "Sanak indak ado nan maangkek sangketo. Kalau pelanggan nan sanak baok masuak ditulak sabagai duplikat, sanak bisa mambantahnyo dari hasil pendaftaran.",
+    "columns": {
+      "dispute": "Sangketa",
+      "reason": "Alasan awak",
+      "outcome": "Hasia"
+    },
+    "status": {
+      "OPEN": "Sadang ditinjau",
+      "UPHELD": "Indak mandukuang awak",
+      "OVERTURNED": "Diputuihkan untuak mandukuang sanak",
+      "WITHDRAWN": "Ditarik baliak"
+    },
+    "awaitingReview": "Ditunggu ulasan admin .",
+    "openNewLead": "Bukak timbal balik Sanak {{id}}",
+    "withdraw": "Maambiak",
+    "withdrawConfirm": "Tarik baliak sangketo Sanak untuak {{name}} ? Kepemilikan nan kini tatap sarupo itu.",
+    "raise": "Sangketo kapamilikan",
+    "raiseTitle": "Sangketo kapamilikan",
+    "raiseHint": "Kalau palanggan ko datang dulu ka sanak, jalehan baa dek baitu. Saurang admin Leadrat akan maninjaunyo; kalau inyo mamutuihkan nan mandukuang awak, timbal balik tu didaftarkan untuak awak.",
+    "reasonLabel": "Baa kok palanggan ko punyo awak?",
+    "reasonMin_one": "Paliang indak {{count}} karakter.",
+    "reasonMin_other": "Sakurang-kurangnyo {{count}} karakter.",
+    "submit": "Kirim Sangketo",
+    "notProtected": "Indak ado nan mamacik perlindungan pado palanggan ko untuak proyek ko lai - Sanak bisa mandaftarkan lead kini.",
+    "raised": "Sangketo {{id}} dikirim untuak ditinjau.",
+    "viewAll": "Caliak sangketo ambo"
+  },
+  "dashboard": {
+    "title": "Dasbor",
+    "period": "Titiak",
+    "lastDays_one": "{{count}} hari",
+    "lastDays_other": "{{count}} hari",
+    "emptyTitle": "Salamaik datang! Sanak alun ado timbal balik lai.",
+    "emptyHint": "Daftarkan lead partamo Sanak - pipeline, pamasanan jo bateh wakatu palinduangan Sanak akan muncua di siko.",
+    "tiles": {
+      "leads": "Jumlah prospek",
+      "newInPeriod_one": "{{count}} baru dalam periode ko",
+      "newInPeriod_other": "{{count}} baru dalam periode ko",
+      "accepted": "Ditarimo",
+      "booked": "Dipesan",
+      "bookedInPeriod_one": "{{count}} dipasan dalam periode ko",
+      "bookedInPeriod_other": "{{count}} dipasan dalam periode ko",
+      "conversion": "Paubah",
+      "conversionHint": "Lead nan dipesan sabagai bagian dari lead nan ditarimo",
+      "protectedNow": "Dilinduangi kini",
+      "expiringSoon_one": "Palinduangan nan barakhia pado {{count}} hari",
+      "expiringSoon_other": "Palinduangan nan barakhia pado {{count}} hari",
+      "disputedNow": "Disangketo dek urang lain .",
+      "disputedNowHint": "Pimpinan Sanak jo sangketo kapamilikan tabukak dari pasangan lain",
+      "commissionEligible": "Komisi nan layak",
+      "commissionCancelled_one": "{{count}} dibatalkan",
+      "commissionCancelled_other": "{{count}} dibatalkan"
+    },
+    "chart": {
+      "title_one": "Pendaftaran jo pamasanan per hari - hari {{count}} tarakhia",
+      "title_other": "Pendaftaran jo pamasanan per hari - hari tarakhia {{count}}",
+      "registrations": "Pendaftaran",
+      "bookings": "Pamasanan"
+    },
+    "byStage": "Mamimpin manuruik status",
+    "bySource": "Mamimpin manuruik sumber",
+    "byReferral": "Mamimpin manuruik status rujukan",
+    "myDisputes": "Sangketo nan sanak angkek",
+    "noDisputes": "Indak ado sangketo nan diangkek.",
+    "unknown": "Indak diatur",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM lua (disimulasikan)",
+      "PARTNER_CRM": "Ditambahkan dek tim Sanak",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Panggabungan",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Palinduangan kadaluarsa pado {{count}} hari barikuiknyo",
+    "expiringTitle_other": "Palinduangan kadaluarsa pado {{count}} hari barikuiknyo",
+    "expiringEmpty": "Indak ado timah nan kahilangan perlindungannyo di jendela ko."
   }
 }

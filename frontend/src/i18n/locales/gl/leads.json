@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Reservado",
-    "pending": "Pendente"
+    "pending": "Pendente",
+    "status": {
+      "CONFIRMED": "Reservado",
+      "CANCELLED": "Reserva cancelada"
+    }
   },
   "assign": {
     "unassigned": "Sen asignar",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Aínda non hai proxecto (non referido)",
-    "notInList": "{{project}} (non está na lista de proxectos)"
+    "notInList": "{{project}} (non está na lista de proxectos)",
+    "protectionDays_one": "Protección de {{count}} días",
+    "protectionDays_other": "Protección de {{count}} días"
   },
   "journey": {
     "customer": "Cliente",
@@ -76,7 +82,14 @@
     "progressHistory": "Historia do Progreso",
     "timesIn": "(veces en {{timezone}} )",
     "backToMyLeads": "Volver a My Leads",
-    "editLead": "Editar lead"
+    "editLead": "Editar lead",
+    "disputeBanner": "Outro socio disputou a propiedade deste cliente. Un administrador Leadrat está revisándoo: a túa protección permanecerá no seu lugar ata que o decidan.",
+    "booking": "Reserva",
+    "commission": "Comisión",
+    "notBooked": "Non reservado",
+    "cancelledOn": "Cancelouse o {{date}} .",
+    "cancelReason": "Motivo: {{reason}}",
+    "cancelledHint": "O constructor cancelou a reserva: a propiedade operativa volveu contigo e cancelouse a elegibilidade das comisións. Restaurarase se o liderado se reserva de novo."
   },
   "referral": {
     "NOT_REFERRED": "Non referido (sen proxecto)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "O constructor aceptou a referencia",
       "REFERRAL_REJECTED": "Builder rexeitou a remisión. Motivo: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "O administrador lanzou a protección duplicada antes. Motivo: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "O administrador reasignou o rexistro de {{from}} a {{to}} . Motivo: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "O administrador reasignou o rexistro de {{from}} a {{to}} . Motivo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Rexeitouse un intento de rexistro duplicado doutro compañeiro",
+      "BOOKING_CANCELLED": "Reserva cancelada. Motivo: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "A propiedade operativa devolveuse ao socio",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "A elegibilidade da comisión cancelouse coa reserva",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Restableceuse a elegibilidade das comisións para a nova reserva",
+      "OWNERSHIP_DISPUTE_RAISED": "Outro socio disputou a propiedade deste cliente; un administrador Leadrat revisará",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "A disputa de propiedade deste cliente foi retirada; a túa propiedade non se modifica",
+      "OWNERSHIP_DISPUTE_UPHELD": "Revisouse a disputa sobre a propiedade deste cliente: a túa propiedade está confirmada",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Rexistrado despois de que a súa disputa de propiedade se decidiu ao seu favor. Nota: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "A protección rematou: un conflito de propiedade decidiuse a favor doutro socio. Nota: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Este número de teléfono non é válido para {{country}} .",
     "COUNTRY_MISMATCH": "Seleccione o código de país correcto.",
     "NOT_MOBILE": "Introduce un número de móbil, non un teléfono fixo."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Comisión elixible",
+      "PENDING": "Comisión pendente",
+      "CANCELLED": "Comisión cancelada"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Atribuído a ti",
+      "DISPUTED": "Atribución impugnada"
+    }
+  },
+  "result": {
+    "none": "Non hai resultado do rexistro para mostrar. Rexistra primeiro un cliente potencial.",
+    "acceptedTitle": "Plomo rexistrado",
+    "rejectedTitle": "Lead non rexistrado",
+    "protectionWindow": "Ventana de protección",
+    "protectedUntil": "Protexido Ata",
+    "openLead": "Abrir Lead",
+    "addAnother": "Engade outro cliente potencial",
+    "duplicate": "Duplicado - xa protexido",
+    "duplicateHint": "Este cliente xa está protexido para este proxecto mediante outro rexistro, polo que non se puido rexistrar para ti.",
+    "existingProtectedUntil": "Rexistro existente protexido ata"
+  },
+  "disputes": {
+    "title": "As miñas disputas",
+    "intro": "Impugnacións de propiedade que plantexaches para clientes que foron rexeitadas como duplicados. Un administrador Leadrat revisa cada un.",
+    "empty": "Non suscitaches ningunha disputa. Se un cliente que trouxo é rexeitado como duplicado, podes impugnalo desde o resultado do rexistro.",
+    "columns": {
+      "dispute": "Disputa",
+      "reason": "A túa razón",
+      "outcome": "Resultado"
+    },
+    "status": {
+      "OPEN": "En revisión",
+      "UPHELD": "Non ao teu favor",
+      "OVERTURNED": "Decidido ao teu favor",
+      "WITHDRAWN": "Retirada"
+    },
+    "awaitingReview": "Agardando a revisión do administrador",
+    "openNewLead": "Abre o teu cliente potencial {{id}}",
+    "withdraw": "Retirar",
+    "withdrawConfirm": "Queres retirar a túa disputa por {{name}} ? A propiedade actual mantense como está.",
+    "raise": "Disputa a propiedade",
+    "raiseTitle": "Disputa a propiedade",
+    "raiseHint": "Se este cliente chegou a ti primeiro, explica por que. Un administrador Leadrat revisaao; se deciden ao teu favor, rexístrate o liderado.",
+    "reasonLabel": "Por que este cliente é teu?",
+    "reasonMin_one": "Polo menos {{count}} carácter.",
+    "reasonMin_other": "Polo menos {{count}} caracteres.",
+    "submit": "Enviar disputa",
+    "notProtected": "Xa ninguén ten protección neste cliente para este proxecto. Podes rexistrar o cliente potencial agora.",
+    "raised": "Impugnación {{id}} enviada para revisión.",
+    "viewAll": "Consulta as miñas disputas"
+  },
+  "dashboard": {
+    "title": "Panel de control",
+    "period": "Período",
+    "lastDays_one": "{{count}} día",
+    "lastDays_other": "{{count}} días",
+    "emptyTitle": "Benvido! Aínda non tes pistas.",
+    "emptyHint": "Rexistra o teu primeiro cliente potencial: o teu pipeline, as reservas e os prazos de protección aparecerán aquí.",
+    "tiles": {
+      "leads": "Total de leads",
+      "newInPeriod_one": "{{count}} novos neste período",
+      "newInPeriod_other": "{{count}} novos neste período",
+      "accepted": "Aceptado",
+      "booked": "Reservado",
+      "bookedInPeriod_one": "{{count}} reservados neste período",
+      "bookedInPeriod_other": "{{count}} reservados neste período",
+      "conversion": "Conversión",
+      "conversionHint": "Clientes potenciales reservados como parte dos clientes potenciales aceptados",
+      "protectedNow": "Protexido agora",
+      "expiringSoon_one": "A protección remata en {{count}} días",
+      "expiringSoon_other": "A protección remata en {{count}} días",
+      "disputedNow": "Impugnado por outros",
+      "disputedNowHint": "Os teus clientes potenciales cunha disputa aberta sobre a propiedade doutro socio",
+      "commissionEligible": "Comisión elixible",
+      "commissionCancelled_one": "Cancelouse {{count}}",
+      "commissionCancelled_other": "Cancelouse {{count}}"
+    },
+    "chart": {
+      "title_one": "Inscricións e reservas por día: último {{count}} día",
+      "title_other": "Rexistros e reservas por día - últimos {{count}} días",
+      "registrations": "Inscricións",
+      "bookings": "Reservas"
+    },
+    "byStage": "Dirixe por estado",
+    "bySource": "Prodúcese por fonte",
+    "byReferral": "Leva por estado de referencia",
+    "myDisputes": "Disputas que suscitaches",
+    "noDisputes": "Non hai disputas.",
+    "unknown": "Non definido",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM externo (simulado)",
+      "PARTNER_CRM": "Engadido polo teu equipo",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integración",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "A protección caducará no próximo {{count}} día",
+    "expiringTitle_other": "A protección caducará nos próximos {{count}} días",
+    "expiringEmpty": "Ningún chumbo perde a súa protección nesta ventá."
   }
 }

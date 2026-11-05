@@ -31,7 +31,8 @@
       "registered": "Riggistratu"
     },
     "booked": "Prenotatu",
-    "empty": "Ancora nuḍḍu rinviu."
+    "empty": "Ancora nuḍḍu rinviu.",
+    "bookingCancelled": "Prenotazione cancillata"
   },
   "detail": {
     "customer": "Clienti",
@@ -54,9 +55,15 @@
     "notice": {
       "booked": "Prenotazione cunfirmata.",
       "accepted": "Accittatu lu rinviu.",
-      "rejected": "Rifiutatu lu rinviu."
+      "rejected": "Rifiutatu lu rinviu.",
+      "bookingCancelled": "Prenotazione annullata."
     },
-    "backToReferrals": "Torna ê Rifirimenti"
+    "backToReferrals": "Torna ê Rifirimenti",
+    "bookingCancelled": "Prenotazione cancillata",
+    "cancelBooking": "Annullari la prenotazioni",
+    "cancelReasonLabel": "Mutivu di cancillazzioni (mustratu ô cumpagnu) *",
+    "cancelBookingHint": "A prupietà operativa torna ô cumpagnu e a sò idoneità â commissioni veni cancillata. Lu lead pò èssiri prenotatu n'àutra vota doppu.",
+    "cancelBookingConfirm": "Annulla la prenotazione"
   },
   "history": {
     "title": "Storia",
@@ -87,7 +94,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "L'eliggibbilità dâ cummissioni criata",
       "HANDOVER_COMPLETED": "Cunsignazzioni cumplitata",
       "ADMIN_PROTECTION_RELEASED": "L'amministraturi pubblicau prima la prutizzioni duplicata. Raggiuni: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "L'amministraturi riassignò la riggistrazzioni di {{from}} a {{to}} . Raggiuni: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "L'amministraturi riassignò la riggistrazzioni di {{from}} a {{to}} . Raggiuni: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Nu tintativu di riggistrazzioni duplicatu di n'autru cumpagnu fu rifiutatu",
+      "BOOKING_CANCELLED": "Prenotazione annullata. Raggiuni: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "La prupietà upirativa riturnata ô cumpagnu",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "L'eliggibbilità dâ cummissioni cancillata câ prenotazioni",
+      "COMMISSION_ELIGIBILITY_RESTORED": "L'eliggibbilità dâ cummissioni ristaurata pâ nova prenotazioni"
     }
   }
 }

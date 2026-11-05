@@ -43,7 +43,9 @@
       "name": "Naam",
       "city": "Stad",
       "status": "Status",
-      "actions": "Acties"
+      "actions": "Acties",
+      "protection": "Dubbele bescherming",
+      "matchOn": "Duplicaten matchen aan"
     },
     "closeReferrals": "Sluit voor verwijzingen",
     "reopen": "Heropenen",
@@ -55,6 +57,25 @@
       "add": "Project toevoegen",
       "created": "{{name}} gemaakt."
     },
-    "back": "Terug naar Bouwers"
+    "back": "Terug naar Bouwers",
+    "protection": {
+      "days_one": "{{count}} dag",
+      "days_other": "{{count}} dagen",
+      "globalDays_one": "Globale standaard ( {{count}} dag)",
+      "globalDays_other": "Algemene standaard ( {{count}} dagen)",
+      "globalDefault": "Mondiale standaard",
+      "placeholder": "Beschermingsdagen (leeg = globale standaard)",
+      "saved": "Duplicaatbeveiliging bijgewerkt voor {{name}} .",
+      "hint": "Duplicaatbescherming: 1-3650 dagen, of laat leeg om de algemene standaard van Instellingen te gebruiken. Een wijziging geldt alleen voor nieuwe registraties; bestaande behouden hun vervaldatum."
+    },
+    "matching": {
+      "global": "Mondiale standaard",
+      "globalWith": "Globale standaard ( {{fields}} )",
+      "mobile": "Mobiel nummer",
+      "email": "E-mail",
+      "both": "Mobiel nummer + e-mailadres",
+      "saved": "Dubbele overeenkomsten geüpdatet voor {{name}}",
+      "hint": "Welke gegevens maken twee inschrijvingen dezelfde klant voor een project. Voor duplicaatcheques gelden vanaf nu wijzigingen; bestaande bescherming wordt niet aangetast."
+    }
   }
 }

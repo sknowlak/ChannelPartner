@@ -30,7 +30,8 @@
       "registered": "ثبت شده است"
     },
     "booked": "رزرو شده است",
-    "empty": "هنوز هیچ ارجاعی وجود ندارد."
+    "empty": "هنوز هیچ ارجاعی وجود ندارد.",
+    "bookingCancelled": "رزرو لغو شد"
   },
   "detail": {
     "customer": "مشتری",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "رزرو تایید شد.",
       "accepted": "ارجاع پذیرفته شد",
-      "rejected": "ارجاع رد شد"
+      "rejected": "ارجاع رد شد",
+      "bookingCancelled": "رزرو لغو شد."
     },
-    "backToReferrals": "بازگشت به ارجاعات"
+    "backToReferrals": "بازگشت به ارجاعات",
+    "bookingCancelled": "رزرو لغو شد",
+    "cancelBooking": "لغو رزرو",
+    "cancelReasonLabel": "دلیل لغو (نشان داده شده به شریک) *",
+    "cancelBookingHint": "مالکیت عملیاتی به شریک باز می گردد و واجد شرایط بودن کمیسیون آنها لغو می شود. سرنخ را می توان بعداً دوباره رزرو کرد.",
+    "cancelBookingConfirm": "رزرو را لغو کنید"
   },
   "history": {
     "title": "تاریخچه",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "واجد شرایط بودن کمیسیون ایجاد شد",
       "HANDOVER_COMPLETED": "تحویل تکمیل شد",
       "ADMIN_PROTECTION_RELEASED": "ادمین حفاظت تکراری را زودتر منتشر کرد. دلیل: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "ادمین ثبت نام را از {{from}} به {{to}} واگذار کرد. دلیل: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "ادمین ثبت نام را از {{from}} به {{to}} واگذار کرد. دلیل: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "تلاش ثبت نام تکراری توسط شریک دیگر رد شد",
+      "BOOKING_CANCELLED": "رزرو لغو شد. دلیل: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "مالکیت عملیاتی به شریک بازگشت",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "واجد شرایط بودن کمیسیون با رزرو لغو شد",
+      "COMMISSION_ELIGIBILITY_RESTORED": "واجد شرایط بودن کمیسیون برای رزرو جدید بازیابی شد"
     }
   }
 }

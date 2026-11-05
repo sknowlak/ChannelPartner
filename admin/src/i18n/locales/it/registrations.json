@@ -49,8 +49,73 @@
       "newPartnerId": "Nuovo ID partner",
       "reason": "Motivo (richiesto)",
       "apply": "Applica la sostituzione",
-      "applying": "Applicazione..."
+      "applying": "Applicazione...",
+      "cancelBookingHint": "L'annullamento contrassegna la prenotazione e la relativa commissione come annullate, restituisce la proprietà operativa al partner e consente al costruttore di prenotare nuovamente questa lead.",
+      "cancelBookingConfirm": "Cancellare questa prenotazione? Anche la sua commissione viene annullata. Questo viene registrato con il tuo nome e il motivo."
     },
-    "timelineTitle": "Cronologia dell'audit (questa registrazione)"
+    "timelineTitle": "Cronologia dell'audit (questa registrazione)",
+    "bookingStatus": "Stato della prenotazione",
+    "commissionAttribution": "Attribuzione della Commissione",
+    "disputeOpen": "È aperta una controversia sulla proprietà di questo cliente: un altro partner afferma che è di sua proprietà. Si decide nella pagina Controversie.",
+    "viewDisputes": "Visualizza controversie",
+    "cancellation": {
+      "title": "Prenotazione annullata",
+      "hint": "La prenotazione e la relativa commissione vengono annullate; la proprietà operativa è tornata al partner e il costruttore può prenotare nuovamente questo vantaggio.",
+      "at": "Annullato alle",
+      "by": "Annullato da",
+      "reason": "Motivo"
+    }
+  },
+  "disputes": {
+    "title": "Controversie sulla proprietà",
+    "hint": "Un partner la cui registrazione è stata rifiutata come duplicato può contestare la proprietà del cliente. Esamina entrambe le parti e decidi.",
+    "statusFilter": "Stato della controversia",
+    "allStatuses": "Tutti gli stati",
+    "empty": "Nessuna controversia con questo stato.",
+    "columns": {
+      "dispute": "Controversia",
+      "customer": "Cliente",
+      "project": "Progetto",
+      "raisedBy": "Cresciuto da",
+      "heldBy": "Attuale proprietario",
+      "status": "Stato",
+      "raisedAt": "Cresciuto"
+    },
+    "detail": {
+      "title": "Contestazione {{id}}",
+      "raisedOn": "Cresciuto {{date}}",
+      "raisingTitle": "Cresciuto da",
+      "holderTitle": "Attuale proprietario",
+      "partner": "Partner",
+      "raisedBy": "Inserito da",
+      "customerName": "Cliente",
+      "mobile": "Mobile",
+      "alternateMobile": "Cellulare alternativo",
+      "email": "E-mail",
+      "project": "Progetto",
+      "reason": "La loro ragione",
+      "registration": "Registrazione",
+      "registeredAt": "Registrato il",
+      "referral": "Rinvio",
+      "heldMissing": "Impossibile trovare la registrazione trattenuta.",
+      "resolutionTitle": "Decisione",
+      "outcome": "Risultato",
+      "note": "Nota",
+      "decidedBy": "Deciso da",
+      "decidedAt": "Deciso",
+      "newRegistration": "Nuova registrazione",
+      "decideTitle": "Decidi questa controversia",
+      "noteLabel": "Nota esplicativa della decisione (richiesto)",
+      "noteRequired": "Scrivi una nota per decidere.",
+      "uphold": "Sostieni",
+      "overturn": "Ribaltamento",
+      "upholdEffect": "{{holder}} mantiene il cliente. La controversia è chiusa e non cambia nient'altro.",
+      "overturnEffect": "La protezione dai duplicati {{holder}} termina ora e il cliente è registrato per {{partner}} come nuova registrazione.",
+      "heldBookedHelp": "Questo cliente è prenotato tramite l'attuale proprietario. Annulla prima la prenotazione (Sostituisci l'amministratore sulla registrazione), quindi annullala:",
+      "confirmTitle": "Sei sicuro?",
+      "confirmUphold": "Sì, sostieni",
+      "confirmOverturn": "Sì, ribaltamento",
+      "back": "Torniamo alle controversie"
+    }
   }
 }

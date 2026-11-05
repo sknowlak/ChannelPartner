@@ -1,4 +1,5 @@
 require('dotenv').config();
+const crypto = require('crypto');
 const express = require('express');
 const cors = require('cors');
 const connectDB = require('./src/config/db');
@@ -42,7 +43,8 @@ app.use((req, res, next) => {
 // but should be set in production. The mobile app is unaffected (native
 // requests carry no Origin).
 const allowedOrigins = (process.env.CORS_ORIGINS || '').split(',').map((o) => o.trim()).filter(Boolean);
-app.use(cors(allowedOrigins.length ? { origin: allowedOrigins } : undefined));
+// X-Request-Id is exposed so the web apps can show it next to an error.
+app.use(cors({ ...(allowedOrigins.length ? { origin: allowedOrigins } : {}), exposedHeaders: ['X-Request-Id'] }));
 // The raw bytes are kept so incoming signed webhooks (section 51) can be
 // verified against exactly what was sent.
 const keepRawBody = (req, res, buf) => { req.rawBody = buf; };
@@ -56,10 +58,23 @@ app.use(stripOperators);
 // History timeline (section 41) show "how" an action was done without
 // threading a platform argument through every controller/service call.
 const PLATFORM_LABELS = { WEB: 'Web app', MOBILE: 'Mobile app', ADMIN: 'Admin Portal' };
+// Every request also gets a request ID (section 62): the caller's own
+// X-Request-Id when it is a sane token, otherwise a new one. It is echoed in
+// the response header, in every error body and on every audit entry the
+// request writes, so a support question ("it failed") can be traced.
+const REQUEST_ID = /^[A-Za-z0-9._:-]{8,64}$/;
 app.use((req, res, next) => {
   const header = (req.headers['x-client-platform'] || '').toUpperCase();
   const platform = PLATFORM_LABELS[header] || 'External';
-  runWithContext({ platform }, next);
+  const incoming = String(req.headers['x-request-id'] || '');
+  const requestId = REQUEST_ID.test(incoming) ? incoming : crypto.randomUUID();
+  req.requestId = requestId;
+  res.set('X-Request-Id', requestId);
+  // Error bodies sent straight from a controller get the ID too, not only
+  // the ones that go through errorHandler.
+  const json = res.json.bind(res);
+  res.json = (body) => json(res.statusCode >= 400 && body && typeof body === 'object' && !Array.isArray(body) && !body.requestId ? { ...body, requestId } : body);
+  runWithContext({ platform, requestId }, next);
 });
 
 app.get('/health', (req, res) => res.json({ status: 'ok' }));
@@ -74,7 +89,7 @@ app.use('/api/builder', builderRoutes);
 // Every client here parses errors as JSON (err.response.data.reason) -
 // Express's default 404 is an HTML page, which would otherwise reach the
 // frontend as an unparseable response instead of a normal error.
-app.use((req, res) => res.status(404).json({ reason: 'Not found' }));
+app.use((req, res) => res.status(404).json({ reason: 'Not found', requestId: req.requestId }));
 
 app.use(errorHandler);
 

@@ -30,7 +30,8 @@
       "registered": "Jugoro nying"
     },
     "booked": "Jugoro",
-    "empty": "Ju ma juoro igi podi epe."
+    "empty": "Ju ma juoro igi podi epe.",
+    "bookingCancelled": "Juweko booking"
   },
   "detail": {
     "customer": "Kastuma",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Booking ungolo.",
       "accepted": "Referral juyio.",
-      "rejected": "Referral jukwero."
+      "rejected": "Referral jukwero.",
+      "bookingCancelled": "Judaro booking."
     },
-    "backToReferrals": "Dok cen i Referrals"
+    "backToReferrals": "Dok cen i Referrals",
+    "bookingCancelled": "Juweko booking",
+    "cancelBooking": "Wek booking",
+    "cancelReasonLabel": "The lembe ma uketho juweko (junyutho ni wadi) *",
+    "cancelBookingHint": "Bedo ku twero mi tic dok cen ibang juwadi man twero migi mi cul ju daru. Jucopo ketho jatel wi tic kendu i ngeye.",
+    "cancelBookingConfirm": "Wek booking"
   },
   "history": {
     "title": "Lembe macon",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Bedo ku twero mi tic juyike",
       "HANDOVER_COMPLETED": "Handover uthum",
       "ADMIN_PROTECTION_RELEASED": "Admin uweko gwoko piny ma rom con. The lembe: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Jatel wi tic uloko rwom mi kiewo nying kud i {{from}} ni {{to}} . The lembe: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Jatel wi tic uloko rwom mi kiewo nying kud i {{from}} ni {{to}} . The lembe: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Tembe mi goyo nying pa wadi mukende jukwero",
+      "BOOKING_CANCELLED": "Judaro booking. The lembe: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Bedo ku twero mi tic udwogo ibang wadi",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Bedo ku twero mi tic juweko ku booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Bedo ku twero mi cul judwoku pi booking manyen"
     }
   }
 }

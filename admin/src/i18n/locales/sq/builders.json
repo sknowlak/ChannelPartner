@@ -43,7 +43,9 @@
       "name": "Emri",
       "city": "Qyteti",
       "status": "Statusi",
-      "actions": "Veprimet"
+      "actions": "Veprimet",
+      "protection": "Mbrojtje e dyfishtë",
+      "matchOn": "Dublikatat përputhen"
     },
     "closeReferrals": "Mbylle për referime",
     "reopen": "Rihap",
@@ -55,6 +57,25 @@
       "add": "Shto projekt",
       "created": "Krijuar {{name}} ."
     },
-    "back": "Kthehu te Ndërtuesit"
+    "back": "Kthehu te Ndërtuesit",
+    "protection": {
+      "days_one": "{{count}} ditë",
+      "days_other": "{{count}} ditë",
+      "globalDays_one": "Parazgjedhja globale ( {{count}} ditë)",
+      "globalDays_other": "Parazgjedhja globale ( {{count}} ditë)",
+      "globalDefault": "Parazgjedhja globale",
+      "placeholder": "Ditët e mbrojtjes (bosh = parazgjedhje globale)",
+      "saved": "Mbrojtja e dyfishtë u përditësua për {{name}} .",
+      "hint": "Mbrojtje e dyfishtë: 1-3650 ditë ose lëreni bosh për të përdorur parazgjedhjen globale nga Cilësimet. Një ndryshim vlen vetëm për regjistrimet e reja - ato ekzistuese ruajnë skadimin e tyre."
+    },
+    "matching": {
+      "global": "Parazgjedhja globale",
+      "globalWith": "Parazgjedhja globale ( {{fields}} )",
+      "mobile": "Numri i celularit",
+      "email": "Email",
+      "both": "Numri i celularit + emaili",
+      "saved": "Përputhja dublikatë u përditësua për {{name}}",
+      "hint": "Cilat detaje bëjnë dy regjistrime të njëjtin klient për një projekt. Ndryshimet zbatohen për kontrollet e dyfishta tani e tutje; mbrojtja ekzistuese nuk preket."
+    }
   }
 }

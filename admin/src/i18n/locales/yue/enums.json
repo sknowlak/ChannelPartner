@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "合資格",
-    "PENDING": "待定"
+    "PENDING": "待定",
+    "CANCELLED": "取消咗"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "提早釋放重複保護",
-    "REASSIGN_PARTNER": "重新分配畀另一個合作夥伴"
+    "REASSIGN_PARTNER": "重新分配畀另一個合作夥伴",
+    "CANCEL_BOOKING": "取消預訂"
   },
   "dataType": {
     "TEXT": "文字",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "超級管理員",
     "ADMIN": "管理員"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "確認咗",
+    "CANCELLED": "取消咗"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "歸因",
+    "DISPUTED": "有爭議"
+  },
+  "disputeStatus": {
+    "OPEN": "打開",
+    "UPHELD": "維持咗",
+    "OVERTURNED": "翻倒咗",
+    "WITHDRAWN": "撤回"
   }
 }

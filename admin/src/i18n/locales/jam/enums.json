@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Fit fi",
-    "PENDING": "A wait"
+    "PENDING": "A wait",
+    "CANCELLED": "Canceled"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Release duplicate protection early",
-    "REASSIGN_PARTNER": "Reassign to anodda partner"
+    "REASSIGN_PARTNER": "Reassign to anodda partner",
+    "CANCEL_BOOKING": "Cancel booking"
   },
   "dataType": {
     "TEXT": "Ritin",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super Admin",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Confirmed",
+    "CANCELLED": "Canceled"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Attributed",
+    "DISPUTED": "Disputed"
+  },
+  "disputeStatus": {
+    "OPEN": "Upin up",
+    "UPHELD": "Upheld",
+    "OVERTURNED": "Overturned",
+    "WITHDRAWN": "Withdrawn"
   }
 }

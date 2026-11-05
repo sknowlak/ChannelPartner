@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Wakwenelera",
-    "PENDING": "Kulindilira"
+    "PENDING": "Kulindilira",
+    "CANCELLED": "Kukanizgika"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Kufumiska chitetezo chakuwerezgawerezga mwaluŵiro",
-    "REASSIGN_PARTNER": "Mupelekeso kwa munyake"
+    "REASSIGN_PARTNER": "Mupelekeso kwa munyake",
+    "CANCEL_BOOKING": "Kukanizga buku"
   },
   "dataType": {
     "TEXT": "Malemba",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Admin Mukuru",
     "ADMIN": "Mulongozgi"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Kukhozgeka",
+    "CANCELLED": "Kukanizgika"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Kupelekeka",
+    "DISPUTED": "Kususkana"
+  },
+  "disputeStatus": {
+    "OPEN": "Jula",
+    "UPHELD": "Kukhozgeka",
+    "OVERTURNED": "Kugubuduzika",
+    "WITHDRAWN": "Kufumiskikapo"
   }
 }

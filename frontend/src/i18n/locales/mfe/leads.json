@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Finn rezerve",
-    "pending": "An atant"
+    "pending": "An atant",
+    "status": {
+      "CONFIRMED": "Finn rezerve",
+      "CANCELLED": "Rezervasion finn anile"
+    }
   },
   "assign": {
     "unassigned": "Pa finn atribie",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Pena proze ankor (pa finn refer)",
-    "notInList": "{{project}} (pa dan lalis proze)"
+    "notInList": "{{project}} (pa dan lalis proze)",
+    "protectionDays_one": "{{count}} -proteksion zour",
+    "protectionDays_other": "{{count}} -proteksion zour"
   },
   "journey": {
     "customer": "Klian",
@@ -76,7 +82,14 @@
     "progressHistory": "Listwar Progre",
     "timesIn": "(bann fwa dan {{timezone}} )",
     "backToMyLeads": "Retourn lor mo bann indis",
-    "editLead": "Modifie Lead"
+    "editLead": "Modifie Lead",
+    "disputeBanner": "Enn lot partener finn konteste propriete sa klian-la. Enn admin Leadrat pe examinn li - ou proteksion res anplas ziska ki zot deside.",
+    "booking": "Rezervasion",
+    "commission": "Komision",
+    "notBooked": "Pa finn rezerve",
+    "cancelledOn": "Finn anile le {{date}} .",
+    "cancelReason": "Rezon: {{reason}}",
+    "cancelledHint": "Mason-la finn kennsel rezervasion-la - propriete operasionel finn retourn avek ou e kalifikasion komision finn kennsel. Li retabli si re-rezerv lead-la."
   },
   "referral": {
     "NOT_REFERRED": "Pa finn refer (pena proze)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Konstrikter finn aksepte referans-la",
       "REFERRAL_REJECTED": "Konstrikter finn rezet referans-la. Rezon: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin finn pibliye proteksion doub boner. Rezon: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin finn re-asign lanrezistreman depi {{from}} ziska {{to}} . Rezon: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin finn re-asign lanrezistreman depi {{from}} ziska {{to}} . Rezon: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Enn tantativ lanrezistreman doub par enn lot partener finn rezete",
+      "BOOKING_CANCELLED": "Rezervasion finn anile. Rezon: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Propriete operasionel finn retourn a partener-la",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kalifikasion komision finn anile avek rezervasion",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kalifikasion pou komision finn retourne pou nouvo rezervasion",
+      "OWNERSHIP_DISPUTE_RAISED": "Enn lot partener finn konteste propriete sa klian-la - enn admin Leadrat pou examinn li",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Konfli lor propriete lor sa klian-la finn retire - ou propriete pa finn sanze",
+      "OWNERSHIP_DISPUTE_UPHELD": "Konfli lor propriete lor sa klian-la finn examine - ou propriete finn konfirme",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Finn anrezistre apre ki ou konfli lor propriete finn deside dan ou faver. Not: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Proteksion finn fini: enn diskision lor propriete finn deside an faver enn lot partener. Not: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Sa nimero telefonn-la pa valid pou {{country}} .",
     "COUNTRY_MISMATCH": "Silvouple swazir bon kod pei.",
     "NOT_MOBILE": "Silvouple met enn nimero portab, pa enn telefonn fix."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komision elizib",
+      "PENDING": "Komision an atant",
+      "CANCELLED": "Komision finn anile"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Finn atribie a ou",
+      "DISPUTED": "Atribision finn konteste"
+    }
+  },
+  "result": {
+    "none": "Pena okenn rezilta lanrezistreman pou montre. Anrezistre enn lead avan.",
+    "acceptedTitle": "Lead finn anrezistre",
+    "rejectedTitle": "Lead pa finn anrezistre",
+    "protectionWindow": "Lafnet Proteksion",
+    "protectedUntil": "Proteze ziska",
+    "openLead": "Ouver Lead",
+    "addAnother": "Azout enn lot lead",
+    "duplicate": "Doub - deza proteze",
+    "duplicateHint": "Sa klian-la deza proteze pou sa proze-la par enn lot lanrezistreman, alor li pa finn kapav anrezistre pou ou.",
+    "existingProtectedUntil": "Lanrezistreman ki deza existe proteze ziska"
+  },
+  "disputes": {
+    "title": "Mo bann diskision",
+    "intro": "Bann diskision lor propriete ki ou finn souleve pou bann klian ki finn refize kouma bann doub. Enn admin Leadrat examinn sakenn.",
+    "empty": "Ou pa finn soulev okenn diskision. Si enn klian ki ou finn amene finn refize kouma enn doub, ou kapav konteste li apartir rezilta lanrezistreman.",
+    "columns": {
+      "dispute": "Diskision",
+      "reason": "Ou rezon",
+      "outcome": "Rezilta"
+    },
+    "status": {
+      "OPEN": "An revizion",
+      "UPHELD": "Pa dan to faver",
+      "OVERTURNED": "Finn desid dan ou faver",
+      "WITHDRAWN": "Finn retire"
+    },
+    "awaitingReview": "Pe atann revi admin",
+    "openNewLead": "Ouver ou lead {{id}}",
+    "withdraw": "Tire",
+    "withdrawConfirm": "Retir ou diskision pou {{name}} ? Propriete aktyel res kouma li ete.",
+    "raise": "Konfli lor propriete",
+    "raiseTitle": "Konfli lor propriete",
+    "raiseHint": "Si sa klian-la finn vinn ver ou an premie, explik li kifer. Enn admin Leadrat pou examinn li; si zot desid dan ou faver, lead-la finn anrezistre pou ou.",
+    "reasonLabel": "Kifer sa klian-la pou ou?",
+    "reasonMin_one": "Omwin {{count}} karakter.",
+    "reasonMin_other": "Omwin {{count}} karakter.",
+    "submit": "Avoy diskision",
+    "notProtected": "Personn nepli ena proteksion lor sa klian-la pou sa proze-la - ou kapav anrezistre lead-la aster-la mem.",
+    "raised": "Konfli {{id}} finn avoy pou revizion.",
+    "viewAll": "Get mo bann diskision"
+  },
+  "dashboard": {
+    "title": "Tablo-bord",
+    "period": "Peryod",
+    "lastDays_one": "{{count}} zour",
+    "lastDays_other": "{{count}} zour",
+    "emptyTitle": "Bienveni! Ou pena okenn indis ankor.",
+    "emptyHint": "Anrezistre ou premie lead - ou pipeline, bann rezervasion ek bann dat limit pou proteksion pou aparet isi.",
+    "tiles": {
+      "leads": "Total bann lead",
+      "newInPeriod_one": "{{count}} nouvo dan sa peryod-la",
+      "newInPeriod_other": "{{count}} nouvo dan sa peryod-la",
+      "accepted": "Finn aksepte",
+      "booked": "Finn rezerve",
+      "bookedInPeriod_one": "{{count}} finn rezerve dan sa peryod-la",
+      "bookedInPeriod_other": "{{count}} finn rezerve dan sa peryod-la",
+      "conversion": "Konversion",
+      "conversionHint": "Bann lead ki finn rezerve kouma enn par bann lead ki finn aksepte",
+      "protectedNow": "Proteze aster",
+      "expiringSoon_one": "Proteksion ki fini dan {{count}} zour",
+      "expiringSoon_other": "Proteksion ki fini dan {{count}} zour",
+      "disputedNow": "Konteste par lezot",
+      "disputedNowHint": "Ou bann lead avek enn diskision lor propriete ouver depi enn lot partener",
+      "commissionEligible": "Komision elizib",
+      "commissionCancelled_one": "{{count}} finn anile",
+      "commissionCancelled_other": "{{count}} finn anile"
+    },
+    "chart": {
+      "title_one": "Inskrision ek rezervasion par zour - dernie {{count}} zour",
+      "title_other": "Bann lanrezistreman ek rezervasion par zour - dernie {{count}} zour",
+      "registrations": "Bann lanrezistreman",
+      "bookings": "Bann rezervasion"
+    },
+    "byStage": "Bann lead par stati",
+    "bySource": "Bann indis par sours",
+    "byReferral": "Bann lead par stati referans",
+    "myDisputes": "Bann diskision ki ou finn souleve",
+    "noDisputes": "Pena okenn diskision ki finn souleve.",
+    "unknown": "Pa finn fixe",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM extern (simile)",
+      "PARTNER_CRM": "Finn azoute par ou lekip",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integrasion",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Proteksion pe expire dan prosin {{count}} zour",
+    "expiringTitle_other": "Proteksion pe expire dan prosin {{count}} zour",
+    "expiringEmpty": "Okenn diplon pa perdi so proteksion dan sa lafnet-la."
   }
 }

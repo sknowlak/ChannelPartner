@@ -30,7 +30,8 @@
       "registered": "Mying jahpan bang da sai"
     },
     "booked": "Book galaw da sai",
-    "empty": "Referral n galaw shi ai."
+    "empty": "Referral n galaw shi ai.",
+    "bookingCancelled": "Booking hpe jahkring kau ai"
   },
   "detail": {
     "customer": "Gunrai mari ai wa",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Booking galaw sai.",
       "accepted": "Referral hpe hkap la sai.",
-      "rejected": "Referral hpe ningdang kau ai."
+      "rejected": "Referral hpe ningdang kau ai.",
+      "bookingCancelled": "Booking hpe jahkring kau ai."
     },
-    "backToReferrals": "Referral ni de bai wa na"
+    "backToReferrals": "Referral ni de bai wa na",
+    "bookingCancelled": "Booking hpe jahkring kau ai",
+    "cancelBooking": "Booking hpe jahkring kau u",
+    "cancelReasonLabel": "Hpa majaw jahkring kau ai (partner hpe madun dan ai) *",
+    "cancelBookingHint": "Operational madu ai lam gaw partner de bai nhtang wa nna shanhte a commission ahkaw ahkang hpe dawm kau ya ai. Lead hpe hpang de bai booking galaw mai ai.",
+    "cancelBookingConfirm": "Booking hpe jahkring kau u"
   },
   "history": {
     "title": "Labau",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Komishin hkam la mai ai lam hpe hpaw da sai",
       "HANDOVER_COMPLETED": "Ap ya ngut sai",
       "ADMIN_PROTECTION_RELEASED": "Admin gaw duplicate makawp maga lam hpe shawng shapraw kau sai. Hpa majaw: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin gaw {{from}} kaw nna {{to}} de bai masat da ai. Hpa majaw: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin gaw {{from}} kaw nna {{to}} de bai masat da ai. Hpa majaw: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Kaga manang langai mi mying jahpan bang na matu shakut ai hpe ningdang kau hkrum ai",
+      "BOOKING_CANCELLED": "Booking hpe jahkring kau ai. Hpa majaw: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Bungli madu ai lam hpe manang wa hpang de bai nhtang jaw ai",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Booking galaw ai hte rau Commission lu na ahkaw ahkang hpe dawm kau sai.",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Booking nnan a matu Commission ahkaw ahkang bai gram lajang ya sai"
     }
   }
 }

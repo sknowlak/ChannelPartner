@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Prenotatu",
-    "pending": "Aspittannu"
+    "pending": "Aspittannu",
+    "status": {
+      "CONFIRMED": "Prenotatu",
+      "CANCELLED": "Prenotazione cancillata"
+    }
   },
   "assign": {
     "unassigned": "Nun assignatu",
@@ -58,7 +62,10 @@
   },
   "project": {
     "none": "Ancora nuddu pruggettu (nun rifiritu)",
-    "notInList": "{{project}} (nun nun è nnâ lista di pruggetti)"
+    "notInList": "{{project}} (nun nun è nnâ lista di pruggetti)",
+    "protectionDays_one": "{{count}} -prutizzioni di jornu",
+    "protectionDays_many": "{{count}} -prutizzioni di jornu",
+    "protectionDays_other": "{{count}} -prutizzioni di jornu"
   },
   "journey": {
     "customer": "Clienti",
@@ -76,7 +83,14 @@
     "progressHistory": "Storia dû prugressu",
     "timesIn": "(tempi nta {{timezone}} )",
     "backToMyLeads": "Torna ê me leads",
-    "editLead": "Mudifica Lead"
+    "editLead": "Mudifica Lead",
+    "disputeBanner": "N’àutru cumpagnu havi cuntistatu a prupietàti ri chistu clienti. N'amministraturi Leadrat lu sta esaminannu - la tò prutizzioni arrimani 'n postu nzinu a quannu nun dicidunu.",
+    "booking": "Prenotazione",
+    "commission": "Cummissioni",
+    "notBooked": "Nun è prenotata",
+    "cancelledOn": "Cancillatu lu {{date}} .",
+    "cancelReason": "Raggiuni: {{reason}}",
+    "cancelledHint": "Lu costruttori annullau la prenotazzioni - la prupietà upirativa è tornata cu voi e l'eliggibbilità pâ cummissioni è annullata. Veni ristauratu si lu lead veni prenotatu n'autra vota."
   },
   "referral": {
     "NOT_REFERRED": "Nun è rifiritu (nuddu pruggettu)",
@@ -162,7 +176,17 @@
       "REFERRAL_ACCEPTED": "Lu costruttori accittàu lu rinviu",
       "REFERRAL_REJECTED": "Lu costruttori rifiutò lu rinviu. Raggiuni: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "L'amministraturi pubblicau prima la prutizzioni duplicata. Raggiuni: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "L'amministraturi riassignò la riggistrazzioni di {{from}} a {{to}} . Raggiuni: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "L'amministraturi riassignò la riggistrazzioni di {{from}} a {{to}} . Raggiuni: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Nu tintativu di riggistrazzioni duplicatu di n'autru cumpagnu fu rifiutatu",
+      "BOOKING_CANCELLED": "Prenotazione annullata. Raggiuni: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "La prupietà upirativa riturnata ô cumpagnu",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "L'eliggibbilità dâ cummissioni cancillata câ prenotazioni",
+      "COMMISSION_ELIGIBILITY_RESTORED": "L'eliggibbilità dâ cummissioni ristaurata pâ nova prenotazioni",
+      "OWNERSHIP_DISPUTE_RAISED": "N’àutru cumpagnu cuntistò a prupietàti ri chistu clienti - n’amministraturi Leadrat lu rividerà",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "La cuntraversa di prupietà supra stu clienti fu ritirata - la tò prupietà nun cancia",
+      "OWNERSHIP_DISPUTE_UPHELD": "La cuntraversa di prupietà supra stu clienti fu rivista - la tò prupietà è cunfirmata",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Arrigistratu doppu ca la tò cuntraversa di prupietà fu dicisa a tò favuri. Nota: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "La prutizzioni finìu: na cuntraversa di prupietà fu dicisa a favuri di n'autru cumpagnu. Nota: {{note}}"
     }
   },
   "columnsPanel": {
@@ -186,5 +210,116 @@
     "INVALID_FOR_COUNTRY": "Stu nùmmiru di tilèfunu nun è validu pi {{country}} .",
     "COUNTRY_MISMATCH": "Scegghi lu còdici dû paisi giustu.",
     "NOT_MOBILE": "Diggìri nu nùmmaru mòbbili, no nu nùmmaru fissu."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Ammissibbili â cummissioni",
+      "PENDING": "Cummissiuni 'n attesa",
+      "CANCELLED": "Cummissiuni cancillata"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Attribbuitu a tia",
+      "DISPUTED": "L'attribbuzzioni cuntistata"
+    }
+  },
+  "result": {
+    "none": "Nuḍḍu risultatu di iscrizzioni pi mustrari. Arrigistra prima nu lead.",
+    "acceptedTitle": "Chiummu arrigistratu",
+    "rejectedTitle": "Chiummu nun arrigistratu",
+    "protectionWindow": "Finestra di prutizzioni",
+    "protectedUntil": "Prutettu finu a",
+    "openLead": "Chiummu apertu",
+    "addAnother": "Aggiungi n'autru lead",
+    "duplicate": "Duplicatu - già prutettu",
+    "duplicateHint": "Stu clienti è già prutettu pi stu pruggettu di n'autra arrigistrazzioni, quinni nun putìa èssiri arrigistratu pi tia.",
+    "existingProtectedUntil": "Riggistrazzioni esistenti prutetta nzinu ô 2019"
+  },
+  "disputes": {
+    "title": "Li me cuntruversî",
+    "intro": "Li cuntruversî ri prupietà ca sullivàsti pì clienti ca foru rifiutati comu duplicati. N'amministraturi Leadrat rividi ognunu.",
+    "empty": "Nun hai sullivatu nuḍḍa cuntraversa. Si nu clienti ca purtasti veni rifiutatu comu duplicatu, pò cuntèstarilu dô risultatu dâ iscrizzioni.",
+    "columns": {
+      "dispute": "Sciarra",
+      "reason": "La tò raggiuni",
+      "outcome": "Risurtatu"
+    },
+    "status": {
+      "OPEN": "Sutta rivisioni",
+      "UPHELD": "Nun a vostru favuri",
+      "OVERTURNED": "Dicisu a vostru favuri",
+      "WITHDRAWN": "Ritiratu"
+    },
+    "awaitingReview": "Aspittannu la ricinsioni di l'amministraturi",
+    "openNewLead": "Apri lu to lead {{id}}",
+    "withdraw": "Arritirari",
+    "withdrawConfirm": "Ritira la tò cuntraversa pi {{name}} ? La prupietà attuali arrista comu è.",
+    "raise": "Prupietà cuntruversa",
+    "raiseTitle": "Prupietà cuntruversa",
+    "raiseHint": "Si chistu clienti ti vinni prima, spiega picchì. N'amministraturi Leadrat lu rividerà; si dicidunu a tò favuri, lu chiummu è arrigistratu pi tia.",
+    "reasonLabel": "Picchì stu clienti è tò?",
+    "reasonMin_one": "Armenu lu caràttari {{count}} .",
+    "reasonMin_many": "Armenu li carattari {{count}} .",
+    "reasonMin_other": "Armenu li carattari {{count}} .",
+    "submit": "Manda cuntraversa",
+    "notProtected": "Nuḍḍu havi cchiù prutizzioni supra chistu clienti pi chistu pruggettu - ora si pò arrigistrari lu lead.",
+    "raised": "Cuntintraversa {{id}} mannata pâ rivisioni.",
+    "viewAll": "Vidi li me cuntruversî"
+  },
+  "dashboard": {
+    "title": "Cruscottu",
+    "period": "Puntu",
+    "lastDays_one": "{{count}} jornu",
+    "lastDays_many": "{{count}} jorna",
+    "lastDays_other": "{{count}} jorna",
+    "emptyTitle": "Bimminutu! Nun hai ancora leads.",
+    "emptyHint": "Arrigistra u tò primu lead - u tò pipeline, li tò scadenzi pâ prutizzioni cumpàrinu ccà.",
+    "tiles": {
+      "leads": "Tutali di leads",
+      "newInPeriod_one": "{{count}} novu nta stu pirìudu",
+      "newInPeriod_many": "{{count}} novu nta stu pirìudu",
+      "newInPeriod_other": "{{count}} novu nta stu pirìudu",
+      "accepted": "Accittatu",
+      "booked": "Prenotatu",
+      "bookedInPeriod_one": "{{count}} riservatu nta stu pirìudu",
+      "bookedInPeriod_many": "{{count}} riservatu nta stu pirìudu",
+      "bookedInPeriod_other": "{{count}} riservatu nta stu pirìudu",
+      "conversion": "Cunvirsioni",
+      "conversionHint": "Li leads prenotati comu quota dî leads accittàti",
+      "protectedNow": "Prutettu ora",
+      "expiringSoon_one": "Prutizzioni ca finisci pi {{count}} jornu",
+      "expiringSoon_many": "Prutizzioni ca finisci pi {{count}} jorna",
+      "expiringSoon_other": "Prutizzioni ca finisci pi {{count}} jorna",
+      "disputedNow": "Cuntistatu di àutri",
+      "disputedNowHint": "Li tò leads cu 'na cuntraversa aperta ri prupietàti ri n’autru cumpagnu",
+      "commissionEligible": "Ammissibbili â cummissioni",
+      "commissionCancelled_one": "{{count}} cancillatu",
+      "commissionCancelled_many": "{{count}} cancillatu",
+      "commissionCancelled_other": "{{count}} cancillatu"
+    },
+    "chart": {
+      "title_one": "Iscrizzioni e prenotazzioni ô jornu - ùrtimu {{count}} jornu",
+      "title_many": "Iscrizzioni e prenotazzioni ô jornu - ùrtimi {{count}} jorna",
+      "title_other": "Iscrizzioni e prenotazzioni ô jornu - ùrtimi {{count}} jorna",
+      "registrations": "Iscrizzioni",
+      "bookings": "Prenotazioni"
+    },
+    "byStage": "Leads pi statu",
+    "bySource": "Leads pi funti",
+    "byReferral": "Leads pi statu di rinviu",
+    "myDisputes": "Liti ca hai sullivatu",
+    "noDisputes": "Nun ci foru cuntruversî.",
+    "unknown": "Nun è stabbilìtu",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM esternu (simulatu)",
+      "PARTNER_CRM": "Aggiuntu dâ tò squatra",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Ntigrazzioni",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "La prutizzioni scadi ntô jornu {{count}} appressu",
+    "expiringTitle_many": "La prutizzioni scadi ntê pròssimi jorna {{count}}",
+    "expiringTitle_other": "La prutizzioni scadi ntê pròssimi jorna {{count}}",
+    "expiringEmpty": "Nuḍḍu chiummu pirdi la so prutizzioni nta sta finestra."
   }
 }

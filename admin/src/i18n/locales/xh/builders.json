@@ -43,7 +43,9 @@
       "name": "Igama",
       "city": "Isixeko",
       "status": "Ubume",
-      "actions": "Izenzo"
+      "actions": "Izenzo",
+      "protection": "Ukukhuselwa kabini",
+      "matchOn": "Iikopi zomdlalo zivuliwe"
     },
     "closeReferrals": "Vala ukuthunyelwa",
     "reopen": "Phinda uvule",
@@ -55,6 +57,25 @@
       "add": "Yongeza iProjekthi",
       "created": "Yenziwe {{name}} ."
     },
-    "back": "Buyela kubakhi"
+    "back": "Buyela kubakhi",
+    "protection": {
+      "days_one": "{{count}} usuku",
+      "days_other": "{{count}} iintsuku",
+      "globalDays_one": "Ummiselo jikelele ( {{count}} usuku)",
+      "globalDays_other": "Ukumiselwa kwelizwe jikelele ( {{count}} iintsuku)",
+      "globalDefault": "Ukungagqibeki kwehlabathi",
+      "placeholder": "Iintsuku zokhuseleko (ezingenanto = ukusilela jikelele)",
+      "saved": "Ukhuseleko oluphindwe kabini luhlaziyiwe {{name}} .",
+      "hint": "Ukukhuselwa okuphindwe kabini: Iintsuku ezi-1-3650, okanye ushiye ungenanto ukuze usebenzise ukusilela kwehlabathi kwiSetingi. Utshintsho lusebenza kuphela kubhaliso olutsha - olukhoyo lugcina ixesha labo lokuphelelwa."
+    },
+    "matching": {
+      "global": "Ukungagqibeki kwehlabathi",
+      "globalWith": "Ukumiselwa kwehlabathi jikelele ( {{fields}} )",
+      "mobile": "Inombolo kanomyayi",
+      "email": "I-imeyile",
+      "both": "Inombolo yeselula + i-imeyile",
+      "saved": "Ukuphindaphinda okufanayo kuhlaziywe {{name}}",
+      "hint": "Zeziphi iinkcukacha ezenza ubhaliso kabini umthengi ofanayo kwiprojekthi. Utshintsho luyasebenza kwiitshekhi eziphindwe kabini ukusuka ngoku ukuya phambili; ukhuseleko olukhoyo aluchaphazeleki."
+    }
   }
 }

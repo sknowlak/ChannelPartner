@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Ka geupeusapat",
-    "pending": "Meusangkot"
+    "pending": "Meusangkot",
+    "status": {
+      "CONFIRMED": "Ka geupeusapat",
+      "CANCELLED": "Pemesanan ka dibatalkan"
+    }
   },
   "assign": {
     "unassigned": "Hana geubri tugaih",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Hana proyek lom (hana dirujuk)",
-    "notInList": "{{project}} (hana lam daftar proyek)"
+    "notInList": "{{project}} (hana lam daftar proyek)",
+    "protectionDays_one": "{{count}} -uroe peulindong",
+    "protectionDays_other": "{{count}} -uroe peulindong"
   },
   "journey": {
     "customer": "Peulanggan",
@@ -76,7 +82,14 @@
     "progressHistory": "Seujarah Kemajuan",
     "timesIn": "(watee lam {{timezone}} )",
     "backToMyLeads": "Kembali ke Leads Lon",
-    "editLead": "Sunting Lead"
+    "editLead": "Sunting Lead",
+    "disputeBanner": "Mitra laen ka geu bantah hak milek ateuh pelanggan nyoe. Saboh admin Leadrat teungoh geutinjau - perlindungan droeneuh teutap na bak teumpat sampoe awak nyan geucok keputusan.",
+    "booking": "Peumesanan",
+    "commission": "Komisi",
+    "notBooked": "Hana dipeusapat",
+    "cancelledOn": "Geupeubatal bak {{date}} .",
+    "cancelReason": "Alasan: {{reason}}",
+    "cancelledHint": "Pembangun geubatasi booking - kepemilikan operasional ka kembali ngon droeneuh dan kelayakan komisi ka geubatasi. Nyan ka geupeugot lom meunyo lead ka geupeusapat lom."
   },
   "referral": {
     "NOT_REFERRED": "Hana dirujuk (hana proyek)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Pembangunan ka geuterimong rujukan nyan",
       "REFERRAL_REJECTED": "Builder geutulak rujukan nyan. Alasan: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin geupeuteubiet perlindungan duplikat awai. Alasan: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin geubri lom pendaftaran dari {{from}} keu {{to}} . Alasan: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin geubri lom pendaftaran dari {{from}} keu {{to}} . Alasan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Upaya pendaftaran duplikat le pasangan laen ditulak .",
+      "BOOKING_CANCELLED": "Pemesanan ka dibatalkan. Alasan: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Peumiléhan operasional geubri pulang keu mitra .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kelayakan komisi dibatalkan deungon pemesanan .",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kelayakan komisi dipulihkan untuk pemesanan baro .",
+      "OWNERSHIP_DISPUTE_RAISED": "Mitra laen geuperdebatkan hak milek pelanggan nyoe - sidroe admin Leadrat akan geutinjau .",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Perselisihan hak milék ateuëh pelanggan nyoe ka ditarek - hak milék droëneuh hana meuubah .",
+      "OWNERSHIP_DISPUTE_UPHELD": "Perselisihan hak milék ateuëh pelanggan nyoe ka geutinjau - hak milék droëneuh ka geupeusah",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Didaftar lheuh perselisihan hak milek droeneuh diputuskan memihak droeneuh. Catatan: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Perlindungan ka berakhe: perselisihan kepemilikan diputuskan memihak keu mitra laen. Catatan: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Lumbôi telônpun nyoe hana sah keu {{country}} .",
     "COUNTRY_MISMATCH": "Neupiléh kode nanggroë nyang beutôi.",
     "NOT_MOBILE": "Neupasoe nomor handphone, kon nomor darat."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisi nyang layak",
+      "PENDING": "Komisi teungoh geupreh",
+      "CANCELLED": "Komisi ka geubatasi"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Dikaitkan keu droeneuh",
+      "DISPUTED": "Atribusi dipeubantah"
+    }
+  },
+  "result": {
+    "none": "Hana hasil pendaftaran keu peutunyok. Daftar lead dilee.",
+    "acceptedTitle": "Timbal terdaftar",
+    "rejectedTitle": "Timbal hana terdaftar",
+    "protectionWindow": "Jeundela Peulindông",
+    "protectedUntil": "Dilindong Sampoe 2019.",
+    "openLead": "Buka Lead",
+    "addAnother": "Tambah Lead Laen .",
+    "duplicate": "Duplikat - ka geujaga .",
+    "duplicateHint": "Pelanggan nyoe ka geulindong keu proyek nyoe le pendaftaran laen, jadi hana jeut geudaftar keu droeneuh.",
+    "existingProtectedUntil": "Pendaftaran nyang ka na geulindong sampoe thon 2019."
+  },
+  "disputes": {
+    "title": "Perselisihan lon",
+    "intro": "Perselisihan kepemilikan nyang droeneuh peugot keu pelanggan nyang ditulak seubagoe duplikat. Saboh admin Leadrat geu ulasan maseng-maseng.",
+    "empty": "Gata hana tapeudong peukara sapeue. Meunyo pelanggan nyang droeneuh ba ditulak seubagoe duplikat, droeneuh jeut neu bantah dari hasil pendaftaran.",
+    "columns": {
+      "dispute": "Meudawa",
+      "reason": "Alasan droeneuh",
+      "outcome": "Hasee"
+    },
+    "status": {
+      "OPEN": "Teungoh geutinjau",
+      "UPHELD": "Hana memihak keu droeneuh",
+      "OVERTURNED": "Diputuskan memihak droeneuh .",
+      "WITHDRAWN": "Ditarek"
+    },
+    "awaitingReview": "Teungoh preh ulasan admin .",
+    "openNewLead": "Buka lead droeneuh {{id}}",
+    "withdraw": "Tarek",
+    "withdrawConfirm": "Tarek pertikaian droeneuh keu {{name}} ? Peumiléhan jinoë teutap lagèë nyan.",
+    "raise": "Sengketa hak milék",
+    "raiseTitle": "Sengketa hak milék",
+    "raiseHint": "Meunyo pelanggan nyoe teuka bak droeneuh dilee, neubri penjelasan pakon. Sidroe admin Leadrat akan geu-review; meunyo awaknyan jicok keuputosan nyang meunfaat keu gata, timbal balik nyan teudaftar keu gata.",
+    "reasonLabel": "Pakon pelanggan nyoe atra droeneuh?",
+    "reasonMin_one": "Paleng kureung {{count}} karakter.",
+    "reasonMin_other": "Paleng kureuëng {{count}} aksara.",
+    "submit": "Kirem Perselisihan",
+    "notProtected": "Hana soe nyang mat perlindungan ateuh pelanggan nyoe keu proyek nyoe le - droeneuh jeut neu daftar lead jinoe.",
+    "raised": "Sengketa {{id}} geukirém keu geu-eu lom.",
+    "viewAll": "Neu kalon pertikaian lon"
+  },
+  "dashboard": {
+    "title": "Dasbor",
+    "period": "Watei",
+    "lastDays_one": "{{count}} uroe",
+    "lastDays_other": "{{count}} uroe",
+    "emptyTitle": "Saleuem! Kamoe hana lead lom.",
+    "emptyHint": "Daftar lead phon droeneuh - pipeline droeneuh, pemesanan dan batas watee perlindungan akan deuh disino.",
+    "tiles": {
+      "leads": "Jumlah lead",
+      "newInPeriod_one": "{{count}} barô lam masa nyoe",
+      "newInPeriod_other": "{{count}} barô lam masa nyoe",
+      "accepted": "Teurimong",
+      "booked": "Ka geupeusapat",
+      "bookedInPeriod_one": "{{count}} nyang ka geupeusapat lam masa nyoe",
+      "bookedInPeriod_other": "{{count}} nyang ka geupeusapat lam masa nyoe",
+      "conversion": "Peuubah",
+      "conversionHint": "Lead nyang ka geupeusapat seubagoe bagian dari lead nyang ka geuterimong .",
+      "protectedNow": "Dilindong jinoe",
+      "expiringSoon_one": "Peulindông nyang meuakhé bak {{count}} uroë",
+      "expiringSoon_other": "Peulindông nyang meuakhé bak {{count}} uroë",
+      "disputedNow": "Geu bantah le gob .",
+      "disputedNowHint": "Leads droeneuh ngon perselisihan kepemilikan terbuka dari mitra laen",
+      "commissionEligible": "Komisi nyang layak",
+      "commissionCancelled_one": "{{count}} ka geubatasi",
+      "commissionCancelled_other": "{{count}} ka geubatasi"
+    },
+    "chart": {
+      "title_one": "Pendaftaran ngon peumesanan siuroe - uroe {{count}} nyang akhé",
+      "title_other": "Pendaftaran ngon peumesanan siuroe - uroe {{count}} nyang akhé",
+      "registrations": "Pendaftaran",
+      "bookings": "Peumesanan"
+    },
+    "byStage": "Memimpin meunurot status",
+    "bySource": "Memimpin meunurot sumber",
+    "byReferral": "Memimpin meunurot status rujukan",
+    "myDisputes": "Perselisihan nyang droeneuh peugot",
+    "noDisputes": "Hana pertikaian nyang dipeugot.",
+    "unknown": "Hana set",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM luwa (disimulasikan)",
+      "PARTNER_CRM": "Geutamah le tim droeneuh",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integrasi",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Peulindông meuakhé bak uroë {{count}} ukeuë",
+    "expiringTitle_other": "Perlindungan akan tamat lam {{count}} uroe ukeu",
+    "expiringEmpty": "Hana timah nyang gadôh peulindông lam jeundela nyoe."
   }
 }

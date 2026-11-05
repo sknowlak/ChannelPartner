@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "I nger iti",
-    "pending": "Wa iyol I eren"
+    "pending": "Wa iyol I eren",
+    "status": {
+      "CONFIRMED": "I nger iti",
+      "CANCELLED": "I de u eren booking"
+    }
   },
   "assign": {
     "unassigned": "I na un tom ga",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Project ngu ga (i nger kwagh sha mi ga)",
-    "notInList": "{{project}} (ka ken list u tom la ga)"
+    "notInList": "{{project}} (ka ken list u tom la ga)",
+    "protectionDays_one": "{{count}} -mkor u ayange",
+    "protectionDays_other": "{{count}} -mkor u ayange"
   },
   "journey": {
     "customer": "Orkasua",
@@ -76,7 +82,14 @@
     "progressHistory": "Kwagh u Mzehemen",
     "timesIn": "(ashighe ken {{timezone}} )",
     "backToMyLeads": "Hide hen Hemen Wam .",
-    "editLead": "Sor kwagh u hemen"
+    "editLead": "Sor kwagh u hemen",
+    "disputeBanner": "Orgen u se eren tom vea na yô, nan gba anyiman sha kwagh u or u nan lu a kasua ne yô. Or u hemen Leadrat ngu nengen sha mi - mkor wou ngu her zan zan vea kar tsuan kwagh.",
+    "booking": "U eren booking",
+    "commission": "Tom",
+    "notBooked": "I nger iti ga",
+    "cancelledOn": "I vihi sha {{date}} .",
+    "cancelReason": "Ityôkyaa: {{reason}}",
+    "cancelledHint": "Or u maan kwagh la yange vihi mzough u eren tom la - mlu u lun a ian i eren tom la hide hen a we shi i vihi mlu u eren tom la kpaa. I hide i ver un aluer i hide i nger lead la yô."
   },
   "referral": {
     "NOT_REFERRED": "I tindi un ga (tom ngu ga)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Or u maan kwagh la lumun a kwagh u i tindi un la.",
       "REFERRAL_REJECTED": "Builder yange venda kwagh u i tindi un la. Ityôkyaa: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Orvesen due a kwagh u kuran iyol sha shighe vough. Ityôkyaa: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Orvesen hide ver iti i ngeren iti sha {{from}} hingir {{to}} . Ityôkyaa: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Orvesen hide ver iti i ngeren iti sha {{from}} hingir {{to}} . Ityôkyaa: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "I venda kwagh u orgen u nan lu eren tom imôngo la nan nôngo ér nana nger iti i nan yô.",
+      "BOOKING_CANCELLED": "I vihi booking. Ityôkyaa: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "I hide a kwagh u eren tom a mi la hen or u nan lu a mi la.",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "I vihi mlu u eren tom u i yer ér commission la sha u eren booking.",
+      "COMMISSION_ELIGIBILITY_RESTORED": "I hide i na ior ian i eren tom u i yer ér booking u he la.",
+      "OWNERSHIP_DISPUTE_RAISED": "Orgen u nan lu a na imôngo la gba anyiman sha kwagh u or u nan lu yamen kwagh ne yô - or u nengen sha Leadrat una nenge sha mi .",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "I dugh anyiman a sha kwagh u or u nan lu a mi la kera - kwagh wou gema ga",
+      "OWNERSHIP_DISPUTE_UPHELD": "I hide i nenge sha anyiman a sha kwagh u or u nan lu a mi la - i fa er u lu or u nan yô",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "I nger iti you shighe u i kure ijir i u lu a mi la sha ci wou kera yô. Fa wer: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Mkor yange bee: i kure ijir i sha kwagh u or u nan lu a kwagh la sha ci u orgen u nan er tom vea na yô. Fa wer: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Namba u telefon ne ngu sha ci u {{country}} ga.",
     "COUNTRY_MISMATCH": "Wea soo yô, tsua kwagh u u soo u eren yô.",
     "NOT_MOBILE": "We a rumun yô, nger namba u telefon wou, i de lu u telefon wou ga."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komishen u a kom yô",
+      "PENDING": "Komishen ngu keghen",
+      "CANCELLED": "I vihi tom u komiti la"
+    },
+    "attribution": {
+      "ATTRIBUTED": "I kaa ér ka we .",
+      "DISPUTED": "I gba anyiman sha kwagh u i ne un la"
+    }
+  },
+  "result": {
+    "none": "Kwagh u i nger sha mi la ngu ga. Register u or u nan lu hemen la hiihii.",
+    "acceptedTitle": "I nger iti i Lead",
+    "rejectedTitle": "I nger iti i Lead ga .",
+    "protectionWindow": "Windo u Mkor",
+    "protectedUntil": "I kura un zan zan 2019.",
+    "openLead": "Bugh Lead",
+    "addAnother": "Seer Hemen ugen .",
+    "duplicate": "Kwagh u i nger kwa har - i vande kuran un",
+    "duplicateHint": "I vande kuran or u nan lu yamen kwagh ne sha ci u tom ne sha u ngeren iti igen, nahan yange i kera nger iti sha ci wou ga.",
+    "existingProtectedUntil": "I nger ati a ior mba ve lu her la zan zan inyom i 2019 la."
+  },
+  "disputes": {
+    "title": "Mbamzough Av",
+    "intro": "Akaa a yange u va a mi sha kwagh u mbayamen kwagh, a yange i venda ér i lu ikyav mbi eren tom a mi la. Or u hemen Leadrat ka nan nenge sha hanma kwagh cii.",
+    "empty": "U ngu a ôr kwagh u anyiman ga. Aluer i venda or u u va a nan ér nana er kwagh u nan soo la yô, u ngu a ôr kwagh u nan sha kwagh u nan nger la.",
+    "columns": {
+      "dispute": "Ayoosu",
+      "reason": "Ityôkyaa you .",
+      "outcome": "Za kure"
+    },
+    "status": {
+      "OPEN": "Mba nengen sha mi",
+      "UPHELD": "Ka sha ci wou ga .",
+      "OVERTURNED": "I tsua kwagh u una wase u yô .",
+      "WITHDRAWN": "I dugh un kera"
+    },
+    "awaitingReview": "M ngu keghen mnenge u admin",
+    "openNewLead": "Bugh ikyav you {{id}}",
+    "withdraw": "Dugh ave",
+    "withdrawConfirm": "Dugh anyiman a ou sha kwagh u {{name}} ? Ior mba ve lu a mi hegen ne mba her er ve lu la.",
+    "raise": "Mzough u lun a kwagh",
+    "raiseTitle": "Mzough u lun a kwagh",
+    "raiseHint": "Aluer or u nan lu yamen kwagh ne yange nan vande van hen a we yô, pase nan er i hii ve nan lu van yô. Or u hemen Leadrat nana nenge sha mi; aluer ve tsua kwagh u u soo yô, i nger or u hemen la sha ci wou.",
+    "reasonLabel": "Er nan ve kasua ne a lu u wou?",
+    "reasonMin_one": "Ka i lu {{count}} ikyav.",
+    "reasonMin_other": "Ka i lu {{count}} ikyav.",
+    "submit": "Tindi a anyiman",
+    "notProtected": "Or môm kpa nan kera ngu a mkor sha or u nan lu yamen kwagh ne sha ci u tom ne ga - u ngu a nger iti i or u nan lu hemen la hegen.",
+    "raised": "I tindi a anyiman {{id}} ér i hide i nenge sha mi.",
+    "viewAll": "Nenge ase mbamzeyol av ."
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Shighe",
+    "lastDays_one": "{{count}} iyange",
+    "lastDays_other": "{{count}} ayange",
+    "emptyTitle": "M sugh u da van! U ngu a mbahemenev ga.",
+    "emptyHint": "Nger iti you i hiihii - pipeline wou, bookings man shighe u kuran iyol you vea tese heen.",
+    "tiles": {
+      "leads": "Mbahemenev cii",
+      "newInPeriod_one": "{{count}} u he ken shighe ne",
+      "newInPeriod_other": "{{count}} u he ken shighe ne",
+      "accepted": "I lumun a mi",
+      "booked": "I nger iti",
+      "bookedInPeriod_one": "{{count}} i nger ken shighe ne",
+      "bookedInPeriod_other": "{{count}} i nger ken shighe ne",
+      "conversion": "Mgemshima",
+      "conversionHint": "Mbahemenev mba i nger ati a ve er ka vegher u mbahemenev mba i lumun ve la nahan",
+      "protectedNow": "I kura un hegen .",
+      "expiringSoon_one": "Mkor u been sha {{count}} iyange",
+      "expiringSoon_other": "Mkor u been ken {{count}} ayange",
+      "disputedNow": "Mbagenev mba a anyiman sha mi .",
+      "disputedNowHint": "U hemen a anyiman a ken igbar a kwagh u or u nan lu a mi la hen orgen",
+      "commissionEligible": "Komishen u a kom yô",
+      "commissionCancelled_one": "{{count}} i vihi",
+      "commissionCancelled_other": "{{count}} i vihi"
+    },
+    "chart": {
+      "title_one": "U ngeren ati man u eren akaa sha iyange - iyange i masetyô {{count}}",
+      "title_other": "U ngeren ati man u eren akaa sha iyange - ayange a masetyô {{count}}",
+      "registrations": "Mba ngeren ati",
+      "bookings": "U eren booking"
+    },
+    "byStage": "Hemen sha mlu",
+    "bySource": "Hemen sha ijiir i i dugh kwagh la",
+    "byReferral": "Hemen sha mlu u referral",
+    "myDisputes": "Mbamzeyol mba u dugh a mi la .",
+    "noDisputes": "I gba anyiman ga.",
+    "unknown": "I ver ga",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM u ken won (u i er kwagh sha mi)",
+      "PARTNER_CRM": "I seer sha nongo wou",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Mzough",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Mkor u una bee sha iyange i {{count}} i i dondo la",
+    "expiringTitle_other": "Mkor u una bee ken ayange a {{count}} a a dondo ne",
+    "expiringEmpty": "Lead môm kpa ngu a kera lu a mkor u nan ken windoo ne ga."
   }
 }

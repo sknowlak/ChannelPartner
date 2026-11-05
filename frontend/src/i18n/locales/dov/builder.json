@@ -30,7 +30,8 @@
       "registered": "wakalembwa"
     },
     "booked": "wakabbuku",
-    "empty": "Kunyina bantu bakatuminwa pe."
+    "empty": "Kunyina bantu bakatuminwa pe.",
+    "bookingCancelled": "Kubhuka kwakachilwa"
   },
   "detail": {
     "customer": "Sikuula",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Kubhuka kwasinizyigwa.",
       "accepted": "Kutuminwa kwatambulwa.",
-      "rejected": "Kutuminwa kwakakilwa."
+      "rejected": "Kutuminwa kwakakilwa.",
+      "bookingCancelled": "Kubhuka kwakachilwa."
     },
-    "backToReferrals": "Kujokela kulibaabo bakatumwa"
+    "backToReferrals": "Kujokela kulibaabo bakatumwa",
+    "bookingCancelled": "Kubhuka kwakachilwa",
+    "cancelBooking": "Kuleka kubamba",
+    "cancelReasonLabel": "Kaambo kakuleka (katondezyegwa kuli mweenzinyina) *",
+    "cancelBookingHint": "Bulelo bwakubeleka bulajokela kuli yooyo ngomukwetene limwi mpawo kweelela kwakwe kwakutambula mali kwakagwisigwa. Ikusololela kulakonzya kubbukwa alimwi kumbele.",
+    "cancelBookingConfirm": "Leka bbuku"
   },
   "history": {
     "title": "Lwaano",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kweelela kwakutambula lugwasyo kwakachitwa",
       "HANDOVER_COMPLETED": "Kupa kwakamanizyigwa",
       "ADMIN_PROTECTION_RELEASED": "Mweendelezi wakagwisya lukwabililo lwazintu zyobile kakuchili chiindi. Kaambo: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Mweendelezi wakabikka kulembwa kuzwa ku {{from}} kuya ku {{to}} . Kaambo: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Mweendelezi wakabikka kulembwa kuzwa ku {{from}} kuya ku {{to}} . Kaambo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Kusoleka kulilembya lubo kwakachitwa awumwi mweenzinyina kwakakilwa",
+      "BOOKING_CANCELLED": "Kubhuka kwakachilwa. Kaambo: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Bulelo bwakubeleka bwakajokezyegwa kuli yooyo mweenzinyina",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kweelela kwakutambula mali kwakachilwa aawo nowakabikka",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kweelela kwakutambula mali kwakapilusyigwa akaambo kabbuku lipya"
     }
   }
 }

@@ -30,7 +30,8 @@
       "registered": "ପଞ୍ଜିକୃତ |"
     },
     "booked": "ବୁକ୍ ହୋଇଛି |",
-    "empty": "ଏପର୍ଯ୍ୟନ୍ତ କ refer ଣସି ରେଫରାଲ୍ ନାହିଁ |"
+    "empty": "ଏପର୍ଯ୍ୟନ୍ତ କ refer ଣସି ରେଫରାଲ୍ ନାହିଁ |",
+    "bookingCancelled": "ବୁକିଂ ବାତିଲ ହୋଇଛି |"
   },
   "detail": {
     "customer": "ଗ୍ରାହକ",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "ବୁକିଂ ନିଶ୍ଚିତ ହୋଇଛି |",
       "accepted": "ରେଫରାଲ୍ ଗ୍ରହଣ କରାଯାଇଛି |",
-      "rejected": "ରେଫରାଲ୍ ପ୍ରତ୍ୟାଖ୍ୟାନ |"
+      "rejected": "ରେଫରାଲ୍ ପ୍ରତ୍ୟାଖ୍ୟାନ |",
+      "bookingCancelled": "ବୁକିଂ ବାତିଲ ହୋଇଛି |"
     },
-    "backToReferrals": "ରେଫରାଲ୍ କୁ ଫେରନ୍ତୁ |"
+    "backToReferrals": "ରେଫରାଲ୍ କୁ ଫେରନ୍ତୁ |",
+    "bookingCancelled": "ବୁକିଂ ବାତିଲ ହୋଇଛି |",
+    "cancelBooking": "ବୁକିଂ ବାତିଲ୍ କରନ୍ତୁ |",
+    "cancelReasonLabel": "ବାତିଲ ହେବାର କାରଣ (ସାଥୀକୁ ଦର୍ଶାଯାଇଛି) *",
+    "cancelBookingHint": "ଅପରେଟିଭ୍ ମାଲିକାନା ପାର୍ଟନରଙ୍କ ନିକଟକୁ ଫେରିଯାଏ ଏବଂ ସେମାନଙ୍କର ଆୟୋଗର ଯୋଗ୍ୟତା ବାତିଲ୍ ହେଲା | ପରେ ଲିଡ୍ ବୁକ୍ ହୋଇପାରିବ |",
+    "cancelBookingConfirm": "ବୁକିଂ ବାତିଲ୍ କରନ୍ତୁ |"
   },
   "history": {
     "title": "ଇତିହାସ",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "ଆୟୋଗର ଯୋଗ୍ୟତା ସୃଷ୍ଟି |",
       "HANDOVER_COMPLETED": "ହସ୍ତାନ୍ତର ସମାପ୍ତ ହୋଇଛି |",
       "ADMIN_PROTECTION_RELEASED": "ଆଡମିନ୍ ନକଲ ସୁରକ୍ଷା ଶୀଘ୍ର ମୁକ୍ତ କଲା | କାରଣ: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "ଆଡମିନ୍ ପଞ୍ଜିକରଣକୁ {{from}} ରୁ {{to}} ପର୍ଯ୍ୟନ୍ତ ପୁନ ass ନିଯୁକ୍ତ କଲେ | କାରଣ: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "ଆଡମିନ୍ ପଞ୍ଜିକରଣକୁ {{from}} ରୁ {{to}} ପର୍ଯ୍ୟନ୍ତ ପୁନ ass ନିଯୁକ୍ତ କଲେ | କାରଣ: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "ଅନ୍ୟ ଜଣେ ସହଯୋଗୀଙ୍କ ଦ୍ୱାରା ନକଲ ପ registration ୍ଜୀକରଣ ଉଦ୍ୟମ ପ୍ରତ୍ୟାଖ୍ୟାନ କରାଯାଇଥିଲା",
+      "BOOKING_CANCELLED": "ବୁକିଂ ବାତିଲ ହୋଇଛି | କାରଣ: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "ଅପରେସନ ମାଲିକାନା ସାଥୀକୁ ଫେରିଗଲା |",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "ବୁକିଂ ସହିତ ଆୟୋଗର ଯୋଗ୍ୟତା ବାତିଲ ହୋଇଛି |",
+      "COMMISSION_ELIGIBILITY_RESTORED": "ନୂତନ ବୁକିଂ ପାଇଁ ଆୟୋଗର ଯୋଗ୍ୟତା ପୁନ restored ସ୍ଥାପିତ ହୋଇଛି |"
     }
   }
 }

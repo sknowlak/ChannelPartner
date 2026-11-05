@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Zvakakodzera",
-    "PENDING": "Pending"
+    "PENDING": "Pending",
+    "CANCELLED": "Kanzurwa"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Sunungura duplicate dziviriro kare",
-    "REASSIGN_PARTNER": "Ipazve mumwe mudiwa"
+    "REASSIGN_PARTNER": "Ipazve mumwe mudiwa",
+    "CANCEL_BOOKING": "Kanzura kubhuka"
   },
   "dataType": {
     "TEXT": "Text",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super Admin",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Yakasimbiswa",
+    "CANCELLED": "Kanzurwa"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Attributed",
+    "DISPUTED": "Disputed"
+  },
+  "disputeStatus": {
+    "OPEN": "Vhura",
+    "UPHELD": "Upheld",
+    "OVERTURNED": "Kupidiguka",
+    "WITHDRAWN": "Withdrawn"
   }
 }

@@ -49,8 +49,73 @@
       "newPartnerId": "Nytt partner ID",
       "reason": "Orsak (obligatoriskt)",
       "apply": "Tillämpa åsidosättande",
-      "applying": "Ansöker..."
+      "applying": "Ansöker...",
+      "cancelBookingHint": "Avbokning markerar bokningen och dess provision som annullerad, återgår operativt ägande till partnern och låter byggaren boka detta lead igen.",
+      "cancelBookingConfirm": "Avboka denna bokning? Dess provision är också inställd. Detta loggas med ditt namn och skäl."
     },
-    "timelineTitle": "Granskningstidslinje (denna registrering)"
+    "timelineTitle": "Granskningstidslinje (denna registrering)",
+    "bookingStatus": "Bokningsstatus",
+    "commissionAttribution": "kommissionens tillskrivning",
+    "disputeOpen": "En ägartvist är öppen för den här kunden - en annan partner säger att det är deras. Det avgörs på sidan Tvister.",
+    "viewDisputes": "Se tvister",
+    "cancellation": {
+      "title": "Bokning avbruten",
+      "hint": "Bokningen och dess provision annulleras; det operativa ägandet är tillbaka hos partnern och byggaren kan boka detta lead igen.",
+      "at": "Inställd kl",
+      "by": "Inställd av",
+      "reason": "Resonera"
+    }
+  },
+  "disputes": {
+    "title": "Äganderättstvister",
+    "hint": "En partner vars registrering avvisades som en dubblett kan bestrida vem som äger kunden. Granska båda sidor och bestäm dig.",
+    "statusFilter": "Tviststatus",
+    "allStatuses": "Alla statusar",
+    "empty": "Inga tvister med denna status.",
+    "columns": {
+      "dispute": "Tvist",
+      "customer": "Kund",
+      "project": "Projekt",
+      "raisedBy": "Uppvuxen av",
+      "heldBy": "Nuvarande ägare",
+      "status": "Status",
+      "raisedAt": "Uppvuxen på"
+    },
+    "detail": {
+      "title": "Bestrida {{id}}",
+      "raisedOn": "Uppvuxen {{date}}",
+      "raisingTitle": "Uppvuxen av",
+      "holderTitle": "Nuvarande ägare",
+      "partner": "Partner",
+      "raisedBy": "Inskickad av",
+      "customerName": "Kund",
+      "mobile": "Mobil",
+      "alternateMobile": "Alternativ mobil",
+      "email": "E-post",
+      "project": "Projekt",
+      "reason": "Deras anledning",
+      "registration": "Registrering",
+      "registeredAt": "Registrerad på",
+      "referral": "Remiss",
+      "heldMissing": "Den lagrade registreringen kunde inte hittas.",
+      "resolutionTitle": "Beslut",
+      "outcome": "Resultat",
+      "note": "Notera",
+      "decidedBy": "Beslutades av",
+      "decidedAt": "Bestämde sig för",
+      "newRegistration": "Ny registrering",
+      "decideTitle": "Avgör denna tvist",
+      "noteLabel": "Anteckning som förklarar beslutet (obligatoriskt)",
+      "noteRequired": "Skriv en lapp för att bestämma.",
+      "uphold": "Vidmakthålla",
+      "overturn": "Stjälpa",
+      "upholdEffect": "{{holder}} behåller kunden. Tvisten är avslutad och inget annat förändras.",
+      "overturnEffect": "{{holder}} s dubblettskydd upphör nu och kunden är registrerad för {{partner}} som en ny registrering.",
+      "heldBookedHelp": "Denna kund bokas genom nuvarande ägare. Avboka den bokningen först (Admin Åsidosätt registreringen), vänd sedan:",
+      "confirmTitle": "Är du säker?",
+      "confirmUphold": "Ja, upprätthåll",
+      "confirmOverturn": "Ja, välta",
+      "back": "Tillbaka till Tvister"
+    }
   }
 }

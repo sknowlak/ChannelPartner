@@ -1,3 +1,4 @@
+const crypto = require('crypto');
 const jwt = require('jsonwebtoken');
 const { getJwtSecret } = require('../config/jwtSecret');
 
@@ -8,7 +9,7 @@ const TOKEN_TTL = process.env.BUILDER_TOKEN_TTL || '12h';
 // being accepted on partner or admin routes, and vice versa. Identity only -
 // builderAuth re-reads the user and organization on every request.
 function issueToken(user) {
-  return jwt.sign({ type: 'BUILDER', builderUserId: user.builderUserId, builderId: user.builderId }, JWT_SECRET, { expiresIn: TOKEN_TTL });
+  return jwt.sign({ type: 'BUILDER', builderUserId: user.builderUserId, builderId: user.builderId }, JWT_SECRET, { expiresIn: TOKEN_TTL, jwtid: crypto.randomUUID() }); // one ID per session (section 62)
 }
 
 function verifyToken(token) {

@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Bokad",
-    "pending": "I avvaktan på"
+    "pending": "I avvaktan på",
+    "status": {
+      "CONFIRMED": "Bokad",
+      "CANCELLED": "Bokning avbruten"
+    }
   },
   "assign": {
     "unassigned": "Otilldelad",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Inget projekt ännu (ej hänvisat)",
-    "notInList": "{{project}} (inte i projektlistan)"
+    "notInList": "{{project}} (inte i projektlistan)",
+    "protectionDays_one": "{{count}} dagars skydd",
+    "protectionDays_other": "{{count}} dagars skydd"
   },
   "journey": {
     "customer": "Kund",
@@ -76,7 +82,14 @@
     "progressHistory": "Framstegshistoria",
     "timesIn": "(tider i {{timezone}} )",
     "backToMyLeads": "Tillbaka till Mina Leads",
-    "editLead": "Redigera lead"
+    "editLead": "Redigera lead",
+    "disputeBanner": "En annan partner har bestridit äganderätten till denna kund. En Leadrat administratör granskar det - ditt skydd förblir på plats tills de bestämmer sig.",
+    "booking": "Bokning",
+    "commission": "Provision",
+    "notBooked": "Ej bokad",
+    "cancelledOn": "Avbröt den {{date}} .",
+    "cancelReason": "Orsak: {{reason}}",
+    "cancelledHint": "Byggaren avbröt bokningen - det operativa ägandet är tillbaka hos dig och provisionsberättigandet annulleras. Den återställs om ledningen bokas igen."
   },
   "referral": {
     "NOT_REFERRED": "Ej hänvisad (inget projekt)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Builder accepterade remissen",
       "REFERRAL_REJECTED": "Builder avvisade remissen. Orsak: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin släppte dubblettskydd tidigt. Orsak: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Administratören tilldelade registreringen från {{from}} till {{to}} . Orsak: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Administratören tilldelade registreringen från {{from}} till {{to}} . Orsak: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ett dubbelregistreringsförsök av en annan partner avvisades",
+      "BOOKING_CANCELLED": "Bokning avbruten. Orsak: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Det operativa ägandet återgick till partnern",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kommissionsberättigandet avbröts med bokningen",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kommissionsberättigande återställd för den nya bokningen",
+      "OWNERSHIP_DISPUTE_RAISED": "En annan partner ifrågasatte äganderätten till denna kund – en Leadrat -administratör kommer att granska det",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Ägartvisten för denna kund drogs tillbaka - ditt ägande är oförändrat",
+      "OWNERSHIP_DISPUTE_UPHELD": "Ägartvisten för den här kunden granskades - ditt ägande har bekräftats",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Registrerad efter att din ägandetvist avgjordes till din fördel. Obs: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Skyddet upphörde: en ägartvist avgjordes till förmån för en annan partner. Obs: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Det här telefonnumret är inte giltigt för {{country}} .",
     "COUNTRY_MISMATCH": "Välj rätt landskod.",
     "NOT_MOBILE": "Ange ett mobilnummer, inte en fast telefon."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "kommission berättigad",
+      "PENDING": "Kommissionen väntar",
+      "CANCELLED": "Kommissionen inställd"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Tillskrivna dig",
+      "DISPUTED": "Tillskrivning ifrågasatt"
+    }
+  },
+  "result": {
+    "none": "Inget registreringsresultat att visa. Registrera en lead först.",
+    "acceptedTitle": "Bly registrerat",
+    "rejectedTitle": "Bly inte registrerat",
+    "protectionWindow": "Skyddsfönster",
+    "protectedUntil": "Skyddad till",
+    "openLead": "Öppen ledning",
+    "addAnother": "Lägg till ytterligare ett lead",
+    "duplicate": "Dubblett - redan skyddad",
+    "duplicateHint": "Den här kunden är redan skyddad för detta projekt av en annan registrering, så den kunde inte registreras för dig.",
+    "existingProtectedUntil": "Befintlig registrering skyddad tills"
+  },
+  "disputes": {
+    "title": "Mina tvister",
+    "intro": "Ägartvister som du väckte för kunder som avvisades som dubbletter. En Leadrat -administratör granskar var och en.",
+    "empty": "Du har inte tagit upp några tvister. Om en kund du tagit in avvisas som en dubblett kan du bestrida det från registreringsresultatet.",
+    "columns": {
+      "dispute": "Tvist",
+      "reason": "Din anledning",
+      "outcome": "Resultat"
+    },
+    "status": {
+      "OPEN": "Under granskning",
+      "UPHELD": "Inte till din fördel",
+      "OVERTURNED": "Beslutade till din fördel",
+      "WITHDRAWN": "Indragen"
+    },
+    "awaitingReview": "Väntar på admin granskning",
+    "openNewLead": "Öppna din lead {{id}}",
+    "withdraw": "Dra tillbaka",
+    "withdrawConfirm": "Återkalla din tvist för {{name}} ? Det nuvarande ägandet förblir som det är.",
+    "raise": "Bestrida äganderätten",
+    "raiseTitle": "Bestrida äganderätten",
+    "raiseHint": "Om den här kunden kom till dig först, förklara varför. En Leadrat -administratör kommer att granska det; om de bestämmer sig till din fördel, registreras ledningen för dig.",
+    "reasonLabel": "Varför är den här kunden din?",
+    "reasonMin_one": "Minst {{count}} tecken.",
+    "reasonMin_other": "Minst {{count}} tecken.",
+    "submit": "Skicka tvist",
+    "notProtected": "Ingen har längre skydd för den här kunden för detta projekt - du kan registrera leadet nu.",
+    "raised": "Tvisten {{id}} skickades för granskning.",
+    "viewAll": "Se mina tvister"
+  },
+  "dashboard": {
+    "title": "Instrumentbräda",
+    "period": "Period",
+    "lastDays_one": "{{count}} dag",
+    "lastDays_other": "{{count}} dagar",
+    "emptyTitle": "Välkomna! Du har inga ledtrådar än.",
+    "emptyHint": "Registrera din första lead - din pipeline, bokningar och skyddsdeadlines kommer att dyka upp här.",
+    "tiles": {
+      "leads": "Totala leads",
+      "newInPeriod_one": "{{count}} nya under denna period",
+      "newInPeriod_other": "{{count}} nya under denna period",
+      "accepted": "Accepterad",
+      "booked": "Bokad",
+      "bookedInPeriod_one": "{{count}} bokade under denna period",
+      "bookedInPeriod_other": "{{count}} bokade under denna period",
+      "conversion": "Omvandling",
+      "conversionHint": "Bokade leads som andel av accepterade leads",
+      "protectedNow": "Skyddad nu",
+      "expiringSoon_one": "Skydd som slutar om {{count}} dag",
+      "expiringSoon_other": "Skydd upphör om {{count}} dagar",
+      "disputedNow": "Ifrågasatt av andra",
+      "disputedNowHint": "Dina potentiella kunder med en öppen ägartvist från en annan partner",
+      "commissionEligible": "kommission berättigad",
+      "commissionCancelled_one": "{{count}} avbröt",
+      "commissionCancelled_other": "{{count}} avbröt"
+    },
+    "chart": {
+      "title_one": "Registreringar och bokningar per dag - senaste {{count}} dagen",
+      "title_other": "Registreringar och bokningar per dag - senaste {{count}} dagarna",
+      "registrations": "Registreringar",
+      "bookings": "Bokningar"
+    },
+    "byStage": "Leder efter status",
+    "bySource": "Leder efter källa",
+    "byReferral": "Leder efter remissstatus",
+    "myDisputes": "Tvister du tagit upp",
+    "noDisputes": "Inga tvister har väckts.",
+    "unknown": "Inte inställt",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Extern CRM (simulerad)",
+      "PARTNER_CRM": "Lagt till av ditt team",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integration",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Skyddet löper ut nästa {{count}} dag",
+    "expiringTitle_other": "Skyddet löper ut inom de närmaste {{count}} dagarna",
+    "expiringEmpty": "Inget bly förlorar sitt skydd i detta fönster."
   }
 }

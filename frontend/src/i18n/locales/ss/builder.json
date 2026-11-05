@@ -30,7 +30,8 @@
       "registered": "Kubhalisiwe"
     },
     "booked": "Kubhukiwe",
-    "empty": "Kute labadluliselwe."
+    "empty": "Kute labadluliselwe.",
+    "bookingCancelled": "Kubhuka kukhanseliwe"
   },
   "detail": {
     "customer": "Likhasimende",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Kubhukha sekucinisekisiwe.",
       "accepted": "Kudluliselwa kwemukelwe.",
-      "rejected": "Kudluliselwa kwalahlwa."
+      "rejected": "Kudluliselwa kwalahlwa.",
+      "bookingCancelled": "Kubhukha sekukhanseliwe."
     },
-    "backToReferrals": "Emuva kuloko lokudluliselwe"
+    "backToReferrals": "Emuva kuloko lokudluliselwe",
+    "bookingCancelled": "Kubhuka kukhanseliwe",
+    "cancelBooking": "Khansela Kubhuka",
+    "cancelReasonLabel": "Sizatfu sekukhansela (sikhonjiswe umlingani) *",
+    "cancelBookingHint": "Bunikati bekusebenta bubuyela kumlingani futsi kufaneleka kwabo kwekhomishini kuyakhanselwa. Lokuhola kungaphindze kubhukwe kamuva.",
+    "cancelBookingConfirm": "Khansela lokubhukha"
   },
   "history": {
     "title": "Umlandvo",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kufaneleka kweKhomishini kwadalwa",
       "HANDOVER_COMPLETED": "Kucedvwa kwetfulwa",
       "ADMIN_PROTECTION_RELEASED": "Admin ukhiphe kuvikeleka lokuphindvwe kabili kusenesikhatsi. Sizatfu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Umphatsi wabela kabusha kubhalisa kusuka ku {{from}} kuya ku {{to}} . Sizatfu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Umphatsi wabela kabusha kubhalisa kusuka ku {{from}} kuya ku {{to}} . Sizatfu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Umtamo wekubhalisa lophindvwe kabili lowentiwa ngulomunye umlingani waliwa",
+      "BOOKING_CANCELLED": "Kubhukha sekukhanseliwe. Sizatfu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Bunikazi bekusebenta bubuyiselwe kumlingani",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kufaneleka kweKhomishini kukhanseliwe ngekubhuka",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kufaneleka kweKhomishini kubuyiselwe ekubhukheni lokusha"
     }
   }
 }

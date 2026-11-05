@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Naka-book na",
-    "pending": "Dai pa tapos"
+    "pending": "Dai pa tapos",
+    "status": {
+      "CONFIRMED": "Naka-book na",
+      "CANCELLED": "Kanselado an pagpareserba"
+    }
   },
   "assign": {
     "unassigned": "Dai Nakaasignar",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Mayo pang proyekto (dai pigrerefer)",
-    "notInList": "{{project}} (bakong yaon sa listahan kan proyekto)"
+    "notInList": "{{project}} (bakong yaon sa listahan kan proyekto)",
+    "protectionDays_one": "{{count}} -aldaw na proteksyon",
+    "protectionDays_other": "{{count}} -aldaw na proteksyon"
   },
   "journey": {
     "customer": "Kustomer",
@@ -76,7 +82,14 @@
     "progressHistory": "Kasaysayan nin Pag-uswag",
     "timesIn": "(mga oras sa {{timezone}} )",
     "backToMyLeads": "Balik sa Sakuyang mga Lead",
-    "editLead": "I-edit an Lead"
+    "editLead": "I-edit an Lead",
+    "disputeBanner": "An saro pang kasosyo nagkontra sa pagsasadiri kan parokyano na ini. An sarong admin Leadrat pigrerepaso ini - an saimong proteksyon nagdadanay sa lugar sagkod na sinda magdesisyon.",
+    "booking": "Pagpareserba",
+    "commission": "Komisyon",
+    "notBooked": "Dai pa naka-book",
+    "cancelledOn": "Kanselado kan {{date}} .",
+    "cancelReason": "Rason: {{reason}}",
+    "cancelledHint": "Kanselado kan paratogdok an booking - an pagsasadiri sa operasyon yaon na saimo asin an kwalipikasyon sa komisyon kanselado. Ini ibinabalik kun an lead na-book giraray."
   },
   "referral": {
     "NOT_REFERRED": "Dai ipinadara (mayo nin proyekto)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Inako kan paratogdok an referral",
       "REFERRAL_REJECTED": "Sinayumahan kan paratogdok an referral. Rason: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Amay na pinaluwas kan admin an duplicate na proteksyon. Rason: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Ibinalik kan Admin an rehistrasyon gikan sa {{from}} pasiring sa {{to}} . Rason: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Ibinalik kan Admin an rehistrasyon gikan sa {{from}} pasiring sa {{to}} . Rason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "An dobleng pagprobar na magrehistro kan ibang kasosyo dai inako",
+      "BOOKING_CANCELLED": "Kanselado an pagpareserba. Rason: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "An pagsasadiri sa operasyon ibinalik sa kasosyo",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "An kwalipikasyon sa komisyon kinanselar sa pagpareserba",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ibinalik an kwalipikasyon sa komisyon para sa bagong booking",
+      "OWNERSHIP_DISPUTE_RAISED": "An saro pang kasosyo nagkontra sa pagsasadiri kan parokyano na ini - an sarong admin Leadrat an marepaso kaini",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "An iriwal sa pagsasadiri sa parokyano na ini binawi - an saimong pagsasadiri dai nagbago",
+      "OWNERSHIP_DISPUTE_UPHELD": "An iriwal sa pagsasadiri sa parokyano na ini narepaso - an saimong pagsasadiri nakumpirma",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Narehistro pagkatapos na an saimong iriwal sa pagsasadiri napagdesisyunan na pabor saimo. Tandaan: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Natapos an proteksyon: sarong iriwal sa pagsasadiri an napagdesisyunan pabor sa ibang kasosyo. Tandaan: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "An numerong ini nin telepono bakong balido para sa {{country}} .",
     "COUNTRY_MISMATCH": "Pilion tabi an tamang kodigo kan nasyon.",
     "NOT_MOBILE": "Maglaag nin numero nin cellphone, bakong landline."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Kwalipikado sa komisyon",
+      "PENDING": "Nakabinbin an komisyon",
+      "CANCELLED": "Kanselado an komisyon"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Iinaatribwir saimo",
+      "DISPUTED": "An atribusyon pinagdidiskutiran"
+    }
+  },
+  "result": {
+    "none": "Mayo nin resulta kan rehistrasyon na ipapahiling. Magparehistro nguna nin lead.",
+    "acceptedTitle": "Narehistro an tingga",
+    "rejectedTitle": "Dai nakarehistro an tingga",
+    "protectionWindow": "Bintana nin Proteksyon",
+    "protectedUntil": "Protektado Sagkod",
+    "openLead": "Bukas na Tingga",
+    "addAnother": "Magdagdag nin Saro pang Tingga",
+    "duplicate": "Duplikado - protektado na",
+    "duplicateHint": "An kustomer na ini protektado na para sa proyektong ini sa paagi nin ibang rehistrasyon, kaya dai ini nairehistro para saimo.",
+    "existingProtectedUntil": "An eksistidong rehistrasyon protektado sagkod"
+  },
+  "disputes": {
+    "title": "An Sakong mga Iriwal",
+    "intro": "Mga iriwal sa pagsasadiri na saimong pinalataw para sa mga parokyano na dai inako bilang mga duplikado. An Leadrat admin nagrerepaso kan lambang saro.",
+    "empty": "Dai ka nagbangon nin ano man na iriwal. Kun an sarong parokyano na saimong dinara dai inako bilang sarong duplikado, puede mong ipaglaban ini gikan sa resulta kan rehistrasyon.",
+    "columns": {
+      "dispute": "Iriwal",
+      "reason": "An saimong rason",
+      "outcome": "Resulta"
+    },
+    "status": {
+      "OPEN": "Nasa irarom nin pagrepaso",
+      "UPHELD": "Bakong pabor saimo",
+      "OVERTURNED": "Nagdesisyon pabor saimo",
+      "WITHDRAWN": "Inatras"
+    },
+    "awaitingReview": "Naghahalat nin pagrepaso kan admin",
+    "openNewLead": "Buksan an saimong lead {{id}}",
+    "withdraw": "Bawion",
+    "withdrawConfirm": "Ibawi an saimong iriwal para sa {{name}} ? An presenteng pagsasadiri nagdadanay na arog kaini.",
+    "raise": "Iriwal sa pagsasadiri",
+    "raiseTitle": "Iriwal sa pagsasadiri",
+    "raiseHint": "Kun an parokyano na ini an enot na nagdigdi saimo, ipaliwanag kun tano. An sarong Leadrat admin an marepaso kaini; kun sinda magdesisyon na pabor saimo, an lead nakarehistro para saimo.",
+    "reasonLabel": "Tano ta sadiri mo an parokyanong ini?",
+    "reasonMin_one": "Dai mababa sa {{count}} na karakter.",
+    "reasonMin_other": "Dai mababa sa {{count}} na mga karakter.",
+    "submit": "Magpadara nin Iriwal",
+    "notProtected": "Mayo nang nagkakapot nin proteksyon sa kustomer na ini para sa proyektong ini - puede mo nang irehistro an lead ngonyan.",
+    "raised": "Iriwal {{id}} ipinadara para sa pagrepaso.",
+    "viewAll": "Hilingon an sakong mga iriwal"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Peryudo",
+    "lastDays_one": "{{count}} aldaw",
+    "lastDays_other": "{{count}} aldaw",
+    "emptyTitle": "Dagos! Mayo ka pang mga lead.",
+    "emptyHint": "Irehistro an saimong enot na lead - an saimong pipeline, mga booking asin mga deadline sa proteksyon mahihiling digdi.",
+    "tiles": {
+      "leads": "Total na mga lead",
+      "newInPeriod_one": "{{count}} bago sa peryodong ini",
+      "newInPeriod_other": "{{count}} bago sa peryodong ini",
+      "accepted": "Inako",
+      "booked": "Naka-book na",
+      "bookedInPeriod_one": "{{count}} na naka-book sa panahon na ini",
+      "bookedInPeriod_other": "{{count}} na naka-book sa panahon na ini",
+      "conversion": "Pagkombertir",
+      "conversionHint": "An mga naka-book na lead bilang parte kan mga inaako na lead",
+      "protectedNow": "Protektado na ngonyan",
+      "expiringSoon_one": "Proteksyon na nagtatapos sa {{count}} aldaw",
+      "expiringSoon_other": "Proteksyon na nagtatapos sa {{count}} aldaw",
+      "disputedNow": "Pigdidiskutiran kan iba",
+      "disputedNowHint": "An saimong mga lead na may bukas na iriwal sa pagsasadiri gikan sa ibang kasosyo",
+      "commissionEligible": "Kwalipikado sa komisyon",
+      "commissionCancelled_one": "{{count}} kinanselar",
+      "commissionCancelled_other": "{{count}} kinanselar"
+    },
+    "chart": {
+      "title_one": "Mga rehistrasyon asin pagpareserba kada aldaw - huring {{count}} aldaw",
+      "title_other": "Mga rehistrasyon asin pagpareserba kada aldaw - huring {{count}} aldaw",
+      "registrations": "Mga Rehistrasyon",
+      "bookings": "Mga Pagreserba"
+    },
+    "byStage": "Mga nangengenot sa paagi nin estado",
+    "bySource": "Mga tingga sa paagi nin pinagkukuanan",
+    "byReferral": "Mga nangengenot sa paagi nin estado nin referral",
+    "myDisputes": "Mga iriwal na saimong pinalataw",
+    "noDisputes": "Mayo nin mga iriwal na pinalataw.",
+    "unknown": "Dai nakabugtak",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Panluwas na CRM (simulated)",
+      "PARTNER_CRM": "Idinagdag kan saimong grupo",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Pag-iriba",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "An proteksyon matatapos sa masunod na {{count}} na aldaw",
+    "expiringTitle_other": "An proteksyon matatapos sa masunod na {{count}} na aldaw",
+    "expiringEmpty": "Mayo nin tingga na nawawaran nin proteksyon sa bintana na ini."
   }
 }

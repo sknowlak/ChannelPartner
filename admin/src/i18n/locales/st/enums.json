@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "E loketse",
-    "PENDING": "E emetse"
+    "PENDING": "E emetse",
+    "CANCELLED": "E hlakotsoe"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Lokolla tšireletso e habeli pele ho nako",
-    "REASSIGN_PARTNER": "Abela molekane e mong hape"
+    "REASSIGN_PARTNER": "Abela molekane e mong hape",
+    "CANCEL_BOOKING": "Hlakola peeletso"
   },
   "dataType": {
     "TEXT": "Mongolo",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super Admin",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "E tiisitsoe",
+    "CANCELLED": "E hlakotsoe"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "E ts'episitsoe",
+    "DISPUTED": "Khahlanong"
+  },
+  "disputeStatus": {
+    "OPEN": "Bula",
+    "UPHELD": "E tšehelitsoe",
+    "OVERTURNED": "Qholotsoe",
+    "WITHDRAWN": "E hutsoe"
   }
 }

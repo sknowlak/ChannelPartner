@@ -43,7 +43,9 @@
       "name": "Leina",
       "city": "Toropokgolo",
       "status": "Maemo",
-      "actions": "Ditiro"
+      "actions": "Ditiro",
+      "protection": "Tšhireletšo ya go pheta-pheta",
+      "matchOn": "Diphetolelo di swana ka"
     },
     "closeReferrals": "Tswala bakeng sa ditšhupetšo",
     "reopen": "Bula gape",
@@ -55,6 +57,25 @@
       "add": "Oketša Protšeke",
       "created": "E hlotšwe {{name}} ."
     },
-    "back": "Go boela morago go Baagi"
+    "back": "Go boela morago go Baagi",
+    "protection": {
+      "days_one": "{{count}} letšatši",
+      "days_other": "{{count}} matšatši",
+      "globalDays_one": "Letšatši la go se fetoge la lefase ka bophara ( {{count}} ) .",
+      "globalDays_other": "Global default ( {{count}} matšatši) .",
+      "globalDefault": "Global default",
+      "placeholder": "Matšatši a tšhireletšo (lefeela = default ya lefase ka bophara) .",
+      "saved": "Tšhireletšo ya go ipoeletša e mpshafaditšwe bakeng sa {{name}} .",
+      "hint": "Tšhireletšo ye e ipoeletšago: matšatši a 1-3650, goba o tlogele e se na selo go šomiša default ya lefase ka bophara go tšwa go Dipeakanyo. Phetogo e šoma fela go dingwadišo tše mpsha - tše di lego gona di boloka go fela ga tšona."
+    },
+    "matching": {
+      "global": "Global default",
+      "globalWith": "Kamehla ya lefase ka bophara ( {{fields}} ) .",
+      "mobile": "Nomoro ya sellathekeng",
+      "email": "Imeile",
+      "both": "Nomoro ya sellathekeng + imeile",
+      "saved": "Go swana ga phetolelo go mpshafaditšwe bakeng sa {{name}}",
+      "hint": "Ke dintlha dife tšeo di dirago gore dingwadišo tše pedi e be moreki yo a swanago bakeng sa projeke. Diphetogo di šoma go ditšheke tše di ipoeleditšego go tloga bjale go ya pele; tšhireletšo ye e lego gona ga e amege."
+    }
   }
 }

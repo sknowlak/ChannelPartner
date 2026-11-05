@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Etukiriza ebisanyizo",
-    "PENDING": "Tekinagwa"
+    "PENDING": "Tekinagwa",
+    "CANCELLED": "Esaziddwamu"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Sumulula obukuumi obukoppi nga bukyali",
-    "REASSIGN_PARTNER": "Ddamu ogiwe munno omulala"
+    "REASSIGN_PARTNER": "Ddamu ogiwe munno omulala",
+    "CANCEL_BOOKING": "Sazaamu okubuuka"
   },
   "dataType": {
     "TEXT": "Okuwandiika obubaka",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super Admin",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Kikakasiddwa",
+    "CANCELLED": "Esaziddwamu"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Kigambibwa nti",
+    "DISPUTED": "Ebikaayanirwa"
+  },
+  "disputeStatus": {
+    "OPEN": "Okuggula",
+    "UPHELD": "Ewagirwa",
+    "OVERTURNED": "Bakyusiddwa",
+    "WITHDRAWN": "Baggyiddwayo"
   }
 }

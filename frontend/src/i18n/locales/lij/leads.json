@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Prenotou",
-    "pending": "In atteisa"
+    "pending": "In atteisa",
+    "status": {
+      "CONFIRMED": "Prenotou",
+      "CANCELLED": "Prenotaçion annullâ"
+    }
   },
   "assign": {
     "unassigned": "No assegnou",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Nisciun progetto ancon (no referio)",
-    "notInList": "{{project}} (no inta lista di progetti)"
+    "notInList": "{{project}} (no inta lista di progetti)",
+    "protectionDays_one": "{{count}} -proteçion do giorno",
+    "protectionDays_other": "{{count}} -proteçion do giorno"
   },
   "journey": {
     "customer": "Cliente",
@@ -76,7 +82,14 @@
     "progressHistory": "Stöia do progresso",
     "timesIn": "(tempi inte {{timezone}} )",
     "backToMyLeads": "Torna a-i mæ leads",
-    "editLead": "Modificâ o lead"
+    "editLead": "Modificâ o lead",
+    "disputeBanner": "Un atro sòçio o l'à contestou a propietæ de sto cliente. Un amministratô Leadrat o l'é apreuvo à examminâlo – a vòstra proteçion a l'arresta in vigô fin à quande no deçiddan.",
+    "booking": "Prenotaçion",
+    "commission": "Commiscion",
+    "notBooked": "No prenotou",
+    "cancelledOn": "Annullou a-o {{date}} .",
+    "cancelReason": "Raxon: {{reason}}",
+    "cancelledHint": "O construttô o l'à cancelou a prenotaçion – a propietæ operativa a l'é tornâ con ti e l'idoneitæ a-a commiscion a l'é cancelâ. O vëgne restörou se o lead o vëgne prenotou torna."
   },
   "referral": {
     "NOT_REFERRED": "No referio (nisciun progetto)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "O construttô o l'à açettou o referimento",
       "REFERRAL_REJECTED": "O construttô o l'à refuou o referimento. Raxon: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "L'amministratô o l'à pubricou tempoiamente a proteçion duplicâ. Raxon: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "L'amministratô o l'à assegnou torna a registraçion da {{from}} à {{to}} . Raxon: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "L'amministratô o l'à assegnou torna a registraçion da {{from}} à {{to}} . Raxon: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Un tentativo de registraçion duplicâ da parte de un atro compagno o l'é stæto refuou",
+      "BOOKING_CANCELLED": "Prenotaçion annullâ. Raxon: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "A propietæ operativa a l'é tornâ a-o sòçio",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "L'idoneitæ a-a commiscion a l'é stæta annullâ co-a prenotaçion",
+      "COMMISSION_ELIGIBILITY_RESTORED": "L'idoneitæ a-a commiscion a l'é restörâ pe-a neuva prenotaçion",
+      "OWNERSHIP_DISPUTE_RAISED": "Un atro collaboratô o l'à contestou a propietæ de sto cliente - un amministratô Leadrat o ô revixià",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "A disputa in sciâ propietæ in sce sto cliente a l'é stæta retiâ - a vòstra propietæ a l'é invariâ",
+      "OWNERSHIP_DISPUTE_UPHELD": "A disputa in sciâ propietæ in sce sto cliente a l'é stæta revista - a vòstra propietæ a l'é confermâ",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Registrou dòppo che a vòstra disputa de propietæ a l'é stæta deçisa à vòstro avvantaggio. Nòtta: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "A proteçion a l'é finia: unna disputa de propietæ a l'é stæta deçisa à avvantaggio d'un atro compagno. Nòtta: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Sto numero de telefòno o no l'é valido pe {{country}} .",
     "COUNTRY_MISMATCH": "Pe favô, seleçionâ o còdiçe do paise corretto.",
     "NOT_MOBILE": "Pe favô, inserî un numero de mòbile, no un numero fisso."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Idoneo a-a commiscion",
+      "PENDING": "Commiscion pendente",
+      "CANCELLED": "Commiscion annullâ"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Attribuio à ti",
+      "DISPUTED": "L'attribuçion a l'é contestâ"
+    }
+  },
+  "result": {
+    "none": "Nisciun resultato de registraçion da mostrâ. Registra primma un lead.",
+    "acceptedTitle": "Lead registrou",
+    "rejectedTitle": "Lead no registrou",
+    "protectionWindow": "Finestrâ de proteçion",
+    "protectedUntil": "Protetto fin a-o 2019.",
+    "openLead": "Lead averto",
+    "addAnother": "Azzonta un atro lead",
+    "duplicate": "Duplicâ - za protetto",
+    "duplicateHint": "Sto cliente o l'é za protetto pe sto progetto da unn'atra registraçion, donca o no l'é stæto poscibile registrâ pe ti.",
+    "existingProtectedUntil": "Registraçion existente protetta fin a-o 2019."
+  },
+  "disputes": {
+    "title": "E mæ controversie",
+    "intro": "E controversie in sciâ propietæ ch'æ tiou sciù pe-i clienti che son stæti refuæ comme duplici. Un amministratô Leadrat o ne revixe ciaschedun.",
+    "empty": "No l'é stæto tiou sciù nisciuña contestaçion. Se un cliente ch'o l'é stæto portou o l'é refuou comme duplice, o peu ëse contestou da-o resultato da registraçion.",
+    "columns": {
+      "dispute": "Rattella",
+      "reason": "A vòstra raxon",
+      "outcome": "Resultato"
+    },
+    "status": {
+      "OPEN": "In revixon",
+      "UPHELD": "No a-o vòstro avvantaggio .",
+      "OVERTURNED": "Deçiso a-o vòstro avvantaggio .",
+      "WITHDRAWN": "Retiou"
+    },
+    "awaitingReview": "In atteisa de revixon de l'amministratô",
+    "openNewLead": "Arvî o seu lead {{id}}",
+    "withdraw": "Retiâ",
+    "withdrawConfirm": "Retiâ a vòstra contestaçion pe {{name}} ? A propietæ corrente a l'arresta comme a l'é.",
+    "raise": "Contesta in sciâ propietæ",
+    "raiseTitle": "Contesta in sciâ propietæ",
+    "raiseHint": "Se sto cliente o l'é vegnuo da ti primma, spiega o perché. Un amministratô Leadrat o l'avià da reviste; se deçiddan à vòstro avvantaggio, o lead o l'é registrou pe voscià.",
+    "reasonLabel": "Perché sto cliente o l'é to?",
+    "reasonMin_one": "A-o manco o carattere {{count}} .",
+    "reasonMin_other": "A-o manco {{count}} caratteri.",
+    "submit": "Inviâ a disputa",
+    "notProtected": "Nisciun o l'à ciù a proteçion in sce sto cliente pe sto progetto - ti peu registrâ o lead oua.",
+    "raised": "A contestaçion {{id}} a l'é stæta inviâ pe revixon.",
+    "viewAll": "Vedde e mæ controversie"
+  },
+  "dashboard": {
+    "title": "Carrello",
+    "period": "Ponto",
+    "lastDays_one": "{{count}} giorno",
+    "lastDays_other": "{{count}} giorni",
+    "emptyTitle": "Benvegnuo! No gh'æ ancon de leads.",
+    "emptyHint": "Registra o teu primmo lead - o teu pipeline, e prenotaçioin e e scadense pe-a proteçion se mostrian chì.",
+    "tiles": {
+      "leads": "Totale di leads",
+      "newInPeriod_one": "{{count}} neuvo inte sto periodo",
+      "newInPeriod_other": "{{count}} neuvo inte sto periodo",
+      "accepted": "Açettou",
+      "booked": "Prenotou",
+      "bookedInPeriod_one": "{{count}} prenotou inte sto periodo",
+      "bookedInPeriod_other": "{{count}} prenotou inte sto periodo",
+      "conversion": "Converscion",
+      "conversionHint": "I leads prenottæ comme quota di leads açettæ",
+      "protectedNow": "Protetto oua",
+      "expiringSoon_one": "Proteçion ch'a finisce co-o giorno {{count}}",
+      "expiringSoon_other": "Proteçion ch'a finisce inte {{count}} giorni",
+      "disputedNow": "Contestou da di atri",
+      "disputedNowHint": "I vòstri leads con unna disputa de propietæ averta da parte de un atro partner",
+      "commissionEligible": "Idoneo a-a commiscion",
+      "commissionCancelled_one": "{{count}} annullou",
+      "commissionCancelled_other": "{{count}} annullou"
+    },
+    "chart": {
+      "title_one": "Iscriçioin e prenotaçioin pe giorno - urtimo {{count}} giorno",
+      "title_other": "Iscriçioin e prenotaçioin pe giorno - urtimi {{count}} giorni",
+      "registrations": "Iscriçioin",
+      "bookings": "Prenotaçioin"
+    },
+    "byStage": "Leads pe stato",
+    "bySource": "Leads pe vivagne",
+    "byReferral": "Leads pe stato de referensa",
+    "myDisputes": "Dispute che ti l'æ tiou sciù",
+    "noDisputes": "Nisciuña disputa a l'é stæta tiâ sciù.",
+    "unknown": "No l'é stæto misso",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM esterno (scimolou)",
+      "PARTNER_CRM": "Azzonto da-a vòstra squaddra",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integraçion",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "A proteçion a scade into giorno {{count}} apreuvo",
+    "expiringTitle_other": "A proteçion a scade inti giorni {{count}} apreuvo",
+    "expiringEmpty": "Nisciun ciongio o perde a seu proteçion inte sto barcon."
   }
 }

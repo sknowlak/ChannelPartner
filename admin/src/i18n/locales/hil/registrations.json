@@ -49,8 +49,73 @@
       "newPartnerId": "Bag-o nga ID sang Kaupod",
       "reason": "Rason (kinahanglanon)",
       "apply": "I-apply ang Override",
-      "applying": "Naga-apply..."
+      "applying": "Naga-apply...",
+      "cancelBookingHint": "Ang pagkanselar nagamarka sang booking kag sang komisyon sini nga kanselado, nagabalik sang operasyonal nga pagpanag-iya sa kaupod, kag nagatugot sa manunukod nga mag-book liwat sini nga lead.",
+      "cancelBookingConfirm": "Kanselahon bala ini nga booking? Ang komisyon sini ginkanselar man. Na-log ini upod ang imo ngalan kag rason."
     },
-    "timelineTitle": "Timeline sang Audit (ini nga pagparehistro)"
+    "timelineTitle": "Timeline sang Audit (ini nga pagparehistro)",
+    "bookingStatus": "Kahimtangan sang Pag-book",
+    "commissionAttribution": "Pagpatungod sang Komisyon",
+    "disputeOpen": "Ang isa ka pagbinaisay sa pagpanag-iya bukas sa sini nga kustomer - ang isa pa ka kaupod nagasiling nga ini ila. Ginadesisyonan ini sa pahina sang mga Pagbinaisay.",
+    "viewDisputes": "Tan-awa ang mga pagbinaisay",
+    "cancellation": {
+      "title": "Kanselado ang booking",
+      "hint": "Ang booking kag ang komisyon sini ginkanselar; ang pagpanag-iya sa operasyon nagbalik sa kaupod kag ang manunukod mahimo mag-book liwat sini nga lead.",
+      "at": "Ginkanselar sa",
+      "by": "Ginkanselar sang",
+      "reason": "Rason"
+    }
+  },
+  "disputes": {
+    "title": "Mga Pagbinaisay sa Pagpanag-iya",
+    "hint": "Ang isa ka kaupod nga ang iya rehistrasyon ginsikway bilang isa ka duplikado mahimo nga magbaisay kon sin-o ang nagapanag-iya sang kustomer. Repasuha ang duha ka bahin kag magdesisyon.",
+    "statusFilter": "Kahimtangan sang pagbinaisay",
+    "allStatuses": "Tanan nga mga status",
+    "empty": "Wala sing mga pagbinaisay sa sini nga kahimtangan.",
+    "columns": {
+      "dispute": "Pagsuay",
+      "customer": "Kustomer",
+      "project": "Proyekto",
+      "raisedBy": "Ginpadaku sang",
+      "heldBy": "Tag-iya subong",
+      "status": "Estado",
+      "raisedAt": "Ginpadaku sa"
+    },
+    "detail": {
+      "title": "Pagbinaisay {{id}}",
+      "raisedOn": "Ginpataas {{date}}",
+      "raisingTitle": "Ginpadaku sang",
+      "holderTitle": "Tag-iya subong",
+      "partner": "Pares",
+      "raisedBy": "Ginsumiter ni",
+      "customerName": "Kustomer",
+      "mobile": "Telepono",
+      "alternateMobile": "Alternate mobile",
+      "email": "Email",
+      "project": "Proyekto",
+      "reason": "Ang ila rason",
+      "registration": "Pagrehistro",
+      "registeredAt": "Narehistro sa",
+      "referral": "Referral",
+      "heldMissing": "Ang ginhiwat nga rehistrasyon wala makita.",
+      "resolutionTitle": "Desisyon",
+      "outcome": "Resulta",
+      "note": "Nasambit",
+      "decidedBy": "Gindesisyonan ni",
+      "decidedAt": "Nagdesisyon sa",
+      "newRegistration": "Bag-o nga pagparehistro",
+      "decideTitle": "Magdesisyon sa sini nga pagbinaisay",
+      "noteLabel": "Pahibalo nga nagapaathag sang desisyon (kinahanglanon)",
+      "noteRequired": "Magsulat sang isa ka nota sa pagdesisyon.",
+      "uphold": "Uphold",
+      "overturn": "Pagbaliskad",
+      "upholdEffect": "{{holder}} nagahupot sang kustomer. Ang pagbinaisay sirado na kag wala na sing iban pa nga nagabag-o.",
+      "overturnEffect": "Ang doble nga proteksyon sang {{holder}} nagatapos na karon kag ang kustomer narehistro para sa {{partner}} bilang bag-o nga rehistrasyon.",
+      "heldBookedHelp": "Ini nga kustomer gin-book paagi sa karon nga tag-iya. Kanselahon anay ina nga booking (Admin Override sa rehistrasyon), dayon baliskaron:",
+      "confirmTitle": "Sigurado ka bala?",
+      "confirmUphold": "Huo, sakdagon",
+      "confirmOverturn": "Huo, baliskad",
+      "back": "Balik sa mga Pagbinaisay"
+    }
   }
 }

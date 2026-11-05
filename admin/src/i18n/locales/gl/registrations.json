@@ -49,8 +49,73 @@
       "newPartnerId": "Novo ID de socio",
       "reason": "Motivo (obrigatorio)",
       "apply": "Aplicar anulación",
-      "applying": "Aplicando..."
+      "applying": "Aplicando...",
+      "cancelBookingHint": "A cancelación marca a reserva e a súa comisión como canceladas, devolve a propiedade operativa ao socio e permite que o constructor reserve esta oportunidade de novo.",
+      "cancelBookingConfirm": "Cancelar esta reserva? Tamén se cancela a súa comisión. Isto está rexistrado co teu nome e motivo."
     },
-    "timelineTitle": "Cronograma da auditoría (este rexistro)"
+    "timelineTitle": "Cronograma da auditoría (este rexistro)",
+    "bookingStatus": "Estado da reserva",
+    "commissionAttribution": "Comisión Atribución",
+    "disputeOpen": "Hai unha disputa de propiedade aberta sobre este cliente; outro socio di que é súa. Decídese na páxina de Disputas.",
+    "viewDisputes": "Ver disputas",
+    "cancellation": {
+      "title": "Reserva cancelada",
+      "hint": "Cancela a reserva e a súa comisión; A propiedade operativa volveu co socio e o constructor pode reservar este cliente potencial de novo.",
+      "at": "Cancelado ás",
+      "by": "Cancelado por",
+      "reason": "Razón"
+    }
+  },
+  "disputes": {
+    "title": "Disputas de titularidade",
+    "hint": "Un socio cuxo rexistro foi rexeitado como duplicado pode disputar quen é o propietario do cliente. Revisa os dous lados e decide.",
+    "statusFilter": "Estado da disputa",
+    "allStatuses": "Todos os estados",
+    "empty": "Non hai disputas con este estado.",
+    "columns": {
+      "dispute": "Disputa",
+      "customer": "Cliente",
+      "project": "Proxecto",
+      "raisedBy": "Criado por",
+      "heldBy": "Propietario actual",
+      "status": "Estado",
+      "raisedAt": "Criado en"
+    },
+    "detail": {
+      "title": "Disputa {{id}}",
+      "raisedOn": "Criado {{date}}",
+      "raisingTitle": "Criado por",
+      "holderTitle": "Propietario actual",
+      "partner": "Socio",
+      "raisedBy": "Enviado por",
+      "customerName": "Cliente",
+      "mobile": "Móbil",
+      "alternateMobile": "Móbil alternativo",
+      "email": "Correo electrónico",
+      "project": "Proxecto",
+      "reason": "A súa razón",
+      "registration": "Inscrición",
+      "registeredAt": "Rexistrado en",
+      "referral": "Remisión",
+      "heldMissing": "Non se puido atopar o rexistro mantido.",
+      "resolutionTitle": "Decisión",
+      "outcome": "Resultado",
+      "note": "Nota",
+      "decidedBy": "Decidido por",
+      "decidedAt": "Decidido",
+      "newRegistration": "Novo rexistro",
+      "decideTitle": "Decida esta disputa",
+      "noteLabel": "Nota explicando a decisión (obrigatorio)",
+      "noteRequired": "Escribe unha nota para decidir.",
+      "uphold": "Manteña",
+      "overturn": "Volcar",
+      "upholdEffect": "{{holder}} mantén o cliente. A disputa está pechada e nada máis cambia.",
+      "overturnEffect": "A protección contra duplicados de {{holder}} remata agora e o cliente está rexistrado para {{partner}} como un novo rexistro.",
+      "heldBookedHelp": "Este cliente está reservado a través do propietario actual. Cancela esa reserva primeiro (anulación do administrador no rexistro) e despois anula:",
+      "confirmTitle": "Estás seguro?",
+      "confirmUphold": "Si, mantén",
+      "confirmOverturn": "Si, envorcar",
+      "back": "Volver a Disputas"
+    }
   }
 }

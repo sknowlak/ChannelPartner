@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "დასაშვებია",
-    "PENDING": "მომლოდინე"
+    "PENDING": "მომლოდინე",
+    "CANCELLED": "გაუქმდა"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "ადრე გაათავისუფლეთ დუბლიკატი დაცვა",
-    "REASSIGN_PARTNER": "გადაანაწილეთ სხვა პარტნიორზე"
+    "REASSIGN_PARTNER": "გადაანაწილეთ სხვა პარტნიორზე",
+    "CANCEL_BOOKING": "გააუქმეთ დაჯავშნა"
   },
   "dataType": {
     "TEXT": "ტექსტი",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "სუპერ ადმინი",
     "ADMIN": "ადმინ"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "დადასტურდა",
+    "CANCELLED": "გაუქმდა"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "მიეკუთვნება",
+    "DISPUTED": "სადავო"
+  },
+  "disputeStatus": {
+    "OPEN": "გახსენით",
+    "UPHELD": "დაცულია",
+    "OVERTURNED": "ამოტრიალდა",
+    "WITHDRAWN": "გამოყვანილია"
   }
 }

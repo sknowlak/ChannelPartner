@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "មានសិទ្ធិ",
-    "PENDING": "កំពុងរង់ចាំ"
+    "PENDING": "កំពុងរង់ចាំ",
+    "CANCELLED": "បានលុបចោល"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "ចេញផ្សាយការការពារស្ទួនជាមុន",
-    "REASSIGN_PARTNER": "ប្រគល់ជូនដៃគូផ្សេងទៀត។"
+    "REASSIGN_PARTNER": "ប្រគល់ជូនដៃគូផ្សេងទៀត។",
+    "CANCEL_BOOKING": "បោះបង់ការកក់"
   },
   "dataType": {
     "TEXT": "អត្ថបទ",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "អ្នកគ្រប់គ្រងជាន់ខ្ពស់",
     "ADMIN": "អ្នកគ្រប់គ្រង"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "បញ្ជាក់",
+    "CANCELLED": "បានលុបចោល"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "កំណត់គុណលក្ខណៈ",
+    "DISPUTED": "ជម្លោះ"
+  },
+  "disputeStatus": {
+    "OPEN": "បើក",
+    "UPHELD": "រក្សា",
+    "OVERTURNED": "ក្រឡាប់",
+    "WITHDRAWN": "ដក"
   }
 }

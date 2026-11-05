@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "La buh",
-    "pending": "Ba dang sah"
+    "pending": "Ba dang sah",
+    "status": {
+      "CONFIRMED": "La buh",
+      "CANCELLED": "La weng noh ia ka jingbuh jaka"
+    }
   },
   "assign": {
     "unassigned": "Bym shym la aiti",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Ym pat don projek (ym pat pynkylla)",
-    "notInList": "{{project}} (ba don ha ka thup jong ka projek)"
+    "notInList": "{{project}} (ba don ha ka thup jong ka projek)",
+    "protectionDays_one": "{{count}} -ka jingiada sngi",
+    "protectionDays_other": "{{count}} -ka jingiada sngi"
   },
   "journey": {
     "customer": "Nongtheid",
@@ -76,7 +82,14 @@
     "progressHistory": "Ka histori jong ka jingkiew",
     "timesIn": "(ki por ha {{timezone}} )",
     "backToMyLeads": "Bad sha ki nongialam jong nga",
-    "editLead": "Pynbeit ia ka jingialam"
+    "editLead": "Pynbeit ia ka jingialam",
+    "disputeBanner": "Uwei pat u paralok u la ialeh pyrshah ia ka jinglong trai jong une u nongthied. U nongpyniaid Leadrat u dang bishar bniah ia ka - ka jingiada jong phi ka sah ha ka jaka jong ka haduh ba kin da rai.",
+    "booking": "Ka jingbuh jaka",
+    "commission": "Hukum",
+    "notBooked": "Ym shym la buh",
+    "cancelledOn": "La pynsangeh ha ka {{date}} .",
+    "cancelReason": "Ka daw: {{reason}}",
+    "cancelledHint": "U nongtei u la pynsangeh noh ia ka jingpynrung kyrteng - ka jinglong trai treikam ka wan biang bad phi bad ka jingbit ban ioh komishon la pynsangeh noh. La pynphai biang lada la book biang ia ka lead."
   },
   "referral": {
     "NOT_REFERRED": "Ym shym la pynkylla (kam don projek)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "U nongtei u la pdiang ia ka jingai jingmut",
       "REFERRAL_REJECTED": "U nongtei u la kyntait ia ka jingpynkylla. Ka daw: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "U Admin u la pyllait kloi ia ka jingiada kaba arsien. Ka daw: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "U Admin u la pynkylla ia ka jingpynrung kyrteng na {{from}} sha {{to}} . Ka daw: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "U Admin u la pynkylla ia ka jingpynrung kyrteng na {{from}} sha {{to}} . Ka daw: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ka jingpyrshang ban pynrung kyrteng arsien da uwei pat u paralok la kyntait .",
+      "BOOKING_CANCELLED": "Ka jingpynrung kyrteng la pynsangeh noh. Ka daw: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ka jinglong trai ba treikam ka la wanphai biang sha u paralok",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "La pynsangeh noh ia ka jingioh komishon ryngkat bad ka jingpynrung kyrteng",
+      "COMMISSION_ELIGIBILITY_RESTORED": "La pynphai biang ia ka hok jong ka komishon na ka bynta ka jingpynrung kyrteng kaba thymmai",
+      "OWNERSHIP_DISPUTE_RAISED": "Uwei pat u paralok u la ïaleh pyrshah ïa ka jinglong trai jong une u nongthied - u nongpynïaid Leadrat un sa bishar bniah ïa ka",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Ka jingïakynad halor ka jinglong trai halor une u nongthied la weng noh - ka jinglong trai jong phi kam shym la kylla",
+      "OWNERSHIP_DISPUTE_UPHELD": "La bishar bniah ia ka jingialeh trai halor une u nongthied - la pynskhem ia ka jinglong trai jong phi",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "La pynrung kyrteng hadien ba la rai ia ka jingiakren trai jong phi ha ka liang jong phi. Jingpynkynmaw: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Ka jingiada ka la kut noh: la rai ia ka jingialeh trai ha ka liang jong uwei pat u paralok. Jingpynkynmaw: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Kane ka number phone kam long kaba biang na ka bynta {{country}} .",
     "COUNTRY_MISMATCH": "Sngewbha jied ia u code jong ka ri uba dei.",
     "NOT_MOBILE": "Sngewbha pynrung da u mobile number, ym da u landline."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Ka komishon kaba lah ban ioh",
+      "PENDING": "Ka Komishon ka dang ap",
+      "CANCELLED": "La weng noh ia ka Komishon"
+    },
+    "attribution": {
+      "ATTRIBUTED": "La pynshong nongrim ha phi",
+      "DISPUTED": "La ialeh pyrshah ia ka jingai jingmut"
+    }
+  },
+  "result": {
+    "none": "Ka jingmih jong ka jingpynrung kyrteng ban pyni. Pynrung kyrteng shwa ia ka lead.",
+    "acceptedTitle": "La pynrung kyrteng",
+    "rejectedTitle": "Ka lead ba la pynrung kyrteng",
+    "protectionWindow": "Ka jingkhang iada",
+    "protectedUntil": "La iada haduh 2020.",
+    "openLead": "Plie ia ka jingialam",
+    "addAnother": "Pyndap sa kawei pat ka Lead",
+    "duplicate": "Ka jingpynkylla - la dep ban iada",
+    "duplicateHint": "Une u nongthied u la dep ban iada na ka bynta kane ka projek da kawei pat ka jingpynrung kyrteng, kumta ym shym la lah ban pynrung kyrteng na ka bynta jong phi.",
+    "existingProtectedUntil": "Ka jingpynrung kyrteng kaba la don lypa la iada haduh ka 2020."
+  },
+  "disputes": {
+    "title": "Ki jingialeh jong nga",
+    "intro": "Ki jingïakynad halor ka jinglong trai kiba phi la pynmih na ka bynta ki nongthied kiba la kyntait kum ki jingpynkylla. U nongpyniaid Leadrat u bishar bniah ia kawei pa kawei.",
+    "empty": "U la pynmih ia kino kino ki jingialeh. Lada u nongthied uba phi la wanrah u shah kyntait kum ka jingpynkylla, phi lah ban ialeh pyrshah ia ka na ka jingmih jong ka jingpynrung kyrteng.",
+    "columns": {
+      "dispute": "Jingiania",
+      "reason": "Ka daw .",
+      "outcome": "Jingmih"
+    },
+    "status": {
+      "OPEN": "Hapoh ka jingbishar bniah",
+      "UPHELD": "Bad ha ka liang jong phi .",
+      "OVERTURNED": "La rai ha ka liang jong phi .",
+      "WITHDRAWN": "La weng noh"
+    },
+    "awaitingReview": "Ngi ap ia ka jingbishar bniah jong u admin",
+    "openNewLead": "Plie ia ka lead jong phi {{id}}",
+    "withdraw": "Kynran dien",
+    "withdrawConfirm": "Pynduh noh ia ka jingiakren jong phi na ka bynta {{name}} ? Ka jinglong trai kaba mynta ka sah kumjuh.",
+    "raise": "Ka jingialeh trai",
+    "raiseTitle": "Ka jingialeh trai",
+    "raiseHint": "Lada une u nongthied u wan nyngkong sha phi, batai balei. U nongpyniaid Leadrat un sa bishar bniah ia ka; lada ki rai ha ka liang jong phi, la pynrung kyrteng ia ka lead na ka bynta jong phi.",
+    "reasonLabel": "Balei une u nongthied u dei u jong phi?",
+    "reasonMin_one": "Ka {{count}} ka dak.",
+    "reasonMin_other": "Ka {{count}} ki dak.",
+    "submit": "Phah ia ka jingialeh",
+    "notProtected": "Ym don ba bat ia ka jingiada halor une u nongthied na ka bynta kane ka projek shuh - phi lah ban pynrung kyrteng ia u nongialam mynta.",
+    "raised": "Ka jingïakynad {{id}} la phah ban bishar bniah.",
+    "viewAll": "Peit ia ki jingialeh jong nga"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Ka por",
+    "lastDays_one": "{{count}} sngi",
+    "lastDays_other": "{{count}} sngi",
+    "emptyTitle": "Pdiang sngewbha! Ka don ki lead haduh mynta.",
+    "emptyHint": "Pynrung kyrteng ia u nongialam ba nyngkong jong phi - ka pipe jong phi, ki jingpynrung kyrteng bad ki por ba la buh ban iada kin paw hangne.",
+    "tiles": {
+      "leads": "Baroh ki jingialam",
+      "newInPeriod_one": "{{count}} thymmai ha kane ka por",
+      "newInPeriod_other": "{{count}} thymmai ha kane ka por",
+      "accepted": "La pdiang",
+      "booked": "La buh",
+      "bookedInPeriod_one": "{{count}} la buh ha kane ka por",
+      "bookedInPeriod_other": "{{count}} la buh ha kane ka por",
+      "conversion": "Ka jingkylla",
+      "conversionHint": "Ki nongwan ba la book kum ka bhah jong ki nongwan ba la pdiang",
+      "protectedNow": "La iada mynta",
+      "expiringSoon_one": "Ka jingiada kaba kut ha {{count}} sngi",
+      "expiringSoon_other": "Ka jingiada kaba kut ha {{count}} sngi",
+      "disputedNow": "La ialeh pyrshah da kiwei pat",
+      "disputedNowHint": "Ki nongialam jong phi bad ka jingialeh trai kaba plie na uwei pat u paralok",
+      "commissionEligible": "Ka komishon kaba lah ban ioh",
+      "commissionCancelled_one": "{{count}} la pynsangeh",
+      "commissionCancelled_other": "{{count}} la pynsangeh"
+    },
+    "chart": {
+      "title_one": "Ki jingpynrung kyrteng bad ki jingpynrung kyrteng ha ka shisngi - ka sngi {{count}} ba khatduh",
+      "title_other": "Ki jingpynrung kyrteng bad ki jingpynrung kyrteng ha ka shisngi - ki sngi ba khatduh {{count}}",
+      "registrations": "Ki jingpynrung kyrteng",
+      "bookings": "Ki jingbuh jaka"
+    },
+    "byStage": "Ka jingialam da ka kyrdan",
+    "bySource": "Ka jingialam da ka tyllong",
+    "byReferral": "Ka jingialam da ka jinglong jingman jong ka jingphah",
+    "myDisputes": "Ki jingialeh kiba la pynmih",
+    "noDisputes": "Ym don jingialeh ba la pynmih.",
+    "unknown": "Ba set",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM ba shabar (ba la pyni nuksa)",
+      "PARTNER_CRM": "La pynrung da ka kynhun jong phi",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Ka jingpyniasoh",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Ka jingiada kan kut ha ka sngi {{count}} kaba bud",
+    "expiringTitle_other": "Ka jingiada kan kut noh ha ki {{count}} sngi ban wan",
+    "expiringEmpty": "Ym don u lead uba duh ia ka jingiada jong u ha kane ka jingkhang."
   }
 }

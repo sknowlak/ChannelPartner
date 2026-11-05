@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Rezerva ona",
-    "pending": "Pendente"
+    "pending": "Pendente",
+    "status": {
+      "CONFIRMED": "Rezerva ona",
+      "CANCELLED": "Rezervasaun kanseladu"
+    }
   },
   "assign": {
     "unassigned": "La atribui",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Seidauk iha projetu (seidauk refere)",
-    "notInList": "{{project}} (la'ós iha lista projetu nian)"
+    "notInList": "{{project}} (la'ós iha lista projetu nian)",
+    "protectionDays_one": "{{count}} -protesaun ba loron",
+    "protectionDays_other": "{{count}} -protesaun ba loron"
   },
   "journey": {
     "customer": "Kliente",
@@ -76,7 +82,14 @@
     "progressHistory": "Istória Progresu nian",
     "timesIn": "(tempu iha {{timezone}} )",
     "backToMyLeads": "Fila fali ba ha'u nia lideransa sira",
-    "editLead": "Edita Lead"
+    "editLead": "Edita Lead",
+    "disputeBanner": "Parseiru seluk disputa ona propriedade ba kliente ida-ne'e. Admin Leadrat ida halo hela revizaun - ita-boot nia protesaun sei iha fatin to'o sira deside.",
+    "booking": "Rezervasaun",
+    "commission": "Komisaun",
+    "notBooked": "Seidauk rezerva",
+    "cancelledOn": "Kansela iha {{date}} .",
+    "cancelReason": "Razaun: {{reason}}",
+    "cancelledHint": "Konstrutór kansela ona rezerva - propriedade operasionál fila fali ho ita-boot no elijível ba komisaun kansela ona. Ida-ne'e sei restaura se lead ne'e hetan fali rezerva."
   },
   "referral": {
     "NOT_REFERRED": "La refere (la iha projetu)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Konstrutór simu referénsia",
       "REFERRAL_REJECTED": "Konstrutór rejeita referénsia. Razaun: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin fó sai protesaun duplikadu antes. Razaun: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin atribui fali rejistu husi {{from}} ba {{to}} . Razaun: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin atribui fali rejistu husi {{from}} ba {{to}} . Razaun: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Tentativa rejistu duplikadu ida hosi parseiru seluk hetan rejeita",
+      "BOOKING_CANCELLED": "Rezervasaun kanseladu. Razaun: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Propriedade operasionál fila fali ba parseiru",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Elijibilidade ba komisaun kanseladu ho rezervasaun",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Elijibilidade ba komisaun restaura ona ba rezerva foun",
+      "OWNERSHIP_DISPUTE_RAISED": "Parseiru seluk disputa propriedade ba kliente ida-ne'e - admin Leadrat ida sei haree ida-ne'e",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Disputa propriedade ba kliente ida-ne'e retira ona - ita-boot nia propriedade la muda",
+      "OWNERSHIP_DISPUTE_UPHELD": "Disputa kona-ba propriedade ba kliente ida-ne'e hetan ona revizaun - Ita-boot nia propriedade konfirma ona",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Rejistu hafoin ita-boot nia disputa propriedade nian deside ona ba ita-boot nia favor. Nota: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Protesaun remata: disputa propriedade ida deside ona ba parseiru seluk nia favor. Nota: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Númeru telefone ida-ne'e la válidu ba {{country}} .",
     "COUNTRY_MISMATCH": "Favor hili kódigu nasaun ne'ebé loos.",
     "NOT_MOBILE": "Favor hatama númeru telemovel, la'ós telefone rai."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisaun ne'ebé elejivel",
+      "PENDING": "Komisaun pendente",
+      "CANCELLED": "Komisaun kanseladu"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Atribui ba ita-boot",
+      "DISPUTED": "Atribuisaun disputadu"
+    }
+  },
+  "result": {
+    "none": "Laiha rezultadu rejistu atu hatudu. Rejistu uluk lead ida.",
+    "acceptedTitle": "Rejista ona lead",
+    "rejectedTitle": "Lead la rejista",
+    "protectionWindow": "Janela Protesaun",
+    "protectedUntil": "Protejidu To'o",
+    "openLead": "Loke Lead",
+    "addAnother": "Hatama Lead seluk",
+    "duplicate": "Duplikadu - protejidu ona",
+    "duplicateHint": "Kliente ida-ne'e hetan ona protesaun ba projetu ida-ne'e hosi rejistu seluk, nune'e labele rejista ba ita-boot.",
+    "existingProtectedUntil": "Rejistu ne'ebé eziste protejidu to'o"
+  },
+  "disputes": {
+    "title": "Ha'u nia disputa sira",
+    "intro": "Disputa sira kona-ba propriedade ne'ebé ita-boot levanta ba kliente sira ne'ebé maka hetan rekuza hanesan duplikadu sira. Admin Leadrat ida halo revizaun ba ida-idak.",
+    "empty": "Ita-boot la hamosu disputa ruma. Se kliente ida ne'ebé ita-boot lori mai hetan rekuza hanesan duplikadu, ita-boot bele disputa ida-ne'e hosi rezultadu rejistu nian.",
+    "columns": {
+      "dispute": "Deskute malu",
+      "reason": "Ita-boot nia razaun",
+      "outcome": "Rezultadu"
+    },
+    "status": {
+      "OPEN": "Iha revizaun nia laran",
+      "UPHELD": "La'ós ba ita-boot nia favor",
+      "OVERTURNED": "Deside ba ita-boot nia favor",
+      "WITHDRAWN": "Retirada"
+    },
+    "awaitingReview": "Hein hela admin nia revizaun",
+    "openNewLead": "Loke ita-boot nia lead {{id}}",
+    "withdraw": "Dada an",
+    "withdrawConfirm": "Hasai Ita-boot nia disputa ba {{name}} ? Propriedade atuál hela hanesan ne'e.",
+    "raise": "Disputa kona-ba propriedade",
+    "raiseTitle": "Disputa kona-ba propriedade",
+    "raiseHint": "Se kliente ida-ne'e mai uluk hasoru ita-boot, esplika tanbasá. Admin Leadrat ida sei halo revizaun ba ida-ne'e; se sira deside ba ita-boot nia favor, lead ne'e rejista ona ba ita-boot.",
+    "reasonLabel": "Tanba saida maka kliente ida-ne'e ita-boot nian?",
+    "reasonMin_one": "Pelumenus karakter {{count}} .",
+    "reasonMin_other": "Pelumenus {{count}} karakter sira.",
+    "submit": "Haruka Disputa",
+    "notProtected": "Laiha ema ida maka kaer protesaun ba kliente ida-ne'e ba projetu ida-ne'e tan - ita-boot bele rejista lead agora.",
+    "raised": "Disputa {{id}} haruka ba revizaun.",
+    "viewAll": "Haree ha'u nia disputa sira"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Periodu",
+    "lastDays_one": "{{count}} loron",
+    "lastDays_other": "{{count}} loron",
+    "emptyTitle": "Benvindo! Ita-boot seidauk iha pista sira.",
+    "emptyHint": "Rejistu ita-boot nia lead dahuluk - ita-boot nia pipeline, rezervasaun sira no prazu protesaun nian sei mosu iha ne'e.",
+    "tiles": {
+      "leads": "Totál lead sira",
+      "newInPeriod_one": "{{count}} foun iha períodu ida-ne'e",
+      "newInPeriod_other": "{{count}} foun iha períodu ida-ne'e",
+      "accepted": "Aseita ona",
+      "booked": "Rezerva ona",
+      "bookedInPeriod_one": "{{count}} rezervadu iha períodu ida-ne'e",
+      "bookedInPeriod_other": "{{count}} rezervadu iha períodu ida-ne'e",
+      "conversion": "Konversaun",
+      "conversionHint": "Lead sira ne'ebé rezerva ona hanesan fahe ida hosi lead sira ne'ebé aseita ona",
+      "protectedNow": "Protejidu agora",
+      "expiringSoon_one": "Protesaun ne'ebé remata iha loron {{count}}",
+      "expiringSoon_other": "Protesaun ne'ebé remata iha loron {{count}}",
+      "disputedNow": "Disputa husi ema seluk",
+      "disputedNowHint": "Ita-boot nia lideransa sira ho disputa propriedade nakloke hosi parseiru seluk",
+      "commissionEligible": "Komisaun ne'ebé elejivel",
+      "commissionCancelled_one": "{{count}} kanseladu",
+      "commissionCancelled_other": "{{count}} kanseladu"
+    },
+    "chart": {
+      "title_one": "Rejistu no rezervasaun sira kada loron - loron {{count}} ikus",
+      "title_other": "Rejistu no rezervasaun sira kada loron - loron {{count}} ikus sira",
+      "registrations": "Rejistu sira",
+      "bookings": "Rezervasaun sira"
+    },
+    "byStage": "Lidera sira tuir estatutu",
+    "bySource": "Liña sira tuir fonte",
+    "byReferral": "Lidera sira tuir estatutu referénsia nian",
+    "myDisputes": "Disputa sira ne'ebé ita-boot levanta",
+    "noDisputes": "Laiha disputa sira ne'ebé maka hamosu.",
+    "unknown": "La tau",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM esternu (simuladu)",
+      "PARTNER_CRM": "Hatama husi ita-boot nia ekipa",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integrasaun",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Protesaun sei remata iha loron {{count}} tuirmai",
+    "expiringTitle_other": "Protesaun sei remata iha loron {{count}} tuir mai",
+    "expiringEmpty": "Laiha chumbo ida maka lakon nia protesaun iha janela ida-ne'e."
   }
 }

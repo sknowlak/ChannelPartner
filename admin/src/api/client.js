@@ -28,6 +28,8 @@ export const login = (email, password) => client.post('/auth/login', { email, pa
 // The signed-in admin's own record, incl. the saved UI language (section 54).
 export const getMe = () => client.get('/auth/me');
 export const updateMe = (payload) => client.patch('/auth/me', payload);
+// Revokes this token server-side so a copied token stops working too.
+export const logout = () => client.post('/auth/logout');
 
 export const getDashboard = () => client.get('/dashboard');
 
@@ -47,6 +49,11 @@ export const getRegistration = (registrationId) => client.get(`/registrations/${
 export const getRegistrationAudit = (registrationId) => client.get(`/registrations/${registrationId}/audit`);
 export const overrideRegistration = (registrationId, payload) =>
   client.post(`/registrations/${registrationId}/override`, payload);
+
+// Ownership disputes raised by partners whose registration was rejected as a duplicate (section 62).
+export const listDisputes = (params) => client.get('/disputes', { params });
+export const getDispute = (disputeId) => client.get(`/disputes/${disputeId}`);
+export const resolveDispute = (disputeId, payload) => client.post(`/disputes/${disputeId}/resolve`, payload);
 
 export const listAudit = (params) => client.get('/audit', { params });
 

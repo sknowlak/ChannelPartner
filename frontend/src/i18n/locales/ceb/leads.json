@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Gi-book",
-    "pending": "Naghulat"
+    "pending": "Naghulat",
+    "status": {
+      "CONFIRMED": "Gi-book",
+      "CANCELLED": "Gikansela ang pag-book"
+    }
   },
   "assign": {
     "unassigned": "Wala ma-assign",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Wala pay proyekto (wala gi-refer)",
-    "notInList": "{{project}} (wala sa listahan sa proyekto)"
+    "notInList": "{{project}} (wala sa listahan sa proyekto)",
+    "protectionDays_one": "{{count}} -adlaw nga proteksyon",
+    "protectionDays_other": "{{count}} -adlaw nga proteksyon"
   },
   "journey": {
     "customer": "Kustomer",
@@ -76,7 +82,14 @@
     "progressHistory": "Kasaysayan sa Pag-uswag",
     "timesIn": "(mga oras sa {{timezone}} )",
     "backToMyLeads": "Balik sa Akong mga Lead",
-    "editLead": "I-edit ang Lead"
+    "editLead": "I-edit ang Lead",
+    "disputeBanner": "Ang laing kauban naglalis sa pagpanag-iya niini nga kustomer. Gisusi kini sa usa ka admin Leadrat - ang imong proteksyon magpabilin sa lugar hangtod nga makahukom sila.",
+    "booking": "Pagpareserba",
+    "commission": "Komisyon",
+    "notBooked": "Wala gi-book",
+    "cancelledOn": "Gikansela sa {{date}} .",
+    "cancelReason": "Rason: {{reason}}",
+    "cancelledHint": "Gikansela sa tigtukod ang pagpareserba - ang pagpanag-iya sa operasyon nahibalik kanimo ug ang pagka-kwalipikado sa komisyon gikansela. Kini mapasig-uli kung ang tingga ma-book pag-usab."
   },
   "referral": {
     "NOT_REFERRED": "Wala gi-refer (walay proyekto)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Gidawat sa Builder ang referral",
       "REFERRAL_REJECTED": "Gisalikway sa Builder ang referral. Rason: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Sayo nga gipagawas sa admin ang duplicate nga proteksyon. Rason: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Gi-assign sa Admin ang rehistrasyon gikan sa {{from}} ngadto sa {{to}} . Rason: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Gi-assign sa Admin ang rehistrasyon gikan sa {{from}} ngadto sa {{to}} . Rason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ang usa ka doble nga pagsulay sa pagparehistro sa laing kauban gisalikway",
+      "BOOKING_CANCELLED": "Gikansela ang pag-book. Rason: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ang pagpanag-iya sa operasyon gibalik sa kauban",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Gikansela ang kwalipikasyon sa komisyon uban ang pag-book",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ang kwalipikasyon sa komisyon gipahiuli alang sa bag-ong booking",
+      "OWNERSHIP_DISPUTE_RAISED": "Laing kauban nga nakiglalis sa pagpanag-iya niini nga kustomer - usa ka Leadrat admin ang magsusi niini",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Ang panaglalis sa pagpanag-iya niini nga kustomer gibawi - ang imong pagpanag-iya wala mausab",
+      "OWNERSHIP_DISPUTE_UPHELD": "Ang panaglalis sa pagpanag-iya niini nga kustomer gisusi - gikumpirma ang imong pagpanag-iya",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Narehistro human nadesisyonan ang imong panaglalis sa pagpanag-iya pabor kanimo. Mubo nga sulat: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Natapos ang proteksyon: usa ka panaglalis sa pagpanag-iya ang nadesisyonan pabor sa laing kauban. Mubo nga sulat: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Kini nga numero sa telepono dili balido para sa {{country}} .",
     "COUNTRY_MISMATCH": "Palihug pilia ang husto nga code sa nasud.",
     "NOT_MOBILE": "Palihug pagsulod ug mobile number, dili landline."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Kwalipikado sa komisyon",
+      "PENDING": "Komisyon pending",
+      "CANCELLED": "Gikanselar ang komisyon"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Gihatag kanimo",
+      "DISPUTED": "Gilalis ang pag-ila"
+    }
+  },
+  "result": {
+    "none": "Walay resulta sa pagparehistro nga ipakita. Pagrehistro una og lead.",
+    "acceptedTitle": "Narehistro ang lead",
+    "rejectedTitle": "Lead wala narehistro",
+    "protectionWindow": "Bintana sa Proteksyon",
+    "protectedUntil": "Gipanalipdan Hangtod",
+    "openLead": "Bukas nga Lead",
+    "addAnother": "Pagdugang og Lain nga Lead",
+    "duplicate": "Duplicate - gipanalipdan na",
+    "duplicateHint": "Kini nga kustomer giprotektahan na alang niini nga proyekto pinaagi sa lain nga pagrehistro, mao nga dili kini marehistro para kanimo.",
+    "existingProtectedUntil": "Ang kasamtangan nga pagparehistro gipanalipdan hangtod"
+  },
+  "disputes": {
+    "title": "Akong mga Paglalis",
+    "intro": "Ang mga panaglalis sa pagpanag-iya nga imong gipatungha alang sa mga kustomer nga gibalibaran ingon mga duplicate. Usa ka Leadrat admin nagrepaso sa matag usa.",
+    "empty": "Wala ka nagpatunghag bisan unsang panaglalis. Kung ang usa ka kostumer nga imong gidala gibalibaran ingon usa ka duplicate, mahimo nimo kini pakiglalis gikan sa resulta sa pagrehistro.",
+    "columns": {
+      "dispute": "Paglalis",
+      "reason": "Imong rason",
+      "outcome": "Resulta"
+    },
+    "status": {
+      "OPEN": "Ubos sa pagsusi",
+      "UPHELD": "Dili pabor kanimo",
+      "OVERTURNED": "Nakahukom sa imong pabor",
+      "WITHDRAWN": "Gi-withdraw"
+    },
+    "awaitingReview": "Naghulat alang sa admin review",
+    "openNewLead": "Ablihi ang imong lead {{id}}",
+    "withdraw": "Pag-atras",
+    "withdrawConfirm": "I-withdraw ang imong panaglalis alang sa {{name}} ? Ang kasamtangan nga pagpanag-iya nagpabilin nga ingon niini.",
+    "raise": "Paglalis sa pagpanag-iya",
+    "raiseTitle": "Paglalis sa pagpanag-iya",
+    "raiseHint": "Kung kini nga kustomer una nga mianhi kanimo, ipasabut kung ngano. Usa ka Leadrat admin ang magrepaso niini; kung modesisyon sila pabor kanimo, ang nanguna narehistro alang kanimo.",
+    "reasonLabel": "Nganong imo man kining kustomer?",
+    "reasonMin_one": "Labing menos {{count}} nga karakter.",
+    "reasonMin_other": "Labing menos {{count}} nga mga karakter.",
+    "submit": "Ipadala ang Panaglalis",
+    "notProtected": "Wala nay naghupot ug panalipod niini nga kustomer alang niini nga proyekto - mahimo nimong irehistro ang nanguna karon.",
+    "raised": "Ang panaglalis {{id}} gipadala alang sa pagsusi.",
+    "viewAll": "Tan-awa ang akong mga panaglalis"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Panahon",
+    "lastDays_one": "{{count}} adlaw",
+    "lastDays_other": "{{count}} ka adlaw",
+    "emptyTitle": "Welcome! Wala ka pay lead.",
+    "emptyHint": "Irehistro ang imong unang lead - ang imong pipeline, bookings ug mga deadline sa proteksyon makita dinhi.",
+    "tiles": {
+      "leads": "Total nga mga lead",
+      "newInPeriod_one": "{{count}} bag-o niining panahona",
+      "newInPeriod_other": "{{count}} bag-o niining panahona",
+      "accepted": "Gidawat",
+      "booked": "Gi-book",
+      "bookedInPeriod_one": "{{count}} gi-book niining panahona",
+      "bookedInPeriod_other": "{{count}} gi-book niining panahona",
+      "conversion": "Pagkakabig",
+      "conversionHint": "Gi-book nga mga lead isip bahin sa gidawat nga mga lead",
+      "protectedNow": "Gipanalipdan karon",
+      "expiringSoon_one": "Proteksyon matapos sa {{count}} adlaw",
+      "expiringSoon_other": "Proteksyon matapos sa {{count}} ka adlaw",
+      "disputedNow": "Gilalis sa uban",
+      "disputedNowHint": "Ang imong mga lead nga adunay bukas nga panag-away sa pagpanag-iya gikan sa laing kauban",
+      "commissionEligible": "Kwalipikado sa komisyon",
+      "commissionCancelled_one": "{{count}} gikansela",
+      "commissionCancelled_other": "{{count}} gikansela"
+    },
+    "chart": {
+      "title_one": "Mga rehistrasyon ug booking kada adlaw - katapusang {{count}} nga adlaw",
+      "title_other": "Mga rehistrasyon ug booking kada adlaw - katapusang {{count}} nga mga adlaw",
+      "registrations": "Mga rehistro",
+      "bookings": "Mga reserbasyon"
+    },
+    "byStage": "Nanguna pinaagi sa status",
+    "bySource": "Nanguna sa tinubdan",
+    "byReferral": "Nanguna pinaagi sa referral status",
+    "myDisputes": "Mga panaglalis nga imong gipatungha",
+    "noDisputes": "Walay mga panaglalis nga gipatungha.",
+    "unknown": "Wala gitakda",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "External CRM (gi-simulate)",
+      "PARTNER_CRM": "Gidugang sa imong team",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Paghiusa",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Ang proteksyon mo-expire sa sunod nga {{count}} nga adlaw",
+    "expiringTitle_other": "Ang proteksyon mo-expire sa sunod nga {{count}} nga mga adlaw",
+    "expiringEmpty": "Walay lead nga mawad-an sa proteksyon niini nga bintana."
   }
 }

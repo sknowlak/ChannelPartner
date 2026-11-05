@@ -30,7 +30,8 @@
       "registered": "Enggo terdaftar"
     },
     "booked": "Enggo ipesan",
-    "empty": "La lit rujuken si lit."
+    "empty": "La lit rujuken si lit.",
+    "bookingCancelled": "Pemesanan enggo ibatasi"
   },
   "detail": {
     "customer": "Si nukur",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Pemesanan enggo ikonfirmasi.",
       "accepted": "Rujuken si ialoken.",
-      "rejected": "Rujuken si itulak."
+      "rejected": "Rujuken si itulak.",
+      "bookingCancelled": "Pemesanan enggo ibatasi."
     },
-    "backToReferrals": "Mulihken ku Rujuken ."
+    "backToReferrals": "Mulihken ku Rujuken .",
+    "bookingCancelled": "Pemesanan enggo ibatasi",
+    "cancelBooking": "Batalken Pemesanan",
+    "cancelReasonLabel": "Alasenna mbatalken (icidahken man pasangan) * .",
+    "cancelBookingHint": "Kepemiliken operasional mulihken ku mitra ras kelayaken komisina ibatasi. Lead banci ipesan mulihi kenca si e.",
+    "cancelBookingConfirm": "Batalken pemesanndu ."
   },
   "history": {
     "title": "Sejarah",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kelayaken komisi si ibahan .",
       "HANDOVER_COMPLETED": "Penyerahan enggo dung .",
       "ADMIN_PROTECTION_RELEASED": "Admin ngelepasken perlindungen duplikat awal. Alasenna: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin netapken mulihi pendaftaren i bas {{from}} ku {{to}} . Alasenna: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin netapken mulihi pendaftaren i bas {{from}} ku {{to}} . Alasenna: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Usaha pendaftaren duplikat si ilakoken mitra si deban itulak .",
+      "BOOKING_CANCELLED": "Pemesanan enggo ibatasi. Alasenna: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Kepemiliken operasional mulihken man mitra .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kelayaken komisi ibatasi alu pemesan .",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kelayaken komisi ipulihken guna pemesan si mbaru ."
     }
   }
 }

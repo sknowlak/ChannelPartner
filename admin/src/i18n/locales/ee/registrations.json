@@ -49,8 +49,73 @@
       "newPartnerId": "Habɔbɔ ƒe ID Yeye",
       "reason": "Susu (si wobia) .",
       "apply": "Wɔ Override ŋudɔ",
-      "applying": "Le dɔbiagbalẽvi wɔwɔ me..."
+      "applying": "Le dɔbiagbalẽvi wɔwɔ me...",
+      "cancelBookingHint": "Teteɖeanyi dea dzesi agbalẽŋɔŋlɔ kple eƒe dɔdasi be woɖe asi le eŋu, trɔa dɔwɔwɔ ƒe aƒetɔ nyenye na hadɔwɔla la, eye wònana xɔtula la gawɔa agbalẽ ɖe ŋgɔdonya sia ŋu ake.",
+      "cancelBookingConfirm": "Te fli ɖe agbalẽŋɔŋlɔ sia mea? Wote fli ɖe eƒe dɔdzikpɔha hã me. Woŋlɔa esia kple wò ŋkɔ kple susu."
     },
-    "timelineTitle": "Dɔdzikpɔkpɔ ƒe Ɣeyiɣikɔntabubu (ŋɔŋlɔ sia ƒe ŋkɔ ŋɔŋlɔ) ."
+    "timelineTitle": "Dɔdzikpɔkpɔ ƒe Ɣeyiɣikɔntabubu (ŋɔŋlɔ sia ƒe ŋkɔ ŋɔŋlɔ) .",
+    "bookingStatus": "Agbalẽŋɔŋlɔ ƒe Nɔnɔme",
+    "commissionAttribution": "Dɔdzikpɔha ƒe Nyawo Gbɔkpɔkpɔ",
+    "disputeOpen": "Nutɔnyenye ŋuti nyaʋiʋli aɖe ʋu ɖi na asisi sia - hadɔwɔla bubu gblɔ be yewo tɔe. Wotsoa nya me le eŋu le Nyaʋiʋliwo ƒe axaa dzi.",
+    "viewDisputes": "Kpɔ nyaʋiʋliwo ɖa",
+    "cancellation": {
+      "title": "Wote fli ɖe agbalẽŋɔŋlɔ me",
+      "hint": "Wote fli ɖe agbalẽŋɔŋlɔ kple eƒe dɔdɔ me; dɔwɔwɔ ƒe aƒetɔnyenye trɔ gbɔ kple hadɔwɔla la eye xɔtula ate ŋu awɔ agbalẽ na ŋgɔdonya sia ake.",
+      "at": "Wote fli ɖe eme le",
+      "by": "Wote fli ɖe eme to",
+      "reason": "Susu"
+    }
+  },
+  "disputes": {
+    "title": "Nutɔnyenye Ŋuti Nyaʋiʋliwo",
+    "hint": "Dɔwɔhati si wogbe eƒe ŋkɔ dede agbalẽ me be enye esi wogbugbɔ ŋlɔ la ate ŋu aʋli nya le amesi tɔe asisi la tɔe ŋu. Dzro akpa evea siaa me eye nàtso nya me.",
+    "statusFilter": "Nyaʋiʋli ƒe nɔnɔme",
+    "allStatuses": "Nɔnɔmewo katã",
+    "empty": "Nyaʋiʋli aɖeke mele ɖoƒe sia ŋu o.",
+    "columns": {
+      "dispute": "Nyahehe",
+      "customer": "Asisi",
+      "project": "Dɔwɔna",
+      "raisedBy": "Wohee to",
+      "heldBy": "Fifia ƒe aƒetɔ",
+      "status": "Ɖoƒe",
+      "raisedAt": "Wohee ɖe dzi"
+    },
+    "detail": {
+      "title": "Nyaʋiʋli {{id}}",
+      "raisedOn": "Wofɔ {{date}} ɖe dzi.",
+      "raisingTitle": "Wohee to",
+      "holderTitle": "Fifia ƒe aƒetɔ",
+      "partner": "Hati",
+      "raisedBy": "Wotsɔe ɖo ɖa to",
+      "customerName": "Asisi",
+      "mobile": "Si tsana",
+      "alternateMobile": "Asitelefon bubu",
+      "email": "Email dzi",
+      "project": "Dɔwɔna",
+      "reason": "Woƒe susu",
+      "registration": "Ŋkɔŋlɔɖi",
+      "registeredAt": "Woŋlɔ ŋkɔ ɖe eme le",
+      "referral": "Amedɔdɔ",
+      "heldMissing": "Womete ŋu ke ɖe ŋkɔ ŋɔŋlɔ si wolé ɖe asi ŋu o.",
+      "resolutionTitle": "Nyametsotso",
+      "outcome": "Metsonu",
+      "note": "Ɖo ŋku edzi",
+      "decidedBy": "Wotso nya me le eŋu to",
+      "decidedAt": "Wotso nya me le",
+      "newRegistration": "Amewo ƒe ŋkɔ dede agbalẽ me yeyee",
+      "decideTitle": "Mitso nya me le nyaʋiʋli sia ŋu",
+      "noteLabel": "De dzesi nyametsotsoa me ɖeɖe (si hiã) .",
+      "noteRequired": "Ŋlɔ nuŋlɔɖi aɖe be nàtso nya me.",
+      "uphold": "Lé ɖe asi",
+      "overturn": "Trɔ asi le eŋu",
+      "upholdEffect": "{{holder}} léa asisi la ɖe te. Wotu nyaʋiʋlia eye naneke metrɔna o.",
+      "overturnEffect": "{{holder}} ƒe ametakpɔkpɔ evelia wu enu fifia eye woŋlɔ asisi la ŋkɔ na {{partner}} abe ŋkɔ ŋɔŋlɔ yeye ene.",
+      "heldBookedHelp": "Woŋlɔa asisi sia ƒe agbalẽ to amesi tɔ wònye fifia dzi. Te fli ɖe agbalẽŋɔŋlɔ ma me gbã (Admin Override le ŋkɔ ŋɔŋlɔ dzi), emegbe nàtrɔ asi le eŋu:",
+      "confirmTitle": "Èka ɖe edzia?",
+      "confirmUphold": "Ẽ, lée ɖe te",
+      "confirmOverturn": "Ẽ, trɔ asi le eŋu",
+      "back": "Trɔ Yi Nyaʋiʋliwo Gbɔ"
+    }
   }
 }

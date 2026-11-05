@@ -30,7 +30,8 @@
       "registered": "Ts'íibta'an"
     },
     "booked": "ts'o'ok u reservado",
-    "empty": "Mina'an referencias láayli'."
+    "empty": "Mina'an referencias láayli'.",
+    "bookingCancelled": "Ts'o'ok u xu'ulul u reserva"
   },
   "detail": {
     "customer": "Cliyeente",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Ts'o'ok u jaajkúunta'al u reserva.",
       "accepted": "K'a'amal u túuxta'al.",
-      "rejected": "Referencia rechazada."
+      "rejected": "Referencia rechazada.",
+      "bookingCancelled": "Ts'o'ok u xu'ulul u reserva."
     },
-    "backToReferrals": "Ka'a suut ti' le referencias"
+    "backToReferrals": "Ka'a suut ti' le referencias",
+    "bookingCancelled": "Ts'o'ok u xu'ulul u reserva",
+    "cancelBooking": "Cancelar le reserva",
+    "cancelReasonLabel": "O'olal u xu'ulsa'al (ku ye'esa'al ti' le núup) *",
+    "cancelBookingHint": "Le propiedad operacional ku suut ti' le socio yéetel u elegibilidad le comisión ku cancela. Le plomo je'el u páajtal u reservado tu ka'atéen chúunk'in.",
+    "cancelBookingConfirm": "Cancelar le reserva"
   },
   "history": {
     "title": "K'ajlay",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Creada u elegibilidad le comisión",
       "HANDOVER_COMPLETED": "Ts'o'ok u k'u'ubul",
       "ADMIN_PROTECTION_RELEASED": "Admin tu jóok'saj protección duplicada temprano. O'olal: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin tu k'exaj u registro u {{from}} u {{to}} . O'olal: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin tu k'exaj u registro u {{from}} u {{to}} . O'olal: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Juntúul intento u registro duplicado tumen uláak' socio bin rechazado",
+      "BOOKING_CANCELLED": "Ts'o'ok u xu'ulul u reserva. O'olal: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "U yuumil meyaj ku suut ti' le socioo'",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Le elegibilidad ti' le comisión cancelada yéetel le reserva",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Le elegibilidad ti' le comisión restaurada utia'al u túumben reserva"
     }
   }
 }

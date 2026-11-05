@@ -43,7 +43,9 @@
       "name": "姓名",
       "city": "城市",
       "status": "地位",
-      "actions": "行动"
+      "actions": "行动",
+      "protection": "重复保护",
+      "matchOn": "重复匹配"
     },
     "closeReferrals": "关闭推荐",
     "reopen": "重新开放",
@@ -55,6 +57,23 @@
       "add": "添加项目",
       "created": "创建了{{name}} 。"
     },
-    "back": "返回建设者"
+    "back": "返回建设者",
+    "protection": {
+      "days_other": "{{count}}天",
+      "globalDays_other": "全局默认（ {{count}}天）",
+      "globalDefault": "全局默认",
+      "placeholder": "保护天数（空=全局默认）",
+      "saved": "更新了{{name}}的重复保护。",
+      "hint": "重复保护：1-3650 天，或留空以使用“设置”中的全局​​默认值。更改仅适用于新注册 - 现有注册将保持到期状态。"
+    },
+    "matching": {
+      "global": "全局默认",
+      "globalWith": "全局默认值 ( {{fields}} )",
+      "mobile": "手机号码",
+      "email": "电子邮件",
+      "both": "手机号码+邮箱",
+      "saved": "已更新{{name}}的重复匹配",
+      "hint": "哪些详细信息使两个注册成为项目的同一客户。从现在开始，更改适用于重复支票；现有的保护不受影响。"
+    }
   }
 }

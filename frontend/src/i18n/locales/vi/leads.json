@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Đã đặt",
-    "pending": "Chưa giải quyết"
+    "pending": "Chưa giải quyết",
+    "status": {
+      "CONFIRMED": "Đã đặt",
+      "CANCELLED": "Đã hủy đặt chỗ"
+    }
   },
   "assign": {
     "unassigned": "Chưa được chỉ định",
@@ -58,7 +62,8 @@
   },
   "project": {
     "none": "Chưa có dự án nào (chưa được giới thiệu)",
-    "notInList": "{{project}} (không có trong danh sách dự án)"
+    "notInList": "{{project}} (không có trong danh sách dự án)",
+    "protectionDays_other": "{{count}} -bảo vệ ngày"
   },
   "journey": {
     "customer": "Khách hàng",
@@ -76,7 +81,14 @@
     "progressHistory": "Lịch sử tiến độ",
     "timesIn": "(thời gian trong {{timezone}} )",
     "backToMyLeads": "Quay lại khách hàng tiềm năng của tôi",
-    "editLead": "Chỉnh sửa khách hàng tiềm năng"
+    "editLead": "Chỉnh sửa khách hàng tiềm năng",
+    "disputeBanner": "Một đối tác khác đã tranh chấp quyền sở hữu của khách hàng này. Quản trị viên Leadrat đang xem xét nó - biện pháp bảo vệ của bạn vẫn được giữ nguyên cho đến khi họ quyết định.",
+    "booking": "Đặt chỗ",
+    "commission": "Nhiệm vụ",
+    "notBooked": "Chưa đặt",
+    "cancelledOn": "Đã hủy vào {{date}} .",
+    "cancelReason": "Lý do: {{reason}}",
+    "cancelledHint": "Người xây dựng đã hủy yêu cầu đặt chỗ - quyền sở hữu vận hành đã quay trở lại với bạn và khả năng đủ điều kiện nhận hoa hồng cũng bị hủy bỏ. Nó sẽ được khôi phục nếu khách hàng tiềm năng được đặt lại."
   },
   "referral": {
     "NOT_REFERRED": "Không được giới thiệu (không có dự án)",
@@ -158,7 +170,17 @@
       "REFERRAL_ACCEPTED": "Builder đã chấp nhận lời giới thiệu",
       "REFERRAL_REJECTED": "Builder đã từ chối lời giới thiệu. Lý do: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Quản trị viên đã phát hành tính năng bảo vệ trùng lặp sớm. Lý do: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Quản trị viên đã chỉ định lại đăng ký từ {{from}} thành {{to}} . Lý do: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Quản trị viên đã chỉ định lại đăng ký từ {{from}} thành {{to}} . Lý do: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Nỗ lực đăng ký trùng lặp của một đối tác khác đã bị từ chối",
+      "BOOKING_CANCELLED": "Đặt phòng bị hủy. Lý do: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Quyền sở hữu hoạt động được trả lại cho đối tác",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Tính đủ điều kiện hoa hồng bị hủy khi đặt phòng",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Tính đủ điều kiện hoa hồng được khôi phục cho lượt đặt phòng mới",
+      "OWNERSHIP_DISPUTE_RAISED": "Một đối tác khác tranh chấp quyền sở hữu của khách hàng này - quản trị viên Leadrat sẽ xem xét nó",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Tranh chấp quyền sở hữu đối với khách hàng này đã được rút lại - quyền sở hữu của bạn không thay đổi",
+      "OWNERSHIP_DISPUTE_UPHELD": "Tranh chấp quyền sở hữu đối với khách hàng này đã được xem xét - quyền sở hữu của bạn đã được xác nhận",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Đã đăng ký sau khi tranh chấp quyền sở hữu của bạn được quyết định có lợi cho bạn. Lưu ý: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Bảo vệ đã kết thúc: tranh chấp quyền sở hữu đã được quyết định có lợi cho một đối tác khác. Lưu ý: {{note}}"
     }
   },
   "columnsPanel": {
@@ -182,5 +204,100 @@
     "INVALID_FOR_COUNTRY": "Số điện thoại này không hợp lệ cho {{country}} .",
     "COUNTRY_MISMATCH": "Vui lòng chọn đúng mã quốc gia.",
     "NOT_MOBILE": "Vui lòng nhập số điện thoại di động, không phải số điện thoại cố định."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Hoa hồng đủ điều kiện",
+      "PENDING": "Hoa hồng đang chờ xử lý",
+      "CANCELLED": "Hoa hồng bị hủy"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Thuộc về bạn",
+      "DISPUTED": "Thuộc tính bị tranh chấp"
+    }
+  },
+  "result": {
+    "none": "Không có kết quả đăng ký để hiển thị. Đăng ký một khách hàng tiềm năng đầu tiên.",
+    "acceptedTitle": "Đã đăng ký khách hàng tiềm năng",
+    "rejectedTitle": "Khách hàng tiềm năng chưa được đăng ký",
+    "protectionWindow": "Cửa sổ bảo vệ",
+    "protectedUntil": "Được bảo vệ cho đến khi",
+    "openLead": "Mở khách hàng tiềm năng",
+    "addAnother": "Thêm khách hàng tiềm năng khác",
+    "duplicate": "Trùng lặp - đã được bảo vệ",
+    "duplicateHint": "Khách hàng này đã được bảo vệ cho dự án này bằng một đăng ký khác nên không thể đăng ký cho bạn.",
+    "existingProtectedUntil": "Đăng ký hiện tại được bảo vệ cho đến khi"
+  },
+  "disputes": {
+    "title": "Tranh chấp của tôi",
+    "intro": "Tranh chấp quyền sở hữu mà bạn đưa ra cho khách hàng đã bị từ chối dưới dạng trùng lặp. Một quản trị viên Leadrat sẽ đánh giá từng cái một.",
+    "empty": "Bạn chưa đưa ra bất kỳ tranh chấp nào. Nếu một khách hàng bạn giới thiệu bị từ chối coi là trùng lặp, bạn có thể tranh chấp điều đó từ kết quả đăng ký.",
+    "columns": {
+      "dispute": "Tranh luận",
+      "reason": "Lý do của bạn",
+      "outcome": "kết quả"
+    },
+    "status": {
+      "OPEN": "Đang xem xét",
+      "UPHELD": "Không có lợi cho bạn",
+      "OVERTURNED": "Quyết định có lợi cho bạn",
+      "WITHDRAWN": "Đã rút"
+    },
+    "awaitingReview": "Đang chờ sự xem xét của quản trị viên",
+    "openNewLead": "Mở khách hàng tiềm năng của bạn {{id}}",
+    "withdraw": "Rút",
+    "withdrawConfirm": "Rút lại tranh chấp của bạn về {{name}} ? Quyền sở hữu hiện tại vẫn như cũ.",
+    "raise": "Tranh chấp quyền sở hữu",
+    "raiseTitle": "Tranh chấp quyền sở hữu",
+    "raiseHint": "Nếu khách hàng này đến với bạn trước, hãy giải thích lý do. Quản trị viên Leadrat sẽ xem xét nó; nếu họ quyết định có lợi cho bạn, thì khách hàng tiềm năng sẽ được đăng ký cho bạn.",
+    "reasonLabel": "Tại sao khách hàng này là của bạn?",
+    "reasonMin_other": "Ít nhất {{count}} ký tự.",
+    "submit": "Gửi tranh chấp",
+    "notProtected": "Không ai bảo vệ khách hàng này cho dự án này nữa - bạn có thể đăng ký khách hàng tiềm năng ngay bây giờ.",
+    "raised": "Tranh chấp {{id}} đã được gửi để xem xét.",
+    "viewAll": "Xem tranh chấp của tôi"
+  },
+  "dashboard": {
+    "title": "Trang tổng quan",
+    "period": "Giai đoạn",
+    "lastDays_other": "{{count}} ngày",
+    "emptyTitle": "Chào mừng! Bạn chưa có khách hàng tiềm năng nào.",
+    "emptyHint": "Đăng ký khách hàng tiềm năng đầu tiên của bạn - quy trình, đặt chỗ và thời hạn bảo vệ của bạn sẽ hiển thị tại đây.",
+    "tiles": {
+      "leads": "Tổng số khách hàng tiềm năng",
+      "newInPeriod_other": "{{count}} mới trong giai đoạn này",
+      "accepted": "Đã chấp nhận",
+      "booked": "Đã đặt",
+      "bookedInPeriod_other": "{{count}} đã đặt trong khoảng thời gian này",
+      "conversion": "Chuyển đổi",
+      "conversionHint": "Khách hàng tiềm năng đã đặt dưới dạng phần trăm khách hàng tiềm năng được chấp nhận",
+      "protectedNow": "Được bảo vệ ngay bây giờ",
+      "expiringSoon_other": "Bảo vệ sẽ kết thúc sau {{count}} ngày",
+      "disputedNow": "Bị người khác tranh chấp",
+      "disputedNowHint": "Khách hàng tiềm năng của bạn có tranh chấp quyền sở hữu mở từ một đối tác khác",
+      "commissionEligible": "Hoa hồng đủ điều kiện",
+      "commissionCancelled_other": "{{count}} đã bị hủy"
+    },
+    "chart": {
+      "title_other": "Số lượt đăng ký và đặt chỗ mỗi ngày - {{count}} ngày qua",
+      "registrations": "Đăng ký",
+      "bookings": "Đặt chỗ"
+    },
+    "byStage": "Dẫn theo trạng thái",
+    "bySource": "Dẫn theo nguồn",
+    "byReferral": "Dẫn đầu theo trạng thái giới thiệu",
+    "myDisputes": "Tranh chấp bạn nêu ra",
+    "noDisputes": "Không có tranh chấp nào được nêu ra.",
+    "unknown": "Chưa đặt",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM bên ngoài (mô phỏng)",
+      "PARTNER_CRM": "Được nhóm của bạn thêm vào",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Tích hợp",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_other": "Bảo vệ sẽ hết hạn sau {{count}} ngày tới",
+    "expiringEmpty": "Không có chì nào bị mất khả năng bảo vệ trong cửa sổ này."
   }
 }

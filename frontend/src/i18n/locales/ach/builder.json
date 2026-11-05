@@ -30,7 +30,8 @@
       "registered": "Ki coyo"
     },
     "booked": "Ki coyo",
-    "empty": "Pe tye ngat mo ma ki cwalo."
+    "empty": "Pe tye ngat mo ma ki cwalo.",
+    "bookingCancelled": "Ki juku booking"
   },
   "detail": {
     "customer": "Kactoma",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Kimoko ni ki keto kabedo ni.",
       "accepted": "Ki jolo lok me cwalo dano.",
-      "rejected": "Ki kwero lok me cwalo dano."
+      "rejected": "Ki kwero lok me cwalo dano.",
+      "bookingCancelled": "Ki juku booking."
     },
-    "backToReferrals": "Dok cen bot dano ma ki cwalo bot gi"
+    "backToReferrals": "Dok cen bot dano ma ki cwalo bot gi",
+    "bookingCancelled": "Ki juku booking",
+    "cancelBooking": "Juko booking",
+    "cancelReasonLabel": "Gin ma oweko ki juku (ki nyutu bot larem) *",
+    "cancelBookingHint": "Bedo ki twero me tic dwogo cen bot ngat ma tye ka tic kwede ki twero gi me nongo cul ki kwanyo woko. Latela ni ki twero coyo ne odoco lacen.",
+    "cancelBookingConfirm": "Juko booking ni"
   },
   "history": {
     "title": "Istori",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Ki yubu twero me nongo kony",
       "HANDOVER_COMPLETED": "Tic me miyo tic dong otum",
       "ADMIN_PROTECTION_RELEASED": "Latela okati ki jami ma ki gwoko ma rwate con. Tyen lok: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Latela oloko rwom me coyo nying ki {{from}} me doko {{to}} . Tyen lok: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Latela oloko rwom me coyo nying ki {{from}} me doko {{to}} . Tyen lok: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Tem me coyo nying pa ngat mukene ki kwero",
+      "BOOKING_CANCELLED": "Ki juku booking. Tyen lok: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "twero me tic ki dwoko cen bot ngat ma tye ka tic kwede",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ki jwayo twero me nongo cente ki i buk",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ki dwoko twero me nongo cul pi buk manyen ni"
     }
   }
 }

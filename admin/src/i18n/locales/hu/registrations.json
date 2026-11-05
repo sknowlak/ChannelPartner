@@ -49,8 +49,73 @@
       "newPartnerId": "Új ID",
       "reason": "Ok (kötelező)",
       "apply": "Felülbírálás alkalmazása",
-      "applying": "Jelentkezés..."
+      "applying": "Jelentkezés...",
+      "cancelBookingHint": "A törlés a foglalást és a jutalékot töröltnek jelöli, a működési tulajdonjogot visszaadja a partnernek, és lehetővé teszi, hogy az építtető újra lefoglalja ezt a potenciális ügyletet.",
+      "cancelBookingConfirm": "Törli ezt a foglalást? A megbízását is törölték. Ez az Ön nevével és indokával van naplózva."
     },
-    "timelineTitle": "Audit idővonala (ez a regisztráció)"
+    "timelineTitle": "Audit idővonala (ez a regisztráció)",
+    "bookingStatus": "Foglalás állapota",
+    "commissionAttribution": "Jutalék-hozzárendelés",
+    "disputeOpen": "Ezzel az ügyféllel kapcsolatban tulajdonosi vita van folyamatban – egy másik partner szerint az övék. A viták oldalon dől el.",
+    "viewDisputes": "Viták megtekintése",
+    "cancellation": {
+      "title": "A foglalás törölve",
+      "hint": "A foglalás és jutaléka törlésre kerül; Az operatív tulajdonjog visszatért a partnerhez, és az építtető újra lefoglalhatja ezt a potenciált.",
+      "at": "Törölve:",
+      "by": "Törölte",
+      "reason": "Ok"
+    }
+  },
+  "disputes": {
+    "title": "Tulajdonjogi viták",
+    "hint": "Az a partner, akinek a regisztrációját mint másodpéldányt elutasították, vitathatja, hogy kié az ügyfél. Tekintse át mindkét oldalt és döntsön.",
+    "statusFilter": "Vita állapota",
+    "allStatuses": "Minden állapot",
+    "empty": "Ezzel az állapottal nincs vita.",
+    "columns": {
+      "dispute": "Vita",
+      "customer": "Vevő",
+      "project": "Projekt",
+      "raisedBy": "által felnevelve",
+      "heldBy": "Jelenlegi tulajdonos",
+      "status": "Állapot",
+      "raisedAt": "Felemelve"
+    },
+    "detail": {
+      "title": "Vita {{id}}",
+      "raisedOn": "Felemelt {{date}}",
+      "raisingTitle": "által felnevelve",
+      "holderTitle": "Jelenlegi tulajdonos",
+      "partner": "Partner",
+      "raisedBy": "Beküldte",
+      "customerName": "Vevő",
+      "mobile": "Mozgó",
+      "alternateMobile": "Alternatív mobil",
+      "email": "Email",
+      "project": "Projekt",
+      "reason": "Az okuk",
+      "registration": "Bejegyzés",
+      "registeredAt": "Regisztrálva:",
+      "referral": "Beutaló",
+      "heldMissing": "A visszatartott regisztráció nem található.",
+      "resolutionTitle": "Döntés",
+      "outcome": "Eredmény",
+      "note": "Jegyzet",
+      "decidedBy": "által döntött",
+      "decidedAt": "Úgy döntött",
+      "newRegistration": "Új regisztráció",
+      "decideTitle": "Döntse el ezt a vitát",
+      "noteLabel": "Megjegyzés a döntés magyarázatához (kötelező)",
+      "noteRequired": "Írj egy megjegyzést a döntéshez.",
+      "uphold": "Tartsa fenn",
+      "overturn": "Felborulás",
+      "upholdEffect": "{{holder}} megtartja az ügyfelet. A vita lezárult, és semmi más nem változik.",
+      "overturnEffect": "{{holder}} duplikált védelme most lejár, és az ügyfél új regisztrációként regisztrált {{partner}} számára.",
+      "heldBookedHelp": "Ez az ügyfél a jelenlegi tulajdonoson keresztül van lefoglalva. Először törölje a foglalást (adminisztrátori felülbírálás a regisztrációnál), majd törölje:",
+      "confirmTitle": "Biztos vagy benne?",
+      "confirmUphold": "Igen, tartsd fenn",
+      "confirmOverturn": "Igen, borulni",
+      "back": "Vissza a vitákhoz"
+    }
   }
 }

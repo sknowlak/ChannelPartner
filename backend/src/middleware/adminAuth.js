@@ -1,5 +1,6 @@
 const { verifyToken } = require('../services/adminAuthService');
 const Admin = require('../models/Admin');
+const { isRevoked } = require('../services/tokenRevocation');
 
 // Protects every /api/admin route except /api/admin/auth/login. Kept
 // entirely separate from the channel-partner API.
@@ -24,6 +25,7 @@ async function adminAuth(req, res, next) {
   }
 
   try {
+    if (await isRevoked(token)) return res.status(401).json({ reason: 'You have been logged out - please log in again' });
     const admin = await Admin.findOne({ adminId: decoded.adminId });
     if (!admin || admin.status !== 'ACTIVE') {
       return res.status(401).json({ reason: 'Admin account is not active' });

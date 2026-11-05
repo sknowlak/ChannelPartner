@@ -29,7 +29,8 @@
       "registered": "Iforukọsilẹ"
     },
     "booked": "fowo si",
-    "empty": "Ko si awọn itọkasi sibẹsibẹ."
+    "empty": "Ko si awọn itọkasi sibẹsibẹ.",
+    "bookingCancelled": "Ifiweranṣẹ ti fagile"
   },
   "detail": {
     "customer": "Onibara",
@@ -52,9 +53,15 @@
     "notice": {
       "booked": "Fowo si timo.",
       "accepted": "Ifiranṣẹ ti gba.",
-      "rejected": "Itọkasi kọ."
+      "rejected": "Itọkasi kọ.",
+      "bookingCancelled": "Ifiweranṣẹ ti fagile."
     },
-    "backToReferrals": "Pada si Awọn Itọkasi"
+    "backToReferrals": "Pada si Awọn Itọkasi",
+    "bookingCancelled": "Ifiweranṣẹ ti fagile",
+    "cancelBooking": "Fagilee fowo si",
+    "cancelReasonLabel": "Idi fun ifagile (ti o han si alabaṣepọ) *",
+    "cancelBookingHint": "Nini iṣiṣẹ pada si alabaṣiṣẹpọ ati pe yiyẹ ni yiyan igbimọ wọn ti fagile. Awọn asiwaju le ti wa ni kọnputa lẹẹkansi nigbamii.",
+    "cancelBookingConfirm": "Fagilee awọn fowo si"
   },
   "history": {
     "title": "Itan",
@@ -81,7 +88,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Yiyẹ ni Commission da",
       "HANDOVER_COMPLETED": "Ifiweranṣẹ ti pari",
       "ADMIN_PROTECTION_RELEASED": "Admin tu idabobo ẹda-ẹda silẹ ni kutukutu. Idi: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Abojuto tun yan iforukọsilẹ lati {{from}} si {{to}} . Idi: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Abojuto tun yan iforukọsilẹ lati {{from}} si {{to}} . Idi: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Igbiyanju iforukọsilẹ ẹda ẹda nipasẹ alabaṣepọ miiran ni a kọ",
+      "BOOKING_CANCELLED": "Ifiweranṣẹ ti fagile. Idi: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Nini iṣiṣẹ pada si alabaṣepọ",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Yiyẹ ni yiyan igbimọ pẹlu ifiṣura naa",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Yiyẹ ni Commission pada fun titun fowo si"
     }
   }
 }

@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Anrezève",
-    "pending": "annatant"
+    "pending": "annatant",
+    "status": {
+      "CONFIRMED": "Anrezève",
+      "CANCELLED": "Anile anile"
+    }
   },
   "assign": {
     "unassigned": "Unassigned",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Pa gen pwojè ankò (pa refere)",
-    "notInList": "{{project}} (pa nan lis pwojè a)"
+    "notInList": "{{project}} (pa nan lis pwojè a)",
+    "protectionDays_one": "{{count}} -jou pwoteksyon",
+    "protectionDays_other": "{{count}} -jou pwoteksyon"
   },
   "journey": {
     "customer": "Kliyan",
@@ -76,7 +82,14 @@
     "progressHistory": "Istwa Pwogrè",
     "timesIn": "(fwa nan {{timezone}} )",
     "backToMyLeads": "Retounen nan Lead mwen yo",
-    "editLead": "Edit plon"
+    "editLead": "Edit plon",
+    "disputeBanner": "Another partner has disputed ownership of this customer. Yon admin Leadrat ap revize li - pwoteksyon ou rete an plas jiskaske yo deside.",
+    "booking": "Anrjistreman",
+    "commission": "Komisyon",
+    "notBooked": "Pa rezève",
+    "cancelledOn": "Anile nan {{date}} .",
+    "cancelReason": "Rezon ki fè: {{reason}}",
+    "cancelledHint": "Mason an te anile rezèvasyon an - pwopriyetè operasyonèl la tounen avèk ou epi yo anile kalifikasyon pou komisyon an. Li retabli si plon an rezève ankò."
   },
   "referral": {
     "NOT_REFERRED": "Pa refere (pa gen pwojè)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Builder aksepte rekòmandasyon an",
       "REFERRAL_REJECTED": "Builder rejte rekòmandasyon an. Rezon ki fè: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin lage pwoteksyon kopi bonè. Rezon ki fè: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin reassigne enskripsyon soti nan {{from}} a {{to}} . Rezon ki fè: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin reassigne enskripsyon soti nan {{from}} a {{to}} . Rezon ki fè: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Yon lòt patnè te rejte yon tantativ enskripsyon kopi",
+      "BOOKING_CANCELLED": "Anile anile. Rezon ki fè: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Pwopriyete operasyon an te retounen bay patnè a",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Elijiblite komisyon an anile ak anrjistreman an",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Elijiblite komisyon an retabli pou nouvo anrjistreman an",
+      "OWNERSHIP_DISPUTE_RAISED": "Yon lòt patnè diskite sou pwopriyetè kliyan sa a - yon admin Leadrat pral revize li",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Yo te retire diskisyon an komen sou kliyan sa a - pwopriyetè w la pa chanje",
+      "OWNERSHIP_DISPUTE_UPHELD": "Yo te revize diskisyon an komen sou kliyan sa a - se pwopriyetè w konfime",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Anrejistre apre diskisyon pwopriyetè ou te deside an favè ou. Nòt: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Pwoteksyon te fini: yon diskisyon pwopriyetè te deside an favè yon lòt patnè. Nòt: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Nimewo telefòn sa a pa valab pou {{country}} .",
     "COUNTRY_MISMATCH": "Tanpri chwazi kòd peyi ki kòrèk la.",
     "NOT_MOBILE": "Tanpri antre yon nimewo mobil, pa yon liy fiks."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisyon elijib",
+      "PENDING": "Komisyon annatant",
+      "CANCELLED": "Komisyon anile"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Atribiye ou",
+      "DISPUTED": "Atribisyon diskite"
+    }
+  },
+  "result": {
+    "none": "No registration result to show. Anrejistre yon plon an premye.",
+    "acceptedTitle": "Plon anrejistre",
+    "rejectedTitle": "Plon pa anrejistre",
+    "protectionWindow": "Fenèt Pwoteksyon",
+    "protectedUntil": "Pwoteje Jiskaske",
+    "openLead": "Louvri Plon",
+    "addAnother": "Ajoute yon lòt plon",
+    "duplicate": "Kopi - deja pwoteje",
+    "duplicateHint": "Kliyan sa a deja pwoteje pou pwojè sa a pa yon lòt enskripsyon, kidonk li pa t 'kapab anrejistre pou ou.",
+    "existingProtectedUntil": "Enskripsyon ki egziste deja pwoteje jiska"
+  },
+  "disputes": {
+    "title": "Konfli mwen yo",
+    "intro": "Ownership disputes you raised for customers that were refused as duplicates. Yon admin Leadrat revize chak.",
+    "empty": "Ou pa soulve okenn diskisyon. If a customer you brought in is refused as a duplicate, you can dispute it from the registration result.",
+    "columns": {
+      "dispute": "Dispitisyon",
+      "reason": "Rezon ou",
+      "outcome": "Rezilta"
+    },
+    "status": {
+      "OPEN": "Anba revizyon",
+      "UPHELD": "Pa an favè ou",
+      "OVERTURNED": "Deside an favè ou",
+      "WITHDRAWN": "Retire"
+    },
+    "awaitingReview": "Ap tann revizyon admin",
+    "openNewLead": "Louvri plon ou {{id}}",
+    "withdraw": "Retire",
+    "withdrawConfirm": "Retire diskisyon w lan pou {{name}} ? Pwopriyetè aktyèl la rete jan li ye.",
+    "raise": "Pwopriyete diskisyon",
+    "raiseTitle": "Pwopriyete diskisyon",
+    "raiseHint": "Si kliyan sa a te vin jwenn ou an premye, eksplike poukisa. Yon admin Leadrat pral revize li; si yo deside an favè ou, plon an anrejistre pou ou.",
+    "reasonLabel": "Poukisa kliyan sa a se pou ou?",
+    "reasonMin_one": "Omwen {{count}} karaktè.",
+    "reasonMin_other": "Omwen {{count}} karaktè.",
+    "submit": "Voye dispit",
+    "notProtected": "Pèsonn pa kenbe pwoteksyon kliyan sa a pou pwojè sa a ankò - ou ka anrejistre plon an kounye a.",
+    "raised": "Distisyon {{id}} voye pou revizyon.",
+    "viewAll": "Gade diskisyon mwen yo"
+  },
+  "dashboard": {
+    "title": "Dach",
+    "period": "Peryòd",
+    "lastDays_one": "{{count}} jou",
+    "lastDays_other": "{{count}} jou",
+    "emptyTitle": "Byenvini! Ou pa gen okenn mennen ankò.",
+    "emptyHint": "Anrejistre premye plon ou a - tiyo w, rezèrvasyon ak dat limit pwoteksyon yo ap parèt isit la.",
+    "tiles": {
+      "leads": "Total kondwi",
+      "newInPeriod_one": "{{count}} nouvo nan peryòd sa a",
+      "newInPeriod_other": "{{count}} nouvo nan peryòd sa a",
+      "accepted": "Aksepte",
+      "booked": "Anrezève",
+      "bookedInPeriod_one": "{{count}} te rezève nan peryòd sa a",
+      "bookedInPeriod_other": "{{count}} te rezève nan peryòd sa a",
+      "conversion": "Konvèsyon",
+      "conversionHint": "Lid rezève kòm yon pati nan plon aksepte",
+      "protectedNow": "Pwoteje kounye a",
+      "expiringSoon_one": "Pwoteksyon ki fini nan {{count}} jou",
+      "expiringSoon_other": "Pwoteksyon k ap fini nan {{count}} jou",
+      "disputedNow": "Konteste pa lòt moun",
+      "disputedNowHint": "Kondwi ou yo ak yon diskisyon pwopriyetè ouvè soti nan yon lòt patnè",
+      "commissionEligible": "Komisyon elijib",
+      "commissionCancelled_one": "{{count}} anile",
+      "commissionCancelled_other": "{{count}} anile"
+    },
+    "chart": {
+      "title_one": "Anrejistreman ak rezèrvasyon pa jou - dènye {{count}} jou",
+      "title_other": "Anrejistreman ak rezèrvasyon pa jou - dènye {{count}} jou",
+      "registrations": "Enskripsyon yo",
+      "bookings": "Rezèvasyon"
+    },
+    "byStage": "Kondwi pa estati",
+    "bySource": "Kondwi pa sous",
+    "byReferral": "Lid pa estati referans",
+    "myDisputes": "Konfli ou leve",
+    "noDisputes": "Pa gen diskisyon leve.",
+    "unknown": "Pa mete",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM ekstèn (simile)",
+      "PARTNER_CRM": "Te ajoute pa ekip ou a",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Entegrasyon",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Pwoteksyon ap ekspire nan pwochen {{count}} jou a",
+    "expiringTitle_other": "Pwoteksyon ap ekspire nan pwochen {{count}} jou yo",
+    "expiringEmpty": "Pa gen okenn plon ki pèdi pwoteksyon li nan fenèt sa a."
   }
 }

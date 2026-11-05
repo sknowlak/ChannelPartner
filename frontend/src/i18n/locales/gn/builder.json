@@ -30,7 +30,8 @@
       "registered": "Ojeregistráva"
     },
     "booked": "Ojerreserva",
-    "empty": "Ndaipóri gueteri referencia."
+    "empty": "Ndaipóri gueteri referencia.",
+    "bookingCancelled": "Reserva oñemboyke"
   },
   "detail": {
     "customer": "Ñemuhára",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Reserva omoañete.",
       "accepted": "Ojeacepta referencia.",
-      "rejected": "Referencia oñembotove."
+      "rejected": "Referencia oñembotove.",
+      "bookingCancelled": "Reserva oñemboyke."
     },
-    "backToReferrals": "Ojevy umi Referencia-pe"
+    "backToReferrals": "Ojevy umi Referencia-pe",
+    "bookingCancelled": "Reserva oñemboyke",
+    "cancelBooking": "Ombogue Reserva rehegua",
+    "cancelReasonLabel": "Motivo de cancelación (ojehechaukáva pe socio-pe) * .",
+    "cancelBookingHint": "Propiedad operativa oho jey socio-pe ha oñemboyke elegibilidad comisión orekóva hikuái. Pe ventaja ikatu ojerreserva jey upe rire.",
+    "cancelBookingConfirm": "Ombogue pe reserva"
   },
   "history": {
     "title": "Tembiasakue",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Comisión elegibilidad omoheñóiva",
       "HANDOVER_COMPLETED": "Oñemohu'ã entrega",
       "ADMIN_PROTECTION_RELEASED": "Admin oguenohẽ protección duplicada iñepyrũrã. Motivo: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin oasigna jey registro {{from}} guive {{to}} peve. Motivo: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin oasigna jey registro {{from}} guive {{to}} peve. Motivo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Oñembotove intento de registro duplicado ambue socio",
+      "BOOKING_CANCELLED": "Reserva oñemboyke. Motivo: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Propiedad operativa ojevy socio-pe",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Elegibilidad Comisión-pe oñemboykéva reserva ndive",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Elegibilidad Comisión-pe oñemoî jey reserva pyahúpe guarã"
     }
   }
 }

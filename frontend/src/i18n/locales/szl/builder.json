@@ -30,7 +30,8 @@
       "registered": "Zaregistrowany"
     },
     "booked": "Zarezerwowane",
-    "empty": "Jeszcze brak ôdesłań."
+    "empty": "Jeszcze brak ôdesłań.",
+    "bookingCancelled": "Rezerwacyjo pociepniynto"
   },
   "detail": {
     "customer": "Klijynt",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Rezerwacyjo potwierdzōno.",
       "accepted": "Przekozanie zaakceptowane.",
-      "rejected": "Przekozanie ôdciepniynte."
+      "rejected": "Przekozanie ôdciepniynte.",
+      "bookingCancelled": "Rezerwacyjo pociepniynto."
     },
-    "backToReferrals": "Nazod do ôdesłań"
+    "backToReferrals": "Nazod do ôdesłań",
+    "bookingCancelled": "Rezerwacyjo pociepniynto",
+    "cancelBooking": "Pociepniyńcie rezerwacyje",
+    "cancelReasonLabel": "Powōd ôdwoływanio (pokazany partnerowi) *",
+    "cancelBookingHint": "Włosność ôperacyjno wraco do partnyra, a jego noleżność do kōmisyje je pociepniynto. Prowadzynie może być zarezerwowane zaś niyskorzij.",
+    "cancelBookingConfirm": "Pociepnij rezerwacyjo"
   },
   "history": {
     "title": "Historyjo",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Utworzōno kwalifikacyjo do kōmisyje",
       "HANDOVER_COMPLETED": "Przekazanie zakōńczōne",
       "ADMIN_PROTECTION_RELEASED": "Admin wczasnij uwolniōł duplikatowo ôchrōna. Powōd: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin zmiyniōł przipisany registracyjo z {{from}} na {{to}} . Powōd: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin zmiyniōł przipisany registracyjo z {{from}} na {{to}} . Powōd: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Prōba registracyje duplikatu bez inkszego partnyra była ôdciepniynto",
+      "BOOKING_CANCELLED": "Rezerwacyjo pociepniynto. Powōd: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Włosność ôperacyjno wrōciyła do partnyra",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kwalifikacyjo do kōmisyje pociepniynto z rezerwacyjōm",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Prziwrōcōno kwalifikacyjo do kōmisyje do nowyj rezerwacyje"
     }
   }
 }

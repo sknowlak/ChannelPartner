@@ -30,7 +30,8 @@
       "registered": "Tz'iib'anb'il xk'ab'a'"
     },
     "booked": "Reservado",
-    "empty": "Maak’a’eb’ li referencia toj anajwan."
+    "empty": "Maak’a’eb’ li referencia toj anajwan.",
+    "bookingCancelled": "Xsachmank li reservación"
   },
   "detail": {
     "customer": "At komon",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Xk’ojob’aman li reservación.",
       "accepted": "K’ulub’anb’il li taqlank.",
-      "rejected": "Li taqlank tz’eqtaananb’il."
+      "rejected": "Li taqlank tz’eqtaananb’il.",
+      "bookingCancelled": "Xtz’eqtaanaak li reservación."
     },
-    "backToReferrals": "Sutq’iik sa’eb’ li taqlanb’il k’anjel ."
+    "backToReferrals": "Sutq’iik sa’eb’ li taqlanb’il k’anjel .",
+    "bookingCancelled": "Xsachmank li reservación",
+    "cancelBooking": "Xtz’eqtaanankil li reserva",
+    "cancelReasonLabel": "Xyaalal li xsachb’al (k’utb’il chiru li komon) * .",
+    "cancelBookingHint": "Li eechanihom re li k’anjelak naxik wi’chik rik’in li komon ut na’isiman lix k’ulub’eb’ re li comisión. Li b’eresink naru xyiib’ankil wi’chik moqon.",
+    "cancelBookingConfirm": "Xtz’eqtaanankil li reservación ."
   },
   "history": {
     "title": "Esilal",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kiyiib’aman li k’ulub’ej re li comisión .",
       "HANDOVER_COMPLETED": "Xtz’aqlok ru li q’axtesink",
       "ADMIN_PROTECTION_RELEASED": "Li Admin kixk’e chi elk li kolok-ib’ chi ka’pak’al chi junpaat. Xyaalal: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Li awa’b’ej kixk’e wi’chik li tz’iib’ank chalen chaq {{from}} toj {{to}} . Xyaalal: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Li awa’b’ej kixk’e wi’chik li tz’iib’ank chalen chaq {{from}} toj {{to}} . Xyaalal: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Kitz’eqtaanaak jun li xyalb’al xtz’iib’ankil wiib’ sut xb’aan jun chik li komon .",
+      "BOOKING_CANCELLED": "Xtz’eqtaanaak li reservación. Xyaalal: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Li eechanihom re li k’anjelak kisutq’iik rik’in li komon .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Li k’ulub’ej re li comisión xsachman rik’in li reservación .",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Li k’ulub’ej re li comisión kik’ojob’aman wi’chik choq’ re li ak’ reservación ."
     }
   }
 }

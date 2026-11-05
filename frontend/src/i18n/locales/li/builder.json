@@ -30,7 +30,8 @@
       "registered": "Geregistreerd"
     },
     "booked": "Gebook",
-    "empty": "Nog gein verwiezinge."
+    "empty": "Nog gein verwiezinge.",
+    "bookingCancelled": "Reservering geannuleerd"
   },
   "detail": {
     "customer": "Klant",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Reservering bevesteg.",
       "accepted": "Verwiezing geaccepteerd.",
-      "rejected": "Verwiezing aafgeweze."
+      "rejected": "Verwiezing aafgeweze.",
+      "bookingCancelled": "Reservering geannuleerd."
     },
-    "backToReferrals": "Terug nao Verwiezinge"
+    "backToReferrals": "Terug nao Verwiezinge",
+    "bookingCancelled": "Reservering geannuleerd",
+    "cancelBooking": "Reservering annulere",
+    "cancelReasonLabel": "Reie veur ‘t annulere (getoend aon de partner) *",
+    "cancelBookingHint": "‘t Operationeel eigenaarsjap geit trök nao de partner en hun commissie-kwalificatie weurt geannuleerd. De lead kin later weer weure gebook.",
+    "cancelBookingConfirm": "Annuleer de boeking"
   },
   "history": {
     "title": "Histoorie",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Insjakelbaarheid veur commissie is opgeriech",
       "HANDOVER_COMPLETED": "Overdrach voltooid",
       "ADMIN_PROTECTION_RELEASED": "Admin heet dubbele besjerming vreug oetgebrach. Reie: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin heet de registratie hertoegeweze vaan {{from}} nao {{to}} . Reie: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin heet de registratie hertoegeweze vaan {{from}} nao {{to}} . Reie: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "‘n Dubbele registratiepoging door ‘n aandere partner woort aafgeweze",
+      "BOOKING_CANCELLED": "Reservering geannuleerd. Reie: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operationeel eigenaarsjap is trökgegeve aon de partner",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Commissie-kwalificatie geannuleerd bij de reservering",
+      "COMMISSION_ELIGIBILITY_RESTORED": "De insjakelbaarheid veur de commissie is hersjtèld veur de nuie reservering"
     }
   }
 }

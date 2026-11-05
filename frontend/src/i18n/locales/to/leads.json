@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Puke",
-    "pending": "Te'eki mahino"
+    "pending": "Te'eki mahino",
+    "status": {
+      "CONFIRMED": "Puke",
+      "CANCELLED": "Kuo kaniseli 'a e puke"
+    }
   },
   "assign": {
     "unassigned": "Te'eki vahe",
@@ -58,7 +62,8 @@
   },
   "project": {
     "none": "'Oku te'eki ke 'iai ha poloseki ('oku te'eki ke 'ave)",
-    "notInList": "{{project}} ('oku 'ikai 'i he lisi 'o e poloseki)"
+    "notInList": "{{project}} ('oku 'ikai 'i he lisi 'o e poloseki)",
+    "protectionDays_other": "{{count}} -'aho malu'i"
   },
   "journey": {
     "customer": "Kasitomā",
@@ -76,7 +81,14 @@
     "progressHistory": "Hisitōlia Fakalakalaká",
     "timesIn": "(ngaahi taimi ʻi he {{timezone}} )",
     "backToMyLeads": "Foki ki he'eku ngaahi taki .",
-    "editLead": "Fakatonutonu Taki"
+    "editLead": "Fakatonutonu Taki",
+    "disputeBanner": "Kuo fakakikihi'i 'e ha hoa ngaue 'e taha 'a e 'ea 'o e kasitomaa ko 'eni. 'Oku vakai'i ia 'e ha admin Leadrat - 'oku nofo pe ho'o malu'i kae 'oua kuo nau tu'utu'uni.",
+    "booking": "Puke",
+    "commission": "Kōmiti",
+    "notBooked": "'Oku te'eki ke puke",
+    "cancelledOn": "Kaniseli 'i he {{date}} .",
+    "cancelReason": "'Uhinga: {{reason}}",
+    "cancelledHint": "Na'e kaniseli 'e he tokotaha langa 'a e booking - 'oku toe foki mai 'a e 'ea fakangaue mo koe pea 'oku kaniseli 'a e taau ke komisoni. 'Oku fakafoki mai ia kapau 'e toe book 'a e taki."
   },
   "referral": {
     "NOT_REFERRED": "'Oku 'ikai ke fakahinohino'i ('ikai ha poloseki)",
@@ -158,7 +170,17 @@
       "REFERRAL_ACCEPTED": "Naʻe tali ʻe he Builder ʻa e fakahinohino .",
       "REFERRAL_REJECTED": "Naʻe fakafisingaʻi ʻe Builder ʻa e fakahinohinó. 'Uhinga: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Na'e tukuange vave 'e he Admin 'a e malu'i 'o e duplicate. 'Uhinga: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Na'e toe vahevahe 'e he pule 'a e lesisita mei he {{from}} ki he {{to}} . 'Uhinga: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Na'e toe vahevahe 'e he pule 'a e lesisita mei he {{from}} ki he {{to}} . 'Uhinga: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Naʻe ʻikai tali ha feinga lesisita ʻe taha ʻe ha hoa ʻe taha .",
+      "BOOKING_CANCELLED": "Kuo kaniseli 'a e booking. 'Uhinga: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Na'e fakafoki 'a e 'ea fakangaue ki he hoa ngaue .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kaniseli 'a e taau 'o e komisoni 'i he booking .",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kuo toe fakafoki mai 'a e taau 'o e komisoni ki he booking fo'ou",
+      "OWNERSHIP_DISPUTE_RAISED": "Na'e fakakikihi'i 'e ha hoa ngaue 'e taha 'a e 'ea 'o e kasitoma ko 'eni - 'e vakai'i ia 'e ha admin Leadrat .",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Na'e to'o 'a e fakakikihi 'o e 'ea 'i he kasitoma ko 'eni - 'oku 'ikai ke liliu ho'o 'ea",
+      "OWNERSHIP_DISPUTE_UPHELD": "Na'e toe vakai'i 'a e fakakikihi 'o e 'ea 'i he kasitomaa ko 'eni - 'oku fakapapau'i ho'o 'ea",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Lesisita hili hono tu'utu'uni ho'o fakakikihi 'o e 'ea 'o lelei kiate koe. Fakatokanga'i ange: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Naʻe ʻosi ʻa e maluʻí: naʻe tuʻutuʻuni ha fakakikihi ʻo e ʻea ʻo lelei ki ha hoa ʻe taha. Fakatokanga'i ange: {{note}}"
     }
   },
   "columnsPanel": {
@@ -182,5 +204,100 @@
     "INVALID_FOR_COUNTRY": "ʻOku ʻikai ʻaonga ʻa e fika telefoni ko ʻení ki he {{country}} .",
     "COUNTRY_MISMATCH": "Kataki 'o fili 'a e code 'o e fonua totonu.",
     "NOT_MOBILE": "Kātaki ʻo fakahū ha fika telefoni toʻotoʻo, ʻo ʻikai ko ha telefoni fonua."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisoni 'oku taau",
+      "PENDING": "Komisoni 'oku kei fakatatali",
+      "CANCELLED": "Kaniseli 'a e Komisoni"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Fakatatau kiate koe",
+      "DISPUTED": "Fakakikihi'i 'a e tukuaki'i"
+    }
+  },
+  "result": {
+    "none": "'Ikai ha ola lesisita ke fakahaa'i. Lesisita muʻa ha taki.",
+    "acceptedTitle": "Lead kuo lesisita",
+    "rejectedTitle": "'Oku te'eki ke lesisita 'a e Lead",
+    "protectionWindow": "Matapa Malu'i",
+    "protectedUntil": "Maluʻi ʻo aʻu ki he 2020.",
+    "openLead": "Fakaava 'a e Lead",
+    "addAnother": "Tānaki atu ha Taki ʻe Taha",
+    "duplicate": "Ko e tatau - kuo 'osi malu'i",
+    "duplicateHint": "Ko e kasitoma ko 'eni 'oku 'osi malu'i ia ki he poloseki ko 'eni 'e ha lesisita 'e taha, ko ia na'e 'ikai lava ke lesisita ia ma'au.",
+    "existingProtectedUntil": "Ko e lesisita 'oku lolotonga 'i ai 'oku malu'i 'o a'u ki he 2020."
+  },
+  "disputes": {
+    "title": "Ko ʻeku Ngaahi Fakakikihí",
+    "intro": "Ko e ngaahi fakakikihi 'o e 'ea na'a ke 'ohake ma'ae kau kasitomaa na'e fakafisinga'i ko e ngaahi tatau. 'Oku vakai'i 'e ha admin Leadrat a e taha takitaha.",
+    "empty": "Kuo teʻeki ke mou ʻohake ha ngaahi fakakikihi. Kapau 'oku fakafisinga'i ha kasitomaa na'a ke 'omi ko ha tatau, 'e lava ke ke fakakikihi'i ia mei he ola 'o e lesisita.",
+    "columns": {
+      "dispute": "Ta'eloto kiai",
+      "reason": "Ko ho'o 'uhinga .",
+      "outcome": "Ola"
+    },
+    "status": {
+      "OPEN": "ʻOku lolotonga vakaiʻi",
+      "UPHELD": "'Ikai 'i ho'o lelei'ia .",
+      "OVERTURNED": "Fakapapau'i 'i ho'o lelei .",
+      "WITHDRAWN": "To'o"
+    },
+    "awaitingReview": "Tatali ki he vakai'i 'e he admin",
+    "openNewLead": "Fakaava ho'o taki {{id}}",
+    "withdraw": "Toho",
+    "withdrawConfirm": "To'o ho'o fakakikihi ki he {{name}} ? Ko e ownership lolotonga 'oku kei tu'u pe ia 'o hange ko ia.",
+    "raise": "Fakakikihi ki he 'ea",
+    "raiseTitle": "Fakakikihi ki he 'ea",
+    "raiseHint": "Kapau naʻe ʻuluaki haʻu ʻa e kasitomaa ko ʻení kiate koe, fakamatalaʻi ange ʻa e ʻuhingá. 'E vakai'i ia 'e ha admin ' Leadrat ; kapau te nau tu'utu'uni 'o lelei kiate koe, 'oku lesisita 'a e taki ma'au.",
+    "reasonLabel": "Ko e ha 'oku 'a'au ai 'a e kasitomaa ko 'eni?",
+    "reasonMin_other": "Ko e si'isi'i taha {{count}} a e ngaahi mata'itohi.",
+    "submit": "'Ave 'a e Fakakikihi",
+    "notProtected": "'Oku 'ikai ha taha 'oku ne pukepuke 'a e malu'i 'i he kasitomaa ko 'eni ki he poloseki ko 'eni 'i ha toe taimi - 'e lava ke ke lesisita 'a e taki he taimi ni.",
+    "raised": "Fakakikihi {{id}} kuo 'ave ke toe vakai'i.",
+    "viewAll": "Vakai ki he'eku ngaahi fakakikihi ."
+  },
+  "dashboard": {
+    "title": "Tesipapa",
+    "period": "Piliote",
+    "lastDays_other": "{{count}} aho",
+    "emptyTitle": "Talitali fiefia! ʻOku teʻeki ke ʻi ai haʻo ngaahi taki.",
+    "emptyHint": "Lesisita ho'o fuofua taki - 'e 'asi heni ho'o paipa, bookings mo e ngaahi 'aho faka'osi 'o e malu'i.",
+    "tiles": {
+      "leads": "Fakakatoa 'o e kau taki",
+      "newInPeriod_other": "{{count}} fo'ou 'i he vaha'a taimi ko 'eni",
+      "accepted": "Kuo tali",
+      "booked": "Puke",
+      "bookedInPeriod_other": "{{count}} kuo puke ʻi he vahaʻataimi ko ʻení",
+      "conversion": "Ko e uluí",
+      "conversionHint": "Ko e kau taki kuo puke ko ha vahevahe ʻo e kau taki kuo tali .",
+      "protectedNow": "Malu'i he taimi ni",
+      "expiringSoon_other": "Malu'i 'oku ngata 'i he {{count}} 'aho",
+      "disputedNow": "Fakakikihi'i 'e he ni'ihi kehe .",
+      "disputedNowHint": "Ko ho'o ngaahi taki mo ha fakakikihi 'o e 'ea 'oku fakaava mei ha hoa ngaue 'e taha .",
+      "commissionEligible": "Komisoni 'oku taau",
+      "commissionCancelled_other": "{{count}} kuo kaniseli"
+    },
+    "chart": {
+      "title_other": "Lesisita mo e puke 'i he 'aho - 'aho fakamuimuitaha {{count}}",
+      "registrations": "Ngaahi Lesisita",
+      "bookings": "Ngaahi puke"
+    },
+    "byStage": "Taki 'i he tu'unga",
+    "bySource": "Taki 'e he ma'u'anga fakamatala",
+    "byReferral": "Taki 'e he tu'unga 'o e fakahinohino",
+    "myDisputes": "Ngaahi fakakikihi na'a ke 'ohake .",
+    "noDisputes": "‘Ikai ha ngaahi fakakikihi ‘e ‘ohake.",
+    "unknown": "'Ikai seti",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM 'i tu'a (fakatatau)",
+      "PARTNER_CRM": "Tānaki atu ʻe hoʻo timí",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Fakatahataha'i",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_other": "Ko e malu'i 'oku 'osi 'i he {{count}} 'aho hoko mai",
+    "expiringEmpty": "ʻOku ʻikai ha lead ʻe mole ʻene maluʻí ʻi he matapā sioʻata ko ʻení."
   }
 }

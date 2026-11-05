@@ -49,8 +49,73 @@
       "newPartnerId": "Uusi ID",
       "reason": "Syy (pakollinen)",
       "apply": "Käytä ohitusta",
-      "applying": "Haetaan..."
+      "applying": "Haetaan...",
+      "cancelBookingHint": "Peruutus merkitsee varauksen ja sen välityspalkkion peruutetuiksi, palauttaa toiminnan omistusoikeuden kumppanille ja antaa rakentajan varata tämän liidin uudelleen.",
+      "cancelBookingConfirm": "Perutaanko tämä varaus? Myös sen välitys on peruutettu. Tämä kirjataan nimesi ja syysi kanssa."
     },
-    "timelineTitle": "Tarkastuksen aikajana (tämä rekisteröinti)"
+    "timelineTitle": "Tarkastuksen aikajana (tämä rekisteröinti)",
+    "bookingStatus": "Varauksen tila",
+    "commissionAttribution": "Komission nimeäminen",
+    "disputeOpen": "Tästä asiakkaasta on käynnissä omistuskiista – toinen kumppani sanoo, että se on hänen. Siitä päätetään Kiistat-sivulla.",
+    "viewDisputes": "Näytä kiistat",
+    "cancellation": {
+      "title": "Varaus peruttu",
+      "hint": "Varaus ja sen välitys peruutetaan; operatiivinen omistusoikeus on palannut kumppanille ja rakentaja voi varata tämän liidin uudelleen.",
+      "at": "Peruutettu klo",
+      "by": "Peruuttanut",
+      "reason": "Syy"
+    }
+  },
+  "disputes": {
+    "title": "Omistuskiistat",
+    "hint": "Yhteistyökumppani, jonka rekisteröinti hylättiin kaksoiskappaleena, voi kiistää asiakkaan omistajan. Tarkista molemmat osapuolet ja päätä.",
+    "statusFilter": "Kiistan tila",
+    "allStatuses": "Kaikki tilat",
+    "empty": "Ei kiistoja tämän tilan kanssa.",
+    "columns": {
+      "dispute": "Kiista",
+      "customer": "Asiakas",
+      "project": "Projekti",
+      "raisedBy": "Kasvatti",
+      "heldBy": "Nykyinen omistaja",
+      "status": "Status",
+      "raisedAt": "Nostettu päälle"
+    },
+    "detail": {
+      "title": "Kiista {{id}}",
+      "raisedOn": "Kasvatus {{date}}",
+      "raisingTitle": "Kasvatti",
+      "holderTitle": "Nykyinen omistaja",
+      "partner": "Kumppani",
+      "raisedBy": "Lähettäjä",
+      "customerName": "Asiakas",
+      "mobile": "mobiili",
+      "alternateMobile": "Vaihtoehtoinen matkapuhelin",
+      "email": "Sähköposti",
+      "project": "Projekti",
+      "reason": "Heidän syynsä",
+      "registration": "Rekisteröinti",
+      "registeredAt": "Rekisteröity",
+      "referral": "Viittaus",
+      "heldMissing": "Pysäytettyä rekisteröintiä ei löytynyt.",
+      "resolutionTitle": "Päätös",
+      "outcome": "Tulokset",
+      "note": "Huom",
+      "decidedBy": "Päättänyt",
+      "decidedAt": "Päätetty",
+      "newRegistration": "Uusi rekisteröinti",
+      "decideTitle": "Päätä tämä kiista",
+      "noteLabel": "Päätöstä selittävä huomautus (pakollinen)",
+      "noteRequired": "Kirjoita muistiinpano päättääksesi.",
+      "uphold": "Pidä kiinni",
+      "overturn": "Kaatuminen",
+      "upholdEffect": "{{holder}} pitää asiakkaan. Kiista on päättynyt, eikä mikään muu muutu.",
+      "overturnEffect": "{{holder}} päällekkäinen suojaus päättyy nyt, ja asiakas on rekisteröitynyt {{partner}} -palveluun uutena rekisteröijänä.",
+      "heldBookedHelp": "Tämä asiakas on varattu nykyisen omistajan kautta. Peruuta tämä varaus ensin (Admin Override rekisteröinnissä) ja kumoa sitten:",
+      "confirmTitle": "Oletko varma?",
+      "confirmUphold": "Kyllä, pidä kiinni",
+      "confirmOverturn": "Kyllä, kaataa",
+      "back": "Takaisin kiistaan"
+    }
   }
 }

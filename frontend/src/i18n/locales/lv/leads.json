@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Rezervēts",
-    "pending": "Gaida"
+    "pending": "Gaida",
+    "status": {
+      "CONFIRMED": "Rezervēts",
+      "CANCELLED": "Rezervācija atcelta"
+    }
   },
   "assign": {
     "unassigned": "Nav piešķirts",
@@ -58,7 +62,10 @@
   },
   "project": {
     "none": "Vēl nav projekta (nav norādīts)",
-    "notInList": "{{project}} (nav projektu sarakstā)"
+    "notInList": "{{project}} (nav projektu sarakstā)",
+    "protectionDays_zero": "{{count}} dienu aizsardzība",
+    "protectionDays_one": "{{count}} dienu aizsardzība",
+    "protectionDays_other": "{{count}} dienu aizsardzība"
   },
   "journey": {
     "customer": "Klients",
@@ -76,7 +83,14 @@
     "progressHistory": "Progresa vēsture",
     "timesIn": "(laiki {{timezone}} )",
     "backToMyLeads": "Atpakaļ uz My Leads",
-    "editLead": "Rediģēt potenciālo pirkumu"
+    "editLead": "Rediģēt potenciālo pirkumu",
+    "disputeBanner": "Cits partneris ir apstrīdējis šī klienta īpašumtiesības. Leadrat administrators to pārskata — jūsu aizsardzība paliek spēkā, līdz tiek pieņemts lēmums.",
+    "booking": "Rezervēšana",
+    "commission": "Komisija",
+    "notBooked": "Nav rezervēts",
+    "cancelledOn": "Atcelts {{date}} .",
+    "cancelReason": "Iemesls: {{reason}}",
+    "cancelledHint": "Būvnieks atcēla rezervāciju — jums ir atgriezušās darbības īpašumtiesības, un tiesības uz komisijas naudu ir atceltas. Tas tiek atjaunots, ja pārsvars tiek rezervēts atkārtoti."
   },
   "referral": {
     "NOT_REFERRED": "Nav norādīts (nav projekta)",
@@ -162,7 +176,17 @@
       "REFERRAL_ACCEPTED": "Builder pieņēma ieteikumu",
       "REFERRAL_REJECTED": "Builder noraidīja ieteikumu. Iemesls: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Administrators agri atbrīvoja dublikātu aizsardzību. Iemesls: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Administrators atkārtoti piešķīra reģistrāciju no {{from}} uz {{to}} . Iemesls: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Administrators atkārtoti piešķīra reģistrāciju no {{from}} uz {{to}} . Iemesls: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Cita partnera dublikāts reģistrācijas mēģinājums tika noraidīts",
+      "BOOKING_CANCELLED": "Rezervācija atcelta. Iemesls: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operatīvās īpašumtiesības tika atgrieztas partnerim",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Komisijas tiesības atceltas ar rezervāciju",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Atjaunota tiesības uz komisiju jaunajai rezervācijai",
+      "OWNERSHIP_DISPUTE_RAISED": "Cits partneris apstrīdēja šī klienta īpašumtiesības — Leadrat administrators to pārskatīs",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Īpašumtiesību strīds par šo klientu tika atsaukts — jūsu īpašumtiesības nav mainītas",
+      "OWNERSHIP_DISPUTE_UPHELD": "Īpašumtiesību strīds par šo klientu tika izskatīts — jūsu īpašumtiesības ir apstiprinātas",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Reģistrēts pēc tam, kad jūsu īpašumtiesību strīds tika izlemts jums par labu. Piezīme: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Aizsardzība beidzās: īpašumtiesību strīds tika izlemts par labu citam partnerim. Piezīme: {{note}}"
     }
   },
   "columnsPanel": {
@@ -186,5 +210,116 @@
     "INVALID_FOR_COUNTRY": "Šis tālruņa numurs nav derīgs valstī {{country}} .",
     "COUNTRY_MISMATCH": "Lūdzu, atlasiet pareizo valsts kodu.",
     "NOT_MOBILE": "Lūdzu, ievadiet mobilā tālruņa, nevis fiksētā tālruņa numuru."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisija ir tiesīga",
+      "PENDING": "Komisija gaida",
+      "CANCELLED": "Komisija atcelta"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Piedēvēts jums",
+      "DISPUTED": "Attiecinājums ir apstrīdēts"
+    }
+  },
+  "result": {
+    "none": "Nav reģistrācijas rezultātu, ko parādīt. Vispirms reģistrējiet potenciālo pirkumu.",
+    "acceptedTitle": "Svins reģistrēts",
+    "rejectedTitle": "Svins nav reģistrēts",
+    "protectionWindow": "Aizsardzības logs",
+    "protectedUntil": "Aizsargāts līdz",
+    "openLead": "Atvērt Lead",
+    "addAnother": "Pievienojiet vēl vienu potenciālo pirkumu",
+    "duplicate": "Dublikāts — jau aizsargāts",
+    "duplicateHint": "Šis klients šim projektam jau ir aizsargāts ar citu reģistrāciju, tāpēc to nevarēja reģistrēt jums.",
+    "existingProtectedUntil": "Esošā reģistrācija aizsargāta līdz"
+  },
+  "disputes": {
+    "title": "Mani strīdi",
+    "intro": "Īpašumtiesību strīdi, kurus izvirzījāt par klientiem, kuri tika noraidīti kā dublikāti. Leadrat administrators pārskata katru no tiem.",
+    "empty": "Jūs neesat izvirzījis nevienu strīdu. Ja klientam, kuru atvedāt, tiek atteikts kā dublikāts, varat to apstrīdēt reģistrācijas rezultātā.",
+    "columns": {
+      "dispute": "Strīds",
+      "reason": "Tavs iemesls",
+      "outcome": "Rezultāts"
+    },
+    "status": {
+      "OPEN": "Notiek pārskatīšana",
+      "UPHELD": "Nav jūsu labā",
+      "OVERTURNED": "Nolēma jūsu labā",
+      "WITHDRAWN": "Izņemts"
+    },
+    "awaitingReview": "Gaida administratora pārskatu",
+    "openNewLead": "Atveriet savu potenciālo pirkumu {{id}}",
+    "withdraw": "Izņemt",
+    "withdrawConfirm": "Vai atsaukt strīdu par {{name}} ? Pašreizējās īpašumtiesības paliek tādas, kādas tās ir.",
+    "raise": "Strīdi par īpašumtiesībām",
+    "raiseTitle": "Strīdi par īpašumtiesībām",
+    "raiseHint": "Ja šis klients ieradās pie jums pirmais, paskaidrojiet, kāpēc. Leadrat administrators to pārskatīs; ja viņi izlems jums par labu, potenciālais pirkums tiek reģistrēts jums.",
+    "reasonLabel": "Kāpēc šis klients ir jūsu?",
+    "reasonMin_zero": "Vismaz {{count}} rakstzīmes.",
+    "reasonMin_one": "Vismaz {{count}} rakstzīme.",
+    "reasonMin_other": "Vismaz {{count}} rakstzīmes.",
+    "submit": "Sūtīt strīdu",
+    "notProtected": "Neviens vairs neaizsargā šo klientu šim projektam — jūs varat reģistrēt potenciālo pirkumu tūlīt.",
+    "raised": "Strīds {{id}} nosūtīts pārskatīšanai.",
+    "viewAll": "Skatīt manus strīdus"
+  },
+  "dashboard": {
+    "title": "Informācijas panelis",
+    "period": "Periods",
+    "lastDays_zero": "{{count}} dienas",
+    "lastDays_one": "{{count}} diena",
+    "lastDays_other": "{{count}} dienas",
+    "emptyTitle": "Laipni lūdzam! Jums vēl nav potenciālo pirkumu.",
+    "emptyHint": "Reģistrējiet savu pirmo potenciālo pirkumu — šeit tiks parādīts jūsu konveijera, rezervācijas un aizsardzības termiņi.",
+    "tiles": {
+      "leads": "Kopējais potenciālo pirkumu skaits",
+      "newInPeriod_zero": "{{count}} jauni šajā periodā",
+      "newInPeriod_one": "{{count}} jauni šajā periodā",
+      "newInPeriod_other": "{{count}} jauni šajā periodā",
+      "accepted": "Pieņemts",
+      "booked": "Rezervēts",
+      "bookedInPeriod_zero": "{{count}} rezervēti šajā periodā",
+      "bookedInPeriod_one": "{{count}} rezervēti šajā periodā",
+      "bookedInPeriod_other": "{{count}} rezervēti šajā periodā",
+      "conversion": "Pārvēršana",
+      "conversionHint": "Rezervētie potenciālie pirkumi kā daļa no pieņemtajiem potenciālajiem pirkumiem",
+      "protectedNow": "Tagad aizsargāts",
+      "expiringSoon_zero": "Aizsardzība beidzas pēc {{count}} dienām",
+      "expiringSoon_one": "Aizsardzība beidzas pēc {{count}} dienām",
+      "expiringSoon_other": "Aizsardzība beidzas pēc {{count}} dienām",
+      "disputedNow": "Apstrīd citi",
+      "disputedNowHint": "Jūsu potenciālie pirkumi ar atklātu īpašumtiesību strīdu no cita partnera",
+      "commissionEligible": "Komisija ir tiesīga",
+      "commissionCancelled_zero": "{{count}} atcelts",
+      "commissionCancelled_one": "{{count}} atcelts",
+      "commissionCancelled_other": "{{count}} atcelts"
+    },
+    "chart": {
+      "title_zero": "Reģistrācijas un rezervācijas dienā — pēdējās {{count}} dienas",
+      "title_one": "Reģistrācijas un rezervācijas dienā — pēdējā {{count}} diena",
+      "title_other": "Reģistrācijas un rezervācijas dienā — pēdējās {{count}} dienas",
+      "registrations": "Reģistrācijas",
+      "bookings": "Rezervācijas"
+    },
+    "byStage": "Vada pēc statusa",
+    "bySource": "Vada pēc avota",
+    "byReferral": "Vada pēc novirzīšanas statusa",
+    "myDisputes": "Jūsu izvirzītie strīdi",
+    "noDisputes": "Nav strīdu.",
+    "unknown": "Nav iestatīts",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Ārējais CRM (imitēts)",
+      "PARTNER_CRM": "Pievienoja jūsu komanda",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integrācija",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_zero": "Aizsardzības termiņš beigsies nākamo {{count}} dienu laikā",
+    "expiringTitle_one": "Aizsardzības termiņš beigsies nākamajā {{count}} dienā",
+    "expiringTitle_other": "Aizsardzības termiņš beigsies nākamo {{count}} dienu laikā",
+    "expiringEmpty": "Šajā logā neviens svins nezaudē savu aizsardzību."
   }
 }

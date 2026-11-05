@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Glèidhte",
-    "pending": "A' feitheamh"
+    "pending": "A' feitheamh",
+    "status": {
+      "CONFIRMED": "Glèidhte",
+      "CANCELLED": "Clàradh air a chuir dheth"
+    }
   },
   "assign": {
     "unassigned": "Neo-ainmichte",
@@ -58,7 +62,11 @@
   },
   "project": {
     "none": "Chan eil pròiseact ann fhathast (gun iomradh)",
-    "notInList": "{{project}} (chan ann air liosta a' phròiseict)"
+    "notInList": "{{project}} (chan ann air liosta a' phròiseict)",
+    "protectionDays_one": "{{count}} -latha dìon",
+    "protectionDays_two": "{{count}} -latha dìon",
+    "protectionDays_few": "{{count}} -latha dìon",
+    "protectionDays_other": "{{count}} -latha dìon"
   },
   "journey": {
     "customer": "Neach-ceannach",
@@ -76,7 +84,14 @@
     "progressHistory": "Eachdraidh Adhartas",
     "timesIn": "(amannan ann an {{timezone}} )",
     "backToMyLeads": "Air ais gu My Leads",
-    "editLead": "Deasaich Lead"
+    "editLead": "Deasaich Lead",
+    "disputeBanner": "Tha com-pàirtiche eile air connspaid mu shealbh an neach-ceannach seo. Tha rianadair Leadrat ga ath-sgrùdadh - bidh do dhìon fhathast na àite gus an co-dhùin iad.",
+    "booking": "Clàradh",
+    "commission": "Coimisean",
+    "notBooked": "Gun chlàradh",
+    "cancelledOn": "Sguireadh air {{date}} .",
+    "cancelReason": "Adhbhar: {{reason}}",
+    "cancelledHint": "Chuir an neach-togail dheth an clàradh - tha seilbh obrachaidh air ais leat agus tha ion-roghnachd coimisean air a chuir dheth. Thèid a thoirt air ais ma thèid an stiùir a ghlèidheadh ​​a-rithist."
   },
   "referral": {
     "NOT_REFERRED": "Gun iomradh (gun phròiseact)",
@@ -164,7 +179,17 @@
       "REFERRAL_ACCEPTED": "Ghabh an neach-togail ris an iomradh",
       "REFERRAL_REJECTED": "Dhiùlt an neach-togail an iomradh. Adhbhar: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Sgaoil an rianaire dìon dùblaichte tràth. Adhbhar: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Dh'ath-ainmich an rianaire an clàradh o {{from}} gu {{to}} . Adhbhar: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Dh'ath-ainmich an rianaire an clàradh o {{from}} gu {{to}} . Adhbhar: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Chaidh oidhirp clàraidh dùblaichte le com-pàirtiche eile a dhiùltadh",
+      "BOOKING_CANCELLED": "Clàradh air a chuir dheth. Adhbhar: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Thill seilbh obrachaidh chun chom-pàirtiche",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Chaidh ion-roghnachd a’ Choimisein a chuir dheth leis an àite-glèidhidh",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ath-thaghadh a' Choimisein airson an àite ùr",
+      "OWNERSHIP_DISPUTE_RAISED": "Rinn com-pàirtiche eile connspaid mu shealbh an neach-ceannach seo - nì rianadair Leadrat ath-sgrùdadh air",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Chaidh connspaid seilbh an neach-ceannach seo a tharraing air ais - chan eil an sealbh agad air atharrachadh",
+      "OWNERSHIP_DISPUTE_UPHELD": "Chaidh ath-sgrùdadh a dhèanamh air a’ chonnspaid seilbh air an neach-ceannach seo - tha do sheilbh air a dhearbhadh",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Clàraichte às deidh do chonnspaid seilbh a bhith air a cho-dhùnadh nad fhàbhar. Nota: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Thàinig dìon gu crìch: chaidh connspaid seilbh a cho-dhùnadh airson com-pàirtiche eile. Nota: {{note}}"
     }
   },
   "columnsPanel": {
@@ -188,5 +213,124 @@
     "INVALID_FOR_COUNTRY": "Chan eil an àireamh fòn seo dligheach airson {{country}} .",
     "COUNTRY_MISMATCH": "Feuch an tagh thu an còd dùthcha ceart.",
     "NOT_MOBILE": "Feuch an cuir thu a-steach àireamh fòn-làimhe, chan e loidhne-tìre."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Coimisean iomchaidh",
+      "PENDING": "Coimisean ri feitheamh",
+      "CANCELLED": "Coimisean air a chur dheth"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Air a thoirt dhut",
+      "DISPUTED": "Buinidh connspaid"
+    }
+  },
+  "result": {
+    "none": "Chan eil toradh clàraidh ri fhaicinn. Clàraich stiùir an toiseach.",
+    "acceptedTitle": "Prìomh chlàr clàraichte",
+    "rejectedTitle": "Cealgaireachd gun chlàradh",
+    "protectionWindow": "Uinneag dìon",
+    "protectedUntil": "Air a dhìon gu ruige seo",
+    "openLead": "Leadaidh Fosgailte",
+    "addAnother": "Cuir Stiùir Eile ris",
+    "duplicate": "Dùblachadh - air a dhìon mar-thà",
+    "duplicateHint": "Tha an neach-ceannach seo mu thràth air a dhìon airson a’ phròiseict seo le clàradh eile, agus mar sin cha b’ urrainn dhuinn a chlàradh dhut.",
+    "existingProtectedUntil": "Clàradh gnàthaichte air a dhìon gus"
+  },
+  "disputes": {
+    "title": "Na Connspaidean agam",
+    "intro": "Connspaidean seilbh a thog thu airson luchd-ceannach a chaidh a dhiùltadh mar dhùblaidhean. Bidh rianadair Leadrat a’ dèanamh lèirmheas air gach fear.",
+    "empty": "Cha do thog thu connspaid sam bith. Ma thèid neach-ceannach a thug thu a-steach a dhiùltadh mar dhùblachadh, faodaidh tu a chonnspaid bho thoradh a’ chlàraidh.",
+    "columns": {
+      "dispute": "Connspaid",
+      "reason": "An adhbhar agad",
+      "outcome": "Toradh"
+    },
+    "status": {
+      "OPEN": "Fo ath-sgrùdadh",
+      "UPHELD": "Chan ann air do shon",
+      "OVERTURNED": "Air a cho-dhùnadh nad fhàbhar",
+      "WITHDRAWN": "Air a tharraing air ais"
+    },
+    "awaitingReview": "A’ feitheamh ri lèirmheas admin",
+    "openNewLead": "Fosgail an stiùir agad {{id}}",
+    "withdraw": "Tarraing air ais",
+    "withdrawConfirm": "A bheil thu airson do chonnspaid a tharraing air ais airson {{name}} ? Tha an seilbh gnàthach a’ fuireach mar a tha e.",
+    "raise": "Seilbh connspaid",
+    "raiseTitle": "Seilbh connspaid",
+    "raiseHint": "Ma thàinig an neach-ceannach seo thugad an toiseach, mìnich carson. Nì rianaire Leadrat ath-sgrùdadh air; ma cho-dhùnas iad nad fhàbhar, tha an stiùir clàraichte dhut.",
+    "reasonLabel": "Carson a tha an neach-ceannach seo leatsa?",
+    "reasonMin_one": "Co-dhiù {{count}} caractar.",
+    "reasonMin_two": "Co-dhiù {{count}} caractaran.",
+    "reasonMin_few": "Co-dhiù {{count}} caractaran.",
+    "reasonMin_other": "Co-dhiù {{count}} caractaran.",
+    "submit": "Cuir Connspaid",
+    "notProtected": "Chan eil duine a’ cumail dìon air an neach-ceannach seo airson a’ phròiseict seo tuilleadh - faodaidh tu an stiùir a chlàradh a-nis.",
+    "raised": "Connspaid {{id}} air a chur airson lèirmheas.",
+    "viewAll": "Thoir sùil air na connspaidean agam"
+  },
+  "dashboard": {
+    "title": "Deas-bhòrd",
+    "period": "Ùine",
+    "lastDays_one": "{{count}} latha",
+    "lastDays_two": "{{count}} làithean",
+    "lastDays_few": "{{count}} làithean",
+    "lastDays_other": "{{count}} làithean",
+    "emptyTitle": "Fàilte! Chan eil treòrachadh agad fhathast.",
+    "emptyHint": "Clàraich a’ chiad stiùir agad - nochdaidh do loidhne-phìoban, glèidhidh agus cinn-latha dìon an seo.",
+    "tiles": {
+      "leads": "Stiùiridhean iomlan",
+      "newInPeriod_one": "{{count}} ùr san ùine seo",
+      "newInPeriod_two": "{{count}} ùr san ùine seo",
+      "newInPeriod_few": "{{count}} ùr san ùine seo",
+      "newInPeriod_other": "{{count}} ùr san ùine seo",
+      "accepted": "Air gabhail ris",
+      "booked": "Glèidhte",
+      "bookedInPeriod_one": "{{count}} ghlèidhte san ùine seo",
+      "bookedInPeriod_two": "{{count}} ghlèidhte san ùine seo",
+      "bookedInPeriod_few": "{{count}} ghlèidhte san ùine seo",
+      "bookedInPeriod_other": "{{count}} ghlèidhte san ùine seo",
+      "conversion": "iompachadh",
+      "conversionHint": "Stiùiridhean glèidhte mar chuibhreann de stiùiridhean ris an deach gabhail",
+      "protectedNow": "Air a dhìon a-nis",
+      "expiringSoon_one": "Thig an dìon gu crìch ann an {{count}} latha",
+      "expiringSoon_two": "Thig dìon gu crìch ann an {{count}} làithean",
+      "expiringSoon_few": "Thig dìon gu crìch ann an {{count}} làithean",
+      "expiringSoon_other": "Thig dìon gu crìch ann an {{count}} làithean",
+      "disputedNow": "Air a chonnsachadh le feadhainn eile",
+      "disputedNowHint": "Do stiùir le connspaid seilbh fosgailte bho chom-pàirtiche eile",
+      "commissionEligible": "Coimisean iomchaidh",
+      "commissionCancelled_one": "{{count}} air a chur dheth",
+      "commissionCancelled_two": "{{count}} air a chur dheth",
+      "commissionCancelled_few": "{{count}} air a chur dheth",
+      "commissionCancelled_other": "{{count}} air a chur dheth"
+    },
+    "chart": {
+      "title_one": "Clàradh is glèidhidh gach latha - {{count}} latha mu dheireadh",
+      "title_two": "Clàradh is glèidhidh gach latha - {{count}} làithean mu dheireadh",
+      "title_few": "Clàradh is glèidhidh gach latha - {{count}} làithean mu dheireadh",
+      "title_other": "Clàradh is glèidhidh gach latha - {{count}} làithean mu dheireadh",
+      "registrations": "Clàraidhean",
+      "bookings": "Clàraidhean"
+    },
+    "byStage": "Air a stiùireadh le inbhe",
+    "bySource": "A 'stiùireadh a rèir an tùs",
+    "byReferral": "Stiùir a rèir inbhe tar-chuir",
+    "myDisputes": "Connspaidean a thog thu",
+    "noDisputes": "Cha deach connspaid sam bith a thogail.",
+    "unknown": "Gun a shuidheachadh",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM taobh a-muigh (samhlaichte)",
+      "PARTNER_CRM": "Air a chuir ris leis an sgioba agad",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Amalachadh",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Thig an dìon gu crìch san ath {{count}} latha",
+    "expiringTitle_two": "Thig an dìon gu crìch anns na {{count}} làithean a tha romhainn",
+    "expiringTitle_few": "Thig an dìon gu crìch anns na {{count}} làithean a tha romhainn",
+    "expiringTitle_other": "Thig an dìon gu crìch anns na {{count}} làithean a tha romhainn",
+    "expiringEmpty": "Cha chaill luaidhe sam bith a dìon san uinneag seo."
   }
 }

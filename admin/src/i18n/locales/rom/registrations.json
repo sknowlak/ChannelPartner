@@ -49,8 +49,73 @@
       "newPartnerId": "Nevo partneresko ID",
       "reason": "Motivo (trebul)",
       "apply": "Keren o Override",
-      "applying": "Aplicirindoj..."
+      "applying": "Aplicirindoj...",
+      "cancelBookingHint": "O anuliripe sikavel e rezervàcia thaj lesqi komisia sar anulime, del palpale o operativno barvalimos e partneresqe, thaj mukhel e xramosarnes te kerel rezervàcia kadale śerutnesqi pale.",
+      "cancelBookingConfirm": "Te nakhaves kadi rezervàcia? Leski komisia si vi anulime. Akava si registrimo tumare anavesa thaj motivosa."
     },
-    "timelineTitle": "O vaxt e reviziako (kadi registracia)"
+    "timelineTitle": "O vaxt e reviziako (kadi registracia)",
+    "bookingStatus": "Statuso e rezervàciaqo",
+    "commissionAttribution": "Atribucia e Komisiaqi",
+    "disputeOpen": "Jekh maripe vash o barvalipe si putardo pe akava klienti - aver partneri phenel kaj si lengo. Si decidime pe rig e Disputenqi.",
+    "viewDisputes": "Dikh e marimata",
+    "cancellation": {
+      "title": "O rezervàcia sas phandli",
+      "hint": "I rezervàcia thaj lesqi komisia si anulime; o operativno barvalipe si palpale e partnerosa thaj o xramosardo śaj te lel kadava śerutno pale.",
+      "at": "Anulirime ko",
+      "by": "Anulirime katar",
+      "reason": "Motìvo"
+    }
+  },
+  "disputes": {
+    "title": "Marimata pal-o barvalimos",
+    "hint": "Jekh partneri kasqi registracia sas refuzime sar duplikàto śaj te marel pes kon si o gazda e klièntosqo. Dikh e duj riga thaj decidisar.",
+    "statusFilter": "Statuso e maripnasko",
+    "allStatuses": "Sa le statusura",
+    "empty": "Naj disputi kadale statusosa.",
+    "columns": {
+      "dispute": "Ćingar",
+      "customer": "Kliènto",
+      "project": "Projèkto",
+      "raisedBy": "Barjardo katar",
+      "heldBy": "Akanutno gazda",
+      "status": "Stàtuso",
+      "raisedAt": "Barjardo ko"
+    },
+    "detail": {
+      "title": "Maripe {{id}}",
+      "raisedOn": "Vazdino {{date}}",
+      "raisingTitle": "Barjardo katar",
+      "holderTitle": "Akanutno gazda",
+      "partner": "Partenèro",
+      "raisedBy": "Bičhaldo katar",
+      "customerName": "Kliènto",
+      "mobile": "Mobìlo",
+      "alternateMobile": "Alternativo mobilo",
+      "email": "Email",
+      "project": "Projèkto",
+      "reason": "Lengo gindo",
+      "registration": "Registracia",
+      "registeredAt": "Registrime ko",
+      "referral": "Referènca",
+      "heldMissing": "I registracia savi sas phangli nashti te arakhel pes.",
+      "resolutionTitle": "Decìzia",
+      "outcome": "Rezultàto",
+      "note": "Notìca",
+      "decidedBy": "Decidirime katar",
+      "decidedAt": "Decidisarde pe",
+      "newRegistration": "Nevi registracia",
+      "decideTitle": "Decizia kadale maripnaski",
+      "noteLabel": "Nota savi sikavel i decìzia (trubul)",
+      "noteRequired": "Xramosar jekh lil te decidis.",
+      "uphold": "Te inkeres",
+      "overturn": "Overturn",
+      "upholdEffect": "{{holder}} inkrel o kliènto. O maripe si phandlo thaj khanci aver na paruvel pes.",
+      "overturnEffect": "{{holder}} -esqo duplikato protekcia agorisarel pes akana thaj o kliènto si registrime vaś {{partner}} sar jekh nevi registracia.",
+      "heldBookedHelp": "Akava kliènto si rezervisardo prekal o akanutno gazda. Anglal te ćhivel pes i rezervàcia (Admin Override pe registracia), palal kodoja te ćhivel pes:",
+      "confirmTitle": "San tu siguro?",
+      "confirmUphold": "Da, inkren",
+      "confirmOverturn": "Da, pherdo",
+      "back": "Palal k-e marimata"
+    }
   }
 }

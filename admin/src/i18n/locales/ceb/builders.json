@@ -43,7 +43,9 @@
       "name": "Ngalan",
       "city": "Dakbayan",
       "status": "Status",
-      "actions": "Mga aksyon"
+      "actions": "Mga aksyon",
+      "protection": "Duplicate nga proteksyon",
+      "matchOn": "Ang mga duplicate nagsangka sa"
     },
     "closeReferrals": "Close para sa mga referral",
     "reopen": "Pag-abli pag-usab",
@@ -55,6 +57,25 @@
       "add": "Idugang ang Proyekto",
       "created": "Gihimo si {{name}} ."
     },
-    "back": "Balik sa Mga Magtutukod"
+    "back": "Balik sa Mga Magtutukod",
+    "protection": {
+      "days_one": "{{count}} adlaw",
+      "days_other": "{{count}} ka adlaw",
+      "globalDays_one": "Kinatibuk-ang default ( {{count}} nga adlaw)",
+      "globalDays_other": "Kinatibuk-ang default ( {{count}} ka adlaw)",
+      "globalDefault": "Global nga default",
+      "placeholder": "Mga adlaw sa pagpanalipod (walay sulod = global default)",
+      "saved": "Gi-update ang duplicate nga proteksyon para sa {{name}} .",
+      "hint": "Duplicate nga proteksyon: 1-3650 ka adlaw, o biyai nga walay sulod aron magamit ang global default gikan sa Settings. Ang usa ka pagbag-o magamit lamang sa mga bag-ong rehistrasyon - ang mga naa na nagtipig sa ilang pagka-expire."
+    },
+    "matching": {
+      "global": "Global nga default",
+      "globalWith": "Kinatibuk-ang default ( {{fields}} )",
+      "mobile": "Numero sa mobile",
+      "email": "Email",
+      "both": "Numero sa mobile + email",
+      "saved": "Gi-update ang duplicate nga pagpares para sa {{name}}",
+      "hint": "Unsang mga detalye ang naghimo sa duha ka pagrehistro nga parehas nga kustomer alang sa usa ka proyekto. Ang mga pagbag-o magamit sa doble nga mga tseke gikan karon; wala maapektuhan ang kasamtangan nga proteksyon."
+    }
   }
 }

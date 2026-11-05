@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "ມີສິດໄດ້ຮັບ",
-    "PENDING": "ລໍຖ້າຢູ່"
+    "PENDING": "ລໍຖ້າຢູ່",
+    "CANCELLED": "ຍົກເລີກ"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "ປ່ອຍການປົກປ້ອງຊໍ້າກັນກ່ອນໄວ",
-    "REASSIGN_PARTNER": "ມອບໝາຍຄືນໃຫ້ຄູ່ຮ່ວມງານອື່ນ"
+    "REASSIGN_PARTNER": "ມອບໝາຍຄືນໃຫ້ຄູ່ຮ່ວມງານອື່ນ",
+    "CANCEL_BOOKING": "ຍົກເລີກການຈອງ"
   },
   "dataType": {
     "TEXT": "ຂໍ້ຄວາມ",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super Admin",
     "ADMIN": "ບໍລິຫານ"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "ຢືນຢັນ",
+    "CANCELLED": "ຍົກເລີກ"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "ສະ​ເພາະ",
+    "DISPUTED": "ໂຕ້ແຍ້ງ"
+  },
+  "disputeStatus": {
+    "OPEN": "ເປີດ",
+    "UPHELD": "ຍຶດໝັ້ນ",
+    "OVERTURNED": "ປີ້ນ",
+    "WITHDRAWN": "ຖອນ"
   }
 }

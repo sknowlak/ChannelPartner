@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Dipesan",
-    "pending": "Tarsundat"
+    "pending": "Tarsundat",
+    "status": {
+      "CONFIRMED": "Dipesan",
+      "CANCELLED": "Pemesanan dibatalhon"
+    }
   },
   "assign": {
     "unassigned": "Ndang ditugashon",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Dang adong dope proyek (ndang dirujuk)",
-    "notInList": "{{project}} (ndang adong di daftar proyek)"
+    "notInList": "{{project}} (ndang adong di daftar proyek)",
+    "protectionDays_one": "{{count}} -parlindungan ari",
+    "protectionDays_other": "{{count}} -parlindungan ari"
   },
   "journey": {
     "customer": "Partobo",
@@ -76,7 +82,14 @@
     "progressHistory": "Sejarah Hamajuon .",
     "timesIn": "(waktu di {{timezone}} )",
     "backToMyLeads": "Mulak tu Pimpinanku .",
-    "editLead": "Sunting Timbal"
+    "editLead": "Sunting Timbal",
+    "disputeBanner": "Mitra na asing nunga marbadai kepemilikan ni nasabah on. Sada admin Leadrat do na meninjau i - perlindunganmu tetap di ingananna sahat tu na diputushon nasida.",
+    "booking": "Pemesanan",
+    "commission": "Parlabaan",
+    "notBooked": "Dang dipesan",
+    "cancelledOn": "Dibatalhon di {{date}} .",
+    "cancelReason": "Alasan: {{reason}}",
+    "cancelledHint": "Dibatalhon pembangun i do pemesanan - kepemilikan operasional mulak tu hamu jala kelayakan komisi dibatalhon. Dipaulak do molo dipesan muse lead."
   },
   "referral": {
     "NOT_REFERRED": "Ndang dirujuk (ndang adong proyek)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Dijalo tukang bangunan do rujukan i .",
       "REFERRAL_REJECTED": "Ditolak tukang bangunan do rujukan i. Alasan: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin mangalehon perlindungan ganda awal. Alasan: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin mambahen pendaftaran sian {{from}} gabe {{to}} . Alasan: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin mambahen pendaftaran sian {{from}} gabe {{to}} . Alasan: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Usaha pendaftaran duplikat sian pasangan na asing ditolak .",
+      "BOOKING_CANCELLED": "Pemesanan dibatalhon. Alasan: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Kepemilikan operasional diulakhon tu mitra .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kelayakan komisi dibatalhon dohot pemesanan .",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Dipaulak ma kelayakan komisi tu pemesanan na baru .",
+      "OWNERSHIP_DISPUTE_RAISED": "Mitra na asing marsoal kepemilikan ni nasabah on - sahalak admin Leadrat do na laho maninjau i .",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Parsalisian kepemilikan tu nasabah on ditarik - kepemilikanmu ndang muba",
+      "OWNERSHIP_DISPUTE_UPHELD": "Parsalisian kepemilikan tu nasabah on ditinjau - kepemilikanmu dikonfirmasi",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Didaftarhon dung diputushon parsalisian kepemilikanmuna na mendukung hamu. Catatan: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Marujung ma perlindungan: diputushon ma parsalisian kepemilikan na mendukung pasangan na asing. Catatan: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Nomor telepon on ndang sah tu {{country}} .",
     "COUNTRY_MISMATCH": "Tolong ma pilih kode negara na sintong.",
     "NOT_MOBILE": "Tolong ma masukhon nomor handphone, unang telepon darat."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisi na layak .",
+      "PENDING": "Komisi tertunda",
+      "CANCELLED": "Komisi dibatalhon ."
+    },
+    "attribution": {
+      "ATTRIBUTED": "Dihubungkon tu ho .",
+      "DISPUTED": "Atribusi na diparsoalhon ."
+    }
+  },
+  "result": {
+    "none": "Dang adong hasil pendaftaran na patuduhon. Daftar ma jolo sada lead.",
+    "acceptedTitle": "Timbal terdaftar .",
+    "rejectedTitle": "Timbal ndang terdaftar .",
+    "protectionWindow": "Jendela Perlindungan .",
+    "protectedUntil": "Dilinggomi Sahat tu 2019.",
+    "openLead": "Buka Timbal .",
+    "addAnother": "Tambahon ma sada nari .",
+    "duplicate": "Duplikat - nunga dilindungi .",
+    "duplicateHint": "Pelanggan on nunga dilindungi tu proyek on marhite pendaftaran na asing, jadi ndang boi didaftarhon tu hamu.",
+    "existingProtectedUntil": "Pendaftaran na adong dilindungi sahat tu taon 2019 on."
+  },
+  "disputes": {
+    "title": "Parsalisianku .",
+    "intro": "Perselisihan kepemilikan na dibahen hamu tu nasabah na ditolak songon duplikat. Sada admin Leadrat na meninjau ganup i.",
+    "empty": "Ndang adong parsalisian na pinatupamuna. Molo adong pelanggan na binoanmuna ditolak gabe duplikat, boi do diparsoalhon hamu i sian hasil pendaftaran.",
+    "columns": {
+      "dispute": "Parbadaan",
+      "reason": "Alasanmu .",
+      "outcome": "Omo"
+    },
+    "status": {
+      "OPEN": "Di toru ni ulaon",
+      "UPHELD": "Ndang dipihak ho .",
+      "OVERTURNED": "Diputushon do na mendukung ho .",
+      "WITHDRAWN": "Ditarik"
+    },
+    "awaitingReview": "Paimahon ulasan ni admin .",
+    "openNewLead": "Buka ma leadmu {{id}}",
+    "withdraw": "Lagak",
+    "withdrawConfirm": "Tarik ma parsalisianmu tu {{name}} ? Kepemilikan nuaeng on tongtong do songon i.",
+    "raise": "Parsalisian kepemilikan .",
+    "raiseTitle": "Parsalisian kepemilikan .",
+    "raiseHint": "Molo parjolo ro pelanggan on tu hamu, patorang ma boasa. Sada admin Leadrat do na meninjau i; molo diputushon nasida na mendukung hamu, didaftarhon ma pimpinan i tu hamu.",
+    "reasonLabel": "Boasa pelangganmu on?",
+    "reasonMin_one": "Saotikna {{count}} karakterna.",
+    "reasonMin_other": "Saotikna {{count}} huruf.",
+    "submit": "Mangkirim Parsalisian .",
+    "notProtected": "Ndang adong be na maniop perlindungan tu nasabah on tu proyek on - boi do hamu mendaftarkan lead saonari.",
+    "raised": "Parsalisian {{id}} ditongos laho diulas.",
+    "viewAll": "Bereng ma parsalisianku ."
+  },
+  "dashboard": {
+    "title": "Dasbor",
+    "period": "Maso",
+    "lastDays_one": "{{count}} ari",
+    "lastDays_other": "{{count}} ari",
+    "emptyTitle": "Horas ro! Ndang adong dope tudutudumuna.",
+    "emptyHint": "Daftarhon ma leadmu na parjolo - pipa, pemesanan dohot batas waktu perlindunganmu tarida dison.",
+    "tiles": {
+      "leads": "Jumlah angka na manguluhon",
+      "newInPeriod_one": "{{count}} na baru di periode on",
+      "newInPeriod_other": "{{count}} na baru di periode on",
+      "accepted": "Dijalo",
+      "booked": "Dipesan",
+      "bookedInPeriod_one": "{{count}} dipesan di periode on",
+      "bookedInPeriod_other": "{{count}} dipesan di periode on",
+      "conversion": "Hamubaon ni roha",
+      "conversionHint": "Lead na dipesan songon bagian ni lead na dijalo .",
+      "protectedNow": "Dilinggomi do nuaeng .",
+      "expiringSoon_one": "Parlinggoman na marujung di {{count}} ari .",
+      "expiringSoon_other": "Parlinggoman na marujung di {{count}} ari .",
+      "disputedNow": "Diparsoalhon iba .",
+      "disputedNowHint": "Pimpinanmu dohot parsalisian kepemilikan terbuka sian mitra na asing .",
+      "commissionEligible": "Komisi na layak .",
+      "commissionCancelled_one": "{{count}} dibatalhon",
+      "commissionCancelled_other": "{{count}} dibatalhon"
+    },
+    "chart": {
+      "title_one": "Pendaftaran dohot pemesanan per hari - ari {{count}} terakhir",
+      "title_other": "Pendaftaran dohot pemesanan per hari - ari {{count}} terakhir",
+      "registrations": "Pendaftaran",
+      "bookings": "Pemesanan"
+    },
+    "byStage": "Manguluhon marhite status .",
+    "bySource": "Manguluhon marhite sumber .",
+    "byReferral": "Manguluhon marhite status rujukan .",
+    "myDisputes": "Parsalisian na pinatupamuna .",
+    "noDisputes": "Ndang adong parsalisian na pinatupa.",
+    "unknown": "Dang diatur",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM luar (ditiru)",
+      "PARTNER_CRM": "Ditambai tim muna .",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Pardomuan",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Perlindungan habis di ari {{count}} na mangihut",
+    "expiringTitle_other": "Perlindungan habis di {{count}} ari na mangihut",
+    "expiringEmpty": "Ndang adong timah na mago perlindunganna di jendela on."
   }
 }

@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Pīmāruots",
-    "PENDING": "Gaidūšs"
+    "PENDING": "Gaidūšs",
+    "CANCELLED": "Atcalts"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "100 doc#1159 Atbreivuot dublikatu aizsardzeibu agruok .",
-    "REASSIGN_PARTNER": "100 doc#1159 Pōrdaleit cytam partnerim ."
+    "REASSIGN_PARTNER": "100 doc#1159 Pōrdaleit cytam partnerim .",
+    "CANCEL_BOOKING": "Atceļt rezervaceju"
   },
   "dataType": {
     "TEXT": "Teksts",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Superadmins",
     "ADMIN": "Admins"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Apstyprynuots",
+    "CANCELLED": "Atcalts"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Attīcynuots",
+    "DISPUTED": "Streideigs"
+  },
+  "disputeStatus": {
+    "OPEN": "Atvārts",
+    "UPHELD": "Atbaļsteits",
+    "OVERTURNED": "Apgrīzts",
+    "WITHDRAWN": "Atsaukts"
   }
 }

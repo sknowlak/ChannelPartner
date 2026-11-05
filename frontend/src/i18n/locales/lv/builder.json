@@ -31,7 +31,8 @@
       "registered": "Reģistrēts"
     },
     "booked": "Rezervēts",
-    "empty": "Vēl nav neviena nosūtījuma."
+    "empty": "Vēl nav neviena nosūtījuma.",
+    "bookingCancelled": "Rezervācija atcelta"
   },
   "detail": {
     "customer": "Klients",
@@ -54,9 +55,15 @@
     "notice": {
       "booked": "Rezervācija apstiprināta.",
       "accepted": "Nosūtījums pieņemts.",
-      "rejected": "Ieteikums noraidīts."
+      "rejected": "Ieteikums noraidīts.",
+      "bookingCancelled": "Rezervācija atcelta."
     },
-    "backToReferrals": "Atpakaļ uz Referrals"
+    "backToReferrals": "Atpakaļ uz Referrals",
+    "bookingCancelled": "Rezervācija atcelta",
+    "cancelBooking": "Atcelt rezervāciju",
+    "cancelReasonLabel": "Atcelšanas iemesls (parādīts partnerim) *",
+    "cancelBookingHint": "Darbības īpašumtiesības atgriežas partnerim, un viņa tiesības uz komisijas naudu tiek atceltas. Pārsvaru var atkal rezervēt vēlāk.",
+    "cancelBookingConfirm": "Atcelt rezervāciju"
   },
   "history": {
     "title": "Vēsture",
@@ -87,7 +94,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Izveidota komisijas maksa",
       "HANDOVER_COMPLETED": "Nodošana pabeigta",
       "ADMIN_PROTECTION_RELEASED": "Administrators agri atbrīvoja dublikātu aizsardzību. Iemesls: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Administrators atkārtoti piešķīra reģistrāciju no {{from}} uz {{to}} . Iemesls: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Administrators atkārtoti piešķīra reģistrāciju no {{from}} uz {{to}} . Iemesls: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Cita partnera dublikāts reģistrācijas mēģinājums tika noraidīts",
+      "BOOKING_CANCELLED": "Rezervācija atcelta. Iemesls: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operatīvās īpašumtiesības tika atgrieztas partnerim",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Komisijas tiesības atceltas ar rezervāciju",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Atjaunota tiesības uz komisiju jaunajai rezervācijai"
     }
   }
 }

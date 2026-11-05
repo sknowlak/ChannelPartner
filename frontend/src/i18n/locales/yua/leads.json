@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "ts'o'ok u reservado",
-    "pending": "Ma' ts'oka'ani"
+    "pending": "Ma' ts'oka'ani",
+    "status": {
+      "CONFIRMED": "ts'o'ok u reservado",
+      "CANCELLED": "Ts'o'ok u xu'ulul u reserva"
+    }
   },
   "assign": {
     "unassigned": "Ma' asignado",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Mina'an mix jump'éel meyaj láayli' (ma' u ya'ala'al)",
-    "notInList": "{{project}} (ma' ti' le tsoolol proyecto)"
+    "notInList": "{{project}} (ma' ti' le tsoolol proyecto)",
+    "protectionDays_one": "{{count}} -k'iin kanáanil",
+    "protectionDays_other": "{{count}} -k'iin kanáanil"
   },
   "journey": {
     "customer": "Cliyeente",
@@ -76,7 +82,14 @@
     "progressHistory": "K'ajláayo' u progreso",
     "timesIn": "(k'iin ti' {{timezone}} )",
     "backToMyLeads": "Ka'a suut ti' in pistas",
-    "editLead": "Editar le plomo"
+    "editLead": "Editar le plomo",
+    "disputeBanner": "Uláak' socio ts'o'ok u disputado u propiedad le cliente. Juntúul administrador Leadrat táan u xak'altik - a protección ku p'áatal tu kúuchil tak ken u ch'a'atukult.",
+    "booking": "Reservación",
+    "commission": "Komision",
+    "notBooked": "Ma' ts'o'ok u reservarta'al",
+    "cancelledOn": "Cancelado ti {{date}} .",
+    "cancelReason": "O'olal: {{reason}}",
+    "cancelledHint": "Le máax beetik le najo' tu xu'ulsaj le reservao' - le propiedad operacionalo' táan u suut yéetel tech yéetel u elegibilidad le comisión ku cancela. ku ka'a suut wa le plomo ku reserva tu ka'atéen."
   },
   "referral": {
     "NOT_REFERRED": "Ma' túuxta'an (mina'an proyecto)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Builder tu k'amaj le referencia",
       "REFERRAL_REJECTED": "Builder tu p'ataj le referencia. O'olal: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin tu jóok'saj protección duplicada temprano. O'olal: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin tu k'exaj u registro u {{from}} u {{to}} . O'olal: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin tu k'exaj u registro u {{from}} u {{to}} . O'olal: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Juntúul intento u registro duplicado tumen uláak' socio bin rechazado",
+      "BOOKING_CANCELLED": "Ts'o'ok u xu'ulul u reserva. O'olal: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "U yuumil meyaj ku suut ti' le socioo'",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Le elegibilidad ti' le comisión cancelada yéetel le reserva",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Le elegibilidad ti' le comisión restaurada utia'al u túumben reserva",
+      "OWNERSHIP_DISPUTE_RAISED": "Uláak' socio tu ba'ateltaj u yuumil le clientea' - jump'éel administrador Leadrat yaan u xak'altik",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Le ba'atelil ti' propiedad ti' le cliente bin retirada - u propiedad ma' k'expajal",
+      "OWNERSHIP_DISPUTE_UPHELD": "Le ba'atelil ti' propiedad ti' le cliente bin revisado - u propiedad táan confirmada",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Registrado ka' u disputa propiedad bin decidida ti' u favor. Nota: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Ts'o'ok u kanáanta'al: jump'éel ba'atelil ti' propiedad bin decidido a favor de uláak' socio. Nota: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Le meyaj ku nu'ukul t'aana' ma' jach jaaj uti'al {{country}} .",
     "COUNTRY_MISMATCH": "Béet yéey le código lu'uma' ma'alob.",
     "NOT_MOBILE": "Béet ts'íibt jump'éel meyaj ku móvil, ma' jump'éel nu'ukul t'aan fijo."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Comisión elegible",
+      "PENDING": "Comisión pendiente",
+      "CANCELLED": "Comisión cancelada"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Atribuido ti' teech",
+      "DISPUTED": "Atribución disputada"
+    }
+  },
+  "result": {
+    "none": "Mina'an resultado u registro u ye'esik. yáax ts'íibt jump'éel lead.",
+    "acceptedTitle": "Plomo registrado",
+    "rejectedTitle": "Plomo ma' registrado",
+    "protectionWindow": "Ventana ti' protección",
+    "protectedUntil": "Kanáanta'an Tak",
+    "openLead": "Je'e plomo",
+    "addAnother": "Ts'áa uláak' plomo",
+    "duplicate": "Duplicado - ts'o'ok u kanáanta'al",
+    "duplicateHint": "Le clientea' ts'o'ok u kanáanta'al uti'al le meyaja' tumen uláak' registro, le beetike' ma' páajchaj u registrarta'al uti'al tech.",
+    "existingProtectedUntil": "Registro existente protegido tak ka"
+  },
+  "disputes": {
+    "title": "in ba'atelilo'ob",
+    "intro": "Ba'atelilo'ob ti' propiedad ta líik'esaj uti'al le clientes ku rechazaron bey duplicados. Juntúul admin Leadrat ku xak'altik jujuntúulal.",
+    "empty": "Ma' ta líik'esaj mix jump'éel ba'atelil. Wa juntúul cliente ta taasaj ku p'atik bey jump'éel duplicado, je'el u páajtal u disputar tak le resultado registro.",
+    "columns": {
+      "dispute": "Ba'ate'il",
+      "reason": "A o'olal",
+      "outcome": "Resuultado"
+    },
+    "status": {
+      "OPEN": "Táan u xak'alta'al",
+      "UPHELD": "ma' ti' a favor",
+      "OVERTURNED": "ts'o'ok u ch'a'atukla'al tu favor",
+      "WITHDRAWN": "Retirado"
+    },
+    "awaitingReview": "Táan in páa'tik u yila'al le administrador",
+    "openNewLead": "Je'ek'abt a lead {{id}}",
+    "withdraw": "Tseel",
+    "withdrawConfirm": "¿Ts'áa a ba'atelil uti'al {{name}} ? Le propiedad yaan bejla'o' ku p'áatal bey yaan.",
+    "raise": "Ba'atelil ti' u yuumil",
+    "raiseTitle": "Ba'atelil ti' u yuumil",
+    "raiseHint": "Wa le cliente yáax taal ta wiknal, tsool ba'axten. juntúul administrador Leadrat yaan u xak'altik; wa ku ch'a'tukliko'ob a favore', le plomo ku ts'íibta'al uti'al tech.",
+    "reasonLabel": "Ba'axten le clientea' a tia'al?",
+    "reasonMin_one": "Ba'axten lo bey {{count}} caracter.",
+    "reasonMin_other": "Ba'axten lo bey {{count}} caracteres.",
+    "submit": "Túuxtik ba'atelil",
+    "notProtected": "Mixmáak ku kanáantik le cliente uti'al le meyaja' - je'el u páajtal a registrar le plomo bejla'e'.",
+    "raised": "Ba'atelil {{id}} túuxta'an uti'al u xak'alta'al.",
+    "viewAll": "Ilawil in ba'atelilo'ob"
+  },
+  "dashboard": {
+    "title": "Tablero",
+    "period": "Periodo",
+    "lastDays_one": "{{count}} k'iin",
+    "lastDays_other": "{{count}} k'iino'ob",
+    "emptyTitle": "Ki'imak óolal! Mina'an teech mix jump'éel pista láayli'.",
+    "emptyHint": "Ts'íibt a yáax cliente - a tubería, reservas yéetel plazos protección ku chíikpajal waye'.",
+    "tiles": {
+      "leads": "Total u clientes",
+      "newInPeriod_one": "{{count}} túumben te' k'iino'oba'",
+      "newInPeriod_other": "{{count}} túumben te' k'iino'oba'",
+      "accepted": "k'a'am",
+      "booked": "ts'o'ok u reservado",
+      "bookedInPeriod_one": "{{count}} reservado ti' le período",
+      "bookedInPeriod_other": "{{count}} reservado ti' le período",
+      "conversion": "U sutk'esiko'ob",
+      "conversionHint": "Le clientes potenciales reservados bey jump'éel nu'ukulil le clientes potenciales aceptados",
+      "protectedNow": "Bejla'e' kanáanta'an",
+      "expiringSoon_one": "Kanáanil ku ts'o'okol ti {{count}} k'iin",
+      "expiringSoon_other": "Kanáanil ku ts'o'okol ti' {{count}} k'iino'ob",
+      "disputedNow": "Ba'atelta'an tumen u láak'o'ob",
+      "disputedNowHint": "A conduce yéetel juntúul disputa propiedad abierta ti' uláak' socio",
+      "commissionEligible": "Comisión elegible",
+      "commissionCancelled_one": "{{count}} cancelado",
+      "commissionCancelled_other": "{{count}} cancelado"
+    },
+    "chart": {
+      "title_one": "Inscripciones yéetel reservas tumen k'iin - ts'ook {{count}} k'iin",
+      "title_other": "Inscripciones yéetel reservas tumen k'iin - ts'ook {{count}} k'iino'ob",
+      "registrations": "Inscripciones",
+      "bookings": "Reservas"
+    },
+    "byStage": "ku bisik tumen noj",
+    "bySource": "ku bisik tumen fuente",
+    "byReferral": "Conduce tumen estado u referencia",
+    "myDisputes": "Ba'atelilo'ob ta líik'esaj",
+    "noDisputes": "Ma' yaan ba'atelil.",
+    "unknown": "Ma' ts'a'an",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM externo (simulado)",
+      "PARTNER_CRM": "Ts'a'ab tumen a nu'ukulil",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integración",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Le kanáanil ku xu'ulul ti' le uláak' {{count}} k'iino'",
+    "expiringTitle_other": "Le kanáanil ku xu'ulul ti' le uláak' {{count}} k'iino'obo'",
+    "expiringEmpty": "Mix jump'éel plomo ku sa'atal u kanáanil te' ventanaa'."
   }
 }

@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "बुक कएल गेल",
-    "pending": "लंबित"
+    "pending": "लंबित",
+    "status": {
+      "CONFIRMED": "बुक कएल गेल",
+      "CANCELLED": "बुकिंग रद्द भ गेल"
+    }
   },
   "assign": {
     "unassigned": "अनसाइन कयल गेल",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "एखन धरि कोनो परियोजना नहि (संदर्भित नहि)",
-    "notInList": "{{project}} (परियोजना सूची मे नहि)"
+    "notInList": "{{project}} (परियोजना सूची मे नहि)",
+    "protectionDays_one": "{{count}} -दिन संरक्षण",
+    "protectionDays_other": "{{count}} -दिन संरक्षण"
   },
   "journey": {
     "customer": "ग्राहक",
@@ -76,7 +82,14 @@
     "progressHistory": "प्रगति इतिहास",
     "timesIn": "( {{timezone}} में समय )",
     "backToMyLeads": "वापस हमर लीड्स पर",
-    "editLead": "संपादन लीड"
+    "editLead": "संपादन लीड",
+    "disputeBanner": "एकटा आओर पार्टनर एहि ग्राहक के मालिकाना हक पर विवाद केने अछि. एकटा Leadrat एडमिन एकर समीक्षा क' रहल छथि - अहाँक सुरक्षा ता धरि ओहिना रहैत अछि जा धरि ओ सभ निर्णय नहि क' लेताह.",
+    "booking": "बुकिंग",
+    "commission": "आयोग",
+    "notBooked": "बुकिंग नहि भेल",
+    "cancelledOn": "{{date}} पर रद्द कएल गेल.",
+    "cancelReason": "कारण: {{reason}}",
+    "cancelledHint": "बिल्डर बुकिंग रद्द क देलक - परिचालन स्वामित्व अहां के संग वापस आबि गेल अछि आओर कमीशन के पात्रता रद्द भ गेल अछि. अगर लीड फेर स बुक भ गेल त ओकरा बहाल भ जाइत अछि।"
   },
   "referral": {
     "NOT_REFERRED": "रेफर नहि कएल गेल (कोनो परियोजना नहि)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "बिल्डर रेफरल स्वीकार क लेलक",
       "REFERRAL_REJECTED": "बिल्डर रेफरल के खारिज क देलक। कारण: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "एडमिन डुप्लिकेट प्रोटेक्शन जल्दी जारी क देलक। कारण: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "व्यवस्थापक पंजीकरण केँ {{from}} सँ {{to}} मे पुनः नियुक्त केलक. कारण: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "व्यवस्थापक पंजीकरण केँ {{from}} सँ {{to}} मे पुनः नियुक्त केलक. कारण: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "दोसर पार्टनर द्वारा डुप्लिकेट रजिस्ट्रेशन क प्रयास खारिज क देल गेल",
+      "BOOKING_CANCELLED": "बुकिंग रद्द। कारण: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "परिचालन स्वामित्व साझेदार पर वापस आबि गेल",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "बुकिंग के साथ कमीशन के पात्रता रद्द",
+      "COMMISSION_ELIGIBILITY_RESTORED": "नव बुकिंग के लेल आयोग के पात्रता बहाल",
+      "OWNERSHIP_DISPUTE_RAISED": "एकटा आओर पार्टनर एहि ग्राहक के मालिकाना हक पर विवाद केलक - एकटा Leadrat एडमिन एकर समीक्षा करत",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "एहि ग्राहक पर स्वामित्वक ​​विवाद वापस ल' लेल गेल - अहाँक मालिकाना हक अपरिवर्तित अछि",
+      "OWNERSHIP_DISPUTE_UPHELD": "एहि ग्राहक पर स्वामित्व विवादक समीक्षा कएल गेल - अहाँक स्वामित्वक ​​पुष्टि भ' गेल अछि",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "अहाँक स्वामित्व विवादक निर्णय अहाँक पक्ष मे भेलाक बाद पंजीकृत। नोट: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "संरक्षण समाप्त भ गेल : स्वामित्व विवादक निर्णय दोसर भागीदारक पक्ष मे भेल । नोट: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "ई फोन नंबर {{country}} क लेल मान्य नहि अछि.",
     "COUNTRY_MISMATCH": "कृपया सही देश कोड चुनें।",
     "NOT_MOBILE": "कृपया मोबाइल नंबर दर्ज करू, लैंडलाइन नहि।"
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "आयोग के पात्र",
+      "PENDING": "आयोग लंबित",
+      "CANCELLED": "आयोग रद्द"
+    },
+    "attribution": {
+      "ATTRIBUTED": "अहाँ के श्रेय देल गेल अछि",
+      "DISPUTED": "एट्रिब्यूशन विवादित"
+    }
+  },
+  "result": {
+    "none": "कोनो पंजीकरणक परिणाम नहि देखाबय लेल। पहिने एकटा लीड रजिस्टर करू।",
+    "acceptedTitle": "सीसा पंजीकृत",
+    "rejectedTitle": "सीसा पंजीकृत नहि",
+    "protectionWindow": "संरक्षण विंडो",
+    "protectedUntil": "संरक्षित जब तक",
+    "openLead": "खुला सीसा",
+    "addAnother": "एकटा आओर सीसा जोड़ू",
+    "duplicate": "डुप्लिकेट - पहिने सँ सुरक्षित अछि",
+    "duplicateHint": "इ ग्राहक पहिने सं अइ परियोजना कें लेल दोसर पंजीकरण सं सुरक्षित छै, अइ कें लेल इ अहां कें लेल पंजीकृत नहि कैल जा सकय छै.",
+    "existingProtectedUntil": "मौजूदा पंजीकरण तक संरक्षित"
+  },
+  "disputes": {
+    "title": "हमर विवाद",
+    "intro": "अहां ग्राहकक लेल जे मालिकाना विवाद उठौने रही जे डुप्लीकेट के रूप मे मना क देल गेल छल. एकटा Leadrat एडमिन प्रत्येक के समीक्षा करैत अछि।",
+    "empty": "अहाँ कोनो विवाद नहि उठौने छी। यदि अहां कें द्वारा अनल गेल कोनों ग्राहक कें डुप्लिकेट कें रूप मे मना कैल गेल छै, त अहां ओकरा रजिस्ट्रेशन रिजल्ट सं विवाद कयर सकय छी.",
+    "columns": {
+      "dispute": "झंझट",
+      "reason": "अहाँक कारण",
+      "outcome": "परिणाम"
+    },
+    "status": {
+      "OPEN": "समीक्षाधीन",
+      "UPHELD": "अहाँक पक्ष मे नहि",
+      "OVERTURNED": "अहाँक पक्ष मे निर्णय लेलक",
+      "WITHDRAWN": "वापस ले लेल गेल"
+    },
+    "awaitingReview": "एडमिन रिव्यू के इंतजार में",
+    "openNewLead": "अपन लीड खोलू {{id}}",
+    "withdraw": "वापस करनाइ",
+    "withdrawConfirm": "{{name}} के लेल अपन विवाद वापस करू ? वर्तमान स्वामित्व जेना अछि तेना रहैत अछि।",
+    "raise": "विवाद स्वामित्व",
+    "raiseTitle": "विवाद स्वामित्व",
+    "raiseHint": "अगर ई ग्राहक पहिने अहां के पास आयल छल त बताउ किएक. एकटा Leadrat एडमिन एकर समीक्षा करताह; यदि ओ अहां कें पक्ष मे फैसला करय छै त लीड अहां कें लेल पंजीकृत भ जायत छै.",
+    "reasonLabel": "ई ग्राहक अहाँक किएक अछि?",
+    "reasonMin_one": "कम से कम {{count}} वर्ण।",
+    "reasonMin_other": "कम से कम {{count}} वर्ण।",
+    "submit": "विवाद पठाउ",
+    "notProtected": "एहि प्रोजेक्ट लेल एहि ग्राहक पर आब कियो सुरक्षा नहि रखैत अछि - अहां अखन लीड रजिस्टर क सकय छी.",
+    "raised": "विवाद {{id}} समीक्षा लेल पठाओल गेल।",
+    "viewAll": "हमर विवाद देखू"
+  },
+  "dashboard": {
+    "title": "डैशबोर्ड",
+    "period": "काल",
+    "lastDays_one": "{{count}} दिन",
+    "lastDays_other": "{{count}} दिन",
+    "emptyTitle": "स्वागत! अहाँ लग एखन धरि कोनो लीड नहि अछि।",
+    "emptyHint": "अपन पहिल लीड रजिस्टर करू - अहां के पाइपलाइन, बुकिंग आओर सुरक्षा के समय सीमा एतय देखायत.",
+    "tiles": {
+      "leads": "कुल लीड",
+      "newInPeriod_one": "{{count}} एहि अवधि मे नव",
+      "newInPeriod_other": "{{count}} एहि अवधि मे नव",
+      "accepted": "स्वीकार कयल गेल",
+      "booked": "बुक कएल गेल",
+      "bookedInPeriod_one": "{{count}} एहि अवधि मे बुक कएल गेल",
+      "bookedInPeriod_other": "{{count}} एहि अवधि मे बुक कएल गेल",
+      "conversion": "धर्म परिवर्तन",
+      "conversionHint": "स्वीकृत लीड्स के हिस्सा के रूप में बुक लीड",
+      "protectedNow": "आब संरक्षित अछि",
+      "expiringSoon_one": "{{count}} दिन मे समाप्त होबय बला संरक्षण",
+      "expiringSoon_other": "{{count}} दिन मे समाप्त होबय बला संरक्षण",
+      "disputedNow": "दोसरो द्वारा विवादित",
+      "disputedNowHint": "दोसर पार्टनर स खुलल मालिकाना विवाद क संग अहाँक लीड्स",
+      "commissionEligible": "आयोग के पात्र",
+      "commissionCancelled_one": "{{count}} रद्द कएल गेल",
+      "commissionCancelled_other": "{{count}} रद्द कएल गेल"
+    },
+    "chart": {
+      "title_one": "प्रति दिन पंजीकरण आ बुकिंग - अंतिम {{count}} दिन",
+      "title_other": "प्रतिदिन पंजीकरण आ बुकिंग - अंतिम {{count}} दिन",
+      "registrations": "पंजीकरण के लिये",
+      "bookings": "बुकिंग"
+    },
+    "byStage": "हैसियत के हिसाब से अगुवाई करते हैं",
+    "bySource": "स्रोत के अनुसार लीड",
+    "byReferral": "रेफरल स्टेटस के द्वारा नेतृत्व करता है",
+    "myDisputes": "विवाद अहाँ उठेलहुँ",
+    "noDisputes": "कोनो विवाद नहि उठल।",
+    "unknown": "सेट नहि",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "बाहरी CRM (सिमुलेटेड) 1.1.",
+      "PARTNER_CRM": "अहाँक टीम द्वारा जोड़ल गेल",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "एकीकरण",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "अगिला {{count}} दिन मे सुरक्षा समाप्त भ' रहल अछि",
+    "expiringTitle_other": "अगिला {{count}} दिन मे सुरक्षा समाप्त भ' रहल अछि",
+    "expiringEmpty": "एहि खिड़की मे कोनो सीसा अपन सुरक्षा नहि गमाबैत अछि ।"
   }
 }

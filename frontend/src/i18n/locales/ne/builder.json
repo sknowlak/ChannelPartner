@@ -30,7 +30,8 @@
       "registered": "दर्ता गरियो"
     },
     "booked": "बुक गरियो",
-    "empty": "अहिलेसम्म कुनै रेफरलहरू छैनन्।"
+    "empty": "अहिलेसम्म कुनै रेफरलहरू छैनन्।",
+    "bookingCancelled": "बुकिङ रद्द गरियो"
   },
   "detail": {
     "customer": "ग्राहक",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "बुकिङ पुष्टि भयो।",
       "accepted": "रेफरल स्वीकार गरियो।",
-      "rejected": "रेफरल अस्वीकार गरियो।"
+      "rejected": "रेफरल अस्वीकार गरियो।",
+      "bookingCancelled": "बुकिङ रद्द गरियो।"
     },
-    "backToReferrals": "रेफरलहरूमा फर्कनुहोस्"
+    "backToReferrals": "रेफरलहरूमा फर्कनुहोस्",
+    "bookingCancelled": "बुकिङ रद्द गरियो",
+    "cancelBooking": "बुकिङ रद्द गर्नुहोस्",
+    "cancelReasonLabel": "रद्द गर्नुको कारण (साझेदारलाई देखाइयो) *",
+    "cancelBookingHint": "परिचालन स्वामित्व साझेदारमा फिर्ता जान्छ र तिनीहरूको आयोग योग्यता रद्द हुन्छ। नेतृत्व पछि फेरि बुक गर्न सकिन्छ।",
+    "cancelBookingConfirm": "बुकिङ रद्द गर्नुहोस्"
   },
   "history": {
     "title": "इतिहास",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "आयोग योग्यता सिर्जना गरियो",
       "HANDOVER_COMPLETED": "हस्तान्तरण सम्पन्न",
       "ADMIN_PROTECTION_RELEASED": "प्रशासकले नक्कल सुरक्षा चाँडै जारी गर्यो। कारण: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "प्रशासकले {{from}} बाट {{to}} मा दर्ता पुन: नियुक्त गर्नुभयो। कारण: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "प्रशासकले {{from}} बाट {{to}} मा दर्ता पुन: नियुक्त गर्नुभयो। कारण: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "अर्को साझेदार द्वारा एक नक्कल दर्ता प्रयास अस्वीकार गरियो",
+      "BOOKING_CANCELLED": "बुकिङ रद्द गरियो। कारण: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "परिचालन स्वामित्व साझेदारलाई फिर्ता गरियो",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "बुकिङसँगै आयोगको योग्यता रद्द गरियो",
+      "COMMISSION_ELIGIBILITY_RESTORED": "नयाँ बुकिङका लागि आयोगको योग्यता पुनर्स्थापित गरियो"
     }
   }
 }

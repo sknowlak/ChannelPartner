@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Bókað",
-    "pending": "Í bið"
+    "pending": "Í bið",
+    "status": {
+      "CONFIRMED": "Bókað",
+      "CANCELLED": "Bókun aflýst"
+    }
   },
   "assign": {
     "unassigned": "Óúthlutað",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Ekkert verkefni ennþá (ekki vísað til)",
-    "notInList": "{{project}} (ekki á verkefnalistanum)"
+    "notInList": "{{project}} (ekki á verkefnalistanum)",
+    "protectionDays_one": "{{count}} daga vernd",
+    "protectionDays_other": "{{count}} daga vernd"
   },
   "journey": {
     "customer": "Viðskiptavinur",
@@ -76,7 +82,14 @@
     "progressHistory": "Framfarasaga",
     "timesIn": "(tímar í {{timezone}} )",
     "backToMyLeads": "Aftur í Leads My",
-    "editLead": "Breyta forystu"
+    "editLead": "Breyta forystu",
+    "disputeBanner": "Annar samstarfsaðili hefur andmælt eignarhaldi á þessum viðskiptavini. Leadrat stjórnandi er að skoða það - verndin þín helst þar til þeir ákveða sig.",
+    "booking": "Bókun",
+    "commission": "Framkvæmdastjórn",
+    "notBooked": "Ekki bókað",
+    "cancelledOn": "Hætt við þann {{date}} .",
+    "cancelReason": "Ástæða: {{reason}}",
+    "cancelledHint": "Byggingaraðili hætti við bókunina - rekstrareignarhald er aftur hjá þér og þóknunarhæfi fellur niður. Það er endurheimt ef forystan er bókuð aftur."
   },
   "referral": {
     "NOT_REFERRED": "Ekki vísað (ekkert verkefni)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Byggingaraðili samþykkti tilvísunina",
       "REFERRAL_REJECTED": "Byggingaraðili hafnaði tilvísuninni. Ástæða: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Stjórnandi gaf út tvítekna vernd snemma. Ástæða: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Stjórnandi endurúthlutaði skráningu frá {{from}} í {{to}} . Ástæða: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Stjórnandi endurúthlutaði skráningu frá {{from}} í {{to}} . Ástæða: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Tvítekinni skráningartilraun annars samstarfsaðila var hafnað",
+      "BOOKING_CANCELLED": "Bókun aflýst. Ástæða: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Rekstrareignarhaldið aftur til samstarfsaðilans",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Þóknunarhæfi hætt við bókunina",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Þóknunarhæfi endurheimt fyrir nýju bókunina",
+      "OWNERSHIP_DISPUTE_RAISED": "Annar samstarfsaðili mótmælti eignarhaldi þessa viðskiptavinar - Leadrat stjórnandi mun fara yfir það",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Eignarhaldsdeilan á þessum viðskiptavin var dregin til baka - eignarhald þitt er óbreytt",
+      "OWNERSHIP_DISPUTE_UPHELD": "Farið var yfir eignarhaldsdeilan á þessum viðskiptavin - eignarhald þitt er staðfest",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Skráð eftir að eignardeilan þín var úrskurðuð þér í hag. Athugið: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Vörn endaði: eignarhaldsdeilu var úrskurðaður öðrum samstarfsaðila í hag. Athugið: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Þetta símanúmer er ekki gilt fyrir {{country}} .",
     "COUNTRY_MISMATCH": "Vinsamlegast veldu réttan landskóða.",
     "NOT_MOBILE": "Vinsamlegast sláðu inn farsímanúmer, ekki jarðlína."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Framkvæmdastjórn hæfir",
+      "PENDING": "Þóknun í bið",
+      "CANCELLED": "Þóknun felld niður"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Eignast þér",
+      "DISPUTED": "Eignun deilt"
+    }
+  },
+  "result": {
+    "none": "Engin skráningarniðurstaða til að sýna. Skráðu forystu fyrst.",
+    "acceptedTitle": "Blý skráð",
+    "rejectedTitle": "Blý ekki skráð",
+    "protectionWindow": "Verndunargluggi",
+    "protectedUntil": "Friðlýst til",
+    "openLead": "Opin leið",
+    "addAnother": "Bæta við öðru leiðarljósi",
+    "duplicate": "Afrit - þegar varið",
+    "duplicateHint": "Þessi viðskiptavinur er nú þegar verndaður fyrir þetta verkefni með annarri skráningu, svo það var ekki hægt að skrá hann fyrir þig.",
+    "existingProtectedUntil": "Núverandi skráning vernduð til"
+  },
+  "disputes": {
+    "title": "Deilur mínar",
+    "intro": "Deilur um eignarhald sem þú vaktir fyrir viðskiptavini sem var synjað sem afrit. Leadrat stjórnandi fer yfir hvern og einn.",
+    "empty": "Þú hefur ekki borið upp neinar deilur. Ef viðskiptavinur sem þú hefur komið með er synjað sem afrit geturðu andmælt því frá niðurstöðu skráningar.",
+    "columns": {
+      "dispute": "Ágreiningur",
+      "reason": "Ástæðan þín",
+      "outcome": "Niðurstaða"
+    },
+    "status": {
+      "OPEN": "Í skoðun",
+      "UPHELD": "Ekki þér í hag",
+      "OVERTURNED": "Ákveðið þér í hag",
+      "WITHDRAWN": "Dregið til baka"
+    },
+    "awaitingReview": "Bíður eftir endurskoðun stjórnanda",
+    "openNewLead": "Opnaðu kynninguna þína {{id}}",
+    "withdraw": "Draga til baka",
+    "withdrawConfirm": "Draga til baka ágreininginn um {{name}} ? Núverandi eignarhald helst eins og það er.",
+    "raise": "Deila um eignarhald",
+    "raiseTitle": "Deila um eignarhald",
+    "raiseHint": "Ef þessi viðskiptavinur kom fyrst til þín, útskýrðu hvers vegna. Leadrat stjórnandi mun skoða það; ef þeir ákveða þér í hag er forskotið skráð fyrir þig.",
+    "reasonLabel": "Af hverju er þessi viðskiptavinur þinn?",
+    "reasonMin_one": "Að minnsta kosti {{count}} stafur.",
+    "reasonMin_other": "Að minnsta kosti {{count}} stafir.",
+    "submit": "Senda ágreining",
+    "notProtected": "Enginn hefur lengur vernd á þessum viðskiptavin fyrir þetta verkefni - þú getur skráð forystuna núna.",
+    "raised": "Ágreiningur {{id}} send til skoðunar.",
+    "viewAll": "Skoðaðu deilurnar mínar"
+  },
+  "dashboard": {
+    "title": "Mælaborð",
+    "period": "Tímabil",
+    "lastDays_one": "{{count}} dagur",
+    "lastDays_other": "{{count}} dagar",
+    "emptyTitle": "Velkomin! Þú hefur engar vísbendingar ennþá.",
+    "emptyHint": "Skráðu fyrstu leiðina þína - leiðslan þín, bókanir og verndarfrestir munu birtast hér.",
+    "tiles": {
+      "leads": "Heildarleiðir",
+      "newInPeriod_one": "{{count}} nýtt á þessu tímabili",
+      "newInPeriod_other": "{{count}} nýtt á þessu tímabili",
+      "accepted": "Samþykkt",
+      "booked": "Bókað",
+      "bookedInPeriod_one": "{{count}} bókað á þessu tímabili",
+      "bookedInPeriod_other": "{{count}} bókað á þessu tímabili",
+      "conversion": "Umbreyting",
+      "conversionHint": "Bókaðar ábendingar sem hlutfall af samþykktum",
+      "protectedNow": "Verndaður núna",
+      "expiringSoon_one": "Vörn lýkur eftir {{count}} dag",
+      "expiringSoon_other": "Vörn lýkur eftir {{count}} daga",
+      "disputedNow": "Deilt af öðrum",
+      "disputedNowHint": "Leiðir þínar með opnum eignardeilu frá öðrum samstarfsaðila",
+      "commissionEligible": "Framkvæmdastjórn hæfir",
+      "commissionCancelled_one": "{{count}} hætti við",
+      "commissionCancelled_other": "{{count}} hætti við"
+    },
+    "chart": {
+      "title_one": "Skráningar og bókanir á dag - síðasta {{count}} dag",
+      "title_other": "Skráningar og bókanir á dag - síðustu {{count}} dagar",
+      "registrations": "Skráningar",
+      "bookings": "Bókanir"
+    },
+    "byStage": "Leiðir eftir stöðu",
+    "bySource": "Leiðir eftir uppruna",
+    "byReferral": "Leiðir eftir tilvísunarstöðu",
+    "myDisputes": "Deilur sem þú vaktir",
+    "noDisputes": "Enginn ágreiningur vakinn.",
+    "unknown": "Ekki stillt",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Ytri CRM (hermt)",
+      "PARTNER_CRM": "Bætt við af liðinu þínu",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Samþætting",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Vörn rennur út næsta {{count}} dag",
+    "expiringTitle_other": "Vörn rennur út á næstu {{count}} dögum",
+    "expiringEmpty": "Ekkert blý missir vernd sína í þessum glugga."
   }
 }

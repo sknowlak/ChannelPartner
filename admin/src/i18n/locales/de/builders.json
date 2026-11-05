@@ -43,7 +43,9 @@
       "name": "Name",
       "city": "Stadt",
       "status": "Status",
-      "actions": "Aktionen"
+      "actions": "Aktionen",
+      "protection": "Doppelter Schutz",
+      "matchOn": "Duplikate stimmen überein"
     },
     "closeReferrals": "Für Empfehlungen geschlossen",
     "reopen": "Wieder öffnen",
@@ -55,6 +57,25 @@
       "add": "Projekt hinzufügen",
       "created": "Erstellt {{name}} ."
     },
-    "back": "Zurück zu den Bauherren"
+    "back": "Zurück zu den Bauherren",
+    "protection": {
+      "days_one": "{{count}} Tag",
+      "days_other": "{{count}} Tage",
+      "globalDays_one": "Globaler Standard ( {{count}} Tag)",
+      "globalDays_other": "Globaler Standard ( {{count}} Tage)",
+      "globalDefault": "Globaler Standard",
+      "placeholder": "Schutztage (leer = globaler Standard)",
+      "saved": "Doppelter Schutz für {{name}} aktualisiert.",
+      "hint": "Doppelter Schutz: 1–3650 Tage, oder leer lassen, um den globalen Standard aus den Einstellungen zu verwenden. Eine Änderung gilt nur für Neuregistrierungen – bestehende behalten ihre Gültigkeit."
+    },
+    "matching": {
+      "global": "Globaler Standard",
+      "globalWith": "Globaler Standard ( {{fields}} )",
+      "mobile": "Handynummer",
+      "email": "E-Mail",
+      "both": "Handynummer + E-Mail",
+      "saved": "Duplikatabgleich für {{name}} aktualisiert",
+      "hint": "Welche Angaben machen zwei Anmeldungen zum gleichen Kunden für ein Projekt? Änderungen gelten ab sofort auch für Duplikatschecks; Der bestehende Schutz wird nicht beeinträchtigt."
+    }
   }
 }

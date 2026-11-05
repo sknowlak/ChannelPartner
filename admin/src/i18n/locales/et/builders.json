@@ -43,7 +43,9 @@
       "name": "Nimi",
       "city": "Linn",
       "status": "Olek",
-      "actions": "Tegevused"
+      "actions": "Tegevused",
+      "protection": "Dubleeritud kaitse",
+      "matchOn": "Duplikaadid sobivad sisse"
     },
     "closeReferrals": "Sule suunamiste jaoks",
     "reopen": "Ava uuesti",
@@ -55,6 +57,25 @@
       "add": "Lisa projekt",
       "created": "Loodud {{name}} ."
     },
-    "back": "Tagasi Ehitajate juurde"
+    "back": "Tagasi Ehitajate juurde",
+    "protection": {
+      "days_one": "{{count}} päev",
+      "days_other": "{{count}} päeva",
+      "globalDays_one": "Globaalne vaikeseade ( {{count}} päev)",
+      "globalDays_other": "Globaalne vaikeseade ( {{count}} päeva)",
+      "globalDefault": "Globaalne vaikeseade",
+      "placeholder": "Kaitsepäevad (tühi = globaalne vaike)",
+      "saved": "Duplikaatkaitset värskendati kasutaja {{name}} jaoks.",
+      "hint": "Duplikaatkaitse: 1–3650 päeva või jätke tühjaks, et kasutada seadete globaalset vaikeseadet. Muudatus kehtib ainult uutele registreeringutele – olemasolevad säilitavad oma kehtivusaja."
+    },
+    "matching": {
+      "global": "Globaalne vaikeseade",
+      "globalWith": "Globaalne vaikeseade ( {{fields}} )",
+      "mobile": "Mobiili number",
+      "email": "Meil",
+      "both": "Mobiili number + email",
+      "saved": "Duplikaatsobitus värskendati domeenile {{name}}",
+      "hint": "Millised üksikasjad teevad kahest registreerimisest projekti jaoks sama kliendi. Muudatused kehtivad nüüdsest dubleerivatele kontrollidele; see ei mõjuta olemasolevat kaitset."
+    }
   }
 }

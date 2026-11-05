@@ -30,7 +30,8 @@
       "registered": "Qeyd kirin"
     },
     "booked": "Veqetandin",
-    "empty": "Hê referans tune."
+    "empty": "Hê referans tune.",
+    "bookingCancelled": "Booking betal kirin"
   },
   "detail": {
     "customer": "Miştirî",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Booking piştrast kir.",
       "accepted": "Referral qebûl kirin.",
-      "rejected": "Serlêdan hat redkirin."
+      "rejected": "Serlêdan hat redkirin.",
+      "bookingCancelled": "Booking betal kirin."
     },
-    "backToReferrals": "Vegere Referrals"
+    "backToReferrals": "Vegere Referrals",
+    "bookingCancelled": "Booking betal kirin",
+    "cancelBooking": "Betalkirina Booking",
+    "cancelReasonLabel": "Sedema betalkirinê (ji hevkarê re tê nîşandan) *",
+    "cancelBookingHint": "Xwedîderketina operasyonê vedigere hevkarê û destûrdariya komîsyona wan betal dibe. Rêbertî dikare paşê dîsa were veqetandin.",
+    "cancelBookingConfirm": "Veqetandinê betal bike"
   },
   "history": {
     "title": "Dîrok",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Destûra komîsyonê hate afirandin",
       "HANDOVER_COMPLETED": "Radestkirin qediya",
       "ADMIN_PROTECTION_RELEASED": "Admin parastina ducar zû berdan. Sedem: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin qeyda ji {{from}} ji bo {{to}} ji nû ve tayîn kir. Sedem: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin qeyda ji {{from}} ji bo {{to}} ji nû ve tayîn kir. Sedem: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Hewldana qeydkirina dubare ya ji hêla hevalbendek din ve hate red kirin",
+      "BOOKING_CANCELLED": "Booking betal kirin. Sedem: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Xwedîderketina operasyonê li hevkarê vegeriya",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Destûra komîsyonê bi veqetandinê re hate betal kirin",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Destûra komîsyonê ji bo veqetandina nû hate vegerandin"
     }
   }
 }

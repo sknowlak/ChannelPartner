@@ -43,7 +43,9 @@
       "name": "Jméno",
       "city": "Město",
       "status": "Postavení",
-      "actions": "Akce"
+      "actions": "Akce",
+      "protection": "Duplicitní ochrana",
+      "matchOn": "Duplikáty se shodují"
     },
     "closeReferrals": "Zavřete pro doporučení",
     "reopen": "Znovu otevřít",
@@ -55,6 +57,29 @@
       "add": "Přidat projekt",
       "created": "Vytvořeno {{name}} ."
     },
-    "back": "Zpět k Stavitelům"
+    "back": "Zpět k Stavitelům",
+    "protection": {
+      "days_one": "{{count}} den",
+      "days_few": "{{count}} dní",
+      "days_many": "{{count}} dní",
+      "days_other": "{{count}} dní",
+      "globalDays_one": "Globální výchozí ( {{count}} den)",
+      "globalDays_few": "Globální výchozí ( {{count}} dní)",
+      "globalDays_many": "Globální výchozí ( {{count}} dní)",
+      "globalDays_other": "Globální výchozí ( {{count}} dní)",
+      "globalDefault": "Globální výchozí nastavení",
+      "placeholder": "Dny ochrany (prázdné = globální výchozí nastavení)",
+      "saved": "Duplicitní ochrana aktualizována pro {{name}} .",
+      "hint": "Duplicitní ochrana: 1–3650 dní, nebo ponechte prázdné, chcete-li použít globální výchozí nastavení z Nastavení. Změna se týká pouze nových registrací - těm stávajícím zůstává platnost."
+    },
+    "matching": {
+      "global": "Globální výchozí nastavení",
+      "globalWith": "Globální výchozí ( {{fields}} )",
+      "mobile": "Mobilní číslo",
+      "email": "E-mail",
+      "both": "Mobilní číslo + email",
+      "saved": "Byla aktualizována duplicitní shoda pro {{name}}",
+      "hint": "Které detaily dělají ze dvou registrací stejného zákazníka pro projekt. Změny se od nynějška vztahují na duplicitní kontroly; stávající ochrana není ovlivněna."
+    }
   }
 }

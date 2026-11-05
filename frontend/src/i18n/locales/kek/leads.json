@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Reservado",
-    "pending": "Aj aj ru"
+    "pending": "Aj aj ru",
+    "status": {
+      "CONFIRMED": "Reservado",
+      "CANCELLED": "Xsachmank li reservación"
+    }
   },
   "assign": {
     "unassigned": "Ink'a' k'eeb'il",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Maak’a’ li k’anjel toj anaqwan (ink’a’ x’oksimank)",
-    "notInList": "{{project}} (maak’a’ sa’ li xhuhil li k’anjel)"
+    "notInList": "{{project}} (maak’a’ sa’ li xhuhil li k’anjel)",
+    "protectionDays_one": "{{count}} -xkutankil li kolok",
+    "protectionDays_other": "{{count}} -xkutankil li kolok"
   },
   "journey": {
     "customer": "At komon",
@@ -76,7 +82,14 @@
     "progressHistory": "Resil li k’iik",
     "timesIn": "(xhoonalil sa’ {{timezone}} )",
     "backToMyLeads": "Sutq’iik sa’ lin b’eresinel .",
-    "editLead": "Xyiib’ankil li b’eresinel"
+    "editLead": "Xyiib’ankil li b’eresinel",
+    "disputeBanner": "Jun chik li komon kixwech’ rix ani aj eechal re li k’ay a’in. Jun aj jolominel Leadrat yoo chirilb’al ru - laa kolb’al nakana sa’ xna’aj toj reetal naq te’xk’uub’.",
+    "booking": "Xk'uub'ankil li hu",
+    "commission": "Taqlankil",
+    "notBooked": "Ink'a' b'ak'b'o",
+    "cancelledOn": "Xtz’eqtaanaak sa’ {{date}} .",
+    "cancelReason": "Xyaalal: {{reason}}",
+    "cancelledHint": "Li aj kab’lanel kixsach li reservación - li eechanihom re li k’anjelak wan wi’chik eerik’in ut li k’ulub’ej re li comision xsachman. Nak’ojob’aman wi’chik wi li b’eresink na’ok wi’chik chi b’oqmank."
   },
   "referral": {
     "NOT_REFERRED": "Ink’a’ xtaqlaak (maak’a’ li k’anjel)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Laj kab’lanel kixk’ulub’a li taqlank .",
       "REFERRAL_REJECTED": "Laj Builder kixtz’eqtaana li taqlank. Xyaalal: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Li Admin kixk’e chi elk li kolok-ib’ chi ka’pak’al chi junpaat. Xyaalal: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Li awa’b’ej kixk’e wi’chik li tz’iib’ank chalen chaq {{from}} toj {{to}} . Xyaalal: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Li awa’b’ej kixk’e wi’chik li tz’iib’ank chalen chaq {{from}} toj {{to}} . Xyaalal: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Kitz’eqtaanaak jun li xyalb’al xtz’iib’ankil wiib’ sut xb’aan jun chik li komon .",
+      "BOOKING_CANCELLED": "Xtz’eqtaanaak li reservación. Xyaalal: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Li eechanihom re li k’anjelak kisutq’iik rik’in li komon .",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Li k’ulub’ej re li comisión xsachman rik’in li reservación .",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Li k’ulub’ej re li comisión kik’ojob’aman wi’chik choq’ re li ak’ reservación .",
+      "OWNERSHIP_DISPUTE_RAISED": "Jun chik li komon kixwech’ rix li eechanihom re li k’ay a’in - jun aj jolominel Leadrat tixtz’il rix .",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Li wech’ok-ib’ chirix li eechanihom sa’ xb’een li k’ay a’in ki’isiman - laa eechanihom ink’a’ xjala .",
+      "OWNERSHIP_DISPUTE_UPHELD": "Li wech’ok-ib’ chirix li eechanihom sa’ xb’een li k’ay a’in ki’ilman - ch’olob’anb’il laa eechanihom .",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Tz’iib’anb’il xk’ab’a’ naq ak x’uxmank xraqb’al li wech’ok-ib’ chirix li eechanihom sa’ laa wuq’. K’a’uxl: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Kiraqe’ li kolok: ki’uxman xraqb’al jun li wech’ok-ib’ chirix li eechanihom sa’ xk’ab’a’ jalan chik li komon. K’a’uxl: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Li ajl re li teléfono a'in moko us ta cho'q re {{country}} .",
     "COUNTRY_MISMATCH": "B’aanu usilal, sik’ ru li tz’aqal k’uub’anb’il na’leb’ re li tenamit.",
     "NOT_MOBILE": "B’aanu usilal, tz’iib’a jun li ajl re li ulul ch’iich’, ut maawa’ jun li ajl re li ch’och’."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Li k’ulub’ej re li Comisión",
+      "PENDING": "Li k’anjel yoo chi oyb’eninb’il",
+      "CANCELLED": "Xsachmank li kʼanjel"
+    },
+    "attribution": {
+      "ATTRIBUTED": "K’eeb’il aawe",
+      "DISPUTED": "Li atribución wech’b’il rix"
+    }
+  },
+  "result": {
+    "none": "Maak’a’ li resultado re li tz’iib’ank re xk’utb’al. Tz’iib’a jun li b’eresinel xb’een wa.",
+    "acceptedTitle": "Li plomo tz’iib’anb’il xk’ab’a’",
+    "rejectedTitle": "Li plomo ink’a’ tz’iib’anb’il xk’ab’a’",
+    "protectionWindow": "Li b’entaan re kolok",
+    "protectedUntil": "Kolb’il rix toj reetal naq .",
+    "openLead": "Teehoʼq li bʼolotzʼ",
+    "addAnother": "Xk’eeb’al jun chik li b’eresink .",
+    "duplicate": "Xk’eeb’al wiib’ sut - ak kolb’il rix .",
+    "duplicateHint": "Li k’ay a’in ak kolb’il rix cho’q re li k’anjel a’in xb’aan jun chik li tz’iib’ank, jo’kan naq ink’a’ kiru xtz’iib’ankil cho’q aawe.",
+    "existingProtectedUntil": "Li tz’iib’anb’il k’ab’a’ej li wank kolb’il rix toj sa’ li chihab’ 2019."
+  },
+  "disputes": {
+    "title": "Lin wech’ok-ib’",
+    "intro": "Eb’ li wech’ok-ib’ chirix li eechanihom li xewaklesi choq’ reheb’ laj k’ay li xe’tz’eqtaanaak jo’ wiib’ paay ru. Jun aj jolominel Leadrat naxtz’il rix li junjunq.",
+    "empty": "Maak’a’ xewaklesi junaq li wech’ok-ib’. Wi jun li k’ay li xak’am chaq ink’a’ nak’ulub’aak jo’ jun li k’utb’esink, naru taawech’ rix rik’in li x-eljik li tz’iib’ank.",
+    "columns": {
+      "dispute": "Chajkilal",
+      "reason": "Li xyaalal .",
+      "outcome": "Resilal"
+    },
+    "status": {
+      "OPEN": "Chi tz’ilb’il rix",
+      "UPHELD": "Moko saʼ laawu ta .",
+      "OVERTURNED": "K’uub’anb’il sa’ laa usilal .",
+      "WITHDRAWN": "Risinkil chaq"
+    },
+    "awaitingReview": "Yooko chiroyb’eninkil li xtz’ilb’al rix li admin",
+    "openNewLead": "Tehomaq laa b’e {{id}}",
+    "withdraw": "Risinkil",
+    "withdrawConfirm": "Xk’eeb’al chi elk laa wech’ok-ib’ choq’ re {{name}} ? Li eechanihom wan anajwan nakana jo’ chanru wan.",
+    "raise": "Li eechanihom re li wechʼok-ibʼ",
+    "raiseTitle": "Li eechanihom re li wechʼok-ibʼ",
+    "raiseHint": "Wi li k’ay a’in kichal xb’een wa aawik’in, ch’olob’ k’a’ut. Jun aj jolominel Leadrat tixtz’il rix; wi neke’xk’uub’ naq us choq’ aawe, li b’eresink tz’iib’anb’il choq’ aawe.",
+    "reasonLabel": "K’a’ut naq li k’ay a’in aawe?",
+    "reasonMin_one": "Li xnimal ru tz’iib’ {{count}} .",
+    "reasonMin_other": "Kach’in chik ma {{count}} li tz’iib’.",
+    "submit": "Taqla li wech’ok-ib’",
+    "notProtected": "Maajun chik naxk’am li kolok sa’ xb’een li k’ay a’in choq’ re li k’anjel a’in - naru xtz’iib’ankil xk’ab’a’ li b’eresink anajwan.",
+    "raised": "Li wech’ok-ib’ {{id}} taqlanb’il re xtz’ilb’al rix.",
+    "viewAll": "Il ru lin wech’ok-ib’ ."
+  },
+  "dashboard": {
+    "title": "Tablero",
+    "period": "Xkutankil",
+    "lastDays_one": "{{count}} kutan",
+    "lastDays_other": "{{count}} kutan",
+    "emptyTitle": "K'ulb'ilat! Maak’a’eb’ laa b’eresinel toj anajwan.",
+    "emptyHint": "Tz’iib’a laa xb’een aj b’eresinel - laa pipeline, laa reservación ut li xraqik li kolok te’k’utunq arin.",
+    "tiles": {
+      "leads": "Xk’ihaleb’ li neke’k’amok b’e",
+      "newInPeriod_one": "{{count}} ak’ sa’ li hoonal a’in",
+      "newInPeriod_other": "{{count}} ak’ sa’ li hoonal a’in",
+      "accepted": "K’ulub’anb’il",
+      "booked": "Reservado",
+      "bookedInPeriod_one": "{{count}} k’uulanb’il sa’ li hoonal a’in",
+      "bookedInPeriod_other": "{{count}} k’uulanb’il sa’ li hoonal a’in",
+      "conversion": "Jalb’a-k’a’uxlej",
+      "conversionHint": "Eb’ li b’eresinel k’uub’anb’ileb’ jo’ jun raqal reheb’ li b’eresinel k’ulub’anb’ileb’ .",
+      "protectedNow": "Kolb’il rix anajwan .",
+      "expiringSoon_one": "Kolok li naraqe’ sa’ {{count}} kutan .",
+      "expiringSoon_other": "Li kolok li naraqe’ sa’ {{count}} kutan",
+      "disputedNow": "Xwech’b’al rix xb’aaneb’ jalan chik .",
+      "disputedNowHint": "Eb’ laa b’eresinel rik’in jun li wech’ok-ib’ chirix li eechanihom chi teeto rik’in jalan chik komon .",
+      "commissionEligible": "Li k’ulub’ej re li Comisión",
+      "commissionCancelled_one": "{{count}} xsachmank",
+      "commissionCancelled_other": "{{count}} xsachmank"
+    },
+    "chart": {
+      "title_one": "Xtz’iib’ankil xk’ab’a’ ut li xk’uulankil li k’anjel chi ru li kutan - xraqik {{count}} kutan",
+      "title_other": "Li tz’iib’ank ut li k’uub’ank hu chiru li kutan - xraqik {{count}} kutan",
+      "registrations": "Xtz’iib’ankil xk’ab’a’eb’",
+      "bookings": "Reservaciones"
+    },
+    "byStage": "Naxb’eresi xb’aan li wanjik",
+    "bySource": "Naxb’eresi xb’aan li yo’leb’aal",
+    "byReferral": "Naxk’am xb’e li wanjik re li taqlank",
+    "myDisputes": "Eb’ li wech’ok-ib’ li xewaklesi .",
+    "noDisputes": "Maajun li wech’ok-ib’ kiwaklesiman.",
+    "unknown": "Ink'a' xaqab'anb'il",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM re li b’e (xk’utb’al)",
+      "PARTNER_CRM": "Xk’eemank xb’aan laa ch’uut .",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Xk'amb'al rib'",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Li kolok-ib’ taa’oso’q sa’ li jun chik {{count}} kutan",
+    "expiringTitle_other": "Li kolok-ib’ taa’oso’q sa’eb’ li kutan chalkeb’ re {{count}}",
+    "expiringEmpty": "Maajun li plomo naxsach lix kolb’al rib’ sa’ li b’entaan a’in."
   }
 }

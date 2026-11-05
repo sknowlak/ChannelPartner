@@ -30,7 +30,8 @@
       "registered": "Registrearre"
     },
     "booked": "Boeke",
-    "empty": "Noch gjin ferwizings."
+    "empty": "Noch gjin ferwizings.",
+    "bookingCancelled": "Booking annulearre"
   },
   "detail": {
     "customer": "Klant",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Booking befêstige.",
       "accepted": "Ferwizing akseptearre.",
-      "rejected": "Ferwizing ôfwiisd."
+      "rejected": "Ferwizing ôfwiisd.",
+      "bookingCancelled": "Booking annulearre."
     },
-    "backToReferrals": "Werom nei Ferwizings"
+    "backToReferrals": "Werom nei Ferwizings",
+    "bookingCancelled": "Booking annulearre",
+    "cancelBooking": "Ofbrekke Booking",
+    "cancelReasonLabel": "Reden foar annulearjen (oan de partner werjûn) *",
+    "cancelBookingHint": "Operasjoneel eigendom giet werom nei de partner en har kommisje-kwalifikaasje wurdt annulearre. De lead kin letter wer boekt wurde.",
+    "cancelBookingConfirm": "Annulearje de boeking"
   },
   "history": {
     "title": "Skiednis",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kommisje eligibility makke",
       "HANDOVER_COMPLETED": "Oerdracht klear",
       "ADMIN_PROTECTION_RELEASED": "Admin hat dûbele beskerming betiid frijlitten. Reden: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Behearder hat registraasje fan {{from}} opnij tawiisd oan {{to}} . Reden: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Behearder hat registraasje fan {{from}} opnij tawiisd oan {{to}} . Reden: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "In dûbele registraasjepoging troch in oare partner waard ôfwiisd",
+      "BOOKING_CANCELLED": "Booking annulearre. Reden: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operasjoneel eigendom kaam werom nei de partner",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kommisje eligibility annulearre mei de boeking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kommisje eligibility restaurearre foar de nije boeking"
     }
   }
 }

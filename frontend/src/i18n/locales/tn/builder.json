@@ -30,7 +30,8 @@
       "registered": "E kwadisitswe"
     },
     "booked": "E beeleditswe",
-    "empty": "Ga go ise go nne le diphetisetso."
+    "empty": "Ga go ise go nne le diphetisetso.",
+    "bookingCancelled": "Peeletso e khansetswe"
   },
   "detail": {
     "customer": "Moreki",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Go netefaditswe go buka.",
       "accepted": "Thomelo e amogetswe.",
-      "rejected": "Thomelo e gannwe."
+      "rejected": "Thomelo e gannwe.",
+      "bookingCancelled": "Peeletso e khansetswe."
     },
-    "backToReferrals": "Boela kwa Diphetisong"
+    "backToReferrals": "Boela kwa Diphetisong",
+    "bookingCancelled": "Peeletso e khansetswe",
+    "cancelBooking": "Khansela Peeletso",
+    "cancelReasonLabel": "Lebaka la go khansela (le bontshiwa molekane) *",
+    "cancelBookingHint": "Bong jwa tshebetso bo boela ho molekane mme ho tshwaneleha ha bona ha khomishene ho hlakolwa. Lead e ka bookiwa gape moragonyana.",
+    "cancelBookingConfirm": "Khansela peeletso"
   },
   "history": {
     "title": "Hisetori",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Go tshwanelega ga Khomišene go tlhamilwe",
       "HANDOVER_COMPLETED": "Neelano e weditswe",
       "ADMIN_PROTECTION_RELEASED": "Motsamaisi o golotse tshireletso ya dipoeletso go sa le gale. Lebaka: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Motsamaisi o abetse ikwadiso gape go tswa go {{from}} go ya go {{to}} . Lebaka: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Motsamaisi o abetse ikwadiso gape go tswa go {{from}} go ya go {{to}} . Lebaka: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Maiteko a go ikwadisa gape a a dirilweng ke molekane yo mongwe a gannwe",
+      "BOOKING_CANCELLED": "Peeletso e khansetswe. Lebaka: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Bong jwa tiro bo busediwa kwa molekaneng",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Go tshwanelegela khomišene go phimotswe ka peeletso",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Go tshwanelegela khomišene go busediwa ga peeletso e ntšha"
     }
   }
 }

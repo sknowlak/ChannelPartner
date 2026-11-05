@@ -49,8 +49,73 @@
       "newPartnerId": "New Partner ID",
       "reason": "Reason (required)",
       "apply": "Apply Override",
-      "applying": "Applying..."
+      "applying": "Applying...",
+      "cancelBookingHint": "Cancelling marks the booking and its commission as cancelled, returns operational ownership to the partner, and lets the builder book this lead again.",
+      "cancelBookingConfirm": "Cancel this booking? Its commission is cancelled too. This is logged with your name and reason."
     },
-    "timelineTitle": "Audit Timeline (this registration)"
+    "timelineTitle": "Audit Timeline (this registration)",
+    "bookingStatus": "Booking Status",
+    "commissionAttribution": "Commission Attribution",
+    "disputeOpen": "An ownership dispute is open on this customer - another partner says it is theirs. It is decided on the Disputes page.",
+    "viewDisputes": "View disputes",
+    "cancellation": {
+      "title": "Booking cancelled",
+      "hint": "The booking and its commission are cancelled; operational ownership is back with the partner and the builder can book this lead again.",
+      "at": "Cancelled at",
+      "by": "Cancelled by",
+      "reason": "Reason"
+    }
+  },
+  "disputes": {
+    "title": "Ownership Disputes",
+    "hint": "A partner whose registration was rejected as a duplicate can dispute who owns the customer. Review both sides and decide.",
+    "statusFilter": "Dispute status",
+    "allStatuses": "All statuses",
+    "empty": "No disputes with this status.",
+    "columns": {
+      "dispute": "Dispute",
+      "customer": "Customer",
+      "project": "Project",
+      "raisedBy": "Raised by",
+      "heldBy": "Current owner",
+      "status": "Status",
+      "raisedAt": "Raised on"
+    },
+    "detail": {
+      "title": "Dispute {{id}}",
+      "raisedOn": "Raised {{date}}",
+      "raisingTitle": "Raised by",
+      "holderTitle": "Current owner",
+      "partner": "Partner",
+      "raisedBy": "Submitted by",
+      "customerName": "Customer",
+      "mobile": "Mobile",
+      "alternateMobile": "Alternate mobile",
+      "email": "Email",
+      "project": "Project",
+      "reason": "Their reason",
+      "registration": "Registration",
+      "registeredAt": "Registered on",
+      "referral": "Referral",
+      "heldMissing": "The held registration could not be found.",
+      "resolutionTitle": "Decision",
+      "outcome": "Outcome",
+      "note": "Note",
+      "decidedBy": "Decided by",
+      "decidedAt": "Decided on",
+      "newRegistration": "New registration",
+      "decideTitle": "Decide this dispute",
+      "noteLabel": "Note explaining the decision (required)",
+      "noteRequired": "Write a note to decide.",
+      "uphold": "Uphold",
+      "overturn": "Overturn",
+      "upholdEffect": "{{holder}} keeps the customer. The dispute is closed and nothing else changes.",
+      "overturnEffect": "{{holder}}'s duplicate protection ends now and the customer is registered for {{partner}} as a new registration.",
+      "heldBookedHelp": "This customer is booked through the current owner. Cancel that booking first (Admin Override on the registration), then overturn:",
+      "confirmTitle": "Are you sure?",
+      "confirmUphold": "Yes, uphold",
+      "confirmOverturn": "Yes, overturn",
+      "back": "Back to Disputes"
+    }
   }
 }

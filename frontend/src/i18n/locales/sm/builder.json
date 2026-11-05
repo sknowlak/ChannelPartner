@@ -30,7 +30,8 @@
       "registered": "Resitala"
     },
     "booked": "Tusia",
-    "empty": "E leai ni fa'asinoga i le taimi nei."
+    "empty": "E leai ni fa'asinoga i le taimi nei.",
+    "bookingCancelled": "Ua faaleaogaina tusi"
   },
   "detail": {
     "customer": "Tagata fa'atau",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Fa'amaonia tusi.",
       "accepted": "Ua talia le faasinomaga.",
-      "rejected": "Ua teena le faasinomaga."
+      "rejected": "Ua teena le faasinomaga.",
+      "bookingCancelled": "Ua faaleaogaina tusi."
     },
-    "backToReferrals": "Toe fo'i i Fa'asinoga"
+    "backToReferrals": "Toe fo'i i Fa'asinoga",
+    "bookingCancelled": "Ua faaleaogaina tusi",
+    "cancelBooking": "Fa'aleaogaina le resitalaina",
+    "cancelReasonLabel": "Mafua'aga mo le fa'aleaogaina (fa'aali i le paaga) *",
+    "cancelBookingHint": "O le pule fa'atino e toe fo'i i le pa'aga ma ua fa'aleaogaina le agava'a i le komisi. E mafai ona toe tusi le ta'ita'i mulimuli ane.",
+    "cancelBookingConfirm": "Fa'aleaogaina le tusi"
   },
   "history": {
     "title": "Tala'aga",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Fausia le agavaa o le Komisi",
       "HANDOVER_COMPLETED": "Ua mae'a le tu'uina atu",
       "ADMIN_PROTECTION_RELEASED": "Na vave fa'amatu'u atu e le pule fa'alua puipuiga. Mafuaaga: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Pule toe tofia le resitala mai {{from}} i {{to}} . Mafuaaga: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Pule toe tofia le resitala mai {{from}} i {{to}} . Mafuaaga: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "O se taumafaiga e lesitala faalua a se isi paaga na teena",
+      "BOOKING_CANCELLED": "Ua faaleaogaina tusi. Mafuaaga: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Na toe fa'afo'i le pule fa'atino i le paaga",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Fa'aleaogaina le agava'a i le komisi i le fa'aagaga",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Toe fa'afo'isia le agava'a a le Komisi mo le resitalaina fou"
     }
   }
 }

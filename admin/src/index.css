@@ -212,3 +212,40 @@ table.pro-table .secondary-cell { font-size: 0.8rem; color: var(--text-faint); }
 /* Pager: "1 … 49 50 51 … 100" (utils/pageWindow.js) - wraps instead of widening the page */
 .pagination-buttons { flex-wrap: wrap; }
 .page-gap { min-width: 1.6rem; text-align: center; color: var(--text-faint); user-select: none; }
+
+/* Notices (info = neutral, warn = needs care) */
+.info-box { background: var(--info-bg); color: var(--info-text); padding: 0.75rem 1rem; border-radius: 8px; margin-bottom: 1rem; }
+.warn-box { background: var(--warn-bg); color: var(--warn-text); padding: 0.75rem 1rem; border-radius: 8px; margin-bottom: 1rem; }
+.warn-box p { margin: 0 0 0.5rem; }
+.button-row { display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap; }
+button.link-button { background: none; border: none; padding: 0; color: var(--link); cursor: pointer; font-size: 0.85rem; text-decoration: underline; }
+.field textarea { padding: 0.55rem 0.7rem; border: 1px solid var(--border-strong); border-radius: 6px; font-size: 0.95rem; font-family: inherit; resize: vertical; }
+/* Wide tables scroll sideways inside their card on phones instead of widening the page. */
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.inline-edit { display: flex; gap: 0.4rem; align-items: center; flex-wrap: wrap; }
+.inline-edit input { width: 6.5rem; padding: 0.35rem 0.5rem; border: 1px solid var(--border-strong); border-radius: 6px; }
+
+/* Dashboard (section 62): clickable tile, 30-day bar chart, leaderboard */
+.dashboard-section { margin-top: 1.5rem; }
+.dashboard-section h3 { margin: 0 0 0.25rem; }
+a.stat-link { display: block; text-decoration: none; color: inherit; border: 1px solid var(--border); }
+a.stat-link:hover { border-color: var(--heading); }
+a.stat-link.attention { background: var(--warn-bg); border-color: var(--warn-text); }
+a.stat-link.attention .value, a.stat-link.attention .label { color: var(--warn-text); }
+.bar-chart { display: flex; align-items: flex-end; gap: 3px; height: 160px; margin-top: 0.75rem; border-bottom: 1px solid var(--border-strong); }
+.bar-chart .bar-col { flex: 1; height: 100%; display: flex; align-items: flex-end; }
+.bar-chart .bar { width: 100%; min-height: 1px; background: var(--brand); border-radius: 3px 3px 0 0; }
+.bar-chart .bar-col:hover .bar { background: var(--brand-hover); }
+.bar-chart-axis { display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted); margin-top: 0.3rem; }
+
+/* Dispute detail: the two sides next to each other, stacked on phones */
+.side-by-side { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 0 1.5rem; }
+.dispute-reason { white-space: pre-wrap; margin: 0; }
+.dispute-outcomes { padding-left: 1.2rem; font-size: 0.9rem; color: var(--text-2); }
+.dispute-outcomes li { margin-bottom: 0.4rem; }
+
+@media (max-width: 600px) {
+  .kv { grid-template-columns: 1fr; gap: 0.1rem; }
+  .kv dd { margin-bottom: 0.5rem; }
+  .bar-chart { gap: 1px; height: 120px; }
+}

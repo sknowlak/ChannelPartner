@@ -30,7 +30,8 @@
       "registered": "Okwehandikisa"
     },
     "booked": "Kihandiikirwe",
-    "empty": "Tihariho okutwarwa omu irwariro hati."
+    "empty": "Tihariho okutwarwa omu irwariro hati.",
+    "bookingCancelled": "Okushaba kwasazibwamu"
   },
   "detail": {
     "customer": "Omuhagizi",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Okushaba kwahamibwa.",
       "accepted": "Okutwarwa omu irwariro kwaikirizibwa.",
-      "rejected": "Okutwarwa omu irwariro kwayangibwa."
+      "rejected": "Okutwarwa omu irwariro kwayangibwa.",
+      "bookingCancelled": "Okushazamu kwasazibwamu."
     },
-    "backToReferrals": "Garuka aha kuhabura"
+    "backToReferrals": "Garuka aha kuhabura",
+    "bookingCancelled": "Okushaba kwasazibwamu",
+    "cancelBooking": "Shazamu okushaba",
+    "cancelReasonLabel": "Enshonga y'okusazamu (eyorekirwe omukundwa) *",
+    "cancelBookingHint": "Obugabe bw‘okukora nibugaruka aha munywani kandi obugabe bwabo bw‘okutunga akakiiko nibushazibwamu. Okwebembera nikubaasa kugaruka kuhandiikwa bwanyima.",
+    "cancelBookingConfirm": "Shazamu okushaba"
   },
   "history": {
     "title": "Ebyafayo",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Okwikirizibwa kwa akakiiko kukakorwa",
       "HANDOVER_COMPLETED": "Okuhayo kwahwa",
       "ADMIN_PROTECTION_RELEASED": "Admin akashohoza oburinzi bwa kabiri kare. Enshonga: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Omutegyeki akagaruka yaaha okwehandikisa kuruga ahari {{from}} kuza ahari {{to}} . Enshonga: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Omutegyeki akagaruka yaaha okwehandikisa kuruga ahari {{from}} kuza ahari {{to}} . Enshonga: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Okugyezaho kwehandikisa kwa kabiri okwakozirwe ondiijo munywani kukangwa",
+      "BOOKING_CANCELLED": "Okushazamu kwasazibwamu. Enshonga: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Obwebembezi bw'emirimo bukagarukira omunywani",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Okutunga akakiiko kusaziibwemu n'okugura",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Okuhikiiriza akakiiko kugarukiremu ahabw'okuhandiika okusya"
     }
   }
 }

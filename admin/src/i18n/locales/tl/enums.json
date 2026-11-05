@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Kwalipikado",
-    "PENDING": "Nakabinbin"
+    "PENDING": "Nakabinbin",
+    "CANCELLED": "Kinansela"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Ilabas ang duplicate na proteksyon nang maaga",
-    "REASSIGN_PARTNER": "Muling italaga sa ibang partner"
+    "REASSIGN_PARTNER": "Muling italaga sa ibang partner",
+    "CANCEL_BOOKING": "Kanselahin ang booking"
   },
   "dataType": {
     "TEXT": "Text",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super Admin",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Nakumpirma",
+    "CANCELLED": "Kinansela"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Na-attribute",
+    "DISPUTED": "Pinagtatalunan"
+  },
+  "disputeStatus": {
+    "OPEN": "Bukas",
+    "UPHELD": "Pinanindigan",
+    "OVERTURNED": "Binaligtad",
+    "WITHDRAWN": "Binawi"
   }
 }

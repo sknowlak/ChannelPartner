@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Đạt chuẩn",
-    "PENDING": "Chưa giải quyết"
+    "PENDING": "Chưa giải quyết",
+    "CANCELLED": "Đã hủy"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Phát hành sớm tính năng bảo vệ trùng lặp",
-    "REASSIGN_PARTNER": "Phân công lại cho đối tác khác"
+    "REASSIGN_PARTNER": "Phân công lại cho đối tác khác",
+    "CANCEL_BOOKING": "Hủy đặt chỗ"
   },
   "dataType": {
     "TEXT": "Chữ",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Siêu quản trị viên",
     "ADMIN": "Quản trị viên"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Đã xác nhận",
+    "CANCELLED": "Đã hủy"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Được phân bổ",
+    "DISPUTED": "Đang tranh chấp"
+  },
+  "disputeStatus": {
+    "OPEN": "Mở",
+    "UPHELD": "Được ủng hộ",
+    "OVERTURNED": "lật ngược",
+    "WITHDRAWN": "Đã rút"
   }
 }

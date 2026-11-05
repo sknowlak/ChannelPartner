@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Ba réservé",
-    "pending": "Kozelisa"
+    "pending": "Kozelisa",
+    "status": {
+      "CONFIRMED": "Ba réservé",
+      "CANCELLED": "Réservation elongolami"
+    }
   },
   "assign": {
     "unassigned": "Epesameli mosala te",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Projet moko te nanu (refere te)",
-    "notInList": "{{project}} (na liste ya projet te)"
+    "notInList": "{{project}} (na liste ya projet te)",
+    "protectionDays_one": "{{count}} -bobateli ya mokolo",
+    "protectionDays_other": "{{count}} -bobateli ya mokolo"
   },
   "journey": {
     "customer": "Kiliya",
@@ -76,7 +82,14 @@
     "progressHistory": "Lisolo ya bokoli",
     "timesIn": "(ntango na {{timezone}} )",
     "backToMyLeads": "Zongela Ba Leads Na Ngai",
-    "editLead": "Bobongisi Lead"
+    "editLead": "Bobongisi Lead",
+    "disputeBanner": "Partenaire mosusu a disputer propriété ya client oyo. Admin moko Leadrat azali kotala yango - protection na yo etikalaka na esika na yango tii bako décider.",
+    "booking": "Kosala réservation",
+    "commission": "Mosala",
+    "notBooked": "Ba réservé te",
+    "cancelledOn": "Elongolami na mokolo ya {{date}} .",
+    "cancelReason": "Ntina: {{reason}}",
+    "cancelledHint": "Motongi alongolaki réservation - propriété opérationnelle ezongi na yo mpe eligibilité ya commission e annulé. Ezongisamaka soki ba réservé lisusu plomb."
   },
   "referral": {
     "NOT_REFERRED": "Ba référer te (projet te) .",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Builder andimaki référence wana",
       "REFERRAL_REJECTED": "Builder aboyaki botindiki yango. Ntina: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin abimisi protection ya doublon tôt. Ntina: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin apesaki lisusu bokomisi nkombo uta {{from}} kino na {{to}} . Ntina: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin apesaki lisusu bokomisi nkombo uta {{from}} kino na {{to}} . Ntina: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Meka ya kokomisa nkombo mbala mibale na molongani mosusu eboyamaki",
+      "BOOKING_CANCELLED": "Réservation elongolami. Ntina: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Propriété opérationnelle ezongaki na partenaire",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Eligibilité ya Commission e annulé na réservation",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Eligibilité ya Commission ezongi pona réservation ya sika",
+      "OWNERSHIP_DISPUTE_RAISED": "Partenaire mosusu a disputé propriété ya client oyo - admin moko Leadrat ako revoir yango",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Matata ya bozwi na client oyo elongolamaki - bozwi na yo ebongwanaki te",
+      "OWNERSHIP_DISPUTE_UPHELD": "Matata ya bozwi na client oyo etalemaki - bozwi na yo endimami",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Enregistré sima ya matata na yo ya propriété ezuami na faveur na yo. Liyebisi: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Protection esilaki : matata ya propriété ezwamaki na faveur ya partenaire mosusu. Liyebisi: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Nimero oyo ya telefone ezali na ntina te mpo na {{country}} .",
     "COUNTRY_MISMATCH": "Svp pona code ya mboka oyo ebongi.",
     "NOT_MOBILE": "Svp botia numéro ya téléphone portable, kasi téléphone fixe te."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Commission ekoki kozala na makoki",
+      "PENDING": "Commission ezali kozela",
+      "CANCELLED": "Commission elongolamaki"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Epesameli yo",
+      "DISPUTED": "Attribution ezali na matata"
+    }
+  },
+  "result": {
+    "none": "Résultat ya inscription te pona kolakisa. Komisa liboso plomb moko.",
+    "acceptedTitle": "Plomb enregistré",
+    "rejectedTitle": "Plomb enregistré te",
+    "protectionWindow": "Fenêtre ya protection",
+    "protectedUntil": "Ebatelami Kino",
+    "openLead": "Fungola Plomb",
+    "addAnother": "Bakisa Plomb Mosusu",
+    "duplicate": "Doublon - esi ebatelami",
+    "duplicateHint": "Client oyo azali déjà protégé pona projet oyo na enregistrement mosusu, donc ekokaki kozala enregistré pona yo te.",
+    "existingProtectedUntil": "Enregistrement existant ebatelami tii"
+  },
+  "disputes": {
+    "title": "Matata na Ngai",
+    "intro": "Matata ya bozwi oyo otombolaki mpo na bakiliya oyo baboyaki lokola ba doublons. Admin moko Leadrat atalaka moko na moko.",
+    "empty": "Obimisi matata moko te. Soki baboyi client oyo omemi lokola doublon, okoki ko disputer yango na résultat ya inscription.",
+    "columns": {
+      "dispute": "Koswana",
+      "reason": "Ntina na yo",
+      "outcome": "Resultat"
+    },
+    "status": {
+      "OPEN": "Na nse ya botalisi",
+      "UPHELD": "Na faveur na yo te",
+      "OVERTURNED": "Azwaki ekateli na ngámbo na yo",
+      "WITHDRAWN": "Elongolami"
+    },
+    "awaitingReview": "Kozela revue ya admin",
+    "openNewLead": "Fungola plomb na yo {{id}}",
+    "withdraw": "Kolongwa",
+    "withdrawConfirm": "Longola matata na yo mpo na {{name}} ? Bozwi ya lelo etikalaka ndenge ezali.",
+    "raise": "Matata ya bozwi",
+    "raiseTitle": "Matata ya bozwi",
+    "raiseHint": "Soki kiliya oyo ayaki liboso epai na yo, limbolá mpo na nini. Admin moko Leadrat akotala yango; soki ba décider na faveur na yo, lead ekomisami pona yo.",
+    "reasonLabel": "Pourquoi client oyo aza ya yo?",
+    "reasonMin_one": "Ata {{count}} elembo.",
+    "reasonMin_other": "Ata {{count}} bilembo.",
+    "submit": "Tinda Matata",
+    "notProtected": "Moto moko te asimbaka protection na client oyo pona projet oyo lisusu - okoki ko enregistrer lead sikoyo.",
+    "raised": "Matata {{id}} etindami mpo na botali.",
+    "viewAll": "Tala matata na ngai"
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "period": "Eleko",
+    "lastDays_one": "{{count}} mokolo",
+    "lastDays_other": "{{count}} mikolo",
+    "emptyTitle": "Boyei malamu! Ozali naino na ba leads te.",
+    "emptyHint": "Enregistrer lead na yo ya liboso - pipeline na yo, ba réservations na ba délais ya protection eko lakisa awa.",
+    "tiles": {
+      "leads": "Total ya ba leads",
+      "newInPeriod_one": "{{count}} ya sika na eleko oyo",
+      "newInPeriod_other": "{{count}} ya sika na eleko oyo",
+      "accepted": "Endimisami",
+      "booked": "Ba réservé",
+      "bookedInPeriod_one": "{{count}} e réservé na période oyo",
+      "bookedInPeriod_other": "{{count}} e réservé na période oyo",
+      "conversion": "Bobongwani",
+      "conversionHint": "Ba leads oyo ba réservé lokola part ya ba leads oyo endimami",
+      "protectedNow": "Ebatelami sikoyo",
+      "expiringSoon_one": "Bobateli oyo ekosuka na mokolo ya {{count}}",
+      "expiringSoon_other": "Bobateli oyo ekosuka na mikolo {{count}}",
+      "disputedNow": "Basusu bazali kotyana ntembe",
+      "disputedNowHint": "Ba leads na yo na matata ya propriété ya polele ewutaka na partenaire mosusu",
+      "commissionEligible": "Commission ekoki kozala na makoki",
+      "commissionCancelled_one": "{{count}} elongolami",
+      "commissionCancelled_other": "{{count}} elongolami"
+    },
+    "chart": {
+      "title_one": "Ba inscriptions na ba réservations na mokolo - mokolo ya suka {{count}}",
+      "title_other": "Ba inscriptions na ba réservations na mokolo - mikolo {{count}} ya suka",
+      "registrations": "Ba inscriptions ya kombo",
+      "bookings": "Ba réservations"
+    },
+    "byStage": "Akambaka na kotalela ezalela",
+    "bySource": "Ezali kokamba na kotalela source",
+    "byReferral": "Ekambaka na kotalela ezalela ya botindiki",
+    "myDisputes": "Matata oyo obimisi",
+    "noDisputes": "Matata moko te ebimaki.",
+    "unknown": "Etiamaki te",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM ya libanda (simulé) .",
+      "PARTNER_CRM": "Ebakisami na équipe na yo",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Bosangisi ya biloko",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Bobateli ekosila na mokolo ya {{count}} oyo ekolanda",
+    "expiringTitle_other": "Bobateli ekosila na mikolo {{count}} oyo ekolanda",
+    "expiringEmpty": "Plomb moko te ebungisaka libateli na yango na lininisa oyo."
   }
 }

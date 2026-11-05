@@ -30,7 +30,8 @@
       "registered": "Erregistratua"
     },
     "booked": "Erreserbatua",
-    "empty": "Oraindik ez dago erreferentziarik."
+    "empty": "Oraindik ez dago erreferentziarik.",
+    "bookingCancelled": "Erreserba bertan behera utzi da"
   },
   "detail": {
     "customer": "Bezeroa",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Erreserba baieztatu da.",
       "accepted": "Erreferentzia onartu da.",
-      "rejected": "Erreferentzia baztertua."
+      "rejected": "Erreferentzia baztertua.",
+      "bookingCancelled": "Erreserba bertan behera utzi da."
     },
-    "backToReferrals": "Itzuli Erreferentzietara"
+    "backToReferrals": "Itzuli Erreferentzietara",
+    "bookingCancelled": "Erreserba bertan behera utzi da",
+    "cancelBooking": "Erreserba bertan behera utzi",
+    "cancelReasonLabel": "Uzteko arrazoia (bikotekideari erakutsi) *",
+    "cancelBookingHint": "Jabetza operatiboa bazkidearengana itzultzen da eta bere komisioaren hautagarritasuna bertan behera uzten da. Aurrerago erreserbatu daiteke berriro.",
+    "cancelBookingConfirm": "Erreserba bertan behera utzi"
   },
   "history": {
     "title": "Historia",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Batzordearen hautagarritasuna sortu da",
       "HANDOVER_COMPLETED": "Eskualdaketa amaituta",
       "ADMIN_PROTECTION_RELEASED": "Administratzaileak bikoiztutako babesa kaleratu zuen goiz. Arrazoia: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Administratzaileak erregistroa berriro esleitu du {{from}} -tik {{to}} . Arrazoia: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Administratzaileak erregistroa berriro esleitu du {{from}} -tik {{to}} . Arrazoia: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Beste bazkide baten bikoiztutako erregistro-saiakera baztertu da",
+      "BOOKING_CANCELLED": "Erreserba bertan behera utzi da. Arrazoia: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Jabetza operatiboa bazkideari itzuli zaio",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Komisioaren hautagarritasuna bertan behera utzi da erreserbarekin",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Erreserba berrirako komisioen hautagarritasuna berreskuratu da"
     }
   }
 }

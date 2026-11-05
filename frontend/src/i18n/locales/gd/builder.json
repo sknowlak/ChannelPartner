@@ -32,7 +32,8 @@
       "registered": "Clàraichte"
     },
     "booked": "Glèidhte",
-    "empty": "Gun iomradh fhathast."
+    "empty": "Gun iomradh fhathast.",
+    "bookingCancelled": "Clàradh air a chuir dheth"
   },
   "detail": {
     "customer": "Neach-ceannach",
@@ -55,9 +56,15 @@
     "notice": {
       "booked": "Clàradh air a dhearbhadh.",
       "accepted": "Chaidh gabhail ri tar-chur.",
-      "rejected": "An t-iomradh air a dhiùltadh."
+      "rejected": "An t-iomradh air a dhiùltadh.",
+      "bookingCancelled": "Clàradh air a chuir dheth."
     },
-    "backToReferrals": "Air ais gu Iomraidhean"
+    "backToReferrals": "Air ais gu Iomraidhean",
+    "bookingCancelled": "Clàradh air a chuir dheth",
+    "cancelBooking": "Sguir Clàradh",
+    "cancelReasonLabel": "Adhbhar airson a chuir dheth (air a shealltainn don chom-pàirtiche) *",
+    "cancelBookingHint": "Bidh seilbh obrachaidh a’ dol air ais chun chom-pàirtiche agus tha an ion-roghnachd coimisean air a chuir dheth. Faodar an stiùir a ghlèidheadh ​​​​a-rithist nas fhaide air adhart.",
+    "cancelBookingConfirm": "Sguir dhen chlàradh"
   },
   "history": {
     "title": "Eachdraidh",
@@ -90,7 +97,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "ion-roghnachd Coimisean air a chruthachadh",
       "HANDOVER_COMPLETED": "Gluasad crìochnaichte",
       "ADMIN_PROTECTION_RELEASED": "Sgaoil an rianaire dìon dùblaichte tràth. Adhbhar: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Dh'ath-ainmich an rianaire an clàradh o {{from}} gu {{to}} . Adhbhar: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Dh'ath-ainmich an rianaire an clàradh o {{from}} gu {{to}} . Adhbhar: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Chaidh oidhirp clàraidh dùblaichte le com-pàirtiche eile a dhiùltadh",
+      "BOOKING_CANCELLED": "Clàradh air a chuir dheth. Adhbhar: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Thill seilbh obrachaidh chun chom-pàirtiche",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Chaidh ion-roghnachd a’ Choimisein a chuir dheth leis an àite-glèidhidh",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ath-thaghadh a' Choimisein airson an àite ùr"
     }
   }
 }

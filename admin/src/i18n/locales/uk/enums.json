@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Придатний",
-    "PENDING": "В очікуванні"
+    "PENDING": "В очікуванні",
+    "CANCELLED": "Скасовано"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Звільніть захист від дублікатів раніше",
-    "REASSIGN_PARTNER": "Перепризначити іншого партнера"
+    "REASSIGN_PARTNER": "Перепризначити іншого партнера",
+    "CANCEL_BOOKING": "Скасувати бронювання"
   },
   "dataType": {
     "TEXT": "текст",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Супер адміністратор",
     "ADMIN": "адмін"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Підтверджено",
+    "CANCELLED": "Скасовано"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Приписується",
+    "DISPUTED": "Спірний"
+  },
+  "disputeStatus": {
+    "OPEN": "ВІДЧИНЕНО",
+    "UPHELD": "Підтримано",
+    "OVERTURNED": "Перекинуто",
+    "WITHDRAWN": "Вилучено"
   }
 }

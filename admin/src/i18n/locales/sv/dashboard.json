@@ -8,6 +8,29 @@
     "rejectedRegistrations": "Avvisad (dubblett)",
     "pendingBookings": "Väntar på bokning",
     "totalBookings": "Totalt antal bokningar",
-    "totalCommissionEligible": "Kommissionsberättigad"
+    "totalCommissionEligible": "Kommissionsberättigad",
+    "openDisputes": "Öppna tvister",
+    "cancelledBookings": "Avbokade bokningar"
+  },
+  "trend": {
+    "title": "Registreringar - senaste 30 dagarna",
+    "hint_one": "{{count}} registrering under de senaste 30 dagarna (dagar i UTC ).",
+    "hint_other": "{{count}} registreringar under de senaste 30 dagarna (dagar i UTC ).",
+    "chartLabel_one": "Stapeldiagram över registreringar per dag under de senaste 30 dagarna, totalt {{count}}",
+    "chartLabel_other": "Stapeldiagram över registreringar per dag under de senaste 30 dagarna, totalt {{count}}",
+    "barTitle": "{{date}} : {{count}}"
+  },
+  "leaderboard": {
+    "title": "Topppartners",
+    "hint": "De 10 partnerna med flest bokningar, sedan flest leads. Konvertering = bokat / accepterat.",
+    "empty": "Inga registreringar ännu.",
+    "columns": {
+      "rank": "#",
+      "partner": "Partner",
+      "leads": "Leder",
+      "accepted": "Accepterad",
+      "booked": "Bokad",
+      "conversion": "Omvandling"
+    }
   }
 }

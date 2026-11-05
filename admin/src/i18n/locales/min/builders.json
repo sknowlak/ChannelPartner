@@ -43,7 +43,9 @@
       "name": "Namo",
       "city": "Kota",
       "status": "Kaadaan",
-      "actions": "Tindakan"
+      "actions": "Tindakan",
+      "protection": "Palinduangan duplikat",
+      "matchOn": "Duplikat cocok pado"
     },
     "closeReferrals": "Tutuik untuak rujukan",
     "reopen": "Bukak baliak",
@@ -55,6 +57,25 @@
       "add": "Tambah Proyek",
       "created": "Dibuek {{name}} ."
     },
-    "back": "Baliak ka Pambangun"
+    "back": "Baliak ka Pambangun",
+    "protection": {
+      "days_one": "{{count}} hari",
+      "days_other": "{{count}} hari",
+      "globalDays_one": "Lalai global ( {{count}} hari)",
+      "globalDays_other": "Lalai global ( {{count}} hari)",
+      "globalDefault": "Bawaan global",
+      "placeholder": "Hari palinduangan (kosong = lalai global)",
+      "saved": "Duplikat palinduangan diperbarui untuak {{name}} .",
+      "hint": "Palinduangan duplikat: 1-3650 hari, atau biakan kosong untuak manggunoan default global dari Pangaturan. Sabuah parubahan hanyo balaku untuak pendaftaran baru - nan alah ado manjago kadaluarsanyo."
+    },
+    "matching": {
+      "global": "Bawaan global",
+      "globalWith": "Lalai global ( {{fields}} )",
+      "mobile": "Nomor ponsel",
+      "email": "Surek",
+      "both": "Nomor ponsel + email",
+      "saved": "Pancocokan duplikat diperbarui untuak {{name}}",
+      "hint": "Nan mano detail mambuek duo pendaftaran samo pelanggan untuak suatu proyek. Parubahan balaku untuak pareso duplikat mulai kini; perlindungan nan ado indak kanai."
+    }
   }
 }

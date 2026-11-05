@@ -49,8 +49,73 @@
       "newPartnerId": "ID Nshya",
       "reason": "Impamvu (bisabwa)",
       "apply": "Shyira hejuru",
-      "applying": "Gusaba ..."
+      "applying": "Gusaba ...",
+      "cancelBookingHint": "Guhagarika biranga booking na komisiyo yayo nkuko byahagaritswe, igasubiza nyirubwite ibikorwa, kandi ikareka igitabo cyubaka kikongera.",
+      "cancelBookingConfirm": "Hagarika iki gitabo? Komisiyo yayo nayo yarahagaritswe. Ibi byanditseho izina ryawe nimpamvu."
     },
-    "timelineTitle": "Kugenzura Igihe (kwiyandikisha)"
+    "timelineTitle": "Kugenzura Igihe (kwiyandikisha)",
+    "bookingStatus": "Imiterere yo gutumaho",
+    "commissionAttribution": "Inshingano za Komisiyo",
+    "disputeOpen": "Impaka za nyirubwite zirakinguye kuri uyu mukiriya - undi mufatanyabikorwa avuga ko ari iyabo. Byemejwe kurupapuro rwamakimbirane.",
+    "viewDisputes": "Reba amakimbirane",
+    "cancellation": {
+      "title": "Kwiyandikisha byahagaritswe",
+      "hint": "Kwiyandikisha hamwe na komisiyo yayo birahagaritswe; ibikorwa nyirizina byagarutse hamwe nabafatanyabikorwa kandi umwubatsi arashobora kongera gutondekanya iyi nzira.",
+      "at": "Yahagaritswe kuri",
+      "by": "Yahagaritswe na",
+      "reason": "Impamvu"
+    }
+  },
+  "disputes": {
+    "title": "Amakimbirane ya nyirubwite",
+    "hint": "Umufatanyabikorwa wanze kwandikwa nka duplicate arashobora gutongana nyir'umukiriya. Subiramo impande zombi hanyuma uhitemo.",
+    "statusFilter": "Imiterere y'amakimbirane",
+    "allStatuses": "Imimerere yose",
+    "empty": "Nta makimbirane afite kuriyi status.",
+    "columns": {
+      "dispute": "Impaka",
+      "customer": "Umukiriya",
+      "project": "Umushinga",
+      "raisedBy": "Yarezwe na",
+      "heldBy": "Nyirubwite",
+      "status": "Imiterere",
+      "raisedAt": "Yakuriye"
+    },
+    "detail": {
+      "title": "Impaka {{id}}",
+      "raisedOn": "Yakuwe {{date}}",
+      "raisingTitle": "Yarezwe na",
+      "holderTitle": "Nyirubwite",
+      "partner": "Umufatanyabikorwa",
+      "raisedBy": "Yatanzwe na",
+      "customerName": "Umukiriya",
+      "mobile": "Igendanwa",
+      "alternateMobile": "Ubundi buryo bugendanwa",
+      "email": "Imeri",
+      "project": "Umushinga",
+      "reason": "Impamvu yabo",
+      "registration": "Kwiyandikisha",
+      "registeredAt": "Kwiyandikisha kuri",
+      "referral": "Kohereza",
+      "heldMissing": "Kwiyandikisha byafashwe ntibishobora kuboneka.",
+      "resolutionTitle": "Icyemezo",
+      "outcome": "Ibisubizo",
+      "note": "Icyitonderwa",
+      "decidedBy": "Byemejwe na",
+      "decidedAt": "Icyemezo",
+      "newRegistration": "Kwiyandikisha gushya",
+      "decideTitle": "Hitamo aya makimbirane",
+      "noteLabel": "Icyitonderwa gusobanura icyemezo (gisabwa)",
+      "noteRequired": "Andika inyandiko kugirango uhitemo.",
+      "uphold": "Bishyigikiwe",
+      "overturn": "Kurengana",
+      "upholdEffect": "{{holder}} agumana umukiriya. Amakimbirane arafunze kandi ntakindi gihinduka.",
+      "overturnEffect": "{{holder}} 'gukingira kwigana birangira nonaha kandi umukiriya yiyandikishije kuri {{partner}} nkiyandikisha rishya.",
+      "heldBookedHelp": "Uyu mukiriya yanditseho binyuze kuri nyirubwite. Hagarika guhagarika mbere (Admin Override on kwiyandikisha), hanyuma uhirike:",
+      "confirmTitle": "Urabyizeye?",
+      "confirmUphold": "Yego",
+      "confirmOverturn": "Yego",
+      "back": "Subira ku makimbirane"
+    }
   }
 }

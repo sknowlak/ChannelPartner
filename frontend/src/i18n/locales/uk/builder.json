@@ -32,7 +32,8 @@
       "registered": "Зареєстрований"
     },
     "booked": "Заброньовано",
-    "empty": "Ще немає рефералів."
+    "empty": "Ще немає рефералів.",
+    "bookingCancelled": "Бронювання скасовано"
   },
   "detail": {
     "customer": "Замовник",
@@ -55,9 +56,15 @@
     "notice": {
       "booked": "Бронювання підтверджено.",
       "accepted": "Рекомендацію прийнято.",
-      "rejected": "Рекомендацію відхилено."
+      "rejected": "Рекомендацію відхилено.",
+      "bookingCancelled": "Бронювання скасовано."
     },
-    "backToReferrals": "Назад до рефералів"
+    "backToReferrals": "Назад до рефералів",
+    "bookingCancelled": "Бронювання скасовано",
+    "cancelBooking": "Скасувати бронювання",
+    "cancelReasonLabel": "Причина скасування (показується партнеру) *",
+    "cancelBookingHint": "Операційне право власності повертається до партнера, і його право на комісію скасовується. Лід можна забронювати знову пізніше.",
+    "cancelBookingConfirm": "Скасувати бронювання"
   },
   "history": {
     "title": "історія",
@@ -90,7 +97,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Право на комісію створено",
       "HANDOVER_COMPLETED": "Передача завершена",
       "ADMIN_PROTECTION_RELEASED": "Адміністратор раніше випустив захист від дублікатів. Причина: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Адміністратор змінив реєстрацію з {{from}} на {{to}} . Причина: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Адміністратор змінив реєстрацію з {{from}} на {{to}} . Причина: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Повторна спроба реєстрації іншого партнера була відхилена",
+      "BOOKING_CANCELLED": "Бронювання скасовано. Причина: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Операційне право власності повернуто партнеру",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Право на комісію скасовано разом із бронюванням",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Право на комісію відновлено для нового бронювання"
     }
   }
 }

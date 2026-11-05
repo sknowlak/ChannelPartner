@@ -1,4 +1,7 @@
 const express = require('express');
+const { logoutHandler } = require('../services/tokenRevocation');
+const dashboardController = require('../controllers/dashboardController');
+const disputeController = require('../controllers/disputeController');
 const { checkDuplicate } = require('../controllers/duplicateController');
 const partnerAuthController = require('../controllers/partnerAuthController');
 const myLeadsController = require('../controllers/myLeadsController');
@@ -67,6 +70,7 @@ router.post('/connectors/linkedin/webhook', linkedinConnectorController.webhookR
 router.post('/partners/register', signupRateLimit, partnerAuthController.register);
 router.post('/partners/login', loginRateLimit, partnerAuthController.login);
 
+router.post('/my/logout', partnerAuth, logoutHandler);
 router.get('/my/profile', partnerAuth, partnerAuthController.getMyProfile);
 router.patch('/my/profile', partnerAuth, partnerAuthController.updateMyProfile);
 
@@ -84,6 +88,12 @@ router.get('/my/assignable-users', partnerAuth, myLeadsController.listAssignable
 router.get('/my/lead-statuses', partnerAuth, myLeadsController.listLeadStatuses);
 router.get('/my/projects', partnerAuth, myLeadsController.listProjects);
 router.post('/my/duplicate-check', partnerAuth, duplicateCheckRateLimit, checkDuplicate);
+
+// Dashboard and ownership disputes (section 62).
+router.get('/my/dashboard', partnerAuth, dashboardController.getMyDashboard);
+router.get('/my/disputes', partnerAuth, disputeController.listMyDisputes);
+router.post('/my/disputes', partnerAuth, requirePermission(PERMISSIONS.MANAGE_LEADS), duplicateCheckRateLimit, disputeController.raiseDispute);
+router.post('/my/disputes/:disputeId/withdraw', partnerAuth, requirePermission(PERMISSIONS.MANAGE_LEADS), disputeController.withdrawDispute);
 
 router.get('/my/grid-preferences/:gridKey', partnerAuth, gridPreferencesController.getGridPreferences);
 router.patch('/my/grid-preferences/:gridKey', partnerAuth, gridPreferencesController.updateGridPreferences);

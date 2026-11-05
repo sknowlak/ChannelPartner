@@ -49,8 +49,73 @@
       "newPartnerId": "ID i nuebu na sosio",
       "reason": "Rason (ma nisisita)",
       "apply": "Na'i Override",
-      "applying": "Manma'aplika..."
+      "applying": "Manma'aplika...",
+      "cancelBookingHint": "I kanselasion ha na'kansela i booking yan i kumision-ña, ha bira i propiedåt operasionåt para i sosio, ya ha na'i i konstruksion para u book este na lead ta'lo.",
+      "cancelBookingConfirm": "Kansela este na inayek? Ma kansela lokkue' i kumision-ña. Este ma'a'atan gi i na'an-mu yan i rason-mu."
     },
-    "timelineTitle": "I tiempon inayek (este na rehistrasion)"
+    "timelineTitle": "I tiempon inayek (este na rehistrasion)",
+    "bookingStatus": "Estao i Bokasion",
+    "commissionAttribution": "Inatribusion Kumision",
+    "disputeOpen": "Guaha kuestion put i ga'ga'-ña este na kustombre - ilek-ña otro na sosio na iyo-ña. Ma disidi gi i pahina Disputes.",
+    "viewDisputes": "Atan i chinatsaga siha",
+    "cancellation": {
+      "title": "Ma kansela i reservasion",
+      "hint": "Ma kansela i inayek yan i kumision-ña; i propiedåt operasionåt ha bira gui' tatte gi i sosio ya i konstruksion siña ha na'i este na lead ta'lo.",
+      "at": "Ma kansela gi",
+      "by": "Ma kansela ni'",
+      "reason": "Rason"
+    }
+  },
+  "disputes": {
+    "title": "Dispues put i Ga'ga'",
+    "hint": "I sosio ni' ma na'suha i rehistrasion-ña komo duplikao siña ha kuestiona hayi i ga'ga' i kustomer. Repasa i dos banda ya un disidi.",
+    "statusFilter": "Estao i chinatsaga",
+    "allStatuses": "Todu estao",
+    "empty": "Ti ma kuestiona este na estao.",
+    "columns": {
+      "dispute": "Kontra",
+      "customer": "Kustomer",
+      "project": "Proyecto",
+      "raisedBy": "Ma'gåsi ni'",
+      "heldBy": "Gaige på'go",
+      "status": "Estadu",
+      "raisedAt": "Ma'lak gi"
+    },
+    "detail": {
+      "title": "Dispute {{id}}",
+      "raisedOn": "Ma'gåsi {{date}}",
+      "raisingTitle": "Ma'gåsi ni'",
+      "holderTitle": "Gaige på'go",
+      "partner": "Gachung",
+      "raisedBy": "Ma sodda' as",
+      "customerName": "Kustomer",
+      "mobile": "Movil",
+      "alternateMobile": "otro na tilifon",
+      "email": "Email",
+      "project": "Proyecto",
+      "reason": "I rason-ñiha",
+      "registration": "Rehistrasion",
+      "registeredAt": "Ma rehistra gi",
+      "referral": "Referral",
+      "heldMissing": "Ti siña ma sodda' i rehistrasion ni' ma gogo'te.",
+      "resolutionTitle": "Disision",
+      "outcome": "Finatinas",
+      "note": "Nota",
+      "decidedBy": "Ma disidi ni'",
+      "decidedAt": "Ma disidi gi",
+      "newRegistration": "nuebu na rehistrasion",
+      "decideTitle": "Diside este na chinatsaga",
+      "noteLabel": "Nota ni' ha esplåra i disision (ma nisisita)",
+      "noteRequired": "Tuge' un nota para un disidi.",
+      "uphold": "Susteni",
+      "overturn": "Na'fanhuyong",
+      "upholdEffect": "{{holder}} ha gof adahi i kustomer. I chinatsaga esta ma'pos ya taya' otro na siña ma'apåsi.",
+      "overturnEffect": "I proteksion {{holder}} 's duplicate esta ma'pos på'go ya i kustomer esta ma'rehistra para {{partner}} komo un nuebu na rehistrasion.",
+      "heldBookedHelp": "Este na kustombre ma'apåsi ginen i ga'chong-ña på'go. Kansela i booking fine'nina (Admin Override gi i rehistrasion), pues na'suha:",
+      "confirmTitle": "Siguru hao?",
+      "confirmUphold": "Hunggan, na'siguru",
+      "confirmOverturn": "Hunggan, tåmpe",
+      "back": "Tåtte gi i Disputa siha"
+    }
   }
 }

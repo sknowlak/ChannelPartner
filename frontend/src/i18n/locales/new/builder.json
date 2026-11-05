@@ -30,7 +30,8 @@
       "registered": "दर्ता जुल"
     },
     "booked": "बुक जुल",
-    "empty": "आःतकं रेफरल मदुनि ।"
+    "empty": "आःतकं रेफरल मदुनि ।",
+    "bookingCancelled": "बुकिङ्ग रद्द जुल"
   },
   "detail": {
     "customer": "ग्राहक",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "बुकिङ्ग पक्का जुल ।",
       "accepted": "रेफरल स्वीकार जुल ।",
-      "rejected": "रेफरल अस्वीकार जुल ।"
+      "rejected": "रेफरल अस्वीकार जुल ।",
+      "bookingCancelled": "बुकिङ्ग रद्द जुल ।"
     },
-    "backToReferrals": "रेफरलय् लिहां हुँ ।"
+    "backToReferrals": "रेफरलय् लिहां हुँ ।",
+    "bookingCancelled": "बुकिङ्ग रद्द जुल",
+    "cancelBooking": "बुकिङ्ग रद्द या ।",
+    "cancelReasonLabel": "रद्द यायेगु हुनि (पार्टनरयात क्यन) *",
+    "cancelBookingHint": "परिचालन स्वामित्व साझेदारयात लिहां वनी अले इमिगु कमिशन योग्यता रद्द जुइ । लीडयात लिपा हानं बुक यायेफइ ।",
+    "cancelBookingConfirm": "बुकिङ्ग रद्द या ।"
   },
   "history": {
     "title": "बाखँ",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "आयोगया योग्यता दयेकल ।",
       "HANDOVER_COMPLETED": "लःल्हायेगु ज्या सिधल",
       "ADMIN_PROTECTION_RELEASED": "एडमिनं डुप्लिकेट प्रोटेक्सन न्ह्यः हे सार्वजनिक यात । हुनि : {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "एडमिनं {{from}} निसें {{to}} तक दर्तायात हानं लःल्हात । हुनि : {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "एडमिनं {{from}} निसें {{to}} तक दर्तायात हानं लःल्हात । हुनि : {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "मेम्ह पार्टनरं याःगु डुप्लिकेट दर्ता यायेगु कुतःयात अस्वीकार यात ।",
+      "BOOKING_CANCELLED": "बुकिङ्ग रद्द जुल । हुनि : {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "पार्टनरयात संचालन स्वामित्व लित बिल ।",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "बुकिङ्गलिसें कमिशनया योग्यता रद्द जुल ।",
+      "COMMISSION_ELIGIBILITY_RESTORED": "न्हूगु बुकिङ्गया निंतिं कमिशनया योग्यता हानं काल ।"
     }
   }
 }

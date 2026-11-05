@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Erreserbatua",
-    "pending": "Zain"
+    "pending": "Zain",
+    "status": {
+      "CONFIRMED": "Erreserbatua",
+      "CANCELLED": "Erreserba bertan behera utzi da"
+    }
   },
   "assign": {
     "unassigned": "Esleitu gabe",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Oraindik ez dago proiekturik (ez da aipatu)",
-    "notInList": "{{project}} (ez dago proiektuen zerrendan)"
+    "notInList": "{{project}} (ez dago proiektuen zerrendan)",
+    "protectionDays_one": "{{count}} eguneko babesa",
+    "protectionDays_other": "{{count}} eguneko babesa"
   },
   "journey": {
     "customer": "Bezeroa",
@@ -76,7 +82,14 @@
     "progressHistory": "Aurrerapen Historia",
     "timesIn": "(orduak {{timezone}} n)",
     "backToMyLeads": "Itzuli Nire Leads-era",
-    "editLead": "Editatu Lead"
+    "editLead": "Editatu Lead",
+    "disputeBanner": "Beste bazkide batek bezero honen jabetza eztabaidatu du. Leadrat administratzaile bat berrikusten ari da - zure babesa indarrean egongo da haiek erabaki arte.",
+    "booking": "Erreserba",
+    "commission": "Batzordea",
+    "notBooked": "Ez dago erreserbatuta",
+    "cancelledOn": "{{date}} egunean bertan behera utzi zen.",
+    "cancelReason": "Arrazoia: {{reason}}",
+    "cancelledHint": "Eraikitzaileak erreserba bertan behera utzi du - jabetza operatiboa itzuli da zurekin eta komisioaren hautagarritasuna bertan behera utzi da. Berrezartzen da markagailua berriro erreserbatzen bada."
   },
   "referral": {
     "NOT_REFERRED": "Ez da aipatu (proiekturik ez)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Eraikitzaileak erreferentzia onartu zuen",
       "REFERRAL_REJECTED": "Eraikitzaileak erreferentea baztertu zuen. Arrazoia: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Administratzaileak bikoiztutako babesa kaleratu zuen goiz. Arrazoia: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Administratzaileak erregistroa berriro esleitu du {{from}} -tik {{to}} . Arrazoia: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Administratzaileak erregistroa berriro esleitu du {{from}} -tik {{to}} . Arrazoia: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Beste bazkide baten bikoiztutako erregistro-saiakera baztertu da",
+      "BOOKING_CANCELLED": "Erreserba bertan behera utzi da. Arrazoia: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Jabetza operatiboa bazkideari itzuli zaio",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Komisioaren hautagarritasuna bertan behera utzi da erreserbarekin",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Erreserba berrirako komisioen hautagarritasuna berreskuratu da",
+      "OWNERSHIP_DISPUTE_RAISED": "Beste bazkide batek bezero honen jabetza eztabaidatu zuen - Leadrat administratzaile batek berrikusiko du",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Bezero honen jabegoaren auzia kendu egin da - zure jabetza ez da aldatu",
+      "OWNERSHIP_DISPUTE_UPHELD": "Bezero honen jabegoaren auzia berrikusi da - zure jabetza berretsi da",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Zure jabetza-gatazka zure alde erabaki ondoren erregistratu da. Oharra: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Babesa amaitu zen: jabetza-gatazka bat beste bazkide baten alde erabaki zen. Oharra: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Telefono-zenbaki honek ez du balio {{country}} rako.",
     "COUNTRY_MISMATCH": "Mesedez, hautatu herrialde-kode zuzena.",
     "NOT_MOBILE": "Mesedez, sartu mugikor-zenbaki bat, ez finkoa."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Batzorde hautagarria",
+      "PENDING": "Batzordearen zain",
+      "CANCELLED": "Batzordea bertan behera utzi da"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Zuri egotzita",
+      "DISPUTED": "Esleipena eztabaidatu da"
+    }
+  },
+  "result": {
+    "none": "Ez dago erregistratzeko emaitzarik erakusteko. Erregistratu lehenbailehen liderra.",
+    "acceptedTitle": "Beruna erregistratuta",
+    "rejectedTitle": "Beruna ez dago erregistratuta",
+    "protectionWindow": "Babes-leihoa",
+    "protectedUntil": "Babestua arte",
+    "openLead": "Ireki Beruna",
+    "addAnother": "Gehitu Beste Lead",
+    "duplicate": "Bikoiztu - dagoeneko babestuta",
+    "duplicateHint": "Bezero hau proiektu honetarako babestuta dago beste erregistro baten bidez, beraz, ezin izan da zuretzako erregistratu.",
+    "existingProtectedUntil": "Lehendik dagoen erregistroa arte babestuta dago"
+  },
+  "disputes": {
+    "title": "Nire Gatazkak",
+    "intro": "Bikoiztu gisa ukatu zitzaizkien bezeroei planteatutako jabetza-gatazkak. Leadrat administratzaile batek berrikusten du bakoitza.",
+    "empty": "Ez duzu eztabaidarik sortu. Ekartzen duzun bezero bati bikoiztu gisa ukatzen bazaio, erregistroaren emaitzari uko egin diezaiokezu.",
+    "columns": {
+      "dispute": "Gatazka",
+      "reason": "Zure arrazoia",
+      "outcome": "Emaitza"
+    },
+    "status": {
+      "OPEN": "Berrikuspenean",
+      "UPHELD": "Ez zure alde",
+      "OVERTURNED": "Zure alde erabakita",
+      "WITHDRAWN": "Erretiratua"
+    },
+    "awaitingReview": "Administratzailearen berrikuspenaren zain",
+    "openNewLead": "Ireki zure lead {{id}}",
+    "withdraw": "Erretiratu",
+    "withdrawConfirm": "{{name}} i buruzko auzia kendu? Egungo jabetza dagoen bezala geratzen da.",
+    "raise": "Gatazkaren jabetza",
+    "raiseTitle": "Gatazkaren jabetza",
+    "raiseHint": "Bezero hau lehenbailehen etorri bazaizu, azaldu zergatik. Leadrat administratzaile batek berrikusiko du; zure alde erabakitzen badute, lidergoa erregistratzen zaizu.",
+    "reasonLabel": "Zergatik da bezero hau zurea?",
+    "reasonMin_one": "Gutxienez {{count}} karaktere.",
+    "reasonMin_other": "Gutxienez {{count}} karaktere.",
+    "submit": "Bidali gatazka",
+    "notProtected": "Inork ez du gehiago bezero honen babesik proiektu honetarako - orain erregistratu dezakezu lidergoa.",
+    "raised": "{{id}} auzia berrikusteko bidali da.",
+    "viewAll": "Ikusi nire gatazkak"
+  },
+  "dashboard": {
+    "title": "Aginte-panela",
+    "period": "Aldia",
+    "lastDays_one": "{{count}} egun",
+    "lastDays_other": "{{count}} egun",
+    "emptyTitle": "Ongi etorri! Oraindik ez duzu biderik.",
+    "emptyHint": "Erregistratu zure lehen lead-a: zure kanalizazioa, erreserbak eta babes-epeak hemen agertuko dira.",
+    "tiles": {
+      "leads": "Erabiltzaileak guztira",
+      "newInPeriod_one": "{{count}} berri aldi honetan",
+      "newInPeriod_other": "{{count}} berri aldi honetan",
+      "accepted": "Onartua",
+      "booked": "Erreserbatua",
+      "bookedInPeriod_one": "{{count}} erreserbatu dira epe honetan",
+      "bookedInPeriod_other": "{{count}} erreserbatu dira epe honetan",
+      "conversion": "Bihurketa",
+      "conversionHint": "Erreserbatutako bezerogaiak onartutako bezeroen zati gisa",
+      "protectedNow": "Orain babestuta",
+      "expiringSoon_one": "{{count}} egun barru amaituko da babesa",
+      "expiringSoon_other": "{{count}} egun barru amaituko da babesa",
+      "disputedNow": "Besteek eztabaidatua",
+      "disputedNowHint": "Zure bezeroak beste bazkide baten jabetza-gatazka ireki batekin",
+      "commissionEligible": "Batzorde hautagarria",
+      "commissionCancelled_one": "{{count}} bertan behera utzi da",
+      "commissionCancelled_other": "{{count}} bertan behera utzi da"
+    },
+    "chart": {
+      "title_one": "Izen-ematea eta erreserbak eguneko - azken {{count}} eguna",
+      "title_other": "Izen-ematea eta erreserbak eguneko - azken {{count}} egunak",
+      "registrations": "Izen emateak",
+      "bookings": "Erreserbak"
+    },
+    "byStage": "Liderra estatusaren arabera",
+    "bySource": "Iturburuaren arabera liderrak",
+    "byReferral": "Erreferentzia-egoeraren arabera liderrak",
+    "myDisputes": "Zuk planteatu dituzun gatazkak",
+    "noDisputes": "Ez da eztabaidarik sortu.",
+    "unknown": "Ez da ezarri",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Kanpoko CRM (simulatua)",
+      "PARTNER_CRM": "Zure taldeak gehitu du",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integrazioa",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Hurrengo {{count}} egunean iraungiko da babesa",
+    "expiringTitle_other": "Babesa hurrengo {{count}} egunetan iraungiko da",
+    "expiringEmpty": "Berunak ez du babesik galtzen leiho honetan."
   }
 }

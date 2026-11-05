@@ -30,7 +30,8 @@
       "registered": "Регистриран"
     },
     "booked": "Резервирано",
-    "empty": "Все още няма реферали."
+    "empty": "Все още няма реферали.",
+    "bookingCancelled": "Резервацията е отменена"
   },
   "detail": {
     "customer": "Клиент",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Резервацията е потвърдена.",
       "accepted": "Препоръка приета.",
-      "rejected": "Препоръката е отхвърлена."
+      "rejected": "Препоръката е отхвърлена.",
+      "bookingCancelled": "Резервацията е анулирана."
     },
-    "backToReferrals": "Обратно към препоръките"
+    "backToReferrals": "Обратно към препоръките",
+    "bookingCancelled": "Резервацията е отменена",
+    "cancelBooking": "Отказ от резервация",
+    "cancelReasonLabel": "Причина за анулиране (показва се на партньора) *",
+    "cancelBookingHint": "Оперативната собственост се връща на партньора и тяхното право на комисионна се анулира. Оловото може да бъде резервирано отново по-късно.",
+    "cancelBookingConfirm": "Отменете резервацията"
   },
   "history": {
     "title": "История",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Създадена е допустимост на комисията",
       "HANDOVER_COMPLETED": "Предаването приключи",
       "ADMIN_PROTECTION_RELEASED": "Администраторът пусна дублиращата защита по-рано. Причина: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Администраторът преназначи регистрацията от {{from}} на {{to}} . Причина: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Администраторът преназначи регистрацията от {{from}} на {{to}} . Причина: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Дублиран опит за регистрация от друг партньор беше отхвърлен",
+      "BOOKING_CANCELLED": "Резервацията е анулирана. Причина: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Оперативната собственост е върната на партньора",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Допустимостта на комисионната е отменена с резервацията",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Комисионната е възстановена за новата резервация"
     }
   }
 }

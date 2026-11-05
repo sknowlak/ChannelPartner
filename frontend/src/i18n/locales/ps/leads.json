@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "بک شوی",
-    "pending": "پاتې"
+    "pending": "پاتې",
+    "status": {
+      "CONFIRMED": "بک شوی",
+      "CANCELLED": "بکنګ لغوه شو"
+    }
   },
   "assign": {
     "unassigned": "بې تفاوته",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "تراوسه کومه پروژه نه ده راجع شوې",
-    "notInList": "{{project}} (د پروژې په لیست کې نه دی)"
+    "notInList": "{{project}} (د پروژې په لیست کې نه دی)",
+    "protectionDays_one": "{{count}} - ورځی ساتنه",
+    "protectionDays_other": "{{count}} - ورځی ساتنه"
   },
   "journey": {
     "customer": "پیرودونکي",
@@ -76,7 +82,14 @@
     "progressHistory": "د پرمختګ تاریخ",
     "timesIn": "(په {{timezone}} کې وختونه)",
     "backToMyLeads": "بیرته زما لیډونو ته",
-    "editLead": "لیډ ایډیټ کړئ"
+    "editLead": "لیډ ایډیټ کړئ",
+    "disputeBanner": "بل ملګري د دې پیرودونکي ملکیت شخړه کړې. Leadrat مدیر دا بیاکتنه کوي - ستاسو محافظت په خپل ځای کې پاتې کیږي تر هغه چې دوی پریکړه وکړي.",
+    "booking": "بکنگ",
+    "commission": "کمیسیون",
+    "notBooked": "نه بک شوی",
+    "cancelledOn": "په {{date}} کې لغوه شو.",
+    "cancelReason": "لامل: {{reason}}",
+    "cancelledHint": "جوړونکي بکینګ لغوه کړ - عملیاتي ملکیت بیرته ستاسو سره دی او د کمیسیون وړتیا لغوه کیږي. دا بحال کیږي که چیرې لیډ بیا ثبت شي."
   },
   "referral": {
     "NOT_REFERRED": "نه راجع شوی (هیڅ پروژه)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "جوړونکي راجع کول ومنل",
       "REFERRAL_REJECTED": "جوړونکي راجع کول رد کړل. لامل: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "اډمین د نقل محافظت دمخه خپور کړ. لامل: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "اډمین له {{from}} څخه {{to}} ته راجسټریشن بیا وټاکه. لامل: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "اډمین له {{from}} څخه {{to}} ته راجسټریشن بیا وټاکه. لامل: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "د بل ملګري لخوا د نقل ثبتولو هڅه رد شوه",
+      "BOOKING_CANCELLED": "بکنګ لغوه شو. لامل: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "عملیاتي ملکیت بیرته ملګري ته راستانه شوی",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "د کمیسیون وړتیا د بکینګ سره لغوه شوه",
+      "COMMISSION_ELIGIBILITY_RESTORED": "د نوي بکینګ لپاره د کمیسیون وړتیا بحال شوې",
+      "OWNERSHIP_DISPUTE_RAISED": "بل ملګري د دې پیرودونکي ملکیت شخړه وکړه - د Leadrat مدیر به یې بیاکتنه وکړي",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "د دې پیرودونکي د ملکیت شخړه بیرته واخیستل شوه - ستاسو مالکیت بدل شوی نه دی",
+      "OWNERSHIP_DISPUTE_UPHELD": "د دې پیرودونکي د ملکیت شخړه بیاکتنه شوې - ستاسو مالکیت تایید شوی",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "وروسته له دې چې ستاسو د ملکیت شخړه ستاسو په ګټه پریکړه وشوه راجستر شوی. نوټ: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "محافظت پای ته ورسید: د ملکیت شخړه د بل ملګري په ګټه پریکړه شوې. نوټ: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "دا د تلیفون شمیره د {{country}} لپاره د اعتبار وړ نه ده.",
     "COUNTRY_MISMATCH": "مهرباني وکړئ د هیواد سم کوډ غوره کړئ.",
     "NOT_MOBILE": "مهرباني وکړئ د ګرځنده شمیره داخل کړئ، نه د ځمکې لاین."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "د کمیسیون وړ",
+      "PENDING": "کمیسیون پاتې دی",
+      "CANCELLED": "کمیسیون لغوه کړ"
+    },
+    "attribution": {
+      "ATTRIBUTED": "تاته منسوب",
+      "DISPUTED": "انتساب شخړه"
+    }
+  },
+  "result": {
+    "none": "د ښودلو لپاره د نوم لیکنې پایله نشته. لومړی لیډ ثبت کړئ.",
+    "acceptedTitle": "لیډ ثبت شوی",
+    "rejectedTitle": "لیډ راجستر شوی نه دی",
+    "protectionWindow": "د ساتنې کړکۍ",
+    "protectedUntil": "تر هغه پورې ساتل کیږي",
+    "openLead": "خلاص لیډ",
+    "addAnother": "یو بل لیډ اضافه کړئ",
+    "duplicate": "نقل - دمخه خوندي شوی",
+    "duplicateHint": "دا پیرودونکی دمخه د دې پروژې لپاره د بل راجسټریشن لخوا خوندي شوی ، نو دا ستاسو لپاره راجستر کیدی نشي.",
+    "existingProtectedUntil": "موجوده ثبت کول تر هغه پورې خوندي دي"
+  },
+  "disputes": {
+    "title": "زما شخړې",
+    "intro": "د مالکیت شخړې چې تاسو د پیرودونکو لپاره راپورته کړې چې د نقل په توګه رد شوي. د Leadrat مدیر هر یو بیاکتنه کوي.",
+    "empty": "تاسو هیڅ شخړه نه ده راپورته کړې. که چیرې یو پیرودونکی چې تاسو یې راوړی د نقل په توګه رد شوی، تاسو کولی شئ د نوم لیکنې پایلې څخه شخړه وکړئ.",
+    "columns": {
+      "dispute": "شخړه",
+      "reason": "ستاسو دلیل",
+      "outcome": "پایله"
+    },
+    "status": {
+      "OPEN": "د بیاکتنې لاندې",
+      "UPHELD": "ستاسو په ګټه نه",
+      "OVERTURNED": "ستاسو په ګټه پریکړه وکړه",
+      "WITHDRAWN": "ویستل"
+    },
+    "awaitingReview": "د مدیر بیاکتنې ته انتظار",
+    "openNewLead": "خپل لیډ {{id}} خلاص کړئ",
+    "withdraw": "ویستل",
+    "withdrawConfirm": "د {{name}} لپاره خپله شخړه بیرته واخلئ؟ اوسنی ملکیت همداسې پاتې کیږي.",
+    "raise": "د ملکیت شخړه",
+    "raiseTitle": "د ملکیت شخړه",
+    "raiseHint": "که دا پیرودونکی لومړی تاسو ته راشي، تشریح کړئ چې ولې. د Leadrat مدیر به یې بیاکتنه وکړي؛ که دوی ستاسو په ګټه پریکړه وکړي، لیډ ستاسو لپاره راجستر کیږي.",
+    "reasonLabel": "ولې دا پیرودونکی ستاسو دی؟",
+    "reasonMin_one": "لږ تر لږه {{count}} کرکټر.",
+    "reasonMin_other": "لږ تر لږه {{count}} حروف.",
+    "submit": "شخړه واستوئ",
+    "notProtected": "هیڅوک د دې پروژې لپاره نور د دې پیرودونکي محافظت نه کوي - تاسو اوس لیډ راجستر کولی شئ.",
+    "raised": "شخړه {{id}} د بیاکتنې لپاره لیږل شوې.",
+    "viewAll": "زما شخړې وګورئ"
+  },
+  "dashboard": {
+    "title": "ډشبورډ",
+    "period": "دوره",
+    "lastDays_one": "{{count}} ورځ",
+    "lastDays_other": "{{count}} ورځې",
+    "emptyTitle": "ښه راغلاست! تاسو تراوسه هیڅ لیډ نلرئ.",
+    "emptyHint": "خپل لومړی لیډ راجستر کړئ - ستاسو پایپ لاین، بکینګ او د ساتنې نیټې به دلته ښکاره شي.",
+    "tiles": {
+      "leads": "ټول لیډز",
+      "newInPeriod_one": "په دې موده کې {{count}} نوي",
+      "newInPeriod_other": "په دې موده کې {{count}} نوي",
+      "accepted": "ومنل شو",
+      "booked": "بک شوی",
+      "bookedInPeriod_one": "په دې موده کې {{count}} بک شوي",
+      "bookedInPeriod_other": "په دې موده کې {{count}} بک شوي",
+      "conversion": "تبادله",
+      "conversionHint": "بک شوي لیډونه د منل شوي لیډونو د ونډې په توګه",
+      "protectedNow": "اوس خوندي دی",
+      "expiringSoon_one": "محافظت په {{count}} ورځو کې پای ته رسیږي",
+      "expiringSoon_other": "محافظت په {{count}} ورځو کې پای ته رسیږي",
+      "disputedNow": "د نورو لخوا شخړه",
+      "disputedNowHint": "ستاسو رهبري د بل ملګري څخه د مالکیت خلاصې شخړې سره",
+      "commissionEligible": "د کمیسیون وړ",
+      "commissionCancelled_one": "{{count}} لغوه شو",
+      "commissionCancelled_other": "{{count}} لغوه شو"
+    },
+    "chart": {
+      "title_one": "هره ورځ راجسټریشن او بکینګ - وروستۍ {{count}} ورځ",
+      "title_other": "هره ورځ راجسټریشن او بکینګ - وروستۍ {{count}} ورځې",
+      "registrations": "ثبتونه",
+      "bookings": "کتابونه"
+    },
+    "byStage": "د وضعیت له مخې رهبري کیږي",
+    "bySource": "د سرچینې لخوا رهبري کیږي",
+    "byReferral": "د راجع کولو حالت لخوا رهبري کیږي",
+    "myDisputes": "شخړې چې تاسو راپورته کړي",
+    "noDisputes": "هیڅ شخړه راپورته شوې.",
+    "unknown": "ټاکل شوی نه دی",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "بهرنۍ CRM (نقل شوی)",
+      "PARTNER_CRM": "ستاسو د ټیم لخوا اضافه شوی",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "ادغام",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "په راتلونکې {{count}} ورځ کې د ساتنې موده پای ته رسیږي",
+    "expiringTitle_other": "محافظت په راتلونکو {{count}} ورځو کې پای ته رسیږي",
+    "expiringEmpty": "پدې کړکۍ کې هیڅ لیډ خپل محافظت له لاسه نه ورکوي."
   }
 }

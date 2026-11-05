@@ -49,8 +49,73 @@
       "newPartnerId": "Bagong ID nin Kasosyo",
       "reason": "Rason (kaipuhan)",
       "apply": "Mag-aplay nin Pagbalyo",
-      "applying": "Nag-aaplay..."
+      "applying": "Nag-aaplay...",
+      "cancelBookingHint": "An pagkanselar minamarka kan booking asin kan komisyon kaini bilang kanselado, minabalik kan pagsasadiri sa operasyon sa kasosyo, asin tinotogotan an paratogdok na mag-book giraray kan lead na ini.",
+      "cancelBookingConfirm": "Kanselaron an booking na ini? Kanselado man an komisyon kaini. Ini naka-log kaiba an saimong pangaran asin rason."
     },
-    "timelineTitle": "Timeline nin Pag-audit (an rehistrasyon na ini)"
+    "timelineTitle": "Timeline nin Pag-audit (an rehistrasyon na ini)",
+    "bookingStatus": "Kamugtakan nin Pagpareserba",
+    "commissionAttribution": "Pag-atribwir kan Komisyon",
+    "disputeOpen": "Sarong iriwal sa pagsasadiri an bukas sa parokyano na ini - an saro pang kasosyo nagsasabi na ini sainda. Ini nadedesisyonan sa pahina nin mga Iriwal.",
+    "viewDisputes": "Hilingon an mga iriwal",
+    "cancellation": {
+      "title": "Kanselado an pagpareserba",
+      "hint": "An pagpareserba asin an komisyon kaini kanselado; an pagsasadiri sa operasyon nagbalik na sa kapadis asin an paratogdok puedeng mag-book giraray kan lead na ini.",
+      "at": "Kanselado sa",
+      "by": "Kanselado kan",
+      "reason": "Rason"
+    }
+  },
+  "disputes": {
+    "title": "Mga Iriwal sa Pagsadiri",
+    "hint": "An sarong kasosyo na an rehistrasyon isinikwal bilang sarong duplikado pwedeng makipag-iwal kun siisay an kagsadiri kan parokyano. Repasohon an duwang lado asin magdesisyon.",
+    "statusFilter": "Kamugtakan kan iriwal",
+    "allStatuses": "Gabos na estado",
+    "empty": "Mayo nin mga iriwal sa estadong ini.",
+    "columns": {
+      "dispute": "Iriwal",
+      "customer": "Kustomer",
+      "project": "Proyekto",
+      "raisedBy": "Pinadakula ni",
+      "heldBy": "Kasadiri ngonyan",
+      "status": "Estado",
+      "raisedAt": "Pinadakula sa"
+    },
+    "detail": {
+      "title": "Iriwal {{id}}",
+      "raisedOn": "Pinitaas {{date}}",
+      "raisingTitle": "Pinadakula ni",
+      "holderTitle": "Kasadiri ngonyan",
+      "partner": "Kapareha",
+      "raisedBy": "Isinumitir ni",
+      "customerName": "Kustomer",
+      "mobile": "Nahihiro",
+      "alternateMobile": "Alternatibong mobile",
+      "email": "Email",
+      "project": "Proyekto",
+      "reason": "An saindang rason",
+      "registration": "Pagrehistro",
+      "registeredAt": "Nakarehistro sa",
+      "referral": "Referral",
+      "heldMissing": "Dai nakua an kapot na rehistrasyon.",
+      "resolutionTitle": "Desisyon",
+      "outcome": "Resulta",
+      "note": "Tandaan",
+      "decidedBy": "Nagdesisyon ni",
+      "decidedAt": "Nagdesisyon sa",
+      "newRegistration": "Bagong rehistrasyon",
+      "decideTitle": "Magdesisyon sa iriwal na ini",
+      "noteLabel": "Nota na nagpapaliwanag kan desisyon (kaipuhan)",
+      "noteRequired": "Magsurat nin nota tanganing magdesisyon.",
+      "uphold": "Suportaran",
+      "overturn": "Pagbaliktad",
+      "upholdEffect": "{{holder}} an nagtitipig kan parokyano. An iriwal sarado na asin mayo nang ibang nagbabago.",
+      "overturnEffect": "An duplikadong proteksyon kan {{holder}} matatapos na ngonyan asin an parokyano nakarehistro na para sa {{partner}} bilang sarong bagong rehistrasyon.",
+      "heldBookedHelp": "An parokyano na ini naka-book sa paagi kan presenteng kagsadiri. Kanselaron nguna an booking na iyan (Admin Override sa rehistrasyon), dangan ibaliktad:",
+      "confirmTitle": "Sigurado ka?",
+      "confirmUphold": "Iyo, suportaran",
+      "confirmOverturn": "Iyo, baliktadon",
+      "back": "Balik sa mga Iriwal"
+    }
   }
 }

@@ -49,8 +49,73 @@
       "newPartnerId": "ID Mitra Anyar",
       "reason": "Alasan (kaperluang)",
       "apply": "Terapang Override",
-      "applying": "Nglamar..."
+      "applying": "Nglamar...",
+      "cancelBookingHint": "Pembatalan nyihnayang pemesanan lan komisinyane sampun kacancel, ngewaliang kepemilikan operasional majeng ring mitra, lan ngicenin pembangun booking lead puniki malih.",
+      "cancelBookingConfirm": "Ngingsirang pemesanan puniki? Komisinyane taler kacancel. Puniki kacatet nganggén wastan lan alasan Sametoné."
     },
-    "timelineTitle": "Garis Waktu Audit (pendaftaran puniki)"
+    "timelineTitle": "Garis Waktu Audit (pendaftaran puniki)",
+    "bookingStatus": "Status Pemesanan",
+    "commissionAttribution": "Atribusi Komisi",
+    "disputeOpen": "Sengketa padruwen kabukak ring pelanggan puniki - mitra sane lianan maosang punika druwen ipun. Punika kaputusang ring halaman Sengketa.",
+    "viewDisputes": "Cingakin sengketa",
+    "cancellation": {
+      "title": "Pemesanan sampun kakancel",
+      "hint": "Pemesanan miwah komisinyane sampun kacancel; kepemilikan operasional sampun mawali sareng mitra lan pembangun prasida booking lead puniki malih.",
+      "at": "Kakancel ring",
+      "by": "Kakancel olih",
+      "reason": "Alasan"
+    }
+  },
+  "disputes": {
+    "title": "Sengketa indik Padruwén",
+    "hint": "Mitra sane pendaftarannyane katulak dados duplikat prasida nglawan sapasira sane madue pelanggan. Tinjau malih kalih sisi tur putusang.",
+    "statusFilter": "Status sengketa",
+    "allStatuses": "Status makasami",
+    "empty": "Nénten wénten sengketa sareng status puniki.",
+    "columns": {
+      "dispute": "Majugjagan",
+      "customer": "Palanggan",
+      "project": "Proyék",
+      "raisedBy": "Kaunggahang olih",
+      "heldBy": "Sané nuénang mangkin",
+      "status": "Setatus",
+      "raisedAt": "Kaunggah ring"
+    },
+    "detail": {
+      "title": "Wicara {{id}}",
+      "raisedOn": "Kaunggahang {{date}}",
+      "raisingTitle": "Kaunggahang olih",
+      "holderTitle": "Sané nuénang mangkin",
+      "partner": "Pasangan",
+      "raisedBy": "Kakirim olih",
+      "customerName": "Palanggan",
+      "mobile": "Hénpun",
+      "alternateMobile": "Seluler alternatif",
+      "email": "Email",
+      "project": "Proyék",
+      "reason": "Alasan ipun",
+      "registration": "Pendaftaran",
+      "registeredAt": "Kadaftarang ring",
+      "referral": "Rujukan",
+      "heldMissing": "Pendaftaran sane kalaksanayang nenten prasida kapanggih.",
+      "resolutionTitle": "Kaputusan",
+      "outcome": "Keluaran",
+      "note": "Catetan",
+      "decidedBy": "Kaputusang olih",
+      "decidedAt": "Kaputusang ring",
+      "newRegistration": "Pendaftaran anyar",
+      "decideTitle": "Muputang sengketa puniki",
+      "noteLabel": "Catetan nlatarang pamutus (kaperluang)",
+      "noteRequired": "Nyurat catetan mangda prasida mutusang.",
+      "uphold": "Ajegang",
+      "overturn": "Mabalik",
+      "upholdEffect": "{{holder}} nyimpen palanggan. Wicara punika sampun katutup tur nenten wenten malih sane mauwah.",
+      "overturnEffect": "Perlindungan duplikat {{holder}} sampun puput mangkin lan palanggan sampun kadaftarang antuk {{partner}} pinaka pendaftaran anyar.",
+      "heldBookedHelp": "Pelanggan puniki kapesen saking sang sané nuénang mangkin. Ngingsirang dumun pemesanan punika (Admin Override ring pendaftaran), raris ulung:",
+      "confirmTitle": "Napiké Sameton pastika?",
+      "confirmUphold": "Inggih, tegtegang",
+      "confirmOverturn": "Inggih, ulung",
+      "back": "Mawali ka Sengketa"
+    }
   }
 }

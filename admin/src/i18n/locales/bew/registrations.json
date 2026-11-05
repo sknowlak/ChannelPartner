@@ -49,8 +49,73 @@
       "newPartnerId": "ID Mitra Baru",
       "reason": "Alasan (wajib)",
       "apply": "Terapkan Override",
-      "applying": "Lamar..."
+      "applying": "Lamar...",
+      "cancelBookingHint": "Pembatalan menandai pemesanan dan komisinya sebagai pembatalan, mengembalikan kepemilikan operasional ke mitra, dan membiarkan tukang bangunan mesen lead ini lagi.",
+      "cancelBookingConfirm": "Batal pemesanan ini? Komisinya juga dibatalin. Ini dicatat dengan nama dan alasan lu."
     },
-    "timelineTitle": "Garis Waktu Audit (pendaftaran ini)"
+    "timelineTitle": "Garis Waktu Audit (pendaftaran ini)",
+    "bookingStatus": "Status Pemesanan",
+    "commissionAttribution": "Atribusi Komisi",
+    "disputeOpen": "Sengketa kepemilikan terbuka pada pelanggan ini - mitra lain mengatakan itu milik mereka. Itu diputusin di halaman Perselisihan.",
+    "viewDisputes": "Liat sengketa",
+    "cancellation": {
+      "title": "Pemesanan dibatalin",
+      "hint": "Pemesanan dan komisinya dibatalin; kepemilikan operasional balik ke mitra dan tukang bangunan bisa booking lead ini lagi.",
+      "at": "Dibatalin jam",
+      "by": "Dibatalin ama",
+      "reason": "Alesan"
+    }
+  },
+  "disputes": {
+    "title": "Perselisihan Kepemilikan",
+    "hint": "Mitra yang pendaftarannye ditolak sebagai duplikat bisa ngebantah siapa yang punya pelanggan. Tinjau kedua belah pihak dan putusin.",
+    "statusFilter": "Status sengketa",
+    "allStatuses": "Semua status",
+    "empty": "Gak ada sengketa dengan status ini.",
+    "columns": {
+      "dispute": "Ngebantah",
+      "customer": "Langganan",
+      "project": "Proyek",
+      "raisedBy": "Dibesarkan oleh",
+      "heldBy": "Pemilik sekarang",
+      "status": "Kondisi",
+      "raisedAt": "Dibesarkan pada"
+    },
+    "detail": {
+      "title": "Sengketa {{id}}",
+      "raisedOn": "Diangkat {{date}}",
+      "raisingTitle": "Dibesarkan oleh",
+      "holderTitle": "Pemilik sekarang",
+      "partner": "Mitra",
+      "raisedBy": "Dikirim oleh",
+      "customerName": "Langganan",
+      "mobile": "Hape",
+      "alternateMobile": "Ponsel alternatif",
+      "email": "Email",
+      "project": "Proyek",
+      "reason": "Alasan mereka",
+      "registration": "Pendaftaran",
+      "registeredAt": "Didaftarin di",
+      "referral": "Rujukan",
+      "heldMissing": "Pendaftaran yang dipegang kagak bisa ditemuin.",
+      "resolutionTitle": "Hasilnye",
+      "outcome": "Akibatnye",
+      "note": "Catetan",
+      "decidedBy": "Diputusin ama",
+      "decidedAt": "Diputusin",
+      "newRegistration": "Pendaftaran baru",
+      "decideTitle": "Putusin sengketa ini",
+      "noteLabel": "Catatan yang menjelaskan keputusan (wajib)",
+      "noteRequired": "Tulis catatan buat mutusin.",
+      "uphold": "Tegakkan",
+      "overturn": "Balik",
+      "upholdEffect": "{{holder}} nyimpen pelanggan. Perselisihan udah ditutup dan kagak ada yang berubah.",
+      "overturnEffect": "Perlindungan duplikat {{holder}} berakhir sekarang dan pelanggan terdaftar untuk {{partner}} sebagai pendaftaran baru.",
+      "heldBookedHelp": "Pelanggan ini dipesen lewat pemilik yang sekarang. Batal dulu pemesanan itu (Admin Timpa pendaftaran), trus balikin:",
+      "confirmTitle": "Lu yakin?",
+      "confirmUphold": "Iye, tegakin",
+      "confirmOverturn": "Iye, jungkir balik",
+      "back": "Balik ke Perselisihan"
+    }
   }
 }

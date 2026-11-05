@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Oshemerire",
-    "PENDING": "Tikikabire"
+    "PENDING": "Tikikabire",
+    "CANCELLED": "Esaziibwemu"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Rekura oburinzi oburikugarukagaruka kare",
-    "REASSIGN_PARTNER": "Garuka ohe ondiijo munywani waawe"
+    "REASSIGN_PARTNER": "Garuka ohe ondiijo munywani waawe",
+    "CANCEL_BOOKING": "Shazamu okushaba"
   },
   "dataType": {
     "TEXT": "Ekihandiiko",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Omutegyeki mukuru",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Kikahamibwa",
+    "CANCELLED": "Esaziibwemu"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Ekirikugambwaho",
+    "DISPUTED": "Ekirikuhakanisibwa"
+  },
+  "disputeStatus": {
+    "OPEN": "Kugambiriraho",
+    "UPHELD": "Kihamibwe",
+    "OVERTURNED": "Kihindwirwe",
+    "WITHDRAWN": "Kuihwaho"
   }
 }

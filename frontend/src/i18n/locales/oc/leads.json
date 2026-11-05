@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Reservat",
-    "pending": "En espèra"
+    "pending": "En espèra",
+    "status": {
+      "CONFIRMED": "Reservat",
+      "CANCELLED": "Reservacion anullada"
+    }
   },
   "assign": {
     "unassigned": "Non assignat",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Cap de projècte encara (pas referit)",
-    "notInList": "{{project}} (pas dins la lista dels projèctes)"
+    "notInList": "{{project}} (pas dins la lista dels projèctes)",
+    "protectionDays_one": "{{count}} -proteccion de jorns",
+    "protectionDays_other": "{{count}} -proteccion de jorns"
   },
   "journey": {
     "customer": "Client",
@@ -76,7 +82,14 @@
     "progressHistory": "Istoric de progrès",
     "timesIn": "(còps dins {{timezone}} )",
     "backToMyLeads": "Tornar a mos indicis",
-    "editLead": "Modificar lo cap"
+    "editLead": "Modificar lo cap",
+    "disputeBanner": "Un autre partenari a contestat la proprietat d'aqueste client. Un administrator Leadrat lo revisa - vòstra proteccion demòra en plaça fins que decidisson.",
+    "booking": "Reservacion",
+    "commission": "Comission, comandar, perpetracion",
+    "notBooked": "Pas reservat",
+    "cancelledOn": "Anullat lo {{date}} .",
+    "cancelReason": "Rason: {{reason}}",
+    "cancelledHint": "Lo constructor a anullat la reservacion - la proprietat operacionala es de retorn amb vos e l'elegibilitat a la comission es anullada. Es restaurat se lo plomb es reservat de nòu."
   },
   "referral": {
     "NOT_REFERRED": "Pas referit (pas de projècte)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Lo constructor acceptèt la referéncia",
       "REFERRAL_REJECTED": "Lo constructor a refusat la referéncia. Rason: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "L'administrator a publicat la proteccion de doble lèu. Rason: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "L'administrator a reassignat l'inscripcion de {{from}} a {{to}} . Rason: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "L'administrator a reassignat l'inscripcion de {{from}} a {{to}} . Rason: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Una temptativa d'inscripcion en doble d'un autre partenari foguèt refusada",
+      "BOOKING_CANCELLED": "Reservacion anullada. Rason: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "La proprietat operacionala tornada al partenari",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "L'admissibilitat a la comission anullada amb la reservacion",
+      "COMMISSION_ELIGIBILITY_RESTORED": "L'elegibilitat a la comission restablida per la nòva reservacion",
+      "OWNERSHIP_DISPUTE_RAISED": "Un autre partenari a contestat la proprietat d'aqueste client - un administrator Leadrat lo revisarà",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Lo litigi de proprietat d'aqueste client es estat retirat - vòstra proprietat es invariada",
+      "OWNERSHIP_DISPUTE_UPHELD": "Lo litigi de proprietat d'aqueste client es estat revisat - vòstra proprietat es confirmada",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Enregistrat après que vòstre litigi de proprietat foguèt decidit en vòstre favor. Nòta : {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "La proteccion s'acabèt: un litigi de proprietat foguèt decidit en favor d'un autre partenari. Nòta : {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Aqueste numèro de telefòn es pas valid per {{country}} .",
     "COUNTRY_MISMATCH": "Seleccionatz lo còde de país corrècte.",
     "NOT_MOBILE": "Picatz un numèro de telefòn mobil, pas un telefòn fixe."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Elegible a la comission",
+      "PENDING": "Comission en cors",
+      "CANCELLED": "Comission anullada"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Atribuit a vos",
+      "DISPUTED": "Atribucion contestada"
+    }
+  },
+  "result": {
+    "none": "Cap de resultat d'inscripcion a mostrar. Enregistratz un client potencial d'en primièr.",
+    "acceptedTitle": "Lo plomb enregistrat",
+    "rejectedTitle": "Lo plomb pas enregistrat",
+    "protectionWindow": "Fenèstra de proteccion",
+    "protectedUntil": "Protegit fins a",
+    "openLead": "Plomb dobèrt",
+    "addAnother": "Apondre un autre lead",
+    "duplicate": "Duplicat - ja protegit",
+    "duplicateHint": "Aqueste client es ja protegit per aqueste projècte per una autra inscripcion, alara poguèt pas èsser enregistrat per vos.",
+    "existingProtectedUntil": "Inscripcion existenta protegida fins a"
+  },
+  "disputes": {
+    "title": "Mas disputas",
+    "intro": "De litigis de proprietat que pausètz pels clients que foguèron refusats coma de doble. Un administrator Leadrat ne revisa cadun.",
+    "empty": "Avètz pas pausat cap de disputa. Se un client qu'avètz portat es refusat coma un doble, lo podètz contestar a partir del resultat de l'inscripcion.",
+    "columns": {
+      "dispute": "Disputar",
+      "reason": "Vòstra rason",
+      "outcome": "Resultat"
+    },
+    "status": {
+      "OPEN": "En examen",
+      "UPHELD": "Pas a vòstre favor",
+      "OVERTURNED": "Decidit en vòstre favor",
+      "WITHDRAWN": "Retirat"
+    },
+    "awaitingReview": "En espèra de la revista d'administrator",
+    "openNewLead": "Dobrissètz vòstre lead {{id}}",
+    "withdraw": "Retirar",
+    "withdrawConfirm": "Retirar vòstre litigi per {{name}} ? La proprietat actuala demòra coma es.",
+    "raise": "Disputa de proprietat",
+    "raiseTitle": "Disputa de proprietat",
+    "raiseHint": "S'aqueste client es vengut a vos primièr, explicatz perqué. Un administrator Leadrat lo revisarà; se decidisson en vòstre favor, lo lead es enregistrat per vos.",
+    "reasonLabel": "Perqué aqueste client es vòstre?",
+    "reasonMin_one": "Al mens {{count}} caractèr.",
+    "reasonMin_other": "Al mens {{count}} caractèrs.",
+    "submit": "Mandar la disputa",
+    "notProtected": "Degun ten pas mai de proteccion sus aqueste client per aqueste projècte - podètz enregistrar lo client client ara.",
+    "raised": "Lo litigi {{id}} mandat per examen.",
+    "viewAll": "Veire mos disputas"
+  },
+  "dashboard": {
+    "title": "Tablèu de bòrd",
+    "period": "Periòde",
+    "lastDays_one": "{{count}} jorn",
+    "lastDays_other": "{{count}} jorns",
+    "emptyTitle": "Benvengut! Avètz pas encara de pistas.",
+    "emptyHint": "Enregistratz vòstre primièr client potencial - vòstre pipeline, vòstras reservacions e vòstres deadlines de proteccion apareisseràn aicí.",
+    "tiles": {
+      "leads": "Total de clients potencials",
+      "newInPeriod_one": "{{count}} novèl dins aqueste periòde",
+      "newInPeriod_other": "{{count}} novèl dins aqueste periòde",
+      "accepted": "Acceptat",
+      "booked": "Reservat",
+      "bookedInPeriod_one": "{{count}} reservat dins aqueste periòde",
+      "bookedInPeriod_other": "{{count}} reservat dins aqueste periòde",
+      "conversion": "Conversion",
+      "conversionHint": "Los clients potencials reservats coma una part dels clients potencials acceptats",
+      "protectedNow": "Protegit ara",
+      "expiringSoon_one": "Proteccion s'acaba en {{count}} jorn",
+      "expiringSoon_other": "Proteccion s'acabant en {{count}} jorns",
+      "disputedNow": "Disputat per d'autres",
+      "disputedNowHint": "Vòstres clients potencials amb un litigi de proprietat dobèrt d'un autre partenari",
+      "commissionEligible": "Elegible a la comission",
+      "commissionCancelled_one": "{{count}} anullat",
+      "commissionCancelled_other": "{{count}} anullat"
+    },
+    "chart": {
+      "title_one": "Inscripcions e reservacions per jorn - darrièr {{count}} jorn",
+      "title_other": "Inscripcions e reservacions per jorn - darrièrs {{count}} jorns",
+      "registrations": "Inscripcions",
+      "bookings": "Reservacions"
+    },
+    "byStage": "Clids per estatut",
+    "bySource": "Clids per font",
+    "byReferral": "Clids per estatut de referéncia",
+    "myDisputes": "Disputas que pausètz",
+    "noDisputes": "Cap de disputas susvelhadas.",
+    "unknown": "Pas definit",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM extèrne (simulat)",
+      "PARTNER_CRM": "Ajustat per vòstra còla",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integracion",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Proteccion expirant dins lo {{count}} jorn seguent",
+    "expiringTitle_other": "Proteccion expirant dins los {{count}} jorns venents",
+    "expiringEmpty": "Cap de plomb pèrd pas sa proteccion dins aquesta fenèstra."
   }
 }

@@ -9,7 +9,13 @@ const projectSchema = new mongoose.Schema(
     name: { type: String, required: true, trim: true },
     builderId: { type: String, required: true, index: true },
     city: { type: String, default: '' },
-    status: { type: String, enum: ['ACTIVE', 'INACTIVE'], default: 'ACTIVE' }
+    status: { type: String, enum: ['ACTIVE', 'INACTIVE'], default: 'ACTIVE' },
+    // Duplicate-protection window for this project in days (section 62);
+    // null = the global Settings.duplicateProtectionDays.
+    protectionDays: { type: Number, default: null, min: 1, max: 3650 },
+    // Which identifiers count as "the same person" for this project
+    // (section 62); unset = the global Settings.duplicateMatchFields.
+    duplicateMatchFields: { type: [String], default: undefined }
   },
   { timestamps: true }
 );

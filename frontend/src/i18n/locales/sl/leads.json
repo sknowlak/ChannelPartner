@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Rezervirano",
-    "pending": "V teku"
+    "pending": "V teku",
+    "status": {
+      "CONFIRMED": "Rezervirano",
+      "CANCELLED": "Rezervacija preklicana"
+    }
   },
   "assign": {
     "unassigned": "Nedodeljen",
@@ -58,7 +62,11 @@
   },
   "project": {
     "none": "Ni še nobenega projekta (ni napoten)",
-    "notInList": "{{project}} (ni na seznamu projektov)"
+    "notInList": "{{project}} (ni na seznamu projektov)",
+    "protectionDays_one": "{{count}} -dnevna zaščita",
+    "protectionDays_two": "{{count}} -dnevna zaščita",
+    "protectionDays_few": "{{count}} -dnevna zaščita",
+    "protectionDays_other": "{{count}} -dnevna zaščita"
   },
   "journey": {
     "customer": "Stranka",
@@ -76,7 +84,14 @@
     "progressHistory": "Zgodovina napredka",
     "timesIn": "(časi v {{timezone}} )",
     "backToMyLeads": "Nazaj na Moje potencialne stranke",
-    "editLead": "Urejanje potencialne stranke"
+    "editLead": "Urejanje potencialne stranke",
+    "disputeBanner": "Drugi partner je oporekal lastništvu te stranke. Skrbnik Leadrat ga pregleduje - vaša zaščita ostane na mestu, dokler se ne odloči.",
+    "booking": "Rezervacija",
+    "commission": "Komisija",
+    "notBooked": "Ni rezervirano",
+    "cancelledOn": "Preklicano {{date}} .",
+    "cancelReason": "Razlog: {{reason}}",
+    "cancelledHint": "Graditelj je preklical rezervacijo – operativno lastništvo je spet pri vas in upravičenost do provizije je preklicana. Obnovi se, če je prednost ponovno rezervirana."
   },
   "referral": {
     "NOT_REFERRED": "Ni navedeno (ni projekta)",
@@ -164,7 +179,17 @@
       "REFERRAL_ACCEPTED": "Graditelj je priporočilo sprejel",
       "REFERRAL_REJECTED": "Graditelj je napotnico zavrnil. Razlog: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Skrbnik je predčasno izdal zaščito pred dvojniki. Razlog: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Skrbnik je predodelil registracijo iz {{from}} v {{to}} . Razlog: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Skrbnik je predodelil registracijo iz {{from}} v {{to}} . Razlog: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Poskus dvojne registracije drugega partnerja je bil zavrnjen",
+      "BOOKING_CANCELLED": "Rezervacija preklicana. Razlog: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operativno lastništvo vrnjeno partnerju",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Upravičenost do provizije preklicana z rezervacijo",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Upravičenost provizije za novo rezervacijo je obnovljena",
+      "OWNERSHIP_DISPUTE_RAISED": "Drug partner je oporekal lastništvu te stranke – skrbnik Leadrat ga bo pregledal",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Lastniški spor za to stranko je bil umaknjen – vaše lastništvo je nespremenjeno",
+      "OWNERSHIP_DISPUTE_UPHELD": "Spor glede lastništva te stranke je bil pregledan – vaše lastništvo je potrjeno",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Registrirano po tem, ko je bil vaš spor glede lastništva razsojen v vašo korist. Opomba: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Varstvo se je končalo: lastninski spor je bil odločen v korist drugega družbenika. Opomba: {{note}}"
     }
   },
   "columnsPanel": {
@@ -188,5 +213,124 @@
     "INVALID_FOR_COUNTRY": "Ta telefonska številka ni veljavna za {{country}} .",
     "COUNTRY_MISMATCH": "Izberite pravilno kodo države.",
     "NOT_MOBILE": "Vnesite mobilno številko, ne stacionarne."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komisija upravičena",
+      "PENDING": "Komisija v teku",
+      "CANCELLED": "Komisija preklicana"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Pripisano vam",
+      "DISPUTED": "Pripis sporen"
+    }
+  },
+  "result": {
+    "none": "Ni rezultatov registracije za prikaz. Najprej registrirajte potencialno stranko.",
+    "acceptedTitle": "Potencialna stranka registrirana",
+    "rejectedTitle": "Potencialna stranka ni registrirana",
+    "protectionWindow": "Zaščitno okno",
+    "protectedUntil": "Zaščiteno do",
+    "openLead": "Odprite Lead",
+    "addAnother": "Dodajte drugo možno stranko",
+    "duplicate": "Dvojnik - že zaščiten",
+    "duplicateHint": "Ta stranka je za ta projekt že zaščitena z drugo registracijo, zato je ni bilo mogoče registrirati namesto vas.",
+    "existingProtectedUntil": "Obstoječa registracija zaščitena do"
+  },
+  "disputes": {
+    "title": "Moji spori",
+    "intro": "Lastniški spori, ki ste jih sprožili za stranke, ki so bili zavrnjeni kot dvojniki. Skrbnik Leadrat pregleda vsakega.",
+    "empty": "Niste sprožili nobenih sporov. Če je stranka, ki ste jo pripeljali, zavrnjena kot dvojnik, jo lahko izpodbijate iz rezultata registracije.",
+    "columns": {
+      "dispute": "Spor",
+      "reason": "Vaš razlog",
+      "outcome": "Izid"
+    },
+    "status": {
+      "OPEN": "V pregledu",
+      "UPHELD": "Ne v vašo korist",
+      "OVERTURNED": "Odločil v vašo korist",
+      "WITHDRAWN": "umaknjen"
+    },
+    "awaitingReview": "Čakam na skrbniški pregled",
+    "openNewLead": "Odprite potencialno stranko {{id}}",
+    "withdraw": "Umakni se",
+    "withdrawConfirm": "Želite umakniti spor za {{name}} ? Sedanje lastništvo ostaja takšno kot je.",
+    "raise": "Spor glede lastništva",
+    "raiseTitle": "Spor glede lastništva",
+    "raiseHint": "Če je ta stranka prva prišla k vam, pojasnite, zakaj. Skrbnik Leadrat ga bo pregledal; če se odločijo v vašo korist, se vodi za vas registrira.",
+    "reasonLabel": "Zakaj je ta stranka vaša?",
+    "reasonMin_one": "Najmanj {{count}} znak.",
+    "reasonMin_two": "Najmanj {{count}} znakov.",
+    "reasonMin_few": "Najmanj {{count}} znakov.",
+    "reasonMin_other": "Najmanj {{count}} znakov.",
+    "submit": "Pošlji spor",
+    "notProtected": "Nihče več ne ščiti te stranke za ta projekt - potencialno stranko lahko registrirate zdaj.",
+    "raised": "Spor {{id}} poslan v pregled.",
+    "viewAll": "Poglej moje spore"
+  },
+  "dashboard": {
+    "title": "Nadzorna plošča",
+    "period": "Pika",
+    "lastDays_one": "{{count}} dan",
+    "lastDays_two": "{{count}} dni",
+    "lastDays_few": "{{count}} dni",
+    "lastDays_other": "{{count}} dni",
+    "emptyTitle": "Dobrodošli! Nimate še nobenih potencialnih strank.",
+    "emptyHint": "Registrirajte svojo prvo potencialno stranko – tukaj se bodo prikazali vaš načrt, rezervacije in roki zaščite.",
+    "tiles": {
+      "leads": "Skupaj vodi",
+      "newInPeriod_one": "{{count}} novih v tem obdobju",
+      "newInPeriod_two": "{{count}} novih v tem obdobju",
+      "newInPeriod_few": "{{count}} novih v tem obdobju",
+      "newInPeriod_other": "{{count}} novih v tem obdobju",
+      "accepted": "Sprejeto",
+      "booked": "Rezervirano",
+      "bookedInPeriod_one": "{{count}} rezerviranih v tem obdobju",
+      "bookedInPeriod_two": "{{count}} rezerviranih v tem obdobju",
+      "bookedInPeriod_few": "{{count}} rezerviranih v tem obdobju",
+      "bookedInPeriod_other": "{{count}} rezerviranih v tem obdobju",
+      "conversion": "Pretvorba",
+      "conversionHint": "Rezervirane potencialne stranke kot delež sprejetih potencialnih strank",
+      "protectedNow": "Zaščiteno zdaj",
+      "expiringSoon_one": "Zaščita se konča čez {{count}} dan",
+      "expiringSoon_two": "Zaščita se konča čez {{count}} dni",
+      "expiringSoon_few": "Zaščita se konča čez {{count}} dni",
+      "expiringSoon_other": "Zaščita se konča čez {{count}} dni",
+      "disputedNow": "Izpodbijajo drugi",
+      "disputedNowHint": "Vaši potencialni kupci z odprtim lastniškim sporom drugega partnerja",
+      "commissionEligible": "Komisija upravičena",
+      "commissionCancelled_one": "{{count}} preklicanih",
+      "commissionCancelled_two": "{{count}} preklicanih",
+      "commissionCancelled_few": "{{count}} preklicanih",
+      "commissionCancelled_other": "{{count}} preklicanih"
+    },
+    "chart": {
+      "title_one": "Registracije in rezervacije na dan - zadnji {{count}} dan",
+      "title_two": "Registracije in rezervacije na dan - zadnjih {{count}} dni",
+      "title_few": "Registracije in rezervacije na dan - zadnjih {{count}} dni",
+      "title_other": "Registracije in rezervacije na dan - zadnjih {{count}} dni",
+      "registrations": "Registracije",
+      "bookings": "rezervacije"
+    },
+    "byStage": "Vodi po statusu",
+    "bySource": "Vodi po viru",
+    "byReferral": "Vodi po statusu napotitve",
+    "myDisputes": "Spori, ki ste jih sprožili",
+    "noDisputes": "Brez sporov.",
+    "unknown": "Ni nastavljeno",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Zunanji CRM (simuliran)",
+      "PARTNER_CRM": "Dodala vaša ekipa",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integracija",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Zaščita poteče čez {{count}} dan",
+    "expiringTitle_two": "Zaščita poteče v naslednjih {{count}} dneh",
+    "expiringTitle_few": "Zaščita poteče v naslednjih {{count}} dneh",
+    "expiringTitle_other": "Zaščita poteče v naslednjih {{count}} dneh",
+    "expiringEmpty": "V tem oknu noben svinec ne izgubi zaščite."
   }
 }

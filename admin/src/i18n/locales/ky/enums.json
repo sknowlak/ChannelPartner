@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Жарамдуу",
-    "PENDING": "Күтүүдө"
+    "PENDING": "Күтүүдө",
+    "CANCELLED": "Жокко чыгарылды"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Дубликат коргоону эрте чыгарыңыз",
-    "REASSIGN_PARTNER": "Башка өнөктөшкө дайындоо"
+    "REASSIGN_PARTNER": "Башка өнөктөшкө дайындоо",
+    "CANCEL_BOOKING": "Ээлеп коюуну жокко чыгаруу"
   },
   "dataType": {
     "TEXT": "Текст",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Супер админ",
     "ADMIN": "Админ"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Ырасталды",
+    "CANCELLED": "Жокко чыгарылды"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Атрибуттуу",
+    "DISPUTED": "Талаштуу"
+  },
+  "disputeStatus": {
+    "OPEN": "Open",
+    "UPHELD": "Каралды",
+    "OVERTURNED": "оодарылды",
+    "WITHDRAWN": "алынып салынды"
   }
 }

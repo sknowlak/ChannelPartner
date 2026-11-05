@@ -49,8 +49,73 @@
       "newPartnerId": "Nouvo ID Partner",
       "reason": "rezon (obligatwar)",
       "apply": "aplik ranplasman",
-      "applying": "pe fer laplikasyon..."
+      "applying": "pe fer laplikasyon...",
+      "cancelBookingHint": "kennsel i mark sa booking ek son komisyon koman kennsel, i retourn propriyete operasyonnel avek sa partener, e i les sa mason rezerv sa lead ankor.",
+      "cancelBookingConfirm": "kennsel sa rezervasyon? son konmisyon i ganny kennsel osi. sa i ganny anrezistre avek ou non ek rezon."
     },
-    "timelineTitle": "Dele letan Odit (sa lanrezistreman)"
+    "timelineTitle": "Dele letan Odit (sa lanrezistreman)",
+    "bookingStatus": "Stati Rezervasyon",
+    "commissionAttribution": "Atribisyon Komisyon",
+    "disputeOpen": "en diskisyon lo propriyete i ouver lo sa kliyan - en lot partener i dir i pour zot. i ganny deside lo paz bann diskisyon.",
+    "viewDisputes": "vwar bann diskisyon",
+    "cancellation": {
+      "title": "rezervasyon in ganny kennsel",
+      "hint": "sa rezervasyon ek son komisyon i ganny kennsel; propriyete operasyonnel i retourn avek sa partener e sa mason i kapab rezerv sa lead ankor.",
+      "at": "kennsel a",
+      "by": "kennsel par",
+      "reason": "Rezon"
+    }
+  },
+  "disputes": {
+    "title": "bann diskisyon lo propriyete",
+    "hint": "en partener ki son lanrezistreman in ganny rezete koman en doub i kapab dispit lekel ki propriyeter sa kliyan. revwar tou le de kote e deside.",
+    "statusFilter": "Stati diskisyon",
+    "allStatuses": "tou bann stati",
+    "empty": "napa okenn diskisyon avek sa stati.",
+    "columns": {
+      "dispute": "Dispit",
+      "customer": "Konsomater",
+      "project": "Proze",
+      "raisedBy": "Leve par",
+      "heldBy": "propriyeter aktyel",
+      "status": "Stati",
+      "raisedAt": "Leve lo"
+    },
+    "detail": {
+      "title": "Dispute {{id}}",
+      "raisedOn": "Raise {{date}}",
+      "raisingTitle": "Leve par",
+      "holderTitle": "propriyeter aktyel",
+      "partner": "Konpany",
+      "raisedBy": "soumet par",
+      "customerName": "Konsomater",
+      "mobile": "Telefonn portab",
+      "alternateMobile": "mobil alternativ",
+      "email": "imel",
+      "project": "Proze",
+      "reason": "Zot rezon",
+      "registration": "Lanrezistreman",
+      "registeredAt": "anrezistre lo",
+      "referral": "referans",
+      "heldMissing": "lanrezistreman ki ti ganny garde pa ti kapab ganny trouve.",
+      "resolutionTitle": "Desizyon",
+      "outcome": "Rezilta",
+      "note": "Not",
+      "decidedBy": "deside par",
+      "decidedAt": "deside lo",
+      "newRegistration": "Nouvo lanrezistreman",
+      "decideTitle": "desid sa diskisyon",
+      "noteLabel": "not ki eksplik desizyon (oblize)",
+      "noteRequired": "ekrir en not pou deside.",
+      "uphold": "soutenir",
+      "overturn": "ranverse",
+      "upholdEffect": "{{holder}} i gard sa kliyan. sa diskisyon in fini e napa nanryen ki sanze.",
+      "overturnEffect": "proteksyon doub {{holder}} i fini la konmela e kliyan in anrezistre pour {{partner}} koman en nouvo lanrezistreman.",
+      "heldBookedHelp": "sa kliyan in ganny rezerve atraver propriyeter aktyel. kennsel sa rezervasyon avan (Admin Override lo lanrezistreman), apre ranverse:",
+      "confirmTitle": "ou asire?",
+      "confirmUphold": "wi, soutenir",
+      "confirmOverturn": "wi, ranverse",
+      "back": "retourn lo bann diskisyon"
+    }
   }
 }

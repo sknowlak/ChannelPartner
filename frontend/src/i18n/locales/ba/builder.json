@@ -30,7 +30,8 @@
       "registered": "Теркәлгән"
     },
     "booked": "Бронировать",
-    "empty": "Әлегә йүнәлтмәләр юҡ."
+    "empty": "Әлегә йүнәлтмәләр юҡ.",
+    "bookingCancelled": "Бронирование отменено"
   },
   "detail": {
     "customer": "Клиент",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Бронирование раҫланды.",
       "accepted": "Йүнәлтмә ҡабул ителә.",
-      "rejected": "Йүнәлтмә кире ҡағыла."
+      "rejected": "Йүнәлтмә кире ҡағыла.",
+      "bookingCancelled": "Бронирование отменено."
     },
-    "backToReferrals": "Йүнәлтмәләргә кире ҡайтыу"
+    "backToReferrals": "Йүнәлтмәләргә кире ҡайтыу",
+    "bookingCancelled": "Бронирование отменено",
+    "cancelBooking": "Бронированиены юҡҡа сығарыу",
+    "cancelReasonLabel": "Отмена сәбәбе (партнерға күрһәтелә) *",
+    "cancelBookingHint": "Оператив милекселек партнерға ҡайта һәм уларҙы комиссия хоҡуғы юҡҡа сығарыла. Лидты һуңыраҡ яңынан заказ бирергә мөмкин.",
+    "cancelBookingConfirm": "Бронированиены юҡҡа сығарыу"
   },
   "history": {
     "title": "Тарих",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Комиссия хоҡуғы булдырылған",
       "HANDOVER_COMPLETED": "Тапшырыу тамамланды",
       "ADMIN_PROTECTION_RELEASED": "Админ дубликаттар һаҡлауҙы иртә сығарҙы. Сәбәп: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Админ теркәүҙе {{from}} -тан {{to}} -ға үҙгәртте. Сәбәп: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Админ теркәүҙе {{from}} -тан {{to}} -ға үҙгәртте. Сәбәп: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Икенсе партнер тарафынан ҡабатланған теркәү тырышлығы кире ҡағыла",
+      "BOOKING_CANCELLED": "Бронирование отменено. Сәбәп: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Оператив милекселек партнерға ҡайтарылды",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Комиссия хоҡуғы бронирование менән юҡҡа сығарылды",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Яңы бронирование өсөн комиссия хоҡуғы тергеҙелде"
     }
   }
 }

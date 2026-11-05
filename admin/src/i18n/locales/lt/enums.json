@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Tinkamas",
-    "PENDING": "Laukiama"
+    "PENDING": "Laukiama",
+    "CANCELLED": "Atšaukta"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Iš anksto atleiskite pasikartojančią apsaugą",
-    "REASSIGN_PARTNER": "Perskirti kitam partneriui"
+    "REASSIGN_PARTNER": "Perskirti kitam partneriui",
+    "CANCEL_BOOKING": "Atšaukti užsakymą"
   },
   "dataType": {
     "TEXT": "Tekstas",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super administratorius",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Patvirtinta",
+    "CANCELLED": "Atšaukta"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Priskiriama",
+    "DISPUTED": "Ginčijamas"
+  },
+  "disputeStatus": {
+    "OPEN": "Atidaryti",
+    "UPHELD": "Patvirtinta",
+    "OVERTURNED": "Apvirto",
+    "WITHDRAWN": "Atšauktas"
   }
 }

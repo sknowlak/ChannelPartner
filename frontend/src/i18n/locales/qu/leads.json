@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Reservado",
-    "pending": "Kaqraq"
+    "pending": "Kaqraq",
+    "status": {
+      "CONFIRMED": "Reservado",
+      "CANCELLED": "Reserva cancelasqa"
+    }
   },
   "assign": {
     "unassigned": "Mana asignasqa",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Manaraqmi proyecto kanraqchu (mana referidochu) .",
-    "notInList": "{{project}} (mana proyecto lista nisqapichu)"
+    "notInList": "{{project}} (mana proyecto lista nisqapichu)",
+    "protectionDays_one": "{{count}} -p'unchaw amachay",
+    "protectionDays_other": "{{count}} -p'unchaw amachay"
   },
   "journey": {
     "customer": "Rantiq",
@@ -76,7 +82,14 @@
     "progressHistory": "Ñawpaqman puriymanta Willakuy",
     "timesIn": "(tiempokuna {{timezone}} nisqapi)",
     "backToMyLeads": "Kutiy pusaqniykunaman",
-    "editLead": "Llamk'apuy Umalliq"
+    "editLead": "Llamk'apuy Umalliq",
+    "disputeBanner": "Huk sociopas kay rantiqpa dueñon kasqanmantam atipanakusqa. Huk Leadrat kamachiq chayta qhawachkan - harkakuyniyki maychus kananpi qhipakuchkan paykuna tanteanankukama.",
+    "booking": "Reservacion",
+    "commission": "Kamachiy",
+    "notBooked": "Mana reservasqachu",
+    "cancelledOn": "{{date}} p'unchawpi qullusqa.",
+    "cancelReason": "Razón: {{reason}}",
+    "cancelledHint": "Wasi ruwaqmi reservacionta cancelarqa - operativo propiedad qamwan kutimun chaymanta comisión eligibilidad cancelasqa. Chayqa kutichisqa kan sichus chay plomo kaqmanta reservasqa kanman chayqa."
   },
   "referral": {
     "NOT_REFERRED": "Mana referido (mana proyecto) .",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Constructorqa chay referenciata chaskirqa",
       "REFERRAL_REJECTED": "Builder mana chaskirqachu chay referenciata. Razón: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin iskay kuti hark'ayta ñawpaqmanta lluqsichirqan. Razón: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin qillqakuyta {{from}} kaqmanta {{to}} kaqman wakmanta churarqa. Razón: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin qillqakuyta {{from}} kaqmanta {{to}} kaqman wakmanta churarqa. Razón: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Huk sociopa iskay kuti registro ruwayta munasqanqa mana chaskisqachu karqa",
+      "BOOKING_CANCELLED": "Reserva cancelasqa. Razón: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Propiedad operativa nisqa socioman kutichisqa",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Comisión nisqapaq eligibilidad nisqa reservacionwan cancelasqa",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Comisión nisqapaq eligibilidad nisqa musuq reserva nisqapaq kutichisqa",
+      "OWNERSHIP_DISPUTE_RAISED": "Huk socio kay rantiqpa dueñonmanta ch'aqwasqa - huk Leadrat kamachiq chayta qhawanqa",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Kay rantiqpi dueño kaymanta ch'aqwayqa qichusqa karqan - dueño kasqayki mana tikrasqachu",
+      "OWNERSHIP_DISPUTE_UPHELD": "Kay rantiqpi dueño kaymanta ch'aqway qhawasqa karqa - dueño kasqayki takyasqa",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Dueño kasqaykimanta ch’aqwayniyki allinniykipaq decidisqa kasqan qhepaman registrasqa. Qhaway: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Amachay tukukurqa: huk dueñomanta ch’aqway huk sociopa favorninpi tanteasqa karqa. Qhaway: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Kay telefono yupayqa manam {{country}} nisqapaqchu.",
     "COUNTRY_MISMATCH": "Ama hina kaspa, allin mama llaqtap chikuta akllay.",
     "NOT_MOBILE": "Ama hina kaspa, celular numerota qillqay, manam allpapi telefonotachu."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Comisión nisqaman hina",
+      "PENDING": "Comisión pendiente nisqa",
+      "CANCELLED": "Comisión cancelasqa"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Qamman atribuido",
+      "DISPUTED": "Atribución nisqamanta ch’aqwasqa"
+    }
+  },
+  "result": {
+    "none": "Mana registro resultado rikuchinapaq. Ñawpaqtaqa huk umalliqta qillqay.",
+    "acceptedTitle": "Plomo registrado nisqa",
+    "rejectedTitle": "Plomo mana registradochu",
+    "protectionWindow": "Amachay Ventana",
+    "protectedUntil": "Amachasqa Hasta",
+    "openLead": "Kichasqa Plomo",
+    "addAnother": "Huk Plomota Yapay",
+    "duplicate": "Iskay kuti - waqaychasqaña",
+    "duplicateHint": "Kay rantiq kay proyectopaq wak registrowan waqaychasqaña kachkan, chayrayku mana qampaq registrakuyta atikurqachu.",
+    "existingProtectedUntil": "Kunan kaq registro amachasqa chaykama"
+  },
+  "disputes": {
+    "title": "Ch’aqwayniykuna",
+    "intro": "Dueñomanta ch'aqwaykuna rantiqkunapaq hatarichisqayki chaymanta mana munasqachu iskay kuti hina. Huk Leadrat admin sapankankuta qhawarin.",
+    "empty": "Manam ima ch'aqwaytapas hatarichirqankichu. Sichus huk rantiq apamusqayki mana munasqachu iskay kuti hina, registro resultadomanta ch'aqwayta atinki.",
+    "columns": {
+      "dispute": "Awqanakuy",
+      "reason": "Razonniyki",
+      "outcome": "Tukusqa"
+    },
+    "status": {
+      "OPEN": "Repaso nisqapi",
+      "UPHELD": "Mana favornikipichu",
+      "OVERTURNED": "Favoreykipi decidisqa",
+      "WITHDRAWN": "Retirado"
+    },
+    "awaitingReview": "Suyachkani adminpa qawariyninta",
+    "openNewLead": "Pusaqniykita kichay {{id}}",
+    "withdraw": "Suchuy",
+    "withdrawConfirm": "{{name}} nisqapaq ch'aqwayniykita hurquy ? Kunan dueñon kasqanman hina qhepan.",
+    "raise": "Ch’aqway dueño kaynin",
+    "raiseTitle": "Ch’aqway dueño kaynin",
+    "raiseHint": "Sichus kay rantiq ñawpaqta hamurqasunki chayqa, sut’inchay imarayku chayta. Huk Leadrat kamachiqmi chayta qhawarinqa; sichus favorniykipi decidinku chayqa, plomoqa qanpaqmi registrasqa kashan.",
+    "reasonLabel": "¿Imaraykutaq kay rantiq qampaq?",
+    "reasonMin_one": "{{count}} qillqallapas.",
+    "reasonMin_other": "{{count}} qillqakunallapas.",
+    "submit": "Ch'aqwayta apachiy",
+    "notProtected": "Mana pipas kay rantiqpi hark'ayta kay proyectopaq hap'inchu - kunan umalliqta registrayta atikunki.",
+    "raised": "Ch'aqway {{id}} qhawanapaq apachisqa.",
+    "viewAll": "Ch’aqwayniykunata qhaway"
+  },
+  "dashboard": {
+    "title": "Tabla de mando",
+    "period": "Imay pacha",
+    "lastDays_one": "{{count}} p'unchaw",
+    "lastDays_other": "{{count}} p'unchawkuna",
+    "emptyTitle": "Allinlla chayaykamuy! Manaraqmi pusaqniykikuna kanchu.",
+    "emptyHint": "Ñawpaq umalliqniyki qillqay - gasoductoyki, reservakunayki chaymanta harkakuy p'unchawkuna kaypi rikuchikunqa.",
+    "tiles": {
+      "leads": "Llapan pusaqkuna",
+      "newInPeriod_one": "{{count}} musuq kay pachapi",
+      "newInPeriod_other": "{{count}} musuq kay pachapi",
+      "accepted": "Chaskisqa",
+      "booked": "Reservado",
+      "bookedInPeriod_one": "{{count}} kay pachakunapi reservasqa",
+      "bookedInPeriod_other": "{{count}} kay pachakunapi reservasqa",
+      "conversion": "Tikray",
+      "conversionHint": "Reservasqa pusaqkuna chaskisqa pusaqkunamanta qullqi quy hina",
+      "protectedNow": "Kunan amachasqa",
+      "expiringSoon_one": "{{count}} p'unchawpi tukukuq amachay",
+      "expiringSoon_other": "{{count}} p'unchawkunapi tukukuq amachay",
+      "disputedNow": "Hukkunapa ch’aqwasqan",
+      "disputedNowHint": "Huk sociomanta kichasqa dueño ch'aqwaywan pusasqayki",
+      "commissionEligible": "Comisión nisqaman hina",
+      "commissionCancelled_one": "{{count}} qullusqa",
+      "commissionCancelled_other": "{{count}} qullusqa"
+    },
+    "chart": {
+      "title_one": "Inscripción chaymanta reservakuna sapa p'unchaw - qhipa {{count}} p'unchaw",
+      "title_other": "Inscripción chaymanta reservakuna sapa p'unchaw - qhipa {{count}} p'unchawkuna",
+      "registrations": "Inscripción nisqakuna",
+      "bookings": "Reservacionkuna"
+    },
+    "byStage": "Estado nisqaman hina umallin",
+    "bySource": "Pukyuman hina umallin",
+    "byReferral": "Estado de referencia nisqaman hina umallin",
+    "myDisputes": "Ch’aqwaykuna hatarichisqayki",
+    "noDisputes": "Mana ch’aqwaykuna hatarichisqachu.",
+    "unknown": "Mana churasqachu",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Hawa CRM (simulado) .",
+      "PARTNER_CRM": "Equipoykipa yapasqan",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integración nisqa",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Amachayqa qhipa {{count}} p'unchawpi tukukuchkan",
+    "expiringTitle_other": "Amachayqa qhipa {{count}} p'unchawkunapi tukukun",
+    "expiringEmpty": "Mana mayqin plomopas kay ventanapiqa hark’akuyninta chinkachinchu."
   }
 }

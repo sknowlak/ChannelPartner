@@ -49,8 +49,73 @@
       "newPartnerId": "ID ya Mosangani ya Sika",
       "reason": "Ntina (esengeli) .",
       "apply": "Salelá Override",
-      "applying": "Kosala demande..."
+      "applying": "Kosala demande...",
+      "cancelBookingHint": "Ko annuler e marquer réservation mpe commission na yango lokola annulé, ezongisaka propriété opérationnelle na partenaire, mpe etikaka motongi a réserver lisusu plomb oyo.",
+      "cancelBookingConfirm": "Annuler réservation oyo? Commission na yango e annulé pe. Oyo ezali enregistré na kombo na yo pe raison."
     },
-    "timelineTitle": "Molongo ya ntango ya botali misolo (bokomisi nkombo oyo) ."
+    "timelineTitle": "Molongo ya ntango ya botali misolo (bokomisi nkombo oyo) .",
+    "bookingStatus": "Ezalela ya Réservation",
+    "commissionAttribution": "Attribution ya Commission",
+    "disputeOpen": "Matata ya bozwi ezali polele na client oyo - partenaire mosusu alobi ezali ya bango. Ezwamaka ekateli na lokasa ya Matata.",
+    "viewDisputes": "Talá matata oyo ezali kobima",
+    "cancellation": {
+      "title": "Réservation elongolami",
+      "hint": "Réservation mpe commission na yango elongolami; propriété opérationnelle ezongi na partenaire mpe constructeur akoki ko réserver lisusu lead oyo.",
+      "at": "Annulé na",
+      "by": "Elongolami na",
+      "reason": "Ntina"
+    }
+  },
+  "disputes": {
+    "title": "Matata ya bozwi",
+    "hint": "Partenaire oyo baboyaki enregistrement na ye lokola doublon akoki ko disputer nani azali propriétaire ya client. Talelá ngámbo nyonso mibale mpe zwá ekateli.",
+    "statusFilter": "Ezalela ya matata",
+    "allStatuses": "Ba statuts nionso",
+    "empty": "Matata te na statut oyo.",
+    "columns": {
+      "dispute": "Koswana",
+      "customer": "Kiliya",
+      "project": "Mosala",
+      "raisedBy": "Etombolami na",
+      "heldBy": "Nkolo ya lelo",
+      "status": "Statut",
+      "raisedAt": "Etombolami na"
+    },
+    "detail": {
+      "title": "Matata {{id}}",
+      "raisedOn": "Etombolami {{date}}",
+      "raisingTitle": "Etombolami na",
+      "holderTitle": "Nkolo ya lelo",
+      "partner": "Moninga",
+      "raisedBy": "Epesamaki na",
+      "customerName": "Kiliya",
+      "mobile": "Ya maboko",
+      "alternateMobile": "Mobile alternative",
+      "email": "Email na nzela ya email",
+      "project": "Mosala",
+      "reason": "Ntina na bango",
+      "registration": "Kokomisa nkombo",
+      "registeredAt": "Enregistré na",
+      "referral": "Botindiki",
+      "heldMissing": "Inscription oyo esimbamaki ezwamaki te.",
+      "resolutionTitle": "Ekateli",
+      "outcome": "Resultat",
+      "note": "Likebisi",
+      "decidedBy": "Ekateli na...",
+      "decidedAt": "Azwaki ekateli na ntina na",
+      "newRegistration": "Inscription ya sika",
+      "decideTitle": "Bozwa ekateli ya matata oyo",
+      "noteLabel": "Liyebisi oyo ezali kolimbola ekateli (esengeli) .",
+      "noteRequired": "Komá mwa mokanda mpo na kozwa ekateli.",
+      "uphold": "Bosimba motema",
+      "overturn": "Kobalusa mpe kobalusama",
+      "upholdEffect": "{{holder}} abatelaka kiliya. Matata ekangami mpe eloko mosusu ebongwanaka te.",
+      "overturnEffect": "Bobateli ya {{holder}} ya mbala mibale esili sikoyo mpe kiliya akomisami mpo na {{partner}} lokola bokomisi ya sika.",
+      "heldBookedHelp": "Client oyo azali réservé na nzela ya propriétaire ya lelo. Annuler réservation wana liboso (Admin Override na inscription), sima retourner:",
+      "confirmTitle": "Ozali na ntembe te?",
+      "confirmUphold": "Ɛɛ, simba",
+      "confirmOverturn": "Ɛɛ, kobalusa",
+      "back": "Kozonga na Matata"
+    }
   }
 }

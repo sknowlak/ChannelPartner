@@ -2,6 +2,7 @@ const { verifyToken, issuedBeforePasswordChange } = require('../services/partner
 const Partner = require('../models/Partner');
 const TeamMember = require('../models/TeamMember');
 const { resolvePermissions } = require('../services/roleService');
+const { isRevoked } = require('../services/tokenRevocation');
 
 // Protects the /api/channel-partner/my/* surface - the self-service area a
 // logged-in channel partner (or one of their team members) uses to manage
@@ -38,6 +39,7 @@ async function partnerAuth(req, res, next) {
 
   try {
     const decoded = verifyToken(token);
+    if (await isRevoked(token)) return res.status(401).json({ reason: 'You have been logged out - please log in again' });
     const partner = await Partner.findOne({ partnerId: decoded.partnerId });
     if (!partner || partner.status !== 'ACTIVE') {
       return res.status(401).json({ reason: 'Partner account is not active' });

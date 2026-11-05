@@ -49,8 +49,73 @@
       "newPartnerId": "ID đối tác mới",
       "reason": "Lý do (bắt buộc)",
       "apply": "Áp dụng ghi đè",
-      "applying": "Đang áp dụng..."
+      "applying": "Đang áp dụng...",
+      "cancelBookingHint": "Việc hủy sẽ đánh dấu lượt đặt trước và hoa hồng của lượt đó là đã bị hủy, trả lại quyền sở hữu hoạt động cho đối tác và cho phép người xây dựng đăng ký lại khách hàng tiềm năng này.",
+      "cancelBookingConfirm": "Hủy đặt chỗ này? Hoa hồng của nó cũng bị hủy bỏ. Điều này được ghi lại với tên và lý do của bạn."
     },
-    "timelineTitle": "Tiến trình kiểm tra (đăng ký này)"
+    "timelineTitle": "Tiến trình kiểm tra (đăng ký này)",
+    "bookingStatus": "Tình trạng đặt chỗ",
+    "commissionAttribution": "Phân bổ hoa hồng",
+    "disputeOpen": "Tranh chấp quyền sở hữu đang diễn ra đối với khách hàng này - một đối tác khác nói rằng đó là của họ. Nó được quyết định trên trang Tranh chấp.",
+    "viewDisputes": "Xem tranh chấp",
+    "cancellation": {
+      "title": "Đã hủy đặt chỗ",
+      "hint": "Việc đặt phòng và hoa hồng của nó bị hủy bỏ; Quyền sở hữu hoạt động đã trở lại với đối tác và người xây dựng có thể đăng ký lại khách hàng tiềm năng này.",
+      "at": "Đã hủy vào lúc",
+      "by": "Đã hủy bởi",
+      "reason": "Lý do"
+    }
+  },
+  "disputes": {
+    "title": "Tranh chấp quyền sở hữu",
+    "hint": "Đối tác có đăng ký bị từ chối do trùng lặp có thể tranh chấp ai là người sở hữu khách hàng. Xem xét cả hai bên và quyết định.",
+    "statusFilter": "Tình trạng tranh chấp",
+    "allStatuses": "Tất cả trạng thái",
+    "empty": "Không có tranh chấp với trạng thái này.",
+    "columns": {
+      "dispute": "Tranh luận",
+      "customer": "Khách hàng",
+      "project": "Dự án",
+      "raisedBy": "Tăng lên bởi",
+      "heldBy": "Chủ sở hữu hiện tại",
+      "status": "Trạng thái",
+      "raisedAt": "Tăng lên"
+    },
+    "detail": {
+      "title": "Tranh chấp {{id}}",
+      "raisedOn": "Đã tăng {{date}}",
+      "raisingTitle": "Tăng lên bởi",
+      "holderTitle": "Chủ sở hữu hiện tại",
+      "partner": "Cộng sự",
+      "raisedBy": "Gửi bởi",
+      "customerName": "Khách hàng",
+      "mobile": "Điện thoại di động",
+      "alternateMobile": "Điện thoại di động thay thế",
+      "email": "E-mail",
+      "project": "Dự án",
+      "reason": "Lý do của họ",
+      "registration": "Sự đăng ký",
+      "registeredAt": "Đã đăng ký vào",
+      "referral": "Giới thiệu",
+      "heldMissing": "Không thể tìm thấy đăng ký được tổ chức.",
+      "resolutionTitle": "Phán quyết",
+      "outcome": "kết quả",
+      "note": "Ghi chú",
+      "decidedBy": "Quyết định bởi",
+      "decidedAt": "quyết định",
+      "newRegistration": "Đăng ký mới",
+      "decideTitle": "Quyết định tranh chấp này",
+      "noteLabel": "Ghi chú giải thích quyết định (bắt buộc)",
+      "noteRequired": "Viết một ghi chú để quyết định.",
+      "uphold": "ủng hộ",
+      "overturn": "Lật ngược",
+      "upholdEffect": "{{holder}} giữ chân khách hàng. Tranh chấp đã kết thúc và không có gì thay đổi.",
+      "overturnEffect": "Tính năng bảo vệ trùng lặp của {{holder}} hiện đã kết thúc và khách hàng được đăng ký {{partner}} dưới dạng đăng ký mới.",
+      "heldBookedHelp": "Khách hàng này được đặt thông qua chủ sở hữu hiện tại. Hủy đặt chỗ đó trước (Quản trị viên ghi đè khi đăng ký), sau đó hủy bỏ:",
+      "confirmTitle": "Bạn có chắc không?",
+      "confirmUphold": "Vâng, ủng hộ",
+      "confirmOverturn": "Vâng, lật đổ",
+      "back": "Quay lại Tranh chấp"
+    }
   }
 }

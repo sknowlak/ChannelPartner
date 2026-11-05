@@ -30,6 +30,9 @@ client.interceptors.response.use(
 export const registerPartner = (payload) => client.post('/partners/register', payload);
 export const loginPartner = (username, password) => client.post('/partners/login', { username, password });
 export const getMyProfile = () => client.get('/my/profile');
+// Revokes the token server-side. It is passed explicitly because the caller
+// clears the local session straight away (the interceptor reads storage later).
+export const logoutPartner = (token) => client.post('/my/logout', null, { headers: { Authorization: `Bearer ${token}` } });
 export const updateMyProfile = (payload) => client.patch('/my/profile', payload);
 
 export const listMyRegistrations = () => client.get('/my/registrations');
@@ -51,6 +54,12 @@ export const listAssignableUsers = () => client.get('/my/assignable-users');
 export const listLeadStatuses = () => client.get('/my/lead-statuses');
 export const listProjects = () => client.get('/my/projects');
 export const checkDuplicate = (payload) => client.post('/my/duplicate-check', payload);
+
+// Dashboard and ownership disputes (section 62).
+export const getMyDashboard = (params) => client.get('/my/dashboard', { params });
+export const listMyDisputes = () => client.get('/my/disputes');
+export const raiseDispute = (payload) => client.post('/my/disputes', payload);
+export const withdrawDispute = (disputeId) => client.post(`/my/disputes/${disputeId}/withdraw`);
 export const createLeadStatus = (payload) => client.post('/my/lead-statuses', payload);
 export const updateLeadStatus = (statusId, payload) => client.patch(`/my/lead-statuses/${statusId}`, payload);
 export const deleteLeadStatus = (statusId) => client.delete(`/my/lead-statuses/${statusId}`);

@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Kihandiikirwe",
-    "pending": "Tikikabire"
+    "pending": "Tikikabire",
+    "status": {
+      "CONFIRMED": "Kihandiikirwe",
+      "CANCELLED": "Okushaba kwasazibwamu"
+    }
   },
   "assign": {
     "unassigned": "Tihariho",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Tihariho purojekiti hati (etakagambirweho)",
-    "notInList": "{{project}} (tihariho omu runyiriri rwa purojekiti)"
+    "notInList": "{{project}} (tihariho omu runyiriri rwa purojekiti)",
+    "protectionDays_one": "{{count}} -obukuumi bw'ekiro",
+    "protectionDays_other": "{{count}} -obukuumi bw'ekiro"
   },
   "journey": {
     "customer": "Omuhagizi",
@@ -76,7 +82,14 @@
     "progressHistory": "Ebyafaayo by'entunguuka",
     "timesIn": "(obwire omu {{timezone}} )",
     "backToMyLeads": "Garuka aha bwebembezi bwangye",
-    "editLead": "Tebeekanisa Okwebembera"
+    "editLead": "Tebeekanisa Okwebembera",
+    "disputeBanner": "Ondiijo munywani we ahakaniise obugabe bwa kasitoma ogu. Admin Leadrat ariyo naakishwijuma - oburinzi bwawe nibugumaho kuhisya obu baracwemu.",
+    "booking": "Okubiika",
+    "commission": "Omushoro",
+    "notBooked": "Tikihandiikirwe",
+    "cancelledOn": "Esaziibwemu aha {{date}} .",
+    "cancelReason": "Enshonga: {{reason}}",
+    "cancelledHint": "Omwombeki akashazamu okuhandiika - obugabe bw'okukora bwagaruka naiwe kandi n'okutunga akakiiko kusazibwamu. Nikigarurwaho abarikwebembera baaba baagarukire babuuka."
   },
   "referral": {
     "NOT_REFERRED": "Tikirikworekwa (tihariho purojekiti)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Omwombeki yaikiriize okutwarwa",
       "REFERRAL_REJECTED": "Builder akanga okutwarwa omu irwariro. Enshonga: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin akashohoza oburinzi bwa kabiri kare. Enshonga: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Omutegyeki akagaruka yaaha okwehandikisa kuruga ahari {{from}} kuza ahari {{to}} . Enshonga: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Omutegyeki akagaruka yaaha okwehandikisa kuruga ahari {{from}} kuza ahari {{to}} . Enshonga: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Okugyezaho kwehandikisa emirundi ebiri okwakozirwe ondiijo munywani kukangwa",
+      "BOOKING_CANCELLED": "Okushazamu kwasazibwamu. Enshonga: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Obwebembezi bw'emirimo bukagarukira omunywani",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Okutunga akakiiko kusaziibwemu n'okugura",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Okuhikiiriza akakiiko kugarukiremu ahabw'okuhandiika okusya",
+      "OWNERSHIP_DISPUTE_RAISED": "Ondiijo munywani akahakanisa obugabe bwa kasitoma ogu - omutegyeki Leadrat naija kukishwijuma",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Enkaayana aha bwananyini ahari kasitoma ogu ekagarurwaho - bwananyini bwawe tibuhindukire",
+      "OWNERSHIP_DISPUTE_UPHELD": "Obutaikirizana bwa bwananyini ahari kasitoma ogu bukashwijumwa - bwananyini bwawe buhamibwa",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Ehandiikirwe bwanyima y’okucwamu kwawe aha bwananyini bwawe. Yetegyereze: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Obukuumi bukahwaho: obutaikirizana bw‘obugabe bukacwamu omu rubaju rw‘ondiijo munywani. Yetegyereze: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Enamba y'esimu egi terikukora ahari {{country}} .",
     "COUNTRY_MISMATCH": "Nyabura we toorana koodi y’eihanga ehikire.",
     "NOT_MOBILE": "Nyabura we taasyamu enamba y'esimu, etari y'omu itaka."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Akakiiko karikwikirizibwa",
+      "PENDING": "Akakiiko karikutegyerezibwa",
+      "CANCELLED": "Akakiiko kashaziibwemu"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Kirikugambwaho ahariiwe",
+      "DISPUTED": "Okuhakanisibwa"
+    }
+  },
+  "result": {
+    "none": "Tihariho ebyarugamu omu kwehandikisa eby'okworeka. Handikisa orikwebembera okubanza.",
+    "acceptedTitle": "Okwebembera kwahandiikwa",
+    "rejectedTitle": "Okwebembera tikwahandiikirwe",
+    "protectionWindow": "Edirisa y'okwerinda",
+    "protectedUntil": "Okurindwa Kuhisya 2019.",
+    "openLead": "Okwebembera kwiguraho",
+    "addAnother": "Yongyeraho Ondiijo Omwebembezi",
+    "duplicate": "Okugarukamu - kwaheza kurindwa",
+    "duplicateHint": "Kasitoma ogu yaaheza kurindwa purojekiti egi ahabw’okwehandikisa okundi, n’ahabw’ekyo ekaba etarikubaasa kukuhandiikisa.",
+    "existingProtectedUntil": "Okwehandikisa okuriho kurindwa kuhisya 2019."
+  },
+  "disputes": {
+    "title": "Entaana zangye",
+    "intro": "Enkaayana z’obugabe ezi waareetaho ahabwa bakasitoma ezayangirwe nk’ezirikugarukagaruka. Omutegyeki Leadrat naashwijuma buri kimwe.",
+    "empty": "Tihariho nshonga yoona ei waareetaho. Kasitoma ou wareetsire yaayanga nk'omuhandiiki, noobaasa kukihakanisa kuruga omu byarugamu omu kwehandikisa.",
+    "columns": {
+      "dispute": "Obutikirizana",
+      "reason": "Enshonga yaawe",
+      "outcome": "Ekirarugamu"
+    },
+    "status": {
+      "OPEN": "Ahansi y'okushwijuma",
+      "UPHELD": "Tikiri omu rubaju rwawe",
+      "OVERTURNED": "Okucwamu omu rubaju rwawe",
+      "WITHDRAWN": "Kuihwaho"
+    },
+    "awaitingReview": "Nitutegyereza okushwijuma kwa admin",
+    "openNewLead": "Iguraho okwebembera kwawe {{id}}",
+    "withdraw": "Kurekura",
+    "withdrawConfirm": "Ihaho okuhakana kwawe ahabwa {{name}} ? Obukama oburiho hati nibuguma nk’oku buri.",
+    "raise": "Okuhakanisibwa obw'obukama",
+    "raiseTitle": "Okuhakanisibwa obw'obukama",
+    "raiseHint": "Kasitoma ogu ku araabe yaabandize kwija ahariiwe, shoboorora ahabw’enki. Omutegyeki Leadrat naija kukireeba; ku barikucwamu omu rubaju rwawe, omwebembezi naahandiikwa ahabwawe.",
+    "reasonLabel": "Ahabwenki kasitoma ogu ari waawe?",
+    "reasonMin_one": "Haakiri {{count}} enyuguta.",
+    "reasonMin_other": "Haakiri {{count}} enyuguta.",
+    "submit": "Yohereza Obutaikirizana",
+    "notProtected": "Tihariho orikugaruka kukwaata oburinzi ahari kasitoma ogu ahabwa purojekiti egi - noobaasa kuhandikisa omwebembezi hati.",
+    "raised": "Okuhakana {{id}} kwohereziibwe kugaruka kukyeberwa.",
+    "viewAll": "Reeba obutaikirizana bwangye"
+  },
+  "dashboard": {
+    "title": "Dashibodi",
+    "period": "Akaire",
+    "lastDays_one": "{{count}} ekiro",
+    "lastDays_other": "{{count}} ebiro",
+    "emptyTitle": "Kurikayo! Tihariho obuhabuzi obu oine hati.",
+    "emptyHint": "Handika omureeberezi waawe w'okubanza - omupiira gwawe, okuhandiika n'ebiro by'okukuuma nibiija kworekwa aha.",
+    "tiles": {
+      "leads": "Omubaro gwona",
+      "newInPeriod_one": "{{count}} ekisya omubwire obu",
+      "newInPeriod_other": "{{count}} ekisya omubwire obu",
+      "accepted": "Kyikiriziibwe",
+      "booked": "Kihandiikirwe",
+      "bookedInPeriod_one": "{{count}} kihandiikirwe omubwire obu",
+      "bookedInPeriod_other": "{{count}} kihandiikirwe omubwire obu",
+      "conversion": "Okuhindura",
+      "conversionHint": "Abeebembezi abahandiikirwe nk'omugabo gw'abeebembezi abaikiriziibwe",
+      "protectedNow": "Okurindwa hati",
+      "expiringSoon_one": "Obukuumi oburikuhendera omu {{count}} ekiro",
+      "expiringSoon_other": "Obukuumi oburikuhendera omu {{count}} ebiro",
+      "disputedNow": "Ebirikuhakanisibwa abandi",
+      "disputedNowHint": "Okwebembera kwawe n'okuhakana aha bwananyini kuruga aha munywani waawe ondiijo",
+      "commissionEligible": "Akakiiko karikwikirizibwa",
+      "commissionCancelled_one": "{{count}} kusazibwamu",
+      "commissionCancelled_other": "{{count}} kusazibwamu"
+    },
+    "chart": {
+      "title_one": "Okwehandikisa n'okushaba buri izooba - ekiro ekirikuhererukayo {{count}}",
+      "title_other": "Okwehandikisa n'okushaba buri izooba - ebiro {{count}} ebirikuhererukayo",
+      "registrations": "Okwehandikisa",
+      "bookings": "Okubiika"
+    },
+    "byStage": "Okwebembera kurugirira aha mbeera",
+    "bySource": "Okwebembera entandikwa",
+    "byReferral": "Okwebembera ahabw'embeera y'okutwarwa",
+    "myDisputes": "Obutaikirizana obu waareetaho",
+    "noDisputes": "Tihariho ntaaniso eziteirweho.",
+    "unknown": "Tikiteirweho",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM ey'aheeru (erikugyeragyeranisa)",
+      "PARTNER_CRM": "Kwongyerwa tiimu yaawe",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Okuta omu nkora",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Obukuumi burahwaho omu {{count}} ekiro ekirikurataho",
+    "expiringTitle_other": "Obukuumi burahwaho omu biro {{count}} ebirikukurataho",
+    "expiringEmpty": "Tihariho n’ekyoma ekirikufeerwa oburinzi bwakyo omu dirisa egi."
   }
 }

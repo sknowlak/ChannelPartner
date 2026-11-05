@@ -31,7 +31,8 @@
       "registered": "Registriran"
     },
     "booked": "Rezervirano",
-    "empty": "Još nema preporuka."
+    "empty": "Još nema preporuka.",
+    "bookingCancelled": "Rezervacija otkazana"
   },
   "detail": {
     "customer": "Kupac",
@@ -54,9 +55,15 @@
     "notice": {
       "booked": "Rezervacija potvrđena.",
       "accepted": "Preporuka prihvaćena.",
-      "rejected": "Preporuka odbijena."
+      "rejected": "Preporuka odbijena.",
+      "bookingCancelled": "Rezervacija otkazana."
     },
-    "backToReferrals": "Povratak na preporuke"
+    "backToReferrals": "Povratak na preporuke",
+    "bookingCancelled": "Rezervacija otkazana",
+    "cancelBooking": "Otkaži rezervaciju",
+    "cancelReasonLabel": "Razlog otkazivanja (pokazuje se partneru) *",
+    "cancelBookingHint": "Operativno vlasništvo vraća se partneru i njihova se podobnost za proviziju poništava. Potencijal se može ponovno rezervirati kasnije.",
+    "cancelBookingConfirm": "Otkažite rezervaciju"
   },
   "history": {
     "title": "Povijest",
@@ -87,7 +94,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Podobnost za proviziju stvorena",
       "HANDOVER_COMPLETED": "Primopredaja završena",
       "ADMIN_PROTECTION_RELEASED": "Administrator je ranije pustio zaštitu od dupliciranja. Razlog: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Administrator je promijenio registraciju s {{from}} na {{to}} . Razlog: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Administrator je promijenio registraciju s {{from}} na {{to}} . Razlog: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Pokušaj duple registracije drugog partnera je odbijen",
+      "BOOKING_CANCELLED": "Rezervacija otkazana. Razlog: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operativno vlasništvo vraćeno partneru",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kvalificiranost za proviziju otkazana je s rezervacijom",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ponovno ispunjavanje uvjeta za proviziju za novu rezervaciju"
     }
   }
 }

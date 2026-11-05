@@ -29,7 +29,8 @@
       "registered": "ลงทะเบียนแล้ว"
     },
     "booked": "จองแล้ว",
-    "empty": "ยังไม่มีการอ้างอิง"
+    "empty": "ยังไม่มีการอ้างอิง",
+    "bookingCancelled": "การจองถูกยกเลิก"
   },
   "detail": {
     "customer": "ลูกค้า",
@@ -52,9 +53,15 @@
     "notice": {
       "booked": "ยืนยันการจองแล้ว",
       "accepted": "ยอมรับการอ้างอิงแล้ว",
-      "rejected": "การอ้างอิงถูกปฏิเสธ"
+      "rejected": "การอ้างอิงถูกปฏิเสธ",
+      "bookingCancelled": "การจองถูกยกเลิก"
     },
-    "backToReferrals": "กลับไปที่การอ้างอิง"
+    "backToReferrals": "กลับไปที่การอ้างอิง",
+    "bookingCancelled": "การจองถูกยกเลิก",
+    "cancelBooking": "ยกเลิกการจอง",
+    "cancelReasonLabel": "เหตุผลในการยกเลิก (แสดงต่อพันธมิตร) *",
+    "cancelBookingHint": "ความเป็นเจ้าของในการปฏิบัติงานจะตกเป็นของพันธมิตรและสิทธิ์ในการได้รับค่าคอมมิชชั่นจะถูกยกเลิก ลูกค้าเป้าหมายสามารถจองได้อีกครั้งในภายหลัง",
+    "cancelBookingConfirm": "ยกเลิกการจอง"
   },
   "history": {
     "title": "ประวัติศาสตร์",
@@ -81,7 +88,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "สร้างสิทธิ์คอมมิชชั่นแล้ว",
       "HANDOVER_COMPLETED": "การส่งมอบเสร็จสมบูรณ์",
       "ADMIN_PROTECTION_RELEASED": "ผู้ดูแลระบบเผยแพร่การป้องกันซ้ำล่วงหน้า เหตุผล: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "ผู้ดูแลระบบมอบหมายการลงทะเบียนใหม่จาก {{from}} เป็น {{to}} เหตุผล: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "ผู้ดูแลระบบมอบหมายการลงทะเบียนใหม่จาก {{from}} เป็น {{to}} เหตุผล: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "ความพยายามในการลงทะเบียนซ้ำโดยพันธมิตรรายอื่นถูกปฏิเสธ",
+      "BOOKING_CANCELLED": "การจองถูกยกเลิก เหตุผล: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "ความเป็นเจ้าของในการปฏิบัติงานคืนให้แก่พันธมิตร",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "สิทธิ์ค่าคอมมิชชั่นถูกยกเลิกพร้อมกับการจอง",
+      "COMMISSION_ELIGIBILITY_RESTORED": "คืนสิทธิ์ค่าคอมมิชชั่นสำหรับการจองใหม่แล้ว"
     }
   }
 }

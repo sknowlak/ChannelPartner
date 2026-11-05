@@ -49,8 +49,73 @@
       "newPartnerId": "Bag-ong Partner ID",
       "reason": "Rason (gikinahanglan)",
       "apply": "Ibutang ang Override",
-      "applying": "Nag-aplay..."
+      "applying": "Nag-aplay...",
+      "cancelBookingHint": "Ang pagkansela nagtimaan sa pagpareserba ug sa komisyon niini ingon nga gikansela, ibalik ang pagpanag-iya sa operasyon sa kauban, ug tugotan ang magtutukod nga mag-book kini pag-usab.",
+      "cancelBookingConfirm": "Ikansela kini nga booking? Gikansela usab ang komisyon niini. Gi-log kini sa imong ngalan ug rason."
     },
-    "timelineTitle": "Timeline sa Audit (kini nga pagrehistro)"
+    "timelineTitle": "Timeline sa Audit (kini nga pagrehistro)",
+    "bookingStatus": "Status sa Pag-book",
+    "commissionAttribution": "Komisyon Attribution",
+    "disputeOpen": "Bukas ang panaglalis sa pagpanag-iya niini nga kustomer - ang laing kauban nag-ingon nga ila kini. Gidesisyonan kini sa panid sa Disputes.",
+    "viewDisputes": "Tan-awa ang mga panaglalis",
+    "cancellation": {
+      "title": "Gikansela ang pag-book",
+      "hint": "Ang booking ug ang komisyon niini gikansela; Ang pagpanag-iya sa operasyon nahibalik sa kauban ug ang magtutukod mahimo nga mag-book pag-usab niini nga lead.",
+      "at": "Gikansela sa",
+      "by": "Gikansela ni",
+      "reason": "Rason"
+    }
+  },
+  "disputes": {
+    "title": "Mga Panag-iya sa Panag-iya",
+    "hint": "Ang usa ka kauban kansang rehistro gisalikway ingon usa ka duplicate mahimong makiglalis kung kinsa ang tag-iya sa kustomer. Ribyuha ang duha ka kilid ug pagdesisyon.",
+    "statusFilter": "Status sa panaglalis",
+    "allStatuses": "Tanan nga status",
+    "empty": "Walay mga panaglalis niini nga status.",
+    "columns": {
+      "dispute": "Paglalis",
+      "customer": "Kustomer",
+      "project": "Proyekto",
+      "raisedBy": "Gipadako ni",
+      "heldBy": "Kasamtangang tag-iya",
+      "status": "Status",
+      "raisedAt": "Gipataas sa"
+    },
+    "detail": {
+      "title": "Paglalis {{id}}",
+      "raisedOn": "Gipataas {{date}}",
+      "raisingTitle": "Gipadako ni",
+      "holderTitle": "Kasamtangang tag-iya",
+      "partner": "Kauban",
+      "raisedBy": "Gisumite ni",
+      "customerName": "Kustomer",
+      "mobile": "Mobile",
+      "alternateMobile": "Alternatibo nga mobile",
+      "email": "Email",
+      "project": "Proyekto",
+      "reason": "Ilang rason",
+      "registration": "Pagparehistro",
+      "registeredAt": "Nakarehistro sa",
+      "referral": "Referral",
+      "heldMissing": "Ang gihuptan nga pagparehistro dili makit-an.",
+      "resolutionTitle": "Desisyon",
+      "outcome": "Resulta",
+      "note": "Nota",
+      "decidedBy": "Nakahukom sa",
+      "decidedAt": "Nakahukom sa",
+      "newRegistration": "Bag-ong registration",
+      "decideTitle": "Desisyuni kini nga panaglalis",
+      "noteLabel": "Pahinumdom nga nagpatin-aw sa desisyon (gikinahanglan)",
+      "noteRequired": "Pagsulat og mubo nga sulat aron makahukom.",
+      "uphold": "Pagbarog",
+      "overturn": "Pagbalibad",
+      "upholdEffect": "{{holder}} nagpugong sa kustomer. Ang panaglalis kay sirado na ug wala nay laing mausab.",
+      "overturnEffect": "Ang duplicate nga panalipod ni {{holder}} matapos na karon ug ang kustomer narehistro para sa {{partner}} isip bag-ong rehistrasyon.",
+      "heldBookedHelp": "Kini nga kustomer gi-book pinaagi sa kasamtangan nga tag-iya. Ikansela una kana nga booking (Admin Override sa pagrehistro), unya ibaliwala:",
+      "confirmTitle": "Sigurado ka?",
+      "confirmUphold": "Oo, suportahan",
+      "confirmOverturn": "Oo, balihon",
+      "back": "Balik sa Mga Panagbangi"
+    }
   }
 }

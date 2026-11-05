@@ -30,7 +30,8 @@
       "registered": "Registrá"
     },
     "booked": "Reservá",
-    "empty": "No tin referensia ainda."
+    "empty": "No tin referensia ainda.",
+    "bookingCancelled": "Reservashon kanselá"
   },
   "detail": {
     "customer": "Kliente",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Reservashon konfirmá.",
       "accepted": "Referensia ta wòrdu aseptá.",
-      "rejected": "Referensia rechasá."
+      "rejected": "Referensia rechasá.",
+      "bookingCancelled": "Reservashon kanselá."
     },
-    "backToReferrals": "Bek na Referensianan"
+    "backToReferrals": "Bek na Referensianan",
+    "bookingCancelled": "Reservashon kanselá",
+    "cancelBooking": "Kanselá Reservashon",
+    "cancelReasonLabel": "Motibu pa kanselashon (mustra na e partner) *",
+    "cancelBookingHint": "E propiedat operashonal ta bai bèk na e partner i nan eligibilidat pa komishon ta wòrdu kanselá. E lead por wòrdu reservá atrobe despues.",
+    "cancelBookingConfirm": "Kanselá e reservashon"
   },
   "history": {
     "title": "Historia",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Eligibilidat pa komishon a wòrdu kreá",
       "HANDOVER_COMPLETED": "Entrega kompletá",
       "ADMIN_PROTECTION_RELEASED": "Atministradó a lansa protekshon di duplikado trempan. Motibu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin a reasigná registrashon di {{from}} pa {{to}} . Motibu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin a reasigná registrashon di {{from}} pa {{to}} . Motibu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Un intento di registrashon dupliká di un otro partner a wòrdu rechasá",
+      "BOOKING_CANCELLED": "Reservashon kanselá. Motibu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Propiedat operashonal debolbí na e partner",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Eligibilidat pa komishon kanselá ku e reservashon",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Eligibilidat di komishon a wòrdu restourá pa e reservashon nobo"
     }
   }
 }

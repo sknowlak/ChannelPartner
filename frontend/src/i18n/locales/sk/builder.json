@@ -32,7 +32,8 @@
       "registered": "Registrovaný"
     },
     "booked": "Rezervované",
-    "empty": "Zatiaľ žiadne odporúčania."
+    "empty": "Zatiaľ žiadne odporúčania.",
+    "bookingCancelled": "Rezervácia zrušená"
   },
   "detail": {
     "customer": "Zákazník",
@@ -55,9 +56,15 @@
     "notice": {
       "booked": "Rezervácia potvrdená.",
       "accepted": "Odporúčanie prijaté.",
-      "rejected": "Odporúčanie bolo zamietnuté."
+      "rejected": "Odporúčanie bolo zamietnuté.",
+      "bookingCancelled": "Rezervácia zrušená."
     },
-    "backToReferrals": "Späť na Odporúčania"
+    "backToReferrals": "Späť na Odporúčania",
+    "bookingCancelled": "Rezervácia zrušená",
+    "cancelBooking": "Zrušiť rezerváciu",
+    "cancelReasonLabel": "Dôvod zrušenia (ukázaný partnerovi) *",
+    "cancelBookingHint": "Prevádzkové vlastníctvo prejde späť na partnera a jeho nárok na províziu je zrušený. Vedenie je možné rezervovať neskôr.",
+    "cancelBookingConfirm": "Zrušte rezerváciu"
   },
   "history": {
     "title": "História",
@@ -90,7 +97,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Oprávnenosť Komisie vytvorená",
       "HANDOVER_COMPLETED": "Odovzdanie dokončené",
       "ADMIN_PROTECTION_RELEASED": "Administrátor predčasne uvoľnil ochranu proti duplicite. Dôvod: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Administrátor zmenil pridelenie registrácie z {{from}} na {{to}} . Dôvod: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Administrátor zmenil pridelenie registrácie z {{from}} na {{to}} . Dôvod: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Pokus o duplicitnú registráciu iného partnera bol odmietnutý",
+      "BOOKING_CANCELLED": "Rezervácia zrušená. Dôvod: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Prevádzkové vlastníctvo sa vrátilo partnerovi",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Oprávnenosť na províziu bola zrušená s rezerváciou",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Oprávnenosť na províziu bola obnovená pre novú rezerváciu"
     }
   }
 }

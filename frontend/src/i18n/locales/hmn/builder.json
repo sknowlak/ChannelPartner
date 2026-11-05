@@ -30,7 +30,8 @@
       "registered": "Sau npe"
     },
     "booked": "Booked",
-    "empty": "Tseem tsis tau xa mus."
+    "empty": "Tseem tsis tau xa mus.",
+    "bookingCancelled": "Booking tso tseg"
   },
   "detail": {
     "customer": "Cov neeg siv khoom",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Booking paub tseeb.",
       "accepted": "Kev xa mus lees txais.",
-      "rejected": "Kev xa mus tsis lees paub."
+      "rejected": "Kev xa mus tsis lees paub.",
+      "bookingCancelled": "Booking cancelled."
     },
-    "backToReferrals": "Rov qab mus rau Cov Lus Qhia"
+    "backToReferrals": "Rov qab mus rau Cov Lus Qhia",
+    "bookingCancelled": "Booking tso tseg",
+    "cancelBooking": "Ncua tseg Booking",
+    "cancelReasonLabel": "Yog vim li cas rau kev tso tseg (qhia rau tus khub) *",
+    "cancelBookingHint": "Kev ua tswv cuab rov qab mus rau tus khub thiab lawv qhov kev tsim nyog tau txais txiaj ntsig raug muab tso tseg. Cov hlau lead tuaj yeem rov ua dua tom qab.",
+    "cancelBookingConfirm": "Ncua tseg qhov booking"
   },
   "history": {
     "title": "Keeb kwm",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kev tsim nyog tau txais commission tsim",
       "HANDOVER_COMPLETED": "Kev ua tiav tiav",
       "ADMIN_PROTECTION_RELEASED": "Admin tso tawm duplicate tiv thaiv ntxov. Yog vim li cas: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin reassigned sau npe los ntawm {{from}} rau {{to}} . Yog vim li cas: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin reassigned sau npe los ntawm {{from}} rau {{to}} . Yog vim li cas: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ib qho kev sim sau npe dua los ntawm lwm tus khub raug tsis lees paub",
+      "BOOKING_CANCELLED": "Booking cancelled. Yog vim li cas: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Kev ua tswv cuab rov qab mus rau tus khub",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kev tsim nyog tau txais nyiaj tso tseg nrog rau daim ntawv booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kev tsim nyog tau txais txiaj ntsig rov qab los rau qhov kev booking tshiab"
     }
   }
 }

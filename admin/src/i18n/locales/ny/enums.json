@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Oyenera",
-    "PENDING": "Ikuyembekezera"
+    "PENDING": "Ikuyembekezera",
+    "CANCELLED": "Walephereka"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Tulutsani chitetezo chobwereza msanga",
-    "REASSIGN_PARTNER": "Perekaninso kwa mnzanu wina"
+    "REASSIGN_PARTNER": "Perekaninso kwa mnzanu wina",
+    "CANCEL_BOOKING": "Letsani kusungitsa"
   },
   "dataType": {
     "TEXT": "Mawu",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super Admin",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Zatsimikiziridwa",
+    "CANCELLED": "Walephereka"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Zotengera",
+    "DISPUTED": "Zotsutsana"
+  },
+  "disputeStatus": {
+    "OPEN": "Tsegulani",
+    "UPHELD": "Kukhazikika",
+    "OVERTURNED": "Kugubuduzika",
+    "WITHDRAWN": "Wachotsedwa"
   }
 }

@@ -49,8 +49,73 @@
       "newPartnerId": "Novus particeps ID",
       "reason": "Ratio (requiritur)",
       "apply": "Applicare Override",
-      "applying": "Applicandi..."
+      "applying": "Applicandi...",
+      "cancelBookingHint": "Rescindens notas libri et eius commissio ut cancellata, dominium perficiendi ad socium redit, et conditor librum hoc iterum reducere permittit.",
+      "cancelBookingConfirm": "Cancel this booking? Eius commissio etiam aboletur. Hoc nomen tuum et ratio est initium."
     },
-    "timelineTitle": "Audit Timeline (hoc adnotatione)"
+    "timelineTitle": "Audit Timeline (hoc adnotatione)",
+    "bookingStatus": "Booking Status",
+    "commissionAttribution": "Commissio Attribution",
+    "disputeOpen": "Disceptatio dominii in hoc emptore aperta est - alius socius dicit esse eorum. Decernitur in Litteris pagina.",
+    "viewDisputes": "View iurgia",
+    "cancellation": {
+      "title": "Booking cancellatam",
+      "hint": "Liber et eius commissio cassantur; dominium operationale rursus cum socio et aedificatore potest hunc librum iterum ducere.",
+      "at": "Cancellato",
+      "by": "Cancellato",
+      "reason": "ratio"
+    }
+  },
+  "disputes": {
+    "title": "Occupatio Lites",
+    "hint": "Socius cuius adnotatione reiecta est ut duplicata disputare potest qui emptorem possidet. Recognosce utrinque et decernere.",
+    "statusFilter": "Controversia status",
+    "allStatuses": "Omnes statuses",
+    "empty": "Nullae controversiae cum hoc statu sunt.",
+    "columns": {
+      "dispute": "Disceptatio",
+      "customer": "Customer",
+      "project": "Project",
+      "raisedBy": "Erectus per",
+      "heldBy": "Current dominus",
+      "status": "Status",
+      "raisedAt": "Erexit in"
+    },
+    "detail": {
+      "title": "Controversia {{id}}",
+      "raisedOn": "Erexit {{date}}",
+      "raisingTitle": "Erectus per",
+      "holderTitle": "Current dominus",
+      "partner": "Socius",
+      "raisedBy": "Submitted by",
+      "customerName": "Customer",
+      "mobile": "Mobile",
+      "alternateMobile": "Alternis mobilibus",
+      "email": "Email",
+      "project": "Project",
+      "reason": "Ratio eorum",
+      "registration": "Registration",
+      "registeredAt": "Relatus on",
+      "referral": "Deferre",
+      "heldMissing": "In adnotatione tenuit non inveniri.",
+      "resolutionTitle": "Decision",
+      "outcome": "Exitus",
+      "note": "Nota",
+      "decidedBy": "Placuit",
+      "decidedAt": "Placuit on",
+      "newRegistration": "Novum registration",
+      "decideTitle": "Decernere hanc controversiam",
+      "noteLabel": "Nota exponens consilium (requiritur)",
+      "noteRequired": "Scribere codicillos decernere.",
+      "uphold": "Sustentare",
+      "overturn": "Overturn",
+      "upholdEffect": "{{holder}} emptorem custodit. Clausa contentio est et nihil aliud mutatur.",
+      "overturnEffect": "{{holder}} tutelae duplicatae terminos nunc et emptoris relatus est pro {{partner}} ut novam adnotationem.",
+      "heldBookedHelp": "Hic mos per possessorem currentem corruptela est. Abrigavi libri primum (Admin Override in adnotatione), deinde evertere:",
+      "confirmTitle": "Certus es?",
+      "confirmUphold": "Ita, suscipe",
+      "confirmOverturn": "Etiam, everto",
+      "back": "Ad controversias"
+    }
   }
 }

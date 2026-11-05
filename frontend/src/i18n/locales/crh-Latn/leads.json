@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Bron yapıldı",
-    "pending": "Beklegen"
+    "pending": "Beklegen",
+    "status": {
+      "CONFIRMED": "Bron yapıldı",
+      "CANCELLED": "Bronirovaniye lâğu etildi"
+    }
   },
   "assign": {
     "unassigned": "Tayinlenmegen",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Alâ daa proyekt yoq (istinad etilmegen)",
-    "notInList": "{{project}} (leyha cedvelinde yoq)"
+    "notInList": "{{project}} (leyha cedvelinde yoq)",
+    "protectionDays_one": "{{count}} -kün qorçalavı",
+    "protectionDays_other": "{{count}} -kün qorçalavı"
   },
   "journey": {
     "customer": "Müşteri",
@@ -76,7 +82,14 @@
     "progressHistory": "İlerilev tarihı",
     "timesIn": "( {{timezone}} vaqıtlar )",
     "backToMyLeads": "Menim yolbaşçılarıma qaytmaq",
-    "editLead": "Qurşunnı deñiştirmek"
+    "editLead": "Qurşunnı deñiştirmek",
+    "disputeBanner": "Başqa bir şerik bu müşterige saip olmaq aqqında davalaştı. Bir Leadrat admini onı közden keçire - olar qarar çıqarmağance, siziñ qorçalavıñız öz yerinde qala.",
+    "booking": "Bronirovaniye",
+    "commission": "Eyyet",
+    "notBooked": "Bron yapılmadı",
+    "cancelledOn": "{{date}} künü lâğu etildi.",
+    "cancelReason": "Sebebi: {{reason}}",
+    "cancelledHint": "Qurucı bronnı lâğu etti - operativ saiplik sizde qayttı ve komissiya aqqı lâğu etildi. Eger liderlikni kene bron etseler, onı tikleyler."
   },
   "referral": {
     "NOT_REFERRED": "Muracaat etilmegen (proyekt yoq)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Qurucı yollanmanı qabul etti",
       "REFERRAL_REJECTED": "Qurucı yollanmanı red etti. Sebebi: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin dublikatı qorçalavnı erte çıqardı. Sebebi: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin yazıluvnı {{from}} den {{to}} ge yañıdan tayinledi. Sebebi: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin yazıluvnı {{from}} den {{to}} ge yañıdan tayinledi. Sebebi: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Başqa şerikniñ dublikatı yazıluv tırışması red etildi",
+      "BOOKING_CANCELLED": "Bronirovaniye lâğu etildi. Sebebi: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Operativ mülk şerikke qaytarıldı",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Komissiyağa aqqı bronnen lâğu etildi",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Yañı bron içün komissiya aqqı tiklendi",
+      "OWNERSHIP_DISPUTE_RAISED": "Başqa bir şerik bu müşteriniñ saibi olğanını davalaştı - Leadrat admini onı baqıp çıqacaq",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Bu müşteri aqqında saiplik davaları çekildi - siziñ saiplik deñişmedi",
+      "OWNERSHIP_DISPUTE_UPHELD": "Bu müşteri aqqında saiplik davasını közden keçirdiler - siziñ saiplik tasdıqlandı",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Siziñ saiplik davañız siziñ faydañızğa qarar çıqarılğan soñ cedvelge alındı. İşaret: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Qorçalav bite: saiplik davasını başqa şerikniñ faydasına çezdiler. İşaret: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Bu telefon raqamı {{country}} içün doğru degil.",
     "COUNTRY_MISMATCH": "Lütfen, doğru memleketniñ kodunı seçip alıñız.",
     "NOT_MOBILE": "Lütfen, yerli telefonnı degil de, mobil raqamnı kirsetiñiz."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Komissiya aqqı bar",
+      "PENDING": "Komissiya beklenilmekte",
+      "CANCELLED": "Komissiya lâğu etildi"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Sizge ait",
+      "DISPUTED": "Atributsiya davalaşıldı"
+    }
+  },
+  "result": {
+    "none": "Körsetmek içün yazıluv neticesi yoq. Başta bir lidni yazıp alıñız.",
+    "acceptedTitle": "Qurşun cedvelge alındı",
+    "rejectedTitle": "Qurşun cedvelge alınmağan",
+    "protectionWindow": "Qorçalav penceresi",
+    "protectedUntil": "2014 senesine qadar qorçalanğan",
+    "openLead": "Açıq qurşun",
+    "addAnother": "Daa bir yolbaşçı qoş",
+    "duplicate": "Dublikatı - endi qorçalanğan",
+    "duplicateHint": "Bu müşteri endi bu leyha içün başqa yazıluvnen qorçalanğan, şunıñ içün onı siz içün yazdırmaq mümkün olmadı.",
+    "existingProtectedUntil": "2019 senesine qadar qorçalağan mevcut cedvelge aluv"
+  },
+  "disputes": {
+    "title": "Menim davalarım",
+    "intro": "Dublikatı olaraq red etilgen müşteriler içün siz kötergen mülk davaları. Er birini Leadrat admini baqıp çıqa.",
+    "empty": "Siz iç bir türlü dava kötermediñiz. Eger siz ketirgen müşterige dublikatı olaraq red etilse, onı yazıluv neticesinden davalaşmaq mümkün.",
+    "columns": {
+      "dispute": "Munaqaşa",
+      "reason": "Seniñ sebebiñ",
+      "outcome": "Aqibet"
+    },
+    "status": {
+      "OPEN": "Közden keçirile",
+      "UPHELD": "Seniñ faydaña degil",
+      "OVERTURNED": "Siziñ faydañızğa qarar çıqarıldı",
+      "WITHDRAWN": "Çekilildi"
+    },
+    "awaitingReview": "Adminniñ fikirini bekleymiz",
+    "openNewLead": "Öz lidiñizni {{id}} açıñız",
+    "withdraw": "Keri çekmek",
+    "withdrawConfirm": "{{name}} içün davañnı keri al ? Şimdiki saiplik olğanı kibi qala.",
+    "raise": "Dava saiplik aqqında",
+    "raiseTitle": "Dava saiplik aqqında",
+    "raiseHint": "Eger bu müşteri sizge birinci kelgen olsa, ne içün olğanını añlatıñız. Onı bir Leadrat admini közden keçirecek; eger olar siziñ faydañızğa qarar çıqarsalar, lider siz içün cedvelge alınğan.",
+    "reasonLabel": "Ne içün bu müşteri seniñ?",
+    "reasonMin_one": "Eñ azından {{count}} işareti.",
+    "reasonMin_other": "Eñ azından {{count}} işaretler.",
+    "submit": "Dava yollamaq",
+    "notProtected": "Bu leyha içün endi kimse bu müşteride qorçalav tutmay - siz liderni şimdi cedvelge ala bilesiñiz.",
+    "raised": "Dava {{id}} baqmaq içün yollanıldı.",
+    "viewAll": "Menim davalarımnı baqıñız"
+  },
+  "dashboard": {
+    "title": "Priborlar tahtası",
+    "period": "Devir",
+    "lastDays_one": "{{count}} kün",
+    "lastDays_other": "{{count}} künler",
+    "emptyTitle": "Hoş keldiñ! Sizde daa iç bir yol yoq.",
+    "emptyHint": "Birinci lidiñizni yazdırıñız - siziñ boru yolu, bron ve qorçalav müddetleri mında peyda olacaq.",
+    "tiles": {
+      "leads": "Cemi yolbaşçılar",
+      "newInPeriod_one": "{{count}} bu devirde yañı",
+      "newInPeriod_other": "{{count}} bu devirde yañı",
+      "accepted": "Qabul etildi",
+      "booked": "Bron yapıldı",
+      "bookedInPeriod_one": "{{count}} bu devirde bron etildi",
+      "bookedInPeriod_other": "{{count}} bu devirde bron etildi",
+      "conversion": "Döndürüv",
+      "conversionHint": "Qabul etilgen lidlerniñ payı olaraq bron etilgen lidler",
+      "protectedNow": "Şimdi qorçalanğan",
+      "expiringSoon_one": "{{count}} kününen bitken qorçalav",
+      "expiringSoon_other": "{{count}} künlerinen bitken qorçalav",
+      "disputedNow": "Başqaları tarafından davalaşılğan",
+      "disputedNowHint": "Başqa şerikten açıq saiplik davası olğan liderleriñiz",
+      "commissionEligible": "Komissiya aqqı bar",
+      "commissionCancelled_one": "{{count}} lâğu etildi",
+      "commissionCancelled_other": "{{count}} lâğu etildi"
+    },
+    "chart": {
+      "title_one": "Kündelik yazıluvlar ve bronlar - soñki {{count}} kün",
+      "title_other": "Kündelik yazıluvlar ve bronlar - soñki {{count}} künler",
+      "registrations": "Qaydlar",
+      "bookings": "Bronirovaniye"
+    },
+    "byStage": "Status boyunca yolbaşçılıq ete",
+    "bySource": "Menba boyunca yolbaşçılıq ete",
+    "byReferral": "Referal statusı boyunca yolbaşçılıq ete",
+    "myDisputes": "Siz kötergen davalar",
+    "noDisputes": "Davalar köterilmedi.",
+    "unknown": "Qoyulmağan",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Tışqı CRM (impuls)",
+      "PARTNER_CRM": "Siziñ komanda tarafından qoşuldı",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "İntegratsiya",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Qorçalavnıñ müddeti nevbetteki {{count}} künü bite",
+    "expiringTitle_other": "Qorçalavnıñ müddeti nevbetteki {{count}} künlerde bite",
+    "expiringEmpty": "Bu pencerede iç bir qurşun öz qorçalavını coymay."
   }
 }

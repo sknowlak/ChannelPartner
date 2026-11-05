@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Ato he gbɛjianɔ",
-    "pending": "Pɛndin"
+    "pending": "Pɛndin",
+    "status": {
+      "CONFIRMED": "Ato he gbɛjianɔ",
+      "CANCELLED": "Afo he ni ato lɛ mli"
+    }
   },
   "assign": {
     "unassigned": "Akɛhaaa",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Nitsumɔ ko bɛ lolo (atsɔɔɔ)",
-    "notInList": "{{project}} (bɛ nitsumɔ lɛ mli)"
+    "notInList": "{{project}} (bɛ nitsumɔ lɛ mli)",
+    "protectionDays_one": "{{count}} -gbi hebuu",
+    "protectionDays_other": "{{count}} -gbi hebuu"
   },
   "journey": {
     "customer": "Kɔstɔma",
@@ -76,7 +82,14 @@
     "progressHistory": "Nɔyaa He Yinɔsane",
     "timesIn": "(bei yɛ {{timezone}} )",
     "backToMyLeads": "Ku sɛɛ kɛya Mihiɛnyiɛlɔi lɛ Anɔ",
-    "editLead": "Tsakemɔ Hiɛnyiɛlɔ"
+    "editLead": "Tsakemɔ Hiɛnyiɛlɔ",
+    "disputeBanner": "Hefatalɔ kroko hu eje ŋwane akɛ mɔ ni ji nɛkɛ jarayelɔ nɛɛ ji mɔ ni yɔɔ. Leadrat nɔkwɛlɔ ko miikwɛ mli - ohebuu lɛ hiɔ shi kɛyashi amɛbaakpɛ amɛyiŋ.",
+    "booking": "He ni ato",
+    "commission": "Kɔmishin",
+    "notBooked": "Akɛ wolo ko ewooo mli",
+    "cancelledOn": "Afo mli yɛ {{date}} .",
+    "cancelReason": "Yiŋtoo: {{reason}}",
+    "cancelledHint": "Tsumalɔ lɛ kpa gbɛjianɔtoo lɛ - nitsumɔ lɛ nɔyeli lɛ eku esɛɛ kɛba oŋɔɔ ni afo nitsumɔ hegbɛ lɛ mli. Akɛbaa ekoŋŋ kɛji akɛ aŋmala hiɛnyiɛlɔ lɛ ekoŋŋ."
   },
   "referral": {
     "NOT_REFERRED": "Atsɔɔɔ (nitsumɔ ko bɛ)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Builder kpɛlɛ gbɛtsɔɔmɔ lɛ nɔ",
       "REFERRAL_REJECTED": "Builder kpoo nitsumɔ ni akɛha lɛ lɛ. Yiŋtoo: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin jie hebuu henɔi enyɔ kpo mra. Yiŋtoo: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin tsake woloŋmaa kɛjɛ {{from}} kɛtee {{to}} . Yiŋtoo: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin tsake woloŋmaa kɛjɛ {{from}} kɛtee {{to}} . Yiŋtoo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Akpoo mɔdɛŋ ni hefatalɔ kroko bɔ koni ekɛ ehe awo wolo nɔ lɛ mli shii enyɔ",
+      "BOOKING_CANCELLED": "Afo he ni ato lɛ mli. Yiŋtoo: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Nitsumɔ mli nɔyeli lɛ ku esɛɛ kɛtee hefatalɔ lɛ dɛŋ",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Afo nitsumɔ hegbɛ ni akɛhaa lɛ mli kɛ shika ni ato lɛ",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Akɛ hegbɛ ni akɛwoɔ nitsumɔ mli lɛ ku sɛɛ aha kɛha gbɛjianɔtoo hee lɛ",
+      "OWNERSHIP_DISPUTE_RAISED": "Hefatalɔ kroko hu te shi ewo nɛkɛ jarayelɔ nɛɛ nɔyeli - Leadrat nɔkwɛlɔ baakwɛ mli",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Ajie nɔyeli he naataamɔ ni kɔɔ nɛkɛ jarayelɔ nɛɛ he lɛ - nɔyeli lɛ tsakeee",
+      "OWNERSHIP_DISPUTE_UPHELD": "Akwɛ nɔyeli he naataamɔ ni kɔɔ nɛkɛ jarayelɔ nɛɛ he lɛ mli - ama nɔ mi akɛ bo ji onɔ̃",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Akɛwo wolo nɔ beni akpɛ oyiŋ yɛ onɔyeli he sane lɛ he yɛ be mli ni eye ebua bo lɛ sɛɛ. Kaadi: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Hebuu ba naagbee: akpɛ yiŋ yɛ nɔyeli he naataamɔ ko he koni akɛye abua hefatalɔ kroko. Kaadi: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Tɛlifon nɔmba nɛɛ ejaaa kɛha {{country}} .",
     "COUNTRY_MISMATCH": "Ofainɛ halamɔ maŋ kood ni ja lɛ.",
     "NOT_MOBILE": "Ofainɛ, ŋmaa mobile nɔmba, shi jeee shikpɔŋ nɔ nɔmba."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Kɔmishin ni sa",
+      "PENDING": "Nitsumɔ ni miimɛ",
+      "CANCELLED": "Afo nitsumɔ lɛ mli"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Akɛwo bo dɛŋ",
+      "DISPUTED": "Aje ŋwane yɛ nɔ ni akɛha lɛ he"
+    }
+  },
+  "result": {
+    "none": "Hetoo ko bɛ ni abaatsɔɔ. Ŋmaa hiɛnyiɛlɔ ko gbɛi klɛŋklɛŋ.",
+    "acceptedTitle": "Lead aŋmala gbɛi awo mli",
+    "rejectedTitle": "Lead ni aŋmalaaa awoɔ wolo nɔ",
+    "protectionWindow": "Hebuu Samflɛ",
+    "protectedUntil": "Abu He Kɛyashi",
+    "openLead": "Gbelemɔ Lead",
+    "addAnother": "Kɛ Lead Kroko Afata He",
+    "duplicate": "Nɔ ni ji enyɔ - abu he momo",
+    "duplicateHint": "Akɛ wolo kroko ebu nɛkɛ jarayelɔ nɛɛ he kɛha nitsumɔ nɛɛ momo, no hewɔ lɛ anyɛɛɛ aŋmala aha bo.",
+    "existingProtectedUntil": "Abu woloŋmaa ni yɔɔ momo lɛ he kɛyashi"
+  },
+  "disputes": {
+    "title": "Mihe ŋwanejeei lɛ",
+    "intro": "Nɔyeli he béi ni ote shi oha mɛi ni heɔ nii lɛ ni akpoo akɛ amɛji nɔ ni ji enyɔ. Leadrat nɔkwɛlɔ ko kwɛɔ eko fɛɛ eko mli.",
+    "empty": "Okɛ naataamɔi komɛi eteee shi. Kɛji akɛ akpoo jarayelɔ ko ni okɛba lɛ akɛ eji nɔ ni ji enyɔ lɛ, obaanyɛ okɛje ŋwane kɛjɛ nɔ ni jɛ woloŋmaa lɛ mli ba lɛ mli.",
+    "columns": {
+      "dispute": "Bei",
+      "reason": "Oyiŋtoo lɛ",
+      "outcome": "Sɛɛnamɔ"
+    },
+    "status": {
+      "OPEN": "Akwɛɔ mli",
+      "UPHELD": "Jeee yɛ ohiɛ",
+      "OVERTURNED": "Akpɛ yiŋ yɛ ohe",
+      "WITHDRAWN": "Ajie kɛjɛ mli"
+    },
+    "awaitingReview": "Miimɛ admin kwɛmɔ",
+    "openNewLead": "Gbelemɔ ohiɛnyiɛlɔ {{id}}",
+    "withdraw": "Jieemɔ",
+    "withdrawConfirm": "Jiemɔ ohe ŋwanejee kɛha {{name}} ? Nɔ ni yɔɔ amrɔ nɛɛ hiɔ shi bɔ ni eyɔɔ lɛ.",
+    "raise": "ŋwanejee yɛ nɔyeli he",
+    "raiseTitle": "ŋwanejee yɛ nɔyeli he",
+    "raiseHint": "Kɛji akɛ nɛkɛ jarayelɔ nɛɛ ba oŋɔɔ klɛŋklɛŋ lɛ, tsɔɔmɔ nɔ hewɔ. Leadrat nɔkwɛlɔ ko baakwɛ mli; kɛji amɛkpɛ amɛyiŋ yɛ ohe lɛ, aŋmalaa hiɛnyiɛlɔ lɛ awoɔ wolo nɔ ahaa bo.",
+    "reasonLabel": "Mɛni hewɔ nɛkɛ jarayelɔ nɛɛ ji onɔ lɛ?",
+    "reasonMin_one": "Kɛ hoo lɛ {{count}} niŋmaa.",
+    "reasonMin_other": "Kɛ hoo lɛ {{count}} niŋmaa okadii.",
+    "submit": "Majemɔ ŋwanejee",
+    "notProtected": "Mɔ ko mɔ ko bɛ ni buɔ nɛkɛ jarayelɔ nɛɛ he kɛha nitsumɔ nɛɛ dɔŋŋ - obaanyɛ okɛ hiɛnyiɛlɔ lɛ awo wolo nɔ bianɛ.",
+    "raised": "Akɛ ŋwanejee {{id}} maje koni akwɛ mli.",
+    "viewAll": "Kwɛmɔ mi ŋwanejeei lɛ"
+  },
+  "dashboard": {
+    "title": "Dashbɔd",
+    "period": "Bei kokro",
+    "lastDays_one": "{{count}} gbi",
+    "lastDays_other": "{{count}} gbii",
+    "emptyTitle": "Afeee noko! Obɛ gbɛtsɔɔmɔ ko lolo.",
+    "emptyHint": "ŋmaa oklɛŋklɛŋ hiɛnyiɛlɔ lɛ gbɛi - opaipii, nibii ni okɛbaatsu nii kɛ hebuu bei lɛ baaje kpo yɛ biɛ.",
+    "tiles": {
+      "leads": "Yibɔ ni nyiɛɔ hiɛ",
+      "newInPeriod_one": "{{count}} ehee yɛ be nɛɛ mli",
+      "newInPeriod_other": "{{count}} ehee yɛ be nɛɛ mli",
+      "accepted": "Akpɛlɛ nɔ",
+      "booked": "Ato he gbɛjianɔ",
+      "bookedInPeriod_one": "{{count}} ni ato yɛ be nɛɛ mli",
+      "bookedInPeriod_other": "{{count}} ni ato yɛ be nɛɛ mli",
+      "conversion": "Tsakemɔ",
+      "conversionHint": "Leads ni aŋmala amɛgbɛi awo wolo nɔ akɛ leads ni akpɛlɛ nɔ lɛ mlijaa",
+      "protectedNow": "Abu he bianɛ",
+      "expiringSoon_one": "Hebuu ni baa naagbee yɛ {{count}} gbi mli",
+      "expiringSoon_other": "Hebuu ni baa naagbee yɛ {{count}} gbii amli",
+      "disputedNow": "Mɛi krokomɛi jeɔ ŋwane",
+      "disputedNowHint": "Ohiɛnyiɛlɔi kɛ nɔyeli he naataamɔ ni yɔɔ faŋŋ kɛjɛ hefatalɔ kroko ŋɔɔ",
+      "commissionEligible": "Kɔmishin ni sa",
+      "commissionCancelled_one": "{{count}} afo mli",
+      "commissionCancelled_other": "{{count}} afo mli"
+    },
+    "chart": {
+      "title_one": "Niŋmaa kɛ he ni atoɔ daa gbi - naagbee {{count}} gbi",
+      "title_other": "Niŋmaa kɛ he ni atoɔ daa gbi - naagbee {{count}} gbii",
+      "registrations": "Mɛi ni aŋmalaa amɛgbɛi awoɔ mli",
+      "bookings": "He ni ato"
+    },
+    "byStage": "Etsɔɔ gbɛhe nɔ",
+    "bySource": "Etsɔɔ hiɛ kɛtsɔ jɛɛhe nɔ",
+    "byReferral": "Etsɔɔ hiɛ kɛtsɔ gbɛtsɔɔmɔ shihilɛ nɔ",
+    "myDisputes": "ŋwanejeei ni ote shi lɛ",
+    "noDisputes": "Akɛ béi komɛi teeee shi.",
+    "unknown": "Atooo",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM kponɔgbɛ (akasemɔ)",
+      "PARTNER_CRM": "O kuu lɛ kɛfata he",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Ekomefeemɔ",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Hebuu lɛ baagbe naa yɛ {{count}} gbi ni nyiɛ sɛɛ lɛ mli",
+    "expiringTitle_other": "Hebuu lɛ baagbe naa yɛ {{count}} gbii ni nyiɛ sɛɛ lɛ amli",
+    "expiringEmpty": "Lead ko bɛ ni laajeɔ ehebuu yɛ samflɛ nɛɛ mli."
   }
 }

@@ -43,7 +43,9 @@
       "name": "jeneng",
       "city": "kutha",
       "status": "Status",
-      "actions": "Tumindak"
+      "actions": "Tumindak",
+      "protection": "Proteksi duplikat",
+      "matchOn": "Duplikat cocog ing"
     },
     "closeReferrals": "Nutup kanggo rujukan",
     "reopen": "Mbukak maneh",
@@ -55,6 +57,23 @@
       "add": "Tambah Proyek",
       "created": "Digawe {{name}} ."
     },
-    "back": "Bali menyang Tukang"
+    "back": "Bali menyang Tukang",
+    "protection": {
+      "days_other": "{{count}} dina",
+      "globalDays_other": "Standar global ( {{count}} dina)",
+      "globalDefault": "Default global",
+      "placeholder": "Dina perlindungan (kosong = standar global)",
+      "saved": "Proteksi duplikat dianyari kanggo {{name}} .",
+      "hint": "Proteksi duplikat: 1-3650 dina, utawa ninggalake kosong kanggo nggunakake standar global saka Setelan. Pangowahan mung ditrapake kanggo registrasi anyar - sing wis ana tetep kadaluwarsa."
+    },
+    "matching": {
+      "global": "Default global",
+      "globalWith": "Default global ( {{fields}} )",
+      "mobile": "Nomer ponsel",
+      "email": "Email",
+      "both": "Nomer ponsel + email",
+      "saved": "Duplikat cocog dianyari kanggo {{name}}",
+      "hint": "Rincian sing nggawe loro registrasi pelanggan sing padha kanggo proyek. Owah-owahan ditrapake kanggo mriksa duplikat wiwit saiki; pangayoman ana ora kena pengaruh."
+    }
   }
 }

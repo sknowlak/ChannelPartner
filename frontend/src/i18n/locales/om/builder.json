@@ -30,7 +30,8 @@
       "registered": "Galmaa'ee jira"
     },
     "booked": "Booked ta'eera",
-    "empty": "Hanga ammaatti rifaralaa hin jiru."
+    "empty": "Hanga ammaatti rifaralaa hin jiru.",
+    "bookingCancelled": "Booking haqame"
   },
   "detail": {
     "customer": "Maamila",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Booking gochuun mirkanaa'eera.",
       "accepted": "Rifaralli fudhatama qaba.",
-      "rejected": "Rifaralli dide."
+      "rejected": "Rifaralli dide.",
+      "bookingCancelled": "Booking haqame."
     },
-    "backToReferrals": "Gara Rifaralaa Deebi'aa"
+    "backToReferrals": "Gara Rifaralaa Deebi'aa",
+    "bookingCancelled": "Booking haqame",
+    "cancelBooking": "Booking Haquu",
+    "cancelReasonLabel": "Sababni haquuf (hiriyaadhaaf agarsiifame) * .",
+    "cancelBookingHint": "Abbummaan hojii gara michuutti deebi’ee ulaagaan komishinii isaanii ni haqama. Dursichi booda irra deebi'amee kaardii galchuun ni danda'ama.",
+    "cancelBookingConfirm": "Booking haquu"
   },
   "history": {
     "title": "Seenaa",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Ulaagaa komishinii uumame",
       "HANDOVER_COMPLETED": "Walharkaa fuudhinsi xumurame",
       "ADMIN_PROTECTION_RELEASED": "Admin eegumsa dachaa dafee gadhiise. Sababni: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Bulchaan galmee {{from}} irraa gara {{to}} tti irra deebi'ee ramade. Sababni: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Bulchaan galmee {{from}} irraa gara {{to}} tti irra deebi'ee ramade. Sababni: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Yaaliin galmee dachaa hiriyaa biraatiin godhame fudhatama dhabe",
+      "BOOKING_CANCELLED": "Booking haqame. Sababni: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Abbummaan hojii michuutti deebi’e",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ulaagaa komishinii buukii waliin haqame",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ulaagaa komishinii buukii haaraa kanaaf deebi'eera"
     }
   }
 }

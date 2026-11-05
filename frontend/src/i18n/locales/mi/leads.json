@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Kua tohua",
-    "pending": "Tarewa ana"
+    "pending": "Tarewa ana",
+    "status": {
+      "CONFIRMED": "Kua tohua",
+      "CANCELLED": "Kua whakakorehia te tono"
+    }
   },
   "assign": {
     "unassigned": "Kore i tohua",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Karekau he kaupapa (kaore i tukuna)",
-    "notInList": "{{project}} (kaore i te rarangi kaupapa)"
+    "notInList": "{{project}} (kaore i te rarangi kaupapa)",
+    "protectionDays_one": "{{count}} -ra tiaki",
+    "protectionDays_other": "{{count}} -ra tiaki"
   },
   "journey": {
     "customer": "Kiritaki",
@@ -76,7 +82,14 @@
     "progressHistory": "Hītori Te ahunga whakamua",
     "timesIn": "(wā i roto i {{timezone}} )",
     "backToMyLeads": "Hoki ki Taku Arataki",
-    "editLead": "Whakatika Arataki"
+    "editLead": "Whakatika Arataki",
+    "disputeBanner": "Kua tautohetia e tetahi atu hoa te mana o tenei kaihoko. Kei te arotakehia e tetahi kaiwhakahaere Leadrat - ka mau tonu to whakamarumaru kia whakatau ra ano.",
+    "booking": "Rahui",
+    "commission": "Komihana",
+    "notBooked": "Kaore i tuhia",
+    "cancelledOn": "Kua whakakorehia i te {{date}} .",
+    "cancelReason": "Take: {{reason}}",
+    "cancelledHint": "I whakakorehia e te kaihanga te rahui - kua hoki mai te mana whakahaere ki a koe ka whakakorehia te whakaurunga o te komihana. Ka whakahokia mai mena ka tohua ano te kaiarahi."
   },
   "referral": {
     "NOT_REFERRED": "Kaore i tukuna (kaore he kaupapa)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "I whakaaetia e te Kaihanga te tuku",
       "REFERRAL_REJECTED": "I whakakorehia e te Kaihanga te tuku. Take: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "I tukuna wawe e te Kaiwhakahaere te whakamarumaru takirua. Take: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "I tukuna ano e te Kaiwhakahaere te rehitatanga mai i {{from}} ki {{to}} . Take: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "I tukuna ano e te Kaiwhakahaere te rehitatanga mai i {{from}} ki {{to}} . Take: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "I whakahēngia he ngana rehitatanga takirua a tetahi atu hoa",
+      "BOOKING_CANCELLED": "Kua whakakorehia te tono. Take: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "I hoki mai te mana whakahaere ki te hoa",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "I whakakorehia te whakaurunga a te Komihana me te tono",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kua whakahokia mai te mana o te Komihana mo te rahui hou",
+      "OWNERSHIP_DISPUTE_RAISED": "I tautohetia e tetahi atu hoa te mana o tenei kaihoko - ma te kaiwhakahaere Leadrat e arotake",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Ko te tautohe mana o tenei kaihoko i tangohia - kaore e rereke to mana pupuri",
+      "OWNERSHIP_DISPUTE_UPHELD": "I arotakehia te tautohe mana o tenei kaihoko - kua whakamanahia to mana pupuri",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "I rehitatia i muri i to whakatau i to tautohe mana pupuri ki a koe. Tuhipoka: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Ka mutu te whakamarumaru: i whakatauhia he tautohe mana whenua mo tetahi atu hoa. Tuhipoka: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Ehara tenei nama waea i te whaimana mo {{country}} .",
     "COUNTRY_MISMATCH": "Tīpakohia koa te waehere whenua tika.",
     "NOT_MOBILE": "Whakaurua koa he nama waea, kaua he waea."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Ka taea e te Komihana",
+      "PENDING": "Komihana e tarewa ana",
+      "CANCELLED": "Kua whakakorehia e te Komihana"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Kua tohungia ki a koe",
+      "DISPUTED": "I tautohetia te tuku"
+    }
+  },
+  "result": {
+    "none": "Kaore he hua rehitatanga hei whakaatu. Rēhitahia he kaiarahi i te tuatahi.",
+    "acceptedTitle": "Kua rehitatia te kaiarahi",
+    "rejectedTitle": "Karekau te kaiarahi i rehitatia",
+    "protectionWindow": "Matapihi Tiaki",
+    "protectedUntil": "Tiaki Tae noa",
+    "openLead": "Tuwhera Lead",
+    "addAnother": "Tāpirihia tetahi atu Arataki",
+    "duplicate": "Tārite - kua parea kētia",
+    "duplicateHint": "Kua parea kētia tenei kaihoko mo tenei kaupapa e tetahi atu rehitatanga, na reira kaore e taea te rehita mo koe.",
+    "existingProtectedUntil": "Ka tiakina te rehitatanga o naianei tae noa ki"
+  },
+  "disputes": {
+    "title": "Aku Tohetohe",
+    "intro": "Nga tautohenga rangatira i whakaarahia e koe mo nga kaihoko i whakakorehia hei taarua. Ka arotakehia e te kaiwhakahaere Leadrat tetahi.",
+    "empty": "Kaore koe i whakaara ake i nga tautohetohe. Ki te kore te kaihoko i mauria mai e koe hei taarua, ka taea e koe te tautohetohe mai i te hua rehitatanga.",
+    "columns": {
+      "dispute": "Tautohetohe",
+      "reason": "Ko to take",
+      "outcome": "Putanga"
+    },
+    "status": {
+      "OPEN": "Kei te arotakehia",
+      "UPHELD": "Ehara i te pai ki a koe",
+      "OVERTURNED": "I whakatauhia e koe",
+      "WITHDRAWN": "Kua unuhia"
+    },
+    "awaitingReview": "E tatari ana mo te arotake a te kaiwhakahaere",
+    "openNewLead": "Whakatuwherahia to arahi {{id}}",
+    "withdraw": "Tango",
+    "withdrawConfirm": "Tangohia to tautohe mo {{name}} ? Ka noho tonu te mana o naianei.",
+    "raise": "Tohetohe te mana pupuri",
+    "raiseTitle": "Tohetohe te mana pupuri",
+    "raiseHint": "Mena i tae tuatahi mai tenei kaihoko ki a koe, whakamaramatia he aha. Ka arotakehia e te kaiwhakahaere Leadrat ; Mena ka whakatauhia e koe, kua rehitatia te kaiarahi mo koe.",
+    "reasonLabel": "He aha tenei kaihoko nau?",
+    "reasonMin_one": "I te iti rawa {{count}} pūāhua.",
+    "reasonMin_other": "I te iti rawa {{count}} pūāhua.",
+    "submit": "Tukua te Tohetohe",
+    "notProtected": "Karekau he tangata hei tiaki i tenei kaihoko mo tenei kaupapa - ka taea e koe te rehita i te kaiarahi inaianei.",
+    "raised": "I tukuna te tautohetohe {{id}} hei arotake.",
+    "viewAll": "Tirohia aku tautohetohe"
+  },
+  "dashboard": {
+    "title": "Papatohu",
+    "period": "Wā",
+    "lastDays_one": "{{count}} ra",
+    "lastDays_other": "{{count}} nga ra",
+    "emptyTitle": "Nau mai haere mai! Karekau he kaiarahi.",
+    "emptyHint": "Rēhitahia to kaiarahi tuatahi - ka puta mai to paipa, to reputanga me nga ra kati whakamarumaru ki konei.",
+    "tiles": {
+      "leads": "Katoa nga arahi",
+      "newInPeriod_one": "{{count}} hou i tenei wa",
+      "newInPeriod_other": "{{count}} hou i tenei wa",
+      "accepted": "Whakaaetia",
+      "booked": "Kua tohua",
+      "bookedInPeriod_one": "{{count}} kua tohua i tenei wa",
+      "bookedInPeriod_other": "{{count}} kua tohua i tenei wa",
+      "conversion": "Tahuri",
+      "conversionHint": "Ko nga kaiarahi kua tohua hei waahanga o nga kaiarahi kua whakaaetia",
+      "protectedNow": "Kua parea inaianei",
+      "expiringSoon_one": "Ka mutu te whakamarutanga i te {{count}} ra",
+      "expiringSoon_other": "Ka mutu te whakamarutanga i roto i te {{count}} ra",
+      "disputedNow": "Ka tautohetia e etahi atu",
+      "disputedNowHint": "Ko o arataki me te tohe mo te mana rangatira mai i tetahi atu hoa",
+      "commissionEligible": "Ka taea e te Komihana",
+      "commissionCancelled_one": "{{count}} i whakakorea",
+      "commissionCancelled_other": "{{count}} i whakakorea"
+    },
+    "chart": {
+      "title_one": "Nga rehitatanga me nga rahui mo ia ra - {{count}} ra whakamutunga",
+      "title_other": "Nga rehitatanga me nga rahui mo ia ra - {{count}} nga ra kua hipa",
+      "registrations": "Nga rehitatanga",
+      "bookings": "Nga Rahui"
+    },
+    "byStage": "Ka arahina e te mana",
+    "bySource": "Ka arahi ma te puna",
+    "byReferral": "Ka arahina e te mana tuku",
+    "myDisputes": "Nga tautohetohe i whakaarahia e koe",
+    "noDisputes": "Karekau he tautohetohe i ara ake.",
+    "unknown": "Kaore i whakaritea",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM waho (whakarite)",
+      "PARTNER_CRM": "Kua taapirihia e to roopu",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Te whakauru",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Ka pau te whakamarutanga hei te {{count}} ra e whai ake nei",
+    "expiringTitle_other": "Ka pau te whakamarutanga i nga ra {{count}} e whai ake nei",
+    "expiringEmpty": "Kaore he mata e ngaro tona whakamarumaru i tenei matapihi."
   }
 }

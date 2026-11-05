@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Fanelekako",
-    "PENDING": "Lokulindzelwe"
+    "PENDING": "Lokulindzelwe",
+    "CANCELLED": "Kukhanseliwe"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Khipha kuvikeleka lokuphindvwe kabili kusenesikhatsi",
-    "REASSIGN_PARTNER": "Yabela kabusha kulomunye umlingani"
+    "REASSIGN_PARTNER": "Yabela kabusha kulomunye umlingani",
+    "CANCEL_BOOKING": "Khansela lokubhukha"
   },
   "dataType": {
     "TEXT": "Umbhalo",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Umphatsi Lomkhulu",
     "ADMIN": "Umphatsi"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Kucinisekisiwe",
+    "CANCELLED": "Kukhanseliwe"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Kuhlonishwa",
+    "DISPUTED": "Kuphikiswana"
+  },
+  "disputeStatus": {
+    "OPEN": "Vula",
+    "UPHELD": "Kuvunyiwe",
+    "OVERTURNED": "Kuguculwe",
+    "WITHDRAWN": "Kuhoxisiwe"
   }
 }

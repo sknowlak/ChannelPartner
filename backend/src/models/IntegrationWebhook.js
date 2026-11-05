@@ -29,7 +29,7 @@ const integrationWebhookSchema = new mongoose.Schema(
     bodyTemplate: { type: String, default: '' }, // only used when format === 'CUSTOM'
     events: {
       type: [String],
-      enum: ['LEAD_CREATED', 'LEAD_UPDATED', 'STAGE_UPDATED', 'BOOKING_COMPLETED'],
+      enum: ['LEAD_CREATED', 'LEAD_UPDATED', 'STAGE_UPDATED', 'BOOKING_COMPLETED', 'BOOKING_CANCELLED'],
       default: ['LEAD_CREATED']
     },
     isEnabled: { type: Boolean, default: true },

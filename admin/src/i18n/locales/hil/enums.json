@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Pwede gid",
-    "PENDING": "Nabilin"
+    "PENDING": "Nabilin",
+    "CANCELLED": "Ginkanselar"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Ipaguwa ang doble nga proteksyon sing temprano",
-    "REASSIGN_PARTNER": "I-assign liwat sa iban nga partner"
+    "REASSIGN_PARTNER": "I-assign liwat sa iban nga partner",
+    "CANCEL_BOOKING": "Kanselahon ang booking"
   },
   "dataType": {
     "TEXT": "Teks",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Super Admin",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Ginkumpirma",
+    "CANCELLED": "Ginkanselar"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Ginpatungod",
+    "DISPUTED": "Ginbaisan"
+  },
+  "disputeStatus": {
+    "OPEN": "Bukas",
+    "UPHELD": "Ginsakdag",
+    "OVERTURNED": "Ginbaliskad",
+    "WITHDRAWN": "Ginbawi"
   }
 }

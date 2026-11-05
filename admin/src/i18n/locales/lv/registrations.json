@@ -49,8 +49,73 @@
       "newPartnerId": "Jauns partnera ID",
       "reason": "Iemesls (obligāts)",
       "apply": "Lietot ignorēšanu",
-      "applying": "Notiek pieteikšanās..."
+      "applying": "Notiek pieteikšanās...",
+      "cancelBookingHint": "Atceļot rezervāciju un tās komisijas maksu tiek atzīmētas kā atceltas, partnerim tiek atdotas darbības īpašumtiesības, un būvētājs var atkārtoti rezervēt šo potenciālo pirkumu.",
+      "cancelBookingConfirm": "Vai atcelt šo rezervāciju? Arī tā komisija ir atcelta. Tas ir reģistrēts ar jūsu vārdu un iemeslu."
     },
-    "timelineTitle": "Audita laika skala (šī reģistrācija)"
+    "timelineTitle": "Audita laika skala (šī reģistrācija)",
+    "bookingStatus": "Rezervācijas statuss",
+    "commissionAttribution": "Komisijas piešķiršana",
+    "disputeOpen": "Par šo klientu ir uzsākts īpašumtiesību strīds — cits partneris saka, ka tas pieder viņam. Tas tiek izlemts Strīdu lapā.",
+    "viewDisputes": "Skatīt strīdus",
+    "cancellation": {
+      "title": "Rezervācija atcelta",
+      "hint": "Rezervācija un tās komisija tiek atcelta; Operatīvās īpašumtiesības ir atgriezušās partnerim, un būvētājs var atkārtoti rezervēt šo potenciālo pirkumu.",
+      "at": "Atcelts plkst",
+      "by": "Atcēla",
+      "reason": "Iemesls"
+    }
+  },
+  "disputes": {
+    "title": "Īpašumtiesību strīdi",
+    "hint": "Partneris, kura reģistrācija tika noraidīta kā dublikāts, var apstrīdēt, kam pieder klients. Pārskatiet abas puses un izlemiet.",
+    "statusFilter": "Strīda statuss",
+    "allStatuses": "Visi statusi",
+    "empty": "Nav strīdu par šo statusu.",
+    "columns": {
+      "dispute": "Strīds",
+      "customer": "Klients",
+      "project": "Projekts",
+      "raisedBy": "Uzaudzināja",
+      "heldBy": "Pašreizējais īpašnieks",
+      "status": "Statuss",
+      "raisedAt": "Pacelts tālāk"
+    },
+    "detail": {
+      "title": "Strīds {{id}}",
+      "raisedOn": "Pieaudzis {{date}}",
+      "raisingTitle": "Uzaudzināja",
+      "holderTitle": "Pašreizējais īpašnieks",
+      "partner": "Partneris",
+      "raisedBy": "Iesniedza",
+      "customerName": "Klients",
+      "mobile": "Mobilais",
+      "alternateMobile": "Alternatīvs mobilais tālrunis",
+      "email": "E-pasts",
+      "project": "Projekts",
+      "reason": "Viņu iemesls",
+      "registration": "Reģistrācija",
+      "registeredAt": "Reģistrēts",
+      "referral": "Ieteikums",
+      "heldMissing": "Aizturēto reģistrāciju nevarēja atrast.",
+      "resolutionTitle": "Lēmums",
+      "outcome": "Rezultāts",
+      "note": "Piezīme",
+      "decidedBy": "Izlēma",
+      "decidedAt": "Izlēma",
+      "newRegistration": "Jauna reģistrācija",
+      "decideTitle": "Izlemiet šo strīdu",
+      "noteLabel": "Piezīme, kas izskaidro lēmumu (obligāti)",
+      "noteRequired": "Uzrakstiet piezīmi, lai izlemtu.",
+      "uphold": "Uzturēt",
+      "overturn": "Apgāzties",
+      "upholdEffect": "{{holder}} patur klientu. Strīds ir slēgts un nekas cits nemainās.",
+      "overturnEffect": "{{holder}} dublikāta aizsardzība tagad beidzas, un klients ir reģistrēts pakalpojumam {{partner}} kā jauna reģistrācija.",
+      "heldBookedHelp": "Šis klients ir rezervēts, izmantojot pašreizējo īpašnieku. Vispirms atceliet šo rezervāciju (reģistrācijas administratora ignorēšana), pēc tam atceliet:",
+      "confirmTitle": "Vai esat pārliecināts?",
+      "confirmUphold": "Jā, atbalstīt",
+      "confirmOverturn": "Jā, apgāzties",
+      "back": "Atpakaļ uz strīdiem"
+    }
   }
 }

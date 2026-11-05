@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Hæfi",
-    "PENDING": "Í bið"
+    "PENDING": "Í bið",
+    "CANCELLED": "Hætt við"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Slepptu tvítekinni vörn snemma",
-    "REASSIGN_PARTNER": "Endurúthluta til annars félaga"
+    "REASSIGN_PARTNER": "Endurúthluta til annars félaga",
+    "CANCEL_BOOKING": "Hætta við bókun"
   },
   "dataType": {
     "TEXT": "Texti",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Ofur stjórnandi",
     "ADMIN": "Admin"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Staðfest",
+    "CANCELLED": "Hætt við"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Eignast",
+    "DISPUTED": "Umdeilt"
+  },
+  "disputeStatus": {
+    "OPEN": "Opið",
+    "UPHELD": "Staðfest",
+    "OVERTURNED": "Hvolft",
+    "WITHDRAWN": "Dregið til baka"
   }
 }

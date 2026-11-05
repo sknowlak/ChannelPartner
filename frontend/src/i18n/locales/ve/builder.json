@@ -30,7 +30,8 @@
       "registered": "Vho ṅwaliswa"
     },
     "booked": "Ro bukwa",
-    "empty": "A hu athu u rumelwa."
+    "empty": "A hu athu u rumelwa.",
+    "bookingCancelled": "U buka zwo khanselwa"
   },
   "detail": {
     "customer": "Murengi",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Booking yo khwathisedzwa.",
       "accepted": "U rumelwa ho ṱanganedzwa.",
-      "rejected": "U rumelwa ho hanedzwa."
+      "rejected": "U rumelwa ho hanedzwa.",
+      "bookingCancelled": "Booking yo khanselwa."
     },
-    "backToReferrals": "U vhuyelela kha u rumelwa"
+    "backToReferrals": "U vhuyelela kha u rumelwa",
+    "bookingCancelled": "U buka zwo khanselwa",
+    "cancelBooking": "Khantsela u Buka",
+    "cancelReasonLabel": "Tshiitisi tsha u khansela (tsho sumbedzwa mufarisi) *",
+    "cancelBookingHint": "Vhuṋe ha mushumo vhu vhuyelela kha mufarisani nahone u tea havho ha khomishini hu a khanselwa. Lead i nga dovha ya bookiwa nga murahu.",
+    "cancelBookingConfirm": "Khantsela u buka"
   },
   "history": {
     "title": "Ḓivhazwakale",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "U tea ha khomishini zwo sikwa",
       "HANDOVER_COMPLETED": "U ṋetshedzwa ho fhela",
       "ADMIN_PROTECTION_RELEASED": "Admin o bvisa tsireledzo ya duplicate hu tshe na tshifhinga. Muhumbulo: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Mulanguli o ṋea hafhu u ṅwaliswa u bva kha {{from}} u ya kha {{to}} . Muhumbulo: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Mulanguli o ṋea hafhu u ṅwaliswa u bva kha {{from}} u ya kha {{to}} . Muhumbulo: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ndingedzo ya u ṅwalisa yo dovhololwaho nga muṅwe mufarisi yo hanedzwa",
+      "BOOKING_CANCELLED": "Booking yo khanselwa. Muhumbulo: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Vhuṋe ha mushumo ho vhuyelela kha mufarisani",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "U fanelea ha khomishini zwo khanselwa nga u buka",
+      "COMMISSION_ELIGIBILITY_RESTORED": "U tea ha khomishini zwo vhuyedzedzwa kha u buka huswa"
     }
   }
 }

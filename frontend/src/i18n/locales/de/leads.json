@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Gebucht",
-    "pending": "Ausstehend"
+    "pending": "Ausstehend",
+    "status": {
+      "CONFIRMED": "Gebucht",
+      "CANCELLED": "Buchung storniert"
+    }
   },
   "assign": {
     "unassigned": "Nicht zugewiesen",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Noch kein Projekt (nicht verwiesen)",
-    "notInList": "{{project}} (nicht in der Projektliste)"
+    "notInList": "{{project}} (nicht in der Projektliste)",
+    "protectionDays_one": "{{count}} -Tagesschutz",
+    "protectionDays_other": "{{count}} -Tagesschutz"
   },
   "journey": {
     "customer": "Kunde",
@@ -76,7 +82,14 @@
     "progressHistory": "Fortschrittsgeschichte",
     "timesIn": "(Zeiten in {{timezone}} )",
     "backToMyLeads": "Zurück zu „Meine Leads“.",
-    "editLead": "Lead bearbeiten"
+    "editLead": "Lead bearbeiten",
+    "disputeBanner": "Ein anderer Partner hat die Eigentumsrechte an diesem Kunden bestritten. Ein Leadrat Administrator überprüft es – Ihr Schutz bleibt bestehen, bis er eine Entscheidung trifft.",
+    "booking": "Buchung",
+    "commission": "Kommission",
+    "notBooked": "Nicht gebucht",
+    "cancelledOn": "Abgesagt am {{date}} .",
+    "cancelReason": "Grund: {{reason}}",
+    "cancelledHint": "Der Bauträger hat die Buchung storniert – das operative Eigentum liegt wieder bei Ihnen und der Provisionsanspruch entfällt. Sie wird wiederhergestellt, wenn der Lead erneut gebucht wird."
   },
   "referral": {
     "NOT_REFERRED": "Nicht verwiesen (kein Projekt)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Builder akzeptierte die Empfehlung",
       "REFERRAL_REJECTED": "Der Bauunternehmer lehnte die Überweisung ab. Grund: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Der Administrator hat den Duplikatschutz vorzeitig freigegeben. Grund: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Der Administrator hat die Registrierung von {{from}} auf {{to}} neu zugewiesen. Grund: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Der Administrator hat die Registrierung von {{from}} auf {{to}} neu zugewiesen. Grund: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ein doppelter Registrierungsversuch eines anderen Partners wurde abgelehnt",
+      "BOOKING_CANCELLED": "Buchung storniert. Grund: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Das operative Eigentum ging an den Partner zurück",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Mit der Buchung entfällt der Provisionsanspruch",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Provisionsberechtigung für die neue Buchung wiederhergestellt",
+      "OWNERSHIP_DISPUTE_RAISED": "Ein anderer Partner hat die Inhaberschaft dieses Kunden bestritten – ein Leadrat Administrator wird dies überprüfen",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Der Eigentumsstreit für diesen Kunden wurde zurückgezogen. Ihr Eigentum bleibt unverändert",
+      "OWNERSHIP_DISPUTE_UPHELD": "Der Eigentumsstreit für diesen Kunden wurde überprüft. Ihr Eigentumsrecht wurde bestätigt",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Registriert, nachdem Ihr Eigentumsstreit zu Ihren Gunsten entschieden wurde. Hinweis: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Schutz beendet: Ein Eigentumsstreit wurde zugunsten eines anderen Partners entschieden. Hinweis: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Diese Telefonnummer ist für {{country}} nicht gültig.",
     "COUNTRY_MISMATCH": "Bitte wählen Sie den richtigen Ländercode aus.",
     "NOT_MOBILE": "Bitte geben Sie eine Mobilfunknummer ein, keine Festnetznummer."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Provisionsfähig",
+      "PENDING": "Kommission steht noch aus",
+      "CANCELLED": "Provision storniert"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Dir zugeschrieben",
+      "DISPUTED": "Namensnennung umstritten"
+    }
+  },
+  "result": {
+    "none": "Kein Registrierungsergebnis zum Anzeigen. Registrieren Sie zunächst einen Lead.",
+    "acceptedTitle": "Lead registriert",
+    "rejectedTitle": "Lead nicht registriert",
+    "protectionWindow": "Schutzfenster",
+    "protectedUntil": "Geschützt bis",
+    "openLead": "Offene Führung",
+    "addAnother": "Fügen Sie einen weiteren Lead hinzu",
+    "duplicate": "Duplikat – bereits geschützt",
+    "duplicateHint": "Dieser Kunde ist für dieses Projekt bereits durch eine andere Registrierung geschützt, daher konnte es für Sie nicht registriert werden.",
+    "existingProtectedUntil": "Bestehende Registrierung geschützt bis"
+  },
+  "disputes": {
+    "title": "Meine Streitigkeiten",
+    "intro": "Eigentumsstreitigkeiten, die Sie für Kunden erhoben haben, die als Duplikate abgelehnt wurden. Ein Leadrat Administrator überprüft jeden einzelnen.",
+    "empty": "Sie haben keine Einwände erhoben. Wenn ein von Ihnen mitgebrachter Kunde als Duplikat abgelehnt wird, können Sie dies anhand des Registrierungsergebnisses anfechten.",
+    "columns": {
+      "dispute": "Disput",
+      "reason": "Dein Grund",
+      "outcome": "Ergebnis"
+    },
+    "status": {
+      "OPEN": "Wird überprüft",
+      "UPHELD": "Nicht zu Ihren Gunsten",
+      "OVERTURNED": "Zu Ihren Gunsten entschieden",
+      "WITHDRAWN": "Zurückgezogen"
+    },
+    "awaitingReview": "Warten auf die Überprüfung durch den Administrator",
+    "openNewLead": "Öffnen Sie Ihren Lead {{id}}",
+    "withdraw": "Zurückziehen",
+    "withdrawConfirm": "Ihren Einspruch für {{name}} zurückziehen? Der aktuelle Besitz bleibt bestehen.",
+    "raise": "Eigentumsstreit",
+    "raiseTitle": "Eigentumsstreit",
+    "raiseHint": "Wenn dieser Kunde zuerst zu Ihnen kam, erklären Sie, warum. Ein Leadrat Administrator wird es überprüfen; Entscheidet es sich zu Ihren Gunsten, wird der Lead für Sie registriert.",
+    "reasonLabel": "Warum gehört dieser Kunde Ihnen?",
+    "reasonMin_one": "Mindestens {{count}} Zeichen.",
+    "reasonMin_other": "Mindestens {{count}} Zeichen.",
+    "submit": "Streitfall senden",
+    "notProtected": "Niemand hat mehr Schutz für diesen Kunden für dieses Projekt – Sie können den Lead jetzt registrieren.",
+    "raised": "Einspruch {{id}} zur Überprüfung gesendet.",
+    "viewAll": "Sehen Sie sich meine Streitigkeiten an"
+  },
+  "dashboard": {
+    "title": "Armaturenbrett",
+    "period": "Zeitraum",
+    "lastDays_one": "{{count}} Tag",
+    "lastDays_other": "{{count}} Tage",
+    "emptyTitle": "Willkommen! Sie haben noch keine Leads.",
+    "emptyHint": "Registrieren Sie Ihren ersten Lead – Ihre Pipeline, Buchungen und Schutzfristen werden hier angezeigt.",
+    "tiles": {
+      "leads": "Gesamtzahl der Leads",
+      "newInPeriod_one": "{{count}} neu in diesem Zeitraum",
+      "newInPeriod_other": "{{count}} neu in diesem Zeitraum",
+      "accepted": "Akzeptiert",
+      "booked": "Gebucht",
+      "bookedInPeriod_one": "{{count}} in diesem Zeitraum gebucht",
+      "bookedInPeriod_other": "{{count}} in diesem Zeitraum gebucht",
+      "conversion": "Konvertierung",
+      "conversionHint": "Gebuchte Leads als Anteil der akzeptierten Leads",
+      "protectedNow": "Jetzt geschützt",
+      "expiringSoon_one": "Der Schutz endet in {{count}} Tag",
+      "expiringSoon_other": "Der Schutz endet in {{count}} Tagen",
+      "disputedNow": "Von anderen bestritten",
+      "disputedNowHint": "Ihre Leads mit einem offenen Eigentumsstreit mit einem anderen Partner",
+      "commissionEligible": "Provisionsfähig",
+      "commissionCancelled_one": "{{count}} abgesagt",
+      "commissionCancelled_other": "{{count}} abgesagt"
+    },
+    "chart": {
+      "title_one": "Registrierungen und Buchungen pro Tag – letzter {{count}} Tag",
+      "title_other": "Registrierungen und Buchungen pro Tag – letzte {{count}} Tage",
+      "registrations": "Anmeldungen",
+      "bookings": "Buchungen"
+    },
+    "byStage": "Führt nach Status",
+    "bySource": "Leads nach Quelle",
+    "byReferral": "Leads nach Empfehlungsstatus",
+    "myDisputes": "Von Ihnen vorgebrachte Streitigkeiten",
+    "noDisputes": "Es wurden keine Streitigkeiten erhoben.",
+    "unknown": "Nicht festgelegt",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Externes CRM (simuliert)",
+      "PARTNER_CRM": "Von Ihrem Team hinzugefügt",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integration",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Der Schutz läuft am nächsten {{count}} Tag ab",
+    "expiringTitle_other": "Der Schutz läuft in den nächsten {{count}} Tagen ab",
+    "expiringEmpty": "In diesem Fenster verliert kein Blei seinen Schutz."
   }
 }

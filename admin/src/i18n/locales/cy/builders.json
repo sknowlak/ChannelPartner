@@ -43,7 +43,9 @@
       "name": "Enw",
       "city": "Dinas",
       "status": "Statws",
-      "actions": "Gweithredoedd"
+      "actions": "Gweithredoedd",
+      "protection": "Amddiffyniad dyblyg",
+      "matchOn": "Mae dyblyg yn cyfateb ymlaen"
     },
     "closeReferrals": "Cau ar gyfer cyfeiriadau",
     "reopen": "Ailagor",
@@ -55,6 +57,33 @@
       "add": "Ychwanegu Prosiect",
       "created": "Wedi creu {{name}} ."
     },
-    "back": "Yn ôl i Adeiladwyr"
+    "back": "Yn ôl i Adeiladwyr",
+    "protection": {
+      "days_zero": "{{count}} diwrnod",
+      "days_one": "{{count}} diwrnod",
+      "days_two": "{{count}} diwrnod",
+      "days_few": "{{count}} diwrnod",
+      "days_many": "{{count}} diwrnod",
+      "days_other": "{{count}} diwrnod",
+      "globalDays_zero": "Rhagosodedig byd-eang ( {{count}} diwrnod)",
+      "globalDays_one": "Rhagosodedig byd-eang ( {{count}} diwrnod)",
+      "globalDays_two": "Rhagosodedig byd-eang ( {{count}} diwrnod)",
+      "globalDays_few": "Rhagosodedig byd-eang ( {{count}} diwrnod)",
+      "globalDays_many": "Rhagosodedig byd-eang ( {{count}} diwrnod)",
+      "globalDays_other": "Rhagosodedig byd-eang ( {{count}} diwrnod)",
+      "globalDefault": "Rhagosodedig byd-eang",
+      "placeholder": "Diwrnodau amddiffyn (gwag = rhagosodedig byd-eang)",
+      "saved": "Diweddarwyd amddiffyniad dyblyg ar gyfer {{name}} .",
+      "hint": "Amddiffyniad dyblyg: 1-3650 diwrnod, neu gadewch yn wag i ddefnyddio'r rhagosodiad byd-eang o'r Gosodiadau. Mae newid yn berthnasol i gofrestriadau newydd yn unig - mae'r rhai sy'n bodoli'n dal i ddod i ben."
+    },
+    "matching": {
+      "global": "Rhagosodedig byd-eang",
+      "globalWith": "Rhagosodedig byd-eang ( {{fields}} )",
+      "mobile": "Rhif ffôn symudol",
+      "email": "Ebost",
+      "both": "Rhif ffôn symudol + e-bost",
+      "saved": "Diweddarwyd paru dyblyg ar gyfer {{name}}",
+      "hint": "Pa fanylion sy'n gwneud dau gofrestriad yr un cwsmer ar gyfer prosiect. Mae newidiadau yn berthnasol i sieciau dyblyg o hyn ymlaen; nid yw amddiffyniad presennol yn cael ei effeithio."
+    }
   }
 }

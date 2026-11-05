@@ -49,8 +49,73 @@
       "newPartnerId": "ID Rakan Baru",
       "reason": "Kebuah (diguna)",
       "apply": "Kena Override",
-      "applying": "Ngena..."
+      "applying": "Ngena...",
+      "cancelBookingHint": "Pengawa nginsil nanda booking enggau komisyen iya udah dikinsil, mulaika hak ngempu operasyen ngagai kaling, lalu ngasuh tukang ngaga booking lead tu baru.",
+      "cancelBookingConfirm": "Kinsil booking tu? Komisyen iya dikinsil mega. Tu dilog enggau nama sereta kebuah nuan."
     },
-    "timelineTitle": "Garis Maya Audit (pengawa ngerejista tu)"
+    "timelineTitle": "Garis Maya Audit (pengawa ngerejista tu)",
+    "bookingStatus": "Status Pemesan",
+    "commissionAttribution": "Atribusyen Komisyen",
+    "disputeOpen": "Penyarut ngempu tebuka ba pelanggan tu - siku agi kaling madahka nya enggi sida. Iya diputuska ba lambar Penyarut.",
+    "viewDisputes": "Peda laya",
+    "cancellation": {
+      "title": "Tempahan udah dikinsil",
+      "hint": "Pengawa booking enggau komisyen iya dikinsil; pengempu operasyen udah pulai enggau kaling lalu tukang ngaga tau booking lead tu baru.",
+      "at": "Dikinsil pukul 10.00.",
+      "by": "Dikinsil ulih",
+      "reason": "Ketegal"
+    }
+  },
+  "disputes": {
+    "title": "Penyarut Pengempu",
+    "hint": "Kaling ti ditulak ngerejista nyadi duplikat tau nyakal sapa ti ngempu pelanggan nya. Tinjau baru kededua piak lalu mutuska.",
+    "statusFilter": "Status penyarut",
+    "allStatuses": "Semua status",
+    "empty": "Nadai laya enggau status tu.",
+    "columns": {
+      "dispute": "Ngelaban",
+      "customer": "Pelangan",
+      "project": "Projek",
+      "raisedBy": "Diangkatka ulih",
+      "heldBy": "Pengempu ke diatu",
+      "status": "Pangkat",
+      "raisedAt": "Diangkatka kena"
+    },
+    "detail": {
+      "title": "Penyarut {{id}}",
+      "raisedOn": "Diangkatka {{date}}",
+      "raisingTitle": "Diangkatka ulih",
+      "holderTitle": "Pengempu ke diatu",
+      "partner": "Seduai",
+      "raisedBy": "Dianjung ulih",
+      "customerName": "Pelangan",
+      "mobile": "Telepon",
+      "alternateMobile": "Mobile ganti",
+      "email": "Emel",
+      "project": "Projek",
+      "reason": "Kebuah sida .",
+      "registration": "Pengawa ngerejista",
+      "registeredAt": "Direjista ba",
+      "referral": "Rujukan",
+      "heldMissing": "Pengawa ngerejista ti dipegai enda ulih ditemu.",
+      "resolutionTitle": "Pemutus",
+      "outcome": "Pengujung",
+      "note": "Nota",
+      "decidedBy": "Diputuska ulih",
+      "decidedAt": "Diputuska ba",
+      "newRegistration": "Rejista baru",
+      "decideTitle": "Mutuska penyarut tu .",
+      "noteLabel": "Nota nerangka pemutus (diguna)",
+      "noteRequired": "Nulis nota dikena mutuska.",
+      "uphold": "Ngetanka",
+      "overturn": "Tumbang",
+      "upholdEffect": "{{holder}} nyaga pelanggan. Penyarut nya ditutup lalu nadai utai bukai berubah.",
+      "overturnEffect": "Pengawa nyaga duplikat {{holder}} udah abis diatu lalu pelanggan direjista ungkup {{partner}} nyadi ngerejista baru.",
+      "heldBookedHelp": "Pelanggan tu di booking nengah pengempu ke diatu. Batalka dulu booking nya (Admin Override ba pengawa ngerejista), udah nya ubah:",
+      "confirmTitle": "Kati nuan tentu nemu?",
+      "confirmUphold": "Iya, ngetanka",
+      "confirmOverturn": "Iya, tumbang",
+      "back": "Pulai ngagai Penyarut"
+    }
   }
 }

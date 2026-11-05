@@ -30,7 +30,8 @@
       "registered": "Ca gɔ̱r piny"
     },
     "booked": "Ca gɔ̱r",
-    "empty": "/Thiɛlɛ referral mi̱ ŋot."
+    "empty": "/Thiɛlɛ referral mi̱ ŋot.",
+    "bookingCancelled": "Booking ca woc"
   },
   "detail": {
     "customer": "Ra̱̱m mi ko̱k",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Booking ca kɔnpääm.",
       "accepted": "Referral cua nhɔk.",
-      "rejected": "Referral cua lo̱k."
+      "rejected": "Referral cua lo̱k.",
+      "bookingCancelled": "Booking ca woc."
     },
-    "backToReferrals": "Luny kä Referrali̱"
+    "backToReferrals": "Luny kä Referrali̱",
+    "bookingCancelled": "Booking ca woc",
+    "cancelBooking": "Känthɛl Boo̱kiŋ",
+    "cancelReasonLabel": "Luɔt in ca woc (nyooth jɛ kä ram min lät kɛɛl kɛ jɛ) *",
+    "cancelBookingHint": "Kä min tekɛ kuak lätni bɛ loc kä ram min lät kɛ jɛ kä ba cuɔ̱ŋdiɛn kɛ kɔmmi̱ciɔn woc. Kä lead ba nyɔk kɛ book kɛ kɔrɛ.",
+    "cancelBookingConfirm": "Kämni booking raar"
   },
   "history": {
     "title": "Ca̱a̱̱l",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Kɔmmi̱ciɔn ɛli̱gi̱li̱ti̱ cua cak",
       "HANDOVER_COMPLETED": "Handover cɛ thuɔ̱k",
       "ADMIN_PROTECTION_RELEASED": "Admin cɛ dupli̱kët protekciɔn ka̱m raar kɛ nhiam. Luɔt: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin cuɛ nyɔk kɛ läth lät kä {{from}} ɛ wä kä {{to}} . Luɔt: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin cuɛ nyɔk kɛ läth lät kä {{from}} ɛ wä kä {{to}} . Luɔt: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ɛn ɣɔ̱n kä ɣöö ba ciötdɛ gɔ̱r piny ɛ rami̱ dɔ̱diɛn cua lo̱k",
+      "BOOKING_CANCELLED": "Booking ca woc. Luɔt: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Öperɛcinal öwnɛri̱thi̱p cuɛ luny kä ram min lät kɛɛl",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kɔmmi̱ciɔn ɛli̱gi̱li̱ti̱ cua woc kɛ booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kɔmmi̱cin ɛli̱gi̱li̱ti̱ cua luɔ̱c jɔk kɛ kui̱ booking in pay tuɔɔk"
     }
   }
 }

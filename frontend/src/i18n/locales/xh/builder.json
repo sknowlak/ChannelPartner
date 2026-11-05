@@ -30,7 +30,8 @@
       "registered": "Ibhalisiwe"
     },
     "booked": "Ibhukishiwe",
-    "empty": "Akukho bathumeli okwangoku."
+    "empty": "Akukho bathumeli okwangoku.",
+    "bookingCancelled": "Ukubhukisha kurhoxisiwe"
   },
   "detail": {
     "customer": "Umthengi",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Ukubhukisha kuqinisekisiwe.",
       "accepted": "Udluliselo lwamkelwe.",
-      "rejected": "Ugqithiso lwaliwe."
+      "rejected": "Ugqithiso lwaliwe.",
+      "bookingCancelled": "Ukubhukisha kurhoxisiwe."
     },
-    "backToReferrals": "Buyela kuBonelelo"
+    "backToReferrals": "Buyela kuBonelelo",
+    "bookingCancelled": "Ukubhukisha kurhoxisiwe",
+    "cancelBooking": "Rhoxisa ukubhukisha",
+    "cancelReasonLabel": "Isizathu sokurhoxisa (siboniswe kwiqabane) *",
+    "cancelBookingHint": "Ubunini bokusebenza bubuyela kwiqabane kwaye ukufaneleka kwabo kwekhomishini kucinyiwe. Ukhokelo lungabhukishwa kwakhona kamva.",
+    "cancelBookingConfirm": "Rhoxisa ukubhukisha"
   },
   "history": {
     "title": "Imbali",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Ukufaneleka kweKhomishini kwenziwa",
       "HANDOVER_COMPLETED": "Unikezelo lugqityiwe",
       "ADMIN_PROTECTION_RELEASED": "Umlawuli ukhuphe ukhuseleko oluphindiweyo kwangoko. Isizathu: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Umlawuli ukwabele ubhaliso ukusuka {{from}} ukuya {{to}} . Isizathu: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Umlawuli ukwabele ubhaliso ukusuka {{from}} ukuya {{to}} . Isizathu: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Iinzame zokubhalisa eziphindiweyo zelinye iqabane ziye zakhatywa",
+      "BOOKING_CANCELLED": "Ukubhukisha kurhoxisiwe. Isizathu: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Ubunini obusebenzayo bubuyiselwe kwiqabane",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Ukufaneleka kweKhomishini kurhoxisiwe ngokubhukisha",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Ukufaneleka kweKhomishini kubuyiswe ukubhukisha okutsha"
     }
   }
 }

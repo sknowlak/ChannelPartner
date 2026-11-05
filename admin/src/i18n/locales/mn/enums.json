@@ -25,11 +25,13 @@
   },
   "eligibilityStatus": {
     "ELIGIBLE": "Боломжтой",
-    "PENDING": "Хүлээгдэж байна"
+    "PENDING": "Хүлээгдэж байна",
+    "CANCELLED": "Цуцлагдсан"
   },
   "overrideAction": {
     "RELEASE_PROTECTION": "Давхардсан хамгаалалтыг эрт гарга",
-    "REASSIGN_PARTNER": "Өөр түнш рүү дахин хуваарилах"
+    "REASSIGN_PARTNER": "Өөр түнш рүү дахин хуваарилах",
+    "CANCEL_BOOKING": "Захиалгаа цуцлах"
   },
   "dataType": {
     "TEXT": "Текст",
@@ -48,5 +50,19 @@
   "adminRole": {
     "SUPER_ADMIN": "Супер админ",
     "ADMIN": "Админ"
+  },
+  "bookingStatus": {
+    "CONFIRMED": "Батлагдсан",
+    "CANCELLED": "Цуцлагдсан"
+  },
+  "attributionStatus": {
+    "ATTRIBUTED": "Холбогдох",
+    "DISPUTED": "Маргаантай"
+  },
+  "disputeStatus": {
+    "OPEN": "Нээлттэй",
+    "UPHELD": "Батлагдсан",
+    "OVERTURNED": "Хөмөрсөн",
+    "WITHDRAWN": "Татаж авсан"
   }
 }

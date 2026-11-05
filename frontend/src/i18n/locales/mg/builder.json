@@ -30,7 +30,8 @@
       "registered": "voasoratra anarana"
     },
     "booked": "namandrika",
-    "empty": "Tsy mbola misy referral."
+    "empty": "Tsy mbola misy referral.",
+    "bookingCancelled": "Nofoanana ny famandrihana"
   },
   "detail": {
     "customer": "mpanjifa",
@@ -53,9 +54,15 @@
     "notice": {
       "booked": "Nohamafisina ny famandrihana.",
       "accepted": "Nekena ny fanondroana.",
-      "rejected": "Nolavina ny fanondroana."
+      "rejected": "Nolavina ny fanondroana.",
+      "bookingCancelled": "Nofoanana ny famandrihana."
     },
-    "backToReferrals": "Hiverina any amin'ny referrals"
+    "backToReferrals": "Hiverina any amin'ny referrals",
+    "bookingCancelled": "Nofoanana ny famandrihana",
+    "cancelBooking": "Atsaharo ny famandrihana",
+    "cancelReasonLabel": "Antony nanafoanana (naseho tamin'ny mpiara-miasa) *",
+    "cancelBookingHint": "Miverina any amin'ny mpiara-miombon'antoka ny fananan'asa ary nofoanana ny fahazoan'izy ireo vaomiera. Afaka mamandrika indray ny fitarihana rehefa avy eo.",
+    "cancelBookingConfirm": "Manafoana ny famandrihana"
   },
   "history": {
     "title": "FIAINANY TALOHA",
@@ -84,7 +91,12 @@
       "COMMISSION_ELIGIBILITY_CREATED": "Natsangana ny fahazoan-dàlana ho an'ny komisiona",
       "HANDOVER_COMPLETED": "Vita ny fanomezana",
       "ADMIN_PROTECTION_RELEASED": "Namoaka fiarovana dika mitovy aloha ny Admin. Antony: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Nafindran'ny mpitantana ny fisoratana anarana manomboka amin'ny {{from}} mankany {{to}} . Antony: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Nafindran'ny mpitantana ny fisoratana anarana manomboka amin'ny {{from}} mankany {{to}} . Antony: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Nolavina ny andrana fisoratana anarana dika mitovy nataon'ny mpiara-miasa iray hafa",
+      "BOOKING_CANCELLED": "Nofoanana ny famandrihana. Antony: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Niverina tamin'ny mpiara-miombon'antoka ny fananana miasa",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Nofoanana ny fahazoan'ny komity tamin'ny famandrihana",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Naverina tamin'ny laoniny ny fahafahan'ny komisiona ho an'ny famandrihana vaovao"
     }
   }
 }

@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Wedi archebu",
-    "pending": "Arfaeth"
+    "pending": "Arfaeth",
+    "status": {
+      "CONFIRMED": "Wedi archebu",
+      "CANCELLED": "Archebu wedi'i ganslo"
+    }
   },
   "assign": {
     "unassigned": "Heb ei aseinio",
@@ -58,7 +62,13 @@
   },
   "project": {
     "none": "Dim prosiect eto (heb gyfeirio)",
-    "notInList": "{{project}} (ddim yn y rhestr prosiectau)"
+    "notInList": "{{project}} (ddim yn y rhestr prosiectau)",
+    "protectionDays_zero": "{{count}} -diogelwch dydd",
+    "protectionDays_one": "{{count}} -diogelwch dydd",
+    "protectionDays_two": "{{count}} -diogelwch dydd",
+    "protectionDays_few": "{{count}} -diogelwch dydd",
+    "protectionDays_many": "{{count}} -diogelwch dydd",
+    "protectionDays_other": "{{count}} -diogelwch dydd"
   },
   "journey": {
     "customer": "Cwsmer",
@@ -76,7 +86,14 @@
     "progressHistory": "Hanes Cynnydd",
     "timesIn": "(amseroedd yn {{timezone}} )",
     "backToMyLeads": "Yn ôl at Fy Arweinwyr",
-    "editLead": "Golygu Arweiniol"
+    "editLead": "Golygu Arweiniol",
+    "disputeBanner": "Mae partner arall wedi dadlau ynghylch perchnogaeth y cwsmer hwn. Mae gweinyddwr Leadrat yn ei adolygu - mae eich amddiffyniad yn aros yn ei le nes iddynt benderfynu.",
+    "booking": "Archebu",
+    "commission": "Comisiwn",
+    "notBooked": "Heb ei archebu",
+    "cancelledOn": "Wedi'i ganslo ar {{date}} .",
+    "cancelReason": "Rheswm: {{reason}}",
+    "cancelledHint": "Mae'r adeiladwr wedi canslo'r archeb - mae perchnogaeth weithredol yn ôl gyda chi ac mae cymhwysedd comisiwn yn cael ei ganslo. Caiff ei adfer os caiff y plwm ei archebu eto."
   },
   "referral": {
     "NOT_REFERRED": "Heb ei gyfeirio (dim prosiect)",
@@ -168,7 +185,17 @@
       "REFERRAL_ACCEPTED": "Derbyniodd yr adeiladwr yr atgyfeiriad",
       "REFERRAL_REJECTED": "Gwrthododd yr adeiladwr yr atgyfeiriad. Rheswm: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Rhyddhaodd y gweinyddwr amddiffyniad dyblyg yn gynnar. Rheswm: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Mae'r gweinyddwr wedi ailbennu cofrestriad o {{from}} i {{to}} . Rheswm: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Mae'r gweinyddwr wedi ailbennu cofrestriad o {{from}} i {{to}} . Rheswm: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Gwrthodwyd ymgais gofrestru ddyblyg gan bartner arall",
+      "BOOKING_CANCELLED": "Archebu wedi'i ganslo. Rheswm: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Dychwelodd perchnogaeth weithredol i'r partner",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Cymhwysedd y Comisiwn wedi'i ganslo gyda'r archeb",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Cymhwysedd y Comisiwn wedi'i adfer ar gyfer yr archeb newydd",
+      "OWNERSHIP_DISPUTE_RAISED": "Roedd partner arall yn anghytuno â pherchnogaeth y cwsmer hwn - bydd gweinyddwr Leadrat yn ei adolygu",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Tynnwyd yr anghydfod perchnogaeth ar y cwsmer hwn yn ôl - nid yw eich perchnogaeth wedi newid",
+      "OWNERSHIP_DISPUTE_UPHELD": "Adolygwyd yr anghydfod perchnogaeth ar y cwsmer hwn - mae eich perchnogaeth wedi'i chadarnhau",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Wedi'ch cofrestru ar ôl i'ch anghydfod perchnogaeth gael ei benderfynu o'ch plaid. Nodyn: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Daeth amddiffyniad i ben: penderfynwyd anghydfod perchnogaeth o blaid partner arall. Nodyn: {{note}}"
     }
   },
   "columnsPanel": {
@@ -192,5 +219,140 @@
     "INVALID_FOR_COUNTRY": "Nid yw'r rhif ffôn hwn yn ddilys ar gyfer {{country}} .",
     "COUNTRY_MISMATCH": "Dewiswch y cod gwlad cywir.",
     "NOT_MOBILE": "Rhowch rif ffôn symudol, nid llinell dir."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Comisiwn yn gymwys",
+      "PENDING": "Comisiwn yn yr arfaeth",
+      "CANCELLED": "Comisiwn wedi'i ganslo"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Wedi'i briodoli i chi",
+      "DISPUTED": "Anghydweld ynghylch priodoli"
+    }
+  },
+  "result": {
+    "none": "Dim canlyniad cofrestru i'w ddangos. Cofrestrwch arweinydd yn gyntaf.",
+    "acceptedTitle": "Arweiniol cofrestredig",
+    "rejectedTitle": "Arwain heb ei gofrestru",
+    "protectionWindow": "Ffenest Diogelu",
+    "protectedUntil": "Gwarchodedig Tan",
+    "openLead": "Arwain Agored",
+    "addAnother": "Ychwanegu Arwain Arall",
+    "duplicate": "Dyblyg - wedi'i ddiogelu eisoes",
+    "duplicateHint": "Mae'r cwsmer hwn eisoes wedi'i ddiogelu ar gyfer y prosiect hwn gan gofrestriad arall, felly ni ellid ei gofrestru ar eich cyfer.",
+    "existingProtectedUntil": "Cofrestriad presennol wedi'i ddiogelu tan"
+  },
+  "disputes": {
+    "title": "Fy Anghydfodau",
+    "intro": "Anghydfodau perchnogaeth a godwyd gennych ar gyfer cwsmeriaid a wrthodwyd fel copïau dyblyg. Mae gweinyddwr Leadrat yn adolygu pob un.",
+    "empty": "Nid ydych wedi codi unrhyw anghydfod. Os gwrthodir cwsmer y daethoch ag ef i mewn fel copi dyblyg, gallwch ei ddadlau o ganlyniad y cofrestriad.",
+    "columns": {
+      "dispute": "Anghydfod",
+      "reason": "Eich rheswm",
+      "outcome": "Canlyniad"
+    },
+    "status": {
+      "OPEN": "Dan adolygiad",
+      "UPHELD": "Ddim o'ch plaid",
+      "OVERTURNED": "Wedi'i benderfynu o'ch plaid",
+      "WITHDRAWN": "Tynnwyd yn ôl"
+    },
+    "awaitingReview": "Aros am adolygiad gweinyddol",
+    "openNewLead": "Agorwch eich arweiniad {{id}}",
+    "withdraw": "Tynnu'n ôl",
+    "withdrawConfirm": "Tynnu eich anghydfod yn ôl ar gyfer {{name}} ? Mae'r berchnogaeth bresennol yn aros fel y mae.",
+    "raise": "Perchnogaeth anghydfod",
+    "raiseTitle": "Perchnogaeth anghydfod",
+    "raiseHint": "Os daeth y cwsmer hwn atoch chi gyntaf, eglurwch pam. Bydd gweinyddwr Leadrat yn ei adolygu; os ydynt yn penderfynu o'ch plaid, mae'r arweinydd wedi'i gofrestru ar eich cyfer.",
+    "reasonLabel": "Pam mai eich cwsmer chi yw'r cwsmer hwn?",
+    "reasonMin_zero": "O leiaf {{count}} nod.",
+    "reasonMin_one": "O leiaf {{count}} nod.",
+    "reasonMin_two": "O leiaf {{count}} nod.",
+    "reasonMin_few": "O leiaf {{count}} nod.",
+    "reasonMin_many": "O leiaf {{count}} nod.",
+    "reasonMin_other": "O leiaf {{count}} nod.",
+    "submit": "Anfon Anghydfod",
+    "notProtected": "Nid oes neb yn amddiffyn y cwsmer hwn ar gyfer y prosiect hwn mwyach - gallwch gofrestru'r arweinydd nawr.",
+    "raised": "Anghydfod {{id}} wedi'i anfon i'w adolygu.",
+    "viewAll": "Gweld fy anghydfodau"
+  },
+  "dashboard": {
+    "title": "Dangosfwrdd",
+    "period": "Cyfnod",
+    "lastDays_zero": "{{count}} diwrnod",
+    "lastDays_one": "{{count}} diwrnod",
+    "lastDays_two": "{{count}} diwrnod",
+    "lastDays_few": "{{count}} diwrnod",
+    "lastDays_many": "{{count}} diwrnod",
+    "lastDays_other": "{{count}} diwrnod",
+    "emptyTitle": "Croeso! Nid oes gennych unrhyw arweiniad eto.",
+    "emptyHint": "Cofrestrwch eich arweiniad cyntaf - bydd eich dyddiadau cau, archebion a diogelu yn ymddangos yma.",
+    "tiles": {
+      "leads": "Cyfanswm yn arwain",
+      "newInPeriod_zero": "{{count}} newydd yn y cyfnod hwn",
+      "newInPeriod_one": "{{count}} newydd yn y cyfnod hwn",
+      "newInPeriod_two": "{{count}} newydd yn y cyfnod hwn",
+      "newInPeriod_few": "{{count}} newydd yn y cyfnod hwn",
+      "newInPeriod_many": "{{count}} newydd yn y cyfnod hwn",
+      "newInPeriod_other": "{{count}} newydd yn y cyfnod hwn",
+      "accepted": "Derbyniwyd",
+      "booked": "Wedi archebu",
+      "bookedInPeriod_zero": "{{count}} wedi archebu yn y cyfnod hwn",
+      "bookedInPeriod_one": "{{count}} wedi archebu yn y cyfnod hwn",
+      "bookedInPeriod_two": "{{count}} wedi archebu yn y cyfnod hwn",
+      "bookedInPeriod_few": "{{count}} wedi archebu yn y cyfnod hwn",
+      "bookedInPeriod_many": "{{count}} wedi archebu yn y cyfnod hwn",
+      "bookedInPeriod_other": "{{count}} wedi archebu yn y cyfnod hwn",
+      "conversion": "Trosi",
+      "conversionHint": "Arweinwyr wedi'u harchebu fel cyfran o'r arweinwyr derbyniol",
+      "protectedNow": "Wedi'i warchod nawr",
+      "expiringSoon_zero": "Amddiffyn yn dod i ben ymhen {{count}} diwrnod",
+      "expiringSoon_one": "Amddiffyn yn dod i ben mewn {{count}} diwrnod",
+      "expiringSoon_two": "Amddiffyn yn dod i ben ymhen {{count}} diwrnod",
+      "expiringSoon_few": "Amddiffyn yn dod i ben ymhen {{count}} diwrnod",
+      "expiringSoon_many": "Amddiffyn yn dod i ben ymhen {{count}} diwrnod",
+      "expiringSoon_other": "Amddiffyn yn dod i ben ymhen {{count}} diwrnod",
+      "disputedNow": "Anghydweld gan eraill",
+      "disputedNowHint": "Eich arwain gydag anghydfod perchnogaeth agored gan bartner arall",
+      "commissionEligible": "Comisiwn yn gymwys",
+      "commissionCancelled_zero": "{{count}} wedi'i ganslo",
+      "commissionCancelled_one": "{{count}} wedi'i ganslo",
+      "commissionCancelled_two": "{{count}} wedi'i ganslo",
+      "commissionCancelled_few": "{{count}} wedi'i ganslo",
+      "commissionCancelled_many": "{{count}} wedi'i ganslo",
+      "commissionCancelled_other": "{{count}} wedi'i ganslo"
+    },
+    "chart": {
+      "title_zero": "Cofrestriadau ac archebion y dydd - y {{count}} diwrnod diwethaf",
+      "title_one": "Cofrestriadau ac archebion y dydd - {{count}} diwrnod olaf",
+      "title_two": "Cofrestriadau ac archebion y dydd - y {{count}} diwrnod diwethaf",
+      "title_few": "Cofrestriadau ac archebion y dydd - y {{count}} diwrnod diwethaf",
+      "title_many": "Cofrestriadau ac archebion y dydd - y {{count}} diwrnod diwethaf",
+      "title_other": "Cofrestriadau ac archebion y dydd - y {{count}} diwrnod diwethaf",
+      "registrations": "Cofrestriadau",
+      "bookings": "Archebion"
+    },
+    "byStage": "Yn arwain yn ôl statws",
+    "bySource": "Arweinwyr yn ôl ffynhonnell",
+    "byReferral": "Arweinwyr yn ôl statws atgyfeirio",
+    "myDisputes": "Anghydfodau a godwyd gennych",
+    "noDisputes": "Ni chodwyd unrhyw anghydfod.",
+    "unknown": "Heb ei osod",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "CRM allanol (efelychu)",
+      "PARTNER_CRM": "Ychwanegwyd gan eich tîm",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Integreiddio",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_zero": "Diogelu yn dod i ben yn y {{count}} diwrnod nesaf",
+    "expiringTitle_one": "Diogelu yn dod i ben yn y {{count}} diwrnod nesaf",
+    "expiringTitle_two": "Diogelu yn dod i ben yn y {{count}} diwrnod nesaf",
+    "expiringTitle_few": "Diogelu yn dod i ben yn y {{count}} diwrnod nesaf",
+    "expiringTitle_many": "Diogelu yn dod i ben yn y {{count}} diwrnod nesaf",
+    "expiringTitle_other": "Diogelu yn dod i ben yn y {{count}} diwrnod nesaf",
+    "expiringEmpty": "Nid oes unrhyw blwm yn colli ei amddiffyniad yn y ffenestr hon."
   }
 }

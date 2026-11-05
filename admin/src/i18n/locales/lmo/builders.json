@@ -43,7 +43,9 @@
       "name": "Nom",
       "city": "Citaa",
       "status": "Stat",
-      "actions": "Aziun"
+      "actions": "Aziun",
+      "protection": "Proteziun duplicada",
+      "matchOn": "I duplicat currispunden sü"
     },
     "closeReferrals": "Serra per i riferiment",
     "reopen": "Riaprir",
@@ -55,6 +57,25 @@
       "add": "Aggiungi pruget",
       "created": "Creà {{name}} ."
     },
-    "back": "Torna ai costrutur"
+    "back": "Torna ai costrutur",
+    "protection": {
+      "days_one": "{{count}} dì",
+      "days_other": "{{count}} dì",
+      "globalDays_one": "Predefinì global ( {{count}} dì)",
+      "globalDays_other": "Predefinì global ( {{count}} dì)",
+      "globalDefault": "Predefinì global",
+      "placeholder": "Dì de pruteziun (vœui = predefinì global)",
+      "saved": "Proteziun duplicada agiurnada per {{name}} .",
+      "hint": "Proteziun duplicada: 1-3650 dì, o lassà vœui per duperà el predefinì global di Impostaziun. Un cambiament se aplica sultant ai nœuf registraziun: quei esistent mantegnen la scadenza."
+    },
+    "matching": {
+      "global": "Predefinì global",
+      "globalWith": "Predefinì global ( {{fields}} )",
+      "mobile": "Numer del telefonin",
+      "email": "E-mail",
+      "both": "Numer del telefonin + e-mail",
+      "saved": "Corispundenz duplicà agiurnà per {{name}}",
+      "hint": "Che detai fan di dü registraziun istess client per un pruget. I cambiament se aplican ai cuntrol duplicà d’incœu; la proteziun esistent l’è minga influenzada."
+    }
   }
 }

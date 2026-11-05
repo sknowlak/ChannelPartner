@@ -49,8 +49,73 @@
       "newPartnerId": "ID Partner Newydd",
       "reason": "Rheswm (gofynnol)",
       "apply": "Gwneud cais Diystyru",
-      "applying": "Wrthi'n gwneud cais..."
+      "applying": "Wrthi'n gwneud cais...",
+      "cancelBookingHint": "Mae canslo yn nodi bod yr archeb a'i gomisiwn wedi'i ganslo, yn dychwelyd perchnogaeth weithredol i'r partner, ac yn gadael i'r adeiladwr archebu'r arweiniad hwn eto.",
+      "cancelBookingConfirm": "Canslo'r archeb hon? Mae ei gomisiwn yn cael ei ganslo hefyd. Mae hwn wedi'i gofnodi gyda'ch enw a'ch rheswm."
     },
-    "timelineTitle": "Llinell Amser Archwilio (y cofrestriad hwn)"
+    "timelineTitle": "Llinell Amser Archwilio (y cofrestriad hwn)",
+    "bookingStatus": "Statws Archebu",
+    "commissionAttribution": "Priodoliad y Comisiwn",
+    "disputeOpen": "Mae anghydfod perchenogaeth ar agor ar y cwsmer hwn - mae partner arall yn dweud mai nhw sydd â nhw. Penderfynir ar y dudalen Anghydfodau.",
+    "viewDisputes": "Gweld anghydfodau",
+    "cancellation": {
+      "title": "Archebu wedi'i ganslo",
+      "hint": "Mae'r archeb a'i gomisiwn yn cael eu canslo; mae perchnogaeth weithredol yn ôl gyda'r partner a gall yr adeiladwr archebu'r arweiniad hwn eto.",
+      "at": "Wedi'i ganslo yn",
+      "by": "Wedi'i ganslo gan",
+      "reason": "Rheswm"
+    }
+  },
+  "disputes": {
+    "title": "Anghydfodau Perchenogaeth",
+    "hint": "Gall partner y gwrthodwyd ei gofrestriad fel copi dyblyg ddadlau pwy sy'n berchen ar y cwsmer. Adolygu'r ddwy ochr a phenderfynu.",
+    "statusFilter": "Statws anghydfod",
+    "allStatuses": "Pob statws",
+    "empty": "Dim anghydfod gyda'r statws hwn.",
+    "columns": {
+      "dispute": "Anghydfod",
+      "customer": "Cwsmer",
+      "project": "Prosiect",
+      "raisedBy": "Codwyd gan",
+      "heldBy": "Perchennog presennol",
+      "status": "Statws",
+      "raisedAt": "Codi ar"
+    },
+    "detail": {
+      "title": "Anghydfod {{id}}",
+      "raisedOn": "Wedi codi {{date}}",
+      "raisingTitle": "Codwyd gan",
+      "holderTitle": "Perchennog presennol",
+      "partner": "Partner",
+      "raisedBy": "Cyflwynwyd gan",
+      "customerName": "Cwsmer",
+      "mobile": "Symudol",
+      "alternateMobile": "Symudol arall",
+      "email": "Ebost",
+      "project": "Prosiect",
+      "reason": "Eu rheswm",
+      "registration": "Cofrestru",
+      "registeredAt": "Wedi cofrestru ar",
+      "referral": "Cyfeirio",
+      "heldMissing": "Nid oedd modd dod o hyd i'r cofrestriad a gedwir.",
+      "resolutionTitle": "Penderfyniad",
+      "outcome": "Canlyniad",
+      "note": "Nodyn",
+      "decidedBy": "Penderfynwyd gan",
+      "decidedAt": "Wedi penderfynu",
+      "newRegistration": "Cofrestriad newydd",
+      "decideTitle": "Penderfynwch ar yr anghydfod hwn",
+      "noteLabel": "Nodyn yn egluro'r penderfyniad (gofynnol)",
+      "noteRequired": "Ysgrifennwch nodyn i benderfynu.",
+      "uphold": "Cynnal",
+      "overturn": "Gwrthdroi",
+      "upholdEffect": "Mae {{holder}} yn cadw'r cwsmer. Mae'r anghydfod ar gau a does dim byd arall yn newid.",
+      "overturnEffect": "Mae amddiffyniad dyblyg {{holder}} yn dod i ben nawr ac mae'r cwsmer wedi'i gofrestru ar gyfer {{partner}} fel cofrestriad newydd.",
+      "heldBookedHelp": "Mae'r cwsmer hwn yn cael ei archebu trwy'r perchennog presennol. Canslo'r archeb honno yn gyntaf (Gwrthwneud Gweinyddol ar y cofrestriad), yna gwrthdroi:",
+      "confirmTitle": "Ydych chi'n siŵr?",
+      "confirmUphold": "Ie, cadarnhewch",
+      "confirmOverturn": "Ie, dymchwelyd",
+      "back": "Yn ôl i Anghydfodau"
+    }
   }
 }

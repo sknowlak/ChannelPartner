@@ -37,7 +37,11 @@
   },
   "booking": {
     "booked": "Booked",
-    "pending": "Tseem tos"
+    "pending": "Tseem tos",
+    "status": {
+      "CONFIRMED": "Booked",
+      "CANCELLED": "Booking tso tseg"
+    }
   },
   "assign": {
     "unassigned": "Unassigned",
@@ -58,7 +62,9 @@
   },
   "project": {
     "none": "Tseem tsis tau muaj qhov project (tsis xa mus)",
-    "notInList": "{{project}} (tsis nyob hauv daim ntawv teev npe)"
+    "notInList": "{{project}} (tsis nyob hauv daim ntawv teev npe)",
+    "protectionDays_one": "{{count}} -hnub tiv thaiv",
+    "protectionDays_other": "{{count}} -hnub tiv thaiv"
   },
   "journey": {
     "customer": "Cov neeg siv khoom",
@@ -76,7 +82,14 @@
     "progressHistory": "Keeb kwm kev vam meej",
     "timesIn": "(lub sij hawm hauv {{timezone}} )",
     "backToMyLeads": "Rov qab mus rau Kuv Cov Thawj Coj",
-    "editLead": "Kho kom raug Lead"
+    "editLead": "Kho kom raug Lead",
+    "disputeBanner": "Lwm tus neeg koom tes tau tawm tsam kev ua tswv cuab ntawm tus neeg siv khoom no. Tus thawj coj Leadrat tab tom tshuaj xyuas nws - koj qhov kev tiv thaiv nyob hauv qhov chaw kom txog thaum lawv txiav txim siab.",
+    "booking": "Booking",
+    "commission": "Commission",
+    "notBooked": "Tsis booked",
+    "cancelledOn": "Tso tseg rau ntawm {{date}} .",
+    "cancelReason": "Yog vim li cas: {{reason}}",
+    "cancelledHint": "Tus neeg tsim khoom tau tso tseg qhov kev booking - cov tswv cuab ua haujlwm tau rov qab los nrog koj thiab kev tsim nyog tau txais txiaj ntsig raug muab tso tseg. Nws yog rov qab yog tias cov hlau lead yog booked dua."
   },
   "referral": {
     "NOT_REFERRED": "Tsis xa mus (tsis muaj qhov project)",
@@ -160,7 +173,17 @@
       "REFERRAL_ACCEPTED": "Builder lees txais kev xa mus",
       "REFERRAL_REJECTED": "Builder tsis lees paub qhov xa mus. Yog vim li cas: {{reason}}",
       "ADMIN_PROTECTION_RELEASED": "Admin tso tawm duplicate tiv thaiv ntxov. Yog vim li cas: {{reason}}",
-      "ADMIN_PARTNER_REASSIGNED": "Admin reassigned sau npe los ntawm {{from}} rau {{to}} . Yog vim li cas: {{reason}}"
+      "ADMIN_PARTNER_REASSIGNED": "Admin reassigned sau npe los ntawm {{from}} rau {{to}} . Yog vim li cas: {{reason}}",
+      "REGISTRATION_ATTEMPT_REJECTED_ANON": "Ib qho kev sim sau npe dua los ntawm lwm tus khub raug tsis lees paub",
+      "BOOKING_CANCELLED": "Booking cancelled. Yog vim li cas: {{reason}}",
+      "OPERATIONAL_OWNERSHIP_RETURNED": "Kev ua tswv cuab rov qab mus rau tus khub",
+      "COMMISSION_ELIGIBILITY_CANCELLED": "Kev tsim nyog tau txais nyiaj tso tseg nrog rau daim ntawv booking",
+      "COMMISSION_ELIGIBILITY_RESTORED": "Kev tsim nyog tau txais txiaj ntsig rov qab los rau qhov kev booking tshiab",
+      "OWNERSHIP_DISPUTE_RAISED": "Lwm tus khub tsis sib cav tswv yim ntawm cov neeg siv khoom no - Leadrat admin yuav tshuaj xyuas nws",
+      "OWNERSHIP_DISPUTE_WITHDRAWN": "Kev tsis sib haum xeeb ntawm tus tswv ntawm tus neeg siv khoom no raug rho tawm - koj cov tswv cuab tsis hloov pauv",
+      "OWNERSHIP_DISPUTE_UPHELD": "Kev tsis sib haum xeeb ntawm cov tswv cuab ntawm tus neeg siv khoom no tau raug tshuaj xyuas - koj cov tswv cuab tau lees paub",
+      "OWNERSHIP_DISPUTE_OVERTURNED": "Sau npe tom qab koj qhov kev tsis txaus siab ntawm cov tswv cuab tau txiav txim siab hauv koj qhov kev nyiam. Nco tseg: {{note}}",
+      "PROTECTION_ENDED_BY_DISPUTE": "Kev tiv thaiv xaus: qhov kev tsis sib haum xeeb ntawm tswv cuab tau txiav txim siab rau lwm tus khub. Nco tseg: {{note}}"
     }
   },
   "columnsPanel": {
@@ -184,5 +207,108 @@
     "INVALID_FOR_COUNTRY": "Tus xov tooj no tsis siv tau rau {{country}} .",
     "COUNTRY_MISMATCH": "Thov xaiv lub teb chaws raug.",
     "NOT_MOBILE": "Thov sau tus lej xov tooj ntawm tes, tsis yog xov tooj."
+  },
+  "commission": {
+    "eligibility": {
+      "ELIGIBLE": "Commission tsim nyog",
+      "PENDING": "Commission tseem tos",
+      "CANCELLED": "Commission tso tseg"
+    },
+    "attribution": {
+      "ATTRIBUTED": "Muab rau koj",
+      "DISPUTED": "Attribution sib cav"
+    }
+  },
+  "result": {
+    "none": "Tsis muaj npe tshwm sim los qhia. Sau npe ua ntej.",
+    "acceptedTitle": "Lead sau npe",
+    "rejectedTitle": "Lead tsis sau npe",
+    "protectionWindow": "Qhov rai tiv thaiv",
+    "protectedUntil": "Tiv thaiv kom txog thaum",
+    "openLead": "Qhib Lead",
+    "addAnother": "Ntxiv Lwm Tus Lead",
+    "duplicate": "Duplicate - twb tiv thaiv",
+    "duplicateHint": "Cov neeg siv khoom no twb muaj kev tiv thaiv rau txoj haujlwm no los ntawm lwm qhov kev sau npe, yog li nws tsis tuaj yeem sau npe rau koj.",
+    "existingProtectedUntil": "Kev sau npe uas twb muaj lawm tiv thaiv kom txog thaum"
+  },
+  "disputes": {
+    "title": "Kuv Cov Kev Tsis Txaus Siab",
+    "intro": "Cov tswv cuab tsis sib haum xeeb uas koj tau tsa rau cov neeg siv khoom uas tsis kam lees ua qhov sib npaug. Leadrat admin tshuaj xyuas txhua tus.",
+    "empty": "Koj tsis tau tsa tej kev tsis sib haum xeeb. Yog tias tus neeg siv khoom koj tau coj los rau hauv raug tsis lees paub raws li qhov sib npaug, koj tuaj yeem tawm tsam nws los ntawm kev sau npe.",
+    "columns": {
+      "dispute": "Kev tsis sib haum xeeb",
+      "reason": "Koj vim li cas",
+      "outcome": "Qhov tshwm sim"
+    },
+    "status": {
+      "OPEN": "Hauv kev tshuaj xyuas",
+      "UPHELD": "Tsis nyob rau hauv koj nyiam",
+      "OVERTURNED": "Txiav txim siab rau qhov koj nyiam",
+      "WITHDRAWN": "Tshem tawm"
+    },
+    "awaitingReview": "Tos rau admin tshuaj xyuas",
+    "openNewLead": "Qhib koj tus thawj coj {{id}}",
+    "withdraw": "Tshem tawm",
+    "withdrawConfirm": "Tshem koj qhov kev tsis txaus siab rau {{name}} ? Cov tswv cuab tam sim no tseem nyob li qub.",
+    "raise": "Sib cav tswv yim",
+    "raiseTitle": "Sib cav tswv yim",
+    "raiseHint": "Yog tias tus neeg siv khoom no tuaj rau koj ua ntej, piav qhia vim li cas. Ib tug Leadrat admin yuav tshuaj xyuas nws; yog tias lawv txiav txim siab hauv koj qhov kev nyiam, tus thawj coj tau sau npe rau koj.",
+    "reasonLabel": "Vim li cas tus neeg siv khoom no yog koj li?",
+    "reasonMin_one": "Yam tsawg kawg yog {{count}} cim.",
+    "reasonMin_other": "Yam tsawg kawg yog {{count}} cim.",
+    "submit": "Xa Kev Tsis Txaus Siab",
+    "notProtected": "Tsis muaj leej twg tuav kev tiv thaiv ntawm tus neeg siv khoom rau qhov project no ntxiv lawm - koj tuaj yeem sau npe tus thawj coj tam sim no.",
+    "raised": "Kev tsis sib haum xeeb {{id}} xa mus rau kev tshuaj xyuas.",
+    "viewAll": "Saib kuv qhov kev tsis sib haum xeeb"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "period": "Lub sijhawm",
+    "lastDays_one": "{{count}} hnub",
+    "lastDays_other": "{{count}} hnub",
+    "emptyTitle": "Zoo siab txais tos! Koj tseem tsis tau muaj tus thawj coj.",
+    "emptyHint": "Sau npe rau koj thawj zaug - koj lub raj xa dej, kev teem sijhawm thiab kev tiv thaiv hnub kawg yuav tshwm sim ntawm no.",
+    "tiles": {
+      "leads": "Tag nrho cov coj",
+      "newInPeriod_one": "{{count}} tshiab nyob rau lub sijhawm no",
+      "newInPeriod_other": "{{count}} tshiab nyob rau lub sijhawm no",
+      "accepted": "Txais",
+      "booked": "Booked",
+      "bookedInPeriod_one": "{{count}} booked nyob rau lub sijhawm no",
+      "bookedInPeriod_other": "{{count}} booked nyob rau lub sijhawm no",
+      "conversion": "Kev hloov dua siab tshiab",
+      "conversionHint": "Booked leads raws li ib feem ntawm kev lees txais leads",
+      "protectedNow": "Tiv thaiv tam sim no",
+      "expiringSoon_one": "Kev tiv thaiv xaus rau hauv {{count}} hnub",
+      "expiringSoon_other": "Kev tiv thaiv xaus rau hauv {{count}} hnub",
+      "disputedNow": "Kev tsis sib haum xeeb los ntawm lwm tus",
+      "disputedNowHint": "Koj tus thawj coj nrog qhib kev sib cav tswv yim los ntawm lwm tus khub",
+      "commissionEligible": "Commission tsim nyog",
+      "commissionCancelled_one": "{{count}} tso tseg",
+      "commissionCancelled_other": "{{count}} tso tseg"
+    },
+    "chart": {
+      "title_one": "Kev sau npe thiab booking ib hnub - kawg {{count}} hnub",
+      "title_other": "Kev sau npe thiab booking ib hnub - kawg {{count}} hnub",
+      "registrations": "Kev sau npe",
+      "bookings": "Booking"
+    },
+    "byStage": "Coj los ntawm xwm txheej",
+    "bySource": "Coj los ntawm qhov chaw",
+    "byReferral": "Ua raws li txoj cai xa mus",
+    "myDisputes": "Kev tsis sib haum xeeb koj tau tsa",
+    "noDisputes": "Tsis muaj kev tsis sib haum xeeb.",
+    "unknown": "Tsis teem",
+    "sources": {
+      "LEADRAT": "Leadrat",
+      "SIMULATED_EXTERNAL_CRM": "Sab nraud CRM (simulated)",
+      "PARTNER_CRM": "Ntxiv los ntawm koj pab neeg",
+      "EXTERNAL_API": "API",
+      "INTEGRATION_CONNECTOR": "Kev koom ua ke",
+      "LINKEDIN": "LinkedIn"
+    },
+    "expiringTitle_one": "Kev tiv thaiv tas sij hawm nyob rau hauv {{count}} hnub tom ntej",
+    "expiringTitle_other": "Kev tiv thaiv tas sij hawm hauv {{count}} hnub tom ntej",
+    "expiringEmpty": "Tsis muaj txhuas poob nws qhov kev tiv thaiv hauv lub qhov rais no."
   }
 }
